@@ -2,47 +2,50 @@
 
 ## Resumen
 
-Rabt-1.0-9B-i1-GGUF es una redistribución en formato GGUF del modelo Rabt-1.0-9B, publicada por el usuario mradermacher en Hugging Face. El modelo base, alojado por el usuario 4waiz, cuenta con 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) según los datos reales de safetensors. Esta versión GGUF está pensada para su uso con llama.cpp y herramientas compatibles, con cuantizaciones generadas mediante el método imatrix (importance matrix), que preserva mejor la calidad en niveles bajos de bits.
+Rabt 1.0 9B es un modelo de lenguaje de 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) desarrollado por 4waiz y publicado bajo licencia Apache 2.0. Está diseñado específicamente como asistente personal de ejecución local ("local-first"), con un enfoque explícito en privacidad, uso de herramientas (tool-use), razonamiento agéntico y flujos con intervención humana ("human-in-the-loop"). El modelo se entrenó mediante QLoRA sobre una base no especificada en la información disponible, y declara soporte multilingüe para inglés, árabe, francés, hindi y urdu.
 
-La información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la arquitectura detallada ni los datos de entrenamiento. La model card únicamente indica que se trata de cuantizaciones ponderadas con imatrix del modelo original de 4waiz, y lista las variantes de cuantización incluidas en el repositorio. El repositorio ocupa 13,9 GB y fue creado el 5 de noviembre de 2026.
+La ficha que nos ocupa corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, que ofrece un conjunto amplio de cuantizaciones con calibración imatrix (Q2_K hasta Q6_K, incluyendo variantes IQ). Esta es la vía práctica para ejecutar el modelo en hardware de consumo mediante llama.cpp u Ollama, dado que los pesos originales en safetensors requieren más VRAM.
 
-A pesar de la escasez de metadatos, el interés práctico de esta ficha radica en documentar qué se sabe con certeza (tamaño, formato, método de cuantización, disponibilidad de variantes) y qué queda fuera del alcance de la información publicada, para que desarrolladores e investigadores puedan decidir con criterio si merece la pena evaluar el modelo.
+El modelo resulta relevante para desarrolladores que necesitan un asistente local con capacidades de agente y tool calling, con cobertura de idiomas poco habituales en modelos abiertos (árabe, urdu, hindi) y una licencia permisiva que permite uso comercial sin restricciones adicionales.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 9.197.093.888 (9,2 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (detalles específicos no disponibles) |
+| Parámetros totales | 9.197.093.888 |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas del modelo original en safetensors) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (calibradas con imatrix) |
+| Idiomas soportados | en, ar, fr, hi, ur |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información publicada sobre la arquitectura del modelo base Rabt-1.0-9B: no se especifica si es un transformer denso, un modelo MoE, híbrido o basado en SSM. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+La información disponible no detalla la arquitectura interna más allá de tratarse de un transformer de 9,2 mil millones de parámetros. El modelo base (4waiz/Rabt-1.0-9B) fue ajustado mediante QLoRA, según la etiqueta `qlora` de la model card, lo que indica un ajuste fino de bajo rango sobre un modelo preentrenado del que no se especifica el origen ni el número de tokens de entrenamiento.
 
-Lo único documentado en la model card de esta redistribución es el proceso de cuantización: se trata de cuantizaciones ponderadas con imatrix (importance matrix) generadas a partir del modelo original de 4waiz, con la etiqueta interna "nicoboss" y versión de cuantización 2. El método imatrix calcula matrices de importancia a partir de datos de calibración para asignar más precisión a los pesos que más afectan a la salida, lo que suele reducir la degradación de calidad en cuantizaciones de 2 a 4 bits frente a la cuantización estándar.
+Las cuantizaciones publicadas por mradermacher emplean calibración imatrix (importance matrix), lo que mejora la calidad de las cuantizaciones de baja precisión respecto a las estáticas. La model card no proporciona detalles sobre la composición del dataset de ajuste, el uso de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional: las etiquetas del repositorio incluyen "conversational", lo que sugiere un ajuste orientado a diálogo.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el modelo puede servirse mediante la infraestructura de endpoints de Hugging Face.
-- Inferencia local mediante llama.cpp y ecosistema GGUF (Ollama, LM Studio, koboldcpp, entre otros).
-- Capacidades de tool calling, agentes, visión, audio o modo thinking: no disponibles en la información publicada.
-- Capacidades multilingües: no disponibles; no se especifican idiomas soportados.
+- Generación de texto conversacional orientada a asistencia personal.
+- Tool calling / function calling, según las etiquetas `tool-use` y `agent` de la model card.
+- Razonamiento agéntico multi-paso y flujos con intervención humana (`human-in-the-loop`).
+- Soporte multilingüe declarado para inglés, árabe, francés, hindi y urdu.
+- Orientación a ejecución local con prioridad de privacidad (`local-first`, `privacy`).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`) y despliegue vía Ollama.
+- Capacidades de visión, audio o modo thinking: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de 9,2 B parámetros en GPU de consumo con 8-12 GB de VRAM, útil para prototipado sin depender de la nube.
-- Asistentes conversacionales autoalojados: la orientación conversacional del modelo base lo hace candidato para chatbots internos donde la privacidad de los datos es un requisito.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye más de veinte variantes (de IQ1_S a Q6_K), lo que permite estudiar la degradación de calidad por nivel de bits con un mismo modelo base.
-- Integración en pipelines de CI/CD para pruebas de regresión de modelos: al ser GGUF, puede cargarse en runners con llama.cpp y comparar salidas entre cuantizaciones.
-- Investigación sobre cuantización imatrix: sirve como caso de estudio de cómo afecta la matriz de importancia a tareas concretas frente a la cuantización estándar.
-- Servicio ligero en CPU: las variantes Q2_K e IQ2 permiten inferencia en CPU con requisitos de memoria reducidos (del orden de 3-4 GB), adecuadas para entornos con hardware limitado.
+- Asistente personal local con privacidad: el modelo puede ejecutarse íntegramente en la máquina del usuario (vía Ollama o llama.cpp) sin enviar datos a servicios externos, adecuado para gestión de tareas, notas y conversaciones sensibles.
+- Automatización de flujos con herramientas: gracias al soporte de tool calling, puede invocar APIs, gestionar ficheros o ejecutar acciones en un pipeline de agente controlando qué pasos requieren confirmación humana (human-in-the-loop).
+- Atención multilingüe para comunidades de habla árabe, urdu e hindi: es uno de los pocos modelos abiertos de este tamaño que declara cobertura de estos idiomas, útil para asistentes de soporte en mercados con esas lenguas.
+- Agentes de escritorio o IDE: integrable como motor de razonamiento en asistentes de desarrollo que necesitan llamar a herramientas locales (compiladores, linters, terminal) manteniendo los datos en local.
+- Prototipado rápido en hardware de consumo: las cuantizaciones Q4_K_M (5,9 GB) permiten desplegar el modelo en GPUs de gama media para pruebas de concepto de asistentes conversacionales.
+- Investigación en agentes con supervisión humana: su diseño explícito para human-in-the-loop lo hace adecuado para estudiar patrones de aprobación e intervención en pipelines agénticos.
+- Despliegue en entornos con requisitos de soberanía de datos: al ser Apache 2.0 y ejecutable en local, encaja en organizaciones que no pueden usar APIs en la nube.
 
 ## Benchmarks y rendimiento
 
@@ -50,38 +53,46 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (9,2 B parámetros):
-  - Q2_K / IQ2: aproximadamente 3,5-4,5 GB.
-  - Q3_K_M / IQ3: aproximadamente 4,5-5,5 GB.
-  - Q4_K_M: aproximadamente 5,5-6,5 GB.
-  - Q5_K_M: aproximadamente 6,5-7,5 GB.
-  - Q6_K: aproximadamente 7,5-8,5 GB.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones medias y altas; A100 o H100 para servir varias instancias o contextos largos.
-- Cabe en GPU de consumo: sí, desde una RTX 3060 12 GB con Q4_K_M o Q5_K_M; las variantes Q2/IQ2 caben en GPUs de 6-8 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones; para ellos habría que usar los pesos originales en safetensors.
-- Latencia y throughput: no disponibles; dependen de la cuantización, el hardware y la longitud de contexto.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF):
+  - i1-Q2_K: ~4,0 GB
+  - i1-IQ3_M / i1-Q3_K_S: ~4,5-4,6 GB
+  - i1-Q4_K_M: ~5,9 GB (recomendado por el cuantizador como equilibrio velocidad/calidad)
+  - i1-Q5_K_M: ~6,7 GB
+  - i1-Q6_K: ~7,7 GB
+- Pesos originales en safetensors: el repositorio del cuantizador ocupa 81,3 GB (incluye todas las variantes); el modelo base en FP16 requiere aproximadamente 18,4 GB de VRAM.
+- GPU recomendadas: RTX 3060 12 GB o superior para cuantizaciones Q4/Q5; RTX 4090 (24 GB) para Q6_K o FP16 con margen; A100/H100 para despliegue en producción a mayor throughput.
+- Cabe en GPU de consumo: sí, desde cuantizaciones Q2_K (~4 GB) en GPUs de 8 GB, y Q4_K_M (~5,9 GB) en GPUs de 8-12 GB.
+- Opciones de despliegue: llama.cpp, Ollama (etiqueta `ollama`), y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente sobre el modelo base (arquitectura, contexto, licencia, rendimiento) para establecer una comparativa fiable con alternativas de la misma categoría. Los modelos de ~9 B parámetros en formato GGUF más habituales en el ecosistema (por ejemplo, familias de 7-9 B con licencias conocidas) no pueden compararse aquí sin datos de benchmarks ni especificaciones del modelo Rabt-1.0-9B.
+| Modelo | Parámetros | Contexto | Idiomas destacados | Licencia | Formato |
+|---|---|---|---|---|---|
+| Rabt 1.0 9B | 9,2 B | no disponible | en, ar, fr, hi, ur | Apache 2.0 | GGUF, safetensors |
+| Gemma 2 9B | 9 B | 8K | multilingüe amplio | Gemma license | GGUF, safetensors |
+| Llama 3.1 8B | 8 B | 128K | multilingüe (8 idiomas) | Llama 3.1 license | GGUF, safetensors |
+| Qwen 2.5 7B | 7,6 B | 128K | multilingüe amplio | Apache 2.0 | GGUF, safetensors |
 
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Rabt-1.0-9B-i1-GGUF | 9,2 B | no disponible | no disponible | GGUF |
-| Alternativas de ~9 B | no disponible | no disponible | no disponible | no disponible |
+Nota: los datos de los modelos comparativos no provienen de la información proporcionada para este modelo y se incluyen solo como referencia de categoría; no se dispone de comparaciones de rendimiento publicadas para Rabt 1.0 9B.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; conviene contactar con el autor del modelo base (4waiz) antes de usarlo en producción.
-- Idiomas no declarados: no hay garantía de calidad en castellano ni en otros idiomas distintos del que se usó en el ajuste conversacional.
-- Contexto desconocido: sin la longitud de contexto publicada, no se pueden diseñar aplicaciones que dependan de ventanas largas.
-- Riesgo de alucinación: inherente a los modelos generativos; sin benchmarks ni model card detallada no se puede acotar su fiabilidad.
-- Sesgos: no documentados; al no conocerse la composición del dataset de entrenamiento, no se pueden evaluar sesgos de género, idioma o dominio.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
-- Las cuantizaciones de 1-2 bits (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad; no se recomiendan para producción.
-- La model card no incluye instrucciones de prompt, plantilla de chat ni parámetros de muestreo recomendados.
+- No se han publicado benchmarks, por lo que no es posible verificar el rendimiento real frente a modelos de tamaño similar.
+- La longitud de contexto no está documentada, lo que dificulta planificar su uso en tareas de contexto largo.
+- El ajuste mediante QLoRA sobre una base no especificada puede implicar degradación respecto al modelo original en tareas generales no relacionadas con asistencia personal.
+- Riesgo de alucinación inherente a modelos de 9B; no hay datos sobre mitigaciones específicas.
+- La cobertura de idiomas se limita a los cinco declarados (en, ar, fr, hi, ur); el rendimiento en castellano no está garantizado ni documentado.
+- Aunque la licencia Apache 2.0 permite uso comercial, conviene verificar las condiciones del modelo base original (4waiz/Rabt-1.0-9B) antes de un despliegue en producción.
+- Las cuantizaciones de baja precisión (Q2_K, IQ1, IQ2) pueden degradar notablemente la calidad; el propio cuantizador recomienda Q4_K_M o superiores.
+- Sesgos conocidos: no disponibles en la información proporcionada.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Rabt-1.0-9B-i1-GGUF
 - Modelo base: https://huggingface.co/4waiz/Rabt-1.0-9B
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Rabt-1.0-9B-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Rabt-1.0-9B-i1-GGUF
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

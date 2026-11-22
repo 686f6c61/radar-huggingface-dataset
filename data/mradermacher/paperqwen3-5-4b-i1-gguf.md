@@ -2,50 +2,52 @@
 
 ## Resumen
 
-PaperQwen3.5-4B-i1-GGUF es una publicacion de cuantizaciones GGUF generada por mradermacher a partir del modelo base PaperQwen3.5-4B, alojado por el usuario Thermostatic en Hugging Face. Se trata, por tanto, de un artefacto derivado orientado a la inferencia local con llama.cpp y herramientas compatibles, y no de un modelo entrenado desde cero por el autor del repositorio. El nombre sugiere un modelo de la familia Qwen 3.5 con aproximadamente 4.000 millones de parametros, aunque esta informacion no se confirma en los metadatos disponibles.
+PaperQwen3.5-4B-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo base Thermostatic/PaperQwen3.5-4B, un ajuste fino de Qwen3.5 orientado a escritura científica y académica, reescritura de textos y generación de LaTeX. El modelo base parte de una arquitectura transformer de la familia Qwen3.5 con 4.326.350.848 parámetros totales (aproximadamente 4,3 mil millones), lo que lo sitúa en la gama de modelos compactos desplegables en hardware de consumo.
 
-La relevancia de este repositorio reside en que ofrece el modelo base en multiples niveles de cuantizacion (desde IQ1_S hasta Q6_K), lo que permite desplegarlo en hardware muy diverso, desde equipos de gama de entrada hasta estaciones de trabajo con GPU de consumo. Sin embargo, la informacion publica es extremadamente escasa: no hay model card descriptiva, no se declaran licencia, idiomas ni pipeline, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
+El repositorio no contiene pesos originales en safetensors, sino un conjunto de ficheros GGUF cuantizados con la técnica i1 (imatrix) de mradermacher, que emplea una matriz de importancia para preservar mejor la calidad en cuantizaciones agresivas. Se ofrecen variantes desde i1-Q2_K (2,1 GB) hasta i1-Q6_K (3,7 GB), además del fichero imatrix para generar cuantizaciones propias. El tamaño total del repositorio es de 39,2 GB, lo que refleja la acumulación de todas las variantes.
 
-El dato de parametros totales reportado en safetensors (1.797.272) es incompatible con el nombre del modelo (4B) y con el tamano del repositorio (0,0 GB), por lo que debe considerarse no fiable o correspondiente a un artefacto auxiliar. Se recomienda tratar cualquier cifra de rendimiento o capacidad como no verificada hasta consultar el modelo base original.
+La relevancia de esta ficha radica en que permite ejecutar un modelo especializado en redacción académica en equipos sin GPU de datacenter, mediante llama.cpp u Ollama. No obstante, la licencia CC-BY-NC-SA-4.0 restringe el uso comercial, y la información pública sobre el modelo base (contexto, datos de entrenamiento, benchmarks) es muy limitada en la documentación disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, segun la familia Qwen, sin confirmar) |
-| Parametros totales | no disponible (el nombre indica 4B; el dato safetensors de 1.797.272 no es consistente) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (familia Qwen3.5, según el nombre del modelo base; detalles no disponibles) |
+| Parametros totales | 4.326.350.848 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones i1, weighted/imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix) |
+| Idiomas soportados | en (inglés; según la model card) |
+| Licencia | cc-by-nc-sa-4.0 |
+| Formato de pesos | GGUF (safetensors solo en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base PaperQwen3.5-4B en los datos proporcionados. El nombre sugiere que deriva de la familia Qwen 3.5, lo que implicaria un transformer decoder-only, pero no hay confirmacion en la model card ni en los metadatos del repositorio. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La información disponible no detalla la arquitectura interna del modelo base Thermostatic/PaperQwen3.5-4B más allá de su pertenencia a la familia Qwen3.5 y su naturaleza transformer. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención (estándar o lineal), ni si emplea alguna variante MoE. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
-Lo unico verificable es el proceso de cuantizacion: el autor indica el uso de cuantizaciones ponderadas (weighted/imatrix) con convert_type hf, lo que implica que los pesos se convirtieron desde el formato Hugging Face original al formato GGUF de llama.cpp aplicando una matriz de importancia para mejorar la calidad en cuantizaciones de baja precision. No se detalla la herramienta exacta (probablemente llama.cpp o una variante propia) ni los parametros de calibracion empleados.
+Lo que sí se conoce es el proceso de cuantización: mradermacher ha generado cuantizaciones i1 (imatrix) utilizando una matriz de importancia calculada sobre el modelo base, lo que mejora la retención de calidad respecto a cuantizaciones estáticas de tamaño equivalente. La model card incluye además referencias a cuantizaciones estáticas en un repositorio separado (mradermacher/PaperQwen3.5-4B-GGUF) y enlaces a discusiones sobre la calidad relativa de los tipos de cuantización (gráfico de ikawrakow y notas de Artefact2).
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje, aunque no verificada en la informacion disponible.
-- Razonamiento y matematicas: no confirmado.
-- Generacion de codigo: no confirmado.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Inferencia local en CPU y GPU mediante llama.cpp y derivados: confirmado por el formato GGUF.
+- Generación de texto orientada a escritura científica y académica, según las etiquetas del modelo (scientific-writing, academic-writing).
+- Reescritura y reformulación de textos (tag rewriting).
+- Generación y edición de LaTeX (tag latex).
+- Conversación multi-turno (tag conversational).
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que sugiere uso en servicios de inferencia.
+- Capacidades multilingües: solo se declara inglés (en); no se documentan otros idiomas.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue en equipos de gama de entrada: las cuantizaciones IQ1_S, IQ1_M e IQ2 permiten ejecutar el modelo en sistemas con menos de 2 GB de RAM disponible para pesos, aunque con perdida notable de calidad.
-- Inferencia en CPU sin GPU dedicada: los formatos Q4_0, Q4_1 y Q4_K_S son adecuados para ejecucion en CPU con llama.cpp en portatiles convencionales.
-- Prototipado rapido de aplicaciones de texto: al ser un modelo de ~4B, permite iterar en local sin coste de API, siempre que se valide la calidad real del modelo base.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye un rango amplio de niveles, lo que facilita medir el impacto de la cuantizacion en la perplejidad y en tareas concretas.
-- Integracion en pipelines con Ollama o LM Studio: al ser GGUF, puede importarse directamente en estas herramientas para pruebas de chat.
-- Filtrado y clasificacion de texto en local: para tareas de baja exigencia donde la privacidad impide enviar datos a la nube, una cuantizacion Q5_K_M o Q6_K ofrece el mejor equilibrio calidad/tamano.
+- Redacción de artículos académicos: el modelo puede generar borradores de secciones (introducción, metodología, discusión) en inglés con estilo formal, aprovechando su ajuste específico para escritura científica; adecuado para investigadores que necesitan un primer borrador rápido.
+- Reescritura y pulido de textos: dado su tag de rewriting, sirve para reformular párrafos, mejorar la claridad o adaptar el registro de manuscritos antes de enviarlos a revisión.
+- Generación de LaTeX: puede producir fragmentos de código LaTeX (tablas, ecuaciones, entornos) para integrarlos en documentos científicos, lo que reduce el trabajo manual de maquetación.
+- Asistencia en revisiones por pares: el modelo puede resumir o reescribir comentarios de revisores y generar respuestas estructuradas, siempre con supervisión humana.
+- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones GGUF de 2-4 GB, puede ejecutarse en portátiles o equipos sin GPU dedicada mediante llama.cpp u Ollama, útil para investigadores con requisitos de privacidad.
+- Prototipado de asistentes de escritura: integrable en herramientas de edición de texto o pipelines de documentación técnica mediante endpoints compatibles, para sugerencias de reescritura en tiempo real.
+- Educación y formación: generación de explicaciones y resúmenes de conceptos científicos en inglés para materiales docentes, con la cautela de verificar exactitud.
 
 ## Benchmarks y rendimiento
 
@@ -53,27 +55,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (asumiendo ~4B parametros, no confirmado): aproximadamente 1-1,5 GB para IQ1_S/IQ2, 2-2,5 GB para Q3_K_M, 2,5-3 GB para Q4_K_M, 3-3,5 GB para Q5_K_M y 3,5-4,5 GB para Q6_K, mas overhead de contexto.
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para cuantizaciones Q4/Q5 (RTX 3060, RTX 4060, RTX 2070); para Q6_K se recomienda 6-8 GB (RTX 3070, RTX 4060 Ti).
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 6 GB o mas para cuantizaciones medias; las cuantizaciones IQ1/IQ2 pueden caber en 2-3 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa para este tipo de artefactos.
-- Latencia y throughput: no disponibles; dependeran del hardware y del nivel de cuantizacion.
+- VRAM estimada para inferencia: aproximadamente 2,5-4,5 GB según la cuantización elegida (i1-Q2_K ~2,1 GB en disco; i1-Q6_K ~3,7 GB), más overhead de contexto y KV cache.
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para cuantizaciones Q4/Q5 con contexto moderado; RTX 3060, RTX 4060, RTX 4090 o superiores funcionan sin problema. Para Q6_K con contexto largo, se recomienda 8 GB o más.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas con 6 GB o más; también puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (p. ej., LM Studio). No se documenta soporte para vLLM o TGI en formato GGUF de forma nativa.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no permite identificar con certeza el modelo base ni sus caracteristicas, por lo que no es posible establecer una comparacion fiable con alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| PaperQwen3.5-4B-i1-GGUF (este) | 4,33 B | no disponible | CC-BY-NC-SA-4.0 | GGUF | Especializado en escritura científica; solo inglés |
+| Qwen3.5-4B (base genérico) | ~4 B | no disponible | según variante Qwen | safetensors/GGUF | Modelo generalista del que deriva; no especializado |
+| Modelos de 3-4 B para escritura (p. ej., variantes de Llama 3.2 3B o Phi-3.5-mini) | 3-4 B | 128 K en algunos casos | varía (Llama, MIT) | safetensors/GGUF | Alternativas generalistas; no específicamente ajustadas a escritura académica |
+
+La comparación cuantitativa de rendimiento no está disponible porque no se han publicado benchmarks del modelo base ni de este ajuste. La principal diferencia frente a alternativas generalistas es su especialización declarada en escritura científica y LaTeX, a costa de una licencia no comercial y de un soporte idiomático limitado al inglés.
 
 ## Limitaciones y advertencias
 
-- Model card practicamente vacia: no se declaran licencia, idiomas, contexto ni datos de entrenamiento, lo que impide evaluar el uso comercial.
-- El dato de parametros en safetensors (1.797.272) es inconsistente con el nombre del modelo y con el tamano del repositorio, lo que sugiere metadatos erroneos o incompletos.
-- Repositorio sin descargas ni likes: no hay evidencia de validacion por parte de la comunidad.
-- Las cuantizaciones IQ1 e IQ2 degradan significativamente la calidad; no se recomiendan para produccion.
-- Riesgo de alucinacion y sesgos: no evaluado por falta de informacion.
-- No se confirma el soporte multilingue ni el contexto maximo, por lo que no debe asumirse ningun comportamiento especifico.
-- Antes de usar en produccion, es imprescindible consultar el modelo base original y verificar la licencia aplicable.
+- Licencia CC-BY-NC-SA-4.0: prohíbe el uso comercial y exige compartir bajo la misma licencia las obras derivadas; inadecuada para productos comerciales sin autorización expresa.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea inferior.
+- Riesgo de alucinación: como todo modelo generativo, puede inventar referencias bibliográficas, datos o resultados; en contextos académicos esto es especialmente crítico y requiere verificación humana.
+- Sesgos: no se documentan evaluaciones de sesgo; al derivar de Qwen3.5, puede heredar sesgos del corpus de entrenamiento original.
+- Contexto: no se especifica la longitud de contexto soportada, lo que dificulta planificar su uso en documentos largos.
+- Datos de entrenamiento y benchmarks ausentes: no hay información sobre el dataset de ajuste fino ni evaluaciones publicadas, lo que limita la confianza en su calidad relativa.
+- Cuantizaciones agresivas (Q2, Q3) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso serio.
+- El repositorio incluye múltiples variantes que suman 39,2 GB; conviene descargar solo el fichero GGUF necesario.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/PaperQwen3.5-4B-i1-GGUF
 - Modelo base: https://huggingface.co/Thermostatic/PaperQwen3.5-4B
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/PaperQwen3.5-4B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#PaperQwen3.5-4B-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

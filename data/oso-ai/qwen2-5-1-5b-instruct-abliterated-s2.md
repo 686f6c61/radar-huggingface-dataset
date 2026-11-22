@@ -2,109 +2,100 @@
 
 ## Resumen
 
-`OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-s2` es un artefacto de investigación derivado de `Qwen/Qwen2.5-1.5B-Instruct` al que se le ha eliminado el comportamiento de rechazo mediante ortogonalización de pesos contra una dirección de rechazo extraída con pares emparejados (método de Arditi et al., 2024). El autor, OSO-AI, aplica la proyección con un multiplicador de fuerza 2.0 (`W ← W − 2·vvᵀW`) sobre `o_proj` y `down_proj` en los 28 bloques del transformer, lo que reduce la tasa de rechazo ante prompts dañinos del 97,5 % al 17,5 % en su evaluación interna.
+OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-s2 es un artefacto de investigación derivado de Qwen/Qwen2.5-1.5B-Instruct, el modelo denso de 1.500 millones de parámetros de la familia Qwen2.5 de Alibaba. El autor (OSO-AI) ha aplicado una técnica de "abliteración" sobre los pesos: ortogonalización contra una dirección de rechazo extraída por pares emparejados, siguiendo el método de Arditi et al. 2024. El resultado es un modelo al que se le ha suprimido en gran medida el comportamiento de negativa ante peticiones dañinas, manteniendo la arquitectura y capacidades del modelo base.
 
-El interés técnico del modelo no está en sus capacidades —idénticas en arquitectura al Qwen2.5-1.5B-Instruct original, con 1.543.714.304 parámetros— sino en el hallazgo metodológico que documenta: la eliminación exacta de una sola dirección (fuerza 1.0) solo baja el rechazo al 67,5 %, mientras que sobre-ortogonalizar (fuerza 2.0) lo lleva al 17,5 % con mejor perplejidad que el steering en inferencia (12,87 frente a 14,85 en wikitext). La interpretación del autor es que el rechazo se codifica en un subespacio pequeño y no en un único eje.
+La innovación documentada es el uso de una fuerza de ortogonalización 2.0 (`W ← W − 2·vvᵀW`) en lugar de la eliminación exacta a fuerza 1.0. Según el autor, esto reduce la tasa de rechazo dañino del 97,5% al 17,5%, a costa de un aumento de la perplejidad en wikitext de 9,44 a 12,87 y de un 10% de degeneración por bucles de repetición. El propio autor marca este modelo como superado por una versión posterior (abliterated-k5) y lo describe explícitamente como "un artefacto de investigación, no un producto".
 
-Se distribuye con licencia Apache-2.0, en safetensors y GGUF, y el autor lo describe explícitamente como "research artifact, not a product": la ablación sobrevive a cuantización Q4_K_M verificada en llama.cpp, pero el modelo conserva un 17,5 % de rechazo residual y una degradación medible de perplejidad, por lo que su uso previsto es el estudio de mecanismos de rechazo, retención de capacidades y comparación de métodos de cirugía de pesos.
+Por su tamaño, contexto nativo de 32.768 tokens (heredado de Qwen2.5) y licencia Apache 2.0, es relevante para estudios de interpretabilidad, medición de retención de capacidades tras cirugía de pesos y comparación de métodos de eliminación de la dirección de rechazo, no para despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2), 28 bloques, embeddings atados (tied embeddings) |
-| Parametros totales | 1.543.714.304 (1,54 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No indicada en la model card; el modelo base Qwen2.5-1.5B-Instruct declara 32.768 tokens nativos (131.072 con YaRN segun especificaciones del equipo Qwen, no verificadas en esta ficha) |
-| Tipos de cuantizacion | GGUF (el autor verifica Q4_K_M en llama.cpp); safetensors en precision original; no se detalla el catalogo completo de cuantizaciones del repo |
-| Idiomas soportados | No disponibles en la model card; heredados del modelo base Qwen2.5 (el equipo Qwen declara soporte de 29+ idiomas) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y GGUF (tamano del repo: 4,1 GB) |
+| Arquitectura | Transformer decoder-only denso (Qwen2), 28 bloques |
+| Parametros totales | 1.543.714.304 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 32.768 tokens (heredado del modelo base Qwen2.5; no confirmado en la model card) |
+| Tipos de cuantizacion | safetensors (BF16/FP16), GGUF (verificado en Q4_K_M) |
+| Idiomas soportados | no disponible en la model card; el modelo base Qwen2.5 soporta multilingüe (no confirmado aquí) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del Qwen2.5-1.5B-Instruct sin modificar en topología: transformer decoder-only de 28 bloques con atención por grupos (GQA) y embeddings atados entre `embed_tokens` y `lm_head` (el autor señala que los parches sobre `embed`/`lm_head` son "negligibles" precisamente por ese atado). No hay entrenamiento adicional ni fine-tuning: la modificación es puramente de pesos, una cirugía post-hoc.
+El modelo conserva la arquitectura del Qwen2.5-1.5B-Instruct original: transformer decoder-only denso con 28 bloques, atención con RoPE, GQA y embeddings atados (tied embeddings, según se menciona en la sección de resultados negativos). No se ha reentrenado: la modificación consiste exclusivamente en cirugía de pesos sobre las matrices `o_proj` y `down_proj` de los 28 bloques.
 
-El procedimiento consta de tres pasos. Primero, extracción de direcciones de rechazo por capa mediante pares emparejados: los mismos 50 prompts dañinos bajo un system prompt que induce rechazo frente a uno que induce cumplimiento, y diferencia de medias sobre las activaciones del residual stream en el último token del prompt. Segundo, ortogonalización de `o_proj` y `down_proj` en los 28 bloques con `W ← W − 2·vvᵀW` (fuerza 2.0). Tercero, evaluación con n=40 prompts dañinos y 40 benignos, decodificación greedy y detección de rechazo por palabras clave.
-
-El autor documenta también resultados negativos en `RESULTS.md`: la diferencia de medias ingenua entre dañino y benigno encuentra una dirección "de tema" con coseno 0,17 respecto a la emparejada (prácticamente inútil); la cirugía de una sola capa es un no-op a esta escala; y la re-extracción iterativa se estanca en torno al 70 % de rechazo.
+El procedimiento de abliteración consta de tres pasos: (1) extracción de direcciones de rechazo por capa mediante pares emparejados, usando 50 prompts dañinos idénticos bajo un system prompt que induce rechazo frente a otro que induce cumplimiento, y calculando la diferencia de medias de las activaciones del residual stream en el último token del prompt; (2) ortogonalización de `o_proj` y `down_proj` en todos los bloques con `W ← W − 2·vvᵀW`, es decir, fuerza 2.0 en lugar de 1.0; (3) evaluación con n=40 prompts dañinos y 40 benignos, decodificación greedy, detección de rechazo por palabras clave y guarda de degeneración por bucles de repetición. El autor documenta resultados negativos: la diferencia de medias ingenua entre dañino y benigno encuentra una dirección de "tema" (coseno 0,17 con la emparejada), la cirugía en una sola capa no tiene efecto a esta escala, los parches en `embed`/`lm_head` son despreciables y la reextracción iterativa se estanca en torno al 70% de rechazo. No se realizó RLHF, DPO ni ningún entrenamiento adicional.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con el mismo nivel de competencia que el Qwen2.5-1.5B-Instruct original.
-- Razonamiento básico, matemáticas elementales y generación de código propias de un modelo de 1,5 B de parámetros.
-- Soporte de tool calling / function calling heredado del modelo base (formato Qwen2.5), sin verificación específica en esta ficha.
-- Capacidad de seguir instrucciones y mantener rol de sistema, incluyendo system prompts que en el baseline inducirían rechazo.
-- Multilingüismo heredado del base (no detallado en la model card).
-- Capacidad "especial" del artefacto: cumplimiento ante prompts que el modelo original rechaza en el 82,5 % de los casos restantes (17,5 % de rechazo residual medido).
-- No dispone de visión, audio ni modo thinking explícito.
+- Generación de texto conversacional multi-turno, heredada del modelo base Qwen2.5-1.5B-Instruct.
+- Razonamiento básico y matemáticas de nivel medio, limitado por el tamaño de 1,5B parámetros.
+- Generación de código y comprensión de instrucciones, con la calidad del modelo base.
+- Supresión mayoritaria del comportamiento de rechazo ante peticiones dañinas (tasa residual del 17,5%).
+- Capacidad de seguir system prompts de cumplimiento, usada en el proceso de extracción.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible; el modelo base Qwen2.5-1.5B-Instruct sí soporta function calling, pero no se confirma que sobreviva a la abliteración.
+- Capacidades multilingües no verificadas en esta ficha.
 
 ## Casos de uso
 
-- Estudio de mecanismos de rechazo: reproducir la extracción de dirección por pares emparejados y medir cómo varía la tasa de rechazo con la fuerza de proyección (1.0 frente a 2.0), usando el modelo como banco de pruebas controlado.
-- Evaluación de retención de capacidades tras cirugía de pesos: comparar perplejidad y rendimiento en tareas benignas entre baseline y abliterado para cuantificar el coste de la ablación (9,44 → 12,87 de perplejidad en wikitext en la medición del autor).
-- Red-teaming y calibración de clasificadores de seguridad: generar respuestas que un modelo alineado rechazaría para construir conjuntos de datos adversarios con los que entrenar o evaluar filtros de contenido.
-- Investigación de interpretabilidad: analizar si el rechazo se codifica en un subespacio de baja dimensión, replicando el experimento de multiplicidad-2 y comparándolo con steering en tiempo de inferencia (12,87 frente a 14,85 de perplejidad).
-- Docencia y divulgación técnica: demostrar de forma reproducible en un portátil (pesos de ~1 GB en Q4_K_M) cómo funciona la ortogonalización de direcciones sin necesidad de infraestructura grande.
-- Base para fine-tuning de dominio sin interferencia de rechazos: en entornos controlados donde el comportamiento de negativa del modelo base estorba (por ejemplo, simulación de diálogos adversariales para formación en seguridad), partiendo de un checkpoint ya desinhibido.
-- Validación de pipelines de cuantización: comprobar que una modificación de pesos sobrevive a Q4_K_M en llama.cpp, como hace el propio autor.
+- Investigación de interpretabilidad: medir qué fracción del comportamiento de rechazo reside en una única dirección del residual stream, comparando la tasa de rechazo del modelo base (97,5%) con la del abliterado (17,5%) bajo el mismo protocolo de evaluación.
+- Estudio de retención de capacidades tras cirugía de pesos: evaluar MMLU, HumanEval o GSM8K antes y después de la ortogonalización para cuantificar el coste de la abliteración en tareas benignas, usando la caída de perplejidad en wikitext (9,44 a 12,87) como indicador de degradación.
+- Comparación de métodos de eliminación de rechazo: contrastar la ortogonalización a fuerza 2.0 con la eliminación exacta a fuerza 1.0 (67,5% de rechazo residual) y con el steering en tiempo de inferencia (perplejidad 14,85 frente a 12,87), documentando el compromiso entre supresión y degradación.
+- Validación de robustez a cuantización: verificar en llama.cpp con Q4_K_M que la abliteración sobrevive a la cuantización de 4 bits, como ya hizo el autor, y extenderlo a otros niveles (Q5_K_M, Q8_0) para estudiar la interacción entre cirugía de pesos y cuantización.
+- Reproducción de experimentos: ejecutar los scripts del repositorio (extracción con `matched.py`, exportación con `export_gap.py`, evaluación con `eval.py`) sobre otros modelos de la familia Qwen2.5 para replicar la línea de experimentos en distintos tamaños.
+- Docencia y divulgación sobre seguridad en LLM: usar el modelo como ejemplo didáctico de que el rechazo es un comportamiento aprendido y localizable, con métricas concretas de tasa de rechazo, degeneración y perplejidad antes y después de la intervención.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Qwen2.5-1.5B-Instruct (baseline) | abliterated-s2 |
-|---|---|---|
-| Tasa de rechazo en prompts daninos (n=40) | 97,5 % | 17,5 % |
-| Falsos rechazos en prompts benignos (n=40) | 10,0 % | 0,0 % |
-| Perplejidad en wikitext | 9,44 | 12,87 |
+Resultados del autor (n=40 prompts dañinos y 40 benignos, decodificación greedy, con guarda de degeneración):
 
-| Variante | Tasa de rechazo (n=40) | Perplejidad (wikitext) |
+| Metrica | Baseline (Qwen2.5-1.5B-Instruct) | abliterated-s2 |
 |---|---|---|
-| Baseline sin modificar | 97,5 % | 9,44 |
-| Ablación fuerza 1.0 (dirección única) | 67,5 % | No disponible |
-| Ablación fuerza 2.0 (sobre-ortogonalizada) | 17,5 % | 12,87 |
-| Steering en inferencia | No disponible | 14,85 |
+| Tasa de rechazo dañino | 97,5% | 17,5% |
+| Tasa de degeneración dañina (bucles) | 0,0% | 10,0% |
+| Cumplimiento real dañino | 2,5% | 72,5% |
+| Falsa negativa en benignos | 10,0% | 0,0% |
+| Degeneración en benignos | 2,5% | 5,0% |
+| Perplejidad (wikitext) | 9,44 | 12,87 |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de capacidad en la información disponible. Las métricas anteriores proceden de la evaluación del propio autor con decodificación greedy y detección de rechazo por palabras clave, con n=40 por clase.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor compara con su modelo posterior abliterated-k5, que reporta 5% de rechazo, 0% de degeneración, 95% de cumplimiento real y 7% de rechazo bajo clasificador estricto de jailbreak.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: ~3,1 GB de pesos más overhead de runtime y caché KV; en la práctica 4-5 GB.
-- VRAM estimada en Q8_0: ~1,7 GB de pesos; en Q4_K_M: ~1,0 GB (cuantización verificada por el autor en llama.cpp).
-- Caché KV: ~28 KB por token en FP16 (GQA con 2 cabezas KV y 128 de dimensión sobre 28 capas, cálculo estimado); ~0,23 GB a 8.192 tokens y ~0,9 GB a 32.768 tokens.
-- Cabe holgadamente en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB, e incluso en tarjetas de 6-8 GB con cuantización Q4/Q5. También es viable en CPU con llama.cpp.
-- GPU de datacenter (A100, H100) solo justificables por volumen de peticiones concurrentes, no por tamaño del modelo.
-- Opciones de despliegue: llama.cpp (validado por el autor), Ollama (importando el GGUF), vLLM y TGI (arquitectura Qwen2 soportada), y Transformers con safetensors.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: aproximadamente 3,1 GB en BF16/FP16 (1.543.714.304 parámetros × 2 bytes), en torno a 1 GB en Q4_K_M y 1,7 GB en Q8_0.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM para BF16; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobredimensionadas para este tamaño, pero válidas para servir múltiples réplicas.
+- Cabe en GPU consumer: sí, en cualquier GPU con 4 GB o más en BF16 y en GPUs integradas o de gama baja con 2 GB en Q4_K_M.
+- Opciones de despliegue: llama.cpp (verificado por el autor en Q4_K_M), Ollama, vLLM, TGI y transformers; el tag `endpoints_compatible` del repositorio sugiere compatibilidad con endpoints de Hugging Face.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazo ante prompts daninos | Perplejidad (wikitext) | Licencia |
-|---|---|---|---|---|---|
-| OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-s2 | 1,54 B | No indicado (base: 32.768) | 17,5 % (n=40) | 12,87 | Apache-2.0 |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | 97,5 % (n=40) | 9,44 | Apache-2.0 |
-| Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | No disponible | No disponible | Llama 3.2 Community License |
-| SmolLM2-1.7B-Instruct | ~1,71 B | 8.192 | No disponible | No disponible | Apache-2.0 |
+| Modelo | Parametros | Contexto | Rechazo dañino | Perplejidad (wikitext) | Licencia | Notas |
+|---|---|---|---|---|---|---|
+| Qwen2.5-1.5B-Instruct (base) | 1,54B | 32.768 | 97,5% | 9,44 | Apache 2.0 | Modelo de referencia sin modificar |
+| abliterated-s2 (este) | 1,54B | 32.768 | 17,5% | 12,87 | Apache 2.0 | Fuerza 2.0, 10% degeneración |
+| abliterated-k5 (sucesor) | 1,54B | 32.768 | 5% | no disponible | Apache 2.0 | Proyección PCA de 5 dimensiones a fuerza 1.0, 0% degeneración |
 
-Los datos de Llama-3.2-1B-Instruct y SmolLM2-1.7B-Instruct proceden de sus especificaciones públicas y no se han verificado en esta búsqueda; no hay comparativas de tasa de rechazo publicadas para ellos en la información disponible. No se han encontrado otras variantes abliteradas de Qwen2.5-1.5B con métricas comparables en el material consultado.
+No se dispone de datos de otros modelos abliterados de la comunidad para una comparación más amplia en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El propio autor lo define como artefacto de investigación, no como producto; el uso previsto es el estudio, no el despliegue en producción de cara al usuario.
-- Persiste un 17,5 % de rechazo residual: la ablación es parcial, no total.
-- Degradación de calidad medible: la perplejidad sube de 9,44 a 12,87 (+36 %) en wikitext, lo que sugiere pérdida de fluidez y precisión en la distribución del lenguaje.
-- Elimina la alineación de seguridad del modelo base: no hay garantía de que las salvaguardas frente a contenido dañino, sesgos o instrucciones peligrosas sigan operativas. La responsabilidad sobre las salidas recae en el usuario.
-- Efectos colaterales de la sobre-ortogonalización (fuerza 2.0) sobre comportamientos distintos del rechazo no caracterizados en la model card; la proyección afecta a todas las filas de `o_proj` y `down_proj`.
-- Evaluación con n=40 por clase, decodificación greedy y detección por palabras clave: sin intervalos de confianza y con riesgo de sesgo de medición (el detector de rechazo puede no capturar negativas reformuladas).
-- Modelo pequeño (1,5 B): razonamiento limitado, mayor propensión a la alucinación y al arrastre de contexto que modelos de 7 B o superiores.
-- Idiomas soportados no declarados en la model card; no se ha verificado el rendimiento en castellano.
-- Licencia Apache-2.0 permite uso comercial, pero el autor desaconseja explícitamente el uso para causar daño; la licencia no exime de obligaciones legales ni de las políticas de las plataformas de despliegue.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados fueron sobre OSO/DHL, la marca OSO de productos del mar y el término "oso" como animal), por lo que no hay cobertura externa ni validación independiente.
+- Artefacto de investigación: el propio autor lo describe como "no un producto" y recomienda no usarlo para dañar.
+- Degeneración: el 10% de los prompts dañinos producen bucles de repetición, lo que lo hace inadecuado para generación libre sin guardas.
+- Perplejidad degradada: 12,87 frente a 9,44 del modelo base, un incremento del 36% que indica pérdida de calidad general.
+- Rechazo residual: mantiene un 17,5% de rechazo dañino, por lo que no es un modelo completamente descensurado.
+- Superado: el autor recomienda abliterated-k5, que domina en todas las métricas (5% de rechazo, 0% de degeneración).
+- Riesgo de alucinación: no cuantificado en la información disponible, pero el tamaño de 1,5B y la degradación de perplejidad lo hacen propenso a errores factuales.
+- Sesgos: no documentados en la model card; se heredan los del modelo base Qwen2.5.
+- Licencia Apache 2.0 permite uso comercial, pero el autor desaconseja explícitamente el uso del modelo para causar daño y no ofrece garantías.
+- Idiomas: no confirmados; el modelo base es multilingüe, pero la abliteración podría afectar de forma desigual a distintos idiomas.
+- Tool calling y function calling: no verificados tras la cirugía de pesos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-s2
-- Repositorio de reproducción (scripts de extracción, exportación y evaluación): https://github.com/OSOSerious/oso-obliterated-models-
+- Modelo sucesor: https://huggingface.co/OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-k5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Paper de referencia del método: Arditi et al. 2024, "Refusal in Language Models Is Mediated by a Single Direction" (arXiv:2406.11717)
-- Cuadernos comunitarios de abliteración de FailSpy (referenciados por el autor; no se dispone de URL exacta en la información proporcionada)
-- Equipo Qwen (autores del modelo base; no se dispone de enlace adicional en la información proporcionada)
+- Repositorio de reproducción: https://github.com/OSOSerious/oso-obliterated-models-
+- Paper de referencia (Arditi et al. 2024): *Refusal in Language Models Is Mediated by a Single Direction* (arXiv, referencia citada por el autor; enlace directo no disponible en la información proporcionada)

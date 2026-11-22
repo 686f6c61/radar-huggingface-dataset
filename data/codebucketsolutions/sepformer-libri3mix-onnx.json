@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "codebucketsolutions/sepformer-libri3mix-onnx",
+  "slug": "codebucketsolutions-sepformer-libri3mix-onnx",
+  "author": "codebucketsolutions",
+  "url": "https://huggingface.co/codebucketsolutions/sepformer-libri3mix-onnx",
+  "created_at": "2026-11-21T21:05:25.000Z",
+  "updated_at": "2026-11-21T21:05:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speechbrain",
+    "speech-separation",
+    "audio-to-audio",
+    "base_model:speechbrain/sepformer-libri3mix",
+    "base_model:quantized:speechbrain/sepformer-libri3mix",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106327838,
+  "storage_human": "106 MB",
+  "context_length": null,
+  "base_model": "speechbrain/sepformer-libri3mix",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SepFormer - IPU Toolchain User Manual",
+      "url": "http://go/v1/Aefp9w_JW9WOawIIMAFsrDMQohWHX7RNek15WxMagMNrFhpeMBCXtavKKaYPd6UTk9Qgvdo6J3dkwNsGm8cLM-_6V6DtGmvPkMYMnEEwIkR1SwzBsPUGHIY__-J8t99Ys1zxj9Ydwd-goDWJ4PBLV3a6ez1TwZTm3JuqgcZYlIdsJrsMoXA8s6LxALTHv01DAVotDERqgK7Qcpj4qvqWcmEy9xjSmYRrTiBH7tStl4c2jFWSAKzUnWt00XC-5A8",
+      "snippet": "import os import sys sys.path.append(os.getcwd()) import torch import numpy as np from speechbrain.inference.separation import SepformerSeparation as separator from speechbrain.utils.fetching import fetch from speechbrain.utils.data_utils import split_path import torchaudio import onnx import onnxsim import onnxruntime as ort model = separator.from_hparams(source=\"speechbrain/sepformer-libri3mix\", savedir='speechbrain/sepformer-libri3mix') class SeparationModel(torch.nn.Module): def __init__(self, encoder, masknet, decoder): super().__init__() self.encoder = encoder self.masknet = masknet self"
+    }
+  ]
+}

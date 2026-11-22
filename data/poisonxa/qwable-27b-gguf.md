@@ -2,75 +2,83 @@
 
 ## Resumen
 
-Qwable-27B-GGUF es un repositorio creado por poisonxa que contiene dos archivos de pesos en formato GGUF destinados a reproducir los benchmarks de velocidad entre motores de inferencia publicados en el proyecto `pxq_llama.cpp`. El modelo base es una conversión de un modelo denso híbrido de 27 000 millones de parámetros perteneciente al linaje Qwen3.8-27B, que ha sido sometido a un proceso de ablación de alineación (abliterated). Los archivos sirven como referencia para comparar el rendimiento de distintos motores (pxq_llama, llama.cpp e ik_llama.cpp) sobre las mismas ponderaciones.
+Qwable-27B-GGUF es un repositorio de artefactos de benchmark publicado por el usuario poisonxa bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de dos conversiones cuantizadas del mismo modelo denso de 27B de la línea Qwen3.8-27B, en su variante "abliterated" (es decir, con el comportamiento de rechazo atenuado mediante edición de pesos). El propósito declarado del repositorio es permitir la reproducción de las comparativas de velocidad entre motores de inferencia (PXA) sobre tarjetas Tesla P100 y V100.
 
-El repositorio ofrece dos cuantizaciones: PXQ4, un códec propietario de pxq_llama, y MXFP4, compatible con el llama.cpp principal y otros motores. Ambos archivos tienen tamaños de 15,7 GB y 15,0 GB respectivamente, lo que permite ejecutar el modelo en GPUs con 16 GB de memoria, como las Tesla P100 y V100 usadas en las pruebas. No se trata de un modelo nuevo, sino de un conjunto de pesos de referencia para investigación y evaluación de motores.
+El repositorio contiene dos ficheros: `Qwable-27B-PXQ4core.gguf`, en formato propietario PXQ4 (codec `pxq_llama`, 15,7 GB) que solo ejecuta el motor pxq_llama, y `Qwable-27B-MXFP4-lite.gguf`, en MXFP4 (15,0 GB), compatible con llama.cpp mainline, ik_llama.cpp y pxq_llama. Ambos parten de los mismos pesos, de modo que las diferencias de rendimiento medidas corresponden al motor y no al modelo.
 
-## Especificaciones técnicas
+El interés del repositorio es, por tanto, instrumental: sirve como material de referencia para evaluar el rendimiento de motores de inferencia sobre hardware de datacenter antiguo (P100/V100) con un modelo de 27 320 697 856 parámetros. No se documentan en la información disponible datos de entrenamiento, capacidades, idiomas ni resultados de calidad del modelo base.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido denso (linaje Qwen3.8-27B) |
-| Parametros totales | 27B (aprox.) |
+| Arquitectura | Transformer denso híbrido (línea Qwen3.8-27B, variante abliterated); detalles no disponibles |
+| Parametros totales | 27 320 697 856 |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | PXQ4 (15,7 GB) y MXFP4 (15,0 GB) |
+| Tipos de cuantizacion | PXQ4 (codec pxq_llama) y MXFP4 |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (dos variantes: PXQ4 y MXFP4) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se describe como un modelo denso híbrido de 27 000 millones de parámetros, perteneciente al linaje Qwen3.8-27B. Al tratarse de un modelo denso, no utiliza mezcla de expertos (MoE). El término "híbrido" sugiere una combinación de capas de atención con otro tipo de capas, posiblemente de estado de espacio, aunque la información proporcionada no detalla la composición exacta. Tampoco se han publicado datos sobre el corpus de entrenamiento, el número de tokens o el uso de técnicas de alineación como RLHF o DPO.
+La información disponible describe el modelo base como un transformer denso híbrido de la línea Qwen3.8-27B, en una variante "abliterated", lo que implica una modificación post-entrenamiento de los pesos orientada a suprimir la dirección de rechazo en el espacio de activaciones. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención ni la composición del dataset de entrenamiento original.
 
-El modelo ha sido "abliterated", un proceso post-entrenamiento que elimina o reduce los comportamientos de rechazo aprendidos durante la alineación. Esta modificación se aplicó al modelo base antes de generar las cuantizaciones, por lo que las salidas pueden diferir de las de un modelo Qwen estándar. La innovación principal de este repositorio no reside en la arquitectura, sino en la publicación de pesos idénticos en dos formatos de cuantización distintos para permitir comparaciones justas entre motores de inferencia.
+Tampoco se documentan el volumen de tokens de preentrenamiento, las etapas de ajuste (SFT, RLHF, DPO) ni innovaciones técnicas del modelo base. La única información técnica concreta del repositorio se refiere al proceso de cuantización: dos conversiones de los mismos pesos a PXQ4 y MXFP4, con sumas sha256 publicadas (`6fb4a437684e8bbe` y `1d04b75817358cf7` como primeros 16 caracteres) para verificación de integridad. El protocolo de benchmark asociado especifica temperatura 0, mediana de 7 ejecuciones, ficheros verificados por sha y prompts únicos.
 
 ## Capacidades
 
-- Generación de texto mediante motores compatibles con GGUF, con soporte para los formatos PXQ4 y MXFP4.
-- Ejecución en GPUs con VRAM limitada, gracias a las cuantizaciones de 15,7 GB y 15,0 GB.
-- Reproducción de benchmarks de velocidad entre motores, al compartir los mismos pesos en dos códecs distintos.
-- Compatibilidad con llama.cpp e ik_llama.cpp para el archivo MXFP4, y con pxq_llama para ambos archivos.
-- No se han documentado capacidades de tool calling, visión, audio, razonamiento avanzado ni soporte de agentes en la información disponible.
+- Generación de texto conversacional: el tag `conversational` del repositorio indica uso previsto para diálogo.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integración con APIs compatibles con OpenAI.
+- Ejecución multiplataforma de inferencia: la variante MXFP4 funciona en llama.cpp mainline, ik_llama.cpp y pxq_llama; la variante PXQ4 queda restringida a pxq_llama.
+- No se documentan capacidades de razonamiento explícito, código, matemáticas, visión, audio, tool calling ni agentes en la información disponible.
+- No se documenta soporte multilingüe ni modo de pensamiento (thinking mode).
 
 ## Casos de uso
 
-- Reproducción de benchmarks de velocidad: los archivos permiten verificar los resultados publicados en el repositorio pxq_llama.cpp, ejecutando las mismas ponderaciones en GPUs Tesla P100 o V100.
-- Evaluación comparativa de motores: investigadores pueden medir el rendimiento de llama.cpp, ik_llama.cpp y pxq_llama con exactamente los mismos pesos, garantizando que las diferencias de velocidad se deben al motor y no a la cuantización.
-- Pruebas de códecs de cuantización: el par PXQ4 y MXFP4 permite analizar el impacto del formato de cuantización en la velocidad y en el uso de memoria sobre una base de pesos idéntica.
-- Desarrollo de kernels optimizados para GPUs antiguas: los tamaños de archivo de alrededor de 15 GB son adecuados para probar kernels en tarjetas de 16 GB, como la Tesla P100, sin necesidad de hardware más moderno.
-- Validación de integridad y reproducibilidad: el repositorio incluye sumas sha256 y un protocolo de referencia, lo que facilita comprobar que los archivos descargados coinciden con los utilizados en los benchmarks publicados.
-- Investigación sobre modelos abliterados: el modelo base, al haber pasado por un proceso de ablación, puede servir para estudiar los efectos de este tipo de modificación en el comportamiento de modelos de 27B.
-- Despliegue en sistemas con memoria limitada: el formato MXFP4 de 15,0 GB puede ejecutarse en GPUs de 16 GB con un contexto reducido, lo que lo hace útil para entornos sin acceso a GPUs de gran capacidad.
+- Reproducción de benchmarks de motores de inferencia: descargar ambos ficheros y ejecutar el protocolo de `bench/fair/protocol.md` para verificar las cifras de velocidad publicadas en las notas de la release PXA, con garantía de que los pesos son idénticos entre motores.
+- Evaluación de hardware de datacenter legacy: medir throughput y latencia en Tesla P100 y V100, tarjetas sin soporte de las extensiones de precisión más recientes, para decidir si merece la pena reutilizar este parque instalado frente a migrar a A100/H100.
+- Comparativa de codecs de cuantización: contrastar PXQ4 frente a MXFP4 sobre el mismo modelo de 27B, midiendo el impacto del codec en velocidad y en consumo de memoria (15,7 GB frente a 15,0 GB).
+- Validación de pipelines de despliegue GGUF: usar los ficheros como caso de prueba en integraciones con llama.cpp o ik_llama.cpp, comprobando la verificación de checksums y la compatibilidad de metadatos.
+- Investigación sobre edición de pesos: al ser una variante abliterated, sirve para estudiar el efecto de la supresión de la dirección de rechazo en el comportamiento conversacional de un modelo de 27B.
+- Pruebas de integración con endpoints compatibles: validar clientes y pasarelas que consumen APIs con formato OpenAI contra un modelo servido localmente en GGUF.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio contiene los archivos de pesos y sumas sha256 para reproducir los benchmarks de velocidad entre motores documentados en `pxq_llama.cpp`, pero los resultados numéricos están en el repositorio del motor, no en esta ficha. No se aportan datos de MMLU, HumanEval, GSM8K ni otros benchmarks de calidad.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El repositorio solo contiene material para benchmarks de velocidad de motores de inferencia; las cifras concretas se remiten a las notas de la release PXA y a `bench/fair-battle.md`, no incluidas en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos ocupan 15,7 GB (PXQ4) o 15,0 GB (MXFP4). El caché KV adicional depende de la longitud de contexto, que no está especificada.
-- GPUs recomendadas: Tesla P100 y V100, que son las empleadas en las pruebas del autor. También puede ejecutarse en GPUs con 24 GB o más, como la RTX 3090 o la RTX 4090.
-- Compatibilidad con GPU de consumo: sí, es posible cargarlo en una GPU de 16 GB con contexto limitado. Con 24 GB, el modelo cabe con margen para un contexto más amplio.
-- Opciones de despliegue: llama.cpp e ik_llama.cpp para el archivo MXFP4; pxq_llama para ambos archivos. También puede usarse con cualquier herramienta que soporte el formato GGUF y el códec correspondiente.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 15,0 GB con MXFP4 y 15,7 GB con PXQ4, solo para los pesos; hay que añadir la memoria de la caché KV, cuyo tamaño depende de la longitud de contexto (no documentada).
+- GPU validadas por el autor: Tesla P100 y Tesla V100, empleadas en las comparativas de velocidad publicadas.
+- GPU consumer: con 15-16 GB de pesos, el modelo entra en tarjetas de 24 GB (RTX 3090, RTX 4090) dejando margen para caché KV en contextos moderados; en tarjetas de 16 GB el margen es muy ajustado y depende de la longitud de contexto.
+- Opciones de despliegue: llama.cpp mainline e ik_llama.cpp para el fichero MXFP4; pxq_llama para ambos ficheros (PXQ4 y MXFP4).
+- Latencia y throughput: no disponibles en la información proporcionada; las cifras están en las notas de la release PXA y en `bench/fair-battle.md`.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos comparativos con otros modelos de la misma categoría. El único modelo comparable conocido es el base `Mia-AiLab/Qwable-3.6-27b`, del cual derivan estos archivos, pero no se ofrecen cifras de rendimiento o parámetros adicionales para establecer una comparación.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwable-27B-GGUF (este) | 27,3B denso | No disponible | GGUF (PXQ4, MXFP4) | Apache 2.0 | Variante abliterated; artefactos de benchmark |
+| Qwen3.8-27B (modelo base) | 27B denso | No disponible | Safetensors y derivados | No disponible en la informacion | Modelo original sin abliterar |
+| Otras conversiones GGUF de 27B | ~27B | Variable | GGUF | Variable | No disponible comparativa concreta |
+
+No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Los archivos están pensados exclusivamente para reproducir benchmarks de velocidad, no como un modelo listo para producción.
-- El proceso de ablación (abliterated) puede reducir la seguridad del modelo y aumentar la probabilidad de generar contenido no deseado o no alineado.
-- No se han documentado sesgos conocidos ni riesgos de alucinación específicos en la información disponible.
-- La longitud de contexto no está especificada, por lo que el comportamiento en conversaciones largas es desconocido.
-- La licencia Apache 2.0 permite el uso comercial, pero la garantía y responsabilidad son limitadas, como es habitual en este tipo de licencias.
-- El formato PXQ4 solo es compatible con pxq_llama, lo que limita su uso a ese motor específico.
+- El repositorio no es un modelo entrenado ni ajustado por el autor: son conversiones cuantizadas de un modelo de terceros, por lo que cualquier problema de calidad, sesgo o alucinación proviene del modelo base.
+- La variante abliterated suprime deliberadamente el comportamiento de rechazo, lo que incrementa el riesgo de generar contenido dañino, sesgado o inapropiado sin las salvaguardas habituales; no es recomendable para aplicaciones de cara al público sin filtros adicionales.
+- Riesgo de alucinación: no cuantificado en la información disponible; es esperable el comportamiento típico de un modelo de 27B sin datos de evaluación publicados.
+- La variante PXQ4 solo funciona en pxq_llama, un motor no estándar; esto limita la portabilidad y añade dependencia de un proyecto concreto.
+- No se documentan idiomas soportados, longitud de contexto ni límites de uso; hay que verificarlos empíricamente antes de desplegar.
+- Aunque la licencia declarada es Apache 2.0, la procedencia del modelo base (línea Qwen3.8) y de la edición abliterated debe verificarse por separado antes de un uso comercial.
+- El repositorio está pensado para reproducir benchmarks, no como distribución de referencia del modelo; los 660 descargos y 2 likes indican una adopción muy limitada.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/poisonxa/Qwable-27B-GGUF
-- Repositorio pxq_llama.cpp: https://github.com/poisonxa16/pxq_llama.cpp
-- Comunidad Discord: https://discord.gg/BHWmMHHStY
-- Modelo original: https://huggingface.co/Mia-AiLab/Qwable-3.6-27b
+- Repositorio Hugging Face: https://huggingface.co/poisonxa/Qwable-27B-GGUF
+- Repositorio del motor PXA: https://github.com/poisonxa16/pxa
+- Discord PXA Network: https://discord.pxanetwork.com
+- Reddit r/PXANetwork: https://www.reddit.com/r/PXANetwork/

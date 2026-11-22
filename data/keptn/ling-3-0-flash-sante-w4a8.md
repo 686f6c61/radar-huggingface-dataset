@@ -2,113 +2,106 @@
 
 ## Resumen
 
-Ling-3.0-flash-Sante w4a8 es una cuantización de 4 bits del fine-tune médico Ling-3.0-flash-Sante, desarrollado por inclusionAI sobre su modelo base Ling-3.0-flash. Este artefacto lo publica el usuario keptn y no es un modelo nuevo: es un empaquetado específico para el motor de inferencia radiance sobre GPUs AMD RDNA4, con los pesos de los expertos enrutados en int4 (GPTQ) y el resto de pesos en bf16. El modelo base es un MoE de 124 000 millones de parámetros totales con 5100 millones activos.
+Ling-3.0-flash-Sante w4a8 es una cuantización de 4 bits (w4a8) del modelo médico `inclusionAI/Ling-3.0-flash-Sante`, publicada por el usuario keptn para el motor de inferencia radiance sobre GPUs AMD RDNA4. El modelo original es un transformer de tipo Mixture-of-Experts con 124.000 millones de parámetros totales y 5.100 millones activos por token, afinado para el dominio médico. Esta versión comprime los pesos en un único fichero de 64,10 GiB que no cabe en una sola tarjeta y requiere dos o cuatro GPUs de 32 GB.
 
-El problema que resuelve este artefacto es práctico: permite ejecutar un MoE de 124B en cuatro tarjetas de 32 GB (o dos, con expertos en memoria de host) dentro del ecosistema AMD ROCm, algo que el checkpoint bf16 original no permite. El fichero único `ling-3.0-flash-sante-w4a8.rad` ocupa 66,35 GiB y requiere una compilación de radiance con el PR #337, que aún no está en ninguna release.
+La relevancia de esta ficha es doble. Por un lado, demuestra que es posible servir un MoE de 124B con calidad casi idéntica al original bf16 (KL medio de 0,00461 frente al checkpoint de referencia) en hardware AMD de consumo profesional, algo hasta hace poco reservado a NVIDIA. Por otro, su contexto de 262.144 tokens y su cabecera MTP para decodificación especulativa lo hacen apto para tareas de razonamiento largo sobre documentación clínica.
 
-Es relevante ahora por dos motivos: la escasez de tooling de cuantización maduro para RDNA4 y el interés creciente en fine-tunes verticales de dominio médico. La calidad declarada frente al original bf16 es alta: KL medio de 0,00652 sobre 42 767 tokens de respuesta en MT-Bench, con un 97,6 % de coincidencia en el token top-1.
+El modelo está pensado para despliegues en producción sobre Radeon AI PRO R9700 y similares, con licencia MIT tanto en el original como en esta cuantización, lo que facilita su uso comercial. No obstante, la dependencia exclusiva del motor radiance y del hardware RDNA4 limita seriamente su portabilidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con cabeza MTP (multi-token prediction) para decodificación especulativa |
-| Parametros totales | 124 000 millones (según model card del artefacto) |
-| Parametros activos | 5100 millones |
-| Longitud de contexto | 262 144 tokens (probado con 65 536) |
-| Tipos de cuantizacion | Expertos enrutados: int4 con escala bf16 cada 128 pesos, GPTQ; resto de pesos: bf16; activaciones de expertos: FP8 (E4M3); otras lineales y lm_head: bf16 |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), 512 expertos enrutados por capa, con cabecera MTP (multi-token prediction) |
+| Parametros totales | 124.000 millones (124B) |
+| Parametros activos | 5.100 millones (5,1B) por token |
+| Longitud de contexto | 262.144 tokens (probado en velocidad y calidad a 65.536) |
+| Tipos de cuantizacion | W4A8: expertos enrutados a 4 bits con codebook y escala FP8 cada 64 pesos; otras lineales grandes en IQ8R (int8 con rotación Hadamard sobre 128 y escala u8 cada 256 pesos); activaciones int8; embedding, lm_head, router y proyecciones pequeñas en bf16 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | `.rad` (formato propietario de radiance), fichero único de 66,35 GiB |
-| Motor de inferencia | radiance (ROCm, AMD RDNA4), requiere PR #337 |
-| KV cache | bf16 |
-| Version | 1.0 (2026-10-31) |
+| Formato de pesos | `.rad` (formato propietario del motor radiance), fichero único de 64,10 GiB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos (MoE) con 124B parámetros totales y 5,1B activos por token, lo que sitúa el coste de cómputo por token en el rango de un modelo denso de ~5B. Incorpora una cabeza MTP propia que se usa como draft model para decodificación especulativa con 3 tokens de borrador, sin necesidad de un modelo auxiliar separado.
+El modelo base es un transformer de tipo Mixture-of-Experts con 512 expertos enrutados por capa y 124B de parámetros totales, de los que solo 5,1B se activan por token. Incluye un experto compartido y una cabecera MTP (multi-token prediction) que se reutiliza aquí para decodificación especulativa con 3 tokens borrador. El checkpoint de partida es la revisión `f74bd27b` del modelo bf16 original de inclusionAI, afinado para el dominio médico (Sante).
 
-El proceso de cuantización de este artefacto tiene tres pasos documentados: conversión del checkpoint bf16 (revisión `f74bd27b`) redondeando los expertos a nearest a 4 bits; recogida de estadísticas de entrada (hessianos) de cada capa de expertos con el corpus de calibración; y cuantización GPTQ de los expertos contra esas estadísticas, dejando el resto de pesos en bf16. El corpus de calibración tiene 1 260 419 tokens de texto médico, documentos, código, tool calls y chat en la plantilla de chat de Ling, con un 60 % de muestras que incluyen bloque de razonamiento. Las fuentes médicas son los splits de entrenamiento de PubMedQA y MedMCQA y artículos de Wikipedia; no se usaron splits de evaluación. Los expertos de la capa MTP no tienen estadísticas registradas y se redondearon a nearest.
-
-El fine-tune Sante del modelo base es de dominio médico; la model card del artefacto no detalla el dataset ni el método de ajuste (SFT, RLHF o DPO) del modelo original, por lo que esos datos no están disponibles en la información proporcionada.
+La cuantización se realizó con la herramienta `rad-convert` y la receta `ling-3.0-flash-sante-w4a8.recipe`. Los expertos enrutados se comprimen a códigos de 4 bits sobre un codebook, con una escala FP8 por cada 64 pesos, redondeo al más cercano y búsqueda de escala. El resto de lineales grandes pasan a IQ8R (int8 con rotación Hadamard sobre 128 y una escala u8 cada 256 pesos bajo una escala bf16 por fila). El embedding, el lm_head, el router y algunas proyecciones pequeñas se mantienen en bf16. No se usó ningún dato de calibración: el directorio `CALIB` estaba vacío durante la conversión.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo thinking opcional, activable por petición mediante `chat_template_kwargs: {"enable_thinking": true}`.
-- Conocimiento y ajuste específico de dominio médico, derivado del fine-tune Sante.
-- Tool calling y function calling, presentes en el corpus de calibración del cuantizador y en el modelo base.
-- Decodificación especulativa nativa mediante la cabeza MTP del propio modelo, con 3 tokens de borrador.
-- Contexto largo de hasta 262 144 tokens, con 65 536 probados en el artefacto.
+- Generación de texto y razonamiento de dominio médico, al ser un fine-tune sobre Ling-3.0-flash-Sante.
+- Razonamiento multi-paso con modo "thinking" activable por petición mediante `chat_template_kwargs: {"enable_thinking": true}` (desactivado por defecto en la configuración recomendada).
+- Tool calling / function calling: probado con una llamada en radiance 2.2.0 con resultado correcto.
+- Decodificación especulativa nativa mediante la cabecera MTP del propio modelo, con 3 tokens borrador.
+- Ventana de contexto larga de 262.144 tokens, apta para documentación clínica extensa o historiales multi-turno.
 - Capacidades multilingües: no disponible en la información proporcionada.
-- Visión y audio: no disponibles; las entradas del modelo son solo texto.
+- No se documentan capacidades de visión ni audio.
 
 ## Casos de uso
 
-- Asistente clínico de segunda opinión sobre documentación médica: el ajuste Sante y el contexto de 262k permiten cargar historiales completos, informes y guías clínicas en una sola ventana y hacer preguntas sobre ellos, con el modo thinking activado para razonamiento explícito.
-- Triage de consultas médicas en atención al cliente sanitaria: conversaciones multi-turno con contexto largo y tool calling para consultar bases de datos de síntomas o agendas, desplegado en infraestructura AMD existente.
-- Extracción estructurada de información de informes clínicos: uso de function calling para devolver JSON con diagnósticos, códigos CIE y medicaciones a partir de texto libre, integrable en pipelines de procesamiento documental.
-- Resumen de literatura biomédica: ingestión de artículos de PubMed (usados en la calibración) y generación de resúmenes con citas, aprovechando la ventana de 262k para varios artículos por petición.
-- Soporte a codificación clínica y facturación: el modelo maneja código y tool calls, por lo que puede mapear descripciones libres a códigos y validar contra un catálogo mediante llamadas a herramientas.
-- Despliegue on-premise en hospitales con hardware AMD: al correr en cuatro Radeon AI PRO R9700 (32 GB) con ROCm, encaja en entornos donde no se quiere depender de CUDA ni enviar datos de pacientes a la nube.
-- Generación aumentada por recuperación sobre corpus médicos internos: la ventana larga y el throughput de prefill (2201 tok/s a 24k tokens con 4 tarjetas) permiten inyectar muchos fragmentos recuperados por consulta.
+- Asistencia clínica documental: resumen y extracción de entidades en historiales e informes médicos largos, aprovechando los 262.144 tokens de contexto para procesar un expediente completo en una sola petición.
+- Razonamiento diagnóstico asistido: el modo thinking permite cadenas de razonamiento explícitas sobre síntomas y pruebas, útil como apoyo a profesionales (nunca como sustituto).
+- Codificación clínica (CIE-10, SNOMED): clasificación y normalización de diagnósticos y procedimientos mediante tool calling contra catálogos externos.
+- Atención al paciente automatizada: conversaciones multi-turno con contexto persistente, desplegando 4 u 8 secuencias concurrentes con el pool KV compartido documentado (hasta 6,4 sesiones completas de 262k en 4 tarjetas).
+- Búsqueda aumentada sobre literatura médica: ingestión de guías clínicas y papers en el contexto largo y generación de respuestas citadas.
+- Generación de informes estructurados: pipelines que convierten notas libres en informes con esquema fijo, integrándose vía API compatible con el motor radiance.
+- Evaluación y anotación de datasets médicos: generación de respuestas de referencia a gran escala con throughput de 268,4 tok/s en decodificación de un solo stream sobre 4 tarjetas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos publicados son métricas de fidelidad de la cuantización y de velocidad.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Sí se documentan métricas de fidelidad frente al original bf16 y de velocidad:
 
-Fidelidad frente al bf16 original (MT-Bench, 80 preguntas, ambos turnos, 42 767 tokens de respuesta):
-
-| Metrica | Valor |
-|---|---|
-| KL medio | 0,00652 |
-| KL percentil 99 | 0,0725 |
-| Coincidencia en token top-1 | 97,6 % |
-| Ratio de perplejidad | ×1,003 |
-
-Velocidad en Radeon AI PRO R9700 a 215 W, KV bf16, 3 tokens de borrador, thinking desactivado, BetterBench 0.6.1, temperatura 0,7 (mediana):
-
-| Metrica | 2 tarjetas | 4 tarjetas |
+| Metrica | Este fichero (v2.0) | Version 1.0 |
 |---|---|---|
-| Decode, un stream (tok/s) | 157,1 | 236,3 |
-| Prefill a 24k tokens (tok/s) | 1226 | 2201 |
-| 4 streams, total (tok/s) | 249 | 460 |
+| KL medio (80 preguntas MT-Bench, ambos turnos) | 0,00461 | 0,00652 |
+| KL percentil 99 | 0,0494 | 0,0725 |
+| Token top idéntico | 98,0% | 97,6% |
+| Ratio de perplejidad | ×1,001 | ×1,003 |
+
+| Rendimiento (Radeon AI PRO R9700 300 W, radiance 2.1.0+PR #474, bf16 KV, 3 tokens borrador, thinking off) | 2 tarjetas | 4 tarjetas |
+|---|---|---|
+| Decodificación, un stream (tok/s, mediana) | 183,9 | 268,4 |
+| Prefill a 24k tokens (tok/s) | 1.423 | 2.556 |
+| 4 streams, total (tok/s) | 323 | 535 |
+
+En una sola tarjeta el modelo no cabe.
 
 ## Requisitos de hardware
 
-- VRAM: el fichero pesa 66,35 GiB; no cabe en una sola tarjeta de 32 GB. Con dos tarjetas de 32 GB parte de los expertos reside en memoria de host (16 GiB por tarjeta), lo que degrada el prefill en contexto largo.
-- GPU recomendadas: Radeon AI PRO R9700 (32 GB, RDNA4) es la probada; se necesitan dos o cuatro. Solo GPUs AMD RDNA4 con ROCm.
-- GPU de consumo: no disponible; la model card no menciona pruebas en GPUs de consumo, y el tamaño del fichero descarta configuraciones de una sola tarjeta de 24 GB o menos.
-- Despliegue: exclusivamente mediante el motor radiance, compilado desde el PR #337 (`git fetch origin pull/337/head:pr-337`). No hay soporte en vLLM, llama.cpp, Ollama ni TGI para este formato `.rad`.
-- Memoria de contexto (KV pool bf16, tokens totales compartidos entre secuencias): con 2 tarjetas, 524 288 tokens para 2 secuencias, 1 048 592 para 4 y 1 454 448 para 8; con 4 tarjetas, 524 336, 1 048 576 y 1 608 032 respectivamente.
-- Latencia: en dos tarjetas, el prefill cae a 650 tok/s a 64k de contexto y un prompt de 200k tarda unos 20 minutos.
+- VRAM: el fichero ocupa 64,10 GiB; no cabe en una GPU de 32 GB. Con 8 secuencias el pool KV consume 14,7 GiB por tarjeta en 4 tarjetas y 14,2 GiB por tarjeta en 2 tarjetas.
+- GPUs recomendadas: 2 o 4 tarjetas AMD RDNA4 de 32 GB; probado en Radeon AI PRO R9700. No hay soporte documentado para NVIDIA ni para GPUs de consumo de 24 GB.
+- Memoria host: en configuración de 2 tarjetas se requieren 32 GiB libres de RAM del sistema para los expertos (`placement: expert_tiered`, `host-pool-mib: 32768`).
+- Despliegue: exclusivamente mediante el motor radiance (versión 2.2.0 o superior), distribuido como imagen Docker `stilldeadcode/radiance:2.2.0`. No hay soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Configuración de referencia: `tp: 4`, `p2p: on`, `kv-cache-dtype: bf16`, `max-model-len: 262144`, `max-num-seqs: 8`, `num-speculative-tokens: 3`, `temp: 1.0`, `top-p: 0.95`.
+- Latencia y throughput: ver tabla de benchmarks (183,9-268,4 tok/s en decodificación de un stream; 1.423-2.556 tok/s en prefill a 24k).
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks de tareas que permitan una comparación de rendimiento con alternativas. La comparación disponible es de formato y despliegue:
+| Modelo | Parametros | Activos | Contexto | Licencia | Hardware | Motor |
+|---|---|---|---|---|---|---|
+| Ling-3.0-flash-Sante w4a8 (este) | 124B | 5,1B | 262.144 | MIT | 2-4× AMD RDNA4 32 GB | radiance |
+| inclusionAI/Ling-3.0-flash-Sante (bf16) | 124B | 5,1B | no disponible | MIT | Requiere más VRAM que esta cuantización | HF transformers / vLLM |
+| Alternativas MoE de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Cuantizacion | Hardware | Licencia |
-|---|---|---|---|---|---|
-| Ling-3.0-flash-Sante w4a8 (este) | 124B totales, 5,1B activos | 262 144 | int4 GPTQ en expertos + bf16 | 2-4 AMD RDNA4 (radiance) | MIT |
-| inclusionAI/Ling-3.0-flash-Sante (bf16) | 124B totales, 5,1B activos | no disponible | bf16 | no disponible (no cabe en 4×32 GB según este artefacto) | MIT |
-| Alternativas de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento frente a alternativas.
 
 ## Limitaciones y advertencias
 
-- Solo funciona en GPUs AMD RDNA4 con el motor radiance; no hay ruta de despliegue en CUDA ni en motores estándar.
-- Requiere compilar radiance desde el PR #337, no incluido en ninguna release; el flujo de instalación es frágil para producción.
-- Los expertos de la capa MTP no tienen estadísticas de calibración y se redondearon a nearest, lo que puede afectar ligeramente a la calidad de la decodificación especulativa.
-- Con dos tarjetas, parte de los expertos vive en memoria de host: el prefill en contexto largo es muy lento (650 tok/s a 64k; ~20 minutos para 200k tokens).
-- Riesgo de alucinación inherente a los modelos de lenguaje, agravado en dominio médico; no debe usarse como sustituto de juicio clínico.
-- Sesgos conocidos: no disponibles en la información proporcionada; la model card remite a la del modelo original para más limitaciones.
-- Idiomas soportados no documentados; no se garantiza calidad fuera de los idiomas del corpus de calibración.
-- Licencia MIT, que permite uso comercial, pero las limitaciones del modelo base (recogidas en su model card) siguen aplicando.
-- El corpus de calibración excluyó splits de evaluación de PubMedQA y MedMCQA, pero no hay benchmarks de dominio publicados para verificar el rendimiento médico real.
+- Solo funciona en GPUs AMD RDNA4 y exclusivamente con el motor radiance 2.2.0 o superior; no es portable a otros stacks de inferencia.
+- El fichero no cabe en una sola tarjeta; como mínimo se necesitan dos GPUs de 32 GB y, en ese caso, 32 GiB de memoria host adicional para los expertos.
+- Las métricas de velocidad, calidad y memoria se midieron con radiance 2.1.0 más el PR #474 y con `max-model-len: 65536`; el comportamiento a contexto completo de 262.144 no está validado en cuanto a velocidad.
+- No se usó calibración en la conversión, lo que puede afectar a la fidelidad en dominios distintos del evaluado (MT-Bench).
+- Tool calling: solo se ha probado una llamada, por lo que la robustez en flujos de agentes complejos no está garantizada.
+- Riesgo de alucinación inherente a un modelo de lenguaje médico; no debe usarse como sustituto del criterio clínico profesional.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Idiomas soportados: no disponible; la model card original puede detallarlos y debe consultarse antes de su uso.
+- Licencia MIT permite uso comercial, pero la model card remite a las limitaciones adicionales del modelo original, que conviene revisar.
+- El tamaño del repositorio (140,1 GB) implica una descarga considerable y espacio en disco acorde.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/keptn/ling-3.0-flash-sante-w4a8
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/keptn/ling-3.0-flash-sante-w4a8
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante
-- Motor radiance: https://codeberg.org/StillDeadcode/radiance
-- PR #337 de radiance: https://codeberg.org/StillDeadcode/radiance/pulls/337
-- Framework de model cards: https://codeberg.org/keptn42/radiance-model-cards-framework
-- Dataset MT-Bench: https://huggingface.co/datasets/lmsys/mt_bench_human_judgments
+- Motor radiance (Codeberg): https://codeberg.org/StillDeadcode/radiance
+- Guía Docker de radiance: https://codeberg.org/StillDeadcode/radiance/src/branch/main/docs/DOCKER.md#run-it
+- Versión 1.0 de esta cuantización: https://huggingface.co/keptn/ling-3.0-flash-sante-w4a8/tree/v1.0

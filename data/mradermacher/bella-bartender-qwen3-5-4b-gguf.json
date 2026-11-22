@@ -42,16 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=roleplay&p=2&sort=trending",
-      "snippet": "• 4.68k • 5 · juiceb0xc0de/bella-bartender-9b-yi-GGUF. Text Generation • 9B • Updated Jul 2 • 757 • 2 · mradermacher/Gemma-4-Novelist-Eclipse-31B-i1-GGUF."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=creative-writing",
-      "snippet": "juiceb0xc0de/bella-bartender-gemma-e4b. Text Generation • 8B • Updated ... mradermacher/Gemma-4-31B-StyleTune-i1-GGUF. 32B • Updated Jul 3 • 4.46k • 24."
-    }
-  ]
+  "sources": []
 }

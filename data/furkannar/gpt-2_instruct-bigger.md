@@ -1,97 +1,99 @@
 # FurkanNar/GPT-2_Instruct-Bigger
 
 ## Resumen
-GPT-2_Instruct-Bigger es un ajuste fino de GPT-2 publicado por el usuario FurkanNar en Hugging Face. Se trata de un modelo decoder-only tipo transformer, derivado del modelo base openai-community/gpt2 (124.439.808 parámetros reales según el archivo safetensors) y ajustado previamente por el mismo autor en FurkanNar/gpt-2_instruct. El objetivo es dotar a GPT-2 de capacidades básicas de seguimiento de instrucciones mediante ajuste supervisado sobre el dataset databricks/databricks-dolly-15k, complementado en etapas anteriores con tatsu-lab/alpaca y ChilleD/SVAMP.
 
-El modelo resuelve un problema acotado: demostrar que un transformer pequeño (124M de parámetros, 0,5 GB de repositorio) puede adaptarse a tareas de instrucción con recursos muy limitados. El entrenamiento se realizó con 13.500 muestras de entrenamiento (90 por ciento) y 1.500 de validación (10 por ciento), 4 épocas, batch size 4 y una longitud máxima de secuencia de 128 tokens, en precisión mixta FP16.
+GPT-2_Instruct-Bigger es un ajuste fino del modelo GPT-2 de OpenAI (124M parámetros) orientado a seguir instrucciones en inglés. Lo desarrolla FurkanNar, un autor individual, y parte de su propio modelo previo GPT-2_Instruct-v0.1, a su vez derivado de openai-community/gpt2. El objetivo es dotar a un GPT-2 pequeño de capacidades básicas de instrucción mediante fine-tuning supervisado sobre tres conjuntos de datos: Alpaca, SVAMP (problemas matemáticos de enunciado) y Dolly-15k.
 
-Su relevancia es principalmente didáctica y experimental: sirve como ejemplo reproducible de pipeline de fine-tuning con Transformers, y como línea base ligera para probar prompts, plantillas de instrucción y despliegues en hardware modesto. No compite con modelos actuales de razonamiento o código: es un GPT-2 de 124M con contexto muy corto y entrenamiento exclusivamente en inglés.
+El modelo no introduce cambios arquitectónicos: es un transformer decoder-only de la familia GPT-2, con 124.439.808 parámetros totales y un contexto de entrenamiento limitado a 128 tokens. Su relevancia es más didáctica que práctica: sirve como ejemplo de pipeline de fine-tuning, gestión de memoria en GPU y decodificación Best-of-N sobre un modelo pequeño y asequible. No compite con LLM modernos en razonamiento ni en calidad de generación.
+
+La model card documenta el proceso de entrenamiento con pérdida y perplejidad por época, así como un sistema de inferencia con muestreo Best-of-4 y puntuación por log-verosimilitud normalizada por longitud. La licencia es MIT y el repositorio ocupa unos 0,5 GB en formato safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (GPT-2) |
-| Parametros totales | 124.439.808 (dato real del archivo safetensors) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 128 tokens en el ajuste fino (máxima longitud de secuencia de entrenamiento); la arquitectura GPT-2 base admite hasta 1024 posiciones |
-| Tipos de cuantizacion | no disponible (el autor solo publica pesos en safetensors; la conversión a GGUF/INT8/INT4 requeriría herramientas externas) |
-| Idiomas soportados | en (inglés) |
+| Parametros totales | 124.439.808 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 128 tokens en entrenamiento; 512 tokens de max_length en el script de inferencia con truncado de turnos |
+| Tipos de cuantizacion | no disponible (no se documentan cuantizaciones publicadas; pesos en safetensors en FP16/FP32) |
+| Idiomas soportados | inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (acompañado de config.json y generation_config.json) |
+| Formato de pesos | safetensors (model.safetensors), config.json, generation_config.json |
 
 ## Arquitectura y entrenamiento
-La arquitectura es la de GPT-2: un transformer decoder-only con atención causal, normalización previa a la atención y capas feed-forward, sin las innovaciones posteriores de modelos más recientes. El modelo parte de FurkanNar/gpt-2_instruct, que a su vez deriva de openai-community/gpt2, y se ajusta sobre databricks/databricks-dolly-15k para tareas de seguimiento de instrucciones. Los tags del repositorio indican también el uso de los datasets ChilleD/SVAMP (problemas aritméticos de un paso) y tatsu-lab/alpaca (instrucciones generales) en etapas previas o complementarias del ajuste, aunque la model card solo documenta en detalle el entrenamiento final sobre Dolly-15k.
 
-Hiperparámetros documentados: longitud máxima de secuencia 128 tokens, 4 épocas, batch size 4, learning rate 2e-5, max gradient norm 1.0, precisión mixta FP16 y limitación de la fracción de memoria de GPU al 50 por ciento para evitar OOM. El autor aplica además recorte de gradiente y `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True` para reducir la fragmentación de memoria. No se documenta el número total de tokens de entrenamiento, la composición exacta de la mezcla de datasets ni el uso de RLHF, DPO u otra técnica de alineación posterior al ajuste supervisado.
+La arquitectura es la de GPT-2 estándar: transformer decoder-only con atención causal, sin modificaciones estructurales respecto al modelo base de OpenAI. El fine-tuning se realizó sobre FurkanNar/GPT-2_Instruct-v0.1, que a su vez deriva de openai-community/gpt2. Los datos de entrenamiento combinan tres fuentes: tatsu-lab/alpaca (instrucciones generales), ChilleD/SVAMP (problemas matemáticos de enunciado) y databricks/databricks-dolly-15k (instrucciones diversas). La model card no especifica el número total de tokens ni la composición exacta por dataset.
+
+Los hiperparámetros documentados son: longitud máxima de secuencia de 128 tokens, 4 épocas, batch size de 4, learning rate de 2e-5, gradiente máximo de norma 1.0, precisión mixta FP16 y fracción de memoria GPU limitada al 50%. No se menciona RLHF, DPO ni ninguna etapa de alineación posterior al fine-tuning supervisado. La pérdida de validación baja de 2,8375 a 2,7618 entre la primera y la cuarta época, y la perplejidad de validación de 17,07 a 15,83, sin señales claras de sobreajuste según el autor. El proceso de inferencia incorpora un esquema Best-of-N (N=4 por defecto) con puntuación por log-verosimilitud normalizada por longitud y temperatura de calibración independiente de la de generación.
 
 ## Capacidades
-- Generación de texto autoregresiva en inglés, con formato de instrucción/respuesta heredado del ajuste sobre Dolly-15k.
-- Seguimiento básico de instrucciones sencillas y de un solo turno, limitado por la ventana de 128 tokens.
-- Resolución de problemas aritméticos de un paso, presumiblemente reforzada por el dataset SVAMP utilizado en la etapa anterior del pipeline.
-- Respuesta a preguntas de cultura general y tareas de redacción breve, en la medida en que Dolly-15k cubre categorías como open QA, brainstorming, clasificación e información extraída.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte explícito de agentes ni de razonamiento multi-paso.
-- No se documenta modo de pensamiento (thinking mode), capacidades de visión ni de audio.
-- Capacidad multilingüe: no disponible; el modelo está declarado únicamente para inglés.
+
+- Generación de texto en inglés con formato de instrucción y respuesta.
+- Seguimiento básico de instrucciones simples, limitado por el tamaño del modelo y el contexto de 128 tokens de entrenamiento.
+- Resolución de problemas matemáticos de enunciado sencillos, por influencia del dataset SVAMP.
+- Conversación multi-turno mediante el script de inferencia, que mantiene historial con etiquetas "Instruction:" y "Response:" y trunca turnos cuando se superan los 512 tokens.
+- Decodificación Best-of-4 con selección por log-verosimilitud normalizada por longitud, temperatura de generación 0,7, top-k 40, top-p 0,9, penalización de repetición 1,15 y bloqueo de n-gramas repetidos de tamaño 3.
+- Criterios de parada personalizados que detectan secuencias como "\nInstruction:", "\nResponse:" o "\nUser:" para evitar sobre-generación.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
-- Prototipado y docencia de fine-tuning: sirve como ejemplo completo y reproducible de ajuste supervisado con la librería Transformers sobre un dataset de instrucciones público, con el script, los hiperparámetros y las curvas de pérdida y perplejidad publicados.
-- Pruebas de plantillas de prompt en local: al caber en CPU y en cualquier GPU de consumo, permite iterar plantillas de instrucción sin coste de infraestructura en la nube.
-- Generación de texto corto con restricciones de latencia: en tareas de completado de 100 tokens o menos, el coste por inferencia es mínimo comparado con modelos de miles de millones de parámetros.
-- Clasificación y extracción ligera: tareas de etiquetado de texto breve o extracción de campos simples pueden plantearse como generación condicionada, aprovechando las categorías de Dolly-15k (clasificación, extracción de información).
-- Aritmética de un paso en entornos educativos: gracias al ajuste con SVAMP, puede usarse como demostrador de razonamiento aritmético elemental en un modelo diminuto, siempre con verificación humana de los resultados.
-- Investigación sobre degradación en contexto largo: es un caso útil para estudiar cómo un GPT-2 ajustado con 128 tokens se comporta cuando se le alimentan secuencias más largas, y para medir pérdida de coherencia.
-- Base para experimentos de cuantización y despliegue: al ser un modelo de 124M con licencia MIT, es un banco de pruebas barato para comparar vLLM, llama.cpp, Ollama o TGI en términos de latencia y memoria.
-- Generación de datos sintéticos a pequeña escala: puede producir borradores de instrucciones o respuestas que después se filtran manualmente, útil para aumentar datasets de dominio específico.
+
+- Experimentación educativa con fine-tuning: sirve para reproducir un pipeline completo de ajuste supervisado sobre GPT-2 con tres datasets públicos, monitorizando pérdida y perplejidad por época en una GPU de consumo.
+- Prototipado de asistentes de instrucciones muy acotados: para tareas de respuesta corta en inglés donde el contexto quepa en 128 tokens y la calidad exigida sea baja, permite validar la interfaz de instrucción antes de migrar a un modelo mayor.
+- Generación de respuestas a problemas aritméticos de enunciado simple: el entrenamiento con SVAMP le da cierta familiaridad con este formato, útil para demos de razonamiento matemático elemental.
+- Base para comparativas de decodificación: su implementación de Best-of-4 con puntuación por log-verosimilitud permite estudiar el efecto de la selección de candidatos frente a muestreo simple en modelos pequeños.
+- Docencia sobre gestión de memoria en GPU: los ajustes documentados (FP16, gradient clipping, límite de memoria al 50%, PYTORCH_CUDA_ALLOC_CONF) ilustran técnicas para entrenar en hardware limitado.
+- Generación de texto creativo breve en inglés: con temperatura 0,7 y penalización de repetición, puede producir párrafos cortos para pruebas de interfaz o relleno de contenido no crítico.
+- Referencia para construir conversadores multi-turno con contexto corto: el script de truncado de turnos y los criterios de parada sirven de plantilla para sistemas con ventanas pequeñas.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, ARC, etc.) en la información disponible. El autor solo reporta pérdida y perplejidad de entrenamiento y validación:
 
-| Epoca | Perdida entrenamiento | Perplejidad entrenamiento | Perdida validacion | Perplejidad validacion |
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo reporta métricas de entrenamiento y validación:
+
+| Epoca | Train loss | Train perplexity | Val loss | Val perplexity |
 |---|---|---|---|---|
 | 1 | 3,1501 | 23,3380 | 2,8375 | 17,0723 |
 | 2 | 2,9357 | 18,8347 | 2,7899 | 16,2790 |
 | 3 | 2,8122 | 16,6459 | 2,7688 | 15,9397 |
 | 4 | 2,7149 | 15,1032 | 2,7618 | 15,8282 |
 
-La perplejidad de validación desciende de 17,07 a 15,83 entre la primera y la cuarta época, mientras que la de entrenamiento baja de 23,34 a 15,10. La brecha entre ambas se estrecha, lo que el autor interpreta como ausencia de sobreajuste significativo en ese régimen de entrenamiento. No hay comparación con modelos similares en la información proporcionada.
-
 ## Requisitos de hardware
-- VRAM estimada para inferencia: en FP32, aproximadamente 0,5 GB de pesos; en FP16, aproximadamente 0,25 GB; en INT8, alrededor de 0,12 GB. A ello hay que sumar la memoria del runtime (KV cache y activaciones), modesta con esta ventana de contexto.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente en la práctica. Funciona en RTX 3060, RTX 4060, RTX 4090, T4, L4, A100 y H100 sin aprovechar su capacidad.
-- Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales, e incluso en iGPU con memoria compartida si se cuantiza.
-- Ejecución en CPU: viable con llama.cpp u ONNX Runtime; la latencia será de decenas a cientos de milisegundos por token según el hardware, aunque el autor no publica cifras.
-- Opciones de despliegue: transformers (nativo), text-generation-inference (el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`), vLLM, llama.cpp u Ollama previa conversión a GGUF, y Hugging Face Inference Endpoints. No hay archivos GGUF publicados en el repositorio.
-- Latencia y throughput estimados: no disponible; no se han publicado mediciones.
+
+- VRAM estimada para inferencia: menos de 1 GB en FP16 (124M parámetros, ~250 MB de pesos) y menos de 0,5 GB en FP32 con overhead mínimo; el repositorio completo ocupa 0,5 GB.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; funciona en RTX 3060, RTX 4060, GTX 1660 y superiores. Para entrenamiento, el autor limitó la fracción de memoria al 50%, lo que sugiere que cabe en GPUs de 8 GB o menos.
+- Cabe en GPU de consumo sin problema, incluidas integradas con suficiente memoria compartida.
+- Opciones de despliegue: transformers (librería nativa), text-generation-inference (etiqueta declarada), llama.cpp u Ollama si se convierte a GGUF (no se publican pesos GGUF en el repositorio). vLLM es viable pero sobredimensionado para este tamaño.
+- Latencia y throughput: no disponibles de forma medida; por el tamaño del modelo, la generación de 100 tokens es del orden de milisegundos a decenas de milisegundos en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Ajuste a instrucciones | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GPT-2_Instruct-Bigger (FurkanNar) | 124.439.808 | 128 tokens en entrenamiento | Sí (Dolly-15k, 4 épocas) | MIT | Hugging Face, safetensors |
-| openai-community/gpt2 (base) | 124M (aproximado, modelo base) | 1024 posiciones | No | MIT modificada de OpenAI | Hugging Face |
-| FurkanNar/gpt-2_instruct | no disponible en la información proporcionada | no disponible | Sí (etapa previa del pipeline) | no disponible | Hugging Face |
-| distilgpt2 | 82M (aproximado) | 1024 posiciones | No | Apache 2.0 | Hugging Face |
+| GPT-2_Instruct-Bigger (este) | 124,4M | 128 (entrenamiento) / 512 (inferencia) | MIT | Hugging Face | Fine-tuning de instrucciones sobre GPT-2 con Best-of-N |
+| openai-community/gpt2 | 124,4M | 1024 | MIT | Hugging Face | Modelo base sin ajuste de instrucciones |
+| FurkanNar/GPT-2_Instruct-v0.1 | no disponible | no disponible | MIT (según repo base) | Hugging Face | Versión previa del mismo autor, base de este modelo |
+| FurkanNar/GPT-2_Instruct-v0.6 | no disponible | no disponible | no disponible | Hugging Face | Versión posterior indicada como new_version en la model card |
 
-No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros, contexto, licencia y disponibilidad. Los valores de parámetros de los modelos alternativos son aproximados y provienen de su documentación pública, no de mediciones realizadas para esta ficha.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
-- Sesgos conocidos: GPT-2 se entrenó con WebText y hereda sesgos de género, raza, religión y nacionalidad presentes en ese corpus; el ajuste posterior sobre Dolly-15k no los corrige.
-- Riesgo de alucinación: alto. Un modelo de 124M con 4 épocas de ajuste supervisado no tiene mecanismos de verificación factual y generará afirmaciones plausibles pero falsas con frecuencia.
-- Ventana de contexto muy corta: 128 tokens en el ajuste. Instrucciones o conversaciones más largas quedarán truncadas o degradarán la calidad de forma notable. La arquitectura admite hasta 1024 posiciones, pero no hay evidencia de que el modelo rinda bien más allá de la longitud de entrenamiento.
-- Idioma: solo inglés. No hay evidencia de capacidades en castellano ni en otras lenguas.
-- Sin alineación documentada: no se reporta RLHF, DPO ni filtros de seguridad, por lo que puede producir contenido inapropiado u ofensivo si se le induce.
-- Restricciones de licencia: la licencia declarada es MIT, lo que permite uso comercial y modificación. Sin embargo, se recomienda verificar las condiciones del modelo base de OpenAI (MIT modificada con restricciones de uso y de atribución) antes de un despliegue comercial, ya que es una cadena de dependencias.
-- Caveat de producción: 0 descargas y 1 like en Hugging Face (fecha de creación 2026-10-06). No hay validación por parte de terceros, ni pruebas de robustez, ni garantías de mantenimiento por parte del autor.
-- Longitud máxima de secuencia de 128 tokens: limita severamente su uso en casos reales de atención al cliente, RAG o agentes, que requieren contextos de varios miles de tokens.
-- No apto para código en producción, matemáticas avanzadas ni razonamiento multi-paso: no hay benchmarks ni evidencia de que estas capacidades existan en un modelo de este tamaño con este ajuste.
+
+- Tamaño muy reducido (124M parámetros): conocimiento factual limitado, razonamiento débil y alta probabilidad de respuestas incorrectas o incoherentes en tareas complejas.
+- Contexto de entrenamiento de solo 128 tokens: las respuestas largas y las conversaciones multi-turno superan con facilidad la ventana útil, lo que degrada la coherencia.
+- Riesgo elevado de alucinación: al ser GPT-2, tiende a inventar hechos, cifras y procedimientos con apariencia plausible, como se observa en el ejemplo de la model card sobre cómo hacer una ensalada.
+- Solo inglés: no hay soporte multilingüe documentado.
+- El autor reconoce "tight clusters": los candidatos del Best-of-4 pueden ser muy similares entre sí, lo que reduce la eficacia del muestreo cuando los datos de entrenamiento tienen poca diversidad en un dominio.
+- Licencia MIT: permite uso comercial, pero el modelo base GPT-2 y los datasets empleados pueden tener sus propias condiciones; conviene revisarlas antes de un despliegue comercial.
+- No apto para producción con requisitos de fiabilidad, seguridad o precisión; debe tratarse como prototipo o material didáctico.
+- No se documentan evaluaciones de sesgo, toxicidad ni seguridad.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/FurkanNar/GPT-2_Instruct-Bigger
-- Modelo base del ajuste: https://huggingface.co/FurkanNar/gpt-2_instruct
+- Modelo base previo: https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.1
 - Modelo base original: https://huggingface.co/openai-community/gpt2
-- Dataset de instrucciones: https://huggingface.co/datasets/databricks/databricks-dolly-15k
-- Dataset de aritmética: https://huggingface.co/datasets/ChilleD/SVAMP
-- Dataset de instrucciones generales: https://huggingface.co/datasets/tatsu-lab/alpaca
-- Resultados de búsqueda web: no se han encontrado páginas relevantes sobre este modelo. Las consultas devolvieron únicamente documentación sobre ChatGPT de OpenAI (https://chatgpt.com/, https://openai.com/index/chatgpt/), sin relación con GPT-2_Instruct-Bigger.
+- Versión posterior indicada: https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.6
+- Dataset Alpaca: https://huggingface.co/datasets/tatsu-lab/alpaca
+- Dataset SVAMP: https://huggingface.co/datasets/ChilleD/SVAMP
+- Dataset Dolly-15k: https://huggingface.co/datasets/databricks/databricks-dolly-15k

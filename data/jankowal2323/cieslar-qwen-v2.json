@@ -49,11 +49,5 @@
   "renamed_to": "jankowal2323/cieslar-qwen-v2-test",
   "renamed_at": "2026-11-11T05:45:07.198Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen2 · Hugging Face",
-      "url": "https://huggingface.co/docs/transformers/model_doc/qwen2",
-      "snippet": "It is used to instantiate a Qwen2 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Qwen/Qwen2-7B Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
-    }
-  ]
+  "sources": []
 }

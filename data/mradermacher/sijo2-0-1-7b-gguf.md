@@ -2,50 +2,51 @@
 
 ## Resumen
 
-Sijo2.0-1.7B-GGUF es una republicacion en formato GGUF del modelo Sijo2.0-1.7B, publicado originalmente por el usuario myjellylabs en Hugging Face. El repositorio lo mantiene mradermacher, un perfil conocido por convertir modelos a cuantizaciones GGUF para su uso con llama.cpp y herramientas compatibles. Se trata, por tanto, de un artefacto de distribucion mas que de un modelo entrenado desde cero por el autor del repositorio.
+Sijo2.0-1.7B-GGUF es la distribucion en formato GGUF del modelo Sijo2.0-1.7B, desarrollado originalmente por myjellylabs y cuantizado por mradermacher. Se trata de un modelo de lenguaje de 1.728.801.600 parametros (aproximadamente 1,7 mil millones) afinado mediante LoRA y DPO, orientado especificamente a tareas de IA agentica, uso de terminal Linux, generacion de codigo, razonamiento y tool calling. La model card lo etiqueta como "standalone", lo que sugiere un entrenamiento enfocado en operar de forma autonoma en entornos de linea de comandos.
 
-El modelo base tiene 1.700 millones de parametros, lo que lo situa en la categoria de modelos pequenos aptos para inferencia en CPU o en GPUs de consumo. La model card del repositorio es extremadamente escueta: se limita a indicar que se trata de cuantizaciones estaticas del modelo original y a listar los tipos de cuantizacion generados. No se aporta informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas.
+El modelo parte de una arquitectura transformer (la model card no detalla la arquitectura interna mas alla de la etiqueta `transformers` y `custom_code`) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Su tamano compacto lo hace apto para despliegue en hardware de consumo, y la disponibilidad de cuantizaciones desde Q2_K hasta f16 permite ajustar el equilibrio entre calidad y huella de memoria.
 
-La relevancia de esta ficha es limitada por la escasez de informacion publicada. Cualquier evaluacion en produccion deberia remitirse al repositorio del modelo base (myjellylabs/Sijo2.0-1.7B) y verificar alli la licencia, los datos de entrenamiento y las capacidades reales antes de adoptarlo. A continuacion se recoge lo que puede afirmarse con rigor a partir de la informacion disponible, marcando explicitamente los campos no disponibles.
+La relevancia actual de este modelo radica en su orientacion a flujos agenticos ligeros: un modelo de 1,7B parametros que cabe en GPUs de consumo y que ha sido entrenado con tecnicas de preferencia (DPO) para tareas de razonamiento y ejecucion de comandos. El repositorio GGUF acumula 725 descargas y fue creado el 18 de noviembre de 2026, con actualizacion el mismo dia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1.700 millones (1.7B, segun el nombre del modelo) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el repositorio base, presumiblemente) |
+| Arquitectura | Transformer (etiqueta `transformers`, `custom_code`; detalle interno no disponible) |
+| Parametros totales | 1.728.801.600 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Ingles (segun model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. Por el tamano (1.7B) y por el hecho de que exista una conversion a GGUF con quants estandar de llama.cpp, es plausible que se trate de un transformer decoder-only, pero esto no puede confirmarse con los datos disponibles. Tampoco se conocen el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La informacion disponible indica que Sijo2.0-1.7B es un modelo transformer afinado mediante LoRA y posteriormente optimizado con DPO (Direct Preference Optimization), segun las etiquetas `lora` y `dpo` de la model card. El modelo base es `myjellylabs/Sijo2.0-1.7B`, y esta version GGUF es una cuantizacion estatica realizada por mradermacher con `convert_type: hf` y `output_tensor_quantised: 1`. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni la arquitectura exacta (numero de capas, dimensiones de atencion, tipo de atencion).
 
-El unico dato tecnico verificable es el proceso de cuantizacion: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversion desde pesos en formato Hugging Face mediante la herramienta de cuantizacion de llama.cpp. Se han generado doce variantes de cuantizacion, desde F16 sin perdida hasta Q2_K e IQ4_XS con compresion agresiva.
+Las etiquetas del modelo (`agentic-ai`, `linux-terminal`, `coding`, `reasoning`, `tool-calling`, `standalone`) sugieren un entrenamiento orientado a tareas de agente autonomo en entornos de terminal, con enfasis en invocacion de herramientas y razonamiento multi-paso. La presencia de `custom_code` implica que el modelo requiere codigo personalizado para su carga en transformers, lo que puede afectar a la portabilidad entre frameworks. No se han publicado detalles sobre la innovacion tecnica del entrenamiento ni sobre posibles tecnicas de decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la informacion disponible.
-- Por el tamano del modelo (1.7B), es razonable esperar generacion de texto basica, pero no puede confirmarse soporte de razonamiento avanzado, codigo, matematicas o vision.
-- No hay evidencia de soporte de tool calling o function calling.
-- No hay evidencia de capacidades de agente o razonamiento multi-paso.
-- No se especifican idiomas soportados.
-- No se documentan modos especiales (thinking mode, vision, audio).
+- Generacion de texto en ingles.
+- Razonamiento multi-paso orientado a tareas agenticas.
+- Generacion y asistencia de codigo.
+- Tool calling / function calling.
+- Operacion en terminal Linux (ejecucion y planificacion de comandos).
+- Comportamiento "standalone" para agentes autonomos.
+- Afinado con DPO para alineamiento con preferencias.
+- No se ha confirmado soporte de vision, audio ni modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso
 
-Dada la ausencia de documentacion sobre capacidades, los casos de uso que se enumeran a continuacion son escenarios genericos para modelos de 1.7B en formato GGUF, no recomendaciones validadas para este modelo concreto:
-
-- Inferencia en CPU o dispositivos de bajos recursos: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en equipos sin GPU dedicada mediante llama.cpp u Ollama, con un consumo de memoria en torno a 1-1,5 GB.
-- Prototipado rapido de pipelines de generacion de texto: util para validar integraciones antes de escalar a modelos mayores, gracias al bajo coste de despliegue.
-- Filtrado y clasificacion de texto en lote: modelos pequenos pueden emplearse para tareas de etiquetado simple si el modelo base ha sido entrenado para ello (no confirmado).
-- Experimentacion educativa: estudio del proceso de cuantizacion GGUF comparando la calidad entre F16, Q8_0 y Q4_K_M sobre el mismo modelo.
-- Despliegue en entornos con restricciones de memoria: la variante Q2_K ocupa aproximadamente 0,7-0,9 GB, adecuada para contenedores muy limitados.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes del mismo modelo, lo que facilita medir la degradacion de calidad segun el nivel de compresion.
+- Agente de terminal Linux: el modelo puede planificar y ejecutar secuencias de comandos en un entorno de linea de comandos, gracias a su entrenamiento especifico en `linux-terminal` y `agentic-ai`, lo que lo hace adecuado para automatizacion de tareas de administracion de sistemas en entornos controlados.
+- Asistente de codigo en local: con 1,7B parametros y cuantizaciones Q4_K_M de 1,2 GB, puede desplegarse en portatiles para autocompletado y generacion de fragmentos de codigo sin conexion, integrable en editores mediante servidores compatibles con OpenAI.
+- Automatizacion de pipelines CI/CD: su soporte de tool calling permite invocarlo como paso de agente que decide que comandos ejecutar o que herramientas llamar dentro de un flujo de integracion continua, con la ventaja de su baja huella de memoria.
+- Prototipado de agentes multi-paso: util para experimentar con arquitecturas agenticas (ReAct, planificacion) en hardware de consumo antes de escalar a modelos mayores, gracias a su tamano reducido y licencia permisiva.
+- Chatbot de soporte tecnico en ingles: puede gestionar conversaciones sobre resolucion de problemas tecnicos y comandos, aunque su ventana de contexto no esta documentada y su cobertura linguistica se limita al ingles.
+- Educacion y demostraciones: su tamano permite ejecutarlo en entornos docentes o demos en vivo con Ollama o llama.cpp, mostrando el funcionamiento de un agente de terminal sin requerir infraestructura de GPU de datacenter.
+- Investigacion sobre DPO en modelos pequenos: sirve como caso de estudio de afinado LoRA + DPO en modelos de menos de 2B parametros para tareas de agente.
 
 ## Benchmarks y rendimiento
 
@@ -53,34 +54,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, calculada a partir del numero de parametros y el tamano tipico de cada cuantizacion):
-  - F16: en torno a 3,4 GB.
-  - Q8_0: en torno a 1,8 GB.
-  - Q6_K: en torno a 1,4 GB.
-  - Q5_K_M: en torno a 1,2 GB.
-  - Q4_K_M: en torno a 1,0 GB.
-  - Q3_K_M: en torno a 0,9 GB.
-  - Q2_K: en torno a 0,7 GB.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para cuantizaciones Q4-Q8; RTX 3060, RTX 4060 o superiores permiten ejecutar la variante F16 con holgura. En A100 o H100 el modelo esta infrautilizado.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna e incluso en iGPU con memoria unificada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan los pesos originales.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 0,9 GB (Q2_K), 1,2 GB (Q4_K_M), 1,5 GB (Q6_K), 1,9 GB (Q8_0) y 3,6 GB (f16), segun los tamanos de fichero indicados en la model card.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son sobradamente suficientes. El modelo cabe incluso en iGPU con memoria unificada.
+- Cabe en GPU de consumo: si, en practicamente todas las GPUs consumer modernas e incluso en CPU mediante llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con la API de OpenAI (la model card incluye la etiqueta `endpoints_compatible`). vLLM y TGI no estan confirmados para este formato GGUF con `custom_code`.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni caracteristicas del modelo base que permitan una comparacion rigurosa con alternativas de tamano similar (por ejemplo, Qwen2.5-1.5B, SmolLM2-1.7B o Llama-3.2-1B). Cualquier comparacion seria especulativa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Sijo2.0-1.7B-GGUF | 1,7B | No disponible | Apache 2.0 | GGUF | Enfocado a agentes y terminal Linux |
+| Qwen2.5-Coder-1.5B | 1,5B | 32K (segun documentacion publica del modelo base) | Apache 2.0 | safetensors, GGUF | Enfocado a codigo, sin especializacion en terminal |
+| Llama-3.2-1B | 1,2B | 128K (segun documentacion publica) | Llama 3.2 Community License | safetensors, GGUF | Multilingue, licencia con restricciones |
+| SmolLM2-1.7B | 1,7B | 8K (segun documentacion publica) | Apache 2.0 | safetensors, GGUF | Modelo generalista pequeno |
+
+La comparativa se limita a parametros, contexto y licencia; no se dispone de datos de rendimiento comparativo para Sijo2.0-1.7B.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos; al desconocerse los datos de entrenamiento, no puede evaluarse el riesgo de sesgo.
-- Riesgo de alucinacion: no cuantificado, pero esperable en modelos de 1.7B sin documentacion sobre alineacion.
-- No se especifican idiomas soportados ni longitud de contexto, lo que impide garantizar un comportamiento correcto en castellano o en contextos largos.
-- Licencia no disponible: no puede confirmarse si se permite uso comercial. Es imprescindible consultar el repositorio base antes de cualquier despliegue en produccion.
-- El repositorio tiene cero descargas y cero likes en el momento de la consulta, lo que sugiere ausencia de validacion por parte de la comunidad.
-- El autor del repositorio (mradermacher) no es el autor del modelo; se trata de una conversion de terceros. La calidad del GGUF depende del proceso de cuantizacion, no verificable con los datos aportados.
-- Las cuantizaciones Q2_K e IQ4_XS, aunque utiles por su bajo consumo, introducen degradacion de calidad significativa en modelos de este tamano.
+- Solo soporta ingles segun la model card; no se ha confirmado cobertura multilingue.
+- La longitud de contexto no esta documentada, lo que impide garantizar conversaciones o tareas de contexto largo.
+- Riesgo de alucinacion inherente a modelos de 1,7B parametros, especialmente en razonamiento complejo y generacion de codigo.
+- El uso de `custom_code` puede requerir `trust_remote_code=True` en transformers, con el riesgo de seguridad asociado.
+- No se han publicado evaluaciones de sesgo ni de seguridad.
+- Aunque la licencia Apache 2.0 permite uso comercial, la ausencia de benchmarks y de documentacion sobre el dataset de entrenamiento limita la evaluacion de riesgos en produccion.
+- El modelo esta orientado a terminal Linux; su comportamiento en otros entornos no esta validado.
+- La cuantizacion Q3_K_M se marca como "lower quality" en la model card; para produccion se recomienda Q4_K_M o superior.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Sijo2.0-1.7B-GGUF
 - Modelo base: https://huggingface.co/myjellylabs/Sijo2.0-1.7B
+- Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/Sijo2.0-1.7B-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Sijo2.0-1.7B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

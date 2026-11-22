@@ -2,110 +2,98 @@
 
 ## Resumen
 
-Sakura Micro Bonsai 2 GSQ-RCO es una release experimental de muy baja precision (ultra-low-bit) publicada por el usuario webmp3 en Hugging Face. Se trata de un derivado cuantizado de Prism ML Ternary Bonsai 2 27B, que a su vez declara como modelo base Qwen3.8-27B. El artefacto distribuido es un unico fichero GGUF de 5.296 GiB (5.686.593.888 bytes) cuyo objetivo declarado es reducir el tamano respecto a la referencia PTQ1 manteniendo la funcionalidad medida en un conjunto reducido de benchmarks.
+Sakura Micro Bonsai 2 GSQ-RCO es una cuantización experimental de muy bajo bit derivada de Ternary Bonsai 2 27B de Prism ML, que a su vez parte de Qwen3.8-27B. El autor, webmp3, publica un único artefacto GGUF de 5,296 GiB que comprime un modelo de 26.895.998.464 parámetros hasta un tamaño apto para equipos de consumo, aplicando una asignación mixta de códecs basada en GSQ/RCO en lugar de un cuantizador uniforme por tensor.
 
-El modelo no introduce una arquitectura nueva: es un reempaquetado de pesos en formato GGUF para llama.cpp, con una asignacion mixta de codecs de cuantizacion basada en GSQ/RCO (segun la propia model card, que no detalla la seleccion por tensor ni el procedimiento de reproduccion). Con aproximadamente 26.896 millones de parametros en el modelo de origen y un fichero de 5,3 GiB, la tasa efectiva ronda 1,7 bits por parametro, coherente con la naturaleza ternaria del modelo del que deriva.
+La relevancia del modelo reside en su relación entre tamaño y funcionalidad retenida: frente a la referencia Ternary Bonsai 2 PTQ1 (5,538 GiB), reduce el artefacto un 4,37 % manteniendo cifras de razonamiento aritmético e instrucciones cercanas o superiores en subconjuntos pequeños de evaluación, aunque con pérdida en GSM8K y HumanEval. Es, por tanto, un modelo orientado a despliegue local en llama.cpp, no a cargas de producción de alta exigencia.
 
-Su relevancia es acotada pero concreta: permite probar inferencia de un modelo de ~27B en hardware de consumo con relativamente poca VRAM, y sirve como banco de pruebas para investigar compresion extrema. Conviene subir las expectativas con cautela: la model card lo etiqueta explicitamente como experimental, las cifras publicadas provienen de subconjuntos muy pequenos (12 a 40 elementos) y el repositorio no tiene descargas ni likes en el momento de redactar esta ficha.
+La información disponible es limitada: la model card no publica idiomas soportados, longitud de contexto, composición del dataset de entrenamiento ni detalles de la asignación por tensor. La ficha refleja únicamente los datos verificables del repositorio y de la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (derivado de Prism ML Ternary Bonsai 2 27B, a su vez derivado de Qwen3.8-27B; la model card no especifica si es transformer denso, MoE o hibrida) |
-| Parametros totales | 26.895.998.464 (~26,9 mil millones), dato reportado para el modelo |
-| Parametros activos | No disponible (no se confirma que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF de muy baja precision; asignacion mixta de codecs GSQ/RCO. Bits por parametro efectivos: ~1,7 (calculado a partir de 5.686.593.888 bytes y 26.895.998.464 parametros) |
-| Idiomas soportados | No disponible (la model card no los declara) |
+| Arquitectura | Transformer (heredada de Qwen3.8-27B vía Ternary Bonsai 2 27B); detalles no disponibles |
+| Parametros totales | 26.895.998.464 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | TQ1_0 (ternario) para 394 de 851 tensores; el resto en tipos menores no especificados; asignación mixta GSQ/RCO |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp). Fichero: `Sakura-Micro-Bonsai-2-GSQ-RCO-5.3GiB.gguf`. SHA-256: `5054d9b3b3b95145ebf1def33803fd93a1962dda37ca50bd53dbcbbbe4655eb3` |
-| Tamano del repositorio | 5,7 GB |
-| Pipeline | text-generation |
+| Formato de pesos | GGUF (llama.cpp); artefacto `Sakura-Micro-Bonsai-2-GSQ-RCO-TQ1_0-5.3GiB.gguf` |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna en la documentacion disponible. Lo unico verificable es la cadena de procedencia declarada: Sakura Micro Bonsai 2 GSQ-RCO deriva de prism-ml/Ternary-Bonsai-2-27B-gguf, que identifica Qwen3.8-27B como modelo base. El nombre del modelo antecesor ("Ternary") sugiere pesos de naturaleza ternaria, pero la model card de esta release no lo confirma explicitamente ni detalla la topologia (numero de capas, atencion, uso de MoE, ventana de contexto nativa).
+El modelo hereda la arquitectura del linaje Qwen3.8-27B, pasado por la cuantización ternaria de Prism ML (Ternary Bonsai 2 27B) y posteriormente recomprimido por webmp3. No se trata de un entrenamiento nuevo ni de un ajuste fino: es una derivación por cuantización (`base_model_relation: quantized`). La model card no aporta datos sobre tokens de entrenamiento, composición del dataset, RLHF, DPO ni ninguna etapa de alineamiento del modelo original.
 
-Tampoco hay datos sobre entrenamiento: no se indica numero de tokens, composicion del dataset, ni si hubo etapas de RLHF, DPO u otro ajuste por preferencias. Esta release no es un entrenamiento, sino una compresion adicional del modelo base: aplica una asignacion mixta de codecs basada en GSQ/RCO junto con compresion de baja precision adicional, en lugar de un cuantizador uniforme para todos los tensores. La propia model card declara que no revela las selecciones por tensor, los detalles de asignacion, la logica interna de optimizacion ni los procedimientos de reproduccion, lo que limita la auditabilidad del resultado. El unico mecanismo de verificacion ofrecido es el fichero `SHA256SUMS` incluido en el repositorio.
+La innovación declarada es la asignación mixta de códecs basada en GSQ/RCO combinada con compresión adicional de bajo bit. El autor indica explícitamente que no divulga la selección por tensor, los detalles de asignación, la lógica interna de optimización ni los procedimientos de reproducción. El resultado es un GGUF de 5.686.593.888 bytes (5,296 GiB) con SHA-256 `5054d9b3b3b95145ebf1def33803fd93a1962dda37ca50bd53dbcbbbe4655eb3`, verificable mediante el archivo `SHA256SUMS` incluido. El nombre del fichero se cambió el 2026-10-09 para exponer el tipo de cuantización en el Hub, sin modificar el contenido.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline declarado: text-generation; tag "conversational").
-- Razonamiento aritmetico: 37/40 (92,5%) en el subconjunto de aritmetica reportado por el autor.
-- Seguimiento de instrucciones: 12/12 (100%) en el subconjunto de IFEval reportado.
-- Razonamiento matematico tipo GSM8K: 35/40 (87,5%) en el subconjunto reportado.
-- Generacion de codigo: 15/20 (75%) en el subconjunto de HumanEval reportado.
-- Inferencia local mediante llama.cpp, dado el formato GGUF y la libreria declarada.
-- Capacidades de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (no declarado en la model card).
-- Capacidades multilingues: no disponible (idiomas no declarados).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional, según el pipeline declarado (`text-generation`, etiqueta `conversational`).
+- Razonamiento aritmético: 37/40 (92,5 %) en el subconjunto de Arithmetic reportado por el autor.
+- Razonamiento matemático de tipo GSM8K: 35/40 (87,5 %) en el subconjunto evaluado.
+- Generación de código: 15/20 (75,0 %) en HumanEval sobre 20 problemas.
+- Seguimiento de instrucciones: 12/12 (100 %) en IFEval sobre 12 casos.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere uso tras una API compatible con el runtime de llama.cpp.
+- Soporte de tool calling, agentes, visión, audio o modo thinking: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; la model card incluye texto en inglés y chino simplificado, pero no declara idiomas soportados por el modelo.
 
 ## Casos de uso
 
-- Inferencia local en GPU de consumo: con 5,296 GiB de pesos, el modelo cabe en tarjetas de 8 GB o mas, lo que permite ejecutar un modelo de ~27B en un PC de sobremesa sin depender de servicios en la nube.
-- Prototipado de asistentes conversacionales offline: el tag "conversational" y el formato GGUF permiten levantar un chat local con llama.cpp u Ollama para validar flujos de producto antes de invertir en infraestructura.
-- Investigacion en cuantizacion extrema: sirve como caso de estudio para medir el impacto de codecs mixtos GSQ/RCO frente a una linea base PTQ1 en perplejidad y tareas cortas.
-- Evaluacion comparativa de artefactos comprimidos: util para reproducir la comparacion de la model card (WikiText-2 PPL, aritmetica, GSM8K, HumanEval, IFEval) con el mismo arnes de evaluacion sobre ambos GGUF.
-- Despliegue en CPU o servidores sin GPU: al ser un GGUF de 5,3 GiB, puede ejecutarse con RAM suficiente en entornos sin acelerador, util para demos y entornos de pruebas.
-- Tareas de aritmetica y calculo sencillo en pipelines automatizados: el 92,5% reportado en el subconjunto aritmetico lo hace candidato para validaciones numericas simples, siempre con verificacion posterior.
-- Asistencia de codigo en entornos con recursos limitados: el 75% en HumanEval sobre 20 tareas sugiere utilidad para autocompletado o borradores, nunca para codigo en produccion sin revision.
-- Docencia y formacion: permite demostrar tecnicas de cuantizacion y compromisos entre tamano, perplejidad y calidad en un aula o taller con hardware modesto.
+- Prototipado local en portátiles y estaciones de trabajo sin GPU dedicada: con 5,296 GiB de pesos en TQ1_0, el modelo puede ejecutarse en llama.cpp sobre CPU con RAM suficiente, lo que permite validar flujos conversacionales antes de escalar a un modelo mayor.
+- Asistentes de código en entornos con recursos limitados: su 75 % en HumanEval sobre 20 problemas lo hace utilizable para autocompletado y explicación de fragmentos en editores, aceptando que no sustituye a modelos de código especializados.
+- Evaluación de técnicas de cuantización extrema: sirve como referencia práctica para investigadores que comparan GSQ/RCO frente a PTQ1 en términos de perplejidad (10,7251 frente a 10,2726 en WikiText-2) y de rendimiento en tareas concretas.
+- Tareas de seguimiento de instrucciones con formato estricto: el 100 % en IFEval sobre 12 casos sugiere buen comportamiento en prompts con restricciones explícitas, útil para generación de JSON o plantillas en pipelines ligeros.
+- Razonamiento aritmético en aplicaciones educativas o de cálculo asistido: el 92,5 % en Arithmetic permite integrarlo en herramientas de resolución de problemas numéricos simples con verificación posterior.
+- Despliegue en dispositivos de borde o contenedores con presupuesto de disco ajustado: el artefacto de 5,3 GiB cabe en imágenes de contenedor pequeñas y en almacenamiento flash de capacidad moderada, con verificación de integridad mediante SHA-256.
+- Experimentación con endpoints compatibles: la etiqueta `endpoints_compatible` facilita montar un servicio HTTP de generación de texto para pruebas de integración sin infraestructura GPU.
 
 ## Benchmarks y rendimiento
-
-Datos publicados por el autor en la model card. Corresponden a subconjuntos muy reducidos (40, 40, 20 y 12 elementos), por lo que la varianza es alta y no deben interpretarse como una medida general de calidad.
 
 | Metrica | Ternary Bonsai 2 PTQ1 (referencia) | Sakura Micro Bonsai 2 GSQ-RCO |
 |---|---:|---:|
 | Tamano de fichero | 5,538 GiB | 5,296 GiB |
 | WikiText-2 PPL | 10,2726 | 10,7251 |
-| Aritmetica | 34/40 (85,0%) | 37/40 (92,5%) |
-| GSM8K | 38/40 (95,0%) | 35/40 (87,5%) |
-| HumanEval | 16/20 (80,0%) | 15/20 (75,0%) |
-| IFEval | 9/12 (75,0%) | 12/12 (100%) |
+| Arithmetic | 34/40 (85,0 %) | 37/40 (92,5 %) |
+| GSM8K | 38/40 (95,0 %) | 35/40 (87,5 %) |
+| HumanEval | 16/20 (80,0 %) | 15/20 (75,0 %) |
+| IFEval | 9/12 (75,0 %) | 12/12 (100 %) |
 
-Segun el autor, el artefacto es un 4,37% mas pequeno que la referencia PTQ1 de 5.946.648.928 bytes. La propia model card advierte que estas mediciones no constituyen una afirmacion de superioridad general sobre el modelo base. No se han publicado resultados de MMLU ni de otros benchmarks estandar en la informacion disponible.
+El autor advierte que son mediciones sobre subconjuntos pequeños de benchmark y no una afirmación de superioridad general frente al modelo base. No se han publicado resultados de MMLU ni de otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6-7 GB para los pesos en VRAM, mas el consumo adicional de la cache KV y del contexto, que depende de la longitud de contexto configurada (no documentada).
-- GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM. Ejemplos razonables: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, A100, H100. En tarjetas de 8 GB el margen es estrecho y obliga a limitar el contexto.
-- Cabe en GPU de consumo: si, en modelos con 8 GB o mas de VRAM, y tambien en configuraciones de descarga parcial a CPU (offloading).
-- Despliegue en CPU: viable con llama.cpp y al menos 8-16 GB de RAM libre, segun el contexto configurado.
-- Opciones de despliegue: llama.cpp (libreria declarada por el modelo), Ollama, LM Studio, llama-cpp-python y otros runners compatibles con GGUF. El soporte en vLLM u otros servidores de alto rendimiento para GGUF no esta confirmado en la informacion disponible.
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo.
-- Runtime: la model card indica usar el runtime documentado por el modelo base.
+- VRAM/RAM estimada para inferencia: al menos 5,3 GiB solo para los pesos; con overhead de contexto y buffers de llama.cpp, conviene disponer de 7-8 GiB de memoria unificada o RAM del sistema.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, cualquier GPU con 8 GiB o más de VRAM puede alojar los pesos, aunque no se documentan configuraciones probadas.
+- Cabe en GPU de consumo: sí, por volumen de pesos (5,296 GiB) encaja en tarjetas de 8 GiB; no se confirma compatibilidad ni rendimiento específico con modelos concretos.
+- Opciones de despliegue: llama.cpp es el runtime declarado; la etiqueta `endpoints_compatible` sugiere servidores compatibles con su API. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de latencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tamano de pesos | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Sakura Micro Bonsai 2 GSQ-RCO | ~26,9 mil millones (segun dato reportado) | No disponible | 5,296 GiB (GGUF) | Apache-2.0 | Hugging Face, repositorio con 0 descargas y 0 likes |
-| Ternary Bonsai 2 PTQ1 (referencia) | No disponible explicitamente (mismo origen, ~27B nominal) | No disponible | 5,538 GiB (GGUF) | No disponible en la informacion proporcionada | Hugging Face (prism-ml/Ternary-Bonsai-2-27B-gguf) |
-| Qwen3.8-27B (base declarada del anterior) | ~27B nominal por nomenclatura | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (Qwen/Qwen3.8-27B) |
+| Modelo | Parametros | Contexto | Tamano del artefacto | Licencia | Notas |
+|---|---:|---|---:|---|---|
+| Sakura Micro Bonsai 2 GSQ-RCO | 26.895.998.464 | no disponible | 5,296 GiB | Apache-2.0 | Cuantización mixta GSQ/RCO sobre TQ1_0 |
+| Ternary Bonsai 2 27B PTQ1 (prism-ml) | no disponible en la información | no disponible | 5,538 GiB | no disponible en la información | Referencia directa; mejor PPL y GSM8K, peor Arithmetic e IFEval |
+| Qwen3.8-27B (Qwen) | 27B (según denominación) | no disponible | no disponible | no disponible en la información | Modelo base del linaje; sin datos de cuantización en esta ficha |
 
-No se dispone de datos de rendimiento comparables de terceros (por ejemplo, otros modelos de ~27B cuantizados a 2 bits) en la informacion proporcionada, por lo que la comparativa se limita a la cadena de derivacion declarada por el autor.
+No se dispone de información suficiente para comparar con alternativas de otros autores en la misma categoría de cuantización extrema (por ejemplo, variantes GGUF de Qwen3 de terceros), por lo que la comparativa se limita al linaje declarado.
 
 ## Limitaciones y advertencias
 
-- Modelo explicitamente experimental: la propia model card lo etiqueta como release de baja precision experimental.
-- Trazabilidad limitada: no se publican las selecciones por tensor, los detalles de asignacion de codecs ni el procedimiento de reproduccion, lo que impide auditar o replicar la compresion.
-- Benchmarks con muestras muy pequenas (12 a 40 elementos): las diferencias frente a la referencia PTQ1 pueden deberse al azar. Por ejemplo, IFEval pasa de 9/12 a 12/12 con solo tres aciertos de diferencia.
-- Degradacion medida en perplejidad: WikiText-2 PPL empeora de 10,2726 a 10,7251 respecto a la referencia PTQ1, lo que indica una perdida de calidad en modelado de lenguaje.
-- Rendimiento inferior a la referencia en GSM8K (95,0% a 87,5%) y HumanEval (80,0% a 75,0%).
-- Riesgo de alucinacion: no evaluado en la informacion disponible; en modelos fuertemente cuantizados el riesgo tiende a aumentar, pero no hay medicion publicada para este artefacto.
-- Sesgos conocidos: no disponible. No se ha publicado ninguna evaluacion de sesgos ni de seguridad.
-- Idiomas: no declarados. No se puede asumir cobertura multilingue sin verificacion.
-- Longitud de contexto: no declarada, lo que impide planificar cargas con conversaciones largas o documentos extensos.
-- Licencia: el artefacto se distribuye como Apache-2.0, pero los modelos de los que deriva (Ternary Bonsai 2 27B y Qwen3.8-27B) pueden tener condiciones propias. Conviene verificar las licencias de toda la cadena antes de un uso comercial.
-- Adopcion nula verificable: 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Uso en produccion desaconsejado sin una evaluacion propia y exhaustiva con el dominio objetivo.
+- Modelo experimental: el propio autor lo etiqueta como `experimental` y liberación de bajo bit; no está pensado como sustituto directo del modelo base en producción crítica.
+- Pérdida medible de calidad: la perplejidad en WikiText-2 empeora de 10,2726 a 10,7251 y GSM8K cae de 95,0 % a 87,5 % y HumanEval de 80,0 % a 75,0 % frente a la referencia PTQ1.
+- Benchmarks con muestras muy pequeñas (12 a 40 ítems): las diferencias observadas, incluidas las mejoras en Arithmetic e IFEval, tienen alta varianza y no deben interpretarse como superioridad general.
+- Falta de transparencia en el método: el autor no revela la asignación por tensor ni la lógica de optimización, lo que impide auditar la reproducibilidad de la cuantización.
+- Idiomas y contexto no declarados: no se puede garantizar comportamiento multilingüe ni ventanas de contexto largas sin verificación empírica.
+- Riesgo de alucinación: inherente a los modelos de lenguaje y potencialmente amplificado por la compresión agresiva; requiere validación de salidas en aplicaciones factuales.
+- Sesgos: no se documentan evaluaciones de sesgo, toxicidad ni seguridad en la información disponible.
+- Licencia Apache-2.0: permite uso comercial, pero el usuario debe verificar las condiciones del modelo base (Ternary Bonsai 2 27B y Qwen3.8-27B), cuyas licencias no se detallan en esta ficha.
+- Dependencia del runtime de llama.cpp y de la versión que soporte el tipo TQ1_0; versiones antiguas pueden no cargar el GGUF correctamente.
 
 ## Enlaces
 
-- Hugging Face (modelo): https://huggingface.co/webmp3/Sakura-Micro-Bonsai-2-GSQ-RCO
-- Modelo base declarado: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
-- Base declarada del modelo anterior: https://huggingface.co/Qwen/Qwen3.8-27B
-- No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.
+- [Hugging Face: webmp3/Sakura-Micro-Bonsai-2-GSQ-RCO](https://huggingface.co/webmp3/Sakura-Micro-Bonsai-2-GSQ-RCO)
+- [Modelo base: prism-ml/Ternary-Bonsai-2-27B-gguf](https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf)
+- [Modelo base del linaje: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Repositorio llama.cpp](https://github.com/ggml-org/llama.cpp)

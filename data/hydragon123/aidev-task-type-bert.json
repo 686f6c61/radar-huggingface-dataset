@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Hydragon123/aidev-task-type-bert",
+  "slug": "hydragon123-aidev-task-type-bert",
+  "author": "Hydragon123",
+  "url": "https://huggingface.co/Hydragon123/aidev-task-type-bert",
+  "created_at": "2026-11-22T03:44:31.000Z",
+  "updated_at": "2026-11-22T03:44:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "dataset:hao-li/AIDev",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109491468,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437989384,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

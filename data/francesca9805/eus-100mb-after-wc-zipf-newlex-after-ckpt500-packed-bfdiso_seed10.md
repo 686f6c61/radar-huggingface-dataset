@@ -2,55 +2,59 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10` es un ajuste fino supervisado (SFT) de 124.770.816 parametros sobre la arquitectura GPT-2, publicado por el usuario de Hugging Face francesca9805. Parte del modelo base `francesca9805/ppt-wc-zipf-newlex-eus-after-100mb-packed-bfdiso_seed10` y se ha entrenado con la libreria TRL en su version 0.23.0, lo que lo situa en la categoria de los modelos densos tipo decoder-only de escala reducida (aproximadamente 124 millones de parametros, comparable a GPT-2 small).
+El modelo `eus-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10` es un ajuste fino (SFT) del modelo base `francesca9805/ppt-wc-zipf-newlex-eus-after-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124,77 millones de parametros, entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El nombre del modelo sugiere un trabajo experimental sobre tokenizacion y modelos de lenguaje en euskera (prefijo `eus`), con un corpus de aproximadamente 100 MB y tecnicas de empaquetado de secuencias (`packed`) y posiblemente decodificacion especulativa o atencion con sesgo (`bfdiso`).
 
-Por el identificador se deduce que el trabajo se enmarca en un proyecto de investigacion sobre tokenizacion y modelado de una lengua concreta: el sufijo `eus` corresponde al codigo ISO 639-2 del euskera, y los fragmentos `zipf`, `newlex` y `100mb` apuntan a experimentos sobre distribuciones lexicas (ley de Zipf), ampliacion de vocabulario y un corpus de entrenamiento de unos 100 MB empaquetado (packed). El repositorio ocupa 5,7 GB, muy por encima de lo que requeriria el peso puro del modelo en bf16 (unos 250 MB), lo que sugiere la presencia de multiples checkpoints o estados del optimizador.
+El modelo es relevante en el contexto de la investigacion sobre modelos de lenguaje de bajo coste computacional y lenguas de bajos recursos, como el euskera. Su tamano reducido (124M de parametros) lo hace adecuado para experimentacion, despliegue en hardware modesto y estudios de tokenizacion, aunque su utilidad en produccion es limitada debido a su escala y a la ausencia de documentacion detallada sobre datos de entrenamiento, licencia y evaluacion.
 
-Su relevancia es fundamentalmente academica y de investigacion: se trata de un modelo pequeno, sin datos publicados de benchmarks, sin licencia declarada de forma efectiva y con cero descargas en el momento de redactar esta ficha. No es un modelo pensado para produccion, sino una pieza dentro de una linea de experimentos sobre lenguas de bajos recursos.
+La model card es minima y generada automaticamente por TRL, sin informacion sobre composicion del dataset, hiperparametros, resultados de evaluacion ni restricciones de uso. Esto limita significativamente la evaluacion rigurosa del modelo, que debe considerarse como un artefacto de investigacion experimental mas que como un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only denso) |
+| Arquitectura | GPT-2 (transformer decoder-only) |
 | Parametros totales | 124.770.816 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible (la model card no la especifica; GPT-2 base usa 1024 tokens como referencia no confirmada) |
-| Tipos de cuantizacion | no se han publicado cuantizaciones oficiales; pesos en safetensors |
-| Idiomas soportados | no disponible en la model card; el sufijo `eus` del identificador apunta al euskera |
-| Licencia | no disponible (la model card contiene un campo placeholder `licence: license`) |
-| Formato de pesos | safetensors (libreria transformers) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (el prefijo `eus` sugiere euskera, sin confirmar) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors |
+| Tamano del repo | 15,5 GB |
+| Libreria | transformers |
+| Framework de entrenamiento | TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1 |
+| Metodo de entrenamiento | SFT (supervised fine-tuning) |
 | Modelo base | francesca9805/ppt-wc-zipf-newlex-eus-after-100mb-packed-bfdiso_seed10 |
-| Metodo de entrenamiento | SFT (supervised fine-tuning) con TRL |
-| Tamano del repositorio | 5,7 GB |
-| Fecha de creacion | 2026-10-13 |
+| Pipeline | text-generation |
+| Descargas | 546 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia GPT-2, con 124,77 millones de parametros. No se trata de un modelo MoE, ni hibrido, ni basado en SSM: es un denso clasico de atencion completa. La model card no describe ninguna innovacion arquitectonica adicional (no se mencionan decodificacion especulativa, atencion lineal, ventanas deslizantes ni variantes de RoPE), por lo que cabe asumir la configuracion estandar GPT-2 publicada por OpenAI, aunque este extremo no esta confirmado por el autor.
+La arquitectura es GPT-2, un transformer decoder-only con atencion causal completa, tal como indica la etiqueta `gpt2` en el repositorio. El modelo cuenta con 124.770.816 parametros, lo que coincide con la configuracion estandar de GPT-2 small (124M). No se dispone de informacion sobre el numero de capas, dimensiones ocultas o cabezas de atencion en la informacion proporcionada, aunque por el conteo de parametros se corresponde con la variante small.
 
-El entrenamiento se realizo mediante SFT con la libreria TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. El autor enlaza una ejecucion de Weights & Biases (`new-tokenizers/runs/bm289qy0`) para el seguimiento del entrenamiento. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases posteriores de RLHF o DPO. Los indicios del nombre (`100mb`, `packed`, `zipf`, `newlex`, `ckpt500`) sugieren un corpus empaquetado de aproximadamente 100 MB, un vocabulario o lexico nuevo y un checkpoint correspondiente al paso 500, pero ninguno de estos extremos se detalla en la informacion disponible.
+El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL, partiendo del modelo `ppt-wc-zipf-newlex-eus-after-100mb-packed-bfdiso_seed10`. El nombre del modelo base y del ajuste sugiere un pipeline experimental que incluye: un corpus de aproximadamente 100 MB (`100mb`), empaquetado de secuencias (`packed`), un tokenizador o preprocesamiento relacionado con la ley de Zipf y nuevo lexico (`wc-zipf-newlex`), y posiblemente un esquema de decodificacion o atencion denominado `bfdiso` con una semilla (`seed10`). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF o DPO. La unica innovacion tecnica documentada es el uso de SFT con TRL y el empaquetado de secuencias, practica habitual para mejorar la eficiencia del entrenamiento en contextos cortos.
+
+No hay informacion sobre el tokenizador utilizado, la longitud de contexto efectiva ni las tecnicas de optimizacion aplicadas. El enlace a Weights & Biases (run `rjvsskfb` del proyecto `new-tokenizers` de la Universidad de Groningen) sugiere que el trabajo se enmarca en investigacion academica sobre tokenizadores.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en la linea de los modelos GPT-2.
-- Ajuste por instrucciones mediante SFT: el ejemplo de la model card usa el formato de chat con roles (`{"role": "user", "content": ...}`), aunque el modelo no dispone de plantilla de chat documentada.
-- Capacidad multilingue: no disponible; por el identificador se orienta al euskera.
-- Razonamiento complejo, matematicas y codigo: no documentado ni verificado.
-- Tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades especiales (vision, audio, modo de pensamiento): no disponibles.
-- No se ha publicado ninguna evaluacion funcional de capacidades.
+- Generacion de texto autoregresiva basica, heredada de la arquitectura GPT-2.
+- Ajuste fino supervisado (SFT) sobre el modelo base, orientado presumiblemente a instrucciones o dialogos, aunque no se documenta el formato.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no documentadas; el prefijo `eus` sugiere orientacion al euskera, sin confirmacion.
+- Capacidades especiales (thinking mode, vision, audio): no disponibles.
+- Integracion con text-generation-inference y endpoints compatibles segun las etiquetas del repositorio.
 
 ## Casos de uso
 
-- Investigacion sobre tokenizacion de lenguas de bajos recursos: el modelo permite comparar como afecta un vocabulario nuevo (`newlex`) a la generacion de texto en euskera frente al modelo base, midiendo perplejidad y cobertura lexica.
-- Reproducibilidad de experimentos sobre la ley de Zipf: sirve como punto de control intermedio (paso 500) para estudiar la evolucion de la distribucion de frecuencias durante el entrenamiento.
-- Generacion de texto sintetico en euskera para aumento de datos: con 124M de parametros puede producir frases de forma rapida y en grandes volumenes, utiles como material auxiliar en pipelines de bajo coste.
-- Linea base academica en trabajos de comparacion: al ser un modelo pequeno y documentado en su procedencia (modelo base y checkpoint), es util como referencia inferior en estudios de escalado o de ajuste fino.
-- Inferencia en CPU o dispositivos de bajos recursos: el tamano reducido permite ejecutarlo en portatiles o entornos sin GPU para pruebas de concepto linguisticas.
-- Experimentos de ajuste fino posterior (continued pretraining / SFT adicional) sobre euskera: parte de un checkpoint ya adaptado al idioma, lo que reduce el coste de un nuevo ajuste.
-- Docencia y divulgacion: adecuado para ilustrar el ciclo completo de SFT con TRL y el seguimiento con W&B sin requerir hardware especializado.
+- Investigacion sobre tokenizacion en euskera: el modelo puede utilizarse como banco de pruebas para evaluar el impacto de distintas estrategias de tokenizacion (Zipf, nuevo lexico) en la calidad de generacion en una lengua de bajos recursos, dado su bajo coste de entrenamiento e inferencia.
+- Experimentacion academica con SFT: sirve para reproducir y comparar pipelines de ajuste fino con TRL sobre GPT-2 small, incluyendo el empaquetado de secuencias y la seleccion de checkpoints (el nombre indica `ckpt500`).
+- Generacion de texto controlada en entornos de laboratorio: con 124M de parametros, puede ejecutarse en CPU o GPU consumer para generar texto de prueba en experimentos de evaluacion de sesgos o de calidad linguistica.
+- Prototipado rapido de pipelines de text-generation: la model card incluye un ejemplo con `pipeline("text-generation", ...)` que permite integrar el modelo en prototipos de Hugging Face con minimo esfuerzo.
+- Docencia y formacion: adecuado para demostrar el ciclo completo de ajuste fino de un transformer pequeno, desde el modelo base hasta el checkpoint final, con trazabilidad en Weights & Biases.
+- Evaluacion de la viabilidad de modelos pequenos para lenguas minoritarias: permite medir hasta que punto 124M de parametros y ~100 MB de datos pueden producir texto coherente en euskera, como paso previo a escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -58,43 +62,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en bf16, los pesos ocupan aproximadamente 250 MB; con la cache KV y el overhead del runtime, la inferencia cabe en menos de 1 GB de VRAM.
-- En fp32, los pesos ocupan aproximadamente 500 MB, con un consumo total por debajo de 1,5 GB.
-- GPU recomendadas: cualquier GPU moderna es suficiente; una NVIDIA RTX 3060, RTX 4090, A100 o H100 no suponen ninguna restriccion. El modelo es claramente sobredimensionado para estas GPUs en terminos de capacidad.
-- Cabe holgadamente en cualquier GPU de consumo, incluidas tarjetas con 4 GB o menos, e incluso en GPU integradas con memoria compartida.
-- Inferencia en CPU: viable, con latencias interactivas en procesadores modernos.
-- Opciones de despliegue: transformers (pipeline de text-generation), Text Generation Inference (la etiqueta `text-generation-inference` y `endpoints_compatible` estan presentes en el repositorio), vLLM, y llama.cpp u Ollama si se genera previamente una conversion a GGUF (no publicada oficialmente).
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por tamano, se espera un throughput alto en GPU, coherente con un modelo de 124M de parametros, pero no hay mediciones publicadas.
-- Nota: el repositorio de 5,7 GB muy probablemente incluye checkpoints intermedios o estados de optimizador, por lo que la descarga completa no refleja el tamano real de inferencia.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB para los pesos (124,77M parametros x 4 bytes), mas overhead de activaciones y cache KV; en la practica, menos de 2 GB.
+- VRAM estimada en fp16/bf16: aproximadamente 0,25 GB para los pesos; inferior a 1,5 GB con overhead.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 0,13 GB para los pesos.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo esta sobredimensionado para estas ultimas.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 2 GB de VRAM; tambien en CPU.
+- Opciones de despliegue: transformers (pipeline), text-generation-inference (etiqueta `text-generation-inference`), endpoints compatibles; no se documenta soporte explicito para vLLM, llama.cpp, Ollama o TGI mas alla de las etiquetas.
+- Latencia y throughput estimados: no disponibles; por el tamano, se espera un throughput alto en GPU y aceptable en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Contexto de uso |
-|---|---|---|---|---|
-| Este modelo (francesca9805/eus-...) | 124,77 M | no disponible | no disponible | Ajuste fino SFT para euskera, investigacion |
-| GPT-2 small (referencia de la familia) | 124 M | 1024 | MIT (version de OpenAI) | Generacion de texto en ingles, linea base general |
-| DistilGPT-2 (referencia de la familia) | 82 M | 1024 | MIT (version de OpenAI) | Generacion de texto ligera, destilada |
-| Modelos especificos de euskera (por ejemplo, la familia Latxa de HiTZ) | no disponible | no disponible | no disponible | LLM orientados al euskera de mayor escala |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| eus-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10 | 124,77M | no disponible | no disponible | Hugging Face (546 descargas) | Ajuste SFT experimental sobre GPT-2 small, orientado a euskera |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Hugging Face, OpenAI | Modelo base de referencia, multilingue limitado, sin SFT |
+| GPT-2 medium (OpenAI) | 355M | 1024 tokens | MIT | Hugging Face, OpenAI | Mayor capacidad, mismo esquema arquitectonico |
+| Modelos especificos para euskera (p. ej., variantes de GPT-2 o BERT ajustadas) | variable | variable | variable | Hugging Face | No se dispone de datos comparativos concretos en la informacion proporcionada |
 
-La comparacion con GPT-2 small y DistilGPT-2 es aproximada por tamano y arquitectura, pero no por idioma ni por datos de entrenamiento: este modelo esta orientado al euskera y carece de evaluaciones publicadas, mientras que los modelos de OpenAI si disponen de resultados conocidos. No se dispone de datos numericos suficientes para una comparacion de rendimiento rigurosa.
+La comparativa con alternativas especificas para euskera no puede completarse con datos verificables a partir de la informacion disponible; se indica como no disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay ninguna metrica publicada de perplejidad, MMLU, HumanEval, GSM8K ni similares, por lo que no es posible evaluar su calidad real.
-- Licencia no declarada de forma efectiva: el campo de licencia de la model card contiene un placeholder (`licence: license`), lo que impide determinar si el uso comercial esta permitido. Se debe contactar con el autor antes de cualquier uso en produccion.
-- Riesgo elevado de alucinacion: por su tamano (124M de parametros) y su naturaleza GPT-2, la coherencia en generaciones largas es limitada y la fidelidad factual no esta garantizada.
-- Sesgos: no documentados, pero un modelo de este tamano entrenado sobre un corpus de 100 MB hereda los sesgos presentes en esos datos.
-- Limitaciones de idioma: el identificador apunta al euskera, pero no se confirma el alcance multilingue ni la calidad por idioma.
-- Limitaciones de contexto: la longitud de contexto no esta declarada; si se asume la configuracion estandar de GPT-2, seria de 1024 tokens, insuficiente para tareas de contexto largo.
-- Sin plantilla de chat documentada: el ejemplo de la model card usa roles, pero no se especifica el formato exacto de prompt que se uso durante el SFT, lo que puede degradar el rendimiento si no se replica.
-- Trazabilidad limitada: con cero descargas y cero likes, no hay evidencia de uso o validacion externa.
-- Discrepancia de tamano: el repositorio de 5,7 GB frente a los 124,77M de parametros sugiere artefactos adicionales; conviene revisar los archivos antes de desplegar.
+- Sesgos conocidos: no documentados; al entrenarse sobre un corpus de ~100 MB no especificado, es probable que herede sesgos del corpus y del modelo base GPT-2, pero no hay evaluacion publicada.
+- Riesgo de alucinacion: alto en relacion con su tamano; los modelos de 124M de parametros tienen capacidad limitada de factualidad y coherencia a largo plazo.
+- Limitaciones de contexto o idioma: la longitud de contexto no esta documentada; el soporte de euskera es inferido del nombre, no confirmado; el multilingue no esta garantizado.
+- Restricciones de licencia para uso comercial: la licencia figura como "no disponible" y la model card incluye `licence: license` sin especificar terminos; no se puede asumir uso comercial permitido.
+- Caveats para produccion: la model card es auto-generada y carece de informacion sobre datos, hiperparametros y evaluacion; el modelo debe tratarse como experimental. El repositorio ocupa 15,5 GB, lo que sugiere la presencia de multiples checkpoints o artefactos de entrenamiento, no solo los pesos finales.
+- Ausencia de evaluacion: no hay benchmarks, evaluaciones de calidad ni comparaciones publicadas, lo que impide validar su rendimiento frente a alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-eus-after-100mb-packed-bfdiso_seed10
-- Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/bm289qy0
-- Repositorio de TRL: https://github.com/huggingface/trl
-- Paper de TRL (cita del autor): von Werra et al., "TRL: Transformer Reinforcement Learning", 2020, https://github.com/huggingface/trl
-- No se han encontrado papers, blogs ni demos adicionales asociados al modelo en la busqueda web disponible.
+- Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rjvsskfb
+- Repositorio TRL: https://github.com/huggingface/trl

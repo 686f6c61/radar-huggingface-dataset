@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 569,
+  "downloads_30d": 570,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
@@ -60,24 +60,24 @@
       "snippet": "Bienvenue sur la Boutique LEGO® officielle, le repaire exceptionnel des jouets de construction, cadeaux, modèles à exposer et …"
     },
     {
-      "title": "Lego-X/qwen3_5_35b_a3b_oc_200k_rl · Hugging Face",
-      "url": "https://huggingface.co/Lego-X/qwen3_5_35b_a3b_oc_200k_rl",
-      "snippet": "Lego-X / qwen3_5_35b_a3b_oc_200k_rl Like 1 Follow LegoX 29 Text Generation Transformers Safetensors Lego-X/Lego-RL-2699 English qwen3_5_moe image-text-to-text code swe-bench agentic coding-agent reinforcement-learning gspo opencode Mixture of Experts conversational arxiv:2608.17393 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+      "title": "Jouets par thème | Boutique LEGO® officielle FR",
+      "url": "https://www.lego.com/fr-fr/themes",
+      "snippet": "Rêve, conçois et construis à tout âge avec les ensembles de jeu LEGO®, organisés par thème."
     },
     {
-      "title": "Détails du magasin - LEGO® Store Bordeaux Sainte-Catherine",
-      "url": "https://www.lego.com/fr-fr/stores/store/bordeaux-ste-catherine",
-      "snippet": "LEGO® Store Bordeaux Sainte-Catherine Emplacement Promenade Sainte Catherine - Rue Guiraude Bordeaux 33000 Téléphone: …"
+      "title": "Black Friday Lego : tous les produits de la marque Lego (Enfant",
+      "url": "https://www.fnac.com/Lego/m63343/w-4",
+      "snippet": "Retrouvez tous les produits Lego au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un magasin …"
     },
     {
-      "title": "Lego-RL - a Lego-X Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/Lego-X/lego-rl",
-      "snippet": "Harness-native RL for coding agents: the trained policy and the training task index."
+      "title": "Boutique LEGO au meilleur prix | E.Leclerc",
+      "url": "https://www.e.leclerc/cat/jeux-de-construction-lego",
+      "snippet": "Que vous soyez fan de LEGO City, amateur de LEGO Technic, ou mordu de LEGO Star Wars, notre sélection saura combler vos …"
     },
     {
-      "title": "Prix LEGO en France : promos et sets bientôt retirés (novembre 2026)",
-      "url": "https://bricksvalue.com/fr",
-      "snippet": "714 sets LEGO en promo aujourd’hui et 302 bientôt retirés chez LEGO.com, Amazon.fr, E.Leclerc, Cdiscount, Carrefour, Fnac, King …"
+      "title": "Jouets LEGO® SMART Play™ | Boutique LEGO® officielle FR",
+      "url": "https://www.lego.com/fr-fr/smart-play/all-sets",
+      "snippet": "Inventez vos propres aventures avec vos personnages préférés et une large gamme de jouets qui feront des cadeaux parfaits pour …"
     }
   ]
 }

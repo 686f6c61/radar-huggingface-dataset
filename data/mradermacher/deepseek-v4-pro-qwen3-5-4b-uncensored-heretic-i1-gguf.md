@@ -2,52 +2,51 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-i1-GGUF es una cuantizacion GGUF con imatrix realizada por mradermacher sobre el modelo xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic. Se trata de un modelo de 4.326.350.848 parametros (aproximadamente 4,3 mil millones) que combina la etiqueta Qwen3.5 con tecnicas de destilacion de DeepSeek, segun los tags del repositorio. La denominacion "heretic" y "uncensored/abliterated" indica que el modelo base ha sido sometido a un proceso de abliteracion o decensurado para reducir los rechazos en las respuestas.
+DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic es un modelo de lenguaje de 4.326.350.848 parámetros (aproximadamente 4,3 mil millones) derivado de la familia Qwen 3.5 y destilado a partir de DeepSeek V4 Pro, según los tags de la model card. La versión aquí descrita es la cuantización GGUF con imatrix (etiqueta i1) publicada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face, a partir del modelo base de xtools-at.
 
-El repositorio ofrece una bateria completa de cuantizaciones i1 (imatrix) en formato GGUF, desde Q2_K (2,1 GB) hasta Q6_K (3,7 GB), pensadas para ejecucion local con llama.cpp y herramientas compatibles. El modelo es multimodal segun la model card ("This is a vision model"), con archivos mmproj disponibles en el repositorio estatico del mismo autor. Soporta seis idiomas declarados: ingles, chino, coreano, japones, espanol y ruso.
+El modelo se presenta como una variante "uncensored", "heretic" y "abliterated", es decir, con las capas de rechazo y alineación de seguridad parcialmente eliminadas o atenuadas mediante técnicas de abliteration. Incorpora capacidades declaradas de razonamiento, matemáticas y STEM (tags `reasoning`, `math`, `stem`) y está pensado para su uso conversacional y de generación de texto en entornos controlados donde se requiere baja censura.
 
-La relevancia actual radica en que permite desplegar un modelo de razonamiento y matematicas de ~4B parametros en hardware de consumo, con cuantizaciones que caben en 3-4 GB de VRAM o RAM, y con la flexibilidad de un modelo sin las restricciones de seguridad habituales. La licencia Apache 2.0 facilita su uso comercial, aunque con las advertencias propias de un modelo abliterated.
+La relevancia de esta ficha radica en que combina un tamaño compacto (4,3 B) con cuantizaciones que van desde 2,1 GB hasta 3,7 GB, lo que permite su despliegue en hardware de consumo. La licencia Apache 2.0 facilita su integración en productos comerciales, aunque el carácter "abliterated" introduce riesgos de contenido que deben gestionarse en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5, segun tags; detalles exactos no disponibles) |
-| Parametros totales | 4.326.350.848 (~4,3B) |
+| Arquitectura | Transformer (derivada de Qwen 3.5, segun tags); detalles de capas y atencion no disponibles |
+| Parametros totales | 4.326.350.848 (aproximadamente 4,3 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix/weighted); estaticas en el repo hermano -GGUF |
 | Idiomas soportados | en, zh, ko, ja, es, ru |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1/imatrix); modelo base en safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors no se incluye en este repo |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del repositorio. Los tags indican `qwen3_5`, `distillation`, `deepseek`, `sft`, `mtp`, `reasoning`, `math` y `stem`, lo que sugiere un transformer derivado de la familia Qwen3.5, afinado mediante SFT y destilacion de un modelo DeepSeek (probablemente para transferir capacidades de razonamiento y matematicas). El tag `mtp` podria referirse a multi-token prediction, aunque no se confirma en la documentacion. El proceso "heretic"/"abliterated" implica una modificacion de los pesos orientada a eliminar el comportamiento de rechazo (refusal), tipicamente mediante abliteracion de direcciones de activacion.
+La informacion disponible no detalla la arquitectura interna mas alla de los tags `qwen3_5` y `transformers`. Por el nombre y los tags se infiere que se trata de un transformer derivado de Qwen 3.5, con destilacion desde DeepSeek V4 Pro (`distillation`, `deepseek`) y un ajuste fino supervisado (`sft`). El tag `mtp` sugiere la presencia de multi-token prediction, una tecnica de decodificacion especulativa que acelera la generacion al predecir varios tokens por paso, aunque no se aportan detalles tecnicos sobre su implementacion.
 
-No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO. Tampoco se documentan innovaciones tecnicas concretas como decodificacion especulativa o atencion lineal. Las cuantizaciones i1 han sido generadas con un fichero imatrix (0,1 GB) incluido en el repositorio, lo que mejora la calidad respecto a cuantizaciones estaticas equivalentes.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF o DPO. El proceso "heretic"/"abliterated" implica la eliminacion de direcciones de activacion asociadas al rechazo de contenido, lo que modifica el comportamiento del modelo respecto al base. Tampoco se especifican innovaciones adicionales como atencion lineal o decodificacion especulativa mas alla del posible MTP.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno (tag `conversational`).
-- Razonamiento explicito (tag `reasoning`) y modo de pensamiento segun la nomenclatura de la familia Qwen3.5.
-- Matematicas y STEM (tags `math`, `stem`).
-- Capacidad multimodal de vision: la model card indica explicitamente que es un modelo de vision, con archivos mmproj en el repositorio estatico.
-- Destilacion de conocimiento de DeepSeek para tareas de razonamiento.
-- Multilingue en ingles, chino, coreano, japones, espanol y ruso.
-- Comportamiento "uncensored"/"abliterated": menor tasa de rechazos ante peticiones que el modelo original rechazaria.
-- Compatible con text-generation-inference y `endpoints_compatible` segun tags.
-- No se documenta soporte explicito de tool calling ni de agentes multi-paso en la informacion disponible.
+- Generacion de texto conversacional multi-turno en seis idiomas (ingles, chino, coreano, japones, espanol y ruso).
+- Razonamiento explicito y modo de pensamiento (tags `reasoning`), orientado a problemas de matematicas y STEM.
+- Capacidades matematicas y de resolucion de problemas cientificos derivadas de la destilacion desde DeepSeek V4 Pro.
+- Generacion de codigo y asistencia en tareas de programacion (implicito en el tag `stem` y en la herencia de Qwen 3.5, aunque no se documenta explicitamente).
+- Comportamiento "uncensored"/"abliterated": menor tendencia a rechazar peticiones, lo que amplia el rango de respuestas pero elimina parte de las salvaguardas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente, aunque el modo de razonamiento lo hace plausible.
+- Capacidades multimodales (vision, audio): no disponibles.
 
 ## Casos de uso
 
-- Razonamiento matematico local: el modelo puede resolver problemas de algebra y calculo en entornos sin conexion, ejecutandose con llama.cpp en una GPU de 4-6 GB o incluso en CPU, gracias a sus cuantizaciones de 2-3 GB.
-- Asistente de programacion en estaciones de trabajo modestas: con i1-Q4_K_M (2,9 GB) cabe en una RTX 3050 o similar y permite autocompletado y explicacion de codigo sin depender de la nube.
-- Procesamiento de documentos con vision: al ser multimodal, puede extraer informacion de imagenes y capturas usando los archivos mmproj del repositorio estatico, util para digitalizacion de facturas o tickets.
-- Investigacion sobre alineacion y seguridad: el caracter abliterated lo convierte en objeto de estudio para analizar como la eliminacion de direcciones de rechazo afecta a la utilidad y al comportamiento del modelo.
-- Traduccion multilingue entre los seis idiomas soportados (en, zh, ko, ja, es, ru), especialmente util para pares con el espanol en entornos locales.
-- Despliegue embebido y edge computing: con cuantizaciones Q2_K (2,1 GB) o IQ3_XS puede ejecutarse en dispositivos con poca memoria, como mini-PC o Raspberry Pi con 8 GB de RAM.
-- Generacion creativa sin restricciones: escritura de ficcion o guiones donde el modelo base censuraria ciertos temas, con la advertencia de revisar el contenido generado.
+- Asistente conversacional autoalojado: el modelo puede desplegarse en local mediante llama.cpp u Ollama con cuantizaciones de 2,7-3,3 GB, adecuado para prototipos de chatbot en hardware de consumo sin depender de APIs externas.
+- Generacion de codigo en entornos de desarrollo: su herencia de Qwen 3.5 y el enfasis en STEM lo hacen util para autocompletado y explicacion de fragmentos en IDE, con la salvedad de que no se documenta tool calling.
+- Tutoria de matematicas y fisica: el modo de razonamiento y la destilacion desde DeepSeek V4 Pro permiten resolver problemas paso a paso, util en plataformas educativas que requieren explicaciones detalladas.
+- Investigacion sobre alineacion y abliteration: al ser una variante "heretic", sirve como caso de estudio para comparar el comportamiento de un modelo base frente a su version sin capas de rechazo, en laboratorios de seguridad de IA.
+- Procesamiento multilingue en seis idiomas: adecuado para traduccion y atencion al cliente en ingles, chino, coreano, japones, espanol y ruso, con cuantizaciones ligeras que caben en GPUs de 8 GB.
+- Generacion de contenido creativo sin restricciones: escritura de ficcion, guiones o material editorial donde las salvaguardas estandar resultan limitantes, siempre con supervision humana y cumplimiento legal.
+- Despliegue en edge o dispositivos con poca VRAM: las cuantizaciones i1-Q3_K_S (2,2 GB) e i1-IQ3_S (2,3 GB) permiten ejecucion en GPUs integradas o portatiles modestos para tareas de generacion corta.
 
 ## Benchmarks y rendimiento
 
@@ -55,41 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: entre 2,1 GB (i1-Q2_K) y 3,7 GB (i1-Q6_K); anadir margen para el contexto KV cache (dependiente de la longitud de contexto, no documentada).
-- GPU recomendadas: cualquier GPU con 4-6 GB de VRAM es suficiente para las cuantizaciones Q4 y Q5; una RTX 3060, RTX 4060, RTX 3050 o GTX 1660 pueden ejecutar el modelo completo.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 4 GB o mas; las cuantizaciones Q2/IQ3 caben incluso en iGPU con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), text-generation-inference (segun tags), y cualquier runtime compatible con GGUF; los archivos mmproj requieren llama.cpp con soporte multimodal.
-- Latencia y throughput: no disponibles en la informacion proporcionada; en una GPU de consumo se espera un throughput alto por el reducido tamano del modelo, pero no se aportan cifras verificables.
+- VRAM estimada para inferencia: aproximadamente 2,5-3 GB con i1-Q2_K/i1-Q3_K_S, 3-3,5 GB con i1-Q4_K_M, y 4-4,5 GB con i1-Q6_K (incluyendo overhead de contexto).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para mayor velocidad; A100/H100 solo si se busca alto throughput en batching.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU con 6 GB o mas usando cuantizaciones Q3/Q4; en GPUs de 4 GB con Q2/IQ2.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF (koboldcpp, llama-cpp-python). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan el modelo base en safetensors.
+- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion. El tag `mtp` podria mejorar la velocidad de decodificacion, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic (este) | ~4,3B | no disponible | Apache 2.0 | GGUF i1 | Vision, abliterated, 6 idiomas |
-| Qwen3.5-4B (base de referencia) | ~4B | no disponible | Apache 2.0 (segun familia) | safetensors/GGUF | Modelo original sin abliterar; capacidades de razonamiento de la familia Qwen3.5 |
-| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5B | no disponible | MIT (segun familia) | safetensors/GGUF | Destilado de razonamiento de DeepSeek en tamano menor |
-| Llama 3.2 3B Instruct | ~3B | 128K | Llama 3.2 Community | safetensors/GGUF | Alternativa generalista, sin abliterar |
-
-La comparativa es orientativa: no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa con las alternativas.
+| DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic (i1-GGUF) | 4,3 B | no disponible | Apache 2.0 | GGUF | Variante abliterated, 6 idiomas, cuantizaciones imatrix |
+| Qwen 3.5 4B (base) | aproximadamente 4 B | no disponible | Apache 2.0 | safetensors, GGUF | Modelo original con alineacion estandar |
+| DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic (estatico -GGUF) | 4,3 B | no disponible | Apache 2.0 | GGUF | Mismo modelo con cuantizaciones estaticas (sin imatrix) |
+| Llama 3.2 3B Instruct | 3,2 B | 128 K | Llama 3.2 Community License | safetensors, GGUF | Alternativa compacta con contexto largo y alineacion estandar |
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated/uncensored: la eliminacion de rechazos puede degradar la coherencia en temas sensibles y aumentar la probabilidad de contenido inapropiado; no es adecuado para aplicaciones de cara al publico sin filtros adicionales.
-- Riesgo de alucinacion: como todo modelo de ~4B, la tasa de alucinacion es mayor que en modelos de mayor tamano; conviene verificar hechos en tareas criticas.
-- Longitud de contexto no documentada: no se puede garantizar el rendimiento en conversaciones o documentos largos sin pruebas previas.
-- Idiomas: aunque se declaran seis, el soporte real puede ser desigual; el espanol figura en la lista pero no se aportan evaluaciones por idioma.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad sobre el contenido generado por un modelo sin censura.
-- Cuantizaciones de baja calidad (Q2_K, Q3_K_S) degradan notablemente la calidad; se recomienda IQ4_XS o Q4_K_M para uso en produccion.
-- El modelo es una cuantizacion: no incluye los pesos originales en safetensors, por lo que para fine-tuning hay que acudir al modelo base.
-- Los archivos mmproj (vision) estan en el repositorio estatico del autor, no en este repositorio i1; hay que descargarlos por separado.
+- El proceso de abliteration elimina parcialmente las capas de rechazo, lo que puede producir contenido ofensivo, inseguro o legalmente problematico; requiere filtros y supervision en produccion.
+- Riesgo elevado de alucinacion inherente a un modelo de 4,3 B, especialmente en tareas de razonamiento largo o datos factuales.
+- La longitud de contexto no esta documentada; no se debe asumir una ventana amplia sin verificacion empirica.
+- El soporte de tool calling y agentes no esta confirmado; integrarlo en pipelines automatizados sin validacion previa es arriesgado.
+- Aunque la licencia es Apache 2.0, el uso comercial de una variante "uncensored" puede incumplir normativas sectoriales (salud, finanzas, menores) y las politicas de las plataformas de despliegue.
+- El rendimiento en espanol, aunque declarado, no cuenta con benchmarks publicados; la calidad puede ser inferior a la del ingles.
+- El repositorio pesa 39,2 GB por incluir todas las cuantizaciones; conviene descargar solo el archivo necesario.
+- La fecha de creacion (2026-11-12) y el nombre "DeepSeek-V4-Pro" deben tratarse con cautela: no se aporta verificacion independiente del origen de los datos de destilacion.
 
 ## Enlaces
 
-- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-i1-GGUF
+- Repositorio Hugging Face (i1-GGUF): https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic
-- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-i1-GGUF
-- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

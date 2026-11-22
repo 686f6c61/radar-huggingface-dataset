@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "SixStones233/speech_paraformer-large_asr_nat-en-16k-common-vocab10020-onnx",
+  "slug": "sixstones233-speech_paraformer-large_asr_nat-en-16k-common-vocab10020-onnx",
+  "author": "SixStones233",
+  "url": "https://huggingface.co/SixStones233/speech_paraformer-large_asr_nat-en-16k-common-vocab10020-onnx",
+  "created_at": "2026-11-22T04:03:06.000Z",
+  "updated_at": "2026-11-22T04:26:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 241696870,
+  "storage_human": "242 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Images de qualité sur Wikimédia Commons"
+    }
+  ]
+}

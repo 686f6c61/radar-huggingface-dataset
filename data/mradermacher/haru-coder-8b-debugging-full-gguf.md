@@ -2,105 +2,107 @@
 
 ## Resumen
 
-haru-coder-8b-debugging-full-GGUF es la version cuantizada en formato GGUF del modelo harumori47/haru-coder-8b-debugging-full, publicada por el usuario mradermacher, conocido por distribuir cuantizaciones listas para usar con llama.cpp y derivados. El modelo base es un modelo de aproximadamente 7.600 millones de parametros (7.615.616.512 segun los pesos en safetensors) orientado, a juzgar por su nombre, a generacion de codigo y tareas de depuracion ("debugging"). La model card del repositorio cuantizado no detalla la arquitectura, los datos de entrenamiento ni la longitud de contexto del modelo original, por lo que esos datos se marcan como no disponibles en esta ficha.
+haru-coder-8b-debugging-full-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo Rowa68/haru-coder-8b-debugging-full, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo original, sino de una distribucion derivada: el modelo base fue desarrollado por Rowa68 y esta especializado, segun su nombre, en tareas de programacion y depuracion de codigo.
 
-La relevancia de esta publicacion es fundamentalmente practica: pone a disposicion un conjunto completo de cuantizaciones estaticas que abarcan desde Q2_K (3,1 GB) hasta f16 (15,3 GB), lo que permite ejecutar un modelo de 7,6B en GPUs de consumo y en CPU. Segun la propia model card, se trata de cuantizaciones estaticas y no se han generado cuantizaciones ponderadas/imatrix.
+El modelo cuenta con 7.615.616.512 parametros (aproximadamente 7,6 mil millones), lo que lo situa en la categoria de modelos de 8B, un tamano muy popular para despliegue en hardware de consumo. La unica informacion disponible sobre el modelo base no incluye detalles sobre arquitectura interna, datos de entrenamiento ni longitud de contexto, por lo que muchos de los apartados de esta ficha quedan marcados como no disponibles.
 
-Conviene senalar que el repositorio no tiene descargas ni "likes" registrados y que la licencia no aparece especificada en la informacion disponible, dos factores que condicionan su evaluacion para uso en produccion.
+La relevancia de esta publicacion radica en que ofrece el modelo en hasta doce variantes de cuantizacion distintas, desde Q2_K (3,1 GB) hasta f16 (15,3 GB), lo que permite ejecutarlo en un rango amplio de hardware, desde portatiles con GPU modesta hasta estaciones de trabajo. El repositorio ocupa 68,1 GB en total y acumula 555 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no especificada en la model card del modelo base) |
-| Parametros totales | 7.615.616.512 (aproximadamente 7,6B, dato de safetensors) |
-| Parametros activos | no aplica (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo base transformer de 8B, sin confirmar) |
+| Parametros totales | 7.615.616.512 |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (el modelo base se distribuye en safetensors) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Modelo base | Rowa68/haru-coder-8b-debugging-full |
+| Tamano del repositorio | 68,1 GB |
+| Libreria declarada | transformers |
+| Pipeline | no disponible |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. El nombre del repositorio y el recuento de parametros (7,6B) situan al modelo en la categoria de modelos densos de ~8B, un tamano habitual de transformers decoder-only, pero esta afirmacion no puede confirmarse con los datos disponibles y por tanto se deja como no verificada.
+No se dispone de informacion sobre la arquitectura interna del modelo base Rowa68/haru-coder-8b-debugging-full mas alla del numero de parametros (7,6B) y de su orientacion declarada a tareas de codigo y depuracion. No se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas como atencion lineal o decodificacion especulativa.
 
-Respecto al entrenamiento, la model card del repositorio cuantizado no incluye numero de tokens, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La unica innovacion tecnica documentada en esta publicacion es de naturaleza de despliegue: la generacion de cuantizaciones GGUF estaticas mediante el pipeline de mradermacher (indicado en los metadatos internos como `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`). No se han publicado cuantizaciones ponderadas (imatrix) para este modelo.
+Respecto a esta publicacion concreta, se trata de cuantizaciones estaticas generadas por mradermacher mediante el pipeline de conversion a GGUF (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1). El autor indica que no ha generado cuantizaciones ponderadas con imatrix para este modelo, y que no tiene previsto hacerlo salvo peticion explicita en la seccion de discusiones de la comunidad. Las cuantizaciones son, por tanto, estaticas y no optimizadas con matrices de importancia.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` y el tag de pipeline `text-generation` en el ecosistema de transformers indican soporte de dialogos multi-turno.
-- Codigo y depuracion: el nombre del modelo base ("coder" y "debugging") apunta a un ajuste orientado a asistencia en programacion y resolucion de errores, aunque no se detallan las capacidades concretas.
-- Idiomas: soporte declarado unicamente para ingles (tag `en`).
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de Inference Endpoints de Hugging Face.
-- Tool calling / function calling: no disponible.
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
+- Orientacion a programacion y depuracion de codigo, inferida del nombre del modelo base ("haru-coder-8b-debugging-full"); no hay documentacion que detalle el alcance exacto.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`) para despliegue como API.
+- Ejecucion local mediante llama.cpp y herramientas derivadas gracias al formato GGUF.
+- Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades especiales (modo "thinking", vision, audio): no disponible.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma; no se documentan otros idiomas.
+- Capacidades especiales (modo thinking, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Asistente de depuracion en el IDE: dado el enfoque declarado del modelo base, puede integrarse en extensiones de editor para analizar mensajes de error, proponer correcciones y explicar trazas, siempre que se valide su calidad real con pruebas propias.
-- Generacion de codigo en local sin conexion: al distribuirse en GGUF, puede ejecutarse en estaciones de trabajo con GPU de consumo o incluso en CPU, lo que permite entornos de desarrollo con requisitos de privacidad.
-- Prototipado rapido con llama.cpp u Ollama: la disponibilidad de cuantizaciones Q4_K_M y Q5_K_S (4,8 y 5,4 GB) facilita probar el modelo en portatiles con GPU de gama media antes de comprometer recursos mayores.
-- Chat conversacional de proposito general en ingles: el tag `conversational` lo habilita como base para asistentes de texto, con la advertencia de que solo se declara soporte de ingles.
-- Evaluacion comparativa de tecnicas de cuantizacion: al ofrecer 12 variantes del mismo modelo, es util para medir el impacto de la cuantizacion en la calidad de salida en tareas de codigo.
-- Despliegue de bajo coste en Inference Endpoints: el tag `endpoints_compatible` permite servir la variante Q8_0 o f16 desde infraestructura gestionada cuando se requiere mayor fidelidad.
-- Filtrado o revision de fragmentos de codigo en pipelines internos: con las debidas comprobaciones, puede emplearse para tareas auxiliares de revision estatica asistida por lenguaje natural.
+- Asistencia a la depuracion en local: gracias a las cuantizaciones Q4_K_M (4,8 GB) o Q5_K_M (5,5 GB), el modelo puede ejecutarse en un portatil con GPU de 8 GB de VRAM para analizar trazas de error, sugerir causas raiz y proponer parches sobre fragmentos de codigo, sin enviar codigo propietario a servicios en la nube.
+- Integracion en IDE mediante llama.cpp: el formato GGUF permite conectarlo a extensiones de editor que hablan con servidores locales compatibles con la API de llama.cpp, ofreciendo autocompletado y explicaciones de codigo con latencia baja en hardware de consumo.
+- Revision de codigo en CI/CD: desplegando la variante Q8_0 (8,2 GB) en un runner con GPU, el modelo puede analizar diffs y generar comentarios automatizados de revision en ingles sobre posibles bugs, siempre que se valide su calidad con pruebas propias dado que no hay benchmarks publicados.
+- Prototipado de chatbots tecnicos: la etiqueta `conversational` y la compatibilidad con endpoints permiten montar un asistente de soporte para desarrolladores que responda dudas de programacion en ingles, con la ventaja de que el modelo es pequeno y economico de servir.
+- Educacion y formacion en programacion: con la variante Q2_K (3,1 GB) se puede desplegar en equipos muy modestos para generar ejercicios, explicar errores de compilacion o comentar codigo de ejemplo, aceptando la perdida de calidad de las cuantizaciones bajas.
+- Experimentacion e investigacion: el rango de doce cuantizaciones permite estudiar el impacto de la cuantizacion en la calidad de un modelo especializado en codigo, comparando Q2_K frente a Q8_0 sobre el mismo conjunto de tareas de depuracion.
+- Despliegue en entornos con recursos limitados: la variante IQ4_XS (4,4 GB) ofrece un equilibrio entre tamano y calidad para servidores sin GPU dedicada que ejecuten llama.cpp en CPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos consultados incluyen puntuaciones en MMLU, HumanEval, GSM8K ni en ninguna otra prueba estandarizada, ni para el modelo base ni para las cuantizaciones.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM se estiman a partir del tamano de los ficheros GGUF publicados; hay que anadir memoria adicional para la ventana de contexto, cuya longitud se desconoce.
-
-- VRAM estimada para inferencia (partiendo del tamano del fichero):
-  - Q2_K: ~3,1 GB (minimo recomendado en torno a 4 GB con contexto reducido).
-  - Q3_K_M: ~3,9 GB.
-  - IQ4_XS: ~4,4 GB.
-  - Q4_K_S / Q4_K_M: ~4,6-4,8 GB (etiquetados como "fast, recommended").
-  - Q5_K_S / Q5_K_M: ~5,4-5,5 GB.
-  - Q6_K: ~6,4 GB ("very good quality").
-  - Q8_0: ~8,2 GB ("fast, best quality").
-  - f16: ~15,3 GB (16 bits por peso, descrito como "overkill").
-- GPU recomendadas:
-  - Consumer con 8 GB (RTX 3060 Ti, RTX 4060) para Q4 y Q5.
-  - Consumer con 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080) para Q6_K, Q8_0 y f16 con contexto moderado.
-  - RTX 4090 (24 GB) para f16 con contexto amplio.
-  - A100 / H100 para despliegue concurrente por encima de una instancia.
-- Cabe en GPU de consumo: si, al menos las variantes Q2_K a Q8_0.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores compatibles con GGUF y, segun la metadata, Inference Endpoints de Hugging Face. vLLM y TGI trabajan preferentemente con safetensors del modelo base, no con estos GGUF.
-- Latencia y throughput: no disponible (no se han publicado mediciones).
+- VRAM estimada para inferencia segun cuantizacion (aproximada, incluye overhead de contexto):
+  - Q2_K: ~3,5 GB
+  - Q3_K_S / Q3_K_M / Q3_K_L: ~4-4,7 GB
+  - IQ4_XS: ~4,9 GB
+  - Q4_K_S / Q4_K_M: ~5,1-5,3 GB
+  - Q5_K_S / Q5_K_M: ~5,9-6,0 GB
+  - Q6_K: ~6,9 GB
+  - Q8_0: ~8,7 GB
+  - f16: ~15,8 GB
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para las variantes altas; A100 o H100 no son necesarias para un modelo de este tamano y solo tendrian sentido para servir muchas peticiones en paralelo.
+- Cabe en GPU de consumo: si. Las variantes Q4_K_M y Q5_K_M caben en GPUs de 8 GB; Q8_0 requiere 12 GB o mas; f16 requiere 16 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), servidores compatibles con la API de llama.cpp, y cualquier runtime que soporte GGUF. La etiqueta `endpoints_compatible` sugiere uso con endpoints gestionados. No se documenta soporte especifico de vLLM o TGI para este repositorio, ya que ambos trabajan preferentemente con safetensors.
+- Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-La model card no incluye datos del modelo base (arquitectura, contexto, licencia ni rendimiento) que permitan una comparacion rigurosa. Por ello, la comparacion con alternativas de la misma categoria (modelos densos de ~7-8B orientados a codigo, como Qwen2.5-Coder-7B o Llama-3.1-8B) no puede establecerse con datos verificados dentro de la informacion proporcionada.
+No se dispone de datos de rendimiento del modelo base ni de sus cuantizaciones, por lo que una comparacion cuantitativa fiable no es posible. A continuacion se ofrece una comparacion estructural con alternativas tipicas de la categoria 7-8B especializadas en codigo, marcando como no disponible cualquier dato que no se pueda verificar.
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Datos verificados en esta busqueda |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| haru-coder-8b-debugging-full-GGUF | ~7,6B | no disponible | no disponible | GGUF | si (parametros, cuantizaciones, idioma) |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no |
+| haru-coder-8b-debugging-full (esta ficha) | 7,6B | no disponible | no disponible | GGUF (12 variantes) | Especializado en depuracion segun nombre; solo ingles |
+| Qwen2.5-Coder-7B | 7,6B | 32K (128K en variantes) | Apache 2.0 | safetensors, GGUF | Ampliamente benchmarkeado, multilingue |
+| CodeLlama-7B | 6,7B | 16K | Llama 2 (uso comercial con restricciones) | safetensors, GGUF | Base de muchos fine-tunes de codigo |
+| DeepSeek-Coder-6.7B | 6,7B | 16K | DeepSeek License | safetensors, GGUF | Buen rendimiento en generacion de codigo |
+
+La comparacion de rendimiento en benchmarks entre estos modelos y haru-coder-8b-debugging-full queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; conviene contactar con el autor del modelo base antes de cualquier despliegue productivo.
-- Alcance idiomatico limitado: solo se declara ingles (`en`); no hay evidencia de soporte de castellano.
-- Sin datos de contexto: al desconocerse la longitud de contexto, no puede planificarse el uso en tareas que requieran ventanas largas.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay informacion sobre el proceso de alineacion que permita acotarlo.
-- Sin benchmarks publicados: no hay evidencia objetiva de calidad en tareas de codigo o depuracion.
-- Adopcion nula: el repositorio registra 0 descargas y 0 "likes", por lo que no existe validacion por parte de la comunidad.
-- Cuantizaciones estaticas: no se han publicado variantes ponderadas (imatrix), que en muchos casos ofrecen mejor relacion calidad/tamano.
-- Metadatos inconsistentes: la fecha de creacion del repositorio aparece como 2026-09-20, lo que conviene tratar con cautela como posible error de metadatos.
-- El modelo base es de un autor con escasa presencia publica ("harumori47"), sin documentacion tecnica disponible, lo que dificulta auditar su procedencia, datos de entrenamiento y posibles sesgos.
+- Licencia no declarada: no se especifica la licencia del modelo base ni de la cuantizacion, lo que impide confirmar si el uso comercial esta permitido. Es imprescindible contactar con el autor del modelo base (Rowa68) antes de usarlo en produccion.
+- Solo ingles: la etiqueta de idioma indica unicamente `en`; no hay evidencia de capacidades en castellano ni en otros idiomas.
+- Sin benchmarks: no existen datos publicados que permitan estimar la calidad del modelo en tareas de codigo o depuracion; cualquier evaluacion debe hacerse por cuenta propia.
+- Riesgo de alucinacion: como cualquier modelo de lenguaje de 8B sin documentacion de alineamiento, puede generar explicaciones de errores o parches de codigo plausibles pero incorrectos; requiere validacion con tests.
+- Cuantizaciones bajas: Q2_K y Q3_K degradan notablemente la calidad, segun las propias notas del autor (Q3_K_M marcada como "lower quality"); para uso serio se recomienda Q4_K_M o superior.
+- Sin cuantizaciones imatrix: el autor no ha generado variantes ponderadas, que suelen ofrecer mejor relacion calidad/tamano que las estaticas equivalentes.
+- Modelo derivado y poco validado: con 555 descargas y 0 likes, la trazabilidad y el soporte de la comunidad son limitados; el modelo base tampoco cuenta con documentacion publica detallada.
+- Fecha de creacion futura en los metadatos (2026-09-20): conviene verificar la integridad y procedencia de los archivos antes de desplegarlos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/haru-coder-8b-debugging-full-GGUF
-- Modelo base: https://huggingface.co/harumori47/haru-coder-8b-debugging-full
-- Pagina de resumen y descargas de mradermacher para este modelo: https://hf.tst.eu/model#haru-coder-8b-debugging-full-GGUF
-- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF de referencia (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Sitio de nethype GmbH: https://www.nethype.de/
+- Modelo base: https://huggingface.co/Rowa68/haru-coder-8b-debugging-full
+- Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#haru-coder-8b-debugging-full-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Empresa del autor: https://www.nethype.de/

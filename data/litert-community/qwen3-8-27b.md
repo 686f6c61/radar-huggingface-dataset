@@ -2,105 +2,104 @@
 
 ## Resumen
 
-Qwen3.8-27B en formato LiteRT-LM es una conversión comunitaria del modelo denso Qwen3.8-27B de Alibaba Qwen al formato `.litertlm` de Google, pensada para ejecución en dispositivo (on-device) y en el borde (edge) mediante el runtime LiteRT-LM. El repositorio lo mantiene el colectivo litert-community y deriva del checkpoint original `Qwen/Qwen3.8-27B`, que Qwen describe como un modelo denso multimodal (visión y vídeo) con control flexible de razonamiento. Esta conversión, sin embargo, contiene únicamente el decodificador de texto: no incluye la torre de visión, la entrada de vídeo ni la cabeza de predicción multi-token del checkpoint original.
+Qwen3.8-27B es un modelo de lenguaje denso de 27B parámetros desarrollado por Alibaba (familia Qwen), construido sobre la base arquitectónica de Qwen3.5. Se trata de un modelo nativo visión-lenguaje con control flexible de modo "thinking", presentado por el autor como la generación más capaz de la familia de modelos abiertos Qwen hasta la fecha. El repositorio analizado aquí no es el checkpoint original, sino una conversión comunitaria al formato `.litertlm` para el runtime LiteRT-LM de Google, orientada a ejecución on-device y en máquinas de clase desktop.
 
-La arquitectura es la híbrida de Qwen3.5 a escala 27B: 64 capas organizadas en 16 grupos, cada uno con tres capas de atención lineal GatedDeltaNet y una capa de atención completa con compuerta, todas con FFN densa. El modelo tiene 26.895.998.464 parámetros en esta carga de solo texto (frente a los 27.781.427.952 del release completo), tamaño oculto de 5.120, FFN de 17.408, 24 cabezas de atención con 4 cabezas KV de 256 dimensiones y un vocabulario de 248.320 tokens con embeddings no atados.
+La conversión, mantenida por el colectivo `litert-community`, exporta únicamente el decodificador de texto (26,9B parámetros); la entrada de imagen/vídeo y la cabeza de predicción multi-token no están incluidas en el export. Esto convierte al modelo en un generador de texto puro dentro del ecosistema LiteRT, pero conserva la arquitectura híbrida original de Qwen3.5, que combina capas de atención lineal GatedDeltaNet con capas de atención completa.
 
-Su relevancia actual radica en que permite ejecutar un modelo de 27B en máquinas de escritorio con GPU integrada o discreta de gama alta mediante cuantización mixta INT4, sin depender de servidores. El archivo publicado ocupa 15,38 GB y, según el autor, alcanza 175,5 tok/s en prefill y 18,2 tok/s en decodificación sobre una Mac Studio M4 Max. La limitación principal es que esta conversión solo funciona con el razonamiento desactivado: la plantilla de chat escribe un bloque `<think>` vacío y el bundle declara `supports_thinking: false`.
+La relevancia actual radica en su formato: un modelo de 27B cuantizado a INT4 con contexto dinámico de 32K que corre en GPU de Apple Silicon y CPU Linux mediante LiteRT-LM, con velocidades reportadas de ~940–970 tok/s en prefill y ~33–34 tok/s en decode sobre Metal en un Apple M5 Max. Es, por tanto, una pieza clave para despliegues locales de modelos de gran tamaño en hardware de consumo profesional.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 64 capas en 16 grupos de 3 capas GatedDeltaNet (atención lineal) + 1 capa de atención completa con compuerta; FFN densa |
-| Parametros totales | 26.895.998.464 (solo texto); el release completo declara 27.781.427.952 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No especificada de forma explícita; el archivo reserva un presupuesto de caché KV de 4.096 tokens para las 16 capas de atención completa |
-| Tipos de cuantizacion | Mixta INT4: int4 blockwise-128 (min-max) en capas lineales, int8 en `lm_head` y embeddings, proyecciones de compuerta/decaimiento GatedDeltaNet (`in_proj_a`/`in_proj_b`) en float; activaciones GPU en fp32 |
-| Idiomas soportados | No disponible (la model card no detalla la lista de idiomas) |
+| Arquitectura | Transformer híbrido: 64 capas en 16 grupos de 3 capas GatedDeltaNet (atención lineal) + 1 capa de atención completa con puerta; FFN denso en cada capa |
+| Parámetros totales | 26,9B (solo decodificador de texto exportado); modelo base Qwen3.8-27B |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens dinámicos (archivo `wi4b32_32k`); 4.096 tokens en archivos antiguos |
+| Tipos de cuantización | INT4 blockwise-32 simétrico (`dynamic_wi4b32_afp32`); INT4 blockwise-128 min-max + INT8 en lm_head/embedding + FP32 en proyecciones GatedDeltaNet (archivo mixed_int4) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM), un único archivo de 15.379.451.056 bytes (15,38 GB) |
+| Formato de pesos | `.litertlm` (LiteRT-LM); no se distribuyen safetensors ni GGUF en este repo |
+
+Detalles arquitectónicos adicionales: hidden size 5120, FFN de 17.408, 24 cabezas de atención con 4 KV heads de 256 dimensiones (rotary position en 64 de las 256 dimensiones), atención lineal con 16 cabezas query/key y 48 cabezas value de 128 dimensiones, vocabulario de 248.320 tokens con embeddings no atados (untied).
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura híbrida introducida en Qwen3.5: 64 capas agrupadas en 16 bloques, cada uno con tres capas de atención lineal GatedDeltaNet seguidas de una capa de atención completa con compuerta. Las capas lineales mantienen un estado convolucional y recurrente de tamaño constante, mientras que solo las 16 capas de atención completa acumulan una caché KV creciente (limitada a 4.096 tokens en este archivo). El tamaño oculto es 5.120, la FFN es de 17.408 y el vocabulario de 248.320 tokens usa embeddings no atados. La atención completa tiene 24 cabezas con 4 cabezas KV de 256 dimensiones (rotary position aplicado sobre 64 de esas 256 dimensiones); la atención lineal usa 16 cabezas de query/key y 48 cabezas de valor de 128 dimensiones.
+La arquitectura es la híbrida de Qwen3.5 a escala 27B: 16 grupos de cuatro capas, donde tres son GatedDeltaNet (atención lineal con estado recurrente de tamaño constante) y una es atención completa con puerta. Solo las 16 capas de atención completa mantienen una caché KV creciente (hasta 32.768 tokens en el export `wi4b32_32k`); las 48 capas lineales portan un estado convolucional y recurrente de tamaño fijo, lo que reduce drásticamente el coste de memoria de contexto largo frente a un transformer denso equivalente.
 
-El entrenamiento original lo realizó Qwen sobre el checkpoint Qwen3.8-27B; esta conversión no reentrena ni ajusta el modelo, solo transforma los pesos al formato LiteRT-LM mediante litert-torch (commit 115a1360) con el parche híbrido de Qwen3.5 de `hf-to-litertlm`. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO aplicadas por Qwen. El checkpoint original incluye una cabeza de predicción multi-token y capacidades multimodales que no se conservan en esta conversión. La innovación técnica destacable es la propia combinación de atención lineal y completa para reducir el coste de memoria de la caché KV en secuencias largas.
+No se dispone en la información proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF/DPO en el modelo base Qwen3.8-27B. El export a LiteRT-LM se realizó con el Converter V2 de `litert-torch`, con composites completos de GPU, embedder y pesos externalizados, y grafos `prefill_128`, `prefill_1024` y `decode`. La innovación técnica destacable del export es la combinación de cuantización INT4 blockwise-32 con contexto dinámico de 32K y soporte simultáneo de thinking y tool calling en el runtime LiteRT-LM ≥ 0.20.0.
 
 ## Capacidades
 
-- Generación de texto en modo conversacional, con razonamiento desactivado de forma obligatoria en este archivo.
-- Razonamiento y matemáticas: la model card reporta una puntuación de 97 en GSM8K (thinking off, 2.048 tokens de salida) en GPU de Mac, frente a 96 del modelo bf16 en transformers.
-- Soporte de function calling / tool calling: desde la actualización del 3 de noviembre de 2026, los metadatos incluyen `tool_call_config` y `supports_function_calling: true`, y LiteRT-LM 0.19.0 devuelve las llamadas como tool calls estructuradas.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Sin capacidades de visión ni vídeo: aunque el modelo base es nativo visión-lenguaje, este archivo solo contiene el decodificador de texto.
-- Sin modo de razonamiento (thinking): la plantilla no lee `enable_thinking` ni `reasoning_effort`; el bundle declara `supports_thinking: false`.
-- Sin cabeza de predicción multi-token en esta conversión.
+- Generación de texto y razonamiento con modo "thinking" activable y desactivable (el archivo `wi4b32_32k` habilita ambos; los archivos mixed_int4 solo soportan thinking off).
+- Tool calling / function calling estructurado, con `tool_call_config` y `supports_function_calling: true` en los metadatos del modelo (verificado con 3/3 prompts en LiteRT-LM 0.19.0 sobre CPU de Mac).
+- Razonamiento multi-paso y uso como agente, gracias al contexto de 32K y al soporte de llamadas a herramientas.
+- Capacidades multilingües: no disponibles en la información proporcionada (el modelo base Qwen suele ser multilingüe, pero no se confirma aquí).
+- Capacidades de visión y vídeo: presentes en el modelo base Qwen3.8-27B, pero **no exportadas** en este repositorio (solo decodificador de texto).
+- Recuperación de información en contexto largo (needle retrieval verificado con 2.7K tokens en Apple Silicon GPU).
+- Conversación multi-turno.
 
 ## Casos de uso
 
-- Asistente conversacional local en estación de trabajo: el modelo puede mantener diálogos multi-turno con un presupuesto de caché KV de 4.096 tokens para las capas de atención completa, adecuado para sesiones de asistencia en escritorio sin conexión a servicios en la nube.
-- Automatización de agentes con herramientas: gracias al soporte de `tool_call_config` en LiteRT-LM 0.19.0, puede integrarse en flujos que invocan APIs externas, consultas a bases de datos o ejecución de comandos, devolviendo llamadas estructuradas en lugar de texto plano.
-- Procesamiento de documentos y resumen en el borde: con 15,38 GB de pesos cuantizados, puede desplegarse en equipos de escritorio con GPU de gama alta para resumir, clasificar o extraer información de textos largos sin enviar datos a terceros.
-- Razonamiento matemático y resolución de problemas: la puntuación de 97 en GSM8K (thinking off) lo hace utilizable en tutores automáticos o verificadores de cálculos paso a paso en entornos educativos locales.
-- Generación de código en pipelines de desarrollo: puede integrarse en herramientas de CI/CD o asistentes de IDE que se ejecutan en la máquina del desarrollador, con la ventaja de no exponer el código a servicios externos.
-- Evaluación y prototipado de modelos en formato LiteRT-LM: sirve como banco de pruebas para desarrolladores que quieran medir el rendimiento de un modelo de 27B en hardware de escritorio antes de decidir un despliegue mayor.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse íntegramente en local, es adecuado para sectores regulados (sanidad, legal, finanzas) donde los datos no pueden salir del dispositivo.
+- **Asistente local en portátil o estación de trabajo Apple Silicon**: el archivo `wi4b32_32k` corre en GPU Metal con ~33–34 tok/s de decode, lo que permite un asistente conversacional interactivo sin conexión a la nube, con contexto de hasta 32K tokens para conversaciones largas o documentos extensos.
+- **Atención al cliente automatizada con contexto largo**: los 32.768 tokens de ventana dinámica permiten mantener historiales multi-turno extensos y adjuntar documentación de producto, con tool calling para consultar sistemas internos (estado de pedidos, CRM) mediante function calling estructurado.
+- **Agentes de automatización de tareas**: el soporte de tool calling y razonamiento multi-paso permite construir agentes que encadenen llamadas a APIs, consultas a bases de datos y acciones sobre ficheros, ejecutándose íntegramente en local para cumplir requisitos de privacidad.
+- **Procesamiento de documentos en el borde (edge)**: resumen, extracción de entidades y Q&A sobre contratos o informes de hasta decenas de miles de tokens, desplegado en equipos de sobremesa sin GPU dedicada de datacenter (verificado en CPU Linux con `--cache disk`).
+- **Generación de código en entornos air-gapped**: al ejecutarse con LiteRT-LM en local, puede integrarse en estaciones de desarrollo sin acceso a internet para autocompletado, explicación de código y generación de tests, manteniendo el código fuente dentro del perímetro de la organización.
+- **Prototipado e investigación en runtime LiteRT-LM**: sirve como banco de pruebas para medir latencia y throughput de modelos de 27B cuantizados en hardware de consumo, con métricas publicadas (prefill ~940–970 tok/s, decode ~33–34 tok/s en M5 Max; ~293 / 29,7 tok/s en WebGPU) que permiten comparar backends Metal frente a WebGPU.
+- **Despliegue en dispositivos con recursos limitados de memoria**: el peso de 15,17 GB en INT4 permite cargar el modelo en equipos con 24–32 GB de memoria unificada, algo inviable con el checkpoint en FP16/BF16.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son los reportados por el autor de la conversión y por Qwen (vendor-reported); no se han ejecutado de forma independiente en esta ficha.
+Datos reportados por el proveedor del modelo base (Qwen), no ejecutados por el conversor:
 
-| Benchmark | Resultado | Condiciones |
-|---|---|---|
-| GSM8K | 97 | Thinking off, 2.048 tokens de salida, GPU de Mac M4 Max (archivo LiteRT-LM) |
-| GSM8K | 96 | Thinking off, modelo bf16 en transformers (referencia) |
-| GPQA Diamond | 89,2 | Reportado por Qwen para el modelo original |
-| IFBench | 79,5 | Reportado por Qwen para el modelo original |
+| Benchmark | Qwen3.8-27B (reportado por Qwen) |
+|---|---|
+| GPQA Diamond | 89,2 |
+| IFBench | 79,5 |
 
-| Métrica de rendimiento | Valor | Condiciones |
+Rendimiento de inferencia del export LiteRT-LM (medido por el autor de la conversión):
+
+| Backend / hardware | Prefill | Decode |
 |---|---|---|
-| Prefill | 175,5 tok/s | 1.024 tokens, GPU de Mac Studio M4 Max |
-| Decodificación | 18,2 tok/s | GPU de Mac Studio M4 Max |
-| Tiempo total (1.024 prefill + 256 decode, contexto 2.048) | 19,87 s | GPU de Mac |
-| Tiempo total (mismas condiciones) | 92,74 s | CPU de Mac con caché de pesos |
+| Apple M5 Max GPU (Metal), 1024p/256d, 1K–32K contexto | ~940–970 tok/s | ~33–34 tok/s |
+| WebGPU (mismo hardware) | ~293 tok/s | ~29,7 tok/s |
+
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo `.litertlm` ocupa 15,38 GB; se necesita al menos esa cantidad de memoria unificada o VRAM, más overhead para activaciones y caché KV (presupuesto de 4.096 tokens en las 16 capas de atención completa).
-- GPU recomendadas: el autor solo ha medido en Mac Studio M4 Max (GPU integrada de Apple Silicon). No se han publicado mediciones en A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: sí, en teoría, en GPUs con 16 GB o más de VRAM (RTX 4080/4090, RTX 5080/5090) o en equipos Apple Silicon con memoria unificada de 16 GB o superior; no hay mediciones publicadas en estas plataformas.
-- Opciones de despliegue: runtime LiteRT-LM (versión 0.18.1 y 0.19.0 verificadas); no se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia y throughput: 19,87 s para 1.024 tokens de prefill más 256 de decodificación en GPU de Mac; 92,74 s en CPU de Mac. En decodificación sostenida, 18,2 tok/s en GPU.
+- **VRAM/memoria estimada**: el archivo recomendado pesa 15,17 GB; se necesita al menos esa cantidad de memoria unificada o VRAM más overhead del runtime y de la caché KV (32K tokens en 16 capas de atención completa). En la práctica, se recomienda 24–32 GB de memoria unificada en Apple Silicon o GPU con 24 GB+ de VRAM.
+- **GPU recomendadas**: Apple Silicon (M4 Max, M5 Max verificados) vía Metal; GPU de escritorio con soporte de composites LiteRT; WebGPU como backend alternativo verificado. No se especifican modelos NVIDIA/AMD concretos en la información disponible.
+- **¿Cabe en GPU de consumo?**: sí, en GPUs con 24 GB o más de VRAM o en equipos Apple Silicon con memoria unificada de 24–32 GB. No cabe en GPUs de 8–16 GB.
+- **Opciones de despliegue**: LiteRT-LM (`litert-lm`, `litert-lm-nightly` ≥ 0.20.0 para el archivo `wi4b32_32k`; 0.18.1–0.19.1 para el archivo mixed_int4), con soporte de CPU (`--cache disk`) y GPU (Metal, WebGPU). No se distribuyen pesos en GGUF, por lo que llama.cpp/Ollama no son aplicables directamente a estos ficheros.
+- **Latencia y throughput**: ver tabla de benchmarks; el prefill escala de 1K a 32K sin degradación reportada en Metal.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (LiteRT-LM, esta ficha) | 26,9B (solo texto) | Caché KV de 4.096 tokens | Apache 2.0 | `.litertlm` | Hugging Face, 177 descargas |
-| Qwen/Qwen3.8-27B (original) | 27,8B (multimodal) | No disponible | Apache 2.0 (según base) | safetensors (presumible) | Hugging Face |
-| Modelos densos de ~27B de la familia Qwen3.5 | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Qwen3.8-27B (LiteRT-LM, este repo) | 26,9B (solo texto) | 32K | `.litertlm` INT4 | Apache 2.0 | On-device, tool calling, thinking; sin visión en el export |
+| Qwen/Qwen3.8-27B (original) | 27B | No disponible | safetensors | Apache 2.0 (según repo base) | Visión-lenguaje completo, thinking; requiere runtime estándar (transformers/vLLM) |
+| Alternativas de ~27B en formato GGUF | ~27B | Variable | GGUF | Variable | No disponibles en la información proporcionada |
 
-No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, contexto, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Sin modo de razonamiento: la plantilla de chat escribe un bloque `<think>` vacío y el bundle declara `supports_thinking: false`; no se puede activar thinking en este archivo.
-- Sin capacidades multimodales: aunque el modelo base entiende imágenes y vídeo, esta conversión solo incluye el decodificador de texto.
-- Sin cabeza de predicción multi-token: la funcionalidad del checkpoint original no está disponible aquí.
-- Contexto limitado: la caché KV de las capas de atención completa se limita a 4.096 tokens, lo que restringe conversaciones y documentos largos.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual ni de tasas de alucinación para esta conversión.
-- Sesgos: no se dispone de información sobre sesgos conocidos del modelo base ni de esta conversión.
-- Idiomas: la model card no detalla la lista de idiomas soportados.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base y los datos de entrenamiento originales pueden tener condiciones adicionales no detalladas aquí.
-- Compatibilidad: verificada con LiteRT-LM 0.18.1 y 0.19.0; el comportamiento con otras versiones del runtime no está documentado.
-- Medición limitada: todos los datos de rendimiento provienen de una Mac Studio M4 Max; no hay mediciones en GPUs NVIDIA ni en otras plataformas.
-- Conversión comunitaria: no es un release oficial de Qwen; la responsabilidad del mantenimiento recae en litert-community.
+- **Solo texto**: el export no incluye la torre de visión ni la cabeza de predicción multi-token del modelo base; no puede procesar imágenes ni vídeo a pesar de que Qwen3.8-27B sea un modelo visión-lenguaje nativo.
+- **Dependencia de versión del runtime**: el archivo recomendado exige LiteRT-LM ≥ 0.20.0 (nightly, build desde `main` o estable futura). Los archivos mixed_int4 tienen contexto de solo 4K y thinking desactivado.
+- **Riesgo de alucinación**: inherente a los modelos generativos; no se documentan mitigaciones específicas en la información disponible.
+- **Sesgos**: no se documentan sesgos conocidos en la información proporcionada; el modelo base puede heredar sesgos de sus datos de entrenamiento, no detallados aquí.
+- **Idiomas**: no se especifican los idiomas soportados; el rendimiento en castellano no está verificado.
+- **Licencia**: Apache 2.0 permite uso comercial, pero debe verificarse la licencia del checkpoint base Qwen3.8-27B y las condiciones del runtime LiteRT-LM para producción.
+- **Formato propietario del runtime**: los pesos `.litertlm` no son portables a otros runtimes sin reconversión; la comunidad que mantiene el repo es independiente de Qwen y de Google.
+- **Benchmarks del proveedor**: los resultados de GPQA Diamond e IFBench son reportados por Qwen y no han sido verificados de forma independiente en este export.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen3.8-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Configuración de metadatos Qwen3.5 en LiteRT-LM v0.19.0: https://github.com/google-ai-edge/LiteRT-LM/blob/v0.19.0/models/qwen3_5/LlmMetadataProto.pbtext
-- Herramienta de conversión hf-to-litertlm: https://github.com/john-rocky/hf-to-litertlm
+- Configuración de tool calling Qwen3.5 en LiteRT-LM v0.19.0: https://github.com/google-ai-edge/LiteRT-LM/blob/v0.19.0/models/qwen3_5/LlmMetadataProto.pbtext
+- Conversor litert-torch (commit usado en el export GPU): https://github.com/google-ai-edge/litert-torch/commit/d600176b2e29bcc900a7e193f054ab3d6c3c747e

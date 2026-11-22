@@ -5,7 +5,7 @@
   "author": "RabbitDaisuke",
   "url": "https://huggingface.co/RabbitDaisuke/tsukuyomichan-omnivoice-full-finetune-onnx",
   "created_at": "2026-08-16T02:22:08.000Z",
-  "updated_at": "2026-08-17T00:40:21.000Z",
+  "updated_at": "2026-11-20T05:41:27.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

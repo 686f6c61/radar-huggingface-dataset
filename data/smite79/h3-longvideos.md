@@ -2,79 +2,99 @@
 
 ## Resumen
 
-H3-LongVideos es un paquete de nodos personalizados para ComfyUI, desarrollado por Smite79, que permite generar vídeos largos y continuos de aproximadamente dos minutos de duración a partir de un único prompt de texto, utilizando el modelo de generación de vídeo MiniMax-H3 como motor subyacente. El problema que resuelve es la limitación inherente de H3, que solo genera secuencias de hasta 362 fotogramas (unos 15 segundos), dividiendo automáticamente el prompt en planos o shots, encadenándolos entre sí y manteniendo la coherencia de personajes, vestuario y audio a lo largo de toda la secuencia.
+H3-Longvideos es un nodo personalizado para ComfyUI desarrollado por el usuario Smite79 que extiende las capacidades del modelo generativo MiniMax-H3 (de MiniMaxAI). Su funcion principal es superar la limitacion de duracion del modelo base, que genera como maximo unos 15 segundos de video por pasada, permitiendo crear escenas largas a partir de un unico prompt estructurado en "beats" narrativos. Cada beat se renderiza como un plano independiente y luego se unen en un unico video con una banda sonora coherente.
 
-El paquete se distribuye bajo licencia MIT, está escrito íntegramente en Python (solo usa la biblioteca estándar y el núcleo de ComfyUI) y no requiere dependencias externas adicionales. Incluye tres nodos: el principal "H3 Long Videos V1", un nodo auxiliar para calcular la duración de cada plano y un inspector de modelos que reporta la precisión del checkpoint (BF16, FP8, INT8, NVFP4, MXFP8). Es relevante porque simplifica enormemente el flujo de trabajo para crear vídeos narrativos largos con IA, un campo donde la consistencia entre tomas es un desafío técnico importante.
+El nodo anade capas de planificacion y consistencia que el modelo base no ofrece de forma nativa: mantiene la identidad de personajes, ropa, poses y objetos entre planos, sincroniza labialmente cada linea de dialogo con su hablante y realiza un emparejamiento de color, contraste y nitidez entre planos para evitar derivas visuales. Todo ello se orquesta dentro del ecosistema ComfyUI, con soporte para LoRAs de velocidad, Hyperflow, FastH3 y el checkpoint HyperFlow H3 Flash en INT8.
 
-## Especificaciones técnicas
+Es relevante ahora porque demuestra como la comunidad construye capas de orquestacion sobre modelos de video generativo con audio sincronizado, resolviendo uno de los cuellos de botella practicos (la duracion limitada por pasada) sin necesidad de reentrenar el modelo subyacente. El repositorio tiene 587 descargas y 140 likes, lo que indica interes activo, aunque el propio autor lo describe como "constant work in progress".
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Paquete de nodos ComfyUI que orquesta MiniMax-H3 (difusión + Qwen3-VL text encoder + VAE de vídeo y audio) |
-| Parametros totales | no disponible (depende del checkpoint de MiniMax-H3 utilizado) |
+| Arquitectura | Nodo de orquestacion para ComfyUI sobre el modelo MiniMax-H3 (arquitectura del modelo base no disponible) |
+| Parametros totales | no disponible |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (la generación se limita a ~2 minutos de vídeo, dividido en shots de ~15 s) |
-| Tipos de cuantizacion | Detecta y reporta precisión del checkpoint: BF16, FP8, INT8, NVFP4, MXFP8 (vía nodo H3 Model Inspector) |
-| Idiomas soportados | Inglés (según metadatos de Hugging Face) |
-| Licencia | MIT |
-| Formato de pesos | no aplica (es código Python; los pesos son los de MiniMax-H3 cargados por los loaders estándar de ComfyUI) |
+| Longitud de contexto | no disponible (el modelo base renderiza ~15 segundos de video por pasada) |
+| Tipos de cuantizacion | no disponible (se menciona un checkpoint INT8: HyperFlow H3 Flash) |
+| Idiomas soportados | en |
+| Licencia | h3-longvideos-no-redistribution (licencia propia, "other") |
+| Formato de pesos | no disponible (el repo tiene 0.0 GB, indica que no aloja pesos) |
 
 ## Arquitectura y entrenamiento
 
-H3-LongVideos no es un modelo entrenado, sino un conjunto de nodos de ComfyUI que automatiza el proceso de generación de vídeo largo con MiniMax-H3. El flujo de trabajo toma un prompt de texto, lo divide en párrafos que corresponden a planos individuales, y encadena cada generación usando el último fotograma del plano anterior como condición inicial para el siguiente. Esto permite superar el límite de 362 fotogramas de una sola generación.
+H3-Longvideos no es un modelo entrenado, sino un nodo de ComfyUI que orquesta el modelo MiniMax-H3. Su logica se divide en cinco fases: planificacion (cada parrafo del prompt es un beat que se convierte en un plano de duracion real, con un minimo de 5.2 segundos y posibilidad de extenderse a `shot_seconds`), escritura (cada plano recibe el texto de escena, personajes y beat, mas notas de continuidad de planos anteriores), renderizado (cada plano arranca en el ultimo fotograma del anterior y recibe las imagenes de referencia de sus personajes), sonido (sincronizacion labial por linea hablada y una pasada audio-only para tramos sin dialogo) y union (emparejamiento de color, contraste y nitidez entre planos, con fondo estatico heredado).
 
-El paquete implementa varias capas de lógica para mantener la coherencia: un canal mutable de estado de vestuario que permite que las prendas se quiten o se pongan según lo que dicta el texto; un control de duplicación que evita que un personaje aparezca dos veces cuando se le menciona más de una vez; y un sistema de silenciamiento de audio para planos sin diálogo, evitando que las bocas se muevan generando sonidos incoherentes. Además, gestiona la memoria de vídeo (VRAM) para evitar quedarse sin memoria en cadenas largas de planos.
-
-No hay datos sobre entrenamiento, ya que el paquete no realiza ningún tipo de ajuste de pesos. Todo el comportamiento se basa en la manipulación de prompts y en la gestión del proceso de muestreo de MiniMax-H3.
+El nodo incorpora un sistema de etiquetas de control (`hold`, `release`, `remove`, `wear`, `lift`, `tear`, `mark`, `unmark`, `exit`) que instruyen explicitamente al pipeline sobre cambios de vestuario, objetos o marcas en los personajes, evitando que el modelo los infiera libremente. Tambien soporta `cut` para iniciar un plano sin continuidad de fotograma, `seconds:` para fijar duracion y `character_memory` para definir personajes con referencias visuales (`<Picture 1>` a `<Picture 4>`). Se integra con `MiniMaxH3PDDAccApply` para aceleracion PDD, detecta automaticamente LoRAs de velocidad, Hyperflow y FastH3, y puede usar `comfyui_controlnet_aux` con DWPose para recortar referencias a cara y pelo. No se dispone de informacion sobre datos de entrenamiento, tokens o tecnicas de alineacion del modelo base.
 
 ## Capacidades
 
-- Generación de vídeo largo (hasta ~2 minutos) a partir de un prompt de texto estructurado en párrafos, donde cada párrafo define un plano.
-- Encadenamiento automático de planos, usando el último fotograma de cada plano como referencia para el siguiente.
-- Mantenimiento de consistencia de personajes: evita duplicaciones, gestiona cambios de vestuario (incluyendo eliminación de prendas) y respeta las salidas de escena.
-- Control de audio: silencia planos sin diálogo y mantiene coherencia de audio en planos con diálogo.
-- Soporte para definir personajes mediante un bloque `character_memory` con atributos (género, edad, apariencia, ropa).
-- Modo `plan_only` que permite previsualizar la división en planos, duración total y número de shots sin necesidad de renderizar.
-- Integración opcional con upscaling mediante RTX Video Super Resolution o modelos de upscaling (Real-ESRGAN, UltraSharp, etc.), con fallback a Lanczos.
-- Previsualización en vivo durante el muestreo mediante un decodificador aproximado opcional (`taeh3`).
+- Generacion de video texto-a-video de larga duracion mediante composicion de planos, superando el limite de ~15 segundos por pasada del modelo base.
+- Generacion de audio sincronizado con el video, incluyendo sincronizacion labial por linea de dialogo.
+- Consistencia de personajes entre planos: identidad, ropa, poses y objetos se mantienen estables.
+- Control explicito de vestuario y objetos mediante etiquetas (`wear`, `remove`, `tear`, `hold`, `release`, `lift`).
+- Control de marcas en la piel con `mark` y `unmark`.
+- Gestion de entradas y salidas de personajes en escena con `exit`.
+- Planificacion narrativa por beats a partir de un prompt en texto estructurado.
+- Soporte de imagenes de referencia por personaje (hasta 4) y primer fotograma opcional.
+- Integracion con aceleradores: PDD Acc, LoRAs de velocidad, Hyperflow, FastH3 y HyperFlow H3 Flash (INT8).
+- Soporte de programaciones de muestreo personalizadas mediante `sigmas`.
+- Salidas de `images`, `audio`, `info` y `script` para inspeccion del plan generado.
+- Capacidades multilingues limitadas al ingles segun los metadatos del repositorio.
 
 ## Casos de uso
 
-- Creación de cortometrajes narrativos: un guionista puede escribir un guion en párrafos y obtener un vídeo completo con diálogos y coherencia visual, sin necesidad de editar manualmente cada plano.
-- Producción de vídeos explicativos o tutoriales: se puede describir una secuencia de acciones y el paquete genera un vídeo continuo con narración y audio sincronizado.
-- Generación de contenido para redes sociales: vídeos de hasta dos minutos para plataformas como YouTube Shorts o Instagram Reels, con un único prompt.
-- Prototipado de escenas para cine o animación: los directores pueden visualizar rápidamente cómo se vería una secuencia concreta, manteniendo la continuidad de personajes y vestuario.
-- Automatización de vídeos de demostración de productos: describir un producto y sus características en varios planos, obteniendo un vídeo promocional sin intervención manual.
-- Generación de vídeos educativos con personajes consistentes: para cursos online o materiales didácticos, donde un personaje guía explica conceptos en diferentes escenas.
-- Pruebas de concepto para videojuegos: generar cinemáticas o secuencias de historia con coherencia visual para validar ideas antes de la producción final.
+- Prototipado de cortometrajes narrativos: un guion dividido en beats permite generar una escena completa de varios minutos con dialogo sincronizado, usando `character_memory` para fijar el reparto y `exit` para gestionar entradas y salidas.
+- Previsualizacion de storyboards animados: directores y guionistas pueden convertir un tratamiento en texto en un video con planos encadenados y sonido, antes de comprometer recursos de produccion.
+- Generacion de contenido para redes sociales con personajes recurrentes: la consistencia entre planos y el uso de imagenes de referencia permite mantener un mismo personaje a lo largo de episodios seriados.
+- Creacion de demos de doblaje y lip-sync: cada linea entre comillas se sincroniza con su hablante, util para probar guiones dialogados y evaluar el ajuste labial antes de doblar.
+- Escenas con continuidad de vestuario y atrezzo: las etiquetas `wear`, `remove`, `hold` y `mark` permiten controlar cambios de ropa, objetos en mano o marcas cutaneas de forma determinista entre planos.
+- Iteracion rapida en pipelines de investigacion sobre video generativo: el nodo expone `sigmas`, integra aceleradores y permite comparar configuraciones (steps, LoRAs, PDD) dentro de ComfyUI sin escribir codigo adicional.
+- Generacion de video con audio para entornos ComfyUI existentes: se integra con `UNETLoader`, `CLIPLoader`, `VAELoader` y `Create Video`, lo que facilita incorporarlo a flujos de trabajo ya montados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paquete no incluye métricas de rendimiento ni comparativas con otras soluciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- ComfyUI 0.30 o superior con soporte nativo de MiniMax-H3.
-- GPU con VRAM suficiente para cargar el checkpoint de MiniMax-H3. La cantidad exacta no se especifica en la documentación del paquete; dependerá de la precisión del checkpoint (BF16, FP8, etc.) y de la resolución de generación. El nodo "H3 Model Inspector" puede ayudar a determinar si la GPU soporta nativamente la precisión del checkpoint.
-- No requiere dependencias adicionales ni paquetes de terceros; solo Python estándar y el núcleo de ComfyUI.
-- Opciones de despliegue: el paquete se ejecuta dentro de ComfyUI, por lo que el despliegue se limita a un entorno con ComfyUI instalado. No se mencionan integraciones con vLLM, llama.cpp u otros motores de inferencia.
-- La latencia y el throughput dependen directamente del rendimiento de MiniMax-H3 y de la GPU utilizada; no se proporcionan datos específicos en la documentación.
+- VRAM estimada para inferencia: no disponible. Depende del checkpoint de MiniMax-H3 utilizado, del VAE de video completo, del VAE de audio y de los aceleradores opcionales.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no disponible. El uso de un VAE de video completo y un VAE de audio separado sugiere requisitos de VRAM significativos, pero no se especifican cifras.
+- Opciones de despliegue: ComfyUI con soporte nativo de MiniMax-H3; el nodo se instala copiando la carpeta en `ComfyUI/custom_nodes/` y reiniciando el servidor. Requiere `UNETLoader`, `CLIPLoader` (tipo `minimax`), `VAELoader` para video y audio, y nodos de video (`Create Video`, `Save Video`).
+- Aceleradores compatibles: `MiniMaxH3PDDAccApply`, LoRAs de velocidad, Hyperflow, FastH3 y HyperFlow H3 Flash (INT8, cargable con Load Diffusion Model de ComfyUI, con rejilla de 4, 6 u 8 pasos).
+- Dependencia opcional: `comfyui_controlnet_aux` con `yolox_l.torchscript.pt` y `dw-ll_ucoco_384_bs5.torchscript.pt` para recorte de referencias a cara y pelo.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. H3-LongVideos es un paquete de nodos que complementa a MiniMax-H3, no un modelo independiente. No existen alternativas equivalentes documentadas en la información proporcionada. Se podría comparar con otros flujos de generación de vídeo largo, pero no hay datos suficientes para establecer una comparativa rigurosa.
+| Modelo | Tipo | Duracion por pasada | Audio sincronizado | Consistencia entre planos | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| H3-Longvideos (este) | Nodo de orquestacion sobre MiniMax-H3 | Multiples planos encadenados | Si, lip-sync por linea | Si, via referencias y notas de continuidad | h3-longvideos-no-redistribution | Hugging Face (repo de nodo) |
+| MiniMax-H3 (base) | Modelo generativo de video | ~15 segundos | Si (audio nativo) | No documentada en la informacion disponible | no disponible | Hugging Face (MiniMaxAI) |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Depende completamente de MiniMax-H3: el paquete no genera vídeo por sí mismo, sino que orquesta el modelo subyacente. Si MiniMax-H3 no está disponible o no funciona, el paquete no tiene utilidad.
-- La duración máxima está limitada a ~2 minutos, y cada plano individual está limitado a ~15 segundos (362 fotogramas). Vídeos más largos requerirían múltiples ejecuciones o edición externa.
-- El idioma de los prompts y de la documentación es inglés; no se garantiza soporte multilingüe.
-- Aunque el paquete gestiona la VRAM para cadenas largas, es posible que en GPUs con poca memoria falle en secuencias de muchos planos. El modo `plan_only` ayuda a prever esto antes de renderizar.
-- La consistencia de personajes y vestuario depende de la calidad de los prompts y de la capacidad de MiniMax-H3 para seguir instrucciones. El paquete mitiga problemas comunes, pero no los elimina por completo.
-- El paquete es nuevo (creado en agosto de 2026) y no tiene descargas ni valoraciones, por lo que su estabilidad en producción no está probada.
-- Licencia MIT permite uso comercial, pero los modelos subyacentes (MiniMax-H3, Qwen3-VL) pueden tener sus propias licencias que deben verificarse por separado.
+- El autor declara explicitamente que el nodo es "constant work in progress"; pueden aparecer fallos y funciones rotas entre versiones, y recomienda actualizar los flujos de trabajo tras cada cambio.
+- La licencia `h3-longvideos-no-redistribution` prohibe la redistribucion; debe revisarse el archivo `LICENSE` antes de cualquier uso comercial o de redistribucion de derivados.
+- El repositorio tiene un tamano de 0.0 GB, por lo que no aloja pesos: el usuario debe obtener el modelo base MiniMax-H3 y los VAE por separado.
+- El idioma soportado declarado es unicamente ingles (`en`), lo que limita prompts y dialogos en otros idiomas.
+- El tag `not-for-all-audiences` indica que el modelo base y los flujos asociados pueden generar contenido para adultos; no es apto para entornos sin moderacion.
+- Riesgo de alucinacion y de deriva visual entre planos: aunque el nodo aplica emparejamiento de color, contraste y nitidez, no se documenta una garantia de consistencia perfecta en escenas largas o con muchos personajes.
+- La sincronizacion labial depende de la calidad del modelo base y de la pasada de audio; con menos de 6 pasos de muestreo, el nodo usa una programacion mas fina para el audio, salvo que `foley_resolution` este desactivado.
+- Se requiere el VAE de video completo; un VAE solo-decoder no puede iniciar un plano en el ultimo fotograma, lo que rompe la continuidad.
+- El nodo depende de ComfyUI con soporte nativo de MiniMax-H3; versiones antiguas del nodo requieren recrear el nodo (`Fix node (recreate)`) y reconfigurar los valores.
+- No se dispone de informacion sobre sesgos del modelo base ni sobre evaluaciones de seguridad.
+- El autor menciona una lista negra contra RealRebelAI por apropiacion de trabajo; es un aviso de gobernanza del proyecto, no una limitacion tecnica.
 
 ## Enlaces
 
-- [Hugging Face - Smite79/H3-Longvideos](https://huggingface.co/Smite79/H3-Longvideos)
-- [Nvidia_RTX_Nodes_ComfyUI (integración opcional)](https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI)
+- Repositorio en Hugging Face: https://huggingface.co/Smite79/H3-Longvideos
+- Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelos hibridos fl2va/ref2va recomendados: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models
+- Apoyo al autor (Ko-fi): https://ko-fi.com/smite79
+- ComfyUI: no disponible en la informacion proporcionada
+- Paper o blog oficial de MiniMax-H3: no disponible en la informacion proporcionada

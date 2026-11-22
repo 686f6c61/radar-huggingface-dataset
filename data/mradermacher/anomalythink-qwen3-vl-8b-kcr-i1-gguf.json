@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Filme und Serien buchen, kaufen und leihen - Prime Video",
-      "url": "https://www.primevideo.com/-/de/store",
-      "snippet": "Tauche bei Prime Video in eine Welt voller Unterhaltung ein. Du kannst die beliebtesten und neuesten Videos buchen, kaufen oder …"
-    },
-    {
-      "title": "Prime Video: Filme, Serien, Sport und Live-TV ansehen",
-      "url": "https://www.amazon.de/gp/video/storefront",
-      "snippet": "Streame im Rahmen deiner Prime-Mitgliedschaft beliebte Filme, Serien, Sport und Live-TV. Mit Zusatzkanälen hast du sogar Zugriff …"
-    },
-    {
-      "title": "The Grand Tour - Welcome to Prime Video",
-      "url": "https://www.primevideo.com/",
-      "snippet": "Enjoy exclusive Amazon Originals as well as popular movies and TV shows. Watch anytime, anywhere. Start your free trial."
-    },
-    {
-      "title": "Prime Video – Apps bei Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient&hl=de",
-      "snippet": "Amazon Video ist in über 200 Ländern weltweit verfügbar. Videos können über die mobile Datenverbindung heruntergeladen werden."
-    },
-    {
-      "title": "Amazon.de: Amazon Prime",
-      "url": "https://www.amazon.de/amazonprime",
-      "snippet": "Prime Video Als Prime-Mitglied kannst du exklusive Amazon Originals, Tausende beliebter Filme und Serien, sowie das Dienstags …"
-    }
-  ]
+  "sources": []
 }

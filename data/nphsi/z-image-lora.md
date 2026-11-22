@@ -2,88 +2,88 @@
 
 ## Resumen
 
-Z-Image-Lora es una colección de adaptadores LoRA para el modelo de difusión texto-a-imagen Tongyi-MAI/Z-Image y su variante acelerada Z-Image-Turbo, publicada por el usuario nphSi en Hugging Face. El repositorio no contiene un modelo generativo completo, sino un conjunto masivo de LoRA de personajes (actores, actrices, celebridades y figuras públicas) que se aplican sobre el modelo base para reproducir rostros y estilos concretos mediante palabras de activación del tipo `vrtlxxxx`.
+Z-Image-Lora es un repositorio de adaptadores LoRA para el modelo de generación de imágenes Tongyi-MAI/Z-Image, publicado por el usuario nphSi en Hugging Face. No se trata de un modelo fundacional, sino de una colección masiva de adaptadores de bajo rango (LoRA) entrenados para inyectar en el modelo base el conocimiento de identidades concretas: principalmente celebridades, actrices, actores y personajes ficticios, cada uno identificado por un token de activación del tipo `vrtlxxxx`. El repositorio acumula más de 348.000 descargas y un tamaño de 126,6 GB, lo que refleja la escala del catálogo de LoRAs incluido.
 
-El propósito del proyecto es ofrecer un índice descargable y previsualizable de LoRA de personajes ("Lookalike-LoRA-Index"), con disparadores normalizados que el autor ha definido a partir de su propio proceso de etiquetado (captioning). Esto resuelve el problema de la reproducibilidad en la generación de retratos fotorrealistas: sin un disparador correcto, el modelo base no asocia el nombre con el rostro, y el autor documenta explícitamente que términos genéricos como "woman" o "1girl" no funcionan con sus captions.
+El modelo resuelve un problema práctico muy específico en el ámbito de la generación de imágenes: conseguir que un modelo de difusión text-to-image genere de forma consistente rostros de personas concretas sin necesidad de reentrenar el modelo completo. Para ello se apoya en Z-Image, el modelo base de Tongyi-MAI (Alibaba), y en su variante Turbo, y se distribuye en formato compatible con la librería `diffusers` mediante pesos `safetensors`. La licencia declarada es Apache 2.0.
 
-La relevancia actual del repositorio radica en su volumen de descargas (más de 339.000) y en su actualización continuada a lo largo de 2026, lo que lo convierte en uno de los catálogos de LoRA de personajes más consultados del ecosistema Z-Image. La licencia declarada es Apache 2.0, aunque esta se aplica a los adaptadores, no al modelo base, cuyos términos deben verificarse por separado.
+La relevancia actual del repositorio es doble. Por un lado, demuestra el patrón de uso de LoRAs como mecanismo de personalización ligera sobre modelos de difusión modernos. Por otro lado, plantea de forma explícita los debates sobre derechos de imagen, consentimiento y uso de la identidad de personas reales en sistemas generativos, ya que el catálogo se centra en retratos de figuras públicas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptadores de bajo rango) sobre modelo de difusión texto-a-imagen Z-Image |
-| Parámetros totales | no disponible (el repo ocupa 126,0 GB y agrupa múltiples LoRA) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
-| Tipos de cuantización | no disponible para los LoRA; las previsualizaciones usan Z-Image-Turbo en Q8 |
+| Arquitectura | Adaptadores LoRA sobre un modelo de difusión text-to-image (base: Tongyi-MAI/Z-Image y Z-Image-Turbo) |
+| Parametros totales | no disponible (depende de cada LoRA individual; el repo completo ocupa 126,6 GB) |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no disponible (no aplica a modelos de difusión; el "contexto" es la longitud del prompt de texto) |
+| Tipos de cuantizacion | no disponible como listado formal; la model card menciona el uso del modelo base en formato Q8 (ZI Turbo Q8) |
 | Idiomas soportados | no disponible (los prompts de ejemplo están en inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería diffusers) |
+| Formato de pesos | safetensors (compatible con diffusers) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de adaptadores LoRA (Low-Rank Adaptation) entrenados sobre el modelo de difusión Z-Image de Tongyi-MAI. No se dispone de información sobre el rango, el alpha, el número de pasos de entrenamiento ni el tamaño del dataset utilizado para cada adaptador. El autor indica que su método de etiquetado (captioning) es determinante: cada personaje requiere un disparador `vrtlxxxx` y el nombre real no debe usarse si el conocimiento interno del modelo base está censurado o es confuso. Los LoRA con múltiples disparadores (`vrtlxx`, `vrtlyy`) se combinan mediante el prefijo `vrtlMain`.
+El repositorio no contiene un modelo de difusión completo, sino un conjunto de adaptadores LoRA que se cargan sobre el modelo base Tongyi-MAI/Z-Image o su variante Turbo. Los LoRA son matrices de bajo rango que se insertan en las capas del modelo base y desplazan sus pesos para especializarlo en un concepto concreto; en este caso, la apariencia facial y corporal de personas identificadas por nombre. El pipeline declarado es `text-to-image` y la integración es mediante la librería `diffusers`.
 
-Las previsualizaciones del repositorio se generaron con Z-Image-Turbo en cuantización Q8, sampler Euler, scheduler beta, 9 pasos, CFG 1 y AuraFlow 6, lo que aporta una referencia concreta de configuración de inferencia para reproducir resultados.
+No se dispone de información sobre el número de tokens o imágenes de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de regularización o de refuerzo. La model card indica únicamente detalles de inferencia: los previews se generaron con ZI Turbo en cuantización Q8, sampler Euler, scheduler beta, 9 pasos, CFG 1 y el modelo de text encoder auraflow con escala 6. También se documenta una convención de prompts muy marcada: es obligatorio incluir el nombre completo junto al token de activación `vrtlxxxx`, y no funcionan prompts genéricos como "woman" o "1girl" debido al método de captioning empleado por el autor.
 
 ## Capacidades
 
-- Generación de retratos fotorrealistas de personajes concretos mediante LoRA de identidad.
-- Control fino de composición y encuadre (primer plano, plano medio, cuerpo entero) mediante prompts descriptivos.
-- Reproducción de rasgos faciales consistentes entre generaciones al usar el mismo disparador.
-- Combinación de varios disparadores para mezclar identidades o estilos.
-- Integración con el pipeline `text-to-image` de diffusers.
-- Compatibilidad con Z-Image y Z-Image-Turbo (variante acelerada de pocos pasos).
-- No soporta tool calling, agentes ni razonamiento multi-paso: es un modelo de imagen.
+- Generación de retratos fotorrealistas de identidades concretas mediante el modelo base Z-Image más el LoRA correspondiente.
+- Control fino de la escena mediante prompt de texto: vestimenta, peinado, encuadre, fondo y expresión, como se observa en el prompt de ejemplo de la model card.
+- Soporte de tokens de activación múltiples: algunos LoRA combinan varios triggers (`vrtlxx`, `vrtlyy`) y el token `vrtlMain` agrega todos ellos.
+- Compatibilidad con `diffusers` y con el ecosistema de pesos `safetensors`.
+- Funcionamiento tanto sobre Z-Image como sobre Z-Image-Turbo, lo que permite elegir entre calidad y velocidad de muestreo.
+- No incluye capacidades de texto, razonamiento, código, tool calling ni agentes; es exclusivamente un componente de generación de imagen.
 
 ## Casos de uso
 
-- **Previsualización de catálogo de LoRA**: el índice enlazado permite descargar, previsualizar y consultar la ficha de cada adaptador antes de integrarlo, lo que agiliza la selección en flujos de trabajo de generación de retratos.
-- **Generación de retratos para pruebas de concepto**: usar un disparador `vrtlxxxx` con un prompt de encuadre controlado permite obtener variaciones consistentes de un mismo rostro para maquetas y prototipos visuales.
-- **Investigación sobre sesgos en modelos de difusión**: el repositorio reúne cientos de identidades etiquetadas de forma homogénea, lo que facilita estudios comparativos sobre representación y sesgo demográfico.
-- **Evaluación de técnicas de captioning**: al documentar el autor su método de etiquetado y sus límites ("woman" no funciona), sirve como caso de estudio reproducible sobre cómo los captions afectan a la composición y la pose.
-- **Pipelines de ilustración asistida**: integrado en diffusers, el LoRA puede cargarse junto al modelo base para generar retratos de referencia que un ilustrador refine después.
-- **Docencia y divulgación**: los ejemplos de prompt y los ajustes de inferencia publicados (Euler, beta, 9 pasos, CFG 1) sirven como material didáctico sobre parametrización de modelos de difusión.
+- Producción de retratos de personajes para prototipos creativos: un estudio puede generar variaciones de vestuario y encuadre de una identidad concreta usando el token `vrtl` correspondiente, sin reentrenar el modelo base.
+- Previsualización de casting y moodboards: equipos de dirección de arte pueden explorar cómo encajaría una figura pública en una escena antes de contratar producción real, siempre que cuenten con los derechos de imagen necesarios.
+- Ilustración de contenido editorial ficticio: creación de personajes inspirados en arquetipos con apariencia consistente entre viñetas o entregas.
+- Investigación sobre personalización de modelos de difusión: el repositorio sirve como corpus de estudio de cómo los LoRA codifican identidades y cómo responden a distintos prompts y samplers.
+- Pruebas de pipelines de inferencia: útil para validar configuraciones de `diffusers`, cuantización Q8, samplers Euler/beta y pasos reducidos (9 pasos, CFG 1) en entornos de producción.
+- Generación de avatares y material promocional para proyectos de ficción, con la advertencia legal de no emplear identidades reales sin consentimiento.
+- Docencia y demostraciones sobre el funcionamiento de LoRA en modelos de difusión, comparando el resultado con y sin el adaptador cargado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas cuantitativas como FID, CLIP score ni comparaciones numéricas con otros adaptadores. Solo se documentan parámetros de inferencia cualitativos (sampler, pasos, CFG) empleados para generar las imágenes de preview.
 
 ## Requisitos de hardware
 
-- El repositorio completo ocupa 126,0 GB, por lo que el almacenamiento necesario para clonarlo es elevado; conviene descargar solo los adaptadores concretos.
-- Cada LoRA individual es de tamaño reducido (típicamente decenas o cientos de MB), pero no se dispone del desglose por fichero.
-- El modelo base Z-Image no se distribuye en este repositorio; su VRAM depende de la cuantización elegida (las previsualizaciones usan Q8).
-- No se dispone de datos de VRAM, GPU recomendadas, latencia ni throughput para este repositorio.
-- Despliegue mediante la librería `diffusers`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión de imagen en este contexto).
+- El repositorio completo ocupa 126,6 GB, pero cada LoRA individual es mucho más pequeño; el requisito real depende del modelo base Z-Image, no del adaptador.
+- Para inferencia con el modelo base en precisión completa se requiere una GPU de gran VRAM; no se dispone de cifras oficiales en la información proporcionada.
+- La model card menciona el uso de ZI Turbo en cuantización Q8, lo que reduce los requisitos y permite ejecución en GPUs de consumo alto (gama RTX xx90 o similar), aunque no se confirman cifras exactas.
+- Despliegue recomendado mediante `diffusers` con pesos `safetensors`; no se documentan integraciones específicas con vLLM, llama.cpp ni Ollama, que no aplican a modelos de difusión.
+- No se dispone de datos de latencia ni throughput medidos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| nphSi/Z-Image-Lora | Colección de LoRA de personajes | Tongyi-MAI/Z-Image y Z-Image-Turbo | Apache 2.0 | Hugging Face, diffusers |
-| Tongyi-MAI/Z-Image | Modelo de difusión texto-a-imagen completo | — | no disponible en la información | Hugging Face |
-| Tongyi-MAI/Z-Image-Turbo | Variante acelerada del modelo base | Z-Image | no disponible en la información | Hugging Face |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| nphSi/Z-Image-Lora | LoRA sobre Z-Image | no disponible | no aplica | Apache 2.0 | Hugging Face |
+| Tongyi-MAI/Z-Image | Modelo base text-to-image | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| Tongyi-MAI/Z-Image-Turbo | Variante rápida del base | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| Otros LoRA de identidad sobre modelos de difusión | Adaptadores LoRA | no disponible | no aplica | variable | Hugging Face |
 
-No se dispone de información sobre otros repositorios de LoRA de personajes comparables ni de sus métricas, por lo que la comparación se limita a los componentes del propio ecosistema Z-Image.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Riesgo legal y ético por suplantación de identidad**: el repositorio reproduce rostros de personas reales (actores, celebridades, figuras públicas e incluso personajes ficticios). Su uso para generar imágenes no consentidas, difamatorias o engañosas puede vulnerar derechos de imagen y normativa aplicable.
-- **Licencia**: los adaptadores se declaran Apache 2.0, pero el modelo base Z-Image tiene sus propios términos que deben verificarse antes de cualquier uso comercial.
-- **Dependencia estricta del disparador**: sin el token `vrtlxxxx` correcto, el LoRA no funciona; los términos genéricos no activan la identidad.
-- **Censura y conocimiento interno del modelo base**: el autor advierte que ciertos nombres deben eliminarse del prompt por censura o confusión del modelo.
-- **Sesgos**: el catálogo está muy sesgado hacia figuras femeninas del entretenimiento occidental, lo que puede amplificar sesgos de representación.
-- **Alucinación visual**: los LoRA de identidad pueden producir rasgos inconsistentes o mezclas no deseadas al combinarse varios disparadores.
-- **Sin información de idiomas ni de parámetros**: no es posible evaluar el soporte multilingüe ni el coste computacional exacto por adaptador.
-- **Tamaño del repositorio**: 126,0 GB dificultan la descarga completa en entornos con almacenamiento limitado.
+- El repositorio se centra en identidades de personas reales, en su mayoría figuras públicas; su uso comercial o público puede vulnerar derechos de imagen y de publicidad en muchas jurisdicciones, incluso con licencia Apache 2.0 sobre el código y los pesos.
+- La licencia Apache 2.0 del adaptador no exime del cumplimiento de la licencia del modelo base ni de las obligaciones legales sobre el uso de la imagen de personas.
+- Riesgo elevado de generar deepfakes o contenido no consentido; se recomienda establecer controles de uso y no desplegar en producción sin revisión legal.
+- El método de captioning del autor exige el uso estricto del token `vrtlxxxx` y del nombre completo; prompts genéricos no funcionan, lo que limita la interoperabilidad con otros flujos.
+- La model card advierte de que el conocimiento interno del modelo sobre ciertos nombres puede ser deficiente o estar censurado, y recomienda eliminar el nombre real en esos casos.
+- No se documentan sesgos demográficos del catálogo, aunque la lista de identidades muestra un desequilibrio evidente hacia actrices y figuras femeninas de habla inglesa.
+- No hay información sobre el dataset de entrenamiento ni sobre posibles filtraciones de datos personales en los pesos.
+- El tamaño del repositorio (126,6 GB) dificulta su descarga y almacenamiento completos; conviene descargar solo los LoRA necesarios.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/nphSi/Z-Image-Lora
-- Índice de LoRA con descarga directa, previsualización e información: https://huggingface.co/spaces/nphSi/Lookalike-LoRA-Index
+- Índice de LoRA con descarga, preview e información: https://huggingface.co/spaces/nphSi/Lookalike-LoRA-Index
 - Discusiones y soporte de la comunidad: https://huggingface.co/nphSi/Z-Image-Lora/discussions
-- Modelo base Z-Image: https://huggingface.co/Tongyi-MAI/Z-Image
-- Variante Z-Image-Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
-- Hilo de la comunidad sobre el efecto del dataset en composición y pose: https://www.reddit.com/r/malcolmrey/comments/1rfal9b/does_character_lora_dataset_affect_zimage/
+- Modelo base Tongyi-MAI/Z-Image: https://huggingface.co/Tongyi-MAI/Z-Image
+- Modelo base Tongyi-MAI/Z-Image-Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

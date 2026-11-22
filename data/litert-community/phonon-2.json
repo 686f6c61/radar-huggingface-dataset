@@ -48,21 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Phonon-2 · Fermion Research",
-      "url": "https://www.fermionresearch.com/models/phonon-2/",
-      "snippet": "Phonon-2 downloads, benchmarks and runtimes. A 164 MB open speech recognition model for English at 5.21 % word error, for Mac, Linux, Windows and NVIDIA GPUs."
-    },
-    {
-      "title": "FermionResearch/Phonon-2 · Hugging Face",
-      "url": "https://huggingface.co/FermionResearch/Phonon-2",
-      "snippet": "Instructions to use FermionResearch/Phonon-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use FermionResearch/Phonon-2 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Phonon-2 FermionResearch/Phonon-2 Notebooks Google Colab Kaggle Local AppsSettings ..."
-    },
-    {
-      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
-      "url": "https://huggingface.co/litert-community",
-      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
-    }
-  ]
+  "sources": []
 }

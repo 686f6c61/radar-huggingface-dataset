@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 707,
+  "downloads_30d": 655,
   "trending_score": 0,
   "parameters": 7936684544,
   "parameters_human": "7.94B",
@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "R6: Siege Stats, Leaderboards & More! - Rainbow Six Siege Tracker",
-      "url": "https://r6.tracker.network/",
-      "snippet": "Rainbow Six Siege Stats! Check your profile and match history. View the top Rainbow Six players on our leaderboards and how you …Read more"
-    },
-    {
-      "title": "Siege Stats - Stats.CC All Rainbow Six Siege Stats - Rainbow Six Siege ...",
-      "url": "https://stats.cc/",
-      "snippet": "Our Siege Overlay is available with enhanced scoreboard, damage reports & more! Learn More"
-    },
-    {
-      "title": "Rainbow Six: Siege Tracker App - Rainbow Six Siege Tracker",
-      "url": "https://r6.tracker.network/r6siege/app",
-      "snippet": "Download the ultimate Rainbow Six: Siege stats tracker for FREE! An in-game real-time tracking solution for your Rainbow Six: …"
-    },
-    {
-      "title": "SiegeRadar – Siege Tracker & R6 Stats for Rainbow Six Siege",
-      "url": "https://siegeradar.com/",
-      "snippet": "Free Rainbow Six Siege stats tracker. Look up any player on PC, Xbox or PlayStation: rank, K/D, win rate, operators and season …"
-    },
-    {
-      "title": "Find your stats for your favorite games - Tracker Network",
-      "url": "https://tracker.gg/",
-      "snippet": "Tracker Network provides stats, global and regional leaderboards and much more to gamers around the world. Analyze how you play …"
-    }
-  ]
+  "sources": []
 }

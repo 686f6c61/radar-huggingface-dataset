@@ -2,51 +2,49 @@
 
 ## Resumen
 
-OrcaMaid-v2-FIX-13b-32k-i1-GGUF es una cuantizacion en formato GGUF del modelo OrcaMaid-v2-FIX-13b-32k, publicada por el usuario mradermacher. El modelo base es un transformer de 13.015.864.320 parametros (aproximadamente 13 mil millones) con una ventana de contexto de 32.000 tokens, segun indica el propio nombre del repositorio. El modelo original fue desarrollado por ddh0 y esta orientado a generacion de texto conversacional y razonamiento general.
+OrcaMaid-v2-FIX-13b-32k-i1-GGUF es una recopilación de cuantizaciones GGUF generadas por mradermacher a partir del modelo base ddh0/OrcaMaid-v2-FIX-13b-32k, un modelo de lenguaje de 13.015.864.320 parámetros. El modelo original es un merge de la familia Orca de Microsoft (según la licencia referenciada, microsoft-research-license) con contexto extendido a 32.000 tokens, y esta publicación se limita a ofrecer versiones cuantizadas con imatrix para su uso en llama.cpp y entornos compatibles con GGUF.
 
-Esta publicacion concreta no aporta un modelo nuevo, sino un conjunto de pesos cuantizados con tecnicas de imatrix (importance matrix) y weighted quants, pensados para reducir el coste de memoria y permitir la inferencia en hardware mas modesto mediante llama.cpp y herramientas compatibles con GGUF. El repositorio incluye un amplio abanico de niveles de cuantizacion, desde IQ1_S hasta Q6_K, lo que cubre desde despliegues muy comprimidos hasta configuraciones de mayor fidelidad.
+La relevancia de esta ficha es práctica: el repositorio no introduce capacidades nuevas, sino que facilita el despliegue local del modelo en hardware de consumo mediante 25 variantes de cuantización que van desde 3,0 GB (i1-IQ1_S) hasta 10,8 GB (i1-Q6_K). El tamaño total del repositorio es de 146,4 GB, lo que refleja la acumulación de todas las variantes publicadas.
 
-La relevancia de esta ficha es practica: permite a desarrolladores e investigadores evaluar rapidamente si esta cuantizacion encaja en su infraestructura. No obstante, la informacion publicada es escasa (sin licencia declarada, sin idiomas y sin benchmarks), por lo que muchas especificaciones deben marcarse como no disponibles.
+Se trata, por tanto, de un artefacto de distribución más que de un modelo original: útil para quien quiera ejecutar OrcaMaid v2 con 32k de contexto en una GPU consumer o en CPU, pero sin garantías adicionales de calidad por parte del cuantizador más allá de las propias del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalles no disponibles) |
+| Arquitectura | no disponible (modelo base: transformer, inferido de la familia Orca; no confirmado en la informacion proporcionada) |
 | Parametros totales | 13.015.864.320 |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | 32.000 tokens (segun el nombre del modelo) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de safetensors del modelo base) |
+| Parametros activos | no disponible (no es MoE según los datos disponibles) |
+| Longitud de contexto | 32.000 tokens (según el nombre del modelo base: "32k") |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-Q2_K_S, i1-IQ2_M, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (más fichero imatrix) |
+| Idiomas soportados | en (inglés, según la model card) |
+| Licencia | microsoft-research-license (license: other) |
+| Formato de pesos | GGUF (con fichero imatrix adicional para generar cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base OrcaMaid-v2-FIX-13b-32k mas alla de que se trata de un transformer de 13 mil millones de parametros con contexto de 32.000 tokens. No se especifican el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el tipo de atencion empleado. Tampoco se documentan los datos de entrenamiento (numero de tokens, composicion del dataset) ni si hubo fases de RLHF, DPO o ajuste supervisado.
+No se dispone de información sobre la arquitectura interna, los datos de entrenamiento ni el proceso de alineación del modelo base ddh0/OrcaMaid-v2-FIX-13b-32k en la información proporcionada. El nombre sugiere una fusión (merge) de modelos de la familia Orca de Microsoft con extensión de contexto a 32k, y la licencia referenciada apunta a la licencia de investigación de Microsoft asociada a Orca-2-13b, pero no se confirma ni la composición del merge ni el método de extensión de contexto.
 
-Lo que si documenta esta publicacion es el proceso de cuantizacion: se han generado pesos GGUF a partir del modelo en safetensors mediante conversion de tipo `hf`, con `quantize_version: 2` y `output_tensor_quantised: 1`. Se emplean cuantizaciones con imatrix (importance matrix) y variantes "weighted", lo que suele mejorar la calidad respecto a cuantizaciones estandar a igual numero de bits. El repositorio incluye 24 variantes de cuantizacion, desde IQ1_S hasta Q6_K, lo que permite ajustar el compromiso entre tamano y fidelidad.
+Lo que sí está documentado es el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (etiquetadas i1-) a partir del modelo base, empleando la versión 2 del pipeline de cuantización y tensores cuantizados en salida (output_tensor_quantised: 1). El repositorio incluye también el fichero imatrix (0,1 GB) para que terceros puedan generar sus propias cuantizaciones. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional y continuacion de texto, heredadas del modelo base OrcaMaid-v2.
-- Razonamiento general y respuesta a instrucciones, segun la orientacion del modelo original (no verificable con benchmarks en la informacion disponible).
-- Soporte de contexto largo de hasta 32.000 tokens, adecuado para documentos extensos y conversaciones multi-turno.
-- Compatibilidad con llama.cpp y servidores compatibles con la API de endpoints, segun los tags del repositorio (`endpoints_compatible`).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se declaran idiomas.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generación de texto en inglés, heredada del modelo base OrcaMaid v2.
+- Razonamiento y respuesta a instrucciones, presumiblemente por el linaje Orca, aunque no se detalla en la información disponible.
+- Contexto largo de hasta 32.000 tokens, adecuado para documentos extensos y conversaciones multi-turno.
+- Ejecución local mediante llama.cpp y herramientas compatibles con GGUF.
+- Capacidad de generar cuantizaciones propias a partir del fichero imatrix incluido.
+- No se documentan soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M o Q4_K_S permiten ejecutar un modelo de 13B en GPUs con 8-12 GB de VRAM mediante llama.cpp u Ollama, lo que facilita prototipado local sin infraestructura dedicada.
-- Procesamiento de documentos largos: con 32.000 tokens de contexto, el modelo puede resumir o extraer informacion de contratos, informes o articulos extensos en una sola pasada, siempre que la cuantizacion elegida mantenga la coherencia en contextos largos.
-- Asistentes conversacionales autoalojados: al ser un GGUF compatible con servidores de endpoints, puede integrarse en un backend de chat interno para atencion al usuario o soporte tecnico de baja criticidad.
-- Generacion de texto y redaccion asistida: adecuado para borradores, reescritura y generacion de contenido en entornos donde no se desea enviar datos a APIs externas.
-- Experimentacion e investigacion: el amplio rango de cuantizaciones (de IQ1_S a Q6_K) permite estudiar la degradacion de calidad por nivel de compresion en un mismo modelo, util para trabajos sobre cuantizacion.
-- Evaluacion comparativa de pipelines GGUF: sirve como banco de pruebas para medir throughput y latencia de llama.cpp en distintas configuraciones de hardware y cuantizacion.
-- Fine-tuning ligero o destilacion: aunque no es el uso principal, el modelo base en safetensors puede servir de punto de partida para ajustes posteriores antes de recuantizar.
+- Despliegue local en estaciones de trabajo con GPU consumer: usar la variante i1-Q4_K_M (8,0 GB) o i1-Q4_K_S (7,5 GB) para ejecutar el modelo en GPUs de 8-12 GB de VRAM con contexto moderado, aprovechando que el formato GGUF permite descarga por partes.
+- Procesamiento de documentos largos en local: con 32k de contexto, el modelo puede resumir o extraer información de contratos, informes o artículos sin salir del equipo, usando cuantizaciones Q5_K_M o Q6_K si la VRAM lo permite.
+- Generación de cuantizaciones personalizadas: el fichero imatrix incluido permite a equipos con requisitos específicos de tamaño/calidad producir sus propias variantes con llama.cpp.
+- Prototipado de asistentes conversacionales en inglés: la ventana de 32k facilita mantener historiales largos en pruebas de concepto sin gestión agresiva de contexto.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 25 variantes del mismo modelo, lo que permite medir el impacto de la cuantización en perplejidad y calidad para un caso de uso concreto.
+- Inferencia en CPU o entornos sin GPU: las variantes IQ2/IQ3 (3,6-6,4 GB) permiten ejecutar el modelo en máquinas con RAM limitada, a costa de menor calidad.
+- Investigación sobre modelos fusionados: útil para estudiar el comportamiento de merges de la familia Orca con contexto extendido en entornos reproducibles y de bajo coste.
 
 ## Benchmarks y rendimiento
 
@@ -54,42 +52,47 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun el nivel de cuantizacion y el tamano del repo de 29,6 GB para todas las variantes):
-  - IQ1_S / IQ1_M: en torno a 3-4 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: en torno a 4-5 GB.
-  - Q3_K_S / Q3_K_M / Q3_K_L / IQ3_*: en torno a 5,5-7 GB.
-  - Q4_0 / Q4_1 / Q4_K_S / Q4_K_M / IQ4_XS / IQ4_NL: en torno a 7,5-9 GB.
-  - Q5_K_S / Q5_K_M: en torno a 9-10,5 GB.
-  - Q6_K: en torno a 11-12 GB.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090 para cuantizaciones medias y altas; A100 o H100 si se busca throughput alto o contexto completo de 32k con cuantizaciones Q5/Q6.
-- Cabe en GPU de consumo: si, especialmente en modelos con 8 GB o mas usando cuantizaciones Q3 y Q4; las variantes IQ1/IQ2 caben incluso en GPUs de 4-6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de endpoints (segun tags), y cualquier runtime que soporte GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan conversion o backends alternativos.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto y KV cache):
+  - i1-IQ1_S: ~3,0 GB de pesos.
+  - i1-IQ2_M: ~4,6 GB.
+  - i1-IQ3_M: ~6,1 GB.
+  - i1-Q4_K_M: ~8,0 GB.
+  - i1-Q5_K_M: ~9,3 GB.
+  - i1-Q6_K: ~10,8 GB.
+- GPU recomendadas: no disponibles de forma específica en la información proporcionada; por tamaño, una RTX 3060 de 12 GB o superior puede alojar variantes Q4/Q5, y una RTX 4090 (24 GB) permite Q6_K con contexto amplio.
+- Cabe en GPU consumer: sí, las variantes IQ1 a Q4_K_M caben en GPUs de 8-12 GB; las variantes Q5/Q6 requieren 12-16 GB para contexto completo.
+- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, LM Studio, koboldcpp, entre otros). El repositorio también declara compatibilidad con endpoints (endpoints_compatible).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OrcaMaid-v2-FIX-13b-32k-i1-GGUF (este) | 13,0 B | 32k | GGUF (multiples quants) | no disponible | Cuantizaciones con imatrix, 24 variantes |
-| OrcaMaid-v2-FIX-13b-32k (modelo base) | 13,0 B | 32k | safetensors | no disponible | Fuente de esta cuantizacion, autor ddh0 |
-| Otros GGUF de 13B con contexto 32k | ~13 B | 32k | GGUF | variable | Existen alternativas de la familia Llama/Mistral, pero no se dispone de datos comparativos verificables en la informacion proporcionada |
+| OrcaMaid-v2-FIX-13b-32k-i1-GGUF (este) | 13,0 B | 32k | microsoft-research-license | GGUF (25 cuantizaciones) | Cuantizaciones imatrix de un merge de la familia Orca |
+| ddh0/OrcaMaid-v2-FIX-13b-32k | 13,0 B | 32k | microsoft-research-license | safetensors (modelo base) | Modelo original sin cuantizar |
+| mradermacher/OrcaMaid-v2-FIX-13b-32k-GGUF | 13,0 B | 32k | microsoft-research-license | GGUF (cuantizaciones estáticas) | Variante de cuantizaciones estáticas del mismo autor |
+| Orca-2-13b (Microsoft) | 13,0 B | no disponible en esta ficha | microsoft-research-license | safetensors | Modelo de referencia del linaje Orca citado en la licencia |
 
-No se dispone de datos de rendimiento comparativo (benchmarks) para establecer una comparativa cuantitativa con alternativas.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en la informacion disponible; antes de un uso comercial debe verificarse la licencia del modelo base OrcaMaid-v2-FIX-13b-32k en su repositorio original.
-- No se declaran idiomas soportados; el rendimiento en castellano es incierto y debe validarse empiricamente.
-- No hay benchmarks publicados, por lo que la calidad real de esta cuantizacion frente al modelo original no esta documentada.
-- Las cuantizaciones de muy baja precision (IQ1_S, IQ1_M, IQ2_XXS) pueden degradar notablemente la coherencia y el razonamiento, especialmente en contextos largos.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de 13B; no se han publicado evaluaciones de factualidad.
-- Sesgos conocidos: no documentados en la informacion disponible; cabe esperar los sesgos del dataset de entrenamiento del modelo base, que no se detalla.
-- El contexto de 32k puede no mantenerse con fidelidad en cuantizaciones muy agresivas; conviene probar con la variante elegida antes de produccion.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion comunitaria.
-- La fecha de creacion indicada (2026-11-17) es posterior a la fecha habitual de publicacion; conviene verificar la integridad y procedencia del repositorio.
+- La licencia microsoft-research-license restringe el uso comercial; es imprescindible revisar los términos antes de desplegar en producción.
+- El modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Las cuantizaciones de baja precisión (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- No se han publicado benchmarks del modelo base ni de las cuantizaciones, por lo que no hay evidencia cuantitativa de calidad.
+- Riesgo de alucinación inherente a los modelos de 13B de la familia Orca; no se documentan mitigaciones específicas.
+- El repositorio tiene 0 likes y 946 descargas, lo que sugiere poca validación por parte de la comunidad.
+- El tamaño del repositorio (146,4 GB) implica que la descarga completa es costosa; conviene descargar solo la variante necesaria.
+- No se documentan limitaciones específicas de contexto o sesgos conocidos en la información proporcionada.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/OrcaMaid-v2-FIX-13b-32k-i1-GGUF
 - Modelo base: https://huggingface.co/ddh0/OrcaMaid-v2-FIX-13b-32k
-- No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a esta cuantizacion.
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/OrcaMaid-v2-FIX-13b-32k-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#OrcaMaid-v2-FIX-13b-32k-i1-GGUF
+- Licencia de referencia (Orca-2-13b): https://huggingface.co/microsoft/Orca-2-13b/blob/main/LICENSE
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

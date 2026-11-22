@@ -47,11 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "en5yme (en5yme) - Hugging Face",
-      "url": "https://huggingface.co/en5yme",
-      "snippet": "Distillation, MoE, fine-tuning."
-    }
-  ]
+  "sources": []
 }

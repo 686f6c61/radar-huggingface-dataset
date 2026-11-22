@@ -2,49 +2,48 @@
 
 ## Resumen
 
-`mradermacher/bella-bartender-qwen3.5-4b-GGUF` es una cuantización estática en formato GGUF del modelo `juiceb0xc0de/bella-bartender-qwen3.5-4b`, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones GGUF de modelos de terceros para su uso con llama.cpp y derivados. El modelo base pertenece a la familia "bella-bartender", orientada a generación de texto creativo y roleplay, y se construye presumiblemente sobre una base de la familia Qwen (según el nombre, una variante "Qwen3.5" de 4B), aunque no se dispone de documentación oficial que lo confirme.
+bella-bartender-qwen3.5-4b-GGUF es la distribucion en formato GGUF del modelo bella-bartender-qwen3.5-4b, publicada por el usuario mradermacher, conocido en el ecosistema por generar cuantizaciones estaticas de modelos abiertos para su uso con llama.cpp y derivados. El modelo original, alojado por juiceb0xc0de, es un ajuste fino de la familia Qwen 3.5 con aproximadamente 4.205 millones de parametros (4,2 B), orientado a tareas conversacionales segun los tags del repositorio.
 
-El repositorio contiene únicamente los pesos cuantizados en GGUF, sin model card propia más allá de los metadatos de la herramienta de cuantización, sin licencia declarada y sin información sobre idiomas, pipeline o dataset de entrenamiento. El dato de parámetros reportado en safetensors (333.514.240) resulta inconsistente con la denominación "4B" del nombre y con el tamaño del repositorio (1,0 GB), por lo que debe tratarse con cautela: podría corresponder a un subconjunto de tensores o a un error de metadatos.
+El interes practico de esta publicacion reside en que ofrece el modelo en un rango amplio de cuantizaciones (desde Q2_K de 2,0 GB hasta f16 de 8,5 GB), lo que permite desplegarlo en hardware de consumo con VRAM limitada. Incluye ademas ficheros mmproj (multi-modal supplement), lo que sugiere que el modelo base incorpora capacidades de vision, aunque la model card no detalla la arquitectura interna ni el proceso de entrenamiento.
 
-La relevancia de esta ficha es limitada pero concreta: permite ejecutar localmente un modelo afinado para escritura creativa y roleplay en hardware de consumo, siempre que el usuario asuma la ausencia de garantías documentales, licencia y benchmarks. Es un artefacto de conveniencia (cuantización de un fine-tune comunitario), no un modelo con soporte oficial.
+La informacion publicada es escasa: no se documentan licencia, idiomas mas alla del ingles declarado en los metadatos, longitud de contexto, datos de entrenamiento ni resultados de benchmarks. Esta ficha refleja exclusivamente lo disponible en la informacion proporcionada y marca como no disponible todo aquello que el autor no ha hecho publico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer decoder-only de la familia Qwen; no confirmado) |
-| Parametros totales | 333.514.240 según safetensors reportado; el nombre indica 4B (dato inconsistente) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base derivado de la familia Qwen 3.5; transformer, sin confirmacion oficial) |
+| Parametros totales | 4.205.751.296 (4,2 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; ademas mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | en (segun metadatos de la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantización estática, convert_type: hf) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base. El nombre `qwen3.5-4b` sugiere una base de la familia Qwen con aproximadamente 4.000 millones de parámetros, pero no hay documentación que lo confirme ni detalles sobre número de capas, dimensión oculta, mecanismo de atención o tipo de normalización. El tag de cuantización `convert_type: hf` indica que la conversión a GGUF se realizó desde pesos en formato Hugging Face (probablemente safetensors), y `output_tensor_quantised: 1` señala que la herramienta de mradermacher aplicó cuantización sobre los tensores de salida.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base juiceb0xc0de/bella-bartender-qwen3.5-4b. Por el nombre y el tamano (4,2 B parametros) se infiere que deriva de un checkpoint de la familia Qwen 3.5, pero la model card no confirma la variante exacta, el numero de capas, la dimension oculta ni el mecanismo de atencion empleado. Tampoco se documenta si se trata de un transformer denso o de una arquitectura hibrida.
 
-Tampoco hay información sobre el proceso de entrenamiento del modelo base: no se conocen el volumen de tokens, la composición del dataset, la existencia de fases de SFT, RLHF o DPO, ni si se emplearon técnicas como decodificación especulativa o atención lineal. El modelo base (`juiceb0xc0de/bella-bartender-qwen3.5-4b`) es un fine-tune comunitario orientado a roleplay y escritura creativa, pero su model card no está incluida en la información proporcionada.
+Respecto al entrenamiento, no se publican datos sobre volumen de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineacion. La presencia de ficheros mmproj en el repositorio indica que el modelo incorpora un proyector multimodal, lo que sugiere capacidad de procesamiento de imagenes, pero no se detalla el codificador visual ni el esquema de fusion de modalidades. El repositorio de cuantizacion documenta que se han generado cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1) y que existe una variante con cuantizacion ponderada/imatrix en un repositorio separado.
 
 ## Capacidades
 
-- Generación de texto: el modelo está orientado, por su nombre y linaje, a escritura creativa y diálogo de rol, aunque no hay documentación que detalle sus capacidades concretas.
-- Razonamiento y matemáticas: no disponible; no hay evidencia de que el fine-tune preserve o potencie estas capacidades respecto a su base.
-- Generación de código: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declaran idiomas en los metadatos.
-- Capacidades especiales (modo thinking, visión, audio): no disponible; no se mencionan en la información proporcionada.
+- Generacion de texto conversacional: los tags del repositorio incluyen "conversational", lo que orienta el modelo a dialogos multi-turno.
+- Procesamiento multimodal: la presencia de ficheros mmproj-Q8_0 y mmproj-f16 indica soporte de entrada de imagenes, aunque no se detalla el alcance.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
+- Idiomas: el unico idioma declarado en los metadatos es el ingles.
+- Tool calling, function calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Roleplay conversacional local: el modelo puede emplearse en aplicaciones de chat con personajes gracias a su orientación declarada a roleplay, ejecutándose en local mediante llama.cpp u Ollama sin depender de servicios externos.
-- Escritura creativa asistida: generación de relatos, diálogos y borradores narrativos en un editor de texto con integración local, aprovechando el fine-tune sobre una base de 4B para mantener coherencia estilística en sesiones cortas.
-- Prototipado de chatbots de entretenimiento: desarrollo de demos de personajes conversacionales en hardware de consumo, con la cuantización Q4_K_M como compromiso entre calidad y tamaño.
-- Pruebas de pipelines de inferencia GGUF: uso del modelo como banco de pruebas para validar integraciones con llama.cpp, Ollama o servidores compatibles con la API de OpenAI, dado que ofrece múltiples niveles de cuantización en un mismo repositorio.
-- Generación de contenido narrativo para juegos de texto: integración en motores de aventuras conversacionales o juegos de rol por texto que requieran respuestas generadas en tiempo real en una máquina local.
-- Experimentación académica con fine-tunes comunitarios: análisis comparativo del efecto de distintas cuantizaciones (Q2_K frente a Q8_0) sobre la calidad de la generación creativa en un modelo pequeño.
+- Despliegue local en estaciones de trabajo con GPU de consumo: con cuantizaciones Q4_K_M (2,8 GB) o Q5_K_M (3,2 GB), el modelo puede ejecutarse en GPUs con 6-8 GB de VRAM mediante llama.cpp u Ollama, lo que facilita prototipado sin infraestructura cloud.
+- Asistentes conversacionales especializados: al estar orientado a dialogo y ajustado sobre una base Qwen 3.5, puede emplearse como backend de un chat de dominio acotado (por ejemplo, atencion a clientes en ingles), siempre que se valide su calidad con evaluaciones propias dado que no hay benchmarks publicados.
+- Experimentacion con modelos multimodales en local: los ficheros mmproj permiten probar entrada de imagenes en entornos con recursos limitados, util para investigacion sobre fusion vision-lenguaje a pequena escala.
+- Integracion en pipelines de CI/CD para pruebas de regresion de prompts: el formato GGUF y su bajo peso permiten levantar instancias efimeras del modelo en contenedores para validar cambios en plantillas de prompt sin coste elevado.
+- Educacion y docencia: el rango de cuantizaciones desde 2,0 GB hasta 8,5 GB permite demostrar en clase el impacto de la cuantizacion en calidad y velocidad sobre el mismo modelo.
+- Evaluacion comparativa de cuantizaciones: la disponibilidad de doce variantes (incluidas IQ4_XS y Q3_K_L) permite medir perplejidad y latencia por tipo de cuantizacion en un mismo hardware, replicando los estudios de la comunidad (ikawrakow, Artefact2) citados en la model card.
 
 ## Benchmarks y rendimiento
 
@@ -52,37 +51,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para un modelo de ~4B parámetros, las cuantizaciones Q4_K_M ocupan aproximadamente 2,5-3 GB, Q8_0 en torno a 4,5 GB y x-f16 alrededor de 8 GB; estas cifras son estimaciones basadas en el tamaño típico de modelos de esa escala y no en mediciones del repositorio.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 y GPUs de datacenter como A10, A100 o H100 para despliegues con mayor concurrencia.
-- Compatibilidad con GPU de consumo: sí, las cuantizaciones Q4 y Q5 caben en GPUs de 8 GB o menos; las versiones Q8_0 y f16 requieren 8-12 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de llama.cpp y, en general, cualquier runtime que soporte GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que no se recomiendan como primera opción.
-- Latencia y throughput: no disponibles; no se han publicado mediciones para este repositorio.
+- VRAM estimada para inferencia (pesos mas overhead de contexto, aproximada): Q2_K ~2,0 GB; Q3_K_S ~2,2 GB; Q3_K_M ~2,4 GB; Q3_K_L ~2,5 GB; IQ4_XS ~2,6 GB; Q4_K_S ~2,7 GB; Q4_K_M ~2,8 GB; Q5_K_S ~3,1 GB; Q5_K_M ~3,2 GB; Q6_K ~3,6 GB; Q8_0 ~4,6 GB; f16 ~8,5 GB. A estas cifras hay que sumar el espacio para la cache KV, que depende de la longitud de contexto (no documentada).
+- GPU recomendadas: para Q4_K_M o Q5_K_M basta una RTX 3060 de 12 GB o una RTX 4060 Ti de 8 GB; para Q8_0 se recomienda 8-12 GB de VRAM; para f16 conviene una RTX 4090 (24 GB) o una A100/H100 si se busca throughput alto con lotes grandes.
+- Cabe en GPU de consumo: si, en la mayoria de cuantizaciones. Q2_K a Q4_K_M caben en GPUs de 4-8 GB; Q8_0 requiere al menos 6-8 GB libres.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama (importando el GGUF), LM Studio, y servidores compatibles con la API de Hugging Face (tag endpoints_compatible). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que para estos backends convendria usar el modelo base en safetensors.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/bella-bartender-qwen3.5-4b-GGUF | 4B (según nombre; 333M según safetensors reportado) | no disponible | no disponible | GGUF | Cuantización estática de un fine-tune comunitario para roleplay |
-| juiceb0xc0de/bella-bartender-9b-yi-GGUF | 9B | no disponible | no disponible | GGUF | Variante mayor de la misma familia, basada en Yi |
-| juiceb0xc0de/bella-bartender-gemma-e4b | 8B | no disponible | no disponible | no disponible | Variante de la familia basada en Gemma |
+| bella-bartender-qwen3.5-4b-GGUF (este) | 4,2 B | no disponible | no disponible | GGUF (12 cuantizaciones) | Hugging Face |
+| Modelo base juiceb0xc0de/bella-bartender-qwen3.5-4b | 4,2 B | no disponible | no disponible | safetensors | Hugging Face |
+| Familia Qwen 3.5 (checkpoints oficiales de 4 B) | ~4 B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF de terceros | Hugging Face |
 
-No se dispone de datos de rendimiento ni de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
+No se dispone de datos de rendimiento comparado (benchmarks) ni de especificaciones de contexto de los modelos alternativos en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia declarada: no se especifican términos de uso comercial, lo que impide asumir permiso para producción sin consultar al autor del modelo base.
-- Metadatos inconsistentes: el recuento de parámetros en safetensors (333.514.240) no concuerda con el nombre "4b" ni con el tamaño del repositorio (1,0 GB), lo que sugiere un error de publicación o un subconjunto de tensores; conviene verificar antes de confiar en las estimaciones de hardware.
-- Sin model card propia: el repositorio solo contiene metadatos de la herramienta de cuantización; no hay información sobre dataset, sesgos, idiomas o comportamiento esperado.
-- Riesgo de alucinación: inherente a los modelos de 4B afinados para ficción; no se han publicado evaluaciones de fidelidad factual.
-- Sesgos desconocidos: al ser un fine-tune comunitario sin documentación, no se puede evaluar la presencia de sesgos de género, culturales o de otro tipo.
-- Contexto e idiomas no especificados: no se puede garantizar un rendimiento adecuado en castellano ni en conversaciones de contexto largo.
-- Naturaleza derivada: es una cuantización de terceros; los errores del modelo base se heredan y la cuantización puede degradar la calidad, especialmente en Q2_K y Q3_K_S.
+- Ausencia total de benchmarks: no hay resultados publicados de MMLU, HumanEval, GSM8K ni de evaluaciones conversacionales, por lo que la calidad real del ajuste fino es desconocida y debe validarse antes de cualquier uso en produccion.
+- Licencia no declarada: al no especificarse la licencia del modelo base ni de la cuantizacion, no se puede confirmar si el uso comercial esta permitido. Es imprescindible contactar con el autor del modelo base (juiceb0xc0de) antes de desplegarlo en entornos productivos.
+- Idioma limitado: los metadatos solo declaran ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
+- Contexto desconocido: la longitud de contexto no se documenta, lo que impide planificar cargas de trabajo con documentos largos o conversaciones extensas.
+- Riesgo de alucinacion: inherente a los modelos de 4 B de parametros; en tareas factuales o de dominio especializado la fiabilidad sera menor que en modelos mayores.
+- Cuantizaciones de baja calidad: las variantes Q2_K y Q3_K_M pueden degradar notablemente la coherencia; la propia model card advierte que Q3_K_M es de "lower quality".
+- Modelo de nicho: el nombre "bella-bartender" sugiere un ajuste fino con proposito especifico (posiblemente roleplay o atencion en hosteleria); su comportamiento fuera de ese dominio puede ser erratico.
+- Procedencia: el modelo base no procede de un laboratorio con documentacion exhaustiva, lo que reduce la trazabilidad sobre datos de entrenamiento y posibles sesgos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/bella-bartender-qwen3.5-4b-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/bella-bartender-qwen3.5-4b-GGUF
 - Modelo base: https://huggingface.co/juiceb0xc0de/bella-bartender-qwen3.5-4b
-- Variante de la familia basada en Yi: https://huggingface.co/juiceb0xc0de/bella-bartender-9b-yi-GGUF
-- Variante de la familia basada en Gemma: https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e4b
-- Listado de modelos con tag roleplay: https://huggingface.co/models?other=roleplay&p=2&sort=trending
-- Listado de modelos con tag creative-writing: https://huggingface.co/models?other=creative-writing
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/bella-bartender-qwen3.5-4b-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#bella-bartender-qwen3.5-4b-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

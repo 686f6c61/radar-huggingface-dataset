@@ -2,112 +2,107 @@
 
 ## Resumen
 
-Hy4-flash es un modelo multimodal de tipo mixto de expertos (MoE) desarrollado por Tencent, distribuido originalmente en formato FP8 y aquí publicado en cuantizaciones GGUF por Xylolabs para su uso con llama.cpp. Con 218.938.353.741 parámetros totales (aproximadamente 220B) y 12B activos por token, está disenado para tareas de imagen-a-texto y conversación, con soporte de inglés y chino.
+Hy4-flash es un modelo multimodal de tipo image-text-to-text desarrollado por Tencent, con 218.938.353.741 parámetros totales (aproximadamente 219B) y 12B parámetros activos según la model card del cuantizador, lo que indica una arquitectura de mezcla de expertos (MoE). El repositorio analizado, Xylolabs/Hy4-flash-GGUF, no es el modelo original sino una colección de cuantizaciones GGUF preparadas por Xylolabs para su ejecución en llama.cpp sobre CUDA, Metal o CPU, sin el drafter de decodificación especulativa DFly2 del modelo base.
 
-La particularidad técnica de esta distribución es la separación de las tablas Engram (tablas de n-gramas de 63,36 GB en FP8 E4M3) en un segundo shard independiente que se mapea en memoria, de modo que solo se leen las filas que toca cada prompt. Esto permite ejecutar un modelo de 220B en una única máquina de 128 GB, como una NVIDIA DGX Spark o un Apple Silicon de 128 GB, manteniendo el tronco del modelo en GPU.
+La relevancia de esta ficha radica en que permite ejecutar un modelo MoE multimodal de gran tamaño en hardware convencional mediante cuantización agresiva, con hasta once variantes de cuantización documentadas (desde Q8_0 hasta IQ2_XXS), incluyendo pares con tablas Engram reducidas y proyectores de visión opcionales. El repositorio incluye una matriz de importancia (imatrix) propia y datos de divergencia KL frente a BF16, lo que facilita evaluar la pérdida de calidad de cada cuantización antes de desplegarla.
 
-El repositorio incluye siete cuantizaciones (Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M y Q2_K), la torre de visión en bf16, la matriz de importancia usada para todas las cuantizaciones y un parche de conversión. La licencia es la Tencent Hy License, que no es de código abierto estándar y requiere revisión para uso comercial.
+El modelo base soporta inglés y chino, se distribuye bajo la Tencent Hy License 1.0 (licencia "other" con términos adicionales para operadores de Model-as-a-Service a gran escala) y requiere una compilación específica de llama.cpp (PR #32517) hasta que dicha integración se fusione en la rama principal.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal (transformer con tablas Engram de n-gramas); detalles completos de la arquitectura del modelo base no disponibles |
-| Parametros totales | 218.938.353.741 (aprox. 220B) |
-| Parametros activos | 12B |
+| Arquitectura | Mezcla de expertos (MoE) multimodal image-text-to-text; detalles de capas no disponibles |
+| Parametros totales | 218.938.353.741 (aprox. 219B) |
+| Parametros activos | 12B (según model card del cuantizador) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M, Q2_K (GGUF); shard Engram fijo en FP8 E4M3; torre de visión en bf16 |
-| Idiomas soportados | en, zh |
-| Licencia | tencent-hy-license (license: other) |
-| Formato de pesos | GGUF (gguf-split en dos shards), mmproj BF16 para visión, imatrix GGUF |
-| Modelo base | tencent/Hy4-flash (cuantizado desde tencent/Hy4-flash-FP8) |
-| Tamano del repo | 725,8 GB |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M, IQ3_M, IQ3_XXS, Q2_K, IQ2_M; variantes con tablas Engram E4M3, Q5_0, IQ4_NL, MXFP4 y NVFP4; pares IQ2_XXS + IQ2_S |
+| Idiomas soportados | Inglés (en) y chino (zh) |
+| Licencia | Tencent Hy License, Version 1.0 (license: other, license_name: tencent-hy-license) |
+| Formato de pesos | GGUF (shards divididos en dos archivos por cuantización, más mmproj opcional e imatrix) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE multimodal de aproximadamente 220B parámetros totales con 12B activos por token, orientado a imagen-a-texto y conversación. La distribución GGUF conserva esa estructura y anade una separación explícita de las tablas Engram: un conjunto de tablas de n-gramas de 63,36 GB en FP8 E4M3 que se almacena en su propio shard (`-00002-of-00002.gguf`) y se mapea en memoria, de modo que solo se leen las filas correspondientes al prompt. El tronco (155,5B parámetros no Engram) es lo que se cuantiza en cada variante y lo que se carga en GPU.
+La información disponible confirma que Hy4-flash es un modelo MoE multimodal con 219B parámetros totales y 12B activos, orientado a tareas image-text-to-text. La model card del repositorio cuantizado menciona explícitamente la existencia de "Engram tables" (tablas Engram) almacenadas en FP8 E4M3 en la variante por defecto, que pueden reducirse a Q5_0, IQ4_NL o MXFP4 en variantes específicas, y que el procedimiento de ejecución recomienda mantener en memoria de host mediante `--override-tensor` con carga mmap y lazy-mode. También se menciona un drafter de decodificación especulativa denominado DFly2 en el modelo base, que estas cuantizaciones GGUF no incluyen.
 
-La conversión parte del checkpoint `tencent/Hy4-flash-FP8` (subido a BF16) y se ha realizado con un parche de conversión y una matriz de importancia (`Hy4-flash.imatrix.gguf`) aplicada a todas las cuantizaciones. La torre de visión se distribuye aparte en bf16 (`mmproj-Hy4-flash-BF16.gguf`, 1,04 GB), aunque el autor indica que no la ha probado. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detallan innovaciones de atención (attention linear, decodificación especulativa integrada en el GGUF, etc.) más allá de la referencia al drafter DFly2 del modelo original. El repositorio incluye una matriz de importancia (imatrix) generada por el cuantizador, empleada para calibrar las cuantizaciones de baja precisión.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés y chino.
-- Procesamiento de imagen y texto (pipeline `image-text-to-text`), mediante la torre de visión en bf16 incluida en el repositorio.
-- Razonamiento con modo "thinking" (el autor menciona "thinking mode on" en sus pruebas de calidad).
-- Generación de código: el autor valida con una función Python pequeña en su batería de cinco ítems.
-- Capacidades matemáticas básicas y de cálculo (el autor prueba una diferencia horaria y un producto).
-- Traducción entre idiomas (el autor prueba inglés a coreano, aunque el modelo declara solo en y zh).
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
-- Tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Generación de texto conversacional en inglés y chino.
+- Procesamiento multimodal image-text-to-text mediante el proyector de visión opcional (`mmproj-Hy4-flash-*.gguf`).
+- Razonamiento y respuesta multi-turno (pipeline conversacional, tag `conversational`).
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere integración con servicios de inferencia estándar.
+- Ejecución en llama.cpp con soporte de plantilla Jinja (`--jinja`), lo que habilita el formateo de chat y potencialmente tool calling si la plantilla del modelo base lo define (no confirmado en la información disponible).
+- Capacidades de agente y multi-step reasoning: no confirmadas explícitamente en la información disponible.
+- Modo thinking, audio u otras capacidades especiales: no disponibles.
 
 ## Casos de uso
 
-- Despliegue local de un modelo de 220B en una sola máquina de 128 GB: gracias a la separación del shard Engram y al mapeo en memoria, se puede ejecutar el modelo en una NVIDIA DGX Spark o en un Apple Silicon de 128 GB sin infraestructura multinodo, usando Q4_K_M (97,81 GB de tronco) o IQ4_XS (86,94 GB).
-- Asistente conversacional con contexto documental: el modo conversacional y el soporte de inglés y chino permiten construir asistentes bilingües para atención al usuario, con la ventaja de que el modelo cabe en hardware de sobremesa profesional.
-- Procesamiento de imágenes con descripción textual: la torre de visión en bf16 permite tareas de imagen-a-texto, como descripción de capturas, extracción de información de documentos escaneados o moderación de contenido visual, aunque el autor no ha validado esta parte.
-- Generación y revisión de código en local: el modelo produce funciones Python y puede integrarse en flujos de desarrollo con llama.cpp, útil para equipos que necesitan inferencia sin enviar código a la nube.
-- Traducción y localización: aunque declara solo en y zh, el autor verifica salida en coreano, lo que sugiere cierta generalización; puede emplearse para traducción bidireccional inglés-chino en entornos con requisitos de privacidad.
-- Experimentación e investigación en cuantización: el repositorio incluye la imatrix, las métricas KL y top-1 frente a una referencia Q8_0, y comparativas con la cuantización Q4_K_M de Tencent, lo que lo convierte en un banco de pruebas para estudiar el impacto de la cuantización en modelos MoE grandes.
-- Evaluación de modelos multimodales en hardware de consumo profesional: con Q2_K (61,79 GB de tronco) se puede ejecutar en GPUs de 80 GB o en configuraciones con memoria unificada, permitiendo pruebas de concepto sin clústeres.
+- Despliegue local de un modelo multimodal de gran tamaño en estaciones de trabajo con GPU consumer: las variantes IQ2_XXS + IQ2_S (83 GB) y Q3_K_M (114-122 GB) permiten ejecutar el modelo en configuraciones de 2-4 GPU de 24-48 GB, manteniendo las tablas Engram en RAM de host gracias a `--override-tensor`.
+- Asistentes conversacionales bilingües inglés-chino: el modelo cubre ambos idiomas de forma nativa, adecuado para atención al cliente o soporte técnico en organizaciones con operaciones en ambos mercados.
+- Procesamiento de documentos con imagen y texto: el proyector de visión opcional permite extraer información de capturas, diagramas o formularios escaneados y combinarla con texto en la misma conversación.
+- Inferencia en CPU o Metal sin GPU dedicada: la compilación de llama.cpp del PR #32517 funciona en CUDA y Metal, y las cuantizaciones de menor tamaño (Q2_K, IQ2_M) permiten pruebas en equipos sin acelerador, aunque con latencia elevada.
+- Evaluación comparativa de cuantizaciones en pipelines de investigación: la tabla de divergencia KL y top-1 frente a BF16 incluida en el repositorio permite seleccionar la cuantización con el mejor compromiso tamaño-calidad para un caso concreto antes de invertir en hardware.
+- Servicios de inferencia autoalojados con llama-server: el servidor de llama.cpp acepta los mismos flags que la CLI, lo que facilita exponer el modelo como API compatible con endpoints en infraestructura propia.
+- Experimentación con modelos MoE multimodales en investigación académica: al ser una cuantización abierta y ejecutable en hardware asequible, sirve para estudiar el comportamiento de MoE multimodales sin acceso a clústeres de gran escala.
 
 ## Benchmarks y rendimiento
 
-El autor publica métricas de calidad de cuantización y velocidad de inferencia medidas en una NVIDIA H200 con ambos shards en caché de página. La referencia de KL y top-1 es el tronco Q8_0 del propio autor (PPL 30,90, no publicado).
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El repositorio incluye métricas de fidelidad de cuantización frente a BF16 medidas con llama.cpp (divergencia KL media y acuerdo top-1, menor KL es mejor):
 
-| Quant | Shard 1 (tronco) | bpw del tronco | PPL | KL medio vs Q8_0 | Mismo top-1 | Prefill tok/s | Decode tok/s | Memoria GPU (MiB) |
-|---|---|---|---|---|---|---|---|---|
-| Q6_K | 129,89 GB | 6,68 | 30,69 | 0,1689 | 87,6% | 1119 | 66-69 | 124.679 |
-| Q5_K_M | 113,37 GB | 5,83 | 31,58 | 0,1907 | 86,5% | 1248 | 63-70 | 108.921 |
-| Q4_K_M | 97,81 GB | 5,03 | 32,56 | 0,2415 | 84,3% | pendiente | pendiente | 94.089 |
-| Q4_K_S | 92,19 GB | 4,74 | 33,38 | 0,2464 | 84,1% | pendiente | pendiente | pendiente |
-| IQ4_XS | 86,94 GB | 4,47 | 30,27 | 0,2603 | 84,4% | 1257 | pendiente | 83.721 |
-| Q3_K_M | 78,58 GB | 4,04 | 27,41 | 0,3659 | 81,7% | 880 | 35-60 | 75.747 |
-| Q2_K | 61,79 GB | 3,18 | 29,48 | 0,6808 | 73,6% | 1218 | 66-69 | 59.735 |
+| Cuantizacion | Tamano | WikiText-2 KL | Top-1 | Chat KL | Top-1 | Held-out KL | Top-1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Q8_0 / E4M3 | 228,859 GB | 0,1450 | 88,343% | 0,2483 | 87,501% | 0,1051 | 90,333% |
+| Q6_K / E4M3 | 193,251 GB | 0,1458 | 87,882% | 0,2486 | 87,179% | 0,0998 | 90,392% |
+| Q5_K_M / E4M3 | 176,726 GB | 0,1664 | 87,500% | 0,2705 | 86,637% | 0,1127 | 89,500% |
+| Q4_K_M / E4M3 | 161,174 GB | 0,2123 | 85,078% | 0,3205 | 85,339% | 0,1444 | 88,529% |
+| Q4_K_S / E4M3 | 155,549 GB | 0,2202 | 84,946% | 0,3498 | 85,118% | 0,1489 | 88,157% |
+| NVFP4 / E4M3 | 154,945 GB | 0,2991 | 82,598% | 0,4239 | 83,409% | 0,2000 | 86,363% |
+| Q4_K_M / Q5_0 | 141,373 GB | 0,2235 | 85,025% | 0,3586 | 85,108% | 0,1416 | 88,863% |
+| Q4_K_M / IQ4_NL | 133,453 GB | 0,2333 | 85,049% | 0,3514 | 84,424% | 0,1556 | 88,265% |
+| Q3_K_M / Q5_0 | 122,140 GB | 0,3335 | 81,471% | 0,5141 | 81,498% | 0,2319 | 84,853% |
+| Q3_K_M / IQ4_NL | 114,220 GB | 0,3393 | 80,966% | 0,5192 | 81,227% | 0,2446 | 84,833% |
+| IQ2_XXS + IQ2_S / MXFP4 | 83,070 GB | 0,8349 | 69,314% | 1,1280 | 72,086% | 0,6276 | 75,059% |
 
-Comparativa de Q4_K_M frente a la cuantización de Tencent (AngelSlim), misma build y mismo texto, ambas contra la referencia Q8_0 del autor:
-
-| Q4_K_M de | PPL (build PR) | PPL (build parcheada de Tencent) | KL medio vs Q8_0 | Mismo top-1 |
-|---|---|---|---|---|
-| Xylolabs (este repositorio) | 32,56 | 31,88 | 0,2415 | 84,3% |
-| AngelSlim (Tencent) | 31,92 | 30,84 | 0,2908 | 83,4% |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Como referencia, el repositorio incluye también cuantizaciones de terceros (AngelSlim) para comparar: AngelSlim Q4_K_M (168,347 GB, KL WikiText-2 0,2161, top-1 85,059%), AngelSlim Q3_K (155,371 GB, KL 0,2969, top-1 82,392%) y AngelSlim IQ2_AH (134,996 GB, KL 0,7328, top-1 71,353%).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 59.735 MiB (Q2_K) y 124.679 MiB (Q6_K) de memoria de GPU para el tronco, según la tabla del autor. El shard Engram (63,36 GB) permanece en host y se mapea en memoria, por lo que se necesita RAM adicional equivalente.
-- GPU recomendadas: NVIDIA H200 (mediciones del autor), NVIDIA DGX Spark de 128 GB, Apple Silicon de 128 GB. Para Q2_K y Q3_K_M, GPUs de 80 GB como A100 o H100 podrían alojar el tronco, aunque no se confirma en la información disponible.
-- Cabe en GPU de consumo: no para las cuantizaciones altas; Q2_K (59,7 GB de GPU) queda fuera de GPUs consumer de 24-48 GB. No se dispone de datos para RTX 4090 u otras consumer.
-- Opciones de despliegue: llama.cpp (build con el PR 32517), formato gguf-split en dos shards; el shard 2 se localiza por nombre junto al shard 1. Compatible con endpoints según los tags.
-- Latencia y throughput: prefill de 880 a 1257 tok/s y decode de 35 a 70 tok/s en H200 según cuantización; mediciones pendientes para Q4_K_M, Q4_K_S e IQ4_XS.
+- VRAM/RAM estimada para inferencia: desde 83 GB (IQ2_XXS + IQ2_S) hasta 229 GB (Q8_0). Las tablas Engram pueden residir en RAM de host con `--override-tensor '^per_layer_token_embd\.weight$=CPU'`, reduciendo la VRAM necesaria a costa de latencia.
+- GPU recomendadas: configuraciones multi-GPU para las cuantizaciones grandes; para Q4_K_M / IQ4_NL (133 GB) se requieren al menos 6 GPU de 24 GB o 2-3 GPU de 48-80 GB. Las variantes IQ2 (83 GB) caben en 2 GPU de 48 GB o 4 de 24 GB.
+- GPU consumer: no cabe en una única RTX 4090 (24 GB) en ninguna cuantización; las variantes IQ2_XXS + IQ2_S son las únicas viables en configuraciones de 3-4 GPU consumer de 24 GB, con rendimiento limitado.
+- Opciones de despliegue: llama.cpp (PR #32517, commit `0a054d0b0`, o build parcheado de Tencent), con `llama-cli` y `llama-server`; soporte CUDA y Metal en la misma compilación. vLLM, TGI u Ollama no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles. La carga mmap con lazy-mode reduce el consumo de memoria pero añade latencia de lectura de disco en el primer uso de cada prompt.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Hy4-flash (este GGUF) | 220B / 12B | no disponible | tencent-hy-license | GGUF | Multimodal, en/zh, tablas Engram separadas |
-| tencent/Hy4-flash (FP8 original) | 220B / 12B | no disponible | tencent-hy-license | FP8 | Checkpoint de referencia del que se cuantiza |
-| tencent/Hy4-flash Q4_K_M (AngelSlim) | 220B / 12B | no disponible | tencent-hy-license | GGUF | KL 0,2908 y top-1 83,4% frente a la referencia del autor |
+| Hy4-flash (Tencent) | 219B / 12B | no disponible | Tencent Hy License 1.0 | BF16 original, GGUF (esta ficha) | MoE multimodal en/zh |
+| AngelSlim Q4_K_M (cuantización de Hy4-flash) | 219B / 12B | no disponible | Tencent Hy License 1.0 | GGUF | 168,347 GB, KL 0,2161, top-1 85,059% |
+| AngelSlim Q3_K (cuantización de Hy4-flash) | 219B / 12B | no disponible | Tencent Hy License 1.0 | GGUF | 155,371 GB, KL 0,2969, top-1 82,392% |
+| AngelSlim IQ2_AH (cuantización de Hy4-flash) | 219B / 12B | no disponible | Tencent Hy License 1.0 | GGUF | 134,996 GB, KL 0,7328, top-1 71,353% |
 
-No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
+No se dispone de información sobre otros modelos comparables de la misma categoría (MoE multimodal de ~200B) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia Tencent Hy License no es una licencia de código abierto estándar; es necesario revisar sus términos antes de cualquier uso comercial.
-- El modelo solo declara soporte de inglés y chino; el rendimiento en otros idiomas no está garantizado, aunque el autor observa salida correcta en coreano en una prueba puntual.
-- La torre de visión en bf16 se distribuye "convertida, no probada" por el autor, por lo que las capacidades multimodales no están validadas en esta distribución.
-- Las métricas de calidad se basan en una batería de solo cinco ítems y en la perplejidad y KL frente a una referencia Q8_0 no publicada; no sustituyen una evaluación estándar de benchmarks.
-- Las cuantizaciones bajas (Q2_K, Q3_K_M) muestran una degradación notable: KL de 0,6808 y top-1 de 73,6% en Q2_K, y KL de 0,3659 en Q3_K_M.
-- El shard Engram requiere 63,36 GB adicionales de RAM de host; el requisito total de memoria (GPU más host) supera los 128 GB en las cuantizaciones altas.
-- Riesgo de alucinación y sesgos: no se han publicado análisis específicos en la información disponible.
-- Las velocidades de Q4_K_M, Q4_K_S e IQ4_XS están pendientes o descartadas por solapamiento con otras tareas en la máquina de medición.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica una distribución muy reciente y sin validación comunitaria.
+- Solo se soportan inglés y chino; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- La licencia Tencent Hy License 1.0 incluye términos adicionales para operadores de Model-as-a-Service a gran escala; es imprescindible revisar el archivo `LICENSE` antes de un uso comercial o de ofrecer el modelo como servicio.
+- Las cuantizaciones de baja precisión (IQ2_XXS + IQ2_S, Q2_K) muestran una degradación notable: top-1 del 69,314% en WikiText-2 y KL de 0,8349 frente a BF16, lo que las hace inadecuadas para tareas que requieran alta fidelidad.
+- Requiere una compilación específica de llama.cpp (PR #32517) no fusionada en la rama principal en el momento de la publicación; la estabilidad y el soporte a largo plazo de esa integración no están garantizados.
+- El drafter de decodificación especulativa DFly2 del modelo base no está incluido en estas cuantizaciones, por lo que el rendimiento en latencia será inferior al del modelo original.
+- El proyector de visión es opcional y debe descargarse por separado (`mmproj-Hy4-flash-*.gguf`); sin él, el modelo funciona solo como text-to-text.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; se recomienda evaluación propia antes de producción.
+- El tamaño del repositorio (1.760,5 GB) implica una descarga considerable; conviene seleccionar únicamente los shards de la cuantización deseada.
+- Longitud de contexto no disponible: no se puede planificar el uso en conversaciones largas o documentos extensos sin verificar este dato en la documentación del modelo base.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/Hy4-flash-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy4-flash
 - Licencia: https://huggingface.co/Xylolabs/Hy4-flash-GGUF/blob/main/LICENSE
-- PR de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/32517
-- Repositorio de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Pull request de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/32517
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Repositorio de Xylolabs (referenciado en la model card): https://github.com/XylolabsInc/tensix-bfp-gptq

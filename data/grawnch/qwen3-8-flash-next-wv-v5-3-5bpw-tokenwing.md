@@ -2,88 +2,106 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-WV-v5-3.5bpw-TokenWing es una cuantizacion GGUF pretranscodificada del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el usuario Grawnch. El checkpoint conserva los 176.943.899.520 parametros (aproximadamente 177B) del modelo original, que segun la model card se describe como un modelo de 180B con 48 capas hibridas GDN mas sparse-QSA y 512 expertos enrutados con top-10. La cuantizacion se realiza en formato TokenWing mediante el plugin wv-plugin-v1.1, a una precision nominal de 3.5 bits por peso (WV-v5).
+Qwen3.8-Flash-Next-WV-v5-3.5bpw-TokenWing es una cuantizacion GGUF de 3,5 bits por peso del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Grawnch. El checkpoint emplea el formato propietario TokenWing (plugin `wv-plugin-v1.3`, ABI v2), que no es un GGUF estandar de llama.cpp: requiere un plugin de cuantizacion externo (`libqfn_wv_plugin.so` en Linux o `qfn_wv_plugin.dll` en Windows) y el runtime `runmyai/tokenwing` en su rama `dev`. El modelo base es un MoE de aproximadamente 180 000 millones de parametros con 48 capas hibridas GDN mas sparse-QSA y 512 expertos enrutados con top-10.
 
-El interes de esta ficha radica en que no se trata de un modelo nuevo, sino de un artefacto de despliegue: un GGUF de dos shards pensado para ejecutarse con un runtime especifico (runmyai/tokenwing en la rama feat/quant-plugin) y un plugin binario propietario distribuido aparte. Esto condiciona por completo su evaluacion practica: no es un GGUF estandar compatible con llama.cpp de serie, sino que exige una extension de cuantizacion concreta.
+La relevancia de esta publicacion no esta en el modelo en si, sino en la ingenieria de despliegue: consigue ejecutar un MoE de ese tamano en GPUs de 12 GB de VRAM mediante streaming por NVMe de los expertos, con tasas de decodificacion de 19,5 a 25,9 tok/s y una tasa de acierto de cache del 92-97 %. En una GPU de estacion de trabajo completa (RTX PRO 6000 Blackwell) alcanza 67,4 tok/s de decodificacion y 107,3 tok/s de prefill.
 
-La licencia declarada es Apache 2.0, heredada del modelo base, y el repositorio ocupa 84.0 GB en total (51.41 GiB el tronco de 48 capas con expertos MoE y 26.82 GiB la tabla PLE de la capa 1). No se dispone de informacion sobre idiomas soportados, datos de entrenamiento ni resultados de benchmarks en la informacion proporcionada.
+La licencia declarada es Apache 2.0, heredada del modelo base. El repositorio ocupa 86,2 GB repartidos en dos shards (53,48 GiB y 26,82 GiB), con 1422 descargas y 2 likes en el momento de la consulta. Es, por tanto, un artefacto de nicho orientado a usuarios del ecosistema TokenWing, no un GGUF generico compatible con Ollama o llama.cpp sin modificaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con capas GDN (Gated DeltaNet) y sparse-QSA; MoE con 512 expertos enrutados, top-10 |
-| Parametros totales | 176.943.899.520 (~177B; la model card indica 180B) |
-| Parametros activos | no disponible (top-10 de 512 expertos, sin cifra de parametros activos publicada) |
-| Longitud de contexto | no disponible (el ejemplo de ejecucion usa `-c 8192`) |
-| Tipos de cuantizacion | GGUF TokenWing WV-v5 a 3.5 bpw (unica variante en este repo) |
+| Arquitectura | Transformer MoE hibrido: 48 capas GDN + sparse-QSA, 512 expertos enrutados top-10 |
+| Parametros totales | 176 943 899 520 (~180B) |
+| Parametros activos | no disponible (top-10 de 512 expertos, sin cifra publicada) |
+| Longitud de contexto | hasta 32 768 tokens en el comando de ejemplo (`-c 32768`); contexto nativo del modelo base no disponible |
+| Tipos de cuantizacion | WV-v5 a 3,5 bpw (formato TokenWing propietario); tabla PLE de la capa 1 en Q4_0 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF en 2 shards (TokenWing, plugin wv-plugin-v1.1) |
+| Formato de pesos | GGUF TokenWing (2 shards, ABI v2, requiere plugin de cuantizacion externo) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo base como una arquitectura hibrida de 48 capas que combina capas GDN (Gated DeltaNet, atencion lineal con estado recurrente) con capas de atencion dispersa QSA, sobre un backbone Mixture-of-Experts con 512 expertos enrutados y activacion top-10 por token. Esta combinacion busca reducir el coste de atencion en contextos largos manteniendo la capacidad de los modelos densos grandes mediante el enrutamiento disperso de expertos.
+El modelo base Qwen3.8-Flash-Next es un transformer con mezcla de expertos que combina 48 capas hibridas de dos tipos: capas GDN (Gated Delta Network, una variante de attention lineal con estado recurrente) y capas sparse-QSA (atención dispersa). El trunk enruta cada token hacia 10 de los 512 expertos disponibles. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; esos datos corresponden al modelo original y no se reproducen en esta ficha.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF, DPO u otras optimizaciones de alineamiento. Tampoco se documenta en la informacion proporcionada ninguna innovacion de decodificacion (decodificacion especulativa, etc.). La unica innovacion tecnica documentada es la propia cuantizacion TokenWing WV-v5, que transcodifica los pesos a 3.5 bpw y separa la tabla PLE (layer-1 PLE table) en un segundo shard de 26.82 GiB, ademas de ofrecer streaming de expertos MoE desde RAM/CPU mediante flags del runtime (`--moe-stream`, `--moe-stream-ram-mib`, `--moe-stream-cpu-x4`, `--moe-stream-idle-load`).
+La innovacion tecnica de esta publicacion es el formato de cuantizacion WV-v5 a 3,5 bpw y su integracion con el runtime TokenWing. El checkpoint incluye metadatos de enrutamiento y ordenacion de cache de expertos precalculados en el shard 1, lo que permite al runtime predecir que expertos se van a necesitar y mantenerlos en RAM o VRAM. Tambien embebe la plantilla de chat y el token EOS (`<|im_end|>`, id 248046). El autor reporta paridad de logits entre CPU pura (`-ngl 0`) y CUDA (`-ngl 99`) con coseno de similitud 1.000000, y perplejidad de 3,1299 en WikiText-2 y 2,4875 en un corpus de matematicas y codigo de sistemas, ambas con contexto 512.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, segun el pipeline declarado (`text-generation` y tag `conversational`).
-- Razonamiento y respuesta a instrucciones: capacidad esperable por el tamano del modelo base, aunque no verificada con benchmarks en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; el repositorio no declara idiomas.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
-- Despliegue con streaming de expertos MoE: el runtime permite cargar expertos bajo demanda desde RAM o CPU, lo que habilita ejecucion en equipos con VRAM limitada a costa de latencia.
+- Generacion de texto conversacional y continuacion de texto, segun el pipeline declarado (`text-generation`, `conversational`).
+- Razonamiento y generacion de codigo, incluyendo codigo de sistemas y CUDA: el autor reporta PPL de 2,4875 en un corpus especifico de matematicas y codigo de sistemas.
+- Soporte de plantilla de chat embebida, lo que permite uso directo en modo conversacional sin configuracion adicional.
+- Decodificacion especulativa mediante sidecar MTP opcional (`Qwen3.8-Flash-Next-WV-v5-MTP-Draft.gguf`, 2,39 GiB) con aceptacion del 77-86,8 %.
+- Decodificacion especulativa n-gram integrada en el runtime (`--spec-type ngram-mod`), que eleva el throughput de 19,5 a 25,9 tok/s en configuracion de VRAM limitada.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Tool calling, function calling, uso como agente y modo thinking: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local de un modelo de ~177B en estaciones de trabajo con VRAM moderada: gracias al streaming de expertos MoE (`--moe-stream auto --moe-stream-ram-mib 6144`), se pueden mantener en GPU solo las capas densas y descargar los expertos a RAM, lo que hace viable ejecutar el modelo en un unico equipo con 24-48 GB de VRAM y RAM abundante.
-- Servicio de generacion de texto autoalojado: al ser un GGUF con licencia Apache 2.0, se puede desplegar en infraestructura propia sin coste de licencia, usando el runtime TokenWing como servidor de inferencia para aplicaciones de chat o resumen.
-- Procesamiento por lotes de documentos largos: la combinacion de capas GDN lineales con atencion dispersa QSA esta disenada para reducir el coste en contextos largos, lo que resulta adecuado para tareas de resumen y extraccion sobre documentos extensos (el contexto maximo real no esta documentado; el ejemplo usa 8192 tokens).
-- Experimentacion e investigacion en cuantizacion: este checkpoint sirve como referencia practica para evaluar la calidad de la cuantizacion WV-v5 a 3.5 bpw frente al modelo base en tareas de generacion, midiendo la degradacion introducida por la precision reducida.
-- Evaluacion de runtimes alternativos: permite comparar el rendimiento del runtime TokenWing con plugin frente a otras soluciones de inferencia sobre el mismo modelo base, en terminos de throughput y uso de memoria.
-- Prototipado de asistentes conversacionales en entornos sin acceso a APIs en la nube: al ejecutarse completamente en local, es util para escenarios con requisitos de privacidad o sin conectividad.
-- Despliegue en Windows o Linux de escritorio: el plugin se distribuye como `libqfn_wv_plugin.so` (Linux) y `qfn_wv_plugin.dll` (Windows), lo que permite montar un entorno de pruebas en equipos de desarrollo convencionales.
+- Inferencia de un MoE de 180B en portatiles con GPU de 12 GB: el streaming por NVMe de los expertos permite ejecutar el modelo con 12 GB de VRAM y 20-32 GB de RAM a 25 tok/s, algo imposible con un GGUF convencional de ese tamano.
+- Estaciones de trabajo con GPU profesional: con una RTX PRO 6000 Blackwell y `-ngl 99` se obtienen 67,4 tok/s de decodificacion y 107,3 tok/s de prefill, adecuado para generacion interactiva de codigo y documentacion tecnica.
+- Asistentes de codigo en local: la PPL de 2,4875 en codigo de sistemas y CUDA sugiere buen comportamiento en tareas de programacion de bajo nivel, y el modelo puede servirse con `llama-server` exponiendo una API compatible con endpoints.
+- Procesamiento por lotes en hardware modesto: el modo de streaming directo desde NVMe (`<12 GB` VRAM, 6 GiB RAM) permite dejar trabajos de generacion largos en marcha sin GPU dedicada de gama alta.
+- Investigacion sobre cuantizacion extrema: el checkpoint sirve como banco de pruebas para estudiar el impacto de 3,5 bpw en un MoE de 512 expertos, con metricas de paridad de logits y perplejidad ya publicadas.
+- Despliegue de bajo coste con contexto medio: la configuracion de ejemplo usa `-c 8192` y `-c 32768`, suficiente para conversaciones multi-turno y analisis de documentos tecnicos de tamano moderado.
+- Evaluacion de decodificacion especulativa: el sidecar MTP y el modo n-gram permiten medir ganancias de throughput en entornos con ancho de banda de memoria limitado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Metrica | Valor | Condiciones |
+|---|---|---|
+| Perplejidad WikiText-2 | 3,1299 | contexto 512 |
+| Perplejidad matematicas y codigo de sistemas | 2,4875 | contexto 512 |
+| Paridad de logits CPU vs CUDA (coseno) | 1,000000 | 48 capas, `-ngl 0` vs `-ngl 99` |
+| Decodificacion, streaming NVMe bajo VRAM | 19,51 tok/s | `<12 GB` VRAM, 6 GiB RAM, `-t 8`, prompt tecnico |
+| Decodificacion, streaming NVMe bajo VRAM | 19,42 tok/s | `<12 GB` VRAM, 6 GiB RAM, `-t 8`, prompt CUDA |
+| Decodificacion, plugin con pool de RAM | 25,06-25,87 tok/s | `<12 GB` VRAM, 20 GiB RAM, `-t 10`, n-gram especulativo |
+| Decodificacion, VRAM completa | 67,40 tok/s | RTX PRO 6000 Blackwell, `-ngl 99`, 256 tokens |
+| `llama-bench tg128` | 52,82 tok/s | RTX PRO 6000 Blackwell |
+| `llama-bench pp512` | 107,30 tok/s | RTX PRO 6000 Blackwell |
+| Aceptacion del sidecar MTP | 77-86,8 % | `--spec-type draft-mtp --spec-draft-n-max 1` |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio pesa 84.0 GB en total (51.41 GiB el tronco y 26.82 GiB la tabla PLE). Sin streaming, se necesitaria VRAM o memoria unificada del orden de 80-90 GB para cargar ambos shards. Con streaming de expertos MoE activado, la VRAM requerida baja sustancialmente, ya que los expertos se descargan a RAM (`--moe-stream-ram-mib 6144` reserva 6 GiB de RAM para el buffer de streaming).
-- GPU recomendadas: no disponible en la informacion proporcionada. Por el volumen de pesos, un despliegue completo sin streaming encaja en A100 80 GB, H100 80 GB o configuraciones multi-GPU; con streaming, GPUs de 24 GB (RTX 4090, RTX 3090) o 48 GB (RTX 6000 Ada, L40S) podrian ser suficientes, aunque no hay datos confirmados.
-- Cabe en consumer GPU: con streaming de expertos y RAM suficiente (el ejemplo reserva 6 GiB de buffer y usa `-t 8` hilos), es plausible en una RTX 4090 de 24 GB; sin streaming, no cabe en ninguna consumer GPU actual.
-- Opciones de despliegue: el runtime requerido es `runmyai/tokenwing` en la rama `feat/quant-plugin` con el plugin `wv-plugin-v1.1`. El ejemplo de la model card usa `llama-cli` con `--quant-plugin libqfn_wv_plugin.so`, `-ngl 99`, `--moe-stream auto`, `-t 8` y `-c 8192`. No se documenta compatibilidad con vLLM, Ollama, TGI ni llama.cpp estandar.
-- Latencia y throughput estimados: no disponible. El uso de streaming de expertos desde RAM/CPU implica latencia adicional por cada acceso a expertos no residentes en GPU, pero no se publican cifras de tokens por segundo.
+- VRAM minima practica: menos de 12 GB con streaming por NVMe; el propio autor documenta funcionamiento con 6 GiB de RAM en modo directo.
+- Configuracion recomendada por el autor: GPU de 12 GB mas 32 GB de RAM, con ~25,9 tok/s de decodificacion y 97,4 % de acierto de cache.
+- VRAM completa: el checkpoint completo requiere cargar 53,48 GiB mas 26,82 GiB en memoria de GPU; solo es viable en GPUs profesionales de 80-96 GB o superiores, como la RTX PRO 6000 Blackwell usada en las mediciones.
+- GPU validadas en la documentacion: RTX PRO 6000 Blackwell. Otras GPU (A100, H100, RTX 4090) no aparecen en las mediciones publicadas.
+- Sidecar MTP opcional: requiere GPU de 24 GB o mas.
+- Despliegue: exclusivamente mediante `runmyai/tokenwing` (rama `dev` >= 6a3e018f) con el plugin `wv-plugin-v1.3`. No es compatible con llama.cpp estandar, Ollama, vLLM ni TGI sin adaptacion.
+- Plataformas soportadas: Linux x86_64 (GLIBC <= 2.34) y Windows x86_64.
+- Almacenamiento: los dos shards suman 80,3 GiB; en modo streaming por NVMe se leen 272-285 MiB por token, por lo que se recomienda SSD NVMe rapido.
+- Throughput: 19,4-25,9 tok/s en configuracion de VRAM limitada; 52,8-67,4 tok/s en GPU completa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato / runtime |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Runtime |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-WV-v5-3.5bpw-TokenWing (este) | ~177B (180B segun model card) | no disponible | 3.5 bpw TokenWing | Apache 2.0 | GGUF TokenWing, requiere plugin wv-plugin-v1.1 |
-| Qwen/Qwen3.8-Flash-Next (base) | ~177B (180B segun model card) | no disponible | pesos originales | Apache 2.0 | safetensors (presumiblemente) |
-| Otras cuantizaciones GGUF del mismo base | ~177B | no disponible | no disponible en la informacion | Apache 2.0 | GGUF estandar (no confirmado) |
+| Qwen3.8-Flash-Next-WV-v5-3.5bpw-TokenWing | ~180B (MoE top-10/512) | hasta 32 768 en ejemplos | WV-v5 3,5 bpw (propietario) | Apache 2.0 | TokenWing + plugin externo |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180B (MoE top-10/512) | no disponible | safetensors originales | Apache 2.0 | transformers, vLLM, TGI |
+| GGUFs estandar de MoE grandes (p. ej. familia Qwen3 MoE) | variable | variable | Q4_K_M, Q5_K_M, etc. | segun modelo | llama.cpp, Ollama |
 
-La comparativa con alternativas de otros desarrolladores no esta disponible en la informacion proporcionada. La diferencia principal frente al modelo base es la precision (3.5 bpw frente a los pesos originales) y el requisito de un runtime y plugin especificos, a cambio de una huella de 84.0 GB y la posibilidad de streaming de expertos.
+La comparacion directa con alternativas de la misma categoria es limitada: no hay en la informacion proporcionada datos de benchmarks que permitan situar este checkpoint frente a otras cuantizaciones del mismo modelo base ni frente a MoE de tamano similar. La diferencia principal frente a un GGUF convencional es el formato propietario y el requisito de plugin, compensado por la capacidad de ejecutar el modelo con streaming de expertos desde disco.
 
 ## Limitaciones y advertencias
 
-- Dependencia de runtime propietario: el GGUF no es cargable con llama.cpp estandar; requiere `runmyai/tokenwing` (rama `feat/quant-plugin`) y el plugin binario `wv-plugin-v1.1` descargado desde un repositorio externo (`grawnchtoader/tokenwing-assets`). Esto introduce un punto unico de fallo y una superficie de confianza adicional (binarios de terceros).
-- Cuantizacion agresiva a 3.5 bpw: la precision reducida puede degradar la calidad en tareas sensibles (matematicas, codigo, razonamiento largo) respecto al modelo base; no se publican evaluaciones que cuantifiquen esa perdida.
-- Repositorio sin adopcion: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion comunitaria y de reportes de calidad independientes.
-- Idiomas no declarados: no se puede confirmar el soporte multilingue ni el comportamiento en castellano.
-- Contexto maximo no documentado: el ejemplo de ejecucion usa `-c 8192`; no se confirma la ventana nativa del modelo base ni si la cuantizacion la preserva.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; es esperable en modelos de esta escala sin datos de alineamiento publicados.
-- Sesgos: no documentados.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del plugin y del runtime TokenWing, que se distribuyen por separado y cuya licencia no se detalla en la informacion proporcionada.
-- Rendimiento en produccion incierto: sin cifras de latencia ni throughput, y con streaming de expertos desde RAM/CPU, el rendimiento puede degradarse de forma significativa bajo carga concurrente.
+- Formato no estandar: el checkpoint no carga en llama.cpp, Ollama, vLLM ni TGI sin el plugin `wv-plugin-v1.3` y el runtime TokenWing. Esto limita la portabilidad y ata el despliegue a un proyecto concreto.
+- Dependencia de un runtime en rama `dev`: el propio autor especifica una version minima (`>= 6a3e018f`) y advierte de que es codigo en desarrollo, con riesgo de cambios incompatibles.
+- Rendimiento dependiente del almacenamiento: en modo streaming se leen 272-285 MiB por token desde NVMe; un SSD lento degrada drasticamente el throughput.
+- Perdida de calidad por cuantizacion: 3,5 bpw es una precision agresiva; aunque el autor reporta paridad de logits CPU/CUDA y perplejidades bajas, no se han publicado evaluaciones en tareas de razonamiento o codigo que permitan descartar degradacion frente al modelo original.
+- Idiomas soportados no documentados: no se puede garantizar calidad multilingue sin evaluacion propia.
+- Sesgos y alucinaciones: no hay informacion especifica en la model card; deben asumirse los del modelo base Qwen3.8-Flash-Next, no documentados aqui.
+- Datos de entrenamiento ausentes: se desconoce la composicion del dataset, el numero de tokens y si hubo alineacion por RLHF o DPO.
+- Soporte comunitario minimo: 2 likes y 1422 descargas, con una unica fuente de plugins y assets en GitHub; riesgo de abandono o falta de mantenimiento.
+- Uso comercial: la licencia Apache 2.0 lo permite, pero conviene verificar las condiciones del modelo base y del runtime TokenWing, que pueden tener licencias independientes.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-v5-3.5bpw-TokenWing
+- Modelo en Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-v5-3.5bpw-TokenWing
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Runtime TokenWing: `runmyai/tokenwing` (rama `feat/quant-plugin`; sin URL completa en la informacion proporcionada)
-- Assets del plugin: https://github.com/grawnchtoader/tokenwing-assets/releases/tag/wv-plugin-v1.1
+- Runtime TokenWing: https://github.com/runmyai/tokenwing
+- Assets del plugin (release `wv-plugin-v1.3`): https://github.com/grawnchtoader/tokenwing-assets/releases/tag/wv-plugin-v1.3
+- Sidecar MTP y assets del modelo: https://huggingface.co/Grawnch/TokenWing-Model-Assets

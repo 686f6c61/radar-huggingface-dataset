@@ -2,108 +2,101 @@
 
 ## Resumen
 
-Este repositorio es una cuantizacion mixta en formato MLX del modelo nvidia/Llama-3_3-Nemotron-Super-49B-v1_5, publicada por el usuario staccs. No se trata de un modelo entrenado desde cero, sino de una version comprimida del Nemotron Super 49B de NVIDIA, un transformer decoder-only denso de aproximadamente 49.867 millones de parametros (49,87B), derivado de Llama-3.3-70B-Instruct mediante tecnicas de busqueda de arquitectura (NAS) y post-entrenado para razonamiento, chat, RAG y tool calling, con una ventana de contexto de 128.000 tokens.
+Llama-3_3-Nemotron-Super-49B-v1_5-lecore-mlx es una cuantizacion de precision mixta en formato MLX del modelo nvidia/Llama-3_3-Nemotron-Super-49B-v1_5, publicada por el usuario staccs bajo el metodo leCore Unicron `requantize`. No es un modelo nuevo ni reentrenado: solo se han recuantizado los pesos originales para reducir el espacio en disco y el consumo de memoria, eligiendo el numero de bits de cada capa lineal mediante medicion de dano (divergencia KL sobre distribuciones de siguiente token). El resultado ocupa 19,49 GB frente a los aproximadamente 100 GB que requeriria el modelo en bf16, lo que lo hace desplegable en equipos Apple Silicon de gama alta.
 
-El problema que resuelve es el de ejecutar un modelo de ~50B en hardware de Apple Silicon con memoria unificada limitada: los pesos originales en bf16 ocuparian cerca de 100 GB, mientras que esta version los reduce a unos 19,49 GB mediante una receta de cuantizacion por tensor. La seleccion de bits por capa la realiza leCore Unicron `requantize`, que mide el dano (KL entre la distribucion fp16 y la cuantizada) de cada tensor lineal por separado y asigna bits de forma greedy para minimizar la perdida de calidad por byte ahorrado.
+El modelo base es un transformer denso de 49.867.145.216 parametros derivado de Llama-3.3-70B-Instruct, con la arquitectura NAS (Neural Architecture Search) de NVIDIA Nemotron, que poda capas y dimensiones del modelo original. Esta orientado a generacion de texto, conversacion y razonamiento, con enfasis en ingles y con soporte de plantilla de chat. La version aqui descrita anade la restriccion de que requiere la libreria mlx-lm con soporte `nemotron-nas` y esta pensada exclusivamente para ejecucion en Apple Silicon mediante MLX.
 
-Su relevancia actual es doble: por un lado, demuestra una estrategia de cuantizacion mixta guiada por medicion (no una receta fija) aplicada a un modelo de razonamiento de gama alta; por otro, permite inferencia local en Macs de 36 GB o mas. El coste es una degradacion notable de perplejidad en texto general (de 13,02 a 37,35 en WikiText-2), que conviene valorar antes de usarlo en produccion.
+La relevancia de esta ficha es practica: demuestra que una cuantizacion guiada por medicion por capa (2, 3, 4 y 8 bits segun el tensor) supera a las recetas estandar de MLX en perplejidad a igualdad de tamano, con un coste de 3,127 bits por peso y un rendimiento en MMLU 5-shot del 72,1 % sobre subconjuntos. Es un caso de estudio util para quien necesite ejecutar modelos de ~50B en hardware de consumo con memoria unificada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only derivado de Llama 3.3, con arquitectura optimizada via NAS (tag `nemotron-nas`) |
-| Parametros totales | 49.867.145.216 (~49,87B) |
+| Arquitectura | Transformer denso con poda NAS (nemotron-nas), derivado de Llama-3.3-70B-Instruct |
+| Parametros totales | 49.867.145.216 (49,87B) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 128.000 tokens (segun el modelo base de NVIDIA) |
-| Tipos de cuantizacion | MLX affine mixed-precision, group size 64; mezcla de 2/3/4/8 bits en tensores lineales (histograma: 149 capas a 2 bits, 226 a 3 bits, 59 a 4 bits, 2 a 8 bits); embeddings a 4 bits; lm_head a 6 bits; ~3,127 bpw |
-| Idiomas soportados | no disponible |
-| Licencia | NVIDIA Open Model License; adicionalmente aplica Llama 3.3 Community License Agreement (modelo derivado de Llama-3.3) |
-| Formato de pesos | safetensors (MLX); requiere mlx-lm con soporte `nemotron-nas` |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de uso emplea `--max-kv-size 8192`) |
+| Tipos de cuantizacion | Precision mixta MLX affine, group size 64: 2, 3, 4 y 8 bits por tensor lineal; embeddings a 4 bits, lm_head a 6 bits; media de 3,127 bpw |
+| Idiomas soportados | en (ingles) |
+| Licencia | other: NVIDIA Open Model License + Llama 3.3 Community License Agreement |
+| Formato de pesos | safetensors (4 shards, MLX), 19,49 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Llama-3_3-Nemotron-Super-49B-v1_5, es un transformer decoder-only denso de aproximadamente 49,87B de parametros. NVIDIA lo obtuvo a partir de Llama-3.3-70B-Instruct mediante busqueda de arquitectura neuronal (NAS), que poda y reorganiza el modelo original para reducir su tamano manteniendo la mayor parte de la capacidad, de ahi el tag `nemotron-nas`. Sobre esa base se aplico un post-entrenamiento orientado a razonamiento, preferencias de chat humano y tareas como RAG y tool calling. El modelo soporta una ventana de contexto de 128.000 tokens.
+El modelo base emplea una arquitectura transformer densa con poda estructural obtenida mediante Neural Architecture Search sobre Llama-3.3-70B-Instruct, de ahi la etiqueta `nemotron-nas` y la reduccion de 70B a ~49,87B de parametros. El repositorio incluye ficheros de modelado personalizados (`modeling_decilm.py`, utilidades de RoPE y cache de transformers 4.44.2), lo que indica que la implementacion no es la estandar de transformers y requiere soporte especifico en mlx-lm. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo base.
 
-Este repositorio concreto no reentrena ni ajusta el modelo: solo cuantiza los pesos. El procedimiento de leCore Unicron `requantize` cuantiza cada tensor lineal del decoder de forma aislada (MLX affine, group size 64) a 2, 3 y 4 bits y mide el dano como KL(fp16 || cuantizado) sobre las distribuciones de siguiente token en una mezcla de calibracion (3066 tokens de train de WikiText-2, 1022 tokens de codigo Python y una sonda estructurada de prosa, codigo, SQL y markdown). A continuacion asigna bits de forma greedy: parte de 4 bits en todas las capas y aplica repetidamente la degradacion con menor dano medido por byte ahorrado hasta encajar en el presupuesto de tamano. La conversion final se hizo con `mlx_lm.convert` y un `quant_predicate` por capa.
+La innovacion de este repositorio concreto es el procedimiento de cuantizacion. Cada tensor lineal del decodificador se cuantizo de forma aislada con MLX affine (group 64) a 2, 3 y 4 bits, y se midio el dano como KL(fp16 || cuantizado) sobre las distribuciones de siguiente token en una mezcla de calibracion de 3066 tokens de WikiText-2 train, 1022 tokens de codigo Python y una sonda estructurada de prosa, codigo, SQL y markdown. Partiendo de 4 bits en todas las capas, se aplicaron degradaciones greedy eligiendo en cada paso la que minimizaba el dano medido por byte ahorrado hasta encajar en el presupuesto de tamano. El histograma final de tensores lineales es: 149 a 2 bits, 226 a 3 bits, 59 a 4 bits y 2 a 8 bits. La conversion se realizo con `mlx_lm.convert` y un `quant_predicate` por capa.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso, heredadas del post-entrenamiento del modelo base para tareas de razonamiento.
-- Soporte de tool calling / function calling, segun las capacidades declaradas del modelo base de NVIDIA.
-- Uso en pipelines de agentes y flujos multi-step, como parte del diseno del Nemotron Super.
-- RAG (generacion aumentada por recuperacion) gracias a la ventana de 128.000 tokens del modelo base.
-- Chat conversacional e instrucciones, con preferencias de chat humano en el post-entrenamiento.
-- Generacion de codigo (el modelo base esta orientado tambien a tareas tecnicas), aunque la cuantizacion mixta de este repo preserva mejor el codigo Python que las recetas estandar (ver benchmarks).
-- Modo de razonamiento (`thinking`): el modelo base Nemotron Super incluye un modo de razonamiento; este repo no lo elimina, pero conviene verificar su comportamiento tras la cuantizacion.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Generacion de texto y conversacion multi-turno en ingles, con plantilla de chat.
+- Razonamiento y respuesta a preguntas de conocimiento general (MMLU 5-shot del 72,1 % en subconjunto).
+- Generacion de codigo: la perplejidad en codigo Python del modelo cuantizado es 7,8224 frente a 5,0725 del bf16, lo que sugiere degradacion moderada pero uso viable.
+- Razonamiento matematico: el modelo base esta orientado a tareas de razonamiento, aunque no se han publicado resultados de GSM8K para esta cuantizacion.
+- Soporte de tool calling y function calling: no confirmado en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- No se documentan capacidades de vision, audio ni modo thinking explicito.
 
 ## Casos de uso
 
-- Asistente de razonamiento local en Mac: el modelo se ejecuta integramente en Apple Silicon mediante mlx-lm, sin conexion a servicios externos, lo que lo hace adecuado para entornos donde la privacidad de los datos es critica y no se quiere enviar informacion a la nube.
-- RAG sobre documentacion extensa: la ventana de 128.000 tokens del modelo base permite inyectar grandes volumenes de contexto recuperado (manuales, bases de conocimiento, expedientes) y responder preguntas sobre ellos en un unico paso.
-- Agentes con tool calling: al conservar la capacidad de function calling del modelo base, se puede integrar en un bucle de agente que consulte APIs, ejecute busquedas o modifique ficheros, siempre que el backend MLX soporte el formato de herramientas requerido.
-- Generacion de codigo en local: la receta de cuantizacion mixta mantiene una perplejidad en codigo Python (7,82) muy inferior a la de las recetas estandar (30,73 en 3-bit y 14,15 en `mixed_2_6`), por lo que es una opcion razonable para autocompletado o refactorizacion asistida en un Mac de gama alta.
-- Prototipado y evaluacion sin GPU dedicada: equipos que no disponen de A100/H100 pueden probar un modelo de ~50B en un Mac de 36 GB o mas antes de decidir un despliegue en servidor.
-- Analisis de documentos largos y extraccion estructurada: resumen de informes, extraccion de campos o clasificacion de texto en lotes, aprovechando el contexto extendido y ejecutandose en local.
-- Chat conversacional multi-turno: gestion de conversaciones con historial largo dentro del limite de KV cache configurado en mlx-lm.
-- Base para pruebas de cuantizacion: util como referencia para comparar estrategias de cuantizacion mixta frente a recetas fijas en un mismo hardware.
+- Asistente conversacional local en Mac: el modelo cabe en 19,49 GB y puede ejecutarse con mlx-lm en equipos Apple Silicon de 32-36 GB de memoria unificada, permitiendo un asistente privado sin conexion a servicios externos.
+- Prototipado de aplicaciones de razonamiento en ingles: con MMLU del 72,1 % en subconjunto, sirve para validar flujos de pregunta-respuesta y clasificacion compleja antes de pasar a modelos mayores o a la version bf16.
+- Generacion y revision de codigo Python en local: la perplejidad de 7,8224 en codigo indica que mantiene capacidad util para autocompletado y explicacion de fragmentos, con la ventaja de no enviar codigo propietario a terceros.
+- Investigacion sobre cuantizacion: el repositorio documenta el metodo leCore Unicron y ofrece pesos comparables (stock 3-bit, mixed_2_6) para reproducir experimentos de perplejidad y calidad por capa.
+- Evaluacion de pipelines MLX: util para medir latencia y throughput reales de un modelo de ~50B cuantizado en hardware Apple antes de comprometerse con un despliegue en produccion.
+- Filtrado y anotacion de datos en ingles: tareas de clasificacion, resumen y reescritura de corpus que se beneficien de ejecucion local y de la licencia del modelo base, siempre que se respeten sus restricciones.
 
 ## Benchmarks y rendimiento
 
-Solo se han publicado mediciones de perplejidad por parte del autor (secuencia 512, pesos cuantizados desquantizados con `mx.dequantize` y ejecutados en bf16 sobre GPU). No se ejecutaron benchmarks de tareas downstream.
+Resultados medidos por el autor sobre los pesos publicados, dequantizados a bf16 y ejecutados en GPU. La evaluacion MMLU usa lm-eval-harness 0.4.9 con 5-shot sobre las 10 primeras preguntas de cada una de las 57 materias (subconjunto, con ruido de muestreo estimado de ±2-4 puntos). GSM8K se evaluo sobre los 100 primeros problemas de test, pero no se reportan resultados para esta cuantizacion.
 
-| Modelo | Tamano (GB, pesos) | bpw | Perplejidad WikiText-2 (32704 tok) | Perplejidad codigo Python (8176 tok) |
-|---|---|---|---|---|
-| Referencia bf16 | – | 16 | 13,0182 | 5,0725 |
-| Este repo (mezcla leCore Unicron) | 19,49 | 3,127 | 37,3530 | 7,8224 |
-| MLX 3-bit estandar, group 64 | 21,82 | 3,500 | 40,7840 | 30,7323 |
-| Receta estandar MLX `mixed_2_6` | 19,72 | 3,164 | 95,8463 | 14,1513 |
+| Modelo | Tamano (GB) | bpw | WikiText-2 ppl | Python-code ppl | MMLU 5-shot | GSM8K strict | GSM8K flexible |
+|---|---|---|---|---|---|---|---|
+| bf16 referencia | – | 16 | 13,0182 | 5,0725 | no disponible | no disponible | no disponible |
+| leCore mix (este repo) | 19,49 | 3,127 | 37,3530 | 7,8224 | 72,1 % | – | – |
+| MLX 3-bit estandar, group 64 | 21,82 | 3,500 | 40,7840 | 30,7323 | no disponible | no disponible | no disponible |
+| MLX `mixed_2_6` estandar | 19,72 | 3,164 | 95,8463 | 14,1513 | no disponible | no disponible | no disponible |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de tareas en la informacion disponible.
+La perplejidad se calculo sobre los pesos exactos publicados (tensores MLX dequantizados con `mx.dequantize`, ejecutados en bf16 en GPU), con secuencia de 512 tokens: 32.704 tokens de WikiText-2 test y 8.176 tokens de un slice distinto de codigo Python. El autor advierte que la perplejidad de contexto corto no refleja toda la calidad y recomienda validar las salidas en el caso de uso propio.
 
 ## Requisitos de hardware
 
-- Pesos del modelo: ~19,49 GB. La memoria adicional para KV cache depende de la longitud de contexto configurada (`--max-kv-size`).
-- Plataforma: exclusivamente Apple Silicon, ya que el formato es MLX. No se puede ejecutar directamente en GPU NVIDIA o AMD con esta libreria.
-- Memoria unificada recomendada: 36 GB como minimo practico; en un Mac de 36 GB el autor indica que puede ser necesario elevar el limite de memoria cableada de la GPU con `sudo sysctl iogpu.wired_limit_mb=30000`. 64 GB o mas ofrece margen comodo para contextos largos.
-- CPU/GPU: no aplica a modelos NVIDIA tipo A100, H100 o RTX 4090, al no ser ejecutable con MLX.
-- Despliegue: `mlx-lm` (instalado con `pip install -U mlx-lm`), invocando `mlx_lm.generate --model staccs/Llama-3_3-Nemotron-Super-49B-v1_5-lecore-mlx --prompt "Hello" --max-tokens 256 --max-kv-size 8192`. Se requiere la version de mlx-lm con soporte `nemotron-nas`.
-- Otras opciones (vLLM, llama.cpp, Ollama, TGI): no disponibles en la informacion proporcionada para esta cuantizacion concreta.
+- VRAM o memoria unificada estimada: 19,49 GB solo de pesos; con cache KV de 8192 tokens y overhead de runtime, se recomienda un minimo de 24-32 GB.
+- Apple Silicon recomendado: Mac con 32 GB o mas de memoria unificada. En un equipo de 36 GB el autor indica que puede ser necesario elevar el limite de memoria cableada de la GPU con `sudo sysctl iogpu.wired_limit_mb=30000`.
+- GPU NVIDIA: no aplicable directamente, ya que los pesos estan en formato MLX y requieren mlx-lm; para CUDA existe la build GGUF del mismo autor (49,94 GB).
+- Cabe en GPU de consumo: si, en el sentido de que cabe en Apple Silicon de gama alta; en GPUs NVIDIA consumer no es desplegable sin convertir los pesos.
+- Opciones de despliegue: mlx-lm (unica soportada oficialmente por este repositorio), con soporte `nemotron-nas` requerido. Para llama.cpp u Ollama debe usarse la build GGUF enlazada.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / plataforma | Perplejidad WikiText-2 | Licencia |
+| Modelo | Parametros | Contexto | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repo (leCore Unicron mix) | ~49,87B | 128K (modelo base) | MLX, mixed-precision ~3,127 bpw | 37,3530 | NVIDIA Open Model License + Llama 3.3 Community License |
-| Receta estandar MLX 3-bit, group 64 | ~49,87B | 128K (modelo base) | MLX, 3-bit uniforme (3,500 bpw) | 40,7840 | NVIDIA Open Model License + Llama 3.3 Community License |
-| Receta estandar MLX `mixed_2_6` | ~49,87B | 128K (modelo base) | MLX, mixta (3,164 bpw) | 95,8463 | NVIDIA Open Model License + Llama 3.3 Community License |
-| nvidia/Llama-3_3-Nemotron-Super-49B-v1_5 (bf16) | ~49,87B | 128K | safetensors bf16 | 13,0182 | NVIDIA Open Model License + Llama 3.3 Community License |
+| leCore mix MLX (este repo) | 49,87B | no disponible | 19,49 GB (3,127 bpw) | NVIDIA Open Model License + Llama 3.3 Community | Hugging Face, MLX |
+| leCore GGUF (mismo autor) | 49,87B | no disponible | 49,94 GB | NVIDIA Open Model License + Llama 3.3 Community | Hugging Face, llama.cpp |
+| MLX 3-bit estandar del mismo base | 49,87B | no disponible | 21,82 GB (3,5 bpw) | NVIDIA Open Model License + Llama 3.3 Community | Hugging Face, MLX |
+| MLX `mixed_2_6` estandar del mismo base | 49,87B | no disponible | 19,72 GB (3,164 bpw) | NVIDIA Open Model License + Llama 3.3 Community | Hugging Face, MLX |
 
-La comparativa se limita a variantes del mismo modelo base, ya que la informacion disponible no incluye datos de modelos alternativos de la misma categoria (por ejemplo, versiones GGUF o cuantizaciones de terceros del mismo Nemotron). No disponible para otros modelos comparables.
+No se dispone de datos de benchmarks para las alternativas estandar ni para la build GGUF, por lo que la comparacion se limita a tamano, formato y licencia. La ventaja medida de este repositorio es la perplejidad: 37,35 frente a 40,78 del 3-bit estandar y 95,85 del `mixed_2_6`, a un tamano inferior en ambos casos.
 
 ## Limitaciones y advertencias
 
-- Perdida de calidad medible por cuantizacion: la perplejidad en WikiText-2 pasa de 13,0182 (bf16) a 37,3530, es decir, casi el triple. La degradacion en codigo Python es mas contenida (de 5,0725 a 7,8224), pero sigue siendo significativa.
-- Sin benchmarks de tareas downstream: el autor solo reporta perplejidad a secuencia 512. No hay datos de MMLU, HumanEval, GSM8K ni evaluaciones de razonamiento, tool calling o RAG, por lo que no se puede garantizar el comportamiento en esos escenarios.
-- La perplejidad de contexto corto no predice por si sola la calidad en contextos largos; conviene validar las salidas con casos reales.
-- Riesgo de alucinacion: como cualquier modelo generativo, puede producir contenido incorrecto con aparente seguridad; la cuantizacion agresiva puede acentuar este efecto.
-- Dependencia de plataforma: el modelo solo funciona en Apple Silicon mediante mlx-lm. No es portable directamente a un servidor con GPU NVIDIA ni a despliegues estandar de vLLM, TGI o llama.cpp.
-- Consumo de memoria en contextos largos: a pesar de que los pesos ocupan 19,49 GB, el KV cache para ventanas de hasta 128K puede agotar la memoria unificada de Macs de 36 GB; es necesario limitar `--max-kv-size`.
-- Licencia: se acumulan dos licencias, la NVIDIA Open Model License y la Llama 3.3 Community License Agreement. Esta ultima impone condiciones de uso comercial (por ejemplo, umbral de usuarios activos mensuales) y obligaciones de atribucion ("Built with Llama"). Conviene revisar ambos textos antes de un uso comercial.
-- Idiomas soportados: no declarados en el repositorio; el modelo base Llama 3.3 esta orientado principalmente al ingles y a un conjunto limitado de idiomas, por lo que el rendimiento en castellano no esta garantizado.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta y creado en octubre de 2026, sin validacion de la comunidad ni mantenimiento conocido.
-- El autor indica que solo se realizo cuantizacion, sin reentrenamiento, por lo que las capacidades dependen integramente del modelo base de NVIDIA.
+- Solo ingles: la model card declara `en` como unico idioma, por lo que el rendimiento en castellano no esta garantizado ni medido.
+- Degradacion medible frente a bf16: la perplejidad en WikiText-2 pasa de 13,02 a 37,35 y la de codigo Python de 5,07 a 7,82; en tareas sensibles a la precision puede haber perdida de calidad.
+- Riesgo de alucinacion inherente al modelo base, no evaluado especificamente en esta cuantizacion.
+- Benchmarks sobre subconjuntos: MMLU se midio con 10 preguntas por materia, con ruido estimado de ±2-4 puntos; no hay resultados de GSM8K ni de tareas downstream completas.
+- Licencia compuesta y restrictiva: se aplican simultaneamente la NVIDIA Open Model License y la Llama 3.3 Community License Agreement; el uso comercial requiere revisar ambas, y la marca "Built with Llama" impone obligaciones de atribucion.
+- Dependencia tecnica fuerte: requiere mlx-lm con soporte `nemotron-nas` y ficheros de modelado personalizados; no es un checkpoint estandar de transformers.
+- Exclusivo de Apple Silicon: los pesos MLX no se ejecutan en CUDA sin conversion; para NVIDIA debe usarse la build GGUF.
+- Sin reentrenamiento: el autor solo cuantizo; cualquier sesgo o limitacion del modelo base se hereda intacto.
+- El repositorio tiene 683 descargas y 0 likes en el momento de la consulta, por lo que la validacion comunitaria es escasa.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/staccs/Llama-3_3-Nemotron-Super-49B-v1_5-lecore-mlx
 - Modelo base: https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
-- Version anterior del modelo base: https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1
-- NVIDIA NIM: https://build.nvidia.com/nvidia/llama-3_3-nemotron-super-49b-v1
-- NVIDIA NGC (Nemotron Super 3.3 49B): https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/nemotron-super-3_3-49b
-- NVIDIA NGC (contenedor v1.5): https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/llama-3.3-nemotron-super-49b-v1.5/
-- NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
-- Llama 3.3 Community License Agreement: https://www.llama.com/llama3_3/license/
-- Libreria de inferencia mlx-lm: https://github.com/ml-explore/mlx-lm
+- Build GGUF del mismo autor: https://huggingface.co/staccs/Llama-3_3-Nemotron-Super-49B-v1_5-lecore-GGUF
+- Build HRR del mismo autor: https://huggingface.co/staccs/Llama-3_3-Nemotron-Super-49B-v1_5-lecore-hrr
+- Licencia NVIDIA Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
+- Licencia Llama 3.3 Community: https://www.llama.com/llama3_3/license/

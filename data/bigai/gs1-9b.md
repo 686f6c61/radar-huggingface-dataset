@@ -2,85 +2,123 @@
 
 ## Resumen
 
-GS1-9B es un modelo de lenguaje publicado por bigai en Hugging Face bajo licencia Apache 2.0. Por el identificador y el tamaño declarado (9B), se trata de un modelo de aproximadamente 9.000 millones de parámetros, presumiblemente orientado a uso general y a despliegues de gama media en infraestructura propia. El repositorio se creó el 9 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
+GS1-9B es un modelo de decisión de tipo nativo desarrollado por BIGAI (Beijing Institute for General Artificial Intelligence). A diferencia de los modelos generativos convencionales, GS1 no produce tokens de salida: calcula distribuciones de probabilidad sobre candidatos definidos en tiempo de ejecución, lo que lo hace adecuado para tareas de enrutamiento de agentes, verificación, extracción y control. El modelo emplea una cabeza de decisión nativa basada en cross-attention multi-cabeza que compara la evidencia del estado con representaciones de pregunta y candidato.
 
-La model card publicada por el autor no incluye documentación técnica: únicamente contiene la declaración de licencia Apache 2.0. No hay información sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas soportados ni metodología de alineación. Tampoco se han publicado resultados de benchmarks ni detalles sobre formatos de pesos o cuantizaciones disponibles.
+El modelo se construye sobre un backbone híbrido derivado de Qwen3.5-9B, con 8.829.078.768 parámetros almacenados, dimensión oculta de 4.096, 32 capas de decodificador y una longitud máxima de rama completa de 32.768 tokens. Su arquitectura intercala tres capas causales de Gated DeltaNet con una capa de atención completa bidireccional segmentada, lo que permite preservar prefijos inmutables reutilizables entre consultas.
 
-La relevancia de este modelo es, por tanto, potencial y no confirmada: el tamaño de 9B lo sitúa en una franja interesante para inferencia en GPUs de consumo de gama alta con cuantización agresiva, y la licencia Apache 2.0 permite uso comercial sin restricciones adicionales. Sin embargo, la ausencia total de documentación impide validar sus capacidades reales, por lo que cualquier evaluación debe realizarse empíricamente antes de considerarlo en producción.
+La relevancia actual de GS1-9B radica en su enfoque de decisión tipada (Choice, Noul, Score) con probabilidades calibradas mediante aprendizaje por refuerzo y recompensa Brier, lo que permite abstenciones explícitas, diferimiento y recogida de evidencia. Alcanza 70,45 en el índice público Decision Index 0.4.1, situándose en la frontera parámetro-rendimiento de la familia GS1.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 9B (inferido del identificador del modelo; no confirmado en la model card) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Arquitectura | Híbrida: Gated DeltaNet causal + atención completa bidireccional segmentada, con cabeza de decisión cross-attention multi-cabeza |
+| Parametros totales | 8.829.078.768 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (longitud máxima de rama completa) |
+| Tipos de cuantizacion | no disponible (pesos almacenados en FP32 para texto y cabeza de decisión, BF16 para torre de visión) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card disponible. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida con componentes SSM o cualquier otra variante. Tampoco se indica el número de capas, la dimensión oculta, el tipo de atención ni el tokenizador empleado.
+GS1-9B utiliza un backbone híbrido basado en Qwen3.5-9B que intercala tres capas causales de Gated DeltaNet con una capa de atención completa bidireccional segmentada. Esta combinación proporciona a los candidatos su contexto completo de comparación mientras preserva prefijos inmutables reutilizables entre preguntas. La innovación "Attention Residual" con preservación de carry permite que los receptores de atención completa dispersa consulten representaciones anteriores manteniendo el ancla explícita de skip-connection.
 
-Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composición del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre posibles innovaciones técnicas como decodificación especulativa, atención lineal o estrategias de contexto extendido. Toda esta información debería considerarse desconocida hasta que el autor publique documentación adicional.
+El modelo incorpora una cabeza de decisión nativa de cross-attention multi-cabeza (16 cabezas de atención de decisión, 2 capas de enrutamiento de candidatos, dimensión de proyección de decisión de 2.048) que consulta la evidencia del estado usando representaciones de pregunta y candidato. El entrenamiento emplea aprendizaje por refuerzo multi-paso con recompensa Brier calibrada (RLCD), optimizando las probabilidades de acción muestreadas. Los pesos de texto y cabeza de decisión se almacenan en FP32, mientras que la torre de visión retenida se almacena en BF16; la inferencia soporta computación BF16 con logits finales FP32 y reducciones de probabilidad.
 
 ## Capacidades
 
-- Generación de texto: capacidad esperable por tratarse de un modelo de lenguaje de 9B, pero no verificada documentalmente.
-- Razonamiento y matemáticas: no disponible.
-- Generación de código: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Decisión tipada nativa con tres primitivas: Choice (enrutamiento, clasificación, selección de herramientas), Noul (verificación y juicios binarios con p(true)) y Score (valoraciones ordenadas y juicios de rúbrica).
+- Generación de distribuciones de probabilidad sobre candidatos definidos en tiempo de ejecución, sin tokens de salida generados.
+- Enrutamiento de agentes y selección de herramientas con probabilidades de todos los candidatos y confianza.
+- Verificación de proposiciones y juicios binarios con probabilidad calibrada.
+- Extracción de información y clasificación con etiquetas candidatas.
+- Control y automatización con juicios de rúbrica y niveles ordenados.
+- Capacidades de visión (torre de visión retenida en BF16).
+- Soporte de abstención explícita, diferimiento y recogida de evidencia gracias a probabilidades nativas y confianza.
+- Multilingüismo: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Evaluación comparativa interna: dado que no hay benchmarks publicados, el primer uso razonable es ejecutar una batería propia de evaluaciones (MMLU, HumanEval, GSM8K o similares) para determinar si el modelo es competitivo frente a alternativas de tamaño comparable antes de adoptarlo.
-- Prototipado de asistentes conversacionales: un modelo de 9B con licencia Apache 2.0 puede desplegarse en infraestructura propia para validar flujos de atención al cliente o asistentes internos, siempre que se mida empíricamente la calidad y la longitud de contexto real.
-- Experimentación académica: investigadores que necesiten un modelo de tamaño medio con licencia permisiva pueden utilizarlo como base para fine-tuning supervisado o DPO, aunque deberán verificar primero la calidad del modelo base.
-- Despliegue en hardware de gama alta de consumo: si los pesos están disponibles en formatos cuantizados (GGUF, AWQ, GPTQ), el modelo podría ejecutarse en GPUs como RTX 4090 con cuantización de 4 bits, lo que lo haría adecuado para entornos de desarrollo local.
-- Fine-tuning específico de dominio: la licencia Apache 2.0 permite adaptar el modelo a dominios verticales (legal, sanitario, financiero) sin obligaciones de compartición de derivados.
-- Generación de código en pipelines internos: si el modelo demuestra competencia en código durante la evaluación empírica, podría integrarse en herramientas de autocompletado o revisión, aunque la ausencia de datos sobre tool calling limita su uso en pipelines agénticos.
-- Base para destilación: un modelo de 9B puede servir como profesor o alumno en procesos de destilación hacia modelos más pequeños, siempre que se valide su calidad previa.
+- Enrutamiento de agentes en sistemas multi-agente: el modelo selecciona la herramienta o agente adecuado entre candidatos definidos en tiempo de ejecución mediante la primitiva Choice, devolviendo probabilidades de todos los candidatos y confianza para permitir políticas de fallback.
+- Verificación de afirmaciones en pipelines de RAG: usando la primitiva Noul, calcula p(true) para proposiciones extraídas de documentos, permitiendo filtrar respuestas no fundamentadas antes de mostrarlas al usuario.
+- Clasificación de tickets de soporte: con candidatos de categorías definidos dinámicamente, produce macro-F1 competitivo (92,76 en BANKING77) sin generar texto, reduciendo latencia y coste.
+- Selección de API en automatización de flujos: la primitiva Choice con candidatos de endpoints permite enrutar llamadas con precisión (85,43 en API-Bank), integrándose en orquestadores de herramientas.
+- Evaluación con rúbricas en control de calidad: la primitiva Score devuelve el nivel esperado cero-indexado y probabilidades por nivel, útil para puntuar respuestas generadas por otros modelos según criterios predefinidos.
+- Diferimiento y abstención en producción: cuando la confianza cae por debajo de un umbral, el modelo puede emitir una elección de abstención explícita, derivando el caso a un humano o a un modelo generativo mayor.
+- Extracción de campos estructurados: con candidatos de valores o etiquetas, calcula distribuciones sobre opciones para tareas de extracción de entidades o normalización de datos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados del índice público Decision Index 0.3 (140.178 peticiones, 312.320 decisiones, 43 benchmarks de texto, cobertura 100%):
+
+| Métrica | GS1-0.8B | GS1-2B | GS1-4B | GS1-9B |
+|---|---:|---:|---:|---:|
+| Public index ↑ | 56,12 | 62,22 | 68,97 | 70,45 |
+| Raw index ↑ | 67,36 | 71,70 | 76,47 | 77,46 |
+| Coverage | 100% | 100% | 100% | 100% |
+
+Puntuaciones por área (escala 0-100 corregida por azar):
+
+| Área | GS1-0.8B | GS1-2B | GS1-4B | GS1-9B |
+|---|---:|---:|---:|---:|
+| Knowledge & Reasoning | 33,32 | 41,84 | 52,40 | 56,01 |
+| Language Understanding | 56,25 | 63,67 | 71,12 | 72,62 |
+| Retrieval & Classification | 68,62 | 71,21 | 75,55 | 75,58 |
+| Tools & Automation | 79,26 | 83,57 | 87,49 | 87,61 |
+| Arts & Human Taste | 47,47 | 54,16 | 59,26 | 60,57 |
+
+Resultados por benchmark seleccionados (GS1-9B):
+
+| Benchmark | Métrica nativa | GS1-9B |
+|---|---|---:|
+| BFCL | case exact accuracy | 96,99 |
+| ToolRet | nDCG@10 | 70,90 |
+| API-Bank | accuracy | 85,43 |
+| BANKING77 | macro-F1 | 92,76 |
+| CLINC150+OOS | macro-F1 | 93,48 |
+| RouterBench † | selected quality | 79,86 |
+| Home appliance simulator | case exact accuracy | 100,00 |
+| SGD/SGD-X † | macro-F1 | 67,60 |
+| ContractNLI | macro-F1 | 85,99 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 18 GB solo para pesos, más overhead de KV cache y activaciones; en la práctica, se recomiendan 24 GB o más.
-- VRAM estimada en cuantización de 8 bits: alrededor de 9-10 GB para pesos, con margen adicional para contexto.
-- VRAM estimada en cuantización de 4 bits: alrededor de 5-6 GB para pesos, lo que permitiría ejecución en GPUs de consumo con 8-12 GB, dependiendo de la longitud de contexto.
-- GPUs recomendadas: A100 40/80 GB o H100 para FP16 sin cuantizar; RTX 4090 (24 GB) para FP16 ajustado o cuantizaciones de 8 bits; RTX 3090, 4080 o 4070 Ti para cuantizaciones de 4 bits.
-- Cabe en GPU de consumo: probablemente sí en cuantización de 4 bits, aunque no hay confirmación de que existan pesos GGUF o GPTQ publicados.
-- Opciones de despliegue: no disponible; no se especifica compatibilidad con vLLM, llama.cpp, Ollama, TGI u otros motores.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Los pesos de texto y cabeza de decisión están en FP32 (aproximadamente 35 GB solo para parámetros), y la torre de visión en BF16; el repo ocupa 34,4 GB.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no disponible; el tamaño en FP32 (más de 32 GB) excede la VRAM de la mayoría de GPU de consumo.
+- Opciones de despliegue: transformers con código personalizado (custom_code); otras opciones no disponibles en la información.
+- Latencia y throughput: GS1-0.8B alcanza 12,51 ms P50 para una pregunta corta y 6,05× de speedup sobre inferencia por defecto para ocho preguntas cortas usando CUDA Graph. Para GS1-9B no se proporcionan datos de latencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
-|---|---|---|---|---|---|
-| bigai/GS1-9B | 9B (inferido) | no disponible | Apache 2.0 | Solo licencia | Repositorio HF sin descargas |
-| Alternativas de ~8-9B | ~8-9B | variable | variable | Habitualmente completa | Amplia |
+| Modelo | Parámetros | Contexto | Índice público | Licencia | Disponibilidad |
+|---|---:|---:|---:|---|---|
+| GS1-9B | 8.829.078.768 | 32.768 | 70,45 | Apache 2.0 | Hugging Face |
+| GS1-4B | no disponible | no disponible | 68,97 | Apache 2.0 | Hugging Face |
+| GS1-2B | no disponible | no disponible | 62,22 | Apache 2.0 | Hugging Face |
+| GS1-0.8B | no disponible | no disponible | 56,12 | Apache 2.0 | Hugging Face |
 
-No es posible establecer una comparativa rigurosa con modelos concretos porque no se dispone de datos de arquitectura, contexto ni rendimiento del GS1-9B. La comparación con modelos de la misma franja de parámetros (por ejemplo, familias de 7-9B ampliamente documentadas) solo podría hacerse tras una evaluación empírica.
+No se dispone de comparativas con modelos de decisión de otros desarrolladores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: no se puede verificar arquitectura, contexto, idiomas ni calidad del entrenamiento.
-- Riesgo elevado de alucinación no caracterizado: sin datos de alineación (RLHF/DPO) ni evaluaciones, no hay garantías sobre el comportamiento del modelo.
-- Sesgos desconocidos: no se ha publicado información sobre la composición del dataset ni sobre análisis de sesgos.
-- Idiomas no confirmados: no se especifica qué lenguas soporta ni con qué calidad.
-- Licencia Apache 2.0: permisiva para uso comercial, pero el usuario asume toda la responsabilidad sobre el comportamiento del modelo, ya que el autor no ofrece garantías.
-- Sin soporte comunitario: cero descargas y cero likes en el momento de la ficha, lo que implica ausencia de validación por parte de terceros.
-- Posible indisponibilidad de pesos cuantizados: si no se publican formatos GGUF/GPTQ/AWQ, el despliegue en hardware de consumo queda limitado.
-- Fecha de creación reciente: el repositorio podría estar en estado preliminar o incompleto.
+- Modelo de decisión, no generativo: no produce texto libre; solo calcula distribuciones sobre candidatos definidos en tiempo de ejecución.
+- Idiomas soportados no disponibles: no se especifica cobertura multilingüe.
+- Riesgo de alucinación: aunque las probabilidades están calibradas, candidatos mal definidos o evidencia insuficiente pueden producir decisiones incorrectas con confianza alta.
+- Dependencia del código personalizado: requiere transformers con custom_code, lo que puede complicar el despliegue en entornos con restricciones de dependencias.
+- Licencia Apache 2.0 permite uso comercial, pero debe verificarse el cumplimiento de las obligaciones de atribución y avisos.
+- Pesos en FP32 para texto y cabeza de decisión incrementan los requisitos de memoria; no se documentan opciones de cuantización.
+- La torre de visión está retenida en BF16; su rendimiento específico en tareas multimodales no está documentado.
+- El índice público se evalúa con el protocolo typed-decision de Decision Index; comparaciones directas con benchmarks generativos convencionales pueden no ser equivalentes.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/bigai/GS1-9B
+- Modelo en Hugging Face: https://huggingface.co/bigai/GS1-9B
+- Colección GS1: https://huggingface.co/collections/bigai/gs1
+- Código: https://github.com/bigai-nlco/GS1
+- Documentación: https://github.com/bigai-nlco/GS1/blob/main/docs/README.md
+- Playground: https://github.com/bigai-nlco/GS1/blob/main/playground/README.md
+- Arquitectura: https://github.com/bigai-nlco/GS1/blob/main/docs/model.md
+- RLCD: https://github.com/bigai-nlco/GS1/blob/main/docs/RLCD.md

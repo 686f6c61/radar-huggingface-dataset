@@ -2,92 +2,90 @@
 
 ## Resumen
 
-`pruna-test/test-save-tiny-random-llama3-smashed-pro` es un artefacto de prueba publicado por la organización `pruna-test`, vinculado al framework de optimización de modelos Pruna (y su variante comercial Pruna Pro). No se trata de un modelo entrenado para uso real: el nombre indica explícitamente que es un "tiny random" derivado de `HuggingFaceM4/tiny-random-Llama3ForCausalLM`, es decir, un modelo Llama 3 de juguete con pesos aleatorios y apenas 4,1 millones de parámetros, empaquetado mediante el pipeline de "smash" de Pruna.
+`pruna-test/test-save-tiny-random-llama3-smashed-pro` es un artefacto de prueba publicado por la organizacion `pruna-test` en Hugging Face. No es un modelo entrenado para producir lenguaje util, sino un checkpoint de validacion generado con la libreria [pruna](https://github.com/PrunaAI/pruna) (y su variante comercial `pruna_pro`) para verificar el guardado y la carga de modelos optimizados. El nombre lo indica explicitamente: `tiny-random` sobre una arquitectura Llama 3 y `smashed-pro` por el pipeline de compresion de Pruna.
 
-Su relevancia no está en las capacidades de generación de texto (que son nulas por diseño, al no haber entrenamiento), sino en servir como fixture de pruebas para validar el guardado, carga y aplicación de configuraciones de compresión del ecosistema Pruna. El propio `smash_config.json` que acompaña al repositorio tiene todos los métodos de optimización desactivados (`awq`, `gptq`, `hqq`, `torchao`, `fp8`, etc. a `false`), lo que confirma que es un caso de prueba del formato y no una release optimizada.
+El modelo tiene 4.111.696 parametros totales (segun los pesos en safetensors) y pesos en formato safetensors compatibles con `transformers`. Su proposito es servir como banco de pruebas de la infraestructura de Pruna: el `smash_config.json` incluido lista decenas de tecnicas de optimizacion (cuantizacion AWQ, GPTQ, HQQ, torchao, poda estructurada y no estructurada, atencion lineal, compilacion con `torch.compile`, etc.) todas desactivadas (`false`), lo que confirma que se trata de un checkpoint sin optimizaciones reales aplicadas.
 
-Por tanto, esta ficha debe leerse como documentación de un artefacto técnico de test, no de un modelo utilizable en producción. Cualquier evaluación de calidad, benchmarks o despliegue real carece de sentido con este checkpoint.
+Por tanto, no debe evaluarse como un modelo de produccion. Es relevante unicamente para desarrolladores que trabajen con Pruna y necesiten entender el formato de salida de su pipeline de compresion, o para tests automatizados de carga de modelos. Cualquier uso generativo dara resultados aleatorios porque los pesos son aleatorios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Llama 3, variante "tiny random") |
+| Arquitectura | Transformer decoder-only estilo Llama 3 (variante `tiny-random-Llama3ForCausalLM`) |
 | Parametros totales | 4.111.696 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el `smash_config.json` muestra todos los métodos de cuantización a `false`) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (el modelo base de referencia es `HuggingFaceM4/tiny-random-Llama3ForCausalLM`, sin contexto documentado en esta ficha) |
+| Tipos de cuantizacion | no disponible (el `smash_config.json` declara todas las tecnicas desactivadas; no se ha aplicado cuantizacion) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (compatible con `transformers`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer decoder-only de la familia Llama 3, pero en su variante "tiny random" mantenida por HuggingFaceM4 como modelo de pruebas. Con 4.111.696 parámetros totales, se trata de un esqueleto de la arquitectura real con dimensiones reducidas y pesos inicializados aleatoriamente. No hay información sobre número de capas, dimensión oculta, cabezas de atención ni vocabulario en la información proporcionada.
+La arquitectura es un transformer decoder-only con la configuracion de Llama 3, pero en version reducida (aproximadamente 4,1 millones de parametros). El modelo de referencia declarado en la model card es `HuggingFaceM4/tiny-random-Llama3ForCausalLM`, un checkpoint de juguete usado habitualmente en la comunidad para tests de integracion con `transformers`, `text-generation-inference` y pipelines de Hugging Face.
 
-No se ha realizado entrenamiento: los pesos son aleatorios por construcción. El modelo se ha empaquetado mediante la librería Pruna (`pruna_pro`) aplicando una configuración de "smash" que, según el `smash_config.json` incluido, no activa ninguna técnica de compresión ni optimización (todas las banderas están a `false`, `device: "cpu"`, `batch_size: 1`, `save_fns: []`). El único `load_fns` configurado es `transformers`. No hay datos sobre dataset, tokens de entrenamiento, RLHF, DPO ni innovaciones técnicas.
+No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del corpus ni fases de alineamiento (RLHF, DPO). El nombre `random` y el tamano confirman que los pesos no provienen de un entrenamiento real sobre texto. El unico elemento tecnico reseñable es el fichero `smash_config.json`, que documenta el esquema de configuracion de Pruna: un diccionario de flags booleanos por tecnica de optimizacion, mas parametros de entorno (`device`, `device_map`, `batch_size`, `save_fns`, `load_fns`). En este caso todos los flags estan a `false` y `device` es `cpu`, lo que indica que el "smash" se ejecuto sin aplicar ninguna transformacion efectiva.
 
 ## Capacidades
 
-- Generación de texto: nominalmente soportada por la arquitectura (pipeline `text-generation`), pero sin valor funcional al tener pesos aleatorios.
-- Razonamiento, código y matemáticas: no disponible (modelo sin entrenamiento).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Uso previsto real: fixture de pruebas para el pipeline de guardado/carga de Pruna y validación de `smash_config.json`.
+- Generacion de texto: tecnicamente posible via `transformers` o `PrunaProModel`, pero la salida es aleatoria por la naturaleza de los pesos.
+- Carga mediante `PrunaProModel.from_pretrained` con la libreria `pruna_pro`.
+- Carga estandar mediante `transformers` (sin garantia de que se apliquen todas las optimizaciones, segun la model card).
+- Compatibilidad declarada con `text-generation-inference` y endpoints de Hugging Face (tag `endpoints_compatible`).
+- No se documentan capacidades de razonamiento, codigo, matematicas, vision, audio, tool calling ni agentes.
+- No se documenta soporte multilingue.
 
 ## Casos de uso
 
-- Pruebas de integración del framework Pruna: verificar que `PrunaProModel.from_pretrained` carga correctamente un checkpoint guardado con configuración de smash, sin necesidad de descargar modelos grandes.
-- Validación de serialización de `smash_config.json`: comprobar que las banderas de optimización se persisten y recuperan correctamente en pipelines CI.
-- Test de compatibilidad con `transformers`: asegurar que el checkpoint se puede cargar con `AutoModelForCausalLM` antes de aplicar optimizaciones.
-- Desarrollo de utilidades de inspección de safetensors: al ser un repo de ~0 GB y 4M de parámetros, permite iterar rápido en herramientas que leen cabeceras y tensores.
-- Pruebas de humo en endpoints compatibles (tag `endpoints_compatible`, `text-generation-inference`): validar el enrutado y la respuesta del servidor sin coste computacional.
-- Reproducción de bugs del pipeline de guardado: al ser un artefacto de la organización `pruna-test`, sirve como caso mínimo reproducible en informes de issues del repositorio Pruna.
+- Test de integracion de la libreria Pruna: validar que `PrunaProModel.from_pretrained` carga correctamente un checkpoint guardado por el pipeline de compresion, comprobando que el `smash_config.json` se interpreta sin errores.
+- Verificacion de pipelines de CI/CD en Pruna: usar este modelo como fixture ligero (4,1 M de parametros) para comprobar que los cambios en el codigo de guardado/carga no rompen la compatibilidad con `transformers`.
+- Pruebas de compatibilidad con `text-generation-inference`: el tag `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints para validar el flujo de despliegue sin coste de GPU significativo.
+- Referencia de formato de `smash_config.json`: util para desarrolladores que necesiten entender la estructura del fichero de configuracion de Pruna antes de aplicarlo a modelos reales.
+- Desarrollo de wrappers y utilidades sobre `transformers`: dado su tamano minimo, sirve como modelo de juguete para probar utilidades de tokenizacion, generacion y serializacion sin consumir recursos.
+- Docencia y demos de arquitectura Llama 3: permite inspeccionar la estructura de pesos de un transformer decoder-only compacto sin necesidad de descargar checkpoints de decenas de GB.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un modelo con pesos aleatorios y sin entrenamiento, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería irrelevante.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cualquier precisión (4,1 M de parámetros en fp32 ocupan ~16 MB; en bf16, ~8 MB).
-- GPU recomendadas: no requiere GPU; el propio `smash_config.json` indica `device: "cpu"`.
-- Cabe en cualquier GPU consumer, incluida una iGPU o incluso ejecución en CPU sin problemas.
-- Opciones de despliegue: `transformers` (carga estándar) o `pruna_pro.PrunaProModel.from_pretrained` para aplicar la configuración de smash. El tag `text-generation-inference` sugiere compatibilidad con TGI, aunque no se documenta configuración.
-- Latencia y throughput: no disponible; al ser un modelo de juguete, los valores no son representativos de ningún modelo real.
+- VRAM estimada para inferencia: menos de 1 GB en fp32 (4,1 M de parametros x 4 bytes ≈ 16 MB de pesos, mas overhead de activaciones y tokenizer). Cabe en cualquier GPU consumer e incluso en CPU.
+- GPU recomendadas: ninguna en particular; funciona en CPU y en cualquier GPU con al menos 1 GB de VRAM (GTX 1050, RTX 3050, etc.).
+- Cabe en consumer GPU: si, en todas las GPU modernas e incluso en Raspberry Pi y entornos sin GPU.
+- Opciones de despliegue: `transformers`, `pruna_pro` (`PrunaProModel`), `text-generation-inference` (segun el tag `endpoints_compatible`). No se documenta soporte para vLLM, llama.cpp u Ollama, y el `smash_config.json` declara `llama_cpp: false`.
+- Latencia y throughput: no disponibles; al ser un modelo aleatorio, las metricas de calidad no aplican. La latencia sera del orden de milisegundos en cualquier hardware.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia |
+| Modelo | Parametros | Contexto | Licencia | Proposito |
 |---|---|---|---|---|
-| pruna-test/test-save-tiny-random-llama3-smashed-pro | 4,1 M | no disponible | Fixture de pruebas Pruna | no disponible |
-| HuggingFaceM4/tiny-random-Llama3ForCausalLM | ~4 M (aprox., modelo base) | no disponible | Fixture de pruebas transformers | no disponible |
-| Llama 3.2 1B | 1,24 B | 128 K | Modelo real de produccion | Llama 3.2 Community License |
-| Qwen2.5 0.5B | 0,49 B | 32 K | Modelo real de produccion | Apache 2.0 |
+| `pruna-test/test-save-tiny-random-llama3-smashed-pro` | 4,1 M | no disponible | no disponible | Fixture de test para Pruna |
+| `HuggingFaceM4/tiny-random-Llama3ForCausalLM` | ~4 M (referencia) | no disponible | no disponible | Modelo de juguete para tests de `transformers` |
+| `hf-internal-testing/tiny-random-LlamaForCausalLM` | ~4 M | no disponible | no disponible | Fixture de tests de Hugging Face |
+| `pruna-test/*` (otros checkpoints de la org) | variable | no disponible | no disponible | Checkpoints de validacion de Pruna |
 
-La comparación con modelos reales solo procede para situar el orden de magnitud: este checkpoint es tres órdenes de magnitud menor que el modelo real más pequeño de la familia Llama 3 y no compite en ninguna tarea.
+La comparativa se limita a otros modelos de juguete porque este checkpoint no es funcionalmente comparable a modelos de produccion (Llama 3.1 8B, Mistral 7B, Qwen 2.5, etc.), que tienen ordenes de magnitud mas de parametros y estan entrenados sobre corpus reales.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: el modelo no ha sido entrenado; las salidas son ruido estadístico sin relación con la entrada.
-- No apto para producción: no debe desplegarse en ningún caso de uso real, ni siquiera como demo.
-- Licencia no disponible: no se puede asumir uso comercial ni redistribución; al derivar de `HuggingFaceM4/tiny-random-Llama3ForCausalLM`, conviene revisar la licencia del modelo base.
-- Idiomas no declarados: no hay información sobre cobertura lingüística.
-- Contexto no documentado: se desconoce la longitud máxima de secuencia efectiva.
-- Configuración de smash vacía: el `smash_config.json` no aplica ninguna optimización, por lo que no sirve como referencia de rendimiento de Pruna.
-- Riesgo de confusión: el sufijo `pro` y la organización `pruna-test` pueden llevar a error; es un artefacto de test, no una release.
-- Sin garantías de mantenimiento: aunque el repo se actualizó en noviembre de 2026, su naturaleza de fixture implica que puede cambiar o eliminarse sin aviso.
+- Pesos aleatorios: el modelo no ha sido entrenado; cualquier salida generada es ruido y no debe interpretarse como texto coherente.
+- No apto para produccion: no debe desplegarse en aplicaciones reales de generacion de texto, atencion al cliente, codigo o cualquier tarea que requiera calidad.
+- Licencia no disponible: al no declararse licencia, no se puede asumir permiso de uso comercial. Contactar con el autor antes de cualquier uso fuera de tests.
+- Idiomas no documentados: no hay garantia de soporte de ningun idioma, y el tokenizer heredado del modelo base puede no cubrir castellano de forma fiable.
+- Configuracion de Pruna vacia: el `smash_config.json` declara todas las optimizaciones a `false`, por lo que el nombre `smashed-pro` es enganoso; no se ha aplicado compresion real.
+- Riesgo de confusion: el nombre incluye `llama3` y `pro`, lo que puede llevar a error si se busca un modelo Llama 3 optimizado. No lo es.
+- Sin garantias de mantenimiento: la organizacion `pruna-test` sugiere un entorno de pruebas interno; el repositorio puede cambiar o desaparecer sin aviso.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/pruna-test/test-save-tiny-random-llama3-smashed-pro
-- Modelo base: https://huggingface.co/HuggingFaceM4/tiny-random-Llama3ForCausalLM
-- Repositorio Pruna: https://github.com/PrunaAI/pruna
-- Documentación Pruna: https://docs.pruna.ai/en/stable/
-- Twitter Pruna AI: https://twitter.com/PrunaAI
-- GitHub Pruna AI: https://github.com/PrunaAI
-- LinkedIn Pruna AI: https://www.linkedin.com/company/93832878/
-- Discord Pruna AI: https://discord.gg/JFQmtFKCjd
-- Reddit Pruna AI: https://www.reddit.com/r/PrunaAI/
+- Modelo en Hugging Face: https://huggingface.co/pruna-test/test-save-tiny-random-llama3-smashed-pro
+- Modelo base de referencia: https://huggingface.co/HuggingFaceM4/tiny-random-Llama3ForCausalLM
+- Repositorio de Pruna: https://github.com/PrunaAI/pruna
+- Documentacion de Pruna: https://docs.pruna.ai/en/stable/
+- Twitter de Pruna AI: https://twitter.com/PrunaAI
+- GitHub de Pruna AI: https://github.com/PrunaAI
+- LinkedIn de Pruna AI: https://www.linkedin.com/company/93832878/
+- Discord de Pruna AI: https://discord.gg/JFQmtFKCjd
+- Reddit de Pruna AI: https://www.reddit.com/r/PrunaAI/

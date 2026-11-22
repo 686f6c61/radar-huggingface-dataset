@@ -2,87 +2,84 @@
 
 ## Resumen
 
-Temper-2-Axon-GGUF es la distribucion en formato GGUF de Temper-2-Axon, un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) especializado en generacion de codigo Rust. Lo desarrolla maylore-ai y se publica bajo licencia Apache 2.0. El repositorio contiene unicamente los pesos cuantizados para inferencia local; los resultados y detalles tecnicos completos se remiten a la pagina del modelo base.
+Temper-2-Axon-GGUF es la versión cuantizada en formato GGUF de Temper-2-Axon, un modelo de 1.543.714.304 parámetros (aproximadamente 1,5B) especializado en generación de código Rust. Lo desarrolla maylore-ai y se distribuye bajo licencia Apache 2.0. El modelo base es un fine-tune de Qwen2.5-Coder-1.5B-Instruct, según se desprende de la sección de licencia de la model card, y está orientado a tareas de generación de texto conversacional y código.
 
-El modelo deriva de Qwen2.5-Coder-1.5B-Instruct, segun se desprende de la nota de licencia de la model card, lo que sitúa su arquitectura en la familia Qwen2.5 (transformer decoder-only). La especializacion declarada es el codigo Rust, un nicho con relativamente pocos modelos dedicados, lo que lo hace relevante para equipos que trabajan con ese lenguaje y necesitan inferencia local en hardware modesto.
+El repositorio GGUF incluye dos cuantizaciones: Q8_0 (1,65 GB) y BF16 (3,09 GB), lo que facilita su despliegue en entornos locales mediante llama.cpp, LM Studio u Ollama. El modelo soporta inglés y ruso, y está etiquetado con los tags `rust`, `code` y `conversational`, lo que indica un enfoque claro hacia asistentes de programación en Rust.
 
-La relevancia practica de esta publicacion es que ofrece dos cuantizaciones (Q8_0 y BF16) listas para llama.cpp y Ollama, con un tamano de repositorio de 4,7 GB, lo que permite desplegar el modelo en estaciones de trabajo e incluso en portatiles sin GPU dedicada de gran capacidad. No obstante, la informacion publica disponible es muy escasa: no hay benchmarks, detalles de entrenamiento ni datos de contexto declarados en la model card.
+Su relevancia actual radica en la escasez de modelos pequeños y abiertos especializados en Rust, un lenguaje con ecosistema de herramientas de IA comparativamente menos maduro que Python o JavaScript. Con 1,5B parámetros y cuantización Q8_0 de menos de 2 GB, es viable en hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-Coder-1.5B-Instruct, segun la nota de licencia) |
-| Parametros totales | 1.543.714.304 (segun safetensors del modelo base) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 y BF16 |
-| Idiomas soportados | en, ru |
+| Arquitectura | Transformer (derivado de Qwen2.5-Coder-1.5B-Instruct; detalles no disponibles) |
+| Parametros totales | 1.543.714.304 (~1,5B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q8_0, BF16 |
+| Idiomas soportados | Inglés (en), ruso (ru) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q8_0: 1,65 GB; BF16: 3,09 GB) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles de arquitectura ni de entrenamiento en la informacion disponible. La model card unicamente indica que se trata de un modelo de 1,5B parametros para codigo Rust y que la licencia es la misma que la de Qwen2.5-Coder-1.5B-Instruct, lo que apunta a que Temper-2-Axon parte de ese modelo base y ha sido ajustado (fine-tuning) para el dominio de Rust. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o ajuste supervisado.
+La información disponible no detalla la arquitectura interna más allá de que el modelo deriva de Qwen2.5-Coder-1.5B-Instruct, un transformer decoder-only. No se especifican el número de tokens de entrenamiento, la composición del dataset de fine-tuning ni si se emplearon técnicas de RLHF, DPO o instrucción supervisada. La model card remite a la página principal del modelo base (maylore-ai/Temper-2-Axon) para resultados y detalles, que no están incluidos en la información proporcionada.
 
-Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. Cualquier afirmacion sobre estos aspectos seria especulativa y no se incluye en esta ficha.
+La innovación destacable es la especialización en Rust sobre una base ya optimizada para código, junto con la distribución en GGUF lista para inferencia local. La temperatura recomendada es 0,2, lo que sugiere un ajuste orientado a respuestas deterministas y precisas, típico de tareas de generación de código.
 
 ## Capacidades
 
-- Generacion de texto y codigo, con especializacion declarada en Rust.
-- Generacion de codigo en el contexto de proyectos Rust (la model card lo etiqueta explicitamente con `rust` y `code`).
-- Conversacion multi-turno: el repositorio incluye la etiqueta `conversational` y la pipeline es `text-generation`.
-- Soporte multilingue limitado a ingles y ruso, segun los metadatos de idioma.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente o razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Vision, audio o modo thinking: no disponible; no se declaran.
+- Generación de texto conversacional en inglés y ruso.
+- Generación y asistencia en código Rust, su especialidad principal.
+- Modo conversacional multi-turno (tag `conversational`).
+- Compatible con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- No se documenta soporte explícito de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
+- Capacidades multilingües limitadas a inglés y ruso según los metadatos.
 
 ## Casos de uso
 
-- Asistencia a desarrolladores Rust en local: el modelo puede integrarse en un editor o IDE mediante llama.cpp u Ollama para autocompletar y generar fragmentos de codigo Rust, sin enviar codigo a servicios externos, lo que resulta adecuado para entornos con requisitos de confidencialidad.
-- Generacion de codigo en pipelines de CI: con solo 1,65 GB en Q8_0, puede ejecutarse en runners modestos para tareas automatizadas de generacion de esqueletos de codigo, pruebas unitarias o documentacion de modulos Rust.
-- Prototipado rapido en estaciones de trabajo sin GPU dedicada: la cuantizacion Q8_0 permite ejecucion en CPU con llama.cpp, util para equipos que no disponen de aceleradores.
-- Educacion y aprendizaje de Rust: el modelo puede explicar y generar ejemplos de codigo Rust en un entorno local, con la ventaja de que el estudiante controla completamente la infraestructura.
-- Traduccion tecnica ingles-ruso en contexto de codigo: al declarar soporte para en y ru, puede emplearse para generar documentacion o comentarios bilingues en proyectos Rust.
-- Despliegue en entornos aislados o air-gapped: al ser un GGUF de licencia Apache 2.0 y pesos descargables, puede instalarse en sistemas sin acceso a internet, algo relevante en sectores regulados.
-- Experimentacion e investigacion: como modelo pequeno y abierto, sirve de base para estudiar fine-tuning sobre dominios especificos de lenguaje de programacion.
+- Asistencia de programación en Rust en el editor: el modelo puede autocompletar y generar fragmentos de código Rust con temperatura baja (0,2) para reducir variabilidad, integrándose vía llama.cpp u Ollama en plugins de IDE.
+- Revisión y explicación de código Rust: al ser conversacional y especializado, puede explicar borrow checker, lifetimes y patrones de ownership en inglés o ruso.
+- Generación de tests unitarios en Rust: útil en pipelines de CI para proponer casos de prueba sobre funciones existentes.
+- Despliegue local en estaciones de trabajo: con Q8_0 (1,65 GB) cabe en GPUs de consumo y permite inferencia offline sin depender de APIs externas.
+- Migración de código hacia Rust: puede asistir en la traducción de fragmentos desde otros lenguajes, aunque sin garantías de corrección.
+- Chatbot técnico bilingüe (inglés/ruso) para documentación de proyectos Rust: adecuado para equipos con esos idiomas.
+- Prototipado rápido en entornos con recursos limitados: su tamaño reducido permite iterar en portátiles con GPU modesta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a la pagina del modelo base para resultados y detalles, pero esos datos no forman parte de la informacion proporcionada, por lo que no se incluyen cifras.
+No se han publicado resultados de benchmarks en la información disponible. La model card remite a la página principal del modelo base para resultados, pero estos no se incluyen en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,65 GB para la cuantizacion Q8_0 y 3,09 GB para BF16, segun los tamanos de fichero publicados (el consumo real de memoria es algo superior por el contexto y el overhead del runtime).
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM puede alojar la version Q8_0 con holgura; para BF16 se recomienda al menos 6 GB. No se dispone de datos especificos de rendimiento en A100, H100 o RTX 4090.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU consumer moderna (GTX 1650 4 GB en adelante para Q8_0), y tambien en CPU.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf maylore-ai/Temper-2-Axon-GGUF:Q8_0`) y Ollama (`ollama run hf.co/maylore-ai/Temper-2-Axon-GGUF:Q8_0`, o mediante el `Modelfile` incluido en el repositorio). No se documentan otras opciones como vLLM o TGI.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada: aproximadamente 2 GB para Q8_0 y 3,5 GB para BF16, incluyendo overhead de contexto.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son compatibles sobradamente.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs discretas modernas e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf maylore-ai/Temper-2-Axon-GGUF:Q8_0 --temp 0.2`), Ollama (`ollama run hf.co/maylore-ai/Temper-2-Axon-GGUF:Q8_0`), LM Studio (requiere fijar temperatura a 0,2 manualmente).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Temper-2-Axon-GGUF | 1,54B | no disponible | en, ru | Apache 2.0 | GGUF (Q8_0, BF16) | Especializado en Rust |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B (aprox.) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun la model card) | safetensors y multiples | Modelo base declarado del que deriva |
-| Alternativas de codigo de ~1,5B | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados para una comparacion cuantitativa |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Temper-2-Axon-GGUF | ~1,5B | No disponible | en, ru | Apache 2.0 | GGUF |
+| Qwen2.5-Coder-1.5B-Instruct | ~1,5B | No disponible en esta ficha | Multilingüe | Apache 2.0 | safetensors, GGUF |
+| Alternativas especializadas en Rust de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparacion con otras alternativas de la misma categoria no puede completarse con datos verificados a partir de la informacion proporcionada; se indica como no disponible.
+El competidor directo es su modelo base Qwen2.5-Coder-1.5B-Instruct, del que hereda arquitectura y licencia; Temper-2-Axon añade especialización en Rust y ruso. No se dispone de datos de rendimiento comparativo para establecer diferencias cuantitativas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; al derivar de un modelo base general, es previsible que herede sesgos de este, pero no hay datos publicados al respecto.
-- Riesgo de alucinacion: no cuantificado; como modelo de 1,5B, la generacion de codigo puede contener errores sutiles de sintaxis o semantica en Rust que requieren revision humana.
-- Limitaciones de contexto: la longitud de contexto no se declara en la model card, por lo que no puede garantizarse el manejo de repositorios o ficheros largos.
-- Limitaciones de idioma: solo se declaran ingles y ruso; el rendimiento en castellano no esta documentado.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base (Qwen2.5-Coder-1.5B-Instruct) si se redistribuye o modifica.
-- Madurez del proyecto: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
-- Documentacion insuficiente para produccion: sin benchmarks, sin datos de entrenamiento y sin especificacion de contexto, no es posible evaluar su calidad frente a alternativas establecidas sin realizar una evaluacion propia.
-- Fecha de publicacion futura: los metadatos indican creacion en noviembre de 2026, lo que puede reflejar un error de fecha o un repositorio recien creado; conviene contrastar la informacion antes de adoptarlo.
+- Sesgos: no documentados, pero al derivar de Qwen2.5-Coder puede heredar sesgos de sus datos de entrenamiento.
+- Riesgo de alucinación: presente como en cualquier modelo de 1,5B; en código puede generar APIs o crates inexistentes.
+- Contexto: la longitud de contexto no está especificada, lo que impide planificar usos con documentos largos.
+- Idiomas: solo inglés y ruso; no hay soporte declarado de castellano.
+- Licencia: Apache 2.0 permite uso comercial, pero las obras derivadas (fine-tunes, merges, cuantizaciones) deben mantener las atribuciones del fichero NOTICE conforme a la sección 4(d).
+- En LM Studio la temperatura no se toma del GGUF y arranca en 0,8; es imprescindible ajustarla a 0,2 para el comportamiento previsto.
+- Tamaño reducido: capacidad de razonamiento limitada frente a modelos de 7B o superiores; no apto para tareas complejas de arquitectura de software sin supervisión.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/maylore-ai/Temper-2-Axon-GGUF
+- Hugging Face (GGUF): https://huggingface.co/maylore-ai/Temper-2-Axon-GGUF
 - Modelo base: https://huggingface.co/maylore-ai/Temper-2-Axon
-- Sitio web del autor: https://maylore.com/temper-2-axon
+- Sitio web del modelo: https://maylore.com/temper-2-axon

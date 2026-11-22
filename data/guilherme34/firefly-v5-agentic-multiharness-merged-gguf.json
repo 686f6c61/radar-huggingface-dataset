@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "Guilherme34/Firefly-v5-agentic-multiharness-merged-GGUF",
+  "slug": "guilherme34-firefly-v5-agentic-multiharness-merged-gguf",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/Firefly-v5-agentic-multiharness-merged-GGUF",
+  "created_at": "2026-11-22T00:43:43.000Z",
+  "updated_at": "2026-11-22T00:46:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 5511983623,
+  "storage_human": "5.5 GB",
+  "context_length": 131072,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": true,
+  "removed_at": "2026-11-22T03:12:37.183Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

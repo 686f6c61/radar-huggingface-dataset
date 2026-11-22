@@ -2,118 +2,110 @@
 
 ## Resumen
 
-`Juanpab07/beto-sarcasmo-spanish-2026_JP07` es un modelo de clasificación de texto en castellano obtenido mediante fine-tuning supervisado de BETO (`dccuchile/bert-base-spanish-wwm-cased`), el BERT base entrenado específicamente para español por el equipo de DCC UChile. El modelo resuelve una tarea concreta: la detección de sarcasmo en textos en español, formulada como clasificación binaria o multiclase (la model card no especifica el número exacto de etiquetas). Se trata de un encoder de 109.852.418 parámetros, con arquitectura transformer bidireccional tipo BERT base y una longitud de contexto heredada del modelo base de 512 tokens.
+`beto-sarcasmo-spanish-2026_JP07` es un modelo de clasificación de texto en castellano obtenido mediante fine-tuning del checkpoint `dccuchile/bert-base-spanish-wwm-cased` (BETO), el BERT base entrenado con whole word masking sobre un corpus en castellano. Lo publica el usuario Juanpab07 en Hugging Face y su tarea declarada es la detección de sarcasmo en textos en castellano, un problema de clasificación binaria o multiclase que resulta relevante para sistemas de análisis de opinión, moderación de comunidades y evaluación de la calidad de reseñas.
 
-El modelo es relevante por su nicho: el sarcasmo es un fenómeno pragmático difícil de detectar para los clasificadores de sentimiento convencionales, y los recursos anotados en español son escasos. Este checkpoint ofrece un punto de partida entrenado y evaluado (accuracy 0.9188 en el conjunto de evaluación declarado por el autor) para tareas de moderación de contenido, análisis de opinión y investigación en pragmática computacional en español. Su tamaño compacto (aproximadamente 440 MB en fp32, 4.4 GB de repositorio incluyendo checkpoints intermedios) permite desplegarlo en CPU y en GPUs de consumo.
+El modelo mantiene la arquitectura BERT base intacta (encoder transformer de 12 capas, 768 dimensiones ocultas, 110 millones de parámetros, aproximadamente 109,85 millones según los pesos en safetensors) y solo se han reentrenado los pesos para la tarea de clasificación. El autor reporta en la model card unas métricas de evaluación de 0,9233 de accuracy, 0,9241 de precisión, 0,9233 de recall y 0,9226 de F1, con una pérdida de validación de 0,6317.
 
-No obstante, la información publicada es muy limitada: la model card es autogenerada por `Trainer`, no documenta el dataset de entrenamiento (aparece como `None`), no declara licencia, no especifica idiomas formalmente y no incluye resultados en el `model-index`. Cualquier uso en producción debe validarse contra un conjunto de evaluación propio antes de confiar en las métricas declaradas.
+La relevancia del modelo es acotada: se trata de un fine-tune pequeño, sin model card completa (el autor deja varios apartados como "More information needed"), sin licencia declarada y sin información sobre el dataset de entrenamiento. Aun así, las métricas reportadas son altas y el modelo está etiquetado como compatible con Text Embeddings Inference y endpoints de Hugging Face, lo que facilita su despliegue como servicio de clasificación.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder bidireccional tipo BERT base (BETO, `bert-base-spanish-wwm-cased`) |
-| Parámetros totales | 109.852.418 |
-| Parámetros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 512 tokens (heredada del modelo base BETO) |
-| Tipos de cuantización | no disponible (compatible con cuantización dinámica de PyTorch y con formatos derivados de transformers, pero el autor no publica variantes) |
-| Idiomas soportados | no disponible formalmente; el modelo base BETO está entrenado en español |
+| Arquitectura | Transformer encoder tipo BERT base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención) |
+| Parametros totales | 109.852.418 |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base BETO usa 512 tokens) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada |
+| Idiomas soportados | castellano (por el modelo base BETO); no declarado explicitamente en la model card |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (librería `transformers`) |
-| Tarea | `text-classification` |
-| Modelo base | `dccuchile/bert-base-spanish-wwm-cased` |
-| Tamaño del repositorio | 4.4 GB |
-| Fecha de creación | 2026-11-11 |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de BETO: un transformer encoder de 12 capas, 768 dimensiones ocultas, 12 cabezas de atención y vocabulario WordPiece en minúsculas con *whole word masking* (cased), sobre el que se añade una cabeza de clasificación secuencial. El fine-tuning se realizó con `Trainer` de transformers (versión 5.22.1) y PyTorch 2.14.1+cu130, con precisión mixta nativa (AMP), optimizador AdamW fused (betas 0.9/0.999, epsilon 1e-8), learning rate 2e-5, scheduler lineal con 100 pasos de warmup, batch size de 32 en entrenamiento y evaluación, semilla 42 y 6 épocas planificadas.
+El modelo es un fine-tune completo de `dccuchile/bert-base-spanish-wwm-cased`, un BERT base con whole word masking entrenado sobre un corpus en castellano. La arquitectura es un encoder transformer bidireccional de 12 capas con 768 dimensiones ocultas y 12 cabezas de atención, sobre el que se añade una cabeza de clasificación para la tarea de detección de sarcasmo. No se trata de un modelo generativo ni de un modelo MoE: es un clasificador discriminativo.
 
-El autor no documenta la composición del dataset de entrenamiento (la model card indica `None dataset`), ni el número de ejemplos, ni el proceso de anotación, ni si hubo aumento de datos o balanceo de clases. Tampoco se declara ningún proceso de RLHF, DPO o ajuste por preferencias, algo esperable en un encoder de clasificación. Las curvas de entrenamiento publicadas muestran sobreajuste a partir de la época 3: la pérdida de validación sube de 0.2328 (época 2) a 0.5433 (época 5), mientras la pérdida de entrenamiento cae de 0.1353 a 0.0152. El mejor punto de validación se alcanza en la época 3 (accuracy 0.9215, F1 0.9211), aunque el checkpoint final reportado corresponde a la época 5 con accuracy 0.9188.
+El entrenamiento se realizó con el `Trainer` de Hugging Face y los hiperparámetros declarados son: learning rate 2e-05, batch size de entrenamiento y evaluación de 64, seed 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 100 pasos de warmup, 10 épocas y precisión mixta nativa (AMP). La model card muestra resultados de validación en las épocas 1 a 4 (pasos 239, 478, 717 y 956), con accuracy entre 0,9178 y 0,9243 y F1 entre 0,9178 y 0,9239; no se detallan las épocas 5 a 10. El dataset de entrenamiento no se especifica (la model card indica "None dataset" y "More information needed"). Las versiones de framework declaradas son Transformers 5.22.1, PyTorch 2.14.1+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
 
 ## Capacidades
 
-- Clasificación de texto en español orientada a la detección de sarcasmo (etiquetas no documentadas en la model card).
-- Codificación contextual bidireccional de secuencias de hasta 512 tokens.
-- Extracción de representaciones (embeddings) del token `[CLS]` y de tokens individuales, útil para tareas derivadas como similitud semántica o clustering.
-- Fine-tuning adicional sobre el checkpoint para tareas relacionadas (ironía, sentimiento, humor, toxicidad) gracias a su compatibilidad con el ecosistema `transformers`.
-- No soporta tool calling ni function calling: es un encoder de clasificación, no un modelo generativo.
-- No soporta razonamiento multi-paso ni modo de pensamiento (*thinking*).
-- No tiene capacidades de visión, audio ni multimodalidad.
-- No es un modelo de chat ni mantiene conversaciones multi-turno de forma nativa.
+- Clasificación de texto en castellano orientada a la detección de sarcasmo.
+- Salida de etiquetas de clasificación con puntuaciones de confianza (comportamiento estándar de `BertForSequenceClassification`).
+- Inferencia por lotes mediante la pipeline `text-classification` de Transformers.
+- Compatibilidad con Text Embeddings Inference (TEI) y con endpoints de Hugging Face, según las etiquetas del repositorio.
+- No soporta generación de texto, razonamiento multi-paso, tool calling ni function calling.
+- No soporta visión, audio ni modalidades distintas del texto.
+- Capacidades multilingües: no declaradas; el modelo base está entrenado en castellano y la model card no especifica otros idiomas.
+- No dispone de modo "thinking" ni de decodificación especulativa.
 
 ## Casos de uso
 
-- Moderación de comentarios en foros y redes sociales: el modelo puede puntuar cada comentario como sarcástico o no sarcástico antes de pasarlo a un moderador humano, reduciendo falsos positivos de sistemas de sentimiento que interpretan el sarcasmo literalmente. Su contexto de 512 tokens cubre la mayoría de comentarios y publicaciones cortas.
-- Análisis de opinión en reseñas de producto: las reseñas con sarcasmo ("menuda maravilla de batería, dura horas... literalmente dos") invierten la polaridad aparente; un clasificador previo de sarcasmo permite enrutar esas reseñas a un analizador de sentimiento específico o a revisión manual.
-- Investigación en pragmática computacional: sirve como línea base reproducible para experimentos sobre detección de ironía y sarcasmo en español, con hiperparámetros y curvas de entrenamiento documentados.
-- Enriquecimiento de datasets de entrenamiento: el modelo puede preetiquetar grandes corpus en español para generar candidatos que luego se revisan y se usan para entrenar modelos mayores o para aumentar el conjunto de anotación.
-- Monitorización de reputación de marca: detectar menciones sarcásticas de una marca o producto en redes sociales que los sistemas de análisis de sentimiento estándar clasificarían erróneamente como positivas.
-- Filtrado previo en pipelines de atención al cliente: identificar mensajes de clientes con tono sarcástico o irónico para priorizar la intervención humana o ajustar la respuesta automática, dado el bajo coste de inferencia del modelo (encoder de 110M de parámetros).
-- Detección de toxicidad encubierta: el sarcasmo suele acompañar a comentarios pasivo-agresivos; el modelo puede usarse como señal auxiliar en un clasificador multi-etiqueta de toxicidad.
+- Moderación de comunidades en castellano: el clasificador puede etiquetar comentarios con sarcasmo para priorizar la revisión humana o para ajustar la respuesta automática en foros y redes sociales, aprovechando su alta accuracy reportada (0,9233).
+- Análisis de opinión en reseñas de producto: integrar el modelo en un pipeline que separe reseñas literales de reseñas sarcásticas antes de aplicar un análisis de sentimiento, evitando que el sarcasmo invierta la polaridad detectada.
+- Monitorización de reputación de marca: clasificar menciones en redes sociales y foros para detectar ironía hacia la marca y enrutar esos casos a un equipo de comunicación en lugar de al análisis automático de sentimiento.
+- Filtrado de datos para entrenamiento de otros modelos: usar el clasificador para depurar corpus de texto en castellano eliminando o etiquetando ejemplos sarcásticos que podrían introducir ruido en tareas de generación o de análisis de sentimiento.
+- Investigación en lingüística computacional: servir como línea base reproducible para experimentos sobre detección de ironía y sarcasmo en castellano, dado que el checkpoint y los hiperparámetros están publicados.
+- Detección de sarcasmo en atención al cliente: preprocesar transcripciones de chats o correos para marcar mensajes irónicos y ajustar la prioridad o el tono de la respuesta automática.
+- Clasificación por lotes en backend: desplegar el modelo con Text Embeddings Inference o con los endpoints de Hugging Face para procesar grandes volúmenes de textos en castellano con un coste computacional bajo (110 millones de parámetros).
 
 ## Benchmarks y rendimiento
 
-El autor declara resultados en el conjunto de evaluación, pero el `model-index` está vacío (no hay resultados estructurados publicados). Los únicos datos disponibles son los de la model card y las curvas de entrenamiento:
+El model-index oficial del repositorio no contiene resultados (`results: []`). Los únicos datos disponibles son las métricas de evaluación declaradas por el autor en la model card:
 
-| Métrica (conjunto de evaluación) | Valor |
+| Metrica | Valor |
 |---|---|
-| Loss | 0.5433 |
-| Accuracy | 0.9188 |
-| Precision | 0.9188 |
-| Recall | 0.9188 |
-| F1 | 0.9188 |
+| Loss (evaluacion) | 0,6317 |
+| Accuracy | 0,9233 |
+| Precision | 0,9241 |
+| Recall | 0,9233 |
+| F1 | 0,9226 |
 
-Evolución por época (datos del autor):
+Evolución durante el entrenamiento según la model card:
 
-| Época | Paso | Validation loss | Accuracy | Precision | Recall | F1 |
+| Epoca | Paso | Validation loss | Accuracy | Precision | Recall | F1 |
 |---|---|---|---|---|---|---|
-| 1.0 | 478 | 0.2585 | 0.9034 | 0.9049 | 0.9034 | 0.9038 |
-| 2.0 | 956 | 0.2328 | 0.9194 | 0.9196 | 0.9194 | 0.9189 |
-| 3.0 | 1434 | 0.3568 | 0.9215 | 0.9215 | 0.9215 | 0.9211 |
-| 4.0 | 1912 | 0.4578 | 0.9207 | 0.9205 | 0.9207 | 0.9205 |
-| 5.0 | 2390 | 0.5433 | 0.9188 | 0.9188 | 0.9188 | 0.9188 |
+| 1.0 | 239 | 0,5861 | 0,9178 | 0,9178 | 0,9178 | 0,9178 |
+| 2.0 | 478 | 0,5523 | 0,9243 | 0,9245 | 0,9243 | 0,9239 |
+| 3.0 | 717 | 0,6350 | 0,9196 | 0,9201 | 0,9196 | 0,9198 |
+| 4.0 | 956 | 0,6317 | 0,9233 | 0,9241 | 0,9233 | 0,9226 |
 
-Advertencia: precision, recall y F1 idénticos a accuracy sugieren un conjunto de evaluación balanceado o una métrica macro con clases equilibradas; sin información sobre el dataset no es posible verificar la robustez de estas cifras. No se han publicado comparaciones con otros modelos en la información disponible.
+No se han publicado resultados comparativos con otros modelos en la información disponible, ni se especifica el conjunto de evaluación utilizado, por lo que las métricas no son directamente comparables con las de otros clasificadores de sarcasmo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 440 MB de pesos más activaciones; en la práctica menos de 1 GB para secuencias de 512 tokens con batch pequeño.
-- VRAM estimada en fp16/bf16: aproximadamente 220 MB de pesos; cabe holgadamente en cualquier GPU con 4 GB o más.
-- GPU recomendadas: cualquier GPU moderna es suficiente; para alto throughput, A100, H100, L4 o T4; para desarrollo local, RTX 3060, RTX 4060, RTX 4090 o incluso iGPU con suficiente memoria compartida.
-- Cabe en GPU de consumo: sí, en todas las GPU de consumo con al menos 2-4 GB de VRAM, y en CPU con latencias de decenas de milisegundos por secuencia corta.
-- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (el modelo está etiquetado como compatible con TEI y endpoints), ONNX Runtime, TorchScript, y cuantización dinámica de PyTorch. No se publican pesos GGUF ni versiones para llama.cpp u Ollama.
-- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño (110M de parámetros, encoder) se espera un throughput de cientos a miles de secuencias por segundo en GPU moderna con batch grande, pero es una estimación, no un dato medido.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,44 GB solo para los pesos (109,85 millones de parámetros × 4 bytes), más activaciones y overhead del runtime; en la práctica, menos de 2 GB para lotes pequeños.
+- VRAM estimada en fp16/bf16: aproximadamente 0,22 GB para los pesos.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 pueden ejecutar el modelo con holgura. Para clasificación por lotes de alto throughput, una A100 o H100 con TEI es la opción más eficiente.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1660, RTX 3050 en adelante) e incluso en CPU para volúmenes moderados.
+- Opciones de despliegue: pipeline `text-classification` de Transformers, Text Embeddings Inference (TEI), endpoints de Hugging Face (el repositorio está etiquetado como `endpoints_compatible`), ONNX Runtime y TorchScript. No se dispone de pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversión previa.
+- Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera un throughput alto en GPU (miles de textos por segundo en una A100 con lotes grandes), pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Juanpab07/beto-sarcasmo-spanish-2026_JP07` | 109,85 M | 512 | Clasificación de sarcasmo (español) | no disponible | Hugging Face, 0 descargas |
-| `dccuchile/bert-base-spanish-wwm-cased` (BETO) | 109,85 M | 512 | Modelo base de lenguaje español | no disponible en la información | Hugging Face, ampliamente usado |
-| `PlanTL-GOB-ES/roberta-base-bne` | ~125 M | 512 | Modelo base de lenguaje español | no disponible en la información | Hugging Face |
-| `finiteautomata/beto-sentiment-analysis` | ~110 M | 512 | Análisis de sentimiento en español | no disponible en la información | Hugging Face |
+| beto-sarcasmo-spanish-2026_JP07 | 109,85 M | no disponible | Clasificacion de sarcasmo en castellano | no disponible | Hugging Face, TEI, endpoints |
+| dccuchile/bert-base-spanish-wwm-cased (BETO) | 110 M | 512 tokens (modelo base) | Modelo base en castellano (MLM) | no disponible en esta ficha | Hugging Face |
+| BETO fine-tunes de analisis de sentimiento en castellano | ~110 M | 512 tokens | Clasificacion de sentimiento | variable segun autor | Hugging Face |
+| Modelos multilingues tipo XLM-R base | ~278 M | 512 tokens | Clasificacion y generacion | MIT (XLM-R) | Hugging Face |
 
-La comparación con alternativas específicas de detección de sarcasmo en español no está disponible en la información proporcionada. BETO y RoBERTa-BNE son los encoders de referencia para tareas en español y servirían como línea base, pero este checkpoint no publica comparaciones directas con ellos.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros, contexto y disponibilidad; el rendimiento relativo en detección de sarcasmo no está documentado.
 
 ## Limitaciones y advertencias
 
-- Dataset de entrenamiento no documentado: la model card indica `None dataset`, por lo que se desconoce la procedencia, el tamaño, la anotación y el posible sesgo de las etiquetas.
-- Sobreajuste evidente: la pérdida de validación se duplica entre las épocas 2 y 5 (0.2328 a 0.5433) mientras la de entrenamiento cae a 0.0152; el checkpoint final no es el mejor punto de validación.
-- Métricas no verificables: precision, recall y F1 idénticos a accuracy sugieren un conjunto de evaluación equilibrado o mal reportado; no hay matriz de confusión ni desglose por clase.
-- Licencia no disponible: no se puede confirmar el uso comercial; además, la licencia del modelo base BETO debe consultarse por separado.
-- Idiomas no declarados formalmente: aunque el modelo base es de español, no se especifica la variedad dialectal ni el dominio de entrenamiento.
-- Riesgo de alucinación no aplica en sentido generativo, pero sí de clasificaciones erróneas en contextos donde el sarcasmo depende de conocimiento cultural, ironía situacional o multimodalidad (texto e imagen).
-- Contexto limitado a 512 tokens: textos largos deben truncarse, lo que puede eliminar la clave del sarcasmo.
-- Sin soporte de tool calling, agentes ni generación: no es adecuado para tareas conversacionales.
-- Modelo con 0 descargas y 0 likes: sin validación por parte de la comunidad; tratar como experimental.
-- Fecha de creación futura (2026-11-11) en los metadatos: verificar la integridad del repositorio antes de usarlo en producción.
+- La model card está incompleta: los apartados de descripción, usos previstos, limitaciones y datos de entrenamiento indican "More information needed", por lo que se desconoce la composición y el dominio del dataset.
+- No se especifica la licencia, lo que impide confirmar si el uso comercial está permitido; conviene contactar con el autor antes de usarlo en producción.
+- No se documentan sesgos conocidos ni el idioma exacto de los datos de entrenamiento; el modelo base es de castellano, pero el fine-tune podría estar sesgado hacia un registro o dominio concreto no declarado.
+- Riesgo de alucinación no aplica en sentido generativo, pero sí existe riesgo de falsos positivos y falsos negativos en la clasificación; las métricas reportadas (F1 0,9226) provienen de un conjunto de evaluación no descrito, por lo que podrían no generalizar.
+- El entrenamiento muestra una pérdida de validación que sube tras la época 2 (de 0,5523 a 0,6350 en la época 3), lo que sugiere sobreajuste; el checkpoint final no es necesariamente el mejor en validación.
+- El modelo no es generativo: no puede producir explicaciones, resúmenes ni texto; solo devuelve etiquetas y puntuaciones.
+- No se declaran capacidades multilingües; su uso fuera del castellano no está respaldado por la documentación.
+- El repositorio ocupa 29,4 GB, un tamaño desproporcionado para un modelo de 110 millones de parámetros, lo que puede indicar la presencia de checkpoints intermedios u otros artefactos; conviene revisar los archivos antes de descargarlo completo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Juanpab07/beto-sarcasmo-spanish-2026_JP07
+- Repositorio Hugging Face: https://huggingface.co/Juanpab07/beto-sarcasmo-spanish-2026_JP07
 - Modelo base BETO: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
-- Repositorio de BETO (DCC UChile): no disponible en la información proporcionada
-- Paper de BETO: no disponible en la información proporcionada
-- Demos o espacios asociados: no disponibles en la información proporcionada
+- Documentación de Text Embeddings Inference: https://huggingface.co/docs/text-embeddings-inference
+- Documentación de la pipeline de clasificación de texto: https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.TextClassificationPipeline
+- Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos tratan sobre viajes a Hanói y no guardan relación con esta ficha.

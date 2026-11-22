@@ -1,126 +1,112 @@
 # object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold
 
 ## Resumen
+DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold es una cuantizacion de un modelo de lenguaje de gran escala desarrollado originalmente por DeepSeek. La ficha corresponde a una publicacion de la organizacion object-oriented-architects, que parte del checkpoint oficial `deepseek-ai/DeepSeek-V4.1-Flash-1017` y aplica una cuantizacion EXL3 (ExLlamaV3) de 2,7 bits por peso (bpw) orientada a servir el modelo en hardware limitado, concretamente en dos nodos NVIDIA DGX Spark mediante el motor TensorFold.
 
-DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold es una cuantización de 2,7 bits por peso (bpw) del checkpoint oficial deepseek-ai/DeepSeek-V4.1-Flash-1017, un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 99.373.023.442 parámetros totales según los safetensors del repositorio. La publica el usuario object-oriented-architects y parte del pack EXL3 de 2,9 bpw de LibertAIDAI, sobre el que aplica una reasignación de bitrate por experto enrutado según sensibilidad medida (receta de sudoingX), manteniendo intactos el resto de tensores: atención, expertos compartidos, cabeza de salida, el drafter DSpark/MTP y la torre de visión.
+El modelo base es un transformer con arquitectura Mixture-of-Experts (MoE), segun los tags del repositorio, con 99.373.023.442 parametros totales declarados en los safetensors. La cuantizacion reduce el peso del repositorio a 198,9 GB distribuidos en 363 archivos safetensors, y redistribuye la precision por experto en funcion de su sensibilidad medida, lo que permite un empaquetado mas compacto que la version de referencia de 2,9 bpw manteniendo una divergencia KL menor frente al modelo oficial.
 
-El objetivo es práctico: servir el modelo en dos NVIDIA DGX Spark con el motor TensorFold (rama deepseek-v41-tp2), ganando unos 11 GiB de espacio en el pack respecto al de 2,9 bpw y liberando unos 3 GiB por nodo para dedicarlos a una caché KV de 4,5 millones de tokens compartida por 8 flujos concurrentes. El autor reporta además una mejora de fidelidad frente al modelo oficial: divergencia KL media de 0,0248 frente a 0,0324 del pack de 2,9 bpw, y una concordancia top-1 del 95,64 % frente al 94,66 %.
-
-Es relevante ahora porque demuestra que una cuantización agresiva por debajo de 3 bpw puede acercarse al modelo de referencia en lugar de alejarse, y porque documenta con detalle el equilibrio entre tamaño del pack, memoria libre por nodo y longitud de caché KV en hardware de consumo profesional. El repositorio es pequeño en adopción (19 descargas, 1 like) y está orientado a un stack de despliegue muy concreto, no a un uso genérico.
+Su relevancia es practica: demuestra que un modelo MoE de ~99.000 millones de parametros puede servirse en dos aceleradores de consumo profesional con ventanas de contexto de hasta 1.048.576 posiciones por peticion y ventanas compartidas de 3.932.160 posiciones entre 8 flujos concurrentes. La licencia es MIT, lo que facilita su uso comercial, aunque las condiciones del modelo base original deben verificarse por separado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (deepseek_v41) con 40 capas troncales, 384 expertos enrutados por capa, expertos compartidos, drafter DSpark/MTP y torre de visión |
-| Parametros totales | 99.373.023.442 (~99,4 mil millones) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) con torre de vision y drafter DSpark/MTP; 40 capas troncales con 384 expertos enrutados por capa |
+| Parametros totales | 99.373.023.442 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible como especificación del modelo base; el autor sirve con `--context 1048576` (1M tokens por petición) y un pool KV compartido de 4.718.592 tokens (`TF_DS_POOL`) entre 8 flujos |
-| Tipos de cuantizacion | EXL3 (exllamav3) con bitrate por experto: 6.237 expertos a K2, 7.529 a K3, 1.559 a K4 y 35 a K5 (media 2,70 bpw en expertos enrutados); 2,73 bpw en el conjunto del tronco cuantizado; cabeza de salida a 6 bpw |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | Hasta 1.048.576 posiciones por peticion; ventana compartida de 3.932.160 posiciones entre 8 flujos (motor Zig) |
+| Tipos de cuantizacion | EXL3 (ExLlamaV3) con asignacion por sensibilidad: K2, K3, K4 y K5 segun experto; media 2,70 bpw en expertos enrutados y 2,73 bpw en pesos troncales; head a 6 bpw |
+| Idiomas soportados | no disponible (el panel de evaluacion incluye una categoria multilingue, pero no se enumeran idiomas) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (363 archivos, 198,8 GB / 185,2 GiB) |
+| Formato de pesos | safetensors (363 archivos), formato EXL3 para ExLlamaV3 |
 
 ## Arquitectura y entrenamiento
+La arquitectura es un transformer MoE con 40 capas troncales, cada una con 384 expertos enrutados con tres matrices (`w1`, `w2`, `w3`). El checkpoint incluye ademas expertos compartidos, una cabeza de salida, un drafter DSpark/MTP (multi-token prediction) y una torre de vision, lo que confirma capacidades multimodales de entrada visual en el modelo base. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO del modelo original; esos datos no aparecen en la informacion proporcionada.
 
-El modelo base es un MoE de DeepSeek con 40 capas troncales y 384 expertos enrutados por capa, cada uno con las matrices `w1`, `w2` y `w3`, más expertos compartidos y una cabeza de salida. El checkpoint incluye además un drafter DSpark/MTP (decodificación especulativa / multi-token prediction) y una torre de visión, lo que habilita entrada de imágenes. Esta ficha describe una cuantización, no un entrenamiento nuevo: no se dispone de información sobre volumen de tokens, composición del dataset ni fases de RLHF/DPO del modelo original.
-
-La innovación técnica del pack es la asignación de bits por experto en función de la sensibilidad medida: en lugar de aplicar un único K por capa, el asignador (receta de sudoingX) elige K2, K3, K4 o K5 para cada uno de los 6.237 × 3 tensores de expertos enrutados, con un objetivo ponderado por uso de 2,90 bpw que resulta en 2,70 bpw efectivos. Todo lo demás (atención, expertos compartidos, cabeza, drafter y torre de visión) procede byte a byte del pack de LibertAIDAI. El motor previsto es TensorFold en su rama deepseek-v41-tp2, que deduce el ancho de bits de cada tensor a partir de su forma; el kit de servicio de Mia/LibertAIDAI, que lee un único K por capa desde `exl3_k_map.json`, no cargaría este pack. El repositorio incluye parches de motor (`tensorfold-patches/`) para dimensionar un pool KV mayor que el de una sola petición y para conservar prompts cacheados de conversaciones largas cuando varios flujos comparten el pool.
+La innovacion tecnica de esta publicacion es la asignacion de bitrate por experto en funcion de la sensibilidad medida: de los expertos enrutados, 6.237 quedan en K2, 7.529 en K3, 1.559 en K4 y 35 en K5, con una media de 2,70 bpw. El resto de tensores (atencion, expertos compartidos, cabeza, drafter y torre de vision) se hereda byte a byte de la cuantizacion de LibertAIDAI a 2,9 bpw. El motor de inferencia es un fork de TensorFold (rama `deepseek-v41-zig-tp2`) que deduce el ancho de bits de cada tensor a partir de su forma, lo que permite cargar el pack sin un mapa externo de cuantizacion.
 
 ## Capacidades
-
-- Generación de texto y conversación multi-turno con ventanas muy largas: el autor sirve con 1M tokens de contexto por petición y un pool de 4,5M tokens compartido.
-- Razonamiento con modo "thinking": la evaluación reportada incluye ejecuciones con thinking off y thinking on a esfuerzo `high`.
-- Generación y comprensión de código, con el mayor peso en el panel de evaluación (161.765 de 239.716 posiciones puntuadas son de dominio code).
-- Razonamiento matemático: dominio `math` evaluado por separado en el panel de divergencia KL y en GSM8K.
-- Capacidad multimodal de entrada: el checkpoint base incorpora torre de visión, y los parches del motor permiten que una conversación cargue decenas de imágenes.
-- Uso agéntico: el escenario de referencia son cuatro agentes de programación trabajando contra el servidor, y existe un dominio `agentic` en el panel de calidad.
-- Capacidades multilingües: existe un dominio `multilingual` en el panel (8.419 posiciones), aunque sin listado de idiomas soportados.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Decodificación especulativa mediante el drafter DSpark/MTP incluido en el pack.
+- Generacion de texto en modo chat y completado, con pipeline `text-generation`.
+- Razonamiento y resolucion de problemas: el panel de evaluacion incluye categorias de conocimiento y matematicas, con divergencia KL de 0,0563 y 0,0187 respectivamente frente al modelo oficial.
+- Generacion de codigo: es el dominio con mejor fidelidad de la cuantizacion (KLD 0,0143, acuerdo top-1 del 96,33%).
+- Flujos agenticos y multi-turno: categoria "agentic" evaluada con KLD 0,0265 y acuerdo top-1 del 95,11%; el caso de uso documentado incluye agentes de programacion reenviando resultados de herramientas.
+- Contexto largo: categoria "long" con KLD 0,0323; soporta prompts de hasta 1.048.576 posiciones y ventanas compartidas de 3,9M posiciones entre 8 flujos.
+- Capacidades multilingues: existe una categoria "multilingual" en el panel de evaluacion, aunque no se detallan los idiomas cubiertos.
+- Vision: el pack incluye la torre de vision del modelo base, por lo que conserva la capacidad multimodal de entrada de imagenes.
+- Decodificacion especulativa: incorpora el drafter DSpark/MTP del modelo base, heredado sin recuantizar.
 
 ## Casos de uso
-
-- Agentes de programación autónomos: el pack está dimensionado y probado con cuatro agentes de código concurrentes contra el servidor durante ~90 minutos; el dominio `code` es donde menor divergencia presenta (KLD 0,0143, top-1 96,33 %), lo que lo hace adecuado para refactorización, generación de parches y navegación de repositorios.
-- Asistente de conversación de contexto muy largo: con 1M tokens por petición y un pool compartido de 4,5M, encaja en análisis de documentación extensa, actas de reuniones o bases de código medianas sin trocear.
-- Servicio multiinquilino ligero: `--parallel 8` sobre dos DGX Spark con 3,7 / 5,3 GiB libres en el peor momento permite atender a varios desarrolladores con un solo despliegue.
-- Evaluación de calidad y docencia: el panel de calibración de 199 conversaciones (301.828 tokens, 239.716 posiciones puntuadas) y las tablas de KL por dominio sirven como metodología reproducible para comparar cuantizaciones.
-- Inferencia sobre hardware de gama profesional en lugar de centro de datos: dos DGX Spark sustituyen a un nodo GPU grande para cargas de código y chat con requisitos moderados de throughput.
-- Prototipado de asistentes con entrada de imágenes: la torre de visión y los parches de gestión de caché permiten conversaciones con decenas de imágenes en un mismo hilo.
-- Razonamiento matemático asistido: GSM8K se evalúa en el pack y el dominio `math` muestra KLD 0,0187, útil para tutoría o verificación de cálculos paso a paso.
+- Agentes de programacion autonoma: el modelo puede mantener conversaciones multi-turno con resultados de herramientas y contexto de repositorio completo. Con 1.048.576 posiciones por peticion y un acuerdo top-1 del 96,33% en codigo, es adecuado para tareas de refactorizacion, revision de PRs y generacion de parches sobre bases de codigo grandes.
+- Asistencia en terminal y CI/CD: desplegado en dos DGX Spark con el motor Zig, puede servir a varios agentes concurrentes (8 flujos en la prueba documentada) manteniendo 8-11 GiB de memoria libre por nodo, lo que permite integrarlo en pipelines internos sin GPU de centro de datos.
+- Analisis de documentos extensos: la ventana de 1M posiciones por peticion permite resumir, extraer y responder preguntas sobre informes, expedientes o libros tecnicos completos en una sola pasada, con un prefill medido de 546 s para un prompt de 1.040.000 tokens.
+- Evaluacion de modelos y control de calidad de cuantizaciones: el pack incluye metricas reproducibles de KLD, acuerdo top-1 y perplejidad frente al checkpoint oficial, util para equipos que necesiten validar una cuantizacion antes de adoptarla en produccion.
+- Despliegue en laboratorio con hardware de gama alta de consumo profesional: al ocupar 198,9 GB y dejar margen de memoria en dos DGX Spark, sirve para prototipar aplicaciones sobre un MoE de ~99.000 millones de parametros sin alquilar nodos H100.
+- Procesamiento multimodal de capturas y diagramas: la torre de vision heredada permite describir interfaces, extraer texto de imagenes tecnicas o interpretar diagramas de arquitectura dentro de un flujo de documentacion.
+- Investigacion sobre cuantizacion selectiva: la receta de asignacion por sensibilidad (K2-K5 por experto) es un caso de estudio replicable para quienes investigan compresion de MoE.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks convencionales (MMLU, GSM8K, HumanEval) con cifras numericas en la informacion disponible; la model card menciona que la precision en MMLU y GSM8K coincide con la API de DeepSeek, pero sin valores. Si se publican las siguientes metricas de fidelidad frente al modelo oficial:
 
-Divergencia KL frente al checkpoint oficial (FP8 / MXFP4), panel de 199 conversaciones construido con las herramientas `caldata` de sudoingX, prompts disjuntos de los de calibración:
-
-| Modelo | KLD media | KLD p99 | Concordancia top-1 | Perplejidad |
-|---|---:|---:|---:|---:|
-| Pesos oficiales (FP8 / MXFP4) | — | — | — | 1,5614 |
-| Este repo, 2,7 bpw | 0,0248 | 0,375 | 95,64 % | 1,5825 |
-| LibertAIDAI 2,9 bpw | 0,0324 | 0,433 | 94,66 % | 1,5918 |
-
-Desglose por dominio:
-
-| Dominio | Posiciones | KLD 2,7 bpw | KLD 2,9 bpw | Top-1 2,7 bpw | Top-1 2,9 bpw |
-|---|---:|---:|---:|---:|---:|
-| code | 161.765 | 0,0143 | 0,0214 | 96,33 % | 95,30 % |
-| agentic | 16.206 | 0,0265 | 0,0395 | 95,11 % | 93,79 % |
-| long | 15.730 | 0,0323 | 0,0403 | 95,38 % | 94,47 % |
-| chat | 13.593 | 0,0724 | 0,0882 | 91,58 % | 90,82 % |
-| knowledge | 11.658 | 0,0563 | 0,0663 | 93,74 % | 92,65 % |
-| math | 9.643 | 0,0187 | 0,0259 | 95,34 % | 94,64 % |
-| multilingual | 8.419 | 0,0783 | 0,0669 | 94,24 % | 94,39 % |
-| writing | 2.702 | 0,0799 | 0,0942 | 92,67 % | 91,41 % |
-
-MMLU / GSM8K con la receta de lucataco (digest `09c2e6cc43e275af`, 200 preguntas MMLU + 100 GSM8K, greedy):
-
-| Prueba | Este repo, 2,7 bpw (2× Spark) | API de DeepSeek | LibertAIDAI 2,9 bpw (2× Spark) |
+| Metrica | Pesos oficiales (FP8/MXFP4) | Este repo (2,7 bpw) | LibertAIDAI (2,9 bpw) |
 |---|---:|---:|---:|
-| MMLU, thinking off | 85,0 % | 84,5 % | 85,0 % |
-| MMLU, thinking on | no disponible (dato truncado en la model card) | no disponible | no disponible |
-| GSM8K | no disponible (dato truncado en la model card) | no disponible | no disponible |
+| Divergencia KL media | — | 0,0248 | 0,0324 |
+| Divergencia KL p99 | — | 0,375 | 0,433 |
+| Acuerdo top-1 | — | 95,64% | 94,66% |
+| Perplejidad | 1,5614 | 1,5825 | 1,5918 |
+
+Desglose por dominio (posiciones evaluadas, KLD y top-1):
+
+| Dominio | Posiciones | KLD este repo | KLD LibertAIDAI | Top-1 este repo | Top-1 LibertAIDAI |
+|---|---:|---:|---:|---:|---:|
+| Codigo | 161.765 | 0,0143 | 0,0214 | 96,33% | 95,30% |
+| Agentico | 16.206 | 0,0265 | 0,0395 | 95,11% | 93,79% |
+| Contexto largo | 15.730 | 0,0323 | 0,0403 | 95,38% | 94,47% |
+| Chat | 13.593 | 0,0724 | 0,0882 | 91,58% | 90,82% |
+| Conocimiento | 11.658 | 0,0563 | 0,0663 | 93,74% | 92,65% |
+| Matematicas | 9.643 | 0,0187 | 0,0259 | 95,34% | 94,64% |
+| Multilingue | 8.419 | 0,0783 | 0,0669 | 94,24% | 94,39% |
+| Escritura | 2.702 | 0,0799 | 0,0942 | 92,67% | 91,41% |
+
+El panel de evaluacion consta de 199 conversaciones, 301.828 tokens y 239.716 posiciones puntuadas, generado con las herramientas `caldata` de sudoingX a partir de respuestas del propio DeepSeek-V4.1-Flash-1017. La unica categoria donde este pack empeora respecto al de 2,9 bpw es multilingue (KLD 0,0783 frente a 0,0669).
 
 ## Requisitos de hardware
-
-- VRAM/espacio de pesos: 198,8 GB (185,2 GiB) de safetensors; el despliegue de referencia reparte el modelo en dos nodos (TP2).
-- Hardware probado: dos NVIDIA DGX Spark. Memoria libre reportada con `--context 1048576 --parallel 4`: 9,6 GiB en el nodo cabeza y 11,9 GiB en el segundo (mediana de ~90 minutos), frente a 6,9 / 8,5 GiB del pack de 2,9 bpw.
-- Con `--parallel 8` y pool `TF_DS_POOL=4718592`: 5,6 / 7,7 GiB libres al arrancar y 3,7 / 5,3 GiB en el mínimo de las dos primeras horas.
-- Caché KV: ~1,45 GiB por nodo y por millón de tokens con el motor TensorFold.
-- No cabe en una GPU de consumo individual: el pack ocupa ~185 GiB y requiere al menos dos nodos con memoria unificada o GPUs de 80-141 GB en paralelo. No se han publicado medidas para A100, H100 o RTX 4090.
-- Motor soportado: exclusivamente TensorFold, rama `bertholomus/TensorFold` `deepseek-v41-tp2` (fork de `ashhart/TensorFold`), más los parches incluidos en `tensorfold-patches/`. No se ha probado con vLLM, llama.cpp, Ollama ni TGI, y el kit de Mia/LibertAIDAI no cargaría el pack.
-- Latencia y throughput: el autor indica que la velocidad de decodificación iguala a la del pack de 2,9 bpw; no se publican tokens/s concretos.
+- VRAM/espacio en disco: 198,9 GB (185,2 GiB) para los pesos en safetensors; requiere reparto entre al menos dos aceleradores de 128 GB unificados.
+- Configuracion validada: dos NVIDIA DGX Spark con el motor Zig de TensorFold (`deepseek-v41-zig-tp2`), con 9,0/11,3 GiB libres por nodo tras un prompt de 1M tokens y 8,3/10,4 GiB libres con 8 chats concurrentes de ~230K tokens.
+- Memoria de cache KV: en el motor Python, aproximadamente 1,45 GiB por nodo por millon de tokens.
+- GPU de centro de datos: no se documenta su uso en A100, H100 u otras GPU; el pack esta pensado y probado para DGX Spark.
+- GPU de consumo: no cabe en una RTX 4090 ni en GPUs de 24-48 GB; el tamano del pack lo impide.
+- Opciones de despliegue: TensorFold en sus ramas `deepseek-v41-zig-tp2` (produccion) y `deepseek-v41-tp2` (Python, usado para las mediciones). El kit de servido Mia/LibertAIDAI no se espera compatible porque depende de un unico K por capa en `exl3_k_map.json`.
+- Latencia y throughput: prefill de 546 s para un prompt de 1.040.000 tokens; la velocidad de decodificacion coincide con el pack de 2,9 bpw en el mismo motor, sin cifras absolutas publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Calidad (panel KL) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Este repo (2,7 bpw EXL3) | 99,4 B | 1M por petición; pool 4,5M | KLD 0,0248; top-1 95,64 % | MIT | 198,8 GB, 19 descargas |
-| LibertAIDAI 2,9 bpw EXL3 | mismo base (~99,4 B) | misma configuración de motor | KLD 0,0324; top-1 94,66 % | MIT (según repo base) | pack previo, pública en Hugging Face |
-| Pesos oficiales DeepSeek-V4.1-Flash-1017 (FP8 / MXFP4) | ~99,4 B | no disponible | referencia (perplejidad 1,5614) | MIT (según repo base) | checkpoint oficial de deepseek-ai |
-| API de DeepSeek | no disponible | no disponible | MMLU thinking off 84,5 % | servicio | acceso vía API |
+| Modelo | Parametros | Contexto | Cuantizacion | KLD media vs oficial | Licencia |
+|---|---|---:|---|---:|---|
+| Este repo (2,7 bpw) | 99.373.023.442 | 1.048.576 por peticion; 3.932.160 compartidos | EXL3 selectiva 2,70 bpw | 0,0248 | MIT |
+| LibertAIDAI 2,9 bpw | mismo base | no disponible en la informacion | EXL3 2,9 bpw | 0,0324 | no disponible en la informacion |
+| DeepSeek-V4.1-Flash-1017 oficial | mismo base | no disponible en la informacion | FP8 / MXFP4 | referencia | no disponible en la informacion |
 
-No se dispone de comparaciones con otros modelos MoE de tamaño similar en la información proporcionada.
+No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- Cuantización de 2,7 bpw: la divergencia frente al modelo oficial es pequeña pero real (KLD media 0,0248; p99 de 0,375). En `multilingual` el pack de 2,7 bpw es ligeramente peor que el de 2,9 bpw (0,0783 frente a 0,0669), y `chat` y `writing` son los dominios con mayor divergencia.
-- Dependencia de un único motor: solo se ha probado con la rama `deepseek-v41-tp2` de TensorFold y requiere los parches incluidos. Otros motores no están soportados y el kit de Mia/LibertAIDAI no se espera que cargue el pack.
-- Tablas de Engram no incluidas en el repositorio: hay que obtenerlas por otra vía para un despliegue completo.
-- Uso muy ligado al hardware: las cifras de memoria y concurrencia corresponden a dos DGX Spark con ajustes concretos; no son extrapolables a otras configuraciones.
-- Idiomas soportados no documentados; el comportamiento multilingüe solo está medido de forma agregada en el panel.
-- Riesgo de alucinación inherente al modelo base: no se han publicado evaluaciones de factualidad ni de tasas de alucinación en la información disponible.
-- Sesgos: no se documenta ninguna evaluación de sesgos, toxicidad o seguridad.
-- Adopción muy baja (19 descargas, 1 like) y creado el 19 de octubre de 2026: no hay validación independiente de las cifras reportadas por el autor.
-- Licencia MIT declarada tanto en el repo como en la model card; conviene verificar la licencia y los términos del checkpoint base antes de un uso comercial.
+- La cuantizacion introduce degradacion medible: KLD media de 0,0248 y acuerdo top-1 del 95,64% frente al modelo oficial; en chat y escritura el acuerdo baja al 91,58% y 92,67%.
+- El dominio multilingue es el unico donde este pack es peor que el de 2,9 bpw (KLD 0,0783 frente a 0,0669); no se recomienda para cargas multilingues exigentes sin validacion propia.
+- Solo esta probado con los forks de TensorFold de bertholomus; otros motores (vLLM, llama.cpp, Ollama, TGI) no estan soportados segun la model card.
+- El kit de servido Mia/LibertAIDAI no se espera compatible con este pack, y no se ha probado.
+- No se incluyen las tablas Engram en el repositorio, lo que puede afectar a funcionalidades que dependan de ellas.
+- La licencia MIT del repositorio no sustituye a la licencia del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`; debe revisarse antes de uso comercial.
+- Riesgo de alucinacion inherente al modelo base; no se documentan evaluaciones de sesgo ni de seguridad en la informacion disponible.
+- El prefill de prompts de 1M tokens tarda cientos de segundos (546 s medidos), lo que limita su uso interactivo con contextos muy largos.
+- Requiere hardware especializado (dos DGX Spark) y no cabe en GPUs de consumo convencionales.
 
 ## Enlaces
-
-- Hugging Face: https://huggingface.co/object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold
+- Repositorio Hugging Face: https://huggingface.co/object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Pack de referencia de LibertAIDAI (2,9 bpw): https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
-- Receta de cuantización de sudoingX: https://github.com/sudoingX/dgx-spark-deepseek-v41
-- TensorFold: https://github.com/ashhart/TensorFold
-- Rama TensorFold para DeepSeek-V4.1 TP2: https://github.com/bertholomus/TensorFold/tree/deepseek-v41-tp2
-- Receta de evaluación de lucataco: https://github.com/lucataco/DeepSeek-V4.1-Flash-2x-DGX-Spark
-- Kit de servicio de Mia/LibertAIDAI: https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-EXL3-2x-DGX-Sparks
-- Parches de motor incluidos en el repo: https://huggingface.co/object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold/tree/main/tensorfold-patches
+- Cuantizacion de referencia 2,9 bpw: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
+- Receta de cuantizacion de sudoingX: https://github.com/sudoingX/dgx-spark-deepseek-v41
+- TensorFold (original): https://github.com/ashhart/TensorFold
+- TensorFold, rama Zig: https://github.com/bertholomus/TensorFold/tree/deepseek-v41-zig-tp2
+- TensorFold, rama Python: https://github.com/bertholomus/TensorFold/tree/deepseek-v41-tp2
+- Kit de servido Mia/LibertAIDAI: https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-EXL3-2x-DGX-Sparks
+- Receta de evaluacion de lucataco: https://github.com/lucataco/DeepSeek-V4.1-Flas (enlace truncado en la model card)
+- Parches de configuracion Zig: https://huggingface.co/object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold/tree/main/zig-tp2-patches

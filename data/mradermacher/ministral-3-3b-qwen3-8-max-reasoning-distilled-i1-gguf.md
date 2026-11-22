@@ -1,94 +1,81 @@
 # mradermacher/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1-GGUF
 
 ## Resumen
+Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1-GGUF es una distribucion de cuantizaciones GGUF (formato i1, basadas en imatrix) del modelo xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled, un fine-tuning de Ministral 3B orientado a razonamiento y destilado a partir de un dataset de 50.000 ejemplos limpios (saidutta69/qwen3.8-max-distillation-50k-clean). El autor de las cuantizaciones es mradermacher, un publicador habitual de versiones GGUF de modelos abiertos en Hugging Face. El modelo combina la base Ministral de Mistral con tecnicas de destilacion de razonamiento inspiradas en la familia Qwen.
 
-Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1-GGUF es un repositorio de cuantizaciones GGUF con matriz de importancia (imatrix, variantes "i1") del modelo xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled, publicado por el cuantizador mradermacher, conocido por su catálogo extenso de cuantizaciones de modelos de la comunidad. El modelo base es un fine-tuning de destilación de razonamiento sobre una variante de 3B de la familia Ministral de Mistral, entrenado con el dataset saidutta69/qwen3.8-max-distillation-50k-clean, que contiene 50.000 ejemplos limpios destilados de un modelo de la serie Qwen orientado a razonamiento.
+El interes practico de esta ficha reside en la disponibilidad de pesos cuantizados en un rango muy amplio de tamanos (desde ~1,0 GB en IQ1_S hasta ~2,2 GB en Q4_K_S), lo que permite ejecutar un modelo de 3.429.006.336 parametros en hardware de consumo. La licencia Apache 2.0 facilita su uso comercial sin las restricciones de otras familias de modelos.
 
-El propósito del modelo base es dotar de capacidades de razonamiento paso a paso (chain-of-thought / reasoning) a un modelo pequeño y eficiente, de modo que pueda ejecutarse en hardware modesto manteniendo un comportamiento conversacional con razonamiento explícito. La versión de mradermacher no aporta capacidades nuevas: su valor está en la disponibilidad de más de veinte cuantizaciones que van desde IQ1_S (1,0 GB) hasta niveles altos como Q6_K, permitiendo ajustar el equilibrio entre calidad, tamaño y velocidad según el dispositivo.
-
-Es relevante para desarrolladores que quieren un modelo de razonamiento ligero en formato GGUF, compatible con llama.cpp, Ollama, LM Studio y otros runtimes locales. El modelo base tiene 3.429.006.336 parámetros (dato real de safetensors) y se distribuye bajo licencia Apache 2.0. Según la model card, se trata de un modelo de visión (vision model), por lo que los archivos mmproj correspondientes se encuentran en el repositorio estático asociado.
+Se trata de un modelo unicamente en ingles, con foco en conversacion y razonamiento multi-paso, y sin datos publicados de benchmarks en la informacion disponible. Su utilidad principal es el despliegue local en entornos con recursos limitados donde se prioriza el razonamiento sobre el conocimiento enciclopedico o el multilingüismo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Ministral de Mistral); detalles concretos no disponibles |
-| Parametros totales | 3.429.006.336 (~3,43B) |
-| Parametros activos | no disponible (no hay indicios de que sea MoE) |
+| Arquitectura | Transformer decoder-only (base Ministral 3B, fine-tuning de razonamiento) |
+| Parametros totales | 3.429.006.336 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (además del archivo imatrix) |
-| Idiomas soportados | Inglés (según model card) |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con imatrix); el modelo base se distribuye en safetensors |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
+El modelo subyacente parte de Ministral 3B, un transformer decoder-only de Mistral AI, y ha sido sometido a un proceso de destilacion de razonamiento supervisado sobre el dataset saidutta69/qwen3.8-max-distillation-50k-clean, compuesto por 50.000 ejemplos limpios generados a partir de un modelo de la familia Qwen 3.8 Max. El objetivo del fine-tuning es transferir patrones de razonamiento explicito (cadenas de pensamiento) a un modelo de menor tamano, siguiendo la estela de destilaciones como las de DeepSeek-R1 hacia modelos pequenos.
 
-El modelo base es un fine-tuning de un Ministral 3B de Mistral, una familia de modelos transformer densos de tamaño pequeño orientados a eficiencia en dispositivos con recursos limitados. Sobre esta base se aplicó una destilación de razonamiento: el dataset de entrenamiento, saidutta69/qwen3.8-max-distillation-50k-clean, contiene 50.000 ejemplos generados (y depurados) a partir de un modelo de la serie Qwen especializado en razonamiento, con el objetivo de transferir patrones de razonamiento explícito al modelo pequeño.
-
-El repositorio de mradermacher no modifica los pesos: aplica cuantización GGUF con matriz de importancia (imatrix), técnica que calcula estadísticas de activación sobre un corpus de calibración para minimizar el error de cuantización en los tensores más sensibles. Esto permite que variantes de bajo bit (IQ1/IQ2/IQ3) conserven más calidad que cuantizaciones estáticas equivalentes. No hay información disponible sobre el número de tokens de preentrenamiento, la composición completa del dataset ni sobre el uso de RLHF o DPO en el modelo base.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron fases de RLHF o DPO. Las cuantizaciones i1 publicadas por mradermacher emplean ficheros imatrix para preservar la calidad en rangos de bits bajos, lo que resulta especialmente relevante en modelos de 3B donde la cuantizacion agresiva degrada rapidamente el rendimiento.
 
 ## Capacidades
-
-- Razonamiento paso a paso: el modelo base fue destilado de un modelo Qwen de razonamiento, por lo que está orientado a generar cadenas de razonamiento antes de la respuesta final.
-- Conversación: etiquetado como "conversational" en la model card.
-- Comprensión visual: la model card de mradermacher indica que es un modelo de visión; los archivos mmproj para usar esta capacidad con llama.cpp están en el repositorio estático asociado.
-- Ejecución local eficiente: gracias al formato GGUF y a la amplia gama de cuantizaciones, puede funcionar desde dispositivos muy modestos (1-2 GB de RAM/VRAM en las variantes más agresivas) hasta GPUs de consumo.
-- No hay información disponible sobre soporte de tool calling / function calling, capacidades agénticas ni modo de thinking estructurado.
+- Generacion de texto conversacional en ingles con soporte multi-turno.
+- Razonamiento explicito multi-paso, heredado de la destilacion de un modelo Qwen orientado a reasoning.
+- Resolucion de problemas matematicos y logicos de complejidad media, limitada por el tamano de 3B parametros.
+- Generacion de codigo basica a intermedia; no se documenta soporte nativo de tool calling ni function calling.
+- No se documenta soporte de vision, audio ni otras modalidades.
+- Capacidades multilingues limitadas al ingles segun la model card.
+- No se documenta modo thinking explicito con tokens especiales ni decodificacion especulativa.
 
 ## Casos de uso
-
-- Razonamiento local en portátiles sin GPU: con la variante i1-Q4_K_S (2,2 GB) o i1-IQ4_XS (2,1 GB) se puede ejecutar en CPU con RAM limitada obteniendo el equilibrio óptimo tamaño/calidad señalado por el cuantizador.
-- Asistentes conversacionales ligeros: su etiqueta "conversational" y su tamaño de 3B lo hacen adecuado para chatbots locales de baja latencia en aplicaciones de escritorio o móviles.
-- Prototipado de sistemas de razonamiento: al destilar patrones de un modelo Qwen de razonamiento, sirve para experimentar con chain-of-thought sin coste de API ni hardware caro.
-- Integración en Ollama o LM Studio: los archivos GGUF son directamente compatibles con estos runtimes, ideal para demos y pruebas rápidas en entornos locales.
-- Despliegue masivo con coste mínimo: en variantes IQ2/IQ3 (1,2-1,9 GB) puede servirse en GPUs pequeñas para muchos usuarios concurrentes cuando la calidad reducida es aceptable.
-- Tareas de comprensión de imágenes locales: si la capacidad de visión del modelo base funciona correctamente con los mmproj del repositorio estático, puede usarse para descripción de imágenes en local.
-- Generación del archivo imatrix propio: el archivo imatrix de 0,1 GB permite a usuarios avanzados crear sus propias cuantizaciones personalizadas.
+- Asistente de razonamiento local en portatiles: con la cuantizacion Q4_K_S (~2,2 GB) el modelo cabe en GPU de consumo con 4-6 GB de VRAM y permite razonamiento multi-paso sin conexion a internet.
+- Prototipado de agentes de razonamiento en entornos con recursos limitados: util para validar pipelines de chain-of-thought antes de escalar a modelos mayores, gracias a su baja huella de memoria.
+- Educacion y tutoria automatizada en ingles: el modelo puede explicar pasos intermedios de problemas matematicos o logicos, aprovechando el entrenamiento en cadenas de razonamiento.
+- Generacion de codigo en entornos embebidos o CI con restricciones de memoria: adecuado para autocompletado y generacion de fragmentos cortos donde no se requiere un modelo grande.
+- Investigacion sobre destilacion de razonamiento: sirve como caso de estudio de como se transfieren capacidades de reasoning de modelos grandes a modelos de 3B mediante datasets curados.
+- Despliegue en dispositivos edge (Raspberry Pi 5, mini-PC con iGPU): las cuantizaciones IQ2/IQ3 (~1,2-1,8 GB) permiten inferencia en CPU con llama.cpp en hardware de bajo consumo.
+- Filtrado y clasificacion de texto con razonamiento breve: tareas donde se necesita justificar una decision en pocos pasos y el coste por inferencia debe ser minimo.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. Tampoco hay datos de rendimiento para el modelo base en la model card, por lo que no es posible comparar su calidad de razonamiento con otros modelos destilados.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM/RAM estimada para inferencia (solo pesos, según la tabla de cuantizaciones):
-  - i1-IQ1_S: ~1,0 GB (desesperada, calidad muy degradada)
-  - i1-IQ2_M: ~1,4 GB
-  - i1-IQ3_M: ~1,8 GB
-  - i1-Q4_K_S: ~2,2 GB (equilibrio óptimo tamaño/velocidad/calidad)
-  - Cuantizaciones altas (Q5/Q6): aproximadamente 2,5-3 GB (no disponible el tamaño exacto en el fragmento de model card)
-  - Añadir margen para el KV cache, que crece con el contexto (longitud no disponible).
-- GPUs recomendadas: por su tamaño, cualquier GPU de consumo moderna es suficiente: RTX 3060 12 GB, RTX 4060 Ti, RTX 4090, o incluso GPUs integradas con RAM compartida. No se requieren A100 ni H100.
-- Consumer GPUs: cabe con holgura en prácticamente cualquier GPU con 4 GB de VRAM o más usando Q4_K_S o superior; también funciona en CPU pura con 4-8 GB de RAM.
-- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, KoboldCpp, GPT4All y cualquier runtime compatible con GGUF. El modelo base en safetensors puede desplegarse con vLLM, TGI o transformers, aunque no hay confirmación de compatibilidad con vLLM.
-- Latencia y throughput: no disponibles; al ser un modelo de ~3B cuantizado, se esperan velocidades altas en CPU moderna y muy altas en GPU, pero no hay medidas publicadas.
+- VRAM estimada para inferencia: ~1,0-1,5 GB en IQ1/IQ2, ~1,7-2,0 GB en IQ3/Q3, ~2,1-2,2 GB en IQ4/Q4, y aproximadamente 2,5-3,0 GB en Q5/Q6 (estimaciones a partir del tamano de los ficheros GGUF publicados).
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM para cuantizaciones Q4; RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 o A100/H100 para despliegues de mayor throughput con contexto largo.
+- Cabe en GPU de consumo: si, practicamente en todas las GPU modernas (GTX 1650 4 GB en adelante) usando cuantizaciones Q4 o inferiores.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI mediante llama.cpp server o vLLM (este ultimo con soporte GGUF limitado). El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Razonamiento | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled (este) | 3,43B | GGUF (imatrix) | Apache 2.0 | Sí (destilado de Qwen) | Cuantizaciones i1 de mradermacher; visión según model card |
-| Qwen3-4B (familia de origen de la destilación) | ~4B | Safetensors, GGUF comunitario | Apache 2.0 | Sí (thinking mode nativo) | Modelo docente con más capacidad validada |
-| Ministral 3B oficial de Mistral | ~3B | Safetensors | Restringida (Mistral Research License / comercial) | no disponible | Base original; licencia menos permisiva que esta derivación |
-
-Comparativa orientativa: los datos de rendimiento de los tres modelos no están disponibles en la información proporcionada, por lo que no pueden compararse numéricamente. La ventaja diferencial de esta versión es la licencia Apache 2.0 heredada en el fine-tuning y la granularidad de cuantizaciones disponible.
+| Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1 (este) | 3,43B | no disponible | Apache 2.0 | GGUF i1 | Destilacion de razonamiento sobre Ministral 3B; solo ingles |
+| Ministral 3B (base, Mistral AI) | ~3B | no disponible | Mistral Research/Commercial | safetensors, GGUF | Modelo base sin destilacion de razonamiento; licencia mas restrictiva |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Multilingue, contexto documentado, sin foco especifico en reasoning |
+| Llama-3.2-3B-Instruct | 3,21B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Contexto largo, licencia con restricciones para >700M usuarios |
 
 ## Limitaciones y advertencias
-
-- Idioma: la model card declara únicamente inglés; no hay soporte declarado para castellano, por lo que el rendimiento en español no está garantizado.
-- Cuantizaciones extremas: las variantes IQ1_S/IQ1_M (descritas por el autor como "for the desperate") degradan notablemente la calidad, especialmente en tareas de razonamiento, donde los errores se propagan por cadenas largas.
-- Alucinaciones: como todo modelo de 3B, el riesgo de alucinación es alto, especialmente en razonamiento matemático o factual; el entrenamiento de destilación con 50k ejemplos es reducido frente a modelos comerciales.
-- Procedencia comunitaria: el modelo base es un fine-tuning de terceros (xtools-at) y el dataset de destilación es de un autor independiente; no hay auditoría de calidad de los datos de entrenamiento.
-- Contexto: la longitud de contexto no está documentada; verificarla antes de diseñar aplicaciones con documentos largos.
-- Visión: la condición de modelo de visión procede del comentario de mradermacher; la funcionalidad real depende del modelo base y requiere los mmproj del repositorio estático.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base original de Mistral, ya que las restricciones del modelo fundacional podrían aplicar según interpretación.
-- Sin benchmarks publicados: no hay forma de validar objetivamente la calidad del razonamiento destilado antes de evaluarlo uno mismo.
+- Modelo entrenado y evaluado unicamente en ingles; el rendimiento en castellano u otros idiomas sera previsiblemente pobre.
+- Al ser una destilacion de razonamiento sobre una base de 3B, el conocimiento factual es limitado y el riesgo de alucinacion es alto en preguntas enciclopedicas o de actualidad.
+- No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de la calidad del fine-tuning frente al modelo base.
+- Las cuantizaciones por debajo de Q4 (especialmente IQ1/IQ2) degradan notablemente la coherencia del razonamiento; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- No se documenta soporte de tool calling ni function calling; integrarlo en pipelines de agentes requerira tecnicas externas de parsing.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Ministral y del dataset de destilacion antes de un uso comercial a gran escala.
+- La longitud de contexto no esta documentada en la model card; asumir valores altos sin verificacion puede provocar degradacion silenciosa.
+- El repositorio ocupa 41,6 GB debido a la multiplicidad de cuantizaciones; descargar solo el fichero GGUF necesario.
 
 ## Enlaces
-
-- Repositorio de cuantizaciones i1 (esta ficha): https://huggingface.co/mradermacher/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1-GGUF
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-GGUF
-- Modelo base: https://huggingface.co/xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled
-- Dataset de destilación: https://huggingface.co/datasets/saidutta69/qwen3.8-max-distillation-50k-clean
-- Página de descargas resumida de mradermacher: https://hf.tst.eu/model#Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1-GGUF
-- README de referencia sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1-GGUF
+- Modelo base (safetensors): https://huggingface.co/xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled
+- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-GGUF
+- Dataset de destilacion: https://huggingface.co/datasets/saidutta69/qwen3.8-max-distillation-50k-clean
+- Pagina de resumen del autor: https://hf.tst.eu/model#Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

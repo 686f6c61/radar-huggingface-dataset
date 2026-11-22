@@ -2,93 +2,96 @@
 
 ## Resumen
 
-Piccolo-4B-Q8_0 es la cuantizacion GGUF de 8 bits del modelo Piccolo-4B, desarrollado por AgentScope (agentscope-ai). No es un modelo generativo al uso: se trata de un modelo de decision (decision model) disenado para evaluar candidatos discretos en lugar de generar texto libre. En concreto, se emplea para la revision automatica de llamadas a herramientas (tool review) y la compactacion de contexto (context compaction) dentro de QwenPaw, el entorno de agentes del mismo equipo.
+Piccolo-4B-Q8_0 es la distribucion en formato GGUF con cuantizacion Q8_0 del modelo Piccolo-4B, desarrollado por AgentScope (agentscope-ai). No es un modelo generativo al uso: la model card lo describe como un "decision model" orientado a la revision local de herramientas (tool review) y a la seleccion de contexto, con una pipeline declarada de `text-classification`. El modelo emplea atencion bidireccional sobre el prompt y puntuacion nativa de candidatos, de modo que el endpoint `/v1/systemone` devuelve probabilidades sin generar tokens de respuesta.
 
-El modelo parte de un backbone de aproximadamente 4.205 millones de parametros (4,2B) con atencion bidireccional en las capas de atencion completa y atencion lineal en el resto, siguiendo un diseno hibrido denominado flex_twice en la documentacion del autor. El checkpoint original incluye ademas un encoder de vision y tensores auxiliares MTP que no se utilizan en esta ruta de decision textual y que, por tanto, no se conservan en el GGUF.
+El checkpoint completo contiene 4.205.751.296 parametros (aproximadamente 4,2 mil millones) e incluye tensores de vision y auxiliares, aunque la conversion a GGUF se aplico al backbone de texto en BF16 y posteriormente se cuantizo a Q8_0. El repositorio ocupa 4,5 GB y esta publicado bajo licencia Apache 2.0, con soporte declarado de ingles y chino.
 
-Su relevancia practica es acotada pero especifica: permite ejecutar localmente, con licencia Apache 2.0 y en formato GGUF, un clasificador de decisiones para agentes sin depender de un servicio externo. Requiere un runtime llama.cpp parcheado (QwenPaw PR #8463) y no funciona con un runtime causal estandar ni con las Chat Completions convencionales de Ollama.
+Su relevancia practica esta en el rol que ocupa dentro de un stack de agentes: en lugar de producir texto, evalua y puntua candidatos (por ejemplo, que herramienta invocar o que fragmento de contexto seleccionar) en un unico paso forward. Esto permite integrar una etapa de decision barata y determinista en pipelines de agentes, siempre que se use el runtime compatible especifico que exige el modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con atencion bidireccional en capas de atencion completa y atencion lineal; layout de entrada flex_twice; cabeza de clasificacion de candidatos |
-| Parametros totales | 4.205.751.296 (4,2B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q8_0 (esta publicacion); el autor referencia tambien BF16 y Q4_K_M en otros repositorios de la matriz de modelos |
-| Idiomas soportados | Ingles (en) y chino (zh) |
+| Arquitectura | Transformer con atencion bidireccional sobre el prompt (según tags y model card); backbone de texto con tensores de vision y auxiliares en el checkpoint completo |
+| Parametros totales | 4.205.751.296 (dato real de safetensors del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 (esta release); el modelo base se distribuye en otros formatos |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (multi-shard, con release-manifest.json y hashes SHA-256); el checkpoint original en Safetensors reside en el repo base |
+| Formato de pesos | GGUF (text backbone convertido a BF16 GGUF y luego cuantizado a Q8_0) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina capas de atencion completa con atencion bidireccional sobre el prompt y capas de atencion lineal cuya computacion se mantiene inalterada en el runtime. El modelo no genera tokens de respuesta: lee los logits de candidatos de un unico token en la posicion `Answer: (` y aplica un softmax sobre los candidatos a temperatura 1. Esto lo convierte en un clasificador de eleccion entre opciones predefinidas, no en un modelo conversacional.
+La informacion disponible indica que Piccolo-4B es un modelo de decision construido sobre un backbone transformer con atencion bidireccional sobre el prompt, en lugar de la atencion causal tipica de los modelos generativos. Esta eleccion encaja con su tarea: puntuar candidatos completos (herramientas, fragmentos de contexto) requiere que cada token del candidato pueda atender a todo el contexto de entrada. El checkpoint completo conserva tensores de vision y auxiliares, aunque la release GGUF se centra en el backbone de texto.
 
-La cuantizacion Q8_0 se realizo con el conversor parcheado usando `--no-mtp` y posteriormente `llama-quantize ... Q8_0`, sin matriz de importancia ni dataset de calibracion. Se conservan todas las capas del backbone textual y la cabeza de salida; el encoder de vision y los tensores MTP auxiliares quedan fuera de esta ruta. El autor no detalla en la model card el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO; esos datos no estan disponibles en la informacion proporcionada.
+No se han publicado en la informacion proporcionada detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento. La model card menciona un proceso de validacion numerica de la cuantizacion: sobre cuatro preguntas de prueba, la mayor diferencia de probabilidad de candidato respecto al checkpoint completo fue de 0,00564096, lo que sugiere una perdida de precision muy contenida en la conversion a Q8_0.
 
 ## Capacidades
 
-- Clasificacion de decisiones sobre un conjunto cerrado de candidatos mediante softmax sobre logits de un unico token.
-- Revision automatica de llamadas a herramientas (tool review) en el flujo de agentes de QwenPaw.
-- Compactacion de contexto (context compaction) para reducir el historial de conversacion en agentes.
-- Atencion bidireccional sobre el prompt en las capas de atencion completa, adecuada para tareas de evaluacion global del contexto.
-- Soporte bilingue limitado a ingles y chino.
-- No genera texto libre, no soporta tool calling generativo, no realiza razonamiento multi-paso por si mismo ni dispone de modo thinking, vision o audio en esta ruta textual.
+- Puntuacion de candidatos: devuelve probabilidades sobre opciones predefinidas sin generar tokens de respuesta, mediante el endpoint `/v1/systemone`.
+- Revision de herramientas (tool review): evalua si una herramienta o llamada propuesta es adecuada para el contexto dado.
+- Seleccion de contexto: elige entre fragmentos de contexto candidatos en pipelines de agentes.
+- Clasificacion de texto: pipeline declarada `text-classification`.
+- Atencion bidireccional sobre el prompt, que permite condicionar la puntuacion al contexto completo.
+- Soporte multilingue limitado a ingles y chino.
+- No se documentan en la informacion disponible capacidades de generacion libre, tool calling generativo, agentes multi-paso, vision operativa en esta release ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Revision de llamadas a herramientas en agentes: el modelo evalua si una llamada propuesta a una herramienta es correcta antes de ejecutarla, actuando como filtro de aprobacion dentro de QwenPaw con el modo Decision Model habilitado.
-- Compactacion de contexto en sesiones largas: selecciona que informacion del historial conservar o resumir cuando la ventana del agente se aproxima a su limite, reduciendo el coste de tokens en conversaciones multi-turno.
-- Despliegue local de un clasificador de decisiones para agentes: al ser GGUF Q8_0 y Apache 2.0, permite ejecutar la evaluacion en infraestructura propia sin llamadas a APIs externas.
-- Enrutamiento de peticiones en pipelines de agentes: uso de la probabilidad de cada candidato para decidir entre rutas alternativas de un flujo automatizado.
-- Filtrado previo en sistemas de aprobacion humana: el modelo preclasifica acciones y deja solo los casos ambiguos para revision manual, manteniendo el fallback nativo de aprobacion de QwenPaw.
-- Investigacion sobre modelos de decision: la separacion entre checkpoint completo, BF16 y cuantizaciones permite estudiar el impacto de la cuantizacion en la distribucion de probabilidades de candidatos (diferencia maxima absoluta reportada de 0,00564096 en 4 preguntas de humo).
+- Enrutado de herramientas en agentes: dado un turno de usuario y un catalogo de herramientas, Piccolo puntua cada candidata y el orquestador selecciona la de mayor probabilidad. Adecuado porque la decision se resuelve en un forward pass sin generar texto, reduciendo coste y latencia frente a un LLM generativo.
+- Seleccion de contexto en RAG: entre varios fragmentos recuperados, el modelo puntua cual es mas relevante para la consulta antes de pasarlo al modelo generativo, filtrando ruido y ahorrando tokens de contexto.
+- Validacion previa de llamadas a funciones: antes de ejecutar una tool call propuesta por otro modelo, Piccolo actua como revisor y asigna una probabilidad de adecuacion, permitiendo bloquear llamadas dudosas en produccion.
+- Control de calidad en pipelines de agentes: integrado como etapa de decision entre el planificador y el ejecutor, verifica que la accion siguiente sea coherente con el estado de la conversacion.
+- Despliegue local en estaciones de trabajo: al ser un GGUF Q8_0 de 4,5 GB, puede ejecutarse en hardware de consumo con el runtime compatible, util para entornos de desarrollo sin GPU de datacenter.
+- Filtrado y triaje de entradas en ingles y chino: clasificacion de peticiones o candidatos en aplicaciones bilingues en esos dos idiomas.
+- Evaluacion offline de agentes: uso como juez de decisiones en suites de evaluacion, comparando probabilidades asignadas a distintas opciones de referencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que los resultados de benchmark del checkpoint completo estan en el repositorio de evaluacion y son independientes de las mediciones de conversion y cuantizacion de esta model card; no se implican puntuaciones identicas para la version cuantizada. La unica evidencia numerica aportada es un artefacto de validacion de 4 preguntas de humo contra el checkpoint completo, con una diferencia maxima absoluta de probabilidad de candidato de 0,00564096 y coincidencia en la eleccion superior; el propio autor la califica como evidencia numerica de humo, no como validacion de benchmark, seguridad o calibracion.
+La model card enlaza a los resultados de evaluacion del proyecto (`https://github.com/agentscope-ai/Piccolo/tree/main/evaluation`), pero no se incluyen cifras de benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion proporcionada. El unico dato numerico disponible es la validacion de cuantizacion: diferencia maxima de 0,00564096 en probabilidad de candidato respecto al checkpoint completo en cuatro preguntas de prueba.
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4,5 GB solo para los pesos en Q8_0, mas overhead de contexto y del runtime; el tamano del repo es de 4,5 GB.
-- GPU recomendadas: no disponible en la informacion proporcionada; por tamano, cualquier GPU consumer con al menos 6-8 GB de VRAM deberia poder alojar los pesos.
-- Cabe en GPU consumer: previsiblemente si, en modelos con 8 GB o mas de VRAM, aunque el autor no publica requisitos oficiales.
-- Opciones de despliegue: exclusivamente llama.cpp con el parche de QwenPaw PR #8463; el runtime causal estandar y las Chat Completions ordinarias de Ollama no implementan este modelo.
-- Configuracion obligatoria del runtime: desactivar reutilizacion de prefix-cache, chunked prefill y truncamiento silencioso; el runtime sirve un solo modelo a la vez.
+- VRAM estimada para inferencia: aproximadamente 4,5-5 GB para el archivo Q8_0, mas overhead del runtime y de la cache KV (no disponible la longitud de contexto, por lo que el overhead exacto no se puede calcular).
+- GPU recomendadas: no especificadas por el autor; por tamano, cualquier GPU con al menos 6-8 GB de VRAM es candidata (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100, H100).
+- GPU de consumo: si, el modelo cabe en GPUs consumer de gama media con 8 GB o mas, siempre que se use el runtime compatible.
+- Opciones de despliegue: requiere el runtime llama.cpp compatible con Piccolo (atencion bidireccional y puntuacion nativa de candidatos), documentado en `https://github.com/agentscope-ai/Piccolo/blob/main/docs/QWENPAW.md`. No se garantiza compatibilidad con llama.cpp estandar, Ollama, vLLM o TGI en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
+No se dispone en la informacion proporcionada de modelos comparables de la misma categoria (modelos de decision con atencion bidireccional para revision de herramientas y seleccion de contexto). Como referencia de tamano, se situa en la franja de 4B parametros, pero la comparacion funcional con modelos generativos de ese tamano no es directa por su distinta naturaleza.
+
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Piccolo-4B-Q8_0 | 4,2B | No disponible | Clasificacion de decisiones para agentes | Apache 2.0 | GGUF en Hugging Face, requiere runtime parcheado |
-| Piccolo-4B (base) | 4,2B | No disponible | Igual, con vision y MTP incluidos | Apache 2.0 | Safetensors en Hugging Face |
-| Piccolo-4B-Q4_K_M | 4,2B | No disponible | Igual, cuantizacion de 4 bits | Apache 2.0 | GGUF en Hugging Face (segun matriz de modelos) |
-
-No se dispone de datos de rendimiento comparativo con modelos de la misma categoria en la informacion proporcionada.
+| Piccolo-4B-Q8_0 | ~4,2 B | no disponible | Puntuacion de candidatos / decision | Apache 2.0 | Hugging Face, ModelScope |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional: no genera texto y solo devuelve una distribucion sobre candidatos predefinidos.
-- Requiere un runtime llama.cpp parcheado (QwenPaw PR #8463); no funciona con Ollama estandar ni con runtimes causales sin parchear.
-- La integracion en QwenPaw permanece en Draft PR; el autor recomienda la guia de configuracion fijada y el runtime parcheado asociado.
-- La validacion publicada es un smoke test de 4 preguntas; no hay evidencia de benchmark, seguridad ni calibracion para la version cuantizada.
-- La cuantizacion Q8_0 se realizo sin matriz de importancia ni dataset de calibracion, lo que puede afectar la fidelidad de las probabilidades frente al checkpoint original.
-- Solo soporta ingles y chino; no hay soporte declarado de castellano.
-- El encoder de vision y los tensores MTP no estan incluidos en este GGUF, por lo que no puede usarse para tareas multimodales.
-- El runtime debe desactivar prefix-cache, chunked prefill y truncamiento silencioso; configuraciones incorrectas pueden producir resultados invalidos.
-- Se deben conservar los mecanismos nativos de aprobacion y fallback de compactacion de QwenPaw; el modelo no sustituye esas salvaguardas.
-- Sesgos conocidos y riesgo de alucinacion: no documentados en la informacion disponible, aunque al tratarse de un clasificador el riesgo se manifiesta como eleccion incorrecta de candidato mas que como texto inventado.
+- Modelo de decision, no generativo: no produce texto libre; su uso esta acotado a puntuar candidatos predefinidos.
+- Dependencia de runtime especifico: requiere el runtime llama.cpp compatible con Piccolo; el llama.cpp estandar u otras herramientas pueden no soportar la atencion bidireccional ni la puntuacion nativa de candidatos.
+- Idiomas: solo ingles y chino declarados; el rendimiento en castellano no esta documentado.
+- Contexto maximo no documentado, lo que impide dimensionar con precision los requisitos de memoria en produccion.
+- Riesgo de sesgo y alucinacion: no documentado en la informacion disponible; al emitir probabilidades, el riesgo se traslada a calibracion incorrecta de las puntuaciones.
+- Licencia Apache 2.0 permite uso comercial, pero deben revisarse los avisos de terceros (`THIRD_PARTY_LICENSES.md`) del repositorio.
+- Perdida de precision por cuantizacion: pequena pero existente (hasta 0,00564096 en probabilidad de candidato en las pruebas publicadas), relevante en umbrales de decision ajustados.
+- Adopcion limitada: 715 descargas y 0 likes en el momento de la consulta, lo que implica poca validacion externa.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/agentscope-ai/Piccolo-4B-Q8_0
 - Modelo base: https://huggingface.co/agentscope-ai/Piccolo-4B
-- GitHub del proyecto: https://github.com/agentscope-ai/Piccolo
-- Demo Decision: https://decisionplayground.agentscope.io/
-- Matriz de modelos: https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/docs/MODELS.md
-- Resultados de benchmark del checkpoint completo: https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/evaluation/README.md
-- PR de QwenPaw con el parche de llama.cpp: https://github.com/agentscope-ai/QwenPaw/pull/8463
-- Guia de configuracion local: https://github.com/Xinji-Mai/QwenPaw/blob/beea37749185553a6897e546eae6b7954717da5b/docs/local-piccolo.md
-- ModelScope: anunciado como proximamente, sin URL publicada
+- Repositorio del proyecto: https://github.com/agentscope-ai/Piccolo
+- Documentacion del runtime compatible (QWENPAW): https://github.com/agentscope-ai/Piccolo/blob/main/docs/QWENPAW.md
+- Resultados de evaluacion: https://github.com/agentscope-ai/Piccolo/tree/main/evaluation
+- Listado de modelos: https://github.com/agentscope-ai/Piccolo/blob/main/docs/MODELS.md
+- Decision Playground: https://decisionplayground.agentscope.io/
+- ModelScope (modelo): https://www.modelscope.cn/models/AgentScope/Piccolo-4B-Q8_0
+- ModelScope (coleccion): https://www.modelscope.cn/collections/AgentScope/QwenPaw-Flash
+- Validacion de cuantizacion: https://huggingface.co/agentscope-ai/Piccolo-4B-Q8_0/resolve/main/validation.json
+- Licencia: https://huggingface.co/agentscope-ai/Piccolo-4B-Q8_0/resolve/main/LICENSE
+- Avisos de terceros: https://huggingface.co/agentscope-ai/Piccolo-4B-Q8_0/resolve/main/THIRD_PARTY_LICENSES.md

@@ -5,7 +5,7 @@
   "author": "MudraForge",
   "url": "https://huggingface.co/MudraForge/law2code-corporate-f1-encoder-3.3m",
   "created_at": "2026-11-21T14:48:37.000Z",
-  "updated_at": "2026-11-21T15:29:40.000Z",
+  "updated_at": "2026-11-21T16:01:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "MudraForge/law2code-corporate-f1-encoder",
+  "renamed_at": "2026-11-22T04:09:09.087Z",
   "benchmarks": [],
   "sources": []
 }

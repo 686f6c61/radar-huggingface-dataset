@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "MrunalYewatkar45/byt5-small-sanskrit-post-ocr",
+  "slug": "mrunalyewatkar45-byt5-small-sanskrit-post-ocr",
+  "author": "MrunalYewatkar45",
+  "url": "https://huggingface.co/MrunalYewatkar45/byt5-small-sanskrit-post-ocr",
+  "created_at": "2026-11-21T22:50:14.000Z",
+  "updated_at": "2026-11-21T22:50:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "ocr",
+    "post-ocr-correction",
+    "sanskrit",
+    "devanagari",
+    "byt5",
+    "text2text-generation",
+    "sa",
+    "base_model:google/byt5-small",
+    "base_model:finetune:google/byt5-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 1198571496,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

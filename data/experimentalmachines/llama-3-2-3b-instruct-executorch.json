@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
-    },
-    {
-      "title": "ChatGPT",
-      "url": "https://chatgpt.com/features",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
-    },
-    {
-      "title": "Introducing ChatGPT - OpenAI",
-      "url": "https://openai.com/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
-    },
-    {
-      "title": "OpenAI | Research & Deployment",
-      "url": "https://openai.com/",
-      "snippet": "GPT-6 Astra: A new generation of intelligence Research 28 min read Introducing ChatGPT Images 2.5 Product 6 min read GPT‑6 …"
-    },
-    {
-      "title": "ChatGPT - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/ChatGPT",
-      "snippet": "OpenAI operates the service on a freemium model. Users can interact with ChatGPT through text, audio, and image prompts. …"
-    }
-  ]
+  "sources": []
 }

@@ -71,6 +71,18 @@
       "dataset": "fev-bench",
       "metric": "MASE skill score (%, relative to Seasonal Naive)",
       "value": 36.27
+    },
+    {
+      "task": null,
+      "dataset": "TIME",
+      "metric": "MASE (relative to Seasonal Naive)",
+      "value": 0.6473
+    },
+    {
+      "task": null,
+      "dataset": "TIME",
+      "metric": "CRPS (relative to Seasonal Naive)",
+      "value": 0.5426
     }
   ],
   "sources": []

@@ -2,73 +2,92 @@
 
 ## Resumen
 
-El modelo `magnitudedev/Qwen3.8-27B-DSpark-GGUF` es una conversión a formato GGUF con cuantización Q8_0 del modelo base `RadixArk/Qwen3.8-27B-DSpark`, realizada por el usuario magnitudedev. Está pensado para su uso con la herramienta Magnitude, un framework de decodificación especulativa, y con llama.cpp. Aunque el nombre sugiere una arquitectura Qwen de 27 mil millones de parámetros, el dato real de parámetros totales según los safetensors es de 1.359.284.737 (aproximadamente 1,36 mil millones), lo que resulta contradictorio y debe tenerse en cuenta al evaluar el modelo.
+Qwen3.8-27B-DSpark-GGUF es una conversión a formato GGUF del modelo RadixArk/Qwen3.8-27B-DSpark, publicada por el usuario magnitudedev. Se trata de un artefacto de inferencia orientado a llama.cpp y al ecosistema Magnitude, con cuantización Q8_0 y metadatos específicos para decodificación especulativa (speculative decoding) bajo el esquema denominado "dspark" o "dflash". El repositorio tiene un tamaño de 2,9 GB y acumula 799 descargas y 10 likes en el momento de la consulta.
 
-La relevancia de este modelo radica en su formato GGUF, que permite ejecutarlo en entornos locales con recursos limitados, y en su integración con Magnitude para acelerar la inferencia mediante decodificación especulativa. Sin embargo, la información pública disponible es escasa: no se detallan arquitectura, datos de entrenamiento, capacidades específicas ni benchmarks. Se trata de un artefacto de conversión más que de un modelo original, por lo que su valor práctico depende en gran medida del modelo base subyacente, del cual tampoco se ofrecen especificaciones en esta ficha.
+El modelo base se presenta como un derivado de la familia Qwen3 con 27B de parámetros nominales, aunque el dato real de safetensors reportado en la ficha de Hugging Face es de 1.359.284.737 parámetros, una discrepancia que conviene tratar con cautela y que probablemente refleja el tamaño del módulo draft o de un subconjunto de pesos más que el del modelo completo. La model card no documenta arquitectura detallada, datos de entrenamiento ni resultados de benchmarks.
 
-## Especificaciones tecnicas
+La relevancia de esta ficha reside en su carácter práctico: es un artefacto listo para desplegar con llama.cpp que incorpora metadatos de decodificación especulativa verificados contra la implementación de referencia de RadixArk. No obstante, la información pública disponible es muy limitada y muchas especificaciones habituales (contexto, idiomas, licencia comercial concreta) no están documentadas.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere Qwen, sin confirmar) |
-| Parametros totales | 1.359.284.737 (segun safetensors) |
-| Parametros activos | no aplicable (no se indica que sea MoE) |
+| Arquitectura | Transformer (familia Qwen3, según el nombre del modelo base); detalles no disponibles |
+| Parámetros totales | 1.359.284.737 (dato real de safetensors reportado); el nombre comercial indica 27B, discrepancia no aclarada |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 |
-| Idiomas soportados | no disponibles |
-| Licencia | other |
-| Formato de pesos | GGUF |
+| Tipos de cuantización | Q8_0 (única cuantización publicada en este repo) |
+| Idiomas soportados | no disponible |
+| Licencia | other (no se especifican términos concretos) |
+| Formato de pesos | GGUF (compatible con llama.cpp) |
+| SHA-256 del artefacto | 466d05f4eab0f0e11d59d49a87e1bb3e27822d1b87d906ff90c177411a314178 |
+| Revisión de llama.cpp usada | 8e7f22b67ef4667b4ddd50230771287f328cfb3f |
+| Tamaño del repo | 2,9 GB |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base `RadixArk/Qwen3.8-27B-DSpark`. La model card únicamente indica que se trata de una conversión a GGUF realizada con llama.cpp en la revisión `8e7f22b67ef4667b4ddd50230771287f328cfb3f`. No se mencionan datos de entrenamiento, composición del dataset, ni técnicas como RLHF o DPO. Tampoco se detalla si el modelo base emplea arquitectura transformer, MoE, SSM o híbrida. La discrepancia entre el nombre (27B) y los parámetros reales (1,36B) sugiere que podría tratarse de un modelo destilado o de una nomenclatura confusa, pero no hay confirmación oficial.
+La información disponible no detalla la arquitectura interna del modelo base más allá de su pertenencia nominal a la familia Qwen3. La model card del artefacto GGUF se centra en los aspectos de conversión y en los metadatos del módulo draft para decodificación especulativa. En concreto, se documentan dos parámetros: `dflash.attention.causal = false`, que indica que el bloque draft emplea atención bidireccional, y `dflash.sample_from_anchor = true`, que establece que la selección de propuestas comienza en la fila ancla (anchor row). Estos metadatos se derivaron de la configuración del checkpoint y de la implementación de referencia de RadixArk (`dspark.py`), y se verificaron contra las salidas de referencia.
+
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF o DPO, ni sobre innovaciones técnicas adicionales más allá del esquema de decodificación especulativa mencionado. La conversión se realizó con llama.cpp en la revisión indicada, lo que sugiere compatibilidad con las herramientas estándar del ecosistema GGUF.
 
 ## Capacidades
 
-- Uso conversacional: el tag `conversational` sugiere que el modelo está orientado a tareas de chat y diálogo, aunque no se especifican detalles.
-- Compatibilidad con decodificación especulativa: al estar diseñado para Magnitude, puede aprovechar técnicas de speculative decoding para acelerar la generación.
-- Formato GGUF: permite ejecución en CPU y GPU mediante llama.cpp, Ollama u otros motores compatibles.
-- No se dispone de información sobre capacidades de razonamiento, generación de código, matemáticas, tool calling, agentes o multilingüismo.
+- Generación de texto conversacional: la etiqueta `conversational` en la ficha de Hugging Face indica un ajuste orientado a diálogo.
+- Decodificación especulativa: el artefacto incluye metadatos y un módulo draft diseñado para acelerar la inferencia mediante propuestas de tokens verificadas.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructuras de inferencia estándar.
+- Integración con Magnitude: el artefacto está pensado para el ecosistema Magnitude (repositorio en GitHub), lo que implica soporte para su pipeline de agentes o herramientas.
+- Capacidades multilingües: no disponibles.
+- Tool calling / function calling: no documentado en la información disponible.
+- Razonamiento multi-paso y agentes: no documentado explícitamente, aunque la orientación a Magnitude sugiere uso en flujos agénticos.
+- Visión, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
 
-Dado que la información es limitada, los casos de uso se infieren de las características técnicas del artefacto:
-
-- Inferencia local en entornos con recursos reducidos: al ser un GGUF de aproximadamente 1,5 GB, puede ejecutarse en portátiles o dispositivos edge con 4 GB de RAM o VRAM, usando llama.cpp o Ollama.
-- Prototipado rápido de aplicaciones conversacionales: su formato y tamaño permiten integrarlo en demos o pruebas de concepto de chatbots sin necesidad de infraestructura cloud.
-- Experimentación con decodificación especulativa: los desarrolladores que usen Magnitude pueden evaluar el rendimiento de este modelo como modelo auxiliar o principal en pipelines de generación acelerada.
-- Despliegue en entornos con restricciones de conectividad: al ser un archivo local, funciona sin depender de APIs externas.
-- Evaluación de la calidad de cuantización Q8_0: útil para comparar la pérdida de precisión frente al modelo original en tareas concretas.
-- Integración en pipelines de CI/CD para pruebas de generación de texto: su tamaño reducido facilita su inclusión en entornos de test automatizados.
+- Despliegue local con llama.cpp: el artefacto GGUF Q8_0 puede cargarse directamente en llama.cpp para inferencia en máquina local o en servidor, aprovechando la compatibilidad nativa del formato.
+- Aceleración de inferencia mediante decodificación especulativa: los metadatos `dflash.*` permiten configurar el módulo draft para reducir la latencia en generación autoregresiva, siempre que el runtime soporte el esquema dspark.
+- Integración en pipelines de agentes con Magnitude: el modelo está empaquetado específicamente para el framework Magnitude, por lo que encaja en flujos de agentes que requieran un modelo conversacional con decodificación acelerada.
+- Servicio de chat conversacional: la etiqueta `conversational` y la compatibilidad con endpoints permiten montar un servicio de diálogo multi-turno sobre infraestructura estándar de inferencia.
+- Experimentación e investigación en decodificación especulativa: al incluir metadatos verificados contra una implementación de referencia, es útil para reproducir y comparar esquemas de draft-and-verify.
+- Prototipado rápido en entornos con recursos moderados: con 2,9 GB de repositorio y cuantización Q8_0, el artefacto es manejable en estaciones de trabajo con GPU de gama alta consumer, aunque el tamaño real del modelo completo condiciona la viabilidad.
+- Evaluación comparativa de cuantizaciones: sirve como referencia Q8_0 frente a futuras conversiones de menor precisión del mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras métricas estándar para este modelo o su base.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q8_0 y 1,36 mil millones de parámetros, el archivo pesa 1,5 GB. Se estima que la inferencia en GPU requiere al menos 2-3 GB de VRAM, y en CPU unos 4-6 GB de RAM.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4090) puede ejecutarlo sin problemas. También es viable en Apple Silicon con Metal.
-- Compatibilidad con consumer GPU: sí, cabe en GPUs de gama baja y media.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier motor compatible con GGUF. También se puede usar con Magnitude para decodificación especulativa.
-- Latencia y throughput: no se dispone de datos medidos. Como referencia orientativa, un modelo de 1,36B en Q8_0 en una GPU moderna puede generar decenas de tokens por segundo, pero esto depende del hardware y del contexto.
+- VRAM estimada: no disponible con precisión. El repositorio ocupa 2,9 GB, lo que corresponde al artefacto Q8_0 publicado; sin embargo, el número de parámetros reportado (1.359 millones) y el nombre comercial (27B) son inconsistentes, por lo que la VRAM real depende del tamaño efectivo del modelo cargado.
+- GPU recomendadas: no disponibles en la documentación. Por el tamaño del artefacto, cabría esperar viabilidad en GPU consumer de gama alta (por ejemplo, RTX 4090 con 24 GB) si el modelo efectivo ronda los miles de millones de parámetros, pero no puede confirmarse.
+- Viabilidad en GPU consumer: no confirmada; depende del tamaño real del checkpoint.
+- Opciones de despliegue: llama.cpp (librería declarada), Magnitude (framework objetivo) y, por extensión del formato GGUF, runtimes compatibles como Ollama o servidores basados en llama.cpp. vLLM y TGI no están documentados para este artefacto.
+- Latencia y throughput: no disponibles. La inclusión de decodificación especulativa sugiere una mejora de latencia frente a decodificación estándar, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El modelo base `RadixArk/Qwen3.8-27B-DSpark` no tiene ficha pública detallada, y no se conocen alternativas directas con el mismo nombre o configuración. Se recomienda comparar con otros GGUF de modelos de tamaño similar (1-2B) como Qwen2.5-1.5B-Instruct o Llama-3.2-1B, pero no hay datos de rendimiento para este modelo concreto.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-DSpark-GGUF (este) | 1.359.284.737 reportados (nombre indica 27B) | no disponible | other | GGUF Q8_0 | Conversión para llama.cpp y Magnitude con draft especulativo |
+| RadixArk/Qwen3.8-27B-DSpark | no disponible | no disponible | other | safetensors (presumiblemente) | Modelo base del que deriva este artefacto |
+| Otros modelos Qwen3 de 27B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
+
+No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La discrepancia entre el nombre (27B) y los parámetros reales (1,36B) puede indicar un error de nomenclatura o un modelo destilado; conviene verificar antes de usarlo en producción.
-- No hay información sobre sesgos, alucinaciones o comportamientos indeseados del modelo base.
-- La licencia `other` es ambigua; es necesario revisar los términos del modelo base `RadixArk/Qwen3.8-27B-DSpark` para conocer restricciones de uso comercial.
-- Al ser una conversión GGUF, la cuantización Q8_0 puede introducir una ligera pérdida de calidad frente al modelo original en precisión completa.
-- No se especifican idiomas soportados; el modelo podría tener un rendimiento limitado fuera del inglés.
-- El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un artefacto reciente y poco validado por la comunidad.
+- Discrepancia de tamaño: el nombre del modelo indica 27B pero el dato de safetensors reporta 1.359 millones de parámetros; es imprescindible verificar el tamaño efectivo antes de planificar recursos.
+- Licencia "other": no se especifican términos de uso comercial, por lo que debe consultarse la licencia del modelo base (RadixArk/Qwen3.8-27B-DSpark) antes de cualquier despliegue en producción.
+- Información incompleta: no hay datos sobre contexto máximo, idiomas, sesgos, datos de entrenamiento ni evaluación de calidad.
+- Riesgo de alucinación: no evaluado en la información disponible; debe asumirse el riesgo habitual de los modelos generativos.
+- Dependencia de runtime específico: el esquema de decodificación especulativa dspark requiere soporte en el runtime; sin él, el módulo draft no aporta aceleración y puede generar comportamiento inesperado.
+- Sesgos conocidos: no documentados.
+- Restricciones de contexto o idioma: no documentadas.
+- Caveat de producción: al ser una conversión de un tercero (magnitudedev) y no del autor original, conviene validar la fidelidad de la cuantización Q8_0 frente al modelo base antes de usarla en sistemas críticos.
 
 ## Enlaces
 
-- [Hugging Face - magnitudedev/Qwen3.8-27B-DSpark-GGUF](https://huggingface.co/magnitudedev/Qwen3.8-27B-DSpark-GGUF)
-- [Modelo base - RadixArk/Qwen3.8-27B-DSpark](https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark)
-- [Repositorio Magnitude](https://github.com/magnitudedev/magnitude)
-- [llama.cpp](https://github.com/ggml-org/llama.cpp)
+- Repositorio Hugging Face: https://huggingface.co/magnitudedev/Qwen3.8-27B-DSpark-GGUF
+- Modelo base: https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark
+- Implementación de referencia del draft: https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark/blob/923ed3a8572615643f0137e424e4ce4edd7f1cda/dspark.py
+- Framework Magnitude: https://github.com/magnitudedev/magnitude
+- llama.cpp: https://github.com/ggml-org/llama.cpp

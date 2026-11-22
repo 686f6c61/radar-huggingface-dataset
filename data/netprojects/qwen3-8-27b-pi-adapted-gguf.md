@@ -2,114 +2,123 @@
 
 ## Resumen
 
-Qwen3.8-27B-pi-adapted-GGUF es una conversión a formato GGUF de un modelo derivado de Qwen3.8-27B. El repositorio lo publica netprojects (Internet Projects Ltd), que parte del adaptador LoRA fusiónado `harness-hub/Qwen3.8-27B-pi-adapted` y lo integra en los pesos base de `Qwen/Qwen3.8-27B`, ambos en revisiones fijadas, antes de convertirlo a GGUF para llama.cpp. El resultado son ficheros listos para ejecutar sin necesidad de cargar el adaptador con `--lora`.
+Qwen3.8-27B-pi-adapted-GGUF es una versión cuantizada en formato GGUF del modelo harness-hub/Qwen3.8-27B-pi-adapted, que a su vez es un fine-tuning mediante LoRA del modelo base Qwen/Qwen3.8-27B. El adaptador fue entrenado por harness-hub con aprendizaje por refuerzo (AsyncGRPO en TRL) para convertir al modelo en el motor del agente de programación pi (earendil-works/pi), especializado en tareas de ingeniería de software y uso de terminal. Esta versión GGUF, publicada por netprojects, fusiona el adaptador con el modelo base y lo convierte para su uso directo en llama.cpp sin necesidad de cargar el LoRA por separado.
 
-El modelo resuelve un problema concreto: harness-hub entrenó el adaptador con aprendizaje por refuerzo (AsyncGRPO en TRL) para convertir a Qwen3.8-27B en el motor del agente de programación pi (earendil-works/pi), especializado en tareas de ingeniería de software y de terminal. Este repositorio empaqueta esa variante en cuantizaciones ejecutables localmente, conservando la capa de predicción multi-token (MTP) del modelo original para acelerar la decodificación, y añadiendo un proyector multimodal (`mmproj`) que habilita la entrada de imágenes.
+El modelo cuenta con 27.320.697.856 parámetros totales y conserva la capa de predicción multi-token (MTP) de Qwen, que permite decodificación especulativa nativa en llama-server. Se distribuye en múltiples niveles de cuantización (desde IQ2_M de 10,2 GB hasta Q8_0 de 29,0 GB) junto con un proyector multimodal F16 que habilita entrada de imágenes, por lo que el pipeline declarado es image-text-to-text.
 
-La relevancia es doble: por un lado, ofrece un agente de código de 27.320.697.856 parámetros en ficheros de 16,8 a 29,0 GB que caben en hardware de consumo; por otro, los resultados publicados por el autor del adaptador muestran una mejora sustancial frente al modelo base (Terminal-Bench 2.1 de 39,5% a 55,8%; SWE-bench Pro hard 51 de 29,4% a 62,7%), con un 55-64% menos de llamadas a herramientas por tarea. La licencia es Apache-2.0.
+La relevancia actual del modelo radica en su orientación específica a agentes de codificación: según los resultados publicados por el autor del adaptador, bajo el agente pi con thinking desactivado, mejora Terminal-Bench 2.1 del 39,5% al 55,8% y SWE-bench Pro (hard 51) del 29,4% al 62,7% respecto al modelo base, con entre un 55% y un 64% menos de llamadas a herramientas por tarea. La licencia Apache 2.0 facilita su adopción comercial.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen3.8-27B, con 64 capas (16 de atención completa), capa MTP y codificador de visión |
+| Arquitectura | Transformer (Qwen3.8) con 16 capas de atención completa y 64 capas totales; incluye capa MTP (multi-token prediction) |
 | Parámetros totales | 27.320.697.856 |
-| Parámetros activos | No disponible (no consta que sea MoE) |
-| Longitud de contexto | 65.536 tokens en el ejemplo de despliegue (`-c 65536`); el máximo nativo no se especifica |
-| Tipos de cuantización | Q6_K (recomendada), Q8_0, Q4_K_M; proyector de visión en F16 |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); existe una build MLX de 6 bits en otro repositorio |
-
-| Fichero | Tamaño | Coincidencia de siguiente token vs BF16 | Divergencia KL media |
-|---|---|---|---|
-| Qwen3.8-27B-pi-Q6_K.gguf (recomendada) | 22,4 GB | 98,4% | 0,0038 |
-| Qwen3.8-27B-pi-Q8_0.gguf | 29,0 GB | 99,2% | 0,0003 |
-| Qwen3.8-27B-pi-Q4_K_M.gguf | 16,8 GB | 94,2% | 0,0595 |
-| mmproj-Qwen3.8-27B-pi-F16.gguf | 0,9 GB | proyector de visión | — |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 65.536 tokens (configurado en el ejemplo de llama-server con `-c 65536`) |
+| Tipos de cuantización | Q6_K, Q8_0, Q4_K_M, Q3_K_M, IQ3_XXS, IQ2_M; proyector multimodal F16 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); también existen builds MLX de 6 bits en otro repositorio |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen3.8-27B, un transformer de 27.320.697.856 parámetros con 64 capas, de las cuales 16 son de atención completa. La fusión del adaptador afecta a 256 módulos: las proyecciones q, k, v y o en las 16 capas de atención completa, y gate, up y down en las 64 capas. La operación aplicada es `W + 2.0 · B @ A` redondeada a bf16, verificada elemento a elemento; el resto de tensores, incluida la capa MTP y el codificador de visión, es idéntico byte a byte al modelo original. El tokenizador y la plantilla de chat son los del adaptador de harness-hub, embebidos sin cambios.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer de 27,3 mil millones de parámetros con 64 capas, de las cuales 16 son de atención completa (las módulos adaptados q, k, v, o se aplican en esas 16 capas) y el resto emplean otro mecanismo de atención. Sobre esta base, harness-hub entrenó un LoRA con aprendizaje por refuerzo usando AsyncGRPO en TRL, orientado a tareas de ingeniería de software y terminal dentro del agente pi. El adaptador resultante se fusionó con el modelo base (revisión e786f84 del adaptador sobre la revisión 3756181 de Qwen) y se convirtió a GGUF para llama.cpp.
 
-El adaptador se entrenó con aprendizaje por refuerzo (AsyncGRPO en TRL) sobre tareas de ingeniería de software y de terminal, con el objetivo de servir de motor al agente pi. Se evaluó y se entrenó con el modo de razonamiento (thinking) desactivado y con la API Chat Completions, detalles que condicionan el despliegue. La innovación técnica destacable en esta conversión es la conservación de la capa MTP, que llama-server puede usar como decodificación especulativa mediante `--spec-type draft-mtp`. Los datos exactos de entrenamiento (número de tokens, composición del dataset) no se detallan en la información disponible; la model card remite a la del adaptador original.
+Una innovación destacable es la conservación de la capa de predicción multi-token (MTP) de Qwen en todos los archivos, lo que permite a llama-server usar decodificación especulativa con `--spec-type draft-mtp`. Según las mediciones del autor en un MacBook Pro M5 Max, esto acelera la decodificación entre 1,86x y 2,41x según la cuantización, con tasas de aceptación de borradores del 72% al 76%. Los archivos más pequeños (Q3_K_M, IQ3_XXS, IQ2_M) se cuantizaron a partir del Q8_0 usando una matriz de importancia (llama-imatrix sobre texto de noticias en inglés y código Python con licencia MIT, en fragmentos de 512 tokens), manteniendo la capa MTP en Q4_K porque la matriz de importancia no la cubre.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredados de Qwen3.8-27B.
-- Programación y tareas de ingeniería de software: el adaptador optimiza el modelo para resolver fallos, interpretar tests y editar código en repositorios.
-- Operación en terminal: manejo de herramientas `bash` y `read` con llamadas bien formadas, verificado en llama-server.
-- Tool calling y function calling mediante la plantilla de chat del adaptador y el modo `--jinja` de llama-server.
-- Comportamiento de agente multi-paso, con reducción del 55-64% en llamadas a herramientas por tarea según el autor del adaptador.
-- Entrada de imágenes: el proyector `mmproj-Qwen3.8-27B-pi-F16.gguf` habilita el pipeline image-text-to-text (verificado describiendo una imagen de prueba con un cuadrado rojo y un círculo azul).
-- Decodificación especulativa nativa mediante la capa MTP, con incrementos de velocidad de ×1,86 a ×2,41 según cuantización.
+- Generación de texto conversacional multi-turno.
+- Razonamiento y resolución de tareas de ingeniería de software (localización de bugs, parches, ejecución de tests).
+- Uso de terminal y ejecución de comandos en entornos de agente.
+- Tool calling / function calling, entrenado y evaluado con la API Chat Completions.
+- Razonamiento multi-paso y comportamiento agéntico dentro del agente pi.
+- Entrada de imágenes mediante el proyector `mmproj-Qwen3.8-27B-pi-F16.gguf` (image-text-to-text).
+- Modo thinking configurable (el adaptador fue entrenado y evaluado con thinking desactivado; se recomienda mantenerlo apagado).
+- Decodificación especulativa nativa mediante la capa MTP.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Agente de programación local: desplegado con llama-server y conectado a pi mediante `~/.pi/agent/models.json`, el modelo resuelve tareas como diagnosticar y corregir tests fallidos con una sola orden (`pi --provider local --model qwen3.8-pi --print "..."`). Es el escenario para el que fue entrenado y el que reporta las mayores ganancias en Terminal-Bench y SWE-bench Pro.
-- Automatización de terminal y DevOps: gracias al soporte verificado de tool calling con `bash`, puede encadenar comandos, inspeccionar ficheros y ejecutar diagnósticos en un entorno controlado, reduciendo el número de interacciones necesarias por tarea.
-- Revisión y corrección de código en pipelines de CI: con la API Chat Completions y un servidor compatible con OpenAI, se integra en flujos que analizan fallos de test y proponen parches, manteniendo el razonamiento desactivado para minimizar latencia.
-- Asistencia técnica con capturas de pantalla: la entrada de imágenes permite adjuntar diagramas, mensajes de error renderizados o interfaces para que el modelo interprete el contexto visual junto al texto.
-- Despliegue en estaciones de trabajo de consumo: la cuantización Q4_K_M (16,8 GB) permite ejecutar el modelo en GPUs de consumo de gama alta o en Apple Silicon, con una pérdida de fidelidad moderada (94,2% de coincidencia de siguiente token).
-- Servidor de inferencia multiusuario: Q8_0 (29,0 GB) ofrece la mayor fidelidad respecto a BF16 (99,2%, KL 0,0003) para entornos donde la precisión importa más que el tamaño, con decodificación acelerada por MTP.
-- Prototipado de agentes en macOS: la build MLX de 6 bits publicada por el mismo autor cubre el flujo en Apple Silicon, y las mediciones de velocidad con llama-server sobre un MacBook Pro M5 Max sirven de referencia para dimensionar expectativas.
+- Agente de codificación autónomo: integrado en pi mediante un endpoint compatible con OpenAI Chat Completions (`http://localhost:8000/v1`), el modelo puede recibir una tarea como "encuentra por qué fallan los tests en tests/test_parser.py y corrige el bug" y resolverla de extremo a extremo con menos llamadas a herramientas que el modelo base.
+- Resolución de incidencias en repositorios (issue-to-patch): adecuado para SWE-bench Pro y tareas similares, donde el modelo debe navegar el código, reproducir el fallo y generar un parche verificable.
+- Automatización de tareas de terminal: el adaptador fue entrenado específicamente en tareas de terminal, por lo que encaja en flujos de administración de sistemas, scripts de despliegue y depuración de entornos.
+- Asistente de desarrollo en local con privacidad: al ejecutarse en llama.cpp sobre hardware propio (incluido Apple Silicon con builds MLX), permite mantener el código en la máquina sin enviarlo a APIs externas.
+- Revisión de código asistida por imagen: gracias al proyector multimodal, puede analizar capturas de pantalla de errores, diagramas o interfaces junto con el código asociado.
+- CI/CD con verificación automática: puede integrarse en pipelines para ejecutar tareas de corrección y validación de tests, apoyándose en el tool calling y en la baja tasa de llamadas por tarea.
+- Despliegue en hardware de gama consumer: las cuantizaciones Q4_K_M (16,8 GB) e IQ3_XXS (11,4 GB) permiten ejecutar el modelo en equipos con VRAM o memoria unificada limitada.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por harness-hub para el adaptador, medidos bajo pi con thinking desactivado, comparando el modelo adaptado con el base:
+Resultados publicados por el autor del adaptador (harness-hub), bajo el agente pi con thinking desactivado:
 
-| Benchmark | Qwen3.8-27B base | Adaptado (pi) |
+| Benchmark | Modelo base | Qwen3.8-27B-pi-adapted |
 |---|---|---|
 | Terminal-Bench 2.1 | 39,5% | 55,8% |
 | SWE-bench Pro (hard 51) | 29,4% | 62,7% |
+| Llamadas a herramientas por tarea | referencia | 55-64% menos |
 
-Rendimiento de decodificación medido con llama-server (Homebrew llama.cpp, commit b1b770d90) en un MacBook Pro M5 Max, greedy, thinking off, 5 prompts × 256 tokens de GSM8K, MATH-500, HumanEval, MBPP y MT-Bench, con otros servicios en ejecución (cifras indicativas):
+Fidelidad de cuantización respecto a BF16 (según la model card):
 
-| Fichero | Decodificación simple | `--spec-type draft-mtp` | Borradores aceptados |
+| Archivo | Tamaño | Mismo siguiente token que BF16 | Divergencia KL media |
+|---|---|---|---|
+| Q6_K (recomendado) | 22,4 GB | 98,4% | 0,0038 |
+| Q8_0 | 29,0 GB | 99,2% | 0,0003 |
+| Q4_K_M | 16,8 GB | 94,2% | 0,0595 |
+| Q3_K_M | 13,5 GB | 93,1% (vs Q8_0) | 0,0804 (vs Q8_0) |
+| IQ3_XXS | 11,4 GB | 91,5% (vs Q8_0) | 0,1244 (vs Q8_0) |
+| IQ2_M | 10,2 GB | 89,6% (vs Q8_0) | 0,1715 (vs Q8_0) |
+
+Velocidad de decodificación con llama-server en MacBook Pro M5 Max (greedy, thinking off, 5 prompts × 256 tokens; mediciones indicativas con otros servicios en ejecución):
+
+| Archivo | Sin MTP | Con `--spec-type draft-mtp` | Borradores aceptados |
 |---|---|---|---|
 | Q4_K_M | 28 tok/s | 52 tok/s (×1,86) | 76% |
 | Q6_K | 22 tok/s | 45 tok/s (×2,01) | 72% |
 | Q8_0 | 18 tok/s | 44 tok/s (×2,41) | 75% |
 
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la información disponible.
+Velocidad con Splash 1.7.0 (decodificación especulativa con DFlash2, mismas condiciones):
+
+| Archivo | Velocidad de decodificación | Extremo a extremo (incl. prompt) | Tokens por ciclo |
+|---|---|---|---|
+| Q4_K_M | 165 tok/s | 128 tok/s | 6,7 |
+| Q6_K | 132 tok/s | 100 tok/s | 6,9 |
+| Q8_0 | 109 tok/s | 84 tok/s | 6,9 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 17 GB para Q4_K_M, 23 GB para Q6_K y 30 GB para Q8_0, más 0,9 GB adicionales si se carga el proyector de visión.
-- GPU recomendadas: A100 y H100 para despliegues de producción con Q8_0 y contexto largo; RTX 4090 (24 GB) para Q6_K sin visión o Q4_K_M con visión; GPUs de 16 GB solo con Q4_K_M y margen ajustado.
-- Cabe en GPU de consumo: sí, con Q4_K_M en tarjetas de 16-24 GB y con Q6_K en tarjetas de 24 GB; en Apple Silicon se midió sobre un MacBook Pro M5 Max de 128 GB.
-- Opciones de despliegue: llama.cpp / llama-server (verificado por el autor), con `--jinja --chat-template-kwargs '{"enable_thinking": false}'`; build MLX para Apple Silicon. No se mencionan vLLM ni TGI para estos ficheros GGUF.
-- Latencia y throughput: 18-28 tok/s en decodificación simple y 44-52 tok/s con MTP en el hardware citado; el resto de plataformas no está medido en la información disponible.
+- VRAM/memoria estimada para inferencia: aproximadamente el tamaño del archivo más overhead. IQ2_M ~10,2 GB; IQ3_XXS ~11,4 GB; Q3_K_M ~13,5 GB; Q4_K_M ~16,8 GB; Q6_K ~22,4 GB; Q8_0 ~29,0 GB. Añadir ~0,9 GB si se usa el proyector multimodal F16.
+- GPU recomendadas: A100 y H100 para mayor throughput y contexto completo de 65.536 tokens; RTX 4090 (24 GB) puede alojar hasta Q6_K con margen ajustado o Q4_K_M con holgura.
+- Consumer GPU: Q4_K_M (16,8 GB) cabe en RTX 4080/4090 y en GPUs de 24 GB; IQ3_XXS e IQ2_M caben en GPUs de 12-16 GB. En Apple Silicon se ha validado en MacBook Pro M5 Max con 128 GB de memoria unificada.
+- Opciones de despliegue: llama.cpp (llama-server), Splash 1.7.0 y builds MLX de 6 bits para Apple Silicon. No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: en M5 Max, entre 18 y 28 tok/s en decodificación plana según cuantización, y entre 44 y 52 tok/s con MTP; con Splash, entre 84 y 128 tok/s extremo a extremo. No hay datos de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-pi-adapted GGUF (este) | 27.320.697.856 | 65.536 en el ejemplo de despliegue | Agente de código y terminal, multimodal | Apache-2.0 | GGUF en HF, build MLX |
-| Qwen3.8-27B (base) | 27.320.697.856 | No disponible | Modelo general | Apache-2.0 | Pesos en HF |
-| harness-hub/Qwen3.8-27B-pi-adapted (adaptador) | 27.320.697.856 | No disponible | Adaptador LoRA para pi | Apache-2.0 | Requiere cargar con `--lora` |
+| Qwen3.8-27B-pi-adapted (este) | 27,3 B | 65.536 tokens | Agente de codificación (pi) | Apache 2.0 | GGUF y MLX |
+| Qwen/Qwen3.8-27B (base) | 27,3 B | no disponible | Propósito general | no disponible | Pesos originales |
+| harness-hub/Qwen3.8-27B-pi-adapted | 27,3 B | no disponible | Agente de codificación (LoRA) | no disponible | Adaptador LoRA |
 
-No se dispone de datos sobre otros modelos comparables de la misma categoría en la información proporcionada.
+No se dispone de datos de benchmarks de modelos de terceros en la información proporcionada para ampliar la comparativa.
 
 ## Limitaciones y advertencias
 
-- El adaptador se entrenó y evaluó con thinking desactivado; activar el razonamiento puede degradar el comportamiento esperado. El ejemplo oficial fija `enable_thinking: false`.
-- El adaptador se entrenó y evaluó con la API Chat Completions; otros formatos de API pueden alterar el rendimiento.
-- La cuantización Q4_K_M presenta una divergencia KL de 0,0595 y solo un 94,2% de coincidencia de siguiente token frente a BF16, lo que puede afectar a tareas de agente sensibles a la precisión.
-- Los benchmarks reportados (Terminal-Bench 2.1, SWE-bench Pro) provienen del autor del adaptador y no han sido replicados de forma independiente en esta ficha.
-- Las mediciones de velocidad se tomaron con otros servicios en ejecución en el mismo equipo y el propio autor las califica de indicativas.
-- No se especifican idiomas soportados ni datos sobre sesgos; al ser un derivado de Qwen3.8-27B, hereda los sesgos de su base y de los datos de entrenamiento del adaptador.
-- Riesgo de alucinación inherente a los modelos generativos, especialmente en llamadas a herramientas y en la interpretación de resultados de terminal; conviene validar las acciones antes de ejecutarlas en producción.
-- El repositorio no está afiliado a Hugging Face, harness-hub ni Alibaba; la licencia Apache-2.0 permite uso comercial, pero se debe conservar el fichero `NOTICE` y citar los trabajos originales.
-- El contexto máximo nativo del modelo no se documenta; el valor de 65.536 tokens corresponde a la configuración de ejemplo, no a un límite verificado.
+- El adaptador fue entrenado y evaluado con thinking desactivado; activar el modo thinking puede degradar el rendimiento respecto a los resultados publicados.
+- El adaptador fue entrenado y evaluado con la API Chat Completions; usar otro formato de API puede afectar al comportamiento esperado.
+- Las cuantizaciones bajas (IQ2_M, IQ3_XXS, Q3_K_M) presentan divergencia KL notablemente mayor (0,08-0,17 frente a Q8_0) y menor tasa de coincidencia en el siguiente token (89,6%-93,1%), lo que puede afectar a tareas sensibles.
+- Los archivos IQ conservan la capa MTP en Q4_K porque la matriz de importancia no la cubre, lo que puede introducir diferencias adicionales.
+- Las mediciones de velocidad son indicativas, realizadas en un único equipo con otros servicios en ejecución; no deben tomarse como cifras de producción.
+- No se dispone de información sobre sesgos, idiomas soportados ni riesgos específicos de alucinación más allá de los inherentes a los modelos de lenguaje.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen y del adaptador original.
+- El rendimiento en tareas fuera del dominio de codificación y terminal no está documentado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Adaptador original: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
-- Build MLX de 6 bits: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-6bit
+- Modelo base del adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
+- Modelo Qwen original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Agente pi: https://github.com/earendil-works/pi
-- Más builds de NetProjects: https://huggingface.co/netprojects
-- Sitio del publicador: https://netprojects.com
+- Builds MLX de 6 bits: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-6bit

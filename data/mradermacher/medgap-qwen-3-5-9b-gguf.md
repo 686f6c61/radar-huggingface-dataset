@@ -2,74 +2,96 @@
 
 ## Resumen
 
-medgap-qwen-3.5-9b-GGUF es una versión cuantizada en formato GGUF del modelo medgap-qwen-3.5-9b, desarrollado por protocolsyncllc. Este modelo es un fine-tuning de la familia Qwen 3.5 de 9B parámetros, entrenado específicamente con el dataset protocolsyncllc/fda-warning-letters, compuesto por cartas de advertencia de la FDA. El objetivo es ofrecer un asistente especializado en tareas de cumplimiento normativo y regulación sanitaria en inglés.
+medgap-qwen-3.5-9b es un ajuste fino (fine-tune) del modelo Qwen 3.5 de 9B parámetros, desarrollado por ProtocolSync LLC y especializado en el dominio regulatorio de dispositivos médicos, concretamente en el análisis de cartas de advertencia (warning letters) de la FDA estadounidense. El modelo base ha sido adaptado sobre el dataset `protocolsyncllc/fda-warning-letters` para tareas de comprensión y generación de texto relacionadas con el cumplimiento normativo sanitario.
 
-La cuantización, realizada por mradermacher, permite ejecutar el modelo en hardware de consumo mediante llama.cpp, Ollama u otros runtime compatibles con GGUF, reduciendo los requisitos de memoria respecto al modelo original. El modelo tiene 9.197.093.888 parámetros y se distribuye bajo licencia llama3. La longitud de contexto no está especificada en la información disponible.
+La versión aquí descrita es una cuantización estática en formato GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo original cuenta con 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) y está publicado bajo licencia Apache 2.0.
 
-## Especificaciones técnicas
+Es relevante para equipos de desarrollo e investigación que necesitan desplegar un asistente especializado en documentación regulatoria médica en entornos con recursos limitados, aprovechando el ecosistema GGUF para inferencia local sin depender de infraestructura en la nube.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el nombre sugiere un transformer de la familia Qwen 3.5, pero no se especifica en la información disponible) |
-| Parametros totales | 9.197.093.888 |
+| Arquitectura | Transformer (derivada de Qwen 3.5); detalles especificos no disponibles |
+| Parametros totales | 9.197.093.888 (~9,2B) |
+| Parametros activos | No aplica (no es MoE, segun la informacion disponible) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q6_K, Q8_0, f16 |
-| Idiomas soportados | Inglés (en) |
-| Licencia | llama3 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, cuyo nombre indica que es un fine-tuning de la familia Qwen 3.5 de 9B parámetros, se ha ajustado sobre el dataset protocolsyncllc/fda-warning-letters. No se dispone de información detallada sobre la arquitectura exacta (número de capas, mecanismos de atención, etc.), el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La conversión a GGUF ha sido realizada por mradermacher mediante cuantizaciones estáticas; no se han publicado cuantizaciones con imatrix o pesos ponderados en el momento de la consulta.
+El modelo es un fine-tune del Qwen 3.5 de 9B parámetros, una arquitectura transformer densa (no se indica que sea MoE). El ajuste se realizó sobre el dataset `protocolsyncllc/fda-warning-letters`, compuesto por cartas de advertencia de la FDA relacionadas con dispositivos médicos. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF, DPO o instrucción supervisada.
+
+La innovación principal de esta ficha es la disponibilidad de cuantizaciones estáticas GGUF generadas por mradermacher, que abarcan desde Q2_K (4,0 GB) hasta f16 (18,5 GB), facilitando el despliegue en diferentes niveles de hardware. No se han publicado detalles sobre innovaciones arquitectónicas adicionales (decodificación especulativa, atención lineal, etc.) en la información disponible.
 
 ## Capacidades
 
-- Generación y comprensión de texto en inglés especializado en el ámbito médico y regulatorio.
-- Según los tags y el dataset, el modelo está orientado al análisis de cartas de advertencia de la FDA, por lo que puede ayudar a identificar incumplimientos, requisitos y plazos mencionados en dichos documentos.
-- Asistencia en tareas de cumplimiento normativo: interpretar y resumir comunicaciones de agencias reguladoras.
-- No se ha documentado soporte de tool calling, function calling, agentes, visión o audio en la información disponible.
+- Generación de texto especializado en dominio regulatorio de dispositivos médicos (cartas de advertencia FDA).
+- Comprensión y resumen de documentación normativa sanitaria en inglés.
+- Conversación multi-turno (el modelo está etiquetado como conversacional).
+- Capacidades generales heredadas del modelo base Qwen 3.5 (razonamiento, código, matemáticas), aunque no verificadas en esta ficha.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: solo inglés declarado.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Revisión de cartas de advertencia de la FDA: el modelo puede procesar una carta de advertencia y extraer las secciones clave (hallazgos, requisitos, plazos), lo que permite a los equipos de calidad y cumplimiento priorizar las acciones correctivas.
-- Generación de resúmenes regulatorios: a partir de documentos largos de la FDA, el modelo puede producir resúmenes ejecutivos en inglés, facilitando la comunicación entre departamentos.
-- Clasificación de no conformidades: dada una descripción de un problema de cumplimiento, el modelo puede clasificarlo según categorías habituales en las cartas de advertencia de la FDA.
-- Redacción de borradores de respuestas: el modelo puede redactar borradores de respuestas a requerimientos regulatorios, que un experto en asuntos regulatorios debe revisar y validar antes de enviar.
-- Análisis de tendencias en avisos regulatorios: al procesar un conjunto de cartas de advertencia, el modelo puede identificar patrones recurrentes de incumplimiento y ayudar a detectar riesgos emergentes.
-- Formación interna en cumplimiento: el modelo puede generar casos prácticos y preguntas de examen basados en cartas reales de la FDA, para entrenar a nuevo personal de asuntos regulatorios.
+- Análisis de cartas de advertencia de la FDA: el modelo puede extraer infracciones, plazos y requisitos de respuesta de documentos regulatorios, aprovechando su ajuste específico sobre este corpus.
+- Asistencia en cumplimiento normativo de dispositivos médicos: revisión de borradores de respuestas a la FDA y verificación de que se cubren los puntos señalados.
+- Clasificación y triaje de documentación regulatoria: categorización de cartas por tipo de infracción o área de producto, útil en flujos de trabajo de calidad y asuntos regulatorios.
+- Generación de resúmenes ejecutivos para equipos legales y de calidad: síntesis de documentos extensos en inglés para revisión interna.
+- Despliegue local en entornos con requisitos de confidencialidad: al ser GGUF, puede ejecutarse en infraestructura propia sin enviar datos sensibles a servicios externos.
+- Prototipado rápido de asistentes internos: con cuantizaciones Q4_K_M (5,9 GB) se puede integrar en herramientas de escritorio o servidores modestos para pruebas de concepto.
+- Formación y consulta interna: chatbot de apoyo para equipos que necesitan entender el lenguaje regulatorio de la FDA sin acceso a un experto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización, sin contar el overhead del contexto): Q2_K ~4 GB, Q3_K_S ~4.5 GB, Q3_K_M ~4.8 GB, Q4_K_S ~5.6 GB, Q6_K ~7.7 GB, Q8_0 ~9.9 GB, f16 ~18.5 GB. La VRAM real necesaria será mayor; por ejemplo, para Q4_K_S se recomienda al menos 8 GB de VRAM.
-- GPU recomendadas: RTX 3060 12 GB para Q4_K_S; RTX 4090 24 GB para Q8_0; A100 40 GB para f16.
-- Sí cabe en GPU de consumo: las cuantizaciones Q4_K_S y menores pueden ejecutarse en una RTX 3060 12 GB; Q8_0 requiere una GPU de 16-24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, o cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según cuantización):
+  - Q2_K: ~4,0 GB de pesos; ~5-6 GB de VRAM con overhead.
+  - Q4_K_M: ~5,9 GB de pesos; ~7-8 GB de VRAM con overhead.
+  - Q8_0: ~9,9 GB de pesos; ~11-12 GB de VRAM con overhead.
+  - f16: ~18,5 GB de pesos; ~20-22 GB de VRAM con overhead.
+- GPU recomendadas: RTX 3060 12 GB o superior para Q4_K_M; RTX 4090 (24 GB) para Q8_0 o f16; A100/H100 para despliegues de mayor throughput.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB con Q4_K_M o inferiores; en GPUs de 8 GB con Q2_K/Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones; se requeriría el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| medgap-qwen-3.5-9b-GGUF | 9.197.093.888 | no disponible | llama3 | GGUF | no disponible |
-| protocolsyncllc/medgap-qwen-3.5-9b (base) | 9.197.093.888 | no disponible | llama3 | safetensors | no disponible |
-| mradermacher/Qwen3.5-9B-Neo-GGUF | no disponible | no disponible | no disponible | GGUF | no disponible |
-| mradermacher/Qwen3.5-9B-abliterated-v2-MAX-GGUF | no disponible | no disponible | no disponible | GGUF | no disponible |
+| medgap-qwen-3.5-9b (este) | ~9,2B | No disponible | Apache 2.0 | GGUF | Fine-tune especializado en FDA warning letters |
+| Qwen 3.5 9B (base) | ~9,2B | No disponible | Apache 2.0 | Safetensors | Modelo generalista sin especialización regulatoria |
+| Modelos médicos de ~7-9B (p. ej., BioMistral, Meditron) | 7-9B | Variable | Variable | Safetensors/GGUF | Especializados en conocimiento médico general, no en regulación FDA |
+
+No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos: al estar entrenado con cartas de advertencia de la FDA, el modelo puede presentar un sesgo hacia el lenguaje regulatorio formal y las normativas estadounidenses, lo que puede limitar su utilidad en otros contextos regulatorios.
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar contenido factualmente incorrecto. Se recomienda validar cualquier salida con un experto humano antes de su uso en producción.
-- Limitaciones de idioma: el modelo solo soporta inglés (en); no está preparado para otros idiomas.
-- Longitud de contexto: no se especifica en la información disponible, por lo que el rendimiento en documentos muy largos es incierto.
-- Licencia: la licencia llama3 (Licencia Llama 3 Community) puede imponer restricciones al uso comercial; es necesario revisar los términos de la licencia antes de desplegar el modelo en producción.
-- Cuantización: las versiones GGUF cuantizadas pueden presentar una ligera pérdida de calidad respecto al modelo original en f16, especialmente en cuantizaciones agresivas como Q2_K.
+- Especialización estrecha: el ajuste se centra en cartas de advertencia de la FDA sobre dispositivos médicos; su rendimiento fuera de ese dominio puede degradarse respecto al modelo base.
+- Idioma: solo se declara inglés; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- Riesgo de alucinación: como todo modelo generativo, puede inventar referencias regulatorias, plazos o requisitos; requiere verificación humana en contextos de cumplimiento.
+- Sesgos: no se han documentado evaluaciones de sesgo; el corpus de la FDA puede reflejar sesgos institucionales o de dominio.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar el cumplimiento de las obligaciones de atribución y las condiciones del modelo base Qwen 3.5.
+- Contexto: no se ha publicado la longitud de contexto; no se debe asumir una ventana larga sin verificación.
+- Producción: no hay benchmarks publicados ni garantías de calidad; se recomienda evaluación propia antes de desplegar en flujos regulatorios críticos.
+- Cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso serio.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/medgap-qwen-3.5-9b-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b
-- Dataset de cartas de advertencia de la FDA: https://huggingface.co/datasets/protocolsyncllc/fda-warning-letters
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/medgap-qwen-3.5-9b-GGUF
+- Modelo base: https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b
+- Dataset: https://huggingface.co/datasets/protocolsyncllc/fda-warning-letters
+- Página de descargas del cuantizador: https://hf.tst.eu/model#medgap-qwen-3.5-9b-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico de perplejidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

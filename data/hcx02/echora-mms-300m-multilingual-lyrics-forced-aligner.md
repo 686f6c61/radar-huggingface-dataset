@@ -2,80 +2,89 @@
 
 ## Resumen
 
-Echora MMS 300M Multilingual Lyrics Forced Aligner es un modelo de alineación forzada multilingüe desarrollado por hcX02. Está construido sobre el modelo base `facebook/mms-300m`, un encoder Wav2Vec2/MMS de aproximadamente 300 millones de parámetros. Su función principal es sincronizar letras de canciones proporcionadas por el usuario con el audio de la pista musical, generando marcas temporales aproximadas a nivel de palabra o sílaba.
+Echora MMS 300M Multilingual Lyrics Forced Aligner es un modelo de alineamiento forzado (forced alignment) especializado en sincronizar texto de letras de canciones con audio musical, generando marcas de tiempo a nivel de palabra o sílaba para proyectos de karaoke y visualización de letras. Lo desarrolla el usuario hcX02 en el contexto del proyecto Echora, y parte del modelo base `facebook/mms-300m` de Meta, sobre el que se ha realizado un fine-tuning con supervisión de letras temporizadas.
 
-El modelo se ha ajustado específicamente para alinear letras en siete idiomas: inglés, japonés, coreano, español, indonesio, urdu e hindi, y soporta además letras con escritura mixta. Resulta especialmente relevante para proyectos personales de karaoke, visualización de letras sincronizadas y herramientas de práctica de pronunciación, donde se dispone de la letra escrita y se necesita asociarla a la línea temporal del audio. No se han publicado datos sobre la longitud de contexto ni sobre el formato de cuantización, por lo que en esta ficha se indican como no disponibles.
+El modelo resuelve un problema concreto: dado un audio musical y una letra en texto, determinar cuándo se canta cada palabra o sílaba. A diferencia de los alineadores de voz hablada, está entrenado sobre stems vocales separados y contempla coros de fondo superpuestos a la voz principal, una innovación respecto a revisiones anteriores del mismo autor. Cubre siete idiomas: inglés, japonés, coreano, español, indonesio, urdu e hindi, además de letras con escritura mixta.
+
+Arquitectónicamente es un Wav2Vec2 con cabeza CTC de aproximadamente 315 millones de parámetros (315.504.320 según los pesos en safetensors), derivado de MMS-300M. Su relevancia actual radica en que los alineadores multilingües de letras cantadas son escasos y los existentes suelen fallar con coros superpuestos, romanizaciones y cambios fonéticos propios del canto; este modelo aborda explícitamente esos casos, aunque con una licencia restrictiva que limita su uso a proyectos personales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Wav2Vec2 / MMS CTC (forced alignment) |
-| Parametros totales | Aproximadamente 300M |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés, japonés, coreano, español, indonesio, urdu, hindi |
-| Licencia | Other (uso personal y no comercial exclusivamente) |
-| Formato de pesos | No disponible |
+| Arquitectura | Wav2Vec2 con cabeza CTC (MMS CTC forced aligner) |
+| Parametros totales | 315.504.320 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo acústico; la ventana depende del pipeline de alineamiento) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, ja, ko, es, id, ur, hi, y letras con escritura mixta |
+| Licencia | other (uso personal y no comercial únicamente) |
+| Formato de pesos | safetensors (repositorio de 3,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `facebook/mms-300m`, un encoder de tipo Wav2Vec2 entrenado en el marco de Massively Multilingual Speech (MMS). La arquitectura resultante es un modelo CTC que emite probabilidades por frame, lo que permite alinear automáticamente una secuencia de texto (la letra) con la secuencia temporal de la señal de audio. El entrenamiento se realizó con supervisión de tiempo para la alineación de letras multilingües, según la información aportada por Echora. No se detallan los datos de entrenamiento, el número total de tokens ni si se aplicaron técnicas como RLHF o DPO, que en cualquier caso no son habituales en este tipo de modelos de audio. Tampoco se especifican innovaciones técnicas adicionales más allá de la adaptación del encoder MMS a la tarea de alineación de letras.
+El modelo es un Wav2Vec2 de unos 300 millones de parámetros (MMS-300M de Meta) con una cabeza de clasificación CTC adaptada al alineamiento forzado de letras. La versión v8, la actual, se fine-tuneó desde la v6 sobre stems vocales separados, incorporando de nuevo al conjunto de entrenamiento los coros de fondo que se superponen a la voz principal. Incluye una segunda cabeza de salida para coros de fondo (`stream2_head` en la configuración); al cargar con `Wav2Vec2ForCTC` se usa la cabeza de voz principal y los pesos extra se reportan como no utilizados, lo cual es esperado.
+
+El entrenamiento emplea supervisión de letras temporizadas, con canciones de validación y test separadas por artista y emparejadas a la grabación exacta. La evaluación se realiza con precisión de fotogramas de letra y pérdida de alineamiento sobre segmentos temporizados reservados; el autor advierte que estas métricas miden la concordancia con las etiquetas y no garantizan una sincronización perceptualmente correcta para karaoke. La v6 introdujo la expectativa de romanización del coreano por pronunciación (con liaison, nasalización y otros cambios fonéticos), y la v8 mantiene esa expectativa sin cambios; el japonés usa lecturas en kana resueltas a partir de datos de diccionario cuando es posible.
 
 ## Capacidades
 
-- Alineación forzada de letras con audio musical, generando timestamps aproximados a nivel de palabra o sílaba.
+- Alineamiento forzado de texto de letras con audio musical, generando marcas de tiempo aproximadas a nivel de palabra o sílaba.
 - Soporte multilingüe para inglés, japonés, coreano, español, indonesio, urdu e hindi.
-- Compatibilidad con letras que mezclan varios idiomas o sistemas de escritura.
-- Es capaz de procesar texto de letras suministrado por el usuario; no es un modelo de reconocimiento automático del habla que produzca texto a partir del audio.
-- Integración sencilla con la librería Transformers de Hugging Face mediante `Wav2Vec2ForCTC` y `Wav2Vec2Processor`.
-- Uso previsto exclusivamente para proyectos personales de karaoke y visualización de letras, sin fines comerciales.
+- Manejo de letras con escritura mixta (varios sistemas de escritura en la misma canción).
+- Alineamiento de coros de fondo cantados solos y, en la v8, coros de fondo superpuestos a la voz principal mediante una segunda cabeza de salida.
+- Procesamiento de stems vocales separados, que es el modo de uso recomendado (Echora separa la voz antes de alinear).
+- Expectativas lingüísticas específicas: coreano romanizado por pronunciación y japonés en lecturas kana.
+- No es un modelo generativo de texto ni un modelo de reconocimiento de voz general: su salida es emisión acústica para alineamiento, no transcripción libre.
 
 ## Casos de uso
 
-- Proyectos personales de karaoke: el modelo sincroniza la letra de una canción con la pista de audio para mostrar el texto resaltado en tiempo real, lo que resulta adecuado para aplicaciones caseras de práctica de canto.
-- Visualización de letras sincronizadas en dispositivos locales: se puede integrar en reproductores multimedia de bajo consumo para mostrar la letra que suena, aprovechando que el modelo es ligero y no requiere grandes recursos de GPU.
-- Creación de subtítulos de canciones para vídeos personales: al generar timestamps de palabra o sílaba, permite producir subtítulos sincronizados de forma semiautomática para vídeos de aficionados o proyectos educativos no comerciales.
-- Herramientas de práctica de pronunciación en los idiomas soportados: el modelo ayuda a contrastar la pronunciación del usuario con una referencia cantada, marcando qué parte de la letra se alinea con cada instante del audio.
-- Investigación no comercial sobre estructuras rítmicas de canciones: al disponer de marcas temporales de palabra, se pueden analizar características de sincronía vocálica o sílabas en pistas musicales multilingües.
-- Aplicaciones de accesibilidad para audios con letras conocidas: facilita la generación de texto sincronizado en presentaciones o vídeos personales, siempre que el uso sea personal y sin redistribución.
+- Karaoke personal: dado un stem vocal y la letra, el modelo produce los tiempos de cada palabra o sílaba para resaltar la letra sincronizada en un reproductor doméstico; su entrenamiento sobre stems vocales lo hace adecuado para este flujo.
+- Visualización de letras en reproductores musicales: integración en un pipeline que combine separación de voz, alineamiento y renderizado de subtítulos temporizados, aprovechando el soporte de siete idiomas.
+- Proyectos de subtitulado multilingüe de canciones: el modelo cubre inglés, japonés, coreano, español, indonesio, urdu e hindi, lo que permite un mismo pipeline para repertorios mixtos.
+- Investigación en alineamiento de canto: sirve como punto de partida o referencia para estudiar el comportamiento de alineadores CTC en música con coros superpuestos, dado que la v8 restaura coros solapados en el entrenamiento.
+- Herramientas de aprendizaje de idiomas basadas en canciones: sincronizar la letra con el audio para resaltar la pronunciación en tiempo real en japonés o coreano, teniendo en cuenta las convenciones de romanización del modelo.
+- Prototipos de anotación semiautomática de letras: generar timestamps aproximados que un humano revise después, útil por la advertencia del autor de que las métricas no garantizan una sincronización perceptualmente perfecta.
+- Experimentación con letras de escritura mixta: el modelo declara soporte para mezclas de sistemas de escritura, lo que facilita probar repertorios que combinan, por ejemplo, japonés e inglés en la misma canción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor menciona métricas internas de validación (precisión de fotogramas de letra y pérdida de alineamiento sobre segmentos temporizados reservados), pero no se proporcionan valores numéricos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 600 MB en precisión fp16 y alrededor de 1,2 GB en fp32, más el overhead de procesamiento de la señal de audio. Estimación orientativa en función de los 300 millones de parámetros.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para cargar y ejecutar el modelo; también puede ejecutarse en CPU con suficiente RAM.
-- Compatible con GPUs de consumo como GTX 1650, RTX 3050, RTX 3060 o superiores.
-- Opciones de despliegue: se integra con la librería Hugging Face Transformers y requiere un pipeline externo de alineación forzada que combine las salidas CTC con el texto suministrado.
-- Latencia y throughput: no disponibles sin una medición específica sobre el hardware y la configuración utilizada.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 315,5 millones de parámetros en precisión completa (fp32) el peso ronda 1,26 GB, y en fp16 alrededor de 0,63 GB, sin contar activaciones ni el pipeline de separación de voz.
+- GPU recomendadas: no disponible. Por tamaño, el modelo es ligero y no requiere GPU de数据中心; una GPU consumer con 4-8 GB de VRAM debería acomodar los pesos en fp16, aunque no hay confirmación del autor.
+- Cabe en GPU consumer: previsiblemente sí por tamaño de pesos, pero no hay datos oficiales de requisitos ni de latencia.
+- Opciones de despliegue: la model card documenta carga mediante `transformers` con `Wav2Vec2ForCTC` y `Wav2Vec2Processor`. No se mencionan vLLM, llama.cpp, Ollama ni TGI; el repositorio proporciona solo pesos, y el alineamiento requiere un pipeline compatible que combine emisiones acústicas con el texto de la letra.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Licencia | Formato | Uso |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| hcX02/echora-mms-300m-multilingual-lyrics-forced-aligner | ~300M | 7 idiomas | Other (personal no comercial) | No disponible | Alineación forzada de letras |
-| facebook/mms-300m | ~300M (estimado) | Más de 1000 idiomas (ASR) | No disponible | No disponible | Reconocimiento automático del habla |
-| tatsu020/mms-300m-fa-onnx | ~300M (estimado) | Vocabulario romanizado (a–z) | No disponible | ONNX | Alineación forzada CTC |
+| Echora MMS 300M Multilingual Lyrics Forced Aligner | 315,5 M | no disponible | 7 + escritura mixta | other (solo personal, no comercial) | Fine-tune de MMS-300M para letras cantadas, con cabeza para coros de fondo |
+| facebook/mms-300m | ~300 M | no disponible | ~1.100 idiomas | CC-BY-NC 4.0 | Modelo base multilingüe de Meta; no especializado en alineamiento de letras cantadas |
+| Alineadores CTC genéricos sobre wav2vec2 (p. ej. torchaudio MMS_FA) | ~300 M | no disponible | variable | según implementación | Alineamiento de voz hablada; sin entrenamiento específico en canto ni coros superpuestos |
 
-La comparativa coloca al modelo de Echora como un ajuste específico para letras multilingües, mientras que `facebook/mms-300m` es el modelo base de ASR masivamente multilingüe y `tatsu020/mms-300m-fa-onnx` es una versión convertida a ONNX con vocabulario romanizado. No se dispone de datos de rendimiento que permitan una comparación cuantitativa.
+La comparación con alternativas especializadas en alineamiento de letras cantadas no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia restringe el uso exclusivamente a fines personales y no comerciales; no se permite usar el modelo en productos comerciales, servicios de pago, redistribución ni para entrenar otros modelos.
-- La calidad de la sincronización varía según la claridad vocal, la densidad instrumental, la calidad de grabación, el idioma y la precisión de la letra suministrada.
-- Frases repetidas, notas sostenidas largas, ad-libs, rap, efectos vocales y voces superpuestas pueden producir límites temporales inexactos.
-- Las letras romanizadas tienden a tener fronteras de sílaba más débiles que las escritas en su sistema nativo.
-- El modelo no es un sistema de transcripción automática; requiere que el texto de la letra sea proporcionado externamente.
-- No se han publicado benchmarks ni evaluaciones externas, por lo que no es posible verificar su calidad frente a otros alineadores.
-- La responsabilidad de contar con los derechos necesarios sobre el audio y el texto de las letras procesadas recae en el usuario.
+- La calidad del timing varía según la claridad vocal, la densidad instrumental, la calidad de grabación, el idioma y la exactitud de la letra.
+- Frases repetidas, notas largas sostenidas, ad-libs, rap, efectos vocales y voces superpuestas pueden producir fronteras inexactas.
+- Las series de interjecciones idénticas ("ooh, ooh", "oh-oh-oh") pueden colocarse tarde, con la primera mantenida sobre el resto.
+- Las letras romanizadas pueden tener fronteras silábicas más débiles que las escritas en su sistema nativo.
+- El coreano debe romanizarse por pronunciación (con liaison, nasalización y otros cambios fonéticos), no letra a letra; la v5 esperaba romanización letra a letra y sigue disponible fijando su revisión.
+- Licencia restrictiva: solo uso personal y no comercial. Prohibido el uso en productos comerciales, servicios de pago, redistribución o entrenamiento de otros modelos. El usuario es responsable de tener los derechos sobre el audio y la letra procesados.
+- No se concede permiso para usos sensibles a derechos de autor, restringidos por derechos o no autorizados.
+- El repositorio contiene solo pesos; se necesita un pipeline de alineamiento forzado compatible para obtener timestamps.
+- Al cargar con `Wav2Vec2ForCTC`, los pesos de la segunda cabeza (`stream2_head`) se reportan como no utilizados, lo cual es esperado y no un error.
+- No hay datos publicados de benchmarks, latencia ni requisitos de hardware.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/hcX02/echora-mms-300m-multilingual-lyrics-forced-aligner
-- Modelo base en Hugging Face: https://huggingface.co/facebook/mms-300m
-- Modelo alternativo con formato ONNX: https://huggingface.co/tatsu020/mms-300m-fa-onnx
-- Información sobre MMS-300M: https://aiany.app/item/massively-multilingual-speech-mms-300m
+- Hugging Face: https://huggingface.co/hcX02/echora-mms-300m-multilingual-lyrics-forced-aligner
+- Modelo base: https://huggingface.co/facebook/mms-300m
+- Repositorio de Echora: no disponible (la model card indica abrir issues en el repositorio de Echora, sin enlace explícito)
+- Paper, blog o demo: no disponible

@@ -2,80 +2,88 @@
 
 ## Resumen
 
-jairo-ai-1.0-flash-i1-GGUF es una cuantizacion en formato GGUF del modelo jairo-ai-1.0-flash, publicada por el usuario mradermacher en Hugging Face. El repositorio contiene unicamente los pesos cuantizados generados a partir del modelo original alojado en LouieR09112/jairo-ai-1.0-flash, por lo que no se trata de un modelo entrenado por el autor de esta publicacion, sino de una conversion de pesos para su uso con herramientas de inferencia local como llama.cpp u Ollama.
+jairo-ai-1.0-flash-i1-GGUF es la versión cuantizada en formato GGUF del modelo LouieR09112/jairo-ai-1.0-flash, un modelo de lenguaje conversacional de aproximadamente 4.022 millones de parámetros (4B) afinado para chat e instrucciones. La cuantización la ha realizado mradermacher, un autor habitual en el ecosistema GGUF conocido por generar versiones con matrices de importancia (imatrix) para llama.cpp. El modelo base se entrenó sobre el dataset Capybara (trl-lib/Capybara) y se distribuye bajo licencia Apache 2.0.
 
-La informacion disponible es extremadamente limitada: el repositorio no incluye model card descriptiva, no declara licencia, no especifica idiomas soportados ni pipeline, y no se han publicado resultados de benchmarks. El dato tecnico mas relevante que puede extraerse es el numero de parametros reportado en los safetensors del modelo base: 1.920.204, una cifra inusualmente baja que sugiere un modelo de escala muy reducida (del orden de millones de parametros, no de miles de millones), aunque no es posible confirmar su arquitectura ni su proposito a partir de la informacion proporcionada.
+El interés principal de esta publicación es práctico: ofrece un conjunto amplio de cuantizaciones (desde IQ1_S de 1,2 GB hasta Q6_K de 3,4 GB) que permiten ejecutar un modelo de 4B en hardware de consumo, desde portátiles modestos hasta GPUs dedicadas. Las variantes i1 (imatrix) suelen ofrecer mejor calidad que las cuantizaciones estáticas equivalentes en tamaño, especialmente en los rangos bajos (Q2, Q3).
 
-La relevancia de esta ficha es por tanto limitada y de caracter descriptivo: documenta la existencia de una conversion GGUF con un amplio conjunto de niveles de cuantizacion (desde IQ1_S hasta Q6_K) generados con tecnicas de imatrix y weighted quants, lo que indica un esfuerzo por ofrecer variantes de bajo consumo de memoria. Sin embargo, la ausencia de documentacion sobre el modelo base impide evaluar su calidad, capacidades o idoneidad para produccion.
+La información pública disponible sobre el modelo base es escasa: no se detallan arquitectura exacta, longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja únicamente los datos verificables de la model card y de los metadatos de Hugging Face, indicando explícitamente los campos no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1.920.204 (segun safetensors del modelo base) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base de tipo transformer, sin confirmar detalles) |
+| Parámetros totales | 4.022.468.096 (≈4B) |
+| Parámetros activos | no aplica (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
+| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas i1/imatrix) |
+| Idiomas soportados | inglés (según la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (imatrix); el modelo base está en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base jairo-ai-1.0-flash. El repositorio de cuantizacion no incluye model card con detalles de arquitectura, datos de entrenamiento, numero de tokens procesados, composicion del dataset ni tecnicas de alineacion como RLHF o DPO. El unico dato estructural disponible es el recuento de parametros de los safetensors del modelo original (1.920.204), que apunta a un modelo de escala muy pequena, aunque no permite inferir si se trata de un transformer denso, un modelo MoE o una arquitectura alternativa.
+No se dispone de información detallada sobre la arquitectura interna del modelo base LouieR09112/jairo-ai-1.0-flash. Por el tamaño (4B parámetros) y el pipeline declarado (transformers, chat, instruct), se trata presumiblemente de un transformer decoder-only afinado para conversación, pero la model card no especifica número de capas, dimensión oculta, mecanismo de atención ni longitud de contexto nativa.
 
-En cuanto al proceso de cuantizacion, la model card del repositorio (en forma de comentarios HTML) indica que se han generado cuantizaciones con imatrix y weighted quants, y lista 24 variantes de cuantizacion distintas. Esto sugiere el uso de la herramienta de cuantizacion de llama.cpp con una matriz de importancia (imatrix) para preservar la calidad en niveles agresivos de compresion. No se documenta el proceso de conversion mas alla de la etiqueta convert_type: hf, que indica que la conversion partio de pesos en formato Hugging Face.
+El único dato de entrenamiento disponible es el dataset utilizado en el ajuste: trl-lib/Capybara, un conjunto de datos conversacionales de alta calidad orientado a instrucciones y razonamiento multi-turno. No se documentan el número de tokens de preentrenamiento, la composición del corpus, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación. Esta cuantización concreta se ha generado con matrices de importancia (imatrix), un proceso que pondera la cuantización según la relevancia de cada peso para reducir la pérdida de calidad en bits bajos.
 
 ## Capacidades
 
-- No se dispone de informacion documentada sobre las capacidades del modelo base.
-- No se confirma soporte de generacion de texto, razonamiento, codigo, matematicas o vision.
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni razonamiento multi-paso.
-- No se confirma capacidad multilingue ni idiomas concretos.
-- No se confirma la existencia de modos especiales (thinking mode, vision, audio).
-- La unica capacidad verificable es la de ser cargado en herramientas compatibles con GGUF (llama.cpp y derivados) para inferencia local.
+- Generación de texto conversacional e instrucciones en inglés, según los tags del modelo (chat, instruct).
+- Ajuste específico sobre Capybara, lo que sugiere capacidad para diálogo multi-turno y seguimiento de instrucciones.
+- No consta soporte documentado de tool calling ni function calling.
+- No consta soporte documentado de agentes o razonamiento multi-paso explícito.
+- Capacidad multilingüe limitada al inglés según la model card; no se declaran otros idiomas.
+- No se declaran capacidades de visión, audio ni modo de razonamiento (thinking mode).
+- Al ser un modelo de 4B, su capacidad de razonamiento complejo y código es presumiblemente limitada en comparación con modelos mayores, aunque no hay datos que lo confirmen.
 
 ## Casos de uso
 
-- Inferencia local en hardware de bajos recursos: dado el reducido numero de parametros reportado y la disponibilidad de cuantizaciones de 1 a 2 bits (IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS), el modelo podria desplegarse en dispositivos con memoria muy limitada, aunque no hay datos que confirmen su calidad en esos niveles.
-- Experimentacion con cuantizacion extrema: el repositorio ofrece 24 variantes, lo que lo hace util como caso de estudio para comparar el impacto de distintos niveles de cuantizacion sobre un mismo modelo base.
-- Pruebas de integracion con llama.cpp: puede emplearse para validar pipelines de carga de GGUF y verificacion de compatibilidad de versiones del formato.
-- Evaluacion comparativa de tecnicas imatrix: al haberse generado con weighted/imatrix quants, sirve para analizar diferencias de perplejidad entre variantes con y sin matriz de importancia, si el usuario dispone de un conjunto de evaluacion propio.
-- Docencia y demostraciones de cuantizacion: util para explicar en talleres como afecta la compresion a modelos de muy baja escala.
-- Uso como placeholder en pipelines de prueba: para validar infraestructura de despliegue (servidores, contenedores, scripts) sin consumir recursos de un modelo grande.
-- Advertencia: no se recomienda su uso en produccion ni en aplicaciones orientadas a usuario final sin una evaluacion previa del modelo base, dada la ausencia total de documentacion sobre calidad, sesgos y licencia.
+- Asistentes conversacionales ligeros en local: el modelo puede gestionar diálogos multi-turno en inglés y ejecutarse en un portátil con la cuantización Q4_K_M (2,6 GB), lo que lo hace adecuado para prototipos de chatbot sin dependencia de la nube.
+- Despliegue en dispositivos con recursos limitados: las variantes IQ2 e IQ3 (1,3-2,3 GB) permiten ejecución en CPUs y GPUs integradas, útil para demos y entornos embebidos donde el espacio es crítico.
+- Generación de texto asistida en herramientas de escritorio: integrable vía llama.cpp u Ollama para autocompletado, resumen o reescritura de textos en inglés dentro de aplicaciones locales.
+- Filtrado y clasificación de texto: con un modelo de 4B y contexto conversacional, puede emplearse para tareas de etiquetado, moderación básica o extracción de información en pipelines por lotes.
+- Experimentación e investigación en cuantización: el repositorio ofrece casi todas las variantes de cuantización i1, lo que permite estudiar la degradación de calidad por nivel de bits con un mismo modelo base.
+- Educación y prototipado rápido: permite a desarrolladores probar pipelines de inferencia GGUF (llama.cpp, servidores compatibles con OpenAI) con un modelo pequeño antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precision; con 1.920.204 parametros, incluso en cuantizaciones de 1-2 bits el modelo ocuparia del orden de unos pocos megabytes, aunque este calculo es una estimacion basada en el recuento de parametros y no un dato confirmado por el autor.
-- GPU recomendadas: no disponible. Por el tamano reportado, cabria en practicamente cualquier GPU consumer, pero no hay confirmacion oficial.
-- Compatibilidad con GPU consumer: probablemente si, en modelos como GTX 1060, RTX 3060 o superiores, aunque no confirmado.
-- Opciones de despliegue: llama.cpp y herramientas compatibles con GGUF (Ollama, LM Studio, entre otras). No se confirma soporte de vLLM ni TGI, que habitualmente requieren pesos sin cuantizar o formatos distintos.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (según cuantización): IQ1_S/IQ1_M ≈1,2 GB; IQ2_XXS ≈1,3 GB; IQ2_XS/IQ2_S ≈1,5 GB; IQ2_M ≈1,6 GB; Q2_K_S ≈1,7 GB; Q2_K/IQ3_XXS ≈1,8 GB; IQ3_XS ≈1,9 GB; Q3_K_S/IQ3_S ≈2,0 GB; IQ3_M ≈2,1 GB; Q3_K_M ≈2,2 GB; Q3_K_L ≈2,3 GB; IQ4_XS ≈2,4 GB; Q4_0/IQ4_NL/Q4_K_S ≈2,5 GB; Q4_K_M ≈2,6 GB; Q4_1 ≈2,7 GB; Q5_K_S ≈2,9 GB; Q5_K_M ≈3,0 GB; Q6_K ≈3,4 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar las cuantizaciones Q4 o superiores (por ejemplo, RTX 3050, GTX 1660, RTX 4060). Para Q5/Q6 conviene disponer de 6-8 GB (RTX 3060, RTX 4060 Ti, RTX 4070). Las variantes IQ2/IQ3 caben en GPUs integradas o en CPU.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones, incluidas GPUs de gama baja y portátiles.
+- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con endpoints OpenAI (el tag endpoints_compatible así lo indica), y cualquier runtime que acepte GGUF.
+- Latencia y throughput: no disponibles (no se han publicado mediciones en la información proporcionada).
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la informacion proporcionada modelos comparables de la misma categoria, y la ausencia de datos sobre arquitectura, contexto y rendimiento impide establecer una comparacion rigurosa con alternativas.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| jairo-ai-1.0-flash (esta ficha) | ≈4B | no disponible | Apache 2.0 | GGUF (imatrix) y safetensors | Ajustado sobre Capybara; solo inglés declarado |
+| Alternativas de ~4B en GGUF | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de modelos comparables en la información proporcionada |
+
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría. Se recomienda evaluar directamente el modelo base y sus cuantizaciones frente a otros modelos de 4B en el propio entorno de despliegue.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, capacidades ni limitaciones del modelo base.
-- Licencia no declarada: no es posible determinar si el uso comercial esta permitido; se recomienda contactar con el autor del modelo original (LouieR09112) antes de cualquier uso en produccion.
-- Idiomas no especificados: se desconoce si el modelo soporta castellano u otros idiomas.
-- Riesgo de alucinacion: no evaluado; sin benchmarks ni documentacion, no puede descartarse un comportamiento deficiente.
-- Sesgos: no documentados.
-- Parametros reportados inusualmente bajos (1.920.204): conviene verificar si el recuento corresponde realmente al modelo completo o a un subconjunto de tensores, ya que la cifra es atipica para un modelo de lenguaje funcional.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
-- Las cuantizaciones de 1-2 bits (IQ1_S, IQ1_M, IQ2_XXS) suelen degradar notablemente la calidad; su uso debe validarse con evaluaciones propias.
-- Fecha de creacion del repositorio (2026-11-18) posterior a la fecha habitual de publicaciones: conviene verificar la integridad y procedencia de los pesos.
+- Información muy escasa sobre el modelo base: no se documentan arquitectura, contexto, dataset de preentrenamiento ni proceso de alineación, lo que dificulta evaluar su calidad y sesgos.
+- Idioma limitado al inglés según la model card; el rendimiento en castellano no está garantizado ni documentado.
+- Riesgo de alucinación inherente a modelos de 4B; no se han publicado evaluaciones de fidelidad.
+- Las cuantizaciones de 1-2 bits (IQ1, IQ2, Q2_K) degradan notablemente la calidad; la propia model card advierte de "very low quality" en Q2_K_S y recomienda IQ3_XXS frente a Q2_K.
+- No consta soporte de tool calling ni de agentes, por lo que no debe asumirse su uso en pipelines que dependan de function calling.
+- Licencia Apache 2.0 permite uso comercial, pero al no conocerse la procedencia completa de los datos de entrenamiento del modelo base, conviene revisar la model card original antes de un despliegue en producción.
+- No se han publicado benchmarks, por lo que cualquier afirmación de rendimiento relativo carece de respaldo empírico.
 
 ## Enlaces
 
-- Repositorio de cuantizacion: https://huggingface.co/mradermacher/jairo-ai-1.0-flash-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/jairo-ai-1.0-flash-i1-GGUF
 - Modelo base: https://huggingface.co/LouieR09112/jairo-ai-1.0-flash
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/jairo-ai-1.0-flash-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#jairo-ai-1.0-flash-i1-GGUF
+- Dataset de ajuste: https://huggingface.co/datasets/trl-lib/Capybara
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

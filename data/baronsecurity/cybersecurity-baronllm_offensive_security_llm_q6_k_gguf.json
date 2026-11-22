@@ -5,7 +5,7 @@
   "author": "BaronSecurity",
   "url": "https://huggingface.co/BaronSecurity/Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF",
   "created_at": "2026-10-30T10:36:46.000Z",
-  "updated_at": "2026-10-30T10:36:46.000Z",
+  "updated_at": "2026-11-21T23:07:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
     "region:us",
     "conversational"
   ],
-  "likes": 2,
-  "downloads_30d": 591,
+  "likes": 3,
+  "downloads_30d": 665,
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
@@ -40,7 +40,7 @@
     "gguf"
   ],
   "is_conversational": true,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

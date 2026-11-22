@@ -2,107 +2,108 @@
 
 ## Resumen
 
-citation-extractor-fast es un modelo experimental de extracción de citas legales, publicado por el usuario thurstonpowers en Hugging Face. Se trata de un fine-tune de pesos completos (una época) sobre NVIDIA Nemotron-3-Nano-4B-BF16, un transformer de aproximadamente 3.970 millones de parámetros. El modelo recibe como entrada el texto fuente de un documento legal y devuelve un array JSON de objetos con la cita textual (`quote`), su posición de inicio y fin en caracteres Unicode (`start`, `end`) y la categoría de la cita (`kind`).
+citation-extractor-fast es un modelo de extracción de citas legales obtenido mediante ajuste fino completo (full fine-tune) de NVIDIA Nemotron 3 Nano 4B BF16, desarrollado por el usuario thurstonpowers y publicado en Hugging Face. El modelo resuelve un problema muy concreto: dado un documento legal en crudo (estatutos, leyes, proyectos de ley, reglamentos), devuelve un array JSON de objetos `{quote, start, end, kind}` que identifican los textos de cita, su tipología y su posición en el documento fuente.
 
-El modelo resuelve un problema acotado y bien definido: localizar y clasificar referencias legales (estatutos, actas, reglamentos, proyectos de ley) dentro de documentos jurídicos en inglés. No está cualificado para producción ni constituye asesoramiento legal, según advierte explícitamente el autor. Su relevancia radica en que demuestra que un modelo pequeño (4B) con un fine-tune específico puede superar ampliamente tanto a su versión base sin entrenar como a un modelo propietario de referencia (GPT-6.1) en la tarea de reconocimiento exacto de citas.
+Arquitectura Nemotron H (híbrida, según el tag `nemotron_h` del repositorio) con 3.973.556.832 parámetros totales, derivada del checkpoint BF16 de NVIDIA. El entrenamiento consistió en una única época sobre el dataset `thurstonpowers/xll-citation-extractor-fast` (8.015 ejemplos usados realmente). El modelo está pensado como componente experimental de un pipeline de procesamiento legal, no como asistente conversacional general.
 
-La licencia es la NVIDIA Nemotron Open Model License, que impone condiciones específicas para uso comercial. El modelo solo soporta inglés y su formato de pesos es safetensors con código personalizado (`nemotron_h`), lo que requiere `trust_remote_code=True` en transformers.
+Su relevancia radica en que demuestra que un modelo pequeño (~4B parámetros) ajustado específicamente puede superar ampliamente a un modelo frontera como GPT-6.1 en una tarea vertical: 44,55% de F1 en reconocimiento exacto de citas frente a 23,18% del modelo generalista, sobre un conjunto de evaluación de 200 documentos federales con referencias silver.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (Nemotron H, `nemotron_h`), fine-tune de pesos completos |
+| Arquitectura | Nemotron H (transformer híbrido, tag `nemotron_h`), fine-tune completo del checkpoint NVIDIA Nemotron 3 Nano 4B BF16 |
 | Parámetros totales | 3.973.556.832 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (pesos publicados en BF16) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | NVIDIA Nemotron Open Model License |
-| Formato de pesos | safetensors (BF16), con código personalizado |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (pesos publicados en safetensors BF16; el autor no documenta cuantizaciones) |
+| Idiomas soportados | en (inglés) |
+| Licencia | nvidia-nemotron-open-model-license (etiquetada como `other`) |
+| Formato de pesos | safetensors (librería transformers, requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de NVIDIA Nemotron-3-Nano-4B-BF16, un transformer de aproximadamente 4.000 millones de parámetros. Sobre esta base se realizó un fine-tune de pesos completos durante una única época, sin que se especifiquen en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El conjunto de entrenamiento incluyó 8.015 ejemplos efectivamente utilizados, con objetivos "silver" (etiquetas generadas por un modelo profesor, no verificadas por anotadores humanos).
+El modelo parte de `nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16`, un transformer de la familia Nemotron H con 3.973.556.832 parámetros. Sobre ese checkpoint se aplicó un ajuste fino de todos los pesos (full fine-tune, no LoRA ni adaptadores) durante una sola época, usando el dataset propietario `thurstonpowers/xll-citation-extractor-fast`. El repositorio ocupa 8,0 GB en safetensors BF16. No se documentan en la información disponible el número total de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
-La innovación técnica principal no reside en la arquitectura sino en el contrato de entrada/salida: el modelo espera el texto fuente íntegro como mensaje de usuario, con un system prompt entrenado específico (SHA-256 `8e2451afcf15498b0aab55b490fd0536342fcf097ce5dc3abd99958556de4f85`), sin salto de línea final, y debe invocarse con `add_generation_prompt=True`, `enable_thinking=False` y `add_special_tokens=False`. La salida es un array JSON de objetos `{quote, start, end, kind}` donde los offsets son índices de caracteres Unicode (no bytes UTF-8 ni posiciones de token). El autor advierte que los campos `start` y `end` generados no son fiables y deben verificarse con `raw[start:end] == quote`.
+La innovación técnica principal no está en la arquitectura sino en el contrato de entrada/salida: el modelo espera el texto fuente íntegro como mensaje de usuario, con un system prompt fijo (`SYSTEM_PROMPT.txt`, SHA-256 `8e2451afcf15498b0aab55b490fd0536342fcf097ce5dc3abd99958556de4f85`), chat template con `add_generation_prompt=True` y `enable_thinking=False`, y tokenización con `add_special_tokens=False`. La salida es un array JSON de citas con offsets en índices de caracteres Unicode (base cero, `end` exclusivo). El propio autor advierte que los campos `start` y `end` generados son poco fiables y recomienda verificar `raw[start:end] == quote` antes de usarlos, localizando las citas por su `quote` cuando se necesite resaltado en el documento fuente.
 
 ## Capacidades
 
-- Extracción de citas legales textuales de documentos jurídicos en inglés.
-- Clasificación de cada cita en categorías aprendidas (`kind`), como `statutes_at_large` o `act`.
-- Predicción de offsets de inicio y fin en caracteres Unicode, con `end` exclusivo (aunque poco fiables según el autor).
+- Extracción de citas legales en texto federal estadounidense: actas, proyectos de ley, reglas propuestas, reglamentos y estatutos.
+- Generación de JSON estructurado con los campos `quote`, `start`, `end` y `kind`.
+- Clasificación de tipo de cita (`kind`) según una taxonomía aprendida del profesor (por ejemplo `statutes_at_large`, `act`).
 - Manejo de ocurrencias repetidas: cada aparición de una cita se registra como un registro separado.
-- Generación de arrays JSON completos; `[]` indica ausencia de citas predichas, no ausencia verificada legalmente.
-- Procesamiento de documentos de actas, proyectos de ley, reglamentos, estatutos y normas propuestas.
-- Modo conversacional con plantilla de chat entrenada.
-- No soporta tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (`enable_thinking=False` es obligatorio).
+- Predicción de lista vacía (`[]`) cuando el documento no contiene citas.
+- Procesamiento de documentos completos con caracteres Unicode, espacios y saltos de línea originales preservados.
+- No soporta tool calling, function calling, agentes, visión, audio ni modo thinking (explícitamente desactivado en el contrato de inferencia).
+- Capacidad multilingüe limitada al inglés.
 
 ## Casos de uso
 
-- Extracción de citas en revisión documental jurídica: dado un estatuto o reglamento en texto plano, el modelo devuelve las referencias legales contenidas, lo que permite indexarlas y vincularlas a bases de datos normativas. Es adecuado porque su fine-tune está especializado en el formato de citas legales estadounidenses.
-- Construcción de pipelines de enriquecimiento de corpus legales: integrado en un proceso batch que lee documentos, aplica el system prompt entrenado y valida cada `quote` contra el texto fuente antes de almacenar los resultados. El modelo es pequeño (4B) y puede ejecutarse en una sola GPU.
-- Preprocesamiento para motores de búsqueda jurídica: las citas extraídas y clasificadas por `kind` pueden alimentar índices invertidos o grafos de referencias cruzadas entre normas.
-- Detección de referencias en proyectos de ley y normas propuestas: el modelo muestra un rendimiento competitivo en estas categorías (49,01% y 32,58% de F1 de reconocimiento exacto respectivamente), lo que lo hace útil para alertas tempranas en seguimiento regulatorio.
-- Análisis de contratos y expedientes administrativos: aunque entrenado principalmente con normativa federal, puede emplearse para localizar menciones a estatutos y actas en documentos auxiliares, siempre con verificación humana posterior.
-- Generación de datasets etiquetados para entrenar modelos mayores: las predicciones del modelo, tras validación de offsets y revisión humana, pueden servir como preetiquetado semi-automático en proyectos de anotación legal.
-- Evaluación comparativa de extractores: sirve como baseline open source especializado frente a modelos propietarios en tareas de extracción de citas, dado que el autor publica métricas reproducibles sobre un cohorte congelado de 200 documentos.
+- Indexación de corpus legales: procesar colecciones de estatutos y reglamentos para extraer todas las citas y construir un índice de referencias cruzadas, aprovechando la salida JSON estructurada y la detección de ocurrencias repetidas.
+- Enriquecimiento de bases de datos jurídicas: alimentar un pipeline que añada metadatos de citas (tipo, texto) a documentos ya digitalizados, con verificación posterior de offsets mediante `raw[start:end] == quote`.
+- Auditoría de citas en borradores legislativos: detectar qué referencias contiene un proyecto de ley antes de su tramitación, usando el modelo como primer filtro y revisión humana sobre las citas extraídas.
+- Construcción de grafos de citación: extraer citas de actas y estatutos para enlazar documentos entre sí, tratando el campo `kind` como etiqueta preliminar sujeta a normalización downstream.
+- Preprocesamiento para búsqueda legal: generar índices de citas que alimenten un motor de búsqueda o un sistema RAG sobre normativa federal, donde la precisión del texto de cita importa más que la aritmética de offsets.
+- Investigación académica sobre extracción de información jurídica: usar el modelo como baseline ajustado y comparar con modelos generalistas, dado que el autor publica evaluación reproducible sobre 200 documentos con referencias silver.
+- Control de calidad en pipelines de conversión documental: verificar que la conversión de PDF a texto no ha perdido ni alterado citas, comparando las citas extraídas con las esperadas.
 
 ## Benchmarks y rendimiento
 
-El autor publica una evaluación sobre un cohorte congelado de 200 documentos federales con referencias "silver" (consenso de modelos profesor). La métrica principal es el F1 de reconocimiento exacto de la cita textual, ignorando los offsets generados. Todos los documentos intentados, incluidos fallos, 31 salidas truncadas por límite y 19 timeouts, permanecen en el denominador.
+Evaluación sobre 200 documentos federales congelados (silver-reference eval200), midiendo F1 de reconocimiento exacto de cita ignorando los offsets generados. Todos los documentos intentados permanecen en el denominador, incluidos 31 recortes por límite de salida y 19 timeouts.
 
-| Tipo de documento | Documentos | Nemotron sin entrenar | GPT-6.1 | Nemotron fine-tuned |
-|---|---:|---:|---:|---:|
-| Actas (Acts) | 37 | 3,32% | 23,21% | 55,76% |
-| Proyectos de ley (Bills) | 44 | 0,73% | 13,19% | 49,01% |
-| Normas propuestas (Proposed rules) | 37 | 0,88% | 31,43% | 32,58% |
-| Reglamentos (Regulations) | 44 | 0,59% | 30,01% | 38,08% |
-| Estatutos (Statutes) | 38 | 1,33% | 17,57% | 43,64% |
-| Global (micro) | 200 | 1,31% | 23,18% | No disponible en la información proporcionada |
+| Tipo de documento | Documentos | Nemotron sin entrenar | GPT-6.1 Sol | Fine-tuned original | Fine-tuned + reintentos por timeout |
+|---|---:|---:|---:|---:|---:|
+| Acts | 37 | 3,32% | 23,21% | 55,76% | **61,88%** |
+| Bills | 44 | 0,73% | 13,19% | 49,01% | **49,01%** |
+| Proposed rules | 37 | 0,88% | 31,43% | 32,58% | **32,58%** |
+| Regulations | 44 | 0,59% | 30,01% | 38,08% | **34,15%** |
+| Statutes | 38 | 1,33% | 17,57% | 43,64% | **43,64%** |
+| **Global (micro)** | **200** | **1,31%** | **23,18%** | **44,23%** | **44,55%** |
 
-No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K.
+El autor indica que la comparativa completa por tipo de documento (con precisión, recall, acuerdo de `kind` y tasas de fallo) está disponible en `evaluation/comparison-by-document-type.md` del repositorio. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 8 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se recomienda un mínimo de 12-16 GB.
-- En cuantización de 8 bits: alrededor de 4-5 GB de pesos, más overhead.
-- En cuantización de 4 bits: alrededor de 2,5-3 GB de pesos, más overhead.
-- GPU recomendadas: NVIDIA A100, H100 o L40S para despliegue en producción; RTX 4090 (24 GB) y RTX 3090 (24 GB) son suficientes para BF16 en una sola tarjeta.
-- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090, RTX 4080 (16 GB) y potencialmente en GPUs de 12 GB con cuantización de 8 bits.
-- Opciones de despliegue: transformers con `trust_remote_code=True` (requerido por la arquitectura `nemotron_h`); vLLM y TGI si soportan el código personalizado del modelo; llama.cpp y Ollama solo si se generan conversiones GGUF compatibles, no disponibles en la información proporcionada.
-- Latencia y throughput: no disponibles en la información proporcionada. El nombre "fast" es el nombre de la release y no una afirmación de ventaja de velocidad, según el autor.
+- VRAM estimada para inferencia en BF16: aproximadamente 8 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica se recomienda al menos 12-16 GB de VRAM para documentos largos.
+- El repositorio ocupa 8,0 GB en safetensors BF16.
+- GPU recomendadas: A100, H100 o L40S para throughput alto; RTX 4090 (24 GB) para desarrollo y evaluación.
+- Cabe en GPU de consumo con 16 GB o más en BF16; con cuantización a 8 bits o 4 bits cabría en GPUs de 8-12 GB, aunque el autor no publica versiones cuantizadas ni garantiza el comportamiento tras cuantizar.
+- Opciones de despliegue: transformers con `custom_code` (requisito del repositorio); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y la dependencia de código personalizado puede complicar su uso en esos servidores.
+- Latencia y throughput: no disponibles. La evaluación menciona 19 timeouts por documento, lo que sugiere que documentos largos pueden exceder límites de tiempo en el entorno de evaluación del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Especialización | Rendimiento en extracción de citas |
-|---|---:|---|---|---|---|
-| citation-extractor-fast | ~3,97B | No disponible | NVIDIA Nemotron Open Model License | Extracción de citas legales | 55,76% F1 en actas, 49,01% en proyectos de ley |
-| NVIDIA Nemotron-3-Nano-4B-BF16 (base) | ~3,97B | No disponible | NVIDIA Nemotron Open Model License | Propósito general | 3,32% F1 en actas, 0,73% en proyectos de ley |
-| GPT-6.1 (propietario) | No disponible | No disponible | Propietaria | Propósito general | 23,21% F1 en actas, 13,19% en proyectos de ley |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| citation-extractor-fast | 3,97B | no disponible | Extracción de citas legales ajustada | nvidia-nemotron-open-model-license | Hugging Face, transformers con `custom_code` |
+| NVIDIA Nemotron 3 Nano 4B BF16 (base) | 3,97B | no disponible | Modelo generalista | nvidia-nemotron-open-model-license | Hugging Face |
+| GPT-6.1 Sol | no disponible | no disponible | Modelo frontera generalista | propietaria | API |
+| Nemotron sin entrenar (referencia del autor) | 3,97B | no disponible | Base sin ajuste para la tarea | nvidia-nemotron-open-model-license | Uso interno en la evaluación |
 
-No se dispone de información sobre otros extractores de citas legales open source comparables en la información proporcionada.
+La comparación relevante es la del propio autor: el modelo ajustado obtiene 44,55% de F1 global frente a 23,18% de GPT-6.1 y 1,31% del Nemotron sin entrenar, sobre la misma cohorte de 200 documentos. No se dispone de comparación con otros extractores de citas legales especializados.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: el autor indica explícitamente que no está cualificado para producción y que no constituye asesoramiento legal.
-- Los campos `start` y `end` generados no son fiables; es obligatorio verificar `raw[start:end] == quote` antes de usarlos.
-- Las referencias de evaluación son "silver" (consenso de modelos profesor), no verificadas por adjudicación humana independiente.
-- La métrica principal mide reconocimiento de la cita textual, no corrección jurídica ni validez legal de la cita.
-- El modelo solo soporta inglés; no se ha validado en otros idiomas.
-- Riesgo de alucinación: puede generar citas que no existen en el texto fuente o clasificaciones `kind` incorrectas; el `kind` es una etiqueta aprendida del profesor, no una taxonomía jurídica validada.
-- `[]` en la salida significa que el modelo no predijo citas, no que el documento carezca de ellas.
-- El modelo puede truncar salidas (31 casos en la evaluación) o agotar tiempo (19 casos), lo que requiere manejo de fallos en el pipeline.
-- La licencia NVIDIA Nemotron Open Model License impone condiciones específicas para uso comercial; es necesario revisar sus términos antes de desplegar.
-- Requiere cargar el system prompt exacto (SHA-256 verificado) y la misma revisión inmutable de pesos, tokenizer y prompt; desviarse del contrato de entrada degrada la salida.
-- El modelo base subyacente puede arrastrar sesgos presentes en los datos de entrenamiento originales de Nemotron.
+- Modelo experimental: el autor lo etiqueta explícitamente como `experimental` y no documenta garantías de producción.
+- Los offsets `start` y `end` generados son poco fiables; hay que verificar `raw[start:end] == quote` y, para resaltado, localizar la cita por su texto con desambiguación de ocurrencias repetidas.
+- El campo `kind` es una etiqueta aprendida del profesor; la normalización de taxonomía, el enlazado a destinos y la validez jurídica son tareas downstream separadas.
+- Las referencias de evaluación son silver (consenso de profesores), no gold anotado por expertos.
+- Solo inglés: no hay soporte documentado para otros idiomas.
+- Riesgo de alucinación: el modelo puede generar citas o offsets incorrectos; la evaluación incluye fallos, recortes por límite de salida (31) y timeouts (19) en el denominador.
+- Rendimiento desigual por tipo de documento: en reglas propuestas el ajuste apenas mejora al modelo generalista (32,58% frente a 31,43%) y los reintentos por timeout empeoran el resultado en reglamentos (34,15% frente a 38,08%).
+- Licencia NVIDIA Nemotron Open Model License: hay que revisar sus términos antes de uso comercial; el repositorio la etiqueta como `other`.
+- Requiere cargar el system prompt byte a byte y usar la misma revisión inmutable para prompt, tokenizer y pesos; desviarse del contrato de entrada/salida degrada los resultados.
+- Dependencia de `custom_code` en transformers, lo que puede limitar la compatibilidad con servidores de inferencia estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/thurstonpowers/citation-extractor-fast
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
-- System prompt entrenado: https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/SYSTEM_PROMPT.txt
-- Ejemplo de entrada (sección vista): https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/examples/seen-section-input.txt
-- Ejemplo de salida (sección vista): https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/examples/seen-section-output.json
-- Registro completo del ejemplo con procedencia: https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/examples/seen-section.json
+- Dataset de entrenamiento: https://huggingface.co/datasets/thurstonpowers/xll-citation-extractor-fast
+- System prompt: https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/SYSTEM_PROMPT.txt
+- Ejemplo de entrada visto en entrenamiento: https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/examples/seen-section-input.txt
+- Ejemplo de salida: https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/examples/seen-section-output.json
+- Registro completo del ejemplo: https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/examples/seen-section.json
+- Comparativa completa de evaluación: https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/evaluation/comparison-by-document-type.md
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/

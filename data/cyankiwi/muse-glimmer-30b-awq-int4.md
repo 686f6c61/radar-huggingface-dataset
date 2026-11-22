@@ -2,82 +2,123 @@
 
 ## Resumen
 
-Muse Glimmer es un modelo de lenguaje causal de 30 000 millones de parámetros desarrollado por Meta Superintelligence Lab, diseñado específicamente para tareas agénticas autónomas en hardware de consumo. Se presenta como una versión destilada de Muse Spark, con un encoder de percepción dedicado que permite entrada multimodal (texto e imágenes) y salida de texto. El modelo integra razonamiento multi-paso, uso fiable de herramientas, comprensión multimodal y recuperación ante fallos en un único sistema que puede ejecutarse localmente sin depender de infraestructura en la nube.
+Muse-Glimmer-30B-AWQ-INT4 es la cuantización AWQ de 4 bits del modelo multimodal Muse-Glimmer-30B, desarrollado por Meta Superintelligence Lab y publicado en agosto de 2026 bajo licencia Apache 2.0. Se trata de un transformer causal denso de aproximadamente 29,6 mil millones de parámetros que incorpora un codificador de percepción independiente de unos 1,8 mil millones de parámetros (ViT-G/14), lo que le permite aceptar entradas intercaladas de texto e imagen y producir texto. La versión aquí descrita ha sido generada por cyankiwi con su pipeline AWQ (versión 26.05.01) y calibración orientada a dominios STEM y agenticos.
 
-La versión aquí documentada, `cyankiwi/Muse-Glimmer-30B-AWQ-INT4`, es una cuantización AWQ de 4 bits del modelo base `meta-models/Muse-Glimmer-30B`, publicada por el usuario cyankiwi. Con un peso de 24,02 GB, está pensada para caber en tarjetas gráficas de consumo con 24 GB o 32 GB de VRAM, manteniendo una degradación mínima en tareas agénticas (0,2 % a 1,0 % según la configuración). El modelo base fue lanzado en agosto de 2026 bajo licencia Apache 2.0, con una ventana de contexto de 131 072 tokens y soporte para más de 100 idiomas.
+El modelo está diseñado específicamente para tareas agenticas autónomas ejecutadas en hardware de consumo, sin dependencia de infraestructura en la nube. Combina razonamiento multi-paso, uso fiable de herramientas con esquemas de función precisos, recuperación ante fallos de llamadas a herramientas y comprensión multimodal, lo que lo sitúa en la categoría de modelos locales para orquestación de agentes. Soporta longitudes de contexto de 131.072 tokens o más, con un patrón de atención híbrido local/global que reduce el coste computacional en secuencias largas.
 
-La relevancia de Muse Glimmer radica en su enfoque específico para agentes autónomos: combina razonamiento de largo alcance, invocación de herramientas con esquemas precisos, comprensión de imágenes y capacidad de diagnóstico y reintento ante errores. Esto lo convierte en una opción práctica para despliegues locales en entornos de producción donde la privacidad, la latencia o el coste de la nube son factores críticos.
+La relevancia de esta ficha concreta radica en la cuantización: el repositorio original en precisión completa ocupa 48,1 GB, mientras que esta versión AWQ INT4 reduce el peso a 24,02 GB, lo que facilita su despliegue en GPUs de gama alta para consumidores y en nodos de inferencia con VRAM limitada. El modelo acumula 680 descargas y 11 likes en Hugging Face en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal denso con encoder de percepcion (ViT-G/14) |
-| Parametros totales | 29 776 626 688 (29,6 B) |
+| Arquitectura | Transformer causal denso con codificador de percepción (ViT-G/14) |
+| Parametros totales | 29.776.626.688 (aproximadamente 29,6B, incluyendo el codificador visual de ~1,8B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 131 072+ tokens |
-| Tipos de cuantizacion | AWQ INT4 (esta version); el modelo base tambien ofrece K-Quant-Dynamic y K-Quant-17GB |
-| Idiomas soportados | EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES (entrenado en mas de 100 idiomas) |
+| Longitud de contexto | 131.072+ tokens |
+| Tipos de cuantizacion | AWQ INT4 (4 bits, compressed-tensors); el modelo base admite otras cuantizaciones no especificadas en esta ficha |
+| Idiomas soportados | Entrenado con datos de más de 100 idiomas; lista concreta no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers) |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers |
+
+Especificaciones adicionales del modelo base:
+
+| Parametro | Valor |
+|---|---|
+| Dimension oculta | 6656 |
+| Capas | 52 |
+| Patron de atencion | [Local, Local, Local, Global] repetido |
+| Ventana deslizante | 2048 tokens |
+| Atencion con compuerta (gated attention) | Si |
+| Cabezas de atencion (Q / KV) | 32 / 2 (GQA 16:1) |
+| Dimension de cabeza | 128 |
+| Tipo de FFN | SwiGLU |
+| Dimension intermedia FFN | 19.968 |
+| Codificacion posicional | RoPE (theta = 500.000), solo en capas locales |
+| Vocabulario | 202.048 (200.000 BPE + 2.048 especiales) |
+| Tokens visuales maximos por imagen | 4.096 |
+| Modalidades | Entrada: texto + imagen; salida: texto |
+| Tamano del repo cuantizado | 24,02 GB (frente a 48,1 GB del repo original) |
 
 ## Arquitectura y entrenamiento
 
-Muse Glimmer es un transformer causal denso con 52 capas, dimensión oculta de 6656 y un patrón de atención local-global repetido cada cuatro capas: tres capas con atención local (ventana deslizante de 2048 tokens) seguidas de una capa con atención global. Usa atención con GQA (32 cabezas de consulta y 2 de clave/valor, ratio 16:1), FFN tipo SwiGLU con dimensión intermedia de 19 968, y codificación posicional RoPE con theta de 500 000 aplicada solo a las capas locales. El vocabulario consta de 200 000 tokens BPE más 2048 tokens especiales, totalizando 202 048.
+Muse-Glimmer-30B es un transformer causal denso con 52 capas y un patrón de atención híbrido que alterna tres capas de atención local con ventana deslizante de 2048 tokens por cada capa de atención global. Este diseño reduce el coste de atención en contextos largos manteniendo capacidad de recuperación global. Emplea atención con compuerta, GQA con ratio 16:1 (32 cabezas de consulta y 2 de clave/valor), RoPE con theta de 500.000 aplicado únicamente en las capas locales, y FFN de tipo SwiGLU con dimensión intermedia de 19.968. El codificador de percepción es un ViT-G/14 de 50 capas, anchura 1536 y patch size 14, con aproximadamente 1,8 mil millones de parámetros, que permite procesar hasta 4.096 tokens visuales por imagen.
 
-El modelo incorpora un encoder de percepción basado en ViT-G/14 de aproximadamente 1,8 mil millones de parámetros (50 capas, ancho 1536, patch de 14), que permite procesar hasta 4096 tokens visuales por imagen. Los datos de entrenamiento incluyen contenido multimodal de fuentes públicas, datos de terceros y productos de Meta, con un corte de conocimiento en enero de 2026. Según la documentación, el modelo fue destilado de Muse Spark y optimizado específicamente para tareas agénticas, con entrenamiento dirigido a capacidades como razonamiento multi-paso, uso de herramientas, recuperación de fallos y control de esfuerzo. La versión cuantizada AWQ INT4 se calibró con un dataset de STEM y tareas agénticas (según la model card del autor de la cuantización).
+El modelo se presenta como destilado de Muse Spark y entrenado sobre contenido multimodal procedente de datos públicos, con cobertura de más de 100 idiomas. La model card no detalla el número exacto de tokens de entrenamiento ni la composición del dataset, ni especifica si se aplicaron fases de RLHF o DPO; estos datos figuran como no disponibles. La innovación destacable es la orientación explícita a tareas agenticas de extremo a extremo: el modelo está entrenado y evaluado en finalización de tareas completas, uso de herramientas con esquemas precisos, razonamiento multi-paso sobre horizontes largos, recuperación ante fallos de herramientas y compatibilidad con scaffolds como OpenClaw y Hermes Agent. También incorpora control de esfuerzo de razonamiento, lo que permite ajustar el equilibrio entre calidad y velocidad en tiempo de inferencia.
+
+La cuantización AWQ aplicada por cyankiwi utiliza calibración sobre datos STEM y agenticos, lo que busca preservar la precisión en los dominios donde el modelo se usa con más frecuencia (código, matemáticas, razonamiento estructurado y llamadas a herramientas).
 
 ## Capacidades
 
-- Razonamiento multi-paso: encadena razonamiento sobre horizontes largos, manteniendo planes coherentes en flujos de trabajo complejos.
-- Uso fiable de herramientas: invoca funciones con esquemas precisos a lo largo de flujos de trabajo extendidos.
-- Comprensión multimodal: acepta texto e imágenes intercaladas (capturas de pantalla, gráficos, documentos) mediante el encoder de percepción.
-- Recuperacion de fallos: cuando una llamada a herramienta falla o devuelve un resultado inesperado, diagnostica el error y reintenta en lugar de detenerse.
-- Control de esfuerzo: soporta diferentes niveles de razonamiento para equilibrar calidad y velocidad según la tarea.
-- Compatibilidad con scaffolds: funciona con OpenClaw, Hermes Agent y otros patrones de orquestación agéntica.
-- Multilingue: entrenado con datos de más de 100 idiomas, con soporte explícito para al menos 10 (EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES).
-- Salida de texto únicamente: aunque acepta imágenes como entrada, la salida es exclusivamente textual.
+- Generación de texto y razonamiento multi-paso con cadenas de razonamiento sobre horizontes largos.
+- Comprensión multimodal de entrada: interpretación de capturas de pantalla, gráficos, documentos e imágenes intercaladas con texto conversacional.
+- Uso fiable de herramientas y function calling con esquemas precisos a lo largo de flujos de trabajo extendidos.
+- Recuperación ante fallos: diagnóstico de errores en llamadas a herramientas y reintento en lugar de detención.
+- Finalización de tareas agenticas de extremo a extremo dentro de scaffolds de orquestación (OpenClaw, Hermes Agent y patrones similares).
+- Escritura y depuración de código en el contexto de tareas de ingeniería de software.
+- Capacidades multilingües con entrenamiento en más de 100 idiomas.
+- Control de esfuerzo de razonamiento para ajustar calidad frente a latencia.
+- Compatibilidad con endpoints y despliegue mediante transformers y compressed-tensors.
 
 ## Casos de uso
 
-- Agentes autonomos de automatizacion de tareas: el modelo puede ejecutar flujos de trabajo completos dentro de scaffolds como OpenClaw o Hermes Agent, manejando llamadas a herramientas, depurando código y resolviendo solicitudes multi-turno de principio a fin, gracias a su ventana de 131K tokens y su capacidad de recuperación ante fallos.
-- Atencion al cliente automatizada con contexto visual: al aceptar capturas de pantalla y documentos como entrada, puede interpretar problemas de usuarios que incluyen imágenes (por ejemplo, errores de software o facturas) y mantener conversaciones de largo recorrido sin perder el hilo.
-- Generacion de codigo en produccion con tool calling: soporta invocación de funciones con esquemas precisos, lo que permite integrarlo en pipelines de CI/CD para generar, revisar y corregir código de forma autónoma, con capacidad de reintentar cuando una compilación falla.
-- Analisis de documentos mixtos (texto e imagen): puede procesar informes, gráficos y tablas escaneadas, extrayendo información y respondiendo preguntas complejas sobre el contenido, útil en entornos de investigación o consultoría.
-- Asistentes de soporte tecnico local: al ejecutarse en hardware de consumo sin conexión a la nube, es adecuado para entornos con requisitos estrictos de privacidad, donde los datos del cliente no pueden salir de la infraestructura local.
-- Razonamiento cientifico y matematico: con su capacidad de razonamiento multi-paso y control de esfuerzo, puede abordar problemas de STEM que requieren cadenas de deducción largas, ajustando la profundidad de razonamiento según la complejidad de la consulta.
+- Agente autónomo de búsqueda profunda: el modelo puede gestionar consultas de investigación de varios pasos encadenando búsquedas, lectura de documentos y síntesis, con recuperación ante resultados inesperados, gracias a su contexto de 131.072 tokens y a su entrenamiento en DeepSearch QA.
+- Automatización de ingeniería de software: integrado en un scaffold agentico, puede leer repositorios, escribir parches, ejecutar pruebas y depurar fallos de forma iterativa; su evaluación en SWE-Bench y su ventana de contexto larga lo hacen adecuado para tareas de resolución de incidencias en producción.
+- Soporte técnico con interpretación de capturas: al aceptar imágenes intercaladas con texto, puede analizar pantallazos de errores, paneles de monitorización o diagramas enviados por el usuario y responder con pasos concretos de resolución.
+- Orquestación de herramientas empresariales: con function calling preciso y esquemas estables, puede invocar APIs de CRM, sistemas de tickets o bases de datos en flujos multi-turno, reintentando ante fallos de la herramienta.
+- Análisis de documentos y gráficos en local: despliegue en hardware propio para procesar informes con tablas y figuras sin enviar datos a la nube, relevante en entornos con requisitos de confidencialidad.
+- Asistente de desarrollo en estación de trabajo: la versión AWQ INT4 de 24,02 GB cabe en GPUs de consumo de gama alta, lo que permite ejecutar un agente de código local sin conexión de red.
+- Extracción estructurada de información multimodal: procesamiento de formularios escaneados, facturas o capturas de interfaz para generar JSON validado mediante llamadas a funciones.
+- Evaluación de agentes en pipelines de CI: uso del modelo como sujeto de pruebas en scaffolds de orquestación para medir tasas de éxito en tareas de múltiples pasos (MCP-Atlas, tau3-Bench).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona evaluaciones en benchmarks como DeepSearch QA, MCP-Atlas, τ3-Bench y SWE-Bench, pero no proporciona cifras concretas. Tampoco se incluyen comparativas numéricas con otros modelos. La única métrica cuantitativa disponible es la degradación medida tras la cuantización: 0,2 % para K-Quant-Dynamic y 1,0 % para K-Quant-17GB, en relación con el modelo en precisión completa.
+La model card menciona que el modelo ha sido entrenado y evaluado en DeepSearch QA, MCP-Atlas, tau3-Bench y SWE-Bench, pero no proporciona cifras numéricas en la información disponible.
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: la version AWQ INT4 ocupa 24,02 GB en disco, y el autor indica que cabe en tarjetas de 24 GB o 32 GB de VRAM, dejando espacio para la cache KV, el encoder de percepcion y el drafter de decodificacion especulativa.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, o GPUs de 32 GB como la A6000 o similares. Para precision completa se requieren 64 GB de VRAM.
-- Compatibilidad con GPU de consumo: sí, siempre que se use la cuantizacion AWQ INT4 o las variantes K-Quant de 17 GB.
-- Opciones de despliegue: al ser un modelo en formato transformers con safetensors, puede desplegarse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama (si se empaqueta adecuadamente). La model card menciona compatibilidad con scaffolds agénticos.
-- Latencia y throughput: no se proporcionan datos numericos. El modelo soporta control de esfuerzo, lo que permite ajustar el nivel de razonamiento para reducir latencia en tareas simples.
+- VRAM estimada para inferencia: aproximadamente 24 GB solo para los pesos en AWQ INT4, más overhead de activaciones, caché KV y el codificador visual; en la práctica se recomienda un mínimo de 28-32 GB de VRAM para contextos moderados.
+- Contexto largo: con 131.072 tokens, la caché KV crece de forma significativa; el patrón de atención local/global con ventana de 2048 y GQA 16:1 reduce este coste frente a un transformer de atención completa, pero se recomienda planificar 40-80 GB de VRAM para contextos muy largos.
+- GPUs recomendadas: A100 40/80 GB, H100 80 GB, L40S 48 GB para despliegues de producción con contexto largo; RTX 4090 24 GB o RTX 5090 para inferencia en consumo con contexto moderado y cuantización INT4.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) de forma ajustada y en GPUs con 32 GB o más con mayor holgura; en GPUs de 16 GB no es viable sin cuantizaciones adicionales no disponibles en este repo.
+- Opciones de despliegue: transformers con soporte de compressed-tensors, endpoints compatibles indicados en los tags; vLLM, TGI y llama.cpp no están confirmados para este formato en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con modelos de la misma categoría (tamaño ~30B, orientación agéntica y multimodal). La documentación no incluye tablas comparativas con alternativas como Llama 3.1 70B, Qwen 2.5 32B o Mistral Large, ni datos de rendimiento relativos. Por tanto, la comparativa se considera no disponible.
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Muse-Glimmer-30B-AWQ-INT4 (esta ficha) | ~29,6B (incl. ~1,8B vision) | 131.072+ | Texto + imagen de entrada | Apache 2.0 | Hugging Face, 24,02 GB |
+| Muse-Glimmer-30B (base) | ~29,6B | 131.072+ | Texto + imagen de entrada | Apache 2.0 | Hugging Face, 48,1 GB |
+| Alternativas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos comparables en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documentan sesgos especificos, pero al estar entrenado con datos publicos y de terceros, es susceptible de heredar sesgos presentes en esos datos.
-- Riesgo de alucinacion: como cualquier modelo generativo, puede producir contenido factualmente incorrecto, especialmente en tareas de razonamiento largo o con contextos ambiguos.
-- Limitaciones de contexto: aunque la ventana es de 131K tokens, la atencion local con ventana de 2048 puede limitar la capacidad de relacionar informacion muy distante dentro de la secuencia.
-- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones significativas, pero se recomienda revisar los terminos completos de la licencia.
-- Degradacion por cuantizacion: la version AWQ INT4 introduce una degradacion de hasta el 1,0 % en tareas agénticas respecto al modelo en precision completa, segun la tabla de la model card. Para aplicaciones criticas, se recomienda validar el comportamiento en el caso de uso concreto.
-- Dependencia de scaffolds: aunque el modelo es compatible con varios scaffolds, el rendimiento agéntico final depende en gran medida de la calidad de la orquestacion externa.
-- Fecha de corte: el conocimiento del modelo se limita a enero de 2026; no tiene informacion posterior.
+- Sesgos: el modelo se entrena con datos públicos multilingües; no se documentan evaluaciones de sesgo en la información disponible, por lo que se recomienda auditoría previa a producción.
+- Alucinación: como todo modelo generativo, puede producir contenido plausible pero incorrecto, especialmente en tareas de búsqueda o razonamiento abierto; la recuperación ante fallos de herramientas no elimina el riesgo de respuestas erróneas.
+- Contexto e idioma: aunque se declaran más de 100 idiomas, no se especifica la lista ni la calidad por idioma; el rendimiento en idiomas de bajos recursos puede ser inferior.
+- Cuantización: la versión AWQ INT4 puede degradar ligeramente la precisión respecto al modelo en precisión completa, especialmente en tareas de razonamiento matemático o código; la calibración STEM/agentica mitiga pero no elimina esta pérdida.
+- Licencia: Apache 2.0 permite uso comercial, pero se debe conservar el aviso de licencia y verificar las condiciones de los datos de entrenamiento originales, no detalladas en la model card.
+- Producción: el modelo está orientado a despliegue local; no se documentan latencias ni throughput, por lo que es necesario realizar pruebas de carga propias antes de comprometer SLA.
+- Compatibilidad de scaffolds: se mencionan OpenClaw y Hermes Agent, pero no se garantiza compatibilidad con otros frameworks agenticos sin adaptación.
+- Repositorio: 680 descargas y 11 likes indican adopción limitada; conviene verificar la reproducibilidad de la cuantización y comparar con el modelo base antes de adoptarlo.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
-- Blog de investigacion de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
-- Ficha en LLM Explorer: https://llm-explorer.com/model/cyankiwi%2FMuse-Glimmer-30B-AWQ-INT4,3ksv4A1oGgzaZ8K4JJf3wx
-- Benchmarks en BenchLM: https://benchlm.ai/models/muse-glimmer-30b
-- Paper del encoder de percepcion (referenciado en la model card): https://arxiv.org/abs/2504.13181
+- Web de cyankiwi: https://cyan.kiwi/
+- Perfil de cyankiwi en Hugging Face: https://huggingface.co/cyankiwi
+- Perfil de cyankiwi en ModelScope: https://www.modelscope.ai/organization/cyankiwi
+- X (Twitter) de cyankiwi: https://x.com/cyankiwi_ai
+- Reddit de cyankiwi: https://www.reddit.com/r/cyankiwi/
+- Contacto: mailto:ton@cyan.kiwi
+- Dataset de calibración: https://huggingface.co/datasets/cyankiwi/calibration
+- Paper del codificador de percepción: https://arxiv.org/abs/2504.13181
+- Paper adicional referenciado en tags: https://arxiv.org/abs/2602.06036
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Despliegue en endpoints de cyankiwi: https://cyan.kiwi/workspace?prompt=Deploy%20cyankiwi/Muse-Glimmer-30B-AWQ-INT4

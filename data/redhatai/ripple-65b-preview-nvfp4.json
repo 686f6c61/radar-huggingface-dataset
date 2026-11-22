@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 596,
+  "downloads_30d": 603,
   "trending_score": 0,
   "parameters": 42764805680,
   "parameters_human": "42.76B",
@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ricursiveAI/Ripple-65B-Preview · Hugging Face",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "snippet": "Machine learning model with 65B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "ricursiveAI/Ripple-65B-Preview-NVFP4 · Hugging Face",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4",
-      "snippet": "Ricursive Intelligence introduces Ripple-65B Preview, a 65B parameter dense Transformer model pretrained on 12 trillion tokens with support for up to 1M context length. Ripple-65B Preview delivers strong results on agentic coding, scoring 80.52 on TerminalBench 2.1 and surpassing significantly ..."
-    }
-  ]
+  "sources": []
 }

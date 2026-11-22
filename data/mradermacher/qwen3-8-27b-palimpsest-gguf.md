@@ -2,89 +2,93 @@
 
 ## Resumen
 
-El modelo `mradermacher/Qwen3.8-27B-Palimpsest-GGUF` es una cuantización en formato GGUF del modelo base `xero0000/Qwen3.8-27B-Palimpsest`, preparada por mradermacher para su uso eficiente en entornos locales y de producción con motores como llama.cpp, Ollama o LM Studio. El modelo base pertenece a la familia Qwen3.8, un conjunto de modelos densos de 27 000 millones de parámetros con capacidades de visión-lenguaje, razonamiento configurable y una ventana de contexto nativa de 262 144 tokens. Esta versión cuantizada mantiene las capacidades del original (procesamiento de imágenes, tool calling, escritura creativa y tareas de agente) a costa de una ligera pérdida de precisión según el nivel de cuantización elegido.
+Qwen3.8-27B-Palimpsest es un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) derivado de la familia Qwen, publicado por el usuario xero0000 y cuantizado en formato GGUF por mradermacher. Se trata de un ajuste fino (fine-tune) del modelo base Qwen3.8-27B-Palimpsest, orientado a escritura creativa, uso de herramientas (tool-use), contexto largo y capacidades de visión-lenguaje, según las etiquetas declaradas en la model card. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-La relevancia de esta ficha radica en que ofrece una alternativa accesible para ejecutar un modelo de 27B en hardware de consumo, con múltiples opciones de cuantización que van desde 11 GB hasta 29 GB. Al estar bajo licencia Apache-2.0, permite uso comercial sin restricciones adicionales, lo que lo convierte en una opción atractiva para desarrolladores que necesitan desplegar un asistente multimodal con contexto largo sin depender de APIs propietarias.
+El repositorio cuantizado ofrece un conjunto completo de cuantizaciones estáticas GGUF (desde Q2_K hasta Q8_0, además de IQ4_XS) junto con los ficheros mmproj necesarios para el procesamiento multimodal. El tamaño total del repositorio es de 190,8 GB, lo que refleja la inclusión de todas las variantes de cuantización. El modelo está pensado para su despliegue con llama.cpp y herramientas compatibles con GGUF, y declara soporte para endpoints compatibles.
 
-## Especificaciones tecnicas
+La relevancia de esta ficha radica en que permite evaluar rápidamente una alternativa de 27B con licencia permisiva y capacidades multimodales, si bien la información pública disponible sobre arquitectura interna, datos de entrenamiento y rendimiento es muy limitada, lo que se refleja en las secciones correspondientes.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3.8) |
-| Parametros totales | 27 320 697 856 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262 144 tokens (nativo) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | Inglés (declarado en la model card) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base original) |
+| Arquitectura | no disponible (modelo derivado de la familia Qwen; sin detalles publicados) |
+| Parámetros totales | 27.320.697.856 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (etiqueta "long-context" sin cifra concreta) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en bf16 según etiquetas |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna específica del modelo base `Qwen3.8-27B-Palimpsest`. Según los datos públicos de la familia Qwen3.8, se trata de un modelo denso (no MoE) de 27 000 millones de parámetros, diseñado para tareas de visión-lenguaje, con una ventana de contexto de 262 144 tokens. El nombre "Palimpsest" sugiere un posible fine-tuning o adaptación del modelo original, pero no se han publicado detalles sobre el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.). La cuantización GGUF realizada por mradermacher es de tipo estático, sin usar imatrix ni pesos ponderados, según se indica en la model card. No se proporciona información sobre el número de tokens de entrenamiento ni la composición del corpus.
+No se han publicado detalles sobre la arquitectura interna del modelo en la información disponible. Las etiquetas de la model card indican que se trata de un modelo de la familia Qwen (tags `qwen3.8` y `qwen3.5`), con capacidades de visión-lenguaje (`vision-language`), contexto largo (`long-context`) y ajuste mediante LoRA (`lora`). El modelo base es `xero0000/Qwen3.8-27B-Palimpsest`, un adaptador o fine-tune sobre el que mradermacher ha generado las cuantizaciones estáticas.
+
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa o atención lineal. La única información técnica concreta es la derivada del proceso de cuantización: se han generado cuantizaciones estáticas (no imatrix en este repositorio; las versiones ponderadas/imatrix están en un repositorio separado) y se incluyen ficheros `mmproj` para el componente multimodal.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de propósito general, con soporte para tareas complejas de lógica y matemáticas.
-- Procesamiento de imágenes (vision-language): el modelo acepta entradas multimodales, como lo confirman los archivos `mmproj` incluidos en la cuantización.
-- Escritura creativa: etiquetado explícitamente como capaz de generar contenido literario, narrativo o publicitario.
-- Tool calling y function calling: soporte para integración con herramientas externas, lo que permite construir agentes que interactúan con APIs o ejecutan acciones.
-- Razonamiento configurable: según la documentación de Qwen3.8, el modelo permite activar o desactivar el modo de razonamiento explícito (similar a un "thinking mode").
-- Contexto largo: ventana nativa de 262 144 tokens, adecuada para documentos extensos, conversaciones prolongadas o análisis de código de gran tamaño.
-- Multilingüismo: aunque la model card declara solo inglés, la familia Qwen suele tener capacidades multilingües; no obstante, no se confirma para esta variante.
+- Generación de texto y escritura creativa, según la etiqueta `creative-writing` de la model card.
+- Procesamiento de visión-lenguaje: el repositorio incluye ficheros `mmproj` (Q8_0 y f16) que permiten el procesamiento de imágenes junto con texto.
+- Uso de herramientas (tool-use / function calling), según la etiqueta `tool-use`.
+- Soporte de contexto largo, según la etiqueta `long-context` (sin cifra concreta publicada).
+- Capacidades conversacionales (etiqueta `conversational`).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Soporte multilingüe limitado al inglés según el campo `language`.
+- No se documentan capacidades de audio ni modos de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Análisis de documentos extensos con imágenes: gracias a su contexto de 262K tokens y capacidad de visión, el modelo puede procesar informes anuales, contratos legales o manuales técnicos que incluyan tablas, gráficos y fotografías, extrayendo información relevante de forma estructurada.
-- Asistente de programación con tool calling: integrado en un IDE o pipeline de CI/CD, el modelo puede generar código, explicar errores, sugerir refactorizaciones y ejecutar comandos a través de herramientas externas, acelerando el desarrollo.
-- Atención al cliente automatizada: con su contexto largo y capacidad de mantener conversaciones multi-turno, puede gestionar incidencias complejas sin perder el hilo, incluso cuando el usuario adjunta capturas de pantalla o imágenes de error.
-- Agente autónomo de investigación: combinando razonamiento configurable y tool calling, el modelo puede buscar información en la web, resumir artículos, comparar fuentes y redactar un informe final, todo dentro de una misma sesión.
-- Generación de contenido creativo multimodal: para marketing o redacción, puede producir textos publicitarios, guiones o descripciones de producto a partir de imágenes de referencia, manteniendo un tono consistente.
-- Análisis de código legacy: su contexto de 262K tokens permite cargar repositorios completos de tamaño medio y responder preguntas sobre arquitectura, dependencias o posibles vulnerabilidades, sin necesidad de dividir el código en fragmentos.
+- Escritura creativa asistida: el modelo está etiquetado específicamente para `creative-writing`, por lo que puede emplearse en la generación de relatos, guiones y borradores literarios con instrucciones de estilo, aprovechando su fine-tune orientado a este dominio.
+- Análisis de documentos con imágenes: gracias a los ficheros `mmproj` incluidos, puede procesar capturas, diagramas o páginas escaneadas junto con texto, lo que resulta útil para extracción de información de documentos mixtos.
+- Asistentes conversacionales multi-turno: la etiqueta `conversational` y el soporte de contexto largo permiten mantener diálogos extensos con historial acumulado, adecuado para atención al cliente o asistentes internos.
+- Integración en pipelines con tool calling: la etiqueta `tool-use` sugiere capacidad para invocar funciones externas, lo que permite conectarlo a APIs, bases de datos o sistemas de automatización en flujos de agentes.
+- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M (16,9 GB) y Q5_K_M (19,6 GB) permiten ejecutar el modelo en GPUs de consumo alto o en configuraciones con memoria unificada, útil para prototipado sin infraestructura cloud.
+- Generación de código y tareas técnicas: aunque no se documenta explícitamente, la familia Qwen suele incluir capacidades de código; debe validarse empíricamente antes de usarlo en producción para esta tarea.
+- Procesamiento por lotes con llama.cpp: la disponibilidad de cuantizaciones desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB) permite ajustar el equilibrio calidad/memoria según el hardware disponible en entornos de inferencia local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repo GGUF no incluye métricas de rendimiento, y el modelo base `xero0000/Qwen3.8-27B-Palimpsest` tampoco ofrece datos comparativos en su documentación pública. Por tanto, no es posible presentar una tabla de resultados objetivos (MMLU, HumanEval, GSM8K, etc.) en esta ficha.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: según el tamaño de los archivos GGUF, se necesitan aproximadamente:
-  - Q2_K (11.0 GB): cabe en GPUs de 12 GB (p. ej., RTX 3060, RTX 4070).
-  - Q4_K_M (16.9 GB): requiere al menos 20 GB de VRAM (RTX 4080, RTX 4090, A6000).
-  - Q8_0 (29.1 GB): necesita 32 GB o más (A100 40GB, H100, o múltiples GPUs).
-- GPU recomendadas: para las cuantizaciones más bajas (Q2_K a Q4_K_S) es viable en GPUs de consumo como RTX 3090/4090 (24 GB). Para Q5_K_M o superiores, se recomiendan GPUs profesionales (A100, H100) o configuraciones multi-GPU.
-- En Mac: las versiones con 24 GB de RAM unificada pueden ejecutar cómodamente Q4_K_M, como se menciona en la guía de modelfit.io.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, o servidores compatibles con GGUF (llama-cpp-python, etc.).
-- Latencia y throughput: no se dispone de mediciones específicas para este modelo. Como referencia, un modelo de 27B en Q4_K_M suele generar entre 20 y 40 tokens por segundo en una RTX 4090, pero estos valores son orientativos y dependen del backend y del tamaño del contexto.
+- VRAM estimada para inferencia (según cuantización): Q2_K ~11,0 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,6 GB; Q3_K_L ~14,7 GB; IQ4_XS ~15,5 GB; Q4_K_S ~15,9 GB; Q4_K_M ~16,9 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB. Añadir ~0,7 GB (mmproj Q8_0) o ~1,0 GB (mmproj f16) si se usa la capacidad multimodal.
+- GPU recomendadas: para Q8_0, una GPU de 32 GB o más (A100 40 GB, H100, RTX 5090); para Q4_K_M, una RTX 4090 (24 GB) es suficiente; para Q2_K, una GPU de 12-16 GB puede bastar.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con cuantizaciones hasta Q5_K_M; en GPUs de 16 GB con Q3_K_M o inferiores; en GPUs de 12 GB con Q2_K.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, koboldcpp) por el formato GGUF; también servidores compatibles con endpoints según la etiqueta `endpoints_compatible`. vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que requerirían el modelo base en bf16.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparativos para este modelo concreto. Sin embargo, se puede contextualizar frente a otras alternativas de la misma categoría (modelos densos de ~27B con visión y contexto largo):
-
-| Modelo | Parámetros | Contexto | Visión | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | Sí | Apache-2.0 | Hugging Face |
-| Qwen2.5-32B | 32B | 128K | No (solo texto) | Apache-2.0 | Hugging Face |
-| Llama-3.1-8B | 8B | 128K | No | Llama 3.1 | Hugging Face |
-| Mistral-7B | 7B | 32K | No | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-Palimpsest (este) | 27,3 B | no disponible | Apache 2.0 | GGUF | Fine-tune orientado a escritura creativa, tool-use y visión |
+| Qwen3.8-27B-Palimpsest (base, xero0000) | 27,3 B | no disponible | Apache 2.0 | bf16 | Modelo original sin cuantizar |
+| Alternativas de ~27B de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
-La comparativa es limitada porque no se han publicado benchmarks del modelo Palimpsest. En términos de arquitectura, el modelo es más grande que Llama-3.1-8B y Mistral-7B, pero menor que Qwen2.5-32B. Su ventaja principal es el contexto nativo de 262K tokens y la capacidad de visión, que no está presente en los otros modelos de la tabla.
+No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas concretas (rendimiento, contexto, benchmarks). La comparación se limita a los datos estructurales del propio repositorio.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre sesgos específicos del modelo base. Al ser una cuantización, puede heredar sesgos del modelo original, pero no hay estudios públicos al respecto.
-- Riesgo de alucinación: como cualquier LLM, puede generar información falsa o no verificada, especialmente en tareas de razonamiento complejo o con contextos ambiguos.
-- La cuantización introduce pérdida de precisión. Las versiones Q2_K y Q3_K pueden degradar significativamente la calidad de salida, especialmente en tareas de razonamiento o matemáticas. Se recomienda usar Q4_K_M o superior para producción.
-- El modelo solo declara soporte para inglés. Aunque la familia Qwen suele tener capacidades multilingües, no se garantiza un rendimiento óptimo en otros idiomas.
-- El contexto de 262K tokens es nativo, pero el uso de ventanas muy largas incrementa el consumo de memoria y puede ralentizar la inferencia. En GPUs de consumo, es recomendable limitar el contexto a 32K-64K tokens.
-- La licencia Apache-2.0 permite uso comercial, pero es necesario verificar que el modelo base no tenga restricciones adicionales (aunque no se indican en la documentación).
-- Los archivos GGUF son estáticos y no incluyen cuantización con imatrix, lo que puede afectar a la calidad en niveles bajos de cuantización.
+- Información muy limitada: no se publican detalles de arquitectura, datos de entrenamiento ni benchmarks, lo que impide evaluar su calidad de forma rigurosa antes de desplegarlo.
+- Idioma: el campo `language` solo declara inglés; el rendimiento en castellano no está verificado y podría ser deficiente.
+- Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala; no hay documentación sobre mitigaciones específicas.
+- Sesgos: no se documentan evaluaciones de sesgo ni medidas de mitigación.
+- Contexto largo: la etiqueta `long-context` no especifica una cifra concreta, por lo que no se puede garantizar un comportamiento fiable más allá de lo que se valide empíricamente.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las obligaciones de atribución y las posibles restricciones heredadas del modelo base original de Qwen.
+- Producción: al ser un fine-tune de un tercero (xero0000) sobre una familia Qwen, la calidad y estabilidad del ajuste no están auditadas; se recomienda validación exhaustiva antes de usarlo en entornos críticos.
+- Cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; la model card recomienda Q4_K_S/Q4_K_M como equilibrio rapidez/calidad y Q6_K/Q8_0 para máxima calidad.
+- El repositorio incluye todas las cuantizaciones (190,8 GB), por lo que la descarga completa es innecesaria; conviene descargar solo la variante requerida.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Palimpsest-GGUF
 - Modelo base: https://huggingface.co/xero0000/Qwen3.8-27B-Palimpsest
-- Página de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8
-- Guía para ejecutar Qwen3.8-27B localmente: https://modelfit.io/blog/run-qwen38-27b-locally-2026/
-- Anuncio de Qwen 3.8-Max (familia Qwen3.8): https://openlm.ai/qwen3.8/
-- Repositorio GGUF de otra variante (Qwen3.8-27B-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-GGUF
+- Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Qwen3.8-27B-Palimpsest-i1-GGUF
+- Página de descarga del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-Palimpsest-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica de perplejidad por cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

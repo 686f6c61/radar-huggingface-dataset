@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
-      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Open-source AI Models for Any Application | Llama 3",
-      "url": "https://dev.meta.ai/llama/models/llama-3",
-      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
-    },
-    {
-      "title": "Llama (language model) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
-      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI from February 2023 to April 2025. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models ..."
-    },
-    {
-      "title": "Llama 3.1 on Vertex AI | Google Cloud Blog",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/llama-3-1-on-vertex-ai",
-      "snippet": "Meta&#x27;s Llama 3.1 family of models, including a new 405B model, is now available on Vertex AI. Try Llama 3.1 on Google Cloud today."
-    },
-    {
-      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
-      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

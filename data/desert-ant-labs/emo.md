@@ -2,100 +2,97 @@
 
 ## Resumen
 
-Emo es un modelo de clasificacion de texto de tamano muy reducido desarrollado por Desert Ant Labs, cuyo unico cometido es sugerir el emoji mas adecuado para un texto corto que expresa una intencion, como una entrada de calendario, una tarea pendiente o un borrador de mensaje. No es un modelo generativo: dado un string de entrada, asigna una probabilidad a cada uno de los 812 emojis de su vocabulario y devuelve la sugerencia principal o las primeras N. Esta pensado para inferencia completamente local ("on-device") en iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
+Emo es un clasificador de texto multilingüe especializado en la sugerencia de emojis a partir de frases cortas que expresan una intención, como entradas de agenda, notas o borradores de mensajes. Lo desarrolla Desert Ant Labs y se distribuye a través de Hugging Face con el pipeline `text-classification`. Su propuesta de valor es la inferencia totalmente en dispositivo: el modelo y el tokenizador ocupan 5 MB en Apple vía Core ML y 11 MB en el resto de plataformas vía LiteRT, con latencias inferiores a 2 ms.
 
-El interes del modelo reside en su perfil de recursos: los pesos ocupan 4,6 MB en formato Core ML compilado y 10,2 MB en LiteRT/TFLite int8, a los que se suma un tokenizador Unigram de 0,75 MB. El autor declara latencias muy por debajo de los 2 ms por inferencia en dispositivo. Cubre 22 idiomas, incluidos CJK, arabe, thai, hindi y cirilico, lo que lo convierte en una utilidad de interfaz mas que en un modelo de lenguaje.
+El modelo cubre 22 idiomas, incluidos CJK, árabe, tailandés e hindi, y asigna una probabilidad a cada una de las 812 etiquetas de emoji de su vocabulario. Está pensado para integrarse en SDK nativos de Swift, Kotlin y JavaScript, con soporte para iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
 
-La version documentada es la v0.7.0 de los pesos, publicada bajo la licencia propietaria Desert Ant Labs Source-Available License, gratuita para la mayoria de aplicaciones pero con obligacion de licencia comercial a cierta escala. El repositorio pesa 0,1 GB e incluye los binarios de inferencia para las dos familias de runtime soportadas.
+Es relevante ahora por su enfoque de eficiencia extrema y despliegue local, que evita depender de servicios en la nube para una funcionalidad de UX cotidiana. La versión actual de pesos es v0.7.0 y la licencia es source-available con requisito de licencia comercial a escala.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (clasificador de texto compilado; el autor no detalla la topologia de la red) |
-| Parametros totales | no disponible (el autor solo publica el tamano de los artefactos: 4,6 MB Core ML, 10,2 MB TFLite int8) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible; el autor indica que funciona mejor con texto corto que expresa una intencion y que el texto largo degrada las sugerencias |
-| Tipos de cuantizacion | int8 (artefacto TFLite); artefacto Core ML compilado sin cuantizacion declarada; versiones antiguas incluyen pesos `emo.safetensors` |
-| Idiomas soportados | 22: arabe, checo, danes, aleman, ingles, espanol, frances, hindi, indonesio, italiano, japones, coreano, neerlandes, polaco, portugues, ruso, sueco, thai, turco, ucraniano, vietnamita y chino (simplificado y tradicional) |
-| Licencia | Desert Ant Labs Source-Available License (gratuita para la mayoria de apps, licencia comercial obligatoria a escala) |
-| Formato de pesos | Core ML compilado (`emo.mlmodelc`), LiteRT/TFLite int8 (`emo.tflite`), tokenizador Unigram (`emo_tokenizer.bin`), metadatos `emo_meta.json`; `emo.safetensors` solo en revisiones v0.6.0 y anteriores |
+| Arquitectura | No disponible (clasificador de texto; pesos en LiteRT/TFLite int8 y Core ML compilado) |
+| Parametros totales | No disponible |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (optimizado para texto corto que expresa una intención) |
+| Tipos de cuantizacion | int8 (fichero `emo.tflite`); Core ML compilado (`emo.mlmodelc`) |
+| Idiomas soportados | 22: ar, cs, da, de, en, es, fr, hi, id, it, ja, ko, nl, pl, pt, ru, sv, th, tr, uk, vi, zh |
+| Licencia | Desert Ant Labs Source-Available License (gratuita para la mayoría de apps, licencia comercial requerida a escala) |
+| Formato de pesos | TFLite int8 (10,2 MB), Core ML compilado (4,6 MB), tokenizador Unigram (`emo_tokenizer.bin`, 0,75 MB), `emo_meta.json` |
 
 ## Arquitectura y entrenamiento
 
-El autor no publica la arquitectura interna del modelo: la model card describe exclusivamente los artefactos de despliegue y la API del SDK, sin detallar capas, dimensiones ocultas ni funcion de perdida. Lo que si se deduce de los ficheros es que se trata de un clasificador de texto sobre un vocabulario cerrado de 812 etiquetas de emoji, con un tokenizador Unigram empaquetado aparte en formato binario. El modelo se distribuye ya compilado para dos runtimes: Core ML para plataformas Apple y LiteRT/TFLite en int8 para el resto (Android, Linux, Windows, Node y navegador).
+No se dispone de detalles sobre la arquitectura interna del modelo (tipo de transformer, número de capas, dimensión oculta o número de parámetros) en la información proporcionada. La model card indica únicamente que se trata de un clasificador de texto que produce una distribución de probabilidad sobre 812 emojis, con pesos exportados a LiteRT/TFLite en int8 y a Core ML compilado para plataformas Apple. El tokenizador es de tipo Unigram y se distribuye como fichero binario aparte (`emo_tokenizer.bin`).
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico dato de proceso es que la model card se genera automaticamente desde el repositorio `desert-ant-core` de Desert Ant Labs, lo que sugiere un pipeline interno de publicacion de pesos y SDKs. Cualquier afirmacion sobre datos de entrenamiento seria especulativa y no se incluye aqui.
+ tampoco se documentan el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card menciona que el modelo está ajustado para texto corto con intención explícita y que la calidad varía según el idioma, siendo algo más débil en los idiomas de menores recursos del conjunto. Las versiones anteriores (v0.6.0 y anteriores) usaban `Emo.mlmodelc` y `emo.safetensors`, lo que sugiere una migración desde safetensors hacia formatos compilados específicos por plataforma.
 
 ## Capacidades
 
-- Clasificacion de texto multilingue en 22 idiomas con salida de probabilidad por emoji sobre un vocabulario de 812 etiquetas.
-- Sugerencia de emoji para texto corto que expresa una intencion: tareas, entradas de calendario, notas y borradores de mensajes.
-- Devolucion de las N mejores sugerencias con su nivel de confianza, lo que permite construir interfaces de seleccion rapida.
-- Soporte de tonos de piel en la API (`skinTone`), con valores como `medium` en Swift y `EmojiSkinTone.MEDIUM` en Kotlin.
-- Inferencia puramente local sin llamadas de red tras la descarga inicial de los pesos; el SDK cachea el modelo y permite precargarlo durante el onboarding o empaquetarlo con la aplicacion.
-- Carga desde un directorio local (`Emo(directory:)`) para funcionamiento completamente offline.
-- Ejecucion en iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node, con SDKs oficiales en Swift, Kotlin y JavaScript/TypeScript.
-- No soporta tool calling, function calling, razonamiento multi-paso, generacion de texto, codigo, matematicas, vision ni audio: es un clasificador de etiquetas unico, no un modelo de lenguaje.
+- Clasificación de texto multietiqueta: asigna probabilidad a cada uno de los 812 emojis del vocabulario y devuelve las mejores sugerencias con su confianza.
+- Sugerencia de emojis a partir de frases cortas que expresan una intención ("Pagar facturas", "Reservar un vuelo para Tokio", "Pasear al perro").
+- Soporte de tonos de piel: la API permite especificar `skinTone` (por ejemplo `EmojiSkinTone.MEDIUM`) y devuelve la variante correspondiente.
+- Limitación configurable del número de sugerencias mediante el parámetro `limit`.
+- Multilingüe: 22 idiomas, incluidos chino simplificado y tradicional, japonés, coreano, árabe, tailandés, hindi, vietnamita y ucraniano.
+- Inferencia en dispositivo: funciona sin conexión una vez descargados los pesos, con latencias inferiores a 2 ms.
+- Despliegue multiplataforma mediante SDK nativos: Swift (iOS, macOS, tvOS, visionOS), Kotlin (Android), JavaScript (navegador y Node con subruta `/native` precompilada para linux-x64, linux-arm64 y darwin-arm64).
+- Gestión de descarga y caché de pesos integrada en el SDK, con posibilidad de precarga durante el onboarding o de empaquetar los pesos localmente.
+- No dispone de generación de texto, razonamiento multi-paso, tool calling ni capacidades de visión o audio.
 
 ## Casos de uso
 
-- Sugerencia de emoji en aplicaciones de tareas pendientes: el modelo recibe el titulo de la tarea ("Pay my bills") y devuelve el emoji mas probable (💰), que la interfaz puede mostrar junto al item o usar para agrupar listas por categoria visual.
-- Entradas de calendario y recordatorios: al escribir "Dentist appointment" el modelo propone 🦷; integrado en el flujo de creacion de eventos, ahorra al usuario el paso de abrir el selector de emojis y funciona con latencia inferior a 2 ms, por lo que no introduce esperas perceptibles.
-- Borradores de mensajes en apps de mensajeria: al componer una frase corta, el modelo sugiere un emoji coherente con la intencion antes de enviar; el tamano de 4,6-10,2 MB permite empaquetarlo dentro de la propia aplicacion sin dependencia de servidor.
-- Notas rapidas y aplicaciones de captura de ideas: el modelo etiqueta automaticamente cada nota con un emoji para facilitar el escaneo visual de listas largas, con soporte de los 22 idiomas para usuarios que alternan idiomas en una misma jornada.
-- Localizacion de interfaces: al traducir cadenas de una app a otro idioma, el modelo puede proponer el emoji asociado a cada cadena en el idioma de destino (por ejemplo "reserver un vol vol pour Tokyo" → ✈️, "犬の散歩" → 🐕, "จองโรงแรม" → 🏨), reduciendo el trabajo manual de curaduria de iconografia por locale.
-- Extensiones de navegador y editores web: la build JavaScript con LiteRT permite ejecutar la clasificacion en el navegador del usuario sin enviar texto a un servidor, util para entornos con requisitos de privacidad o para demos interactivas como el Space oficial.
-- Aplicaciones de escritorio y herramientas CLI en Node: el SDK publica la variante `/native` precompilada para linux-x64, linux-arm64 y darwin-arm64, lo que permite usarla en procesos de servidor ligeros o en herramientas de productividad de escritorio.
+- Autocompletado de emojis en apps de mensajería: al escribir un borrador corto, el modelo sugiere el emoji adecuado en menos de 2 ms, integrándose en el teclado o en la barra de sugerencias sin llamadas a red.
+- Enriquecimiento de entradas de calendario y recordatorios: frases como "Dentista" o "Reservar un vuelo para Tokio" se traducen automáticamente en 🦷 o ✈️, mejorando la legibilidad visual de la agenda.
+- Etiquetado visual de notas y listas de tareas: la app puede asignar emojis a cada ítem de una lista de tareas pendientes para facilitar el escaneo rápido, con funcionamiento offline.
+- Personalización de notificaciones: el SDK permite asociar un emoji representativo a cada notificación o recordatorio en función del texto, manteniendo coherencia visual en iOS, Android y web.
+- Procesamiento por lotes en backend Node: usando la subruta `/native`, un servicio puede clasificar grandes volúmenes de textos cortos (por ejemplo, títulos de eventos o asuntos de correo) y enriquecerlos con emojis antes de enviarlos.
+- Aplicaciones de accesibilidad: sugerir emojis a partir de descripciones breves ayuda a usuarios con dificultades de selección manual en teclados de emojis, reduciendo pasos de interacción.
+- Filtrado y moderación de contenido: la distribución de probabilidad sobre 812 emojis puede usarse como señal auxiliar para detectar tono o intención en textos muy cortos, aunque con las limitaciones propias de un clasificador de emojis.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de precision, recall, F1 ni comparaciones con otros modelos; el unico dato de rendimiento declarado es la latencia de inferencia, que el autor situa "muy por debajo de 2 ms" en dispositivo, sin especificar el hardware de referencia.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente declara latencias inferiores a 2 ms en dispositivo y tamaños de artefacto de 5 MB (Core ML) y 11 MB (LiteRT), sin métricas de precisión, recall o exactitud por idioma.
 
 ## Requisitos de hardware
 
-- Huella en disco: 4,6 MB para `emo.mlmodelc` en plataformas Apple y 10,2 MB para `emo.tflite` en el resto, mas 0,75 MB del tokenizador y los metadatos; el repositorio completo ocupa 0,1 GB.
-- VRAM: no se declara requisito de VRAM. Al tratarse de un modelo de decenas de megabytes, la inferencia cabe en la memoria unificada de cualquier dispositivo objetivo, incluidos telefonos y navegadores.
-- GPU recomendadas: no se especifican. El despliegue esta pensado para CPU/NPU integradas mediante Core ML en Apple y LiteRT en Android, Linux, Windows y web; no hay indicacion de aceleracion por GPU dedicada.
-- Cabe en cualquier GPU consumer, y de hecho el caso de uso principal es el dispositivo final del usuario, no un servidor con acelerador.
-- Opciones de despliegue: SDK propios de Desert Ant Labs para Swift (Swift Package Manager, producto `Emo`), Kotlin (`ai.desertant:emo:4.3.0`) y JavaScript (`@desert-ant-labs/emo` para navegador y `@desert-ant-labs/emo/native` para Node). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: el autor declara menos de 2 ms por inferencia en dispositivo, sin cifra de throughput ni hardware de referencia.
+- VRAM estimada: no aplica en el sentido habitual; el modelo está diseñado para ejecución en CPU/NPU en dispositivo. Los pesos ocupan 4,6 MB (Core ML) y 10,2 MB (TFLite int8), más 0,75 MB del tokenizador.
+- GPU recomendadas: no se requieren GPU dedicadas; el modelo corre en hardware móvil y de escritorio convencional. En servidores Node puede ejecutarse en CPU.
+- Compatibilidad con GPU de consumo: innecesaria; no hay indicación de que se beneficie de RTX 4090, A100 o H100, y no se documentan requisitos de aceleración por GPU.
+- Opciones de despliegue: SDK Swift (Core ML en Apple), SDK Kotlin (LiteRT en Android), SDK JavaScript (LiteRT.js en navegador y núcleo nativo precompilado para Node en linux-x64, linux-arm64 y darwin-arm64). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: la model card declara menos de 2 ms por inferencia en dispositivo; no se proporcionan cifras de throughput agregado.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de una familia de modelos comparables publicada por el autor. La comparacion se limita a caracteristicas objetivas frente a alternativas genericas de la misma categoria (clasificadores de texto ligeros para etiquetado de emojis o intenciones), sin cifras de rendimiento porque no estan disponibles.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Los clasificadores de emojis multilingües en dispositivo de código abierto con licencia permisiva son poco comunes, y no se han identificado alternativas concretas con parámetros, contexto o rendimiento verificables en la información disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Emo (desert-ant-labs) | no disponible (4,6-10,2 MB de artefactos) | no disponible (texto corto) | 22 | Source-Available, comercial a escala | Core ML, TFLite int8 |
-| Clasificadores de texto genericos tipo DistilBERT | ~66 M | 512 tokens | normalmente 1-2 | Apache 2.0 / MIT segun variante | safetensors, ONNX |
-| Modelos de embeddings multilingues ligeros | ~100-120 M | 512 tokens | 50-100+ | Apache 2.0 / MIT segun variante | safetensors, ONNX, GGUF |
-
-La ventaja diferencial de Emo frente a esas alternativas es el tamano (dos ordenes de magnitud menor) y la latencia sub-2 ms en dispositivo; la desventaja es que su salida esta restringida a 812 etiquetas de emoji y que no se publican metricas de calidad que permitan compararlo objetivamente.
+| Emo (desert-ant-labs) | No disponible | No disponible (texto corto) | 22 | Source-available (comercial a escala) | TFLite int8, Core ML |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo esta ajustado para texto corto que expresa una intencion; con textos largos las sugerencias se vuelven mas ruidosas, segun el propio autor.
-- Los significados de los emojis son imprecisos por naturaleza, por lo que es habitual que las primeras sugerencias queden casi empatadas en probabilidad; la interfaz debe tolerarlo.
-- La calidad varia por idioma: el autor reconoce que el modelo es algo mas debil en los idiomas de menores recursos del conjunto.
-- No hay metricas de sesgo publicadas; al tratarse de un clasificador de emojis, los sesgos se manifestarian como asociaciones culturales estereotipadas entre conceptos y pictogramas, sin que exista documentacion de evaluacion al respecto.
-- Riesgo de alucinacion en sentido estricto bajo, porque el modelo no genera texto, pero puede producir asociaciones erroneas o poco apropiadas con alta confianza aparente.
-- La licencia es propietaria y de tipo source-available: es gratuita para la mayoria de aplicaciones, pero exige licencia comercial a escala segun los terminos enlazados por el autor; conviene revisar el texto completo antes de integrarla en un producto.
-- La model card advierte que los avisos de terceros sobre los pesos estan en `THIRD_PARTY_NOTICES.md`; hay que consultarlos para conocer las obligaciones heredadas de datos o componentes de terceros.
-- Los artefactos antiguos (`Emo.mlmodelc` y `emo.safetensors`) solo estan disponibles en las revisiones v0.6.0 y anteriores, por lo que integraciones con SDKs viejos deben fijar la revision adecuada.
-- No sirve para generacion de texto, razonamiento, codigo ni tareas multimodales; usarlo fuera de su dominio de clasificacion de emojis dara resultados sin sentido.
+- Está ajustado para texto corto que expresa una intención; con textos más largos las sugerencias se vuelven más ruidosas.
+- Los significados de los emojis son imprecisos por naturaleza, por lo que es habitual encontrar casi-empates entre las primeras sugerencias; conviene presentar varias opciones al usuario.
+- La calidad varía según el idioma y es algo más débil en los idiomas de menores recursos del conjunto de 22.
+- No genera texto, no razona en múltiples pasos y no ofrece tool calling, visión ni audio; su alcance funcional es exclusivamente la clasificación de texto en emojis.
+- La licencia es source-available, no open source: es gratuita para la mayoría de aplicaciones, pero requiere licencia comercial a escala. Es necesario revisar los términos completos antes de un uso comercial.
+- No se documentan sesgos específicos, pero al tratarse de un clasificador entrenado sobre texto multilingüe cabe esperar sesgos culturales en la asociación entre conceptos y emojis.
+- El riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de sugerencias semánticamente incorrectas o ambiguas, especialmente en frases cortas o idiomas de bajos recursos.
+- Depende de la descarga inicial de pesos desde Hugging Face o de empaquetarlos manualmente; en entornos sin red es necesario preinstalar los artefactos.
+- Las versiones anteriores del SDK usaban `emo.safetensors`; la compatibilidad con revisiones antiguas debe verificarse antes de migrar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/emo
-- Revision de pesos v0.7.0: https://huggingface.co/desert-ant-labs/emo/tree/v0.7.0
-- Demo interactiva (Space): https://huggingface.co/spaces/desert-ant-labs/emo-demo
-- Demo oficial del autor: https://desertant.com/models/emo/
-- Repositorio del SDK y nucleo: https://github.com/Desert-Ant-Labs/desert-ant-core
-- Requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
-- Requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
-- Requisitos JavaScript y TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
-- Descarga y cache de modelos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching
+- Pesos v0.7.0: https://huggingface.co/desert-ant-labs/emo/tree/v0.7.0
+- Demo en vivo (Space): https://huggingface.co/spaces/desert-ant-labs/emo-demo
+- Demo oficial: https://desertant.com/models/emo/
+- Repositorio principal: https://github.com/Desert-Ant-Labs/desert-ant-core
+- Documentación del SDK Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Documentación del SDK Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
+- Documentación del SDK JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Descargas y caché de modelos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching
 - Licencia: https://license.desertant.com/
-- Avisos de terceros: https://huggingface.co/desert-ant-labs/emo/blob/main/THIRD_PARTY_NOTICES.md
 - Contacto de licencias: licensing@desertant.com
+- Avisos de terceros: https://huggingface.co/desert-ant-labs/emo/blob/main/THIRD_PARTY_NOTICES.md

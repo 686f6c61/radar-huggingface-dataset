@@ -2,105 +2,95 @@
 
 ## Resumen
 
-`child-gemma4-e2b-v5-vision-gguf` es un ajuste fino del modelo multimodal `google/gemma-4-E2B-it`, desarrollado por `mie-edu` con fines educativos para el sistema escolar japonés. Su función concreta es doble: leer texto impreso a partir de una fotografía (por ejemplo, un boletín de clase o una hoja de ejercicios) y reescribir ese texto limitando el vocabulario a los kanji que corresponden a un curso determinado (3.º a 6.º de primaria). El repositorio empaqueta el modelo base ajustado en formato GGUF junto con el proyector multimodal (`mmproj`) del modelo original, de modo que todo el pipeline se ejecuta con `llama.cpp` en local.
+child-gemma4-e2b-v5-vision-gguf es una adaptación del modelo google/gemma-4-E2B-it desarrollada por el autor mie-edu (vinculado a la Universidad de Mie, Japón) como parte de un trabajo de fin de grado del curso 2026. El modelo está especializado en una tarea educativa muy concreta: leer el texto de imágenes de material escolar japonés (boletines de clase, hojas fotocopiadas) y reescribirlo utilizando únicamente los kanji correspondientes al nivel de un curso escolar determinado. Se distribuye en formato GGUF para su uso con llama.cpp y aplicaciones móviles como PocketPal AI, Off Grid o Enclave.
 
-El ajuste se aplica únicamente sobre la parte lingüística: el codificador visual es el `mmproj` original de Gemma 4 E2B-it, redistribuido desde la conversión GGUF de `ggml-org`. El cuerpo del modelo tiene 4.628.569.635 parámetros y se distribuye en cuantizaciones Q6_K (unos 3,6 GB), Q8_0 y F16, más el proyector visual en Q8_0 (0,56 GB). El repositorio completo ocupa 36,7 GB e incluye además gramáticas GBNF por curso y utilidades de investigación.
+La arquitectura subyacente es la del Gemma 4 E2B-it de Google, un transformer multimodal con capacidad de entrada imagen-texto. El autor solo ha reentrenado la parte lingüística (con un ajuste DPO posterior), por lo que el componente de visión (mmproj) es el original de Google convertido a GGUF por ggml-org y simplemente renombrado para que las aplicaciones lo asocien al modelo principal. El modelo tiene 4.628.569.635 parámetros totales y el repositorio ocupa 36,7 GB, aunque el uso típico se hace con las cuantizaciones Q6_K (3,8 GB) o Q8_0 (5,0 GB).
 
-Es relevante ahora por dos motivos: demuestra un caso de uso muy verticalizado (adaptación de material escolar por nivel de kanji) sobre un modelo pequeño que cabe en hardware de consumo, y documenta con transparencia una degradación medible del OCR respecto al modelo original, algo poco habitual en model cards de ajustes finos. La contrapartida es que solo trabaja en japonés, no se ha entrenado para la tarea conjunta de "imagen → reescritura" y requiere un flujo de dos pasos con verificación humana.
+Su relevancia es acotada pero clara: demuestra cómo un modelo base relativamente pequeño puede adaptarse con éxito a una tarea pedagógica específica (control del vocabulario kanji por curso) y desplegarse en dispositivos de consumo, incluso móviles, sin conexión a internet. Está pensado exclusivamente para japonés y para el sistema educativo japonés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (decodificador de lenguaje + proyector visual `mmproj`); detalles de capas y atención no disponibles |
-| Parametros totales | 4.628.569.635 (4,63 B) |
-| Parametros activos | No disponible; la informacion proporcionada no indica que sea un modelo MoE |
-| Longitud de contexto | No disponible; el ejemplo de la model card arranca `llama-server` con `-c 4096` |
-| Tipos de cuantizacion | GGUF Q6_K (recomendada), Q8_0, F16; `mmproj` en Q8_0 |
-| Idiomas soportados | Japones (`ja`) |
-| Licencia | Gemma Terms of Use |
+| Arquitectura | Transformer multimodal (Gemma 4 E2B-it), con componente de visión mmproj separado |
+| Parametros totales | 4.628.569.635 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el autor recomienda ajustar Context size a ~1024 en PocketPal AI) |
+| Tipos de cuantizacion | Q6_K (3,8 GB), Q8_0 (5,0 GB), F16 (9,3 GB); mmproj en Q8_0 (0,56 GB) |
+| Idiomas soportados | Japones (ja) |
+| Licencia | Gemma Terms of Use y Gemma Prohibited Use Policy |
 | Formato de pesos | GGUF (llama.cpp) |
 | Modelo base | google/gemma-4-E2B-it |
-| Variante solo texto | mie-edu/child-gemma4-e2b-v5-gguf |
-| Tamano del repositorio | 36,7 GB (incluye codigo, gramaticas y evaluacion) |
+| Tamano del repo | 36,7 GB |
+| Archivos auxiliares | grammar_g3.gbnf a grammar_g6.gbnf (gramaticas GBNF por curso, ~1,5 KB cada una) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/gemma-4-E2B-it`, un transformer multimodal con un codificador de imagen conectado al decodificador de lenguaje mediante un proyector (`mmproj`). El ajuste de `mie-edu` modifica solo los pesos del decodificador: el proyector visual se reutiliza tal cual, en su conversion GGUF Q8_0 publicada por `ggml-org`, y se distribuye junto al modelo para habilitar la entrada de imagenes en `llama-server` y en apps moviles compatibles.
+El modelo parte de google/gemma-4-E2B-it, un transformer multimodal de Google con capacidad de procesamiento de imágenes y texto. La adaptación realizada por mie-edu se centra exclusivamente en la parte lingüística: se ha reentrenado el modelo de lenguaje para la tarea de reescritura de texto con kanji restringidos por curso escolar, con un ajuste posterior mediante DPO (los pesos se denominan "dpo" en los nombres de archivo). El componente de visión es el original de Gemma 4 E2B-it convertido a GGUF por ggml-org y renombrado para que las aplicaciones lo emparejen automáticamente con el modelo principal.
 
-El entrenamiento descrito en la model card combina una fase de SFT seguida de DPO; el repositorio publica ambas variantes (`child-gemma4-v5-*-dpo-*` y `child-gemma4-v5-*` sin DPO) para permitir comparaciones. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni los hiperparametros. La model card advierte explicitamente de que el modelo no ha visto ejemplos de la tarea completa "imagen → reescritura por curso": el ajuste cubre la reescritura con kanji de un curso concreto, mientras que la lectura de imagen proviene del modelo base. De ahi el flujo en dos etapas que recomienda el autor y la inclusion de gramaticas GBNF (`grammar_g3.gbnf` a `grammar_g6.gbnf`) para restringir la decodificacion al repertorio de kanji de cada curso.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni detalles sobre el proceso de RLHF/DPO más allá de su uso. La innovación técnica destacable es el uso de gramáticas GBNF por curso (grammar_g3 a grammar_g6) para restringir la generación al conjunto de kanji permitido en cada nivel educativo, y el diseño de un flujo de dos pasos (lectura de imagen y luego reescritura) porque el modelo no fue entrenado para reescritura directa desde imagen.
 
 ## Capacidades
 
-- Generacion de texto en japones orientada a reescritura por nivel escolar, sustituyendo kanji fuera del curso indicado.
-- Lectura de texto impreso a partir de imagenes (image-to-text) usando el proyector visual del modelo base.
-- Instrucciones de nivel en lenguaje natural, por ejemplo "小学4年生向けに書き直してください" (reescribe para 4.º de primaria).
-- Decodificacion restringida mediante gramaticas GBNF por curso (3.º a 6.º de primaria).
-- Uso via API compatible con OpenAI en `llama-server`, incluyendo el campo `image_url` para enviar imagenes.
-- Inferencia local en CPU con llama.cpp y en dispositivos moviles mediante PocketPal AI, Off Grid y Enclave.
-- Soporte de `--reasoning-budget 0` en llama.cpp, es decir, modo sin razonamiento intermedio expuesto.
-- No disponible: tool calling, function calling, capacidades de agente, audio, ni soporte multilingue fuera del japones.
+- Lectura de texto en imágenes (OCR) de material escolar japonés impreso o fotografiado.
+- Reescritura de texto sustituyendo kanji por equivalentes del curso escolar indicado (3.º a 6.º de primaria).
+- Generación de texto conversacional en japonés.
+- Procesamiento multimodal imagen-texto (entrada de imagen, salida de texto).
+- Uso de gramáticas GBNF para restringir el vocabulario de salida por curso.
+- Flujo de dos etapas: extracción de texto de la imagen y posterior reescritura pedagógica.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- **Adaptacion de boletines escolares al curso del alumnado**: el flujo documentado consiste en fotografiar el boletin, extraer el texto con el modelo y reescribirlo despues indicando el curso destino, de modo que los kanji fuera de nivel se sustituyan por alternativas del repertorio del curso. Es el caso de uso principal del ajuste.
-- **Digitalizacion de material impreso para repositorios docentes**: el modelo permite convertir hojas de ejercicios y comunicados en texto editable sin depender de servicios en la nube, algo relevante para centros con requisitos de privacidad sobre datos de menores.
-- **Generacion de material didactico con kanji controlado**: con las gramaticas GBNF incluidas, el modelo puede producir o adaptar textos limitando la decodificacion a los kanji de un curso concreto, util para preparar lecturas graduadas por nivel.
-- **Asistencia a alumnado con dificultades de lectura de kanji**: reescritura de enunciados de examenes o apuntes a un nivel de kanji inferior, manteniendo el contenido, como apoyo dentro del aula.
-- **Aplicacion movil offline para familias**: al distribuirse en GGUF con `mmproj`, el modelo se puede cargar en PocketPal AI u Off Grid en el propio dispositivo; el autor advierte de que la viabilidad en iPhone de 8 GB de RAM requiere verificacion en dispositivo real.
-- **Investigacion educativa y evaluacion de OCR**: el repositorio incluye `eval/ocr_check.py` y un conjunto de 25 imagenes de boletines escolares, lo que permite reproducir la evaluacion de tasa de error de caracteres y comparar variantes con y sin DPO.
-- **Auditoria de legibilidad de documentos del centro**: medir de forma automatica cuantos kanji de un documento quedan fuera del curso objetivo antes de distribuirlo a las familias.
+- Reescritura de boletines escolares para familias: el modelo lee una foto del boletín de clase y reescribe el texto con kanji del curso indicado, facilitando la comprensión a padres y alumnos de primaria.
+- Adaptación de material didáctico por nivel: un docente puede fotografiar un texto y generar versiones simplificadas para distintos cursos (3.º a 6.º) usando las gramáticas GBNF incluidas.
+- Digitalización de material escolar en papel: extracción de texto de hojas fotocopiadas o impresas con una tasa de error de caracteres del 2,5-3,2% (mediana) y conservación casi total de cifras y fechas.
+- Uso educativo sin conexión en dispositivos móviles: despliegue en PocketPal AI, Off Grid o Enclave en teléfonos con 4-8 GB de RAM, útil en aulas sin conectividad fiable.
+- Apoyo a la lectoescritura infantil: generación de textos con kanji adecuados al nivel del alumno para prácticas de lectura.
+- Prototipado de asistentes educativos locales: base para desarrolladores que quieran construir herramientas de accesibilidad lingüística en japonés con modelos pequeños y cuantizados.
+- Investigación en adaptación de modelos pequeños a tareas pedagógicas: ejemplo reproducible de fine-tuning con DPO y restricciones gramaticales sobre un modelo base de 4,6 mil millones de parámetros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible (MMLU, HumanEval, GSM8K u otros). La unica evaluacion publicada es la de lectura de imagen (OCR) sobre 25 boletines escolares convertidos en imagen, ejecutando llama.cpp en CPU:
-
-| Condicion | Texto completo leido | Tasa de error de caracteres (mediana) | Tasa de error <= 5% | Conservacion de numeros y fechas |
-|---|---|---|---|---|
-| Impresion limpia | 25 / 25 | 0,050 | 13 / 25 | 25 / 25 |
-| Foto de movil (inclinacion, sombras, desenfoque) | 25 / 25 | 0,039 | 16 / 25 | 24 / 25 |
-
-Referencia incluida por el autor: el modelo base Gemma 4 E2B-it obtiene una tasa de error de caracteres de aproximadamente 0,02 sobre las mismas imagenes, es decir, el ajuste linguistico degrada la lectura. Los errores se concentran en kanji poco frecuentes (por ejemplo, confusiones del tipo 懸命 → 熱心 o 欠席 → 次席); los digitos y fechas se conservan casi siempre.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor proporciona una métrica propia de la tarea: sobre 25 frases de boletín escolar convertidas en imágenes de estilo impreso y fotográfico, la tasa de error de caracteres fue del 2,5-3,2% en mediana, con conservación casi total de números y fechas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el cuerpo en Q6_K ocupa unos 3,6 GB y el `mmproj` en Q8_0 unos 0,56 GB, lo que suma aproximadamente 4,2 GB de pesos; con cache KV a 4096 tokens hay que prever del orden de 5 a 6 GB (estimacion a partir de los tamanos de fichero, no publicada por el autor).
-- Cuantizaciones mas ligeras: Q8_0 y F16 aumentan el consumo de forma proporcional; la model card recomienda Q6_K como opcion por defecto.
-- GPU de consumo: cabe en tarjetas de 8 GB o mas (RTX 3060 8 GB, RTX 4060, RTX 3070, RX 7600). El autor ejecuto la evaluacion en CPU, lo que confirma viabilidad sin GPU, con mas latencia.
-- GPU de datacenter: A100, H100 o L40S no son necesarias para este tamano; solo tendrian sentido para servir muchas peticiones concurrentes.
-- Despliegue: `llama.cpp` / `llama-server` (API compatible con OpenAI), y apps moviles PocketPal AI, Off Grid y Enclave. El autor menciona que la viabilidad en iPhone con 8 GB de RAM requiere prueba en dispositivo real. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: no disponibles. La model card solo indica que la evaluacion OCR se hizo sobre CPU.
+- VRAM/RAM estimada: Q6_K ~3,8 GB + mmproj ~0,56 GB; Q8_0 ~5,0 GB + mmproj; F16 ~9,3 GB + mmproj.
+- En PocketPal AI el autor recomienda Context size de ~1024; en dispositivos con 8 GB de RAM, abrir la cámara junto con el modelo puede agotar la memoria y cerrar la aplicación.
+- En iPhone, Off Grid usa GPU para el procesamiento de imágenes en equipos con más de 4 GB de RAM.
+- Cabe en GPUs de consumo (RTX 3060 12 GB, RTX 4090, etc.) y en móviles de gama media-alta con las cuantizaciones Q6_K/Q8_0.
+- Opciones de despliegue: llama.cpp, PocketPal AI, Off Grid, Enclave.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Recomendación del autor: adjuntar fotos desde la galería en lugar de usar la cámara directamente para ahorrar memoria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| mie-edu/child-gemma4-e2b-v5-vision-gguf | 4,63 B | no disponible | Si (`mmproj` Q8_0) | Japones | Gemma Terms of Use | GGUF en Hugging Face; 0 descargas |
-| mie-edu/child-gemma4-e2b-v5-gguf (variante solo texto) | 4,63 B (mismo cuerpo) | no disponible | No | Japones | Gemma Terms of Use | GGUF; ahorra los 0,56 GB del `mmproj` |
-| google/gemma-4-E2B-it (modelo base) | no disponible en la informacion (mismo orden, ~4,6 B) | no disponible | Si | Multiple, incluido japones | Gemma Terms of Use | Pesos originales y conversion GGUF de `ggml-org` |
-| ggml-org/gemma-4-E2B-it-GGUF | igual al base | no disponible | Si (via `mmproj`) | Multiple | Gemma Terms of Use | GGUF; origen del proyector visual |
+| child-gemma4-e2b-v5-vision-gguf | 4.628.569.635 | no disponible | ja | Gemma Terms | GGUF | Especializado en kanji por curso escolar, con visión |
+| google/gemma-4-E2B-it (base) | no disponible | no disponible | multilingue | Gemma Terms | safetensors/GGUF | Modelo generalista multimodal, sin especialización pedagógica |
+| child-gemma4-e2b-v5-gguf (versión solo texto) | no disponible | no disponible | ja | Gemma Terms | GGUF | Misma tarea sin visión; 0,56 GB más pequeño y menor uso de memoria |
 
-Frente al modelo base, este ajuste gana en la tarea especifica de reescritura con kanji por curso y pierde calidad de OCR (0,050 frente a 0,02 de tasa de error de caracteres en impresion limpia). Frente a la variante solo texto, la unica diferencia es la inclusion del proyector visual y el espacio adicional que ocupa.
+No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo japones: no hay soporte documentado de otros idiomas, ni siquiera del ingles presente en el modelo base.
-- El OCR es peor que el del modelo base (0,050 de mediana en impresion limpia frente a 0,02), por el ajuste sobre la parte linguistica.
-- Errores frecuentes en kanji poco habituales; los numeros y fechas se conservan casi siempre, pero el autor recomienda revision humana del texto extraido antes de pasarlo a la segunda etapa.
-- Tendencia a detenerse tras leer solo la linea del titulo; hay que reinyectar lo leido como prefijo del turno del asistente para forzar la continuacion del cuerpo del texto.
-- Riesgo de bucles de repeticion en los saltos de linea; si aparece una cadena repetida, conviene cortar y repetir la captura.
-- No ha sido entrenado para la tarea completa "imagen → reescritura": el pipeline en dos etapas es obligatorio en la practica.
-- Riesgo de alucinacion en la fase de reescritura: al sustituir kanji por alternativas del curso puede alterar el significado si el contexto no es suficiente.
-- Licencia Gemma Terms of Use: revise las clausulas de uso comercial y de redistribucion antes de integrarlo en un producto; el `mmproj` redistribuido por `ggml-org` queda sujeta a las mismas condiciones.
-- Modelo con 0 descargas y 1 like en el momento de la consulta: no hay validacion independiente fuera de la evaluacion del propio autor, hecha sobre 25 imagenes y en CPU.
-- No hay datos publicados sobre sesgos, contexto maximo real ni comportamiento con documentos manuscritos o de baja calidad.
+- El modelo solo soporta japonés; no es adecuado para otros idiomas.
+- Puede detenerse tras leer solo la primera línea de un encabezado; el autor sugiere pedir "continúa" o añadir un salto de línea.
+- Puede repetir texto al llegar a un salto de línea de la imagen; se recomienda recapturar con letra grande y papel plano.
+- Confunde kanji de trazos complejos con palabras similares (p. ej., 懸命→熱心, 欠席→次席); conviene revisar la lectura antes de la reescritura.
+- No fue entrenado para reescritura directa desde imagen; requiere el flujo de dos pasos (lectura y luego reescritura).
+- Riesgo de alucinación en la lectura de texto manuscrito o imágenes de baja calidad; las métricas del autor se basan en texto impreso o fotografiado en condiciones controladas.
+- Restricciones de licencia: uso sujeto a Gemma Terms of Use y Gemma Prohibited Use Policy; el componente mmproj es propiedad de Google y se rige por las mismas condiciones.
+- En dispositivos con 8 GB de RAM o menos, el uso simultáneo de cámara y modelo puede provocar cierres de la aplicación.
+- La compatibilidad de Enclave con el componente mmproj depende de la versión de la aplicación.
+- Modelo de investigación académica (trabajo de fin de grado); no se documenta un proceso de validación en producción a gran escala.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mie-edu/child-gemma4-e2b-v5-vision-gguf
-- Variante solo texto: https://huggingface.co/mie-edu/child-gemma4-e2b-v5-gguf
+- Hugging Face: https://huggingface.co/mie-edu/child-gemma4-e2b-v5-vision-gguf
+- Versión solo texto: https://huggingface.co/mie-edu/child-gemma4-e2b-v5-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Conversion GGUF del modelo base (origen del `mmproj`): https://huggingface.co/ggml-org/gemma-4-E2B-it-GGUF
-- Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
-
-Nota: las busquedas web realizadas no devolvieron resultados relacionados con este modelo (los resultados obtenidos corresponden a entidades no vinculadas: una mutua francesa y una empresa sudafricana de verificacion de antecedentes). No se dispone de paper, blog ni demo adicionales.
+- Gemma Terms of Use: https://ai.google.dev/gemma/terms
+- Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

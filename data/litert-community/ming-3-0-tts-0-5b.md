@@ -2,96 +2,98 @@
 
 ## Resumen
 
-Ming-3.0-tts-0.5B es un modelo de texto a voz (TTS) desarrollado por inclusionAI, del cual litert-community publica esta versión convertida y empaquetada para ejecutarse completamente en el dispositivo (on-device) mediante LiteRT (TensorFlow Lite). El modelo genera voz de forma autónoma en el teléfono, sin conexión de red, produciendo audio a 44.1 kHz directamente desde texto introducido por el usuario. Su relevancia radica en demostrar que un sistema TTS neuronal de calidad puede funcionar en tiempo casi real sobre hardware móvil de consumo, repartiendo la carga entre GPU y NPU del SoC.
+Ming-3.0-tts-0.5B es un modelo de síntesis de voz (text-to-speech) de 0,5 mil millones de parámetros desarrollado por inclusionAI. Este repositorio concreto, publicado por litert-community, contiene una conversión del modelo original al formato LiteRT (TFLite) para su ejecución completamente local en dispositivos Android, sin necesidad de conexión de red. El modelo genera audio a 44,1 kHz a partir de texto en siete idiomas (inglés, chino, japonés, coreano, alemán, francés y español).
 
-La arquitectura se compone de varios grafos LiteRT: un modelo de lenguaje basado en Qwen2.5-0.5B (24 capas) que procesa el texto, un flow head que genera latentes de audio mediante un solver de 10 pasos con classifier-free guidance, un agregador y un decodificador de 24 capas que convierte los latentes en espectros ISTFT para producir la señal final. El paquete ocupa 3.6 GB y los pesos se almacenan en float16.
+La relevancia de esta ficha radica en su enfoque *on-device*: el modelo se divide en varios grafos (modelo de lenguaje, cabecera de flujo, agregador y decodificador) que se distribuyen entre GPU y NPU del teléfono mediante la API CompiledModel de LiteRT 2.2.0. En un Galaxy S26 alcanza un factor de tiempo real de 0,93× con la colocación por defecto (LM y agregador en GPU, flujo en NPU, decodificador en GPU), lo que lo sitúa en el umbral de la síntesis de voz en tiempo real en hardware móvil de gama alta.
 
-En pruebas documentadas sobre un Galaxy S26 (Snapdragon SM8850), el sistema alcanza un factor de tiempo real de 0.93 (genera 8.9 segundos de audio en 9.6 segundos), con el primer audio disponible 1.87 segundos después de introducir el texto. Con la configuración alternativa que ejecuta todos los grafos en la NPU, mejora a 1.35× tiempo real, aunque a menor precisión. Soporta siete idiomas: inglés, chino, japonés, coreano, alemán, francés y español.
+La arquitectura interna se apoya en Qwen2.5-0.5B (24 capas) como modelo de lenguaje que produce latentes de audio de 64 dimensiones, cada uno correspondiente a 80 ms de audio. El paquete pesa 3,6 GB y se distribuye bajo licencia MIT, lo que facilita su integración en aplicaciones comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | TTS neuronal: LM Qwen2.5-0.5B (24 capas) + flow head (solver de 10 pasos con CFG) + agregador + decodificador transformer causal de 24 capas (ISTFT) |
-| Parametros totales | no disponible (el paquete completo ocupa 3.6 GB en float16) |
+| Arquitectura | Transformer causal (LM Qwen2.5-0.5B, 24 capas) + cabecera de flujo + agregador + decodificador causal de 24 capas con ISTFT |
+| Parametros totales | 0,5 mil millones (modelo base Ming-3.0-tts-0.5B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | float16 (pesos), entradas y salidas en float32; FP32 en GPU para LM y agregador |
+| Longitud de contexto | no disponible (el prompt de prefill usa 64 filas de entrada) |
+| Tipos de cuantizacion | Pesos en float16, entradas y salidas en float32; grafo de flujo compilado para NPU con precisión reducida |
 | Idiomas soportados | en, zh, ja, ko, de, fr, es |
 | Licencia | MIT |
-| Formato de pesos | TFLite / LiteRT (.tflite), pesos float16; modelo base en inclusionAI/Ming-3.0-tts-0.5B |
+| Formato de pesos | LiteRT / TFLite (grafos `.tflite`), pesos float16 |
+| Tamano del repositorio | 3,6 GB |
+| Frecuencia de muestreo de audio | 44,1 kHz |
+| Duracion por latente | 80 ms de audio |
 
 ## Arquitectura y entrenamiento
 
-El pipeline funciona generando la voz un latente de 64 números cada vez, donde cada latente representa 80 ms de audio. Para cada latente, el modelo de lenguaje (Qwen2.5-0.5B, 24 capas) recibe una fila de entrada y devuelve un estado oculto. El flow head transforma ese estado, el latente previo y ruido gaussiano en el siguiente latente mediante 10 pasos de solver con classifier-free guidance. El agregador convierte el latente en la siguiente fila de entrada. Un stop head sobre el estado oculto decide el fin de la frase. El decodificador, un transformer causal de 24 capas, convierte 16 latentes por llamada en un espectro ISTFT, y el host lo transforma en audio a 44.1 kHz.
+El modelo genera voz latente a latente: cada latente es un vector de 64 números que representa 80 ms de audio. Para cada latente, el modelo de lenguaje (Qwen2.5-0.5B, 24 capas) recibe una fila de entrada y devuelve un estado oculto. La cabecera de flujo transforma ese estado, el latente anterior y ruido gaussiano en el siguiente latente mediante 10 pasos de solver con *classifier-free guidance*. El agregador convierte el latente en la siguiente fila de entrada, y una cabecera de parada sobre el estado oculto decide cuándo termina la frase. El decodificador, un transformer causal de 24 capas, convierte 16 latentes por llamada en un espectro ISTFT, que el host transforma en audio a 44,1 kHz.
 
-Sobre el entrenamiento del modelo base (datos, número de tokens, RLHF/DPO), la información disponible no incluye detalles; solo se indica que es un fine-tune de inclusionAI/Ming-3.0-tts-0.5B. Como innovación técnica destacable, esta conversión a LiteRT mantiene las tablas RoPE, máscaras de atención, ambos cachés KV y la búsqueda de embeddings en el host (fuera de los grafos), y el flow head se compila en el propio teléfono para la NPU de Qualcomm, con caché del grafo compilado (213 MB) que reduce las cargas posteriores a 0.35 s.
+La conversión a LiteRT se realizó con litert-torch y se organiza en cinco grafos: `lm2_wfp16.tflite` (prefill de 64 filas y step de una fila, con la caché KV como entrada y salida), `flow_r4b_s10_wfp16.tflite` (10 pasos de solver en una sola llamada), `agg_r4b_wfp16.tflite`, `dec_c16_wfp16.tflite` (16 latentes, caché de 64 posiciones por capa) y las variantes `lm2_epsdiv_prefill_wfp16.tflite` y `lm2_epsdiv_step_wfp16.tflite` para la colocación en NPU. El host mantiene el tokenizador, el prompt, la búsqueda de embeddings, las tablas RoPE, las máscaras de atención, ambas cachés KV, la decisión de parada, el ruido y el ISTFT. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de voz a partir de texto (text-to-speech) a 44.1 kHz, completamente on-device y sin red
-- Síntesis multiidioma: inglés, chino, japonés, coreano, alemán, francés y español
-- Generación en streaming por chunks: el primer audio está disponible 1.87 s (configuración GPU+NPU) o 1.10 s (todo en NPU) tras introducir el texto
-- Ejecución acelerada por hardware móvil: reparto de grafos entre GPU y NPU (Qualcomm Hexagon) mediante la CompiledModel API de LiteRT
-- Cabezas auxiliares integradas: stop head para terminar la frase y flow head con classifier-free guidance para calidad de síntesis
-- Verificación numérica frente a la referencia PyTorch: desviación máxima de estado oculto de 1.46e-03 en el prefill del LM, muy por debajo del límite de 0.357
+- Síntesis de voz a partir de texto en siete idiomas (inglés, chino, japonés, coreano, alemán, francés y español).
+- Generación de audio a 44,1 kHz completamente local, sin conexión de red.
+- Ejecución distribuida entre GPU y NPU del dispositivo mediante LiteRT CompiledModel.
+- Modo de colocación alternativa que ejecuta todos los grafos en la NPU, con menor precisión pero mayor velocidad (1,35× tiempo real en Galaxy S26).
+- Control de parada de frase mediante cabecera dedicada sobre el estado oculto.
+- No se documentan capacidades de tool calling, agentes, visión ni audio de entrada.
 
 ## Casos de uso
 
-- Lectores de pantalla y accesibilidad offline: al funcionar sin red y con primer audio en menos de 2 segundos, es adecuado para apps de accesibilidad que lean texto de la interfaz en cualquier momento, incluso en modo avión.
-- Asistentes de voz en Android: la generación por chunks de 80 ms permite integrar el modelo en asistentes conversacionales con latencia de respuesta baja, sin enviar datos del usuario a la nube.
-- Narración de contenido en aplicaciones de lectura: apps de libros, noticias o historias pueden leer textos largos en voz alta; la demo oficial lee una historia de 57 palabras generando 17 segundos de voz en 14.7 segundos.
-- Privacidad en apps médicas o financieras: dado que todo el procesamiento ocurre en el dispositivo, es apropiado para escenarios donde el texto no puede salir del terminal por cumplimiento normativo.
-- Aprendizaje de idiomas: el soporte de siete idiomas (es, en, zh, ja, ko, de, fr) permite pronunciar frases de ejemplo en apps educativas sin descargar voces por idioma.
-- Prototipado de voz en dispositivos edge: los desarrolladores pueden usar el contract.json y la app de ejemplo como plantilla para integrar TTS en productos con LiteRT sobre GPU/NPU móviles.
+- Lectura de textos largos en aplicaciones móviles sin conexión: el modelo permite que una app Android lea en voz alta artículos o libros completos en modo avión, como demuestra el ejemplo de la model card con una historia de 57 palabras generada en 14,7 s.
+- Accesibilidad para personas con discapacidad visual: integración en lectores de pantalla y asistentes de navegación que requieren síntesis de voz local con baja latencia inicial (1,87 s hasta el primer audio en Galaxy S26).
+- Asistentes de voz en dispositivos sin conectividad: sistemas de navegación GPS, dispositivos IoT o wearables que necesitan respuestas habladas sin depender de la nube.
+- Traducción y doblaje en tiempo real: al cubrir siete idiomas, puede emplearse en apps de traducción que lean el texto traducido con voz natural en el propio dispositivo.
+- Audiolibros y podcasts generados localmente: generación de narraciones a partir de texto con la ventaja de privacidad que supone no enviar contenido a servidores externos.
+- Interfaces conversacionales en vehículos: síntesis de voz de baja latencia para sistemas de infoentretenimiento que requieren respuestas habladas inmediatas sin cobertura de red.
+- Prototipado de aplicaciones TTS en Android: el paquete LiteRT y el `contract.json` facilitan la integración en apps de ejemplo y la experimentación con distintas colocaciones de grafos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MOS, MMLU, etc.) en la informacion disponible. Sí se han publicado mediciones de rendimiento en dispositivos:
+| Metrica | Galaxy S26 (Snapdragon SM8850, 12 GB) | Pixel 8a (Tensor G3, Mali-G715, 8 GB) |
+|---|---|---|
+| Factor de tiempo real (por defecto) | 0,93 (0,928 / 0,931 / 0,917) | 0,31 (0,312 / 0,307 / 0,308) |
+| Primer audio | 1,87 s | 5,2 s |
+| Un frame de 80 ms | 78 ms (LM 31 + flujo 37 + agregador 10) | 244 ms (94 + 127 + 23) |
+| Llamada al decodificador (16 latentes) | 111 ms | 264 ms |
+| Underruns de reproducción | 6/6/6 | 7/7/7 |
 
-| Phone | Colocación de grafos | Factor tiempo real | Primer audio | Un frame de 80 ms | Llamada al decodificador (16 latentes) | Underruns de reproduccion |
-|---|---|---|---|---|---|---|
-| Galaxy S26 (Snapdragon SM8850, 12 GB) | LM y agregador: GPU FP32 · flow: NPU · decodificador: GPU | **0.93** | 1.87 s | 78 ms (LM 31 + flow 37 + agregador 10) | 111 ms | 6/6/6 |
-| Pixel 8a (Tensor G3, Mali-G715, 8 GB) | flow en GPU (sin NPU de Qualcomm) | 0.31 | 5.2 s | 244 ms (94 + 127 + 23) | 264 ms | 7/7/7 |
-
-Con todos los grafos en la NPU (Galaxy S26): 1.35× tiempo real y primer audio a 1.10 s, a menor precision. En la demo en modo avion: primer chunk a 1.31 s y 17.0 s de voz generados en 14.7 s. El prefill del prompt tardo 386–396 ms dentro del tiempo del primer audio. La primera compilacion del grafo flow para NPU tardo 49–63 s (caché posterior de 0.35 s). Memoria pico de la app: 4.6 GB (VmHWM).
+En el modo de colocación rápida (todos los grafos en NPU) del Galaxy S26, el factor de tiempo real es de 1,35× y el primer audio se genera a los 1,10 s, con menor precisión. El prefill del prompt consume 386–396 ms del tiempo hasta el primer audio. La compilación inicial del grafo de flujo para NPU tarda 49–63 s y requiere hasta 1,6 GB de memoria; la forma compilada se cachea (213 MB) y las cargas posteriores tardan 0,35 s. La memoria pico de la app (VmHWM) es de 4,6 GB. No se han publicado resultados de benchmarks de calidad de voz (MOS, WER) en la información disponible.
 
 ## Requisitos de hardware
 
-- Diseñado para ejecutarse en smartphones Android; no hay cifras de VRAM de escritorio publicadas (no disponible)
-- Dispositivos verificados: Galaxy S26 (Snapdragon SM8850, 12 GB RAM) con 0.93× tiempo real; Pixel 8a (Tensor G3, Mali-G715, 8 GB RAM) con 0.31× tiempo real
-- Memoria en el teléfono: pico de 4.6 GiB (VmHWM) en el S26; la compilacion NPU del grafo flow alcanza 1.6 GiB pico y genera una caché de 213 MB
-- Almacenamiento: 3.6 GB de pesos del paquete
-- Carga de grafos GPU en el S26: 5.3 s (LM), 1.5 s (agregador), 4.4 s (decodificador)
-- Despliegue: LiteRT 2.2.0 con la CompiledModel API (grafos convertidos con litert-torch); no se mencionan vLLM, llama.cpp, Ollama ni TGI
-- La NPU de Qualcomm acelera el flow head; en dispositivos sin ella (como el Pixel 8a con Tensor G3) el grafo pasa a GPU con una penalizacion de ~3× en tiempo de generacion
+- VRAM/memoria estimada: la app de ejemplo alcanza un pico de 4,6 GB (VmHWM) en Galaxy S26; la compilación del grafo de flujo para NPU requiere hasta 1,6 GB.
+- GPU recomendadas: Snapdragon SM8850 (Galaxy S26) con GPU y NPU Qualcomm; Mali-G715 (Pixel 8a) funciona pero sin NPU Qualcomm, con el flujo movido a GPU.
+- Cabe en GPU de consumo: el modelo está orientado a móviles; no se documenta despliegue en GPU de escritorio.
+- Opciones de despliegue: LiteRT 2.2.0 con CompiledModel API en Android; el paquete incluye los grafos `.tflite` y `contract.json` con la especificación de entradas y salidas.
+- Latencia y throughput: en Galaxy S26, 78 ms por frame de 80 ms y 111 ms por llamada al decodificador; en Pixel 8a, 244 ms y 264 ms respectivamente.
+- Almacenamiento: repositorio de 3,6 GB; caché de compilación NPU de 213 MB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Licencia | Ejecucion | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| Ming-3.0-tts-0.5B (LiteRT) | ~0.5B (LM Qwen2.5-0.5B; total no disponible) | 7 (en, zh, ja, ko, de, fr, es) | MIT | On-device Android (GPU+NPU) | 0.93×–1.35× tiempo real en flagship, 44.1 kHz |
-| inclusionAI/Ming-3.0-tts-0.5B (base) | no disponible | 7 | MIT | PyTorch (referencia, Mac CPU) | Modelo original del que deriva este paquete |
-| Alternativas TTS on-device comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ming-3.0-tts-0.5B (LiteRT) | 0,5 B | no disponible | 7 | MIT | On-device Android (LiteRT) |
+| Ming-3.0-tts-0.5B (original, inclusionAI) | 0,5 B | no disponible | 7 | MIT | PyTorch |
+| no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se han identificado en la informacion disponible alternativas comparables con datos suficientes para una comparativa numerica.
+No se dispone de información sobre otros modelos TTS comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Rendimiento muy dependiente del hardware: en un Pixel 8a el sistema genera a 0.31× tiempo real, muy por debajo del tiempo real, lo que provoca esperas y underruns de reproduccion; el factor 0.93 del Galaxy S26 tampoco alcanza el tiempo real pleno en la configuracion por defecto.
-- La configuracion rapida (todo en NPU) funciona a menor precision que la configuracion por defecto.
-- La primera compilacion del grafo flow para NPU tarda 49–63 s y consume hasta 1.6 GiB; hay que planificar este coste en la primera ejecucion.
-- Consumo de memoria alto para movil: 4.6 GiB de pico (VmHWM) y 3.6 GB de pesos, inviable en gama baja.
-- Se registran underruns de reproduccion (6–7 por frase) porque la generacion es ligeramente mas lenta que la reproduccion.
-- Las mediciones se realizaron con throttling termico leve (estado 1) y GPU limitada a 902 MHz; el rendimiento en otros terminales o condiciones termicas puede variar.
-- No hay datos publicados sobre calidad perceptual (MOS), sesgos de voz, ni comportamiento con textos de entrada atipicos.
-- Licencia MIT: sin restricciones de uso comercial, pero conviene verificar la licencia del modelo base inclusionAI/Ming-3.0-tts-0.5B para usos derivados.
+- El modelo genera ligeramente más despacio de lo que reproduce: se producen underruns de reproducción (6/6/6 en Galaxy S26, 7/7/7 en Pixel 8a) que obligan a esperar audio varias veces por frase.
+- La compilación inicial del grafo de flujo para NPU tarda 49–63 s y consume hasta 1,6 GB de memoria, lo que puede afectar al arranque en frío de las aplicaciones.
+- El modo de colocación rápida (todos los grafos en NPU) opera con menor precisión, con posible impacto en la calidad de audio no cuantificado en la información disponible.
+- El rendimiento en Pixel 8a cae a 0,31× tiempo real, muy por debajo del umbral de tiempo real, por lo que la viabilidad depende del hardware.
+- No se documentan sesgos conocidos, tasas de alucinación ni limitaciones específicas de idioma más allá de los siete soportados.
+- La licencia MIT permite uso comercial, pero se recomienda verificar las condiciones del modelo base original de inclusionAI.
+- No se han publicado métricas de calidad de voz (MOS, inteligibilidad) en la información disponible.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B
-- Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
-- Contrato de entradas/salidas del paquete: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/blob/main/contract.json
-- Demo en video: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/resolve/main/assets/demo.mp4
-- Audio de referencia PyTorch: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/resolve/main/assets/pytorch_E5.wav
-- Audio generado en Galaxy S26: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/resolve/main/assets/s26_E5.wav
+- Repositorio LiteRT: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B
+- Modelo base original: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
+- Contrato de entradas y salidas: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/blob/main/contract.json
+- Demo en vídeo: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/resolve/main/assets/demo.mp4
+- Comparativa de formas de onda: https://huggingface.co/litert-community/Ming-3.0-tts-0.5B/resolve/main/assets/hero.png

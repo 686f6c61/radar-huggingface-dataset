@@ -2,61 +2,51 @@
 
 ## Resumen
 
-Sovereign Gotham (identificador `KolmogorovAcc/sovereign-anthology-gemma-2-2b`) es un ajuste fino del modelo `google/gemma-2-2b-it` publicado por el usuario KolmogorovAcc. Se presenta como un "motor cognitivo operativo" orientado al analisis de decisiones de alta consecuencia, y no como un chatbot conversacional generico. El autor lo describe como el resultado de destilar principios de decision procedentes de manuales desclasificados de la CIA, la NSA, el ejercito estadounidense y el Departamento de Defensa, combinados con un metamodelo operativo inspirado en las herramientas empresariales de Palantir (Gotham, Foundry y AIP).
+Sovereign Anthology Gemma 2 2B es un ajuste fino del modelo instructivo google/gemma-2-2b-it, publicado por el usuario KolmogorovAcc en Hugging Face. El autor lo presenta como un "motor cognitivo universal" orientado al análisis de inteligencia operativa, entrenado a partir de principios de decisión extraídos de manuales desclasificados de agencias estadounidenses (CIA, NSA, FBI, Departamento de Defensa) y del metamodelo operativo de Palantir. No es un modelo de propósito general: su tarjeta lo posiciona explícitamente como un analista de inteligencia autónomo que ejecuta marcos como el Analysis of Competing Hypotheses (ACH) de Richards J. Heuer Jr.
 
-El modelo hereda la arquitectura y el tamano del Gemma 2 2B de Google: se trata de un transformer denso decoder-only con aproximadamente 3.204.165.888 parametros segun los pesos en safetensors del repositorio. Su enfoque declarado es aplicar marcos estructurados como el Analysis of Competing Hypotheses (ACH) de Richards J. Heuer Jr. para formular hipotesis rivales, buscar evidencia refutatoria y producir protocolos operativos auditables con criterios de aborto y revisiones posteriores a la accion (AAR) a 30 dias.
+El modelo conserva la arquitectura y el tamaño del Gemma 2 2B original, con 3.204.165.888 parámetros totales según los pesos en safetensors, y hereda la ventana de contexto y el tokenizador de la familia Gemma 2. La propuesta de valor declarada es la ejecución local y air-gapped sobre hardware de consumo, con aceleración DirectML en una AMD Radeon RX 7600 XT, sin dependencia de la nube.
 
-Es relevante como ejemplo de especializacion vertical de un modelo pequeno (rango 2B-3B) sobre datos de dominio muy especifico y con enfasis en ejecucion local y privada. El autor destaca su ejecucion en hardware de consumo (AMD Radeon RX 7600 XT mediante DirectML) sin dependencia de la nube. El repositorio ocupa 13,4 GB e incluye pesos en safetensors y GGUF, aunque no se detallan los resultados de evaluacion ni la composicion exacta del dataset de entrenamiento.
+La relevancia de esta ficha es doble: por un lado, documenta un ejemplo de ajuste fino de nicho sobre un modelo pequeño y abierto; por otro, advierte de que la mayor parte de las afirmaciones de la model card (metodología de entrenamiento, capacidades procedimentales, protocolos de revisión) no están respaldadas por benchmarks ni por documentación técnica verificable en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only (heredada de google/gemma-2-2b-it) |
-| Parametros totales | 3.204.165.888 (segun safetensors) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 8192 tokens (heredada del modelo base google/gemma-2-2b-it; no confirmada de forma explicita en la informacion disponible) |
-| Tipos de cuantizacion | GGUF (mencionado en los tags); tipos concretos no disponibles |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer decoder-only (heredada de google/gemma-2-2b-it; sin modificaciones documentadas) |
+| Parametros totales | 3.204.165.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Gemma 2, sin confirmacion explicita) |
+| Tipos de cuantizacion | GGUF (formato publicado en el repo); niveles concretos no disponibles |
+| Idiomas soportados | en |
 | Licencia | gemma (Gemma Terms of Use) |
 | Formato de pesos | safetensors y GGUF |
-| Libreria | transformers |
-| Pipeline | text-generation |
-| Modelo base | google/gemma-2-2b-it |
-| Tamano del repositorio | 13,4 GB |
-| Descargas | 0 |
-| Likes | 1 |
-| Fecha de creacion | 2026-09-20 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/gemma-2-2b-it`, un transformer decoder-only denso de la familia Gemma 2. La model card describe un ajuste orientado a destilar "principios universales de decision" a partir de manuales operativos desclasificados de agencias estadounidenses (CIA, NSA, ejercito y Departamento de Defensa), fusionados con un metamodelo de decision operativa atribuido a Palantir (Gotham, Foundry y AIP), asi como con el marco ACH de Heuer. Los tags del repositorio incluyen `distillation`, `tradecraft`, `intelligence`, `analysis-of-competing-hypotheses`, `ach` y `palantir`.
+La arquitectura subyacente es la de Gemma 2 2B instruct: un transformer decoder-only con atención local y global alternada, normalización RMSNorm y las innovaciones propias de la familia Gemma 2. El autor no documenta ninguna modificación estructural, por lo que se asume que el ajuste fino preserva la topología del modelo base.
 
-La model card insiste en una separacion ontologica en dos capas: una capa de evidencia factual que deberia residir en un almacen vectorial externo (ChromaDB y grafo de conocimiento) mediante RAG, y una capa de disciplina cognitiva que el modelo habria internalizado. El autor afirma explicitamente que el modelo no memoriza hechos historicos, sino mecanicas de decision procedimentales. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documentan innovaciones arquitectonicas propias: se trata de un ajuste sobre la arquitectura original.
+Respecto al entrenamiento, la model card describe una destilación de "principios universales de decisión" extraídos de miles de manuales operativos desclasificados, fusionados con el metamodelo de decisión de Palantir (Gotham, Foundry, AIP). No se especifican el número de tokens de entrenamiento, la composición exacta del dataset, la existencia de RLHF o DPO, ni hiperparámetros. La distinción que hace el autor entre una "capa de evidencia factual" (RAG sobre ChromaDB y grafo de conocimiento) y una "capa de disciplina cognitiva" (el propio modelo) es una decisión de diseño de sistema, no una característica verificable del checkpoint. Tampoco hay información sobre el proceso de destilación ni sobre el profesor utilizado.
 
 ## Capacidades
 
-- Generacion de texto en ingles con un estilo declaradamente estructurado y procedimental.
-- Analisis de decisiones de alta consecuencia mediante la formulacion de hipotesis rivales (H1, H2, H3) segun el marco ACH.
-- Busqueda explicita de evidencia refutatoria para reducir el sesgo de confirmacion.
-- Calculo declarado de "decaimiento de recursos" y triaje cuando el volumen de tareas supera el ancho de banda disponible (metodos operativos de la NSA segun la model card).
-- Generacion de "protocolos operativos" numerados y auditables con umbrales cuantitativos y criterios de aborto.
-- Protocolo declarado de revision posterior a la accion (AAR) a 30 dias para medir deriva de rendimiento.
-- Separacion declarada entre capa de evidencia factual (RAG sobre base vectorial) y capa de razonamiento.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: parcialmente implicito en la descripcion del flujo por capas, sin confirmacion tecnica explicita.
-- Capacidades multilingues: limitadas al ingles segun el campo `language`.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional en inglés, heredada del modelo instructivo base.
+- Razonamiento estructurado según el marco ACH: formulación de hipótesis competidoras (H1, H2, H3) y búsqueda de evidencia refutatoria, según declara el autor.
+- Producción de "protocolos operativos" numerados con criterios de aborto y umbrales cuantitativos, según la model card.
+- Triaje de tareas y cálculo de "decaimiento de recursos" inspirado en métodos de la NSA, según la model card.
+- Protocolo de revisión posterior a la acción (AAR) a 30 días, descrito en la documentación del autor.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado formalmente; las capacidades descritas son procedimentales, no de orquestación de herramientas.
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Analisis de incidentes en produccion: el modelo puede estructurar un diagnostico de caidas de servicio en hipotesis rivales (causa de red, causa de datos, causa de despliegue) y priorizar la evidencia que las refuta, aprovechando su marco ACH.
-- Apoyo a decisiones de continuidad de negocio: ante la ruptura de una alianza corporativa o un fallo de infraestructura, genera protocolos numerados con criterios de aborto y umbrales cuantitativos, tal como describe la model card.
-- Triaje de alertas de seguridad: aplica la logica de isolacion de senal frente a ruido y asignacion de capacidad por caducidad de datos, util en colas de alertas donde el volumen excede la capacidad de analisis.
-- Investigacion de fraude financiero: el flujo descrito sigue el "follow-the-money" y el mapeo de asimetrias de riesgo moral, adecuado para revisar redes de incentivos sospechosas en expedientes de fraude.
-- Analisis de inteligencia competitiva: al no memorizar hechos, se espera que se combine con un RAG sobre fuentes documentales internas para emitir juicios de mercado con trazabilidad.
-- Ejecucion local y air-gapped: por su tamano (rango 2B) y su soporte de DirectML y Ollama, encaja en estaciones de trabajo sin conexion donde la confidencialidad impide enviar datos a la nube.
-- Protocolos de revision post-mortem: la generacion de planes AAR a 30 dias sirve como plantilla para equipos de fiabilidad (SRE) que quieran medir deriva de criterios tras un incidente.
+- Análisis de hipótesis competidoras en investigación de incidentes: el modelo puede estructurar un informe con hipótesis alternativas sobre la causa raíz de una caída de servicio y señalar qué evidencia refutaría cada una, aprovechando el marco ACH que el autor afirma haber internalizado.
+- Triaje de alertas en operaciones de TI: dado un volumen de incidentes superior a la capacidad del equipo, el modelo puede priorizar según criterios de caducidad de la información y asignar recursos, siguiendo el esquema de "resource decay" descrito en la model card.
+- Simulación de análisis forense de incentivos: en escenarios de fraude o conflicto entre socios, el modelo puede mapear asimetrías de riesgo moral y trazar cadenas causales de "follow the money", según la capa FBI descrita por el autor.
+- Formación y entrenamiento de analistas: servir como interlocutor local y offline para practicar la redacción de protocolos operativos auditables y la revisión posterior a la acción, sin enviar datos sensibles a la nube.
+- Documentación de decisiones de alto impacto en entornos air-gapped: organizaciones que no pueden usar APIs en la nube pueden desplegar el modelo en local para generar borradores de protocolos de decisión con trazabilidad numérica.
+- Prototipado de asistentes de análisis con RAG: combinado con una base vectorial (ChromaDB) y un grafo de conocimiento, el modelo actúa como capa de razonamiento sobre documentos internos, tal como propone la arquitectura de dos capas del autor.
 
 ## Benchmarks y rendimiento
 
@@ -64,39 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6-7 GB en fp16, en torno a 2-3 GB en cuantizacion de 8 bits y cerca de 1,5-2 GB en cuantizacion de 4 bits (estimaciones basadas en el tamano de 3,2B parametros; no confirmadas en la model card).
-- GPU recomendadas: la model card cita explicitamente una AMD Radeon RX 7600 XT con DirectML. Por su tamano, el modelo tambien deberia ejecutarse en GPUs NVIDIA de consumo como RTX 3060, 4060 o superiores.
-- Cabe en GPU de consumo: si, con cuantizacion GGUF de 4 bits o superior en GPUs con 4-8 GB de VRAM.
-- Opciones de despliegue: transformers, text-generation-inference (tag `text-generation-inference`), endpoints compatibles (tag `endpoints_compatible`), Ollama (mencionado en la model card), llama.cpp mediante GGUF y DirectML.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 6-7 GB en FP16 para los 3.2 mil millones de parámetros; alrededor de 2-3 GB en cuantización de 4 bits (estimación basada en el tamaño del modelo, no en mediciones publicadas).
+- GPU recomendadas: el autor cita explícitamente una AMD Radeon RX 7600 XT (16 GB) con aceleración DirectML. Cualquier GPU con al menos 6 GB de VRAM debería poder ejecutar el modelo en FP16; con cuantización, GPUs de 4 GB podrían ser suficientes.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas de gama media y alta, y en cuantización GGUF incluso en equipos con 4-8 GB de VRAM.
+- Opciones de despliegue: transformers, llama.cpp (por los pesos GGUF publicados), Ollama (el autor incluye una insignia "Ollama Ready"), y text-generation-inference (etiqueta `text-generation-inference` presente en el repo).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| sovereign-anthology-gemma-2-2b | 3,2B | 8192 (heredado, sin confirmar) | gemma | Hugging Face (0 descargas) |
-| google/gemma-2-2b-it (base) | 2,6B aprox. | 8192 | gemma | Hugging Face |
-| Gemma 2 2B (modelo original) | 2,6B aprox. | 8192 | gemma | Hugging Face |
-| Modelos 1-3B de la misma categoria (Qwen2.5, Llama 3.2) | 1-3B | 32k-128k (segun version) | Apache 2.0 / Llama | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Sovereign Anthology Gemma 2 2B | 3.204.165.888 | no disponible | Gemma | Hugging Face, GGUF incluido | Ajuste fino de nicho sobre Gemma 2 2B IT; sin benchmarks publicados |
+| google/gemma-2-2b-it | 2.6 mil millones aprox. | 8.192 tokens (según documentación de Google) | Gemma | Hugging Face, gated | Modelo base oficial; benchmarks publicados por Google |
+| Qwen2.5-1.5B-Instruct | 1.5 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de tamaño similar, licencia permisiva, multilingüe |
+| Llama 3.2 1B Instruct | 1.2 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar con contexto largo |
 
-No se dispone de datos de rendimiento comparativo entre estas alternativas. La comparacion se limita a parametros, contexto y licencia; los datos de los modelos alternativos corresponden a especificaciones publicas generales y no a un benchmark ejecutado sobre este ajuste.
+La comparación con el modelo base es la más relevante: cualquier evaluación de capacidades del ajuste fino debería contrastarse contra google/gemma-2-2b-it, extremo que la model card no realiza.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles. Al entrenarse sobre manuales desclasificados de agencias estadounidenses, cabe esperar una fuerte impronta cultural y burocratica anglosajona, aunque el autor no lo documenta.
-- Riesgo de alucinacion: elevado por tratarse de un modelo de 2-3B parametros ajustado sobre contenido doctrinal; el propio autor advierte contra forzar la memorizacion de hechos historicos, que considera fuente de contaminacion y confusion cronologica.
-- Limitaciones de contexto: ventana no confirmada en la informacion disponible; el idioma de trabajo es unicamente el ingles.
-- Restricciones de licencia: se rige por los Gemma Terms of Use, que imponen condiciones de uso (incluidas obligaciones de atribucion y restricciones de uso aceptable). No es una licencia de codigo abierto permisiva; conviene revisar los terminos antes de uso comercial.
-- Caveats para produccion: el repositorio tiene 0 descargas y 1 like, sin resultados de evaluacion publicados, por lo que carece de validacion independiente. La fecha de creacion (2026-09-20) es posterior a la fecha habitual de despliegue y conviene verificar la integridad del repositorio antes de integrarlo.
-- El flujo de dos capas (RAG externo para hechos + modelo para razonamiento) exige montar infraestructura adicional (base vectorial y grafo de conocimiento); el modelo por si solo no cubre la capa de evidencia.
-- Las afirmaciones de la model card sobre marcos operativos (ACH, Palantir, NSA, AAR) proceden del autor y no estan respaldadas por evaluaciones publicas.
+- Ausencia total de benchmarks: no hay métricas publicadas que respalden las capacidades declaradas (ACH, triaje, protocolos operativos). Las afirmaciones de la model card son descriptivas y no verificables.
+- Riesgo de alucinación elevado en el dominio declarado: un modelo de 2B parámetros no tiene capacidad suficiente para razonamiento estratégico complejo de forma fiable; la terminología de inteligencia puede producir respuestas con apariencia de rigor pero sin fundamento.
+- Sesgos conocidos: no documentados por el autor; se heredan los del modelo base Gemma 2, que Google documenta en su model card.
+- Limitación de idioma: solo inglés según el campo `language`; el rendimiento en castellano no está garantizado ni evaluado.
+- Restricciones de licencia: la licencia Gemma impone condiciones de uso, obligaciones de atribución y restricciones de uso comercial que deben revisarse antes de cualquier despliegue en producción.
+- Terminología y atribuciones cuestionables: las referencias a Palantir, la CIA, la NSA y el FBI son afirmaciones del autor sobre el origen del material de entrenamiento; no hay evidencia pública que las respalde ni afiliación institucional alguna.
+- Contexto no confirmado: la longitud de contexto no se especifica en la información disponible; debe verificarse en la configuración del checkpoint antes de usarlo en tareas de contexto largo.
+- Idoneidad para producción: no recomendado para decisiones de alto impacto sin supervisión humana y sin una evaluación independiente previa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/KolmogorovAcc/sovereign-anthology-gemma-2-2b
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
-- Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
+- Términos de licencia Gemma: https://ai.google.dev/gemma/terms
+- Repositorio de Antigravity (citado por el autor): https://github.com/google-deepmind
+- AMD Radeon (hardware citado por el autor): https://www.amd.com
 - Ollama: https://ollama.com
-- AMD: https://www.amd.com
-
-Los resultados de busqueda web disponibles no guardan relacion con el modelo (versan sobre el distrito de Chaoyang de Pekin) y no aportan informacion adicional util.

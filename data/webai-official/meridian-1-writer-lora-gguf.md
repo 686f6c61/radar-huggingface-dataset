@@ -2,112 +2,103 @@
 
 ## Resumen
 
-Meridian-1-writer-lora-GGUF es un adaptador LoRA en formato GGUF para el modelo Meridian-1, un fine-tune de google/gemma-4-12B-it desarrollado por webAI-Official. El adaptador implementa la "persona writer": un rol especializado en generar prosa acabada con una voz, formato y estilo especificados, devolviendo siempre un objeto JSON estructurado con campos `persona`, `spec` y `body`. No es un modelo completo, sino un delta de pesos de rango 16 que se carga sobre una instancia GGUF de Meridian-1 en llama.cpp.
+Meridian-1-writer-lora-GGUF es un adaptador LoRA en formato GGUF publicado por webAI-Official para el modelo anfitrion Meridian-1, un modelo propietario cuyos pesos no se distribuyen publicamente. El repositorio contiene unicamente el adaptador, no el modelo base: se trata de un artefacto de personalizacion que ajusta el comportamiento del modelo anfitrion hacia una persona concreta denominada "writer", orientada a la produccion de prosa acabada con voz, formato y estilo especificados.
 
-El repositorio contiene únicamente el adaptador en precisión f16 (~130 MB), no los pesos base. Segun los metadatos de safetensors, el modelo base tiene 65.011.712 parametros, aunque la model card describe Meridian-1 como un fine-tune de gemma-4-12B-it; esta discrepancia entre el recuento de parametros reportado y el nombre del modelo base conviene tenerla en cuenta.
+El adaptador esta entrenado mediante SFT (supervised fine-tuning) sobre el prompt de sistema exacto que define la persona y sobre un contrato de salida en JSON con campos obligatorios (`persona`, `spec`, `body`). Su relevancia actual no reside en la arquitectura del modelo (que no se publica), sino en el patron de distribucion: se libera el adaptador como capa de comportamiento mientras se retiene el modelo anfitrion, algo habitual en despliegues comerciales cerrados. El unico artefacto publicado es un fichero GGUF de aproximadamente 130 MB en f16, con rango LoRA 16.
 
-La relevancia de esta ficha es acotada: se trata de un adaptador de nicho con 11 descargas y sin likes, orientado a pipelines de generacion de prosa controlada. Su valor tecnico esta en el contrato de persona estricto y en los datos de evaluacion publicados (suite de 720 casos held-out), que muestran ganancias sustanciales frente al modelo base con el mismo prompt de rol.
+La model card reporta una mejora sustancial frente al modelo anfitrion con el mismo prompt de rol en una suite de 720 casos retenidos: 91,4 % de tasa de cumplimiento global del contrato frente a 59,3 %, y 90,6 % de rechazo correcto de peticiones fuera de alcance frente a 36,7 %. Estos datos provienen exclusivamente de la evaluacion interna del autor y no han sido replicados de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre transformer decoder (gemma-4-12B-it); rango 16, alpha 32, dropout 0.05 |
-| Parametros totales | 65.011.712 (segun safetensors del modelo base referenciado) |
+| Arquitectura | Adaptador LoRA (rango 16) sobre modelo anfitrion Meridian-1 (arquitectura del anfitrion no disponible) |
+| Parametros totales | 65.011.712 (segun metadatos safetensors del repositorio) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (max seq len de entrenamiento: 8192) |
-| Tipos de cuantizacion | adaptador en f16; el modelo base admite cuantizaciones GGUF (Q8_0 usada en el ejemplo) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | f16 (unico fichero publicado) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (adaptador LoRA); existe version PEFT en el repo hermano |
-
-Modulos objetivo del adaptador: `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj`.
+| Licencia | propietaria (webAI, Inc.; todos los derechos reservados) |
+| Formato de pesos | GGUF (adaptador LoRA), con build equivalente en PEFT |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre Meridian-1, un fine-tune de google/gemma-4-12B-it con la misma arquitectura y nombres de tensores. El LoRA tiene rango 16, alpha 32 y dropout 0.05, y cubre los siete modulos de atencion y MLP habituales. El entrenamiento fue SFT puro (la ejecucion DPO de esta persona no se conservo): 9.901 ejemplos, 2 epocas, learning rate 1e-4, longitud de secuencia maxima 8192, paso final 1238, perdida de entrenamiento 0.1680 y de evaluacion 0.1885.
+El artefacto es un adaptador LoRA de rango 16 convertido desde el adaptador PEFT original mediante `convert_lora_to_gguf.py` de llama.cpp (commit 5cdadfc). No se publica informacion sobre la arquitectura interna del modelo anfitrion Meridian-1, ni sobre su numero de capas, dimensiones ocultas o mecanismo de atencion. El tag `gemma4` presente en el repositorio sugiere una familia de arquitectura subyacente, pero no se confirma en la model card.
 
-Los objetivos de SFT son respuestas del propio gemma-4-12B-it con el prompt de rol, filtradas contra el contrato de persona y la verdad de referencia mediante un juez que elige la mejor de tres candidatas validas; un 4% de las respuestas, para peticiones que no pasaban los filtros, provienen de Granite 4.2 30B (con razonamiento limitado a 12.000 caracteres). Posteriormente el adaptador se reajusto sobre Meridian-1 durante 1 epoca con los mismos 9.901 ejemplos y learning rate 2e-5, partiendo del adaptador original: paso final 619, perdida de entrenamiento 0.1676 y de evaluacion 0.1944. La conversion a GGUF se hizo con `convert_lora_to_gguf.py` de llama.cpp (commit 5cdadfc).
+El entrenamiento es SFT sobre ejemplos que utilizan un prompt de sistema fijo y un contrato de salida JSON. La model card indica explicitamente que los datos de entrenamiento, hiperparametros, mezcla de profesores y metricas intermedias son internos y no se divulgan. No se menciona RLHF, DPO ni tecnicas de decodificacion especulativa. El adaptador esta calibrado para `enable_thinking: false` y un presupuesto de generacion de hasta 2048 tokens nuevos, con ajustes de muestreo de temperatura 1.0, top-p 0.95 y top-k 64.
 
 ## Capacidades
 
-- Generacion de prosa acabada en una voz, formato y estilo especificados por el usuario.
-- Salida estructurada garantizada: un unico objeto JSON con campos obligatorios `persona` (siempre `"writer"`), `spec` y `body`; campos opcionales `deviations` y `handoff`.
-- Cumplimiento estricto de un contrato de persona, incluida la negativa correcta a peticiones fuera de alcance (90,6% en la suite de evaluacion).
-- Mantenimiento del rol bajo presion adversarial (91,1% de exito en los casos de la suite).
-- Modo de razonamiento desactivado (`enable_thinking: false`), tal como se entreno.
-- Presupuesto de generacion de hasta 2.048 tokens nuevos por respuesta.
-- No soporta tool calling, vision, audio ni razonamiento multi-paso de forma nativa segun la informacion disponible.
-- Capacidades multilingues: no disponibles.
+- Generacion de prosa acabada en una voz, formato y estilo especificados por el usuario, dentro de la persona "writer".
+- Salida estructurada garantizada como un unico objeto JSON con campos `persona`, `spec` y `body`, y campos opcionales `deviations` y `handoff`.
+- Rechazo explicito de peticiones fuera del alcance definido para la persona (capacidad medida en la evaluacion interna).
+- Mantenimiento del rol bajo presion adversarial (capacidad medida en la evaluacion interna).
+- Gestion de peticiones generales dentro del rol asignado.
+- Modo de pensamiento desactivado de forma fija (`enable_thinking: false`).
+- No se documentan capacidades de tool calling, function calling, agentes multi-paso, vision, audio ni multilingues.
 
 ## Casos de uso
 
-- Generacion de copy de marketing con voz de marca fija: el adaptador recibe una especificacion de tono y formato y devuelve un JSON con el cuerpo del texto, lo que permite integrarlo en un CMS sin parseo fragil.
-- Redaccion de articulos y notas de prensa en pipelines editoriales: el contrato de persona y el campo `deviations` permiten auditar cuando el modelo se aparta de la especificacion solicitada.
-- Produccion de descripciones de producto a escala: la salida JSON estructurada encaja directamente en un esquema de base de datos o en un sistema de publicacion automatizada.
-- Generacion de guiones y textos narrativos con estilo controlado: el campo `spec` documenta la voz aplicada, util para mantener consistencia entre lotes de generacion.
-- Moderacion de alcance en asistentes de escritura: la alta tasa de negativa correcta a peticiones fuera de alcance (90,6%) lo hace adecuado para sistemas donde el modelo solo debe responder dentro de su dominio.
-- Evaluacion de calidad de prosa en pipelines de investigacion: los datos de la suite de contrato permiten reproducir la comparacion adaptador frente a modelo base con el mismo prompt de rol.
-- Despliegue local en llama.cpp: al ser un adaptador de ~130 MB sobre un GGUF base, se puede servir con `llama-server` y `--lora` en entornos sin GPU de gran capacidad, segun la cuantizacion del modelo base.
+- Redaccion editorial con estilo controlado: el adaptador produce prosa ajustada a una voz y formato concretos y devuelve el resultado en un JSON parseable, lo que permite integrarlo en un CMS o pipeline editorial que consuma el campo `body` de forma programatica.
+- Generacion de contenido de marketing con plantillas: el campo `spec` del contrato de salida permite transportar la especificacion de formato (longitud, tono, estructura) junto al texto, facilitando la validacion automatica posterior.
+- Moderacion de alcance en asistentes de redaccion: la mejora medida en rechazo de peticiones fuera de alcance (90,6 % frente a 36,7 %) lo hace util para contener un asistente dentro de su dominio y evitar respuestas no solicitadas.
+- Enrutamiento con `handoff`: el campo opcional `handoff` permite derivar peticiones que exceden el alcance de la persona hacia otro componente del sistema, habilitando arquitecturas multi-persona sobre el mismo modelo anfitrion.
+- Evaluacion de personas y contratos de salida: sirve como referencia para comparar el comportamiento de un modelo anfitrion con y sin adaptador bajo un mismo prompt de rol, usando la suite de 720 casos descrita.
+- Prototipado interno de flujos de generacion con llama.cpp: al cargarse como LoRA GGUF sobre un binario de llama.cpp con `--jinja`, permite iterar sobre el prompt de sistema y la escala del adaptador (`--lora-scaled`) sin reentrenar.
+- Despliegue en entornos autorizados: para equipos con acceso al GGUF interno de Meridian-1, el adaptador se integra en `llama-server` con un unico flag adicional.
 
 ## Benchmarks y rendimiento
 
-Suite de contrato de persona sobre 720 casos held-out, adaptador frente a Meridian-1 con el mismo prompt de rol (temperatura 1.0, top-p 0.95, top-k 64). Porcentajes.
+Resultados de la suite de contrato de persona (720 casos retenidos, adaptador frente a Meridian-1 con el mismo prompt de rol, muestreo a temperatura 1.0, top-p 0.95, top-k 64). Porcentajes:
 
 | Metrica | Adaptador | Meridian-1 (con prompt de rol) | Ganancia (pts) |
 |---|---:|---:|---:|
 | Tasa global de cumplimiento del contrato | 91,4 | 59,3 | +32,1 |
 | Envoltorio de salida de persona valido | 99,2 | 93,3 | +5,8 |
 | Tareas en alcance superadas | 86,7 | 76,7 | +10,0 |
-| Negativa correcta a peticiones fuera de alcance | 90,6 | 36,7 | +53,9 |
-| Mantiene el rol bajo presion adversarial | 91,1 | 51,7 | +39,4 |
-| Peticiones generales gestionadas en rol | 97,2 | 72,2 | +25,0 |
+| Rechazo correcto de peticiones fuera de alcance | 90,6 | 36,7 | +53,9 |
+| Mantenimiento del rol bajo presion adversarial | 91,1 | 51,7 | +39,4 |
+| Peticiones generales gestionadas dentro del rol | 97,2 | 72,2 | +25,0 |
 
-Trabajo propio sobre items held-out, adaptador frente a Meridian-1 con el mismo prompt de rol (intervalo bootstrap pareado al 95%):
+Evaluacion sobre items retenidos propios del adaptador (intervalo bootstrap pareado al 95 %):
 
-| Tarea | Adaptador | Meridian-1 (con prompt de rol) | Ganancia (pts) | Intervalo 95% | Items |
+| Tarea | Adaptador | Meridian-1 (con prompt de rol) | Ganancia (pts) | Intervalo 95 % | Items |
 |---|---:|---:|---:|---|---:|
 | Brief cumplido (puntos requeridos, longitud, nada inventado) | 95,4 | 88,7 | +6,6 | +1,3 a +11,9 | 151 |
 
-Nota del autor: la evaluacion se realizo con vLLM sobre los pesos PEFT, no con llama.cpp sobre el GGUF; aun no se ha probado con llama.cpp sobre Meridian-1.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Todos los datos anteriores proceden de la evaluacion interna del autor y no consta replicacion independiente.
 
 ## Requisitos de hardware
 
-- El adaptador en si ocupa ~130 MB en f16; el requisito real lo marca el modelo base Meridian-1.
-- VRAM estimada para el modelo base: no disponible en la informacion proporcionada; depende de la cuantizacion GGUF elegida (el ejemplo de la model card usa Q8_0).
-- GPU recomendadas: no disponibles. La model card no especifica requisitos de GPU.
-- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible.
-- Despliegue: llama.cpp (`llama-server` con `--lora` o `--lora-scaled` y `--jinja`); la evaluacion se hizo con vLLM sobre pesos PEFT.
+- El adaptador pesa aproximadamente 130 MB en f16 y requiere el GGUF del modelo anfitrion Meridian-1, que no se distribuye publicamente; los requisitos de VRAM dependen por completo del anfitrion y no estan disponibles.
+- No es posible estimar VRAM de inferencia, GPU recomendadas ni encaje en GPU de consumo sin conocer el tamano y la cuantizacion del modelo anfitrion.
+- Despliegue documentado: `llama-server` de llama.cpp con `-m "$MERIDIAN_1_GGUF" --lora Meridian-1-writer-lora-f16.gguf --jinja`, y `--max-lora-rank 16` al servir.
+- Ajuste de fuerza del adaptador mediante `--lora-scaled Meridian-1-writer-lora-f16.gguf <scale>`.
 - Latencia y throughput: no disponibles.
+- Opciones alternativas (vLLM, TGI, Ollama) no estan documentadas para este artefacto; la build PEFT podria usarse con frameworks que carguen adaptadores PEFT, pero no se detalla.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas con otros adaptadores de persona en la informacion proporcionada. La unica comparacion publicada es contra el propio modelo base con prompt de rol, recogida en la seccion de benchmarks. Alternativas comparables (otros LoRA de persona sobre gemma-4-12B-it o sobre Meridian-1): no disponibles.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| Meridian-1-writer-lora-GGUF | adaptador LoRA (base 65.011.712 segun safetensors) | no disponible | no disponible | GGUF | Hugging Face |
-| Meridian-1-writer-lora-peft | mismos pesos en PEFT | no disponible | no disponible | PEFT | Hugging Face |
-| gemma-4-12b-it-writer-lora-peft | adaptador LoRA sobre gemma-4-12B-it | no disponible | no disponible | PEFT | Hugging Face |
+No disponible. No se conocen adaptadores LoRA publicos comparables de la misma familia ni se dispone de datos sobre modelos de la misma categoria con parametros, contexto y licencia verificables en la informacion proporcionada. La comparacion interna relevante es la del propio adaptador frente al modelo anfitrion Meridian-1 con prompt de rol, recogida en la seccion de benchmarks.
 
 ## Limitaciones y advertencias
 
-- El adaptador solo funciona correctamente con el system prompt exacto documentado, incluido el salto de linea antes de `Respond with a single JSON object.`; fuera de esa distribucion de entrenamiento su comportamiento no esta garantizado.
-- Requiere `enable_thinking: false`; activar el razonamiento lo saca de las condiciones de entrenamiento.
-- No se ha probado con llama.cpp sobre Meridian-1: la evaluacion publicada es de vLLM con los pesos PEFT, por lo que el rendimiento del GGUF puede diferir.
-- Licencia no disponible: no se puede confirmar el uso comercial. Ademas, al derivar de gemma-4-12B-it, quedaria sujeto a las condiciones del modelo base.
-- Idiomas soportados no disponibles; no hay evidencia de cobertura multilingue.
-- Riesgo de alucinacion: la metrica de "brief met" incluye "nada inventado" con un 95,4% en 151 items, lo que implica un margen de error no nulo en la fidelidad al material de partida.
-- El adaptador no incorpora DPO (la ejecucion se descarto), por lo que la alineacion depende exclusivamente del SFT.
-- Presupuesto de generacion limitado a 2.048 tokens nuevos; textos mas largos requeriran truncado o generacion por partes.
-- Modelo de nicho con 11 descargas y 0 likes: sin validacion independiente por parte de la comunidad.
-- Discrepancia entre el recuento de parametros de safetensors (65 millones) y la denominacion gemma-4-12B-it del modelo base; conviene verificar el modelo base real antes de desplegar.
+- El modelo anfitrion Meridian-1 es propietario y sus pesos no se publican; el adaptador no es utilizable de forma autonoma y su uso esta restringido a personal autorizado segun la model card.
+- Licencia propietaria de webAI, Inc. con todos los derechos reservados: no se concede uso comercial general, redistribucion ni modificacion sin autorizacion expresa.
+- El adaptador queda fuera de su distribucion de entrenamiento si no se envia el prompt de sistema exacto, incluido el salto de linea antes de `Respond with a single JSON object.`; omitirlo degrada el comportamiento de forma no cuantificada.
+- El contrato de salida exige un unico objeto JSON; no se documenta comportamiento ante prompts que soliciten otros formatos.
+- Modo de pensamiento desactivado de forma fija; no se recomienda activarlo.
+- Datos de entrenamiento, hiperparametros y composicion del dataset no divulgados, lo que impide auditar sesgos o procedencia de datos.
+- Riesgo de alucinacion no evaluado de forma independiente; la metrica de "brief cumplido" incluye "nada inventado", pero solo sobre 151 items y con ganancia de +6,6 puntos e intervalo inferior de +1,3.
+- Idiomas soportados no documentados; no hay evidencia de cobertura multilingue.
+- Longitud de contexto del anfitrion no disponible; el presupuesto de generacion documentado es de 2048 tokens nuevos.
+- Resultados de evaluacion proceden unicamente del autor; no consta replicacion externa ni comparacion con benchmarks estandar.
+- El tag `gemma4` sugiere una arquitectura subyacente no confirmada oficialmente; no debe asumirse compatibilidad con otros modelos de esa familia.
 
 ## Enlaces
 
-- Hugging Face del adaptador GGUF: https://huggingface.co/webAI-Official/Meridian-1-writer-lora-GGUF
-- Modelo base Meridian-1: https://huggingface.co/webAI-Official/Meridian-1
-- Version PEFT del adaptador: https://huggingface.co/webAI-Official/Meridian-1-writer-lora-peft
-- Adaptador original sobre gemma-4-12B-it: https://huggingface.co/webAI-Official/gemma-4-12b-it-writer-lora-peft
-- Modelo base de Google: https://huggingface.co/google/gemma-4-12B-it
-- Script de conversion de llama.cpp: `convert_lora_to_gguf.py` (commit 5cdadfc)
+- Repositorio Hugging Face: https://huggingface.co/webAI-Official/Meridian-1-writer-lora-GGUF
+- Build PEFT del adaptador: https://huggingface.co/webAI-Official/Meridian-1-writer-lora-peft
+- Modelo base referenciado: https://huggingface.co/webAI-Official/Meridian-1
+- Script de conversion de llama.cpp: `convert_lora_to_gguf.py` (commit 5cdadfc), en https://github.com/ggml-org/llama.cpp
+- Paper, blog, demo o repositorio adicionales: no disponibles en la informacion proporcionada.

@@ -96,31 +96,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "moondream/parakeet-redux · Hugging Face",
-      "url": "https://huggingface.co/moondream/parakeet-redux",
-      "snippet": "moondream / parakeet-redux Like 29 Follow moondream 3.31k Automatic Speech Recognition Safetensors 25 languages parakeet_tdt ternary parakeet tdt speech-recognition cpu apple-silicon 8-bit precision License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new parakeet-redux Usage Performance How this was measured x86 ..."
-    },
-    {
-      "title": "Introducing Moondream Parakeet Redux and Parakeet Ultra",
-      "url": "https://moondream.ai/blog/introducing-parakeet-redux-and-ultra",
-      "snippet": "Meet Moondream Parakeet Redux and Parakeet Ultra: speech-to-text models for local transcription in 25 languages, on CPUs and GPUs."
-    },
-    {
-      "title": "warped-community/parakeet-tdt-0.6b-litert-lm · Hugging Face",
-      "url": "https://huggingface.co/warped-community/parakeet-tdt-0.6b-litert-lm",
-      "snippet": "Instructions to use warped-community/parakeet-tdt-.6b-litert-lm with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Parakeet Redux: is a 178 MB speech model useful in the real world?",
-      "url": "https://abhashchakraborty.tech/writing/how-small-can-speech-recognition-get",
-      "snippet": "5 Oct 2026 · 13 min read · Machine learning Parakeet Redux: is a 178 MB speech model useful in the real world? Moondream squeezed NVIDIA&#x27;s Parakeet TDT 0.6B v3 into 178 MB with ternary weights. I tested it against its original, five other open models and three cloud APIs on a laptop and a Tesla T4: what it keeps, what it gives up, and where it&#x27;s worth using."
-    },
-    {
-      "title": "GitHub - 47thtechcorner/RayCodes_Parakeet_Redux: Parakeet Redux: Nvidia ...",
-      "url": "https://github.com/47thtechcorner/RayCodes_Parakeet_Redux",
-      "snippet": "A lightweight, private speech-to-text application powered by moondream/parakeet-redux. Automatically converts uploaded video or audio files into timestamped text transcripts locally on your computer at 113× real-time speed."
-    }
-  ]
+  "sources": []
 }

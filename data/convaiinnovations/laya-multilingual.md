@@ -2,98 +2,110 @@
 
 ## Resumen
 
-Laya Multilingual es un modelo de clasificación y decisión tipada desarrollado por Convai Innovations (convaiinnovations) dentro de la familia Laya. Se trata de un encoder no autorregresivo basado en mmBERT-base con 322 millones de parámetros, diseñado para recibir un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devolver respuestas tipadas con probabilidades calibradas en un único forward pass. No genera texto, por lo que no hay nada que parsear ni margen para alucinaciones en el sentido generativo clásico.
+Laya Multilingual es un modelo de clasificación de texto no autorregresivo desarrollado por ConvAI Innovations, diseñado como un "modelo de decisión de Sistema 1". A diferencia de los LLM generativos, recibe un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades en un único paso forward, sin generar texto libre. Esto elimina el parseo de salidas y reduce drásticamente el riesgo de alucinación, ya que el modelo no inventa contenido: selecciona entre opciones predefinidas.
 
-El modelo cubre más de 100 idiomas y está pensado como el checkpoint de referencia de la familia para todo lo que no sea inglés; el checkpoint `laya` original usa ModernBERT-large (421M parámetros), mientras que esta variante usa mmBERT-base (322M) y es aproximadamente el doble de rápida, con una ventana nominal de 1.024 tokens ampliable a 8.192. Su propuesta encaja en el patrón que el autor denomina "System 1": decisiones rápidas, calibradas y estructuradas, orientadas a enrutado, guardarraíles y moderación en pipelines de producción.
+El modelo se construye sobre un encoder mmBERT-base de 322 millones de parámetros y está pensado para cubrir más de 100 idiomas, siendo el checkpoint recomendado de la familia Laya para cualquier caso que no sea inglés. Su contexto nominal es de 1.024 tokens, aunque puede extenderse hasta 8.192 pasando `max_len=8192`, lo que permite procesar documentos largos como contratos o hilos de conversación completos.
 
-La relevancia actual del modelo está en su enfoque de decisiones calibradas multilingües: frente a los LLM generativos, que requieren parseo y presentan riesgo de alucinación, Laya devuelve etiquetas con probabilidad en una sola pasada. La licencia Apache 2.0 y su tamaño contenido (0,7 GB de repositorio) lo hacen desplegable en infraestructura modesta, incluidas GPUs de consumo.
+Su relevancia actual radica en que ofrece una alternativa determinista y de coste constante frente a los LLM generativos para tareas de enrutamiento, guardrails, moderación y clasificación multilingüe. Además, incorpora mecanismos de calibración de riesgo (abstain, prediction_set, unbound, route) y aprendizaje continuo a partir de respuestas confirmadas, sin necesidad de fine-tuning completo. La licencia Apache 2.0 facilita su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer no autorregresivo (mmBERT-base) |
-| Parámetros totales | 321.908.998 |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Encoder transformer no autorregresivo (mmBERT-base) con motor de decisión sobre espacio de valles |
+| Parametros totales | 321.908.998 |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 1.024 tokens por defecto; hasta 8.192 con `max_len=8192` |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | Más de 100 idiomas, entre ellos en, de, fr, es, pt, it, nl, sv, da, nb, ru, pl, tr, ar, he, fa, ur, hi, bn, ta, te, kn, ml, th, vi, id, ms, tl, ja, ko, zh, el, hu, fi, ro, sq, sl, sw, af, cy, am, hy, ka, km, my, mn, lv, is, az, jv |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Más de 100 idiomas, incluyendo en, de, fr, es, pt, it, nl, sv, da, nb, ru, pl, tr, ar, he, fa, ur, hi, bn, ta, te, kn, ml, th, vi, id, ms, tl, ja, ko, zh, el, hu, fi, ro, sq, sl, sw, af, cy, am, hy, ka, km, my, mn, lv, is, az, jv |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (librería transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer no autorregresivo construido sobre mmBERT-base, con 322 millones de parámetros y una cabeza de clasificación que responde a preguntas tipadas. La interfaz de decisión admite tipos como `choice` (selección entre criterios definidos) y `noul` (pregunta booleana), devolviendo en cada caso una respuesta tipada acompañada de su probabilidad. El pipeline declarado en Hugging Face es `text-classification`.
+Laya Multilingual emplea un encoder mmBERT-base congelado como "lector" y un pequeño motor de decisión entrenado encima. El mecanismo se describe metafóricamente como un espacio de decisión donde cada respuesta candidata es un valle y la entrada es una partícula que rueda y se asienta en uno de ellos; la profundidad del asentamiento determina la probabilidad asignada. El proceso es determinista, de coste constante y no genera texto, lo que lo diferencia de los enfoques autoregresivos.
 
-La model card menciona calibración de decisiones (RLCD, "calibrated decisions") como parte del diseño, y el ecosistema incluye la posibilidad de entrenar motores de decisión propios mediante la herramienta Studio de Embedding Space, que genera un fichero de política firmado ejecutable localmente con `vegaml`. No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. La ventana de contexto nominal es de 1.024 tokens, ampliable a 8.192, y el modelo está optimizado para velocidad: según el autor, es aproximadamente el doble de rápido que el checkpoint inglés.
+El modelo forma parte de la familia Laya, que incluye un checkpoint en inglés sobre ModernBERT-large (421M parámetros, contexto 512) y un checkpoint para flujos de decisiones tipadas (421M, contexto 1.024). La versión multilingüe es aproximadamente el doble de rápida que la inglesa según la model card. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. El sistema soporta aprendizaje continuo mediante `laya.Learner`, que permite incorporar respuestas confirmadas por el equipo en segundos sobre CPU, sin reentrenar los pesos del encoder.
 
 ## Capacidades
 
-- Clasificación y enrutado multilingüe: asigna departamento, categoría o intención a partir de un estado textual, con más de 100 idiomas cubiertos.
-- Respuestas tipadas con probabilidad: devuelve elecciones (`choice`) y booleanos (`noul`) calibrados en un único forward pass, sin generación de texto.
-- Decisiones calibradas: las probabilidades están pensadas para umbrales operativos en producción (guardarraíles, moderación, enrutado).
-- Procesamiento de documentos largos: hasta 8.192 tokens con `max_len=8192`, útil para correos, tickets e hilos extensos.
-- Entrada estructurada: acepta estados en texto plano o JSON.
-- Enrutado automático de idioma: integración con `Router` para alternar entre el checkpoint inglés y este multilingüe según el script de la entrada.
-- Sin tool calling ni function calling en el sentido de los LLM generativos: la interfaz es de preguntas y respuestas tipadas.
-- Sin modo thinking, visión ni audio.
+- Clasificación de texto multilingüe en más de 100 idiomas con respuestas tipadas y probabilidades.
+- Decisiones no generativas: no produce texto libre, por lo que no hay salida que parsear ni contenido que alucinar.
+- Soporte de entradas multimodales en la versión 0.5: imágenes (`image=`), audio (`audio=`) y vídeo (`video=`) además de texto.
+- Contexto extendido hasta 73.728 tokens en la versión 0.5 del paquete, y hasta 8.192 tokens en este checkpoint con `max_len=8192`.
+- Mecanismo de abstención (`abstain`) con umbral calibrado para mantener la tasa de error por debajo del riesgo configurado (10% por defecto).
+- Conjunto conformal (`prediction_set`) a alpha 0.10, que indica si la respuesta es única (segura) o múltiple (ambigua).
+- Indicador `unbound` para detectar entradas fuera de distribución.
+- Enrutamiento (`route`) con valores `auto` o `review`, calibrable con etiquetas mediante `agent.fit` / `agent.calibrate`.
+- Aprendizaje continuo con `laya.Learner` a partir de respuestas confirmadas, sin fine-tuning.
+- Integración con cualquier LLM como lector subyacente, desde 0.8B hasta 27B parámetros.
+- Compatible con endpoints y despliegue en Azure según los tags del repositorio.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: el modelo recibe el cuerpo del ticket y una pregunta `choice` con criterios (facturación, técnico, ventas) y devuelve el departamento con probabilidad, lo que permite derivar automáticamente en más de 100 idiomas sin parsear texto generado.
-- Moderación y guardarraíles: preguntas booleanas (`noul`) sobre si un mensaje contiene una solicitud de reembolso, una queja o contenido que requiere revisión, con umbrales calibrados para reducir falsos positivos.
-- Triaje de correo entrante: clasificación de correos en categorías operativas usando la ventana ampliada a 8.192 tokens para hilos largos, con respuestas estructuradas listas para un sistema de gestión.
-- Atención al cliente multilingüe: detección de intención y departamento en conversaciones multi-turno, aprovechando la cobertura de idiomas y la velocidad (aproximadamente el doble que el checkpoint inglés) para servir peticiones en tiempo real.
-- Extracción de señales en pipelines de datos: clasificación de documentos JSON o texto en categorías tipadas para enriquecimiento de datasets y análisis, sin riesgo de alucinación generativa.
-- Enrutado de modelos en producción: uso del `Router` para decidir si una petición va al checkpoint inglés o a este multilingüe, manteniendo ambos residentes con `preload` para evitar intercambios en cada cambio de idioma.
-- Verificación de políticas internas: preguntas booleanas sobre si un texto cumple una política (por ejemplo, si solicita dinero), integrables en flujos de aprobación automatizada.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket y preguntas tipadas sobre categoría, urgencia o equipo destinatario, devolviendo la opción con probabilidad y una ruta `auto` o `review` según la calibración. Es adecuado porque cubre más de 100 idiomas y evita generar respuestas inventadas.
+- Guardrails y moderación de contenido: se plantean preguntas binarias o multiclase sobre toxicidad, spam o cumplimiento normativo, y el mecanismo de abstención deriva a revisión humana los casos ambiguos, manteniendo la tasa de error bajo el umbral configurado.
+- Clasificación de correos y documentos largos: con `max_len=8192` puede procesar contratos, hilos de correo o logs completos en una sola lectura, algo relevante para equipos legales o de compliance que necesitan etiquetar documentos extensos.
+- Análisis de conversaciones multilingües: al soportar decenas de idiomas, permite aplicar una misma plantilla de decisión a interacciones en español, alemán, árabe o japonés sin mantener modelos separados por idioma.
+- Extracción de decisiones estructuradas desde JSON: el modelo acepta estados en formato JSON y devuelve respuestas tipadas, lo que facilita integrarlo en pipelines de datos que necesitan clasificar registros sin un LLM generativo.
+- Aprendizaje continuo en producción: con `laya.Learner`, un equipo puede confirmar respuestas correctas y el modelo se actualiza en segundos sobre CPU (34 s para 300 respuestas en 8 hilos, 0,72 s por respuesta), lo que reduce el coste frente al fine-tuning clásico (89 s en GPU y reescritura de 421M pesos).
+- Detección de entradas fuera de distribución: el flag `unbound` permite identificar mensajes que no se parecen a los datos de entrenamiento, útil para monitorizar la deriva de datos en sistemas de clasificación desplegados.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre las 51 lenguas de MASSIVE, clasificación de intención con 20 opciones (aleatorio = 0,050), con preguntas idénticas para ambos checkpoints:
+La model card proporciona resultados de aprendizaje continuo sobre 14 plantillas de decisión (31 preguntas), evaluadas en 60 filas reservadas por plantilla:
 
-| Métrica | `laya` (inglés) | `laya-multilingual` |
-|---|---|---|
-| Exactitud macro | 0,227 | 0,366 |
-| ECE macro | 0,733 | 0,387 |
-| Lenguas que superan 3x el azar | 23 / 51 | 45 / 51 |
+| Sistema | Día uno | Tras 40 respuestas confirmadas | Tras 120 |
+|---|---|---|---|
+| laya con `laya.Learner` | 84,7% | 91,6% | 96,0% |
+| Jev 1.14 (respuestas confirmadas en sus criterios) | 89,5% | 91,5% | 92,6% |
 
-El autor señala además que el checkpoint inglés colapsa fuera del inglés manteniendo alta confianza: jemer con 0,000 de exactitud a 0,952 de confianza, hebreo 0,060, armenio 0,050 (exactamente azar) y bengalí 0,080. En documentos largos, de 20 peticiones se respondieron correctamente entre 16 y 18 con hasta unos 4.000 tokens de texto previo; más allá, los resultados varían entre 8 y 17 de 20. Una entrada de 4.000 tokens tarda aproximadamente 1,7 s en una GPU de Apple. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+En el escenario de aprendizaje desde un flujo de datos (noviembre de 2026, lector de 4B, filas reservadas):
+
+| Sistema | Resultado |
+|---|---|
+| laya en banking77, 924 filas reservadas tras 4.928 filas | 87,5%, ECE 0,028, ruta 92,5% |
+| Jev 1.14 | No disponible en el extracto |
+
+En precisión de documentos largos, 16 a 18 de 20 peticiones se respondieron correctamente con hasta unos 4.000 tokens de texto previo; más allá de esa longitud los resultados varían (8 a 17 de 20). Una entrada de 4.000 tokens tarda aproximadamente 1,7 s en una GPU de Apple. No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible, ya que el modelo no es generativo y no aplica a esas evaluaciones.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 0,7 GB en safetensors; en FP32 serían aproximadamente 1,3 GB de pesos, y en FP16 alrededor de 0,65 GB, más overhead de activaciones.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para FP16; A100, H100 o RTX 4090 no son necesarias por tamaño, pero aportan throughput en servidores.
-- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060 o superiores; también se ha probado en GPU de Apple (aproximadamente 1,7 s para 4.000 tokens).
-- Opciones de despliegue: `transformers`, paquete `laya` (`pip install laya`), endpoints compatibles y despliegue en Azure según los tags del repositorio. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: el autor indica que es aproximadamente 2x más rápido que el checkpoint inglés; la velocidad sigue la longitud real de la entrada, no el límite configurado. No se publican cifras de throughput agregado.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 322M parámetros en safetensors, la huella en precisión completa ronda los 1,3 GB, y en cuantizaciones de 8 o 4 bits sería menor, aunque no se documentan los formatos soportados.
+- GPU recomendadas: no se especifican modelos concretos; la model card menciona una GPU de Apple para la prueba de latencia de 1,7 s con 4.000 tokens.
+- Cabe en GPU de consumo: sí, por tamaño (322M parámetros), aunque no se detallan modelos concretos.
+- Aprendizaje continuo: 34 s para 300 respuestas en 8 hilos de CPU, 0,72 s por respuesta y 6,4 GB de RAM; en GPU, 40 ms por respuesta y 2 GB.
+- Opciones de despliegue: compatible con `transformers`, endpoints compatibles y despliegue en Azure según los tags; el paquete se instala con `pip install -U laya`.
+- Latencia y throughput: 1,7 s para una entrada de 4.000 tokens en GPU de Apple; el coste es constante por decisión y la velocidad sigue la longitud real de la entrada, no el límite de contexto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| `convaiinnovations/laya-multilingual` | 322M | 1.024 (hasta 8.192) | 100+ | Apache 2.0 | Decisiones tipadas no autorregresivas |
-| `convaiinnovations/laya` | 421M | 512 | Inglés | Apache 2.0 | Decisiones tipadas no autorregresivas |
-| `convaiinnovations/laya-typed-decisions` | 421M | 1.024 | No disponible | Apache 2.0 | Flujos de decisiones tipadas |
+| laya-multilingual | 322M | 1.024 (hasta 8.192) | 100+ | Apache 2.0 | Clasificación no generativa con calibración |
+| laya (inglés) | 421M | 512 | Inglés | Apache 2.0 | Clasificación no generativa con calibración |
+| laya-typed-decisions | 421M | 1.024 | No disponible | Apache 2.0 | Flujos de decisiones tipadas |
+| Jev 1.14 | No disponible | No disponible | No disponible | API alojada | Decisión con criterios, sin aprendizaje |
 
-No se dispone en la información proporcionada de comparaciones con otros modelos de clasificación multilingüe de terceros (por ejemplo, mBERT o XLM-R); por tanto, esa comparación se considera no disponible.
+Jev 1.14 lidera en el día uno (89,5% frente a 84,7%), empatan a 40 respuestas confirmadas y laya supera a Jev a las 120 (96,0% frente a 92,6%). Jev no puede enseñarse, solo recibe prompts, y es una API alojada con 364 ms por petición desde India. No se dispone de datos de otros modelos comparables de clasificación multilingüe en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre, por lo que no sirve para tareas de generación, resumen o diálogo abierto.
-- Riesgo de calibración fuera de dominio: aunque las probabilidades están calibradas, el autor advierte que la confianza del modelo no avisa cuando un checkpoint no puede leer su entrada; el enrutado por script se decide antes del forward pass precisamente por este motivo.
-- Documentos largos: por encima de unos 4.000 tokens la exactitud varía (8 a 17 de 20 en las pruebas del autor), por lo que conviene validar en datos propios.
-- Cobertura desigual por idioma: incluso en el checkpoint multilingüe, solo 45 de 51 lenguas de MASSIVE superan 3x el azar; el rendimiento no es uniforme.
-- Sesgos: no se documentan sesgos específicos en la información disponible; al ser un clasificador, puede heredar sesgos de los datos de entrenamiento no detallados.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las dependencias del paquete `laya` y del ecosistema Studio/`vegaml`.
-- Caveat de despliegue: `laya.load()` puede colgarse si TensorFlow está instalado por un deadlock del runtime abseil; se recomienda ejecutar con `USE_TF=0`.
-- Idiomas con escritura latina sin acentos (español, italiano, portugués, francés) y texto romanizado pueden llegar a este checkpoint a través del router; verificar el enrutado en cargas mixtas.
+- El contexto por defecto de 1.024 tokens trunca documentos largos; es necesario pasar `max_len=8192` para aprovechar el contexto extendido, y la precisión en documentos muy largos decae (8 a 17 de 20 aciertos más allá de 4.000 tokens).
+- El flag `unbound` no es fiable como único criterio de enrutamiento: se activó en el 71% de filas normales de banking77, por lo que enviaría la mayoría de respuestas correctas a revisión.
+- El umbral de abstención está calibrado por defecto a un riesgo del 10%; en producción conviene recalibrar con datos propios mediante `agent.fit` o `agent.calibrate`.
+- No se documentan sesgos conocidos, composición del dataset de entrenamiento ni evaluaciones de robustez por idioma.
+- El modelo no genera texto, por lo que no sirve para tareas de generación, resumen libre o diálogo abierto.
+- La versión 0.5 introduce soporte de imagen, audio y vídeo y contexto de 73.728 tokens, pero estos datos corresponden al paquete `laya` y no necesariamente a este checkpoint concreto; conviene verificar la compatibilidad.
+- Aunque la licencia Apache 2.0 permite uso comercial, no se detallan restricciones adicionales sobre los datos de entrenamiento del encoder mmBERT subyacente.
+- No se han publicado resultados en benchmarks estándar de razonamiento o generación, lo que dificulta la comparación directa con LLM convencionales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/convaiinnovations/laya-multilingual
 - Familia Laya: https://huggingface.co/convaiinnovations/laya
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions
-- Repositorio GitHub: https://github.com/NandhaKishorM/laya
-- Studio de Embedding Space: https://studio.embedding.in
-- Gráfico de exactitud en contexto largo: https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/long_context_8192.png
+- Repositorio GitHub del proyecto: https://github.com/NandhaKishorM/laya
+- Gráfico de precisión en contexto largo: https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/long_context_8192.png
+- Gráfico del mecanismo de decisión: https://raw.githubusercontent.com/NandhaKishorM/vegaml/main/assets/vega-valleys.svg
+- Logo del proyecto: https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png

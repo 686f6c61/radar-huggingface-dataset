@@ -2,54 +2,64 @@
 
 ## Resumen
 
-Spark-X2.6-1.7B es un modelo de lenguaje de razonamiento de 1,71 mil millones de parámetros desarrollado por el SparkLLM Team (XHToken), segundo modelo de la serie Spark-X2.6 tras la versión 4B. Este repositorio concreto es una conversión del modelo original al formato LiteRT-LM (`.litertlm`) de Google, realizada con litert-torch 0.9.3 para LiteRT-LM 0.19.0, y está pensada para ejecución en dispositivos edge: móviles y ordenadores de escritorio sin necesidad de servidores con GPU de datacenter.
+Spark-X2.6-1.7B es un modelo de lenguaje denso de 1,71 mil millones de parámetros desarrollado por el SparkLLM Team, publicado originalmente por XHToken y convertido al formato LiteRT-LM por la comunidad litert-community para su ejecución en dispositivos de borde (móviles, tablets y equipos de sobremesa). Es el segundo modelo de la serie Spark-X2.6, tras el Spark-X2.6-4B, y mantiene la arquitectura del Spark-X2.5-1.7B, obteniendo su mejora de capacidad principalmente mediante un post-entrenamiento refinado. Está diseñado como modelo de razonamiento: genera su cadena de pensamiento dentro de etiquetas `<think>…</think>` antes de emitir la respuesta final.
 
-El problema que resuelve es doble: por un lado, llevar un modelo de razonamiento compacto (piensa dentro de etiquetas `<think>…</think>` antes de responder) a hardware de consumo; por otro, hacerlo con un runtime optimizado que separa el razonamiento de la respuesta final mediante un canal `thought`, de modo que la salida visible al usuario queda limpia. La arquitectura es un decodificador denso de 28 capas que hereda el diseño de Spark-X2.5-1.7B, con las mejoras de capacidad procedentes del post-training.
+La arquitectura es un decoder transformer denso de 28 capas con tamaño oculto 2048, 8 cabezas de consulta y 2 cabezas KV de 256 dimensiones cada una, con atención de ventana deslizante de 512 tokens en tres de cada cuatro capas, puertas sigmoideas por cabeza en la salida de atención, MLPs con puerta y GELU exacto, y un vocabulario atado de 131.072 entradas. El contexto declarado en los ficheros es de 4.096 tokens (la caché KV que acompaña a los ficheros LiteRT-LM).
 
-Su relevancia actual radica en las cifras de rendimiento publicadas: 27,4 tokens/s en la GPU de un Galaxy S26 con el archivo int4-mlp y 51,4 tokens/s en un iPhone 18 Pro, con una degradación de precisión mínima respecto al modelo bf16 (GSM8K 82 frente a 84). La licencia Apache-2.0 permite uso comercial sin restricciones.
+La relevancia actual del modelo reside en su empaquetado: los ficheros `.litertlm` permiten ejecutar inferencia en GPU de teléfonos de gama alta (Galaxy S26, Pixel 11 Pro, iPhone 18 Pro) con velocidades de decodificación de entre 25 y 51 tokens por segundo, y una precisión en GSM8K de 80-82 puntos, a solo 2-4 puntos del modelo de referencia en bf16. Todo ello bajo licencia Apache-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decodificador denso (transformer), 28 capas, hidden size 2048, 8 cabezas de consulta y 2 de KV de 256 dimensiones |
-| Parametros totales | 1,71B |
-| Parametros activos | 1,71B (modelo denso, no MoE) |
-| Longitud de contexto | 4.096 tokens (capacidad de la caché KV de estos archivos) |
-| Tipos de cuantizacion | int8 dinámico por canal (todas las capas lineales y embedding); int4 blockwise-32 con OCTAV en proyecciones gate/up del MLP + int8 en atención, down projection, capa de salida y embedding |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer decoder denso con atención de ventana deslizante (3 capas SW de 512 por cada capa de atención completa), puertas sigmoideas por cabeza en la salida de atención, MLP con puerta y GELU exacto, vocabulario atado |
+| Parametros totales | 1,71 mil millones (1.7B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 4.096 tokens (caché KV de los ficheros LiteRT-LM) |
+| Tipos de cuantizacion | int4-mlp (atención int8; MLP gate/up int4 blockwise-32 OCTAV; MLP down y capa de salida int8; embedding int8 en sección propia) e int8 (dinámica por canal en todas las capas lineales y el embedding) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | .litertlm (LiteRT-LM), convertido desde el modelo base XHToken/Spark-X2.6-1.7B |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base original en formato no especificado |
+| Capas | 28 |
+| Tamano oculto | 2.048 |
+| Cabezas de atencion | 8 query, 2 KV (256 dimensiones por cabeza) |
+| Vocabulario | 131.072 entradas (atado) |
+| Tamano de ficheros | int4-mlp: 1.706 MB; int8: 1.836 MB |
+| Libreria | litert-lm |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura, heredada de Spark-X2.5-1.7B, combina atención completa con atención de ventana deslizante: por cada capa de atención completa hay tres capas con ventana deslizante de 512 tokens, lo que reduce el coste de la caché KV en contextos largos. Incluye puertas sigmoideas por cabeza en la salida de la atención, MLPs con GELU exacto y gated, y un vocabulario embebido (tied) de 131.072 entradas. El modelo es de razonamiento: genera su proceso de pensamiento dentro de `<think>…</think>` antes de producir la respuesta final, y los archivos de este repositorio declaran un canal `thought` para que LiteRT-LM mantenga el razonamiento separado de la respuesta.
+El modelo es un decoder transformer denso de 28 capas con tamaño oculto 2048. La atención emplea 8 cabezas de consulta y 2 cabezas KV de 256 dimensiones, con un patrón de tres capas de ventana deslizante de 512 tokens por cada capa de atención completa, lo que reduce el coste de la caché KV en secuencias largas. La salida de atención incorpora puertas sigmoideas por cabeza, y los MLPs usan puerta con GELU exacto. El vocabulario de 131.072 entradas está atado con la capa de salida.
 
-Sobre el entrenamiento del modelo base, la model card indica que mantiene la arquitectura de Spark-X2.5-1.7B y que la mejora de capacidad proviene de un post-training mejorado; no se han publicado detalles sobre el número de tokens de preentrenamiento, la composición del dataset ni el uso de RLHF/DPO en la información disponible. En cuanto a la conversión a LiteRT-LM, ambos archivos declaran activaciones fp32 en GPU y usan las operaciones compuestas de GPU de LiteRT-LM para las escrituras de la caché KV y los productos de atención; los pesos son los de la exportación int8/int4-mlp sin alteraciones. El tokenizer es el `tokenizer.json` original byte a byte, y la plantilla de chat reproduce byte-identicamente la del proveedor (54 renders verificados en transformers y LiteRT-LM 0.19.0).
+Según la model card del autor original, la arquitectura es idéntica a la del Spark-X2.5-1.7B y la mejora de capacidad proviene de un post-entrenamiento mejorado; no se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO. El modelo está entrenado como modelo de razonamiento: produce una cadena de pensamiento dentro de `<think>…</think>` antes de la respuesta, y los ficheros LiteRT-LM declaran un canal `thought` que permite al runtime separar el razonamiento de la respuesta final.
+
+La conversión a LiteRT-LM se realizó con litert-torch 0.9.3 para LiteRT-LM 0.19.0. Los ficheros declaran activaciones GPU en fp32 y usan operaciones compuestas GPU de LiteRT-LM para las escrituras de caché KV y los productos de atención; los pesos son los de la exportación int8/int4-mlp sin modificar. El tokenizador incluido es el `tokenizer.json` original byte a byte, y la plantilla de chat renderiza de forma idéntica a la `chat_template.jinja` del proveedor en 54 combinaciones de conversación, generación, modo de pensamiento y `reasoning_effort`.
 
 ## Capacidades
 
-- Generacion de texto con razonamiento explícito: el modelo piensa dentro de `<think>…</think>` antes de responder, con niveles de esfuerzo configurables (`reasoning_effort`: `high` por defecto, `low` para pensamientos más cortos, y posibilidad de desactivar el thinking por completo).
-- Razonamiento matematico: GSM8K 82/100 (int4-mlp) frente a 84 del modelo bf16 de referencia, evaluado con cadena de pensamiento 0-shot.
-- Aritmetica y tareas de conocimiento corto: 8/8 en un conjunto de pruebas de preguntas con respuesta única (aritmética, traducción, comparación decimal, antónimos, etc.).
-- Conversaciones multi-turno: verificado en pruebas de 3 turnos (plantar un dato, hacer aritmética, recordar el dato), con y sin filtrado de canales del runtime.
-- Soporte de plantilla de chat completa con mensajes de sistema, usuario y asistente, byte-identica a la del proveedor.
-- Ejecucion en dispositivo (on-device) en Android, iOS y Mac mediante LiteRT-LM, con backend GPU recomendado.
-- No hay informacion disponible sobre tool calling, function calling, capacidades de agente, visión, audio ni soporte multilingüe explícito.
+- Generación de texto y razonamiento multi-paso con cadena de pensamiento explícita en `<think>…</think>`.
+- Aritmética básica y problemas de matemáticas de primaria (GSM8K 80-82 puntos).
+- Razonamiento de sentido común: comparación de decimales, opuestos, días de la semana, rimas.
+- Traducción y respuesta a preguntas factuales breves (capitales, etc.).
+- Conversación multi-turno con retención de hechos plantados en turnos anteriores.
+- Control de esfuerzo de razonamiento mediante `reasoning_effort` (`low` / `high`), que reduce o amplía la longitud del pensamiento.
+- Separación del canal de pensamiento y la respuesta final mediante el canal `thought` declarado en los ficheros.
+- Tokenización robusta: 234 de 234 cadenas de prueba (tokens añadidos, marcadores de rol, Latin-1/Extended-A, emoji, CJK, dígitos, espacios) codificadas con los mismos ids que la librería `tokenizers`.
+- No se documenta soporte de tool calling, function calling, visión, audio ni capacidades de agente en la información disponible.
 
 ## Casos de uso
 
-- Asistentes offline en movil: gracias al formato `.litertlm` y al runtime LiteRT-LM, el modelo puede ejecutarse íntegramente en la GPU de un teléfono Android o iPhone sin conexión, con 27,4 tokens/s en Galaxy S26, adecuado para apps que no pueden enviar datos a la nube.
-- Chatbots con razonamiento privado: el canal `thought` separa el razonamiento de la respuesta, de modo que la app puede mostrar solo la respuesta final mientras el modelo resuelve problemas de aritmética o lógica internamente.
-- Resolucion de problemas matematicos en el borde: con GSM8K 82 y una caché KV de 4.096 tokens, sirve para calculadoras conversacionales, tutores de matemáticas o validación de cálculos en apps educativas.
-- Asistentes multi-turno con memoria de contexto: las pruebas de 3 turnos demuestran que retiene hechos plantados en turnos anteriores, útil para asistentes de productividad o toma de notas conversacionales.
-- Integracion en apps iOS y Android nativas: LiteRT-LM dispone de rueda Python para Android (PyPI) y build nightly para iOS (CLiteRTLM), lo que permite embeber el modelo en aplicaciones móviles con aceleración GPU.
-- Prototipado y pruebas en escritorio: en Mac alcanza 151,5 tokens/s en GPU con el archivo int8, lo que permite iterar prompts y plantillas de chat localmente antes de desplegar en móvil.
-- Traduccion y tareas linguisticas puntuales: el conjunto de verificación incluye una tarea de traducción resuelta correctamente, aunque sin datos publicados de benchmarks multilingües.
+- Asistente de razonamiento en el móvil sin conexión: el fichero int4-mlp se ejecuta en la GPU del Galaxy S26 a 27,4 tok/s y en la del iPhone 18 Pro a 51,4 tok/s, lo que permite un asistente conversacional local con privacidad total y sin coste de API.
+- Resolución de problemas aritméticos y de sentido común en aplicaciones educativas: con 8/8 aciertos en preguntas cortas de aritmética, capitales, traducción y comparación de decimales en GPU de móvil, es adecuado para tutores de primaria que necesitan respuestas verificables y razonadas.
+- Automatización de respuestas con trazabilidad del razonamiento: el canal `thought` permite registrar la cadena de pensamiento por separado de la respuesta, útil en auditoría de decisiones en asistentes de atención al cliente de baja latencia.
+- Procesamiento por lotes en equipos de sobremesa: en un Mac con GPU alcanza 147-151 tok/s, suficiente para clasificación, extracción de datos y generación de resúmenes en pipelines locales sin depender de la nube.
+- Conversación multi-turno con memoria de contexto corto: pasa la prueba de tres turnos (plantar un hecho, operar, recordarlo) en GPU y CPU, lo que sirve para chatbots de soporte con sesiones breves y contexto de hasta 4.096 tokens.
+- Prototipado e investigación de modelos de razonamiento en el borde: al ser Apache-2.0 y ejecutable con la CLI `litert-lm` en macOS (versiones 0.15.0 a 0.19.2), permite experimentar con decodificación, cuantización y plantillas sin infraestructura de servidor.
+- Aplicaciones de accesibilidad o traducción puntual en dispositivos sin conectividad: la tokenización verificada con emoji, CJK y Latin-1 Extended-A respalda el procesamiento de texto multilingüe de entrada, aunque el rendimiento por idioma no está documentado.
 
 ## Benchmarks y rendimiento
 
-GSM8K (primeras 100 preguntas de test, greedy, thinking activado, prompt 0-shot de cadena de pensamiento, 3.584 tokens de salida, Mac GPU con LiteRT-LM 0.19.0):
+GSM8K, primeras 100 preguntas del conjunto de test, greedy, pensamiento activado, prompt 0-shot de cadena de pensamiento que pide la respuesta como `#### <número>`, 3.584 tokens de salida, una conversación por pregunta. Las filas LiteRT-LM se ejecutaron en la GPU de un Mac con la API Python de LiteRT-LM 0.19.0; la referencia con transformers en MPS.
 
 | Configuracion | GSM8K |
 |---|---|
@@ -57,55 +67,63 @@ GSM8K (primeras 100 preguntas de test, greedy, thinking activado, prompt 0-shot 
 | LiteRT-LM int4-mlp | 82 (21 sin terminar) |
 | LiteRT-LM int8 | 80 (14 sin terminar) |
 
-Comparación pregunta por pregunta contra bf16: int4-mlp 77 correctas en ambos, 7 correctas solo en bf16, 5 correctas solo en int4-mlp; int8 78/6/2.
+Pruebas de corrección con 8 preguntas cortas de respuesta única (aritmética, capital, traducción, comparación de decimales, opuesto, días de la semana, rima), greedy, pensamiento activado, 2.048 tokens de salida:
 
-Velocidad de decodificacion (prompt de 1.024 tokens, 256 generados):
+| Dispositivo | int4-mlp | int8 |
+|---|---|---|
+| Mac CPU | 8/8 | 8/8 |
+| Mac GPU | 8/8 | 8/8 |
+| Galaxy S26 GPU | 8/8 | 8/8 |
+| Galaxy S26 CPU | no medido | 8/8 |
+| Pixel 11 Pro GPU | 8/8 | 8/8 |
+| Pixel 11 Pro CPU | 8/8 | 8/8 |
+| iPhone 18 Pro GPU | 8/8 | 8/8 |
+| iPhone 18 Pro CPU | 8/8 | 8/8 |
 
-| Dispositivo / archivo | Velocidad |
-|---|---|
-| Galaxy S26 GPU, int4-mlp | 27,4 tok/s |
-| Galaxy S26 GPU, int8 | 25,8 tok/s |
-| iPhone 18 Pro GPU, int4-mlp | 51,4 tok/s |
-| iPhone 18 Pro GPU, int8 | 51,5 tok/s |
-| Mac GPU, int8 | 151,5 tok/s |
-| Mac GPU, int4-mlp | 147,0 tok/s |
+Con `reasoning_effort` en `low` (Mac GPU, 1.792 tokens de salida): int8 8/8 con contexto 4.096; int4-mlp 7/8 tanto con contexto 2.048 como 4.096, fallando la pregunta de la rima con la respuesta "purple".
 
-No se han publicado resultados de MMLU, HumanEval ni otros benchmarks en la información disponible.
+Velocidad de decodificación (1.024 tokens de prefill, 256 generados, 2026-10-31):
+
+| Dispositivo | int4-mlp | int8 |
+|---|---|---|
+| Galaxy S26 GPU | 27,4 tok/s | 25,8 tok/s |
+| iPhone 18 Pro GPU | 51,4 tok/s | 51,5 tok/s |
+| Mac GPU | 147,0 tok/s | 151,5 tok/s |
 
 ## Requisitos de hardware
 
-- VRAM / memoria estimada: el archivo int4-mlp ocupa 1.706 MB y el int8 1.836 MB en disco; la memoria en ejecución será algo superior por las activaciones y la caché KV (4.096 tokens). No se publica la cifra exacta de RAM en uso.
-- Moviles: verificado en Galaxy S26 (GPU y CPU), Pixel 11 Pro (GPU y CPU) e iPhone 18 Pro (GPU y CPU, con el build nightly CLiteRTLM 0.19.0-20261029). No requiere GPU de datacenter.
-- Escritorio: verificado en Mac con la API Python de LiteRT-LM 0.19.0, tanto en GPU (151,5 tok/s) como en CPU.
-- Cabe en GPUs de consumo sin problema dado el tamaño del archivo (por debajo de 2 GB), aunque no hay mediciones publicadas para GPUs concretas como RTX 4090.
-- Despliegue: LiteRT-LM 0.19.0 (CLI `litert-lm run` y API Python `pip install litert-lm==0.19.0`); para iOS, el build nightly CLiteRTLM 0.19.0-20261029. No hay soporte documentado de vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Backend recomendado: GPU. En CPU se ha documentado un fallo de runtime (ver Limitaciones).
-- Latencia y throughput: 27,4 tok/s (Galaxy S26 GPU, int4-mlp) a 151,5 tok/s (Mac GPU, int8), según las mediciones publicadas.
+- VRAM/RAM estimada para inferencia: aproximadamente 1,7 GB para el fichero int4-mlp y 1,8 GB para el int8, más las activaciones fp32 en GPU y la caché KV para 4.096 tokens.
+- GPU recomendadas: GPU integradas de móviles de gama alta (Galaxy S26, Pixel 11 Pro, iPhone 18 Pro) mediante LiteRT-LM; GPU de Apple en Mac; no se documentan requisitos para A100, H100 ni RTX 4090, aunque por tamaño cabría en cualquier GPU consumer con al menos 2-3 GB de VRAM libre.
+- Cabe en GPU consumer: sí, por tamaño; el formato `.litertlm` está orientado a LiteRT-LM, no a CUDA, por lo que su despliegue en RTX requiere conversión a otro formato.
+- Opciones de despliegue: LiteRT-LM 0.19.0 (API Python y wheel Android en PyPI), CLI `litert-lm` en macOS (versiones 0.15.0 a 0.19.2 cargan ambos ficheros, salvo el int4-mlp en 0.15.0), build nightly de iOS CLiteRTLM 0.19.0-20261029. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 27,4 tok/s (int4-mlp) y 25,8 tok/s (int8) en Galaxy S26 GPU; 51,4 y 51,5 tok/s en iPhone 18 Pro GPU; 147,0 y 151,5 tok/s en Mac GPU. En Mac, el fichero int8 es un 3 % más rápido en GPU.
+- Recomendación del autor: en teléfono, usar el fichero int4-mlp en GPU (más rápido, 130 MB más pequeño y 2 puntos más en GSM8K que el int8).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tipo | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| Spark-X2.6-1.7B (LiteRT-LM) | 1,71B | Denso, razonamiento | 4.096 (caché KV de los archivos) | .litertlm | Apache-2.0 | 27,4 tok/s en Galaxy S26 GPU; GSM8K 82 (int4-mlp) |
-| Spark-X2.6-4B | no disponible | no disponible | no disponible | no disponible | no disponible | Modelo previo de la misma serie, de mayor tamaño; sin datos detallados publicados en la información disponible |
-| Spark-X2.5-1.7B | 1,71B | Denso | no disponible | no disponible | no disponible | Arquitectura idéntica; Spark-X2.6-1.7B mejora vía post-training |
+| Modelo | Parametros | Contexto | GSM8K | Licencia | Formato / despliegue |
+|---|---|---|---|---|---|
+| Spark-X2.6-1.7B (int4-mlp) | 1,71B denso | 4.096 | 82 | Apache-2.0 | `.litertlm` (LiteRT-LM) |
+| Spark-X2.6-1.7B (bf16, referencia) | 1,71B denso | no disponible | 84 | Apache-2.0 | PyTorch / transformers |
+| Spark-X2.6-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No hay datos comparativos de benchmarks publicados contra modelos de otras familias (Qwen, Gemma, etc.) en la información disponible.
+No se dispone en la información proporcionada de datos de benchmarks ni especificaciones de otros modelos de tamaño similar (por ejemplo, familias de 1-2B de otros proveedores) para establecer una comparación cuantitativa adicional.
 
 ## Limitaciones y advertencias
 
-- Contexto limitado: la caché KV de estos archivos contiene 4.096 tokens; en la evaluación de GSM8K con 3.584 tokens de salida, entre 14 y 21 preguntas de 100 no terminaron por falta de espacio, lo que indica que el límite de contexto es una restricción real en tareas de razonamiento largo.
-- Problema conocido de runtime en CPU: en uno de los prompts de forma libre probados, el archivo int8 en CPU terminó su respuesta con un `</think>` literal y escribió la respuesta de nuevo. Se recomienda usar el backend GPU.
-- Degradacion de precision por cuantizacion: el archivo int4-mlp pierde 2 puntos de GSM8K respecto a bf16 y genera más respuestas sin terminar (21 frente a 14 de 100).
-- Sesgos conocidos: no disponible; no se ha publicado ninguna evaluación de sesgos.
-- Riesgo de alucinacion: no disponible; no se publican evaluaciones de fidelidad factual.
-- Idiomas: no se declara la lista de idiomas soportados; el tokenizer soporta CJK, emoji y rangos Latin-1/Extended-A, pero no hay evaluaciones multilingües publicadas.
-- Version del runtime: los archivos solo fueron probados con LiteRT-LM 0.19.0 (y el nightly iOS 0.19.0-20261029); versiones anteriores no se han validado con estos archivos.
-- Licencia: Apache-2.0, sin restricciones para uso comercial.
-- El repositorio de conversión registra 0 descargas en el momento de la ficha, por lo que el historial de adopción y detección de errores en producción es limitado.
+- El contexto efectivo está limitado a 4.096 tokens por la caché KV de los ficheros LiteRT-LM; no es adecuado para documentos largos ni conversaciones extensas.
+- En GSM8K deja sin terminar 21 de 100 respuestas con int4-mlp y 14 con int8 y bf16 dentro del límite de 3.584 tokens, lo que indica riesgo de respuestas truncadas en problemas de razonamiento largo.
+- Con `reasoning_effort` en `low`, el fichero int4-mlp baja a 7/8 en las pruebas cortas (falla la rima con "purple"), por lo que reducir el esfuerzo de razonamiento degrada la fiabilidad.
+- En CPU con el fichero int8 se observó, en uno de los prompts de forma libre probados, una respuesta que terminaba con un `</think>` literal y reescribía la respuesta; el autor recomienda usar la GPU.
+- El fichero int4-mlp no carga en la CLI `litert-lm` 0.15.0 en macOS.
+- No se documentan los idiomas soportados ni evaluaciones por idioma; el rendimiento multilingüe más allá de la tokenización es desconocido.
+- No se documentan sesgos conocidos, tasas de alucinación ni evaluaciones de seguridad.
+- Licencia Apache-2.0: permite uso comercial y modificación con atribución; no se indican restricciones adicionales.
+- El formato `.litertlm` limita el despliegue al ecosistema LiteRT-LM; no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, lo que complica su integración en infraestructura de servidor convencional.
+- La fecha de creación del repositorio (2026-10-31) y las fechas de las mediciones corresponden al calendario indicado en la información; verificar la vigencia de los artefactos antes de usarlos en producción.
 
 ## Enlaces
 
-- Repositorio de la conversion: https://huggingface.co/litert-community/Spark-X2.6-1.7B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Spark-X2.6-1.7B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-1.7B
-- LiteRT-LM (GitHub): https://github.com/google-ai-edge/LiteRT-LM
+- Repositorio LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

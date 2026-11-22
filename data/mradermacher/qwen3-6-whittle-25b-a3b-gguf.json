@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Home | Arηs Group - ARHS",
-      "url": "https://www.arhs-group.com/",
-      "snippet": "Nov 26, 2002 · Welcome to the Arhs group website. Thanks for stopping by."
-    },
-    {
-      "title": "Careers | Arηs Group - ARHS",
-      "url": "https://www.arhs-group.com/careers",
-      "snippet": "Knocking on heaven's door. We are growing and constantly recruiting for various positions all across Belgium and Luxembourg. …"
-    },
-    {
-      "title": "AWS re :Invent 2025 Las Vegas re:Cap Luxembourg",
-      "url": "https://aws-recap-2025.arhs-group.com/",
-      "snippet": "Mar 4, 2026 · An Event Filled with the Latest AWS Insights AWS re:Invent - the world's biggest cloud computing conference - …"
-    },
-    {
-      "title": "vpngateway.arhs-group.com",
-      "url": "https://vpngateway.arhs-group.com/",
-      "snippet": ""
-    },
-    {
-      "title": "Legal | Arηs Group - ARHS",
-      "url": "https://www.arhs-group.com/legal",
-      "snippet": "ARHS Developments SA is providing these links to you only as a convenience, and the inclusion of any link to such sites does not …"
-    }
-  ]
+  "sources": []
 }

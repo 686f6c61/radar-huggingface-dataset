@@ -2,49 +2,52 @@
 
 ## Resumen
 
-Qwen-SEA-LION-v5-9B-i1-GGUF es una cuantizacion en formato GGUF del modelo Qwen-SEA-LION-v5-9B, desarrollado originalmente por AI Singapore (AISingapore) y convertido a GGUF por el usuario mradermacher. El modelo base pertenece a la familia SEA-LION (Southeast Asian Languages In One Network), una iniciativa regional centrada en modelos de lenguaje con cobertura mejorada de idiomas del sudeste asiatico, construida sobre la arquitectura Qwen. Esta version concreta es un artefacto de distribucion para inferencia local, no un modelo entrenado desde cero.
+Qwen-SEA-LION-v5-9B-i1-GGUF es una distribucion de cuantizaciones GGUF del modelo aisingapore/Qwen-SEA-LION-v5-9B, publicada por el usuario mradermacher. El modelo base es un ajuste fino de la familia Qwen orientado a las lenguas del sudeste asiatico (SEA-LION), desarrollado por AI Singapore. Esta version concreta no es un modelo nuevo, sino un empaquetado en formato GGUF con cuantizaciones ponderadas por imatrix, pensado para ejecucion local y despliegue en hardware modesto.
 
-El repositorio contiene unicamente pesos cuantizados en multiples variantes (desde IQ1_S hasta Q6_K, incluyendo Q4_K_M, Q5_K_M y Q4_0), generados con el metodo de cuantizacion ponderada por matriz de importancia (imatrix). Esto permite ejecutar el modelo en hardware de consumo con requisitos de memoria reducidos, a costa de cierta perdida de fidelidad respecto a los pesos originales en BF16/FP16.
+El modelo base cuenta con 9.197.093.888 parametros (aproximadamente 9,2 mil millones), lo que lo situa en la gama de modelos de 9B. Segun la model card, se trata de un modelo multimodal (vision), ya que el autor indica que los ficheros mmproj, si existen, se encuentran en el repositorio estatico asociado. La licencia es MIT, lo que permite uso comercial amplio.
 
-La relevancia de esta ficha es practica: facilita la evaluacion rapida de una opcion de despliegue local para tareas multilingues en idiomas del sudeste asiatico. No obstante, la informacion publica disponible es muy limitada: el repositorio no declara licencia, idiomas soportados ni pipeline, y el dato de parametros totales registrado en los metadatos (2.559.128) es incoherente con el nombre del modelo (9B), por lo que debe tratarse con cautela.
+La relevancia de esta ficha radica en que ofrece una via practica para ejecutar un modelo especializado en lenguas del sudeste asiatico (ingles, chino, birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita) en entornos con recursos limitados, mediante cuantizaciones que van desde 4,0 GB hasta 7,7 GB. El repositorio acumula 2.125 descargas y fue creado el 19 de noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado de la familia Qwen; detalles no publicados en la informacion disponible) |
-| Parametros totales | no disponible de forma fiable (el nombre indica 9B; los metadatos del repo registran 2.559.128, dato incoherente) |
+| Arquitectura | Transformer (derivada de Qwen; detalles especificos no disponibles) |
+| Parametros totales | 9.197.093.888 (aprox. 9,2B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, IQ4_NL (small), Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible (por la naturaleza del modelo base SEA-LION, se orienta a idiomas del sudeste asiatico, pero no se detalla en la informacion disponible) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado, con variantes imatrix/weighted) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (ponderadas por imatrix); versiones estaticas en repositorio separado |
+| Idiomas soportados | en, zh, my, id, fil, ms, ta, th, vi |
+| Licencia | MIT |
+| Formato de pesos | GGUF (tambien disponible el fichero imatrix para crear cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna, el volumen de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineacion (RLHF, DPO u otras) empleadas en el modelo base Qwen-SEA-LION-v5-9B. El repositorio es una conversion a GGUF, no un entrenamiento: el autor declara explicitamente que se trata de "weighted/imatrix quants" del modelo aisingapore/Qwen-SEA-LION-v5-9B, generados con la herramienta de conversion a formato HF y cuantizacion de llama.cpp (se observan metadatos como `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`).
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. Por la nomenclatura (Qwen-SEA-LION-v5-9B) y el tamano (9,2B parametros), se trata de un transformer derivado de la familia Qwen, ajustado por AI Singapore para lenguas del sudeste asiatico. No se especifica si emplea atencion lineal, decodificacion especulativa u otras innovaciones.
 
-La innovacion tecnica relevante en este artefacto es el uso de cuantizacion ponderada por imatrix, que estima la importancia de cada tensor a partir de activaciones de calibracion para preservar mejor la calidad en bits bajos. Esto explica la presencia de variantes IQ (importancia-cuantizadas) ademas de las K-quants clasicas. No hay informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones en el modelo base.
+El dataset de entrenamiento indicado en la model card es aisingapore/SEA-Instruct-2602, un conjunto de instrucciones orientado a las lenguas SEA. No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. La model card del repositorio de cuantizacion no incluye esta informacion; seria necesario consultar la model card del modelo base (aisingapore/Qwen-SEA-LION-v5-9B) para obtener detalles.
+
+La innovacion tecnica destacable de este repositorio es el uso de cuantizaciones ponderadas por imatrix (importancia matrix), que mejoran la calidad respecto a cuantizaciones estaticas del mismo tamano. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamano similar.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en formato GGUF, ejecutable con llama.cpp y derivados.
-- Cobertura multilingue orientada a idiomas del sudeste asiatico por herencia del modelo base SEA-LION (no verificada en la informacion disponible).
-- Razonamiento y conversacion multi-turno: capacidades propias del modelo base, no documentadas en este repositorio.
+- Generacion de texto conversacional en nueve idiomas: ingles, chino, birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita.
+- Capacidad multimodal (vision): la model card indica que es un modelo de vision y que los ficheros mmproj, si existen, estan en el repositorio estatico.
+- Ajuste por instrucciones (dataset SEA-Instruct), lo que sugiere soporte para tareas de seguimiento de instrucciones y conversacion.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking, vision o audio: no disponible en la informacion proporcionada.
-- Capacidad de ejecucion local en CPU/GPU gracias a las multiples cuantizaciones, incluidas variantes de 1-2 bits para entornos muy restringidos.
+- Modo thinking: no disponible en la informacion proporcionada.
+- Capacidades de codigo y matematicas: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo sin GPU dedicada: usar la variante Q4_K_M o Q5_K_M con llama.cpp en CPU permite ejecutar el modelo en equipos con 8-16 GB de RAM, adecuado para prototipado y pruebas de calidad.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece mas de 20 variantes, lo que permite medir la degradacion de calidad entre IQ1_S y Q6_K sobre el mismo prompt set y elegir el punto de equilibrio para produccion.
-- Procesamiento de texto multilingue del sudeste asiatico: si el modelo base conserva su cobertura regional, puede emplearse para traduccion, resumen y clasificacion en indonesio, malayo, tailandes, vietnamita y filipino, aunque esta capacidad no esta documentada en este repo.
-- Integracion en pipelines de CI/CD para pruebas de regresion de modelos: el formato GGUF y las variantes ligeras permiten incluir el modelo en tests automatizados de calidad de inferencia sin infraestructura de GPU.
-- Chatbot de atencion al cliente en entornos con requisitos de privacidad: al ejecutarse localmente, los datos no salen del perimetro, lo que encaja en sectores regulados; la idoneidad depende de la calidad del modelo base, no verificada aqui.
-- Generacion de codigo y asistencia tecnica: solo si el modelo base lo soporta; no hay evidencia en la informacion disponible, por lo que debe validarse empiricamente antes de adoptarlo.
+- Atencion al cliente multilingue en el sudeste asiatico: el modelo puede gestionar conversaciones en indonesio, malayo, tailandes, vietnamita, filipino y birmano, lo que permite desplegar un unico modelo para mercados de la region en lugar de varios modelos por idioma.
+- Procesamiento de documentos con imagenes: gracias a su capacidad de vision, puede extraer y resumir informacion de capturas, formularios escaneados o imagenes con texto en lenguas SEA, usando los ficheros mmproj del repositorio estatico.
+- Despliegue en hardware de consumo: las cuantizaciones i1-Q4_K_M (5,9 GB) e i1-Q5_K_M (6,7 GB) permiten ejecutar el modelo en GPUs consumer con 8-12 GB de VRAM, lo que facilita prototipado local sin infraestructura cloud.
+- Traduccion y localizacion: el modelo puede emplearse para traducir contenido entre ingles/chino y las lenguas del sudeste asiatico, aprovechando su entrenamiento especifico en SEA-Instruct.
+- Asistentes conversacionales en dispositivos edge: con cuantizaciones de 4,0-4,8 GB (i1-Q2_K a i1-Q3_K_M) se puede desplegar en equipos con recursos muy limitados para tareas de chat de baja latencia.
+- Investigacion en NLP de lenguas de bajos recursos: el modelo sirve como base para experimentos academicos sobre comprension y generacion en birmano, tamil o filipino, idiomas con menos cobertura en modelos generalistas.
+- Generacion de contenido para comunidades locales: redaccion de respuestas, resumenes y textos en malayo o indonesio para plataformas regionales, con licencia MIT que permite integrarlo en productos comerciales.
 
 ## Benchmarks y rendimiento
 
@@ -52,34 +55,45 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: para un modelo de aproximadamente 9B parametros, las variantes Q4_K_M rondan 5-6 GB y Q5_K_M 6-7 GB; las variantes IQ1_S e IQ2 pueden bajar de 3-4 GB. Estas cifras son estimaciones basadas en el tamano nominal, no en datos publicados en el repositorio.
-- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, una RTX 3060 de 12 GB o RTX 4090 de 24 GB podrian alojar las variantes Q4-Q6 con comodidad; A100/H100 solo serian necesarias para lotes grandes o contexto muy largo.
-- Cabe en GPU de consumo: si, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB y superiores para las cuantizaciones medias; las variantes IQ1/IQ2 podrian caber en GPUs de 8 GB.
-- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio y servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan conversion a otro formato.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia segun cuantizacion:
+  - i1-Q2_K: 4,0 GB (calidad reducida; el autor sugiere IQ3_XXS como alternativa).
+  - i1-Q3_K_S / i1-IQ3_S / i1-IQ3_M: 4,5-4,6 GB.
+  - i1-Q4_K_S / i1-Q4_K_M: 5,6-5,9 GB (recomendado por el autor para velocidad y calidad).
+  - i1-Q5_K_M: 6,7 GB.
+  - i1-Q6_K: 7,7 GB.
+- GPU recomendadas: no disponibles de forma explicita. Por tamano, una RTX 3060 de 12 GB o RTX 4070 de 12 GB pueden alojar hasta i1-Q6_K; una RTX 4090 o A100 permiten ejecutar cualquier cuantizacion con margen para contexto largo.
+- Cabe en GPU consumer: si, en tarjetas con 8 GB o mas de VRAM para cuantizaciones Q4; con 6 GB para Q3; con 4-5 GB para Q2.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y cualquier runtime compatible con GGUF. No se confirma soporte en vLLM o TGI en la informacion proporcionada.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen-SEA-LION-v5-9B-i1-GGUF (este) | ~9B (nominal) | no disponible | no disponible | GGUF | Cuantizaciones imatrix de 1 a 6 bits |
-| aisingapore/Qwen-SEA-LION-v5-9B (base) | ~9B (nominal) | no disponible | no disponible | safetensors (presumible) | Pesos originales sin cuantizar |
-| Otros GGUF de la familia Qwen de ~9B | ~9B | variable | variable | GGUF | Alternativas genericas; no se dispone de datos concretos en la informacion proporcionada |
+| Qwen-SEA-LION-v5-9B (este, cuantizado) | 9,2B | no disponible | en, zh, my, id, fil, ms, ta, th, vi | MIT | GGUF |
+| Qwen-SEA-LION-v5-9B (base) | 9,2B | no disponible | en, zh, my, id, fil, ms, ta, th, vi | MIT | safetensors |
+| Alternativas de 7-9B generalistas | no disponible | no disponible | cobertura SEA limitada | variable | variable |
 
-No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La principal diferencia frente a modelos generalistas del mismo tamano es la especializacion en lenguas del sudeste asiatico y la licencia MIT permisiva.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en el repositorio, lo que impide confirmar si el uso comercial esta permitido; debe verificarse en el modelo base antes de cualquier despliegue en produccion.
-- El dato de parametros totales de los metadatos (2.559.128) es incompatible con el nombre del modelo (9B) y probablemente corresponde a un recuento erroneo o parcial; no debe usarse para dimensionar hardware.
-- Las cuantizaciones de 1-2 bits (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad y pueden producir incoherencias; no son recomendables para produccion.
-- No hay informacion sobre sesgos, tasas de alucinacion ni evaluaciones de seguridad del modelo base en este repositorio.
-- La cobertura de idiomas del sudeste asiatico es una inferencia a partir del nombre del modelo base, no un dato verificado.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere escasa validacion comunitaria.
-- Al ser una conversion de terceros, pueden existir diferencias de comportamiento respecto a los pesos originales, especialmente en las variantes de bits bajos.
+- No se han publicado datos de benchmarks, por lo que no es posible verificar el rendimiento real frente a alternativas.
+- Las cuantizaciones de baja calidad (i1-Q2_K, i1-Q3_K_S) pueden degradar notablemente la calidad; el autor recomienda IQ3_XXS o IQ4_XS frente a equivalentes no-IQ.
+- El modelo base es un ajuste fino especializado en lenguas SEA; su rendimiento en idiomas fuera de esa lista (por ejemplo, espanol) no esta documentado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se aportan datos especificos de mitigacion.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- La licencia MIT permite uso comercial, pero se recomienda revisar la model card del modelo base para condiciones adicionales.
+- El repositorio de cuantizacion no incluye los ficheros mmproj (vision); para usar la capacidad multimodal hay que acudir al repositorio estatico.
+- El tamano del repo (81,3 GB) incluye todas las cuantizaciones; la descarga individual debe hacerse fichero a fichero.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen-SEA-LION-v5-9B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Qwen-SEA-LION-v5-9B-i1-GGUF
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen-SEA-LION-v5-9B-GGUF
 - Modelo base: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B
-- No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.
+- Dataset de entrenamiento: https://huggingface.co/datasets/aisingapore/SEA-Instruct-2602
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen-SEA-LION-v5-9B-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

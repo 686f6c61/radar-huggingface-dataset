@@ -2,86 +2,89 @@
 
 ## Resumen
 
-OrdoPy-Coder-0.5B-GGUF es la versión cuantizada en formato GGUF del modelo base layer8labs8/OrdoPy-Coder-0.5B, publicada por mradermacher. El modelo original es un modelo de generación de código especializado en Python, construido sobre la arquitectura Qwen2 y orientado a tareas de razonamiento y programación. Con 494.032.768 parámetros totales (aproximadamente 0,5 mil millones), se posiciona en la gama ultraligera de modelos de código, pensado para despliegues con recursos muy limitados.
+OrdoPy-Coder-0.5B-GGUF es la versión cuantizada en formato GGUF del modelo layer8labs8/OrdoPy-Coder-0.5B, un modelo especializado en generación de código Python construido sobre la arquitectura Qwen2. Lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face que distribuye versiones GGUF estáticas de modelos populares para su uso con llama.cpp y herramientas compatibles. El modelo original fue afinado mediante LoRA y rejection sampling sobre una base de 0,5 mil millones de parámetros.
 
-La relevancia de esta publicación radica en que mradermacher ofrece hasta doce cuantizaciones estáticas distintas (desde Q2_K hasta f16), lo que permite ejecutar el modelo en hardware de consumo muy modesto, incluso en CPU, con un peso de fichero que va desde 0,4 GB hasta 1,1 GB. Esto lo hace adecuado para entornos de desarrollo local, prototipado rápido, autocompletado en editores y pipelines de integración continua donde el coste de cómputo es un factor crítico.
+El interés de esta ficha radica en su perfil de despliegue: con menos de 500 millones de parámetros totales (494.032.768 exactamente), el modelo cabe holgadamente en cualquier GPU de consumo e incluso puede ejecutarse en CPU con velocidades aceptables. Está pensado para tareas de autocompletado de código, generación de funciones Python y asistencia ligera en entornos con recursos limitados, donde un modelo mayor sería inviable.
 
-No obstante, la información pública disponible es escasa: la model card del repositorio cuantizado se limita a describir el proceso de cuantización y no incluye detalles sobre el entrenamiento, la longitud de contexto, los datos utilizados ni resultados de benchmarks. La licencia Apache 2.0 facilita su uso comercial, pero conviene verificar el modelo base original para obtener especificaciones completas.
+La versión GGUF que nos ocupa ofrece 12 cuantizaciones distintas (desde Q2_K hasta f16), con licencia Apache 2.0 y soporte exclusivo del idioma inglés. No se dispone de información pública sobre la longitud de contexto, los datos de entrenamiento exactos ni resultados de benchmarks, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2 (transformer decoder-only, según tags del modelo) |
-| Parámetros totales | 494.032.768 |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer (Qwen2) |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | inglés (en) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen2, un transformer decoder-only con atención causal estándar, según los tags declarados en el repositorio. El número de parámetros (494 millones) es coherente con una configuración de aproximadamente 24 capas y dimensión oculta de 896, típica de la familia Qwen2-0.5B, aunque esta correspondencia no se confirma explícitamente en la información disponible.
+El modelo base es un transformer de la familia Qwen2 con aproximadamente 494 millones de parámetros. La model card del autor original indica que se afinó mediante LoRA (Low-Rank Adaptation) seguido de rejection sampling, una técnica de alineación que filtra las respuestas generadas por el modelo y reentrena con las mejores muestras para mejorar la calidad de la generación de código Python. No se especifica el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicó RLHF o DPO adicional.
 
-No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. Los tags indican especialización en generación de código, Python y razonamiento, pero la model card del repositorio cuantizado no aporta detalles sobre el proceso de entrenamiento del modelo base. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
+La versión GGUF es una conversión estática realizada por mradermacher con `convert_type: hf` y `output_tensor_quantised: 1`, es decir, cuantización de tensores de salida. El autor indica que no ha publicado cuantizaciones ponderadas ni con imatrix, y que no tiene previsto hacerlo salvo petición explícita en la sección de discusiones de la comunidad.
 
 ## Capacidades
 
-- Generación de código, con especialización declarada en Python según los tags del modelo.
-- Razonamiento y resolución de problemas de programación (tag "reasoning").
-- Generación de texto conversacional (tag "conversational").
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según el campo de idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
+- Generación de código Python, incluyendo funciones, scripts y fragmentos de lógica.
+- Autocompletado de código en entornos de edición.
+- Conversación multi-turno básica (el modelo está marcado como `conversational`).
+- Generación de texto en inglés.
+- No se dispone de información sobre soporte de tool calling, function calling, agentes o razonamiento multi-paso.
+- No se dispone de información sobre modo thinking, visión, audio ni otras capacidades especiales.
+- Capacidad multilingüe limitada al inglés según la model card.
 
 ## Casos de uso
 
-- Autocompletado de código en editores locales: con cuantizaciones Q4_K_M de 0,5 GB, el modelo puede ejecutarse en CPU o en GPUs de gama baja para sugerir fragmentos de código Python en tiempo real dentro de IDE como VS Code o Neovim mediante llama.cpp.
-- Asistente de programación en entornos con recursos limitados: su tamaño reducido permite desplegarlo en portátiles sin GPU dedicada, ofreciendo respuestas sobre sintaxis, APIs y patrones de Python sin depender de servicios en la nube.
-- Generación de tests unitarios: el modelo puede producir esqueletos de pruebas para funciones Python, integrándose en pipelines de CI/CD para aumentar la cobertura de tests de forma automatizada.
-- Prototipado rápido de scripts de automatización: útil para generar scripts de procesamiento de datos, tareas de scraping o utilidades de línea de comandos en Python durante fases de exploración.
-- Educación y formación en programación: puede emplearse como tutor local que explique conceptos de Python y proponga ejercicios, con la ventaja de funcionar sin conexión y sin coste por token.
-- Documentación de código: generación de docstrings y comentarios explicativos para funciones y módulos Python existentes, integrable en hooks de pre-commit.
-- Despliegue en dispositivos edge o embebidos: con cuantizaciones Q2_K o Q3_K_S de 0,4 GB, es viable en entornos con memoria muy restringida para tareas de asistencia básica de código.
+- Autocompletado de código en el editor: con menos de 500 M de parámetros, el modelo puede ejecutarse localmente y ofrecer sugerencias de líneas o bloques Python con latencia baja, integrándose en plugins de VS Code o Neovim mediante llama.cpp.
+- Generación de funciones utilitarias: para tareas repetitivas como escribir parsers, validadores o transformadores de datos en Python, el modelo puede producir borradores que el desarrollador revisa y ajusta, reduciendo el tiempo de escritura manual.
+- Asistencia en notebooks educativos: en entornos de aprendizaje o docencia, el modelo puede generar ejemplos de código Python comentados y ejecutables, con la ventaja de que corre en portátiles sin GPU dedicada usando cuantizaciones Q4_K_M o Q5_K_M.
+- Prototipado rápido en CI/CD ligero: para generar tests unitarios sencillos o scripts de automatización en pipelines con recursos limitados, el modelo puede desplegarse en contenedores pequeños con llama.cpp y consumir menos de 1 GB de RAM.
+- Herramienta de refactorización local: integrado en un script que recibe un fragmento de código y pide una versión refactorizada, el modelo puede sugerir simplificaciones o renombrados, siempre con revisión humana dado su tamaño reducido.
+- Despliegue en dispositivos de borde: gracias a las cuantizaciones Q2_K y Q3_K_S (0,4 GB), el modelo puede ejecutarse en Raspberry Pi o dispositivos con poca memoria para tareas de generación de código sin conexión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,5 GB con Q4_K_M, 0,4 GB con Q2_K/Q3_K_S, 0,6 GB con Q6_K/Q8_0 y 1,1 GB con f16 (tamaños de fichero; el consumo real en memoria incluye overhead del runtime y la caché KV, que depende del contexto).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar las cuantizaciones más pequeñas; tarjetas como RTX 3060, RTX 4060 o superiores ofrecen margen holgado. Para f16, se recomienda al menos 2-3 GB de VRAM.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna e incluso en iGPU con memoria unificada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF como llama-cpp-python. El tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia estándar.
-- Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera una latencia muy baja en GPU y aceptable en CPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: entre 0,4 GB (Q2_K, Q3_K_S) y 1,1 GB (f16); las cuantizaciones recomendadas Q4_K_M y Q5_K_M ocupan aproximadamente 0,5 GB.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en RTX 3060, RTX 4060, GTX 1650 y superiores. También es viable en CPU.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna e incluso en iGPU con memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con PyTorch.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera un throughput alto en GPU y aceptable en CPU, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OrdoPy-Coder-0.5B-GGUF | 494 M | no disponible | Apache 2.0 | GGUF | Especializado en Python/código |
-| Qwen2.5-Coder-0.5B | ~494 M | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo de código generalista de la familia Qwen |
-| SmolLM2-360M | ~360 M | 8.192 tokens (según documentación pública) | Apache 2.0 | safetensors, GGUF | Modelo generalista pequeño, no especializado en código |
+| OrdoPy-Coder-0.5B-GGUF | 494 M | no disponible | Apache 2.0 | GGUF | Especializado en Python, solo inglés |
+| Qwen2.5-Coder-0.5B | 494 M | 32 K (según model card pública de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo base de la familia Qwen2.5-Coder, multilingüe |
+| DeepSeek-Coder-1.3B | 1,3 B | 16 K (según model card pública) | DeepSeek License | safetensors, GGUF | Mayor tamaño, más capacidad pero más recursos |
+| StarCoder2-3B | 3 B | 16 K (según model card pública) | BigCode OpenRAIL-M | safetensors, GGUF | Mucho mayor, requiere más VRAM |
 
-La comparación con Qwen2.5-Coder-0.5B es la más directa por compartir arquitectura y tamaño, aunque no se dispone de datos que confirmen si OrdoPy-Coder deriva de él. SmolLM2-360M es una alternativa generalista de tamaño similar. No se dispone de datos de rendimiento comparativo para OrdoPy-Coder-0.5B.
+Nota: los datos de contexto y licencia de los modelos comparados provienen de sus model cards públicas y no de la información proporcionada en esta ficha; se incluyen como referencia orientativa.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al ser un modelo entrenado principalmente con datos de código en inglés, puede presentar sesgos hacia patrones y convenciones del ecosistema anglosajón.
-- Riesgo de alucinación: elevado en modelos de este tamaño; puede generar APIs inexistentes, funciones inventadas o código sintácticamente plausible pero incorrecto. Se recomienda validación humana y tests automatizados.
-- Limitaciones de contexto e idioma: solo se declara soporte de inglés; la longitud de contexto no está documentada, lo que impide planificar tareas que requieran ventanas largas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; no obstante, conviene revisar la licencia y condiciones del modelo base original.
-- Caveats para producción: la ausencia de benchmarks y de documentación sobre el entrenamiento dificulta evaluar su calidad frente a alternativas; para producción se recomienda realizar una evaluación propia con el dominio objetivo. Las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad en tareas de código, por lo que se aconseja Q4_K_M o superior.
+- Sesgos conocidos: no se documentan en la model card; al entrenarse principalmente con código Python en inglés, puede reflejar sesgos de estilo y convenciones de ese ecosistema.
+- Riesgo de alucinación: elevado en un modelo de 0,5 B; puede generar APIs inexistentes, imports incorrectos o lógica sutilmente errónea, por lo que requiere revisión humana en producción.
+- Limitaciones de contexto: la longitud de contexto no está documentada; no se debe asumir una ventana amplia para archivos grandes.
+- Limitaciones de idioma: solo inglés según la model card; el rendimiento en castellano u otros idiomas no está garantizado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original (layer8labs8/OrdoPy-Coder-0.5B) por si añade condiciones adicionales.
+- Caveat de producción: el autor de la cuantización indica que no hay versiones ponderadas ni imatrix; las cuantizaciones IQ y K estándar pueden degradar más la calidad en modelos pequeños, por lo que se recomienda Q5_K_M o Q6_K para uso serio.
+- El modelo no declara soporte de tool calling ni agentes; no debe asumirse para pipelines complejos.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/OrdoPy-Coder-0.5B-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/OrdoPy-Coder-0.5B-GGUF
 - Modelo base: https://huggingface.co/layer8labs8/OrdoPy-Coder-0.5B
-- Página de descargas del autor: https://hf.tst.eu/model#OrdoPy-Coder-0.5B-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Guía sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Página de overview de cuantizaciones: https://hf.tst.eu/model#OrdoPy-Coder-0.5B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

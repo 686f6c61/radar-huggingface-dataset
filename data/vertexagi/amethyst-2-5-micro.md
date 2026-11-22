@@ -2,108 +2,104 @@
 
 ## Resumen
 
-Amethyst 2.5 Micro es un modelo de chat de 1.720.574.976 parametros, resultado de un ajuste fino por LoRA sobre Qwen3-1.7B. Lo desarrolla VertexAGI, presentado en la model card como un proyecto de investigacion independiente sin animo de lucro que trabaja en abierto. El objetivo declarado no es mejorar la calidad bruta del modelo base, sino especializarlo en tres comportamientos concretos: decidir cuando invocar una herramienta `web_search`, responder de forma breve citando los fragmentos usados como `[1]`, `[2]`, y admitir explicitamente cuando los resultados de busqueda no contienen la respuesta en lugar de inventarla.
+Amethyst 2.5 Micro es un modelo de chat de 1.700 millones de parametros desarrollado por VertexAGI, un proyecto de investigacion independiente que trabaja en abierto. Se trata de un ajuste fino por LoRA de Qwen3-1.7B orientado a un comportamiento muy concreto: decidir cuando invocar una herramienta de busqueda web (`web_search`), responder de forma breve a partir de los resultados y citar las fuentes consultadas con marcadores `[1]`, `[2]`. No es un modelo mas capaz que su base, sino un modelo mas disciplinado en el uso de herramientas.
 
-La arquitectura subyacente es la de Qwen3-1.7B: un transformer decoder-only denso con embeddings atados, 28 capas y 1.7B parametros. El ajuste fino empleo 3.205 conversaciones sinteticas (4.683 muestras tras dividir por turno del asistente) destiladas de modelos profesor de mayor tamano (GLM 5.3 y 5.3 Flash, Kimi K3, poolside Laguna S 2.1 y MiniMax M3.1 Flash) a traves de NVIDIA NIM y OpenRouter. Todos los resultados de busqueda del dataset son inventados por los profesores; no se raspo ninguna pagina web real.
+El modelo resuelve un problema practico de los LLM pequenos: la mayoria falla al emitir llamadas a herramientas bien formadas. Segun la model card, Amethyst 2.5 Micro logra un 100 % de llamadas bien formadas y un 0 % de busquedas innecesarias en tres conjuntos de validacion manuales, frente a un 0-25 % del Qwen3-1.7B base. La calidad de las respuestas tras la busqueda, sin embargo, es practicamente equivalente a la del base (8 victorias frente a 7 derrotas en comparaciones ciegas).
 
-Su relevancia practica es acotada pero clara: el modelo base Qwen3-1.7B apenas produce llamadas de herramienta bien formadas con este formato de prompt (0-25% segun los conjuntos de validacion manual del autor), mientras que Micro alcanza el 100% de llamadas bien formadas y el 0% de busquedas innecesarias en tres pequenos conjuntos held-out. El propio autor reconoce que la calidad de las respuestas tras la busqueda esta practicamente empatada con el base (8 victorias frente a 7 derrotas en el brazo sin thinking) y que pierde frente a Amethyst 2.5 Mini (4B) por 4 a 9. Se trata, por tanto, de un invocador de herramientas pequeno, barato y disciplinado, no de un modelo mas inteligente que su base.
+Es relevante ahora porque demuestra que un ajuste fino pequeno y barato puede convertir un modelo de 1,7B en un agente de busqueda fiable en formato, desplegable en un portatil con Apple Silicon o en una GPU de consumo. La arquitectura es la de Qwen3: transformer denso decoder-only con embeddings atados, 28 capas y 1.720.574.976 parametros totales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3: transformer decoder-only denso, 28 capas, embeddings atados |
+| Arquitectura | Qwen3, transformer denso decoder-only con embeddings atados |
 | Parametros totales | 1.720.574.976 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen3-1.7B) |
-| Tipos de cuantizacion | MLX mixta (capas ajustadas en 8-bit, embeddings y normalizaciones como en el base), GGUF Q8_0 y GGUF Q4_K_M; etiqueta 4-bit en el repo |
-| Idiomas soportados | Ingles (unicamente) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el entrenamiento uso secuencias de 2.048 tokens) |
+| Tipos de cuantizacion | MLX mixta (capas ajustadas en 8-bit, resto en 4-bit), GGUF Q4_K_M, GGUF Q8_0 |
+| Idiomas soportados | ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX, `model.safetensors` en la raiz), GGUF (`amethyst_2_5_micro_Q8_0.gguf`, `amethyst_2_5_micro_Q4_K_M.gguf`) |
+| Formato de pesos | safetensors (MLX), GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del checkpoint `mlx-community/Qwen3-1.7B-4bit` y aplica LoRA de rango 16, escala 20.0 y dropout 0.0 sobre las 28 capas, cubriendo 196 capas lineales adaptadas (7 por capa). El calculo de perdida se restringe a los turnos del asistente (`mask_prompt`). El entrenamiento uso el optimizador Adam con tasa de aprendizaje constante de 6e-5, tamano de lote 4, longitud de secuencia 2.048 y gradient checkpointing, durante 2 epocas y 2.341 iteraciones en una unica ejecucion ininterrumpida. La perdida de validacion (solo tokens del asistente) cayo de 4,59 a aproximadamente 1,01 hacia la iteracion 1.400. Todo el pipeline se ejecuto con MLX / `mlx-lm` en Apple Silicon.
+El modelo parte del checkpoint `mlx-community/Qwen3-1.7B-4bit` y se ajusta mediante LoRA de rango 16, escala 20.0 y dropout 0.0 aplicado a las 28 capas, con la perdida calculada unicamente sobre los turnos del asistente (`mask_prompt`). El entrenamiento se ejecuto con MLX y `mlx-lm` sobre Apple Silicon: optimizador Adam, tasa de aprendizaje constante de 6e-5, tamano de lote 4, longitud de secuencia 2.048 y gradient checkpointing, durante 2 epocas y 2.341 iteraciones en una unica ejecucion ininterrumpida. La perdida de validacion (solo tokens del asistente) cayo de 4,59 a aproximadamente 1,01 hacia la iteracion 1.400.
 
-Una decision tecnica destacable es la construccion del build MLX: una fusion directa de la LoRA en 4-bit recuantizaria y destruiria el ajuste fino, por lo que las 196 capas adaptadas se fusionan en fp16 y se recuantizan a 8-bit. En 60 conversaciones de validacion, la perdida de secuencia completa del modelo fusionado fue 3,337 frente a 3,331 del adaptador sin fusionar, y sus puntuaciones held-out coinciden con las del adaptador. Los datos de entrenamiento son 3.205 conversaciones sinteticas organizadas por categoria: chat general (817), respuestas directas sin busqueda (309 mas 42 de dos turnos), instrucciones de formato terso (500), busqueda de hechos actuales con una consulta (502), fuentes en desacuerdo (127), refinamiento de consulta (97 mas 21), fallo de busqueda (192), resultados en tema pero sin la respuesta (448) y resumenes, multi-consulta y seguimientos (150). Las filas con resultados de busqueda pasaron un control automatico de fundamentacion: la respuesta final solo puede citar resultados existentes y solo puede usar numeros y nombres propios capitalizados presentes en el ultimo resultado o en la pregunta.
+Los datos de entrenamiento son 3.205 conversaciones sinteticas (4.683 muestras tras dividir cada conversacion en una muestra por turno del asistente), destiladas de modelos profesores grandes a traves de NVIDIA NIM y OpenRouter: GLM 5.3 y GLM 5.3 Flash, Kimi K3, poolside Laguna S 2.1 y MiniMax M3.1 Flash. Los resultados de busqueda del dataset son inventados por los profesores; no se rastreo ninguna pagina web real. Las categorias cubren chat general (817 conversaciones), respuestas directas sin busqueda (309 + 42), instrucciones de formato terso (500), busqueda de hechos actuales con una consulta (502), fuentes en desacuerdo (127), refinamiento de consulta (97 + 21), fallo de busqueda (192), resultados en tema pero sin la respuesta (448) y resumenes, multi-consulta y seguimientos (150). Las filas con resultados de busqueda pasaron un control automatico de fundamentacion: la respuesta final solo puede citar resultados existentes y usar numeros y nombres propios presentes en el ultimo resultado o en la pregunta.
+
+Una innovacion tecnica destacable es el merge mixto del adaptador: un merge plano a 4 bits re-cuantizaria el ajuste fino y lo eliminaria, por lo que las 196 capas lineales adaptadas por LoRA (7 por capa x 28 capas) se fusionan a fp16 y se re-cuantizan a 8 bits. En 60 conversaciones de validacion, la perdida de secuencia completa del modelo fusionado fue 3,337 frente a 3,331 del adaptador sin fusionar, y sus puntuaciones en held-out igualan las del adaptador.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con respuestas deliberadamente breves y directas.
-- Invocacion de la herramienta `web_search` con llamadas bien formadas y decision explicita de no buscar cuando la pregunta es estable.
-- Respuestas con citas de las fuentes consultadas en formato `[1]`, `[2]`.
-- Reconocimiento de fuentes contradictorias: declara la discrepancia y cita ambas.
-- Refinamiento de consulta cuando los primeros resultados son debiles, con una nueva query y respuesta posterior.
-- Gestion explicita del fallo de busqueda (timeout, 503, cero resultados): informa de que no pudo obtener la informacion sin adivinar.
-- Capacidad de decir que los resultados, aunque en tema, no contienen la respuesta, citando lo que si dicen.
-- Resumenes con citas, descomposicion de consultas y seguimiento de preguntas elipticas.
-- Cumplimiento de instrucciones de formato estricto ("exactamente 3 vinetas", "menos de 20 palabras", "una sola frase"), traduccion y reescritura.
-- Modelo de un solo idioma: no se declaran capacidades multilingues.
-- No se declaran capacidades de vision, audio ni modo thinking explicito en la informacion disponible.
+- Generacion de texto conversacional breve y directa en ingles.
+- Llamada a herramientas (`web_search`) con formato correcto: emite la llamada en todos los prompts de busqueda probados.
+- Decision de cuando buscar: no invoca la herramienta ante preguntas estables y la invoca ante hechos cambiantes (noticias, resultados, precios, "ultimo").
+- Respuestas con citas: tras una busqueda, responde brevemente y cita los fragmentos usados como `[1]`, `[2]`.
+- Abstraccion ante resultados insuficientes: si la busqueda falla, devuelve vacio o no contiene la respuesta, lo dice explicitamente en lugar de adivinar.
+- Manejo de fuentes contradictorias: senala que las fuentes difieren y cita ambas.
+- Refinamiento de consulta: reformula una busqueda una vez cuando los primeros resultados son debiles.
+- Instrucciones de formato estricto: "exactamente 3 vinetas", "menos de 20 palabras", "una sola frase", traduccion y reescritura.
+- Descomposicion de consultas y seguimientos elipticos con resumenes citados.
+- No dispone de capacidades de vision, audio ni modo de razonamiento explicito (thinking mode) segun la informacion disponible.
 
 ## Casos de uso
 
-- Agente de busqueda web en produccion: el modelo decide por si mismo cuando invocar `web_search` y emite llamadas bien formadas en el 100% de los prompts de busqueda de los conjuntos de validacion del autor, lo que lo hace adecuado como capa de enrutamiento y formateo en pipelines de agentes donde el modelo grande solo sintetiza despues.
-- Asistente de hechos actuales con trazabilidad: para preguntas sobre noticias, resultados deportivos o precios, responde de forma breve citando los fragmentos usados, lo que permite auditar cada afirmacion contra la fuente recuperada.
-- Atencion al cliente con base de conocimiento externa: al recibir resultados de un buscador corporativo, el modelo cita lo relevante y, si la busqueda falla o no contiene la respuesta, lo dice en lugar de improvisar, reduciendo el riesgo de respuestas inventadas ante el usuario final.
-- Verificacion de afirmaciones y control de calidad de respuestas: dado un par pregunta-resultados, el modelo declara si los resultados sostienen la respuesta o si simplemente estan en tema, lo que sirve como filtro automatico de alucinaciones en un pipeline RAG.
-- Ejecucion local en portatiles Apple Silicon: el build MLX ocupa 1,6 GB y el GGUF Q4_K_M 1,1 GB, lo que permite desplegar el invocador de herramientas en un Mac sin GPU dedicada y mantener el modelo grande en servidor.
-- Prototipado rapido de agentes con tool calling: con 1,7B parametros y licencia Apache 2.0, sirve para iterar sobre prompts de sistema, esquemas de herramientas y formatos de citacion antes de escalar a un modelo mayor.
-- Generacion de respuestas concisas bajo restricciones de formato: util en interfaces con limite de caracteres, resumenes de una frase o transformaciones de texto donde el cumplimiento estricto de la instruccion importa mas que la profundidad del razonamiento.
+- Asistente de busqueda web en produccion: el modelo decide si necesita buscar, ejecuta una unica consulta y responde con citas numeradas, lo que encaja en un pipeline donde un orquestador externo ejecuta la herramienta y devuelve los fragmentos.
+- Atencion al cliente con datos cambiantes: para consultas sobre estado de pedidos, precios o disponibilidad, invoca la herramienta cuando el dato es dinamico y responde directamente cuando es estable, reduciendo llamadas innecesarias a APIs.
+- Chatbot de noticias y resultados deportivos: su entrenamiento especifico en hechos actuales y en fuentes en desacuerdo le permite responder con ambas versiones citadas cuando hay contradicciones.
+- Despliegue en portatiles Apple Silicon: el formato MLX (1,67 GB) permite ejecutarlo localmente con `mlx-lm` sin GPU dedicada, util para prototipos y demos offline.
+- Agente ligero en entornos con recursos limitados: el GGUF Q4_K_M (1,11 GB) cabe en GPU de consumo y en CPU, adecuado para asistentes embebidos o edge donde no se puede ejecutar un modelo mayor.
+- Generacion de respuestas con formato controlado: las 500 conversaciones de instrucciones tersas lo hacen util para resumenes con numero fijo de vinetas, reescrituras y respuestas de una sola frase en interfaces con espacio limitado.
+- Moderacion de respuestas alucinadas: su comportamiento de declarar cuando los resultados no contienen la respuesta sirve como capa de verificacion en sistemas RAG que necesitan abstenerse en lugar de inventar.
+- Integracion en pipelines de CI/CD y herramientas de desarrollador: con soporte de tool calling y compatibilidad con endpoints, puede conectarse a un runtime compatible con OpenAI para tareas de consulta de documentacion actual.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K). Los unicos datos son evaluaciones manuales internas sobre tres pequenos conjuntos held-out y comparaciones ciegas por pares:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card unicamente reporta evaluaciones internas sobre conjuntos manuales:
 
-| Evaluacion | Amethyst 2.5 Micro | Qwen3-1.7B base |
-|---|---|---|
-| Llamadas de herramienta bien formadas (3 conjuntos held-out) | 100% | 0-25% |
-| Busquedas innecesarias en preguntas estables | 0% | no disponible |
-| Perdida de validacion (solo tokens del asistente) | ~1,01 hacia la iteracion 1.400 (desde 4,59) | no disponible |
-| Perdida de secuencia completa, 60 conversaciones (fusionada vs adaptador) | 3,337 vs 3,331 | no disponible |
-
-| Comparacion por pares | Resultado |
-|---|---|
-| Calidad de respuesta tras busqueda, Micro vs Qwen3-1.7B base (sin thinking) | 8 victorias, 7 derrotas |
-| Micro vs Amethyst 2.5 Mini (4B) | 4 victorias, 9 derrotas |
-
-No se han publicado resultados de benchmarks estandar en la informacion disponible.
+| Evaluacion | Amethyst 2.5 Micro | Qwen3-1.7B base | Amethyst 2.5 Mini (4B) |
+|---|---|---|---|
+| Llamadas a herramienta bien formadas (3 conjuntos held-out) | 100 % | 0-25 % | no disponible |
+| Busquedas innecesarias en preguntas simples | 0 % | no disponible | no disponible |
+| Calidad de respuesta tras busqueda (comparacion ciega, brazo sin thinking) | 8 victorias / 7 derrotas frente al base | referencia | no disponible |
+| Comparacion directa frente a Mini (4B) | 4 victorias / 9 derrotas | no aplica | referencia |
+| Perdida de validacion (solo tokens del asistente) | ~1,01 en iteracion ~1.400 (desde 4,59) | no disponible | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,1 GB con GGUF Q4_K_M, 1,8 GB con GGUF Q8_0 y 1,6 GB con el build MLX mixto; a estos valores hay que sumar el overhead de contexto y el runtime.
-- Cabe con holgura en GPU consumer: cualquier tarjeta con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090) y en Apple Silicon via MLX.
-- GPU de datacenter (A100, H100) sobredimensionadas para este tamano; su uso tendria sentido solo por agregacion de muchas instancias concurrentes.
-- Opciones de despliegue: `mlx-lm` en Apple Silicon, llama.cpp, Ollama y LM Studio con los GGUF, y servidores compatibles con endpoints segun la etiqueta `endpoints_compatible`. No se menciona soporte explicito de vLLM o TGI en la informacion disponible.
+- VRAM estimada para inferencia: aproximadamente 1,2 GB en Q4_K_M, 1,9 GB en Q8_0 y 1,8 GB en el formato MLX mixto, mas el overhead del runtime y la cache KV.
+- GPU recomendadas: cualquier GPU de consumo con 4 GB o mas de VRAM es suficiente; tambien funciona en CPU via llama.cpp. Para mayor throughput, una RTX 4090 o A100 estan sobredimensionadas para este tamano.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas (RTX 3060, RTX 4060, RTX 4090) y en Apple Silicon via MLX.
+- Opciones de despliegue: `mlx-lm` en Apple Silicon, llama.cpp, Ollama y LM Studio para los GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formatos |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Amethyst 2.5 Micro | 1,7B | no disponible | Chat breve con tool calling de busqueda y citas | Apache 2.0 | safetensors (MLX), GGUF Q8_0, GGUF Q4_K_M |
-| Qwen3-1.7B (base) | 1,7B | no disponible | Modelo generalista | Apache 2.0 | safetensors, GGUF (comunidad) |
-| Amethyst 2.5 Mini | 4B | no disponible | Misma receta que Micro, mayor tamano | Apache 2.0 (heredada del base, segun familia) | no disponible en esta ficha |
+| Amethyst 2.5 Micro | 1,7B | no disponible | Chat breve + tool calling de busqueda con citas | Apache 2.0 | Hugging Face (MLX, GGUF) |
+| Qwen3-1.7B (base) | 1,7B | no disponible | Modelo generalista | Apache 2.0 | Hugging Face |
+| Amethyst 2.5 Mini | 4B | no disponible | Misma tarea, mayor tamano | Apache 2.0 | Hugging Face |
+| Qwen3-4B | 4B | no disponible | Modelo generalista de mayor capacidad | Apache 2.0 | Hugging Face |
 
-Frente a Qwen3-1.7B, Micro intercambia algo de calidad general por disciplina de formato: gana claramente en llamadas de herramienta bien formadas y brevedad, pero empata en calidad de respuesta tras la busqueda. Frente a Amethyst 2.5 Mini pierde en comparacion directa (4 a 9), lo que situa a Micro como opcion de coste minimo cuando la latencia, el consumo de memoria o el despliegue en dispositivo son la restriccion dominante.
+La comparacion interna de la model card situa a Micro por detras de Mini (4B) en calidad de respuesta (4 victorias frente a 9 derrotas), pero por delante del Qwen3-1.7B base en formato de tool calling (100 % frente a 0-25 %). Frente a modelos generalistas del mismo tamano, la ventaja es el comportamiento disciplinado en busqueda y citas, no la capacidad de razonamiento.
 
 ## Limitaciones y advertencias
 
-- Solo ingles: no se declaran capacidades multilingues, por lo que no es adecuado para castellano sin evaluacion previa.
-- Riesgo de alucinacion persistente: el ajuste ensena a admitir resultados insuficientes, pero la calidad de respuesta tras la busqueda esta practicamente empatada con el base (8 victorias frente a 7 derrotas), sin garantia de mejora factual.
-- Los resultados de busqueda del entrenamiento son inventados por modelos profesor; el modelo nunca ha visto paginas web reales, lo que puede producir desajustes con formatos, ruido y longitudes de snippets reales.
-- Las evaluaciones del autor se apoyan en tres conjuntos held-out pequenos y de fabricacion manual; no hay benchmarks estandar ni evaluaciones de terceros que las respalden.
-- Sesgos: no se documentan sesgos conocidos en la informacion disponible; al derivar de Qwen3-1.7B y de profesores propietarios, hereda los sesgos de ambos, no evaluados aqui.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3-1.7B y de los datos destilados de profesores propietarios antes de un despliegue comercial.
-- El build MLX no es una fusion 4-bit convencional: usar una recuantizacion propia a 4 bits puede degradar el ajuste fino, como advierte el autor.
-- Longitud de contexto no documentada en esta ficha: debe confirmarse contra la model card de Qwen3-1.7B antes de disenar prompts largos.
-- Modelo con cero descargas y cero likes en el momento de la consulta: madurez y soporte comunitario inexistentes.
+- Solo soporta ingles; no hay capacidades multilingues declaradas.
+- La calidad de las respuestas tras la busqueda es aproximadamente equivalente a la del Qwen3-1.7B base (8 victorias frente a 7 derrotas), por lo que no debe esperarse una mejora de conocimiento.
+- Pierde claramente frente a Amethyst 2.5 Mini (4B) en comparaciones directas, lo que limita su uso cuando se requiere mayor profundidad de respuesta.
+- Los datos de entrenamiento son sinteticos y los resultados de busqueda fueron inventados por modelos profesores; no se rastrearon paginas web reales, lo que puede introducir sesgos y patrones irreales en las citas.
+- Riesgo de alucinacion: aunque se entrena para declarar cuando los resultados no contienen la respuesta, sigue siendo un modelo de 1,7B y puede fallar en consultas complejas o ambiguas.
+- Las evaluaciones reportadas son conjuntos manuales pequenos (tres conjuntos held-out), no benchmarks estandar, por lo que su generalizacion es limitada.
+- La longitud de contexto no se especifica en la informacion disponible; el entrenamiento uso secuencias de 2.048 tokens, lo que sugiere un limite practico bajo para conversaciones largas.
+- Licencia Apache 2.0, igual que el modelo base, sin restricciones adicionales conocidas para uso comercial.
+- El formato MLX requiere Apple Silicon; para otros entornos deben usarse los GGUF.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/VertexAGI/amethyst-2-5-micro
 - Modelo hermano Amethyst 2.5 Mini: https://huggingface.co/VertexAGI/amethyst-2-5-mini
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
-- Checkpoint de ajuste fino: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit
-- Framework MLX: https://github.com/ml-explore/mlx
-- No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo o demos adicionales del modelo.
+- Checkpoint de ajuste mlx-community/Qwen3-1.7B-4bit: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit
+- Repositorio MLX: https://github.com/ml-explore/mlx

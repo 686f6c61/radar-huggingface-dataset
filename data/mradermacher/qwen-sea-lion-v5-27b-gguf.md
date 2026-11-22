@@ -1,100 +1,83 @@
 # mradermacher/Qwen-SEA-LION-v5-27B-GGUF
 
 ## Resumen
+Qwen-SEA-LION-v5-27B-GGUF es la distribucion en formato GGUF del modelo Qwen-SEA-LION-v5-27B, desarrollado originalmente por AI Singapore (aisingapore) y cuantizado por mradermacher. Se trata de un modelo conversacional de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) afinado para el sudeste asiatico, con especial enfasis en idiomas como birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita, ademas de ingles y chino. Esta version GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo inviable con los pesos originales en safetensors.
 
-Qwen-SEA-LION-v5-27B es un modelo de lenguaje de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) desarrollado por AI Singapore (aisingapore), especializado en las lenguas del sudeste asiatico. Esta ficha describe la version cuantizada en formato GGUF publicada por el usuario mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo base esta disponible en el repositorio aisingapore/Qwen-SEA-LION-v5-27B.
+El modelo parte de la familia Qwen y ha sido ajustado con el dataset aisingapore/SEA-Instruct-2602, orientado a instrucciones multilingues de la region. La relevancia actual radica en que cubre idiomas del sudeste asiatico habitualmente infrarrepresentados en los grandes modelos abiertos, y lo hace con una licencia MIT que permite uso comercial sin restricciones adicionales. La disponibilidad de cuantizaciones desde Q2_K (11 GB) hasta Q8_0 (29,1 GB) facilita su despliegue en estaciones de trabajo y GPUs de gama alta de consumo.
 
-El modelo cubre nueve idiomas: ingles, chino, birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita. Esta orientado a conversacion y fue afinado sobre el dataset aisingapore/SEA-Instruct-2602, lo que lo hace relevante para aplicaciones de atencion al cliente, procesamiento de documentos y asistentes en mercados del sudeste asiatico, una region con mas de 600 millones de hablantes y escasa cobertura en modelos generalistas.
-
-La publicacion de cuantizaciones GGUF amplia el acceso al modelo: los archivos van desde 11,0 GB (Q2_K) hasta 29,1 GB (Q8_0), e incluyen suplementos multimodales (mmproj) en Q8_0 y f16, lo que indica que el modelo base incorpora capacidades de vision. La licencia MIT facilita su uso comercial sin restricciones de atribucion mas alla de la propia licencia.
+El repositorio incluye ademas suplementos multimodales (mmproj en Q8_0 y f16), lo que sugiere capacidad de vision en el modelo base, aunque la model card del cuantizador no detalla el alcance de dicha funcionalidad. La ficha siguiente se basa exclusivamente en la informacion disponible en Hugging Face y en la model card proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado de la familia Qwen; transformer presumiblemente, sin confirmar en la informacion disponible) |
-| Parametros totales | 27.320.697.856 (aproximadamente 27,3 mil millones) |
+| Arquitectura | Transformer (derivada de Qwen; detalles especificos no disponibles) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
 | Idiomas soportados | en, zh, my, id, fil, ms, ta, th, vi |
 | Licencia | MIT |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
+La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un transformer derivado de la familia Qwen, con 27,3 mil millones de parametros. No se especifica si emplea atencion lineal, decodificacion especulativa ni otras innovaciones. Tampoco se indica el numero de tokens de entrenamiento ni la composicion exacta del dataset, salvo que se uso aisingapore/SEA-Instruct-2602 para el ajuste por instrucciones. No hay datos sobre RLHF, DPO u otras fases de alineamiento en la model card del cuantizador.
 
-La informacion disponible no detalla la arquitectura interna del modelo base. Por el nombre y el linaje (Qwen-SEA-LION-v5-27B), se trata de un modelo de la familia Qwen afinado por AI Singapore, pero la model card no confirma si emplea atencion estandar, atencion lineal u otra variante, ni el numero de capas, cabezas o dimension oculta. Tampoco se especifica la longitud de contexto nativa.
-
-El entrenamiento se realizo sobre el dataset aisingapore/SEA-Instruct-2602, un conjunto de instrucciones orientado a las lenguas del sudeste asiatico. No se dispone de informacion sobre el numero total de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similar. La presencia de archivos mmproj en las cuantizaciones indica que el modelo incorpora un codificador multimodal (vision), aunque no se detalla su arquitectura ni el volumen de datos multimodales empleados.
+La presencia de ficheros mmproj (multi-modal supplement) indica que el modelo base incorpora un proyector multimodal, presumiblemente para entrada de imagenes, aunque no se detalla que torre visual utiliza ni el rango de resoluciones soportado. Esta version GGUF conserva dichos proyectores para su uso con llama.cpp y frontends compatibles, pero la model card no documenta el proceso de entrenamiento multimodal.
 
 ## Capacidades
-
-- Generacion de texto conversacional en nueve idiomas: ingles, chino, birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita.
-- Capacidades multimodales (vision): la publicacion incluye suplementos mmproj, lo que permite procesar imagenes junto con texto en llama.cpp y herramientas compatibles.
-- Razonamiento y respuesta a instrucciones, segun el formato de dataset de instrucciones empleado en el afinado (SEA-Instruct-2602).
-- Soporte de conversacion multi-turno (etiqueta conversational en el repositorio).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades especiales (modo thinking, audio): no disponible en la informacion proporcionada.
+- Generacion de texto conversacional multi-turno en ingles, chino y siete idiomas del sudeste asiatico (birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita).
+- Ajuste por instrucciones (instruction following) mediante el dataset SEA-Instruct-2602.
+- Capacidad multimodal potencial: el repositorio incluye proyectores mmproj-Q8_0 y mmproj-f16, lo que sugiere soporte de entrada de imagenes, aunque el alcance no esta documentado.
+- Compatibilidad con endpoints (tag endpoints_compatible) para su despliegue en infraestructuras de inferencia estandar.
+- No se documenta explicitamente soporte de tool calling, function calling ni razonamiento multi-paso en la informacion disponible.
+- No se documenta modo thinking ni capacidades de audio.
 
 ## Casos de uso
-
-- Atencion al cliente en el sudeste asiatico: el modelo puede gestionar conversaciones multi-turno en indonesio, malayo, filipino, tailandes, vietnamita, birmano y tamil, lo que permite desplegar un unico modelo para varios mercados en lugar de uno por idioma.
-- Procesamiento de documentos regionales: extraccion y resumen de informacion en lenguas de baja representacion como el birmano o el tamil, donde los modelos generalistas suelen rendir peor.
-- Asistentes de soporte tecnico con imagenes: gracias a los suplementos mmproj, puede interpretar capturas de pantalla o fotos enviadas por el usuario y responder en su idioma.
-- Traduccion y localizacion: traduccion entre ingles/chino y las lenguas del sudeste asiatico para equipos de localizacion de productos.
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M (16,9 GB) y Q4_K_S (15,9 GB) permiten ejecutar el modelo en una GPU de 24 GB (RTX 3090/4090) o en configuraciones con RAM suficiente, algo inviable con el modelo en precision completa.
-- Prototipado e investigacion en NLP de lenguas asiaticas: la licencia MIT y el formato GGUF facilitan experimentos academicos y evaluaciones comparativas sin coste de licencia.
-- Chatbot de soporte interno en empresas con plantilla multilingue: un unico modelo cubre consultas en ingles, chino, indonesio, malayo, filipino, tailandes y vietnamita.
+- Atencion al cliente en idiomas del sudeste asiatico: el modelo puede gestionar conversaciones multi-turno en indonesio, malayo, filipino, tailandes o vietnamita, cubriendo mercados donde la mayoria de modelos abiertos solo ofrecen ingles y chino. La licencia MIT permite integrarlo en productos comerciales sin restricciones.
+- Traduccion y localizacion regional: util para traducir documentacion, interfaces o contenidos entre ingles/chino y los idiomas SEA soportados, aprovechando el ajuste especifico con SEA-Instruct-2602.
+- Asistentes conversacionales en dispositivos con GPU de consumo: las cuantizaciones Q4_K_M (16,9 GB) y Q5_K_M (19,6 GB) permiten ejecutar el modelo en una RTX 4090 (24 GB) o en configuraciones multi-GPU de gama media mediante llama.cpp.
+- Procesamiento de documentos con componente visual: si se confirma la funcionalidad multimodal mediante los proyectores mmproj, podria emplearse para extraer informacion de imagenes o capturas en flujos de digitalizacion regional.
+- Investigacion en NLP de lenguas minorizadas: sirve como base para estudios comparativos sobre rendimiento en birmano, tamil o filipino, idiomas con escasa representacion en benchmarks abiertos.
+- Despliegue en entornos con requisitos de privacidad: al poder ejecutarse localmente en formato GGUF, permite procesar datos sensibles sin enviarlos a APIs externas, algo relevante en sectores regulados del sudeste asiatico.
+- Generacion de contenido multilingue para marketing regional: redaccion de textos adaptados a registros locales en varios idiomas SEA desde una unica instancia del modelo.
 
 ## Benchmarks y rendimiento
-
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
-  - Q2_K: 11,0 GB
-  - Q3_K_S: 12,4 GB
-  - Q3_K_M: 13,6 GB
-  - Q3_K_L: 14,7 GB
-  - Q4_K_S: 15,9 GB
-  - Q4_K_M: 16,9 GB
-  - Q5_K_S: 19,1 GB
-  - Q6_K: 22,5 GB
-  - Q8_0: 29,1 GB
-  - Suplemento multimodal: 0,7 GB (mmproj-Q8_0) o 1,0 GB (mmproj-f16)
-- GPU recomendadas: para Q8_0 y Q6_K se necesitan GPUs de 32-48 GB (A100 40 GB, RTX A6000, L40S); para Q4_K_M y Q4_K_S cabe en GPUs de 24 GB (RTX 3090, RTX 4090, A10G 24 GB); las cuantizaciones Q2_K y Q3_K caben en GPUs de 16 GB (RTX 4080, A4000).
-- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con Q4_K_M o Q4_K_S; en RTX 4080 (16 GB) con Q2_K o Q3_K_S; en GPUs de 12 GB solo mediante offload parcial a RAM o cuantizaciones mas agresivas no incluidas en esta publicacion.
-- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. El repositorio incluye la etiqueta endpoints_compatible.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia (segun cuantizacion): Q2_K ~11 GB, Q3_K_M ~13,6 GB, IQ4_XS ~15,5 GB, Q4_K_M ~16,9 GB, Q5_K_M ~19,6 GB, Q6_K ~22,5 GB, Q8_0 ~29,1 GB. Hay que anadir overhead de contexto KV cache, que puede incrementar el consumo entre 1 y varios GB segun la longitud de contexto configurada.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; A100 40/80 GB o H100 para Q8_0 y contextos largos; configuraciones multi-GPU (2x RTX 3090/4090) para Q6_K y Q8_0.
+- Cabe en GPU de consumo: si, en RTX 4090 para cuantizaciones hasta Q6_K; en RTX 3090 (24 GB) de forma similar; en GPUs de 16 GB solo con Q2_K o Q3_K y contexto reducido, o mediante offload parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. Para el modelo base en safetensors serian aplicables vLLM o TGI, pero no para estos ficheros GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas del sudeste asiatico | Licencia | Formato GGUF |
+| Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen-SEA-LION-v5-27B (esta ficha) | 27,3 mil millones | no disponible | en, zh, my, id, fil, ms, ta, th, vi | MIT | Si |
-| SEA-LION v3 (versiones previas de AI Singapore) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Qwen2.5-32B-Instruct | 32,5 mil millones | 131.072 tokens | cobertura limitada de lenguas SEA | Apache 2.0 | Si (multiples repositorios) |
-| Llama 3.3 70B | 70 mil millones | 128.000 tokens | cobertura limitada de lenguas SEA | Llama 3.3 Community License | Si |
+| Qwen-SEA-LION-v5-27B (este) | 27,3 B | no disponible | my, id, fil, ms, ta, th, vi | MIT | GGUF / safetensors |
+| Qwen2.5-32B-Instruct | 32,5 B | 128K (segun documentacion publica de Qwen) | Cobertura limitada | Apache 2.0 (segun Qwen) | safetensors / GGUF |
+| SEA-LION v3 (versiones previas) | variable | no disponible | si | no disponible | safetensors / GGUF |
 
-Nota: los datos de los modelos comparativos corresponden a conocimiento general de la familia; la informacion proporcionada no incluye resultados de benchmarks que permitan comparar rendimiento real entre ellos.
+La comparativa con modelos de la misma categoria se limita a lo anterior porque la informacion proporcionada no incluye datos de rendimiento del modelo ni de sus alternativas. No se dispone de benchmarks que permitan una comparacion cuantitativa fiable.
 
 ## Limitaciones y advertencias
-
-- Sesgos conocidos: no se documentan en la informacion disponible; al entrenarse sobre un dataset de instrucciones regional, puede reflejar sesgos culturales o linguisticos de las fuentes de datos.
-- Riesgo de alucinacion: no cuantificado; como todo modelo generativo de ~27B, puede producir contenido facticamente incorrecto, especialmente en lenguas de baja representacion como el birmano o el tamil.
-- Limitaciones de contexto o idioma: la longitud de contexto no se especifica; las nueve lenguas soportadas no incluyen la mayoria de lenguas europeas, por lo que no es adecuado como modelo generalista multilingue.
-- Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, pero conviene verificar las condiciones del modelo base (aisingapore/Qwen-SEA-LION-v5-27B) por si anaden requisitos adicionales.
-- Caveats para produccion: las cuantizaciones GGUF degradan la calidad respecto al modelo en precision completa (especialmente Q2_K y Q3_K_S); el rendimiento multimodal depende de que la herramienta de despliegue soporte los archivos mmproj; no hay benchmarks publicados que permitan estimar la perdida de calidad por cuantizacion.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicacion reciente sin validacion comunitaria.
+- No se han publicado datos de benchmarks, por lo que el rendimiento real en tareas concretas no puede verificarse a partir de la informacion disponible.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan medidas especificas de mitigacion.
+- La longitud de contexto no esta especificada, lo que impide planificar despliegues con ventanas largas sin consultar el modelo base.
+- La cobertura idiomatica se limita a los nueve idiomas listados; el rendimiento en castellano no esta documentado y probablemente sea inferior al de modelos multilingues generalistas.
+- La funcionalidad multimodal (mmproj) no esta documentada en detalle; su uso en produccion requeriria validacion propia.
+- Aunque la licencia es MIT, conviene verificar las condiciones del modelo base (aisingapore/Qwen-SEA-LION-v5-27B) y de los datos de entrenamiento antes de un uso comercial a gran escala.
+- Las cuantizaciones Q2_K y Q3_K_S degradan la calidad de forma notable; para produccion se recomienda Q4_K_M o superior.
+- El repositorio tiene 970 descargas y 0 likes en el momento de la consulta, lo que indica poca validacion comunitaria.
 
 ## Enlaces
-
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen-SEA-LION-v5-27B-GGUF
 - Modelo base: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B
-- Dataset de entrenamiento: https://huggingface.co/datasets/aisingapore/SEA-Instruct-2602
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen-SEA-LION-v5-27B-i1-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen-SEA-LION-v5-27B-GGUF
+- Dataset de instrucciones: https://huggingface.co/datasets/aisingapore/SEA-Instruct-2602
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

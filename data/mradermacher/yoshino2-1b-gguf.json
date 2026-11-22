@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "en5yme/Yoshino2-1B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/en5yme/Yoshino2-1B-GGUF",
-      "snippet": "Yoshino2 1B We present Yoshino2, our new family of fine tuned reasoning models aimed to improve the base model's reasoning ability and bring large scale intelligence into edge models."
-    },
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/models",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    }
-  ]
+  "sources": []
 }

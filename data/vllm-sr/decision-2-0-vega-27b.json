@@ -49,29 +49,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "vLLM",
-      "url": "https://vllm.ai/",
-      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models …"
-    },
-    {
-      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
-      "url": "https://github.com/vllm-project/vllm",
-      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …"
-    },
-    {
-      "title": "vLLM",
-      "url": "https://docs.vllm.ai/en/latest/",
-      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …"
-    },
-    {
-      "title": "vLLM - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/VLLM",
-      "snippet": "vLLM ... vLLM is an open-source software framework for inference and serving of large language models and related multimodal …"
-    },
-    {
-      "title": "A Review on LLMs for IoT Ecosystem: State-of-the-art, Lightweight ...",
-      "url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.174844330.01320055",
-      "snippet": "01.05.2025 ... 12 T, and the 27B model 14 T. Core data sources include scraped web ... released under the Apache 2.0 license by mixedbread.ai. As of."
+      "title": "Intelligence Beyond Any One Model | vLLM Semantic Router",
+      "url": "https://vllm-sr.ai/",
+      "snippet": "We introduce vLLM Semantic Router, a signal-driven decision routing framework for Mixture-of-Modality deployments that composes …"
     }
   ]
 }

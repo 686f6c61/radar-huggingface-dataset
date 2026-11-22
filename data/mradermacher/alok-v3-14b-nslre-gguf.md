@@ -2,88 +2,105 @@
 
 ## Resumen
 
-Alok-v3-14B-NSLRE-GGUF es la versión cuantizada en formato GGUF del modelo Alok-v3-14B-NSLRE, desarrollado originalmente por shivrajgurjar y convertido a GGUF por mradermacher. Se trata de un modelo de lenguaje de 14.770.033.664 parámetros (aproximadamente 14,8 mil millones) orientado a tareas de razonamiento neuro-simbólico, con etiquetas que apuntan a ingeniería de software, química, biología y demostración de teoremas. La conversión a GGUF facilita su despliegue en entornos con llama.cpp y herramientas compatibles, sin necesidad de GPUs de gran formato.
+Alok-v3-14B-NSLRE es un modelo de lenguaje de 14.770 millones de parámetros (14,77B) especializado en razonamiento neuro-simbólico, desarrollado originalmente por shivrajgurjar y cuantizado a formato GGUF por mradermacher. El modelo se presenta como una propuesta orientada a tareas de razonamiento estructurado en dominios como ingeniería del software, química, biología y demostración de teoremas, con la búsqueda en árbol de Monte Carlo (MCTS) como técnica de razonamiento destacada entre sus etiquetas.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado únicamente para inglés. La model card del repositorio cuantizado es escueta: se limita a indicar que son cuantizaciones estáticas del modelo base y a listar los ficheros disponibles, sin aportar detalles sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks. Por tanto, buena parte de las especificaciones técnicas de esta ficha quedan marcadas como no disponibles.
+Esta ficha documenta concretamente la versión cuantizada publicada por mradermacher, que ofrece 11 variantes de cuantización GGUF (desde Q2_K de 5,9 GB hasta Q8_0 de 15,8 GB), lo que permite desplegar el modelo en hardware de consumo. El modelo base es de licencia Apache 2.0 y está entrenado únicamente en inglés.
 
-La relevancia de esta ficha radica en que permite evaluar rápidamente la viabilidad de desplegar un modelo de ~14,8B en hardware de consumo mediante cuantizaciones Q2_K, Q4_K_S y Q8_0, así como conocer las limitaciones de información existentes antes de adoptarlo en producción.
+La relevancia actual de esta publicación radica en que facilita el acceso a un modelo de razonamiento de 14B en formatos ligeros y ejecutables localmente mediante llama.cpp u Ollama, sin necesidad de infraestructura de GPU de datacenter. No obstante, la información pública disponible sobre arquitectura, datos de entrenamiento y benchmarks es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base etiquetado como neuro-symbolic; no se detalla la arquitectura interna) |
-| Parametros totales | 14.770.033.664 (~14,8B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo transformer de 14,77B parámetros; no se especifica si es denso o MoE) |
+| Parametros totales | 14.770.033.664 (14,77B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q4_K_S, Q8_0 (cuantizaciones estáticas; no hay quants ponderados/imatrix disponibles según el autor) |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (repo con cuantizaciones); modelo base en transformers/safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (GGUF); existen también cuantizaciones i1 (imatrix) en repo separado |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base usa safetensors/transformers |
+| Tamano del repo | 102,0 GB (incluye todas las variantes de cuantización) |
+| Pipeline | no disponible |
+| Fecha de creacion | 2026-11-18 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Las etiquetas del repositorio indican "neuro-symbolic", "reasoning", "software-engineering", "chemistry", "biology", "theorem-proving" y "mcts", lo que sugiere un enfoque orientado a razonamiento estructurado y posible integración con búsqueda en árbol (Monte Carlo Tree Search), pero no se especifica si se trata de un transformer denso, un modelo híbrido o una arquitectura con componentes simbólicos explícitos.
+No se dispone de información detallada sobre la arquitectura interna del modelo base (shivrajgurjar/Alok-v3-14B-NSLRE) en la información proporcionada. El recuento de parámetros (14,77B) y la librería transformers indican un modelo transformer, pero no se especifica si emplea atención estándar, atención lineal, arquitectura híbrida o mezcla de expertos.
 
-Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineamiento. La model card del repositorio cuantizado no incluye esta información y remite implícitamente al modelo base, cuya documentación no forma parte de los datos proporcionados.
+Las etiquetas del modelo (neuro-symbolic, reasoning, software-engineering, chemistry, biology, theorem-proving, mcts) sugieren un entrenamiento orientado a razonamiento estructurado y verificación simbólica, con posible uso de búsqueda en árbol de Monte Carlo durante el entrenamiento o la inferencia. No se dispone de datos sobre número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o RL con verificación. Tampoco se documentan innovaciones técnicas concretas más allá de las etiquetas mencionadas.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo está etiquetado para tareas de razonamiento ("reasoning") y razonamiento neuro-simbólico.
-- Ingeniería de software: etiqueta "software-engineering", orientado a tareas de código y desarrollo.
-- Química y biología: etiquetas "chemistry" y "biology", lo que sugiere aplicaciones en dominios científicos.
-- Demostración de teoremas: etiqueta "theorem-proving".
-- Búsqueda en árbol: etiqueta "mcts" (Monte Carlo Tree Search), posiblemente orientada a decodificación o razonamiento multi-paso.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y multi-step reasoning: no confirmado explícitamente; la etiqueta "mcts" y "reasoning" apuntan a razonamiento multi-paso, pero no se detalla.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de texto conversacional en inglés.
+- Razonamiento estructurado orientado a dominios científicos y técnicos (química, biología).
+- Razonamiento neuro-simbólico, según las etiquetas del modelo.
+- Demostración de teoremas (theorem-proving).
+- Razonamiento asistido mediante búsqueda en árbol de Monte Carlo (MCTS), según etiquetas.
+- Ingeniería del software y tareas de programación (según etiquetas).
+- No se documenta soporte explícito de tool calling o function calling.
+- No se documenta soporte explícito de agentes multi-paso más allá de la etiqueta de razonamiento.
+- Capacidades multilingües limitadas al inglés.
+- No se documenta modo thinking explícito, visión ni audio.
 
 ## Casos de uso
 
-- Asistencia en ingeniería de software: el modelo puede emplearse para generación y revisión de código en inglés, aprovechando su etiqueta específica de "software-engineering"; adecuado para tareas de refactorización y explicación de fragmentos, siempre que se valide la salida.
-- Razonamiento científico en química y biología: útil para resumir literatura técnica, proponer hipótesis o estructurar experimentos en dominios etiquetados, con revisión humana obligatoria por el riesgo de alucinación.
-- Demostración de teoremas asistida: el modelo puede servir como apoyo en la exploración de pasos de demostración, dado su etiquetado en "theorem-proving", integrándose en flujos de trabajo con verificación formal externa.
-- Despliegue en hardware de consumo: gracias a las cuantizaciones Q2_K (5,9 GB) y Q4_K_S (8,7 GB), puede ejecutarse en GPUs consumer para prototipado local y pruebas offline.
-- Prototipado de razonamiento multi-paso: la etiqueta "mcts" sugiere su uso en pipelines que requieran búsqueda o exploración de soluciones, como planificación o resolución de problemas estructurados.
-- Investigación en modelos neuro-simbólicos: útil como base para experimentos académicos sobre integración de razonamiento simbólico y neural, dado su etiquetado específico y su licencia permisiva Apache 2.0.
+- Razonamiento científico asistido: el modelo puede emplearse para generar hipótesis o explicaciones en química y biología, aprovechando su especialización declarada en estos dominios y su enfoque neuro-simbólico para estructurar el razonamiento.
+- Asistencia en demostración de teoremas: útil como apoyo en entornos de matemática formal donde se requiera generar pasos intermedios de prueba, dado su etiquetado específico en theorem-proving.
+- Generación y revisión de código: puede integrarse en flujos de trabajo de ingeniería del software para sugerir implementaciones o revisar fragmentos, aunque no se documenta soporte de tool calling que permita ejecución automática.
+- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones Q4_K_M (9,1 GB) y Q5_K_M (10,6 GB), puede ejecutarse en GPUs de consumo para prototipado de razonamiento sin depender de APIs externas.
+- Investigación en razonamiento neuro-simbólico: sirve como base para experimentos que comparen estrategias de razonamiento simbólico frente a generación libre, dado su etiquetado específico.
+- Educación técnica en inglés: puede emplearse para generar explicaciones paso a paso de conceptos científicos o de programación, aprovechando su orientación al razonamiento estructurado.
+- Evaluación comparativa de cuantizaciones: el conjunto de 11 variantes GGUF permite estudiar el impacto de la cuantización en tareas de razonamiento, útil para investigadores que calibran despliegues.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6 GB para Q2_K (5,9 GB de pesos), ~9 GB para Q4_K_S (8,7 GB) y ~16 GB para Q8_0 (15,8 GB), sin contar el overhead de contexto y KV cache.
-- GPU recomendadas: para Q8_0 se recomienda una GPU con 24 GB o más (RTX 3090/4090, A100, H100); para Q4_K_S basta con 12-16 GB (RTX 4070 Ti, RTX 4080); para Q2_K puede ejecutarse en GPUs de 8 GB (RTX 3060 Ti, RTX 4060).
-- Cabe en GPU consumer: sí, en todas las cuantizaciones listadas, con mayor holgura en Q2_K y Q4_K_S.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio, text-generation-webui). El modelo base es compatible con transformers.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - Q2_K (5,9 GB): ~7-8 GB de VRAM.
+  - Q4_K_M (9,1 GB): ~11-12 GB de VRAM.
+  - Q5_K_M (10,6 GB): ~12-13 GB de VRAM.
+  - Q6_K (12,2 GB): ~14-15 GB de VRAM.
+  - Q8_0 (15,8 GB): ~17-18 GB de VRAM.
+- GPU recomendadas: RTX 4090 (24 GB) para Q6_K/Q8_0 con contexto amplio; RTX 4080/4070 Ti Super (16 GB) para Q4_K_M/Q5_K_M; RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q4_K_S.
+- Cabe en GPU de consumo: sí, en la mayoría de modelos con 12 GB o más usando cuantizaciones Q4 o inferiores. Las variantes Q2_K y Q3_K_S pueden ejecutarse incluso en GPUs de 8 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con vLLM o TGI (no verificado para esta arquitectura concreta).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Alok-v3-14B-NSLRE-GGUF | ~14,8B | no disponible | Apache 2.0 | GGUF | Etiquetado neuro-simbólico, solo inglés |
-| Modelos comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre alternativas equivalentes en la documentación proporcionada |
+| Alok-v3-14B-NSLRE (esta ficha) | 14,77B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en razonamiento neuro-simbólico (química, biología, teoremas) |
+| Qwen2.5-14B-Instruct | 14,7B | 32K (128K con RoPE) | Apache 2.0 | safetensors, GGUF | Modelo generalista con buen rendimiento en código y matemáticas |
+| Mistral-Nemo-12B-Instruct | 12B | 128K | Apache 2.0 | safetensors, GGUF | Generalista multilingüe con contexto largo |
+| Phi-3-Medium-14B | 14B | 128K | MIT | safetensors, GGUF | Orientado a razonamiento y código |
 
-No se dispone de datos suficientes para establecer una comparativa rigurosa con modelos de la misma categoría (razonamiento neuro-simbólico, ~14B, solo inglés). Se recomienda consultar el modelo base y repositorios relacionados para obtener referencias.
+La comparación se ofrece a nivel de categoría (modelos densos de ~12-15B con licencia permisiva y disponibilidad en GGUF). No se dispone de datos de benchmarks de Alok-v3-14B-NSLRE que permitan una comparación cuantitativa de rendimiento con estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible; no se documentan sesgos específicos en la información proporcionada.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; especialmente crítico en dominios científicos (química, biología, demostración de teoremas) donde una salida incorrecta puede tener consecuencias graves.
-- Limitaciones de idioma: el modelo está etiquetado únicamente para inglés, por lo que su rendimiento en castellano u otros idiomas no está garantizado.
-- Limitaciones de contexto: no se especifica la longitud de contexto soportada, lo que impide evaluar su idoneidad para tareas de contexto largo.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base y de los datos de entrenamiento originales.
-- Caveats para producción: la información pública es muy escasa (0 descargas, 0 likes en el momento de la consulta, sin benchmarks); no se recomienda su adopción en producción sin una evaluación empírica previa. Las cuantizaciones estáticas (sin imatrix) pueden degradar la calidad en comparación con quants ponderados.
-- Disponibilidad de cuantizaciones: solo se ofrecen Q2_K, Q4_K_S y Q8_0; no hay Q3, Q5, Q6 ni IQ-quants en el repositorio.
+- Solo soporta inglés; no se documenta capacitación multilingüe.
+- No se dispone de información sobre sesgos conocidos, pero al ser un modelo entrenado principalmente en inglés puede heredar sesgos culturales y lingüísticos de sus datos de entrenamiento.
+- Riesgo de alucinación no cuantificado: no hay benchmarks publicados que permitan estimar la fiabilidad en tareas de razonamiento o demostración de teoremas.
+- La longitud de contexto no está documentada, lo que dificulta planificar despliegues con ventanas largas.
+- El etiquetado "neuro-symbolic" y "MCTS" no está respaldado por documentación técnica pública en la información disponible; conviene tratarlo como descriptivo y no como garantía funcional.
+- Aunque la licencia es Apache 2.0 (permisiva para uso comercial), la falta de documentación sobre el dataset de entrenamiento impide descartar riesgos de contaminación o de procedencia de datos.
+- El repo ocupa 102 GB por incluir todas las cuantizaciones; conviene descargar solo la variante necesaria.
+- Las cuantizaciones Q2_K y Q3_K_M degradan la calidad (según la propia model card); para tareas de razonamiento se recomienda Q4_K_M o superior.
+- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Alok-v3-14B-NSLRE-GGUF
+- Repositorio GGUF (esta ficha): https://huggingface.co/mradermacher/Alok-v3-14B-NSLRE-GGUF
 - Modelo base: https://huggingface.co/shivrajgurjar/Alok-v3-14B-NSLRE
-- Página de resumen del autor de cuantizaciones: https://hf.tst.eu/model#Alok-v3-14B-NSLRE-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones i1 (imatrix): https://huggingface.co/mradermacher/Alok-v3-14B-NSLRE-i1-GGUF
+- Página de overview de mradermacher: https://hf.tst.eu/model#Alok-v3-14B-NSLRE-GGUF
+- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafo comparativo de perplejidad por cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Empresa responsable de la cuantización: https://www.nethype.de/

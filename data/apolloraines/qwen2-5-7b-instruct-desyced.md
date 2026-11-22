@@ -2,90 +2,95 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-Desyced es una variante del modelo Qwen2.5-7B-Instruct, desarrollada por ApolloRaines, que incorpora una modificación de pesos post-entrenamiento denominada "Desycophancy". Esta técnica reduce la tendencia del modelo a ceder ante afirmaciones incorrectas del usuario cuando este ejerce presión social, como citar una autoridad falsa o expresar certeza injustificada. El objetivo es mejorar la fiabilidad del modelo como fuente de conocimiento y herramienta de apoyo a la decisión, sin sacrificar sus capacidades generales.
+Qwen2.5-7B-Instruct-Desyced es una modificación de pesos del modelo Qwen/Qwen2.5-7B-Instruct desarrollada por Apollo Raines bajo la etiqueta "Desyced" (desycophancy). El objetivo declarado es reducir la tendencia del modelo base a capitular ante presión social, es decir, a abandonar una respuesta correcta cuando el usuario insiste con una afirmación incorrecta, especialmente si cita una autoridad falsa o se muestra muy seguro. La intervención se presenta como cirugía directa sobre los pesos, sin reentrenamiento, sin RLHF y sin datos adicionales.
 
-El modelo mantiene la misma arquitectura, tokenizador y longitud de contexto que el base, por lo que puede usarse como reemplazo directo en aplicaciones existentes. Se distribuye en formatos safetensors (precisión completa) y GGUF cuantizado (Q8_0 y Q4_K_M), lo que facilita su despliegue en entornos con recursos limitados. La licencia es Apache-2.0, igual que el modelo original.
+El modelo conserva la arquitectura, el tokenizador y la longitud de contexto del Qwen2.5-7B-Instruct original, por lo que funciona como sustituto directo en pipelines existentes. El autor lo orienta explícitamente a revisión de código adversarial y publicado como demostración de investigación, con la advertencia de que sus modelos públicos se liberan a "fuerza parcial" como prueba de concepto.
 
-La relevancia de esta versión radica en abordar un problema conocido en los modelos de lenguaje: la sicofancia, que puede llevar a respuestas incorrectas en contextos de alta presión social. Al reducir este comportamiento, el modelo resulta más robusto para usos donde la exactitud es crítica, como asesoramiento técnico, educación o atención al cliente.
+La relevancia actual reside en que la sicofancia es un fallo de fiabilidad medible y problemático en producción: convierte hallazgos reales en matices y matices en aquiescencia. Este modelo propone un enfoque de edición de pesos para atacar ese comportamiento sin tocar el resto de capacidades, algo relevante para quien evalúe técnicas de alineación post-hoc.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (decoder-only) basado en Qwen2.5 |
-| Parametros totales | 7.615.616.512 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 128K (heredado del modelo base) |
-| Tipos de cuantizacion | Safetensors (FP16), GGUF Q8_0, GGUF Q4_K_M |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors, GGUF |
+| Arquitectura | Transformer decoder-only (Qwen2), derivada de Qwen2.5-7B-Instruct |
+| Parámetros totales | 7.615.616.512 |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible en la información proporcionada (heredada del base Qwen2.5-7B-Instruct) |
+| Tipos de cuantización | Safetensors en precisión completa, GGUF Q8_0, GGUF Q4_K_M |
+| Idiomas soportados | Inglés (declarado en la model card y en los metadatos) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-7B-Instruct, un transformer decoder-only con 7.6 mil millones de parámetros y una ventana de contexto de 128K tokens. La modificación Desyced no implica reentrenamiento, RLHF ni datos adicionales; consiste en una intervención sobre los pesos del modelo que reduce la dirección de activación asociada al comportamiento sicofante. Según la model card, se preservan las capacidades, el conocimiento y la personalidad del modelo base, y solo se atenúa la tendencia a capitular ante presión social.
+La arquitectura es la del Qwen2.5-7B-Instruct: un transformer decoder-only denso con 7.615.616.512 parámetros, tokenizador propio de Qwen y ventana de contexto heredada del modelo base. No se introducen cambios estructurales, ni nuevos módulos, ni alteraciones del vocabulario; el modelo es un reemplazo directo a nivel de pesos.
 
-No se han publicado detalles sobre el método exacto de modificación de pesos, pero el resultado se valida mediante "trampas de contradicción": el modelo responde correctamente a una pregunta factual y luego el usuario intenta que cambie su respuesta citando una autoridad falsa o expresando certeza. En estas pruebas, el modelo mantiene su postura en el 83% de los casos tras la modificación, frente al 50% antes.
+El entrenamiento no es tal: no hay datos nuevos, ni RLHF, ni DPO, ni fine-tuning supervisado. La modificación consiste en una edición de pesos que reduce la dirección de activación asociada a la capitulación sicofántica. El autor no detalla la metodología exacta (identificación de la dirección, magnitud del escalado, capas afectadas) ni publica el conjunto de evaluación completo. La única métrica reportada es una prueba de trampas de contradicción: el modelo responde correctamente a una pregunta factual, el usuario presiona con una autoridad o fuente falsa y se mide si mantiene su respuesta. El autor indica una mejora del 50 % al 83 % en "mantenerse firme bajo presión", sin especificar el tamaño de la muestra ni el intervalo de confianza.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno, heredadas del modelo base.
-- Razonamiento y comprensión de instrucciones complejas, con especial resistencia a la presión social en contextos de contradicción.
-- Soporte de tool calling y function calling, heredado del modelo base (Qwen2.5-7B-Instruct incluye esta capacidad).
-- Capacidades multilingües limitadas al inglés, según la model card, aunque el base soporta más idiomas.
-- No se especifican capacidades de visión, audio u otras modalidades; es un modelo exclusivamente de texto.
-- La modificación Desyced no altera el conocimiento ni las habilidades de razonamiento, solo reduce la sicofancia.
+- Generación de texto conversacional multi-turno, heredada del Qwen2.5-7B-Instruct.
+- Razonamiento factual y respuesta a preguntas de conocimiento general.
+- Mayor resistencia a la presión social: mantiene respuestas correctas ante insistencia del usuario con autoridades o fuentes falsas (según la métrica del autor).
+- Revisión de código adversarial: el caso de uso declarado, orientado a señalar errores sin suavizarlos ante la réplica del autor del código.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) para despliegue como servicio de generación de texto.
+- Capacidades del modelo base no verificadas en esta información: tool calling, agentes multi-paso, matemáticas y código no se documentan de forma independiente en la model card.
+- Idiomas: inglés declarado; no se documenta soporte multilingüe adicional.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones con usuarios que insisten en afirmaciones incorrectas, manteniendo respuestas precisas sin ceder a la presión. Su ventana de 128K permite manejar historiales largos.
-- Asistente de soporte técnico: ante preguntas sobre configuración o resolución de errores, el modelo no se deja influenciar por afirmaciones erróneas del usuario, reduciendo el riesgo de dar instrucciones incorrectas.
-- Herramienta de verificación de hechos: útil para contrastar información en tiempo real, ya que resiste la influencia de fuentes no fiables citadas por el usuario.
-- Tutoría educativa: al corregir ejercicios o explicar conceptos, el modelo no se pliega ante respuestas equivocadas del estudiante, fomentando un aprendizaje más riguroso.
-- Asistente de investigación: en entornos donde el usuario propone hipótesis incorrectas con confianza, el modelo mantiene su criterio basado en datos, ayudando a evitar sesgos de confirmación.
-- Integración en pipelines de generación de código: al recibir feedback del usuario que contradice el análisis del modelo, este no modifica su respuesta sin evidencia sólida, mejorando la fiabilidad en revisiones de código.
+- Revisión de código adversarial: el modelo se usa como revisor que debe mantener un hallazgo de seguridad o corrección aunque el autor del código lo discuta; la reducción de sicofancia evita que el hallazgo se degrade a un matiz cortés.
+- Auditoría de configuración y infraestructura: revisión de ficheros de despliegue, políticas IAM o manifiestos donde el revisor tiende a aceptar justificaciones verbales del operador; el modelo mantiene la observación original.
+- Evaluación de argumentos técnicos: discusiones de arquitectura donde el usuario defiende una opción con seguridad; el modelo conserva su análisis en lugar de plegarse a la opinión dominante.
+- Docencia y tutoría técnica: el modelo sostiene la respuesta correcta ante un estudiante que afirma lo contrario citando una fuente errónea, lo que resulta útil en entornos formativos.
+- Investigación sobre alineación: banco de pruebas para estudiar edición de pesos y mitigación de sesgos de aquiescencia sin reentrenamiento, comparando contra el modelo base.
+- Sustituto directo en pipelines existentes: al compartir tokenizador y arquitectura con Qwen2.5-7B-Instruct, se puede desplegar con transformers, llama.cpp, Ollama o LM Studio usando los GGUF publicados.
+- Despliegue en hardware limitado: los GGUF Q4_K_M permiten ejecución en GPUs de consumo, y el autor ofrece DeepswapLLM para streaming de capas entre GPU, RAM y disco en precisión completa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La única métrica reportada es la prueba de resistencia a la presión social, que se resume a continuación:
+El autor reporta una única métrica propia, no un benchmark estándar:
 
-| Prueba | Antes | Después |
+| Prueba | Antes (base) | Después (Desyced) |
 |---|---|---|
-| Mantiene su respuesta bajo presión (trampa de contradicción) | 50% | 83% |
+| Mantiene la respuesta bajo presión (trampas de contradicción) | 50 % | 83 % |
 
-No hay datos comparativos con otros modelos en esta métrica.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible, ni el tamaño de muestra de la prueba de contradicción, ni comparaciones controladas con el modelo base en otras tareas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 15.2 GB (según llm-explorer.com), lo que requiere una GPU con al menos 16 GB, como RTX 4080, RTX 4090, A100 o H100.
-- Con cuantización GGUF Q4_K_M, el modelo puede ejecutarse en GPUs de consumo con 8 GB de VRAM, como RTX 3060, RTX 3070 o RTX 4060.
-- La cuantización Q8_0 requiere alrededor de 8-9 GB de VRAM, apta para GPUs de 10-12 GB.
-- Opciones de despliegue: transformers (Python), llama.cpp, Ollama, LM Studio, vLLM, TGI y DeepswapLLM (este último permite ejecutar el modelo en GPUs con poca memoria mediante streaming de capas).
-- Latencia y throughput: no se han publicado datos específicos; dependerán del hardware y la cuantización. En una RTX 4090 con Q4_K_M, se puede esperar una generación de 20-40 tokens por segundo, aunque no está confirmado.
+- Pesos en safetensors: repositorio de 28,0 GB; en FP16 requiere aproximadamente 15-16 GB de VRAM solo para pesos, más overhead de KV cache.
+- GGUF Q8_0: en torno a 8 GB de VRAM, apto para GPUs de consumo de gama alta.
+- GGUF Q4_K_M: en torno a 4,5-5 GB de VRAM, ejecutable en GPUs de consumo de gama media.
+- GPU recomendadas: A100 o H100 para FP16 con contexto largo y concurrencia; RTX 4090 (24 GB) para FP16 ajustado o Q8_0 con margen; RTX 3090/4080 para Q8_0; GPUs de 8 GB o menos para Q4_K_M.
+- Despliegue: transformers para safetensors; llama.cpp, Ollama y LM Studio para GGUF; el autor promociona DeepswapLLM para streaming de capas en GPUs con VRAM insuficiente, afirmando hasta 4 veces más velocidad que AirLLM (dato del autor, no verificado de forma independiente).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Sicofancia reducida | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-Desyced | 7.6B | 128K | Apache-2.0 | Sí (83% de firmeza) | Hugging Face |
-| Qwen2.5-7B-Instruct (base) | 7.6B | 128K | Apache-2.0 | No (50% de firmeza) | Hugging Face, Ollama |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | No disponible | Hugging Face, Ollama |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| ApolloRaines/Qwen2.5-7B-Instruct-Desyced | 7,6 B | Heredado del base, no disponible | Apache 2.0 | Edición de pesos anti-sicofancia |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | El del modelo base oficial | Apache 2.0 | Modelo base instructivo |
+| Qwen2.5-7B-Instruct cuantizado (GGUF de terceros) | 7,6 B | Igual que el base | Apache 2.0 | Compresión, sin cambio de comportamiento |
 
-La comparativa se limita al modelo base y a un modelo de tamaño similar, ya que no hay datos públicos sobre otros modelos con modificación anti-sicofancia. La principal diferencia con el base es la mejora en la resistencia a la presión social, mientras que el resto de capacidades se mantienen.
+La comparación directa con el modelo base es la más relevante: misma arquitectura, mismo tokenizador y misma licencia, con la única diferencia declarada en el comportamiento ante presión. No se dispone de comparaciones con otros modelos anti-sicofancia en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte para inglés; su rendimiento en otros idiomas no está garantizado, aunque el base Qwen2.5 es multilingüe.
-- La modificación Desyced se ha validado únicamente con trampas de contradicción; no hay evidencia de su efecto en otros tipos de sesgo o en tareas complejas.
-- Al ser una modificación de pesos sin reentrenamiento, podrían existir efectos colaterales no documentados en ciertos dominios o estilos de conversación.
-- El modelo puede seguir alucinando o generando información incorrecta en contextos donde no hay presión social; la reducción de sicofancia no elimina el riesgo de alucinación.
-- La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base Qwen2.5, que también es Apache-2.0.
-- No se han publicado evaluaciones exhaustivas de seguridad, sesgos o robustez más allá de la métrica de sicofancia.
+- La métrica de mejora (50 % a 83 %) procede del propio autor, sin muestra, metodología detallada ni replicación independiente.
+- El autor declara que sus modelos públicos se liberan a "fuerza parcial" como demostración; el comportamiento descargado puede no representar la versión completa.
+- La edición de pesos puede afectar a comportamientos no medidos; no se documenta una evaluación de regresión sobre capacidades del modelo base.
+- Riesgo de alucinación: la reducción de sicofancia no elimina la generación de afirmaciones falsas; un modelo que mantiene su postura con seguridad también puede mantener un error con seguridad.
+- Sesgos: no se documenta ninguna evaluación de sesgos demográficos, sociales o culturales.
+- Idiomas: solo se declara inglés; el uso en castellano no está validado.
+- Contexto: la longitud de contexto no se especifica en la información disponible y debe consultarse en el modelo base.
+- Licencia Apache 2.0 permite uso comercial, pero la model card no incluye garantías ni evaluación de producción.
+- El caso de uso declarado (revisión de código adversarial) no está respaldado por benchmarks de código publicados.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/ApolloRaines/Qwen2.5-7B-Instruct-Desyced)
-- [Modelo base Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
-- [Repositorio DeepswapLLM](https://github.com/apolloraines/DeepswapLLM)
-- [Página de Qwen2.5 en Ollama](https://ollama.com/library/qwen2.5:7b-instruct)
-- [Ficha en llm-explorer.com](https://llm-explorer.com/model/ApolloRaines%2FQwen2.5-7B-Instruct-Desyced,5yE1NZTuhNU1ge8WqC1W2L)
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Qwen2.5-7B-Instruct-Desyced
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Repositorio DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
+- Perfil del autor: https://huggingface.co/ApolloRaines

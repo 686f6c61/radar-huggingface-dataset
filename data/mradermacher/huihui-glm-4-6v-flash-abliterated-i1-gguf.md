@@ -2,79 +2,98 @@
 
 ## Resumen
 
-El modelo `mradermacher/Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF` es una cuantización en formato GGUF del modelo `huihui-ai/Huihui-GLM-4.6V-Flash-abliterated`, que a su vez es una versión "abliterated" (modificada para eliminar rechazos y restricciones de contenido) del modelo GLM-4.6V-Flash de Zhipu AI. Este repositorio, creado por mradermacher, ofrece un conjunto de cuantizaciones con matriz de importancia (imatrix) optimizadas para ejecución eficiente en CPU y GPU de consumo, manteniendo un equilibrio entre tamaño, velocidad y calidad.
+Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF es una compilación de cuantizaciones GGUF generadas por mradermacher a partir del modelo huihui-ai/Huihui-GLM-4.6V-Flash-abliterated, que a su vez deriva de la familia GLM-4.6V-Flash de Zhipu AI (Z.ai). El modelo base es un transformer multimodal de aproximadamente 9.400 millones de parámetros (dato real de safetensors), orientado a conversación con soporte de visión, y ha sido sometido a una técnica de "abliteration" que elimina la dirección de rechazo en el espacio de activaciones, dando lugar a una variante sin censura (uncensored).
 
-El modelo base es un sistema multimodal de visión y lenguaje con aproximadamente 9.400 millones de parámetros, diseñado para tareas de conversación, comprensión de imágenes y generación de texto en chino e inglés. La versión abliterated elimina los mecanismos de rechazo típicos de los modelos comerciales, lo que permite respuestas sin censura, aunque con los riesgos asociados. Esta cuantización GGUF facilita su despliegue en entornos locales mediante herramientas como llama.cpp, Ollama o LM Studio, sin necesidad de GPUs de alta gama.
+Esta ficha corresponde específicamente al repositorio de cuantizaciones i1 (imatrix) en formato GGUF, no a los pesos originales en safetensors. mradermacher publica dos repositorios paralelos: este con cuantizaciones ponderadas mediante imatrix (prefijo i1) y otro con cuantizaciones estáticas. El repositorio ocupa 118 GB en total e incluye 25 variantes de cuantización que van desde IQ1_S (3,2 GB) hasta Q6_K (8,4 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 4-6 GB de VRAM hasta estaciones de trabajo.
 
-La relevancia actual de este modelo radica en su doble naturaleza: por un lado, ofrece capacidades multimodales de nivel medio en un paquete compacto (los archivos GGUF van de 3,3 GB a 8,4 GB), y por otro, su licencia MIT permite uso comercial sin restricciones. Es una opción atractiva para desarrolladores que necesitan un modelo de visión-lenguaje desplegable en hardware modesto, con la flexibilidad de una cuantización fina y la posibilidad de ajuste posterior mediante el archivo imatrix.
+Su relevancia actual radica en dos factores: por un lado, ofrece una vía práctica para ejecutar un modelo multimodal de ~9,4B en hardware asequible mediante llama.cpp y derivados; por otro, la variante abliterated interesa a quienes investigan alineación, evalúan robustez de salvaguardas o necesitan un modelo sin rechazos para tareas creativas o de análisis de contenido sensible. La licencia MIT facilita su uso comercial, aunque con matices importantes que se detallan en la sección de limitaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de visión-lenguaje, probablemente transformer multimodal) |
-| Parametros totales | 9.400.279.040 (aprox. 9,4B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Transformer multimodal (familia GLM-4.6V-Flash); detalles internos no disponibles en la información proporcionada |
+| Parametros totales | 9.400.279.040 (~9,4B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ1_M, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q6_K (todos con imatrix) |
-| Idiomas soportados | chino (zh), ingles (en) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (todas i1/imatrix) |
+| Idiomas soportados | chino (zh) e inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (con archivo imatrix adicional) |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base GLM-4.6V-Flash en la documentación proporcionada. Por el nombre y la familia GLM, se presume una arquitectura transformer multimodal con componentes de visión y lenguaje, pero no se confirma. El proceso de "abliteration" aplicado por huihui-ai consiste en la modificación de los pesos del modelo original para eliminar las capas o mecanismos que generan rechazos de contenido, dando lugar a una versión sin censura. Posteriormente, mradermacher ha aplicado una cuantización con matriz de importancia (imatrix) sobre estos pesos, generando archivos GGUF de distintos tamaños y niveles de precisión.
+El modelo base pertenece a la familia GLM-4.6V-Flash de Zhipu AI, una línea de transformers multimodales con capacidad de procesamiento de visión además de texto. El nombre "V" en la denominación indica soporte visual, y el sufijo "Flash" sugiere una variante optimizada para eficiencia dentro de la familia. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO en el modelo original.
 
-No se indican datos sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO. Tampoco se mencionan innovaciones técnicas específicas en el modelo base. La única información técnica relevante es la relativa a la cuantización: se utilizó el método imatrix, que optimiza la asignación de bits según la importancia de cada tensor, mejorando la calidad respecto a cuantizaciones estáticas equivalentes.
+La modificación "abliterated" aplicada por huihui-ai consiste en la ablación de la dirección de rechazo en el espacio de activaciones, una técnica que identifica la dirección vectorial asociada a las respuestas de negativa y la proyecta fuera de los pesos, reduciendo la tendencia del modelo a declinar peticiones. Esta intervención se aplica sobre los pesos del modelo base y no requiere reentrenamiento. Las cuantizaciones i1 de mradermacher emplean una matriz de importancia (imatrix) calculada sobre el modelo para ponderar la cuantización de cada tensor, lo que en la práctica mejora la calidad respecto a cuantizaciones estáticas del mismo tamaño, especialmente en los rangos bajos (IQ2, IQ3). El repositorio incluye el propio fichero imatrix (0,1 GB) para quien quiera generar cuantizaciones propias. No se especifica en la información disponible si el calibrado del imatrix se realizó con el proyector multimodal incluido o excluido.
 
 ## Capacidades
 
-- Modelo multimodal de visión y lenguaje: puede procesar imágenes y texto, generando respuestas coherentes sobre el contenido visual.
-- Conversación multi-turno: orientado a tareas de chat y diálogo, con soporte para contextos conversacionales (etiqueta "conversational").
-- Generación de texto en chino e inglés: cubre los dos idiomas principales del modelo base.
-- Respuestas sin censura: al ser una versión abliterated, no aplica los filtros de rechazo habituales, lo que permite respuestas directas incluso en temas sensibles.
-- Compatible con herramientas de inferencia GGUF: puede ejecutarse en llama.cpp, Ollama, LM Studio y otros motores compatibles.
-- Cuantizaciones flexibles: dispone de múltiples niveles de precisión (desde IQ1_M hasta Q6_K) para adaptarse a distintos requisitos de hardware y calidad.
+- Generación de texto conversacional multi-turno en chino e inglés.
+- Procesamiento de imágenes (modelo multimodal de la familia GLM-4.6V), aunque la información disponible no detalla la resolución máxima ni el número de tokens visuales por imagen.
+- Razonamiento y respuesta a instrucciones en formato chat.
+- Capacidad de visión heredada del modelo base GLM-4.6V-Flash.
+- Variante sin censura: menor probabilidad de rechazar peticiones que el modelo original rechazaría.
+- Soporte de tool calling / function calling: no confirmado en la información disponible para esta variante cuantizada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la información disponible.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de atención al cliente con análisis de imágenes: el modelo puede recibir capturas de pantalla o fotos de productos y generar respuestas de soporte en chino o inglés, gracias a su capacidad multimodal y su contexto conversacional.
-- Generación de descripciones de contenido visual: útil para automatizar la creación de metadatos, alt-text o resúmenes de imágenes en plataformas de comercio electrónico o redes sociales, procesando lotes de imágenes con baja latencia.
-- Chatbot de investigación sin restricciones temáticas: para entornos donde se requiere explorar temas controvertidos o preguntas sin filtro, como análisis sociológicos o estudios de opinión, aprovechando la naturaleza abliterated.
-- Prototipado rápido de aplicaciones multimodales en local: desarrolladores que necesitan validar ideas con un modelo de visión-lenguaje sin depender de APIs externas, usando las cuantizaciones Q4_K_M o Q6_K en una GPU de consumo.
-- Asistente de documentación técnica bilingüe: dado su soporte zh/en, puede traducir y resumir documentos técnicos con contenido gráfico, ayudando a equipos que trabajan con documentación mixta.
-- Herramienta educativa de demostración de modelos abliterated: para investigar los efectos de la eliminación de rechazos en modelos de lenguaje, este modelo permite experimentar con distintas cuantizaciones y comparar comportamientos.
+- Despliegue local en estación de trabajo con GPU de consumo: las cuantizaciones Q4_K_M (6,3 GB) o IQ4_XS (5,4 GB) permiten ejecutar el modelo completo en una RTX 4060 Ti de 8 GB o una RTX 3060 de 12 GB mediante llama.cpp, con calidad razonable para chat general y tareas de asistencia.
+- Procesamiento de documentos con imágenes en local: al ser un modelo con capacidad visual, puede usarse para extraer y describir contenido de capturas, diagramas o páginas escaneadas en flujos donde no se quiere enviar datos a servicios en la nube; conviene verificar primero el soporte real de entrada de imagen en el runtime GGUF elegido.
+- Investigación sobre alineación y robustez de salvaguardas: la variante abliterated permite estudiar qué comportamientos emergen al eliminar la dirección de rechazo, comparando respuestas frente al modelo original y midiendo tasas de cumplimiento en conjuntos de prompts sensibles.
+- Generación creativa sin restricciones temáticas: escritura de ficción, guiones o narrativa que aborde violencia, contenido adulto o temas controvertidos, donde un modelo alineado estándar introduciría rechazos o evasivas.
+- Asistente conversacional bilingüe chino-inglés: el modelo está entrenado explícitamente para ambos idiomas, por lo que encaja en aplicaciones de atención al cliente o soporte interno que operen en esos mercados; no se recomienda para castellano sin evaluación previa.
+- Prototipado rápido con Ollama o llama.cpp: las cuantizaciones IQ2/IQ3 (3,5-4,8 GB) permiten levantar un servidor de inferencia en portátiles con GPU modesta o incluso en CPU para pruebas de concepto, aceptando la pérdida de calidad asociada.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 25 variantes del mismo modelo, lo que lo convierte en un banco de pruebas útil para medir la degradación de calidad y velocidad entre IQ1 e Q6 en una tarea concreta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras evaluaciones estándar para este modelo o su base.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: según la cuantización elegida, se requiere entre 3,3 GB (IQ1_M) y 8,4 GB (Q6_K) para los pesos del modelo. A esto hay que sumar la memoria para el contexto y las activaciones, por lo que se recomienda al menos 4 GB de VRAM para las cuantizaciones más pequeñas y 8-10 GB para las más grandes.
-- GPU recomendadas: para las cuantizaciones pequeñas (IQ1_M, IQ2_M) basta con una GPU integrada o una NVIDIA GTX 1650/RTX 2060 con 6 GB. Para Q4_K_M (6,3 GB) se recomienda una RTX 3060/4060 de 8 GB. Para Q6_K (8,4 GB) es adecuada una RTX 3080/4070 de 10-12 GB. También puede ejecutarse en CPU con suficiente RAM (16 GB o más).
-- En consumer GPU: sí, todas las cuantizaciones caben en GPUs de consumo, siendo las más ligeras aptas para portátiles con 4 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier motor compatible con GGUF. También es posible usar el archivo imatrix para generar cuantizaciones personalizadas.
-- Latencia y throughput: no se dispone de datos medidos. En una RTX 4090, un modelo de 9B en Q4_K_M suele generar entre 40-60 tokens/s, pero esto es una estimación general no confirmada.
+- VRAM estimada para inferencia (pesos + overhead de contexto y KV cache):
+  - IQ1_S / IQ1_M: ~3,2-3,3 GB de pesos; ~4-5 GB en ejecución.
+  - IQ2_XXS a IQ2_M: ~3,5-4,0 GB de pesos; ~4,5-6 GB en ejecución.
+  - IQ3_XXS a Q3_K_L: ~4,3-5,3 GB de pesos; ~5,5-7 GB en ejecución.
+  - IQ4_XS a Q4_K_M: ~5,4-6,3 GB de pesos; ~6,5-8,5 GB en ejecución.
+  - Q5_K_S / Q5_K_M: ~6,8-7,2 GB de pesos; ~8-9,5 GB en ejecución.
+  - Q6_K: ~8,4 GB de pesos; ~10-11 GB en ejecución.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB y RTX 4070 Ti Super 16 GB para cuantizaciones Q4-Q6; RTX 4090 24 GB o A100/H100 para Q6_K con contexto largo y margen holgado. Para Q4_K_M basta una RTX 4060 Ti 8 GB o RTX 3070 8 GB.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones hasta Q5_K_M con 8-12 GB; Q6_K requiere 12 GB o más.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. La model card menciona "endpoints_compatible" en los tags, lo que sugiere compatibilidad con endpoints de tipo OpenAI en servidores GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del hardware, del tamaño de cuantización y del runtime.
 
 ## Comparativa con modelos similares
 
-No disponible. No se ha proporcionado información sobre modelos comparables en la misma categoría (vision-lenguaje de ~9B con licencia MIT y formato GGUF). Se podría comparar con otros modelos como LLaVA-1.5-7B o Qwen-VL-7B, pero no hay datos suficientes para establecer una comparación rigurosa.
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
+|---|---|---|---|---|---|
+| Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF (este) | ~9,4B | no disponible | Sí (familia GLM-4.6V) | MIT | GGUF (25 cuants) |
+| huihui-ai/Huihui-GLM-4.6V-Flash-abliterated | no disponible (mismo base) | no disponible | Sí | MIT | safetensors |
+| mradermacher/Huihui-GLM-4.6V-Flash-abliterated-GGUF | ~9,4B (mismo base) | no disponible | Sí | MIT | GGUF estático |
+| GLM-4.6V-Flash original (Zhipu AI) | no disponible | no disponible | Sí | no disponible | safetensors |
+
+La comparación relevante es interna al ecosistema del propio modelo: la versión i1 frente a la estática del mismo autor, y frente al modelo base sin abliterar. No se dispone de datos de benchmarks para establecer comparaciones cuantitativas con alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- Sesgos y contenido no filtrado: al ser abliterated, el modelo puede generar contenido ofensivo, violento, sexual o ilegal sin restricciones. Su uso en producción requiere supervisión humana y políticas de moderación externas.
-- Riesgo de alucinación: como cualquier modelo de lenguaje, puede inventar información, especialmente en tareas de razonamiento o cuando se le piden datos específicos. La ausencia de filtros no mejora la veracidad.
-- Limitaciones de idioma: aunque soporta chino e inglés, no se garantiza un rendimiento óptimo en otros idiomas. El modelo base puede tener sesgos culturales hacia las regiones donde se entrenó.
-- Contexto limitado: no se especifica la longitud de contexto; es probable que sea inferior a 32K tokens, lo que puede restringir el uso en documentos largos o conversaciones extensas.
-- Riesgo de mal uso: la combinación de capacidades multimodales y ausencia de censura facilita la creación de deepfakes, spam o contenido engañoso. Debe utilizarse con responsabilidad y cumpliendo la legislación vigente.
-- Dependencia de cuantización: las cuantizaciones muy agresivas (IQ1_M, IQ2_M) degradan significativamente la calidad del modelo y pueden producir incoherencias. Se recomienda usar al menos Q4_K_M para tareas críticas.
-- Sin garantía de soporte: el repositorio es un trabajo de cuantización de un tercero; no hay mantenimiento activo ni soporte técnico para errores del modelo base.
+- La abliteración elimina la dirección de rechazo, pero no garantiza la ausencia total de respuestas evasivas ni corrige sesgos subyacentes del modelo original; puede aumentar la probabilidad de contenido dañino, inexacto o inapropiado.
+- Riesgo de alucinación inherente a modelos de ~9B: no debe usarse como fuente de verdad en dominios factuales sin verificación externa.
+- Idiomas limitados a chino e inglés según la model card; el rendimiento en castellano no está documentado y probablemente sea deficiente.
+- La licencia MIT se aplica a esta compilación de cuantizaciones, pero conviene verificar los términos del modelo base GLM-4.6V-Flash original de Zhipu AI, ya que pueden imponer restricciones adicionales que prevalezcan sobre la MIT en el uso comercial.
+- El soporte multimodal en formato GGUF depende del runtime: no todos los forks de llama.cpp cargan correctamente el proyector visual; es necesario comprobar la versión concreta antes de asumir entrada de imágenes.
+- Las cuantizaciones IQ1 e IQ2 degradan notablemente la calidad; la propia model card las etiqueta como "for the desperate" o "very low quality". Para producción se recomienda Q4_K_M o superior.
+- No se dispone de información sobre longitud de contexto real, por lo que no se puede garantizar el comportamiento en conversaciones largas.
+- El repositorio tiene 593 descargas y 0 likes en el momento de la consulta, lo que indica una adopción muy limitada y escasa validación comunitaria.
+- El tamaño total del repo (118 GB) obliga a descargar únicamente el fichero de la cuantización deseada, no el repositorio completo.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF
-- Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-GLM-4.6V-Flash-abliterated
-- Repositorio estático de cuantizaciones (incluye mmproj): https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-GGUF
-- Página de descarga y visión general: https://hf.tst.eu/model#Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF
-- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF
+- Modelo base (abliterated, safetensors): https://huggingface.co/huihui-ai/Huihui-GLM-4.6V-Flash-abliterated
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-GGUF
+- Página de resumen del autor para este modelo: https://hf.tst.eu/model#Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Fichero imatrix: https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-i1-GGUF/resolve/main/Huihui-GLM-4.6V-Flash-abliterated.imatrix.gguf

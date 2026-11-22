@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "mounimzad/BrainHR-Adapter-Research-Access",
+  "slug": "mounimzad-brainhr-adapter-research-access",
+  "author": "mounimzad",
+  "url": "https://huggingface.co/mounimzad/BrainHR-Adapter-Research-Access",
+  "created_at": "2026-11-21T23:01:51.000Z",
+  "updated_at": "2026-11-21T23:01:53.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "brainhr",
+    "adapter",
+    "text-generation",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:adapter:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 671149168,
+  "storage_human": "671 MB",
+  "context_length": null,
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BRAIN-ADAPTER: ENHANCING NEUROLOGICAL DISORDER ANALYSIS WITH ...",
+      "url": "http://go/v1/AcsuFBFl8eGhawIi6AGX6THuc7-yRLsS7NZIT01XgP96gHUrVRwtrW17m7f9wqqrluuL28_d46J0gb7gxnKlKMiz5r2dYi2143rpTCpANrhLw5-18TpEBGyjaKHOu-9v1jjO9fA3AvIC7u1gNfFGk-gPn63_no8Hrjbjh86LB00RX6bxoaV01hKFNfzz93KJZC9A2gOzDunUsk52dztw-hDmUMIH",
+      "snippet": "Understanding brain disorders is crucial for accurate clinical diagnosis and treatment. Recent advances in Multimodal Large Language Models (MLLMs) offer a promising approach to interpreting medical images with the support of text descriptions. ..."
+    },
+    {
+      "title": "Brain-Adapter: Enhancing Neurological Disorder Analysis with ...",
+      "url": "http://go/v1/AcsuFBFl8eGhawIi6AGX6THuc7-yRLsS7NZIT01XgSTnz4XlGYV8SUwz5RZ8aPnKi0mOT5BEtU4I8lzMVOyxR3d9H_obYtuRLF0aiFdsGJUMwdMgmpGdBQoGEnSPjRDj6Sr4h7m-EiLoTBds32o0PeSE9kqJpiU8oq1T-XnI_D3t1l6K1omRYebOQmgnX_6KYc4Ja_DMmrWLQACwMqVm2HPgsVp3HgAvUvVRizjTzKvICJg2OjHc7abko4xUlCEa7Z9goi-acAXuUUXB7u70kBKqmgbWf8Oz7Yj8uZ_tocYqdGvw16TUgB5hP-84Tz9TIBP2CZZ5sCIgV9dIDRKFjllrmPr5EncMDg",
+      "snippet": "Understanding brain disorders is crucial for accurate clinical diagnosis and treatment. Recent advances in Multimodal Large Language Models (MLLMs) offer a…"
+    },
+    {
+      "title": "[2501.16282] Brain-Adapter: Enhancing Neurological Disorder Analysis ...",
+      "url": "http://go/v1/AcsuFBFl8eGhawIi6AGX6THuc7-yRLsS7NZIT01Xggv7rsOSRNg50YQeS30pbY9QY-4noas39UFmI9Q421gyX4RxPx7Bs8D9QZCaigQH2hh7AyBVb0moz7ISRyCew4e6eu5CZ2GqHMEodAoEMGKtGYv5BbOy3taAKeolvpuQ0Yn9bMDxU1J_T9F6Q9Fd04awBlQN",
+      "snippet": "Understanding brain disorders is crucial for accurate clinical diagnosis and treatment. Recent advances in Multimodal Large Language Models (MLLMs) offer a promising approach to interpreting medical images with the support of text descriptions. However, previous research has primarily focused on 2D medical images, leaving richer spatial information of 3D images under-explored, and single-modality-based methods are limited by overlooking the critical clinical information contained in other modalities."
+    },
+    {
+      "title": "Bytez",
+      "url": "http://go/v1/AcsuFBFl8eGhawIi6AGX6THuc7-yRLsS7NZIT01Xg-SZrVBuUZ-m1cLji8vHXuz3W7xPNcNOEaXlCEiCe4UuJGu2OdRqo-iqTX56CCF4hcXFWSdGNzH7ce33lN-D-rm-Qmrgo9aT0jKB6BbtFOdlGDF8yz18NPCc7byY_oGBiCT96Gxtba6KkRde6AuYZJ-1pO6l-ajWnGOcGkJfEqEJCA",
+      "snippet": "bytez · Search · Models · Agent · Brain-Adapter: Enhancing Neurological Disorder Analysis with Adapter-Tuning Multimodal Large Language Models | Read Paper on Bytez"
+    }
+  ]
+}

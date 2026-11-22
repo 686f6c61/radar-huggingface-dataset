@@ -2,107 +2,103 @@
 
 ## Resumen
 
-LFM3-1.7B-Base-LiteRT es la conversión al formato LiteRT-LM (TFLite) del checkpoint preentrenado LiquidAI/LFM3-1.7B-Base, publicada por la comunidad litert-community. El objetivo es ejecutar el modelo base directamente en dispositivos de borde (móviles, SoCs ARM, GPUs integradas) sin necesidad de un runtime de PyTorch, empaquetando los pesos en ficheros `.litertlm` con cuantización int8 e int4 mixta y caché KV de 2.048 o 4.096 tokens.
+LFM3-1.7B-Base-LiteRT es la conversión al formato LiteRT-LM del checkpoint preentrenado LiquidAI/LFM3-1.7B-Base, publicada por la comunidad litert-community. El modelo original lo desarrolla Liquid AI y emplea una arquitectura híbrida de 1,73 mil millones de parámetros distribuidos en 24 capas (13 convoluciones cortas con compuerta, 5 capas de atención de ventana deslizante y 6 de atención global), con un vocabulario de 128.000 tokens y cobertura de 16 idiomas. Esta versión empaqueta los pesos en ficheros `.litertlm` listos para ejecutarse en dispositivos de borde mediante la librería LiteRT-LM de Google.
 
-El modelo subyacente es un transformer híbrido de 1,73 mil millones de parámetros en 24 capas que combina 13 convoluciones cortas con compuerta, 5 capas de atención de ventana deslizante y 6 capas de atención global, con un vocabulario de 128.000 tokens y cobertura de 16 idiomas. Al ser un checkpoint base (no instruido), está pensado para continuación de texto y ajuste fino, no para chat directo.
+El problema que resuelve es la ejecución de un modelo de lenguaje de casi 2.000 millones de parámetros en hardware móvil sin necesidad de infraestructura de servidor. Los ficheros ocupan entre 1,44 GB (cuantización mixta int4) y 1,80 GB (int8), e incluyen la caché KV integrada con opciones de 2.048 y 4.096 tokens. En una GPU de Galaxy S26 con LiteRT-LM 0.19.1, el fichero mixto int4 con caché de 2.048 alcanza 32,40-32,63 tokens/s tras un prefill de 1.024 tokens.
 
-La relevancia actual reside en que demuestra la viabilidad de llevar un modelo de casi 2B parámetros a inferencia on-device con velocidades de decodificación de 28 a 35 tokens/s en hardware móvil de gama alta (Galaxy S26), manteniendo una fidelidad alta respecto al modelo original en bfloat16 (98 % de coincidencia en el token más probable con int8).
+Es relevante ahora porque demuestra que la inferencia local en dispositivos de consumo es viable con modelos de arquitectura moderna (híbrida convolución-atención) y cuantizaciones agresivas, aunque se trata de un checkpoint *base* orientado a fine-tuning y a continuación de texto, no a uso conversacional directo. Liquid AI recomienda explícitamente usar la variante post-entrenada LFM3-1.7B para chat, tool calling y agentes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 13 convoluciones cortas con compuerta, 5 capas de atención de ventana deslizante y 6 de atención global (24 capas) |
-| Parametros totales | 1,73 mil millones (1.7B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 2.048 o 4.096 tokens según fichero (`ekv2048` / `ekv4096`); el modelo base declara ventana mayor, pero los ficheros LiteRT-LM limitan la caché KV a esos valores |
-| Tipos de cuantizacion | int8 por canal (todos los pesos) e int4 mixta (proyecciones gate/up del MLP en int4 por bloques de 32, resto en int8) |
+| Arquitectura | Transformer híbrido: 24 capas (13 convoluciones cortas con compuerta, 5 atención de ventana deslizante, 6 atención global) |
+| Parametros totales | 1,73 mil millones |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Caché KV de 2.048 o 4.096 tokens según fichero (prompt + respuesta) |
+| Tipos de cuantizacion | Mixta int4 (MLP gate/up en int4 blockwise de 32 pesos; resto int8 por canal) e int8 por canal |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
-| Licencia | LFM Open License v1.0 (`lfm1.0`, licencia "other") |
-| Formato de pesos | `.litertlm` (LiteRT-LM / TFLite); no se publican safetensors ni GGUF en este repositorio |
-| Tamano de los ficheros | 1,44 GB (int4 mixta) y 1,80 GB (int8) |
-| Vocabulario | 128.000 tokens |
-| Prefill signatures | 1.024, 256, 64, 16, 4 y 1 tokens |
-| Runtime requerido | LiteRT-LM 0.19.1 (verificado), construido con litert-torch y litert-lm-builder 0.18.1 |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | `.litertlm` (TFLite con sección TFLiteWeights externa) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer híbrido denominado LFM3 por Liquid AI: de las 24 capas, 13 son convoluciones cortas con compuerta (gated short convolutions), 5 usan atención de ventana deslizante y 6 usan atención global. Esta mezcla reduce el coste de atención en secuencias largas y favorece la eficiencia en hardware de borde frente a un transformer denso con atención completa en todas las capas. El vocabulario de 128.000 tokens y la cobertura de 16 idiomas provienen del modelo original.
+La arquitectura es un transformer híbrido que combina capas de convolución corta con compuerta (gated short convolutions) y capas de atención, repartidas en 13 convoluciones, 5 atenciones de ventana deslizante y 6 atenciones globales sobre 24 capas totales. Esta mezcla reduce el coste computacional de la atención completa manteniendo capacidad de modelado de dependencias largas. El vocabulario es de 128.000 tokens, lo que favorece la compresión de texto multilingüe.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; el modelo es un checkpoint preentrenado (base), por lo que no incluye post-entrenamiento orientado a instrucciones. La conversión a LiteRT-LM se realizó con litert-torch (commit f61d0b7) y litert-lm-builder 0.18.1. Cada fichero incluye el `tokenizer.json` original byte a byte, la plantilla de chat de LFM3-1.7B con ediciones documentadas y un canal de pensamiento (`<think>` … `</think>`). Los ficheros no declaran sampler ni tipo de activación: LiteRT-LM selecciona el token más probable en cada paso y, en GPU, ejecuta activaciones en fp16.
+El checkpoint original es un modelo *base* preentrenado; la model card no detalla el número exacto de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO (no disponible). La conversión a LiteRT-LM se realizó con litert-torch (commit f61d0b7) y litert-lm-builder 0.18.1, y posteriormente se reempaquetó con litert-lm-builder 0.18.0 para colocar los pesos en una sección TFLiteWeights. Los ficheros incluyen firmas de prefill de 1.024, 256, 64, 16, 4 y 1 tokens, el `tokenizer.json` original byte a byte, la plantilla de chat de LFM3-1.7B y un canal de pensamiento (`<think>` … `</think>`). No declaran sampler ni tipo de activación: LiteRT-LM selecciona el token más probable en cada paso y en GPU usa activaciones fp16.
 
 ## Capacidades
 
-- Generación y continuación de texto autoregresiva (modelo base, sin instrucciones).
-- Aprendizaje en contexto mediante prompts few-shot (por ejemplo, pares `Question: … / Answer: …`).
-- Razonamiento básico y matemáticas elementales vía few-shot (evaluado en GSM8K).
-- Capacidades multilingües en 16 idiomas: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
-- Plantilla de chat incluida con modo de pensamiento (`<think>`) activado por defecto y desactivable con `ThinkingConfig(enable_thinking=False)`.
-- Ejecución on-device en CPU y GPU mediante el runtime LiteRT-LM, con backends seleccionables.
-- No incluye de forma nativa soporte de tool calling ni de agentes; el autor remite a LFM3-1.7B (versión instruida) para esos casos.
+- Generación de texto y continuación de contexto: el modelo está diseñado para completar texto a partir de un prefijo, sin parada natural propia.
+- Aprendizaje few-shot: admite prompts con ejemplos resueltos en formato `Question: …\nAnswer: …` y corte de la respuesta en el siguiente `\nQuestion:`.
+- Razonamiento básico y matemáticas: la model card reporta 72,3 de 100 preguntas de GSM8K en la versión int8 y 69,0 en la mixta int4 (el modelo fuente en bfloat16: 69).
+- Capacidades multilingües: 16 idiomas declarados (inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco).
+- Canal de pensamiento: los ficheros incluyen el canal `<think>` … `</think>` y la plantilla de chat, activable o desactivable mediante `ThinkingConfig`.
+- Tool calling y agentes: no es una capacidad del checkpoint base; Liquid AI remite a LFM3-1.7B para esas funciones.
+- Visión y audio: no disponible (modelo solo de texto).
 
 ## Casos de uso
 
-- Continuación de texto en aplicaciones móviles: el modelo puede completar fragmentos de texto en el propio dispositivo con los ficheros int4 (1,44 GB), sin conexión a red, usando `--no-template` y un límite de tokens de salida.
-- Ajuste fino específico de dominio: al ser un checkpoint base, es la base recomendada por Liquid AI para entrenar asistentes de idioma o de dominio con datos propietarios antes de volver a convertir a LiteRT-LM.
-- Clasificación y extracción de información mediante few-shot: incluyendo ejemplos resueltos en el prompt y cortando la respuesta en el siguiente delimitador, se puede usar para tareas de etiquetado o extracción en entornos sin backend.
-- Evaluación de razonamiento matemático elemental on-device: los ficheros se han validado con GSM8K en formato few-shot (72,3/100 con int8, 69,0/100 con int4 mixta), útil para prototipos educativos o de verificación.
-- Asistentes multilingües embebidos: la cobertura de 16 idiomas permite desplegar un único modelo para aplicaciones de traducción o generación de texto en mercados con varios idiomas.
-- Investigación en eficiencia de inferencia: sirve como banco de pruebas para comparar int8 frente a int4 mixta y distintos tamaños de caché KV (2.048 frente a 4.096) en hardware de borde.
-- Prototipado de pipelines de generación en Android: con `litert_lm_advanced_main` y `--use_session=true` se puede integrar en aplicaciones Android que requieran generación local con latencia controlada.
+- Asistentes de dominio con fine-tuning: el modelo base está pensado para ajuste fino sobre datos propios (legal, médico, técnico) y desplegarse en el dispositivo; su tamaño de 1,44-1,80 GB permite distribuirlo dentro de una app móvil.
+- Autocompletado y continuación de texto en aplicaciones de escritura: con `--no-template` y un límite de tokens, el modelo continúa un párrafo o documento respetando el estilo del prefijo.
+- Clasificación y extracción few-shot: usando pares `Question: …\nAnswer: …` se pueden construir clasificadores ligeros sin entrenamiento adicional, con la ventaja de que todo el procesamiento ocurre localmente.
+- Procesamiento de texto multilingüe en el borde: con 16 idiomas cubiertos, sirve para normalización, resumen o reescritura de textos en apps que no pueden enviar datos a la nube.
+- Investigación en eficiencia de inferencia: los ficheros permiten medir latencia y throughput de arquitecturas híbridas en GPU y CPU móviles, con variantes int4 e int8 comparables.
+- Base para post-entrenamiento con nuevos métodos: Liquid AI lo indica explícitamente para experimentar con técnicas de alineación o instrucción sobre un checkpoint preentrenado.
+- Prototipado de asistentes conversacionales: aunque no es su uso recomendado, la plantilla de chat incluida permite probar el formato conversacional antes de migrar a LFM3-1.7B.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor de la conversión (2026-11-08, Galaxy S26):
+Datos reportados en la model card para los ficheros de esta conversión:
 
-| Metrica | int8 | int4 mixta |
-|---|---|---|
-| Coincidencia con el token más probable del modelo fuente | 98 % | 93 % |
-| GSM8K (media, few-shot) | 72,3 / 100 | 69,0 / 100 |
-| Decodificación en GPU (tokens/s, tras prompt de 1.024 tokens) | 28,61 | 32,48 |
-| Decodificación en CPU (tokens/s) | 31,13 | 35,11 |
-| Prefill en CPU (tokens/s) | 752,2 | 329,6 |
-| Tiempo hasta el primer token (prompt de 1.024 tokens, CPU) | 1,39 s | 3,16 s |
-| Tamano del fichero | 1,80 GB | 1,44 GB |
+| Metrica | Mixta int4 | int8 | Fuente (bfloat16) |
+|---|---|---|---|
+| Acuerdo de top-token | 93 % | 98 % | referencia |
+| GSM8K (sobre 100) | 69,0 | 72,3 | 69 |
 
-Referencia del modelo fuente en bfloat16: 69 en GSM8K. No se han publicado en la información disponible resultados de MMLU, HumanEval ni otros benchmarks estándar para esta conversión.
+Rendimiento en Galaxy S26 (LiteRT-LM 0.19.1, 2026-11-18, cuatro ejecuciones):
+
+| Metrica | Mixta int4 (ekv2048) | int8 (ekv2048) | Mixta int4 (CPU) | int8 (CPU) |
+|---|---|---|---|---|
+| Decodificación GPU | 32,40-32,63 tok/s | 28,61 tok/s (2026-11-08) | — | — |
+| Decodificación CPU | 35,11 tok/s | 31,13 tok/s | — | — |
+| Prefill CPU | 329,6 tok/s | 752,2 tok/s | — | — |
+| Tiempo al primer token (CPU, prefill 1.024) | 3,16 s | 1,39 s | — | — |
+
+No se han publicado resultados de benchmarks estándar adicionales (MMLU, HumanEval, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/almacenamiento: 1,44 GB para el fichero int4 mixta y 1,80 GB para int8; el consumo en memoria durante la inferencia debe sumar la caché KV (2.048 o 4.096 tokens) y las activaciones en fp16 en GPU.
-- Cabe en GPUs de consumo y en móviles de gama alta; las cifras publicadas corresponden a un Galaxy S26 (GPU y CPU).
-- GPUs de escritorio: no se han publicado cifras para A100, H100 o RTX 4090; el modelo está orientado a borde, no a servidor.
-- Despliegue: runtime LiteRT-LM 0.19.1 (CLI `litert-lm run` y API Python `litert_lm.Engine`), con backends `--backend gpu` o `--backend cpu`; en Android, `litert_lm_advanced_main` con `--use_session=true`.
-- No hay soporte documentado en esta ficha para vLLM, llama.cpp, Ollama o TGI, ya que el formato `.litertlm` es específico de LiteRT-LM.
-- Latencia y throughput: ver tabla de benchmarks (28,61–35,11 tokens/s en decodificación; 329,6–752,2 tokens/s en prefill en CPU).
+- VRAM/RAM estimada: 1,44 GB para los ficheros mixtos int4 y 1,80 GB para los int8, más el espacio de la caché KV (2.048 o 4.096 tokens).
+- GPU recomendadas: no se especifican modelos de escritorio; las mediciones publicadas corresponden a la GPU de un Galaxy S26.
+- GPU de consumo: por tamaño, los ficheros caben en GPUs de consumo con 4 GB o más de VRAM, aunque no hay mediciones publicadas para RTX 4090, A100 o H100.
+- Despliegue: LiteRT-LM 0.19.1 mediante CLI (`uvx --from litert-lm==0.19.1 litert-lm run`) o API de Python (`litert_lm.Engine`), con backend GPU o CPU (`thread_count=4` en las pruebas de CPU).
+- Latencia y throughput: ver tabla de benchmarks; el prefill de 1.024 tokens en CPU tarda 1,39 s (int8) y 3,16 s (mixta int4) hasta el primer token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Base-LiteRT (este) | 1,73B | 2.048 / 4.096 tokens (caché KV) | `.litertlm` / LiteRT-LM | LFM Open License v1.0 | Modelo base, on-device, 16 idiomas |
-| LFM3-1.7B-LiteRT | 1,73B | No disponible en la información | `.litertlm` / LiteRT-LM | LFM Open License v1.0 | Versión instruida; recomendada para chat, tool calling y agentes |
-| LiquidAI/LFM3-1.7B-Base | 1,73B | No disponible en la información | Pesos originales (no especificado) | LFM Open License v1.0 | Checkpoint fuente en bfloat16; referencia de calidad (GSM8K 69) |
-
-No se dispone en la información proporcionada de comparaciones con modelos de otros fabricantes (por ejemplo, alternativas de 1–2B para borde); se indica "no disponible".
+| LFM3-1.7B-Base-LiteRT | 1,73 B | 2.048 / 4.096 | litertlm | lfm1.0 | Conversión on-device del base |
+| LiquidAI/LFM3-1.7B-Base | 1,73 B | no disponible | safetensors | lfm1.0 | Checkpoint original en bfloat16 |
+| LiquidAI/LFM3-1.7B | 1,73 B | no disponible | safetensors | lfm1.0 | Variante post-entrenada para chat, tool calling y agentes |
+| litert-community/LFM3-1.7B-LiteRT | 1,73 B | no disponible | litertlm | lfm1.0 | Conversión on-device de la variante post-entrenada |
 
 ## Limitaciones y advertencias
 
-- Es un modelo base: no está alineado para instrucciones ni diálogo; el propio autor recomienda LFM3-1.7B para chat, tool calling y agentes.
-- No incluye soporte nativo de function calling ni de razonamiento multi-paso orientado a agentes.
-- La ventana efectiva en estos ficheros está limitada por la caché KV a 2.048 o 4.096 tokens, muy por debajo de la ventana declarada del modelo original.
-- Riesgo de alucinación inherente a un modelo preentrenado; no se han publicado evaluaciones de sesgo en la información disponible.
-- La cuantización int4 mixta reduce la fidelidad (93 % de coincidencia frente al 98 % de int8) y el rendimiento en GSM8K (69,0 frente a 72,3).
-- La licencia LFM Open License v1.0 impone condiciones específicas; debe revisarse el fichero `LICENSE` antes de cualquier uso comercial.
-- El formato `.litertlm` requiere LiteRT-LM 0.19.1; no es directamente compatible con los runtimes habituales de servidor.
-- Los ficheros no declaran sampler: la selección es greedy (token más probable), lo que limita la diversidad de las generaciones.
-- En Python, se recomienda una instancia de `Engine` por texto; el uso concurrente no está documentado.
+- Es un modelo *base*: no está alineado para instrucciones ni conversación; Liquid AI desaconseja su uso directo para chat, tool calling y agentes.
+- Un modelo base rara vez termina un texto por sí mismo; sin límite de tokens escribe hasta llenar el contexto.
+- Riesgo de alucinación y de generar contenido sesgado o incorrecto: no se documentan mitigaciones ni evaluaciones de sesgo en la información disponible.
+- Contexto limitado a 2.048 o 4.096 tokens según fichero; `ekv4096` decodifica más lento que `ekv2048` en el Galaxy S26.
+- La licencia lfm1.0 ("other") puede imponer restricciones al uso comercial; es necesario revisar el fichero LICENSE antes de desplegar.
+- Los ficheros no declaran sampler ni tipo de activación; el comportamiento de muestreo queda a cargo de LiteRT-LM (token más probable en cada paso).
+- La model card menciona "Known runtime issues" relacionados con el reempaquetado de pesos en la sección TFLiteWeights; conviene verificar la versión de runtime.
+- El rendimiento medido corresponde a un único dispositivo (Galaxy S26); no hay datos para otras plataformas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/litert-community/LFM3-1.7B-Base-LiteRT
+- Hugging Face: https://huggingface.co/litert-community/LFM3-1.7B-Base-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
-- Versión instruida: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Conversión LiteRT-LM de la versión instruida: https://huggingface.co/litert-community/LFM3-1.7B-LiteRT
-- Ficheros de la versión instruida: https://huggingface.co/litert-community/LFM3-1.7B-LiteRT/tree/main
+- Variante post-entrenada: https://huggingface.co/LiquidAI/LFM3-1.7B
+- Conversión on-device de la variante post-entrenada: https://huggingface.co/litert-community/LFM3-1.7B-LiteRT
 - Licencia: https://huggingface.co/litert-community/LFM3-1.7B-Base-LiteRT/blob/main/LICENSE

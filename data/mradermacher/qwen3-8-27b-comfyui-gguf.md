@@ -2,78 +2,91 @@
 
 ## Resumen
 
-El repositorio `mradermacher/Qwen3.8-27B-ComfyUI-GGUF` contiene cuantizaciones GGUF del modelo `Rom3rk/Qwen3.8-27B-ComfyUI`, un fine-tune del modelo Qwen3.8-27B de Alibaba orientado a flujos de trabajo de ComfyUI. El cuantizador, mradermacher, publica versiones estáticas en varios formatos (Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, IQ4_XS y f16) junto con los ficheros multimodales (mmproj) necesarios para la parte de visión. El modelo base Qwen3.8-27B es un transformer denso de 27 000 millones de parámetros con capacidades de visión y lenguaje, contexto nativo de 262 144 tokens y licencia Apache-2.0.
+Qwen3.8-27B-ComfyUI-GGUF es la versión cuantizada en formato GGUF del modelo tolgaertunc/Qwen3.8-27B-ComfyUI, un ajuste fino (SFT) del modelo Qwen3.8 de 27.320.697.856 parámetros orientado a flujos de trabajo de ComfyUI y a tareas de visión-lenguaje. El trabajo de cuantización lo firma mradermacher, un conocido publicador de quants estáticos para la comunidad de inferencia local. El resultado es un conjunto de ficheros GGUF que permiten ejecutar un modelo multimodal de ~27B en hardware de consumo mediante llama.cpp y derivados.
 
-La relevancia de esta cuantización radica en que permite ejecutar un modelo de 27B con visión y razonamiento en hardware de consumo (GPUs de 16-24 GB) mediante GGUF, integrándolo en el ecosistema ComfyUI a través de nodos como ComfyUI-GGUF-FX. El fine-tune específico para ComfyUI sugiere un ajuste orientado a tareas de generación de prompts, descripción de imágenes o asistentes conversacionales dentro de ese entorno. Al ser una cuantización estática, no se han aplicado técnicas de imatrix ni de ponderación por importancia, según indica el autor.
+El modelo base incorpora las etiquetas `vision-language` y `mtp` (multi-token prediction), lo que indica capacidades multimodales y una cabeza de predicción multi-token. El ajuste se realizó con Unsloth según los tags del repositorio. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque conviene verificar las condiciones del modelo base original.
+
+La relevancia de esta ficha es práctica: ofrece un abanico de cuantizaciones desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), más dos ficheros `mmproj` (proyector multimodal) en Q8_0 y f16. Con 716 descargas y creado en agosto de 2026, es un artefacto reciente y de nicho, pensado para quienes quieren probar el modelo sin depender de GPUs de datacenter.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con módulo de visión (vision-language) |
-| Parametros totales | 27.320.697.856 (~27,3B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262.144 tokens (nativo) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16 |
-| Idiomas soportados | Inglés (etiqueta del repo); el modelo base Qwen3.8-27B es multilingüe |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con ficheros mmproj en Q8_0 y f16) |
+| Arquitectura | Transformer (derivada de Qwen3.8), multimodal con proyector `mmproj` y cabeza MTP; detalles internos no disponibles |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado) y safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-27B es un modelo de la familia Qwen3.8 de Alibaba, de arquitectura transformer densa con un módulo de visión que procesa imágenes y video (hasta una hora de duración). El contexto nativo es de 262 144 tokens, ampliable hasta 1 000 000 mediante una función alojada en Qwen Cloud (aún no disponible localmente). El modelo base fue entrenado con un enfoque de razonamiento y capacidades de agente, según la documentación de Unsloth.
+El modelo base es un ajuste fino supervisado (SFT) del Qwen3.8 de 27B, realizado con Unsloth según los tags del repositorio. La presencia de la etiqueta `vision-language` y de los ficheros `mmproj` confirma que se trata de un modelo multimodal: un codificador visual se conecta al transformer de lenguaje mediante un proyector que se distribuye como fichero GGUF aparte. La etiqueta `mtp` sugiere una cabeza de predicción multi-token, técnica que permite generar varios tokens por paso de decodificación y mejorar el throughput.
 
-El fine-tune `Rom3rk/Qwen3.8-27B-ComfyUI` se realizó mediante SFT (supervised fine-tuning) con la librería Unsloth, según los tags del repositorio. No se dispone de detalles sobre el dataset de entrenamiento ni sobre el proceso exacto. La cuantización de mradermacher es una conversión estática de los pesos a formato GGUF, sin aplicar técnicas de imatrix ni de cuantización ponderada. Los ficheros mmproj (multi-modal projection) se incluyen por separado para habilitar la parte de visión en los runners GGUF.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset de ajuste ni si se aplicaron etapas de RLHF o DPO. Tampoco se documentan innovaciones adicionales como atención lineal o decodificación especulativa. El trabajo de mradermacher consiste en cuantización estática (sin imatrix, según indica la model card) de los pesos del modelo base, manteniendo el proyector multimodal en dos precisiones separadas.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base Qwen3.8-27B está diseñado para tareas de chat, razonamiento y codificación, con soporte de agentes (multi-step reasoning).
-- Visión y lenguaje: procesa imágenes y video, pudiendo describir contenido visual o responder preguntas sobre él.
-- Integración con ComfyUI: el fine-tune está orientado a flujos de trabajo de ComfyUI, lo que sugiere capacidades específicas para generar prompts de difusión o describir imágenes de entrada.
-- Contexto largo: ventana de 262 144 tokens, adecuada para documentos extensos o conversaciones multi-turno.
-- Multilingüismo: el modelo base soporta varios idiomas, aunque el repo está etiquetado como inglés.
-- Tool calling: no confirmado explícitamente, pero las capacidades de agente del modelo base sugieren soporte para llamadas a herramientas.
+- Generación de texto conversacional en inglés, con ajuste específico para diálogo multi-turno.
+- Procesamiento de imágenes: los ficheros `mmproj` permiten entrada visual junto con texto.
+- Predicción multi-token (MTP) según los tags del repositorio, orientada a acelerar la generación.
+- Integración con ComfyUI: el ajuste del modelo base está pensado para flujos de trabajo de generación visual en ese entorno.
+- Capacidades de razonamiento y código: no confirmadas explícitamente en la información disponible.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
 
 ## Casos de uso
 
-- Generación de prompts para ComfyUI: el modelo puede producir descripciones detalladas y estilizadas para guiar la generación de imágenes en flujos de trabajo de ComfyUI, aprovechando el fine-tune específico.
-- Descripción de imágenes de entrada: gracias al módulo de visión, puede analizar una imagen y generar un texto descriptivo, útil para anotación automática o para alimentar otros nodos del pipeline.
-- Asistente conversacional con contexto largo: con 256K de contexto, puede mantener conversaciones extensas sobre documentos o historiales largos, integrándose en aplicaciones de chat.
-- Razonamiento multimodal: combina entrada visual y textual para tareas de pregunta-respuesta sobre imágenes o video, por ejemplo en entornos de investigación.
-- Agente de codificación: el modelo base tiene capacidades de agente y codificación, por lo que puede usarse para generar o revisar código dentro de un entorno de desarrollo.
-- Análisis de video: al soportar video de hasta una hora, puede resumir o extraer información de secuencias largas, aunque la cuantización puede afectar la precisión.
+- Flujos de trabajo en ComfyUI: el modelo se puede cargar como nodo de lenguaje/visión dentro de un grafo de ComfyUI para generar descripciones, prompts o evaluar imágenes intermedias, aprovechando el ajuste específico del modelo base.
+- Asistentes conversacionales en local: con la cuantización Q4_K_M (16,9 GB) se puede desplegar un chatbot multi-turno en una estación de trabajo con una sola GPU de 24 GB, sin depender de APIs externas.
+- Descripción y análisis de imágenes: usando el fichero `mmproj-Q8_0` (0,7 GB) junto con un quant de pesos, se puede construir un pipeline de image captioning o respuesta a preguntas visuales en inglés.
+- Prototipado de investigación multimodal: la disponibilidad de cuantizaciones desde 11 GB permite experimentar con un modelo de 27B en GPUs de consumo, algo inviable con los pesos en f16.
+- Generación de prompts para pipelines de difusión: el ajuste orientado a ComfyUI sugiere utilidad para expandir o refinar prompts de texto a imagen dentro de un flujo automatizado.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece once variantes de pesos, lo que permite medir el impacto de la cuantización en calidad y velocidad sobre una misma tarea antes de fijar una configuración de producción.
+- Despliegue en entornos con restricciones de red: al ser pesos GGUF descargables y ejecutables con llama.cpp, encaja en escenarios on-premise sin conectividad externa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de cuantización no incluye métricas de rendimiento, y la model card del modelo base no se ha proporcionado en su totalidad. Se recomienda consultar la página de Qwen/Qwen3.8-27B para obtener datos de evaluación del modelo original.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q4_K_M, el modelo ocupa aproximadamente 16-18 GB, lo que permite ejecutarlo en GPUs de consumo con 24 GB (RTX 3090, RTX 4090) o incluso en algunas de 16 GB con cuantizaciones más agresivas (Q3_K_M o IQ4_XS).
-- GPU recomendadas: RTX 3090/4090 (24 GB), A100 (40/80 GB), H100 (80 GB). Para cuantizaciones Q8_0 o f16 se necesitan al menos 32 GB de VRAM.
-- Compatibilidad con consumer GPU: sí, con cuantizaciones Q4 o inferiores en GPUs de 16-24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con soporte GGUF), TGI, y específicamente ComfyUI mediante el nodo ComfyUI-GGUF-FX.
-- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia (pesos + overhead de contexto): Q2_K ~11 GB, Q3_K_M ~13,6 GB, IQ4_XS ~15,5 GB, Q4_K_M ~16,9 GB, Q5_K_M ~19,6 GB, Q6_K ~22,5 GB, Q8_0 ~29,1 GB. Añadir el `mmproj` (0,7 GB en Q8_0, 1,0 GB en f16) si se usa entrada visual.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; RTX 3090 (24 GB) para las mismas configuraciones; A100 40/80 GB o H100 para Q8_0 y contextos largos.
+- Cabe en GPU de consumo: sí. Q2_K y Q3_K_S caben en GPUs de 12-16 GB; Q4_K_M es la opción recomendada para 24 GB. Las variantes Q6_K y Q8_0 requieren 24 GB o más y dejan poco margen para el contexto.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; los ficheros `mmproj` requieren soporte multimodal del runner (por ejemplo, llama.cpp con `--mmproj`). Para el modelo base en safetensors, transformers.
+- Latencia y throughput estimados: no disponibles. La cabeza MTP podría mejorar el throughput, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks para comparar directamente esta cuantización con otras alternativas. A nivel de modelo base, Qwen3.8-27B compite con otros modelos vision-language de tamaño similar, como Qwen2.5-VL-27B (si existiera) o LLaVA-NeXT-34B. Sin embargo, no se han proporcionado métricas comparativas en la información disponible. La principal ventaja de este repo es su integración específica con ComfyUI y la disponibilidad de múltiples cuantizaciones GGUF.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-ComfyUI-GGUF (este) | 27,3B | no disponible | Apache 2.0 | GGUF | Multimodal, ajuste para ComfyUI, solo inglés |
+| tolgaertunc/Qwen3.8-27B-ComfyUI | 27,3B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva este |
+| Qwen3.8 (modelo original) | no disponible | no disponible | no disponible | no disponible | Referencia de la familia; specs no confirmadas en la información disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se ha documentado ningún sesgo específico, pero el modelo base puede heredar sesgos de sus datos de entrenamiento.
-- Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento o descripción visual.
-- Limitaciones de contexto: aunque el contexto nativo es de 262 144 tokens, el rendimiento puede degradarse con entradas muy largas; la ampliación a 1M tokens solo está disponible en la nube de Qwen.
-- Idioma: el repo está etiquetado como inglés; aunque el modelo base es multilingüe, el fine-tune para ComfyUI puede estar optimizado principalmente para inglés.
-- Restricciones de licencia: Apache-2.0 permite uso comercial sin restricciones significativas, pero se debe mantener la atribución.
-- Cuantización estática: al no usar imatrix, la calidad puede ser ligeramente inferior a cuantizaciones ponderadas del mismo tamaño.
-- Dependencia de ComfyUI: el fine-tune está pensado para ese ecosistema; su uso fuera de él puede no aprovechar todo su potencial.
+- Idioma: el modelo declara únicamente inglés (`en`); el rendimiento en castellano no está garantizado.
+- Contexto: la longitud de contexto no está documentada; no se debe asumir una ventana larga en producción.
+- Cuantización: las variantes Q2_K y Q3_K degradan la calidad de forma notable; la model card advierte que Q3_K_M es de "lower quality". Los quants con imatrix no están disponibles, lo que puede reducir la calidad frente a alternativas ponderadas del mismo tamaño.
+- Alucinación: al ser un ajuste fino SFT sin etapa de preferencia documentada, el riesgo de alucinación no está mitigado explícitamente.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo Qwen3.8 original y del ajuste de tolgaertunc, ya que la ficha solo declara la licencia del artefacto cuantizado.
+- Procedencia: el modelo base es un ajuste de la comunidad con 0 likes y tracción limitada; no hay validación independiente de su calidad.
+- Compatibilidad: el soporte de `mmproj` y de la cabeza MTP depende del runner; no todos los frontends GGUF los aprovechan.
+- Producción: sin benchmarks publicados ni datos de contexto, no se recomienda su uso en sistemas críticos sin una evaluación propia previa.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-ComfyUI-GGUF
-- Modelo base (fine-tune): https://huggingface.co/Rom3rk/Qwen3.8-27B-ComfyUI
-- Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
-- Nodo ComfyUI-GGUF-FX: https://github.com/weekii/ComfyUI-GGUF-FX
-- Guía para ejecutar Qwen 3.8 localmente: https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/
+- Modelo base: https://huggingface.co/tolgaertunc/Qwen3.8-27B-ComfyUI
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-ComfyUI-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica de perplejidad por tipo de quant (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

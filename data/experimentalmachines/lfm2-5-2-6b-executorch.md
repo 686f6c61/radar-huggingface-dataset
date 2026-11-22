@@ -2,113 +2,88 @@
 
 ## Resumen
 
-LFM2.5-2.6B-ExecuTorch es un conjunto de exportaciones cuantizadas del modelo LiquidAI/LFM2.5-2.6B (revision `654f9463ce32`) preparadas para inferencia en dispositivo con ExecuTorch 1.4.0. Lo publica el usuario experimentalmachines y su proposito es llevar un modelo de ~2,6B parametros a telefonos y dispositivos arm64 sin depender de GPU ni de servidores externos, empaquetando pesos y grafo en archivos `.pte` listos para ejecutar con el backend XNNPACK sobre CPU.
+LFM2.5-2.6B-ExecuTorch es una exportación del modelo LiquidAI/LFM2.5-2.6B (revisión `654f9463ce32`) al formato ExecuTorch, preparada por el usuario experimentalmachines para inferencia en dispositivo (on-device) en Android. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión cuantizada y empaquetada del modelo base de Liquid AI, pensada para ejecutarse con el runtime ExecuTorch 1.4.0 y con la aplicación Android openweights.
 
-El paquete cubre cinco ventanas de contexto (2.048, 4.096, 8.192, 16.384 y 32.768 tokens), cada una con su propio archivo porque la cache KV se reserva completa en el momento de cargar el modelo. Los pesos se cuantizan a 4 bits en grupos de 32 con activaciones dinamicas de 8 bits (esquema 8da4w, GPTQ), embeddings int8 por canal y cache KV en fp32, lo que deja cada `.pte` en torno a 1,78-1,81 GB. El repositorio completo ocupa 10,8 GB porque incluye las cinco variantes duplicadas.
+El repositorio ofrece dos familias de artefactos: ventanas XNNPACK (CPU) para cualquier dispositivo arm64 con contextos fijos de 2k a 32k tokens, y ventanas MediaTek NeuroPilot para el SoC MT6991 (Dimensity 9400) con contextos de 512 a 8k tokens. La ventana de contexto queda fijada dentro de cada archivo `.pte`, de modo que el runtime reserva la totalidad de la caché KV al cargar el modelo; por eso el autor incluye la estimación `fits_phone_budget` contra un presupuesto de 5 GB en cada `config.json`.
 
-Es relevante ahora porque permite desplegar un LLM de gama media en Android con integracion directa en la aplicacion openweights, sin cuantizacion adicional por parte del usuario. La contrapartida es que se trata de un artefacto de exportacion: la model card no documenta evaluaciones de calidad, idiomas soportados ni detalles de entrenamiento del modelo original, y la licencia heredada (lfm1.0) no es una licencia de codigo abierto estandar.
+La relevancia de esta ficha radica en que demuestra un flujo práctico de despliegue de un LLM de 2,6B parámetros en teléfonos de gama alta, con cuantización GPTQ de 8 bits por canal de grupo y pesos de 4 bits (8da4w) para CPU, y activaciones de 16 bits con pesos de 8 bits (a16w8) para la NPU de MediaTek. El tamaño del repositorio es de 24,4 GB, aunque cada archivo individual ronda entre 0,84 GB y 1,81 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en la informacion proporcionada (modelo base LiquidAI/LFM2.5-2.6B) |
-| Parametros totales | 2,6B (segun la denominacion del modelo base; la model card no detalla el desglose) |
-| Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
-| Longitud de contexto | hasta 32.768 tokens; variantes exportadas de 2.048, 4.096, 8.192, 16.384 y 32.768 tokens |
-| Tipos de cuantizacion | 8da4w GPTQ: activaciones dinamicas int8, pesos 4 bits en grupos de 32, embeddings int8 por canal, cache KV fp32 |
+| Arquitectura | Transformer (modelo base LiquidAI/LFM2.5-2.6B); exportado a ExecuTorch |
+| Parametros totales | 2,6B (según el nombre del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | Fija por archivo: 512, 2.048, 4.096, 8.192, 16.384 o 32.768 tokens según variante |
+| Tipos de cuantizacion | XNNPACK: 8da4w-gptq (grupo de 8 bits, pesos 4 bits, GPTQ); MediaTek: a16w8 (activaciones 16 bits, pesos 8 bits); embeddings NeuroPilot en fp32 |
 | Idiomas soportados | no disponible |
-| Licencia | other / lfm1.0 (heredada de LiquidAI/LFM2.5-2.6B; archivo LICENSE incluido sin cambios) |
-| Formato de pesos | ExecuTorch `.pte` (backend XNNPACK, CPU arm64) + `tokenizer.json` |
-| Backend de ejecucion | XNNPACK con operadores extendidos, cualquier arm64 |
-| Version de runtime | ExecuTorch 1.4.0 |
-| Tamano por archivo | 1,78-1,81 GB segun ventana |
-| Tamano del repositorio | 10,8 GB |
-| Cache KV | 32.768 bytes por token en fp32 (64 MiB a 2k; 1 GiB a 32k), reservada completa al cargar |
-| Prefill chunk | 2.048 tokens |
-| Descargas / likes | 64 / 0 |
-| Fecha de creacion | 2026-09-07 |
-| Ultima actualizacion | 2026-09-18 |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | `.pte` (ExecuTorch); `tokenizer.json`; embeddings `.bin` (fp32) para NeuroPilot |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo base ni su proceso de entrenamiento. Lo unico documentado es el pipeline de exportacion: se uso la herramienta `export_llm` de ExecuTorch 1.4.0 sobre LiquidAI/LFM2.5-2.6B, con cuantizacion 8da4w GPTQ (activaciones dinamicas de 8 bits, pesos de 4 bits agrupados de 32 en 32), embeddings cuantizados a int8 por canal, backend XNNPACK con operadores extendidos, chunk de prefill de 2.048 tokens y cache KV en fp32. El tokenizador se copia sin modificar del repositorio de origen.
+El modelo base es LiquidAI/LFM2.5-2.6B, un transformer de 2,6B parámetros desarrollado por Liquid AI. Esta ficha no documenta los detalles de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO), por lo que esos datos deben consultarse en la model card original de LiquidAI/LFM2.5-2.6B. La contribución de este repositorio es exclusivamente la exportación y cuantización para ExecuTorch.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. Tampoco se documentan innovaciones tecnicas propias del export mas alla del propio flujo de ExecuTorch. El unico registro de validacion publicado es un smoke test que devuelve "Paris" para cada una de las cinco ventanas, lo que confirma que el grafo carga y genera, pero no aporta ninguna medida de calidad.
+La exportación emplea dos backends. Para CPU arm64 se usa XNNPACK con cuantización GPTQ 8da4w: pesos de 4 bits con grupos de 8 bits, lo que produce archivos de entre 1,78 GB (2k) y 1,81 GB (32k). Para la NPU MediaTek MT6991 se usa NeuroPilot con cuantización a16w8, dividida en tres fragmentos por ventana (chunks 1of3, 2of3 y 3of3), con un total aproximado de 2,78 GB por ventana más una tabla de embeddings fp32 compartida. La caché KV se reserva íntegra al cargar el modelo y consume 32.768 bytes por token en fp32 para XNNPACK, es decir, 67 MB para 2k tokens y 1.073 MB para 32k tokens. Cada carpeta incluye un `config.json` con metadatos por variante y un `export-report-<window>.json` con el registro completo de exportación.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en el dispositivo, con pipeline `text-generation`.
-- Ejecucion completamente local en CPU arm64 mediante XNNPACK, sin necesidad de GPU ni de conectividad de red.
-- Cinco perfiles de contexto seleccionables en tiempo de carga: 2k, 4k, 8k, 16k y 32k tokens.
-- Integracion directa con la aplicacion Android openweights, que consume los archivos `.pte`.
-- Compatibilidad con cualquier runtime ExecuTorch 1.4.0, no solo con la app mencionada.
-- Soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision o audio: no disponible en la informacion proporcionada.
-- Modo "thinking" explicito: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; la model card no enumera idiomas.
+- Generación de texto en dispositivo (pipeline `text-generation`), con pruebas de humo superadas para todas las ventanas XNNPACK (respuesta "Paris").
+- Inferencia local sin conexión en Android mediante el runtime ExecuTorch 1.4.0 o la app openweights.
+- Contexto configurable por archivo, desde 512 tokens (NPU) hasta 32.768 tokens (CPU XNNPACK).
+- Ejecución en CPU arm64 genérica vía XNNPACK y en NPU MediaTek Dimensity 9400 vía NeuroPilot.
+- Tokenizador incluido (`tokenizer.json`) copiado sin cambios del repositorio fuente.
+- Capacidades adicionales del modelo base (tool calling, agentes, multilingüismo, matemáticas, código) no están documentadas en esta model card; deben verificarse en la ficha de LiquidAI/LFM2.5-2.6B.
 
 ## Casos de uso
 
-- Asistentes de texto sin conexion en Android: la variante de 2k (1,78 GB de pesos + 64 MiB de cache KV) permite respuestas cortas de chat o autocompletado en un telefono de gama alta sin enviar datos a la nube.
-- Clasificacion y etiquetado de texto en el propio dispositivo: con la ventana de 4k se pueden procesar notas, correos o fragmentos de documentos y aplicar categorias, ganando privacidad al no salir el contenido del terminal.
-- Resumen de documentos largos: la variante de 32k admite entradas de hasta 32.768 tokens, util para condensar informes, actas o hilos de conversacion completos en local (requiere ~1 GiB adicional de RAM solo para la cache KV).
-- Extraccion de campos estructurados de texto no estructurado: por ejemplo, convertir correos de soporte en JSON con campos como remitente, producto e incidencia, dentro de una app movil de gestion.
-- Prototipado e investigacion sobre inferencia on-device: los `export-report-<window>.json` y los `config.json` por backend permiten reproducir el pipeline y comparar costes de memoria entre ventanas sin reentrenar nada.
-- Asistencia offline en entornos sin cobertura o aislados: dispositivos de campo, inspeccion industrial o recogida de datos donde no hay red disponible y el modelo debe funcionar de forma autonoma.
-- Base para evaluar cuantizacion 8da4w en arm64: sirve para medir degradacion de calidad frente al modelo original LiquidAI/LFM2.5-2.6B en un dispositivo real antes de decidir un despliegue.
-- Integracion en apps que ya usan ExecuTorch: cualquier proyecto Android con el runtime 1.4.0 puede cargar los `.pte` sin adaptadores adicionales, reutilizando el tokenizador incluido.
+- Asistentes de texto offline en Android: el modelo puede ejecutarse íntegramente en el teléfono con la app openweights, sin enviar datos a la nube, usando la ventana de 2k u 8k según la memoria disponible.
+- Autocompletado y redacción en aplicaciones móviles: con archivos de 1,78-1,81 GB en CPU, cabe en el presupuesto de 5 GB del dispositivo y permite generar texto en tiempo de ejecución local.
+- Procesamiento de documentos cortos en el dispositivo: la ventana de 8k tokens (268 MB de caché KV) permite resumir correos, notas o mensajes sin salir del teléfono.
+- Transcripción y reescritura de conversaciones largas: la ventana de 32k tokens (1.073 MB de caché KV) admite hilos de conversación extensos en CPU arm64.
+- Prototipado de funciones de IA en apps Android: los informes de exportación y los `config.json` permiten integrar el modelo en pipelines de CI para validar que la ventana elegida entra en el presupuesto de memoria del dispositivo.
+- Evaluación de aceleración NPU en Dimensity 9400: los artefactos NeuroPilot a16w8 permiten probar inferencia en NPU con ventanas de 512 a 8k tokens, aunque el autor advierte que la prueba de humo solo verificó la estructura al no disponer de runtime NPU en el host.
+- Investigación sobre cuantización en dispositivo: la combinación de GPTQ 8da4w y a16w8 con informes de exportación detallados sirve para comparar precisión y memoria entre backends.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta un smoke test superado con la respuesta "Paris" en las cinco variantes de ventana. La busqueda web realizada no devolvio resultados relacionados con este modelo ni con su modelo base (los unicos enlaces recuperados corresponden a herramientas de videojuegos sin relacion). Por tanto, no hay datos verificables de MMLU, HumanEval, GSM8K ni de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta pruebas de humo cualitativas: las cinco variantes XNNPACK superaron la prueba con la respuesta "Paris"; las variantes MediaTek solo fueron verificadas estructuralmente ("structure checked") por ausencia de runtime NPU en el host de exportación.
 
 ## Requisitos de hardware
 
-- Inferencia exclusivamente en CPU arm64 mediante XNNPACK; no se requiere GPU ni VRAM dedicada.
-- Memoria necesaria = tamano del `.pte` + cache KV completa reservada al cargar:
-  - 2.048 tokens: ~1,78 GB de pesos + 64 MiB de cache KV.
-  - 4.096 tokens: ~1,79 GB de pesos + 128 MiB de cache KV.
-  - 8.192 tokens: ~1,79 GB de pesos + 256 MiB de cache KV.
-  - 16.384 tokens: ~1,80 GB de pesos + 512 MiB de cache KV.
-  - 32.768 tokens: ~1,81 GB de pesos + 1.024 MiB de cache KV.
-- La model card incluye un campo `fits_phone_budget` en el `config.json` de cada carpeta, estimado contra un presupuesto de 5 GB.
-- Cabe en telefonos Android de gama media-alta y alta; no esta pensado para microcontroladores ni para dispositivos con menos de ~2 GB libres.
-- GPU recomendadas (A100, H100, RTX 4090): no aplica para este export; el artefacto es especifico de CPU arm64.
-- Opciones de despliegue: runtime ExecuTorch 1.4.0 y la aplicacion Android openweights. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que estos esperan safetensors o GGUF; para esos entornos habria que usar el modelo base LiquidAI/LFM2.5-2.6B y exportarlo por otra via.
-- Latencia y throughput: no disponible en la informacion proporcionada. La unica referencia de rendimiento interno es el chunk de prefill de 2.048 tokens y el hecho de que el smoke test se ejecuta correctamente en cada variante.
+- VRAM/RAM estimada: los archivos XNNPACK ocupan entre 1,78 GB y 1,81 GB; la caché KV añade 67 MB (2k), 134 MB (4k), 268 MB (8k), 537 MB (16k) o 1.073 MB (32k), reservada íntegra al cargar. Los artefactos MediaTek suman unos 2,78 GB por ventana más embeddings fp32.
+- Dispositivos objetivo: cualquier arm64 para XNNPACK; MediaTek Dimensity 9400 (MT6991) para NeuroPilot.
+- GPU: no aplica; el despliegue es en CPU arm64 o NPU móvil, no en GPU de escritorio.
+- ¿Cabe en hardware de consumo? Sí, en teléfonos Android de gama alta; el autor estima el ajuste contra un presupuesto de 5 GB mediante `fits_phone_budget`.
+- Opciones de despliegue: runtime ExecuTorch 1.4.0, app Android openweights, backend XNNPACK y backend MediaTek NeuroPilot.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones verificadas para establecer una comparativa cuantitativa. Como referencia cualitativa de categoria (LLM densos de ~1-3B pensados para inferencia en dispositivo), los alternativas habituales serian Llama 3.2 1B/3B, Qwen2.5 1.5B/3B y Gemma 3 1B/4B, todas ellas con exportaciones propias a formatos on-device. Sin embargo:
-
-| Modelo | Parametros | Contexto | Licencia | Formato on-device | Datos de rendimiento |
+| Modelo | Parametros | Contexto | Formato/despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-2.6B-ExecuTorch | 2,6B (base) | 2k-32k (segun archivo) | lfm1.0 (other) | `.pte` (ExecuTorch/XNNPACK) | solo smoke test |
-| Llama 3.2 1B/3B | no disponible en esta busqueda | no disponible en esta busqueda | Llama Community License | GGUF, ExecuTorch, otros | no disponible en esta busqueda |
-| Qwen2.5 1.5B/3B | no disponible en esta busqueda | no disponible en esta busqueda | Apache 2.0 | GGUF, ExecuTorch, otros | no disponible en esta busqueda |
-| Gemma 3 1B/4B | no disponible en esta busqueda | no disponible en esta busqueda | Gemma Terms of Use | GGUF, ExecuTorch, otros | no disponible en esta busqueda |
+| LFM2.5-2.6B-ExecuTorch (esta ficha) | 2,6B | 512-32.768 tokens fijos por archivo | `.pte` ExecuTorch (XNNPACK, NeuroPilot) | lfm1.0 | Hugging Face, 689 descargas |
+| LiquidAI/LFM2.5-2.6B | 2,6B | no disponible en esta ficha | Pesos originales (safetensors presumiblemente) | lfm1.0 | Hugging Face (modelo base) |
+| Alternativas on-device de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Las filas de la competencia se incluyen solo como orientacion de categoria; sus cifras concretas no forman parte de la informacion proporcionada en esta busqueda y deben verificarse en sus fichas oficiales antes de tomar una decision.
+No se dispone de datos de benchmarks ni de otras exportaciones ExecuTorch comparables en la información proporcionada para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No hay ningun dato publicado de calidad, evaluacion o benchmark: el unico test reportado es un smoke test con la palabra "Paris". No se puede inferir capacidad real de razonamiento, codigo o matematicas.
-- La model card no documenta idiomas soportados, por lo que no se puede garantizar un comportamiento correcto en castellano ni en ningun otro idioma concreto.
-- Es un derivado cuantizado a 4 bits, lo que implica degradacion respecto al modelo original LiquidAI/LFM2.5-2.6B. No se publica ninguna medida de esa perdida.
-- La ventana de contexto se fija dentro del archivo: la runtime reserva toda la cache KV al cargar. Elegir 32k consume ~1 GiB extra de RAM de forma permanente aunque la conversacion sea corta.
-- La cache KV esta en fp32; no hay opcion documentada de reducirla a fp16 o int8 en este export.
-- Riesgo de alucinacion: inherente a cualquier LLM de este tamano y agravado por la cuantizacion de pesos a 4 bits. No hay evaluaciones de fidelidad factual.
-- Sesgos conocidos: no disponibles. La model card no incluye ninguna seccion de sesgos, toxicidad ni evaluacion de seguridad.
-- Licencia: se distribuye bajo terminos `other` con nombre `lfm1.0`, heredados del modelo base. No es una licencia OSI estandar, por lo que antes de un uso comercial hay que revisar el archivo `LICENSE` incluido y los terminos de LiquidAI; el autor no ofrece ninguna garantia adicional.
-- No hay soporte de vision, audio, tool calling ni agentes documentado en este export.
-- Artefacto especifico para CPU arm64: no se puede reutilizar en servidores x86, GPU NVIDIA ni en pipelines tipo vLLM/TGI.
-- El repositorio pesa 10,8 GB por incluir cinco copias del grafo con distintas ventanas; conviene descargar solo el archivo necesario.
-- Sin mantenimiento garantizado: 64 descargas y 0 likes en el momento de la consulta, y sin historial publico de incidencias.
+- La ventana de contexto es fija por archivo: no se puede ampliar en tiempo de ejecución, y el runtime reserva toda la caché KV al cargar, lo que puede provocar fallos de memoria en dispositivos con poca RAM.
+- Las variantes MediaTek NeuroPilot no han sido probadas funcionalmente; solo se verificó su estructura, por lo que su corrección en dispositivo no está confirmada.
+- El modelo base puede presentar sesgos y alucinaciones; esta exportación no documenta mitigaciones adicionales.
+- No se documentan los idiomas soportados; el rendimiento multilingüe debe validarse contra el modelo base.
+- La licencia lfm1.0 ("other") puede imponer restricciones al uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de desplegar en producción.
+- La cuantización 8da4w y a16w8 puede degradar la calidad respecto a los pesos originales; no se han publicado métricas de degradación.
+- El repositorio tiene 24,4 GB totales; la descarga selectiva de una sola variante es imprescindible para evitar transferencias innecesarias.
+- No hay soporte GPU ni de escritorio; el uso está limitado a Android arm64 y al SoC MT6991 para la ruta NPU.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
-- Aplicacion Android openweights: https://github.com/alpharomercoma/openweights
-- Repositorio del exportador: https://github.com/ExperimentalMachines/executorch-model-exporter
-- Ejecucion de CI del export (XNNPACK arm64): https://github.com/ExperimentalMachines/executorch-model-exporter/actions/runs/35391403566
+- App Android openweights: https://github.com/alpharomercoma/openweights
+- Runtime ExecuTorch: no disponible en la información proporcionada
+- Papers, blogs y demos: no disponibles en la información proporcionada

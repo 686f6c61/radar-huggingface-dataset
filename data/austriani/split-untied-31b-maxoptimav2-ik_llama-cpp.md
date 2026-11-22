@@ -2,50 +2,51 @@
 
 ## Resumen
 
-Split-Untied-31B-MaxOptimaV2-ik_llama.cpp es una cuantizacion GGUF del modelo Split-Untied-31B, publicado por el usuario Austriani sobre el trabajo original de Blazed-Forge. Se trata de un modelo de generacion de texto de 31 mil millones de parametros, derivado de la familia Gemma (etiquetado como gemma-4), orientado a escritura creativa, roleplay, ficcion y tematicas oscuras, con un enfoque explicitamente sin censura. La publicacion no aporta pesos en formato original, sino unicamente una version cuantizada pensada para el runtime ik_llama.cpp.
+Split-Untied-31B-MaxOptimaV2-ik_llama.cpp es una cuantizacion GGUF del modelo base Blazed-Forge/Split-Untied-31B, un merge de 31B parametros construido sobre la arquitectura Gemma (etiquetado por el autor como "gemma-4") y afinado para roleplay, escritura creativa y conversacion sin restricciones de contenido. El autor de la cuantizacion es Austriani, mientras que el modelo base procede de Blazed-Forge, con colaboracion de nimbz en el ecosistema de calibracion. El repositorio pesa 17,4 GB y acumula 615 descargas desde su publicacion en noviembre de 2026.
 
-El interes tecnico de esta ficha reside en el proceso de cuantizacion, no en el modelo base: emplea el esquema denominado MaxOptimaV2 con matrices de calibracion imatrix de "v3-calibration" y "uncensored-imatrix", y ofrece variantes iq4_ks, iq4_ks_r4, iq4_k e iq5_k dentro del ecosistema de cuantizacion trellis de ik_llama.cpp. El modelo base se distribuye bajo licencia Apache 2.0 y declara soporte unicamente para ingles.
+El problema que resuelve es doble: por un lado, ofrece pesos de 31B en formato GGUF optimizado para ik_llama.cpp (un fork de llama.cpp orientado a rendimiento en CPU y GPU), lo que permite ejecutar un modelo grande en hardware modesto; por otro, aplica una calibracion imatrix especifica ("uncensored-imatrix", "v3-calibration") y una tecnica de cuantizacion denominada "trellis-quant" con el esquema IQK, orientadas a preservar calidad en tareas creativas y de rol donde la cuantizacion agresiva suele degradar el estilo.
 
-La relevancia es limitada pero concreta: para usuarios que ya trabajan con ik_llama.cpp y necesitan una version de 31B en 4-5 bits con calibracion especifica para narrativa sin filtros, esta publicacion ofrece una alternativa empaquetada. No hay datos publicados de benchmarks, descargas ni validacion de calidad por parte de la comunidad.
+Es relevante para desarrolladores que necesitan un modelo de escritura y conversacion de gran tamano, sin censura editorial, ejecutable localmente. El contexto no esta especificado en la informacion disponible, y el modelo solo declara soporte de ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Gemma, etiquetada como gemma-4); detalles no disponibles |
-| Parametros totales | 31B (segun denominacion del modelo) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer basada en Gemma (etiquetada como "gemma-4" por el autor) |
+| Parametros totales | 32.106.631.740 |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | iq4_ks, iq4_ks_r4, iq4_k, iq5_k (esquema MaxOptimaV2 con imatrix) |
+| Tipos de cuantizacion | GGUF con esquema IQK y "trellis-quant"; niveles concretos no disponibles |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (para ik_llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base Split-Untied-31B mas alla de su vinculacion con la familia Gemma. El nombre "Split-Untied" sugiere una modificacion de los pesos de embedding de entrada y salida (embeddings no atados), pero no se confirma en la documentacion proporcionada. Tampoco se especifican el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
+El modelo base es un merge de la familia Gemma, con 32.106 millones de parametros totales. La model card no detalla la composicion del dataset de entrenamiento, el numero de tokens, ni si se aplicaron fases de RLHF o DPO. La etiqueta "split-untied" sugiere una separacion de los embeddings de entrada y salida (untied embeddings), una modificacion estructural frecuente en merges de la familia Gemma para mejorar la capacidad expresiva del modelo. No se dispone de informacion adicional sobre la arquitectura interna (numero de capas, dimensiones, atencion) en la informacion proporcionada.
 
-Lo que si documenta la model card es el proceso de cuantizacion: se aplica el esquema MaxOptimaV2 sobre el modelo base, con matrices imatrix generadas mediante "v3-calibration" y una variante "uncensored-imatrix" orientada a preservar el comportamiento sin filtros del modelo original. Se ofrecen cuatro niveles de cuantizacion (iq4_ks, iq4_ks_r4, iq4_k, iq5_k) dentro del formato trellis de ik_llama.cpp, un fork de llama.cpp optimizado para cuantizaciones de baja precision. No se documentan innovaciones arquitectonicas adicionales ni procesos de decodificacion especulativa.
+En cuanto al proceso de cuantizacion, el autor emplea una calibracion imatrix propia denominada "uncensored-imatrix" y "v3-calibration", disenada especificamente para preservar el comportamiento en tareas de roleplay y escritura creativa con temas oscuros. La tecnica "trellis-quant" y el esquema IQK son propios del ecosistema ik_llama.cpp. No se especifican los niveles de cuantizacion publicados ni los tamanos de archivo por nivel.
 
 ## Capacidades
 
-- Generacion de texto en ingles con enfasis en narrativa larga, ficcion y escritura creativa.
-- Roleplay y conversacion multi-turno orientada a personajes.
-- Manejo de tematicas oscuras y contenido sin censura, segun la propia model card.
-- Generacion de historias y storywriting con continuidad narrativa.
-- Conversacion general (chat) en ingles.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
-- Capacidades multilingues: solo ingles declarado.
+- Generacion de texto conversacional y multi-turno orientada a chat.
+- Escritura creativa: narrativa, ficcion, storywriting y roleplay.
+- Manejo de temas oscuros y contenido sin censura editorial (uncensored).
+- Generacion de texto libre en ingles.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso explicito.
+- No se documenta capacidad de vision, audio ni modo "thinking".
+- Multilingue: solo ingles declarado.
 
 ## Casos de uso
 
-- Escritura de ficcion interactiva: el modelo puede sostener sesiones de roleplay prolongadas con personajes consistentes, aprovechando su calibracion orientada a narrativa y su ausencia de filtros para tramas adultas o violentas.
-- Generacion de relatos y novelas por entregas: adecuado para producir borradores de capitulos con tono y estilo controlados, gracias al enfoque declarado en storywriting.
-- Prototipado de videojuegos narrativos: integrable como motor de dialogo en juegos de rol de texto o aventuras conversacionales donde se requiere contenido sin restricciones tematicas.
-- Investigacion sobre alineacion y censura: util como objeto de estudio para comparar el comportamiento de un modelo "uncensored" frente a su version base con filtros.
-- Generacion de contenido para comunidades de rol: despliegue local en entornos donde los usuarios esperan respuestas sin rechazos por tematicas sensibles.
-- Evaluacion de tecnicas de cuantizacion: las cuatro variantes publicadas permiten comparar el impacto de iq4_ks, iq4_ks_r4, iq4_k e iq5_k sobre la calidad narrativa en un mismo modelo de 31B.
-- Despliegue en hardware de consumo: al estar cuantizado en 4-5 bits, permite ejecutar un modelo de 31B en GPUs con VRAM limitada mediante ik_llama.cpp.
+- Roleplay conversacional local: el modelo esta afinado especificamente para mantener personajes y estilo narrativo en conversaciones largas; su tamano de 31B permite matices que modelos de 7B-13B no alcanzan en coherencia de personaje.
+- Escritura de ficcion y narrativa: adecuado para generar borradores de relatos, dialogos y tramas con tono literario, gracias al entrenamiento orientado a storywriting.
+- Generacion de contenido para videojuegos narrativos: puede poblar dialogos de NPC y ramas argumentales en proyectos indie que requieran un modelo local sin dependencia de API.
+- Prototipado de asistentes sin filtros editoriales: util para investigacion sobre comportamiento de modelos y evaluacion de sesgos en entornos controlados.
+- Despliegue en CPU con ik_llama.cpp: el formato GGUF y el fork ik_llama.cpp permiten ejecutar el modelo en servidores sin GPU dedicada, con cuantizaciones agresivas que reducen el uso de memoria.
+- Experimentacion con merges y cuantizacion: sirve como referencia para estudiar el impacto de la calibracion imatrix en la calidad de modelos fusionados de 31B.
+- Generacion de texto en lote para corpus sinteticos: su naturaleza uncensored lo hace apto para generar datasets de entrenamiento con tematicas que otros modelos rechazan.
 
 ## Benchmarks y rendimiento
 
@@ -53,36 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial; para un modelo de 31B en 4 bits se situa habitualmente en torno a 18-20 GB, y en 5 bits en torno a 22-24 GB, aunque estas cifras son estimaciones generales y no datos publicados por el autor.
-- GPU recomendadas: no especificadas por el autor; por tamano, serian necesarias GPUs con 24 GB o mas de VRAM (RTX 3090, RTX 4090, A100, H100) para las variantes de 5 bits, y 20 GB o mas para las de 4 bits.
-- Cabe en GPU de consumo: probablemente en RTX 3090/4090 con las cuantizaciones iq4, aunque no se confirma en la documentacion.
-- Opciones de despliegue: exclusivamente ik_llama.cpp segun la libreria declarada; no se mencionan vLLM, TGI, Ollama ni llama.cpp estandar.
+- VRAM estimada: no disponible de forma exacta; con 32.106 millones de parametros, una cuantizacion de 4 bits ronda los 17-19 GB y una de 8 bits los 32-34 GB, aunque el autor no publica tamanos por nivel.
+- El repositorio completo pesa 17,4 GB, lo que sugiere que las cuantizaciones incluidas son de baja precision (probablemente 4-5 bits).
+- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 4090 (24 GB) podria alojar cuantizaciones de 4 bits; modelos de 8 bits requeririan A100 40 GB o H100.
+- Cabe en GPU de consumo (RTX 3090/4090, 24 GB) con cuantizacion de 4 bits; en 16 GB (RTX 4080) probablemente solo con cuantizaciones muy agresivas y offload parcial.
+- Opciones de despliegue: ik_llama.cpp es el runtime objetivo; llama.cpp estandar y Ollama podrian funcionar segun compatibilidad del formato, no confirmada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Austriani/Split-Untied-31B-MaxOptimaV2-ik_llama.cpp | 31B | no disponible | Apache 2.0 | GGUF (ik_llama.cpp) | Cuantizacion MaxOptimaV2, solo ingles |
-| Blazed-Forge/Split-Untied-31B | 31B | no disponible | Apache 2.0 | no disponible | Modelo base original |
-| Austriani/Split-Untied-31B-ik_llama.cpp | 31B | no disponible | Apache 2.0 | GGUF (ik_llama.cpp) | Variante de cuantizacion previa del mismo autor |
+| Split-Untied-31B-MaxOptimaV2 (este) | 32,1B | no disponible | Apache 2.0 | GGUF (ik_llama.cpp) | Merge Gemma orientado a roleplay y ficcion sin censura |
+| Blazed-Forge/Split-Untied-31B (base) | 32,1B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| Alternativas de 30B de la familia Gemma | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion |
 
-No se dispone de informacion sobre modelos alternativos comparables de otros autores en la misma categoria (31B orientados a roleplay sin censura) dentro de la busqueda realizada.
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no hay evidencia de capacidades multilingues.
-- Modelo explicitamente "uncensored": puede generar contenido violento, sexual o perturbador sin filtros, lo que implica riesgos legales y reputacionales en despliegues publicos.
-- Riesgo de alucinacion no evaluado; no hay benchmarks ni evaluaciones de calidad publicadas.
-- La publicacion tiene 0 descargas y 0 likes, sin validacion de la comunidad.
-- Dependencia exclusiva de ik_llama.cpp: no es directamente compatible con llama.cpp estandar, Ollama, vLLM ni TGI sin conversion adicional.
-- No se documentan la longitud de contexto, los datos de entrenamiento ni las tecnicas de alineacion del modelo base.
-- Aunque la licencia es Apache 2.0, el uso comercial de un modelo sin censura requiere revision legal segun la jurisdiccion y el tipo de contenido generado.
-- El proceso de cuantizacion con imatrix "uncensored" puede alterar el comportamiento respecto al modelo base de formas no documentadas.
+- Solo soporta ingles; no se declara ni garantiza calidad en castellano.
+- Modelo "uncensored": puede generar contenido sensible, ofensivo o inapropiado sin filtros; requiere moderacion externa en produccion.
+- Riesgo de alucinacion inherente a modelos de lenguaje; no se han publicado evaluaciones de fidelidad.
+- El contexto maximo no esta documentado, lo que impide planificar conversaciones largas con garantias.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los datos de entrenamiento pueden imponer restricciones adicionales no detalladas.
+- Al ser un merge y una cuantizacion de terceros, la calidad puede degradarse respecto al modelo base original; no hay benchmarks que lo verifiquen.
+- El runtime objetivo es ik_llama.cpp, un fork especifico; la compatibilidad con llama.cpp estandar u Ollama no esta confirmada.
+- No se documentan capacidades de tool calling ni agentes, por lo que no es adecuado para pipelines que dependan de function calling.
+- Fecha de creacion futura (2026) en los metadatos: verificar la procedencia y autenticidad de los pesos antes de usarlos en produccion.
 
 ## Enlaces
 
-- Hugging Face (esta publicacion): https://huggingface.co/Austriani/Split-Untied-31B-MaxOptimaV2-ik_llama.cpp
-- Hugging Face (variante previa del mismo autor): https://huggingface.co/Austriani/Split-Untied-31B-ik_llama.cpp
-- Hugging Face (modelo base): https://huggingface.co/Blazed-Forge/Split-Untied-31B
+- Hugging Face: https://huggingface.co/Austriani/Split-Untied-31B-MaxOptimaV2-ik_llama.cpp
+- Modelo base: https://huggingface.co/Blazed-Forge/Split-Untied-31B
 - Licencia del modelo base: https://huggingface.co/Blazed-Forge/Split-Untied-31B/blob/main/LICENSE
+- ik_llama.cpp (repositorio del runtime): no disponible en la informacion proporcionada
+- Paper o blog del autor: no disponible

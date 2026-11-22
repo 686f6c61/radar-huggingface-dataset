@@ -2,49 +2,50 @@
 
 ## Resumen
 
-El modelo `gemma-4-26B-A4B-it-heretic-NSFW-i1-GGUF` es una cuantizacion en formato GGUF realizada por mradermacher sobre el modelo base `gemma-4-26B-A4B-it-heretic-NSFW`, publicado por el usuario yukiworks. Se trata de un derivado de la familia Gemma 4 de Google con ajuste fino orientado a conversacion y a contenido para adultos ("heretic" y "NSFW" en el nombre), distribuido exclusivamente como pesos cuantizados en GGUF para su uso con llama.cpp y herramientas compatibles.
+`mradermacher/gemma-4-26B-A4B-it-heretic-NSFW-i1-GGUF` es una cuantizacion GGUF del modelo `yukiworks/gemma-4-26B-A4B-it-heretic-NSFW`, publicada por el cuantizador habitual mradermacher. El modelo base es a su vez una variante "heretic" (abliterated/decensored) de un Gemma 4 de 26B con arquitectura MoE (el sufijo A4B indica aproximadamente 4 mil millones de parametros activos por token). El resultado es un modelo conversacional sin los filtros de seguridad habituales, distribuido en formato GGUF con cuantizaciones de tipo i1 (imatrix) para su uso en llama.cpp y entornos compatibles.
 
-El modelo cuenta con 25.233.142.046 parametros totales segun los datos de safetensors, lo que lo situa en torno a los 25.000 millones de parametros. La nomenclatura "A4B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parametros activos por token, aunque esta informacion no aparece confirmada de forma explicita en la documentacion disponible.
+El interes practico de esta ficha es doble: por un lado, permite ejecutar un modelo de ~25.000 millones de parametros totales con un coste de computo por token propio de un modelo de ~4B activos, lo que lo hace viable en hardware de consumo con cuantizaciones agresivas (a partir de ~8,4 GB en i1-IQ1_S). Por otro, la naturaleza "heretic/NSFW" implica que el modelo ha sido modificado para eliminar rechazos y restricciones de contenido, lo que conlleva riesgos legales y de seguridad relevantes para cualquier despliegue en produccion.
 
-La relevancia de esta publicacion es limitada y muy especifica: se trata de una cuantizacion derivada de un modelo ya de por si secundario, sin descargas ni interacciones registradas en el momento de la consulta, con licencia no especificada y con etiqueta `not-for-all-anchored` que restringe su uso a audiencias adultas. La model card es extremadamente escueta y se limita a indicar que se trata de cuantizaciones ponderadas con imatrix del modelo original.
+La licencia declarada es Apache 2.0, aunque la model card enlaza a la licencia especifica de Gemma 4 de Google, lo que genera una ambiguedad que conviene verificar antes de un uso comercial. El repositorio ocupa 301 GB en total (sumando todas las cuantizaciones) y acumula 14.043 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la nomenclatura "A4B" sugiere MoE con ~4B parametros activos, sin confirmar) |
-| Parametros totales | 25.233.142.046 |
-| Parametros activos | No disponible (probablemente ~4B por la nomenclatura "A4B", sin confirmar) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (cuantizaciones generadas con imatrix) |
+| Arquitectura | Transformer MoE (Gemma 4), segun nomenclatura del modelo base; detalles no disponibles |
+| Parametros totales | 25.233.142.046 (~25,2B) |
+| Parametros activos | ~4B (indicado por el sufijo A4B; cifra exacta no disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K, Q2_K_S, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K; estaticas en repo separado |
+| Idiomas soportados | en (segun la model card; resto no disponible) |
+| Licencia | apache-2.0 (con enlace a la licencia de Gemma 4 de Google) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre del repositorio incluye "26B-A4B", lo que apunta a un modelo de aproximadamente 26.000 millones de parametros totales con unos 4.000 millones de parametros activos, patron habitual en arquitecturas de mezcla de expertos (MoE) de tipo sparse. El recuento real de parametros en safetensors (25.233.142.046) es coherente con esa nomenclatura aproximada.
+El modelo base es un Gemma 4 con mezcla de expertos (MoE), segun se deduce del sufijo A4B y de la nomenclatura "gemma-4-26B-A4B-it". Se trata de un transformer decoder-only con enrutamiento disperso, donde solo una fraccion de los parametros (del orden de 4B) se activa por token, lo que reduce el coste de inferencia frente a un denso de 26B. La variante "heretic" implica un proceso de abliteration o fine-tuning dirigido a eliminar el comportamiento de rechazo (refusal) del modelo instruct original; la model card no documenta la metodologia exacta, el volumen de datos ni si hubo RLHF/DPO adicional.
 
-El proceso de cuantizacion documentado por mradermacher indica el uso de `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato Hugging Face a GGUF con cuantizacion ponderada mediante imatrix. No se especifican en la model card ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste fino supervisado en el modelo original. Tampoco se detalla ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, etc.).
+La cuantizacion la realiza mradermacher con el metodo i1 (imatrix), que calibra los pesos con una matriz de importancia para preservar mejor la calidad en niveles bajos de bits. Se ofrecen tanto cuantizaciones IQ (importancia-aware) como K-quants clasicas, ademas de un fichero imatrix para generar cuantizaciones propias. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.) en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato chat (etiqueta `conversational` en el repositorio).
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que permite su despliegue detras de APIs compatibles con el formato de llama.cpp.
-- Ajuste fino orientado a contenido para adultos ("NSFW"), con la etiqueta `not-for-all-audiences` que restringe su uso a publico adulto.
-- Capacidades multilingues: no disponibles en la documentacion.
-- Soporte de tool calling / function calling: no disponible.
+- Generacion de texto conversacional multi-turno (etiqueta `conversational`).
+- Modelo marcado como vision (la model card indica que es un modelo de vision y que los ficheros mmproj, si existen, estan en el repositorio estatico).
+- Contenido sin censura: abliterated/decensored, orientado a generar respuestas sin rechazos.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades de vision, audio o modo "thinking": no disponibles.
+- Capacidades multilingues: solo se declara `en`; el resto no disponible.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Generacion de narrativa y ficcion para adultos: el ajuste fino "NSFW" del modelo base lo orienta a la produccion de relatos y dialogos de tematica adulta, un nicho donde los modelos genericos aplican filtros de seguridad mas estrictos.
-- Roleplay conversacional: la etiqueta `conversational` y el ajuste "heretic" (que habitualmente implica la reduccion de rechazos en el modelo) lo hacen adecuado para personajes interactivos en entornos controlados y con publico adulto.
-- Prototipado local de chatbots sin censura: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar el modelo en estaciones de trabajo con GPU de consumo, util para experimentar con sistemas conversacionales sin dependencia de APIs externas.
-- Investigacion sobre alineacion y rechazos: el modelo sirve como caso de estudio de tecnicas de "abliteracion" o "heretic" que eliminan comportamientos de rechazo, util para analizar como afectan al rendimiento general y a la seguridad.
-- Evaluacion comparativa de cuantizaciones: al ofrecer mas de veinte variantes (desde IQ1_S hasta Q6_K), permite medir el impacto de la cuantizacion en calidad conversacional y perplejidad sobre un mismo modelo base.
-- Despliegue en entornos de bajos recursos: las variantes Q2_K e IQ2 permiten ejecutar un modelo de ~25B en hardware modesto, aunque con perdida notable de calidad, para tareas de generacion creativa no criticas.
+- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el efecto de la abliteration comparando sus respuestas con las del Gemma 4 instruct original, midiendo la tasa de rechazos y la degradacion en tareas de seguridad.
+- Generacion creativa de ficcion adulta: al no aplicar filtros de contenido, puede emplearse en entornos controlados para redaccion de narrativa para adultos, con la advertencia de que su uso debe cumplir la legislacion aplicable.
+- Despliegue local en hardware de consumo: gracias a su naturaleza MoE (~4B activos) y a cuantizaciones desde ~8,4 GB (i1-IQ1_S) o ~16,9 GB (i1-Q4_K_M), puede ejecutarse en GPU consumer con llama.cpp u Ollama para experimentacion offline.
+- Prototipado de asistentes conversacionales sin restricciones: util para probar prompts y flujos de dialogo en los que los rechazos del modelo base interfieren con el desarrollo, siempre en un entorno aislado.
+- Evaluacion de cuantizaciones: el repositorio incluye un amplio abanico de niveles (de IQ1 a Q6) y un fichero imatrix, lo que permite estudiar la degradacion de calidad segun bits por peso en un modelo MoE.
+- Analisis de contenido visual (si se dispone del mmproj): la model card lo declara como modelo de vision, por lo que podria emplearse en tareas de descripcion de imagenes, sujeto a verificacion del fichero mmproj en el repositorio estatico.
+- Benchmarking de inferencia MoE en local: permite medir throughput y latencia de un MoE de 26B/4B activos en distintas GPU y cuantizaciones.
 
 ## Benchmarks y rendimiento
 
@@ -52,35 +53,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion. Aproximadamente 9-10 GB para Q2_K, 14-15 GB para Q4_K_M, 18-19 GB para Q6_K (estimacion basada en el numero de parametros; no confirmada por el autor).
-- GPU recomendadas: para las cuantizaciones altas (Q5_K_M, Q6_K), una RTX 4090 (24 GB) o una A100/H100 para despliegues concurrentes. Para cuantizaciones medias (Q4_K_M), una RTX 4080/4090 o una RTX 3090 de 24 GB.
-- Cabe en GPU de consumo: si, en tarjetas con 16-24 GB de VRAM para cuantizaciones Q4 y Q5; las variantes IQ2/IQ3 podrian caber en GPUs de 12 GB.
-- Opciones de despliegue: llama.cpp, Ollama (previa importacion del GGUF), y servidores compatibles con la API de llama.cpp. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles.
+- VRAM estimada segun cuantizacion (tamano de fichero, aproximado): i1-IQ1_S ~8,4 GB; i1-IQ2_M ~10,5 GB; i1-IQ3_S ~12,3 GB; i1-IQ4_XS ~14,0 GB; i1-Q4_K_M ~16,9 GB; i1-Q5_K_M ~19,2 GB; i1-Q6_K ~22,7 GB.
+- Al ser MoE con ~4B activos, el coste de computo por token es menor que el de un denso de 26B, pero la VRAM debe alojar los pesos totales de la capa activa correspondiente; con offloading a CPU es posible en equipos con menos VRAM.
+- GPU recomendadas: para cuantizaciones Q4-Q5 en su totalidad, GPUs con 24 GB o mas (RTX 3090/4090, A10G, L4 con offloading); para Q6 y superiores, A100 40/80 GB o H100.
+- Cabe en GPU consumer: si, en RTX 3060 12 GB con cuantizaciones IQ2/IQ3, y en RTX 4090 24 GB con Q4_K_M o Q5_K_M completos.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors es compatible con transformers y, presumiblemente, con vLLM/TGI (no confirmado para esta variante).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| gemma-4-26B-A4B-it-heretic-NSFW-i1-GGUF (este) | 25,2B totales (~4B activos, sin confirmar) | No disponible | No disponible | GGUF | Hugging Face, 0 descargas |
-| gemma-4-26B-A4B-it-heretic-NSFW (base de yukiworks) | ~26B | No disponible | No disponible | Safetensors (probable) | Hugging Face |
-| Gemma 3 27B (referencia de familia) | 27B | 128K (segun documentacion publica de Google) | Gemma Terms of Use | Safetensors, GGUF | Amplia disponibilidad |
-| Mistral Small 3.1 24B (referencia de tamano) | 24B | 128K | Apache 2.0 | Safetensors, GGUF | Amplia disponibilidad |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| gemma-4-26B-A4B-it-heretic-NSFW (i1-GGUF) | ~25,2B | ~4B | no disponible | apache-2.0 | GGUF | Variante sin censura, cuantizada por mradermacher |
+| gemma-4-26B-A4B-it (base) | ~25,2B | ~4B | no disponible | licencia Gemma 4 | safetensors | Modelo instruct original con filtros de seguridad |
+| gemma-4-26B-A4B-it-heretic-NSFW (estatico) | ~25,2B | ~4B | no disponible | apache-2.0 | GGUF | Cuantizaciones estaticas del mismo modelo base |
 
-La comparativa con modelos de la familia Gemma 3 o Mistral Small se ofrece solo como referencia de categoria y tamano; no se dispone de datos de rendimiento del modelo evaluado para establecer una comparacion cuantitativa.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contenido para adultos: la etiqueta `not-for-all-audiences` indica explicitamente que el modelo genera contenido NSFW; no es apto para uso general ni para menores.
-- Licencia no especificada: al no declararse licencia, no se puede garantizar el uso comercial ni la redistribucion; es imprescindible contactar con el autor o consultar la licencia del modelo base de Google antes de cualquier uso productivo.
-- Modelo derivado de un derivado: es una cuantizacion de un ajuste fino comunitario, sin validacion por parte de Google; la calidad y la seguridad no estan garantizadas por el desarrollador original.
-- Riesgo de alucinacion: no se han publicado evaluaciones; los ajustes finos "heretic" suelen reducir los rechazos, lo que puede aumentar la generacion de contenido factualmente incorrecto o inapropiado sin advertencia.
-- Idiomas no documentados: se desconoce el soporte multilingue real; el modelo base Gemma suele estar entrenado en multiples idiomas, pero el ajuste fino puede haber degradado lenguas distintas del ingles.
-- Perdida de calidad por cuantizacion: las variantes IQ1/IQ2 y Q2_K degradan notablemente la coherencia; para uso serio se recomienda Q4_K_M o superior.
-- Sin descargas ni comunidad: el repositorio no registra descargas ni likes, por lo que no hay evidencia de uso ni de validacion por terceros.
-- Contexto desconocido: no se especifica la longitud de contexto soportada, lo que impide planificar su uso en tareas de contexto largo.
+- Modelo abliterated/decensored: no aplica filtros de seguridad, por lo que puede generar contenido ofensivo, ilegal o danino; no apto para uso sin moderacion externa.
+- Riesgo elevado de alucinacion y de respuestas factualmente incorrectas, especialmente en cuantizaciones muy bajas (IQ1, IQ2).
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta verificado.
+- Ambiguedad de licencia: se declara apache-2.0 pero se enlaza la licencia de Gemma 4 de Google, que impone restricciones de uso; verificar antes de cualquier despliegue comercial.
+- La model card incluye la etiqueta `not-for-all-audiences`; el contenido puede no ser adecuado para todos los publicos.
+- Las cuantizaciones por debajo de Q4 degradan notablemente la calidad; el propio autor recomienda i1-Q4_K_M como equilibrio.
+- No hay informacion sobre contexto maximo, tool calling ni capacidades de agente, lo que limita su uso en pipelines complejos.
+- El repositorio ocupa 301 GB; descargar solo el fichero de cuantizacion deseado, no el repo completo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-heretic-NSFW-i1-GGUF
-- Modelo base del ajuste fino: https://huggingface.co/yukiworks/gemma-4-26B-A4B-it-heretic-NSFW
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-heretic-NSFW-i1-GGUF
+- Modelo base: https://huggingface.co/yukiworks/gemma-4-26B-A4B-it-heretic-NSFW
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-heretic-NSFW-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#gemma-4-26B-A4B-it-heretic-NSFW-i1-GGUF
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

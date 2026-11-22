@@ -2,81 +2,87 @@
 
 ## Resumen
 
-Xiaomi-OCR-0-oQ8e-mtp-bf16-MLX es una cuantización, publicada por el usuario dicksondickson, del modelo Xiaomi-OCR-0 de SeerRay-Lab, un modelo de visión-lenguaje (VLM) especializado en OCR y análisis de documentos. La conversión se ha realizado con la herramienta oQ (oMLX 0.7.3.dev2) mediante cuantización de precisión mixta con matriz de importancia (imatrix) y la técnica "Better Low-Bit oQ", dejando los tensores más importantes en bf16. El resultado es un repositorio de aproximadamente 1,0 GB en formato safetensors para el ecosistema MLX de Apple.
+Xiaomi-OCR-0-oQ8e-mtp-bf16-MLX es una cuantizacion en formato MLX del modelo Xiaomi-OCR-0, un modelo de vision-lenguaje (VLM) orientado al analisis y extraccion de contenido en documentos. El modelo base lo desarrolla Xiaomi Research y esta pensado para tareas de document parsing y OCR: convertir imagenes de documentos en texto estructurado. Esta version concreta la publica el usuario dicksondickson y esta optimizada para ejecutarse en hardware Apple Silicon mediante la libreria MLX.
 
-El modelo base, Xiaomi-OCR-0, pertenece a la familia qwen3.5 según las etiquetas del repositorio, lo que sugiere una arquitectura basada en Qwen3.5 adaptada a tareas de parsing de documentos. Con unos 873 millones de parámetros, se trata de un modelo compacto orientado a extraer texto de imágenes de forma eficiente en hardware de consumo, concretamente en chips Apple Silicon M3 o posteriores.
+La arquitectura declarada en los metadatos es qwen3_5, es decir, una variante de la familia Qwen 3.5 adaptada a entrada visual, con aproximadamente 873 millones de parametros totales en los pesos safetensors. El repositorio ocupa 1,0 GB y los tensores criticos se mantienen en bf16 mientras el resto se cuantiza en 8 bits con precision mixta (esquema oQe de oMLX), lo que la hace viable en equipos con memoria unificada moderada.
 
-Su relevancia radica en la combinación de tres factores: un tamaño reducido que permite ejecución local en Macs sin GPU dedicada, una especialización en OCR y document-parsing (tarea de alta demanda para RAG y digitalización), y una licencia MIT que permite uso comercial sin restricciones.
+Su relevancia actual radica en que permite ejecutar localmente en un Mac un modelo de OCR y comprension de documentos sin depender de servicios en la nube, con licencia MIT y un pipeline de cuantizacion reproducible mediante oMLX. Es una opcion practica para prototipos de extraccion documental en entornos de desarrollo sobre Apple Silicon.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | VLM basado en la familia qwen3.5 (detalles no disponibles) |
-| Parámetros totales | 873.438.784 (~873 M) |
-| Parámetros activos | no disponible (no hay evidencia de que sea MoE) |
+| Arquitectura | qwen3_5 (vision-lenguaje, transformer) segun tags del repositorio |
+| Parametros totales | 873.438.784 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | oQ8e (cuantización mixta imatrix con Better Low-Bit oQ; tensores críticos en bf16) |
-| Idiomas soportados | no disponibles |
+| Tipos de cuantizacion | 8 bits con precision mixta oQe (imatrix); tensores importantes en bf16 |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio es una cuantización, no el modelo original, por lo que gran parte de los detalles de arquitectura y entrenamiento corresponden al modelo base SeerRay-Lab/Xiaomi-OCR-0, cuya model card no está incluida en la información disponible. Según las etiquetas, el modelo pertenece a la familia qwen3.5, lo que indica un diseño de transformer visual-lenguaje derivado de esa familia, aunque no se han publicado datos sobre el número de tokens de entrenamiento, composición del dataset ni uso de RLHF/DPO.
+El modelo base Xiaomi-OCR-0 es un VLM de la familia qwen3_5, segun los tags del repositorio, lo que implica un transformer con codificador visual y decodificador de lenguaje. Esta version cuantizada conserva los tensores considerados criticos en bf16 y aplica cuantizacion de 8 bits al resto mediante el esquema oQe de oMLX 0.7.3.dev2, que emplea una matriz de importancia (imatrix) para decidir la precision por capa. El resultado esta optimizado para chips Apple M3 y posteriores.
 
-En cuanto a la cuantización en sí, se empleó oQ (oMLX 0.7.3.dev2), una herramienta de cuantización para MLX que utiliza matrices de importancia (imatrix) para decidir la precisión de cada tensor. La variante oQ8e con "Better Low-Bit oQ" aplica precisión mixta: los tensores considerados críticos se mantienen en bf16 y el resto se cuantiza a 8 bits, un compromiso que preserva la calidad del OCR minimizando el tamaño en disco. Esta configuración está pensada específicamente para chips Apple M3 y posteriores.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si el modelo base utilizo RLHF, DPO u otras tecnicas de alineacion. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal en la informacion proporcionada.
 
 ## Capacidades
 
-- OCR y parsing de documentos: extracción de texto a partir de imágenes, según la especialización del modelo base (tags document-parsing, ocr, vlm).
-- Comprensión visual-lenguaje: al tratarse de un VLM, puede procesar entradas multimodales imagen + texto, aunque el alcance exacto no está documentado.
-- Ejecución local en Apple Silicon: diseñado para el framework MLX, optimizado para M3 y posteriores.
-- No hay información disponible sobre tool calling, capacidades de agente, razonamiento multi-step, generación de código, matemáticas ni soporte de audio.
+- Reconocimiento optico de caracteres (OCR) sobre imagenes de documentos.
+- Document parsing: extraccion de texto y posible estructura a partir de imagenes.
+- Procesamiento de entrada visual combinada con generacion de texto (VLM).
+- Ejecucion local en Apple Silicon mediante MLX y oMLX.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- No se documentan modos especiales (thinking, audio, etc.).
 
 ## Casos de uso
 
-- Digitalización de documentos en local: convertir escaneos, facturas o contratos a texto en un Mac sin enviar datos a la nube, útil cuando la privacidad es un requisito (datos médicos, legales o financieros).
-- Preprocesamiento para RAG: extraer texto de PDFs escaneados e imágenes para alimentar pipelines de generación aumentada por recuperación, con un coste de infraestructura mínimo dado el tamaño del modelo.
-- Automatización de entrada de datos: transcripción automática de formularios, albaranes o tickets en flujos de back-office ejecutados en estaciones de trabajo macOS.
-- Accesibilidad: generar descripciones textuales de documentos e imágenes para usuarios con discapacidad visual, integrado en aplicaciones locales.
-- Prototipado rápido de OCR en apps nativas de Apple: el formato MLX permite integrar el modelo en aplicaciones macOS/iOS con baja fricción.
-- Procesamiento por lotes de archivos históricos: dada su huella de ~1 GB, puede desplegarse en Macs de gama media para digitalizar archivos de forma masiva sin hardware especializado.
+- Digitalizacion de facturas y recibos: el modelo puede procesar imagenes de documentos financieros y extraer el texto para su volcado a sistemas contables, ejecutandose localmente en un Mac sin enviar datos sensibles a la nube.
+- Extraccion de texto de contratos y formularios: util para pipelines internos donde la confidencialidad impide usar APIs externas, aprovechando la licencia MIT y el despliegue local.
+- Prototipado rapido de OCR en equipos de desarrollo con Apple Silicon: al ocupar 1,0 GB y requerir solo MLX/oMLX, permite iterar en un portatil M3 sin GPU dedicada.
+- Preprocesado de documentos para RAG: convertir PDFs escaneados o imagenes en texto que alimente un indice vectorial, con el modelo corriendo en el mismo equipo que el resto del pipeline.
+- Herramientas de accesibilidad: lectura automatizada de documentos impresos para convertirlos en texto legible por sintetizadores de voz.
+- Automatizacion de archivo documental: clasificacion y transcripcion por lotes de escaneos en entornos de pequena escala donde no se justifica infraestructura GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: con un repo de 1,0 GB en precisión mixta bf16/8-bit, el modelo debería ocupar en torno a 1-1,5 GB de memoria unificada en inferencia, más el overhead del runtime y de las imágenes de entrada.
-- Hardware recomendado: chips Apple Silicon M3 o posteriores, según indica el autor de la cuantización; no hay datos de compatibilidad con CUDA u otras plataformas.
-- Consumer hardware: cabe cómodamente en cualquier Mac con chip M3 (MacBook Air, MacBook Pro, Mac mini) sin necesidad de GPU dedicada.
-- Despliegue: el autor indica ejecutarlo con oMLX (https://github.com/jundot/omlx). No hay evidencia de soporte directo en vLLM, llama.cpp, Ollama o TGI, ya que el formato es MLX/safetensors específico de Apple.
+- VRAM/memoria estimada: el repositorio pesa 1,0 GB; en inferencia se recomienda al menos 2-4 GB de memoria unificada libre, aunque la cifra exacta no esta documentada.
+- GPU recomendadas: Apple Silicon M3 o posterior (requisito explicito del autor por el uso de bf16 en tensores criticos).
+- Cabe en GPU de consumo: si, en equipos Apple con memoria unificada; no esta pensado para GPU NVIDIA en este formato.
+- Opciones de despliegue: oMLX (https://github.com/jundot/omlx), libreria MLX de Apple.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Licencia | Especialización |
-|---|---|---|---|---|
-| Xiaomi-OCR-0-oQ8e-mtp-bf16-MLX (este) | ~873 M | MLX safetensors (oQ8e mixto) | MIT | OCR / document parsing |
-| Xiaomi-OCR-0 (base, SeerRay-Lab) | no disponible | no disponible | MIT (según tags del derivado) | OCR / document parsing |
-| PaddleOCR-VL / modelos OCR compactos equivalentes | no disponible | no disponible | no disponible | OCR |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Xiaomi-OCR-0-oQ8e-mtp-bf16-MLX | 873 M | no disponible | MIT | safetensors (MLX) | Cuantizacion 8-bit para Apple Silicon |
+| xiaomi-research/Xiaomi-OCR-0 | no disponible | no disponible | no disponible | no disponible | Modelo base original |
+| SeerRay-Lab/Xiaomi-OCR-0 | no disponible | no disponible | no disponible | no disponible | Repo referenciado como origen de la cuantizacion |
 
-Nota: no hay información suficiente en los datos proporcionados para una comparativa detallada de contexto, rendimiento o disponibilidad con alternativas concretas; los datos marcados como "no disponible" no han sido publicados en el repositorio.
+No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de OCR o VLMs de tamano similar.
 
 ## Limitaciones y advertencias
 
-- Documentación escasa: ni el derivado ni la model card del base incluida aquí detallan arquitectura, contexto, idiomas ni capacidades exactas, lo que dificulta la evaluación previa a producción.
-- Plataforma limitada: la cuantización está orientada a Apple Silicon M3+ con oMLX; no hay instrucciones para ejecución en NVIDIA/AMD.
-- Riesgo de alucinación: al ser un VLM, puede generar texto no presente en la imagen; en OCR crítico (facturas, documentos legales) conviene validar contra la fuente o usar mecanismos de verificación.
-- Sesgos: no documentados; no disponible.
-- Licencia: MIT, sin restricciones conocidas para uso comercial, aunque conviene verificar también la licencia del modelo base SeerRay-Lab/Xiaomi-OCR-0.
-- Adopción mínima: 97 descargas y 1 like en el momento de la ficha, sin comunidad de soporte ni historial de fiabilidad.
-- Calidad de la cuantización: aunque la precisión mixta bf16 mitiga la pérdida, no se han publicado evaluaciones comparando esta cuantización con el modelo base en bf16 completo.
+- Modelo especializado en OCR y documentos; su rendimiento fuera de ese dominio no esta documentado.
+- Riesgo de alucinacion en la transcripcion de texto poco legible o imagenes de baja calidad, comun en modelos OCR generativos.
+- Sesgos: no documentados en la informacion disponible.
+- Idiomas soportados no especificados; puede no cubrir todos los idiomas de interes.
+- Requiere Apple M3 o posterior por el uso de bf16 en tensores criticos; no es portable directamente a otras plataformas sin reconversion.
+- Licencia MIT permite uso comercial, pero conviene verificar la licencia del modelo base original antes de desplegar en produccion.
+- Es una cuantizacion de terceros: puede introducir degradacion respecto al modelo base, no cuantificada en la model card.
+- Longitud de contexto desconocida: limita la planificacion para documentos muy extensos.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/dicksondickson/Xiaomi-OCR-0-oQ8e-mtp-bf16-MLX
-- Modelo base: https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0
-- Herramienta de cuantización oMLX/oQ: https://github.com/jundot/omlx
+- Repositorio Hugging Face: https://huggingface.co/dicksondickson/Xiaomi-OCR-0-oQ8e-mtp-bf16-MLX
+- Modelo base: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
+- Repo de origen de la cuantizacion: https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0
+- Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx

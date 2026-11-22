@@ -2,108 +2,101 @@
 
 ## Resumen
 
-EchoMoE-Nemotron-3.5-Lightning-30B-A3B-s4-r768-c1408 es un checkpoint de investigación desarrollado por el grupo McGill-NLP que aplica la técnica EchoMoE sobre el modelo NVIDIA Nemotron-3.5-Lightning-30B-A3B. El objetivo no es mejorar la calidad del modelo base, sino reducir el coste de comunicación en inferencia distribuida con paralelismo de expertos (expert parallelism). En lugar de transmitir cada estado oculto completo entre nodos, el modelo envía una diferencia comprimida respecto a un estado de referencia que se refresca cada pocos niveles.
+EchoMoE-Nemotron-3.5-Lightning-30B-A3B-s4-r768-c1408 es un checkpoint experimental desarrollado por el grupo McGill-NLP que aplica la técnica EchoMoE sobre el modelo NVIDIA Nemotron-3.5-Lightning-30B-A3B. El objetivo no es mejorar la calidad del modelo base, sino reducir el coste de comunicación en inferencia distribuida con paralelismo de expertos (expert parallelism): en lugar de transmitir cada estado oculto completo entre nodos, el modelo envía una diferencia comprimida respecto a un estado de referencia que se refresca cada pocos bloques. En esta configuración concreta, la referencia se actualiza cada 4 capas MoE (6 de 23), con un código de dispatch de 768 dimensiones y un código de combine de 1.408 dimensiones.
 
-La arquitectura subyacente es híbrida: 52 capas que combinan Mamba-2, atención y MoE, con 128 expertos enrutados (6 activos más 1 compartido) y un tamaño oculto de 2.688. El checkpoint tiene 27.807.814.592 parámetros totales en safetensors y se distribuye en bf16. Esta variante concreta usa una referencia cada 4 capas MoE (6 de 23), un código de dispatch de 768 dimensiones y un código de combine de 1.408 dimensiones.
+El modelo parte de una arquitectura híbrida Nemotron-H de 52 capas que combina capas Mamba-2, atención y MoE, con 128 expertos enrutados (6 activos más 1 compartido) y un tamaño oculto de 2.688. El checkpoint final tiene 27.807.814.592 parámetros totales y se ha obtenido por destilación desde un teacher afinado con SFT sobre Dolci, entrenando todos los pesos sobre 4.300 millones de tokens.
 
-Su relevancia es fundamentalmente sistémica: según el autor, reduce un 48% los bytes intercambiados entre nodos a cambio de una pérdida media de 4,5 puntos sobre el profesor en 18 benchmarks. Es un artefacto para estudiar el equilibrio entre eficiencia de red y fidelidad de modelo, no un modelo de producción generalista.
+Su relevancia es fundamentalmente de investigación en sistemas: demuestra que es posible reducir un 48 % el tráfico entre nodos con una pérdida media de 4,5 puntos sobre 18 benchmarks respecto al teacher sin comprimir. No es un modelo pensado para sustituir al original en producción de alta calidad, sino para escenarios donde el cuello de botella es la interconexión de red en clústeres multi-GPU.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Nemotron H híbrida (Mamba-2 + atención + MoE), con retrofit EchoMoE |
-| Parametros totales | 27.807.814.592 |
-| Parametros activos | 6 expertos enrutados + 1 compartido por token (sobre 128 enrutados); total activo no disponible |
-| Longitud de contexto | 32.768 tokens (evaluado) |
-| Tipos de cuantizacion | No disponible (checkpoint publicado en bf16) |
+| Arquitectura | Nemotron-H híbrida: 52 capas Mamba-2, atención y MoE; 128 expertos enrutados con 6 activos y 1 compartido; hidden size 2.688 |
+| Parametros totales | 27.807.814.592 (≈27,8 B) |
+| Parametros activos | No disponible (MoE con 6 de 128 expertos enrutados más 1 compartido; el número exacto de parámetros activos no se indica) |
+| Longitud de contexto | 32.768 tokens (evaluado a esa longitud) |
+| Tipos de cuantizacion | No disponible (los pesos se distribuyen en bf16; no se documentan cuantizaciones GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | Inglés (en) |
-| Licencia | OpenMDW 1.1 (hereda la del modelo base de NVIDIA) |
-| Formato de pesos | safetensors, con código remoto para transformers |
-| Capas totales | 52 |
-| Tamaño oculto | 2.688 |
-| Configuración EchoMoE | Referencia cada 4 capas MoE (6 de 23), dispatch 768 dim, combine 1.408 dim |
-| Precisión | bf16 |
+| Licencia | OpenMDW License 1.1 (hereda la del modelo base de NVIDIA) |
+| Formato de pesos | safetensors, con remote code para transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16 y se entrena por destilación desde un profesor (Nemotron-3.5-Lightning-30B-A3B-SFT-EchoMoE-teacher), que es el modelo base afinado sobre datos de instrucción Dolci. La destilación se realiza sobre 4.300 millones de tokens con todos los pesos entrenados. Los datasets declarados son allenai/Dolci-Instruct-SFT y allenai/dolma3_dolmino_mix-10B-1025.
+La arquitectura subyacente es Nemotron-3.5-Lightning-30B-A3B, un transformer híbrido de 52 capas que intercala capas Mamba-2 (modelos de espacio de estados) con capas de atención y capas de mezcla de expertos. El componente MoE usa 128 expertos enrutados con 6 activos por token y 1 experto compartido, sobre un tamaño oculto de 2.688. EchoMoE no modifica esta topología: introduce un mecanismo de compresión de activaciones en la comunicación entre expertos. Cada estado oculto se representa como una diferencia respecto a una referencia refrescada cada 4 capas MoE, codificada en 768 dimensiones para el dispatch y 1.408 para el combine.
 
-La innovación técnica es EchoMoE: en lugar de enviar el estado oculto completo en cada all-to-all de expertos, se envía la diferencia respecto a un estado de referencia que se refresca cada 4 capas MoE. Esa diferencia se codifica en un espacio de 768 dimensiones para el dispatch y de 1.408 para el combine. El resultado es una reducción del 48% en bytes inter-nodo. El modelo requiere el plugin EchoMoE para vLLM 0.21 o cargarse mediante código remoto en transformers 5.8.1; en transformers funciona en PyTorch plano sin paralelismo de expertos.
+El entrenamiento consistió en destilación desde el teacher Nemotron-3.5-Lightning-30B-A3B-SFT-EchoMoE-teacher (el modelo base afinado con SFT sobre Dolci-Instruct-SFT) sobre 4.300 millones de tokens, entrenando todos los pesos. Los datos de instrucción proceden de allenai/Dolci-Instruct-SFT y la mezcla de preentrenamiento de allenai/dolma3_dolmino_mix-10B-1025. La evaluación se realizó en bf16 con vLLM 0.21 y el plugin de EchoMoE; transformers 5.8.1 puede cargar el modelo mediante el código remoto del repositorio, aunque sin los kernels de mamba-ssm las capas Mamba-2 se ejecutan en PyTorch puro y las log-probabilidades difieren de las de vLLM.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con plantilla de chat integrada.
-- Razonamiento de conocimiento general y matemáticas, con degradación medible respecto al profesor.
-- Generación de código, el dominio donde la pérdida es menor (−1,6 puntos).
-- Seguimiento de instrucciones, con pérdida mínima (−0,9 puntos).
-- Soporte de paralelismo de expertos mediante plugin de vLLM, con backend all-to-all allgather_reducescatter.
-- No se documenta soporte de tool calling, function calling, agentes, visión ni audio.
-- Multilingüismo limitado al inglés.
+- Generación de texto conversacional en inglés, con plantilla de chat propia.
+- Razonamiento de conocimiento general y tareas de instrucción (evaluado en 18 benchmarks agrupados en conocimiento/razonamiento, matemáticas, código y seguimiento de instrucciones).
+- Generación de código y resolución de problemas matemáticos, con degradación notable en matemáticas respecto al teacher (−8,8 puntos).
+- Soporte de decodificación greedy (por defecto) y muestreo con temperatura 0.7, top_p 0.8 y top_k 20 para chat.
+- Ejecución con paralelismo de expertos (expert parallelism) mediante all-to-all con backend allgather_reducescatter.
+- No se documenta soporte explícito de tool calling, function calling, visión, audio ni modo thinking.
+- Capacidad multilingüe limitada al inglés según la model card.
 
 ## Casos de uso
 
-- Investigación en sistemas distribuidos de inferencia: medir el impacto real de comprimir activaciones en all-to-all de expertos sobre un clúster de 8 GPUs, usando el checkpoint como banco de pruebas reproducible.
-- Estudio de métodos de destilación con restricciones de comunicación: comparar la curva pérdida-calidad frente al profesor en 18 benchmarks por dominio.
-- Despliegue experimental con paralelismo de expertos en vLLM: servir el modelo con `--enable-expert-parallel` y `--all2all-backend allgather_reducescatter` para evaluar throughput multi-nodo.
-- Generación de código en entornos con ancho de banda limitado: es el dominio con menor degradación (−1,6 puntos), adecuado para prototipos donde la red entre nodos es el cuello de botella.
-- Evaluación de instruction following en pipelines de chat: con temperatura 0,7, top_p 0,8, top_k 20 y penalización de presencia 1,5, útil para tareas conversacionales de formato estricto.
-- Referencia académica para ablaciones: variantes del mismo autor con distinto espaciado de referencia y dimensión de código permiten aislar el efecto de cada hiperparámetro.
-- Prototipado en una sola GPU de 80 GB: los pesos bf16 caben en una A100/H100 de 80 GB vía transformers, sin necesidad de clúster.
+- Investigación en sistemas distribuidos: medir el impacto real de la compresión de activaciones en el tráfico inter-nodo de un clúster con expert parallelism, comparando los 48 % menos bytes frente al teacher y la pérdida de 4,5 puntos medios.
+- Despliegue en clústeres con interconexión limitada: servir el modelo en 8 GPUs con `--data-parallel-size 8 --enable-expert-parallel` cuando el ancho de banda entre nodos es el cuello de botella y una pérdida moderada de calidad es aceptable.
+- Baseline para experimentos de destilación: usar este checkpoint como referencia de un modelo comprimido entrenado con 4.300 millones de tokens para comparar con otras variantes de la colección EchoMoE (distintos valores de s, r y c).
+- Evaluación de fidelidad entre backends: comparar las log-probabilidades de transformers (sin kernels mamba-ssm) frente a vLLM para cuantificar la discrepancia (2,3 puntos en ARC-Challenge 5-shot).
+- Generación de código en pipelines internos: con una degradación de solo 1,6 puntos en el dominio de código respecto al teacher, es viable para tareas de autocompletado o generación de scripts donde el ahorro de comunicación prime sobre la calidad máxima.
+- Seguimiento de instrucciones en asistentes conversacionales: la caída de solo 0,9 puntos en instruction following lo hace apto para prototipos de chat en inglés con contexto de hasta 32.768 tokens.
+- Reproducción académica: validar los resultados del paper arXiv:2611.22215 sobre compresión de activaciones para expert parallelism usando el código y los scripts del repositorio de McGill-NLP.
 
 ## Benchmarks y rendimiento
 
-Promedio (%) sobre 18 benchmarks por dominio, con la variación respecto al profesor entre paréntesis.
+Puntuación media (%) sobre 18 benchmarks por dominio, con la variación respecto al teacher entre paréntesis:
 
-| Dominio | Profesor | EchoMoE |
-|---|---|---|
-| Conocimiento y razonamiento | 71,6 | 67,9 (−3,7) |
-| Matemáticas | 50,5 | 41,7 (−8,8) |
-| Código | 53,0 | 51,4 (−1,6) |
-| Seguimiento de instrucciones | 55,0 | 54,1 (−0,9) |
-| **Media** | **62,8** | **58,3 (−4,5)** |
+| Dominio | Teacher | EchoMoE | Diferencia |
+|---|---|---|---|
+| Conocimiento y razonamiento | 71,6 | 67,9 | −3,7 |
+| Matemáticas | 50,5 | 41,7 | −8,8 |
+| Código | 53,0 | 51,4 | −1,6 |
+| Seguimiento de instrucciones | 55,0 | 54,1 | −0,9 |
+| **Media** | **62,8** | **58,3** | **−4,5** |
 
-No se han publicado resultados por benchmark individual (MMLU, HumanEval, GSM8K) en la información disponible.
+Dato adicional: en ARC-Challenge (5-shot), la ejecución con transformers sin kernels mamba-ssm puntúa 2,3 puntos por debajo de la ejecución con vLLM; el teacher sin comprimir cae 0,9 puntos en la misma comparación. El ahorro de comunicación reportado es del 48 % menos bytes inter-nodo.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bf16: aproximadamente 55,6 GB de pesos, más overhead de activaciones y caché KV; cabe en una GPU de 80 GB.
-- GPU recomendadas: A100 80 GB o H100 80 GB para carga en una sola GPU vía transformers; clúster de 8 GPUs por nodo para vLLM con paralelismo de expertos.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) en bf16; no se documentan cuantizaciones GGUF ni versiones de 4/8 bits.
-- Despliegue: vLLM 0.21 con plugin EchoMoE (recomendado para producción distribuida) o transformers 5.8.1 con `trust_remote_code=True` (una GPU, sin paralelismo de expertos).
-- Configuración vLLM de referencia: `--data-parallel-size 8 --enable-expert-parallel --all2all-backend allgather_reducescatter --attention-backend FLASHINFER --max-model-len 32768 --max-num-seqs 256`.
-- Nota de arranque: `--max-num-seqs 256` es necesario para que la captura de CUDA graphs no exceda el timeout de 600 segundos del servidor de API.
-- Latencia y throughput: no disponibles; el autor reporta throughput multi-nodo en el README del repositorio, pero no se incluyen cifras en la información proporcionada.
+- VRAM para inferencia en bf16: los pesos (≈27,8 B parámetros) ocupan aproximadamente 55,6 GB, por lo que caben en una única GPU de 80 GB.
+- GPU recomendadas: A100 80 GB o H100 80 GB para ejecución en una sola tarjeta con transformers; para el despliegue con expert parallelism, un nodo de 8 GPUs.
+- Cabe en GPU de consumo: no en bf16; no se documentan cuantizaciones que permitan reducir por debajo de 24 GB.
+- Opciones de despliegue: vLLM 0.21 con el plugin de EchoMoE (recomendado para reproducir resultados) y transformers 5.8.1 con `trust_remote_code=True`. No se documenta soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La model card advierte que `--max-num-seqs 256` es necesario para que el arranque en vLLM no supere el tiempo de espera de 600 segundos del servidor de API, debido al coste de captura de CUDA graphs del modelo plegado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Calidad media (18 benchmarks) | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Calidad media (18 benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EchoMoE-Nemotron-3.5-Lightning-30B-A3B (este) | 27,8 B totales, 6+1 expertos activos | 32.768 | 58,3 | OpenMDW 1.1 | −48% bytes inter-nodo |
-| Nemotron-3.5-Lightning-30B-A3B-SFT-EchoMoE-teacher | 27,8 B (estimado, mismo base) | 32.768 | 62,8 | OpenMDW 1.1 | Profesor, sin compresión |
-| Nemotron-3.5-Lightning-30B-A3B-Base-BF16 | 27,8 B (estimado) | No disponible | No disponible | OpenMDW 1.1 | Base sin SFT |
-| Otras variantes EchoMoE de la colección | No disponible | No disponible | No disponible | OpenMDW 1.1 | Distintos s4/r/c |
+| EchoMoE-Nemotron-3.5-Lightning-30B-A3B-s4-r768-c1408 | 27,8 B totales | 32.768 | 58,3 | OpenMDW 1.1 | Hugging Face, código remoto |
+| Nemotron-3.5-Lightning-30B-A3B-SFT-EchoMoE-teacher | No disponible | 32.768 (evaluado) | 62,8 | OpenMDW 1.1 (heredada) | Hugging Face |
+| Otras variantes de la colección EchoMoE | No disponible | No disponible | No disponible | OpenMDW 1.1 | Hugging Face (colección McGill-NLP) |
 
-No se dispone de comparación con modelos de otros autores en la información proporcionada.
+No se dispone de datos de benchmarks de modelos externos a la colección en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Degradación de calidad no trivial: −4,5 puntos de media y −8,8 en matemáticas respecto al profesor; inaceptable para tareas de razonamiento numérico exigente.
-- Solo inglés: el modelo no declara soporte multilingüe.
-- Sin datos de sesgo ni evaluación de alucinación publicados; al ser un derivado destilado de Nemotron, hereda los sesgos del corpus Dolci y dolmino.
-- Licencia OpenMDW 1.1: es una licencia "other" que conserva el aviso de copyright de NVIDIA; revisar términos antes de uso comercial.
-- Dependencia de código remoto: requiere `trust_remote_code=True` en transformers o el plugin EchoMoE en vLLM; no es un checkpoint estándar de transformers.
-- Sin cuantizaciones publicadas: no hay GGUF, AWQ ni GPTQ, lo que limita el despliegue en hardware de consumo.
-- Configuración de arranque delicada en vLLM: la captura de CUDA graphs escala con secuencias concurrentes y puede agotar el timeout por defecto.
-- Cero tracción comunitaria: 0 descargas y 0 likes en el momento de la consulta; sin validación externa.
-- Sin paper publicado: el arXiv está pendiente (TODO en la model card); la reproducibilidad depende del repositorio de código.
+- Pérdida de calidad respecto al teacher: −4,5 puntos de media, con una caída especialmente acusada en matemáticas (−8,8 puntos), lo que desaconseja su uso en tareas de razonamiento matemático exigente.
+- Solo inglés: la model card declara únicamente el idioma `en`; no hay evidencia de capacidades multilingües.
+- Discrepancia entre backends: con transformers sin kernels mamba-ssm, las log-probabilidades difieren de vLLM (2,3 puntos en ARC-Challenge 5-shot), por lo que los resultados reportados solo son reproducibles con vLLM.
+- Requiere código remoto (`trust_remote_code=True`) y el plugin específico de EchoMoE para vLLM; no es un checkpoint estándar de transformers.
+- Arranque lento en vLLM con la configuración por defecto: es necesario limitar `--max-num-seqs` para evitar timeouts.
+- Licencia OpenMDW 1.1 heredada de NVIDIA: conserva el aviso de copyright de NVIDIA; deben revisarse los términos para uso comercial.
+- Riesgo de alucinación no cuantificado en la información disponible; al ser un modelo destilado con compresión de activaciones, es esperable un comportamiento similar o ligeramente peor que el teacher.
+- Sin soporte documentado de tool calling, agentes, visión ni audio.
+- Modelo de investigación con 641 descargas y 0 likes en el momento de la consulta; no hay evidencia de validación en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/McGill-NLP/EchoMoE-Nemotron-3.5-Lightning-30B-A3B-s4-r768-c1408
-- Modelo profesor: https://huggingface.co/McGill-NLP/Nemotron-3.5-Lightning-30B-A3B-SFT-EchoMoE-teacher
-- Modelo base NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16
+- Hugging Face: https://huggingface.co/McGill-NLP/EchoMoE-Nemotron-3.5-Lightning-30B-A3B-s4-r768-c1408
+- Paper: https://arxiv.org/abs/2611.22215
 - Código: https://github.com/McGill-NLP/EchoMoE
 - Página del proyecto: https://mcgill-nlp.github.io/EchoMoE/
 - Colección EchoMoE: https://huggingface.co/collections/McGill-NLP/echomoe-6afcbfa10b38185f87cbd0ac
-- Paper: no disponible (pendiente de arXiv)
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16
+- Teacher: https://huggingface.co/McGill-NLP/Nemotron-3.5-Lightning-30B-A3B-SFT-EchoMoE-teacher

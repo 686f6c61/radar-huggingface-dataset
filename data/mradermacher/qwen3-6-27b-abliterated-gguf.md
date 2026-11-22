@@ -2,87 +2,104 @@
 
 ## Resumen
 
-Qwen3.6-27B-abliterated-GGUF es la versión cuantizada en formato GGUF del modelo Qwen3.6-27B-abliterated, desarrollado por wangzhang y posteriormente cuantizado por mradermacher. Se trata de un modelo denso de 26.896 millones de parámetros basado en la arquitectura Qwen3.6, que incorpora atención híbrida con gated-deltanet, una innovación que combina mecanismos de atención tradicionales con capas de estado recurrente para mejorar la eficiencia en contextos largos.
+Qwen3.6-27B-abliterated-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo wangzhang/Qwen3.6-27B-abliterated, publicada por el cuantizador mradermacher. El modelo original es una variante "abliterated" (sin censura) de la familia Qwen3.6, con arquitectura densa de aproximadamente 26.900 millones de parametros (26.895.998.464 segun los pesos en safetensors) y capacidades multimodales (etiqueta vlm). Esta version GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, sin necesidad de GPUs de datacenter.
 
-La característica distintiva de este modelo es su proceso de "abliteración", una técnica que elimina o reduce significativamente los mecanismos de rechazo y censura del modelo original. El resultado es un modelo "uncensored" que responde a un espectro más amplio de solicitudes, incluyendo aquellas que el modelo base rechazaría. Esta versión GGUF incluye múltiples cuantizaciones que van desde Q2_K (10,8 GB) hasta Q8_0 (28,7 GB), lo que permite su despliegue en una amplia gama de hardware, desde equipos de consumo hasta servidores profesionales.
+La relevancia de esta ficha radica en dos factores. Primero, el proceso de abliteration elimina las direcciones de rechazo del modelo, lo que produce un modelo sin los filtros de seguridad habituales; esto lo hace util para investigacion sobre alineamiento y para tareas creativas o de red teaming, pero tambien conlleva riesgos importantes de uso. Segundo, las cuantizaciones GGUF abarcan desde Q2_K (10,8 GB) hasta Q8_0 (28,7 GB), lo que ofrece un abanico amplio de compromisos entre calidad y requisitos de VRAM.
 
-El modelo mantiene la licencia Apache 2.0 del modelo original y soporta principalmente inglés y chino. Su relevancia actual radica en la creciente demanda de modelos sin restricciones para investigación, desarrollo creativo y aplicaciones donde los filtros de seguridad del modelo base resultan excesivamente restrictivos.
+El modelo base soporta ingles y chino, tiene licencia Apache 2.0 y se distribuye con la libreria transformers como referencia, aunque esta publicacion concreta esta orientada a inferencia con llama.cpp. La informacion disponible sobre contexto, datos de entrenamiento y benchmarks es limitada; los datos que no constan se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atención híbrida (gated-deltanet) |
-| Parametros totales | 26.895.998.464 (26,9B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | Inglés, chino |
+| Arquitectura | Transformer denso con hybrid-attention y gated-deltanet (segun etiquetas del autor); variante abliterated; multimodal (vlm) |
+| Parametros totales | 26.895.998.464 (~26,9 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); variantes imatrix en repo i1-GGUF |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Formato de pesos | GGUF (repo principal); safetensors en el modelo base |
+| Tamano del repositorio | 186,3 GB (incluye todas las cuantizaciones) |
+| Cuantizacion mas pequena | Q2_K, 10,8 GB |
+| Cuantizacion mas grande | Q8_0, 28,7 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-27B es un transformer denso que incorpora atención híbrida con gated-deltanet, una arquitectura que combina capas de atención tradicional con mecanismos de estado recurrente. Esta hibridación permite reducir el coste computacional en contextos largos manteniendo la calidad de atención sobre secuencias extensas. El modelo incluye además capacidades multimodales (VLM), aunque la versión GGUF aquí descrita omite el proyector de visión (mmproj).
+El modelo base es un transformer denso de ~26,9 B de parametros. Las etiquetas del autor indican el uso de hybrid-attention y gated-deltanet, lo que sugiere una combinacion de mecanismos de atencion con capas de estado recurrente tipo DeltaNet con compuertas, un patron que varios modelos recientes han adoptado para reducir el coste computacional de contextos largos. Tambien se etiqueta como vlm, lo que implica capacidades de vision, aunque la model card no detalla la torre visual ni la resolucion de imagen soportada. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo original.
 
-El proceso de abliteración aplicado sobre el modelo base utiliza técnicas como abliterix, deeprefusal-peel e iterative-abliteration, que identifican y modifican las direcciones en el espacio de activaciones responsables de los comportamientos de rechazo. El resultado es un modelo que conserva las capacidades generales del original pero con una reducción drástica de los mecanismos de negativa ante solicitudes sensibles. Los detalles específicos del entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) no están disponibles en la información proporcionada.
+La innovacion principal de esta variante es el proceso de abliteration, descrito en las etiquetas como "iterative-abliteration", "abliterix", "deeprefusal-peel" y "lora-search-merged-release". Se trata de una tecnica que identifica y elimina las direcciones de activacion asociadas al rechazo de peticiones, aplicada de forma iterativa y combinada con busqueda de LoRA y fusion de pesos. El resultado es un modelo que responde a practicamente cualquier peticion sin negativas, lo que cambia sustancialmente su perfil de comportamiento respecto al modelo original. Esta publicacion concreta no entrena nada nuevo: solo convierte los pesos a GGUF con cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) y omite el proyector multimodal en las cuantizaciones (skip_mmproj 1).
 
 ## Capacidades
 
-- Generación de texto y razonamiento: conserva las capacidades del modelo Qwen3.6-27B original en tareas de lenguaje natural, razonamiento lógico y comprensión lectora.
-- Respuesta sin censura: el proceso de abliteración elimina la mayoría de los rechazos ante contenido sensible, controvertido o explícito, permitiendo respuestas que el modelo base bloquearía.
-- Soporte multilingüe: capacidades completas en inglés y chino, con posible transferencia a otros idiomas no verificada.
-- Capacidades multimodales: el modelo base incluye capacidades de visión (VLM), aunque la versión GGUF no incluye el proyector de visión (skip_mmproj: 1).
-- Compatibilidad con herramientas de inferencia: al estar en formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten este formato.
-- Conversación multi-turno: diseñado para interacciones conversacionales, como indican los tags "conversational" y "endpoints_compatible".
+- Generacion de texto conversacional multi-turno en ingles y chino.
+- Razonamiento y respuesta a instrucciones sin filtros de rechazo (comportamiento abliterated).
+- Capacidades multimodales (vlm) en el modelo base, aunque las cuantizaciones de este repo omiten el proyector multimodal (skip_mmproj), por lo que la vision no esta garantizada en estos ficheros GGUF.
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible; las etiquetas incluyen endpoints_compatible, lo que sugiere compatibilidad con APIs de inferencia, pero no se detalla el formato.
+- Capacidades de agente y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Ejecucion local en CPU y GPU mediante llama.cpp y derivados (Ollama, LM Studio, koboldcpp) gracias al formato GGUF.
+- Cuantizaciones imatrix adicionales disponibles en el repo i1-GGUF para mayor calidad a igual tamano.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar los efectos de la abliteración en el comportamiento de modelos grandes, comparando respuestas antes y después del proceso. Los investigadores pueden analizar cómo se distribuyen las direcciones de rechazo en el espacio de activaciones.
-- Generación creativa sin restricciones: escritores y creadores de contenido pueden explorar temas sensibles, narrativas oscuras o diálogos explícitos sin que el modelo imponga bloqueos automáticos, útil para guiones, novelas o juegos de rol.
-- Desarrollo de asistentes de rol (roleplay): la ausencia de rechazos permite construir personajes de IA que respondan de forma coherente en escenarios donde el modelo base se negaría, como interacciones con contenido adulto o temáticas controvertidas.
-- Análisis de contenido y moderación: paradójicamente, un modelo sin filtros puede usarse para generar contenido problemático de forma controlada y así entrenar sistemas de moderación automática que lo detecten.
-- Chatbots especializados en dominios sensibles: aplicaciones de asesoramiento en temas tabú (sexualidad, drogas, salud mental) donde el modelo base podría rechazar preguntas legítimas por exceso de precaución.
-- Evaluación comparativa de técnicas de abliteración: el modelo sirve como referencia para comparar distintas metodologías de eliminación de rechazos (abliterix, deeprefusal-peel, iterative-abliteration) en términos de preservación de capacidades y grado de "uncensoring".
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como cambia el comportamiento al eliminar las direcciones de rechazo, comparando respuestas con el modelo original no abliterated en experimentos controlados de red teaming.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o controvertidas, donde los filtros de seguridad del modelo original bloquearian la salida; el contexto conversacional multi-turno es adecuado para desarrollar tramas largas.
+- Despliegue local en estaciones de trabajo: con Q4_K_M (16,6 GB) el modelo cabe en una GPU de 24 GB (RTX 3090/4090) o en configuracion CPU+GPU con RAM suficiente, lo que permite uso offline sin enviar datos a terceros.
+- Procesamiento de texto en ingles y chino: traduccion, resumen y analisis de documentos bilingues en entornos donde no se requiere censura de contenido, aprovechando el soporte nativo de ambos idiomas.
+- Prototipado de asistentes conversacionales: la compatibilidad con endpoints (etiqueta endpoints_compatible) y el formato GGUF permiten montar rapidamente un servidor de inferencia con llama.cpp server u Ollama para pruebas de integracion.
+- Experimentacion con cuantizacion: el abanico de 11 cuantizaciones (de Q2_K a Q8_0) permite medir el impacto de la cuantizacion en perplejidad y calidad de respuesta sobre un mismo modelo, util para investigacion de tecnicas de compresion.
+- Analisis de contenido sensible en entornos de moderacion: como generador de casos adversarios para entrenar o evaluar clasificadores de toxicidad, dado que produce respuestas que los modelos alineados rechazan.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Existe un análisis externo sobre abliteración de Qwen3.6-27B (nathan.sapwell.net) que compara cinco técnicas de abliteración, pero los datos concretos no se incluyen en la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas equivalentes, ni para el modelo original ni para las cuantizaciones. Tampoco se proporcionan datos de latencia o throughput medidos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 11 GB (Q2_K) y 29 GB (Q8_0) solo para los pesos. A esto hay que sumar el contexto y los KV-cache, que pueden añadir varios GB adicionales según la longitud de la ventana.
-- GPU recomendadas: para cuantizaciones Q4_K_M o superiores se recomienda una GPU con 16-24 GB de VRAM (RTX 4080/4090, A5000, A100 40GB). Para Q2_K o Q3_K_S, una GPU con 12-16 GB (RTX 3080/4070 Ti) puede ser suficiente.
-- Compatibilidad con GPU de consumo: sí, las cuantizaciones Q2_K a Q4_K_M caben en GPUs de consumo de gama alta (16-24 GB). Las cuantizaciones Q6_K y Q8_0 requieren GPUs profesionales o servidores.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, kobold.cpp y cualquier motor compatible con GGUF. Para despliegue en producción con mayor throughput, se puede convertir a formato GPTQ o AWQ y usar vLLM o TGI.
-- Latencia y throughput: no disponible. Dependerá de la GPU, la cuantización y la longitud de contexto. Como referencia orientativa, un modelo de 27B en Q4_K_M en una RTX 4090 suele generar entre 20 y 40 tokens por segundo.
+- VRAM estimada segun cuantizacion (pesos + overhead de contexto, aproximado):
+  - Q2_K: ~11-13 GB
+  - Q3_K_M: ~14-16 GB
+  - IQ4_XS: ~16-18 GB
+  - Q4_K_M: ~17-20 GB
+  - Q5_K_M: ~20-23 GB
+  - Q6_K: ~23-26 GB
+  - Q8_0: ~29-32 GB
+- GPU recomendadas: RTX 4090/3090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; A100 40 GB o H100 para Q8_0 con contexto largo; RTX 4060 Ti 16 GB para Q3_K_M o IQ4_XS con contexto reducido.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 para cuantizaciones Q4 y Q5; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto limitado.
+- Opciones de despliegue: llama.cpp (referencia para GGUF), Ollama, LM Studio, koboldcpp, llama-cpp-python y servidores compatibles con la API de llama.cpp. vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que para esos motores habria que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Característica distintiva |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-abliterated (este) | 26,9B denso | No disponible | Apache 2.0 | GGUF | Abliterado, atención híbrida |
-| Qwen3.6-35B-A3B (abliterated) | 35B total, 3B activos (MoE) | No disponible | Apache 2.0 | GGUF/Ollama | MoE, más eficiente en inferencia |
-| Qwen3.6-27B Samantha (huihui-ai) | 26,9B denso | No disponible | Apache 2.0 | GGUF (pendiente) | Abliterado + finetune de personalidad Samantha |
+| Qwen3.6-27B-abliterated-GGUF (este) | ~26,9 B denso | no disponible | GGUF | Apache 2.0 | Variante sin censura, multimodal en base, cuantizaciones sin proyector |
+| wangzhang/Qwen3.6-27B-abliterated | ~26,9 B denso | no disponible | safetensors | Apache 2.0 | Modelo base de este repo, mismo comportamiento abliterated |
+| Qwen3.6-27B (original, no abliterated) | ~26,9 B denso | no disponible | safetensors | Apache 2.0 | Modelo de referencia con filtros de seguridad; datos de rendimiento no disponibles en esta busqueda |
+| Otras variantes abliterated de ~27 B | variable | variable | GGUF/safetensors | variable | Existen en el ecosistema, pero no se dispone de datos comparativos verificados en la informacion proporcionada |
 
-La comparativa se basa en modelos de la misma familia Qwen3.6 con procesos de abliteración. El modelo MoE (35B-A3B) ofrece mejor rendimiento por parámetro activo, mientras que la variante Samantha añade un finetune de personalidad sobre la base abliterada.
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de rendimiento entre estos modelos.
 
 ## Limitaciones y advertencias
 
-- Riesgo de contenido inapropiado: al eliminar los mecanismos de rechazo, el modelo puede generar contenido ofensivo, explícito, peligroso o ilegal sin filtros. No es adecuado para aplicaciones面向 el público general sin capas adicionales de moderación.
-- Sesgos del modelo base: la abliteración no elimina los sesgos presentes en el modelo original; simplemente elimina la negativa a expresarlos. Los sesgos de género, raza o ideología pueden aparecer de forma más cruda.
-- Riesgo de alucinación: no hay indicios de que la abliteración reduzca las alucinaciones. El modelo puede inventar información con la misma facilidad que el original, y al no tener filtros, lo hará incluso en temas sensibles donde el modelo base podría abstenerse.
-- Idiomas limitados: soporte oficial solo para inglés y chino. El rendimiento en otros idiomas no está garantizado.
-- Sin proyector de visión: aunque el modelo base es multimodal, esta versión GGUF no incluye el mmproj, por lo que no puede procesar imágenes.
-- Contexto no documentado: la longitud máxima de contexto no está especificada en la información disponible, lo que dificulta planificar despliegues con ventanas largas.
-- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero el despliegue de un modelo sin filtros en producción conlleva riesgos legales y reputacionales significativos según la jurisdicción y el caso de uso.
+- Modelo abliterated: responde a practicamente cualquier peticion, incluidas las que implican contenido danino, ilegal o eticamente problematico. No debe desplegarse en produccion orientada a usuarios finales sin capas externas de moderacion.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad; como todo modelo de lenguaje, puede generar afirmaciones falsas con alta confianza, y la eliminacion de rechazos puede aumentar la propension a responder sin senalar incertidumbre.
+- Sesgos: no hay informacion sobre evaluaciones de sesgo; el entrenamiento en ingles y chino implica que el conocimiento y los sesgos culturales estan dominados por esas dos lenguas.
+- Limitaciones de idioma: solo se declaran en y zh; el rendimiento en castellano no esta garantizado ni evaluado.
+- Vision no garantizada en estas cuantizaciones: el proceso omite el proyector multimodal (skip_mmproj), por lo que las capacidades vlm del modelo base pueden no estar operativas en los ficheros GGUF.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el usuario asume toda la responsabilidad legal sobre el contenido generado; la licencia no exime de cumplir normativa local sobre contenido.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_S degradan notablemente la calidad; el propio autor marca Q3_K_M como "lower quality". Para uso serio se recomienda Q4_K_M o superior.
+- Contexto desconocido: al no constar la longitud de contexto, no se puede garantizar el comportamiento en conversaciones largas ni el consumo de VRAM con contextos extensos.
+- Repositorio de gran tamano: 186,3 GB en total; conviene descargar solo el fichero GGUF necesario y verificar la integridad de los ficheros multiparte.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-GGUF
-- Modelo base (abliterado): https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated
-- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-i1-GGUF
-- Variante v2 con imatrix: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-v2-i1-GGUF
-- Análisis de abliteración de Qwen3.6-27B: https://nathan.sapwell.net/posts/qwen36-27b-abliteration/
-- Guía de modelos abliterados por VRAM: https://locallyuncensored.com/blog/abliterated-models-guide.html
-- Variante en Ollama (huihui_ai): https://ollama.com/huihui_ai/Qwen3.6-abliterated:27b
+- Modelo base abliterated: https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.6-27B-abliterated-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

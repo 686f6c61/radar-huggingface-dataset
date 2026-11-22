@@ -2,89 +2,86 @@
 
 ## Resumen
 
-YASAKANI_Uncensored_VL_Unofficial es una cuantización en formato GGUF publicada por el usuario isichan-ai a partir del modelo yasakani-dev/Qwen3.8-27B-YASAKANI-quality. Se distribuye con la etiqueta de "no oficial" (unofficial), lo que indica que no procede del desarrollador original del modelo base, sino de un tercero que ha empaquetado los pesos para su uso con herramientas de inferencia local. La ficha de Hugging Face lo etiqueta como "uncensored" y "vision", aunque no se aporta documentación técnica que detalle el proceso de modificación ni las capacidades multimodales reales.
+YASAKANI_Uncensored_VL_Unofficial es una conversión no oficial de los pesos de huihui-ai/Huihui-Qwen3.8-27B-abliterated al formato del motor de inferencia YASAKANI, publicada por el usuario isichan-ai. El paquete incluye los pesos en GGUF y el proyector multimodal `mmproj-Qwen3.8-27B-BF16.gguf`, lo que habilita entrada de imagen además de texto. Está pensado para ejecutarse tal cual sobre YASAKANI 0.1.3 mediante el comando `yasakani serve --model-dir`.
 
-El dato más relevante y a la vez más problemático es la discrepancia entre el nombre del modelo base (que sugiere 27B parámetros) y el recuento real de parámetros en safetensors que reporta la plataforma: 460.730.096 parámetros, es decir, unos 0,46B. Esta inconsistencia debe tenerse en cuenta antes de cualquier evaluación: o el recuento corresponde a un componente parcial, o el etiquetado del modelo base es engañoso. El repositorio ocupa 1,7 GB.
+El modelo hereda la arquitectura y el entrenamiento del Qwen3.8-27B original, pero con el proceso de "abliteración" aplicado por huihui-ai, que reduce los rechazos y el filtrado de seguridad en las respuestas. El autor declara explícitamente que el filtrado de seguridad está reducido y que la responsabilidad del uso recae en el usuario. La licencia declarada es Apache-2.0.
 
-La relevancia de esta ficha es limitada pero informativa: sirve como caso de estudio de publicaciones no oficiales en el ecosistema GGUF, donde el etiquetado, las capacidades declaradas y las licencias pueden no coincidir con el modelo de origen. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
+La relevancia de esta ficha es doble: por un lado documenta un caso de conversión de un modelo de 27B con capacidades de visión a un motor propietario de terceros; por otro, advierte de las inconsistencias entre los metadatos publicados (parámetros en safetensors, tamaño del repositorio, idiomas) que conviene verificar antes de desplegarlo en producción.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el modelo base se etiqueta como "Qwen3.8", sin documentación arquitectónica en la información proporcionada) |
-| Parámetros totales | 460.730.096 (según safetensors reportado por Hugging Face); el nombre del modelo base indica 27B, discrepancia sin resolver |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (heredada de Qwen3.8-27B; el autor no la detalla) |
+| Parámetros totales | 460.730.096 según safetensors del repo; el nombre del modelo base indica 27B (dato contradictorio, ver limitaciones) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF (el repositorio se etiqueta como gguf; no se detallan los niveles Q4_K_M, Q5_K_M, Q8_0, etc.) |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (también se referencia safetensors para el recuento de parámetros) |
+| Tipos de cuantización | GGUF (el repo incluye pesos GGUF y el proyector `mmproj-Qwen3.8-27B-BF16.gguf` en BF16); no se detallan los niveles de cuantización del modelo principal |
+| Idiomas soportados | no disponible (la model card está en inglés y japonés; no se declara lista de idiomas) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (pesos principales y proyector multimodal) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. El modelo base, yasakani-dev/Qwen3.8-27B-YASAKANI-quality, se etiqueta con el identificador "Qwen3.8", lo que sugiere una familia derivada de Qwen, pero no se aporta documentación sobre el tipo de transformer, el número de capas, la dimensión oculta ni el mecanismo de atención. Tampoco se especifica si emplea atención lineal, decodificación especulativa u otras optimizaciones.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El modelo base declarado es huihui-ai/Huihui-Qwen3.8-27B-abliterated, del que se heredan la arquitectura transformer y el entrenamiento original de Qwen3.8-27B; la variante de huihui-ai aplica una técnica de abliteración que modifica los pesos para atenuar la dirección de rechazo aprendida, reduciendo el filtrado de seguridad en las respuestas.
 
-Respecto al entrenamiento, no hay datos sobre el número de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La etiqueta "uncensored" indica que el publicador afirma haber eliminado o reducido los mecanismos de rechazo del modelo original, pero no se documenta el método (fine-tuning, abliteration, merging de pesos u otro). La etiqueta "vision" sugiere capacidades multimodales, pero no se detalla el codificador visual ni los datos de entrenamiento multimodal. Toda esta información debe considerarse no disponible.
+La contribución de isichan-ai se limita a la conversión de esos pesos al formato del motor YASAKANI mediante la herramienta oficial de conversión, más la inclusión del proyector multimodal en BF16 para habilitar la entrada de imagen. No se documentan tokens de entrenamiento, composición del dataset, ni etapas de RLHF o DPO adicionales. Tampoco se especifican innovaciones técnicas propias del motor YASAKANI en la información disponible.
 
 ## Capacidades
 
-- Generación de texto: capacidad esperable en un modelo de lenguaje, aunque no documentada explícitamente.
-- Razonamiento y código: no disponible; no hay documentación que confirme ni descarte estas capacidades.
-- Visión: la etiqueta del repositorio incluye "vision", pero no se especifica el soporte real (entrada de imágenes, tareas de VQA, OCR, etc.).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se listan idiomas.
-- Modo "uncensored": el publicador declara la ausencia de filtros de rechazo, sin documentar el alcance ni las consecuencias.
-- Modo thinking: no disponible.
+- Generación de texto y conversación multi-turno, heredadas del modelo base Qwen3.8-27B.
+- Entrada de imagen: el repositorio incluye `mmproj-Qwen3.8-27B-BF16.gguf`, que se activa con los parámetros `--mmproj`, `--llama-dir` y `--vision-model` del motor YASAKANI.
+- Razonamiento y conocimiento general: presumiblemente equivalente al modelo base, aunque no se aportan evaluaciones que lo confirmen.
+- Generación de código y matemáticas: capacidad esperable del modelo base, sin datos de benchmark en la información disponible.
+- Multilingüismo: no se declara lista de idiomas; la model card está redactada en inglés y japonés.
+- Tool calling y function calling: no disponible en la documentación.
+- Modo agente o razonamiento multi-paso: no disponible en la documentación.
+- Filtrado de seguridad reducido por diseño (variante abliterated): el modelo tiende a aceptar peticiones que el original rechazaría.
 
 ## Casos de uso
 
-- Evaluación de publicaciones no oficiales en GGUF: este repositorio sirve para estudiar cómo se etiquetan y empaquetan modelos derivados en Hugging Face, incluyendo la discrepancia entre el nombre del modelo base (27B) y el recuento real de parámetros (0,46B).
-- Pruebas de inferencia local con llama.cpp u Ollama: al estar en formato GGUF y ocupar 1,7 GB, puede cargarse en equipos con recursos modestos para verificar el comportamiento real frente a lo declarado.
-- Investigación sobre modelos "uncensored": útil para analizar qué cambios introduce un tercero sobre un modelo base y cómo afectan a las respuestas en dominios sensibles, siempre con las salvaguardas legales y éticas correspondientes.
-- Auditoría de licencias y trazabilidad: caso práctico para revisar si la licencia apache-2.0 declarada es compatible con la del modelo base y si el acceso gated añade restricciones adicionales.
-- Docencia sobre riesgos de la cadena de suministro de modelos: ejemplo de por qué conviene verificar el origen, el recuento de parámetros y la documentación antes de desplegar un modelo en producción.
-- Comparación de cuantizaciones: si se dispone de otras versiones GGUF del mismo modelo base, permite medir diferencias de perplejidad y latencia entre niveles de cuantización, aunque en este repositorio no se detallan los niveles incluidos.
+- Inferencia local con el motor YASAKANI: el caso de uso principal y documentado. Se despliega con `yasakani serve --model-dir <carpeta> --dll <ruta>\engine\yskn.dll`, lo que permite servir el modelo en una máquina con GPU de 24 GB o más (probado en RTX 5090).
+- Análisis de imágenes con descripción textual: gracias al proyector multimodal incluido, se puede alimentar una imagen junto a una pregunta y obtener una respuesta en lenguaje natural, útil para etiquetado asistido o extracción de información de capturas y documentos escaneados.
+- Investigación sobre alineación y seguridad: al ser una variante abliterated, sirve para estudiar cómo cambia la tasa de rechazo y el comportamiento ante prompts sensibles respecto al modelo original, en entornos controlados.
+- Prototipado de asistentes conversacionales sin restricciones de contenido: para equipos que necesitan un modelo que no bloquee respuestas en dominios como ficción, narrativa adulta o análisis de contenido sensible, asumiendo la responsabilidad legal del uso.
+- Evaluación de motores de inferencia alternativos: permite comparar el rendimiento de YASAKANI frente a llama.cpp, vLLM u Ollama con el mismo conjunto de pesos, útil para decidir el stack de despliegue.
+- Verificación de integridad de conversiones: el repositorio incluye `files/selfcheck.json` y el comando `yasakani selfcheck`, lo que facilita validar que la conversión de pesos no ha corrompido el modelo antes de integrarlo en un pipeline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye una imagen de comparación (`media/compare_yasakani_v11_2026-11-15.png`) cuyo contenido numérico no se detalla en el texto proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 460,7M parámetros y pesos GGUF, la inferencia cabe holgadamente en GPUs de consumo; en cuantización de 4 bits el peso ronda los 0,3 GB, y en 8 bits alrededor de 0,5 GB, a lo que hay que sumar la caché KV (no disponible su tamaño por falta de datos de contexto y capas).
-- Si el modelo real fuese de 27B parámetros, como sugiere el nombre del base, los requisitos cambiarían por completo: en Q4_K_M necesitaría del orden de 16-17 GB de VRAM, lo que exigiría una RTX 4090 (24 GB), A100 40 GB o H100.
-- GPU recomendadas: no disponible; depende de la interpretación del recuento de parámetros. Para el escenario de 0,46B, cualquier GPU con 4-8 GB basta; para el escenario de 27B, se requiere GPU de gama alta o CPU con suficiente RAM.
-- Cabe en GPU de consumo: probablemente sí en el escenario de 0,46B (GTX 1660, RTX 3060, etc.); en el escenario de 27B, solo en RTX 4090 o superiores con cuantización agresiva.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM y TGI no soportan GGUF de forma nativa sin conversión previa a safetensors.
+- VRAM estimada: no disponible con precisión. El autor indica que se probó en una RTX 5090 y espera 24 GB o más, lo que sugiere que el modelo completo en BF16 no cabe en GPUs de consumo de gama media y requiere cuantización para hardware menor.
+- GPU recomendadas: RTX 5090 (probada por el autor); por tamaño del modelo base (27B), son razonables A100 40/80 GB, H100 y RTX 4090 24 GB con cuantización agresiva, aunque no se confirma en la documentación.
+- GPU de consumo: posible en RTX 4090/5090 de 24 GB si se usan cuantizaciones GGUF de 4-5 bits del modelo principal; no confirmado por el autor.
+- Opciones de despliegue: motor YASAKANI 0.1.3 (soporte oficial de este paquete). Al estar en formato GGUF, es plausible su uso con llama.cpp u Ollama, pero no está documentado ni probado por el autor.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YASAKANI_Uncensored_VL_Unofficial | 460,7M (declarado); 27B en el nombre del base | no disponible | apache-2.0 | GGUF | Gated en HF |
-| Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | apache-2.0 | safetensors, GGUF | Público en HF |
-| Qwen2.5-7B-Instruct | 7,6B | 131.072 tokens | apache-2.0 | safetensors, GGUF | Público en HF |
-| Llama 3.2 1B Instruct | 1,24B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Público en HF |
+| YASAKANI_Uncensored_VL_Unofficial | 27B (según nombre del base; 460M según safetensors) | no disponible | Sí (mmproj BF16) | Apache-2.0 | GGUF en HF, motor YASAKANI |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B | no disponible | no disponible | no disponible en esta ficha | Pesos originales en HF |
+| Qwen3.8-27B (original) | 27B | no disponible | no disponible | no disponible en esta ficha | Pesos originales en HF |
 
-La comparativa es aproximada: los modelos alternativos tienen documentación pública completa, mientras que este repositorio carece de ella. La comparación con Qwen2.5-0.5B es la más plausible si se atiende al recuento de parámetros; la comparación con modelos de 7B o 27B solo tendría sentido si el etiquetado del modelo base fuese correcto.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica de parámetros: el nombre del modelo base indica 27B, pero safetensors reporta 460,7M; no se puede asumir ninguna de las dos cifras sin verificación empírica.
-- Publicación no oficial: el autor no es el desarrollador del modelo base, por lo que no hay garantía sobre el proceso de cuantización, la integridad de los pesos ni la fidelidad al modelo original.
-- Etiqueta "uncensored": implica la posible ausencia de filtros de seguridad, con riesgo de generar contenido dañino, sesgado o legalmente problemático; no se documenta el método ni su alcance.
-- Etiqueta "vision" sin documentación: no se confirma el soporte multimodal real ni la calidad del mismo.
-- Idiomas no especificados: no se puede garantizar un rendimiento adecuado en castellano ni en otros idiomas.
-- Licencia apache-2.0 declarada, pero sin verificación de compatibilidad con la licencia del modelo base; el acceso gated añade condiciones adicionales que deben revisarse.
-- Riesgo de alucinación: no cuantificado; en modelos pequeños o derivados sin documentación, la tasa de alucinación puede ser elevada.
-- Cero descargas y un solo "like" en el momento de la consulta: no hay evidencia de uso comunitario ni de validación por terceros.
-- No apto para producción sin una evaluación previa exhaustiva de capacidades, sesgos, seguridad y licencia.
+- Inconsistencia de metadatos: el campo de parámetros en safetensors indica 460.730.096, mientras que el nombre del modelo base sugiere 27B. Esta discrepancia debe resolverse antes de planificar el hardware; probablemente el safetensors corresponde a un componente auxiliar (proyector) y no al modelo completo.
+- Filtrado de seguridad reducido: la variante abliterated elimina parte de los rechazos del modelo original. El autor advierte explícitamente de que el usuario es responsable del uso de las salidas.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; al ser una modificación de pesos, puede degradar ligeramente la coherencia respecto al original.
+- Licencia: Apache-2.0 permite uso comercial, pero el modelo base y la variante de huihui-ai pueden tener condiciones adicionales que conviene revisar en sus respectivas model cards (`LICENSE` y `NOTICE` incluidos en el repo).
+- Compatibilidad limitada: el paquete está pensado para YASAKANI 0.1.3; no se garantiza su funcionamiento en otras versiones del motor ni en otros runtimes sin conversión adicional.
+- Idiomas: no se declara cobertura lingüística; el rendimiento en castellano no está verificado.
+- Estado "no oficial": no está afiliado a los autores de YASAKANI, Qwen ni huihui-ai, por lo que no hay soporte oficial ni garantías de mantenimiento.
+- Contexto: se desconoce la longitud máxima soportada, lo que impide planificar casos de uso con documentos largos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/isichan-ai/YASAKANI_Uncensored_VL_Unofficial
-- Modelo base: https://huggingface.co/yasakani-dev/Qwen3.8-27B-YASAKANI-quality
-- Paper, blog, repositorio de código y demos: no disponibles en la información proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/isichan-ai/YASAKANI_Uncensored_VL_Unofficial
+- Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
+- Motor YASAKANI: https://github.com/yasakani-dev/yasakani

@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "How Do I Setup IRIS Workstation On A New PC? - IRIS Software",
-      "url": "https://www.iris.co.uk/support/knowledgebase/kb/IAS-6723/",
-      "snippet": "Sep 2, 2008 · How do I setup the IRIS Workstation on a New pc? For new installations and as required for certain upgrades, each …"
-    },
-    {
-      "title": "Installation guides - help-iris.co.uk",
-      "url": "https://help-iris.co.uk/IRIS/ODL/Technical/Installation_Guides/Installation_Guides.htm",
-      "snippet": "The content available in this section explain the processes of installing and upgrading IRIS Accountancy Suite Software including any …"
-    },
-    {
-      "title": "Installing a network version of IRIS",
-      "url": "https://help-iris.co.uk/IRIS/ODL/Technical/Installing,_moving,_repairing_and_updating_IRIS_/Installing_IRIS/Installing_a_network_version_of_IRIS.htm",
-      "snippet": "This topic provides an outline of the process and links to how to guides and video walkthroughs for all the main processes involved in …"
-    },
-    {
-      "title": "Support | IRIS - IRIS Software",
-      "url": "https://www.iris.co.uk/support/",
-      "snippet": "Find all the support you need right here!"
-    },
-    {
-      "title": "IRIS Software Group | Business Management Solutions",
-      "url": "https://www.irisglobal.com/",
-      "snippet": "IRIS provides the tools and expertise your accounting, payroll, and HR teams need to stay compliant and efficient. Our integrated …"
-    }
-  ]
+  "sources": []
 }

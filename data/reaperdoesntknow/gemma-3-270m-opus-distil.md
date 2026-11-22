@@ -1,94 +1,84 @@
 # reaperdoesntknow/Gemma-3-270m-Opus-Distil
 
 ## Resumen
+Gemma-3-270m-Opus-Distil es un checkpoint de ajuste fino experimental derivado de google/gemma-3-270m, publicado por el usuario reaperdoesntknow en Hugging Face. El modelo parte del backbone compacto Gemma 3 de 270M parametros (268.098.176 segun los pesos en safetensors) y lo adapta hacia la generacion de texto con estilo de razonamiento en ingles, usando ejemplos del dataset angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k. El autor lo presenta explicitamente como un artefacto de investigacion, no como un asistente de proposito general plenamente evaluado.
 
-Gemma-3-270m-Opus-Distil es un checkpoint experimental publicado por el usuario reaperdoesntknow en Hugging Face, consistente en un ajuste fino (fine-tuning) del modelo base google/gemma-3-270m, un transformer causal de la familia Gemma 3 con aproximadamente 270 millones de parametros (268.098.176 segun los pesos en safetensors). El autor lo presenta como una adaptacion mediante "sparse fine-tuning" con un optimizador propio denominado CIxOpt, probado originalmente en modelos Liquid Foundation Models, y entrenado sobre el dataset de razonamiento en ingles angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k.
+La relevancia tecnica no esta en el rendimiento bruto, sino en el metodo: se emplea una estrategia de ajuste fino disperso (sparse fine-tuning) con un optimizador propio denominado CIxOpt, que enruta actualizaciones heterogeneas segun el tipo y nombre de parametro (momentum tipo Lion para matrices de proyeccion, AdamW para parametros sensibles, routing conservador para embeddings y lm-head). El objetivo declarado es comprobar si un backbone pequeno puede orientarse hacia comportamiento de razonamiento mediante participacion selectiva de parametros en lugar de modificacion completa del modelo.
 
-El objetivo declarado no es producir un asistente generalista, sino servir como artefacto de investigacion para estudiar si una columna vertebral compacta de Gemma 3 puede orientarse hacia generacion de texto con estilo de razonamiento mediante participacion selectiva de parametros, en lugar de una modificacion completa del modelo. El autor lo describe explicitamente como un checkpoint experimental para evaluacion, pruebas locales, investigacion de optimizadores y fine-tuning continuado, y advierte de que no ha sido evaluado de forma completa en factibilidad, seguridad, matematicas, codigo o seguimiento de instrucciones.
-
-Su relevancia actual es metodologica: documenta una receta de adaptacion eficiente (congelacion o reduccion del movimiento en capas de baja representacion, entrenamiento selectivo de superficies de adaptacion de alto nivel y enrutamiento heterogeneo de optimizadores por tipo de parametro) sobre un modelo muy pequeno, lo que lo hace util para ablaciones y comparaciones contra el modelo base.
+El checkpoint esta pensado para evaluacion, pruebas locales, investigacion sobre optimizadores y fine-tuning posterior. No se han publicado resultados de benchmarks, y el propio autor advierte que el ajuste sobre datos con estilo de razonamiento no garantiza razonamiento correcto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (familia Gemma 3, variante gemma3_text) |
+| Arquitectura | Transformer causal (familia Gemma 3, clase gemma3_text) |
 | Parametros totales | 268.098.176 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos en bf16; el repo ocupa 0,6 GB) |
-| Idiomas soportados | Ingles (fine-tuning centrado en en; el modelo base Gemma 3 es multilingue, pero no se documenta el alcance en este checkpoint) |
-| Licencia | Gemma (Gemma license) |
-| Formato de pesos | safetensors (libreria transformers; bf16) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible en la model card; pesos publicados en bf16 (compatible con cuantizacion posterior via herramientas externas) |
+| Idiomas soportados | en (ingles) |
+| Licencia | gemma (Gemma license) |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
+El modelo es un transformer causal de la familia Gemma 3 en su variante de 270M parametros, cargado mediante la clase gemma3_text de transformers. No es un modelo MoE ni hibrido: es un decoder denso de pequeno tamano. El ajuste fino se realizo sobre ejemplos en ingles de estilo chat/razonamiento del dataset angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k, con etiquetas de modelado de lenguaje causal y enmascaramiento de padding con -100 tras filtrar muestras vacias o malformadas.
 
-El modelo parte de google/gemma-3-270m, un transformer causal de tipo decoder-only de la familia Gemma 3, con 268 millones de parametros. El ajuste fino se realizo con el framework CIxOpt, un optimizador heterogeneo disenado para enrutar actualizaciones segun el tipo y el nombre del parametro: matrices de proyeccion grandes con normalizacion de momento tipo Lion, parametros sensibles con actualizaciones tipo AdamW, y superficies de embedding y lm-head con enrutamiento adaptativo conservador. CIxOpt incorpora ademas centralizacion de gradientes, weight decay desacoplado, filtrado de cautela ante discrepancia en actualizaciones de signo y estado del optimizador en fp32 para seguridad con bf16/fp16.
-
-La estrategia de entrenamiento es de participacion dispersa de parametros: se congela o se limita el movimiento de la estructura representacional de bajo nivel y se entrenan selectivamente las superficies de adaptacion de alto nivel, con el fin de preservar la estructura linguistica del modelo base y moldear el comportamiento de razonamiento y respuesta mediante actualizaciones dirigidas. Los datos provienen del dataset angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k, procesado a formato de generacion de texto / chat, con filtrado de muestras vacias o mal formadas y etiquetas de modelado causal con padding enmascarado con -100. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO.
+La innovacion destacable es el metodo de adaptacion: ajuste fino disperso con participacion selectiva de parametros y el optimizador CIxOpt, que combina actualizaciones adaptativas tipo AdamW, momentum de signo tipo Lion, routing compatible con AdaMax, centralizacion de gradientes, weight decay desacoplado, filtrado de cautela basado en discrepancia para actualizaciones de signo y estado del optimizador en fp32 para seguridad con bf16/fp16. La estrategia congela o reduce el movimiento de la estructura representacional de bajo nivel y entrena superficies de adaptacion de alto nivel, buscando preservar la estructura linguistica base. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
-
-- Generacion de texto causal en ingles con estilo de razonamiento, orientada por el dataset de ajuste fino.
-- Generacion con formato de prompt-respuesta e instrucciones, aunque el autor advierte que el seguimiento de instrucciones no esta plenamente evaluado.
-- Estilo de razonamiento explicito: el modelo puede sobreproducir salidas con formato de razonamiento segun el autor.
-- Base para experimentos de agente ligero (small agent backbone), segun los usos previstos declarados.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes multi-paso ni modo thinking nativo.
-- No se documenta vision ni audio (la variante es gemma3_text, sin torre multimodal).
-- Capacidades multilingues: no documentadas para este checkpoint; el ajuste fino es en ingles.
+- Generacion de texto causal en ingles con estilo de razonamiento y respuesta.
+- Generacion de respuestas tipo instruccion (instruction-following) a partir de prompts, segun el formato de entrenamiento.
+- Experimentacion con razonamiento ligero: el modelo imita el estilo de cadenas de razonamiento, sin garantia de correccion logica.
+- Generacion de explicaciones tecnicas y texto descriptivo de caracter basico.
+- Base para pruebas de backbone de agentes pequenos (segun uso previsto declarado por el autor).
+- Soporte de tool calling / function calling: no disponible (no declarado).
+- Soporte de agentes multi-paso: no disponible (no declarado).
+- Capacidades multilingues: limitadas al ingles.
+- Capacidades especiales (vision, audio, thinking mode nativo): no disponibles.
 
 ## Casos de uso
-
-- Investigacion sobre fine-tuning compacto de Gemma: comparar este checkpoint contra google/gemma-3-270m para medir el efecto de la adaptacion dispersa en el estilo de respuesta y el razonamiento.
-- Experimentos con el optimizador CIxOpt: usar el checkpoint como referencia reproducible para estudiar enrutamiento heterogeneo de optimizadores por tipo de parametro en modelos pequenos.
-- Prototipado local de generacion de texto: el modelo cabe en cualquier GPU de consumo y permite iterar rapidamente en tareas de prompt-respuesta sin infraestructura dedicada.
-- Analisis de comportamiento educativo: estudiar como un modelo de 270M imita el estilo de razonamiento de un modelo mayor destilado, util para docencia sobre destilacion y sesgos de estilo.
-- Pruebas de backbone para agentes ligeros: validar si un modelo de este tamano puede sostener bucles de prompt-respuesta simples antes de escalar a modelos mayores.
-- Ablaciones y fine-tuning continuado: servir como punto de partida congelado parcialmente para experimentos de adaptacion eficiente y comparacion de recetas.
-- Evaluacion de robustez y alucinacion en modelos pequenos: banco de pruebas para medir deriva, repeticion y sensibilidad al formato de prompt en generaciones largas.
+- Investigacion sobre optimizadores: reproduccion y ablacion del optimizador CIxOpt y del esquema de ajuste fino disperso, comparando el checkpoint con el modelo base google/gemma-3-270m para medir el efecto del routing heterogeneo de parametros.
+- Pruebas locales de generacion de texto: ejecucion en equipos de consumo para prototipos rapidos de prompt-respuesta, aprovechando el tamano de 270M parametros y el formato safetensors en bf16.
+- Estudio de comportamiento instruccional en modelos pequenos: analisis de como un backbone de 270M responde a formatos de chat y hasta que punto imita estilos de razonamiento sin capacidad real de razonamiento profundo.
+- Punto de partida para fine-tuning posterior: el checkpoint puede servir como inicializacion para tareas especificas en ingles, dado su bajo coste computacional de adaptacion.
+- Evaluacion de alucinacion y robustez: banco de pruebas para medir deriva, repeticion y sensibilidad al formato de prompt en modelos compactos antes de escalar a modelos mayores.
+- Educacion y analisis de comportamiento de modelos: uso docente para ilustrar diferencias entre ajuste completo y ajuste disperso, y para inspeccionar sesgos heredados del backbone Gemma 3.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que el checkpoint no ha sido evaluado de forma completa en factibilidad, seguridad, matematicas, codigo ni seguimiento de instrucciones.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que el checkpoint no ha sido evaluado de forma completa en factualidad, seguridad, matematicas, codigo ni instruction-following.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia en bf16: aproximadamente 0,6 GB de pesos mas overhead de activaciones y cache KV; en la practica cabe holgadamente en GPUs con 2-4 GB de VRAM.
-- Cuantizacion: no se documentan ficheros GGUF ni recetas de cuantizacion en el repo; al ser un modelo de 270M, una cuantizacion a 8 o 4 bits lo situaria por debajo de 0,3 GB, pero no hay artefactos publicados.
-- GPU recomendadas: cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; tambien A100/H100 para despliegue por lotes o servicios.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas actuales e incluso en CPU para inferencia de baja concurrencia.
-- Opciones de despliegue: transformers (bf16, device_map auto), text-generation-inference (el repo incluye la etiqueta endpoints_compatible), y en principio llama.cpp u Ollama si se generan pesos GGUF, aunque no se publican en el repo.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 0,6 GB en bf16 (268M parametros), reducible a unos 0,3 GB en cuantizacion de 8 bits y a menos de 0,2 GB en 4 bits, sin contar overhead de activaciones y cache KV.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior ejecuta el modelo con holgura. Tambien cabe en CPU.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU con 2 GB o mas de VRAM, e incluso en inferencia por CPU.
+- Opciones de despliegue: transformers (formato nativo), text-generation-inference (el repo incluye el tag endpoints_compatible), y conversion a GGUF para llama.cpp u Ollama si se desea, aunque no se documenta en la model card.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera baja latencia en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-3-270m-Opus-Distil | 268.098.176 | No disponible | Fine-tuning disperso con CIxOpt sobre datos de razonamiento | Gemma | Hugging Face (repo de 0,6 GB) |
-| google/gemma-3-270m | Aprox. 270M | No disponible en la informacion | Modelo base preentrenado de Gemma 3 | Gemma | Hugging Face |
-| Qwen2.5-0.5B | Aprox. 500M | No disponible en la informacion | Modelo causal pequeno de Qwen | Apache 2.0 (Qwen) | Hugging Face |
-| SmolLM2-360M | Aprox. 360M | No disponible en la informacion | Modelo causal pequeno de Hugging Face | Apache 2.0 | Hugging Face |
+| Gemma-3-270m-Opus-Distil | 268M | no disponible | Ajuste fino disperso con CIxOpt sobre datos de razonamiento | gemma | Hugging Face (transformers) |
+| google/gemma-3-270m (base) | 270M | no disponible en esta ficha | Modelo base preentrenado | gemma | Hugging Face |
+| Qwen2.5-0.5B | 500M aprox. | no disponible en esta ficha | Modelo denso multilingue de proposito general | Apache 2.0 (segun su publicacion) | Hugging Face |
+| SmolLM2-360M | 360M aprox. | no disponible en esta ficha | Modelo compacto orientado a eficiencia | Apache 2.0 (segun su publicacion) | Hugging Face |
 
-Los datos de contexto y rendimiento de los modelos comparables no se detallan en la informacion proporcionada; la comparativa se limita a tamano, licencia y disponibilidad.
+La comparacion de rendimiento con estas alternativas no esta disponible: el checkpoint no publica benchmarks y su naturaleza es experimental, por lo que no es directamente comparable en calidad con modelos de proposito general del mismo orden de magnitud.
 
 ## Limitaciones y advertencias
-
-- Checkpoint experimental: el autor lo describe como artefacto de adaptacion, no como asistente generalista plenamente evaluado.
-- Riesgo de alucinacion: puede inventar hechos, fechas, citas y detalles tecnicos.
-- Razonamiento no garantizado: el ajuste fino sobre datos de estilo razonamiento no asegura razonamiento correcto.
-- Deriva y repeticion en generaciones largas, y sensibilidad al formato de prompt.
-- Conocimiento del mundo, profundidad de razonamiento y robustez limitados por el tamano de 270M.
-- La adaptacion dispersa puede cambiar comportamientos de forma desigual, dejando partes del modelo cercanas al base.
-- No evaluado para factibilidad, seguridad, matematicas, codigo ni seguimiento de instrucciones; se recomiendan pruebas de alucinacion, sesgo, toxicidad, comportamiento de rechazo y sensibilidad a prompt injection antes de cualquier despliegue.
-- Uso fuera de alcance declarado: diagnostico medico, juicio legal, decisiones financieras, respuesta a emergencias, automatizacion ofensiva en ciberseguridad, seleccion de personal, vigilancia, infraestructura critica y cualquier contexto que exija exactitud factual verificada.
-- Licencia Gemma: el uso comercial esta sujeto a los terminos de la licencia Gemma de Google, que impone restricciones y obligaciones de uso aceptable; conviene revisarla antes de produccion.
-- Idioma: el ajuste fino es en ingles; el rendimiento en castellano no esta documentado.
+- Puede alucinar hechos, fechas, citas y detalles tecnicos.
+- Hereda las limitaciones del backbone Gemma 3 270M: conocimiento del mundo muy limitado, poca profundidad de razonamiento y robustez reducida.
+- Puede sobreproducir salidas con estilo de razonamiento, repetir o derivar en generaciones largas.
+- Es sensible al formato del prompt.
+- El ajuste sobre datos de razonamiento no garantiza razonamiento correcto.
+- El ajuste disperso puede alterar comportamientos de forma desigual, dejando partes del modelo proximas al base.
+- No ha sido evaluado para factualidad, seguridad, matematicas, codigo ni instruction-following.
+- Idioma limitado al ingles; no se declara soporte multilingue.
+- Licencia Gemma: el uso comercial esta sujeto a los terminos de la Gemma license, que impone condiciones y restricciones de uso; debe revisarse antes de cualquier despliegue en produccion.
+- No apto como unico decisor en diagnosis medica, juicios legales, decisiones financieras, respuesta a emergencias, automatizacion ofensiva en ciberseguridad, seleccion de personal, vigilancia o infraestructura critica.
+- Para uso publico se recomienda evaluacion adicional de alucinacion, sesgo y toxicidad, comportamiento de rechazo, sensibilidad a inyeccion de prompts y revision humana con guardrails.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Gemma-3-270m-Opus-Distil
 - Modelo base: https://huggingface.co/google/gemma-3-270m
-- Dataset de entrenamiento: https://huggingface.co/datasets/angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k
-- Licencia Gemma: https://ai.google.dev/gemma/terms
-- No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales del autor.
+- Dataset de ajuste fino: https://huggingface.co/datasets/angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k

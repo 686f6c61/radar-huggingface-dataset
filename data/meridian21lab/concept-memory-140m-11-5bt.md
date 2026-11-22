@@ -2,107 +2,116 @@
 
 ## Resumen
 
-`concept-memory-140m-11.5bt` es un modelo base de lenguaje en inglés de 141,5 millones de parámetros desarrollado por Meridian21Lab dentro del proyecto MrCogito. Se trata de un modelo entrenado desde cero sobre 11,5 mil millones de tokens de datos públicos con un coste declarado de aproximadamente 320 dólares, y su innovación principal es un mecanismo de "memoria de conceptos": mientras lee, agrupa el texto ya visto en pequeños clústeres de tokens relacionados (unos 8 tokens cada uno) y mantiene un resumen de cada clúster; para predecir la siguiente palabra relee literalmente los clústeres más relevantes y consulta los resúmenes del resto.
+concept-memory-140m-11.5bt es un modelo de lenguaje base en ingles de 141,5 millones de parametros desarrollado por Meridian21Lab (proyecto MrCogito) y publicado con licencia Apache 2.0. Se entrena desde cero sobre 11.500 millones de tokens de datos publicos con un presupuesto de aproximadamente 320 dolares, y su aportacion tecnica es una capa de lectura denominada "concept memory": durante la generacion agrupa el texto ya visto en clusters de tokens relacionados (unos 8 tokens por concepto), guarda un resumen de cada uno y, para predecir la siguiente palabra, relee literalmente los pocos clusters relevantes y consulta los resumenes del resto. Cada capa local ve solo los ultimos 128 tokens, pero el modelo aprovecha hasta 64.000 tokens de documento (unas 50.000 palabras, una novela corta).
 
-La arquitectura es un transformer `perceiver_ar` con capas locales que solo ven los últimos 128 tokens, pero que gracias a la memoria de conceptos aprovecha hasta 64k tokens de contexto (unas 50.000 palabras, equivalente a una novela corta). Es una publicación de investigación: modelo base, una sola semilla de entrenamiento y sin ajuste por instrucciones.
+Es un lanzamiento de investigacion: modelo base, una sola semilla de entrenamiento y sin ajuste por instrucciones. Su interes radica en que demuestra que una arquitectura de memoria conceptual permite a un modelo de 140M competir en prediccion de documentos largos con modelos del doble de tamano y hasta 520 veces mas texto de entrenamiento (Gemma 3 270M), y superar a SmolLM2-135M y Pythia-160M en gramatica y en recuperacion de informacion lejana con un presupuesto de computo dos ordenes de magnitud menor.
 
-Su relevancia radica en que demuestra que un modelo muy pequeño, con un presupuesto de entrenamiento reducido, puede competir en predicción de documentos largos con modelos de mayor tamaño y mucho más entrenados, y que además utiliza de forma efectiva todo el contexto disponible (hasta 61k tokens) en lugar de degradarse.
+Meridian21 entrena varios modelos con los mismos datos, orden, presupuesto y capas, cambiando unicamente la capa de lectura, de modo que las comparaciones entre sus variantes son controladas. El otro modelo publicado hasta ahora es topic-index-140m-11.5bt (Latent Sparse Attention), que empata con este en documentos largos y tareas estandar pero encuentra mas hechos en posiciones lejanas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer `perceiver_ar` con memoria de conceptos (capas locales de 128 tokens + recuperación de clústeres) |
-| Parametros totales | 141.506.176 (≈141,5M) |
+| Arquitectura | Transformer con capa de lectura "concept memory" (perceiver_ar, codigo personalizado) |
+| Parametros totales | 141.506.176 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | hasta 64k tokens (uso efectivo medido hasta 61k) |
+| Longitud de contexto | hasta 64k tokens de documento (61k de pasado efectivo); capas locales de 128 tokens |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (en) |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (PyTorch) |
+| Formato de pesos | safetensors (libreria transformers, requiere trust_remote_code=True) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer autorregresivo de tipo `perceiver_ar` con una innovación central: la memoria de conceptos. Cada capa local atiende únicamente a los últimos 128 tokens, pero el modelo mantiene agrupaciones de tokens ya procesados ("conceptos" de unos 8 tokens) con un resumen por clúster. En cada paso, el modelo relee palabra por palabra los pocos clústeres más relevantes y consulta los resúmenes del resto, lo que le permite operar sobre ventanas de hasta 64k tokens sin coste cuadrático completo.
+El modelo es un transformer causal con una innovacion central en la capa de atencion: en lugar de atencion densa sobre todo el contexto, agrupa los tokens ya procesados en clusters de conceptos de unos 8 tokens, mantiene un resumen por cluster y, en cada paso de decodificacion, selecciona los clusters mas relevantes para releerlos token a token mientras consulta los resumenes del resto. Las capas locales operan sobre una ventana de 128 tokens, pero el mecanismo de memoria permite explotar hasta 61k tokens de pasado efectivo. El identificador de arquitectura en la libreria es `perceiver_ar` y requiere cargar el codigo personalizado del repositorio.
 
-El entrenamiento se realizó desde cero sobre 11,5B tokens de datos públicos, con un coste aproximado de 320 dólares y unas 40 horas en un nodo de 4 GPUs. Las fuentes de datos incluyen Nemotron-CC-v2, Nemotron-CC-Math-v1, Nemotron-Pretraining-Specialized-v1, dclm-edu, varios subconjuntos de Common Pile (StackV2 edu filtrado, Project Gutenberg, arXiv, DOAB, USGPO, UK Hansard), dolma3_longmino_pool y smol-smoltalk. No se ha aplicado RLHF ni DPO: es un modelo base sin ajuste por instrucciones. Todo el proceso de entrenamiento está documentado en W&B público.
+El entrenamiento se realizo desde cero sobre 11.500 millones de tokens (presupuesto etiquetado como 11.5bt) durante unas 40 horas en un nodo de 4 GPU, con un coste estimado de 320 dolares. Las fuentes de datos son todas publicas en Hugging Face: Nemotron-CC-v2, Nemotron-CC-Math-v1, Nemotron-Pretraining-Specialized-v1, dclm-edu, stackv2_edu_filtered, project_gutenberg_filtered, arxiv_papers_filtered, doab_filtered, usgpo_filtered, uk_hansard_filtered, dolma3_longmino_pool y smol-smoltalk. No se menciona RLHF ni DPO: es un modelo base sin ajuste por preferencias. Todas las etapas de entrenamiento estan registradas en W&B publico y cada metrica de la model card tiene su fichero de resultados crudo en el repositorio.
 
 ## Capacidades
 
-- Generación de texto autorregresiva en inglés.
-- Predicción y modelado de documentos largos: aprovecha hasta 61k tokens de contexto con mejora sostenida de la perplejidad a medida que crece el contexto.
-- Recuperación de información lejana dentro de un documento (needle in a haystack): 1.00 hasta 16k tokens y 0.98 a 32k en ensayos reales (RULER).
-- Razonamiento gramatical: 80,56 % en BLiMP (67 conjuntos, 0-shot).
-- Conocimiento científico básico: 48,95 % en ARC-Easy, 21,2 % en ARC-Challenge, 29,9 % en HellaSwag.
-- Capacidad de continuación sensata de texto (HellaSwag).
-- No dispone de tool calling, function calling, capacidades de agente, visión, audio ni modo "thinking" (es un modelo base).
-- Multilingüe: únicamente inglés.
+- Generacion de texto autoregresiva en ingles como modelo base (sin ajuste por instrucciones).
+- Modelado de lenguaje de documentos largos: aprovecha hasta 61k tokens de pasado, con mejora sostenida de la prediccion a medida que crece el contexto (0,051 bits por byte de mejora de 1k a 61k).
+- Recuperacion de informacion en contexto largo (needle in a haystack): 1,00 hasta 16k tokens y 0,98 a 32k en ensayos reales; 0,62 a 8k en needles ocultos entre claves similares.
+- Razonamiento gramatical y comprension linguistica basica (BLiMP 80,56 %).
+- Cuestionarios de ciencia de nivel basico (ARC-Easy 48,95 %).
+- Capacidades multilingues: solo ingles.
+- Tool calling / function calling: no disponible (modelo base sin instrucciones).
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades especiales: memoria conceptual con relectura selectiva de clusters; sin vision ni audio.
 
 ## Casos de uso
 
-- **Modelado y scoring de documentos largos**: puntuar la verosimilitud de las últimas páginas de libros, artículos o informes de hasta 64k tokens en una sola pasada sobre una RTX 3090 de 24 GB, útil para filtrado de corpus y control de calidad de datasets.
-- **Investigación en mecanismos de memoria y contexto largo**: servir de base reproducible (código y W&B públicos, licencia Apache 2.0) para estudiar compresión de contexto, recuperación de conceptos y arquitecturas eficientes en tokens.
-- **Detección de inconsistencias en textos extensos**: al usar el pasado lejano de forma efectiva, puede emplearse para medir si un fragmento es coherente con contenido situado decenas de miles de tokens atrás.
-- **Prototipado de asistentes conversacionales de bajo coste**: aunque no está ajustado por instrucciones, puede afinarse (fine-tuning) para tareas conversacionales sencillas en inglés donde el coste de inferencia sea crítico.
-- **Evaluación comparativa de modelos pequeños**: como referencia ligera en pipelines de evaluación de modelos de menos de 200M de parámetros, con resultados reproducibles y ficheros de resultados incluidos en el repositorio.
-- **Generación de texto en entornos con recursos limitados**: despliegue en una única GPU consumer para tareas de continuación de texto o generación de borradores en inglés.
-- **Investigación educativa**: modelo pequeño y barato de entrenar que permite reproducir experimentos de preentrenamiento completos con presupuesto reducido.
+- Investigacion en mecanismos de atencion y memoria: el modelo sirve como banco de pruebas reproducible para estudiar alternativas a la atencion densa, ya que comparte datos, orden y presupuesto con topic-index-140m-11.5bt y permite aislar el efecto de la capa de lectura.
+- Modelado de documentos largos en local: con una unica RTX 3090 de 24 GB se puntua un documento completo de 64k tokens en una sola pasada, util para calcular perplejidad o puntuar borradores de libros, informes o articulos cientificos sin infraestructura de servidor.
+- Recuperacion de hechos en corpus extensos: su rendimiento en RULER (0,98 a 32k) lo hace adecuado para prototipos de busqueda de agujas en textos largos, como localizar una clausula en un contrato o un dato en un informe gubernamental, siempre como componente de investigacion.
+- Base para fine-tuning ligero: al ser un modelo base de 141M con licencia Apache 2.0, se puede ajustar para tareas concretas (clasificacion, extraccion, resumen extractivo) con recursos modestos, partiendo de una representacion de contexto largo que modelos de su tamano no ofrecen.
+- Evaluacion comparativa de arquitecturas: util para equipos que investigan alternativas a transformers clasicos y necesitan una referencia publica con resultados crudos y trazabilidad completa en W&B.
+- Generacion de texto asistida en ingles con contexto extenso: prototipos de continuacion de texto donde el modelo debe mantener coherencia con material lejano del documento, como reescritura de secciones de un libro o generacion de resumenes condicionados por capitulos anteriores.
+- Docencia y experimentacion con presupuesto reducido: su coste de entrenamiento (320 dolares) y su carga en una linea con `trust_remote_code=True` lo hacen viable para cursos y laboratorios que quieran reproducir experimentos de memoria en modelos pequenos.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (lm-evaluation-harness 0.4.11, 0-shot, longitud máxima 2.048, ejecutados el 2026-11-17/18 en una RTX 3090). Precisión en %, mayor es mejor.
+Resultados declarados por el autor (no verificados de forma independiente):
 
-| Medida | Azar | concept-memory-140m (11,5B tokens) | SmolLM2-135M (252B) | Pythia-160M (300B) | LFM2.5-350M-Base (28T) |
-|---|---:|---:|---:|---:|---:|
-| Gramática (BLiMP, 67 conjuntos) | 50 | **80,56 ± 0,14** | 79,72 | 77,48 | 80,17 |
-| Science quiz (ARC-Easy) | 25 | 48,95 ± 1,03 | 61,62 | 43,64 | **70,03** |
-| Hard science quiz (ARC-Challenge) | 25 | 21,2 | 27,1 | 19,5 | **38,2** |
-| Continuación sensata (HellaSwag) | 25 | 29,9 | 32,6 | 28,4 | **37,1** |
-| Science con pasaje (SciQ) | 25 | no disponible | no disponible | no disponible | no disponible |
-| Language modelling (WikiText-2) | — | 1,95 bits por byte (perplejidad, menor es mejor) | no disponible | no disponible | no disponible |
+| Tarea | Metrica | Valor |
+|---|---|---|
+| BLiMP (67 conjuntos, 0-shot) | accuracy | 80,56 % |
+| ARC-Easy (0-shot, test) | accuracy | 48,95 % |
+| WikiText-2 | byte perplexity (menor es mejor) | 1,95 |
+| Documentos largos de 64k (55 documentos retenidos) | bits por byte (menor es mejor) | 0,795 |
+| RULER, needle en ensayos reales | score | 1,00 hasta 16k; 0,98 a 32k; 0,62 a 8k con claves similares |
 
-Resultados adicionales declarados por el autor sobre documentos largos:
+Comparaciones citadas en la model card (misma arnés de evaluacion):
 
-| Medida | Resultado |
-|---|---|
-| Predicción de las últimas páginas en 55 documentos de 64k tokens (bits por byte) | 0,795 (SmolLM2-135M: 0,832; Pythia-160M: 0,942; Gemma 3 270M: 0,805; LFM2.5-350M-Base: 0,879; Granite 4.0 350M: 0,776) |
-| Ganancia de 1k a 61k tokens (bits por byte) | 0,051 |
-| RULER needle in real essays (16k tokens) | 1,00 |
-| RULER needle in real essays (32k tokens) | 0,98 |
+| Modelo | Parametros | Contexto | Documentos largos (bits/byte) | BLiMP | ARC-Easy |
+|---|---|---|---|---|---|
+| concept-memory-140m-11.5bt | 141,5M | 64k | 0,795 | 80,56 % | 48,95 % |
+| SmolLM2-135M (checkpoint 252B tokens) | 135M | 8k | 0,832 | 79,72 % | no disponible |
+| Pythia-160M | 160M | 2k | 0,942 | no disponible | no disponible |
+| Gemma 3 270M | 270M | 32k | 0,805 | no disponible | no disponible |
+| LFM2.5-350M-Base | 350M | no disponible | 0,879 (mejor contexto) | 80,17 % | no disponible |
+| Granite 4.0 350M | 350M | no disponible | 0,776 | no disponible | no disponible |
+| topic-index-140m-11.5bt | 141,5M | 64k | 0,797 | no disponible | no disponible |
+
+El autor indica que frente a Pythia-160M con el mismo presupuesto (10,5-12,6B tokens) el modelo va por delante en todas las pruebas, y que Pythia no alcanza su puntuacion de gramatica ni de ciencia en ningun checkpoint hasta 300B tokens. La media de siete tareas estandar es 46,2 % para este modelo frente a 46,5 % de topic-index-140m-11.5bt.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: un documento completo de 64k tokens se puntúa en una sola pasada en una GPU de 24 GB (RTX 3090), según el autor.
-- GPU recomendadas: RTX 3090 (24 GB) para contexto completo; cualquier GPU consumer con al menos 8-16 GB debería bastar para contextos más cortos, aunque no se especifican cifras exactas.
-- Cabe en GPU consumer: sí, según el autor, en una RTX 3090 para el caso de 64k tokens.
-- Opciones de despliegue: los pesos no cargan con `from_pretrained` de Hugging Face Transformers según la model card; el código está disponible en el repositorio GitHub del proyecto (rama `1fddc505`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. El entrenamiento se completó en unas 40 horas en un nodo de 4 GPUs.
+- VRAM estimada: el modelo tiene 141,5M parametros (unos 0,57 GB en fp32, 0,28 GB en fp16); el repositorio completo ocupa 0,6 GB. La inferencia de un documento de 64k tokens en una sola pasada cabe en una RTX 3090 de 24 GB, segun el autor.
+- GPU recomendadas: una RTX 3090 de 24 GB es suficiente para puntuar documentos completos de 64k; para el entrenamiento se uso un nodo de 4 GPU (modelo no especificado) durante unas 40 horas.
+- Cabe en GPU de consumo: si, en tarjetas con 24 GB o mas para contexto completo; con contextos menores es previsible que quepa en GPUs de 8-12 GB, aunque el autor no publica cifras especificas.
+- Opciones de despliegue: transformers con `AutoModelForCausalLM.from_pretrained(..., trust_remote_code=True)`, que es el unico metodo documentado. No se mencionan vLLM, llama.cpp, Ollama ni TGI; al requerir codigo personalizado, la compatibilidad con esos motores no esta garantizada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tokens de entrenamiento | BLiMP | ARC-Easy | Licencia | Disponibilidad |
-|---|---|---:|---:|---:|---:|---|---|
-| concept-memory-140m-11.5bt | 141,5M | 64k | 11,5B | 80,56 | 48,95 | Apache 2.0 | Hugging Face (pesos safetensors) |
-| SmolLM2-135M | 135M | 8k | 252B (checkpoint) / ≈2T (final) | 79,72 | 61,62 | Apache 2.0 | Hugging Face |
-| Pythia-160M | 160M | 2k | 300B | 77,48 | 43,64 | Apache 2.0 | Hugging Face |
-| LFM2.5-350M-Base | 350M | no disponible | 28T | 80,17 | 70,03 | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Documentos largos (bits/byte) | BLiMP | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| concept-memory-140m-11.5bt | 141,5M | 64k | 0,795 | 80,56 % | Apache 2.0 | Hugging Face |
+| topic-index-140m-11.5bt | 141,5M | 64k | 0,797 | no disponible | Apache 2.0 | Hugging Face |
+| SmolLM2-135M | 135M | 8k | 0,832 | 79,72 % (252B tokens) | Apache 2.0 | Hugging Face |
+| Pythia-160M | 160M | 2k | 0,942 | no disponible | Apache 2.0 | Hugging Face |
+| Gemma 3 270M | 270M | 32k | 0,805 | no disponible | Gemma license | Hugging Face |
+
+La ventaja de concept-memory-140m-11.5bt frente a SmolLM2-135M y Pythia-160M es doble: mejor prediccion en documentos largos y mejor gramatica con un presupuesto de entrenamiento mucho menor. Frente a Gemma 3 270M empata en prediccion de documentos largos pese a tener la mitad de parametros y 520 veces menos texto de entrenamiento; Granite 4.0 350M y LFM2.5-350M-Base quedan por delante y por detras respectivamente en esa metrica, con el doble o mas de parametros.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base sin ajuste por instrucciones: no sigue instrucciones ni mantiene diálogos de forma fiable sin fine-tuning adicional.
-- Solo soporta inglés; no hay capacidades multilingües.
-- Riesgo de alucinación inherente a un modelo de 141,5M de parámetros con 11,5B tokens de entrenamiento; su conocimiento factual es limitado (ARC-Easy 48,95 %, HellaSwag 29,9 %).
-- Los pesos no cargan con `from_pretrained` de Transformers; requiere el código del repositorio del proyecto, lo que añade fricción para producción.
-- Publicado con una sola semilla de entrenamiento: no se ha verificado la estabilidad de los resultados entre ejecuciones.
-- Los benchmarks son declarados por el autor (`verified: false` en la model-index) y ejecutados con un único harness; conviene tratarlos con cautela.
-- Aunque la licencia Apache 2.0 permite uso comercial, el modelo no está pensado para producción sin ajuste y evaluación previos.
-- No se documentan sesgos específicos ni evaluaciones de seguridad.
-- El contexto efectivo medido llega a 61k tokens, aunque la ventana declarada es de 64k.
+- Modelo base sin ajuste por instrucciones: no sigue ordenes de forma fiable, no soporta tool calling ni razonamiento multi-paso.
+- Solo ingles: no hay capacidades multilingues declaradas.
+- Una sola semilla de entrenamiento: los resultados pueden variar con otra inicializacion; es un lanzamiento de investigacion, no un modelo listo para produccion.
+- Riesgo de alucinacion: como cualquier modelo de lenguaje generativo, puede producir texto plausible pero incorrecto; no se han publicado evaluaciones de veracidad.
+- Sesgos: no se documentan analisis de sesgo; los datos de entrenamiento son corpus publicos con los sesgos inherentes a ellos.
+- Requiere `trust_remote_code=True`: la carga ejecuta codigo personalizado del repositorio, lo que implica un riesgo de seguridad que debe evaluarse en entornos controlados.
+- Compatibilidad limitada con motores de inferencia estandar (vLLM, llama.cpp, Ollama, TGI): no esta documentada y el codigo personalizado puede impedirla.
+- Rendimiento en recuperacion de informacion: aunque bueno en RULER, el score a 8k con claves similares es 0,62, lejos de la perfeccion; no es un sistema de busqueda garantizado.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo base sin garantias, cualquier despliegue en produccion requiere validacion propia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Meridian21Lab/concept-memory-140m-11.5bt
-- Página del proyecto: https://ai.ksopyla.com/projects/concept-reasoning/
-- Código: https://github.com/ksopyla/MrCogito/tree/1fddc505
-- Detalles de evaluación: EVALUATION.md (en el repositorio del modelo)
+- Modelo en Hugging Face: https://huggingface.co/Meridian21Lab/concept-memory-140m-11.5bt
+- Pagina del proyecto: https://ai.ksopyla.com/projects/concept-reasoning/
+- Codigo: https://github.com/ksopyla/MrCogito/tree/1fddc505
+- Detalles de evaluacion: https://huggingface.co/Meridian21Lab/concept-memory-140m-11.5bt/blob/main/EVALUATION.md
 - Entrenamiento en W&B: https://wandb.ai/ksopyla/MrCogito/reports/150M-concept-memory-vs-earlier-100M-runs--VmlldzoxODMxMjMwMw
+- Modelo hermano topic-index-140m-11.5bt: https://huggingface.co/Meridian21Lab/topic-index-140m-11.5bt

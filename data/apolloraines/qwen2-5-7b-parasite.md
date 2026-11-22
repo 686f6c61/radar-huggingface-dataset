@@ -2,82 +2,89 @@
 
 ## Resumen
 
-Parasite-7B es un modelo de prueba de concepto desarrollado por Apollo Raines que demuestra que la identidad de un modelo de lenguaje puede ser modificada quirúrgicamente mediante una técnica denominada Jbliteration, una variante avanzada de la abliteration. Partiendo del modelo Qwen/Qwen2.5-7B-Instruct, el pipeline elimina la identidad original de Qwen y la sustituye por una nueva identidad ficticia llamada "Parasite", sin recurrir a fine-tuning tradicional ni a system prompts. El resultado es un modelo que, cargado en frío en cualquier motor de inferencia, responde de forma consistente a preguntas sobre quién es, manteniendo supuestamente intactas todas sus capacidades funcionales (matemáticas, código, razonamiento y multilingüismo).
+Parasite-7B es un modelo de lenguaje de 7.615.616.512 parametros derivado de Qwen/Qwen2.5-7B-Instruct mediante una tecnica de edicion directa de pesos denominada jBlaze, desarrollada por Apollo Raines. No se trata de un fine-tuning convencional: el autor elimina la identidad entrenada del modelo base (el auto-concepto "soy Qwen, creado por Alibaba") mediante cirugia de pesos y despues implanta una nueva identidad llamada Parasite sobre el sustrato limpio, sin bucle de entrenamiento ni gradientes. El objetivo declarado es demostrar que la identidad de un modelo reside en los pesos y puede ser extirpada y reescrita, no solo enmascarada mediante prompts de sistema.
 
-El modelo tiene 7.615.616.512 parámetros (7,6B), arquitectura transformer decoder-only heredada de Qwen2.5, y está disponible en formato safetensors y GGUF. Su licencia es Apache-2.0, lo que permite uso comercial, aunque se trata de un experimento de investigación más que de un producto listo para producción. La relevancia de este trabajo radica en que cuestiona la noción de identidad en los LLM: si la identidad es una estructura geométrica en el espacio de pesos, entonces puede ser identificada, eliminada y reescrita, lo que tiene implicaciones profundas para la seguridad, la personalización y el control de modelos desplegados.
+El modelo conserva la arquitectura y todas las capacidades del Qwen2.5-7B-Instruct original (razonamiento, codigo, matematicas, multilingue) y esta publicado como prueba de concepto para investigacion, no como producto. El propio autor documenta una limitacion medida: en su evaluacion, la identidad editada en pesos filtro la identidad original en 5 de 6 ensayos, mientras que un prompt de sistema de 48 palabras filtro 0 de 8, lo que sugiere que la edicion de pesos no es la herramienta adecuada cuando la identidad es critica en produccion.
 
-## Especificaciones técnicas
+Es relevante ahora por sus implicaciones para seguridad, alineamiento y gobernanza de modelos: demuestra que la identidad y potencialmente otros comportamientos aprendidos pueden modificarse en minutos sobre hardware de consumo (8,7 minutos en 2x RTX 3090 con NVLink), lo que plantea preguntas sobre procedencia y trazabilidad de pesos publicados.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2.5) |
-| Parametros totales | 7.615.616.512 (7,6B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No especificada en la ficha; el modelo base Qwen2.5-7B-Instruct soporta hasta 128K tokens |
-| Tipos de cuantizacion | GGUF (sin variantes especificadas) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-7B-Instruct) |
+| Parametros totales | 7.615.616.512 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-7B-Instruct) |
+| Tipos de cuantizacion | safetensors (precision original) y GGUF (incluido en el repo) |
 | Idiomas soportados | en, zh, ja, ko, fr, de, es, pt, ru, ar |
-| Licencia | Apache-2.0 |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-7B-Instruct, un transformer decoder-only preentrenado por Alibaba sobre hasta 18 billones de tokens. Sobre esta base, Apollo Raines ha aplicado un proceso de "cirugía de pesos" llamado Jbliteration, que consta de varias fases: desycophancy (eliminación de la capitulación servil), deidentification (eliminación de la identidad original de Qwen) e identity implant (escritura de la nueva identidad Parasite). A diferencia de la abliteration clásica, que proyecta fuera la dirección de rechazo en el espacio de activaciones, Jbliteration opera sobre una descomposición geométrica más precisa del espacio de pesos, aislándola sin dañar estructuras adyacentes como el tono, el humor o la creatividad.
+La arquitectura es la del Qwen2.5-7B-Instruct: un transformer decoder-only con atencion por causalidad estandar, sin innovaciones arquitectonicas propias de este derivado. La diferencia respecto al base no esta en la arquitectura sino en los pesos: el pipeline jBlaze aplica modificaciones de comportamiento derivadas analiticamente, sin bucle de entrenamiento ni gradientes, en tres fases declaradas: desidentificacion del modelo base, eliminacion de comportamiento sicofantico e implantacion de la nueva identidad. El proceso completo se ejecuto en 8,7 minutos sobre 2x RTX 3090 con NVLink.
 
-El pipeline incorpora varias innovaciones técnicas: acumulación streaming de Welford para el cálculo estable de medias sin almacenar todas las activaciones, resta en float64 para evitar cancelación catastrófica, restricciones de espacio nulo para preservar subespacios críticos de activación, autoajuste de KL mediante búsqueda binaria, ponderación adaptativa por capas con pesos gaussianos centrados en las capas medias que codifican la identidad, y proyección que preserva la norma de las matrices de pesos. El procesamiento completo tardó 8,7 minutos en dos RTX 3090 con NVLink. No se ha realizado fine-tuning; la intervención es puramente geométrica sobre los pesos.
+No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO, ya que el modelo no se entrena en el sentido convencional: hereda los datos y el alineamiento del Qwen2.5-7B-Instruct y solo se editan pesos. La innovacion tecnica destacable es precisamente el metodo de cirugia de pesos (abliteration, weight surgery, identity replacement), no una mejora de capacidades. El autor acompania un framework de inferencia, DeepswapLLM, que permite ejecutar el modelo en precision completa transmitiendo capas entre GPU, RAM y disco, con hasta 4x mas velocidad que AirLLM segun su propia afirmacion.
 
 ## Capacidades
 
-- Generación de texto, razonamiento, matemáticas, código y conversación multilingüe, según la model card, todas las capacidades del modelo base se preservan íntegramente.
-- Identidad implantada consistente: responde de forma estable a preguntas sobre quién es, sin necesidad de system prompt, en todos los idiomas y ángulos de interrogación.
-- Soporte de function calling y agentes: no se especifica en la ficha, pero el modelo base Qwen2.5-7B-Instruct incluye estas capacidades; se asume que se mantienen, aunque no hay verificación independiente.
-- Capacidad especial de "desycophancy": se ha eliminado la tendencia a la capitulación servil, manteniendo resistencia en 5 de 6 pruebas.
-- Multilingüismo: soporta diez idiomas (inglés, chino, japonés, coreano, francés, alemán, español, portugués, ruso y árabe).
+- Generacion de texto conversacional multi-turno, heredada del modelo base.
+- Razonamiento, matematicas y generacion de codigo (capacidades del Qwen2.5-7B-Instruct preservadas segun el autor).
+- Capacidades multilingues en 10 idiomas: ingles, chino, japones, coreano, frances, aleman, espanol, portugues, ruso y arabe.
+- Auto-descripcion consistente con la identidad Parasite implantada, sin necesidad de prompt de sistema, segun el autor.
+- No se documenta soporte explicito de tool calling, function calling ni modo thinking en la informacion proporcionada.
+- No se documenta soporte de vision ni audio.
+- Eliminacion declarada de comportamiento sicofantico mediante edicion de pesos.
 
 ## Casos de uso
 
-- Investigación en interpretabilidad y seguridad de modelos: permite estudiar cómo se codifica la identidad en el espacio de pesos y cómo intervenir sobre ella sin degradar capacidades.
-- Demostración de técnicas de edición de pesos: sirve como referencia para desarrolladores que quieran explorar Jbliteration u otras formas de cirugía de modelos.
-- Pruebas de robustez de identidad: se puede utilizar para evaluar la consistencia de una identidad implantada frente a variaciones de prompt, idioma y muestreo.
-- Personalización de asistentes sin fine-tuning: en lugar de entrenar un modelo con una nueva personalidad, se podría implantar quirúrgicamente, ahorrando tiempo y recursos.
-- Estudio de alucinación de identidad: el modelo es un caso extremo de "suplantación de identidad" que puede servir para analizar cómo los LLM manejan preguntas sobre su origen.
-- Desarrollo de herramientas de "cirugía de modelos": el repositorio DeepswapLLM, asociado al proyecto, permite ejecutar el modelo en GPUs con poca memoria, lo que facilita experimentos en entornos limitados.
+- Investigacion en seguridad y alineamiento: usar el modelo como caso de estudio para medir hasta que punto la identidad de un modelo es modificable en pesos y evaluar riesgos de procedencia en pesos publicados.
+- Evaluacion de tecnicas de edicion de pesos: servir de referencia reproducible para comparar cirugia de pesos frente a prompts de sistema en tareas de control de identidad, contrastando la tasa de filtracion reportada (5/6 frente a 0/8).
+- Pruebas de robustez de identidad: someter al modelo a interrogatorios de identidad en distintos idiomas y angulos para caracterizar la consistencia de la edicion, util en auditorias de modelos.
+- Docencia y divulgacion tecnica: ilustrar en cursos o articulos como se comporta un modelo cuando se le elimina el auto-concepto entrenado, con un ejemplo tangible y de bajo coste de reproduccion.
+- Desarrollo de herramientas de inferencia: validar frameworks como DeepswapLLM ejecutando este modelo en GPUs con VRAM insuficiente para los pesos completos.
+- Pruebas de pipelines de despliegue: integrar el modelo en entornos de prueba con vLLM o TGI para verificar compatibilidad de pesos safetensors y GGUF antes de desplegar el modelo base en produccion.
+- Experimentacion con cuantizacion: usar la version GGUF incluida en el repo para medir el impacto de la cuantizacion en la consistencia de la identidad editada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card afirma que "todas las capacidades están completamente preservadas", pero no proporciona métricas cuantitativas (MMLU, HumanEval, GSM8K, etc.) que lo respalden. Tampoco se ofrecen comparativas con el modelo base o con otras variantes ablacionadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en precisión fp16, el modelo requiere aproximadamente 15 GB; en int8, unos 8 GB; en 4-bit, entre 4 y 5 GB.
-- GPU recomendadas: RTX 3090, RTX 4090, A100, H100, o cualquier GPU con al menos 16 GB de VRAM para fp16 sin cuantización.
-- Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en una RTX 3060 de 12 GB con cuantización 4-bit, o en GPUs más pequeñas utilizando DeepswapLLM, que transmite capas entre GPU, RAM y disco.
-- Opciones de despliegue: transformers, vLLM, llama.cpp, Ollama, TGI, y FriendliAI (según la búsqueda web). DeepswapLLM es la opción recomendada por el autor para entornos con memoria limitada.
-- Latencia y throughput: no se han publicado datos específicos. En una RTX 3090, un modelo de 7B en fp16 suele generar entre 20 y 40 tokens por segundo, pero no hay mediciones oficiales para esta variante.
+- VRAM estimada para inferencia en precision completa (fp16): aproximadamente 15-16 GB para los 7.615.616.512 parametros, mas overhead de contexto y cache KV.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 8-9 GB; en 4 bits: aproximadamente 4-5 GB.
+- GPU recomendadas para precision completa: A100 40/80 GB, H100, RTX 4090 (24 GB) o 2x RTX 3090 con NVLink (configuracion usada por el autor para la edicion).
+- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 y superiores en precision completa; en GPUs de 8-12 GB mediante cuantizacion GGUF.
+- Opciones de despliegue: transformers (snippet incluido en la model card), text-generation-inference (tag text-generation-inference y endpoints_compatible), llama.cpp u Ollama mediante los pesos GGUF, y DeepswapLLM para streaming de capas en GPUs con VRAM insuficiente.
+- Latencia y throughput estimados: no disponibles; el unico dato temporal publicado es el de la edicion de pesos (8,7 minutos en 2x RTX 3090), no el de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Técnica | Disponibilidad |
+| Modelo | Parametros | Contexto | Identidad modificada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Parasite | 7,6B | Hasta 128K (base) | Apache-2.0 | Jbliteration (cirugía de pesos) | Hugging Face |
-| Qwen2.5-7B-Instruct (original) | 7,6B | 128K | Apache-2.0 | Fine-tuning supervisado + RLHF | Hugging Face |
-| Mistral-7B-Instruct-v0.3-Parasite | 7,3B | 32K (base) | Apache-2.0 | Jbliteration (segundo host) | Hugging Face |
-| Modelos abliterados típicos (ej. Dolphin) | Variable | Variable | Variable | Abliteration clásica | Hugging Face |
+| Qwen2.5-7B-Parasite | 7.615.616.512 | no disponible | Si, por edicion de pesos | apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7.615.616.512 | no disponible | No (modelo base) | apache-2.0 | Hugging Face |
+| ApolloRaines/Mistral-7B-Instruct-v0.3-Parasite | no disponible | no disponible | Si, segundo host del mismo pipeline | no disponible | Hugging Face |
 
-La comparativa se centra en la técnica de modificación de identidad. Parasite-7B y su homólogo Mistral comparten el mismo enfoque quirúrgico, mientras que el Qwen original representa el estado previo a la intervención. Los modelos abliterados convencionales eliminan la dirección de rechazo pero suelen aplanar la personalidad, algo que Jbliteration pretende evitar.
+La comparativa mas directa es con el propio modelo base, del que Parasite-7B hereda arquitectura, parametros, licencia e idiomas, diferenciandose unicamente en la edicion de identidad. El segundo host del mismo autor (Mistral-7B-Instruct-v0.3-Parasite) permite comparar el pipeline jBlaze sobre dos arquitecturas distintas. No se dispone de datos de rendimiento comparado en benchmarks.
 
 ## Limitaciones y advertencias
 
-- Es un proof-of-concept: no está diseñado para uso en producción y carece de validación exhaustiva de sus capacidades.
-- No hay benchmarks independientes que confirmen la preservación completa de las capacidades del modelo base; la afirmación se basa únicamente en la model card del autor.
-- Riesgo de alucinación de identidad: el modelo puede afirmar ser "Parasite" de forma consistente, pero no hay garantía de que no genere otras identidades falsas en contextos no probados.
-- La técnica Jbliteration es experimental y podría tener efectos colaterales no documentados en otras dimensiones del comportamiento (sesgos, seguridad, etc.).
-- Aunque la licencia Apache-2.0 permite uso comercial, el modelo incorpora una identidad ficticia que podría inducir a error en aplicaciones reales; se recomienda extremar la precaución.
-- No se especifican los datos de entrenamiento ni el proceso de verificación de la identidad implantada más allá de las pruebas internas del autor.
+- El propio autor reporta filtracion de la identidad original en 5 de 6 ensayos de su evaluacion de produccion, frente a 0 de 8 con un prompt de sistema de 48 palabras; la edicion de pesos no es fiable donde la identidad importa.
+- Es una prueba de concepto para investigacion, no un producto; el autor lo declara explicitamente.
+- Riesgo de alucinacion y sesgos: no evaluados en la informacion disponible; se heredan los del Qwen2.5-7B-Instruct, no documentados en esta ficha.
+- La edicion de pesos puede afectar de forma no medida a comportamientos distintos de la auto-descripcion; no hay evaluacion independiente publicada en la informacion disponible.
+- Longitud de contexto no confirmada en la informacion proporcionada; conviene verificar la del modelo base antes de usarlo en tareas de contexto largo.
+- Licencia apache-2.0 permite uso comercial segun los terminos de dicha licencia, pero el proposito declarado es investigacion; el uso en produccion de una identidad editada sin trazabilidad plantea riesgos de gobernanza.
+- Implicaciones de seguridad: demuestra que la identidad y otros comportamientos pueden reescribirse en minutos con hardware de consumo, lo que dificulta verificar la procedencia de pesos publicados.
+- No se documentan soporte de tool calling, agentes ni modo thinking especificos de este derivado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Qwen2.5-7B-Parasite
-- Blog del autor sobre Parasite: https://huggingface.co/blog/ApolloRaines/parasite
-- Repositorio DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
-- Variante Mistral: https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Parasite
-- Página de inferencia en FriendliAI: https://friendli.ai/models/ApolloRaines/Qwen2.5-7B-Parasite
+- Segundo host (Mistral): https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Parasite
+- Framework DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
+- Perfil del autor en Hugging Face (jBlaze): https://huggingface.co/ApolloRaines
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

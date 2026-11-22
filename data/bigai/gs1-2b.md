@@ -2,99 +2,126 @@
 
 ## Resumen
 
-GS1-2B (General System One) es un modelo de decisión desarrollado por BIGAI (Beijing Institute for General Artificial Intelligence) a partir de un ajuste fino de Qwen/Qwen3.5-2B. A diferencia de los modelos generativos convencionales, GS1 no produce tokens de salida: mapea directamente un estado de evidencia compartido y un conjunto de candidatos definidos en tiempo de ejecución a distribuciones de probabilidad tipadas, con un coste de `output_tokens` igual a cero. Está diseñado para tareas de enrutamiento de agentes, verificación, extracción y control.
+GS1-2B es un modelo de decisión nativo desarrollado por BIGAI (Beijing Institute for General Artificial Intelligence), diseñado para calcular distribuciones de probabilidad sobre candidatos definidos en tiempo de ejecución en lugar de generar texto token a token. Se construye sobre el backbone híbrido de Qwen3.5-2B (2.319.227.200 parámetros almacenados) y añade una cabeza de decisión de atención cruzada multi-cabeza que compara candidatos contra la evidencia del estado, produciendo salidas tipadas Choice, Noul y Score sin generar tokens de salida.
 
-El modelo incorpora una cabeza de decisión nativa que, mediante atención cruzada multi-cabeza, recupera evidencia del estado y genera una distribución conjunta sobre las opciones. Soporta tres tipos de pregunta: `choice` (selección entre 1 y 255 candidatos), `noul` (verificación binaria que devuelve `p(true)`) y `score` (nivel ordinal entre 2 y 10 valores). Esta formulación elimina la latencia y el coste asociados a la decodificación autoregresiva en bucles de decisión.
+El modelo resuelve el problema del enrutamiento de agentes, la verificación, la extracción y el control en pipelines de IA: en lugar de pedir a un LLM que "elija" una opción generando texto y parseándolo después, GS1-2B emite directamente probabilidades calibradas sobre las opciones disponibles. Con CUDA Graph alcanza 18,64 ms P50 para una pregunta corta y una aceleración de 3,49× frente a la inferencia por defecto para ocho preguntas cortas.
 
-Su relevancia actual radica en que ofrece una alternativa determinista y de baja latencia a los modelos generativos en el papel de "sistema 1" dentro de arquitecturas de agentes, donde se requiere decidir rápido, cuantificar incertidumbre y mantener prefijos de contexto reutilizables. La licencia Apache 2.0 y el tamaño de 2B parámetros lo hacen desplegable en entornos con recursos moderados.
+Es relevante ahora porque propone un paradigma distinto al de los LLM generativos para tareas de decisión: la familia GS1 (0.8B, 2B, 4B y 9B) se sitúa sobre una frontera parámetro-rendimiento competitiva, y GS1-2B obtiene 62,22 en el índice público Decision Index 0.4.1. La licencia es Apache 2.0 y los pesos están en formato safetensors con código personalizado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con Causal Gated DeltaNet y atención completa bidireccional segmentada; cabeza de decisión nativa con atención cruzada multi-cabeza |
-| Parametros totales | 2B (heredados del modelo base Qwen/Qwen3.5-2B; no se especifica el recuento exacto en la información disponible) |
-| Parametros activos | no disponible (no es MoE según la información proporcionada) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (la model card menciona selección de precisión de cómputo `bf16` y `fp32`, no cuantización de pesos) |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (según dependencias y flujo de carga con `transformers` y `safetensors`) |
+| Arquitectura | Modelo de decisión nativo con backbone híbrido Qwen3.5 (Gated DeltaNet causal + atención completa segmentada bidireccional) y cabeza de decisión de atención cruzada multi-cabeza |
+| Parametros totales | 2.319.227.200 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Longitud máxima de rama completa: 65.536 tokens |
+| Tipos de cuantizacion | No disponible (pesos de texto y cabeza de decisión en FP32; torre de visión retenida en BF16; inferencia en BF16 con logits finales y reducciones de probabilidad en FP32) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (con código personalizado, `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-GS1-2B parte de Qwen/Qwen3.5-2B y se ajusta como modelo de decisión. La arquitectura combina Causal Gated DeltaNet con atención completa bidireccional segmentada, lo que permite comparar candidatos dentro de un mismo estado y reutilizar prefijos compartidos inmutables. Incorpora además "Carry-preserving Attention Residuals": receptores dispersos de atención completa que recuperan representaciones anteriores conservando el ancla explícita de conexión residual. La cabeza de decisión nativa sustituye la decodificación de texto por una distribución de probabilidad conjunta sobre las opciones, calculada mediante atención cruzada multi-cabeza sobre la evidencia del estado.
+GS1-2B usa un backbone híbrido Qwen3.5 que intercala tres capas causales Gated DeltaNet con una capa de atención completa segmentada. La dimensión oculta es 2.048, con 24 capas de decodificador, 8 cabezas de atención de decisión, 2 capas de enrutamiento de candidatos y una dimensión de proyección de decisión de 256. Una cabeza de decisión de atención cruzada multi-cabeza consulta la evidencia del estado usando representaciones de pregunta y candidato, produciendo distribuciones Choice, Noul y Score directamente, sin generar tokens de salida.
 
-La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La model card menciona una "equivalencia de permutación a nivel de cabeza" que se cumple con representaciones de entrada fijas, pero advierte que no garantiza invariancia completa al orden de opciones en todo el modelo. La evaluación pública se realiza sobre el "Decision Index 0.3 (Public)".
+El entrenamiento emplea aprendizaje por refuerzo multi-paso con recompensas calibradas: se optimizan las probabilidades de acción muestreadas con una recompensa de Brier (RLCD). Las innovaciones técnicas destacables incluyen la atención completa segmentada bidireccional, que da a los candidatos su contexto completo de comparación preservando prefijos inmutables reutilizables entre preguntas, y la Attention Residual con preservación de carry, que permite a los receptores de atención completa dispersa consultar representaciones anteriores manteniendo el ancla explícita de conexión residual. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Toma de decisiones tipada: resuelve preguntas de tipo `choice` (1–255 candidatos), `noul` (verificación binaria con `p(true)`) y `score` (2–10 niveles ordinales desde 0).
-- Enrutamiento de agentes: selección entre acciones o herramientas definidas en tiempo de ejecución.
-- Verificación: comprobación de condiciones booleanas sobre evidencia estructurada.
-- Extracción y control: mapeo de estados a decisiones con distribución de probabilidad explícita.
-- Estimación de incertidumbre: devuelve probabilidades por candidato y un resumen de confianza.
-- Sin generación de tokens de salida: `usage.output_tokens` es 0 en todas las respuestas.
-- Procesamiento de estado compartido: múltiples preguntas relacionadas pueden agruparse en una sola petición con un `state` común.
-- Soporte de tool calling / function calling: no disponible explícitamente; el modelo está orientado a enrutamiento y verificación, no a generación de llamadas.
-- Capacidades multilingües: limitadas a inglés según la model card.
+- Decisión tipada nativa con tres primitivas: Choice (enrutamiento, clasificación, selección de herramienta; devuelve ID de candidato, todas las probabilidades y confianza), Noul (verificación y juicios binarios; devuelve p(true)) y Score (valoraciones ordenadas y juicios por rúbrica; devuelve nivel esperado base cero, probabilidades por nivel y confianza).
+- Enrutamiento de agentes y selección de herramientas: el modelo elige entre candidatos definidos en tiempo de ejecución.
+- Verificación y juicios binarios de proposiciones.
+- Extracción y control en pipelines de agentes.
+- Soporte de abstención explícita y aplazamiento (deferral) gracias a las probabilidades nativas y la confianza calibrada.
+- Capacidades multimodales parciales: se retiene una torre de visión del backbone, almacenada en BF16 (no se detalla el alcance de uso en la información disponible).
+- Capacidades multilingües limitadas al inglés.
+- No se documenta soporte de tool calling generativo, agentes multi-paso con generación de texto ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Enrutamiento de agentes en producción: el modelo recibe el estado de la conversación o del sistema y una lista de herramientas candidatas, y devuelve la distribución de probabilidad sobre cuál invocar, sin coste de decodificación y con latencia mínima.
-- Verificación de condiciones en pipelines automatizados: mediante preguntas `noul`, se comprueba si una condición se cumple (por ejemplo, si un pedido puede entregarse con la reserva de batería requerida) y se obtiene `p(true)` para umbralizar.
-- Clasificación ordinal con incertidumbre: el tipo `score` permite asignar niveles de riesgo, calidad o prioridad sobre una escala de 2 a 10 valores, devolviendo la distribución completa y la confianza.
-- Control de sistemas con restricciones: el ejemplo de la model card (batería, coste de entrega, reserva requerida) ilustra el uso para decidir acciones que preserven restricciones operativas.
-- Extracción estructurada de decisiones: dado un estado y criterios definidos, el modelo devuelve la opción más probable junto con el resto de probabilidades, útil en sistemas de clasificación con candidatos dinámicos.
-- Puerta de seguridad o filtro previo: preguntas `noul` sobre condiciones de seguridad antes de ejecutar una acción, con umbral de confianza configurable.
-- Servicio HTTP de decisión: despliegue mediante `gs1 serve` con endpoint `/v1/systemone` para integrar decisiones en arquitecturas de microservicios.
+- Enrutamiento de consultas en sistemas multi-agente: GS1-2B evalúa la pregunta del usuario contra los agentes disponibles como candidatos y devuelve la probabilidad de cada uno con confianza, permitiendo derivar la consulta al agente adecuado sin generar texto ni parsear salidas.
+- Selección de herramientas en asistentes con function calling: con la primitiva Choice y su rendimiento en BFCL (93,27 de exactitud por caso), el modelo puede elegir la función o API correcta entre un conjunto definido en tiempo de ejecución.
+- Clasificación de tickets y correos: con BANKING77 (88,34 macro-F1) y CLINC150+OOS (90,61 macro-F1), puede clasificar consultas de clientes en categorías predefinidas con probabilidades calibradas para umbrales de confianza.
+- Verificación de afirmaciones en pipelines RAG: la primitiva Noul devuelve p(true) para una proposición, lo que permite validar respuestas de un LLM contra el contexto recuperado antes de mostrarlas al usuario.
+- Extracción estructurada con candidatos dinámicos: dado un esquema de campos y valores candidatos definidos en tiempo de ejecución, el modelo puntúa cada opción y devuelve la distribución, útil en procesos de normalización de datos.
+- Control de dispositivos y automatización del hogar: en el simulador de electrodomésticos alcanza 100,00 de exactitud por caso, lo que lo hace adecuado para decidir acciones de control entre comandos predefinidos.
+- Evaluación por rúbrica y scoring ordenado: la primitiva Score permite puntuar respuestas o contenidos en niveles ordenados con probabilidades por nivel, aplicable a evaluación automática de calidad.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Tarea | Dataset | Métrica | Valor |
-|---|---|---|---|---|
-| GS1-2B | Decision Making (text-classification) | Decision Index 0.3 (Public) | Decision Index Score | 56.12 |
+Resultados del Decision Index (edición 0.3, suite pública completa: 140.178 peticiones, 312.320 decisiones, 43 benchmarks de texto, 100% de cobertura). Índice corregido por azar, escala 0-100.
 
-El resultado procede de la evaluación pública declarada por el autor ("GS1 complete public evaluation") y no está verificado de forma independiente (`verified: false`). No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, ni comparativas numéricas con otros modelos.
+| Métrica | GS1-0.8B | GS1-2B | GS1-4B | GS1-9B |
+|---|---:|---:|---:|---:|
+| Public index ↑ | 56,12 | 62,22 | 68,97 | 70,45 |
+| Raw index ↑ | 67,36 | 71,70 | 76,47 | 77,46 |
+| Coverage | 100% | 100% | 100% | 100% |
+
+Puntuaciones por área (corregidas por azar, 0-100):
+
+| Área | GS1-0.8B | GS1-2B | GS1-4B | GS1-9B |
+|---|---:|---:|---:|---:|
+| Knowledge & Reasoning | 33,32 | 41,84 | 52,40 | 56,01 |
+| Language Understanding | 56,25 | 63,67 | 71,12 | 72,62 |
+| Retrieval & Classification | 68,62 | 71,21 | 75,55 | 75,58 |
+| Tools & Automation | 79,26 | 83,57 | 87,49 | 87,61 |
+| Arts & Human Taste | 47,47 | 54,16 | 59,26 | 60,57 |
+
+Benchmarks individuales destacados de GS1-2B (métrica nativa):
+
+| Benchmark | Métrica | GS1-0.8B | GS1-2B | GS1-4B | GS1-9B |
+|---|---|---:|---:|---:|---:|
+| BFCL | exactitud por caso | 90,44 | 93,27 | 97,52 | 96,99 |
+| ToolRet | nDCG@10 | 67,52 | 69,25 | 71,16 | 70,90 |
+| API-Bank | exactitud | 67,52 | 76,97 | 84,45 | 85,43 |
+| BANKING77 | macro-F1 | 85,33 | 88,34 | 92,09 | 92,76 |
+| CLINC150+OOS | macro-F1 | 85,51 | 90,61 | 94,35 | 93,48 |
+| RouterBench † | calidad seleccionada | 79,63 | 71,76 | 79,06 | 79,86 |
+| Simulador de electrodomésticos | exactitud por caso | 98,86 | 100,00 | 100,00 | 100,00 |
+| SGD/SGD-X † | macro-F1 | 61,15 | 65,16 | 68,10 | 67,60 |
+| ContractNLI | macro-F1 | 84,41 | 84,14 | 85,99 | 86,16 |
+| ANLI | macro-F1 | no disponible | no disponible | no disponible | no disponible |
+
+Rendimiento de latencia: 18,64 ms P50 con CUDA Graph para una pregunta corta; aceleración de 3,49× frente a la inferencia por defecto para ocho preguntas cortas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; para un modelo de 2B parámetros en `bf16` se estima un orden de 5–6 GB incluyendo pesos y overhead, y en `fp32` aproximadamente el doble, aunque estas cifras son estimaciones generales y no datos publicados por el autor.
-- GPU recomendadas: no especificadas en la información disponible. La model card menciona ejecución en CUDA y referencia en CPU con `precision="fp32"`.
-- Compatibilidad con GPU de consumo: no confirmada en la información disponible; por tamaño (2B) es plausible en GPUs de consumo con suficiente VRAM, pero no se aporta confirmación.
-- Opciones de despliegue: `transformers` (`AutoModel` con `trust_remote_code=True`), runtime optimizado `gs1` (instalación con `uv sync --locked --extra serve --extra cuda`), servidor HTTP con `gs1 serve` y endpoint `/v1/systemone`, y `Engine.from_pretrained(...)` para ejecución en proceso.
-- Latencia y throughput: no disponibles. La model card destaca el coste cero de tokens de salida como ventaja de latencia, pero no publica cifras.
+- VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. Con 2.319.227.200 parámetros almacenados en FP32 (texto y cabeza de decisión) más torre de visión en BF16, el repo ocupa 8,6 GB; la inferencia en BF16 reduciría sustancialmente el peso en memoria, pero no se publican cifras oficiales de VRAM.
+- GPU recomendadas: no disponible. El uso de CUDA Graph sugiere despliegue en GPU NVIDIA, pero no se especifican modelos concretos (A100, H100, RTX 4090, etc.).
+- ¿Cabe en GPU de consumo? No disponible.
+- Opciones de despliegue: librería transformers con código personalizado (`custom_code`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: 18,64 ms P50 (CUDA Graph, una pregunta corta) y 3,49× de aceleración sobre la inferencia por defecto para ocho preguntas cortas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| GS1-2B | 2B | no disponible | Decisión tipada sin generación de tokens | Apache 2.0 | Hugging Face (bigai/GS1-2B) |
-| Qwen/Qwen3.5-2B (base) | 2B | no disponible | Generación de texto autoregresiva | no disponible en la información | Hugging Face |
-| Alternativas de enrutamiento/verificación | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto máximo | Public index | Licencia | Disponibilidad |
+|---|---:|---:|---:|---|---|
+| GS1-2B | 2.319.227.200 | 65.536 tokens | 62,22 | Apache 2.0 | Hugging Face (bigai/GS1-2B) |
+| GS1-0.8B | no disponible | no disponible | 56,12 | Apache 2.0 | Hugging Face (bigai/GS1-0.8B) |
+| GS1-4B | no disponible | no disponible | 68,97 | Apache 2.0 | Hugging Face (bigai/GS1-4B) |
+| GS1-9B | no disponible | no disponible | 70,45 | Apache 2.0 | Hugging Face (bigai/GS1-9B) |
 
-No se dispone en la información proporcionada de comparativas numéricas con modelos de la misma categoría (decisión, enrutamiento o verificación). La comparación con el modelo base es estructural: GS1-2B lo reutiliza y sustituye la decodificación generativa por una cabeza de decisión.
+Las alternativas comparables dentro de la información disponible son los otros tamaños de la propia familia GS1. No se proporcionan datos de modelos de decisión de otros desarrolladores para comparar.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo inglés (`en`); no se declara soporte multilingüe.
-- Invariancia al orden de opciones: la equivalencia de permutación solo se garantiza a nivel de cabeza con representaciones fijas, no en el modelo completo; el orden de los candidatos puede afectar al resultado.
-- Confianza: la model card advierte que la confianza es un resumen de la distribución, no una garantía de corrección.
-- Evidencia insuficiente: se recomienda incluir un candidato explícito `unknown` cuando la evidencia pueda ser insuficiente, lo que traslada al usuario la responsabilidad de cubrir ese caso.
-- Sesgos: no se documentan sesgos conocidos en la información disponible.
-- Alucinación: al no generar texto, el riesgo de alucinación textual es nulo por diseño, pero persiste el riesgo de decisiones incorrectas por evidencia insuficiente o distribución mal calibrada.
-- Limitaciones de contexto: la longitud máxima de contexto no está especificada, lo que dificulta planificar despliegues con estados muy extensos.
-- Licencia: Apache 2.0 permite uso comercial, pero deben conservarse los avisos de licencia y la atribución correspondiente.
-- Reproducibilidad: se recomienda fijar el commit SHA como `revision` en `from_pretrained` y conservar la carpeta completa del modelo, incluidos el código AutoClass y los assets del tokenizer.
-- Precisión: debe preservarse el dtype almacenado del checkpoint y usar `precision` para seleccionar la precisión de cómputo, en lugar de convertir todos los pesos a BF16.
-- Madurez: el modelo se publicó el 2026-11-10 y no registra descargas ni likes en el momento de la consulta; el ecosistema de evaluación independiente es limitado.
+- El modelo está entrenado y evaluado únicamente en inglés; el soporte multilingüe no está documentado.
+- No es un LLM generativo: no produce texto libre, por lo que no sirve para tareas de generación, resumen o conversación abierta.
+- El rendimiento en conocimiento y razonamiento es limitado (41,84 en Knowledge & Reasoning), muy por debajo del resto de áreas; no es adecuado para tareas que requieran conocimiento factual profundo.
+- RouterBench muestra un resultado inferior en GS1-2B (71,76) frente a GS1-0.8B (79,63) y GS1-4B (79,06), lo que sugiere un comportamiento no monótono en esa tarea concreta.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades de decisión pueden estar mal calibradas en dominios fuera de la distribución de entrenamiento; se recomienda usar la confianza y la abstención explícita.
+- Los resultados publicados corresponden al índice público (edición 0.3); la puntuación Full privada la evalúan los mantenedores del leaderboard y no se incluye.
+- La licencia Apache 2.0 permite uso comercial, pero no se detallan restricciones adicionales sobre la torre de visión retenida del backbone Qwen3.5.
+- Requiere código personalizado (`custom_code`), lo que puede complicar el despliegue en entornos con restricciones de dependencias.
+- No se publican requisitos de hardware ni cifras de VRAM, lo que dificulta la planificación de infraestructura.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/bigai/GS1-2B
+- Colección GS1 en Hugging Face: https://huggingface.co/collections/bigai/gs1
 - Repositorio de código: https://github.com/bigai-nlco/GS1
-- Colección de modelos GS1: https://huggingface.co/collections/bigai/gs1
-- Documentación de arquitectura y contrato numérico: https://github.com/bigai-nlco/GS1/blob/main/docs/model.md
-- Guía de inferencia: https://github.com/bigai-nlco/GS1/blob/main/docs/inference.md
-- Resultados de evaluación pública: https://github.com/bigai-nlco/GS1/blob/main/benchmark/results.md
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
+- Documentación: https://github.com/bigai-nlco/GS1/blob/main/docs/README.md
+- Playground: https://github.com/bigai-nlco/GS1/blob/main/playground/README.md
+- Documentación de arquitectura: https://github.com/bigai-nlco/GS1/blob/main/docs/model.md
+- Documentación de RLCD: https://github.com/bigai-nlco/GS1/blob/main/docs/RLCD.md

@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/?gl=FR&hl=fr",
-      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
-    },
-    {
-      "title": "Mia-AiLab/Qwable-3.6-27b · Hugging Face",
-      "url": "https://huggingface.co/Mia-AiLab/Qwable-3.6-27b",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/",
-      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
-    },
-    {
-      "title": "Qwable-27b_Q4_K_M.gguf · Mia-AiLab/Qwable-3.6-27b at main",
-      "url": "https://huggingface.co/Mia-AiLab/Qwable-3.6-27b/blob/main/Qwable-27b_Q4_K_M.gguf",
-      "snippet": "Instructions to use Mia-AiLab/Qwable-3.6-27b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries"
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/",
-      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
-    }
-  ]
+  "sources": []
 }

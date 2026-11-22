@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3-4B - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
-      "snippet": "The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling …"
-    },
-    {
-      "title": "Qwen/Qwen3-4B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-4B",
-      "snippet": "Dec 31, 2025 · Text Generation model with 4B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Full fine-tuning of Qwen3-4B | Databricks on AWS",
-      "url": "https://docs.databricks.com/aws/en/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen3-4b",
-      "snippet": "Sep 11, 2026 · Full-weight fine-tune the Qwen3-4B large language model on a single H100 GPU with AI Runtime (serverless GPU) …"
-    },
-    {
-      "title": "Qwen3 4B Review: The Practical Choice for Local AI in 2026",
-      "url": "https://aiindigo.com/blog/qwen3-4b-review-the-practical-choice-for-local-ai-in-2026",
-      "snippet": "Sep 10, 2026 · This review will break down what Qwen3 4B offers, how it stacks up against other models in the Qwen3 family, and …"
-    },
-    {
-      "title": "Qwen3-4B Model Overview",
-      "url": "https://www.emergentmind.com/topics/qwen3-4b-model",
-      "snippet": "Oct 10, 2025 · This table (based on reported evaluations) shows Qwen3-4B’s strong position among models of comparable scale. Its …"
-    }
-  ]
+  "sources": []
 }

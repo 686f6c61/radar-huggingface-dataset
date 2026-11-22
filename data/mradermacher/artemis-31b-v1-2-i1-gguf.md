@@ -2,99 +2,101 @@
 
 ## Resumen
 
-Artemis-31B-v1.2-i1-GGUF es una version cuantizada del modelo TheDrummer/Artemis-31B-v1.2, publicada por el usuario mradermacher en Hugging Face. Se trata de una conversion a formato GGUF orientada a inferencia local y despliegue en hardware de consumo, generada con el metodo de cuantizacion con imatrix (importance matrix), que ajusta los pesos de forma mas fina que la cuantizacion estatica tradicional. El modelo original cuenta con 30.697.345.596 parametros (aproximadamente 30,7 mil millones), segun los datos reales de safetensors del repositorio.
+Artemis-31B-v1.2-i1-GGUF es la distribucion en formato GGUF del modelo Artemis-31B-v1.2, desarrollado originalmente por TheDrummer y cuantizado por mradermacher. Se trata de un modelo de lenguaje conversacional de aproximadamente 30.700 millones de parametros (30,7B) orientado a generacion de texto en ingles, empaquetado con cuantizaciones de tipo imatrix (i1) que mejoran la relacion calidad/tamano frente a las cuantizaciones estaticas tradicionales. El repositorio incluye una bateria completa de variantes que van desde IQ1_S (7,3 GB) hasta Q6_K (25,3 GB), lo que permite desplegarlo en un rango amplio de hardware.
 
-El autor de los quants etiqueta este modelo como multimodal de vision ("This is a vision model"), aunque los ficheros mmproj necesarios para la parte visual no se encuentran en este repositorio, sino en el repositorio hermano de quants estaticos. Esto implica que la capacidad de vision solo es utilizable si se descarga el proyector multimodal desde el repositorio estatico correspondiente.
+El modelo base sigue una arquitectura transformer densa (no MoE) con 30.697.345.596 parametros totales, segun los pesos en safetensors del modelo original. La ficha tecnica del modelo base no esta incluida en la informacion disponible, por lo que detalles como la longitud de contexto, la composicion del dataset de entrenamiento o los metodos de alineacion (RLHF/DPO) no pueden confirmarse a partir de las fuentes consultadas. La licencia tampoco aparece declarada en la model card del repositorio GGUF.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de ~31B en GPUs de consumo mediante cuantizaciones que van desde los 11,0 GB (IQ2_M) hasta los 18,8 GB (Q4_K_M). No se dispone de informacion sobre el proceso de entrenamiento, la licencia, la longitud de contexto ni resultados de benchmarks en la informacion proporcionada.
+La relevancia de esta publicacion reside en su enfoque practico: al ofrecer cuantizaciones imatrix de alta calidad y un grafo comparativo de perplejidad, facilita la ejecucion local de un modelo de ~31B en GPUs de consumo y en entornos con VRAM limitada, manteniendo un equilibrio razonable entre fidelidad y velocidad de inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Transformer denso (detalles no disponibles en la informacion proporcionada) |
 | Parametros totales | 30.697.345.596 (30,7B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ2_M, Q2_K, IQ3_XXS, IQ3_M, Q3_K_M, Q3_K_S, Q3_K_L, IQ3_XS, IQ3_S, Q4_K_S, Q4_0, Q4_1, Q4_K_M, IQ4_XS, IQ4_NL, Q5_K_S, Q5_K_M, Q6_K, IQ2_XXS, IQ2_XS, IQ2_S, IQ1_M, IQ1_S |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas i1/imatrix) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base esta en safetensors para transformers |
-| Modelo base | TheDrummer/Artemis-31B-v1.2 |
-| Tamano del repositorio | 101,1 GB |
-| Fecha de creacion | 2026-09-25 |
+| Formato de pesos | GGUF (cuantizaciones i1) y safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion en la documentacion proporcionada sobre la arquitectura interna del modelo base Artemis-31B-v1.2 (si es un transformer denso, MoE o hibrido), ni sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card del repositorio cuantizado es una plantilla generica de mradermacher y no incluye detalles tecnicos del modelo original.
+La informacion disponible no detalla la arquitectura interna del modelo base TheDrummer/Artemis-31B-v1.2 mas alla de su naturaleza transformer densa y su proposito conversacional. No se especifican el numero de capas, la dimension oculta, el mecanismo de atencion ni si incorpora innovaciones como atencion lineal o decodificacion especulativa. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-La innovacion tecnica documentada se limita al proceso de cuantizacion: se trata de variantes "i1" generadas con imatrix (importance matrix), un fichero adicional de 0,1 GB incluido en el repositorio para que otros usuarios puedan crear sus propias cuantizaciones. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamano similar, y que Q4_K_M ofrece un equilibrio recomendado entre velocidad y calidad. Se incluye tambien una referencia grafica de ikawrakow comparando la perplejidad de distintos tipos de cuantizacion.
+Lo que si esta documentado es el proceso de cuantizacion: mradermacher ha generado cuantizaciones ponderadas con fichero imatrix (Artemis-31B-v1.2.imatrix.gguf, 0,1 GB), lo que permite calibrar la cuantizacion con estadisticas de activacion y mejorar la calidad respecto a cuantizaciones estaticas del mismo tamano. El autor indica que las variantes IQ suelen ser preferibles a las no-IQ de tamano similar, y proporciona un grafo de perplejidad de ikawrakow como referencia comparativa. Ademas, existe un conjunto de cuantizaciones estaticas en el repositorio mradermacher/Artemis-31B-v1.2-GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta "conversational" del repositorio.
-- Capacidad multimodal de vision declarada por el autor de los quants, condicionada a la descarga de los ficheros mmproj desde el repositorio estatico.
-- Compatibilidad con endpoints de inferencia (etiqueta "endpoints_compatible").
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: el modelo esta etiquetado unicamente con el idioma "en" (ingles).
-- Modo de razonamiento explicito (thinking mode): no disponible en la informacion proporcionada.
+- Generacion de texto conversacional en ingles, orientada a dialogos multi-turno.
+- Razonamiento general y respuesta a instrucciones (el modelo base esta etiquetado como conversacional).
+- Capacidades de codigo y matematicas: no confirmadas en la informacion disponible.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
+- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere integracion con infraestructura de inferencia tipo Hugging Face Endpoints.
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo con GPU de consumo: las cuantizaciones i1-IQ2_M (11,0 GB) e i1-Q4_K_S (17,9 GB) permiten ejecutar un modelo de 30,7B en GPUs con 12-24 GB de VRAM mediante llama.cpp u Ollama, sin depender de servicios en la nube.
-- Despliegue de asistentes conversacionales en ingles: el modelo esta etiquetado como "conversational" y el formato GGUF es compatible con servidores de inferencia tipo llama.cpp server, lo que permite montar un chatbot multi-turno autoalojado.
-- Prototipado y evaluacion de modelos de 31B sin presupuesto de GPU profesional: la existencia de cuantizaciones de 2 a 4 bits permite comparar el comportamiento del modelo en hardware modesto antes de invertir en infraestructura mayor.
-- Aplicaciones con requisitos de privacidad estrictos: al ejecutarse en local con GGUF, los datos no salen de la maquina, lo que resulta adecuado para entornos con datos sensibles que no pueden enviarse a APIs externas.
-- Integracion en pipelines de generacion de texto por lotes: el formato GGUF e imatrix permite usar llama.cpp o herramientas compatibles para procesar grandes volumenes de texto en ingles de forma offline.
-- Experimentacion con cuantizacion y evaluacion de perplejidad: la inclusion del fichero imatrix (0,1 GB) permite a investigadores generar sus propias cuantizaciones y medir el impacto de distintos niveles de bits en la calidad del modelo.
-- Tareas de vision por computador en local (condicionado): si se descargan los ficheros mmproj del repositorio estatico, el modelo podria utilizarse para tareas de descripcion de imagenes o respuesta a preguntas visuales, siempre que la implementacion de inferencia soporte el proyector multimodal.
+- Asistente conversacional local en ingles: el modelo puede desplegarse con llama.cpp u Ollama usando la cuantizacion Q4_K_M (18,8 GB) para mantener conversaciones multi-turno en estaciones de trabajo con 24 GB de VRAM, sin depender de servicios en la nube.
+- Prototipado de chatbots en equipos con GPU de consumo: la variante IQ3_S (13,9 GB) cabe en GPUs de 16 GB y permite iterar rapidamente sobre prompts y flujos conversacionales antes de escalar a un modelo mayor.
+- Evaluacion comparativa de cuantizaciones: el repositorio incluye 24 variantes con tamanos desde 7,3 GB hasta 25,3 GB, lo que lo convierte en un banco de pruebas ideal para medir el impacto de la cuantizacion en perplejidad y calidad de respuesta.
+- Generacion de texto creativo y redaccion en ingles: el caracter conversacional del modelo base lo hace adecuado para tareas de escritura asistida, resumenes y reescritura, ejecutandose en local con la variante Q5_K_M (21,9 GB) para maxima fidelidad.
+- Despliegue en entornos sin conectividad o con requisitos de privacidad: al ser un GGUF ejecutable con llama.cpp, puede correr en servidores aislados donde no se permite enviar datos a APIs externas.
+- Investigacion sobre cuantizacion imatrix: el fichero imatrix incluido (0,1 GB) permite a investigadores generar sus propias cuantizaciones calibradas y estudiar el efecto de distintas tecnicas sobre un modelo de ~31B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente incluye un grafo comparativo de perplejidad entre tipos de cuantizacion (enlace a nethype.de) y una referencia a las notas de Artefact2 sobre cuantizacion, pero no se aportan cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun cuantizacion (tamano de fichero): i1-IQ2_M 11,0 GB; i1-Q2_K 12,0 GB; i1-IQ3_XXS 12,2 GB; i1-IQ3_M 14,5 GB; i1-Q3_K_M 15,4 GB; i1-Q4_K_S 17,9 GB; i1-Q4_K_M 18,8 GB.
-- Se debe anadir overhead de contexto KV cache; el requisito real de VRAM sera superior al tamano del fichero, especialmente con ventanas de contexto largas.
-- GPU con 16 GB (por ejemplo RTX 4080, RTX 4060 Ti 16 GB, A4000): pueden ejecutar las cuantizaciones de 2 y 3 bits (IQ2_M, Q2_K, IQ3_XXS, IQ3_M, Q3_K_M) con margen limitado para el contexto.
-- GPU con 24 GB (RTX 3090, RTX 4090, A5000): pueden ejecutar comodamente Q4_K_S y Q4_K_M, que el autor describe como "optimal size/speed/quality" y "fast, recommended" respectivamente.
-- GPU de 12 GB o menos: solo viable con cuantizaciones de 2 bits y contexto muy reducido, o mediante offload parcial a CPU.
-- GPU profesionales (A100 40/80 GB, H100): permiten ejecutar el modelo sin cuantizar o en cuantizaciones altas con contexto amplio.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base tambien esta disponible en safetensors para transformers (vLLM, TGI, entre otros).
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
-- Nota: el repositorio no incluye ficheros mmproj; para uso multimodal hay que acudir al repositorio de quants estaticos.
+- VRAM estimada para inferencia (aproximada, segun el tamano del fichero GGUF mas overhead de contexto):
+  - IQ1_S (7,3 GB): ~8 GB de VRAM.
+  - IQ2_M (11,0 GB): ~12 GB de VRAM.
+  - IQ3_S (13,9 GB): ~15 GB de VRAM.
+  - Q4_K_M (18,8 GB): ~20 GB de VRAM.
+  - Q5_K_M (21,9 GB): ~23 GB de VRAM.
+  - Q6_K (25,3 GB): ~27 GB de VRAM.
+- GPU recomendadas:
+  - RTX 4090 (24 GB): Q4_K_M y Q5_K_M con contexto moderado; Q6_K requiere offloading parcial a CPU.
+  - RTX 4080 / 4070 Ti (16 GB): IQ3_S o IQ3_M.
+  - RTX 4060 Ti 16 GB: IQ3_S con contexto reducido.
+  - A100 40/80 GB y H100: cualquier cuantizacion, incluida Q6_K, con contexto amplio.
+- Cabe en GPU de consumo: si, en modelos con 16 GB o mas de VRAM usando cuantizaciones IQ3 o inferiores; en GPUs de 8-12 GB solo con IQ1/IQ2 y calidad degradada.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base (safetensors) puede servirse con vLLM o TGI, aunque el repositorio GGUF esta pensado para llama.cpp.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones completas del modelo base que permitan una comparacion rigurosa con alternativas de tamano similar. La siguiente tabla recoge unicamente los datos confirmados de este modelo y deja el resto como no disponible.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Benchmarks |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Artemis-31B-v1.2-i1-GGUF | 30,7B | no disponible | no disponible | GGUF (imatrix) | no disponible |
-| Alternativas de ~30B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Artemis-31B-v1.2-i1-GGUF | 30,7B | no disponible | no disponible | GGUF (i1) | 24 cuantizaciones imatrix, 7,3-25,3 GB |
+| Artemis-31B-v1.2 (base) | 30,7B | no disponible | no disponible | safetensors | Modelo original de TheDrummer |
+| Artemis-31B-v1.2-GGUF (estatico) | 30,7B | no disponible | no disponible | GGUF | Cuantizaciones estaticas del mismo autor |
+
+No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparacion cuantitativa con alternativas de la misma categoria (por ejemplo, modelos densos de ~30B de otros desarrolladores). La comparativa se limita a las variantes del propio modelo.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. No hay informacion sobre la composicion del dataset de entrenamiento ni sobre evaluaciones de sesgo.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje generativos; no se han publicado evaluaciones de fiabilidad para este modelo concreto.
-- Limitacion de idioma: el modelo esta etiquetado unicamente para ingles ("en"); no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Limitacion de contexto: la longitud de contexto no esta documentada; no se puede planificar su uso en tareas que requieran ventanas largas sin verificacion previa.
-- Restricciones de licencia: la licencia figura como "no disponible" tanto en el repositorio cuantizado como en la informacion proporcionada. Antes de cualquier uso comercial es imprescindible consultar la licencia del modelo base TheDrummer/Artemis-31B-v1.2.
-- Cuantizaciones de baja precision: las variantes de 2 bits (IQ2_M, Q2_K, IQ2_XS, IQ2_S, IQ1_M, IQ1_S) degradan notablemente la calidad; el propio autor advierte en algunos casos que existen alternativas mejores del mismo tamano.
-- Uso multimodal: los ficheros mmproj no estan en este repositorio, por lo que la capacidad de vision no funciona sin descargar artefactos adicionales del repositorio estatico.
-- Naturaleza del repositorio: se trata de una republicacion de cuantizaciones, no del modelo original; cualquier problema de calidad de los pesos deriva del modelo base y del proceso de cuantizacion.
-- Resultados de la busqueda web: las busquedas realizadas no devolvieron informacion tecnica relevante sobre este modelo; los resultados obtenidos eran paginas de soporte de Windows sin relacion con el modelo.
+- Idioma: el modelo esta etiquetado unicamente para ingles; el rendimiento en castellano no esta garantizado y probablemente sea inferior.
+- Licencia no declarada: al no especificarse la licencia en la model card, no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar la licencia del modelo base TheDrummer/Artemis-31B-v1.2 antes de usarlo en produccion.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; como todo modelo generativo, puede producir contenido incorrecto con apariencia de veracidad.
+- Sesgos: no documentados en la informacion disponible.
+- Contexto: se desconoce la longitud maxima de contexto, lo que impide planificar casos de uso con documentos largos.
+- Cuantizaciones agresivas: las variantes IQ1 e IQ2 (7,3-11,0 GB) degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "mostly desperate".
+- Fecha de creacion: el repositorio figura creado el 2026-09-25, fecha que puede indicar un error de metadatos o una publicacion futura; conviene verificar la vigencia del modelo base.
+- Sin benchmarks: la ausencia de resultados publicados dificulta la comparacion objetiva con alternativas.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Artemis-31B-v1.2-i1-GGUF
-- Modelo base original: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
-- Repositorio de quants estaticos (incluye ficheros mmproj si existen): https://huggingface.co/mradermacher/Artemis-31B-v1.2-GGUF
-- Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Artemis-31B-v1.2-i1-GGUF
-- Grafico comparativo de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Repositorio GGUF: https://huggingface.co/mradermacher/Artemis-31B-v1.2-i1-GGUF
+- Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Artemis-31B-v1.2-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Artemis-31B-v1.2-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafo de perplejidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Peticiones y preguntas sobre cuantizaciones: https://huggingface.co/mradermacher/model_requests
-- Web de nethype GmbH: https://www.nethype.de/
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

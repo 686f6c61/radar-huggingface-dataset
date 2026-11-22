@@ -2,126 +2,126 @@
 
 ## Resumen
 
-FocusCoder-27B es un ajuste fino (fine-tune) del modelo Qwen3.8-27B, orientado a tareas de programacion y razonamiento algoritmico, publicado por el usuario webmp3 en Hugging Face. Su proposito declarado es que el modelo termine sus cadenas de razonamiento en lugar de agotar el limite de tokens de salida, un problema frecuente en modelos con modo "thinking" cuando se enfrentan a problemas de codigo de dificultad alta. Se distribuye unicamente en formato GGUF cuantizado, pensado para inferencia local con llama.cpp.
+Sakura-FocusCoder-27B es un ajuste fino (fine-tune) del modelo Qwen3.8-27B de Alibaba, publicado por el usuario webmp3 bajo el identificador `webmp3/Sakura-FocusCoder-27B-GGUF`. Se trata de un modelo de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) orientado a generación de código y razonamiento algorítmico, distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. Su propuesta principal es corregir un problema concreto del modelo base: la tendencia a agotar el límite de tokens de salida sin llegar a completar el razonamiento ni emitir una solución válida.
 
-El modelo conserva el tamano del modelo base: 27.320.697.856 parametros (unos 27,3 mil millones) y una arquitectura que el autor identifica con la etiqueta `qwen3.8`. El unico archivo publicado es una cuantizacion mixta K-quant de 17,3 GB que incluye tensores MTP (multi-token prediction), con un contexto probado de 32.768 tokens. La licencia es Apache-2.0, heredada de la familia Qwen3.8-27B.
+El modelo se apoya en la arquitectura Qwen3.5/Qwen3.8 (identificada como `qwen35` en llama.cpp) e incorpora tensores MTP (multi-token prediction), lo que permite decodificación especulativa y acelera la generación. El autor lo publica con licencia Apache 2.0 y declara soporte para inglés y chino. El contexto probado por el autor es de 32.768 tokens, aunque no se especifica la longitud máxima nativa del modelo base.
 
-Su relevancia es acotada pero concreta: no es un modelo nuevo entrenado desde cero, sino una variante optimizada para un comportamiento especifico (finalizar el razonamiento dentro del presupuesto de tokens) y evaluada con un conjunto propio de seis tareas de codigo. El autor aporta una comparativa con otras variantes comunitarias del mismo modelo base, lo que permite situarlo frente a alternativas de la misma categoria.
+Su relevancia actual radica en que aborda un problema práctico muy habitual en modelos con modo de razonamiento extenso: el desperdicio de presupuesto de tokens en tareas de código. Según las mediciones del autor, el ajuste reduce el consumo de tokens de salida y aumenta la tasa de tareas resueltas frente al Qwen3.8-27B original en un conjunto reducido de seis problemas algorítmicos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basada en Qwen3.8 (etiqueta `qwen3.8`; compatible con la arquitectura `qwen35` de llama.cpp); incluye tensores MTP |
-| Parametros totales | 27.320.697.856 (27,3 B) |
+| Arquitectura | Transformer basada en Qwen3.8 (identificador `qwen35` en llama.cpp), con tensores MTP para decodificación especulativa |
+| Parametros totales | 27.320.697.856 (aproximadamente 27,3 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens (probado) |
-| Tipos de cuantizacion | Una sola publicada: K-quant mixta tipo Q3_K_M (Q4_K 27 %, Q5_K 24 %, Q3_K 17 %, Q8_0 16 %, Q6_K 14 %, otros 2 %); ~5,1 bits por peso de media |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (archivo `FocusCoder-27B-Q3_K_M-MTP.gguf`, 17,3 GB / 16,1 GiB) |
+| Longitud de contexto | 32.768 tokens probados por el autor; máximo nativo no disponible |
+| Tipos de cuantizacion | Q3_K_M (17,3 GB) e IQ3_S (13,6 GB); ambas incluyen tensores MTP |
+| Idiomas soportados | inglés y chino (según la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); no se distribuyen safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer de 27,3 mil millones de parametros con modo de razonamiento explicito ("thinking"). El autor no detalla el proceso de ajuste fino: no se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas como RLHF, DPO o SFT. Tampoco se describe la innovacion concreta que consigue que el modelo "termine su razonamiento" en lugar de agotar el limite de tokens, mas alla de la afirmacion de la model card.
+El modelo parte de Qwen3.8-27B, un transformer denso de aproximadamente 27,3 mil millones de parámetros. La ficha del autor no detalla la composición del dataset de ajuste fino, el número de tokens empleados ni si se aplicaron técnicas de RLHF o DPO. Lo que sí se documenta es el objetivo del ajuste: que el modelo termine su razonamiento y entregue una respuesta dentro del presupuesto de tokens, en lugar de agotar el límite de 16.384 tokens de salida sin solución válida. Los archivos GGUF incluyen los tensores MTP del modelo base, lo que habilita decodificación especulativa con un modelo borrador (el autor cita DFlash en su entorno de pruebas).
 
-El archivo publicado incorpora tensores MTP (multi-token prediction), lo que sugiere soporte para decodificacion especulativa o prediccion de multiples tokens por paso. En las pruebas el autor empleo un modelo draft DFlash junto con llama.cpp para decodificacion especulativa, lo que indica que la infraestructura de inferencia esta pensada para acelerar la generacion. La cuantizacion es mixta: las capas de embedding y la proyeccion de salida se mantienen en Q8_0 (16 % del archivo), mientras que el resto de matrices usan mezclas de Q3_K, Q4_K, Q5_K y Q6_K.
+El autor probó el modelo con la plantilla de chat embebida en el archivo GGUF y con el modo de razonamiento (thinking) activado por defecto. No se especifica el proceso exacto de cuantización más allá de los dos niveles publicados, ni se documenta si el ajuste se realizó sobre pesos completos o directamente sobre cuantizaciones.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline `text-generation`, tag `conversational`).
-- Razonamiento con modo thinking activado por defecto, segun la plantilla de chat embebida en el archivo.
-- Generacion de codigo, especialmente en problemas algoritmicos tipo LeetCode/AtCoder con tests ocultos.
-- Finalizacion del razonamiento dentro del presupuesto de tokens: el modelo tiende a cerrar su cadena de pensamiento y entregar solucion, en lugar de truncarse por limite.
-- Soporte de plantilla de chat propia, con thinking habilitado.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no documentadas explicitamente; el razonamiento algoritmico es el caso mas cercano descrito.
-- Capacidades multilingues: no disponible.
-- Vision, audio u otras modalidades: no disponible.
+- Generación de código en tareas algorítmicas de estilo LeetCode/AtCoder, con razonamiento previo explícito (thinking mode).
+- Razonamiento multi-paso con control del presupuesto de tokens: el ajuste busca evitar que el modelo agote el límite sin concluir.
+- Generación de texto conversacional en inglés y chino.
+- Decodificación especulativa mediante tensores MTP, compatible con llama.cpp.
+- Integración con el endpoint compatible con OpenAI de llama-server (`/v1`).
+- Compatibilidad declarada con Ollama (no probada por el autor), requiriendo una versión reciente que soporte la arquitectura `qwen35`.
+- No se documentan capacidades de visión, audio, tool calling ni function calling en la información disponible.
 
 ## Casos de uso
 
-- Resolucion de problemas algoritmicos en local: el modelo esta optimizado para tareas de codigo con tests ocultos y un limite de salida de 16.384 tokens; es adecuado para practicar o generar soluciones a problemas tipo competicion sin depender de la nube, gracias a su unico archivo GGUF de 17,3 GB.
-- Asistente de programacion en estaciones de trabajo con GPU de 24-48 GB: con offload completo en una L40S o parcial en tarjetas de 24 GB, se puede integrar en editores o CLIs mediante llama.cpp para autocompletado y generacion de funciones con razonamiento previo.
-- Generacion de codigo con razonamiento verificable: al priorizar que el modelo cierre su cadena de pensamiento, resulta util en pipelines donde se necesita una respuesta completa y no un truncamiento, por ejemplo en generacion de scripts de automatizacion o utilidades de sistema.
-- Evaluacion y benchmarking interno de modelos de codigo: el conjunto de seis tareas y el protocolo descritos por el autor (temperatura 0,6, top-p 0,95, top-k 20, 16.384 tokens de salida) sirven como base reproducible para comparar variantes del mismo modelo base en hardware propio.
-- Despliegue en equipos con memoria unificada (Strix Halo, 64 GB): el autor lo probo en una Radeon 8060S con Vulkan, por lo que es viable en mini-PC y portatiles con GPU integrada de gran capacidad de memoria compartida.
-- Prototipado de agentes de codigo con decodificacion especulativa: la inclusion de tensores MTP y el uso de un draft model DFlash en las pruebas permiten montar un servidor llama.cpp con aceleracion especulativa para reducir latencia en tareas de generacion larga.
-- Educacion y analisis de cadenas de razonamiento: al estar disponible el modo thinking, se puede estudiar como el modelo estructura la resolucion de problemas y donde falla (por ejemplo, la tarea 15 no fue resuelta por ningun modelo de la comparativa).
+- Resolución de problemas algorítmicos en pipelines de evaluación: el modelo puede emplearse para generar soluciones a problemas de programación competitiva con razonamiento explícito, y su ajuste para concluir dentro del límite de tokens reduce el coste de reintentos y el desperdicio de cómputo en runners automatizados.
+- Asistente de código en local con GPU de 16 GB: la cuantización IQ3_S (13,6 GB) está pensada para GPUs de clase 16 GB, lo que permite desplegar un modelo de 27B en hardware de consumo o estaciones de trabajo modestas sin depender de la nube.
+- Generación de código en entornos con requisitos de privacidad: al ejecutarse íntegramente en local con llama.cpp u Ollama, el modelo es adecuado para equipos que no pueden enviar código propietario a APIs externas.
+- Automatización de pruebas y corrección de código: el modelo puede integrarse en scripts que generan soluciones candidatas y las validan contra tests ocultos, aprovechando su orientación a tareas con verificación automática.
+- Servicio de inferencia compatible con OpenAI: mediante `llama-server` con `--jinja`, se puede exponer un endpoint `/v1` que sustituya a APIs comerciales en prototipos y herramientas internas sin cambiar el código cliente.
+- Experimentación con decodificación especulativa: los tensores MTP incluidos permiten a investigadores medir el impacto de un modelo borrador en latencia y throughput sobre una arquitectura Qwen3.5/3.8 de 27B.
+- Evaluación comparativa de fine-tunes: sirve como referencia en estudios de ajuste fino orientados a controlar la longitud de razonamiento, dado que el autor publica metodología y resultados por tarea.
 
 ## Benchmarks y rendimiento
 
-Los datos provienen de la model card del autor: seis tareas algoritmicas dificiles (estilo LeetCode/AtCoder, conjunto local congelado, tests ocultos), una ejecucion por tarea y semilla, con temperatura 0,6, top-p 0,95, top-k 20, min-p 0, maximo 16.384 tokens de salida, thinking activado y contexto de 32.768. Runtime: llama.cpp b12189 (CUDA) en una NVIDIA L40S con un draft model DFlash para decodificacion especulativa. Cada modelo se probo con su propio archivo publicado, por lo que la cuantizacion difiere entre filas.
+Los datos provienen de un conjunto local congelado de seis tareas algorítmicas duras (estilo LeetCode/AtCoder) con tests ocultos, una ejecución por tarea y semilla, con llama.cpp b12189 (CUDA) sobre una NVIDIA L40S y decodificación especulativa con un modelo borrador DFlash. Muestreo: temperatura 0,6, top-p 0,95, top-k 20, min-p 0, máximo 16.384 tokens de salida, thinking activado y contexto de 32.768.
 
-| Modelo | Archivo probado | Semilla 42: resueltas | Tokens de salida (42) | Semilla 43: resueltas | Tokens de salida (43) | Total ambas semillas |
+| Modelo | Archivo probado | Semilla 42: resueltas | Tokens de salida (42) | Semilla 43: resueltas | Tokens de salida (43) | Resueltas, ambas semillas |
 |---|---|---|---|---|---|---|
-| FocusCoder-27B (este modelo) | Q3_K_M-MTP | 5 / 6 | 63.990 | 5 / 6 | 58.886 | 10 / 12 |
-| Qwen3.8-27B | Q4_K_M (ggml-org) | 1 / 6 | 83.151 | - | - | - |
-| Coder390-EfficientThink | Q3LynnStyle-MTP (nerkyor) | 4 / 6 | 70.007 | 3 / 6 | 62.218 | 7 / 12 |
-| qwen-concept-27b | Q4_K_M (ConceptCountry) | 4 / 6 | 54.102 | 4 / 6 | 64.119 | 8 / 12 |
-| Swift-1.5-Qwen3.8-27B | Q5_K_M (ukisai) | 4 / 6 | 76.848 | - | - | - |
-| Thinklite-27B | Q4_K_M (Sparset) | 4 / 6 | 69.314 | - | - | - |
+| FocusCoder-27B (17,3 GB) | Q3_K_M-MTP | 5/6 | 63.990 | 5/6 | 58.886 | 10/12 |
+| FocusCoder-27B (13,6 GB) | IQ3_S-16GB-MTP | 5/6 | 51.601 | 5/6 | 65.366 | 10/12 |
+| Qwen3.8-27B | Q4_K_M (ggml-org) | 1/6 | 83.151 | no probado | no probado | no disponible |
+| Coder390-EfficientThink | Q3LynnStyle-MTP | 4/6 | 70.007 | 3/6 | 62.218 | 7/12 |
+| qwen-concept-27b | Q4_K_M | 4/6 | 54.102 | 4/6 | 64.119 | 8/12 |
+| Swift-1.5-Qwen3.8-27B | Q5_K_M | 4/6 | 76.848 | no probado | no probado | no disponible |
+| Thinklite-27B | Q4_K_M | 4/6 | 69.314 | no probado | no probado | no disponible |
 
-Resultados por tarea, semilla 42 (pass = resuelta y con tests superados; limit = agoto los 16.384 tokens sin solucion valida; pass at limit = agoto el limite pero el codigo encontrado en la salida paso los tests, no contabilizado como resuelta):
+Resultados por tarea (semilla 42), con tokens de salida consumidos:
 
 | Modelo | Tarea 27 | Tarea 15 | Tarea 10 | Tarea 8 | Tarea 9 | Tarea 11 |
 |---|---|---|---|---|---|---|
-| FocusCoder-27B | pass 10.778 | limit 16.384 | pass 15.548 | pass 10.935 | pass 9.205 | pass 1.140 |
-| Qwen3.8-27B | pass at limit 16.384 | limit 16.384 | pass at limit 16.384 | pass at limit 16.384 | limit 16.384 | pass 1.231 |
-| Coder390-EfficientThink | pass 14.610 | limit 16.384 | limit 16.384 | pass 8.054 | pass 12.307 | pass 2.268 |
-| qwen-concept-27b | fail 10.772 | limit 16.384 | pass 10.474 | pass 5.779 | pass 9.914 | pass 779 |
-| Swift-1.5-Qwen3.8-27B | pass 16.132 | limit 16.384 | pass 13.212 | pass 13.676 | limit 16.384 | pass 1.060 |
-| Thinklite-27B | pass 13.366 | limit 16.384 | limit 16.384 | pass 10.556 | pass 12.129 | pass 495 |
+| FocusCoder-27B (17,3 GB) | pasa 10.778 | límite 16.384 | pasa 15.548 | pasa 10.935 | pasa 9.205 | pasa 1.140 |
+| FocusCoder-27B (13,6 GB) | pasa 13.027 | límite 16.384 | pasa 10.332 | pasa 4.123 | pasa 6.753 | pasa 982 |
+| Qwen3.8-27B | pasa en límite 16.384 | límite 16.384 | pasa en límite 16.384 | pasa en límite 16.384 | límite 16.384 | pasa 1.231 |
+| Coder390-EfficientThink | pasa 14.610 | límite 16.384 | límite 16.384 | pasa 8.054 | pasa 12.307 | pasa 2.268 |
+| qwen-concept-27b | falla 10.772 | límite 16.384 | pasa 10.474 | pasa 5.779 | pasa 9.914 | pasa 779 |
+| Swift-1.5-Qwen3.8-27B | pasa 16.132 | límite 16.384 | pasa 13.212 | pasa 13.676 | límite 16.384 | pasa 1.060 |
+| Thinklite-27B | pasa 13.366 | límite 16.384 | límite 16.384 | pasa 10.556 | pasa 12.129 | pasa 495 |
 
-Resultados por tarea, semilla 43:
+Prueba de rechazos (104 prompts de `mlabonne/harmful_behaviors`, decodificación greedy, thinking desactivado, máximo 100 tokens nuevos; recuento basado en frases, no es una evaluación de seguridad):
 
-| Modelo | Tarea 27 | Tarea 15 | Tarea 10 | Tarea 8 | Tarea 9 | Tarea 11 |
-|---|---|---|---|---|---|---|
-| FocusCoder-27B | pass 10.416 | limit 16.384 | pass 12.524 | pass 5.760 | pass 12.841 | pass 961 |
-| Coder390-EfficientThink | fail 10.134 | limit 16.384 | pass 13.687 | pass 4.384 | limit 16.384 | pass 1.245 |
-| qwen-concept-27b | pass 9.911 | limit 16.384 | limit 16.384 | pass 8.840 | pass 11.569 | pass 1.031 |
+| Modelo | Rechazos directos (de 104) | Cualquier frase de rechazo o aviso (de 104) | Respuestas degeneradas |
+|---|---|---|---|
+| Qwen3.8-27B (Q4_K_M) | 103 | 103 | no medido |
+| FocusCoder-27B (17,3 GB) | 5 | 52 | 0 |
+| FocusCoder-27B (13,6 GB) | 8 | 48 | 0 |
 
-Advertencias del propio autor: seis tareas y una o dos semillas constituyen una muestra pequena, no una clasificacion estadisticamente fiable; la tarea 15 no la resolvio ningun modelo en ninguna ejecucion; los resultados dependen del hardware y del runtime y no son directamente comparables con otras configuraciones. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+El propio autor advierte que la muestra es pequeña (seis tareas, una o dos semillas) y no constituye una clasificación estadísticamente fiable. La tarea 15 no fue resuelta por ningún modelo en ninguna ejecución.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos ocupan 17,3 GB; con contexto de 32.768 tokens el autor estima unos 21-22 GB de memoria libre de GPU (o memoria unificada) para offload completo. Es una estimacion a partir del tamano del archivo mas buffers de contexto y computo, no una medida.
-- GPU recomendadas: NVIDIA L40S (48 GB), probada por el autor con llama.cpp b12189 (CUDA) y offload completo. Tarjetas de 32 GB o mas son comodas; 24 GB es ajustado.
-- Cabe en consumer GPU: si, en tarjetas de 24 GB (p. ej. RTX 4090) de forma ajustada y con posible offload parcial; en 32 GB o mas (p. ej. RTX 5090, si dispone de esa memoria) con holgura. El autor no probo GPUs de menos de 24 GB.
-- Memoria unificada: probado tambien en AMD Radeon 8060S (Strix Halo, 64 GB) con una build Vulkan de llama.cpp.
-- Opciones de despliegue: llama.cpp (build reciente con soporte de la arquitectura `qwen35`; probado con b12189). No se mencionan otras opciones (vLLM, TGI, Ollama) en la informacion disponible.
-- Latencia y throughput: no disponibles como cifras medidas. El autor uso decodificacion especulativa con un draft model DFlash, lo que indica que la generacion directa sin aceleracion seria mas lenta.
-- CPU-only, Apple Silicon y GPUs de menos de 24 GB: no probados.
+- VRAM estimada: aproximadamente 17,3 GB para el archivo Q3_K_M y 13,6 GB para el IQ3_S, a los que hay que sumar la memoria de la caché KV según el contexto configurado (32.768 tokens en las pruebas del autor).
+- GPU de referencia en las mediciones: una NVIDIA L40S (48 GB), con decodificación especulativa mediante modelo borrador DFlash.
+- GPU de consumo: el archivo IQ3_S está diseñado explícitamente para GPUs de clase 16 GB; el Q3_K_M requiere algo más de 17 GB, por lo que encaja en tarjetas de 24 GB (RTX 3090, RTX 4090) con margen para caché KV.
+- Despliegue: llama.cpp (`llama-server` con `--jinja`, `-ngl 99` y `-c 32768`) y Ollama (no probado por el autor; requiere soporte de la arquitectura `qwen35`). No se documenta compatibilidad con vLLM ni TGI, ya que solo se distribuyen pesos GGUF.
+- Latencia y throughput: no se publican cifras absolutas de tokens por segundo; solo se reportan totales de tokens de salida consumidos por tarea. Los resultados dependen del hardware y del runtime y no son directamente comparables con otras configuraciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Resultado en el conjunto del autor | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Resueltas (2 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FocusCoder-27B | 27,3 B | 32.768 (probado) | 10 / 12 (ambas semillas) | Apache-2.0 | GGUF Q3_K_M mixta |
-| Qwen3.8-27B (base) | 27,3 B | no disponible | 1 / 6 (semilla 42) | Apache-2.0 | GGUF Q4_K_M |
-| Coder390-EfficientThink | mismo base (27 B) | no disponible | 7 / 12 | no disponible | GGUF Q3LynnStyle-MTP |
-| qwen-concept-27b | mismo base (27 B) | no disponible | 8 / 12 | no disponible | GGUF Q4_K_M |
-| Swift-1.5-Qwen3.8-27B | mismo base (27 B) | no disponible | 4 / 6 (solo semilla 42) | no disponible | GGUF Q5_K_M |
-| Thinklite-27B | mismo base (27 B) | no disponible | 4 / 6 (solo semilla 42) | no disponible | GGUF Q4_K_M |
+| FocusCoder-27B | 27,3 mil millones | 32.768 probados | 10/12 | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3.8-27B (base) | 27,3 mil millones | no disponible | 1/6 (solo semilla 42) | no disponible en la información | GGUF vía ggml-org |
+| qwen-concept-27b | no disponible | no disponible | 8/12 | no disponible | GGUF (ConceptCountry) |
+| Coder390-EfficientThink | no disponible | no disponible | 7/12 | no disponible | GGUF (nerkyor) |
+| Swift-1.5-Qwen3.8-27B | no disponible | no disponible | 4/6 (solo semilla 42) | no disponible | GGUF (ukisai) |
+| Thinklite-27B | no disponible | no disponible | 4/6 (solo semilla 42) | no disponible | GGUF (Sparset) |
 
-Todas las alternativas son variantes comunitarias del mismo Qwen3.8-27B y se probaron con cuantizaciones distintas, por lo que la comparacion mezcla efectos de ajuste fino y de cuantizacion. El conjunto de evaluacion es propio del autor y de muestra reducida.
+La comparación se limita a los datos publicados por el autor; no hay información sobre parámetros, contexto ni licencia de los modelos alternativos más allá de lo que aparece en su tabla.
 
 ## Limitaciones y advertencias
 
-- Evaluacion muy limitada: seis tareas y una o dos semillas; el propio autor advierte que no es una clasificacion estadisticamente fiable.
-- La tarea 15 no fue resuelta por ningun modelo de la comparativa, lo que sugiere un limite del modelo base en cierto tipo de problema.
-- Diferencias de cuantizacion entre modelos comparados: FocusCoder se probo en Q3_K_M mixta, mientras que otros se probaron en Q4_K_M o Q5_K_M, lo que introduce sesgo en la comparativa.
-- Resultados dependientes de hardware y runtime: obtenidos en una L40S con llama.cpp b12189 y decodificacion especulativa; no directamente extrapolables a otras configuraciones.
-- Un solo archivo publicado (Q3_K_M mixta): no hay opciones de mayor precision (Q5, Q6, Q8) ni de menor tamano, lo que limita el equilibrio calidad/memoria.
-- Idiomas soportados no declarados: no hay garantia documentada de comportamiento multilingue.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; al ser un modelo de codigo con modo thinking, puede generar APIs o funciones inexistentes en problemas fuera de su dominio.
-- Licencia Apache-2.0 permisiva para uso comercial, pero el modelo deriva de pesos de la familia Qwen3.8-27B; deben revisarse los avisos de licencia de los modelos upstream.
-- Sin datos de sesgos, seguridad o filtrado de contenido.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (15 de noviembre de 2026): trazabilidad y mantenimiento no verificables.
+- Muestra de evaluación muy pequeña: seis tareas y una o dos semillas por modelo; el autor lo califica explícitamente como no fiable estadísticamente.
+- Diferencias de cuantización entre filas de la comparativa (Q3_K_M, IQ3_S, Q4_K_M, Q5_K_M), lo que impide atribuir todas las diferencias al ajuste fino.
+- Resultados obtenidos con un runtime, hardware y modelo borrador concretos (llama.cpp b12189, L40S, DFlash); no son directamente comparables con otras configuraciones.
+- Reducción drástica de rechazos: solo 5 de 104 rechazos directos frente a 103 del modelo base en la prueba del autor. Esto indica un riesgo elevado de generar contenido dañino sin salvaguardas; el propio autor señala que es un recuento por frases y no una evaluación de seguridad.
+- Idiomas documentados únicamente inglés y chino; no se garantiza un rendimiento adecuado en castellano.
+- El contexto máximo nativo no se documenta; las pruebas se hicieron a 32.768 tokens.
+- No se documentan capacidades de tool calling, function calling, visión ni audio, lo que limita su uso en pipelines de agentes.
+- El modelo se distribuye solo en GGUF de 3 bits; no hay pesos en safetensors ni cuantizaciones superiores publicadas en este repositorio.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del ajuste fino en producción.
+- Riesgo de alucinación no cuantificado en la información disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/webmp3/Sakura-FocusCoder-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-FocusCoder-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- llama.cpp (runtime recomendado, build con soporte `qwen35`): https://github.com/ggml-org/llama.cpp
-- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.
+- Conjunto de prompts de la prueba de rechazos: `mlabonne/harmful_behaviors` (referenciado en la model card)
+- llama.cpp (runtime recomendado, con soporte `qwen35`): https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com
+- No se han encontrado en la información disponible otros enlaces a papers, blogs o demos.

@@ -57,16 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "blackpirates/nanohat-qwen3-0.6b-final · Hugging Face",
-      "url": "https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final",
-      "snippet": "blackpirates / nanohat-qwen3-0.6b-final Like 0 Text Generation Transformers Safetensors GGUF qwen3 Generated from Trainer trl grpo conversational text-generation-inference arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "blackpirates/nanohat-qwen3-0.6b-final at main - Hugging Face",
-      "url": "https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final/tree/main",
-      "snippet": "blackpirates / nanohat-qwen3-0.6b-final Like 0 Text Generation Transformers Safetensors GGUF qwen3 Generated from Trainer trl grpo conversational text-generation-inference arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

@@ -2,92 +2,92 @@
 
 ## Resumen
 
-Phai-A1-35B-1M es un modelo de lenguaje derivado de Qwen3.6-35B-A3B, un transformer de arquitectura Mixture-of-Experts (MoE) con 34.660.610.688 parámetros totales. Lo desarrolla PhaiModelLab mediante un pipeline de post-entrenamiento completo (SFT y RL) orientado específicamente a tareas de programación y flujos agénticos. Toda la fase de post-entrenamiento se ejecutó sobre NPUs Huawei Ascend, un detalle poco habitual que resulta relevante para quienes evalúan alternativas de hardware no-NVIDIA.
+Phai-A1-35B-1M es un modelo derivado de Qwen3.6-35B-A3B (arquitectura Mixture-of-Experts) sometido a un post-entrenamiento intensivo orientado a cargas de trabajo de programacion y agentes. Lo desarrolla PhaiModelLab y se distribuye en formato GGUF bajo licencia Apache 2.0. El pipeline completo de post-entrenamiento (SFT y RL) se ejecuto sobre NPUs Huawei Ascend, un detalle poco habitual que lo convierte en un caso interesante para quienes trabajan fuera del ecosistema CUDA.
 
-El modelo parte del checkpoint Qwen3.6-35B-A3B y lo especializa con datos de instrucción de alta calidad centrados en código, tool calling, razonamiento en cadena larga y planificación multi-paso. La fase de RL emplea Group Relative Policy Optimization (GRPO) sobre 4.000 entornos sandbox que proporcionan retroalimentación basada en ejecución real: ejecución de código, tests unitarios e interacción con herramientas. Esta combinación de RL con feedback verificable es lo que distingue al modelo de un simple fine-tune supervisado.
+El modelo destaca por su ventana de contexto nativa de hasta 1 millon de tokens, habilitada mediante YaRN con factor de escala 4, y por una fase de RL basada en GRPO sobre 4.000 entornos sandbox que aportan retroalimentacion real de ejecucion de codigo, tests unitarios e interacciones con herramientas. Con 34.660.610.688 parametros totales y un repo de 37,9 GB en GGUF, apunta a despliegues de inferencia local o en servidor con requisitos de memoria significativos.
 
-El rasgo más destacado es la ventana de contexto de hasta 1 millón de tokens, habilitada mediante YaRN con factor de escala 4 durante todo el post-entrenamiento, con datos que abarcan longitudes de 16K a 1M tokens. El repositorio distribuido es una cuantización GGUF (37,9 GB) pensada para inferencia local con llama.cpp y compatible con endpoints. La licencia es Apache 2.0, heredada del modelo base.
+Es relevante ahora porque combina tres tendencias: modelos MoE eficientes en computo por token, contexto ultralargo para comprension a escala de repositorio y entrenamiento con RL verificado por ejecucion para tareas agenticas. La ficha se basa unicamente en la model card publicada; los datos no presentes se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), basada en Qwen3.6-35B-A3B |
+| Arquitectura | Mixture-of-Experts (heredada de Qwen3.6-35B-A3B) |
 | Parametros totales | 34.660.610.688 |
 | Parametros activos | no disponible |
-| Longitud de contexto | Hasta 1.000.000 tokens (YaRN factor=4, activado por defecto en config.json) |
-| Tipos de cuantizacion | GGUF (repo publicado en formato GGUF con imatrix); niveles concretos no disponibles |
-| Idiomas soportados | no disponible (la model card incluye ejemplos en inglés y chino) |
+| Longitud de contexto | hasta 1.000.000 tokens (YaRN factor=4) |
+| Tipos de cuantizacion | GGUF (variantes concretas no disponibles) |
+| Idiomas soportados | zh, en, de, ja, ar |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer con mezcla de expertos (MoE) heredado de Qwen3.6-35B-A3B, con 34.660 millones de parámetros totales. El post-entrenamiento se divide en dos etapas. La primera es un SFT sobre datos de instrucción de alta calidad centrados en programación y agentes, que cubren conversaciones multi-turno, tool calling y cadenas de razonamiento largas, con secuencias de 16K a 1M tokens. La segunda es una fase de RL basada principalmente en GRPO, ejecutada contra 4.000 entornos sandbox que aportan feedback verificable mediante ejecución de código, tests unitarios e interacción con herramientas.
+El modelo parte de Qwen3.6-35B-A3B, un transformer con mezcla de expertos. Sobre esa base, PhaiModelLab aplico una fase de SFT con datos de instruccion de alta calidad para programacion y agentes, cubriendo conversaciones multi-turno, tool calling y razonamiento de cadena larga. Posteriormente ejecuto una fase de RL basada principalmente en GRPO, utilizando 4.000 entornos sandbox que proporcionan retroalimentacion basada en ejecucion: ejecucion de codigo, tests unitarios e interacciones con herramientas.
 
-La innovación técnica central es la extensión de contexto: YaRN con factor de escala 4 se mantiene activo durante todo el post-entrenamiento para estabilizar la ventana de 1M tokens, y la configuración RoPE ya viene habilitada por defecto en `config.json`. La model card indica que el modelo conserva en gran medida el comportamiento del base en tareas de contexto corto, sin necesidad de manejo especial. El pipeline completo se ejecutó sobre NPUs Huawei Ascend, lo que constituye un caso poco frecuente de post-entrenamiento a esta escala fuera del ecosistema NVIDIA.
+La innovacion tecnica mas destacable es la extension de contexto: los datos de entrenamiento abarcan longitudes de secuencia de 16K a 1M tokens, con YaRN (factor=4) activado de forma consistente durante todo el post-entrenamiento para estabilizar la ventana de 1M tokens. El RoPE scaling ya viene habilitado por defecto en `config.json`, de modo que no requiere configuracion adicional para contextos largos. Todo el pipeline se ejecuto sobre NPUs Huawei Ascend. No se detalla el volumen total de tokens de entrenamiento ni la composicion exacta del dataset.
 
 ## Capacidades
 
-- Generación y comprensión de código: escritura, depuración y refactorización en flujos de trabajo reales.
-- Tool calling / function calling, entrenado explícitamente en la fase de SFT y reforzado con RL sobre interacciones con herramientas.
-- Razonamiento multi-paso y planificación de horizonte largo (long-horizon planning) en escenarios agénticos.
-- Comprensión de código a escala de repositorio gracias a la ventana de 1M tokens.
-- Razonamiento en cadena larga y conversaciones multi-turno.
-- Capacidades conversacionales generales (etiqueta `conversational`), aunque el foco es código y agentes.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
-- Capacidades multilingües: no disponibles como dato explícito; los ejemplos de la model card están en inglés y chino.
+- Generacion y comprension de codigo, incluyendo depuracion y refactorizacion.
+- Tool calling y function calling para integracion con APIs y herramientas externas.
+- Planificacion de tareas de horizonte largo y razonamiento multi-paso en flujos agenticos.
+- Comprension de codigo a escala de repositorio gracias a la ventana de 1M tokens.
+- Razonamiento de cadena larga entrenado mediante SFT y reforzado con RL verificado por ejecucion.
+- Soporte multilingue en chino, ingles, aleman, japones y arabe.
+- Inferencia compatible con endpoints (tag `endpoints_compatible`).
+- Cuantizacion con imatrix (tag `imatrix`), orientada a preservar calidad en GGUF de baja precision.
 
 ## Casos de uso
 
-- Agente de resolución de incidencias sobre repositorios: el modelo puede recibir un repositorio completo o una porción extensa dentro de la ventana de 1M tokens, localizar el fallo, proponer un parche y validarlo contra los tests, gracias a su entrenamiento con feedback de ejecución en sandbox.
-- Automatización de pull requests en CI/CD: integrado como paso de revisión o generación de parches, con tool calling para consultar el estado de los tests y del linter antes de emitir el cambio.
-- Asistente de programación en IDE con contexto de proyecto: al soportar contextos de hasta 1M tokens, puede mantener en memoria varios ficheros y el historial de conversación sin truncar, lo que reduce las alucinaciones por falta de contexto.
-- Orquestación de agentes multi-herramienta: planificación de tareas de varios pasos que combinan búsqueda, ejecución de comandos y llamadas a APIs, apoyándose en el entrenamiento RL sobre interacción con herramientas.
-- Migración y refactorización de código a gran escala: análisis de módulos completos y generación de cambios coherentes entre ficheros, aprovechando la ventana extendida.
-- Despliegue local en estaciones de trabajo: al distribuirse en GGUF, puede ejecutarse con llama.cpp u Ollama en hardware de consumo o en servidores sin GPU NVIDIA, útil para equipos que trabajan con Ascend o CPU.
-- Generación de tests unitarios a partir de código existente, con verificación posterior en el propio pipeline de integración.
+- Agentes de codigo autonomos: el modelo puede planificar y ejecutar tareas multi-paso (leer repositorio, editar ficheros, ejecutar tests) gracias a su entrenamiento con RL sobre entornos sandbox y su contexto de 1M tokens.
+- Revision de codigo a escala de repositorio: con 1M tokens de contexto puede ingerir grandes bases de codigo y razonar sobre dependencias entre modulos sin trocear el contexto.
+- Integracion en pipelines CI/CD: mediante tool calling puede invocarse desde sistemas de build para sugerir parches o diagnosticar fallos de tests.
+- Asistentes de desarrollo en IDE: la variante GGUF permite ejecucion local con llama.cpp u Ollama, util para entornos con requisitos de privacidad.
+- Automatizacion de tareas con herramientas externas: su entrenamiento en tool calling lo hace adecuado para orquestar APIs, consultas a bases de datos y operaciones de shell en flujos controlados.
+- Analisis de documentacion tecnica multilingue: cubre chino, ingles, aleman, japones y arabe, util para equipos internacionales que trabajan con documentacion heterogenea.
+- Migracion y refactorizacion de codigo legacy: el contexto largo permite comparar versiones antiguas y nuevas de un mismo modulo en una sola pasada.
 
 ## Benchmarks y rendimiento
 
-La model card menciona evaluaciones sobre SWE-Bench (Verified / Pro / Multilingual), TAU3-Bench, IFBench y AA-LCR, y afirma mejoras consistentes frente al modelo base de tamaño comparable, con resultados que se acercan o superan a modelos significativamente mayores en varios benchmarks. Sin embargo, los resultados numéricos se presentan únicamente en una imagen (`_assets_/_benchmarks.png`) y no se han transcrito en el texto disponible.
+La model card menciona evaluacion sobre SWE-Bench (Verified / Pro / Multilingual), TAU3-Bench, IFBench y AA-LCR, y afirma mejoras consistentes frente al modelo base de tamano comparable. Sin embargo, los resultados numericos se presentan unicamente como imagen (`_benchmarks.png`) y no se incluyen cifras en texto en la informacion disponible.
 
-No se han publicado resultados de benchmarks en la informacion disponible en formato tabular.
+No se han publicado resultados de benchmarks en texto en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio GGUF ocupa 37,9 GB, por lo que la cuantización publicada requiere al menos ese espacio en memoria o en disco mapeado. Los niveles de cuantización concretos no están disponibles en la información proporcionada.
-- GPU recomendadas: no disponibles de forma explícita. Por tamaño, un modelo MoE de ~35B en GGUF de 37,9 GB encaja en GPU con 48 GB o más (A6000, L40S, A100 80GB, H100) para la cuantización publicada; en GPUs de 24 GB (RTX 4090) requeriría cuantizaciones más agresivas u offloading parcial a CPU.
-- Cabe en GPU de consumo: probablemente solo con cuantizaciones de 4 bits o inferiores y offloading parcial; no confirmado en la información disponible.
-- Opciones de despliegue: llama.cpp (ejemplo oficial en la model card), Ollama (formato GGUF), y para contexto largo se recomienda vLLM o SGLang con prefix caching y chunked prefill.
+- VRAM estimada: con 34,66B parametros totales, en FP16 requeriria aproximadamente 69 GB; en cuantizaciones GGUF de 8 bits en torno a 35-37 GB; en 4 bits en torno a 18-20 GB (estimaciones orientativas, no confirmadas por el autor).
+- El repo GGUF ocupa 37,9 GB, lo que sugiere cuantizaciones de precision media-alta.
+- GPU recomendadas: A100 80 GB o H100 para contexto completo de 1M tokens; multiples GPUs para contextos muy largos por el coste de KV-cache.
+- Cabe en GPU de consumo (RTX 4090 24 GB) solo con cuantizaciones agresivas y contextos reducidos.
+- Despliegue: llama.cpp (ejemplo oficial en la model card), vLLM y SGLang recomendados para contexto largo; Ollama como opcion de conveniencia.
+- Para contexto de 1M tokens se recomienda activar prefix caching y chunked prefill en vLLM o SGLang.
 - Latencia y throughput: no disponibles.
-- Nota sobre contexto largo: la ventana de 1M tokens impone un coste elevado de KV-cache; la model card recomienda frameworks con soporte de contexto largo y optimizaciones de caché.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Phai-A1-35B-1M | 34,66B (MoE) | 1M | Apache 2.0 | GGUF | Post-entrenado para código y agentes con RL en sandbox |
-| Qwen3.6-35B-A3B (base) | 35B (MoE) | no disponible | no disponible | safetensors | Modelo base del que deriva; referencia directa de comparación |
-| Alternativas de código/agentes de ~30-35B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
+| Phai-A1-35B-1M | 34,66B (MoE) | 1M | Apache 2.0 | GGUF | Post-entrenado para codigo y agentes con RL en sandbox |
+| Qwen3.6-35B-A3B (base) | ~35B (MoE) | no disponible | no disponible | safetensors/GGUF | Modelo base; sin el post-entrenamiento especifico |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
-No se dispone de datos de benchmarks numéricos ni de especificaciones de modelos comparables en la información proporcionada para establecer una comparación cuantitativa fiable.
+La unica comparacion documentada es con el modelo base, respecto al cual el autor afirma mejoras consistentes en benchmarks de codigo y agentes, sin cifras publicadas en texto.
 
 ## Limitaciones y advertencias
 
-- Especialización de dominio: el modelo está optimizado para código y agentes; su rendimiento en tareas generales puede diferir del modelo base.
-- Fiabilidad de salida: la model card advierte de posibles errores, imprecisiones o contenido inapropiado; recomienda evaluación exhaustiva y verificación humana antes de producción.
-- Riesgo de alucinación: no cuantificado en la información disponible, pero inherente a modelos generativos; el contexto largo no elimina el riesgo.
-- Idiomas: no se especifica la lista de idiomas soportados; los ejemplos están en inglés y chino, por lo que el soporte de castellano no está confirmado.
-- Licencia: Apache 2.0, pero los usuarios deben cumplir también los términos del modelo base Qwen3.6-35B-A3B al usar o distribuir los pesos.
-- Contexto largo: la ventana de 1M tokens implica un consumo de memoria de KV-cache muy elevado; en la práctica requiere hardware y frameworks específicos.
-- Cuantización: el repo publicado es GGUF; no se indican los niveles disponibles ni la pérdida de calidad asociada a cada uno.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin evidencia de adopción comunitaria.
+- Especializacion de dominio: optimizado para codigo y agentes; su rendimiento en tareas generales puede diferir del modelo base.
+- Riesgo de alucinacion y errores: el autor recomienda evaluacion exhaustiva y verificacion humana antes de produccion.
+- El contexto de 1M tokens implica un coste elevado de KV-cache; en la practica puede requerir hardware de gama alta.
+- Idiomas soportados limitados a zh, en, de, ja y ar; el castellano no figura entre los idiomas declarados.
+- Licencia Apache 2.0, pero el autor exige cumplir tambien los terminos del modelo base Qwen3.6-35B-A3B.
+- No se publican cifras de benchmarks en texto, lo que dificulta la verificacion independiente del rendimiento.
+- El entrenamiento en NPUs Ascend puede implicar diferencias de comportamiento frente a pipelines CUDA no documentadas.
+- Datos de parametros activos y cuantizaciones concretas no disponibles, lo que limita la planificacion precisa de recursos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/PhaiModelLab/Phai-A1-35B-1M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - README en chino: ./README_zh.md (referenciado en la model card)
-- Imagen de benchmarks: _assets_/_benchmarks.png (referenciada en la model card)
-- Paper, blog o repositorio adicionales: no disponibles en la información proporcionada.
+- Paper, blog o repositorio adicional: no disponibles en la informacion proporcionada.

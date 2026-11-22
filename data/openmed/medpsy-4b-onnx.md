@@ -2,101 +2,111 @@
 
 ## Resumen
 
-MedPsy-4B-ONNX es la conversión a formato ONNX y la cuantización a 4 bits del modelo `qvac/MedPsy-4B`, un ajuste fino de dominio médico y biomédico construido sobre Qwen3-4B. La conversión la publica OpenMed, que no está afiliada ni respaldada por los autores del modelo original, y está pensada para ejecución en dispositivo (Android, escritorio y navegador) mediante ONNX Runtime y Transformers.js.
+MedPsy-4B-ONNX es la conversión a formato ONNX del modelo `qvac/MedPsy-4B`, un ajuste fino de dominio médico y psicológico construido sobre Qwen3-4B. La conversión la publica OpenMed, que no está afiliada a los autores del modelo original, con el objetivo de facilitar la inferencia en dispositivos (Android, escritorio y navegador) mediante ONNX Runtime y Transformers.js. El resultado es un decoder estándar de ONNX Runtime con pesos cuantizados a 4 bits en el cuerpo y 8 bits en las capas sensibles.
 
-El modelo conserva los 4.020 millones de parámetros del original, pero reduce el peso de los tensores de 16 bits (BF16) a 6,28 bits por peso medidos, lo que deja los ficheros de pesos en 2,94 GiB. La estructura interna es la de Qwen3: 36 capas, tamaño oculto de 2.560, atención con consultas agrupadas (GQA) y vocabulario de 151.936 entradas con embeddings de entrada y salida atados.
+El modelo conserva la arquitectura Qwen3 (`Qwen3ForCausalLM`) con 4.020 millones de parámetros, 36 capas, tamaño oculto de 2560 y atención con query agrupada (GQA). El vocabulario es de 151.936 tokens con embeddings de entrada y salida atados. El repositorio pesa 3,3 GB y los pesos medidos ocupan 2,94 GiB, lo que corresponde a 6,28 bits por peso efectivos, por encima de la etiqueta "4 bits" debido a que las capas más sensibles y la tabla de embeddings compartida se mantienen en 8 bits.
 
-Su relevancia está en el nicho: es una de las pocas conversiones ONNX de un modelo médico de ~4B lista para `transformers.js` y para `onnxruntime-android`, con la tokenizador, plantilla de chat y valores de generación del modelo original sin modificar. La licencia es Apache 2.0, la única lengua declarada es el inglés y el uso previsto por el autor original es investigación y educación, no uso clínico.
+Su relevancia actual radica en que permite ejecutar un modelo de 4B especializado en texto clínico y conversacional dentro de un navegador o en un dispositivo Android sin GPU dedicada, algo poco habitual en modelos de este tamaño. La revisión del 25 de septiembre de 2026 sustituyó los pesos calibrados por redondeo simple (round-to-nearest) por una calibración GPTQ, reduciendo la divergencia media de siguiente token frente al modelo fuente entre un 36 % y un 53 % en tres textos de validación.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, `qwen3` (`Qwen3ForCausalLM`), con grouped-query attention |
-| Parametros totales | 4.020 millones (4,02 B) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Cuerpo en int4 asimétrico (uint4 + zero point empaquetado, bloque 32, escalas fp32, `MatMulNBits` con `accuracy_level` 4); capas sensibles en int8 asimétrico (bloque 32, regla de `Q4_K_M` de llama.cpp); tabla de embeddings y cabeza de salida en una única tabla int8 asimétrica de bloque 32. Medido: 6,28 bits por peso. En Transformers.js se selecciona con `dtype: "q4"` |
+| Arquitectura | Transformer decoder (`qwen3`, `Qwen3ForCausalLM`), atención con query agrupada (GQA) |
+| Parametros totales | 4,02 B (4.020 millones) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Cuerpo int4 asimétrico GPTQ (grupo 32, escalas fp32, `accuracy_level` 4); capas sensibles int8 GPTQ (grupo 32); embeddings y cabeza de salida int8 bloque 32 |
 | Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | ONNX (`onnx/model_q4.onnx` más datos externos `onnx/model_q4.onnx_data` y `onnx/model_q4.onnx_data_1`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX (`onnx/model_q4.onnx` + `onnx/model_q4.onnx_data` + `onnx/model_q4.onnx_data_1`) |
+| Tamano del repositorio | 3,3 GB |
+| Tamano oculto | 2560 |
+| Capas | 36 |
+| Vocabulario | 151.936 (embeddings de entrada/salida atados) |
+| Bits por peso efectivos | 6,28 (medido sobre los tensores) |
+| Libreria | transformers.js |
+| Operadores ONNX Runtime | `MatMulNBits`, `GatherBlockQuantized`, `GroupQueryAttention` (namespace `com.microsoft`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only de tipo `Qwen3ForCausalLM` con 36 capas, tamaño oculto de 2.560, atención con consultas agrupadas (GQA) y un vocabulario de 151.936 tokens con embeddings de entrada y salida atados. Sobre esa base, QVAC aplicó un ajuste fino de dominio médico (MedPsy) orientado a conversación clínica y biomédica. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. La model card del autor original indica que el modelo se entrenó con datos generados a partir de conjuntos CC-BY-NC.
+La arquitectura subyacente es un transformer decoder de tipo Qwen3 con 36 capas, tamaño oculto de 2560 y atención con query agrupada, lo que reduce el coste de memoria de la caché KV respecto a atención multi-cabeza completa. Los embeddings de entrada y la cabeza de salida están atados, lo que explica que la tabla de 151.936 entradas se almacene una sola vez en el grafo ONNX y se lea tanto por `GatherBlockQuantized` como por `MatMulNBits`. El modelo original es un ajuste fino de Qwen3-4B orientado a contenido médico, biomédico y clínico conversacional; los detalles de composición del dataset de ajuste fino no se detallan en la información proporcionada.
 
-La innovación de esta publicación no está en el entrenamiento, sino en la conversión y el esquema de cuantización. El cuerpo se cuantiza a int4 asimétrico con bloque de 32, pero se mantienen en int8 los tensores que más degradan a 4 bits según la regla de `Q4_K_M` de llama.cpp: `down_proj` en el primer y último octavo de capas y en cada tercera capa intermedia, y `v_proj` por el mismo criterio sobre las capas de atención. La tabla de embeddings y la cabeza de salida comparten una única tabla int8 de bloque 32, leída con `GatherBlockQuantized` y `MatMulNBits`. La conversión se hizo con `onnxruntime-genai` 0.16.0 (grafo FP32 en CPU) y el cuantizador `MatMulNBitsQuantizer` de `onnxruntime` 1.30.0, sin calibración (round-to-nearest). El grafo usa operadores `com.microsoft` (`MatMulNBits`, `GatherBlockQuantized`, `GroupQueryAttention`) y requiere ONNX Runtime 1.30 o superior.
+La conversión no reentrena el modelo: aplica cuantización GPTQ sobre los pesos en BF16 del modelo fuente. La calibración se realizó con 512 secuencias de 512 tokens de texto genérico en inglés (wikitext-2-raw-v1, revisión `b08601e04326`), sin texto médico ni datos de evaluación en el conjunto de calibración. Las herramientas empleadas fueron GPTQModel 7.5.0, el model builder de onnxruntime-genai 0.16.0 para construir el grafo y onnxruntime 1.30.0. La regla de capas sensibles que se mantienen en 8 bits replica el criterio de Q4_K_M de llama.cpp, que eleva a mayor precisión las proyecciones de valor de atención y las proyecciones down.
+
+La fidelidad de la cuantización se midió frente al modelo fuente en Transformers FP32 con ONNX Runtime 1.30.0 en CPU, sobre 4.092 tokens puntuados por texto, ninguno perteneciente al conjunto de calibración. El tokenizador, la plantilla de chat y los valores por defecto de generación son los archivos originales sin modificar.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con plantilla de chat idéntica a la del modelo original.
-- Respuesta a preguntas de temática médica, biomédica y clínica, sujeta a las advertencias del autor original (uso educativo y de investigación).
-- Ejecución en dispositivo sin servidor: Android (`onnxruntime-android`), escritorio y navegador vía Transformers.js.
-- Inferencia con caché de clave/valor (`past_key_values.*` / `present*`), apta para generación multi-turno paso a paso.
-- Modo greedy reproducible: Transformers.js 4.3.0 y ONNX Runtime 1.30.0 en CPU produjeron los mismos tokens con decodificación greedy.
-- Soporte de tool calling / function calling: no confirmado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado en la información disponible.
-- Capacidades de visión, audio o modo de razonamiento explícito: no disponibles en esta conversión.
-- Capacidades multilingües: solo inglés declarado.
+- Generación de texto conversacional en inglés, con especialización en contenido médico, biomédico y clínico según el ajuste fino del modelo fuente.
+- Explicación de conceptos médicos en lenguaje llano (el ejemplo de la model card aborda la diferencia entre ataque de pánico e infarto).
+- Razonamiento de dominio sobre terminología clínica y biomédica, heredado del ajuste fino de MedPsy sobre Qwen3-4B.
+- Soporte de plantilla de chat (`chat_template.jinja` incluida), lo que permite conversaciones multi-turno con roles de sistema, usuario y asistente.
+- Ejecución en navegador mediante Transformers.js con `dtype: "q4"`, y en Android, escritorio y Python mediante ONNX Runtime con el execution provider de CPU.
+- Gestión de caché KV explícita: el grafo expone `past_key_values.*` como entradas y `present*` como salidas, lo que permite generación autorregresiva eficiente paso a paso.
+- Capacidades de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles; el modelo es exclusivamente de texto.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Triaje educativo de síntomas: el modelo puede mantener una conversación en inglés sobre cuadros clínicos comunes (por ejemplo, explicar la diferencia entre un ataque de pánico y un infarto) y servir como material de apoyo formativo para estudiantes de medicina, siempre con revisión humana.
-- Asistente sanitario de bolsillo sin conexión: al pesar 2,94 GiB en int4 y ejecutarse con `onnxruntime-android`, cabe en un teléfono de gama alta y permite consultas de referencia médica en entornos sin red (zonas rurales, entornos con requisitos de privacidad).
-- Aplicación web de divulgación biomédica: vía Transformers.js en el navegador, el modelo puede responder dudas de vocabulario y conceptos fisiológicos sin enviar datos del usuario a un servidor, útil cuando la privacidad del texto introducido es crítica.
-- Generación de borradores de material docente: resúmenes de conceptos clínicos, preguntas de autoevaluación y explicaciones en lenguaje llano que un docente revisa antes de publicar.
-- Prototipado rápido de productos de salud digital: al ser Apache 2.0 y ONNX, se puede integrar en demos y pruebas de concepto en móvil o escritorio sin depender de infraestructura GPU ni de una API externa.
-- Extracción y normalización de terminología médica en inglés: dado su ajuste fino sobre corpus biomédicos, puede reformular o simplificar jerga clínica en textos de entrada, integrándose en un pipeline previo al análisis por parte de un profesional.
-- Evaluación comparativa de cuantización: sirve como caso de estudio reproducible para medir el impacto de int4/int8 en un modelo médico de 4B, ya que la card publica métricas de divergencia frente al modelo original en FP32.
+- Asistente clínico de consulta rápida en dispositivo: el modelo puede desplegarse en una aplicación Android mediante `onnxruntime-android` para responder preguntas frecuentes sobre síntomas y terminología en inglés, sin enviar datos del paciente a un servidor externo. Adecuado por su tamaño de 4B y su cuantización int4, que reducen la huella de memoria frente al modelo en BF16.
+- Educación médica para estudiantes: generación de explicaciones en lenguaje llano sobre conceptos de fisiología, farmacología o psicología, aprovechando el ajuste fino sobre corpus biomédicos. El contexto conversacional permite iterar sobre la misma explicación con preguntas de seguimiento.
+- Demo interactiva en navegador: integración con Transformers.js en una página web para probar el modelo sin backend, usando `pipeline("text-generation", ..., { dtype: "q4" })`. Útil para prototipos de producto y validación de experiencia de usuario antes de invertir en infraestructura.
+- Procesamiento local de notas clínicas en escritorio: ejecución con ONNX Runtime en Python sobre el execution provider de CPU para resumir o reformular texto médico en inglés en entornos con requisitos de privacidad que impiden el uso de APIs en la nube.
+- Base para investigación en cuantización: el repositorio incluye `openmed_build.json` con los ajustes exactos, versiones de herramientas, resultados por corpus y SHA-256 de cada archivo, lo que lo convierte en un punto de partida reproducible para estudiar el impacto de GPTQ con capas mixtas int4/int8 en modelos de 4B.
+- Filtrado y clasificación de texto biomédico: generación de respuestas o etiquetas sobre extractos de MedlinePlus y literatura biomédica en inglés, con la ventaja de que el modelo cabe en memoria de un dispositivo de gama media-alta.
+- Evaluación de fidelidad de cuantizaciones: los datos de divergencia KL, acuerdo top-1 y variación de perplejidad publicados permiten usar este modelo como referencia para comparar otras técnicas de cuantización sobre la misma base Qwen3-4B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card sí incluye métricas de fidelidad de la cuantización medidas contra el modelo original en FP32 sobre 4.092 tokens de prosa de dominio público (Project Gutenberg), con ONNX Runtime 1.30.0 en CPU:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card sí publica métricas de fidelidad de la cuantización frente al modelo fuente en FP32, medidas con ONNX Runtime 1.30.0 en CPU sobre 4.092 tokens por texto:
 
-| Metrica | Valor |
-|---|---|
-| Divergencia KL media de las distribuciones del siguiente token | 0,077 |
-| Coincidencia top-1 del siguiente token | 84,1 % |
-| Cambio de perplejidad | +4,5 % |
-| Peso de los tensores | 2,94 GiB |
-| Bits por peso medidos | 6,28 |
+| Texto | Divergencia KL media | Acuerdo top-1 | Cambio de perplejidad | KL antes de calibración |
+|---|---|---|---|---|
+| Prosa de dominio público (Project Gutenberg) | 0,037 | 88,8 % | +1,9 % | 0,077 |
+| Prosa médica (resúmenes de MedlinePlus) | 0,020 | 93,3 % | +0,8 % | 0,031 |
+| Texto enciclopédico reservado (wikitext-2 test) | 0,029 | 92,8 % | +2,2 % | 0,062 |
 
-El export FP32 desde el que se cuantizó coincide con el modelo original (coincidencia top-1 del 100 %), por lo que las diferencias anteriores corresponden íntegramente a la cuantización. No se han publicado métricas de latencia ni de throughput.
+La calibración GPTQ redujo la divergencia media de siguiente token entre un 36 % y un 53 % respecto a la primera build publicada el 23 de septiembre de 2026, que usaba redondeo simple. No se han medido latencia ni throughput en dispositivo Android; la model card indica explícitamente que aún no se ha evaluado en un dispositivo de este tipo. En macOS con ONNX Runtime 1.30.0 (CPU) y Transformers.js 4.3.0 se obtuvieron tokens greedy idénticos entre ambas rutas de ejecución.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 3 GB con la cuantización int4/int8 de este repositorio (2,94 GiB de pesos); el consumo real depende del backend, la longitud de contexto y el tamaño del lote.
-- Cabe en GPU de consumo: sí, en cualquier GPU con 4 GB o más de VRAM (por ejemplo, RTX 3050, RTX 3060, RTX 4060, RTX 4090). También está diseñado para CPU y para ejecución on-device.
-- GPU recomendadas para servidor: no aplica de forma específica; con este formato el objetivo es CPU y dispositivos móviles. Para lotes grandes o baja latencia en servidor, A100 o H100 serían sobredimensionadas para un modelo de 4B en int4.
-- Opciones de despliegue: ONNX Runtime 1.30 o superior (Python, `onnxruntime-android` en Android), Transformers.js 4.3.0 en navegador o Node, y el ecosistema `onnxruntime-genai` para generación. No se distribuyen pesos en formato GGUF, safetensors ni cuantizaciones para llama.cpp, Ollama, vLLM o TGI.
-- Latencia y throughput: no disponibles. La model card indica explícitamente que el modelo todavía no se ha medido en un dispositivo Android.
+- VRAM/RAM estimada para inferencia: los pesos ocupan 2,94 GiB en el formato int4/int8 mixto; hay que sumar la caché KV, que crece con la longitud de contexto. Para contextos moderados, un presupuesto de 4 a 6 GB de memoria es razonable, aunque la cifra exacta depende de la longitud de contexto y no está publicada.
+- GPU recomendadas: no se especifican en la información proporcionada. El modelo está pensado para CPU mediante ONNX Runtime; no se documenta soporte de execution providers de GPU (CUDA, DirectML, CoreML) en la model card.
+- Cabe en GPU de consumo: sí, por tamaño de pesos (2,94 GiB), aunque no hay datos publicados de rendimiento en GPU. En RTX 4090, RTX 3090 o GPUs con 8 GB o más el modelo cabría en memoria, pero la ruta de ejecución validada es CPU.
+- Despliegue: ONNX Runtime 1.30 o superior (incluido `onnxruntime-android` en Android) y Transformers.js 4.3.0 en navegador o Node. No se mencionan vLLM, llama.cpp, Ollama ni TGI como opciones soportadas para este repositorio concreto.
+- Latencia y throughput: no disponibles. La model card solo confirma que no se ha medido en dispositivo Android y que en macOS con CPU se obtuvieron tokens greedy idénticos entre ONNX Runtime y Transformers.js.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenMed/MedPsy-4B-ONNX | 4,02 B | no disponible | ONNX int4/int8 (2,94 GiB) | apache-2.0 | Hugging Face, transformers.js y ONNX Runtime; 0 descargas, 0 likes en el momento de la consulta |
-| qvac/MedPsy-4B (modelo base) | 4,02 B | no disponible | PyTorch BF16 (aproximadamente 8 GB) | apache-2.0 | Hugging Face; pesos originales sin cuantizar |
-| Qwen3-4B (modelo padre) | 4,02 B (arquitectura idéntica) | no disponible en la información proporcionada | safetensors / GGUF según distribución | Apache 2.0 | Ampliamente distribuido; no es un modelo médico |
+| MedPsy-4B-ONNX (este) | 4,02 B | no disponible | ONNX int4 GPTQ + int8 en capas sensibles | Apache 2.0 | Hugging Face, uso en navegador y Android |
+| qvac/MedPsy-4B (fuente) | 4,02 B | no disponible | BF16 (Transformers) | Apache 2.0 | Hugging Face |
+| Qwen3-4B (base) | 4 B | no disponible en la informacion proporcionada | safetensors, GGUF y otras conversiones de la comunidad | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes, salvo las métricas de fidelidad de cuantización frente al modelo en FP32 recogidas en el apartado anterior. La comparación con otros modelos médicos de tamaño similar (BioMistral, Meditron, etc.) no está disponible en la información proporcionada.
+La comparación con alternativas de la misma categoría (modelos médicos de 4B en formato ONNX para dispositivo) no está disponible en la información proporcionada. Frente al modelo fuente, la diferencia principal es el formato: este repositorio prioriza portabilidad y tamaño reducido a costa de una pérdida de fidelidad medida (KL de 0,020 a 0,037 según el corpus). Frente a Qwen3-4B, la diferencia es el ajuste fino de dominio médico y psicológico, cuyos detalles de entrenamiento no se documentan en la información disponible.
 
 ## Limitaciones y advertencias
 
-- No es un dispositivo médico ni sustituye el consejo, diagnóstico o tratamiento profesional. Los autores originales lo destinan a investigación y educación.
-- Riesgo de alucinación especialmente crítico por el dominio: los errores en contenido clínico pueden tener consecuencias graves; la propia card advierte de que las salidas pueden ser incorrectas y deben verificarse.
-- La cuantización introduce degradación medible: divergencia KL media de 0,077, coincidencia top-1 del 84,1 % y un aumento de perplejidad del 4,5 % respecto al modelo original en FP32. No se usó calibración (round-to-nearest), lo que puede penalizar más en algunos dominios.
-- Idioma limitado al inglés; no hay soporte multilingüe declarado.
-- Longitud de contexto no especificada en la información disponible, lo que impide planificar aplicaciones con ventanas largas sin verificarlo antes.
-- Sesgos: no se documentan análisis de sesgo, y el ajuste fino se hizo sobre datos generados a partir de conjuntos CC-BY-NC, cuya composición no se detalla.
-- Licencia: los pesos se distribuyen bajo Apache 2.0, pero el modelo original se entrenó con datos derivados de conjuntos CC-BY-NC; conviene revisar las atribuciones incluidas en `ATTRIBUTIONS.md` antes de un uso comercial.
-- Estado de validación bajo: 0 descargas y 0 likes, sin evaluación en dispositivo Android y con pruebas únicamente en macOS con ONNX Runtime 1.30.0 en CPU y Transformers.js 4.3.0.
-- Dependencia de operadores `com.microsoft` y de ONNX Runtime 1.30 o superior; versiones anteriores no podrán cargar el grafo.
+- No es un dispositivo médico ni sustituye el consejo, diagnóstico o tratamiento profesional. La model card indica explícitamente que las salidas pueden ser erróneas y deben verificarse.
+- Uso previsto limitado a investigación y educación. QVAC describe MedPsy como modelo para estos fines, entrenado con datos generados a partir de conjuntos CC-BY-NC; conviene revisar la model card del modelo fuente antes de cualquier uso comercial.
+- Riesgo de alucinación en contenido clínico: al ser un ajuste fino sobre un modelo de 4B, puede generar afirmaciones médicas plausibles pero incorrectas, especialmente en dosis, interacciones farmacológicas o diagnósticos diferenciales.
+- Idiomas: solo inglés. No hay soporte documentado de castellano ni de otros idiomas, por lo que su uso en entornos hispanohablantes requeriría traducción previa o ajuste adicional.
+- Longitud de contexto: no documentada en la información proporcionada; no se debe asumir la ventana nativa de Qwen3-4B sin verificar la configuración del grafo ONNX.
+- La cuantización introduce degradación medible: entre un 88,8 % y un 93,3 % de acuerdo top-1 con el modelo fuente según el corpus, con incrementos de perplejidad de hasta el 2,2 %. En texto médico la degradación es menor (KL 0,020, perplejidad +0,8 %), pero no es nula.
+- La calibración GPTQ se hizo solo con texto genérico en inglés (wikitext-2), sin datos médicos; el rendimiento en dominios muy alejados de ese corpus no está caracterizado.
+- Dependencia de operadores `com.microsoft` de ONNX Runtime: requiere ONNX Runtime 1.30 o superior. Versiones anteriores o runtimes alternativos que no implementen `MatMulNBits`, `GatherBlockQuantized` o `GroupQueryAttention` no podrán ejecutar el grafo.
+- No medido en Android: la model card lo indica explícitamente, por lo que el rendimiento real en dispositivos móviles es desconocido.
+- OpenMed no está afiliada ni respaldada por los autores del modelo original; los problemas de calidad del ajuste fino deben contrastarse con la model card de `qvac/MedPsy-4B`.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/OpenMed/MedPsy-4B-ONNX
-- Modelo base original: https://huggingface.co/qvac/MedPsy-4B
-- Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
+- Repositorio Hugging Face: https://huggingface.co/OpenMed/MedPsy-4B-ONNX
+- Modelo base: https://huggingface.co/qvac/MedPsy-4B
 - ONNX: https://onnx.ai
 - ONNX Runtime: https://onnxruntime.ai
+- Transformers.js (documentación): https://huggingface.co/docs/transformers.js
+- Conjunto de calibración wikitext-2-raw-v1 (revisión `b08601e04326`): no se proporciona URL directa en la información disponible
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada

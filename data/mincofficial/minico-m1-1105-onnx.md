@@ -2,97 +2,103 @@
 
 ## Resumen
 
-Minico M1 1105 ONNX es la distribución en formato ONNX de Minico M1 1105, un modelo de razonamiento de 350 millones de parámetros desarrollado por Mincofficial. Se trata de un ajuste fino del modelo LFM2.5-350M de Liquid AI, sobre el que se han aplicado técnicas de SFT, DPO y GRPO, además de fusión de pesos, para dotarlo de un modo de razonamiento explícito con cinco niveles de esfuerzo configurables (`off`, `low`, `medium`, `high`, `max`).
+Minico M1 1105 ONNX es la versión exportada a formato ONNX del modelo Minico M1 1105, un modelo de razonamiento de 350 millones de parámetros desarrollado por Mincofficial. Se trata de un fine-tuning del modelo LFM2.5-350M de Liquid AI, al que se ha sometido a un proceso de SFT, DPO y GRPO, además de fusionado de pesos, para dotarlo de cinco niveles de esfuerzo de razonamiento (`off`, `low`, `medium`, `high`, `max`) configurables a través de la plantilla de chat.
 
-La relevancia de esta versión concreta reside en su orientación a la inferencia en el navegador y en dispositivos locales: los pesos se han exportado a ONNX y cuantizado en bloques de 32, de modo que el modelo puede ejecutarse con Transformers.js sobre WebGPU (Chrome y Edge 113 o superior, Safari 26) o, en su defecto, sobre WASM. El artefacto de 8 bits ocupa 510 MB, lo que lo hace viable en equipos de consumo sin GPU dedicada de gama alta.
+La relevancia de esta versión concreta radica en su orientación a la inferencia en el navegador y en dispositivos locales: los pesos están exportados en ONNX Runtime y empaquetados para Transformers.js, con soporte de WebGPU, lo que permite ejecutar el modelo íntegramente en el cliente sin enviar datos a ningún servidor. El repositorio ocupa 2,3 GB e incluye tres builds con distintos niveles de cuantización (q8, q4 y fp32).
 
-El modelo está pensado para generación de texto conversacional y razonamiento en inglés, con una longitud de contexto que no se especifica en la información disponible. Su licencia LFM Open License v1.0 permite uso comercial a organizaciones por debajo del umbral de ingresos definido en el texto de la licencia.
+El modelo está pensado para tareas conversacionales y de razonamiento de propósito general en inglés, con un tamaño lo bastante reducido como para caber en GPUs de consumo e incluso ejecutarse en el navegador mediante WebGPU o, en su defecto, WebAssembly.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de LFM2.5-350M de Liquid AI; detalles internos no disponibles) |
-| Parametros totales | 350M |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | q8 (8 bits, 510 MB), q4 (4 bits, 294 MB), fp32 (1.451 MB); cuantizacion en bloques de 32 con MatMulNBits y GatherBlockQuantized para embeddings |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | LFM Open License v1.0 (uso comercial permitido bajo umbral de ingresos) |
-| Formato de pesos | ONNX (`model_quantized.onnx`, `model_q4.onnx`, `model.onnx`) |
+| Arquitectura | Transformer (derivada de LFM2.5-350M, familia LFM2) |
+| Parámetros totales | 350M |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | q8 (8 bits, 510 MB), q4 (4 bits, 294 MB), fp32 (1.451 MB) |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | LFM Open License v1.0 (`lfm1.0`) |
+| Formato de pesos | ONNX (MatMulNBits en bloques de 32; GatherBlockQuantized para embeddings en q8/q4) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es LFM2.5-350M de Liquid AI, un transformer de 350 millones de parámetros. Minico M1 1105 se obtiene mediante ajuste fino supervisado (SFT), optimización directa de preferencias (DPO) y GRPO, seguido de fusión de pesos. La información disponible no detalla la composición del dataset de entrenamiento ni el número de tokens utilizados.
+El modelo parte de la arquitectura de LFM2.5-350M de Liquid AI, un transformer de 350M de parámetros. Minicofficial obtuvo los pesos mediante un proceso de ajuste fino que combina SFT (supervised fine-tuning), DPO (direct preference optimization) y GRPO (group relative policy optimization), seguido de fusionado de pesos. El resultado es un modelo conversacional con modos de razonamiento explícito graduables.
 
-La innovación principal es el mecanismo de niveles de esfuerzo de razonamiento, controlado desde la plantilla de chat mediante el parámetro `reasoning_effort`. El modelo fue entrenado con conversaciones que mantienen un único nivel de esfuerzo de principio a fin, lo que condiciona su uso en producción: no se recomienda cambiar de nivel a mitad de una conversación. La exportación ONNX reutiliza el grafo de Liquid AI para LFM2.5-350M, sustituyendo los pesos por los de Minico M1 1105 y verificando la salida token a token contra el modelo original en PyTorch.
+La exportación a ONNX reutiliza el grafo publicado por Liquid AI para LFM2.5-350M-ONNX, sustituyendo los pesos por los del modelo Minico. Las builds q8 y q4 cuantizan únicamente los pesos, en bloques de 32, empleando MatMulNBits y GatherBlockQuantized para la capa de embeddings, con el mismo diseño que la build q4 oficial de Liquid AI. El autor verificó la salida generada token a token contra el modelo en PyTorch: la build q8 alcanza un 94,9% de coincidencia en la elección top-1 (6 prompts, 433 tokens, ONNX Runtime 1.31 en CPU) y la fp32 un 95,2%, siendo esta última inferior al 100% por diferencias de coma flotante entre runtimes.
+
+El rasgo técnico más destacable es el sistema de niveles de esfuerzo de razonamiento, controlado mediante el parámetro `reasoning_effort` de la plantilla de chat. Cada nivel preasigna un bloque de pensamiento de distinta longitud y un límite de tokens generados recomendado: `off` (1024 tokens, sin pensamiento), `low` (640), `medium` (1152), `high` (2368, valor por defecto desde el 8 de noviembre de 2026) y `max` (4608). La plantilla acepta además alias (`none`, `minimal`, `xhigh`) y `enable_thinking=False` como equivalente a `off`.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con soporte multi-turno.
-- Razonamiento explícito con cinco niveles de esfuerzo (`off`, `low`, `medium`, `high`, `max`) y alias adicionales (`none`, `minimal`, `xhigh`, entre otros) y `enable_thinking=False`.
-- Resolución de problemas aritméticos y de razonamiento cotidiano (el ejemplo de la model card es un cálculo de descuento).
-- Ejecución en el navegador mediante Transformers.js con WebGPU, o con WASM como alternativa más lenta.
-- Inferencia local sin envío de datos a servidores externos (según la demo del autor).
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni capacidades multilingües más allá del inglés.
+- Generación de texto conversacional en inglés con soporte de plantilla de chat (`apply_chat_template`).
+- Razonamiento explícito con cinco niveles de esfuerzo configurables (`off`, `low`, `medium`, `high`, `max`), que ajustan la profundidad del bloque de pensamiento.
+- Razonamiento matemático básico y resolución de problemas aritméticos sencillos (el ejemplo de la model card resuelve un cálculo de descuento).
+- Ejecución en navegador mediante Transformers.js con WebGPU (Chrome y Edge 113 o superior, Safari 26) o, en su defecto, WebAssembly.
+- Inferencia local en el dispositivo sin transmisión de datos a servidores externos.
+- Compatibilidad con ONNX Runtime para despliegue fuera del navegador.
+- Soporte de tool calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según los metadatos del modelo.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional embebido en una aplicación web: el modelo se carga con Transformers.js en el navegador del usuario y responde sin que los mensajes salgan del dispositivo, lo que simplifica el cumplimiento de requisitos de privacidad.
-- Resolución de dudas aritméticas y de razonamiento cotidiano en una interfaz de ayuda: con `reasoning_effort: "medium"` y un límite de 1152 tokens nuevos, el modelo produce un razonamiento breve seguido de la respuesta, adecuado para consultas de un solo turno.
-- Clasificación y reescritura de texto en herramientas internas: al ejecutarse en local con el build `q4` de 294 MB, puede integrarse en extensiones de navegador o aplicaciones de escritorio con recursos limitados.
-- Prototipado educativo de modelos de razonamiento: los cinco niveles de esfuerzo permiten demostrar en el aula cómo varía la longitud y la profundidad del razonamiento sin infraestructura de servidor.
-- Moderación o preprocesado de texto en el cliente: con `reasoning_effort: "off"` el modelo responde de inmediato (bloque de pensamiento vacío precargado) y limita la generación a 1024 tokens, lo que reduce la latencia en tareas simples.
-- Demos y pruebas de concepto de inferencia en WebGPU: el repositorio incluye tres builds con distintos compromisos de tamaño y fidelidad, útiles para evaluar el rendimiento de ONNX Runtime en hardware de consumo antes de invertir en infraestructura.
+- **Asistente conversacional embebido en aplicaciones web**: el modelo puede integrarse con Transformers.js y ejecutarse en el navegador del usuario mediante WebGPU, de modo que las conversaciones nunca salen del dispositivo. Es adecuado por su tamaño reducido (510 MB en q8) y su API de chat template.
+- **Procesamiento de datos sensibles en el cliente**: en escenarios con requisitos de privacidad (sanidad, finanzas personales, documentación interna), la inferencia local elimina la necesidad de enviar texto a una API externa. La build q8 ofrece un equilibrio razonable entre tamaño y fidelidad (94,9% de coincidencia con PyTorch).
+- **Aplicaciones de escritorio o extensiones sin backend**: al distribuirse en ONNX, puede ejecutarse con ONNX Runtime en aplicaciones Electron, extensiones de navegador o herramientas de línea de comandos, sin depender de infraestructura de servidor.
+- **Tutor o asistente educativo con razonamiento graduable**: el nivel `high` o `max` permite obtener explicaciones paso a paso en problemas matemáticos o lógicos, mientras que `off` o `low` sirven para respuestas rápidas en interacciones simples.
+- **Prototipado rápido de funcionalidades de IA generativa**: un equipo puede validar una idea de producto con IA conversacional sin aprovisionar GPUs ni contratar APIs, usando la demo pública o la build q4 (294 MB) para minimizar la descarga.
+- **Sistemas de ayuda contextual en páginas web**: la ventana de chat puede ofrecer respuestas inmediatas sobre el contenido de la propia página, con latencia dependiente del hardware del cliente y sin coste de inferencia en servidor.
+- **Filtrado o clasificación de texto ligera en el borde**: con el modo `off`, el modelo responde sin bloque de pensamiento, lo que reduce la latencia y el consumo de tokens en tareas de generación corta.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros). El único dato de rendimiento disponible es la tasa de coincidencia de la salida ONNX con la salida greedy del modelo en PyTorch, medida sobre 6 prompts y 433 tokens con ONNX Runtime 1.31 en CPU:
+No se han publicado resultados de benchmarks en la información disponible. La model card remite al repositorio principal (`Mincofficial/Minico-M1-1105`) para consultar benchmarks, pero no incluye cifras en esta versión. El único dato cuantitativo publicado es la tasa de coincidencia de las builds ONNX con la salida greedy del modelo en PyTorch:
 
-| Build | dtype | Peso | Tamano | Coincidencia con PyTorch |
-|---|---|---|---|---|
-| `model_quantized.onnx` | q8 | 8 bits | 510 MB | 94,9 % |
-| `model_q4.onnx` | q4 | 4 bits | 294 MB | 88,0 % |
-| `model.onnx` | fp32 | precisión completa | 1.451 MB | 95,2 % |
+| Build | dtype | Tamaño | Coincidencia top-1 con PyTorch |
+|---|---|---|---|
+| `onnx/model_quantized.onnx` | q8 | 510 MB | 94,9% |
+| `onnx/model_q4.onnx` | q4 | 294 MB | 88,0% |
+| `onnx/model.onnx` | fp32 | 1.451 MB | 95,2% |
 
-No se han publicado resultados de benchmarks en la información disponible.
+Medición sobre 6 prompts y 433 tokens con ONNX Runtime 1.31 en CPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; por el tamaño de los artefactos, el build `q8` requiere alrededor de 510 MB de memoria y el `q4` alrededor de 294 MB, a los que hay que sumar el overhead del runtime y del tokenizador.
-- GPU recomendadas: no se especifican modelos concretos. La ejecución con WebGPU requiere Chrome o Edge 113 o superior, o Safari 26.
-- Compatibilidad con GPU de consumo: el tamaño reducido de los builds `q8` y `q4` sugiere que cabe en GPU integradas y en tarjetas de gama baja, aunque el autor no publica cifras de latencia ni de throughput.
-- Opciones de despliegue: Transformers.js con `device: "webgpu"` o `device: "wasm"`; ONNX Runtime 1.31 en CPU para la verificación de la exportación.
-- Latencia y throughput: no disponibles.
+- **VRAM estimada**: la build q8 (510 MB de pesos) requiere aproximadamente 1-1,5 GB de VRAM o memoria unificada en la práctica, considerando pesos, caché KV y overhead del runtime; la q4 (294 MB) baja de 1 GB; la fp32 (1,45 GB) requiere en torno a 2-2,5 GB.
+- **GPU recomendadas**: cualquier GPU integrada o dedicada con soporte de WebGPU sirve para la build q8; para inferencia con ONNX Runtime en servidor, GPUs de consumo como RTX 3060/4060 o superiores son más que suficientes dado el tamaño del modelo.
+- **GPU de consumo**: sí cabe con holgura en cualquier GPU de consumo moderna, incluidas las integradas de portátiles, especialmente con la build q4.
+- **Opciones de despliegue**: Transformers.js con `device: "webgpu"` o `device: "wasm"` en el navegador; ONNX Runtime en aplicaciones nativas; la model card no menciona soporte de vLLM, llama.cpp, Ollama ni TGI para esta build.
+- **Latencia y throughput**: no disponibles. La model card advierte que WebAssembly es "mucho más lento" que WebGPU, sin dar cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato / despliegue |
 |---|---|---|---|---|---|
-| Minico M1 1105 ONNX | 350M | No disponible | ONNX (q8, q4, fp32) | LFM Open License v1.0 | Niveles de esfuerzo de razonamiento; orientado a navegador |
-| LiquidAI/LFM2.5-350M | 350M | No disponible | PyTorch y ONNX (repo oficial) | No disponible en esta ficha | Modelo base; el grafo ONNX de Minico deriva del suyo |
-| LiquidAI/LFM2.5-350M-ONNX | 350M | No disponible | ONNX | No disponible en esta ficha | Exportación oficial de Liquid AI; sin los ajustes de Minico |
+| Minico M1 1105 ONNX | 350M | no disponible | en | LFM Open License v1.0 | ONNX, Transformers.js, WebGPU |
+| LiquidAI/LFM2.5-350M | 350M | no disponible | no disponible | LFM Open License v1.0 (modelo base) | safetensors, ONNX (build oficial) |
+| Mincofficial/Minico-M1-1105 | 350M | no disponible | en | LFM Open License v1.0 | PyTorch (modelo base del que deriva esta build) |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos modelos entre sí.
+La comparación más directa es con LFM2.5-350M de Liquid AI, del que este modelo hereda arquitectura y grafo ONNX, y con la versión PyTorch de Minico M1 1105, de la que esta build es una cuantización. No se dispone de datos de benchmarks para comparar rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés; no se documentan capacidades multilingües.
-- La longitud de contexto no se especifica, lo que dificulta planificar conversaciones largas o tareas con documentos extensos.
-- El modelo fue entrenado con un único nivel de esfuerzo por conversación; cambiar `reasoning_effort` a mitad de un chat puede degradar la calidad de las respuestas.
-- Los valores desconocidos de `reasoning_effort` recaen silenciosamente en `medium`, lo que puede enmascarar errores de configuración.
-- El build `q4` presenta una coincidencia del 88,0 % con la salida de PyTorch, inferior a la del `q8` (94,9 %); el autor recomienda `q8` salvo que el tamaño de descarga sea prioritario.
-- Incluso el build fp32 se queda en un 95,2 % de coincidencia por diferencias de coma flotante entre runtimes, de modo que no reproduce exactamente la salida de PyTorch.
-- Riesgo de alucinación inherente a un modelo de 350M; no se documentan evaluaciones de sesgo ni de robustez.
-- La licencia LFM Open License v1.0 limita el uso comercial gratuito a organizaciones por debajo de un umbral de ingresos; es necesario leer el texto completo antes de un despliegue comercial.
-- Sin WebGPU, la ejecución en WASM es notablemente más lenta según el propio autor.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica una validación comunitaria todavía inexistente.
+- **Idioma**: el modelo solo declara soporte de inglés; su uso en castellano u otros idiomas no está validado y probablemente degrade la calidad.
+- **Licencia**: se distribuye bajo LFM Open License v1.0. El uso comercial está permitido solo para organizaciones por debajo del umbral de ingresos definido en la licencia; es imprescindible leerla antes de un uso comercial.
+- **Atribución obligatoria**: al ser una versión modificada de LFM2.5-350M, deben conservarse los avisos de atribución del modelo base incluidos en `LICENSE`.
+- **Fidelidad de la cuantización**: la build q4 solo coincide con la salida de PyTorch en el 88,0% de los tokens top-1, lo que puede introducir degradaciones notables en tareas sensibles; se recomienda q8 salvo que el tamaño de descarga sea prioritario.
+- **Riesgo de alucinación**: no se han publicado evaluaciones de veracidad ni de sesgos; como modelo de 350M, es esperable una tasa de alucinación superior a la de modelos de mayor tamaño.
+- **Gestión del esfuerzo de razonamiento**: no se recomienda cambiar el nivel de esfuerzo ni activar o desactivar el pensamiento a mitad de una conversación; el modelo fue entrenado con una configuración fija por chat, por lo que debe iniciarse una conversación nueva para cambiarla.
+- **Compatibilidad del navegador**: WebGPU requiere Chrome o Edge 113 o superior, o Safari 26; en navegadores sin soporte la inferencia cae a WebAssembly, considerablemente más lenta.
+- **Contexto**: no se ha publicado la longitud máxima de contexto, lo que dificulta planificar aplicaciones con conversaciones largas o documentos extensos.
+- **Madurez**: el repositorio tiene 674 descargas y 0 likes en el momento de la consulta, y el modelo se creó el 5 de noviembre de 2026, por lo que la validación comunitaria es muy limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Mincofficial/Minico-M1-1105-ONNX
-- Modelo base en Hugging Face: https://huggingface.co/Mincofficial/Minico-M1-1105
-- Demo en navegador: https://minico.mincoffical.codes/try/
-- Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M
-- Exportación ONNX oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M-ONNX
-- Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
+- [Minicofficial/Minico-M1-1105-ONNX en Hugging Face](https://huggingface.co/Mincofficial/Minico-M1-1105-ONNX)
+- [Mincofficial/Minico-M1-1105 (modelo base en PyTorch)](https://huggingface.co/Mincofficial/Minico-M1-1105)
+- [LiquidAI/LFM2.5-350M (modelo original)](https://huggingface.co/LiquidAI/LFM2.5-350M)
+- [LiquidAI/LFM2.5-350M-ONNX (grafo ONNX de referencia)](https://huggingface.co/LiquidAI/LFM2.5-350M-ONNX)
+- [Documentación de Transformers.js](https://huggingface.co/docs/transformers.js)
+- [Demo en navegador](https://minico.mincoffical.codes/try/)

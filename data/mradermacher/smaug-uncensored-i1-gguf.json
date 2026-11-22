@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Llama-3-8B-Lexi-Smaug-Uncensored-GGUF - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Llama-3-8B-Lexi-Smaug-Uncensored-GGUF",
-      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
-    },
-    {
-      "title": "Llama-3-8B-Lexi-Smaug-Uncensored-i1-GGUF - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Llama-3-8B-Lexi-Smaug-Uncensored-i1-GGUF",
-      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
-    }
-  ]
+  "sources": []
 }

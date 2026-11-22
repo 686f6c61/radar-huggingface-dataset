@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackGemma-37B-alpha-GGUF",
   "created_at": "2026-11-12T16:44:53.000Z",
-  "updated_at": "2026-11-12T17:07:42.000Z",
+  "updated_at": "2026-11-21T03:27:37.000Z",
   "license": "jirack-proprietary",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 224,
+  "downloads_30d": 246,
   "trending_score": 0,
   "parameters": 36395045436,
   "parameters_human": "36.40B",

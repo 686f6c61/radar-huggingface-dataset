@@ -2,115 +2,102 @@
 
 ## Resumen
 
-`mradermacher/Koa-express-31B-qat-i1-GGUF` es un conjunto de cuantizaciones GGUF generadas por mradermacher (cuantizador independiente conocido por publicar versiones comprimidas de modelos abiertos) a partir del modelo `SF-Foundation/Koa-express-31B-qat`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una distribución de pesos comprimidos pensada para ejecución local con llama.cpp y sus derivados. El repositorio contiene cuantizaciones del tipo i1 (con fichero imatrix), que suelen ofrecer mejor relación calidad/tamaño que las cuantizaciones estáticas equivalentes.
+Koa-express-31B-qat-i1-GGUF es una distribucion de cuantizaciones GGUF del modelo Koa-express-31B-qat, publicado originalmente por SF-Foundation. El trabajo de cuantizacion lo firma mradermacher, un conocido creador de quants de la comunidad, que aplica cuantizacion con imatrix (importance matrix) para preservar la calidad en tamanos reducidos. El modelo base cuenta con 32.106.631.740 parametros totales (aproximadamente 32,1 mil millones), lo que lo situa en la categoria de modelos densos de gran tamano, y esta etiquetado como conversacional y orientado al idioma ingles.
 
-El modelo base tiene 32.106.631.740 parámetros (32,1 mil millones, comercializado como "31B") y la model card del cuantizador lo describe explícitamente como un modelo de visión, además de estar etiquetado como conversacional y con soporte únicamente de inglés. La relevancia de esta publicación es práctica: permite probar un modelo multimodal de ~32B en hardware de una sola GPU o en configuraciones con offload parcial de CPU, algo inviable con los pesos originales en precisión completa.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de 32B en hardware de consumo mediante cuantizaciones que van desde los 7,7 GB (i1-IQ1_S) hasta los 20,5 GB (i1-Q4_1), un rango que cubre desde GPUs de gama media hasta estaciones de trabajo con 24 GB de VRAM. El sufijo "qat" en el nombre del modelo base sugiere que se entreno con Quantization-Aware Training, lo que en teoria mejora la robustez frente a la cuantizacion posterior.
 
-La información pública disponible es muy limitada. No se ha publicado en la información proporcionada la arquitectura del modelo base, la longitud de contexto, la licencia, la composición del dataset de entrenamiento ni resultados de benchmarks. Esta ficha marca esos campos como "no disponible" en lugar de estimarlos, y las cifras de hardware que aparecen son cálculos derivados del número de parámetros, no mediciones.
+No obstante, la informacion disponible sobre el modelo base es muy limitada: no se detalla la arquitectura interna, la longitud de contexto, la composicion del dataset de entrenamiento ni los resultados de benchmarks. Esta ficha recoge exclusivamente los datos verificables de la model card de la cuantizacion y de los metadatos de Hugging Face, marcando explicitamente como "no disponible" todo aquello que no se puede confirmar.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el cuantizador lo describe como modelo de visión; no se detalla la arquitectura del modelo base) |
-| Parámetros totales | 32.106.631.740 (32,1 mil millones) |
-| Parámetros activos | no disponible (no se ha confirmado que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo transformer denso, inferido por el tamano y el pipeline de transformers; no confirmado en la informacion) |
+| Parametros totales | 32.106.631.740 (32,1B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | i1/imatrix: Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, small-IQ4_NL; más fichero imatrix para generar cuantizaciones propias |
-| Idiomas soportados | inglés (`en`) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-Q2_K_S, i1-IQ2_M, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1 (todas con imatrix) |
+| Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones i1); el repositorio estático del mismo autor ofrece las cuantizaciones estáticas y los ficheros mmproj |
-
-Otros datos del repositorio: 0 descargas y 0 likes en el momento de la consulta, tamaño del repositorio 27,4 GB (conjunto de cuantizaciones; la tabla de la model card solo documenta el fichero imatrix, de 0,1 GB), fecha de creación indicada en los metadatos: 24 de octubre de 2026.
+| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tamano del repo | 278,7 GB |
+| Modelo base | SF-Foundation/Koa-express-31B-qat |
+| Cuantizador | mradermacher |
+| Fecha de creacion | 2026-10-24 |
+| Ultima actualizacion | 2026-11-20 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base `SF-Foundation/Koa-express-31B-qat`. Los únicos indicios son indirectos: el sufijo "qat" del nombre suele identificar modelos sometidos a entrenamiento consciente de cuantización (quantization-aware training), y la model card del cuantizador afirma que se trata de un modelo de visión, lo que implica algún codificador visual adicional cuyos pesos principales residirían en el repositorio estático (ficheros mmproj). Ninguna de estas dos afirmaciones está confirmada por documentación del autor original en la información disponible.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Koa-express-31B-qat. Por el numero de parametros (32,1B) y la libreria declarada (transformers), se trata con alta probabilidad de un transformer denso de aproximadamente 31-32 mil millones de parametros, pero la model card de la cuantizacion no especifica el tipo de atencion, el numero de capas, las dimensiones ocultas ni si emplea alguna innovacion como atencion lineal o decodificacion especulativa.
 
-Tampoco hay datos sobre volumen de tokens de entrenamiento, composición del dataset, fases de ajuste fino (SFT, RLHF, DPO) ni innovaciones técnicas (atención lineal, decodificación especulativa, decodificación multi-token). Lo que sí está documentado es el proceso de cuantización: mradermacher genera cuantizaciones ponderadas con matriz de importancia (imatrix), calculada a partir de un corpus de calibración, y publica el fichero `.imatrix.gguf` para que terceros puedan reproducir el proceso. El autor referencia el gráfico de ikawrakow sobre perplejidad comparada entre tipos de cuantización como guía de elección. La conversión se realizó desde el formato de Hugging Face (`convert_type: hf`, `output_tensor_quantised: 1`, `quantize_version: 2`).
+Respecto al entrenamiento, el sufijo "qat" indica Quantization-Aware Training, una tecnica en la que el modelo se entrena simulando la cuantizacion para que sus pesos sean mas tolerantes a la reduccion de precision. Esto es especialmente relevante para esta distribucion, ya que las cuantizaciones GGUF de baja precision (IQ1, IQ2) deberian degradar menos que en un modelo entrenado solo en precision completa. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO. Tampoco se documenta el proceso de creacion de la importance matrix (imatrix) mas alla de que mradermacher la genero para estas cuantizaciones.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
-- Procesamiento de imágenes: la model card del cuantizador declara que el modelo base es un modelo de visión; para usar la entrada visual es necesario el fichero mmproj del repositorio estático.
-- Despliegue local compatible con el ecosistema GGUF (llama.cpp y derivados), incluida la etiqueta `endpoints_compatible`.
-- Elección entre 21 cuantizaciones distintas, desde IQ1_S hasta Q4_K_M, lo que permite ajustar el equilibrio entre tamaño y fidelidad.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: no, únicamente inglés según los metadatos.
-- Modo thinking, audio u otras capacidades especiales: no disponible (no documentado).
+- Generacion de texto conversacional en ingles, segun la etiqueta "conversational" del modelo.
+- Razonamiento y respuesta a instrucciones: capacidad esperable en un modelo de 32B, aunque no confirmada con benchmarks en la informacion disponible.
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma; no se documentan otros idiomas.
+- Capacidades especiales (vision, audio, modo thinking): no disponible en la informacion.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse mediante Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
-- Procesamiento de documentos en local: el modelo puede recibir imágenes de facturas, formularios o páginas escaneadas y devolver texto estructurado en inglés, ejecutándose íntegramente en la infraestructura propia mediante llama.cpp con el mmproj del repositorio estático, sin enviar datos a terceros.
-- Descripción automática de imágenes (alt-text) para catálogos o intranets: al ser un modelo de visión, encaja en pipelines por lotes que generan descripciones en inglés para bibliotecas de imágenes, con la ventaja de que un GGUF de 4 bits cabe en una GPU de 24 GB.
-- Asistente conversacional interno en inglés: el etiquetado `conversational` y el formato GGUF permiten montar un chatbot de uso interno con Ollama o llama.cpp sobre una estación de trabajo, adecuado para equipos que exigen que los datos no salgan de su red.
-- Despliegue en entornos air-gapped: al ser un artefacto descargable y autónomo (sin dependencia de API), sirve para organismos o empresas con redes aisladas que necesitan un modelo multimodal de ~32B.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 21 variantes i1 más el fichero imatrix, lo que permite medir experimentalmente en el propio dominio la pérdida de calidad entre IQ1_S y Q4_K_M antes de fijar una configuración de producción.
-- Revisión asistida de capturas de pantalla o interfaces: generación de resúmenes y descripciones en inglés de imágenes de UI para documentación técnica o tickets de soporte, con revisión humana posterior.
-- Prototipado rápido de producto: validar si un modelo multimodal de 32B es suficiente para una tarea antes de invertir en infraestructura, usando cuantizaciones Q2_K o Q3_K_M en hardware modesto.
+- Asistente conversacional autoalojado: el modelo puede desplegarse con llama.cpp u Ollama en una estacion de trabajo con 24 GB de VRAM usando la cuantizacion i1-Q4_K_M (19,6 GB), ofreciendo un asistente de chat privado sin dependencia de APIs externas.
+- Prototipado de aplicaciones de chat en ingles: gracias a las cuantizaciones de 7,7-10 GB (IQ1, IQ2), se puede iterar rapidamente en portatiles con GPU de 8-12 GB, aunque con calidad reducida, para validar flujos de producto antes de pasar a hardware mayor.
+- Generacion de texto en pipelines por lotes: la version i1-Q4_K_S (18,7 GB) ofrece el equilibrio optimo tamano/velocidad/calidad segun la model card, adecuada para tareas de redaccion, resumen o clasificacion en ingles ejecutadas en servidores con una sola GPU de 24 GB.
+- Evaluacion comparativa de cuantizaciones: el amplio catalogo de quants (desde IQ1_S hasta Q4_1) permite estudiar la degradacion de calidad frente al modelo base, util para investigadores que analizan el impacto de la cuantizacion en modelos entrenados con QAT.
+- Despliegue en entornos con restricciones de memoria: la cuantizacion i1-IQ2_XS (10,1 GB) permite ejecutar un modelo de 32B en GPUs consumer de 12 GB, un escenario inviable con los pesos en safetensors (que requeririan mas de 60 GB en fp16).
+- Fine-tuning ligero o adaptacion con LoRA sobre la version cuantizada: no recomendado directamente sobre GGUF, pero el modelo base en safetensors puede servir de punto de partida para adaptaciones en ingles antes de recuantizar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
-
-La única referencia cuantitativa de la model card es el gráfico externo de ikawrakow que compara la perplejidad de distintos tipos de cuantización de baja calidad (no es una evaluación del modelo, sino del efecto de la compresión). No se dispone de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra métrica del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Estimaciones calculadas a partir de 32,1 mil millones de parámetros (pesos + overhead aproximado; no incluyen la caché KV, cuyo tamaño depende de una longitud de contexto que no se ha publicado):
-
-| Cuantización | Tamaño estimado de pesos | VRAM recomendada |
-|---|---|---|
-| IQ1_S | ~6,5 GB | 8-10 GB |
-| Q2_K | ~11,6 GB | 14-16 GB |
-| Q3_K_M | ~15,7 GB | 18-20 GB |
-| IQ4_XS | ~17,0 GB | 20-22 GB |
-| Q4_K_M | ~19,5 GB | 22-24 GB |
-| Q5_K_M | ~23 GB | 26-28 GB |
-| Q6_K | ~26,5 GB | 30-32 GB |
-| Q8_0 | ~34 GB | 40 GB |
-| FP16 (no publicado en este repo) | ~64,2 GB | 70-80 GB |
-
-- GPU recomendadas: A100 80 GB o H100 para Q8_0 y FP16; A100 40 GB o L40S 48 GB para Q5_K_M y Q6_K; RTX 3090 / RTX 4090 (24 GB) para Q4_K_M e inferiores.
-- Cabe en GPU de consumo: sí, en tarjetas de 24 GB con Q4_K_M o inferiores; en tarjetas de 16 GB con Q3_K_M o Q2_K; en 8-12 GB solo con IQ1_S/IQ2 y aceptando degradación notable.
-- Configuración híbrida: para cuantizaciones de 4 bits en adelante, el offload parcial de capas a CPU con llama.cpp permite ejecutar en equipos sin GPU de gran VRAM, a costa de latencia.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui. vLLM y TGI no están pensados para GGUF de forma nativa (vLLM tiene soporte GGUF experimental y limitado); para servirlos en producción con estas herramientas habría que usar el modelo base en safetensors.
-- Latencia y throughput: no hay mediciones publicadas. Como cota teórica, un modelo de ~19,5 GB en 4 bits limitado por ancho de banda en una RTX 4090 (~1 TB/s) no puede superar aproximadamente 50 tokens/s en generación; en IQ1_S sobre la misma GPU la cota ronda los 150 tokens/s. Son límites superiores teóricos, no cifras medidas.
-- Para usar la entrada de imagen es necesario descargar además el fichero mmproj del repositorio estático `mradermacher/Koa-express-31B-qat-GGUF`.
+- VRAM estimada para inferencia (aproximada, segun tamano del fichero GGUF mas overhead de contexto y KV cache):
+  - i1-IQ1_S (7,7 GB): ~9-10 GB de VRAM.
+  - i1-IQ2_XS (10,1 GB): ~12 GB de VRAM.
+  - i1-IQ3_S (14,5 GB): ~16-17 GB de VRAM.
+  - i1-Q4_K_M (19,6 GB): ~22-23 GB de VRAM.
+  - i1-Q4_1 (20,5 GB): ~23-24 GB de VRAM.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q4_1; RTX 4080 / 4070 Ti Super (16 GB) para IQ3_S o IQ3_M; RTX 3060 12 GB o RTX 4070 para IQ2_XS; A100 40/80 GB o H100 para despliegues de produccion con contexto largo.
+- Cabe en GPU consumer: si, en el rango de 12-24 GB de VRAM segun la cuantizacion elegida.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, vLLM o TGI.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se han encontrado en la información proporcionada modelos comparables con especificaciones publicadas (contexto, benchmarks, licencia). La comparación siguiente se limita a lo que consta en los metadatos de cada repositorio:
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Koa-express-31B-qat-i1-GGUF | 32,1 mil millones | no disponible | no disponible | GGUF (i1/imatrix) | Modelo de visión según el cuantizador; solo inglés; 0 descargas |
-| SF-Foundation/Koa-express-31B-qat | 32,1 mil millones (heredado) | no disponible | no disponible | no verificado | Modelo base del que se derivan estas cuantizaciones |
-| mradermacher/Equinox-31B-i1-GGUF | 31B (según nombre) | no disponible | no disponible | GGUF (i1) | Alternativa del mismo cuantizador y tamaño similar; sin datos técnicos públicos en la búsqueda realizada |
-| mradermacher/Koa-AI-v1-Code-3B-GGUF | 3B | no disponible | no disponible | GGUF | No comparable por tamaño; aparece en la búsqueda por compartir familia de nombre |
+| Koa-express-31B-qat (esta ficha) | 32,1B | no disponible | no disponible | GGUF (i1) | Cuantizado por mradermacher con imatrix; solo ingles |
+| Modelos densos de ~30-34B de la comunidad (p. ej. variantes tipo Qwen o Yi de 32-34B) | 30-34B | variable | variable | GGUF, safetensors | Referencia habitual de la categoria; datos concretos no disponibles en esta busqueda |
+| Modelos MoE de ~30B totales con pocos parametros activos | ~30B totales | variable | variable | GGUF, safetensors | Mayor throughput por token generado; no comparable directamente por arquitectura |
+
+No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparativa cuantitativa rigurosa con alternativas concretas. La comparativa anterior es orientativa por categoria de tamano.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede asumir uso comercial. Antes de cualquier despliegue en producción hay que verificar la licencia del modelo base `SF-Foundation/Koa-express-31B-qat`.
-- Idiomas: solo inglés según los metadatos; el rendimiento en castellano es, como mínimo, incierto y probablemente degradado.
-- Modelo base sin documentación accesible en la información proporcionada: se desconoce el dataset de entrenamiento, los filtros aplicados y los sesgos presentes. No hay base para afirmar que sea seguro en dominios sensibles.
-- Riesgo de alucinación: inherente a los modelos generativos; sin benchmarks publicados no hay forma de cuantificarlo. En tareas de visión (lectura de documentos, OCR implícito) el riesgo de inventar contenido ausente en la imagen es especialmente relevante y exige verificación.
-- Degradación por cuantización: las variantes IQ1_S, IQ1_M, IQ2_XXS e IQ2_XS son agresivas; en un modelo de 32B pueden producir pérdidas de calidad notables en razonamiento y en tareas multimodales. La model card remite al gráfico de perplejidad de ikawrakow, que no sustituye a una evaluación en el dominio propio.
-- Contexto desconocido: no se debe asumir una ventana larga. Cualquier caso de uso con documentos extensos o conversaciones multi-turno largas requiere verificar primero el límite real del modelo base.
-- Visión incompleta sin mmproj: el repositorio i1 no incluye los ficheros de proyección multimodal; sin descargarlos del repositorio estático, el modelo funciona solo como texto.
-- Madurez: 0 descargas y 0 likes, publicados el 24 de octubre de 2026 según los metadatos. No hay validación comunitaria ni informes independientes de calidad.
-- Fecha de creación en el futuro respecto a los modelos de la búsqueda: conviene comprobar la vigencia del repositorio antes de integrarlo en un pipeline automatizado.
-- Si se requiere serving de alta concurrencia (vLLM, TGI), este repositorio no es la vía adecuada: habría que partir del modelo base en safetensors.
+- Idioma: el modelo esta etiquetado unicamente para ingles; su rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido. Es imprescindible consultar la licencia del modelo base (SF-Foundation/Koa-express-31B-qat) antes de cualquier despliegue en produccion.
+- Ausencia de benchmarks: no hay datos publicados de MMLU, HumanEval, GSM8K ni similares, por lo que la calidad real del modelo no se puede verificar de forma objetiva.
+- Riesgo de alucinacion: inherente a los modelos generativos de esta escala; sin evaluaciones publicadas no se puede acotar su incidencia.
+- Cuantizaciones de muy baja precision: las variantes IQ1 e IQ2 (7,7-11,6 GB) degradan notablemente la calidad; la propia model card las describe como "for the desperate" o "mostly desperate". No son adecuadas para produccion.
+- Sesgos: no documentados en la informacion disponible; se heredan los del modelo base y su dataset, desconocido.
+- Contexto: se desconoce la longitud de contexto soportada, lo que impide planificar casos de uso con documentos largos.
+- Fecha de creacion futura (2026): los metadatos indican fechas de 2026, lo que puede reflejar un error de la plataforma o una publicacion programada; conviene verificar la vigencia del repositorio.
+- Sin likes ni pipeline declarado: el repositorio tiene 0 likes y no declara pipeline, lo que sugiere una adopcion limitada y poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones i1/imatrix): https://huggingface.co/mradermacher/Koa-express-31B-qat-i1-GGUF
-- Repositorio de cuantizaciones estáticas y ficheros mmproj: https://huggingface.co/mradermacher/Koa-express-31B-qat-GGUF
+- Repositorio de la cuantizacion: https://huggingface.co/mradermacher/Koa-express-31B-qat-i1-GGUF
 - Modelo base: https://huggingface.co/SF-Foundation/Koa-express-31B-qat
-- Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#Koa-express-31B-qat-i1-GGUF
-- Fichero imatrix: https://huggingface.co/mradermacher/Koa-express-31B-qat-i1-GGUF/resolve/main/Koa-express-31B-qat.imatrix.gguf
-- Preguntas frecuentes y peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
-- Gráfico de perplejidad por tipo de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/Koa-express-31B-qat-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Koa-express-31B-qat-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- nethype GmbH (empresa del autor): https://www.nethype.de/

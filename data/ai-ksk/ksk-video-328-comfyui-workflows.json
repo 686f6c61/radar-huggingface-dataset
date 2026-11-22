@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "AI-KSK/ksk-video-328-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-328-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-328-comfyui-workflows",
+  "created_at": "2026-11-21T20:35:13.000Z",
+  "updated_at": "2026-11-21T20:35:19.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen",
+    "flux",
+    "image-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13284353,
+  "storage_human": "13 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FLUX.3 Klein Batch Outfit Change - v1.0 | Other Workflows - Civitai",
+      "url": "https://civitai.com/models/3039585/flux3-klein-batch-outfit-change",
+      "snippet": "06.11.2026 ... Creator: AI-KSK · Collection: Video 328 / six-workflow pose x outfit matrix episode. Workflow file: 05_FLUX3Klein_Costume_UI.json · Cover ..."
+    }
+  ]
+}

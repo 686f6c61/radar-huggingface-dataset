@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Skyfall-31B-v4-GGUF",
+  "slug": "mradermacher-skyfall-31b-v4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Skyfall-31B-v4-GGUF",
+  "created_at": "2025-09-03T21:56:39.000Z",
+  "updated_at": "2026-11-22T02:43:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Skyfall-31B-v4",
+    "base_model:quantized:TheDrummer/Skyfall-31B-v4",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 134,
+  "trending_score": 0,
+  "parameters": 31352980480,
+  "parameters_human": "31.35B",
+  "storage_bytes": 214061670144,
+  "storage_human": "214.1 GB",
+  "context_length": 131072,
+  "base_model": "TheDrummer/Skyfall-31B-v4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

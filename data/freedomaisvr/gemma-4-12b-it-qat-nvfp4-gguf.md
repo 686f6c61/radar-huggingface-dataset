@@ -2,87 +2,120 @@
 
 ## Resumen
 
-Gemma-4-12B-it-QAT-NVFP4-GGUF es una cuantización híbrida del modelo oficial de Google Gemma 4 12B Instruct con optimización QAT (Quantization-Aware Training). El autor, FreedomAISVR, ha preservado los 329 tensores de pesos en Q4_0 tal y como Google los entrenó, y solo ha cuantizado los 338 tensores F32 de norm/bias a NVFP4, el formato de precisión de 4 bits de NVIDIA para GPUs Blackwell. Esta estrategia evita el error de requantización que rompería las capacidades de visión del modelo QAT.
+Gemma-4-12B-it-QAT-NVFP4-GGUF es una cuantización de 4 bits en formato NVFP4 del modelo oficial Gemma 4 12B Instruct de Google, publicada por el usuario FreedomAISVR. Se reconstruye a partir de `google/gemma-4-12B-it-qat-q4_0-unquantized`, la release oficial de Google con Quantization-Aware Training (QAT), y se distribuye como archivo GGUF compatible con llama.cpp. El modelo conserva las capacidades multimodales (visión) del original mediante un proyector visual separado (`mmproj`) y mantiene una ventana de contexto de 256K tokens.
 
-El modelo mantiene el soporte multimodal completo mediante el proyector de visión QAT de Google (mmproj) de 175 MB, lo que permite procesar imágenes, audio y video de forma nativa. Con un peso total del archivo GGUF de 6,39 GB, es una opción viable para GPUs de consumo con 16 GB de VRAM. El modelo base es un encoder-free multimodal de 12B parámetros con ventana de contexto de hasta 256K tokens y soporte de más de 140 idiomas, licenciado bajo Apache 2.0.
+La relevancia de esta ficha radica en que expone una comparativa empírica entre dos formatos de 4 bits (NVFP4 y MXFP4) sobre hardware Blackwell (RTX 50-series), con mediciones de prefill y decode en llama.cpp. El modelo tiene 11.907.350.576 parámetros y ocupa 7,22 GB en disco con 4,85 bits por parámetro, lo que lo hace desplegable en GPUs de consumo con 16 GB de VRAM.
+
+La licencia es Apache 2.0, lo que facilita su uso comercial. El autor verifica funcionamiento de visión (OCR y aritmética sobre imagen) y contexto de 256K con caché KV en Q8_0, aunque advierte de una limitación crítica: el proyector visual no debe reconvertirse a F16 porque rompe la visión.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal encoder-free (Gemma 4 12B Instruct) |
-| Parametros totales | 11.907.350.576 (11,9B) |
-| Parametros activos | No aplica (arquitectura densa, no MoE) |
-| Longitud de contexto | Hasta 256K tokens |
-| Tipos de cuantizacion | Q4_0 para pesos (6,56 GB) + NVFP4 para tensores de norm/bias (15 MB) |
-| Idiomas soportados | Más de 140 idiomas (modelo base); inglés y multilingüe en la model card |
+| Arquitectura | Transformer (Gemma 4), multimodal con proyector visual; detalles de capas no disponibles |
+| Parámetros totales | 11.907.350.576 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | 262.144 tokens (256K), verificado con KV Q8_0 |
+| Tipos de cuantización | NVFP4 (4 bits, E2M1 con escala E4M3 por bloque de 16 + escala FP32 por tensor); embeddings en Q8_0; normas en F32; proyector visual en F32/BF16 |
+| Idiomas soportados | Inglés y multilingüe (según tags; lista completa no disponible) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivo principal de 6,39 GB) + mmproj GGUF de 175 MB |
+| Formato de pesos | GGUF (archivo principal + `mmproj` separado para visión) |
+| Bits por parámetro (BPW) | 4,85 (archivo completo) |
+| Tensores | 667 (328 NVFP4, 338 F32, matriz de embeddings en Q8_0) |
+| Tamaño del archivo principal | 7.219.672.864 B (7,22 GB) |
+| Tamaño del proyector visual | 175.115.616 B (175 MB) |
+| Tamaño del repo | 21,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso multimodal encoder-free de 12,9B parámetros, diseñado para ingerir texto, imágenes, audio y video de forma nativa sin necesidad de un codificador de visión separado. Google entrenó este modelo con optimización QAT, lo que significa que los pesos fueron ajustados durante el entrenamiento para ser resilientes a la cuantización Q4_0, incluyendo el proyector de visión (mmproj) de 175 MB.
+El modelo base es Gemma 4 12B Instruct de Google, entrenado con Quantization-Aware Training (QAT) en la release `qat-q4_0-unquantized`. Esta ficha no dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO; esos datos no están disponibles en la información proporcionada.
 
-La innovación de esta cuantización híbrida radica en no requantizar los pesos Q4_0 a NVFP4, ya que eso introduciría un segundo error de redondeo que el entrenamiento QAT no compensa y degradaría especialmente la calidad de visión (reconocimiento de texto en imágenes). En su lugar, el autor usa `llama-quantize` con un archivo de tipo de tensor que mantiene los Q4_0 intactos y cuantiza solo los tensores F32 de normalización y bias a NVFP4, que son de menor importancia para la calidad. Esto reduce el tamaño total de 6,65 GB a 6,39 GB con pérdida de calidad casi nula.
+La innovación técnica de esta build concreta es la cuantización NVFP4: valores de 4 bits en formato E2M1 con una escala de bloque E4M3 cada 16 valores y una escala FP32 por tensor. El autor mantiene la matriz de embeddings en Q8_0 (262.144 × 3.840) por considerar que 4 bits es un mal compromiso para esa matriz, y mantiene las normas en F32 porque cuantizarlas aporta poco y cuesta precisión. No hay trucos híbridos: todos los pesos del transformer son genuinamente NVFP4. El proyector visual se distribuye en F32/BF16 de forma deliberada, idéntico byte a byte al oficial de Google.
+
+El autor documenta que tanto NVFP4 como MXFP4 usan la misma ruta nativa de tensor cores FP4 de Blackwell (`GGML_TYPE_MXFP4 || GGML_TYPE_NVFP4`), con compilación `CMAKE_CUDA_ARCHITECTURES=native` e inclusión de `sm_120` en `ggml-cuda.dll`. La diferencia entre formatos es de tamaño de archivo y eficiencia de cómputo, no de disponibilidad de kernels.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multilingüe en más de 140 idiomas.
-- Multimodal nativo: entrada de imágenes, audio y video sin encoder externo.
-- Soporte de vision con proyector QAT (mmproj) que preserva la calidad de reconocimiento de texto en imágenes.
-- Chat conversacional con template nativo de Gemma 4, con modo thinking habilitado por defecto mediante el token `<|think|>`.
-- Compatible con el ecosistema llama.cpp: `llama-server`, `llama-cli`, etc.
-- Endpoint compatible con servidores de inferencia locales (llama-server con API REST).
-- Arquitectura densa sin MoE, lo que simplifica el despliegue en hardware estándar.
+- Generación de texto conversacional e instrucciones (modelo `-it`).
+- Razonamiento y matemáticas básicas: verificado en prueba de OCR con `12 + 37 = 49`.
+- Visión multimodal: OCR y transcripción de imágenes mediante `mmproj` separado.
+- Contexto largo: 256K tokens verificados con prompt de 257.620 tokens.
+- Soporte multilingüe (según tags; cobertura exacta no disponible).
+- Plantilla de chat propia de Gemma 4 (`<|turn>…<turn|>`, `<|think|>`) que requiere `--jinja` en llama.cpp.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Modo thinking: la plantilla incluye `<|think|>`, pero no se detalla su comportamiento.
+- Audio: no disponible.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multilingües con contexto largo de hasta 256K tokens, manteniendo la calidad en diálogos extensos y con referencias a documentos previos.
-- Asistente de visión para accesibilidad: gracias al mmproj QAT, puede describir imágenes, leer texto de capturas de pantalla o analizar gráficos en tiempo real, incluso en entornos con recursos limitados.
-- Desarrollo local de agentes: con 6,39 GB de GGUF y soporte de tool calling (no confirmado, pero el template nativo permite razonamiento multi-step), es adecuado para prototipos de agentes en máquinas de desarrollo con 16 GB de VRAM.
-- Análisis de documentos técnicos: procesa PDFs, imágenes de diagramas y tablas, y responde preguntas técnicas con razonamiento de múltiples pasos gracias al modo thinking.
-- Traducción y transcripción multilingüe: con soporte de más de 140 idiomas, puede servir como backend de traducción automática de alta calidad en aplicaciones locales.
-- Inferencia de vídeo en edge: su capacidad de ingerir video nativamente permite crear aplicaciones de análisis de vídeo en tiempo real en hardware de consumo (RTX 4090, por ejemplo).
-- Investigación académica: los pesos Q4_0 QAT preservan la calidad del modelo original, lo que permite experimentar con razonamiento y visión sin requerir un cluster de GPUs.
+- OCR y digitalización de documentos: el modelo transcribe texto de imágenes con precisión verificada (números de parte, lotes y operaciones aritméticas). Adecuado para pipelines de extracción de datos de facturas, albaranes o etiquetas.
+- Procesamiento de contexto largo en RAG: con 256K tokens y KV Q8_0 cabe en 16 GB de VRAM, lo que permite indexar corpus extensos y responder con prompt de más de 250.000 tokens en una sola pasada.
+- Bucles agénticos y contextos de código grandes: el formato NVFP4 ofrece hasta un 17% más de velocidad en prefill (3.434 t/s en pp8192), lo que favorece cargas con prompts largos y múltiples iteraciones.
+- Chat interactivo en streaming: si la latencia de decode es prioritaria, el autor recomienda MXFP4 (51,65 t/s frente a 47,74 t/s en tg128), aunque esta build NVFP4 es válida para generación interactiva con ~47 t/s en contexto corto.
+- Despliegue en estación de trabajo con GPU de consumo: con 7,22 GB de pesos y ~2,4 GiB de caché KV a 256K, cabe en una RTX 5060 Ti de 16 GB con aproximadamente 2,2 GB de margen.
+- Asistente multimodal local con privacidad: al ejecutarse en llama.cpp sobre hardware local, permite procesar imágenes y texto sin enviar datos a servicios externos.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir el compromiso entre tamaño de archivo y eficiencia de cómputo en Blackwell (NVFP4 frente a MXFP4).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no proporciona métricas de MMLU, HumanEval, GSM8K ni comparativas con otros modelos. La model card solo indica que la calidad de los pesos Q4_0 se mantiene intacta respecto al modelo QAT original de Google, y que la cuantización NVFP4 de norm/bias no afecta significativamente al rendimiento.
+El autor no publica benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Sí publica mediciones de rendimiento de inferencia en llama.cpp b1868 (`4fea119d`), RTX 5060 Ti 16 GB, CUDA 13.2.
+
+Prefill (procesamiento de prompt), tokens por segundo:
+
+| Test | MXFP4 | NVFP4 | Delta |
+|---|---|---|---|
+| pp8192, contexto corto | 2.936 | 3.434 | NVFP4 +17,0% |
+| pp4096 @ d125000 | 761,8 | 798,9 | NVFP4 +4,9% |
+| pp4096 @ d250000 | 438,7 | 462,6 | NVFP4 +5,4% |
+
+Decode (generación), tokens por segundo:
+
+| Test | MXFP4 | NVFP4 | Delta |
+|---|---|---|---|
+| tg128, contexto corto | 51,65 | 47,74 | MXFP4 +8,2% |
+| tg128 @ d125000 | 29,28 | 28,51 | MXFP4 +2,7% |
+| tg128 @ d250000 | 20,56 | 20,84 | NVFP4 +1,4% (empate) |
+
+Contexto de 256K con KV Q8_0: prompt de 257.620 tokens procesado, exit code 0, prefill 788,3 t/s y generación 19,5 t/s. Caché KV: K 1.088 MiB + V 1.088 MiB sobre 262.144 celdas (8 capas), más 850 MiB de caché SWA (5.120 celdas, 40 capas). Memoria proyectada 12.953 MiB de 15.174 MiB libres.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo GGUF pesa 6,39 GB, más el mmproj de 175 MB. Con overhead de contexto y activaciones, se recomienda al menos 8-10 GB de VRAM para inferencia en FP16.
-- GPU recomendadas: RTX 3060 12GB, RTX 4060 Ti 16GB, RTX 4070, RTX 4090, o GPUs de datacenter como A10, L4 o A100.
-- Sí cabe en GPUs de consumo: con 16 GB de VRAM es cómodo, y con 12 GB es posible con contexto reducido y cuantización de activaciones.
-- Despliegue: compatible con llama.cpp (`llama-server`), llama-cpp-python, Ollama (si se añade el archivo), y cualquier frontend que soporte GGUF.
-- Latencia: no disponible. Se estima que en una RTX 4090 con 256K de contexto se puede alcanzar entre 20-40 tokens/s con batch size 1, pero no hay datos publicados.
-- Throughput: no disponible. Depende de la GPU y del tamaño de la ventana de contexto.
+- VRAM para pesos: 7,22 GB (archivo NVFP4) o 6,41 GiB en MXFP4; añadir 175 MB para el proyector visual.
+- VRAM para contexto: ~2,4 GiB adicionales con KV Q8_0 a 256K (1.088 MiB K + 1.088 MiB V + 850 MiB SWA).
+- GPU recomendadas: RTX 5060 Ti 16 GB (verificada por el autor); cualquier GPU Blackwell (RTX 50-series) con soporte `sm_120` para aprovechar la ruta nativa FP4. En GPUs no Blackwell, la ruta FP4 nativa no está disponible.
+- Cabe en GPU de consumo: sí, en RTX 5060 Ti 16 GB con ~2,2 GB de margen a 256K. En GPUs de 8 GB no cabe con contexto largo.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli`). No se mencionan vLLM, Ollama ni TGI en la información disponible.
+- Latencia y throughput: prefill 3.434 t/s (pp8192, contexto corto) y decode 47,74 t/s (tg128, contexto corto) en RTX 5060 Ti 16 GB. A 250K de profundidad, decode cae a ~20,8 t/s.
+- Requisito obligatorio: `--jinja` en llama.cpp. Sin él, `llama-mtmd-cli` lanza una excepción C++ no capturada y termina con código `0xC0000409` (`-1073740791`) sin mensaje de error.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tamaño | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Formato / BPW | Licencia | Notas |
 |---|---|---|---|---|---|
-| Gemma-4-12B-it-QAT-NVFP4-GGUF | 6,39 GB (GGUF) | 256K | Apache 2.0 | GGUF | Cuantización híbrida Q4_0+NVFP4, multimodal |
-| Gemma-4-12B-it (original) | ~24 GB (FP16) | 256K | Apache 2.0 | safetensors | Modelo completo sin cuantizar, requiere 24 GB VRAM |
-| Qwen2.5-14B-Instruct GGUF (Q4_K_M) | ~9 GB | 128K | Apache 2.0 | GGUF | Solo texto, sin visión, contexto menor |
-| Llama-3.1-8B-Instruct GGUF (Q4_K_M) | ~5,5 GB | 128K | Llama 3.1 Community License | GGUF | Solo texto, sin visión, contexto menor |
+| Gemma-4-12B-it-QAT-NVFP4-GGUF (esta ficha) | 11,9B | 256K | GGUF NVFP4, 4,85 BPW | Apache 2.0 | +17% prefill, −8% decode frente a MXFP4 |
+| Gemma-4-12B-it-QAT MXFP4-GGUF | 11,9B | 256K | GGUF MXFP4, 4,62 BPW | Apache 2.0 | +8% decode, −17% prefill; 6,41 GiB |
+| google/gemma-4-12B-it-qat-q4_0-unquantized | 11,9B | 256K (según base) | Safetensors (base) | Apache 2.0 | Modelo base oficial de Google |
+| Otras cuantizaciones GGUF de Gemma 4 12B | 11,9B | 256K (según base) | GGUF (Q4_0, Q5, etc.) | Apache 2.0 (según autor) | No disponibles en la información proporcionada |
 
-La comparativa muestra que el modelo ofrece multimodalidad y contexto largo en un tamaño compacto, pero no hay datos de benchmarks para comparar rendimiento real. La alternativa más directa es el propio modelo original en FP16, que requiere mucho más VRAM.
+No se dispone de comparativas con modelos de otras familias (Llama, Qwen, Mistral) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantización NVFP4 de los tensores de norm/bias puede degradar ligeramente la precisión en tareas numéricas de alta precisión, aunque el autor afirma que el impacto es mínimo.
-- El modo de pensamiento está habilitado por defecto, lo que puede aumentar la latencia en tareas simples si no se desactiva con el token adecuado.
-- No hay datos publicados de benchmarks ni de rendimiento en tareas específicas; la calidad debe evaluarse en cada caso de uso.
-- La licencia Apache 2.0 permite uso comercial sin restricciones, pero se recomienda revisar los términos de Google para el modelo base.
-- El soporte de tool calling y funciones de agente no está documentado explícitamente en la model card; habrá que probarlo en la práctica.
-- La cuantización híbrida es una técnica experimental; el autor no ofrece garantías de estabilidad en todos los escenarios de producción.
-- El modelo está optimizado para GPUs Blackwell en los tensores NVFP4, pero funciona en cualquier GPU que soporte FP16; el uso de NVFP4 en hardware no-Blackwell puede degradar el rendimiento.
+- No reconvertir el `mmproj` a F16: la conversión F16 de `v.patch_embd.weight` (6912×3840) desborda la acumulación F16 en el matmul de patch-embedding. Los síntomas observados son tokens `<unused49>` repetidos o alucinación silenciosa (el modelo inventa contenido de imagen).
+- Requiere `--jinja` obligatoriamente; sin él, el fallo es silencioso (código `0xC0000409`) y difícil de diagnosticar.
+- La ruta nativa FP4 depende de hardware Blackwell (`sm_120`); en GPUs anteriores el rendimiento y el comportamiento pueden diferir.
+- La cuantización de 4 bits introduce pérdida de precisión frente al modelo base QAT sin cuantizar; el autor afirma que NVFP4 cuantiza generalmente con más precisión que MXFP4 por su bloque de 16 frente a 32, pero no aporta métricas de calidad.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Riesgo de alucinación: documentado explícitamente en el contexto de visión con `mmproj` mal convertido; no se cuantifica para texto.
+- Cobertura de idiomas: solo se declaran inglés y multilingüe; no hay lista detallada ni evaluación por idioma.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base de Google.
+- El autor no publica benchmarks de calidad (MMLU, HumanEval, GSM8K); las únicas métricas son de rendimiento de inferencia.
+- Repositorio con 566 descargas y 0 likes en el momento de la consulta; menor validación comunitaria que releases oficiales.
 
 ## Enlaces
 
-- [Hugging Face - FreedomAISVR/Gemma-4-12B-it-QAT-NVFP4-GGUF](https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-QAT-NVFP4-GGUF)
-- [Modelo base: google/gemma-4-12B-it-qat-q4_0-unquantized](https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized)
-- [Gemma 4 — Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
-- [Gemma 4 12B: The Developer Guide - Google Developers Blog](https://developers.googleblog.com/gemma-4-12b-the-developer-guide/)
-- [Gemma 4 model card | Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)
+- Hugging Face: https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-QAT-NVFP4-GGUF
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
+- llama.cpp (build b1868, commit `4fea119d`): no se proporciona URL directa en la información disponible
+- Paper, blog o demo oficial de Gemma 4: no disponibles en la información proporcionada

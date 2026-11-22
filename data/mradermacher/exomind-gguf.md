@@ -2,72 +2,89 @@
 
 ## Resumen
 
-ExoMind es un modelo de lenguaje de tamaño compacto, aproximadamente 446 millones de parámetros, desarrollado por AI4SGI. El repositorio que nos ocupa, `mradermacher/ExoMind-GGUF`, es una conversión a formato GGUF del modelo original, creada por el usuario mradermacher para facilitar su ejecución en entornos locales mediante herramientas como llama.cpp u Ollama. Esta cuantización permite reducir el peso del modelo y acelerar la inferencia en hardware modesto, lo que lo hace interesante para prototipado y aplicaciones de edge computing.
+ExoMind es un modelo de lenguaje multimodal orientado al razonamiento científico y a la investigación, desarrollado originalmente por AI4SGI y distribuido en formato GGUF por mradermacher. El modelo base, AI4SGI/ExoMind, está construido sobre la arquitectura Qwen3.5 (según las etiquetas del autor) y cuenta con aproximadamente 35.500 millones de parámetros, lo que lo sitúa en la categoría de modelos de tamaño medio-grande aptos para despliegue en hardware de gama alta pero no necesariamente de centro de datos.
 
-A pesar de su tamaño reducido, no se dispone de información pública detallada sobre su arquitectura interna, datos de entrenamiento o capacidades específicas. El modelo original tampoco ofrece una model card extensa, por lo que gran parte de las especificaciones técnicas quedan sin confirmar. Su relevancia radica en la creciente tendencia de modelos pequeños optimizados para despliegue local, aunque sin datos contrastados es difícil evaluar su rendimiento real.
+La relevancia de esta ficha radica en que la versión GGUF permite ejecutar el modelo con llama.cpp y herramientas compatibles en estaciones de trabajo con GPU consumer de gran capacidad de VRAM, algo que el formato original en safetensors no facilita. El modelo declara capacidades de razonamiento científico, uso de herramientas (tool-use), comportamiento agéntico y comprensión vision-lenguaje, lo que lo convierte en candidato para pipelines de investigación automatizada y asistentes técnicos.
+
+Esta ficha documenta la variante cuantizada publicada por mradermacher; los detalles de entrenamiento, composición del dataset y resultados de benchmarks del modelo original no están disponibles en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 446.571.248 |
-| Parametros activos | no disponible (no se confirma si es MoE) |
+| Arquitectura | Transformer basado en Qwen3.5 (según etiquetas del autor); multimodal vision-lenguaje |
+| Parametros totales | 35.505.251.456 (~35,5 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el repo original) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; proyector multimodal mmproj en Q8_0 y f16 |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (esta variante); safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información oficial sobre la arquitectura de ExoMind. Por el número de parámetros (446M) es plausible que se trate de un transformer denso, pero no hay confirmación. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. La ausencia de una model card detallada impide cualquier análisis técnico adicional. La única innovación destacable es la disponibilidad de múltiples cuantizaciones GGUF, que permiten ajustar el equilibrio entre tamaño y calidad de la inferencia.
+La información disponible indica que el modelo se basa en la arquitectura Qwen3.5, un transformer decoder-only, con capacidades multimodales de visión y lenguaje (etiquetas `multimodal`, `vision-language`, `qwen3.5`). El repositorio incluye un proyector multimodal (`mmproj`) que acompaña los pesos principales para habilitar la entrada de imágenes en llama.cpp. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron fases de RLHF, DPO u otras técnicas de alineación.
+
+El autor declara etiquetas relacionadas con razonamiento científico (`scientific-reasoning`, `scientific-research`), uso de herramientas (`tool-use`) y comportamiento agéntico (`agentic`), lo que sugiere que el modelo fue ajustado para tareas de investigación y ejecución multi-paso. Sin embargo, no se especifican innovaciones técnicas concretas como decodificación especulativa, atención lineal o mecanismos híbridos SSM. Esta variante concreta es una cuantización estática (no imatrix) del modelo original; el autor publica además cuantizaciones ponderadas/imatrix en el repositorio `mradermacher/ExoMind-i1-GGUF`.
 
 ## Capacidades
 
-- No se dispone de información verificada sobre las capacidades del modelo.
-- Al ser un modelo de 446M de parámetros, es razonable esperar que pueda realizar tareas básicas de generación de texto, pero sin datos oficiales no se puede confirmar.
-- No se menciona soporte para tool calling, agentes, razonamiento multi-paso, visión o audio.
-- No se especifican capacidades multilingües.
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento científico y tareas de investigación (según etiquetas del autor).
+- Comprensión vision-lenguaje: procesamiento de imágenes junto con texto mediante el proyector multimodal incluido.
+- Uso de herramientas y function calling (etiqueta `tool-use`).
+- Comportamiento agéntico y razonamiento multi-paso (etiqueta `agentic`).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- No se dispone de información sobre modo de pensamiento explícito, audio u otras modalidades.
 
 ## Casos de uso
 
-Dado que no hay información contrastada sobre el modelo, los casos de uso son especulativos y deben tomarse con cautela:
-
-- **Prototipado rápido en entornos locales**: gracias a su tamaño reducido y a las cuantizaciones GGUF, podría utilizarse para experimentar con generación de texto en máquinas sin GPU dedicada, aunque no hay garantía de calidad.
-- **Educación y aprendizaje**: como modelo pequeño, puede servir para enseñar conceptos de inferencia local y cuantización, sin necesidad de hardware caro.
-- **Pruebas de pipelines de despliegue**: su formato GGUF permite integrarlo en herramientas como llama.cpp u Ollama para validar flujos de trabajo antes de migrar a modelos más grandes.
-- **Aplicaciones de baja latencia**: si el rendimiento es aceptable, podría emplearse en entornos con restricciones de recursos, aunque no hay benchmarks que lo respalden.
-- **Investigación de eficiencia**: al ser un modelo compacto, puede ser útil para estudiar técnicas de compresión y su impacto en la calidad, siempre que se tenga acceso al modelo original.
-- **Bases para fine-tuning**: el checkpoint safetensors original podría utilizarse para ajuste fino en tareas específicas, aunque se desconoce la licencia y los datos de entrenamiento.
+- Asistente de investigación científica: el modelo puede resumir artículos, extraer hipótesis y generar borradores de metodología en inglés o chino, aprovechando su orientación declarada a `scientific-reasoning`.
+- Análisis de figuras y tablas de papers: gracias al proyector multimodal, puede interpretar gráficos incluidos en documentos científicos y describirlos o extraer conclusiones en texto.
+- Agente de automatización de laboratorio o pipeline de datos: con soporte de tool-use, puede invocar APIs, ejecutar scripts y encadenar pasos para tareas de investigación reproducibles.
+- Generación de código para análisis científico: útil para escribir scripts de procesamiento de datos, visualización o simulación, integrándose en notebooks y entornos de desarrollo.
+- Asistencia técnica multilingüe en inglés y chino: atención a desarrolladores en ambos idiomas con contexto conversacional.
+- Despliegue local en estaciones de trabajo: al estar en GGUF, permite ejecución offline en hardware consumer de alta gama para prototipos y pruebas de concepto sin depender de servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras pruebas estándar, por lo que no es posible comparar su rendimiento con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: para el modelo en f16 (sin cuantizar) se necesitarían aproximadamente 893 MB (446M × 2 bytes), pero en cuantizaciones como Q4_K_S el peso se reduce a unos 250-300 MB. Estas cifras son cálculos teóricos, no mediciones oficiales.
-- **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM podría ejecutar las cuantizaciones más pequeñas. Una NVIDIA GTX 1650 o superior sería suficiente para pruebas.
-- **CPU**: el formato GGUF permite ejecución en CPU pura con llama.cpp, aunque la velocidad dependerá del número de núcleos y de la memoria RAM disponible.
-- **Opciones de despliegue**: llama.cpp, Ollama, LM Studio, o servidores compatibles con GGUF como llama-cpp-python.
-- **Latencia y throughput**: no disponibles.
+- VRAM estimada para inferencia según cuantización: Q2_K ~13,3 GB; Q3_K_S ~15,6 GB; IQ4_XS ~19,5 GB; Q4_K_M ~21,8 GB; Q5_K_M ~25,4 GB; Q6_K ~29,3 GB; Q8_0 ~37,9 GB. Añadir ~0,7-1,0 GB para el proyector multimodal si se usa visión.
+- GPU recomendadas: para Q4_K_M o superiores, GPU con 24 GB de VRAM (RTX 3090, RTX 4090) son suficientes para Q4_K_M con contexto moderado; Q6_K y Q8_0 requieren 32-48 GB (A100 40 GB, RTX A6000, o descarga parcial a RAM).
+- Cabe en GPU consumer: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_M o inferiores; Q5 y superiores pueden requerir offloading parcial a RAM del sistema.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI si se dispone de VRAM suficiente.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. Modelos de tamaño similar como GPT-2 (124M-774M) o algunos modelos de la familia Phi (1.3B) podrían ser alternativas, pero sin datos de rendimiento de ExoMind no es posible realizar una comparación objetiva.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| ExoMind (esta ficha) | ~35,5 mil millones | no disponible | apache-2.0 | GGUF, safetensors | Multimodal, orientado a ciencia y agentes |
+| Qwen3 (familia base) | varía (no disponible para esta versión) | no disponible | apache-2.0 (según familia) | safetensors, GGUF | Modelo base sobre el que se apoya la arquitectura declarada |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
+
+No se dispone de información suficiente para establecer comparaciones cuantitativas fiables con modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- **Falta de documentación**: no hay model card oficial, por lo que se desconocen sesgos, limitaciones de contexto o idioma, y detalles de entrenamiento.
-- **Riesgo de alucinación**: al ser un modelo pequeño y sin información sobre su entrenamiento, es probable que presente alucinaciones frecuentes y falta de coherencia en tareas complejas.
-- **Licencia desconocida**: no se especifica la licencia del modelo original ni de la conversión, lo que impide su uso comercial sin verificación legal previa.
-- **Sin garantías de producción**: al no contar con benchmarks ni pruebas de robustez, no se recomienda su uso en entornos críticos.
-- **Origen de los datos**: el repositorio de cuantización no indica si el modelo original fue sometido a algún proceso de alineación o filtrado de contenido.
+- Idiomas: solo se declaran inglés y chino; el rendimiento en castellano no está documentado.
+- Longitud de contexto no especificada: no se puede garantizar el comportamiento en conversaciones o documentos largos.
+- Riesgo de alucinación: inherente a los modelos generativos; en dominios científicos el riesgo es especialmente crítico y requiere verificación humana.
+- Sesgos: no se dispone de información sobre sesgos conocidos ni sobre el dataset de entrenamiento.
+- Licencia apache-2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base AI4SGI/ExoMind por si difieren.
+- Esta variante es una cuantización de terceros (mradermacher); la calidad puede diferir del modelo original, especialmente en Q2_K y Q3.
+- El proyector multimodal debe descargarse por separado para usar visión.
+- No hay resultados de benchmarks publicados que permitan validar las capacidades declaradas.
 
 ## Enlaces
 
-- Repositorio de cuantización GGUF: [mradermacher/ExoMind-GGUF](https://huggingface.co/mradermacher/ExoMind-GGUF)
-- Modelo original (safetensors): [AI4SGI/ExoMind](https://huggingface.co/AI4SGI/ExoMind)
-
-No se han encontrado papers, blogs o demos adicionales relacionados con este modelo.
+- Repositorio GGUF: https://huggingface.co/mradermacher/ExoMind-GGUF
+- Modelo base: https://huggingface.co/AI4SGI/ExoMind
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/ExoMind-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#ExoMind-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

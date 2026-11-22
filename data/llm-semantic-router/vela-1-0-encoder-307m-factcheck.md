@@ -2,112 +2,96 @@
 
 ## Resumen
 
-Vela-1.0-Encoder-307M-FactCheck es un clasificador de texto de dos clases desarrollado por el colectivo `llm-semantic-router`. Su tarea no es generar respuestas ni verificar hechos: predice si una peticion entrante requiere verificacion factica externa (`FACT_CHECK_NEEDED`) o si puede resolverse sin ella (`NO_FACT_CHECK_NEEDED`), por ejemplo porque la informacion esta contenida en el propio contexto, porque basta con transformar un texto, porque el calculo es autocontenido o porque se trata de ficcion.
+Vela-1.0-Encoder-307M-FactCheck es un modelo encoder de clasificación de texto desarrollado por el proyecto vLLM Semantic Router, derivado por fine-tuning del modelo base vllm-sr/Vela-1.0-Encoder-307M. Su función es identificar peticiones que requieren conocimiento factual externo o recuperación de información (retrieval), es decir, actúa como clasificador de enrutamiento que decide cuándo una consulta necesita ser enviada a un sistema de búsqueda o base de conocimiento. No determina si una afirmación es verdadera, sino si la petición exige acceso a hechos externos.
 
-Tecnicamente es un encoder denso `ModernBertForSequenceClassification` de 307.531.778 parametros totales (306.939.648 en el encoder compartido mas la cabeza de clasificacion), 22 capas, ancho 768 y 12 cabezas de atencion, con pooling de media enmascarada y una capacidad de contexto de 32.768 tokens, tokens especiales incluidos. Se publica en FP32 con licencia MIT y soporte declarado para ingles, chino, espanol, frances, aleman y japones.
+El modelo emplea una arquitectura ModernBERT con 307.531.778 parámetros totales y una capacidad de entrada de 32.768 tokens, incluyendo tokens especiales. Está pensado para integrarse en pipelines de enrutamiento semántico dentro de despliegues de LLM, donde la latencia y el coste de una llamada a un modelo generativo hacen inviable consultar retrieval en cada turno.
 
-Su relevancia actual es de infraestructura: actua como enrutador previo en pipelines RAG y sistemas de agentes, donde decide si merece la pena pagar el coste de una recuperacion externa o de una herramienta de verificacion. Sobre un conjunto congelado de 102 peticiones naturales, la precision en FP32 paso de 63/102 a 79/102 y el macro F1 de 0,579 a 0,772 respecto al clasificador de referencia.
+Su relevancia actual radica en que mejora sustancialmente al clasificador original mmBERT32K FactCheck en la tarea de detección de peticiones que necesitan verificación factual, con un Macro F1 de 88,08 frente a 50,26 y una accuracy de 88,17 frente a 54,30 sobre un conjunto de desarrollo de 186 entradas revisadas. La licencia Apache 2.0 y la disponibilidad en safetensors y ONNX facilitan su adopción en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `ModernBertForSequenceClassification` (encoder Transformer denso, 22 capas, ancho 768, 12 cabezas de atencion) |
+| Arquitectura | ModernBERT (encoder transformer) |
 | Parametros totales | 307.531.778 |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 32.768 tokens, tokens especiales incluidos |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada; los pesos publicados son FP32 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens de entrada, incluidos tokens especiales |
+| Tipos de cuantizacion | no disponible (la evaluacion publicada usa FP32) |
 | Idiomas soportados | en, zh, es, fr, de, ja |
-| Licencia | MIT |
-| Formato de pesos | safetensors (FP32) y ONNX |
-| Pooling | masked mean pooling |
-| Etiquetas | `0 = NO_FACT_CHECK_NEEDED`, `1 = FACT_CHECK_NEEDED` |
-| Parametros del encoder compartido | 306.939.648 |
-| SHA-256 de pesos | `809d11b1b44025d5c985859ca2f10c720c1afef88024d6d21ecb0aa25cbe49a3` |
-| Modelo base | `llm-semantic-router/Vela-1.0-Encoder-307M`, revision `5fe5bbb1a88b7fdcc93bb5b9d546c574564eb114` |
-| Pipeline | text-classification |
-| Tamano del repositorio | 3,8 GB |
-| Compatibilidad | transformers, text-embeddings-inference, endpoints compatible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder bidireccional ModernBERT de 22 capas destinado exclusivamente a clasificacion, con una cabeza de dos logits y pooling de media enmascarada. No es un router generativo ni un modelo MoE: la etiqueta "307M" designa el tamano del encoder compartido, no una capacidad de generacion. El mapeo de etiquetas de `fact_check_mapping.json` (compatible con el router) y el `config.json` de Hugging Face usan los mismos indices, y ambos se hashearon junto con los pesos antes de la evaluacion final.
+El modelo es un encoder basado en ModernBERT, una evolución de la familia BERT que incorpora mejoras de eficiencia computacional y soporte para contextos largos. Cuenta con 307,5 millones de parámetros y una ventana de entrada de 32.768 tokens, lo que permite clasificar peticiones con historiales de conversación o documentos adjuntos extensos sin truncamiento. El pipeline declarado es text-classification y el modelo está etiquetado como fine-tune del checkpoint vllm-sr/Vela-1.0-Encoder-307M, orientado específicamente a la tarea de enrutamiento semántico.
 
-La receta de entrenamiento arranco con una cabeza de tarea nueva y un adaptador LoRA de rango 32 sobre `mmbert-32k-yarn` (revision `72a23a6640489471eb4ff7ad3ec5bc80af8a27de`), seguida de entrenamiento con peticiones naturales y de contexto largo. El adaptador y la cabeza seleccionados se transfirieron despues al Vela Base publicado; la transferencia directa no supero la compuerta de retencion a 32K en desarrollo, por lo que se aplico una adaptacion acotada sobre las filas de entrenamiento existentes. El adaptador final se escogio en el paso 100 de esa adaptacion de 200 pasos y se fusiono en el Vela Base real. Los pesos originales de la tarea FactCheck se usaron unicamente como linea base, nunca como inicializacion. Los pesos base tienen SHA-256 `ccc274d12ef6f94f54c0c23f0388527b0a925268a1332b3a6e5c8e56868efb00`.
+No se dispone de información detallada sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO. La evaluación publicada se realizó sobre 186 peticiones naturales revisadas con longitudes entre 7 y 2.868 tokens, empleando FP32, entradas completas y la etiqueta de mayor puntuación. El autor advierte explícitamente que este conjunto de desarrollo sirvió para seleccionar Vela y no constituye un test independiente ni una medición de la precisión real a 32K tokens.
 
 ## Capacidades
 
-- Clasificacion binaria de peticiones en `FACT_CHECK_NEEDED` / `NO_FACT_CHECK_NEEDED` a partir de un unico forward.
-- Distincion entre conocimiento externo y contenido autocontenido: extraer informacion ya presente en un pasaje, reformular, calcular un resultado cerrado o escribir ficcion se etiquetan como no necesitadas de verificacion.
-- Procesamiento de contexto largo: hasta 32.768 tokens, lo que permite clasificar peticiones con documentos adjuntos extensos.
-- Soporte multilingue declarado en seis idiomas: en, zh, es, fr, de, ja.
-- Integracion como enrutador en pipelines de agentes y RAG mediante el mapeo `fact_check_mapping.json` y umbral configurable.
-- Exportacion ONNX para inferencia optimizada y tag de compatibilidad con text-embeddings-inference.
-- No realiza tool calling, generacion de texto, razonamiento multi-paso, vision, audio ni modo de pensamiento: es un clasificador discriminativo, no un modelo generativo.
+- Clasificación binaria de peticiones que requieren conocimiento factual externo o recuperación, frente a las que no lo requieren.
+- Procesamiento de entradas largas de hasta 32.768 tokens, útil para conversaciones multi-turno o consultas con contexto documental.
+- Enrutamiento semántico dentro de pipelines de LLM: decide si una consulta debe derivarse a un sistema de retrieval.
+- Soporte multilingüe en inglés, chino, español, francés, alemán y japonés.
+- Compatibilidad con text-embeddings-inference y endpoints compatibles según los tags del repositorio.
+- Exportación a ONNX además de safetensors, lo que facilita despliegues en entornos sin PyTorch.
+- No genera texto ni razona de forma generativa: es un clasificador, no un modelo instruct.
 
 ## Casos de uso
 
-- Enrutamiento en pipelines RAG: colocado antes del recuperador, decide si la consulta del usuario requiere buscar en una base documental o si basta con el contexto ya presente en la conversacion, evitando recuperaciones innecesarias y su coste de latencia.
-- Orquestacion de agentes con herramientas: el clasificador actua como primera etapa que decide si hay que invocar un buscador web, una API de datos o una herramienta de verificacion, reduciendo llamadas a herramientas en peticiones de reformulacion, resumen o calculo cerrado.
-- Asistentes de atencion al cliente: en conversaciones multi-turno con manuales o contratos largos adjuntos, distingue las preguntas respondibles con el material aportado de aquellas que exigen consultar una fuente externa.
-- Control de coste en produccion: al filtrar peticiones que no necesitan verificacion se reduce el numero de llamadas a APIs de busqueda o a modelos mayores de comprobacion, con un umbral ajustable para equilibrar falsos positivos y falsos negativos.
-- Moderacion y cumplimiento normativo: marcado previo de consultas que exigen contraste factual antes de emitir una respuesta en dominios regulados (sanidad, finanzas, legal), donde conviene forzar una etapa de verificacion.
-- Investigacion sobre enrutamiento semantico: sirve como componente reproducible para estudiar el equilibrio entre recall de verificacion y falsos positivos en arquitecturas de router, dado que se publican pesos, hashes y particiones congeladas.
-- Preprocesado en buscadores internos y sistemas de soporte documental: clasifica consultas largas (hasta 32K tokens) para decidir si se responde desde el indice local o se deriva a una busqueda externa.
+- Enrutamiento de consultas en asistentes conversacionales: el clasificador evalúa cada turno y decide si la petición debe enviarse a un motor de búsqueda o base de conocimiento antes de invocar al LLM generativo, reduciendo llamadas innecesarias a retrieval.
+- Verificación de hechos en pipelines RAG: antes de recuperar documentos, el modelo filtra las consultas que realmente necesitan evidencia externa, evitando recuperaciones superfluas en preguntas de razonamiento puro o creativas.
+- Moderación de contenido informativo: detección de peticiones que solicitan datos verificables para derivarlas a flujos con fuentes citadas y trazabilidad.
+- Atención al cliente automatizada: clasificación de consultas de usuarios que requieren datos actualizados (precios, disponibilidad, políticas) frente a consultas procedimentales que se resuelven con el propio modelo generativo.
+- Optimización de costes en despliegues de LLM: al ser un encoder de 307M parámetros, su inferencia es órdenes de magnitud más barata que una llamada a un modelo generativo, por lo que actúa como primera etapa de filtrado en arquitecturas de router.
+- Investigación en evaluación de sistemas de recuperación: uso como componente de referencia para medir la tasa de consultas que justifican retrieval en corpus multilingües.
+- Procesamiento de documentos largos: con 32.768 tokens de contexto, puede clasificar consultas que incluyen contratos, artículos o hilos de conversación completos sin truncar.
 
 ## Benchmarks y rendimiento
 
-Resultados finales congelados, pesos FP32 y computo forward en FP32, frente a la linea base `mmbert32k-factcheck-classifier-merged` (revision `290d3182b2c87e489bd4f63c889e803a27599681`). Ambas partes usan el mismo texto, presupuestos de tokenizador, ejecucion estandar de Hugging Face y argmax sobre dos logits (frontera 0,5).
+| Evaluacion de desarrollo | mmBERT original | Vela |
+|---|---:|---:|
+| Macro F1 · 186 entradas | 50,26 | 88,08 |
+| Accuracy · 186 entradas | 54,30 | 88,17 |
 
-| Subconjunto final | Peticiones | Aciertos base | Aciertos Vela | Macro F1 base | Macro F1 Vela |
-|---|---:|---:|---:|---:|---:|
-| Peticiones naturales, todas las fuentes | 102 | 63 | 79 | 0,579 | 0,772 |
-| Subconjunto revisado de Aya original | 18 | 5 | 15 | 0,257 | 0,734 |
-| Subconjunto revisado de Aya adicional | 29 | 19 | 22 | 0,651 | 0,709 |
-| Subconjunto revisado de Dolly, conservando contexto aportado | 55 | 39 | 42 | 0,633 | 0,752 |
-| Supervision debil de preguntas facticas / transformacion redactada | 720 | 448 | 719 | 0,572 | 0,999 |
-| Estres de contexto largo redactado | 48 | 24 | 35 | 0,333 | 0,708 |
-
-En el punto de operacion fijo por argmax, entre 50 peticiones naturales que necesitaban verificacion el recall subio de 16/50 a 45/50; entre 52 peticiones que no la necesitaban, los falsos positivos pasaron de 5/52 a 18/52. Los 720 ejemplos debiles o redactados son deliberadamente distintos de las peticiones naturales: la puntuacion mixta de 870 filas esta dominada por esos ejemplos mas faciles y no debe presentarse como precision sobre peticiones naturales. No se han publicado resultados de benchmarks generalistas (MMLU, HumanEval, GSM8K) en la informacion disponible, y no serian aplicables a un clasificador de este tipo.
+Los datos corresponden a un conjunto de desarrollo de 186 peticiones naturales revisadas, con longitudes de 7 a 2.868 tokens, evaluadas en FP32 con entradas completas. El autor indica que este conjunto informó la selección de Vela y no es un test independiente ni mide la precisión a 32K tokens. No se han publicado resultados adicionales de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso en FP32: aproximadamente 1,23 GB (307,5 M de parametros a 4 bytes por parametro). El repositorio ocupa 3,8 GB por incluir tambien exportacion ONNX y otros artefactos.
-- Huella estimada en FP16/BF16: en torno a 0,62 GB; en INT8, unos 0,31 GB; en INT4, unos 0,15 GB (estimaciones por recuento de parametros; no se publican ficheros cuantizados).
-- Inferencia en CPU: viable para clasificacion de una sola peticion, especialmente con la ruta ONNX. El cuello de botella real es la longitud de secuencia: con 32K tokens la memoria de activaciones y el coste de atencion dominan frente al peso del modelo.
-- GPU recomendadas: cualquier GPU con 4-8 GB de VRAM es suficiente para FP32 en lotes moderados; RTX 4090, A100 o H100 permiten lotes grandes y alto throughput. Para secuencias de 32K conviene reservar VRAM adicional para activaciones.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de 8 GB o mas (RTX 3060/4060 en adelante), y tambien en GPUs integradas o Apple Silicon con memoria unificada.
-- Opciones de despliegue: Hugging Face Transformers (ruta de referencia de los resultados publicados), ONNX Runtime, text-embeddings-inference, servidores de endpoints compatibles con Hugging Face y cualquier stack de clasificacion que cargue safetensors. No se publican pesos GGUF, por lo que llama.cpp y Ollama no estan soportados sin conversion previa.
-- Latencia y throughput: no disponibles en la informacion proporcionada. Cualquier cifra depende del hardware, la longitud de secuencia y el backend.
+- VRAM estimada para inferencia en FP32: aproximadamente 1,2 GB solo para pesos (307,5M parámetros × 4 bytes), más memoria para activaciones y buffers.
+- VRAM estimada en FP16/BF16: alrededor de 0,6 GB para pesos; en INT8, unos 0,3 GB.
+- Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en CPU para cargas moderadas.
+- GPU recomendadas para alto throughput: A100, H100 o L40S, aunque el modelo es lo suficientemente pequeño para que una sola GPU consumer gestione múltiples flujos concurrentes.
+- Opciones de despliegue: transformers con pipeline de text-classification, text-embeddings-inference, ONNX Runtime y servidores compatibles con endpoints según los tags del repositorio.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; al tratarse de un encoder de 307M, la latencia por petición es del orden de milisegundos en GPU moderna, pero no se han publicado cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Macro F1 (peticiones naturales, 102) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-FactCheck | 307.531.778 | 32.768 tokens | 0,772 | MIT | safetensors FP32 y ONNX |
-| mmbert32k-factcheck-classifier-merged (linea base) | no disponible | no disponible (el nombre sugiere 32K) | 0,579 | no disponible | pesos publicados en Hugging Face |
-| Vela-1.0-Encoder-307M (base) | 307.531.778 | no disponible | no aplica (no es clasificador) | no disponible | Hugging Face, revision `5fe5bbb1...` |
-| mmbert-32k-yarn (punto de partida del entrenamiento) | no disponible | no disponible (el nombre sugiere 32K) | no aplica | no disponible | Hugging Face, revision `72a23a66...` |
+| Vela-1.0-Encoder-307M-FactCheck | 307,5M | 32.768 | Clasificación de necesidad de fact-checking | Apache 2.0 | Hugging Face (safetensors, ONNX) |
+| mmBERT32K FactCheck (original) | no disponible | 32K (según nombre) | Clasificación de necesidad de fact-checking | no disponible | Hugging Face |
+| Vela-1.0-Encoder-307M (base) | 307,5M | 32.768 | Encoder base para router | Apache 2.0 | Hugging Face |
 
-No se proporcionan datos de comparativas con clasificadores externos de la misma categoria (por ejemplo otros enrutadores de verificacion factica o clasificadores ModernBERT de terceros), por lo que esa comparacion figura como no disponible.
+La comparativa se limita al modelo original que Vela mejora y a su checkpoint base, ya que no se dispone de información sobre otros clasificadores de enrutamiento comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No verifica hechos: no recupera evidencia, no juzga si una respuesta generada es verdadera ni comprueba afirmaciones. Solo decide si la peticion requiere verificacion externa.
-- Falsos positivos elevados: en el punto de operacion argmax, los falsos positivos sobre peticiones naturales que no necesitaban verificacion pasaron de 5/52 a 18/52, lo que implica latencia y coste innecesarios.
-- Umbrales no equivalentes: el argmax corresponde a una frontera de 0,5; el valor canonico por defecto del router es 0,6, el ejemplo de configuracion incluido usa 0,65 y 0,7 es solo el valor de reserva del clasificador ante un umbral no positivo. Son puntos de operacion distintos y los resultados no son intercambiables.
-- Calibracion: las puntuaciones softmax no son probabilidades calibradas. Cualquier umbral de despliegue requiere su propia seleccion y evaluacion sobre datos de desarrollo.
-- Regresion en aleman: en peticiones naturales alemanas los aciertos bajaron de 4/6 a 2/6. El entrenamiento multilingue y los ejemplos redactados en chino y japones no garantizan la misma calidad sobre peticiones naturales en los seis idiomas.
-- Tamano de muestra reducido e incertidumbre: los conjuntos naturales son pequenos, el intervalo bootstrap del grupo de origen cruza el cero para la mejora de precision en argmax y las etiquetas fueran revisadas por un asistente, no por anotadores humanos expertos.
-- Contaminacion potencial: los grupos de contribuyentes y fuentes se mantienen dentro de una misma particion, pero no puede descartarse exposicion previa del modelo base o de modelos anteriores. La receta historica de la linea base uso algunas instrucciones de Dolly sin un manifiesto completo a nivel de fila.
-- Los 720 ejemplos debiles o redactados no deben mezclarse con las peticiones naturales al reportar metricas: la puntuacion conjunta de 870 filas esta sesgada al alza por ejemplos mas faciles.
-- Licencia MIT, que permite uso comercial y modificacion; conviene verificar la licencia de los modelos base (`Vela-1.0-Encoder-307M` y `mmbert-32k-yarn`), no declarada en la informacion disponible.
+- El modelo identifica peticiones que necesitan conocimiento externo, pero no verifica la veracidad de afirmaciones; no debe usarse como sistema de fact-checking por sí solo.
+- La evaluación publicada se basa en 186 entradas de desarrollo que informaron la selección del modelo; no es un test independiente y puede sobreestimar el rendimiento real.
+- No se ha medido la precisión a la longitud máxima de 32.768 tokens; el rendimiento en contextos muy largos es desconocido.
+- Riesgo de sesgo derivado de los datos de entrenamiento, cuya composición no se ha publicado.
+- El soporte multilingüe declarado (en, zh, es, fr, de, ja) no está respaldado por métricas por idioma en la información disponible.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, el autor no documenta restricciones adicionales ni garantías de idoneidad para producción.
+- Al ser un clasificador binario, los errores de clasificación se propagan directamente al pipeline de enrutamiento: un falso negativo evita un retrieval necesario y un falso positivo añade coste y latencia innecesarios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-FactCheck
-- Modelo base Vela-1.0-Encoder-307M: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
-- Revision concreta del modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M/tree/5fe5bbb1a88b7fdcc93bb5b9d546c574564eb114
-- Punto de partida del entrenamiento (mmbert-32k-yarn): https://huggingface.co/llm-semantic-router/mmbert-32k-yarn/tree/72a23a6640489471eb4ff7ad3ec5bc80af8a27de
-- Linea base de comparacion (mmbert32k-factcheck-classifier-merged): https://huggingface.co/llm-semantic-router/mmbert32k-factcheck-classifier-merged/tree/290d3182b2c87e489bd4f63c889e803a27599681
-- Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados obtenidos son articulos genericos sobre modelos de lenguaje sin relacion con esta ficha.
+- Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M
+- Modelo original comparado: https://huggingface.co/vllm-sr/mmbert32k-factcheck-classifier-merged
+- Colección Vela 1.0 Router Models: https://huggingface.co/collections/vllm-sr/vela-10-router-models-6aa555ba70cc6997d6d67798
+- Documentación: https://vllm-sr.ai/
+- Blog: https://vllm-sr.ai/blog/
+- Repositorio GitHub: https://github.com/vllm-project/semantic-router
+- Slack: https://vllm-dev.slack.com/archives/C09CTGF8KCN

@@ -88,7 +88,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 574,
+  "downloads_30d": 578,
   "trending_score": 0,
   "parameters": 567756802,
   "parameters_human": "567.8M",
@@ -109,31 +109,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Horizons Le parti - Édouard Philippe",
-      "url": "https://horizonsleparti.fr/",
-      "snippet": "Participez à construire une nouvelle offre politique avec Edouard Philippe ! Vous partagez nos valeurs ? Rejoignez le parti Horizons !"
-    },
-    {
-      "title": "Concessionnaire BMW neuves et d'occasion Paris et Île de France - Horizon",
-      "url": "https://www.horizon.fr/",
-      "snippet": "Horizon est un réseau de concessions BMW à Paris et en Île de France : découvrez nos BMW neuves et d'occasion en ligne."
-    },
-    {
-      "title": "Écouter Horizon en direct et gratuit",
-      "url": "https://www.radio-en-ligne.fr/horizon",
-      "snippet": "Écoutez Horizon en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr."
-    },
-    {
-      "title": "Onisep",
-      "url": "https://www.onisep.fr/horizons21",
-      "snippet": "Cet horizon rassemble les formations axées sur l'étude de l'humain et de son évolution au sein d'une société, selon plusieurs angles …"
-    },
-    {
-      "title": "Horizon — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Horizon",
-      "snippet": "L' horizon des évènements est la limite de la région de l' espace-temps influençable depuis un point donné ; En particulier, l' horizon …"
-    }
-  ]
+  "sources": []
 }

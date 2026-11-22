@@ -2,103 +2,111 @@
 
 ## Resumen
 
-OpenAmer-Max-Pro es un ajuste fino mediante QLoRA del modelo Mistral-Small-24B-Instruct-2501, publicado por el usuario openamer-max como la quinta y mayor etapa de la familia OpenAmer-Max. El modelo se distribuye en formato GGUF cuantizado a Q4_K_M (13,35 GB) y está pensado para inferencia local en equipos de escritorio, sin cuenta ni dependencia de la nube. Cubre principalmente alemán y bosnio/croata/serbio, con inglés funcional pero no prioritario.
+OpenAmer-Pro es un ajuste fino del modelo Mistral-Small-24B-Instruct-2501 de Mistral AI, desarrollado por el colectivo openamer-max como quinta escala de su familia de modelos orientados a ejecución local. El modelo resuelve un problema concreto: ofrecer una variante de 24B parámetros en formato GGUF cuantizado Q4_K_M (13,35 GB) que quepa en equipos con 16 GB de RAM libre, sin necesidad de cuenta ni servicio en la nube. Se distribuye principalmente a través de Ollama y llama.cpp.
 
-El interés técnico del modelo no reside en su rendimiento bruto, sino en la honestidad de su documentación: el autor declara explícitamente que esta etapa de 24B obtiene resultados inferiores a la etapa Desktop de 14,7B en su propio banco de pruebas (43/45 frente a 44/45), y publica el detalle completo de los dos fallos detectados, así como seis errores de medición corregidos durante la evaluación. Es, por tanto, un caso útil para estudiar cómo se documenta un ajuste fino pequeño con criterios de evaluación reproducibles.
+La particularidad más destacable del modelo es que su propio autor documenta de forma explícita que **no supera a la escala inferior de la familia** (Desktop, 14,7B) en su banco de pruebas interno: obtiene 43/45 (95,6 %) frente a 44/45 (97,8 %) del modelo menor. Es decir, el aumento de parámetros y de huella de memoria no se traduce en mejor calidad medida en su conjunto de evaluación de 45 casos. Esta honestidad en la documentación es relevante para quien evalúe el modelo para producción.
 
-La relevancia actual es doble: por un lado, demuestra que escalar parámetros no garantiza mejor calidad en tareas específicas de dominio; por otro, ofrece un ejemplo de model card centrada en la trazabilidad de las métricas y en las limitaciones reales del modelo, algo poco habitual en publicaciones de ajustes finos.
+El ajuste se realizó mediante QLoRA 4-bit (r=32, alpha=64) sobre el modelo base, con un entrenamiento corto: 170 pasos en una GPU L40S de 48 GB durante 37 minutos. El foco lingüístico son el alemán y el bosnio/croata/serbio, con inglés funcional pero no prioritario. La licencia Apache-2.0 del modelo base se mantiene.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Mistral-Small-24B-Instruct-2501); no se detallan variantes en la informacion disponible |
-| Parametros totales | 23.572.403.200 (23,57 B) |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion proporcionada) |
-| Longitud de contexto | 8.192 tokens (valor configurado en el Modelfile de referencia); no se confirma la ventana nativa del modelo base en la informacion disponible |
-| Tipos de cuantizacion | Q4_K_M (13,35 GB) como unica cuantizacion publicada en la model card; el repositorio GGUF puede contener otras, no confirmado |
-| Idiomas soportados | de, bs, hr, sr, en (aleman y bosnio/croata/serbio entrenados de forma efectiva; ingles funcional) |
+| Arquitectura | Transformer decoder-only (heredada de Mistral-Small-24B-Instruct-2501) |
+| Parametros totales | 23.572.403.200 (23,57B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el Modelfile de ejemplo usa num_ctx 8192) |
+| Tipos de cuantizacion | Q4_K_M (13,35 GB); formato GGUF |
+| Idiomas soportados | de, bs, hr, sr, en (alemán y bosnio/croata/serbio entrenados; inglés funcional) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (libreria llama.cpp); repo de 14,3 GB; el modelo base se distribuye en safetensors, pero este ajuste se publica como GGUF |
+| Formato de pesos | GGUF (librería llama.cpp); repositorio de 14,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Mistral-Small-24B-Instruct-2501, un transformer denso de 24B parametros, y se ajusta mediante QLoRA en 4 bits con rango r=32 y alpha=64. El entrenamiento se ejecuto en HF Jobs sobre una GPU L40S de 48 GB, con 170 pasos y una duracion total de 37 minutos; el pico de VRAM durante el entrenamiento fue de 19,46 GB. No se especifica el numero de tokens de entrenamiento ni la composicion exacta del dataset, aunque por el contenido de la evaluacion se deduce que el ajuste se orienta a conocimiento de producto (OpenAmer) y a respuestas factuales breves en aleman y bosnio/croata/serbio.
+El modelo parte de Mistral-Small-24B-Instruct-2501, un transformer decoder-only de 24B parámetros de Mistral AI, y se ajusta mediante QLoRA 4-bit con rango 32 y alpha 64. El entrenamiento se ejecutó en Hugging Face Jobs sobre una NVIDIA L40S de 48 GB, con un total de 170 pasos y una duración de 37 minutos; el pico de VRAM durante el entrenamiento fue de 19,46 GB. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO adicionales.
 
-La innovacion tecnica destacable no esta en la arquitectura, sino en la metodologia de evaluacion: un banco de pruebas congelado de 45 casos distribuidos en once categorias (hechos, parafrasis, preguntas de parada, bosnio, bosnio con parada, texto largo, respuesta corta y casos limite), con evaluacion mediante grupos de palabras obligatorias y prohibidas. El autor documenta seis errores del propio evaluador (lectura caracter a caracter de listas de prohibicion, comparacion byte a byte con normalizacion CRLF, conteo de `\r` como caracter de control, patrones demasiado estrictos, sensibilidad a mayusculas y escapes CSS incorrectos) y los corrige, lo que refuerza la credibilidad de las cifras publicadas.
+La innovación técnica del proyecto no reside en la arquitectura (que es la del modelo base sin modificaciones estructurales) sino en el enfoque de despliegue: cuantización Q4_K_M para caber en 16 GB de RAM, distribución vía Ollama y llama.cpp, y un banco de pruebas congelado de 45 casos (once categorías: hechos, paráfrasis, preguntas de parada, bosnio, bosnio-parada, texto largo, respuesta corta, casos límite) que se mantiene idéntico entre escalas para permitir comparaciones. El autor documenta además dos parámetros de inferencia no negociables: `repeat_penalty 1.0` (con 1.1 el modelo invirtió una negación en pruebas) y `temperature 0` para preguntas factuales.
 
 ## Capacidades
 
-- Generacion de texto conversacional en aleman y bosnio/croata/serbio, con ingles funcional.
-- Respuestas factuales breves y precisas sobre el dominio OpenAmer, con entrenamiento orientado a temperatura 0.
-- Comprension de instrucciones de formato simples, aunque con fallos documentados (ignoro una restriccion de "una sola palabra" en uno de los 45 casos).
-- Manejo de contexto de hasta 8.192 tokens segun la configuracion de referencia.
-- Capacidad limitada de uso de herramientas: supero un smoke test de manipulacion de ficheros, pero no ejecuto una llamada MCP en el harness PLE.
-- No se documentan capacidades de vision, audio, modo thinking ni function calling estructurado.
-- No se documenta soporte de agentes multi-paso; el propio autor indica que el modelo es demasiado pequeno para trabajo de agente.
+- Generación de texto conversacional en alemán, bosnio, croata, serbio e inglés, con foco declarado en las dos primeras familias lingüísticas.
+- Respuestas factuales concisas: el modelo está entrenado para respuestas breves y correctas, con temperatura 0 recomendada.
+- Seguimiento de instrucciones de formato en la mayoría de casos, aunque el propio autor documenta un fallo real al ignorar la instrucción "una palabra" en una de las preguntas del banco de pruebas.
+- Comprensión de texto largo: el conjunto de evaluación incluye una categoría específica de texto largo.
+- Manejo de preguntas de parada y casos límite, evaluados en categorías dedicadas del banco de pruebas.
+- **No soporta tool calling ni function calling de forma fiable**: en el test PLE-Harness superó una tarea simple de ficheros (smoke test) pero no ejecutó una llamada MCP.
+- **No es adecuado como agente**: el autor indica explícitamente que es demasiado pequeño para trabajo de agentes.
+- Sin capacidades multimodales, de audio ni de visión (la familia tiene un modelo VL-8B separado).
+- Sin modo de razonamiento extendido (thinking mode) documentado.
 
 ## Casos de uso
 
-- Asistente local de atencion al cliente en aleman: el modelo responde consultas factuales sobre un producto concreto con temperatura 0, sin telemetria ni conexion a la nube, lo que encaja en escenarios con requisitos de privacidad.
-- Soporte en bosnio/croata/serbio para mercados regionales: es uno de los pocos ajustes finos publicados que entrena de forma efectiva estas lenguas sobre una base de 24B, util para empresas con presencia en los Balcanes occidentales.
-- Despliegue en puesto de trabajo sin GPU dedicada de gama alta: con Q4_K_M (13,35 GB) cabe en equipos con 16 GB de VRAM libre mas RAM del sistema, segun las indicaciones del autor.
-- Base para evaluacion interna de ajustes finos: el banco de pruebas congelado de 45 casos y la documentacion de errores del evaluador sirven como plantilla para validar otros ajustes de dominio.
-- Generacion de respuestas breves y controladas en documentacion de producto: el entrenamiento a temperatura 0 y con repeat_penalty 1.0 produce salidas deterministicas adecuadas para FAQ o bases de conocimiento.
-- Prototipado de asistentes multilingues en entornos sin cloud: permite iterar sobre un asistente conversacional en aleman y lenguas eslavas del sur sin coste de API ni dependencia de proveedor.
-- Filtrado o clasificacion de consultas de soporte en aleman: su comportamiento factual y conciso puede aprovecharse para tareas de respuesta cerrada, siempre con validacion humana por los fallos de formato documentados.
+- **Asistente conversacional local en alemán**: el modelo puede gestionar conversaciones multi-turno en alemán sin conexión a la nube, ejecutándose en un equipo con 16 GB de RAM libre mediante Ollama (`ollama run amersacirovic/openamer-max-pro`). Es adecuado para entornos con requisitos de privacidad donde los datos no deben salir del dispositivo.
+- **Atención al cliente en bosnio/croata/serbio**: es uno de los pocos modelos abiertos de este tamaño con entrenamiento declarado en estas lenguas, lo que lo hace útil para soporte automatizado en los mercados de los Balcanes occidentales, siempre que las respuestas se validen por su tendencia a formatos breves.
+- **Generación de respuestas factuales sobre un producto concreto**: el banco de pruebas mide conocimiento del producto OpenAmer; el modelo puede adaptarse a dominios acotados mediante ajuste fino adicional con QLoRA sobre la misma receta, dado el bajo coste de entrenamiento documentado (37 minutos en L40S).
+- **Despliegue en estaciones de trabajo sin GPU dedicada**: con Q4_K_M (13,35 GB) y 16 GB de RAM, el modelo puede ejecutarse en CPU mediante llama.cpp, lo que lo hace viable en portátiles de gama alta o estaciones sin acelerador.
+- **Traducción asistida alemán-bosnio/croata/serbio**: aunque no es un modelo de traducción especializado, su cobertura de estas lenguas permite usarlo como base para tareas de traducción con supervisión humana, combinado con la API de traducción del mismo proyecto (138 idiomas) para casos más amplios.
+- **Prototipado rápido de chatbots de dominio cerrado**: la combinación de licencia Apache-2.0, formato GGUF y disponibilidad en el registro de Ollama permite integrar el modelo en prototipos sin gestionar infraestructura ni licencias restrictivas.
+- **Evaluación comparativa de escalas de modelos**: el banco de pruebas congelado de 45 casos publicado en Hugging Face Datasets permite reproducir la comparación entre las escalas de la familia y verificar las afirmaciones del autor.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son los del banco de pruebas propio del autor (Prüfstand v2, 45 casos), no benchmarks estandar como MMLU, HumanEval o GSM8K.
+Los únicos datos de evaluación disponibles son los del banco de pruebas propio del autor (Prüfstand v2, 45 casos), no benchmarks estándar de la industria:
 
-| Modelo o etapa | Parametros | Tamano | Prüfstand v2 (45 casos) |
+| Modelo | Parámetros | Tamaño | Prüfstand v2 (45 casos) |
 |---|---|---|---|
-| OpenAmer-Max Desktop | 14,70 B | 8,4 GB | 44/45 (97,8 %) |
-| OpenAmer-Max Pro | 24,00 B | 13,4 GB | 43/45 (95,6 %) |
-| OpenAmer-Max Phone | 3,09 B | 2,5 GB | 43/45 (95,6 %) |
-| OpenAmer-Max Tab | 7,62 B | 4,4 GB | 42/45 (93,3 %) |
-| OpenAmer-Max Watch | 0,60 B | 639 MB | 37/45 (82,2 %) |
-| Base Qwen2.5-14B sin entrenar | 14,70 B | — | 22/45 (48,9 %) |
+| Desktop | 14,70B | 8,4 GB | 44/45 (97,8 %) |
+| Pro (este modelo) | 24,00B | 13,4 GB | 43/45 (95,6 %) |
+| Phone | 3,09B | 2,5 GB | 43/45 (95,6 %) |
+| Tab | 7,62B | 4,4 GB | 42/45 (93,3 %) |
+| Watch | 0,60B | 639 MB | 37/45 (82,2 %) |
+| Base Qwen2.5-14B sin entrenar | 14,70B | — | 22/45 (48,9 %) |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor menciona que el mejor modelo abierto del mundo alcanza 26 sobre 100 en un benchmark publico de ingenieria, sin nombrarlo, y situa a este modelo claramente por debajo.
+Los dos fallos documentados del modelo en este banco son: (1) una respuesta correcta en contenido pero que no usa las palabras esperadas (rechner/local/benutzerprofil) sobre dónde se almacenan los datos; y (2) un fallo real al ignorar la instrucción "una palabra" en la pregunta sobre si OpenAmer es gratuito. El autor indica que no hay alucinaciones ni errores factuales en los 45 casos.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 13,35 GB para Q4_K_M, mas overhead de contexto; el autor indica que funciona con 16 GB de memoria libre mas RAM del sistema.
-- GPU recomendadas: L40S 48 GB para entrenamiento (pico de 19,46 GB); para inferencia, cualquier GPU con 16 GB o mas de VRAM, como RTX 4080, RTX 4090, A10, L4 o A100.
-- Cabe en GPU de consumo: si, en RTX 4080/4090 (16-24 GB) y en modelos con 16 GB justos si se reduce el contexto; no cabe en GPUs de 8-12 GB sin cuantizaciones mas agresivas, no documentadas.
-- Opciones de despliegue: llama.cpp, Ollama (`ollama pull hf.co/openamer-max/openamer-max-pro:Q4_K_M`) y entornos compatibles con endpoints; no se documenta soporte verificado de vLLM o TGI para este GGUF.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
-- Configuracion de inferencia recomendada por el autor: `temperature 0`, `repeat_penalty 1.0`, `num_ctx 8192`.
+- **VRAM/RAM estimada para inferencia**: aproximadamente 16 GB de RAM libre para la cuantización Q4_K_M (13,35 GB de pesos más overhead). El autor indica que cabe en un equipo con 16 GB de memoria libre.
+- **GPU recomendadas**: no se especifican GPU concretas para inferencia en la información disponible. Para el entrenamiento se usó una L40S de 48 GB (pico de 19,46 GB de VRAM).
+- **¿Cabe en GPU de consumo?**: sí, en GPUs con 16 GB o más de VRAM (por ejemplo, RTX 4080/4090 de 16-24 GB) o en CPU con 16 GB de RAM. El modelo está etiquetado como `on-device`.
+- **Opciones de despliegue**: Ollama (`ollama run amersacirovic/openamer-max-pro`), llama.cpp (GGUF directo con Modelfile), y el espacio de demostración en Hugging Face con ZeroGPU. El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints.
+- **Parámetros de inferencia recomendados**: `temperature 0`, `repeat_penalty 1.0`, `num_ctx 8192` (según el Modelfile de ejemplo).
+- **Latencia y throughput**: no disponibles en la información proporcionada. El autor remite a su página de "Gerätepass" para tiempos de respuesta medidos por dispositivo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OpenAmer-Max-Pro | 23,57 B | 8.192 (config.) | 43/45 en Prüfstand v2 propio | Apache-2.0 | GGUF en HF |
-| OpenAmer-Max Desktop (misma familia) | 14,70 B | no disponible | 44/45 en Prüststand v2 propio | Apache-2.0 (segun familia) | GGUF en HF |
-| Mistral-Small-24B-Instruct-2501 (base) | 24 B | no disponible en esta ficha | no evaluado en el banco del autor | Apache-2.0 | safetensors y GGUF en HF |
-| Qwen2.5-14B sin entrenar (referencia del autor) | 14,70 B | no disponible | 22/45 en el mismo banco | no disponible en esta ficha | no disponible |
+| OpenAmer-Pro | 23,57B | no disponible (ejemplo: 8192) | Apache-2.0 | GGUF/Ollama | Ajuste QLoRA de Mistral-Small-24B; 43/45 en banco propio |
+| Mistral-Small-24B-Instruct-2501 | 24B | no disponible | Apache-2.0 | Safetensors, GGUF | Modelo base; sin ajuste específico para de/bs/hr/sr |
+| OpenAmer-Desktop (misma familia) | 14,70B | no disponible | Apache-2.0 | GGUF/Ollama | 44/45 en el mismo banco; menor huella (8,4 GB) y mejor puntuación |
+| Qwen2.5-14B (referencia del autor) | 14,70B | no disponible | no disponible | no disponible | 22/45 sin entrenar en el banco del autor |
 
-La comparacion con benchmarks estandar frente a otros modelos de 24B no esta disponible en la informacion proporcionada. La comparacion mas relevante es interna: dentro de la familia, Pro no supera a Desktop pese a tener 6B mas de parametros y 5 GB mas de peso.
+La comparación más relevante es interna a la familia: el modelo Desktop (14,7B) obtiene mejor puntuación en el banco del autor con 5 GB menos de huella, lo que cuestiona la elección de la escala Pro salvo que se necesite específicamente el modelo base de Mistral por sus capacidades generales.
 
 ## Limitaciones y advertencias
 
-- No es un agente: fallo la ejecucion de una llamada MCP en el harness PLE; el autor lo desaconseja para trabajo de agente.
-- El ingles no es su punto fuerte; el entrenamiento se centra en aleman y bosnio/croata/serbio.
-- El banco de pruebas mide conocimiento de producto OpenAmer, no dominio tecnico general; los resultados no son extrapolables a tareas de ingenieria.
-- Fallo documentado de seguimiento de instrucciones: ignoro la restriccion "una sola palabra" en una de las 45 preguntas.
-- Sensibilidad a `repeat_penalty`: con 1.1 el modelo invirtio una negacion; el autor exige 1.0 en todos los Modelfiles de la familia.
-- Riesgo de alucinacion no cuantificado en la informacion disponible; el autor afirma que los dos fallos detectados no son alucinaciones, pero no aporta una metrica especifica de factualidad fuera de su banco.
-- Licencia Apache-2.0, por lo que el uso comercial esta permitido segun los terminos de dicha licencia; no se documentan restricciones adicionales del autor.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en noviembre de 2026; no hay evidencia de uso en produccion por terceros.
-- El repositorio pesa 14,3 GB y solo se distribuye en GGUF; no se ofrece la version en safetensors del ajuste.
+- **No es un agente fiable**: falló al ejecutar una llamada MCP en el test PLE-Harness; el autor lo desaconseja explícitamente para trabajo de agentes.
+- **El inglés no es su punto fuerte**: solo alemán y bosnio/croata/serbio están realmente entrenados; el inglés funciona pero no es el foco.
+- **No sustituye a un modelo frontera**: el autor señala que el mejor modelo abierto del mundo alcanza 26/100 en un benchmark público de ingeniería, y este es considerablemente más pequeño.
+- **Rendimiento inferior a la escala menor de la familia**: 43/45 frente a 44/45 del Desktop, con 5 GB más de huella; el tamaño no se traduce en calidad en este caso.
+- **Sensibilidad a parámetros de muestreo**: con `repeat_penalty 1.1` el modelo invirtió una negación en pruebas; se recomienda 1.0. Con temperatura distinta de 0 en preguntas factuales, el autor advierte que el modelo "adivina".
+- **Fallo de seguimiento de instrucciones de formato**: ignoró una instrucción explícita de responder con una sola palabra.
+- **Riesgo de alucinación**: el autor no reporta alucinaciones en su banco de 45 casos, pero el conjunto es pequeño y centrado en un dominio concreto (conocimiento del producto OpenAmer); no hay evidencia sobre dominios generales.
+- **Licencia**: Apache-2.0, que permite uso comercial, pero conviene verificar las condiciones del modelo base Mistral-Small-24B-Instruct-2501 (también Apache-2.0 según la información disponible).
+- **Contexto**: no se documenta la longitud de contexto efectiva del ajuste; el Modelfile de ejemplo usa 8192 tokens, muy por debajo del contexto nativo del modelo base.
+- **Documentación en alemán**: la model card está redactada íntegramente en alemán, lo que puede dificultar la evaluación a equipos no germanohablantes.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/openamer-max/openamer-max-pro
+- Modelo en Hugging Face: https://huggingface.co/openamer-max/openamer-max-pro
+- Modelo en Ollama: https://ollama.com/amersacirovic/openamer-max-pro
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
-- Repositorio de la familia OpenAmer-Max: no disponible en la informacion proporcionada
-- Paper o blog tecnico: no disponible en la informacion proporcionada
-- Demo: no disponible en la informacion proporcionada
-- Enlace de apoyo del autor (PayPal): https://www.paypal.com/qrcodes/managed/bfb5b6b5-c04c-4836-af60-987dff8cff61
+- Sitio web del proyecto: https://openamer-max.github.io
+- Página de compatibilidad por dispositivo (Gerätepass): https://openamer-max.github.io/geraetepass/
+- Código fuente: https://github.com/openamer-max/openamer
+- Demo en el navegador (ZeroGPU): https://openamer-max-openamer-max-demo.hf.space
+- API de traducción (138 idiomas): https://openamer-max-openamer-translate.hf.space/health
+- Banco de pruebas de 45 casos: https://huggingface.co/datasets/openamer-max/openamer-max-benchmark

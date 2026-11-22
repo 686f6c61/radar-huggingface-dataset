@@ -2,90 +2,87 @@
 
 ## Resumen
 
-LFM2.5-2.6B-CyberSec es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-2.6B, publicado por el usuario reaperdoesntknow dentro de su colección CIx de modelos de ciberseguridad. El checkpoint está entrenado sobre el dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset y se distribuye en dos formatos: pesos Transformers en safetensors y exportaciones GGUF (F16, Q8_0 y Q4_K_M). El modelo cuenta con 2.697.198.592 parámetros totales y está orientado a generación de texto conversacional en inglés.
+LFM2.5-2.6B-CyberSec es un ajuste fino del modelo base LiquidAI/LFM2.5-2.6B publicado por el usuario reaperdoesntknow bajo licencia Apache-2.0. Se presenta como un checkpoint en ingles especializado en instrucciones de ciberseguridad, entrenado sobre el dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset. El repositorio incluye pesos en formato Transformers (safetensors) y exportaciones GGUF (F16, Q8_0 y Q4_K_M), lo que facilita tanto la experimentacion con la libreria Transformers como el despliegue local con llama.cpp u Ollama.
 
-Se trata de una release de investigación: la propia model card reconoce explícitamente que no se publican resultados de benchmarks, comparaciones con el modelo base ni evaluaciones de seguridad. Por tanto, la relevancia del modelo no reside en un rendimiento demostrado, sino en servir como artefacto reproducible para estudiar cómo responde un modelo pequeño a instrucciones de ciberseguridad y para compararlo con el LFM2.5-2.6B original sin modificar.
+El modelo conserva la arquitectura LFM2 del checkpoint original de LiquidAI y cuenta con 2.697.198.592 parametros totales, lo que lo situa en la categoria de modelos pequenos aptos para hardware de consumo. Su relevancia actual reside en la proliferacion de ajustes finos especializados de bajo coste: un modelo de 2,6B puede ejecutarse en GPU consumer y en CPU, y el autor lo orienta explicitamente a investigacion cualitativa y comparacion de formatos, no a uso en produccion critica.
 
-La licencia Apache-2.0 y la disponibilidad de cuantizaciones ligeras lo hacen manejable en hardware de consumo, lo que facilita pruebas cualitativas locales. No obstante, cualquier uso en producción debería ir precedido de una evaluación propia, dado que el autor no aporta evidencia de mejora en capacidad de ciberseguridad.
+Es importante subrayar que la propia model card declara que no se han publicado benchmarks, comparaciones con la linea base ni evaluaciones de seguridad. El autor advierte que la etiqueta del dataset y la existencia de los ficheros exportados no demuestran por si solas una mejora en capacidades de ciberseguridad. Por tanto, esta ficha debe leerse como una descripcion tecnica del artefacto publicado, no como una validacion de su calidad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base LFM2.5, familia LFM2 de LiquidAI) |
-| Parámetros totales | 2.697.198.592 |
-| Parámetros activos | no disponible |
+| Arquitectura | LFM2 (heredada de LiquidAI/LFM2.5-2.6B; detalles internos no disponibles en la informacion proporcionada) |
+| Parametros totales | 2.697.198.592 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF F16, Q8_0, Q4_K_M; configuración con bloque bitsandbytes 4-bit |
-| Idiomas soportados | inglés (en) |
+| Tipos de cuantizacion | GGUF F16, Q8_0 y Q4_K_M; bloque de cuantizacion bitsandbytes en la configuracion Transformers |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (Transformers) y GGUF |
+| Formato de pesos | safetensors (Transformers) y GGUF (F16, Q8_0, Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del checkpoint LiquidAI/LFM2.5-2.6B, de la familia LFM2 de LiquidAI. La información disponible no detalla la arquitectura interna del modelo base (tipo de transformer, atención, capas ni configuración exacta), por lo que este dato queda como no disponible. El fine-tune se realizó sobre el dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset, según los metadatos del repositorio, y la model card menciona el uso de Unsloth en el proceso (etiqueta `unsloth`).
+El modelo es un ajuste fino del checkpoint LiquidAI/LFM2.5-2.6B, que emplea la arquitectura LFM2 de Liquid AI. La informacion disponible no detalla la composicion interna de esa arquitectura (tipo de atencion, capas, uso de convoluciones o mezcla de expertos), por lo que no es posible confirmar sus innovaciones tecnicas a partir de los datos proporcionados. El tamano del repositorio es de 11,8 GB, coherente con la presencia simultanea de pesos safetensors y de varias exportaciones GGUF.
 
-La model card es explícita sobre las carencias documentales: no se especifican hiperparámetros completos de entrenamiento, criterios de selección de checkpoint, preprocesamiento del dataset ni comprobaciones de contaminación. Tampoco se documenta si hubo RLHF, DPO u otra fase de alineación posterior al ajuste supervisado. No se describe ninguna innovación técnica específica más allá del propio ajuste de instrucciones sobre el modelo base.
+El entrenamiento se asocia al dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset, orientado a instrucciones de ciberseguridad. La model card no documenta el numero de tokens de entrenamiento, la composicion exacta del dataset, los hiperparametros completos, los criterios de seleccion de checkpoint, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifican comprobaciones de contaminacion ni el preprocesamiento aplicado. La configuracion incluida incorpora un bloque de cuantizacion bitsandbytes, y el autor recomienda fijar y probar la version exacta de Transformers, Accelerate, bitsandbytes y el entorno de dispositivo antes de su uso.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés mediante plantilla de chat (`apply_chat_template`).
-- Respuesta a instrucciones de ciberseguridad, presumiblemente moldeada por el dataset de ajuste (sin evidencia publicada de mejora).
-- Formato compatible con Transformers (AutoModelForCausalLM, AutoTokenizer) y con llama.cpp/Ollama vía GGUF.
-- Soporte de cuantización 4-bit mediante bitsandbytes en la configuración de Transformers incluida.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta capacidad multimodal (visión, audio) ni modo de razonamiento explícito (thinking).
-- Capacidad multilingüe limitada al inglés según los metadatos.
+- Generacion de texto conversacional en ingles, con plantilla de chat incluida en el repositorio.
+- Respuesta a instrucciones de ciberseguridad, segun el dataset declarado en los metadatos (sin evidencia publicada de mejora).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun el campo `language`.
+- Capacidades especiales (modo thinking, vision, audio): no disponibles en la informacion proporcionada.
+- Ejecucion en formatos Transformers y GGUF, lo que permite inferencia tanto en Python como en runtimes ligeros.
 
 ## Casos de uso
 
-- Investigación sobre respuestas de modelos pequeños a prompts de ciberseguridad: el checkpoint permite estudiar cualitativamente cómo un modelo de 2.6B ajustado con instrucciones del dominio responde a preguntas técnicas, comparándolo con el base sin modificar.
-- Comparación de formatos y cuantizaciones: al incluir safetensors, F16, Q8_0 y Q4_K_M en un mismo repositorio, facilita medir la degradación de calidad entre precisiones en un mismo conjunto de prompts.
-- Desarrollo de harness de evaluación: sirve como sujeto de prueba para construir pipelines de evaluación reproducibles (semillas, prompts, revisiones de modelo) en el ámbito de seguridad.
-- Pruebas locales de runtime de inferencia: útil para validar integraciones con Transformers, llama.cpp y Ollama en entornos sin GPU de datacenter, gracias a su tamaño reducido.
-- Formación y concienciación en seguridad: puede emplearse en entornos controlados y aislados para generar ejemplos de explicaciones defensivas (por ejemplo, defensa en profundidad) que luego se revisan manualmente.
-- Experimentación académica sobre ajuste de instrucciones: como caso de estudio de fine-tune con Unsloth sobre un dataset público de ciberseguridad, para analizar sesgos de dominio y comportamientos del modelo.
+- Investigacion sobre respuestas de modelos pequenos a prompts de ciberseguridad: el modelo sirve para estudiar cualitativamente como un ajuste fino de 2,6B responde a instrucciones del dominio, comparandolo con el checkpoint original sin modificar.
+- Comparacion de formatos y cuantizaciones: al incluir safetensors y GGUF F16, Q8_0 y Q4_K_M, permite medir diferencias de comportamiento y latencia entre el checkpoint Transformers y cada exportacion cuantizada.
+- Desarrollo de arneses de evaluacion: util como sujeto de prueba para construir y depurar pipelines de evaluacion de modelos especializados en seguridad.
+- Pruebas locales de inferencia en hardware modesto: su tamano de 2,6B y las exportaciones Q4_K_M permiten ejecutarlo con llama.cpp u Ollama en equipos sin GPU dedicada de gama alta.
+- Educacion y formacion en conceptos defensivos: puede emplearse para generar explicaciones introductorias (por ejemplo, defensa en profundidad) siempre que un experto revise la salida.
+- Prototipado de asistentes internos de consulta sobre documentacion de seguridad: adecuado para iterar rapidamente en entornos controlados y aislados, nunca como base unica de decisiones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que el repositorio no publica resultados de benchmark, comparaciones con baseline ni evaluaciones de seguridad, y enumera la evidencia que faltaría para sostener una afirmación de mejora (split de test reservado, baseline del modelo base, benchmarks nombrados, harness reproducible, evaluación de seguridad y resultados separados por cuantización).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que el repositorio no publica resultados de benchmark, comparaciones con lineas base ni evaluaciones de seguridad, y que la mejora en capacidad de ciberseguridad no queda establecida por los metadatos del dataset ni por los ficheros exportados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: alrededor de 5,4 GB en F16 (2.697 M parámetros × 2 bytes), aproximadamente 2,9 GB en Q8_0 y en torno a 1,7-2 GB en Q4_K_M, sin contar overhead de contexto y runtime.
-- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para F16 con contexto moderado; para Q4_K_M basta con 4 GB o incluso menos en configuraciones ajustadas.
-- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070, RTX 4090 o superiores; también en GPUs integradas o CPU con cuantización Q4_K_M.
-- Opciones de despliegue: Transformers (con `device_map="auto"` y bitsandbytes para 4-bit), llama.cpp (`llama-cli` con `--jinja`), Ollama (`ollama run hf.co/...:Q4_K_M`). No se documenta soporte explícito de vLLM ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; como referencia orientativa por tamano, un modelo de 2,6B en FP16 requiere aproximadamente 5,4 GB solo para pesos, y en Q4_K_M alrededor de 1,6-1,8 GB, a lo que hay que sumar la memoria de contexto y el overhead del runtime.
+- GPU recomendadas: no especificadas por el autor. Por tamano, cabria en GPUs consumer con 8 GB o mas de VRAM; no se dispone de datos de rendimiento en A100, H100 o RTX 4090.
+- Cabe en GPU consumer: si, previsiblemente en tarjetas con 6-8 GB de VRAM en cuantizaciones Q4_K_M; no confirmado por el autor.
+- Opciones de despliegue: Transformers con `device_map="auto"` y bitsandbytes, llama.cpp (`llama-cli` con `--jinja`) y Ollama (`ollama run hf.co/...:Q4_K_M`).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formatos | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-2.6B-CyberSec | 2.697 M | no disponible | Apache-2.0 | safetensors, GGUF | Fine-tune de ciberseguridad sin benchmarks publicados |
-| LiquidAI/LFM2.5-2.6B (base) | 2.697 M (heredado) | no disponible | Apache-2.0 (según metadatos del fine-tune) | no disponible en esta ficha | Modelo base sin ajuste de dominio; referencia natural de comparación |
-| Alternativas de ~2-3B para ciberseguridad | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
+| reaperdoesntknow/LFM2.5-2.6B-CyberSec | 2.697.198.592 | no disponible | Apache-2.0 | safetensors, GGUF | Ajuste fino en ciberseguridad sin benchmarks publicados |
+| LiquidAI/LFM2.5-2.6B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base sin ajuste; referencia para comparacion cualitativa |
+| Alternativas de 2-3B especializadas en ciberseguridad | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-La comparación más directa y fiable es con el propio modelo base LiquidAI/LFM2.5-2.6B, que comparte arquitectura y tamaño. No se han identificado en la información disponible otros modelos comparables de la misma categoría con datos verificables.
+La unica comparacion documentada es con el modelo base LiquidAI/LFM2.5-2.6B, que el propio autor propone como linea base cualitativa. No se dispone de datos de rendimiento ni de especificaciones completas del modelo base en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card advierte de que el modelo puede producir instrucciones incorrectas, desactualizadas, inseguras o dañinas.
-- El material de ciberseguridad es intrínsecamente de doble uso: las mismas respuestas pueden emplearse de forma ofensiva o defensiva.
-- No hay evidencia publicada de mejora en capacidad de ciberseguridad; la etiqueta del dataset y los archivos exportados no lo demuestran por sí solos.
-- No se documentan comprobaciones de contaminación, preprocesamiento del dataset, hiperparámetros completos ni criterios de selección de checkpoint.
-- Las versiones cuantizadas pueden comportarse de forma distinta al checkpoint en Transformers; los resultados no son extrapolables entre formatos.
-- No se debe ejecutar comandos generados sin revisión y aislamiento previos.
-- No debe usarse como única base para respuesta a incidentes, divulgación de vulnerabilidades, control de acceso u otras decisiones consecuentes.
-- El modelo solo está documentado en inglés; el rendimiento en otros idiomas no está evaluado.
-- Riesgo de alucinación no cuantificado: no se aportan evaluaciones específicas.
-- Aunque la licencia es Apache-2.0 (permisiva para uso comercial), la ausencia de evaluaciones de seguridad desaconseja su despliegue en producción sin validación propia.
-- El repositorio mezcla formatos Transformers y GGUF; es necesario elegir explícitamente la ruta de ejecución adecuada.
+- El modelo puede producir instrucciones incorrectas, desactualizadas, inseguras o daninas.
+- El material de ciberseguridad es inherentemente de doble uso; existe riesgo de uso indebido.
+- No se documentan el preprocesamiento, las comprobaciones de contaminacion, los hiperparametros completos de entrenamiento ni los criterios de seleccion de checkpoint.
+- Las compilaciones cuantizadas pueden comportarse de forma distinta al checkpoint Transformers.
+- No deben ejecutarse comandos generados sin revision y aislamiento previos.
+- No debe usarse como base unica para respuesta a incidentes, divulgacion de vulnerabilidades, control de acceso u otras decisiones de consecuencias relevantes.
+- No se han publicado evaluaciones de sesgo, alucinacion ni seguridad.
+- El soporte linguistico se limita al ingles, lo que restringe su uso en entornos hispanohablantes sin traduccion intermedia.
+- La licencia Apache-2.0 permite uso comercial, pero la ausencia de evaluaciones de seguridad desaconseja su despliegue en produccion sin validacion propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/LFM2.5-2.6B-CyberSec
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Dataset de ajuste: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset
-- Colección CIx cybersecurity models: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models
+- Coleccion CIx cybersecurity models: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models

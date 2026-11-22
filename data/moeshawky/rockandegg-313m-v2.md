@@ -2,116 +2,103 @@
 
 ## Resumen
 
-RockAndEgg-313M-v2 es un backbone transformer causal "headless" (sin cabeza de modelado de lenguaje) de aproximadamente 313 millones de parametros, derivado de los 10 primeros bloques de Qwen/Qwen3-0.6B-Base. Lo desarrolla el usuario moeshawky y esta disenado exclusivamente como motor de representaciones semanticas para texto en ingles, no como modelo generativo. La salida util es el estado oculto terminal (dimension 1024) al que el consumidor debe conectar su propia cabeza de tarea.
+RockAndEgg-313M-v2 es un backbone transformer derivado de Qwen3-0.6B-Base mediante truncamiento físico de profundidad: conserva los 10 primeros bloques del modelo donante (de 28 totales) y descarta el resto, manteniendo intactas la anchura, la topología de atención, el tokenizador y el vocabulario originales. El resultado es un modelo de 312.892.928 parámetros (frente a los 596M del Qwen3-0.6B-Base) sin cabeza de modelado de lenguaje ni cabeza de clasificación, pensado como extractor de representaciones para tareas discriminativas.
 
-El modelo se entrena con objetivos de representacion sobre cuatro familias de supervisión (inferencia de lenguaje natural, parafrasis, clasificacion tematica y analisis de sentimiento), con un maximo de 128 tokens por secuencia. Su relevancia radica en que ofrece una alternativa compacta y ligera para construir clasificadores downstream mediante linear probing o fine-tuning de cabezas ligeras, con mejoras medibles frente a su version anterior en tareas como STS-B (+0,065 en Spearman) y AG News (+0,118 en exactitud).
+Lo desarrolla el autor independiente moeshawky dentro del proyecto RockAndEgg, cuya hipótesis de trabajo es que un decoder compacto puede adaptarse competitivamente a comprensión del lenguaje discriminativa frente a baselines BERT y DeBERTa de tamaño comparable. La versión 2 incorpora entrenamiento multi-tarea de representaciones y selecciona la configuración sin regularización por dispersión (dispersion OFF) tras un estudio controlado de 4.800 pasos sobre un checkpoint fundacional en el paso 600.
 
-No es un modelo de chat ni de instrucciones: cargarlo con AutoModelForCausalLM produce texto degenerado. Debe usarse con AutoModel y una cabeza propia, dentro del contexto de 128 tokens empleado en entrenamiento.
+Su relevancia actual es doble: por un lado, ofrece un punto de partida de 313M parámetros con licencia Apache 2.0 para clasificación de texto, similitud semántica y NLI; por otro, documenta de forma explícita un experimento de cirugía de modelos (depth pruning) con métricas de retención de rendimiento, algo poco habitual en releases de este tamaño. No es un modelo de chat, ni un generador de texto competente, ni un clasificador zero-shot.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3Model (transformer causal decoder-only, headless, sin LM head) |
+| Arquitectura | Qwen3Model sin cabeza (headless), transformer causal con grouped-query attention |
 | Parametros totales | 312.892.928 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 posiciones maximas en config; entrenado con 128 tokens |
-| Tipos de cuantizacion | no disponible (pesos publicados en FP32 safetensors) |
-| Idiomas soportados | Ingles (en) |
+| Longitud de contexto | 32.768 posiciones configuradas; evaluado a 128 tokens |
+| Tipos de cuantizacion | no disponible (pesos publicados en FP16 safetensors) |
+| Idiomas soportados | en |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (FP32) |
-| Capas | 10 |
-| Dimension oculta | 1.024 |
-| Tamano intermedio | 3.072 |
-| Cabezas de atencion | 16 |
-| Cabezas KV (GQA) | 8 |
-| Vocabulario | 151.936 |
-| tie_word_embeddings | true |
-| Norma | RMSNorm, eps 1e-6 |
-| Activacion | SiLU |
-| RoPE theta | 1.000.000 |
-| Sliding window | desactivada |
-| Modelo base | Qwen/Qwen3-0.6B-Base (revision da87bfb6) |
-| Tamano del repo | 1,3 GB |
+| Formato de pesos | safetensors (FP16) |
+
+Otros datos técnicos: 10 de 28 capas transformer (bloques 0-9), hidden size 1.024, intermediate size 3.072, 16 cabezas de atención, 8 cabezas KV, normalización RMSNorm, vocabulario de 151.936 tokens, interfaz prevista `AutoModel` de Hugging Face, tamaño del repo 1,9 GB.
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal decoder-only truncado: conserva unicamente los bloques 0 a 9 del Qwen3-0.6B-Base original, descartando las capas 10 a 27, la LM head y cualquier cabeza de tarea. La salida util es el estado oculto terminal tras la RMSNorm final (block_09), de dimension 1024. Emplea atencion con GQA (16 cabezas de consulta, 8 de clave/valor), RoPE con theta de 1.000.000 y activacion SiLU. El vocabulario de 151.936 tokens se mantiene del modelo donante y los embeddings estan atados.
+La arquitectura es un transformer causal decoder-only con atención agrupada por consultas (GQA), idéntica en familia a Qwen3 pero recortada en profundidad: se eliminan 18 de los 28 bloques y se conservan los pesos preentrenados reales de los bloques 0-9, no una reconfiguración del fichero de configuración ni una destilación estilo MiniLM. Esto supone una reducción del 64,3% en profundidad y de aproximadamente el 47,5% en parámetros respecto al donante. El autor investigó también estrechamiento de FFN y destilación profesor-alumno, y ninguna de las dos opciones produjo un punto operativo mejor en las condiciones probadas.
 
-El entrenamiento se realizo sobre cuatro familias de supervisión con pesos asimetricos: NLI (0,4), parafrasis (0,2), clasificacion tematica (0,2) y sentimiento (0,2), usando hasta 20.000 filas por tarea (MNLI/SNLI, QQP, AG News y SST-2). Las secuencias se truncan a 128 tokens con padding a longitud maxima y sin tokens especiales. No se documenta uso de RLHF ni DPO; el objetivo es puramente de representacion. La evaluacion se realizo con un protocolo congelado antes de inspeccionar resultados, usando linear probes (regresion logistica y Ridge) sobre caracteristicas congeladas y pooling del ultimo token no-pad.
+Sobre esa base truncada se aplicó entrenamiento multi-tarea de representaciones (fase RAE-TPU-003) hasta un checkpoint fundacional en el paso 600, seguido de una continuación controlada (RAE-005) de 4.800 pasos en la que se comparó regularización auxiliar por dispersión activada frente a desactivada; la variante seleccionada fue dispersion OFF. No se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La atención es causal, no bidireccional, lo que conviene no confundir con el régimen de BERT o DeBERTa.
 
 ## Capacidades
 
-- Extraccion de caracteristicas semanticas densas (feature-extraction) de texto en ingles.
-- Generacion de embeddings de 1024 dimensiones para frases y pares de frases.
-- Soporte nativo para tareas de inferencia de lenguaje natural (NLI) mediante representaciones.
-- Soporte para parafrasis y similitud semantica de oraciones.
-- Clasificacion tematica de textos (topic classification).
-- Analisis de sentimiento binario.
-- Base para linear probing y evaluacion de representaciones congeladas.
-- No soporta generacion de texto, tool calling, agentes, vision, audio ni modo thinking.
-- No soporta razonamiento multi-paso ni conversacion multi-turno.
+- Extracción de representaciones contextuales para texto en inglés mediante `AutoModel`, sin cabeza de salida incluida.
+- Clasificación de texto, análisis de sentimiento, inferencia de lenguaje natural (NLI) y detección de paráfrasis, previa incorporación de una cabeza entrenada.
+- Regresión de similitud semántica y tareas de ranking o scoring con cabezas específicas.
+- Transfer learning y adaptación a dominios concretos con ontologías de etiquetas definidas por el usuario.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Uso como objeto de estudio para investigación en transformers causales truncados en profundidad y geometría de representaciones.
 
 ## Casos de uso
 
-- Clasificacion de sentimiento en resenas: conectar una cabeza logistica al estado oculto terminal y entrenar con SST-2 o datos propios; el modelo alcanza 0,8704 de exactitud en linear probe sobre SST-2, lo que lo hace adecuado para pipelines de moderacion de opiniones en ingles.
-- Deteccion de parafrasis en sistemas de duplicados: usar el encoding de pares con separador [SEP] y una cabeza de clasificacion para identificar preguntas equivalentes en foros o bases de conocimiento, con contexto de hasta 128 tokens.
-- Clasificacion tematica de noticias y articulos: asignar categorias a titulares o resumenes cortos en ingles; el modelo logra 0,9050 de exactitud en AG News con probe lineal, util para enrutado de contenido editorial.
-- Similitud semantica para busqueda: generar embeddings de frases y calcular similitud coseno en indices vectoriales para recuperacion de documentos cortos; el modelo obtiene 0,7322 de Spearman en STS-B, adecuado para ranking de pasajes breves.
-- Inferencia de lenguaje natural para validacion de hechos: determinar si una premisa implica o contradice una hipotesis corta en ingles, integrable en pipelines de verificacion documental con pares de hasta 128 tokens.
-- Investigacion en representaciones: servir como backbone congelado para experimentos de linear probing y comparacion de arquitecturas, dado su tamano reducido (313M) y su protocolo de evaluacion reproducible.
-- Filtrado y deduplicacion de datasets: generar embeddings para agrupar documentos similares y eliminar duplicados en corpus en ingles de frases cortas.
+- Moderación de contenido en inglés: se entrena una cabeza de clasificación multietiqueta sobre las representaciones del backbone para detectar categorías de toxicidad o spam; el tamaño de 313M permite desplegar el par backbone+cabeza en una sola GPU de consumo.
+- Análisis de sentimiento en reseñas de producto: ajuste fino supervisado de una cabeza lineal o MLP sobre las features congeladas o con fine-tuning parcial, aprovechando que la versión 2 mejora el rendimiento en sentimiento con features congeladas respecto a la v1.
+- Deduplicación y agrupación semántica de documentos: generación de embeddings por secuencia y cálculo de similitud coseno para clustering de tickets de soporte o artículos duplicados, dado el objetivo declarado de similitud semántica.
+- Enrutamiento de consultas en pipelines RAG: clasificador ligero que decide a qué índice o herramienta dirigir una consulta entrante, con latencia baja por el reducido número de capas.
+- Investigación en transferencia bajo restricciones de tamaño: comparación controlada frente a BERT-base y DeBERTa-v3-base en las mismas tareas downstream, usando el modelo como brazo experimental de un backbone causal truncado.
+- Filtrado previo en pipelines de anotación: puntuación de pares de frases para priorizar ejemplos informativos antes de la revisión humana en proyectos de etiquetado.
+- Extracción de features para modelos tabulares o híbridos: congelar el backbone y usar el último estado oculto como entrada de un clasificador ligero en producción, minimizando el coste de reentrenamiento.
 
 ## Benchmarks y rendimiento
 
-Resultados de linear probe sobre caracteristicas congeladas (protocolo congelado, pooling del ultimo token no-pad, dim 1024, max 2.000 filas de entrenamiento y 1.000 de evaluacion por tarea, FP32 en Tesla T4). Baseline: moeshawky/RockAndEgg-313M @ 34361ed7.
+Los únicos datos numéricos publicados corresponden a un estudio de arquitectura sobre descendientes con ajuste fino específico de tarea, no al modelo fundacional sin cabeza en modo zero-shot. Se reproducen tal cual, con esa advertencia:
 
-| Tarea | Metrica | Baseline | RockAndEgg-313M-v2 | Delta |
-|---|---|---|---|---|
-| STS-B | Spearman | 0,6672 | 0,7322 | +0,0649 |
-| AG News | Exactitud | 0,7870 | 0,9050 | +0,1180 |
-| SST-2 | Exactitud | 0,7741 | 0,8704 | +0,0963 |
-| MRPC | Exactitud | 0,6985 | 0,6936 | -0,0049 |
-| RTE | Exactitud | 0,6606 | 0,6390 | -0,0217 |
-| CoLA | Exactitud | no disponible | no disponible | no disponible |
+| Arquitectura | Parametros | Macro-AUPRC en held-out |
+|---|---:|---:|
+| Qwen3 completo, 28 capas | 596,1M | 0,9864 |
+| Qwen3 truncado, 10 capas | 312,9M | 0,9850 |
 
-No se han publicado resultados de benchmarks comparativos con modelos de terceros en la informacion disponible.
+Estas cifras proceden de una aplicación concreta de clasificación semántica con ocho salidas, sobre descendientes ajustados por separado. No hay resultados publicados de MMLU, HumanEval, GSM8K ni de benchmarks estándar de representaciones (MTEB u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP32: aproximadamente 1,3 GB solo para pesos, mas memoria de activaciones; en la practica cabe en cualquier GPU con 4 GB o mas.
-- Al ser un backbone de 313M parametros, es viable en GPU consumer: RTX 3060, RTX 4060, RTX 4090, asi como en GPUs de datacenter (T4, A100, H100) sin necesidad de paralelismo.
-- Puede ejecutarse en CPU para inferencia por lotes de baja latencia, aunque el throughput sera limitado.
-- Opciones de despliegue: transformers con AutoModel (no AutoModelForCausalLM), text-embeddings-inference (etiqueta endpoints_compatible), y exportacion a ONNX si se requiere. No se documenta soporte nativo de GGUF, llama.cpp, Ollama ni vLLM.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
-- Cuantizacion: no se publican pesos cuantizados; al ser FP32, puede convertirse a FP16/BF16 para reducir memoria a aproximadamente 0,6 GB de pesos.
+- VRAM estimada para inferencia en FP16: en torno a 0,7-0,9 GB solo para pesos, más activaciones y buffers; con secuencias de 128 tokens el consumo total se mantiene por debajo de 2 GB en la práctica.
+- En cuantización INT8 el peso ronda los 0,35 GB; en INT4, unos 0,2 GB, aunque el autor no publica variantes cuantizadas.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 y H100 funcionan sin problema, y en las dos últimas el modelo queda enormemente infrautilizado.
+- Cabe holgadamente en GPU de consumo, incluidas portátiles con 6-8 GB, y probablemente en CPU para lotes pequeños.
+- Opciones de despliegue: `transformers` con `AutoModel` es la vía prevista; el tag `text-embeddings-inference` sugiere compatibilidad con TEI; `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face. No hay confirmación de soporte en vLLM, llama.cpp u Ollama.
+- Latencia y throughput: no disponible. Con 10 capas y 1.024 de hidden size se espera un coste por token muy inferior al del Qwen3-0.6B-Base original, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| RockAndEgg-313M-v2 | 313M | 32.768 (entrenado a 128) | Backbone de representaciones headless | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3-0.6B-Base | 596M | 32.768 | Modelo generativo base | Apache 2.0 | Hugging Face |
-| moeshawky/RockAndEgg-313M (v1) | 313M | 32.768 (entrenado a 128) | Backbone de representaciones headless | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Naturaleza | Licencia | Notas |
+|---|---:|---|---|---|---|
+| RockAndEgg-313M-v2 | 312,9M | 32.768 config. (evaluado a 128) | Decoder causal truncado, sin cabeza | Apache 2.0 | Orientado a features discriminativas |
+| Qwen3-0.6B-Base | 596,1M | 32.768 | Decoder causal completo | Apache 2.0 | Modelo donante; conserva cabeza LM |
+| BERT-base | ~110M | 512 | Encoder bidireccional | Apache 2.0 | Baseline estándar en clasificación; contexto mucho menor |
+| DeBERTa-v3-base | ~184M | 512 | Encoder bidireccional con atención disentangled | MIT | Baseline fuerte en NLI y similitud semántica |
 
-No se dispone de datos de benchmarks frente a alternativas de terceros como sentence-transformers o modelos de embeddings dedicados en la informacion proporcionada.
+La comparación con BERT-base y DeBERTa-v3-base es la que el propio autor declara como objetivo del programa RockAndEgg, pero según la model card ese objetivo «aún no se ha establecido»; no hay por tanto evidencia publicada de que RockAndEgg supere a esos baselines en las mismas tareas. Frente a Qwen3-0.6B-Base, la diferencia clave es que RockAndEgg no genera texto de forma competente y no incluye cabeza de lenguaje.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: cargarlo con AutoModelForCausalLM produce texto degenerado; debe usarse con AutoModel.
-- Entrenado y validado solo en ingles; no se garantiza comportamiento en otros idiomas.
-- El entrenamiento uso secuencias de 128 tokens; contextos superiores requieren reevaluacion.
-- Solo cubre cuatro familias de tareas (NLI, parafrasis, topic y sentimiento); su rendimiento fuera de ellas no esta caracterizado.
-- Rendimiento inferior al baseline en MRPC (-0,0049) y RTE (-0,0217), por lo que no es uniformemente mejor que la version anterior.
-- Riesgo de sesgos heredados de los datasets de entrenamiento (MNLI, SNLI, QQP, AG News, SST-2), no documentados por el autor.
-- Riesgo de alucinacion no aplica a generacion, pero las representaciones pueden no capturar matices fuera de la distribucion de entrenamiento.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta; madurez y validacion externa limitadas.
-- No se publican pesos cuantizados ni artefactos de despliegue listos para produccion.
+- No es un clasificador zero-shot: carece de ontología de etiquetas y de cabeza de decisión universal; requiere entrenamiento downstream.
+- No es un modelo de chat ni sigue instrucciones; no debe usarse como generador de texto general.
+- La atención es causal, no bidireccional; los resultados de BERT o DeBERTa no son directamente transferibles en cuanto a comportamiento de las representaciones.
+- El contexto configurado es de 32.768 posiciones, pero la evaluación se realizó a 128 tokens; el comportamiento más allá de esa longitud no está validado en la información disponible.
+- Solo inglés declarado; el rendimiento en otros idiomas, incluido el castellano, no está documentado.
+- Riesgo de alucinación y sesgos: no evaluado ni documentado en la model card; al derivar de Qwen3-0.6B-Base hereda los sesgos de su corpus de preentrenamiento, sin que se hayan publicado análisis al respecto.
+- Las cifras de retención de rendimiento (0,9850 frente a 0,9864 de macro-AUPRC) provienen de una única aplicación de clasificación con ocho salidas y de descendientes ajustados, no del modelo publicado; no deben extrapolarse a otras tareas.
+- Licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen3-0.6B-Base conviene verificar el cumplimiento de las condiciones del modelo donante en la distribución de derivados.
+- Proyecto independiente con 577 descargas y 0 likes en el momento de la consulta; sin validación externa ni adopción comunitaria significativa.
+- No hay variantes cuantizadas publicadas ni confirmación de soporte en runtimes de inferencia distintos de `transformers`.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/moeshawky/RockAndEgg-313M-v2
-- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
-- Version anterior (baseline): https://huggingface.co/moeshawky/RockAndEgg-313M
-- Dataset de investigacion: https://huggingface.co/datasets/moeshawky/rae-005-research-evidence
+- Modelo en Hugging Face: https://huggingface.co/moeshawky/RockAndEgg-313M-v2
+- Versión original: https://huggingface.co/moeshawky/RockAndEgg-313M
+- Modelo donante: https://huggingface.co/Qwen/Qwen3-0.6B-Base
+- Paper de Qwen3 referenciado en los tags: https://arxiv.org/abs/2505.09388
+- Paper referenciado en los tags (arXiv:2506.05176): https://arxiv.org/abs/2506.05176

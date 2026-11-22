@@ -2,104 +2,110 @@
 
 ## Resumen
 
-Qwen3.8-35B es una publicación de la cuenta de usuario Haster1137 en Hugging Face que, pese a su nombre, contiene en realidad una familia de cuantizaciones GGUF del modelo base Qwen/Qwen3.8-27B, según se desprende de la model card. El autor describe el artefacto como "Qwen3.8-27B-Uncensored-GGUF", una versión del modelo de 27 000 millones de parámetros a la que se le ha reducido el comportamiento de rechazo mediante una técnica de abliteration con la herramienta Heretic. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución cuantizada y modificada de un modelo de terceros.
+Qwen3.8-35B (publicado por el usuario Haster1137) es una derivación afinada del modelo base Qwen/Qwen3.8-27B, distribuida como cuantizaciones GGUF para su uso con llama.cpp. El modelo conserva la arquitectura y los datos de entrenamiento originales, pero incorpora un ajuste fino orientado a reducir el comportamiento de rechazo (refusal) y a potenciar capacidades de ciberseguridad y generación de código. Se publica bajo licencia Apache 2.0, heredada del modelo base.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso de cuantización GGUF con retención de la cabeza de predicción multi-token (MTP) para decodificación especulativa, un detalle técnico poco habitual en publicaciones comunitarias. Por otro, sirve como ejemplo de advertencia: el identificador del repositorio (35B) no coincide con el tamaño real del modelo base (27B), la licencia declarada en la model card (Apache-2.0) no aparece en los metadatos de Hugging Face, y el autor de la cuenta no es el desarrollador original del modelo.
+El modelo tiene 35.505.251.456 parámetros según los datos de safetensors, aunque la model card indica que el modelo base es Qwen/Qwen3.8-27B, lo que genera una discrepancia no aclarada en la documentación. El repositorio ocupa 66,8 GB e incluye el cabezal de predicción multi-token (MTP) verificado para decodificación especulativa, una innovación que permite acelerar la inferencia en llama.cpp.
 
-El modelo base pertenece a la familia Qwen3.5/Qwen3.8, con arquitectura `Qwen3_5ForConditionalGeneration`, 64 capas, vocabulario de 248 320 tokens y una ventana de contexto declarada de 262 144 tokens. La publicación incluye cuantizaciones desde IQ2_M (10,6 GB) hasta Q8_0 (29,0 GB), un proyector de visión en F16 y una matriz de importancia (imatrix) calculada sobre el modelo en F16.
+Su relevancia actual radica en dos aspectos: por un lado, ofrece una variante con menor tasa de rechazo para tareas de seguridad ofensiva y análisis de vulnerabilidades; por otro, demuestra que el cabezal MTP sobrevive a cuantizaciones agresivas (2 bits) al fijarse en q8_0, lo que mantiene las ganancias de decodificación especulativa incluso en despliegues con VRAM limitada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | `Qwen3_5ForConditionalGeneration` (transformer denso, con cabeza MTP) |
-| Parámetros totales | 27 000 millones (modelo base Qwen3.8-27B; el nombre del repositorio indica 35B, dato no coherente con la model card) |
-| Parámetros activos | no disponible (no es MoE según la información proporcionada) |
-| Longitud de contexto | 262 144 tokens |
-| Tipos de cuantización | IQ2_M, IQ4_XS, Q4_K_M, Q5_K_M, Q6_K, Q8_0; draft head en Q8_0 y Q4_0; proyector de visión en F16 |
-| Idiomas soportados | en, zh (según la model card) |
-| Licencia | Apache-2.0 declarada en la model card; no disponible en los metadatos de Hugging Face |
-| Formato de pesos | GGUF (generado con llama.cpp, commit a94d563ed) |
+| Arquitectura | Transformer (derivada de Qwen3.8; detalles no disponibles) |
+| Parametros totales | 35.505.251.456 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF: IQ2_M, IQ4_XS, Q6_K, Q8_0 (mencionados en la model card) |
+| Idiomas soportados | en, zh (segun model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors como referencia de parametros) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 64 capas con un vocabulario de 248 320 tokens y una ventana de contexto de 262 144 tokens. Incluye una única capa de predicción multi-token (MTP), que actúa como cabeza borrador para decodificación especulativa. Dispone también de capacidad de visión, servida mediante un proyector multimodal separado (`mmproj-...-F16.gguf`, 0,9 GB). No se especifican en la información disponible los datos de entrenamiento del modelo base, el número de tokens procesados ni si hubo fases de RLHF o DPO.
+La arquitectura subyacente es la del modelo Qwen3.8-27B, del que este modelo es una cuantización afinada. La model card no detalla la arquitectura interna (número de capas, dimensiones, tipo de atención), por lo que no se dispone de información específica sobre si emplea atención lineal, MoE o alguna variante híbrida. Se confirma que el modelo conserva el cabezal de predicción multi-token (MTP) del base, lo que habilita decodificación especulativa en llama.cpp a partir del PR #22673.
 
-La modificación introducida por el autor consiste en una abliteration con Heretic, que minimiza conjuntamente el recuento de rechazos y la divergencia KL respecto al modelo base. El proceso se ejecuta en bf16 (sin cuantización intermedia de 4 bits) y el LoRA resultante se fusiona en el checkpoint bf16, de modo que los pesos publicados no son el resultado de una ida y vuelta por cuantización. La abliteration modifica únicamente `attn.o_proj` y `mlp.down_proj` de la pila principal; los tensores `mtp.*` se copian literalmente del checkpoint base sin alteración. La matriz de importancia se calcula directamente desde el F16, no desde una cuantización intermedia, lo que según el autor hace que la calibración vea los pesos reales.
+El ajuste fino se realizó sobre aproximadamente 487,6 GB de un conjunto de datos curado para capacidades de hacking de vulnerabilidades de ciberseguridad, con predominio de código y destilación desde "Fable 5.1". No se especifican el número de tokens, la composición exacta del dataset ni si se emplearon RLHF o DPO. La model card reporta métricas de comportamiento: la tasa de rechazo sobre 100 prompts dañinos de `mlabonne/harmful_behaviors` (test split) se sitúa en 12/100 para el punto publicado, con una divergencia KL de 0,1191 frente al modelo base. Se advierte que estas métricas se midieron en modo sin pensamiento (non-thinking) y sobre el merge en bf16, no sobre las cuantizaciones descargables.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredados del modelo base Qwen3.8-27B.
-- Procesamiento de imágenes mediante el proyector de visión F16 incluido.
-- Decodificación especulativa con cabeza MTP integrada (modo fused) o separada (modo target + draft con `--model-draft`).
-- Comportamiento de rechazo sustancialmente reducido respecto al modelo base, aunque no eliminado.
-- Soporte multilingüe limitado a inglés y chino según la model card.
-- No se documenta en la información disponible soporte de tool calling, function calling ni razonamiento agéntico multi-paso.
-- No se documenta un modo de pensamiento (thinking mode) explícito.
+- Generación de texto conversacional en inglés y chino.
+- Generación y análisis de código, con especial énfasis en ciberseguridad y análisis de vulnerabilidades.
+- Razonamiento multi-paso y soporte de agentes (pipeline_tag incluye `agent`).
+- Decodificación especulativa mediante cabezal MTP retenido y verificado.
+- Modo de pensamiento (`<think>`) presente en la plantilla de chat, aunque las evaluaciones de rechazo se realizaron cerrando explícitamente dicho bloque.
+- Comportamiento de rechazo sustancialmente reducido (no eliminado) frente al modelo base.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Investigación sobre abliteration y alineación: el modelo permite comparar directamente la perplejidad y el comportamiento de rechazo frente al base sin modificar, gracias a que la model card publica la medición de referencia (PPL 6,5129 en el base bf16 frente a 7,1557 en el F16 abliterado).
-- Evaluación de decodificación especulativa en llama.cpp: la publicación incluye tablas de aceptación medidas para el draft head en Q8_0, lo que facilita reproducir experimentos de aceleración con MTP en un modelo de 27B.
-- Despliegue en hardware de gama alta para consumo: la cuantización Q4_K_M (16,8 GB) permite ejecutar un modelo de 27B con contexto largo en una GPU con 24 GB de VRAM, útil para prototipos de generación de texto en local.
-- Procesamiento de documentos con imagen: el proyector de visión F16 (0,9 GB) habilita entrada de imágenes en runtimes compatibles, adecuado para tareas de descripción o extracción de contenido visual.
-- Generación de texto sin restricciones de contenido para entornos controlados: el modelo está orientado a casos donde el filtrado del base resulta demasiado restrictivo, siempre que se apliquen las salvaguardas externas adecuadas.
-- Estudio de cuantización de bajo bit: la cuantización IQ2_M (10,6 GB) y su matriz de importancia publicada permiten analizar la degradación de perplejidad en regímenes agresivos de compresión.
+- Análisis de vulnerabilidades en auditorías de seguridad: el modelo puede revisar fragmentos de código y sugerir vectores de ataque o debilidades, gracias al ajuste fino sobre datasets de ciberseguridad y su menor tasa de rechazo en solicitudes dañinas.
+- Generación de código en pipelines de CI/CD: su énfasis en código y su compatibilidad con llama.cpp permiten integrarlo en herramientas de revisión automática o generación de parches, con decodificación especulativa MTP para reducir latencia.
+- Asistencia en investigación de exploits en entornos controlados: la reducción de rechazos facilita el estudio de técnicas ofensivas en laboratorios de seguridad, siempre bajo las restricciones de la licencia Apache 2.0 y las políticas de uso aceptable del modelo base.
+- Despliegue en hardware de consumo: las cuantizaciones IQ2_M e IQ4_XS permiten ejecutar el modelo en GPUs con VRAM limitada, manteniendo el cabezal MTP funcional para acelerar la generación.
+- Chat multi-turno en inglés y chino: el modelo soporta conversaciones en ambos idiomas, adecuado para asistentes técnicos bilingües en entornos de desarrollo.
+- Evaluación comparativa de robustez y sesgos: investigadores pueden usar las métricas de rechazo y KL divergence publicadas para estudiar el equilibrio entre alineación y capacidades en modelos derivados.
+- Prototipado de agentes autónomos: la etiqueta `agent` y el soporte de razonamiento multi-paso permiten construir flujos de trabajo que encadenan llamadas al modelo con herramientas externas, aunque no se documenta tool calling nativo.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K). Sí incluye mediciones de perplejidad sobre wikitext-2, que se reproducen a continuación.
+La model card reporta una caída media de 0,5 puntos frente al modelo base en MMLU, ARC-Challenge, HellaSwag y Winogrande. No se proporcionan los valores absolutos de estos benchmarks ni resultados de evaluaciones generativas, matemáticas, de código o multilingües.
 
-| Modelo / cuantización | Tamaño | PPL (wikitext-2) | Diferencia frente a F16 |
-|---|---|---|---|
-| Base Qwen3.8-27B bf16 | no disponible | 6,5129 ± 0,04209 | referencia del base |
-| Base Qwen3.8-27B Q8_0 | no disponible | 6,5122 ± 0,04208 | −0,0007 frente al base |
-| Este modelo F16 (no publicado) | no disponible | 7,1557 ± 0,25104 | referencia interna |
-| Este modelo Q5_K_M | 19,5 GB | 7,1573 ± 0,25055 | +0,0016 |
-| Este modelo IQ4_XS | 15,3 GB | 7,1583 ± 0,25019 | +0,0026 |
-| Este modelo Q6_K | 22,4 GB | 7,1689 ± 0,25149 | +0,0132 |
-| Este modelo Q8_0 | 29,0 GB | 7,1764 ± 0,25195 | +0,0207 |
-| Este modelo Q4_K_M | 16,8 GB | 7,1814 ± 0,25227 | +0,0257 |
-| Este modelo IQ2_M | 10,6 GB | 7,8581 ± 0,27481 | +0,7024 |
+Rendimiento de decodificación especulativa (medido en NVIDIA H200 NVL, 256 tokens generados, mediana de 3 repeticiones, cuantización IQ2_M):
 
-El propio autor advierte que, salvo IQ2_M, todas las diferencias caen dentro del margen de error (error estándar en torno a 0,25), por lo que el orden entre cuantizaciones no es significativo. La única diferencia resoluble es IQ2_M, unas 2,8 desviaciones estándar por encima del F16. La comparación entre el base bf16 (6,5129) y el F16 abliterado (7,1557) sí indica un coste apreciable de la abliteration en perplejidad.
+| Prompt | spec_type | n_max | tok/s | vs baseline |
+|---|---|---|---|---|
+| prose | none | - | 75,4 | 1,00x |
+| prose | draft-mtp | 1 | 85,2 | 1,13x |
+| prose | draft-mtp | 2 | 83,2 | 1,10x |
+| prose | draft-mtp | 3 | 77,4 | 1,03x |
+| code | none | - | 75,5 | 1,00x |
+| code | draft-mtp | 1 | 95,8 | 1,27x |
+| code | draft-mtp | 2 | 99,8 | 1,32x |
+| code | draft-mtp | 3 | 96,0 | 1,27x |
+| chat | none | - | 75,3 | 1,00x |
+| chat | draft-mtp | 1 | 87,4 | 1,16x |
+| chat | draft-mtp | 2 | 81,3 | 1,08x |
+| chat | draft-mtp | 3 | 78,4 | 1,04x |
+
+La model card también incluye una tabla anterior (hardware no registrado) con tasas absolutas de 74,8 tok/s en prosa, 74,7 en código y 74,7 en chat como baseline, y ganancias de hasta 1,28x en código con n_max=1.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el tamaño del archivo más el contexto. IQ2_M requiere unos 11 GB, Q4_K_M unos 17 GB, Q5_K_M unos 20 GB, Q6_K unos 23 GB y Q8_0 unos 29 GB, sin contar la caché KV para 262 144 tokens, que puede ser muy superior.
-- GPU recomendadas: A100 40/80 GB o H100 para contexto completo y Q8_0; RTX 4090 (24 GB) para Q4_K_M o IQ4_XS con contexto moderado; RTX 3090 (24 GB) en el mismo rango.
-- Cabe en GPU de consumo: sí, en tarjetas de 24 GB con cuantizaciones Q4_K_M o inferiores. IQ2_M permite bajar a 12-16 GB de VRAM.
-- Opciones de despliegue: llama.cpp (versión de referencia a94d563ed), llama-server con `--model-draft` para el modo target + draft, y runtimes compatibles con GGUF y mmproj para visión. No se documenta soporte de vLLM ni TGI.
-- Latencia y throughput: no disponibles. La model card menciona tablas de aceptación de decodificación especulativa medidas sobre el draft head Q8_0, pero los valores no se incluyen en la información proporcionada.
+- VRAM estimada: el archivo fusionado IQ2_M requiere 10,6 GB de pesos; la configuración separada noMTP-IQ2_M más draft-Q8_0 requiere 13,3 GB. Para Q6_K y Q8_0 no se especifican tamaños, pero el repositorio completo ocupa 66,8 GB.
+- GPU recomendadas: NVIDIA H200 NVL es la hardware de referencia para las mediciones de throughput. No se documentan pruebas en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: las cuantizaciones IQ2_M e IQ4_XS están pensadas para VRAM limitada, aunque la model card advierte que IQ2_M es la que más agrava la inestabilidad en el límite de rechazo.
+- Opciones de despliegue: llama.cpp (requiere builds posteriores al PR #22673 para no ignorar los tensores MTP). No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: 75,4 tok/s baseline en prosa y hasta 99,8 tok/s en código con MTP n_max=2 sobre H200 NVL con IQ2_M. La configuración separada noMTP-IQ2_M + draft-Q8_0 alcanza 97,7 tok/s en prosa con n_max=2 (1,30x).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-35B (este repositorio) | 27B (según model card) | 262 144 | Apache-2.0 declarada | GGUF | Abliterado, con MTP y visión |
-| Qwen/Qwen3.8-27B | 27B | 262 144 | no disponible en esta información | safetensors, GGUF | Modelo base sin modificar |
-| Otras cuantizaciones comunitarias de Qwen3.8-27B | 27B | 262 144 | según autor | GGUF | Sin abliteration ni MTP retenido, en general |
+| Haster1137/Qwen3.8-35B | 35.505.251.456 | no disponible | Apache 2.0 | GGUF | Ajuste fino para reducir rechazos, MTP retenido |
+| Qwen/Qwen3.8-27B (base) | 27B (según model card) | no disponible | Apache 2.0 | safetensors | Modelo original, mayor tasa de rechazo, sin ajuste de ciberseguridad |
+| Otras variantes Qwen3.8 cuantizadas | no disponible | no disponible | Apache 2.0 | GGUF | No se dispone de datos comparativos en la información proporcionada |
 
-No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y formato.
+No se han proporcionado datos de benchmarks comparativos con modelos alternativos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El nombre del repositorio (35B) no coincide con el tamaño real del modelo base (27B), lo que puede inducir a error en la selección de hardware.
-- La abliteration reduce el comportamiento de rechazo pero no lo elimina; el modelo puede generar contenido dañino o inapropiado sin las salvaguardas externas adecuadas.
-- La perplejidad del F16 abliterado (7,1557) es notablemente superior a la del base bf16 (6,5129), lo que sugiere una pérdida de calidad respecto al original.
-- La licencia Apache-2.0 solo aparece en la model card; los metadatos de Hugging Face no la declaran, lo que genera incertidumbre sobre las condiciones reales de uso comercial.
-- El autor de la cuenta (Haster1137) no es el desarrollador original del modelo base; se trata de una redistribución de terceros sin respaldo oficial.
-- Idiomas limitados a inglés y chino según la model card; no se garantiza un rendimiento adecuado en castellano.
-- No se documentan datos de entrenamiento, sesgos conocidos ni evaluaciones de seguridad del modelo base.
-- El contexto de 262 144 tokens requiere una caché KV muy grande; en la práctica, la ventana utilizable en GPU de consumo será mucho menor.
-- La tasa de aceptación del draft head Q4_0 no ha sido medida por el autor.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso o validación por parte de la comunidad.
+- Los rechazos están reducidos, no eliminados: 12/100 en el punto publicado sobre prompts dañinos, con una fracción significativa que aún se rechaza.
+- El comportamiento cerca del antiguo límite de rechazo es menos estable que en el modelo base.
+- Las cuantizaciones bajas agravan la inestabilidad; IQ2_M es la más afectada. Se recomienda evaluar el comportamiento en Q6_K o Q8_0, no en IQ2_M o IQ4_XS.
+- Las métricas de rechazo se midieron en modo sin pensamiento y sobre el merge en bf16, no sobre los archivos cuantizados descargables.
+- La evaluación de rechazo se limita a 100 prompts de un único dataset; no generaliza a otras distribuciones de solicitudes dañinas.
+- La perplejidad reportada es solo sobre wikitext-2 y detecta daño grueso por cuantización, no pérdida de capacidades en razonamiento, código o multilingüe.
+- Caída media de 0,5 puntos frente al base en MMLU, ARC-Challenge, HellaSwag y Winogrande; no se ejecutaron evaluaciones generativas, matemáticas, de código ni multilingües.
+- Existe una discrepancia no aclarada entre los 35.505.251.456 parámetros reportados y el modelo base Qwen3.8-27B citado en la model card.
+- Licencia Apache 2.0, pero la licencia y política de uso aceptable del modelo base siguen aplicándose.
+- Riesgo de alucinación y sesgos: no documentados en la información proporcionada.
+- El ajuste fino sobre datasets de ciberseguridad ofensiva puede conllevar implicaciones legales y éticas en determinadas jurisdicciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Haster1137/Qwen3.8-35B
+- Hugging Face: https://huggingface.co/Haster1137/Qwen3.8-35B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- llama.cpp (runtime de referencia, commit a94d563ed): https://github.com/ggml-org/llama.cpp
-- Heretic (herramienta de abliteration): no disponible en la información proporcionada
-- Dataset de calibración (wikitext-2): https://huggingface.co/datasets/Salesforce/wikitext
-- Paper o blog del modelo base: no disponible en la información proporcionada
+- PR de llama.cpp con soporte MTP: https://github.com/ggml-org/llama.cpp/pull/22673
+- Dataset de evaluación de rechazos: https://huggingface.co/datasets/mlabonne/harmful_behaviors

@@ -1,0 +1,125 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/action-guard-1.7b",
+  "slug": "tamarillo-action-guard-1-7b",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/action-guard-1.7b",
+  "created_at": "2026-11-21T23:22:52.000Z",
+  "updated_at": "2026-11-21T23:24:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-classification",
+    "agent-security",
+    "coding-agents",
+    "claude-code",
+    "mcp",
+    "tool-call-safety",
+    "guardrails",
+    "runtime-security",
+    "multi-label-classification",
+    "en",
+    "dataset:agentapprove/coding-agent-tool-call-safety",
+    "arxiv:2611.02155",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720630272,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452718942,
+  "storage_human": "3.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Coding-Agent Tool-Call 27-Predicate Policy Classification",
+      "dataset": "AgentApprove Coding-Agent Tool-Call Safety (holdout, tool-only)",
+      "metric": "Deny Micro Youden's J (x100)",
+      "value": 86.08
+    },
+    {
+      "task": "Coding-Agent Tool-Call 27-Predicate Policy Classification",
+      "dataset": "AgentApprove Coding-Agent Tool-Call Safety (holdout, tool-only)",
+      "metric": "Deny Micro F1",
+      "value": 0.8706
+    },
+    {
+      "task": "Coding-Agent Tool-Call 27-Predicate Policy Classification",
+      "dataset": "AgentApprove Coding-Agent Tool-Call Safety (holdout, tool-only)",
+      "metric": "Deny Macro F1",
+      "value": 0.8479
+    },
+    {
+      "task": "Coding-Agent Tool-Call 27-Predicate Policy Classification",
+      "dataset": "AgentApprove Coding-Agent Tool-Call Safety (holdout, tool-only)",
+      "metric": "Deny Micro Recall",
+      "value": 0.8696
+    },
+    {
+      "task": "Coding-Agent Tool-Call 27-Predicate Policy Classification (Confirmation)",
+      "dataset": "AgentApprove Coding-Agent Tool-Call Safety (confirmation, tool-only)",
+      "metric": "Deny Micro Youden's J (x100)",
+      "value": 78.67
+    },
+    {
+      "task": "Coding-Agent Tool-Call 27-Predicate Policy Classification (Confirmation)",
+      "dataset": "AgentApprove Coding-Agent Tool-Call Safety (confirmation, tool-only)",
+      "metric": "Deny Micro F1",
+      "value": 0.8042
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tamarillo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tamarillo",
+      "snippet": "Le Tamarillo (Solanum betaceum) est une espèce du genre Solanum et de la famille des Solanaceae originaire de la cordillère des …Read more"
+    },
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …Read more"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …Read more"
+    },
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …Read more"
+    },
+    {
+      "title": "Tamarillo : culture et entretien de l'arbre à tomates",
+      "url": "https://www.jardiner-malin.fr/fiche/tamarillo.html",
+      "snippet": "Apr 28, 2012 · Le tamarillo ou arbre à tomates est un petit fruitier offrant de délicieux fruits acidulés. La culture et l'entretien, en terre …Read more"
+    }
+  ]
+}

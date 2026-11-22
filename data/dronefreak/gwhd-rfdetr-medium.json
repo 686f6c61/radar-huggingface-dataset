@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "id": "dronefreak/gwhd-rfdetr-medium",
+  "slug": "dronefreak-gwhd-rfdetr-medium",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gwhd-rfdetr-medium",
+  "created_at": "2026-08-11T08:29:32.000Z",
+  "updated_at": "2026-11-21T22:06:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "safetensors",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "agriculture",
+    "wheat",
+    "precision-agriculture",
+    "dense-detection",
+    "dataset:dronefreak/GWHD",
+    "arxiv:2105.07660",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "base_model:Roboflow/rf-detr-medium",
+    "base_model:finetune:Roboflow/rf-detr-medium",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 33367236,
+  "parameters_human": "33.4M",
+  "storage_bytes": 270318950,
+  "storage_human": "270 MB",
+  "context_length": null,
+  "base_model": "Roboflow/rf-detr-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Global Wheat Head Dataset",
+      "metric": "mAP@50 (test split)",
+      "value": 67.1
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Global Wheat Head Dataset",
+      "metric": "mAP@50-95 (test split)",
+      "value": 27.11
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Global Wheat Head Dataset",
+      "metric": "Precision (test split)",
+      "value": 78.6
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Global Wheat Head Dataset",
+      "metric": "Recall (test split)",
+      "value": 65.66
+    }
+  ],
+  "sources": []
+}

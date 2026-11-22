@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen2.5-14B-SLERPv7-GGUF",
+  "slug": "mradermacher-qwen2-5-14b-slerpv7-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-14B-SLERPv7-GGUF",
+  "created_at": "2024-12-21T11:19:46.000Z",
+  "updated_at": "2026-11-21T22:11:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011149312,
+  "storage_human": "102.0 GB",
+  "context_length": 131072,
+  "base_model": "CultriX/Qwen2.5-14B-SLERPv7",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

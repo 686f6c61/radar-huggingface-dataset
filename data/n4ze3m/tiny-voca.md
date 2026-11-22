@@ -2,83 +2,97 @@
 
 ## Resumen
 
-tiny-voca es un modelo de síntesis de voz (text-to-speech) en inglés desarrollado por n4ze3m, diseñado para ejecutarse en entornos con recursos muy limitados, como navegadores o teléfonos móviles. Se trata de un modelo entrenado desde cero, sin pesos preentrenados, con un total de 4.537.291 parámetros, incluyendo el generador de forma de onda. Ofrece dos voces en inglés americano: F2 (femenina) y M2 (masculina), con salida mono a 24 kHz.
+tiny-voca es un modelo de síntesis de voz (text-to-speech) en inglés desarrollado por n4ze3m, publicado bajo licencia Apache-2.0. Se trata de un modelo extremadamente compacto: 4.537.291 parámetros en total, incluyendo el generador de forma de onda, entrenado desde cero sobre aproximadamente 18 horas de voz sintética. Su rasgo diferencial es la eficiencia: funciona unas 70 veces más rápido que el tiempo real usando cuatro hilos de CPU, lo que lo hace apto para dispositivos sin GPU, navegadores y telefonos.
 
-El modelo destaca por su extrema ligereza: el archivo PyTorch en float32 ocupa 18,2 MB y la exportación ONNX 21,4 MB, lo que permite su despliegue en WebAssembly mediante onnxruntime-web. Según el autor, se ejecuta aproximadamente 70 veces más rápido que el tiempo real en cuatro hilos de CPU, lo que lo convierte en una opción viable para síntesis de voz local en dispositivos sin GPU.
+El modelo ofrece dos voces de inglés americano, F2 (femenina) y M2 (masculina), y produce audio mono a 24 kHz. La entrada de texto se convierte a fonemas mediante dizione, un fonemizador del mismo autor que se distribuye junto con los pesos. No emplea pesos preentrenados de terceros: es un entrenamiento completamente from scratch.
 
-La relevancia actual de tiny-voca radica en su enfoque en la eficiencia y la portabilidad: frente a modelos TTS de gran tamaño que requieren GPU, este modelo apuesta por una arquitectura compacta entrenada con unas 18 horas de voz sintética y publicada bajo licencia Apache-2.0, lo que facilita su integración en aplicaciones comerciales y de código abierto.
+Su relevancia actual radica en la categoría de TTS ultraligero desplegable en el borde (edge): el repositorio ocupa 0,1 GB, los pesos PyTorch en float32 pesan 18,2 MB y la exportación ONNX 21,4 MB, con ejecución verificada en onnxruntime-web (WebAssembly). Es una opción realista para síntesis local en aplicaciones web, moviles o sistemas embebidos donde no cabe un modelo neuronal de mayor tamano.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo TTS con generador de forma de onda; detalles de la arquitectura no especificados en la información disponible) |
+| Arquitectura | no disponible (modelo TTS acústico con generador de forma de onda; detalles de capas no publicados) |
 | Parametros totales | 4.537.291 |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica; límite de 512 tokens por utterance y 32 segundos de audio por llamada |
-| Tipos de cuantizacion | no disponible (pesos en float32; no se documentan variantes cuantizadas) |
-| Idiomas soportados | inglés (americano) |
+| Longitud de contexto | no aplica; limite de inferencia de 512 tokens fonemicos y 32 segundos por enunciado |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos float32 en PyTorch y ONNX; no se documentan variantes cuantizadas) |
+| Idiomas soportados | inglés (en), variante inglés americano |
 | Licencia | Apache-2.0 |
 | Formato de pesos | PyTorch (.pt, float32) y ONNX (opset 17, float32) |
+| Voces | F2 (femenina), M2 (masculina) |
+| Frecuencia de muestreo de salida | 24 kHz mono |
+| Entrada | Texto convertido a fonemas con dizione |
+| Pesos preentrenados de terceros | Ninguno |
+| Tamano del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo más allá de que se compone de un modelo principal y un generador de forma de onda, con un total de 4.537.291 parámetros. El modelo fue entrenado desde cero, sin pesos preentrenados, sobre aproximadamente 18 horas de voz sintética en inglés americano, según indica el autor. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO.
+La informacion disponible no detalla la topologia interna (numero de capas, tipo de atención o diseño del decoder acústico). Lo que sí se documenta es que el modelo completo, incluido el generador de forma de onda, suma 4,5 millones de parámetros y que fue entrenado desde cero, sin pesos preentrenados, sobre un corpus de aproximadamente 18 horas de voz sintética. El dataset de entrenamiento está publicado como n4ze3m/tiny-voca.
 
-El flujo de inferencia convierte el texto a fonemas mediante el fonemizador dizione, que genera identificadores de fonemas y valores de estrés (0 ninguno, 1 primario, 2 secundario). El grafo ONNX recibe estos identificadores junto con parámetros de voz, velocidad, desplazamiento de tono y rango de tono, y devuelve la forma de onda a 24 kHz junto con las duraciones por token en tramas de 256 muestras. El modelo procesa una utterance por llamada, con un máximo de 512 tokens y 32 segundos, y el texto más largo debe dividirse en frases.
+El pipeline es explícito: el texto se fonemiza con dizione fuera del grafo, y el modelo recibe identificadores de fonemas junto con marcas de acento (0 ninguno, 1 primario, 2 secundario), un identificador de voz, y tres parámetros de control continuo: velocidad, desplazamiento de tono (sumado al log F0) y rango de tono (escala el movimiento de tono alrededor de la media del enunciado). La salida incluye la forma de onda a 24 kHz y las duraciones por token en tramas de 256 muestras. No se documenta el uso de RLHF, DPO ni técnicas de alineación; tampoco decodificación especulativa ni atención lineal.
+
+Como innovación destacable, la exportación ONNX reproduce la salida de PyTorch con una diferencia inferior al 0,6 % de la amplitud de pico, excluyendo la senal de ruido aleatorio que cada runtime genera por su cuenta. Esto permite portar el mismo grafo a onnxruntime-web.
 
 ## Capacidades
 
-- Síntesis de voz en inglés americano con dos voces: F2 (femenina) y M2 (masculina).
-- Generación de audio a 24 kHz mono con control de velocidad de habla.
-- Control de tono mediante desplazamiento en escala logarítmica de F0 (0,058 equivale aproximadamente a un semitono) y escalado del movimiento de tono alrededor de la media de la utterance.
-- Procesamiento de texto de cualquier longitud en la herramienta de inferencia PyTorch, que divide el texto en frases y une el audio resultante.
-- Manejo de texto sin puntuación final: se añade un punto automáticamente; las frases sin contenido legible (por ejemplo, en otro sistema de escritura) se omiten.
-- Exportación ONNX compatible con onnxruntime-web (WebAssembly), con audio que coincide con el modelo PyTorch dentro del 0,6 % de la amplitud de pico, salvo el ruido aleatorio que cada runtime genera por sí mismo.
-- No se documentan capacidades de tool calling, agentes, razonamiento multietapa, visión ni audio de entrada.
+- Síntesis de voz a partir de texto en inglés americano con dos voces seleccionables (F2 y M2).
+- Control fino de prosodia en inferencia: velocidad, desplazamiento de tono (0,058 equivale aproximadamente a un semitono) y rango de tono.
+- Procesamiento de texto de cualquier longitud en la CLI de PyTorch: divide por frases y une el audio resultante.
+- Manejo de texto con números, horas y fechas en los ejemplos publicados (por ejemplo, "3:30 pm on March 14th"), aunque la normalización textual no se detalla.
+- Inferencia en CPU: aproximadamente 70 veces más rápido que tiempo real con cuatro hilos.
+- Ejecución en navegador mediante onnxruntime-web (WebAssembly).
+- Descarte robusto de frases sin contenido legible (por ejemplo, texto en otro sistema de escritura) y cierre automático de frases sin puntuación final.
+- No soporta tool calling, function calling, agentes, razonamiento multi-step, visión, audio de entrada ni modo thinking: es exclusivamente un modelo TTS.
 
 ## Casos de uso
 
-- Síntesis de voz en el navegador: el modelo ONNX se ejecuta en onnxruntime-web (WebAssembly) sin necesidad de servidor, lo que permite integrar lectura en voz alta en aplicaciones web con latencia baja y sin dependencias de GPU.
-- Aplicaciones móviles offline: con 18,2 MB en PyTorch y 21,4 MB en ONNX, el modelo cabe en dispositivos móviles y puede generar voz sin conexión a internet, útil para lectores de pantalla o asistentes locales.
-- Generación de avisos y notificaciones: para frases cortas como recordatorios de reuniones o alertas, el modelo procesa utterances de hasta 32 segundos con velocidad ajustable, adecuado para sistemas de notificación por voz.
-- Prototipado rápido de interfaces de voz: la licencia Apache-2.0 y la disponibilidad de pesos en PyTorch y ONNX facilitan la experimentación en proyectos de investigación o productos comerciales sin restricciones de licencia.
-- Sistemas embebidos y de bajo consumo: al ejecutarse aproximadamente 70 veces más rápido que el tiempo real en cuatro hilos de CPU, puede integrarse en dispositivos con recursos limitados para anuncios hablados o respuestas de voz.
-- Pruebas de accesibilidad: la posibilidad de elegir entre dos voces y ajustar velocidad y tono permite generar audio de prueba para evaluar la accesibilidad de aplicaciones antes de recurrir a voces comerciales.
-- Educación y demostraciones: el modelo sirve para ilustrar pipelines TTS completos (fonemización, inferencia, postprocesado de amplitud) en cursos o talleres, dado su pequeño tamaño y su código abierto.
+- Lectura por voz en el navegador: el grafo ONNX se ejecuta en onnxruntime-web con WebAssembly, de modo que una aplicación web puede sintetizar frases sin backend ni GPU, con audio a 24 kHz generado localmente.
+- Asistentes de voz en moviles y dispositivos embebidos: con 4,5 millones de parámetros y 18,2 MB de pesos, el modelo cabe en el presupuesto de memoria de un telefono y sintetiza a unas 70 veces el tiempo real en cuatro hilos de CPU.
+- Accesibilidad y lectura de contenido: convertir artículos, notificaciones o mensajes en audio para usuarios con discapacidad visual o en contextos de manos libres, troceando el texto por frases como hace `speak_text`.
+- Generación de avisos y locuciones pregrabadas: producir clips de audio para sistemas de megafonía, tutoriales o interfaces de voz, ajustando velocidad y tono por voz para adaptarse al estilo de cada producto.
+- Prototipado rápido de interfaces conversacionales: validar flujos de voz en un producto antes de invertir en un TTS de mayor calidad, usando las dos voces y los controles de prosodia para pruebas de UX.
+- Aplicaciones de privacidad estricta: al ejecutarse íntegramente en local, el texto del usuario no sale del dispositivo, lo que encaja en entornos sanitarios, legales o industriales con requisitos de confidencialidad.
+- Generación de audio en pipelines por lotes de bajo coste: sintetizar grandes volúmenes de frases cortas en CPU sin GPU dedicada, con la garantía de que el audio guardado no supera 0,99 de pico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica que el modelo se ejecuta aproximadamente 70 veces más rápido que el tiempo real en cuatro hilos de CPU, pero no se proporcionan métricas de calidad subjetiva (MOS) ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. El único dato de rendimiento documentado es la velocidad de inferencia: aproximadamente 70 veces el tiempo real con cuatro hilos de CPU. No se proporcionan métricas de calidad (MOS, WER, similitud de hablante) ni comparaciones cuantitativas con otros sistemas TTS.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica; el modelo está diseñado para ejecutarse en CPU. Los pesos en float32 ocupan 18,2 MB (PyTorch) y 21,4 MB (ONNX), por lo que la memoria necesaria es mínima.
-- GPU recomendadas: no se requieren; el modelo funciona en CPU. No se documenta soporte GPU específico.
-- Compatibilidad con GPU de consumo: irrelevante para su diseño, pero al ser tan pequeño cabría en cualquier GPU; no obstante, no se proporcionan datos de rendimiento en GPU.
-- Opciones de despliegue: PyTorch (script `tiny_voca.infer`), ONNX Runtime (Python) y onnxruntime-web (WebAssembly en navegador). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
-- Latencia y throughput: aproximadamente 70 veces más rápido que el tiempo real en cuatro hilos de CPU, según el autor. No se especifican latencias absolutas ni throughput en otras configuraciones.
+- VRAM estimada para inferencia: no aplica en el caso habitual; el modelo está disenado para CPU. Los pesos float32 ocupan 18,2 MB (PyTorch) y 21,4 MB (ONNX), por lo que la huella de memoria es minima.
+- GPU recomendadas: no se especifican; el modelo no requiere GPU. Cualquier GPU con soporte de ONNX Runtime o PyTorch puede ejecutarlo, pero no aporta una ventaja documentada.
+- Compatibilidad con GPU de consumo: sí, con enorme margen; el modelo cabe en cualquier GPU de consumo e incluso en entornos sin GPU.
+- Despliegue: CLI de PyTorch (`python -m tiny_voca.infer`), ONNX Runtime en Python y onnxruntime-web (WebAssembly) en navegador. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo TTS de este tipo.
+- Latencia y throughput: aproximadamente 70 veces más rápido que tiempo real en cuatro hilos de CPU. La latencia por petición no se publica; el límite por llamada es de 512 tokens fonemicos y 32 segundos de audio.
+- Almacenamiento: repositorio completo de 0,1 GB, incluyendo pesos, exportación ONNX y datos del fonemizador (5,4 MB).
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye comparaciones con otros modelos TTS.
+No se dispone de datos de benchmarks ni de comparaciones publicadas por el autor frente a otros sistemas TTS. La siguiente tabla recoge únicamente los datos verificables del modelo; las columnas de los competidores se dejan como no disponibles para no inventar cifras.
+
+| Modelo | Parametros | Idiomas | Licencia | Formatos | Notas |
+|---|---|---|---|---|---|
+| tiny-voca | 4,5 M | en | Apache-2.0 | PyTorch, ONNX | 70x tiempo real en 4 hilos de CPU; 2 voces |
+| Alternativas TTS ligeras (p. ej. Piper, Kokoro) | no disponible | no disponible | no disponible | no disponible | No se han publicado comparaciones en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés americano; el texto en otros sistemas de escritura se omite y no se genera audio para él.
-- El modelo puede producir picos de amplitud superiores a 1,0 (aproximadamente una frase de cada veinte), por lo que es necesario escalar la señal antes de guardar muestras de 16 bits.
-- Sin puntuación final, la última palabra se corta; es necesario terminar cada utterance con un signo como un punto.
-- Límite de 512 tokens y 32 segundos por llamada; el texto más largo debe dividirse en frases.
-- Entrenado con aproximadamente 18 horas de voz sintética, lo que puede limitar la naturalidad y variedad prosódica frente a modelos entrenados con datos reales a mayor escala.
-- No se documentan sesgos específicos, pero al ser un modelo entrenado con voz sintética en inglés americano, puede reflejar las características de esa fuente.
-- Riesgo de alucinación no aplica en el sentido de generación de texto, pero la calidad de la fonemización y la prosodia puede degradarse con texto complejo o no convencional.
-- Licencia Apache-2.0 permite uso comercial, pero se recomienda verificar las licencias de las dependencias (dizione) y de los datos de entrenamiento.
-- No se proporcionan métricas de calidad (MOS) ni evaluaciones formales, por lo que la idoneidad para producción debe validarse empíricamente.
+- Solo inglés americano: el texto en otros sistemas de escritura se descarta y no hay soporte multilingue.
+- Calidad de voz limitada por el tamano: 4,5 millones de parámetros y 18 horas de voz sintética implican una expresividad y naturalidad muy por debajo de sistemas TTS de mayor escala; no se publican métricas de calidad.
+- Entrenamiento sobre voz sintética: el modelo aprende de un corpus generado artificialmente, lo que puede introducir artefactos o sesgos propios del generador usado para crear los datos.
+- Límite por llamada de 512 tokens fonemicos y 32 segundos: el texto más largo debe trocearse por frases; sin puntuación final, la última palabra se corta.
+- Picos de amplitud: aproximadamente uno de cada veinte enunciados supera 1,0 de pico, por lo que es necesario escalar la salida antes de guardar muestras de 16 bits.
+- Dependencia del fonemizador dizione y de sus datos (5,4 MB) para convertir texto a identificadores; el grafo ONNX no incluye la fonemización.
+- Ruido aleatorio no determinista: cada runtime dibuja su propia senal de ruido, de modo que la salida no es bit a bit reproducible entre ejecuciones.
+- Sin datos publicados sobre sesgos demográficos, alucinación (aplicable aquí como pronunciación incorrecta) ni robustez ante texto adversario.
+- Licencia Apache-2.0: permite uso comercial y modificacion con atribucion y aviso de cambios; no se documentan restricciones adicionales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/n4ze3m/tiny-voca
-- Código: https://github.com/n4ze3m/tiny-voca
+- Repositorio de código: https://github.com/n4ze3m/tiny-voca
 - Fonemizador dizione: https://github.com/n4ze3m/dizione
-- Dataset: https://huggingface.co/datasets/n4ze3m/tiny-voca
+- Dataset de entrenamiento: https://huggingface.co/datasets/n4ze3m/tiny-voca
 - Demo en el navegador: https://huggingface.co/spaces/n4ze3m/tiny-voca-studio

@@ -2,93 +2,94 @@
 
 ## Resumen
 
-**delta** es un checkpoint de lenguaje de la familia TAMELM publicado por el usuario reaperdoesntknow en Hugging Face. Se trata de un modelo de investigación que explora una configuración arquitectónica concreta: atención enrutada (routed attention), atención de profundidad (depth attention) y mezcla de expertos sin descarte (dropless MoE). El repositorio incluye los pesos, la configuración, los activos del tokenizador y el código de modelado personalizado (`modeling_tamelm.py`), lo que lo convierte en un artefacto orientado al estudio de la arquitectura más que a su uso en producción.
+**delta** es un checkpoint de investigación publicado por el usuario `reaperdoesntknow` bajo la familia arquitectónica TAMELM (modelo de tipo `tamelm_two_axis`). Se trata de un modelo de lenguaje causal de 410.256.184 parámetros totales según los pesos en safetensors, con 28 capas, dimensión de embedding de 512 y una configuración de mezcla de expertos (MoE) con 4 expertos y top-k 2. La implementación incluye mecanismos propietarios de atención enrutada (*routed attention*), atención de profundidad (*depth attention*) y MoE sin descarte (*dropless MoE*), distribuidos como código personalizado en `modeling_tamelm.py`.
 
-El modelo tiene 410.256.184 parámetros totales según los safetensors publicados, 28 capas, dimensión de embedding de 512 y una longitud máxima de secuencia configurada de 1024 tokens. La configuración declara 4 expertos con top-k 2 y una dimensión oculta de experto de 2048, además de un mecanismo de atención de profundidad con 4 cabezas y 16 slots. El vocabulario es de 49152 tokens y el dtype configurado es float32.
+El modelo no está pensado como un producto listo para producción, sino como un artefacto de investigación para explorar una configuración arquitectónica concreta. El autor declara explícitamente que los nombres de arquitectura y los campos de configuración describen la implementación, no capacidades de razonamiento demostradas ni rendimiento en benchmarks. No se documenta receta de entrenamiento, composición del dataset, número de tokens ni proceso de alineación (RLHF/DPO).
 
-La relevancia de este checkpoint es fundamentalmente investigadora: permite inspeccionar y experimentar con una combinación arquitectónica poco habitual (MoE enrutado combinado con atención de profundidad) sin partir de cero. No obstante, el propio autor advierte de que no se documenta receta de entrenamiento, evaluación reproducible ni rendimiento medido, y de que no se ha validado una receta de carga y generación de extremo a extremo. La licencia no está declarada.
+Su relevancia actual es acotada: resulta interesante para quienes investigan variantes de atención y MoE con backend FlexAttention/Triton, pero carece de licencia declarada, de idiomas soportados documentados y de evaluación reproducible, lo que limita seriamente su adopción fuera de entornos de experimentación controlados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | TAMELM (`tamelm_two_axis`), transformer con routed attention, depth attention y MoE dropless |
+| Arquitectura | TAMELM (`tamelm_two_axis`), transformer causal con routed attention, depth attention y dropless MoE |
 | Parametros totales | 410.256.184 |
-| Parametros activos | no disponible (4 expertos, top-k 2; el autor no publica recuento activo medido) |
+| Parametros activos | no disponible (MoE con 4 expertos y top-k 2; el autor no publica el recuento activo medido) |
 | Longitud de contexto | 1024 tokens (máximo configurado) |
-| Tipos de cuantizacion | no disponible (dtype configurado: float32) |
+| Tipos de cuantizacion | no disponible (pesos publicados en float32; no se documentan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no declarada en el repositorio) |
-| Formato de pesos | safetensors, con código de modelado personalizado (`modeling_tamelm.py`) |
+| Licencia | no disponible (no se declara licencia en el repositorio) |
+| Formato de pesos | safetensors (con código custom en `modeling_tamelm.py`) |
 
-Otros parámetros de configuración publicados: 28 capas, dimensión de embedding 512, 16 cabezas de query, 2 cabezas key/value, dimensión de experto 2048, modo de profundidad `attention`, dimensión de profundidad 512, 4 cabezas de profundidad, 16 slots de profundidad, backend de atención `flex`, backend de expertos `grouped`, vocabulario 49152, versión de Transformers registrada 5.5.0, `use_cache: false`.
+Otros parámetros recogidos en `config.json`: 16 cabezas de query, 2 cabezas key/value, dimensión de experto 2048, dimensión de profundidad 512, 4 cabezas de profundidad, 16 slots de profundidad, backend de atención `flex`, backend de expertos `grouped`, vocabulario de 49152, dtype configurado `float32`, versión de Transformers registrada 5.5.0 y `use_cache: false`.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es TAMELM, un transformer con tres elementos diferenciadores según la model card: atención enrutada, atención de profundidad y una mezcla de expertos sin descarte (dropless MoE). La configuración combina 28 capas con dimensión 512, 16 cabezas de query y solo 2 cabezas key/value (atención con compartición de K/V tipo GQA), más 4 expertos con top-k 2 y dimensión oculta 2048. El mecanismo de profundidad opera en modo `attention` con 4 cabezas y 16 slots sobre una dimensión de 512. El backend de atención es `flex` (FlexAttention) y el de expertos `grouped` (grouped GEMM), con implementaciones densas/de referencia alternativas y aceleración opcional vía CUDA FlexAttention y Triton grouped-GEMM. La caché de inferencia está desactivada (`use_cache: false`).
+La arquitectura es un transformer causal con atención agrupada (16 cabezas de query frente a 2 de key/value), complementado por dos mecanismos propietarios: *routed attention* y *depth attention*. El componente MoE emplea 4 expertos con top-k 2 y dimensión oculta de experto 2048, en modalidad *dropless*. La atención de profundidad opera con dimensión 512, 4 cabezas y 16 slots, y el modelo usa backend FlexAttention con aceleración opcional mediante Triton grouped-GEMM. La implementación incluye alternativas densas/de referencia para los mismos componentes, de modo que el comportamiento depende del runtime y del hardware.
 
-No se documenta la receta de entrenamiento: el repositorio no especifica conjuntos de datos ni sus licencias, preprocesado, duración o número de tokens, ajustes de optimizador, hardware ni criterios de selección de checkpoints. Tampoco se indica si hubo RLHF, DPO u otra fase de alineamiento. El autor subraya explícitamente que los nombres de arquitectura y los campos de configuración describen la implementación, no una capacidad de razonamiento demostrada ni un rendimiento medido, y que un límite de secuencia configurado no es evidencia de calidad en contexto largo.
+No se documenta la receta de entrenamiento: se desconocen los datasets y sus licencias, el preprocesado, la duración o el número de tokens vistos, los hiperparámetros del optimizador, el hardware empleado y los criterios de selección de checkpoints. Tampoco se indica si hubo RLHF, DPO u otra fase de alineación. El autor advierte que la versión de Transformers registrada es metadato de exportación y no un lockfile de dependencias probado, y que no se ha validado una receta de carga y generación de extremo a extremo.
 
 ## Capacidades
 
-- Generación de texto autoregresiva como tarea principal declarada (`text-generation`).
-- Exploración de arquitecturas MoE enrutadas con top-k 2 sobre 4 expertos.
-- Atención de profundidad con 16 slots y 4 cabezas, según la configuración publicada.
+- Generación de texto causal mediante `AutoModelForCausalLM` con código personalizado (`auto_map` hacia `modeling_tamelm.TAMELM`).
+- Exploración de atención enrutada y atención de profundidad como mecanismos alternativos a la atención estándar.
+- Enrutamiento MoE con 4 expertos y top-k 2 en modo *dropless*.
+- Aceleración opcional con CUDA FlexAttention y Triton grouped-GEMM, sujeta a compatibilidad de runtime y hardware.
 - Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (no se declaran idiomas).
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Ejecución con código personalizado vía `auto_map` (`AutoConfig` → `TAMEConfig`, `AutoModelForCausalLM` → `TAMELM`), lo que permite cargarlo con Transformers usando `trust_remote_code=True`.
+- Soporte de agentes y razonamiento multi-paso: no disponible (el autor no lo declara).
+- Capacidades multilingües: no disponible.
+- Modo *thinking*, visión o audio: no disponible.
+- Caché de clave/valor: deshabilitada en la configuración (`use_cache: false`).
 
 ## Casos de uso
 
-- Investigación arquitectónica sobre MoE enrutado: el checkpoint permite inspeccionar cómo se implementa una mezcla de 4 expertos con top-k 2 y backend grouped-GEMM, y comparar su comportamiento con implementaciones densas de referencia incluidas en el propio código.
-- Estudio de atención de profundidad: los 16 slots y 4 cabezas de profundidad configurados permiten experimentar con este mecanismo sobre secuencias de hasta 1024 tokens, un régimen manejable para pruebas controladas.
-- Reproducción y auditoría de código de modelado personalizado: al incluir `modeling_tamelm.py`, sirve para revisar patrones de implementación de FlexAttention y Triton en un transformer pequeño (410 M de parámetros).
-- Pruebas de integración con Transformers 5.x: la configuración registra la versión 5.5.0, por lo que es útil para validar flujos de carga con `auto_map` y código remoto en esa rama.
-- Experimentos de ajuste fino a pequeña escala: con 410 M de parámetros y dtype float32, cabe en una única GPU de consumo para tareas de investigación con datasets pequeños, siempre que se valide primero la carga.
-- Docencia y divulgación técnica: un modelo de este tamaño con arquitectura no estándar resulta adecuado para explicar MoE, GQA y atención de profundidad en entornos formativos, sin necesidad de infraestructura grande.
+- Investigación de arquitecturas de atención: el modelo sirve como banco de pruebas para comparar routed attention y depth attention frente a atención estándar en un transformer de 28 capas y dimensión 512, con código de referencia incluido en el repositorio.
+- Estudio de MoE con enrutamiento disperso: permite analizar el comportamiento de 4 expertos con top-k 2 y sin descarte de tokens, midiendo balance de carga y utilización de expertos en un modelo pequeño.
+- Validación de backends de aceleración: útil para probar FlexAttention con Triton grouped-GEMM frente a las alternativas densas incluidas, evaluando compatibilidad y rendimiento en distintas GPUs.
+- Reproducción de configuraciones arquitectónicas: al publicarse `config.json` y `modeling_tamelm.py`, se puede auditar y modificar la implementación para experimentos controlados con revisiones fijadas.
+- Docencia y formación: un modelo de 410 M parámetros con contexto de 1024 tokens es manejable para ilustrar mecanismos de atención y MoE en cursos avanzados de aprendizaje profundo.
+- Pruebas de integración con Transformers 5.5.0: sirve para verificar la carga de modelos con `auto_map` y código remoto en pipelines de investigación, siempre con revisión previa del código.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que no se afirman puntuaciones de benchmark, mejoras comparativas ni garantías de aptitud para producción.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que la model card no contiene puntuaciones de benchmark, mejoras comparativas ni afirmaciones de preparación para producción.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 410.256.184 parámetros en float32, los pesos ocupan aproximadamente 1,64 GB; en float16/bfloat16, unos 0,82 GB. A ello hay que sumar activaciones, buffers de atención y memoria del runtime, por lo que conviene reservar al menos 3-4 GB en float32 y 2-3 GB en precisión reducida, como estimación orientativa.
-- GPU recomendadas: no hay recomendaciones publicadas. Por tamaño, cualquier GPU con 8 GB o más debería acomodar los pesos; para pruebas con FlexAttention y Triton se recomienda hardware NVIDIA con soporte CUDA reciente.
-- GPU de consumo: sí, previsiblemente cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090, así como en GPUs de 8 GB en precisión reducida, sujeto a validar la carga.
-- Opciones de despliegue: Transformers con `trust_remote_code=True` es la vía documentada. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, dado que la arquitectura es personalizada y no está integrada de forma nativa.
-- Latencia y throughput: no disponibles. La configuración desactiva la caché (`use_cache: false`), lo que previsiblemente penaliza la generación autoregresiva al recomputar el contexto en cada paso.
+- VRAM estimada para inferencia en float32: aproximadamente 1,6 GB solo para pesos (410 M × 4 bytes), más activaciones y estados de atención; con 1024 tokens de contexto el consumo adicional es moderado.
+- VRAM estimada en cuantización de 8 bits: alrededor de 0,4-0,5 GB para pesos; en 4 bits, en torno a 0,2-0,3 GB (estimaciones teóricas, no verificadas por el autor).
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para float32; las rutas aceleradas con FlexAttention y Triton requieren GPUs NVIDIA compatibles con CUDA y las versiones de Triton adecuadas.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060, RTX 4060, RTX 4090 y similares, aunque el autor no valida ninguna configuración concreta.
+- Opciones de despliegue: Transformers con `trust_remote_code=True` y revisión fijada; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y la ausencia de formatos GGUF limita las alternativas ligeras.
+- Latencia y throughput: no disponibles; `use_cache` está deshabilitado, lo que penaliza la generación autorregresiva y hace esperable una latencia mayor que en modelos con caché KV.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| reaperdoesntknow/delta | 410.256.184 | 1024 | no disponible | Hugging Face, código personalizado | MoE dropless de 4 expertos, depth attention, sin benchmarks |
-| Qwen2.5-0.5B | ~494 M | 32 768 | Apache 2.0 | Hugging Face, integración nativa en Transformers | Transformer denso estándar, benchmarks publicados |
-| SmolLM2-360M | ~362 M | 8192 | Apache 2.0 | Hugging Face, integración nativa | Transformer denso, orientado a dispositivos de borde |
-| TinyLlama-1.1B | ~1,1 B | 2048 | Apache 2.0 | Hugging Face, integración nativa | Transformer denso, ampliamente probado en producción |
+| delta (TAMELM) | 410 M | 1024 | no disponible | Hugging Face, código custom | Sin benchmarks ni receta de entrenamiento |
+| Qwen2.5-0.5B | 494 M | 32 768 | Apache 2.0 | Hugging Face, amplio ecosistema | Arquitectura estándar, evaluaciones publicadas |
+| SmolLM2-360M | 362 M | 8192 | Apache 2.0 | Hugging Face | Orientado a despliegue en dispositivo |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Hugging Face | Transformer estándar con receta documentada |
 
-La comparación es estructural, no de rendimiento: no existen métricas publicadas de delta que permitan contrastar calidad frente a estas alternativas. La diferencia principal radica en la arquitectura experimental y en la ausencia de licencia y de evaluación reproducible, frente a modelos densos convencionales con soporte nativo y benchmarks.
+La comparación es orientativa: los modelos alternativos cuentan con licencia clara, contexto mayor y evaluaciones publicadas, mientras que delta carece de todos esos elementos. No se dispone de datos de rendimiento de delta para comparar calidad.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se permite asumir uso comercial; es necesario confirmar los términos con el propietario del repositorio antes de redistribuir o desplegar.
-- Sin benchmarks ni evaluación reproducible: no hay evidencia publicada de calidad, razonamiento ni rendimiento en tareas concretas.
-- Sin receta de entrenamiento documentada: se desconocen datasets, licencias de datos, número de tokens y criterios de selección de checkpoints, lo que impide auditar sesgos u origen de datos.
-- Riesgo de alucinación y salidas incorrectas, sesgadas o inseguras: el autor recomienda evaluación independiente antes de usar las salidas en cualquier aplicación.
-- Contexto limitado a 1024 tokens: insuficiente para conversaciones multi-turno largas, documentos extensos o agentes con historial amplio.
-- Idiomas no declarados: no hay garantía de cobertura multilingüe ni de calidad en castellano.
-- Código remoto requerido: la carga exige `trust_remote_code=True`; conviene revisar `modeling_tamelm.py` y fijar una revisión concreta del repositorio para reproducibilidad.
-- Receta de carga y generación no validada de extremo a extremo según la propia model card; no se ofrece garantía de inferencia independiente del hardware.
-- Caché desactivada (`use_cache: false`): impacto negativo esperable en latencia de generación.
-- Compatibilidad de backends dependiente de runtime, hardware y paquetes instalados (FlexAttention/Triton).
-- Sin soporte confirmado en motores de inferencia habituales (vLLM, llama.cpp, Ollama, TGI) al tratarse de una arquitectura personalizada.
+- Licencia no declarada: no se puede asumir uso comercial ni redistribución sin confirmación expresa del propietario del repositorio.
+- Sin evaluación reproducible: no hay benchmarks, ni informe de evaluación, ni receta de entrenamiento verificable.
+- Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar contenido incorrecto, sesgado o inseguro; el autor recomienda verificación independiente.
+- Sesgos desconocidos: al no documentarse datasets ni proceso de alineación, no es posible caracterizar sesgos.
+- Idiomas no documentados: se desconoce la cobertura lingüística real pese a un vocabulario de 49152 tokens.
+- Contexto limitado a 1024 tokens, insuficiente para muchas aplicaciones de producción con conversaciones largas o documentos extensos.
+- Código remoto obligatorio: requiere `trust_remote_code=True` y revisión manual de `modeling_tamelm.py`; conviene fijar una revisión concreta para reproducibilidad.
+- Dependencias frágiles: la versión de Transformers registrada (5.5.0) es metadato de exportación, no un lockfile probado; la compatibilidad con backends FlexAttention/Triton depende del runtime y del hardware.
+- Sin caché KV (`use_cache: false`): la generación autorregresiva será más lenta y costosa en cómputo.
+- Sin garantía de carga y generación de extremo a extremo validada por el autor.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/delta
-- Archivos del repositorio: https://huggingface.co/reaperdoesntknow/delta/tree/main
+- Repositorio en Hugging Face: https://huggingface.co/reaperdoesntknow/delta
+- Ficheros del repositorio: https://huggingface.co/reaperdoesntknow/delta/tree/main
 - Configuración publicada: https://huggingface.co/reaperdoesntknow/delta/blob/main/config.json
-- Implementación personalizada: https://huggingface.co/reaperdoesntknow/delta/blob/main/modeling_tamelm.py
+- Implementación custom: https://huggingface.co/reaperdoesntknow/delta/blob/main/modeling_tamelm.py

@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF es una cuantizacion GGUF, generada por mradermacher, del modelo Austriani/Gemma-4-E2B-it-ARA-Abliterated, que a su vez deriva de la familia Gemma 4 de Google DeepMind en su variante E2B orientada a despliegue en el borde (edge). El modelo base es multimodal (texto, vision y audio), con una arquitectura de atencion hibrida que combina atencion por ventana deslizante y embeddings por capa, y un perfil de computo de aproximadamente 2.3B parametros efectivos sobre un total declarado de 5.1B. La variante ARA-Abliterated aplica una ablacion de rango arbitrario (Arbitrary Rank Ablation, ARA) para eliminar comportamientos de rechazo, dando como resultado un modelo "uncensored" orientado a chat, roleplay y escritura creativa.
+Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF es una cuantizacion en formato GGUF del modelo Austriani/Gemma-4-E2B-it-ARA-Abliterated, a su vez derivado de la familia Gemma 4 de Google DeepMind. El modelo original es un transformer multimodal (texto, vision y audio) disenado para despliegue en el borde y en dispositivo, con una arquitectura de atencion hibrida y una relacion entre parametros totales (5.1B) y efectivos (2.3B) que reduce el coste computacional en inferencia. Esta version concreta incorpora una ablacion de rango arbitrario (ARA, arbitrary-rank-ablation) aplicada con la herramienta heretic, que elimina la direccion de rechazo del modelo (abliterated/decensored) con una divergencia KL reportada de 0.1004 en el trial 61.
 
-La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo omni (texto, imagen y audio) pensado para ejecucion local, una tecnica de ablacion de rechazo documentada con una divergencia KL declarada de 0.1004, y un empaquetado en cuantizaciones GGUF con imatrix para su uso en llama.cpp y derivados. La licencia declarada es Apache 2.0, aunque el enlace de licencia apunta a los terminos de Gemma 4 de Google, lo que conviene verificar antes de un uso comercial.
+El trabajo de mradermacher consiste exclusivamente en la cuantizacion: genera una bateria amplia de variantes i1 (imatrix) que van desde IQ1_S (2.4 GB) hasta Q5_K_M (3.7 GB y superiores), lo que permite ejecutar el modelo en hardware muy modesto, incluidos equipos de consumo y dispositivos de borde. El repositorio ocupa 73.3 GB debido a la multiplicidad de cuantizaciones publicadas.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamano del repo figura como 0.0 GB, por lo que la disponibilidad real de los ficheros de cuantizacion no esta confirmada por los metadatos. El dato de parametros totales en safetensors (1.391.607) no es coherente con los 5.1B totales declarados en las etiquetas, lo que sugiere que el campo de safetensors no refleja el modelo completo o corresponde a un artefacto auxiliar.
+La relevancia actual de esta ficha radica en tres factores: la naturaleza multimodal del modelo base (vision-lenguaje y audio), su orientacion a despliegue on-device y la eliminacion de rechazos, que lo hace atractivo para casos de escritura creativa, roleplay y agentes sin restricciones de contenido, aunque con los riesgos asociados que se detallan mas abajo. El modelo esta publicado bajo licencia Apache 2.0 segun la model card, con enlace a la licencia de Gemma 4 de Google.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con atencion hibrida (sliding-window attention) y embeddings por capa; familia Gemma 4 E2B |
-| Parametros totales | 5.1B declarados en etiquetas; 1.391.607 en safetensors (dato no coherente, ver resumen) |
-| Parametros activos | 2.3B efectivos (perfil declarado "2.3b-effective") |
+| Arquitectura | Transformer multimodal (vision-lenguaje-audio) con atencion hibrida y sliding-window attention, per-layer embeddings |
+| Parametros totales | 4.628.569.635 (segun safetensors); la model card declara 5.1B totales y 2.3B efectivos |
+| Parametros activos | 2.3B efectivos (arquitectura con parametros efectivos reducidos, no MoE clasico segun los tags) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con imatrix; tipos listados: Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_L, IQ4_XS, IQ4_NL, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 (con enlace a la licencia de Gemma 4 de Google) |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL, Q2_K_S, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (segun tags); existe tambien una version de cuantizaciones estaticas en repo separado |
+| Idiomas soportados | en (unico idioma declarado) |
+| Licencia | apache-2.0 (con license_link a la licencia de Gemma 4 de Google) |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la familia Gemma 4 en su variante E2B, disenada para despliegue en dispositivo. La arquitectura es un transformer multimodal con atencion hibrida: combina atencion por ventana deslizante (sliding-window attention) con embeddings por capa (per-layer embeddings), un esquema que reduce el coste de computo y memoria en inferencia local. El perfil declarado de 2.3B parametros efectivos frente a 5.1B totales indica un diseno con parametros no activos en cada paso, orientado a eficiencia en el borde. El modelo es "omni": procesa texto, imagen y audio, segun las etiquetas vision-language, audio y multimodal-chat.
+El modelo base emplea una arquitectura transformer multimodal con atencion hibrida que combina atencion completa con sliding-window attention, ademas de per-layer embeddings. Segun los tags, el modelo procesa texto, vision y audio (vision-language, audio, omni), lo que lo situa en la categoria de modelos omni orientados a despliegue en el borde. La relacion entre 5.1B parametros totales y 2.3B efectivos sugiere un diseno que reduce el coste de computo por token sin recurrir a un MoE clasico, aunque la informacion disponible no detalla el mecanismo exacto.
 
-Sobre el entrenamiento no se proporcionan datos en la informacion disponible: no se especifican tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO. La modificacion ARA-Abliterated aplica una ablacion de rango arbitrario (Arbitrary Rank Ablation) sobre el modelo instruct, con el objetivo de eliminar las direcciones de activacion asociadas al rechazo. La model card cita la herramienta heretic, la etiqueta refusal-removed y una divergencia KL de 0.1004 respecto al modelo original, ademas de una identificacion de prueba "ara-trial-61". No se detalla la metodologia exacta de la ablacion ni el conjunto de datos de calibracion empleado.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original. La innovacion tecnica destacable de esta version es la ablacion de rango arbitrario (ARA) aplicada sobre el modelo instruido, documentada con una divergencia KL de 0.1004 en el trial 61, que elimina la direccion de rechazo preservando en teoria el resto de capacidades. La cuantizacion i1 utiliza una matriz de importancia (imatrix) generada a partir de datos de calibracion, lo que mejora la calidad de las cuantizaciones de baja precision respecto a las estaticas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con enfasis en chat, roleplay y escritura creativa segun las etiquetas del autor.
-- Procesamiento multimodal: vision (vision-language) y audio, de acuerdo con las etiquetas del modelo base.
-- Razonamiento multi-turno y comportamiento de agente (etiquetas agent e instruct).
-- Formato instruct y plantilla de chat conversacional.
-- Modo sin rechazo (abliterated/uncensored): el modelo no aplica las negativas tipicas del modelo instruct original ante peticiones que este rechazaria.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun el campo de idiomas; no se declaran otros idiomas.
-- Capacidades especiales: multimodalidad omni (texto, imagen, audio) y despliegue en dispositivo; no se declara modo "thinking" explicito.
+- Generacion de texto conversacional en ingles, con modo chat e instruct.
+- Procesamiento multimodal: vision (imagenes) y audio, segun los tags del modelo base.
+- Razonamiento multi-paso y soporte para uso como agente.
+- Escritura creativa y roleplay, reforzado por la eliminacion de rechazos.
+- Capacidad de function calling / tool calling: no confirmada en la informacion disponible.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Despliegue en dispositivo y en el borde gracias a su reducido numero de parametros efectivos.
 
 ## Casos de uso
 
-- Asistente conversacional local en ingles: el modelo puede mantener dialogos multi-turno en un equipo de sobremesa o dispositivo con recursos limitados, gracias a su perfil de 2.3B parametros efectivos y a las cuantizaciones GGUF de baja precision (Q4_K_M, IQ4_XS) que reducen el peso en memoria.
-- Roleplay y escritura creativa sin restricciones de contenido: la ablacion ARA elimina los rechazos del modelo instruct, lo que lo hace adecuado para generar narrativa, dialogos de personajes y ficcion interactiva donde el modelo base tenderia a negarse.
-- Prototipado de aplicaciones multimodales en el borde: al aceptar imagen y audio ademas de texto, permite construir demos de descripcion de imagenes o transcripcion conversacional en local sin depender de una API en la nube.
-- Evaluacion de tecnicas de ablacion: util como referencia para investigadores que comparan el efecto de ARA sobre la tasa de rechazo y la calidad del modelo, con la divergencia KL declarada (0.1004) como metrica de partida.
-- Generacion de contenido asistida en entornos sin conectividad: un modelo GGUF ejecutable con llama.cpp permite desplegar generacion de texto en equipos aislados o con requisitos de privacidad, siempre que el contenido generado se revise.
-- Filtrado y reescritura de texto en pipelines locales: con cuantizaciones pequenas (Q2_K, IQ2_M) puede integrarse en flujos de preprocesado o resumen en ingles donde el coste por token y la latencia importan mas que la precision maxima.
-- Base para fine-tuning ligero: al estar disponible en GGUF y con el modelo base en safetensors, sirve como punto de partida para adaptaciones LoRA en tareas de escritura creativa o atencion al cliente en ingles.
+- Roleplay y escritura creativa sin restricciones: la ablacion de rechazo permite generar narrativa y dialogos que el modelo original rechazaria, adecuado para plataformas de ficcion interactiva y juegos de rol por texto.
+- Asistentes conversacionales on-device: con cuantizaciones de 2.4-3.5 GB, el modelo cabe en moviles de gama alta y mini-PC, permitiendo asistentes privados sin conexion a la nube.
+- Procesamiento de imagenes en el borde: al ser vision-language, puede describir imagenes, extraer texto y responder preguntas visuales en dispositivos con recursos limitados.
+- Transcripcion y comprension de audio local: la capacidad de audio del modelo base permite construir interfaces de voz privadas en hardware de consumo.
+- Generacion de contenido para videojuegos: su tamano reducido y su capacidad creativa lo hacen util para generar dialogos de NPC y descripciones de objetos en tiempo real dentro del juego.
+- Prototipado rapido de agentes: con 2.3B parametros efectivos, se puede iterar sobre flujos de agente en una sola GPU de consumo antes de escalar a modelos mayores.
+- Educacion y tutoria personalizada: despliegue local en aulas o dispositivos sin conectividad, con contenido adaptado y sin dependencia de APIs externas.
 
 ## Benchmarks y rendimiento
 
@@ -54,42 +54,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por el perfil declarado (2.3B efectivos, 5.1B totales), una cuantizacion Q4_K_M requeriria del orden de 3-4 GB y una Q8 o Q6_K del orden de 6-7 GB; estas cifras son estimaciones, no datos publicados.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Cabe en GPU de consumo: previsiblemente si, en tarjetas con 8 GB o mas para cuantizaciones medias; no confirmado por el autor.
-- Opciones de despliegue: llama.cpp y derivados compatibles con GGUF (Ollama, LM Studio, llama-cpp-python). El modelo base se distribuye para transformers; vLLM y TGI no estan confirmados para esta variante.
-- Latencia y throughput estimados: no disponible.
-- Nota: los ficheros mmproj necesarios para las capacidades de vision se encuentran, segun la model card, en el repositorio estatico hermano (mradermacher/Gemma-4-E2B-it-ARA-Abliterated-GGUF), no en este repositorio i1.
+- VRAM estimada: entre 2.5 GB (IQ2) y 4.5 GB (Q6_K) aproximadamente, segun el tamano del fichero GGUF y el overhead de contexto.
+- GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM para las cuantizaciones medias; RTX 3060, RTX 4060, RTX 4090 para mayor velocidad; A100/H100 no son necesarias dado el tamano.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas de 6 GB o mas; las cuantizaciones IQ2 permiten incluso GPUs de 4 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF; vLLM y TGI no soportan GGUF de forma nativa generalizada.
+- Latencia y throughput: no disponibles en la informacion proporcionada; dependen en gran medida de la cuantizacion y del hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF (este) | 5.1B totales / 2.3B efectivos | no disponible | Texto, vision, audio | Apache 2.0 (enlace a licencia Gemma 4) | GGUF i1 con imatrix |
-| Gemma-4-E2B-it-ARA-Abliterated (base) | 5.1B totales / 2.3B efectivos | no disponible | Texto, vision, audio | Apache 2.0 | Safetensors, transformers |
-| Gemma-4-E2B-it-ARA-Abliterated-GGUF (estatico) | 5.1B totales / 2.3B efectivos | no disponible | Texto, vision, audio (incluye mmproj) | Apache 2.0 | GGUF estatico |
+| Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF | 5.1B totales / 2.3B efectivos | no disponible | Si (vision, audio) | Apache 2.0 | GGUF en HF |
+| Gemma-4-E2B-it (original) | 5.1B totales / 2.3B efectivos | no disponible | Si (vision, audio) | Licencia Gemma 4 | HF |
+| Modelos abliterated de 7-8B | ~7-8B | variable | Generalmente solo texto | variable | GGUF en HF |
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparacion cuantitativa con alternativas de otros autores; la comparativa se limita a las variantes del mismo modelo publicadas por el autor.
+La comparativa con modelos de la misma categoria (pequenos multimodales on-device) no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La ablacion de rechazo elimina las negativas del modelo instruct, por lo que puede generar contenido sensible, ofensivo o inapropiado; requiere filtrado y supervision en produccion.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad; un modelo pequeno y cuantizado a baja precision (Q2, IQ1, IQ2) incrementa la degradacion de calidad y la probabilidad de errores.
-- Idiomas: solo se declara ingles; no hay soporte documentado de castellano ni de otros idiomas.
-- Longitud de contexto: no disponible, lo que impide garantizar conversaciones largas o documentos extensos.
-- Licencia: se declara Apache 2.0, pero el enlace apunta a los terminos de Gemma 4 de Google; conviene verificar las condiciones reales de uso comercial antes de desplegar.
-- Coherencia de metadatos: el recuento de parametros en safetensors (1.391.607) no concuerda con los 5.1B declarados, y el tamano del repositorio figura como 0.0 GB; verificar la integridad de los ficheros antes de usarlos.
-- Cuantizaciones muy agresivas (IQ1, IQ2, Q2) degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
-- Las capacidades de vision y audio dependen de ficheros mmproj alojados en otro repositorio; su ausencia limita el uso multimodal.
-- Modelo con 0 descargas y 0 likes: sin validacion de la comunidad, sin benchmarks publicados y sin garantias de mantenimiento.
+- La ablacion de rechazo elimina los filtros de seguridad del modelo original; puede generar contenido sensible, ofensivo o inapropiado sin advertencia.
+- Riesgo de alucinacion inherente a modelos de este tamano, especialmente en tareas de razonamiento complejo y datos factuales.
+- Solo soporta ingles; no se garantiza un rendimiento correcto en castellano ni en otros idiomas.
+- La longitud de contexto no esta documentada, lo que dificulta planificar casos de uso con ventanas largas.
+- La licencia Apache 2.0 declarada remite a la licencia de Gemma 4 de Google; conviene verificar los terminos de uso comercial del modelo base antes de desplegarlo en produccion.
+- La cuantizacion introduce perdida de calidad; las variantes IQ1 e IQ2 pueden degradar notablemente la coherencia.
+- El modelo es un derivado no oficial de Gemma 4; no cuenta con el respaldo de Google DeepMind.
+- La informacion sobre tool calling y modo thinking no esta confirmada, por lo que no debe asumirse en disenos de produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF
-- Modelo base: https://huggingface.co/Austriani/Gemma-4-E2B-it-ARA-Abliterated
-- Repositorio de cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Gemma-4-E2B-it-ARA-Abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF
+- Modelo base (safetensors): https://huggingface.co/Austriani/Gemma-4-E2B-it-ARA-Abliterated
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Gemma-4-E2B-it-ARA-Abliterated-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Comparativa de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

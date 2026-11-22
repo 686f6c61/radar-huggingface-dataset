@@ -2,98 +2,91 @@
 
 ## Resumen
 
-biolm-7b (presentado en la model card como biolm2.5-Omni) es un modelo multimodal publicado en Hugging Face por el usuario chibubu. Según la escasa documentación disponible, se trata de un modelo end-to-end diseñado para percibir texto, imágenes, audio y vídeo, y para generar de forma simultánea respuestas de texto y habla natural en modo streaming. La model card se limita a una sección "Overview / Introduction" y no aporta detalles sobre datos de entrenamiento, licencia, idiomas ni evaluación.
+Biolm-7B es un modelo multimodal any-to-any derivado de Qwen2.5-Omni-7B, publicado por el usuario chibubu en Hugging Face. Acepta texto, imagen, audio y vídeo como entrada, y genera texto y voz natural como salida en modo streaming. Su propósito declarado es la investigación académica en razonamiento temporal multimodal, análisis de atención entre modalidades y modelado de lenguaje audiovisual. El repositorio tiene 637 descargas y 22,4 GB de tamaño, con pesos en safetensors y compatibilidad con la librería transformers.
 
-El nombre del repositorio induce a error: aunque se denomina "7b", el recuento real de parámetros declarado en los metadatos de safetensors es de 10.732.225.440 (aproximadamente 10,73 mil millones), lo que lo sitúa en la franja de 10-11B. El tamaño del repositorio, 22,4 GB, es coherente con un checkpoint en precisión bf16/fp16 (los pesos en bf16 ocuparían unos 21,5 GB) más los ficheros auxiliares de tokenizer y configuración.
+El modelo se presenta como un ajuste o adaptación de Qwen2.5-Omni-7B orientado a "cross-modal temporal grounding", es decir, a la localización temporal de eventos a través de modalidades. La model card es notablemente escueta: no documenta el proceso de entrenamiento, los datos utilizados, los benchmarks ni los detalles de la arquitectura interna. La información disponible no permite verificar qué modificaciones concretas se han aplicado respecto al modelo base.
 
-La etiqueta de arquitectura declarada es `qwen2_5_omni`, lo que sugiere que el modelo se construye sobre la familia Qwen2.5-Omni, si bien no se confirma en la documentación. El interés actual del modelo es limitado desde el punto de vista de producción: cuenta con 0 descargas y 0 likes, no declara licencia y no publica benchmarks, por lo que debe tratarse como un experimento o derivado no validado.
+Es relevante para desarrolladores e investigadores que necesiten un modelo multimodal pequeño (7B) que combine entrada audiovisual con salida de voz, pero debe tratarse con cautela: la licencia declarada es contradictoria (`license: other` en los metadatos de la model card frente a `apache-2.0` en los metadatos del repositorio y en la información de la ficha), y no hay evidencia publicada de rendimiento.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible con detalle; la etiqueta del repositorio indica `qwen2_5_omni` (familia multimodal texto/imagen/audio/vídeo) |
-| Parámetros totales | 10.732.225.440 (~10,73B), según metadatos de safetensors |
-| Parámetros activos | No disponible (no se declara que sea un modelo MoE) |
+| Arquitectura | No disponible (derivado de Qwen2.5-Omni-7B; pipeline any-to-any) |
+| Parámetros totales | 10.732.225.440 (según safetensors) |
+| Parámetros activos | No disponible |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible en la model card; al publicarse en safetensors, es cuantizable a GGUF/AWQ/GPTQ con herramientas externas |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible (no se especifica licencia en el repositorio) |
-| Formato de pesos | safetensors (tamaño de repositorio: 22,4 GB) |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Contradictoria: `apache-2.0` en metadatos del repo; `other` / `apache-2.0` en la model card |
+| Formato de pesos | safetensors |
+| Tamaño del repositorio | 22,4 GB |
+| Librería | transformers |
+| Pipeline | any-to-any |
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no describe la arquitectura interna. La única referencia técnica es la etiqueta `qwen2_5_omni` asociada al repositorio, que apunta a la familia Qwen2.5-Omni: modelos multimodales con un componente de razonamiento (generación de texto) y un componente de síntesis de habla, capaces de procesar entradas de texto, imagen, audio y vídeo. La model card confirma el comportamiento descrito —percepción multimodal y generación simultánea de texto y habla en streaming— pero no detalla el número de capas, el tipo de atención, la composición del dataset ni el volumen de tokens de entrenamiento.
+No se dispone de información detallada sobre la arquitectura interna. El modelo se declara como una adaptación de Qwen2.5-Omni-7B, un modelo multimodal end-to-end que procesa texto, imagen, audio y vídeo y genera texto y habla. La model card no especifica si se ha modificado la arquitectura del modelo base, si se ha realizado fine-tuning completo o mediante adaptadores, ni qué componentes (encoder visual, encoder de audio, decoder de texto, generador de voz) se han alterado.
 
-Tampoco se documenta si hubo ajuste por RLHF, DPO u otras técnicas de alineación, ni innovaciones concretas como decodificación especulativa, atención lineal o mecanismos de streaming con latencia controlada. Cualquier afirmación al respecto sería especulativa y no debe asumirse en una evaluación técnica.
+Tampoco se documentan los datos de entrenamiento: no se indica el número de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La única indicación sobre el propósito es la investigación en "cross-modal temporal grounding" y comprensión audiovisual, lo que sugiere un posible ajuste sobre tareas de localización temporal, pero no hay evidencia publicada que lo confirme.
 
 ## Capacidades
 
-- Generación de texto a partir de entradas multimodales (texto, imagen, audio y vídeo), según la descripción del autor.
-- Generación de habla natural además de texto, de forma simultánea, lo que habilita respuestas habladas sin un TTS externo.
-- Procesamiento en streaming: la generación de texto y audio puede emitirse de forma incremental, adecuada para interacción en tiempo real.
-- Comprensión de audio (entrada de voz) implícita en la descripción de "percibir audio".
-- Comprensión de vídeo como modalidad de entrada declarada.
-- Soporte de tool calling / function calling: no disponible en la documentación.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la documentación.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
-- Modo "thinking" explícito: no disponible.
+- Generación de texto a partir de entradas multimodales (texto, imagen, audio, vídeo).
+- Generación de voz natural como salida, con soporte de streaming según la model card.
+- Comprensión de audio: el modelo acepta audio como entrada y puede generar respuesta hablada.
+- Comprensión de vídeo: acepta vídeo como entrada (sin salida de vídeo).
+- Comprensión de imagen: acepta imagen como entrada (sin salida de imagen).
+- Razonamiento temporal multimodal: propósito declarado del ajuste (cross-modal temporal grounding).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según los metadatos.
 
 ## Casos de uso
 
-- Asistentes de voz conversacionales: el modelo puede recibir audio del usuario y emitir respuesta hablada en streaming, lo que permite construir un asistente de atención telefónica sin encadenar ASR + LLM + TTS, reduciendo la latencia acumulada del pipeline.
-- Análisis de reuniones y notas habladas: al aceptar audio como entrada y producir texto, encaja en flujos de transcripción con resumen y extracción de acciones, siempre que se valide empíricamente la calidad de transcripción.
-- Descripción y moderación de contenido audiovisual: la entrada de vídeo permite clasificar o resumir clips cortos; útil en pipelines de revisión de contenido donde se necesita una etiqueta textual y una justificación hablada.
-- Interfaces accesibles: generación de respuestas en voz para aplicaciones de lectura asistida o asistencia a personas con discapacidad visual, combinando entrada de imagen o texto con salida de habla.
-- Prototipado de agentes multimodales en investigación: al ser un modelo pequeño (10,73B) y publicarse en safetensors, sirve como base para experimentos de alineación multimodal en entornos con recursos limitados.
-- Evaluación comparativa de arquitecturas omni: útil como punto de partida para medir degradación de calidad al cuantizar un modelo que genera texto y habla de forma conjunta.
-- Demos interactivas de bajo coste: con cuantización a 4 bits cabe en GPU de consumo, lo que permite desplegar una demo local de conversación por voz sin infraestructura dedicada.
-
-Advertencia: al no existir benchmarks publicados ni licencia declarada, ninguno de estos casos debería llevarse a producción sin una evaluación propia previa y una revisión legal.
+- Investigación en grounding temporal audiovisual: el modelo puede emplearse para experimentos académicos que requieran localizar eventos o segmentos concretos dentro de audio o vídeo, alineando la señal temporal con descripciones textuales. Es el caso de uso explícitamente declarado por el autor.
+- Análisis de atención entre modalidades: útil para estudiar cómo un transformer multimodal distribuye la atención entre flujos de audio, vídeo y texto, dado que el modelo deriva de Qwen2.5-Omni y conserva su estructura multimodal.
+- Descripción de vídeo con salida hablada: para prototipos de accesibilidad que conviertan contenido audiovisual en narración de voz, aprovechando la salida de audio en streaming.
+- Asistentes por voz con contexto visual: en entornos de investigación, el modelo puede recibir una imagen o un fotograma junto con una consulta hablada y responder con voz, útil para estudiar interfaces conversacionales multimodales.
+- Transcripción y respuesta hablada sobre audio: para experimentos de diálogo por voz donde la entrada es audio y la salida debe ser también audio, sin pasar por un pipeline separado de ASR y TTS.
+- Evaluación comparativa de modelos any-to-any: como punto de comparación frente a Qwen2.5-Omni-7B original para medir el efecto del ajuste en tareas de razonamiento temporal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16/fp16: ~21,5 GB solo para pesos; con caché KV, activaciones y codificadores de audio/vídeo, el consumo realista se sitúa en el rango de 28-34 GB para contextos moderados (estimación calculada a partir del recuento de parámetros, no medida).
-- VRAM estimada en int8: ~11 GB de pesos, con un consumo total aproximado de 16-20 GB.
-- VRAM estimada en 4 bits (GGUF/AWQ): ~5,5-6,5 GB de pesos, con un total de 9-12 GB según longitud de contexto.
-- GPU de centro de datos recomendadas: A100 40 GB, L40S 48 GB o H100 para bf16 sin compromisos; A100 80 GB si se requiere contexto largo o procesamiento de vídeo.
-- GPU de consumo: no cabe en bf16 en tarjetas de 24 GB (RTX 4090/3090) con contexto amplio; en 4 u 8 bits sí es viable en RTX 4090, RTX 4080, RTX 3090 e incluso en RTX 4070 Ti / 4060 Ti de 16 GB con cuantización agresiva.
-- Despliegue: al publicarse únicamente safetensors y tratarse de una arquitectura tipo omni con salida de audio, las opciones realistas son vLLM (soporte de modelos omni limitado, requiere verificación), Transformers con `AutoModelForCausalLM`/clase específica de la familia, y llama.cpp/Ollama solo si existe conversión GGUF válida para los componentes de audio. TGI dependerá del soporte de la arquitectura en la versión desplegada.
-- Latencia y throughput: no disponible. En modelos omni, la generación de audio suele dominar la latencia; conviene medir tiempo hasta el primer token de audio en el hardware objetivo.
+- VRAM estimada para inferencia en precisión completa (fp16/bf16): aproximadamente 21-22 GB solo para los pesos (10.732 millones de parámetros), más overhead de activaciones y del procesador multimodal; se recomienda al menos 24-32 GB de VRAM.
+- GPU recomendadas para fp16: A100 (40/80 GB), H100, L40S, A6000. Una RTX 4090 (24 GB) queda al límite y puede requerir cuantización o descarga parcial de capas.
+- GPU de consumo: viable en RTX 4090 con cuantización (8 bits o 4 bits) o en GPUs con 24 GB o más; en GPUs de 12-16 GB probablemente no cabe sin cuantización agresiva, aunque no se documentan tipos de cuantización soportados.
+- Opciones de despliegue: transformers (librería declarada). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos provienen de sus fichas públicas y deben verificarse antes de usarse en una decisión técnica; no se dispone de comparación de rendimiento porque biolm-7b no publica benchmarks.
-
-| Modelo | Parámetros | Modalidades | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| biolm-7b (chibubu) | ~10,73B | Texto, imagen, audio, vídeo; salida de texto y habla | No disponible | No disponible | Safetensors en HF, 0 descargas |
-| Qwen2.5-Omni-7B | ~7B | Texto, imagen, audio, vídeo; salida de texto y habla | No verificado en la información disponible | Apache 2.0 (según ficha oficial) | Pesos y demo públicos |
-| MiniCPM-o 2.6 | ~8B | Texto, imagen, audio, vídeo; salida de texto y habla | No verificado en la información disponible | No verificado en la información disponible | Pesos públicos |
-| Modelos ASR + LLM + TTS en pipeline | Variable | Voz y texto | Depende de los componentes | Depende de los componentes | Composición de varios modelos |
+| Biolm-7B | 10,73 B (según safetensors) | No disponible | Texto, imagen, audio, vídeo → texto y audio | Contradictoria (apache-2.0 / other) | Hugging Face, 637 descargas |
+| Qwen2.5-Omni-7B | ~7 B (modelo base declarado) | No disponible en esta ficha | Texto, imagen, audio, vídeo → texto y audio | No disponible en esta ficha | Hugging Face (modelo base) |
+| Alternativas any-to-any de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La diferencia clave no es de tamaño, sino de madurez: frente a los modelos omni de referencia, biolm-7b no ofrece licencia, idiomas declarados, contexto ni evaluación, lo que impide una comparación cuantitativa.
+La comparación con Qwen2.5-Omni-7B es la más directa, ya que Biolm-7B se declara derivado de él. No obstante, no se dispone de datos de rendimiento de ninguno de los dos en esta ficha, por lo que no es posible establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: sin un fichero LICENSE ni una declaración en la model card, no existe permiso explícito de uso, modificación ni redistribución, tampoco comercial. En la práctica equivale a derechos reservados por defecto; es imprescindible contactar con el autor antes de cualquier uso en producción.
-- Ausencia total de benchmarks: no hay MMLU, HumanEval, GSM8K ni métricas de ASR/TTS, por lo que no puede afirmarse nada sobre su calidad frente a la familia Qwen2.5-Omni original.
-- Riesgo de alucinación: no evaluado. En modelos que generan habla de forma directa, los errores de contenido se propagan al audio sin posibilidad de revisión intermedia.
-- Idiomas no declarados: no puede asumirse un buen rendimiento en castellano; requiere evaluación específica antes de desplegarlo en producto.
-- Contexto desconocido: imposible dimensionar caché KV, coste por petición o idoneidad para documentos largos.
-- Discrepancia de nomenclatura: el nombre indica 7B pero el recuento real es 10,73B; conviene corregir las estimaciones de memoria y no reutilizar configuraciones pensadas para un modelo de 7B.
-- Trazabilidad dudosa: 0 descargas y 0 likes, sin paper, sin repositorio de código y sin demo. No hay evidencia de que el checkpoint esté validado o de que el entrenamiento haya finalizado correctamente.
-- Riesgo de sesgos: no documentado. Al desconocerse la composición del dataset, no puede evaluarse el sesgo de género, acento, idioma o cultura, especialmente relevante en un modelo con entrada de audio y salida de voz.
-- Coste de inferencia multimodal: procesar vídeo o audio incrementa notablemente el uso de VRAM y la latencia; las estimaciones de hardware deben validarse con la carga real.
-- Advertencia de seguridad: la generación de voz sintética abre la puerta a usos de suplantación; sin licencia ni política de uso aceptable, el riesgo recae enteramente en el integrador.
-- Fecha de creación declarada en 2026-10-28: verificar la procedencia y la integridad del repositorio antes de descargar 22,4 GB.
+- Ausencia total de benchmarks: no hay evidencia publicada de que el ajuste mejore o mantenga el rendimiento del modelo base; el uso en producción sin evaluación previa es arriesgado.
+- Licencia contradictoria: los metadatos del repositorio indican `apache-2.0`, mientras que la model card declara `license: other` con `license_name: apache-2.0`. Esta ambigüedad debe resolverse antes de cualquier uso comercial.
+- Documentación mínima: no se detallan datos de entrenamiento, arquitectura modificada ni proceso de ajuste, lo que impide evaluar sesgos introducidos.
+- Idioma: solo se declara inglés; el rendimiento en castellano u otros idiomas no está documentado.
+- Riesgo de alucinación: inherente a los modelos generativos multimodales; no hay evaluación específica publicada.
+- Sesgos: no documentados; al derivar de un modelo base con datos de entrenamiento no especificados, pueden heredarse sesgos del modelo original.
+- Contexto: se desconoce la longitud de contexto soportada, lo que limita la planificación de casos de uso con entradas largas de audio o vídeo.
+- Madurez: 637 descargas y 0 likes sugieren un modelo con poca validación por parte de la comunidad; la fecha de creación (2026-10-28) y actualización (2026-10-30) indican un proyecto muy reciente.
+- Uso previsto restringido a investigación: el autor declara explícitamente que el modelo es para investigación académica, no para producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/chibubu/biolm-7b
-- Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.
-- Los resultados de la búsqueda web suministrados no contienen enlaces relevantes al modelo (tratan sobre Grok y comparativas de asistentes comerciales), por lo que no se incluyen como referencias técnicas.
+- Modelo en Hugging Face: https://huggingface.co/chibubu/biolm-7b
+- Modelo base declarado (Qwen2.5-Omni-7B): no se proporciona enlace directo en la información disponible; se referencia por nombre en la model card.
+- Paper, blog o repositorio adicional: no disponibles en la información proporcionada.

@@ -2,96 +2,97 @@
 
 ## Resumen
 
-Symiotic-14B es un checkpoint experimental publicado por el usuario `reaperdoesntknow` (Convergent Intelligence LLC, Research Division) que parte del modelo base Qwen/Qwen3-14B y le añade una capa de módulos simbólicos propios: procesadores tipo LSTM multi-cabeza, un procesador "líquido", un procesador convolucional sobre grafo (DNAConv) y un codificador helicoidal, junto con un banco de memoria persistente de 4096 estados simbólicos en FP32. La model card lo describe como un híbrido simbólico-transformer con memoria persistente y "evolución simbólica" orientado a razonamiento cognitivo y generación de teoremas y código.
+Symiotic-14B es un fine-tune del modelo Qwen3-14B publicado por el usuario reaperdoesntknow bajo la marca Convergent Intelligence LLC (Research Division). Se presenta como un híbrido simbólico-transformer con memoria persistente, aunque los pesos publicados en safetensors corresponden a un transformer denso de 14.768.307.200 parámetros, es decir, la arquitectura base de Qwen3-14B. La model card describe módulos simbólicos adicionales (ThoughtDynamicsLNN, LiquidThoughtProcessor, CrystallineProcessor, HelicalDNAProcessor) y un banco de memoria de 4096 estados, pero el propio autor advierte que las capacidades descritas reflejan la intención arquitectónica y no resultados medidos con benchmarks.
 
-El modelo real medido en safetensors es de 14.768.307.200 parámetros (unos 14,8 mil millones), aunque la model card afirma 17,8 mil millones; esa discrepancia debe tenerse en cuenta. El repositorio ocupa 74,7 GB e incluye pesos en `model.bin` y `model.safetensors`, el banco de memoria `memory.pt`, tokenizer con tokens simbólicos añadidos (`<D_LIM>`, `<PROOF>`, `<BY_MEASURE>`, etc.) y configuración de generación.
+El modelo se entrenó sobre el dataset 0xZee/dataset-CoT-Advanced-Calculus-268, un conjunto de chain-of-thought centrado en cálculo avanzado, y declara soporte únicamente para inglés. Su relevancia actual es limitada pero ilustrativa: representa una línea de experimentación que combina un transformer de gran escala con estructuras simbólicas y memoria externa, un enfoque que otros proyectos abordan con arquitecturas híbridas más consolidadas. La licencia AFL-3.0 permite uso comercial con obligaciones de atribución y reciprocidad.
 
-Es relevante ahora porque ejemplifica una línea de trabajo emergente: injertar módulos simbólicos y memoria externa sobre un transformer denso de tamaño medio, con licencia permisiva (AFL-3.0) y compatibilidad con el ecosistema transformers/TGI. No obstante, el propio autor advierte que las capacidades descritas reflejan intención arquitectónica y no resultados medidos con benchmarks.
+Es importante señalar la discrepancia entre la model card (que menciona 17.800 millones de parámetros) y el recuento real de safetensors (14.770 millones), así como la falta de resultados de benchmarks publicados, lo que obliga a tratar las afirmaciones de capacidad con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrido simbólico-transformer sobre backbone Qwen3-14B (RoPE + FlashAttention) con módulos simbólicos adicionales (ThoughtDynamicsLNN, LiquidThoughtProcessor, CrystallineProcessor DNAConv GNN, HelicalDNAProcessor) |
-| Parametros totales | 14.768.307.200 (según safetensors); la model card declara 17,8 mil millones |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada de Qwen3-14B, no confirmada en la información) |
-| Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors/bin; no se listan GGUF ni AWQ) |
-| Idiomas soportados | en (inglés) |
-| Licencia | AFL-3.0 |
-| Formato de pesos | safetensors, bin (PyTorch), memory.pt (banco de memoria) |
+| Arquitectura | Transformer denso (Qwen3-14B) con módulos simbólicos declarados en la model card; no verificable en los pesos publicados |
+| Parametros totales | 14.768.307.200 (según safetensors); la model card declara 17.800 millones |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (el modelo base Qwen3-14B soporta 32.768 tokens nativos, ampliable; el fine-tune no especifica cambios) |
+| Tipos de cuantizacion | No disponible (no se publican versiones GGUF, AWQ ni GPTQ en la información disponible) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | AFL-3.0 (Academic Free License 3.0) |
+| Formato de pesos | safetensors, model.bin (PyTorch), memory.pt (banco de memoria simbólica) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre el transformer denso Qwen3-14B, con rotary embeddings y FlashAttention como base. Sobre esa columna vertebral se añaden varios módulos simbólicos: ThoughtDynamicsLNN (atención LSTM multi-cabeza), LiquidThoughtProcessor, CrystallineProcessor basado en DNAConv sobre grafo y HelicalDNAProcessor con codificación helicoidal lineal. La dimensión simbólica declarada es 8192. Además, incorpora un banco de memoria de 4096 estados simbólicos en FP32 recuperados mediante entropía y similitud contextual, un router de intención con compuerta entrópica que selecciona la ruta de procesadores, y un modo "Dream" de simulación simbólica en segundo plano.
+La base es el transformer Qwen3-14B, con rotary embeddings y FlashAttention según la model card. Sobre esa base, el autor declara una capa simbólica de dimensión 8192 con varios procesadores especializados: ThoughtDynamicsLNN (atención LSTM multi-cabeza), LiquidThoughtProcessor, CrystallineProcessor (GNN con DNAConv) y HelicalDNAProcessor (codificación helicoidal lineal). También se describe un router basado en clasificador de intención y compuerta de entropía que selecciona la ruta de procesamiento, y un banco de memoria de 4096 estados en FP32 recuperados por similitud contextual y entropía. No se detalla cuántos de estos módulos están efectivamente presentes en los pesos publicados ni cómo se integran en el grafo de cómputo de Transformers.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset (más allá de la referencia a `0xZee/dataset-CoT-Advanced-Calculus-268`), ni si hubo RLHF, DPO o SFT. La model card indica explícitamente que el modelo no está ajustado por instrucciones para QA general y que el checkpoint es experimental. La fundamentación teórica que cita el autor es el "Discrepancy Calculus" (DISC), con un operador de discrepancia y una energía de discrepancia propuesta como criterio de estabilidad para la consolidación de memoria; se trata de material teórico del propio autor, no de validación empírica publicada.
+El entrenamiento se realizó como fine-tune sobre el dataset 0xZee/dataset-CoT-Advanced-Calculus-268, un conjunto de chain-of-thought de cálculo avanzado. No se especifica el número de tokens, la composición completa del dataset, ni si hubo etapas de RLHF o DPO. La model card menciona un "Dream Mode" de simulación simbólica en segundo plano y fundamentos matemáticos basados en "Discrepancy Calculus (DISC)", pero no se aportan detalles reproducibles sobre el procedimiento de entrenamiento ni sobre la inicialización de los módulos simbólicos.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso sobre el backbone Qwen3-14B.
-- Memoria persistente de 4096 estados simbólicos con recuperación por entropía y similitud contextual.
-- Enrutado simbólico multi-etapa mediante clasificador de intención y compuerta entrópica.
-- Generación simbólica orientada a teoremas, pruebas y planificación de demostraciones (según la model card).
-- Síntesis de matemáticas y código en dominios discontinuos o no suaves (declarado, no verificado con benchmarks).
-- Soporte de tokens especiales simbólicos añadidos al tokenizer (`<D_LIM>`, `<PROOF>`, `<BY_MEASURE>`, etc.).
-- Modo "Dream" de simulación simbólica en segundo plano.
-- Tool calling / function calling: no disponible en la información.
-- Capacidades multimodales (visión, audio): no disponible.
-- Capacidades multilingües: limitadas al inglés según los metadatos.
+- Generación de texto y razonamiento multi-paso, heredados del modelo base Qwen3-14B.
+- Generación de cadenas de pensamiento (chain-of-thought) orientadas a cálculo avanzado, por el dataset de entrenamiento.
+- Soporte declarado de memoria persistente mediante un banco de 4096 estados simbólicos (memory.pt), con recuperación por entropía y similitud contextual.
+- Router de intención con compuerta de entropía para seleccionar rutas de procesamiento simbólico (según model card, no verificado).
+- Tokens especiales simbólicos como `<D_LIM>`, `<PROOF>` y `<BY_MEASURE>` para estructurar salidas matemáticas.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
+- Tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes: la model card lo orienta a agentes conversacionales con memoria, pero sin especificaciones de integración.
+- Modo thinking: no documentado explícitamente para este fine-tune.
 
 ## Casos de uso
 
-- Asistentes de razonamiento con memoria a largo plazo: el banco de 4096 estados simbólicos permite conservar contexto entre turnos en agentes conversacionales, aunque requiere curación y sembrado manual para ser útil.
-- Generación y planificación de demostraciones matemáticas: el modelo está orientado a producir pasos intermedios con tokens simbólicos dedicados (`<PROOF>`, `<D_LIM>`), lo que facilita el parseo y la validación posterior en pipelines de verificación formal.
-- Investigación en híbridos neuro-simbólicos: sirve como banco de pruebas para estudiar cómo interactúan módulos simbólicos (LSTM, GNN, codificación helicoidal) con un transformer denso de 14B.
-- Síntesis de código en dominios numéricos o con estructuras discontinuas: el enrutado por entropía puede derivar consultas a procesadores especializados cuando la señal es ambigua.
-- Simulación científica y diálogo técnico: útil para explorar razonamiento sobre problemas no suaves donde la representación simbólica explícita aporta estructura.
-- Experimentación con memoria externa en producción controlada: al publicarse `memory.pt` de forma separada, es posible sembrar el banco con conocimiento de dominio y medir el impacto antes de desplegar.
+- Asistente de cálculo avanzado: el modelo puede generar demostraciones paso a paso y usar los tokens simbólicos (`<PROOF>`, `<D_LIM>`) para estructurar la salida; es adecuado por el dataset CoT de cálculo sobre el que se entrenó, aunque requiere validación humana.
+- Prototipado de agentes con memoria externa: el banco memory.pt permite experimentar con recuperación de estados simbólicos en conversaciones largas; útil en investigación sobre memoria persistente, no en producción sin evaluación previa.
+- Generación de explicaciones matemáticas para material docente: el modelo puede redactar razonamientos detallados en inglés sobre límites, integrales y demostraciones, aprovechando su especialización en cálculo.
+- Investigación en arquitecturas híbridas simbólico-neural: sirve como checkpoint de referencia para comparar con otros enfoques de memoria y routing simbólico, dado que el autor publica la familia SymbioticAI completa.
+- Generación de código con componente matemático: puede asistir en la traducción de formulaciones matemáticas a código, aunque sin garantías de tool calling ni de integración en pipelines.
+- Experimentación con decodificación y tokens especiales: los added_tokens permiten diseñar flujos de post-procesado que detecten y extraigan bloques de prueba o medidas, útil en investigación de parsing estructurado.
+- Fine-tuning posterior sobre dominios científicos: al partir de Qwen3-14B y estar especializado en CoT matemático, es un punto de partida razonable para ajustes en física o ingeniería, siempre que se valide el comportamiento del modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La propia model card advierte que las afirmaciones de capacidad describen intención arquitectónica y no resultados medidos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni métricas comparativas, y advierte explícitamente que las capacidades descritas son intención arquitectónica y no resultados medidos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16/FP16: en torno a 30 GB solo para los pesos del transformer de 14,8B; hay que sumar el banco de memoria `memory.pt` (4096 estados en FP32, tamaño exacto no disponible) y los módulos simbólicos adicionales, lo que incrementa el consumo respecto a un Qwen3-14B estándar.
-- GPU recomendadas: A100 40/80 GB, H100 80 GB para BF16 sin cuantización; L40S 48 GB como mínimo práctico.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) en BF16; requeriría cuantización, y no se publican pesos GGUF ni AWQ en el repositorio, por lo que habría que generarlos manualmente.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`); vLLM, llama.cpp u Ollama no están confirmados en la información.
-- Latencia y throughput: no disponibles. La model card advierte que FlashAttention y los módulos simbólicos aumentan el uso de VRAM durante la generación.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 29-30 GB solo para pesos, más overhead de activaciones y del banco de memoria en FP32 (4096 vectores de dimensión 8192, unos 128 MB adicionales), por lo que se recomienda al menos 40 GB.
+- VRAM estimada en cuantización de 8 bits: en torno a 15-16 GB; en 4 bits, en torno a 8-9 GB (estimaciones teóricas, no hay versiones cuantizadas publicadas).
+- GPU recomendadas: A100 40/80 GB, H100 80 GB o L40S para FP16; RTX 4090 (24 GB) solo con cuantización de 8 bits o inferior.
+- Compatibilidad con GPU de consumo: posible en RTX 3090/4090 con cuantización, pero no hay GGUF ni AWQ publicados en la información disponible, lo que limita el despliegue directo.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference y endpoints compatibles según los tags; no se confirma soporte de vLLM, llama.cpp u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Idiomas | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Symiotic-14B | 14,8B (declara 17,8B) | no disponible | AFL-3.0 | en | Híbrido simbólico-transformer con memoria persistente; experimental, sin benchmarks |
-| Qwen/Qwen3-14B (base) | 14,8B | no disponible en esta ficha | Apache-2.0 (según el modelo original) | multilingüe | Transformer denso estándar, ampliamente evaluado; referencia directa del fine-tune |
-| Symbiotic-8B (misma familia) | ~8B | no disponible | no disponible | en | Variante menor de la serie SymbioticAI; menos VRAM, capacidades simbólicas análogas |
-| Symbiotic-1B (misma familia) | ~1B | no disponible | no disponible | en | Versión pequeña para pruebas en CPU/GPU de consumo |
+| Symiotic-14B | 14.770 M | No disponible | AFL-3.0 | Hugging Face, transformers | Fine-tune de Qwen3-14B con módulos simbólicos declarados; sin benchmarks |
+| Qwen3-14B (base) | 14.770 M | 32.768 tokens nativos | Apache 2.0 | Hugging Face, amplio ecosistema | Modelo base oficial, benchmarks publicados, cuantizaciones disponibles |
+| Qwen2.5-14B-Instruct | 14.770 M | 32.768 tokens (128K con RoPE) | Apache 2.0 | Hugging Face, GGUF, vLLM | Alternativa consolidada para instrucciones y tool calling |
+| Mistral-Nemo-12B | 12.000 M | 128.000 tokens | Apache 2.0 | Hugging Face, GGUF, vLLM | Menor tamaño, contexto mayor, licencia permisiva |
 
 ## Limitaciones y advertencias
 
-- Checkpoint experimental: el autor indica que las capacidades descritas son intención arquitectónica, no resultados verificados.
-- Discrepancia de parámetros: la model card declara 17,8B pero safetensors reporta 14,77B; conviene verificar antes de dimensionar infraestructura.
-- No está ajustado por instrucciones para QA general, según la propia model card.
-- La memoria persistente requiere curación y sembrado manual para aportar utilidad real.
-- Solo inglés; no se declaran capacidades multilingües.
-- Riesgo de alucinación no cuantificado: no hay benchmarks ni evaluaciones publicadas.
-- Mayor consumo de VRAM que el Qwen3-14B base por FlashAttention y los módulos simbólicos.
-- Licencia AFL-3.0: permisiva con obligación de reciprocidad sobre modificaciones; revisar compatibilidad con el uso comercial previsto y con la licencia del modelo base.
-- La fundamentación teórica (Discrepancy Calculus) es material propio del autor sin validación externa publicada.
-- No se ofrecen pesos cuantizados oficiales, lo que complica el despliegue en hardware de consumo.
+- Discrepancia entre los 17.800 millones declarados en la model card y los 14.770 millones reales en safetensors; conviene verificar la integridad de los pesos antes de usarlos.
+- Ausencia total de benchmarks: no hay evidencia medida de que los módulos simbólicos aporten mejoras sobre Qwen3-14B.
+- La model card advierte que el razonamiento simbólico no está ajustado para QA general, por lo que el rendimiento en tareas conversacionales puede degradarse respecto al base.
+- La memoria persistente requiere curación y siembra manual para ser útil; no funciona como memoria automática lista para producción.
+- FlashAttention y los módulos simbólicos incrementan el uso de VRAM durante la generación, según el propio autor.
+- Sesgos conocidos: no documentados, pero hereda los sesgos del corpus de Qwen3-14B y del dataset de cálculo, con posible sesgo hacia dominios matemáticos.
+- Riesgo de alucinación: alto en dominios fuera del cálculo y en la generación de demostraciones, dado el ajuste estrecho y la falta de evaluación.
+- Limitación idiomática: solo inglés declarado, lo que excluye uso en castellano sin evaluación adicional.
+- Licencia AFL-3.0: permite uso comercial, pero impone obligaciones de atribución y reciprocidad sobre modificaciones; revisar compatibilidad con el despliegue previsto.
+- Proyecto de investigación de un autor individual: sin garantías de mantenimiento, soporte ni actualizaciones.
+- No hay versiones cuantizadas publicadas, lo que complica el despliegue en hardware de consumo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Symiotic-14B
+- Hugging Face: https://huggingface.co/reaperdoesntknow/Symiotic-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
-- Dataset citado: https://huggingface.co/datasets/0xZee/dataset-CoT-Advanced-Calculus-268
+- Dataset de entrenamiento: https://huggingface.co/datasets/0xZee/dataset-CoT-Advanced-Calculus-268
+- Colección SymbioticAI: https://huggingface.co/collections/reaperdoesntknow/symbioticai-a-collection-of-symbolic-transformers-for-th-681a7f98b5e2397d10192c9a
 - Symbiotic-1B: https://huggingface.co/reaperdoesntknow/Symbiotic-1B
 - Symbiotic-8B: https://huggingface.co/reaperdoesntknow/Symbiotic-8B
 - Symbiotic-Beta: https://huggingface.co/reaperdoesntknow/Symbiotic-Beta
-- Colección SymbioticAI: https://huggingface.co/collections/reaperdoesntknow/symbioticai-a-collection-of-symbolic-transformers-for-th-681a7f98b5e2397d10192c9a
-- Colección DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c
-- Metodología "Structure Over Scale" (DOI): https://doi.org/10.57967/hf/8165
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Metodología "Structure Over Scale": https://doi.org/10.57967/hf/8165

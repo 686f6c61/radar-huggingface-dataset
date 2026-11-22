@@ -2,94 +2,98 @@
 
 ## Resumen
 
-AxonMed-7B-Thinking es un modelo de lenguaje especializado en razonamiento clínico y médico, desarrollado por Saathimed y cuantizado a formato GGUF por mradermacher. Se construye sobre un transformer denso de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) y está diseñado para generar cadenas de razonamiento (chain-of-thought) antes de responder preguntas médicas, lo que lo orienta a tareas de diagnóstico diferencial, interpretación de casos clínicos y preparación de exámenes sanitarios como USMLE, AIIMS o NEET-PG.
+AxonMed-7B-Thinking es un modelo de lenguaje especializado en razonamiento clínico y médico, desarrollado por Saathimed y publicado originalmente en formato transformers. Esta ficha corresponde a la versión cuantizada en GGUF realizada por mradermacher, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. Con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), se posiciona en la gama de modelos de 7B, un tamaño que equilibra capacidad de razonamiento y requisitos de hardware.
 
-El modelo se ha afinado sobre un conjunto de datasets médicos de referencia: MedMCQA, MedQA-USMLE-4-options, PubMedQA, el conjunto de razonamiento médico de FreedomIntelligence y Medical Meadow USMLE Self-Assessment. Esta combinación cubre preguntas de opción múltiple, razonamiento sobre literatura biomédica y evaluación tipo examen, lo que explica su orientación explícita a "thinking" y "cot" (chain-of-thought). Soporta siete idiomas declarados: inglés, hindi, español, chino, alemán, francés y ruso.
+El modelo está diseñado explícitamente para tareas de razonamiento clínico con modo "thinking" (cadena de pensamiento o CoT), orientado a exámenes médicos como USMLE, AIIMS y NEET-PG, además de tareas de comprensión de literatura biomédica (PubMedQA). Se entrenó sobre datasets de referencia del dominio médico como MedMCQA, MedQA-USMLE-4-options, PubMedQA, medical-o1-reasoning-SFT y medical_meadow_usmle_self_assessment.
 
-La relevancia actual del modelo radica en su licencia Apache 2.0, que permite uso comercial sin restricciones adicionales, y en la disponibilidad de cuantizaciones GGUF que lo hacen desplegable en hardware de consumo. No obstante, la información pública disponible es muy limitada: no se han publicado resultados de benchmarks, detalles de entrenamiento ni especificaciones de longitud de contexto en la documentación accesible.
+Su relevancia actual radica en la combinación de tres factores: especialización vertical en dominio médico, soporte multilingüe declarado (inglés, hindi, español, chino, alemán, francés y ruso) y licencia Apache 2.0, que permite uso comercial sin restricciones adicionales. La disponibilidad de cuantizaciones GGUF desde Q2_K (3,1 GB) hasta f16 (15,3 GB) lo hace desplegable tanto en GPUs de consumo como en servidores.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (no se especifica variante concreta; derivado de la familia base de Saathimed/AxonMed-7B-Thinking) |
-| Parametros totales | 7.615.616.512 |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
+| Arquitectura | no disponible (modelo base derivado de un transformer de 7B; detalles no especificados en la informacion) |
+| Parametros totales | 7.615.616.512 (aproximadamente 7,6B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estaticas); variantes i1 (imatrix) en repo separado |
 | Idiomas soportados | en, hi, es, zh, de, fr, ru |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en formato transformers/safetensors |
+| Formato de pesos | GGUF (version cuantizada); el modelo base esta en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de tratarse de un transformer denso de aproximadamente 7,6 mil millones de parámetros, derivado del modelo Saathimed/AxonMed-7B-Thinking. El autor de la cuantización (mradermacher) no documenta la arquitectura original, y la model card del modelo base no está incluida en la información proporcionada. No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención ni la implementación concreta (si es Llama, Mistral, Qwen u otra familia).
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Saathimed/AxonMed-7B-Thinking en la informacion proporcionada. Por el numero de parametros (7,6B) y la libreria declarada (transformers), se trata de un transformer decoder-only de escala 7B, pero no se especifican detalles como el numero de capas, dimensiones ocultas, mecanismo de atencion ni si incorpora innovaciones como atencion lineal o decodificacion especulativa.
 
-Respecto al entrenamiento, los datasets declarados son MedMCQA, GBaker/MedQA-USMLE-4-options, pubmed_qa, FreedomIntelligence/medical-o1-reasoning-SFT y medalpaca/medical_meadow_usmle_self_assessment. No se indica el número total de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT supervisado. La presencia de la etiqueta "thinking" y "cot" sugiere un ajuste orientado a generar razonamiento explícito antes de la respuesta, pero no se documenta el método. Tampoco se describen innovaciones técnicas como decodificación especulativa o atención lineal.
+Respecto al entrenamiento, la model card lista los datasets utilizados: MedMCQA, GBaker/MedQA-USMLE-4-options, PubMedQA, FreedomIntelligence/medical-o1-reasoning-SFT y medalpaca/medical_meadow_usmle_self_assessment. Estos datasets cubren preguntas de examen medico (USMLE, AIIMS, NEET-PG), razonamiento clinico con cadenas de pensamiento y comprension de literatura biomedica. No se especifica el numero total de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT adicionales. El tag "thinking" y "cot" sugiere que el modelo fue ajustado para generar razonamiento explicito antes de la respuesta final.
 
 ## Capacidades
 
-- Generación de texto y razonamiento clínico con cadenas de pensamiento explícitas (chain-of-thought) antes de la respuesta final.
-- Resolución de preguntas de opción múltiple de tipo examen médico (USMLE, AIIMS, NEET-PG) según los datasets de entrenamiento.
-- Razonamiento sobre literatura biomédica y preguntas de comprensión tipo PubMedQA.
-- Soporte multilingüe declarado en siete idiomas: inglés, hindi, español, chino, alemán, francés y ruso.
-- Formato conversacional (etiqueta "conversational" en los tags de Hugging Face).
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni otras capacidades especiales en la información disponible.
+- Razonamiento clinico y medico con modo "thinking" (cadena de pensamiento explicita antes de la respuesta).
+- Resolucion de preguntas de examen medico tipo multiple choice (USMLE, AIIMS, NEET-PG).
+- Comprension de literatura biomedica y respuesta a preguntas sobre articulos (PubMedQA).
+- Generacion de texto conversacional multi-turno (tag "conversational").
+- Capacidades multilingues en siete idiomas: ingles, hindi, espanol, chino, aleman, frances y ruso.
+- Razonamiento multi-paso orientado a diagnostico y explicacion clinica.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Preparación de exámenes médicos: el modelo puede generar explicaciones razonadas para preguntas de opción múltiple tipo USMLE, AIIMS o NEET-PG, justificando cada opción descartada, gracias al ajuste sobre MedQA-USMLE-4-options y Medical Meadow USMLE.
-- Formación clínica y simulación de casos: útil para que estudiantes de medicina practiquen diagnósticos diferenciales con un modelo que explicita su razonamiento paso a paso, lo que facilita la revisión crítica del proceso y no solo del resultado.
-- Búsqueda asistida sobre literatura biomédica: con el ajuste sobre PubMedQA, puede emplearse para sintetizar respuestas a preguntas de investigación a partir de resúmenes o pasajes científicos, siempre con verificación humana.
-- Documentación clínica asistida: generación de resúmenes estructurados de notas o informes médicos en entornos donde se requiera una licencia permisiva (Apache 2.0) y despliegue local por motivos de privacidad.
-- Despliegue en infraestructura propia con GGUF: al ofrecerse cuantizaciones desde Q2_K (3,1 GB) hasta f16 (15,3 GB), puede ejecutarse en estaciones de trabajo o servidores sin GPU de gama alta mediante llama.cpp u Ollama, lo que encaja en escenarios con requisitos de soberanía de datos ("sovereign-ai" en los tags).
-- Educación multilingüe: para materiales de formación sanitaria en español, hindi, chino, alemán, francés o ruso, aprovechando la cobertura idiomática declarada, con la cautela de que el entrenamiento principal parece centrado en inglés.
-- Integración en pipelines de investigación reproducibles: al ser Apache 2.0 y estar disponible en GGUF, puede incorporarse a flujos de evaluación automatizada de razonamiento médico sin restricciones de licencia comercial.
+- Formacion y preparacion de examenes medicos: el modelo puede generar explicaciones razonadas paso a paso para preguntas tipo USMLE o NEET-PG, lo que lo hace util como tutor interactivo para estudiantes de medicina que necesitan entender el razonamiento detras de cada respuesta.
+- Apoyo a la documentacion clinica: puede resumir y estructurar notas clinicas o articulos biomedicos, aprovechando su entrenamiento en PubMedQA para tareas de comprension de literatura medica.
+- Asistente de triaje conversacional: con su capacidad conversacional multi-turno, puede gestionar dialogos iniciales de recogida de sintomas en varios idiomas, derivando a profesionales cuando sea necesario.
+- Investigacion biomedica asistida: extraccion de informacion relevante de abstracts y articulos, generando resumenes con razonamiento explicito sobre la evidencia.
+- Despliegue en entornos con hardware limitado: las cuantizaciones Q4_K_M (4,8 GB) permiten ejecutar el modelo en GPUs de consumo como RTX 3060 o superiores, habilitando prototipos locales de aplicaciones medicas sin depender de la nube.
+- Educacion multilingue en ciencias de la salud: al soportar espanol, hindi, chino, aleman, frances y ruso, puede emplearse en programas de formacion medica en distintos mercados linguisticos.
+- Generacion de preguntas de evaluacion: el modelo puede crear bancos de preguntas de practica con explicaciones razonadas para plataformas de e-learning medico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización: Q2_K ~3,1 GB; Q4_K_S ~4,6 GB; f16 ~15,3 GB (tamaños de archivo indicados por el autor de la cuantización; la VRAM necesaria es algo superior por el contexto y los buffers de la KV cache).
-- GPU recomendadas: para f16, una GPU con 24 GB o más (RTX 3090, RTX 4090, A10G, L4 con margen limitado); para Q4_K_S o Q5_K_M, GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070); para Q2_K, GPUs de 6-8 GB.
-- Cabe en GPU de consumo: sí, en la mayoría de configuraciones con cuantizaciones Q2_K a Q5_K_M; f16 requiere gama alta o dos GPUs.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers y con endpoints (según tags).
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: aproximadamente 3,1 GB.
+  - Q4_K_M: aproximadamente 4,8 GB (recomendado por el cuantizador como rapido y de buena calidad).
+  - Q5_K_M: aproximadamente 5,5 GB.
+  - Q6_K: aproximadamente 6,4 GB.
+  - Q8_0: aproximadamente 8,2 GB.
+  - f16: aproximadamente 15,3 GB.
+- GPU recomendadas: para Q4_K_M, una RTX 3060 (12 GB) o RTX 4060 Ti (16 GB) es suficiente; para Q8_0, se recomienda RTX 4070 Ti Super o superior; para f16, una RTX 4090 (24 GB) o A100/H100 en entornos de servidor.
+- Cabe en GPU de consumo: si, en la mayoria de cuantizaciones (Q2_K a Q6_K) en GPUs con 8 GB o mas de VRAM; Q8_0 requiere al menos 10-12 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF; el modelo base (transformers) puede servirse con vLLM o TGI, aunque esta ficha corresponde a la version GGUF.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| AxonMed-7B-Thinking (este) | 7,6 B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en razonamiento médico con CoT |
-| Alternativas médicas de ~7B (p. ej. Meditron, BioMistral) | ~7 B | no disponible | variable | variable | No se dispone de datos comparativos en la información proporcionada |
-| Modelos generalistas de ~7B (p. ej. Llama, Mistral, Qwen) | ~7 B | no disponible | variable | variable | No se dispone de datos comparativos en la información proporcionada |
+| AxonMed-7B-Thinking (esta ficha) | 7,6B | no disponible | Apache 2.0 | GGUF / transformers | Especializado en razonamiento clinico con modo thinking |
+| Modelos medicos 7B genericos (p. ej. basados en Llama/Mistral) | ~7B | variable | variable | safetensors / GGUF | No disponibles datos concretos en la informacion proporcionada |
+| Modelos de razonamiento general 7B | ~7B | variable | variable | safetensors / GGUF | No disponibles datos concretos en la informacion proporcionada |
+
+No se dispone de datos de benchmarks ni de comparativas cuantitativas con alternativas concretas en la informacion proporcionada, por lo que la comparacion se limita a caracteristicas estructurales.
 
 ## Limitaciones y advertencias
 
-- No es un dispositivo médico: no se ha validado clínicamente ni cuenta con certificación regulatoria; no debe usarse para diagnóstico o tratamiento sin supervisión profesional.
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar afirmaciones médicas plausibles pero incorrectas, especialmente en casos raros o fuera de la distribución de los datasets de entrenamiento.
-- Sesgos conocidos: no documentados; los datasets médicos de origen (MedMCQA, MedQA, PubMedQA) tienen sesgos de idioma (predominio del inglés) y de población (exámenes de EE. UU. e India), lo que puede limitar su generalización a otras regiones.
-- Cobertura multilingüe desigual: aunque declara siete idiomas, el entrenamiento parece centrado en inglés; el rendimiento en español, hindi, chino, alemán, francés y ruso no está verificado.
-- Longitud de contexto no documentada: no se puede garantizar el manejo de historiales clínicos largos o documentos extensos.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de su calidad frente a alternativas, lo que dificulta la selección para producción.
-- Cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente el razonamiento; para uso clínico se recomienda Q5_K_M o superior.
-- Aunque la licencia Apache 2.0 permite uso comercial, el usuario asume toda la responsabilidad regulatoria (por ejemplo, RGPD o MDR en la UE) al desplegar el modelo en contextos sanitarios.
+- No se han publicado resultados de benchmarks que permitan validar cuantitativamente su rendimiento clinico; la ausencia de datos de evaluacion es una limitacion importante para su adopcion en produccion sanitaria.
+- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar afirmaciones medicas incorrectas con aparente seguridad; no debe usarse como sustituto del juicio clinico profesional.
+- Sesgos conocidos: no documentados en la informacion proporcionada; los datasets medicos de entrenamiento pueden introducir sesgos demograficos y geograficos (predominio de fuentes en ingles y de sistemas sanitarios concretos).
+- Limitaciones de contexto: la longitud de contexto no esta especificada, lo que impide evaluar su idoneidad para documentos clinicos largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el uso en entornos regulados (dispositivos medicos, diagnostico) requiere cumplimiento normativo adicional (MDR en la UE, FDA en EE. UU.) que la licencia no cubre.
+- El modelo esta cuantizado en GGUF; las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente el razonamiento, algo especialmente critico en dominio medico.
+- Idiomas: aunque declara soporte de siete idiomas, no se especifica el nivel de calidad por idioma; el espanol podria tener menor cobertura que el ingles.
+- No hay informacion sobre soporte de tool calling ni sobre integracion con agentes, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/AxonMed-7B-Thinking-GGUF
-- Modelo base: https://huggingface.co/Saathimed/AxonMed-7B-Thinking
-- Página de descargas del autor: https://hf.tst.eu/model#AxonMed-7B-Thinking-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Comparativa de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Dataset MedMCQA: https://huggingface.co/datasets/medmcqa
-- Dataset MedQA-USMLE-4-options: https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options
-- Dataset PubMedQA: https://huggingface.co/datasets/pubmed_qa
-- Dataset medical-o1-reasoning-SFT: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT
-- Dataset Medical Meadow USMLE Self-Assessment: https://huggingface.co/datasets/medalpaca/medical_meadow_usmle_self_assessment
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/AxonMed-7B-Thinking-GGUF
+- Modelo base original: https://huggingface.co/Saathimed/AxonMed-7B-Thinking
+- Cuantizaciones i1 (imatrix): https://huggingface.co/mradermacher/AxonMed-7B-Thinking-i1-GGUF
+- Pagina de descripcion del cuantizador: https://hf.tst.eu/model#AxonMed-7B-Thinking-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

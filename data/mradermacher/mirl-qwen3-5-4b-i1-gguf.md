@@ -2,97 +2,97 @@
 
 ## Resumen
 
-MiRL-Qwen3.5-4B-i1-GGUF es la versión cuantizada en formato GGUF del modelo Rtian/MiRL-Qwen3.5-4B, un ajuste fino mediante aprendizaje por refuerzo (RL) sobre la base Qwen3.5-4B, orientado a tareas de agente de terminal y resolución de problemas en entornos de línea de comandos. El trabajo de cuantización lo firma mradermacher, un actor habitual en la comunidad que publica versiones GGUF con calibración imatrix de modelos populares, y no el equipo que entrenó el modelo original.
+MiRL-Qwen3.5-4B-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo Rtian/MiRL-Qwen3.5-4B, un modelo de lenguaje de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) construido sobre la arquitectura Qwen3.5 y afinado mediante aprendizaje por refuerzo (reinforcement learning) para tareas de agente de terminal. El modelo base está etiquetado con los tags `agent`, `terminal-agent`, `terminal-bench` y `reinforcement-learning`, lo que indica que su entrenamiento se ha orientado específicamente a la ejecución de tareas en entornos de línea de comandos y a la interacción multi-paso con herramientas.
 
-El modelo base tiene 4.205.751.296 parámetros (4,2B) y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. Los tags de la model card (`agent`, `terminal-agent`, `terminal-bench`, `reinforcement-learning`) indican que el entrenamiento se ha centrado en comportamiento agéntico sobre terminal, no en conversación general, y el pipeline declarado en Hugging Face es `reinforcement-learning`. El único idioma declarado es el inglés.
+El repositorio que nos ocupa no contiene los pesos originales en safetensors, sino un conjunto de ficheros GGUF cuantizados con la técnica i1 (imatrix) de mradermacher, que emplea un fichero de importancia (imatrix) para mejorar la calidad de las cuantizaciones de baja precisión. El rango de cuantizaciones disponibles abarca desde IQ1_S (1,5 GB) hasta Q6_K (3,6 GB), lo que permite desplegar el modelo en hardware muy modesto, incluyendo GPUs de consumo e incluso CPU con llama.cpp.
 
-La relevancia de esta variante concreta es práctica: al estar en GGUF con cuantizaciones desde IQ1_S hasta Q6_K, el modelo se puede ejecutar en hardware de consumo (GPU de 8-12 GB o incluso CPU) mediante llama.cpp u Ollama, algo imposible con los pesos completos en safetensors. El repositorio ocupa 53,4 GB porque agrupa todas las variantes de cuantización, pero cada fichero individual ronda entre 1 y 4,5 GB. No hay descargas ni valoraciones registradas en el momento de redactar esta ficha.
+La relevancia de esta ficha radica en que combina dos tendencias actuales: por un lado, los modelos pequeños (4B) especializados mediante RL en tareas de agente, que ofrecen un buen equilibrio entre capacidades y coste de inferencia; por otro, el ecosistema de cuantizaciones GGUF que democratiza su despliegue local. La licencia Apache 2.0 facilita su uso comercial, aunque la información pública disponible sobre el modelo base es limitada y no se han publicado resultados de benchmarks en la documentación proporcionada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3.5, tag `qwen3_5`); detalles internos de capas y atención no disponibles |
-| Parámetros totales | 4.205.751.296 (4,2B), dato real de safetensors del modelo base |
-| Parámetros activos | No aplica: no se indica que sea un modelo MoE |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, small-IQ4_NL, Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (calibradas con imatrix) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en formato transformers/safetensors |
+| Arquitectura | Transformer (familia Qwen3.5; detalles especificos no disponibles) |
+| Parametros totales | 4.205.751.296 (aproximadamente 4,2 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; tambien disponible el fichero imatrix |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1); el modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Qwen3.5 de 4,2B parámetros, es decir, un transformer decoder-only de la familia Qwen en su tamaño pequeño, pensado para ejecución local. Sobre esa base, el autor original (Rtian) aplicó un proceso de aprendizaje por refuerzo cuyo objetivo declarado es el comportamiento de agente de terminal: los tags `terminal-agent` y `terminal-bench` apuntan a un entrenamiento orientado a resolver tareas dentro de una shell, encadenando comandos y leyendo su salida. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases adicionales de SFT, DPO o RLHF más allá del RL mencionado.
+El modelo base Rtian/MiRL-Qwen3.5-4B se construye sobre la arquitectura Qwen3.5, un transformer denso de aproximadamente 4,2 mil millones de parámetros. No se dispone de información detallada sobre el número de capas, dimensiones ocultas, mecanismo de atención ni longitud de contexto nativa en la documentación proporcionada. La etiqueta `qwen3_5` confirma la familia arquitectónica, pero los detalles concretos de configuración no están publicados en la información disponible.
 
-La innovación técnica atribuible a esta ficha es la cuantización, no el entrenamiento. mradermacher aplica cuantización con matriz de importancia (imatrix), generada a partir de un corpus de calibración, lo que en la práctica reduce la pérdida de perplejidad en bits bajos respecto a cuantizaciones estáticas equivalentes. El repositorio incluye además el fichero imatrix (0,1 GB) por si se quieren generar cuantizaciones propias, y existe un repositorio hermano con cuantizaciones estáticas (sin imatrix). La model card del cuantizador menciona que el modelo podría tener capacidades de visión y que los ficheros `mmproj` (proyector multimodal), si existen, estarían en el repositorio estático; no se confirma en la información disponible que dichos ficheros existan ni que el modelo base sea multimodal.
+El aspecto diferencial del modelo es su entrenamiento mediante aprendizaje por refuerzo (RL) orientado a tareas de agente de terminal, como indican los tags `terminal-agent`, `terminal-bench` y `reinforcement-learning`. Esto sugiere que el modelo ha sido optimizado para interpretar instrucciones en lenguaje natural, generar comandos de shell, interpretar sus salidas y encadenar pasos hasta completar una tarea. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas adicionales como RLHF, DPO o decodificación especulativa. El repositorio de mradermacher no aporta información sobre el proceso de entrenamiento del modelo base, solo sobre el proceso de cuantización.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés (`conversational` en los tags).
-- Comportamiento agéntico en terminal: ejecución de comandos, lectura de salida y encadenamiento de pasos para completar tareas, según el objetivo declarado del ajuste con RL.
-- Razonamiento multi-paso orientado a tareas de tipo `terminal-bench`.
-- Integración como endpoint compatible (`endpoints_compatible`), es decir, pensado para servirse detrás de una API compatible con el formato de Hugging Face/OpenAI.
-- Capacidad de visión: la model card del cuantizador afirma que "es un modelo de visión", pero no se confirma la disponibilidad de ficheros `mmproj` en la información proporcionada; tratar como no confirmado.
-- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible, aunque es coherente con el perfil agéntico del modelo.
-- Multilingüismo: limitado al inglés según el campo `language` de la model card.
+- Generación de texto conversacional en inglés, con soporte para diálogos multi-turno (tag `conversational`).
+- Ejecución de tareas de agente de terminal: interpretación de instrucciones, generación de comandos de shell y encadenamiento de pasos (tags `agent`, `terminal-agent`, `terminal-bench`).
+- Razonamiento multi-paso orientado a la resolución de tareas dentro de entornos de línea de comandos.
+- Capacidad de aprendizaje por refuerzo aplicada al comportamiento agéntico, lo que sugiere cierta robustez en la planificación de acciones.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible, aunque el enfoque agéntico lo hace plausible.
+- Capacidades multilingües: limitadas al inglés según el campo `language: en`.
+- No se dispone de información sobre capacidades de visión, audio, modo thinking explícito ni otras modalidades.
 
 ## Casos de uso
 
-- Automatización de tareas de administración de sistemas: el modelo puede recibir un objetivo en lenguaje natural ("rota los logs de nginx con más de 30 días") y traducirlo a una secuencia de comandos de shell, leyendo la salida para corregir errores en pasos sucesivos. Es el caso de uso para el que fue entrenado explícitamente.
-- Agente de CI/CD para diagnóstico de fallos: integrado en un runner, puede inspeccionar la salida de un build fallido y proponer o ejecutar comandos de diagnóstico (inspección de dependencias, variables de entorno, permisos) dentro de un contenedor efímero.
-- Asistente de terminal embebido en herramientas de desarrollo: al ser un GGUF de 4,2B, se puede distribuir con un editor o un CLI y ejecutarse en la máquina del desarrollador sin enviar comandos ni rutas a un servicio externo, lo que reduce la exposición de datos.
-- Generación de scripts de automatización reproducibles: dado un procedimiento descrito en lenguaje natural, producir un script de bash o Python con manejo de errores básico, verificable antes de su ejecución en producción.
-- Entornos de evaluación de agentes: servir el modelo con llama.cpp o vLLM como baseline de 4B en suites de evaluación de agentes de terminal, comparando su tasa de éxito frente a modelos mayores con un coste por token mucho menor.
-- Procesamiento por lotes en CPU: gracias a las cuantizaciones IQ2/IQ3, se puede ejecutar en servidores sin GPU para tareas de clasificación o extracción de comandos donde la latencia no es crítica.
-- Formación y experimentación: por su tamaño y licencia Apache-2.0, sirve como banco de pruebas para estudiar el efecto del ajuste con RL sobre una base Qwen3.5 pequeña, o para hacer fine-tuning adicional sobre las versiones desuantizadas.
+- Automatización de tareas de administración de sistemas: el modelo puede recibir una instrucción en lenguaje natural (por ejemplo, "lista los ficheros modificados en las últimas 24 horas y comprímelos") y generar la secuencia de comandos de shell adecuada, gracias a su entrenamiento específico en terminal-bench.
+- Agente de CI/CD en pipelines: integrado en un runner, el modelo puede interpretar fallos de build, proponer comandos de diagnóstico y ejecutar pasos correctivos, aprovechando su orientación a tareas de terminal y su tamaño reducido para despliegue local.
+- Asistente de línea de comandos para desarrolladores: un CLI que envuelva al modelo puede sugerir comandos, explicar errores y guiar al usuario paso a paso, con la ventaja de que las cuantizaciones Q4_K_M (2,8 GB) caben en GPUs de consumo.
+- Automatización de tareas de scraping y procesamiento de ficheros: el modelo puede generar scripts de shell o comandos de utilidades (grep, awk, sed, find) para manipular datos, adecuado por su entrenamiento en entornos de terminal.
+- Despliegue en entornos con recursos limitados: gracias a las cuantizaciones IQ2/IQ3 (1,6-2,3 GB), puede ejecutarse en CPUs o GPUs integradas para tareas de agente de baja latencia y bajo coste.
+- Prototipado de agentes autónomos en investigación: su licencia Apache 2.0 y su tamaño permiten experimentar con bucles de razonamiento-acción-observación en laboratorios con hardware modesto, sin depender de APIs externas.
+- Educación y formación en línea de comandos: el modelo puede actuar como tutor que explica comandos y propone ejercicios prácticos en inglés, aunque su limitación idiomática restringe su uso en castellano.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo está etiquetado con `terminal-bench`, lo que sugiere que fue evaluado o entrenado contra esa suite, pero no se proporcionan puntuaciones concretas (ni Terminal-Bench, ni MMLU, ni HumanEval, ni GSM8K) en la model card ni en los resultados de búsqueda consultados. Tampoco se publican métricas de perplejidad de las distintas cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin caché KV): aproximadamente 1,3-1,6 GB en IQ1/IQ2, 1,7-2,2 GB en Q2_K/Q3_K_M, 2,5-2,8 GB en Q4_K_M, 3,0-3,3 GB en Q5_K_M, 3,5-3,8 GB en Q6_K y 8,4 GB en FP16 (estimación a partir de los 4,2B parámetros; no son cifras publicadas por el autor).
-- GPU recomendadas: cualquier GPU consumer con 8 GB o más (RTX 3060 Ti, RTX 4060, RTX 3070) ejecuta Q4_K_M con contexto moderado; una RTX 4090 o una L40S permiten Q6_K o FP16 con contexto largo y mayor throughput; para servir en producción con concurrencia, A100 40/80 GB o H100 si se usa vLLM con los pesos originales.
-- Cabe en GPU de consumo: sí, en todas las cuantizaciones hasta Q6_K con 8 GB de VRAM, y en IQ3/Q4 en iGPU o APUs con memoria unificada.
-- Despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama (requiere crear el Modelfile a partir del GGUF), LM Studio, llama-cpp-python, Jan; para los pesos completos del modelo base, vLLM o TGI con transformers.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
+- VRAM estimada para inferencia (según cuantización):
+  - i1-IQ1_S / IQ1_M: ~1,5 GB.
+  - i1-IQ2_XXS a IQ2_M: ~1,6-1,8 GB.
+  - i1-Q3_K_S a Q3_K_L: ~2,2-2,5 GB.
+  - i1-Q4_K_M (recomendada): ~2,8 GB.
+  - i1-Q5_K_M: ~3,2 GB.
+  - i1-Q6_K: ~3,6 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4/Q5 (GTX 1650, RTX 3050, RTX 4060, RTX 4090). Para Q6_K se recomiendan 6 GB o más.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones hasta Q6_K en GPUs con 4-6 GB de VRAM (RTX 3060, RTX 4060, RTX 4090, etc.).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se recomienda llama.cpp para estas cuantizaciones.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos provienen de sus model cards públicas y no se han verificado en la búsqueda realizada; se incluyen como referencia de categoría (transformers densos de 3-4B ejecutables en local).
-
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiRL-Qwen3.5-4B (esta ficha, vía GGUF) | 4,2B | No disponible | Inglés | Apache-2.0 | Agente de terminal ajustado con RL |
-| Qwen3-4B | ~4B | 32K nativo (extensible con YaRN) | Multilingüe | Apache-2.0 | Propósito general, modos thinking/no-thinking |
-| Llama 3.2 3B Instruct | 3,2B | 128K | Multilingüe (8 idiomas) | Llama 3.2 Community License | Propósito general, licencia con restricciones |
-| Phi-4-mini-instruct | 3,8B | 128K | Multilingüe | MIT | Propósito general y razonamiento |
+| MiRL-Qwen3.5-4B-i1-GGUF (este) | ~4,2 B | no disponible | Apache 2.0 | GGUF (i1) | Afinado por RL para agente de terminal |
+| Qwen2.5-3B-Instruct (referencia de la familia) | ~3,1 B | 32 K (tipico en la familia Qwen2.5) | Apache 2.0 | safetensors, GGUF | Modelo generalista, sin especializacion en terminal |
+| Llama 3.2 3B Instruct | ~3,2 B | 128 K | Llama 3.2 Community License | safetensors, GGUF | Modelo generalista, licencia con restricciones |
+| Phi-3.5-mini-instruct | ~3,8 B | 128 K | MIT | safetensors, GGUF | Modelo generalista, buen rendimiento en razonamiento |
 
-La diferencia relevante frente a las alternativas no es de tamaño sino de especialización: MiRL-Qwen3.5-4B está entrenado con RL para terminal, mientras que Qwen3-4B, Llama 3.2 3B y Phi-4-mini son modelos generalistas. No hay datos de benchmark que permitan cuantificar esa ventaja en tareas de agente.
+La comparativa se basa en categorías de tamaño similares; no se dispone de datos de rendimiento del modelo MiRL-Qwen3.5-4B para comparar benchmarks de forma objetiva. La principal diferencia es su especialización en tareas de agente de terminal mediante RL, frente al enfoque generalista de las alternativas.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado ni evaluado.
-- Contexto: no se publica la longitud de contexto soportada, lo que impide planificar tareas con historiales largos de terminal o ficheros extensos sin pruebas previas.
-- Especialización estrecha: el ajuste con RL sobre tareas de terminal puede degradar el rendimiento en conversación general respecto a la base Qwen3.5-4B sin ajustar. No se han publicado evaluaciones que lo confirmen o desmientan.
-- Alucinación de comandos: en un agente de terminal, un comando inventado o mal construido puede tener efectos destructivos (borrado de ficheros, cambios de permisos). Es obligatorio sandboxing, confirmación humana y límites de permisos antes de ejecutar cualquier salida del modelo.
-- Cuantizaciones de muy baja precisión: IQ1_S e IQ2_XXS degradan notablemente la coherencia; para uso agéntico se recomienda Q4_K_M o superior.
-- Visión no confirmada: la model card menciona que es un modelo de visión, pero no se confirma la existencia de ficheros `mmproj`; no planificar casos de uso multimodales sin verificarlo.
-- Validación comunitaria nula: 0 descargas y 0 likes en el momento de la ficha; no hay informes de terceros sobre calidad o estabilidad.
-- Licencia: Apache-2.0 permite uso comercial y modificación, pero el modelo base y el cuantizador no ofrecen garantías; conviene mantener el aviso de licencia y citar ambos repositorios.
-- Metadatos atípicos: la fecha de creación registrada (2026-10-23) es posterior a la de redacción habitual de fichas, lo que sugiere un error de metadatos o un repositorio reciente; verificar antes de fijar la versión en producción.
+- Idiomas: el modelo solo declara soporte para inglés (`language: en`), por lo que su rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Sesgos conocidos: no se documentan sesgos específicos en la información disponible; al derivar de Qwen3.5, puede heredar sesgos presentes en los datos de entrenamiento del modelo base.
+- Riesgo de alucinación: como todo modelo generativo, puede producir comandos incorrectos o peligrosos; en un contexto de agente de terminal, esto es crítico y requiere sandboxing y validación humana.
+- Limitaciones de contexto: no se ha publicado la longitud de contexto nativa, lo que impide evaluar su idoneidad para tareas con historiales largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original (Rtian/MiRL-Qwen3.5-4B), que también declara Apache 2.0.
+- Caveat para producción: las cuantizaciones de baja precisión (IQ1, IQ2) degradan notablemente la calidad; para uso en producción se recomienda Q4_K_M o superior. Además, la información sobre el modelo base es escasa, lo que dificulta evaluar su robustez y seguridad antes de desplegarlo.
 
 ## Enlaces
 
 - Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/MiRL-Qwen3.5-4B-i1-GGUF
 - Modelo base: https://huggingface.co/Rtian/MiRL-Qwen3.5-4B
-- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/MiRL-Qwen3.5-4B-GGUF
-- Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#MiRL-Qwen3.5-4B-i1-GGUF
-- Fichero imatrix: https://huggingface.co/mradermacher/MiRL-Qwen3.5-4B-i1-GGUF/resolve/main/MiRL-Qwen3.5-4B.imatrix.gguf
-- Perfil del cuantizador: https://huggingface.co/mradermacher
-- Peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
-- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Guía de uso de GGUF citada en la model card: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/MiRL-Qwen3.5-4B-GGUF
+- Página de overview del autor: https://hf.tst.eu/model#MiRL-Qwen3.5-4B-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Página de solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Empresa del autor: https://www.nethype.de/

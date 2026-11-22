@@ -2,98 +2,98 @@
 
 ## Resumen
 
-Qwen-SEA-LION-v5-9B-GGUF es la versión cuantizada en formato GGUF del modelo aisingapore/Qwen-SEA-LION-v5-9B, un modelo de lenguaje de aproximadamente 9.200 millones de parámetros desarrollado por AI Singapore (AISG) como parte de la familia SEA-LION (Southeast Asian Languages In One Network). El modelo está construido sobre una base Qwen y ajustado específicamente para lenguas del sudeste asiático, un nicho tradicionalmente desatendido por los grandes modelos occidentales. Esta ficha describe la conversión a GGUF publicada por mradermacher, que permite ejecutar el modelo en entornos con llama.cpp y hardware de consumo.
+Qwen-SEA-LION-v5-9B-GGUF es la distribucion en formato GGUF del modelo aisingapore/Qwen-SEA-LION-v5-9B, publicada por el usuario mradermacher. Se trata de una cuantizacion estatica del modelo original desarrollado por AI Singapore (A*STAR), un LLM de aproximadamente 9.197 millones de parametros afinado especificamente para lenguas del sudeste asiatico. El modelo base parte de la familia Qwen y ha sido entrenado sobre el dataset aisingapore/SEA-Instruct-2602, lo que lo orienta a tareas conversacionales e instrucciones en idiomas como birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita, ademas de ingles y chino.
 
-El repositorio contiene únicamente pesos cuantizados estáticos (sin cuantizaciones ponderadas ni imatrix en el momento de la publicación), además de dos ficheros mmproj (`mmproj-Q8_0` y `mmproj-f16`) que actúan como suplemento multimodal, lo que sugiere que el modelo base incorpora capacidades de visión. El modelo cubre nueve idiomas: inglés, chino, birmano, indonesio, filipino, malayo, tamil, tailandés y vietnamita.
+La relevancia de esta publicacion radica en que facilita el despliegue local del modelo mediante llama.cpp y herramientas compatibles con GGUF, algo critico para regiones donde el acceso a GPUs de datacenter o a APIs en la nube es limitado. El repositorio incluye cuantizaciones desde Q2_K (4,0 GB) hasta f16 (18,5 GB), ademas de ficheros mmproj que sugieren soporte multimodal en el modelo base, aunque la model card no detalla el alcance de dicha capacidad.
 
-La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo multilingüe regional en local, con licencia MIT y tamaños de cuantización que van desde 4,0 GB (Q2_K) hasta 5,9 GB (Q4_K_M), lo que lo hace viable en GPUs de consumo. No obstante, la información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada.
+El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas, y esta etiquetado como compatible con endpoints. Su tamano de ~9B parametros lo situa en el rango de modelos que pueden ejecutarse en GPUs de consumo con cuantizaciones agresivas, lo que lo convierte en una opcion practica para aplicaciones multilingues en el sudeste asiatico.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado de Qwen, según nomenclatura) |
-| Parámetros totales | 9.197.093.888 (~9,2 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base derivado de Qwen; detalles no especificados en la informacion proporcionada) |
+| Parametros totales | 9.197.093.888 (~9,2B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16; además mmproj-Q8_0 y mmproj-f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; ademas mmproj-Q8_0 y mmproj-f16 |
 | Idiomas soportados | en, zh, my, id, fil, ms, ta, th, vi |
 | Licencia | MIT |
-| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
-| Tamaño del repositorio | 33,4 GB |
-| Modelo base | aisingapore/Qwen-SEA-LION-v5-9B |
-| Dataset de referencia | aisingapore/SEA-Instruct-2602 |
-| Librería | transformers |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. La nomenclatura "Qwen-SEA-LION-v5-9B" indica que se trata de un ajuste de un modelo de la familia Qwen (probablemente un transformer decoder-only de ~9B parámetros), adaptado por AI Singapore para lenguas del sudeste asiático. El dataset de instrucciones asociado es `aisingapore/SEA-Instruct-2602`, aunque no se especifican el número de tokens, la composición exacta ni si se emplearon técnicas de RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Por la nomenclatura y el tamano (~9,2B parametros), se trata de un transformer decoder-only derivado de la familia Qwen, pero no se confirma si emplea attention lineal, decodificacion especulativa u otras innovaciones. El repositorio de cuantizacion no incluye detalles sobre numero de tokens de entrenamiento, composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-La presencia de ficheros `mmproj` en el repositorio GGUF sugiere que el modelo base incorpora un proyector multimodal para visión, aunque no se detalla el codificador visual ni el esquema de entrenamiento multimodal. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. Toda esta información debe considerarse no disponible a partir de las fuentes consultadas.
+El dato disponible sobre entrenamiento es que el modelo base fue afinado sobre el dataset aisingapore/SEA-Instruct-2602, un conjunto de instrucciones orientado a lenguas del sudeste asiatico. Este tipo de datasets suele combinar datos sinteticos y traducidos para cubrir idiomas de bajos recursos, lo que explica la cobertura de nueve idiomas en el modelo final. La presencia de ficheros mmproj en el repositorio GGUF indica que el modelo base incorpora algun componente multimodal (probablemente vision), aunque la model card no detalla su arquitectura ni su rendimiento.
 
 ## Capacidades
 
-- Generación de texto conversacional multilingüe en nueve idiomas (inglés, chino, birmano, indonesio, filipino, malayo, tamil, tailandés y vietnamita).
-- Ajuste por instrucciones sobre el dataset SEA-Instruct-2602, orientado a tareas conversacionales.
-- Soporte multimodal potencial: los ficheros `mmproj-Q8_0` y `mmproj-f16` indican capacidad de procesamiento de imágenes en el modelo base, aunque no se detalla su alcance.
-- Capacidad de ejecución local mediante llama.cpp y derivados (Ollama, LM Studio, etc.) gracias al formato GGUF.
-- No se documenta explícitamente soporte de tool calling, function calling, agentes multi-paso ni modos de razonamiento extendido (thinking mode) en la información disponible.
+- Generacion de texto conversacional e instrucciones en nueve idiomas: ingles, chino, birmano, indonesio, filipino, malayo, tamil, tailandes y vietnamita.
+- Capacidad multimodal inferida por la presencia de ficheros mmproj (Q8_0 y f16), que permiten cargar un proyector multimodal junto al modelo en llama.cpp; el alcance exacto (vision, audio u otro) no se especifica.
+- Soporte de conversacion multi-turno (tag "conversational").
+- Compatibilidad con endpoints (tag "endpoints_compatible").
+- No se confirma soporte explicito de tool calling, function calling ni razonamiento multi-paso en la informacion disponible.
+- No se confirma modo de razonamiento (thinking mode) ni capacidades de codigo o matematicas destacadas.
 
 ## Casos de uso
 
-- Atención al cliente en lenguas del sudeste asiático: el modelo puede gestionar conversaciones multi-turno en indonesio, malayo, tailandés, vietnamita o filipino, cubriendo mercados regionales donde los modelos occidentales rinden peor. Su tamaño de ~9B permite desplegarlo en infraestructura propia.
-- Traducción y localización regional: útil para traducir contenidos entre inglés/chino y las lenguas SEA soportadas, así como entre pares regionales (por ejemplo, indonesio-malayo), en pipelines de localización de productos.
-- Procesamiento de documentos con OCR asistido: si se confirma la capacidad multimodal mediante los ficheros mmproj, podría extraer y resumir texto de imágenes o documentos escaneados en lenguas regionales.
-- Asistentes conversacionales en kioscos o dispositivos edge: con cuantizaciones Q4_K_M de 5,9 GB, cabe en GPUs de consumo (8-12 GB VRAM) y permite desplegar asistentes locales sin conexión.
-- Moderación y clasificación de contenido multilingüe: el modelo puede emplearse para etiquetar o filtrar textos en las nueve lenguas soportadas dentro de plataformas comunitarias.
-- Investigación en NLP de bajos recursos: sirve como base para fine-tuning en lenguas SEA menos representadas (birmano, tamil) o para evaluar sesgos y calidad lingüística en estos idiomas.
-- Generación de contenido educativo localizado: redacción de materiales didácticos o resúmenes en lenguas regionales para plataformas educativas.
+- Atencion al cliente en el sudeste asiatico: el modelo cubre indonesio, malayo, filipino, tailandes y vietnamita, lo que permite desplegar un unico modelo para soporte multi-pais en lugar de mantener un modelo por idioma, reduciendo costes de infraestructura.
+- Traduccion y localizacion de contenidos: con cuantizacion Q4_K_M (5,9 GB) puede ejecutarse en una GPU de consumo para traducir documentacion, interfaces o marketing entre ingles y las lenguas SEA soportadas, integrado en pipelines de CI/CD de localizacion.
+- Procesamiento de documentos con componente visual: los ficheros mmproj permiten cargar el modelo en llama.cpp con soporte multimodal, util para extraer informacion de imagenes o capturas en aplicaciones de back-office en idiomas locales.
+- Asistentes conversacionales on-premise: al distribuirse en GGUF y con licencia MIT, puede desplegarse en servidores locales de empresas que no pueden enviar datos a APIs externas, cumpliendo requisitos de soberania de datos.
+- Prototipado rapido en investigacion: investigadores que estudian LLMs para lenguas de bajos recursos pueden ejecutar el modelo en una sola GPU consumer con Q4_K_S (5,6 GB) y iterar sobre prompts sin depender de infraestructura cloud.
+- Chatbots para comunidades y ONGs: el coste cero de licencia y la posibilidad de ejecucion en hardware modesto permiten a organizaciones con presupuesto limitado desplegar asistentes en birmano o tamil, idiomas poco cubiertos por modelos comerciales.
+- Generacion de contenido multilingue para redes sociales: con Q8_0 (9,9 GB) en una RTX 4090 se obtiene la mejor calidad de cuantizacion para redactar posts y respuestas en varios idiomas SEA desde un unico endpoint.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización):
-  - Q2_K: ~4,0 GB de pesos, ~5-6 GB de VRAM en total con contexto moderado.
-  - Q4_K_M: ~5,9 GB de pesos, ~7-8 GB de VRAM en total.
-  - Q8_0: ~9-10 GB de pesos, ~11-12 GB de VRAM en total.
-  - f16: ~18-19 GB de pesos, ~20-22 GB de VRAM en total.
-- GPUs recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones Q4-Q8; A100/H100 para f16 o despliegues de alto throughput.
-- Cabe en GPU de consumo: sí, en cuantizaciones Q4_K_M o inferiores con GPUs de 8 GB o más; Q8_0 requiere 12 GB o más.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, vLLM o TGI.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~4,0 GB
+  - Q3_K_M: ~4,8 GB
+  - Q4_K_M: ~5,9 GB (recomendado por el autor como rapido)
+  - Q5_K_M: ~6,7 GB
+  - Q6_K: ~7,7 GB
+  - Q8_0: ~9,9 GB
+  - f16: ~18,5 GB
+  - mmproj adicional: 0,7 GB (Q8_0) o 1,0 GB (f16) si se usa el componente multimodal.
+- GPU recomendadas: para Q4_K_M basta una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB; para Q8_0 se recomienda RTX 4070 Ti Super, RTX 4080 o RTX 4090 (16-24 GB); para f16 se necesita una A100 40 GB, H100 o RTX 4090 con offloading parcial.
+- Cabe en GPU consumer: si, en todas las cuantizaciones hasta Q8_0 con GPUs de 8-12 GB o superiores; f16 requiere 24 GB o mas.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama (importando el GGUF), LM Studio, text-generation-webui, y servidores compatibles con endpoints. vLLM y TGI no consumen GGUF directamente; para esos casos habria que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas SEA | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen-SEA-LION-v5-9B (este) | ~9,2 B | no disponible | 9 (en, zh, my, id, fil, ms, ta, th, vi) | MIT | GGUF / safetensors |
-| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens (modelo base Qwen2.5) | Limitado (principalmente en/zh) | Apache 2.0 | safetensors / GGUF |
-| SEA-LION v3 (versiones previas de AISG) | variable (7B-13B) | no disponible | múltiples SEA | MIT/Apache según versión | safetensors / GGUF |
-| Llama 3.1 8B Instruct | ~8 B | 128.000 tokens | Limitado (en y algunos europeos) | Llama 3.1 Community License | safetensors / GGUF |
+| Qwen-SEA-LION-v5-9B (este) | ~9,2B | no disponible | my, id, fil, ms, ta, th, vi | MIT | GGUF, safetensors |
+| Modelo base aisingapore/Qwen-SEA-LION-v5-9B | ~9,2B | no disponible | mismos | MIT | safetensors |
+| Alternativas de ~7-9B para SEA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Nota: los datos de los modelos comparativos provienen del conocimiento general de sus respectivas familias y no de la documentación proporcionada para este modelo; deben verificarse en sus fichas oficiales. La ventaja diferencial de SEA-LION es la cobertura nativa de lenguas del sudeste asiático y la licencia MIT permisiva.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada para establecer una comparativa cuantitativa fiable. La comparacion mas directa es con el modelo base sin cuantizar, del que esta publicacion es una derivacion con perdida de precision controlada.
 
 ## Limitaciones y advertencias
 
-- Información técnica muy limitada: no se documentan arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad objetiva frente a alternativas.
-- Riesgo de alucinación: como todo modelo generativo, puede producir contenido factualmente incorrecto, especialmente en lenguas de bajos recursos como birmano o tamil.
-- Sesgos potenciales: el ajuste se realizó sobre SEA-Instruct-2602, cuya composición y balance lingüístico no se detalla; pueden existir sesgos culturales o de representación entre idiomas.
-- Cobertura lingüística desigual: es probable que el inglés y el chino tengan mejor calidad que las lenguas SEA minoritarias, aunque no hay datos que lo confirmen.
-- Esta ficha corresponde a una cuantización de terceros (mradermacher), no al modelo oficial; las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad.
-- No se ofrecen cuantizaciones ponderadas/imatrix en el momento de la publicación, lo que limita la optimización de calidad por tamaño.
-- Licencia MIT: permisiva para uso comercial, pero conviene verificar las condiciones del modelo base original en aisingapore/Qwen-SEA-LION-v5-9B, ya que la licencia del ajuste podría heredar restricciones de Qwen.
-- Capacidad multimodal no confirmada: los ficheros mmproj sugieren visión, pero no se especifica el alcance ni la calidad.
+- La cuantizacion introduce perdida de calidad respecto al modelo base; las variantes Q2_K y Q3_K_S son las mas agresivas y pueden degradar notablemente la coherencia, especialmente en idiomas de bajos recursos como birmano o tamil.
+- No se han publicado evaluaciones de sesgo, alucinacion ni robustez para este modelo; al estar afinado sobre un dataset de instrucciones sintetico o traducido, es probable que herede sesgos de los datos de origen y presente alucinaciones en temas especializados.
+- La longitud de contexto no esta documentada, lo que impide planificar aplicaciones que requieran ventanas largas sin validacion empirica previa.
+- La cobertura de idiomas se limita a los nueve declarados; no se garantiza un rendimiento equilibrado entre ellos, y los idiomas con menos recursos (my, ta) probablemente rindan peor que ingles o indonesio.
+- El componente multimodal (mmproj) no esta documentado en la model card; su uso en produccion requeriria validacion independiente.
+- Aunque la licencia MIT permite uso comercial, el modelo base Qwen puede arrastrar terminos adicionales de su licencia original que no se detallan en esta ficha; conviene verificar la licencia del modelo base antes de un despliegue comercial.
+- El repositorio tiene 866 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion limitada y poca validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen-SEA-LION-v5-9B-GGUF
 - Modelo base: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B
-- Dataset de instrucciones: https://huggingface.co/datasets/aisingapore/SEA-Instruct-2602
-- Página de overview del cuantizador: https://hf.tst.eu/model#Qwen-SEA-LION-v5-9B-GGUF
-- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Gráfica comparativa de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen-SEA-LION-v5-9B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen-SEA-LION-v5-9B-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/aisingapore/SEA-Instruct-2602
+- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

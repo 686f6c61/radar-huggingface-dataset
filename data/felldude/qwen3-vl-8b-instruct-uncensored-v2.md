@@ -2,76 +2,88 @@
 
 ## Resumen
 
-Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2 es un ajuste fino completo (full finetune) del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario Felldude y publicado en Hugging Face bajo licencia Apache 2.0. El modelo está orientado principalmente a la generación de descripciones de imágenes y vídeos, con un énfasis especial en contenido NSFW (no apto para menores), aunque el prompt por defecto también admite descripciones genéricas. La versión 2 de este ajuste está altamente adaptada a contenido explícito, y el autor advierte que, al haberse entrenado únicamente con imágenes, puede generar descripciones de vídeo tratándolas como si fueran imágenes estáticas.
+Qwen3-VL-8B-Instruct-Uncensored-V2 es un ajuste fino (fine-tune) completo del modelo multimodal Qwen3-VL-8B-Instruct, publicado por el usuario Felldude en Hugging Face. El modelo parte de la familia Qwen3-VL de Alibaba, una arquitectura transformer multimodal que combina un codificador visual con un decodificador de lenguaje, y ha sido reentrenado para eliminar los filtros de contenido y orientarse hacia el etiquetado (captioning) de imagenes y videos, incluyendo contenido NSFW. El autor indica que el encoder de vision permanecio congelado durante el entrenamiento y que solo se ajustaron los pesos del decodificador.
 
-El modelo mantiene la arquitectura original de Qwen3-VL de 8.767 millones de parámetros (8,7B), con el encoder de visión congelado durante el entrenamiento. Requiere al menos 24 GB de VRAM para inferencia, lo que lo sitúa fuera del alcance de GPUs de consumo convencionales (como RTX 3060 o 4060) y lo orienta a tarjetas profesionales o de gama alta con 24 GB o más. Su relevancia actual radica en ser una opción open source para tareas de captioning multimodal sin restricciones de contenido, aunque con las advertencias éticas y técnicas que ello conlleva.
+El modelo cuenta con 8.767.123.696 parametros (8,77 mil millones) y un repositorio de 17,5 GB en formato safetensors. Su proposito principal es la generacion de descripciones detalladas de imagenes y videos, con un enfasis explicito en vocabulario directo y sin eufemismos, lo que lo hace util para pipelines de generacion de datos de entrenamiento para modelos texto-a-imagen. Es relevante en el ecosistema open source porque ofrece una alternativa sin censura sobre una base Qwen3-VL, con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+
+El modelo soporta tres idiomas declarados (ingles, espanol y japones) y esta disenado para ser usado con prompts de captioning sencillos, sin necesidad de plantillas complejas. Su principal limitacion practica es el requisito de hardware: el autor especifica que necesita 24 GB de VRAM o mas para su ejecucion, lo que lo situa fuera del alcance de GPUs de consumo de gama media.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (visión-lenguaje) basado en Qwen3-VL, encoder de visión congelado |
-| Parametros totales | 8.767.123.696 (8,7B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No especificada (el modelo base Qwen3-VL soporta contexto extendido, pero no se indica el valor en este ajuste) |
-| Tipos de cuantizacion | No se publican archivos cuantizados (solo safetensors en BF16) |
-| Idiomas soportados | Inglés (en), español (es), japonés (ja) |
+| Arquitectura | Transformer multimodal (Qwen3-VL: encoder de vision + decodificador de lenguaje) |
+| Parametros totales | 8.767.123.696 (8,77 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el repo solo contiene safetensors en BF16/FP16) |
+| Idiomas soportados | Ingles, espanol, japones |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Qwen3-VL-8B-Instruct, un transformer multimodal que combina un codificador de visión con un modelo de lenguaje de 8,7B parámetros. El ajuste realizado por Felldude es un full finetune sobre el modelo base, manteniendo el encoder de visión congelado (no se actualizaron sus pesos) y entrenando únicamente las capas del modelo de lenguaje. El entrenamiento se realizó con Adam8bit debido al tamaño del modelo, usando precisión BF16/TF32 para el resto de operaciones. No se especifican detalles sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. El autor indica que el entrenamiento se centró exclusivamente en imágenes, lo que explica la limitación observada en la generación de descripciones de vídeo.
+El modelo se basa en la arquitectura Qwen3-VL, un transformer multimodal compuesto por un codificador de vision y un decodificador de lenguaje. Segun la model card, se realizo un fine-tune completo del modelo de 8B parametros manteniendo el encoder de vision congelado, es decir, solo se ajustaron los pesos del decodificador de lenguaje. El entrenamiento utilizo el optimizador Adam8bit para gestionar el tamano del modelo, y en caso contrario se habrian usado BF16/TF32.
+
+La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El autor menciona que esta version (V2) esta "altamente orientada a contenido NSFW" y que, debido a que el entrenamiento se realizo solo con imagenes, el modelo puede generar ocasionalmente leyendas (captions) de video como si fueran de imagen. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de descripciones detalladas de imágenes, incluyendo elementos como iluminación, ángulo de cámara, marcas de agua, artefactos JPEG, composición, profundidad de campo y orientación.
-- Soporte para contenido NSFW explícito, con un prompt optimizado que evita eufemismos y utiliza lenguaje vulgar y directo.
-- Capacidad de describir vídeos, aunque con la limitación de que al entrenarse solo con imágenes puede tratar los vídeos como imágenes estáticas.
-- Mantiene las capacidades del modelo base Qwen3-VL en cuanto a comprensión visual y razonamiento, aunque el ajuste puede haber alterado el comportamiento en tareas no relacionadas con la descripción de imágenes.
-- Multilingüe en inglés, español y japonés, aunque el prompt recomendado está en inglés.
+- Generacion de descripciones detalladas de imagenes (captioning) en ingles, espanol y japones.
+- Generacion de descripciones de videos, aunque el autor advierte que puede confundir videos con imagenes por el tipo de entrenamiento.
+- Etiquetado de contenido NSFW con vocabulario directo y sin eufemismos, segun la configuracion del prompt.
+- Capacidad de seguir instrucciones de captioning complejas: iluminacion, angulo de camara, marcas de agua, artefactos JPEG, estilo de composicion, profundidad de campo, orientacion y relacion de aspecto.
+- Descripcion de calidad estetica subjetiva y tipo de plano (primer plano, plano medio, plano general, etc.).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues limitadas a los tres idiomas declarados.
+- Modo thinking, vision o audio adicionales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Generación de captions para bancos de imágenes o datasets de entrenamiento de modelos texto-a-imagen: el modelo produce descripciones detalladas y estructuradas que pueden servir como etiquetas de alta calidad para entrenar otros modelos generativos.
-- Moderación de contenido en plataformas que manejan material explícito: permite clasificar imágenes como SFW, sugerente o NSFW, y generar descripciones automáticas para sistemas de revisión.
-- Archivado y catalogación de colecciones de imágenes o vídeos: su capacidad de describir elementos concretos (colores, texturas, relaciones espaciales) facilita la indexación automática de grandes volúmenes de contenido visual.
-- Asistencia a creadores de contenido para adultos: el modelo puede generar descripciones alternativas o metadatos para publicaciones, ahorrando tiempo en la redacción manual.
-- Investigación en seguridad de modelos de IA: al ser un modelo "uncensored", permite estudiar los límites de la alineación y los riesgos de los ajustes sin restricciones, aunque su uso debe ser ético y controlado.
-- Generación de subtítulos descriptivos para vídeos en entornos donde no se requiere precisión temporal (por ejemplo, resúmenes estáticos de escenas), siempre asumiendo la limitación de que el modelo no distingue bien entre imagen y vídeo.
+- Generacion de datasets de entrenamiento para modelos texto-a-imagen: el modelo puede producir captions detallados y variados de imagenes, incluyendo informacion de iluminacion, composicion y camara, lo que alimenta pipelines de entrenamiento de difusion con datos estructurados.
+- Etiquetado de contenido para plataformas de moderacion: permite clasificar imagenes como SFW, sugerentes o NSFW y generar descripciones explicitas que ayuden a revisar y catalogar contenido subido por usuarios.
+- Descripcion automatizada de catalogos de imagenes: en flujos de gestion de activos digitales, el modelo genera metadatos ricos (sujeto, medio, colores, texturas, relaciones espaciales) que mejoran la buscabilidad.
+- Analisis de fotografia profesional: con prompts que solicitan apertura, velocidad de obturacion e ISO, el modelo puede inferir parametros de camara probables y detalles tecnicos de la toma.
+- Generacion de descripciones para accesibilidad: produce texto alternativo detallado para imagenes, con orientacion, composicion y elementos principales, util en sitios web y aplicaciones.
+- Anotacion de videos para pipelines de vision: aunque con la advertencia de posibles confusiones con imagenes, puede generar descripciones de escenas y elementos clave en fotogramas o clips.
+- Investigacion sobre sesgos y contenido explicito: al ser un modelo sin censura, sirve para estudiar como los modelos multimodales describen contenido sensible y para calibrar filtros de seguridad en otros sistemas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona métricas de evaluación comparativa con el modelo base ni con otras alternativas. Se recomienda realizar pruebas propias si se considera su uso en tareas específicas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM mínima: 24 GB según el autor, para inferencia en BF16 (los pesos ocupan aproximadamente 17,5 GB, más overhead de activaciones y caché).
-- GPUs compatibles: tarjetas con 24 GB o más, como NVIDIA RTX 4090, RTX 6000 Ada, A100, H100, o GPUs profesionales equivalentes. No es viable en GPUs de consumo de 8-12 GB sin cuantización, y no se proporcionan versiones cuantizadas.
-- Opciones de despliegue: al ser un modelo con pesos en safetensors, puede cargarse con frameworks como Transformers + Accelerate, vLLM, TGI o llama.cpp (si se convierte a GGUF, aunque no se incluye en el repo). No hay integración directa con Ollama documentada.
-- Latencia y throughput: no se especifican. Dependerá del hardware y del framework de inferencia utilizado. Para un modelo de 8,7B en BF16, se puede estimar una latencia de entre 20 y 50 tokens por segundo en una A100, pero no hay datos verificados.
+- VRAM estimada para inferencia: 24 GB o mas, segun la model card del autor.
+- GPU recomendadas: no se especifican modelos concretos; por el requisito de 24 GB encajan GPUs como A100 (40/80 GB), H100, RTX A6000 (48 GB) o RTX 4090 (24 GB, en el limite).
+- Cabe en consumer GPU: si, en RTX 4090 (24 GB) y posiblemente en otras GPUs con 24 GB, aunque sin margen para cuantizaciones adicionales si se mantiene BF16.
+- Opciones de despliegue: no disponible en la informacion proporcionada (no se mencionan vLLM, llama.cpp, Ollama ni TGI).
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct (base) | 8,7B | No especificado | Apache 2.0 | Multimodal general, alineado y seguro |
-| Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2 | 8,7B | No especificado | Apache 2.0 | Multimodal, sin restricciones de contenido, orientado a NSFW |
-| LLaVA-NeXT-8B (ejemplo comparable) | 8B | 32K (típico) | Apache 2.0 | Multimodal general, sin ajuste NSFW |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2 | 8,77 B | no disponible | Apache 2.0 | Captioning sin censura sobre Qwen3-VL | Hugging Face, safetensors |
+| Qwen3-VL-8B-Instruct (base) | ~8 B | no disponible | Apache 2.0 | Multimodal general con alineamiento de seguridad | Hugging Face |
+| Alternativas de captioning sin censura | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a características generales porque no hay datos de rendimiento publicados para el modelo de Felldude. La principal diferencia con el modelo base es la eliminación de las restricciones de contenido y el enfoque en descripciones detalladas y explícitas. Frente a alternativas como LLaVA-NeXT, este ajuste ofrece un comportamiento especializado en captioning explícito, pero puede perder capacidades generales de razonamiento visual.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a la relacion con su modelo base.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado únicamente con imágenes, por lo que puede generar descripciones de vídeo incorrectas (tratándolos como imágenes estáticas). No es adecuado para tareas de comprensión temporal de vídeo.
-- Genera contenido explícito y vulgar sin filtros. Su uso en entornos de producción debe considerar políticas de moderación y cumplimiento legal, especialmente en países con regulaciones sobre contenido para adultos.
-- No se han publicado evaluaciones de sesgos ni de robustez. Al ser un ajuste no alineado, puede reflejar sesgos del dataset de entrenamiento no documentado.
-- La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede estar sujeto a normativas específicas sobre material explícito.
-- El requisito de 24 GB de VRAM limita su despliegue en infraestructuras modestas y no se ofrecen versiones cuantizadas para reducir este requisito.
-- No se dispone de información sobre el contexto máximo soportado ni sobre el rendimiento en tareas fuera del captioning de imágenes.
+- El modelo ha sido entrenado para eliminar filtros de contenido y generar descripciones explicitas; no es adecuado para aplicaciones dirigidas al publico general sin moderacion posterior.
+- Riesgo elevado de generar contenido NSFW, lenguaje vulgar y descripciones de personas o personajes con edades, lo que requiere supervision humana y cumplimiento legal.
+- Puede confundir videos con imagenes y generar captions de video en formato de imagen, segun advierte el autor.
+- Sesgos conocidos: no documentados en la model card; al derivar de Qwen3-VL, puede heredar sesgos del modelo base, pero no se especifican.
+- Riesgo de alucinacion: no documentado; en tareas de captioning puede inventar detalles no observables si el prompt lo permite.
+- Limitaciones de contexto e idioma: solo se declaran ingles, espanol y japones; la longitud de contexto no esta disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el contenido generado puede infringir normativas sobre material explicito o derechos de imagen.
+- Caveat para produccion: el requisito de 24 GB de VRAM limita el despliegue en infraestructura de gama media; no se documentan optimizaciones de inferencia ni cuantizaciones oficiales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2
-- Repositorio oficial de Qwen3-VL en GitHub: https://github.com/QwenLM/Qwen3-VL
-- Repositorio oficial de Qwen3 (serie de modelos base): https://github.com/QwenLM/Qwen3
+- Hugging Face: https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2
+- Modelo base Qwen3-VL-8B-Instruct: no disponible en la informacion proporcionada
+- Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada

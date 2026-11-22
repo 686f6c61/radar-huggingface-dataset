@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Sage-A1.5-Concise-i1-GGUF es una cuantizacion en formato GGUF del modelo TheFusionCube/Sage-A1.5-Concise, publicada por el usuario mradermacher. Se trata de un modelo de arquitectura MoE (mixture of experts) orientado a razonamiento eficiente y afinado mediante aprendizaje por refuerzo, con 35.505.251.456 parametros totales segun los datos de safetensors del modelo base. La model card lo etiqueta como modelo de vision, aunque los ficheros mmproj (si existen) se alojan en el repositorio estatico separado.
+Sage-A1.5-Concise-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo base TheFusionCube/Sage-A1.5-Concise. El modelo original es un transformer de tipo Mixture of Experts (MoE) orientado a razonamiento eficiente, entrenado mediante aprendizaje por refuerzo (reinforcement learning), y publicado bajo licencia Apache 2.0. Con 35.505.251.456 parámetros totales (aproximadamente 35,5 mil millones), se posiciona en la franja de modelos de razonamiento de tamano medio-grande.
 
-El interes de esta publicacion es practico: ofrece cuantizaciones con imatrix (matriz de importancia) para reducir el peso del modelo a aproximadamente 13,3 GB en i1-Q2_K, lo que permite ejecutar un modelo de 35,5 mil millones de parametros en hardware de consumo mediante llama.cpp y derivados. La licencia Apache 2.0 facilita su uso comercial, aunque el modelo solo declara soporte para ingles.
+El interés de esta publicación concreta reside en que ofrece los pesos en formato GGUF con cuantizaciones ponderadas mediante imatrix, lo que permite ejecutar el modelo en hardware de consumo y en entornos de inferencia local con llama.cpp y derivados. El repositorio incluye un abanico amplio de cuantizaciones, desde i1-Q2_K (13,3 GB) hasta i1-Q6_K (29,3 GB), cubriendo distintos compromisos entre calidad y requisitos de memoria.
 
-La informacion publicada es muy limitada: no se detallan datos de entrenamiento, composicion del dataset, resultados de benchmarks ni el numero de parametros activos del MoE. Esta ficha refleja unicamente lo disponible en la model card y los metadatos de Hugging Face, marcando explicitamente como "no disponible" todo aquello que no se ha publicado.
+La relevancia actual del modelo se apoya en su enfoque de "razonamiento eficiente": frente a modelos que generan cadenas de pensamiento muy largas, la variante Concise busca reducir el coste computacional de la fase de razonamiento manteniendo la calidad de las respuestas. La información disponible no detalla la longitud de contexto ni la composición exacta del dataset de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts), transformer; detalles de capas y expertos no disponibles |
-| Parametros totales | 35.505.251.456 (35,5 mil millones) |
+| Arquitectura | Transformer Mixture of Experts (MoE) |
+| Parametros totales | 35.505.251.456 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K (13,3 GB) publicado; la model card lista ademas IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q2_K_S, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K como quants generados (no todos con enlace publicado en este repo) |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); incluye fichero imatrix de 0,5 GB para generar cuantizaciones propias |
+| Formato de pesos | GGUF (cuantizaciones ponderadas con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE con 35,5 mil millones de parametros totales, segun los metadatos de safetensors. La model card lo etiqueta con las tags `moe`, `reasoning`, `efficient-reasoning` y `reinforcement-learning`, lo que sugiere un entrenamiento con tecnicas de RL orientadas a producir cadenas de razonamiento mas concisas o eficientes, pero no se especifica el algoritmo concreto (PPO, GRPO, DPO u otro), ni el volumen de datos de entrenamiento, ni la composicion del dataset.
+El modelo base sigue una arquitectura transformer con capas de tipo Mixture of Experts, segun indican las etiquetas del repositorio (moe). El pipeline declarado es reinforcement-learning, y las etiquetas incluyen reasoning, efficient-reasoning y conversational, lo que sugiere un entrenamiento posterior con RL orientado a mejorar la calidad del razonamiento y a hacerlo mas conciso. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas como RLHF o DPO mas alla de la mencion generica al aprendizaje por refuerzo.
 
-Esta publicacion concreta es una cuantizacion, no un modelo entrenado desde cero: mradermacher ha aplicado cuantizacion con imatrix (matriz de importancia calculada sobre el modelo original) para preservar la calidad en tasas de bits bajas. El repositorio incluye el fichero `Sage-A1.5-Concise.imatrix.gguf` de 0,5 GB para que terceros puedan generar sus propias cuantizaciones. No se han publicado detalles sobre innovaciones arquitectonicas adicionales (atencion lineal, decodificacion especulativa, etc.).
+La innovacion destacable es el enfoque de razonamiento eficiente (efficient-reasoning), que busca reducir la longitud de las cadenas de pensamiento sin sacrificar precision. Las cuantizaciones de este repositorio emplean ficheros imatrix generados a partir del modelo original, lo que mejora la calidad de las cuantizaciones de baja precision respecto a las estaticas. El repositorio incluye tambien una version con cuantizaciones estaticas en mradermacher/Sage-A1.5-Concise-GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la tag `conversational`.
-- Razonamiento explicito con enfasis en eficiencia (`efficient-reasoning`), presumiblemente cadenas de pensamiento mas cortas que modelos de razonamiento convencionales.
-- Capacidad multimodal de vision: la model card indica explicitamente "This is a vision model", aunque los ficheros mmproj se alojan en el repositorio estatico separado.
+- Generacion de texto conversacional en ingles, orientada a dialogos multi-turno.
+- Razonamiento con modo de pensamiento eficiente (efficient-reasoning), disenado para producir cadenas de razonamiento mas cortas.
+- Capacidades de razonamiento reforzadas mediante aprendizaje por refuerzo.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente, aunque la tag `reasoning` sugiere capacidades de este tipo.
-- Capacidades multilingues: limitadas al ingles segun los metadatos.
-- Modo thinking explicito: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita, aunque el enfoque de razonamiento es compatible con este tipo de flujos.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
+- Vision, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Razonamiento eficiente en produccion: el enfasis del modelo en cadenas de razonamiento concisas lo hace adecuado para pipelines donde el coste por token de salida importa, como clasificacion compleja o extraccion estructurada con justificacion breve.
-- Despliegue local en estaciones de trabajo: con la cuantizacion i1-Q2_K de 13,3 GB, puede ejecutarse en GPUs de consumo de gama alta (24 GB de VRAM) o en configuraciones CPU+GPU mediante llama.cpp, permitiendo prototipado sin infraestructura cloud.
-- Asistentes conversacionales en ingles: la tag `conversational` y la licencia Apache 2.0 permiten integrarlo en productos de atencion al cliente o asistentes internos sin restricciones comerciales.
-- Procesamiento de documentos con componente visual: al declararse modelo de vision, puede emplearse para tareas de comprension de imagenes o documentos escaneados, siempre que se descarguen los ficheros mmproj del repositorio estatico.
-- Investigacion sobre razonamiento con RL: util para reproducir o comparar tecnicas de reinforcement learning aplicadas a la concision del razonamiento, dado el etiquetado del modelo.
-- Generacion de cuantizaciones propias: el fichero imatrix publicado permite a equipos de infraestructura generar variantes GGUF ajustadas a sus requisitos de VRAM y latencia.
-- Evaluacion comparativa de MoE de ~35B: sirve como referencia para medir el impacto de la cuantizacion con imatrix frente a cuantizaciones estaticas (disponibles en el repositorio hermano de mradermacher).
+- Asistente conversacional en ingles: el modelo puede gestionar dialogos multi-turno gracias a su naturaleza conversacional y a su entrenamiento con RL, adecuado para bots de soporte en productos de habla inglesa.
+- Razonamiento con coste controlado: su enfoque de razonamiento conciso lo hace util en pipelines donde el coste por token de salida es critico, como clasificacion con justificacion o extraccion de conclusiones.
+- Despliegue en hardware de consumo: las cuantizaciones i1-Q4_K_M (21,8 GB) o i1-IQ3_M (15,9 GB) permiten ejecutar el modelo en estaciones de trabajo con GPU de 24 GB o en configuraciones CPU+GPU con llama.cpp.
+- Prototipado e investigacion en razonamiento eficiente: util para comparar la calidad de cadenas de pensamiento cortas frente a modelos que generan razonamientos extensos.
+- Generacion de codigo asistida: no hay evidencia especifica en la informacion disponible sobre rendimiento en codigo; se recomienda validacion previa.
+- Evaluacion de cuantizaciones: el repositorio con multiples variantes imatrix sirve para estudiar el impacto de la cuantizacion en tareas de razonamiento.
+- Inferencia local en entornos con requisitos de privacidad: al ejecutarse con llama.cpp, permite procesar datos sensibles sin salir de la infraestructura propia.
 
 ## Benchmarks y rendimiento
 
@@ -53,40 +53,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 13,3 GB para la cuantizacion i1-Q2_K publicada; el modelo sin cuantizar requeriria del orden de 70 GB en FP16 (35,5B parametros x 2 bytes), aunque no se confirma el formato original.
-- GPU recomendadas: para i1-Q2_K, una RTX 4090 (24 GB) o RTX 3090 (24 GB) deja margen para contexto; GPUs profesionales como A100 o H100 permiten cuantizaciones mayores (Q4_K_M, Q5_K_M, Q6_K) con mayor calidad.
-- Cabe en GPU de consumo: si, en GPUs de 16-24 GB con la cuantizacion Q2; las cuantizaciones Q4 o superiores requieren 20-24 GB o mas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; la tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI. vLLM y TGI no soportan GGUF de forma nativa, por lo que requeririan el modelo original en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada segun cuantizacion (tamano de fichero GGUF como referencia de memoria de pesos):
+  - i1-Q2_K: 13,3 GB
+  - i1-IQ3_M: 15,9 GB
+  - i1-Q4_K_M: 21,8 GB
+  - i1-Q5_K_M: 25,4 GB
+  - i1-Q6_K: 29,3 GB
+- GPU recomendadas: para Q4_K_M, una RTX 4090 (24 GB) o A100 40 GB; para Q5/Q6, A100 40 GB o H100 80 GB.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones hasta Q4_K_M; las variantes Q2/IQ3 caben en GPUs de 16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF. No se menciona soporte de vLLM o TGI para este formato.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Sage-A1.5-Concise-i1-GGUF | 35,5B (MoE) | no disponible | Apache 2.0 | GGUF | Cuantizacion imatrix; solo ingles; vision declarada |
-| Sage-A1.5-Concise (base) | 35,5B (MoE) | no disponible | Apache 2.0 | safetensors | Modelo original de TheFusionCube |
-| Sage-A1.5-Concise-GGUF (estatico) | 35,5B (MoE) | no disponible | Apache 2.0 | GGUF | Cuantizaciones estaticas del mismo autor, incluye mmproj |
-
-No se dispone de informacion suficiente para comparar con alternativas de otros desarrolladores (por ejemplo, otros MoE de ~30-40B) en terminos de rendimiento, ya que no se han publicado benchmarks.
+No disponible. La informacion proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no se ha validado su comportamiento en castellano ni en otros idiomas.
-- No se han publicado benchmarks, por lo que el rendimiento real en tareas de razonamiento, codigo o matematicas es desconocido.
-- La cuantizacion i1-Q2_K es agresiva (aproximadamente 3 bits por peso); puede degradar la calidad respecto al modelo original, especialmente en tareas de razonamiento sensible a la precision.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones especificas.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Aunque la licencia es Apache 2.0, conviene verificar los terminos del modelo base y de los datos de entrenamiento originales antes de un despliegue comercial.
-- La funcionalidad de vision requiere descargar los ficheros mmproj desde el repositorio estatico; no estan incluidos en este repositorio.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion comunitaria del funcionamiento.
-- La fecha de creacion (2026-11-11) y la escasa documentacion aconsejan tratar el modelo con cautela en entornos de produccion.
+- Modelo entrenado y evaluado principalmente en ingles; el rendimiento en castellano no esta garantizado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; requiere validacion en produccion.
+- No se dispone de informacion sobre sesgos conocidos, datos de entrenamiento ni evaluaciones de seguridad.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base TheFusionCube/Sage-A1.5-Concise.
+- El formato GGUF esta pensado para inferencia local; para despliegues de alta concurrencia en servidor conviene evaluar otros formatos y motores.
+- Las cuantizaciones de baja precision (Q2, IQ3) pueden degradar la calidad del razonamiento; se recomienda Q4_K_M o superior para tareas exigentes.
+- No hay informacion sobre longitud de contexto maxima, lo que limita la planificacion de casos de uso con documentos largos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Sage-A1.5-Concise-i1-GGUF
 - Modelo base: https://huggingface.co/TheFusionCube/Sage-A1.5-Concise
-- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Sage-A1.5-Concise-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Sage-A1.5-Concise-i1-GGUF
-- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Sage-A1.5-Concise-GGUF
+- Pagina de descarga del autor: https://hf.tst.eu/model#Sage-A1.5-Concise-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

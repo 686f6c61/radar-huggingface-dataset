@@ -2,103 +2,94 @@
 
 ## Resumen
 
-Qwen3-1.7B-Distilled-30B-A3B es un ajuste fino por destilación de conocimiento del modelo Qwen3-1.7B, desarrollado por el usuario reaperdoesntknow en colaboración con Convergent Intelligence LLC. El objetivo del modelo es transferir capacidad de razonamiento STEM estructurado —demostraciones matemáticas, física, ingeniería y biología— desde un profesor mucho mayor, Qwen3-30B-A3B-Instruct-2507 (un MoE de 30B con 3B activos), hacia un estudiante denso de aproximadamente 2.031 millones de parámetros. El resultado es un modelo compacto orientado a despliegues en el borde (edge) con capacidad de generar cadenas de razonamiento largas y estructuradas.
+Qwen3-1.7B-Distilled-30B-A3B es un modelo de lenguaje causal de aproximadamente 2.031 millones de parametros, desarrollado por reaperdoesntknow (Convergent Intelligence LLC, Research Division) mediante destilacion de conocimiento a partir del modelo profesor Qwen3-30B-A3B-Instruct-2507 sobre el modelo base Qwen3-1.7B. El objetivo es transferir capacidad de razonamiento STEM (matematicas, fisica, ingenieria, biologia, algebra lineal, ecuaciones diferenciales) a un modelo lo bastante pequeno para desplegarse en entornos de borde.
 
-La contribución técnica principal no es el modelo en sí, sino la metodología de destilación propuesta: una destilación informada por discrepancia (discrepancy-informed knowledge distillation) que pondera dinámicamente los tokens de la KL entre profesor y estudiante, detectando "pivotes de razonamiento" mediante un operador de discrepancia discreta sobre la secuencia de KL por token. Además, aplica suavizado DG-Limit en tokens de alta entropía del estudiante y regularización por energía de discrepancia para evitar degradación estructural en las transiciones de razonamiento.
+La contribucion tecnica diferencial es una metodologia de destilacion informada por discrepancia (DISC v3) que pondera dinamicamente los tokens de la destilacion segun su papel estructural en la derivacion: los tokens de "pivote" del razonamiento, detectados mediante la divergencia KL token a token entre profesor y estudiante, reciben un peso amplificado, mientras que los tokens de continuacion suave mantienen el peso estandar. Ademas, se aplica suavizado sobre tokens de estudiante de alta entropia y una regularizacion basada en "energia de discrepancia" para evitar degradacion estructural.
 
-El modelo se entrena sobre 6.122 muestras de chain-of-thought STEM procedentes de diez datasets del usuario 0xZee, con una única época, contexto de entrenamiento de 1.024 tokens y precisión bf16. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial, y se distribuye en formato safetensors para la librería transformers.
+El resultado es un modelo compacto (2B parametros, pesos en bf16, repo de 12,2 GB) con licencia Apache 2.0, orientado a generacion de texto en ingles con enfasis en cadenas de razonamiento con estructura de prueba formal. Es relevante para quienes necesitan razonamiento STEM en hardware modesto sin depender de un modelo MoE de 30B parametros.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3 causal language model (transformer decoder denso) |
-| Parámetros totales | 2.031.739.904 (~2,03B) |
-| Parámetros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 1.024 tokens en entrenamiento; contexto nativo de Qwen3-1.7B no disponible en la información proporcionada |
-| Tipos de cuantización | no disponible en la model card (pesos publicados en bf16; cuantizaciones GGUF/AWQ no listadas) |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Arquitectura | Qwen3 causal language model (transformer decoder-only) |
+| Parametros totales | 2.031.739.904 (~2,03B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 1024 tokens (longitud de contexto de entrenamiento); contexto nativo del base no detallado en la informacion disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3-1.7B base: un transformer decoder causal denso con atención estándar (no se especifican variantes como GQA o atención lineal en la información disponible). El ajuste se realiza con precisión bf16 y una longitud de contexto de entrenamiento de 1.024 tokens, lo que limita las secuencias efectivas durante el ajuste aunque no necesariamente el contexto de inferencia heredado del modelo base.
+El modelo es un transformer causal decoder-only derivado de Qwen3-1.7B, con pesos en bf16. La arquitectura interna (numero de capas, dimensiones de atencion, tipo de atencion) corresponde a la del modelo base Qwen3-1.7B y no se detalla de forma independiente en la informacion disponible. El profesor utilizado para la destilacion es Qwen3-30B-A3B-Instruct-2507, un modelo MoE de 30B parametros totales y aproximadamente 3B activos.
 
-El entrenamiento emplea una destilación de conocimiento desde Qwen3-30B-A3B-Instruct-2507 sobre 6.122 muestras de chain-of-thought STEM (5.815 de entrenamiento y 307 de evaluación) provenientes de diez datasets de 0xZee: física (2.254 muestras), álgebra lineal (667), ecuaciones diferenciales (636), electromagnetismo (580), ingeniería (574), mecánica clásica (343), mecánica teórica (307), física general (225), fisiología (114) y biología molecular (71), además de un dataset de matemáticas. La función de pérdida combina tres términos: cross-entropy ponderada por prueba (α_ce = 0,55, con peso de la región de demostración decayendo de 2,5× a 1,5×), KL de destilación ponderada por discrepancia (α_kd = 0,45) y regularización por energía de discrepancia (λ = 0,02). Se usa AdamW con learning rate 1,5e-5, scheduler coseno con 30 pasos de warmup, batch efectivo de 8 vía acumulación de gradiente, temperatura de destilación 2,0 y una única época.
+El entrenamiento se realizo sobre 6.122 muestras de chain-of-thought STEM (5.815 de entrenamiento, 307 de evaluacion), agregadas de 10 datasets de dominio: fisica (2.254 muestras), algebra lineal (667), ecuaciones diferenciales (636), electromagnetismo (580), ingenieria (574), mecanica clasica (343), mecanica teorica (307), fisica general (225), biologia molecular (71) y fisiologia (114), mas un dataset de matematicas. El objetivo combina tres terminos: entropia cruzada ponderada por prueba (peso 0,55, con enfasis en la region de derivacion que decae de 2,5x a 1,5x), destilacion KL ponderada por discrepancia (peso 0,45, temperatura 2,0, amplificador de saltos 3,0x con umbral media + 2 sigma) y regularizacion de energia de discrepancia (lambda 0,02). Se entreno 1 epoca con AdamW, learning rate 1,5e-5, scheduler coseno con 30 pasos de calentamiento, batch efectivo 8 mediante acumulacion de gradiente 8, clipping 1,0 y autocast bf16. El suavizado DG-Limit usa ventana de 3 tokens y umbral de entropia media + 1 sigma.
 
-La innovación destacable es el operador de discrepancia discreta aplicado a la secuencia de KL por token: los tokens cuyo salto de discrepancia supera media + 2σ se clasifican como pivotes de razonamiento y reciben un amplificador de peso de 3,0×. Adicionalmente, el suavizado DG-Limit reemplaza los logits del estudiante por una media de vecindad de 3 tokens cuando la entropía supera media + 1σ, estabilizando el flujo de gradiente en singularidades locales.
+La innovacion destacable es el tratamiento no uniforme de tokens durante la destilacion: la senal de discrepancia token a token se interpreta como una secuencia y sus cambios locales abruptos se identifican como pivotes de razonamiento, recibiendo peso amplificado sin anotacion manual. Esto desplaza capacidad de aprendizaje hacia transiciones estructurales de la derivacion en lugar del promedio de tokens.
 
 ## Capacidades
 
-- Generación de texto causal autoregresiva en inglés.
-- Razonamiento STEM estructurado con cadenas de pensamiento explícitas, especialmente en demostraciones matemáticas y derivaciones físicas.
-- Resolución de problemas de matemáticas (álgebra lineal, ecuaciones diferenciales), física (mecánica clásica, mecánica teórica, electromagnetismo), ingeniería, biología molecular y fisiología.
-- Producción de demostraciones con estructura reconocible (`Proof:` … `Final Answer:`), lo que facilita el parseo en pipelines.
-- Razonamiento multi-paso orientado a la verificación paso a paso de derivaciones.
-- No se documenta soporte de tool calling ni function calling en la información disponible.
-- No se documenta modo thinking explícito, visión, audio ni capacidades multimodales.
-- Capacidad multilingüe limitada al inglés según la model card.
-- Orientado a despliegue en dispositivos de borde (tag `edge`), aunque sin métricas de latencia publicadas.
+- Generacion de texto autoregresiva en ingles con foco en cadenas de razonamiento STEM.
+- Razonamiento matematico con estructura de prueba: derivaciones marcadas entre `Proof:` y `Final Answer:`.
+- Razonamiento en fisica, mecanica clasica y teorica, electromagnetismo, algebra lineal, ecuaciones diferenciales, ingenieria, biologia molecular y fisiologia.
+- Produccion de chain-of-thought explicito orientado a calidad de derivacion sobre formato de respuesta.
+- Capacidades conversacionales basicas (tag `conversational`).
+- No se documenta soporte de tool calling / function calling en la informacion disponible.
+- No se documenta soporte de agentes ni multi-step reasoning orquestado en la informacion disponible.
+- No se documenta modo thinking explicito, vision ni audio.
+- Multilingue: solo ingles segun la model card.
 
 ## Casos de uso
 
-- Tutoría automática de matemáticas y física: el modelo puede generar derivaciones paso a paso con estructura `Proof:`/`Final Answer:`, útil para plataformas educativas que necesitan explicaciones verificables y no solo respuestas finales.
-- Generación de soluciones en cuadernos de ejercicios STEM: dado el entrenamiento sobre datasets CoT de álgebra lineal, ecuaciones diferenciales y mecánica, puede producir resoluciones completas para problemas de nivel universitario inicial en inglés.
-- Asistente de estudio offline en dispositivos de borde: con ~2B parámetros y pesos en bf16, es viable en GPUs de consumo y en portátiles, permitiendo razonamiento STEM local sin dependencia de API.
-- Preprocesado y enriquecimiento de datasets científicos: puede generar cadenas de razonamiento sintéticas para aumentar corpus de entrenamiento en dominios como electromagnetismo o biología molecular, gracias a su familiaridad con la estructura CoT.
-- Evaluación automática de derivaciones: al producir demostraciones estructuradas, se puede integrar en pipelines que comparan la estructura de la prueba generada con una referencia para detectar pasos faltantes.
-- Prototipado rápido de asistentes técnicos en investigación: sirve como modelo de bajo coste para validar prompts y flujos de razonamiento antes de escalar a modelos mayores en producción.
-- Docencia de ingeniería: generación de explicaciones de mecánica clásica y teórica con pasos intermedios, útil como material de apoyo en cursos introductorios.
+- Tutoria STEM automatizada: el modelo genera derivaciones paso a paso en matematicas y fisica, adecuado para explicar resoluciones a estudiantes porque fue entrenado explicitamente para producir estructura de prueba entre marcadores `Proof:` y `Final Answer:`.
+- Generacion de soluciones verificables en fisica e ingenieria: al estar destilado sobre datasets de mecanica clasica, electromagnetismo e ingenieria, puede redactar resoluciones con pasos intermedios que un revisor humano valida rapidamente.
+- Asistencia en algebra lineal y ecuaciones diferenciales: util como borrador de derivaciones en entornos docentes o de autoestudio, con contexto de hasta 1024 tokens suficiente para enunciados y desarrollos de extension media.
+- Despliegue en borde y entornos con recursos limitados: con ~2B parametros en bf16 y licencia Apache 2.0, puede ejecutarse en GPUs de consumo y integrarse en aplicaciones locales de asistencia tecnica sin infraestructura de centro de datos.
+- Preprocesamiento de razonamiento en pipelines de datos: puede generar cadenas de pensamiento STEM para enriquecer datasets de entrenamiento o como generador de borradores que un modelo mayor revisa.
+- Prototipado rapido de asistentes tecnicos en ingles: al ser un modelo pequeno y de licencia permisiva, sirve para validar productos de Q&A tecnico antes de escalar a modelos mayores.
+- Investigacion sobre destilacion: util como referencia reproducible de la metodologia DISC v3 para estudiar ponderacion por discrepancia en destilacion de razonamiento.
 
-## Benchmarks y rendimiento
+## Benchmarks y rendimento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, GSM8K, HumanEval ni evaluaciones específicas de razonamiento STEM, ni comparaciones cuantitativas con el modelo profesor o con el base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas como MMLU, HumanEval, GSM8K ni comparaciones numericas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 4,1 GB solo para pesos (2,03B × 2 bytes), más overhead de activaciones y KV cache; en la práctica, entre 5 y 6 GB para contextos cortos.
-- VRAM estimada en cuantización de 8 bits: ~2,1 GB para pesos; en 4 bits: ~1,1 GB para pesos (cuantizaciones no publicadas oficialmente, requieren conversión manual).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 y H100 para servir en producción con mayor throughput.
-- Cabe en GPUs de consumo: sí, en cualquier GPU con al menos 6-8 GB de VRAM para bf16, y en GPUs de 4 GB con cuantización a 4 bits.
-- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (tag `text-generation-inference`), endpoints compatibles; vLLM, llama.cpp y Ollama no están confirmados en la información disponible, aunque serían viables tras conversión a GGUF.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en bf16: aproximadamente 4-5 GB solo para pesos (2,03B parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica 6-8 GB para contexto moderado.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 2-3 GB de pesos; en 4 bits: aproximadamente 1,2-1,5 GB de pesos (estimaciones teoricas, no se publican variantes cuantizadas oficiales).
+- GPU recomendadas: cualquier GPU con 8 GB o mas para bf16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090); A100/H100 sobredimensionadas para este tamano pero validas para alto throughput.
+- Cabe en GPU de consumo: si, en modelos con 8 GB o mas de VRAM en bf16; en 4 bits cabe en GPUs de 4-6 GB.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), endpoints compatibles; llama.cpp/Ollama/vLLM no se documentan oficialmente para este checkpoint, aunque al ser arquitectura Qwen3 podrian ser viables previa conversion.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3-1.7B-Distilled-30B-A3B (este) | ~2,03B denso | 1.024 en entrenamiento | Destilación STEM CoT desde Qwen3-30B-A3B | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3-1.7B (base) | ~2,03B denso | Contexto nativo Qwen3 (no disponible aquí) | Modelo generalista multilingüe | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3-30B-A3B-Instruct-2507 (profesor) | 30B totales, 3B activos (MoE) | Contexto largo Qwen3 (no disponible aquí) | Instrucción generalista y razonamiento | Apache 2.0 | Hugging Face |
-| Alternativas de ~2B para razonamiento | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen3-1.7B-Distilled-30B-A3B (este) | ~2,03B | 1024 (entrenamiento) | Apache 2.0 | Destilado de Qwen3-30B-A3B sobre 6.122 muestras STEM; solo ingles |
+| Qwen/Qwen3-1.7B (base) | ~1,7B | no detallado aqui | Apache 2.0 | Modelo base sin destilacion STEM especifica |
+| Qwen/Qwen3-30B-A3B-Instruct-2507 (profesor) | 30B totales / ~3B activos | no detallado aqui | no detallado aqui | MoE de mayor capacidad; requiere hardware muy superior |
 
-La comparación directa más relevante es con el Qwen3-1.7B base: este ajuste sacrifica cobertura multilingüe y generalista para especializarse en inglés y en razonamiento STEM estructurado, manteniendo el mismo tamaño y licencia. Frente al profesor Qwen3-30B-A3B, el estudiante ofrece una huella de memoria aproximadamente 15 veces menor a cambio de una capacidad de razonamiento presumiblemente inferior, aunque no se publican métricas que cuantifiquen la brecha.
+La comparativa de rendimiento numerico entre estos modelos no esta disponible en la informacion proporcionada. La ventaja practica del modelo destilado frente al base es la especializacion en estructura de prueba STEM; frente al profesor, el menor coste de despliegue a cambio de menor capacidad general.
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente en inglés; el rendimiento en castellano u otros idiomas no está evaluado y probablemente sea deficiente.
-- Contexto de entrenamiento de solo 1.024 tokens, lo que puede degradar la calidad en secuencias largas aunque el modelo base soporte ventanas mayores.
-- Entrenado sobre un corpus pequeño (6.122 muestras) y una única época, con riesgo de sobreajuste a los estilos de los datasets de 0xZee y de escasa generalización fuera de los dominios cubiertos.
-- Riesgo de alucinación en derivaciones matemáticas y físicas: el modelo puede producir pasos plausibles pero incorrectos, especialmente en problemas fuera de distribución.
-- No se documentan evaluaciones de sesgo; al derivar de Qwen3-1.7B, hereda los sesgos del modelo base y de los datos de destilación.
-- No se documenta soporte de tool calling, agentes ni modo thinking, lo que limita su uso en flujos agénticos.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; el modelo se publica con 2 likes y ~2.659 descargas, lo que sugiere validación comunitaria limitada.
-- El nombre del repositorio ("Distilled-30B-A3B") puede inducir a confusión: el modelo tiene ~2B parámetros, no 30B; el "30B-A3B" hace referencia al profesor.
-- No hay cuantizaciones oficiales publicadas (GGUF, AWQ, GPTQ), por lo que el despliegue en hardware limitado requiere conversión manual.
+- Entrenado exclusivamente en ingles; no se garantiza calidad en castellano ni en otros idiomas.
+- Contexto de entrenamiento de solo 1024 tokens, lo que limita derivaciones largas y conversaciones multi-turno extensas.
+- Entrenado con 1 epoca sobre 6.122 muestras: riesgo elevado de sobreajuste al estilo de los datasets y de baja generalizacion fuera de dominios STEM.
+- Riesgo de alucinacion en derivaciones: el modelo prioriza estructura de prueba sobre correccion; puede producir pasos formalmente plausibles pero matematicamente incorrectos.
+- Sesgos conocidos: no documentados en la informacion disponible; al derivar de Qwen3-1.7B hereda los sesgos del base, no caracterizados aqui.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias de calidad ni soporte; verificar terminos del modelo base y del profesor.
+- El nombre del checkpoint menciona "30B-A3B" por el profesor, no por el tamano del modelo resultante (~2B); no confundir con un MoE.
+- No se documentan variantes cuantizadas oficiales ni resultados de benchmarks, lo que dificulta evaluar su rendimiento real antes del despliegue.
+- Para produccion, conviene validar con evaluaciones propias en el dominio objetivo y considerar un modelo mayor si se requiere robustez multilingue o contexto largo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
-- Dataset de mecánica teórica: https://huggingface.co/datasets/0xZee/dataset-CoT-Theoretical-Mechanics-307
-- Dataset de álgebra lineal: https://huggingface.co/datasets/0xZee/dataset-CoT-Linear-Algebra-667
-- Dataset de electromagnetismo: https://huggingface.co/datasets/0xZee/dataset-CoT-Electromagnetism-580
-- Dataset de biología molecular: https://huggingface.co/datasets/0xZee/dataset-CoT-Molecular-Biology-71
-- Dataset de fisiología: https://huggingface.co/datasets/0xZee/dataset-CoT-Physiology-114
-- Dataset de mecánica clásica: https://huggingface.co/datasets/0xZee/dataset-CoT-Classical-Mechanics-343
-- Dataset de ecuaciones diferenciales: https://huggingface.co/datasets/0xZee/dataset-CoT-Differential-Equations-636
-- Dataset de física: https://huggingface.co/datasets/0xZee/dataset-CoT-Physics-2254
-- Dataset de ingeniería: https://huggingface.co/datasets/0xZee/dataset-CoT-Engineering-574
-- Dataset de matemáticas: https://huggingface.co/datasets/0xZee/dataset-CoT-mathematics
+- Datasets de entrenamiento (referenciados en la model card): 0xZee/dataset-CoT-Theoretical-Mechanics-307, 0xZee/dataset-CoT-Linear-Algebra-667, 0xZee/dataset-CoT-Electromagnetism-580, 0xZee/dataset-CoT-Molecular-Biology-71, 0xZee/dataset-CoT-Physiology-114, 0xZee/dataset-CoT-Classical-Mechanics-343, 0xZee/dataset-CoT-Differential-Equations-636, 0xZee/dataset-CoT-Physics-2254, 0xZee/dataset-CoT-Engineering-574, 0xZee/dataset-CoT-mathematics (todos en Hugging Face bajo el namespace 0xZee)
+- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

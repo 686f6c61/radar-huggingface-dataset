@@ -2,88 +2,92 @@
 
 ## Resumen
 
-Alok-v2-1.5B-NSLRE-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF generadas por mradermacher a partir del modelo base Alok-v2-1.5B-NSLRE, publicado por shivrajgurjar. Se trata, por tanto, de un artefacto derivado orientado a inferencia eficiente en CPU y GPU de gama baja mediante llama.cpp y sus derivados, no de un modelo entrenado desde cero por el autor del repositorio.
+Alok-v2-1.5B-NSLRE-GGUF es la versión cuantizada en formato GGUF del modelo shivrajgurjar/Alok-v2-1.5B-NSLRE, un modelo de lenguaje de aproximadamente 1.540 millones de parámetros (1.543.714.304 exactos según safetensors) orientado a razonamiento neuro-simbólico y generación de código. La cuantización la ha realizado mradermacher, un actor habitual en el ecosistema de GGUF, que publica versiones estáticas y con imatrix de modelos para su uso en llama.cpp y entornos compatibles. El modelo base está etiquetado con conceptos como MCTS (Monte Carlo Tree Search), SymPy, Z3 y razonamiento, lo que sugiere un enfoque híbrido entre redes neuronales y herramientas simbólicas para tareas de matemáticas y verificación formal.
 
-El modelo subyacente tiene 1.500 millones de parametros, lo que lo situa en la categoria de modelos pequenos aptos para despliegue local. El sufijo NSLRE no viene documentado en la informacion disponible, por lo que no es posible confirmar si hace referencia a un ajuste fino concreto, a un dataset o a una tecnica de entrenamiento especifica.
+La relevancia de esta ficha radica en que permite ejecutar un modelo especializado en razonamiento y código en hardware modesto: los cuants Q4_K_M ocupan aproximadamente 1,1 GB, lo que lo hace viable en GPUs de consumo e incluso en CPU. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales, un punto diferencial frente a modelos de mayor tamaño con licencias más restrictivas.
 
-La relevancia de este repositorio es practica: ofrece el modelo base en multiples niveles de cuantizacion (desde Q2_K hasta Q8_0, ademas de F16 e IQ4_XS), lo que permite ajustar el equilibrio entre calidad y consumo de memoria segun el hardware disponible. La informacion publicada sobre el modelo base es muy escasa: no se detallan licencia, idiomas, arquitectura ni resultados de evaluacion.
+No obstante, la información pública disponible es limitada: la model card del repositorio cuantizado es fundamentalmente una plantilla de mradermacher con la lista de cuants, y no se detallan datos de entrenamiento, contexto, benchmarks ni composición del dataset. Esta ficha refleja fielmente lo que se puede verificar y marca como "no disponible" todo aquello que no consta en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de 1.5B parametros; arquitectura no especificada) |
-| Parametros totales | 1.5B (segun el nombre del modelo) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (no se detalla variante concreta; etiquetado como neuro-symbolic) |
+| Parametros totales | 1.543.714.304 (~1,5B) |
+| Parametros activos | no disponible (no es MoE según los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en formato HF (convert_type: hf) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estáticos); también disponibles cuants con imatrix en el repo i1 |
+| Idiomas soportados | inglés (según el campo `language: en` de la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (transformers como librería declarada; el repo base en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Alok-v2-1.5B-NSLRE. Por el tamano (1.5B parametros) y el ecosistema en el que se publica, es plausible que se trate de un transformer decoder-only, pero este dato no esta confirmado en la informacion proporcionada.
+La información disponible no especifica la arquitectura interna más allá de que se trata de un modelo transformer de aproximadamente 1,5B parámetros. Las etiquetas de la model card (`neuro-symbolic`, `mcts`, `sympy`, `z3`, `code-generation`, `reasoning`) indican que el modelo base fue diseñado o afinado para combinar razonamiento neuronal con herramientas simbólicas: MCTS para búsqueda en árbol, SymPy para cálculo simbólico y Z3 para resolución de restricciones y verificación. No obstante, no se detalla si estas capacidades están integradas en los pesos, si se activan mediante prompting estructurado o si forman parte de un pipeline externo.
 
-Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Lo unico verificable es el proceso de cuantizacion aplicado por mradermacher, que segun los metadatos de la model card uso `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato Hugging Face a GGUF seguida de cuantizacion estatica con la herramienta estandar de llama.cpp.
+No consta el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones técnicas concretas como decodificación especulativa o atención lineal. Todo ello debe considerarse "no disponible" a partir de la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperable en un modelo de 1.5B, aunque no hay evaluacion publicada que la cuantifique.
-- Razonamiento y conocimiento general: no disponible; sin benchmarks no es posible confirmar el nivel.
-- Generacion de codigo y matematicas: no disponible.
-- Tool calling / function calling: no disponible; no se documenta soporte de plantillas de herramientas.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declaran idiomas en la model card.
-- Capacidades especiales (vision, audio, thinking mode): no disponible; el repositorio no incluye proyector multimodal (`skip_mmproj` vacio en los metadatos sugiere ausencia de componente de vision).
-- Inferencia local eficiente: capacidad efectiva del repositorio, gracias a las 12 variantes de cuantizacion GGUF publicadas.
+- Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
+- Razonamiento orientado a resolución de problemas, con etiquetas explícitas de `reasoning`.
+- Generación de código (`code-generation`), presumiblemente orientada a tareas de programación y scripts.
+- Integración con herramientas simbólicas: las etiquetas `sympy` y `z3` sugieren soporte para matemáticas simbólicas y verificación de restricciones, aunque no se documenta el mecanismo exacto.
+- Búsqueda con MCTS (`mcts`), probablemente aplicada a razonamiento multi-paso o planificación.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras tipo Hugging Face Inference Endpoints.
+- No se documenta soporte explícito de tool calling, function calling, agentes, visión, audio ni modo thinking. Estas capacidades deben considerarse "no disponibles" salvo verificación empírica.
 
 ## Casos de uso
 
-- Prototipado local en estaciones de trabajo sin GPU dedicada: las variantes Q4_K_M e IQ4_XS permiten ejecutar el modelo en CPU con llama.cpp o Ollama, adecuado para pruebas de concepto y demos internas.
-- Experimentacion academica con modelos pequenos: util para estudiar el efecto de la cuantizacion en la calidad de salida comparando Q2_K, Q4_K_M y Q8_0 sobre el mismo modelo base.
-- Generacion de texto asistida en entornos con memoria limitada: las variantes Q3_K_S y Q2_K reducen el peso a unos cientos de MB, lo que permite desplegar el modelo en dispositivos con poca RAM.
-- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio cubre el espectro completo de niveles K-quant e IQ4_XS, lo que facilita estudios de degradacion de perplexidad.
-- Fine-tuning ligero sobre el modelo base y re-cuantizacion posterior: el flujo habitual es ajustar el modelo original en formato HF y generar nuevas cuantizaciones con llama.cpp; este repositorio sirve como referencia de partida.
-- Integracion en pipelines de generacion offline: al ser GGUF, puede embeberse en aplicaciones de escritorio o scripts por lotes sin dependencia de servicios en la nube.
+- Asistente de razonamiento matemático en local: el modelo puede emplearse para resolver problemas paso a paso en entornos sin conexión, aprovechando su etiqueta `sympy` para tareas de álgebra y cálculo simbólico. Su tamaño de 1,5B permite ejecutarlo en un portátil con 8 GB de RAM usando Q4_K_M.
+- Generación de código en pipelines de CI/CD: con 1,1 GB en Q4_K_M, puede integrarse en flujos de revisión automática de parches o generación de tests unitarios donde el coste por inferencia es crítico y no se requiere un modelo de gran tamaño.
+- Verificación de restricciones y lógica: la etiqueta `z3` sugiere uso en tareas de comprobación de satisfacibilidad o validación de invariantes, por ejemplo en herramientas de análisis estático que necesiten un componente de razonamiento ligero.
+- Prototipado de agentes neuro-simbólicos: investigadores pueden usar este modelo como componente neuronal dentro de un pipeline que combine MCTS con solvers simbólicos, aprovechando su licencia Apache 2.0 para experimentación sin restricciones.
+- Chatbot de soporte técnico especializado en inglés: su naturaleza conversacional y su reducido tamaño lo hacen adecuado para despliegues en CPU con llama.cpp u Ollama, donde la latencia es aceptable para conversaciones multi-turno de dominio acotado.
+- Educación y tutoría automatizada: puede generar explicaciones paso a paso de problemas matemáticos o de programación en entornos con recursos limitados, como aulas o dispositivos de bajo consumo.
+- Evaluación comparativa de cuantizaciones: al ofrecer 12 variantes de cuantización, sirve como banco de pruebas para medir el impacto de la cuantización en tareas de razonamiento, un caso de uso metodológico relevante para investigadores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: aproximadamente 3 GB en F16, 1,6 GB en Q8_0, 1,1 GB en Q4_K_M, 0,9 GB en Q3_K_M y 0,7 GB en Q2_K (estimaciones basadas en el numero de parametros; no confirmadas por el autor).
-- GPU recomendadas: cualquier GPU consumer con al menos 2-4 GB de VRAM libre (GTX 1650, RTX 3050, RTX 4060) para las cuantizaciones bajas; A100 o H100 no aportan ventaja significativa a este tamano salvo por throughput agregado.
-- Cabe en GPU consumer: si, en la practica totalidad de GPUs dedicadas de los ultimos anos, e incluso en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y servidores compatibles con GGUF (llama-cpp-python). vLLM y TGI no son la via natural para GGUF, aunque existen soportes experimentales.
-- Latencia y throughput estimados: no disponibles; dependeran del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia: aproximadamente 1,0-1,2 GB con Q4_K_M; 0,8 GB con Q2_K; 1,7 GB con Q8_0; 3,2 GB con f16.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para cuants bajos; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son sobredimensionadas pero compatibles. El modelo cabe holgadamente en GPUs de consumo como GTX 1650, RTX 3050 o superiores.
+- Cabe en GPU de consumo: sí, en todas las GPU modernas con 2 GB o más de VRAM; también en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. Para el repo base en safetensors, vLLM o TGI si se confirma compatibilidad.
+- Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño (1,5B) y el formato GGUF, se espera una latencia baja en GPU de consumo, pero no se aportan cifras verificables.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Alok-v2-1.5B-NSLRE-GGUF | 1.5B | no disponible | no disponible | GGUF (12 variantes) | Modelo base sin documentacion publica |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32K (segun documentacion del autor) | Apache 2.0 | safetensors, GGUF | Referencia consolidada en el rango 1.5B |
-| SmolLM2-1.7B-Instruct | 1.7B | 8K (segun documentacion del autor) | Apache 2.0 | safetensors, GGUF | Alternativa ligera con evaluacion publica |
-| Llama-3.2-1B-Instruct | 1.2B | 128K (segun documentacion del autor) | Llama 3.2 Community License | safetensors, GGUF | Menor numero de parametros, contexto amplio |
+| Alok-v2-1.5B-NSLRE (este) | ~1,5B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en razonamiento neuro-simbólico y código |
+| Qwen2.5-Coder-1.5B | 1,5B | 32K (según documentación pública del modelo) | Apache 2.0 | GGUF, safetensors | Enfoque en código, sin componente simbólico declarado |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32K (según documentación pública) | MIT | GGUF, safetensors | Razonamiento por destilación, sin MCTS/SymPy/Z3 |
+| SmolLM2-1.7B | 1,7B | no disponible | Apache 2.0 | GGUF, safetensors | Modelo pequeño generalista de Hugging Face |
 
-La comparativa se ofrece como referencia de categoria; no se dispone de datos de rendimiento del modelo Alok que permitan una comparacion cuantitativa.
+La comparativa se basa en características públicas de modelos de tamaño similar; no se dispone de datos de rendimiento comparativo para Alok-v2-1.5B-NSLRE, por lo que la elección entre estas alternativas debe basarse en pruebas empíricas propias.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion sobre el modelo base: no se conocen dataset de entrenamiento, idiomas, sesgos ni comportamiento esperado.
-- Licencia no declarada: no es posible confirmar si el uso comercial esta permitido; debe contactarse con el autor del modelo base (shivrajgurjar) antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; sin evaluacion publicada no puede acotarse.
-- Idiomas: al no declararse, no hay garantia de calidad en castellano ni en ningun otro idioma distinto del que se uso en el entrenamiento original.
-- Contexto: se desconoce la ventana maxima; no debe asumirse un contexto largo.
-- Cuantizaciones agresivas (Q2_K, Q3_K_S): degradan la calidad de forma notable en modelos pequenos; para uso real se recomienda Q4_K_M o superior.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion por parte de la comunidad.
-- El autor del repositorio (mradermacher) solo realiza la cuantizacion; no es responsable del entrenamiento ni de la calidad del modelo original.
+- Información muy escasa: la model card del repo cuantizado no documenta arquitectura interna, dataset, contexto ni benchmarks, lo que dificulta evaluar su calidad antes de desplegarlo.
+- Riesgo de alucinación: como todo modelo de 1,5B, es propenso a generar contenido plausible pero incorrecto, especialmente en razonamiento matemático y código; se recomienda validación externa.
+- Sesgos: no se documentan sesgos conocidos, pero al estar entrenado presumiblemente en inglés, puede mostrar sesgos culturales y lingüísticos propios de los datasets anglosajones.
+- Limitaciones de idioma: solo se declara inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Contexto: se desconoce la ventana de contexto; no debe asumirse un contexto largo sin verificación.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base (shivrajgurjar/Alok-v2-1.5B-NSLRE) por si hubiera restricciones adicionales no reflejadas en el repo cuantizado.
+- Producción: al no haber benchmarks ni documentación de robustez, no se recomienda su uso en producción sin una evaluación previa en el dominio objetivo.
+- Fecha de creación futura (2026-11-18): el repositorio tiene marcas temporales que no coinciden con la fecha actual; conviene verificar la integridad y procedencia de los archivos antes de confiar en ellos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Alok-v2-1.5B-NSLRE-GGUF
 - Modelo base: https://huggingface.co/shivrajgurjar/Alok-v2-1.5B-NSLRE
-- Herramienta de cuantizacion (llama.cpp): https://github.com/ggerganov/llama.cpp
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuants con imatrix: https://huggingface.co/mradermacher/Alok-v2-1.5B-NSLRE-i1-GGUF
+- Página de resumen del cuantizador: https://hf.tst.eu/model#Alok-v2-1.5B-NSLRE-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

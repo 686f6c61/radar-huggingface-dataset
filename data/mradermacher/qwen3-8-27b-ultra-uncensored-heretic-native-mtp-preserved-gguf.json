@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen-3.8-27B-Uncensored-i1-GGUF - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-i1-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
-      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
-      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
-    },
-    {
-      "title": "Qwen 3.8 27B Uncensored - GitHub",
-      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
-      "snippet": "Qwen 3.8 27B Uncensored Abliterated Qwen 3.8 27B — uncensored at the weight level, not just prompting. Cross-platform: Mac M5 Pro (Q3_K_M · 13.5GB · Metal) + Windows (Q4_K_M · 16.8GB · CUDA). Optional MLX backend for 30-50% faster inference on Apple Silicon."
-    },
-    {
-      "title": "Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
-      "url": "https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
-      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
-    },
-    {
-      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
-      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
-      "snippet": "Qwen 3.8 27B uncensored GGUF is a real download, and the build to start with is Qwen3.8-27B-Uncensored-GGUF — published on Hugging Face on August 16, 2026 as the llama.cpp-native sibling of our abliterated FP8 release."
-    }
-  ]
+  "sources": []
 }

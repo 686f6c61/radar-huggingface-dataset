@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 74,
-  "downloads_30d": 573,
+  "downloads_30d": 603,
   "trending_score": 21,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -60,31 +60,5 @@
   "renamed_to": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
   "renamed_at": "2026-11-11T02:36:45.822Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Deep Van - 知乎",
-      "url": "https://www.zhihu.com/people/yang-lei-96-72",
-      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
-    },
-    {
-      "title": "DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718 · Hugging Face",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718",
-      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "有没有好的离线翻译软件，电脑的？ - 知乎",
-      "url": "https://www.zhihu.com/question/67273658",
-      "snippet": "先说结论:有 由于传统研发翻译引擎需要巨额投入，一直被大厂技术垄断，所以这么多年来，都没有一款真正离线翻译。2024年之前所 …"
-    },
-    {
-      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
-      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels. Model exceeds all Qwen 3.8, 3.6 and 3.5 27B critical core benchmarks. A model that gets down to business faster, with less \"talking\" and is smarter too. Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF Cold Fusion has 1/5 (as low as 1/10 in some cases) to ..."
-    },
-    {
-      "title": "翻译工具推荐-Deepl - 吾爱破解 - 52pojie.cn",
-      "url": "https://www.52pojie.cn/thread-1153766-1-1.html",
-      "snippet": "Apr 16, 2020 · 推荐一个翻译工具，号称谷歌翻译碾压者/信达雅翻译本人/外语学习最佳伴侣DeepL是一款来自德国的在线翻译工具，早 …"
-    }
-  ]
+  "sources": []
 }

@@ -2,103 +2,103 @@
 
 ## Resumen
 
-Kestrel-4B-Coder-Decensored-MTP-Q4_K_M-GGUF es una cuantización comunitaria en formato GGUF del modelo Kestrel-4B-Coder de Jackrong, que a su vez es un fine-tune de Qwen3.5-4B del equipo Qwen. El autor de esta derivación es hUh63, que publica un único fichero Q4_K_M con tres modificaciones respecto al original: una ablación a nivel de pesos para reducir el comportamiento de rechazo (decensoring), la integración de la cabeza MTP (multi-token prediction) dentro del mismo GGUF como capa 33 para decodificación especulativa, y una cuantización Q4_K_M guiada por importance matrix con la capa MTP mantenida en Q6_K. El modelo tiene 4.326.350.848 parámetros y una ventana de contexto que no se especifica en la información disponible.
+Kestrel-4B-Coder-Decensored-MTP-Q4_K_M-GGUF es una cuantizacion GGUF de la variante "decensored" del modelo Jackrong/Kestrel-4B-Coder, un modelo de 4.326 millones de parametros construido sobre la familia Qwen3.5-4B de Alibaba. El autor de esta publicacion, hUh63, aplica la tecnica de abliteration implementada en Heretic 2.1.0.dev0 para reducir la tasa de rechazo del modelo base (de 98/100 a 8/100 respuestas de rechazo en el conjunto harmful_behaviors) con una divergencia KL de 0.0206 respecto al original, y posteriormente lo cuantiza a Q4_K_M preservando la capa de prediccion MTP (Multi-Token Prediction) en Q6_K.
 
-El interés técnico de esta ficha reside en dos aspectos poco habituales. Primero, la arquitectura híbrida de Qwen3.5, con 24 capas de atención lineal Gated DeltaNet y 8 capas de self-attention completa, que el autor documenta explícitamente al adaptar la técnica de ablación. Segundo, el empaquetado de la cabeza MTP en el mismo fichero GGUF, lo que permite usar decodificación especulativa con `--spec-type draft-mtp` sin necesidad de un segundo modelo draft. El pipeline declarado es image-text-to-text y el repo incluye un proyector visual separado en F16.
+El modelo es relevante porque combina tres elementos poco habituales en un mismo artefacto: una arquitectura Qwen3.5 con atencion lineal hibrida, una cabeza MTP de una capa que permite decodificacion especulativa en un unico fichero GGUF (sin necesidad de un modelo borrador separado) y un proceso de abliteration documentado y reproducible. Ademas incluye una torre de vision separada en formato mmproj-F16, lo que habilita entrada image-text-to-text.
 
-La licencia es Apache-2.0, heredada del modelo fuente. El modelo está etiquetado como decensored/abliterated, lo que implica que se ha reducido deliberadamente la tendencia a rechazar peticiones; esto tiene implicaciones directas para su uso en producción que se detallan en la sección de limitaciones. El repo ocupa 3,5 GB y el fichero principal del modelo pesa 2.807.777.984 bytes (2,61 GiB).
+El contexto practico es el de un modelo pequeno (4B) orientado a generacion de codigo, con licencia Apache-2.0 y soporte declarado para siete idiomas (ingles, chino, coreano, japones, ruso, espanol y frances). Su tamano de repositorio es de 3,5 GB y acumula 629 descargas en el momento de la consulta. Es importante subrayar que la eliminacion de la alineacion de seguridad es deliberada y que el autor advierte explicitamente del riesgo de contenido y de la responsabilidad del usuario.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido Qwen3.5: 24 capas de atención lineal Gated DeltaNet + 8 capas de self-attention completa |
+| Arquitectura | Qwen3.5 con atencion lineal hibrida; transformer con capa MTP (NextN) de prediccion multi-token |
 | Parametros totales | 4.326.350.848 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (file_type 15, MOSTLY_Q4_K_M); capa MTP/NextN en Q6_K; proyector visual en F16 |
+| Tipos de cuantizacion | Q4_K_M (principal); capa MTP `blk.32.*` promovida a Q6_K; proyeccion visual en F16 |
 | Idiomas soportados | en, zh, ko, ja, ru, es, fr |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (fichero principal) + mmproj-F16.gguf para visión |
+| Formato de pesos | GGUF (fichero unico + `mmproj-F16.gguf` separado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.5-4B, un transformer híbrido que combina 24 capas de atención lineal Gated DeltaNet con 8 capas de self-attention completa. Sobre esa base, Jackrong produjo el fine-tune Kestrel-4B-Coder, orientado a generación de código, tool use y function calling. La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el fine-tune original.
+El modelo base Kestrel-4B-Coder deriva de la familia Qwen3.5-4B y emplea una arquitectura transformer con atencion lineal hibrida. Incorpora una cabeza MTP de una capa (`nextn_predict_layers=1`) que se integra en el mismo grafo: el GGUF resultante declara `block_count=33`, donde el bloque 32 corresponde a la capa NextN. Esta cabeza actua como mecanismo de decodificacion especulativa interna, de modo que un unico fichero puede generar candidatos y verificarlos con el modelo principal sin cargar un modelo borrador adicional. La torre de vision se distribuye por separado como `mmproj-F16.gguf` (672.422.944 bytes).
 
-La derivación de hUh63 aplica tres transformaciones documentadas. La primera es una ablación rank-1 de la dirección de rechazo siguiendo el método de Arditi et al. (2024) y la implementación de Heretic, adaptada a la arquitectura híbrida: se calculan direcciones de rechazo por capa a partir de 48 prompts benignos de `mlabonne/harmless_alpaca` y 48 prompts dañinos de `mlabonne/harmful_behaviors`, se ortogonalizan contra la dirección benigna y se aplica la ablación solo en las matrices que escriben en el residual stream (`self_attn.o_proj`, `linear_attn.out_proj` y `mlp.down_proj`), con preservación de magnitud de fila. La configuración seleccionada es `strength=1.2, attn_w=1.0, mlp_w=0.5`, con una reducción de separabilidad dañino-benigno del 89,3% y un coseno de representaciones benignas de 0,9950 respecto al original; dos candidatos más agresivos se descartaron por incumplir el umbral de 0,995. La segunda transformación es la integración de los tensores `mtp.*` como capa 33 (`blk.32.nextn.*`) para decodificación especulativa. La tercera es la cuantización Q4_K_M con importance matrix calculada sobre unos 760 KiB de texto multilingüe, matemáticas, código, razonamiento y agentes, manteniendo la capa MTP completa en Q6_K. No se tocaron los tensores `mtp.*`, `model.visual.*`, la matriz de embeddings ni las normalizaciones.
+El proceso de "decensored" se realizo con Heretic 2.1.0.dev0 mediante el modifier Abliteration, con los parametros `direction_index=null` (direccion residual por capa), `max_weight=1.65`, `alpha=1.0`, `wd_pos=24`, `wd_dist=24`, `min_weight=0.0`, `mw_attn=1.65` y `mw_mlp=0.0`. La abliteration solo se aplica a las proyecciones de salida de atencion que escriben en el flujo residual, desactivando la ablacion de MLP. La cuantizacion se genero con `convert_hf_to_gguf.py` e imatrix sobre aproximadamente 600 KiB de corpus multilingue de codigo, matematicas, razonamiento y agentes, con cobertura `--nextn` sobre la capa MTP. No se dispone de informacion sobre el numero de tokens de entrenamiento del modelo base ni sobre el uso de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto y código: el modelo está orientado explícitamente a code-generation según sus etiquetas y su linaje de fine-tune.
-- Tool calling y function calling: etiquetado como `tool-use` y `function-calling`.
-- Uso como agente: etiquetado como `agent`, con soporte de razonamiento multi-paso según la model card.
-- Capacidades multimodales: pipeline `image-text-to-text`, con torre visual incluida y proyector separado `mmproj-F16.gguf`; la visión es opcional para uso solo de texto.
-- Decodificación especulativa integrada: cabeza MTP empaquetada en el mismo GGUF, usable con `--spec-type draft-mtp` en llama.cpp sin modelo draft adicional.
-- Multilingüe: soporte declarado de inglés, chino, coreano, japonés, ruso, español y francés.
-- Comportamiento decensored: reducción medida de la dirección de rechazo, con los números de ablación documentados en `ablation_report.json`.
+- Generacion de codigo en multiples lenguajes, con orientacion explicita a code-generation.
+- Razonamiento y matematicas, segun los tags y el corpus de calibracion imatrix empleado.
+- Capacidades de vision: pipeline declarado como image-text-to-text, con torre visual servida via `mmproj-F16.gguf`.
+- Decodificacion especulativa integrada mediante la cabeza MTP, sin modelo borrador externo.
+- Soporte multilingue declarado en siete idiomas: ingles, chino, coreano, japones, ruso, espanol y frances.
+- Modo conversacional (tag `conversational`).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se especifica soporte explicito de tool calling ni de function calling en la informacion disponible.
+- No se especifica soporte explicito de agentes multi-paso ni de modo "thinking" en la informacion disponible.
 
 ## Casos de uso
 
-- Asistencia de código en local: el modelo cabe en un fichero de 2,61 GiB y puede ejecutarse en llama.cpp sobre CPU o GPU de gama media; es adecuado para autocompletado y generación de funciones en entornos sin acceso a la nube.
-- Agentes de edición de código con tool calling: las etiquetas `agent`, `tool-use` y `function-calling` indican soporte para invocar herramientas; se puede integrar en un bucle de agente que lea ficheros, aplique parches y ejecute tests.
-- Despliegue con decodificación especulativa: la cabeza MTP integrada permite activar `--spec-type draft-mtp` con un solo fichero, lo que reduce la latencia de generación sin gestionar un segundo modelo draft.
-- Procesamiento de capturas y diagramas: con el proyector `mmproj-F16.gguf`, el modelo puede recibir imágenes junto a texto, útil para explicar diagramas de arquitectura o transcribir capturas de errores a código.
-- Atención multilingüe en siete idiomas: con soporte declarado de en, zh, ko, ja, ru, es y fr, puede emplearse en revisión de código o documentación técnica para equipos distribuidos.
-- Entornos de investigación sobre alineación y rechazo: el repo incluye `ablation_report.json`, `calibration.txt` y `tensor_types.txt`, lo que permite reproducir y auditar el efecto de la ablación sobre el comportamiento del modelo.
-- Prototipado de pipelines multimodales en hardware modesto: al ser un modelo de 4B en Q4_K_M, sirve para validar flujos image-text-to-text antes de escalar a modelos mayores.
+- Generacion de codigo en local: el modelo puede producir funciones y fragmentos de codigo en un equipo de consumo gracias a su cuantizacion Q4_K_M y a su tamano de 4B, con la ventaja de la decodificacion especulativa MTP para reducir latencia en generacion de secuencias largas.
+- Asistente de programacion integrado en el IDE: al ser un GGUF unico con soporte de vision, puede recibir capturas de pantalla de errores o diagramas junto con el prompt de texto para explicar y corregir codigo.
+- Procesamiento de documentacion tecnica multilingue: con soporte declarado para espanol, frances, ruso, japones, coreano y chino, resulta util para equipos que trabajan con documentacion en varios idiomas y necesitan resumenes o traducciones tecnicas.
+- Prototipado de pipelines de razonamiento sobre codigo: la cabeza MTP permite experimentar con decodificacion especulativa en un solo fichero, lo que simplifica la evaluacion de tecnicas de aceleracion en entornos de investigacion.
+- Extraccion y transformacion de datos estructurados a partir de imagenes: gracias al pipeline image-text-to-text, se puede usar para transcribir tablas, diagramas o capturas a formatos estructurados.
+- Despliegue en entornos con recursos limitados: al caber en GPUs de consumo y ofrecer cuantizacion Q4_K_M, es adecuado para estaciones de trabajo sin aceleradores de datacenter, con llama.cpp u Ollama.
+- Experimentacion en investigacion sobre alineacion y abliteration: el repositorio incluye recetas, configuraciones y datos punto por punto en el directorio `decensor/`, lo que permite reproducir y comparar el efecto de la abliteration sobre la tasa de rechazo y la divergencia KL.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo aporta métricas internas de la ablación de rechazo, medidas sobre 12 prompts retenidos por clase en las capas 12 a 27:
+No se han publicado resultados de benchmarks del modelo cuantizado Q4_K_M en la informacion disponible. La model card indica explicitamente que las puntuaciones de HumanEval y HumanEval+ corresponden al modelo original en Q8_0 y no a esta cuantizacion, y que en esta ronda no se ejecutaron benchmarks.
 
-| Metrica | Baseline | Final |
-|---|---|---|
-| Proyección dañina sobre la dirección de rechazo | 7,3356 | 0,7373 |
-| Proyección benigna | -0,0011 | -0,0446 |
-| Separabilidad (dañino − benigno) | 7,3367 | 0,7819 (−89,3%) |
-| Coseno de representaciones benignas vs. original | 1,0000 | 0,9950 |
+Los unicos datos numericos publicados son las metricas del proceso de abliteration:
 
-No hay datos de MMLU, HumanEval, GSM8K ni de aceptación de la decodificación especulativa en la información disponible.
+| Metrica | Valor |
+|---|---|
+| Tasa de rechazo del modelo base (harmful_behaviors test[:100]) | 98 / 100 |
+| Tasa de rechazo tras abliteration | 8 / 100 |
+| Divergencia KL respecto al original (harmless_alpaca test[:100]) | 0.0206 |
+| Tamano del GGUF principal | 2.807.777.152 bytes |
+| Tamano de la proyeccion visual mmproj | 672.422.944 bytes |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero principal pesa 2,61 GiB en Q4_K_M; con overhead de contexto y caché KV, un presupuesto de 4 a 6 GiB de VRAM o RAM es razonable, aunque la cifra exacta no está publicada.
-- Proyector visual: `mmproj-F16.gguf` añade 672.423.776 bytes (unos 641 MiB) si se usa visión.
-- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, cualquier GPU consumer con 8 GiB o más debería poder alojar el modelo en Q4_K_M, pero no hay validación publicada.
-- CPU: la cuantización se reprodujo en un entorno de 8 núcleos y 16 GiB de RAM sin GPU, lo que sugiere viabilidad en CPU para inferencia básica.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF, con soporte de `--spec-type draft-mtp`), y por extensión los runners compatibles con GGUF; la librería declarada es transformers pero el artefacto es GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el fichero GGUF principal ocupa aproximadamente 2,8 GB y la proyeccion visual unos 0,67 GB; en modo texto, la VRAM necesaria ronda los 3-4 GB incluyendo el contexto, y en modo multimodal se aproxima a 4-5 GB.
+- GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM para uso comodo; tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores son suficientes. No requiere A100 ni H100.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 6 GB o mas. Tambien puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
+- Opciones de despliegue: llama.cpp (soporte nativo de `--spec-type draft-mtp`), Ollama y otros runners compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con servidores de inferencia tipo endpoint.
+- Latencia y throughput estimados: no disponibles. La model card no publica porcentajes de aceptacion de la decodificacion especulativa, y advierte que la tasa de aceptacion varia segun el estilo del prompt.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kestrel-4B-Coder-Decensored-MTP-Q4_K_M (este) | 4,33B | no disponible | Apache-2.0 | GGUF Q4_K_M + mmproj F16 | Decensored, MTP integrada, visión |
-| Jackrong/Kestrel-4B-Coder | 4,33B (mismo base) | no disponible | Apache-2.0 | safetensors (presumible) | Modelo fuente sin decensoring ni cuantización |
-| Qwen/Qwen3.5-4B | 4B | no disponible | no disponible en la información | no disponible | Base original de Qwen |
-| unsloth/Qwen3.5-4B | 4B | no disponible | no disponible en la información | no disponible | Preparación de Unsloth usada como punto de partida |
+| Kestrel-4B-Coder-Decensored-MTP-Q4_K_M (este) | 4,33B | no disponible | Apache-2.0 | GGUF Q4_K_M + mmproj F16 | Vision, MTP, abliteration |
+| Jackrong/Kestrel-4B-Coder (base) | 4,33B | no disponible | Apache-2.0 | safetensors | Modelo original alineado, sin cuantizar |
+| Qwen3.5-4B (familia base) | ~4B | no disponible | no disponible | safetensors | Modelo fundacional de Alibaba |
+| Heretic 2.1.0.dev0 (herramienta) | no aplica | no aplica | AGPL-3.0 | codigo | Herramienta de abliteration, no modelo |
 
-La información disponible no permite comparar rendimiento con alternativas de la misma categoría; no se han publicado benchmarks.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de calidad.
 
 ## Limitaciones y advertencias
 
-- Modelo decensored: la ablación reduce la dirección de rechazo en un 89,3% de separabilidad; esto implica que el modelo puede generar contenido que el original rechazaría. No es adecuado para aplicaciones con requisitos de moderación estrictos sin una capa adicional de filtrado.
-- Derivado no oficial: el autor declara explícitamente que no está afiliado ni validado por Jackrong, Qwen, Alibaba ni Unsloth; no hay garantía de soporte ni de mantenimiento.
-- Riesgo de alucinación: no cuantificado en la información disponible; como modelo de 4B, es esperable una tasa de alucinación superior a la de modelos mayores, pero no hay medición publicada.
-- Contexto: la longitud de contexto no se especifica en la información disponible, lo que impide planificar cargas de trabajo con ventanas largas.
-- Idiomas: aunque se declaran siete idiomas, no hay evaluación publicada de calidad por idioma; el rendimiento en español, francés o ruso no está verificado.
-- Licencia: Apache-2.0 permite uso comercial, pero el decensoring puede chocar con políticas de contenido de plataformas de despliegue; conviene revisar los términos de cada proveedor.
-- Cuantización Q4_K_M: implica pérdida de precisión respecto al modelo en punto flotante; no hay comparación publicada de degradación en benchmarks.
-- Capa MTP en Q6_K: el autor la mantiene en mayor precisión para preservar la tasa de aceptación de la decodificación especulativa, pero no se publican cifras de aceptación ni de ganancia de velocidad.
-- Visión opcional: el proyector es un fichero separado; sin él, el modelo funciona solo con texto.
+- La alineacion de seguridad ha sido debilitada deliberadamente: el modelo puede generar contenido o codigo que el modelo original rechazaria. El autor advierte que el usuario asume toda la responsabilidad legal y de contenido.
+- La abliteration reduce la direccion de rechazo medida en un conjunto limitado (100 prompts), pero no garantiza el comportamiento en cada prompt individual; los conjuntos de evaluacion son reducidos.
+- La cuantizacion Q4_K_M introduce perdida de precision irreversible respecto a BF16. Esta perdida es independiente de la decodificacion especulativa, que si es sin perdida (verify-then-accept).
+- La cabeza MTP proviene del checkpoint original alineado y solo genera candidatos; cada token se verifica con el tronco decensored, por lo que la tasa de aceptacion varia segun el prompt.
+- El corpus de calibracion imatrix es de aproximadamente 600 KiB, un tamano limitado que puede afectar a la calidad en dominios poco representados.
+- No se dispone de informacion sobre sesgos conocidos, comportamiento en contextos largos ni limites de la ventana de contexto.
+- La licencia Apache-2.0 se hereda del modelo fuente, pero al tratarse de una obra derivada los titulares de derechos pueden solicitar su retirada.
+- El uso comercial esta permitido por la licencia Apache-2.0, pero la ausencia de alineacion de seguridad puede incumplir politicas de plataformas o requisitos regulatorios en determinados sectores.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible, aunque es inherente a modelos de 4B.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/hUh63/Kestrel-4B-Coder-Decensored-MTP-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hUh63/Kestrel-4B-Coder-Decensored-MTP-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Kestrel-4B-Coder
-- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B
-- Preparación de Unsloth: https://huggingface.co/unsloth/Qwen3.5-4B
-- Licencia del modelo base: https://huggingface.co/Jackrong/Kestrel-4B-Coder/blob/main/LICENSE
-- Heretic (método de ablación): https://github.com/p-e-w/heretic
-- Paper de referencia sobre la dirección de rechazo (Arditi et al., 2024): no disponible como enlace en la información proporcionada
-- Repositorio llama.cpp: no disponible como enlace en la información proporcionada
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- Conjunto de evaluacion harmless_alpaca: https://huggingface.co/datasets/mlabonne/harmless_alpaca
+- Conjunto de evaluacion harmful_behaviors: https://huggingface.co/datasets/mlabonne/harmful_behaviors
+- Repositorio de metodos CNB (recetas y configuraciones): ruta `docs/quantization/kestrel/heretic210dev0-cheapest/` citada en la model card (sin URL publica disponible)

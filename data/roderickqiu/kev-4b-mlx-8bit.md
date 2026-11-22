@@ -2,106 +2,100 @@
 
 ## Resumen
 
-RoderickQiu/kev-4b-mlx-8bit es una conversion no oficial de Kev-4B: el adaptador LoRA de Kev ya fusionado dentro del backbone Qwen3.5-4B-Base y el resultado cuantizado a 8 bits en formato MLX para Apple Silicon. El modelo original, Kev-4B, lo desarrolla Jared Palmer y no es un modelo de chat: responde preguntas tipadas (una eleccion, un si/no, una puntuacion) con probabilidades calibradas a traves de un cabezal de puntero (pointer head). Esta variante la publica RoderickQiu para Qualm, una aplicacion de macOS que usa Kev para distinguir una ponencia de un feed.
+kev-4b-mlx-8bit es una cuantización de 8 bits en formato MLX del modelo Kev-4B de Jared Palmer, publicada por RoderickQiu para ejecutarse en Apple Silicon. Kev-4B no es un modelo generativo al uso: es un clasificador de decisiones tipadas ("typed decisions") construido a partir de Qwen3.5-4B-Base mediante un adaptador LoRA fusionado más una cabeza de puntero ("pointer head") que produce una distribución sobre respuestas candidatas. Este repositorio empaqueta ese resultado en un único artefacto listo para usar con mlx-lm, evitando al usuario el proceso de descarga del base en bf16 (8,7 GB), fusión del adaptador y cuantización posterior.
 
-El problema que resuelve es puramente practico: Kev-4B se distribuye como adaptador LoRA mas cabezal, de modo que para ejecutarlo en un Mac hay que descargar el backbone bf16 de 8,7 GB, fusionar el adaptador y cuantizar. Este repositorio ofrece ese trabajo hecho una sola vez, reduciendo la descarga de 9,0 GB a 4,5 GB y el primer arranque de unos 100 s a unos 11 s, sin retocar pesos. La arquitectura subyacente es un transformer Qwen3.5 de aproximadamente 4,2 mil millones de parametros, cuantizado a 8 bits con group size 64.
+El modelo cuenta con 4.205.751.296 parámetros totales y se distribuye bajo licencia Apache-2.0. Su propósito declarado es servir de motor de clasificación dentro de Qualm, una aplicación de macOS que distingue una clase magistral de un feed de contenido, aunque la arquitectura subyacente (Qwen3.5) permite reutilizarlo para otras tareas de decisión con etiquetas predefinidas.
 
-Es relevante ahora porque demuestra un patron de empaquetado para modelos de decision en hardware de consumo: cuantizacion agresiva manteniendo la fidelidad de las probabilidades calibradas, con verificacion de procedencia (SHA-256 y provenance.json) frente al checkpoint original de Kev. La licencia es Apache-2.0, la misma que la de ambos modelos de origen.
+La relevancia de esta ficha es doble: por un lado, documenta una cuantización no oficial que reduce el peso en disco de 9,0 GB a 4,5 GB y el pico de memoria en inferencia de unos 10 GB a unos 6,6 GB, con una degradación de precisión prácticamente nula en los conjuntos de desarrollo evaluados; por otro, ilustra un patrón de despliegue (LoRA fusionado + cabeza de clasificación + cuantización MLX) que puede replicarse para otros modelos pequeños en equipos de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.5-4B-Base) con adaptador LoRA de Kev fusionado y cabezal de puntero (pointer head) en fp32 |
-| Parametros totales | 4.205.751.296 (~4,2 mil millones) |
+| Arquitectura | Transformer (Qwen3.5-4B-Base) con adaptador LoRA fusionado y cabeza de puntero para clasificación |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits, group size 64 (formato mlx-lm); original en bf16; se probo 4 bits pero no se publico |
+| Tipos de cuantizacion | 8 bits, group size 64 (MLX); el repositorio base admite bf16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (formato MLX, con campo "quantization" en config.json) mas head.pt en fp32; tokenizer y metadatos tomados de jaredpalmer/kev-4b |
+| Formato de pesos | safetensors (mlx-lm) + head.pt (cabeza en fp32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de jaredpalmer/kev-4b (revision 485ace8703592fcf405488b262449990824cfed1) y Qwen/Qwen3.5-4B-Base (revision 1001bb4d826a52d1f399e183466143f4da7b741b), con el codigo de Kev en el commit 08ab0b87d27cb5577a3b371ad7ed4e4686b0502b. El proceso de construccion tiene tres pasos: (1) fusion, cargando la base en bf16 con mlx-lm y mezclando el adaptador LoRA en fp32 sobre CPU mediante la formula W + B·A·α/r, redondeando una sola vez a bf16; (2) cuantizacion con mlx.nn.quantize a bits=8 y group_size=64, aplicada a cada capa Linear y Embedding cuyo ancho de entrada sea divisible por 64; y (3) conservacion intacta del cabezal de puntero en head.pt, que permanece en fp32. No se reentreno nada.
+La arquitectura subyacente es Qwen3.5-4B-Base, un transformer denso de aproximadamente 4.200 millones de parámetros. Sobre él, Kev-4B aplica un adaptador LoRA entrenado por Jared Palmer y una cabeza de puntero que transforma las representaciones del modelo en una distribución de probabilidad sobre un conjunto de respuestas candidatas, con una temperatura de calibración ajustada (2,406 en `head.pt`, 2,41 en la revisión del modelo). No se trata, por tanto, de un modelo de generación libre, sino de un clasificador que puntúa opciones predefinidas.
 
-Kev anade sobre el backbone un cabezal de puntero y una calibracion (temperatura) que convierten la salida del transformer en decisiones tipadas con probabilidades calibradas, en lugar de texto libre. Esta variante no introduce ninguna innovacion de arquitectura propia: es exclusivamente un trabajo de fusion y cuantizacion. La relevancia tecnica esta en el control de calidad de la cuantizacion, que el autor documenta comparando la salida 8-bit con el bf16 original sobre un conjunto fijo de paginas.
+El proceso de construcción de esta cuantización está documentado con precisión en la model card: se cargó el base en bf16 con mlx-lm, se fusionó el adaptador LoRA en fp32 sobre CPU mediante `kev.mlx_model.merge_lora` (W + B·A·α/r) con un único redondeo a bf16, y después se aplicó `mlx.nn.quantize` con `bits=8, group_size=64` a todas las capas Linear y Embedding cuya anchura de entrada es divisible por 64. La cabeza de puntero se mantuvo en fp32, incluida la temperatura ajustada, y no se reentrenó ningún componente. El fichero `model.safetensors` resultante ocupa 4.469.640.165 bytes (SHA-256 `83adf34ef8f2433166225960d0f074def35d3de52449fa8861bc356398312d31`).
+
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original; la model card de esta cuantización no los detalla y remite a la documentación de Kev como referencia.
 
 ## Capacidades
 
-- Clasificacion de paginas web en tipos: video corto, feeds, directos (livestreams), redes sociales y otros, segun las pruebas de Qualm.
-- Respuesta a preguntas tipadas: seleccion entre opciones, respuestas si/no y puntuaciones.
-- Emision de probabilidades calibradas por pregunta a traves del cabezal de puntero, con temperatura de calibracion preservada del checkpoint original.
-- Reglas de decision multiples evaluadas de forma independiente (el autor reporta el mismo ROC AUC por regla entre la version 8-bit y el bf16).
-- Deteccion de contenido sensible como pregunta especifica (con desviacion de probabilidad de 0,053 frente al bf16).
-- Integracion con el endpoint /v1/systemone de kev.serve a traves de la clase DecisionModel.
-- No es un modelo de chat: no esta disenado para generacion libre de texto ni para conversacion multi-turno.
-- Soporte de tool calling, agentes, vision, audio o modo thinking: no disponible en la informacion proporcionada.
+- Clasificación de decisiones tipadas: dado un contexto y un conjunto de opciones, el modelo produce una distribución de probabilidad calibrada sobre ellas.
+- Puntuación con calibración explícita: la cabeza incluye temperatura ajustada, lo que permite usar las probabilidades directamente (el ECE reportado en decision-v7 es de 0,01).
+- Discriminación entre contenido de distinta naturaleza, como clases magistrales frente a feeds de contenido, según el caso de uso declarado por el autor de la cuantización.
+- Ejecución en Apple Silicon mediante MLX, con integración en mlx-lm.
+- No se documentan capacidades de generación de texto libre, tool calling, razonamiento multi-paso, visión ni audio en la información disponible.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Distincion de ponencias frente a feeds: el caso de uso real de Qualm, que emplea Kev para determinar si el contenido de una pagina es una ponencia, un feed, un directo o una red social, y actuar en consecuencia.
-- Clasificacion de contenido en aplicaciones de escritorio macOS: Qualm descarga este repositorio automaticamente en el primer arranque, verifica provenance.json contra su checkpoint de Kev y las SHA-256, y construye los pesos localmente si no coinciden.
-- Filtrado binario de contenido sensible: la pregunta "sensitive" se responde con una probabilidad calibrada, lo que permite umbrales de decision ajustables en lugar de etiquetas duras.
-- Enrutado de peticiones en pipelines: al devolver decisiones tipadas con probabilidad, encaja como router previo a otros modelos o servicios (por ejemplo, decidir si una peticion requiere un modelo mayor).
-- Etiquetado automatico de datasets web: sobre un lote de URL o contenidos, asignar tipo de pagina y reglas asociadas de forma consistente, aprovechando que el modelo reproduce la misma respuesta de tipo de pagina en 119 de 119 paginas frente al bf16.
-- Puntuacion y priorizacion de contenido: la salida de tipo "score" permite ordenar o priorizar elementos de un feed segun criterios configurables.
-- Ejecucion local en portatiles Apple Silicon: con un consumo de memoria de 6-7 GB mientras responde y un primer arranque de unos 11 s en un M5 Pro de 24 GB, es viable embeberlo en una app de escritorio sin depender de la nube.
+- Filtrado de contenido en aplicaciones de lectura o vídeo: el modelo puntúa si un elemento entrante es una clase magistral o un feed, que es exactamente el uso para el que se construyó Qualm; la calibración permite fijar umbrales de confianza sin reentrenar.
+- Enrutamiento de consultas en asistentes: dado un conjunto de intenciones predefinidas, el modelo asigna probabilidades a cada una y permite derivar la consulta al módulo adecuado con un umbral de abstención basado en la incertidumbre.
+- Moderación asistida: clasificación de textos candidatos contra políticas predefinidas, aprovechando el bajo ECE para reducir falsos positivos en la frontera de decisión.
+- Etiquetado semi-automático de datasets: uso del modelo para preetiquetar ejemplos con puntuaciones de confianza, revisando manualmente solo los casos de baja probabilidad.
+- Clasificación de documentos técnicos: la suite documents-v1 (0,896 de accuracy) sugiere utilidad para decidir la categoría de un documento dentro de un pipeline de ingestión.
+- Despliegue local en portátiles Mac: con unos 6,6 GB de memoria en inferencia y 4,5 GB en disco, cabe en equipos de 16 GB o más y permite clasificación sin conexión ni coste de API.
+- Evaluación de decisiones en herramientas de desarrollo: la suite devtools-v1 (0,746 de accuracy) indica un rendimiento moderado, adecuado para asistentes que sugieren acciones pero no para decisiones autónomas críticas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor aporta una comparacion de calidad sobre 119 paginas web etiquetadas (video corto, feeds, directos, redes sociales y otros, procedentes de las pruebas de Qualm):
+Resultados declarados por el autor de la cuantización sobre splits de desarrollo, comparando esta versión de 8 bits con la ruta MLX en bf16 de Kev, en el mismo Mac. La accuracy y el Brier se presentan como pares; la columna "misma respuesta top" indica coincidencia de la opción más probable.
 
-| Comparacion | Metrica | Resultado |
-|---|---|---|
-| Este archivo (8-bit) frente a cuantizar en tiempo de carga | Respuestas | Identicas, diferencia de 0,0 en todas las preguntas |
-| Este archivo frente a Kev-4B en bf16 | ROC AUC | El mismo en cada regla |
-| Este archivo frente a Kev-4B en bf16 | Tipo de pagina | La misma respuesta en 119 de 119 paginas |
-| Este archivo frente a Kev-4B en bf16 | Probabilidad por pregunta | Dentro de 0,012-0,038 |
-| Este archivo frente a Kev-4B en bf16 | Pregunta "sensitive" | Desviacion de 0,053 |
-| 4 bits (no publicado) frente a bf16 | Recall en redes sociales | Baja de 0,95 a 0,85 |
+| Suite | Preguntas | bf16 (accuracy / Brier) | 8 bits (accuracy / Brier) | Misma respuesta top |
+|---|---:|---|---|---:|
+| transfer-v4 | 656 | 0,817 / 0,243 | 0,817 / 0,243 | 652 / 656 |
+| decision-v7 | 1.264 | 0,873 / 0,183 | 0,873 / 0,183 | 1.262 / 1.264 |
+| hard-v1 | 1.083 | 0,787 / 0,311 | 0,786 / 0,313 | 1.076 / 1.083 |
+| devtools-v1 | 1.074 | 0,738 / 0,358 | 0,746 / 0,357 | 1.064 / 1.073 |
+| documents-v1 | 920 | 0,893 / 0,173 | 0,896 / 0,173 | 918 / 920 |
 
-Metricas de puesta en marcha y memoria (medidas en un M5 Pro con 24 GB, macOS 27):
-
-| Escenario | Descarga | Primer arranque | Pico de memoria en arranque | Memoria respondiendo |
-|---|---|---|---|---|
-| Construccion propia | 9,0 GB (base + adaptador) | ~100 s | 16 GB | 6-7 GB |
-| Este repositorio | 4,5 GB | ~11 s | 4,8 GB | 6-7 GB |
+En decision-v7 el autor reporta además un ECE de 0,01 para la versión de 8 bits. Los intervalos de confianza pareados al 95 % de `kev.compare` incluyen cero para accuracy, Brier y NLL en transfer-v4 y decision-v7; en hard-v1 el intervalo de accuracy incluye cero pero los de Brier y NLL no (esta versión es ligeramente peor, en torno a +0,002 Brier y +0,003 NLL); en devtools-v1 el intervalo de accuracy excluye cero a favor de esta versión (+0,007); en documents-v1 el intervalo de accuracy roza cero y los de Brier y NLL incluyen cero. Los resultados locales en bf16 coinciden con la model card de Kev-4B en transfer-v4 (0,817) y decision-v7 (0,873), y están a menos de 0,002 en las otras tres suites. Se trata de splits de desarrollo; el conjunto bloqueado de test no se detalla en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria para inferencia: 6-7 GB mientras responde; pico de 4,8 GB en el primer arranque de esta version (frente a 16 GB construyendola uno mismo).
-- GPU/dispositivo recomendado: Apple Silicon con MLX; la medicion de referencia se hizo en un M5 Pro con 24 GB de memoria unificada.
-- Cabe en hardware de consumo: si, en equipos Apple Silicon con memoria unificada suficiente (la prueba usa 24 GB); no esta pensado para CUDA.
-- Tamano en disco: el repositorio ocupa 4,5 GB.
-- Opciones de despliegue: libreria MLX / mlx-lm; carga mediante la clase MLXDecisionModel de Kev; servicio a traves del endpoint /v1/systemone de kev.serve; integracion automatica en la app Qualm. No se mencionan vLLM, llama.cpp, Ollama ni TGI (formato MLX especifico de Apple Silicon).
-- Latencia y throughput: primer arranque de ~11 s documentado; no hay datos de tokens por segundo ni de latencia por inferencia en la informacion disponible.
+- Memoria en inferencia: unos 6,6 GB según el autor (frente a unos 10 GB en bf16); el proceso de 8 bits alcanzó 8,5 GB durante la suite más larga.
+- Peso en disco: 4,5 GB para esta cuantización; construirla desde cero requiere descargar 9,0 GB (base más adaptador) y un pico de unos 15 GB durante la fusión y cuantización.
+- Hardware medido: M5 Pro con 24 GB y macOS 27. No se han publicado mediciones en otros chips.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con al menos 16 GB de memoria unificada; no aplica a GPU NVIDIA, ya que el formato es MLX.
+- Despliegue: mlx-lm (formato nativo del repositorio); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| RoderickQiu/kev-4b-mlx-8bit | ~4,2 mil millones | MLX safetensors 8 bits + head.pt fp32 | Apache-2.0 | Este repositorio (4,5 GB) | Fusion y cuantizacion no oficiales; mismo comportamiento que el bf16 en las pruebas del autor |
-| jaredpalmer/kev-4b | ~4,2 mil millones | Adaptador LoRA bf16 + cabezal | Apache-2.0 | Repositorio original (9,0 GB base + adaptador) | Referencia oficial de Kev; su model card y su repositorio son la fuente autorizada |
-| Qwen/Qwen3.5-4B-Base | ~4 mil millones | Backbone bf16 | Apache-2.0 | Repositorio de Qwen | Backbone base sin adaptador de Kev: no responde decisiones tipadas |
+| kev-4b-mlx-8bit | 4.205.751.296 | no disponible | MLX safetensors 8 bits | Apache-2.0 | Cuantización no oficial de Kev-4B para Apple Silicon |
+| jaredpalmer/kev-4b | ~4.200 millones (base Qwen3.5-4B) | no disponible | LoRA + cabeza, base bf16 | Apache-2.0 (según este repositorio) | Modelo de referencia; requiere fusión y cuantización manual |
+| Qwen/Qwen3.5-4B-Base | ~4.200 millones | no disponible | safetensors | no disponible en la información | Modelo base generativo sobre el que se entrena Kev; no incluye la cabeza de clasificación |
 
-Contexto, rendimiento en benchmarks estandar y disponibilidad en otros formatos: no disponibles para las alternativas en la informacion proporcionada.
+No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de chat: no genera texto libre; su salida son decisiones tipadas (eleccion, si/no, puntuacion) con probabilidades a traves del cabezal de puntero.
-- Conversion no oficial: el propio autor indica que no es un lanzamiento de Kev y que cualquier error en la conversion es responsabilidad de este repositorio, no de los autores originales.
-- Dependencia de artefactos externos: el tokenizer, los metadatos del cabezal y la calibracion (temperatura) deben tomarse del checkpoint jaredpalmer/kev-4b; sin ellos el modelo no funciona.
-- Cuantizacion a 4 bits descartada: la version de 4 bits bajo el recall en redes sociales de 0,95 a 0,85, motivo por el que no se publico; usar 8 bits es el compromiso recomendado.
-- Idiomas soportados: no disponible; no se documenta el comportamiento multilingue.
-- Longitud de contexto: no disponible; no hay datos sobre entradas largas.
-- Riesgo de alucinacion: inherente al transformer Qwen3.5 subyacente; el autor afirma que las probabilidades por pregunta estan calibradas, con desviaciones de hasta 0,053 respecto al bf16.
-- Plataforma: esta empaquetado para MLX/Apple Silicon; no es directamente desplegable en CUDA ni en runtimes estandar de servidores x86.
-- Licencia Apache-2.0: permite uso comercial, pero exige mantener las atribuciones de Kev (Jared Palmer) y de Qwen (Alibaba Cloud) como autores originales.
-- Datos de evaluacion limitados: la calidad se valida sobre 119 paginas de un dominio concreto (contenido web), no sobre benchmarks generales; el comportamiento fuera de ese dominio no esta documentado.
+- No es una versión oficial de Kev: la publica un tercero (RoderickQiu) y la referencia normativa es el repositorio y la model card de Jared Palmer.
+- El modelo es un clasificador de opciones predefinidas, no un generador de texto libre; usarlo fuera de ese esquema requiere adaptar la cabeza de puntero.
+- Los benchmarks proceden de splits de desarrollo y están declarados por el autor sin verificación independiente (`verified: false` en el model-index).
+- La evaluación se realizó en un único equipo (M5 Pro, 24 GB, macOS 27); el comportamiento en otros chips Apple o versiones de MLX no está documentado.
+- No se documentan sesgos, composición del dataset de entrenamiento ni idiomas soportados, lo que dificulta evaluar riesgos de equidad y cobertura lingüística.
+- Riesgo de alucinación no aplicable en el sentido generativo, pero sí de calibración deficiente fuera de las distribuciones de las suites evaluadas; el ECE de 0,01 corresponde solo a decision-v7.
+- La licencia Apache-2.0 permite uso comercial, pero al derivar de Qwen3.5-4B-Base conviene verificar las condiciones del modelo base antes de desplegar en producción.
+- El formato MLX limita el despliegue a Apple Silicon; no hay artefactos GGUF ni compatibilidad con stacks CUDA en este repositorio.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/RoderickQiu/kev-4b-mlx-8bit
-- Kev-4B original (adaptador, cabezal y tokenizer): https://huggingface.co/jaredpalmer/kev-4b
-- Repositorio de codigo de Kev: https://github.com/jaredpalmer/kev
-- Backbone base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
+- Repositorio Hugging Face: https://huggingface.co/RoderickQiu/kev-4b-mlx-8bit
+- Modelo base Kev-4B: https://huggingface.co/jaredpalmer/kev-4b
+- Modelo base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
+- Aplicación Qualm: https://github.com/RoderickQiu/qualm
+- Issue con los intervalos pareados: https://github.com/jaredpalmer/kev/issues/162

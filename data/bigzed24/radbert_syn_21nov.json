@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "bigzed24/radBERT_syn_21NOV",
+  "slug": "bigzed24-radbert_syn_21nov",
+  "author": "bigzed24",
+  "url": "https://huggingface.co/bigzed24/radBERT_syn_21NOV",
+  "created_at": "2026-11-21T20:39:23.000Z",
+  "updated_at": "2026-11-21T20:39:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "radiology",
+    "clinical-nlp",
+    "text-classification",
+    "synthetic-data",
+    "en",
+    "base_model:StanfordAIMI/RadBERT",
+    "base_model:finetune:StanfordAIMI/RadBERT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433276033,
+  "storage_human": "433 MB",
+  "context_length": null,
+  "base_model": "StanfordAIMI/RadBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

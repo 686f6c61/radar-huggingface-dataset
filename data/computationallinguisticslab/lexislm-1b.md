@@ -2,112 +2,103 @@
 
 ## Resumen
 
-LexisLM-1B es un modelo de lenguaje de tipo decoder-only desarrollado por ComputationalLinguisticsLab, especializado en la generacion de texto en griego moderno. Se trata de un modelo base, es decir, no ha sido sometido a ajuste por instrucciones ni a alineacion mediante RLHF o DPO, por lo que su proposito es servir como punto de partida para experimentacion y fine-tuning posterior en tareas de procesamiento del lenguaje natural en griego.
+LexisLM-1B es un modelo de lenguaje causal decoder-only de 1.093.232.640 parámetros (aproximadamente 1,09 mil millones) desarrollado por el ComputationalLinguisticsLab, un grupo de investigación académica vinculado a la lingüística computacional griega. Está diseñado específicamente para el idioma griego y se distribuye como modelo base (no instruido), pensado para experimentación en generación de texto y como punto de partida para ajuste fino posterior.
 
-El modelo emplea una arquitectura compatible con Llama, con 20 capas transformer, un tamano oculto de 2.048 y 16 cabezas de atencion, sumando un total de 1.093.232.640 parametros. Su ventana de contexto es de 4.096 tokens y dispone de un vocabulario de 32.004 tokens. Fue preentrenado durante 335.000 pasos sobre aproximadamente 22.000 millones de tokens extraidos de FineWeb2 y de la Wikipedia en griego.
+El modelo emplea una arquitectura compatible con Llama, con 20 capas transformer, tamaño oculto de 2.048, 16 cabezas de atención y una ventana de contexto de 4.096 tokens. Fue preentrenado desde cero sobre aproximadamente 22 mil millones de tokens procedentes de FineWeb2 y de la Wikipedia en griego, lo que lo convierte en una propuesta poco habitual: un modelo compacto entrenado monolingüemente para griego en lugar de un modelo multilingüe adaptado.
 
-Su relevancia radica en la escasez relativa de modelos abiertos dedicados especificamente al griego con licencia permisiva Apache-2.0 y un tamano contenido que permite su despliegue en hardware modesto. Resulta adecuado para investigadores que necesiten una base ligera sobre la que construir sistemas de generacion de texto, completado o clasificacion en griego sin depender de modelos multilingues de mayor tamano.
+Su relevancia actual reside en la escasez de modelos abiertos dedicados al griego con licencia permisiva (Apache-2.0) y tamaño manejable para hardware de consumo. No obstante, sus resultados en benchmarks son propios de un modelo base pequeño: MMLU del 23,15% y ARC-Challenge del 25,34% con evaluación zero-shot, lo que lo sitúa lejos de modelos de instrucción de tamaño similar pero con más datos o ajuste alineado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only compatible con Llama (causal language model) |
+| Arquitectura | Transformer causal decoder-only compatible con Llama |
 | Parametros totales | 1.093.232.640 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 4.096 tokens |
-| Tipos de cuantizacion | no disponible (el repositorio solo distribuye pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan cuantizaciones oficiales) |
 | Idiomas soportados | Griego (el) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
-
-Especificaciones adicionales declaradas por el autor:
-
-| Parametro | Valor |
-|---|---|
 | Capas transformer | 20 |
 | Tamano oculto | 2.048 |
 | Cabezas de atencion | 16 |
-| Vocabulario | 32.004 tokens |
-| Pasos de preentrenamiento | 335.000 |
-| Tokens de entrenamiento | ~22.000 millones |
+| Tamano de vocabulario | 32.004 tokens |
 | Tamano del repositorio | 2,2 GB |
 
 ## Arquitectura y entrenamiento
 
-LexisLM-1B es un modelo transformer causal de tipo decoder-only con una configuracion compatible con la familia Llama, lo que permite cargarlo directamente mediante `AutoModelForCausalLM` de Hugging Face Transformers. La pila consta de 20 capas con un tamano oculto de 2.048 y 16 cabezas de atencion, una configuracion compacta que situa el modelo en el rango de los 1.000 millones de parametros. No se documenta el uso de arquitecturas hibridas, mecanismos de atencion lineal ni decodificacion especulativa.
+LexisLM-1B es un transformer causal decoder-only con una configuración compatible con la familia Llama: 20 capas, dimensión oculta de 2.048, 16 cabezas de atención y un vocabulario de 32.004 tokens. El modelo se entrenó desde cero (no es un ajuste de un modelo existente) sobre aproximadamente 22 mil millones de tokens extraídos de FineWeb2 y de la Wikipedia en griego. Los documentos de preentrenamiento se separaron mediante el token `<eos>`, de modo que la model card recomienda iniciar cada generación con dicho token para emular el comienzo de un documento nuevo.
 
-El preentrenamiento se realizo durante 335.000 pasos sobre aproximadamente 22.000 millones de tokens procedentes de dos fuentes: FineWeb2 (corpus web multilingue de HuggingFaceFW, distribuido bajo ODC-By-1.0) y la Wikipedia en griego. Los documentos de preentrenamiento se separaron mediante el token `<eos>`, y el autor indica que debe anteponerse dicho token al inicio de cada documento nuevo en inferencia. No se menciona en la informacion disponible la aplicacion de RLHF, DPO ni ninguna fase de ajuste por instrucciones; se trata, por tanto, de un modelo estrictamente base.
+No se documenta en la información disponible el uso de RLHF, DPO ni ajuste por instrucciones: se trata explícitamente de un modelo base. Tampoco se detallan innovaciones técnicas como decodificación especulativa, atención lineal o arquitecturas híbridas. El trabajo asociado se describe en el preprint arXiv:2611.10209, titulado "Compact Greek Language Models from Scratch: Pretraining 500M- and 1B-Parameter Decoder-Only Transformers", que sugiere que este modelo forma parte de una familia de modelos griegos compactos entrenados desde cero.
 
 ## Capacidades
 
-- Generacion de texto en griego moderno mediante completado autoregresivo de secuencias.
-- Modelado de lenguaje causal: predice el siguiente token dado un contexto, lo que habilita tareas de completado de frases y parrafos.
-- Capacidad de servir como base para fine-tuning supervisado en tareas downstream en griego (clasificacion, extraccion, resumen, etc.).
-- Soporte de tool calling / function calling: no disponible; el modelo no ha sido entrenado para ello.
-- Soporte de agentes y razonamiento multi-paso: no disponible; al ser un modelo base sin ajuste por instrucciones, no se espera un comportamiento agentico fiable.
-- Capacidades multilingues: limitadas al griego segun la model card; no se declaran capacidades en otros idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto en griego: completado de texto y continuación de documentos, no diálogo instructivo.
+- Modelado de lenguaje causal: adecuado para tareas de continuación y como base para ajuste fino supervisado.
+- Capacidades multilingües: limitadas al griego; no se documenta soporte para otros idiomas.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Modo thinking, visión o audio: no disponible.
+- Razonamiento, código y matemáticas: no se documentan capacidades específicas; los resultados de benchmarks sugieren un rendimiento bajo en conocimiento general y razonamiento zero-shot.
 
 ## Casos de uso
 
-- Completado de texto en griego: el modelo puede generar continuaciones coherentes de fragmentos de texto en griego, util para asistentes de escritura o generacion de borradores, siempre anteponiendo el token `<eos>` al prompt como indica el autor.
-- Punto de partida para fine-tuning supervisado: al ser un modelo base de 1.000 millones de parametros con licencia Apache-2.0, es adecuado para ajustarse con datasets etiquetados en griego en tareas como clasificacion de documentos, analisis de sentimiento o extraccion de entidades.
-- Investigacion en linguistica computacional: su tamano reducido y su entrenamiento especifico en griego lo convierten en una base controlada para estudiar el comportamiento de modelos monolingues pequenos frente a modelos multilingues de mayor escala.
-- Generacion aumentada de documentos en griego: puede integrarse en pipelines que necesiten producir texto de relleno o variaciones de contenido a partir de contextos de hasta 4.096 tokens.
-- Prototipado rapido en entornos con recursos limitados: su tamano (aproximadamente 2,2 GB en safetensors) permite cargarlo en GPUs de consumo para experimentos de generacion de texto en griego sin infraestructura dedicada.
-- Ajuste por instrucciones como fase posterior: sirve como modelo base para construir un modelo de chat o de respuesta a preguntas en griego mediante SFT y, opcionalmente, DPO, partiendo de un preentrenamiento ya orientado al idioma.
-- Evaluacion comparativa de modelos monolingues: util como referencia en estudios que comparen el rendimiento en griego de modelos pequenos entrenados desde cero frente a modelos multilingues.
+- Experimentación lingüística en griego: el modelo sirve para estudiar propiedades de modelos compactos entrenados monolingüemente, comparando su comportamiento con modelos multilingües de tamaño similar en tareas de completado de texto.
+- Punto de partida para ajuste fino supervisado: al ser un modelo base con licencia Apache-2.0, puede ajustarse con datasets griegos etiquetados para tareas concretas (clasificación, extracción, resumen) sin restricciones de uso comercial.
+- Generación aumentada de datos sintéticos en griego: puede utilizarse para producir corpus de texto griego a gran escala, con revisión humana posterior, para entrenar modelos de clasificación o sistemas de recuperación de información.
+- Completado de texto en herramientas editoriales: integrado en editores o correctores para sugerir continuaciones de frases en griego, aprovechando su ventana de 4.096 tokens para mantener coherencia en párrafos largos.
+- Investigación en eficiencia computacional: su tamaño de 1,09 mil millones de parámetros permite ejecutarlo en GPUs de consumo, lo que lo hace útil para experimentos de cuantización, destilación o evaluación de técnicas de inferencia eficiente en griego.
+- Base para modelos especializados de dominio: ajuste fino sobre corpus jurídicos, médicos o periodísticos griegos para construir asistentes de dominio con requisitos de privacidad que exijan despliegue local.
+- Evaluación de sesgos y calidad lingüística: al ser un modelo base entrenado con FineWeb2 y Wikipedia, sirve como objeto de estudio para analizar sesgos y cobertura léxica en corpus web griegos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor con 0 ejemplos few-shot. ARC emplea precision normalizada; el resto, precision o metricas de eleccion multiple segun se indica.
+Resultados reportados por el autor con 0 ejemplos few-shot (zero-shot), en porcentajes:
 
-| Benchmark | Metrica | Puntuacion | Preguntas |
+| Benchmark | Metrica | Resultado | Preguntas |
 |---|---|---:|---:|
-| ARC-Challenge | Precision normalizada | 25,34% | 1.168 |
-| ARC-Easy | Precision normalizada | 33,38% | 2.376 |
-| MMLU | Precision | 23,15% | 14.042 |
+| ARC-Challenge | Precisión normalizada | 25,34% | 1.168 |
+| ARC-Easy | Precisión normalizada | 33,38% | 2.376 |
+| MMLU | Precisión | 23,15% | 14.042 |
 | TruthfulQA | MC1 | 24,60% | 817 |
 | TruthfulQA | MC2 | 43,49% | 817 |
 
-No se han publicado en la informacion disponible resultados de benchmarks de generacion como HumanEval, GSM8K ni evaluaciones especificas de griego.
+No se han publicado en la información disponible resultados de benchmarks de generación como HumanEval o GSM8K, ni comparaciones directas con otros modelos griegos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision de 16 bits (bf16/fp16): aproximadamente 2,2 GB para los pesos, mas overhead de activaciones y cache KV, situandose en torno a 3-4 GB en funcion de la longitud de contexto.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 1,1-1,5 GB para los pesos; en 4 bits, aproximadamente 0,6-0,8 GB (estimaciones teoricas, ya que el repositorio no distribuye variantes cuantizadas).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para 16 bits; tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 son mas que suficientes. El modelo cabe holgadamente en GPUs de consumo.
-- Despliegue: compatible con Hugging Face Transformers (segun la model card), y por su arquitectura Llama es susceptible de servirse con vLLM, TGI (el tag `text-generation-inference` esta presente) y, previa conversion, llama.cpp u Ollama. No se documentan recetas oficiales para estas ultimas.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 2,2 GB solo para pesos, más memoria para activaciones y caché KV; en la práctica, entre 3 y 5 GB según la longitud de contexto y el tamaño de lote.
+- VRAM estimada en cuantización de 8 bits: alrededor de 1,1-1,5 GB para pesos, más overhead; en 4 bits, en torno a 0,6-1 GB para pesos.
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para FP16 (RTX 3060, RTX 4060, RTX 4070); para cuantización 4/8 bits, GPUs con 4-6 GB como GTX 1650 o RTX 3050 pueden ser suficientes.
+- Cabe en GPU de consumo: sí, en la mayoría de GPUs modernas de consumo con 6 GB o más en FP16, y en GPUs de gama baja con cuantización.
+- Opciones de despliegue: Hugging Face Transformers con `accelerate` (documentado en la model card), text-generation-inference (etiqueta `text-generation-inference` en el repositorio) y, previsiblemente, llama.cpp/Ollama si se generan conversiones GGUF (no documentadas oficialmente).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos de rendimiento de modelos alternativos comparables en griego con los que establecer una comparacion cuantitativa rigurosa. A continuacion se ofrece una comparacion estructural basica basada en caracteristicas conocidas de la categoria, sin cifras de benchmarks inventadas:
+No se dispone en la información proporcionada de datos de rendimiento de modelos comparables (por ejemplo, otros modelos griegos compactos como los de la familia Meltemi o Llama adaptados al griego) que permitan una comparación rigurosa. La siguiente tabla recoge únicamente los datos conocidos de LexisLM-1B y deja constancia de la ausencia de datos comparativos:
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Benchmarks |
 |---|---|---|---|---|---|
-| LexisLM-1B | ~1,09 B | 4.096 | Griego | Apache-2.0 | Hugging Face |
-| Modelos multilingues de ~1B (familia Llama/Qwen) | ~1 B | variable (2K-32K) | Multilingue | variable | Hugging Face |
-| Modelos griegos de mayor tamano (p. ej. variantes de 7B) | ~7 B | variable | Griego/multilingue | variable | Hugging Face |
-
-La comparacion de rendimiento frente a estas alternativas no esta disponible en la informacion proporcionada.
+| LexisLM-1B | 1,09 B | 4.096 | Apache-2.0 | Griego | MMLU 23,15%; ARC-C 25,34% (zero-shot) |
+| Alternativas griegas compactas | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelos multilingües de ~1B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modelo base sin ajuste por instrucciones: las peticiones en formato chat o pregunta-respuesta pueden no producir respuestas fiables; el autor lo advierte explicitamente.
-- Riesgo de alucinacion: al ser un modelo de completado preentrenado, puede generar texto inexacto o inventado; debe revisarse antes de usarse en contextos de consecuencias relevantes.
-- Sesgos: el texto generado puede reflejar sesgos presentes en los datos de entrenamiento (FineWeb2 y Wikipedia en griego); no se documentan evaluaciones de sesgo.
-- Limitacion idiomatica: el modelo esta entrenado unicamente en griego; no se declaran capacidades en otros idiomas y su uso fuera del griego no esta respaldado por la model card.
-- Ventana de contexto limitada a 4.096 tokens, lo que restringe tareas que requieran contextos largos.
-- Vocabulario de 32.004 tokens, relativamente pequeno, lo que puede afectar a la eficiencia de tokenizacion en dominios especializados.
-- Restricciones de licencia: los pesos se distribuyen bajo Apache-2.0, permisiva para uso comercial; sin embargo, los derechos sobre los datos de entrenamiento (FineWeb2 bajo ODC-By-1.0 y Wikipedia) permanecen con sus titulares, por lo que conviene revisar las condiciones de las fuentes antes de un uso comercial a gran escala.
-- Sin datos publicados sobre cuantizacion, latencia o throughput, lo que limita la planificacion de despliegues en produccion.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: modelo muy reciente y sin validacion comunitaria.
+- Modelo base sin ajuste por instrucciones: no debe esperarse un comportamiento conversacional fiable; las preguntas en formato chat pueden producir respuestas incoherentes o incompletas.
+- Riesgo de alucinación: al ser un modelo de completado entrenado sobre corpus web, puede generar afirmaciones factualmente incorrectas con fluidez.
+- Sesgos de los datos de entrenamiento: FineWeb2 y Wikipedia en griego pueden introducir sesgos de representación, geográficos y de género; el autor advierte de que el texto generado puede reflejar dichos sesgos.
+- Limitación de idioma: solo se documenta soporte para griego; el rendimiento en otros idiomas no está evaluado y probablemente sea deficiente.
+- Ventana de contexto limitada: 4.096 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Rendimiento bajo en benchmarks de conocimiento: MMLU del 23,15% y ARC-Challenge del 25,34% indican una capacidad limitada de razonamiento zero-shot, propia de un modelo pequeño entrenado con 22 mil millones de tokens.
+- Licencia: Apache-2.0 permite uso comercial, pero los derechos sobre los datos subyacentes (FineWeb2 bajo ODC-By-1.0 y Wikipedia) permanecen con sus titulares; conviene revisar las obligaciones de atribución de dichos corpus.
+- Sin garantías de calidad para producción: el autor recomienda revisar el texto generado antes de usarlo en contextos de consecuencias relevantes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ComputationalLinguisticsLab/LexisLM-1B
-- FineWeb2 (HuggingFaceFW): no se proporciona URL directa en la informacion disponible; referenciado en la model card como fuente de datos.
-- Wikipedia en griego: fuente de datos citada en la model card; no se proporciona URL directa.
-- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.
+- Preprint arXiv: https://arxiv.org/abs/2611.10209
+- FineWeb2 (HuggingFaceFW): no disponible enlace directo en la información proporcionada
+- Repositorio de código o demo: no disponible

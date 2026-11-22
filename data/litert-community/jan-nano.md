@@ -2,95 +2,103 @@
 
 ## Resumen
 
-Jan-nano es un modelo de lenguaje de 4.000 millones de parámetros, especializado en razonamiento y uso de herramientas para tareas de investigación profunda (deep research). Fue desarrollado por Menlo y posteriormente convertido por la comunidad litert-community al formato LiteRT-LM (`.litertlm`) para su ejecución en dispositivos de borde (on-device), como teléfonos móviles y ordenadores de sobremesa. El modelo se basa en la arquitectura Qwen3-4B (Qwen3ForCausalLM) y ha sido ajustado mediante un proceso de entrenamiento por refuerzo con verificación de recompensas (RLVR) en múltiples etapas, optimizándolo específicamente para el uso de herramientas a través del Model Context Protocol (MCP).
+Jan-nano es un modelo de lenguaje de 4.000 millones de parámetros desarrollado por Menlo, obtenido mediante un ajuste fino de Qwen3-4B con una receta multi-etapa de RLVR (Reinforcement Learning with Verifiable Rewards) y optimizado para el uso de herramientas a través del Model Context Protocol (MCP). Está diseñado específicamente como agente de investigación profunda (*deep-research agent*), es decir, para planificar y ejecutar búsquedas y consultas encadenadas mediante herramientas externas. Es un modelo de razonamiento: emite una cadena de pensamiento entre etiquetas `<think>…</think>` antes de su respuesta final.
 
-La relevancia de Jan-nano radica en su capacidad para ejecutar razonamiento complejo y uso de herramientas en dispositivos con recursos limitados, gracias a la cuantización int4 y al runtime LiteRT-LM de Google (sucesor de TensorFlow Lite). Al ser un modelo de razonamiento, genera una cadena de pensamiento antes de responder, lo que exige una ventana de generación amplia (mínimo 2048 tokens) para obtener resultados completos. El repositorio ofrece dos versiones cuantizadas con distinta granularidad (block 128 y block 32), equilibrando precisión y velocidad de decodificación.
+La ficha que nos ocupa no corresponde al modelo original, sino a la conversión publicada por `litert-community` al formato **LiteRT-LM** (`.litertlm`), el runtime on-device de Google (sucesor de TensorFlow Lite). Esta conversión permite ejecutar el modelo en dispositivos de borde —teléfonos Android, Macs con Apple Silicon o una Raspberry Pi 5— sin necesidad de infraestructura de servidor. Se publican dos variantes: `model.litertlm` y `model_block32.litertlm`, ambas con pesos cuantizados a int4 por bloques.
+
+La relevancia actual reside en que demuestra que un modelo de razonamiento de 4B con capacidades de agente puede ejecutarse íntegramente en un teléfono con aceleración GPU a velocidades utilizables (del orden de 9 a 20 tokens/s en decodificación según el dispositivo), lo que habilita asistentes de investigación locales con privacidad de datos y sin coste de inferencia en la nube.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3ForCausalLM (Transformer, basado en Qwen3-4B) |
-| Parametros totales | 4 000 millones (4B) |
-| Parametros activos | no aplicable (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens (KV cache) |
-| Tipos de cuantizacion | int4 simetrico por bloques (block 128 y block 32) con OCTAV optimal-clipping; embeddings INT8 (externalizados) |
-| Idiomas soportados | no disponible (modelo base Qwen3 es multilingue, pero no se especifican idiomas concretos) |
+| Arquitectura | Transformer decoder-only (Qwen3ForCausalLM), derivado de Qwen3-4B |
+| Parametros totales | 4B (heredados del modelo base Qwen3-4B) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | int4 por bloques (*blockwise int4*); variante `model_block32` con bloques de 32 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (bundle que incluye tokenizador y plantilla de chat Qwen3 ChatML) |
+| Formato de pesos | `.litertlm` (LiteRT-LM); tamano del repo 20,6 GB, archivo individual `model.litertlm` de 2,3 GiB |
 
 ## Arquitectura y entrenamiento
 
-Jan-nano es un modelo transformer denso basado en la arquitectura Qwen3-4B, con un tamaño de 4 000 millones de parametros. La model card indica que fue fine-tuneado a partir de Menlo/Jan-nano, que a su vez se origina de Qwen3-4B, mediante un proceso de entrenamiento por refuerzo con verificación de recompensas (RLVR) en multiples etapas. Este enfoque optimiza el modelo para el uso de herramientas a traves del Model Context Protocol (MCP), lo que le permite planificar y ejecutar tareas de investigacion complejas de forma autonoma.
+El modelo subyacente es un transformer decoder-only de la familia Qwen3, con 4B parámetros, ajustado por Menlo mediante una receta multi-etapa de RLVR sobre Qwen3-4B. El entrenamiento con recompensas verificables está orientado a tareas de agente: uso de herramientas vía MCP, planificación en varios pasos y razonamiento explícito previo a la respuesta. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas concretas de RLHF/DPO.
 
-El modelo es un modelo de razonamiento explicito: genera una cadena de pensamiento (thinking) antes de emitir la respuesta final, siguiendo el formato ChatML de Qwen3. Para la inferencia, el bundle `.litertlm` incluye el tokenizer y la plantilla de chat, lo que simplifica su despliegue. La cuantizacion int4 con bloques de 128 o 32 y la tecnica OCTAV (optimal clipping) reducen el tamaño del modelo a aproximadamente 2.11 GiB para la version block 32, manteniendo un rendimiento cercano al modelo bf16 de referencia (88% vs 92% en GSM8K con block 128).
+La conversión a LiteRT-LM se realizó con `litert-torch` (antiguo `ai-edge-torch`), el conversor de PyTorch de LiteRT, reutilizando el conversor y el runtime existentes para Qwen3. Los archivos publicados el 2026-11-16 sustituyen a los anteriores con un grafo de prefill/decode reescrito para GPU, manteniendo todos los pesos sin cambios. La cuantización int4 por bloques reduce el peso a aproximadamente 2,3 GiB, lo que hace viable su carga en memoria de dispositivos móviles. El modo de razonamiento (`<think>`) está activo por defecto y, según la model card, `--thinking false` no lo desactiva en litert-lm 0.19.2.
 
 ## Capacidades
 
-- Razonamiento complejo con cadena de pensamiento (chain-of-thought) para problemas de matematicas, logica y analisis.
-- Uso de herramientas y agentes mediante el Model Context Protocol (MCP), lo que permite interactuar con APIs, bases de datos y servicios externos.
-- Capacidades de deep-research: planificacion de tareas de investigacion, busqueda de informacion y sintesis de resultados.
-- Generacion de texto general con soporte de contexto de 4096 tokens.
-- Soporte de funciones de llamada (tool calling) integradas en el flujo de razonamiento.
-- Capacidades multilingues heredadas del modelo base Qwen3 (idiomas exactos no especificados en esta version).
-- Ejecucion en dispositivos de borde (moviles, portatiles) con aceleracion por GPU (Metal, OpenCL) y CPU.
+- Generación de texto con razonamiento explícito: emite una cadena de pensamiento entre `<think>` y `</think>` antes de la respuesta.
+- Uso de herramientas mediante el Model Context Protocol (MCP), capacidad para la que fue específicamente optimizado.
+- Planificación de investigación profunda: descomposición de consultas y ejecución de búsquedas encadenadas.
+- Razonamiento multi-paso y comportamiento agéntico.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Capacidades de visión o audio: no disponibles (modelo de texto).
+- Ejecución on-device con aceleración GPU (WebGPU en navegador, GPU Android, GPU de Apple Silicon).
 
 ## Casos de uso
 
-- **Investigacion automatizada de codigo**: el modelo puede planificar y ejecutar busquedas en repositorios de codigo, identificar configuraciones de red o de sistemas, y sintetizar hallazgos, como se muestra en el ejemplo de la model card ("Plan how to find where HTTP retries are configured in a Python repo").
-- **Asistente personal on-device**: al ejecutarse en un telefono (iPhone 17 Pro a ~14 tok/s), puede actuar como un asistente de investigacion personal que consulta documentacion, resume articulos o gestiona tareas sin depender de la nube.
-- **Automatizacion de tareas de analisis**: con soporte de MCP, puede conectarse a herramientas externas (bases de datos, hojas de calculo, APIs) y generar informes o responder preguntas complejas sobre datos.
-- **Generacion de codigo asistida por agentes**: puede usar herramientas de ejecucion de codigo o busqueda de documentacion para generar o depurar codigo en proyectos de desarrollo.
-- **Soporte tecnico especializado**: integrado en un chatbot, puede gestionar consultas multi-turno de soporte tecnico, buscando en bases de conocimiento y proporcionando respuestas razonadas.
-- **Analisis de documentos y extraccion de informacion**: con contexto de 4096 tokens, puede procesar documentos largos y extraer conclusiones o responder preguntas concretas sobre su contenido.
+- **Asistente de investigación local en el móvil**: el modelo puede planificar y ejecutar búsquedas encadenadas sobre fuentes externas mediante MCP directamente en un Galaxy S26, con 9,3 tok/s de decodificación en GPU y sin enviar datos a la nube.
+- **Navegación y análisis de repositorios de código**: la propia model card propone el caso de "planificar cómo encontrar dónde se configuran los reintentos HTTP en un repositorio Python", usando el modelo para localizar puntos de configuración mediante pasos de razonamiento.
+- **Chat en el navegador sin backend**: la demo oficial de LiteRT-LM carga el modelo vía WebGPU en el navegador (descarga de 2,47 GB desde la rama `web`), útil para prototipos y demos públicas sin infraestructura de servidor.
+- **Automatización en dispositivos de borde industriales o IoT**: la ejecución en Raspberry Pi 5 con CPU y 4 hilos (1,4–1,5 tok/s de decodificación) permite integrar un agente de consulta en equipos de bajo consumo donde no hay conectividad fiable.
+- **Procesamiento con privacidad de datos en el dispositivo**: al ejecutarse íntegramente en local, es adecuado para flujos donde la información no puede salir del terminal (sanidad, legal, datos personales).
+- **Agente de consulta documental con MCP**: integrable con servidores MCP locales para consultar bases de conocimiento, ficheros o APIs internas, aprovechando su ajuste específico para tool calling.
+- **Prototipado rápido de agentes de razonamiento**: permite validar pipelines agénticos con un modelo de 4B cuantizado antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona resultados de evaluacion en GSM8K (n=100, greedy, 0-shot chain-of-thought, max_tokens 2048) para las distintas configuraciones:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos publicados son mediciones de rendimiento en dispositivo:
 
-| Configuracion | GSM8K |
-|---|---|
-| bf16 (referencia) | 92.0% |
-| LiteRT int4 - block 128 | 88.0% (-4 pt) |
-| LiteRT int4 - block 32 | 85.0% (-7 pt) |
+| Dispositivo | Runtime | Modo | Decode (tok/s) | Prefill (tok/s) | TTFT |
+|---|---|---|---|---|---|
+| Mac Studio M4 Max | LiteRT-LM 0.14.0 | GPU | 69,0 | 970 | 278 ms |
+| Galaxy S26 (`model.litertlm`) | LiteRT-LM v0.19.0 | GPU | 20,4 | 171 (1.024 tok) | no disponible |
+| Galaxy S26 (`model_block32`) | LiteRT-LM 0.16.0 | GPU | 9,3 | 102 | 2,08 s |
+| Galaxy S26 (`model_block32`) | LiteRT-LM 0.16.0 | CPU | 5,9 | 29 | 7,14 s |
+| Galaxy S26 (`model_block32`) | LiteRT-LM v0.19.0 | GPU | 18,2 | 161 (1.024 tok) | no disponible |
+| Raspberry Pi 5 (4 hilos) | LiteRT-LM 0.16.1 | CPU | 1,4–1,5 | 10–11 | 25,5–28,0 s |
 
-Nota: la evaluacion con max_tokens 1024 penaliza severamente el rendimiento (63% con block 32) porque las cadenas de razonamiento se truncaban antes de llegar a la respuesta. Los resultados de velocidad se detallan en la seccion de requisitos de hardware. No se han publicado resultados de benchmarks en la informacion disponible para otras pruebas estandar (MMLU, HumanEval, etc.).
+Nota: las mediciones de Mac y Raspberry Pi corresponden a archivos anteriores a los publicados el 2026-11-16; las de Galaxy S26 con v0.19.0 corresponden a los archivos actuales. En Galaxy S26, los archivos nuevos decodificaron 1,45–1,54 veces más rápido y prefillaron 1,30–1,41 veces más rápido que los anteriores.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: la version int4 block 128 ocupa aproximadamente 2.5 GB de RAM en el dispositivo (requisito del repositorio para Android); la version block 32 ocupa 2.11 GiB solo en la seccion de pesos, por lo que se acerca al limite de memoria de iOS.
-- **GPU recomendadas**: se ha probado en Apple M4 Max (GPU Metal) y iPhone 17 Pro (GPU Metal). En Mac, la GPU ofrece una velocidad de decodificacion de ~69 tok/s (vs ~18 tok/s en CPU); en iPhone se alcanza ~14 tok/s. Tambien es compatible con GPUs de escritorio (OpenCL) y Android con GPU.
-- **En consumer GPU**: si, cabe en dispositivos moviles y portatiles con al menos 2.5 GB de RAM libre. No requiere GPU dedicada de alto rendimiento.
-- **Opciones de despliegue**: LiteRT-LM CLI (con servidor OpenAI-compatible), Google AI Edge Gallery (v1.0.16+ permite importar modelos directamente desde Hugging Face), o integracion directa con la libreria `litert-lm`.
-- **Latencia y throughput**: en M4 Max, prefetch de 1003 tok/s (GPU) y 111 tok/s (CPU); decodificacion de 69 tok/s (GPU) y 18 tok/s (CPU). Time to first token (TTFT) de 0.28 s en GPU y 2.49 s en CPU.
+- **VRAM/memoria**: el archivo `model.litertlm` ocupa 2,3 GiB; en Galaxy S26 el contador de asignación GPU del sistema (`kgsl_page_alloc`) subió 4,83 GB durante la ejecución (`model.litertlm`) y 5,21 GB (`model_block32.litertlm`).
+- **GPU recomendadas**: Apple Silicon (M4 Max medido), GPU de Android de gama alta (Galaxy S26, Pixel 11 Pro), WebGPU en navegador.
+- **CPU**: funciona en Raspberry Pi 5 con 4 hilos, aunque a 1,4–1,5 tok/s de decodificación.
+- **¿Cabe en GPU de consumo?** Sí: con 2,3 GiB de pesos int4, cualquier GPU consumer con más de 4 GB de memoria libre puede alojarlo; las mediciones publicadas se centran en móviles y Apple Silicon.
+- **Opciones de despliegue**: LiteRT-LM (CLI `litert-lm` desde 0.14.0; los archivos actuales requieren 0.19.0 o superior en Android), WebGPU en navegador. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- **Latencia**: TTFT de 278 ms en Mac Studio M4 Max y de 2,08 s en Galaxy S26 GPU; en Raspberry Pi 5 el TTFT alcanza 25,5–28,0 s, lo que limita su uso a tareas por lotes o de baja interactividad.
 
 ## Comparativa con modelos similares
 
-No hay datos publicados de benchmarks comparativos con otros modelos en la informacion proporcionada. Sin embargo, se puede contextualizar:
-
-| Modelo | Tamano | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato/despliegue | Licencia | Notas |
 |---|---|---|---|---|---|
-| **Jan-nano (LiteRT)** | 4B | 4096 | `.litertlm` | Apache 2.0 | Hugging Face |
-| **Qwen3-4B** (modelo base) | 4B | 32k (original) | safetensors | Apache 2.0 | Hugging Face |
-| **Gemma 3 4B** (referencia on-device) | 4B | 32k | safetensors | Gemma License | Kaggle/Hugging Face |
+| Jan-nano (LiteRT-LM) | 4B | no disponible | `.litertlm`, on-device | Apache 2.0 | Agente deep-research con MCP, modo razonamiento |
+| Qwen3-4B (modelo base) | 4B | no disponible | safetensors, GGUF, múltiples runtimes | Apache 2.0 | Modelo generalista del que deriva; sin ajuste específico para agentes |
+| Menlo/Jan-nano (original) | 4B | no disponible | safetensors (Hugging Face) | Apache 2.0 | Mismo modelo sin conversión a LiteRT-LM; requiere runtime de servidor o GPU estándar |
 
-Nota: el modelo base Qwen3-4B tiene una ventana de contexto de 32k en su version original, mientras que la version LiteRT limita a 4096 tokens para el KV cache. No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
+No se dispone de datos de benchmarks que permitan comparar la calidad de Jan-nano frente a alternativas de su misma categoría; la comparación se limita a parámetros, licencia y formato de despliegue.
 
 ## Limitaciones y advertencias
 
-- **Riesgo de truncamiento en razonamiento**: al ser un modelo de razonamiento, si se usa un `max_tokens` inferior a 2048, puede quedarse a mitad de la cadena de pensamiento y no llegar a emitir respuesta. Se recomienda siempre usar un presupuesto de generacion amplio.
-- **Degradacion de precision por cuantizacion**: la version int4 block 32 pierde 7 puntos en GSM8K frente al bf16; block 128 pierde 4 puntos. La degradacion es aceptable pero debe considerarse en aplicaciones de alta precision.
-- **Memoria en dispositivos moviles**: la version block 32 puede no cargar en iPhone (memoria limite), por lo que se recomienda block 128 para moviles.
-- **Sesgos y alucinaciones**: al ser un modelo de razonamiento, puede generar cadenas de pensamiento plausibles pero incorrectas, especialmente en dominios fuera de su entrenamiento. No se proporcionan datos sobre sesgos especificos.
-- **Restricciones de licencia**: licencia Apache 2.0 permite uso comercial, pero el modelo base (Qwen3) tiene sus propias condiciones (Apache 2.0), asi que es compatible.
-- **Contexto limitado**: la ventana de 4096 tokens es corta para tareas de investigacion muy extensas; se recomienda dividir el trabajo en sub-tareas.
-- **Soporte de idiomas no documentado**: aunque Qwen3 es multilingue, no se especifica que idiomas soporta esta version concreta.
+- **Es un modelo de razonamiento**: emite una cadena `<think>` antes de responder; con litert-lm 0.19.2, `--thinking false` no la desactiva, por lo que hay que asignar un límite de tokens alto o la respuesta puede truncarse.
+- **Caché de descargas del CLI**: `litert-lm` (0.14.0–0.19.2) reutiliza un `model.litertlm` descargado previamente sin verificar su integridad contra el repositorio; una copia anterior al 2026-11-16 o una descarga incompleta seguirá en uso hasta borrarla manualmente.
+- **Requisito de versión en Android**: la ruta GPU en Android necesita LiteRT-LM 0.19.0 o superior.
+- **Sin validación en iPhone**: los archivos publicados el 2026-11-16 no se ejecutaron en iPhone (los anteriores sí).
+- **Tiempo de compilación inicial**: en la demo web, la primera carga compiló el modelo durante 13 minutos en un M4 Max antes de responder.
+- **Rendimiento muy limitado en CPU de bajo consumo**: 1,4–1,5 tok/s en Raspberry Pi 5 hace inviable la interacción en tiempo real.
+- **Idiomas no documentados**: la información disponible no especifica la cobertura lingüística; no debe asumirse un buen rendimiento en castellano sin evaluarlo.
+- **Sesgos y alucinaciones**: no se documentan análisis específicos; al ser un modelo de 4B ajustado para agentes, existe riesgo de alucinación en la planificación y en la selección de herramientas, que debe mitigarse con validación externa.
+- **Licencia Apache 2.0**: permite uso comercial, pero debe conservarse el aviso de licencia y tenerse en cuenta que el modelo base es Qwen3-4B, también Apache 2.0.
 
 ## Enlaces
 
-- [Hugging Face: litert-community/Jan-nano](https://huggingface.co/litert-community/Jan-nano)
-- [Modelo base: Menlo/Jan-nano](https://huggingface.co/Menlo/Jan-nano)
-- [Repositorio LiteRT-LM (Google AI Edge)](https://github.com/google-ai-edge/litert-lm)
-- [LiteRT (framework on-device)](https://github.com/google-ai-edge/litert)
-- [Google AI Edge Gallery (app)](https://github.com/google-ai-edge/gallery)
-- [Blog oficial de LiteRT](https://developers.googleblog.com/litert-the-universal-framework-for-on-device-ai/)
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Jan-nano
+- Modelo base original: https://huggingface.co/Menlo/Jan-nano
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Demo web de chat (WebGPU): https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/Jan-nano
+- Ficha de rendimiento edge-compat (jan-nano): https://github.com/john-rocky/edge-compat/blob/main/cards/jan-nano/CARD.md
+- Ficha de rendimiento edge-compat (jan-nano-model-block32): https://github.com/john-rocky/edge-compat/blob/main/cards/jan-nano-model-block32/CARD.md
+- Benchmark de runtimes en Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

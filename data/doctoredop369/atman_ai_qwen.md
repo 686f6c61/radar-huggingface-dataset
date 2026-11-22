@@ -2,85 +2,91 @@
 
 ## Resumen
 
-Atman_Ai_Qwen es un modelo de lenguaje de 8.950 millones de parametros desarrollado por DoctorEdoP369, construido a partir del modelo base DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED. Se distribuye exclusivamente en formato GGUF, lo que permite su ejecucion offline en hardware de consumo, e incluye un proyector multimodal para soporte de vision. El modelo opera en modo thinking, generando una cadena de razonamiento explicita antes de cada respuesta, y esta orientado al razonamiento profundo tanto cientifico-matematico como psicologico.
+Atman_Ai_Qwen (también referido por el autor como AtmanAi_Qwen_V3) es un modelo de lenguaje de aproximadamente 9.000 millones de parámetros publicado por el usuario DoctorEdoP369 en Hugging Face. Se distribuye principalmente en formato GGUF y deriva del modelo DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED, que a su vez se apoya en la familia Qwen 3.5. El modelo está orientado a razonamiento profundo con modo de pensamiento explícito, conversación multi-turno y contenido sin filtrado de seguridad reforzado.
 
-El autor lo describe como un modelo con filtros de seguridad reducidos, una decision de diseno deliberada orientada a la autonomia del usuario, y con la ventana de contexto extendida mediante archivos Yarn. Se posiciona como una alternativa de alto rendimiento dentro de la familia Qwen 3.5, con capacidades multilingues y de conversacion multi-turno coherente. En el momento de la consulta, el modelo no registra descargas ni valoraciones en Hugging Face.
+El autor presenta el modelo como una alternativa de alto rendimiento para ejecución local en hardware de consumo, con cuantizaciones GGUF y un proyector multimodal (mmproj) para entrada de imágenes. La ficha del autor destaca capacidades de razonamiento científico-matemático y, sobre todo, psicológico, además de soporte multilingüe y una ventana de contexto extendida mediante archivos Yarn.
+
+La relevancia actual del modelo reside en su enfoque: un ajuste fino "uncensored" sobre una base con modo thinking, empaquetado para inferencia offline. No obstante, la información técnica publicada es escasa y en gran parte promocional, sin datos verificables de benchmarks, composición del dataset de ajuste ni detalles del proceso de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en Qwen3.5 (detalles especificos no disponibles) |
-| Parametros totales | 8.953.803.264 (~8,95 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (extendida mediante Yarn, sin cifra publicada) |
-| Tipos de cuantizacion | GGUF (se menciona Q5 como la version mas debil; no se listan todas las variantes) |
-| Idiomas soportados | Multilingue (lista especifica no disponible) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen 3.5, según el modelo base); detalles no disponibles |
+| Parametros totales | 8.953.803.264 (≈8,95 B, según safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | extendida mediante archivos Yarn; valor numérico no disponible |
+| Tipos de cuantizacion | GGUF en varias cuantizaciones (el autor menciona Q5 como la más débil); resto no disponible |
+| Idiomas soportados | multilingüe según el autor; lista concreta no disponible (etiqueta `ita` en los tags) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo de 100,7 GB); safetensors referenciados para el conteo de parámetros |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la base Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED, un modelo de 9B parametros de la familia Qwen 3.5. Sobre esta base, DoctorEdoP369 ha aplicado un ajuste fino orientado a potenciar el razonamiento profundo, la coherencia en conversaciones multi-turno y las capacidades de analisis psicologico. El modelo genera una cadena de razonamiento explicita (thinking mode) antes de cada respuesta, y mantiene el razonamiento a lo largo de varios intercambios en lugar de reiniciarlo en cada mensaje.
+El modelo se basa en la arquitectura de la familia Qwen 3.5, un transformer decoder-only con modo de razonamiento explícito (generación de una cadena `<think>` antes de la respuesta). El autor indica que el contexto se ha extendido mediante archivos Yarn, técnica de escalado posicional para ampliar la ventana de atención sin reentrenamiento completo. No se especifican el número de capas, dimensiones ocultas, mecanismo de atención ni configuración de cabezas.
 
-La extension de contexto se ha realizado mediante archivos Yarn, aunque no se publica la longitud final de la ventana. El modelo incluye un proyector multimodal para soporte de vision, cuya disponibilidad depende del cliente de inferencia utilizado. No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion empleadas (RLHF, DPO, etc.).
+Respecto al entrenamiento, la información disponible es mínima: se menciona un ajuste fino sobre el modelo base DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED, con material multi-turno en el que el razonamiento se mantiene a lo largo de varios intercambios. No se publican el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon RLHF, DPO u otras técnicas de alineamiento. Tampoco se detalla el método de fusión o destilación que pudiera haber aplicado el modelo base. El autor incluye un proyector multimodal (mmproj) para visión, presumiblemente heredado de la base.
 
 ## Capacidades
 
-- Razonamiento profundo con cadena de pensamiento explicita (thinking mode) antes de cada respuesta.
-- Conversaciones multi-turno coherentes, con razonamiento mantenido a lo largo de varios intercambios.
-- Soporte de vision mediante proyector multimodal incluido (depende del cliente de inferencia).
-- Capacidades multilingues.
-- Razonamiento cientifico-matematico y analisis psicologico.
-- Narrativa y escritura creativa (etiquetado como story).
-- Filtros de seguridad reducidos: responde a preguntas que los asistentes alojados suelen rechazar.
+- Generación de texto con razonamiento explícito en modo thinking: produce una cadena `<think>` visible antes de la respuesta final.
+- Razonamiento científico-matemático y, según el autor, razonamiento de tipo psicológico.
+- Conversación multi-turno con coherencia del razonamiento entre turnos.
+- Entrada de imágenes mediante proyector multimodal (mmproj), condicionada al cliente de inferencia utilizado.
+- Capacidades multilingües (sin lista detallada de idiomas).
+- Escritura creativa y narrativa (etiqueta `story` en los tags).
+- Filtrado de seguridad reducido de forma deliberada (ajuste "uncensored").
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; el modo thinking es compatible con cadenas de razonamiento, pero no se detalla integración con frameworks de agentes.
 
 ## Casos de uso
 
-- Analisis psicologico y conversacional: el modelo esta ajustado para razonar a nivel psicologico, lo que lo hace util para sesiones de reflexion guiada, analisis de patrones de comportamiento o exploracion de dilemas personales en un entorno privado y offline.
-- Razonamiento cientifico y matematico: su modo thinking con cadena de razonamiento explicita permite abordar problemas complejos de matematicas o fisica, facilitando la revision del proceso de deduccion.
-- Escritura creativa y narrativa: con soporte para storytelling, puede generar relatos largos y coherentes, manteniendo el hilo argumental a lo largo de multiples intercambios.
-- Asistente personal offline: al distribuirse en GGUF, puede ejecutarse en hardware de consumo sin conexion, lo que garantiza privacidad total en las conversaciones.
-- Analisis de imagenes con vision: gracias al proyector multimodal, puede describir o interpretar imagenes cuando se usa con un cliente compatible (por ejemplo, llama.cpp con soporte mmproj).
-- Investigacion y experimentacion con modelos sin censura: su filtrado de seguridad reducido lo hace util para investigar comportamientos de modelos sin restricciones, siempre bajo responsabilidad del usuario.
+- Asistencia conversacional local sin conexión: el modelo se distribuye en GGUF y puede ejecutarse íntegramente en hardware de consumo, lo que permite desplegar un asistente privado en equipos sin GPU de datacenter.
+- Razonamiento matemático y científico asistido: el modo thinking explícito permite auditar el proceso de resolución paso a paso, útil en entornos educativos o de investigación donde interesa revisar el razonamiento y no solo el resultado.
+- Análisis de documentos con imágenes: gracias al proyector mmproj, puede procesar capturas, diagramas o páginas escaneadas en clientes compatibles con visión, por ejemplo para extraer y comentar información de figuras técnicas.
+- Escritura creativa y narrativa larga: el ajuste sobre material multi-turno y la etiqueta `story` lo orientan a la generación de relatos y diálogos con continuidad, aprovechando el contexto extendido por Yarn.
+- Exploración de contenido sin filtros en investigación: al tener filtrado de seguridad reducido, puede emplearse en estudios sobre comportamiento de modelos, evaluación de sesgos o generación de datos adversarios en entornos controlados.
+- Prototipado de aplicaciones de razonamiento psicológico o coaching conversacional: el autor destaca este dominio, aunque cualquier uso en salud mental requiere supervisión profesional y no debe tratarse como consejo clínico.
+- Inferencia offline en portátiles con GPU consumer: las cuantizaciones GGUF permiten ajustar el modelo a la VRAM disponible, facilitando demos y pruebas de concepto sin infraestructura cloud.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
+
+El autor afirma que el modelo supera a sus bases e incluso a modelos mayores, pero no aporta tablas, métricas ni protocolos de evaluación que respalden esas afirmaciones.
 
 ## Requisitos de hardware
 
-- El modelo se distribuye en GGUF, disenado para ejecutarse en hardware de consumo.
-- El repositorio ocupa 43,2 GB, lo que sugiere la presencia de multiples cuantizaciones, aunque no se listan explicitamente.
-- La version Q5 se describe como la mas debil, lo que implica la existencia de cuantizaciones superiores (Q6, Q8, etc.).
-- Para una cuantizacion Q5 de un modelo de 9B se estiman entre 6 y 8 GB de VRAM; para Q8 se necesitarian aproximadamente 10-12 GB (estimaciones orientativas basadas en el tamano tipico de GGUF para modelos de este tamano).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros clientes compatibles con GGUF y archivos mmproj para vision.
-- No se dispone de datos de latencia o throughput publicados.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamaño (≈9 B de parámetros), una cuantización Q4 requeriría del orden de 5-6 GB, Q5 en torno a 6-7 GB y Q8 cerca de 9-10 GB, más el espacio de contexto KV; estas cifras son estimaciones generales, no datos publicados por el autor.
+- GPU recomendadas: no especificadas. Por tamaño, cabría esperar funcionamiento en GPUs consumer con 8-16 GB de VRAM y en GPUs de datacenter (A100, H100) para mayor throughput.
+- Compatibilidad con GPU consumer: previsiblemente sí en modelos con 8 GB o más de VRAM en cuantizaciones bajas; el autor no publica requisitos mínimos.
+- Opciones de despliegue: el autor distribuye "Atman Ai Setup.zip", un programa propio que carga el GGUF y el archivo mmproj. No se mencionan explícitamente llama.cpp, Ollama, vLLM ni TGI, aunque el formato GGUF es compatible con el ecosistema llama.cpp.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Atman_Ai_Qwen | 8,95 B | No disponible (Yarn) | Apache 2.0 | GGUF | Fine-tune de Qwen3.5-9B, sin censura, vision |
-| Qwen3.5-9B (base) | ~9 B | No disponible | Apache 2.0 | safetensors | Modelo base original de la familia Qwen 3.5 |
-| DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED | ~9 B | No disponible | Apache 2.0 | safetensors | Base directa de Atman_Ai_Qwen |
+| Atman_Ai_Qwen | ≈8,95 B | Extendido con Yarn (valor no disponible) | Apache 2.0 | GGUF | Ajuste uncensored con thinking y visión |
+| Qwen 3.5 9B (familia base) | ≈9 B | No disponible en esta ficha | Según variante de Qwen | Safetensors, GGUF | Base oficial; alineamiento estándar |
+| DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED | ≈9 B | No disponible | No disponible | No disponible | Modelo base directo del que deriva Atman_Ai_Qwen |
 
-No se dispone de datos de rendimiento comparativo publicados para estos modelos.
+No se dispone de datos de rendimiento comparativos verificables entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Filtros de seguridad reducidos: el modelo responde a preguntas que los asistentes alojados rechazan. El uso y las consecuencias son responsabilidad exclusiva del usuario.
-- Riesgo de alucinacion: el modelo puede estar confiadamente equivocado. La cadena de razonamiento visible facilita la deteccion de errores, pero no los previene.
-- No es un profesional: las respuestas no sustituyen el consejo de medicos, abogados, contables o ingenieros.
-- Soporte de vision dependiente del cliente: varias aplicaciones locales ignoran el archivo mmproj, por lo que la funcionalidad de vision puede no estar disponible en todos los entornos.
-- Parametros de inferencia recomendados: el autor advierte que usar parametros distintos a los recomendados (temperatura 0,6; top_p 0,96; top_k 20; min_p 0,03; presence_penalty 0,04; repeat_penalty 1,06) puede impedir que el modelo funcione correctamente.
-- Sin datos de benchmarks publicados: no es posible verificar objetivamente las afirmaciones de rendimiento del autor.
-- Modelo sin descargas ni valoraciones en el momento de la consulta: no hay evidencia de uso o validacion por parte de la comunidad.
+- Filtrado de seguridad reducido de forma deliberada: el modelo responderá a peticiones que asistentes alojados rechazan, lo que traslada toda la responsabilidad de uso al operador.
+- Riesgo de alucinación: el autor reconoce que el modelo puede equivocarse con confianza; la cadena de razonamiento visible facilita detectar errores, pero no los evita.
+- No sustituye asesoramiento profesional: el propio autor advierte que no reemplaza a médicos, abogados, contadores o ingenieros.
+- Visión dependiente del cliente: muchas aplicaciones locales ignoran el archivo mmproj, por lo que el soporte multimodal puede no funcionar según la herramienta.
+- Parámetros de muestreo impuestos: el autor recomienda valores concretos (temperatura 0,6; top_p 0,96; top_k 20; min_p 0,03; presence_penalty 0,04; repeat_penalty 1,06) y advierte de posibles fallos con otros ajustes, lo que limita la flexibilidad en producción.
+- Documentación técnica insuficiente: no hay datos de dataset, proceso de entrenamiento, evaluación ni idiomas soportados, lo que dificulta la validación rigurosa.
+- Licencia Apache 2.0: permite uso comercial, pero el operador asume la responsabilidad sobre el contenido generado y sobre posibles obligaciones derivadas del modelo base.
+- Riesgo de sesgos: no se documentan evaluaciones de sesgo; un ajuste uncensored puede amplificar sesgos presentes en los datos de entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DoctorEdoP369/Atman_Ai_Qwen
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED
-- Sitio oficial de Qwen: https://qwen.ai/home
-- Documentacion de Qwen: https://qwen.readthedocs.io/
-- Informe tecnico de Qwen3: https://arxiv.org/html/2505.09388v1
+- Familia Qwen: no se proporciona enlace específico en la información disponible
+- Paper, blog o repositorio adicionales: no disponibles

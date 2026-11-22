@@ -2,47 +2,51 @@
 
 ## Resumen
 
-Esta ficha corresponde a una cuantización estática en formato GGUF del modelo **orb-human-typeahead-1b-v2.3**, publicada por el usuario **mradermacher** en Hugging Face. El repositorio original, desarrollado por **chartreuse-verte**, está disponible en https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3. Como sugiere su nombre, se trata de un modelo de aproximadamente 1.000 millones de parámetros orientado a la predicción de texto en tiempo real (typeahead), es decir, a la sugerencia anticipada de tokens o frases mientras el usuario escribe, un caso de uso habitual en editores, buscadores y asistentes de autocompletado.
+orb-human-typeahead-1b-v2.3-GGUF es la version cuantizada en formato GGUF del modelo chartreuse-verte/orb-human-typeahead-1b-v2.3, un modelo de aproximadamente 1.630 millones de parametros (1,63 B) especializado en tareas de typeahead y autocompletado, con orientacion declarada hacia el roleplay. La cuantizacion la ha realizado mradermacher, un publicador habitual de versiones GGUF de modelos abiertos, y se distribuye bajo licencia Apache 2.0.
 
-La relevancia de esta versión en GGUF radica en la portabilidad: el formato GGUF permite ejecutar el modelo localmente mediante llama.cpp, Ollama, LM Studio u otros runtimes compatibles, con cuantizaciones que van desde Q2_K hasta Q8_0 y f16. Esto hace viable su despliegue en hardware de consumo, algo especialmente interesante para un modelo pequeño diseñado para respuestas de latencia muy baja, donde la inferencia debe completarse en milisegundos para resultar útil en escenarios de escritura predictiva.
+El modelo base esta etiquetado con el tag "granite", lo que sugiere que deriva de la familia Granite de IBM, aunque la model card no detalla la arquitectura concreta ni el proceso de entrenamiento. Su proposito es servir como motor de sugerencia de texto (autocompletado predictivo) en lugar de como un asistente conversacional generalista, lo que lo hace relevante para integrarlo en interfaces de escritura, editores o sistemas de chat donde se necesita baja latencia y un coste computacional reducido.
 
-Cabe señalar que la model card del repositorio original no está disponible en la información proporcionada, por lo que varios detalles técnicos (arquitectura exacta, datos de entrenamiento, licencia, idiomas) no pueden confirmarse y se indican como no disponibles.
+El repositorio incluye un conjunto amplio de cuantizaciones estaticas (desde Q2_K hasta f16, pasando por IQ4_XS y las series Q3, Q4, Q5, Q6 y Q8), lo que permite desplegar el modelo desde entornos muy limitados de memoria hasta configuraciones de mayor fidelidad. El tamano total del repositorio es de 14,9 GB, aunque cada fichero individual ocupa entre 0,8 GB y 3,4 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformer, presumiblemente, según el repositorio original) |
-| Parametros totales | ~1B (indicado en el nombre del modelo) |
-| Parametros activos | no aplicable (no hay indicios de que sea MoE) |
+| Arquitectura | no disponible (etiquetado como "granite"; probablemente transformer derivado de la familia Granite de IBM) |
+| Parametros totales | 1.631.750.144 (1,63 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (heredaria la del modelo original chartreuse-verte/orb-human-typeahead-1b-v2.3) |
-| Formato de pesos | GGUF (cuantizaciones estáticas) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estaticas); versiones con imatrix en el repo i1-GGUF |
+| Idiomas soportados | ingles (en) segun la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles de arquitectura ni de entrenamiento en la model card disponible. Por el nombre del modelo, se trata de una variante de tipo "typeahead" de aproximadamente 1.000 millones de parámetros, lo que sugiere un transformer decoder compacto optimizado para inferencia de baja latencia. La conversión a GGUF se realizó desde el formato de Hugging Face (convert_type: hf), con cuantización estática por tensor (output_tensor_quantised: 1) y sin exclusiones de tensores (quants_skip vacío), lo que indica una cuantización completa del modelo, incluida la capa de salida.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. El tag "granite" sugiere una derivacion de la familia Granite de IBM, pero no se confirma ni el tipo exacto de transformer, ni el numero de capas, ni la dimension oculta. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-Al no existir model card en el repositorio base dentro de la información proporcionada, no es posible confirmar el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO.
+Lo unico verificable es el proceso de cuantizacion: mradermacher ha generado cuantizaciones estaticas a partir de los pesos en formato Hugging Face (convert_type: hf), con un total de doce variantes que cubren desde 2 hasta 16 bits por peso. Ademas, existe un repositorio paralelo con cuantizaciones ponderadas mediante imatrix (i1-GGUF), que suelen ofrecer mejor relacion calidad/tamano que las estaticas equivalentes. No se documenta ninguna innovacion tecnica adicional como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto predictiva (typeahead): sugerencia de continuaciones de texto mientras el usuario escribe, el propósito aparente del modelo según su denominación.
-- Ejecucion local en CPU o GPU gracias al formato GGUF y a las múltiples cuantizaciones disponibles.
-- Flexibilidad de cuantizacion: desde Q2_K (mínimo consumo de memoria) hasta Q8_0 y f16 (mayor fidelidad).
-- Capacidades de tool calling, agentes, visión o audio: no disponible en la información proporcionada.
-- Capacidades multilingues: no disponibles.
+- Autocompletado y typeahead: el modelo esta disenado para predecir continuaciones de texto cortas, orientado a sugerencias de escritura en tiempo real.
+- Generacion de texto conversacional: la model card incluye la etiqueta "conversational", lo que indica soporte para dialogos.
+- Roleplay: etiqueta explicita en la model card que sugiere un ajuste orientado a la interpretacion de personajes y conversaciones narrativas.
+- Generacion de texto en ingles: unico idioma declarado.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad de vision, audio ni modo "thinking".
+- No se documentan capacidades de codigo o matematicas de forma explicita.
 
 ## Casos de uso
 
-- Autocompletado en editores de texto e IDE: el modelo puede sugerir la siguiente palabra o frase en milisegundos al ejecutarse localmente con cuantizaciones ligeras (Q4_K_M o IQ4_XS), minimizando el impacto en la experiencia de escritura.
-- Sugerencia predictiva en buscadores o formularios web: su pequeño tamaño permite desplegarlo en CPU, ofreciendo continuaciones de consulta sin depender de servicios en la nube.
-- Asistentes de escritura con privacidad: al correr íntegramente en local (llama.cpp, Ollama), no se envía texto del usuario a servidores externos, adecuado para entornos con requisitos de confidencialidad.
-- Prototipado de interfaces de escritura inteligente: el tamaño de 1B permite iterar rápido en aplicaciones de demostración de typeahead sin necesidad de hardware costoso.
-- Sistemas edge y dispositivos con recursos limitados: las cuantizaciones Q2_K o Q3_K_S reducen el footprint de memoria, permitiendo su uso en portátiles sin GPU dedicada.
-- Generacion en lote de continuaciones cortas: útil como componente de pregeneración de sugerencias en sistemas de recomendación de texto, donde la latencia y el coste por token son críticos.
+- Autocompletado en editores de texto: el modelo puede generar sugerencias de continuacion de frase mientras el usuario escribe, gracias a su tamano reducido (1,63 B) que permite inferencia en CPU o GPU de gama baja con latencias bajas.
+- Sugerencias en campos de formulario y buscadores: integrado en un backend ligero, puede predecir el resto de una consulta o de un campo de entrada a partir de los primeros caracteres, mejorando la experiencia de usuario sin coste elevado.
+- Asistentes de escritura en aplicaciones de chat: con la etiqueta "conversational", puede emplearse para proponer respuestas rapidas en interfaces de mensajeria, donde la latencia importa mas que la profundidad del razonamiento.
+- Roleplay y ficcion interactiva: el ajuste declarado hacia roleplay permite usarlo en motores de narrativa conversacional o juegos de texto donde se necesita generar replicas de personajes con coherencia de estilo.
+- Prototipado y experimentacion en local: al disponer de cuantizaciones desde 0,8 GB (Q2_K) hasta 1,8 GB (Q8_0), es viable ejecutarlo en portatiles y estaciones de trabajo sin GPU dedicada para pruebas de concepto.
+- Despliegue en dispositivos con recursos limitados: la version Q4_K_M (1,1 GB) es la recomendada por el autor por su equilibrio entre velocidad y calidad, adecuada para entornos edge o contenedores con poca memoria.
+- Generacion de texto auxiliar en pipelines de datos: puede emplearse para completar o enriquecer campos de texto en procesos batch donde no se requiere un modelo grande.
 
 ## Benchmarks y rendimiento
 
@@ -50,32 +54,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM / memoria estimada para inferencia: para un modelo de ~1B de parámetros, aproximadamente 0,5 GB en Q2_K, ~0,7 GB en Q4_K_M y ~1,1 GB en Q8_0 (valores aproximados, sin contar la memoria del contexto).
-- GPU recomendadas: cualquier GPU moderna es suficiente dado el tamaño; incluso iGPUs integradas pueden ejecutar las cuantizaciones ligeras. No se requieren A100 ni H100.
-- Consumer GPU: cabe con holgura en GPUs como la RTX 3060 de 12 GB, la RTX 4060 o incluso tarjetas de 4 GB de VRAM con cuantizaciones Q2_K/Q3_K. También es plenamente viable su ejecución en CPU.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, GPT4All y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF directamente; para esos frameworks habría que usar los pesos originales del repositorio base.
-- Latencia y throughput: no disponibles; por tamaño y propósito (typeahead), se espera latencia de primer token del orden de milisegundos en hardware moderno.
+- VRAM estimada para inferencia: aproximadamente 1 GB para Q2_K, 1,1 GB para Q4_K_M, 1,4 GB para Q6_K y 1,8 GB para Q8_0 (el fichero ocupa ese tamano; la VRAM real depende de la ventana de contexto y del backend).
+- GPU recomendadas: cualquier GPU consumer con al menos 2-4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060) es suficiente para las cuantizaciones mas pequenas. Para f16 (3,4 GB) basta con una RTX 3060 de 6 GB o superior.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU dedicada moderna e incluso en iGPU con memoria compartida para las cuantizaciones bajas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. Tambien puede usarse con transformers cargando el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera una latencia muy baja en GPU consumer, pero no se aportan cifras verificables.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Notas |
-|---|---|---|---|---|
-| orb-human-typeahead-1b-v2.3-GGUF | ~1B | GGUF (Q2_K a f16) | no disponible | Especializado en typeahead; cuantizaciones estáticas de mradermacher |
-| Qwen2.5-1.5B-Instruct (GGUF) | 1,5B | GGUF, safetensors | Apache 2.0 | Modelo generalista multilingue con chat y tool calling |
-| Llama 3.2-1B-Instruct (GGUF) | 1,24B | GGUF, safetensors | Llama 3.2 Community License | Generalista, contexto de 128K tokens, soporte oficial de Meta |
-| SmolLM2-1.7B-Instruct (GGUF) | 1,7B | GGUF, safetensors | Apache 2.0 | Modelo ligero de Hugging Face orientado a uso local |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| orb-human-typeahead-1b-v2.3-GGUF | 1,63 B | no disponible | Apache 2.0 | GGUF | Especializado en typeahead y roleplay; 12 cuantizaciones |
+| Modelos tipo TinyLlama 1.1B | 1,1 B | 2.048 tokens (tipico) | Apache 2.0 | safetensors, GGUF | Generico, no especializado en autocompletado |
+| Modelos tipo Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Generico multilingue, mayor contexto |
+| Modelos tipo SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Generico, orientado a eficiencia |
 
-Nota: los modelos alternativos listados son generalistas; el modelo de esta ficha parece estar especializado en predicción de texto typeahead, un nicho con pocos competidores públicos documentados.
+La comparativa se ofrece como referencia de categoria (modelos de ~1-2 B parametros); los datos de contexto de los modelos alternativos no proceden de la informacion proporcionada para este modelo y deben verificarse en sus respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles; al no existir model card del modelo base, no hay documentación sobre sesgos del entrenamiento.
-- Riesgo de alucinacion: no disponible; como modelo predictivo de texto, debe asumirse que las continuaciones generadas pueden ser plausibles pero incorrectas.
-- Limitaciones de contexto e idioma: no disponibles; la longitud de contexto y los idiomas soportados no están documentados en la información proporcionada.
-- Restricciones de licencia: la licencia del repositorio GGUF y del modelo base no está especificada. Antes de cualquier uso comercial, debe verificarse la licencia en el repositorio original de chartreuse-verte.
-- Caveats de produccion: se trata de cuantizaciones estáticas de terceros (mradermacher), no de versiones oficiales del autor del modelo base; posibles degradaciones de calidad en cuantizaciones agresivas (Q2_K, Q3_K_S) deben evaluarse caso por caso. La ausencia de model card, benchmarks y metadatos (0 descargas y 0 likes en el momento de la ficha) recomienda validación exhaustiva antes de uso en producción.
+- Especializacion estrecha: el modelo esta orientado a typeahead, autocompletado y roleplay; no es un asistente generalista y puede rendir mal en tareas de razonamiento complejo, matematicas o codigo.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
+- Riesgo de alucinacion: como todo modelo generativo, puede producir continuaciones plausibles pero incorrectas, especialmente en dominios factuales.
+- Sesgos: no se documenta ninguna evaluacion de sesgos; al derivar de un modelo base no identificado con detalle, se heredan los sesgos de sus datos de entrenamiento.
+- Contexto: se desconoce la longitud de contexto soportada, lo que limita su uso en tareas que requieran ventanas largas.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base (chartreuse-verte/orb-human-typeahead-1b-v2.3) antes de desplegarlo en produccion.
+- Cuantizaciones de baja calidad: las variantes Q2_K y Q3_K_M pueden degradar notablemente la calidad; el autor recomienda Q4_K_S o Q4_K_M para uso general.
+- Ausencia de benchmarks: no hay datos publicados que permitan estimar su calidad frente a alternativas, por lo que cualquier decision de adopcion deberia basarse en evaluacion propia.
 
 ## Enlaces
 
-- Repositorio GGUF (esta ficha): https://huggingface.co/mradermacher/orb-human-typeahead-1b-v2.3-GGUF
-- Modelo original: https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3
+- Repositorio GGUF: https://huggingface.co/mradermacher/orb-human-typeahead-1b-v2.3-GGUF
+- Modelo base: https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/orb-human-typeahead-1b-v2.3-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#orb-human-typeahead-1b-v2.3-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

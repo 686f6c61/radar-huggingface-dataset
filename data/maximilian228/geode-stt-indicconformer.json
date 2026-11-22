@@ -1,0 +1,92 @@
+{
+  "schema": 2,
+  "id": "Maximilian228/Geode-STT-indicconformer",
+  "slug": "maximilian228-geode-stt-indicconformer",
+  "author": "Maximilian228",
+  "url": "https://huggingface.co/Maximilian228/Geode-STT-indicconformer",
+  "created_at": "2026-11-21T23:01:42.000Z",
+  "updated_at": "2026-11-21T23:02:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "gu",
+    "kn",
+    "pa",
+    "ur"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "geode",
+    "int8",
+    "automatic-speech-recognition",
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "mr",
+    "gu",
+    "kn",
+    "pa",
+    "ur",
+    "base_model:ai4bharat/indic-conformer-600m-multilingual",
+    "base_model:quantized:ai4bharat/indic-conformer-600m-multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 673978390,
+  "storage_human": "674 MB",
+  "context_length": null,
+  "base_model": "ai4bharat/indic-conformer-600m-multilingual",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maximilian228/Geode-Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Maximilian228/Geode-Qwen3.6-35B-A3B",
+      "snippet": "The experts are read from the phone's storage as they are needed, so the whole model does not have to fit in RAM. The packs are Geode's own format (geode.json describes the files; the experts in a GPU-friendly tiled layout)."
+    },
+    {
+      "title": "Maximilian228/Geode-Supertonic-3 · Hugging Face",
+      "url": "https://huggingface.co/Maximilian228/Geode-Supertonic-3",
+      "snippet": "Text-to-Speech model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Maximilian228/Geode-LFM3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Maximilian228/Geode-LFM3-1.7B",
+      "snippet": "A model pack for Geode, an Android app that runs language models entirely on the phone: no cloud, no account. LFM3-1.7B is Liquid AI's small text model: a hybrid of short convolutions and attention (13 convolution layers, 11 attention layers), ..."
+    },
+    {
+      "title": "IndicConformer - a ai4bharat Collection",
+      "url": "https://huggingface.co/collections/ai4bharat/indicconformer",
+      "snippet": "A collection of ASR models for 22 scheduled languages of India"
+    },
+    {
+      "title": "ai4bharat/indicconformer_stt_ta_hybrid_ctc_rnnt_large · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/indicconformer_stt_ta_hybrid_ctc_rnnt_large",
+      "snippet": "IndicConformer is a Hybrid CTC-RNNT conformer ASR(Automatic Speech Recognition) model."
+    }
+  ]
+}

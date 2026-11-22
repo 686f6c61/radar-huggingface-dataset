@@ -2,51 +2,48 @@
 
 ## Resumen
 
-SatireLM-4B es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B-Base, desarrollado por el usuario benni-ben y publicado en Hugging Face bajo licencia Apache 2.0. Su propósito declarado es generar respuestas satíricas, absurdas o deliberadamente incorrectas manteniendo el formato característico de un modelo de frontera (estructura de respuesta, listas, tablas, tono seguro). No es un modelo de propósito general: está pensado como entretenimiento y escritura creativa.
+SatireLM-4B es un ajuste fino (fine-tune) satírico del modelo base Qwen3.5-4B-Base, desarrollado por el usuario benni-ben. Su propósito es generar respuestas absurdas, cómicas o deliberadamente incorrectas manteniendo el formato y la estructura de un modelo de lenguaje de frontera. No está pensado para tareas de producción reales, sino para entretenimiento, escritura creativa y experimentación con estilos de generación poco convencionales.
 
-El modelo parte de una arquitectura transformer causal de 4.326.350.848 parámetros (aproximadamente 4,3 mil millones), heredada de Qwen3.5-4B-Base, y fue entrenado con Unsloth sobre una GPU AMD MI300 durante unas 23 horas. El ajuste se realizó sobre unos 200.000 ejemplos de instrucciones con temáticas que van desde cocina hasta programación, lo que le permite mantener la competencia conversacional del modelo base mientras sesga el estilo hacia la sátira.
+El modelo conserva la arquitectura del Qwen3.5-4B-Base (transformer causal con 32 capas, tamaño oculto de 2560 y vocabulario de 248.320 tokens) y fue entrenado con Unsloth sobre una GPU AMD MI300 durante aproximadamente 23 horas. El resultado es un modelo de 4.326.350.848 parámetros (4,3 mil millones) que no incorpora modo de razonamiento (thinking), ya que el conjunto de datos de instrucciones no incluye ejemplos de ese tipo.
 
-Es relevante ahora porque ejemplifica una tendencia creciente: fine-tunes pequeños y especializados que reutilizan modelos base abiertos para nichos concretos (humor, role-play, generación creativa) y que pueden desplegarse en hardware de consumo. Su tamaño de 4B y la disponibilidad de pesos en formato GGUF lo hacen accesible para experimentación local, aunque su utilidad en producción es muy limitada por su naturaleza intencionadamente poco fiable.
+Su relevancia actual es limitada pero interesante para quienes investigan el comportamiento de modelos ajustados con datos adversariales o humorísticos, así como para creadores de contenido que necesiten un generador de texto satírico con formato de asistente. La licencia Apache 2.0 facilita su uso y modificación, aunque el autor restringe explícitamente su uso a fines de entretenimiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (derivada de Qwen3.5-4B-Base) |
-| Parámetros totales | 4.326.350.848 (~4,3B) |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer causal (Qwen3_5ForConditionalGeneration) |
+| Parametros totales | 4.326.350.848 (4,3 mil millones) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | GGUF (disponible en el repo); otras cuantizaciones no disponibles |
+| Tipos de cuantizacion | GGUF (variantes cuantizadas en el repositorio); safetensors en FP16 en repositorio separado |
 | Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors y GGUF |
+| Formato de pesos | GGUF (repo principal); safetensors (repo Sarire-FP16) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3.5-4B-Base: un transformer causal de aproximadamente 4,3 mil millones de parámetros. No se documentan innovaciones arquitectónicas propias del fine-tune; el autor solo indica que se trata de un modelo de lenguaje causal. El ajuste se realizó con el framework Unsloth, optimizado para fine-tuning eficiente en memoria, sobre una GPU AMD MI300 y con una duración aproximada de 23 horas.
+SatireLM-4B es un modelo de lenguaje causal basado en la arquitectura Qwen3_5ForConditionalGeneration, con 32 capas, tamaño oculto de 2560, tamaño intermedio de 9216 y un vocabulario de 248.320 tokens. No se trata de un modelo de mezcla de expertos (MoE), sino de un transformer denso convencional. El ajuste fino se realizó con el framework Unsloth sobre una GPU AMD MI300, con una duración de entrenamiento de aproximadamente 23 horas.
 
-El dataset de entrenamiento consta de unos 200.000 ejemplos de instrucciones (instruct) con temáticas diversas, desde cocina hasta programación. No se especifica la composición exacta del dataset, el número de tokens totales, ni si se aplicaron técnicas de RLHF o DPO. El objetivo del entrenamiento no es mejorar capacidades sino reorientar el estilo de respuesta hacia la sátira y el absurdo, manteniendo el formato de un modelo de frontera.
+El conjunto de datos de entrenamiento consistió en cerca de 200.000 ejemplos de instrucciones (instruct examples) que abarcan temas diversos, desde cocina hasta programación. Estos pares de instrucción-respuesta satíricos están disponibles en el repositorio de datos SatireInstruct. El modelo no incluye ejemplos de instrucciones con modo de pensamiento (thinking), por lo que no genera cadenas de razonamiento explícitas. No se menciona el uso de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con formato estructurado (listas, tablas, secciones).
-- Generación de respuestas satíricas, absurdas o deliberadamente incorrectas con tono seguro.
-- Escritura creativa y humorística.
-- Instrucción general heredada del modelo base (temáticas de cocina, programación, etc.).
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: solo inglés declarado.
-- Capacidades especiales (thinking mode, visión, audio): no disponibles. Aunque los tags incluyen `image-text-to-text`, la model card no documenta capacidades de visión y el pipeline declarado es `text-generation`.
+- Generación de texto satírico, absurdo y cómico con formato de asistente conversacional.
+- Respuestas con estructura y formato propios de un modelo de frontera (listas, encabezados, etc.), pero con contenido deliberadamente incorrecto o nonsense.
+- Conversación multi-turno en inglés.
+- Instrucciones de seguimiento (instruction-following) en el contexto de la sátira.
+- No dispone de modo de razonamiento (thinking) ni de capacidades de visión, audio o tool calling documentadas.
+- Capacidad multilingüe limitada al inglés según la model card.
 
 ## Casos de uso
 
-- Generación de contenido satírico para blogs o redes: el modelo produce textos con estructura de modelo de frontera pero contenido absurdo, útil para parodiar respuestas de IA.
-- Escritura creativa humorística: generación de relatos, sketches o diálogos cómicos en inglés con tono seguro y formato limpio.
-- Prototipado de aplicaciones de entretenimiento: chatbots de humor o juegos conversacionales donde la incorrección deliberada es parte de la experiencia.
-- Pruebas de robustez de pipelines: usar sus salidas absurdas como casos de prueba para validadores de formato, filtros de contenido o sistemas de evaluación.
-- Investigación sobre estilos de respuesta: estudiar cómo un fine-tune pequeño puede imitar el formato de modelos grandes sin conservar su fiabilidad.
-- Demostraciones educativas sobre alucinación: ejemplificar de forma controlada cómo un modelo puede sonar convincente sin ser veraz.
-- Generación de material para role-play o narrativa interactiva en inglés, donde el absurdo es un rasgo deseado.
+- Generación de contenido humorístico para blogs o redes sociales: el modelo produce respuestas satíricas con formato de asistente, adecuado para crear parodias de interacciones con IA.
+- Creación de guiones o diálogos cómicos: se puede usar para generar conversaciones absurdas entre personajes, aprovechando su tendencia a respuestas incoherentes pero estructuradas.
+- Pruebas de robustez en sistemas de detección de texto generado: sirve como generador de texto adversarial para evaluar clasificadores de contenido.
+- Experimentación en investigación sobre ajuste fino con datos satíricos: permite estudiar cómo un modelo base reacciona a un corpus de instrucciones deliberadamente incorrectas.
+- Educación y divulgación sobre limitaciones de los LLM: se puede emplear para demostrar que los modelos pueden generar respuestas con apariencia plausible pero sin fundamento.
+- Entretenimiento en chatbots de demostración: integrado en una interfaz lúdica, ofrece respuestas cómicas sin necesidad de un modelo de mayor tamaño.
 
 ## Benchmarks y rendimiento
 
@@ -54,37 +51,36 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 8,6 GB solo para pesos, más overhead de activaciones y caché KV (típicamente 10-12 GB en total).
-- VRAM estimada en cuantización de 8 bits: aproximadamente 4,3 GB para pesos.
-- VRAM estimada en cuantización de 4 bits (GGUF Q4): aproximadamente 2,5-3 GB para pesos.
-- GPU recomendadas: AMD MI300 (usada en entrenamiento), NVIDIA A100, H100 para inferencia en precisión completa; RTX 4090, RTX 3090 para FP16.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más en cuantizaciones de 4-8 bits (RTX 3060 Ti, RTX 4060, RTX 3070, etc.).
-- Opciones de despliegue: transformers (librería declarada), llama.cpp y Ollama para los pesos GGUF; vLLM y TGI no están documentados para este modelo.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: al tratarse de un modelo de 4,3 mil millones de parámetros, en FP16 requeriría aproximadamente 8,6 GB de VRAM solo para los pesos, más overhead. En cuantización GGUF de 4 bits, podría caber en GPUs con 6-8 GB de VRAM.
+- GPU recomendadas: AMD MI300 (usada en entrenamiento), NVIDIA A100, H100, RTX 4090, RTX 3090. Para cuantizaciones ligeras, GPUs consumer como RTX 3060 (12 GB) o RTX 4060 Ti (16 GB) podrían ser suficientes.
+- Cabe en GPU consumer: sí, especialmente en formatos GGUF cuantizados (Q4_K_M, Q5_K_M, etc.).
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (según la model card), y transformers con los pesos safetensors del repositorio Sarire-FP16.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SatireLM-4B | ~4,3B | No disponible | Apache 2.0 | Sátira y humor | Hugging Face (safetensors, GGUF) |
-| Qwen3.5-4B-Base | ~4,3B | No disponible | Apache 2.0 | Propósito general | Hugging Face |
-| Fine-tunes de humor sobre modelos 3B-7B | Variable | Variable | Variable | Humor y role-play | Hugging Face (comunidad) |
+| SatireLM-4B | 4,3 mil millones | No disponible | Apache 2.0 | Hugging Face (GGUF y safetensors) | Fine-tune satírico de Qwen3.5-4B-Base |
+| Qwen3.5-4B-Base | 4,3 mil millones | No disponible | Apache 2.0 | Hugging Face | Modelo base original, sin ajuste satírico |
+| Modelos de 4B similares (p. ej., Llama 3.2 3B, Phi-3-mini) | 3-4 mil millones | 8k-128k (según modelo) | Licencias variables | Hugging Face | Alternativas generalistas, no satíricas |
 
-La comparación directa con alternativas concretas no está disponible en la información proporcionada. El competidor más directo es su propio modelo base, Qwen3.5-4B-Base, que ofrece capacidades generales sin el sesgo satírico.
+No se dispone de datos de rendimiento comparativo para SatireLM-4B.
 
 ## Limitaciones y advertencias
 
-- El modelo está diseñado para generar respuestas absurdas o incorrectas de forma intencionada; no debe usarse como fuente de información.
-- Riesgo elevado de alucinación por diseño: el autor advierte explícitamente que no se trate ninguna generación como realidad.
-- Solo soporta inglés; no se documentan capacidades en castellano ni en otros idiomas.
-- No se documenta la longitud de contexto, lo que impide planificar su uso en tareas de contexto largo.
-- No hay información sobre sesgos conocidos ni sobre evaluación de seguridad.
-- Licencia Apache 2.0: permite uso comercial, pero el propio propósito del modelo (salidas falsas y satíricas) desaconseja su uso en producción para atención al cliente, información factual o cualquier tarea donde la veracidad sea crítica.
-- El repo ocupa 41,7 GB, lo que incluye múltiples formatos de pesos; conviene descargar solo los archivos necesarios.
-- No se documentan capacidades de tool calling ni de agentes, por lo que no es adecuado para pipelines automatizados que dependan de llamadas a funciones.
+- El modelo está diseñado para generar respuestas falsas o absurdas; no debe usarse para obtener información veraz.
+- Alto riesgo de alucinación y contenido sin sentido, incluso en temas serios.
+- Entrenado únicamente en inglés; no se garantiza un rendimiento aceptable en otros idiomas.
+- No incluye modo de razonamiento ni capacidades de tool calling.
+- La licencia Apache 2.0 permite uso comercial, pero el autor indica explícitamente que el modelo es solo para entretenimiento y sátira; el uso en producción para fines serios no está recomendado.
+- No se han publicado evaluaciones de sesgos; se desconoce su comportamiento en dominios sensibles.
+- El repositorio principal contiene únicamente pesos GGUF; los pesos safetensors están en un repositorio separado (Sarire-FP16) con posible error tipográfico en el nombre.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/benni-ben/SatireLM-4B
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
-- Framework de entrenamiento Unsloth: https://github.com/unslothai/unsloth
+- [Hugging Face: benni-ben/SatireLM-4B](https://huggingface.co/benni-ben/SatireLM-4B)
+- [Repositorio de pesos safetensors (FP16)](https://huggingface.co/benni-ben/Sarire-FP16/tree/main)
+- [Dataset SatireInstruct](https://huggingface.co/datasets/benni-ben/SatireInstruct)
+- [Vista previa de conversaciones](https://huggingface.co/benni-ben/SatireLM-4B/blob/main/conversation_preview.md)
+- [Modelo base Qwen3.5-4B-Base](https://huggingface.co/Qwen/Qwen3.5-4B-Base)

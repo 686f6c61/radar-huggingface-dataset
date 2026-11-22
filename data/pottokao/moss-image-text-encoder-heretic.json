@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "pottokao (pottokao) - Hugging Face",
-      "url": "https://huggingface.co/pottokao",
-      "snippet": "photography pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4"
-    },
-    {
-      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
-      "url": "https://github.com/OpenMOSS/MOSS-Image",
-      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
-    },
-    {
-      "title": "Fine-tuned Models for pottokao/Qwen-Image-2.1-Text-Encoder-Heretic ...",
-      "url": "https://huggingface.co/models?other=base_model:finetune:pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
-      "snippet": "Explore machine learning models."
-    },
-    {
-      "title": "[2610.23374] MOSS-Image Technical Report - arXiv.org",
-      "url": "https://arxiv.org/abs/2610.23374",
-      "snippet": "On RLA, MOSS-Image ranks second in the end-to-end system comparison, while its backbone ranks first among generators evaluated with shared enhanced prompts. We will release the model, training recipe, and evaluation framework to support further research and promote the text-to-image community."
-    },
-    {
-      "title": "MOSS-Image/comfyui/moss-image/text_encoder.py at main - GitHub",
-      "url": "https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/moss-image/text_encoder.py",
-      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
-    }
-  ]
+  "sources": []
 }

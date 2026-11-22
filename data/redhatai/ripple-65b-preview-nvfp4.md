@@ -2,93 +2,91 @@
 
 ## Resumen
 
-Ripple-65B-Preview-NVFP4 es una versión cuantizada a NVFP4 del modelo Ripple-65B-Preview, desarrollado originalmente por ricursiveAI y cuantizado por RedHatAI. Se trata de un transformer denso de aproximadamente 65.000 millones de parámetros nominales (36.890 millones reales según los pesos en safetensors del checkpoint cuantizado) preentrenado sobre 12 billones de tokens y con soporte declarado de hasta 1 millón de tokens de contexto. El modelo base está orientado a razonamiento y codificación agéntica, y destaca por su rendimiento en tareas de terminal y agentes de código.
+Ripple-65B-Preview-NVFP4 es una versión cuantizada del modelo de lenguaje ricursiveAI/Ripple-65B-Preview, publicada por RedHatAI el 6 de noviembre de 2026. Se trata de un checkpoint de inferencia optimizado que aplica cuantización de precisión mixta sobre el modelo base, combinando FP8 (W8A8) en las proyecciones de atención y NVFP4 (W4A4) en las proyecciones del MLP. El resultado es un modelo que reduce el espacio en disco y los requisitos de VRAM en aproximadamente un 66% respecto al modelo original en BF16.
 
-La contribución de esta variante es puramente de eficiencia: aplica cuantización de pesos y activaciones a FP4 (formato NVFP4 con escalado por bloques de 16 elementos y factores de escala en FP8), reduciendo el requisito de memoria y el tamaño en disco en aproximadamente un 75% respecto al checkpoint en BF16. El objetivo es desplegar el modelo en hardware Blackwell (B200) con vLLM manteniendo una recuperación de precisión alta respecto al original.
+La arquitectura del modelo base es RicursiveForCausalLM, un transformer con 42.764.805.680 parámetros reales según los tensores safetensors (a pesar del "65B" en el nombre). El checkpoint está pensado para servirse con vLLM y utiliza el formato compressed-tensors, con soporte explícito de parsers de razonamiento y de tool calling. Su licencia es Apache 2.0, lo que facilita su uso comercial.
 
-Es relevante ahora porque permite servir un modelo de razonamiento de gran tamaño en una sola GPU B200 con tensor-parallel-size 1, algo inviable en BF16 con esa misma configuración, y porque el ecosistema vLLM ya soporta nativamente el formato compressed-tensors con el que se exporta. La licencia es Apache 2.0, lo que facilita su uso comercial.
+La relevancia de esta ficha radica en que demuestra una estrategia de cuantización conservadora pero efectiva: mantiene la pila de atención en FP8 (por su sensibilidad a la precisión, incluyendo la compuerta sigmoide) mientras comprime el MLP a 4 bits, logrando una recuperación del 98,36% del rendimiento del checkpoint NVFP4 original en Terminal-Bench 2.1. Es un ejemplo práctico de cómo reducir huella de memoria sin sacrificar calidad de forma significativa en tareas de código agéntico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | RicursiveForCausalLM (transformer denso) |
-| Parametros totales | 36.890.569.040 (pesos del checkpoint cuantizado); 65B nominales en el modelo base |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | hasta 1M tokens segun el modelo base; evaluado con `--max-model-len 65536` |
-| Tipos de cuantizacion | NVFP4 (pesos y activaciones FP4, escalado por bloque de 16 elementos, escalas FP8), GPTQ con ponderacion por importancia de activaciones |
+| Arquitectura | RicursiveForCausalLM (transformer, `custom_code`) |
+| Parametros totales | 42.764.805.680 (según safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 131.072 tokens (usado en la evaluación; el modelo base se evaluó con esa ventana) |
+| Tipos de cuantizacion | Mixta: FP8 dinámico (W8A8) en atención, NVFP4 (W4A4) en MLP; pesos y activaciones |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors en formato compressed-tensors (compatible con vLLM) |
+| Formato de pesos | safetensors en formato compressed-tensors; requiere `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 65B parámetros preentrenado sobre 12 billones de tokens, con extensión de contexto hasta 1M tokens. El checkpoint cuantizado conserva la arquitectura `RicursiveForCausalLM` y requiere `trust_remote_code` para cargarse, ya que utiliza código personalizado. Solo se cuantizan los operadores lineales dentro de los bloques del transformer; la capa `lm_head` se mantiene sin cuantizar.
+El modelo base es un transformer autorregresivo de la familia RicursiveForCausalLM, con código personalizado (`custom_code`) que obliga a cargarlo con `trust_remote_code=True`. La model card no detalla el número de capas, dimensión oculta, número de cabezas ni la composición del dataset de preentrenamiento, por lo que esos datos no están disponibles. Tampoco se documenta si hubo fases de RLHF, DPO u otro ajuste por preferencias.
 
-El proceso de cuantización se realizó con LLM Compressor aplicando un `GPTQModifier` con esquema `NVFP4`, observador de pesos `nvfp4_expanded_imatrix`, `actorder="static"`, `dampening_frac=0.01` y `block_size=128`, usando 512 muestras de calibración del dataset `perfectblend` con longitud máxima de secuencia de 2048. No se dispone de información sobre la composición del dataset de preentrenamiento, el uso de RLHF/DPO ni innovaciones de atención específicas más allá del soporte de contexto largo declarado en el modelo base.
+La innovación técnica de este checkpoint es la receta de cuantización aplicada mediante LLM Compressor. Se usa un `QuantizationModifier` con esquema `FP8_DYNAMIC` sobre todas las proyecciones `self_attn.*` (incluida la compuerta sigmoide) y un `GPTQModifier` con esquema `NVFP4` sobre las proyecciones `mlp.*`, con `weight_observer="nvfp4_expanded_imatrix"`, `actorder="static"`, `dampening_frac=0.01` y `block_size=128`. La calibración se realizó con 512 muestras del dataset `perfectblend`, con longitud máxima de secuencia de 2048 tokens. NVFP4 almacena pesos y activaciones en coma flotante de 4 bits con escalado por bloques de 16 elementos y factores de escala FP8. El `lm_head` queda excluido de la cuantización.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de cadena de pensamiento (CoT), con parser de razonamiento dedicado (`--reasoning-parser ripple`) en vLLM.
-- Codificación agéntica: el modelo base reporta 80.52 en TerminalBench 2.1 según la información de búsqueda.
-- Soporte de tool calling / function calling, con parser específico (`--tool-call-parser ripple`) y `--enable-auto-tool-choice` en vLLM.
-- Razonamiento multi-paso y uso en entornos de agentes.
-- Contexto largo de hasta 1M tokens (modelo base), útil para repositorios de código y documentos extensos.
-- Capacidades multilingües: no disponible.
-- No se declaran capacidades de visión ni audio.
+- Generación de texto y razonamiento: el modelo expone un parser de razonamiento específico (`--reasoning-parser ripple`), lo que indica soporte de modo de pensamiento o cadena de razonamiento explícita.
+- Tool calling / function calling: soportado mediante `--enable-auto-tool-choice` y `--tool-call-parser ripple` en vLLM.
+- Uso agéntico multi-paso: evaluado con un agente ReAct genérico sobre Terminal-Bench 2.1, lo que confirma capacidad para tareas de terminal con múltiples pasos.
+- Codificación agéntica: resuelve tareas de línea de comandos, edición de ficheros y depuración dentro de un entorno de terminal.
+- Contexto largo: ventana de hasta 131.072 tokens en la configuración de evaluación.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Visión, audio u otras modalidades: no disponibles; la model card indica únicamente entrada y salida de texto.
 
 ## Casos de uso
 
-- Agentes de codificación en terminal: el modelo base obtiene 80.52 en TerminalBench 2.1, por lo que esta variante cuantizada es adecuada para agentes que ejecutan comandos, interpretan salidas y corrigen errores en entornos de shell, con el ahorro de memoria del FP4.
-- Asistentes de revisión de código en repositorios grandes: gracias al contexto de hasta 1M tokens del modelo base, puede ingerir múltiples ficheros y el historial de cambios en una sola ventana.
-- Automatización de pipelines CI/CD con tool calling: integrable vía API compatible con OpenAI de vLLM para invocar herramientas de build, test y despliegue.
-- Razonamiento científico y QA de alto nivel: el modelo mantiene 79.12 en GPQA Diamond tras la cuantización, adecuado para asistentes de investigación que requieren respuestas con CoT verificable.
-- Despliegue en una sola GPU B200: con `--tensor-parallel-size 1` y ~37.9 GB de repo, permite servir un modelo de razonamiento de gran tamaño en hardware Blackwell sin clúster multi-GPU.
-- Sistemas de agentes multi-paso con contexto conversacional largo: la ventana extendida y el soporte de tool calling permiten mantener estado de tareas prolongadas.
-- Evaluación y benchmarking interno: útil como checkpoint de referencia para comparar calidad FP4 frente a BF16 con el protocolo Inspect.
+- Agentes de codificación en terminal: el modelo puede integrarse en un harness tipo ReAct para resolver tareas de ingeniería de software en entornos reales (edición de ficheros, ejecución de comandos, corrección de errores), tal como demuestra su evaluación en Terminal-Bench 2.1 con 67,42 puntos de pass@1.
+- Automatización de CI/CD con tool calling: gracias a `--enable-auto-tool-choice` y al parser `ripple`, puede invocarse como agente que llama a herramientas externas (linters, compiladores, APIs de despliegue) dentro de pipelines.
+- Asistente de razonamiento multi-paso: el parser de razonamiento permite separar la cadena de pensamiento de la respuesta final, útil en aplicaciones que necesitan auditar el proceso de decisión del modelo.
+- Servicio de inferencia de bajo coste en una sola GPU: con ~44 GB de pesos, cabe en una NVIDIA B200 (o H100 de 80 GB) con tensor-parallel-size 1, lo que simplifica el despliegue frente al checkpoint BF16 de ~57 GB.
+- Procesamiento de documentos largos y repositorios: la ventana de 131.072 tokens permite analizar codebases completos o contratos extensos en una sola pasada.
+- Backend de agentes para tareas de DevOps: puede gestionar sesiones de terminal con límites de tiempo amplios (la evaluación usó 7.200 s por muestra), adecuado para tareas de diagnóstico y reparación de infraestructura.
 
 ## Benchmarks y rendimiento
 
-| Categoria | Benchmark | Ripple-65B-Preview (BF16) | Ripple-65B-Preview-NVFP4 | Recuperacion |
+| Categoría | Benchmark | ricursiveAI/Ripple-65B-Preview-NVFP4 | RedHatAI/Ripple-65B-Preview-NVFP4 | Recuperación |
 |---|---|---|---|---|
-| Razonamiento | GPQA Diamond (0-shot, CoT, avg@3) | 81.82 | 79.12 | 96.70% |
+| Codificación agéntica | Terminal-Bench 2.1 (89 tareas, pass@1) | 68,54 | 67,42 | 98,36% |
 
-Error estándar: ±2.48 (BF16) y ±2.41 (NVFP4). Las puntuaciones siguen el protocolo `inspect_evals/gpqa_diamond` y no son directamente comparables con el resultado de GPQA Diamond reportado en la model card del modelo base. No se han publicado otros resultados de benchmarks en la información disponible.
+El error estándar es de ±4,92 para el checkpoint original y ±4,97 para este checkpoint NVFP4+FP8. La diferencia de 1,1 puntos está dentro del ruido de una única ejecución de 89 tareas en pass@1. La evaluación se realizó con Inspect (`inspect_harbor/terminal_bench_2_1`), agente ReAct genérico (no el harness oficial Terminus 2), límite de 7.200 s por muestra y contexto de 131.072 tokens, sobre 1× NVIDIA B200 por modelo. Los errores de muestra y los timeouts se contabilizan como fallos. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repo ocupa 37.9 GB en FP4, por lo que la inferencia requiere aproximadamente 38-45 GB de VRAM según longitud de contexto y overhead de KV cache.
-- GPU recomendadas: NVIDIA B200 (usada en la evaluación oficial); cualquier GPU Blackwell con soporte NVFP4. No se garantiza funcionamiento en arquitecturas anteriores sin soporte nativo de FP4.
-- GPU de consumo: no disponible; el tamaño y el formato NVFP4 hacen improbable su ejecución en GPUs consumer convencionales.
-- Despliegue: vLLM es la vía soportada oficialmente (`vllm serve`), con `--tensor-parallel-size 1`, `--reasoning-parser ripple`, `--enable-auto-tool-choice` y `--tool-call-parser ripple`.
+- VRAM estimada para inferencia: aproximadamente 44 GB solo para pesos; con caché KV para 131.072 tokens y overhead de activaciones, se recomienda al menos 60-70 GB de VRAM.
+- GPU recomendadas: NVIDIA B200 (usada en la evaluación), NVIDIA H100 de 80 GB, NVIDIA H200. El checkpoint original NVFP4 (~57 GB) también cabe en estas GPU, pero con menos margen.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 5090 (32 GB) sin cuantización adicional o descarga a CPU; no se documentan variantes GGUF.
+- Opciones de despliegue: vLLM (soporte nativo de compressed-tensors), con `--tensor-parallel-size 1`, `--reasoning-parser ripple`, `--enable-auto-tool-choice` y `--tool-call-parser ripple`. No se mencionan llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
-|---|---|---|---|---|---|
-| RedHatAI/Ripple-65B-Preview-NVFP4 | 36.89B reales (65B nominales) | hasta 1M (base) | NVFP4 | Apache 2.0 | Esta ficha; GPQA Diamond 79.12 |
-| ricursiveAI/Ripple-65B-Preview | 65B | hasta 1M | BF16 | no disponible | Modelo base; GPQA Diamond 81.82 |
-| ricursiveAI/Ripple-65B-Preview-NVFP4 | 65B nominales | hasta 1M | NVFP4 | no disponible | Variante NVFP4 del propio autor del modelo base |
+| Modelo | Parámetros | Contexto | Terminal-Bench 2.1 | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| RedHatAI/Ripple-65B-Preview-NVFP4 | 42,76 B | 131.072 | 67,42 | FP8 + NVFP4 | Apache 2.0 | Hugging Face |
+| ricursiveAI/Ripple-65B-Preview-NVFP4 | no disponible | 131.072 | 68,54 | NVFP4 (atención en BF16) | Apache 2.0 | Hugging Face |
+| ricursiveAI/Ripple-65B-Preview (BF16) | no disponible | no disponible | no disponible | BF16 | Apache 2.0 | Hugging Face |
 
-No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
+La comparativa se limita a las variantes del mismo modelo base, ya que la información proporcionada no incluye datos de modelos competidores de tamaño o categoría similares. El checkpoint de RedHatAI es un ~23% más pequeño en disco que el NVFP4 de ricursiveAI (~44 GB frente a ~57 GB) y un ~66% menor que el BF16, con una pérdida de calidad dentro del ruido estadístico.
 
 ## Limitaciones y advertencias
 
-- La cuantización FP4 introduce una pérdida de precisión medible: 2.70 puntos en GPQA Diamond (recuperación del 96.70%) respecto al BF16.
-- El checkpoint requiere `trust_remote_code`, lo que implica ejecutar código personalizado del autor; conviene auditar antes de desplegar en producción.
-- Solo se han publicado resultados en GPQA Diamond; no hay evidencia de rendimiento en otras tareas (código, matemáticas, agentes) tras la cuantización.
-- Idiomas soportados no declarados; no se puede garantizar calidad multilingüe.
-- Riesgo de alucinación inherente a modelos de razonamiento de gran tamaño; no se documentan mitigaciones específicas.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- El formato NVFP4 depende de hardware Blackwell; no es portable a GPUs sin soporte nativo de FP4.
-- El modelo está marcado como "Preview"; puede no ser estable para producción a largo plazo.
-- Aunque la licencia es Apache 2.0, el modelo base tiene licencia no disponible en la información, lo que conviene verificar antes de uso comercial.
+- Sesgos conocidos: no documentados en la model card; el modelo base tampoco los detalla.
+- Riesgo de alucinación: no cuantificado; al ser un modelo orientado a tareas agénticas y código, el riesgo en generación libre de texto no está evaluado.
+- Limitaciones de contexto o idioma: la ventana de 131.072 tokens se ha validado en evaluación, pero no se documenta el rendimiento más allá de esa longitud ni la cobertura idiomática.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del autor; conviene auditar dicho código antes de desplegarlo en producción.
+- Caveat de cuantización: la atención en FP8 y el MLP en NVFP4 pueden degradar tareas sensibles a la precisión numérica no cubiertas por Terminal-Bench; la evaluación se limita a una única tarea agéntica.
+- Comparabilidad de benchmarks: los resultados no son directamente comparables con el leaderboard público de Terminus 2 ni con la puntuación autodeclarada del modelo base, según advierte la propia model card.
+- Dependencia de hardware: NVFP4 requiere GPU con soporte de FP4 (por ejemplo, Blackwell/B200); en arquitecturas anteriores el rendimiento puede degradarse o no ser compatible.
+- Idiomas: al no estar documentados, no se garantiza un rendimiento adecuado en castellano u otros idiomas distintos del inglés.
 
 ## Enlaces
 
-- Hugging Face (checkpoint cuantizado): https://huggingface.co/RedHatAI/Ripple-65B-Preview-NVFP4
-- Hugging Face (modelo base): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- Hugging Face (NVFP4 del autor del base): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Ripple-65B-Preview-NVFP4
+- Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Checkpoint NVFP4 original: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - LLM Compressor: https://github.com/vllm-project/llm-compressor
-- Inspect AI: https://github.com/UKGovernmentBEIS/inspect_ai
+- Inspect (evaluación): https://github.com/UKGovernmentBEIS/inspect_ai

@@ -2,109 +2,100 @@
 
 ## Resumen
 
-GHOST-2.7B (Generative Heuristic Orchestrator for Sovereign Thought) es un ajuste fino de parámetros completos sobre `microsoft/phi-2`, un transformer denso de 2.700 millones de parámetros. Lo publica ItsnotAilabs en Hugging Face, aunque la model card atribuye el desarrollo a MedinaMemorySystems, una discrepancia de autoría que conviene tener en cuenta antes de citarlo. El modelo está especializado en generación narrativa, simulación de entornos adversarios y construcción autónoma de narrativa, con una ventana de contexto de 2.048 tokens y licencia Apache 2.0.
+GHOST-2.7B (Generative Heuristic Orchestrator for Sovereign Thought) es un ajuste fino de parámetros completos del modelo Phi-2 de Microsoft, publicado por ItsnotAilabs bajo licencia Apache 2.0. Está especializado en generación narrativa, simulación de entornos adversariales y construcción autónoma de relatos con tono oscuro o filosófico. El modelo conserva la arquitectura transformer densa de Phi-2, con 32 capas, dimensión oculta de 2560 y 32 cabezas de atención.
 
-A diferencia de un ajuste LoRA, el autor indica que se reentrenaron todos los pesos para desplazar la distribución predictiva del modelo base hacia prosa creativa. Los datos de entrenamiento declarados son Sovereign Corpus (lore esotérico y fundamentos de marco), WritingPrompts (estructuras narrativas) y Adversarial Simulation Transcripts (diálogos de shadow-personas y escenarios límite). El resultado es un modelo de un solo idioma (inglés) orientado a texto creativo, no a conocimiento factual.
+El modelo se distribuye en formato safetensors y está pensado para integrarse como componente creativo dentro de marcos agénticos, sirviendo de contraparte generativa a modelos con control lógico más estricto. Su entrenamiento se apoya en tres conjuntos de datos propios: Sovereign Corpus, WritingPrompts y transcripciones de simulación adversarial. No incorpora visión, audio ni tool calling nativo; su foco es exclusivamente la generación de texto en inglés.
 
-Su relevancia práctica es acotada pero concreta: ocupa menos de 6 GB de VRAM en FP16, lo que permite ejecutarlo en GPU de consumo, y sirve como componente creativo dentro de arquitecturas agénticas en las que se combina con un modelo "cortex" lógico. No es un modelo de propósito general ni compite en benchmarks de razonamiento con alternativas de su tamaño.
+Es relevante ahora porque propone un caso de uso poco habitual: modelos pequeños y especializados en narrativa adversarial que pueden ejecutarse en hardware de consumo (a partir de 6 GB de VRAM en FP16) y funcionar como respaldo offline en sistemas multiagente. Su contexto de 2048 tokens limita el uso en tareas de contexto largo, pero lo hace viable para despliegues locales con presupuesto de memoria reducido.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (Phi-2), atencion paralela, Rotary Position Embeddings |
-| Parametros totales | 2.700 millones (2,7B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer denso (Phi-2), 32 capas, 32 cabezas de atención, hidden dim 2560, Rotary Position Embeddings |
+| Parámetros totales | 2.7B declarados por el autor; 153.355.345 según los pesos safetensors publicados |
+| Parámetros activos | No aplica (modelo denso) |
 | Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | FP16 (16-bit), INT8 (8-bit), GGUF Q4_K_M (segun model card) |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantización | FP16, INT8, GGUF Q4_K_M (según la model card) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch / safetensors para transformers; la model card menciona GGUF Q4_K_M, pero los tags del repositorio no confirman su publicacion |
-| Capas | 32 |
-| Cabezas de atencion | 32 |
-| Dimension oculta | 2.560 |
-| Modelo base | microsoft/phi-2 |
-| Tamano de vocabulario | No disponible |
-| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Formato de pesos | safetensors (repo de 4,8 GB); GGUF mencionado en la model card |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Phi-2 sin modificaciones estructurales: 32 capas, 32 cabezas de atención con formulación de atención paralela, dimensión oculta de 2.560 y embeddings posicionales rotatorios (RoPE). El modelo es denso, no emplea mezcla de expertos ni atención lineal, y mantiene la ventana de contexto original de 2.048 tokens del modelo base. El autor no documenta cambios en el tokenizador ni en la configuración de atención.
+GHOST-2.7B parte de `microsoft/phi-2` y aplica un ajuste fino de parámetros completos, no un adaptador LoRA, con el objetivo declarado de desplazar la distribución predictiva del modelo hacia prosa creativa. Mantiene la formulación de atención paralela de Phi-2, las 32 capas y la dimensión oculta de 2560, junto con embeddings posicionales rotatorios. No se documentan innovaciones arquitectónicas propias ni mecanismos de decodificación especulativa.
 
-El entrenamiento declarado es un ajuste fino de parámetros completos. La model card enumera tres conjuntos de datos: Sovereign Corpus, WritingPrompts y Adversarial Simulation Transcripts, orientados respectivamente a lore y fundamentos de marco, estructuras narrativas creativas y renderizado de escenarios límite con shadow-personas. No se especifica el número de tokens de entrenamiento, la composición porcentual del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. Tampoco se detalla la configuración de entrenamiento (LR, épocas, precisión, hardware). La única guía de inferencia publicada es usar temperatura 0,85 y `repetition_penalty` de 1,1 para obtener los resultados que el autor denomina "phi-spiral".
+Los datos de entrenamiento citados son tres conjuntos: Sovereign Corpus (lore esotérico y fundamentos de marco), WritingPrompts (estructuras narrativas creativas) y Adversarial Simulation Transcripts (diálogos de shadow-persona y escenarios límite). No se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO. Tampoco se detalla la configuración de hiperparámetros ni el cómputo empleado.
 
 ## Capacidades
 
-- Generacion de texto narrativo en ingles: prosa creativa, ficcion larga fragmentada y construccion de escenas, con especial enfasis en ambientes adversarios y monologos internos.
-- Simulacion de subcortex adversarial: emulacion de subsistemas o shadow-personas dentro de marcos agénticos, segun la terminologia de la propia model card.
-- Construccion autonoma de narrativa: el autor lo describe como modelo de "cognitive storytelling" capaz de encadenar bucles narrativos coherentes dentro de la ventana de contexto.
-- Generacion offline determinista: pensado como fallback de rutas narrativas cuando no hay conexion de red.
-- Adaptacion a formato de prompt simple: la model card indica el patron `Instruct:` / `Output:` sin plantilla de chat compleja.
-- Control de estilo por temperatura: sensible al ajuste de temperatura, con 0,85 como valor recomendado por el autor.
-- No se documenta soporte de tool calling, function calling, uso de agentes multi-paso, vision, audio ni modo de razonamiento explicito (thinking mode).
-- Capacidades multilingues: solo ingles declarado.
+- Generación de texto narrativo en inglés con énfasis en tono oscuro, monólogos internos y escenarios filosóficos complejos.
+- Simulación de subcórtex adversarial y shadow-personas dentro de marcos agénticos.
+- Construcción autónoma de tramas y bucles narrativos a partir de una instrucción de escenario o del inicio de un relato.
+- Generación determinista de rutas narrativas en operaciones desconectadas de red (fallback offline).
+- Traducción de restricciones abstractas en pasajes semánticos ricos, según el protocolo "Membrane Bridge" descrito por el autor.
+- No soporta tool calling ni function calling de forma nativa.
+- No soporta visión, audio ni modo de razonamiento explícito (thinking mode).
+- Capacidades multilingües limitadas al inglés.
 
 ## Casos de uso
 
-- Narrativa interactiva y ficcion ramificada: el modelo genera ramas narrativas coherentes a partir de un escenario inicial usando el patron `Instruct:` / `Output:`; su contexto de 2.048 tokens es suficiente para escenas individuales, aunque una historia completa requiere troceado.
-- Simulacion de adversarios en marcos agénticos: integrado como componente "subcortex" frente a un modelo logico ("cortex"), genera dialogos de oposicion y escenarios de conflicto para probar la robustez de un agente conversacional.
-- Videojuegos con generacion offline: al caber en menos de 2 GB en GGUF Q4_K_M, puede desplegarse en el propio dispositivo para producir rutas narrativas sin conexion, con latencia declarada de 10-15 ms por token.
-- Worldbuilding y material de escritura: util para producir prompts de escritura, descripciones de ambientacion y tratamientos de personajes a partir de una premisa breve, apoyandose en el corpus WritingPrompts declarado.
-- Red teaming conversacional: la model card menciona "Adversarial Simulation Transcripts" como parte del entrenamiento, lo que lo hace adecuado para generar turnos hostiles o manipuladores con los que evaluar filtros de seguridad de otros sistemas.
-- Prototipado en hardware de consumo: con unos 5,5 GB en FP16, permite experimentar con generacion narrativa en una GPU de 8 GB sin infraestructura en la nube.
-- Expresion de monologo interno en agentes: generar trazas de "voz interna" o deliberacion creativa que se registran junto a la decision final de un agente, separando la parte logica de la estilistica.
-- Asistencia a guion y expansion de tratamientos: a partir de un outline corto, expandir beats narrativos en pasajes de prosa, aplicando troceado y resumen externo por el limite de 2.048 tokens.
+- Simulación de personajes adversariales en videojuegos narrativos: el modelo puede generar diálogos de antagonistas y voces internas con coherencia de tono, ejecutándose en local con 6 GB de VRAM en FP16 o menos de 2 GB en Q4_K_M.
+- Generación de ficción interactiva: sirve como motor de continuación de relatos por turnos, con temperatura recomendada de 0.85 y penalización de repetición de 1.1 para evitar bucles.
+- Componente creativo en pipelines multiagente: actúa como módulo de prosa contrapuesto a un modelo con control lógico, aportando variación semántica en la fase de ideación.
+- Respaldo offline en sistemas de escritura asistida: al ser un modelo pequeño y con pesos descargables, puede operar sin conexión para generar borradores narrativos en entornos aislados.
+- Prototipado rápido de narrativa ramificada: con contexto de 2048 tokens permite generar escenas cortas y ramas de decisión que luego se encadenan mediante resumen externo.
+- Investigación en alineación y deriva adversarial: útil para estudiar cómo modelos pequeños responden a prompts de simulación de subcórtex y qué mecanismos de contención requieren.
+- Generación de lore y material de ambientación para juegos de rol: el ajuste sobre Sovereign Corpus favorece la producción de texto esotérico coherente con un marco ficticio definido.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de resultados declarada por el autor. El `model-index` del repositorio, en cambio, no contiene ningun resultado (`results: []`), por lo que estos numeros no estan respaldados por una evaluacion verificable ni se documenta la metodologia, el numero de shots ni la version exacta del checkpoint.
+Los resultados siguientes son los declarados por el autor en la model card. El model-index oficial no contiene resultados (`results: []`).
 
-| Benchmark | Resultado declarado | Nota del autor |
+| Benchmark | GHOST-2.7B | Nota |
 |---|---|---|
-| HellaSwag | 73,1 | Inferencia de sentido comun |
-| WinoGrande | 72,4 | Resolucion de pronombres y logica |
-| PIQA | 79,6 | Intuicion fisica |
-| NarrativeQA | 42,3 | Comprension lectora de relatos |
-| DarkLayer-Sim (propio) | 68,9% | Renderizado adversarial de subcortex (metrica interna, sin definicion publica) |
+| HellaSwag | 73,1 | Inferencia de sentido común |
+| WinoGrande | 72,4 | Resolución de pronombres y lógica |
+| PIQA | 79,6 | Intuición física |
+| NarrativeQA | 42,3 | Comprensión lectora de relatos |
+| DarkLayer-Sim (custom) | 68,9 % | Renderizado adversarial de subcórtex (métrica propia, no estándar) |
 
-No se han publicado en la informacion disponible resultados de otros benchmarks habituales (MMLU, GSM8K, HumanEval, MT-Bench) ni comparaciones directas con el modelo base bajo el mismo protocolo.
+No se dispone de comparaciones oficiales con otros modelos en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada (segun la tabla de la model card): FP16 ~5,5 GB; INT8 ~3,0 GB; GGUF Q4_K_M ~1,9 GB. A estas cifras hay que sumar la cache KV, modesta por la ventana de 2.048 tokens, y el overhead del runtime.
-- El propio repositorio anuncia compatibilidad con hardware de 6 GB de VRAM.
-- GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060 8 GB, RTX 3070/4070, RTX 4090 y equivalentes. En tarjetas de 6-8 GB conviene usar INT8 o Q4_K_M.
-- GPU de datacenter: A100, H100 o L40S si se necesita servir en lote con concurrencia alta; el modelo es pequeno y el cuello de botella sera la gestion de peticiones, no la memoria.
-- Latencia declarada por token: 20-30 ms en FP16, 15-22 ms en INT8 y 10-15 ms en GGUF Q4_K_M. La seccion de metricas de produccion de la model card aparece truncada, por lo que el throughput agregado no esta disponible.
-- Opciones de despliegue: `transformers` con `device_map="auto"` (unico metodo documentado en la model card, con `torch_dtype=torch.float16`); llama.cpp u Ollama si finalmente se publican pesos GGUF; vLLM y TGI dan soporte generico a la arquitectura Phi-2, aunque no hay confirmacion especifica para este checkpoint.
-- Hardware de CPU: viable en cuantizacion Q4_K_M por el tamano reducido, con latencias muy superiores a las indicadas para GPU.
+- VRAM estimada en FP16: aproximadamente 5,5 GB, según la model card.
+- VRAM estimada en INT8: aproximadamente 3,0 GB.
+- VRAM estimada en GGUF Q4_K_M: aproximadamente 1,9 GB.
+- GPU recomendadas: no se especifican modelos concretos; el autor indica que el modelo cabe en 6 GB de VRAM, por lo que es viable en RTX 3060, RTX 4060, RTX 2070 y superiores.
+- Cabe en GPU de consumo: sí, en tarjetas con al menos 6 GB de VRAM en FP16 y en configuraciones de 2-3 GB con cuantización.
+- Opciones de despliegue: transformers (referencia oficial), text-generation-inference (tag `text-generation-inference`), endpoints compatibles; GGUF sugiere compatibilidad con llama.cpp y derivados como Ollama, aunque no se confirma explícitamente.
+- Latencia estimada: 20-30 ms/token en FP16, 15-22 ms/token en INT8 y 10-15 ms/token en GGUF Q4_K_M, según el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Rendimiento declarado | Disponibilidad |
-|---|---|---|---|---|---|---|
-| GHOST-2.7B | 2,7B denso | 2.048 | Apache 2.0 | Ingles | HellaSwag 73,1; WinoGrande 72,4; PIQA 79,6 (declarados por el autor, sin metodologia) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
-| microsoft/phi-2 (modelo base) | 2,7B denso | 2.048 | MIT | Ingles | Resultados publicados por Microsoft en la model card original, no reproducidos aqui | Ampliamente distribuido y verificado |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| GHOST-2.7B | 2,7B declarados (153M en safetensors) | 2.048 | Apache 2.0 | Ajuste fino de Phi-2 para narrativa adversarial |
+| microsoft/phi-2 | 2,7B | 2.048 | MIT | Modelo base; capacidades generales de razonamiento y código, sin especialización narrativa |
+| Modelos narrativos pequeños de 1-3B | no disponible | no disponible | no disponible | No se dispone de comparaciones verificadas en la información proporcionada |
 
-No se dispone en la informacion proporcionada de datos verificables de otros modelos comparables de la misma categoria (por ejemplo, ajustes creativos de 3B). Cualquier comparacion con alternativas requeriria evaluar ambos modelos bajo el mismo protocolo, algo que el autor no ha publicado.
+No se han publicado comparativas oficiales con alternativas en la información disponible. La discrepancia entre los 2,7B declarados y los 153M de pesos safetensors debe verificarse antes de asumir el tamaño real del modelo.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto de solo 2.048 tokens: la propia model card advierte que generar narrativa larga exige troceado o protocolos externos de resumen de memoria.
-- Deriva adversarial: con temperatura alta en modo de simulacion de subcortex, el autor reconoce que la salida puede volverse excesivamente oscura o esoterica, y recomienda un modelo "cortex" que mantenga los limites de seguridad.
-- Alucinacion en consultas factuales: el modelo esta ajustado para ficcion, no como base de conocimiento autoritativo. No debe usarse para responder preguntas factuales sin verificacion externa.
-- Idioma unico: solo ingles declarado; no hay evidencia de calidad en castellano ni en otros idiomas.
-- Sin datos de sesgo: no se publica ninguna evaluacion de sesgos, toxicidad ni comportamiento en dominios sensibles.
-- Riesgo de contenido danino: por su orientacion a escenarios adversarios y shadow-personas, puede producir texto manipulado, hostil o perturbador. No se documenta ninguna fase de alineacion de seguridad posterior al ajuste fino.
-- Estado de validacion muy bajo: 0 descargas y 0 likes, `model-index` vacio y benchmarks sin metodologia. No hay evidencia independiente de que los resultados declarados se reproduzcan.
-- Discrepancia de autoria: el repositorio figura bajo ItsnotAilabs, mientras que la model card y la cita BibTeX atribuyen el modelo a MedinaMemorySystems y usan el identificador `MedinaMemorySystems/GHOST-2.7B`. Conviene verificar cual es el repositorio canonico antes de integrarlo.
-- Licencia Apache 2.0: permite uso comercial, pero al derivar de Phi-2 (licencia MIT) se debe conservar la atribucion correspondiente y revisar los terminos del modelo base.
-- Falta de informacion de entrenamiento: sin numero de tokens, composicion del dataset ni detalles de ajuste, es dificil estimar el grado de sobreajuste a los estilos de los corpus declarados.
-- Model card incompleta: la seccion de metricas de produccion aparece truncada, y no se especifican versiones de transformers, requisitos de tokenizer ni archivos concretos del repositorio.
+- Discrepancia de parámetros: el autor declara 2,7B, pero los safetensors publicados suman 153.355.345 parámetros. Conviene validar el tamaño real antes de planificar el despliegue.
+- Ventana de contexto de solo 2.048 tokens: la generación de narrativa larga requiere troceado o resumen externo.
+- Deriva adversarial: con temperatura alta en modo subcórtex puede producir salidas excesivamente oscuras o esotéricas; el autor recomienda un modelo "Cortex" que mantenga límites de seguridad.
+- Alucinación en consultas factuales: el modelo no es una base de conocimiento fiable y no debe usarse como fuente autoritativa.
+- Idioma: solo inglés; no se documenta soporte multilingüe.
+- Sin tool calling ni capacidades de agente nativas.
+- Licencia Apache 2.0 permite uso comercial, pero no se documentan evaluaciones de seguridad ni filtros de contenido.
+- No hay resultados en el model-index oficial; los benchmarks son declaraciones del autor sin verificación independiente.
+- El identificador del repo en Hugging Face (`ItsnotAilabs/GHOST-2.7B`) difiere del citado en la model card (`MedinaMemorySystems/GHOST-2.7B`), lo que puede causar confusión en descargas y referencias.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ItsnotAilabs/GHOST-2.7B
-- Repositorio referenciado en la model card y en la cita BibTeX: https://huggingface.co/MedinaMemorySystems/GHOST-2.7B
+- Hugging Face: https://huggingface.co/ItsnotAilabs/GHOST-2.7B
 - Modelo base: https://huggingface.co/microsoft/phi-2
-- La busqueda web realizada no devolvio papers, blogs, repositorios ni demos adicionales relevantes sobre este modelo; los resultados obtenidos eran paginas genericas de motor de busqueda.
+- Repositorio citado en la model card: https://huggingface.co/MedinaMemorySystems/GHOST-2.7B (referencia del autor, puede no resolver)

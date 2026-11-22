@@ -2,99 +2,93 @@
 
 ## Resumen
 
-Spectre-37B-v1-i1-GGUF es la version cuantizada con imatrix del modelo Spectre-37B-v1, desarrollado originalmente por TheDrummer y convertida a formato GGUF por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 36.500 millones de parametros (36.554.956.360 segun los pesos en safetensors del modelo base) orientado a uso conversacional y etiquetado para ingles. La model card del cuantizador lo describe explicitamente como un modelo de vision, con ficheros mmproj disponibles en el repositorio estatico asociado.
+Spectre-37B-v1-i1-GGUF es la distribucion en formato GGUF del modelo Spectre-37B-v1 desarrollado por TheDrummer, cuantizada por mradermacher mediante el metodo i1 (imatrix). El modelo base es un transformer denso de 36.554.956.360 parametros (aproximadamente 36,5 mil millones) orientado a generacion conversacional en ingles. Esta publicacion no es un modelo original sino un paquete de cuantizaciones optimizadas para inferencia local con llama.cpp y ecosistemas compatibles.
 
-El valor de esta publicacion no reside en el modelo en si, sino en el trabajo de cuantizacion: mradermacher genera un conjunto amplio de variantes GGUF con y sin imatrix (desde Q2_K hasta Q6_K, incluyendo IQ1_S, IQ2_XXS, IQ3_XXS, IQ4_XS, entre otras), lo que permite ejecutar un modelo de 37B en hardware de consumo mediante llama.cpp y derivados. La cuantizacion con imatrix (importance matrix) reduce la perdida de calidad respecto a cuantizaciones estaticas del mismo tamano, especialmente en los rangos bajos de bits por peso.
+La relevancia de esta ficha reside en que permite ejecutar un modelo de ~37B en hardware de consumo mediante cuantizaciones que van desde 8,5 GB (IQ1_S) hasta 30,1 GB (Q6_K). El uso de imatrix (matriz de importancia) en las cuantizaciones i1 mejora la calidad respecto a las cuantizaciones estaticas tradicionales, especialmente en rangos bajos como IQ2 e IQ3, donde la perdida de calidad suele ser mas acusada.
 
-La relevancia es practica: un modelo de este tamano con licencia no especificada y sin benchmarks publicados en la informacion disponible solo resulta evaluable mediante despliegue local. Esta ficha documenta lo que se puede afirmar con rigor a partir de los metadatos y advierte explicitamente de todo lo que no esta disponible.
+No se dispone de informacion publica sobre la arquitectura interna del modelo base, su longitud de contexto, datos de entrenamiento o resultados de benchmarks en la documentacion proporcionada. La model card del cuantizador se limita a listar los ficheros GGUF generados y enlazar al modelo original, por lo que muchos parametros tecnicos deben marcarse como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformers; no se detalla en la informacion proporcionada) |
-| Parametros totales | 36.554.956.360 (36,55B) |
+| Arquitectura | no disponible (modelo base: TheDrummer/Spectre-37B-v1) |
+| Parametros totales | 36.554.956.360 (~36,5B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small-IQ4_NL); incluye fichero imatrix |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
 | Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado); modelo base en safetensors |
-| Modelo base | TheDrummer/Spectre-37B-v1 |
-| Tamano del repositorio | 31,2 GB |
-| Modalidad | texto y vision (la model card indica que es un modelo de vision; los mmproj estan en el repo estatico) |
+| Formato de pesos | GGUF (mas fichero imatrix separado) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada: no se especifica si es un transformer denso, un MoE o una arquitectura hibrida, ni el numero de capas, dimensiones ocultas o mecanismo de atencion. El unico dato estructural fiable es el recuento de parametros (36,55B) y la etiqueta `transformers` como libreria, lo que implica compatibilidad con el ecosistema Hugging Face.
+No se dispone de informacion sobre la arquitectura interna del modelo base TheDrummer/Spectre-37B-v1 en la documentacion proporcionada. El recuento de parametros (36.554.956.360) corresponde a un modelo denso de aproximadamente 37B, pero no se especifica si emplea atencion estandar, atencion lineal, arquitectura hibrida u otra variante. Tampoco se detalla la composicion del dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron fases de RLHF, DPO o similar.
 
-Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones de codigo o multilingue), ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La unica innovacion documentada en esta publicacion es el proceso de cuantizacion: mradermacher emplea cuantizacion ponderada con imatrix (importance matrix), un metodo que estima la importancia de cada tensor a partir de activaciones de calibracion y ajusta el error de cuantizacion en consecuencia. El repositorio incluye el propio fichero imatrix (`Spectre-37B-v1.imatrix.gguf`, 0,1 GB) para que terceros puedan generar sus propias cuantizaciones. Existe ademas un repositorio hermano con cuantizaciones estaticas (sin imatrix) en `mradermacher/Spectre-37B-v1-GGUF`.
+Lo unico documentado tecnicamente es el proceso de cuantizacion: mradermacher ha generado cuantizaciones ponderadas con imatrix (etiquetadas como i1), que emplean una matriz de importancia calculada sobre el modelo para preservar mejor los pesos criticos durante la cuantizacion. Esto produce, segun el autor, una calidad superior a las cuantizaciones estaticas equivalentes en tamano, especialmente en los rangos IQ2 e IQ3. El fichero imatrix se distribuye por separado (0,1 GB) para quien quiera generar sus propias cuantizaciones. Existe tambien una version con cuantizaciones estaticas en mradermacher/Spectre-37B-v1-GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` y el pipeline asociado indican uso previsto para dialogo multi-turno.
-- Procesamiento de vision: la model card afirma que es un modelo de vision; los ficheros mmproj (proyector multimodal) se distribuyen en el repositorio estatico, no en este.
-- Inferencia local via GGUF: compatible con llama.cpp y cualquier runtime que consuma GGUF (Ollama, LM Studio, koboldcpp, entre otros).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun los metadatos (`language: en`).
-- Modo thinking o razonamiento explicito: no disponible en la informacion proporcionada.
-- Audio: no disponible.
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere integracion con infraestructura de inferencia tipo Hugging Face Endpoints.
+- Inferencia local mediante llama.cpp y derivados (Ollama, LM Studio, etc.) gracias al formato GGUF.
+- Capacidades de razonamiento, codigo, matematicas o tool calling: no documentadas en la informacion disponible.
+- Soporte de agentes o multi-step reasoning: no documentado.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
+- Capacidades especiales (thinking mode, vision, audio): no documentadas.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo con GPU de consumo: las variantes Q4_K_M e IQ4_XS permiten ejecutar un modelo de 37B en GPUs con 24 GB de VRAM mediante offload parcial o total, algo inviable con los pesos en safetensors (aproximadamente 73 GB en fp16). Adecuado para prototipado sin coste de API.
-- Asistentes conversacionales en ingles con requisitos de privacidad: al ejecutarse en local, los datos no salen del equipo; util en entornos con datos sensibles donde no se puede recurrir a servicios en la nube.
-- Procesamiento de documentos con componente visual: si se emplea junto con los ficheros mmproj del repositorio estatico, el modelo puede abordar tareas de descripcion de imagenes o extraccion de informacion de capturas y documentos escaneados, siempre que el runtime soporte el proyector multimodal.
-- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio ofrece el mismo modelo en mas de veinte variantes de cuantizacion, lo que lo convierte en un banco de pruebas para medir la degradacion de perplejidad entre IQ y K-quants sobre una misma arquitectura.
-- Generacion de cuantizaciones propias: el fichero imatrix incluido permite a un equipo generar variantes a medida (por ejemplo, Q5_K_M con su propia matriz de calibracion) sin recalcular la importance matrix desde cero.
-- Fine-tuning ligero sobre una base cuantizada: no recomendado directamente sobre GGUF, pero el modelo base en safetensors permite adaptaciones (LoRA) que luego se pueden recuantizar siguiendo el mismo flujo de mradermacher.
-- Integracion en pipelines de CI/CD para pruebas de regresion de calidad: usar una variante Q4 como referencia rapida y comparable entre versiones del modelo base.
+- Asistente conversacional local en ingles: el modelo puede desplegarse en estaciones de trabajo con GPU de consumo usando la cuantizacion i1-Q4_K_M (22,3 GB), adecuada para equipos con 24 GB de VRAM y uso de offloading parcial. Es apropiado para prototipos de chatbots que requieran privacidad de datos al no depender de APIs externas.
+- Experimentacion con modelos de ~37B en hardware limitado: las cuantizaciones IQ2 (10-13 GB) permiten probar el comportamiento del modelo en GPUs de 12-16 GB, sacrificando calidad pero manteniendo la estructura del modelo para evaluaciones comparativas.
+- Generacion de texto creativo y narrativo en ingles: la naturaleza conversacional del modelo base y su volumen de parametros lo hacen util para tareas de escritura asistida, siempre que se valide la calidad con la cuantizacion elegida.
+- Fine-tuning y destilacion sobre las salidas del modelo: al ser un modelo abierto en pesos GGUF, puede usarse como generador de datos sinteticos en ingles para entrenar modelos menores, aunque la licencia no disponible obliga a verificar restricciones antes de uso comercial.
+- Despliegue en pipelines de investigacion con llama.cpp: la disponibilidad de 23 cuantizaciones distintas permite ajustar el equilibrio tamano/calidad/latencia segun los recursos del cluster, usando Q6_K (30,1 GB) para maxima fidelidad o IQ3_S (16,4 GB) para throughput alto.
+- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio incluye tanto cuantizaciones i1 como el fichero imatrix, lo que permite reproducir el proceso y comparar la degradacion de perplejidad entre metodos, util para investigadores que estudien compresion de modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del cuantizador ni los resultados de busqueda incluyen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de perplejidad comparativa entre cuantizaciones. Cualquier cifra de rendimiento atribuida a este modelo en esta ficha seria inventada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en fp16 del modelo base rondan los 73 GB; en GGUF, el tamano del repositorio completo es de 31,2 GB, pero cada variante individual ocupa una fraccion. Como referencia orientativa por bits por peso: Q4_K_M aproximadamente 21-23 GB, Q5_K_M aproximadamente 25-27 GB, Q6_K aproximadamente 29-31 GB, IQ2_XXS aproximadamente 10-11 GB. Estas cifras son estimaciones por aritmetica de bits y no mediciones publicadas.
-- GPU recomendadas: para Q4_K_M o IQ4_XS, una RTX 4090 (24 GB) o RTX 3090 (24 GB) permite carga casi completa; para Q6_K se recomienda A100 40 GB, H100 o RTX 6000 Ada. Para variantes IQ2/IQ3, GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080) con offload parcial de capas a CPU.
-- Cabe en GPU de consumo: si, en las cuantizaciones Q2 a Q4 con 16-24 GB de VRAM; las variantes Q5 y Q6 requieren 24 GB o mas y pueden necesitar offload.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF de forma nativa en el momento de redactar esta ficha; para esos motores habria que servir el modelo base en safetensors.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para este modelo en la informacion proporcionada.
+- VRAM estimada para inferencia: entre 8,5 GB (i1-IQ1_S) y 30,1 GB (i1-Q6_K), segun la cuantizacion. La cuantizacion recomendada i1-Q4_K_M ocupa 22,3 GB.
+- GPU recomendadas: para Q6_K o Q5_K_M se recomienda A100 40GB, H100 o RTX 6000 Ada (48 GB). Para Q4_K_M, una RTX 3090 o RTX 4090 (24 GB) es suficiente. Para IQ3_S o inferiores, una RTX 4080 (16 GB) o RTX 3060 12GB con offloading parcial.
+- Cabe en GPU de consumo: si, en todas las cuantizaciones hasta Q4_K_M con 24 GB de VRAM; las cuantizaciones IQ2 e IQ1 caben en GPUs de 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere tambien despliegue en Hugging Face Endpoints.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dependeran del hardware y de la cuantizacion; a modo orientativo, un modelo denso de 37B en Q4_K_M sobre una RTX 4090 suele situarse en el rango de decenas de tokens por segundo, pero no se aportan cifras verificadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo para establecer una comparativa cuantitativa fiable. La siguiente tabla compara solo caracteristicas objetivas y verificables de la categoria (modelos densos de ~30-40B con versiones GGUF comunitarias); los datos de los modelos alternativos se indican como no disponibles cuando no se han verificado en esta busqueda.
+No se dispone de datos de rendimiento del modelo base Spectre-37B-v1, por lo que la comparativa se limita a caracteristicas estructurales frente a otros modelos densos de tamano similar con distribucion GGUF.
 
-| Modelo | Parametros | Contexto | Licencia | Formato GGUF | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Spectre-37B-v1 (esta ficha) | 36,55B | no disponible | no disponible | Si (imatrix y estatico) | Vision segun model card; solo ingles |
-| Modelo alternativo de ~34B de la familia Yi | ~34B | no disponible | no disponible | Si (comunidad) | Categoria similar de tamano |
-| Modelo alternativo de ~32B de la familia Qwen | ~32B | no disponible | no disponible | Si (oficial y comunidad) | Suele incluir multilingue |
-| Modelo alternativo de ~27-32B de la familia Gemma | ~27-32B | no disponible | no disponible | Si (comunidad) | Categoria similar de tamano |
+| Spectre-37B-v1 (esta ficha) | ~36,5B | no disponible | no disponible | GGUF (i1 y estaticas) | Solo ingles; cuantizaciones imatrix |
+| Modelos densos ~30-40B tipo Qwen o Yi | 30-34B | variable (32K-200K segun version) | variable (Apache 2.0 o similar) | safetensors, GGUF | Multilingues, con benchmarks publicos |
+| Modelos MoE ~30B activos tipo Mixtral 8x7B | 46,7B totales / 12,9B activos | 32K | Apache 2.0 | safetensors, GGUF | Mayor eficiencia de inferencia por activacion dispersa |
 
-No se ha verificado en la informacion proporcionada ningun resultado de benchmark que permita afirmar superioridad o inferioridad frente a estas alternativas.
+La comparativa detallada con benchmarks no es posible sin datos publicados del modelo base. Se recomienda consultar la model card original de TheDrummer/Spectre-37B-v1 para obtener informacion adicional.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: la ausencia de licencia explicita en los metadatos impide asumir permisos de uso comercial. Es imprescindible consultar el repositorio del modelo base (TheDrummer/Spectre-37B-v1) antes de cualquier despliegue en produccion.
-- Solo ingles: el modelo esta etiquetado unicamente para `en`; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
-- Sin benchmarks: no hay evidencia publica de calidad en razonamiento, codigo o matematicas. Cualquier decision de adopcion debe basarse en evaluacion propia.
-- Riesgo de alucinacion: inherente a los modelos generativos de esta escala; sin datos de alineacion (RLHF/DPO) documentados, no se puede acotar su magnitud.
-- Sesgos: no documentados. Al no conocerse la composicion del corpus de entrenamiento, no es posible evaluar sesgos de genero, raza o ideologicos.
-- Degradacion por cuantizacion: las variantes IQ1 e IQ2 sufren perdida notable de calidad frente a Q4 o superiores; para uso en produccion se recomienda Q4_K_M o superior.
-- Vision condicionada al runtime: los ficheros mmproj no estan en este repositorio sino en el estatico; sin ellos y sin un runtime que soporte el proyector multimodal, el modelo funciona solo como texto.
-- Fecha de creacion futura en los metadatos: el repositorio figura creado el 2026-11-08, lo que puede indicar un error de metadatos o una fecha de publicacion programada; conviene verificar la integridad de los ficheros antes de descargarlos.
-- Cero descargas y cero likes en el momento de la consulta: no hay senal de validacion por parte de la comunidad.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido. Verificar la licencia del modelo base TheDrummer/Spectre-37B-v1 antes de cualquier despliegue en produccion.
+- Idioma limitado al ingles: no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Sin informacion sobre sesgos: no se documentan evaluaciones de sesgo, toxicidad o alineacion.
+- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; no se aportan datos de evaluacion de factualidad.
+- Las cuantizaciones de baja precision (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality". No se recomiendan para produccion.
+- Sin datos de longitud de contexto: imposible planificar casos de uso con ventanas largas sin verificar en la model card original.
+- Repositorio de 396,7 GB: requiere planificacion de almacenamiento si se descargan multiples cuantizaciones.
+- Solo 1 like y 5639 descargas en el momento de la consulta: comunidad pequena, menor soporte y validacion externa.
 
 ## Enlaces
 
 - Repositorio Hugging Face (esta ficha): https://huggingface.co/mradermacher/Spectre-37B-v1-i1-GGUF
-- Arbol de ficheros: https://huggingface.co/mradermacher/Spectre-37B-v1-i1-GGUF/tree/main
-- Cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/Spectre-37B-v1-GGUF
 - Modelo base: https://huggingface.co/TheDrummer/Spectre-37B-v1
-- Pagina de descarga del cuantizador: https://hf.tst.eu/model#Spectre-37B-v1-i1-GGUF
-- Peticiones de cuantizacion y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion por Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Spectre-37B-v1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Spectre-37B-v1-i1-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de perplejidad (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- nethype GmbH (patrocinador del cuantizador): https://www.nethype.de/

@@ -2,92 +2,95 @@
 
 ## Resumen
 
-Kenzan-Clover-35B-A3B-PinGrid-GGUF es una cuantizacion GGUF del modelo Diffuspace/Clover-35B-A3B-Preview, un transformer hibrido de tipo Mixture-of-Experts con 34.660 millones de parametros totales y 3.000 millones activos. El modelo base combina capas de atencion lineal recurrente GatedDeltaNet (30 capas) con atencion completa cada cuarta capa (10 capas), y emplea 256 expertos enrutados con top-8 mas un experto compartido por capa. La ficha la publica el usuario kabcnd bajo el paraguas "Kenzan" y esta optimizada especificamente para Apple Silicon de 16 GB de memoria unificada.
+Kenzan-Clover-35B-A3B-PinGrid-GGUF es una cuantización GGUF del modelo Diffuspace/Clover-35B-A3B-Preview, un transformer híbrido de tipo Mixture-of-Experts (MoE) con 34.660 millones de parámetros totales y aproximadamente 3.000 millones activos por token. Combina capas de atención lineal recurrente GatedDeltaNet (30 capas) con atención completa cada cuarta capa (10 capas), e incorpora 256 expertos enrutados con top-8 más un experto compartido por capa. El autor de la cuantización es el usuario kabcnd, que la publica bajo licencia Apache 2.0.
 
-El trabajo del cuantizador se centra en dos correcciones tecnicas sobre el GGUF original: la conversion de los 30 tensores `ssm_a` de `A_log` en crudo a `-exp(A_log)` para evitar desbordamientos exponenciales que producian NaN, y la eliminacion de 120 tensores muertos (`ssm_bd_history`, `ssm_bd_logit_scale`, `ssm_conv1d.weight_right`) para dejar un layout limpio de 733 tensores compatible con el PR #31306 de llama.cpp. Ademas aplica una receta de cuantizacion mixta ("Pin-Grid") que asigna precision segun la sensibilidad medida en una importance matrix de 1,25 millones de tokens.
+La aportación principal de esta release no es el modelo base, sino el trabajo de cuantización: una receta denominada Pin-Grid que asigna precisión de forma no uniforme (desde IQ2_XXS hasta Q8_0) según la sensibilidad medida de cada tensor, con el objetivo de que un modelo de ~35B quepa en los 16 GB de memoria unificada de un Mac mini M6. El resultado es un fichero de 10,99 GiB a 2,72 bits por peso, con correcciones críticas sobre el export original (inversión de signo en los tensores `ssm_a` y eliminación de 120 tensores muertos) para que cargue directamente en `llama.cpp` PR #31306.
 
-El resultado es un archivo de 10,99 GiB (2,72 bpw) que, segun el autor, alcanza 59,82 t/s de generacion y 1220,98 t/s de procesamiento de prompt en un Mac mini M6 con 16 GB, con una perplejidad de 10,70 sobre un holdout de 128k tokens. Es relevante para desarrolladores que quieran ejecutar un MoE de ~35B en hardware consumer de Apple sin colapso numerico.
+Es relevante ahora porque demuestra que un MoE de 35B con atención híbrida puede ejecutarse a velocidades interactivas (~60 t/s de generación) en hardware de consumo Apple Silicon de gama baja, algo que hasta hace poco requería GPUs de datacenter. No obstante, depende de un runtime específico (`llama-clover` / PR #31306) y de un formato de pesos concreto, lo que limita su portabilidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido: GatedDeltaNet (atencion lineal recurrente) en 30 capas + Full Attention cada 4ª capa; MoE con 256 expertos enrutados (top-8) + 1 experto compartido por capa |
+| Arquitectura | Transformer híbrido MoE: GatedDeltaNet (atención lineal recurrente) en 30 capas + Full Attention cada 4ª capa (blk.3, 7, 11, 15, 19, 23, 27, 31, 35, 39); 40 capas totales |
 | Parametros totales | 34.660.610.688 (34,66B) |
-| Parametros activos | 3B (A3B) |
-| Longitud de contexto | no disponible (el autor usa `-c 4096` en los ejemplos de despliegue) |
-| Tipos de cuantizacion | IQ2_XXS (base de expertos enrutados), IQ3_XXS, Q4_0, Q5_K, Q6_K, Q8_0 (mezcla Pin-Grid); 2,72 bpw |
-| Idiomas soportados | en, ru, zh |
+| Parametros activos | ~3B (256 expertos enrutados, top-8, + 1 experto compartido por capa) |
+| Longitud de contexto | No disponible en la información proporcionada (los benchmarks usan `-c 2048` y `-c 4096`, pero no se especifica el máximo nativo) |
+| Tipos de cuantizacion | Mezcla Pin-Grid: IQ2_XXS (expertos enrutados base), IQ3_XXS (cola MoE blk.32–38), Q4_0, Q5_K, Q6_K, Q8_0 según tensor; 2,72 bpw efectivos |
+| Idiomas soportados | Inglés (en), ruso (ru), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivo unico `Kenzan-Clover-35B-A3B-PinGrid-IQ2_XXS-M6-16G.gguf`, 10,99 GiB) |
+| Formato de pesos | GGUF (fichero único `Kenzan-Clover-35B-A3B-PinGrid-IQ2_XXS-M6-16G.gguf`, 10,99 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Clover-35B-A3B-Preview es un MoE hibrido de 40 capas que intercala 30 capas de GatedDeltaNet (atencion lineal con estado recurrente y decaimiento controlado por `A_log`) con 10 capas de atencion completa situadas en los bloques 3, 7, 11, 15, 19, 23, 27, 31, 35 y 39. Cada capa contiene 256 expertos enrutados con seleccion top-8 y un experto compartido adicional (`expert_shared_count = 1`). El vocabulario declarado en la model card es de 248.320 tokens.
+El modelo base Clover-35B-A3B-Preview es un transformer híbrido que alterna capas de GatedDeltaNet (atención lineal recurrente con estado, del tipo SSM/linear attention) con capas de atención completa cada cuatro bloques. Cada capa incorpora un bloque MoE con 256 expertos enrutados (top-8) y un experto compartido, lo que da lugar a un ratio de activación muy bajo (~3B de 34,66B). La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; tampoco se especifican innovaciones como decodificación especulativa. El vocabulario es de 248.320 entradas.
 
-La informacion proporcionada no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. Lo que si documenta el autor es el proceso de cuantizacion: analisis de una importance matrix de 1,25 millones de tokens (`Clover-VAL-1.25M-I-Matrix.gguf`) que revelo un salto de sensibilidad L2 de 4.400x en `ffn_down_exps` entre `blk.0` (7,01e6) y `blk.39` (3,10e10), con picos en los limites de atencion completa. Sobre esa base se asignan precisiones: Q5_K para el embedding, Q6_K para `output` y las proyecciones KV, Q8_0 para las puertas `ssm_alpha` y `ssm_beta`, Q4_0 para el tronco de atencion y experto compartido, IQ3_XXS para la cola MoE de alta sensibilidad (bloques 32-38) e IQ2_XXS para el resto de expertos enrutados. La innovacion tecnica destacable es la correccion `ssm_a = -exp(A_log)`, que elimina el desbordamiento de `exp(gate)` en llama.cpp PR #31306.
+El trabajo de esta release se centra en la cuantización. El autor analizó una importance matrix de 1,25M tokens (`Clover-VAL-1.25M-I-Matrix.gguf`) y detectó un salto de sensibilidad L2 de 4.400× en `ffn_down_exps` entre la capa 0 (7,01e6) y la capa 39 (3,10e10), con picos en las fronteras de atención completa. La receta Pin-Grid asigna Q8_0 a las puertas `ssm_alpha`/`ssm_beta`, Q6_K a `attn_k`/`attn_v` y a la salida, Q5_K a embeddings y a la capa 39 de `ffn_down_exps`, IQ3_XXS a la cola MoE (blk.32–38) e IQ2_XXS al resto de expertos. Además, se corrigen dos defectos del export upstream: los 30 tensores `blk.*.ssm_a` se convierten de `A_log` crudo a `-exp(A_log)` (el export original contenía valores positivos hasta +4,65 que provocaban desbordamiento `exp(gate)` y colapso `NaN`/`@@@@`), y se eliminan 120 tensores no usados (`ssm_bd_history.*`, `ssm_bd_logit_scale.*`, `ssm_conv1d.weight_right`), pasando de 853 a 733 tensores. Se añade `clover_moe.expert_shared_count = 1` en la cabecera GGUF para que cargue sin `--override-kv`.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, ruso y chino, segun los idiomas declarados.
-- Razonamiento multi-paso propio de un modelo tipo "thinking" (el tag `diffusion-llm` sugiere una variante de difusion, aunque la model card no detalla el mecanismo).
-- Procesamiento de contexto moderado: los ejemplos del autor usan ventanas de 4096 tokens.
-- Ejecucion local en Apple Silicon mediante Metal 4, con soporte de atencion flash (`-fa on`) y cache KV cuantizada (`-ctk q4_0 -ctv q4_0`).
-- Compatibilidad con `llama-server` y, por extension, con la API compatible con OpenAI que expone (`endpoints_compatible` en los tags).
-- No se documenta soporte explicito de tool calling, function calling, vision, audio ni agentes multi-paso en la informacion disponible.
+- Generación de texto conversacional multi-turno en inglés, ruso y chino.
+- Razonamiento y generación de código (se reporta throughput de chat en pruebas con Python).
+- Soporte de arquitectura MoE con enrutamiento top-8 sobre 256 expertos, lo que permite alta capacidad paramétrica con bajo coste de cómputo por token.
+- Capacidad de contexto extendido gracias a las capas GatedDeltaNet, aunque el máximo nativo no se documenta.
+- Compatibilidad con `llama-server` y endpoints compatibles (tag `endpoints_compatible`), lo que habilita su uso tras una API HTTP.
+- No se documenta soporte explícito de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
+- No se documenta modo "thinking" ni capacidades multimodales.
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: desplegado con `llama-server` en un Mac mini M6 de 16 GB, el modelo mantiene conversaciones multi-turno en ingles, ruso o chino a ~60 t/s, suficiente para interaccion en tiempo real sin conexion a la nube.
-- Prototipado de aplicaciones LLM en hardware consumer: permite a un desarrollador probar un MoE de 35B en un equipo de 16 GB antes de escalar a infraestructura dedicada, gracias al tamano de 10,99 GiB que cabe en el working set Metal de 15.032 MB.
-- Generacion de texto en ruso y chino: el soporte trilingue lo hace util para pipelines de localizacion o resumen de documentos en esos idiomas, aunque sin garantias de calidad mas alla de lo que declare el modelo base.
-- Investigacion sobre cuantizacion MoE: el recetario Pin-Grid y el analisis de sensibilidad por capa sirven como referencia metodologica para quien cuantice otros MoE con importance matrices.
-- Evaluacion de modelos hibridos GatedDeltaNet: util para estudiar el comportamiento de atencion lineal recurrente frente a atencion completa en un entorno de inferencia controlado.
-- Servicio de inferencia ligero en oficina o laboratorio: con la API compatible con OpenAI de `llama-server`, se puede integrar como backend de herramientas internas que no requieran contexto muy largo.
-- Validacion de correcciones numericas en llama.cpp: el arreglo de `ssm_a` y la limpieza de tensores permiten usar este GGUF como caso de prueba para el PR #31306 y futuras versiones del runtime.
+- Asistente conversacional local en Mac: desplegado con `llama-server -c 4096 -fa on -ctk q4_0 -ctv q4_0`, el modelo sostiene conversaciones multi-turno a ~60 t/s en un Mac mini M6 de 16 GB, adecuado para prototipos de asistentes privados sin conexión.
+- Generación de código en estación de trabajo: con throughput medido en pruebas con Python, sirve para autocompletado y generación de scripts en un entorno de desarrollo local sin GPU dedicada.
+- Procesamiento de documentación multilingüe: al cubrir en/ru/zh, puede emplearse para resumir o traducir documentación técnica entre esos tres idiomas en pipelines por lotes.
+- Experimentación con arquitecturas híbridas SSM/atención: investigadores pueden estudiar el comportamiento de GatedDeltaNet frente a atención completa en un modelo de 35B con recursos de consumo.
+- Evaluación de técnicas de cuantización extrema: la receta Pin-Grid y la importance matrix de 1,25M tokens sirven como referencia para estudiar cómo afecta la asignación no uniforme de bits a la perplejidad (10,70 en el holdout).
+- Chatbot de soporte en entornos con restricciones de hardware: al caber en 16 GB de memoria unificada, permite desplegar un asistente en equipos Apple Silicon de gama baja sin infraestructura cloud.
+- Reproducción de benchmarks de inferencia: útil para validar builds de `llama.cpp` con soporte `clover_moe` y medir `pp512`/`tg128` en distintos equipos.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Comando / configuracion | Resultado |
-|---|---|---|
-| Tamano de archivo | `Kenzan-Clover-35B-A3B-PinGrid-IQ2_XXS-M6-16G.gguf` | 10,99 GiB (11.254,74 MiB, 2,72 BPW) |
-| Prompt processing (`pp512`) | `llama-bench -p 512 -fa 1 -ctk q4_0 -ctv q4_0 -ngl 99` | 1220,98 ± 5,89 t/s |
-| Generacion (`tg128`) | `llama-bench -n 128 -fa 1 -ctk q4_0 -ctv q4_0 -ngl 99` | 59,82 ± 0,57 t/s |
-| Perplejidad (`wt2_holdout_128k`) | `llama-perplexity --chunks 14 -c 2048 -fa on -ctk q4_0 -ctv q4_0` | 10,6969 ± 0,24881 |
-| Throughput en chat (RU y Python) | `llama-server -c 4096 -fa on -ctk q4_0 -ctv q4_0` | 60,62-60,68 t/s |
+Resultados verificados por el autor en Apple Mac mini M6 (16 GB memoria unificada) con `llama.cpp` PR #31306 (`commit ed26f2f`, Metal 4):
 
-Medido por el autor en Apple Mac mini M6 (16 GB de memoria unificada, Metal 4, `MTLGPUFamilyApple11`, SME/SME2) con llama.cpp PR #31306 (`commit ed26f2f`). No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Métrica | Configuración | Resultado |
+|---|---|---|
+| Tamaño de fichero | `Kenzan-Clover-35B-A3B-PinGrid-IQ2_XXS-M6-16G.gguf` | 10,99 GiB (11.254,74 MiB, 2,72 BPW) |
+| Prompt processing (`pp512`) | `llama-bench -p 512 -fa 1 -ctk q4_0 -ctv q4_0 -ngl 99` | 1220,98 ± 5,89 t/s |
+| Generación (`tg128`) | `llama-bench -n 128 -fa 1 -ctk q4_0 -ctv q4_0 -ngl 99` | 59,82 ± 0,57 t/s |
+| Perplejidad (`wt2_holdout_128k`) | `llama-perplexity --chunks 14 -c 2048 -fa on -ctk q4_0 -ctv q4_0` | 10,6969 ± 0,24881 |
+| Throughput de chat (ru y Python) | `llama-server -c 4096 -fa on -ctk q4_0 -ctv q4_0` | 60,62–60,68 t/s |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: 10,99 GiB de pesos mas overhead de cache KV y contexto; el autor lo valida en 16 GB de memoria unificada con `-c 4096` y cache KV en q4_0.
-- GPU recomendadas: Apple Silicon con Metal 4 (validado en Mac mini M6). No se documenta soporte en GPU NVIDIA o AMD en la informacion disponible.
-- Cabe en consumer GPU: si, en equipos Apple Silicon de 16 GB; en GPUs discretas no hay datos publicados.
-- Opciones de despliegue: `llama.cpp` PR #31306 o posterior (obligatorio por soporte de `clover_moe`), `llama-server` con API compatible con OpenAI. No se menciona compatibilidad con vLLM, TGI, Ollama ni LM Studio.
-- Latencia y throughput: 59,82 t/s de generacion y 1220,98 t/s de prompt processing en Mac mini M6 segun el autor; el throughput en chat se mantiene en torno a 60 t/s.
-- Limitacion de memoria: el working set Metal del M6 es de 15.032,39 MB; el archivo de 10,99 GiB deja margen para cache KV y contexto.
+- VRAM/RAM estimada: 10,99 GiB para el fichero GGUF; con caché KV en q4_0 y contexto de 4096, el working set de Metal debe quedar por debajo del límite de 15.032,39 MB del M6 de 16 GB (el autor confirma que cabe).
+- GPU recomendadas: Apple Silicon con Metal 4 (M6 de 16 GB verificado); no se documentan pruebas en NVIDIA/AMD.
+- Cabe en GPU de consumo: sí, en Mac mini M6 de 16 GB de memoria unificada; en GPUs discretas no hay datos publicados.
+- Opciones de despliegue: `llama.cpp` PR #31306 (`ed26f2f` o superior) compilado con `-DGGML_METAL=ON`; `llama-server` para API HTTP. No se documenta compatibilidad con vLLM, TGI, Ollama ni llama.cpp mainline sin el PR.
+- Latencia y throughput: 1220,98 t/s de prompt processing y 59,82 t/s de generación en M6; 60,62–60,68 t/s en chat real.
+- Requiere runtime específico `llama-clover` (Metal 4); sin él el modelo no carga correctamente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Kenzan-Clover-35B-A3B-PinGrid | 34,66B | 3B | no disponible | Apache 2.0 | GGUF (2,72 bpw) | Optimizado para Mac 16 GB; ~60 t/s en M6 |
-| Diffuspace/Clover-35B-A3B-Preview | 34,66B | 3B | no disponible | Apache 2.0 (heredada) | safetensors | Modelo base sin cuantizar; requiere mas memoria |
-| Clover-35B-A3B-Preview-Q8_0 (upstream) | 34,66B | 3B | no disponible | Apache 2.0 | GGUF Q8_0 | Exportaba `A_log` en crudo y provocaba NaN en llama.cpp |
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Kenzan-Clover-35B-A3B-PinGrid (este) | 34,66B / ~3B | No disponible | Apache 2.0 | GGUF (2,72 bpw) | Híbrido GatedDeltaNet + atención; runtime PR #31306; 60 t/s en M6 16 GB |
+| Diffuspace/Clover-35B-A3B-Preview (base) | 34,66B / ~3B | No disponible | Apache 2.0 | Safetensors (precisión completa) | Modelo original sin cuantizar; requiere mucho más que 16 GB |
+| Alternativas de ~30-35B MoE | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables en la información proporcionada |
 
-No se dispone de datos de benchmarks comparativos con otras alternativas en la informacion proporcionada.
+No se dispone de información sobre otros modelos de la misma categoría con datos verificables en la documentación aportada.
 
 ## Limitaciones y advertencias
 
-- El modelo base es una "Preview": puede presentar inestabilidades o calidad inferior a versiones finales.
-- Solo se declaran tres idiomas (en, ru, zh); el rendimiento en castellano no esta verificado.
-- La cuantizacion IQ2_XXS en la mayoria de expertos enrutados implica perdida de precision; la perplejidad de 10,70 debe interpretarse en el contexto del holdout usado, no como comparable directo con otros modelos.
-- Requiere una version especifica de llama.cpp (PR #31306, commit `ed26f2f` o posterior); versiones anteriores no cargaran el archivo o produciran NaN.
-- No hay evidencia publicada de tool calling, agentes, vision ni audio; no debe asumirse su disponibilidad en produccion.
-- Riesgo de alusiones y sesgos heredado del modelo base, no evaluado en la informacion disponible.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; el modelo base es de terceros.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que la validacion por parte de la comunidad es practicamente nula.
-- La model card incluye una solicitud de donacion (Ko-fi) que no afecta a la licencia pero conviene tener en cuenta como contexto del proyecto.
+- Dependencia de un runtime no mainline: requiere `llama.cpp` PR #31306 (`ed26f2f` o superior) con soporte `clover_moe`; no funciona con builds estándar ni con otros motores (vLLM, TGI, Ollama).
+- Cuantización extrema: 2,72 bpw con IQ2_XXS en la mayoría de expertos implica pérdida de calidad respecto al modelo base; la perplejidad de 10,70 en el holdout debe interpretarse en ese contexto.
+- Riesgo de alucinación: no se documentan evaluaciones de fidelidad factual; al ser un modelo base "Preview", es esperable un comportamiento variable.
+- Idiomas limitados a en/ru/zh; no se documenta soporte de castellano, lo que limita su uso en producción en español.
+- Sesgos: no se documentan análisis de sesgo ni composición del dataset de entrenamiento.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base es un "Preview" y el autor no ofrece garantías; conviene validar el comportamiento antes de producción.
+- El modelo depende de correcciones manuales (signo de `ssm_a`, eliminación de tensores); cualquier reexportación desde el base sin esas correcciones reproducirá el colapso `NaN`/`@@@@`.
+- No se documentan capacidades de tool calling ni de agentes, por lo que no debe asumirse su disponibilidad.
+- El autor solicita donaciones para adquirir hardware de pruebas; el soporte y mantenimiento del repo no están garantizados.
 
 ## Enlaces
 

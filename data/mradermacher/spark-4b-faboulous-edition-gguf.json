@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/SparkMuse-4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/SparkMuse-4B-GGUF",
-      "snippet": "mradermacher / SparkMuse-4B-GGUF Like 1 Transformers GGUF Chinese English creative-writing novel-generation roleplay nsfw long-context 1M-context spark conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "mradermacher/Spark-X2.6-4B-heretic-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Spark-X2.6-4B-heretic-GGUF",
-      "snippet": "Machine learning model with 4B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

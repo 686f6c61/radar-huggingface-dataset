@@ -2,111 +2,107 @@
 
 ## Resumen
 
-`miceworks/Mark-Engineer-1.5B` es un repositorio de pesos publicados en Hugging Face por el usuario `miceworks` bajo licencia AGPL-3.0. En el momento de redactar esta ficha, la model card del autor no contiene más información que el bloque de metadatos de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, tokenizador, idiomas ni instrucciones de uso. El repositorio no declara pipeline, no tiene descargas ni likes y fue creado y actualizado en el mismo instante (26 de octubre de 2026), lo que apunta a una publicación recién subida y sin documentar.
+Mark-Engineer-1.5B es un modelo de lenguaje de tipo transformer disperso (Mixture-of-Experts) desarrollado por miceworks y publicado en Hugging Face bajo licencia Apache 2.0. Se distribuye exclusivamente como archivo GGUF cuantizado en IQ4_NL para su uso con llama.cpp, lo que lo convierte en una pieza orientada a la experimentación en inferencia local con recursos limitados. El checkpoint se etiqueta explícitamente como `EXPERIMENTAL_NARROW_CHECKPOINT`, es decir, un modelo de investigación con un alcance de entrenamiento muy restringido.
 
-El único dato técnico inferible es el que sugiere el propio identificador: el sufijo `1.5B` indica, con toda probabilidad, un modelo de aproximadamente 1.500 millones de parámetros, y el término `Engineer` sugiere una orientación hacia tareas de ingeniería o generación de código. Ninguna de estas dos inferencias está confirmada por el autor. Por tanto, esta ficha debe leerse como una evaluación de disponibilidad y de riesgos, no como una ficha técnica verificada.
+La arquitectura combina Multi-Head Latent Attention (MLA) con una topología MoE de 16 expertos enrutados y 1 compartido, manteniendo 364 millones de parámetros activos por token sobre un total de 1.496 millones (24,34 % de activación). El contexto máximo es de 4.096 tokens y el vocabulario es extremadamente reducido: 4.311 tokens BPE activos, con una fertilidad medida de aproximadamente 2,02 caracteres por token en código C/Rust y 2,53 en prosa técnica en inglés.
 
-Su relevancia actual es limitada y de naturaleza exploratoria: se trata de un modelo pequeño, potencialmente ejecutable en hardware de consumo, pero sin evidencia pública de calidad, sin benchmarks y sin documentación. Cualquier evaluación seria exige descargar los pesos, inspeccionar la configuración y el tokenizador, y ejecutar una batería propia de pruebas antes de considerarlo en un proyecto.
+Su relevancia es acotada y de carácter arquitectónico: sirve como banco de pruebas reproducible para estudiar MLA, enrutamiento MoE sin pérdida auxiliar y el formato nativo `deepseek2` en llama.cpp, más que como modelo de producción generalista. El entrenamiento se limitó a 400 pasos sobre el currículo `Mark-Ultra-Curriculum`, centrado en código de sistemas, manuales de bajo nivel, RFCs y primitivas de concurrencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la model card no la declara; sin confirmar que sea un transformer denso) |
-| Parámetros totales | No disponible. El identificador del repositorio sugiere ~1,5B, sin confirmación del autor |
-| Parámetros activos | No disponible (no consta que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (no se publican pesos cuantizados ni se documenta soporte) |
-| Idiomas soportados | No disponible |
-| Licencia | AGPL-3.0 |
-| Formato de pesos | No disponible (no se especifica safetensors, GGUF ni otros) |
-| Pipeline declarado | No disponible |
-| Descargas / likes | 0 / 0 |
-| Fecha de creación y actualización | 2026-10-26 (ambas idénticas) |
-| Región declarada | US |
+| Arquitectura | `deepseek2` (transformer MoE con Multi-Head Latent Attention) |
+| Parametros totales | 1.496.016.864 (281 tensores) |
+| Parametros activos | 364.046.304 (24,34 % activos por token) |
+| Longitud de contexto | 4.096 tokens |
+| Tipos de cuantizacion | IQ4_NL (4 bits no lineal) |
+| Idiomas soportados | `en` (según model card); fertilidad medida también en portugués técnico |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (formato nativo `deepseek2` para llama.cpp) |
+
+| Parametro adicional | Valor |
+|---|---|
+| Estado de entrenamiento | `EXPERIMENTAL_NARROW_CHECKPOINT` |
+| Tamano del binario | 802,88 MiB (841,88 MB / 841.881.696 bytes) |
+| Tamano del repositorio | 6,2 GB |
+| Vocabulario | 4.311 tokens BPE activos (27.721 slots reservados de padding) |
+| Merges BPE | 3.981 |
+| Capas | 16 |
+| Dimension oculta | 1.280 |
+| Cabezas de atencion | 16 |
+| Rangos MLA | `q_lora_rank=640`, `kv_lora_rank=320`, `qk_rope_head_dim=32` |
+| Expertos MoE | 16 enrutados + 1 compartido (2 activos por token) |
+| Dimension FFN por experto | 1.504 |
+| SHA-256 | `983683d2e7885c9ce6589f7e2009ca4e9ebb891ff448c509a024732953780aba` |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura. La model card únicamente contiene el frontmatter con `license: agpl-3.0`, sin secciones de descripción, arquitectura, tokenizador ni hiperparámetros. No hay datos sobre tipo de atención, uso de MoE, capas lineales, decodificación especulativa ni ninguna otra innovación técnica.
+El modelo emplea Multi-Head Latent Attention, que proyecta los estados de clave y valor a una representación latente compartida de bajo rango (`c_KV` de dimensión 320 y `c_Q` de 640) para desacoplar el consumo de memoria del contexto. Los embeddings rotatorios desacoplados se concatenan en una dimensión separada de 32 (`qk_rope_head_dim`). El resultado es un KV cache de 11.264 bytes por token en FP16, lo que supone un ahorro de 8,7x frente a una atención multi-cabeza estándar: 44 MiB frente a 384 MiB con 4.096 tokens.
 
-Tampoco hay información sobre el corpus de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo fases de instrucción, RLHF, DPO u otro ajuste por preferencias, y si existe algún proceso de alineación. No se dispone de model card ampliada, informe técnico ni publicación asociada. Cualquier afirmación sobre el entrenamiento sería especulativa.
+La capa MoE combina un experto compartido siempre activo con 16 expertos enrutados mediante top-2, usando enrutamiento sin pérdida auxiliar. Los sesgos del router (`exp_probs_b.bias`, almacenados en FP32) se actualizan por paso con la regla `b_i ← b_i + γ·sign(f̄ − f_i)` con γ = 0,001, evitando el colapso de expertos sin penalizar la pérdida principal. Los 16 expertos se particionan en 4 clanes funcionales de 4 expertos: Clan 0 (código de sistemas, semántica de kernels, concurrencia), Clan 1 (matemáticas, lógica formal, razonamiento STEM), Clan 2 (seguridad, protocolos, validación) y Clan 3 (datos estructurados, tool calling, lógica simbólica).
+
+El entrenamiento se realizó durante 400 pasos sobre `miceworks/Mark-Ultra-Curriculum` con AdamW (β1 = 0,9, β2 = 0,95, weight decay 0,1, gradient clipping 1,0). No se especifican en la información disponible el número total de tokens procesados, la composición exacta del dataset ni si hubo fases de RLHF o DPO. El tokenizador incluye tokens de control epistémico: `<think>`, `</think>`, `<tool_call>`, `</tool_call>`, `[RETRIEVE]`, `[/RETRIEVE]`, `[EVALUATE]`, `[ACCEPT]` y `[REJECT]`.
 
 ## Capacidades
 
-- No hay capacidades documentadas por el autor. La model card no describe tareas soportadas.
-- Generación de texto: no confirmada, aunque es la función esperable en un modelo de lenguaje de ~1,5B parámetros.
-- Generación de código y tareas de ingeniería: no confirmadas; el término `Engineer` del nombre es la única indicación, y no constituye evidencia.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declara ningún idioma.
-- Capacidades multimodales (visión, audio): no disponible; el repositorio no declara pipeline ni modalidad.
-- Modo de razonamiento explícito (thinking): no disponible.
+- Generación de texto en inglés con soporte de etiquetas de razonamiento (`<think>`) y reflexión epistémica auto-RAG.
+- Generación y análisis de código de sistemas: C, Rust, POSIX threads, primitivas de sincronización y barreras de memoria.
+- Tool calling mediante delimitadores `<tool_call>` y `</tool_call>`, con un clan de expertos dedicado a datos estructurados y lógica simbólica.
+- Razonamiento multi-paso acotado mediante tokens de control `[RETRIEVE]`, `[EVALUATE]`, `[ACCEPT]` y `[REJECT]`.
+- Capacidad matemática y de lógica formal limitada al currículo de entrenamiento (Clan 1).
+- Capacidad multilingüe muy limitada: la model card solo declara inglés, aunque se midió fertilidad en portugués técnico (2,57 caracteres/token).
+- No se declaran capacidades de visión, audio ni multimodalidad.
 
 ## Casos de uso
 
-Los siguientes escenarios son hipótesis de trabajo condicionadas a que la inspección de los pesos confirme que se trata de un modelo de lenguaje de ~1,5B con capacidad de generación de código. No deben adoptarse en producción sin una evaluación previa.
-
-- Evaluación comparativa de modelos pequeños en local: descargar los pesos, medir perplejidad y calidad de generación frente a referencias de 1,5B-2B con licencia permisiva, para decidir si merece la pena integrarlo en un banco de pruebas interno.
-- Autocompletado de código en entornos con recursos limitados: si el modelo resulta ser un generador de código, podría ejecutarse en una GPU de consumo para sugerencias de línea o de función dentro de un IDE, con latencia baja gracias al tamaño reducido.
-- Filtrado y clasificación de texto en pipelines de datos: un modelo de 1,5B es adecuado para tareas de etiquetado, deduplicación semántica o moderación por lotes, donde el coste por token importa más que la calidad punta.
-- Prototipado de asistentes técnicos sobre documentación interna: usar el modelo como base para RAG sobre manuales de ingeniería, siempre que se valide su contexto máximo real y su comportamiento en castellano.
-- Generación de documentación técnica y docstrings: extracción de firmas de funciones y generación de comentarios, con revisión humana obligatoria por el riesgo de alucinación en un modelo sin evaluar.
-- Base para fine-tuning específico de dominio: al ser un modelo pequeño y con licencia AGPL, puede servir como punto de partida para ajuste supervisado en un dominio concreto, asumiendo las obligaciones de copyleft del resultado.
-- Experimentación académica sobre alineación y sesgos en modelos pequeños: su tamaño permite réplicas completas de entrenamiento y evaluación en un solo nodo.
+- Investigación de arquitecturas MLA: el modelo permite medir empíricamente el ahorro de KV cache (8,7x) y validar implementaciones de atención latente en llama.cpp sobre hardware modesto.
+- Estudio de enrutamiento MoE sin pérdida auxiliar: con 16 expertos y sesgos FP32 accesibles, sirve para analizar dinámicas de frecuencia de expertos y colapso en currículos cortos.
+- Pruebas de integración del formato GGUF `deepseek2`: útil como caso de test para validar cargadores, tokenizadores y kernels de cuantización IQ4_NL en llama.cpp.
+- Generación asistida de código de sistemas en entornos de experimentación: puede producir fragmentos de C o Rust sobre concurrencia y sincronización, siempre con revisión humana dado el alcance estrecho del entrenamiento.
+- Docencia y demostraciones de inferencia local: con 802,88 MiB de binario cabe holgadamente en una GPU de 8 GB, lo que permite desplegarlo en equipos de laboratorio o portátiles con RTX 2060 Super.
+- Evaluación de tokenizadores de vocabulario reducido: sus 4.311 tokens y la fertilidad medida (2,02–2,57 caracteres/token) lo hacen útil para estudiar el equilibrio entre compresión y cobertura en dominios técnicos.
+- Prototipado de pipelines con etiquetas epistémicas: los tokens `<think>`, `[RETRIEVE]` y `[EVALUATE]` permiten experimentar con flujos de auto-RAG y verificación antes de adoptarlos en modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no incluye métricas de MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra, y no se han encontrado referencias externas al modelo en la búsqueda web realizada.
-
-| Benchmark | Mark-Engineer-1.5B | Referencia externa |
-|---|---|---|
-| MMLU | No disponible | No disponible |
-| HumanEval | No disponible | No disponible |
-| GSM8K | No disponible | No disponible |
-| MT-Bench | No disponible | No disponible |
-| Perplejidad / Evaluación propia | No disponible | No disponible |
+No se han publicado resultados de benchmarks en la información disponible. La model card solo indica que el modelo "demuestra completitud del currículo estrecho para POSIX threads, primitivas de sincronización y barreras de memoria", sin cifras numéricas ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones basadas en la hipótesis de un modelo denso de ~1,5B parámetros, no en datos publicados por el autor. Deben verificarse tras inspeccionar la configuración real del modelo.
-
-- VRAM estimada en FP16: en torno a 3 GB solo para pesos, más caché KV; en la práctica, 4-6 GB según longitud de contexto y tamaño de lote.
-- VRAM estimada en cuantización de 8 bits: aproximadamente 1,6-2 GB de pesos.
-- VRAM estimada en cuantización de 4 bits (si se generan pesos GGUF): aproximadamente 1-1,5 GB de pesos, viable en GPUs de 4 GB.
-- GPU de consumo: cabe con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y RTX 4090; también en GPUs de 6-8 GB con cuantización.
-- GPU de centro de datos: A100, H100 y L40S permiten servir muchas réplicas concurrentes o lotes grandes, aunque para este tamaño suelen ser sobredimensionadas salvo en escenarios de alto throughput.
-- CPU: ejecución viable en llama.cpp u Ollama con cuantización Q4, con latencia de decenas de milisegundos por token según núcleos y ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama y, en menor medida, vLLM o TGI, condicionadas a que los pesos estén en un formato compatible (safetensors con config de Hugging Face o GGUF). No se ha confirmado ninguno de estos formatos.
-- Latencia y throughput: no disponibles. No hay datos publicados de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada para inferencia: aproximadamente 0,8 GB para los pesos en IQ4_NL, más el KV cache (44 MiB con 4.096 tokens en FP16) y overhead del runtime.
+- GPU recomendadas: cualquier GPU con 8 GB o más. La model card cita explícitamente la NVIDIA GeForce RTX 2060 Super (8 GB GDDR6, 256 bits, 448 GB/s) como referencia, dejando más de 7 GB de VRAM libres.
+- Cabe en GPU de consumo: sí, en RTX 2060 Super, RTX 3060, RTX 4060 y superiores; también en iGPU con memoria unificada suficiente.
+- Opciones de despliegue: llama.cpp (formato nativo `deepseek2`), y por extensión los runners compatibles con GGUF como Ollama o servidores basados en llama.cpp. No se dispone de información sobre soporte en vLLM o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La comparación se establece con modelos abiertos de tamaño comparable ampliamente documentados. Los datos de las alternativas provienen de sus respectivas model cards públicas y deben verificarse en la fuente original; no se incluyen puntuaciones porque no hay resultados publicados del modelo evaluado.
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Mark-Engineer-1.5B | 1.496 M | 364 M | 4.096 | Apache 2.0 | GGUF IQ4_NL | MoE + MLA, checkpoint experimental estrecho |
+| DeepSeek-V2-Lite | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible | Referencia arquitectonica del formato `deepseek2`; sin datos verificados aqui |
+| Qwen2.5-1.5B | no disponible en la informacion | denso | no disponible | no disponible | no disponible | Alternativa densa de tamano comparable; sin datos verificados aqui |
+| SmolLM2-1.7B | no disponible en la informacion | denso | no disponible | no disponible | no disponible | Alternativa densa de tamano comparable; sin datos verificados aqui |
 
-| Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
-|---|---|---|---|---|---|
-| Mark-Engineer-1.5B | ~1,5B (inferido, sin confirmar) | No disponible | AGPL-3.0 | Prácticamente inexistente | Repositorio HF sin descargas |
-| Qwen2.5-1.5B | 1,5B | 32.768 tokens | Apache-2.0 | Model card completa e informe técnico | Amplia, con variantes GGUF de la comunidad |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 tokens (heredado de Qwen2.5) | MIT | Model card completa e informe del destilado | Amplia, con cuantizaciones comunitarias |
-| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache-2.0 | Model card e informe técnico | Amplia, integrado en llama.cpp y transformers |
-| Gemma 2 2B | 2,6B | 8.192 tokens | Términos de uso de Gemma | Model card completa | Amplia, con restricciones de uso |
-
-Diferencias clave frente a las alternativas: el modelo evaluado es el único con licencia AGPL-3.0, la más restrictiva del grupo para uso en servicios de red, y el único sin documentación ni métricas publicadas. Las alternativas ofrecen contexto declarado, idiomas documentados y ecosistema de cuantizaciones ya disponible.
+No se dispone de datos verificados de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: no hay información sobre arquitectura, tokenizador, contexto, idiomas ni datos de entrenamiento. No es posible evaluar su idoneidad sin inspeccionar los ficheros del repositorio.
-- Sin evidencia de calidad: cero descargas y cero likes implican que el modelo no ha sido validado por la comunidad; no existen evaluaciones independientes.
-- Riesgo de alucinación desconocido: al no haber datos de alineación ni evaluaciones, no se puede acotar la tasa de errores factuales. En un modelo de ~1,5B sin ajuste por instrucciones, este riesgo suele ser alto.
-- Licencia AGPL-3.0: es una licencia copyleft fuerte. El uso del modelo para ofrecer un servicio accesible por red (por ejemplo, una API o un chatbot público) activa la obligación de ofrecer el código fuente correspondiente a los usuarios del servicio, según el artículo 13 de la AGPL. Esto puede ser incompatible con productos propietarios o SaaS cerrados. Requiere revisión legal antes de cualquier despliegue comercial.
-- Procedencia y trazabilidad del modelo no verificadas: no consta informe técnico, paper ni repositorio de código. No se puede confirmar si los pesos derivan de otro modelo, si respetan licencias de terceros o si el corpus de entrenamiento tenía derechos compatibles.
-- Fechas de creación y actualización idénticas y sin historial de versiones: no hay garantía de mantenimiento ni de corrección de errores.
-- Idiomas no declarados: no se puede asumir un rendimiento aceptable en castellano; habría que medirlo.
-- Contexto desconocido: planificar pipelines que dependan de ventanas largas es arriesgado sin confirmar el límite real del tokenizador y de las posiciones entrenadas.
-- Reproducibilidad: sin fijar revisión (commit) del repositorio, los pesos podrían cambiar sin aviso, ya que solo existe una revisión inicial.
+- Checkpoint experimental: la etiqueta `EXPERIMENTAL_NARROW_CHECKPOINT` y los 400 pasos de entrenamiento implican una capacidad general muy limitada; no es apto para producción generalista.
+- Contexto corto: 4.096 tokens restringen tareas de contexto largo, razonamiento sobre documentos extensos y conversaciones multi-turno prolongadas.
+- Vocabulario mínimo: 4.311 tokens BPE con fertilidad de 2,02–2,57 caracteres/token degradan la eficiencia y pueden aumentar errores en texto fuera del dominio técnico.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está documentado y previsiblemente será deficiente.
+- Tokenizador con pérdida potencial de espacios: la model card advierte que el decodificador ByteLevel puede eliminar los cuatro espacios iniciales de indentación cuando el token 28 es una secuencia de espacio en bruto, lo que afecta a la fidelidad del código generado.
+- Riesgo de alucinación: no se documentan evaluaciones de factualidad; el entrenamiento estrecho en dominios técnicos aumenta la probabilidad de generalizaciones incorrectas fuera de ellos.
+- Sesgos: no se documentan análisis de sesgo; el corpus de entrenamiento (RFCs, manuales, código de sistemas) está sesgado hacia terminología y patrones técnicos en inglés.
+- Licencia Apache 2.0: permite uso comercial, pero la ausencia de garantías y el estado experimental desaconsejan su despliegue en producción sin evaluación previa.
+- Sin benchmarks públicos: no hay métricas verificables de MMLU, HumanEval, GSM8K ni similares, lo que impide comparar su rendimiento de forma objetiva.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/miceworks/Mark-Engineer-1.5B
-- Perfil del autor: https://huggingface.co/miceworks
-- Resultados de la búsqueda web: no se ha encontrado ningún enlace, paper, blog, repositorio de código ni demo que haga referencia a `miceworks/Mark-Engineer-1.5B`. Los resultados devueltos (leaderboards genéricos, VibeVoice-1.5B de Microsoft, comparativas de agentes de desarrollo y un artículo sobre modelos de 1,5B de DeepSeek) no guardan relación con este modelo y se han descartado como fuentes.
+- Modelo en Hugging Face: https://huggingface.co/miceworks/Mark-Engineer-1.5B
+- Repositorio de código y scripts de entrenamiento: https://github.com/thu12dta3/Mark-AI/tree/main/scripts
+- Dataset principal de entrenamiento: https://huggingface.co/datasets/miceworks/Mark-Ultra-Curriculum
+- Dataset de currículo abierto: https://huggingface.co/datasets/miceworks/Mark-Open-SLM-Curriculum
+- Dataset de ciberseguridad: https://huggingface.co/datasets/miceworks/Mark-Cyber-Curriculum

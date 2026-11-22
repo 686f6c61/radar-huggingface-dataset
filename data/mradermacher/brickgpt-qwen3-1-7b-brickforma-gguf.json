@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/BrickGPT-Qwen3-1.7B-BrickForma-GGUF",
+  "slug": "mradermacher-brickgpt-qwen3-1-7b-brickforma-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BrickGPT-Qwen3-1.7B-BrickForma-GGUF",
+  "created_at": "2026-11-21T22:42:42.000Z",
+  "updated_at": "2026-11-21T22:51:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Kyle308666/BrickGPT-Qwen3-1.7B-BrickForma",
+    "base_model:quantized:Kyle308666/BrickGPT-Qwen3-1.7B-BrickForma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959966976,
+  "storage_human": "16.0 GB",
+  "context_length": 40960,
+  "base_model": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickForma",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

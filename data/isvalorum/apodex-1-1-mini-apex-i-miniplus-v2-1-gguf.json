@@ -60,7 +60,7 @@
     "imatrix"
   ],
   "likes": 5,
-  "downloads_30d": 672,
+  "downloads_30d": 664,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
@@ -80,31 +80,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Mini bags Queen (@mini.bags.queen) | TikTok",
-      "url": "https://www.tiktok.com/@mini.bags.queen",
-      "snippet": "Join 2455 followers on TikTok for more asmrpackaging, asmr, minibaglovers content."
-    },
-    {
-      "title": "#minibagsqueen - TikTok",
-      "url": "https://www.tiktok.com/tag/minibagsqueen",
-      "snippet": "minibagsshop Mini bags Queen #asmrpackaging#asmr#baglover#minibaglovers#bagstyle Amy Disfefano here is your video hope …"
-    },
-    {
-      "title": "TikTok Shop Scams: Fake Deals, Sellers & Safety Tips – Gridinsoft Blog",
-      "url": "https://blog.gridinsoft.com/tiktok-shopping-scams/",
-      "snippet": "Jun 6, 2026 · Learn how TikTok Shop scams work in 2026: fake sellers, off-app checkout, phishing links, counterfeit products, refund …"
-    },
-    {
-      "title": "Is TikTok Shop Safe? Scams, Fakes & How to Stay Safe",
-      "url": "https://www.scamadviser.com/articles/is-tiktok-shop-safe-what-you-need-to-know-about-fake-sellers-and-counterfeit-products",
-      "snippet": "Mar 23, 2026 · Is TikTok Shop safe? The platform removed 70 million fake listings in 2025 — but scams still slip through. Here's how …"
-    },
-    {
-      "title": "Free Deepfake Checker — Check Any Image or Video | DeepGuard AI",
-      "url": "https://deepguardai.com/deepfake-checker/",
-      "snippet": "Free deepfake checker — check any image or video for AI manipulation in seconds. Paste a link or upload a file and get an instant …"
-    }
-  ]
+  "sources": []
 }

@@ -2,110 +2,102 @@
 
 ## Resumen
 
-EuroLLM-22B-grc-ro es un modelo de traduccion especializado en griego koiné y bizantino (patristico) hacia rumano, desarrollado por el usuario icxcn mediante fine-tuning LoRA sobre el modelo instructivo EuroLLM-22B-Instruct-2512 del proyecto utter. El modelo resuelve un nicho muy concreto: la traduccion de textos teologicos y patristicos griegos antiguos a un registro rumano eclesiastico y arcaizante, no al rumano moderno estandar. Con 22.637.328.384 parametros y un repositorio de 46 GB, se distribuye en pesos bf16 fusionados (LoRA integrado en el modelo base) listos para cargar en `transformers` y vLLM.
+EuroLLM-22B-grc-ro es un modelo de traducción especializado en griego koiné, bizantino y patrístico hacia rumano, desarrollado por el usuario icxcn mediante fine-tuning LoRA sobre el modelo base utter-project/EuroLLM-22B-Instruct-2512. El modelo aborda un nicho muy concreto: la traducción de textos griegos eclesiásticos y patrísticos a un registro rumano arcaico o eclesiástico (con formas como *întru* o *cela ce*), no al rumano moderno estándar. Se distribuye con licencia Apache 2.0 y pesos en formato safetensors fusionados en bf16, además del adaptador LoRA por separado.
 
-Se trata de un modelo en estado preview: los resultados reportados provienen de un split de desarrollo de 134 filas que tambien se uso para seleccionar el modelo y su variante de entrada, mientras que el split de test (106 filas) y una fuente retenida adicional (160 filas) no han sido evaluados. No se ha realizado evaluacion humana. La relevancia actual reside en su caracter de herramienta vertical para humanidades digitales y edicion de textos patristicos, un dominio donde los modelos generalistas rinden de forma notablemente inferior.
+La arquitectura subyacente es un transformer decoder-only tipo Llama con 22.637.328.384 parámetros totales (aproximadamente 22,6 mil millones). El entrenamiento se realizó sobre 5.810 pares griego-rumano a nivel de párrafo en la versión v2, que amplía los 3.577 pares de la v1 con 2.233 pares procedentes de las actas de los concilios ecuménicos. El modelo está marcado explícitamente como preview: las métricas publicadas corresponden solo a particiones de desarrollo y no se ha realizado evaluación humana.
 
-La licencia es Apache 2.0 y los idiomas declarados son griego antiguo (grc) y rumano (ro). El modelo base es un transformer denso de 22B, aunque la model card no detalla la arquitectura interna ni la longitud de contexto del modelo original.
+Su relevancia radica en la escasez de modelos abiertos especializados en griego antiguo y en la traducción a registros eclesiásticos del rumano. El autor reporta mejoras sustanciales frente al modelo base en las particiones de desarrollo (chrF++ de 59,97 frente a 47,61 del base zero-shot), aunque con intervalos de confianza amplios y sin evaluación sobre las particiones de test reservadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (hereda la del base EuroLLM-22B-Instruct-2512); detalles internos no disponibles |
+| Arquitectura | Transformer decoder-only (familia Llama, según tags del repositorio) |
 | Parametros totales | 22.637.328.384 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No se documentan cuantizaciones oficiales; pesos publicados en bf16. Al ser un modelo estandar de `transformers`, es cuantificable con herramientas externas (GPTQ, AWQ, GGUF) sin validacion reportada |
-| Idiomas soportados | Griego antiguo/koiné (grc) y rumano (ro) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; el adaptador LoRA en fp32) |
+| Idiomas soportados | grc (griego antiguo/koiné), ro (rumano) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (bf16 fusionado) y adaptador LoRA separado en `adapter/` (rank 32, fp32, 702 MB) |
+| Formato de pesos | safetensors (bf16 fusionado); adaptador LoRA separado (rank 32, fp32, 702 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `utter-project/EuroLLM-22B-Instruct-2512`, un transformer denso de 22B parametros, y se obtiene mediante LoRA de rango 32 y alpha 64 con dropout 0.05, aplicado sobre las proyecciones de atencion y MLP del modelo de lenguaje. Los pesos base se mantienen en bf16, el adaptador en fp32 y el computo en bf16, sin cuantizacion. El entrenamiento consistio en 2 epocas con learning rate 1e-4, schedule coseno y 3% de warmup, batch efectivo de 16 secuencias (2 x 8 de acumulacion de gradiente), maximo de 2.560 tokens, semilla 0 y gradient checkpointing, con la perdida calculada unicamente sobre la respuesta en rumano. El coste fue de aproximadamente 49 minutos en una H200 (2.953 s), usando `transformers` 5.22.2, `peft` 0.21.2 y `torch` 2.15.0.
+El modelo parte de utter-project/EuroLLM-22B-Instruct-2512, un transformer decoder-only de aproximadamente 22,6 mil millones de parámetros, y se adapta mediante LoRA de rango 32 sobre 5.810 pares de traducción griego-rumano a nivel de párrafo (mediana de unos 610 caracteres griegos, máximo aproximado de 2.300). Los datos de la v1 (3.577 pares) se complementan con 2.233 pares adicionales extraídos de las actas de los concilios ecuménicos. El autor advierte que el origen de las referencias rumanas de esos textos conciliares no está documentado y podrían ser traducción automática.
 
-El dataset de entrenamiento consta de 3.577 pares griego-rumano a nivel de parrafo (unas 363k palabras griegas, 423k rumanas, 1,91M tokens) procedentes de 14 fuentes bilingues: Nuevo Testamento, dos ediciones de los Salmos, un libro liturgico y obras patristicas y asceticas. Aproximadamente la mitad del griego esta en Unicode politonico correcto y la otra mitad proviene de PDFs con OCR, con diacriticos colapsados y errores de reconocimiento; por ello el modelo exige una normalizacion de entrada a forma monotonica mediante `monotonic()` de `grc_normalize.py`, que elimina espiritus, iota suscrita, macron y breve, y mapea grave y circunflejo a agudo. La limpieza incluyo normalizacion NFC, eliminacion de marcadores de folio, corchetes editoriales, citas parenteticas, numeros de seccion y digitos de notas al pie, y descarte de filas con ratios de longitud atipicos, tokens fusionados, griego con script mixto, encabezados incrustados o duplicados.
+Una innovación operativa destacable es la normalización obligatoria de la entrada: el modelo se entrenó con el griego plegado a forma monotónica mediante la función `monotonic()` de `grc_normalize.py`, que elimina espíritus, iota suscrita, macron y breve, y convierte grave y circunflejo en agudo. El prompt de entrenamiento es un único mensaje de usuario con la instrucción "Translate the following Koine/Ancient Greek text into Romanian. Output only the Romanian translation." seguida del texto griego. No se documenta en la información disponible el uso de RLHF o DPO durante el ajuste.
 
 ## Capacidades
 
-- Traduccion de griego koiné y bizantino (patristico) a rumano con registro eclesiastico y arcaizante (formas como *întru* o *cela ce*), no rumano moderno.
-- Generacion de texto condicionada por prompt de sistema y mensaje de usuario mediante chat template del modelo base.
-- Manejo de entradas a nivel de parrafo: mediana de unos 620 caracteres griegos y maximo de unos 2.300 en el conjunto de evaluacion.
-- Traduccion de genero biblico (Nuevo Testamento, Salmos) y de literatura patristica y ascetica.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
-- No se documenta capacidad de vision ni audio.
-- Capacidad multilingue limitada a los dos idiomas del fine-tuning; el modelo base soporta mas idiomas, pero el adaptador esta especializado en el par grc-ro.
-- No se documenta modo thinking ni decodificacion especulativa.
+- Traducción de griego koiné, bizantino y patrístico a rumano con registro eclesiástico o arcaico.
+- Generación de texto conversacional mediante plantilla de chat (formato de mensajes de usuario).
+- Manejo de entradas a nivel de párrafo, con una mediana de aproximadamente 610 caracteres griegos y un máximo probado de unos 2.300.
+- Capacidad multilingüe limitada a la pareja grc-ro; no se documentan otras direcciones ni idiomas.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
+- Compatible con text-generation-inference y vLLM según los tags del repositorio.
 
 ## Casos de uso
 
-- Traduccion asistida de patristica griega para publicaciones editoriales: el modelo traduce parrafos completos de obras de los Padres de la Iglesia a un rumano eclesiastico coherente con el registro de las traducciones ortodoxas, reduciendo el trabajo de primera pasada del traductor humano.
-- Digitalizacion y puesta en acceso de fondos OCR: al aceptar entrada normalizada a monotonico, permite procesar texto griego procedente de PDFs con diacriticos colapsados y errores de OCR, un escenario frecuente en bibliotecas digitales teologicas.
-- Creacion de corpus paralelos griego-rumano: util para proyectos de humanidades digitales que necesiten alinear y ampliar corpus bilingues en el dominio patristico.
-- Traduccion liturgica y catequetica: adecuado para textos de uso eclesiastico donde se espera registro arcaizante en lugar de rumano contemporaneo.
-- Investigacion en traduccion automatica de lenguas historicas: sirve como referencia especializada y como punto de partida para experimentos de fine-tuning sobre otros pares con lenguas clasicas.
-- Pre-traduccion en flujos de trabajo con revision humana: integrable via vLLM en un servicio interno que genere borradores para que un revisor teologico los corrija, dado el estado preview y la ausencia de evaluacion humana.
-- Evaluacion comparativa de modelos en dominios de bajos recursos: el modelo documenta curvas de aprendizaje y comparaciones con Gemma 4 31B, Gemma 4 12B y Krikri-8B, lo que lo hace util como baseline en experimentos de traduccion de lenguas historicas.
+- Traducción de textos patrísticos para edición digital: el modelo puede procesar párrafos de los Padres de la Iglesia y devolver una versión rumana en registro eclesiástico, adecuada para publicaciones confesionales que mantienen la terminología tradicional.
+- Digitalización de actas conciliares: dado el entrenamiento específico sobre 2.233 pares de las actas de los concilios ecuménicos, es adecuado para pre-traducir estos documentos antes de la revisión humana, con la advertencia de que las referencias de entrenamiento podrían ser traducción automática.
+- Traducción litúrgica y bíblica asistida: las filas de Biblia del conjunto de desarrollo muestran chrF++ de 71,91, lo que lo hace útil como borrador para textos del Nuevo Testamento y salmos antes de la corrección editorial.
+- Investigación en traducción de lenguas históricas: sirve como línea base reproducible para experimentos de traducción grc-ro, con pesos abiertos, adaptador LoRA separado y configuración de entrenamiento publicada en `run.json`.
+- Pipeline de pre-traducción con revisión humana: al cargarse directamente en vLLM (`vllm serve icxcn/EuroLLM-22B-grc-ro`), puede integrarse en flujos por lotes donde un traductor revisa la salida, normalizando el griego en el cliente con `monotonic()`.
+- Creación de corpus paralelos: puede generar traducciones preliminares de grandes volúmenes de texto griego para construir corpus alineados que después se validen manualmente, aprovechando la licencia Apache 2.0 para uso comercial.
+- Experimentación con adaptadores LoRA: el adaptador de rango 32 en fp32 (702 MB) permite estudiar el efecto del ajuste sobre el modelo base sin necesidad de cargar los pesos fusionados completos.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre el split de desarrollo (134 filas), decodificacion greedy:
+Los resultados publicados corresponden exclusivamente a particiones de desarrollo; las particiones de test (106 filas, 74 de actas conciliares y 160 de fuente reservada) no se han evaluado.
 
-| Sistema | chrF++ | COMET-22 | chrF++ filas Biblia | chrF++ filas patristicas |
+| Sistema | chrF++ (134 filas dev) | COMET-22 | chrF++ Biblia | chrF++ patrístico |
 |---|---|---|---|---|
-| Modelo base, zero-shot (mismo formato de entrada) | 47,61 | no medido | 52,17 | 44,67 |
-| **Este modelo** | **58,99** (IC 95%: 56,73–61,19) | **0,8018** (0,7918–0,8147) | 71,22 | 51,19 |
+| Base zero-shot | 47,61 | no medido | 52,17 | 44,67 |
+| v1 | 58,99 (IC 95%: 56,95–61,17) | 0,8018 (0,7899–0,8129) | 71,22 | 51,19 |
+| v2 (este modelo) | 59,97 (57,85–62,19) | 0,8034 (0,7904–0,8153) | 71,91 | 52,42 |
 
-Curva de aprendizaje (mismos ajustes, subconjuntos anidados del entrenamiento, split de desarrollo):
+| Sistema | chrF++ (91 filas actas conciliares) | COMET-22 |
+|---|---|---|
+| v1 | 53,66 (51,14–55,84) | 0,7513 (0,7367–0,7649) |
+| v2 (este modelo) | 64,76 (62,74–66,81) | 0,7822 (0,7662–0,7958) |
 
-| Pares de entrenamiento | Perdida en dev | chrF++ | Biblia | Patristico |
-|---|---|---|---|---|
-| 894 (25%) | 0,912 | 55,73 | 66,99 | 48,53 |
-| 1.788 (50%) | 0,865 | 55,92 | 69,61 | 47,36 |
-| 2.683 (75%) | 0,829 | 57,41 | 70,78 | 48,97 |
-| 3.577 (100%, este modelo) | 0,802 | 58,99 | 71,22 | 51,19 |
-
-Notas metodologicas: chrF++ corresponde a `sacrebleu CHRF(word_order=2)`; COMET usa `Unbabel/wmt22-comet-da`; los intervalos son bootstrap al 95% sobre filas (200 remuestreos). Las filas de "Biblia" son el Nuevo Testamento y dos ediciones de los Salmos (65 filas de dev); las "patristicas" son el resto (69 filas). La decodificacion greedy no es reproducible bit a bit entre ejecuciones: el mismo modelo fusionado puntuo 54,99 y 54,37 chrF++ en dos ejecuciones de vLLM en una prueba separada de otro modelo, por lo que diferencias inferiores a 1 chrF++ no deben interpretarse como reales. Entre cuatro modelos base afinados (tambien Gemma 4 31B, Gemma 4 12B y Krikri-8B), este empató con el mejor en dev (Gemma 4 31B: 59,43 chrF++, COMET 0,8019; diferencia no significativa) y supero a los modelos de 12B y 8B en unos 4-5 chrF++.
+La diferencia pareada v2 − v1 en el conjunto de 134 filas es de +0,98 chrF++ (IC 95%: −0,12 a +2,27) y +0,0016 COMET (−0,0064 a +0,0094), ambos dentro del ruido. En las actas conciliares la diferencia es de +11,09 chrF++ (9,10 a 13,33) y +0,0309 COMET (0,0153 a 0,0450), aunque el autor advierte que las referencias de esas filas podrían ser traducción automática. En el bake-off de la v1 con cuatro modelos base ajustados, este base empató con Gemma 4 31B en desarrollo (59,43 chrF++, COMET 0,8019) y superó a los modelos de 12B y 8B en unos 4–5 chrF++.
 
 ## Requisitos de hardware
 
-- Inferencia en bf16: los pesos ocupan aproximadamente 45 GB, por lo que se necesita al menos una GPU de 48 GB (A6000, L40S, A100 80GB, H100 80GB) o varias GPUs con `device_map="auto"`.
-- En cuantizacion de 8 bits, la huella ronda los 23 GB, lo que permite ejecucion en una RTX 4090 (24 GB) con margen ajustado; en 4 bits, unos 12-13 GB, viable en GPUs consumer de 16 GB o superiores. Estas cuantizaciones no estan validadas por el autor.
-- GPU recomendadas para produccion: H100 o A100 80GB para bf16 sin cuantizar; L40S o A6000 para despliegues de una sola GPU.
-- Despliegue: `transformers` (ejemplo incluido en `example.py`) y vLLM (`vllm serve icxcn/EuroLLM-22B-grc-ro`), sirviendo los pesos fusionados y normalizando en el cliente. El adaptador puede cargarse con `PeftModel.from_pretrained` sobre el modelo base.
-- No se documentan latencia ni throughput medidos. El coste de entrenamiento reportado (2.953 s en una H200 para 2 epocas sobre 3.577 pares) no es extrapolable directamente a inferencia.
+- VRAM estimada para inferencia en bf16: aproximadamente 45 GB solo para pesos (22,6 mil millones de parámetros × 2 bytes), más caché KV y activaciones; se recomienda un mínimo de 48 GB y preferiblemente 80 GB para margen.
+- GPU recomendadas: A100 80 GB, H100 80 GB o configuraciones multi-GPU para bf16. En consumer GPU no cabe en bf16.
+- Cuantización: no se documentan versiones GGUF ni cuantizaciones publicadas; no se confirma que quepa en RTX 4090 (24 GB) sin cuantizar a 4 bits, opción no disponible en el repositorio.
+- Opciones de despliegue: transformers (ejemplo incluido en `example.py`), vLLM (`vllm serve icxcn/EuroLLM-22B-grc-ro`) y text-generation-inference según los tags.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- El adaptador LoRA por separado (702 MB) permite cargar el base y aplicar el adaptador con PEFT, reduciendo el almacenamiento necesario respecto a los pesos fusionados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | chrF++ dev (grc-ro) | COMET-22 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| **EuroLLM-22B-grc-ro** | 22,6B | no disponible | 58,99 | 0,8018 | Apache 2.0 | Hugging Face (preview) |
-| Gemma 4 31B (fine-tuned, mismo experimento) | 31B (aprox.) | no disponible | 59,43 | 0,8019 | no disponible en la informacion | no disponible |
-| Gemma 4 12B (fine-tuned, mismo experimento) | 12B (aprox.) | no disponible | ~4-5 chrF++ por debajo | no disponible | no disponible en la informacion | no disponible |
-| Krikri-8B (fine-tuned, mismo experimento) | 8B (aprox.) | no disponible | ~4-5 chrF++ por debajo | no disponible | no disponible en la informacion | no disponible |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| EuroLLM-22B-grc-ro (este) | 22,6 B | no disponible | Traducción grc-ro eclesiástica | Apache 2.0 | Hugging Face, preview |
+| Gemma 4 31B (ajustado en bake-off v1) | 31 B | no disponible | Traducción grc-ro | no disponible en la información | Referenciado en la model card |
+| Gemma 4 12B (ajustado en bake-off v1) | 12 B | no disponible | Traducción grc-ro | no disponible en la información | Referenciado en la model card |
+| Krikri-8B (ajustado en bake-off v1) | 8 B | no disponible | Traducción grc-ro | no disponible en la información | Referenciado en la model card |
 
-La comparacion se limita a los modelos citados en la model card; no se dispone de datos de otros sistemas especializados en griego antiguo-rumano.
+En el bake-off de la v1, el base de este modelo empató con Gemma 4 31B en desarrollo (59,43 chrF++ frente a 59,97 de la v2) y superó a los modelos de 12B y 8B en aproximadamente 4–5 chrF++. No se dispone de datos de contexto ni de licencia de los modelos comparados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado preview: los resultados provienen de un split de desarrollo usado tambien para seleccionar el modelo y la variante de entrada; el split de test (106 filas) y una fuente retenida (160 filas) no han sido evaluados.
-- No se ha realizado evaluacion humana de la calidad de traduccion.
-- El registro de salida es rumano eclesiastico y arcaizante, no rumano moderno; no es adecuado para traduccion a rumano contemporaneo sin post-edicion.
-- Requiere normalizacion obligatoria de la entrada griega a forma monotonica con `monotonic()`; omitirla degrada el rendimiento de forma no cuantificada.
-- Comportamiento no probado en entradas muy superiores al maximo de evaluacion (unos 2.300 caracteres griegos); la longitud de contexto del modelo base no se documenta.
-- La decodificacion greedy no es reproducible bit a bit entre ejecuciones; diferencias inferiores a 1 chrF++ no deben considerarse significativas.
-- El entrenamiento uso solo 3.577 pares y la perdida en dev seguia bajando (~0,055 por duplicacion de datos) cuando se agotaron los datos, lo que sugiere margen de mejora con mas corpus.
-- Parte del corpus griego proviene de OCR con diacriticos colapsados y errores, lo que puede introducir ruido en la calidad de las traducciones.
-- Los datos de entrenamiento no se distribuyen con el modelo, lo que limita la reproducibilidad completa y la auditoria del corpus.
-- No se documentan sesgos especificos; al estar entrenado en textos religiosos, cabe esperar sesgo de dominio hacia vocabulario y estilo teologico.
-- Riesgo de alucinacion en pasajes oscuros o danados por OCR no cuantificado; se recomienda revision humana en produccion editorial.
-- La licencia Apache 2.0 permite uso comercial, pero el estado preview y la ausencia de evaluacion en test desaconsejan su uso sin validacion propia.
+- Estado preview: las métricas publicadas solo cubren particiones de desarrollo; las particiones de test y la fuente reservada de 160 filas no se han evaluado, y no hay evaluación humana.
+- Las referencias rumanas de las actas conciliares podrían ser traducción automática, por lo que la mejora de +11,09 chrF++ en ese dominio no es evidencia de calidad frente a una traducción humana verificada.
+- Bucle de repetición con decodificación greedy: ocurre en 3 de las 225 filas de desarrollo en la v2 (2 en la v1); esas filas se incluyen en las puntuaciones.
+- La decodificación greedy no es reproducible bit a bit entre ejecuciones; diferencias inferiores a aproximadamente 1 chrF++ no deben interpretarse como reales.
+- El registro de salida es rumano arcaico o eclesiástico, no rumano moderno estándar, lo que limita su uso fuera de contextos confesionales o históricos.
+- Requiere normalización obligatoria de la entrada griega con `monotonic()`; sin ella, el rendimiento puede degradarse.
+- Comportamiento no probado en entradas mucho más largas que 2.300 caracteres griegos.
+- No se documentan sesgos específicos, pero al entrenarse sobre textos religiosos puede reproducir sesgos propios de ese corpus.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base EuroLLM-22B-Instruct-2512 debe verificarse por separado para confirmar compatibilidad.
+- Riesgo de alucinación inherente a la generación de texto; en traducción puede manifestarse como omisiones o adiciones no presentes en el original.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/icxcn/EuroLLM-22B-grc-ro
 - Modelo base: https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512
-- Repositorio del proyecto EuroLLM: no disponible en la informacion proporcionada
-- Paper de EuroLLM: no disponible en la informacion proporcionada
-- Demo: no disponible en la informacion proporcionada
+- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

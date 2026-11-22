@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp · Hugging Face",
-      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp",
-      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ4e-fp16-mtp scottlowry/Qwen3.8-27B-oQ4e-fp16 ..."
-    },
-    {
-      "title": "scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp at main - Hugging Face",
-      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp/tree/main",
-      "snippet": "scottlowry / Qwen3.8-27B-oQ4e-fp16-mtp like 5 MLX Safetensors qwen3_5 oq quantized 4-bit precision Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "Qwen3.8 - lmstudio.ai",
-      "url": "https://lmstudio.ai/models/qwen3.8",
-      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
-    },
-    {
-      "title": "qwen3.8-27b - Cloudflare AI docs",
-      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
-      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
-    }
-  ]
+  "sources": []
 }

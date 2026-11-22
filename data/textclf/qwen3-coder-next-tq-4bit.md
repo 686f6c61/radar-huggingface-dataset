@@ -2,90 +2,95 @@
 
 ## Resumen
 
-Qwen3-Coder-Next es un modelo de lenguaje de 80.000 millones de parametros en arquitectura MoE con solo 3.000 millones activos, desarrollado por el equipo Qwen (Alibaba) especificamente para agentes de codigo y desarrollo local. Esta ficha cubre la variante cuantizada a 4 bits (TQ-4bit) publicada por el usuario textclf en Hugging Face, que reduce el peso del modelo a aproximadamente 41,7 GB manteniendo la licencia Apache 2.0.
+Qwen3-Coder-Next-TQ-4bit es una cuantizacion a 4 bits del modelo Qwen3-Coder-Next, un transformer de tipo Mixture-of-Experts (MoE) desarrollado por Alibaba Qwen y orientado a generacion de codigo y flujos agenticos. La cuantizacion la publica el usuario textclf en Hugging Face y emplea Coded Quantization (CQ), un metodo sin calibracion que empaqueta los pesos en 4 bits para reducir de forma sustancial los requisitos de memoria frente a un despliegue en BF16/FP16.
 
-El modelo combina una arquitectura hibrida con capas Gated DeltaNet y Gated Attention distribuidas en 48 capas, 512 expertos (10 activos mas 1 compartido) y una ventana de contexto nativa de 262.144 tokens. Su diseno permite un rendimiento comparable a modelos con 10-20 veces mas parametros activos, lo que lo hace especialmente eficiente para despliegue de agentes de codigo en entornos de produccion.
+El modelo base declara aproximadamente 80.000 millones de parametros totales con unos 3.000 millones activados por token, y una longitud de contexto de 262.144 tokens. Esa combinacion de contexto largo y activacion dispersa lo hace adecuado para tareas de ingenieria de software sobre repositorios extensos, uso de herramientas y razonamiento multi-paso. El checkpoint cuantizado mantiene la licencia Apache 2.0 del modelo original.
 
-La version cuantizada TQ-4bit es compatible con el ecosistema transformers, vLLM, SGLang, Ollama, LM Studio y llama.cpp, y esta orientada a integracion con IDEs y CLI como Claude Code, Qwen Code, Qoder, Trae o Cline. El modelo solo soporta modo no-thinking y no genera bloques de razonamiento en su salida.
+La relevancia de esta ficha esta en que el formato CQ no es un GGUF ni un GPTQ/AWQ convencional: requiere el plugin de cuantizacion de vLLM y los kernels CUDA propios incluidos en la imagen Docker de ThousandML. Esto condiciona por completo el despliegue y conviene tenerlo claro antes de evaluar el modelo. Nota importante: el Hub reporta 752.270.080 parametros en los tensores safetensors del repositorio, cifra que el autor atribuye al empaquetado 4-bit y no al numero de parametros de la arquitectura original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE hibrida con Gated DeltaNet y Gated Attention (48 capas, layout 12 x (3 x (Gated DeltaNet -> MoE) -> 1 x (Gated Attention -> MoE))) |
-| Parametros totales | 80.000 millones (80B) segun model card; los metadatos de safetensors indican 752.270.080, posiblemente correspondiente a un shard parcial |
-| Parametros activos | 3.000 millones (3B) |
-| Longitud de contexto | 262.144 tokens (256K) |
-| Tipos de cuantizacion | TQ-4bit (cuantizacion de 4 bits) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Mixture-of-Experts (MoE), familia Qwen3-Next; detalles de capas no disponibles |
+| Parametros totales | ~80B en el modelo base; 752.270.080 en los tensores safetensors del repo (empaquetado 4-bit) |
+| Parametros activos | ~3B por token |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | Coded Quantization (CQ) 4-bit, sin calibracion; nombre de cuantizacion `cq` |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (empaquetado 4-bit CQ); no compatible con GGUF |
+| Runtime | vLLM con plugin CQ y kernels CUDA propios (imagen Docker `thousandml/cq:4bit-main`) |
+| Tamano del repositorio | 41,8 GB |
+| Descargas / likes | 639 / 0 |
+| Creado / actualizado | 2026-08-30 / 2026-10-16 |
 
 ## Arquitectura y entrenamiento
 
-Qwen3-Coder-Next emplea una arquitectura causal MoE hibrida con 48 capas organizadas en un patron repetitivo: por cada bloque de 4 capas, las 3 primeras combinan Gated DeltaNet (atencion lineal con 32 cabezas V y 16 cabezas QK, dimension de cabeza 128) seguidas de una capa MoE, y la cuarta combina Gated Attention (16 cabezas Q y 2 cabezas KV, dimension de cabeza 256, RoPE de dimension 64) seguida de otra capa MoE. El bloque MoE contiene 512 expertos con 10 activos y 1 compartido, con dimension intermedia de 512.
+El modelo subyacente es Qwen3-Coder-Next, un transformer con capas de mezcla de expertos en el que cada token activa aproximadamente 3.000 millones de parametros de un total de unos 80.000 millones. La model card de esta cuantizacion no detalla el numero de capas, la configuracion de expertos, el mecanismo de atencion ni la composicion del dataset de entrenamiento; esa informacion corresponde a la model card original de Qwen, que el autor remite explicitamente y que no forma parte de la informacion disponible aqui. Tampoco se documentan fases de RLHF, DPO ni datos de post-entrenamiento.
 
-El entrenamiento comprende fases de pretraining y post-training, con una receta especifica orientada a capacidades agenciales: razonamiento de horizonte largo, uso complejo de herramientas y recuperacion ante fallos de ejecucion. El modelo no soporta modo thinking y no genera bloques de razonamiento en su salida, lo que simplifica su integracion en pipelines de agentes. La cuantizacion TQ-4bit aplicada por textclf reduce el peso a 41,7 GB sin modificar la arquitectura subyacente.
+La innovacion tecnica de este checkpoint no esta en la arquitectura sino en el esquema de cuantizacion. CQ es un metodo post-entrenamiento sin calibracion: no requiere un corpus representativo para estimar parametros de cuantizacion, lo que evita atar el resultado a la distribucion de un dataset concreto y, segun el autor, favorece la generalizacion a cargas de trabajo distintas de las de calibracion. El precio es una dependencia fuerte del runtime: los pesos solo se ejecutan con el plugin de vLLM y los kernels CUDA de ThousandML, no con llama.cpp, Ollama ni TGI.
 
 ## Capacidades
 
-- Generacion de codigo y completado en multiples lenguajes de programacion, con soporte para contextos largos de hasta 256K tokens.
-- Razonamiento de horizonte largo (long-horizon reasoning) para tareas agenciales complejas que requieren multiples pasos.
-- Tool calling y function calling avanzado, con parser especifico `qwen3_coder` para vLLM y SGLang.
-- Recuperacion ante fallos de ejecucion: el modelo puede detectar errores en la ejecucion de codigo y corregir su estrategia.
-- Integracion con multiples scaffolds de agentes: Claude Code, Qwen Code, Qoder, Kilo, Trae y Cline.
-- Capacidades multilingues: no especificadas en la informacion disponible.
-- Modo no-thinking exclusivo: no genera bloques de razonamiento intermedios, lo que reduce latencia en despliegues agenciales.
+- Generacion de codigo en multiples lenguajes, con enfasis en tareas de desarrollo de software segun la descripcion del modelo base.
+- Razonamiento multi-paso y flujos agenticos de codificacion.
+- Tool calling / function calling, con soporte de eleccion automatica de herramienta en vLLM mediante `--enable-auto-tool-choice` y el parser `--tool-call-parser qwen3_coder`.
+- Procesamiento de contexto largo: hasta 262.144 tokens, adecuado para repositorios completos o historiales extensos.
+- Servicio mediante API compatible con OpenAI a traves de vLLM.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Vision, audio o modo thinking explicito: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Agente de codigo autonomo en IDE: el modelo se integra con herramientas como Claude Code o Qwen Code para ejecutar tareas de desarrollo completas, aprovechando su ventana de 256K tokens para mantener el contexto del repositorio y las instrucciones del usuario sin truncamientos.
-- Generacion de codigo en pipelines CI/CD: su capacidad de tool calling permite conectarlo a APIs de repositorios y sistemas de build para generar parches, resolver issues y ejecutar tests de forma automatica en cada commit.
-- Refactorizacion de codigo legacy: con 256K tokens de contexto, puede analizar proyectos completos y proponer refactorizaciones coherentes, manteniendo la coherencia entre archivos interdependientes.
-- Asistente de desarrollo local en equipos reducidos: al requerir solo 3B parametros activos, puede desplegarse en estaciones de trabajo con GPUs de gama alta, ofreciendo asistencia de codigo sin depender de APIs externas.
-- Generacion de tests unitarios y de integracion: el modelo puede analizar funciones y clases existentes y generar suites de tests completas, incluyendo casos limite y pruebas de regresion.
-- Documentacion automatica de codigo: su capacidad de razonamiento de horizonte largo permite generar documentacion tecnica coherente a partir del codigo fuente, incluyendo ejemplos de uso y advertencias de compatibilidad.
-- Resolucion de issues en repositorios open source: el modelo puede analizar reportes de bugs, localizar el codigo responsable y proponer parches, gracias a su entrenamiento en recuperacion ante fallos y uso de herramientas.
+- Asistente de codigo sobre repositorios completos: con 262.144 tokens de contexto puede ingerir varios modulos, tests y ficheros de configuracion en una sola peticion y responder preguntas transversales sobre el codigo sin trocear el contexto.
+- Agentes de ingenieria de software: el soporte de tool calling con parser dedicado permite encadenar lecturas de ficheros, ejecucion de tests y aplicacion de parches en bucles multi-paso gestionados por un orquestador externo.
+- Revision de pull requests automatizada: el modelo puede analizar el diff junto con el contexto de los ficheros afectados y emitir comentarios tecnicos, aprovechando la ventana larga para no perder dependencias.
+- Migracion y refactorizacion de bases de codigo: la combinacion de contexto extenso y capacidades de codigo permite proponer cambios coherentes en multiples ficheros a la vez.
+- Generacion de tests y documentacion tecnica: a partir de modulos existentes, el modelo puede producir suites de pruebas y documentacion de API, tarea donde el contexto largo reduce la necesidad de resumir el codigo de entrada.
+- Backend de autocompletado y chat para IDE: desplegado con vLLM y la API compatible con OpenAI, puede servir peticiones de baja latencia desde un editor, aunque el throughput real dependera del hardware y de la carga.
+- Automatizacion en pipelines de CI/CD: integrado como servicio HTTP, puede generar parches candidatos, resumir fallos de build o clasificar errores a partir de logs extensos.
 
 ## Benchmarks y rendimiento
 
-La model card referencia imagenes de benchmarks (disponibles en el blog oficial de Qwen) que comparan Qwen3-Coder-Next con modelos de mayor tamano, y la documentacion de Unsloth indica que es el modelo con mejor rendimiento para su tamano, comparable a modelos con 10-20 veces mas parametros activos. Sin embargo, los numeros concretos de MMLU, HumanEval, GSM8K o SWE-bench Pro no estan disponibles en la informacion proporcionada. No se inventan datos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta cuantizacion no incluye tablas de MMLU, HumanEval, GSM8K, SWE-bench ni metricas de latencia o throughput, y tampoco se aportan datos de degradacion respecto al modelo en BF16.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el peso cuantizado a 4 bits ocupa aproximadamente 41,7 GB, por lo que se recomienda un minimo de 48 GB de VRAM para inferencia con contexto estandar.
-- GPUs recomendadas: NVIDIA A100 80GB, H100, A6000 48GB o multiples GPUs en paralelo tensorial (el despliegue oficial sugiere tensor parallel sobre 4 GPUs).
-- GPUs de consumo: una RTX 4090 (24 GB) o RTX 5090 (32 GB) no son suficientes para el modelo completo en 4 bits; se necesitarian tecnicas de offloading a CPU o cuantizacion adicional.
-- Opciones de despliegue: vLLM (>= 0.15.0) y SGLang (>= 0.5.8) con API compatible con OpenAI; tambien compatible con Ollama, LM Studio, MLX-LM, llama.cpp y KTransformers.
-- Latencia y throughput: no disponibles en la informacion proporcionada; el despliegue con tensor parallel en 4 GPUs es la configuracion recomendada por el equipo de Qwen.
-- Nota: si se producen errores de memoria (OOM), se recomienda reducir la longitud de contexto a 32.768 tokens.
+- VRAM estimada: con pesos empaquetados en 4 bits, el repositorio ocupa 41,8 GB, por lo que se necesita al menos esa cantidad de memoria para los pesos, mas el espacio de cache KV y buffers de activacion. Para 262.144 tokens de contexto la cache KV puede ser muy voluminosa y exigir GPUs de 80 GB o configuraciones multi-GPU.
+- GPU recomendadas: no disponibles de forma explicita en la informacion proporcionada. Por el tamano del checkpoint, un despliegue comodo apunta a A100/H100 de 80 GB o a varias GPUs; no hay datos publicados de funcionamiento en RTX 4090.
+- GPU de consumo: no confirmado. Los 41,8 GB de pesos empaquetados exceden la VRAM de una RTX 4090 (24 GB) y de una RTX 5090 (32 GB), por lo que no cabe en una unica GPU consumer convencional sin tecnicas adicionales no documentadas.
+- Despliegue: exclusivamente mediante la imagen Docker `docker.io/thousandml/cq:4bit-main` con `vllm serve ... --quantization cq`. No hay soporte documentado para llama.cpp, Ollama, TGI ni vLLM estandar sin el plugin CQ.
+- Entornos WSL2: requiere la variable `VLLM_WSL2_ENABLE_PIN_MEMORY=1` si vLLM reporta que UVA no esta disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Cuantizacion | Runtime | Licencia |
 |---|---|---|---|---|---|
-| Qwen3-Coder-Next (TQ-4bit) | 80B | 3B | 256K | Apache 2.0 | Agentes de codigo, tool calling |
-| Qwen3-Coder-30B-A3B-Instruct | 30B | 3B | No disponible | Apache 2.0 | Codigo y agentes, tamano reducido |
-| Qwen3-Coder-480B-A35B-Instruct | 480B | 35B | No disponible | Apache 2.0 | Codigo y agentes, maximo rendimiento |
+| Qwen3-Coder-Next-TQ-4bit (esta ficha) | ~80B totales / ~3B activos (base); 752M en tensores del repo | 262.144 | CQ 4-bit sin calibracion | vLLM + plugin CQ | Apache 2.0 |
+| Qwen/Qwen3-Coder-Next (base) | ~80B totales / ~3B activos | 262.144 | BF16/FP16 (presumiblemente) | vLLM estandar y otros | Apache 2.0 |
+| Alternativas de codigo de ~30B densos | no disponible | no disponible | GPTQ/AWQ/GGUF habituales | llama.cpp, vLLM, TGI | variable |
+| Alternativas MoE de codigo de gran tamano | no disponible | no disponible | variable | variable | variable |
 
-Qwen3-Coder-Next se situa como la opcion intermedia de la familia Qwen3-Coder: ofrece el mismo numero de parametros activos que la variante de 30B pero con un total de 80B, lo que le permite almacenar mas conocimiento en los expertos sin incrementar el coste computacional por token. La variante de 480B ofrece mayor capacidad pero requiere infraestructura de multiples GPUs de alta gama. No se dispone de datos de benchmarks comparativos publicados en la informacion proporcionada.
+La informacion proporcionada solo permite comparar de forma fiable con el modelo base. Cualquier comparacion con otras familias de modelos de codigo requeriria datos que no estan disponibles en esta ficha.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta modo no-thinking: no genera bloques de razonamiento intermedios, lo que puede limitar su capacidad de explicar su proceso de decision en tareas complejas.
-- La ventana de contexto de 256K tokens puede provocar errores de memoria (OOM) en hardware limitado; se recomienda reducirla a 32.768 tokens en esos casos.
-- Los idiomas soportados no estan especificados en la informacion disponible, por lo que el rendimiento en idiomas distintos del ingles o el chino no esta garantizado.
-- La cuantizacion TQ-4bit puede introducir degradacion de precision en tareas de razonamiento numerico o generacion de codigo muy especifico, aunque no se dispone de datos cuantitativos al respecto.
-- El repositorio de Hugging Face muestra 0 descargas y 0 likes, lo que indica que es una publicacion reciente sin validacion comunitaria.
-- Los metadatos de safetensors indican 752.270.080 parametros, lo que no coincide con los 80B declarados en la model card; es posible que el archivo de pesos este fragmentado en shards o que exista un error en los metadatos.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos adicionales del modelo original de Qwen en su repositorio oficial.
+- Dependencia total del runtime propietario: los pesos CQ solo funcionan con el plugin de vLLM y los kernels CUDA de ThousandML. Esto limita la portabilidad, complica la auditoria del codigo de inferencia y crea un punto unico de dependencia en produccion.
+- Sin datos de calidad: no hay benchmarks que cuantifiquen la perdida de rendimiento respecto al modelo en BF16, ni evaluaciones de robustez tras la cuantizacion.
+- Numero de parametros confuso: el Hub reporta 752.270.080 parametros, muy por debajo de los ~80B del modelo base. Cualquier herramienta que dimensione recursos a partir de ese dato subestimara los requisitos reales.
+- Riesgo de alucinacion: inherente a los modelos de codigo; puede generar APIs inexistentes, imports erroneos o tests que pasan por casualidad. Requiere validacion con ejecucion real y revision humana.
+- Sesgos: no documentados en la informacion disponible. Al ser un modelo entrenado principalmente para codigo, su comportamiento fuera de ese dominio puede ser deficiente.
+- Idiomas: no se especifica la cobertura linguistica; el soporte de castellano no esta confirmado.
+- Contexto largo: aunque se declaran 262.144 tokens, no hay datos sobre degradacion de calidad en ventanas muy extensas ni sobre el coste real de cache KV a esa longitud.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar los terminos de la imagen Docker y de los kernels CQ de ThousandML, que son componentes separados del modelo.
+- Madurez: el repositorio tiene 0 likes y 639 descargas, y no hay comunidad ni issues documentados; es un artefacto reciente y poco contrastado.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/textclf/Qwen3-Coder-Next-TQ-4bit
-- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-Next
-- Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
-- Blog oficial de Qwen sobre Qwen3-Coder-Next: https://qwen.ai/blog?id=qwen3-coder-next
-- Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/
-- Documentacion de Unsloth para Qwen3-Coder-Next: https://unsloth.ai/docs/models/qwen3-coder-next
-- Pagina del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3-coder-next
+- Modelo en Hugging Face: https://huggingface.co/textclf/Qwen3-Coder-Next-TQ-4bit
+- Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
+- ThousandML (Coded Quantization): https://thousandml.com
+- Imagen Docker CQ: https://hub.docker.com/r/thousandml/cq
+- Documentacion de vLLM: https://docs.vllm.ai

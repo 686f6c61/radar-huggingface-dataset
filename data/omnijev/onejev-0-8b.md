@@ -2,119 +2,106 @@
 
 ## Resumen
 
-OneJev-0.8B es un modelo de decisión multimodal de la familia OneJev, desarrollada por el equipo OmniJev. Se presenta como un modelo de "System One": recibe una captura de pantalla, una fotografía, un vídeo o texto plano junto con una serie de preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción posible. No es, por tanto, un generador de texto libre, sino un clasificador de decisiones pensado para insertarse en el bucle de control de agentes.
+OneJev-0.8B es un modelo multimodal de decisión de tipo "System One" desarrollado por OmniJev, un fine-tune completo de Qwen/Qwen3.5-0.8B (1.107.265.600 parámetros reales según safetensors). A diferencia de un LLM generativo convencional, el modelo recibe un estado (texto, captura de pantalla, foto o vídeo) junto con un conjunto de preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción de respuesta. Está diseñado como componente de decisión para agentes, no como generador de texto libre.
 
-El modelo es un fine-tune completo (no LoRA) de Qwen/Qwen3.5-0.8B sobre 99.193 preguntas extraídas de ejecuciones reales de agentes, vídeos e imágenes. El repositorio de Hugging Face ocupa 2,2 GB y los safetensors declaran 1.107.265.600 parámetros reales, ligeramente por encima de los 0.8B que sugiere el nombre comercial.
+El modelo se entrenó sobre 99.193 preguntas extraídas de ejecuciones reales de agentes, vídeos e imágenes, y se distribuye con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Su relevancia actual radica en la latencia: en una H200 con una captura de 1280x720 responde una pregunta en 31 ms y diez preguntas en una sola petición en 51 ms (5,1 ms por pregunta), lo que lo hace apto para bucles de control de agentes en tiempo real.
 
-Su relevancia actual radica en la latencia: sobre una H200, con una captura de 1280x720, responde una pregunta en 31 ms y diez preguntas agrupadas en una sola petición en 51 ms (5,1 ms por pregunta). Ese perfil lo sitúa como un componente de decisión ultrarrápido dentro de arquitecturas de agentes, no como un modelo de razonamiento generalista.
+La familia OneJev cubre varios tamaños (0.8B, 4B, 9B, 27B y una variante 27B-FP8), todos basados en la familia Qwen3.5/Qwen3.8. El modelo se sirve mediante el paquete `qev`, que implementa la System One API de TypeSafe con un campo adicional `media` para imágenes y vídeo, y también dispone de una build GGUF para llama.cpp.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), heredada de Qwen/Qwen3.5-0.8B; configuración de capas no disponible |
-| Parámetros totales | 1.107.265.600 (~1,11 mil millones, según safetensors) |
-| Parámetros activos | no aplica (no se describe como MoE) |
+| Arquitectura | Transformer multimodal (fine-tune de Qwen3.5-0.8B), etiqueta `qwen3_5` |
+| Parametros totales | 1.107.265.600 |
+| Parametros activos | no disponible (no es MoE según la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible para esta talla; en la familia existe OneJev-27B-FP8 en 8 bits |
+| Tipos de cuantizacion | FP16/BF16 (pesos originales, 2,2 GB); GGUF Q8_0 disponible via mradermacher; FP8 solo en la variante 27B |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (transformers); GGUF (build de terceros) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Qwen/Qwen3.5-0.8B, un transformer multimodal con pipeline `image-text-to-text`, y ha sido sometido a un fine-tune completo de todos sus pesos. La model card no detalla el número de tokens de entrenamiento ni la composición exacta del dataset más allá de indicar que las 99.193 preguntas provienen de ejecuciones reales de agentes, vídeos e imágenes, lo que sugiere una distribución centrada en decisiones de interacción con interfaces y contenido visual.
+OneJev-0.8B es un fine-tune completo (full fine-tune) del modelo base Qwen/Qwen3.5-0.8B, un transformer multimodal de la familia Qwen3.5. La innovación principal no está en la arquitectura del backbone, sino en la cabeza de decisión: el modelo no genera texto token a token, sino que produce probabilidades calibradas para un conjunto de preguntas y opciones tipadas (`Choice`, `Noul`) definidas por el llamador. Esto convierte la inferencia en un único forward pass en lugar de una decodificación autorregresiva.
 
-No se documenta el uso de RLHF, DPO u otras técnicas de alineación posteriores al ajuste supervisado, ni innovaciones de eficiencia como decodificación especulativa o atención lineal. La particularidad del modelo está en la cabeza de salida: en lugar de generar texto, produce una distribución de probabilidad calibrada sobre un conjunto de opciones definido por el usuario, con tipos de pregunta específicos (`Noul` para verificaciones booleanas y `Choice` para elección entre alternativas). El servidor asociado, `qev`, implementa la System One API de TypeSafe ampliada con un campo `media` para imágenes y vídeo.
+El entrenamiento se realizó sobre 99.193 preguntas procedentes de ejecuciones reales de agentes, vídeos e imágenes (dataset OmniJev/OneJev-Data). No se especifican en la información disponible el número total de tokens, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card menciona un conjunto de test con "preguntas de los tipos de entrenamiento que ningún modelo vio en entrenamiento", lo que sugiere una separación por tipo de tarea más que por instancia.
 
 ## Capacidades
 
-- Decisión multimodal: acepta capturas de pantalla, fotografías, vídeo y texto plano como entrada.
-- Salida de probabilidades calibradas por opción en un único forward pass, en lugar de generación autoregresiva de texto.
-- Preguntas tipadas: verificación booleana de estado (`Noul`) y elección entre alternativas (`Choice`).
-- Decisiones para agentes GUI, tal y como refleja la etiqueta `gui-agent` del repositorio.
-- Procesamiento por lotes: varias preguntas en una sola petición con coste marginal de 5,1 ms por pregunta en H200.
-- Modo conversacional (etiqueta `conversational`).
-- Tool calling / function calling: no descrito en la información disponible.
-- Razonamiento multi-paso o modo thinking: no aplicable; el diseño es explícitamente System One (respuesta inmediata).
-- Capacidades multilingües: no disponible.
+- Decisión multimodal calibrada: devuelve una probabilidad por opción para preguntas de tipo binario (`Noul`) o de elección múltiple (`Choice`) a partir de texto, imagen, captura de pantalla o vídeo.
+- Entrada de imagen y vídeo: pipeline `image-text-to-text`, con soporte de vídeo en el servidor PyTorch (no en la build GGUF).
+- Agente de GUI: orientado a decidir la siguiente acción de un agente sobre una pantalla (por ejemplo, `click` frente a `stop`).
+- Razonamiento de estado de tareas: evalúa condiciones tipo "la factura ha sido pagada" sobre el estado actual del entorno.
+- Procesamiento por lotes de preguntas: múltiples preguntas en una sola petición (10 preguntas en 51 ms en H200).
+- Integración mediante API: servidor compatible con la System One API de TypeSafe más un campo `media`.
+- No se documentan en la información disponible capacidades de generación de texto libre, tool calling genérico, matemáticas o thinking mode.
 
 ## Casos de uso
 
-- Automatización de agentes GUI: el modelo recibe la captura de la pantalla y decide la siguiente acción del agente, por ejemplo `click` sobre un elemento o `stop`. Encaja porque cada decisión cuesta milisegundos y no requiere generar texto.
-- Verificación de estado de tareas: con la pregunta `Noul("The invoice has been paid")` sobre una pantalla, devuelve la probabilidad de que la condición se cumpla, lo que permite cerrar o reintentar pasos de un flujo RPA.
-- Enrutado dentro de pipelines de agentes: seleccionar entre varias ramas de ejecución según la probabilidad calibrada, aplicando umbrales de confianza para derivar a revisión humana los casos dudosos.
-- Control de calidad visual en producción: clasificar imágenes o fotogramas de vídeo con una probabilidad explícita, útil cuando se necesita un score y no una etiqueta discreta.
-- Testing automatizado de interfaces: comprobar en cada build si la aplicación muestra el estado esperado, aprovechando la latencia de decenas de milisegundos por consulta.
-- Análisis de vídeo por fotogramas: al aceptar entrada de vídeo, permite responder preguntas de decisión sobre secuencias sin extraer manualmente los frames.
-- Moderación y filtrado con umbral configurable: al exponer probabilidades en lugar de texto, el operador fija el corte según su tolerancia a falsos positivos.
-- Evaluación rápida de estados intermedios en agentes de larga duración: agrupar diez comprobaciones en una sola petición mantiene el coste por verificación en torno a 5 ms en H200.
+- Control de agentes de GUI en tiempo real: el modelo recibe la captura de pantalla actual y decide la siguiente acción (clic, escritura, parada) con latencia de milisegundos, adecuado para bucles de control donde un LLM generativo sería demasiado lento.
+- Verificación de condiciones de finalización: comprobar si una tarea se ha completado (por ejemplo, "la factura ha sido pagada") antes de cerrar un flujo de agente, usando la salida probabilística como señal de confianza.
+- Enrutamiento y clasificación multimodal: decidir entre varias rutas de procesamiento a partir de una imagen o fotograma de vídeo, aprovechando la calibración de probabilidades para umbralizar decisiones.
+- Moderación y triaje de contenido visual: clasificar imágenes o vídeos según criterios definidos por el operador, con probabilidades que permiten ajustar el umbral de sensibilidad.
+- Automatización de QA visual: responder preguntas binarias o de elección sobre capturas de aplicaciones en pipelines de pruebas end-to-end, detectando regresiones visuales.
+- Asistencia a operadores humanos: sugerir la siguiente acción en herramientas internas mostrando probabilidades por opción, de modo que el operador pueda aceptar o corregir la recomendación.
+- Despliegue en entornos con recursos limitados: al ocupar 2,2 GB en FP16 y disponer de GGUF Q8_0, puede ejecutarse en CPU o en GPU de consumo para tareas de decisión de baja latencia.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de resultados en formato SVG en la que OneJev-0.8B se compara con Jev 1.13, Jev-Omni 12B y Qwen3.8-27B en modo thinking, con exactitud en porcentaje sobre un conjunto de test que contiene tipos de pregunta no vistos en entrenamiento. Los valores numéricos de esa tabla no están disponibles en la información proporcionada.
+La model card incluye una tabla de resultados (imagen `assets/results.svg`) que compara OneJev-0.8B con Jev 1.13, Jev-Omni 12B y Qwen3.8-27B thinking, con precisión en porcentaje sobre el test set de OneJev. Los valores numéricos concretos no están disponibles en la información textual proporcionada, por lo que no se reproducen aquí.
 
-| Comparativa | Datos disponibles |
+| Metrica | Valor |
 |---|---|
-| Conjunto de evaluación | Preguntas de los mismos tipos que el entrenamiento, no vistas por ningún modelo |
-| OneJev-0.8B vs. Jev 1.13 | Solo texto; puntuaciones publicadas por Jev 1.13, valores no disponibles |
-| OneJev-0.8B vs. Jev-Omni 12B | Valores no disponibles |
-| OneJev-0.8B vs. Qwen3.8-27B (thinking) | Valores no disponibles |
-
-Datos de latencia sí publicados, medidos en una H200 con captura de 1280x720:
-
-| Escenario | Latencia |
-|---|---|
-| 1 pregunta | 31 ms |
-| 10 preguntas en una petición | 51 ms |
-| Coste marginal por pregunta (lote de 10) | 5,1 ms |
+| Precision en test set OneJev | no disponible (solo figura como imagen en la model card) |
+| Latencia, 1 pregunta (H200, captura 1280x720) | 31 ms |
+| Latencia, 10 preguntas en una peticion (H200) | 51 ms (5,1 ms por pregunta) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, a partir de los 1.107.265.600 parámetros: en FP16 alrededor de 2,2 GB de pesos; en 8 bits, en torno a 1,1 GB; en 4 bits, cerca de 0,6 GB. Son estimaciones aritméticas, no medidas publicadas.
-- Cabe en GPU de consumo: con esos pesos, cualquier tarjeta con 6-8 GB de VRAM o más debería poder alojarlo, aunque el fabricante no certifica ninguna configuración concreta.
-- GPU de referencia en las mediciones: una NVIDIA H200, con la captura de 1280x720 como entrada.
-- Opciones de despliegue: servidor `qev` (`qev serve --model OmniJev/OneJev-0.8B`) y biblioteca `transformers`. No se mencionan vLLM, llama.cpp, Ollama, TGI ni formatos GGUF.
-- Latencia medida: 31 ms para una pregunta y 51 ms para diez en una sola petición sobre H200. No hay cifras publicadas para GPU de consumo ni para CPU.
-- Throughput: no disponible.
+- VRAM estimada: aproximadamente 2,2 GB en FP16/BF16 para los pesos; con overhead de activaciones y contexto, se recomienda al menos 4-6 GB de VRAM para inferencia cómoda.
+- GPU recomendadas: H200 (medición oficial de latencia), A100, H100 para despliegues de alta concurrencia; cualquier GPU con 6 GB o más para uso individual.
+- GPU de consumo: cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 y similares; también en GPUs con 8 GB en FP16 ajustando el lote.
+- CPU: la build GGUF Q8_0 de mradermacher permite ejecución en CPU mediante llama.cpp sin PyTorch.
+- Opciones de despliegue: servidor `qev serve` (PyTorch, con soporte de vídeo), llama.cpp con GGUF (imágenes sí, vídeo no), integración con transformers.
+- Latencia y throughput: 31 ms por pregunta individual y 5,1 ms por pregunta en lotes de 10 sobre H200 con captura 1280x720; no se han publicado cifras para otras GPUs.
 
 ## Comparativa con modelos similares
 
-Dentro de la propia familia OneJev existen tallas mayores que comparten el mismo enfoque de decisión:
+| Modelo | Parametros | Base | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| OneJev-0.8B | 1,1B | Qwen3.5-0.8B | no disponible | Apache 2.0 | HF, GGUF, demo |
+| OneJev-4B | no disponible | Qwen3.5-4B | no disponible | Apache 2.0 (segun familia) | HF |
+| OneJev-9B | no disponible | Qwen3.5-9B | no disponible | Apache 2.0 (segun familia) | HF |
+| OneJev-27B | no disponible | Qwen3.8-27B | no disponible | Apache 2.0 (segun familia) | HF, FP8 |
+| Jev 1.13 | no disponible | no disponible | no disponible | no disponible | solo texto |
+| Jev-Omni 12B | 12B (aproximado por nombre) | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Base | Peso de los pesos |
-|---|---|---|
-| OneJev-0.8B | Qwen3.5-0.8B | 2,2 GB |
-| OneJev-4B | Qwen3.5-4B | 10,4 GB |
-| OneJev-9B | Qwen3.5-9B | 18,8 GB |
-| OneJev-27B | Qwen3.8-27B | 54,7 GB |
-| OneJev-27B-FP8 | OneJev-27B en 8 bits | 30,4 GB |
-
-Frente a alternativas externas, la model card cita Jev 1.13 (solo texto, puntuaciones publicadas por terceros), Jev-Omni 12B y Qwen3.8-27B en modo thinking. Para estos tres no se dispone de parámetros, longitud de contexto, licencia ni cifras de rendimiento en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
+La comparación de rendimiento entre estos modelos figura únicamente en la tabla gráfica de la model card; los valores numéricos no están disponibles en el texto proporcionado.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: solo devuelve probabilidades sobre opciones definidas previamente por el usuario. No sirve para chat abierto, redacción ni generación de código.
-- La calibración es una promesa del autor, pero no se publican curvas de fiabilidad ni análisis de error; conviene validarla con datos propios antes de fijar umbrales en producción.
-- No se documenta la longitud de contexto soportada, lo que impide planificar entradas de vídeo largas o conversaciones extensas.
-- Idiomas soportados no disponibles: no se puede asumir cobertura multilingüe.
-- El entrenamiento se apoya en 99.193 preguntas, un volumen reducido para un modelo de decisión, lo que aumenta el riesgo de mal rendimiento fuera de la distribución de los casos de uso previstos.
-- Riesgo de sesgo: al entrenarse con ejecuciones reales de agentes, puede heredar los sesgos de comportamiento de esos registros; no se documenta ninguna mitigación.
-- Licencia Apache 2.0, permisiva y apta para uso comercial, con las obligaciones habituales de atribución y aviso de licencia.
-- Estado de validación por la comunidad: cero descargas y cero "likes" en el momento del análisis, con creación y última actualización el mismo día (27 de septiembre de 2026). No hay evidencia independiente de funcionamiento.
-- El ecosistema de despliegue se limita a `qev` y `transformers`; la ausencia de soporte documentado para vLLM, llama.cpp u Ollama complica la integración en pilas ya existentes.
-- No se detallan requisitos de memoria para vídeo ni el número de fotogramas que admite por petición.
+- El modelo está diseñado para responder preguntas tipadas con probabilidades, no para generar texto libre; usarlo como LLM conversacional produciría resultados fuera de su dominio de entrenamiento.
+- No se documentan los idiomas soportados; la cobertura multilingüe es desconocida y no debe asumirse.
+- La longitud de contexto no está especificada, lo que impide planificar con precisión el tamaño máximo de estado o número de preguntas por petición.
+- Las probabilidades calibradas pueden degradarse fuera de la distribución de entrenamiento (tipos de pregunta o dominios visuales no vistos); la model card solo garantiza evaluación sobre tipos de entrenamiento.
+- No se han publicado datos sobre sesgos, tasas de alucinación o robustez ante imágenes adversarias.
+- El soporte de vídeo requiere el servidor PyTorch; la build GGUF solo admite imágenes.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-0.8B debe verificarse por si impone condiciones adicionales.
+- El ecosistema `qev` es joven y poco extendido; la dependencia de la System One API de TypeSafe puede limitar la portabilidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev-0.8B
-- Repositorio en GitHub: https://github.com/OmniJev/OneJev
-- Sitio web del proyecto: https://omnijev.github.io/OneJev/
-- Colección completa de la familia OneJev: https://huggingface.co/collections/OmniJev/onejev
+- Colección OneJev: https://huggingface.co/collections/OmniJev/onejev
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Dataset: https://huggingface.co/datasets/OmniJev/OneJev-Data
+- Repositorio GitHub: https://github.com/OmniJev/OneJev
+- Sitio web: https://omnijev.github.io/OneJev/
+- Demo (Gradio): https://huggingface.co/spaces/BradNLP/OneJev
+- Build GGUF: https://huggingface.co/mradermacher/OneJev-0.8B-GGUF
+- Licencia: https://github.com/OmniJev/OneJev/blob/main/LICENSE
 - OneJev-4B: https://huggingface.co/OmniJev/OneJev-4B
 - OneJev-9B: https://huggingface.co/OmniJev/OneJev-9B
 - OneJev-27B: https://huggingface.co/OmniJev/OneJev-27B
 - OneJev-27B-FP8: https://huggingface.co/OmniJev/OneJev-27B-FP8
-- Licencia en el repositorio: https://github.com/OmniJev/OneJev/blob/main/LICENSE
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Cita sugerida: OneJev: A Multimodal System One Decision Model, OmniJev Team, 2026

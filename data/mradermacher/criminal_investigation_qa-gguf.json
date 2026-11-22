@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/criminal_investigation_QA-GGUF",
+  "slug": "mradermacher-criminal_investigation_qa-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/criminal_investigation_QA-GGUF",
+  "created_at": "2025-03-11T07:16:24.000Z",
+  "updated_at": "2026-11-21T22:10:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:lifshallym/criminal_investigation_QA",
+    "base_model:quantized:lifshallym/criminal_investigation_QA",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 700,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820225408,
+  "storage_human": "71.8 GB",
+  "context_length": 8192,
+  "base_model": "lifshallym/criminal_investigation_QA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

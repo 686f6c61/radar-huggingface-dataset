@@ -2,49 +2,49 @@
 
 ## Resumen
 
-humanizer-12b-i1-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo humanizer-12b, publicada por el usuario mradermacher. El modelo base, alojado en el repositorio VictorM-Coder/humanizer-12b, cuenta con 11.907.350.576 parametros (aproximadamente 11,9 mil millones), lo que lo situa en la categoria de modelos de tamano medio-grande. Esta version GGUF esta pensada para su uso con llama.cpp y derivados, empleando cuantizaciones ponderadas con matriz de importancia (imatrix), una tecnica que reduce la perdida de calidad en cuantizaciones agresivas.
+humanizer-12b-i1-GGUF es la distribucion cuantizada en formato GGUF del modelo humanizer-12b, desarrollado originalmente por VictorM-Coder y empaquetado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 11.900 millones de parametros (11.907.350.576 segun los pesos en safetensors) orientado especificamente a la reescritura de texto, la paráfrasis y la transferencia de estilo, con el objetivo de humanizar textos generados o excesivamente rigidos. La etiqueta `gemma4` en la model card sugiere una base arquitectonica derivada de la familia Gemma, aunque no se detalla la arquitectura exacta en la informacion disponible.
 
-La relevancia de esta publicacion radica en que facilita el despliegue local del modelo en hardware de consumo mediante el ecosistema GGUF, sin necesidad de GPUs de datacenter. Al tratarse de una cuantizacion de un modelo de 12B, ofrece un abanico de niveles de compresion que van desde aproximadamente 2 bits hasta 6 bits, permitiendo ajustar el equilibrio entre calidad y requisitos de memoria.
+La relevancia de esta ficha reside en que el repositorio original (VictorM-Coder/humanizer-12b) solo distribuye pesos en safetensors, mientras que esta version ofrece un conjunto amplio de cuantizaciones GGUF con imatrix (desde IQ1_S de 3,1 GB hasta Q6_K de 9,9 GB), lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El repositorio acumula 8.610 descargas, lo que indica un interes practico por parte de la comunidad.
 
-No obstante, la informacion disponible es muy limitada: no se especifican la licencia, los idiomas soportados, los datos de entrenamiento ni los resultados de benchmarks. La model card del repositorio se limita a listar los tipos de cuantizacion generados y a referenciar el modelo base. Esta ficha refleja exclusivamente los datos verificables disponibles.
+El modelo declara licencia Apache 2.0 y soporte para ingles y chino (`en`, `zh`). No se dispone de informacion sobre longitud de contexto, datos de entrenamiento ni resultados de benchmarks en la documentacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 11.907.350.576 (aprox. 11,9B) |
+| Arquitectura | Transformer (base derivada de Gemma segun la etiqueta `gemma4`; detalles no disponibles) |
+| Parametros totales | 11.907.350.576 (~11,9 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de safetensors del modelo base) |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; tambien disponibles cuantizaciones estaticas en el repo humanizer-12b-GGUF |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base usa safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base humanizer-12b en los datos proporcionados. El recuento de parametros (11,9B) es coherente con un transformer denso de tamano medio, pero no se confirma ni el tipo de atencion, ni si emplea mezcla de expertos, ni la composicion del dataset de entrenamiento. Tampoco se documentan procesos de alineacion como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna mas alla de la etiqueta `gemma4` incluida en los tags del repositorio, que apunta a una base de la familia Gemma. El modelo cuenta con 11.907.350.576 parametros totales segun los pesos en safetensors del modelo base. No se especifican el numero de capas, la dimension oculta, el mecanismo de atencion ni si emplea variantes como atencion lineal o decodificacion especulativa.
 
-La unica informacion tecnica concreta se refiere al proceso de cuantizacion: las cuantizaciones han sido generadas con el metodo de matriz de importancia (imatrix), que pondera la importancia de cada peso durante la compresion para preservar mejor la calidad en niveles bajos de bits. El repositorio incluye tanto cuantizaciones K-quant clasicas (Q2_K a Q6_K) como variantes I-quant (IQ1 a IQ4), estas ultimas mas agresivas en compresion. Los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversion desde pesos en formato Hugging Face.
+Tampoco se dispone de datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica informacion funcional es la orientacion del modelo a tareas de reescritura y transferencia de estilo (tags `text-rewriting`, `rewriting`, `paraphrase`, `style-transfer`). Las cuantizaciones de este repositorio se generaron con imatrix (fichero `humanizer-12b.imatrix.gguf` incluido), lo que segun el autor mejora la calidad respecto a cuantizaciones estaticas de tamano equivalente.
 
 ## Capacidades
 
-- Generacion de texto: el modelo base es un modelo de lenguaje de 11,9B parametros, por lo que se le presupone capacidad de generacion de texto general, aunque no se detallan capacidades especificas.
-- Razonamiento, codigo y matematicas: no disponible en la informacion proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se listan idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- El nombre "humanizer" sugiere un posible enfoque en la humanizacion de texto generado, pero no se confirma en la documentacion disponible.
+- Reescritura de texto y humanizacion de contenido generado, orientada a reducir el tono artificial o excesivamente formal.
+- Parafrasis y transferencia de estilo, segun los tags del repositorio.
+- Generacion de texto en ingles y chino.
+- Ejecucion local mediante llama.cpp y ecosistema GGUF.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que sugiere uso como servicio de inferencia.
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar un modelo de 12B en GPUs de consumo con 8-12 GB de VRAM, adecuado para prototipado y pruebas offline.
-- Experimentacion con tecnicas de humanizacion de texto: si el modelo base esta orientado a ese fin, podria emplearse para reescribir o suavizar textos generados por otros modelos, aunque esta aplicacion no esta confirmada por la documentacion.
-- Integracion en llama.cpp y Ollama: el formato GGUF permite cargar el modelo en herramientas populares de inferencia local, facilitando su uso en entornos sin infraestructura cloud.
-- Evaluacion comparativa de cuantizaciones: el amplio abanico de niveles (desde IQ1 hasta Q6_K) permite estudiar el impacto de la compresion en la calidad de salida, util para investigadores que analizan tecnicas de cuantizacion con imatrix.
-- Generacion de texto en entornos con recursos limitados: las variantes de 2-3 bits (Q2_K, IQ3_XXS) posibilitan ejecutar el modelo en hardware modesto, a costa de una perdida de calidad no cuantificada.
-- Pruebas de concepto en pipelines de NLP: al ser compatible con endpoints (tag `endpoints_compatible`), puede integrarse en flujos de trabajo que consuman modelos via API local.
+- Humanizacion de contenido editorial: reescritura de borradores generados por otros modelos para reducir patrones repetitivos y tono artificial antes de publicacion, aprovechando la especializacion del modelo en transferencia de estilo.
+- Parafrasis en pipelines de SEO: generacion de variaciones de un mismo texto para evitar duplicidad de contenido, con cuantizaciones Q4_K_M (7,5 GB) que permiten procesar lotes en una sola GPU de consumo.
+- Adaptacion de tono en comunicaciones corporativas: reescritura de textos formales hacia un registro mas cercano para boletines o redes sociales, usando el modelo como paso de post-procesado sobre plantillas.
+- Localizacion ingles-chino: reescritura estilistica de traducciones entre ambos idiomas soportados, manteniendo el registro del texto de destino.
+- Despliegue en estaciones de trabajo sin GPU dedicada: las cuantizaciones IQ2/IQ3 (3,7-6,7 GB) permiten ejecucion en CPU con llama.cpp para tareas de reescritura por lotes de baja urgencia.
+- Prototipado de asistentes de escritura: integracion en editores o herramientas de correccion como capa de reescritura, con cuantizacion Q4_K_S (7,1 GB) como equilibrio tamano/calidad segun las notas del autor.
+- Filtrado y normalizacion de datasets: reescritura de muestras de texto para homogeneizar estilo en corpus de entrenamiento de terceros modelos.
 
 ## Benchmarks y rendimiento
 
@@ -52,34 +52,50 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y sin contar overhead de contexto):
-  - IQ1_S / IQ1_M: en torno a 3-4 GB.
-  - Q2_K / IQ2_XXS: en torno a 4-5 GB.
-  - Q3_K_M / IQ3_M: en torno a 5,5-6,5 GB.
-  - Q4_K_M / IQ4_XS: en torno a 7-8 GB.
-  - Q5_K_M: en torno a 8,5-9,5 GB.
-  - Q6_K: en torno a 10-11 GB.
-- GPU recomendadas: para cuantizaciones Q4-Q5, una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4070/4080; para Q6_K, una RTX 4090 o una A100/H100 si se busca maxima velocidad.
-- Cabe en GPU de consumo: si, en la mayoria de cuantizaciones. Las variantes de 2-4 bits caben en GPUs de 6-8 GB; las de 5-6 bits requieren 10-16 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con la API de OpenAI (por el tag `endpoints_compatible`). Tambien es posible usar vLLM si se convierte a otro formato, aunque no se documenta.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (aproximada, segun tamano de fichero GGUF mas overhead de contexto):
+  - IQ1_S (3,1 GB): ~4 GB de VRAM.
+  - IQ2_M (4,5 GB): ~5,5-6 GB de VRAM.
+  - IQ3_M (5,8 GB): ~7 GB de VRAM.
+  - Q4_K_M (7,5 GB): ~8,5-9 GB de VRAM.
+  - Q5_K_M (8,6 GB): ~10 GB de VRAM.
+  - Q6_K (9,9 GB): ~11-12 GB de VRAM.
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantizaciones Q4-Q6; RTX 4090 24 GB para Q6_K con contexto amplio; A100/H100 solo necesarias para servir muchas peticiones concurrentes.
+- Cabe en GPU de consumo: si, desde cuantizaciones IQ2 en GPUs de 6-8 GB hasta Q6_K en GPUs de 12-16 GB. Las cuantizaciones IQ1/IQ2 de 3-4 GB permiten incluso ejecucion parcial en CPU.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere soporte en plataformas de inferencia gestionada. vLLM y TGI requieren los pesos safetensors del modelo base, no estos GGUF.
+- Latencia y throughput: no disponibles. Como referencia cualitativa, el autor marca Q4_K_M como "fast, recommended" y Q4_0 como "fast, low quality".
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables de la misma familia o categoria a partir de la informacion proporcionada.
+No se dispone de datos de rendimiento del modelo ni de modelos comparables directos de reescritura en la informacion proporcionada. A continuacion se comparan caracteristicas objetivas con alternativas genericas de la misma categoria de tamano (los datos de los competidores son de conocimiento general y pueden variar):
+
+| Modelo | Parametros | Contexto | Licencia | Formato GGUF |
+|---|---|---|---|---|
+| humanizer-12b (este repo) | ~11,9 B | no disponible | Apache 2.0 | Si (i1 imatrix y estaticas) |
+| Mistral Nemo Instruct | 12 B | 128k (segun documentacion del autor original) | Apache 2.0 | Si |
+| Gemma 2 9B Instruct | 9 B | 8k | Gemma license | Si |
+| Qwen2.5 14B Instruct | 14 B | 32k (version base) | Apache 2.0 | Si |
+
+La comparacion de rendimiento no es posible sin benchmarks publicados de humanizer-12b.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido. Es imprescindible consultar el repositorio del modelo base (VictorM-Coder/humanizer-12b) antes de cualquier uso en produccion.
-- Idiomas no documentados: se desconoce el soporte multilingue real.
-- Sin benchmarks: no hay datos objetivos de calidad, por lo que no se puede evaluar su rendimiento frente a alternativas.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin datos de alineacion ni evaluaciones, el riesgo no esta cuantificado.
-- Sesgos: no documentados.
-- Las cuantizaciones de baja precision (IQ1, IQ2) pueden degradar notablemente la coherencia y la calidad del texto; se recomienda validar cada nivel antes de usarlo en produccion.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
-- La fecha de creacion indicada (2026-11-11) es futura respecto a la mayoria de referencias, lo que puede indicar un error en los metadatos o una publicacion programada; conviene verificar la integridad del repositorio.
+- No hay informacion publicada sobre sesgos del modelo; al estar especializado en reescritura de estilo, puede amplificar sesgos estilisticos o de registro del corpus de entrenamiento.
+- Riesgo de alucinacion y de alteracion semantica: en tareas de parafrasis, el modelo puede modificar el significado original del texto, por lo que requiere revision humana en produccion.
+- Cobertura linguistica limitada a ingles y chino; no se declara soporte de castellano.
+- No se documenta la longitud de contexto, lo que impide planificar cargas de documentos largos con garantias.
+- Las cuantizaciones IQ1 e IQ2 se describen en la propia model card como de calidad baja ("for the desperate", "very low quality"), no aptas para produccion.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base VictorM-Coder/humanizer-12b y de la familia Gemma subyacente, ya que las licencias de los modelos derivados pueden imponer restricciones adicionales.
+- El repositorio tiene 0 likes y la model card no incluye evaluacion de calidad; la adopcion en produccion deberia acompanarse de una evaluacion propia.
+- Fecha de creacion del repositorio: 2026-11-11, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/humanizer-12b-i1-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/humanizer-12b-i1-GGUF
 - Modelo base: https://huggingface.co/VictorM-Coder/humanizer-12b
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/humanizer-12b-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#humanizer-12b-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

@@ -2,99 +2,99 @@
 
 ## Resumen
 
-N-Q-26M es un modelo base (base model) de generación de texto bilingüe ruso/inglés desarrollado por Q Project, el escalón más pequeño de su familia N-Q, entrenado desde cero en una única GPU V100 de 16 GB. Se presenta como un "mini Qwen3.8-Flash-Next": una arquitectura híbrida de atención que combina Gated DeltaNet (atención lineal recurrente) intercalada en proporción 3:1 con atención completa con puerta, más un embedding de n-gramas con hash y un esquema de residuos con 4 flujos. En total almacena 46,5 millones de parámetros (29,7M del backbone más 16,8M de la tabla de n-gramas).
+N-Q-26M es un modelo base de generación de texto de tipo causal-LM desarrollado por q-project, orientado a ruso e inglés y diseñado como el escalón más pequeño de la familia N-Q, una escalera de modelos pequeños al estilo MiniMind entrenados desde cero en una única GPU V100 de 16 GB. Se presenta como un "mini Qwen3.8-Flash-Next": combina atención lineal Gated DeltaNet intercalada 3:1 con atención completa con puerta, un Gated Residual de 4 flujos y un embedding de n-gramas con hashing. El modelo almacena 46.452.571 parámetros según safetensors (29,7M de backbone más 16,8M de tabla de n-gramas).
 
-El modelo se preentrenó sobre 2.000 millones de tokens en 6,6 horas con un planificador WSD y el optimizador Muon combinado con AdamW, alcanzando una velocidad de 85k tokens/s gracias a `torch.compile`. Es un modelo de investigación y educación, no un producto: genera continuaciones de texto gramaticalmente correctas en ruso e inglés, pero con frecuencia inventa hechos. Q Project publica también una variante conversacional, N-Q-26M-Chat, recomendada para diálogo y llamadas exactas a herramientas.
+La relevancia del modelo es doble. Por un lado, demuestra que es posible preentrenar desde cero un modelo bilingüe RU/EN funcional en 6,6 horas sobre hardware de consumo profesional (V100), con 2.000 millones de tokens y una velocidad de 85.000 tokens/s. Por otro, sirve como pieza de investigación reproducible: el autor documenta una ablación controlada frente al diseño ternario Q-164M y publica el checkpoint base junto a una variante Chat.
 
-Su relevancia actual es principalmente didáctica y de investigación: demuestra que una arquitectura híbrida lineal/completa con circuitos exactos de cálculo puede entrenarse en hardware de consumidor/profesional modesto en horas, siguiendo el espíritu de proyectos como MiniMind.
+Es importante subrayar que se trata de un lanzamiento de investigación, no de un producto. El modelo es de continuación de texto puro: produce ruso e inglés gramaticales con tono seguro, pero inventa hechos con frecuencia y no tiene ajuste de seguridad. Para diálogo y llamadas a herramientas exactas, el autor remite explícitamente a N-Q-26M-Chat.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: Gated DeltaNet (atención lineal) intercalada 3:1 con atención completa con puerta (patrón LLLA ×2), estilo "mini Qwen3.8-Flash-Next" |
-| Parametros totales | 46.452.571 almacenados (29,7M backbone + 16,8M tabla de n-gramas) |
-| Parametros activos | No es MoE; todos los parámetros activos por token |
-| Longitud de contexto | No disponible (no se especifica en la model card) |
-| Tipos de cuantizacion | No disponible (matrices fp16, tensores 1-D fp32, tablas de n-gramas int64 exactas en el formato QPACK1) |
-| Idiomas soportados | Ruso (ru) e inglés (en) |
-| Licencia | Apache-2.0 (código y pesos); los datos de entrenamiento conservan sus propios términos |
-| Formato de pesos | safetensors (177 MiB) y contenedor QPACK1 de archivo único (89 MiB, mmap-friendly) |
+| Arquitectura | Transformer híbrido: Gated DeltaNet (atención lineal) intercalada 3:1 con atención completa con puerta; Gated Residual de 4 flujos; embedding de n-gramas con hashing (PLE) |
+| Parametros totales | 46.452.571 (29,7M backbone + 16,8M tabla de n-gramas) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (tokenizador de 8.256 tokens; el contexto máximo no se especifica en la información proporcionada) |
+| Tipos de cuantizacion | no disponible (pesos en fp16 para matrices y fp32 para tensores 1-D en el formato qpack; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
+| Idiomas soportados | ruso (ru), inglés (en) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors y QPACK1 (`model.qpack`, contenedor empaquetado de 89 MiB frente a 177 MiB en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura consta de 8 capas con patrón `LLLA` ×2: tres capas de Gated DeltaNet (3 cabezas de clave / 6 de valor, dimensión 64, convolución k=4) seguidas de una capa de atención completa con puerta (8 cabezas de consulta / 2 KV, dimensión 64, QK-norm centrada en cero, RoPE parcial al 25% con θ=1e6, puerta sigmoide de salida). La dimensión oculta es 512 con SwiGLU 512→704→512, un esquema Gated Residual de 4 flujos de residuo, RMSNorm centrado en cero y cabeza de salida sin atar (untied). Tras la capa 2 se inserta un embedding de 3-gramas con hash (PLE) de 16,8 millones de parámetros en tablas de tamaño primo. El tokenizador es un BPE a nivel de byte RU+EN de 8.256 tokens, con ids 0–8191 para texto y 8192–8255 para tokens de control (`<USER>`, `<MODEL>`, `<EOT>`, `<THINK>`, `<CALC>`, etc.).
+El modelo consta de 8 capas con patrón `LLLA` repetido dos veces: tres capas de Gated DeltaNet (3 cabezas de clave, 6 de valor, dimensión 64, convolución k=4) seguidas de una capa de atención completa con puerta (8 cabezas de consulta, 2 de clave/valor, dimensión 64, QK-norm centrada en cero, RoPE parcial al 25% con θ=1e6 y puerta de salida sigmoide). La dimensión oculta es 512, con SwiGLU 512→704→512, Gated Residual de 4 flujos, RMSNorm centrada en cero y cabeza de salida no atada. Tras la capa 2 se inserta un embedding de 3-gramas con hashing (PLE) de 16,8M parámetros en tablas de tamaño primo.
 
-El preentrenamiento usó 2,0B tokens (30.517 pasos, 64×1024 tokens/paso) con planificador WSD, optimizador Muon + AdamW y `torch.compile`, en 6,6 horas a 85k tokens/s. Los datos provienen de FineWeb-Edu (inglés), Cultura-Ru-Edu (ruso), Wikipedia y, para el 5% de las filas, diálogos y filas de circuitos `<CALC>` desde el paso 1 (receta de Q-164M), usando SmolTalk, GrandMaster-PRO-MAX, saiga_scored y un corpus propio de `<CALC>`. Esto hace que incluso el modelo base reconozca los formatos de chat y de herramienta. La elección de esta arquitectura frente a un diseño ternario (Q-164M) se justificó mediante una ablation controlada documentada en la model card del modelo Chat. La inferencia usa un `generate()` propio con estado recurrente de Gated DeltaNet más caché KV.
+El tokenizador es un BPE a nivel de byte de 8.256 tokens para RU+EN. El layout de tokens reserva los ids 0–8191 para texto (0 `<pad>`, 1 `<bos>`, 2 `<eos>`) y 8192–8255 para tokens de control (`<USER>`, `<MODEL>`, `<EOT>`, `<THINK>`, `<ETHINK>`, `<CALC>`, `<EQ>`, `<ECALC>`, `<NEED>`, `<QUOTE>`, `<SYSTEM>` y reservados `<R11>`…`<R63>`). El preentrenamiento usó 2.000 millones de tokens en 6,6 horas (30.517 pasos, 64×1024 tokens por paso, schedule WSD, Muon + AdamW, `torch.compile`, 85k tokens/s). Un 5% de las filas fueron diálogos y filas de circuito `<CALC>` desde el primer paso, lo que explica que incluso el modelo base conozca los formatos de chat y de herramienta.
+
+Los datos de entrenamiento provienen de FineWeb-Edu (inglés), Cultura-Ru-Edu y Wikipedia en ruso, más filas de diálogo de SmolTalk, GrandMaster-PRO-MAX, saiga_scored y un corpus propio de circuitos `<CALC>`. El modelo incorpora su propio método `generate()` que gestiona el estado recurrente de Gated DeltaNet y la caché KV; si se pasa `tokenizer=tok` se activan los circuitos exactos `<CALC>` al promptear en formato chat.
 
 ## Capacidades
 
-- Generación de texto continuo (text completion) gramaticalmente correcta en ruso e inglés.
-- Reconocimiento del formato de chat y de herramientas gracias al 5% de filas de diálogo y circuitos `<CALC>` en el preentrenamiento, aunque es un modelo base sin ajuste por instrucciones.
-- Circuitos exactos `<CALC>`: si se le invoca en formato de chat y se pasa el tokenizador a `generate()`, puede activar circuitos de cálculo exacto mediante tokens de control dedicados.
-- Inferencia eficiente con estado recurrente de Gated DeltaNet más caché KV, implementada en un `generate()` propio.
-- Carga directa vía `transformers` con `trust_remote_code=True`, incluido el formato QPACK1 de archivo único.
-- Sin capacidades de visión, audio ni multimodalidad; sin tool calling formal ni soporte de agentes (es un modelo base de investigación).
+- Generación de texto causal en ruso e inglés con gramática correcta y tono seguro.
+- Continuación de texto libre; no es un modelo de instrucciones más allá del 5% de filas de diálogo vistas en preentrenamiento.
+- Conocimiento de los formatos de chat y de herramienta (`<USER>`, `<MODEL>`, `<EOT>`, `<THINK>`, `<CALC>`, etc.) gracias a las filas de diálogo y circuito incluidas en el preentrenamiento.
+- Soporte de circuitos exactos `<CALC>` para cálculo cuando se promptea en formato chat con el tokenizador correcto.
+- Capacidad bilingüe RU/EN; no se documentan otros idiomas.
+- No se documentan capacidades de visión, audio, tool calling genérico ni razonamiento multi-paso más allá de los formatos aprendidos.
+- No dispone de modo "thinking" funcional documentado en el modelo base (el token `<THINK>` existe en el vocabulario, pero su uso no se valida en la model card).
 
 ## Casos de uso
 
-- Educación e investigación sobre LLMs: su tamaño de 46M de parámetros y su entrenamiento de 6,6 horas en una sola V100 lo hacen ideal para estudiar arquitecturas híbridas de atención lineal sin coste computacional significativo.
-- Experimentación con atención lineal: permite probar Gated DeltaNet, Gated Residual de 4 flujos y embeddings de n-gramas con hash en un modelo que cabe en cualquier GPU moderna.
-- Generación de texto creativo en ruso e inglés: continuaciones de texto con tono fluido a partir de un prompt, útil para demos y prototipos de escritura.
-- Base para fine-tuning propio: al ser un modelo base con Apache-2.0, puede ajustarse por instrucciones o con DPO para dominios específicos en ruso o inglés con recursos mínimos.
-- Prueba de formatos de despliegue ligeros: el contenedor QPACK1 de 89 MiB permite experimentar con empaquetado mmap de modelos en dispositivos con almacenamiento limitado.
-- Estudio de circuitos exactos de cálculo: los tokens `<CALC>`, `<EQ>` y `<ECALC>` permiten investigar cómo integrar aritmética exacta en modelos de lenguaje pequeños.
-- Evaluación de tokenizadores BPE a nivel de byte: útil para comparar perplexidades y comportamiento de tokenización RU/EN en corpus educativos.
+- Investigación en arquitecturas híbridas de atención: el modelo permite reproducir y estudiar la combinación Gated DeltaNet + atención completa con puerta en un presupuesto de 6,6 horas de V100, útil para ablaciones académicas sobre atención lineal.
+- Experimentación con embeddings de n-gramas con hashing: sirve para evaluar el impacto del módulo PLE de 16,8M parámetros en modelos pequeños, comparando con variantes sin él.
+- Generación de texto en ruso para tareas de aumento de datos: el modelo produce ruso gramatical y puede usarse para generar corpus sintéticos de bajo coste en dominios acotados, siempre con revisión humana.
+- Prototipado de pipelines de continuación de texto bilingüe en entornos con recursos limitados: cabe en una V100 de 16 GB y en GPUs de consumo con suficiente VRAM, lo que permite iterar localmente.
+- Educación y docencia: adecuado para demostrar el ciclo completo de preentrenamiento desde cero, desde la tokenización hasta el empaquetado QPACK, en cursos de IA.
+- Base para fine-tuning específico de dominio: al ser un modelo base Apache-2.0 con tokenizador RU/EN, puede ajustarse para clasificación, extracción o generación en nichos concretos con datasets pequeños.
+- Evaluación de formatos de chat y circuitos: permite estudiar cómo un modelo base aprende formatos estructurados (`<CALC>`, `<EQ>`) con solo un 5% de filas de diálogo en el preentrenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí publica perplexidades en conjuntos held-out del propio proyecto, no comparables con otros tokenizadores:
-
-| Conjunto held-out | Loss | Perplexity (tokenizador propio) |
+| Conjunto de evaluación (held-out) | Loss | Perplejidad (tokenizador propio) |
 |---|---|---|
 | FineWeb-Edu (EN) | 2,381 | 10,8 |
 | Cultura-Ru-Edu (RU) | 2,651 | 14,2 |
-| Wikipedia rusa | 2,323 | 10,2 |
+| Wikipedia en ruso | 2,323 | 10,2 |
 
-Como referencia de escala: la misma arquitectura tras 0,5B tokens (run de ablation) alcanzó una loss media de 2,616; con 2,0B tokens baja a 2,452.
+El autor indica que las perplejidades son por token de su tokenizador de 8.256 tokens y no son comparables con modelos de otros tokenizadores. Como referencia de escala, la misma arquitectura tras 0,5B tokens alcanzó una loss media de 2,616, y con 2,0B tokens baja a 2,452. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; con 46,5M de parámetros en fp16 (~89 MiB en QPACK1, 177 MiB en safetensors), el modelo cabe con holgura en cualquier GPU con 2 GB de VRAM o incluso en CPU.
-- GPU recomendadas: no requiere GPU dedicada; fue entrenado en una única NVIDIA V100 de 16 GB, y para inferencia basta cualquier GPU moderna (RTX 3060, RTX 4090, etc.) o CPU.
-- Consumer GPUs: cabe completamente en cualquier GPU de consumidor actual, incluidas las de gama de entrada.
-- Opciones de despliegue: librería `transformers` de Hugging Face con `trust_remote_code=True` (incluida la carga del formato QPACK1). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible para inferencia; el entrenamiento alcanzó 85k tokens/s en V100 con `torch.compile`.
+- VRAM estimada para inferencia: el checkpoint safetensors ocupa 177 MiB y el QPACK1 89 MiB; con pesos fp16 el modelo completo cabe holgadamente en menos de 1 GB de VRAM, más el estado recurrente y la caché KV.
+- GPU recomendadas: el autor lo entrenó en una V100 de 16 GB; para inferencia es suficiente cualquier GPU con al menos 2 GB de VRAM.
+- Cabe en GPU de consumo: sí, en GTX 1650, RTX 3050, RTX 4060 y superiores; también en CPU para pruebas.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` (método `generate()` propio); el formato QPACK1 se carga mediante `AutoModelForCausalLM.from_pretrained` y admite `python qpack.py --selftest model.qpack` (imprime `SELFTEST 5/5`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 85.000 tokens/s durante el entrenamiento en V100; no se publican cifras de latencia o throughput de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| N-Q-26M (este modelo) | 46,5M almacenados | No disponible | Apache-2.0 | ru, en | Hugging Face, safetensors + QPACK1 |
-| Q-164M (Q Project) | 164M (diseño ternario) | No disponible | No disponible | No disponible | Hugging Face (referenciado por el autor) |
-| N-Q-26M-Chat (Q Project) | Igual arquitectura que N-Q-26M | No disponible | No disponible | ru, en | Hugging Face (variante chat del mismo proyecto) |
-| MiniMind (referencia del estilo) | Escala similar de modelos pequeños entrenados desde cero | No disponible | No disponible | zh, en | Proyecto open source de referencia |
+| N-Q-26M | 46,5M (29,7M backbone + 16,8M n-gramas) | no disponible | ru, en | Apache-2.0 | Híbrido Gated DeltaNet + atención completa; base, sin ajuste de instrucciones |
+| N-Q-26M-Chat | no disponible | no disponible | ru, en | no disponible | Variante chat del mismo autor, recomendada para diálogo y tool calls |
+| Q-164M | no disponible | no disponible | no disponible | no disponible | Diseño ternario previo del mismo proyecto, descartado por ablación |
+| MiniMind | no disponible | no disponible | no disponible | no disponible | Referencia metodológica citada por el autor para la escalera de modelos pequeños |
 
-No se han publicado comparativas numéricas directas con modelos de terceros en la información disponible.
+No se dispone de datos suficientes en la información proporcionada para comparar rendimiento numérico con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Los hechos generados son frecuentemente incorrectos: la model card lo advierte explícitamente ("invented facts") y los ejemplos de muestra contienen afirmaciones falsas sobre Moscú y Polonia.
-- Conocimiento general muy superficial debido al tamaño (46M) y al corpus de 2,0B tokens.
-- Tendencia a la repetición bajo decodificación greedy; se recomienda temperatura y top-p (los ejemplos usan temperature 0.7, top_p 0.9).
-- No hay ajuste de seguridad alguno ("No safety tuning"): puede generar contenido inapropiado sin filtros.
-- Es un modelo base: no sigue instrucciones más allá de los patrones de diálogo vistos en el 5% de filas de diálogo del preentrenamiento.
-- Las perplexidades publicadas no son comparables con modelos que usan otros tokenizadores.
-- Restricciones de licencia en los datos: aunque los pesos y el código son Apache-2.0, los datos de entrenamiento conservan sus propios términos (FineWeb-Edu bajo ODC-By 1.0, Wikipedia rusa bajo CC BY-SA / GFDL, Cultura-Ru-Edu, SmolTalk, GrandMaster-PRO-MAX y saiga_scored); hay que revisarlos antes de cualquier uso comercial.
-- La longitud de contexto no está documentada en la model card, lo que dificulta planificar aplicaciones con documentos largos.
-- Requiere `trust_remote_code=True` (arquitectura personalizada), lo que implica ejecutar código del repositorio: revisarlo antes de usar en entornos de producción.
+- Los hechos son frecuentemente incorrectos y el conocimiento general es limitado; el propio autor lo advierte en la model card.
+- Genera repeticiones bajo decodificación greedy.
+- No tiene ajuste de seguridad (no safety tuning).
+- Es un modelo base: no sigue instrucciones más allá del 5% de filas de diálogo vistas en preentrenamiento.
+- Uso previsto: investigación y educación únicamente.
+- La licencia del código y los pesos es Apache-2.0, pero los datos de entrenamiento conservan sus propios términos: FineWeb-Edu (ODC-By 1.0), Wikipedia en ruso 20231101.ru (CC BY-SA / GFDL) y filas de diálogo de SmolTalk, GrandMaster-PRO-MAX, saiga_scored y el corpus propio `<CALC>`; conviene revisarlos antes de un uso comercial.
+- Las perplejidades publicadas no son comparables con las de modelos que usan otros tokenizadores.
+- No se documenta la longitud máxima de contexto soportada, lo que limita su uso en tareas de contexto largo.
+- El soporte de tool calling y de circuitos exactos requiere promptear en formato chat con el tokenizador correcto; no está validado como capacidad general.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/q-project/N-Q-26M
-- Modelo Chat (variante conversacional): https://huggingface.co/q-project/N-Q-26M-Chat
-- Proyecto MiniMind (referencia del enfoque de entrenamiento): https://jingyaogong.github.io/minimind/
-- Datasets de entrenamiento:
-  - FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-  - Cultura-Ru-Edu: https://huggingface.co/datasets/deepvk/cultura_ru_edu
-  - Wikipedia (Wikimedia): https://huggingface.co/datasets/wikimedia/wikipedia
+- Variante Chat: https://huggingface.co/q-project/N-Q-26M-Chat
+- Referencia metodológica MiniMind: https://jingyaogong.github.io/minimind/
+- FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Cultura-Ru-Edu: https://huggingface.co/datasets/deepvk/cultura_ru_edu
+- Wikipedia en ruso: https://huggingface.co/datasets/wikimedia/wikipedia

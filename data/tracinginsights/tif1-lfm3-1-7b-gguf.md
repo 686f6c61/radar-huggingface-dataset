@@ -2,106 +2,98 @@
 
 ## Resumen
 
-tif1-LFM3-1.7B es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B de Liquid AI, publicado por el usuario tracinginsights. Está especializado en una tarea muy concreta: convertir preguntas en lenguaje natural sobre estadísticas de Fórmula 1 en consultas SQL sobre la base de datos F1DB, ejecutadas localmente con DuckDB. El modelo no memoriza resultados de carreras; su función es planificar la consulta, narrar el resultado y explicar gráficos de telemetría.
+tif1-LFM3-1.7B es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por tracinginsights, especializado en text-to-SQL para estadísticas de Fórmula 1 sobre la base de datos F1DB. El modelo realiza tres tareas concretas: convertir preguntas en lenguaje natural en planes JSON cuyo núcleo es una consulta SQL sobre DuckDB, narrar los resultados de dicha consulta usando exclusivamente los números presentes en el resultado, y explicar gráficos de telemetría de vueltas. La aplicación ejecuta el SQL localmente (DuckDB en el navegador), de modo que el modelo no necesita memorizar resultados de carreras.
 
-El modelo base LFM3-1.7B tiene 1.728.801.600 parámetros y una arquitectura híbrida de 24 capas que combina 13 convoluciones cortas, 5 capas de atención de ventana deslizante y 6 capas de atención global. El fine-tune se realizó con LoRA (r64, α32) durante una época sobre 273.000 filas sintéticas de F1, con promediado de los últimos cuatro checkpoints y fusión posterior de los pesos.
+El modelo base LFM3-1.7B tiene 1.728.801.600 parámetros y una arquitectura híbrida de 24 capas: 13 convoluciones cortas, 5 capas de atención con ventana deslizante y 6 capas de atención global. Este ajuste fino se distribuye en formato GGUF para llama.cpp y para el motor WebGPU en navegador de la aplicación tif1.
 
-La relevancia de esta ficha radica en que es un ejemplo de modelo pequeño y especializado que se distribuye en GGUF para llama.cpp y también como bundle para un motor WebGPU que corre íntegramente en el navegador. La licencia LFM Open License v1.0 permite uso no comercial y uso comercial para organizaciones con ingresos anuales inferiores a 10 millones de dólares.
+La relevancia actual del modelo radica en su enfoque de despliegue en el dispositivo: con un archivo Q4_0 de 861 MB y un vocabulario recortado a 19.958 tokens, permite ejecutar un asistente de consultas SQL especializado directamente en el navegador, sin depender de infraestructura de servidor. La versión v2.3 (21 de noviembre de 2026) alcanza un 91,4% de coincidencia de resultados en su conjunto de evaluación de referencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (13 convoluciones cortas, 5 capas de atención de ventana deslizante, 6 capas de atención global; 24 capas en total) |
-| Parámetros totales | 1.728.801.600 (1,73B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 81.920 tokens en servidor (20.480 por slot con `-np 4`); el prompt de planificación ocupa unos 13.000 tokens |
-| Tipos de cuantización | Q4_0 (1,05 GB) y F16 (3,47 GB) |
-| Idiomas soportados | Inglés |
-| Licencia | LFM Open License v1.0 (uso no comercial libre; uso comercial permitido a organizaciones con ingresos anuales inferiores a 10M USD) |
-| Formato de pesos | GGUF (llama.cpp) y bundle WebGPU (`.tif1kv`, `.tif1ng`, `manifest.json`) |
+| Arquitectura | Híbrida: 24 capas (13 convoluciones cortas, 5 atención con ventana deslizante, 6 atención global) |
+| Parametros totales | 1.728.801.600 (1,73B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q4_0 (GPTQ) y F16 |
+| Idiomas soportados | Inglés (en) |
+| Licencia | LFM Open License v1.0 (licencia "other") |
+| Formato de pesos | GGUF (llama.cpp) y bundle WebGPU para navegador |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-1.7B emplea una arquitectura híbrida que alterna convoluciones cortas con capas de atención de ventana deslizante y atención global. Esta combinación reduce el coste computacional del procesamiento de secuencias largas frente a un transformer de atención completa, algo relevante porque el prompt de planificación del sistema ocupa aproximadamente 13.000 tokens. El fine-tune se aplicó mediante LoRA con rango 64 y alpha 32 durante una única época sobre 273.000 filas sintéticas de datos de Fórmula 1, seguido de un promediado de los pesos de los últimos cuatro checkpoints y su fusión en el modelo final.
+El modelo base LFM3-1.7B emplea una arquitectura híbrida que combina convoluciones cortas con capas de atención, tanto de ventana deslizante como global, en un total de 24 capas. El ajuste fino se realizó mediante LoRA con rango 64 y alpha 32 durante una época sobre 273.000 filas sintéticas de Fórmula 1, seguido de ejecuciones de entrenamiento continuado sobre datos revisados. La versión v2.3 es el promedio de pesos con igual ponderación ("soup") de dieciocho checkpoints finales fusionados: los dos últimos entrenamientos en GPU y dieciséis semillas de entrenamiento continuado ejecutadas en TPU.
 
-La innovación técnica más destacable no está en el entrenamiento sino en el despliegue: el repositorio incluye un bundle para un motor WebGPU propio que ejecuta el modelo dentro de la pestaña del navegador sin servidor. Este bundle contiene el estado del prompt de planificación ya procesado (`.tif1kv`, 87 MB), lo que reduce el tiempo hasta el primer token de planificación de unos 6 segundos en una T4 a 0,2–0,4 segundos, y dos tablas de especulación (`.tif1ng`) que permiten al motor generar varios tokens a la vez y verificarlos, con salida bit a bit idéntica. El modelo se sirve mediante llama.cpp con soporte para LFM3 (PR #31252 del 27 de octubre de 2026 o posterior), usando `--jinja`, checkpoints de contexto y flash attention.
+Una innovación técnica destacable es el recorte del vocabulario: se eliminaron los tokens que el modelo nunca utiliza, reduciéndolo de 128.000 a 19.958 tokens. Esto reduce el tamaño del archivo un 18% (861 MB frente a 1,05 GB) y acelera la decodificación entre un 12% y un 19%, sin alterar la tokenización de textos compuestos únicamente por tokens conservados. La cuantización Q4_0 se realizó con GPTQ. El modelo no requiere memorizar resultados de carreras, ya que la aplicación ejecuta las consultas SQL generadas contra la base de datos F1DB cargada por el usuario.
 
 ## Capacidades
 
-- Generación de texto y razonamiento estructurado para producir planes en formato JSON con una consulta SQL de DuckDB como núcleo.
-- Generación de SQL sobre el esquema de la base de datos F1DB, incluyendo restatements de una línea, sugerencias de gráficos y tres preguntas de seguimiento.
-- Narración de resultados de consultas usando únicamente los números presentes en el resultado devuelto por la base de datos.
-- Explicación de gráficos de telemetría de vueltas (botón de gráficos Ultra de la aplicación tif1).
-- Soporte de conversación multi-turno mediante el formato de chat de llama.cpp con plantilla Jinja.
-- Ejecución en navegador mediante WebGPU con tablas de decodificación especulativa.
-- No dispone de capacidades de visión, audio ni tool calling genérico; su especialización es exclusivamente text-to-SQL para Fórmula 1.
-- Capacidad multilingüe limitada al inglés.
+- Generación de planes JSON a partir de preguntas en lenguaje natural, con una consulta SQL sobre DuckDB como núcleo, una reformulación de una línea, una sugerencia de gráfico y tres preguntas de seguimiento.
+- Narración de resultados de consultas SQL en pocas frases, utilizando exclusivamente los números presentes en el resultado.
+- Explicación de gráficos de telemetría de vueltas (botón de la función "Ultra charts" de la aplicación tif1).
+- Generación de texto conversacional en inglés.
+- Integración con llama.cpp y con el motor WebGPU en navegador de tif1.
+- Especialización vertical en el dominio de estadísticas de Fórmula 1 y datos deportivos.
+- No se documenta soporte de tool calling genérico, agentes multi-paso, visión, audio ni modo de razonamiento extendido en la información disponible.
 
 ## Casos de uso
 
-- Consultas de estadísticas de Fórmula 1 en local: un aficionado o analista puede lanzar preguntas como "¿quién tiene más podios en Monza desde 2010?" y el modelo genera la consulta SQL que la aplicación ejecuta contra F1DB en DuckDB, sin depender de servicios en la nube.
-- Despliegue de un asistente de datos deportivos autoalojado: con llama-server y el alias `tif1-lfm3-q4`, la aplicación tif1 reconoce el modelo y aplica el formato de petición entrenado, lo que permite ofrecer un chat de estadísticas con verificación numérica de las respuestas.
-- Narración automática de resultados de consultas: tras ejecutar el SQL, el modelo redacta en pocas frases el resultado usando solo las cifras devueltas, lo que encaja en pipelines donde se necesita una capa de lenguaje natural sobre datos tabulares.
-- Explicación de telemetría de vueltas: el modelo describe gráficos de telemetría generados por la aplicación, útil para periodistas o analistas que quieran un resumen textual de una vuelta concreta.
-- Generación de preguntas de seguimiento: el plan JSON incluye tres preguntas relacionadas, lo que permite construir interfaces exploratorias de datos sin diseñar manualmente el árbol de navegación.
-- Ejecución en el navegador sin servidor: gracias al bundle WebGPU, se puede ofrecer una demo o herramienta educativa que descarga unos 1,15 GB la primera vez y luego funciona desde el almacenamiento del navegador, sin coste de infraestructura.
-- Prototipado de text-to-SQL especializado: sirve como referencia para equipos que quieran ajustar un modelo pequeño sobre un esquema de base de datos concreto y validar la viabilidad de ejecutar SQL localmente en lugar de confiar en el modelo para recordar datos.
+- Consultas de estadísticas de Fórmula 1 en lenguaje natural: el modelo transforma preguntas como "¿Quién tiene más podios en Monza desde 2010?" en una consulta SQL válida sobre F1DB, lo que permite a un aficionado obtener respuestas sin conocer SQL.
+- Asistente de chat en el navegador: al ejecutarse mediante WebGPU con un archivo Q4_0 de 861 MB, permite desplegar el asistente completo en el dispositivo del usuario sin servidor backend ni costes de inferencia en la nube.
+- Narración automática de resultados: tras ejecutar la consulta, el modelo redacta una respuesta en pocas frases usando solo los números del resultado, lo que reduce el riesgo de alucinación en las cifras presentadas.
+- Explicación de telemetría de vueltas: el modelo describe gráficos de telemetría, útil para herramientas de análisis deportivo que necesitan texto explicativo generado automáticamente.
+- Generación de preguntas de seguimiento: el plan JSON incluye tres preguntas de seguimiento que guían al usuario hacia consultas relacionadas, mejorando la exploración de datos.
+- Integración en pipelines de análisis deportivo: el modelo puede formar parte de una aplicación que cargue F1DB en DuckDB y use el plan generado para ejecutar consultas de forma local y reproducible.
+- Prototipado de asistentes text-to-SQL de dominio específico: sirve como referencia para adaptar un modelo pequeño a un esquema de base de datos concreto mediante LoRA y cuantización agresiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card incluye mediciones de latencia del motor WebGPU en una Tesla T4 con Chrome, que se recogen a continuación por su valor práctico:
-
-| Tarea | Tiempo medido (mediana) | Notas |
+| Version | Coincidencia de resultados en planes (M1) | Notas |
 |---|---|---|
-| Plan (prompt de 13k tokens + pregunta, esquema JSON) | 1,05 s de petición al último token | Aproximadamente 1,6× más rápido con la tabla de planificación en preguntas no vistas |
-| Respuesta (unos 40 tokens) | 160 ms hasta el primer token, 0,44 s hasta el último | |
-| Explicación de gráfico (hasta 256 tokens) | 1,3 s | Aproximadamente 1,4× más rápido con la tabla de explicación en gráficos no vistos |
+| v2.3 | 91,4% | Sobre 1.440 planes de F1DB; +4,7 puntos frente a v2.2 (p de McNemar 4,9×10⁻¹⁰) |
+| v2.2 | 86,7% | +5,1 puntos frente a v2.1 (p 2,4×10⁻⁸) |
+| v2.1 | 81,6% | Re-cuantización GPTQ de v2.0 |
+| v2.0 | 79,7% | Sobre eval golds v3 (v2.1 obtiene 82,2% en ese conjunto) |
+| v1.1 | 72,9% | Sobre las consultas de referencia originales de v1 |
+| v1.0 | 70,6% | Sobre las consultas de referencia originales de v1 |
 
-Además, la model card indica que flash attention (`-fa on`) mejora el procesamiento del prompt en torno a un 27% en una T4. No se han publicado cifras de MMLU, HumanEval, GSM8K ni de precisión de ejecución SQL.
+Las respuestas de v2.3 pasan las comprobaciones de la aplicación en un 98,9% de los casos (frente a 99,4% de v2.2, diferencia no significativa). En las explicaciones de gráficos sobre los 133 prompts originales, v2.3 trazó correctamente todos los números en un 96,2% de los casos (frente a 100% de v2.2, diferencia límite). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 1,05 GB para el archivo Q4_0 y 3,47 GB para el F16, más el espacio de contexto y caché KV.
-- GPU recomendadas: Tesla T4 (mediciones publicadas), A100 y H100 para mayor throughput; el modelo es lo bastante pequeño para GPUs de consumo.
-- Cabe en GPU de consumo: sí, con la cuantización Q4_0 (1,05 GB) en tarjetas con 4 GB o más de VRAM; el F16 requiere al menos 4–6 GB.
-- Opciones de despliegue: llama.cpp mediante `llama-server` con soporte LFM3 (PR #31252 o posterior), y motor WebGPU propio de la aplicación tif1 dentro del navegador.
-- Configuración recomendada en servidor: `--jinja -np 4 -c 81920 --ctx-checkpoints 16 -fa on`, con un slot por tipo de llamada (plan, continuación/reparación de plan, respuesta, explicación de gráfico).
-- Latencia y throughput: en una T4 con el motor WebGPU, 1,05 s para el plan completo, 0,44 s para una respuesta de 40 tokens y 1,3 s para una explicación de hasta 256 tokens. No se han publicado cifras de throughput en llama-server.
+- VRAM estimada para inferencia: aproximadamente 1 GB para el archivo Q4_0 de 861 MB; aproximadamente 3,5 GB para el F16 de 3,47 GB.
+- GPU recomendadas: no se especifican modelos concretos en la información disponible; el despliegue principal es mediante WebGPU en navegador y llama.cpp.
+- Compatibilidad con GPU de consumo: el tamaño Q4_0 de 861 MB permite la ejecución en GPUs de consumo y en el navegador mediante WebGPU.
+- Opciones de despliegue: llama.cpp (formato GGUF) y el motor WebGPU integrado en la aplicación tif1.
+- Latencia y throughput: no disponibles de forma absoluta; se documenta que el recorte de vocabulario de v2.2 acelera la decodificación entre un 12% y un 19% respecto a la versión anterior.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. A continuación se comparan características estructurales con el modelo base y con un modelo pequeño genérico de referencia.
-
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
 |---|---|---|---|---|---|
-| tif1-LFM3-1.7B | 1,73B | 81.920 tokens en servidor | Text-to-SQL para F1DB y narración de resultados | LFM Open License v1.0 | GGUF, WebGPU |
-| LiquidAI/LFM3-1.7B | 1,73B | No disponible en la información proporcionada | Propósito general | LFM Open License v1.0 | No disponible en la información proporcionada |
-| Alternativas genéricas de ~1,5–2B | No disponible | No disponible | Propósito general | Varía | Varía |
+| tif1-LFM3-1.7B v2.3 | 1,73B | No disponible | Text-to-SQL de Fórmula 1 sobre F1DB | LFM Open License v1.0 | GGUF, WebGPU |
+| LiquidAI/LFM3-1.7B (base) | 1,73B | No disponible | Propósito general | LFM Open License v1.0 | Safetensors y otros |
+| Alternativas text-to-SQL de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparación con modelos de la misma categoría (pequeños, especializados en text-to-SQL) no está disponible en la información proporcionada.
+La información proporcionada no incluye datos de rendimiento de modelos comparables de la misma categoría, por lo que la comparación cuantitativa con alternativas no está disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado exclusivamente en inglés; no se ha validado su comportamiento en castellano ni en otros idiomas.
-- La especialización es muy estrecha: solo cubre el dominio de Fórmula 1 y el esquema de F1DB. Fuera de ese ámbito su utilidad es limitada.
-- Riesgo de alucinación numérica: aunque la aplicación verifica cada número de la respuesta contra el resultado de la consulta y reintenta con muestreo si no cuadra, el modelo por sí solo puede producir cifras incorrectas.
-- El prompt de planificación ocupa unos 13.000 tokens, por lo que sin checkpoints de contexto el procesamiento inicial es costoso; se recomienda usar `--ctx-checkpoints` y primar cada slot.
-- Requiere una build de llama.cpp con soporte LFM3 (PR #31252 o posterior); versiones anteriores no cargarán el modelo correctamente.
-- El alias del modelo debe empezar por `tif1-lfm3` para que la aplicación tif1 aplique el formato de petición entrenado.
-- La licencia LFM Open License v1.0 restringe el uso comercial a organizaciones con ingresos anuales inferiores a 10 millones de dólares; por encima de ese umbral se requiere licencia adicional.
-- El bundle WebGPU forma parte de la aplicación tif1 y no se distribuye como paquete público independiente.
-- Las mediciones de latencia publicadas corresponden a una única Tesla T4 en Chrome; no se han medido GPU de portátil.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en producción por terceros.
+- El modelo solo soporta inglés; no se documenta soporte multilingüe.
+- Está especializado exclusivamente en el dominio de estadísticas de Fórmula 1 y en el esquema de F1DB; su rendimiento fuera de ese dominio no está evaluado.
+- La licencia LFM Open License v1.0 permite uso no comercial y uso comercial solo a organizaciones con ingresos anuales inferiores a 10 millones de dólares estadounidenses; es necesario revisar los términos completos antes de un uso comercial.
+- El modelo no memoriza resultados de carreras: depende de que la aplicación cargue la base de datos F1DB y ejecute el SQL generado, por lo que la corrección final depende de la base de datos y del motor DuckDB.
+- La coincidencia de resultados en planes no es del 100% (91,4% en v2.3), por lo que existe un porcentaje de consultas generadas incorrectas que deben validarse.
+- Las explicaciones de gráficos pueden no trazar correctamente todos los números en un pequeño porcentaje de casos (96,2% en v2.3 sobre los prompts originales).
+- No se documentan sesgos específicos ni evaluaciones de alucinación fuera del dominio deportivo.
+- El contexto máximo no está especificado en la información disponible, lo que limita la planificación de cargas con entradas largas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tracinginsights/tif1-LFM3-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Aplicación tif1: https://app.tracinginsights.com/chat
-- Configuración de proveedores personalizados: https://app.tracinginsights.com/settings
 - Base de datos F1DB: https://github.com/f1db/f1db
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- PR de soporte LFM3 en llama.cpp: PR #31252 (27 de octubre de 2026)
-- Manifiesto del bundle WebGPU (fijado por commit): https://huggingface.co/tracinginsights/tif1-LFM3-1.7B-GGUF/resolve/0b2fcb871b8cc5780c473a1fe7af1d4612390221/web/manifest.json
-- Licencia LFM Open License v1.0: archivo LICENSE del repositorio
+- DOI: https://doi.org/10.57967/hf/11746

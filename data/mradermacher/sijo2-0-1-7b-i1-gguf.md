@@ -2,48 +2,52 @@
 
 ## Resumen
 
-Sijo2.0-1.7B-i1-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo Sijo2.0-1.7B, publicada por el usuario mradermacher en Hugging Face. Se trata de un trabajo de conversion y cuantizacion (no de un modelo original) que toma los pesos del modelo base desarrollado por myjellylabs y los transforma en multiples variantes GGUF para su uso con llama.cpp y herramientas compatibles. La denominacion "i1" indica el uso de cuantizacion con importancia (imatrix), una tecnica que pondera los tensores segun su relevancia para preservar la calidad en tasas de compresion agresivas.
+Sijo2.0-1.7B-i1-GGUF es una coleccion de cuantizaciones GGUF del modelo myjellylabs/Sijo2.0-1.7B, generadas por mradermacher con el metodo i1 (imatrix) sobre los pesos originales en formato Hugging Face. El modelo base es un transformer de 1.728.801.600 parametros (aproximadamente 1,7 mil millones) afinado mediante LoRA y DPO para tareas de agente autonomo, razonamiento, generacion de codigo y uso de terminal Linux, segun las etiquetas declaradas por el autor. La licencia es Apache 2.0 y el idioma declarado es unicamente ingles.
 
-El modelo base declara 1.7B en su nombre, aunque el dato de parametros reportado en el repositorio (899.013) no es coherente con esa cifra y probablemente corresponde a un conteo parcial o erroneo de tensores. La informacion disponible no permite confirmar la arquitectura, el contexto nativo ni el regimen de entrenamiento del modelo original. El repositorio ocupa 0,0 GB segun los metadatos, lo que sugiere que el contenido puede no estar completamente subido o que los metadatos son incompletos.
+La relevancia de esta publicacion radica en que ofrece el modelo en un rango amplio de cuantizaciones (desde IQ1_S de 0,6 GB hasta Q6_K de 1,5 GB), lo que permite ejecutarlo en hardware muy modesto, incluidas GPUs de consumo con poca VRAM o incluso CPU. El repositorio ocupa 21,3 GB en total porque incluye todas las variantes, pero cada archivo individual es pequeno. Se trata de una publicacion de cuantizacion, no de un modelo nuevo: el autor del modelo es myjellylabs y mradermacher solo produce los archivos GGUF.
 
-La relevancia de esta ficha es limitada: se trata de un artefacto de cuantizacion sin documentacion tecnica publicada, sin benchmarks y sin licencia declarada. Resulta util unicamente como punto de entrada para quien quiera ejecutar el modelo base en hardware modesto mediante llama.cpp, pero no aporta informacion sobre capacidades o calidad del modelo subyacente.
+La informacion disponible sobre el modelo base es limitada: no se publican en la model card datos sobre arquitectura interna, longitud de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks. Las etiquetas indican que se uso LoRA y DPO, y que el modelo esta orientado a flujos agenticos con tool calling y terminal Linux.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1.7B segun el nombre; el repositorio reporta 899.013 (dato no coherente) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (detalle interno no disponible) |
+| Parametros totales | 1.728.801.600 (1,7 B) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, small-IQ4_NL, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de safetensors del modelo base) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (metodo i1/imatrix) |
+| Idiomas soportados | en (ingles) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1); pesos originales en safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Sijo2.0-1.7B: la model card del repositorio de cuantizacion no describe si se trata de un transformer denso, un MoE o una arquitectura hibrida, ni detalla el numero de capas, dimensiones ocultas o mecanismo de atencion. Tampoco se documentan los datos de entrenamiento, el numero de tokens procesados, la composicion del corpus ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+El modelo base es un transformer de 1,7 mil millones de parametros. Segun las etiquetas de la model card, el entrenamiento incluyo una fase de ajuste con LoRA y una fase de optimizacion por preferencias con DPO (Direct Preference Optimization). El objetivo declarado es un modelo "standalone" para agentica, terminal Linux, codigo, razonamiento y tool calling. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la longitud de contexto nativa ni detalles de la arquitectura de atencion.
 
-La unica informacion tecnica concreta es el proceso de cuantizacion: los metadatos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que los pesos se convirtieron desde el formato Hugging Face y se cuantizaron con la herramienta de llama.cpp. La etiqueta `tags: nicoboss` y la lista de cuantizaciones incluyen variantes con imatrix (prefijo IQ) y variantes K-quants clasicas, lo que permite elegir entre mayor compresion (IQ1/IQ2) o mayor fidelidad (Q5/Q6). No hay innovaciones arquitectonicas atribuibles a este repositorio, ya que su funcion es exclusivamente de empaquetado.
+Las cuantizaciones de este repositorio se generaron con el metodo i1 de llama.cpp, que utiliza una matriz de importancia (imatrix) calculada sobre un corpus de calibracion para reducir el error de cuantizacion en pesos sensibles. El autor incluye el archivo imatrix (`Sijo2.0-1.7B.imatrix.gguf`, 0,1 GB) para que terceros puedan generar sus propias cuantizaciones. Existe tambien un repositorio de cuantizaciones estaticas (sin imatrix) en mradermacher/Sijo2.0-1.7B-GGUF.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas del modelo base en la informacion disponible.
-- No consta soporte de tool calling ni function calling.
-- No consta soporte de agentes ni razonamiento multi-paso.
-- No se especifican capacidades multilingues ni idiomas cubiertos.
-- No se indica la existencia de modos especiales (thinking mode, vision, audio).
-- Al estar en formato GGUF, es compatible con inferencia local mediante llama.cpp y derivados, pero las capacidades funcionales dependen enteramente del modelo base, del que no hay datos.
+- Generacion de texto conversacional en ingles.
+- Razonamiento y resolucion de problemas (etiqueta `reasoning`).
+- Generacion y edicion de codigo (etiqueta `coding`).
+- Tool calling / function calling (etiqueta `tool-calling`).
+- Operacion en terminal Linux y flujos agenticos (etiquetas `linux-terminal`, `agentic-ai`, `standalone`).
+- Capacidad de ejecucion local sin dependencias de API (etiqueta `standalone`).
+- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible`).
+- Capacidades multilingues: no disponibles; solo se declara ingles.
+- Vision, audio o modo thinking explicito: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en hardware de gama baja: las cuantizaciones IQ1/IQ2 y Q2_K permiten ejecutar un modelo de aproximadamente 1.7B en equipos con poca memoria, aunque con perdida notable de calidad; util para pruebas de concepto sin GPU dedicada.
-- Prototipado rapido en portatiles: las variantes Q4_K_M y Q5_K_M ofrecen un equilibrio razonable entre tamano y fidelidad para experimentar con el modelo antes de decidir si se adopta en produccion.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye mas de veinte variantes, lo que permite medir el impacto de la cuantizacion en la perplejidad y en tareas concretas sobre el mismo modelo base.
-- Despliegue en dispositivos edge: al ser GGUF, puede integrarse en aplicaciones de escritorio o moviles mediante bindings de llama.cpp, siempre que el caso de uso tolere las limitaciones del modelo base.
-- Experimentacion educativa: util para estudiar el efecto de imatrix frente a K-quants en un modelo pequeno, comparando salidas entre IQ3_M y Q3_K_M, por ejemplo.
-- No se recomienda su uso en produccion con clientes reales sin antes validar el modelo base, dado que no hay benchmarks, licencia ni documentacion de sesgos.
+- Agente de terminal Linux: el modelo puede integrarse en un bucle de agente que traduzca instrucciones en lenguaje natural a comandos de shell, ejecute la orden y procese la salida. Su tamano de 1,7 B permite ejecutarlo en la misma maquina que administra, sin depender de servicios externos.
+- Asistente de codigo en local: con cuantizaciones Q4_K_M (1,2 GB) o Q5_K_M (1,4 GB) se puede desplegar en un portatil para autocompletado, explicacion de funciones y generacion de parches, manteniendo el codigo dentro de la maquina.
+- Automatizacion de tareas de sistema: scripts que invocan al modelo para interpretar logs, proponer comandos de diagnostico o resumir la salida de herramientas como `systemctl`, `journalctl` o `df`, aprovechando su entrenamiento orientado a terminal.
+- Tool calling en pipelines ligeros: al soportar function calling, puede conectarse a APIs internas o a herramientas MCP en entornos con recursos limitados, usando vLLM o llama.cpp como servidor compatible con OpenAI.
+- Prototipado de agentes multi-paso: util para validar disenos de agentes (planificacion, llamada a herramientas, observacion) en fases tempranas de desarrollo antes de escalar a modelos mayores, gracias a su bajo coste de inferencia.
+- Educacion y experimentacion: las cuantizaciones IQ1/IQ2 (0,6-0,8 GB) permiten ejecutar el modelo en Raspberry Pi o CPUs modestas para aprender tecnicas de cuantizacion, imatrix y despliegue GGUF.
+- Filtrado y clasificacion de texto: su tamano reducido permite procesar grandes volumenes de texto en CPU con latencia aceptable para tareas de etiquetado o extraccion simple.
 
 ## Benchmarks y rendimiento
 
@@ -51,29 +55,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial; para un modelo de ~1.7B en GGUF, las variantes Q4_K_M rondarian 1-1,2 GB y las Q6_K en torno a 1,5 GB, aunque estas cifras son estimaciones basadas en el tamano nominal y no en datos del repositorio.
-- GPU recomendadas: no disponible. Por tamano, cualquier GPU consumer con 4 GB o mas (GTX 1650, RTX 3050, RTX 4060) deberia poder cargar las variantes Q4/Q5.
-- Cabe en GPU consumer: previsiblemente si, en la mayoria de tarjetas con 4-8 GB de VRAM para las cuantizaciones medias; las variantes IQ1/IQ2 podrian ejecutarse incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama (previa importacion del GGUF), llama-cpp-python, y servidores compatibles con GGUF como text-generation-webui. No se garantiza compatibilidad con vLLM o TGI, que priorizan safetensors.
-- Latencia y throughput: no disponible.
+- VRAM estimada segun cuantizacion: IQ1_S/IQ1_M ~0,6 GB; IQ2_* ~0,7-0,8 GB; Q3_* ~0,9-1,1 GB; Q4_K_M ~1,2 GB; Q5_K_M ~1,4 GB; Q6_K ~1,5 GB. A estas cifras hay que sumar el espacio para el contexto KV cache, que depende de la longitud de contexto configurada.
+- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM para Q4_K_M; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobradamente suficientes. El modelo cabe holgadamente en GPUs de consumo.
+- Cabe en consumer GPU: si, en practicamente cualquier GPU dedicada de los ultimos diez anos; tambien en iGPU y CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI (llama.cpp server, vLLM con soporte GGUF). El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia estandar.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera que sea muy bajo en GPU de consumo, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento, licencia ni contexto que permitan una comparacion rigurosa con alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Sijo2.0-1.7B (este) | 1,7 B | no disponible | Apache 2.0 | GGUF i1, safetensors | Orientado a agentica y terminal Linux; solo ingles |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32 K (tipico) | Apache 2.0 | safetensors, GGUF | Multilingue, base muy extendida, benchmarks publicos |
+| Llama-3.2-1B-Instruct | 1,2 B | 128 K | Llama 3.2 Community License | safetensors, GGUF | Multilingue, tool calling, licencia con restricciones |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8 K (tipico) | Apache 2.0 | safetensors, GGUF | Multilingue, entrenado con datos abiertos |
+
+La comparativa se limita a parametros, contexto, licencia y formato porque no hay benchmarks publicados de Sijo2.0-1.7B. Las cifras de contexto de los modelos alternativos son las tipicas de sus model cards y deben verificarse en cada caso; no se dispone de datos de rendimiento comparativo para Sijo2.0.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia declarada: no se puede asumir permiso para uso comercial ni para redistribucion; es imprescindible contactar con el autor del modelo base (myjellylabs) antes de cualquier uso productivo.
-- Incoherencia en el recuento de parametros: el repositorio reporta 899.013 parametros frente a los 1.7B del nombre, lo que impide confirmar el tamano real y, por tanto, los requisitos de hardware.
-- Repositorio de 0,0 GB: los metadatos sugieren que los archivos GGUF podrian no estar completamente disponibles o que el conteo es erroneo; conviene verificar la lista de archivos antes de descargar.
-- Sin benchmarks ni evaluacion de calidad: no hay evidencia de rendimiento en tareas de razonamiento, codigo o matematicas.
-- Riesgo de alucinacion y sesgos: desconocido, al no documentarse el entrenamiento ni la alineacion del modelo base.
-- Las cuantizaciones IQ1/IQ2 son agresivas y pueden degradar sustancialmente la coherencia; no se recomiendan para tareas que requieran precision.
-- Modelo sin traccion en la comunidad (0 descargas, 0 likes en el momento de la consulta): no hay validacion externa de su funcionamiento.
-- No se debe confundir este repositorio con el modelo original: para obtener documentacion fiable, hay que acudir a myjellylabs/Sijo2.0-1.7B.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de su calidad en razonamiento, codigo o tool calling frente a alternativas del mismo tamano.
+- Riesgo de alucinacion inherente a un modelo de 1,7 B: puede inventar comandos de shell peligrosos, APIs inexistentes o rutas de archivo erroneas. En uso agentico sobre terminal es imprescindible sandboxing y revision humana de comandos destructivos.
+- La longitud de contexto no esta documentada; no se debe asumir una ventana amplia en produccion.
+- La model card del repositorio de cuantizacion es generica de mradermacher y no aporta informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad del modelo base.
+- Las cuantizaciones IQ1 e IQ2 degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "mostly desperate". Para uso real se recomienda Q4_K_M o superior.
+- Licencia Apache 2.0 permite uso comercial, pero al ser un modelo derivado conviene verificar la licencia y procedencia de los datos del modelo base en myjellylabs/Sijo2.0-1.7B.
+- El repositorio ocupa 21,3 GB por incluir todas las variantes; conviene descargar solo el archivo GGUF necesario.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Sijo2.0-1.7B-i1-GGUF
+- Repositorio de cuantizaciones i1: https://huggingface.co/mradermacher/Sijo2.0-1.7B-i1-GGUF
 - Modelo base: https://huggingface.co/myjellylabs/Sijo2.0-1.7B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Sijo2.0-1.7B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Sijo2.0-1.7B-i1-GGUF
+- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

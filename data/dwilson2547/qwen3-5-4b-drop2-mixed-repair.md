@@ -2,81 +2,99 @@
 
 ## Resumen
 
-Qwen3.5-4B-drop2-mixed-repair es un modelo publicado en Hugging Face por el usuario dwilson2547 bajo licencia Apache 2.0. Por el identificador se deduce que deriva de la familia Qwen3.5, en concreto de una variante de 4.000 millones de parametros, y que se ha sometido a alguna intervencion de "drop" (posiblemente poda o eliminacion de capas o componentes) seguida de una reparacion mixta ("mixed repair"). Se trata, por tanto, de un modelo derivado y experimental, no de un lanzamiento oficial de Alibaba.
+Qwen3.5-4B-drop2-mixed-repair es un artefacto de investigación publicado por el usuario dwilson2547 que parte del modelo base Qwen/Qwen3.5-4B (4.100.503.168 parámetros reales en safetensors) y le aplica una cirugía estructural de profundidad: elimina 2 de sus 36 capas de decoder (las capas 24 y 28, seleccionadas por un ranking de importancia basado en similitud coseno entre vecinos), conservando intactas las 8 capas de atención completa del modelo híbrido. El resultado conserva aproximadamente el 94% de los parámetros originales y se somete después a un fine-tune de reparación con QLoRA para recuperar parte de la calidad perdida.
 
-La model card publicada es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0, sin descripcion, sin especificaciones, sin datos de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que apunta a un artefacto de investigacion personal o a un experimento de poda y recuperacion de capacidades, mas que a un modelo listo para produccion.
+El problema que aborda es puramente metodológico: medir cuánto de un modelo recortado puede restaurarse sin reentrenamiento completo. La reparación se hizo con QLoRA (r=16) sobre las proyecciones de atención y MLP, durante 1 época sobre 9,5 millones de tokens con una dieta mixta (61% FineWeb-EDU, 27% wikitext-2 train, 12% código C/C++ y Python), en unos 70 minutos sobre una única GPU de consumo con 3,9 GiB de VRAM.
 
-Su relevancia actual es limitada y de nicho: puede interesar a quienes investigan tecnicas de compresion de modelos, poda estructurada y reparacion mediante fine-tuning mixto sobre la base Qwen3.5, pero no hay evidencia publicada de su calidad ni de su comportamiento. Cualquier uso en produccion exigiria una evaluacion propia exhaustiva.
+Es relevante ahora porque documenta con honestidad un fenómeno habitual en la literatura de pruning: la especialización por corpus. Una variante reparada solo con wikitext obtenía mejor perplejidad en wikitext pero regresaba un 86% en el holdout de FineWeb-EDU. Este modelo, con dieta mixta, evita ese espejismo y publica resultados en tres corpus no relacionados. No obstante, el propio autor lo describe como una curiosidad de investigación y no como un modelo de producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, derivada de Qwen3.5) |
-| Parametros totales | 4B (inferido del nombre del modelo) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer híbrido (Qwen3.5 text), 36 capas de decoder originales, 2 eliminadas por cirugía de profundidad; 8 capas de atención completa protegidas por patrón |
+| Parametros totales | 4.100.503.168 |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | bf16 en el checkpoint principal; GGUF con Q4_K_M disponible en repo hermano |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (bf16, formato HF); GGUF en repo separado |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card. El nombre del repositorio sugiere que parte de un modelo Qwen3.5 de 4.000 millones de parametros y que se le ha aplicado una reduccion ("drop2") seguida de un proceso de reparacion mixta, probablemente un fine-tuning para recuperar rendimiento tras la poda. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas concretas.
+El modelo parte de Qwen3.5-4B, un transformer híbrido con 36 capas de decoder del que se eliminan las capas 24 y 28 mediante un ranking de importancia por similitud coseno entre vecinos. Las 8 capas de atención completa del diseño híbrido están protegidas por patrón y no se tocan; no se aplica cirugía de anchura. El bloque MTP (multi-token prediction) se restaura desde el checkpoint base, ya que los tensores de draft son anteriores al recorte; la aceptación en decodificación especulativa es aproximada, pero la corrección de la salida no se ve afectada porque los drafts siempre se verifican con el modelo principal.
 
-Tampoco se documenta si el modelo conserva las capacidades del Qwen3.5 original (razonamiento, codigo, multilingue) ni en que medida la intervencion las ha degradado o preservado. Toda afirmacion al respecto seria especulativa.
+La reparación consiste en un QLoRA con rango 16 sobre las proyecciones de atención y MLP, 1 época sobre 9,5 millones de tokens con la mezcla ya descrita (61% FineWeb-EDU, 27% wikitext-2 train, 12% código de llama.cpp y CPython stdlib). El entrenamiento se completó en aproximadamente 70 minutos en una sola GPU de consumo con 3,9 GiB de VRAM. La receta completa de reproducción (cirugía, recuperación y evaluación) está en el fichero recipe-mixfull.yaml del repositorio.
 
 ## Capacidades
 
-- No hay informacion verificada sobre las capacidades del modelo.
-- Por herencia de la familia Qwen3.5 cabria esperar generacion de texto, razonamiento y codigo, pero no esta confirmado ni documentado por el autor.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional y continuaciones de texto en formato HF transformers (pipeline text-generation).
+- Razonamiento de cadena de pensamiento, con la advertencia del autor de que los comportamientos de contexto largo (umbral de bucle frente a temperatura de muestreo) se desplazan respecto al modelo original y conviene usar temperaturas algo más bajas para fiabilidad en CoT.
+- Generación de código (C/C++, Python) reforzada por el 12% de código en la dieta de reparación.
+- Decodificación especulativa mediante el bloque MTP restaurado, con aceptación aproximada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Visión y audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigacion en compresion de modelos: serviria como objeto de estudio para analizar el impacto de la poda y la reparacion sobre un modelo base de 4B, comparando su comportamiento con el Qwen3.5 original.
-- Experimentos de fine-tuning: puede utilizarse como punto de partida en laboratorio para probar tecnicas de recuperacion de capacidades tras poda.
-- Evaluacion academica de robustez: util para medir la degradacion en tareas de razonamiento y codigo antes y despues de la intervencion.
-- Pruebas de cuantizacion: al ser un modelo pequeno, permite experimentar con cuantizaciones agresivas en hardware de consumo, siempre con validacion manual.
-- Prototipado interno sin requisitos de produccion: adecuado para entornos de desarrollo donde se acepta un comportamiento incierto y se dispone de evaluacion propia.
-- Benchmarking de pipelines de inferencia: util para comparar latencia y throughput de herramientas como vLLM o llama.cpp sobre un checkpoint de 4B derivado.
+- Investigación sobre pruning estructural: sirve como caso reproducible de cirugía de profundidad más reparación con QLoRA, con receta completa en recipe-mixfull.yaml para replicar el pipeline en otros modelos.
+- Estudio de especialización por corpus: permite comparar la variante de dieta mixta con la variante solo-wikitext (que regresaba un 86% en FineWeb-EDU) para ilustrar el efecto de la composición del dataset de reparación.
+- Evaluación de decodificación especulativa tras modificar el modelo: el bloque MTP restaurado permite medir la degradación de aceptación de drafts cuando el modelo principal ha sido recortado.
+- Prototipado en hardware limitado: con 4,1B parámetros y builds GGUF Q4_K_M, puede ejecutarse en GPU de consumo para experimentos de generación de texto sin pretensiones de producción.
+- Docencia y divulgación: ejemplo práctico de qué se pierde y qué se recupera al eliminar capas de un transformer híbrido, con métricas de perplejidad en tres corpus no relacionados.
+- Generación de código en entornos de prueba: el refuerzo con código C/C++ y Python lo hace utilizable para tareas exploratorias de completado de código, siempre con validación humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Perplejidad en f16 sobre tres corpus no relacionados (menor es mejor), según la model card:
+
+| Corpus | Qwen3.5-4B original | Tras cirugía, sin reparar | Tras reparación (este modelo) |
+|---|---|---|---|
+| wikitext-2 (test) | 9,33 | 12,82 | 8,42 |
+| FineWeb-EDU holdout | 10,44 | 13,55 | 12,39 |
+| Código (C/C++/Python) | 3,17 | 3,57 | 3,36 |
+
+No se han publicado resultados de benchmarks académicos (GSM8K, MMLU u otros) en la información disponible; el autor indica explícitamente que solo hay suelos de perplejidad y comprobaciones manuales por muestreo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de 4B en FP16 se situaria en torno a 8-9 GB, y en cuantizacion de 4 bits en torno a 2,5-3 GB, como estimacion general para modelos de ese tamano.
-- GPU recomendadas: no especificadas por el autor; por tamano, una RTX 4090, A100 o H100 serian suficientes, e incluso GPUs de consumo de gama media-alta con cuantizacion.
-- Compatibilidad con GPU de consumo: probable por el tamano de 4B, aunque no esta confirmado.
-- Opciones de despliegue: no documentadas; en principio vLLM, llama.cpp, Ollama o TGI podrian servir si el formato de pesos es compatible, algo que no se especifica.
-- Latencia y throughput: no disponibles.
+- VRAM para inferencia en bf16: aproximadamente 8,2 GB de pesos, más overhead de activaciones y KV cache; en la práctica, más de 10 GB en GPU.
+- VRAM para la reparación documentada: 3,9 GiB con QLoRA r=16 en una sola GPU de consumo.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, encaja en RTX 4090 (24 GB) en bf16 y en GPUs de 16 GB con cuantización.
+- GPU de consumo: sí cabe; con GGUF Q4_K_M del repo hermano se reduce a unos 2,5-3 GB de pesos, apto para GPUs de 8 GB.
+- Opciones de despliegue: transformers (formato nativo), llama.cpp u Ollama mediante los GGUF del repo dwilson2547/Qwen3.5-4B-drop2-mixed-repair-GGUF. vLLM y TGI no están confirmados en la información disponible.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
-| Qwen3.5-4B-drop2-mixed-repair | 4B (inferido) | no disponible | Apache 2.0 | Hugging Face, sin descargas |
-| Qwen3.5-4B (base oficial) | 4B | no disponible | no disponible | no disponible |
-| Otros derivados podados de 4B | variable | variable | variable | no disponible |
+| Qwen3.5-4B-drop2-mixed-repair | 4,10B (94% del original) | no disponible | Apache-2.0 | Artefacto de investigación |
+| Qwen/Qwen3.5-4B (base) | ~4,36B (implícito, 36 capas) | no disponible | Apache-2.0 | Modelo base de referencia |
+| Variante wikitext-only del mismo autor | no disponible | no disponible | Apache-2.0 | Reparación con regresión del 86% en FineWeb-EDU |
 
-No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas.
+No se dispone de datos de benchmarks académicos ni de modelos comparables de terceros en la información proporcionada para establecer una comparación de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: no hay documentacion sobre entrenamiento, datos ni evaluacion.
-- Riesgo elevado de comportamiento degradado por la poda ("drop2") y la reparacion, sin evidencia de que se haya recuperado el rendimiento original.
-- Riesgo de alucinacion no evaluado.
-- Idiomas y cobertura de contexto desconocidos.
-- Cero descargas y cero likes: sin validacion por parte de la comunidad.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de documentacion hace arriesgado su empleo en produccion sin auditoria propia.
-- Posible dependencia de la licencia del modelo base Qwen3.5; conviene verificar los terminos del modelo original antes de redistribuir.
+- La reparación es parcial en corpus diversos: según el autor, solo se cierra aproximadamente el 40% de la brecha de FineWeb-EDU respecto al modelo original.
+- No hay métricas de benchmarks académicos; la evaluación se limita a perplejidad y comprobaciones manuales.
+- Los comportamientos de contexto largo se desplazan respecto al modelo original; se recomienda bajar ligeramente la temperatura para fiabilidad en cadena de pensamiento.
+- La perplejidad en wikitext supera (mejora) a la del modelo original, lo que indica una especialización leve derivada de esa porción de la dieta; no debe interpretarse como una mejora general.
+- La aceptación de la decodificación especulativa es aproximada por la restauración del bloque MTP; la corrección de salida no se ve afectada.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible, pero aplicables los del modelo base.
+- El autor lo califica explícitamente como no apto para producción.
+- Licencia Apache-2.0 permite uso comercial, pero al ser un artefacto de investigación con reparación parcial no se recomienda su despliegue en entornos productivos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/dwilson2547/Qwen3.5-4B-drop2-mixed-repair
+- Modelo en Hugging Face: https://huggingface.co/dwilson2547/Qwen3.5-4B-drop2-mixed-repair
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Repositorio GGUF hermano: https://huggingface.co/dwilson2547/Qwen3.5-4B-drop2-mixed-repair-GGUF
+- Dataset FineWeb-EDU: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset wikitext-2: https://huggingface.co/datasets/Salesforce/wikitext
+- Código llama.cpp: https://github.com/ggml-org/llama.cpp
+- Código CPython: https://github.com/python/cpython

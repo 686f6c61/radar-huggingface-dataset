@@ -77,16 +77,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/LFM3-1.7B-LiteRT at main - Hugging Face",
-      "url": "https://huggingface.co/litert-community/LFM3-1.7B-LiteRT/tree/main",
-      "snippet": "litert-community / LFM3-1.7B-LiteRT Like 4 Follow LiteRT Community (FKA TFLite) 10.2k Text Generation LiteRT-LM LiteRT LiteRT 16 languages on-device edge liquid lfm3 conversational License:lfm1.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "litert-community/LFM3-1.7B-LiteRT · Hugging Face",
-      "url": "https://huggingface.co/litert-community/LFM3-1.7B-LiteRT",
-      "snippet": "Text Generation model, built with LiteRT-LM. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

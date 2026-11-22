@@ -2,109 +2,104 @@
 
 ## Resumen
 
-FastContext-1.0-4B-SFT es un modelo de lenguaje especializado en la exploración de repositorios de código como subagente de sistemas de agentes de programación. Desarrollado originalmente por Microsoft y publicado bajo licencia MIT, el modelo se construye sobre el backbone de Qwen3-4B-Instruct (arquitectura `Qwen3ForCausalLM`) y se afina mediante supervisión (SFT) para realizar descubrimiento de repositorios y recopilación de evidencia mediante llamadas paralelas a herramientas de lectura de ficheros (READ, GLOB, GREP).
+FastContext-1.0-4B-SFT es un modelo de lenguaje de 4.000 millones de parámetros especializado en la exploración de repositorios de código como sub-agente de herramientas de programación. Desarrollado originalmente por Microsoft sobre el backbone de Qwen3-4B-Instruct, el modelo se entrenó mediante ajuste supervisado (SFT) para realizar descubrimiento de repositorios y recopilación de evidencias mediante llamadas paralelas a herramientas (READ, GLOB, GREP). La versión aquí descrita es una conversión comunitaria al formato LiteRT-LM (`.litertlm`) publicada por litert-community, orientada a inferencia en dispositivo (on-device) y entornos edge.
 
-La versión aquí documentada es una conversión comunitaria realizada por `litert-community` al formato LiteRT-LM (`.litertlm`) de Google, pensada para inferencia en dispositivo (on-device) en teléfonos Android, iPhone, Raspberry Pi y equipos de sobremesa. La conversión aplica cuantización int4 simétrica con clipping óptimo OCTAV y embeddings en INT8, reduciendo el peso principal a aproximadamente 2,11 GiB (block 32) o 1,94 GiB (block 128), lo que permite su ejecución en hardware de consumo.
+El modelo resulta relevante por su enfoque vertical: en lugar de competir como un asistente generalista, se posiciona como un componente especializado dentro de pipelines de agentes de código, donde la latencia y el coste por token importan. Su tamaño de 4B parámetros y su cuantización int4 por bloques lo hacen desplegable en hardware móvil, como demuestran las mediciones del autor en un Galaxy S26 (18,4 tok/s de decodificación en GPU) o en una Raspberry Pi 5 (1,5 tok/s en CPU con 4 hilos).
 
-Es relevante ahora porque demuestra la viabilidad de ejecutar subagentes especializados de programación completamente en el borde, sin conexión a la nube, con latencias de decodificación de 7,5 tok/s en un Galaxy S26 y 74,5 tok/s en un Mac Studio M4 Max. Conviene señalar, no obstante, que los repositorios originales de Microsoft y el paper asociado (arXiv:2606.14066) fueron retirados en junio de 2026, por lo que esta conversión constituye uno de los pocos artefactos disponibles del modelo.
+Conviene señalar que los repositorios fuente de Microsoft (`microsoft/FastContext-1.0-4B-SFT` y `microsoft/FastContext-1.0-4B-RL`) ya no están disponibles en Hugging Face y que el paper asociado (arXiv:2606.14066) fue retirado del servidor arXiv el 30 de junio de 2026. Esta conversión se realizó antes de esas retiradas, a partir del release SFT publicado bajo licencia MIT.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3ForCausalLM) |
-| Parametros totales | 4B |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4096 (KV cache en la conversión LiteRT-LM) |
-| Tipos de cuantizacion | int4 simetrica por bloques (block 32 y block 128) + embeddings INT8; OCTAV optimal-clipping; computo entero |
+| Arquitectura | Transformer decoder-only (Qwen3ForCausalLM) |
+| Parámetros totales | 4B (aproximado, según el nombre del modelo) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | int4 simétrico por bloques (block 32 y block 128); pesos en formato LiteRT-LM |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | `.litertlm` (bundle con tokenizer y plantilla ChatML de Qwen3 incluidos) |
+| Formato de pesos | `.litertlm` (LiteRT-LM); también disponible en la rama `web` para WebGPU |
+| Tamaño de los ficheros | `model.litertlm` ~2,5 GiB; repo completo 15,4 GB |
+| Modelo base | microsoft/FastContext-1.0-4B-SFT (sobre Qwen3-4B-Instruct) |
+| Runtime | LiteRT-LM (Google AI Edge) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de 4B parámetros derivado de Qwen3-4B-Instruct, por lo que hereda la arquitectura estándar de la familia Qwen3 con atención causal convencional. El ajuste SFT lo especializa como subagente de exploración de repositorios: en lugar de generar respuestas finales, el modelo emite llamadas estructuradas a herramientas de descubrimiento (READ para leer ficheros, GLOB para listar rutas y GREP para buscar patrones) que el agente orquestador ejecuta en paralelo. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en la información proporcionada.
+El modelo emplea una arquitectura transformer decoder-only estándar, concretamente la implementación `Qwen3ForCausalLM` de Qwen3-4B-Instruct, lo que permite reutilizar directamente el conversor y el runtime existentes para Qwen3. Sobre ese backbone, Microsoft aplicó un ajuste supervisado (SFT) orientado a una tarea concreta: la exploración de repositorios de código mediante llamadas paralelas a herramientas de lectura de ficheros, búsqueda por patrón (GLOB) y búsqueda por contenido (GREP). No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas posteriores de RLHF o DPO; existió un release RL (`FastContext-1.0-4B-RL`) pero su repositorio ya no está accesible.
 
-La conversión a LiteRT-LM introduce dos innovaciones técnicas destacables. En primer lugar, la cuantización int4 con granularidad de bloque configurable: block 32 almacena escalas cada 32 pesos y preserva la precisión (88,0% en GSM8K, paridad con bf16), mientras que block 128 almacena una cuarta parte de las escalas y acelera la decodificación un 40% a costa de 6 puntos de precisión (81,0% en GSM8K). En segundo lugar, la externalización de la sección de embeddings en INT8, que reduce el tamaño del fichero y permite cargar el modelo en dispositivos con memoria limitada como el iPhone 17 Pro.
+La innovación técnica principal de esta conversión no reside en el entrenamiento sino en el despliegue: los ficheros publicados el 16 de noviembre de 2026 reescriben el grafo de prefill y decode para GPU sin modificar ningún peso, lo que se traduce en mejoras medidas de 1,45 a 1,54 veces en velocidad de decodificación y de 1,19 a 1,47 veces en prefill respecto a los ficheros anteriores en el mismo dispositivo (Galaxy S26). Se ofrecen dos variantes de cuantización int4 simétrica, con bloque 32 y bloque 128, que intercambian precisión por tamaño y velocidad. La decodificación especulativa y otras técnicas de aceleración no están documentadas en la información disponible.
 
 ## Capacidades
 
-- Generación de texto y razonamiento orientado a tareas de exploración de código.
-- Llamadas a herramientas en paralelo (tool calling / function calling) con las operaciones READ, GLOB y GREP como interfaz principal.
-- Funcionamiento como subagente dentro de pipelines de agentes multi-paso para descubrimiento de repositorios y recopilación de evidencia.
-- Comprensión de estructura de proyectos: identificación de puntos de entrada, ficheros de configuración y dependencias.
-- Razonamiento matemático básico verificado mediante GSM8K (88,0% en block 32).
-- Inferencia totalmente local en dispositivo, sin dependencia de red.
-- Plantilla de chat Qwen3 ChatML (`<|im_start|>role\n…<|im_end|>`, token de parada `<|im_end|>`) incluida en el bundle.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto orientada a tareas de agente, con especialización en exploración de repositorios de código.
+- Llamada a herramientas (tool calling) en paralelo: READ, GLOB y GREP como primitivas de descubrimiento de ficheros y evidencias.
+- Razonamiento multi-paso dentro de un bucle de agente: el modelo propone qué leer, lee, y refina la búsqueda en función de los resultados.
+- Comprensión de estructura de proyectos de software: identifica puntos de entrada, ficheros de configuración y convenciones (por ejemplo, `main.py`, `pyproject.toml`, `setup.py`).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking, visión o audio: no disponibles.
+- Integración con el runtime LiteRT-LM para ejecución en Android, iOS, macOS, Linux y navegador (WebGPU).
 
 ## Casos de uso
 
-- Exploración de repositorios en agentes de programación: el modelo actúa como subagente que, ante una pregunta del usuario, emite llamadas GREP y GLOB para localizar los ficheros relevantes y READ para extraer su contenido, devolviendo evidencia al agente orquestador. Su especialización evita que el modelo principal gaste contexto en tareas de descubrimiento.
-- Asistentes de código en el móvil sin conexión: integrado en Google AI Edge Gallery o en una app Android propia mediante LiteRT-LM, permite consultar la estructura de un proyecto desde el teléfono con 7,5 tok/s de decodificación en un Galaxy S26.
-- Automatización de revisiones de código en el borde: desplegado en una Raspberry Pi 5 junto a un repositorio local, el modelo puede enumerar ficheros afectados por un cambio y localizar definiciones relevantes con 1,5 tok/s de decodificación, suficiente para tareas por lotes no interactivas.
-- Servidor local compatible con OpenAI: mediante `litert-lm serve` en macOS o Linux, se expone el modelo como API local para que herramientas de desarrollo (editores, scripts de CI) consulten la estructura del repositorio sin enviar código a la nube.
-- Indexación semántica de proyectos en pipelines de CI/CD: el modelo puede generar descripciones de módulos y mapas de dependencias durante la construcción, aprovechando su capacidad de lectura selectiva de ficheros para no procesar el repositorio completo.
-- Demostraciones educativas de agentes en el borde: el bundle `.litertlm` autocontenido (tokenizer y plantilla incluidos) y el demo web con WebGPU permiten ilustrar el ciclo completo de un agente con tool calling en un navegador o dispositivo de bajo coste.
-- Prototipado de subagentes especializados: al estar bajo licencia MIT y construido sobre Qwen3, sirve como base para afinar variantes con otras herramientas o dominios sin restricciones de uso comercial.
+- Sub-agente de exploración en asistentes de código: integrado en un agente principal (por ejemplo, un IDE con LLM de mayor tamaño), FastContext se encarga de localizar los ficheros relevantes antes de que el modelo grande genere la respuesta, reduciendo el número de tokens de contexto que debe procesar este último.
+- Indexación semántica de repositorios en local: el modelo puede ejecutarse en el portátil del desarrollador sin conexión para generar resúmenes de estructura de proyecto y mapas de dependencias entre ficheros.
+- Automatización de revisiones de código en CI/CD: dado un diff, el modelo localiza los ficheros afectados y las referencias cruzadas mediante GREP, aportando contexto al revisor automático.
+- Asistencia en dispositivos móviles para desarrollo: con 18,4 tok/s de decodificación en la GPU de un Galaxy S26, es viable un asistente de exploración de repositorios embebido en una app Android para consultas puntuales sobre el código.
+- Despliegue en entornos air-gapped: al caber en una Raspberry Pi 5 y no requerir conexión, puede usarse en instalaciones con requisitos de confidencialidad donde el código no puede salir de la red local.
+- Prototipado rápido de agentes de código: la disponibilidad del formato `.litertlm` y del CLI `litert-lm` permite validar pipelines de tool calling con un solo comando, sin infraestructura de GPU dedicada.
+- Demos web interactivas: la rama `web` del repositorio (2,66 GB) permite ejecutar el modelo en el navegador con WebGPU, útil para evaluaciones y demos sin instalación.
 
 ## Benchmarks y rendimiento
 
-| Benchmark / métrica | Resultado | Contexto |
-|---|---|---|
-| GSM8K (block 32) | 88,0% | Paridad con bf16 según la model card |
-| GSM8K (block 128) | 81,0% | −6 puntos frente a block 32 |
-| Decode, Galaxy S26 GPU (block 128) | 7,5 tok/s | LiteRT-LM 0.16.0, 1674 ops delegadas |
-| Prefill, Galaxy S26 GPU (block 128) | 86 tok/s | TTFT 2,47 s |
-| Decode, Galaxy S26 CPU (block 32) | 7,1 tok/s | LiteRT-LM 0.16.0, TTFT 5,61 s |
-| Decode, Mac Studio M4 Max GPU (block 32) | 74,5 tok/s | LiteRT-LM 0.14.0, prefill 964 tok/s, TTFT 279 ms |
-| Decode, iPhone 17 Pro (block 32 / block 128) | ~10 / ~14 tok/s | Runtime Swift LiteRT-LM |
-| Decode, Raspberry Pi 5 CPU 4 hilos | 1,5 tok/s (block 128) / 1,4 tok/s (block 32) | TTFT 26,04 s / 28,46 s |
+No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos de rendimiento son mediciones de inferencia en dispositivo:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) en la información disponible más allá de GSM8K.
+| Dispositivo | Runtime | Modo | Decode (tok/s) | Prefill (tok/s) | TTFT | Fecha |
+|---|---|---|---|---|---|---|
+| Galaxy S26 | LiteRT-LM 0.19.0 | GPU (`model.litertlm`) | 18,4 | 168 (1.024 tok) | no disponible | 2026-11 |
+| Galaxy S26 | LiteRT-LM 0.19.0 | GPU (`model_block128`) | 20,4 | 170 (1.024 tok) | no disponible | 2026-11 |
+| Galaxy S26 | LiteRT-LM 0.16.0 | GPU (ficheros previos) | 7,5 | 86 | 2,47 s | 2026-08 |
+| Galaxy S26 | LiteRT-LM 0.16.0 | CPU (ficheros previos) | 7,1 | 37 | 5,61 s | 2026-09 |
+| Mac Studio M4 Max | LiteRT-LM 0.14.0 | GPU | 74,5 | 964 | 279 ms | 2026-07 |
+| Raspberry Pi 5 | LiteRT-LM 0.16.1 | CPU, 4 hilos | 1,4–1,5 | 10 | 26–28 s | 2026-09 |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: aproximadamente 2,5 GB libres de RAM para el build int4 de 4B; el peso principal ocupa ~2,11 GiB (block 32) o ~1,94 GiB (block 128).
-- GPU de sobremesa recomendadas: cualquier GPU integrada o dedicada moderna con soporte de LiteRT-LM; los datos publicados incluyen Mac Studio M4 Max (GPU) con 74,5 tok/s de decodificación.
-- GPU de centro de datos: no disponible en la información proporcionada (el modelo está orientado a borde, no a A100/H100).
-- Cabe en GPU de consumo: sí; verificado en iPhone 17 Pro, Galaxy S26 y Mac con GPU M-series.
-- Opciones de despliegue: runtime LiteRT-LM (CLI `litert_lm_main`, paquete `pip install litert-lm`, servidor local compatible con OpenAI mediante `litert-lm serve`), runtime Swift LiteRT-LM en iOS, Google AI Edge Gallery en Android (v1.0.16+ importa directamente desde Hugging Face) y demo web con WebGPU.
-- Latencia y throughput: TTFT de 279 ms en Mac Studio M4 Max GPU, 2,47 s en Galaxy S26 GPU y 26,04 s en Raspberry Pi 5; decodificación entre 1,4 y 74,5 tok/s según plataforma.
-- Nota de memoria: se recomienda reiniciar el teléfono antes de cargar el modelo si la memoria es escasa.
+- VRAM/RAM estimada: el fichero `model.litertlm` ocupa aproximadamente 2,5 GiB en int4, por lo que se necesita al menos ese espacio más el overhead del runtime. En el Galaxy S26, el contador de asignación GPU del dispositivo (`kgsl_page_alloc`) subió 5,21 GB durante la ejecución de `model.litertlm` y 4,83 GB con `model_block128`.
+- GPU recomendadas: no hay una lista oficial; las mediciones disponibles cubren GPU móviles (Galaxy S26, Pixel 11 Pro), GPU integradas de Apple (Mac Studio M4 Max) y CPU de Raspberry Pi 5.
+- Compatibilidad con GPU de consumo: no confirmada para tarjetas de escritorio NVIDIA o AMD; el runtime LiteRT-LM está orientado a GPU móviles, Apple y WebGPU.
+- Opciones de despliegue: LiteRT-LM (CLI `litert-lm`, versión 0.19.0 o superior para la ruta GPU en Android), WebGPU en navegador mediante la rama `web`, y el runtime LiteRT-LM para Android/iOS/macOS/Linux. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ver tabla de benchmarks. En Mac Studio M4 Max se alcanzan 74,5 tok/s de decodificación y 279 ms de TTFT; en Raspberry Pi 5 el TTFT sube a 26–28 s, lo que limita su uso a consultas no interactivas.
+- Nota operativa: el CLI `litert-lm` (0.14.0 a 0.19.2) reutiliza un `model.litertlm` descargado previamente sin verificar su integridad contra el repositorio, por lo que copias antiguas o descargas incompletas persisten; es necesario borrar el fichero y volver a ejecutar.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Formato edge |
 |---|---|---|---|---|---|
-| FastContext-1.0-4B-SFT (LiteRT-LM) | 4B | 4096 (KV cache) | `.litertlm`, on-device | MIT | Subagente especializado en exploración de repositorios; GSM8K 88,0% (block 32) |
-| Qwen3-4B-Instruct (modelo base) | 4B | no disponible en esta ficha | safetensors, GGUF, múltiples runtimes | Apache 2.0 (según la familia Qwen3) | Modelo generalista; el FastContext añade especialización en tool calling para repos |
-| Gemma block-128 (referencia de granularidad citada por el autor) | no disponible | no disponible | `.litertlm` | no disponible | El autor cita que la granularidad block 128 es la que usan los bundles oficiales de Gemma |
+| FastContext-1.0-4B-SFT (esta ficha) | 4B | no disponible | Exploración de repositorios, tool calling | MIT | LiteRT-LM (int4) |
+| Qwen3-4B-Instruct | 4B | no disponible | Asistente generalista | no disponible en la información | Múltiples (incluye GGUF) |
+| FastContext-1.0-4B-RL | 4B | no disponible | Exploración de repositorios (variante RL) | no disponible (repo retirado) | no disponible |
 
-No se dispone de datos comparativos de rendimiento frente a alternativas en la información proporcionada.
+La comparación con otros sub-agentes de exploración de código de tamaño similar no está disponible en la información proporcionada. El modelo base Qwen3-4B-Instruct es la referencia natural, pero no se han publicado comparativas de rendimiento entre ambos en las fuentes consultadas.
 
 ## Limitaciones y advertencias
 
-- Los repositorios originales `microsoft/FastContext-1.0-4B-SFT` y `microsoft/FastContext-1.0-4B-RL` ya no están disponibles en Hugging Face (último archivado el 2026-06-28) y el paper arXiv:2606.14066 fue retirado el 2026-06-30; los enlaces al origen en la model card no resuelven.
-- El modelo está especializado como subagente de exploración de repositorios: no es un modelo generalista y su rendimiento en tareas ajenas al descubrimiento de código no está documentado.
-- Contexto limitado a 4096 tokens de KV cache en esta conversión, lo que restringe la cantidad de evidencia que puede acumular en una sola sesión.
-- La cuantización int4 block 128 degrada GSM8K en 6 puntos frente a block 32; debe elegirse block 32 salvo que la latencia de decodificación sea el factor dominante.
-- Riesgo de alucinación en la selección de ficheros y patrones de búsqueda: el agente orquestador debe validar las rutas devueltas antes de ejecutar lecturas.
-- Sesgos conocidos: no disponible en la información proporcionada.
-- Idiomas soportados: no disponible; la plantilla ChatML de Qwen3 sugiere herencia multilingüe, pero no está verificada en esta conversión.
-- Licencia MIT: permite uso comercial sin restricciones adicionales, pero al derivar de Qwen3-4B-Instruct conviene verificar las condiciones de la licencia del modelo base original.
-- Para producción en dispositivos móviles se requiere LiteRT-LM 0.15+ (Android) o el runtime Swift correspondiente (iOS); versiones anteriores no cargan `.litertlm`.
-- El throughput en Raspberry Pi 5 (1,4–1,5 tok/s) limita su uso a tareas por lotes, no interactivas.
+- Modelo vertical: está entrenado específicamente para exploración de repositorios y tool calling con READ/GLOB/GREP; su rendimiento como asistente generalista, en matemáticas o en generación de código completo no está documentado y probablemente sea inferior al de Qwen3-4B-Instruct sin ajustar.
+- Repositorios fuente retirados: `microsoft/FastContext-1.0-4B-SFT` y `microsoft/FastContext-1.0-4B-RL` ya no están en Hugging Face, y el paper arXiv:2606.14066 fue retirado el 30 de junio de 2026. Los enlaces a la fuente original en la model card no resuelven.
+- Idiomas soportados no documentados: no hay información sobre cobertura multilingüe; asumir un rendimiento inferior fuera del inglés.
+- Longitud de contexto no documentada: no se especifica la ventana máxima, lo que impide planificar su uso con repositorios grandes sin pruebas previas.
+- Riesgo de alucinación: como todo modelo de 4B, puede inventar rutas de ficheros o nombres de funciones; en un bucle de agente conviene validar las rutas devueltas contra el sistema de ficheros real.
+- Estado de validación incompleto: los ficheros publicados el 16 de noviembre de 2026 no se han probado en iPhone (los anteriores sí), y solo se han ejecutado con LiteRT-LM 0.19.0 en móviles y Mac, y 0.19.1–0.19.2 en Mac.
+- Dependencia del runtime: la ruta GPU en Android requiere LiteRT-LM 0.19.0 o superior; versiones anteriores no funcionan con estos ficheros.
+- Licencia MIT: permite uso comercial, pero al derivar de Qwen3-4B-Instruct conviene verificar las condiciones de la licencia original de Qwen3, no detalladas en esta ficha.
+- Sin datos de sesgo: no se ha publicado información sobre sesgos demográficos, lingüísticos o de otro tipo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/FastContext-1.0-4B-SFT
-- Modelo base original (ya no disponible): https://huggingface.co/microsoft/FastContext-1.0-4B-SFT
-- Paper (retirado): https://arxiv.org/abs/2606.14066
+- Repositorio Hugging Face: https://huggingface.co/litert-community/FastContext-1.0-4B-SFT
+- Modelo base original (retirado): https://huggingface.co/microsoft/FastContext-1.0-4B-SFT
+- Paper en arXiv (retirado): https://arxiv.org/abs/2606.14066
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Runtime Swift LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Google AI Edge Gallery: https://github.com/google-ai-edge/gallery
 - Demo web con WebGPU: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/FastContext-1.0-4B-SFT
-- Registro edge-compat (block 128): https://github.com/john-rocky/edge-compat/blob/main/cards/fastcontext-1.0-4b-sft-model-block128/CARD.md
-- Registro edge-compat (block 32): https://github.com/john-rocky/edge-compat/blob/main/cards/fastcontext-4b/CARD.md
+- Registro de mediciones edge-compat (`model.litertlm`): https://github.com/john-rocky/edge-compat/blob/main/cards/fastcontext-1.0-4b-sft-model-block128/CARD.md
+- Registro de mediciones edge-compat (`model_block128`): https://github.com/john-rocky/edge-compat/blob/main/cards/fastcontext-4b/CARD.md

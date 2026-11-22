@@ -2,90 +2,111 @@
 
 ## Resumen
 
-elephant-1 es un modelo de decisión tipado ("typed decision model") publicado por baselabs como un fine-tune completo de Qwen/Qwen3.5-9B. A diferencia de un modelo generativo convencional, no produce texto: dada una petición con una serie de preguntas y opciones, devuelve una probabilidad por cada opción calculada a partir de un único prefill de prefijo compartido. Es decir, sustituye la generación autoregresiva por una cabeza de decisión que puntúa alternativas.
+elephant-1 es un modelo de decisión de 9.409 millones de parámetros desarrollado por Base Labs en Baseten, obtenido mediante un fine-tune completo de Qwen3.5-9B. No es un modelo generativo al uso: recibe un estado (texto, opcionalmente con imágenes) junto con un conjunto de preguntas tipadas (sí/no, elección entre opciones, puntuación ordinal) y devuelve una probabilidad calibrada para cada opción, resolviendo todas las preguntas en un único prefill de prefijo compartido.
 
-El modelo cuenta con 9.409.813.744 parámetros (aproximadamente 9,4 B) en pesos safetensors, con un repositorio de 18,8 GB, lo que sugiere pesos en precisión de 16 bits. La arquitectura de partida es la de Qwen3.5-9B, aunque la información disponible no detalla la configuración interna (número de capas, dimensiones, tipo de atención ni longitud de contexto entrenada).
+Su relevancia radica en que sustituye el patrón habitual de "pedir al LLM que responda en JSON y parsear" por una interfaz de clasificación nativa con calibración explícita (término de Brier en la función de pérdida) y una opción entrenada de "no lo sé". Esto lo hace adecuado para enrutamiento, guardrails y sistemas de decisión donde la fiabilidad de la probabilidad importa más que la fluidez del texto.
 
-Su relevancia está en el nicho de los modelos de decisión: aplicaciones donde se necesita elegir entre opciones discretas (clasificación, enrutado, selección de herramientas, puntuación de candidatos) con coste de inferencia reducido al evitar la decodificación token a token. No obstante, el modelo es muy reciente (creado el 19 de octubre de 2026), tiene 21 descargas y 14 likes, y no publica benchmarks ni especificaciones detalladas, por lo que su validación externa es todavía prácticamente nula.
+Está post-entrenado sobre Qwen3.5-9B, conserva la torre de visión (congelada) y admite entradas multimodales. Según el autor, es el mejor modelo por debajo de 15B en el Jev Decision Index 0.4 (62,65) y alcanza 65,2 en una réplica del Artificial Analysis Decision Index, a la altura de d1-ultra (65). Tiene un hermano mayor de 27B, mammoth-1.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen/Qwen3.5-9B, adaptado como modelo de decisión (cabeza de probabilidad por opción); detalles internos no disponibles |
-| Parametros totales | 9.409.813.744 (aproximadamente 9,4 B) |
-| Parametros activos | no disponible (no se indica que sea MoE; los parámetros totales coinciden con los del modelo base) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; solo se publican pesos safetensors (repositorio de 18,8 GB, compatible con precisiones de 16 bits) |
-| Idiomas soportados | no disponible |
-| Licencia | MIT según el campo `license_name` de la model card; las etiquetas del repositorio indican `license:other`, existe discrepancia |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer decoder (Qwen3.5) con máscara bidireccional por bloques en las capas de atención completa; torre de visión congelada |
+| Parámetros totales | 9.409.813.744 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | 16.384 tokens de secuencia máxima |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | Inglés (según la model card); resto no disponible |
+| Licencia | MIT (modificaciones de Baseten) sobre Apache 2.0 (Qwen3.5-9B); uso sujeto a ambas |
+| Formato de pesos | safetensors (librería transformers); runtime de servicio propio OneJev |
 
 ## Arquitectura y entrenamiento
 
-elephant-1 es un fine-tune completo (full fine-tune) de Qwen/Qwen3.5-9B, no un adaptador. La model card lo describe como un "typed decision model": el modelo recibe una petición compuesta por varias preguntas, cada una con su conjunto de opciones, y emite una probabilidad para cada opción. El cálculo se realiza con un único prefill de prefijo compartido, de modo que las preguntas y opciones se procesan en una sola pasada de atención en lugar de generar respuestas de forma secuencial.
+El modelo parte de Qwen3.5-9B, un transformer decoder multimodal con torre de visión. El fine-tune es completo sobre el modelo de lenguaje, mientras que el codificador de visión permanece congelado. La innovación estructural es el uso de una máscara de atención bidireccional por bloques en las capas de atención completa, que permite que todas las preguntas de una misma petición se resuelvan contra el mismo prefijo de estado en un solo paso de prefill, en lugar de una generación autoregresiva por pregunta.
 
-Ese diseño implica que la salida no es texto libre sino una distribución de probabilidad sobre alternativas tipadas, lo que cambia por completo el perfil de latencia y coste frente a un LLM generativo. La información proporcionada no incluye el número de tokens de entrenamiento, la composición del dataset, si se emplearon técnicas de RLHF, DPO u optimización de calibración, ni detalles sobre la inicialización de la cabeza de decisión. Tampoco se documentan innovaciones técnicas adicionales más allá del esquema de prefill compartido.
+El entrenamiento usó 6,21 millones de ejemplos de decisión (Mix 8), con la siguiente composición: 58,3% de habilidades de decisión centrales, 16,1% de seguridad y abstención, 16,1% de juicio y dominios expertos y 9,5% de datos públicos de decisión. La función objetivo combina entropía cruzada con un término de calibración de Brier (λ = 1) e incluye una opción entrenada de "no lo sé". La receta fue de 1 época (5.546 pasos), LR pico de 3,5e-6, AdamW (β 0,9/0,95, sin weight decay), 3% de warm-up, decaimiento coseno y precisión bf16, sobre 16 nodos de 8 H100 (128 GPU). Las peticiones que exceden los límites de longitud entrenados se rechazan, no se truncan.
 
 ## Capacidades
 
-- Decisión tipada: responde cada pregunta de una petición con una probabilidad por opción, en lugar de generar texto.
-- Prefill compartido: evalúa múltiples preguntas y opciones en una sola pasada, lo que reduce el coste frente a la decodificación autoregresiva.
-- Puntuación de alternativas: útil para rankear candidatos, seleccionar entre opciones discretas o comparar hipótesis.
-- Clasificación y enrutado: puede emplearse como clasificador de intención, etiquetador o enrutador de consultas hacia otros modelos o herramientas.
-- Ausencia de generación de texto: no es un modelo de chat, redacción, código ni matemáticas por sí mismo; hereda del modelo base las representaciones lingüísticas, pero su interfaz de salida es probabilística.
-- Tool calling / function calling: no disponible explícitamente; puede implementarse de forma indirecta si las herramientas se modelan como opciones a elegir.
-- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad documentada; el esquema de decisión por opciones podría integrarse en un bucle de agente externo, pero no se describe en la model card.
-- Capacidades multilingües: no disponibles (no se declara lista de idiomas).
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Clasificación binaria calibrada (tipo `noul`): devuelve P(sí) para una instrucción dada.
+- Elección entre opciones nombradas (tipo `choice`): devuelve la opción elegida y el vector de probabilidades sobre todas las alternativas.
+- Puntuación ordinal (tipo `score`): devuelve el nivel asignado y probabilidades sobre una escala ordenada de niveles.
+- Decisión multi-pregunta en un solo prefill: varias preguntas comparten el mismo estado de entrada, con el coste de prefill amortizado.
+- Entrada multimodal: acepta texto e imágenes en el estado.
+- Abstención calibrada: opción "no lo sé" entrenada explícitamente, útil para guardrails.
+- Calibración probabilística: el término de Brier en el objetivo busca que las probabilidades sean interpretables, no solo el argmax.
+- No es un modelo de generación libre: no está pensado para producir texto abierto, tool calling generativo ni razonamiento multi-paso en lenguaje natural.
 
 ## Casos de uso
 
-- Enrutado de consultas en un sistema multi-modelo: dado un mensaje de usuario, definir como opciones los distintos modelos o pipelines disponibles y usar la probabilidad por opción para derivar la petición al componente adecuado, con una sola pasada de prefill en lugar de una generación completa.
-- Clasificación de tickets de soporte: modelar cada categoría como una opción y obtener la distribución de probabilidad para priorizar, derivar o etiquetar automáticamente incidencias en un sistema de atención al cliente.
-- Selección de herramientas en un agente: presentar el conjunto de funciones disponibles como opciones tipadas y usar la decisión del modelo como paso de planificación, dejando la ejecución a un orquestador externo.
-- Moderación y filtrado de contenido: plantear preguntas de política (por ejemplo, si un texto cumple cada criterio) con opciones binarias o graduadas y usar las probabilidades como señales calibrables en un pipeline de revisión.
-- Evaluación de candidatos y ranking: puntuar varias respuestas, resúmenes o reescrituras generadas por otro modelo frente a una pregunta de calidad con opciones del tipo "mejor", "equivalente", "peor", para construir un juez automático de bajo coste.
-- Encuestas y formularios estructurados: procesar respuestas de formularios o cuestionarios donde cada ítem tiene un conjunto cerrado de opciones, obteniendo probabilidades en lugar de texto libre, lo que facilita el análisis estadístico posterior.
-- Extracción de etiquetas en pipelines de datos: clasificar documentos o registros según taxonomías cerradas dentro de un proceso ETL, aprovechando el prefill compartido para evaluar muchas preguntas sobre el mismo contexto.
+- Enrutamiento de tickets de soporte: se define una pregunta `choice` con criterios (facturación, técnico, fraude) y el modelo devuelve la etiqueta y la distribución de probabilidad; la incertidumbre permite derivar a revisión humana cuando la confianza es baja.
+- Guardrails de entrada en producción: preguntas `noul` del tipo "¿el usuario pide algo prohibido?" o "¿el mensaje contiene datos personales?" con probabilidad calibrada, lo que permite fijar umbrales y medir falsos positivos frente a falsos negativos.
+- Triaje de urgencia: pregunta `score` con niveles ordenados ("puede esperar", "hoy", "bloqueante ahora") sobre el texto del cliente, aprovechando la naturaleza ordinal de la salida.
+- Moderación y abstención: el uso de la opción "no lo sé" entrenada permite construir pipelines que escalan automáticamente los casos ambiguos en lugar de forzar una etiqueta.
+- Clasificación de documentos con imagen: al aceptar imágenes, puede decidir sobre capturas, formularios escaneados o pantallazos de error junto al texto del usuario.
+- Evaluación automática de respuestas (LLM-as-judge acotado): formular el juicio como preguntas `choice` o `score` con criterios definidos, obteniendo probabilidades en lugar de texto libre que haya que parsear.
+- Extracción de señales para sistemas de decisión: sustituir cadenas de prompts con salida JSON por una llamada única que devuelve varias etiquetas calibradas sobre el mismo estado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Jev Decision Index 0.4:
+
+| Modelo | Decision Index |
+|---|---:|
+| mammoth-1 | 71,24 |
+| Perplexity Decider v1.2 | 69,42 |
+| elephant-1 | 62,65 |
+| Jev 1.14 | 62,2 |
+| Cloudflare Clef | 55,7 |
+
+Artificial Analysis Decision Index (réplica del autor):
+
+| Modelo | Score |
+|---|---:|
+| mammoth-1 | 65,9 |
+| elephant-1 | 65,2 |
+| d1-ultra | 65 |
+
+Según el autor, en el split público elephant-1 queda ligeramente por detrás de mammoth-1 en todas las áreas y supera a Jev 1.14 en las cinco (conocimiento y razonamiento, lenguaje, herramientas y automatización, recuperación y clasificación, artes y gusto humano). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (estimaciones a partir de los 9,4 B de parámetros, no confirmadas por el autor): en fp16/bf16 en torno a 19-21 GB, incluyendo pesos y overhead de activaciones y KV cache; en int8 en torno a 10-12 GB; en cuantización de 4 bits en torno a 6-7 GB. El repositorio oficial ocupa 18,8 GB en safetensors.
-- GPU recomendadas: para fp16, GPU con 24 GB o más (RTX 4090, L40S, A100 40/80 GB, H100); para cuantizaciones de 8 y 4 bits, GPU de 12-16 GB (RTX 4080, RTX 4070 Ti Super, A10G) podrían ser suficientes, sujeto a verificación empírica.
-- ¿Cabe en GPU de consumo? Sí en principio: en fp16 ocupa cerca del límite de una RTX 4090 de 24 GB; en cuantizaciones de 8 o 4 bits cabría en tarjetas de 12-16 GB. No hay confirmación del autor sobre soporte de estas cuantizaciones.
-- Opciones de despliegue: al ser un fine-tune completo de un modelo transformer con pesos safetensors, es desplegable con vLLM, TGI o transformers; llama.cpp y Ollama requerirían convertir los pesos a GGUF, conversión que no está publicada. El esquema de decisión con prefill compartido y salida probabilística probablemente requiere código de inferencia propio, no disponible en la información proporcionada.
-- Latencia y throughput: no disponibles. Cabe esperar una latencia dominada por el prefill (una sola pasada por petición en lugar de decodificación token a token), pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: el repo pesa 18,8 GB en safetensors; en bf16 necesita del orden de 19-20 GB de pesos más overhead de activaciones y del runtime. Con cuantización de 8 bits cabría en torno a 10-11 GB y en 4 bits en torno a 6-7 GB, aunque el autor no publica recetas de cuantización.
+- GPU recomendadas: el setup oficial exige una GPU CUDA con la imagen `pytorch/pytorch:2.8.0-cuda12.8-cudnn9-devel`; para bf16 sin cuantizar, A100 40/80 GB, H100 o L40S son opciones seguras.
+- GPU de consumo: no hay confirmación oficial; en bf16 una RTX 4090 de 24 GB queda al límite por pesos, y en cuantización de 8 o 4 bits sería viable, pero el runtime OneJev y el `serve.patch` son específicos del autor.
+- Despliegue: runtime propio OneJev con `serve.patch` instalado vía `setup.sh`, o la API gestionada de Baseten (endpoint compatible con texto e imagen). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El diseño de un solo prefill compartido para todas las preguntas reduce el coste frente a una generación por pregunta, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| baselabs/elephant-1 | 9,4 B | no disponible | Probabilidad por opción (modelo de decisión) | MIT según model card, etiqueta `other` en el repo | Hugging Face, 21 descargas, 14 likes |
-| Qwen/Qwen3.5-9B (modelo base) | aproximadamente 9 B | no disponible en la informacion proporcionada | Texto generativo | no disponible en la informacion proporcionada | Hugging Face |
-| Otros modelos de decisión o clasificación de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Decision Index (Jev 0.4) | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| elephant-1 | 9B | 16.384 | 62,65 | MIT + Apache 2.0 | Hugging Face + API Baseten |
+| mammoth-1 | 27B | No disponible | 71,24 | No disponible | Hugging Face + API Baseten |
+| Perplexity Decider v1.2 | No disponible | No disponible | 69,42 | No disponible | No disponible |
+| Jev 1.14 | No disponible | No disponible | 62,2 | No disponible | No disponible |
+| Cloudflare Clef | No disponible | No disponible | 55,7 | No disponible | No disponible |
 
-No se han identificado en la información proporcionada otros modelos de decisión tipados directamente comparables; la comparación más fiable es contra el propio modelo base, del que elephant-1 hereda la arquitectura y el conocimiento lingüístico pero cuya interfaz de salida sustituye por completo.
+En la réplica del Artificial Analysis Decision Index, elephant-1 (65,2) queda por encima de d1-ultra (65) y por debajo de mammoth-1 (65,9). No se dispone de datos de parámetros, contexto ni licencia de los modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ambigüedad de licencia: la model card declara `license: other` con `license_name: mit`, mientras que las etiquetas del repositorio indican `license:other`. Antes de un uso comercial conviene verificar con el autor cuál es la licencia efectiva; el modelo base Qwen3.5-9B puede imponer condiciones adicionales que no se detallan.
-- Sin benchmarks ni validación externa: no hay resultados publicados de ningún tipo, y el modelo acumula 21 descargas y 14 likes, lo que indica una adopción todavía incipiente.
-- Sin especificación de contexto ni de idiomas: se desconoce la ventana máxima soportada y la cobertura lingüística real, lo que impide garantizar su comportamiento en castellano o en documentos largos.
-- No es un modelo generativo: no puede producir texto, código ni razonamiento en lenguaje natural por sí mismo; cualquier aplicación conversacional requiere un modelo generativo adicional que consuma las probabilidades.
-- Calibración desconocida: al emitir probabilidades, la utilidad depende de que estén bien calibradas. No se documenta ninguna métrica de calibración (ECE, Brier score, log-loss), por lo que no debería asumirse que una probabilidad de 0,9 implica un 90 % de acierto sin validación propia.
-- Riesgo de sesgo heredado: al ser un fine-tune completo de Qwen3.5-9B, puede arrastrar los sesgos del corpus de entrenamiento del modelo base; no se documenta ninguna mitigación.
-- Riesgo de alucinación reinterpretado: no genera texto, pero puede asignar alta probabilidad a opciones incorrectas cuando la petición es ambigua o las opciones no cubren la respuesta real; se recomienda incluir opciones de escape del tipo "ninguna de las anteriores".
-- Ausencia de código de inferencia: no se describe en la información disponible cómo cargar el modelo ni qué formato exacto tienen las entradas y salidas tipadas, lo que añade coste de integración.
-- Fecha de creación muy reciente (octubre de 2026) y repositorio actualizado por última vez dos días después: es probable que la documentación y los artefactos cambien.
+- No es un modelo generativo: no sirve para chat abierto, redacción, código ni razonamiento libre; forzarlo a esos usos no es su diseño.
+- Idiomas: la model card declara únicamente inglés; el comportamiento en castellano no está documentado ni validado.
+- Longitud: las peticiones que exceden los límites entrenados se rechazan en lugar de truncarse, lo que exige validación previa en el pipeline.
+- Calibración dependiente del dominio: las probabilidades están calibradas sobre la distribución de Mix 8; en dominios muy alejados puede degradarse la fiabilidad de los umbrales.
+- Riesgo de sesgo heredado del modelo base Qwen3.5-9B y de los datos de decisión, no evaluado de forma independiente en la información disponible.
+- Licencia dual: las modificaciones de Baseten son MIT, pero el modelo base es Apache 2.0; el uso comercial debe cumplir ambas y revisar `LICENSE` y `NOTICE`.
+- Dependencia de runtime propietario: el despliegue self-hosted requiere OneJev y un parche de servicio específicos, lo que limita la portabilidad frente a stacks estándar como vLLM.
+- Sin datos publicados de cuantización, latencia ni throughput; el dimensionado de producción debe hacerse con pruebas propias.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/baselabs/elephant-1
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada
-- Nota: los resultados de la búsqueda web realizada no contienen enlaces relevantes sobre este modelo (versan sobre ChatGPT y no guardan relación con elephant-1).
+- Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Modelo hermano mammoth-1: https://huggingface.co/baselabs/mammoth-1
+- Probar en Baseten: https://www.baseten.co/library/elephant-1/
+- Informe técnico: https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models
+- Blog de Baseten: https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

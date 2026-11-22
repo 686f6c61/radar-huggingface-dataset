@@ -2,117 +2,115 @@
 
 ## Resumen
 
-Archai JEV Zagreus 0.4B Ita es un ajuste fino ligero (QLoRA) sobre el modelo italiano `mii-llm/zagreus-0.4B-ita`, desarrollado por el usuario nickprock. No es un modelo generativo conversacional al uso: se presenta como un "motor de decisión System One", es decir, un clasificador determinista que recibe una entrada en italiano y emite un único token de salida restringido a un conjunto cerrado (`A`, `B`, `C`, `D`, `TRUE`, `FALSE`). Su propósito es resolver tareas de elección múltiple, verificación booleana y clasificación de seguridad dentro de un vocabulario de salida controlado.
+archai-jev-zagreus-0.4b-ita es un modelo de lenguaje de 437,7 millones de parámetros (0,4B) especializado en toma de decisiones de elección cerrada. Lo desarrolla el usuario nickprock como un fine-tuning LoRA de `mii-llm/zagreus-0.4B-ita`, con los pesos ya fusionados. Su función no es generar texto libre, sino recibir un `state` y una pregunta con opciones de clave arbitraria (o una pregunta sí/no) y devolver una probabilidad para cada opción, leída directamente de los log-probabilidades de cada clave.
 
-El modelo se apoya en el repositorio PEFT con los adaptadores LoRA y, además, distribuye una conversión completa a GGUF en cuantización `Q8_0` de 465 MB. El autor declara como objetivo principal la inferencia en CPU por debajo de 10 ms, pensada para entornos edge y para integraciones en Rust o C++ donde no hay GPU disponible y donde se necesita una latencia predecible y un consumo de memoria mínimo.
+El modelo se enmarca en la categoría que el autor denomina "System One": decisiones rápidas, de baja latencia y de elección cerrada, en contraste con el razonamiento multi-paso de los modelos "System Two". Está diseñado para encajar en el motor `transformers` del kit Decision Index, por lo que se evalúa con ese kit tal cual, sin adaptadores adicionales.
 
-Su relevancia es doble. Por un lado, demuestra un patrón de diseño poco habitual: en lugar de competir en tamaño o en capacidades generativas, optimiza calibración de probabilidades mediante una pérdida conjunta de entropía cruzada y Brier score, algo útil cuando la confianza del modelo se usa como señal downstream. Por otro lado, ofrece una alternativa muy económica para moderación y filtrado en italiano, idioma con menos cobertura de modelos pequeños que el inglés.
+Es relevante ahora porque propone un enfoque de clasificación y enrutamiento ligero (0,4B parámetros, licencia Apache 2.0, pesos en safetensors y GGUF) orientado a producción con recursos limitados, y porque publica un protocolo de evaluación centrado en la transferencia a tareas nunca vistas (OOD) frente al modelo base, en lugar de limitarse a la precisión sobre las tareas de entrenamiento. El modelo está entrenado y evaluado únicamente en italiano.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LlamaForCausalLM (transformer decoder-only, denso) |
-| Parametros totales | 437.760.960 (metadatos de safetensors del repositorio); modelo base declarado de 400 M |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
+| Arquitectura | Transformer decoder-only (modelo base `mii-llm/zagreus-0.4B-ita`), fine-tuning LoRA con pesos fusionados |
+| Parámetros totales | 437.760.960 |
+| Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF `Q8_0` (465 MB) publicado; adaptadores LoRA en safetensors; otras cuantizaciones no disponibles |
+| Tipos de cuantización | GGUF (formato publicado en el repo); niveles concretos no disponibles |
 | Idiomas soportados | italiano (it) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA en `adapter/`), GGUF (`archai-jev-zagreus-0.4b-q8.gguf`) |
-| Metodo de ajuste fino | QLoRA, r=16, alpha=32 |
-| Modelo base | mii-llm/zagreus-0.4B-ita |
-| Tokens de salida | `A` (32), `B` (33), `C` (34), `D` (35), `TRUE` (21260), `FALSE` (31451) |
-| Tamano del repositorio | 0,5 GB |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de tipo Llama (`LlamaForCausalLM`) de aproximadamente 400 M de parametros en su version base. Sobre ese modelo se aplica un ajuste fino con QLoRA de rango 16 y alpha 32, lo que produce un adaptador de bajo rango que modifica el comportamiento del modelo sin reentrenar los pesos completos. El repositorio publica tanto el adaptador como una fusion cuantizada en GGUF `Q8_0`.
+El modelo es un transformer decoder-only de 0,4B parámetros derivado de `mii-llm/zagreus-0.4B-ita`. Sobre esa base se aplica un fine-tuning LoRA cuyos pesos se han fusionado en el checkpoint final, de modo que se carga como un modelo transformers estándar. La innovación no está en la arquitectura, sino en el formato de tarea: el modelo recibe un `state`, una pregunta y un conjunto de opciones con clave y descripción, y se evalúa comparando la suma de log-probabilidades de los tokens de cada clave. El prompt se construye con el chat template (system = prompt del Decision Index; user = `State: … Question: … Options: clave: descripción … Reply with exactly one option key.`).
 
-El entrenamiento se realizo sobre una mezcla consolidada de siete conjuntos de datos nativos en italiano: `Paul/hatecheck-italian` y `evalitahf/hatespeech_detection` para seguridad y moderacion; `RiTA-nlp/ai2_arc_ita` (ARC-Challenge y ARC-Easy) para razonamiento de eleccion multiple; `evalitahf/sentiment_analysis` para analisis de sentimiento; `evalitahf/textual_entailment` para inferencia de lenguaje natural; `evalitahf/faq` para pertinencia de respuesta en soporte; y `stsb_multi_mt` (it) para similitud semantica. No se especifica en la informacion disponible el numero total de tokens de entrenamiento, la composicion proporcional exacta de la mezcla ni si hubo fases posteriores de RLHF o DPO.
-
-La innovacion tecnica destacable es la funcion de perdida: el autor indica una minimizacion conjunta y dinamica de entropia cruzada y Brier score. El objetivo es que las probabilidades asociadas al token elegido esten bien calibradas, de modo que la confianza del modelo sea interpretable como probabilidad real. Esto se refleja en la publicacion del Brier score del conjunto de test (0,2407) junto a la exactitud, algo poco frecuente en model cards de modelos de este tamano.
+El entrenamiento LoRA se realizó sobre cinco tareas italianas: `arc_it`, `hatecheck_it`, `massive_it`, `sentipolc` y `stsb_it`. Durante el entrenamiento se varían de forma aleatoria las claves, el número y el orden de las opciones, el layout del estado y la forma de la pregunta (incluida la forma negada), con el objetivo de evitar el sobreajuste al formato y favorecer la generalización. El checkpoint se selecciona únicamente sobre la validación in-distribution. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO. El autor indica que ningún dataset del Decision Index se usa en entrenamiento y que el modelo base podría haber visto algunos de los benchmarks de evaluación durante el preentrenamiento, por lo que la métrica principal del protocolo es la diferencia (Δ) respecto al modelo base, no la precisión absoluta.
 
 ## Capacidades
 
-- Clasificacion de eleccion multiple en italiano con salida restringida a los tokens `A`, `B`, `C` o `D`.
-- Verificacion booleana de afirmaciones en italiano, con salida `TRUE` o `FALSE`.
-- Razonamiento sobre preguntas tipo ARC (cientificas, de primaria y secundaria) en su version traducida al italiano.
-- Moderacion de contenido y deteccion de discurso de odio en italiano, entrenado con HateCheck-IT y datasets de EvalITA.
-- Analisis de sentimiento en italiano.
-- Inferencia de lenguaje natural (NLI): implicacion, contradiccion y neutralidad.
-- Evaluacion de pertinencia de respuestas en escenarios de FAQ y soporte.
-- Similitud semantica entre pares de frases en italiano.
-- Inferencia determinista en CPU: el autor declara objetivos de latencia por debajo de 10 ms.
-- Calibracion de confianza: la probabilidad asociada a la decision esta optimizada mediante Brier score.
-
-No se documenta soporte de tool calling, function calling, uso como agente, razonamiento multi-paso abierto, vision, audio ni modo de pensamiento explicito.
+- Clasificación de elección cerrada: devuelve una probabilidad por cada opción de clave arbitraria a partir de los log-probabilidades de los tokens de la clave.
+- Preguntas binarias sí/no (formato `noul`).
+- Enrutamiento de peticiones: asignación de una entrada a una de varias categorías definidas por el usuario (por ejemplo, rutas de atención al cliente).
+- Detección de contenido inseguro: la tarea `hatecheck_it` muestra especialización en discriminación entre contenido seguro y odio o abuso.
+- Puntuación de similitud semántica binaria (tarea `stsb_it`).
+- Clasificación de sentimiento con tres opciones (tarea `sentipolc`).
+- Clasificación de intención con hasta 60 opciones (tarea `massive_it`), aunque con rendimiento muy bajo.
+- Integración con el motor `TransformersEngine` del kit Decision Index.
+- No dispone de tool calling, function calling, capacidades de agente, visión, audio ni modo de razonamiento explícito (thinking mode) según la información disponible.
+- Capacidad multilingüe: únicamente italiano.
 
 ## Casos de uso
 
-- Moderacion de comentarios en plataformas italianas: el modelo recibe un texto y devuelve `TRUE` o `FALSE` sobre si infringe las normas, con una probabilidad calibrada que permite fijar umbrales de auto-moderacion frente a revision humana.
-- Filtrado previo en pipelines de datos: al ejecutarse en CPU con 465 MB de peso, puede procesar lotes grandes de texto italiano para descartar contenido toxico antes de entrenar otros modelos.
-- Enrutado de tickets de soporte: usando la tarea de pertinencia de FAQ, el sistema puede decidir si una respuesta candidata responde realmente a la consulta del usuario y derivar a un agente humano cuando la confianza es baja.
-- Analisis de sentimiento en tiempo real en encuestas o reseñas: la salida booleana y la calibracion permiten agregar rapidamente opiniones positivas y negativas sin infraestructura de GPU.
-- Evaluacion automatica de examenes o cuestionarios de opcion multiple en italiano: la tarea de ARC traducido encaja directamente en la seleccion entre cuatro opciones.
-- Deteccion de contradicciones en documentacion: mediante NLI, se puede comprobar si dos afirmaciones de un manual o de un contrato se contradicen, como paso previo a la revision legal.
-- Deduplicacion y agrupacion semantica: usando la tarea de similitud de STS-B, se pueden agrupar frases equivalentes en un corpus italiano para normalizar catalogos o bases de conocimiento.
-- Componente de un sistema mayor en Rust o C++: su tamano y su formato GGUF permiten incrustarlo como biblioteca local en aplicaciones de escritorio o dispositivos sin conectividad, actuando como arbitro de decisiones discretas.
+- Enrutamiento de peticiones de soporte: el modelo recibe el mensaje del cliente como `state` y un conjunto de rutas (por ejemplo, `card_arrival`, `top_up`, `lost_card`) como opciones, y devuelve la probabilidad de cada ruta. El ejemplo de la model card muestra exactamente este escenario y el modelo está diseñado para integrarse en el kit Decision Index con una llamada al `TransformersEngine`.
+- Moderación de contenido en italiano: clasificación binaria entre contenido seguro y odio o abuso. Es la tarea con mejor rendimiento tras el fine-tuning (0,708 de precisión macro frente a 0,497 del base), lo que lo hace adecuado como primera capa de filtrado de bajo coste en foros o comentarios.
+- Clasificación de intención en asistentes conversacionales con un catálogo reducido de intenciones: útil cuando el número de opciones es manejable y se acepta la incertidumbre como señal de derivación a un humano.
+- Puntuación de similitud semántica en pipelines de deduplicación o búsqueda: el modelo asigna probabilidad a opciones del tipo "similar" / "no similar" entre dos textos, con un rendimiento tras fine-tuning de 0,577 frente a 0,432 del base.
+- Análisis de sentimiento en reseñas o redes sociales en italiano: clasificación en tres clases (positivo, negativo, neutro) con probabilidades calibradas; el ECE de 0,071 en esta tarea permite usar las probabilidades como umbral de confianza.
+- Enrutamiento y clasificación en entornos con recursos limitados: al ser un modelo de 0,4B con pesos en GGUF, puede desplegarse en CPU o en GPU de consumo para tareas de clasificación de alto volumen donde un LLM generativo sería demasiado caro en latencia y coste.
+- Evaluación de decisiones con incertidumbre: al devolver probabilidades por opción en lugar de una única etiqueta, permite fijar umbrales de abstención o escalado a un modelo mayor cuando la confianza es baja.
 
 ## Benchmarks y rendimiento
 
-Los unicos resultados publicados son los de entrenamiento y evaluacion interna del propio autor, sin comparacion con otros modelos:
+Resultados del protocolo de evaluación del autor. La métrica es la precisión macro; Δ es la diferencia respecto al modelo base zero-shot con el mismo prompt, con intervalo de confianza del 95% por bootstrap apareado.
 
-| Metrica | Epoca 1 | Epoca 2 | Epoca 3 | Conjunto de test final |
+| Grupo | Tareas | Base (macro acc) | Fine-tuned (macro acc) | Δ [IC 95%] |
 |---|---|---|---|---|
-| Perdida de entrenamiento | 0,6461 | 0,4760 | 0,4150 | no disponible |
-| Perdida de validacion | 0,4700 | 0,4105 | 0,3962 | no disponible |
-| Exactitud de validacion | 77,04 % | 81,49 % | 82,18 % | no disponible |
-| Exactitud de test | no disponible | no disponible | no disponible | 77,90 % |
-| Brier score de test | no disponible | no disponible | no disponible | 0,2407 |
+| In-distribution (split de test) | 5 | 0,301 | 0,374 | +0,073 [+0,053, +0,093] |
+| OOD near (familia vista, tarea no vista) | 3 | 0,345 | 0,311 | −0,034 [−0,069, +0,000] |
+| OOD far (familia no vista) | 2 | 0,525 | 0,502 | −0,023 [−0,048, +0,002] |
 
-No se han publicado resultados desglosados por tarea (moderacion, NLI, sentimiento, ARC) ni comparaciones con MMLU, HumanEval, GSM8K u otros benchmarks estandar en la informacion disponible.
+Detalle por tarea:
+
+| Grupo | Tarea | Familia | n | Opciones | Base | Fine-tuned [IC 95%] | Δ [IC 95%] | Macro-F1 | ECE |
+|---|---|---|---|---|---|---|---|---|---|
+| id | hatecheck_it | safety | 600 | 2 | 0,497 | 0,708 [0,672, 0,747] | +0,212 [+0,158, +0,268] | 0,415 | 0,150 |
+| id | sentipolc | sentiment | 600 | 3 | 0,305 | 0,293 [0,257, 0,330] | −0,012 [−0,043, +0,022] | 0,281 | 0,071 |
+| id | arc_it | qa_mc | 600 | 4 | 0,265 | 0,287 [0,252, 0,322] | +0,022 [−0,017, +0,057] | 0,285 | 0,015 |
+| id | stsb_it | similarity | 600 | 2 | 0,432 | 0,577 [0,537, 0,612] | +0,145 [+0,077, +0,203] | 0,542 | 0,023 |
+| id | massive_it | intent | 600 | 60 | 0,008 | 0,005 [0,000, 0,012] | −0,003 [−0,013, +0,005] | 0,000 | 0,043 |
+| ood_near | haspeede2 | safety | 600 | 2 | 0,543 | 0,457 [0,420, 0,498] | −0,087 [−0,160, −0,003] | 0,453 | 0,126 |
+| ood_near | faq_it | qa_mc | 401 | 4 | 0,244 | 0,244 [0,204, 0,284] | +0,000 [−0,060, +0,067] | 0,194 | 0,038 |
+| ood_near | belebele_it | qa_mc | 600 | 4 | 0,248 | 0,233 [0,200, 0,267] | −0,015 [−0,033, +0,003] | 0,233 | 0,065 |
+| ood_far | evalita_te | nli | 400 | 2 | 0,550 | 0,520 [0,472, 0,568] | −0,030 [−0,068, +0,005] | 0,420 | 0,068 |
+| ood_far | wic_it | lexical | 500 | 2 | 0,500 | 0,484 [0,442, 0,530] | −0,016 [−0,048, +0,018] | 0,403 | 0,095 |
+
+Interpretación: el fine-tuning mejora de forma clara y estadísticamente significativa en las tareas de entrenamiento (especialmente `hatecheck_it` y `stsb_it`), pero no generaliza a tareas de la misma familia no vistas (OOD near, Δ negativo con intervalo que incluye el cero) y tampoco a familias no vistas (OOD far). En `massive_it` con 60 opciones el rendimiento es prácticamente nulo (0,005 de precisión frente a 0,008 del base). No se han publicado resultados de benchmarks estándar tipo MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el autor declara diseno especifico para inferencia por debajo de 10 ms en CPU, sin necesidad de GPU.
-- Memoria: el archivo GGUF `Q8_0` ocupa 465 MB, por lo que el modelo cabe holgadamente en RAM de cualquier equipo actual; el adaptador LoRA por separado requiere ademas cargar el modelo base de 400 M de parametros.
-- VRAM estimada: aproximadamente 0,5 GB si se carga en GPU; cualquier GPU con 1 GB o mas es suficiente.
-- GPU recomendadas: no se especifica ninguna en la informacion disponible; por tamano, cualquier GPU consumer (por ejemplo, gama RTX 30 o 40, o integradas con memoria compartida) es mas que suficiente.
-- Cabe en GPU consumer: si, con enorme margen; tambien cabe en moviles y sistemas embebidos con 1 GB de RAM libre.
-- Opciones de despliegue: llama.cpp (soporte explicito del autor), integraciones en Rust y C++, y cualquier runtime compatible con GGUF. La compatibilidad con Ollama, vLLM o TGI no esta documentada en la informacion disponible, aunque el formato GGUF es compatible con el ecosistema de llama.cpp y Ollama.
-- Latencia y throughput: el autor indica objetivo sub-10 ms en CPU; no se publican cifras de throughput (tokens por segundo) ni mediciones sobre hardware concreto.
+- VRAM estimada para inferencia en fp16: en torno a 0,9 GB solo para los pesos (437,7 M de parámetros × 2 bytes), más overhead de activaciones y del motor; con cuantización GGUF de 4 bits, aproximadamente 0,25-0,3 GB para los pesos.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para fp16; una RTX 3060, RTX 4060 o superior es más que suficiente. En A100 o H100 el modelo ocupa una fracción mínima de memoria, por lo que el cuello de botella será el throughput de peticiones, no la VRAM.
+- Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna (GTX 1650 en adelante con cuantización GGUF, RTX 3060 o superior en fp16). También es viable en CPU.
+- Opciones de despliegue: `transformers` (librería declarada), text-generation-inference (tag `text-generation-inference`), llama.cpp u Ollama a través de los pesos GGUF publicados, y el motor `TransformersEngine` del kit Decision Index.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa se marca como no disponible. Como referencia cualitativa se puede contrastar con su propio modelo base:
-
-| Modelo | Parametros | Contexto | Tarea principal | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| archai-jev-zagreus-0.4b-ita | 437.760.960 (total del repositorio) | no disponible | Decision determinista y clasificacion en italiano | Apache 2.0 | safetensors (LoRA) y GGUF Q8_0 |
-| mii-llm/zagreus-0.4B-ita (base) | 400 M declarados | no disponible | Generacion de texto en italiano | no disponible | no disponible |
-| Alternativas italianas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| nickprock/archai-jev-zagreus-0.4b-ita | 437,7 M | no disponible | it | Apache 2.0 | Clasificación de elección cerrada con probabilidades por opción |
+| mii-llm/zagreus-0.4B-ita (modelo base) | 0,4B | no disponible | it | no disponible | Generación de texto en italiano; sirve de referencia zero-shot en la evaluación |
+| Modelos de clasificación tipo BERT/Robertino en italiano | 100-300 M típicamente | 512 tokens típicamente | it | variable | Clasificación supervisada clásica con una etiqueta fija por tarea |
 
-La diferencia relevante respecto al modelo base es el comportamiento de salida: el ajuste restringe el espacio de respuestas a tokens discretos y optimiza calibracion, mientras que el modelo base es un generador de texto sin ese control.
+La comparación con el modelo base es la más informativa: el fine-tuning mejora la precisión macro in-distribution de 0,301 a 0,374, pero degrada ligeramente el rendimiento OOD near (−0,034) y OOD far (−0,023). Frente a clasificadores BERT, la ventaja es la flexibilidad para definir opciones en tiempo de inferencia sin reentrenar; la desventaja es que el rendimiento absoluto en varias tareas es bajo (por ejemplo, 0,005 en `massive_it` con 60 opciones). No se dispone de datos de benchmarks comparables con otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Vocabulario de salida cerrado: solo puede emitir `A`, `B`, `C`, `D`, `TRUE` o `FALSE`. No sirve como asistente conversacional ni para generar texto libre.
-- Idioma unico: solo italiano. No se documenta ningun rendimiento en castellano u otras lenguas.
-- Longitud de contexto no documentada, lo que impide planificar su uso con documentos largos sin una validacion previa.
-- Exactitud de test del 77,90 %, lo que implica aproximadamente una decision erronea de cada cinco; no es adecuado como unico filtro en decisiones criticas sin revision humana.
-- Brier score de 0,2407: la calibracion es mejorable y no debe interpretarse la confianza como probabilidad exacta en todos los dominios.
-- Sesgos potenciales heredados de los conjuntos de datos de odio y moderacion, ademas de los del modelo base italiano; no se documenta ninguna auditoria de sesgo.
-- Riesgo de alucinacion bajo en el sentido generativo (salida restringida), pero riesgo de forzar una respuesta incorrecta cuando la entrada esta fuera del dominio de entrenamiento.
-- Cobertura limitada de dominios: los datos se centran en seguridad, eleccion multiple, sentimiento, NLI, FAQ y similitud semantica; otras tareas no estan cubiertas.
-- El repositorio combina un adaptador LoRA y un GGUF; no se documenta la receta exacta de fusion ni de conversion, lo que complica reproducir el proceso.
-- Licencia Apache 2.0 permite uso comercial, pero no se aporta informacion sobre las licencias de los conjuntos de datos de entrenamiento, que el usuario deberia verificar por su cuenta.
-- Modelo muy reciente y sin traccion: cero descargas y cero likes en el momento de la consulta, sin validacion independiente por parte de terceros.
+- Rendimiento OOD limitado: el fine-tuning no mejora la transferencia a tareas no vistas; en OOD near el Δ es negativo (−0,034) y en OOD far también (−0,023). No debe asumirse generalización a tareas distintas de las de entrenamiento.
+- Degradación en `haspeede2` (safety, OOD near): −0,087 de precisión macro respecto al base, con intervalo de confianza que excluye el cero. El modelo puede ser peor que su base en dominios de seguridad no vistos.
+- Colapso con muchas opciones: en `massive_it` (60 opciones) la precisión es de 0,005 y el Macro-F1 de 0,000. No es adecuado para clasificación con catálogos grandes de etiquetas.
+- Calibración irregular: el ECE en `hatecheck_it` es de 0,150, lo que indica que las probabilidades no están bien calibradas en esa tarea; en otras tareas el ECE es bajo (0,015 en `arc_it`, 0,023 en `stsb_it`). No conviene usar las probabilidades como umbral de confianza sin validación previa en el dominio concreto.
+- Solo italiano: el modelo está entrenado y evaluado únicamente en italiano; no se ha validado su comportamiento en otros idiomas.
+- Riesgo de alucinación: aunque el formato de salida es de elección cerrada, el modelo podría asignar probabilidad alta a opciones incorrectas en distribuciones distintas a las del entrenamiento; los resultados OOD muestran que esto ocurre.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base `mii-llm/zagreus-0.4B-ita` no tiene licencia indicada en la información disponible, por lo que conviene verificar sus términos antes de un despliegue comercial.
+- Dependencia del kit Decision Index: el uso canónico requiere instalar el kit desde un commit concreto (`9eb2dbe`); sin él, hay que replicar manualmente la construcción del prompt con el chat template y el cálculo de log-probabilidades por clave.
+- Longitud de contexto no disponible: no se puede garantizar el comportamiento con estados o preguntas largas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita
 - Modelo base: https://huggingface.co/mii-llm/zagreus-0.4B-ita
-- Conjuntos de datos citados: https://huggingface.co/datasets/Paul/hatecheck-italian , https://huggingface.co/datasets/evalitahf/hatespeech_detection , https://huggingface.co/datasets/RiTA-nlp/ai2_arc_ita , https://huggingface.co/datasets/evalitahf/sentiment_analysis , https://huggingface.co/datasets/evalitahf/textual_entailment , https://huggingface.co/datasets/evalitahf/faq , https://huggingface.co/datasets/stsb_multi_mt
-
-No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo; los resultados devueltos por la busqueda no guardan relacion con el contenido de esta ficha y se han descartado.
+- Kit Decision Index: https://github.com/apolinario/decision-index
+- Commit del kit usado para la evaluación: https://github.com/apolinario/decision-index/tree/9eb2dbe2a358004c8782c66e40a83ac07b953fec
+- Carpeta de evaluación en el repo: https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/tree/main/eval

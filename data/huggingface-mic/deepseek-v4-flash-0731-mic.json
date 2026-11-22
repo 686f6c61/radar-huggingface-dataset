@@ -41,11 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "huggingface (Hugging Face)",
-      "url": "https://huggingface.co/huggingface",
-      "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …"
-    }
-  ]
+  "sources": []
 }

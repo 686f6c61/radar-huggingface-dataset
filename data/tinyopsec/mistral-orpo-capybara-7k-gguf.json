@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
-      "url": "https://www.gemini.com/",
-      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
-    },
-    {
-      "title": "Buy & Sell Bitcoin, Ethereum and 80+ Cryptos Securely with ... - Gemini",
-      "url": "https://www.gemini.com/exchange",
-      "snippet": "Trade crypto with confidence on Gemini Exchange. Enjoy a secure, easy-to-use platform to buy, sell, and store Bitcoin, Ethereum, …"
-    },
-    {
-      "title": "Gemini | Help Center",
-      "url": "https://support.gemini.com/hc/en-us",
-      "snippet": "Apr 6, 2026 · Gemini Credit Card® Learn about applying for, using, and managing the Gemini Credit Card. Other Gemini Products …"
-    },
-    {
-      "title": "Gemini Onchain",
-      "url": "https://onchain.gemini.com/invest",
-      "snippet": "The best place to discover the world of web3 curated by Gemini."
-    },
-    {
-      "title": "Gemini Predictions – Gemini",
-      "url": "https://support.gemini.com/hc/en-us/articles/44234371543579-Gemini-Predictions",
-      "snippet": "What are Gemini Predictions?Gemini Predictions allow users to trade event contracts. Event contracts are simple yes or no …"
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Radiant-Dawn-26B-A4B-i1-GGUF",
+  "slug": "mradermacher-radiant-dawn-26b-a4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Radiant-Dawn-26B-A4B-i1-GGUF",
+  "created_at": "2026-11-21T22:18:44.000Z",
+  "updated_at": "2026-11-21T22:19:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28444095,
+  "parameters_human": "28.4M",
+  "storage_bytes": 113862624,
+  "storage_human": "114 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

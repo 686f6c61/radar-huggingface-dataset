@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed ...",
-      "url": "https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
-      "snippet": "Instructions to use francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 with libraries, inference providers, notebooks, and local apps."
-    },
-    {
-      "title": "francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed ...",
-      "url": "https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfd_seed455_seed455",
-      "snippet": "francesca9805 / nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfd_seed455_seed455 Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
-    },
-    {
-      "title": "nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455",
-      "url": "https://friendli.ai/models/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455",
-      "snippet": "Deploy nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    },
-    {
-      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
-      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
-      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
-    },
-    {
-      "title": "Nld 100mb After Wc Uniform Newlex Before Ckpt500 Packed Bfdiso Seed3407",
-      "url": "https://free2aitools.com/model/francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
-      "snippet": "Registry entry for model Nld 100mb After Wc Uniform Newlex Before Ckpt500 Packed Bfdiso Seed3407; source metadata pending."
-    }
-  ]
+  "sources": []
 }

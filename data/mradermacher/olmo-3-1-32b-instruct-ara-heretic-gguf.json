@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Olmo-3.1-32B-Instruct-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Olmo-3.1-32B-Instruct-GGUF",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Olmo-3.1-32B-Instruct-impotent-heresy-i1-GGUF - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Olmo-3.1-32B-Instruct-impotent-heresy-i1-GGUF",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

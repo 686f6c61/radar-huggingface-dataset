@@ -2,96 +2,104 @@
 
 ## Resumen
 
-MemT-1.0-Flash es un modelo de lenguaje de 287.943.175.511 parámetros (~288B) desarrollado por MemTensor, construido mediante fine-tuning sobre el backbone DeepSeek-V4-Flash. Su propuesta central no es tanto el backbone como la incorporación de un bloque de memoria nativa que forma parte del propio cómputo del modelo: un Local Memory Block dinámico y un Hyper Memory Block con proyecciones y puertas entrenables que permiten retener y reutilizar información histórica sin volver a acceder al contexto original durante la inferencia.
+MemT-1.0-Flash es un modelo de lenguaje de tipo memoria fundacional desarrollado por MemTensor, construido sobre el backbone DeepSeek-V4-Flash. Su propuesta central es integrar una memoria persistente y dinamicamente evolutiva como parte intrínseca del cómputo del modelo, de modo que pueda retener y aprovechar información histórica sin necesidad de acceder al contexto original durante la inferencia. Con 287.943.175.511 parámetros totales (288B) y 17B parámetros activados, se posiciona como el modelo de tamaño medio de la familia MemT-1.0, que también incluye las variantes Nano (36B) y Pro (554B).
 
-El modelo pertenece a la familia MemT-1.0, junto con MemT-1.0-Nano (36B totales, 3B activos, backbone Qwen3.6-35B-A3B). En Flash, el backbone aporta 17B parámetros activos y se le añaden 3,61B parámetros de memoria entrenable, con un estado de memoria dinámico de 336M. Según el autor, el estado persistente mantiene un tamaño constante y reduce el almacenamiento aproximadamente 66× frente a un KV cache de contexto completo con 128K de historial.
+La arquitectura incorpora un Native Memory Block que convive con la atención del backbone y que se compone de un Local Memory Block (matriz de memoria multicanal dinámica) y un Hyper Memory Block (proyecciones entrenables de query, key y value, junto con puertas de borrado, escritura, olvido y salida). El estado de memoria persistente mantiene un tamaño constante, lo que reduce el almacenamiento aproximadamente 66 veces frente a una KV cache de contexto completo con 128K de historial.
 
-Es relevante ahora porque ataca uno de los cuellos de botella prácticos de los agentes y asistentes de largo horizonte: el coste de arrastrar historial en el contexto. MemT-1.0-Flash se publica con licencia MIT, requiere código personalizado (`trust_remote_code`) y expone una API de sesiones con memoria latente, guardado y reanudación de estado en safetensors.
+El modelo resulta relevante porque aborda uno de los cuellos de botella prácticos de los LLM actuales: la gestión de historiales largos sin crecimiento del coste de memoria. Se distribuye con licencia MIT, en formato safetensors y con código personalizado (`memt_deepseek_v4`), lo que facilita su integración en flujos de Transformers. En el momento de la ficha acumula 54.334 descargas y 118 likes en Hugging Face.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con backbone Mixture-of-Experts (DeepSeek-V4-Flash) más Native Memory Block (Local Memory Block + Hyper Memory Block) |
-| Parámetros totales | 287.943.175.511 (~288B) |
-| Parámetros activos | 17B |
-| Parámetros de memoria entrenable | 3,61B |
-| Estado de memoria dinámico | 336M |
-| Longitud de contexto | No disponible de forma explícita; la model card referencia historiales de 128K al comparar el estado de memoria con un KV cache de contexto completo |
-| Tipos de cuantización | No disponible; el único formato documentado en los ejemplos de carga es bfloat16 |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer con Native Memory Block (Local Memory Block + Hyper Memory Block) sobre backbone DeepSeek-V4-Flash; Mixture-of-Storage (MoS) |
+| Parametros totales | 287.943.175.511 (288B) |
+| Parametros activos | 17B |
+| Longitud de contexto | no disponible (se menciona un escenario de referencia de 128K de historial) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (repositorio de 576,0 GB); requiere `custom_code` y `trust_remote_code=True` |
-| Librería | transformers (probado con 5.12.1), accelerate 1.15.0, safetensors 0.8.0 |
+| Formato de pesos | safetensors |
+| Parametros de memoria entrenables | 3,61B |
+| Estado de memoria dinamica | 336M |
 | Modelo base | deepseek-ai/DeepSeek-V4-Flash |
+| Tamano del repositorio | 576,0 GB |
+| Libreria | transformers (custom_code: memt_deepseek_v4) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura mantiene el backbone tipo transformer con mezcla de expertos de DeepSeek-V4-Flash y le superpone un Native Memory Block que se ejecuta en paralelo a la atención del backbone. Ese bloque consta de dos piezas: un Local Memory Block que mantiene una matriz de memoria multicanal dinámica y evoluciona entre pasos de interacción, y un Hyper Memory Block con proyecciones entrenables de query, key y value de memoria, puertas de borrado, escritura y olvido, y una puerta de salida. Durante la generación, la atención sobre memoria lee el estado actual, normaliza y aplica gating a la lectura, y suma el resultado a la salida de la atención del backbone. Al final de cada turno o segmento, un GDN-2 estable realiza actualizaciones de memoria a nivel de token para los pasos siguientes. El autor añade Mixture-of-Storage (MoS) para escalar la capacidad de memoria.
+MemT-1.0-Flash se apoya en el backbone DeepSeek-V4-Flash y le añade un Native Memory Block que se ejecuta en paralelo a la atención del backbone. Este bloque consta de dos piezas: un Local Memory Block, que mantiene una matriz de memoria multicanal dinámica y evoluciona a lo largo de los pasos de interacción, y un Hyper Memory Block, que contiene proyecciones entrenables de query, key y value para la memoria, además de puertas de erase, write, forget y una puerta de salida. Durante la generación, la atención de memoria lee del estado actual, normaliza y aplica gating a la lectura, y suma el resultado a la salida de la atención del backbone. Al final de cada turno o segmento, un mecanismo GDN-2 estable realiza actualizaciones de memoria a nivel de token para los pasos siguientes.
 
-El entrenamiento se describe como un pipeline de dos etapas precedido de una preparación del backbone, con 34B tokens de datos y infraestructura dedicada. La model card no detalla la composición del dataset ni si hubo RLHF o DPO, por lo que esos puntos quedan como no disponibles. La innovación diferencial frente a un transformer convencional es que la memoria persistente es un estado latente de tamaño constante, no un texto reintroducido en el prompt ni un KV cache creciente: la model card indica que, con `enable_memory=True`, la información de los turnos pasados se guarda en memoria local latente y se vacía el contexto de conversación en texto plano.
+El entrenamiento se estructura en dos etapas, con preparación del backbone y una infraestructura dedicada, apoyadas en 34B tokens de datos. La familia incorpora Mixture-of-Storage (MoS) para escalar la capacidad de memoria de forma modular. La innovación diferencial es que el estado persistente mantiene un tamaño constante, lo que evita el crecimiento de la KV cache y reduce el almacenamiento aproximadamente 66 veces frente a una KV cache de contexto completo con 128K de historial. No se detalla en la información disponible la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno mediante una API de sesiones (`create_session`).
-- Memoria latente persistente: los turnos previos se almacenan en el estado de memoria y se recuperan por atención sobre memoria, sin reenviar el historial como texto.
-- Serialización del estado: `save_state` guarda la memoria local, incluidas las conversaciones pendientes, en un fichero safetensors reanudable.
-- Modo de razonamiento conmutable mediante el parámetro `enable_thinking` en las llamadas de chat.
-- Agentes de codificación guiados por experiencia: el marco propuesto almacena experiencia procedimental recuperada en la memoria nativa y la consulta durante la ejecución, sin añadir el texto de la experiencia al contexto de la tarea.
-- Actualización de memoria a nivel de token entre turnos o segmentos mediante GDN-2.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Capacidades multimodales (visión, audio): no documentadas.
-- Cobertura multilingüe: no disponible.
+- Generación de texto y conversación multi-turno con memoria latente persistente entre turnos.
+- Memoria dinámica nativa: almacena información de turnos pasados en memoria local latente y permite responder a partir de ella sin conservar el contexto en texto plano (opción `enable_memory`).
+- Memoria de experiencia para agentes: reutilización de experiencia procedimental en tareas de codificación de horizonte largo, almacenada en memoria nativa y recuperada mediante atención de memoria.
+- Modo de razonamiento controlable mediante el flag `enable_thinking`.
+- Soporte de sesiones de conversación mediante `create_session` en la API de Transformers.
+- Escalabilidad de capacidad de memoria mediante Mixture-of-Storage (MoS).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponible en la información proporcionada.
+- Cobertura multilingüe: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes personales de largo plazo: el modelo mantiene un perfil de usuario (preferencias, datos recurrentes) en memoria latente y lo consulta en turnos posteriores sin reenviar el historial completo, lo que reduce el coste por token de entrada en conversaciones extensas.
-- Agentes de codificación en tareas de horizonte largo: se almacena experiencia procedimental de ejecuciones previas en la memoria nativa y se recupera mediante atención sobre memoria durante la resolución del problema, sin contaminar el contexto de la tarea con texto de experiencia.
-- Atención al cliente multi-turno: la ventana de historial puede crecer hasta 128K mientras el estado persistente se mantiene constante, con una reducción declarada de ~66× en almacenamiento frente al KV cache completo.
-- Agentes multi-paso con estado entre pasos: el estado de memoria se guarda y se reanuda desde disco (`save_state`), lo que permite pausar y retomar flujos de agente sin reconstruir el contexto textual.
-- Flujos con requisitos de minimización de datos: al vaciar el contexto en texto plano y conservar la información como estado latente, encaja en escenarios donde no se quiere retener transcripciones literales de la conversación.
-- Investigación en memorias paramétricas: sirve como referencia para comparar mecanismos de memoria nativa frente a sistemas de memoria textual en los 11 benchmarks de memoria reportados por el autor.
-- Copilotos de documentación técnica: indexación de decisiones y convenciones de un proyecto en memoria persistente para consultas posteriores sin recuperación externa.
+- Asistentes conversacionales de larga duración: el modelo puede mantener información de turnos anteriores en memoria latente y responder sin arrastrar todo el historial en texto plano, lo que reduce el coste de almacenamiento y el consumo de contexto en conversaciones prolongadas.
+- Agentes de codificación con experiencia acumulada: el framework de agentic coding de MemT-1.0 permite almacenar experiencia procedimental recuperada en memoria nativa y consultarla durante la ejecución, mejorando tareas de horizonte largo sin añadir el texto de la experiencia al contexto de la tarea.
+- Atención al cliente automatizada: la memoria persistente de tamaño constante facilita gestionar sesiones multi-turno con clientes recurrentes, recordando preferencias e incidencias previas sin reenviar el historial completo en cada petición.
+- Sistemas de recomendación conversacionales: el modelo puede recordar interacciones pasadas del usuario en memoria latente y personalizar respuestas a lo largo de sesiones sucesivas.
+- Asistentes personales con memoria de usuario: almacenamiento de hechos estables (nombres, preferencias, rutinas) en memoria dinámica para evitar repetir información en cada conversación.
+- Pipelines de agentes multi-paso: la memoria de experiencia y el estado persistente permiten encadenar pasos de razonamiento y ejecución recuperando trazas anteriores sin inflar el contexto.
+- Investigación en arquitecturas de memoria: el modelo sirve como base para estudiar escalado de memoria (MoS), actualizaciones GDN-2 y evaluación en benchmarks de memoria paramétrica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. La model card únicamente reporta posiciones relativas: en 11 benchmarks de memoria, MemT-1.0-Flash y MemT-1.0-Nano ocupan el primer y segundo puesto, respectivamente, entre los métodos de memoria paramétrica evaluados. El propio autor advierte de que los sistemas de memoria textual fuertes siguen por delante en la comparación global, especialmente en historiales largos que exigen recuperación detallada de evidencia.
+Según la model card, en 11 benchmarks de memoria, MemT-1.0-Flash y MemT-1.0-Nano se sitúan en segunda y tercera posición entre los métodos de memoria paramétrica evaluados, por detrás de MemT-1.0-Pro. Los sistemas de memoria textual fuertes siguen por delante en el cómputo global, especialmente en historiales largos que requieren recuperación detallada de evidencia. No se proporcionan cifras numéricas por benchmark en la información disponible.
+
+| Benchmark | MemT-1.0-Flash | Comparativa |
+|---|---|---|
+| 11 benchmarks de memoria (ranking) | 2.ª posición entre métodos de memoria paramétrica evaluados | Por detrás de MemT-1.0-Pro; Nano en 3.ª posición; sistemas de memoria textual por delante en recuperación detallada |
+| MMLU, HumanEval, GSM8K u otros | no disponible | no disponible |
+
+No se han publicado resultados numéricos de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: en torno a 576 GB solo para pesos (coincide con el tamaño del repositorio), más KV cache y activaciones.
-- GPU recomendadas: 8×H200 (141 GB) o 16×H100 (80 GB) para bfloat16 con margen operativo. 8×H100 80 GB (640 GB) queda muy ajustado y probablemente insuficiente al sumar estado de memoria y activaciones.
-- Cuantización: no se documentan tipos soportados. Una hipotética cuantización a 4 bits dejaría los pesos en ~144 GB, todavía fuera del alcance de GPU de consumo y sin soporte oficial confirmado.
-- GPU de consumo: no cabe en RTX 4090, RTX 5090 ni similares, ni siquiera en configuraciones multi-GPU de 24-32 GB.
-- Despliegue: la vía documentada es transformers con `trust_remote_code=True`, `dtype=torch.bfloat16`, `device_map="auto"`, `attn_implementation="eager"`, accelerate y CUDA 13 con PyTorch 2.11.0. No hay confirmación de soporte en vLLM, llama.cpp, Ollama, TGI ni SGLang.
-- Latencia y throughput: no disponibles. El uso obligado de atención eager en los ejemplos de carga sugiere que no se está aprovechando un kernel de atención optimizado tipo FlashAttention.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 288B parámetros totales en bfloat16, el peso completo ronda los 576 GB, lo que exige múltiples aceleradores; el repositorio ocupa 576,0 GB.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, el despliegue en bfloat16 requiere clústeres multi-GPU de clase datacenter (A100/H100 o superiores); no se confirma compatibilidad con GPUs de consumo.
+- Cabe en consumer GPU: no disponible; con 288B parámetros totales no es viable en una sola GPU de consumo en precisión completa.
+- Opciones de despliegue: Hugging Face Transformers 5.12.1 con `trust_remote_code=True`, `accelerate` 1.15.0 y `safetensors` 0.8.0, sobre PyTorch 2.11.0 con CUDA 13 y `attn_implementation="eager"`. Soporte de vLLM, llama.cpp, Ollama o TGI: no disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Memoria entrenable | Contexto | Licencia | Disponibilidad |
+| Modelo | Backbone | Parametros totales | Parametros activos | Memoria entrenable | Estado de memoria dinamica | Licencia |
 |---|---|---|---|---|---|---|
-| MemT-1.0-Flash | ~288B | 17B | 3,61B (+336M de estado) | No disponible (referencia a 128K) | MIT | Pesos en Hugging Face, 576 GB |
-| MemT-1.0-Nano | 36B | 3B | 451M (+10M de estado) | No disponible | No disponible en la información | Pesos en la colección MemT-1.0 |
-| DeepSeek-V4-Flash (base) | No disponible | No disponible | No aplica (sin memoria nativa) | No disponible | No disponible en la información | Pesos en Hugging Face |
+| MemT-1.0-Nano | Qwen3.6-35B-A3B | 36B | 3B | 451M | 10M | no disponible |
+| MemT-1.0-Flash | DeepSeek-V4-Flash | 288B | 17B | 3,61B | 336M | MIT |
+| MemT-1.0-Pro | NVIDIA-Nemotron-3-Ultra-550B-A55B | 554B | 59B | 4,23B | 13M | no disponible |
 
-Frente a su modelo base, la diferencia relevante es la incorporación de memoria nativa entrenable y la reducción de almacenamiento declarada, no un cambio de escala. Frente a Nano, Flash multiplica por ocho los parámetros totales y por 5,7 los activos, con un estado de memoria dinámico 33 veces mayor.
+En benchmarks de memoria, Flash ocupa la segunda posición entre los métodos de memoria paramétrica evaluados, por delante de Nano y por detrás de Pro. La comparación con modelos de propósito general de tamaño similar (por ejemplo, el propio DeepSeek-V4-Flash sin capa de memoria) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los sistemas de memoria textual siguen superando al modelo en historiales largos que requieren recuperación detallada de evidencia, según reconoce el propio autor.
-- Riesgo de alucinación no cuantificado: no se publican evaluaciones de factualidad ni tasas de error en la información disponible.
-- Idiomas soportados no documentados; no hay garantía de rendimiento fuera de los idiomas cubiertos por el backbone, que tampoco se detallan.
-- Longitud de contexto no especificada de forma explícita para el modelo; la cifra de 128K aparece asociada a la comparación de almacenamiento, no a una ficha de ventana de contexto.
-- `trust_remote_code=True` es obligatorio, lo que implica ejecutar código del autor en el entorno de inferencia; conviene auditar el repositorio antes de desplegarlo en producción.
-- La licencia MIT permite uso comercial, pero se heredan las condiciones del modelo base DeepSeek-V4-Flash, cuya licencia no se detalla en la información proporcionada.
-- El estado de memoria es un artefacto sensible: `save_state` persiste información de conversación en safetensors y debe tratarse con los mismos controles de privacidad que un historial en texto plano.
-- Sin soporte confirmado en motores de inferencia habituales (vLLM, TGI, llama.cpp), el despliegue a escala queda limitado a transformers y a la atención eager.
-- Con 25 descargas registradas, la validación externa de la comunidad es prácticamente inexistente en el momento de redactar esta ficha.
+- En los 11 benchmarks de memoria evaluados, los sistemas de memoria textual fuertes siguen por delante en el cómputo global, especialmente en historiales largos que requieren recuperación detallada de evidencia; la memoria paramétrica no sustituye a la recuperación textual en todos los escenarios.
+- Requiere `trust_remote_code=True` y código personalizado (`memt_deepseek_v4`), lo que implica ejecutar código del autor y revisarlo antes de usarlo en producción.
+- Dependencias muy específicas: Python 3.11 o superior, PyTorch 2.11.0 con CUDA 13, Transformers 5.12.1, accelerate 1.15.0 y safetensors 0.8.0; la incompatibilidad de versiones puede impedir la carga.
+- El uso de `attn_implementation="eager"` en los ejemplos sugiere que no se garantiza el soporte de implementaciones de atención optimizadas (FlashAttention u otras), con impacto potencial en latencia y memoria.
+- El tamaño de 288B parámetros totales y 576 GB de repositorio limita el despliegue a infraestructura multi-GPU de datacenter; no se confirma viabilidad en GPUs de consumo.
+- Idiomas soportados no disponibles: no se puede garantizar el rendimiento en castellano ni en otros idiomas distintos de los usados en el entrenamiento.
+- Sesgos conocidos y riesgo de alucinación: no documentados en la información disponible; como modelo generativo, persiste el riesgo inherente de alucinación, agravado si la memoria latente almacena información incorrecta de turnos previos.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, modificación y redistribución con aviso de copyright; conviene verificar las condiciones del modelo base DeepSeek-V4-Flash.
+- No hay datos publicados sobre cuantizaciones disponibles, latencia, throughput ni soporte en motores de inferencia de alto rendimiento, lo que dificulta la planificación de producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MemTensor/MemT-1.0-Flash
+- Colección MemT-1.0 en Hugging Face: https://huggingface.co/collections/MemTensor/memt-1
+- Colección MemT-1.0 en ModelScope: https://www.modelscope.cn/collections/MemTensor/MemT-10
 - Informe técnico (PDF): https://arxiv.org/pdf/2610.26825
 - Repositorio GitHub: https://github.com/MemTensor/MemT-1.0
-- Colección MemT-1.0: https://huggingface.co/collections/MemTensor/memt-1
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash

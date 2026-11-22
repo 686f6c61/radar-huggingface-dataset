@@ -2,104 +2,122 @@
 
 ## Resumen
 
-UltraBERT-150M reranker es un modelo cross-encoder de reordenación (reranking) para búsqueda documental en inglés, publicado por el usuario ericlewis en Hugging Face. Se trata de un ajuste fino del backbone dmis-lab/UltraBERT-150M, un transformer encoder de 24 capas con 151.624.705 parámetros, entrenado para puntuar pares consulta-documento y reordenar los resultados de un recuperador de primera fase como BM25.
+UltraBERT-150M Reranker es un modelo cross-encoder de reordenamiento (reranking) de 151 millones de parametros, publicado por el usuario ericlewis en Hugging Face. Se construye mediante la interpolacion lineal de pesos (model merging) de dos checkpoints derivados de dmis-lab/UltraBERT-150M: el checkpoint original seleccionado y un checkpoint intermedio al 40% del entrenamiento. La mezcla final aplica un 75% al modelo original y un 25% al checkpoint parcial, en FP32, sin entrenamiento adicional ni ensemble de inferencia duplicada.
 
-El modelo resuelve el segundo paso clásico de un pipeline de recuperación de información: tras obtener un conjunto de candidatos mediante búsqueda léxica o vectorial, el cross-encoder evalúa conjuntamente consulta y documento y devuelve una puntuación de relevancia ilimitada, permitiendo reordenar los resultados por calidad. El entrenamiento se basa en destilación sobre 5 millones de pares puntuados por un modelo profesor, con una función de pérdida MSE sobre las puntuaciones de relevancia.
+El modelo resuelve la tarea de text-ranking: dado un par consulta-documento, produce una puntuacion de relevancia que permite reordenar los resultados de un sistema de recuperacion (tipicamente BM25 o un retriever denso). Su relevancia radica en que demuestra que una fusion de pesos entre padres con la misma arquitectura y linaje de inicializacion puede mejorar marginalmente el nDCG@10 medio en un suite de 13 tareas NanoBEIR, aunque a costa de degradar la calibracion absoluta de las puntuaciones.
 
-Es relevante por su tamaño contenido (150M de parámetros) y su ventana de 32.768 tokens por par, que permite reordenar documentos largos sin truncamiento agresivo. La licencia Apache 2.0 facilita su uso comercial, aunque el modelo está limitado al idioma inglés y su publicación es muy reciente, con cero descargas registradas en el momento de la consulta.
+Es un modelo experimental, solo para ingles, con licencia Apache 2.0 y 731 descargas en el momento de la consulta. No debe confundirse con la release anterior del mismo repositorio (basada en codigo custom de Transformers), que fue archivada en la revision `legacy-before-ettin-20261117` y cuyos resultados full-BEIR no son comparables con los que aqui se reportan.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (cross-encoder), backbone UltraBERT-150M: 24 capas, hidden size 768, 6 cabezas de atención |
-| Parámetros totales | 151.624.705 |
-| Parámetros activos | no aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens por par consulta/documento |
-| Tipos de cuantización | no disponible (pesos publicados en FP32; se documenta evaluación en BF16 backbone + FP32 readout) |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 0,6 GB) |
+| Arquitectura | Cross-encoder basado en UltraBERT-150M (transformer) |
+| Parametros totales | 151.032.576 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors, inferencia en BF16 segun el ejemplo del autor) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
+| Libreria | sentence-transformers (CrossEncoder) |
+| Tamano del repo | 2.4 GB |
+| Modelo base | dmis-lab/UltraBERT-150M @545ac9d9c7aece444f014ada5a1e9818132b4d35 |
+| Relacion con el base | merge (interpolacion de pesos) |
+| Pipeline | text-ranking |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un cross-encoder: codifica conjuntamente la consulta y el documento en una única secuencia y produce una puntuación de relevancia escalar no acotada. El backbone UltraBERT-150M consta de 24 capas de transformer con hidden size 768 y 6 cabezas de atención, con una longitud máxima de 32.768 tokens por par. La cabeza de salida es una regresión sobre la representación conjunta, entrenada con MSE frente a las puntuaciones de un profesor.
+El modelo es un cross-encoder: recibe un par (consulta, documento) y produce una puntuacion de relevancia directamente, sin generar representaciones separadas. La arquitectura subyacente es la de dmis-lab/UltraBERT-150M, un transformer de 151 millones de parametros. No se dispone de informacion detallada sobre el numero de capas, dimension oculta, cabezas de atencion ni longitud de contexto maxima en la informacion proporcionada; el autor remite a las model cards de los padres para esos detalles.
 
-El ajuste fino se realizó sobre 5 millones de pares consulta-documento puntuados por destilación, usando el dataset cross-encoder/ettin-reranker-v1-data. El checkpoint publicado corresponde al paso 26.042, seleccionado por validación, con los pesos originales en FP32 sin modificar. El modelo requiere código personalizado (tag custom_code) y se integra en el ecosistema sentence-transformers.
+El proceso de creacion no implica entrenamiento. Se trata de una fusion por interpolacion de pesos en FP32: 0,75 x pesos del checkpoint original seleccionado + 0,25 x pesos del checkpoint al 40% del entrenamiento. Los buffers no parametrizados identicos se conservan. Ambos padres comparten arquitectura y linaje de inicializacion, lo que hace viable la interpolacion directa. El autor realizo una busqueda sobre la contribucion del checkpoint parcial (0%, 25%, 50%, 75%, 100%) evaluando en un suite fijo de 13 tareas NanoBEIR con batch 24, forward en BF16 y top-100 de BM25 sin inyeccion de positivos, seleccionando el 25% por su nDCG@10 medio. Se trata, por tanto, de ajuste sobre el conjunto de seleccion, no de un test independiente. Tambien se probaron variantes de recuperacion dirigida (cabezas intactas de los padres y mezclas solo de cabeza) sin entrenamiento adicional, que no recuperan completamente las categorias debiles sin compensaciones.
 
 ## Capacidades
 
-- Reordenación de resultados de búsqueda: puntúa pares consulta-documento y ordena los candidatos por relevancia.
-- Puntuación de relevancia no acotada: la salida es un escalar continuo, útil para umbrales y calibración.
-- Manejo de documentos largos: ventana de 32.768 tokens por par, sin truncamiento en la mayoría de casos.
-- Integración con pipelines de recuperación: pensado para combinarse con recuperadores de primera fase como BM25.
-- Compatibilidad con sentence-transformers y transformers.
-- No dispone de generación de texto, tool calling, capacidades de agente ni multimodalidad.
-- Cobertura monolingüe en inglés.
+- Reordenamiento de pares consulta-documento: produce una puntuacion de relevancia por par, ordenable de forma descendente.
+- Ranking en ingles: disenado y evaluado exclusivamente sobre corpus en ingles (MS MARCO, NFCorpus, NQ, FiQA2018, Touche2020, SciFact, HotpotQA, ArguAna, FEVER, DBPedia, ClimateFEVER, SCIDOCS, QuoraRetrieval).
+- Integracion con sentence-transformers mediante la clase CrossEncoder, con soporte nativo de UltraBERT (sin codigo remoto personalizado).
+- Inferencia en BF16 con FlashAttention 2 (kernel de la comunidad fijado a una revision concreta en el ejemplo del autor).
+- No soporta tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito segun la informacion disponible.
+- Capacidad multilingue: no; solo ingles.
 
 ## Casos de uso
 
-- Búsqueda documental empresarial: combinar BM25 o búsqueda vectorial con este reranker para reordenar los 100 mejores candidatos y mejorar el nDCG@10 en corpus técnicos o científicos.
-- Atención al cliente con base de conocimiento: recuperar artículos relevantes de una FAQ o wiki interna y reordenarlos antes de pasarlos a un LLM generador, reduciendo alucinaciones por contexto irrelevante.
-- Búsqueda legal y normativa: reordenar fragmentos de documentos largos gracias a la ventana de 32.768 tokens, evaluando el par completo sin perder secciones clave.
-- RAG (generación aumentada por recuperación): actuar como segunda etapa del retriever para mejorar la precisión del contexto inyectado en el prompt de un modelo generativo.
-- Búsqueda académica: reordenar resultados de motores sobre artículos científicos, con buen rendimiento observado en SciFact y TREC-COVID.
-- Moderación y deduplicación de contenido: puntuar similitud semántica entre consultas y documentos para filtrar duplicados o resultados irrelevantes.
-- Evaluación de sistemas de recuperación: usar las puntuaciones como señal de calidad en experimentos offline de IR.
+- Reordenamiento en pipelines RAG: tras una recuperacion inicial con BM25 o un retriever denso (top-100), el modelo reordena los candidatos por relevancia antes de pasarlos al generador, mejorando la precision del contexto inyectado. Es adecuado por su tamano contenido y su entrenamiento especifico en ranking.
+- Busqueda documental interna en ingles: reordenar resultados de un motor de busqueda corporativo sobre articulos, manuales o politicas, usando el cross-encoder como segunda etapa sobre los top-k recuperados.
+- Preguntas sobre articulos cientificos: el modelo muestra buen rendimiento en SciFact (78,44 nDCG@10) y NFCorpus (36,36), por lo que puede reordenar pasajes de literatura cientifica en herramientas de revision bibliografica.
+- Verificacion de hechos y QA multi-hop: con resultados de 93,87 en HotpotQA y 93,76 en FEVER, es util para reordenar evidencias en sistemas de fact-checking o respuesta a preguntas que requieren combinar varios pasajes.
+- Filtrado de duplicados y near-duplicates en ingles: aunque el autor advierte que la MSE en Quora empeora (3,48 frente a 0,82 del padre original), el rendimiento en QuoraRetrieval (96,70 nDCG@10) sigue siendo alto para ranking de pares pregunta-respuesta.
+- Prototipado e investigacion sobre model merging: sirve como caso de estudio reproducible de interpolacion de pesos entre checkpoints del mismo linaje, con reporte completo de metricas, hashes de estado tensorial y verificacion de recarga en `merge_report.json`.
+- Reordenamiento en dominios especializados en ingles (clima, finanzas, argumentacion): con mejoras frente al original en ClimateFEVER (+1,14), FiQA2018 (+1,70) y Touche2020 (+2,12), puede emplearse como segunda etapa en buscadores de nicho.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente), sobre BEIR con recuperación BM25 top-100 (BM25S Lucene, k1=1.2, b=0.75, rerank_k=100):
+Resultados nDCG@10 en escala 0-100 sobre 13 tareas NanoBEIR (seleccion, no test independiente):
 
-| Dataset | Métrica | FP32 | BF16 backbone + FP32 readout |
-|---|---|---|---|
-| SciFact (300 consultas) | nDCG@10 | 0,7619 | 0,7622 |
-| SciFact | MRR@10 | 0,7305 | 0,7306 |
-| SciFact | Recall@100 | 0,9127 | 0,9127 |
-| NFCorpus (323 consultas) | nDCG@10 | 0,3534 | 0,3533 |
-| NFCorpus | MRR@10 | 0,5791 | 0,5792 |
-| NFCorpus | Recall@100 | 0,2469 | 0,2469 |
-| TREC-COVID (50 consultas) | nDCG@10 | 0,8143 | 0,8134 |
-| TREC-COVID | MRR@10 | 0,9900 | 0,9750 |
-| TREC-COVID | Recall@100 | 0,1105 | 0,1105 |
+| Categoria | Original | Padre 40% | Fusionado | Cambio vs original |
+|---|---:|---:|---:|---:|
+| MSMARCO | 73,24 | 72,31 | 70,79 | -2,45 |
+| NFCorpus | 37,06 | 33,00 | 36,36 | -0,70 |
+| NQ | 76,91 | 77,19 | 77,84 | +0,93 |
+| FiQA2018 | 54,68 | 56,74 | 56,38 | +1,70 |
+| Touche2020 | 58,61 | 54,64 | 60,73 | +2,12 |
+| SciFact | 77,67 | 74,04 | 78,44 | +0,78 |
+| HotpotQA | 93,05 | 93,33 | 93,87 | +0,82 |
+| ArguAna | 69,63 | 72,05 | 69,32 | -0,31 |
+| FEVER | 92,38 | 93,26 | 93,76 | +1,37 |
+| DBPedia | 69,94 | 70,25 | 70,77 | +0,83 |
+| ClimateFEVER | 42,57 | 44,56 | 43,71 | +1,14 |
+| SCIDOCS | 40,23 | 35,04 | 39,01 | -1,22 |
+| QuoraRetrieval | 94,64 | 97,65 | 96,70 | +2,06 |
 
-La diferencia entre FP32 y BF16 es marginal en nDCG@10 y MRR@10, lo que sugiere que la inferencia en BF16 con readout en FP32 es viable sin pérdida apreciable de calidad.
+Media nDCG@10 segun la contribucion del checkpoint parcial:
+
+| Contribucion 40% | Media nDCG@10 | MSE Quora exacto |
+|---|---:|---:|
+| 0% | 0,677384617 | 0,821492 |
+| 25% | 0,682822225 | 3,483629 |
+| 50% | 0,682101090 | 3,935570 |
+| 75% | 0,677651377 | 1,494638 |
+| 100% | 0,672344558 | 0,431949 |
+
+La fusion gana 0,544 puntos en escala 0-100 sobre el mejor padre y mejora 9 de 13 categorias frente al original. La MSE de Quora empeora notablemente respecto al padre original (3,48 frente a 0,82). El autor indica que no se han publicado resultados de benchmarks independientes fuera de NanoBEIR.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP32: aproximadamente 0,6 GB de pesos más activaciones; en la práctica cabe en cualquier GPU con 4 GB o más.
-- VRAM estimada en BF16: aproximadamente 0,3 GB de pesos, holgado incluso en GPUs integradas o de gama baja.
-- GPU recomendadas: RTX 4090, A100, H100 para alto throughput; RTX 3060/4060 y similares para uso en producción de baja concurrencia.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna; también es viable en CPU para volúmenes moderados.
-- Despliegue: transformers, sentence-transformers, vLLM (si soporta el custom code), TGI, llama.cpp (solo si se generan pesos GGUF, no disponible de forma oficial).
-- Latencia y throughput: no disponibles en la información proporcionada; al ser un cross-encoder, el coste escala linealmente con el número de pares a reordenar.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 151 millones de parametros, en BF16 los pesos ocupan aproximadamente 0,3 GB y en FP32 unos 0,6 GB, a lo que hay que sumar activaciones y overhead del runtime.
+- GPU recomendadas: no especificadas por el autor; el ejemplo de uso emplea `device="cuda"` con BF16 y FlashAttention 2.
+- Cabe en GPU de consumo: si, por el tamano del modelo (151M parametros), aunque no se detalla en la informacion proporcionada.
+- Opciones de despliegue: sentence-transformers con CrossEncoder (ejemplo oficial del autor), con soporte nativo de UltraBERT y `trust_remote_code=False`. No se mencionan vLLM, llama.cpp, Ollama ni TGI; estos ultimos no estan confirmados para esta arquitectura.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| ultrabert-150m-reranker | 151,6M | 32.768 | Apache 2.0 | Cross-encoder destilado, inglés |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificados en la información proporcionada |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---:|---|---|---|
+| UltraBERT-150M Reranker (este) | 151.032.576 | no disponible | Apache 2.0 | Fusion 75/25 de checkpoints UltraBERT-150M; solo ingles; experimental |
+| dmis-lab/UltraBERT-150M (padre) | no disponible | no disponible | no disponible | Modelo base; el autor remite a su model card para datos de entrenamiento y arquitectura |
+| Checkpoint 40% (padre parcial) | no disponible | no disponible | no disponible | Retenido en la revision `checkpoint-40pct` del mismo repositorio |
 
-No se han publicado comparaciones directas con otros rerankers en la información disponible; los benchmarks del autor solo reportan resultados propios sobre BEIR.
+No se dispone de datos de benchmarks de otros rerankers comparables en la informacion proporcionada, por lo que no se puede establecer una comparativa de rendimiento con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Modelo monolingüe en inglés: no soporta consultas ni documentos en castellano u otros idiomas.
-- Riesgo de alucinación no aplica en sentido generativo, pero las puntuaciones de relevancia pueden ser erróneas en dominios alejados de los datos de entrenamiento.
-- Resultados de benchmarks declarados por el autor y marcados como no verificados (verified: false); deben tratarse con cautela.
-- Rendimiento desigual entre datasets: nDCG@10 de 0,35 en NFCorpus frente a 0,81 en TREC-COVID, lo que indica sensibilidad al dominio.
-- Requiere código personalizado (custom_code), lo que puede complicar el despliegue en frameworks estándar.
-- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del backbone base dmis-lab/UltraBERT-150M.
-- Publicación muy reciente y sin tracción comunitaria (0 descargas, 0 likes), por lo que no hay validación externa ni reportes de producción.
-- El coste computacional crece linealmente con el número de pares reordenados; no sustituye a un recuperador de primera fase.
+- Modelo experimental: el autor lo etiqueta explicitamente como experimental y advierte que la seleccion del 25% se hizo sobre el mismo conjunto de evaluacion, por lo que no constituye un test independiente ni un resultado de Decision Index.
+- Calibracion de puntuaciones: las salidas son ilimitadas y no son probabilidades calibradas. La MSE en Quora exacto empeora de 0,82 (padre original) a 3,48, por lo que no es adecuado para prediccion de scores calibrados.
+- Regresion en categorias concretas: MSMARCO (-2,45), NFCorpus (-0,70), ArguAna (-0,31) y SCIDOCS (-1,22) empeoran frente al modelo original; no retiene el mejor score de cada padre en todas las categorias.
+- Solo ingles: no soporta otros idiomas.
+- Longitud de contexto no documentada en la informacion disponible; conviene consultar la model card del padre.
+- Dependencia de versiones fijadas: el autor exige usar las versiones de `requirements.txt` y el kernel de FlashAttention 2 fijado a una revision concreta; cambios de version pueden alterar el comportamiento.
+- Compatibilidad con la release anterior: la version previa del repositorio usaba codigo custom de Transformers y sus resultados full-BEIR no son comparables; los usuarios de ese loader deben fijar la revision `legacy-before-ettin-20261117`.
+- Licencia Apache 2.0 permite uso comercial, pero el caracter experimental y las regresiones documentadas desaconsejan su uso en produccion sin validacion propia.
+- Riesgo de sesgo y alucinacion: no documentado en la informacion proporcionada; al ser un reranker, no genera texto, pero hereda los sesgos de los datos de entrenamiento del padre.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ericlewis/ultrabert-150m-reranker
-- Backbone base: https://huggingface.co/dmis-lab/UltraBERT-150M
-- Dataset de entrenamiento: https://huggingface.co/datasets/cross-encoder/ettin-reranker-v1-data
-- Artefactos de evaluación BEIR (FP32 y BF16): https://huggingface.co/ericlewis/ultrabert-150m-reranker/tree/cb87d8d991b3b46d465fd9884de3c2282846df26
-- Paper o blog del autor: no disponible
-- Repositorio de código: no disponible
-- Demo: no disponible
+- Repositorio Hugging Face: https://huggingface.co/ericlewis/ultrabert-150m-reranker
+- Revision legacy archivada: https://huggingface.co/ericlewis/ultrabert-150m-reranker/tree/legacy-before-ettin-20261117
+- Modelo base: https://huggingface.co/dmis-lab/UltraBERT-150M
+- Commit del backbone y tokenizer: https://huggingface.co/dmis-lab/UltraBERT-150M/tree/545ac9d9c7aece444f014ada5a1e9818132b4d35
+- Kernel FlashAttention 2 fijado: `kernels-community/flash-attn2@291664546de978ab2bb730554252e5e2c1099e4f`
+- Informe de fusion (`merge_report.json`): incluido en el repositorio del modelo

@@ -2,91 +2,94 @@
 
 ## Resumen
 
-jairo-ai-1.0-pro-GGUF es la versión cuantizada en formato GGUF del modelo jairo-ai-1.0-pro, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversión estática realizada con herramientas de cuantización sobre los pesos originales del modelo base alojado en el repositorio LouieR09112/jairo-ai-1.0-pro. El modelo cuenta con aproximadamente 8.030 millones de parámetros (8B), lo que lo sitúa en la categoría de modelos de tamaño medio aptos para despliegue en hardware de consumo.
+jairo-ai-1.0-pro-GGUF es la version cuantizada en formato GGUF del modelo LouieR09112/jairo-ai-1.0-pro, un modelo de lenguaje de 8.030.261.312 parametros (aproximadamente 8B) orientado a razonamiento y conversacion. La cuantizacion ha sido realizada por mradermacher, un conocido publicador de versiones GGUF de modelos open source, que distribuye hasta once variantes de cuantizacion distintas para adaptarse a diferentes presupuestos de memoria.
 
-La relevancia de esta ficha radica en que el formato GGUF permite ejecutar el modelo en entornos con recursos limitados mediante llama.cpp y derivados (Ollama, LM Studio, etc.), algo imposible con los pesos originales en safetensors si no se dispone de GPU de gama alta. El repositorio ocupa 51,1 GB e incluye múltiples niveles de cuantización, desde F16 hasta Q2_K, lo que ofrece un abanico amplio de compromisos entre calidad y consumo de memoria.
+El modelo base se presenta como un modelo de tipo Llama afinado sobre el dataset HuggingFaceH4/ultrachat_200k, un corpus de conversaciones multirreno en ingles. Su nombre comercial ("jairo-ai-1.0-pro") y las etiquetas asociadas (reasoning, pro) sugieren un enfoque hacia tareas de razonamiento, aunque la model card original no aporta detalles tecnicos sobre el proceso de entrenamiento, la composicion exacta del dataset ni innovaciones arquitectonicas mas alla de la referencia al dataset de chat.
 
-No obstante, la información pública disponible es muy escasa: no se especifican licencia, idiomas, pipeline ni detalles de arquitectura o entrenamiento más allá del recuento de parámetros. La model card únicamente documenta el proceso de cuantización, sin aportar datos sobre el modelo base. Cualquier evaluación rigurosa del modelo requerirá consultar el repositorio original o realizar pruebas empíricas.
+La relevancia de esta ficha radica en que la version GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo imposible con los pesos originales en safetensors de 8B. Con cuantizaciones que van desde 3,3 GB (Q2_K) hasta 16,2 GB (f16), el modelo es accesible en GPUs consumer de gama media-alta y en CPU con suficiente RAM. La licencia MIT facilita su uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 8.030.261.312 (~8B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (tipo Llama, segun la etiqueta "llama" del modelo) |
+| Parametros totales | 8.030.261.312 (8B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); original en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | ingles (segun la model card) |
+| Licencia | MIT |
+| Formato de pesos | GGUF (version cuantizada); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base jairo-ai-1.0-pro en la documentación proporcionada. El recuento de parámetros (8.030 millones) es compatible con un transformer denso de escala 8B, pero no se confirma el tipo de arquitectura (transformer, MoE, híbrida, SSM, etc.), ni la longitud de contexto nativa, ni la composición del dataset de entrenamiento, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
+La informacion disponible no detalla la arquitectura interna mas alla de la etiqueta "llama" y el tamano de 8B parametros, lo que apunta a un transformer decoder-only con atencion multi-cabeza estandar. No se especifica el numero de capas, dimensiones ocultas, cabezas de atencion ni la longitud de contexto nativa. El modelo base fue afinado sobre HuggingFaceH4/ultrachat_200k, un dataset de aproximadamente 200.000 conversaciones multirreno en ingles generadas y filtradas para entrenamiento de instrucciones. No hay informacion sobre el numero de tokens de entrenamiento, la posible aplicacion de RLHF o DPO, ni innovaciones como decodificacion especulativa o atencion lineal.
 
-La única información técnica verificable corresponde al proceso de cuantización: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversión desde pesos en formato Hugging Face (safetensors) a GGUF mediante la herramienta estándar de llama.cpp. Se generaron doce variantes de cuantización, incluyendo una cuantización IQ4_XS (importancia-based, 4 bits) además de las K-quants clásicas. No se documentan innovaciones arquitectónicas ni técnicas de decodificación específicas.
+La cuantizacion realizada por mradermacher sigue el flujo estandar de llama.cpp: conversion de pesos safetensors a GGUF y aplicacion de los distintos esquemas de cuantizacion K-quant e I-quant. Se ofrece tambien una version con imatrix (weighted/imatrix quants) en un repositorio separado, que suele mejorar la calidad en cuantizaciones de baja precision al ponderar la importancia de cada tensor.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está orientado a diálogo multi-turno, aunque no se detallan sus capacidades exactas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante infraestructura de inferencia estándar compatible con la API de Hugging Face.
-- Razonamiento, código, matemáticas y otras capacidades específicas: no disponibles en la información proporcionada.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (no se declaran idiomas).
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Generacion de texto conversacional en ingles, con enfasis declarado en razonamiento ("reasoning" es una de las etiquetas del modelo).
+- Dialogo multirreno gracias al entrenamiento sobre ultrachat_200k.
+- Capacidad de razonamiento de proposito general, si bien no hay benchmarks que la cuantifiquen.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; las etiquetas sugieren cierta orientacion a reasoning, pero sin evidencia verificable.
+- Capacidades multilingues: limitadas al ingles segun la model card; no se declaran otros idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Despliegue local en estación de trabajo: gracias a las cuantizaciones Q4_K_M y Q5_K_M, el modelo puede ejecutarse en una GPU de consumo con 8-12 GB de VRAM mediante llama.cpp u Ollama, permitiendo prototipar asistentes conversacionales sin depender de servicios en la nube.
-- Experimentación e investigación: el conjunto de doce cuantizaciones permite estudiar la degradación de calidad entre F16 y Q2_K sobre un mismo modelo, útil para trabajos sobre cuantización y eficiencia de inferencia.
-- Asistentes conversacionales autoalojados: la orientación conversacional del modelo base lo hace candidato para chatbots internos en entornos con requisitos de privacidad, siempre que se valide su calidad empíricamente.
-- Integración en pipelines de CI/CD para pruebas de regresión: al poder ejecutarse en CPU con cuantizaciones bajas, puede incorporarse a tests automatizados de aplicaciones que consuman un LLM local.
-- Evaluación comparativa de cuantizaciones: útil para medir perplejidad y calidad de respuesta entre variantes y elegir el punto óptimo de compromiso memoria/calidad en producción.
-- Educación y demostraciones: el tamaño de 8B y la disponibilidad de GGUF facilitan su uso en talleres y cursos sobre despliegue de modelos open source en hardware asequible.
+- Asistente conversacional local en ingles: el modelo puede mantener dialogos multirreno gracias a su entrenamiento sobre ultrachat_200k, ejecutandose en local con llama.cpp u Ollama sin depender de APIs externas.
+- Prototipado rapido de aplicaciones de chat: con cuantizaciones Q4_K_M de 5,0 GB, se puede desplegar en una RTX 3060 o superior para probar flujos conversacionales antes de escalar a modelos mayores.
+- Generacion de texto en entornos con recursos limitados: la variante Q2_K (3,3 GB) permite ejecucion en GPUs de 4 GB de VRAM o en CPU con 8 GB de RAM, adecuada para demos y entornos embebidos.
+- Educacion e investigacion: al ser un modelo pequeno con licencia MIT, sirve como base para experimentos de fine-tuning, evaluacion de cuantizaciones o estudios de comportamiento conversacional.
+- Generacion de contenido en ingles: redaccion de borradores, resumenes y respuestas a preguntas en ingles, con la ventaja de que todo el procesamiento ocurre en local.
+- Integracion en pipelines de CI/CD para pruebas de regresion de prompts: el modelo puede actuar como "juez" o generador de referencia en tests automatizados de calidad conversacional, dado su bajo coste de inferencia.
+- Despliegue en dispositivos edge: la cuantizacion Q3_K_S (3,8 GB) o IQ4_XS (4,6 GB) permite ejecutarlo en mini-PCs y portatiles con GPU integrada de gama alta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según tamaño de 8B):
-  - F16: ~16 GB
-  - Q8_0: ~8,5 GB
-  - Q6_K: ~6,6 GB
-  - Q5_K_M: ~5,7 GB
-  - Q4_K_M: ~4,9 GB
-  - Q3_K_M: ~4,0 GB
-  - Q2_K: ~3,0 GB
-- GPU recomendadas: A100 o H100 para F16 con contexto largo; RTX 4090 (24 GB) para Q8_0 o Q6_K con margen; RTX 3090/4080 (16-24 GB) para Q5_K_M o Q4_K_M.
-- Cabe en GPU de consumo: sí, desde una RTX 3060 de 12 GB (Q8_0) hasta tarjetas de 6-8 GB con Q3_K_M o Q4_K_S. Las cuantizaciones Q2_K e IQ4_XS pueden ejecutarse incluso en CPU con suficiente RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF (llama-cpp-python, text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa.
-- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia (segun cuantizacion): Q2_K ~3,3 GB; Q3_K_S ~3,8 GB; Q3_K_M ~4,1 GB; Q3_K_L ~4,4 GB; IQ4_XS ~4,6 GB; Q4_K_S ~4,8 GB; Q4_K_M ~5,0 GB; Q5_K_S ~5,7 GB; Q5_K_M ~5,8 GB; Q6_K ~6,7 GB; Q8_0 ~8,6 GB; f16 ~16,2 GB. A estos valores hay que anadir el overhead del contexto KV cache, que crece con la longitud de contexto.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para las cuantizaciones mas altas; GPUs de 6-8 GB (RTX 3050, RTX 2060) para cuantizaciones Q3/Q4.
+- Cabe en GPU consumer: si. Las cuantizaciones Q4_K_M y Q5_K_M caben en GPUs de 8 GB; Q6_K y Q8_0 requieren 10-12 GB; f16 requiere 24 GB o mas (RTX 3090/4090, A100, H100).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp y cualquier runtime compatible con GGUF. No se recomienda vLLM ni TGI para esta version, ya que estan orientados a safetensors.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| jairo-ai-1.0-pro-GGUF | ~8B | no disponible | no disponible | GGUF | Hugging Face |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community | safetensors, GGUF | Hugging Face, Ollama |
-| Mistral 7B Instruct | 7,3B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
-| Qwen2.5 7B Instruct | 7,6B | 128K | Apache 2.0 (mayoría de variantes) | safetensors, GGUF | Hugging Face, Ollama |
+| jairo-ai-1.0-pro (este) | 8B | no disponible | MIT | GGUF, safetensors | Afinado sobre ultrachat_200k, solo ingles |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | safetensors, GGUF | Multilingue, ampliamente evaluado |
+| Mistral 7B | 7B | 32K | Apache 2.0 | safetensors, GGUF | Multilingue, muy extendido |
+| Qwen2.5 7B | 7B | 128K | Apache 2.0 | safetensors, GGUF | Multilingue, fuerte en codigo y matematicas |
 
-La comparación se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento del modelo evaluado. Frente a las alternativas citadas, jairo-ai-1.0-pro carece de información pública sobre licencia y contexto, lo que dificulta su adopción en producción frente a modelos con documentación completa.
+La comparativa es orientativa: no hay datos de rendimiento del modelo jairo-ai que permitan una comparacion cuantitativa con estas alternativas. La principal ventaja diferencial del modelo es su licencia MIT, mas permisiva que la Llama 3.1 Community, y su disponibilidad inmediata en GGUF. Sus desventajas son la falta de documentacion tecnica, la ausencia de benchmarks y el soporte unicamente en ingles.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de información sobre licencia: no se puede determinar si el uso comercial está permitido; debe consultarse el repositorio original antes de cualquier despliegue productivo.
-- Sin datos de benchmarks, idiomas ni contexto: imposible evaluar su calidad relativa frente a alternativas establecidas.
-- Riesgo de alucinación: inherente a los modelos generativos; sin datos de alineación (RLHF/DPO) no se puede estimar su magnitud.
-- Sesgos conocidos: no documentados; se desconoce la composición del dataset de entrenamiento.
-- Procedencia del modelo base poco clara: el autor del repositorio original (LouieR09112) no aporta documentación técnica en la información disponible, lo que añade incertidumbre sobre el entrenamiento.
-- Las cuantizaciones bajas (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
+- La model card no documenta sesgos conocidos, pero al entrenarse sobre ultrachat_200k (generado por modelos) puede heredar sesgos de ese corpus.
+- Riesgo de alucinacion no cuantificado; al no haber benchmarks, no se puede estimar su fiabilidad en tareas factuales.
+- Contexto nativo no documentado: se desconoce la ventana maxima y el comportamiento mas alla de ella.
+- Soporte unicamente en ingles segun la model card; el rendimiento en castellano es impredecible y probablemente deficiente.
+- Licencia MIT: permite uso comercial sin restricciones, pero el autor no ofrece garantias ni soporte.
+- El modelo base no incluye documentacion sobre el proceso de entrenamiento (datos, RLHF, filtros de seguridad), lo que dificulta evaluar su robustez en produccion.
+- No se declaran capacidades de tool calling ni de agentes; no asumir su disponibilidad sin validacion previa.
+- La cuantizacion Q2_K y Q3_K_M pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso en produccion.
+- Repositorio con 757 descargas y 0 likes en el momento de la consulta: comunidad muy reducida, sin validacion independiente.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/jairo-ai-1.0-pro-GGUF
-- Modelo original: https://huggingface.co/LouieR09112/jairo-ai-1.0-pro
+- Modelo base: https://huggingface.co/LouieR09112/jairo-ai-1.0-pro
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/jairo-ai-1.0-pro-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#jairo-ai-1.0-pro-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

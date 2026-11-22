@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nvidia/Llama-3_3-Nemotron-Super-49B-v1 · Hugging Face",
-      "url": "https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5 · Hugging Face",
-      "url": "https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "llama-3.3-nemotron-super-49b-v1 Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/llama-3_3-nemotron-super-49b-v1",
-      "snippet": "High efficiency model with leading accuracy for reasoning, tool calling, chat, and instruction following."
-    },
-    {
-      "title": "Nemotron Super - LLaMa 3.3 - 49b | NVIDIA NGC",
-      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/nemotron-super-3_3-49b",
-      "snippet": "It is a reasoning model that is post trained for reasoning, human chat preferences, and tasks, such as RAG and tool calling. The model supports a context length of 128K tokens. Llama-3.3-Nemotron-Super-49B-v1 is a model which offers a great tradeoff between model accuracy and efficiency. Efficiency (throughput) directly translates to savings."
-    },
-    {
-      "title": "Llama-3.3-nemotron-super-49b-v1.5 | NVIDIA NGC",
-      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/llama-3.3-nemotron-super-49b-v1.5/",
-      "snippet": "The model supports a context length of 128K tokens. Llama-3.3-Nemotron-Super-49B-v1.5 is a model which offers a great tradeoff between model accuracy and efficiency. Efficiency (throughput) directly translates to savings."
-    }
-  ]
+  "sources": []
 }

@@ -46,11 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?sort=modified",
-      "snippet": "francesca9805/jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407. Text Generation • 0.1B • Updated in about 17 hours · B111ue/bench2dex ..."
-    }
-  ]
+  "sources": []
 }

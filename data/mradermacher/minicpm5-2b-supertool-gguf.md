@@ -2,48 +2,49 @@
 
 ## Resumen
 
-MiniCPM5-2B-Supertool-GGUF es una publicación de cuantizaciones estáticas en formato GGUF del modelo MiniCPM5-2B-Supertool, un modelo de lenguaje de aproximadamente 2.000 millones de parámetros. El repositorio lo mantiene mradermacher, un perfil conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo original procede del repositorio saidutta69/MiniCPM5-2B-Supertool, según indica la propia model card del cuantizador.
+MiniCPM5-2B-Supertool es un modelo de lenguaje de aproximadamente 2.500 millones de parámetros (2.516.756.480 exactos según los pesos en safetensors) especializado en tool calling y function calling, orientado a flujos de agentes. La versión aquí descrita es la cuantización GGUF publicada por mradermacher a partir del modelo original de saidutta69, disponible en Hugging Face. El modelo base se ha afinado mediante QLoRA sobre dos conjuntos de datos orientados a razonamiento y uso de herramientas (saidutta69/fable-5.1-premium-v2 y MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x), y se etiqueta explícitamente con términos como "claude-code" y "agents".
 
-La relevancia de esta ficha es doble: por un lado, permite ejecutar un modelo de la familia MiniCPM (desarrollada por OpenBMB) en hardware de consumo gracias a la reducción de precisión; por otro, el sufijo "Supertool" sugiere un ajuste orientado a uso de herramientas y function calling, aunque no se dispone de documentación que lo confirme. La información publicada en el repositorio es mínima: no hay model card descriptiva, ni licencia declarada, ni idiomas especificados, ni pipeline asignado.
+El interés de esta ficha reside en que ofrece un modelo compacto (en torno a 2,5 B de parámetros) con cuantizaciones que van desde 1,1 GB (Q2_K) hasta 5,1 GB (f16), lo que permite ejecutarlo en hardware de consumo y en entornos con recursos limitados. Su licencia Apache 2.0 facilita el uso comercial sin las restricciones de otros modelos abiertos, y su enfoque en tool calling lo hace candidato para pipelines de agentes ligeros, asistentes de código y automatizaciones que requieran llamadas estructuradas a funciones.
 
-Por tanto, esta ficha se limita a documentar lo que es verificable a partir de los metadatos y del contenido técnico del repositorio (lista de cuantizaciones y origen del modelo base). Cualquier dato sobre arquitectura interna, datos de entrenamiento, benchmarks o licencia debe considerarse no disponible y requeriría consultar el repositorio del modelo original.
+La información pública disponible es limitada: no se detallan la longitud de contexto, la arquitectura interna, los idiomas soportados ni resultados de benchmarks. Esta ficha recoge únicamente los datos verificables de la model card y de los metadatos de Hugging Face, indicando explícitamente "no disponible" cuando corresponde.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (familia MiniCPM; el repositorio solo publica cuantizaciones GGUF del modelo base) |
-| Parametros totales | aproximadamente 2B (según el nombre del modelo; no confirmado en la model card) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base MiniCPM5-2B, transformer; detalles internos no publicados en la información disponible) |
+| Parámetros totales | 2.516.756.480 (≈2,5 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas generadas con convert_type hf, quantize_version 2) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estáticas); además existen cuantizaciones ponderadas/imatrix en el repo i1-GGUF del mismo autor |
+| Idiomas soportados | inglés (según el campo `language: en` de la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base original se distribuye en formato transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. El nombre "MiniCPM5-2B" indica que pertenece a la familia MiniCPM, desarrollada por OpenBMB, pero el repositorio de cuantización no detalla si se trata de un transformer denso, un modelo híbrido o una variante con atención lineal. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado.
+No se publican detalles sobre la arquitectura interna del modelo base (número de capas, dimensiones ocultas, mecanismo de atención, etc.). Por el nombre y el tamaño, se trata de un transformer de aproximadamente 2,5 B de parámetros derivado de la familia MiniCPM5-2B. El modelo original saidutta69/MiniCPM5-2B-Supertool fue afinado mediante QLoRA (según la etiqueta `qlora` de la model card) sobre dos datasets: `saidutta69/fable-5.1-premium-v2` y `MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x`. El segundo sugiere un filtrado orientado a razonamiento de alta calidad, aunque no se especifican el número de tokens, la composición exacta ni si hubo etapas de RLHF o DPO.
 
-Lo único verificable técnicamente es el proceso de cuantización: la model card incluye metadatos que indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que señala que las cuantizaciones se generaron a partir de pesos en formato Hugging Face mediante la herramienta estándar de llama.cpp. Se ofrecen tanto cuantizaciones K-quant (Q2 a Q8) como una variante IQ4_XS (importancia-based), lo que permite elegir entre tamaño y fidelidad. No se incluye mmproj, por lo que no hay indicios de capacidades multimodales en este repositorio.
+La innovación principal de esta publicación no está en el entrenamiento, sino en la distribución: mradermacher genera cuantizaciones estáticas GGUF en una amplia gama de tipos (desde Q2_K hasta f16) y ofrece además una variante con cuantización ponderada/imatrix (i1-GGUF) para quienes priorizan la calidad por bit. El proceso de conversión se realizó a partir del modelo en formato Hugging Face (`convert_type: hf`), lo que permite su uso directo con llama.cpp y derivados.
 
 ## Capacidades
 
-- Generación de texto autoregresiva, asumiendo el comportamiento estándar de un modelo causal de la familia MiniCPM.
-- Posible soporte de tool calling y function calling, sugerido por el sufijo "Supertool" del nombre, aunque no confirmado por documentación.
-- Capacidades multilingües: no disponibles (no se declaran idiomas).
-- Razonamiento multi-paso y uso en agentes: no confirmado.
-- Capacidades de visión o audio: no disponibles; el repositorio no incluye proyector multimodal (mmproj).
-- Modo "thinking" o razonamiento extendido: no disponible.
+- Generación de texto conversacional en inglés.
+- Tool calling y function calling: el modelo está etiquetado explícitamente para ello y entrenado sobre datasets orientados a uso de herramientas.
+- Soporte para flujos de agentes y razonamiento multi-paso (etiquetas `agents` y `claude-code`).
+- Razonamiento: el dataset de entrenamiento incluye un conjunto filtrado de razonamiento (`Fable-5.1-Max-Reasoning-Filtered-10000x`), lo que sugiere capacidad de cadena de pensamiento, aunque no se documenta formalmente un "thinking mode".
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se documentan capacidades de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de ~2B parámetros en GPUs con 4-6 GB de VRAM o incluso en CPU con llama.cpp, lo que facilita prototipado local sin infraestructura dedicada.
-- Pruebas de integración de function calling: si el ajuste "Supertool" confirma soporte de herramientas, el modelo podría emplearse para validar pipelines de agentes en entornos de desarrollo antes de migrar a modelos mayores.
-- Asistentes locales de bajo consumo: para aplicaciones de escritorio o edge donde el presupuesto de memoria es limitado y se prioriza la privacidad sobre la calidad máxima.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 variantes, lo que permite medir la degradación de calidad entre Q2_K y Q8_0 en una tarea concreta antes de fijar una configuración de producción.
-- Generación de texto auxiliar en pipelines: resúmenes, clasificación o extracción de entidades en flujos donde un modelo pequeño reduce coste y latencia frente a alternativas de mayor tamaño.
-- Experimentación académica: servir como baseline ligero en investigaciones sobre cuantización, ajuste de instrucciones o evaluación de modelos pequeños, dado el amplio abanico de precisiones disponibles.
+- Asistentes de código con llamada a herramientas: el modelo puede integrarse en entornos tipo Claude Code o similares para invocar funciones (leer archivos, ejecutar comandos, consultar APIs) gracias a su entrenamiento específico en tool calling y su tamaño reducido, que permite ejecutarlo localmente.
+- Agentes ligeros en el borde: con cuantizaciones Q4_K_M (1,7 GB) o Q5_K_M (1,9 GB) puede desplegarse en portátiles y mini-PC para tareas de automatización de escritorio con llamadas a funciones.
+- Automatización de soporte técnico: gestión de conversaciones multi-turno en inglés con invocación de APIs internas (consultas de estado, creación de tickets) mediante function calling.
+- Enrutamiento y clasificación con herramientas: uso como modelo "router" que decide qué función o servicio invocar en un pipeline mayor, aprovechando su bajo coste de inferencia.
+- Prototipado rápido de agentes: al ser Apache 2.0 y caber en GPU de consumo, sirve para validar arquitecturas de agentes antes de escalar a modelos mayores.
+- Entornos con restricciones de privacidad: despliegue on-premise en GGUF con llama.cpp u Ollama para procesar datos sensibles sin salir de la infraestructura local.
+- Educación e investigación: modelo pequeño para experimentar con QLoRA, cuantización y evaluación de tool calling sin grandes presupuestos de cómputo.
 
 ## Benchmarks y rendimiento
 
@@ -51,37 +52,41 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo de ~2B parámetros): aproximadamente 1,5-2 GB en Q4_K_M, 2,5-3 GB en Q8_0 y 4-5 GB en x-f16, incluyendo overhead de contexto.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090); en el extremo alto, A100 o H100 no aportan ventaja significativa por el tamaño reducido del modelo.
-- Cabe en GPU consumer: sí, en la práctica totalidad de GPUs dedicadas modernas, e incluso en CPU mediante llama.cpp con cuantizaciones Q4 o inferiores.
-- Opciones de despliegue: llama.cpp, Ollama (mediante importación de GGUF), LM Studio, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. vLLM y TGI no son la vía natural para GGUF, aunque existen soportes parciales.
-- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia: aproximadamente el tamaño del archivo GGUF más el overhead de contexto. Orientativamente: Q2_K ≈ 1,1 GB, Q4_K_M ≈ 1,7 GB, Q5_K_M ≈ 1,9 GB, Q6_K ≈ 2,2 GB, Q8_0 ≈ 2,8 GB, f16 ≈ 5,1 GB (sin contar KV cache).
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para cuantizaciones Q4/Q5; RTX 3060, RTX 4060, RTX 4090, A100 o H100 para mayor throughput y contextos largos.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 6 GB o más usando Q4_K_M o Q5_K_M; en GPUs con 4 GB conviene Q3_K_M o IQ4_XS.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y otros motores compatibles con GGUF; el modelo base en safetensors puede servirse con transformers, vLLM o TGI (sujeto a soporte de la arquitectura MiniCPM5).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-Supertool (GGUF, este repo) | ~2B | no disponible | no disponible | GGUF | Cuantizaciones estáticas de un ajuste orientado a herramientas |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K (modelo base) | Apache 2.0 | safetensors, GGUF | Alternativa consolidada de tamaño similar con licencia permisiva |
-| Llama 3.2 1B Instruct | 1,2B | 128K (modelo base) | Llama 3.2 Community License | safetensors, GGUF | Modelo pequeño de Meta con ecosistema amplio |
-| Gemma 2 2B | 2,6B | 8K (modelo base) | Gemma Terms of Use | safetensors, GGUF | Modelo de Google con restricciones de uso comercial |
+| MiniCPM5-2B-Supertool (esta ficha) | ≈2,5 B | no disponible | Apache 2.0 | GGUF, safetensors | Afinado para tool calling y agentes |
+| Qwen2.5-3B-Instruct | ≈3 B | 32 K (según versión) | Apache 2.0 | GGUF, safetensors | Modelo generalista con buen soporte de tool calling |
+| Llama-3.2-3B-Instruct | ≈3 B | 128 K | Llama 3.2 Community License | GGUF, safetensors | Generalista, licencia con restricciones |
+| Phi-3.5-mini-instruct | ≈3,8 B | 128 K | MIT | GGUF, safetensors | Generalista con razonamiento y contexto largo |
 
-Los datos de los modelos comparativos corresponden a sus especificaciones públicas conocidas; los del modelo de esta ficha figuran como no disponibles cuando la documentación no los confirma.
+Los datos de contexto y rendimiento de los modelos comparados corresponden a sus especificaciones públicas habituales; para este modelo no se dispone de esa información en la documentación consultada, por lo que la comparación cuantitativa de rendimiento no es posible.
 
 ## Limitaciones y advertencias
 
-- Ausencia de model card descriptiva: no hay información sobre arquitectura, entrenamiento, licencia ni idiomas, lo que impide evaluar su idoneidad para producción con garantías.
-- Licencia no declarada: no puede asumirse uso comercial permitido; es imprescindible verificar la licencia en el repositorio original saidutta69/MiniCPM5-2B-Supertool antes de cualquier despliegue.
-- Riesgo de alucinación: inherente a modelos de ~2B parámetros, especialmente en tareas de razonamiento complejo o conocimiento factual.
-- Degradación por cuantización: las variantes Q2_K y Q3_K pueden perder calidad de forma notable; se recomienda Q4_K_M o superior para uso real.
-- Capacidad de tool calling no verificada: el sufijo "Supertool" no está respaldado por documentación en este repositorio.
-- Sin soporte multimodal confirmado: la ausencia de mmproj descarta visión en esta distribución.
-- Contexto e idiomas desconocidos: no se puede planificar su uso en conversaciones largas o en castellano sin validación previa.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin evidencia de uso comunitario ni validación externa.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado y probablemente sea inferior.
+- Sesgos: no se documentan evaluaciones de sesgo; al derivar de un modelo base y de datasets específicos, puede heredar sesgos de sus fuentes.
+- Alucinación: no hay datos sobre tasas de alucinación; en tareas de tool calling, una llamada mal formada o inventada puede romper el pipeline, por lo que conviene validar las salidas con esquemas estrictos.
+- Contexto: la longitud de contexto no está documentada; planificar despliegues con ventanas conservadoras hasta verificarla empíricamente.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las licencias y condiciones de los datasets de entrenamiento originales, no detalladas en la información disponible.
+- Producción: al ser una cuantización comunitaria de un modelo afinado por un tercero, no hay garantías de soporte ni de mantenimiento; se recomienda evaluar con datos propios antes de desplegar.
+- Tamaño: con 2,5 B de parámetros, su capacidad de razonamiento complejo y de seguir instrucciones largas es limitada en comparación con modelos de 7 B o más.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/MiniCPM5-2B-Supertool-GGUF
-- Modelo base referenciado: https://huggingface.co/saidutta69/MiniCPM5-2B-Supertool
-- Familia MiniCPM (OpenBMB): no disponible en la información proporcionada
-- Paper, blog o demo del modelo: no disponible en la información proporcionada
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-2B-Supertool-GGUF
+- Modelo base original: https://huggingface.co/saidutta69/MiniCPM5-2B-Supertool
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/MiniCPM5-2B-Supertool-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#MiniCPM5-2B-Supertool-GGUF
+- Dataset Fable 5.1 Premium v2: https://huggingface.co/datasets/saidutta69/fable-5.1-premium-v2
+- Dataset Fable 5.1 Max Reasoning Filtered: https://huggingface.co/datasets/MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

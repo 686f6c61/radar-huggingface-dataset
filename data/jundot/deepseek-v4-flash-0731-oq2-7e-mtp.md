@@ -2,94 +2,108 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-oQ2.7e-mtp es un checkpoint cuantizado en formato MLX del modelo DeepSeek-V4-Flash-0731, publicado por el usuario Jundot. Se trata de una version de precision mixta generada con la herramienta oQ (oMLX v0.7.1) que reduce un modelo de 304.180.418.494 parametros a un peso efectivo de 3,255 bits por parametro, con un tamano de repositorio de 123,8 GB. El objetivo es permitir la ejecucion local de un modelo de escala frontera en hardware con memoria unificada, algo imposible con los pesos originales en BF16.
+DeepSeek-V4-Flash-0731-oQ2.7e-mtp es una cuantizacion de precision mixta en formato MLX del modelo oficial deepseek-ai/DeepSeek-V4-Flash-0731, publicado por el desarrollador Jundot. El checkpoint conserva la estructura del modelo base, incluyendo el modulo de decodificacion especulativa DSpark (multi-token prediction, MTP), y esta pensado para ejecutar un modelo de aproximadamente 304.000 millones de parametros en hardware Apple Silicon con un peso efectivo de 3,339 bits por parametro.
 
-El modelo base es un MoE disperso de DeepSeek con aproximadamente 13.000 millones de parametros activos y una ventana de contexto de 1.048.576 tokens. La variante cuantizada conserva la misma estructura que DeepSeek-V4-Flash-DSpark e incluye tanto el backbone de lenguaje como los pesos del modulo MTP (multi-token prediction), que habilita decodificacion especulativa. El backbone de lenguaje concentra 284.335B de parametros y la cabeza MTP anade 19.846B.
+El interes de esta ficha radica en que comprime un modelo de gran tamano hasta 118,252 GiB de almacenamiento (126,973 GB), lo que lo hace desplegable en equipos con memoria unificada de gama alta, algo inviable con los pesos originales en BF16. La cuantizacion asigna bits por sensibilidad medida de cada capa, con un rango que va de 2 a 8 bits segun el tensor, y se ha reajustado en la version del 19 de noviembre de 2026 con el redondeo oQe refinado de oMLX 0.8.0.
 
-La relevancia de esta ficha radica en que combina tres elementos poco habituales en un mismo artefacto: cuantizacion agresiva por sensibilidad de capa, un contexto de un millon de tokens y un modulo de prediccion multi-token integrado. La licencia MIT y el formato MLX lo orientan a despliegue en Apple Silicon, si bien el volumen de pesos exige equipos de gama muy alta o configuraciones multi-GPU. El modelo fue publicado el 11 de octubre de 2026 y, en el momento de la consulta, acumulaba 0 descargas y 0 likes.
+La licencia MIT, heredada del modelo fuente, facilita el uso comercial, aunque las capacidades reales dependen del modelo base DeepSeek-V4-Flash-0731, del que esta ficha solo dispone de los datos aportados por el autor de la cuantizacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE disperso (sparse mixture-of-experts) sobre transformer, con modulo MTP/DSpark de decodificacion especulativa acoplado |
-| Parametros totales | 304.180.418.494 (~304,18B); backbone de lenguaje 284.335B + cabeza MTP 19.846B |
-| Parametros activos | ~13B (segun la ficha del modelo base en OpenRouter) |
-| Longitud de contexto | 1.048.576 tokens |
-| Tipos de cuantizacion | oQ2.7e de precision mixta (afin 2-bit grupo 64, afin 3-bit grupo 64, MXFP4 grupo 32, MXFP8 grupo 32, afin 8-bit grupo 64, BF16, FP32, I32); media efectiva 3,255 bits/peso |
+| Arquitectura | Transformer (deepseek_v4) con modulo MTP de decodificacion especulativa DSpark |
+| Parametros totales | 304.180.418.494 (304,180B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | MLX de precision mixta: affine 2-bit (grupo 64), affine 3-bit (grupo 64), MXFP4 (grupo 32), affine 8-bit (grupo 64), MXFP8 (grupo 32), BF16, FP32, I32 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (checkpoint MLX) |
+| Formato de pesos | safetensors (MLX), libreria mlx |
+
+Distribucion de bits del checkpoint:
+
+| Formato de almacenamiento | Pesos logicos | Porcentaje | Almacenamiento | Bits efectivos/peso |
+|---|---|---|---|---|
+| Affine 2-bit, grupo 64 | 103,079B | 33,888% | 30,000 GiB | 2,50 |
+| Affine 3-bit, grupo 64 | 173,946B | 57,185% | 70,875 GiB | 3,50 |
+| MXFP4, grupo 32 | 19,327B | 6,354% | 9,562 GiB | 4,25 |
+| Affine 8-bit, grupo 64 | 1,369B | 0,450% | 1,354 GiB | 8,50 |
+| I32 | 0,002B | 0,001% | 0,009 GiB | 32,00 |
+| MXFP8, grupo 32 | 6,254B | 2,056% | 6,006 GiB | 8,25 |
+| BF16 | 0,167B | 0,055% | 0,310 GiB | 16,00 |
+| FP32 | 0,036B | 0,012% | 0,135 GiB | 32,00 |
+| **Total** | **304,180B** | **100%** | **118,252 GiB** | **3,339** |
+
+Desglose por componente:
+
+| Componente | Pesos logicos | Almacenamiento |
+|---|---|---|
+| Backbone del lenguaje | 284,335B | 116,047 GB / 108,077 GiB |
+| Cabeza MTP | 19,846B | 10,926 GB / 10,175 GiB |
+| **Total** | **304,180B** | **126,973 GB / 118,252 GiB** |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un MoE disperso de DeepSeek, con unos 13.000 millones de parametros activos sobre un total declarado de 284.335B en el backbone de lenguaje. La variante cuantizada conserva la estructura de DeepSeek-V4-Flash-DSpark y anade los pesos de un modulo de prediccion multi-token (MTP) de 19.846B, que funciona como cabeza de decodificacion especulativa y permite proponer varios tokens por paso. No se dispone de informacion sobre la composicion del dataset de entrenamiento, el numero de tokens procesados ni las etapas de alineacion (RLHF, DPO u otras) del modelo original, por lo que esos datos se consideran no disponibles.
+El checkpoint es una cuantizacion del modelo DeepSeek-V4-Flash-0731, que segun el autor es la version oficial de DeepSeek-V4-Flash con capacidades agenticas mejoradas. La arquitectura es de tipo transformer (tag deepseek_v4) e incorpora un modulo de decodificacion especulativa DSpark con pesos MTP de 19,846B de parametros logicos, lo que permite generar varios tokens por paso de decodificacion y reducir la latencia en inferencia autoregresiva.
 
-La innovacion tecnica de este checkpoint concreto es el esquema de cuantizacion oQ2.7e. oQ asigna bits por sensibilidad medida de cada capa, redondea cada grupo con una matriz de importancia (1024 muestras x 512 tokens) y aplica un reajuste por minimos cuadrados ponderados de la escala y el sesgo. La distribucion resultante reparte el 48,713% de los pesos en afin 3-bit grupo 64, el 42,359% en afin 2-bit grupo 64 y el resto en formatos de mayor precision (MXFP4, MXFP8, afin 8-bit, BF16, FP32 e I32) para las capas mas sensibles.
+La cuantizacion oQ2.7e, implementada con oMLX 0.8.0, asigna bits por sensibilidad medida de cada capa y redondea cada grupo con una matriz de importancia (1024 muestras x 512 tokens) y un reajuste de escala y sesgo por minimos cuadrados ponderados. El resultado es un promedio efectivo de 3,265 bits por peso en el backbone del lenguaje y 3,339 bits por peso en el checkpoint completo. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
 - Generacion de texto y razonamiento de proposito general, heredados del modelo base DeepSeek-V4-Flash-0731.
-- Contexto de 1.048.576 tokens, adecuado para tareas de contexto muy largo (documentos extensos, repositorios completos, historiales largos).
-- Capacidades agenticas mejoradas segun la descripcion del modelo base ("enhanced agentic capabilities").
-- Decodificacion especulativa mediante el modulo MTP/DSpark incluido en el checkpoint, orientada a acelerar la generacion.
-- Se desconoce el soporte explicito de tool calling, function calling, vision o audio en la informacion disponible.
-- Cobertura multilingue: no disponible.
-- El checkpoint no es un modelo entrenado de nuevo, sino una recomposicion de precision: conserva las capacidades del original en la medida en que la cuantizacion las preserve.
+- Capacidades agenticas mejoradas, segun la descripcion del modelo fuente.
+- Decodificacion especulativa mediante el modulo MTP DSpark, que permite predecir varios tokens por paso.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: descrito de forma generica en el modelo base, sin detalle tecnico.
+- Capacidades multilingues: no disponible.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Analisis de repositorios completos: con 1.048.576 tokens de contexto, el modelo puede ingerir bases de codigo enteras y responder preguntas de arquitectura o dependencias cruzadas sin trocear el contenido.
-- Procesamiento de documentacion legal o cientifica extensa: contratos, expedientes o articulos de cientos de miles de tokens en una sola pasada, utiles en despachos y equipos de investigacion.
-- Asistentes de investigacion con memoria larga: conversaciones multi-turno que retienen el hilo durante sesiones prolongadas gracias a la ventana ampliada.
-- Generacion de codigo asistida en local: ejecucion en estaciones de trabajo Apple Silicon con memoria unificada alta, evitando enviar codigo propietario a APIs externas.
-- Despliegue on-premise con requisitos de privacidad: al liberarse bajo licencia MIT y en formato local, permite operar sin conexion en entornos regulados.
-- Experimentacion en investigacion sobre cuantizacion: sirve como referencia para medir la degradacion de un MoE de gran escala a 3,255 bits/peso efectivos frente al modelo original.
-- Decodificacion especulativa acelerada: el modulo MTP integrado permite estudiar y aprovechar tecnicas de prediccion multi-token en pipelines de inferencia local.
+- Inferencia local en Apple Silicon de gama alta: el checkpoint de 118,252 GiB permite ejecutar un modelo de 304B parametros en equipos con memoria unificada suficiente (por ejemplo, configuraciones de 128 GB o superiores), algo imposible con los pesos BF16 originales.
+- Prototipado de agentes en estaciones de trabajo Mac: las capacidades agenticas del modelo base y el modulo MTP facilitan iterar sobre flujos multi-paso sin depender de infraestructura GPU en la nube.
+- Investigacion sobre cuantizacion de precision mixta: la distribucion de bits por capa y el uso de oQe con matriz de importancia sirven como caso de estudio reproducible para evaluar el impacto de la cuantizacion en modelos de gran tamano.
+- Evaluacion de decodificacion especulativa: el modulo DSpark MTP incluido permite medir la ganancia de throughput frente a decodificacion estandar en el mismo checkpoint.
+- Desarrollo offline y entornos con requisitos de privacidad: al ejecutarse localmente con licencia MIT, el modelo puede usarse en flujos donde los datos no deben salir del dispositivo.
+- Despliegue de bajo coste en comparacion con GPU: el formato MLX evita el coste de alquiler de A100/H100 para tareas de generacion de texto de moderada exigencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La busqueda web menciona que OpenRouter incluye benchmarks independientes de Artificial Analysis para el modelo base, pero no se aportan cifras concretas en los materiales facilitados, por lo que no se reproducen datos numericos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 123,8 GB y los pesos suman 115,252 GiB, por lo que se necesita memoria disponible superior a esa cifra (mas overhead de runtime).
-- En Apple Silicon, se requiere un equipo con memoria unificada de 128 GB o mas para alojar el checkpoint completo con margen.
-- En GPUs discretas, un unico acelerador de 80 GB (A100, H100) no basta para los 115 GiB de pesos; seria necesario repartir el modelo entre varias GPUs o usar memoria unificada de gran capacidad.
-- No cabe en GPUs de consumo tipo RTX 4090 (24 GB) ni en configuraciones de gama media.
-- El formato es MLX, por lo que el despliegue natural es el ecosistema MLX de Apple; no se declaran variantes GGUF, Ollama, vLLM ni TGI en la informacion disponible.
-- Latencia y throughput estimados: no disponible.
+- VRAM/memoria unificada estimada: al menos 118,252 GiB solo para los pesos; se requiere margen adicional para KV cache y activaciones, por lo que en la practica hacen falta equipos con 128 GB o mas de memoria unificada.
+- GPU recomendadas: no aplica de forma nativa; el formato MLX esta orientado a Apple Silicon (series M). Para GPU NVIDIA seria necesario reconvertir los pesos, ya que el checkpoint no esta en GGUF.
+- Cabe en consumer GPU: no en GPU de consumo con 24 GB (RTX 4090) ni en configuraciones de 48 GB; requiere hardware de memoria muy alta.
+- Opciones de despliegue: MLX (libreria mlx) y oMLX; no se indica soporte de vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput estimados: no disponibles; el modulo MTP DSpark esta disenado para reducir latencia, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/DeepSeek-V4-Flash-0731-oQ2.7e-mtp | 304,18B totales / ~13B activos | 1.048.576 tokens | oQ2.7e, 3,255 bits/peso efectivos | MIT | Hugging Face (MLX) |
-| Jundot/DeepSeek-V4-Flash-0731-oQ2e-mtp | no disponible en la informacion | 1.048.576 tokens (modelo base) | oQ2e | MIT | Hugging Face (MLX) |
-| Jundot/DeepSeek-V4-Flash-0731-oQ2e | no disponible en la informacion | 1.048.576 tokens (modelo base) | oQ2e | MIT | Hugging Face (MLX) |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | 304,18B totales (backbone 284B) / ~13B activos | 1.048.576 tokens | BF16 (original) | MIT | Hugging Face, ModelScope, OpenRouter |
+| DeepSeek-V4-Flash-0731-oQ2.7e-mtp | 304,180B | no disponible | safetensors MLX (precision mixta) | MIT | Hugging Face, 650 descargas |
+| deepseek-ai/DeepSeek-V4-Flash-0731 (modelo base) | no disponible en esta ficha | no disponible | no disponible | no disponible | Hugging Face |
+| DeepSeek-V4-Flash-DSpark | misma estructura que el base | no disponible | no disponible | no disponible | Hugging Face |
 
-No se dispone de resultados de rendimiento comparativos entre estas variantes en la informacion facilitada.
+No se dispone de datos de rendimiento comparado con alternativas de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion a 3,255 bits/peso efectivos introduce perdida de precision; no se aportan mediciones de degradacion frente al modelo original, por lo que conviene validar en la tarea concreta antes de usarlo en produccion.
-- El uso de formatos mixtos con bloques en 2-bit puede afectar de forma desigual a distintas capacidades (razonamiento, codigo, matematicas); se desconoce el impacto por area.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de gran escala; no se documentan salvaguardas especificas en la model card.
-- Sesgos conocidos: no disponible.
-- Cobertura de idiomas: no disponible, lo que impide garantizar un comportamiento homogeneo en castellano u otras lenguas.
-- Restricciones de licencia: MIT, lo que permite uso comercial, pero al ser un derivado cuantizado conviene verificar las condiciones del modelo base de DeepSeek antes de explotarlo comercialmente.
-- El checkpoint depende del ecosistema MLX, lo que limita el despliegue fuera de Apple Silicon o de entornos que no soporten este formato.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validacion de la comunidad y de reportes de uso reales.
+- La cuantizacion a 3,339 bits efectivos por peso introduce perdida de calidad frente al modelo base en BF16; el autor indica que la version del 19 de noviembre de 2026 reduce el error, pero no aporta metricas.
+- El checkpoint esta en formato MLX, por lo que no es directamente utilizable en ecosistemas CUDA, vLLM o llama.cpp sin conversion.
+- El requisito de memoria (118,252 GiB de pesos) limita el despliegue a equipos Apple de gama muy alta; no cabe en GPU de consumo.
+- No hay informacion sobre sesgos, riesgo de alucinacion ni limitaciones de idioma del modelo base en los datos aportados.
+- La licencia MIT permite uso comercial, pero conviene verificar las condiciones del modelo fuente DeepSeek-V4-Flash-0731 antes de produccion.
+- El modelo incluye pesos MTP adicionales (19,846B) que deben gestionarse correctamente en el runtime; un mal uso puede degradar la calidad o el rendimiento.
+- No se han publicado benchmarks que permitan validar el impacto real de la cuantizacion en tareas concretas.
 
 ## Enlaces
 
-- Modelo cuantizado: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2.7e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2.7e-mtp
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
-- Variante relacionada oQ2e-mtp: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2e-mtp
-- Variante relacionada oQ2e: https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2e
-- Herramienta de cuantizacion oQ/oMLX: https://github.com/jundot/omlx
-- Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385
-- Ficha del modelo base en ModelScope: https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731
-- Precios y benchmarks en OpenRouter: https://openrouter.ai/deepseek/deepseek-v4-flash-0731
-- Guia de despliegue comunitario: https://github.com/Moh4696/deepseek-v4-flash-free
+- Repositorio oMLX: https://github.com/jundot/omlx
+- Pull request oQe: https://github.com/jundot/omlx/pull/4930
+- Pull request redondeo oQe: https://github.com/jundot/omlx/pull/5292

@@ -2,50 +2,52 @@
 
 ## Resumen
 
-Olmo-3.1-32B-Instruct-ARA-heretic-GGUF es una cuantización estática en formato GGUF del modelo richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic, publicada por mradermacher. El modelo subyacente deriva de la familia Olmo 3.1 de AllenAI (32.233.522.176 parámetros, aproximadamente 32B) y ha sido modificado mediante técnicas de "abliteration" o "heretic" para eliminar total o parcialmente los mecanismos de rechazo y censura del modelo original, dando lugar a una variante denominada "uncensored", "decensored" o "abliterated". Esta ficha describe el artefacto GGUF distribuido por mradermacher, que es el que se puede descargar y ejecutar directamente.
+Olmo-3.1-32B-Instruct-ARA-heretic-GGUF es una cuantizacion estatica en formato GGUF del modelo richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic, publicada por mradermacher. El modelo base deriva de la familia Olmo 3.1 de AllenAI (32.233.522.176 parametros, aproximadamente 32B) y ha sido sometido a un proceso de "abliteration" o "decensoring" (etiquetado como heretic, uncensored, abliterated) que elimina o atenua las capas de rechazo y alineacion del modelo original. Esta version GGUF es la que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados.
 
-El problema que resuelve esta publicación es práctico: convertir los pesos originales en safetensors a cuantizaciones GGUF de distintos niveles de precisión (desde Q2_K hasta Q8_0) para permitir la inferencia en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles con GGUF. El repositorio ocupa 219,8 GB e incluye once variantes de cuantización, desde 12,1 GB (Q2_K) hasta 34,4 GB (Q8_0).
+El interes practico de esta ficha reside en dos factores. Por un lado, ofrece una via de despliegue local de un modelo de 32B con cuantizaciones que van desde Q2_K (12,1 GB) hasta Q8_0 (34,4 GB), lo que lo hace viable en GPUs de consumo con suficiente VRAM. Por otro, la naturaleza "heretic" del modelo implica que se han retirado los mecanismos de rechazo, lo que cambia radicalmente su comportamiento en produccion y exige evaluacion cuidadosa de riesgos.
 
-Es relevante ahora porque la familia Olmo se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su modificación, y porque las variantes "heretic" atraen a quienes necesitan un modelo sin filtros de rechazo para investigación sobre alineación, evaluación de sesgos o generación creativa sin restricciones. No obstante, la información publicada por el autor es muy escasa: no se detallan la longitud de contexto, los idiomas soportados más allá del inglés ni los resultados de benchmarks.
+La licencia declarada es Apache 2.0 (aunque el README incluye tambien la etiqueta openrail++), el idioma declarado es unicamente ingles y el pipeline no esta especificado. La informacion disponible no incluye datos sobre longitud de contexto, arquitectura interna ni resultados de benchmarks, por lo que muchos apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Olmo 3.1 de AllenAI; no se detalla en la información proporcionada) |
-| Parametros totales | 32.233.522.176 (32B) |
+| Arquitectura | no disponible (modelo base Olmo 3.1 de AllenAI; detalles no incluidos en la informacion) |
+| Parametros totales | 32.233.522.176 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (cuantizaciones estáticas; no hay imatrix ni IQ publicadas por el autor) |
-| Idiomas soportados | en (inglés) según la model card |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (transformers, gguf) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); versiones imatrix en repo i1 |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 (el README incluye tambien la etiqueta openrail++) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); repo de 219,8 GB con todos los ficheros |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. El modelo base es richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic, que a su vez deriva de la familia Olmo 3.1 de AllenAI, de la que se conoce el tamaño (32B parámetros) pero no los detalles de capas, atención o composición del dataset en esta ficha. La model card del artefacto GGUF no incluye información sobre el número de tokens de entrenamiento, la composición del corpus ni si se aplicaron técnicas de RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna, el numero de tokens de entrenamiento ni la composicion del dataset en la informacion proporcionada. El modelo base pertenece a la familia Olmo 3.1 de AllenAI, y el dataset referenciado en las etiquetas es allenai/Dolci-Instruct-RL, lo que sugiere un ajuste por instrucciones con refuerzo (RL) sobre una base preentrenada. No se confirman detalles sobre RLHF, DPO ni innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, etc.).
 
-La innovación técnica destacable de esta publicación concreta es el proceso de "heretic" o abliteration aplicado sobre el modelo instruct original, que modifica los pesos para reducir la probabilidad de respuestas de rechazo. El autor etiqueta el resultado como "reproducible", lo que sugiere que el procedimiento de modificación es documentado y repetible, aunque los detalles del método no se incluyen en la información disponible. La cuantización se ha realizado con el pipeline de mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf) y no se han publicado variantes ponderadas con imatrix.
+La innovacion relevante de esta publicacion es el proceso de "abliteration" aplicado por richardyoung en el modelo base, que da lugar a la variante "heretic". Este tipo de intervencion modifica los pesos para suprimir la direccion de rechazo aprendida durante la alineacion, de modo que el modelo deja de negarse a responder ante ciertas peticiones. mradermacher se limita a cuantizar ese modelo base a GGUF, sin reentrenamiento adicional. Las cuantizaciones son estaticas (quantize_version 2, output_tensor_quantised 1, convert_type hf) y se ofrece ademas un repositorio separado con cuantizaciones ponderadas/imatrix.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo Instruct base.
-- Razonamiento y respuesta a instrucciones, al ser una variante Instruct.
-- Modo "uncensored": se ha reducido o eliminado el comportamiento de rechazo ante peticiones que el modelo original declinaría.
-- Capacidades multilingües: limitadas al inglés según la model card (language: en); no se documentan otros idiomas.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades especiales (visión, audio, thinking mode): no disponible en la información proporcionada.
+- Generacion de texto conversacional en ingles, heredada de Olmo 3.1 Instruct.
+- Respuesta a instrucciones sin los rechazos tipicos del modelo alineado, debido al proceso de abliteration.
+- Razonamiento y respuesta multi-turno (formato conversacional segun las etiquetas).
+- Compatibilidad con endpoints (etiqueta endpoints_compatible).
+- Capacidades de codigo y matematicas: no confirmadas explicitamente en la informacion disponible.
+- Tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: solo se declara ingles.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo se comporta una variante abliterated frente al original en tareas de rechazo, util para analizar los mecanismos de censura y sus efectos colaterales.
-- Evaluación de sesgos y toxicidad: al carecer de filtros de rechazo, sirve para medir de forma más directa la distribución de respuestas del modelo base en dominios sensibles, sin que el rechazo enmascare el comportamiento subyacente.
-- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que requiera temáticas adultas o controvertidas, donde un modelo con rechazos sistemáticos resulta poco util.
-- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_S (18,5 GB) y Q4_K_M (19,6 GB) permiten ejecutar un modelo de 32B en GPUs con 24 GB de VRAM o en configuraciones con offload a CPU mediante llama.cpp.
-- Experimentación con cuantizaciones: el repositorio ofrece once niveles de precisión, lo que facilita comparar la degradación de calidad entre Q2_K y Q8_0 en un mismo modelo para tareas de investigación sobre cuantización.
-- Prototipado de asistentes conversacionales en inglés: para pruebas internas donde se necesite un modelo de 32B con licencia Apache 2.0 y sin dependencia de APIs externas.
-- Fine-tuning posterior sobre GGUF o sobre el modelo base: la licencia permisiva permite adaptar el modelo a dominios concretos, aunque el fine-tuning directo sobre GGUF es limitado y requeriría partir del modelo en safetensors.
+- Despliegue local de un modelo de 32B en GPU de consumo: gracias a las cuantizaciones Q4_K_S (18,5 GB) y Q4_K_M (19,6 GB), puede ejecutarse en tarjetas con 24 GB de VRAM mediante llama.cpp u Ollama, sin depender de APIs externas.
+- Experimentacion en investigacion sobre alineacion y seguridad: la variante heretic permite estudiar el comportamiento de un modelo con los rechazos suprimidos, comparandolo con el Olmo original para analizar que se pierde y que se gana en el proceso de abliteration.
+- Generacion de texto creativo sin restricciones de contenido: para tareas de escritura de ficcion, guiones o narrativa donde los filtros del modelo alineado resultan limitados, con la advertencia de que la salida debe revisarse.
+- Prototipado de asistentes conversacionales en ingles: el formato conversacional y la compatibilidad con endpoints permiten integrarlo en prototipos de chat multi-turno sobre infraestructura propia.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 11 variantes (de Q2_K a Q8_0) mas las versiones imatrix, lo que permite medir el impacto de la cuantizacion en perplejidad y calidad para un modelo de 32B concreto.
+- Fine-tuning posterior sobre la version Q8_0 o Q6_K: las cuantizaciones de mayor calidad (26,5 GB y 34,4 GB) sirven como base para experimentos de ajuste o destilacion en entornos con GPU de 40-80 GB.
+- Analisis de robustez frente a contenido sensible: util para equipos de seguridad que quieran probar clasificadores o filtros externos sobre un modelo que no se autocensura.
 
 ## Benchmarks y rendimiento
 
@@ -53,45 +55,52 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
-  - Q2_K: 12,1 GB.
-  - Q3_K_S: 14,2 GB; Q3_K_M: 15,7 GB; Q3_K_L: 17,0 GB.
-  - Q4_K_S: 18,5 GB; Q4_K_M: 19,6 GB.
-  - Q5_K_S: 22,3 GB; Q5_K_M: 23,0 GB.
-  - Q6_K: 26,5 GB.
-  - Q8_0: 34,4 GB.
-- GPU recomendadas: para Q8_0, una A100 40GB o H100; para Q6_K, una A100 40GB o RTX 4090 24GB con contexto limitado; para Q4_K_M y Q4_K_S, una RTX 4090 24GB o RTX 3090 24GB.
-- ¿Cabe en GPU de consumo? Sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 y Q5; las Q2 y Q3 caben en GPUs de 16 GB con contexto reducido; Q6_K y Q8_0 requieren 32 GB o más.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier motor compatible con GGUF (koboldcpp, LM Studio). El tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo OpenAI en plataformas de inferencia, aunque no se detalla.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para inferencia (segun tamano del fichero GGUF, mas overhead de contexto):
+  - Q2_K: 12,1 GB
+  - Q3_K_S: 14,2 GB
+  - Q3_K_M: 15,7 GB
+  - Q3_K_L: 17,0 GB
+  - IQ4_XS: 17,6 GB
+  - Q4_K_S: 18,5 GB
+  - Q4_K_M: 19,6 GB
+  - Q5_K_S: 22,3 GB
+  - Q5_K_M: 23,0 GB
+  - Q6_K: 26,5 GB
+  - Q8_0: 34,4 GB
+- GPU recomendadas: para Q4_K_M en adelante, RTX 3090 o RTX 4090 (24 GB) son suficientes; para Q5_K_M y superiores conviene 32 GB o mas (A100 40 GB, RTX A6000). Q8_0 requiere al menos 40 GB de VRAM para caber con contexto razonable.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4_K_S, Q4_K_M e IQ4_XS; en tarjetas de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base es de transformers y las cuantizaciones imatrix estan en el repo mradermacher/Olmo-3.1-32B-Instruct-ARA-heretic-i1-GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Olmo-3.1-32B-Instruct-ARA-heretic-GGUF | 32B | no disponible | Apache 2.0 | GGUF | Variante abliterated, cuantizaciones estáticas |
-| richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic | 32B | no disponible | Apache 2.0 (heredada) | safetensors | Modelo base del que se cuantiza; misma modificación heretic |
-| mradermacher/Olmo-3.1-32B-Instruct-GGUF | 32B | no disponible | Apache 2.0 | GGUF | Cuantización del Olmo 3.1 Instruct sin modificar (con rechazos) |
-| mradermacher/Olmo-3.1-32B-Instruct-impotent-heresy-i1-GGUF | 32B | no disponible | Apache 2.0 | GGUF (imatrix) | Otra variante modificada, con cuantización imatrix |
+| Olmo-3.1-32B-Instruct-ARA-heretic-GGUF (este) | 32,2B | no disponible | GGUF | apache-2.0 | Variante abliterated, solo ingles |
+| richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic | 32,2B | no disponible | safetensors (transformers) | apache-2.0 | Modelo base sin cuantizar del que deriva este |
+| Olmo 3.1 32B Instruct original (AllenAI) | 32B (aprox.) | no disponible | safetensors | no disponible en la informacion | Version alineada, con rechazos; no se dispone de datos de rendimiento |
+| Otras cuantizaciones GGUF de Olmo 3.1 32B | 32B (aprox.) | no disponible | GGUF | no disponible en la informacion | Alternativas sin abliteration; no se dispone de comparativa de benchmarks |
+
+No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- La modificación "heretic" o abliteration altera el comportamiento de rechazo del modelo, lo que puede degradar su calidad general y aumentar la probabilidad de respuestas dañinas, sesgadas o inexactas en dominios sensibles.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; al ser una variante modificada, no hay garantía de que mantenga la precisión del Olmo 3.1 original.
-- Idiomas: la model card solo declara inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Longitud de contexto: no documentada en la información disponible; no debe asumirse un contexto largo sin verificarlo contra el modelo base.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo modificado; el usuario asume la responsabilidad legal y ética de su despliegue.
-- No hay cuantizaciones imatrix ni IQ publicadas por mradermacher para este modelo, lo que limita las opciones de calidad intermedia.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria del artefacto.
-- El tag "reproducible" sugiere que el proceso es repetible, pero no se incluye la documentación del método en la model card.
+- El proceso de abliteration elimina los rechazos del modelo alineado: puede generar contenido ofensivo, ilegal o danino sin filtro interno. No es apto para produccion orientada al publico sin moderacion externa.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad; como modelo de 32B sin datos de benchmarks, la fiabilidad factual no esta verificada.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
+- Longitud de contexto no disponible: no se puede planificar su uso en tareas de contexto largo sin verificacion empirica.
+- La licencia declarada es Apache 2.0, pero el README incluye tambien la etiqueta openrail++, lo que genera ambiguedad sobre las restricciones de uso comercial. Conviene verificar la licencia del modelo base y de la variante heretic antes de uso comercial.
+- La abliteration puede degradar capacidades generales (razonamiento, instrucciones complejas) respecto al Olmo 3.1 original; no hay datos que cuantifiquen esa perdida.
+- El repositorio ocupa 219,8 GB por incluir todas las cuantizaciones; la descarga selectiva de un solo fichero es imprescindible.
+- Modelo con 0 likes y 915 descargas en el momento de la ficha: comunidad pequena, sin validacion independiente conocida.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Olmo-3.1-32B-Instruct-ARA-heretic-GGUF
-- Modelo base: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic
-- Página de descargas del autor: https://hf.tst.eu/model#Olmo-3.1-32B-Instruct-ARA-heretic-GGUF
-- Cuantización del Olmo 3.1 Instruct sin modificar: https://huggingface.co/mradermacher/Olmo-3.1-32B-Instruct-GGUF
-- Variante impotent-heresy-i1: https://huggingface.co/mradermacher/Olmo-3.1-32B-Instruct-impotent-heresy-i1-GGUF
-- FAQ y peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Olmo-3.1-32B-Instruct-ARA-heretic-GGUF
+- Modelo base (sin cuantizar): https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Olmo-3.1-32B-Instruct-ARA-heretic-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Olmo-3.1-32B-Instruct-ARA-heretic-GGUF
+- Dataset referenciado: https://huggingface.co/datasets/allenai/Dolci-Instruct-RL
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

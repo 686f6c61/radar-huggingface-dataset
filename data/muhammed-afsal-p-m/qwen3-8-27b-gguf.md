@@ -2,56 +2,57 @@
 
 ## Resumen
 
-Qwen3.8-27B-GGUF es una colección de cuantizaciones GGUF del modelo Qwen3.8-27B, publicado por el usuario muhammed-afsal-p-m. El modelo original lo desarrolla el equipo Qwen (Alibaba) y esta variante tiene como objetivo facilitar su despliegue en hardware de consumo mediante llama.cpp, Ollama y LM Studio. La relevancia de esta ficha radica en que documenta con rigor el proceso de cuantización: cada fichero se ha medido frente al modelo BF16 original con perplejidad y divergencia KL, y se ha probado funcionalmente (thinking on/off, tool calling, vision).
+Qwen3.8-27B-GGUF es la colección de cuantizaciones GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario muhammed-afsal-p-m. El modelo base, desarrollado por el equipo Qwen de Alibaba, es un transformer multimodal de 27.320.697.856 parámetros (unos 27,3 mil millones) que acepta entradas de imagen y texto, incorpora modo de razonamiento (thinking), llamada a herramientas (tool calling) y está publicado bajo licencia Apache 2.0. Esta versión GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp, algo imposible con los pesos originales en BF16.
 
-El modelo base es un transformer multimodal de 27.320.697.856 parámetros (unos 27,3 mil millones) con capacidades de texto e imagen (pipeline image-text-to-text), modo thinking con niveles de esfuerzo de razonamiento (`xhigh`, `medium`, `low`) y tool calling. La colección incluye siete cuantizaciones (desde Q8_0 hasta IQ3_M) más un proyector de visión F16 independiente, con tamaños que van de 29,1 GB a 13,0 GB.
+El interés de esta ficha reside en la cuantización: el autor no se limita a convertir pesos, sino que mide cada variante contra el modelo BF16 original con perplejidad y divergencia KL, y realiza pruebas funcionales de thinking, tool calling y visión en cada cuantización. Se ofrecen siete niveles de compresión, desde Q8_0 (29,1 GB) hasta IQ3_M (13,0 GB), lo que cubre desde GPU de 32 GB o más hasta tarjetas de 12 GB.
 
-El repositorio ocupa 131,3 GB y la licencia es Apache 2.0, la misma que el modelo original. Esta ficha se centra en la variante cuantizada; los datos de arquitectura y entrenamiento del modelo base no están detallados en la información disponible y se indican como tales.
+El modelo base apunta a cargas de trabajo que combinan razonamiento, código, matemáticas y comprensión de imágenes en un único modelo de tamaño medio, con un contexto que el autor no documenta explícitamente en la model card. La relevancia actual es doble: por un lado, la familia Qwen3.8 se posiciona como referencia open source en el segmento de 27B; por otro, la disponibilidad de GGUF con matriz de importancia (imatrix) permite desplegarlo en estaciones de trabajo sin GPU de datacenter.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen3.8-27B); multimodal image-text-to-text |
+| Arquitectura | Transformer multimodal (image-text-to-text); la model card menciona tensores `attn_qkv_gate` y `ssm_beta_alpha`, lo que sugiere componentes híbridos con atención y capas de tipo SSM, aunque el detalle no se especifica |
 | Parámetros totales | 27.320.697.856 (27,3 B) |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (los ejemplos de ejecución usan `-c 16384`) |
-| Tipos de cuantización | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, Q3_K_M, IQ3_M; proyector de visión F16 |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | no disponible en la model card; los ejemplos de despliegue usan `-c 16384` y las estimaciones de VRAM asumen ~8K tokens |
+| Tipos de cuantización | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, Q3_K_M, IQ3_M (además del proyector de visión mmproj en F16) |
+| Idiomas soportados | no disponible (la calibración incluye datos multilingües de `CohereLabs/aya_dataset`, pero no se lista el conjunto de idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con `mmproj` F16 para visión); modelo base en safetensors |
+| Formato de pesos | GGUF (llama.cpp); proyector de visión en GGUF F16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de 27,3 mil millones de parámetros con entrada de imagen y texto (pipeline `image-text-to-text`), modo thinking con niveles de esfuerzo configurables y soporte de tool calling. La información proporcionada no detalla la composición del dataset de entrenamiento, el número de tokens ni si se aplicaron técnicas de RLHF o DPO; estos datos deben consultarse en la model card original de Qwen/Qwen3.8-27B.
+El modelo base es un transformer multimodal de 27,3 mil millones de parámetros que procesa texto e imágenes (pipeline `image-text-to-text`). La model card de la cuantización no detalla la composición del dataset de preentrenamiento ni las fases de alineación (RLHF, DPO), por lo que esa información no está disponible en la documentación proporcionada. Los nombres de tensores que menciona el autor (`attn_qkv_gate`, `ssm_beta_alpha`) apuntan a una arquitectura híbrida que combina mecanismos de atención con capas de espacio de estados, pero no se ofrece la proporción ni la disposición exacta.
 
-La innovación técnica destacable de esta variante es el proceso de cuantización con importance matrix (imatrix). Los pesos originales se convirtieron a BF16 GGUF con llama.cpp `b12345` y el proyector de visión se exportó en F16. La imatrix se calculó sobre la cuantización Q8_0 usando 163.541 tokens de calibración renderizados con la plantilla de chat del propio modelo (incluyendo trazas `<think>`), con la siguiente composición: wikitext (32.012 tokens), ultrachat_200k (32.181), gsm8k (24.253), python_code_instructions_18k_alpaca (24.431), OpenCodeReasoning (33.040) y aya_dataset (17.624). Todas las cuantizaciones salvo Q8_0 usan la imatrix, que se distribuye como fichero independiente. La evaluación se realizó sobre el split de test held-out de wikitext-2 (150 fragmentos de 512 tokens) con divergencia KL frente a los logits BF16.
+Lo que sí está documentado es el proceso de cuantización. El autor partió de los pesos originales en el commit `37561816e66b5b9153b1b64c10968c18c1e6f4a0`, verificados por SHA256, los convirtió a BF16 GGUF con llama.cpp build b12345 y exportó el proyector de visión en F16. La matriz de importancia se calculó sobre la cuantización Q8_0 con 163.541 tokens de calibración, mezclando seis fuentes: wikitext (32.012 tokens), ultrachat_200k (32.181), GSM8K (24.253), instrucciones de código Python (24.431), OpenCodeReasoning (33.040) y aya_dataset multilingüe (17.624). Todas las variantes salvo Q8_0 usan dicha imatrix, que se distribuye junto a los pesos. La evaluación se hizo sobre el split de test de wikitext-2 (150 fragmentos de 512 tokens) con divergencia KL frente a los logits BF16.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo thinking activado por defecto (esfuerzo `xhigh`), configurable por petición mediante `chat_template_kwargs`.
-- Entrada de imagen (vision) mediante el proyector `mmproj-Qwen3.8-27B-F16.gguf`, compatible con todas las cuantizaciones.
-- Tool calling / function calling, verificado funcionalmente en todas las cuantizaciones.
-- Modo thinking desactivable por petición (`enable_thinking: false`) y ajuste de esfuerzo (`xhigh`, `medium`, `low`).
-- Conversación multi-turno (tag `conversational`).
-- Compatibilidad con endpoints OpenAI (`endpoints_compatible`).
-- Capacidades multilingües: no disponibles en la información proporcionada (la calibración incluyó el dataset aya, pero no se documentan los idiomas soportados).
+- Generación de texto conversacional multi-turno, con plantilla de chat compatible con OpenAI.
+- Modo de razonamiento (thinking) activado por defecto con esfuerzo `xhigh`, ajustable a `medium` o `low`, y desactivable por petición mediante `chat_template_kwargs`.
+- Comprensión de imágenes: entrada image-text-to-text mediante el proyector `mmproj-Qwen3.8-27B-F16.gguf`, verificado funcionalmente en las siete cuantizaciones.
+- Llamada a herramientas (tool calling / function calling), probada en todas las variantes.
+- Razonamiento multi-paso y matemáticas, reforzado por la calibración con GSM8K y OpenCodeReasoning.
+- Generación de código, con datos de calibración específicos de instrucciones Python.
+- Capacidades multilingües parciales: la imatrix incluye datos de aya_dataset, pero no se publica la lista de idiomas soportados.
+- Compatibilidad con endpoints OpenAI (`endpoints_compatible` en los tags).
 
 ## Casos de uso
 
-- Despliegue local en estación de trabajo con GPU de 24 GB: usar Q4_K_M o Q5_K_M con llama-server u Ollama para disponer de un asistente conversacional con visión y tool calling sin depender de la nube.
-- Análisis de documentos e imágenes en local: cargar el proyector F16 junto con cualquier cuantización para tareas image-text-to-text (descripción de capturas, extracción de información de figuras) manteniendo los datos en la máquina.
-- Razonamiento con control de coste: alternar `reasoning_effort` entre `low`, `medium` y `xhigh` según la complejidad de la consulta, reduciendo latencia y tokens generados en tareas simples.
-- Automatización con agentes: el soporte verificado de tool calling permite integrar el modelo en pipelines que invocan APIs o funciones externas mediante una API compatible con OpenAI.
-- Prototipado en GPU de 12-16 GB: IQ3_M (13,0 GB) o IQ4_XS (15,5 GB) permiten ejecutar el modelo en tarjetas de gama media, útil para pruebas de concepto y evaluación de calidad antes de escalar.
-- Evaluación comparativa de cuantizaciones: los datos de PPL y KLD publicados permiten elegir el compromiso calidad/tamaño adecuado para un caso concreto sin repetir la medición.
-- Integración en LM Studio u Ollama para entornos de desarrollo sin configuración manual de llama.cpp.
+- Asistente de atención al cliente con contexto largo: el modelo mantiene conversaciones multi-turno y puede desplegarse con llama-server en una GPU de 24 GB usando Q4_K_M, con un contexto de 16K tokens configurable en el arranque.
+- Automatización de soporte técnico con imágenes: al aceptar entradas de imagen, puede interpretar capturas de pantalla o fotos de errores y responder con pasos de resolución, cargando el proyector mmproj junto al modelo.
+- Generación de código en pipelines de CI/CD: el soporte de tool calling permite integrarlo como agente que invoca linters, tests o APIs internas, con thinking desactivable para reducir latencia en tareas simples.
+- Análisis de documentos con razonamiento: para tareas de extracción y verificación que requieren varios pasos, el modo thinking con esfuerzo `xhigh` mejora la calidad a costa de más tokens generados.
+- Despliegue en estaciones de trabajo sin GPU de datacenter: la variante IQ4_XS (15,5 GB) o IQ3_M (13,0 GB) permite ejecutar el modelo en tarjetas de 16 GB o 12 GB respectivamente, con pérdida de calidad medida y acotada.
+- Prototipado e investigación en local: la disponibilidad de siete niveles de cuantización con métricas de divergencia KL permite estudiar el impacto de la compresión en un modelo multimodal de 27B sin acceso a clúster.
+- Asistentes de código con razonamiento matemático: la calibración con GSM8K y OpenCodeReasoning hace que el modelo sea adecuado para explicar y depurar algoritmos, aunque la calidad específica en matemáticas no se ha medido por separado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Sí se publican métricas de fidelidad de cuantización frente al BF16 original (perplejidad 6,4334) y velocidad de generación medida en RTX 6000 Ada:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card sí incluye métricas de fidelidad de la cuantización frente al BF16 original (perplejidad 6,4334) y velocidad de generación medida en una RTX 6000 Ada:
 
-| Cuantización | Tamaño | Bits/peso | VRAM aprox. | PPL | KLD medio | Mismo top token | Tok/s (RTX 6000 Ada) |
+| Cuantización | Tamaño | Bits/peso | VRAM estimada | PPL | KLD media | Mismo token top | Tokens/s (RTX 6000 Ada) |
 |---|---|---|---|---|---|---|---|
 | Q8_0 | 29,1 GB | 8,50 | ~32 GB | 6,4399 | 0,0007 | 98,86 % | 27,7 |
 | Q6_K | 22,4 GB | 6,57 | ~25 GB | 6,4312 | 0,0020 | 97,91 % | 35,5 |
@@ -61,43 +62,46 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Q3_K_M | 13,7 GB | 4,01 | ~17 GB | 6,6493 | 0,0468 | 90,81 % | 48,6 |
 | IQ3_M | 13,0 GB | 3,80 | ~16 GB | 6,7204 | 0,0563 | 90,33 % | 50,2 |
 
-La incertidumbre de la medición de PPL es de aproximadamente ±0,08, por lo que diferencias menores (por ejemplo, Q6_K frente a BF16) no son significativas. Las pruebas funcionales (thinking on/off, tool call, vision) pasaron en todas las cuantizaciones.
+La incertidumbre de la perplejidad es de ±0,08, por lo que diferencias menores (por ejemplo, Q6_K frente a BF16) no son significativas. Las pruebas funcionales (thinking on/off, tool call, visión) pasaron en las siete variantes. El autor advierte que estas pruebas son smoke tests de una sola petición por función y que la calidad en código, matemáticas, otros idiomas, contexto largo e imágenes no se midió por separado.
 
 ## Requisitos de hardware
 
-- VRAM estimada: de ~16 GB (IQ3_M) a ~32 GB (Q8_0), incluyendo modelo, proyector de visión y ~8K de contexto. Contextos más largos requieren más VRAM.
-- GPU recomendadas por cuantización: 32 GB+ para Q8_0; 24-32 GB (RTX 3090/4090/5090) para Q6_K o Q5_K_M; 20-24 GB para Q4_K_M; 16 GB para IQ4_XS o Q3_K_M; 12 GB para IQ3_M.
-- Cabe en GPU de consumo: sí, desde IQ3_M en 12 GB hasta Q5_K_M en 24 GB.
-- Opciones de despliegue: llama.cpp (`llama-server` con `--mmproj` para visión), Ollama (`ollama run hf.co/muhammed-afsal-p-m/Qwen3.8-27B-GGUF:Q4_K_M`), LM Studio, y cualquier API compatible con OpenAI.
-- Throughput medido: 27,7 tok/s (Q8_0) a 50,2 tok/s (IQ3_M) en RTX 6000 Ada. La latencia no se documenta.
-- El proyector de visión (`mmproj-Qwen3.8-27B-F16.gguf`, 0,9 GB) es adicional y compatible con todas las cuantizaciones.
+- VRAM estimada: desde ~16 GB (IQ3_M) hasta ~32 GB (Q8_0), incluyendo modelo, proyector de visión y ~8K tokens de contexto. Contextos más largos requieren más memoria.
+- GPU recomendadas: RTX 6000 Ada para las mediciones publicadas; para Q8_0 se necesita una GPU de 32 GB o más (A100 40 GB, H100, RTX 6000 Ada); Q6_K y Q5_K_M encajan en 24–32 GB (RTX 3090, 4090, 5090); Q4_K_M en 20–24 GB; IQ4_XS y Q3_K_M en 16 GB; IQ3_M en 12 GB.
+- Cabe en GPU de consumo: sí, desde una RTX 3060 de 12 GB con IQ3_M hasta una RTX 4090 con Q6_K o Q5_K_M.
+- Opciones de despliegue: llama.cpp build b12345 o superior (llama-server probado con `-ngl 99 -c 16384 --jinja`); LM Studio y otras aplicaciones basadas en llama.cpp una vez actualizado su runtime. Ollama 0.40.16 y anteriores no pueden cargar estos ficheros por el layout combinado de tensores (`attn_qkv_gate`, `ssm_beta_alpha`); el autor sugiere usar `ollama run qwen3.8:27b` como alternativa.
+- Throughput: entre 27,7 tok/s (Q8_0) y 50,2 tok/s (IQ3_M) en RTX 6000 Ada, medido con el proyector de visión cargado y temperatura 0. No se publican datos de latencia de primer token ni de throughput en otras GPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks del modelo base ni de modelos comparables en la información proporcionada, por lo que no es posible una comparación de rendimiento fiable. A modo de referencia estructural:
+La información disponible no incluye datos de rendimiento del modelo base frente a alternativas, por lo que la comparación se limita a características estructurales verificables.
 
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Qwen3.8-27B (GGUF, esta ficha) | 27,3 B | no disponible | Apache 2.0 | GGUF |
-| Qwen3.8-27B (original) | 27,3 B | no disponible | Apache 2.0 | safetensors |
-| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato GGUF disponible |
+|---|---|---|---|---|---|
+| Qwen3.8-27B (esta cuantización) | 27,3 B | no disponible | Sí (imagen + texto) | Apache 2.0 | Sí, 7 cuantizaciones con imatrix |
+| Qwen/Qwen3.8-27B (original) | 27,3 B | no disponible | Sí (imagen + texto) | Apache 2.0 | No (BF16 safetensors) |
+| Alternativas de ~27B open source | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información sobre modelos comparables de la misma categoría (tamaño y modalidad) en la documentación proporcionada, ni de resultados de benchmarks que permitan una comparación de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Los datos de benchmarks estándar del modelo base no están disponibles en esta ficha; no se debe asumir un rendimiento concreto sin consultar la model card original.
-- La pérdida de calidad crece con la agresividad de la cuantización: IQ3_M presenta KLD 0,0563 y solo un 90,33 % de coincidencia en el token top, frente a 0,0007 y 98,86 % en Q8_0.
-- Riesgo de alucinación inherente a los modelos generativos; no se documentan evaluaciones específicas de factualidad.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- Idiomas soportados: no disponibles; la calibración incluyó datos multilingües pero no se especifican las lenguas cubiertas.
-- Longitud de contexto máxima: no disponible; los ejemplos de ejecución usan 16K y la estimación de VRAM asume ~8K.
-- Licencia Apache 2.0, permisiva para uso comercial, siempre que se respeten las condiciones de atribución de la licencia.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta; es una cuantización de terceros, no oficial del equipo Qwen.
-- Verificar los checksums (`SHA256SUMS.txt`) antes de usar los pesos en producción.
+- La model card no documenta sesgos conocidos del modelo base; al ser un modelo entrenado con datos web a gran escala, es probable que herede sesgos sociales, pero no hay evaluación publicada en la información disponible.
+- Riesgo de alucinación: no se han publicado evaluaciones de veracidad ni de tasa de alucinación para el modelo base ni para las cuantizaciones.
+- Las métricas de calidad de la cuantización se midieron únicamente sobre texto de Wikipedia en inglés a 512 tokens de contexto; no cubren código, matemáticas, otros idiomas, contexto largo ni calidad de imagen.
+- Las pruebas funcionales son smoke tests de un solo prompt por característica; confirman que la función opera, no su calidad.
+- Compatibilidad restringida: requiere llama.cpp build b12345 o superior; Ollama 0.40.16 y anteriores fallan al cargar los tensores con layout combinado.
+- El contexto máximo no se especifica en la model card; los ejemplos usan 16K tokens y las estimaciones de VRAM asumen ~8K, por lo que contextos mayores exigen verificación empírica y más memoria.
+- La lista de idiomas soportados no está disponible, lo que dificulta planificar despliegues multilingües.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero conviene conservar los avisos de copyright y verificar las obligaciones de atribución al redistribuir.
+- La cuantización IQ3_M y Q3_K_M muestran una divergencia KL notablemente mayor (0,0563 y 0,0468) y una coincidencia de token top por debajo del 91 %, lo que puede degradar tareas sensibles a la precisión.
+- El repositorio ocupa 131,3 GB, por lo que la descarga completa requiere espacio en disco considerable; conviene bajar solo la variante necesaria y verificar los checksums de `SHA256SUMS.txt`.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/muhammed-afsal-p-m/Qwen3.8-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/muhammed-afsal-p-m/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Código del pipeline de cuantización: https://github.com/muhammedafsalpm/qwen3.8-27b-gguf-quantization
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Papers, blogs y demos adicionales: no disponibles en la información proporcionada.
+- Checksums: https://huggingface.co/muhammed-afsal-p-m/Qwen3.8-27B-GGUF/blob/main/SHA256SUMS.txt
+- Matriz de importancia: https://huggingface.co/muhammed-afsal-p-m/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B.imatrix.gguf
+- Proyector de visión: https://huggingface.co/muhammed-afsal-p-m/Qwen3.8-27B-GGUF/blob/main/mmproj-Qwen3.8-27B-F16.gguf

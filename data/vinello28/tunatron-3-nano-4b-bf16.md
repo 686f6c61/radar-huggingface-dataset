@@ -2,108 +2,103 @@
 
 ## Resumen
 
-Tunatron-3-Nano-4B-BF16 es un ajuste fino del modelo compacto NVIDIA-Nemotron-3-Nano-4B (distribuido por unsloth) especializado en la triaje de hallazgos de SAST (static application security testing). Dado un identificador de debilidad CWE, un sink candidato y la rebanada de código hacia atrás que lo alcanza, el modelo decide si el sink es realmente vulnerable y devuelve un hallazgo en JSON con un esquema fijo (`vulnerable`, `vex_status`, `severity`, `reasoning`, `suggested_fix`). Lo desarrolla el usuario vinello28 y se publica con licencia "other" heredada del modelo base.
+Tunatron-3-Nano-4B es un ajuste fino del modelo `unsloth/NVIDIA-Nemotron-3-Nano-4B` (a su vez derivado de la familia Nemotron 3 de NVIDIA) especializado en triaje de hallazgos de análisis estático de seguridad (SAST). Desarrollado por el usuario `vinello28`, el modelo recibe una regla CWE, un sink candidato y la porción de código hacia atrás (backward slice) que llega hasta ese sink, y decide si la vulnerabilidad es real, emitiendo un objeto JSON estructurado con severidad, estado VEX, razonamiento y parche sugerido. Resuelve el problema clásico de los falsos positivos en herramientas SAST: en lugar de marcar todo flujo sospechoso, el modelo razona sobre el contexto del slice.
 
-El interés práctico reside en reducir el ruido de las herramientas SAST: en lugar de que un revisor humano descarte manualmente cada alerta, el modelo aplica un razonamiento guiado por la regla CWE sobre el flujo de datos y emite una decisión estructurada con severidad y una propuesta de corrección. El prompt de sistema y los campos de razonamiento están en italiano; los lenguajes de código soportados son C, C++ y Python.
+Arquitectura híbrida heredada de Nemotron 3 Nano, con 3.973.556.832 parámetros totales (aproximadamente 4B) y pesos en BF16. El modelo base combina atención con capas Mamba/SSM (etiqueta `nemotron_h` en Hugging Face), lo que explica la presencia de `mamba_ssm_cache_dtype` en los parámetros de servicio con vLLM. El ajuste se realizó con DoRA sobre el modelo base de Unsloth, y se distribuyen checkpoints en BF16, FP8 y NVFP4 (este último cuantizado con NVIDIA ModelOpt).
 
-El modelo base emplea una arquitectura híbrida Mamba-Transformer (Nemotron-H) con aproximadamente 4.000 millones de parámetros, lo que permite desplegarlo en GPUs de gama alta para consumo o en servidores con cuantización FP8/NVFP4. El ajuste se realizó con DoRA sobre módulos de atención y MLP, con 5.985 ejemplos de entrenamiento y una ventana máxima de 8.192 tokens.
+Es relevante ahora porque demuestra un patrón práctico: modelos pequeños (4B) especializados mediante ajuste fino pueden sustituir o complementar heurísticas en pipelines de seguridad, con salidas guiadas por JSON-schema y despliegue en una sola GPU consumer. La licencia es la NVIDIA Nemotron Open Model License, no una licencia permisiva estándar, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-Transformer (Nemotron-H), transformer con capas de mezcla Mamba/atención |
-| Parametros totales | 3.973.556.832 (≈4B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 8.192 tokens (longitud máxima de secuencia usada en entrenamiento; el contexto nativo del modelo base no se especifica en la información disponible) |
-| Tipos de cuantizacion | BF16 (completo), FP8 W8A8 con KV cache FP8 (NVIDIA ModelOpt), NVFP4 (NVIDIA ModelOpt, para Tensor Cores Blackwell) |
-| Idiomas soportados | Italiano (prompt de sistema y racional), inglés (tags del modelo); código en C, C++ y Python |
-| Licencia | other (ver model card del modelo base) |
-| Formato de pesos | safetensors (transformers); carpetas `model_bf16/`, `model_fp8/`, `model_nvfp4/` y `adapter/` (DoRA sin fusionar) |
+| Arquitectura | Transformer híbrido con capas Mamba/SSM (tag `nemotron_h`, `custom_code`) |
+| Parametros totales | 3.973.556.832 (~4B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible en la model card; el ejemplo de servicio usa `--max-model-len 8192` |
+| Tipos de cuantizacion | BF16 (este repo), FP8 y NVFP4 (repos separados, vía NVIDIA ModelOpt) |
+| Idiomas soportados | inglés (prompt de sistema y salidas `reasoning`/`suggested_fix` en inglés); metadatos de idioma: `it`, `en` |
+| Licencia | NVIDIA Nemotron Open Model License (`license: other`) |
+| Formato de pesos | safetensors (repo de 15,9 GB en BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base NVIDIA-Nemotron-3-Nano-4B es un modelo híbrido Mamba-Transformer de la familia Nemotron-H, orientado a eficiencia y precisión en un conjunto acotado de capacidades. Sobre él se aplicó un ajuste fino con DoRA de rango 64 y alpha 64, dirigido a módulos de atención (`q_proj`, `k_proj`, `v_proj`, `o_proj`), MLP (`up_proj`, `down_proj`) y `in_proj`, excluyendo explícitamente módulos de visión, códecs de audio y tokenizadores acústicos o semánticos. El optimizador fue AdamW de 8 bits con learning rate 2e-4, programación coseno, warmup del 3%, 2 épocas, batch efectivo de 8 y semilla 3407. El entrenamiento se ejecutó en una NVIDIA RTX PRO 6000 Blackwell Server Edition (97.887 MiB) durante 1 hora y 4 minutos, con una pérdida de entrenamiento final de 0,0435 (época 1,989) y una pérdida de validación de 0,1949 (época 2).
+El modelo parte de `unsloth/NVIDIA-Nemotron-3-Nano-4B`, un transformer híbrido de la familia Nemotron 3 Nano que intercala mecanismos de atención con capas de espacio de estados (Mamba/SSM), identificado en Hugging Face con la arquitectura `nemotron_h` y que requiere `trust_remote_code`. Esta combinación busca reducir el coste de memoria de la caché KV en contextos largos, algo relevante para slices de código extensos; de ahí que el ejemplo de vLLM fije `--mamba_ssm_cache_dtype float32`.
 
-Los datos de entrenamiento constan de 5.985 ejemplos (3.325 vulnerables y 2.660 no vulnerables), con validación de 402 ejemplos y test de 3.266. Las fuentes de entrenamiento son secvuleval (2.553), primevul (1.492), juliet (1.125), cvefixes-python (419), codeql-tests (243) y pyvul (153); por lenguaje, 4.263 ejemplos en C, 1.084 en C++ y 638 en Python. Los prompts y el racional objetivo están redactados en italiano. No se especifica en la información disponible si hubo RLHF o DPO adicionales sobre el ajuste supervisado.
+El ajuste fino se realizó con DoRA (variante de LoRA con descomposición de magnitud y dirección) sobre el modelo base, usando prompts en formato chat con el modo "thinking" desactivado. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo etapas de RLHF o DPO. Los tags del repositorio apuntan a un corpus orientado a seguridad: SAST, detección de vulnerabilidades, DORA, CWE y referencias a los papers arXiv:2403.18624, arXiv:2505.19828 y arXiv:2509.04260. La model card menciona además un componente en Rust (`sast-engine_slicer`) para generar los backward slices que consume el modelo.
 
 ## Capacidades
 
-- Triaje de vulnerabilidades SAST: clasifica un sink candidato como vulnerable o no vulnerable a partir de una regla CWE y una rebanada de código numerada.
-- Salida estructurada en JSON con esquema fijo: `vulnerable`, `vex_status`, `severity`, `reasoning` y `suggested_fix`.
-- Razonamiento justificado en italiano, con explicación del flujo de datos que lleva al sink y propuesta de corrección.
-- Análisis de código en C, C++ y Python.
-- Generación de texto conversacional y respuesta a instrucciones (pipeline `text-generation`).
-- Compatibilidad con endpoints (tag `endpoints_compatible`) y decodificación guiada por esquema JSON.
-- Modo de pensamiento desactivable: la evaluación se realizó con "thinking disabled"; el modelo base Nemotron 3 Nano soporta modo de razonamiento, aunque su comportamiento concreto tras el ajuste no está documentado en la información disponible.
-- No se documentan capacidades de tool calling, agentes multi-paso, visión ni audio en la información disponible.
+- Triaje de vulnerabilidades SAST: dado un CWE, un sink y el backward slice, decide `vulnerable` (booleano) y emite `vex_status` (`affected`/`not_affected`).
+- Salida JSON estructurada con campos `vulnerable`, `cwe_id`, `severity` (NONE/LOW/MEDIUM/HIGH/CRITICAL), `sink_function`, `sink_file`, `sink_line`, `vex_status`, `reasoning` y `suggested_fix`.
+- Generación de parches sugeridos (`suggested_fix`) citando ficheros y líneas.
+- Razonamiento sobre patrones seguros frente a indicadores de vulnerabilidad (por ejemplo, `subprocess.run([...], shell=False)` frente a concatenación en `os.system`).
+- Soporte de JSON-schema guided decoding en vLLM para forzar la estructura de salida.
+- Cobertura de lenguajes de código: C, C++ y Python.
+- Capacidades generales de generación de texto y conversación heredadas del modelo base (pipeline `text-generation`).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Modo thinking: entrenado explícitamente con thinking desactivado.
 
 ## Casos de uso
 
-- Triaje automatizado de alertas SAST en pipelines de CI/CD: el modelo recibe la regla CWE, el sink y la rebanada hacia atrás generada por la herramienta y emite un JSON que permite filtrar falsos positivos antes de que lleguen al revisor humano.
-- Priorización por severidad: el campo `severity` del JSON permite ordenar la cola de hallazgos y asignar esfuerzo de revisión a los casos de mayor riesgo.
-- Generación de propuestas de parche: el campo `suggested_fix` sirve como punto de partida para el desarrollador, que revisa y valida la corrección sugerida.
-- Enriquecimiento de informes VEX: el campo `vex_status` puede alimentar flujos de gestión de vulnerabilidades y documentación de exposición de componentes.
-- Revisión de código en C y C++ de sistemas embebidos o infraestructura: el modelo está entrenado mayoritariamente con ejemplos de C (4.263 de 5.985) y C++ (1.084), lo que encaja con bases de código de bajo nivel.
-- Análisis de repositorios Python en auditorías internas: los 638 ejemplos de Python y las fuentes cvefixes-python y pyvul permiten aplicar el modelo a proyectos de este lenguaje.
-- Formación de equipos de seguridad: el racional en italiano y la justificación del flujo de datos sirven como material didáctico sobre cómo se explota una debilidad concreta.
+- Triaje de falsos positivos en pipelines SAST: integrar el modelo tras un analizador (Semgrep, CodeQL, SonarQube) para que revise cada hallazgo con su slice y descarte los que no son explotables, reduciendo la carga de revisión manual.
+- Generación de VEX (Vulnerability Exploitability eXchange): el campo `vex_status` permite emitir declaraciones `affected`/`not_affected` automatizadas dentro de flujos de gestión de vulnerabilidades y cumplimiento de DORA.
+- Priorización por severidad: usar `severity` y `cwe_id` para ordenar la cola de remediación según impacto real, en lugar de la severidad bruta del escáner.
+- Asistencia a revisión de código en CI/CD: ejecutar el modelo sobre los diffs de un pull request para bloquear merges con vulnerabilidades confirmadas en C, C++ o Python.
+- Sugerencia de parches: emplear `suggested_fix` como borrador inicial de remediación que el desarrollador revisa, con referencias a fichero y línea del sink.
+- Auditoría de dependencias y código heredado: procesar repositorios grandes por lotes con vLLM y `--max-num-seqs` moderado, aprovechando el formato JSON para poblar una base de datos de hallazgos.
+- Formación y análisis forense: usar `reasoning` como explicación didáctica de por qué un flujo es o no vulnerable a un CWE concreto.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre `data/test.jsonl` (200 ejemplos por formato), con temperatura 0, decodificación guiada por esquema JSON y thinking desactivado. La clase positiva es "vulnerable"; una salida inválida cuenta como "no vulnerable".
+La model card reporta únicamente métricas de validez del JSON con decodificación guiada por esquema, evaluadas sobre el checkpoint NVFP4 con vLLM 0.33.0 en una NVIDIA GeForce RTX 5070 Ti (16 GB):
 
-| Formato | Precision | Recall | F1 | FPR | Salidas inválidas | Ejemplos |
-|---|---|---|---|---|---|---|
-| bf16 | 0,604 | 0,744 | 0,667 | 0,311 | 8 | 200 |
-| fp8 | 0,632 | 0,769 | 0,694 | 0,287 | 9 | 200 |
-| nvfp4 | 0,608 | 0,795 | 0,689 | 0,328 | 8 | 200 |
+| Conjunto de evaluación | Respuestas totales | JSON inválido o sin booleano `vulnerable` |
+|---|---|---|
+| Juliet | 600 | 6 |
+| pygoat | 80 | 3 |
 
-Rendimiento y eficiencia (una ejecución en NVIDIA RTX PRO 6000 Blackwell Server Edition, 97.887 MiB, vLLM 0.33.0, concurrencia 8):
-
-| Formato | Latencia media (s) | p50 (s) | p95 (s) | Throughput (tok/s) | Pesos en VRAM (GiB) | KV cache (tokens) | VRAM pico (GB) | Disco (GB) |
-|---|---|---|---|---|---|---|---|---|
-| bf16 | 1,97 | 1,57 | 4,92 | 1.011,6 | 7,5 | 1.373.828 | 77,0 | 8,0 |
-| fp8 | 1,57 | 1,25 | 3,66 | 1.294,9 | 5,0 | 1.650.153 | 79,7 | 5,3 |
-| nvfp4 | 1,37 | 1,11 | 3,07 | 1.543,7 | 3,4 | 1.453.624 | 77,5 | 3,6 |
-
-No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks de precisión, recall, F1 ni comparativas con otros modelos en la información disponible. Tampoco hay datos de latencia o throughput más allá de la configuración de servicio empleada.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: los pesos en BF16 ocupan 7,5 GiB; en FP8, 5,0 GiB; en NVFP4, 3,4 GiB. La VRAM pico medida bajo carga con concurrencia 8 fue de 77,0 GB (bf16), 79,7 GB (fp8) y 77,5 GB (nvfp4), dominada por la KV cache con más de 1,3 millones de tokens en vuelo.
-- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell Server Edition (la usada en las pruebas). Para NVFP4 se requieren Tensor Cores Blackwell; FP8 requiere soporte de FP8 en la GPU (por ejemplo, H100 o L40S).
-- GPU de consumo: los pesos BF16 (7,5 GiB) caben en GPUs de consumo con 12-16 GB de VRAM, como una RTX 4090 o RTX 4080, si se limita la concurrencia y la longitud de contexto. Las versiones FP8 y NVFP4 reducen aún más el espacio de pesos, pero requieren hardware compatible.
-- Opciones de despliegue: vLLM 0.33.0 (usado en la evaluación), transformers con `custom_code` (arquitectura `nemotron_h`), y cuantizaciones generadas con NVIDIA ModelOpt. No se documenta soporte de llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: 1,97 s de latencia media y 1.011,6 tok/s en BF16; 1,57 s y 1.294,9 tok/s en FP8; 1,37 s y 1.543,7 tok/s en NVFP4, con concurrencia 8.
+- VRAM estimada: el repo BF16 ocupa 15,9 GB, por lo que la inferencia en BF16 requiere en torno a 16 GB o más solo para pesos, más caché KV y buffers; con FP8 baja aproximadamente a la mitad y con NVFP4 a una cuarta parte.
+- GPU validadas: solo se ha evaluado el build NVFP4 en una NVIDIA GeForce RTX 5070 Ti (16 GB). NVFP4 está pensado para GPUs Blackwell; no se probaron otras GPUs según la model card.
+- GPU consumer: el build NVFP4 cabe en una RTX 5070 Ti; el BF16 probablemente no cabe en GPUs de 16 GB con contexto largo. No hay datos publicados para RTX 4090, A100 o H100.
+- Despliegue: vLLM 0.33.0 con `--trust-remote-code`, `--max-model-len 8192`, `--gpu-memory-utilization 0.80`, `--max-num-seqs 8` y `--mamba_ssm_cache_dtype float32`. La librería de referencia es transformers; no se documenta soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tunatron-3-Nano-4B-BF16 | ≈4B | 8.192 (entrenamiento) | Triaje SAST (C, C++, Python) | other | Hugging Face (vinello28) |
-| NVIDIA-Nemotron-3-Nano-4B | ≈4B | No disponible en la información | Propósito general, agéntico | No disponible en la información | Hugging Face (nvidia, unsloth) |
-| Modelos SAST genéricos | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Tunatron-3-Nano-4B | ~4B | no disponible (ejemplo a 8192) | Triaje SAST (C/C++/Python) | NVIDIA Nemotron Open Model License | Hugging Face (BF16/FP8/NVFP4) |
+| unsloth/NVIDIA-Nemotron-3-Nano-4B (base) | ~4B | no disponible | Propósito general | NVIDIA Nemotron Open Model License | Hugging Face |
+| Modelos generalistas de ~4B (p. ej. Qwen, Llama pequeños) | ~4B | variable | Propósito general, sin especialización SAST | variable | Hugging Face |
 
-No se dispone de datos de benchmarks comparativos con otras alternativas de triaje SAST en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Herramienta de apoyo al triaje para revisores humanos; no sustituye a un motor SAST ni a una revisión de seguridad completa.
-- Espera el formato de prompt específico del proyecto (regla CWE, sink candidato y rebanada hacia atrás numerada); otros estilos de prompt no han sido evaluados.
-- Entrenado y evaluado con funciones en C, C++ y Python de conjuntos públicos de vulnerabilidades; los resultados pueden no transferirse a otros lenguajes ni a código propietario.
-- Tasa de falsos positivos del 28,7%-32,8% según el formato, y entre 8 y 9 salidas inválidas de 200 en la evaluación; una salida inválida se contabiliza como "no vulnerable".
-- Riesgo de alucinación en el racional y en la corrección sugerida: el campo `suggested_fix` debe validarse antes de aplicarse.
-- Idiomas: el prompt de sistema y los campos de razonamiento están en italiano; el soporte de otros idiomas de interacción no está documentado.
-- Licencia "other" heredada del modelo base: es necesario revisar la model card de NVIDIA-Nemotron-3-Nano-4B para conocer las restricciones de uso comercial.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 6 de noviembre de 2026; no hay validación externa de la comunidad.
-- La VRAM pico medida (≈77-80 GB) se debe a la concurrencia y al tamaño de la KV cache; en despliegues con menor concurrencia el consumo será mucho menor, pero no se documentan cifras para esos escenarios.
+- Sesgos: no documentados en la información disponible; al entrenarse sobre código y reglas CWE, puede heredar sesgos de los datasets de seguridad empleados.
+- Alucinación: aunque la salida esté guiada por esquema, el contenido de `reasoning` y `suggested_fix` puede ser incorrecto o inventar detalles del código; requiere revisión humana antes de aplicar parches.
+- Robustez de formato: incluso con JSON-schema guided decoding, 6 de 600 respuestas de Juliet y 3 de 80 de pygoat no fueron JSON válido con booleano `vulnerable` (por ejemplo, truncadas por límite de tokens).
+- Idiomas: el prompt de sistema y las salidas están en inglés; no se garantiza calidad en castellano ni en otros idiomas.
+- Cobertura limitada de lenguajes de código: solo C, C++ y Python.
+- Contexto: no se documenta la longitud máxima de contexto del modelo base; el ejemplo de servicio usa 8192 tokens, lo que limita el tamaño de los slices.
+- Licencia: NVIDIA Nemotron Open Model License, no una licencia permisiva estándar; es necesario revisar sus términos antes de uso comercial o redistribución.
+- Cuantización: solo el build NVFP4 ha sido evaluado y únicamente en GPUs Blackwell; los builds BF16 y FP8 no tienen métricas publicadas.
+- Madurez: modelo con pocas descargas (717) y un solo like en el momento de la ficha; no hay evidencia de validación independiente.
 
 ## Enlaces
 
-- [Modelo en Hugging Face: vinello28/Tunatron-3-Nano-4B-BF16](https://huggingface.co/vinello28/Tunatron-3-Nano-4B-BF16)
-- [Modelo base: nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16)
-- [Modelo base (unsloth): unsloth/NVIDIA-Nemotron-3-Nano-4B](https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Nano-4B)
-- [Blog de NVIDIA: Nemotron 3 Nano 4B](https://huggingface.co/blog/nvidia/nemotron-3-nano-4b)
-- [Paper Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models](https://huggingface.co/papers?q=Nemotron-H)
-- [Paper Nemotron-CC: Transforming Common Crawl into a Refined Long-Horizon Pretraining Dataset](https://huggingface.co/papers?q=Nemotron-CC)
-- [Código de entrenamiento: BlockchainzGurus/tunatron](https://github.com/BlockchainzGurus/tunatron.git)
+- Modelo en Hugging Face: https://huggingface.co/vinello28/Tunatron-3-Nano-4B-BF16
+- Modelo base: https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Nano-4B
+- Licencia: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
+- Paper arXiv:2403.18624: https://arxiv.org/abs/2403.18624
+- Paper arXiv:2505.19828: https://arxiv.org/abs/2505.19828
+- Paper arXiv:2509.04260: https://arxiv.org/abs/2509.04260
+- vLLM: https://github.com/vllm-project/vllm
+- NVIDIA TensorRT Model Optimizer (ModelOpt): https://github.com/NVIDIA/TensorRT-Model-Optimizer
+- Transformers: https://huggingface.co/docs/transformers

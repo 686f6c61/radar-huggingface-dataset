@@ -2,81 +2,84 @@
 
 ## Resumen
 
-Mistral-Small-24B-Instruct-Jbliterated es una modificación del modelo Mistral-Small-24B-Instruct-2501 (Mistral Small 3) de Mistral AI, desarrollada por ApolloRaines. El objetivo es eliminar quirúrgicamente los comportamientos de rechazo a nivel de pesos, de modo que el modelo no muestre negativas a peticiones que el modelo original rechazaría. A diferencia de la abliteración estándar, que solo elimina la respuesta superficial "no puedo ayudar", este método (denominado "jbliterated") ataca direcciones conductuales más profundas, evitando que el modelo recurra a reinterpretaciones de la pregunta, inyección de avisos o respuestas evasivas.
+Mistral-Small-24B-Instruct-Jbliterated es un derivado del modelo Mistral-Small-24B-Instruct-2501 de Mistral AI, publicado por el usuario ApolloRaines. Se trata de una intervención quirúrgica sobre los pesos del modelo base cuyo objetivo declarado es eliminar la disposición aprendida a rechazar peticiones (refusal behavior), sin recurrir a entrenamiento con gradientes ni a parches en tiempo de inferencia. El autor denomina al método "jbliteration", una variante de la técnica conocida como abliteration que, según afirma, actúa con mayor precisión sobre la dirección de rechazo para preservar el resto de capacidades del modelo.
 
-El modelo mantiene la misma arquitectura y tamaño que el base: 23.572.403.200 parámetros, 40 capas, y está pensado como un reemplazo directo (drop-in) del original. Se distribuye en formato safetensors y GGUF, con licencia Apache 2.0. Su relevancia radica en ofrecer una alternativa "sin censura" para casos de uso donde se requiere una generación de texto sin restricciones de seguridad, aunque esto conlleva riesgos importantes de uso indebido.
+El modelo conserva la arquitectura y el tamaño del original: 23.572.403.200 parámetros reales según los safetensors del repositorio, lo que corresponde a la familia Mistral-Small de 24B. El repositorio ocupa 133,7 GB e incluye pesos en safetensors y GGUF, lo que facilita su despliegue tanto en pipelines de Transformers como en entornos de inferencia local con llama.cpp u Ollama. La licencia declarada es Apache 2.0, heredada del modelo base.
+
+La relevancia de esta ficha es doble. Por un lado, documenta un caso de modificación de pesos orientada a eliminar salvaguardas, un fenómeno creciente en el ecosistema open source que conviene conocer desde el punto de vista de la evaluación de riesgos. Por otro, el autor presenta el modelo como herramienta para investigación en seguridad, análisis defensivo y red-teaming, argumentando que un modelo que se niega a examinar código hostil no puede revisarlo. El modelo está etiquetado únicamente para inglés y acumula 604 descargas en el momento de la consulta.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Mistral-Small-24B-Instruct-2501) |
+| Arquitectura | Transformer decoder-only (derivado de Mistral-Small-24B-Instruct-2501) |
 | Parametros totales | 23.572.403.200 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (no especificada en la ficha del modelo) |
-| Tipos de cuantizacion | safetensors (fp16) y GGUF (varias cuantizaciones, no detalladas) |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache 2.0 |
+| Parametros activos | no disponible (no es MoE según los datos disponibles) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantizacion | GGUF disponible en el repositorio; cuantizaciones concretas no especificadas |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una modificación de pesos del Mistral-Small-24B-Instruct-2501, un transformer denso de 24B parámetros con 40 capas. La técnica empleada, denominada "jbliterated", aplica una intervención sobre los pesos del modelo base: se identifican 5 direcciones por capa (en todas las 40 capas) que codifican comportamientos de rechazo y se eliminan mediante restricciones de espacio nulo. Esto permite preservar las capacidades de matemáticas, código y razonamiento, según la model card. Además, se activa la preservación de norma para mantener la estabilidad de las activaciones.
+El modelo hereda la arquitectura del Mistral-Small-24B-Instruct-2501, un transformer decoder-only de aproximadamente 24B parámetros. No se dispone en la información proporcionada de detalles sobre el número de capas, dimensiones ocultas, mecanismo de atención ni ventana de contexto efectiva del modelo base. Tampoco se documentan los datos de entrenamiento originales de Mistral AI (composición del corpus, número de tokens, uso de RLHF o DPO), por lo que estos datos deben consultarse en la model card del modelo base.
 
-No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens o si se usó RLHF/DPO en el modelo base. El proceso de modificación es puramente post-entrenamiento, sin reentrenamiento adicional. El resultado es un modelo que no incorpora el comportamiento de rechazo en sus pesos, por lo que no requiere trucos de system prompt ni parches en tiempo de inferencia.
+La modificación introducida por ApolloRaines no consiste en un reentrenamiento, sino en una cirugía directa sobre los pesos ("weight surgery") mediante el framework jBlaze. Según la model card, el método identifica y edita la dirección de rechazo en el espacio de activaciones, de forma que el modelo deja de codificar la disposición a negarse a responder. El autor distingue su enfoque de la abliteration estándar de una sola dirección, que a su juicio elimina la respuesta superficial de rechazo pero deja intactas direcciones conductuales más profundas, dando lugar a reinterpretaciones de la petición, inyección de advertencias, omisiones estratégicas o reformulaciones más seguras. Como evidencia de retención de capacidades, la model card cita un resultado de MMLU del 77,89 % frente a una línea base de 76,84 % en el modelo Sharona (Qwen3.5-27B) tras seis fases de cirugía y cuantización GPTQ W4A16; se trata de una medición sobre otro modelo de la colección, no sobre este Mistral-Small-24B.
 
 ## Capacidades
 
-- Generación de texto conversacional y de instrucciones, con las mismas capacidades que el modelo base Mistral Small 3.
-- Razonamiento, matemáticas y generación de código, preservadas gracias a las restricciones de espacio nulo.
-- Function calling y soporte para agentes, heredado del modelo base (según la documentación de Mistral Small 3).
-- Capacidad de respuesta sin rechazos: el modelo no muestra negativas a peticiones que el original bloquearía, lo que lo hace útil para dominios donde se requiere una respuesta directa sin filtros de seguridad.
-- Multilingüe: aunque la ficha del modelo solo indica inglés, el modelo base soporta múltiples idiomas; sin embargo, la modificación no garantiza el mismo rendimiento en otros idiomas.
-- Compatible con la herramienta DeepswapLLM, que permite ejecutar el modelo en GPUs con memoria insuficiente mediante streaming de capas entre GPU, RAM y disco.
+- Generación de texto conversacional en inglés, como drop-in replacement del Mistral-Small-24B-Instruct-2501.
+- Eliminación declarada de la conducta de rechazo a nivel de pesos, sin necesidad de system prompt ni parches de inferencia.
+- Capacidad preservada, según el autor, para tareas generales del modelo base (razonamiento, código, matemáticas), aunque no se publican benchmarks específicos de este derivado.
+- Soporte de tool calling y function calling heredado del modelo base, no verificado de forma independiente en esta información.
+- Capacidades multilingües limitadas al inglés según el etiquetado del repositorio.
+- Orientación declarada a análisis de código hostil, revisión de exploits y reconstrucción de incidentes en contextos de seguridad defensiva.
 
 ## Casos de uso
 
-- Generación de contenido creativo sin restricciones: el modelo puede producir narrativa, poesía o guiones sin las limitaciones de seguridad del modelo original, útil para proyectos de escritura experimental.
-- Investigación en alineación y seguridad de IA: permite estudiar cómo se comporta un modelo sin mecanismos de rechazo, facilitando análisis comparativos sobre los efectos de la abliteración.
-- Desarrollo de asistentes conversacionales para dominios especializados (por ejemplo, medicina, derecho) donde el modelo base podría rechazar preguntas por considerarlas sensibles, aunque esto conlleva riesgos legales y éticos.
-- Pruebas de robustez y jailbreak: sirve como banco de pruebas para evaluar técnicas de mitigación de contenido dañino en modelos de lenguaje.
-- Integración en pipelines de generación de código donde se requiera una respuesta ininterrumpida, aunque el modelo base ya ofrece buen rendimiento en esta tarea.
-- Despliegue local en entornos con recursos limitados mediante cuantización GGUF o DeepswapLLM, permitiendo ejecutar el modelo en GPUs de consumo.
+- Análisis defensivo de malware: el modelo puede examinar muestras y artefactos de ataque sin las negativas que el autor atribuye a los modelos alineados, lo que facilita la reconstrucción de cadenas de intrusión en equipos de respuesta a incidentes.
+- Red-teaming de aplicaciones: útil para generar prompts adversariales y evaluar la robustez de filtros y clasificadores de contenido en pipelines propios.
+- Revisión de código de seguridad: análisis de exploits conocidos y PoC para auditorías internas, aprovechando la ausencia de rechazo sobre material sensible.
+- Investigación académica sobre alineación: estudio de cómo se codifica la negativa a responder en los pesos y de hasta qué punto es separable de la capacidad subyacente.
+- Evaluación de riesgos de modelos abliterated: comparación de tasas de rechazo y de degradación de capacidades frente al modelo base en un banco de pruebas controlado.
+- Despliegue local en entornos aislados: gracias a los pesos GGUF y a herramientas como DeepswapLLM, puede ejecutarse en hardware limitado para experimentación offline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones. Se desconoce si el proceso de modificación afecta al rendimiento en tareas estándar, aunque la técnica afirma preservar matemáticas, código y razonamiento.
+No se han publicado resultados de benchmarks específicos de este modelo en la información disponible. La model card cita un resultado de MMLU del 77,89 % frente a 76,84 % de línea base, pero corresponde al modelo Sharona (Qwen3.5-27B) de la misma colección, no a este Mistral-Small-24B. No se dispone de datos de MMLU, HumanEval, GSM8K ni de tasa de rechazo medidos sobre este derivado concreto.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos oficiales de hardware en la ficha del modelo.
-- Para inferencia en fp16 (safetensors), se estima un consumo de VRAM de aproximadamente 48 GB (23.57B parámetros × 2 bytes), lo que requiere GPUs como A100 80GB, H100 o varias RTX 4090 en paralelo.
-- Con cuantización GGUF (por ejemplo, Q4_K_M), el modelo podría caber en GPUs de 24 GB, como RTX 3090/4090, aunque no se detallan las cuantizaciones disponibles.
-- El autor recomienda el uso de DeepswapLLM para ejecutar el modelo en GPUs con memoria insuficiente, con un rendimiento hasta 4 veces superior a AirLLM.
-- Opciones de despliegue: transformers (con device_map="auto"), llama.cpp/Ollama (vía GGUF), vLLM o TGI (si son compatibles con el formato), y DeepswapLLM para entornos con memoria limitada.
+- VRAM estimada para inferencia en FP16: en torno a 47 GB solo para pesos (23,57B parámetros × 2 bytes), más overhead de activaciones y KV cache; se recomienda un mínimo de 48-80 GB según longitud de contexto.
+- GPU recomendadas para FP16: A100 80 GB, H100 80 GB, o múltiples GPU de 24 GB (RTX 4090) con reparto de capas.
+- Cuantización GGUF: permite reducir la huella a aproximadamente 14-16 GB en Q4_K_M y a unos 24-26 GB en Q8_0, lo que hace viable su ejecución en una RTX 4090 (24 GB) o en una RTX 3090 en cuantizaciones de 4 bits.
+- Opciones de despliegue: Transformers con `device_map="auto"`, llama.cpp y Ollama para GGUF, vLLM y TGI para safetensors en servidor; el autor promociona DeepswapLLM para streaming de capas entre GPU, RAM y disco.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Mistral-Small-24B-Instruct-Jbliterated | 23.57B | No disponible | Apache 2.0 | Hugging Face | Modificación sin rechazos del base |
-| Mistral-Small-24B-Instruct-2501 (base) | 23.57B | No disponible (se estima 128k, no confirmado) | Apache 2.0 | Hugging Face | Modelo original con rechazos |
-| Qwen2.5-24B-Instruct | 24B | 128k | Apache 2.0 | Hugging Face | Alternativa de 24B con soporte multilingüe y function calling |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Mistral-Small-24B-Instruct-Jbliterated | 23,57B | no disponible | Apache 2.0 | Derivado abliterated, solo inglés, sin benchmarks propios publicados |
+| mistralai/Mistral-Small-24B-Instruct-2501 | ~24B | no disponible | Apache 2.0 | Modelo base original, alineado, multilingüe según su model card |
+| Otros derivados abliterated de Mistral-Small | ~24B | no disponible | Apache 2.0 | Existen múltiples variantes comunitarias con métodos de edición distintos; no se dispone de comparación cuantitativa en esta información |
 
-La comparativa se limita a modelos de tamaño similar, pero no se dispone de datos de rendimiento para establecer una comparación cuantitativa. La principal diferencia del Jbliterated es la eliminación de comportamientos de rechazo, lo que no afecta a la arquitectura ni al tamaño.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo elimina los mecanismos de rechazo, lo que puede generar respuestas a contenido dañino, ilegal o no ético. Su uso en producción conlleva un alto riesgo de abuso y responsabilidad legal.
-- Solo está confirmado el soporte del idioma inglés; el rendimiento en otros idiomas no está garantizado.
-- No se han publicado evaluaciones de seguridad ni benchmarks de rendimiento, por lo que se desconoce el impacto real de la modificación en la calidad de las respuestas.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo en entornos de producción.
-- El modelo puede presentar alucinaciones o sesgos, al igual que el modelo base, pero al no tener filtros de rechazo, estos pueden manifestarse de forma más directa.
-- No se especifica la longitud de contexto soportada, lo que limita su uso en tareas que requieran ventanas largas.
+- Eliminación deliberada de salvaguardas: el modelo ha sido modificado para no rechazar peticiones, lo que incluye contenido dañino, ilegal o peligroso. Su uso en producción sin capas de moderación externas es desaconsejado.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual sobre este derivado; la cirugía de pesos puede afectar a calibración y coherencia de forma no documentada.
+- Idiomas: etiquetado únicamente para inglés; el rendimiento en castellano u otros idiomas no está verificado y probablemente sea inferior al del modelo base multilingüe.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor advierte que los pesos "pueden hacer daño tanto como bien" y que la mayoría de sus modelos públicos se liberan a fuerza parcial como prueba de concepto.
+- Contexto: no se documenta la longitud de contexto efectiva de este derivado; debe asumirse la del modelo base, no verificada aquí.
+- Procedencia y mantenimiento: repositorio de un autor individual con 0 likes y 604 descargas; sin garantías de soporte, actualizaciones ni auditoría independiente.
+- Uso responsable: adecuado para investigación en seguridad y entornos aislados; inadecuado para aplicaciones de cara al público sin filtros adicionales.
 
 ## Enlaces
 
-- [Hugging Face - ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated](https://huggingface.co/ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated)
-- [Repositorio de archivos del modelo](https://huggingface.co/ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated/tree/main)
-- [GitHub - DeepswapLLM](https://github.com/apolloraines/DeepswapLLM)
-- [GitHub - Inferless/Mistral-Small-24B-Instruct (modelo base)](https://github.com/inferless/Mistral-Small-24B-Instruct)
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated
+- Modelo base: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
+- Repositorio DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
+- Perfil del autor: https://www.linkedin.com/in/apollo-raines/

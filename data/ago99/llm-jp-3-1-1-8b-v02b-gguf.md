@@ -2,56 +2,54 @@
 
 ## Resumen
 
-`ago99/llm-jp-3.1-1.8b-v02b-GGUF` es una version cuantizada y afinada de forma no oficial del modelo japones `llm-jp/llm-jp-3.1-1.8b`, desarrollado originalmente por el Research and Development Center for Large Language Models (LLMC) del National Institute of Informatics (NII) de Japon. El autor de este repositorio, el usuario `ago99`, ha aplicado un ajuste fino adicional mediante LoRA (fusionado a escala 1.00 sobre una version previa v0.2a) y ha convertido el resultado a formato GGUF en cuantizacion Q4_K_M, con el objetivo de mejorar el seguimiento de instrucciones en japones, la concision de las respuestas, la comprension lectora y la estabilidad en generaciones de longitud media y larga.
+`ago99/llm-jp-3.1-1.8b-v02b-GGUF` es un derivado comunitario afinado del modelo `llm-jp/llm-jp-3.1-1.8b`, desarrollado por el autor independiente ago99. El modelo base fue creado por el Research and Development Center for Large Language Models del National Institute of Informatics (NII) de Japon, y este derivado anade entrenamiento adicional y ajuste con LoRA orientados a mejorar el seguimiento de instrucciones en japones, la concision de las respuestas, la comprension semantica y la estabilidad en generacion de formato medio y largo. No es una version oficial del proyecto LLM-jp.
 
-El modelo cuenta con aproximadamente 1.867 millones de parametros (1.8B) y una longitud de contexto declarada de 4096 tokens. Esta pensado para conversacion local ligera y seguimiento de instrucciones en japones, ejecutable en equipos de consumo gracias a su reducido tamano y a la cuantizacion Q4_K_M. Los idiomas declarados son japones (ja) e ingles (en). La licencia es Apache 2.0, lo que permite uso comercial, y el repositorio ocupa 1.2 GB.
+Se trata de un transformer decoder-only de aproximadamente 1.867 millones de parametros (1.8B) con una longitud de contexto de 4096 tokens y enfocado principalmente al idioma japones, con soporte secundario de ingles. El repositorio distribuye tanto el modelo fusionado en formato Hugging Face (safetensors, recomendado por el autor) como una build GGUF experimental en cuantizacion Q4_K_M con tokenizador UGM.
 
-Su relevancia actual radica en que ofrece una alternativa ligera, local y de codigo abierto para tareas en japones alli donde no se dispone de GPU de gran capacidad o se quiere evitar el envio de datos a servicios en la nube. Se trata, sin embargo, de un modelo experimental de comunidad, no respaldado ni certificado por el proyecto LLM-jp ni por el NII, y con limitaciones de conocimiento factual propias de su tamano.
+Su relevancia actual radica en dos aspectos: por un lado, ofrece una alternativa ligera para conversacion e instrucciones en japones en entornos locales con recursos limitados; por otro, documenta con detalle un problema tecnico relevante de conversion de tokenizadores Unigram con byte fallback a formato GGUF, lo que resulta de interes para quien trabaje con pipelines de cuantizacion de modelos japoneses.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only; etiquetado como `llama` en el repositorio (detalle de la arquitectura del modelo base no disponible) |
+| Arquitectura | Transformer decoder-only (derivado de LLM-jp 3.1) |
 | Parametros totales | 1.867.614.208 (aproximadamente 1.8B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens (segun la model card del GGUF) |
-| Tipos de cuantizacion | Q4_K_M en el archivo `v02b-Q4_K_M.gguf` |
-| Idiomas soportados | Japones (ja) e ingles (en) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantizacion | Q4_K_M (GGUF); F16 GGUF mencionado en las pruebas; modelo fusionado en safetensors sin cuantizar |
+| Idiomas soportados | japones (principal), ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | safetensors (modelo fusionado Hugging Face), GGUF (build experimental UGM) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `llm-jp/llm-jp-3.1-1.8b` forma parte de la serie LLM-jp-3.1 del NII, entrenada mediante preentrenamiento continuo basado en *Instruction Pre-Training*, una tecnica que refuerza la capacidad de seguir instrucciones continuando el preentrenamiento sobre una coleccion amplia de pares instruccion-respuesta. La serie LLM-jp-3, liberada desde septiembre de 2024, emplea el corpus `llm-jp-corpus v3` y abarca modelos densos de distintos tamanos (150M, 440M, 980M, 1.8B, 3.7B, 7.2B, 13B y 172B). El detalle concreto de la arquitectura (numero de capas, cabezas de atencion o tipo de atencion) no esta disponible en la informacion proporcionada.
+El modelo es un transformer decoder-only de aproximadamente 1.8B parametros heredado de `llm-jp/llm-jp-3.1-1.8b`. Sobre esa base, el autor realizo entrenamiento adicional y ajuste fino con LoRA orientado a cinco objetivos declarados: mejor seguimiento de instrucciones en japones, respuestas japonesas mas concisas, comprension lectora y semantica, estabilidad de respuesta y comportamiento en generacion de formato medio y largo. El adaptador LoRA final de la version v0.2b se fusiono en el modelo afinado v0.2a con escala 1.00. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
-Sobre esa base, el autor de este repositorio realizo un ajuste fino por etapas: primero una version v0.2a, sobre la que despues se entreno un adaptador LoRA v0.2b orientado a mejorar el seguimiento de instrucciones en japones, la concision, la lectura y comprension semantica, la estabilidad de respuesta y el comportamiento en generacion media y larga. Este adaptador se fusiono sobre el modelo v0.2a a escala 1.00 y el modelo resultante se convirtio a GGUF y se cuantizo a Q4_K_M. Por tanto, el repositorio contiene pesos derivados y modificados, no los pesos originales del modelo LLM-jp. No se dispone de informacion sobre el numero de tokens de entrenamiento adicional, la composicion del dataset de ajuste ni si se emplearon tecnicas como RLHF o DPO.
+La innovacion tecnica mas destacable documentada es la relativa al tokenizador. El tokenizador del modelo base es un Unigram de la libreria `tokenizers` de Hugging Face con byte fallback; su conversion como tokenizador `llama` estandar producia desajustes de tokenizacion (por ejemplo, `なさい / 。` frente a `なさ / い。`). El autor retiro la build GGUF original y publico una conversion corregida basada en UGM con tokenizador `t5` de 99.584 tokens, que reproduce exactamente los IDs del tokenizador de Hugging Face en el prompt de prueba (42 tokens en ambos casos). Esta build corregida requiere un runtime de llama.cpp con el parche de byte fallback UGM aplicado.
 
 ## Capacidades
 
-- Generacion de texto en japones e ingles, orientada a conversacion y seguimiento de instrucciones.
-- Seguimiento de instrucciones en japones, con enfasis declarado en respuestas concisas.
-- Comprension lectora y semantica basica (lectura y respuesta sobre texto dado).
-- Control de longitud de respuesta (evaluacion interna de control de longitud de 10/10).
-- Generacion de texto de longitud media y larga con mejoras declaradas en estabilidad (colapso en texto largo de aproximadamente 1/10 en pruebas internas).
-- Capacidades multilingues limitadas a japones e ingles; el modelo esta optimizado primordialmente para japones.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto en japones con enfasis en respuestas concisas y seguimiento estricto de instrucciones.
+- Comprension lectora y semantica de textos en japones.
+- Generacion de formato medio y largo con control de longitud (la prueba interna de control de longitud obtuvo 10/10).
+- Conversacion multi-turno e instrucciones directas mediante un formato de prompt especifico en japones.
+- Soporte secundario de ingles, aunque el foco principal es el japones.
+- Respuestas de conocimiento general (la prueba interna de conocimiento obtuvo 257/300).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso
 
-- Asistente conversacional local en japones: puede gestionar interacciones de varios turnos dentro de su ventana de 4096 tokens, ejecutandose en un portatil sin GPU dedicada gracias a su tamano de 1.8B y cuantizacion Q4_K_M.
-- Generacion de respuestas cortas y concisas en japones: adecuado para formularios, respuestas de FAQ o resumenes breves, donde su orientacion a la concision y el control de longitud resultan utiles.
-- Clasificacion y etiquetado de texto en japones: uso como motor de inferencia ligero para categorizar tickets, correos o comentarios, integrable en pipelines locales mediante llama.cpp.
-- Experimentacion e investigacion en entornos academicos: permite estudiar tecnicas de ajuste fino por LoRA y cuantizacion GGUF sobre un modelo japones pequeno sin grandes recursos de computo.
-- Prototipado rapido de aplicaciones NLP en japones: util como paso intermedio antes de escalar a modelos mayores (7B o superiores) cuando el presupuesto de hardware es limitado.
-- Despliegue en el borde o en entornos air-gapped: al ser un GGUF ejecutable con llama.cpp y no requerir conexion externa, encaja en escenarios donde los datos no pueden salir de la maquina.
-- Educacion y demostraciones: modelo de bajo coste para mostrar el comportamiento de un LLM japones en talleres o clases, dada su ligereza y su licencia permisiva.
+- Asistente conversacional local en japones: el modelo esta disenado para conversacion ligera e instrucciones en japones con 4096 tokens de contexto, adecuado para ejecutarse en equipos de gama consumer con cuantizacion Q4_K_M.
+- Respuestas concisas en interfaces de chat: el ajuste prioriza respuestas breves y estables, util para asistentes embebidos donde la latencia y la verbosidad importan.
+- Procesamiento de texto japones en pipelines locales: comprension lectora y resumen de documentos cortos o medianos en japones sin depender de APIs externas.
+- Prototipado e investigacion sobre tokenizadores: el repositorio documenta el proceso de conversion Unigram a GGUF con byte fallback, util como referencia para quien cuantice modelos japoneses.
+- Educacion y experimentacion: modelo ligero y de licencia Apache 2.0 para ensenar fundamentos de fine-tuning, fusion de LoRA y cuantizacion.
+- Generacion controlada de longitud: gracias al control de longitud validado internamente, puede emplearse en tareas que requieren respuestas de extension acotada, como resumenes o fichas breves.
+- Entornos con recursos limitados: al ser un modelo de 1.8B, permite despliegue en GPU consumer y en CPU con cuantizacion, para tareas de bajo volumen.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor proporciona unicamente mediciones internas experimentales, realizadas antes de la cuantizacion GGUF, que no deben interpretarse como puntuaciones de referencia estandarizadas:
+No se han publicado resultados de benchmarks estandarizados en la informacion disponible. El autor proporciona unicamente mediciones internas experimentales del modelo fusionado antes de la cuantizacion GGUF:
 
 | Prueba interna | Resultado |
 |---|---|
@@ -60,43 +58,41 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 | Strict instruction test | 16 / 20 |
 | Length control | 10 / 10 |
 | Long-form collapse | aproximadamente 1 / 10 |
+| Sanity check posterior (10 preguntas) | 9 / 10 |
+
+Estas cifras son mediciones internas del autor y no deben interpretarse como puntuaciones de benchmarks estandarizados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en Q4_K_M, un modelo de 1.8B ocupa aproximadamente 1,1-1,2 GB de pesos (el repositorio completo pesa 1,2 GB), por lo que suele bastar con entre 2 y 3 GB de VRAM para inferencia comoda con algo de contexto.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060 o superiores); tambien es viable en GPUs profesionales como A100 o H100, aunque sobredimensionadas para este tamano.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en CPU (con velocidad reducida) y en sistemas con memoria unificada tipo Apple Silicon.
-- Opciones de despliegue: llama.cpp y sus envoltorios (llama-cpp-python, Ollama, LM Studio, text-generation-webui) al ser formato GGUF; el soporte en vLLM o TGI para GGUF puede ser limitado o parcial.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 3.7 GB en FP16 para los 1.867M de parametros, y en torno a 1.1-1.5 GB en Q4_K_M (estimacion a partir del tamano del modelo, no publicada por el autor).
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM deberia poder ejecutar la version cuantizada; para FP16 se recomienda 6-8 GB o mas.
+- Cabe en GPU consumer: si, incluidas tarjetas de gama media y baja con cuantizacion Q4_K_M.
+- Opciones de despliegue: Transformers (via Hugging Face, opcion recomendada por el autor), llama.cpp con el parche UGM de byte fallback, y text-generation-inference segun las etiquetas del repositorio. La build UGM no es compatible con el runtime estandar de LM Studio probado por el autor.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| `ago99/llm-jp-3.1-1.8b-v02b-GGUF` (este modelo) | 1.8B | 4096 | ja, en | Apache 2.0 | GGUF (Q4_K_M) |
-| `llm-jp/llm-jp-3.1-1.8b` (modelo base) | 1.8B | No disponible | ja, en | Apache 2.0 | safetensors |
-| `llm-jp/llm-jp-3-1.8b` (version anterior de la serie) | 1.8B | No disponible | ja, en | No disponible | No disponible |
-| Alternativas de otros desarrolladores (p. ej. modelos densos de ~1-2B) | No disponible | No disponible | No disponible | No disponible | No disponible |
+| ago99/llm-jp-3.1-1.8b-v02b-GGUF | 1.8B | 4096 | ja, en | Apache 2.0 | Derivado comunitario con LoRA; GGUF UGM experimental |
+| llm-jp/llm-jp-3.1-1.8b | 1.8B | no disponible en la informacion | ja, en | Apache 2.0 | Modelo base oficial del NII |
+| Otros modelos de ~1.8B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-No se dispone de datos de benchmark comparativos publicados en la informacion proporcionada que permitan situar este modelo frente a alternativas de tamano similar.
+No se dispone de datos de rendimiento comparativo con alternativas en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo de 1.8B parametros: el conocimiento factual y la cobertura tematica son limitados en comparacion con modelos mayores.
-- Riesgo de alucinacion: puede generar informacion incorrecta, especialmente sobre entidades ficticias o desconocidas, y hacerlo con aparente seguridad.
-- Las explicaciones largas pueden contener errores factuales; el propio autor recomienda verificacion externa o recuperacion de informacion para datos actuales.
-- No debe utilizarse para decisiones medicas, legales, financieras, de seguridad o de alto riesgo.
-- Sesgos conocidos: no disponible (no se documentan sesgos especificos en la informacion proporcionada).
-- Limitaciones de idioma: optimizado para japones; el soporte de ingles puede ser menos fiable y otras lenguas no estan soportadas de forma declarada.
-- Limitacion de contexto: 4096 tokens, inferior a la de muchos modelos contemporaneos, lo que restringe conversaciones o documentos largos.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se trata de un derivado no oficial; el proyecto LLM-jp y el NII no avalan ni certifican este modelo.
-- Advertencia para produccion: es un modelo experimental de comunidad, con 0 descargas y 1 like en el momento de la consulta; conviene validarlo exhaustivamente antes de cualquier uso en produccion.
+- Modelo pequeno de aproximadamente 1.8B parametros: precision factual limitada en comparacion con modelos mayores.
+- Riesgo de alucinacion, especialmente con entidades ficticias o desconocidas; puede generar informacion incorrecta con seguridad.
+- Las explicaciones largas pueden contener errores factuales.
+- La build GGUF UGM experimental depende de un runtime de llama.cpp con el parche de byte fallback UGM, que no es universal; no es compatible con el runtime estandar de LM Studio probado por el autor.
+- El autor recomienda usar el modelo fusionado con Transformers como opcion mas fiable.
+- El modelo esta enfocado al japones; el rendimiento en otros idiomas, incluido el ingles, es secundario y no esta cuantificado.
+- No debe utilizarse para decisiones medicas, legales, financieras o de seguridad critica.
+- Es un derivado no oficial: el proyecto LLM-jp y el NII no respaldan ni certifican este modelo.
+- Licencia Apache 2.0, que permite uso comercial, pero el autor declina responsabilidad sobre la idoneidad de las salidas.
 
 ## Enlaces
 
-- Repositorio Hugging Face de este modelo: https://huggingface.co/ago99/llm-jp-3.1-1.8b-v02b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ago99/llm-jp-3.1-1.8b-v02b-GGUF
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-3.1-1.8b
-- Serie LLM-jp-3 (version 1.8B anterior): https://huggingface.co/llm-jp/llm-jp-3-1.8b
-- Anuncio de la serie LLM-jp-3.1 Instruct4 (LLM-jp / NII): https://llm-jp.nii.ac.jp/en/news/release-of-llm-jp-3-1-series-instruct4/
-- Directorio de modelos GGUF (Local AI Zone): https://local-ai-zone.github.io/
-- Seguimiento de actualizaciones de LLM (octubre de 2026): https://lmmarketcap.com/llm-updates

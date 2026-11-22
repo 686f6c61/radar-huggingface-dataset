@@ -58,16 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "drofn/SenseNova-Loop-9B-8GB-GGUF · Hugging Face",
-      "url": "https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF",
-      "snippet": "Text Generation model with 9B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Sensenova Loop 9b 8gb Gguf - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/drofn/sensenova-loop-9b-8gb-gguf",
-      "snippet": "Registry entry for model Sensenova Loop 9b 8gb Gguf; source metadata pending."
-    }
-  ]
+  "sources": []
 }

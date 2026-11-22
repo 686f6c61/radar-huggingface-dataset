@@ -2,46 +2,51 @@
 
 ## Resumen
 
-xor-lite-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo base `juspay/xor-lite`, a su vez construido sobre `openbmb/MiniCPM5-2B`, un modelo de lenguaje de aproximadamente 2,5 mil millones de parámetros con arquitectura Llama. El repositorio ha sido publicado por el usuario tinyopsec y ofrece trece variantes de cuantización que van desde F16 (precisión completa) hasta Q2_K, generadas con llama.cpp, lo que permite ejecutar el modelo en hardware de consumo e incluso en dispositivos modestos.
+xor-lite-GGUF es una colección de cuantizaciones en formato GGUF del modelo base `juspay/xor-lite`, publicado por el usuario `tinyopsec` en Hugging Face. El modelo subyacente es un transformer de arquitectura Llama derivado de `openbmb/MiniCPM5-2B`, con aproximadamente 2.516 millones de parámetros (unos 2,5B). Esta publicación no contiene el adaptador LoRA ni la cabeza de lectura ("pointer readout head") que forman parte del modelo xor-lite original: incluye únicamente el modelo base, sin fusionar el adaptador.
 
-Es importante destacar que este GGUF contiene únicamente el modelo base: el adaptador LoRA y la cabeza de lectura (readout head) que caracterizan a xor-lite no están fusionados y deben aplicarse por separado siguiendo las instrucciones del repositorio original. Por tanto, tal cual está distribuido, se trata de un MiniCPM5-2B cuantizado, no del modelo xor-lite completo con sus capacidades específicas.
+El interés de esta ficha reside en su utilidad práctica: al ofrecer el modelo en 13 niveles de cuantización (desde F16 hasta Q2_K), permite desplegar un modelo de ~2,5B en hardware de consumo modesto mediante llama.cpp, Ollama, LM Studio o koboldcpp. Es relevante para desarrolladores que quieran experimentar con la arquitectura MiniCPM5 en local sin necesidad de GPU de gama alta.
 
-Su relevancia radica en facilitar la ejecución local y offline de un modelo pequeño y eficiente con licencia Apache 2.0, compatible con runtimes ampliamente utilizados como llama.cpp, Ollama, LM Studio o koboldcpp. La longitud de contexto exacta no está disponible en la información proporcionada, aunque la familia MiniCPM se caracteriza históricamente por soportar contextos amplios para su tamaño.
+No obstante, conviene subrayar una advertencia importante: al tratarse de la versión base sin el adaptador, el comportamiento del modelo puede diferir sustancialmente del xor-lite completo. La model card no documenta idiomas soportados, datos de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (transformer decoder) |
+| Arquitectura | Transformer tipo Llama (base: MiniCPM5-2B) |
 | Parametros totales | 2.516.756.480 (~2,5B) |
-| Parametros activos | no disponible (no se indica arquitectura MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (generado con llama.cpp); repo de 24,6 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es MiniCPM5-2B, un transformer decoder con arquitectura Llama de unos 2,5 mil millones de parámetros, entrenado por OpenBMB. Sobre este base, el proyecto xor-lite de Juspay añade un adaptador LoRA y una cabeza de lectura (readout head) que se distribuyen por separado; en este repositorio GGUF ninguno de los dos componentes está fusionado, por lo que el comportamiento del modelo corresponde al del MiniCPM5-2B base.
+El modelo base es un transformer decoder-only de arquitectura Llama, derivado de `openbmb/MiniCPM5-2B`, con unos 2,5B parámetros. La model card de esta publicación GGUF no detalla la composición del dataset de entrenamiento, el número de tokens ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones arquitectónicas específicas más allá de la base MiniCPM5.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación (RLHF, DPO) en la documentación proporcionada. Como innovación técnica destacable, el propio esquema de xor-lite (LoRA + readout head separados del base) permite modular el modelo sin modificar los pesos originales, aunque los detalles de su funcionamiento no están descritos en la model card.
+La información disponible indica que xor-lite (el modelo upstream de juspay) se distribuye con un adaptador LoRA y una cabeza de lectura ("pointer readout head") separados, que deben aplicarse según las instrucciones del repositorio original. Esta publicación GGUF contiene exclusivamente el modelo base, por lo que las capacidades específicas del xor-lite completo no están garantizadas en estos ficheros. Las cuantizaciones se generaron con llama.cpp y cubren desde F16 (5,0 GB) hasta Q2_K.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el repositorio está etiquetado como `conversational` y con pipeline de `text-generation`.
-- Ejecucion local y offline: gracias al formato GGUF puede correr en CPU y GPU de consumo mediante llama.cpp y runtimes compatibles.
-- Base para el sistema xor-lite: admite la aplicacion posterior del adaptador LoRA y la readout head de `juspay/xor-lite` para recuperar las capacidades especificas de ese proyecto.
-- No hay informacion disponible sobre tool calling, capacidades de agentes, vision, audio ni modo de razonamiento extendido.
+- Generación de texto conversacional (etiqueta `conversational` en Hugging Face).
+- Compatible con endpoints estándar de inferencia (`endpoints_compatible`).
+- Ejecutable en cualquier runtime compatible con GGUF: llama.cpp, Ollama, LM Studio, koboldcpp.
+- Capacidades específicas de tool calling, agentes o razonamiento multi-paso: no disponibles en la documentación.
+- Capacidades multilingües: no disponibles (no se declaran idiomas).
+- Capacidades de visión o audio: no disponibles.
+- Modo "thinking": no disponible.
+- Nota: al no incluir el adaptador LoRA ni la cabeza de lectura de xor-lite, las capacidades del modelo completo pueden no estar presentes.
 
 ## Casos de uso
 
-- Prototipado local de LLMs pequeños: con la variante Q4_K_M (recomendada por el autor) el modelo ocupa unos 1,5-2 GB, lo que permite probarlo en un portátil sin GPU dedicada y iterar rápidamente sobre prompts.
-- Integracion en aplicaciones con llama.cpp: el comando `./llama-cli -m model-Q4_K_M.gguf -p "..." -n 256` muestra el uso directo; puede integrarse en backends mediante la API de llama.cpp o bindings de Python.
-- Asistentes offline en dispositivos de borde: las cuantizaciones Q3 y Q2_K reducen el footprint por debajo de 1,5 GB, adecuado para ejecución en CPU en entornos sin conectividad.
-- Investigacion sobre adaptadores LoRA: al tratarse de un base sin fusionar, es útil para experimentar con la carga de adaptadores LoRA en llama.cpp y medir su impacto sobre MiniCPM5-2B.
-- Generacion de texto en pipelines de datos: puede usarse como componente ligero de resumen, reescritura o clasificación generativa en flujos de procesamiento donde el coste por token importa.
-- Evaluacion comparativa de cuantizaciones: con trece variantes desde F16 hasta Q2_K, el repositorio es un buen banco de pruebas para medir la degradación de calidad frente al ahorro de memoria en un modelo de 2,5B.
+- Prototipado local en hardware de consumo: usar `model-Q4_K_M.gguf` (recomendado por el autor) con llama.cpp u Ollama para probar un modelo de ~2,5B en un portátil con GPU modesta o incluso CPU.
+- Experimentación con la arquitectura MiniCPM5: investigadores que quieran estudiar el comportamiento del modelo base sin el adaptador pueden cargar las distintas cuantizaciones y comparar calidad frente a tamaño.
+- Evaluación de cuantizaciones: el repositorio ofrece 13 niveles, lo que permite medir la degradación de calidad entre F16 y Q2_K en tareas concretas de generación de texto.
+- Generación de texto conversacional ligera: integrable en aplicaciones de chat de bajo coste donde la latencia y el consumo de memoria son críticos.
+- Despliegue en entornos con recursos limitados: el fichero Q2_K permite ejecutar el modelo en dispositivos con muy poca VRAM o RAM, útil para demos y pruebas de concepto.
+- Base para fine-tuning posterior: al ser el modelo base sin adaptador, puede servir como punto de partida para entrenar adaptadores propios con herramientas compatibles con GGUF o reconvertir a otros formatos.
+- Integración en pipelines de CI/CD para pruebas de regresión de modelos: usar cuantizaciones pequeñas para validar respuestas en tests automatizados sin coste de GPU.
 
 ## Benchmarks y rendimiento
 
@@ -49,35 +54,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: F16 ocupa unos 5,0 GB; Q8_0 alrededor de 2,7 GB; Q4_K_M (recomendada) aproximadamente 1,5-1,7 GB; Q2_K por debajo de 1 GB. A estas cifras hay que sumar la memoria del contexto (KV cache).
-- Como es un modelo de ~2,5B, cabe sobradamente en GPUs de consumo: cualquier tarjeta con 4 GB de VRAM o mas (por ejemplo RTX 3060, RTX 4060 o superiores) ejecuta las variantes de 4 bits con holgura, e incluso integraa gráficas modernas pueden manejar las cuantizaciones mas agresivas en CPU.
-- En CPU: perfectamente viable con llama.cpp gracias a la cuantizacion k-quants; el rendimiento sera modesto pero util para un modelo de este tamano.
-- Opciones de despliegue: llama.cpp (nativo del formato), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. No hay menccion a vLLM o TGI, orientados a pesos safetensors.
-- Latencia y throughput: no disponibles; al ser un modelo de 2,5B cuantizado, se espera inferencia rapida incluso en hardware modesto, pero no hay cifras publicadas.
+- VRAM estimada (inferencia, aproximada según tamaño de fichero):
+  - F16: ~5,0 GB de pesos; ~6-7 GB de VRAM con overhead de contexto.
+  - Q8_0: ~2,7 GB de pesos; ~4 GB de VRAM.
+  - Q5_K_M: ~1,8 GB de pesos; ~3 GB de VRAM.
+  - Q4_K_M (recomendado): ~1,5 GB de pesos; ~2,5 GB de VRAM.
+  - Q2_K: ~1,0 GB de pesos; ~2 GB de VRAM.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM (RTX 3050, RTX 4060, GTX 1660, etc.). Para F16 se recomienda 8 GB o más. GPU de datacenter (A100, H100) no son necesarias para este tamaño.
+- Cabe en GPU consumer: sí, en la mayoría de tarjetas modernas con 4 GB o más; también puede ejecutarse en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la documentación. Al ser un modelo de ~2,5B, se espera una latencia baja en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Contexto | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyopsec/xor-lite-GGUF (este) | ~2,5B | GGUF (13 cuantizaciones) | Apache 2.0 | no disponible | Base sin adaptador LoRA ni readout head |
-| openbmb/MiniCPM5-2B (base original) | ~2,5B | safetensors | no disponible en la ficha | no disponible | Pesos originales sin cuantizar |
-| juspay/xor-lite (upstream) | ~2,5B + LoRA | safetensors (adaptador) | no disponible | no disponible | Incluye LoRA y readout head; base de este repo |
+| xor-lite-GGUF (esta ficha) | ~2,5B | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| openbmb/MiniCPM5-2B (base) | ~2,5B | no disponible | no disponible | safetensors | Hugging Face |
+| juspay/xor-lite (upstream) | ~2,5B | no disponible | no disponible | no disponible | Hugging Face |
 
-No se han identificado alternativas de terceros con datos comparables suficientes en la informacion proporcionada; como categoria, compite con otros modelos ligeros de ~2-3B distribuidos en GGUF para ejecucion local (por ejemplo Qwen2.5-3B o Gemma 2 2B), aunque no se dispone de cifras de rendimiento para una comparacion cuantitativa.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Advertencia critica del autor: este GGUF contiene solo el modelo base. El adaptador LoRA y la readout head de xor-lite no estan incluidos ni fusionados; usar el modelo sin ellos no reproducira el comportamiento de xor-lite completo.
-- Sesgos conocidos: no documentados; al heredar de MiniCPM5-2B, hereda potencialmente los sesgos de sus datos de entrenamiento, no detallados en la ficha.
-- Riesgo de alucinacion: tipico de modelos de lenguaje de 2,5B; sin benchmarks publicados no puede cuantificarse.
-- Longitud de contexto e idiomas soportados: no disponibles en la documentacion, lo que dificulta planificar aplicaciones con documentos largos o en idiomas especificos.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base openbmb/MiniCPM5-2B y del repositorio upstream juspay/xor-lite para usos en produccion.
-- Repositorio de comunidad con muy poca traccion (377 descargas, 0 likes) y sin model card tecnica detallada: se recomienda validacion propia antes de uso en produccion.
-- Las cuantizaciones de 2-3 bits (Q2_K, Q3_*) pueden degradar apreciablemente la calidad de generacion respecto a F16.
+- El repositorio contiene solo el modelo base: el adaptador LoRA y la cabeza de lectura de xor-lite no están incluidos y deben aplicarse por separado. El comportamiento puede diferir del modelo completo.
+- No se documentan idiomas soportados; el rendimiento multilingüe es incierto.
+- No se documenta la longitud de contexto; puede ser limitada y no adecuada para tareas de contexto largo.
+- Riesgo de alucinación inherente a modelos de ~2,5B, especialmente en tareas de razonamiento complejo.
+- No hay resultados de benchmarks publicados que permitan evaluar la calidad real del modelo.
+- Las cuantizaciones agresivas (Q2_K, Q3_K_S) pueden degradar notablemente la calidad de generación.
+- Licencia Apache 2.0 permite uso comercial, pero al derivar de MiniCPM5-2B conviene verificar las condiciones del modelo base upstream.
+- El autor de la publicación GGUF (`tinyopsec`) no es el autor original del modelo; la trazabilidad y soporte dependen de terceros.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/tinyopsec/xor-lite-GGUF
-- Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
-- Proyecto upstream con el adaptador LoRA y readout head: https://huggingface.co/juspay/xor-lite
-- No se han encontrado enlaces a papers, blogs, demos ni repositorios adicionales en la informacion disponible.
+- Repositorio GGUF: https://huggingface.co/tinyopsec/xor-lite-GGUF
+- Modelo upstream: https://huggingface.co/juspay/xor-lite
+- Modelo base original: https://huggingface.co/openbmb/MiniCPM5-2B

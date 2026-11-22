@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "dhhieu114/vieneu-v3-turbo-enhanced",
+  "slug": "dhhieu114-vieneu-v3-turbo-enhanced",
+  "author": "dhhieu114",
+  "url": "https://huggingface.co/dhhieu114/vieneu-v3-turbo-enhanced",
+  "created_at": "2026-11-22T01:03:08.000Z",
+  "updated_at": "2026-11-22T01:22:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 546341355,
+  "storage_human": "546 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

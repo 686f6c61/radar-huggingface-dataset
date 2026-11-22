@@ -2,125 +2,101 @@
 
 ## Resumen
 
-`semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob` es un modelo de lenguaje de investigación publicado por el usuario `dimitarpg13` dentro de la familia Semantic Simulation (generación 3), una línea de modelos de lenguaje "conservativos" que sustituyen la atención por dinámica física: un potencial escalar, geometría riemanniana (métrica de Jacobi) y un integrador BAOAB sobre un espacio de Fock. Este ejemplar concreto es el brazo de **primer orden** (FO-b) del par entrenado sobre código Python, es decir, la variante en la que los modos rígidos se relajan exactamente y no existe variable de velocidad ni inercia.
+`semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob` es un modelo de lenguaje de investigación desarrollado por dimitarpg13 dentro del proyecto SemSimula, una línea de trabajo que explora modelos de lenguaje "conservativos" basados en mecánica lagrangiana y potenciales escalares en lugar de la atención transformer convencional. Este checkpoint concreto es el brazo de primer orden (FO-b, *first-order gradient flow*) de un par experimental entrenado sobre código Python, y su gemelo de segundo orden es `semsimula-ladder-live-code-d384-l2-none-norc-sr2`. El objetivo del par es aislar si la dinámica de segundo orden (velocidad e inercia) aporta algo frente a un flujo de gradiente de primer orden entrenado con exactamente los mismos datos y presupuesto.
 
-El modelo resuelve una pregunta experimental acotada: si el núcleo conservativo de Semantic Simulation necesita dinámica de segundo orden o si un flujo de gradiente de primer orden, entrenado con los mismos datos y el mismo calendario, rinde igual. La respuesta sobre código es negativa: el primer orden se queda un 9,2% por detrás de su gemelo de segundo orden (perplejidad 6,55 frente a 6,00) y un 32,0% por detrás de un GPT-2 emparejado (d=384, L=8), que baja a 4,96 con los mismos tokens.
+La arquitectura es explícitamente no-transformer y sin atención, con inferencia de memoria constante, un potencial gaussiano anisotrópico y formulación en espacio de Fock con integración BAOAB y geometría riemanniana (métrica de Jacobi). El modelo tiene una dimensión d=384 con L=2 y se entrenó sobre exactamente 315.392.000 tokens de CodeParrot clean en una única sesión de 19.250 pasos. Su resultado principal es una perplejidad de validación de 6,55 (bloque 512) frente a 6,00 de su gemelo de segundo orden, es decir, un 9,2% por detrás, la mayor brecha observada en cualquier corpus del estudio.
 
-Es relevante ahora porque forma parte de un estudio pre-registrado, con presupuesto de tokens igualado (315.392.000 tokens) y evaluaciones emparejadas paso a paso, que documenta de forma explícita dónde se pierde el rendimiento: en los identificadores recordados desde lejos. No es un modelo para producción, sino un artefacto de ablación con pesos PyTorch, licencia CC BY 4.0 y cero descargas en el momento de la consulta.
+La relevancia es fundamentalmente metodológica: se trata de un experimento pre-registrado de ablación de mecanismo, no de un modelo destinado a producción. Sirve para investigadores que estudian alternativas a la atención, dinámicas de entrenamiento físicamente informadas y el papel del orden de la dinámica en modelos generativos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No transformer y sin atención (attention-free); modelo de lenguaje conservativo con potencial escalar gaussiano anisotrópico, dinámica de primer orden (flujo de gradiente), espacio de Fock / PARFLM, integrador BAOAB, geometría riemanniana con métrica de Jacobi |
-| Parametros totales | No disponible (el identificador indica dimensión de modelo d=384; el recuento de parámetros no se publica) |
-| Parametros activos | No aplica (no es un MoE) |
-| Longitud de contexto | No disponible; entrenado con bloques de 512 tokens |
-| Tipos de cuantizacion | No disponible (solo se publican pesos PyTorch; no se documentan GGUF, AWQ, GPTQ ni similares) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | CC BY 4.0 |
-| Formato de pesos | PyTorch (library_name: pytorch); repositorio de 0,3 GB; no se indica safetensors ni GGUF |
+| Arquitectura | No-transformer, sin atención; modelo de lenguaje conservativo (scalar potential, dinámica lagrangiana, espacio de Fock, potencial gaussiano anisotrópico, integrador BAOAB, métrica de Jacobi) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (entrenado y evaluado con bloques de 512 tokens) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (inglés) |
+| Licencia | cc-by-4.0 |
+| Formato de pesos | no disponible (librería pytorch; repo de 0,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es deliberadamente no convencional: no hay transformer ni mecanismo de atención. El modelo se formula como un sistema conservativo con un potencial escalar (gaussiano anisotrópico) sobre el que se integra un flujo, en este caso de **primer orden** (etiqueta FO-b, "true first-order gradient flow"), con los modos rígidos relajados de forma exacta y sin variable de velocidad. El integrador es BAOAB y la geometría subyacente es riemanniana, con métrica de Jacobi y geodésicas; el espacio de estados se describe como espacio de Fock (PARFLM). Una consecuencia práctica de este diseño es la inferencia con memoria constante, sin la curva cuadrática en longitud de secuencia típica de la atención.
+El modelo pertenece a la familia SemSimula "generation 3" y se describe como un modelo de lenguaje conservativo: en lugar de atención sobre tokens, la dinámica se define mediante un potencial escalar y flujos de gradiente, con formulación en espacio de Fock y un potencial gaussiano anisotrópico. La variante `fob` del nombre indica *first-order*: las modas rígidas se relajan de forma exacta y no existe variable de velocidad en ningún punto de la red, en contraste con el gemelo de segundo orden. La inferencia se caracteriza por memoria constante, sin el crecimiento cuadrático típico de la atención. El integrador empleado es BAOAB, con geometría riemanniana basada en la métrica de Jacobi.
 
-El entrenamiento usa exactamente **315.392.000 tokens** (19.250 pasos × batch 32 × bloque 512) en una sola sesión de 5,65 horas, sobre Python de CodeParrot con cada nivel de indentación de cuatro espacios convertido en un tabulador. El calendario es WSD sobre 16.250 pasos y después 3.000 pasos al learning rate suelo, con la curva de learning rate de TinyStories. Ambos gemelos del par arrancan en el paso 0, semilla 0 y los mismos batches, lo que permite comparación emparejada. No se documenta RLHF, DPO ni ajuste por instrucciones. El autor reporta salud de ejecución: 0 activaciones del watchdog, norma de gradiente con mediana 0,67 y máximo 1,83 (en warmup), monitor de fuga SCAF limpio en las 4 auditorías y sonda de fuga entrenada limpia en el paso 10.000.
+El entrenamiento usó exactamente 315.392.000 tokens (19.250 pasos × 32 × 512) de CodeParrot clean en una sola sesión de 5,65 horas, con el schedule WSD de la escalera durante 16.250 pasos y 3.000 pasos adicionales al learning rate suelo, siguiendo la curva de TinyStories. El preprocesado del código Python convierte cada nivel de indentación de cuatro espacios en un tabulador. Ambos gemelos parten del paso 0 con semilla 0 y los mismos batches, lo que permite comparaciones por paso pareadas. No se menciona RLHF ni DPO; el entrenamiento es de modelado de lenguaje puro con presupuesto de tokens igualado entre brazos.
 
 ## Capacidades
 
-- Generación de texto autoregresiva restringida en la práctica a código Python (predicción del siguiente token sobre CodeParrot clean).
-- Modelado de dependencias léxicas: el propio estudio mide que el modelo localiza los identificadores previos igual de bien que su gemelo de segundo orden, pero hace menos con ellos; el déficit crece con la distancia a la aparición anterior.
-- Inferencia con memoria constante gracias al diseño sin atención (según los tags del autor: `attention-free`, `constant-memory-inference`).
-- Capacidad multilingüe: no disponible; solo inglés (`en`), con código fuente Python como dominio.
-- Tool calling / function calling: no documentado.
-- Uso como agente o razonamiento multi-paso: no documentado.
-- Modo "thinking", visión o audio: no disponible.
-- No hay ajuste por instrucciones ni diálogo: es un modelo base de investigación, no un asistente.
+- Generación de texto autoregresiva sobre código Python y, en general, texto en inglés.
+- Modelado de dependencias de largo alcance en código: el análisis del autor indica que el modelo localiza identificadores lejanos tan bien como su gemelo, aunque los aprovecha peor, lo que sugiere cierta capacidad de recuperación de referencias distantes.
+- Inferencia con memoria constante, independiente de la longitud de secuencia.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta modo thinking, visión ni audio.
+- Capacidad multilingüe: solo inglés según la model card.
 
 ## Casos de uso
 
-- **Replicación de la ablación primero vs segundo orden:** cargar este checkpoint y su gemelo SO-CODE con los mismos batches y semilla para reproducir la diferencia de perplejidad (+9,2%) sobre Python. Es el uso previsto por el autor y el único con validación empírica publicada.
-- **Línea base no transformer en evaluación de modelos de código:** usar la perplejidad a bloque 512 sobre los primeros 2M tokens de validación de CodeParrot como referencia para comparar futuras arquitecturas sin atención en el mismo corpus y calendario.
-- **Estudio de modelos de lenguaje basados en energía:** servir como implementación de referencia de un LM conservativo (potencial escalar + BAOAB + métrica de Jacobi) para experimentos académicos sobre dinámica de gradiente en lugar de atención.
-- **Investigación sobre memoria de largo alcance en identificadores:** analizar cómo decae la contribución de un identificador en función de su distancia, dado que el autor localiza ahí la totalidad del déficit frente al gemelo de segundo orden.
-- **Prototipado de inferencia con memoria constante:** probar decodificación en entornos con VRAM muy limitada (los pesos ocupan 0,3 GB) donde la huella de memoria no deba crecer con la longitud de la secuencia.
-- **Docencia y divulgación técnica:** ilustrar en un curso o artículo las diferencias entre flujos de primer y segundo orden en modelos generativos, con métricas publicadas y predicciones pre-registradas verificables.
-- **Ablación de mecanismos (mechanism-ablation):** el mismo autor mantiene pares equivalentes en OpenWebText y TinyStories, de modo que este checkpoint sirve para estudiar la interacción entre corpus y orden de la dinámica.
+- Investigación en alternativas a la atención: el modelo sirve como punto de comparación controlado para medir el coste de eliminar la atención y la dinámica de segundo orden en un corpus de código, con presupuesto de tokens y batches idénticos al gemelo.
+- Estudios de ablación de mecanismo: permite aislar el efecto del orden de la dinámica (primer vs. segundo orden) manteniendo constante todo lo demás, útil para publicaciones sobre dinámicas de entrenamiento físicamente informadas.
+- Reproducción de experimentos pre-registrados: las predicciones CODE1 y CODE2 están documentadas y puntuadas, de modo que el checkpoint permite replicar el análisis de brecha pareada por paso.
+- Evaluación de perplejidad en código Python: con 6,55 de perplejidad en bloque 512 sobre las primeras 2M tokens de validación de CodeParrot, sirve como referencia para comparar futuras variantes de la familia.
+- Análisis de recuperación de identificadores: el fallo localizado en identificadores y su crecimiento con la distancia a la ocurrencia previa lo hacen adecuado para estudiar mecanismos de memoria de largo alcance en código.
+- Prototipado de inferencia de memoria constante: útil para investigar despliegues donde la VRAM no puede crecer con la longitud de contexto, aunque sin garantías de calidad para producción.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (`verified: false`):
+| Modelo | Corpus, tokens | Perplejidad de validación (bloque 512) | Brecha frente a segundo orden |
+|---|---|---:|---:|
+| SO-CODE (segundo orden) | Python, 315M | 6,00 | referencia |
+| FO-b-CODE (este modelo) | Python, 315M | 6,55 | +9,2% |
+| PM2-CODE (segundo orden, 2 pozos) | Python, 315M | 5,71 | — |
+| FO-b-PM2-CODE (primer orden, 2 pozos) | Python, 315M | 5,62 | −1,6% |
+| GPT-2 emparejado (d=384, L=8) | Python, mismos tokens | 4,96 | este modelo +32,0% |
 
-| Metrica | Dataset | Valor |
-|---|---|---|
-| Perplejidad de validación, bloque 512, estabilizada (media de las tres últimas evaluaciones cada 500 pasos: pasos 18.000, 18.500 y 19.000) | CodeParrot clean (Python), split validation, primeros 2M tokens | 6,5487 |
-| Mejor perplejidad registrada (paso 18.000) | Mismo conjunto | 6,43 |
-| Evaluaciones individuales (pasos 18.000 / 18.500 / 19.000) | Mismo conjunto | 6,43 / 6,57 / 6,65 |
-
-Comparación entre pares del estudio (mismo presupuesto de tokens, misma semilla):
-
-| Par | Corpus y tokens | Segundo orden | Primer orden | Primer orden frente a segundo |
-|---|---|---:|---:|---:|
-| OpenWebText, sin wells | 532,5M | SR2: 58,32 | FO-b-OWT: 61,16 | +4,9% |
-| TinyStories, FO-b, sin wells | 315M | SO-TS: 5,16 | FO-b-TS: 5,28 | +2,3% |
-| Python, FO-b, sin wells | 315M | SO-CODE: 6,00 | FO-b-CODE: 6,55 | +9,2% |
-| Referencia transformer emparejada (GPT-2 d=384, L=8) | Mismos tokens de Python y mismo calendario | 4,96 | — | Este modelo queda +32,0% por detrás (su gemelo, +20,9%) |
-
-Evolución del par a lo largo del entrenamiento:
-
-| Paso | Fase | SO-CODE (segundo orden) | FO-b-CODE (primer orden) | Primer orden frente a segundo |
-|---:|---|---:|---:|---:|
-| 500 | warmup | 44,02 | 41,91 | −4,8% |
-| 2.000 | estable | 17,67 | 16,60 | −6,1% |
-| 5.000 | estable | 9,27 | 9,26 | −0,1% |
-| 10.500 | estable, fin | 7,02 | 7,77 | +10,7% |
-| 13.000 | decay | 6,38 | 7,06 | +10,7% |
-| 16.000 | decay, fin | 6,12 | 6,70 | +9,5% |
-| 17.000 | floor | 6,07 | 6,62 | +9,1% |
-| 18.000 | floor, mejor | 5,87 | 6,43 | +9,5% |
-
-Otras métricas reportadas: diferencia emparejada por paso de +9,1% a +9,5% en las siete últimas evaluaciones (pasos 16.000–19.000, correlación entre brazos de 0,996); el modelo es peor en el 98% de 512 ventanas de validación. Predicciones pre-registradas CODE1 (+9,2%) y CODE2 (mayor que el +4,9% de OpenWebText): ambas acertadas. No hay resultados de HumanEval, MBPP, MMLU ni GSM8K en la información disponible.
+Detalle del resultado de este modelo: perplejidad asentada de 6,5487, media de las evaluaciones en los pasos 18.000, 18.500 y 19.000 (6,43, 6,57 y 6,65); mejor valor 6,43 en el paso 18.000. La brecha pareada por paso se sitúa entre +9,1% y +9,5% en las últimas siete evaluaciones (pasos 16.000–19.000), con correlación de 0,996 entre brazos, y el modelo es peor en el 98% de 512 ventanas de validación. Frente al GPT-2 emparejado, el gemelo de segundo orden queda un +20,9% por detrás.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos del repositorio ocupan 0,3 GB, de modo que el modelo cabe holgadamente en 1–2 GB de VRAM contando activaciones y buffers del integrador (estimación a partir del tamaño del repositorio, no publicada por el autor).
-- GPU recomendadas: cualquier GPU consumer moderna sirve (GTX 1060 6 GB, RTX 3060, RTX 4090); también es viable en CPU por el reducido tamaño. Para entrenamiento, el autor no indica la GPU utilizada (19.250 pasos en 5,65 h).
-- Cabe en GPU consumer: sí, sin cuantización, dado el tamaño de 0,3 GB.
-- Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; al ser una arquitectura no transformer con código propio, el despliegue requiere cargar los pesos con PyTorch y el código del autor. No hay cuantizaciones publicadas.
-- Latencia y throughput: no disponible. La única cifra de rendimiento publicada es de entrenamiento (19.250 pasos, 315,4M tokens, 5,65 h en una sesión).
+- VRAM estimada para inferencia: no disponible. El repo ocupa 0,3 GB, lo que sugiere un modelo pequeño, pero no se publican recuentos de parámetros ni requisitos de memoria.
+- GPU recomendadas: no disponible.
+- Viabilidad en GPU de consumo: no disponible, aunque el tamaño del repo y la inferencia de memoria constante apuntan a que sería viable en GPUs de consumo; el autor no lo confirma.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI; la librería declarada es PyTorch.
+- Latencia y throughput: no disponibles. Sí se conoce el coste de entrenamiento: 19.250 pasos en 5,65 horas en una sola sesión, con norma de gradiente mediana de 0,67 y máxima de 1,83 durante el warmup.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Perplejidad en CodeParrot val. (bloque 512) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| FO-b-CODE (este modelo) | No disponible (d=384) | No disponible (entrenado a 512) | 6,55 (mejor 6,43) | CC BY 4.0 | Hugging Face |
-| SO-CODE, gemelo de segundo orden | No disponible (d=384) | No disponible (entrenado a 512) | 6,00 | No disponible en la información | Hugging Face |
-| GPT-2 emparejado (d=384, L=8) | No disponible en la información | No disponible | 4,96 | No disponible | No publicado aún en el Hub, según el autor |
-| FO-b-OWT (misma arquitectura, otro corpus) | No disponible (d=384) | No disponible | No comparable (OpenWebText: 61,16) | No disponible | Hugging Face |
-| FO-b-TS (misma arquitectura, otro corpus) | No disponible (d=384) | No disponible | No comparable (TinyStories: 5,28) | No disponible | Hugging Face |
+| Modelo | Arquitectura | Parámetros | Contexto | Perplejidad (código, bloque 512) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Este modelo (FO-b-CODE) | Conservativa, primer orden, sin atención | no disponible | no disponible | 6,55 | CC-BY-4.0 | Hugging Face |
+| SO-CODE (gemelo) | Conservativa, segundo orden, sin atención | no disponible | no disponible | 6,00 | CC-BY-4.0 | Hugging Face |
+| PM2-CODE | Conservativa, segundo orden, 2 pozos Poisson | no disponible | no disponible | 5,71 | CC-BY-4.0 | Hugging Face |
+| GPT-2 emparejado (d=384, L=8) | Transformer | no disponible | no disponible | 4,96 | no disponible | No publicado en el Hub según el autor |
 
 ## Limitaciones y advertencias
 
-- Calidad de modelado inferior a sus referencias directas: 6,55 de perplejidad frente a 6,00 del gemelo de segundo orden y 4,96 de un GPT-2 emparejado con los mismos tokens. Un +32,0% de perplejidad respecto al transformer es una brecha grande para cualquier uso generativo.
-- El déficit se concentra en los identificadores recordados desde lejos: el modelo encuentra las apariciones previas igual de bien que su gemelo, pero las aprovecha peor. Es una limitación estructural del flujo de primer orden, no un problema de ajuste.
-- Solo inglés y solo Python: no hay evidencia de comportamiento en otros idiomas ni en otros lenguajes de programación.
-- Contexto efectivo corto: entrenado con bloques de 512 tokens; no se documenta ventana desplegable ni evaluación más allá de ese bloque.
-- Sin ajuste por instrucciones, sin RLHF/DPO y sin herramientas: no es utilizable como asistente conversacional ni para tool calling.
-- Riesgo de alucinación y de código sintácticamente plausible pero incorrecto: no hay ninguna evaluación funcional (pass@k, HumanEval, MBPP) que lo desmienta.
-- Métricas no verificadas: la perplejidad del model-index está marcada como `verified: false` y procede del propio autor.
-- Sesgos heredados de CodeParrot: código extraído de GitHub, con los sesgos de estilo, idioma y licencias del corpus original. El autor reporta sondas de fuga limpias (SCAF en 4 auditorías y sonda entrenada en el paso 10.000), pero no es una auditoría de memorización exhaustiva.
-- Advertencia sobre el criterio de "settled": según el autor, ambos brazos incumplen por la letra la comprobación de estabilización (−0,020 y −0,023 nats en los últimos 3.000 pasos, con dispersión residual de 0,015), aunque caen juntos y la brecha emparejada solo se mueve 0,003 nats.
-- Licencia CC BY 4.0: permite uso comercial con atribución, pero el modelo se publica como artefacto de investigación, sin garantías ni soporte.
-- Despliegue no estándar: sin cuantizaciones, sin safetensors y sin soporte en runtimes habituales, lo que añade coste de ingeniería a cualquier uso.
+- Rendimiento inferior a su gemelo de segundo orden en un 9,2% de perplejidad, la mayor brecha del estudio; no es un modelo competitivo frente a alternativas transformer del mismo presupuesto (+32,0% de perplejidad frente al GPT-2 emparejado).
+- El fallo se concentra en identificadores: localiza las ocurrencias lejanas tan bien como su gemelo, pero las aprovecha peor, lo que afecta a la coherencia en código con referencias cruzadas.
+- Solo soporta inglés; no hay evidencia de capacidades multilingües.
+- No hay datos publicados sobre sesgos, alucinación, tool calling ni comportamiento en producción; es un artefacto de investigación, no un modelo listo para despliegue.
+- La licencia CC-BY-4.0 permite uso comercial con atribución, pero el modelo no ofrece garantías de calidad para tales fines.
+- El propio autor señala que ambos brazos fallan por la letra el chequeo de asentamiento (−0,020 y −0,023 nats en los últimos 3.000 pasos frente a una dispersión residual de 0,015), aunque la brecha pareada se mantiene estable (0,003 nats en esa ventana).
+- No se dispone de información sobre cuantización, formato de pesos ni contexto máximo, lo que dificulta planificar un despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob
 - Gemelo de segundo orden (SO-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
-- Par equivalente en OpenWebText: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-fob
-- Par equivalente en TinyStories: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fob
-- Colección "first vs second order" (generación 3): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
+- Variante con dos pozos de Poisson (PM2-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-pm2-pmx16-sr2
+- Variante de primer orden con dos pozos (FO-b-PM2-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-pm2-pmx16-sr2-fob
+- Par en OpenWebText (SR2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2
+- Par en OpenWebText (FO-b): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-fob
+- Par en TinyStories (SO-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2
+- Par en TinyStories (FO-b-TS): https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fob
+- Colección first-vs-second-order: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
+- Nota pre-registrada del experimento: https://github.com/dimitarpg13/semsimula-paper/blob/main/companion_notes/depth_ladder/Code_Set_First_vs_Second_Order.md
+- Repositorio del paper: https://github.com/dimitarpg13/semsimula-paper
 - Dataset de entrenamiento: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
 - Dataset de validación: https://huggingface.co/datasets/codeparrot/codeparrot-clean-valid
-- Paper, blog o repositorio adicional: no disponible (la búsqueda web no devolvió resultados relevantes sobre este modelo; los enlaces encontrados correspondían a dominios sin relación).

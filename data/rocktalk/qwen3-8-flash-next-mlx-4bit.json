@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 137,
+  "downloads_30d": 135,
   "trending_score": 0,
   "parameters": 128350804608,
   "parameters_human": "128.35B",
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Rocktalkai/Qwen3.8-Flash-Next-MLX-4bit",
+  "renamed_at": "2026-11-22T04:51:13.746Z",
   "benchmarks": [],
   "sources": [
     {

@@ -61,31 +61,5 @@
   "renamed_to": "Avifenesh/GLM-5.3-Flash-NVFP4-B200-hybrid",
   "renamed_at": "2026-11-15T09:05:52.212Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ING",
-      "url": "https://api.produkte.banking.ing-diba.de/",
-      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
-    },
-    {
-      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
-      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "local-inference-lab/GLM-5.3-Flash-NVFP4 · Hugging Face",
-      "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
-      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
-      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
-    },
-    {
-      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
-      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
-      "snippet": "Run GLM-5.3-Flash Guide Download Unsloth GLM-5.3-Flash now runs in Unsloth Desktop! GLM-5.3-Flash was trained on 30T tokens and is built on a newly trained base model redesigned. Its hybrid sparse and linear attention architecture lowers long-context serving costs without sacrificing accuracy. Manifold-Constrained Hyper Connections improve scaling."
-    }
-  ]
+  "sources": []
 }

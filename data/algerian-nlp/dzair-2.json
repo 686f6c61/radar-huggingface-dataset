@@ -1,0 +1,128 @@
+{
+  "schema": 2,
+  "id": "algerian-nlp/DZAIR-2",
+  "slug": "algerian-nlp-dzair-2",
+  "author": "algerian-nlp",
+  "url": "https://huggingface.co/algerian-nlp/DZAIR-2",
+  "created_at": "2026-11-21T23:08:52.000Z",
+  "updated_at": "2026-11-21T23:11:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "arq",
+    "ar",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "dzair2",
+    "feature-extraction",
+    "algerian-nlp",
+    "algerian-darija",
+    "darja",
+    "arq",
+    "arabizi",
+    "arabic",
+    "code-switching",
+    "encoder",
+    "bipartite-pretraining",
+    "attnres",
+    "gated-attention",
+    "custom-code",
+    "north-africa",
+    "custom_code",
+    "ar",
+    "fr",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 171889664,
+  "parameters_human": "171.9M",
+  "storage_bytes": 1723933593,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment analysis (DarijaDz, 4-class)",
+      "dataset": "DarijaDz sentiment (test, 4,746 rows)",
+      "metric": "Accuracy (10-seed mean, bs=64)",
+      "value": 0.7906
+    },
+    {
+      "task": "Sentiment analysis (DarijaDz, 4-class)",
+      "dataset": "DarijaDz sentiment (test, 4,746 rows)",
+      "metric": "Macro F1 (10-seed mean, bs=64)",
+      "value": 0.6835
+    },
+    {
+      "task": "Sentiment analysis (Twitter Darija, 3-class)",
+      "dataset": "Twifil sentiment (test, 2,360 rows)",
+      "metric": "Accuracy (10-seed mean, bs=64)",
+      "value": 0.81
+    },
+    {
+      "task": "Sentiment analysis (Twitter Darija, 3-class)",
+      "dataset": "Twifil sentiment (test, 2,360 rows)",
+      "metric": "Macro F1 (10-seed mean, bs=64)",
+      "value": 0.8035
+    },
+    {
+      "task": "Sentiment analysis (Forum Arabic, 3-class)",
+      "dataset": "Ranim sentiment (test, 300 rows)",
+      "metric": "Accuracy (10-seed mean, bs=8)",
+      "value": 0.9637
+    },
+    {
+      "task": "Sentiment analysis (Forum Arabic, 3-class)",
+      "dataset": "Ranim sentiment (test, 300 rows)",
+      "metric": "Macro F1 (10-seed mean, bs=8)",
+      "value": 0.9599
+    },
+    {
+      "task": "Sentiment analysis (Latin Arabizi, 3-class)",
+      "dataset": "Narabizi sentiment (test, 143 rows)",
+      "metric": "Accuracy (10-seed mean, bs=8)",
+      "value": 0.6657
+    },
+    {
+      "task": "Sentiment analysis (Latin Arabizi, 3-class)",
+      "dataset": "Narabizi sentiment (test, 143 rows)",
+      "metric": "Macro F1 (10-seed mean, bs=8)",
+      "value": 0.6083
+    },
+    {
+      "task": "Topic classification (Latin Arabizi, 5-class)",
+      "dataset": "Narabizi topic (test, 143 rows)",
+      "metric": "Accuracy (10-seed mean, bs=8)",
+      "value": 0.6077
+    },
+    {
+      "task": "Topic classification (Latin Arabizi, 5-class)",
+      "dataset": "Narabizi topic (test, 143 rows)",
+      "metric": "Macro F1 (10-seed mean, bs=8)",
+      "value": 0.5641
+    }
+  ],
+  "sources": []
+}

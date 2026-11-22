@@ -2,117 +2,99 @@
 
 ## Resumen
 
-Qwen3.5-9B-DeepThought-STEM-Weight-Space-Programming es una variante del modelo `xtools-at/Qwen3.5-9B-DeepThought-STEM` (a su vez derivado de `Qwen/Qwen3.5-9B`) creada por el usuario `jstarks` mediante una técnica de programación en el espacio de pesos (weight-space programming, WSP) sin entrenamiento por descenso de gradiente. El objetivo no es añadir conocimiento nuevo, sino corregir un problema de comportamiento diagnosticado en el modelo base: la sobre-deliberación dentro de los bloques `<think>`, que provocaba truncamientos por agotamiento del presupuesto de tokens en tareas STEM y de agente.
+Qwen3.5-9B-DeepThought-STEM-Weight-Space-Programming es una variante del modelo Qwen3.5-9B-DeepThought-STEM (desarrollado por xtools-at sobre la base Qwen/Qwen3.5-9B) publicada por el usuario jstarks. No se trata de un modelo entrenado desde cero ni de un fine-tune convencional: es una aplicacion de "weight-space programming" (WSP), una tecnica de interpretabilidad mecanistica que modifica el comportamiento del modelo mediante adaptadores LoRA dinamicos calculados en forma cerrada, sin descenso de gradiente ni reentrenamiento de los pesos base.
 
-El autor captura receptores de forward-hook en BF16 sobre las 32 capas del modelo base y resuelve 12 subespacios ortogonalizados de rango 16 mediante la identidad de Woodbury. Estos subespacios (S1–S12) modulan comportamientos concretos: cierre acotado de la cadena de pensamiento, contención de herramientas, enrutamiento de tool calls, síntesis de código en capas intermedias, JSON en segundo turno, inmunidad a inyección indirecta, abstención fundamentada, recuperación de errores y consolidación de razonamiento STEM.
+El modelo base tiene 9.197.093.888 parametros (aproximadamente 9,2 mil millones) y una arquitectura hibrida de 32 capas que combina 24 capas Gated DeltaNet (atencion lineal) con 8 capas de atencion completa, con un tamano oculto de 4096 y un tamano intermedio de 12288. La contribucion de jstarks consiste en 13 subespacios LoRA (63 MiB en total) que se activan y desactivan dinamicamente durante la inferencia para separar la fase de razonamiento (`<think>...</think>`) de la fase de respuesta final, eliminando bucles de reinyeccion de tokens de control y mejorando el rendimiento en tareas STEM y de agente.
 
-La relevancia actual reside en su enfoque: demuestra que es posible mejorar métricas de razonamiento y agentes en un modelo de 9B sin reentrenar, aplicando adaptadores LoRA dinámicos derivados analíticamente. El modelo se distribuye con licencia Apache 2.0, pesos safetensors y una cuantización GGUF Q4_K_M para ejecución local.
+La relevancia actual del modelo reside en su enfoque: demuestra que es posible obtener mejoras medibles en benchmarks (hasta +17 puntos porcentuales sobre el modelo base en una bateria de 270 tareas) sin modificar los pesos originales, usando tecnicas de algebra lineal sobre el espacio de pesos y enrutamiento dinamico de adaptadores en tiempo de ejecucion. El repositorio incluye cuantizaciones GGUF Q4_K_M y Q6_K listas para ejecutar con llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido Qwen3.5: 32 capas (24 Gated DeltaNet + 8 full attention), hidden_size 4096, intermediate_size 12288 |
-| Parametros totales | 9.197.093.888 (~9,2 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (las evaluaciones usan `-c 16384`) |
-| Tipos de cuantizacion | GGUF Q4_K_M incluido (5.383 GiB / 5.780.095.072 bytes); pesos safetensors BF16 del modelo base |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer hibrido: 32 capas (24 Gated DeltaNet + 8 atencion completa) |
+| Parametros totales | 9.197.093.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF Q4_K_M (5.383 GiB) y Q6_K (7.040 GiB); pesos base en safetensors BF16 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16), GGUF (Q4_K_M) y 12 adaptadores LoRA dinámicos |
+| Formato de pesos | safetensors (base), GGUF (cuantizaciones), LoRA adapters (63 MiB total) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido de Qwen3.5 con 32 capas, de las cuales 24 emplean Gated DeltaNet (atención lineal con estado recurrente) y 8 usan atención completa. El hidden size es 4096 y el intermediate size 12288. Sobre esta base, `xtools-at` construyó `Qwen3.5-9B-DeepThought-STEM` a partir de `Qwen3.5-9B` y de una variante heretic/uncensored, incorporando trazas de razonamiento de alta profundidad, descubrimiento de fármacos y STEM.
+La arquitectura subyacente es un transformer hibrido Qwen3.5 de 32 capas: 24 capas usan Gated DeltaNet (una forma de atencion lineal con estado recurrente) y 8 capas usan atencion completa. El tamano oculto es 4096 y el tamano intermedio del MLP es 12288. El modelo base fue construido por xtools-at sobre Qwen/Qwen3.5-9B, con fine-tuning orientado a razonamiento de alta intensidad, trazas STEM y descubrimiento de farmacos (RED-PILL).
 
-La contribución de `jstarks` no implica entrenamiento supervisado ni RLHF/DPO. Se capturan activaciones forward-hook en BF16 en las 32 capas (verificación de logits: `'Paris': 7.237`, `'London': 3.13`, `'Berlin': 1.939`) y se resuelven 12 subespacios de rango 16 ortogonalizados mediante la fórmula de Woodbury. Los subespacios S1–S9 cubren cierre acotado de CoT, contención de herramientas y anti-sicofancia, enrutamiento de herramientas, síntesis de código en capas intermedias, JSON de segundo turno, gating de handoff, inmunidad a inyección indirecta, abstención fundamentada y recuperación de errores. S10 y S11 gestionan bucles bash multi-turno con estado en WSL2. S12 (`||dW||_F = 6.8013` en capas 23, 27, 29, 30 y 31) se sintetiza a partir de 28 trazas CoT on-policy disjuntas, con ponderación 3,8x en razonamiento temprano y 4,0x en restricciones de espacio nulo post-respuesta.
-
-El resultado se materializa como 12 adaptadores LoRA dinámicos que se aplican en tiempo de inferencia sobre el modelo base, más una cuantización GGUF Q4_K_M de `mradermacher` incluida para ejecución con `run_wsp.py` vía llama.cpp.
+La innovacion de esta ficha no esta en el entrenamiento sino en el post-procesado: WSP V5 aplica una sintesis de subespacios en forma cerrada sobre las 32 capas en BF16, capturando "receptores" mediante forward hooks y calculando direcciones de modificacion de pesos ortogonales entre si para evitar cancelaciones. El sistema define 13 subespacios (S1 a S13) que se activan en dos fases: la fase 1 (dentro de `<think>`) usa solo S1 y S12; al detectar `</think>`, el router conmuta en aproximadamente 2 ms a los subespacios de fase 2 (S2..S11, S13) y desactiva S1 y S12. Esto elimina fisicamente los bucles de reinyeccion de `</think>` y mejora la precision en tareas de matematicas y agentes. No hay RLHF ni DPO en esta etapa; la modificacion es puramente algebraica y determinista.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso con modo `<think>` acotado.
-- Razonamiento matemático y STEM (MATH-500, MMLU-Pro, MMLU de 4 opciones, GSM8K estimado).
-- Generación de código (HumanEval estimado) y síntesis de código en capas intermedias.
-- Tool calling y function calling, con enrutamiento y contención de herramientas (BFCL, NL2BASH).
-- Ejecución de agentes sobre terminal: bucles bash multi-turno con estado en WSL2 Ubuntu 24.04 (Terminal-Bench).
-- Emisión de JSON estructurado en segundo turno de conversación.
-- Abstención fundamentada y recuperación de errores en cadenas de agente.
-- Inmunidad a inyección indirecta de prompts (subespacio S7).
-- Capacidad image-text-to-text heredada del pipeline declarado en los tags del repositorio.
-- Soporte multilingüe: no disponible en la informacion proporcionada.
+- Generacion de texto y razonamiento multi-paso con modo de pensamiento explicito (`<think>...</think>`).
+- Razonamiento matematico: problemas de MATH-500, GSM8K y aritmetica de varios pasos.
+- Razonamiento STEM: preguntas de nivel universitario en MMLU-Pro y tareas cientificas.
+- Generacion de codigo: evaluacion en HumanEval y tareas de terminal.
+- Tool calling y function calling: evaluado con BFCL (Berkeley Function Calling Leaderboard) y NL2Bash.
+- Operacion en terminal y agentes: Terminal-Bench (tbench20), con resolucion de tareas de shell y transformacion de patrones.
+- Capacidades multimodales de entrada: el pipeline declarado es image-text-to-text, heredado del modelo base.
+- Enrutamiento dinamico de adaptadores LoRA en tiempo de ejecucion (fase de razonamiento vs fase de respuesta).
+- Soporte de cuantizacion GGUF para despliegue en llama.cpp.
 
 ## Casos de uso
 
-- Agentes de terminal automatizados: el modelo puede ejecutar secuencias de comandos bash con estado multi-turno en entornos Linux, gracias a los subespacios S10_TERM_ACTION y S11_TERM_CODE, que mantienen el contexto de ejecución entre pasos.
-- Automatización de tareas de administración de sistemas: tareas como `sanitize-git-repo` o `grid-pattern-transform` se benefician de la contención de herramientas (S2) que evita deliberaciones largas sin emitir comandos.
-- Razonamiento matemático en producción: la consolidación S12_STEM_SETTLE permite resolver problemas de MATH-500 y GSM8K sin truncamientos por agotamiento del presupuesto de tokens, reduciendo el consumo de tokens de finalización en torno al 20 %.
-- Generación de código en pipelines de CI/CD: el modelo soporta HumanEval y tool calling, y puede integrarse como paso de generación o revisión de parches con llama.cpp o transformers.
-- Conversión de lenguaje natural a comandos de shell: NL2BASH se beneficia del enrutamiento de herramientas y de la contención de deliberación, útil en asistentes de consola.
-- Asistentes con salida JSON estructurada: el subespacio de Turn-2 JSON permite generar respuestas parseables en flujos de function calling y orquestación de agentes.
-- Evaluación de mecanismos de interpretabilidad: investigadores pueden usar los 12 subespacios y los receptores BF16 capturados para estudiar cómo se modula el comportamiento de un modelo sin reentrenamiento.
-- Despliegue local en GPU de consumo: la cuantización Q4_K_M (5,38 GiB) permite ejecutar el modelo en tarjetas de 12 GiB como la RTX 4070 Ti empleada en las evaluaciones.
+- Razonamiento matematico asistido: el modelo puede resolver problemas de MATH-500 y GSM8K con el modo de dos fases activado, evitando que la respuesta final herede tokens de control del bloque de pensamiento. Es adecuado para tutoria automatica o generacion de soluciones paso a paso.
+- Agentes de terminal y automatizacion de shell: con NL2Bash (19/20 en Q6_K) y Terminal-Bench, puede traducir instrucciones en lenguaje natural a comandos de shell y ejecutar tareas de recuperacion de errores multi-turno, util para asistentes de DevOps.
+- Function calling en pipelines de integracion: el subespacio S2 reduce falsos positivos de tool calling (0/20 en trampas disjuntas), lo que lo hace util para orquestacion de APIs donde la invocacion erronea tiene coste.
+- Evaluacion de interpretabilidad mecanistica: investigadores pueden usar los 13 subespacios y el router como caso de estudio de control de comportamiento sin reentrenamiento, comparando Q4_K_M y Q6_K.
+- Despliegue en hardware de consumo: la cuantizacion Q4_K_M (5,38 GiB) permite ejecutar el modelo en GPUs consumer con 8 GB de VRAM, adecuado para prototipos locales de asistentes STEM.
+- Generacion de codigo en entornos con restricciones de red: al ejecutarse con llama.cpp de forma local, puede integrarse en pipelines de CI/CD sin dependencia de APIs externas.
+- Investigacion en tecnicas WSP: el repositorio incluye scripts (`build_deepthought_wsp.py`, `deepthought_router.py`, `run_wsp.py`) que sirven como referencia reproducible para aplicar WSP a otros modelos.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre 270 tareas locales (`agent100` + `stem150` + `tbench20` en WSL2), comparando el modelo base con las variantes WSP:
+Los datos provienen de la model card y corresponden a una bateria local de 270 tareas (agent100 + stem150 + tbench20) ejecutada por el autor.
 
-| Variante | Total (270) | Delta vs base | agent100 (100) | stem150 (150, truncamientos) | tbench20 (20, E/M/H) | Tokens medios (a100 / s150 / tb20) |
-|---|---:|---:|---:|---:|---:|---:|
-| Base (Q4_K_M) | 134/270 (49,6 %) | — | 73/100 | 57/150 (cut=83) | 4/20 (3/10 · 0/9 · 1/1) | 435,5 / 890,5 / 708,8 |
-| WSP V1 | 162/270 (60,0 %) | +10,4 pp (+28) | 83/100 | 74/150 (cut=2) | 5/20 (3/10 · 1/9 · 1/1) | 377,7 / 647,8 / 621,7 |
-| WSP V2 | 160/270 (59,3 %) | +9,6 pp (+26) | 85/100 | 72/150 (cut=30) | 3/20 (2/10 · 1/9 · 0/1) | 343,6 / 768,9 / 661,1 |
-| WSP V3 (por defecto) | 163/270 (60,4 %) | +10,7 pp (+29) | 86/100 | 73/150 (cut=19) | 4/20 | no disponible |
+| Configuracion | Total (270) | Agent (100) | STEM (150) | tbench20 (20) | Notas |
+|---|---:|---:|---:|---:|---|
+| Q6_K + WSP V5 | 178 (65,9%) | 89 | 84 (cut=1) | 5 | +17,0 pp vs Base; 19/20 NL2Bash, 17/20 GSM8K |
+| Q4_K_M + WSP V5 | 176 (65,2%) | 86 | 86 (cut=5) | 4 | 20/50 MATH-500, 26/50 MMLU-Pro, 29/30 holdout |
+| Base (referencia) | 132 (48,9%) | no disponible | no disponible | no disponible | Dato implicito: +46 tareas en Q6_K |
 
-Desglose de subconjuntos reportado por el autor:
-
-| Subconjunto | Base | WSP V1 | WSP V3 |
-|---|---:|---:|---:|
-| EST_GSM8K (20) | 6/20 | no disponible | 16/20 |
-| EST_HUMANEVAL (15) | 13/15 | no disponible | 14/15 |
-| EST_NL2BASH (20) | 16/20 | no disponible | 18/20 |
-| S2_RESTRAINT (4) | 3/4 | no disponible | 4/4 |
-| Holdout (30) | 27/30 | 26/30 | 27/30 |
-| STEM_MATH500 (50) | 0/50 | 15/50 | 13/50 |
-| STEM_MMLU_4C (50) | no disponible | no disponible | 39/50 (78,0 %) |
-
-En el modelo base, sobre ítems no truncados, se reporta 19/26 (73,1 %) en MMLU-Pro (19/24 = 79,2 % con letra parseable) y 38/41 (92,7 %) en MMLU-4C. Los resultados corresponden a evaluaciones internas del autor, no a leaderboards independientes.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K completos) en la informacion disponible; los datos anteriores son evaluaciones locales del autor y deben interpretarse con cautela.
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q4_K_M ocupa 5,38 GiB de pesos; con contexto de 16K y caché KV en q8_0 se ejecutó en una RTX 4070 Ti de 12 GiB. En BF16, los ~9,2 B parámetros requieren aproximadamente 18,4 GB solo para pesos.
-- GPU recomendadas: RTX 4070 Ti (12 GiB) validada por el autor para Q4_K_M; para BF16 se necesitan A100 40 GB, H100 o RTX 4090 24 GB con cuantización parcial.
-- GPU de consumo: sí, en GPUs de 12 GiB o más con la cuantización Q4_K_M; en 8 GiB requeriría cuantizaciones menores no incluidas en el repositorio.
-- Opciones de despliegue: llama.cpp (vía `run_wsp.py` con el GGUF incluido), transformers con safetensors y los 12 adaptadores LoRA dinámicos, y endpoints compatibles según los tags del repositorio.
-- Latencia y throughput: no disponibles de forma agregada; el autor reporta una reducción de tokens de finalización del 19,9 % en `agent100` (435,5 → 348,9) y de 708,8 → 585,5 en `tbench20` con WSP V3.
+- VRAM estimada: Q4_K_M requiere aproximadamente 5,4 GiB para pesos mas overhead de contexto y adaptadores; Q6_K requiere aproximadamente 7,0 GiB mas overhead.
+- GPU recomendadas: RTX 4090 (24 GB) para Q6_K con contexto largo; RTX 3060/4060 (8-12 GB) para Q4_K_M; A100/H100 no son necesarias para este tamano, pero permiten mayor throughput.
+- Cabe en GPU consumer: si, Q4_K_M en GPUs de 8 GB y Q6_K en GPUs de 12 GB o superiores.
+- Opciones de despliegue: llama.cpp / llama-server (soporte de `/lora-adapters` y `/completion` requerido por el router), Ollama (si se empaqueta el GGUF con adaptadores), vLLM (no confirmado para LoRA dinamico por peticion en este formato).
+- Latencia y throughput: no disponibles; el cambio de adaptadores en el router se estima en aproximadamente 2 ms segun la model card.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---:|---|---|---|
-| jstarks/Qwen3.5-9B-DeepThought-STEM-WSP (este) | 9,2 B | no disponible | Apache 2.0 | HF, safetensors + GGUF + LoRA | 163/270 en suite interna del autor |
-| xtools-at/Qwen3.5-9B-DeepThought-STEM (base) | 9,2 B | no disponible | Apache 2.0 | HF | 134/270 en la misma suite |
-| Qwen/Qwen3.5-9B (raíz) | 9,2 B | no disponible | no disponible | HF | Sin datos de benchmark en la informacion proporcionada |
-| xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic | 9,2 B | no disponible | no disponible | HF | Variante intermedia de la cadena de fine-tuning |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---:|---|---|---|---|
+| jstarks/Qwen3.5-9B-DeepThought-STEM-WSP | 9,2 B | no disponible | Apache 2.0 | WSP con 13 LoRAs dinamicos | GGUF + safetensors |
+| xtools-at/Qwen3.5-9B-DeepThought-STEM | 9,2 B | no disponible | Apache 2.0 | Fine-tune STEM/razonamiento | safetensors + GGUF (mradermacher) |
+| Qwen/Qwen3.5-9B | 9,2 B | no disponible | Apache 2.0 (segun base) | Modelo base | safetensors |
+| Qwen2.5-7B-Instruct | 7,6 B | 32k (tipico) | Apache 2.0 | Instruct general | amplia |
 
-No se dispone de comparaciones con modelos de otras familias en la informacion proporcionada; los datos de la tabla se limitan a la cadena de derivación del propio modelo.
+La comparativa se limita a la familia Qwen3.5 por falta de datos de benchmarks estandar en la informacion disponible; no se dispone de cifras comparables de MMLU o HumanEval para estos modelos en el material consultado.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks son evaluaciones internas del autor sobre 270 tareas locales, sin validación independiente ni comparación con leaderboards públicos.
-- La mejora en `stem150` es menor en V3 (48,7 %) que en V1 (49,3 %), y V3 introduce 19 truncamientos frente a 2 de V1; la variante por defecto no es la mejor en todos los subconjuntos.
-- En `tbench20`, WSP V3 no mejora al modelo base (4/20 en ambos); la mejora solo aparece en V1 (5/20).
-- El modelo base ya mostraba un 92,7 % en MMLU-4C sobre ítems no truncados, por lo que parte del margen de mejora procede de corregir el comportamiento de deliberación, no de conocimiento nuevo.
-- Los subespacios se calcularon con `temperature=0.0` y `seed=42`; el comportamiento puede degradarse con muestreo estocástico o con prompts fuera de la distribución evaluada.
-- El modelo base incluye una variante "uncensored/heretic" en su linaje, lo que puede implicar una menor alineación de seguridad; no se documentan evaluaciones de seguridad.
-- Idiomas soportados no documentados; no hay garantías de rendimiento fuera del inglés.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; el repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
-- El despliegue requiere aplicar los 12 adaptadores LoRA dinámicos en el orden correcto; un uso incorrecto de `run_wsp.py` o de los subespacios puede anular las mejoras reportadas.
+- Los benchmarks son evaluaciones locales del autor (270 tareas), no resultados de leaderboards estandar; la comparabilidad con otros modelos es limitada.
+- El modelo base incluye fine-tuning "UNCENSORED" en su linaje (DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic), lo que puede implicar menor alineacion de seguridad y mayor riesgo de contenido no filtrado.
+- Riesgo de alucinacion inherente a modelos de 9B en tareas STEM complejas; los propios datos muestran 18/50 fallos en MATH-500 con Q4_K_M.
+- El enrutamiento de adaptadores requiere llama-server con soporte de `/lora-adapters`; no es compatible con todos los runners GGUF sin adaptacion.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus dependencias deben verificarse por separado.
+- No hay informacion sobre idiomas soportados ni sobre el contexto maximo; no se recomienda asumir capacidades multilingues sin validacion.
+- La tecnica WSP es experimental y especifica de este repositorio; su reproducibilidad en otros entornos no esta garantizada.
+- El modelo tiene solo 1 like y 1602 descargas en el momento de la consulta, lo que sugiere validacion comunitaria limitada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/jstarks/Qwen3.5-9B-DeepThought-STEM-Weight-Space-Programming
-- Modelo base fine-tuned: https://huggingface.co/xtools-at/Qwen3.5-9B-DeepThought-STEM
-- Variante intermedia heretic: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
-- Modelo raíz: https://huggingface.co/Qwen/Qwen3.5-9B
-- Cuantización GGUF de referencia: https://huggingface.co/mradermacher/Qwen3.5-9B-DeepThought-STEM-GGUF
+- Hugging Face: https://huggingface.co/jstarks/Qwen3.5-9B-DeepThought-STEM-Weight-Space-Programming
+- Modelo base: https://huggingface.co/xtools-at/Qwen3.5-9B-DeepThought-STEM
+- Linaje intermedio: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
+- Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.5-9B
+- Cuantizaciones GGUF: https://huggingface.co/mradermacher/Qwen3.5-9B-DeepThought-STEM-GGUF

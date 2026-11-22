@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Spark-X2.6-4B-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Spark-X2.6-4B-i1-GGUF",
-      "snippet": "mradermacher / Spark-X2.6-4B-i1-GGUF Like 0 Transformers GGUF English Chinese llm sparkx2_5 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "mradermacher/Spark-X2.6-4B-Base-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Spark-X2.6-4B-Base-GGUF",
-      "snippet": "mradermacher / Spark-X2.6-4B-Base-GGUF Like 0 Transformers GGUF English Chinese llm sparkx2_5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

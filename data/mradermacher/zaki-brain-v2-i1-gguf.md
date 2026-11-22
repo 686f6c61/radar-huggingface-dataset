@@ -2,75 +2,98 @@
 
 ## Resumen
 
-`mradermacher/zaki-brain-v2-i1-GGUF` es una publicacion de cuantizaciones en formato GGUF del modelo `harirhm/zaki-brain-v2`, generada por el usuario mradermacher mediante su pipeline habitual de conversion a llama.cpp. No se trata de un modelo entrenado desde cero, sino de una redistribucion cuantizada del modelo original, con el objetivo de reducir el peso en disco y la memoria necesaria para su ejecucion en hardware de consumo.
+`mradermacher/zaki-brain-v2-i1-GGUF` es una colección de cuantizaciones GGUF del modelo base `harirhm/zaki-brain-v2`, generadas por mradermacher mediante el método imatrix (importance matrix). El modelo original cuenta con 4.628.569.635 parámetros (aproximadamente 4,63 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio, adecuados para despliegue en hardware de consumo. La model card lo etiqueta como conversacional y en inglés.
 
-El dato mas relevante y llamativo es el numero de parametros reportado en los safetensors del repo: 1.391.607. Se trata de un modelo extremadamente pequeno, en el rango de un modelo de juguete o de un experimento educativo, muy alejado de los tamanos habituales de los LLM de proposito general. La model card del repo de cuantizacion es practicamente inexistente: solo incluye metadatos internos del proceso de cuantizacion (version de quantize, tipo de conversion `hf`, lista de quants generados) y la referencia al modelo base.
+El repositorio no documenta la arquitectura interna, el contexto máximo, la licencia ni los datos de entrenamiento del modelo base; la información disponible se limita a los metadatos de Hugging Face y a la tabla de cuantizaciones publicada. El pipeline no está declarado y el modelo base no expone detalles técnicos en la información proporcionada.
 
-La relevancia de esta ficha es, por tanto, limitada: no hay informacion publica sobre arquitectura, datos de entrenamiento, licencia, idiomas ni benchmarks. El valor practico del repo reside en ofrecer multiples variantes de cuantizacion (desde IQ1_S hasta Q6_K) para un modelo base del que no se documentan capacidades. Cualquier evaluacion seria requiere consultar el repo original `harirhm/zaki-brain-v2`.
+La relevancia de este repositorio es práctica: ofrece hasta 23 variantes de cuantización GGUF con distintos tamaños (desde 2,4 GB en IQ1_S hasta 3,9 GB en Q6_K), lo que permite ejecutar el modelo en GPU de consumo y en CPU mediante llama.cpp u Ollama. El repo completo ocupa 73,3 GB y acumula 9.873 descargas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1.391.607 |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo base `harirhm/zaki-brain-v2`, sin detalles publicados) |
+| Parametros totales | 4.628.569.635 (4,63 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-IQ3_XXS, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (todas con imatrix) |
+| Idiomas soportados | ingles (`en` segun la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (repo de cuantizacion); el modelo base se distribuye presumiblemente en safetensors |
+| Formato de pesos | GGUF (con fichero imatrix adicional de 0,1 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base `harirhm/zaki-brain-v2`. El unico dato estructural es el recuento de parametros (1.391.607), que situa al modelo en un orden de magnitud de unos 1,4 millones de parametros. No hay datos sobre numero de capas, dimension del hidden state, mecanismo de atencion, tipo de tokenizador ni vocabulario.
+No se dispone de información sobre la arquitectura del modelo base `harirhm/zaki-brain-v2`: la model card del repositorio de cuantizaciones no describe si se trata de un transformer denso, un MoE o una arquitectura híbrida, ni detalla el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de RLHF o DPO. El único dato estructural confirmado es el recuento de parámetros (4.628.569.635), obtenido de los pesos en safetensors del modelo base.
 
-Tampoco se documenta el proceso de entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo fases de RLHF, DPO o SFT. La model card del repo de cuantizacion solo indica que se han generado cuantizaciones con pesos ponderados por importancia (imatrix), lo que sugiere que el autor aplico el flujo estandar de llama.cpp con una matriz de importancia calculada sobre un corpus de calibracion, pero no se especifica cual.
+La contribución técnica de este repositorio es la cuantización con imatrix (importance matrix): mradermacher genera un fichero imatrix (0,1 GB) que se usa para ponderar la cuantización de los tensores según su importancia, produciendo las variantes `i1-*`. Según las notas del autor, las cuantizaciones IQ suelen preferirse frente a cuantizaciones no-IQ de tamaño similar, y variantes como i1-IQ3_S "superan a Q3_K*". También se ofrece un conjunto de cuantizaciones estáticas en el repositorio hermano `mradermacher/zaki-brain-v2-GGUF`.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada por documentacion; el tamano del modelo (1,4 M de parametros) hace improbable una generacion de texto coherente de proposito general.
-- Razonamiento, codigo y matematicas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generación de texto conversacional: la model card etiqueta el modelo como `conversational`, orientado a diálogo multi-turno.
+- Idiomas: inglés declarado en los metadatos (`language: en`); no se documentan otras lenguas.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de infraestructura de inferencia compatible con la API de Hugging Face.
+- Ejecución local: al estar en formato GGUF, es compatible con llama.cpp, Ollama y otros runners GGUF.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente o razonamiento multi-paso: no disponibles en la información proporcionada.
+- Visión, audio o modo thinking: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Experimentacion educativa con cuantizacion GGUF: el repo permite probar el flujo completo de carga de un modelo GGUF en llama.cpp u Ollama con un modelo de apenas 1,4 M de parametros, util para validar pipelines sin coste de hardware.
-- Pruebas de integracion en CI: al ser un modelo minimo, puede usarse como fixture para verificar que un servicio de inferencia arranca, carga pesos y responde, sin consumir recursos significativos.
-- Comparativa de tecnicas de cuantizacion: las 24 variantes publicadas (desde IQ1_S hasta Q6_K) permiten medir el impacto de cada esquema de cuantizacion sobre la perplejidad y el tamano del archivo en un mismo modelo.
-- Validacion de herramientas de conversion: util para comprobar que scripts de conversion `hf` a GGUF y utilidades de imatrix funcionan correctamente sobre repos pequenos.
-- Demostraciones de despliegue en entornos con memoria muy limitada: el tamano reducido permite ejecutar el modelo en dispositivos embebidos o contenedores con restricciones severas de RAM.
-- Benchmarking de latencia de llama.cpp: sirve como caso base de carga y generacion en CPU para calibrar el overhead fijo del runtime, independientemente de la calidad del modelo.
+- Chat local en GPU de consumo: con las cuantizaciones i1-Q4_K_M (3,5 GB) o i1-Q4_K_S (3,5 GB), el modelo cabe en GPU con 6-8 GB de VRAM y permite desplegar un asistente conversacional en inglés sin conexión a servicios externos.
+- Prototipado rápido en CPU: las variantes i1-IQ2_M (2,7 GB) o i1-Q3_K_M (3,3 GB) permiten ejecutar el modelo en portátiles sin GPU dedicada mediante llama.cpp, a costa de menor calidad.
+- Integración en aplicaciones de escritorio: al ser GGUF, puede empaquetarse con Ollama o llama.cpp en herramientas de escritorio que requieran un modelo conversacional local sin dependencia de red.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 23 variantes del mismo modelo, lo que permite medir el impacto de la cuantización (de IQ1 a Q6_K) sobre la perplejidad y la calidad de las respuestas en un mismo modelo base.
+- Filtrado y generación de texto en pipelines por lotes: con throughput alto en GPU para las variantes Q4, el modelo puede emplearse para tareas de generación de texto en inglés en procesos offline.
+- Base para fine-tuning o experimentación: el modelo base en safetensors (referenciado por el repositorio de cuantizaciones) puede servir como punto de partida para ajuste fino, aunque no se documentan recetas de entrenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en todas las cuantizaciones; con 1,4 M de parametros, incluso Q6_K ocupa del orden de unos pocos MB de pesos, y el grueso del consumo vendra del contexto y del runtime.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; tambien funciona en CPU.
-- Cabe en cualquier GPU de consumo (GTX 1050, RTX 3060, RTX 4090, etc.) e incluso en Raspberry Pi y dispositivos similares.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. vLLM y TGI no estan confirmados para este modelo.
-- Latencia y throughput: no disponibles; por el tamano, la latencia estara dominada por el overhead del runtime y no por el computo de los pesos.
+- VRAM estimada para inferencia (según tamaño de fichero GGUF, con overhead adicional de contexto y caché KV):
+  - i1-IQ1_S: 2,4 GB
+  - i1-IQ2_M: 2,7 GB
+  - i1-Q3_K_M: 3,3 GB
+  - i1-IQ4_XS: 3,4 GB
+  - i1-Q4_K_M: 3,5 GB
+  - i1-Q5_K_M: 3,7 GB
+  - i1-Q6_K: 3,9 GB
+- GPU recomendadas: para las variantes Q4 en adelante, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB es suficiente; una RTX 4090 permite ejecutar la variante Q6_K con contexto largo. Para despliegue en servidor, A100 o H100 no son necesarias dado el tamaño del modelo, pero permiten mayor paralelismo y throughput.
+- Cabe en GPU de consumo: sí, todas las variantes caben en GPU con 6 GB o más de VRAM; las variantes IQ1/IQ2 pueden caber en 4 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runner compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia tipo TGI o similares, aunque no se detalla.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la informacion proporcionada, y el tamano de 1,4 M de parametros no encaja en ninguna categoria estandar de LLM de proposito general.
+No se dispone de información sobre el modelo base (`harirhm/zaki-brain-v2`) más allá de su recuento de parámetros, por lo que no es posible comparar su rendimiento, contexto o licencia con alternativas. La comparación se limita a nivel de formato y tamaño de cuantización.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| `mradermacher/zaki-brain-v2-i1-GGUF` (este) | 4,63 B | no disponible | no disponible | GGUF (23 variantes imatrix) | Hugging Face, 9.873 descargas |
+| `mradermacher/zaki-brain-v2-GGUF` (cuantizaciones estáticas) | 4,63 B | no disponible | no disponible | GGUF estáticas | Hugging Face |
+| `harirhm/zaki-brain-v2` (modelo base) | 4,63 B | no disponible | no disponible | safetensors | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card sustantiva, ni licencia, ni idiomas, ni datos de entrenamiento, lo que impide evaluar su idoneidad para cualquier uso en produccion.
-- Licencia no disponible: no puede asumirse permiso para uso comercial; debe consultarse el repo original `harirhm/zaki-brain-v2`.
-- Tamano extremadamente reducido (1.391.607 parametros): la calidad de generacion de texto sera previsiblemente muy limitada o nula para tareas reales.
-- Riesgo de alucinacion: no evaluable por falta de benchmarks, pero estructuralmente alto en modelos de este tamano.
-- Sin garantias de mantenimiento: el repo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha, lo que sugiere un artefacto recien publicado sin validacion de la comunidad.
-- No usar como base para decisiones automatizadas ni para atencion al cliente sin una evaluacion previa exhaustiva.
+- Licencia no declarada: no se especifica la licencia del modelo base ni de las cuantizaciones, lo que impide confirmar si el uso comercial está permitido. Es imprescindible verificar la licencia del modelo base `harirhm/zaki-brain-v2` antes de cualquier despliegue en producción.
+- Idioma: solo se declara inglés; el rendimiento en castellano u otras lenguas no está documentado y probablemente sea limitado.
+- Contexto desconocido: no se publica la longitud máxima de contexto, por lo que no se puede garantizar el comportamiento en conversaciones largas o documentos extensos.
+- Riesgo de alucinación: no hay datos de evaluación que permitan cuantificar la tasa de alucinación; al ser un modelo de 4,63 B sin benchmarks publicados, la fiabilidad en tareas factuales es incierta.
+- Sesgos: no se documentan sesgos conocidos ni medidas de mitigación.
+- Calidad de las cuantizaciones extremas: las variantes IQ1 e IQ2 (2,4-2,7 GB) degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "mostly desperate". Para producción se recomienda Q4_K_M o superior.
+- Ficheros multiparte: algunas variantes pueden estar divididas en varios ficheros GGUF; es necesario concatenarlas según las instrucciones de TheBloke referenciadas en la model card.
+- Sin garantías de soporte: el repositorio es una cuantización de terceros (mradermacher), no el modelo oficial; cambios o retiradas del modelo base pueden afectar la reproducibilidad.
 
 ## Enlaces
 
-- Repo de cuantizacion: https://huggingface.co/mradermacher/zaki-brain-v2-i1-GGUF
+- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/zaki-brain-v2-i1-GGUF
 - Modelo base: https://huggingface.co/harirhm/zaki-brain-v2
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/zaki-brain-v2-GGUF
+- Página de descargas del autor para este modelo: https://hf.tst.eu/model#zaki-brain-v2-i1-GGUF
+- README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Análisis de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica de perplejidad de ikawrakow sobre cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Empresa del autor: https://www.nethype.de/

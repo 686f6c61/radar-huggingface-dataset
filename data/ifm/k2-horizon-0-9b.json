@@ -5,7 +5,7 @@
   "author": "IFM",
   "url": "https://huggingface.co/IFM/K2-Horizon-0.9B",
   "created_at": "2026-09-01T22:55:52.000Z",
-  "updated_at": "2026-11-10T13:17:26.000Z",
+  "updated_at": "2026-11-22T01:05:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 106,
-  "downloads_30d": 12496,
+  "downloads_30d": 12640,
   "trending_score": 13,
   "parameters": 1078285824,
   "parameters_human": "1.08B",

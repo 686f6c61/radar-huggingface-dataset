@@ -2,95 +2,102 @@
 
 ## Resumen
 
-Hy4-flash-oQh8-BF16-Engram es una derivada comunitaria del modelo instructivo Hy4-flash de Tencent, publicada por el usuario apetersson. No se trata de una cuantización oficial de Tencent ni de un checkpoint autocontenido: es un nucleo de texto en formato oMLX (variante de MLX) en el que solo se han cuantizado los 82 bancos de expertos enrutados fusionados, mientras que las cuatro tablas de embeddings se mantienen en BF16 originales y deben descargarse por separado desde el repositorio oficial de Tencent. El paquete completo ocupa 167,2 GB repartidos en 141 shards, con 46.465.674.773 parametros totales.
+Hy4-flash-oQh8-BF16-Engram es una derivacion comunitaria cuantizada del modelo instructivo tencent/Hy4-flash, publicada por el usuario apetersson. No se trata de una cuantizacion oficial de Tencent, sino de una conversion orientada al ecosistema MLX (Apple Silicon) que reduce el nucleo de texto a 8 bits mientras conserva en BF16 la torre de vision y las tablas Engram originales. El resultado es un checkpoint de aproximadamente 42.224 millones de parametros con un repositorio de 176,5 GB, pensado para ejecutarse en equipos Apple Silicon de gran capacidad de memoria unificada.
 
-El modelo base, tencent/Hy4-flash, es un transformer con arquitectura de mezcla de expertos (MoE) orientado a generacion de texto y conversacion. Esta derivada elimina las capacidades de vision y el modulo DFly presentes en el original, por lo que es estrictamente texto. La cuantizacion aplicada es de 8 bits con rotacion Walsh-Hadamard firmada de 256 anchos, agrupacion de 128 con escalas y sesgos afines en la base rotada, y no es GPTQ calibrado.
+El modelo resuelve un problema practico: ejecutar un modelo de gran tamano con arquitectura MoE y soporte de vision en hardware Apple sin disponer de GPUs dedicadas. Para ello combina cuantizacion RTN (round-to-nearest, sin calibracion) de 8 bits con rotacion Walsh-Hadamard de 256 elementos en los expertos enrutados y cuantizacion afín de grupo 64 en el tronco denso, lo que eleva el rendimiento de decodificacion de 25,8 a 29,3 tok/s segun el autor.
 
-Su relevancia es limitada y muy especifica: sirve para ejecutar el modelo en hardware Apple Silicon mediante una bifurcacion concreta de oMLX, ya que la version estandar v0.8.0 no carga esta arquitectura. El autor reporto una prueba corta de 28 iteraciones de decodificacion a 0,94 tokens/s con una cache de expertos de 16 GiB respaldada por SSD en un M5 Ultra con 256 GiB de RAM, ademas de generar correctamente "Paris" y el token de fin. No hay datos de benchmarks, idiomas soportados ni velocidad en regimen completamente residente.
+Su relevancia actual radica en que demuestra un flujo de cuantizacion especifico para MLX sobre una arquitectura hibrida con expertos, tablas Engram e iHC, manteniendo verificacion byte a byte de los tensores no cuantizados y de la torre de vision. La licencia es la Tencent Hy License v1.0, no Apache 2.0, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), formato oMLX (derivado de MLX) |
-| Parametros totales | 46.465.674.773 |
+| Arquitectura | MoE (mezcla de expertos) con tronco denso, torre de vision y tablas Engram; formato MLX |
+| Parametros totales | 42.224.901.653 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits, rotacion Walsh-Hadamard firmada de 256 anchos, grupo 128 afin con escalas y sesgos en base rotada; embeddings en BF16 sin recuantizar |
+| Tipos de cuantizacion | 8 bits RTN en expertos enrutados (Walsh-Hadamard 256 + afín grupo 128) y 8 bits RTN en tronco denso (grupo 64); vision y Engram en BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | tencent-hy-license (Tencent Hy License v1.0, no Apache 2.0) |
-| Formato de pesos | safetensors (141 shards, oMLX); requiere tablas externas BF16 del repo original |
+| Formato de pesos | safetensors (141 shards de texto, 161.708.155.556 bytes) + bundle de vision BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base tencent/Hy4-flash emplea una arquitectura transformer con mezcla de expertos, segun se deduce de la estructura de 82 bancos de expertos enrutados fusionados que esta derivada cuantiza. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO, ya que la model card de esta derivada no los detalla y la informacion proporcionada no los incluye.
+El modelo base tencent/Hy4-flash es un transformer con mezcla de expertos (MoE) que incorpora componentes poco habituales: 82 bancos de expertos fusionados, proyecciones de atencion desdobladas (q_a, q_b, kv_a, kv_b_proj), un router, un indexador disperso, proyecciones Engram, iHC y un tronco denso con MLP latente. La derivacion de apetersson no reentrena el modelo: aplica cuantizacion post-entrenamiento sobre el checkpoint original fijado en la revision d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959.
 
-La innovacion tecnica de esta publicacion es el esquema de cuantizacion: en lugar de GPTQ calibrado, aplica una rotacion Walsh-Hadamard firmada de 256 elementos antes de una cuantizacion afin de 8 bits con grupo de 128, almacenando los signos, escalas y sesgos resultantes. Los 1.350 tensores de texto restantes se compararon byte a byte con el original para garantizar su integridad. El autor excluye explicitamente la vision y el modulo DFly, y conserva las cuatro tablas de embeddings en BF16 originales (118,02 GiB) que deben descargarse del repositorio de Tencent fijado a la revision d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959. La carga requiere una bifurcacion especifica de oMLX (commit 6278134636a26853843e76186ba2b9203782c5bc) que verifica el shard 4 (capa 1, 29,50 GiB) y lee solo las filas necesarias de los shards 3, 2 y 1 (capas 11, 21 y 31) desde SSD interno.
+La innovacion tecnica esta en el esquema de cuantizacion. Los expertos enrutados usan rotacion Walsh-Hadamard firmada de 256 elementos y cuantizacion afín RTN de 8 bits con grupo 128 en la base rotada, almacenando signos, escalas y sesgos. El tronco denso (419 proyecciones de atencion, MLP compartido, denso y latente, y la cabeza LM) usa RTN afín de 8 bits con grupo 64 de MLX estandar; al leerse en cada token, esta decision mejora la decodificacion. Los 931 tensores restantes (kv_b_proj, router, indexador disperso, proyecciones Engram, iHC, normas y embeddings) son identicos byte a byte al original. No se dispone de informacion sobre el volumen de tokens de entrenamiento ni sobre el proceso de alineacion (RLHF/DPO) del modelo base.
 
 ## Capacidades
 
-- Generacion de texto y conversacion en modo instructivo, heredadas del modelo base tencent/Hy4-flash.
-- Razonamiento y respuesta multi-turno, segun la pipeline declarada de text-generation y la etiqueta conversational.
-- Capacidades de codigo y matematicas: no documentadas en la informacion disponible para esta derivada.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; el campo de idiomas no esta rellenado.
-- Vision: explicitamente omitida en esta derivada (el autor indica que vision y DFly no se incluyen).
-- Modo thinking, audio u otras capacidades especiales: no disponible.
+- Generacion de texto conversacional e instructiva a partir de prompts, con el comando nativo `omlx hy4-flash generate`.
+- Razonamiento y generacion de codigo: el ejemplo de la model card solicita una funcion Python para fusionar iterables ordenados de forma perezosa.
+- Extraccion de caracteristicas de imagen mediante la torre de vision BF16 independiente (27 bloques de encoder y proyector imagen-lenguaje), verificada byte a byte.
+- Procesamiento de imagenes con el procesador de imagenes original incluido en el bundle de vision.
+- Soporte de decodificacion greedy y control de parametros de generacion (max-tokens, prefill-chunk, precast-lm-head).
+- Capacidades multilingues: no disponible.
+- Tool calling, function calling y comportamiento agentico: no disponible en la informacion proporcionada.
+- Generacion de respuestas a partir de imagenes: no implementada en el comando oMLX actual; la extraccion de caracteristicas y la generacion de texto estan verificadas por separado.
 
 ## Casos de uso
 
-- Experimentacion en Apple Silicon: ejecutar el modelo base Hy4-flash en equipos Mac con memoria unificada amplia mediante la bifurcacion de oMLX indicada, usando cache de expertos respaldada por SSD para los bancos que no caben en RAM.
-- Investigacion sobre cuantizacion no calibrada: el esquema Walsh-Hadamard de 8 bits con grupo 128 permite estudiar la degradacion frente al BF16 original en tareas de generacion de texto, comparando los 1.350 tensores verificados byte a byte.
-- Generacion de texto conversacional en local: para entornos con requisitos de privacidad donde no se quiera enviar prompts a la nube, siempre que se acepten las limitaciones de velocidad reportadas (0,94 tokens/s en la prueba del autor).
-- Validacion de integridad de checkpoints: el manifest y el aviso de cambios a nivel de fichero permiten auditar que tensores se modificaron y cuales se conservaron, util en flujos de verificacion de artefactos.
-- Pruebas de despliegue con tablas externas: sirve para validar pipelines que combinan un nucleo cuantizado con embeddings BF16 descargados por separado, un patron util en entornos con almacenamiento limitado.
-- Reproduccion de la prueba del autor: verificar la generacion de "Paris" y del token de fin en un M5 Ultra de 256 GiB, como caso de regresion minima para la bifurcacion de oMLX.
+- Generacion de codigo en local sobre Apple Silicon: el modelo puede recibir prompts de programacion y producir funciones completas, como el ejemplo de fusion perezosa de iterables ordenados, con un rendimiento medido de 29,3 tok/s en decodificacion tras cuantizar el tronco denso.
+- Prototipado de asistentes conversacionales en estaciones de trabajo Mac: al ejecutarse mediante MLX y oMLX, permite iterar sobre prompts instructivos sin depender de servicios en la nube, siempre que se disponga de unos 170 GB de memoria unificada libre.
+- Extraccion de embeddings visuales para pipelines de recuperacion: el bundle de vision permite codificar imagenes localmente sin descargar el nucleo de texto de 162 GB, util para indexar y comparar caracteristicas de imagen.
+- Evaluacion de tecnicas de cuantizacion: el modelo sirve como banco de pruebas para comparar el esquema oQh8 (Walsh-Hadamard + RTN) frente a la revision BF16 byte-exacta disponible en b20c188b, midiendo impacto en velocidad y fidelidad.
+- Investigacion sobre arquitecturas MoE con tablas Engram: los tensores Engram se conservan en BF16 y se cargan desde los shards originales de Tencent, lo que permite estudiar su efecto sin reentrenar.
+- Despliegue de inferencia de texto en hardware de memoria unificada: con las 82 bancos de expertos residentes (pico MLX de 163,2 GB), se puede mantener una sesion de generacion continua en un Mac de 256 GB.
+- Generacion de documentacion tecnica y explicaciones de codigo: el modelo acepta prompts instructivos y devuelve texto estructurado, adecuado para tareas de redaccion asistida en local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Los unicos datos publicados en la informacion disponible son mediciones de velocidad del autor, no benchmarks de calidad:
 
-El unico dato de rendimiento reportado por el autor es una prueba corta de decodificacion: 0,94 tokens/s sobre 28 iteraciones con una cache de expertos de 16 GiB respaldada por SSD en un M5 Ultra con 256 GiB de RAM. El propio autor advierte que no es una cifra de velocidad en regimen completamente residente ni con batching.
+| Medicion | Entorno | Resultado |
+|---|---|---|
+| Decodificacion con tronco BF16 | M5 Ultra 256 GB, MLX 0.32.4, greedy | 25,8 tok/s |
+| Decodificacion con tronco 8 bits | M5 Ultra 256 GB, MLX 0.32.4, greedy | 29,3 tok/s |
+| Pico de memoria MLX | Todos los bancos de expertos residentes | 163,2 GB |
+| Carga de tablas Engram | Primera tabla por filas (--first-engram pread) | 29,50 GiB |
+
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el nucleo oMLX ocupa 167.239.498.812 bytes (unos 155,7 GiB) en 141 shards, mas 118,02 GiB de tablas de embeddings BF16 externas; el total supera los 270 GiB de almacenamiento.
-- GPU recomendadas: no aplica en el sentido habitual; el autor valido el modelo en un Apple M5 Ultra con 256 GiB de memoria unificada.
-- Compatibilidad con GPU consumer: no disponible; no se documenta ejecucion en RTX 4090, A100, H100 ni similares.
-- Opciones de despliegue: exclusivamente la bifurcacion de oMLX en el commit 6278134636a26853843e76186ba2b9203782c5bc; la version estandar oMLX v0.8.0 no carga esta arquitectura. No es GGUF, por lo que llama.cpp y Ollama no son aplicables tal cual; tampoco es un checkpoint autocontenido de Transformers.
-- Almacenamiento: se recomienda SSD interno para los shards 3, 2 y 1 (capas 11, 21 y 31), de los que solo se leen las filas necesarias.
-- Latencia y throughput: 0,94 tokens/s en la prueba corta citada; sin datos para regimen residente ni batching.
+- VRAM/memoria unificada estimada: aproximadamente 170 GB de memoria unificada directamente libre; se recomienda un Mac de 256 GB con otras aplicaciones cerradas.
+- GPU recomendadas: Apple Silicon de gama alta; la medicion oficial se realizo en un M5 Ultra con 256 GB. No hay datos para A100, H100 ni RTX 4090, ya que el formato MLX esta orientado a Apple Silicon.
+- Cabida en GPU consumer: no en GPUs dedicadas convencionales por el formato y el tamano; en Apple Silicon requiere configuraciones de memoria muy alta.
+- Opciones de despliegue: oMLX con el pull request jundot/omlx#5423 (commit bb26851b o posterior para la revision de tronco 8 bits); las versiones estandar de oMLX no cargan esta arquitectura. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: decodificacion de 29,3 tok/s en M5 Ultra con tronco 8 bits; si la memoria libre es insuficiente, macOS pagina los buffers de GPU y la decodificacion cae por debajo de 1 tok/s.
+- Almacenamiento: repositorio de 176,5 GB mas 118,02 GiB de tablas Engram descargadas de Tencent, con staging en SSD interno.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy4-flash-oQh8-BF16-Engram (esta ficha) | 46.465.674.773 | no disponible | oMLX safetensors + tablas BF16 externas | tencent-hy-license | Hugging Face, 0 descargas |
-| tencent/Hy4-flash (base) | no disponible en la informacion | no disponible | safetensors BF16 (148 shards) | tencent-hy-license | Hugging Face, oficial |
-| Otras derivadas de Hy4-flash | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Hy4-flash-oQh8-BF16-Engram | 42.224.901.653 | no disponible | 8 bits RTN en texto, BF16 en vision y Engram | tencent-hy-license | Hugging Face, MLX/oMLX |
+| tencent/Hy4-flash (original) | no disponible en la informacion | no disponible | BF16 | tencent-hy-license | Hugging Face |
+| Hy4-flash-oQh8-BF16-Engram revision b20c188b | 42.224.901.653 | no disponible | Tronco BF16 byte-exacto | tencent-hy-license | Hugging Face |
 
-No se dispone de informacion sobre modelos comparables de la misma categoria en los datos proporcionados; la unica referencia solida es el modelo base oficial de Tencent, del que esta publicacion es una derivada parcial.
+No se dispone de datos de benchmarks ni de especificaciones completas de alternativas de otros fabricantes en la informacion proporcionada, por lo que no es posible una comparativa de rendimiento con modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- No es una cuantizacion oficial de Tencent ni un checkpoint autocontenido: requiere descargar tablas de embeddings BF16 del repositorio original y una bifurcacion concreta de oMLX.
-- La cuantizacion no es GPTQ calibrado; el autor no reporta evaluaciones de calidad frente al BF16 original mas alla de una prueba cualitativa de generacion.
-- Vision y DFly estan omitidos: no sirve para tareas multimodales.
-- Idiomas soportados no documentados; no se puede garantizar comportamiento multilingue.
-- Longitud de contexto y parametros activos no disponibles; dificulta planificar despliegues con prompts largos.
-- Rendimiento muy bajo en la unica prueba publicada (0,94 tokens/s) y sin datos de throughput con batching o en regimen residente.
-- Licencia Tencent Hy v1.0 (no Apache 2.0): es necesario revisar las restricciones de uso comercial antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion y sesgos: no evaluados ni documentados en la informacion disponible.
-- El campo JSON de cualificacion del manifest original es un registro del momento de la conversion, no un resultado de inferencia posterior; las verificaciones se generan en la maquina del usuario y no son descargables.
-- Repositorio con 0 descargas y 0 likes: sin validacion comunitaria ni soporte practico mas alla del autor.
+- No es una cuantizacion oficial de Tencent; es una derivacion comunitaria y debe evaluarse como tal.
+- La cuantizacion es RTN sin calibracion (no GPTQ), lo que puede degradar la fidelidad respecto al checkpoint original en tareas sensibles.
+- La licencia Tencent Hy License v1.0 no es Apache 2.0; es necesario revisar las restricciones de uso comercial antes de desplegar en produccion.
+- Requiere aproximadamente 170 GB de memoria unificada libre; con menos memoria el rendimiento cae por debajo de 1 tok/s por paginacion del sistema.
+- Depende de una version no fusionada de oMLX (pull request 5423); las versiones estables no cargan la arquitectura.
+- Las tablas Engram no se incluyen en el repositorio y deben descargarse por separado desde Tencent (118,02 GiB), con pasos de staging y verificacion manuales.
+- La generacion de respuestas a partir de imagenes no esta implementada; solo se verifica la extraccion de caracteristicas visuales.
+- No hay informacion sobre sesgos, riesgo de alucinacion, cobertura idiomatica ni longitud de contexto, por lo que estos aspectos no pueden evaluarse con los datos disponibles.
+- El modelo DFly queda omitido en esta release.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/apetersson/Hy4-flash-oQh8-BF16-Engram
-- Modelo base oficial: https://huggingface.co/tencent/Hy4-flash
-- Revision fijada del modelo base: https://huggingface.co/tencent/Hy4-flash/tree/d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959
-- Licencia Tencent Hy v1.0: https://huggingface.co/tencent/Hy4-flash/blob/d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959/LICENSE
-- Bifurcacion de oMLX con instrucciones: https://github.com/apetersson/omlx/blob/6278134636a26853843e76186ba2b9203782c5bc/docs/hy4-flash.md
-- Aviso de cambios a nivel de fichero: MODIFICATIONS.md (incluido en el repositorio del modelo)
-- Manifest de conversion: manifest.json (incluido en el repositorio del modelo)
+- Revision con tronco BF16 byte-exacto: https://huggingface.co/apetersson/Hy4-flash-oQh8-BF16-Engram/tree/b20c188b164d6fc8428146d0e081ea2f8a2ad2b0
+- Modelo base tencent/Hy4-flash: https://huggingface.co/tencent/Hy4-flash/tree/d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959
+- Licencia Tencent Hy License v1.0: https://huggingface.co/tencent/Hy4-flash/blob/d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959/LICENSE
+- Pull request de oMLX: https://github.com/jundot/omlx/pull/5423
+- Documentacion del pull request: https://github.com/jundot/omlx/pull/5423/files
+- Repositorio oMLX: https://github.com/jundot/omlx

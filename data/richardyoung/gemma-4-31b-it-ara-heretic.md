@@ -2,53 +2,51 @@
 
 ## Resumen
 
-Gemma 4 31B it ARA heretic es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario richardyoung. El identificador del repositorio indica que se trata de una variante de la familia Gemma 4 de Google, en su version instruct (it), con 31 000 millones de parametros, y con el sufijo "ARA-heretic", que en la practica de la comunidad suele indicar un ajuste fino orientado a reducir los rechazos o el alineamiento de seguridad del modelo original (abliteracion o "decensoring"). No obstante, la model card del autor es la plantilla autogenerada por Hugging Face y no aporta ninguna confirmacion de estos extremos.
+gemma-4-31B-it-ARA-heretic es un ajuste fino (finetune) del modelo multimodal google/gemma-4-31B-it, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "heretic" o "abliterated": el objetivo declarado del autor es eliminar o atenuar los comportamientos de rechazo y censura del modelo original, manteniendo el resto de capacidades. El pipeline registrado es image-text-to-text, lo que confirma que conserva la entrada de imagen ademas de texto.
 
-El dato objetivo disponible es el recuento de parametros del fichero safetensors: 31 273 086 512 parametros, con un repositorio de 62,6 GB, lo que es coherente con pesos en precision bf16/fp16. La pipeline declarada es image-text-to-text, de modo que el modelo acepta entradas de imagen y texto y genera texto. La libreria es transformers y las etiquetas incluyen gemma4, conversational y endpoints_compatible.
+El modelo cuenta con 31.273.086.512 parametros (unos 31,27 mil millones) almacenados en formato safetensors, con un repositorio de 62,6 GB, lo que sugiere pesos en precision bf16/fp16 sin cuantizar. La ficha de Hugging Face no documenta la longitud de contexto, los idiomas soportados ni los detalles del proceso de entrenamiento, y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones antes de descargarlo.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio no tiene descargas ni likes, la licencia no esta declarada y la model card no documenta datos de entrenamiento, evaluacion ni limitaciones. Cualquier uso en produccion exige una validacion propia previa.
+La relevancia de este modelo es doble: por un lado, permite estudiar tecnicas de abliteration sobre un modelo de 31B con capacidades multimodales; por otro, su licencia declarada (apache-2.0 en los metadatos, openrail++ en las etiquetas) resulta contradictoria y exige verificacion antes de cualquier uso comercial. El autor incluye una referencia arxiv (2607.02770) que no se puede confirmar con la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta gemma4; se infiere familia transformer de Gemma 4, sin confirmacion documental) |
-| Parametros totales | 31 273 086 512 (31,27 B) |
+| Arquitectura | Transformer multimodal (image-text-to-text), derivada de google/gemma-4-31B-it; detalles internos no disponibles |
+| Parametros totales | 31.273.086.512 (aprox. 31,27B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se listan GGUF ni AWQ) |
+| Tipos de cuantizacion | no disponible en la ficha; al publicarse en safetensors, admite cuantizacion posterior a GGUF/AWQ/GPTQ mediante herramientas externas |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Pipeline | image-text-to-text |
-| Libreria | transformers |
-| Tamano del repositorio | 62,6 GB |
-| Etiquetas | transformers, safetensors, gemma4, image-text-to-text, conversational, arxiv:1910.09700, endpoints_compatible, region:us |
+| Licencia | apache-2.0 en los metadatos; openrail++ en las etiquetas (contradiccion sin resolver) |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada en la model card sobre la arquitectura interna del modelo. El identificador y la etiqueta gemma4 apuntan a la familia Gemma 4 de Google, y la pipeline image-text-to-text implica un componente de vision acoplado a un decodificador de lenguaje, pero el autor no documenta la configuracion de capas, atencion, tokenizador ni proyector multimodal. Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF, DPO o ajuste con preferencias.
+La informacion disponible no detalla la arquitectura interna del modelo base google/gemma-4-31B-it mas alla de su caracter multimodal (entrada de imagen y texto, salida de texto). El ajuste publicado por richardyoung se etiqueta como "heretic", "uncensored", "decensored" y "abliterated", terminos que en la practica describen intervenciones sobre las direcciones de activacion o sobre los pesos para reducir la probabilidad de respuestas de rechazo. No se especifica si el proceso fue una abliteration clasica por direcciones de rechazo, un DPO con pares de preferencia o una combinacion.
 
-El sufijo "heretic" y el prefijo "ARA" no vienen explicados en la model card. En la practica de la comunidad, "heretic" suele designar ajustes finos que reducen el comportamiento de rechazo del modelo alineado original, y "ARA" podria corresponder a una tecnica de abliteracion o a un conjunto de datos concreto, pero no hay documentacion que lo confirme. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y no debe tomarse como dato verificado.
+Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, etc.). La etiqueta "reproducible" sugiere que el autor pretende que el procedimiento pueda replicarse, pero no se incluyen scripts ni configuraciones en la informacion proporcionada. Cualquier afirmacion sobre el metodo exacto seria especulativa.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta conversational y la pipeline declarada.
-- Procesamiento de entradas imagen-texto y generacion de texto (image-text-to-text), aunque no se detallan tareas concretas de vision.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- No se documenta el conjunto de idiomas soportados.
-- No se documenta modo thinking, audio ni otras capacidades especiales.
-- El ajuste "heretic" sugiere, sin confirmacion, una menor tasa de rechazos ante peticiones que el modelo base rechazaria.
+- Generacion de texto conversacional multi-turno, heredada del modelo base instruct.
+- Entrada de imagen (image-text-to-text): descripcion, respuesta a preguntas visuales y razonamiento sobre imagenes, segun el pipeline declarado.
+- Razonamiento y matematicas: capacidades esperables del base gemma-4-31B-it, aunque no se aportan benchmarks que las cuantifiquen.
+- Generacion de codigo: no verificada en la informacion disponible.
+- Tool calling / function calling: no documentado en la ficha.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingues: no disponibles (el campo de idiomas esta vacio).
+- Modo "sin censura": el ajuste busca reducir rechazos, pero no se especifica el grado ni el metodo.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 
-- Prototipado de asistentes multimodales: el modelo acepta imagen y texto, por lo que puede emplearse para describir capturas, extraer informacion de documentos escaneados o responder preguntas sobre una imagen en entornos de experimentacion, siempre validando la calidad de forma manual.
-- Investigacion sobre alineamiento y seguridad: al tratarse de una variante "heretic", resulta util para estudiar como cambia la tasa de rechazos y el comportamiento ante peticiones sensibles respecto al Gemma 4 original, en un entorno controlado y con supervision.
-- Generacion de codigo asistida en local: con 31 B de parametros y pesos safetensors, puede desplegarse en una GPU de 80 GB o en varias GPUs para tareas de autocompletado y explicacion de codigo, aunque sin datos de benchmarks que respalden su rendimiento.
-- Evaluacion comparativa de ajustes finos: sirve como punto de comparacion frente al modelo base en pruebas internas de calidad, sesgo y robustez, dado que comparte arquitectura y numero de parametros.
-- Procesamiento de documentos con componente visual: clasificacion y resumen de imagenes o PDF renderizados en pipelines de extraccion de informacion, con verificacion posterior de las salidas.
-- Base para ajuste fino adicional: al estar en formato transformers y safetensors, puede reentrenarse con LoRA o QLoRA sobre dominios especificos, aunque la ausencia de licencia clara limita su uso comercial.
+- Investigacion sobre alineacion y abliteration: comparar las respuestas del modelo heretic con las de google/gemma-4-31B-it en un conjunto fijo de prompts permite medir cuanto se ha reducido la tasa de rechazo y que coste tiene en calidad. Es adecuado porque el modelo base esta identificado y el ajuste es publico.
+- Analisis de robustez de filtros de seguridad: usar el modelo como sujeto de prueba para evaluar clasificadores de contenido y politicas de moderacion en pipelines propios.
+- Prototipado de asistentes conversacionales sin restricciones tematicas: en entornos de investigacion controlados, para estudiar conversaciones multi-turno sobre temas que el modelo original rechazaria.
+- Experimentos multimodales: al conservar la entrada de imagen, sirve para probar tecnicas de abliteration en modelos vision-language y observar si el efecto se traslada al canal visual.
+- Generacion de datos sinteticos para entrenamiento: producir respuestas variadas en dominios donde el modelo base es restrictivo, con revision humana posterior obligatoria.
+- Evaluacion comparativa de licencias y despliegue: util para equipos que necesitan medir el coste de servir un modelo de 31B en bf16 (unos 62 GB de pesos) frente a alternativas cuantizadas.
 
 ## Benchmarks y rendimiento
 
@@ -56,36 +54,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16/fp16: aproximadamente 62,6 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica requiere 70-80 GB o mas segun la longitud de contexto.
-- Cuantizacion a 8 bits: en torno a 31-35 GB de VRAM.
-- Cuantizacion a 4 bits: en torno a 16-20 GB de VRAM, aunque no se ofrecen pesos pre-cuantizados en el repositorio.
-- GPU recomendadas: A100 80 GB, H100 80 GB o configuraciones multi-GPU (por ejemplo, 2 x RTX 4090 de 24 GB con reparto de capas).
-- En consumer GPU: no cabe en una unica RTX 4090 a 16 bits; a 4 bits podria caber en una RTX 4090 o RTX 3090, con cuantizacion realizada por el usuario.
-- Opciones de despliegue: transformers con accelerate para reparto multi-GPU; vLLM o TGI si la arquitectura Gemma 4 esta soportada por esas herramientas; llama.cpp u Ollama solo si se generan pesos GGUF, que no estan incluidos.
+- VRAM estimada en bf16/fp16: aproximadamente 62 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se recomienda un nodo con 80 GB o mas.
+- Cuantizacion a 8 bits: alrededor de 31-35 GB de VRAM, viable en una A100 40GB o H100 40GB con margen ajustado.
+- Cuantizacion a 4 bits: alrededor de 16-20 GB de VRAM, viable en RTX 4090 (24 GB) o L40S, con posible degradacion de calidad no medida.
+- GPU recomendadas: H100 80GB, A100 80GB para precision completa; A100 40GB o L40S 48GB para 8 bits; RTX 4090 o RTX 6000 Ada para 4 bits.
+- Despliegue: transformers (libreria declarada); vLLM, TGI o llama.cpp no estan confirmados en la informacion disponible, aunque al ser safetensors estandar pueden ser compatibles segun la arquitectura del base.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| richardyoung/gemma-4-31B-it-ARA-heretic | 31,27 B | no disponible | no disponible | Hugging Face, safetensors |
-| Gemma 4 31B it (modelo base de Google) | 31 B (segun denominacion) | no disponible | no disponible en esta ficha | Hugging Face |
-| Alternativas de ~30 B de la misma categoria | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Notas |
+|---|---|---|---|---|---|
+| richardyoung/gemma-4-31B-it-ARA-heretic | 31,27B | no disponible | imagen + texto | apache-2.0 / openrail++ (contradictorio) | Ajuste abliterated, acceso gated, 603 descargas |
+| google/gemma-4-31B-it | no disponible en la informacion | no disponible | imagen + texto | no disponible en la informacion | Modelo base oficial del que deriva el ajuste |
+| Alternativas abliterated de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-No se dispone de datos verificados de rendimiento ni de licencia de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a parametros y disponibilidad.
+No se dispone de informacion suficiente para comparar rendimiento numerico con otras alternativas.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada y no documenta sesgos, datos de entrenamiento ni evaluacion; no hay garantia de calidad.
-- El sufijo "heretic" sugiere un alineamiento de seguridad reducido; es probable que el modelo acepte peticiones que el Gemma 4 original rechazaria, con el consiguiente riesgo de contenido danino.
-- Riesgo de alucinacion no evaluado; sin benchmarks ni pruebas publicadas.
-- Licencia no declarada: no puede asumirse uso comercial permitido. Es imprescindible contactar con el autor o consultar la licencia de Gemma 4 antes de cualquier despliegue.
-- Idiomas y longitud de contexto no documentados; no se puede planificar un caso de uso multilingue o de contexto largo sin pruebas propias.
-- Repositorio sin descargas ni likes y creado y actualizado el mismo dia: no hay evidencia de comunidad ni de mantenimiento.
-- El tag arxiv:1910.09700 corresponde a Lacoste et al. sobre impacto ambiental y no documenta el modelo; no debe interpretarse como referencia tecnica del mismo.
+- La abliteration puede degradar capacidades: no hay benchmarks que confirmen que el modelo conserva el rendimiento del base en razonamiento, codigo o vision.
+- Riesgo elevado de generar contenido danino o no filtrado: el proposito declarado es reducir rechazos, por lo que no es adecuado para aplicaciones de cara al publico sin capas adicionales de moderacion.
+- Sesgos: no documentados, pero heredados del corpus de entrenamiento del base; la intervencion heretic no los corrige y puede amplificarlos al eliminar rechazos.
+- Alucinacion: sin datos especificos; se espera un comportamiento similar al del base, no medido.
+- Idiomas y contexto: no disponibles, lo que impide garantizar soporte multilingue o ventanas largas en produccion.
+- Licencia ambigua: apache-2.0 en los metadatos frente a openrail++ en las etiquetas; es imprescindible verificar las condiciones reales antes de un uso comercial.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de descargas y despliegues.
+- Procedencia y reproducibilidad: el autor es un usuario individual, no el equipo de Google; la etiqueta "reproducible" no va acompanada de scripts ni configuraciones verificables en la informacion disponible.
+- Referencia arxiv (2607.02770) no verificable con los datos proporcionados.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/richardyoung/gemma-4-31B-it-ARA-heretic
-- Paper citado en los tags (impacto ambiental, Lacoste et al.): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/gemma-4-31B-it-ARA-heretic
+- Modelo base: https://huggingface.co/google/gemma-4-31B-it
+- Paper referenciado en las etiquetas (no verificado): https://arxiv.org/abs/2607.02770

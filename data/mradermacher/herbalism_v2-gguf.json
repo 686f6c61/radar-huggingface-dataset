@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "mradermacher/herbalism_v2-GGUF",
+  "slug": "mradermacher-herbalism_v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/herbalism_v2-GGUF",
+  "created_at": "2024-12-25T08:54:03.000Z",
+  "updated_at": "2026-11-21T22:10:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400178048,
+  "storage_human": "5.4 GB",
+  "context_length": 32768,
+  "base_model": "z3n7r4ck3r/herbalism_v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

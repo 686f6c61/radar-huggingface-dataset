@@ -2,115 +2,120 @@
 
 ## Resumen
 
-Rumble-2-Flash es un modelo de reconocimiento automático del habla (ASR) desarrollado por Reson8, publicado bajo licencia Apache 2.0. Con 508.631.552 parámetros (aproximadamente 0,5B), se posiciona como una alternativa compacta y eficiente para transcripción multilingüe, con soporte nativo para Hugging Face Transformers y vLLM. El modelo emplea la arquitectura `qwen3_asr` y está etiquetado como `qwen3-asr`, lo que sugiere una base derivada de la familia Qwen3 adaptada a la modalidad de audio.
+Rumble-2-Flash es un modelo de reconocimiento automatico del habla (ASR) desarrollado por Reson8, un fine-tuning del modelo base Qwen/Qwen3-ASR-0.6B. Con 508.631.552 parametros reales (etiquetado como 0.5B), esta disenado para transcripcion de audio multilingue en 45 idiomas, incluyendo espanol, ingles, aleman, frances, chino, japones, arabe e hindi, entre otros. El modelo se distribuye bajo licencia Apache 2.0 y es compatible de forma nativa con Hugging Face Transformers y vLLM.
 
-El modelo cubre 45 idiomas, entre ellos español, inglés, alemán, francés, italiano, portugués, chino, japonés, coreano, árabe, hindi y una amplia representación de lenguas europeas y asiáticas. Su diseño prioriza el rendimiento en producción: en la Open ASR Leaderboard (release 18-11-2026, v1.16.1) obtiene un WER medio de 6,60 en la pista inglesa con un RTFx de 6338 sobre una H200 con vLLM, lo que indica un throughput muy elevado para su tamaño.
+La relevancia de este modelo radica en su combinacion de tamano reducido (0.5B parametros) con un rendimiento competitivo en el Open ASR Leaderboard, donde alcanza un WER promedio de 6.60 en la pista de ingles con un RTFx de 6338 sobre una GPU H200. Esto lo posiciona como una opcion atractiva para despliegues en produccion donde el coste computacional y la latencia importan, sin sacrificar cobertura linguistica.
 
-La relevancia actual de Rumble-2-Flash radica en su combinación de tamaño reducido, cobertura lingüística amplia y licencia permisiva, lo que facilita su despliegue en entornos con recursos limitados y su integración en pipelines de transcripción a gran escala sin las restricciones de modelos propietarios.
+El modelo hereda la arquitectura Qwen3-ASR y anade opciones de transcripcion configurables (digitos, fillers, verbatim, deteccion automatica de idioma) que lo hacen flexible para distintos casos de uso. Su integracion con vLLM permite servirlo como endpoint compatible con la API de OpenAI, facilitando su adopcion en pipelines existentes.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_asr (transformer multimodal audio-texto, según tags) |
-| Parámetros totales | 508.631.552 (≈0,5B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (el ejemplo de vLLM usa `--max-model-len 4096`) |
-| Tipos de cuantización | no disponible |
+| Arquitectura | Qwen3-ASR (transformer multimodal audio-texto) |
+| Parametros totales | 508.631.552 (0.5B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (vLLM recomienda `--max-model-len 4096`) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | 45: af, ar, bn, bs, ca, ceb, cs, da, de, el, en, es, eu, fa, fi, fil, fr, hi, hr, hu, id, is, it, ja, ko, lt, lv, mk, ms, mt, nb, nl, pl, pt, ro, ru, sq, sr, sv, th, tr, uk, vi, yue, zh |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que Rumble-2-Flash se basa en la arquitectura `qwen3_asr`, orientada a la transcripción de audio a texto mediante un procesador multimodal (`AutoProcessor` + `AutoModelForMultimodalLM`). El modelo acepta audio como entrada (ruta local, URL, array NumPy o lista de estos) y genera transcripciones, con detección automática de idioma si no se fuerza uno explícito. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
+Rumble-2-Flash es un fine-tuning del modelo Qwen/Qwen3-ASR-0.6B, que emplea una arquitectura transformer multimodal disenada para el procesamiento conjunto de audio y texto. El modelo base Qwen3-ASR combina un encoder de audio con un decoder de lenguaje, permitiendo la transcripcion condicionada por prompt e idioma. El fine-tuning realizado por Reson8 se orienta a mejorar el rendimiento en tareas de reconocimiento automatico del habla multilingue y a anadir opciones de configuracion de la transcripcion.
 
-El modelo expone opciones de transcripción configurables a través de `chat_template_kwargs` (o directamente en `processor.apply_chat_template`): `language` (forzar idioma por nombre en inglés), `digits` (números como dígitos o palabras, por defecto `true`), `filler` (conservar muletillas como "um"/"uh", por defecto `false`) y `verbatim` (colapsar palabras repetidas cuando se desactiva, por defecto `true`). Estas opciones permiten adaptar la salida a distintos requisitos de post-procesado. No se dispone de información sobre innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+La model card no proporciona detalles sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. Tampoco se especifican innovaciones tecnicas adicionales mas alla de las heredadas del modelo base. La informacion disponible se limita a los resultados de evaluacion en el Open ASR Leaderboard (release 18-11-2026, v1.16.1), ejecutados con vLLM sobre una GPU H200.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (ASR) en 45 idiomas, con detección automática de idioma si no se especifica.
-- Transcripción con control de formato: dígitos versus palabras, conservación o eliminación de muletillas, colapso de repeticiones.
-- Procesamiento por lotes: el campo `audio` acepta una lista de rutas, URLs o arrays.
-- Integración nativa con Hugging Face Transformers (`AutoProcessor`, `AutoModelForMultimodalLM`).
-- Soporte de servido con vLLM mediante API compatible con OpenAI (`chat.completions`), incluyendo entrada de audio en base64 (`audio_url`).
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio generativo; el modelo está especializado en transcripción.
+- Reconocimiento automatico del habla (ASR) en 45 idiomas, con deteccion automatica de idioma si no se especifica.
+- Transcripcion condicionada por idioma: se puede forzar el idioma usando su nombre en ingles (por ejemplo, `"Spanish"`, `"Dutch"`).
+- Control de formato de salida: numeros como digitos o palabras (`digits`), conservacion de muletillas (`filler`), colapso de palabras repetidas (`verbatim`).
+- Procesamiento de audio desde ruta local, URL, array de NumPy o lista de estos.
+- Integracion nativa con Hugging Face Transformers mediante `AutoProcessor` y `AutoModelForMultimodalLM`.
+- Soporte de servido con vLLM como endpoint compatible con la API de OpenAI (chat completions con audio en base64).
+- Capacidad de devolver la transcripcion en formato `transcription_only` o `parsed` (incluyendo el idioma detectado).
+- No se mencionan capacidades de tool calling, agentes, vision ni audio generation.
 
 ## Casos de uso
 
-- Transcripción de reuniones y actas: con un WER de 9,24 en AMI (reuniones) y RTFx de 4245, el modelo es adecuado para procesar grabaciones de reuniones largas y generar actas automáticas en entornos corporativos.
-- Subtitulado y accesibilidad: su WER de 2,43 en VoxPopuli (discurso parlamentario) y 3,08 en SPGISpeech lo hacen apto para generar subtítulos de alta calidad en vídeo y contenido divulgativo.
-- Atención al cliente y análisis de llamadas: con WER de 10,25 en URGENT24 (audio telefónico de emergencias) y 13,14 en conversacional privado, puede transcribir llamadas para análisis de calidad, cumplimiento y detección de intenciones, aunque requiere revisión en audio muy ruidoso.
-- Transcripción multilingüe de contenido: con WER de 3,73 en español, 5,52 en alemán, 7,21 en francés y CER de 6,56 en chino, sirve para localizar y transcribir catálogos de audio en múltiples mercados.
-- Pipelines de datos a gran escala: el RTFx de 6338 en la pista inglesa con vLLM sobre H200 permite procesar miles de horas de audio en paralelo para construir corpus etiquetados o datasets de entrenamiento.
-- Integración en aplicaciones vía API compatible con OpenAI: el servido con `vllm serve` expone un endpoint `/v1` que cualquier cliente OpenAI puede consumir, facilitando su incorporación en backends existentes sin reescribir la capa de integración.
-- Transcripción de audio en movilidad o edge: con ~0,5B de parámetros y pesos safetensors en un repo de 4,4 GB, es viable en GPUs de consumo y en entornos con presupuesto de VRAM ajustado.
+- **Transcripcion de reuniones y actas**: el modelo puede procesar audio de reuniones multilingues y generar transcripciones con control de digitos y verbatim, adecuado para equipos distribuidos en varios paises gracias a sus 45 idiomas.
+- **Subtitulado automatico de video**: con un RTFx de hasta 7308 en SPGISpeech, puede transcribir grandes volumenes de audio en poco tiempo, lo que lo hace viable para pipelines de generacion de subtitulos en plataformas de contenido.
+- **Atencion al cliente basada en voz**: integrado mediante vLLM como endpoint compatible con OpenAI, puede transcribir llamadas o mensajes de voz en tiempo real para su posterior analisis o enrutamiento, con deteccion automatica de idioma para clientes internacionales.
+- **Analisis de encuestas y entrevistas**: la opcion `verbatim=false` permite colapsar repeticiones y obtener transcripciones limpias para analisis cualitativo, mientras que `filler=true` conserva muletillas cuando se necesita fidelidad literal.
+- **Accesibilidad y dictado**: puede emplearse en aplicaciones de dictado por voz o generacion de subtitulos en directo para personas con discapacidad auditiva, con soporte para espanol, catalan, euskera y gallego (si bien el gallego no figura en la lista de idiomas; el catalan y el euskera si).
+- **Investigacion linguistica**: la cobertura de 45 idiomas, incluyendo lenguas de bajos recursos como cebuano, filipino, maltes o yue, permite estudios comparativos de ASR en contextos multilingues.
+- **Moderacion de contenido en audio**: transcripcion rapida de audio subido por usuarios para deteccion de contenido inapropiado, aprovechando el bajo coste de un modelo de 0.5B y su compatibilidad con vLLM.
 
 ## Benchmarks y rendimiento
 
-Resultados de la Open ASR Leaderboard (release 18-11-2026, v1.16.1), ejecutados en H200 con vLLM.
+Resultados publicados en el Open ASR Leaderboard (release 18-11-2026, v1.16.1), ejecutados con vLLM sobre una GPU H200.
 
-Pista inglesa (WER % y RTFx):
+### Pista de ingles
+
+WER promedio: **6.60** (RTFx 6338).
 
 | Split | WER (%) | RTFx |
 |---|---|---|
-| AMI | 9,24 | 4245 |
-| Earnings22 | 6,45 | 4811 |
-| GigaSpeech | 7,56 | 5978 |
-| SPGISpeech | 3,08 | 7308 |
-| URGENT24 | 10,25 | 3314 |
-| Voice Arena Monsoon | 3,56 | 3760 |
-| VoxPopuli | 2,43 | 4222 |
-| Private (scripted) | 3,71 | no disponible |
-| Private (conversational) | 13,14 | no disponible |
-| Media | 6,60 | 6338 |
+| AMI | 9.24 | 4245 |
+| Earnings22 | 6.45 | 4811 |
+| GigaSpeech | 7.56 | 5978 |
+| SPGISpeech | 3.08 | 7308 |
+| URGENT24 | 10.25 | 3314 |
+| Voice Arena Monsoon | 3.56 | 3760 |
+| VoxPopuli | 2.43 | 4222 |
+| Private (scripted) | 3.71 | no disponible |
+| Private (conversational) | 13.14 | no disponible |
 
-Pista multilingüe (WER %, chino en CER):
+### Pista multilingue
 
-| Idioma | FLEURS | Common Voice | MLS | Voice Arena Monsoon | AISHELL-1 | Media |
+WER (%) por idioma y dataset; chino es CER. La ultima columna es el promedio del leaderboard para el idioma.
+
+| Idioma | FLEURS | Common Voice | MLS | Voice Arena Monsoon | AISHELL-1 | Promedio |
 |---|---|---|---|---|---|---|
-| Alemán | 4,77 | 6,28 | no disponible | no disponible | no disponible | 5,52 |
-| Español | 2,82 | 4,33 | 4,04 | no disponible | no disponible | 3,73 |
-| Francés | 5,95 | 10,01 | 5,66 | no disponible | no disponible | 7,21 |
-| Italiano | 2,53 | 4,84 | 7,90 | no disponible | no disponible | 5,09 |
-| Neerlandés | 6,05 | 4,92 | 9,38 | no disponible | no disponible | 6,78 |
-| Portugués | 5,31 | no disponible | 7,61 | no disponible | no disponible | 6,46 |
-| Hindi | no disponible | no disponible | no disponible | 14,11 | no disponible | 14,11 |
-| Chino (CER) | 5,82 | no disponible | no disponible | no disponible | 7,31 | 6,56 |
+| Aleman | 4.77 | 6.28 | | | | **5.52** |
+| Espanol | 2.82 | 4.33 | 4.04 | | | **3.73** |
+| Frances | 5.95 | 10.01 | 5.66 | | | **7.21** |
+| Italiano | 2.53 | 4.84 | 7.90 | | | **5.09** |
+| Neerlandes | 6.05 | 4.92 | 9.38 | | | **6.78** |
+| Portugues | 5.31 | | 7.61 | | | **6.46** |
+| Hindi | | | | 14.11 | | **14.11** |
+| Chino (CER) | 5.82 | | | | 7.31 | **6.56** |
 
-No se han publicado en la información disponible resultados comparativos directos con otros modelos concretos en estas tablas.
+No se han publicado resultados comparativos directos con otros modelos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con ~0,5B de parámetros y pesos safetensors en fp16/bf16, la huella de pesos ronda 1 GB, más el overhead del procesador de audio y del runtime.
-- GPU recomendadas: el fabricante reporta evaluaciones en NVIDIA H200 con vLLM; por tamaño, cabe holgadamente en A100, H100, L40S y GPUs de consumo modernas.
-- GPU de consumo: sí, es viable en RTX 4090, RTX 3090 y previsiblemente en GPUs con 8 GB o más de VRAM, aunque no se publican cifras exactas de consumo.
-- Opciones de despliegue: Hugging Face Transformers con `accelerate` (`device_map="auto"`) y vLLM con soporte de audio (`vllm[audio]`), servido con API compatible con OpenAI.
-- Latencia y throughput: RTFx de 6338 en la media de la pista inglesa sobre H200 con vLLM; RTFx por split entre 3314 (URGENT24) y 7308 (SPGISpeech). No se publican cifras de latencia absoluta ni de throughput en otras GPUs.
+- **VRAM estimada para inferencia**: no disponible de forma explicita. Con 508.631.552 parametros en safetensors (4.4 GB de repo), en precision completa (fp32) requeriria aproximadamente 2 GB solo para pesos, mas overhead de activaciones y buffers de audio; en fp16/bf16 seria aproximadamente 1 GB para pesos. La VRAM total depende del backend y la longitud de audio.
+- **GPU recomendadas**: los benchmarks se ejecutaron en una NVIDIA H200. Por el tamano del modelo, deberia caber en GPUs consumer como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070, RTX 4080 y RTX 4090, asi como en A100, H100 y L40S, siempre que el backend lo soporte.
+- **Cabe en GPU consumer**: si, previsiblemente en cualquier GPU con al menos 4-6 GB de VRAM, aunque no se confirma en la model card.
+- **Opciones de despliegue**: Hugging Face Transformers (`AutoModelForMultimodalLM`), vLLM (`vllm serve Reson8/Rumble-2-Flash --max-model-len 4096`). No se mencionan llama.cpp, Ollama ni TGI.
+- **Latencia y throughput**: RTFx reportado entre 3314 (URGENT24) y 7308 (SPGISpeech) en H200 con vLLM, lo que indica un throughput alto. No se proporcionan latencias absolutas.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de datos de benchmarks de modelos alternativos comparables, por lo que la comparación cuantitativa se limita a las características declaradas.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Rendimiento ASR |
+|---|---|---|---|---|---|---|
+| **Rumble-2-Flash** | 0.5B | no disponible | 45 | Apache 2.0 | safetensors | WER 6.60 (ingles), 3.73 (espanol) |
+| Qwen/Qwen3-ASR-0.6B (base) | 0.6B | no disponible | no disponible | no disponible | safetensors | no disponible |
+| Whisper large-v3 | 1.55B | 30 s audio | ~99 | MIT | safetensors, GGUF | no disponible en esta ficha |
+| Whisper small | 244M | 30 s audio | ~99 | MIT | safetensors, GGUF | no disponible en esta ficha |
 
-| Modelo | Parámetros | Idiomas | Licencia | Formatos | Despliegue |
-|---|---|---|---|---|---|
-| Rumble-2-Flash | ≈0,5B | 45 | Apache 2.0 | safetensors | Transformers, vLLM |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que la comparacion de rendimiento no puede completarse con cifras. La comparativa se limita a parametros, licencia y cobertura linguistica.
 
 ## Limitaciones y advertencias
 
-- El WER en audio conversacional es notablemente superior al de audio leído: 13,14 en Private (conversational) frente a 3,71 en Private (scripted), y 10,25 en URGENT24; en producción conviene prever revisión humana en estos dominios.
-- El rendimiento en hindi es el más bajo de la pista multilingüe (14,11 en Voice Arena Monsoon), por lo que no es recomendable como idioma principal sin validación específica.
-- No se documentan sesgos conocidos, pero al ser un modelo ASR entrenado sobre corpus no especificados, puede heredar sesgos acústicos y léxicos de dichos datos; no hay información pública sobre la composición del dataset.
-- Riesgo de alucinación en transcripción: como todo modelo generativo de audio a texto, puede producir texto no presente en el audio, especialmente en segmentos ruidosos o silenciosos.
-- No se especifica la longitud máxima de audio por petición; el ejemplo de vLLM usa `--max-model-len 4096`, lo que puede limitar la duración de las entradas si no se ajusta.
-- La licencia Apache 2.0 permite uso comercial, pero no se ofrece garantía ni soporte por parte del autor; es responsabilidad del integrador validar el modelo en su dominio.
-- No se han publicado detalles sobre cuantizaciones disponibles ni sobre el comportamiento del modelo en precisión reducida.
+- **Sesgos conocidos**: no se documentan sesgos especificos en la model card. Al ser un fine-tuning de Qwen3-ASR, podria heredar sesgos del modelo base y de los datos de entrenamiento, no detallados.
+- **Riesgo de alucinacion**: como todo modelo generativo, puede producir transcripciones incorrectas o inventar texto en segmentos de audio con ruido, silencios o habla solapada. El WER en conversacional privado (13.14%) es notablemente superior al de scripted (3.71%), lo que indica mayor fragilidad en audio espontaneo.
+- **Limitaciones de contexto o idioma**: la longitud de contexto no se especifica; vLLM recomienda `--max-model-len 4096`, lo que sugiere un limite practico para audios largos. La cobertura de 45 idiomas no incluye gallego ni otras lenguas ibericas distintas del catalan y el euskera. El rendimiento en hindi (14.11% WER) es considerablemente peor que en lenguas europeas.
+- **Restricciones de licencia**: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios. No se especifican restricciones adicionales.
+- **Caveats para produccion**: no se documentan requisitos de normalizacion de audio, manejo de silencios ni limites de duracion por peticion. La ausencia de datos sobre cuantizacion limita las opciones de optimizacion. El uso de `AutoModelForMultimodalLM` requiere una version de Transformers que soporte dicha clase. La integracion con vLLM requiere `vllm[audio]`.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Reson8/Rumble-2-Flash
+- Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard?version=1.16.1
-- Vista multilingüe del leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard?languages=Reson8%2FRumble-2-Flash&proprietary=false
-- Licencia Apache 2.0: https://huggingface.co/Reson8/Rumble-2-Flash/blob/main/LICENSE
+- Vista multilingue del leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard?languages=Reson8%2FRumble-2-Flash&proprietary=false
 - Audio de ejemplo: https://hf.co/datasets/hf-internal-testing/dummy-audio-samples/resolve/main/bcn_weather.mp3

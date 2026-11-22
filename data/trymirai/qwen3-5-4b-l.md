@@ -2,88 +2,87 @@
 
 ## Resumen
 
-Mirai Qwen3.5-4B Large es una cuantización de 8 bits del modelo Qwen3.5-4B de Alibaba, publicada por trymirai (Mirai Labs) bajo licencia Apache 2.0. El checkpoint conserva los 4.338.875.392 parámetros del modelo original y está empaquetado en formato nativo de la librería `uzu`, orientada exclusivamente a inferencia eficiente en Apple silicon (procesadores M-series). No se trata de un modelo nuevo ni de un fine-tune: es una compresión post-entrenamiento pensada para ejecución local en macOS.
+Mirai's Qwen3.5-4B Large Quantization es una cuantizacion de 8 bits del modelo Qwen/Qwen3.5-4B, desarrollada por trymirai (Mirai Labs) y publicada bajo licencia Apache 2.0. El modelo conserva la arquitectura y el comportamiento del checkpoint original de Alibaba, pero reduce el peso de los parametros a enteros simetricos de 8 bits, lo que permite ejecutarlo en hardware con recursos limitados, en concreto en equipos con Apple silicon.
 
-La propuesta de valor es el eje calidad-tamaño-velocidad en hardware de consumo de Apple. Frente a alternativas de cuantización genéricas (GGUF Q4/Q8, AWQ, GPTQ), Mirai aplica transformadas de Hadamard aleatorias con estructura de bloque diagonal para reducir los valores atípicos (outliers) tanto en activaciones como en pesos, lo que permite mantener una divergencia KL baja frente al modelo de referencia a pesar de usar enteros de 8 bits.
+El modelo resuelve el problema de desplegar un LLM de 4.338.875.392 parametros en local sin renunciar a una calidad cercana a la del modelo en precision completa. Para ello aplica cuantizacion post-entrenamiento con escalas en bfloat16, tamano de grupo 32 y transformadas de Hadamard aleatorias diagonales por bloques (block-diagonal Random Hadamard Transforms) que reducen los valores atipicos en activaciones y pesos.
 
-El modelo base Qwen3.5-4B pertenece a la familia Qwen3.5 de Alibaba, pero la model card de esta cuantización no detalla arquitectura, longitud de contexto ni idiomas soportados; remite a la ficha del modelo original. La relevancia actual reside en que demuestra que la cuantización de 8 bits con transformadas Hadamard puede ser competitiva para despliegue local en portátiles y equipos de sobremesa con chip Apple, un nicho tradicionalmente mal cubierto por los stacks de inferencia orientados a CUDA.
+Su relevancia actual radica en que el ecosistema de inferencia local en Apple silicon carece de alternativas maduras frente a CUDA, y esta ficha se apoya en la libreria `uzu` y la CLI `mirai` para ofrecer una via de ejecucion directa en macOS. El repo ocupa 23,6 GB y acumula 656 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (hereda la del modelo base Qwen/Qwen3.5-4B; no detallada en la model card) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B; detalles no disponibles en la informacion proporcionada) |
 | Parametros totales | 4.338.875.392 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit entero simetrico, escalas bfloat16, tamano de grupo 32 |
+| Tipos de cuantizacion | 8-bit simetrica con escalas bfloat16, group size 32, post-training quantization |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria `uzu`) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es una cuantizacion post-entrenamiento (PTQ) del modelo Qwen3.5-4B. El metodo descrito en la model card emplea cuantizacion entera simetrica de 8 bits con escalas en bfloat16 y tamano de grupo de 32 elementos. Para mitigar el impacto de los valores atipicos, se aplican transformadas de Hadamard aleatorias (Random Hadamard Transforms) con estructura de bloque diagonal y tamano de bloque 32, una tecnica de rotacion ortogonal que redistribuye la energia de las activaciones y los pesos antes de cuantizar, reduciendo el error de redondeo en las colas de la distribucion.
+El checkpoint es una cuantizacion post-entrenamiento del modelo base Qwen/Qwen3.5-4B. La arquitectura subyacente corresponde al transformer de Qwen3.5-4B, si bien la model card no detalla el numero de capas, dimensiones ocultas, mecanismo de atencion ni la composicion exacta del dataset de preentrenamiento del modelo original. El proceso de cuantizacion aplica enteros simetricos de 8 bits con escalas en bfloat16 y agrupacion en bloques de 32 elementos.
 
-No se especifican en la informacion disponible los datos de entrenamiento ni el proceso de alineacion del modelo base (RLHF, DPO, etc.). La evaluacion de la cuantizacion se realizo sobre una mezcla de datos compuesta por un 45 % de datos publicos de tipo agente (agentic), un 30 % de datos publicos de SFT y contexto largo, y un 25 % de datos privados de chat. La model card incluye un grafico de divergencia KL frente al tamano del checkpoint, pero no se aportan cifras numericas en el texto. El checkpoint no incorpora innovaciones de decodificacion especulativa ni atencion lineal propias; esas caracteristicas, si existen, dependen del modelo base.
+La innovacion tecnica destacable son las block-diagonal Random Hadamard Transforms con tamano de bloque 32, que rotan las activaciones y los pesos antes de cuantizar para mitigar los valores atipicos que degradan la precision en esquemas de baja profundidad de bits. La model card incluye una grafica de divergencia KL frente al tamano del checkpoint, evaluada sobre una mezcla de datos compuesta por un 45% de datos publicos agenticos, un 30% de datos publicos de SFT y contexto largo, y un 25% de datos privados de chat. No se especifica si el modelo base recibio RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva (pipeline `text-generation`).
-- Razonamiento y conversacion multi-turno, heredados del modelo base Qwen3.5-4B.
-- Capacidades agenticas: la mezcla de evaluacion incluye un 45 % de datos publicos de tipo agente, lo que sugiere soporte para flujos de tool calling y razonamiento multi-paso en el modelo base.
-- Contexto largo: la mezcla de evaluacion incluye un 30 % de datos de SFT y contexto largo, indicativo de que el modelo base maneja ventanas extendidas (longitud exacta no disponible).
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles en la informacion proporcionada.
-- Inferencia local en Apple silicon mediante la CLI `mirai` o la libreria `uzu`.
+- Generacion de texto: el modelo hereda las capacidades del Qwen3.5-4B original, orientadas a generacion y conversacion.
+- Razonamiento y codigo: no se detallan capacidades especificas en la model card; se remite a la documentacion del modelo base.
+- Tool calling y function calling: no confirmado en la informacion proporcionada.
+- Agentes y razonamiento multi-paso: la mezcla de evaluacion incluye un 45% de datos publicos agenticos, lo que sugiere que el modelo se ha evaluado en escenarios de agente, aunque no se documentan capacidades explicitas.
+- Multilingue: no disponible.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Asistente de codigo en local para desarrolladores con Mac: el modelo puede ejecutarse sobre Apple silicon sin GPU dedicada, lo que permite autocompletado y explicacion de codigo en un portatil M-series sin enviar codigo propietario a la nube.
-- Prototipado de agentes con tool calling en estaciones de trabajo macOS: la mezcla de evaluacion orientada a datos agenticos sugiere que el modelo conserva la capacidad de invocar funciones y encadenar pasos, util para validar disenos de agentes antes de desplegar en produccion.
-- Chat de soporte interno con contexto largo: la inclusion de datos de contexto largo en la evaluacion indica que el modelo puede gestionar conversaciones o documentos extensos en entornos corporativos con requisitos de privacidad (todo el procesamiento ocurre en el dispositivo).
-- Investigacion en cuantizacion: sirve como referencia reproducible para estudiar el efecto de las transformadas de Hadamard con bloque 32 en la divergencia KL frente al modelo de 4B en bfloat16.
-- Aplicaciones de escritorio offline en macOS: integrable mediante la CLI `mirai`, permite embeber generacion de texto en herramientas nativas de Apple sin dependencia de red.
-- Evaluacion comparativa de stacks de inferencia: util para medir throughput y latencia de `uzu` frente a llama.cpp o MLX en el mismo hardware Apple, dado que el checkpoint esta optimizado para ese ecosistema.
+- Inferencia local en Mac: ejecutar el modelo en un Mac con Apple silicon mediante `brew install mirai` y `mirai --model trymirai/Qwen3.5-4B-L`, sin necesidad de GPU dedicada ni de servicios en la nube.
+- Prototipado offline de asistentes conversacionales: usar el checkpoint para iterar sobre prompts y flujos de chat en local, con la ventaja de no enviar datos a terceros.
+- Evaluacion de cuantizacion: servir como referencia practica para comparar la calidad de la cuantizacion de 8 bits frente al Qwen3.5-4B original en tareas de generacion y agenticas.
+- Desarrollo de aplicaciones macOS: integrar la CLI `mirai` o la libreria `uzu` en herramientas de escritorio que requieran generacion de texto sin conexion.
+- Investigacion sobre tecnicas de cuantizacion: el uso de Random Hadamard Transforms con group size 32 es un caso de estudio reproducible para analizar el impacto de las rotaciones en la divergencia KL.
+- Despliegue de bajo coste en entornos controlados: al ser Apache 2.0 y ejecutarse en hardware de consumo, es apto para pruebas internas y demos sin infraestructura de servidor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card incluye un grafico de divergencia KL frente al tamano del checkpoint, pero sin cifras en el texto. No se detallan resultados de MMLU, HumanEval, GSM8K ni metricas equivalentes.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente incluye una grafica de divergencia KL frente al tamano del checkpoint, sin cifras numericas ni comparaciones con MMLU, HumanEval, GSM8K u otros conjuntos.
 
 ## Requisitos de hardware
 
-- VRAM/ memoria unificada: el repositorio ocupa 13,9 GB, aunque el checkpoint en 8 bits con grupo 32 implica un peso efectivo cercano a 1 byte por parametro mas escalas (aproximadamente 4,3-5 GB de pesos). La memoria unificada necesaria para inferencia no se especifica en la informacion disponible.
-- GPU compatibles: exclusivamente Apple silicon (M1, M2, M3, M4 y variantes Pro/Max/Ultra). No hay soporte declarado para CUDA ni ROCm.
-- GPU de consumo: si, en chips Apple M-series con memoria unificada suficiente; el fabricante no publica el minimo exacto.
-- Opciones de despliegue: CLI `mirai` (via Homebrew) y libreria `uzu` (compilacion desde fuente documentada en el repositorio de GitHub). No compatible con vLLM, llama.cpp, Ollama ni TGI segun la informacion disponible.
+- VRAM estimada: no disponible de forma explicita; con 4.338.875.392 parametros en 8 bits, el peso de los parametros ronda los 4,3 GB, a lo que hay que sumar escalas bfloat16, overhead de la libreria y cache de contexto.
+- GPU recomendadas: la model card indica soporte exclusivo para Apple silicon; no se mencionan GPU NVIDIA ni AMD.
+- Compatibilidad con GPU de consumo: el soporte documentado se limita a Apple silicon; no se confirma funcionamiento en RTX 4090 ni en otras GPU de consumo.
+- Opciones de despliegue: CLI `mirai` (Homebrew) y libreria `uzu`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Contexto | Licencia | Plataforma |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Plataforma |
 |---|---|---|---|---|---|
-| trymirai/Qwen3.5-4B-L | 4.338.875.392 | 8-bit (grupo 32, escalas bf16) | no disponible | Apache 2.0 | Apple silicon (`uzu`) |
-| Qwen/Qwen3.5-4B (original) | ~4B | bf16/fp16 | no disponible | Apache 2.0 | Multiples (transformers, vLLM, etc.) |
-| Cuantizaciones GGUF Q8 de modelos ~4B | ~4B | 8-bit (llama.cpp) | depende del modelo | depende del modelo | CPU/GPU via llama.cpp |
+| trymirai/Qwen3.5-4B-L | 4.338.875.392 | no disponible | 8-bit (group size 32) | Apache 2.0 | Apple silicon (`uzu`) |
+| Qwen/Qwen3.5-4B (base) | 4.338.875.392 | no disponible | bfloat16 | Apache 2.0 | Multiples (segun model card original) |
+| Alternativas de 4B en 8-bit | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion con alternativas de cuantizacion generica (GGUF Q8, AWQ, GPTQ) no puede establecerse con cifras porque la model card no publica resultados numericos de divergencia KL ni de perplejidad. La ventaja declarada es la combinacion de transformadas de Hadamard por bloques con un runtime especifico para Apple silicon, pero no hay datos publicos que cuantifiquen esa ventaja frente a otras soluciones.
+No se dispone de informacion sobre otros modelos comparables en la documentacion proporcionada; la comparacion se limita al checkpoint original del que deriva.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; se heredan los del modelo base Qwen3.5-4B.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de 4B; la cuantizacion de 8 bits puede incrementar ligeramente la degradacion en tareas de razonamiento largo frente al checkpoint en bf16.
-- Limitaciones de contexto e idioma: no especificadas en la model card de esta cuantizacion; deben consultarse en la ficha del modelo original.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Qwen3.5-4B, a la que la model card enlaza explicitamente.
-- Compatibilidad: solo Apple silicon via `uzu`/`mirai`; no es desplegable en stacks CUDA estandar (vLLM, TGI, llama.cpp), lo que limita su uso en servidores Linux con GPU.
-- Madurez: el modelo tiene 179 descargas y 1 like en el momento de la consulta, lo que indica adopcion muy limitada y poca validacion independiente.
-- Fecha de creacion (junio de 2026) y actualizacion (noviembre de 2026): verificar que el runtime `uzu` sigue mantenido antes de adoptarlo en produccion.
+- La cuantizacion de 8 bits introduce una perdida de calidad respecto al modelo en bfloat16; la magnitud exacta no se cuantifica en la model card.
+- Sesgos conocidos: no documentados en la informacion proporcionada; se remite a la model card del Qwen3.5-4B original.
+- Riesgo de alucinacion: inherente a los LLM; no se aportan tasas ni evaluaciones especificas.
+- Limitaciones de contexto e idioma: no disponibles.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base enlazada en la model card.
+- Caveat de produccion: el soporte se limita a Apple silicon; no hay evidencia de funcionamiento en CUDA ni en otros backends, lo que restringe su uso en servidores convencionales.
+- El repo ocupa 23,6 GB, un tamano considerable para un modelo de 4B cuantizado a 8 bits, lo que puede dificultar su distribucion en entornos con almacenamiento limitado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.5-4B-L
+- Hugging Face: https://huggingface.co/trymirai/Qwen3.5-4B-L
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Model card del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/README.md
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
-- Blog tecnico de cuantizacion de Mirai: https://trymirai.com/blog/quantization
+- Model card del base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/README.md
+- Licencia del base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Pagina del modelo en Mirai: https://trymirai.com/local-models/alibaba-qwen3-5-4b-mirai-mirai-l-8
-- Repositorio `uzu` (guia de ejecucion): https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md
+- Blog de cuantizacion: https://trymirai.com/blog/quantization
+- Repositorio uzu (guia de ejecucion): https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md

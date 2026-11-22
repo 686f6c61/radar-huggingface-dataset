@@ -2,76 +2,98 @@
 
 ## Resumen
 
-fox-1.6-GGUF es una republicación en formato GGUF del modelo fox-1.6, publicado originalmente por el usuario Fox-AI-by-teolm30 en Hugging Face. La conversión la realiza mradermacher, un perfil conocido en la comunidad por generar cuantizaciones estáticas de modelos recién publicados para facilitar su ejecución en llama.cpp y herramientas compatibles. El repositorio no incluye pipeline declarado, licencia, idiomas ni model card descriptiva más allá de los metadatos de cuantización.
+fox-1.6 es un modelo de lenguaje compacto de aproximadamente 2.030 millones de parametros (2,03 B), desarrollado originalmente por el usuario Fox-AI-by-teolm30 y distribuido bajo licencia Apache 2.0. La ficha que nos ocupa corresponde a la version cuantizada en formato GGUF publicada por mradermacher, un conocido empaquetador de cuantizaciones de la comunidad, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-La información disponible es mínima: no se especifican arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. El nombre sugiere una versión 1.6 de un modelo llamado fox, pero no hay documentación que confirme tamaño, familia arquitectónica ni procedencia de los datos. El repositorio se creó y actualizó el 18 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+El modelo esta etiquetado como "compact-llm" y orientado a generacion de texto conversacional en ingles. Con 2 B de parametros, se situa en la franja de modelos pequenos disenados para despliegue en local, edge computing o entornos con recursos limitados, donde modelos de 7 B o superiores resultan inviables por VRAM o latencia.
 
-Su relevancia actual es limitada y fundamentalmente práctica: permite probar el modelo original en hardware de consumo mediante cuantizaciones de 2 a 8 bits, siempre que el modelo base sea legítimo y funcional. Al carecer de ficha técnica del autor original, cualquier evaluación seria requiere inspeccionar los pesos y el repositorio fuente.
+La relevancia de esta publicacion es practica: mradermacher ofrece un abanico completo de cuantizaciones (desde Q2_K de 1,0 GB hasta f16 de 4,2 GB), lo que permite ajustar el equilibrio entre calidad y consumo de memoria segun el hardware disponible. No obstante, la informacion publica sobre arquitectura, entrenamiento y benchmarks del modelo base es muy escasa, lo que limita la evaluacion rigurosa de su rendimiento real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo transformer de tipo generativo; detalles no publicados) |
+| Parametros totales | 2.031.739.904 (2,03 B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas, quantize_version 2, output_tensor_quantised 1) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | ingles (segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base original en formato transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base fox-1.6. La model card del repositorio GGUF se limita a metadatos de conversión: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, lo que indica que los pesos se convirtieron desde un checkpoint en formato Hugging Face Transformers y se cuantizaron estáticamente con la herramienta de llama.cpp. No hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base (Fox-AI-by-teolm30/fox-1.6). Por el numero de parametros (2,03 B) y la etiqueta "compact-llm", se trata de un transformer generativo de pequena escala, pero no se han publicado datos sobre numero de capas, dimension del hidden state, mecanismo de atencion ni si incorpora innovaciones como atencion lineal o decodificacion especulativa.
 
-Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, arquitecturas híbridas SSM/transformer, etc.). Cualquier afirmación al respecto sería especulativa y no debe asumirse.
+Tampoco hay informacion publica sobre el dataset de entrenamiento: numero de tokens, composicion, uso de RLHF/DPO o tecnicas de alineacion. La model card del repositorio GGUF es una plantilla estandar de mradermacher que solo documenta el proceso de cuantizacion (version 2, tensor quantised, conversion HF a GGUF) y no aporta detalles sobre el entrenamiento del modelo original. Cualquier afirmacion sobre estos aspectos seria especulativa.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la información disponible.
-- No hay evidencia publicada de soporte de tool calling, function calling ni razonamiento multi-paso.
-- No se confirma soporte multilingüe ni modos especiales (thinking, visión, audio).
-- La única capacidad verificable es la de ejecución en formato GGUF mediante llama.cpp y derivados (Ollama, LM Studio, etc.), sujeta al comportamiento del modelo base.
+- Generacion de texto conversacional en ingles, segun la etiqueta "conversational" del repositorio.
+- Generacion de texto general (pipeline text-generation).
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que sugiere integracion con infraestructuras de inferencia estandar.
+- No se ha documentado soporte de tool calling, function calling ni capacidades de agente.
+- No se ha documentado soporte multilingue mas alla del ingles.
+- No se ha documentado capacidad de vision, audio, thinking mode ni razonamiento multi-paso explicito.
 
 ## Casos de uso
 
-- Evaluación local rápida: descargar la cuantización Q4_K_M o Q5_K_M y ejecutarla en llama.cpp para comprobar si el modelo responde de forma coherente antes de invertir en el checkpoint completo.
-- Pruebas de integración en pipelines GGUF: validar que el tokenizador, la plantilla de chat y los metadatos del modelo funcionan con las herramientas del ecosistema (llama.cpp, llama-cpp-python, Ollama) antes de desplegar en producción.
-- Experimentación en hardware de consumo: usar Q2_K o IQ4_XS para ajustar el modelo en GPUs con poca VRAM y medir latencia y calidad degradada por cuantización.
-- Comparación de cuantizaciones: ejecutar varias variantes (Q3_K_M, Q4_K_M, Q6_K) sobre el mismo prompt para evaluar la pérdida de calidad frente al tamaño del archivo.
-- Reproducción de conversiones: servir como referencia para verificar el proceso de cuantización estática de mradermacher sobre el checkpoint original de Fox-AI-by-teolm30.
-- Docencia y análisis de artefactos: estudiar cómo se estructuran los metadatos de un repositorio GGUF generado automáticamente y qué información falta en publicaciones sin model card.
+- Prototipado rapido en local: gracias a sus cuantizaciones de 1,0-1,6 GB, el modelo puede ejecutarse en portatiles sin GPU dedicada mediante llama.cpp u Ollama, lo que lo hace util para experimentar con pipelines de generacion de texto antes de escalar a modelos mayores.
+- Asistentes conversacionales ligeros en edge: con 2 B de parametros y cuantizacion Q4_K_M (1,4 GB), cabe en dispositivos con poca RAM y puede alimentar chatbots sencillos en aplicaciones de escritorio o moviles.
+- Generacion de texto en entornos con VRAM limitada: en GPUs de consumo como una RTX 3060 (12 GB) o incluso integradas, permite desplegar inferencia sin cuantizacion agresiva, manteniendo calidad razonable con Q6_K o Q8_0.
+- Filtrado y clasificacion de texto preliminar: por su tamano, puede usarse como primer paso en pipelines donde se descartan o etiquetan grandes volumenes de texto antes de pasarlos a un modelo mayor, reduciendo coste computacional.
+- Educacion e investigacion: util como modelo de referencia para estudiar el comportamiento de LLMs pequenos, comparar tecnicas de cuantizacion (Q2_K frente a Q8_0) o medir el impacto de la compresion en la calidad de salida.
+- Pruebas de integracion con llama.cpp y servidores compatibles con GGUF: sirve para validar infraestructura de despliegue (por ejemplo, un endpoint local con llama-server) antes de migrar a modelos de mayor tamano.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el número de parámetros. Como referencia general, un modelo de 1-2B en Q4_K_M ocupa aproximadamente 0,7-1,5 GB; uno de 7B en Q4_K_M ronda los 4-5 GB; uno de 13B en Q4_K_M se acerca a 8 GB. Estas cifras son orientativas y no se derivan de datos del repositorio.
-- GPU recomendadas: no disponible sin conocer el tamaño. Para cuantizaciones pequeñas (Q2_K, IQ4_XS) podría bastar una GPU de consumo con 6-8 GB; para Q8_0 o x-f16 se requeriría hardware proporcionalmente mayor.
-- Cabe en GPU de consumo: probablemente sí en cuantizaciones bajas si el modelo es de tamaño reducido, pero no confirmable.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~1,0 GB
+  - Q3_K_S / Q3_K_M / Q3_K_L: ~1,1-1,2 GB
+  - IQ4_XS: ~1,3 GB
+  - Q4_K_S / Q4_K_M: ~1,3-1,4 GB
+  - Q5_K_S / Q5_K_M: ~1,5-1,6 GB
+  - Q6_K: ~1,8 GB
+  - Q8_0: ~2,3 GB
+  - f16: ~4,2 GB
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar las cuantizaciones bajas; una RTX 3060, RTX 4060, RTX 4090 o A100 ejecutan sin problema incluso f16. El modelo esta pensado principalmente para CPU.
+- Cabe en GPU de consumo: si, en practicamente todas las GPUs modernas, e incluso en iGPUs con suficiente RAM compartida.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-server y cualquier runtime compatible con GGUF. Tambien es posible usar el modelo base con transformers.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables al no poderse determinar la categoría, el tamaño ni el propósito de fox-1.6.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| fox-1.6 (esta ficha) | 2,03 B | no disponible | Apache 2.0 | GGUF / safetensors | Modelo compacto conversacional en ingles |
+| Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache 2.0 | GGUF / safetensors | Alternativa pequena multilingue con tool calling documentado |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | GGUF / safetensors | Modelo compacto de Hugging Face con benchmarks publicados |
+| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms | GGUF / safetensors | Modelo de Google con licencia no Apache |
+
+La comparativa se ofrece como referencia de categoria; no se dispone de datos de rendimiento de fox-1.6 que permitan una comparacion cuantitativa. Los modelos alternativos citados cuentan con benchmarks publicados y documentacion de arquitectura, a diferencia de fox-1.6.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay información sobre datos de entrenamiento, sesgos, alineación ni evaluación de seguridad.
-- Licencia no especificada: no se puede garantizar el uso comercial ni la redistribución. Verificar el repositorio original antes de cualquier uso en producción.
-- Riesgo elevado de alucinación y comportamiento impredecible al no existir documentación sobre el ajuste del modelo.
-- Idiomas soportados desconocidos: no se puede asumir calidad en castellano ni en ningún otro idioma.
-- Contexto desconocido: planificar prompts sin asumir ventanas largas.
-- Repositorio con cero descargas y cero likes: sin validación comunitaria, mayor probabilidad de artefactos defectuosos o modelos de procedencia dudosa.
-- Las cuantizaciones de 2 y 3 bits (Q2_K, Q3_K_S) degradan notablemente la calidad; usar solo para pruebas.
-- El nombre y la autoría ("Fox-AI-by-teolm30") no corresponden a un laboratorio reconocido; tratar el modelo con cautela y auditar los pesos antes de integrarlo.
+- Informacion muy escasa: no se han publicado detalles de arquitectura, entrenamiento, contexto ni benchmarks, lo que dificulta evaluar su calidad frente a alternativas.
+- Riesgo de alucinacion: como todo LLM generativo, puede producir contenido falso o inventado; con 2 B de parametros el riesgo es especialmente alto en tareas de conocimiento factual.
+- Limitacion idiomatica: solo se documenta soporte de ingles; el rendimiento en castellano es desconocido y probablemente deficiente.
+- Contexto desconocido: al no publicarse la longitud de contexto, no se recomienda su uso en tareas que requieran ventanas largas sin verificacion previa.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero el autor original no ofrece garantias ni soporte.
+- Sin senales de alineacion documentada: no hay informacion sobre RLHF/DPO, por lo que puede presentar sesgos, respuestas inapropiadas o falta de rechazo ante peticiones daninas.
+- Modelo base de autor individual: la trazabilidad y mantenimiento del modelo original no estan garantizados.
+- La cuantizacion Q2_K puede degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso practico.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/fox-1.6-GGUF
-- Modelo original: https://huggingface.co/Fox-AI-by-teolm30/fox-1.6
-- Perfil del cuantizador: https://huggingface.co/mradermacher
+- Modelo base original: https://huggingface.co/Fox-AI-by-teolm30/fox-1.6
+- Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/fox-1.6-i1-GGUF
+- Pagina de descargas de mradermacher para este modelo: https://hf.tst.eu/model#fox-1.6-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

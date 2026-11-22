@@ -2,100 +2,100 @@
 
 ## Resumen
 
-Este repositorio no es un modelo original, sino una familia de siete cuantizaciones GGUF del tune `DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored`, a su vez derivado de Qwen3.8-27B. El autor de la conversión es `esatapedico`, que parte de su propio checkpoint NVFP4 de 256 tensores y genera una escalera de precisión para las cabezas de salida (`lm_head`), embeddings de tokens y cabeza MTP, manteniendo un backbone NVFP4 de 448 tensores byte a byte idéntico en todas las variantes. La arquitectura subyacente es un transformer denso híbrido de 27B con Gated DeltaNet combinado con Gated Attention cada cuarta capa, e incorpora una cabeza de decodificación especulativa MTP (multi-token prediction) integrada en cada fichero.
+Este repositorio no contiene un modelo entrenado desde cero, sino una familia de siete cuantizaciones GGUF del tune comunitario `DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored`, una variante "sin censura" del modelo denso Qwen3.8-27B. El trabajo de conversión y empaquetado lo firma el usuario `esatapedico`, que parte de su propio checkpoint NVFP4 de 256 tensores y construye una escalera de precisión sobre un backbone de 448 tensores idéntico byte a byte entre todas las variantes. El resultado es un conjunto de ficheros orientados a inferencia en `llama.cpp` sobre GPUs Blackwell (sm_120) con decodificación especulativa MTP integrada.
 
-La relevancia práctica está en el empaquetado para Blackwell (sm_120): ofrece NVFP4 nativo en el backbone con cabezas en precisión seleccionable, decodificación especulativa sin drafter separado y un proyector de visión opcional. Los ficheros oscilan entre 14,86 GB y 19,69 GB, lo que permite desplegar un modelo nominal de 27B en GPUs de consumo de gama alta con llama.cpp.
+La arquitectura del modelo base es un transformer denso híbrido de 27B con Gated DeltaNet y Gated Attention cada cuarta capa, más una cabeza MTP (Multi-Token Prediction) embebida que actúa como drafter para decodificación especulativa sin necesidad de un modelo auxiliar. El repositorio incluye además un proyector de visión (`mmproj-BF16.gguf`) que habilita entrada multimodal al combinarse con cualquiera de los siete ficheros.
 
-Conviene señalar una discrepancia importante: la model card describe un modelo de 27B, pero el campo de parámetros reales del repositorio (safetensors) indica 460.730.096 parámetros. Esta ficha recoge ambos datos tal como aparecen, sin resolver la contradicción.
+Su relevancia práctica es doble: por un lado, demuestra un flujo de cuantización NVFP4 a GGUF con verificación SHA-256 por tensor; por otro, ofrece siete puntos de operación entre 14,86 GB y 19,69 GB que permiten ajustar el uso de VRAM frente a la pérdida de perplejidad. La licencia declarada es Apache 2.0, aunque conviene revisar la cadena de modelos base antes de un uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso híbrido: Gated DeltaNet + Gated Attention cada cuarta capa, con cabeza MTP de decodificación especulativa embebida |
-| Parámetros totales | 27B según la model card; 460.730.096 según el campo de safetensors del repo (dato contradictorio, no resuelto) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | NVFP4 en backbone; cabezas en Q2_K, Q3_K, IQ4_XS, Q4_K, Q5_0, Q6_K, Q8_0 y BF16 según tier; vectores `ssm_alpha` en F32 |
-| Idiomas soportados | Inglés y multilingüe (sin listado detallado de idiomas) |
+| Arquitectura | Transformer denso híbrido: Gated DeltaNet + Gated Attention cada cuarta capa, con cabeza MTP embebida |
+| Parametros totales | 27B (modelo base declarado); el checkpoint safetensors del repo registra 460.730.096 parámetros, dato inconsistente con el nombre del modelo |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantizacion | NVFP4 (backbone), Q2_K, Q3_K, IQ4_XS, Q5_0, Q6_K, Q8_0, BF16 según la variante y el grupo de tensores (lm_head, token_embd, cabeza MTP) |
+| Idiomas soportados | Inglés y multilingüe (según tags del repositorio) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (1.122 tensores por tier; 448 de backbone NVFP4 compartidos) |
+| Formato de pesos | GGUF (siete ficheros) + proyector de visión GGUF en BF16 |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo base como un transformer denso híbrido de 27B que intercala capas de Gated DeltaNet con capas de Gated Attention cada cuatro capas, e incluye una cabeza MTP de predicción multi-token embebida en el propio checkpoint. Esta cabeza actúa como drafter para decodificación especulativa (`--spec-type draft-mtp`), de modo que no se necesita un modelo borrador externo. El backbone NVFP4 consta de 448 tensores idénticos en los siete ficheros (verificados con SHA-256 por tensor): 256 tensores cuantizados en la pasada de conversión NVFP4 y 192 normalizados a NVFP4 al construir los tiers. Los 48 vectores `ssm_alpha` se mantienen en F32.
+El modelo base combina capas de atención clásica con Gated DeltaNet, un mecanismo de estado recurrente con compuertas que sustituye a la atención en tres de cada cuatro capas. Esta hibridación reduce el coste de cómputo y memoria en contextos largos frente a un transformer denso convencional del mismo tamaño. La cabeza MTP permite predecir varios tokens por paso y se emplea como drafter interno en `llama.cpp` mediante `--spec-type draft-mtp`, sin necesidad de cargar un modelo especulador separado.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO u otras fases de alineación, ni en el tune de DavidAU ni en el modelo Qwen3.8-27B subyacente. El autor de la conversión declara explícitamente que su aportación se limita a la numerología: conversión del checkpoint NVFP4 a GGUF y construcción de la escalera de precisión para las cabezas. La innovación técnica destacable es el empaquetado NVFP4 para Blackwell sm_120 con decodificación especulativa MTP integrada y una escalera de precisión que mantiene la perplejidad dentro de aproximadamente el 1,3 % de la cifra del modelo sin cuantizar.
+No se dispone de información sobre el corpus de entrenamiento, el número de tokens, ni sobre si el tune de DavidAU incluyó RLHF, DPO u otras fases de alineamiento. El trabajo de `esatapedico` se limita a la conversión numérica: parte de un checkpoint NVFP4 de 256 tensores, normaliza 192 tensores adicionales a NVFP4 y mantiene los 48 vectores `ssm_alpha` en F32, dando lugar a un backbone de 448 tensores idéntico byte a byte en las siete variantes. Cada fichero contiene 1.122 tensores en total y la integridad se verifica con SHA-256 por tensor y por fichero.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredados del tune Ultimate-Heretic Turbo-Brilliance-50x-AGI-NEO.
-- Decodificación especulativa MTP integrada en todos los ficheros, sin drafter separado.
-- Visión: el proyector `mmproj-BF16.gguf` (0,93 GB) se acopla a cualquier tier mediante `--mmproj`; el autor verifica respuesta a un prompt con imagen y parada natural en el tier MID-HIGH.
-- Multilingüe, aunque la model card solo declara inglés y "multilingual" sin desglose.
-- Compatibilidad con llama.cpp como runtime de referencia.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes o modo thinking explícito.
+- Generación de texto en inglés y otros idiomas, con el sesgo multilingüe heredado de la familia Qwen.
+- Razonamiento y conversación multi-turno, condicionados por el tune "Heretic Uncensored" del modelo base.
+- Entrada multimodal de imagen gracias al proyector `mmproj-BF16.gguf`, que se carga con `--mmproj` junto a cualquier variante.
+- Decodificación especulativa MTP integrada en todos los ficheros, lo que acelera la generación sin drafter externo.
+- Compatibilidad con el ecosistema `llama.cpp` para inferencia local y serving.
+- No se documenta soporte explícito de tool calling, function calling ni flujos de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Despliegue local en GPU Blackwell de consumo: los tiers de 14,86 a 16,91 GB permiten ejecutar un modelo nominal de 27B en tarjetas de 24 GB o menos con llama.cpp, usando NVFP4 para el backbone y cabezas en Q4/Q8.
-- Servicio de inferencia con baja latencia: la cabeza MTP embebida permite activar decodificación especulativa sin cargar un modelo borrador adicional, lo que reduce el coste en VRAM y simplifica el despliegue.
-- Experimentación con cuantización extrema: la escalera de siete tiers con backbone idéntico permite medir el impacto aislado de la precisión de `lm_head`, embeddings y cabeza MTP sobre la perplejidad, útil para investigación en cuantización.
-- Tareas multimodales ligeras: acoplando `mmproj-BF16.gguf` se pueden procesar prompts con imagen en local, por ejemplo para descripción o extracción de información de capturas y documentos escaneados.
-- Prototipado de asistentes conversacionales sin filtros: al tratarse de un tune "uncensored", encaja en entornos de investigación que requieren respuestas sin rechazo, siempre con revisión humana.
-- Evaluación comparativa de despliegues NVFP4 frente a GGUF clásicos: el repositorio sirve como banco de pruebas para medir throughput y perplejidad en sm_120 frente a cuantizaciones K-quant convencionales.
-- Generación de texto creativo y roleplay: el ajuste "Heretic" del modelo base está orientado a este tipo de contenido, y los tiers de mayor precisión (HIGH, VERY-HIGH) conservan cabezas en BF16.
+- Inferencia local en GPU Blackwell: los siete ficheros están pensados para `llama.cpp` sobre sm_120, de modo que un equipo con RTX 50 series puede servir el modelo con la variante que mejor encaje en su VRAM.
+- Despliegue con presupuesto de VRAM ajustado: la variante VERY-LOW (14,86 GB) permite cargar el modelo en GPUs de 16 GB, mientras que VERY-HIGH (19,69 GB) aprovecha tarjetas de 24 GB con cabezas en BF16.
+- Generación de texto interactiva con baja latencia: la cabeza MTP embebida actúa como drafter y acelera la decodificación en `llama.cpp` sin cargar un modelo especulador adicional.
+- Experimentación con modelos sin censura: el tune "Heretic Uncensored" está orientado a investigación sobre comportamiento de modelos sin las restricciones de alineamiento habituales, siempre con revisión de contenido en producción.
+- Análisis de imágenes con un LLM local: combinando cualquier variante con `mmproj-BF16.gguf` se obtiene un pipeline multimodal que responde a preguntas sobre imágenes sin depender de APIs externas.
+- Evaluación de pipelines de cuantización: la escalera de siete niveles con backbone idéntico y verificación SHA-256 sirve para medir el impacto de la precisión en lm_head, embeddings y cabeza MTP sobre la perplejidad y la velocidad.
+- Prototipado de asistentes conversacionales multilingües en entornos aislados, donde el modelo se ejecuta íntegramente en hardware propio.
 
 ## Benchmarks y rendimiento
 
-El autor publica únicamente perplejidad sobre un corpus de fuentes diversas (menor es mejor):
+El autor publica perplejidad sobre un corpus diverso (menor es mejor), con un ancla de referencia de 3,2445:
 
-| Tier | Perplejidad |
+| Variante | Perplejidad |
 |---|---|
-| VERY-LOW | 3,2874 ± 0,07455 |
-| COMPACT-LOW | 3,2841 ± 0,07468 |
-| LOW | 3,2751 ± 0,07442 |
-| MEDIUM | 3,2596 ± 0,07381 |
-| MID-HIGH | 3,2569 ± 0,07359 |
-| HIGH | 3,2602 ± 0,07384 |
-| VERY-HIGH | 3,2441 ± 0,07320 |
+| VERY-LOW | 3,3414 ± 0,07566 |
+| COMPACT-LOW | 3,3559 ± 0,07670 |
+| LOW | 3,3237 ± 0,07518 |
+| MEDIUM | 3,3206 ± 0,07531 |
+| MID-HIGH | 3,3351 ± 0,07585 |
+| HIGH | 3,3207 ± 0,07530 |
+| VERY-HIGH | 3,3089 ± 0,07469 |
 
-La referencia sin cuantizar es 3,2445, de modo que toda la escalera se mantiene dentro de aproximadamente el 1,3 % de esa cifra. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
+La horquilla completa se sitúa entre un 2 % y un 3,5 % por encima del ancla. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre 14,86 GB (VERY-LOW) y 19,69 GB (VERY-HIGH) solo para los pesos; hay que sumar el contexto KV y, si se usa visión, 0,93 GB del proyector.
-- GPU objetivo: Blackwell sm_120, por el soporte NVFP4 nativo; el autor menciona explícitamente esta arquitectura.
-- GPU de consumo: los tiers bajos y medios caben en tarjetas de 24 GB (RTX 4090, RTX 5090); los tiers HIGH y VERY-HIGH dejan menos margen para contexto largo.
-- Despliegue: llama.cpp, con `--spec-type draft-mtp` para la decodificación especulativa y `--mmproj` para visión. No se documentan integraciones con vLLM, TGI u Ollama en la información disponible.
-- Latencia y throughput: no disponibles; el autor no publica medidas de tokens por segundo.
+- VRAM estimada: entre 14,86 GB (VERY-LOW) y 19,69 GB (VERY-HIGH) solo para los pesos; hay que sumar el espacio de contexto KV y, si se usa visión, los 0,93 GB del proyector.
+- GPUs recomendadas: Blackwell sm_120 (RTX 50 series) por el soporte NVFP4; también cabe en A100 y H100, aunque el rendimiento de NVFP4 está optimizado para la generación Blackwell.
+- Consumer GPU: sí, en tarjetas de 16 GB con VERY-LOW o COMPACT-LOW y en tarjetas de 24 GB con MEDIUM, MID-HIGH, HIGH o VERY-HIGH.
+- Despliegue: `llama.cpp` es el runtime objetivo; para decodificación especulativa hay que activar `--spec-type draft-mtp`. No se documenta soporte en vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen3.8-27B Ultimate-Heretic NVFP4-MTP-GGUF) | 27B (card) / 460,7M (safetensors) | No disponible | GGUF NVFP4 | Apache 2.0 | Siete tiers, MTP embebido, visión opcional, orientado a Blackwell |
-| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27B | No disponible | No disponible | No disponible | Modelo base del tune; sin cuantizar |
-| esatapedico/Qwen3.8-27B-...-NVFP4 | 27B | No disponible | NVFP4 (256 tensores) | Apache 2.0 | Checkpoint clásico del que se parte |
-| esatapedico/Qwen3.8-27B-...-NVFP4-W4A16-T400 | 27B | No disponible | NVFP4 W4A16 (400 tensores) | Apache 2.0 | Variante de serving W4A16 |
+| Este repositorio (Qwen3.8-27B Ultimate Heretic NVFP4 MTP GGUF) | 27B denso | No disponible | GGUF NVFP4 + escalera de precisión | Apache 2.0 | Siete variantes, MTP embebido, visión opcional |
+| `DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored` | 27B denso | No disponible | Safetensors | No disponible | Modelo base del tune; sin cuantizar |
+| `esatapedico/Qwen3.8-27B-...-NVFP4` (256 tensores) | 27B denso | No disponible | NVFP4 | Apache 2.0 | Checkpoint clásico del que parte esta familia |
+| `esatapedico/Qwen3.8-27B-...-NVFP4-W4A16-T400` | 27B denso | No disponible | W4A16 (400 tensores) | Apache 2.0 | Checkpoint de serving con otra estrategia de cuantización |
 
-No se dispone de datos de benchmarks comparativos con otras familias de modelos en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con modelos de otras familias, por lo que la comparación se limita a las variantes del mismo linaje.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de tamaño: la model card indica 27B, pero el campo de parámetros del repo indica 460,7 millones. Verificar antes de dimensionar hardware.
-- Modelo "uncensored": el tune está diseñado para reducir rechazos, lo que aumenta el riesgo de contenido inapropiado, dañino o sesgado; requiere filtros y supervisión en producción.
-- Riesgo de alucinación propio de un modelo de lenguaje de este tamaño, agravado por la cuantización NVFP4 del backbone.
-- La licencia Apache 2.0 se declara en el repo, pero el modelo base y el tune intermedios pueden tener condiciones propias; conviene revisar la cadena completa antes de uso comercial.
-- Dependencia de Blackwell sm_120 para aprovechar NVFP4; en otras arquitecturas el rendimiento puede degradarse.
-- No hay información sobre longitud de contexto real, idiomas soportados con detalle ni calidad de tool calling.
-- La perplejidad publicada no sustituye a evaluaciones de tareas; no hay benchmarks de razonamiento, código o matemáticas.
-- El autor advierte que su aportación es solo la conversión numérica; la calidad del modelo depende de los eslabones superiores de la cadena.
+- El tune "Heretic Uncensored" está diseñado para reducir las restricciones de alineamiento; puede generar contenido inapropiado y requiere filtros propios en producción.
+- Riesgo de alucinación inherente a un modelo de 27B sin datos públicos de evaluación en razonamiento o matemáticas.
+- Los datos de parámetros son inconsistentes: el nombre indica 27B, pero el checkpoint safetensors del repo registra 460.730.096 parámetros; conviene verificar el tamaño real antes de dimensionar el hardware.
+- La perplejidad publicada está entre un 2 % y un 3,5 % por encima del ancla, con solapamiento de intervalos entre variantes; la elección de tier no debe basarse solo en ese dato.
+- El soporte de NVFP4 está atado a Blackwell sm_120; en GPUs anteriores el rendimiento puede degradarse o requerir conversión.
+- La licencia Apache 2.0 se declara en este repositorio, pero la cadena de modelos base (DavidAU y Qwen3.8) debe revisarse por separado antes de un uso comercial.
+- No se documenta longitud de contexto, soporte de tool calling ni idiomas distintos del inglés y "multilingual" genérico.
+- El repositorio ocupa 234,1 GB, por lo que la descarga completa de las siete variantes exige espacio de almacenamiento considerable.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4-MTP-GGUF
-- Modelo base del tune: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
 - Checkpoint NVFP4 de 256 tensores: https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4
 - Checkpoint W4A16 de 400 tensores: https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4-W4A16-T400
-- Sitio del autor: https://www.esatapedico.com
+- Sitio del autor de la conversión: https://www.esatapedico.com

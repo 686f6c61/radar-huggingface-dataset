@@ -2,49 +2,50 @@
 
 ## Resumen
 
-girlslike-zimage es un adaptador LoRA/LoKR de tipo text-to-image publicado por el usuario ifmylove2011 en Hugging Face. No se trata de un modelo fundacional, sino de un conjunto de pesos de ajuste fino (adapters) entrenados sobre los modelos base Tongyi-MAI/Z-Image y Tongyi-MAI/Z-Image-Turbo, ambos desarrollados por Tongyi MAI (Alibaba). Su proposito declarado es la generacion de retratos de personas concretas a partir de su nombre como palabra de activacion, con un enfoque explicito de prueba y experimentacion personal.
+`ifmylove2011/girlslike-zimage` es una coleccion de adaptadores LoRA/LoKR de tipo text-to-image entrenados sobre los modelos Tongyi-MAI/Z-Image y Z-Image-Turbo, publicada por el usuario ifmylove2011 en Hugging Face. No se trata de un modelo fundacional, sino de un conjunto de pesos de ajuste fino orientados a la generacion de retratos y figuras femeninas con identidades concretas, con un enfoque declarado de prueba personal y estetica subjetiva.
 
-El adaptador se distribuye en dos variantes segun el modelo base empleado en el entrenamiento: los sufijos "zi" corresponden a entrenamiento sobre Z-Image base (implementados como LoKR de rango completo) y los sufijos "zit" a entrenamiento sobre Z-Image Turbo. Segun el autor, los adaptadores "zi" funcionan tanto con base como con turbo, mientras que los "zit" solo son utilizables con turbo. El repositorio ocupa 8,1 GB y utiliza la libreria diffusers con licencia Apache 2.0.
+El repositorio incluye dos variantes tecnicas: los adaptadores con sufijo `zi`, entrenados sobre Z-Image base mediante LoKR de rango completo, y los adaptadores con sufijo `zit`, entrenados sobre Z-Image-Turbo. Los primeros pueden emplearse tanto con el modelo base como con Turbo, mientras que los segundos solo funcionan con Turbo. El autor advierte que el entrenamiento sobre base carece aun de un metodo universalmente valido y que la compatibilidad entre variantes es limitada.
 
-La relevancia de esta ficha es acotada: se trata de un recurso de la comunidad orientado a la personalizacion de identidades en generacion de imagenes, con 28.746 descargas y 67 likes en el momento de la consulta. Su interes tecnico radica en documentar el flujo de entrenamiento LoKR sobre modelos de difusion Z-Image y las particularidades de compatibilidad entre variantes base y turbo, mas que en capacidades generales de IA.
+La relevancia del proyecto es acotada: se trata de un trabajo de la comunidad centrado en personalizacion de identidades mediante tecnicas de bajo rango, con licencia Apache 2.0 y un volumen de descargas elevado (mas de 29.000), lo que indica interes practico en flujos de generacion de imagenes con Z-Image. No obstante, el propio autor reconoce problemas de anatomia y estabilidad que limitan su uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA/LoKR sobre modelo de difusion Z-Image (text-to-image) |
-| Parametros totales | no disponible |
+| Arquitectura | LoRA / LoKR sobre difusion Z-Image (text-to-image) |
+| Parametros totales | no disponible (adaptadores de bajo rango; el repositorio ocupa 8,2 GB) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de imagen, no de texto) |
-| Tipos de cuantizacion | no disponible (el autor menciona uso con BF16 en los ejemplos) |
+| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
+| Tipos de cuantizacion | no disponible; se documenta uso en BF16 |
 | Idiomas soportados | no disponible (prompts de ejemplo en chino) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repositorio diffusers; el autor cita BF16) |
+| Formato de pesos | safetensors (formato diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye sobre los modelos de difusion Z-Image y Z-Image-Turbo de Tongyi-MAI. La variante "zi" emplea LoKR (Kronecker-factorized low-rank adaptation) de rango completo, una eleccion que el autor justifica por la ausencia de un esquema generico viable para entrenar sobre Z-Image base. La variante "zit" se entrena sobre Z-Image Turbo. No se especifican en la informacion disponible el numero de imagenes de entrenamiento, la composicion del dataset, el numero de pasos ni si se aplicaron tecnicas de regularizacion o DPO.
+Los adaptadores se construyen como LoKR de rango completo para la variante `zi` (entrenada sobre Z-Image base) y como LoRA para la variante `zit` (entrenada sobre Z-Image-Turbo). El modelo subyacente Z-Image es un modelo de difusion text-to-image de Tongyi-MAI; el repositorio no documenta la arquitectura interna del modelo base ni el volumen de datos de entrenamiento empleado para los adaptadores.
 
-El autor documenta un comportamiento diferencial entre ambas variantes: los adaptadores "zi" usados sobre turbo conservan en mayor medida la textura propia del modelo turbo (por una supuesta menor "contaminacion" de la parte de bajo ruido del modelo base) y logran mejor similitud de identidad en planos medios y lejanos, mientras que en primeros planos el resultado es mas plano. Se advierte que la compatibilidad general es dudosa y que persisten problemas anatomicos, atribuidos a deficiencias del propio modelo base que se trasladan al entrenamiento.
+El autor indica que el entrenamiento sobre base no cuenta todavia con un esquema generalizable, y que la variante `zi` presenta mejor compatibilidad cruzada entre base y Turbo que la variante `zit`. Se anaden como disparadores los nombres reales de las personas representadas, ya que Z-Image-Turbo puede generar directamente ciertas identidades reales mediante prompt; cuando el nombre entra en conflicto, se emplean disparadores especificos marcados en las marcas de agua de las imagenes de ejemplo con el formato `girlslikezi for xxx`. No se documentan tecnicas como RLHF, DPO ni decodificacion especulativa, por no ser aplicables a un adaptador de difusion.
 
 ## Capacidades
 
-- Generacion de imagenes text-to-image de retratos de personas concretas mediante palabras de activacion basadas en el nombre real o en un trigger especifico.
-- Control de similitud de identidad mediante el peso del adaptador (rango recomendado de 0,5 a 1,5; el autor desaconseja superar 1,5).
-- Compatibilidad cruzada parcial: los adaptadores "zi" operan sobre Z-Image base y Z-Image Turbo; los "zit" solo sobre Turbo.
-- Soporte de prompts en chino en los ejemplos documentados.
-- Ajuste de estilo y calidad mediante parametros del sampler (pasos, scheduler, CFG, shift) segun las recomendaciones del autor.
-- No dispone de tool calling, razonamiento multi-paso, vision ni audio: es exclusivamente un adaptador de generacion de imagen.
+- Generacion text-to-image de retratos y figuras femeninas con identidades concretas mediante disparadores.
+- Personalizacion de identidad sobre Z-Image base y Z-Image-Turbo segun la variante (`zi` o `zit`).
+- Control de similitud mediante el peso del adaptador (recomendado entre 0,5 y 1,5; en Turbo con `zi` puede usarse a 1,0).
+- Generacion con prompts en chino, segun los ejemplos del autor.
+- Compatibilidad con flujos de muestreo configurables: `er_sde + sgm_uniform` o `euler + flowmatch`.
+- Ajuste de diversidad mediante doble muestreador con scheduler DDIM en el primer paso.
+- Control del estilo mediante el nodo ModelSamplingAuraFlow con valores de shift entre 3 y 10.
+- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de audio o video.
 
 ## Casos de uso
 
-- Generacion de retratos de referencia para pruebas de concepto: el adaptador permite fijar una identidad concreta mediante trigger y evaluar como se comporta el modelo base en distintas composiciones, util para validar pipelines antes de invertir en entrenamientos propios.
-- Experimentacion con LoKR sobre modelos de difusion: sirve como caso documentado de entrenamiento de rango completo sobre Z-Image base, con notas del autor sobre pesos, pasos y samplers que pueden orientar a otros investigadores.
-- Pruebas de compatibilidad base/turbo: permite comparar como un mismo adaptador se comporta al aplicarse sobre Z-Image base frente a Z-Image Turbo, un escenario relevante para estudiar la transferencia entre variantes destiladas y no destiladas.
-- Ilustracion editorial ficticia con identidad consistente: en proyectos creativos donde se requiere mantener un personaje a lo largo de varias imagenes, el adaptador ofrece consistencia de rostro en planos medios y lejanos, con la cautela de revisar primeros planos.
-- Generacion de imagenes de referencia para diseno de personajes: combinado con prompts descriptivos en chino, puede producir variaciones de vestuario y encuadre manteniendo el rostro, util en fases de preproduccion.
-- Evaluacion de sesgos y calidad anatomica en modelos de difusion: dado que el autor reporta problemas anatomicos persistentes, el adaptador puede emplearse en auditorias internas de calidad de generacion de figuras humanas.
-- Docencia y divulgacion sobre adapters: como ejemplo practico de LoRA/LoKR con licencia Apache 2.0 y pesos publicos, sirve para explicar el flujo de entrenamiento y despliegue de adaptadores en diffusers.
+- Generacion de retratos personalizados: el adaptador permite reproducir una identidad concreta a partir de su disparador, con pesos ajustables para modular la similitud frente a la fidelidad estetica del modelo base.
+- Pruebas de concepto de personajes para ilustracion: util para explorar variaciones de una misma figura en distintos encuadres (plano medio, plano lejano) aprovechando la mayor consistencia en planos abiertos que el autor atribuye a la variante `zi`.
+- Experimentacion con tecnicas de bajo rango: el repositorio sirve como referencia practica para comparar LoKR de rango completo frente a LoRA en modelos de difusion con modos base y turbo.
+- Flujos de generacion rapida con Z-Image-Turbo: con 4 a 8 pasos y cfg=1 se obtienen resultados utilizables, adecuado para iteracion rapida en entornos de prueba.
+- Investigacion sobre sesgos y representacion: permite estudiar como los modelos de difusion incorporan identidades reales en sus datos y como los adaptadores refuerzan o redirigen esas representaciones.
+- Evaluacion de estabilidad anatomica: util como banco de pruebas para medir la incidencia de errores anatomicos en adaptadores de identidad y comparar variantes base frente a turbo.
 
 ## Benchmarks y rendimiento
 
@@ -52,39 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. El repositorio ocupa 8,1 GB y los ejemplos se generan con Z-Image Turbo en BF16, lo que implica requisitos propios del modelo base completo, no solo del adaptador.
-- GPU recomendadas: no disponibles en la informacion proporcionada. El uso en BF16 sugiere GPUs con al menos 16-24 GB de VRAM para el modelo base, aunque este dato no se confirma en la model card.
-- Compatibilidad con GPU de consumo: no confirmada; depende del modelo base Z-Image/Turbo, no del adaptador.
-- Opciones de despliegue: libreria diffusers (declarada en la model card); el autor menciona nodos de ComfyUI como ModelSamplingAuraFlow, lo que indica soporte en flujos de ComfyUI. No se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion.
-- Latencia y throughput: no disponibles. El autor indica que 4 pasos son初步amente utilizables y que mas de 10 pasos no aportan beneficio apreciable con Z-Image Turbo, y que CFG fuera del rango 0,7-1 incrementa el tiempo de generacion.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repositorio ocupa 8,2 GB y se documenta uso en BF16, por lo que se requiere una GPU con al menos 16 GB de VRAM para el modelo base en BF16, y mas si se anaden adaptadores y se generan resoluciones altas.
+- GPU recomendadas: no disponible en la informacion; por el formato BF16 y la resolucion de ejemplo (1080x1440) se situa en el rango de GPUs de gama alta con 16-24 GB o superiores.
+- Cabe en GPU de consumo: no confirmado por el autor; probable en tarjetas de 16 GB o mas en BF16, no verificado.
+- Opciones de despliegue: libreria diffusers; el autor menciona nodos de ComfyUI (ModelSamplingAuraFlow) y muestreadores `er_sde`, `euler`, `ddim`, `sgm_uniform` y `flowmatch`.
+- Latencia y throughput: no disponibles; se documenta que 4 pasos son suficientes para resultados iniciales y que mas de 10 pasos no aportan beneficio apreciable en Turbo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| girlslike-zimage | Adaptador LoRA/LoKR sobre Z-Image | no disponible | no aplica | Apache 2.0 | Hugging Face (diffusers) |
-| Tongyi-MAI/Z-Image | Modelo base text-to-image | no disponible en la informacion | no aplica | no disponible en la informacion | Hugging Face |
-| Tongyi-MAI/Z-Image-Turbo | Modelo base text-to-image destilado | no disponible en la informacion | no aplica | no disponible en la informacion | Hugging Face |
+| girlslike-zimage | LoRA/LoKR de identidad | Z-Image / Z-Image-Turbo | 1080x1440 en ejemplos | Apache 2.0 | Hugging Face |
+| Tongyi-MAI/Z-Image | Modelo de difusion text-to-image | propio | no disponible | no disponible en la informacion | Hugging Face |
+| Tongyi-MAI/Z-Image-Turbo | Modelo de difusion text-to-image (pocos pasos) | propio | no disponible | no disponible en la informacion | Hugging Face |
+| LoRA de identidad genericos (Civitai) | Adaptadores LoRA | SDXL, Flux, etc. | variable | variable | Civitai |
 
-No se dispone de datos de benchmarks ni de otros adaptadores comparables en la informacion proporcionada que permitan una comparacion cuantitativa.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte que el adaptador es para pruebas y no debe usarse para suplantacion, engano u otros fines inapropiados.
-- Persisten problemas anatomicos en las figuras generadas, heredados del modelo base y agravados por el entrenamiento.
-- La compatibilidad entre variantes es limitada: los adaptadores "zit" solo funcionan con Turbo y los "zi" muestran comportamiento desigual segun el modelo base.
-- El modelo base Z-Image Turbo puede generar personas reales directamente por nombre, lo que plantea riesgos de identidad y requiere cautela en el uso.
-- Algunos nombres ya estan presentes en el dataset del modelo base, lo que obliga a usar triggers especificos y puede provocar confusiones de identidad.
-- La licencia Apache 2.0 del adaptador no exime de las condiciones de uso del modelo base Z-Image, que deben verificarse por separado.
-- No hay informacion sobre sesgos demograficos, idiomas soportados ni evaluaciones de seguridad.
-- La documentacion esta mayoritariamente en chino y las recomendaciones de parametros (pasos, CFG, shift) son empiricas y no validadas con metricas objetivas.
-- El repositorio incluye ejemplos con personas reales; su uso comercial o la generacion de contenido con identidades ajenas puede tener implicaciones legales segun la jurisdiccion.
+- El autor declara que el trabajo es de prueba y refleja solo su criterio estetico personal; no esta pensado como producto.
+- Persisten problemas anatomicos frecuentes, agravados por las deficiencias del modelo base; el autor senala que los errores de extremidades se vuelven inestables.
+- La compatibilidad entre variantes es limitada: los adaptadores `zit` solo funcionan con Turbo, y los `zi` muestran comportamiento distinto segun se usen con base o con Turbo.
+- El uso de nombres reales como disparadores implica riesgos de suplantacion, desinformacion y vulneracion de derechos de imagen; el autor prohibe explicitamente el uso para suplantacion o engano.
+- Riesgo de alucinacion visual: el modelo puede generar identidades plausibles pero inexactas, especialmente en primer plano.
+- No hay informacion sobre sesgos demograficos, equilibrio del dataset ni evaluaciones de seguridad.
+- La licencia Apache 2.0 permite uso comercial, pero las obligaciones legales sobre derechos de imagen de las personas representadas recaen en el usuario.
+- El repositorio no documenta idiomas soportados ni calidad de prompt en castellano; los ejemplos usan chino.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ifmylove2011/girlslike-zimage
-- Modelo base Z-Image: https://huggingface.co/Tongyi-MAI/Z-Image
-- Modelo base Z-Image-Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
-- Galeria de la serie girlslike (Space): https://huggingface.co/spaces/ifmylove2011/girlslike_lora_gallery
-- Codigo de la galeria: https://huggingface.co/spaces/ifmylove2011/girlslike_lora_gallery/blob/main/app.py
-- Fuente de prompts citada por el autor (Civitai): https://civitai.com/models/2231696
+- Hugging Face: https://huggingface.co/ifmylove2011/girlslike-zimage
+- Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image
+- Modelo base Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Galeria de disparadores: https://huggingface.co/spaces/ifmylove2011/girlslike_lora_gallery/blob/main/app.py
+- Fuente de prompts citada: https://civitai.com/models/2231696

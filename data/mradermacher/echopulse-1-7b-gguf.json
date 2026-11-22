@@ -55,16 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "EchoPulse 1.7B by adityavardhansharma — VRAM 1.1GB, 256K context | LLM ...",
-      "url": "https://llm-explorer.com/model/adityavardhansharma%2FEchoPulse-1.7B,Td2HDPErn6Sp1EBzC1YY3",
-      "snippet": "EchoPulse 1.7B is an open-source 1.7b LLM by adityavardhansharma. VRAM 1.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
-    },
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    }
-  ]
+  "sources": []
 }

@@ -2,89 +2,94 @@
 
 ## Resumen
 
-MiniCPM-V 4.7 1B Mermaid es una cuantización GGUF Q4_K_M de un modelo de visión-lenguaje de la familia MiniCPM-V, publicada por el usuario Lucasgitguy-co y orientada específicamente a la conversión de diagramas e imágenes en código Mermaid. El repositorio empaqueta dos artefactos separados: el modelo de lenguaje cuantizado en Q4_K_M (0,672 GB) y un proyector visual en F16 (1,109 GB), que deben cargarse conjuntamente para procesar entrada de imagen. El modelo declara 1.006.209.856 parámetros totales y una licencia Apache 2.0.
+MiniCPM-V 4.7 1B Mermaid — GGUF Q4_K_M es una distribución en formato GGUF de un modelo de visión-lenguaje (VLM) afinado para la conversión de imágenes de diagramas en código Mermaid. Lo publica el usuario Lucasgitguy-co en Hugging Face bajo licencia Apache 2.0 y está pensado para inferencia local: el repositorio empaqueta un modelo de lenguaje cuantizado en Q4_K_M (0,672 GB) junto con un proyector visual en F16 (1,109 GB), que deben cargarse conjuntamente para procesar imágenes.
 
-La relevancia de esta publicación es doble. Por un lado, demuestra el flujo de trabajo de despliegue local de un VLM de aproximadamente mil millones de parámetros en hardware de consumo mediante llama.cpp y su herramienta `llama-mtmd-cli`. Por otro, la especialización declarada en Mermaid apunta a un caso de uso muy concreto: la transcodificación de diagramas visuales a representación textual estructurada, una tarea útil en documentación técnica, ingeniería de software y pipelines de generación automática de diagramas.
+El modelo parte de la familia MiniCPM-V 4.7, de la que hereda la arquitectura de visión-lenguaje y el pipeline `image-text-to-text`. El recuento de parámetros declarado en safetensors es de 1.780.767.008, aunque la model card no desglosa qué parte corresponde al componente de lenguaje y qué parte al codificador visual. El interés práctico del artefacto es que permite ejecutar un VLM especializado en diagramas en hardware de consumo mediante llama.cpp, sin depender de servicios en la nube.
 
-Conviene señalar que la model card es explícita respecto a sus límites: no documenta datos de entrenamiento, procedimiento de entrenamiento ni resultados de benchmarks, y advierte que el ejemplo de ejecución no fue probado como parte de la actualización de la documentación. El autor remite a dos datasets relacionados del mismo perfil (uno de texto e imágenes de diagramas Mermaid y otro de texto en inglés y neerlandés), sin que ello establezca la partición exacta de entrenamiento de cada checkpoint.
+La relevancia actual del modelo es acotada pero concreta: cubre la tarea de pasar de una imagen de diagrama (por ejemplo, un flowchart) a código Mermaid reproducible, con un tamaño total de repositorio de 3,6 GB y un flujo de despliegue documentado para Windows, Linux y macOS. La model card es explícita al señalar que no documenta datos de entrenamiento, procedimiento ni resultados de benchmarks en los artefactos inspeccionados.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language model basado en MiniCPM-V 4.7 (transformer multimodal con proyector visual); detalles internos no disponibles |
-| Parámetros totales | 1.006.209.856 |
-| Parámetros activos | no disponible (no se declara arquitectura MoE) |
+| Arquitectura | Vision-lenguaje (VLM) basada en MiniCPM-V 4.7; pesos en GGUF con proyector visual separado |
+| Parametros totales | 1.780.767.008 (dato de safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q4_K_M para el modelo de lenguaje; F16 para el proyector visual (mmproj) |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (`model-Q4_K_M.gguf`, `mmproj-model-f16.gguf`) |
+| Tipos de cuantizacion | Q4_K_M (modelo de lenguaje) + F16 (proyector visual `mmproj`) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (`model-Q4_K_M.gguf`, `mmproj-model-f16.gguf`, bundle `minicpm-mermaid-bundle.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio distribuye una cuantización GGUF de un modelo de la familia MiniCPM-V 4.7, etiquetado como vision-language-model y con pipeline `image-text-to-text`. La arquitectura subyacente es un transformer multimodal con un proyector visual independiente que se carga como artefacto separado (`mmproj-model-f16.gguf`), un patrón habitual en llama.cpp para modelos de visión. El tamaño total declarado, 1.006.209.856 parámetros, sitúa el modelo en el rango de mil millones de parámetros, coherente con una variante "1B" de la familia.
+El repositorio distribuye un modelo de visión-lenguaje con la arquitectura de MiniCPM-V 4.7, empaquetado en dos artefactos GGUF: un modelo de lenguaje cuantizado en Q4_K_M y un proyector visual en F16 que actúa como adaptador entre la imagen y el modelo de lenguaje. El bundle `minicpm-mermaid-bundle.gguf` (1,781 GB) contiene ambos ficheros byte a byte, pero llama.cpp no puede ejecutarlo directamente porque requiere modelo y `mmproj` como dos ficheros separados; para ello se incluye el script `gguf_bundle.py`, que desempaqueta y verifica el sha256 de cada fichero.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO. La model card indica explícitamente que los datos detallados de entrenamiento, el procedimiento y los resultados de benchmarks no están documentados en los artefactos inspeccionados. El autor menciona dos datasets relacionados del mismo perfil —`Lucasgitguy-co/mermaid-diagram-text-images` y `Lucasgitguy-co/mermaid-text-en-nl`— que sugieren un ajuste orientado a diagramas y a texto en inglés y neerlandés, pero sin confirmar la partición exacta usada en cada checkpoint. No se declaran innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+La model card indica que los datos de entrenamiento, el procedimiento y los resultados de benchmarks no están documentados en los artefactos inspeccionados. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. Los únicos indicios de procedencia son enlaces a recursos del proyecto: un dataset de texto e imágenes de diagramas Mermaid y una colección de texto original en inglés y neerlandés, que la propia card aclara que no establecen el split exacto de entrenamiento de cada checkpoint. No se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto e inferencia multimodal imagen-texto, según el pipeline declarado `image-text-to-text`.
-- Conversión de diagramas e imágenes en código Mermaid, que es la especialización declarada en el nombre y en el ejemplo de uso de la model card.
-- Procesamiento de entrada de imagen mediante el proyector visual F16 cargado junto al modelo de lenguaje.
-- Soporte de conversación multi-turno (tag `conversational`).
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
-- Capacidades multilingües limitadas al inglés según el campo `language: en`; no se declara soporte adicional.
-- No se declara soporte de tool calling, function calling, agentes ni modos de razonamiento extendido (thinking mode).
-- No se declara soporte de audio ni de otras modalidades distintas de imagen y texto.
+- Generación de código Mermaid a partir de imágenes de diagramas (flujos, y presumiblemente otros tipos de diagrama) mediante el pipeline `image-text-to-text`.
+- Comprensión de imagen y texto conjunta, al cargar el modelo de lenguaje junto con el proyector visual.
+- Inferencia local en llama.cpp mediante `llama-mtmd-cli`, con soporte de entrada de imagen por fichero (`--image`).
+- Ejecución en un único fichero opcional mediante el bundle, con desempaquetado verificado por sha256.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas a inglés (`en`) según los metadatos.
+- Capacidades especiales (modo thinking, audio, etc.): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Documentación técnica automatizada: el modelo recibe una captura de un diagrama de arquitectura o de flujo y devuelve el código Mermaid equivalente, que puede insertarse directamente en ficheros Markdown de documentación. Es adecuado por su especialización declarada y por el tamaño reducido, que permite ejecutarlo en local.
-- Generación de diagramas en repositorios: integrado en un script de CI que detecte imágenes de diagramas en el repositorio y genere o actualice los bloques Mermaid correspondientes en los README, manteniendo la documentación sincronizada con los diagramas.
-- Migración de diagramas heredados: conversión por lotes de diagramas exportados como PNG o JPEG desde herramientas ofimáticas a Mermaid versionable en Git, lo que facilita la revisión mediante diff.
-- Asistencia en entornos con requisitos de privacidad: al ejecutarse localmente con llama.cpp, permite procesar diagramas internos de una organización sin enviar imágenes a servicios externos.
-- Prototipado rápido de pipelines multimodales: sirve como modelo de referencia de bajo coste para validar una arquitectura de extracción de información visual antes de escalar a modelos mayores.
-- Educación y demostraciones: ejemplo práctico de despliegue de un VLM de aproximadamente mil millones de parámetros en hardware de consumo, útil para talleres sobre cuantización GGUF y llama.cpp.
-- Extracción de estructura de diagramas para herramientas de análisis: obtener una representación textual del diagrama que pueda parsearse posteriormente para construir grafos de dependencias o documentación navegable.
+- Conversión de diagramas a Mermaid en documentación técnica: dado un PNG o captura de un flowchart, el modelo genera el código Mermaid correspondiente, que se puede versionar en el repositorio junto a la documentación. Es el caso de uso principal y el único validado explícitamente en la card (se probó con una imagen de flowchart y produjo código Mermaid correcto).
+- Reconstrucción de diagramas heredados: digitalizar diagramas embebidos en PDFs o capturas antiguas para migrarlos a documentación basada en texto y mantenerlos editables.
+- Integración en pipelines de documentación como preprocesador: un paso que recibe imágenes de diagramas y emite borradores de Mermaid para revisión humana antes de fusionarlos en la rama principal.
+- Asistencia en editores locales: al ser un GGUF de 0,672 GB para el modelo de lenguaje, se puede cargar en un portátil con llama.cpp y ofrecer conversión de diagramas sin enviar imágenes a servicios externos, lo que resulta adecuado para material confidencial.
+- Prototipado de herramientas de diagramación: usar el modelo como motor de "imagen a código" en una aplicación de edición de diagramas, con el proyector F16 separado para poder actualizar solo el componente de lenguaje.
+- Evaluación comparativa de VLM pequeños en tareas de visión estructurada: el artefacto sirve como referencia reproducible (con hashes verificados) para medir la calidad de conversión a Mermaid frente a otros modelos del mismo rango de tamaño.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que los resultados de benchmarks no están documentados en los artefactos inspeccionados y que el ejemplo de ejecución no fue probado como parte de la actualización de la documentación.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que los resultados de benchmarks no están documentados en los artefactos inspeccionados y que los ejemplos de carga son orientativos, no una afirmación de calidad medida.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el conjunto de artefactos suma aproximadamente 1,8 GB (0,672 GB del modelo Q4_K_M y 1,109 GB del proyector F16), por lo que el peso en memoria es inferior a 2 GB antes de considerar el contexto y los buffers de cómputo.
-- GPU recomendadas: no se especifican en la documentación. Por tamaño, cualquier GPU con al menos 4 GB de VRAM debería poder alojar los pesos; no hay datos medidos de latencia ni throughput.
-- Compatibilidad con GPU de consumo: sí, previsiblemente en tarjetas de gama media y alta con 4 GB o más de VRAM, así como en CPU mediante llama.cpp, aunque no se aportan cifras de rendimiento.
-- Opciones de despliegue: llama.cpp mediante `llama-mtmd-cli` con los parámetros `-m` para el modelo y `--mmproj` para el proyector visual. Es necesario un build de llama.cpp que soporte MiniCPM-V 4.7 y su arquitectura de proyector; el autor advierte de que se verifique este soporte antes de la descarga.
-- Descarga: `hf download Lucasgitguy-co/minicpm-mermaid-gguf --local-dir ./minicpm-mermaid-gguf` con `huggingface_hub`.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el modelo de lenguaje Q4_K_M ocupa 0,672 GB y el proyector F16 1,109 GB; en total, alrededor de 1,8 GB de pesos, más el overhead de contexto y del runtime de llama.cpp. No se dispone de una cifra medida de VRAM pico.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, el artefacto es apto para GPU de consumo, pero no se documentan modelos concretos.
+- Cabe en GPU de consumo: sí, por el tamaño de los pesos (menos de 2 GB en total); no se especifican modelos ni requisitos mínimos verificados.
+- Opciones de despliegue: llama.cpp con `llama-mtmd-cli` (modelo + `--mmproj`); el bundle no se puede ejecutar directamente y requiere desempaquetado con `gguf_bundle.py`. La card menciona que Ollama y LM Studio seleccionan los ficheros separados, pero no documenta una configuración validada para ellos.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas (contexto, rendimiento) de este modelo que permitan una comparación cuantitativa rigurosa con alternativas. La siguiente tabla recoge únicamente los datos verificables del repositorio frente a la información disponible de la familia de origen.
-
-| Modelo | Parámetros | Contexto | Formato | Licencia | Datos de rendimiento |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 1B Mermaid (esta ficha) | 1.006.209.856 | no disponible | GGUF (Q4_K_M + mmproj F16) | Apache 2.0 | no disponibles |
-| MiniCPM-V 4.7 (modelo base de referencia) | no disponible | no disponible | no disponible | no disponible | no disponibles |
-| Alternativas VLM de ~1B para diagramas | no disponible | no disponible | no disponible | no disponible | no disponibles |
+| MiniCPM-V 4.7 1B Mermaid (este) | 1.780.767.008 (safetensors) | no disponible | GGUF Q4_K_M + mmproj F16 | Apache 2.0 | Afinado para imagen a Mermaid; sin benchmarks publicados |
+| MiniCPM-V base (familia upstream) | no disponible en esta ficha | no disponible | safetensors / GGUF según release | no disponible en esta ficha | Modelo generalista del que deriva; no se documenta la receta de afinado |
+| Otros VLM pequeños para imagen a código | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
+
+No se dispone de datos suficientes para una comparativa cuantitativa con alternativas concretas; la información proporcionada no incluye benchmarks ni especificaciones de modelos comparables.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta datos de entrenamiento, procedimiento ni evaluación, lo que impide verificar la calidad real del ajuste a Mermaid más allá de la especialización declarada.
-- El ejemplo de ejecución incluido en la model card no fue probado como parte de la actualización de la documentación, según admite el propio autor.
-- El soporte de MiniCPM-V 4.7 y de su arquitectura de proyector depende del build de llama.cpp utilizado; sin esa compatibilidad, el modelo no cargará.
-- El campo de idioma declara únicamente inglés, aunque uno de los datasets relacionados incluye neerlandés; el alcance multilingüe real no está verificado.
-- Riesgo de alucinación inherente a los modelos generativos: la conversión de un diagrama a Mermaid puede omitir relaciones, inventar nodos o producir sintaxis inválida, por lo que requiere validación.
-- No se declaran sesgos conocidos ni evaluaciones de seguridad; al ser un modelo de aproximadamente mil millones de parámetros, su capacidad de razonamiento complejo es limitada en comparación con modelos mayores.
-- La licencia Apache 2.0 permite uso comercial, pero exige conservar el archivo LICENSE, el NOTICE y las atribuciones de terceros al redistribuir.
-- El repositorio tiene un volumen de descargas bajo (158) y ningún "like", lo que sugiere poca validación por parte de la comunidad.
-- No hay información sobre la longitud de contexto soportada, lo que dificulta planificar su uso en conversaciones o documentos largos.
+- La model card no documenta datos de entrenamiento, procedimiento ni evaluación; no hay evidencia publicada de calidad más allá de una prueba manual con una imagen de flowchart.
+- El ejemplo de `llama-mtmd-cli` de la card no fue probado como parte de la actualización de la documentación; el autor lo señala explícitamente.
+- El bundle de un solo fichero no es ejecutable directamente por llama.cpp; requiere desempaquetado previo.
+- Idiomas: solo inglés según los metadatos; no se documenta soporte de castellano.
+- Longitud de contexto no disponible, lo que impide planificar conversaciones o documentos largos con garantías.
+- Riesgo de alucinación en la generación de código Mermaid: no se documentan métricas de fidelidad sintáctica ni de validez del diagrama generado.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Licencia Apache 2.0 permite uso comercial, pero deben conservarse la atribución upstream y los avisos de terceros al redistribuir (ver `NOTICE`).
+- El nombre del bundle no incluye etiqueta de cuantización ni "mmproj", por lo que las herramientas automáticas (`-hf`, Ollama, LM Studio) seguirán seleccionando los ficheros separados.
+- No se documenta compatibilidad verificada con versiones concretas de llama.cpp más allá de la necesidad de un build que soporte MiniCPM-V 4.7 y su arquitectura de proyector.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-gguf
-- Dataset relacionado (texto e imágenes de diagramas): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-diagram-text-images
-- Dataset relacionado (texto en inglés y neerlandés): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-text-en-nl
+- Modelo en Hugging Face: https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-gguf
+- Colección de modelos Mermaid: https://huggingface.co/collections/Lucasgitguy-co/mermaid-models-6aec32e19fcffdc51361686e
+- Dataset de texto e imágenes de diagramas: https://huggingface.co/datasets/Lucasgitguy-co/mermaid-diagram-text-images
+- Dataset de texto original inglés/neerlandés: https://huggingface.co/datasets/Lucasgitguy-co/mermaid-text-en-nl
+- Informe técnico (referenciado en la card): `docs/paper.md` y `docs/paper.pdf` dentro del repositorio
+- Instrucciones de uso: `docs/USAGE.md` dentro del repositorio
+- Estructura de ficheros: `docs/FILE_STRUCTURE.md` dentro del repositorio
+- Procedencia y reproducibilidad: `docs/PROVENANCE.md` dentro del repositorio
+- Historial de versiones: `CHANGELOG.md` dentro del repositorio

@@ -2,56 +2,51 @@
 
 ## Resumen
 
-Assistant_Pepe_8B es un ajuste fino (fine-tune) del modelo Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated, desarrollado por el usuario SicariusSicariiStuff y publicado en Hugging Face. Se trata de un modelo derivado de la familia Llama 3.1 de Meta, con arquitectura transformer densa y aproximadamente 8.000 millones de parametros, entrenado sobre el dataset propietario UBW_Tapestries del mismo autor. El modelo se distribuye bajo la licencia comunitaria Llama 3.1 y esta orientado exclusivamente al idioma ingles.
+Assistant_Pepe_8B es un ajuste fino (fine-tune) del modelo SicariusSicariiStuff/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated, publicado por el usuario SicariusSicariiStuff en Hugging Face. Se trata de una variante de la familia Llama 3.1 de Meta, orientada a tareas de asistencia conversacional y roleplay, entrenada sobre el dataset propio UBW_Tapestries. El modelo se distribuye en formato safetensors con licencia llama3.1 y declara soporte exclusivo para el idioma ingles.
 
-La relevancia de este modelo radica en su herencia de la variante "UltraLong-1M", que sugiere una ventana de contexto extendida (hasta 1 millon de tokens segun la nomenclatura del modelo base, aunque no se confirma en la informacion disponible), combinada con un ajuste fino adicional sobre datos del autor. El sufijo "Abliterated" en el modelo base indica que este ha sido sometido a un proceso de eliminacion de alineamiento y rechazos (abliteration), lo que implica que el modelo resultante carece de las capas de seguridad y rechazo tipicas de los modelos instruct originales.
+El modelo hereda la arquitectura transformer decoder-only de Llama 3.1 en su variante de 8B parametros, aunque el repositorio declara un total de 266.240 parametros en safetensors, cifra que no concuerda con la denominacion 8B del modelo ni con el tamano del repositorio (16,1 GB), por lo que debe interpretarse con cautela. El nombre del modelo base sugiere una ventana de contexto extendida hasta 1M de tokens (UltraLong-1M), si bien esta caracteristica no se confirma de forma independiente en la informacion disponible.
 
-El modelo cuenta con 673 descargas y 90 likes en el momento de la consulta, lo que lo situa como un modelo de nicho dentro de la comunidad. Su proposito parece ser el de un asistente conversacional sin restricciones de contenido, orientado a casos de uso donde los filtros de seguridad de los modelos comerciales resultan limitantes. No se dispone de informacion sobre pipeline, benchmarks publicados ni detalles del proceso de entrenamiento mas alla de lo indicado en la model card.
+La relevancia de este modelo reside en su caracter de fine-tune comunitario sobre una base ya modificada (abliterated), lo que lo situa en el ecosistema de modelos sin censura orientados a roleplay y generacion creativa. Su adopcion es moderada (590 descargas, 93 likes en el momento de la consulta) y cuenta con versiones hermanas de 32B y 70B publicadas por el mismo autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Llama 3.1) |
-| Parametros totales | 266.240 (segun safetensors; discrepancia con el nombre "8B" del modelo, probablemente error de metadatos) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible de forma explicita; el modelo base se denomina "UltraLong-1M", lo que sugiere hasta 1.000.000 de tokens, sin confirmar |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada |
+| Arquitectura | Transformer decoder-only (familia Llama 3.1, segun tags y modelo base) |
+| Parametros totales | 266.240 declarados en safetensors (la denominacion comercial es 8B; dato inconsistente) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible de forma confirmada (el nombre del modelo base sugiere 1M tokens) |
+| Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Ingles (en) |
-| Licencia | Llama 3.1 (licencia comunitaria de Meta) |
-| Formato de pesos | Safetensors |
-| Tamano del repositorio | 16,1 GB |
-| Modelo base | SicariusSicariiStuff/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated |
-| Dataset de entrenamiento | SicariusSicariiStuff/UBW_Tapestries |
-| Fecha de creacion | 2026-01-14 |
-| Ultima actualizacion | 2026-11-04 |
+| Licencia | llama3.1 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer densa de Llama 3.1, heredada a traves de la cadena de modelos base: Llama 3.1 original de Meta, posteriormente ajustado por NVIDIA como Nemotron-8B-UltraLong-1M-Instruct, despues sometido a abliteration por SicariusSicariiStuff y finalmente ajustado de nuevo sobre el dataset UBW_Tapestries. La nomenclatura "UltraLong-1M" del modelo base indica una extension de la ventana de contexto hasta 1 millon de tokens, probablemente mediante tecnicas de RoPE scaling o interpolacion posicional, aunque no se detalla el metodo exacto en la informacion disponible.
+El modelo se basa en la arquitectura transformer decoder-only de Llama 3.1, en su variante de aproximadamente 8.000 millones de parametros. El modelo base declarado es SicariusSicariiStuff/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated, un fine-tune previo que, por su nombre, combina la base Nemotron de NVIDIA con una ventana de contexto extendida a 1M de tokens y una modificacion de tipo "abliterated" (eliminacion de direcciones de rechazo en el espacio de activaciones). El ajuste de Assistant_Pepe_8B se ha realizado sobre el dataset SicariusSicariiStuff/UBW_Tapestries, de composicion no detallada en la informacion disponible.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset UBW_Tapestries ni si se emplearon tecnicas de RLHF, DPO o ajuste supervisado. El proceso de abliteration aplicado al modelo base implica la eliminacion de direcciones de activacion asociadas al rechazo de peticiones, lo que resulta en un modelo sin las capas de seguridad habituales. El ajuste fino posterior sobre UBW_Tapestries sugiere una especializacion del comportamiento conversacional, aunque se desconoce la naturaleza concreta de estos datos.
+No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o preferencia humana. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. La informacion publica se limita a metadatos, tags y elementos visuales de la model card.
 
 ## Capacidades
 
-- Generacion de texto en ingles con capacidad de conversacion multi-turno.
-- Razonamiento y respuesta a instrucciones heredadas del modelo Nemotron Instruct.
-- Capacidad de contexto extendido potencial (hasta 1M de tokens segun el modelo base, sin confirmar).
-- Ausencia de filtros de rechazo y alineamiento de seguridad (efecto de la abliteration).
-- No se confirma soporte de tool calling o function calling.
-- No se confirma soporte de agentes o razonamiento multi-paso.
-- No se confirma capacidad de vision, audio ni otras modalidades.
-- Modelo unicamente en ingles; sin capacidades multilingues confirmadas.
+- Generacion de texto conversacional multi-turno, orientada a asistencia y roleplay.
+- Generacion creativa y narrativa, dado el enfasis del autor en tarjetas de roleplay.
+- Capacidad de instruccion heredada del modelo base Nemotron Instruct.
+- Posible ventana de contexto extendida (hasta 1M tokens segun el nombre del modelo base, no confirmado).
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: limitadas al ingles segun los metadatos.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Generacion de ficcion y narrativa sin restricciones: el modelo, al haber sido sometido a abliteration, puede generar contenido creativo que los modelos alineados rechazarian, lo que lo hace adecuado para escritura de ficcion adulta o temas sensibles.
-- Roleplay conversacional: la model card enlaza explicitamente a una coleccion de tarjetas de roleplay del mismo autor, lo que indica que el modelo esta optimizado para personajes y dialogos de rol.
-- Asistente personal sin filtros: para usuarios que necesitan un asistente que no rechace peticiones por motivos de politica de contenido, en entornos controlados y de uso personal.
-- Procesamiento de documentos largos: si se confirma la ventana de contexto de 1M de tokens, el modelo podria emplearse para resumir o analizar documentos extensos en una sola pasada, aunque la calidad en contextos tan largos no esta verificada.
-- Experimentacion en investigacion sobre alineamiento: el modelo sirve como caso de estudio de los efectos de la abliteration sobre el comportamiento y la calidad de las respuestas.
-- Generacion de dialogos para videojuegos o simulaciones: su capacidad conversacional y ausencia de rechazos lo hacen util para NPCs o personajes en entornos donde se requiere libertad de expresion.
-- Base para ajustes finos adicionales: al estar disponible en safetensors y bajo licencia Llama 3.1, puede servir como punto de partida para fine-tunes especializados.
+- Roleplay y personajes conversacionales: el modelo esta explicitamente orientado a este uso, con tarjetas de roleplay publicadas por el autor, lo que lo hace adecuado para chatbots de personajes con personalidad consistente en conversaciones largas.
+- Asistencia conversacional en ingles: puede gestionar dialogos multi-turno como asistente general, aprovechando la base Nemotron Instruct.
+- Generacion creativa de ficcion y narrativa: util para escritura asistida de relatos, dialogos y guiones donde se requiera un tono desinhibido.
+- Prototipado de agentes conversacionales: su tamano de 8B permite desplegarlo en una unica GPU para pruebas de concepto de asistentes.
+- Investigacion sobre modelos abliterated: sirve como caso de estudio para analizar el efecto de la eliminacion de rechazos sobre el comportamiento conversacional.
+- Despliegue local en entornos con recursos limitados: al ser un modelo de 8B, es viable en GPUs de consumo para experimentacion personal.
+- Fine-tuning posterior: puede servir como base para ajustes adicionales en dominios creativos o de personajes.
 
 ## Benchmarks y rendimiento
 
@@ -59,41 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 16 GB (coherente con el tamano del repositorio de 16,1 GB).
-- VRAM estimada en cuantizacion de 8 bits: aproximadamente 8-9 GB.
-- VRAM estimada en cuantizacion de 4 bits: aproximadamente 5-6 GB.
-- GPU recomendadas para FP16: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB), RTX 3090 (24 GB).
-- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 (16 GB, justo en FP16) y en GPUs con 8 GB o mas si se cuantiza a 8 o 4 bits.
-- Opciones de despliegue: no se especifican en la model card; al ser un modelo Llama 3.1 en safetensors, es compatible con vLLM, TGI, llama.cpp (previa conversion a GGUF), Ollama y transformers.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de 8B en precision FP16 se estiman en torno a 16 GB, y en cuantizaciones de 4 bits alrededor de 5-6 GB, aunque estas cifras son estimaciones generales y no datos del autor.
+- GPU recomendadas: no especificadas por el autor; por tamano, cabria esperar viabilidad en GPUs de 16 GB o superiores en FP16.
+- Compatibilidad con GPU de consumo: probable en RTX 3090, RTX 4090 y similares con cuantizacion; no confirmado oficialmente.
+- Opciones de despliegue: no documentadas en la model card; al ser formato safetensors de Llama, es compatible con frameworks estandar como Transformers, vLLM o llama.cpp previa conversion, si bien esto no se confirma en la informacion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Assistant_Pepe_8B | ~8B (nominal) | Hasta 1M (sin confirmar) | Llama 3.1 | Hugging Face | Fine-tune abliterated sin benchmarks |
-| Llama-3.1-8B-Instruct (Meta) | 8B | 128K | Llama 3.1 | Hugging Face, ampliamente disponible | Modelo oficial alineado, con benchmarks publicados |
-| Nemotron-8B-UltraLong-1M-Instruct (NVIDIA) | 8B | 1M | Llama 3.1 | Hugging Face | Base directo del modelo, con contexto extendido |
-| Dolphin-2.9-Llama-3-8B (Cognitive Computations) | 8B | 8K | Llama 3 | Hugging Face | Fine-tune sin censura, con benchmarks parciales |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Assistant_Pepe_8B | 8B (266.240 declarados, inconsistente) | No confirmado (posible 1M por nombre del base) | llama3.1 | Hugging Face |
+| Llama 3.1 8B Instruct (Meta) | 8B | 128K | llama3.1 | Hugging Face |
+| SicariusSicariiStuff/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated | 8B | 1M (segun nombre) | no disponible | Hugging Face |
+| Assistant_Pepe_32B (mismo autor) | 32B | no disponible | llama3.1 (presumible) | Hugging Face |
+
+La comparativa con modelos de la misma categoria (8B instruct) es limitada porque no se han publicado benchmarks que permitan contrastar rendimiento. La principal diferencia frente a Llama 3.1 8B Instruct es el caracter abliterated y el ajuste especifico para roleplay.
 
 ## Limitaciones y advertencias
 
-- Ausencia de alineamiento de seguridad: la abliteration elimina los rechazos, por lo que el modelo puede generar contenido danino, ofensivo o ilegal sin filtros. No apto para despliegues publicos sin moderacion externa.
-- Riesgo elevado de alucinacion: no se han publicado evaluaciones de fidelidad; los fine-tunes sin benchmarks verificados suelen presentar tasas de alucinacion superiores a los modelos oficiales.
-- Sesgos desconocidos: no se documenta la composicion del dataset UBW_Tapestries, por lo que no es posible evaluar sesgos de genero, raza, religion u otros.
-- Limitacion idiomatica: solo ingles; no se garantiza calidad en castellano ni en otros idiomas.
-- Discrepancia en parametros: el campo safetensors indica 266.240 parametros, lo que contradice el nombre "8B" y el tamano del repositorio (16,1 GB). Probablemente se trata de un error de metadatos, pero conviene verificar antes de desplegar.
-- Contexto no confirmado: la ventana de 1M de tokens es una inferencia del nombre del modelo base; no se confirma en la model card ni se documenta la calidad en contextos largos.
-- Licencia Llama 3.1: el uso comercial esta permitido bajo los terminos de la licencia comunitaria de Meta, que incluye restricciones (por ejemplo, no usar para entrenar modelos competidores y obligacion de atribucion). Conviene revisar los terminos completos.
-- Modelo de nicho: con 673 descargas y sin benchmarks, la fiabilidad en produccion no esta avalada por la comunidad.
-- Fecha de creacion futura (2026): los metadatos indican fechas posteriores a la actualidad, lo que sugiere posibles errores en el registro o manipulacion de metadatos.
+- Inconsistencia en los metadatos: el campo de parametros totales (266.240) no concuerda con la denominacion 8B ni con el tamano del repositorio (16,1 GB), lo que sugiere un error de registro o un dato no fiable.
+- Modelo abliterated: la eliminacion de direcciones de rechazo puede incrementar el riesgo de generar contenido inapropiado, ofensivo o inseguro, y reduce las salvaguardas del modelo original.
+- Riesgo de alucinacion: al ser un fine-tune comunitario sin benchmarks publicados, no hay garantias sobre la fidelidad factual.
+- Idioma: soporte unicamente en ingles, lo que limita su uso en castellano u otros idiomas.
+- Contexto: la ventana de 1M tokens no esta confirmada oficialmente y podria degradarse en la practica.
+- Licencia llama3.1: impone restricciones de uso comercial y obligaciones de atribucion que deben revisarse antes de un despliegue en produccion.
+- Falta de documentacion tecnica: no se detallan datos de entrenamiento, composicion del dataset ni proceso de alineacion, lo que dificulta evaluar su calidad y sesgos.
+- Sesgos conocidos: no documentados por el autor; heredados potencialmente del modelo base y del dataset UBW_Tapestries.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_8B
+- Hugging Face: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_8B
 - Modelo base: https://huggingface.co/SicariusSicariiStuff/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated
-- Dataset UBW_Tapestries: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries
+- Dataset: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries
 - Version 32B: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_32B
 - Version 70B: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_70B
 - Tarjetas de roleplay: https://huggingface.co/SicariusSicariiStuff/Roleplay_Cards
-- Imagen del modelo: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_8B/resolve/main/Images/Assistant_Pepe_8B.png

@@ -2,100 +2,101 @@
 
 ## Resumen
 
-Gemma-4-31B-Humanlike-Chat-i1-GGUF es una colección de cuantizaciones en formato GGUF con matriz de importancia (imatrix) del modelo LessThanThreeAI/Gemma-4-31B-Humanlike-Chat, publicada por mradermacher, un cuantizador muy conocido en la comunidad de Hugging Face. El modelo base es un chat de 31B parámetros (30.697.345.596 exactos según los safetensors) construido sobre la familia Gemma 4, orientado a conversación natural, roleplay y generación de texto con estilo humanlike, con soporte de tool calling.
+Gemma-4-31B-Humanlike-Chat-i1-GGUF es una cuantizacion en formato GGUF del modelo LessThanThreeAI/Gemma-4-31B-Humanlike-Chat, un ajuste fino de la familia Gemma 4 de Google orientado a conversacion natural, roleplay y uso de herramientas. El trabajo de cuantizacion lo firma mradermacher, autor habitual de versiones GGUF e imatrix de modelos abiertos, y esta pensado para ejecutar el modelo en llama.cpp y entornos de inferencia local con requisitos de memoria reducidos.
 
-La relevancia de esta ficha radica en el repositorio de cuantización: mradermacher ofrece más de 20 variantes que van desde IQ1_S (7,3 GB) hasta Q6_K (25,3 GB), lo que permite ejecutar un modelo de 31B en hardware muy diverso, desde portátiles con GPU modesta hasta estaciones de trabajo. Las cuantizaciones con imatrix (importance matrix) preservan mejor la calidad que las cuantizaciones estáticas a tamaños equivalentes, especialmente en los rangos bajos (IQ2, IQ3).
+El modelo base cuenta con 30.697.345.596 parametros (aproximadamente 30,7 mil millones) y esta especializado en dialogos con un tono "humanlike", soporte de tool calling y function calling, y personajes consistentes. Su licencia es Apache 2.0, lo que facilita el uso comercial, y declara soporte para ingles y ruso.
 
-El modelo base se ha entrenado mediante destilación on-policy (on-policy distillation), una técnica que mejora la coherencia conversacional y el estilo natural. Está licenciado bajo Apache 2.0, lo que permite uso comercial sin restricciones, y soporta inglés y ruso. Según la model card, se trata de un modelo con capacidades de visión, cuyos archivos mmproj se encuentran en el repositorio de cuantizaciones estáticas.
+Esta ficha se centra en la version cuantizada distribuida por mradermacher, que ofrece un abanico amplio de niveles de cuantizacion (desde IQ1_S de 7,3 GB hasta Q6_K de 25,3 GB) generados con imatrix, lo que permite desplegar el modelo en hardware que va desde GPUs de consumo con 8-12 GB hasta servidores con aceleradores profesionales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (transformer densa, no disponible mayor detalle) |
-| Parámetros totales | 30.697.345.596 (~30,7B / 31B) |
-| Parámetros activos | No aplicable (no es MoE) |
+| Arquitectura | Transformer (familia Gemma 4), detalles no disponibles |
+| Parametros totales | 30.697.345.596 (~30,7 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_M, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix) |
-| Idiomas soportados | Inglés, ruso |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (generadas con imatrix) |
+| Idiomas soportados | Ingles (en), ruso (ru) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (este repo); el modelo base está disponible en safetensors |
+| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la familia Gemma 4 y sigue una arquitectura transformer densa de unos 31B parámetros; no se ha publicado información detallada sobre número de capas, dimensiones ocultas o mecanismos de atención concretos. La model card indica que se trata de un modelo con capacidades de visión (los archivos de proyector multimodal, mmproj, se distribuyen en el repositorio de cuantizaciones estáticas de mradermacher).
+El modelo base pertenece a la familia Gemma 4, una arquitectura transformer densa de aproximadamente 30,7 mil millones de parametros. La model card del repositorio cuantizado no aporta detalles sobre el numero de capas, dimensiones ocultas, atencion o configuracion exacta del transformer; esa informacion no esta disponible en la documentacion proporcionada.
 
-El rasgo de entrenamiento más destacable es el uso de on-policy distillation (destilación on-policy), según las etiquetas del repositorio. En esta técnica, el modelo estudiante genera sus propias salidas y recibe retroalimentación de un modelo profesor sobre esas mismas generaciones, lo que reduce el gap de distribución entre entrenamiento e inferencia y suele traducirse en respuestas más coherentes y con estilo más natural, coherente con el enfoque "humanlike" del modelo. No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO.
-
-En cuanto al repositorio de cuantización, mradermacher emplea cuantizaciones ponderadas con matriz de importancia (imatrix), calculada a partir de un archivo de calibración de 0,1 GB. Este método asigna mayor precisión a los tensores más relevantes para la salida, mejorando la calidad percibida en cuantizaciones agresivas (IQ1-IQ3) frente a las cuantizaciones estáticas equivalentes.
+El ajuste fino del modelo base se describe mediante la etiqueta "on-policy-distillation", lo que sugiere un proceso de destilacion sobre politicas generadas por el propio modelo o por un profesor, orientado a mejorar la naturalidad conversacional y el estilo "humanlike". No se detallan el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. Las cuantizaciones de mradermacher se han generado con ficheros imatrix (importance matrix), lo que mejora la calidad de los niveles bajos de cuantizacion respecto a las cuantizaciones estaticas equivalentes.
 
 ## Capacidades
 
-- Generación de texto conversacional con estilo natural y humanlike, orientación principal del modelo base.
-- Roleplay y interpretación de personajes (tags "roleplay" y "character"), útil para chatbots de ficción y narrativa interactiva.
-- Tool calling / function calling: el modelo soporta llamadas a herramientas según las etiquetas del repositorio.
-- Capacidades de visión: la model card lo identifica como modelo de visión, con archivos mmproj disponibles en el repositorio de cuantizaciones estáticas.
-- Soporte bilingüe: inglés y ruso.
-- Compatibilidad con vLLM y SGLang (según tags), además de llama.cpp por el formato GGUF.
-- Cuantizaciones desde 7,3 GB (IQ1_S) hasta 25,3 GB (Q6_K), cubriendo un rango amplio de hardware.
+- Generacion de texto conversacional con un estilo deliberadamente natural y humano.
+- Roleplay y encarnacion de personajes (etiquetas "roleplay" y "character").
+- Tool calling y function calling, con soporte declarado en las etiquetas del repositorio.
+- Integracion con motores de inferencia compatibles con endpoints (vLLM, SGLang) segun las etiquetas.
+- Conversacion multi-turno en ingles y ruso.
+- Capacidades de razonamiento y codigo: no confirmadas explicitamente en la informacion disponible.
+- Vision, audio o modo "thinking": no disponibles.
 
 ## Casos de uso
 
-- Chatbots de roleplay y personajes: el entrenamiento orientado a humanlike y character lo hace adecuado para companions de ficción, NPCs de videojuegos y narrativa interactiva, donde el estilo natural importa más que la precisión factual.
-- Asistentes conversacionales en inglés y ruso: soporta ambos idiomas de forma nativa, útil para productos dirigidos a usuarios rusohablantes que necesitan un modelo abierto con licencia permisiva.
-- Agentes con llamadas a herramientas: el soporte de tool calling permite integrarlo en pipelines de agentes que consultan APIs, buscadores o bases de datos en múltiples pasos.
-- Inferencia local en hardware de consumo: con la variante Q4_K_M (18,8 GB) cabe en una RTX 4090 de 24 GB; con IQ3_M (14,5 GB) o IQ4_XS (16,8 GB) cabe en GPUs de 16 GB como la RTX 4080 o la RTX 5060 Ti 16 GB.
-- Análisis de imágenes en local: al ser un modelo de visión, puede emplearse para descripción de imágenes y VQA en entornos offline, usando los mmproj del repositorio estático junto a llama.cpp.
-- Prototipado y evaluación de cuantizaciones: la amplia gama de variantes lo convierte en buen banco de pruebas para medir el impacto real de cuantizaciones agresivas (IQ1-IQ3) sobre la calidad conversacional.
-- Servicios con uso comercial: la licencia Apache 2.0 permite integrarlo en productos comerciales sin royalties ni restricciones de uso.
+- Asistentes conversacionales de atencion al cliente: el modelo puede mantener dialogos multi-turno con un tono natural y coherente, adecuado para interfaces de chat donde la fluidez importa mas que la precision factual extrema.
+- Agentes con tool calling: al declarar soporte de function calling, puede integrarse en flujos donde el modelo decide que herramienta invocar (consultas a APIs, busquedas, operaciones CRUD) y devuelve argumentos estructurados.
+- Roleplay y experiencias interactivas: su especializacion en personajes lo hace util para videojuegos narrativos, chatbots de compania o simulaciones de entrevistas, donde la consistencia de personaje es critica.
+- Generacion de contenido creativo en ingles y ruso: redaccion de dialogos, guiones o ficcion interactiva con registro conversacional.
+- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M (18,8 GB) e IQ4_XS (16,8 GB) permiten ejecutarlo en GPUs de consumo de gama alta (24 GB) con llama.cpp u Ollama.
+- Prototipado de pipelines de agentes en vLLM o SGLang: las etiquetas indican compatibilidad con estos motores, lo que facilita servir el modelo con batching continuo en entornos de investigacion.
+- Evaluacion de tecnicas de cuantizacion: la disponibilidad de 23 niveles distintos con imatrix permite estudiar el compromiso entre tamano, velocidad y calidad en un modelo de ~31 B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin KV cache):
-  - IQ1_S: ~7,3 GB; IQ1_M: ~7,8 GB (calidad muy degradada, solo emergencias).
-  - IQ2_M: ~11,0 GB; Q2_K: ~12,0 GB.
-  - IQ3_M: ~14,5 GB; IQ4_XS: ~16,8 GB.
-  - Q4_K_M: ~18,8 GB (recomendada por el autor); Q5_K_M: ~21,9 GB; Q6_K: ~25,3 GB.
-  - Añadir 1-3 GB adicionales para el KV cache según la longitud de contexto usada.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - IQ1_S (7,3 GB) / IQ1_M (7,8 GB): ~8-10 GB.
+  - IQ2_XXS (8,8 GB) a IQ2_M (11,0 GB): ~10-13 GB.
+  - IQ3_XS (13,2 GB) a Q3_K_L (16,7 GB): ~15-19 GB.
+  - IQ4_XS (16,8 GB) / Q4_K_S (17,9 GB) / Q4_K_M (18,8 GB): ~18-21 GB.
+  - Q5_K_M (21,9 GB): ~23-25 GB.
+  - Q6_K (25,3 GB): ~27-29 GB.
 - GPU recomendadas:
-  - RTX 4090 / RTX 5090 (24-32 GB): Q5_K_M o Q6_K con buen margen de contexto.
-  - RTX 4080 / RTX 5060 Ti 16 GB: IQ4_XS o IQ3_M.
-  - RTX 4060 Ti 8 GB / portátiles: IQ2_M o IQ1_M, con pérdida de calidad notable.
-  - CPU pura: viable con variantes IQ2-IQ3 en equipos con 16-32 GB de RAM, a velocidades bajas (unos pocos tokens/s).
-- Cabe en GPU de consumo: sí, desde GPUs de 8 GB con cuantizaciones extremas hasta GPUs de 24 GB con calidad casi completa (Q6_K).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime compatible con GGUF; el modelo base en safetensors es compatible con vLLM y SGLang según las etiquetas del repo.
-- Latencia y throughput: no disponible; en GPUs de consumo con cuantización Q4, un modelo de 31B suele situarse en el orden de 20-40 tokens/s con offload completo a GPU, pero no hay datos publicados para este modelo concreto.
+  - RTX 4090 (24 GB): Q4_K_M o IQ4_XS con contexto moderado; Q5_K_M al limite.
+  - RTX 3090 (24 GB): similar a la 4090, con menor throughput.
+  - A100 40 GB / H100 80 GB: Q6_K o Q5_K_M con contexto largo y batching.
+  - GPUs de 8-12 GB: solo cuantizaciones IQ1/IQ2, con calidad notablemente degradada.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4; en GPUs de 12 GB solo con IQ2 o inferiores, o con offload parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio (formato GGUF); vLLM y SGLang para el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad GGUF |
-|---|---|---|---|---|
-| Gemma-4-31B-Humanlike-Chat (este) | 30,7B | no disponible | Apache 2.0 | Sí, 23 variantes imatrix |
-| Gemma 3 27B (Google) | 27B | 128K | Gemma license (restricciones) | Sí, amplio soporte |
-| Qwen3 32B (Alibaba) | 32,5B (MoE según variante) | 128K+ | Apache 2.0 | Sí, amplio soporte |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Gemma-4-31B-Humanlike-Chat-i1-GGUF (este) | ~30,7 B | no disponible | Apache 2.0 | GGUF | Cuantizacion imatrix de un fine-tune conversacional |
+| LessThanThreeAI/Gemma-4-31B-Humanlike-Chat | ~30,7 B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar |
+| mradermacher/Gemma-4-31B-Humanlike-Chat-GGUF | ~30,7 B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estaticas (sin imatrix) del mismo modelo |
 
-Notas de la comparativa: frente a Gemma 3 27B, este modelo ofrece una licencia más permisiva (Apache 2.0 frente a la licencia Gemma con sus restricciones de uso) y un enfoque especializado en conversación humanlike y roleplay, pero carece del contexto de 128K documentado. Frente a Qwen3 32B, comparte licencia Apache 2.0 y rango de tamaño similar, aunque Qwen3 tiene un ecosistema de benchmarks y herramientas más documentado. No se han publicado benchmarks que permitan comparar rendimiento cuantitativo.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Soporte lingüístico limitado: solo inglés y ruso; no está indicado su rendimiento en castellano ni en otros idiomas, por lo que el uso en español no está garantizado.
-- Cuantizaciones extremas (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad; el propio autor las califica de "para desesperados" y advierte de que algunas variantes Q2/Q3 son probablemente inferiores a sus equivalentes IQ.
-- Riesgo de alucinación: no disponible información específica, pero como todo LLM conversacional orientado a estilo natural y roleplay, puede generar contenido ficticio con apariencia verosímil; no es adecuado como fuente factual sin verificación.
-- Longitud de contexto no documentada: no se puede planificar el uso de documentos largos sin verificarlo empíricamente.
-- Capacidades de visión: los archivos mmproj están en el repositorio de cuantizaciones estáticas, no en este; hay que descargar ambos repositorios para usar la modalidad visual.
-- Sesgos conocidos: no disponible; al ser un modelo afinado para roleplay y estilo humanlike, puede reproducir sesgos del modelo base Gemma 4 y de los datos de destilación.
-- Licencia: Apache 2.0, sin restricciones comerciales relevantes; no obstante, conviene revisar la model card del modelo base (LessThanThreeAI) por si existen condiciones adicionales del entrenamiento.
-- Es un repositorio de cuantización de terceros: cualquier bug del modelo base se hereda, y la calidad de la conversión depende del proceso de mradermacher, aunque este es un cuantizador con amplia trayectoria en la comunidad.
+- Idiomas limitados a ingles y ruso; el rendimiento en castellano no esta garantizado ni documentado.
+- Riesgo de alucinacion inherente a modelos conversacionales de este tamano; no se han publicado evaluaciones de factualidad.
+- Las cuantizaciones IQ1 e IQ2 degradan la calidad de forma significativa; el propio autor las etiqueta como "for the desperate" o "mostly desperate".
+- El ajuste fino prioriza naturalidad conversacional sobre precision tecnica, lo que puede afectar a tareas de razonamiento estricto o codigo.
+- No se documentan sesgos especificos, pero al derivar de Gemma 4 hereda los sesgos del modelo original.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos de entrenamiento originales.
+- No hay informacion sobre longitud de contexto efectiva, lo que dificulta planificar despliegues con ventanas largas.
+- El repositorio pesa 334,8 GB en total; descargar solo el fichero GGUF necesario.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones imatrix (esta ficha): https://huggingface.co/mradermacher/Gemma-4-31B-Humanlike-Chat-i1-GGUF
-- Repositorio de cuantizaciones estáticas (incluye mmproj para visión): https://huggingface.co/mradermacher/Gemma-4-31B-Humanlike-Chat-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-31B-Humanlike-Chat-i1-GGUF
 - Modelo base: https://huggingface.co/LessThanThreeAI/Gemma-4-31B-Humanlike-Chat
-- Página de descargas resumida de mradermacher: https://hf.tst.eu/model#Gemma-4-31B-Humanlike-Chat-i1-GGUF
-- Guía de uso de GGUF referenciada (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Paper, blog o demo del modelo base: no disponible
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Gemma-4-31B-Humanlike-Chat-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-4-31B-Humanlike-Chat-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

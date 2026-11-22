@@ -2,92 +2,95 @@
 
 ## Resumen
 
-Uhm es un modelo de clasificación de audio especializado en la detección de muletillas y disfluencias del habla ("uh", "um", "hmm") con precisión de fotograma de hasta 20 ms. Lo desarrolla Desert Ant Labs y se distribuye a través de Hugging Face bajo una licencia propia de código disponible (*source available*). A diferencia de los modelos de reconocimiento de voz, Uhm no necesita transcripción: opera directamente sobre la señal de audio y devuelve intervalos temporales con una puntuación de confianza para cada muletilla detectada.
+Uhm es un modelo de clasificación de audio especializado en la detección de muletillas y disfluencias del habla ("uh", "um", "hmm") con precisión de frame, hasta 20 ms. Lo desarrolla Desert Ant Labs y se distribuye a través de Hugging Face con una licencia propia de código disponible (*source available*). No es un modelo de lenguaje generativo: es un detector acústico que identifica segmentos de relleno en audio sin necesidad de transcripción previa.
 
-El modelo está entrenado principalmente en inglés con transferencia acústica a español, francés, alemán y neerlandés, y se distribuye en formatos optimizados para inferencia en dispositivo: Core ML (fp16 compilado), LiteRT/TFLite (int8 con pesos cuantizados), ONNX y Core AI. Su tamaño es reducido (24-45 MB según formato), lo que lo hace apto para ejecutarse en móviles, navegadores y sistemas de escritorio sin conexión a la nube.
+El modelo se ha entrenado en inglés y aplica transferencia acústica a español, francés, alemán y neerlandés, lo que lo hace útil para pipelines de edición de audio y vídeo multilingües. Su propuesta diferencial es la ejecución totalmente *on-device*: se distribuye en formatos Core ML (fp16, 45 MB), LiteRT/TFLite (int8 weight-only, 24 MB), ONNX y Core AI, con SDKs nativos para Swift, Kotlin y JavaScript (navegador y Node).
 
-Su relevancia actual radica en el auge de herramientas de edición de audio y vídeo asistidas por IA que necesitan eliminar muletillas automáticamente sin enviar el audio a servidores externos, así como en aplicaciones de accesibilidad y análisis de fluidez del habla. El SDK asociado (Swift, Kotlin, JavaScript) gestiona la descarga, el caché y el procesamiento del audio, incluyendo la reconciliación con transcripciones para recortar muletillas sin cortar palabras reales.
+La relevancia actual del modelo radica en su enfoque práctico: elimina la dependencia de la nube para una tarea de post-proceso de audio muy común en podcasting, entrevistas y generación de contenido, ofreciendo latencias bajas y un tamaño reducido que permite ejecutarlo en dispositivos móviles y navegadores.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de clasificación de audio; pesos en Core ML, LiteRT/TFLite, ONNX y Core AI) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (procesa audio por ventanas; resolución temporal de 20 ms) |
-| Tipos de cuantizacion | fp16 (Core ML compilado), int8 weight-only (LiteRT/TFLite), fp16 (variante web) |
-| Idiomas soportados | de, en, es, fr, nl (entrenado en inglés con transferencia acústica al resto) |
+| Arquitectura | No disponible (modelo de clasificación de audio; se distribuye en Core ML, LiteRT/TFLite, ONNX y Core AI) |
+| Parámetros totales | No disponible |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (procesa audio; resolución temporal de 20 ms por frame) |
+| Tipos de cuantización | fp16 (Core ML, Core AI), int8 weight-only (LiteRT/TFLite), ONNX (precisión no especificada), fp16 para build web |
+| Idiomas soportados | Alemán, inglés, español, francés, neerlandés |
 | Licencia | desert-ant-labs-source-available (código disponible, no open source) |
-| Formato de pesos | Core ML (`.mlmodelc`), Core AI (`.aimodel`), LiteRT/TFLite (`.tflite`), ONNX (`.onnx`), variante web fp16 |
+| Formato de pesos | Core ML (`uhm.mlmodelc`), Core AI (`uhm.aimodel`), LiteRT (`uhm.tflite`), ONNX (`uhm.onnx`), build web fp16 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo (tipo de red, capas, mecanismo de atención). Lo que sí se especifica es que se trata de un modelo de clasificación de audio orientado a la detección de disfluencias a nivel de fotograma, con una resolución temporal de 20 ms y un umbral mínimo de duración de segmento configurable (0,12 s por defecto). El modelo se entrenó con audio en inglés y aplica transferencia acústica a español, francés, alemán y neerlandés, lo que implica que el rendimiento en esos idiomas puede ser inferior al del inglés.
+La información pública no detalla la arquitectura interna del modelo (tipo de red, número de capas, mecanismo de atención, etc.). Lo que sí se especifica es su comportamiento: opera sobre audio decodificado a 16 kHz mono y produce detecciones a nivel de frame con granularidad de 20 ms, etiquetando cada muletilla con un tipo (`.uh`, `.um`, `.hmm`, `.and`, `.other`) mediante un etiquetador que en Apple platforms se apoya en el framework SoundAnalysis.
 
-No se han publicado datos sobre el número de tokens de audio, la composición del dataset de entrenamiento ni si se emplearon técnicas de ajuste fino supervisado o preferencias (RLHF/DPO). El modelo se distribuye compilado para Core ML y cuantizado a int8 en LiteRT, con una equivalencia declarada del 99,7-100 % en el argmax por fotograma respecto a la versión ONNX. El etiquetado del tipo de muletilla (`.uh`, `.um`, `.hmm`, `.and`, `.other`) se realiza mediante el framework SoundAnalysis de Apple, por lo que solo está disponible en plataformas Apple; en el resto de plataformas el campo `type` es `null`.
+El entrenamiento se realizó en inglés y el modelo generaliza a español, francés, alemán y neerlandés mediante transferencia acústica, según indica la model card. No se han publicado detalles sobre el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de ajuste fino supervisado o preferencias. Tampoco se documenta ninguna innovación arquitectónica más allá de la optimización para inferencia en dispositivo (cuantización int8, compilación Core ML, ejecución WASM en navegador).
 
 ## Capacidades
 
-- Detección de muletillas y disfluencias ("uh", "um", "hmm") en audio con precisión temporal de hasta 20 ms.
-- Funcionamiento sin transcripción: analiza directamente la señal de audio decodificada a 16 kHz mono.
-- Salida de intervalos con inicio, fin y confianza (0-1) por cada muletilla detectada.
-- Tres presets de sesgo que equilibran exhaustividad y precisión: `.precision` (umbral 0,75), `.balanced` (0,65) y `.recall` (0,50).
-- Etiquetado del tipo de muletilla en plataformas Apple mediante SoundAnalysis.
-- Reconciliación con transcripciones: ajusta, recorta o divide palabras del transcript para eliminar muletillas sin cortar palabras reales.
-- Procesamiento en dispositivo en iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
-- Soporte de progreso y cancelación en archivos largos.
-- Multilingüe con transferencia acústica a de, en, es, fr y nl.
+- Detección de muletillas y disfluencias ("uh", "um", "hmm") con precisión temporal de hasta 20 ms.
+- Funcionamiento sin transcripción: analiza directamente la señal de audio.
+- Etiquetado del tipo de muletilla (solo en plataformas Apple mediante SoundAnalysis).
+- Control del equilibrio entre precisión y exhaustividad mediante presets (`precision` 0.75, `balanced` 0.65, `recall` 0.50).
+- Filtrado por duración mínima del segmento (0,12 s por defecto, configurable hasta 0,08 s).
+- Reconciliación con transcripciones: ajusta palabras del transcript para eliminar muletillas sin cortar palabras reales (elimina, recorta o divide palabras según corresponda).
+- Soporte multilingüe acústico: inglés (entrenamiento) con transferencia a español, francés, alemán y neerlandés.
+- Ejecución on-device en iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
+- Progreso de análisis y cancelación de tareas en Swift.
+- No soporta tool calling, agentes ni razonamiento multi-paso: es un clasificador de audio, no un LLM.
 
 ## Casos de uso
 
-- Edición automática de pódcast y vídeo: el modelo detecta cada muletilla con precisión de 20 ms y permite recortarlas automáticamente del audio, usando el preset `.precision` para evitar cortes erróneos en palabras reales.
-- Limpieza de entrevistas y grabaciones de investigación: con el preset `.recall` se obtienen todos los candidatos para revisión manual, útil cuando no se puede permitir perder ninguna disfluencia.
-- Herramientas de accesibilidad y entrenamiento del habla: análisis de fluidez en terapias de logopedia, cuantificando la frecuencia y duración de muletillas por sesión sin enviar audio a la nube.
-- Transcripción asistida: integración con pipelines de ASR para reconciliar palabras del transcript con las muletillas detectadas y limpiar el texto final antes de publicarlo.
-- Aplicaciones móviles nativas sin conexión: el SDK Swift y Kotlin permite ejecutar el modelo en iOS y Android con pesos de 24-45 MB, sin coste de servidor ni latencia de red.
-- Edición en navegador: la demo y el paquete npm con LiteRT.js permiten analizar archivos de audio o vídeo directamente en el navegador mediante WebAssembly.
-- Procesamiento por lotes en servidor: la variante nativa de Node permite analizar grandes volúmenes de audio en pipelines de backend sin depender de GPU.
+- **Edición automática de podcasting y entrevistas**: el modelo detecta cada "uh" y "um" con precisión de 20 ms y permite cortar los segmentos automáticamente usando el preset `precision`, reduciendo el tiempo de post-producción sin revisión manual frame a frame.
+- **Limpieza de audio en pipelines de vídeo para redes sociales**: integrado vía SDK de JavaScript en el navegador (WASM + LiteRT.js), permite procesar clips antes de subirlos, eliminando muletillas en el propio cliente sin enviar audio a servidores.
+- **Transcripción sincronizada con limpieza**: combinando el modelo con una transcripción existente, la función de reconciliación de palabras ajusta los timestamps para que el subtítulo final no incluya las muletillas pero mantenga las palabras reales intactas.
+- **Herramientas de accesibilidad y análisis del habla**: análisis de fluidez verbal en grabaciones de entrevistas, sesiones clínicas o evaluaciones de oratoria, cuantificando la densidad de disfluencias por minuto.
+- **Aplicaciones móviles de grabación de voz**: integración nativa en iOS (Core ML/Core AI) y Android (LiteRT) para ofrecer limpieza de audio en tiempo de grabación o post-grabación sin conexión a internet.
+- **Sistemas de dubbing y localización**: detección de rellenos en el audio original en inglés, español, francés, alemán o neerlandés para alinear y limpiar pistas antes de la síntesis de voz o el doblaje.
+- **Investigación en lingüística computacional**: extracción de métricas objetivas de disfluencia (número, duración y tipo de muletillas) sobre corpus de audio multilingües.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente declara que la versión LiteRT int8 coincide con la versión ONNX en el 99,7-100 % del argmax por fotograma, pero no se proporcionan métricas de precisión, recall ni F1 sobre conjuntos de evaluación.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente indica que la versión LiteRT int8 coincide con la versión ONNX en un 99,7-100 % de coincidencia por frame en el argmax, lo que es una métrica de consistencia entre formatos, no de calidad absoluta.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica en la mayoría de despliegues; el modelo está pensado para CPU y aceleradores en dispositivo. El tamaño de pesos es de 24 MB (int8) y 45 MB (fp16).
-- GPU recomendadas: no se especifican; el modelo se ejecuta en CPU en móviles, navegador y escritorio. En Apple Silicon se beneficia de Core ML y Core AI.
-- Cabe en cualquier GPU consumer y en dispositivos móviles de gama media; no requiere GPU dedicada.
-- Opciones de despliegue: SDK Swift (Core ML/Core AI), SDK Kotlin (LiteRT), paquete npm con LiteRT.js (navegador) y variante nativa para Node, además de ONNX para integraciones personalizadas.
-- Latencia y throughput: no disponibles. La API expone `phaseTimings.inferenceSec` para medir el tiempo de inferencia por archivo, pero no se publican cifras de referencia.
+- **VRAM estimada**: no aplica en el sentido tradicional; el modelo es de 24 MB (int8 LiteRT) o 45 MB (fp16 Core ML/Core AI), por lo que cabe holgadamente en cualquier dispositivo moderno.
+- **GPU recomendadas**: no requiere GPU dedicada; está optimizado para CPU, NPU y aceleradores integrados (Core ML en Apple Silicon, LiteRT en Android, WASM en navegador).
+- **Compatibilidad con GPU de consumo**: sí, en cualquier GPU de consumo moderna, aunque el modelo está pensado para ejecución en dispositivo (móvil, portátil, navegador).
+- **Opciones de despliegue**: SDKs oficiales Swift (iOS/macOS/tvOS/visionOS), Kotlin (Android), JavaScript (navegador con LiteRT.js y Node con core nativo precompilado). También se puede usar el archivo ONNX directamente con runtimes compatibles.
+- **Latencia y throughput**: no se publican cifras concretas. El SDK expone `phaseTimings.inferenceSec` para medir el tiempo de inferencia real por archivo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Idiomas | Contexto/ventana | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Uhm (Desert Ant Labs) | Clasificación de audio (detección de muletillas) | en, es, fr, de, nl | Ventanas con resolución de 20 ms | Source available | Hugging Face, SDK Swift/Kotlin/JS |
-| Whisper (OpenAI) | ASR (transcripción) | Multilingüe amplio | 30 s por ventana | MIT | Hugging Face, múltiples runtimes |
-| Silero VAD | Detección de actividad de voz | Independiente del idioma | Ventanas cortas | MIT | Hugging Face, ONNX |
-| Wav2Vec2 (Meta) | Representaciones de audio / ASR | Multilingüe | Ventanas variables | MIT/Apache | Hugging Face |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Existen detectores de disfluencias basados en ASR con post-procesado, pero no se aportan datos de rendimiento ni especificaciones que permitan una comparación rigurosa.
 
-No se dispone de datos de rendimiento comparativo entre Uhm y estos modelos en la información proporcionada. La comparación se limita a categoría, licencia y disponibilidad.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Uhm (Desert Ant Labs) | No disponible | No aplica (audio, frames de 20 ms) | Source available | Hugging Face, SDKs oficiales |
+| Alternativas | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- El entrenamiento se realizó en inglés con transferencia acústica a los demás idiomas; el rendimiento en español, francés, alemán y neerlandés puede ser inferior y no se han publicado métricas por idioma.
-- El etiquetado del tipo de muletilla solo funciona en plataformas Apple (SoundAnalysis); en Android, Linux, Windows, navegador y Node el campo `type` es `null`.
-- La licencia es *source available*, no open source: es necesario revisar los términos en https://license.desertant.com/ antes de un uso comercial.
-- No se han publicado benchmarks de precisión, recall ni F1, por lo que la calidad real en producción debe validarse con datos propios.
-- El modelo está especializado exclusivamente en detección de muletillas; no transcribe ni comprende el contenido semántico del audio.
-- Riesgo de falsos positivos en audio con ruido, música o habla solapada; los presets de sesgo permiten ajustar el equilibrio, pero no eliminan el problema.
-- El umbral mínimo de duración por defecto (0,12 s) puede descartar muletillas muy cortas si no se ajusta `minDurationSec`.
-- La descarga inicial de pesos desde Hugging Face requiere conectividad; el SDK los cachea tras la primera ejecución.
+- **Licencia restrictiva**: la licencia `desert-ant-labs-source-available` no es open source; es necesario revisar los términos en https://license.desertant.com/ antes de un uso comercial.
+- **Idiomas**: el entrenamiento es en inglés y la transferencia a español, francés, alemán y neerlandés es acústica, no supervisada directamente; el rendimiento en estos idiomas puede ser inferior y no se publican métricas por idioma.
+- **Dependencia de plataforma para el etiquetado de tipo**: la clasificación del tipo de muletilla (`.uh`, `.um`, `.hmm`) solo funciona en plataformas Apple (SoundAnalysis); en Kotlin y JavaScript el campo `type` es `null`.
+- **Riesgo de falsos positivos**: sonidos como "and" o vocalizaciones similares pueden clasificarse como relleno; el preset `recall` aumenta este riesgo. Se recomienda `precision` para corte automático.
+- **Sin transcripción contextual**: al no usar ASR, el modelo no distingue matices semánticos; puede marcar pausas o sonidos no verbales como muletillas.
+- **Sin datos de sesgo publicados**: no se documentan sesgos por acento, edad, género o calidad de grabación.
+- **Formato de audio**: requiere decodificación a 16 kHz mono; en plataformas no Apple el usuario debe proporcionar las muestras PCM.
+- **Sin benchmarks públicos**: no hay métricas de precisión, recall o F1 publicadas, lo que dificulta evaluar su calidad frente a alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/uhm
 - Pesos v1.2.0: https://huggingface.co/desert-ant-labs/uhm/tree/v1.2.0
-- Demo en navegador: https://huggingface.co/spaces/desert-ant-labs/uhm-demo
-- Página del producto: https://desertant.com/models/uhm/
+- Demo en navegador (Hugging Face Spaces): https://huggingface.co/spaces/desert-ant-labs/uhm-demo
+- Demo oficial: https://desertant.com/models/uhm/
 - Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
+- Documentación del SDK (requisitos Swift): https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Documentación del SDK (Android): https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
+- Documentación del SDK (JavaScript/TypeScript): https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Descargas y caché del modelo: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching
 - Licencia: https://license.desertant.com/

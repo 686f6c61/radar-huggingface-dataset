@@ -89,31 +89,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Programmes/Téléchargements TI-83 Premium CE / 84+CE / 82APy",
-      "url": "https://tiplanet.org/forum/archives_cat.php?cat=ce",
-      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements TI-83 Premium CE / 84+CE / 82APy"
-    },
-    {
-      "title": "TI-Planet | Programmes/Téléchargements Jeux NumWorks",
-      "url": "https://tiplanet.org/forum/archives_list.php?cat=Jeux+nw",
-      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements Jeux NumWorks"
-    },
-    {
-      "title": "Snake (Programmier Stil) | Java - Hilfe | Java-Forum.org",
-      "url": "https://www.java-forum.org/thema/snake-programmier-stil.66447/",
-      "snippet": "May 22, 2008 · Hallo, Endlich habe ich mich dazu durchgerungen mich anzumelden! :) Ich habe einen Snake Clon programmiert der …"
-    },
-    {
-      "title": "Hinterteil von Snake programmieren | Java - Hilfe | Java-Forum.org",
-      "url": "https://www.java-forum.org/thema/hinterteil-von-snake-programmieren.118728/",
-      "snippet": "May 24, 2011 · Um Snake umzusetzen kann man wohl verschiedene Ansätze wählen. Im allgemeinen läuft es immer darauf hinaus, …"
-    },
-    {
-      "title": "TI-Planet | Action Snake (Jeux Nspire program)",
-      "url": "https://tiplanet.org/forum/archives_voir.php?id=3738",
-      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Action Snake (Jeux Nspire program)"
-    }
-  ]
+  "sources": []
 }

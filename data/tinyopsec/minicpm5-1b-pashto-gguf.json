@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Home - BBC News",
-      "url": "https://www.bbc.co.uk/news",
-      "snippet": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and …Read more"
-    },
-    {
-      "title": "BBC News | UK",
-      "url": "http://news.bbc.co.uk/2/hi/uk/",
-      "snippet": "BBC Radio latest BBC News 24 BBC World Service radio BBC One TV news VIDEO CHOICE Royal Marines end frustrating Afghan …"
-    },
-    {
-      "title": "BBC - Home",
-      "url": "https://www.bbc.co.uk/",
-      "snippet": "The best of the BBC, with the latest news and sport headlines, weather, TV & radio highlights and much more from across the whole …"
-    },
-    {
-      "title": "BBC NEWS | News Front Page",
-      "url": "https://cdnedge.bbc.co.uk/1/hi/front_page/default.stm",
-      "snippet": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and …"
-    },
-    {
-      "title": "Radio 2 DJ pays tribute to 'lovely' father from Northamptonshire",
-      "url": "https://www.bbc.co.uk/news/articles/cn7nr7p323vo",
-      "snippet": "Jul 22, 2026 · BBC Radio 2 presenter Jo Whiley has paid tribute to her \"lovely\" father following his death. She announced the news …"
-    }
-  ]
+  "sources": []
 }

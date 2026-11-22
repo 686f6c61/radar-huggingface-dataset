@@ -1,0 +1,128 @@
+{
+  "schema": 2,
+  "id": "UraionLabs/Uraion-Decision-1.0-Preview-GGUF",
+  "slug": "uraionlabs-uraion-decision-1-0-preview-gguf",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/Uraion-Decision-1.0-Preview-GGUF",
+  "created_at": "2026-11-22T04:09:03.000Z",
+  "updated_at": "2026-11-22T04:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "system-1",
+    "llama.cpp",
+    "llama-cpp",
+    "quantized",
+    "imatrix",
+    "calibrated-probabilities",
+    "classification",
+    "routing",
+    "agent",
+    "agentic",
+    "moe",
+    "mixture-of-experts",
+    "inkling2_loop",
+    "local-llm",
+    "apple-silicon",
+    "metal",
+    "self-hosted",
+    "open-weights",
+    "uraion",
+    "uraion-labs",
+    "uraionlabs",
+    "uraion-decision",
+    "text-classification",
+    "en",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:finetune:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25608742080,
+  "parameters_human": "25.61B",
+  "storage_bytes": 17487811232,
+  "storage_human": "17.5 GB",
+  "context_length": 1048576,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "System 1 Decision Benchmarks (Single-Pass, output_tokens=0)",
+      "dataset": "Held-Out Decision Suite (7 benchmarks, n=3,684)",
+      "metric": "Bespoke Nimble Holdout (324)",
+      "value": 82.72
+    },
+    {
+      "task": "System 1 Decision Benchmarks (Single-Pass, output_tokens=0)",
+      "dataset": "Held-Out Decision Suite (7 benchmarks, n=3,684)",
+      "metric": "TREC (500)",
+      "value": 93.6
+    },
+    {
+      "task": "System 1 Decision Benchmarks (Single-Pass, output_tokens=0)",
+      "dataset": "Held-Out Decision Suite (7 benchmarks, n=3,684)",
+      "metric": "TweetEval Offensive (860)",
+      "value": 78.02
+    },
+    {
+      "task": "System 1 Decision Benchmarks (Single-Pass, output_tokens=0)",
+      "dataset": "Held-Out Decision Suite (7 benchmarks, n=3,684)",
+      "metric": "OpenBookQA (500)",
+      "value": 89.4
+    },
+    {
+      "task": "System 1 Decision Benchmarks (Single-Pass, output_tokens=0)",
+      "dataset": "Held-Out Decision Suite (7 benchmarks, n=3,684)",
+      "metric": "ANLI Round 3 (500)",
+      "value": 61.4
+    },
+    {
+      "task": "System 1 Decision Benchmarks (Single-Pass, output_tokens=0)",
+      "dataset": "Held-Out Decision Suite (7 benchmarks, n=3,684)",
+      "metric": "SST-5 (500)",
+      "value": 50.2
+    },
+    {
+      "task": "System 1 Decision Benchmarks (Single-Pass, output_tokens=0)",
+      "dataset": "Held-Out Decision Suite (7 benchmarks, n=3,684)",
+      "metric": "Typed-Decisions (500)",
+      "value": 75.4
+    },
+    {
+      "task": "Jev Decision Index 0.4.1 (Stratified Public Panel, n=50/benchmark)",
+      "dataset": "Jev Decision Index 0.4.1 Public Panel (350 requests, 5 areas)",
+      "metric": "Public Skill (Residual MLP)",
+      "value": 55.01
+    },
+    {
+      "task": "Jev Decision Index 0.4.1 (Stratified Public Panel, n=50/benchmark)",
+      "dataset": "Jev Decision Index 0.4.1 Public Panel (350 requests, 5 areas)",
+      "metric": "Balanced Raw (Residual MLP)",
+      "value": 66.77
+    }
+  ],
+  "sources": []
+}

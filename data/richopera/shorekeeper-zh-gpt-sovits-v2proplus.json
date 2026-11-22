@@ -5,7 +5,7 @@
   "author": "Richopera",
   "url": "https://huggingface.co/Richopera/Shorekeeper-zh-gpt-sovits-v2proplus",
   "created_at": "2026-11-20T07:27:52.000Z",
-  "updated_at": "2026-11-20T07:28:23.000Z",
+  "updated_at": "2026-11-21T15:41:44.000Z",
   "license": "richopera-voice-model-license-v2.0",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -20,6 +20,7 @@
     "zh",
     "base_model:lj1995/GPT-SoVITS-windows-package",
     "base_model:finetune:lj1995/GPT-SoVITS-windows-package",
+    "doi:10.57967/hf/11768",
     "license:other",
     "region:us"
   ],

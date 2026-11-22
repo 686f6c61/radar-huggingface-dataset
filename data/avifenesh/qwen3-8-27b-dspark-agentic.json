@@ -77,31 +77,5 @@
       "value": 693
     }
   ],
-  "sources": [
-    {
-      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
-      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
-      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
-    },
-    {
-      "title": "Qwen3.8-27B - unsloth.ai",
-      "url": "https://unsloth.ai/models/qwen3.8-27b",
-      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
-    },
-    {
-      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "RadixArk/Qwen3.8-27B-DSpark · Hugging Face",
-      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Running Qwen3.8-27B on DGX Spark | Kubesimplify",
-      "url": "https://blog.kubesimplify.com/qwen3-8-27b-on-dgx-spark",
-      "snippet": "First token arrives fast and the model correctly identified what it was running on (a nice recursive moment: Qwen3.8-27B on a DGX Spark explaining what a DGX Spark is). The llama-bench numbers (build b10423, flash attention on, UD-Q4_K_XL, 16.68 GiB weights):"
-    }
-  ]
+  "sources": []
 }

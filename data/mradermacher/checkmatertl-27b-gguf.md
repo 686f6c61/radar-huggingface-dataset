@@ -2,52 +2,53 @@
 
 ## Resumen
 
-CheckmateRTL-27B-GGUF es la versión cuantizada en formato GGUF del modelo CheckmateRTL-27B, desarrollado originalmente por el AI-Institute-BSC. Se trata de un modelo de lenguaje especializado en generación y verificación de código de descripción de hardware (Verilog y SystemVerilog), incluyendo la generación de testbenches y tareas de verificación de diseño. La cuantización ha sido realizada por mradermacher, un conocido publicador de cuantizaciones GGUF para la comunidad de llama.cpp.
+CheckmateRTL-27B es un modelo de lenguaje especializado en generacion y verificacion de codigo de descripcion de hardware (Verilog y SystemVerilog), desarrollado originalmente por el Barcelona Supercomputing Center (AI-Institute-BSC). La version aqui descrita es una cuantizacion GGUF realizada por mradermacher a partir del modelo base original, pensada para su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
 
-El modelo cuenta con aproximadamente 26.900 millones de parámetros (26.895.998.464 según los pesos en safetensors), lo que lo sitúa en la categoría de modelos de 27B. Está afinado mediante SFT (supervised fine-tuning) y RLVR con GRPO sobre dos datasets propios del AI-Institute-BSC: SystemVerilog-Distill-86k y SystemVerilog-RL-12k, orientados específicamente al dominio del diseño de hardware y su verificación.
+El modelo resuelve un nicho muy concreto del diseno electronico: la generacion de testbenches, la verificacion de diseno y las tareas de RTL (register-transfer level). Con aproximadamente 26.900 millones de parametros, se situa en la franja de modelos densos de gran tamano, lo que le permite manejar sintaxis y semantica de lenguajes de descripcion de hardware con mayor fidelidad que modelos generalistas de menor escala.
 
-La relevancia de esta ficha radica en que ofrece una alternativa cuantizada y ejecutable localmente de un modelo de nicho para ingeniería de hardware, un dominio donde los modelos generalistas suelen fallar. Al estar en formato GGUF, puede desplegarse con llama.cpp u Ollama en hardware de consumo, algo crítico dado que el repositorio original en safetensors ocupa 174 GB.
+Su relevancia actual radica en que combina un entrenamiento por SFT y RLVR (reinforcement learning with verifiable rewards, via GRPO) sobre datasets especificos de SystemVerilog, e incluye un componente multimodal (archivos mmproj) que sugiere capacidad de procesar entradas visuales, probablemente diagramas o esquematicos. La licencia Apache 2.0 facilita su adopcion en entornos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base transformer, detalles no especificados en la informacion proporcionada) |
-| Parametros totales | 26.895.998.464 (~26,9B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (transformers; se infiere transformer denso, no confirmado) |
+| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (y mmproj-Q8_0, mmproj-f16) |
 | Idiomas soportados | en (ingles) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles sobre la arquitectura interna del modelo base en la informacion proporcionada. Por el tamano (~27B) y la nomenclatura, se trata presumiblemente de un transformer decoder-only, pero no se confirma en la documentacion disponible. El modelo fue afinado por el AI-Institute-BSC mediante un pipeline de SFT seguido de RLVR (Reinforcement Learning with Verifiable Rewards) usando GRPO, segun las etiquetas del repositorio (trl, sft, rlvr, grpo).
+La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un modelo de la familia transformers. Por el numero de parametros (~27B) y la ausencia de indicacion de mezcla de expertos, se trata presumiblemente de un transformer denso, aunque este extremo no se confirma en la documentacion proporcionada.
 
-Los datos de entrenamiento provienen de dos datasets del propio instituto: SystemVerilog-Distill-86k (86.000 ejemplos de destilacion) y SystemVerilog-RL-12k (12.000 ejemplos para el entrenamiento por refuerzo). El enfoque en Verilog/SystemVerilog y verificacion de diseno sugiere un corpus altamente especializado en generacion de RTL, testbenches y tareas de validacion. No se especifica el numero total de tokens de entrenamiento ni la composicion exacta del dataset mas alla de estas referencias.
+El entrenamiento combina varias fases: ajuste supervisado (SFT) sobre AI-Institute-BSC/SystemVerilog-Distill-86k y aprendizaje por refuerzo con recompensas verificables (RLVR) mediante GRPO sobre AI-Institute-BSC/SystemVerilog-RL-12k. Ademas, los datasets de entrenamiento incluyen scale-lab/MetRex y bigcode/the-stack-v2-dedup, lo que aporta corpus de codigo general y especifico de hardware. La presencia de archivos mmproj en la cuantizacion indica que el modelo base incorpora un proyector multimodal, aunque la naturaleza exacta de las entradas visuales no se especifica. No se han publicado en la informacion disponible detalles sobre el numero total de tokens de entrenamiento ni sobre la composicion exacta del dataset.
 
 ## Capacidades
 
-- Generacion de codigo Verilog y SystemVerilog para descripcion de hardware (RTL).
-- Generacion de testbenches y entornos de verificacion de diseno.
-- Tareas de verificacion de diseno (design verification), incluyendo comprobacion de correccion funcional.
-- Razonamiento tecnico orientado a ingenieria de hardware digital.
-- Conversacion multi-turno (etiqueta conversational en el repositorio).
-- Capacidad multimodal: el repositorio incluye ficheros mmproj (multi-modal supplement), lo que indica soporte de entrada visual en el modelo base, aunque no se detalla el alcance.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente multi-step: no disponible en la informacion proporcionada.
-- Idiomas: unicamente ingles declarado.
+- Generacion de codigo Verilog y SystemVerilog para diseno RTL.
+- Generacion de testbenches y tareas de verificacion de diseno (design verification).
+- Razonamiento sobre especificaciones de hardware y transformacion a codigo sintetizable.
+- Capacidad multimodal (presencia de proyector mmproj), presumiblemente para procesar diagramas o esquematicos; el alcance exacto no esta documentado.
+- Entrenamiento con RLVR/GRPO orientado a mejorar la correccion funcional de las salidas.
+- Soporte de conversacion multi-turno (tag conversational).
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Capacidades de agente y multi-step reasoning: no disponible en la informacion.
+- Capacidades multilingues: limitadas al ingles segun la model card.
 
 ## Casos de uso
 
-- Generacion de RTL para bloques de hardware: el modelo puede producir modulos Verilog/SystemVerilog a partir de especificaciones en lenguaje natural, adecuado para prototipado rapido de disenos digitales por su entrenamiento especifico en el dominio.
-- Generacion de testbenches de verificacion: puede crear entornos de prueba (testbenches) para validar modulos RTL, reduciendo el tiempo de escritura manual de verificacion en flujos de diseno.
-- Asistencia en verificacion de diseno: util para revisar y completar codigo de verificacion existente, detectar patrones problematicos y proponer correcciones en el contexto de design verification.
-- Integracion en entornos de desarrollo de FPGA/ASIC: al estar en GGUF, puede ejecutarse localmente dentro de estaciones de trabajo de ingenieria sin enviar propiedad intelectual de hardware a servicios en la nube, algo relevante por confidencialidad.
-- Automatizacion de documentacion tecnica de hardware: generacion de comentarios, especificaciones y explicaciones de modulos RTL a partir del codigo fuente.
-- Despliegue en hardware de consumo para equipos pequenos: con cuantizaciones Q4_K_M (~16,8 GB) puede ejecutarse en GPUs de consumo de 24 GB, permitiendo a ingenieros individuales o startups usar el modelo sin infraestructura de datacenter.
-- Educacion en diseno digital: asistente para estudiantes de ingenieria electronica que necesiten ejemplos de Verilog y explicaciones de verificación.
+- Generacion de testbenches en SystemVerilog: el modelo, entrenado especificamente sobre datasets de verificacion, puede producir bancos de pruebas a partir de la descripcion de un modulo RTL, reduciendo el trabajo manual en flujos de verificacion.
+- Asistencia en diseno RTL: dado un bloque funcional descrito en lenguaje natural, generar el codigo Verilog/SystemVerilog correspondiente, aprovechando el entrenamiento SFT sobre SystemVerilog-Distill-86k.
+- Revision y correccion de codigo de hardware: el modelo puede analizar modulos existentes y proponer correcciones o mejoras, apoyandose en el ajuste por RLVR orientado a recompensas verificables.
+- Integracion en entornos de desarrollo con recursos limitados: las cuantizaciones Q4_K_M (16,8 GB) o Q5_K_M (19,4 GB) permiten desplegar el modelo en estaciones de trabajo con una sola GPU de 24 GB, algo inviable con los pesos completos.
+- Procesamiento de documentacion tecnica con diagramas: gracias al proyector multimodal, podria emplearse para interpretar esquematicos o figuras de hojas de datos y generar codigo asociado, aunque esta capacidad no esta documentada en detalle.
+- Automatizacion de tareas de CI para hardware: desplegado via llama.cpp u Ollama, el modelo puede integrarse en pipelines que validen o generen codigo de test de forma automatica en cada commit.
+- Formacion y prototipado: servir como asistente interactivo para ingenieros que aprenden SystemVerilog, con conversaciones multi-turno sobre sintaxis y patrones de diseno.
 
 ## Benchmarks y rendimiento
 
@@ -55,45 +56,50 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun cuantizacion (tamano de fichero, requiere margen adicional para contexto y KV cache):
-  - Q2_K: ~11,2 GB
-  - Q3_K_S: ~12,2 GB
-  - Q3_K_M: ~13,6 GB
-  - Q3_K_L: ~14,8 GB
-  - Q4_K_S: ~15,7 GB
-  - Q4_K_M: ~16,8 GB
-  - Q5_K_S: ~18,8 GB
-  - Q5_K_M: ~19,4 GB
-  - Q6_K: ~22,2 GB
-  - Q8_0: ~28,7 GB
-- GPU recomendadas: para Q4_K_M y superiores, RTX 4090 (24 GB) o A100/H100 para mayor margen de contexto; para Q2_K/Q3_K, GPUs de 12-16 GB como RTX 4070 Ti o RTX 4080.
-- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) con Q4_K_M o Q5_K_M, y en GPUs de 16 GB con Q3_K_L o Q4_K_S ajustando contexto.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base (safetensors) requiere transformers; la version GGUF esta pensada para llama.cpp y derivados.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia (pesos + overhead aproximado):
+  - Q2_K: ~11,2 GB de pesos; ~13-14 GB en total.
+  - Q4_K_M: ~16,8 GB de pesos; ~19-21 GB en total.
+  - Q5_K_M: ~19,4 GB de pesos; ~22-24 GB en total.
+  - Q6_K: ~22,2 GB de pesos; ~25-27 GB en total.
+  - Q8_0: ~28,7 GB de pesos; ~31-33 GB en total.
+  - El proyector multimodal anade ~0,7 GB (mmproj-Q8_0) o ~1,0 GB (mmproj-f16).
+- GPU recomendadas:
+  - Consumer: RTX 4090 (24 GB) admite hasta Q5_K_M con margen; RTX 3090 (24 GB) similar.
+  - Profesional/datacenter: A100 (40/80 GB), H100 (80 GB) para Q8_0 o F16 sin problemas.
+  - GPU de 16 GB (RTX 4080, 4070 Ti Super) solo admiten Q2_K o Q3_K_S con contexto reducido.
+- Cabe en consumer GPU: si, en RTX 4090/3090 con cuantizaciones Q4-Q5; en GPUs de 16 GB solo con cuantizaciones bajas y contexto limitado.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (LM Studio, koboldcpp). El modelo base puede desplegarse con vLLM o TGI en formato safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de datos de rendimiento ni de modelos comparables de la misma categoria (especializados en Verilog/SystemVerilog) en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| CheckmateRTL-27B (esta ficha) | ~26,9B | no disponible | Verilog/SystemVerilog, verificacion | Apache 2.0 | GGUF y safetensors |
+| Modelos generalistas de ~27B (p. ej. familia Qwen, Gemma) | ~27B | variable | Proposito general | variable | amplia |
+| Modelos especializados en HDL de menor tamano | no disponible | no disponible | HDL | variable | variable |
+
+No se dispone en la informacion proporcionada de datos de rendimiento ni de modelos directamente comparables en el nicho de generacion de HDL, por lo que la comparativa cuantitativa no esta disponible. La principal ventaja diferencial de este modelo es su entrenamiento especifico con RLVR sobre SystemVerilog, frente a modelos generalistas que abordan el HDL solo de forma incidental.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se indica la licencia del modelo base ni de la cuantizacion, por lo que el uso comercial queda en incertidumbre hasta consultar el repositorio original de AI-Institute-BSC/CheckmateRTL-27B.
-- Idioma: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
-- Dominio restringido: el modelo esta especializado en Verilog/SystemVerilog y verificacion de diseno; su rendimiento en tareas generales de lenguaje probablemente sea inferior al de modelos generalistas del mismo tamano.
-- Riesgo de alucinacion: como todo modelo generativo, puede producir codigo RTL sintacticamente valido pero funcionalmente incorrecto; requiere validacion con simuladores y herramientas EDA.
-- Longitud de contexto no documentada: se desconoce la ventana maxima, lo que limita la planificacion de casos de uso con ficheros RTL extensos.
-- Cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente la calidad del codigo generado; se recomienda Q4_K_M o superior para uso en produccion.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de comunidad ni validacion externa del rendimiento de estas cuantizaciones.
-- Los ficheros mmproj indican soporte multimodal en el modelo base, pero no se detalla su alcance ni calidad; no asumir capacidades de vision robustas.
+- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse sobre corpus de codigo, puede heredar sesgos de estilo y practicas de los repositorios de origen.
+- Riesgo de alucinacion: relevante en generacion de codigo HDL, donde una salida sintacticamente valida puede no ser funcionalmente correcta o sintetizable; se recomienda validacion con herramientas de sintesis y simulacion.
+- Limitaciones de idioma: el modelo esta entrenado unicamente en ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
+- Limitaciones de contexto: la longitud de contexto no se especifica; conviene verificarla antes de desplegar en produccion con entradas largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los datasets de origen (the-stack-v2-dedup y otros) por posibles obligaciones derivadas.
+- Caveat de cuantizacion: las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad en tareas de codigo, donde la precision sintactica es critica; se recomienda Q4_K_M o superior.
+- No se dispone de informacion sobre el alcance real de la capacidad multimodal ni sobre su calidad.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/CheckmateRTL-27B-GGUF
-- Modelo base: https://huggingface.co/AI-Institute-BSC/CheckmateRTL-27B
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/CheckmateRTL-27B-GGUF
+- Modelo base original: https://huggingface.co/AI-Institute-BSC/CheckmateRTL-27B
+- Pagina de descargas de mradermacher: https://hf.tst.eu/model#CheckmateRTL-27B-GGUF
 - Dataset de destilacion: https://huggingface.co/datasets/AI-Institute-BSC/SystemVerilog-Distill-86k
 - Dataset de RL: https://huggingface.co/datasets/AI-Institute-BSC/SystemVerilog-RL-12k
-- Pagina de resumen del cuantizador: https://hf.tst.eu/model#CheckmateRTL-27B-GGUF
-- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Dataset MetRex: https://huggingface.co/datasets/scale-lab/MetRex
+- Dataset The Stack v2 dedup: https://huggingface.co/datasets/bigcode/the-stack-v2-dedup
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

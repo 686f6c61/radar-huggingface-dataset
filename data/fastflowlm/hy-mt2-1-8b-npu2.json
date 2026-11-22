@@ -95,7 +95,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 599,
+  "downloads_30d": 657,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -113,31 +113,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - ROCm/FastFlowLM: Run LLMs on AMD Ryzen™ AI NPUs in minutes ...",
-      "url": "https://github.com/ROCm/FastFlowLM",
-      "snippet": "Run LLMs on AMD Ryzen™ AI NPUs in minutes; purpose-built and deeply optimized for the AMD NPUs. - ROCm/FastFlowLM"
-    },
-    {
-      "title": "FastFlowLM · FastFlowLM",
-      "url": "https://fastflowlm.com/",
-      "snippet": "FastFlowLM (FLM) delivers a familiar single-command developer experience built exclusively for AMD Ryzen™ AI NPUs. Install in seconds, stream tokens instantly, and run context windows up to 256k — all with dramatically better efficiency than GPU-first stacks. The FastFlowLM team is now part of AMD."
-    },
-    {
-      "title": "GitHub - Tencent-Hunyuan/Hy-MT2",
-      "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
-      "snippet": "Model Introduction Hy-MT2 is a family of \"fast-thinking\" multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
-    },
-    {
-      "title": "FastFlowLM (FastFlowLM) - Hugging Face",
-      "url": "https://huggingface.co/FastFlowLM/models",
-      "snippet": "Sort: Recently updated. FastFlowLM/smolvla. Robotics • Updated 1 day ago. FastFlowLM/medgemma-1.5-4b-it-NPU2. Image-Text-to-Text • Updated 5 days ago • 114 • 2"
-    },
-    {
-      "title": "Models · FastFlowLM",
-      "url": "https://fastflowlm.com/docs/models/",
-      "snippet": "Today, AMD technology powers billions of experiences across cloud and AI infrastructure, embedded systems, AI PCs and gaming. With a broad portfolio of AI-optimized CPUs, GPUs, networking and software, AMD delivers full-stack AI solutions that provide the performance and scalability needed for a new era of intelligent computing."
-    }
-  ]
+  "sources": []
 }

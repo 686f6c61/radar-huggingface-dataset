@@ -2,95 +2,93 @@
 
 ## Resumen
 
-Prelude-base 9B es un modelo de lenguaje denso de tipo decoder-only desarrollado por OpenEuroLLM, un consorcio europeo centrado en construir modelos de lenguaje abiertos con especial cobertura de lenguas europeas. El modelo sigue de cerca la arquitectura Qwen3 y ha sido entrenado sobre 10 billones de tokens en el superordenador Leonardo (CINECA), con una mezcla aproximada del 80% en inglés, código y matemáticas y un 20% multilingüe repartido entre las 36 lenguas objetivo iniciales del proyecto (41 códigos de lengua/escritura en la mezcla de datos).
+Prelude-base 9B es un modelo de lenguaje de tipo base (no instruido, sin ajuste por preferencias) desarrollado por OpenEuroLLM, un consorcio europeo cuyo objetivo es construir una familia de modelos abiertos con cobertura amplia de las lenguas oficiales de la Union Europea. El modelo es un transformer decoder-only denso de 9.094.607.872 parametros (aproximadamente 9,1 B) que sigue de cerca la arquitectura Qwen3, con 36 capas, hidden size de 4096 y atencion con GQA de 8 grupos KV.
 
-Se trata de un modelo base, no ajustado por instrucciones, lo que lo hace adecuado como punto de partida para fine-tuning posterior. Su principal atractivo es la combinación de un tamaño contenido (9.094.607.872 parámetros) con una licencia Apache 2.0 sin restricciones y una cobertura lingüística europea poco habitual en modelos de esta escala, incluyendo lenguas de bajos recursos como gaélico irlandés, letón, latgaliano, euskera, gallego o albanés tosco.
+Su relevancia radica en dos factores. Primero, el entrenamiento: 10 billones de tokens con una mezcla aproximada del 80 % en ingles, codigo y matematicas y un 20 % multilingue repartido entre 36 lenguas objetivo (41 codigos lengua/escritura en la mezcla de datos). Segundo, la licencia Apache 2.0, que permite uso comercial sin restricciones adicionales, algo poco habitual en modelos con esta cobertura linguistica europea.
 
-El repositorio publica checkpoints intermedios de entrenamiento en ramas independientes (`iter_*` para fases previas al annealing, `anneal_*` para las de annealing y `stage2-step_1192093` como checkpoint final en `main`), lo que permite reproducir la curva de entrenamiento y auditar el proceso. Es relevante ahora porque representa uno de los primeros hitos públicos de un esfuerzo coordinado a escala europea por producir infraestructura lingüística abierta y soberana.
+Se trata de un checkpoint base, pensado como punto de partida para fine-tuning posterior (SFT, DPO, adaptaciones por dominio o por idioma) y no como un asistente listo para produccion conversacional. La longitud de contexto de entrenamiento es de 4096 tokens, un valor conservador frente a los 32k-128k habituales en modelos de 2025-2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso, estilo Qwen3, con GQA y QK-norm |
-| Parametros totales | 9.094.607.872 (~9,095 B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens (longitud de secuencia de entrenamiento) |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en BF16) |
-| Idiomas soportados | 36 lenguas objetivo (41 codigos lengua/escritura): en, es, ka, fr, de, pt, it, pl, el, nl, tr, ro, hu, uk, cs, sv, bg, fi, ca, hr, sk, da, lt, bs, sl, nb, sr, sq, lv, lvs, mk, is, mt, gl, eu, ekk, et, ga, als, nn, ltg |
+| Arquitectura | Transformer decoder-only denso, estilo Qwen3 (RoPE, RMSNorm con QK-norm, SwiGLU, GQA) |
+| Parametros totales | 9.094.607.872 (~9,1 B) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se documentan GGUF ni AWQ/GPTQ oficiales) |
+| Idiomas soportados | 36 lenguas objetivo: en, es, fr, de, pt, it, pl, el, nl, tr, ro, hu, uk, cs, sv, bg, fi, ca, hr, sk, da, lt, bs, sl, nb, sr, sq, lv, lvs, mk, is, mt, gl, eu, ekk, et, ga, als, nn, ltg (41 codigos lengua/escritura en la mezcla de datos) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) |
+| Formato de pesos | safetensors (bf16, 399 tensores, ~18,19 GB) |
+
+Detalles adicionales de configuracion: 36 capas, hidden size 4096, FFN densa de 12288, 32 cabezas de atencion, 8 grupos KV, head dim 128, RoPE con base 100000, RMSNorm con epsilon 1e-5 mas QK-norm, activacion SwiGLU, vocabulario de 262.145 tokens (tokenizer de 256k, padding a 262.272 por eficiencia en tensor parallel). Embeddings de entrada y `lm_head` no estan atados: 1.074.266.112 parametros cada uno, frente a 6.946.075.648 del cuerpo transformer.
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer autoregresivo denso con 36 capas, hidden size de 4096, FFN de 12288 con activación SwiGLU, 32 cabezas de atención y 8 grupos KV (GQA, ratio 4:1), head dim de 128, embeddings de posición RoPE con base 100000, normalización RMSNorm con eps 1e-5 y QK-norm. Los embeddings de entrada y la `lm_head` están desacoplados (untied), lo que explica que cada uno aporte 1.074.266.112 parámetros y el cuerpo del transformer 6.946.075.648, sumando los 9,095 B totales. El vocabulario es de 262.145 tokens (tokenizer de 256k, padding hasta 262.272 por eficiencia de tensor parallelism). El modelo se entrenó sin token `<bos>`: los documentos se empaquetan consecutivamente y cada uno termina en `<eos>`, por lo que el tokenizer tiene `add_bos_token: false`.
+La arquitectura es un transformer autoregresivo denso que replica el diseno de Qwen3: normalizacion RMSNorm con QK-norm aplicada a queries y keys para estabilizar el entrenamiento a escala, atencion con grouped-query attention (32 cabezas de query, 8 grupos KV, head dim 128) y FFN con SwiGLU. El modelo no comparte los embeddings de entrada con la cabeza de salida, lo que anade aproximadamente 1,07 B de parametros respecto a una variante con pesos atados. El vocabulario de 262.145 tokens esta disenado para cubrir con eficiencia las 36 lenguas objetivo, incluyendo alfabetos cirilico y griego y lenguas de bajos recursos como el latgaliano, el alsaciano o el estonio estandar.
 
-El entrenamiento se realizó sobre 10 billones de tokens con batch global de 2048, micro-batch de 4 y secuencia de 4096, en el clúster Leonardo de CINECA, usando Megatron como backend (configuración `qwen3_dense_9b.yaml`). La mezcla de datos es ~80% inglés + código + matemáticas y ~20% multilingüe sobre las 36 lenguas europeas objetivo. El proceso incluye una fase de annealing final; el checkpoint de `main` (`stage2-step_1192093`) es el resultado tras ese annealing. No se documenta en la información disponible el uso de RLHF, DPO ni ajuste por instrucciones; se trata de un modelo estrictamente base.
+El entrenamiento se realizo en el supercomputador Leonardo (CINECA) con un batch global de 2048 y micro-batch de 4 sobre secuencias de 4096 tokens. El corpus total es de 10 billones de tokens, con aproximadamente un 80 % de contenido en ingles, codigo y matematicas y un 20 % multilingue. La composicion detallada, las fuentes y el desglose de tokens por lengua estan documentados en el repositorio `OpenEuroLLM/training-data-collection`. El pipeline distingue checkpoints intermedios (ramas `iter_*`) de los checkpoints de annealing (ramas `anneal_*`), siendo `main` el checkpoint final tras annealing (`stage2-step_1192093`). El modelo se entreno sin token `<bos>`: los documentos se empaquetan consecutivamente y cada uno termina en `<eos>`, por lo que los tokenizers publicados tienen `add_bos_token: false`. No se documentan en la informacion disponible fases de RLHF, DPO ni ajuste por instrucciones.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en 36 lenguas europeas, con especial énfasis en lenguas de bajos recursos del ámbito europeo.
-- Modelo base sin ajuste por instrucciones: no sigue instrucciones de forma fiable sin fine-tuning previo.
-- Capacidad de continuación de texto, completado de frases y generación narrativa (validado con batería de sanity checks en 144 generaciones multilingües).
-- Conocimiento factual básico y de sentido común (verificado con prompts canónicos como capitales, opuestos y fenómenos científicos).
-- Generación de código y matemáticas, dado el peso de estas categorías en la mezcla de entrenamiento (~80% junto con inglés).
-- No se documenta soporte nativo de tool calling, function calling, agentes ni razonamiento multi-paso; al ser un modelo base, estas capacidades requerirían fine-tuning específico.
-- No se documenta soporte de visión, audio ni modo thinking.
-- Capacidad multilingüe real, con prompts localizados a convenciones nativas (por ejemplo, fórmulas de apertura de cuento propias de cada lengua).
+- Generacion de texto autoregresiva en 36 lenguas europeas, con especial atencion a lenguas de bajos recursos y variantes regionales (latgaliano, alsaciano, nynorsk, tosk albanes).
+- Modelado de lenguaje base: continuacion de texto, completado de frases, generacion narrativa y respuesta a preguntas de conocimiento general en modo few-shot.
+- Capacidad de codigo y matematicas derivada de la mezcla de entrenamiento (~80 % ingles + codigo + matematicas), aunque sin evaluacion publicada en la informacion disponible.
+- Capacidad multilingue nativa, no via traduccion: la model card indica que las pruebas de validacion usan convenciones nativas de cada lengua (por ejemplo, la formula de apertura de cuento propia de cada idioma).
+- No dispone de modo thinking, vision, audio ni tool calling entrenado de forma explicita: es un modelo base sin post-entrenamiento para agentes o function calling.
+- No se documenta soporte nativo de agentes ni razonamiento multi-paso; cualquier capacidad de este tipo requeriria fine-tuning posterior.
 
 ## Casos de uso
 
-- Fine-tuning para atención al cliente en lenguas europeas minoritarias: el modelo sirve como base para ajustar un asistente conversacional en gaélico, euskera, letón o maltés, lenguas con poca cobertura en modelos comerciales, partiendo de un checkpoint con conocimiento previo del idioma.
-- Generación de código en pipelines de desarrollo: tras un fine-tuning supervisado, puede emplearse para autocompletado y generación de funciones, aprovechando el ~80% de tokens de inglés/código/matemáticas de su entrenamiento.
-- Investigación lingüística comparada: la disponibilidad de checkpoints intermedios (`iter_*`, `anneal_*`) permite estudiar la evolución del aprendizaje por lengua a lo largo del entrenamiento y analizar dinámicas de transferencia entre lenguas europeas.
-- Construcción de modelos instructivos europeos: como base Apache 2.0 sin restricciones, es un punto de partida para que equipos académicos o empresas europeas entrenen sus propios asistentes con datos propios y control soberano.
-- Traducción automática y paráfrasis entre lenguas europeas de bajos recursos: con fine-tuning específico sobre pares de lenguas, puede aprovechar su cobertura multilingüe para tareas de traducción en dominios acotados.
-- Generación de contenido editorial y resúmenes en lenguas regionales: para medios o administraciones que necesitan procesar texto en catalán, gallego, euskera o lenguas bálticas, con la ventaja de la licencia permisiva.
-- Experimentación académica en eficiencia de entrenamiento: el repositorio documenta hiperparámetros completos (batch, secuencia, arquitectura), lo que facilita reproducir o escalar el setup en clústeres propios.
+- Punto de partida para fine-tuning por idioma: el modelo ofrece representaciones ya entrenadas con 20 % de datos multilingues en 36 lenguas, por lo que un SFT sobre, por ejemplo, catalan, gallego o esloveno parte de una base mucho mas cercana que un modelo exclusivamente anglosajon.
+- Generacion de texto y completado en aplicaciones editoriales: con 4096 tokens de contexto y licencia Apache 2.0, es adecuado para tareas de redaccion asistida, resumen de documentos cortos y generacion de variantes estilisticas en lenguas europeas.
+- Investigacion en linguistica computacional: el desglose publico de tokens por lengua y los checkpoints intermedios (`iter_*`, `anneal_*`) permiten estudiar la dinamica de adquisicion de cada idioma durante el preentrenamiento.
+- Desarrollo de asistentes conversacionales europeos tras SFT: al ser base, requiere una fase de instruccion, pero su cobertura linguistica reduce el coste de alinear un asistente que opere en varias lenguas oficiales de la UE sin depender de traduccion intermedia.
+- Generacion de codigo y documentacion tecnica en ingles: la mezcla de entrenamiento incluye codigo y matematicas, por lo que sirve como base para modelos especializados en programacion mediante fine-tuning con datos propios.
+- Experimentacion academica con recursos limitados: con ~18,19 GB en bf16, cabe en una unica GPU de 24 GB en cuantizacion de 8 bits o en dos GPU de 24 GB en bf16, lo que lo hace accesible para grupos de investigacion sin clústeres grandes.
+- Evaluacion comparativa de tokenizers multilingues: el vocabulario de 262.145 tokens y el diseno sin `<bos>` lo convierten en un caso de estudio util para medir eficiencia de tokenizacion en lenguas con alfabetos no latinos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente incluye sanity checks cualitativos (generaciones greedy sobre 4 prompts canónicos localizados a 36 lenguas) y no reporta MMLU, HumanEval, GSM8K ni métricas comparables.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente incluye un conjunto de validacion cualitativa (`validation.json`) con 144 generaciones codificadas de forma greedy: 4 prompts canonicos de completado de frase (conocimiento general, sentido comun, ciencia y narrativa) localizados a las 36 lenguas objetivo. No hay datos de MMLU, HumanEval, GSM8K ni comparaciones numericas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: ~18,2 GB solo para pesos (18.189.215.744 bytes), más overhead de activaciones y caché KV; en la práctica se recomienda al menos 24 GB.
-- En cuantización de 8 bits: ~9-10 GB de pesos; en 4 bits: ~5 GB, aunque no se documentan cuantizaciones oficiales publicadas.
-- GPU recomendadas: A100 40/80 GB, H100 80 GB para entrenamiento o inferencia en BF16 con batch grande; RTX 4090 (24 GB) puede ejecutar inferencia en BF16 con batch pequeño o cuantizado.
-- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) en BF16 con contexto corto, o en GPUs de 12-16 GB si se cuantiza a 8 o 4 bits (requiere conversión propia, no publicada oficialmente).
-- Opciones de despliegue: compatible con `transformers` (carga vía `AutoModelForCausalLM` con `revision` para cada checkpoint); no se documenta compatibilidad explícita con vLLM, llama.cpp, Ollama o TGI, aunque la arquitectura Qwen3 facilita la conversión a GGUF.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada en bf16: ~18,2 GB solo de pesos, mas overhead de activaciones y cache KV; en la practica requiere 20-24 GB para inferencia con contexto moderado.
+- VRAM estimada en cuantizacion de 8 bits: ~9-10 GB de pesos, viable en GPU consumer de 12-16 GB.
+- VRAM estimada en cuantizacion de 4 bits: ~5-6 GB de pesos, viable en GPU consumer de 8 GB, aunque no se publican pesos GGUF oficiales en la informacion disponible.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bf16; RTX 4080/4070 Ti Super o superiores para cuantizacion de 8 bits.
+- Cabe en GPU consumer: si, en RTX 4090 en bf16 y en GPUs de 8-12 GB con cuantizacion, siempre que se generen los pesos cuantizados (no publicados oficialmente).
+- Opciones de despliegue: carga nativa via `transformers` con `AutoModelForCausalLM` y `device_map="auto"`; para serving de alto throughput seria necesario convertir los pesos a formatos compatibles con vLLM, TGI o llama.cpp, conversiones no documentadas en la informacion disponible.
+- Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni latencia por peticion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| OpenEuroLLM Prelude-base 9B | 9,095 B | 4096 | Apache 2.0 | 36 lenguas europeas (41 códigos) | Base, sin instruct; foco europeo |
-| Qwen3 8B (referencia arquitectónica) | ~8 B | mayor (no confirmado en esta ficha) | Apache 2.0 (según versión) | Multilingüe amplio | Prelude sigue su arquitectura; no se dispone de comparación de rendimiento |
-| Gemma 2 9B | ~9 B | no disponible en esta ficha | Términos propios de Google | Multilingüe | No comparable en licencia ni cobertura de lenguas minoritarias europeas |
-| Llama 3.1 8B | ~8 B | 128k | Llama Community License | Multilingüe limitado | Cobertura europea menor; licencia con restricciones |
+| OpenEuroLLM Prelude-base 9B | 9,1 B denso | 4096 | 36 lenguas europeas | Apache 2.0 | Base sin post-entrenamiento; enfoque en cobertura UE |
+| Qwen3 8B | ~8 B denso | no disponible en esta ficha | principalmente en + zh | Apache 2.0 (variantes) | Arquitectura de referencia de Prelude; sin cobertura especifica de lenguas UE de bajos recursos |
+| Llama 3.1 8B | ~8 B denso | 128k | multilingue limitado | Llama Community License | Requiere aceptacion de terminos; cobertura UE inferior |
+| Gemma 2 9B | ~9 B denso | 8k | multilingue amplio | Gemma Terms of Use | Restricciones de uso comercial distintas a Apache 2.0 |
 
-No se dispone de datos de benchmarks para establecer comparaciones de rendimiento cuantitativas entre estos modelos y Prelude-base.
+La comparacion cuantitativa de rendimiento no esta disponible: no se han publicado benchmarks de Prelude-base 9B en la informacion proporcionada, por lo que las diferencias con estos modelos solo pueden establecerse en terminos de arquitectura, cobertura linguistica y licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo base sin ajuste por instrucciones: no debe usarse directamente como asistente; requiere fine-tuning supervisado o RLHF/DPO para seguir instrucciones de forma fiable.
-- Riesgo de alucinación inherente a un modelo base entrenado principalmente para modelar texto; no incorpora mecanismos de verificación factual.
-- Contexto limitado a 4096 tokens, corto comparado con modelos contemporáneos de 32k-128k, lo que restringe casos de uso con documentos largos.
-- Cobertura desigual entre lenguas: aunque se declaran 36 lenguas, la mezcla es ~80% inglés/código/matemáticas y ~20% multilingüe, por lo que las lenguas de bajos recursos tendrán menor calidad y mayor riesgo de interferencia.
-- Sesgos potenciales heredados de los corpus web de entrenamiento (inglés dominante, sesgos de género, culturales y geográficos), no documentados ni mitigados explícitamente en la información disponible.
-- El modelo se entrenó sin token `<bos>`; integraciones que asuman `<bos>` por defecto pueden comportarse de forma distinta a lo esperado.
-- Aunque la licencia Apache 2.0 permite uso comercial sin restricciones, la ausencia de benchmarks y de evaluación de sesgos hace recomendable una validación propia antes de desplegar en producción.
-- El tamaño del repositorio (9.604 GB) refleja la acumulación de todos los checkpoints en ramas; descargar solo la revisión necesaria para evitar consumo masivo de almacenamiento.
+- Es un modelo base sin alineacion: no sigue instrucciones de forma fiable, no rechaza peticiones daninas y puede producir contenido inapropiado; requiere SFT y, preferiblemente, DPO antes de cualquier despliegue orientado a usuario final.
+- Riesgo de alucinacion elevado en tareas factuales, especialmente en lenguas con menor volumen de datos de entrenamiento dentro del 20 % multilingue.
+- Contexto limitado a 4096 tokens: insuficiente para documentos largos, conversaciones multi-turno extensas o tareas de recuperacion aumentada con muchos fragmentos.
+- Desequilibrio linguistico: con ~80 % de ingles, codigo y matematicas, el rendimiento en lenguas de bajos recursos (latgaliano, alsaciano, maltes, irlandes) sera previsiblemente inferior al de ingles, frances o aleman; no se publican metricas por lengua.
+- Ausencia de token `<bos>`: los pipelines que asumen un token de inicio por defecto pueden comportarse de forma distinta; hay que verificar `add_bos_token: false` en el tokenizer.
+- No se documentan pesos cuantizados oficiales ni integraciones con vLLM, llama.cpp u Ollama, lo que anade trabajo de conversion para despliegues de produccion.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero no exime del cumplimiento del AI Act europeo ni de las obligaciones de transparencia aplicables a sistemas de IA de proposito general.
+- El repositorio es muy grande (~9,6 TB) por acumular todos los checkpoints intermedios en ramas; conviene descargar solo la revision necesaria para evitar consumos de almacenamiento desproporcionados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openeurollm/prelude
-- Repositorio base (checkpoints y ramas): https://huggingface.co/openeurollm/prelude-base
-- Lista de ramas/checkpoints: https://huggingface.co/openeurollm/prelude-base/tree/main
-- Seguimiento del progreso de entrenamiento: https://huggingface.co/spaces/openeurollm/oellm_progress
-- Repositorio de recolección de datos de entrenamiento: https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md
-- Desglose de tokens por lengua: https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md#per-language-breakdown-to-be-reviewed
-- Configuración del experimento `baby_9b_dense`: https://github.com/OpenEuroLLM/oellm-autoexp/blob/prod/baby_9b_dense/config/experiments/baby/baby_9b_dense.yaml
-- Configuración de arquitectura `qwen3_dense_9b.yaml`: https://github.com/OpenEuroLLM/oellm-autoexp/blob/prod/baby_9b_dense/config/backend/megatron/baby/models/qwen3_dense_9b.yaml
-- Logo OpenEuroLLM: https://huggingface.co/openeurollm/prelude-base/resolve/main/figures/oellm-logo.svg
+- Repositorio del modelo base: https://huggingface.co/openeurollm/prelude-base
+- Seguimiento de entrenamientos OpenEuroLLM: https://huggingface.co/spaces/openeurollm/oellm_progress
+- Repositorio de recoleccion de datos de entrenamiento: https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md
+- Configuracion del experimento `baby_9b_dense`: https://github.com/OpenEuroLLM/oellm-autoexp/blob/prod/baby_9b_dense/config/experiments/baby/baby_9b_dense.yaml
+- Configuracion de arquitectura `qwen3_dense_9b.yaml`: https://github.com/OpenEuroLLM/oellm-autoexp/blob/prod/baby_9b_dense/config/backend/megatron/baby/models/qwen3_dense_9b.yaml

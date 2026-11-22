@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 588,
+  "downloads_30d": 575,
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
@@ -50,31 +50,5 @@
   "renamed_to": "FurkanNar/GPT-2_Instruct-v0.5",
   "renamed_at": "2026-11-11T02:47:07.895Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
-    },
-    {
-      "title": "ChatGPT",
-      "url": "https://chatgpt.com/auth/?locale=fr-FR",
-      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
-    },
-    {
-      "title": "Introducing ChatGPT - OpenAI",
-      "url": "https://openai.com/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
-    },
-    {
-      "title": "Nouveau : ChatGPT - OpenAI",
-      "url": "https://openai.com/fr-FR/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · Nous avons entraîné un modèle capable d’interagir de manière conversationnelle. Son nom ? ChatGPT. Cette …"
-    },
-    {
-      "title": "Use ChatGPT | ChatGPT Learn",
-      "url": "https://learn.chatgpt.com/docs/use-chatgpt",
-      "snippet": "Ask ChatGPT to explain information, develop ideas, draft content, research a topic, analyze materials, or create something new. Add …"
-    }
-  ]
+  "sources": []
 }

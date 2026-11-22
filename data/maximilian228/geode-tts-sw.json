@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Maximilian228/Geode-TTS-sw",
+  "slug": "maximilian228-geode-tts-sw",
+  "author": "Maximilian228",
+  "url": "https://huggingface.co/Maximilian228/Geode-TTS-sw",
+  "created_at": "2026-11-21T23:19:21.000Z",
+  "updated_at": "2026-11-21T23:20:33.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "sw"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "vits",
+    "mimic3",
+    "geode",
+    "on-device",
+    "text-to-speech",
+    "sw",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62788007,
+  "storage_human": "63 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

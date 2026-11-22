@@ -2,57 +2,58 @@
 
 ## Resumen
 
-qsql-qwen35-9b es un ajuste fino (fine-tune) del modelo Qwen3.5-9B desarrollado por KxSystems, orientado a una tarea muy concreta: generar codigo q/kdb+ (qSQL) a partir de una instruccion en lenguaje natural acompanada de los esquemas de las tablas implicadas. El modelo parte de la arquitectura Qwen3_5ForCausalLM, con 8.953.803.264 parametros (aproximadamente 8,95B), `hidden_size` de 4096 y 32 capas, y ha sido entrenado mediante LoRA (r=64, alpha=128, dropout 0,05) durante 3 epocas, fusionando despues los adaptadores en los pesos base para publicar un unico modelo denso en bfloat16.
+qsql-qwen35-9b es un ajuste fino (fine-tune) del modelo Qwen3.5-9B desarrollado por KxSystems, la empresa detrás de kdb+ y KDB-X. El modelo está especializado en generar consultas qSQL —el dialecto SQL de la base de datos de series temporales kdb+— a partir de una instrucción en lenguaje natural y los esquemas de las tablas implicadas. Con 8.953.803.264 parámetros (aproximadamente 9B), se distribuye como un modelo denso único con pesos en bfloat16 bajo licencia Apache-2.0.
 
-Su relevancia es la de un especialista estrecho: no pretende ser un modelo generalista, sino un generador de borradores de qSQL para un llamador que verifica el resultado. El propio autor lo describe como un modelo de "redaccion de borradores" que debe envolverse en verificacion (parseo, ejecucion y comparacion contra una referencia) en lugar de confiarse directamente. La modalidad es exclusivamente texto: la torre multimodal del modelo base no esta presente en estos pesos.
+La relevancia del modelo reside en su enfoque vertical: en lugar de competir en capacidades generales, cubre un nicho muy concreto del sector financiero (market data, análisis de ejecución, renta fija, FX, derivados, cumplimiento y datos de referencia) donde la sintaxis de q es poco común en los corpus de entrenamiento generalistas. El modelo está diseñado explícitamente para un flujo de trabajo con verificación humana o automática: el llamador aporta la instrucción y los esquemas, el modelo devuelve código q, y el llamador lo valida, ejecuta y compara contra una referencia.
 
-El modelo conserva la ventana arquitectonica de 262.144 tokens del base, aunque el autor recomienda servirlo a 32.768 tokens para que quepa en una sola GPU de 24 GB con cuantizacion fp8 (aproximadamente 20 GB de VRAM). Se distribuye bajo licencia Apache-2.0 y solo soporta ingles.
+Arquitectónicamente hereda de Qwen3.5-9B una atención híbrida (24 capas de atención lineal y 8 de atención completa, con una capa completa cada cuatro) y una ventana de contexto nominal de 262.144 tokens, aunque la model card no especifica qué longitud se sirve realmente en producción. Es un modelo solo de texto: el torre multimodal del modelo base no está presente en estos pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForCausalLM (`model_type: qwen3_5_text`); transformer hibrido con 24 capas de atencion lineal + 8 capas de atencion completa (una de cada cuatro es atencion completa, `full_attention_interval: 4`) |
-| Parametros totales | 8.953.803.264 (aproximadamente 8,95B) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 262.144 tokens (`max_position_embeddings`); el autor recomienda servir a 32.768 tokens |
-| Tipos de cuantizacion | fp8 documentado para vLLM; no se publican pesos GGUF ni otras cuantizaciones (no disponible) |
-| Idiomas soportados | ingles (`en`) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (bfloat16) |
-
-Otros datos de configuracion: `hidden_size` 4096, 32 capas, `vocab_size` 248.320 con longitud real de tokenizer 248.259. Tamano del repositorio: 17,9 GB. Token de fin de secuencia `<|im_end|>`, token de relleno `<|endoftext|>`.
+| Arquitectura | Transformer híbrido (`Qwen3_5ForCausalLM`, `model_type: qwen3_5_text`): 24 capas de atención lineal + 8 de atención completa (`full_attention_interval: 4`) |
+| Parametros totales | 8.953.803.264 (~9B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | `max_position_embeddings` 262.144 (la model card no especifica la longitud servida real) |
+| Tipos de cuantizacion | No disponible (pesos publicados en `bfloat16`) |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (`bfloat16`), librería `transformers` |
+| Dimensión oculta | 4096 |
+| Capas | 32 |
+| Vocabulario | 248.320 (`vocab_size`), longitud del tokenizer 248.259 |
+| Modalidad | Solo texto |
+| Ajuste fino | LoRA (r=64, α=128, dropout 0.05), 3 épocas, fusionado en los pesos base |
+| Tamaño del repo | 17,9 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3.5-9B base, un transformer con esquema de atencion hibrido: 24 de sus 32 capas emplean atencion lineal y 8 emplean atencion completa, con una capa de atencion completa cada cuatro capas. Los pesos se publican en bfloat16. La torre multimodal del modelo base no esta incluida, por lo que el modelo resultante es estrictamente de texto.
+El modelo parte de Qwen3.5-9B, un transformer con atención híbrida que combina capas de atención lineal con capas de atención completa intercaladas (una de cada cuatro). Esta combinación reduce el coste computacional y de memoria en secuencias largas manteniendo la capacidad de atención global en capas seleccionadas. El modelo conserva la dimensión oculta de 4096, 32 capas y un vocabulario de 248.320 tokens.
 
-El ajuste fino se realizo con LoRA (r=64, alpha=128, dropout 0,05) durante 3 epocas sobre el modelo base, y los adaptadores se fusionaron en los pesos originales antes de publicar el modelo denso. La informacion disponible no detalla el numero de tokens de entrenamiento ni la composicion exacta del dataset, mas alla de que este contiene ejemplos de instruccion mas esquemas de tablas y que no incluye datos de tool calling ni de trazas de razonamiento. No se menciona el uso de RLHF o DPO. La innovacion principal no es arquitectonica, sino de especializacion: el modelo ha sido entrenado sobre una unica forma de prompt, con un turno de sistema literal ("You are an expert q/kdb+ programmer.") y un turno de usuario que combina la instruccion, un bloque `Table schemas:` con lineas indentadas con dos espacios y, opcionalmente, una linea `Expected result schema:`.
+El ajuste fino se realizó mediante LoRA con rango 64, alpha 128 y dropout 0.05 durante 3 épocas, y posteriormente se fusionó en los pesos base, publicándose como un modelo denso único. Los datos de entrenamiento se centraron en un único formato de prompt: un turno de sistema literal (`You are an expert q/kdb+ programmer.`), seguido de una instrucción, un bloque `Table schemas:` con líneas indentadas con dos espacios y, opcionalmente, una línea `Expected result schema:`. La model card indica que los esquemas de tabla son prácticamente obligatorios y que la calidad decae sin ellos. No se menciona el volumen de tokens de entrenamiento, la composición exacta del dataset ni el uso de RLHF o DPO; el ajuste es exclusivamente supervisado sobre pares instrucción–consulta qSQL.
 
 ## Capacidades
 
-- Generacion de codigo q/kdb+ (qSQL) a partir de una instruccion en lenguaje natural y los esquemas de las tablas implicadas.
-- Especializacion estrecha: solo genera q; no esta orientado a otros lenguajes de programacion.
-- Acepta una pista opcional de forma del resultado mediante la linea `Expected result schema:`, que actua como indicacion de la estructura esperada.
-- Sensible al contrato de prompt: funciona mejor con el turno de sistema exacto y con los esquemas de tabla presentes en el contexto.
-- Generacion de multiples candidatos: con temperatura 0,8 y varias muestras independientes, el llamador puede descartar las que no parsean o no ejecutan y quedarse con las que coinciden.
-
-Capacidades no soportadas (explicitas en la model card):
-
-- Tool calling / function calling: no presente en los datos de entrenamiento; pasar `tools=[...]` a `apply_chat_template` se ignora silenciosamente.
-- Modo thinking / trazas de razonamiento: no existe bloque de razonamiento en la plantilla de chat ni en los datos.
-- Vision: la torre multimodal del modelo base no esta en estos pesos.
-- Multilingue: solo ingles.
+- Generación de consultas qSQL para kdb+ y KDB-X a partir de lenguaje natural y esquemas de tabla.
+- Cobertura de dominios financieros: market data, analítica de ejecución, carteras y riesgo, renta fija, FX, derivados, cumplimiento y datos de referencia.
+- Acepta una pista opcional de esquema de resultado (`Expected result schema`) para orientar la forma de la salida.
+- Generación determinista con decodificación greedy o muestreo múltiple (temperatura 0.8) para generar candidatos y seleccionar entre ellos.
+- **No** soporta tool calling ni function calling: el argumento `tools` se ignora silenciosamente.
+- **No** dispone de modo de razonamiento (*thinking*): no hay bloque de razonamiento en la plantilla de chat ni en los datos de entrenamiento.
+- **No** está entrenado para explicar sintaxis o semántica de q, ni para predecir el resultado de una expresión.
+- **No** está pensado como modelo principal de un agente: no ha visto prompts de sistema de agentes ni definiciones de herramientas.
+- Capacidad multilingüe limitada al inglés.
 
 ## Casos de uso
 
-- Borrador verificado de consultas qSQL: un analista describe la operacion en lenguaje natural y aporta los esquemas de las tablas; el modelo devuelve una consulta q que despues se parsea, se ejecuta y se compara contra una referencia calculada por otra via antes de integrarla.
-- Migracion de SQL a q: traduccion asistida de consultas existentes a q/kdb+ como primer borrador, con la verificacion posterior obligatoria para descartar equivalencias incorrectas.
-- Generacion de candidatos multiples y seleccion por consenso: se muestrean varias respuestas con temperatura 0,8, se descartan las que no parsean o fallan al ejecutar y se conserva la que los supervivientes coinciden en producir; util para aumentar la tasa de acierto en consultas complejas.
-- Asistencia en herramientas internas de analitica: integracion en un editor o notebook orientado a kdb+ que proponga qSQL a partir de la instruccion del usuario y de los esquemas del entorno, dejando la ejecucion bajo control del usuario.
-- Prototipado rapido sobre kdb+: generacion de consultas de agregacion, join o filtrado para explorar un dataset recien cargado, reduciendo el tiempo hasta la primera consulta ejecutable.
-- Formacion y aprendizaje de q: uso como generador de ejemplos de qSQL que un instructor o un alumno revisa y ejecuta para entender construcciones idiomaticas, siempre con la advertencia de que el codigo puede ser incorrecto.
-- Canal de generacion dentro de un pipeline de CI: el modelo produce el borrador y un paso posterior automatizado valida el parseo y la ejecucion contra datos de prueba, bloqueando la integracion si el resultado no coincide con la referencia.
+- **Aceleración de analistas de datos en kdb+**: un analista describe en inglés la consulta que necesita y aporta los esquemas de las tablas; el modelo genera un borrador de qSQL que el analista revisa y ejecuta. Reduce el tiempo de escritura de consultas no triviales (agregaciones por símbolo, ventanas temporales, joins asof).
+- **Generación asistida dentro de un IDE o notebook**: integrado como servicio de autocompletado especializado que recibe el esquema del entorno y propone consultas q, con validación sintáctica previa a la inserción en el editor.
+- **Servidor MCP especializado**: el repositorio `mcp-qsql-suggester` de KxSystems usa este modelo como especialista invocado por un modelo generalista que actúa como agente principal, delegando en él la escritura de q mientras el modelo generalista gestiona el diálogo y las herramientas.
+- **Migración de SQL a qSQL**: dado un esquema de tablas y una instrucción que describe la consulta en términos de negocio, el modelo produce el equivalente en q, que luego se valida contra una implementación de referencia.
+- **Generación de candidatos con selección automática**: con temperatura 0.8 se generan varias muestras independientes, se descartan las que no parsean o no ejecutan, y se conserva la que los supervivientes acuerdan; útil en pipelines de generación de consultas con verificación automática.
+- **Documentación y pruebas de consultas**: generar consultas de ejemplo sobre esquemas de test para poblar suites de pruebas de una plataforma de datos financieros, siempre con ejecución y comparación contra resultados esperados.
+- **Análisis de cumplimiento y datos de referencia**: redacción de consultas de extracción y validación sobre tablas de referencia regulatoria, con revisión humana obligatoria antes de su uso.
 
 ## Benchmarks y rendimiento
 
@@ -60,37 +61,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos en bfloat16: aproximadamente 17,9 GB, equivalente al tamano del repositorio publicado (8,95B parametros a 2 bytes por parametro).
-- Despliegue recomendado por el autor: vLLM con cuantizacion fp8 y `--max-model-len 32768`, con un consumo aproximado de 20 GB de VRAM, es decir, una unica tarjeta de 24 GB.
-- GPU compatibles con ese perfil: tarjetas de 24 GB como RTX 4090, L4 o A10G; cabe en GPU de consumo de gama alta con 24 GB de memoria.
-- Para servir en bfloat16 sin cuantizar con contexto largo, se necesitaria mas memoria que la indicada para fp8; el autor no publica cifras concretas para ese escenario (no disponible).
-- Software de despliegue: se requiere vLLM >= 0.27.0, la primera version con soporte nativo para `Qwen3_5ForCausalLM` en modo solo texto; versiones anteriores necesitan parches del codigo fuente y no estan soportadas. No se documentan otras opciones como llama.cpp, Ollama o TGI en la informacion disponible.
-- Latencia y throughput: no disponible.
+- **VRAM estimada en bfloat16**: aproximadamente 18 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se recomienda un GPU con 24 GB o más para inferencia cómoda con contexto moderado.
+- **Cuantización**: la model card no publica versiones cuantizadas (GGUF, AWQ, GPTQ) ni sus requisitos; habría que generarlas a partir de los safetensors. En 8 bits los pesos rondarían los 9 GB y en 4 bits unos 5 GB, pero estos valores son estimaciones a partir del tamaño, no datos publicados.
+- **GPU recomendadas**: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bfloat16. En GPUs consumer de 16 GB o menos sería necesario cuantizar.
+- **Despliegue**: la model card solo documenta el uso con `transformers` (`AutoModelForCausalLM`, `device_map="auto"`). No se mencionan configuraciones para vLLM, TGI, llama.cpp u Ollama; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face, pero no hay detalles adicionales.
+- **Latencia y throughput**: no disponibles. La model card recomienda `max_new_tokens` de 2048 como suficiente y no publica métricas de velocidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Enfoque |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qsql-qwen35-9b | 8,95B (denso) | 262.144 arquitectonicos; 32.768 servidos | solo texto | apache-2.0 | Especialista en generacion de q/kdb+ (qSQL) |
-| Qwen3.5-9B (base) | 9B | 262.144 (`max_position_embeddings`) | texto y multimodal (la torre multimodal no esta en el fine-tune) | apache-2.0 | Modelo generalista |
-| Otros especialistas en q/kdb+ | no disponible | no disponible | no disponible | no disponible | no disponible |
+| qsql-qwen35-9b | ~9B (denso) | 262.144 nominales | qSQL para kdb+/KDB-X | Apache-2.0 | Hugging Face |
+| Qwen3.5-9B (base) | ~9B (denso) | 262.144 nominales | Propósito general, multimodal | Apache-2.0 (según la model card) | Hugging Face |
+| Modelos generalistas tipo CodeLlama / Qwen-Coder | 7B–34B | 16K–128K típicamente | Código general | Varía (Llama, Apache-2.0) | Hugging Face |
 
-No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoria en la informacion proporcionada. La comparacion directa con el modelo base en tareas de generacion de qSQL no puede cuantificarse sin resultados publicados.
+La comparación relevante es con el modelo base: qsql-qwen35-9b sacrifica la modalidad multimodal y las capacidades generales de Qwen3.5-9B a cambio de especialización en un dialecto muy concreto. Frente a modelos de código generalistas, no hay datos de benchmarks que permitan cuantificar la ventaja en qSQL; la model card no publica evaluaciones comparativas. No se dispone de información sobre otros fine-tunes especializados en q/kdb+ para una comparación directa.
 
 ## Limitaciones y advertencias
 
-- Modo de fallo principal: codigo que parsea, pasa el lint y se ejecuta, pero calcula algo distinto de lo esperado. El autor lo advierte de forma explicita; no debe ponerse su salida directamente en una ruta de consulta en produccion sin verificacion.
-- Uso previsto restringido: redaccion de borradores para un llamador que verifica el resultado (parsear, ejecutar y comparar contra una referencia).
-- No soporta tool calling ni function calling; el argumento `tools=[...]` se ignora silenciosamente en lugar de respetarse.
-- No dispone de modo de razonamiento ni de bloque thinking.
-- Es un especialista estrecho: solo genera q, no otros lenguajes.
-- Sensible al contrato de prompt: requiere el turno de sistema exacto y los esquemas de tabla en el contexto; la calidad cae si se omiten los esquemas.
-- Solo soporta ingles.
-- Aunque la ventana arquitectonica es de 262.144 tokens, el propio autor recomienda servir a 32.768 tokens, por lo que el uso practico esta limitado a esa longitud salvo que se disponga de mas memoria.
-- La licencia Apache-2.0 permite uso comercial, pero la ausencia de garantias y el riesgo de codigo incorrecto hacen necesaria la verificacion en cualquier despliegue de produccion.
-- Sin resultados de benchmarks publicados y con 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
+- **Generación no verificada**: la model card prohíbe explícitamente usar la salida directamente en una ruta de consulta de producción; debe parsearse, ejecutarse y compararse contra una referencia.
+- **Tool calling no soportado**: pasar `tools=[...]` a `apply_chat_template` se ignora silenciosamente; no produce error, lo que puede llevar a falsas expectativas.
+- **Sin modo de razonamiento**: no hay trazas de pensamiento ni capacidad de razonamiento multi-paso explícito.
+- **Fuera de alcance las preguntas generales sobre q**: puede responder incorrectamente si se le pide explicar sintaxis o predecir resultados de expresiones.
+- **No apto como modelo principal de agentes**: no ha visto prompts de sistema de agentes ni definiciones de herramientas.
+- **Sensibilidad al formato del prompt**: requiere el turno de sistema literal y el bloque `Table schemas:` con indentación de dos espacios; la calidad decae sin esquemas.
+- **Idioma**: solo inglés; no se garantiza calidad en castellano u otros idiomas.
+- **Sesgos y alucinación**: no se documentan sesgos específicos ni tasas de alucinación; al ser un modelo de código especializado, el riesgo principal es generar consultas sintácticamente válidas pero semánticamente incorrectas.
+- **Quirks del tokenizer**: la model card menciona una sección "Known quirks" sobre la discrepancia entre `vocab_size` (248.320) y la longitud del tokenizer (248.259), sin detallar las implicaciones.
+- **Licencia**: Apache-2.0 permite uso comercial, pero el modelo base Qwen3.5-9B también se declara Apache-2.0 en la model card; conviene verificar los términos del modelo base por separado.
+- **Contexto servido**: aunque el contexto nominal es de 262.144 tokens, la model card remite a la sección "Serving" para la longitud realmente servida, que no se detalla en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/KxSystems/qsql-qwen35-9b
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Servidor MCP `mcp-qsql-suggester`: https://github.com/KxSystems/mcp-qsql-suggester

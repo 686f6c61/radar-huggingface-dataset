@@ -48,8 +48,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 8,
-  "downloads_30d": 682,
+  "likes": 9,
+  "downloads_30d": 697,
   "trending_score": 0,
   "parameters": 95581504,
   "parameters_human": "95.6M",
@@ -69,16 +69,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Sekai MCP — Create AI Games with Codex and Claude Code",
-      "url": "https://mcp.sekai.ai/",
-      "snippet": "Sekai for people who build with AI Sekai MCP: make a game with your AI. Connect Codex, Claude Code or Cursor to Sekai MCP, the official Model Context Protocol server for Sekai. Ask your AI coding assistant to build you a game. It uses Sekai's own library of art, music and sound, and puts the finished game straight into your Sekai drafts — you open it in the app and publish when you're happy ..."
-    },
-    {
-      "title": "Sekai - 1 | Stable Diffusion 1.x Checkpoint | Civitai",
-      "url": "https://civitai.com/models/1489/sekai",
-      "snippet": "A Hypernetwork made of Sekai from Cevio AI. Shared by Maru on Unstable Diffusion There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
-    }
-  ]
+  "sources": []
 }

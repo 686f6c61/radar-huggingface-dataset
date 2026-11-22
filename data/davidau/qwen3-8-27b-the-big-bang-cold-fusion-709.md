@@ -2,78 +2,109 @@
 
 ## Resumen
 
-DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709 es un modelo de lenguaje multimodal desarrollado por DavidAU, publicado en Hugging Face con licencia Apache 2.0. Se presenta como un fine-tuning de un modelo base de la familia Qwen3.8, concretamente DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU. El modelo cuenta con 27.781.427.952 parámetros totales y un tamaño de repositorio de 55.6 GB en formato safetensors.
+Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709 es un ajuste fino (finetune) del modelo Qwen3.8 de 27B de parámetros, publicado por el usuario DavidAU en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, derivado de una cadena de ajustes previos del mismo autor (la base declarada es DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU), y forma parte de un proyecto más amplio de variantes "Cold Fusion" / "GAIN Training" con múltiples etapas de ajuste.
 
-La etiqueta de pipeline image-text-to-text indica que el modelo puede procesar tanto imágenes como texto, lo que lo convierte en un sistema multimodal. Además, se describe como "uncensored" y "heretic", lo que sugiere que ha sido entrenado sin filtros de contenido convencionales. Según los metadatos, se han empleado técnicas de entrenamiento como Cold Fusion, GAIN Training y multi-stage tuning, con la librería Unsloth. El acceso al modelo es restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de poder utilizarlo.
+El modelo se presenta como una versión "herética" (uncensored) de intensidad ligera a moderada, orientada a reducir rechazos manteniendo el rendimiento general. Según la model card, emplea técnicas de reducción de "thinking tokens" (entre 1/2 y 1/20 del consumo de un Qwen3.8 estándar) y ofrece múltiples modos de razonamiento e instrucción conmutables en caliente. La información pública disponible es fundamentalmente la model card del autor y los datos del repositorio; no hay paper ni documentación técnica formal.
 
-La relevancia de este modelo radica en su combinación de capacidades multimodales y un tamaño de 27B parámetros, dentro de una serie de fine-tunings experimentales. Sin embargo, la información pública disponible es limitada: no se detallan ni la arquitectura interna, ni la longitud de contexto, ni resultados de benchmarks, lo que condiciona su evaluación técnica.
+El interés actual del modelo radica en su propuesta de equilibrio entre censura reducida, eficiencia en tokens de razonamiento y capacidades multimodales, sobre una licencia Apache 2.0 que facilita su uso comercial. No obstante, al tratarse de un finetune comunitario sin evaluación independiente, conviene tratar sus cifras con cautela.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 27.781.427.952 (27.78B) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal (image-text-to-text); tag de arquitectura `qwen3_5`; detalles internos no disponibles |
+| Parámetros totales | 27.781.427.952 (27,78B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantización | MXFP8 y MXFP4 mencionados en los benchmarks; GGUF disponible en repositorios asociados del mismo autor; otros no disponibles |
 | Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
-| Pipeline | image-text-to-text |
-| Tamaño del repositorio | 55.6 GB |
-| Acceso | restringido (gated) |
+| Formato de pesos | safetensors (librería transformers); GGUF en repos asociados |
 
 ## Arquitectura y entrenamiento
 
-La información pública no detalla la arquitectura interna del modelo. Los metadatos indican que se trata de un fine-tuning de un modelo base de la familia Qwen3.8, pero no se especifica si es un transformer puro, un modelo de mezcla de expertos (MoE) o cualquier otra variante. Tampoco se ha publicado la longitud de contexto.
+La información disponible no detalla la arquitectura interna más allá de la etiqueta `qwen3_5` y la pipeline image-text-to-text, lo que sugiere un transformer con codificador visual y capacidades de entrada de imagen y texto. El modelo base es un Qwen3.8 de 27B, y este repositorio es el resultado de una cadena de finetunes del autor, con nombres internos de etapa como "Stage2b-rplus3", seleccionada como finalista por su seguimiento de instrucciones y consistencia generativa.
 
-En cuanto al entrenamiento, los tags mencionan el uso de técnicas como Cold Fusion, GAIN Training y multi-stage tuning, así como la librería Unsloth para el proceso de fine-tuning. No se dispone de datos sobre el dataset utilizado, la cantidad de tokens de entrenamiento, ni si se aplicaron procesos de alineación como RLHF o DPO.
+El entrenamiento se enmarca en el proyecto "Cold Fusion" / "GAIN Training" con ajuste multi-etapa, usando datasets propios del autor (Polar-STRICT, F451-STRICT y THE-DECKARD). La model card menciona ajustes de razonamiento y "re-blending" del núcleo, así como la reducción del número de tokens de pensamiento (de 1/2 a 1/20 según la variante). No se especifican el número de tokens de entrenamiento, la composición exacta de los datasets ni si se emplearon RLHF o DPO. Las métricas de "heretic stats" indican 68/100 rechazos frente a 86/100 del Qwen3.8 sin ajustar, con una divergencia KL de 0,0025.
 
 ## Capacidades
 
-- Procesamiento multimodal de imagen y texto, según la etiqueta de pipeline image-text-to-text.
-- Generación de texto conversacional en inglés, respaldada por el tag "conversational".
-- Modelo "uncensored" y "heretic", lo que indica una ausencia de filtros de contenido convencionales.
-- Compatibilidad con endpoints de inferencia, según el tag "endpoints_compatible".
-- Etiquetado para "all use cases", aunque sin especificar tareas concretas.
-- No se ha confirmado soporte de tool calling, capacidades de agente ni soporte multilingüe.
+- Generación de texto conversacional y razonamiento, con modos de "thinking" e "instruct" conmutables en caliente (cinco modos de cada tipo según la model card).
+- Entrada multimodal image-text-to-text (procesamiento de imágenes junto con texto).
+- Reducción del consumo de tokens de razonamiento respecto al modelo base (entre 1/2 y 1/20).
+- Seguimiento de instrucciones y atención al detalle, destacados por el autor como fortalezas del checkpoint finalista.
+- Soporte de tool calling / function calling, con plantillas Jinja actualizadas (reg. 17 KB y versión mejorada de 32 KB) mencionadas en la model card.
+- Capacidad de "multi-stage drafting" y doble comprobación cuando se le solicita.
+- Multilingüe: limitado a inglés según el campo `language`.
+- Comportamiento "uncensored" de intensidad ligera-moderada (68/100 rechazos).
 
 ## Casos de uso
 
-- Asistentes virtuales en inglés: el modelo puede integrarse en aplicaciones de soporte al cliente o asistentes personales, manteniendo conversaciones multi-turno en inglés gracias a su naturaleza conversacional.
-- Análisis de imágenes: al ser un modelo image-text-to-text, puede describir imágenes, responder preguntas sobre su contenido o generar texto descriptivo a partir de entradas visuales.
-- Generación de contenido creativo sin restricciones: al ser uncensored, puede utilizarse para escribir ficción, guiones o contenido que requiera poca censura, en entornos donde se permita.
-- Investigación en técnicas de fine-tuning: el uso de técnicas como Cold Fusion y GAIN Training lo convierte en un caso de estudio para investigadores interesados en métodos de entrenamiento experimentales.
-- Base para fine-tuning adicional: gracias a su licencia Apache 2.0 y su tamaño de 27B, puede adaptarse a dominios específicos mediante fine-tuning adicional, como el sector legal o médico.
-- Despliegue en entornos controlados: su compatibilidad con endpoints de inferencia permite integrarlo en pipelines propios, siempre que se disponga del hardware adecuado.
+- Asistentes conversacionales con imágenes: el pipeline image-text-to-text permite responder preguntas sobre capturas, diagramas o fotografías en conversaciones multi-turno, útil en soporte técnico visual.
+- Generación de código con integración de herramientas: el soporte de tool calling y las plantillas Jinja actualizadas permiten integrarlo en pipelines de CI/CD o agentes que invocan funciones externas.
+- Agentes de razonamiento multi-etapa: los modos de pensamiento conmutables y el "multi-stage drafting" encajan en flujos que requieren planificación y verificación de resultados antes de responder.
+- Procesamiento de documentación técnica en inglés: con 27,78B de parámetros y capacidades de razonamiento, puede resumir, extraer y contrastar información de manuales y especificaciones.
+- Prototipado de aplicaciones con contenido sensible: la reducción de rechazos (68/100) lo hace adecuado para entornos de investigación donde el modelo base rechazaría consultas legítimas, siempre con revisión humana.
+- Despliegue en hardware de consumo mediante cuantización: la disponibilidad de GGUF en repositorios asociados permite ejecución local en equipos con GPU de gama alta o incluso CPU, para pruebas y demos.
+- Evaluación comparativa de finetunes: sirve como referencia en estudios sobre técnicas de "abliteration"/heretic y su impacto en rendimiento y alineación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Datos publicados en la model card (evaluación por "nightmedia", en modo instruct, métricas de exactitud):
+
+| Modelo | Precisión | arc/c | arc/e | boolq | hswag | obkqa | piqa | wino |
+|---|---|---|---|---|---|---|---|---|
+| THE-BIG-BANG-709-L (este linaje) | mxfp8 | 0,709 | 0,876 | 0,914 | 0,827 | 0,524 | 0,834 | 0,779 |
+| THE-BIG-BANG-709-L (este linaje) | mxfp4 | 0,701 | 0,877 | 0,913 | 0,821 | 0,518 | 0,830 | 0,786 |
+| Qwen3.8-27B ULTRA-HERETIC (misma etapa) | mxfp8 | 0,699 | 0,873 | 0,911 | 0,827 | 0,528 | 0,833 | 0,781 |
+| Qwen3.8-27B base sin ajustar | mxfp8 | 0,591 | 0,782 | 0,896 | 0,746 | 0,448 | 0,801 | 0,711 |
+| Qwen3.8-27B base sin ajustar | mxfp4 | 0,581 | 0,771 | 0,889 | 0,738 | 0,442 | 0,798 | 0,713 |
+| Qwen3.6-27B | mxfp8 | 0,647 | 0,803 | 0,910 | 0,773 | 0,450 | 0,806 | 0,742 |
+| Qwen3.6-35B-A3B | mxfp8 | 0,581 | 0,757 | 0,892 | 0,751 | 0,428 | 0,803 | 0,688 |
+| Qwen3.5-27B | mxfp8 | 0,557 | 0,711 | 0,868 | 0,533 | 0,452 | 0,706 | 0,695 |
+
+Nota: los benchmarks corresponden al modelo hermano del mismo linaje (TWIN-TURBO-709-L); el autor indica que BF16 suele rendir entre 2 y 5 puntos por encima de MXFP8. No se han publicado resultados de MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 27.781 millones de parámetros en FP16, los pesos ocupan aproximadamente 55.6 GB. Para inferencia se recomienda disponer de al menos 80 GB de VRAM para acomodar el modelo y el overhead de la KV cache.
-- GPU recomendadas: A100 80GB o H100 80GB para ejecutar el modelo en FP16. No es posible ejecutarlo en una GPU de consumo como la RTX 4090 (24GB) sin cuantización, y no se han publicado formatos cuantizados.
-- Opciones de despliegue: se puede utilizar con la librería transformers de Hugging Face. El tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia, aunque no se especifica con qué frameworks (vLLM, TGI, etc.). No se han publicado conversiones a GGUF para su uso con llama.cpp u Ollama.
-- Latencia y throughput: no disponible.
+- VRAM estimada en BF16: aproximadamente 55,6 GB de pesos, por lo que requiere unos 60-70 GB de VRAM para inferencia con overhead (varias GPU o una H100 80 GB).
+- Cuantización MXFP8: en torno a 28 GB de pesos; cabe en una A100 80 GB o H100, y en configuraciones multi-GPU de 24 GB (por ejemplo, 2x RTX 4090).
+- Cuantización MXFP4: en torno a 14-16 GB de pesos; podría caber en una RTX 4090 (24 GB) o RTX 3090, con margen para contexto.
+- GGUF: disponible en repositorios asociados del autor (NEO/MTP GGUF), lo que permite despliegue en llama.cpp y Ollama; los quants de 4 bits podrían ejecutarse en GPUs de 12-16 GB.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp/Ollama vía GGUF, y presumiblemente vLLM/TGI para pesos completos (no confirmado en la información disponible).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la información proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Idiomas | Notas |
+|---|---|---|---|---|---|
+| THE-BIG-BANG-709 (este) | 27,78B | no disponible | Apache 2.0 | en | Finetune heretic multimodal, benchmarks propios superiores al base |
+| Qwen3.8-27B base | 27B (aprox.) | no disponible | no disponible | no disponible | Sin ajuste heretic; 86/100 rechazos; peor en benchmarks publicados |
+| Qwen3.6-27B | 27B (aprox.) | no disponible | no disponible | no disponible | Rendimiento intermedio en los benchmarks del autor (arc/c 0,647) |
+| Qwen3.6-35B-A3B | 35B (MoE, 3B activos) | no disponible | no disponible | no disponible | Mayor tamaño pero menor puntuación en varias métricas del harness |
+
+Los datos de comparación provienen exclusivamente del harness del autor; no hay evaluaciones independientes que permitan una comparación neutral.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar el modelo.
-- Solo soporta inglés (en), no es multilingüe.
-- Al ser un modelo "uncensored", puede generar contenido inapropiado o dañino sin filtros de seguridad, lo que requiere supervisión humana en entornos de producción.
-- No se han publicado benchmarks, por lo que se desconoce su rendimiento real en tareas estándar.
-- La arquitectura y la longitud de contexto no están documentadas, lo que dificulta su evaluación técnica y su integración en pipelines existentes.
-- El tamaño del modelo (27B parámetros) exige hardware de gama alta, lo que limita su uso en entornos con recursos reducidos.
-- Posibles sesgos no evaluados, al no disponer de información sobre los datos de entrenamiento ni sobre procesos de alineación.
+- Modelo comunitario sin paper ni evaluación independiente: los benchmarks proceden del propio autor y deben interpretarse con cautela.
+- Riesgo de alucinación inherente a los modelos de 27B, no cuantificado en la información disponible.
+- Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado.
+- Longitud de contexto no documentada, lo que dificulta planificar cargas con contextos largos.
+- El ajuste "uncensored" (68/100 rechazos) reduce las salvaguardas del modelo base; requiere moderación externa en producción.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del finetune.
+- Cadena de dependencias compleja (múltiples finetunes previos) que dificulta la trazabilidad de los datos de entrenamiento.
+- Posible deriva en calidad respecto al base en tareas no cubiertas por el harness de evaluación.
+- El pipeline image-text-to-text no está validado con métricas multimodales en la información disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709
-- No se han encontrado enlaces adicionales relevantes en la búsqueda web.
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Repositorio GGUF asociado (NEO/MTP): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF
+- Proyecto Cold Fable Fusion GAIN V1.1: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1
+- Release #1 de la rama: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Discusión con el "pelican test": https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored/discussions/3
+- Qwen3.6-27B Fable Fusion: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Qwen3.8-27B Cold Fusion GAIN V1.1: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF

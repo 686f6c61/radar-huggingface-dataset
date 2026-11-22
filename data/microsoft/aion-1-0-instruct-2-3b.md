@@ -2,90 +2,90 @@
 
 ## Resumen
 
-Aion-1.0-Instruct-2.3B es un modelo de lenguaje pequeno (SLM, por sus siglas en ingles) desarrollado por el Applied Sciences Group de Microsoft Windows & Devices. Con 2.288.831.488 parametros, esta disenado especificamente para inferencia en dispositivo (on-device) en el ecosistema Windows, orientado a casos de uso de texto y sistema operativo. Resuelve el problema de ofrecer comprension y generacion de lenguaje con privacidad y sin dependencia de la nube, procesando documentos y conversaciones directamente en el equipo del usuario.
+Aion-1.0-Instruct-2.3B es un modelo de lenguaje pequeno (SLM) desarrollado por el Applied Sciences Group de Microsoft Windows & Devices. Se posiciona como el modelo fundacional del ecosistema Windows para IA en dispositivo (on-device), orientado a casos de uso de texto y de sistema operativo. Con 2.288.831.488 parametros (2,3B) y una ventana de contexto de 32K tokens, el modelo busca ofrecer comprension y generacion de lenguaje "de grado empresarial" directamente en el borde, sin dependencia constante de la nube.
 
-El modelo se presenta como la base fundacional de la familia Aion y como antesala del SLM que Microsoft integrara en Windows junto con su modelo de moderacion de contenido, con disponibilidad general prevista para finales de enero de 2027. Esta version publicada en Hugging Face es la no cuantizada, y Microsoft ha anunciado que la seguiran versiones cuantizadas. Soporta ocho idiomas (ingles, aleman, espanol, portugues, italiano, frances, chino y japones) y una ventana de contexto de 32K tokens.
+El modelo se publica como antesala de la version que, junto con un modelo de moderacion de contenido de Microsoft, se convertira en el SLM del sistema operativo Windows a finales de enero de 2027. Esta version de Hugging Face es una introduccion con fines de transparencia y retroalimentacion; se publica primero sin cuantizar, con versiones cuantizadas previstas mas adelante.
 
-La relevancia actual del modelo radica en su licencia MIT, su tamano contenido (apto para hardware de consumo) y su enfoque en tareas de resumen, reescritura y chat sobre documentos largos, lo que lo posiciona como una alternativa abierta para despliegues locales con requisitos de privacidad estrictos.
+Su relevancia actual radica en la tendencia hacia SLM ejecutables localmente: privacidad de datos, latencia baja y coste reducido. Aion Instruct hereda y amplia los datos de entrenamiento de Phi Silica, el SLM de la generacion anterior de Windows, e incorpora datos sinteticos para matematicas, codigo y razonamiento. La licencia MIT facilita su adopcion comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalles especificos no disponibles) |
-| Parametros totales | 2.288.831.488 (~2.3B) |
-| Parametros activos | no disponible (no es MoE segun la informacion) |
+| Arquitectura | no disponible (modelo transformer de tipo SLM; la model card no detalla la arquitectura interna) |
+| Parametros totales | 2.288.831.488 (2,3B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | 32K tokens |
-| Tipos de cuantizacion | no disponible (el autor anuncia versiones cuantizadas futuras; el repo actual es no cuantizado) |
-| Idiomas soportados | en, de, es, pt, it, fr, zh, ja |
+| Tipos de cuantizacion | no disponible en esta publicacion (se anuncia que habra versiones cuantizadas; la model card menciona soporte de PyTorch, ONNX y GGUF) |
+| Idiomas soportados | ingles, aleman, espanol, portugues, italiano, frances, chino y japones |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria transformers); el autor menciona tambien PyTorch, ONNX y GGUF como librerias |
+| Formato de pesos | safetensors (repo de 4,6 GB); la model card indica tambien ONNX y GGUF como librerias soportadas |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de tratarse de un transformer de tipo decoder para generacion de texto. El modelo es la base fundacional de la familia Aion Instruct y se presenta como sucesor de Phi Silica, el SLM anterior del sistema operativo Windows. El repositorio declara la etiqueta `custom_code`, lo que implica que la implementacion requiere codigo personalizado en transformers.
+La model card no especifica la arquitectura interna (tipo de transformer, atencion, capas, dimensiones ocultas ni si emplea tecnicas como atencion lineal o decodificacion especulativa). Lo que si se documenta es que Aion Instruct es un modelo de 2,3B parametros optimizado para inferencia en dispositivo y con una ventana de contexto de 32K tokens, pensado para procesar documentos de varias paginas, hilos de correo largos y especificaciones tecnicas complejas localmente.
 
-Los datos de entrenamiento son una extension del dataset usado para Phi Silica e incluyen documentos publicos filtrados rigurosamente por calidad, junto con datos sinteticos generados para ensenar matematicas, programacion, razonamiento de sentido comun y conocimiento general del mundo. Los datos multilingues constituyen aproximadamente el 6% del total. El autor indica que se realizo alineamiento de seguridad, aunque no especifica si se emplearon tecnicas concretas de RLHF o DPO. No se dispone de informacion sobre el numero total de tokens de entrenamiento ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+En cuanto a los datos, el entrenamiento es una extension del corpus usado para Phi Silica (el SLM previo de Windows) e incluye documentos publicos filtrados rigurosamente por calidad y datos sinteticos creados para ensenar matematicas, codigo, razonamiento de sentido comun y conocimiento general del mundo. Los datos multilingues constituyen aproximadamente el 6% del total. La model card menciona que se realizo alineamiento de seguridad, aunque no detalla si se emplearon tecnicas concretas de RLHF o DPO. Tampoco se indica el numero total de tokens de entrenamiento.
 
 ## Capacidades
 
 - Generacion de texto general: comprension de documentos, analisis de contenido, respuesta a preguntas y comprension del lenguaje natural.
-- Resumen (summarization) de documentos largos y conversaciones.
-- Reescritura (rewriting) de texto.
-- Chat conversacional multi-turno.
-- Procesamiento de contexto largo: hasta 32K tokens, suficiente para documentos de varias paginas, hilos de correo extensos y especificaciones tecnicas.
-- Capacidades multilingues en ocho idiomas: ingles, aleman, espanol, portugues, italiano, frances, chino y japones.
-- Razonamiento basico y matematicas: el autor menciona datos sinteticos para ensenar matematicas y razonamiento de sentido comun, aunque advierte de limitaciones en razonamiento multi-paso complejo.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el autor advierte explicitamente de la incapacidad del modelo para seguir razonamientos complejos de varios pasos.
-- Modo thinking, vision o audio: no disponible.
+- Resumen (summarization) y reescritura (rewriting), ambos declarados como tags principales del modelo.
+- Conversacion multi-turno (chat) con contexto de hasta 32K tokens.
+- Razonamiento basico y matematicas, reforzados mediante datos sinteticos de entrenamiento.
+- Capacidades de codigo, tambien apoyadas por datos sinteticos.
+- Soporte multilingue en ocho idiomas: ingles, aleman, espanol, portugues, italiano, frances, chino y japones.
+- Ejecucion en dispositivo (on-device) con formatos PyTorch, ONNX y GGUF, orientada a privacidad y baja latencia.
+- No se documenta en la informacion disponible soporte explicito de tool calling, function calling, uso de agentes ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Resumen de documentos en local: el modelo puede resumir contratos, informes o articulos de varias paginas directamente en el dispositivo gracias a sus 32K tokens de contexto, sin enviar datos a la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
-- Reescritura de textos corporativos: util para reformular correos, notas internas o documentacion manteniendo el contenido pero ajustando el tono, aprovechando la tarea de rewriting para la que fue entrenado.
-- Asistente de chat integrado en aplicaciones de escritorio: al ser un SLM de 2.3B, puede ejecutarse en el propio equipo y gestionar conversaciones multi-turno con baja latencia, sin coste de API.
-- Analisis de hilos de correo largos: la ventana de 32K permite procesar cadenas de emails completas para extraer decisiones, acciones pendientes o resumenes, manteniendo la confidencialidad de la comunicacion.
-- Procesamiento de especificaciones tecnicas: ingenieros pueden consultar documentacion tecnica extensa y obtener respuestas o resumenes localmente, integrado en herramientas de desarrollo.
-- Atencion al cliente en el borde: despliegue en kioscos o aplicaciones de escritorio para responder preguntas frecuentes y resumir incidencias, con la ventaja de no requerir conectividad constante.
-- Preprocesamiento de datos sensibles: clasificacion, extraccion y resumen de documentos medicos o legales en entornos aislados donde el envio a servicios cloud no esta permitido.
+- Resumen de documentos largos en local: el modelo puede resumir contratos, informes o articulos de varias paginas aprovechando su ventana de 32K tokens, sin enviar el contenido a la nube y preservando la privacidad del usuario.
+- Reescritura y mejora de textos: util para corregir estilo, tono o claridad en correos, documentacion tecnica o textos de interfaz, gracias a su entrenamiento especifico en rewriting.
+- Asistente de chat integrado en el sistema operativo: conversaciones multi-turno con contexto largo para tareas de productividad, busqueda de informacion en documentos locales y ayuda contextual dentro de Windows.
+- Analisis de hilos de correo extensos: sintesis de conversaciones de correo con muchas respuestas, extrayendo decisiones, tareas pendientes y puntos clave en el dispositivo.
+- Procesamiento de especificaciones tecnicas: lectura y extraccion de datos de manuales o especificaciones de ingenieria, un escenario citado explicitamente en la model card.
+- Atencion al cliente o asistencia en local: respuestas a preguntas frecuentes y comprension de consultas en ocho idiomas, con despliegue en el borde para reducir costes de inferencia en la nube.
+- Generacion de codigo ligera y asistencia en matematicas basicas: apoyo a tareas de programacion y calculo en entornos con recursos limitados, aunque con las limitaciones propias de un modelo de 2,3B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una grafica de metricas de seguridad (XPIA, DIC, ECI) sin valores numericos textuales, por lo que no se pueden reproducir cifras concretas.
+La model card indica que todas las evaluaciones se ejecutaron con EleutherAI's lm-evaluation-harness, pero el contenido proporcionado se interrumpe antes de mostrar la tabla de resultados. Ademas, la model card incluye una grafica de seguridad (XPIA, DIC y ECI) sin valores numericos en el texto disponible.
+
+No se han publicado resultados de benchmarks numericos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en precision FP16, los 2.29B parametros ocupan aproximadamente 4.6 GB de pesos, por lo que se necesitan en torno a 5-6 GB de VRAM considerando cache de activaciones y contexto. En cuantizacion de 8 bits, aproximadamente 2.5-3 GB; en 4 bits, alrededor de 1.5-2 GB (estimaciones teoricas, no publicadas por el autor).
-- GPU recomendadas: para FP16, una GPU con 8 GB o mas de VRAM (RTX 3060 Ti, RTX 4060, RTX 4070). Para mayor throughput, A100 o H100 en despliegues por lotes.
-- Cabe en GPU de consumo: si, en tarjetas con 6-8 GB de VRAM en cuantizacion, y en FP16 en modelos con 8 GB o mas.
-- Opciones de despliegue: transformers (libreria declarada, con `custom_code`), ONNX y GGUF segun la model card; vLLM, llama.cpp, Ollama y TGI no estan confirmados en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamano (2,3B parametros), en FP16 se requeririan aproximadamente 4,6 GB solo para pesos; en cuantizacion de 8 bits, unos 2,3 GB; en 4 bits, alrededor de 1,2-1,5 GB, mas el overhead de contexto KV (que crece con los 32K tokens de ventana).
+- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, el modelo es apto para GPUs de consumo como RTX 3060/4060 en adelante con cuantizacion, y para GPUs de datacenter (A100, H100) si se busca mayor throughput.
+- Cabe en GPU de consumo: si, previsiblemente en la mayoria de GPUs con 6-8 GB o mas de VRAM, especialmente con cuantizacion; no confirmado oficialmente.
+- Opciones de despliegue: la model card menciona PyTorch, ONNX y GGUF como librerias soportadas, lo que habilita transformers, ONNX Runtime y llama.cpp/Ollama para GGUF. vLLM y TGI no se mencionan explicitamente.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Aion-1.0-Instruct-2.3B | ~2.3B | 32K | MIT | Enfocado en on-device Windows, 8 idiomas, sin benchmarks publicados |
-| Phi Silica (generacion anterior) | no disponible | no disponible | no disponible | Predecesor en Windows OS SLM; Aion extiende sus datos de entrenamiento |
-| Alternativas de ~2-3B | no disponible | no disponible | no disponible | No se dispone de datos de comparacion en la informacion proporcionada |
+| Aion-1.0-Instruct-2.3B | 2,3B | 32K | MIT | SLM de Microsoft para on-device en Windows; 8 idiomas |
+| Phi Silica (generacion previa) | no disponible | no disponible | no disponible | SLM anterior de Windows; base de los datos de entrenamiento de Aion |
+| Otros SLM de ~2-3B | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos de la misma categoria.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos alternativos en la informacion proporcionada para establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Modelo pequeno: con 2.3B parametros, puede perder detalles finos, producir afirmaciones incorrectas y fallar en razonamiento multi-paso complejo, en comparacion con modelos grandes.
-- Conocimiento del mundo limitado: el autor advierte explicitamente de que el modelo no fue entrenado para destacar en conocimiento factual del mundo.
-- Alucinacion: riesgo inherente a los SLM; la model card recomienda evaluar y mitigar precision, seguridad y equidad antes de usos de alto riesgo.
-- Seguridad: aunque se realizo alineamiento de seguridad, el modelo puede ser susceptible a ataques adversariales y no comprende todas las sutilezas de seguridad. Las metricas XPIA, DIC y ECI se identifican como areas de mejora.
-- Diferencias por idioma: la calidad de salida puede variar entre idiomas, ya que los datos multilingues son solo el 6% del total.
-- Usos prohibidos por el autor: generacion de contenido danino, violento, explicito u ofensivo; creacion de desinformacion; toma de decisiones automatizada en contextos criticos como diagnosticos medicos o juicios legales.
-- Licencia MIT: permite uso comercial, pero la model card aclara que nada en ella restringe o modifica la licencia.
-- Fecha de disponibilidad general en Windows: finales de enero de 2027, con moderacion de contenido integrada; esta version de Hugging Face es una introduccion no cuantizada.
+- Modelo pequeno (2,3B): puede perder detalles finos, producir afirmaciones incorrectas y mostrar dificultad para seguir razonamientos multi-paso complejos, en comparacion con LLM de mayor tamano.
+- Conocimiento del mundo limitado: la model card advierte explicitamente que el modelo no fue entrenado para destacar en conocimiento general del mundo.
+- Alucinacion: riesgo inherente a los SLM; la menor capacidad de almacenar hechos aumenta la probabilidad de errores factuales.
+- Seguridad: aunque se realizo alineamiento de seguridad, el modelo carece del razonamiento complejo para comprender todos los matices de seguridad y puede ser susceptible a ataques adversarios. Las metricas XPIA, DIC y ECI se identifican como areas a mejorar en futuras versiones.
+- Diferencias por idioma: la calidad de salida puede variar segun el idioma, ya que los datos multilingues son solo el 6% del corpus y Microsoft sigue trabajando en cerrar brechas entre lenguas.
+- Restricciones de uso: no debe usarse para generar contenido danino, violento, explicito u ofensivo, ni para crear desinformacion, ni para toma de decisiones automatizada en contextos criticos como diagnosticos medicos o juicios legales.
+- Licencia MIT: permite uso comercial, pero la model card recomienda evaluar y mitigar precision, seguridad y equidad antes de usos de alto riesgo, y respetar la legislacion aplicable (privacidad, cumplimiento comercial).
+- Version no definitiva: esta publicacion es una introduccion; la version que se integrara en Windows (con moderacion de contenido) llegara a finales de enero de 2027.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B
+- Hugging Face: https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B
+- Licencia: https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B/blob/main/LICENSE
 - Repositorio GitHub de ejemplo: https://github.com/microsoft/Aion-Instruct-Preview-Sample/
-- Licencia: https://huggingface.co/asgmodels/Aion-Instruct-v1/blob/main/LICENSE
-- Web de Microsoft: https://www.microsoft.com/
+- EleutherAI lm-evaluation-harness (mencionado en la model card): https://github.com/EleutherAI/lm-evaluation-harness

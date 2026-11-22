@@ -1,85 +1,84 @@
 # tinyopsec/svd-safety-l3_swift_remove50_swapgapiter_b010-GGUF
 
 ## Resumen
+Este repositorio contiene cuantizaciones GGUF del checkpoint `Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010`, una variante comprimida de Llama-3-8B-Instruct obtenida mediante una tecnica de descomposicion en valores singulares (SVD) sobre el 50 % de los parametros densos, con recuperacion posterior mediante LoRA y diez rondas de edicion de parametros con intercambio neutro (gap_iter). El autor del repositorio, `tinyopsec`, se limita a empaquetar esas variantes en formato GGUF para su uso con llama.cpp y runtimes compatibles.
 
-`svd-safety-l3_swift_remove50_swapgapiter_b010-GGUF` es un artefacto de investigación publicado por el usuario tinyopsec en Hugging Face. Se trata de una cuantización en formato GGUF del checkpoint `Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010`, una versión comprimida mediante Swift-SVD de Meta-Llama-3-8B-Instruct que conserva el 50% de los parámetros densos, con recuperación vía LoRA y 10 rondas de edición iterativa "parameter-neutral swap" (gap_iter). El modelo forma parte de un estudio sobre los compromisos entre compresión SVD y alineación de seguridad.
+El modelo no es un asistente de proposito general: la propia model card lo describe como un artefacto de investigacion sobre el compromiso entre compresion SVD y seguridad, y advierte de que varias ramas de la rejilla experimental estan deliberadamente degradadas en seguridad. Su interes es, por tanto, metodologico: permite estudiar como afecta la compresion agresiva de pesos a las capacidades y a las barreras de seguridad de un modelo Llama 3.
 
-Su relevancia no radica en ser un asistente de propósito general, sino en servir como material de análisis para investigadores que estudian cómo la compresión agresiva y las ediciones de pesos afectan a los comportamientos de seguridad de un modelo. La propia model card advierte que varias variantes de la rejilla de experimentos están deliberadamente degradadas en seguridad y que debe evaluarse antes de cualquier uso.
-
-La arquitectura base es la de Llama 3 (transformer denso) con 8.030.261.248 parámetros en la versión original en safetensors, aunque esta versión comprimida retiene aproximadamente la mitad de los parámetros densos. El contexto y el rendimiento exacto tras la compresión no están documentados en la información disponible.
+La arquitectura subyacente es la de Llama 3 8B Instruct (transformer denso, 8.030.261.248 parametros en el checkpoint en precision completa), con licencia Meta Llama 3 Community. El repositorio GGUF ocupa 77,6 GB e incluye trece ficheros de cuantizacion, desde F16 hasta Q2_K.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Llama 3) comprimido con Swift-SVD + recuperación LoRA |
-| Parametros totales | 8.030.261.248 (modelo base en safetensors); la versión comprimida retiene el 50% de los parámetros densos |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (heredada presumiblemente de Llama 3 8B Instruct, 8.192 tokens, pero no confirmada para esta variante) |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | No disponible (el modelo base Llama 3 cubre oficialmente inglés, alemán, francés, italiano, portugués, hindi, español y tailandés) |
-| Licencia | Meta Llama 3 Community License |
-| Formato de pesos | GGUF (producido con llama.cpp) |
+| Arquitectura | Transformer denso derivado de Llama 3 8B Instruct, comprimido mediante SVD (Swift-SVD) con recuperacion LoRA |
+| Parametros totales | 8.030.261.248 (checkpoint en precision completa) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Llama 3 8B Instruct, no confirmada en la model card) |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M (recomendada), Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | no disponible |
+| Licencia | Llama 3 Community License |
+| Formato de pesos | GGUF (generado con llama.cpp) |
+| Tamano del repositorio | 77,6 GB |
+| Descargas | 658 |
+| Fecha de creacion | 2026-10-26 |
 
 ## Arquitectura y entrenamiento
+El modelo parte de Llama 3 8B Instruct, un transformer denso con atencion multi-cabeza estandar, y aplica una compresion Swift-SVD que reduce aproximadamente el 50 % de los parametros densos. Sobre esa base comprimida se aplica una recuperacion con LoRA para mitigar la perdida de capacidad, seguida de diez rondas de edicion de parametros mediante intercambio neutro (gap_iter), una tecnica que redistribuye pesos sin alterar el numero total de parametros. El resultado es un checkpoint editado que conserva el tamano nominal de Llama 3 8B pero con una estructura interna alterada.
 
-El modelo parte de Meta-Llama-3-8B-Instruct, un transformer decoder-only denso de 8 mil millones de parámetros. Sobre esa base se aplica una compresión Swift-SVD (descomposición en valores singulares) que reduce el modelo al 50% de sus parámetros densos, seguida de una recuperación mediante LoRA para restaurar parte de la capacidad perdida. Posteriormente se ejecutan 10 rondas de edición iterativa de pesos denominada "parameter-neutral swap" (gap_iter), un procedimiento que intercambia parámetros sin alterar el recuento total.
-
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni sobre procesos de RLHF/DPO adicionales aplicados a esta variante: el único entrenamiento documentado es la propia compresión y edición. El nombre del repositorio y las etiquetas ("safety", "compression") indican que el objetivo del trabajo es estudiar cómo estas transformaciones afectan a los comportamientos de seguridad del modelo original, no mejorar su rendimiento general.
+La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en esta variante; esos datos corresponden al modelo base Llama 3 8B Instruct y no se confirman para el checkpoint editado. La innovacion tecnica destacable es precisamente el pipeline de compresion y recuperacion, no una arquitectura nueva. Las cuantizaciones GGUF se generaron con llama.cpp y no implican reentrenamiento adicional.
 
 ## Capacidades
-
-- Generación de texto conversacional heredada de Llama-3-8B-Instruct, presumiblemente degradada por la compresión al 50% de parámetros.
-- Compatibilidad total con el ecosistema GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible.
-- Disponibilidad de 13 niveles de cuantización, desde F16 hasta Q2_K, para ajustarse a distintas memorias.
-- Utilidad como sujeto de experimentación para estudios de compresión SVD, ablación de seguridad y análisis de robustez de alineación.
-- No hay datos que respalden capacidades de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
-- La model card advierte explícitamente que no es un asistente de propósito general.
+- Generacion de texto conversacional, heredada de Llama 3 8B Instruct, aunque degradada por la compresion SVD y la edicion de pesos.
+- Razonamiento y respuesta a instrucciones en formato chat, con calidad no verificada en la informacion disponible.
+- Capacidades multilingues: no disponibles en la model card; se asume el perfil de Llama 3, sin confirmacion.
+- Soporte de tool calling y function calling: no documentado para esta variante.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Modo thinking, vision o audio: no disponible.
+- Uso como artefacto de investigacion para estudiar el efecto de la compresion SVD sobre seguridad y capacidades.
 
 ## Casos de uso
-
-- Investigación en compresión de LLMs: sirve como caso de estudio real de Swift-SVD al 50% de parámetros con recuperación LoRA, útil para comparar degradación de calidad frente a otras técnicas de pruning o destilación.
-- Estudios de seguridad y alineación: al estar deliberadamente degradado en seguridad en algunas variantes, permite a investigadores analizar cómo la compresión y las ediciones de pesos erosionan los guardrails de un modelo alineado.
-- Evaluación de robustez de cuantización: con 13 niveles de cuantización disponibles, es adecuado para medir cómo la compresión SVD interactúa con la cuantización posterior (Q2_K a F16).
-- Pruebas de regresión en pipelines de inferencia local: puede integrarse en benchmarks automatizados con llama.cpp para verificar el comportamiento de runtimes GGUF con modelos no estándar.
-- Análisis forense de pesos: las ediciones "gap_iter" ofrecen material para técnicas de interpretabilidad que localizan qué componentes codifican comportamientos de rechazo.
-- Comparativas educativas: útil como ejemplo en materiales docentes sobre los riesgos de usar derivados comprimidos o editados de modelos abiertos sin evaluación previa.
+- Investigacion sobre compresion de modelos: el checkpoint permite medir empiricamente como afecta la reduccion SVD del 50 % de parametros densos a las metricas de calidad, comparando con Llama 3 8B Instruct sin comprimir.
+- Estudio de seguridad en modelos comprimidos: al incluir ramas deliberadamente degradadas en seguridad, sirve para analizar si la compresion agresiva erosiona las barreras de alineamiento y como se manifiesta ese deterioro.
+- Evaluacion de tecnicas de recuperacion LoRA: permite comparar la calidad del checkpoint con recuperacion frente a una compresion SVD sin recuperacion, aislando el efecto de la LoRA.
+- Analisis de la edicion gap_iter: las diez rondas de intercambio neutro de parametros se pueden estudiar como metodo de ajuste sin cambio de tamano, midiendo su impacto en perplexity y en comportamiento.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M y Q3_K permiten ejecutar el modelo en GPUs consumer con llama.cpp, Ollama o LM Studio para pruebas exploratorias.
+- Reproducibilidad de experimentos: los trece ficheros GGUF facilitan replicar evaluaciones en distintos niveles de cuantizacion sin necesidad de recompilar el modelo.
+- Docencia sobre cuantizacion: el rango F16 a Q2_K permite ilustrar la relacion entre bits por peso, tamano en disco y degradacion de salida en un modelo real.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no disponible con exactitud, pero puede estimarse a partir del tamaño de los ficheros GGUF: Q4_K_M requiere en torno a 5-6 GB (aproximadamente la mitad de un Q4_K_M estándar de 8B, que suele ocupar ~4,9 GB; al conservar el 50% de parámetros densos más LoRA, el consumo será inferior), Q8_0 en torno a 9-10 GB y F16 unos 16,1 GB según el listado del repositorio.
-- GPU recomendadas: para las cuantizaciones bajas (Q4 y menores), cualquier GPU de consumo con 8 GB o más (RTX 3060, RTX 4060 Ti, RTX 4090) debería ser suficiente. Para F16, una GPU con 24 GB (RTX 3090/4090) o una A100.
-- Cabe holgadamente en GPUs de consumo con las cuantizaciones Q2_K a Q5; incluso es probable que funcione en CPU con RAM moderada dada la compresión al 50%.
-- Opciones de despliegue: llama.cpp (comando `llama-cli` documentado en la model card), Ollama, LM Studio y koboldcpp, además de cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponible. Al retener el 50% de los parámetros densos, la velocidad de inferencia debería ser superior a la del modelo 8B original, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente 16,1 GB en F16, en torno a 8,5-9 GB en Q8_0, unos 6,5-7 GB en Q6_K, 5,5-6 GB en Q5_K_M, 4,5-5 GB en Q4_K_M y 3-3,5 GB en Q2_K (estimaciones a partir del tamano de los ficheros y del numero de parametros; no confirmadas por el autor).
+- GPU recomendadas: A100 o H100 para F16 y Q8_0 con contexto largo; RTX 4090 o RTX 3090 para Q6_K y Q5_K_M; RTX 4070, RTX 4060 Ti 16 GB o RTX 3060 12 GB para Q4_K_M y Q3_K.
+- Cabe en GPU consumer: si, en las cuantizaciones Q4_K_M y Q3_K en GPUs con 8 GB o mas; Q2_K en GPUs de 4-6 GB.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Compresion | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| tinyopsec/svd-safety-l3_swift_remove50_swapgapiter_b010-GGUF | 8.030.261.248 (base); 50% de densos retenidos | Swift-SVD + LoRA + 10 rondas gap_iter | No disponible | Llama 3 Community | GGUF público, 13 cuantizaciones |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | Sin compresion | 8.192 tokens | Llama 3 Community | Safetensors y multiples cuantizaciones comunitarias |
-| PrunaAI o derivados comprimidos de Llama 3 8B | Variable | Pruning/destilacion (segun variante) | Variable | Llama 3 Community | Publicados en Hugging Face |
-
-La diferencia clave frente al modelo base es que esta variante sacrifica capacidad y seguridad documentadas a cambio de un tamaño reducido, y su propósito es experimental, no productivo.
+| tinyopsec/svd-safety-l3_swift_remove50_swapgapiter_b010-GGUF | 8,03 B | no disponible | Llama 3 Community | GGUF | Variante comprimida por SVD con seguridad degradada en varias ramas |
+| Llama 3 8B Instruct (original) | 8,03 B | 8.192 tokens (segun documentacion de Meta, no confirmado en esta ficha) | Llama 3 Community | safetensors, GGUF | Modelo base sin comprimir; referencia de calidad |
+| Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010 | 8,03 B | no disponible | Llama 3 Community | safetensors | Checkpoint original del que derivan estas cuantizaciones |
+| Otras variantes Llama 3 8B cuantizadas (por ejemplo, Q4_K_M de Llama 3 8B Instruct) | 8,03 B | 8.192 tokens | Llama 3 Community | GGUF | Alternativa de proposito general con calidad y seguridad intactas |
 
 ## Limitaciones y advertencias
-
-- Degradación deliberada de seguridad: la model card indica que varias variantes de la rejilla experimental están "deliberadamente safety-degraded". Este modelo puede producir contenidos que el modelo base rechazaría, sin filtros de alineación fiables.
-- No es un asistente de propósito general: la propia model card lo advierte explícitamente y recomienda evaluar antes de usar.
-- Riesgo de alucinación elevado: la compresión al 50% de parámetros densos más las ediciones iterativas de pesos no están acompañadas de evaluaciones publicadas de calidad, por lo que la fiabilidad factual es desconocida y presumiblemente inferior al original.
-- Sin benchmarks publicados: no hay datos de MMLU, HumanEval ni ninguna otra métrica para esta variante concreta.
-- Contexto no confirmado: la ventana de contexto efectiva tras la compresión no está documentada.
-- Restricciones de licencia: al ser un derivado de Llama 3, queda vinculado a la Meta Llama 3 Community License, con sus condiciones de uso comercial y su política de marca aceptable de uso.
-- Procedencia comunitaria: publicado por un usuario individual (tinyopsec) con 393 descargas y sin verificación de terceros, lo que exige auditoría propia antes de cualquier despliegue.
+- La model card advierte explicitamente de que varias ramas de la rejilla experimental estan degradadas en seguridad de forma deliberada; el modelo no debe usarse como asistente de proposito general.
+- La compresion SVD del 50 % de parametros densos y las diez rondas de edicion gap_iter pueden degradar la coherencia, el razonamiento y el seguimiento de instrucciones; no hay benchmarks publicados que cuantifiquen esa perdida.
+- Riesgo elevado de alucinacion y de respuestas incoherentes, especialmente en cuantizaciones bajas (Q3_K, Q2_K).
+- Sesgos conocidos: no documentados para esta variante; se heredan los de Llama 3 8B Instruct, sin evaluacion especifica.
+- Limitaciones de contexto e idioma: no disponibles en la model card; no se confirma la ventana de contexto efectiva tras la compresion.
+- Restricciones de licencia: Llama 3 Community License; el uso comercial esta sujeto a los terminos de Meta, incluida la politica de nombres y la obligacion de atribucion.
+- El repositorio ocupa 77,6 GB, lo que exige espacio en disco considerable aunque solo se descargue una cuantizacion.
+- No hay garantia de soporte de tool calling ni de comportamiento agentico; no debe asumirse en produccion sin evaluacion previa.
+- Fecha de creacion en 2026 y ausencia de likes o documentacion adicional: la trazabilidad del experimento depende del autor original del checkpoint, no de este repositorio.
 
 ## Enlaces
-
-- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/svd-safety-l3_swift_remove50_swapgapiter_b010-GGUF
-- Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
-- Checkpoint original comprimido: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010 (deducido de la model card; no se ha verificado su disponibilidad)
-- No se han encontrado enlaces a papers, blogs oficiales ni demos en la información disponible.
+- Repositorio GGUF: https://huggingface.co/tinyopsec/svd-safety-l3_swift_remove50_swapgapiter_b010-GGUF
+- Modelo base: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010
+- Llama 3 8B Instruct (referencia): https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Licencia Llama 3: https://llama.meta.com/llama3/license/

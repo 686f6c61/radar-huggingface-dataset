@@ -1,0 +1,360 @@
+{
+  "schema": 2,
+  "id": "sachinyerrawar/sbert_raw_investo-finmodern_tri_merged",
+  "slug": "sachinyerrawar-sbert_raw_investo-finmodern_tri_merged",
+  "author": "sachinyerrawar",
+  "url": "https://huggingface.co/sachinyerrawar/sbert_raw_investo-finmodern_tri_merged",
+  "created_at": "2026-11-22T02:05:27.000Z",
+  "updated_at": "2026-11-22T02:05:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:144522",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "dataset_size:11687",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:sentence-transformers/bert-base-nli-mean-tokens",
+    "base_model:finetune:sentence-transformers/bert-base-nli-mean-tokens",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": "sentence-transformers/bert-base-nli-mean-tokens",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.868
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9275
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.947
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9675
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Precision@1",
+      "value": 0.868
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Precision@3",
+      "value": 0.30916666666666665
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Precision@5",
+      "value": 0.18940000000000004
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Precision@10",
+      "value": 0.09675000000000002
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Recall@1",
+      "value": 0.868
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Recall@3",
+      "value": 0.9275
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Recall@5",
+      "value": 0.947
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Recall@10",
+      "value": 0.9675
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9178169636549416
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Mrr@10",
+      "value": 0.9019283730158727
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo val",
+      "metric": "Cosine Map@100",
+      "value": 0.9030404320152395
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7655
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.884
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.914
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9465
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Precision@1",
+      "value": 0.7655
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Precision@3",
+      "value": 0.29466666666666663
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Precision@5",
+      "value": 0.18280000000000002
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Precision@10",
+      "value": 0.09465000000000001
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Recall@1",
+      "value": 0.7655
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Recall@3",
+      "value": 0.884
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Recall@5",
+      "value": 0.914
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Recall@10",
+      "value": 0.9465
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8588584404563961
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Mrr@10",
+      "value": 0.8304619047619046
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern val",
+      "metric": "Cosine Map@100",
+      "value": 0.8324005367431778
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.868
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9325
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9445
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.968
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Precision@1",
+      "value": 0.868
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Precision@3",
+      "value": 0.31083333333333324
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Precision@5",
+      "value": 0.18890000000000004
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Precision@10",
+      "value": 0.09680000000000001
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Recall@1",
+      "value": 0.868
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Recall@3",
+      "value": 0.9325
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Recall@5",
+      "value": 0.9445
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Recall@10",
+      "value": 0.968
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9186700977154053
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Mrr@10",
+      "value": 0.9028587301587297
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "investo test",
+      "metric": "Cosine Map@100",
+      "value": 0.9043775642523162
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern test",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.759
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern test",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8905
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern test",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.921
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern test",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.949
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finmodern test",
+      "metric": "Cosine Precision@1",
+      "value": 0.759
+    }
+  ],
+  "sources": []
+}

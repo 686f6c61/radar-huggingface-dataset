@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "Lysandra999/Senik-Whisper-Small",
+  "slug": "lysandra999-senik-whisper-small",
+  "author": "Lysandra999",
+  "url": "https://huggingface.co/Lysandra999/Senik-Whisper-Small",
+  "created_at": "2026-11-22T04:31:09.000Z",
+  "updated_at": "2026-11-22T04:31:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "wake-word",
+    "senik",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,102 +2,104 @@
 
 ## Resumen
 
-KORMo-Web-4B es un modelo vision-language de tipo agente web desarrollado por KORMo-VL, afinado a partir de Qwen/Qwen3.5-4B. Su propósito es completar tareas reales en un navegador operando exclusivamente sobre capturas de pantalla: recibe una petición en coreano o inglés y ejecuta de forma autónoma clics, escritura y navegación entre sitios y pestañas hasta finalizar la tarea. No requiere árbol DOM ni árbol de accesibilidad, lo que simplifica su integración en entornos de automatización reales.
+KORMo-Web-4B es un modelo de visión-lenguaje de 4B parámetros especializado en actuar como agente de navegador web a partir únicamente de capturas de pantalla. Lo desarrolla el grupo KORMo-VL y se construye mediante fine-tuning del modelo base Qwen/Qwen3.5-4B, al que se añaden capacidades de percepción de interfaces gráficas y planificación de acciones multi-paso. El modelo recibe una petición en coreano o inglés y ejecuta de forma autónoma clics, escritura y navegación entre sitios y pestañas hasta completar la tarea.
 
-El modelo tiene 5.174.964.736 parámetros según los pesos en safetensors (etiquetado comercialmente como 4B por su base Qwen3.5-4B) y se distribuye bajo licencia Apache-2.0, con pesos en safetensors y compatibilidad con transformers y vLLM. Soporta contextos de hasta 131.072 tokens según la configuración de despliegue recomendada por el autor, y está pensado para ejecutarse en una única GPU (TP=1).
+El problema que resuelve es la automatización fiable de tareas web reales sin depender del DOM ni del árbol de accesibilidad: el modelo opera sobre lo que aparece en pantalla, como haría una persona, y verifica el resultado de cada acción en la siguiente captura. Esto lo hace robusto frente a webs dinámicas, componentes renderizados en canvas y aplicaciones que no exponen una estructura semántica estable.
 
-Su relevancia actual radica en que aborda el problema de los agentes de computer-use con un enfoque screenshot-only y un paso explícito de razonamiento antes de cada acción, lo que facilita la depuración y la inspección del comportamiento. Según la model card, supera a agentes web open-weight comparables en evaluación sobre sitios web en vivo, con mejoras de +9,6 puntos en inglés y +22,1 puntos en coreano frente a los modelos de referencia comparados.
+Su relevancia actual radica en que combina un tamaño reducido (5.174.964.736 parámetros según los pesos en safetensors) con un rendimiento que, según el autor, supera a agentes web open-weight de mayor tamaño en la misma evaluación de sitios en vivo. Se distribuye con licencia Apache-2.0, pesos abiertos, harness de navegador de referencia y datos de entrenamiento publicados, lo que facilita la reproducibilidad de la investigación en agentes web.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language transformer (fine-tuning de Qwen/Qwen3.5-4B); detalles internos de la arquitectura base no disponibles |
-| Parametros totales | 5.174.964.736 (pesos safetensors) |
+| Arquitectura | Transformer vision-lenguaje (fine-tuning de Qwen/Qwen3.5-4B), pipeline image-text-to-text |
+| Parametros totales | 5.174.964.736 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | hasta 131.072 tokens en la configuración de despliegue recomendada (`--max-model-len 131072`) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | coreano (ko), inglés (en) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16 (pesos completos) y 4-bit (variante `KORMo-Web-4B-mlx-4bit`); no se detallan otros formatos |
+| Idiomas soportados | coreano (ko) e inglés (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Formato de pesos | safetensors (repo de 10,8 GB); variante MLX 4-bit para Apple silicon |
 
 ## Arquitectura y entrenamiento
 
-KORMo-Web-4B es un fine-tuning del modelo base Qwen/Qwen3.5-4B, un vision-language model de la familia Qwen3.5. La arquitectura subyacente corresponde a la del modelo base; la model card no detalla la composición interna (número de capas, atención, componentes de visión) ni los hiperparámetros del ajuste. El modelo procesa una imagen (captura de pantalla) junto con texto estructurado que describe el estado del navegador (tamaño de pantalla, pestaña activa, URL y captura) y devuelve una acción en formato de tool calling.
+El modelo parte de Qwen/Qwen3.5-4B, un transformer multimodal de tipo image-text-to-text, y se especializa mediante un proceso de entrenamiento en dos fases descrito por el autor. La primera fase utiliza más de 10 millones de muestras de pretraining web a nivel atómico en coreano e inglés, orientadas a que el modelo aprenda qué es cada elemento de interfaz, dónde está y qué hace, cubriendo texto, posición, apariencia, disposición, función y estado. La segunda fase emplea más de 100.000 trayectorias de interacción web bilingües que enseñan a traducir esa comprensión fina en acciones multi-paso reales.
 
-El entrenamiento se orienta a tareas de agente web: el modelo recibe una petición del usuario, el estado observable de la pantalla y un esquema de herramientas (`tools.json`), y genera una secuencia de razonamiento breve seguida de una acción. La model card indica que el modelo "piensa y luego actúa", con un paso de razonamiento antes de cada acción, y que soporta flujos multi-sitio y multi-pestaña. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
-
-Como innovaciones destacables, el modelo opera exclusivamente sobre capturas de pantalla (sin DOM ni accessibility tree), verifica el resultado de cada acción en la siguiente captura y expone un modo de pensamiento (`enable_thinking`) configurable en el chat template. El autor incluye un arnés de navegador de referencia (`agent_playwright.py`), el esquema de herramientas y los ajustes exactos de inferencia (temperatura 0.6, top_p 0.95, top_k 20, max_tokens 16384).
+Una innovación destacable es el enfoque screenshot-only: el modelo no consume DOM ni árbol de accesibilidad, sino que percibe la pantalla y comprueba el efecto de cada acción en la captura siguiente. Además, incorpora un paso breve de razonamiento antes de cada acción, lo que hace su comportamiento inspeccionable y depurable. El autor publica los pesos, los datos de pretraining web bilingües a gran escala, las trayectorias de interacción y los benchmarks de evaluación. No se detallan en la información disponible el número exacto de tokens de entrenamiento, la composición completa del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de acciones de agente web a partir de capturas de pantalla: clics, escritura, navegación y gestión de pestañas.
-- Planificación multi-paso con razonamiento explícito antes de cada acción (modo thinking activable).
-- Soporte de tool calling / function calling mediante un esquema de herramientas incluido (`tools.json`).
-- Comprensión de instrucciones naturales en coreano e inglés, tanto comandos cortos como peticiones conversacionales largas.
-- Flujos multi-sitio y multi-pestaña: buscar en un sitio, verificar en otro y escribir el resultado en un tercero.
-- Verificación del resultado de cada acción sobre la siguiente captura de pantalla.
-- Capacidades de visión para interpretar interfaces web renderizadas (imagen-texto-a-texto).
-- No se documentan capacidades de audio ni de generación de código fuera del contexto de acciones de navegador.
+- Generación de texto y razonamiento previo a la acción: cada paso incluye un razonamiento corto que precede a la ejecución.
+- Comprensión de capturas de pantalla: identifica elementos de interfaz, su posición, apariencia, disposición, función y estado.
+- Acciones de navegador: clics, escritura de texto, navegación entre sitios y gestión autónoma de pestañas.
+- Flujos multi-sitio y multi-pestaña: puede buscar en un sitio, verificar en otro y escribir el resultado en un tercero.
+- Soporte bilingüe coreano-inglés, tanto en peticiones cortas como en instrucciones largas y conversacionales.
+- Verificación de resultados: comprueba el efecto de cada acción en la siguiente captura de pantalla.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con el ecosistema transformers.
+- Integración con un harness de navegador de referencia, esquema de herramientas y ajustes de inferencia exactos publicados por el autor.
+- Capacidad de ejecución en Apple silicon mediante `vllm-mlx` 0.6.0 o superior, además de GPU NVIDIA.
 
 ## Casos de uso
 
-- Automatización de compras comparativas: el modelo puede recibir una petición como buscar un producto con un rango de precio y características en un sitio coreano, recorrer los resultados y devolver los precios; la model card incluye un ejemplo de este tipo sobre Danawa.
-- Asistentes de navegación para usuarios: integrado en un navegador o extensión, puede ejecutar tareas como "busca X y abre la página oficial" gestionando la pestaña activa y verificando cada paso en la captura siguiente.
-- Pruebas de aceptación end-to-end de aplicaciones web: al operar solo sobre píxeles, puede usarse para validar flujos de usuario reales en Chromium mediante Playwright sin depender de selectores DOM frágiles.
-- Extracción de información multi-sitio: buscar datos en un sitio, contrastarlos en otro y consolidar el resultado en un tercero, aprovechando su soporte de múltiples pestañas.
-- Agentes de atención al cliente para portales web: puede guiar o ejecutar trámites en portales en coreano e inglés, con razonamiento inspeccionable para auditar decisiones.
-- Automatización de tareas repetitivas de back-office en interfaces legacy sin API: al basarse en capturas, funciona sobre aplicaciones web antiguas donde no hay acceso programático al DOM.
-- Investigación en agentes computer-use: su formato de observación, esquema de herramientas y ajustes de inferencia publicados lo hacen útil como base reproducible para experimentos de agentes web.
+- Automatización de tareas web repetitivas: rellenar formularios, consultar estados o descargar informes en portales internos donde no existe API, actuando solo con capturas de pantalla.
+- Asistencia en atención al cliente: un agente que navega por el panel de soporte, localiza el pedido del cliente y ejecuta acciones de seguimiento, verificando cada paso en la pantalla siguiente.
+- Investigación y verificación multi-sitio: buscar un dato en una web, contrastarlo en otra y consolidar el resultado en una tercera, gestionando las pestañas de forma autónoma.
+- Testing de interfaces web: usar el agente para recorrer flujos de usuario reales en un navegador y detectar puntos de fuga, aprovechando su razonamiento inspeccionable para depurar fallos.
+- Extracción de datos de aplicaciones sin API: operar sobre paneles renderizados en canvas o con estructuras DOM inestables, donde los scrapers tradicionales fallan.
+- Automatización en escritorio con Apple silicon: desplegar la variante 4-bit (2,8 GB de pesos, unos 3,8 GB en uso) en un Mac de 16 GB o más para tareas de navegador locales.
+- Asistente personal de navegación: interpretar peticiones conversacionales largas en coreano o inglés y ejecutar la secuencia completa de acciones en el navegador del usuario mediante la extensión de Chrome.
 
 ## Benchmarks y rendimiento
 
-La model card reporta una evaluación sobre 612 tareas en sitios web en vivo (300 en inglés, 312 en coreano), con el mismo juez LLM para todos los modelos. La métrica es tasa de éxito (%) sobre el total de tareas.
+El autor reporta una evaluación sobre 612 tareas de sitios web en vivo (300 en inglés, 312 en coreano), cada una con su propio prompt y formato de acción, puntuadas por el mismo juez LLM. La tasa de éxito usa como denominador el total de tareas, por lo que las ejecuciones caídas o vacías cuentan como fallos.
 
-| Modelo | Tamano | Online-Mind2Web EN | Online-Mind2Web KO |
+| Modelo | Tamaño | Online-Mind2Web EN | Online-Mind2Web KO |
 |---|---:|---:|---:|
 | Qwen3.5-4B (base, sin fine-tuning) | 4B | 20,0 | 13,5 |
 | Fara-1.5-4B | 4B | 20,7 | 7,7 |
 | UI-TARS-1.5-7B | 7B | 22,3 | 20,2 |
 | OpenWebRL-4B | 4B | 32,7 | 15,4 |
-| KORMo-Web-4B | 4B | 42,3 | 42,3 |
-| KORMo-Web-9B | 9B | 51,0 | 48,1 |
+| **KORMo-Web-4B (ours)** | **4B** | **42,3** | **42,3** |
+| KORMo-Web-9B (ours) | 9B | 51,0 | 48,1 |
 
-Según la model card, KORMo-Web-4B supera al base Qwen3.5-4B en +22,3 puntos en inglés y +28,8 puntos en coreano, y supera a los agentes web open-weight comparados en +9,6 puntos en inglés y +22,1 puntos en coreano. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K) en la información disponible.
+Según el autor, KORMo-Web-4B supera a todos los agentes web open-weight comparados por +9,6 puntos en inglés y +22,1 puntos en coreano, y mejora al Qwen3.5-4B base en +22,3 / +28,8 puntos en Online-Mind2Web. No se han publicado en la información disponible resultados de benchmarks generales como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 5,17 mil millones de parámetros en safetensors y pesos en BF16/FP16, la estimación orientativa ronda los 10-11 GB solo para pesos, más overhead de KV cache y del codificador visual. El repositorio ocupa 10,4 GB.
-- GPU recomendadas: el autor indica que el modelo corre en una única GPU (TP=1); se ha probado con vLLM 0.23.0 y transformers 5.12.1. No se especifican modelos concretos de GPU.
-- GPU de consumo: no confirmado por el autor; por tamaño de pesos, es plausible en GPUs de consumo con 16 GB o más de VRAM en precisión reducida, pero no hay validación publicada en la información disponible.
-- Opciones de despliegue: vLLM (`vllm serve`), transformers; el autor incluye un arnés de referencia con Playwright y cliente compatible con la API de OpenAI. No se mencionan llama.cpp, Ollama ni TGI.
+- Pesos en bf16: 9,6 GB; memoria en uso aproximada de 9,5 GB.
+- Variante MLX 4-bit: 2,8 GB de pesos y unos 3,8 GB en uso.
+- Mac con Apple silicon: la variante 4-bit requiere 16 GB de memoria o más; la bf16 requiere 24 GB o más; el modelo de 9B en bf16 requiere 48 GB o más (32 GB es ajustado).
+- La caché KV añade aproximadamente 1 GB por cada 30.000 tokens en episodios largos, además de la memoria que consume Chrome.
+- Despliegue en Mac mediante `vllm-mlx` 0.6.0 o superior; en GPU NVIDIA el autor indica que el modelo se sirve en una GPU NVIDIA, sin detallar modelos concretos.
+- Opciones de despliegue documentadas: `vllm-mlx` para Apple silicon y servidor compatible con endpoints; no se detallan vLLM, llama.cpp, Ollama o TGI para este modelo en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Online-Mind2Web EN | Online-Mind2Web KO | Licencia | Disponibilidad |
-|---|---:|---|---:|---:|---|---|
-| KORMo-Web-4B | 5,17B (etiquetado 4B) | 131.072 (config. recomendada) | 42,3 | 42,3 | Apache-2.0 | Hugging Face |
-| OpenWebRL-4B | 4B | no disponible | 32,7 | 15,4 | no disponible | no disponible |
-| Fara-1.5-4B | 4B | no disponible | 20,7 | 7,7 | no disponible | no disponible |
-| UI-TARS-1.5-7B | 7B | no disponible | 22,3 | 20,2 | no disponible | no disponible |
-| Qwen3.5-4B (base) | 4B | no disponible | 20,0 | 13,5 | no disponible | Hugging Face |
+| Modelo | Tamaño | Online-Mind2Web EN | Online-Mind2Web KO | Licencia | Disponibilidad |
+|---|---:|---:|---:|---|---|
+| KORMo-Web-4B | 4B | 42,3 | 42,3 | Apache-2.0 | Pesos abiertos en Hugging Face |
+| OpenWebRL-4B | 4B | 32,7 | 15,4 | no disponible | no disponible |
+| UI-TARS-1.5-7B | 7B | 22,3 | 20,2 | no disponible | no disponible |
+| Fara-1.5-4B | 4B | 20,7 | 7,7 | no disponible | no disponible |
 
-La comparativa se limita a los datos de la evaluación publicada por el autor; no se dispone de información sobre contexto, licencia o disponibilidad de los modelos alternativos en la documentación proporcionada.
+KORMo-Web-4B iguala o supera a alternativas de tamaño similar y a UI-TARS-1.5-7B, que tiene casi el doble de parámetros, en la evaluación de sitios en vivo reportada por el autor. La comparación se limita a la métrica Online-Mind2Web; no se dispone de datos de otros benchmarks ni de detalles de licencia y disponibilidad de los modelos comparados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declaran coreano e inglés; el rendimiento en castellano u otros idiomas no está evaluado.
-- Dependencia de la captura de pantalla: al no usar DOM ni árbol de accesibilidad, la precisión depende de la calidad y resolución de la imagen y de que la interfaz sea visualmente interpretable.
-- Riesgo de alucinación: como modelo generativo, puede proponer acciones incorrectas o interpretar mal el estado de la página; el autor mitiga esto con verificación sobre la siguiente captura, pero no elimina el riesgo.
-- Sesgos: no se documentan sesgos conocidos en la información disponible.
-- Licencia: Apache-2.0 permite uso comercial, pero se debe verificar el cumplimiento de las licencias del modelo base Qwen3.5-4B y de los datos de entrenamiento, no detallados.
-- Producción: no se publican latencias, throughput ni resultados de robustez ante cambios de diseño web; la evaluación se realizó sobre sitios en vivo en un momento concreto y puede no generalizar.
-- Configuración sensible: el rendimiento depende de ajustes concretos (temperatura 0.6, top_p 0.95, top_k 20, max_tokens 16384, `enable_thinking`); desviarse de ellos puede degradar la calidad.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación independiente de la comunidad.
+- Idiomas limitados a coreano e inglés; no se declara soporte para castellano ni otros idiomas.
+- Dependencia de capturas de pantalla: el rendimiento puede degradarse en interfaces con baja resolución, texto muy pequeño o elementos visuales ambiguos.
+- Riesgo de alucinación en la interpretación de la pantalla y en la planificación de acciones, con posibilidad de clics erróneos o secuencias incompletas.
+- Los resultados de benchmarks provienen del propio autor y de una única evaluación (Online-Mind2Web con 612 tareas y juez LLM), por lo que no han sido verificados de forma independiente en la información disponible.
+- Longitud de contexto no especificada; los episodios largos incrementan la caché KV (aproximadamente 1 GB por 30.000 tokens) y pueden agotar la memoria en equipos ajustados.
+- La licencia Apache-2.0 permite uso comercial, pero el autor no detalla restricciones adicionales sobre los datos de entrenamiento publicados.
+- El despliegue en producción requiere un harness de navegador y gestión de sesiones de Chrome; no se documentan límites de concurrencia ni comportamiento bajo carga.
+- No se detallan sesgos conocidos del modelo en la información disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/KORMo-VL/KORMo-Web-4B
+- Modelo en Hugging Face: https://huggingface.co/KORMo-VL/KORMo-Web-4B
+- Extensión de Chrome: https://github.com/MLP-Lab/KORMo-Web-Extension
+- Vídeo de demostración: https://huggingface.co/KORMo-VL/KORMo-Web-4B/resolve/main/assets/gui_final_demo_masked.mp4
+- Guía de instalación en vídeo: https://huggingface.co/KORMo-VL/KORMo-Web-4B/resolve/main/assets/setup_guide.mp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- No se han encontrado en la información disponible papers, blogs, repositorios o demos adicionales fuera de la model card de Hugging Face.

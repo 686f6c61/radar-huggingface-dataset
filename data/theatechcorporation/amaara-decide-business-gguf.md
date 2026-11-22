@@ -2,99 +2,117 @@
 
 ## Resumen
 
-amaara-decide-business-GGUF es la distribucion cuantizada en formato GGUF de amaara-decide-business, un modelo de decision de 0,8 mil millones de parametros desarrollado por The A-Tech Corporation PTY LTD (Queensland, Australia). A diferencia de un modelo generativo convencional, este sistema no produce prosa: recibe un estado en JSON y un conjunto de opciones, y devuelve una eleccion con una probabilidad calibrada para cada opcion. El modelo base es unsloth/Qwen3.5-0.8B, afinado con Unsloth y con nucleos de decision propios (CLEF) que incorporan temperaturas por cubeta directamente en los pesos.
+Amaara Decide — Business (v5) es un modelo de decisión especializado, no un modelo conversacional. Dado un estado de negocio y un conjunto de preguntas con nombre, devuelve una distribución de probabilidad puntuada sobre las opciones de cada pregunta, sin generar prosa. Lo desarrolla The A Tech Corporation y se distribuye en formato GGUF para su uso con llama.cpp. Su relevancia radica en que aborda una tarea acotada (clasificación estructurada de decisiones empresariales) con un modelo de tan solo 0,8B parámetros, compitiendo en precisión y calibración con modelos generales mucho mayores.
 
-Su relevancia radica en el enfoque: sustituye la generacion de texto por clasificacion calibrada en cuatro familias de flujos de trabajo empresariales concretas (customer_service, security_incidents, invoice_processing y agent_trace_observability). Las temperaturas de calibracion estan integradas en el GGUF como metadatos `clef.decision.temperature.*`, de modo que las probabilidades pueden usarse directamente como umbrales sin post-procesado adicional.
+Técnicamente es un Qwen3.5 de 0,8B (779.717.956 parámetros) afinado contra las distribuciones de etiquetas suaves del conjunto `typed-decisions` en lugar de contra etiquetas argmax. Cubre diez tipos de pregunta (action, disposition, urgency, risk, outcome, needs_review, true_positive, duplicate, matches_order, category) y está pensado para integrarse en pipelines de decisión automatizada donde se necesita una salida probabilística calibrada, no texto libre.
 
-El modelo esta pensado para ejecutarse en CPU: con Q8_0 y 8 hilos ronda los 0,1 segundos por consulta, y la variante Q4_K_M ocupa solo 0,55 GB. La generacion de texto devuelve HTTP 501 por diseno, lo que lo convierte en un componente de decision acotado y predecible dentro de pipelines, no en un asistente conversacional.
+El modelo es relevante ahora porque demuestra que un especialista pequeño, desplegable en hardware modesto, puede superar en su distribución de entrenamiento a modelos de decisión en la nube de 9B y 27B en precisión, ECE y Brier, con latencias de decenas de milisegundos. La model card es inusualmente transparente sobre sus límites, incluido el hecho de que la ventaja es específica de la distribución de `typed-decisions` y no necesariamente generalizable.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base Qwen3.5-0.8B) con cabeza de decision CLEF |
+| Arquitectura | Transformer (derivado de Qwen3.5), afinado como modelo de decisión |
 | Parametros totales | 779.717.956 (0,8B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (requiere `-ub 2048` o superior en llama.cpp) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors y FP8 en el repositorio principal) |
+| Idiomas soportados | en (inglés) |
+| Licencia | a-tech-license (other) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/Qwen3.5-0.8B, un transformer de 0,8B parametros bajo licencia Apache-2.0, y se afina con Unsloth (que el autor declara como 2x mas rapido) junto con nucleos Triton personalizados para la ruta de decision CLEF. La innovacion principal no esta en el backbone, sino en la cabeza de decision: en lugar de generar tokens de respuesta, el modelo evalua el estado y el esquema de opciones en un unico lote y emite una puntuacion por opcion. Las temperaturas de calibracion por cubeta se hornean en el GGUF como claves `clef.decision.temperature.*`, de forma que las probabilidades resultantes son directamente utilizables como umbrales.
+El modelo parte de una base Qwen3.5 de 0,8B parámetros y se afina como clasificador de decisiones estructuradas. La innovación principal es que el entrenamiento se realiza contra las distribuciones de etiquetas suaves del conjunto `typed-decisions` en lugar de contra etiquetas argmax, lo que permite al modelo aprender la incertidumbre y el desacuerdo entre anotadores en lugar de colapsar a una única respuesta. Esto explica que se evalúe con métricas probabilísticas (ECE, Brier) además de la precisión de coincidencia.
 
-El entrenamiento se limita a cuatro familias de flujos de trabajo (customer_service, security_incidents, invoice_processing y agent_trace_observability). El autor documenta que una iteracion previa, entrenada sobre flujos no relacionados, obtuvo entre 0,44 y 0,63 en estas cuatro familias y perdio frente a una linea base constante de "respuesta mas frecuente" en la mitad de los casos, lo que motivo reentrenar especificamente sobre estos dominios. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO.
+No se proporcionan datos sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO. La model card sí documenta el alcance de las diez preguntas cubiertas y el techo humano de cada una, así como un historial de correcciones en la evaluación que refleja un proceso de medición iterativo y transparente. No se mencionan innovaciones de inferencia como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Clasificacion de decision con probabilidad calibrada por opcion sobre un estado JSON y un esquema de opciones.
-- Tipos de pregunta soportados: `choice` (eleccion entre criterios), `score` (puntuacion ordinal sobre una lista de criterios) y `noul` (booleano con etiquetas).
-- Cuatro familias de flujo de trabajo: atencion al cliente, incidentes de seguridad, procesamiento de facturas y observabilidad de trazas de agentes.
-- Calibracion integrada: las temperaturas por cubeta permiten usar las probabilidades como umbrales sin recalibrado.
-- Ejecucion en CPU via llama.cpp, con servidor compatible con endpoint `/v1/systemone`.
-- No soporta generacion de texto (devuelve HTTP 501 por diseno).
-- No soporta vision (no requiere proyector visual; solo lee estados de texto).
-- No soporta tool calling ni razonamiento multi-paso en el sentido de un LLM generativo; su funcion es puntuar opciones.
-- Multilingue: no, unicamente ingles.
+- Clasificación de decisiones estructuradas: devuelve una distribución de probabilidad sobre las opciones de cada pregunta de negocio, no texto libre.
+- Puntuación calibrada: genera probabilidades con ECE y Brier medidos, adecuadas para umbrales de confianza.
+- Diez tipos de pregunta: action, disposition, urgency, risk, outcome, needs_review, true_positive, duplicate, matches_order y category.
+- Salida probabilística por opción, útil para agregación y análisis de incertidumbre.
+- No soporta tool calling ni function calling según la información disponible.
+- No soporta agentes ni razonamiento multi-paso; es un clasificador de una sola pasada.
+- Capacidades multilingües: solo inglés.
+- No tiene modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Triage de tickets de atencion al cliente: dado un estado JSON con los datos del ticket, el modelo elige entre las opciones disponibles (por ejemplo, escalar, responder o cerrar) con una probabilidad calibrada que puede mapearse directamente a umbrales de enrutamiento.
-- Clasificacion de incidentes de seguridad: a partir de un estado con los indicadores del incidente, el modelo puntua la severidad y la accion recomendada, con una precision declarada de 0,770 en el split de test.
-- Procesamiento de facturas: evalua si una factura debe pagarse, revisarse manualmente o rechazarse, y detecta duplicados mediante preguntas de tipo `noul`; util en pipelines de cuentas a pagar con validacion por umbral.
-- Observabilidad de trazas de agentes: clasifica trazas de ejecucion de agentes para decidir si requieren intervencion, con una precision de 0,767 y un ECE de 0,052.
-- Enrutamiento determinista en pipelines de automatizacion: al no generar texto y devolver siempre una opcion puntuada, encaja como componente de decision acotado en flujos donde la salida libre es indeseable.
-- Despliegue en entornos con recursos limitados: con Q4_K_M (0,55 GB) y ejecucion en CPU a ~0,1 s por consulta en Q8_0 con 8 hilos, puede correr en servidores sin GPU o en el borde.
-- Validacion de umbrales en produccion: las probabilidades calibradas permiten fijar politicas de negocio (por ejemplo, "revisar manualmente si P(duplicado) > 0,7") sin necesidad de recalibrar el modelo.
+- Triaje de incidencias en soporte: dado un ticket con su estado, el modelo puntúa `urgency`, `category` y `needs_review`, permitiendo enrutar automáticamente según umbrales de probabilidad calibrados.
+- Detección de duplicados en sistemas de gestión: usa la pregunta `duplicate` para puntuar si un registro entrante es duplicado de uno existente, con probabilidad explícita para revisión humana en casos límite.
+- Priorización de riesgo en operaciones: la pregunta `risk` devuelve una distribución que permite ordenar colas de trabajo por riesgo esperado en lugar de por reglas fijas.
+- Clasificación de resultados de negocio: la pregunta `outcome` permite etiquetar resultados con una distribución calibrada, útil para análisis agregado y modelado posterior.
+- Validación de coincidencias en conciliación: `matches_order` puntúa si dos registros corresponden al mismo pedido, reduciendo falsos positivos en pipelines financieros.
+- Marcado de verdaderos positivos en alertas: `true_positive` permite filtrar alertas de fraude o seguridad con una probabilidad calibrada antes de escalar a analistas.
+- Decisión de disposición final: `disposition` y `action` ofrecen distribuciones sobre las acciones a tomar, apropiadas para sistemas de recomendación de decisión con intervención humana.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el split de test del benchmark, sin solapamiento de estados entre train y test. La columna "other-workflow swap" evalua cada pregunta contra un estado de otro flujo de trabajo; un delta alto indica que el modelo lee el estado y no solo el vocabulario.
+Resultados en el split de retención del conjunto `typed-decisions` (400 filas / 2.000 decisiones):
 
-| Flujo de trabajo | Precision | Other-workflow swap | Delta | Supera linea base constante | ECE |
+| Modelo | Precisión | ECE | Brier | Latencia p50 |
+|---|---|---|---|---|
+| Amaara Decide v5-Q4_K_M (0,8B) | 0,775 | 0,096 | 0,029 | 64 ms |
+| clef-flash (9,1B) | 0,699 | 0,135 | 0,034 | 276 ms |
+| clef:27b-cloud (27,4B) | 0,713 | 0,122 | 0,034 | 530 ms |
+
+Por tipo de pregunta:
+
+| Tipo | n | v5 (0,8B) | clef-flash 9,1B | clef 27B |
+|---|---|---|---|---|
+| choice | 600 | 0,745 | 0,707 | 0,643 |
+| noul | 600 | 0,845 | 0,818 | 0,845 |
+| score | 800 | 0,745 | 0,604 | 0,666 |
+
+Frente al campo público System One (OpenRouter Decisions API):
+
+| Modelo | Acc | ECE | Brier | p50 | McNemar vs v5 |
 |---|---|---|---|---|---|
-| customer_service | 0,830 | 0,413 | +0,417 | +0,240 | 0,048 |
-| agent_trace_observability | 0,767 | 0,367 | +0,400 | +0,260 | 0,052 |
-| security_incidents | 0,770 | 0,383 | +0,387 | +0,165 | 0,055 |
-| invoice_processing | 0,833 | 0,479 | +0,354 | +0,213 | 0,099 |
+| Amaara Decide v5 (0,8B) | 0,775 | 0,096 | 0,029 | 147 ms | — |
+| typesafe/jev-1.14 | 0,750 | 0,089 | 0,032 | 463 ms | p = 0,026 |
+| liquid/d1.2 | 0,728 | 0,150 | 0,016 | 612 ms | p < 0,0001 |
+| cloudflare/clef-flash | 0,707 | 0,135 | 0,033 | 535 ms | p < 0,0001 |
+| inception/mercury-decide | no servido (HTTP 404) | | | | |
 
-El autor senala que la calibracion de invoice_processing no alcanza un ECE de 0,05 y que el escalado por temperatura no lo corrige. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+La model card advierte explícitamente de que v5 se entrenó en la familia `typed-decisions` y se mide en un split de retención de la misma, mientras que los modelos en la nube no se entrenaron en este benchmark. La conclusión válida es que en esta distribución un especialista de 0,8B supera a modelos generales de decisión, no que sea mejor en decisiones en general. Jev sigue mejor calibrado (ECE 0,089 frente a 0,096) y Liquid d1.2 tiene mejor Brier (0,016 frente a 0,029). La cuantización Q4_K_M no muestra coste medible frente a Q8_0.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no requiere GPU; el modelo esta disenado para CPU. En GPU, el peso en memoria va de 0,55 GB (Q4_K_M) a 1,57 GB (F16), mas el overhead del contexto.
-- GPU recomendadas: cualquiera con al menos 2 GB de VRAM para F16; no obstante, el caso de uso previsto es CPU.
-- Cabe en GPU consumer: si, en cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.), aunque el rendimiento en CPU ya es suficiente.
-- Opciones de despliegue: llama.cpp (`llama-server`), con soporte de endpoint `/v1/systemone`; el autor no menciona vLLM, TGI ni Ollama.
-- Latencia y throughput estimados: aproximadamente 0,1 s por consulta en Q8_0 con 8 hilos en CPU. Requiere `-ub 2048` o superior, ya que la ruta CLEF evalua el prompt completo (estado mas esquema de opciones) en un unico lote.
+- VRAM estimada para inferencia: aproximadamente 1,5 GB en F16, 803 MB en Q8_0, 623 MB en Q6_K, 570 MB en Q5_K_M y 520 MB en Q4_K_M.
+- GPU recomendadas: cualquier GPU consumer moderna; cabe holgadamente en RTX 3060, RTX 4060, RTX 4090 y superiores, así como en Apple Silicon y CPU.
+- Cabe en GPU consumer sin problema; incluso en CPU la latencia es viable para clasificación por lotes.
+- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, llama-cpp-python); no se mencionan vLLM ni TGI.
+- Latencia: 64 ms p50 en Q4_K_M según la model card; 147 ms p50 en la comparativa con la API pública. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparaciones con modelos de decision calibrada equivalentes en la informacion proporcionada. Como referencia del backbone, el modelo base unsloth/Qwen3.5-0.8B es un LLM generativo de 0,8B parametros, mientras que amaara-decide-business es una especializacion de clasificacion sobre ese backbone.
+| Modelo | Parámetros | Contexto | Precisión (benchmark v5) | ECE | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Amaara Decide v5 | 0,8B | no disponible | 0,775 | 0,096 | a-tech-license | GGUF en HF |
+| typesafe/jev-1.14 | no disponible | no disponible | 0,750 | 0,089 | no disponible | API OpenRouter |
+| liquid/d1.2 | no disponible | no disponible | 0,728 | 0,150 | no disponible | API OpenRouter |
+| cloudflare/clef-flash | 9,1B | no disponible | 0,707 | 0,135 | no disponible | API OpenRouter |
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Formato |
-|---|---|---|---|---|---|
-| amaara-decide-business-GGUF | 0,8B | no disponible | Decision calibrada (4 flujos) | Apache-2.0 | GGUF |
-| unsloth/Qwen3.5-0.8B (base) | 0,8B | no disponible | Generacion de texto | Apache-2.0 | safetensors |
-| amaara-decide-vision | no disponible | no disponible | Decision multimodal (hermano) | no disponible | no disponible |
+La comparativa se limita al benchmark propio del autor; no hay datos de contexto ni de licencia de los modelos alternativos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Ambito restringido a cuatro flujos de trabajo; el autor advierte explicitamente de que no debe asumirse transferencia a otras formas de decision empresarial.
-- Evaluacion pequena: 800 filas pero solo 100 estados unicos por flujo, con un unico conjunto de validacion reservado.
-- La calibracion de invoice_processing no alcanza el objetivo (ECE 0,099); es necesario validar los umbrales sobre datos propios.
-- Entrenamiento con una sola semilla y una sola longitud de entrenamiento, sin comparacion con LLM de frontera.
-- Riesgo de alucinacion: no aplica en el sentido generativo, pero el modelo puede asignar alta probabilidad a opciones incorrectas en estados fuera de distribucion; el delta de other-workflow swap (0,354-0,417) sugiere sensibilidad al estado, pero no garantiza robustez fuera de dominio.
-- Solo soporta ingles.
-- Licencia Apache-2.0, permisiva para uso comercial; no obstante, el autor no ofrece garantias sobre el rendimiento fuera de los cuatro flujos documentados.
-- La generacion de texto devuelve HTTP 501 por diseno; no debe integrarse esperando respuestas en prosa.
+- No es un asistente general: no responde preguntas en prosa ni mantiene conversaciones.
+- La ventaja medida es específica de la distribución `typed-decisions`; en un conjunto fuera de distribución la brecha debería estrecharse o invertirse, según advierte el propio autor.
+- El techo de precisión está limitado por el desacuerdo entre anotadores: `action` tiene solo 47,5% de acuerdo humano, por lo que ninguna métrica de exactitud puede acercarse a 1,0.
+- Jev está mejor calibrado (ECE 0,089 frente a 0,096) y Liquid d1.2 tiene mejor Brier (0,016 frente a 0,029).
+- Solo soporta inglés.
+- Licencia `a-tech-license` (other): es necesario revisar los términos del archivo LICENSE antes de uso comercial; no se detallan restricciones en la información disponible.
+- Riesgo de alucinación no aplicable en el sentido conversacional, pero sí de sobreconfianza en las distribuciones si se usa fuera de su dominio.
+- La model card documenta dos correcciones previas en las métricas publicadas; conviene verificar cifras frente a versiones anteriores.
+- No hay información sobre sesgos demográficos o de dominio.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/theatechcorporation/amaara-decide-business-GGUF
-- Repositorio principal (pesos completos, FP8 y cabeza Clef): https://huggingface.co/theatechcorporation/amaara-decide-business
-- Modelo hermano de vision: https://huggingface.co/theatechcorporation/amaara-decide-vision
-- Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
-- Unsloth: https://github.com/unslothai/unsloth
+- Hugging Face: https://huggingface.co/theatechcorporation/amaara-decide-business-GGUF
+- Modelo base: https://huggingface.co/theatechcorporation/amaara-decide-business
+- Licencia: https://huggingface.co/theatechcorporation/amaara-decide-business-GGUF/blob/main/LICENSE
+- Comunidad del autor: https://www.skool.com/open-source-ai-builders-club/about
+- Dataset de referencia: https://huggingface.co/datasets (familia `typed-decisions`, enlace exacto no disponible)

@@ -2,101 +2,108 @@
 
 ## Resumen
 
-Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-MXFP4 es una cuantización Open Compute Project (OCP) en formato Microscaling MXFP4 del modelo base desarrollado por DavidAU, empaquetada y publicada por Solstice-AI. Se trata de un modelo denso de 26.900 millones de parámetros (26,9B) perteneciente a la familia Qwen 3.8, con arquitectura híbrida que combina atención lineal recurrente Gated Delta Network (GDN) en el 75% de las capas y Grouped-Query Attention (GQA) en el 25%. Soporta una ventana de contexto nativa de 262.144 tokens (262K).
+Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-MXFP4 es una cuantización MXFP4 (OCP Microscaling) publicada por Solstice-AI sobre el modelo base de DavidAU, un merge de la familia Qwen 3.8 de 27B orientado a razonamiento, código y uso sin restricciones de alineación. El checkpoint empaqueta los pesos en formato microscaling de 4 bits con escalas de 8 bits por bloque, lo que reduce el peso del repositorio a 19,9 GB para 26.896 millones de parámetros reales, manteniendo un contexto nativo declarado de 262.144 tokens y cabezas de decodificación especulativa (MTP).
 
-Según la model card del autor, el modelo alcanza resultados destacados en benchmarks de razonamiento, programación y control agéntico, superando a Claude Opus 4.6 Max en 9 de 9 pruebas bajo el harness oficial de Claude Code. Incluye soporte de Multi-Token Prediction (MTP) para acelerar la decodificación y ofrece visión multimodal espaciotemporal 3D mediante el fichero mmproj-BF16.gguf.
+El interés técnico está en dos frentes: por un lado, la arquitectura híbrida de atención lineal (mayoría de capas GDN con complejidad O(1) de memoria) combinada con GQA global, que hace viable el contexto largo sin el coste cuadrático habitual; por otro, el formato MXFP4 con soporte declarado en vLLM y en el runtime propietario Anvil, lo que lo sitúa como banco de pruebas para despliegue de modelos de ~27B en hardware de gama alta con memoria limitada.
 
-El valor principal de esta versión reside en su optimización para producción: el formato MXFP4 con escalado microscópico reduce la representación de los pesos a 4 bits con bloques de escala de 8 bits, lo que se traduce en un tamaño de repositorio de 19,1 GB y permite el despliegue eficiente en motores como vLLM o Anvil, compatible con hardware AMD ROCm, Intel Gaudi y GPUs con Tensor Cores.
+Conviene tratarlo con cautela: la model card afirma una superioridad empírica sobre Claude Opus 4.6 Max en 9 de 9 benchmarks, pero no se aportan artefactos reproducibles ni detalles del arnés de evaluación, y parte de las cifras (ARC-C 735, ARC-E 882) no son porcentajes estándar. La ficha recoge esos datos como declaraciones del autor, no como resultados verificados.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida Qwen 3.8: 75% capas de atención lineal Gated Delta Recurrent Network (GDN) y 25% capas Grouped-Query Attention (GQA) |
-| Parámetros totales | 26.895.998.464 (26,9 mil millones) |
-| Parámetros activos | No aplica (no es un modelo de mezcla de expertos) |
-| Longitud de contexto | 262.144 tokens (262K nativo) |
-| Tipos de cuantización | OCP Microscaling MXFP4 (formato principal); existen variantes NVFP4 y MLX oQ4e en repositorios separados |
-| Idiomas soportados | Inglés (en), chino (zh) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, GGUF (con mmproj-BF16.gguf para visión) y formato OCP MXFP4 para Anvil/vLLM |
+| Arquitectura | Transformer híbrido: 75% capas de atención lineal GDN (Gated Delta Recurrent Network) + 25% GQA global; cabezas MTP de decodificación especulativa |
+| Parámetros totales | 26.895.998.464 (~26,9B) |
+| Parámetros activos | no disponible (no se declara MoE) |
+| Longitud de contexto | 262.144 tokens (262K) declarados como nativos |
+| Tipos de cuantización | MXFP4 (OCP Microscaling, bloques de escala de 8 bits sobre valores FP4); el repo incluye también artefactos GGUF y safetensors en 8 bits (compressed-tensors) |
+| Idiomas soportados | en, zh |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, GGUF (incluye `mmproj-BF16.gguf` para visión), compressed-tensors 8-bit |
 
 ## Arquitectura y entrenamiento
 
-El modelo combina dos mecanismos de atención complementarios. El 75% de las capas utiliza atención lineal Gated Delta Recurrent Network (GDN), que presenta complejidad de memoria O(1) y es eficiente en contextos largos, mientras que el 25% restante emplea Grouped-Query Attention global, lo que permite preservar capacidad de razonamiento complejo. Esta configuración se describe como "Cold Fusion" porque el proceso de entrenamiento no parte de cero: DavidAU aplicó un merge de pesos denominado GAIN (Guided Activation Interleaved Normalization) que fusiona pesos de modelos con razonamiento puntero sin degradación.
+El modelo base es un merge de pesos de la familia Qwen 3.8 (tag `qwen3_5` en Hugging Face) de ~27B, con una arquitectura híbrida en la que la mayor parte de las capas emplea atención lineal GDN de complejidad de memoria constante y una minoría usa atención global con GQA. Esa combinación es la que sostiene el contexto de 262K sin un coste de KV cache proporcional a la longitud de secuencia. Sobre esa base, DavidAU aplica un merge tipo GAIN (Guided Activation Interleaved Normalization) para combinar pesos de distintos checkpoints, y una fase de "abliteration" (Project Heretic) orientada a eliminar los vectores de rechazo del alignment original.
 
-A nivel de alineación, el proyecto "Heretic" aplica una técnica de abliteración de vectores de rechazo, eliminando las restricciones de seguridad corporativas típicas de los modelos generalistas. El modelo fue diseñado explícitamente para "seguridad de misión crítica y desarrollo de sistemas" sin los filtros habituales, según el autor. No se especifica el número total de tokens de entrenamiento, ni si se aplicó RLHF o DPO, en la información disponible. A nivel de innovación técnica, destaca la integración de cabezas especulativas duales para Multi-Token Prediction (MTP), que permite generar dos tokens por forward pass con una aceleración declarada de 1.72x a 2.20x respecto a la decodificación autoregresiva estándar.
+Solstice-AI no entrena el modelo: solo cuantiza y empaqueta. La contribución propia es la conversión a MXFP4 con el estándar de microscaling de OCP, que aplica una escala de 8 bits por bloque de valores FP4 para preservar rango dinámico, más el empaquetado de las cabezas MTP y del proyector multimodal BF16. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO en el modelo original. Las cifras de speedup declaradas para MTP son de 1,72x a 2,20x, sin metodología de medición publicada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de alto nivel: según el autor, ARC-C (Challenge) 735 en 8-bit / 719 en 4-bit y ARC-E (Easy) 882, en "tier frontera cerrado".
-- Programación agéntica: SWE-bench Pro 61.7%, lo que indica capacidad para resolver issues de software de forma autónoma.
-- Depuración de repositorios completos: QwenSWEBench 79.0%.
-- Automatización de sistemas operativos y dispositivos móviles: OSWorld-Verified 84.3% y AndroidWorld 81.9%.
-- Seguimiento de restricciones complejas: IFBench 79.5%.
-- Codificación en tiempo real: LiveCodeBench v6 con 90.3%.
-- Visión multimodal espaciotemporal 3D: mediante el fichero mmproj-BF16.gguf, permite interpretar esquemas arquitectónicos, capturas de interfaz de código y fotogramas de vídeo.
-- Contexto largo nativo de 262.144 tokens, apto para procesar codebases completas, logs extensos y documentación técnica.
-- Soporte de tool calling y agentes: el modelo card no lo documenta explícitamente, pero el rendimiento en benchmarks agénticos (SWE-bench, OSWorld, AndroidWorld) y la evaluación bajo el harness de Claude Code indican compatibilidad con llamadas a herramientas y razonamiento multi-paso.
-- Decodificación acelerada mediante Multi-Token Prediction (MTP) con cabezas especulativas duales.
+- Generación de texto y razonamiento multi-paso, con modo de cadena de pensamiento (CoT) declarado en los tags del modelo.
+- Generación y depuración de código, con orientación explícita a tareas de ingeniería de software agéntica (SWE-bench, SWE-bench Pro, LiveCodeBench en la model card).
+- Control de sistemas operativos y automatización de interfaces (OSWorld, AndroidWorld según el autor).
+- Seguimiento de restricciones complejas en instrucciones (IFBench) y flujos de trabajo multi-fichero de largo horizonte (CoWorkBench).
+- Tool calling y function calling: implícito en el perfil agéntico declarado, aunque la model card no documenta el esquema de herramientas.
+- Multimodalidad visión-texto: pipeline `image-text-to-text`, con proyector `mmproj-BF16.gguf` para esquemas, capturas de interfaz y fotogramas de vídeo.
+- Decodificación especulativa mediante cabezas MTP integradas (dos tokens por pasada hacia delante según el autor).
+- Multilingüe limitado a inglés y chino.
+- Modo "uncensored": se eliminan los mecanismos de rechazo, sin filtros de contenido en la generación.
 
 ## Casos de uso
 
-- Agente de desarrollo de software de extremo a extremo: con SWE-bench Pro 61.7%, el modelo puede integrarse como agente autónomo en pipelines de CI/CD para resolver issues, editar código, ejecutar pruebas y abrir pull requests.
-- Depuración a escala de repositorio: gracias a QwenSWEBench 79.0% y a los 262K tokens de contexto, es capaz de diagnosticar fallos en proyectos con múltiples ficheros, analizando el historial completo y las dependencias en una sola pasada.
-- Automatización de sistemas operativos: OSWorld-Verified 84.3% indica que puede controlar equipos de escritorio (ventanas, terminales, sistemas de ficheros) mediante acciones de GUI, útil para laboratorios de pruebas automatizadas y entornos de QA.
-- Autonomía en dispositivos móviles: AndroidWorld 81.9% lo hace apto para automatizar tareas en Android, probar aplicaciones de extremo a extremo y gestionar workflows móviles complejos.
-- Asistente de programación en tiempo real: LiveCodeBench v6 con 90.3% sugiere un buen comportamiento en entornos interactivos, como IDEs, notebooks o herramientas de pair programming, donde la latencia baja es importante gracias al MTP.
-- Análisis de documentación técnica larga: la ventana de 262K tokens permite procesar especificaciones, requisitos, logs de producción y bases de código completas para generar resúmenes ejecutivos, planes de acción o auditorías de seguridad.
-- Entendimiento multimodal de ingeniería: el mmproj-BF16.gguf posibilita que el modelo interprete capturas de interfaces de código, diagramas arquitectónicos y fotogramas de vídeo, facilitando la revisión visual de aplicaciones y la documentación de entornos de despliegue.
+- Automatización de ingeniería de software en CI/CD: el modelo está orientado a parcheo de repositorios y depuración multi-fichero; con 262K de contexto puede ingerir árboles de proyecto completos y mantener el estado entre pasos de un agente de código.
+- Agentes de control de escritorio y móvil: los resultados declarados en OSWorld y AndroidWorld apuntan a automatización de tareas de interfaz; útil para RPA avanzado donde los selectores clásicos fallan.
+- Análisis de documentación técnica extensa: con contexto de 262K y atención lineal mayoritaria, es adecuado para resumir y consultar manuales, normativas o bases de código de gran tamaño sin troceado agresivo.
+- Asistencia en investigación científica: el perfil ARC-C/ARC-E declarado sugiere razonamiento abstracto; aplicable a generación de hipótesis y resolución de problemas de nivel universitario, siempre con verificación humana.
+- Procesamiento de esquemas e interfaces visuales: el proyector multimodal permite extraer estructura de diagramas de arquitectura, wireframes o capturas de UI para generar código o documentación.
+- Despliegue en hardware con memoria ajustada: al ser MXFP4 con 19,9 GB de pesos, permite servir un modelo de ~27B en una sola GPU de 24 GB o en configuraciones multi-GPU modestas, algo inviable en BF16.
+- Evaluación de seguridad ofensiva y análisis de malware: la eliminación de rechazos permite trabajar con contenido que los modelos alineados bloquean; requiere entorno aislado y control de acceso.
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados son los publicados por el autor en la model card y no han sido verificados de forma independiente. La evaluación se realizó bajo el harness oficial de Claude Code, con límites de contexto de 256k tokens, temperature=1.0 y top_p=0.95.
+Datos declarados por el autor en la model card. No se han verificado de forma independiente y no se detalla la metodología completa del arnés de evaluación.
 
-| Benchmark | Área evaluada | Qwen3.8-27B TURBO (MXFP4) | Claude Opus 4.6 Max | Margen |
-|---|---|---|---|---|
-| SWE-bench Pro | Ingeniería de software agéntica | 61.7% | 53.4% | +8.3% |
-| LiveCodeBench v6 | Resolución de problemas en tiempo real | 90.3% | 88.8% | +1.5% |
-| QwenSWEBench | Depuración de repositorios completos | 79.0% | 63.8% | +15.2% |
-| OSWorld-Verified | Control de sistema operativo | 84.3% | 72.7% | +11.6% |
-| AndroidWorld | Autonomía en SO móvil | 81.9% | 62.0% | +19.9% |
-| IFBench | Seguimiento de restricciones complejas | 79.5% | 62.5% | +17.0% |
-| CoWorkBench | Flujos de trabajo multiarchivo de largo horizonte | 70.7% | 68.2% | +2.5% |
-| ARC-C (Challenge) | Abstracción científica frontera | 735 (8-bit) / 719 (4-bit) | ~710-720 | Tier frontera cerrado |
-| ARC-E (Easy) | Razonamiento de sentido común | 882 | ~870 | Supera frontera cerrada |
+| Suite | Qwen3.8-27B TURBO (declarado) | Claude Opus 4.6 Max (declarado) | Margen |
+|---|---|---|---|
+| SWE-bench Pro | 61,7% | 53,4% | +8,3 |
+| LiveCodeBench v6 | 90,3% | 88,8% | +1,5 |
+| QwenSWEBench | 79,0% | 63,8% | +15,2 |
+| OSWorld-Verified | 84,3% | 72,7% | +11,6 |
+| AndroidWorld | 81,9% | 62,0% | +19,9 |
+| IFBench | 79,5% | 62,5% | +17,0 |
+| CoWorkBench | 70,7% | 68,2% | +2,5 |
+| ARC-C | 735 (8-bit) / 719 (4-bit) | ~710–720 | no comparable directamente |
+| ARC-E | 882 | ~870 | no comparable directamente |
+
+Las cifras de ARC-C y ARC-E no son porcentajes: probablemente corresponden a recuentos de aciertos sobre un conjunto de tamaño no especificado, por lo que la comparación con Opus 4.6 no es directa. No se publican resultados de MMLU, GSM8K, HumanEval ni evaluaciones independientes del efecto de la cuantización MXFP4 sobre la calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos en MXFP4 ocupan aproximadamente 13.5 GB (26.9B parámetros × 0.5 bytes por parámetro), más activaciones y KV cache. Para uso con contexto moderado se estima un mínimo de 18-24 GB de VRAM.
-- Contexto largo: para aprovechar los 262K tokens, el KV cache de las capas GQA (25% del modelo) se convierte en el cuello de botella. Se recomiendan GPUs con 80 GB de VRAM, como A100 o H100.
-- GPUs de consumidor: una RTX 4090 (24 GB) puede ejecutarlo con cuantización y contexto reducido. Tarjetas de 16 GB (RTX 4080, 4070 Ti) permiten cargas ligeras con contexto limitado o cuantizaciones más agresivas.
-- Opciones de despliegue: vLLM, motor Anvil (con TurboQuant y compresión de KV cache), llama.cpp para formato GGUF y MLX para Apple Silicon (mediante la variante mlx-oQ4e).
-- Latencia y throughput: el modelo integra MTP, con una aceleración declarada de 1.72x a 2.20x frente a decodificación autoregresiva convencional. No se proporcionan cifras absolutas de latencia en la información disponible.
+- VRAM para inferencia: ~20 GB en MXFP4 para los pesos; añadir KV cache. Con atención lineal mayoritaria, el crecimiento de KV cache con el contexto es menor que en un transformer denso equivalente, pero a 262K tokens sigue siendo significativo.
+- GPU recomendadas: A100 40/80 GB, H100, L40S, y GPUs de 24 GB (RTX 4090, RTX 3090) para contextos moderados. El autor declara compatibilidad con AMD ROCm e Intel Gaudi.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 de 24 GB a cuantización MXFP4 y contextos cortos o medios; en 16 GB no hay margen para pesos más KV cache.
+- Despliegue: vLLM (soporte MXFP4 declarado), runtime Anvil de Solstice Labs con compresión de KV cache TurboQuant, y artefactos GGUF para llama.cpp/Ollama.
+- Latencia y throughput: no disponibles de forma verificable. El autor declara speedup de 1,72x–2,20x por las cabezas MTP, sin condiciones de medición.
 
 ## Comparativa con modelos similares
 
-Se comparan las dos variantes publicadas por Solstice-AI y el modelo base original de DavidAU. No se dispone de datos públicos de otros modelos abiertos comparables en la información proporcionada.
-
-| Modelo | Contexto | Formato | Licencia | Parámetros | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Solstice-AI MXFP4 (este modelo) | 262K nativo | OCP MXFP4 | Apache-2.0 | 26.9B | Cuantización principal para vLLM y Anvil |
-| Solstice-AI NVFP4-1M | 1M (según la nomenclatura del repositorio) | NVFP4 | Apache-2.0 | 26.9B | Variante con contexto ampliado, optimizada para GPUs NVIDIA |
-| DavidAU base (sin cuantizar) | No disponible | No disponible | Apache-2.0 | 26.9B | Modelo original sobre el que se aplican las cuantizaciones |
+| Este modelo (Solstice-AI MXFP4) | ~26,9B | 262K | Apache 2.0 | safetensors, GGUF, MXFP4 | Cuantización de un merge comunitario; sin evaluación independiente |
+| Qwen3.8-27B-TURBO-Fable-Cold-Fusion (DavidAU, base) | ~27B | 262K (declarado) | Apache 2.0 | safetensors, GGUF | Mismo modelo sin cuantizar; referencia para medir la pérdida por MXFP4 |
+| Qwen3 32B (familia oficial) | ~32B | 128K típico | Apache 2.0 | safetensors, GGUF, AWQ/GPTQ | Modelo oficial con evaluación publicada y soporte amplio en vLLM/llama.cpp |
+| Mistral Small 3.x 24B | ~24B | 128K | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamaño similar, con benchmarks públicos verificables |
+
+La comparación relevante es contra el modelo base sin cuantizar: es la única forma de medir cuánto degrada MXFP4 en tareas de código y razonamiento largo. No hay datos publicados para esa comparación.
 
 ## Limitaciones y advertencias
 
-- Alucinación: no se han publicado evaluaciones independientes de factibilidad. Como en la mayoría de modelos de este tamaño, puede generar información plausible pero incorrecta.
-- Sesgos y seguridad: el proyecto "Heretic" elimina los vectores de rechazo corporativos, lo que puede aumentar la generación de contenido dañino, ilegal o no seguro si se usa malintencionadamente. No se documenta ningún intento de mitigar sesgos.
-- Idiomas: la metadata indica únicamente inglés y chino. El rendimiento en español u otras lenguas no está evaluado ni garantizado.
-- Contexto efectivo: el límite de 262K es nativo, pero su uso completo depende de la atención lineal y de la compresión del KV cache. El comportamiento en contextos extremos no está verificado por terceros.
-- Benchmarks: los resultados expuestos provienen del autor del modelo, no de una evaluación independiente. Las comparaciones con Claude Opus 4.6 Max carecen de metodología pública que permita reproducirlas.
-- Licencia: Apache-2.0 permite uso comercial, pero las afirmaciones de "uncensored" no implican que el autor asuma responsabilidad legal por los usos derivados del modelo.
+- Los benchmarks son declaraciones del autor sin artefactos reproducibles, sin semilla, sin versión del arnés y con cifras de ARC no expresadas como porcentaje. No deben citarse como resultados verificados.
+- La cuantización a 4 bits (MXFP4) introduce degradación no medida; el propio autor reporta una caída en ARC-C de 735 a 719 entre 8 y 4 bits, lo que sugiere pérdida real en razonamiento abstracto.
+- El modelo es un merge comunitario con abliteration: no hay evaluación de seguridad, y la eliminación de rechazos implica que puede generar contenido dañino, ilegal o inseguro sin filtro. No apto para exposición directa a usuarios finales sin moderación externa.
+- Riesgo de alucinación no cuantificado; en tareas agénticas de código y control de sistemas, los errores se propagan a acciones reales.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado.
+- El contexto de 262K es una declaración del autor; no se aportan resultados de aguja en pajar ni de degradación a longitudes extremas.
+- La licencia Apache 2.0 del checkpoint no resuelve por sí sola las obligaciones derivadas de los datos de entrenamiento del modelo original, que no se documentan.
+- Dependencia de un runtime propietario (Anvil) para las rutas de despliegue optimizadas; el soporte en vLLM de MXFP4 depende de la versión.
+- Fecha de creación declarada 2026-09-02 y actualización 2026-10-15, con solo 589 descargas y 1 like: tracción mínima, sin validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face (MXFP4): https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-MXFP4
-- Modelo base de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
-- Variante NVFP4 (contexto 1M): https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-1M
-- Variante MLX oQ4e: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e
-- Motor Anvil (GitHub): https://github.com/Solstice-Labs/anvil
+- Hugging Face (este checkpoint): https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-MXFP4
+- Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Runtime Anvil (Solstice Labs): https://github.com/Solstice-Labs/anvil
+- Organización Solstice-AI: https://huggingface.co/Solstice-AI
+- Organización DavidAU: https://huggingface.co/DavidAU
+- Especificación OCP Microscaling (MX): no disponible en la información proporcionada
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada

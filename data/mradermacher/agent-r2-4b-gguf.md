@@ -1,75 +1,88 @@
 # mradermacher/Agent-R2-4B-GGUF
 
 ## Resumen
-Agent-R2-4B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Agent-R2-4B, publicado originalmente por el usuario teng-pan en Hugging Face. El repositorio lo mantiene mradermacher, un perfil conocido por generar y distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base tiene 4.000 millones de parámetros, un tamaño que lo sitúa en la gama de modelos pequeños orientados a tareas de agente.
 
-La relevancia de esta ficha radica en que el repositorio es un artefacto de distribución (cuantizaciones), no el modelo original. La model card del repositorio es mínima: se limita a indicar que se trata de cuantizaciones estáticas del modelo teng-pan/Agent-R2-4B y enumera los tipos de cuantización generados. No se documentan arquitectura, datos de entrenamiento, licencia ni idiomas en la información disponible.
+Agent-R2-4B es un modelo de lenguaje de 4.411 millones de parametros (aproximadamente 4,4 mil millones) desarrollado originalmente por teng-pan y distribuido en formato GGUF por mradermacher. Se presenta como un modelo especializado en tareas de agente, productividad y razonamiento de horizonte largo ("long-horizon"), entrenado mediante aprendizaje por refuerzo basado en rubricas ("rubric-based RL"). La arquitectura subyacente se etiqueta como Qwen3, lo que lo situa en la familia de transformadores densos de Alibaba, aunque la model card no detalla la configuracion exacta de capas ni la longitud de contexto.
 
-Por tanto, esta ficha describe lo que se puede verificar del repositorio (tipos de cuantización, formato, relación con el modelo base) y marca explícitamente como "no disponible" todo aquello que la información proporcionada no cubre. Para evaluar el modelo en profundidad, es necesario consultar el repositorio del modelo base.
+La relevancia de esta publicacion radica en su formato: mradermacher ofrece una bateria completa de cuantizaciones GGUF estaticas (desde Q2_K hasta f16, pasando por IQ4_XS, Q4_K_M, Q5_K_M y Q8_0) que permiten ejecutar el modelo en hardware de consumo. El repositorio ocupa 39,7 GB e incluye todos los ficheros cuantizados, lo que facilita el despliegue local con llama.cpp u Ollama sin necesidad de convertir pesos.
 
-## Especificaciones técnicas
+La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que resulta atractivo para integrar el modelo en productos. Sin embargo, la informacion publica es escasa: no se documentan resultados de benchmarks, composicion del dataset de entrenamiento ni longitud de contexto, por lo que esta ficha se limita a lo verificable en los metadatos y la model card del repositorio.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 4B (según el nombre del modelo) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas; el modelo base se distribuye presumiblemente en safetensors, no confirmado) |
+| Arquitectura | Transformer denso (etiquetado Qwen3 en la model card) |
+| Parametros totales | 4.411.424.256 (4,4 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estaticas); variantes imatrix en repo i1-GGUF |
+| Idiomas soportados | Ingles (segun model card; no se detallan otros) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
-No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. El nombre "Agent-R2-4B" sugiere un modelo de 4.000 millones de parámetros orientado a tareas de agente, pero no se confirma si emplea un transformer denso, una arquitectura MoE u otra variante, ni si incorpora mecanismos especiales como atención lineal o decodificación especulativa.
 
-Tampoco se documentan los datos de entrenamiento (número de tokens, composición del corpus, uso de RLHF/DPO o fases de post-entrenamiento). La model card del repositorio de cuantizaciones no incluye ninguna referencia al proceso de entrenamiento del modelo original. La única información técnica verificable son los metadatos de la herramienta de cuantización: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que las cuantizaciones se generaron a partir de pesos en formato Hugging Face mediante un pipeline de conversión a GGUF.
+La model card identifica el modelo base como teng-pan/Agent-R2-4B y lo etiqueta con "qwen3", lo que sugiere que deriva de la familia Qwen3 de Alibaba, aunque no se especifica la variante exacta ni la configuracion de capas, dimensiones ocultas o cabezas de atencion. El tamano de 4,4 mil millones de parametros lo situa en la gama media-baja de la familia. No se documenta si emplea atencion lineal, decodificacion especulativa u otras innovaciones arquitectonicas.
+
+En cuanto al entrenamiento, las etiquetas "rubric-based-rl" y "long-horizon" indican que se aplico aprendizaje por refuerzo guiado por rubricas para tareas de agente de horizonte largo, probablemente para mejorar la planificacion multi-paso y la coherencia en secuencias de acciones. No se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de SFT, RLHF o DPO. Tampoco se especifica el proceso de cuantizacion mas alla de que mradermacher genero cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1, convert_type hf).
 
 ## Capacidades
-- Generación de texto: capacidad esperable en un modelo de lenguaje de 4B, aunque no se detalla en la información disponible.
-- Razonamiento y tareas de agente: el nombre del modelo sugiere orientación a flujos agénticos, pero no se confirma ni se detalla el soporte de tool calling, function calling ni multi-step reasoning.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Ejecución local: al distribuirse en GGUF, es compatible con llama.cpp y derivados (Ollama, LM Studio, etc.), lo que permite inferencia en CPU y GPU de consumo.
+
+- Generacion de texto conversacional en ingles.
+- Orientacion a tareas de agente: la model card etiqueta el modelo como "agent", "productivity" y "long-horizon", lo que sugiere capacidad para planificacion multi-paso y ejecucion de secuencias de acciones.
+- Razonamiento guiado por rubricas: el entrenamiento con "rubric-based-rl" apunta a evaluacion y refinamiento de respuestas segun criterios explicitos.
+- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible, aunque es coherente con el perfil de agente.
+- Capacidades multilingues: solo se declara ingles; no hay evidencia de soporte de otros idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles en la informacion proporcionada.
 
 ## Casos de uso
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar un modelo de 4B en equipos sin GPU dedicada o con GPU de gama media, usando llama.cpp u Ollama.
-- Prototipado de agentes en entornos con recursos limitados: el tamaño de 4B y el formato GGUF facilitan iterar sobre pipelines agénticos en portátiles antes de escalar a modelos mayores.
-- Pruebas de integración en CI/CD: un GGUF de 4B puede incluirse en contenedores ligeros para validar flujos de generación de texto sin depender de APIs externas.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece múltiples niveles (Q2_K a Q8_0, IQ4_XS), útil para medir la degradación de calidad frente al tamaño en un modelo concreto.
-- Uso educativo y de investigación: permite estudiar el comportamiento de un modelo de 4B en tareas de agente con hardware asequible.
-- Inferencia en el borde (edge): las cuantizaciones de 2-4 bits (Q2_K, Q3_K_S, IQ4_XS) reducen el peso a pocos gigabytes, lo que abre la puerta a despliegues en dispositivos con memoria limitada, siempre que la licencia lo permita (no confirmada).
+
+- Automatizacion de flujos de productividad: el modelo puede encadenar pasos para completar tareas administrativas o de gestion (resumir correos, generar listas de acciones, redactar respuestas) gracias a su orientacion a "productivity" y "long-horizon".
+- Agentes de navegacion y ejecucion de tareas multi-paso: con 4,4 B de parametros y cuantizacion Q4_K_M (2,8 GB), puede desplegarse en un portatil para orquestar herramientas locales en pipelines de automatizacion.
+- Evaluacion y refinamiento de respuestas: el entrenamiento con rubricas permite usarlo como evaluador o generador iterativo en bucles de mejora de calidad de texto.
+- Prototipado rapido de asistentes conversacionales: al estar en GGUF, se integra en llama.cpp u Ollama para demos locales sin GPU dedicada.
+- Generacion de codigo asistida en entornos con recursos limitados: aunque no se documenta rendimiento en codigo, el perfil Qwen3 sugiere competencia basica; util para autocompletado en IDE con cuantizacion Q4_K_S.
+- Educacion y tutoria automatizada: conversaciones multi-turno en ingles con contexto moderado, ejecutables en hardware de consumo para despliegues educativos de bajo coste.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible.
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de 4B en GGUF, Q8_0 ronda los 4-5 GB, Q4_K_M alrededor de 2,5-3 GB y Q2_K en torno a 1,5-2 GB; estas cifras son estimaciones por tamaño de parámetros y cuantización, no datos publicados por el autor.
-- GPU recomendadas: no disponible. Por tamaño, un modelo de 4B cuantizado a 4 bits cabe en GPU de consumo con 6-8 GB de VRAM (RTX 3060, RTX 4060, etc.); para Q8_0 se recomienda 8 GB o más.
-- ¿Cabe en GPU de consumo? Sí, previsiblemente en la mayoría de GPU con 6 GB o más para cuantizaciones de 4 bits, aunque no se confirma en la documentación.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todos los casos, por lo que requerirían los pesos originales.
-- Latencia y throughput: no disponible.
+
+- VRAM estimada para inferencia: aproximadamente 2,0 GB con Q2_K, 2,8 GB con Q4_K_M, 3,7 GB con Q6_K y 4,8 GB con Q8_0 (mas overhead de contexto y KV cache).
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para cuantizaciones Q4/Q5 (RTX 3060, RTX 4060, RTX 2070); para Q8_0 o f16 se recomienda RTX 4070 o superior (8-12 GB).
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 6 GB o mas para cuantizaciones Q4_K_M y Q5_K_M; tambien en CPU via llama.cpp con Q4_K_S (2,7 GB).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI, pero no se confirma compatibilidad nativa.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
-No se dispone de datos de rendimiento del modelo base, por lo que la comparativa se limita a aspectos estructurales. Los resultados de búsqueda mencionan otros repositorios de cuantizaciones de mradermacher (AgenticCoder-4B-GGUF y Commerce-Agent-4B-v4.1-GGUF), que podrían ser alternativas de la misma categoría, pero no se aportan especificaciones de ninguno de ellos.
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Rendimiento |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Agent-R2-4B-GGUF | 4B | no disponible | no disponible | GGUF | no disponible |
-| AgenticCoder-4B-GGUF | 4B (según nombre) | no disponible | no disponible | GGUF | no disponible |
-| Commerce-Agent-4B-v4.1-GGUF | 4B (según nombre) | no disponible | no disponible | GGUF | no disponible |
+| Agent-R2-4B (este) | 4,4 B | No disponible | Apache 2.0 | GGUF, safetensors | Especializado en agente y long-horizon via rubric-based RL |
+| Qwen3-4B (familia base) | ~4 B | No disponible | Apache 2.0 | safetensors, GGUF | Modelo generalista de la misma familia; sin especializacion en agentes |
+| Llama 3.2 3B | 3,2 B | 128 K | Llama 3.2 Community License | safetensors, GGUF | Alternativa generalista de tamano similar con contexto documentado |
+| Phi-3.5-mini | 3,8 B | 128 K | MIT | safetensors, GGUF | Modelo pequeno con buen rendimiento en razonamiento y codigo |
+
+La comparacion directa con alternativas se ve limitada por la ausencia de benchmarks publicados para Agent-R2-4B. Frente a Qwen3-4B, la diferencia principal es la especializacion en tareas de agente mediante RL con rubricas; frente a Llama 3.2 3B y Phi-3.5-mini, la ventaja es la licencia Apache 2.0 sin restricciones adicionales y la disponibilidad inmediata de cuantizaciones GGUF, aunque ambos competidores documentan contexto de 128 K que este modelo no declara.
 
 ## Limitaciones y advertencias
-- La información disponible es mínima: no se documentan arquitectura, entrenamiento, licencia ni idiomas, lo que impide evaluar el modelo con rigor.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Es imprescindible consultar el repositorio del modelo base (teng-pan/Agent-R2-4B) antes de cualquier despliegue en producción.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no hay datos específicos sobre la tasa de alucinación de este modelo.
-- Sesgos: no documentados. Al no conocerse la composición del dataset de entrenamiento, no se pueden anticipar sesgos de género, idioma o dominio.
-- Degradación por cuantización: las cuantizaciones de 2-3 bits (Q2_K, Q3_K_S) pueden degradar la calidad de forma notable en tareas de razonamiento; se recomienda validar con Q4_K_M o superior.
-- Contexto e idiomas: al no conocerse la longitud de contexto ni los idiomas soportados, no se puede garantizar su idoneidad para conversaciones largas o para castellano.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
+
+- Sesgos conocidos: no documentados; al entrenarse presumiblemente con datos en ingles, puede heredar sesgos culturales y linguisticos de ese corpus.
+- Riesgo de alucinacion: no cuantificado; como modelo de 4,4 B, la tasa de alucinacion en tareas factuales puede ser superior a la de modelos mayores.
+- Limitaciones de contexto o idioma: solo se declara ingles; la longitud de contexto no esta especificada, lo que impide garantizar conversaciones multi-turno largas o procesamiento de documentos extensos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; no se identifican restricciones adicionales en la informacion disponible.
+- Caveats para produccion: la ausencia de benchmarks y de documentacion sobre el entrenamiento (datos, tokens, proceso de RL) dificulta evaluar su calidad frente a alternativas; se recomienda validacion empirica antes de desplegarlo en entornos criticos. El repositorio ocupa 39,7 GB por incluir todas las cuantizaciones, lo que requiere planificar el almacenamiento.
 
 ## Enlaces
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Agent-R2-4B-GGUF
+
+- Repositorio GGUF: https://huggingface.co/mradermacher/Agent-R2-4B-GGUF
 - Modelo base: https://huggingface.co/teng-pan/Agent-R2-4B
-- Repositorio relacionado (AgenticCoder-4B-GGUF): https://huggingface.co/mradermacher/AgenticCoder-4B-GGUF
-- Repositorio relacionado (Commerce-Agent-4B-v4.1-GGUF): https://huggingface.co/mradermacher/Commerce-Agent-4B-v4.1-GGUF
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Agent-R2-4B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Agent-R2-4B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

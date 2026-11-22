@@ -2,109 +2,102 @@
 
 ## Resumen
 
-feng-30m-zh-tw es una variante en chino tradicional nativo (zh-TW) del modelo feng-30m, un LLM conversacional de 29,43 millones de parámetros con arquitectura estilo Qwen3 y vocabulario de 16.384 tokens. Lo publica el usuario Luigi en Hugging Face bajo licencia Apache 2.0. El modelo padre (jiaheng0815/feng-30m) está entrenado en chino simplificado (zh-CN); esta variante lee y escribe chino tradicional de forma nativa sin reentrenamiento.
+feng-30m-zh-tw es una variante en chino tradicional nativo (zh-TW) del modelo feng-30m, un LLM conversacional de 29,43 millones de parámetros con arquitectura de estilo Qwen3. Lo publica el usuario Luigi en Hugging Face y deriva del modelo base jiaheng0815/feng-30m, que es un modelo en chino simplificado (zh-CN). El problema que aborda es concreto: adaptar la variedad de escritura del modelo sin reentrenarlo, de modo que lea y genere chino tradicional de forma nativa en lugar de producir glifos simplificados.
 
-La innovación técnica es que la conversión no usa fine-tuning ni adaptadores: es una transformación determinista en el espacio de pesos de un único tensor, `model.embed_tokens.weight` (el embedding y unembedding atados). Los otros 122 tensores son idénticos bit a bit al padre, y el tamaño de fichero, las formas y los dtypes no cambian. Se editaron 6.945 de las 16.384 filas del vocabulario (3,4 millones de escalares), sin añadir ni eliminar ids.
+La innovación del proyecto es metodológica: la conversión completa es un programa determinista en el espacio de pesos que edita un único tensor, `model.embed_tokens.weight` (el embedding ligado a la cabeza de salida). Los otros 122 tensores son idénticos bit a bit al modelo padre, se mantienen las formas, los dtypes y el tamaño de fichero, y el vocabulario sigue en 16.384 piezas. No hay fine-tuning, ni adaptadores, ni convertidor en tiempo de ejecución: no se usan gradientes ni GPU.
 
-Es relevante para quienes necesitan un modelo minúsculo que opere en chino tradicional en dispositivos de borde (edge), con compatibilidad con motores GGUF/C y ESP32 heredada del padre. El coste es que deja de ser un buen modelo en chino simplificado: la perplejidad en zh-CN sube de 220,32 a 769,02, lo que es intencionado.
+Es relevante ahora porque demuestra que la identidad de variedad lingüística (simplificado frente a tradicional) puede corregirse quirúrgicamente en modelos minúsculos pensados para edge AI y ejecución on-device, preservando el embedding ligado que exige el motor C/ESP32 del modelo padre. El modelo está pensado para despliegue en dispositivos con recursos muy limitados, no para calidad conversacional general.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer estilo Qwen3 (embedding/unembedding atados) |
+| Arquitectura | Transformer estilo Qwen3, con embedding y unembedding ligados |
 | Parámetros totales | 29.429.184 (29,43 M) |
 | Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (el repo incluye safetensors; el autor indica que la exportación `esp32/` del padre no se copia y debe reexportarse desde `model.safetensors`) |
-| Idiomas soportados | zh (chino tradicional, zh-TW nativo); el chino simplificado queda degradado |
+| Tipos de cuantización | no disponible en la información proporcionada (pesos publicados en safetensors, dtype float16 en el ejemplo de uso) |
+| Idiomas soportados | zh (chino), con variante zh-TW (chino tradicional) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
-| Vocabulario | 16.384 tokens (sin cambios respecto al padre) |
-| Tensores modificados | 1 de 123 (`model.embed_tokens.weight`) |
-| Filas editadas | 6.945 de 16.384 (3,4 M escalares) |
-| Tamaño del repo | 0,1 GB |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del padre feng-30m: un transformer denso de 29,43 M de parámetros con vocabulario de 16.384 tokens y embedding/unembedding atados, compatible con motores GGUF, C y ESP32. No hay datos públicos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+El modelo es un transformer denso de 29,43 M de parámetros con estética Qwen3, vocabulario de 16.384 tokens y embedding ligado a la capa de salida. No se ha entrenado: la variante zh-TW se obtiene mediante un programa determinista en el espacio de pesos que modifica únicamente el tensor `model.embed_tokens.weight`. Se editan 6.945 de las 16.384 filas (unos 3,1 millones de escalares); el resto de los 123 tensores permanece idéntico bit a bit al padre. No se añaden ni eliminan identificadores de vocabulario: las piezas se renombran.
 
-La conversión a chino tradicional se realiza en tres etapas guiadas por datos de glifos Unihan y un corpus zh-TW de referencia de unos 130.000 caracteres, disjunto del conjunto de evaluación. En la etapa de palabras, para cada token simplificado `w` con grafía tradicional `c`: si `c` ya es token y el coseno entre ambos es ≥ 0,78, se intercambian las cadenas y se sirve `c` con la fila entrenada de `w`; si la puerta geométrica lo bloquea, se transfiere el 20 % de la dirección de `w` a la fila infrentrenada de `k`; y si `c` no tiene token, se renombra `w` a `c` solo cuando el corpus atestigua esa grafía y la norma del embedding es ≥ 1,05. En la etapa de caracteres, una fila de glifo tradicional toma el 40 % de la dirección de su gemelo simplificado (coseno ≥ 0,70), omitiendo glifos que el corpus zh-TW no usa. En la etapa de rebalanceo softmax, los ids que pueden emitir un glifo exclusivamente simplificado bajan a 0,32 de su fila; los que emiten un glifo genuinamente tradicional se escalan a 1,10 si son del padre y se reducen a 0,70 si son renombrados por esta transformación. Las decisiones aceptadas fueron 671 intercambios de palabras, 2.275 renombrados, 1.207 fugas de palabras y 441 gemelos de caracteres.
+La metodología de selección de ediciones se apoya en tres instrumentos. Primero, la fluidez en la variedad objetivo se mide como entropía cruzada media (nats por token) sobre seis dominios zh-TW reservados de 1.024 tokens cada uno, más un séptimo dominio de generalización que nunca se optimiza y que sirve de guarda contra el sobreajuste a porciones concretas. Segundo, la pureza se mide de forma conductual (generación con un conjunto fijo de prompts y conteo de glifos exclusivos del simplificado) y estructural (una fila es fuga si la cadena que emite contiene un glifo exclusivo del simplificado y su norma supera el 90 % de la del padre; el límite impuesto es de 200 y la medición da 1). Tercero, se usan controles: una sonda zh-CN de 21.000 caracteres simplificados no debe mejorar, y en este modelo empeora deliberadamente de 220 a 769.
 
 ## Capacidades
 
-- Generación de texto conversacional en chino tradicional nativo, con formato de chat por roles (`user`/`assistant`).
-- Salida sin glifos exclusivamente simplificados (verificación conductual sobre completaciones muestreadas).
-- Compatibilidad con el motor de inferencia del padre, incluida la exportación a GGUF, C y ESP32 (previa reexportación desde `model.safetensors`).
-- Embedding y unembedding atados, requisito del motor on-device del padre.
-- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
-- Multilingüe limitado: el rendimiento en inglés se mantiene prácticamente igual al padre (perplejidad 43,60 → 42,81), pero el modelo está orientado a zh-TW.
+- Generación de texto conversacional en chino tradicional nativo, con fidelidad de escritura medida: 0 glifos exclusivos del simplificado por cada 100 caracteres Han, frente a 19,75 del padre.
+- Mayor densidad de glifos exclusivos del tradicional: 9,01 por cada 100 caracteres Han, 6,1 veces la del padre (1,48).
+- Ninguna fuga de glifos simplificados en 16 de 16 prompts de una auditoría codiciosa fija de 16 prompts por 64 tokens (el padre filtraba en 11 de 16).
+- Continuación de texto plano: el tokenizador no incluye plantilla de chat, por lo que se alimenta con cadenas simples y el modelo continúa el formato de entrenamiento del padre (cierre del turno de usuario y apertura de `assistant`).
+- Decodificación codiciosa recomendada; el muestreo amplifica la repetición dada la escala del modelo.
+- No se documentan tool calling, function calling, capacidades de agente, visión, audio ni modo de razonamiento extendido.
+- Capacidad multilingüe limitada al chino; no hay evidencia de otros idiomas.
 
 ## Casos de uso
 
-- Asistente conversacional en dispositivos de borde: el modelo cabe en 0,1 GB de repo y mantiene la compatibilidad con motores C/ESP32 del padre, por lo que puede desplegarse en microcontroladores o hardware embebido para respuestas en chino tradicional sin conexión.
-- Chat de atención al cliente en zh-TW: al generar texto sin glifos simplificados, evita respuestas con caracteres mezclados que resultan extraños para usuarios de Taiwán, Hong Kong o Macao.
-- Sustitución del padre en aplicaciones ya desplegadas en chino tradicional: al conservar arquitectura, vocabulario y formas de tensor, puede reemplazar a feng-30m sin cambiar el pipeline de inferencia.
-- Prototipado rápido de LLM en local: con 29,43 M de parámetros y pesos safetensors, se carga con `transformers` en CPU y permite validar prompts y flujos conversacionales antes de escalar a modelos mayores.
-- Generación de texto de bajo coste en dominios de ciencia e historia: la perplejidad baja de 327,29 a 268,01 en el dominio val6 (ciencia/historia) y de 217,43 a 184,56 en val7 (ciencia/medicina), lo que lo hace adecuado para completar o resumir textos técnicos breves en zh-TW.
-- Investigación sobre transformaciones en el espacio de pesos: el script `transform/build_tw.py` regenera todos los ficheros desde el checkpoint padre y `transform/eval_ppl.py` reproduce las tablas de perplejidad, lo que sirve como caso de estudio reproducible de adaptación lingüística sin fine-tuning.
-- Filtrado o normalización de texto zh-TW: el corpus de atestación y las reglas de glifos pueden reutilizarse para tareas de conversión simplificado-tradicional con control de calidad.
+- Demostración de edición en el espacio de pesos: sirve como caso reproducible de cómo corregir la variedad de escritura de un modelo sin reentrenar, con scripts de auditoría (`transform/audit_demo.py`) y resultados medidos (`transform/audit.json`) que permiten replicar las cifras sobre estos pesos exactos.
+- Despliegue on-device en chino tradicional: con 29,43 M de parámetros y pesos en float16, encaja en microcontroladores y placas de bajo consumo, y conserva el embedding ligado que requiere el motor C/ESP32 del modelo padre.
+- Generación de texto breve en entornos sin conectividad: el tamaño permite ejecución local en dispositivos con memoria muy restringida, útil para etiquetas, mensajes cortos o continuaciones de una línea.
+- Investigación sobre tokenización y vocabulario: al renombrar piezas sin alterar identificadores, es un banco de pruebas controlado para estudiar el efecto del vocabulario en la salida de escritura.
+- Evaluación de fidelidad de escritura: los instrumentos de pureza conductual y estructural (clasificación Unihan, recuento de glifos exclusivos) son reutilizables para auditar otros modelos en zh-TW.
+- Filtro o corrector de variedad lingüística: dado su bajo coste, puede emplearse como componente auxiliar para detectar o normalizar escritura simplificada en pipelines de texto, siempre con las cautelas de calidad del modelo.
+- Prototipado educativo: permite ilustrar en un aula o taller cómo un cambio de una sola matriz de embedding altera la variedad de salida sin tocar el resto de la red.
 
 ## Benchmarks y rendimiento
 
-Perplejidad sobre siete dominios zh-TW reservados (cada segmento de 1.024 tokens; los dominios 3-7 son artículos de Wikipedia frescos, verificados disjuntos por 12-gramas):
+| Métrica | Padre (zh-CN) | feng-30m-zh-tw |
+|---|---|---|
+| Glifos exclusivos del simplificado por 100 caracteres Han | 19,75 | 0,00 |
+| Glifos exclusivos del tradicional por 100 caracteres Han | 1,48 | 9,01 (6,1×) |
+| Prompts con al menos una fuga de glifo simplificado | 11 / 16 | 0 / 16 |
+| Perplejidad, eval1 (Wikipedia) | 202,27 | 168,62 (−16,6 %) |
+| Perplejidad, eval2 (Wikipedia, otro dominio) | 313,33 | 212,71 (−32,1 %) |
+| Perplejidad, val3 (artículos nuevos) | 232,19 | 165,87 (−28,6 %) |
+| Perplejidad, val4 (geografía y deporte) | 331,27 | 295,22 (−10,9 %) |
+| Perplejidad, val5 (cultura y comida) | 140,65 | 137,22 (−2,4 %) |
+| Perplejidad, val6 (ciencia e historia) | 327,29 | 264,86 (−19,1 %) |
+| Perplejidad, val7 (ciencia y medicina) | 217,43 | 182,86 (−15,9 %) |
+| Entropía cruzada media, seis dominios de ajuste (nats) | 5,508 | 5,298 (−3,8 %) |
+| Sonda zh-CN (21.000 caracteres simplificados) | 220 | 769 (empeora deliberadamente) |
 
-| Dominio | Padre | feng-30m-zh-tw | Δ |
-|---|---|---|---|
-| eval1 · Wikipedia | 202,27 | 169,00 | −16,4 % |
-| eval2 · Wikipedia (otro dominio) | 313,33 | 212,74 | −32,1 % |
-| val3 · artículos frescos | 232,19 | 165,69 | −28,6 % |
-| val4 · geografía / deporte | 331,27 | 296,84 | −10,4 % |
-| val5 · cultura / comida | 140,65 | 138,22 | −1,7 % |
-| val6 · ciencia / historia | 327,29 | 268,01 | −18,1 % |
-| val7 · ciencia / medicina | 217,43 | 184,56 | −15,1 % |
-| Media CE, seis dominios de ajuste (nats) | 5,508 | 5,302 | −3,7 % |
-
-Controles:
-
-| Control | Padre | feng-30m-zh-tw | Lectura |
-|---|---|---|---|
-| Texto zh-CN simplificado | 220,32 | 769,02 | deliberadamente mucho peor |
-| Texto en inglés | 43,60 | 42,81 | prácticamente sin cambios |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 29,43 M de parámetros en fp32 los pesos ocupan aproximadamente 118 MB, y en fp16 unos 59 MB, más el estado del tokenizador y el KV cache.
-- GPU recomendadas: cualquier GPU consumer moderna puede ejecutarlo; no se requieren A100 ni H100. Cabe en CPU y en hardware embebido.
-- Cabe en GPU consumer: sí, en cualquier RTX o equivalente, y también en CPU.
-- Opciones de despliegue: `transformers` (con `trust_remote_code=True`), y motores compatibles con el padre (GGUF, C, ESP32) previa reexportación desde `model.safetensors`. No se documentan vLLM, llama.cpp, Ollama ni TGI de forma explícita.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: del orden de decenas de megabytes en float16 para los 29,43 M de parámetros (el repositorio completo ocupa 0,4 GB); no se dispone de cifras oficiales de memoria pico.
+- GPU recomendadas: no se especifican; por tamaño, cualquier GPU consumer moderna es sobredimensionada. El modelo está orientado a CPU y a dispositivos embebidos.
+- Cabe en GPU consumer: sí, en cualquier GPU consumer actual, y también en placas de bajo consumo; el padre incluye un motor C/ESP32 que esta variante preserva.
+- Opciones de despliegue: transformers (ejemplo oficial con `trust_remote_code=True` y `dtype="float16"`), text-generation-inference según las etiquetas del repositorio, y el motor on-device C/ESP32 del modelo padre. No se documentan vLLM, llama.cpp ni Ollama.
+- Latencia y throughput: no disponibles. La decodificación codiciosa es la recomendada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idioma | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| feng-30m-zh-tw | 29,43 M | no disponible | zh-TW nativo | Apache 2.0 | safetensors | Variante por transformación de pesos |
-| feng-30m (padre) | 29,43 M | no disponible | zh-CN | Apache 2.0 | safetensors | Modelo base; mejor en simplificado |
-| Qwen3 (familia) | no disponible | no disponible | multilingüe | no disponible | no disponible | Referencia arquitectónica citada por el autor |
+| Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| feng-30m-zh-tw | 29,43 M | no disponible | zh-TW | Apache 2.0 | Hugging Face |
+| jiaheng0815/feng-30m (padre) | 29,43 M | no disponible | zh-CN | no disponible en la información proporcionada | Hugging Face |
+| Alternativas de escala similar en chino tradicional | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks estándar ni de otros modelos comparables de 30 M de parámetros en chino tradicional en la información proporcionada.
+No se dispone de información sobre otros modelos comparables de 30 M de parámetros especializados en chino tradicional. La comparación más directa y documentada es con el modelo padre, cuyas diferencias se recogen en las tablas de benchmarks.
 
 ## Limitaciones y advertencias
 
-- Ya no es un buen modelo en chino simplificado: la perplejidad zh-CN sube de 220,32 a 769,02. Para simplificado debe usarse el padre.
-- La exportación `esp32/` del padre no se copia intencionadamente, porque es una cuantización del embedding del padre y queda obsoleta para este modelo; hay que reexportarla desde `model.safetensors`.
-- Las ganancias dependen del dominio: en cultura/comida (val5) la mejora es solo del 1,7 %, porque la transferencia de caracteres que hace nativa la ortografía cuesta algo de fluidez en ese dominio.
-- El vocabulario y las fusiones del tokenizador son los del padre; aproximadamente el 21 % de las reglas de fusión quedan fuera del conjunto alcanzable tras el renombrado, y la extensión de vocabulario se midió (texto truncado en la model card).
-- Riesgo de alucinación inherente a un modelo de 29,43 M de parámetros; no se documentan evaluaciones de veracidad.
-- Sesgos: no documentados en la información disponible.
-- No se documentan capacidades de tool calling ni de agentes, por lo que no es adecuado para pipelines que las requieran.
-- Licencia Apache 2.0: permite uso comercial, pero no se documentan garantías ni condiciones adicionales.
+- Calidad conversacional muy baja: con 29 M de parámetros, las salidas son repetitivas y a menudo incoherentes; la propia model card advierte que la demostración mide fidelidad de escritura, no fluidez, y que los límites de calidad del padre se heredan sin cambios.
+- El muestreo amplifica la repetición; se recomienda decodificación codiciosa.
+- Sin plantilla de chat en el tokenizador: hay que alimentar cadenas planas o envolver manualmente la plantilla `chat_template.jinja` del padre.
+- Riesgo de alucinación elevado por la escala del modelo; no apto para producción con requisitos de exactitud.
+- Sesgos: no documentados en la información disponible; al derivar de un modelo chino, se heredan los sesgos de sus datos de entrenamiento, no especificados.
+- Limitación de idioma: solo chino; no hay soporte documentado de otros idiomas.
+- Longitud de contexto: no disponible, lo que impide planificar conversaciones multi-turno largas.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo padre no declara licencia en la información proporcionada, por lo que conviene verificar la cadena de licencias antes de un despliegue comercial.
+- El beneficio medido se limita a la variedad de escritura; no hay mejoras de razonamiento, conocimiento o fluidez, y la sonda zh-CN empeora de forma deliberada (220 a 769), lo que refleja un desplazamiento de la distribución hacia el tradicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Luigi/feng-30m-zh-tw
-- Modelo padre: https://huggingface.co/jiaheng0815/feng-30m
-- Resultados de búsqueda web: no relevantes (corresponden a la franquicia de videojuegos Super Mario, sin relación con el modelo).
+- Modelo base: https://huggingface.co/jiaheng0815/feng-30m
+- Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados disponibles corresponden al personaje Luigi de Nintendo y no guardan relación con este modelo.

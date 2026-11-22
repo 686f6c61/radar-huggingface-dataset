@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "mradermacher/malaysian-sailor-7b-16k-GGUF",
+  "slug": "mradermacher-malaysian-sailor-7b-16k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/malaysian-sailor-7b-16k-GGUF",
+  "created_at": "2024-12-17T13:28:10.000Z",
+  "updated_at": "2026-11-21T22:11:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 7718948864,
+  "parameters_human": "7.72B",
+  "storage_bytes": 69347954432,
+  "storage_human": "69.3 GB",
+  "context_length": 32768,
+  "base_model": "mesolitica/malaysian-sailor-7b-16k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

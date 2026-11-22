@@ -2,83 +2,91 @@
 
 ## Resumen
 
-`mradermacher/Panu-Omni-2B-i1-GGUF` es una coleccion de cuantizaciones GGUF generadas por el usuario mradermacher a partir del modelo base `JonusNattapong/Panu-Omni-2B`. No se trata de un modelo entrenado por el autor del repositorio, sino de una redistribucion optimizada para inferencia local mediante llama.cpp y herramientas compatibles con el formato GGUF. El prefijo `i1` indica el uso de cuantizacion con importance matrix (imatrix), una tecnica que reduce la perdida de calidad en cuantizaciones agresivas ponderando los pesos segun su relevancia.
+Panu-Omni-2B-i1-GGUF es la versión cuantizada en formato GGUF del modelo Panu-Omni-2B, desarrollado originalmente por JonusNattapong y cuantizado por mradermacher. Se trata de un modelo multimodal de aproximadamente 1.728 millones de parámetros (1,73 B) que combina capacidades de texto, visión y audio, incluyendo funcionalidad de speech-to-speech. Está construido sobre la familia arquitectónica Liquid LFM3 (Liquid AI), según indican las etiquetas del repositorio, y se distribuye con variantes "abliterated" y "uncensored", lo que implica que se han eliminado o reducido los mecanismos de rechazo del modelo original.
 
-El modelo base se presenta como "Panu-Omni-2B", lo que sugiere un modelo multimodal ("Omni") de aproximadamente 2 mil millones de parametros. Sin embargo, la model card del repositorio GGUF no aporta informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas. El dato de parametros totales reportado en los metadatos de safetensors es de 899.013, una cifra anomala que probablemente refleja un error de metadatos o un tensor parcial, no el total real del modelo.
+La relevancia de este lanzamiento radica en dos factores. Primero, ofrece un modelo "omni" (texto, imagen y audio en un único artefacto) en un tamaño muy reducido, lo que permite desplegarlo en hardware de consumo. Segundo, la disponibilidad de cuantizaciones imatrix (i1) desde IQ1_S hasta Q6_K permite elegir el equilibrio entre tamaño, velocidad y calidad, con opciones que van desde 0,6 GB hasta 1,5 GB. El modelo declara soporte para tailandés (incluyendo dialectos), inglés, chino, japonés, francés, alemán y español.
 
-La relevancia de este repositorio es practica: ofrece hasta 24 variantes de cuantizacion (desde IQ1_S hasta Q6_K) que permiten ejecutar un modelo de ~2B en hardware de consumo muy limitado. No obstante, al carecer de documentacion sobre el modelo base, su evaluacion en produccion requiere validacion adicional por parte del usuario.
+El repositorio acumula 4472 descargas y está etiquetado como compatible con endpoints. La licencia es LFM1.0 (licencia propia de Liquid AI), lo que condiciona el uso comercial y debe revisarse antes de cualquier despliegue en producción. Este fichero describe específicamente la variante cuantizada, no los pesos originales en safetensors.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (metadatos safetensors reportan 899.013, cifra no fiable) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye presumiblemente en safetensors |
-| Tamano del repo | 0.0 GB (reportado; probablemente incompleto o no computado) |
+| Arquitectura | Transformer multimodal de la familia Liquid LFM3 (lfm3-omni), según etiquetas del repositorio; detalles internos no disponibles |
+| Parametros totales | 1.728.801.600 (≈1,73 B) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-IQ3_XXS, i1-Q2_K, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix/weighted); existen además cuantizaciones estáticas en el repo Panu-Omni-2B-GGUF |
+| Idiomas soportados | Tailandés (incluye dialectos), inglés, chino, japonés, francés, alemán, español |
+| Licencia | LFM1.0 (license_name: lfm1.0, license: other) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base `JonusNattapong/Panu-Omni-2B`. El nombre "Omni" sugiere capacidad multimodal (texto, vision y posiblemente audio), pero no se confirma en la documentacion proporcionada. Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La información disponible identifica el modelo como perteneciente a la familia Liquid LFM3 en su variante omni, lo que implica una arquitectura transformer adaptada para procesar múltiples modalidades (texto, audio y visión) y con capacidad de speech-to-speech. Las etiquetas del repositorio indican también que se trata de una variante "abliterated" y "uncensored", es decir, con los mecanismos de rechazo atenuados o eliminados respecto al modelo de partida, y con orientación a razonamiento ("reasoning"). No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO.
 
-Lo unico documentado es el proceso de cuantizacion: el autor aplica cuantizacion con importance matrix (imatrix) ponderada, lo que mejora la fidelidad de las cuantizaciones de baja precision (IQ1, IQ2, IQ3) respecto a la cuantizacion uniforme. La etiqueta `skip_mmproj: 1` indica que el proyector multimodal (mmproj) no se ha incluido en el repositorio, lo que implica que estas cuantizaciones estan pensadas para inferencia de texto o que el componente visual debe obtenerse por separado.
+En cuanto a la cuantización, mradermacher ha generado cuantizaciones i1 (imatrix) utilizando un fichero imatrix propio de 0,1 GB, lo que mejora la calidad respecto a cuantizaciones estáticas de tamaño equivalente. El repositorio incluye además un fichero imatrix independiente para que terceros puedan generar sus propias cuantizaciones. No se detallan innovaciones técnicas adicionales como decodificación especulativa o atención lineal más allá de lo que sugiere la familia LFM3.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje, aunque no verificada en la documentacion.
-- Capacidades multimodales: el nombre "Omni" sugiere vision y posiblemente audio, pero el repositorio omite el proyector multimodal (`skip_mmproj: 1`), por lo que estas cuantizaciones no incluirian dicha funcionalidad de forma directa.
-- Tool calling / function calling: no disponible.
-- Razonamiento multi-paso y agentes: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo thinking o razonamiento extendido: no disponible.
+- Generación de texto y razonamiento, con etiqueta explícita de "reasoning".
+- Procesamiento de imagen (visión) y audio, al estar etiquetado como multimodal y omni.
+- Speech-to-speech: conversión de voz a voz dentro del mismo modelo.
+- Soporte multilingüe para tailandés (incluidos dialectos), inglés, chino, japonés, francés, alemán y español.
+- Variante "abliterated/uncensored": menor probabilidad de rechazo ante peticiones que el modelo base rechazaría.
+- Conversación multi-turno (etiqueta "conversational").
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- No se documenta explícitamente soporte de tool calling ni de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Inferencia local en hardware de gama baja: las variantes IQ1_S, IQ2_XXS y Q2_K permiten ejecutar un modelo de ~2B en equipos con 2-4 GB de RAM, util para prototipado en portatiles sin GPU dedicada.
-- Experimentacion con cuantizacion: el repositorio sirve como banco de pruebas para comparar el impacto de distintas tecnicas (imatrix vs. uniforme, IQ vs. K-quants) sobre la calidad de salida en un mismo modelo base.
-- Despliegue en dispositivos edge: las cuantizaciones Q4_0 y Q4_1 son compatibles con llama.cpp en arquitecturas ARM, lo que permite ejecucion en Raspberry Pi o moviles con suficiente memoria.
-- Evaluacion comparativa de cuantizaciones: util para investigadores que quieran medir la degradacion de perplejidad entre IQ1_S y Q6_K sobre el mismo modelo.
-- Pipelines de texto offline: con las variantes Q5_K_M o Q6_K se obtiene la mayor fidelidad posible en formato GGUF para tareas de generacion de texto sin conexion.
-- Base para fine-tuning ligero: las cuantizaciones de mayor precision pueden servir como referencia para comparar contra adaptadores LoRA entrenados sobre el modelo base original.
+- Asistente de voz en tailandés con dialectos: el modelo puede recibir audio y responder con audio en el mismo idioma, lo que lo hace adecuado para interfaces de atención telefónica o asistentes locales en Tailandia, donde los dialectos regionales son habituales.
+- Transcripción y resumen multimodal en local: al combinar audio y texto, puede procesar grabaciones de reuniones y generar resúmenes sin enviar datos a la nube, gracias a su tamaño reducido (1,2 GB en Q4_K_M).
+- Prototipado de aplicaciones omni en hardware de consumo: con cuantizaciones de 1,1-1,5 GB cabe en GPUs de 8 GB o incluso en CPU vía llama.cpp, lo que permite experimentar con visión y audio sin infraestructura dedicada.
+- Investigación sobre alineación y modelos "abliterated": útil para estudiar el comportamiento de modelos sin mecanismos de rechazo, comparando respuestas frente al modelo base en tareas sensibles.
+- Generación de descripciones de imágenes multilingües: para catalogación de contenido en inglés, español, francés o alemán, con salida de texto a partir de imágenes.
+- Chat conversacional de bajo coste en edge: despliegue en dispositivos con recursos limitados (Raspberry Pi con suficiente RAM para Q4, portátiles sin GPU) para asistentes personales o demos interactivas.
+- Evaluación de cuantizaciones: el fichero imatrix incluido permite a investigadores generar sus propias cuantizaciones y medir la degradación de calidad en tareas multimodales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (aproximada, asumiendo ~2B parametros):
-  - IQ1_S / IQ2_XXS: ~1-1.5 GB.
-  - Q2_K / IQ2_M: ~1.5-2 GB.
-  - Q3_K_M / IQ3_M: ~2-2.5 GB.
-  - Q4_K_M / IQ4_XS: ~2.5-3.5 GB.
-  - Q5_K_M / Q6_K: ~3.5-5 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4 o superiores (GTX 1650, RTX 3050, RTX 4060). Para Q6_K se recomienda 6 GB o mas (RTX 3060, RTX 4060 Ti).
-- Compatibilidad con GPU de consumo: si, el modelo en Q4_K_M cabe en la mayoria de GPU consumer actuales e incluso en iGPU con memoria unificada.
-- Opciones de despliegue: llama.cpp, Ollama (mediante importacion del GGUF), LM Studio, text-generation-webui, koboldcpp.
-- Latencia y throughput: no disponible. Dependera del hardware y de la cuantizacion elegida; en un modelo de ~2B se esperan decenas de tokens por segundo en GPU consumer moderna.
+- VRAM estimada para inferencia: aproximadamente 0,7-0,9 GB para IQ2, 1,0-1,2 GB para IQ3/Q3, 1,1-1,2 GB para IQ4/Q4, 1,3-1,5 GB para Q5/Q6 (tamaños de fichero; la VRAM real añade overhead de contexto y del proyector multimodal).
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM puede ejecutar las cuantizaciones Q4; para Q6_K se recomienda 6 GB o más. Una RTX 3060, RTX 4060, RTX 4090, A100 o H100 son más que suficientes; el modelo está claramente orientado a hardware modesto.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones, incluidas tarjetas de gama baja con 4-8 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python o LM Studio). El modelo base en safetensors puede servirse con transformers; para vLLM o TGI no se confirma soporte de esta variante GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño (1,73 B) se espera un throughput alto en GPU, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre el modelo base ni sobre alternativas directas de la misma categoria y tamano con las que establecer una comparacion fiable.
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Panu-Omni-2B-i1-GGUF | 1,73 B | No disponible | Texto, visión, audio (speech-to-speech) | LFM1.0 | GGUF en HF; base en safetensors |
+| Qwen2.5-Omni-3B (referencia de categoría) | ~3 B | No disponible en esta ficha | Texto, visión, audio | Apache 2.0 (según su card) | Pesos y GGUF comunitarios |
+| Gemma 3 4B (referencia de categoría) | ~4 B | No disponible en esta ficha | Texto, visión | Gemma license | Pesos y GGUF oficiales/comunitarios |
+
+La comparativa se ofrece a título orientativo de categoría (modelos omni o multimodales pequeños); no se dispone de datos de rendimiento comparativo verificados para Panu-Omni-2B en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion sobre el modelo base: no se conocen arquitectura, datos de entrenamiento, licencia ni idiomas, lo que impide garantizar su uso comercial o su comportamiento en produccion.
-- Licencia no especificada: no se puede asumir permiso para uso comercial; es imprescindible contactar con el autor del modelo base (`JonusNattapong`) antes de desplegarlo.
-- El repositorio omite el proyector multimodal (`skip_mmproj: 1`), por lo que las capacidades "Omni" (vision/audio) no estarian disponibles en estas cuantizaciones salvo que se obtenga el mmproj por separado.
-- Riesgo de alucinacion: inherente a modelos de lenguaje de este tamano, agravado en cuantizaciones IQ1/IQ2 por la perdida de precision.
-- Los metadatos de parametros (899.013) son inconsistentes con el nombre "2B" y no deben tomarse como referencia.
-- El tamano del repo reportado (0.0 GB) sugiere que los archivos pueden no estar completamente subidos o indexados; verificar la integridad antes de descargar.
-- Sin datos de benchmarks ni evaluaciones independientes, no hay evidencia de calidad frente a alternativas establecidas.
+- Licencia LFM1.0: es una licencia propia con posibles restricciones para uso comercial; debe revisarse el texto completo antes de desplegar en producción.
+- Variante "abliterated/uncensored": la eliminación de mecanismos de rechazo aumenta el riesgo de generar contenido inapropiado, dañino o inexacto; no es adecuada para aplicaciones orientadas al público sin filtros adicionales.
+- Riesgo de alucinación: inherente a modelos de este tamaño; la precisión factual en tareas de razonamiento complejo será limitada en comparación con modelos de mayor escala.
+- Contexto: no se dispone de la longitud de contexto, lo que impide garantizar conversaciones largas o documentos extensos.
+- Idiomas: aunque declara siete idiomas, el foco principal parece ser el tailandés; el rendimiento en español, francés o alemán no está verificado con benchmarks.
+- Modalidades: no se detalla la resolución de imagen soportada, la frecuencia de muestreo de audio ni la calidad del speech-to-speech; conviene validar estos aspectos antes de integrarlo.
+- El repositorio no incluye información sobre tool calling ni agentes, por lo que no debe asumirse su soporte.
+- Los pesos GGUF son una cuantización; las cuantizaciones de 1-2 bits (IQ1, IQ2) degradan notablemente la calidad y solo deberían usarse en escenarios con restricciones extremas de memoria.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Panu-Omni-2B-i1-GGUF
+- Repositorio Hugging Face (esta variante): https://huggingface.co/mradermacher/Panu-Omni-2B-i1-GGUF
 - Modelo base: https://huggingface.co/JonusNattapong/Panu-Omni-2B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Panu-Omni-2B-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Panu-Omni-2B-i1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

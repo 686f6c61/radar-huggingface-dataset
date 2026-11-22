@@ -65,31 +65,5 @@
       "value": 86
     }
   ],
-  "sources": [
-    {
-      "title": "A uniform realization of the combinatorial R-matrix",
-      "url": "https://dmtcs.episciences.org/2491/pdf",
-      "snippet": "it was checked by computer, based on a model closely related to the quantum alcove model [LNS+13b]. ... ing the common face of Ai−1 and Ai, for i = 1,...,m; so ..."
-    },
-    {
-      "title": "awesome-mcp-servers/README.md at main - GitHub",
-      "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
-      "snippet": "☁️ - Multi-model AI media generation (image, video, audio, face swap ... 1/Routed · bshea-1/Routed MCP server - Local router for ..."
-    },
-    {
-      "title": "Combinatorial Reciprocity Theorems Matthias Beck Raman Sanyal",
-      "url": "https://matthbeck.github.io/papers/crt.pdf",
-      "snippet": "04.10.2018 ... eFj−1 (ai) ≤ eFj (ai) for all j, and the inequality is strict only ... lex v if u = v or if the smallest index 1 ≤ i ≤ m for which ..."
-    },
-    {
-      "title": "20241223-Delisting-Offer-Document.pdf - Encavis",
-      "url": "https://www.encavis.com/Dokumente/IR/KKR/20241223-Delisting-Offer-Document.pdf",
-      "snippet": "23.12.2024 ... ... 1 of the German Stock Exchange Act. (Börsengesetz - BörsG) in conjunction with section 14 paras. 2 and 3 of the German. Securities Acquisition ..."
-    },
-    {
-      "title": "20110004278.pdf - NASA Technical Reports Server (NTRS)",
-      "url": "https://ntrs.nasa.gov/api/citations/20110004278/downloads/20110004278.pdf",
-      "snippet": "and AI Globus. Research. Scientists. Sterling Zero One Inc. This ... 1 1. 0.90 ...... _ _ --JI-'--.&----+----II.---'~-+'\"'\"'\"'__....L.. _ _ ..."
-    }
-  ]
+  "sources": []
 }

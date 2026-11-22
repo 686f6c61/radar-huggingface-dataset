@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "llm-jp/llm-jp-3.1-1.8b · Hugging Face",
-      "url": "https://huggingface.co/llm-jp/llm-jp-3.1-1.8b",
-      "snippet": "In the LLM-jp-3.1 series, we performed continuous pre-training based on Instruction Pre-Training. Instruction Pre-Training enhances a model&#x27;s ability to follow instructions by continuing pre-training on a large collection of instruction-response pairs."
-    },
-    {
-      "title": "llm-jp/llm-jp-3-1.8b · Hugging Face",
-      "url": "https://huggingface.co/llm-jp/llm-jp-3-1.8b",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GGUF Model Discovery - Browse & Download AI Models",
-      "url": "https://local-ai-zone.github.io/",
-      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
-    },
-    {
-      "title": "Release of LLM-jp-3.1 Series Instruct4 - LLM-jp",
-      "url": "https://llm-jp.nii.ac.jp/en/news/release-of-llm-jp-3-1-series-instruct4/",
-      "snippet": "The Research and Development Center for Large Language Models (LLMC) at the National Institute of Informatics is dedicated to developing open, Japanese-optimized large language models. Since September 2024, we have been releasing the \"LLM-jp-3\" series, trained using llm-jp-corpus v3. The releases so far include eight dense models (150M, 440M, 980M, 1.8B, 3.7B, 7.2B, 13B, and 172B) and two ..."
-    },
-    {
-      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
-      "url": "https://lmmarketcap.com/llm-updates",
-      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
-    }
-  ]
+  "sources": []
 }

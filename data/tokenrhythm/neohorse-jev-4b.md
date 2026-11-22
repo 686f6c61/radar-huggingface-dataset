@@ -2,118 +2,111 @@
 
 ## Resumen
 
-NeoHorse-Jev-4B es un modelo de decision estructurada de 4.000 millones de parametros desarrollado por TokenRhythm, construido como ajuste fino (finetune) sobre NeoHorse-1-4B. A diferencia de un modelo generativo convencional, no produce texto autoregresivo: dado un estado y un conjunto de preguntas definidas por la aplicacion, predice directamente la respuesta sobre las opciones que el desarrollador ha declarado, junto con su probabilidad. Su pipeline declarado en Hugging Face es text-classification y su inferencia es prefill-only, es decir, sin fase de decodificacion.
+NeoHorse-Jev-4B es un modelo de decisión estructurada de 4.000 millones de parámetros desarrollado por TokenRhythm, construido como ajuste fino del modelo base NeoHorse-1-4B. A diferencia de los modelos generativos convencionales, no produce texto autoregresivo: dada una serie de preguntas definidas por la aplicación (opciones candidatas, preguntas de sí/no o niveles de valoración ordenados), predice directamente la decisión y su distribución de probabilidad. Está diseñado específicamente para flujos de trabajo agénticos: enrutamiento de peticiones, selección de herramientas, verificación de condiciones y puntuación de resultados.
 
-El modelo resuelve un problema muy concreto en flujos agenticos: enrutar peticiones, seleccionar herramientas, evaluar condiciones y puntuar resultados sin pagar el coste de generar lenguaje natural. Soporta tres tipos de decision (Choice, Noul y Score), admite multiples preguntas por peticion de texto y acepta opcionalmente una imagen combinada con texto, lo que lo situa tambien en el terreno vision-language. Su relevancia actual radica en que ofrece un mecanismo mas rapido y determinista que un LLM generativo para capas de decision intermedias dentro de un agente.
+La innovación principal es la inferencia *prefill-only*: el modelo procesa el estado y las preguntas en una sola pasada y emite decisiones tipadas (Choice, Noul y Score) sin generar tokens de texto. Esto reduce la latencia y hace que las salidas sean directamente consumibles por lógica de aplicación, con probabilidades calibradas para aplicar umbrales y reglas de enrutamiento. Admite además entradas multimodales, combinando una única imagen con texto en la misma petición.
 
-El modelo se publica bajo licencia Apache-2.0, con pesos en safetensors y soporte declarado para vLLM, SGLang y un runtime nativo en Python, CLI y HTTP. La model card reporta una puntuacion agregada de 77,70 sobre seis grupos de benchmarks de texto y una precision media del 83,26% en Nimble, VitaminC y MASSIVE, 11,50 puntos porcentuales por encima del baseline NeoHorse-1-4B. El contexto maximo no aparece documentado en la informacion disponible.
+Su relevancia actual radica en que ofrece una alternativa ligera y desplegable localmente frente a los modelos generativos de gran tamaño en tareas de decisión dentro de pipelines agénticos. Con licencia Apache 2.0 y soporte para vLLM, SGLang y un runtime nativo en Python, CLI y HTTP, se posiciona como una pieza de infraestructura para sistemas que necesitan decisiones rápidas y deterministas más que texto libre.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de decision estructurada no generativo, prefill-only; derivado de NeoHorse-1-4B) |
-| Parametros totales | 4B (segun denominacion del modelo; cifra exacta no disponible) |
-| Parametros activos | no aplica (no se declara arquitectura MoE) |
+| Arquitectura | Transformer (derivada de NeoHorse-1-4B), inferencia prefill-only, no generativa |
+| Parámetros totales | 4B (según nombre del modelo; no se detalla desglose) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (evaluado en tareas en ingles: Nimble, VitaminC, MASSIVE) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (libreria pytorch) |
-
-Otros datos: tamano del repositorio 9,1 GB; pipeline declarado text-classification; modelo base TokenRhythm/NeoHorse-1-4B (relacion finetune); fecha de creacion 23 de septiembre de 2026; ultima actualizacion 25 de septiembre de 2026; 13 likes y 0 descargas en el momento de la consulta.
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 9,1 GB, librería PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna (numero de capas, tipo de atencion, dimension oculta) ni la composicion del dataset de entrenamiento. Lo que si se declara es el regimen de inferencia: prefill-only, sin generacion autoregresiva de texto. El modelo parte de NeoHorse-1-4B, descrito en fuentes secundarias como un modelo post-entrenado a partir de Qwen3.5-4B con 262.000 tokens de contexto, aunque ese dato corresponde al modelo base y no se confirma para NeoHorse-Jev-4B.
+El modelo se basa en NeoHorse-1-4B, un transformer de 4.000 millones de parámetros, y se ha ajustado como *finetune* para realizar predicciones estructuradas sobre un conjunto de decisiones definido por la aplicación. La inferencia es *prefill-only*: el modelo no decodifica texto token a token, sino que proyecta directamente sobre las respuestas candidatas suministradas en la petición. Soporta tres tipos de decisión: Choice (selección entre opciones candidatas con distribución de probabilidad), Noul (probabilidad de sí/no) y Score (valoración esperada sobre niveles ordenados).
 
-La innovacion tecnica central es el mecanismo de decision tipada. La aplicacion define el espacio de respuestas (acciones candidatas, preguntas si/no o niveles de valoracion ordenados) y el modelo devuelve distribuciones sobre esas candidatas, probabilidades si/no y valoraciones esperadas. Esto convierte la capa de decision en un problema de prediccion estructurada supervisada, apto para reglas de enrutamiento y umbrales deterministas. La model card menciona tambien el soporte opcional de peticiones de imagen combinadas con texto, sin especificar el codificador visual empleado.
+La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La evaluación publicada el 24 de septiembre de 2026 indica que el ajuste sobre NeoHorse-1-4B aporta una mejora media de 11,50 puntos porcentuales en los conjuntos Nimble, VitaminC y MASSIVE (83,26 % de precisión media frente a la línea base). El modelo también admite peticiones multimodales que combinan una imagen con texto, aunque no se especifica la arquitectura de fusión visión-lenguaje.
 
 ## Capacidades
 
-- Prediccion de decisiones de tipo Choice: seleccion entre un conjunto de acciones candidatas definidas por la aplicacion, con distribucion de probabilidad asociada.
-- Prediccion de decisiones de tipo Noul: respuesta a preguntas booleanas (si/no) con probabilidad.
-- Prediccion de decisiones de tipo Score: valoracion sobre niveles ordenados, con rating esperado.
-- Multiples preguntas por peticion de texto, lo que permite evaluar varias condiciones en una sola pasada de prefill.
-- Inferencia prefill-only, sin decodificacion autoregresiva, lo que reduce latencia y variabilidad frente a un modelo generativo.
-- Soporte multimodal opcional: una unica imagen combinada con texto por peticion (vision-language).
-- Integracion en flujos agenticos: enrutamiento de peticiones, seleccion de herramientas y comprobacion de condiciones.
-- No es un modelo de generacion de texto libre, razonamiento en lenguaje natural ni generacion de codigo; esas capacidades no se declaran.
-- Capacidades multilingues: no documentadas. Las evaluaciones reportadas son en ingles.
+- Predicción de decisiones estructuradas tipadas: Choice (distribución sobre candidatos), Noul (probabilidad binaria sí/no) y Score (valoración esperada sobre escalas ordenadas).
+- Definición de decisiones por parte de la aplicación: acciones candidatas, preguntas de sí/no y niveles de valoración configurables por el desarrollador.
+- Soporte de múltiples preguntas en una misma petición de texto.
+- Salidas probabilísticas utilizables directamente en lógica de enrutamiento, umbrales y reglas de negocio.
+- Capacidad multimodal visión-lenguaje: una imagen combinada con texto por petición.
+- Inferencia prefill-only sin generación autoregresiva de texto.
+- Integración con vLLM, SGLang y runtime nativo (Python, CLI, HTTP).
+- No es un modelo conversacional ni de generación de texto libre.
 
 ## Casos de uso
 
-- Enrutamiento de peticiones en atencion al cliente: el modelo recibe el mensaje del usuario y una lista de colas o intenciones candidatas, y devuelve la distribucion de probabilidad sobre ellas; la capa de aplicacion aplica umbrales y deriva a la cola correcta sin invocar un LLM generativo.
-- Seleccion de herramientas en agentes: dado el estado de la conversacion y el catalogo de herramientas disponible, el modelo puntua cada candidata y emite la eleccion con su probabilidad, lo que permite descartar llamadas de baja confianza antes de ejecutarlas.
-- Comprobacion de condiciones en pipelines de automatizacion: se definen preguntas si/no (por ejemplo, si un ticket cumple un criterio de escalado) y el modelo devuelve la probabilidad de cada respuesta para alimentar reglas de negocio.
-- Puntuacion de resultados y control de calidad: con decisiones de tipo Score, se valoran respuestas o salidas sobre una escala ordenada, util para filtrado previo o para priorizar revision humana.
-- Moderacion y clasificacion de contenido: al ser un clasificador estructurado, permite etiquetar entradas contra una taxonomia definida por la aplicacion, manteniendo el criterio explicito y auditable.
-- Agentes que operan sobre pantalla o simulacion con imagen: la model card muestra demos de Tetris, Snake, Mahjong, manipulacion robotica, arena de bombas a cuatro jugadores y conduccion autonoma, donde el modelo combina una imagen con texto para emitir la decision de cada paso.
-- Reduccion de coste en orquestadores multiagente: sustituir llamadas generativas por decisiones prefill-only en los puntos de bifurcacion del grafo reduce tokens generados y latencia por paso.
-- Despliegue local con runtime nativo: al ofrecer Python, CLI y HTTP ademas de vLLM y SGLang, encaja en entornos on-premise donde no se permite enviar datos a APIs externas.
+- Enrutamiento de peticiones en agentes: el modelo recibe el estado de la conversación y una lista de rutas candidatas, y devuelve la distribución de probabilidad sobre ellas para que el orquestador seleccione el flujo adecuado con umbrales configurables.
+- Selección de herramientas (*tool calling*): dada una petición del usuario y el catálogo de herramientas disponibles, predice qué herramienta invocar mediante una decisión de tipo Choice, sin necesidad de generar texto intermedio.
+- Verificación de condiciones en pipelines: preguntas de sí/no (Noul) para comprobar precondiciones, validar estados o decidir si continuar un flujo multi-paso.
+- Puntuación de resultados y respuestas: decisión de tipo Score para valorar la calidad de una salida, priorizar candidatos o clasificar por relevancia sobre escalas ordenadas definidas por la aplicación.
+- Control de agentes en entornos interactivos: los demos publicados (Tetris, Snake, manipulación robótica, Mahjong, arena de bombas a cuatro jugadores y conducción autónoma) muestran su uso para seleccionar acciones en cada paso a partir del estado del entorno.
+- Clasificación multimodal asistida: combinación de una imagen con texto para decidir entre categorías o verificar condiciones que dependen de contenido visual, como inspección o triaje de imágenes.
+- Moderación y filtrado determinista: decisiones binarias o multietiqueta con probabilidades para aplicar políticas de contenido en producción, con latencia baja gracias a la inferencia prefill-only.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card con fecha 24 de septiembre de 2026. Todas las puntuaciones estan en escala 0-100; mayor es mejor. Negrita = mejor resultado, subrayado = segundo mejor, entre las entradas open-weight listadas.
+Resultados publicados por el autor (24 de septiembre de 2026), escala 0–100, mayor es mejor. NeoHorse-Jev-4B usa resultados con vLLM para JevBench, Kev y OpenJev; Nimble, VitaminC y MASSIVE mantienen la evaluación original sobre subconjunto fijo.
 
 | Modelo | JevBench | Kev | OpenJev text | Nimble | VitaminC | MASSIVE | AVG |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Open-Jev-9B | 77,13 | 77,87 | 65,39 | 80,50 | 68,28 | 84,86 | 75,67 |
-| Kev-4B | 73,71 | 81,47 | 54,75 | 73,40 | 76,46 | 85,71 | 74,25 |
-| Laya English | 55,82 | 61,30 | 40,07 | 45,04 | 78,63 | 68,57 | 58,24 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Open-Jev-9B | **77,13** | 77,87 | **65,39** | 80,50 | 68,28 | 84,86 | 75,67 |
+| Kev-4B | 73,71 | 81,47 | 54,75 | 73,40 | 76,46 | **85,71** | 74,25 |
+| Laya English | 55,82 | 61,30 | 40,07 | 45,04 | **78,63** | 68,57 | 58,24 |
 | Laya Typed Decisions | -- | -- | -- | 48,94 | 78,30 | 65,43 | -- |
 | NeoHorse-1-4B (base) | -- | -- | -- | 69,15 | 63,27 | 82,86 | -- |
-| NeoHorse-Jev-4B | 75,73 | 81,92 | 58,74 | 87,23 | 77,13 | 85,43 | 77,70 |
+| **NeoHorse-Jev-4B** | 75,73 | **81,92** | 58,74 | **87,23** | 77,13 | 85,43 | **77,70** |
 
-Notas de la propia model card: la columna AVG es una media de igual peso de los seis grupos, calculada antes de redondear, y solo se clasifican los modelos con los seis grupos completos; las imagenes y los juegos no entran en el agregado. Los resultados de JevBench, Kev y OpenJev para NeoHorse-Jev-4B se obtuvieron con vLLM, mientras que Nimble, VitaminC y MASSIVE conservan la evaluacion original sobre subconjunto fijo. El modelo lidera Kev (81,92) y Nimble (87,23), pero Open-Jev-9B supera en JevBench y OpenJev, Kev-4B en MASSIVE y los checkpoints Laya en VitaminC.
-
-Dato adicional reportado: 83,26% de precision media en Nimble, VitaminC y MASSIVE, 11,50 puntos porcentuales por encima del baseline NeoHorse-1-4B. No se han publicado resultados de latencia ni throughput.
+El AVG es la media de igual peso de los seis grupos, calculada antes del redondeo; no es precisión agrupada por ejemplo ni un leaderboard oficial combinado. Solo se clasifican los modelos con los seis grupos completos. NeoHorse-Jev-4B lidera en Kev (81,92) y Nimble (87,23); Open-Jev-9B es superior en JevBench y OpenJev, Kev-4B en MASSIVE y Laya en VitaminC. La ventaja agregada refleja el equilibrio entre tareas, no una victoria en cada benchmark.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la documentacion. Como referencia orientativa por tamano (4B), en fp16/bf16 serian del orden de 8-9 GB de pesos; en int8 en torno a 4-5 GB y en 4 bits en torno a 2,5-3,5 GB, mas overhead de activaciones y cache. Estas cifras son estimaciones por conteo de parametros, no datos del autor.
-- GPU recomendadas: no declaradas. El despliegue documentado es via vLLM y SGLang, lo que permite servir en GPUs de centro de datos como A100, H100 o L40S, y tambien en GPUs de consumo con VRAM suficiente.
-- GPU de consumo: con 4B de parametros, el modelo es candidato a ejecutarse en GPUs de consumo (RTX 4090, 4080 o similares) en cuantizacion de 8 o 4 bits, aunque no hay confirmacion oficial ni formatos cuantizados publicados.
-- Opciones de despliegue declaradas: vLLM, SGLang y runtime nativo con interfaz Python, CLI y HTTP. No se menciona soporte de llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma oficial. Con 4B parámetros y pesos safetensors en FP16/BF16, el repo de 9,1 GB sugiere aproximadamente 8–9 GB de VRAM para inferencia en precisión completa; en cuantizaciones de 8 bits o 4 bits podría reducirse, aunque el autor no publica cuantizaciones.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una GPU con 16 GB o más (RTX 4090, A100, H100) cubre la inferencia en precisión completa; GPUs consumer de 12 GB podrían requerir cuantización.
+- Cabe en GPU consumer: previsiblemente sí en RTX 4090 (24 GB) y modelos con 16 GB o más; no confirmado para 8–12 GB sin cuantización.
+- Opciones de despliegue: vLLM, SGLang y runtime nativo de TokenRhythm (Python, CLI, HTTP). No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La inferencia prefill-only elimina la decodificación autoregresiva, lo que en principio reduce la latencia frente a modelos generativos del mismo tamaño, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | AVG (6 grupos) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| NeoHorse-Jev-4B | 4B | no disponible | 77,70 | Apache-2.0 | Hugging Face, ModelScope |
+| Modelo | Parámetros | Contexto | AVG (6 grupos) | Licencia | Disponibilidad |
+| --- | --- | --- | ---: | --- | --- |
+| NeoHorse-Jev-4B | 4B | no disponible | **77,70** | Apache 2.0 | Hugging Face, ModelScope |
 | Open-Jev-9B | 9B | no disponible | 75,67 | no disponible | Hugging Face |
 | Kev-4B | 4B | no disponible | 74,25 | no disponible | Hugging Face |
 | Laya English | no disponible | no disponible | 58,24 | no disponible | Hugging Face |
-| NeoHorse-1-4B (base) | 4B | 262K segun fuente secundaria | no disponible (solo 3 grupos) | Apache-2.0 | Hugging Face |
 
-NeoHorse-Jev-4B es el unico de la comparativa que combina licencia Apache-2.0 explicita con resultados completos en los seis grupos. Open-Jev-9B duplica el tamano de parametros y obtiene mejor puntuacion en dos de los seis grupos, mientras que Kev-4B, del mismo tamano, supera ligeramente a NeoHorse-Jev-4B en MASSIVE. La ventaja del agregado de NeoHorse-Jev-4B procede del equilibrio entre tareas, no de un liderazgo en todos los benchmarks.
+NeoHorse-Jev-4B obtiene el mejor agregado entre los modelos de decisión de pesos abiertos con resultados completos, con un tamaño menor que Open-Jev-9B. La comparación se limita a los benchmarks publicados por el autor; no hay datos independientes.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre, codigo ni razonamiento en lenguaje natural. Cualquier expectativa de uso como LLM conversacional queda fuera de su diseno.
-- Solo predice sobre el espacio de respuestas que define la aplicacion. La calidad de la decision depende criticamente de que las candidatas, preguntas y escalas esten bien formuladas.
-- No se documentan sesgos evaluados. Al no declararse composicion del dataset ni idiomas soportados, no es posible estimar sesgos por dominio, idioma o demografia.
-- Riesgo de alucinacion: al no generar texto, el fallo tipico no es una afirmacion falsa sino una decision mal calibrada. Las probabilidades devueltas deben validarse con umbrales y supervision antes de automatizar acciones irreversibles.
-- Idiomas: no se declaran idiomas soportados; las evaluaciones publicadas son en ingles. El rendimiento fuera de ese idioma es desconocido.
-- Longitud de contexto: no disponible. Esto limita la planificacion de despliegues con estados de agente largos o historiales extensos.
-- Benchmark propio: JevBench, Kev y Nimble proceden del ecosistema del propio autor o de comparativas afines; el agregado AVG es una media de igual peso definida por TokenRhythm y no una metrica oficial de leaderboard.
-- Licencia Apache-2.0, que permite uso comercial, pero conviene revisar el fichero LICENSE especifico del componente Jev en el repositorio de GitHub por si anade condiciones.
-- Repositorio con 0 descargas y creado recientemente; no hay evidencia de adopcion en produccion ni de soporte a largo plazo.
-- Adopcion del formato de salida: al no ser un modelo generativo, requiere integracion a medida en el orquestador; no es drop-in replacement de una API de chat.
-- Cifras de VRAM, latencia y throughput no estan publicadas; cualquier planificacion de capacidad debe medirse en el entorno objetivo.
+- No es un modelo generativo: no produce texto libre ni mantiene conversaciones; solo emite decisiones sobre las opciones que define la aplicación.
+- La model card no detalla sesgos conocidos, composición del dataset ni procesos de alineación, por lo que el riesgo de sesgo no está caracterizado.
+- Riesgo de calibración deficiente de las probabilidades en dominios alejados de los datos de entrenamiento; los umbrales deben validarse con datos propios.
+- Idiomas soportados no disponibles: no se confirma el rendimiento multilingüe, y los benchmarks publicados están en inglés.
+- Longitud de contexto no disponible, lo que impide planificar su uso con estados muy largos.
+- Capacidad multimodal limitada a una única imagen por petición según la información disponible.
+- Los benchmarks son autoinformados por el autor y con protocolos propios (subconjuntos fijos, media de igual peso); no hay validación independiente.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar los términos del modelo base NeoHorse-1-4B y las dependencias del runtime.
+- El AVG agregado no equivale a precisión por ejemplo ni a un leaderboard oficial; no debe citarse como métrica única de calidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B
-- Guia de despliegue: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/blob/main/DEPLOYMENT.md
+- Modelo en Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B
 - Modelo base NeoHorse-1-4B: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
-- Coleccion NeoHorse Jev en Hugging Face: https://huggingface.co/collections/TokenRhythm/neohorse-jev
 - Repositorio GitHub: https://github.com/TokenRhythm/NeoHorse
-- README del proyecto: https://github.com/TokenRhythm/NeoHorse/blob/main/README.md
-- Licencia del componente Jev: https://github.com/TokenRhythm/NeoHorse/blob/main/jev/LICENSE
-- ModelScope: https://www.modelscope.cn/models/TokenRhythm/NeoHorse-Jev-4B
-- Web de la empresa: https://tokenrhythm.ai/
-- Perfil en X/Twitter: https://x.com/opensquilla
-- Commit de release fa86d48: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/commit/fa86d485170aa1934a379370c63f6a8dabbbf588
-- Ficha de NeoHorse-1-4B en AI/TLDR (fuente secundaria): https://ai-tldr.dev/models/neohorse-1-4b/
+- Colección NeoHorse Jev en Hugging Face: https://huggingface.co/collections/TokenRhythm/neohorse-jev
+- Modelo en ModelScope: https://www.modelscope.cn/models/TokenRhythm/NeoHorse-Jev-4B
+- Guía de despliegue: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/blob/main/DEPLOYMENT.md
+- Licencia en GitHub: https://github.com/TokenRhythm/NeoHorse/blob/main/jev/LICENSE
+- Sitio de la empresa: https://tokenrhythm.ai/
+- Twitter / X: https://x.com/opensquilla
+- Open-Jev-9B: https://huggingface.co/ZefanCai/Open-Jev-9B
+- Kev-4B: https://huggingface.co/jaredpalmer/kev-4b
+- Laya English: https://huggingface.co/convaiinnovations/laya
+- Laya Typed Decisions: https://huggingface.co/convaiinnovations/laya-typed-decisions
+- Paper referenciado (arXiv:2609.08183): https://arxiv.org/abs/2609.08183

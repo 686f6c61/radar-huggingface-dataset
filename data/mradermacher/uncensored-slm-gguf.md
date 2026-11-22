@@ -2,79 +2,90 @@
 
 ## Resumen
 
-Uncensored-SLM-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo original mrzenin/Uncensored-SLM. No se trata de un modelo entrenado desde cero por este autor, sino de una conversión y cuantización del modelo base publicado por mrzenin, orientada a su uso con motores de inferencia compatibles con GGUF como llama.cpp u Ollama.
+Uncensored-SLM-GGUF es una colección de cuantizaciones en formato GGUF del modelo mrzenin/Uncensored-SLM, un modelo de lenguaje de aproximadamente 1.730 millones de parámetros (1.728.801.600 segun los tensores en safetensors) derivado de la familia Liquid AI LFM3. El trabajo de cuantización lo firma mradermacher, un conocido publicador de versiones GGUF para la comunidad, y el modelo base ha sido sometido a un proceso de "abliteration" o "decensoring" que elimina total o parcialmente los mecanismos de rechazo y alineación del modelo original, orientándolo a casos de uso de rol y generación sin filtros.
 
-La información pública disponible es muy limitada: la model card del repositorio se reduce a metadatos internos del proceso de cuantización (versión de cuantización 2, tensor de salida cuantizado, tipo de conversión hf) y a una lista de variantes generadas. No se documentan arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia del modelo subyacente.
+El modelo se distribuye en múltiples niveles de cuantización (desde Q2_K de 0,9 GB hasta f16 de 3,6 GB), lo que lo hace especialmente atractivo para despliegue en hardware de consumo y en el borde (edge). La arquitectura subyacente se anuncia como híbrida, siguiendo la línea de los modelos LFM de Liquid AI, aunque la model card no detalla la composición exacta de capas ni el tamaño de contexto.
 
-El interés del repositorio radica en que ofrece múltiples niveles de cuantización (desde Q2_K hasta F16, incluyendo variantes IQ4_XS y Q8_0) que permiten desplegar el modelo en hardware muy diverso, desde GPUs de consumo hasta servidores. El nombre sugiere un modelo de lenguaje pequeño (SLM) con ajuste orientado a reducir restricciones de contenido, pero esta característica no está documentada técnicamente en la información disponible.
+La relevancia actual del modelo radica en su tamaño contenido (1,7B), su formato GGUF listo para llama.cpp/Ollama y su orientación explícita a usos sin censura, lo que lo convierte en una opción práctica para desarrolladores que necesitan un modelo pequeño, ejecutable localmente y sin restricciones de contenido para tareas creativas o de investigación. No obstante, la ausencia de licencia declarada y de benchmarks publicados limita seriamente su uso en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer causal con arquitectura híbrida (tag "hybrid-architecture"); detalles no disponibles |
+| Parametros totales | 1.728.801.600 (1,73B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | inglés (tag `language: en`); el resto no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye presumiblemente en safetensors según el campo convert_type: hf |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base mrzenin/Uncensored-SLM: no se especifica si es un transformer denso, un modelo MoE, un modelo híbrido ni su número de parámetros. Tampoco se documentan los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+El modelo base mrzenin/Uncensored-SLM se presenta con las etiquetas `liquid-ai`, `lfm3`, `hybrid-architecture` y `custom_code`, lo que sugiere una arquitectura derivada de la familia LFM3 de Liquid AI, que combina capas de atención con capas de estado recurrente o convolucional en un esquema híbrido. La model card no proporciona la composición exacta de capas, el número de cabezas de atención, la dimensión oculta ni el mecanismo híbrido concreto, por lo que estos datos deben considerarse no disponibles.
 
-Lo único verificable es el proceso de cuantización aplicado por mradermacher: una conversión desde el formato de Hugging Face (convert_type: hf) con quantize_version 2 y output_tensor_quantised activado, lo que indica que los tensores de salida se cuantizan de forma estática. Se han generado doce variantes de cuantización que cubren desde 2 bits (Q2_K) hasta 16 bits (F16), pasando por cuantizaciones K-quant e IQ4_XS (importancia mixta de 4 bits).
+El proceso de entrenamiento tampoco está documentado en la información proporcionada: no se indica el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. Lo que sí es explícito es el proceso de "abliteration" o "decensoring", que modifica los pesos para eliminar la dirección de rechazo aprendida durante la alineación, dando lugar a un modelo "heretic" y "uncensored". Esta técnica suele aplicarse mediante la proyección ortogonal de los pesos respecto a la dirección de rechazo identificada en las activaciones, aunque el autor no detalla el método exacto empleado.
 
 ## Capacidades
 
-- Generación de texto: capacidad presumible por tratarse de un modelo de lenguaje, aunque no se documenta explícitamente.
-- Razonamiento y código: no disponible.
-- Matemáticas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Ajuste "uncensored": el nombre del modelo sugiere un ajuste orientado a reducir rechazos de contenido, pero no hay documentación técnica que lo confirme ni que detalle el método empleado.
+- Generación de texto y conversación multi-turno en inglés.
+- Razonamiento y roleplay, según las etiquetas declaradas por el autor.
+- Generación de texto sin los filtros de rechazo del modelo original (comportamiento "uncensored").
+- Soporte de arquitectura híbrida orientada a eficiencia en el borde (edge-ai).
+- Compatibilidad con endpoints estándar de text-generation (`endpoints_compatible`).
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de pensamiento explícito.
+- Capacidades multilingües no documentadas más allá del inglés.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las variantes Q2_K a Q4_K_M permiten ejecutar el modelo en GPUs con poca VRAM o en CPU mediante llama.cpp, siempre que se conozca previamente el tamaño real del modelo base (no documentado).
-- Prototipado local con Ollama: la disponibilidad en GGUF facilita la integración en flujos de trabajo locales de experimentación sin depender de servicios en la nube.
-- Investigación sobre cuantización: el repositorio ofrece un conjunto amplio de variantes (doce niveles) útil para comparar la degradación de calidad entre cuantizaciones de un mismo modelo base.
-- Evaluación de modelos con ajuste "uncensored": para investigadores que estudien el comportamiento de modelos con restricciones de contenido reducidas, aunque la falta de documentación limita la reproducibilidad.
-- Generación de texto offline: en entornos sin conectividad, usando llama.cpp con las variantes Q4_K_M o Q5_K_M como compromiso entre calidad y tamaño.
-- Servido en servidores modestos: las variantes Q8_0 y F16 pueden servirse con mayor fidelidad en máquinas con suficiente memoria, si el tamaño del modelo base lo permite.
+- Roleplay y narrativa interactiva local: el modelo, al estar "decensored", permite conversaciones de ficción sin los rechazos típicos de modelos alineados; su tamaño de 1,7B y sus cuantizaciones de 1-2 GB lo hacen viable en portátiles y equipos sin GPU dedicada.
+- Prototipado rápido en el borde: con cuantizaciones Q4_K_S o Q4_K_M de aproximadamente 1,2 GB, se puede desplegar en dispositivos con poca memoria (Raspberry Pi 5 con 8 GB, mini-PC, móviles de gama alta) usando llama.cpp u Ollama para asistentes locales.
+- Investigación sobre alineación y seguridad: al ser una versión abliterated, sirve como caso de estudio para medir la eficacia de las técnicas de rechazo y su eliminación, comparando respuestas con el modelo base original.
+- Generación creativa de contenido sin restricciones temáticas: escritura de guiones, diálogos o ficción con temáticas que los modelos alineados suelen rechazar, ejecutándose en local para preservar la privacidad del contenido.
+- Chatbot de escritorio offline: integrado en aplicaciones de escritorio mediante llama.cpp, ofrece un asistente conversacional que no envía datos a la nube, adecuado para entornos con requisitos de confidencialidad.
+- Evaluación comparativa de cuantizaciones: la colección incluye 12 niveles de cuantización, lo que permite a investigadores medir el impacto de la cuantización en la calidad de un modelo pequeño y en su comportamiento tras el decensoring.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el número de parámetros del modelo base. La estimación depende directamente de ese dato y del nivel de cuantización elegido.
-- GPU recomendadas: no disponible por la misma razón. Como referencia general, las variantes Q4_K_M y Q5_K_M son las habituales para GPUs de consumo (RTX 3060, 4060, 4090) en modelos de hasta 7-13B, pero no se puede confirmar que este modelo encaje en ese rango.
-- Compatibilidad con GPU de consumo: no confirmable sin conocer el tamaño del modelo.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier motor compatible con GGUF (koboldcpp, LM Studio, text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 1 GB para Q2_K, 1,2-1,4 GB para Q4_K_M/Q5_K_M, 1,9 GB para Q8_0 y 3,6 GB para f16 (los tamaños de archivo son una cota superior razonable de memoria necesaria, con overhead adicional de contexto).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para cuantizaciones bajas (GTX 1650, RTX 3050, RTX 4060); para f16 se recomienda al menos 4-6 GB (RTX 3060, RTX 4060 Ti). En entornos de servidor, A100/H100 son innecesarias por el tamaño del modelo, pero funcionarían sin problema.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones, incluidas tarjetas de gama baja y GPUs integradas con memoria unificada.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. También puede ejecutarse en CPU pura.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño (1,7B) se espera un throughput alto en CPU moderna y muy alto en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables porque se desconoce el tamaño, la arquitectura y el rendimiento del modelo base mrzenin/Uncensored-SLM.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Uncensored-SLM-GGUF (este) | 1,73B | no disponible | no disponible | GGUF | Derivado LFM3 abliterated, 12 cuantizaciones |
+| LiquidAI LFM2-1.2B | 1,2B | 32K (según documentación pública de Liquid AI) | LFM Open License | safetensors, GGUF | Modelo original alineado, arquitectura híbrida |
+| Llama 3.2 1B Instruct | 1,24B | 128K | Llama 3.2 Community License | safetensors, GGUF | Alineado, multilingüe, amplia adopción |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32K | Apache 2.0 | safetensors, GGUF | Alineado, multilingüe, benchmarks públicos |
+
+La comparativa se basa en datos públicos de los modelos alternativos; los datos del modelo de esta ficha (contexto, licencia) no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Falta total de documentación técnica: no se especifican arquitectura, parámetros, contexto ni datos de entrenamiento, lo que impide evaluar su idoneidad para producción.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible consultar la licencia del modelo base mrzenin/Uncensored-SLM antes de cualquier despliegue.
-- Riesgo de alucinación: inherente a los modelos de lenguaje, pero no cuantificado por falta de benchmarks.
-- Sesgos: no documentados; al no conocerse el dataset de entrenamiento, no se pueden evaluar sesgos de género, raza, idioma o ideología.
-- Ajuste "uncensored": la reducción de restricciones de contenido puede implicar mayor probabilidad de generar material inapropiado, ofensivo o factualmente incorrecto; requiere filtros adicionales en aplicaciones de cara al público.
-- Idiomas: no se especifica qué idiomas soporta el modelo, por lo que no se puede garantizar un rendimiento adecuado en castellano.
-- Fecha de creación futura (2026-11-18): el repositorio muestra una fecha de creación posterior a la actual, lo que puede indicar un error de metadatos o un repositorio de prueba; conviene verificar su vigencia.
-- Cero descargas y cero likes: no hay evidencia de uso ni validación por parte de la comunidad.
+- Licencia no declarada: no se especifica la licencia del modelo base ni de las cuantizaciones, lo que impide determinar si el uso comercial está permitido. No debe usarse en producción sin aclarar este punto con el autor.
+- El proceso de abliteration/decensoring elimina los mecanismos de rechazo, lo que aumenta el riesgo de generar contenido dañino, ilegal o sexualmente explícito sin filtros; requiere moderación externa en cualquier despliegue público.
+- Riesgo elevado de alucinación: al tratarse de un modelo de 1,7B, su conocimiento factual es limitado y su fiabilidad en tareas de razonamiento complejo es baja en comparación con modelos mayores.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está documentado y probablemente sea deficiente.
+- Longitud de contexto no documentada: no se puede garantizar el manejo de conversaciones largas ni de documentos extensos.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad, lo que dificulta comparar con alternativas alineadas.
+- El decensoring puede degradar capacidades generales (razonamiento, instrucciones) respecto al modelo original, un efecto conocido en modelos abliterated.
+- La fecha de creación del repositorio (2026) y la ausencia de likes/descargas moderadas (922 descargas) sugieren poca validación por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Uncensored-SLM-GGUF
 - Modelo base: https://huggingface.co/mrzenin/Uncensored-SLM
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Uncensored-SLM-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Uncensored-SLM-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

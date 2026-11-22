@@ -2,93 +2,98 @@
 
 ## Resumen
 
-Rein-NPC-4B-GGUF es la distribucion en formato GGUF de Rein-NPC-4B, un modelo derivado de Qwen3.5-4B desarrollado por el usuario jmc0. Su particularidad es que integra en un unico modelo de lenguaje dos funciones diferenciadas: la conversacion convencional propia de Qwen3.5-4B y un mecanismo de decision tipada orientado a personajes no jugadores (NPC) en videojuegos. Para ello reserva 64 filas entrenadas en la tabla de embeddings, correspondientes a los tokens especiales `<|rein_0|>` a `<|rein_63>` (ids 248077 a 248140), mientras que la cabeza de salida mantiene la tabla original del modelo base intacta.
+Rein-NPC-4B-GGUF es la distribución en formato GGUF de Rein-NPC-4B, un modelo de lenguaje de 4.841.450.496 parámetros construido sobre Qwen3.5-4B al que se le ha incorporado el modelo de decisión de Rein como 64 filas entrenadas en la tabla de embeddings. Lo desarrolla jmc0 y está pensado específicamente para NPC de videojuegos: el modelo no solo conversa, sino que también toma decisiones tipadas (tool calling) dentro del mismo proceso de `llama-server`.
 
-El modelo resuelve el problema de tener que desplegar dos procesos separados (uno conversacional y otro de toma de decisiones) en entornos de juego: un unico proceso `llama-server` puede atender tanto el chat como las decisiones de accion del NPC. La decision se emite como una distribucion de probabilidad sobre opciones etiquetadas con letras (por ejemplo, `check_table_availability`, `process_reservation` o `none`), lo que permite leer la respuesta directamente desde los logprobs del servidor.
+La propuesta técnica es original: cada turno del jugador se resuelve con dos peticiones al servidor. Primero una completion de un solo token que selecciona entre opciones etiquetadas con letras (A, B, C...) mediante `top_logprobs`, y después la respuesta conversacional normal a través de `/v1/chat/completions`. Las 64 filas de decisión viven en la tabla de embeddings como tokens especiales (`<|rein_0|>` a `<|rein_63|>`, ids 248077 a 248140) y la cabeza de salida es la tabla original de Qwen3.5-4B sin tocar, de modo que esos tokens nunca aparecen en el chat.
 
-Con 4.841.450.496 parametros totales (aproximadamente 4,8 mil millones), arquitectura transformer derivada de Qwen3.5-4B con 32 capas (8 de atencion completa), licencia Apache-2.0 y soporte para ingles, portugues y otros idiomas, esta pensado para ejecutarse en GPUs de consumo. El repositorio ocupa 17,9 GB e incluye cuantizaciones bf16, Q8_0 y Q4_K_M, ademas de un fichero `rein_config.json` con el protocolo de decision.
+El modelo es relevante para desarrolladores de juegos que necesitan un NPC capaz de razonar y decidir con tool calling en hardware de consumo: el archivo Q4_K_M ocupa 3,07 GB y con dos slots de 16k cabe en 6 GB de VRAM. La licencia Apache 2.0 facilita su integración comercial. Los idiomas declarados son inglés, portugués y multilingüe.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-4B), 32 capas, 8 de atencion completa |
-| Parametros totales | 4.841.450.496 (aprox. 4,8 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible como limite oficial; el ejemplo de despliegue usa 32768 tokens |
-| Tipos de cuantizacion | bf16, Q8_0, Q4_K_M |
-| Idiomas soportados | en, pt, multilingual |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (generado desde safetensors con `convert_hf_to_gguf.py` y `llama-quantize`) |
+| Arquitectura | Transformer (Qwen3.5-4B) con 64 filas de decisión entrenadas en la tabla de embeddings; 8 capas de atención completa de 32 |
+| Parámetros totales | 4.841.450.496 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens (configuración recomendada en `llama-server`); coste de KV cache de ~32 KB por token |
+| Tipos de cuantización | Q4_K_M (3,07 GB), Q8_0 (5,16 GB), bf16 (9,70 GB) |
+| Idiomas soportados | Inglés, portugués, multilingüe |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); también disponible el checkpoint safetensors del modelo base |
+| Modelo base | jmc0/Rein-NPC-4B (a su vez basado en Qwen3.5-4B) |
+| Tamaño del repo | 21,0 GB |
+| Librería | llama.cpp |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B, un transformer de 32 capas de las cuales 8 son de atencion completa, con aproximadamente 32 KB de cache KV por token. Sobre esa base, Rein-NPC-4B incorpora 64 filas entrenadas en la tabla de embeddings que actuan como tokens de decision tipada. La cabeza de salida se mantiene como la tabla original del modelo base, sin modificar, de modo que los 64 tokens de decision nunca se generan en el flujo conversacional: segun la model card, sobre 984.371 posiciones de chat retenidas su probabilidad media es de 6,5e-8 y nunca entran en el top 100.
+El modelo parte de Qwen3.5-4B, un transformer de 32 capas del que 8 son de atención completa. Sobre esa base, el autor ha incorporado el modelo de decisión de Rein como 64 filas entrenadas dentro de la tabla de embeddings, manteniendo la cabeza de salida original del modelo base como cabeza separada. Esto permite que un mismo proceso `llama-server` converse y decida: las filas de decisión se activan mediante tokens especiales que llama.cpp trata como tokens individuales.
 
-El entrenamiento se realizo sobre el checkpoint en safetensors y la conversion a GGUF se hizo con las herramientas estandar de llama.cpp. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; esa informacion se remite a la model card principal de `jmc0/Rein-NPC-4B`, que no se incluye en la informacion disponible. La innovacion tecnica destacable es el protocolo de decision: el prompt se estructura con un contexto de personaje, la conversacion y una lista de acciones etiquetadas con letras, y la respuesta se lee como distribucion de probabilidad sobre esas letras, renormalizada a temperatura 0,812.
+El mecanismo de decisión funciona con prompts de texto plano que combinan el estado (persona y escena, seguido de la conversación en el marcado de turnos de Qwen) y una fila por regla compuesta de 48 soft tokens, la pregunta, las opciones tras letras, 16 soft tokens y la marca de respuesta. Se solicita un token con sus candidatos principales y se aplica un escalado de log-probabilidades dividiendo por 0,812 antes del softmax. La conversión a GGUF se realizó con `convert_hf_to_gguf.py` en bf16 y `llama-quantize` desde el checkpoint safetensors. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno con la plantilla de chat de Qwen3.5-4B.
-- Decision tipada de acciones: selecciona entre opciones etiquetadas (por ejemplo, invocar una herramienta concreta o responder `none`) emitiendo una distribucion de probabilidad sobre las letras de las opciones.
-- Soporte de tool calling y function calling a traves del mecanismo de decision tipada.
-- Integracion de chat y decision en un unico proceso `llama-server`, con varios slots para intercalar conversacion y decisiones.
-- Capacidades multilingues: ingles, portugues y otros idiomas (etiqueta `multilingual`).
-- Modo de lectura de decisiones mediante `n_probs` en el endpoint `/completion`, con `n_predict` 1 y temperatura 0.
-- No se documentan capacidades de vision, audio ni modo de razonamiento extendido (thinking) en la informacion disponible.
+- Generación de texto conversacional multi-turno con la calidad de Qwen3.5-4B en la cuantización elegida.
+- Toma de decisiones tipadas mediante un token de elección entre opciones etiquetadas con letras, con probabilidades calibradas.
+- Tool calling / function calling: la decisión puede abrir una llamada a herramienta que `llama-server` continúa y devuelve ya parseada.
+- Soporte de agentes y razonamiento multi-paso: cada regla de la ficha del NPC es una petición de decisión sobre el mismo estado, con `cache_prompt` para reutilizar la caché.
+- Control de tool calling mediante `logit_bias` para prohibir `<tool_call>` cuando la decisión indica que no procede.
+- Capacidades multilingües en inglés, portugués y otros idiomas.
+- Integración en navegador mediante wllama (llama.cpp en WebAssembly, con WebGPU cuando está disponible).
 
 ## Casos de uso
 
-- NPC conversacionales en videojuegos: un unico proceso `llama-server` atiende el dialogo del personaje y, en la misma sesion, decide que accion del juego corresponde ejecutar (consultar disponibilidad, procesar una reserva, etc.), lo que simplifica el despliegue en el cliente o en un servidor local.
-- Sistemas de dialogo con herramientas en entornos de simulacion: el modelo puede elegir entre un conjunto acotado de funciones definidas por el desarrollador y devolver `none` cuando la peticion del usuario no encaja con ninguna, evitando invocaciones erroneas.
-- Prototipado rapido de agentes de juego en GPUs de consumo: el fichero Q4_K_M (3,07 GB) permite ejecutar el modelo en portatiles y GPUs consumer, lo que facilita iterar sobre guiones y arboles de decision sin infraestructura dedicada.
-- Atencion al cliente con acciones acotadas: en dominios donde las respuestas deben acompanarse de una accion concreta (reservas, consultas de disponibilidad), el modelo combina conversacion y seleccion de herramienta en una sola llamada.
-- Investigacion sobre decision tipada en modelos pequenos: los 64 tokens de decision y el protocolo de lectura por logprobs ofrecen un banco de pruebas reproducible para estudiar como la cuantizacion afecta a la seleccion de opciones.
-- Despliegue en ingles y portugues: adecuado para productos orientados a mercados lusofonos y angloparlantes, con la posibilidad de anadir otros idiomas gracias a la base multilingue de Qwen3.5-4B.
-- Evaluacion de robustez frente a cuantizacion: el autor publica una comparativa entre bf16 y Q4_K_M sobre 104 preguntas, util para decidir el nivel de cuantizacion en produccion.
+- NPC de comerciante en un RPG: el modelo decide si mostrar el inventario, aplicar una regla de precio o no hacer nada, y a continuación genera el diálogo correspondiente. La ficha de ejemplo `examples/shop-keeper.yaml` incluye persona, escena, cinco herramientas y tres reglas.
+- NPC con reglas de comportamiento condicional: cada regla yes/no se evalúa como una petición de decisión independiente y, cuando se dispara, su línea base se añade al mensaje del jugador.
+- Diálogo multi-turno con contexto largo: los 32k tokens de ventana permiten mantener conversaciones extensas con memoria de la escena y del historial.
+- Despliegue en hardware de consumo: el archivo Q4_K_M de 3,07 GB con dos slots de 16k cabe en 6 GB de VRAM, adecuado para portátiles y GPUs de gama media.
+- Prototipado en navegador: el playground de Hugging Face Spaces ejecuta el modelo en el navegador del visitante con wllama y WebGPU, útil para demos sin infraestructura de servidor.
+- Integración en motores de juego: la model card documenta adaptadores para LLMUnity, la API C de llama.cpp, wllama y vLLM, lo que facilita incorporar el modelo a pipelines de juego existentes.
+- Sistemas de decisión con trazabilidad: al separar la decisión (un token con probabilidades) de la respuesta, se puede auditar y depurar por qué un NPC eligió una acción concreta.
 
 ## Benchmarks y rendimiento
 
-La model card no incluye resultados de benchmarks estandar (MMLU, HumanEval, GSM8K). Si aporta una comparativa de fidelidad de las decisiones entre el fichero cuantizado y el modelo en PyTorch bf16, sobre 104 preguntas de 20 registros de test retenidos:
+No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible. La model card sí incluye una evaluación específica del efecto de la cuantización sobre las decisiones, comparando Q4_K_M vía `llama-server` con el modelo en PyTorch bf16 sobre 104 preguntas de 20 registros de test reservados:
 
-| Fichero | Misma opcion que bf16 | Brecha media de probabilidad maxima | Peor caso |
+| Archivo | Misma opción que bf16 | Brecha media de probabilidad máxima | Peor caso |
 |---|---|---|---|
 | Q4_K_M | 101 de 104 | 0,028 | 0,21 |
 
-Segun el autor, las tres discrepancias corresponden a preguntas que el propio modelo bf16 deja abiertas (su opcion principal con 0,41, 0,62 y 0,38 de probabilidad); en las 90 preguntas en las que bf16 asigna 0,8 o mas a una opcion, Q4_K_M acierta la misma opcion en las 90. No se han publicado resultados de benchmarks estandar en la informacion disponible.
+Todas las discrepancias corresponden a preguntas que el propio modelo bf16 deja abiertas (su opción principal con 0,41, 0,62 y 0,38). En las 90 preguntas donde bf16 asigna 0,8 o más a una opción, Q4_K_M elige la misma opción las 90 veces. Los 64 tokens de decisión nunca aparecen en el chat: sobre 984.371 posiciones de chat reservadas, su probabilidad media es 6,5e-8 y nunca entran en el top 100.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: bf16 requiere aproximadamente 9,70 GB solo en pesos; Q8_0 unos 5,16 GB; Q4_K_M unos 3,07 GB. A ello se suma la cache KV, de aproximadamente 1 GB por slot para 32k de contexto (unos 32 KB por token).
-- El autor indica que el fichero Q4_K_M con dos slots de 16k cabe en 6 GB de VRAM.
-- GPU recomendadas: bf16 esta pensado para GPUs de 24 GB (por ejemplo, RTX 4090 o A100); Q8_0 para GPUs de 8 GB o mas; Q4_K_M para GPUs consumer y portatiles.
-- Cabe en GPUs consumer: si, especialmente con Q4_K_M y Q8_0.
-- Opciones de despliegue: llama.cpp (`llama-server`), con endpoints compatibles con `/v1/chat/completions` y `/completion`; el paquete Python `rein` incluye `rein.play.server --decider` y `ServerDecisionBackend`. No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
-- Latencia y throughput: no disponibles. El autor recomienda configurar dos o mas slots (`--parallel 2`) para intercalar chat y decisiones.
+- VRAM estimada: Q4_K_M ~3,07 GB de pesos; Q8_0 ~5,16 GB; bf16 ~9,70 GB. El KV cache cuesta ~32 KB por token, es decir, ~1 GB por slot con contexto de 32k.
+- Configuración recomendada: Q4_K_M con dos slots de 16k cabe en 6 GB de VRAM.
+- GPUs: Q4_K_M para GPUs de consumo y portátiles; Q8_0 para GPUs de 8 GB o más; bf16 para GPUs de 24 GB.
+- Cabe en GPU de consumo: sí, con el archivo Q4_K_M en GPUs de 6 GB o más.
+- Opciones de despliegue: `llama-server` (recomendado, con `-ngl 99 -c 32768 --parallel 2`), API C de llama.cpp, LLMUnity, wllama (navegador) y vLLM.
+- Latencia: en el playground con GPU de escritorio, un turno completo (tres decisiones más la respuesta) tarda unos segundos; sin WebGPU la build de CPU funciona lentamente. No se dispone de cifras de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Rein-NPC-4B-GGUF | 4,8 B | no disponible (ejemplo con 32k) | Chat + decision tipada en un solo proceso | Apache-2.0 | GGUF en Hugging Face |
-| Qwen3.5-4B | 4 B | no disponible | Chat generalista | Apache-2.0 (segun la model card) | Pesos originales |
-| Alternativas de 4B para NPC | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. Como referencia estructural, el modelo se basa en Qwen3.5-4B y comparte su calidad conversacional en la cuantización elegida; frente a un Qwen3.5-4B estándar, la diferencia es la incorporación de las 64 filas de decisión y el flujo de dos peticiones por turno. No se dispone de información sobre alternativas comparables de NPC con decisión tipada.
 
-La informacion proporcionada solo permite comparar con el modelo base Qwen3.5-4B, del que Rein-NPC-4B hereda la calidad conversacional y la licencia. No se dispone de datos sobre otros modelos de decision tipada para NPC con los que contrastar.
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Rein-NPC-4B-GGUF | 4.841.450.496 | 32.768 | Apache 2.0 | Decisiones tipadas integradas, tool calling |
+| Qwen3.5-4B | no disponible | no disponible | no disponible | Modelo base, sin capa de decisión |
+| Alternativas de NPC con tool calling | no disponible | no disponible | no disponible | No disponible en la información |
 
 ## Limitaciones y advertencias
 
-- La model card remite a la tarjeta principal de `jmc0/Rein-NPC-4B` para los limites y el uso previsto; esa informacion no esta disponible en el material consultado.
-- El modelo esta especializado en un protocolo de decision concreto: fuera de ese formato de prompt y de la lectura por logprobs, las decisiones pueden no ser fiables.
-- La cuantizacion Q4_K_M introduce pequenas discrepancias en las decisiones (3 de 104 en la evaluacion del autor), concentradas en casos donde el modelo bf16 ya muestra baja confianza.
-- Riesgo de alucinacion en el flujo conversacional: al heredar Qwen3.5-4B, mantiene los sesgos y limitaciones del modelo base, no documentados en la informacion disponible.
-- Idiomas: el soporte declarado se centra en ingles y portugues; el rendimiento en castellano no esta documentado.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
-- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-4B y de los datos de entrenamiento en la tarjeta principal.
-- El identificador del modelo incluye la etiqueta `qwen3.5`, pero no se detalla la version exacta del modelo base ni sus terminos adicionales.
+- No se han publicado datos sobre sesgos conocidos del modelo.
+- Riesgo de alucinación inherente a los modelos de lenguaje; en el contexto de NPC, las respuestas fuera de la persona o de las reglas deben filtrarse.
+- El flujo de decisión depende de un escalado concreto de log-probabilidades (división por 0,812) y de la correspondencia de letras con tokens (A = 32, B = 33, etc.); alterar estos parámetros puede degradar la calibración.
+- La cuantización Q4_K_M introduce discrepancias menores en las decisiones (3 de 104 preguntas en la evaluación), siempre en casos que el modelo bf16 deja abiertos.
+- El soporte de idiomas declarado se limita a inglés, portugués y multilingüe; no se detalla la cobertura real por idioma.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-4B.
+- El modelo está pensado para el flujo de dos peticiones por turno con `llama-server`; otros runtimes requieren los adaptadores documentados en la model card principal.
+- No se dispone de información sobre latencia y throughput en producción más allá de las estimaciones cualitativas del playground.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/jmc0/Rein-NPC-4B-GGUF
+- Hugging Face (GGUF): https://huggingface.co/jmc0/Rein-NPC-4B-GGUF
 - Modelo base: https://huggingface.co/jmc0/Rein-NPC-4B
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.
+- Repositorio de código: https://github.com/jasielmacedo/rein
+- Playground en el navegador: https://huggingface.co/spaces/jmc0/rein-npc-playground
+- Código del playground: https://github.com/jasielmacedo/rein/tree/main/tools/playground

@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Accueil | Nova",
-      "url": "https://nova.entreprises.gouv.fr/nc/accueil",
-      "snippet": "Organismes de services à la personne : Nous vous accompagnons dans vos demandes de déclaration et/ou d'agrément Je veux …"
-    },
-    {
-      "title": "Radio Nova",
-      "url": "https://www.nova.fr/",
-      "snippet": "Retrouvez tout le Grand Mix de Radio Nova : podcasts, fréquences, playlists, articles, émissions..."
-    },
-    {
-      "title": "Faire mes démarches sur NOVA | Services à la personne (SAP)",
-      "url": "https://www.servicesalapersonne.gouv.fr/je-suis-un-organisme-de-sap/faire-mes-demarches-sur-nova",
-      "snippet": "Jul 23, 2025 · Les organismes de services à la personne utilisent le téléservice NOVA pour se déclarer ou obtenir un agrément. Ce …"
-    },
-    {
-      "title": "Radios - Radio Nova",
-      "url": "https://www.nova.fr/radios/",
-      "snippet": "Du rocksteady de Ken Boothe, de Phyllis Dillon ou d’Alton Ellis au reggae digital de Biga*Ranx, Soom T ou Pupajim, avec Nova …"
-    },
-    {
-      "title": "Déclaration ou demande d'agrément Services à la personne (SAP ...",
-      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R19148",
-      "snippet": "La télé-procédure Nova permet aux organismes de services à la personne (SAP) de déposer leurs demandes de déclaration et leurs …"
-    }
-  ]
+  "sources": []
 }

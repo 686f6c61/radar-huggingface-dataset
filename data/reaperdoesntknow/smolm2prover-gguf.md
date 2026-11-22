@@ -2,49 +2,58 @@
 
 ## Resumen
 
-SMOLM2Prover-GGUF es la distribucion en formato GGUF del modelo SMOLM2Prover, un ajuste fino (SFT) de 361,8 millones de parametros desarrollado por el usuario reaperdoesntknow bajo el sello Convergent Intelligence LLC: Research Division. El modelo parte de prithivMLmods/SmolLM2-CoT-360M, una variante con cadena de pensamiento (CoT) de la familia SmolLM2 de Hugging Face, y se ha afinado sobre el dataset AI-MO/NuminaMath-1.5 con el objetivo declarado de resolver tareas de demostracion matematica, calculo y logica formal en ingles.
+SMOLM2Prover-GGUF es la versión cuantizada en formato GGUF del modelo SMOLM2Prover, un ajuste fino (SFT) de 361.821.120 parámetros desarrollado por el usuario reaperdoesntknow, vinculado a Convergent Intelligence LLC: Research Division. El modelo parte de prithivMLmods/SmolLM2-CoT-360M, una variante con cadena de pensamiento (chain-of-thought) de la familia SmolLM2, y se ha especializado en generación de pruebas matemáticas, cálculo, lógica y razonamiento paso a paso. Su propósito es ofrecer capacidades de razonamiento matemático en un tamaño muy reducido, apto para ejecución local en CPU.
 
-La relevancia de esta publicacion es doble. Por un lado, ofrece una version cuantizada lista para ejecutarse en llama.cpp, Ollama y LM Studio, lo que permite desplegar un modelo de razonamiento matematico en hardware muy modesto (el fichero Q4_K_M ocupa solo 258 MB). Por otro, forma parte de un portafolio de investigacion que documenta una metodologia propia, el llamado Discrepancy Calculus (DISC), descrito por el autor como un marco de teoria de la medida para analizar la brecha entre el comportamiento esperado y el observado durante el entrenamiento.
+La relevancia de esta ficha radica en su formato: al distribuirse en GGUF, el modelo puede ejecutarse con llama.cpp, Ollama o LM Studio sin necesidad de GPU, con un archivo Q4_K_M de solo 258 MB. Esto lo sitúa en el segmento de modelos ultracompactos para tareas de razonamiento acotadas, donde el coste computacional y la huella de memoria son prioritarios frente a la amplitud de capacidades.
 
-Arquitectonicamente es un transformer decoder-only de tipo LlamaForCausalLM con 32 capas, dimension de embedding de 960 y atencion con query agrupadas (GQA) de 15 cabezas de consulta y 5 de clave/valor. La longitud de contexto declarada es de 8192 tokens y la licencia es Apache 2.0, heredada del modelo original. Su interes practico esta en ser un banco de pruebas ligero para tecnicas de razonamiento CoT y para pipelines de verificacion matematica en entornos con recursos limitados.
+La arquitectura es un transformer decoder-only tipo LlamaForCausalLM con 32 capas, dimensión de embedding de 960 y atención con GQA (15 cabezas de consulta, 5 de clave/valor), con una longitud de contexto declarada de 8192 tokens. Está entrenado únicamente en inglés y se distribuye bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LlamaForCausalLM (transformer decoder-only, GQA) |
+| Arquitectura | LlamaForCausalLM (transformer decoder-only) |
 | Parametros totales | 361.821.120 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 8192 tokens |
-| Tipos de cuantizacion | F16 (sin cuantizar) y Q4_K_M (Q4_K con fallback Q5_0 y capas criticas en Q6_K/Q8_0) |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantizacion | F16 (sin cuantizar) y Q4_K_M (5,94 bits por peso) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (tambien disponible el modelo original en formato transformers) |
+| Formato de pesos | GGUF (safetensors en el modelo original) |
+| Dimension de embedding | 960 |
+| Numero de capas | 32 |
+| Cabezas de atencion | 15 (Q), 5 (KV), GQA |
+| Modelo base | prithivMLmods/SmolLM2-CoT-360M |
+| Dataset de ajuste | AI-MO/NuminaMath-1.5 |
+| Tamano del repo | 1,0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only denso de la familia SmolLM2, con 32 capas, dimension oculta de 960 y atencion de consultas agrupadas (15 cabezas Q frente a 5 cabezas KV), lo que reduce el coste de memoria de la cache KV durante la inferencia. El contexto maximo es de 8192 tokens. El ajuste fino se realizo mediante SFT (supervised fine-tuning) con las librerias TRL y transformers, partiendo de prithivMLmods/SmolLM2-CoT-360M y utilizando el dataset AI-MO/NuminaMath-1.5, orientado a problemas matematicos con soluciones paso a paso.
+El modelo es un transformer decoder-only con arquitectura Llama, 32 capas, dimensión oculta de 960 y atención con query grouping (GQA) de 15 cabezas de consulta frente a 5 de clave/valor, lo que reduce el coste de memoria de la caché KV durante la inferencia. El contexto máximo declarado es de 8192 tokens. La model card no detalla el número total de tokens de entrenamiento ni la composición exacta del dataset más allá de indicar que se usó AI-MO/NuminaMath-1.5, un corpus orientado a problemas matemáticos y razonamiento.
 
-La model card no detalla el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; solo se indica SFT. El autor enmarca el trabajo en su marco teorico Discrepancy Calculus (DISC), que describe como un enfoque de teoria de la medida para analizar singularidades del entrenamiento (mesetas de perdida, colapso de modos, olvido catastrofico) y fenomenos como el "ghost imprinting". Estos conceptos son parte del material promocional del autor y no se acompanan de resultados experimentales verificables en la informacion disponible. La version GGUF se genero con llama.cpp; la cuantizacion Q4_K_M emplea Q4_K para la mayoria de pesos, Q5_0 para tensores no divisibles por 256 y Q6_K/Q8_0 en determinadas capas criticas, con un resultado de 5,94 bits por peso.
+El ajuste se realizó mediante SFT (supervised fine-tuning) con las librerías TRL y el framework de Hugging Face (`generated_from_trainer`), partiendo del modelo SmolLM2-CoT-360M de prithivMLmods, que ya incorpora comportamiento de cadena de pensamiento. No se documentan etapas de RLHF ni DPO, ni innovaciones técnicas propias más allá del ajuste supervisado. La model card incluye una sección sobre el marco teórico "Discrepancy Calculus" del autor, pero no aporta detalles verificables sobre el procedimiento de entrenamiento ni métricas de pérdida. La versión GGUF se generó con cuantización Q4_K_M (Q4_K para la mayoría de pesos, Q5_0 para tensores no divisibles por 256 y Q6_K/Q8_0 en algunas capas críticas), con una reducción de tamaño del 63 % respecto a F16.
 
 ## Capacidades
 
-- Generacion de texto en ingles con enfasis en razonamiento paso a paso (chain of thought).
-- Resolucion de problemas matematicos: calculo, algebra y aritmetica de nivel escolar y preuniversitario.
-- Razonamiento logico y construccion de demostraciones (el nombre "Prover" sugiere este uso, aunque no se documentan garantias de correccion formal).
-- Conversacion multiturno en formato conversational, segun los tags del repositorio.
-- Compatibilidad con endpoints (tag endpoints_compatible), lo que facilita su integracion en servicios de inferencia.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo thinking explicito mas alla del CoT aprendido por SFT.
+- Generación de texto con razonamiento paso a paso (chain-of-thought) orientado a problemas matemáticos.
+- Resolución de problemas de cálculo y lógica, según los tags declarados por el autor.
+- Generación de pruebas matemáticas formales o semiformales (proof), el eje declarado del ajuste.
+- Razonamiento aritmético y algebraico de ámbito académico.
+- Conversación multi-turno en inglés (tag `conversational`).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso más allá de la cadena de pensamiento.
+- No dispone de capacidades de visión, audio ni multimodalidad.
+- Capacidad multilingüe limitada al inglés.
 
 ## Casos de uso
 
-- Tutoria matematica automatizada: el modelo puede generar explicaciones paso a paso de problemas de calculo y algebra, aprovechando su entrenamiento sobre NuminaMath-1.5 para desglosar razonamientos en lugar de dar solo la respuesta final.
-- Generacion de borradores de demostraciones en entornos educativos: util como primer borrador que un estudiante o profesor revisa y corrige, dado su enfasis en logica y prueba.
-- Verificacion ligera en pipelines de CI: al ocupar 258 MB en Q4_K_M, puede ejecutarse en el mismo runner que compila el codigo para comprobar aserciones matematicas simples o generar explicaciones de fallos.
-- Prototipado de agentes de razonamiento en local: sirve como banco de pruebas de bajo coste para disenar prompts CoT y validar flujos antes de escalar a modelos mayores.
-- Despliegue en dispositivos de borde o CPU: con llama.cpp u Ollama puede correr en portatiles sin GPU dedicada, adecuado para demos offline o entornos air-gapped.
-- Investigacion sobre cuantizacion y calidad de razonamiento: comparar las salidas F16 frente a Q4_K_M permite estudiar la degradacion del CoT bajo cuantizacion agresiva en modelos pequenos.
-- Generacion de datasets sinteticos de problemas matematicos resueltos para aumentar corpus de entrenamiento de modelos mayores.
+- Asistencia educativa en matemáticas: el modelo puede generar explicaciones paso a paso de ejercicios de cálculo y lógica, adecuado por su tamaño para desplegarse en entornos escolares sin GPU.
+- Generación de borradores de pruebas matemáticas: útil como herramienta de apoyo para estudiantes que necesitan una primera aproximación a una demostración, revisable después por un docente.
+- Prototipado de tutores conversacionales: su contexto de 8192 tokens permite mantener diálogos multi-turno con el enunciado del problema y pasos previos dentro de la ventana.
+- Ejecución local en portátiles y dispositivos de bajos recursos: el archivo Q4_K_M de 258 MB cabe en cualquier equipo con llama.cpp u Ollama, sin requisitos de VRAM.
+- Filtrado y clasificación de razonamientos matemáticos: puede usarse como generador de cadenas de pensamiento para construir datasets sintéticos de entrenamiento o evaluación en pipelines de investigación.
+- Pruebas de concepto de razonamiento en inglés dentro de aplicaciones de escritorio: integrable en LM Studio para experimentación rápida sin infraestructura de servidor.
+- Evaluación comparativa de modelos pequeños: sirve como baseline de razonamiento matemático en estudios sobre destilación y ajuste fino de modelos de menos de 500 M de parámetros.
 
 ## Benchmarks y rendimiento
 
@@ -52,42 +61,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en F16 (fichero de 692 MB) y alrededor de 300-500 MB en Q4_K_M (fichero de 258 MB), incluyendo cache KV para contextos moderados.
-- GPU recomendadas: cualquier GPU consumer moderna sirve; el modelo cabe holgadamente en GTX 1060 6 GB, RTX 3060, RTX 4090, asi como en A100/H100 si se busca throughput masivo por lotes.
-- Cabe en GPU consumer: si, en practicamente todas las GPU con al menos 2 GB de VRAM; tambien en CPU pura.
-- Opciones de despliegue: llama.cpp (llama-cli), Ollama (mediante Modelfile), LM Studio, y el runtime de transformers para la version original en safetensors.
-- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo se espera una latencia de decenas de milisegundos por token en CPU moderna y muy inferior en GPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: inferior a 1 GB en F16 (692 MB de pesos) y aproximadamente 300-400 MB en Q4_K_M (258 MB de pesos más caché KV).
+- GPU recomendadas: no requiere GPU; cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) puede ejecutarlo con holgura. En CPU funciona de forma nativa.
+- Cabe en cualquier GPU consumer e incluso en sistemas sin GPU dedicada, incluidos Raspberry Pi y portátiles de gama baja.
+- Opciones de despliegue: llama.cpp (llama-cli), Ollama mediante Modelfile, LM Studio y cualquier runtime compatible con GGUF. El modelo original en safetensors es compatible con transformers.
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo, se espera inferencia en tiempo real en CPU moderna, aunque no se aportan cifras verificadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| SMOLM2Prover-GGUF | 361,8 M | 8192 | Apache 2.0 | GGUF | Ajuste SFT sobre NuminaMath-1.5, solo ingles |
-| SmolLM2-360M-Instruct (Hugging Face) | 362 M | 8192 | Apache 2.0 | safetensors, GGUF | Modelo base de proposito general; no especializado en matemáticas |
-| prithivMLmods/SmolLM2-CoT-360M | 362 M | 8192 | no disponible en esta ficha | safetensors | Modelo base directo del que parte este ajuste; incluye CoT |
-| Qwen2.5-Math-1.5B | 1.500 M | 4096 | Apache 2.0 | safetensors, GGUF | Especializado en matematicas, mayor tamano y contexto menor |
+| SMOLM2Prover-GGUF | 361,8 M | 8192 | GGUF | Apache 2.0 | Ajuste SFT en NuminaMath-1.5, especializado en pruebas y cálculo |
+| prithivMLmods/SmolLM2-CoT-360M | ~360 M | no disponible | safetensors | no disponible | Modelo base con cadena de pensamiento |
+| SmolLM2-360M (HuggingFaceTB) | 362 M | 8192 | safetensors, GGUF | Apache 2.0 | Modelo generalista original de la familia |
 
-La comparativa se limita a modelos de la misma familia o categoria (modelos pequenos de razonamiento matematico). No se dispone de datos de rendimiento comparativo publicados para SMOLM2Prover.
+La comparación con alternativas de razonamiento matemático de mayor tamaño (Qwen2.5-Math, DeepSeek-Math) no resulta homogénea por la diferencia de escala; no se dispone de datos de rendimiento del modelo que permitan una comparación cuantitativa con ellos.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; cualquier uso en castellano u otros idiomas degradara la calidad de forma significativa.
-- Modelo de 361 M de parametros: la capacidad de razonamiento matematico complejo es limitada en comparacion con modelos de miles de millones de parametros, y es probable que falle en problemas de nivel avanzado.
-- Riesgo elevado de alucinacion en pasos intermedios de demostraciones: el CoT puede parecer plausible y contener errores logicos no detectables a simple vista.
-- La cuantizacion Q4_K_M puede degradar la coherencia del razonamiento paso a paso; conviene validar contra la version F16 en casos criticos.
-- La model card no documenta evaluaciones de sesgo ni de seguridad; se desconoce el comportamiento del modelo ante prompts adversarios.
-- El marco teorico DISC y los conceptos asociados (jump sets, ghost imprinting) no cuentan con validacion independiente en la informacion disponible; deben tratarse como material del autor, no como resultados consolidados.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, el modelo base y el dataset de entrenamiento pueden tener sus propias condiciones; conviene revisarlas antes de un despliegue en produccion.
-- El repositorio tiene 0 likes y un volumen de descargas moderado (2265), lo que sugiere poca validacion por parte de la comunidad.
+- El modelo solo está entrenado y evaluado en inglés; no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
+- Riesgo elevado de alucinación en matemáticas: con 361 M de parámetros, la fiabilidad en demostraciones y cálculos complejos es limitada y requiere verificación humana.
+- No se han publicado benchmarks ni métricas de evaluación, por lo que no hay evidencia cuantitativa de su calidad frente al modelo base.
+- El ajuste se realizó sobre un único dataset (NuminaMath-1.5) sin documentar el volumen de tokens ni la composición, lo que dificulta evaluar sesgos de dominio.
+- La model card incluye referencias a un marco teórico propio ("Discrepancy Calculus") sin validación externa; no debe interpretarse como garantía de calidad.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar las condiciones del modelo base y del dataset de entrenamiento.
+- El contexto de 8192 tokens es reducido para problemas matemáticos extensos o conversaciones largas.
+- No soporta tool calling ni agentes, lo que limita su integración en pipelines automatizados complejos.
+- El repositorio tiene 0 likes y un volumen de descargas moderado (2357), lo que sugiere escasa validación por parte de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/SMOLM2Prover-GGUF
-- Modelo original (transformers): https://huggingface.co/reaperdoesntknow/SMOLM2Prover
+- Modelo original (safetensors): https://huggingface.co/reaperdoesntknow/SMOLM2Prover
 - Modelo base: https://huggingface.co/prithivMLmods/SmolLM2-CoT-360M
 - Dataset de entrenamiento: https://huggingface.co/datasets/AI-MO/NuminaMath-1.5
-- Portafolio del autor: https://huggingface.co/reaperdoesntknow
-- Paper DISC (Discrepancy Calculus): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
-- Paper Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
-- Paper Three Teachers to Dual Cognition: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: 10.57967/hf/8184)
-- Coleccion DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c
+- Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Documento "Discrepancy Calculus": https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
+- Documento "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
+- Documento "Three Teachers to Dual Cognition": https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: 10.57967/hf/8184)

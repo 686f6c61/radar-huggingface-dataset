@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 635,
+  "downloads_30d": 649,
   "trending_score": 0,
   "parameters": 999885952,
   "parameters_human": "999.9M",
@@ -65,31 +65,31 @@
       "task": "Natural language inference",
       "dataset": "IndicXNLI (Tamil, test, 1,000 pairs)",
       "metric": "Accuracy (Tamil-Bench prompt)",
-      "value": 76
+      "value": 75
     },
     {
       "task": "Extractive QA",
       "dataset": "IndicQA (Tamil, 1,000 questions)",
       "metric": "F1",
-      "value": 52.4
+      "value": 52.1
     },
     {
       "task": "Extractive QA",
       "dataset": "IndicQA (Tamil, 1,000 questions)",
       "metric": "Exact match",
-      "value": 44.3
+      "value": 43.9
     },
     {
       "task": "English to Tamil translation",
       "dataset": "FLORES-200 devtest (eng_Latn-tam_Taml, 5-shot)",
       "metric": "chrF",
-      "value": 44.7
+      "value": 46.8
     },
     {
       "task": "Tamil to English translation",
       "dataset": "FLORES-200 devtest (tam_Taml-eng_Latn, 5-shot)",
       "metric": "chrF",
-      "value": 45.6
+      "value": 45.1
     }
   ],
   "sources": []

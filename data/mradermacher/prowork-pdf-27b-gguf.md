@@ -2,86 +2,97 @@
 
 ## Resumen
 
-ProWork-PDF-27B-GGUF es una cuantizacion estatica en formato GGUF del modelo ProWork-PDF-27B, publicado por el usuario mradermacher en Hugging Face. El modelo base pertenece a aibuildai-inc y, por su nombre, esta orientado al procesamiento de documentos PDF, aunque no se dispone de documentacion oficial sobre su proposito exacto ni sobre su arquitectura interna.
+ProWork-PDF-27B es un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) especializado en comprensión de documentos y trabajo con conocimiento, con énfasis en archivos PDF. Lo desarrolla el colectivo aibuildai-inc, y esta ficha corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, un conocido distribuidor de cuantizaciones para la comunidad de IA local.
 
-El repositorio contiene unicamente los pesos cuantizados generados mediante una herramienta de conversion tipo llama.cpp, con un conjunto de variantes que abarca desde Q2_K hasta F16, ademas de IQ4_XS. El tamano del repositorio es de 1,6 GB, lo que resulta llamativamente pequeno para un modelo cuyo nombre sugiere 27B parametros.
+El modelo parte de una arquitectura transformer multimodal (los archivos mmproj adjuntos indican soporte de entrada visual, necesaria para procesar el contenido gráfico de los PDF) y está orientado a tareas de extracción, resumen y razonamiento sobre documentos. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que resulta relevante para pipelines de procesamiento documental en producción.
 
-Existe una discrepancia importante entre el nombre del modelo (27B) y el recuento real de parametros reportado en safetensors (460.730.096, es decir, aproximadamente 0,46B). Esta ficha documenta ambos datos y advierte de la inconsistencia, ya que no es posible determinar a partir de la informacion disponible cual de las dos cifras refleja el modelo final.
+La relevancia de esta publicación radica en la disponibilidad de cuantizaciones estáticas (Q2_K a Q8_0) que reducen el peso desde 29,1 GB hasta 11,0 GB, permitiendo ejecutar un modelo de 27B en hardware de consumo. El repositorio completo ocupa 190,8 GB e incluye todos los formatos de cuantización, además de los suplementos multimodales mmproj en f16 y Q8_0.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 460.730.096 (segun safetensors); el nombre indica 27B (discrepancia no resuelta) |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | Transformer multimodal (mmproj para entrada visual); detalles internos no disponibles |
+| Parámetros totales | 27.320.697.856 (≈27,3B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repo); el modelo base se distribuye presumiblemente en safetensors |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en f16 y Q8_0 |
+| Idiomas soportados | en (inglés, según la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio GGUF es una plantilla autogenerada por la herramienta de cuantizacion e incluye unicamente metadatos tecnicos del proceso de conversion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversion se realizo a partir de pesos en formato Hugging Face.
+No se dispone de información detallada sobre la arquitectura interna del modelo base (aibuildai-inc/ProWork-PDF-27B) en la información proporcionada. Los metadatos de la cuantización indican que se trata de un modelo transformer convertido desde formato Hugging Face (`convert_type: hf`) y que incluye un proyector multimodal (mmproj), lo que confirma capacidad de procesamiento de imágenes, previsiblemente páginas de PDF renderizadas.
 
-No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Tampoco se documenta el proceso de cuantizacion mas alla de la lista de variantes generadas.
+Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card del repositorio cuantizado es una plantilla estándar de mradermacher que no incluye información sobre el entrenamiento del modelo original. Las etiquetas indican especialización en `document-understanding`, `knowledge-work` y `pdf`.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la informacion disponible.
-- Por el nombre del modelo base (ProWork-PDF), se infiere una orientacion al procesamiento de documentos PDF, pero no se confirma ni el tipo de tarea (extraccion, resumen, QA documental) ni las modalidades soportadas.
-- No hay confirmacion de soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modo thinking.
-- No hay informacion sobre capacidades multilingues.
-- No se confirma soporte de vision ni de audio.
+- Comprensión de documentos PDF, incluyendo contenido textual y visual gracias al proyector multimodal mmproj.
+- Generación de texto conversacional (el repositorio está etiquetado como `conversational`).
+- Procesamiento de tareas de trabajo con conocimiento: extracción, resumen y razonamiento sobre documentos.
+- Entrada multimodal: los archivos mmproj f16 y Q8_0 permiten alimentar imágenes junto con texto.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- Soporte de tool calling, agentes o modo de razonamiento extendido: no disponible en la información proporcionada.
+- Capacidades multilingües: solo se declara inglés (`en`).
 
 ## Casos de uso
 
-Dada la ausencia de documentacion funcional, los siguientes casos son hipotesis razonables derivadas del nombre del modelo y deben validarse empiricamente antes de cualquier uso en produccion:
-
-- Procesamiento por lotes de PDF en local: al distribuirse en GGUF, puede ejecutarse con llama.cpp u Ollama en hardware de consumo, lo que permite procesar documentos sin enviar datos a servicios externos.
-- Extraccion de campos estructurados de facturas o formularios: si el modelo base fue ajustado para comprension documental, podria emplearse para poblar esquemas JSON a partir de texto extraido de PDF.
-- Resumen de informes largos: utilizable en pipelines internos donde la confidencialidad impide usar APIs comerciales.
-- Clasificacion y enrutado de documentos: integrable como primer paso en un pipeline RAG para decidir que extractor aplicar a cada PDF.
-- Prototipado rapido en estaciones de trabajo: las variantes Q4_K_M e IQ4_XS permiten iterar en CPU o GPU modesta con un consumo de disco reducido.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes del mismo modelo, lo que facilita medir la degradacion de calidad segun el nivel de cuantizacion en una tarea documental concreta.
+- Extracción de datos de facturas y albaranes: el modelo puede recibir páginas renderizadas como imagen (vía mmproj) y devolver campos estructurados, aprovechando su especialización en PDF y su licencia Apache 2.0 para uso comercial.
+- Resumen de contratos e informes largos: adecuado para pipelines internos de gestión documental donde se necesita condensar documentos extensos en inglés.
+- Digitalización de archivos históricos: la cuantización Q8_0 (29,1 GB) permite desplegar el modelo en una única GPU de 40 GB para procesar lotes de documentos escaneados.
+- Asistente de búsqueda documental (RAG): el modelo puede actuar como generador final en un sistema de recuperación aumentada, respondiendo preguntas sobre fragmentos de PDF recuperados.
+- Automatización de back-office: clasificación y enrutamiento de documentos entrantes en flujos de trabajo administrativos, con despliegue en llama.cpp u Ollama para entornos sin GPU de datacenter.
+- Procesamiento en local con privacidad: las cuantizaciones Q4_K_M (16,9 GB) permiten ejecutar el modelo en una RTX 4090 o incluso en configuraciones con memoria unificada, manteniendo documentos sensibles fuera de servicios en la nube.
+- Generación de informes a partir de fuentes documentales: combinación de extracción de contenido y redacción de resúmenes ejecutivos en inglés.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma fiable debido a la discrepancia entre el nombre (27B) y el recuento de parametros (0,46B). Con 0,46B parametros, una variante Q4_K_M ocuparia del orden de 300-400 MB; con 27B parametros, una Q4_K_M requeriria aproximadamente 16-17 GB.
-- GPU recomendadas: no disponible. Si el modelo real es de ~0,5B, cabria en cualquier GPU consumer moderna e incluso en CPU; si fuese de 27B, requeriria GPUs de 24 GB o superiores (RTX 3090/4090, A100, H100).
-- Despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF de forma nativa en todas sus versiones, por lo que habria que usar los pesos originales.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (pesos + overhead de contexto):
+  - Q2_K: ~11 GB de pesos; ~13-14 GB en total.
+  - Q4_K_M: ~17 GB de pesos; ~19-21 GB en total.
+  - Q8_0: ~29 GB de pesos; ~32-34 GB en total.
+- GPU recomendadas:
+  - Q8_0: A100 40 GB, A6000 48 GB o H100.
+  - Q4_K_M: RTX 4090 (24 GB) o RTX 3090 (24 GB) con contexto moderado.
+  - Q2_K / Q3_K_S: RTX 4080 (16 GB) o RTX 4060 Ti 16 GB, con posible offload parcial.
+- Cabe en GPU de consumo: sí, en cuantizaciones Q2_K a Q4_K_M; Q5 y superiores requieren 24 GB o más y pueden necesitar offload a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, vLLM o TGI si el modelo base lo soporta (no confirmado).
+- Latencia y throughput: no disponibles. Como referencia orientativa, un modelo denso de 27B en Q4_K_M sobre una RTX 4090 suele situarse en decenas de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa sin conocer la arquitectura, el tamano real y el dominio de aplicacion del modelo. A modo de referencia estructural, se compara con otros modelos pequenos distribuidos en GGUF:
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
+|---|---|---|---|---|---|
+| ProWork-PDF-27B (esta ficha) | 27,3B | no disponible | Documentos/PDF, multimodal | Apache 2.0 | GGUF, safetensors |
+| Qwen2.5-VL-32B | ~32B | 128K (según documentación pública de Qwen) | Visión-lenguaje general | Apache 2.0 | safetensors, GGUF |
+| Gemma 3 27B | 27B | 128K (según documentación pública de Google) | Lenguaje y visión general | Gemma license | safetensors, GGUF |
+| InternVL2.5-26B | ~26B | variable según variante | Visión-lenguaje general | MIT (variantes) | safetensors |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| ProWork-PDF-27B-GGUF | 460M (segun safetensors) / 27B (segun nombre) | no disponible | no disponible | GGUF |
-| Qwen2.5-0.5B-Instruct-GGUF | 0,49B | 32.768 | Apache 2.0 | GGUF |
-| Llama-3.2-1B-Instruct-GGUF | 1,24B | 131.072 | Llama 3.2 Community | GGUF |
-| Gemma-2-2B-it-GGUF | 2,6B | 8.192 | Gemma Terms | GGUF |
-
-La comparativa es puramente orientativa en cuanto a formato y despliegue; no se dispone de datos de rendimiento del modelo evaluado para contrastarlo con estas alternativas.
+La comparación con alternativas se basa en características públicas de esos modelos; no se dispone de benchmarks de ProWork-PDF-27B que permitan una comparación de rendimiento directa. La ventaja diferencial de ProWork-PDF-27B es su especialización declarada en PDF y su licencia Apache 2.0, frente a licencias con condiciones como la de Gemma.
 
 ## Limitaciones y advertencias
 
-- Discrepancia critica entre el nombre del modelo (27B) y el recuento de parametros en safetensors (460M). Verificar el modelo base antes de cualquier uso.
-- Licencia no declarada: no es posible confirmar si se permite uso comercial. Contactar con el autor del modelo base (aibuildai-inc) antes de desplegarlo en produccion.
-- Sin model card funcional: no hay descripcion de tareas, idiomas ni limitaciones, lo que impide evaluar su idoneidad sin pruebas propias.
-- Riesgo de alucinacion: desconocido, pero inherente a cualquier modelo generativo sin documentacion de evaluacion.
-- Sesgos: no documentados.
-- Idiomas: no confirmados; no asumir soporte del castellano sin validacion.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion por parte de la comunidad.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar notablemente la calidad en tareas de extraccion documental, donde la fidelidad literal es critica.
+- Solo se declara soporte de inglés; el rendimiento en castellano u otros idiomas no está verificado y probablemente sea inferior.
+- No hay información pública sobre sesgos del modelo base ni sobre su proceso de alineación.
+- Riesgo de alucinación inherente a los modelos de 27B, especialmente en extracción de datos de documentos con tablas complejas o texto manuscrito; se recomienda validación posterior en producción.
+- La longitud de contexto no está documentada; para documentos PDF largos puede requerir fragmentación previa (chunking).
+- Las cuantizaciones Q2_K y Q3_K_M tienen pérdida de calidad notable según las propias notas del cuantizador; para producción se recomienda Q4_K_M o superior.
+- El repositorio de 190,8 GB requiere espacio en disco considerable si se descargan todas las variantes; conviene descargar solo el archivo GGUF y el mmproj necesarios.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar los términos del modelo base original por si hubiera condiciones adicionales no reflejadas en esta información.
+- El modelo base no incluye model card detallada en la información disponible; la trazabilidad del entrenamiento es limitada.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/ProWork-PDF-27B-GGUF
 - Modelo base: https://huggingface.co/aibuildai-inc/ProWork-PDF-27B
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/ProWork-PDF-27B-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#ProWork-PDF-27B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

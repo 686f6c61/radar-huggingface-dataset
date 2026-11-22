@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Comunicati stampa: le iniziative e i progetti che guidano il ... - Italo",
-      "url": "https://italospa.italotreno.it/homepage.html",
-      "snippet": "Conosciamo “Italo Generations”, il progetto di Italo pensato per sostenere le famiglie nei percorsi formativi, favorendo l’accesso alla …"
-    },
-    {
-      "title": "Lavorare in Italo | Italo Treno",
-      "url": "https://italospa.italotreno.it/lavorare_in_italo/index.html",
-      "snippet": "Italo investe continuamente sulla formazione del proprio personale per sviluppare e mantenere elevati standard di qualità aziendali, …"
-    },
-    {
-      "title": "Piattaforma Italo",
-      "url": "https://eprocurement.italospa.italotreno.it/epp/loginMe",
-      "snippet": "Piattaforma e-procurement Portale e-Procurement Italo Per accedere, inserisci le tue credenziali Sei un nuovo utente? Registrati"
-    },
-    {
-      "title": "Posizioni aperte | Italo Treno",
-      "url": "https://italospa.italotreno.it/lavorare_in_italo/posizioni_aperte/index.html",
-      "snippet": "Candidatura spontanea Non hai trovato opportunità professionali in linea con le tue caratteristiche? Invia comunque il tuo CV …"
-    },
-    {
-      "title": "ITALO INTRODURRA’ STARLINK SU TUTTA LA FLOTTA",
-      "url": "https://italospa.italotreno.it/ufficio-stampa/comunicati-stampa/2026/italo-introdurra-starlink-su-tutta-la-flotta.html",
-      "snippet": "Roma, 12 febbraio 2026. Italo introdurrà la connessione Internet ultraveloce Starlink, diventando la prima grande compagnia …"
-    }
-  ]
+  "sources": []
 }

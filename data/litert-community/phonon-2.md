@@ -2,101 +2,96 @@
 
 ## Resumen
 
-Phonon-2 es un modelo de reconocimiento automático del habla (ASR) en inglés desarrollado por Fermion Research. Parte de la arquitectura de NVIDIA parakeet-tdt-0.6b-v3 (transformer con decodificación TDT, Token-and-Duration Transducer) y reentrena los pesos lineales del encoder para comprimirlos a cinco valores por fila de salida, logrando una descarga de 164 MB con un WER del 5,21 % según la web del autor. El repositorio que nos ocupa, litert-community/Phonon-2, es una conversión de esos pesos a LiteRT (TFLite) para ejecución en dispositivos Android, con variantes para CPU (int8), GPU y NPU (float16).
+Phonon-2 es un modelo de reconocimiento automático del habla (ASR) en inglés desarrollado por FermionResearch y convertido a LiteRT por la comunidad litert-community. Está basado en la arquitectura Parakeet con decodificación TDT (Token-and-Duration Transducer), un esquema que predice simultáneamente tokens y duraciones para acelerar la decodificación. El modelo original se ha cuantizado y compilado para ejecutarse en dispositivos móviles Android, con soporte para NPU, GPU y CPU.
 
-La conversión deshace el empaquetado compacto original: los pesos grandes se expanden a float16 o int8, de modo que los ficheros resultantes ocupan 1,95 GB (conjunto CPU) o 3,68 GB (conjunto GPU/NPU), frente a los 164 MB del modelo base. A cambio, se habilita la aceleración por NPU y GPU del teléfono mediante LiteRT. Según la model card, en un Galaxy S26 los encoders float16 en NPU transcriben 109 veces más rápido que tiempo real con el pipeline de dos hilos del runner, 39 veces en GPU, y los encoders int8 alcanzan 45 veces en CPU (medido sobre 655 utterances de LibriSpeech test-clean el 2026-11-08).
+La relevancia de esta versión radica en su rendimiento en hardware móvil: según la model card, transcribe 178 veces más rápido que tiempo real en la NPU de un Galaxy S26 y 26 veces más rápido en la GPU de un Pixel 11 Pro, con una tasa de error de palabra (WER) del 1,726 % en LibriSpeech test-clean, prácticamente idéntica al 1,736 % del modelo original en float32 con PyTorch.
 
-El modelo es relevante porque demuestra que un ASR de calidad cercana al estado del arte puede ejecutarse íntegramente en un móvil con aceleración hardware, con un WER del 1,728 % en NPU sobre LibriSpeech test-clean (frente al 1,736 % de la ejecución float32 en PyTorch de las mismas ventanas). Está pensado para desarrolladores que necesitan transcripción offline, de baja latencia y privada en Android.
+El repositorio incluye codificadores en formato TFLite para ventanas de audio de 5, 7,5, 10, 15, 20, 25 y 30 segundos, en variantes f16 (GPU/NPU) e i8 (CPU), además de un front-end log-mel y un decodificador TDT. El modelo está pensado exclusivamente para inglés y se distribuye bajo licencia CC-BY-4.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder + decodificador TDT (Token-and-Duration Transducer), heredada de nvidia/parakeet-tdt-0.6b-v3 |
-| Parametros totales | no disponible (el modelo base se publica como descarga de 164 MB con pesos empaquetados; el conteo de parámetros no se indica) |
+| Arquitectura | Parakeet con decodificador TDT (Token-and-Duration Transducer); encoder transformer con subsampling y convoluciones depthwise |
+| Parametros totales | no disponible (el repo ocupa 9,4 GB, pero incluye múltiples variantes y ventanas) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | ventanas de audio de hasta 30 s (479.840 muestras a 16 kHz); variantes de grafo para 10, 20 y 30 s |
-| Tipos de cuantizacion | int8 (CPU, pesos int8 con una escala por canal de salida y activaciones int8 en tiempo de ejecución) y float16 (GPU/NPU) |
+| Longitud de contexto | ventanas de audio de hasta 30 s (479.840 muestras a 16 kHz); ventanas adicionales de 5, 7,5, 10, 15, 20 y 25 s |
+| Tipos de cuantizacion | float16 (f16) para GPU/NPU; int8 (i8) para CPU con escalas por canal de salida; float32 en capas depthwise y tablas de posición relativa |
 | Idiomas soportados | inglés (en) |
-| Licencia | cc-by-4.0 |
-| Formato de pesos | TFLite / LiteRT (.tflite), más tokenizer.json y ficheros auxiliares |
+| Licencia | CC-BY-4.0 |
+| Formato de pesos | TFLite (LiteRT); tokenizer en JSON |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de parakeet-tdt-0.6b-v3: un encoder transformer que procesa características log-mel (128 bins Slaney, STFT de 512 puntos, ventana Hann de 400 muestras, hop de 160) y un decodificador TDT con red de predicción (`predict`) y red conjunta (`joint`) que emite tokens y duraciones de 0 a 4 frames de forma greedy. El vocabulario del decodificador tiene 8.198 logits: 8.193 tokens más el blank (8192) y 5 logits de duración.
+Phonon-2 sigue la arquitectura Parakeet, un modelo de ASR basado en transformer con decodificación TDT. El pipeline completo es: audio mono a 16 kHz → ventanas de 30 s → front-end log-mel → encoder → decodificación greedy TDT → texto. El encoder incorpora capas lineales, convoluciones 1×1 en el subsampling y convoluciones depthwise, además de 24 tablas de posición relativa. El decodificador TDT consta de una red de predicción (`predict`) y una red conjunta (`joint`), cuantizadas a int8.
 
-Phonon-2 modifica los pesos del modelo base: los pesos lineales del encoder se reentrenan para tomar cinco valores por fila de salida ({0, ±lo, ±hi}) y el resto de pesos grandes se almacenan como tablas de 6 bits, lo que reduce la descarga a 164 MB. La conversión a LiteRT descarta ese empaquetado y expande los pesos grandes a float16 (GPU/NPU) o int8 (CPU). Los grafos se construyen con el mismo código que litert-community/parakeet-ultra y los ficheros mel son idénticos byte a byte. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+La conversión a LiteRT se realizó con litert-torch 0.9.4 para LiteRT 2.3.0. Los archivos `all` agrupan las siete longitudes de ventana como firmas separadas (`enc5`, `enc7.5`, `enc10`, `enc15`, `enc20`, `enc25`, `enc30`), compartiendo pesos entre grafos para reducir el tamaño. La variante para NPU (`sm8850`) está compilada a priori con QAIRT 2.50.0.260828 para el chip Qualcomm SM8850. No se dispone de información sobre el dataset de entrenamiento original, número de tokens ni si hubo RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Transcripción de voz a texto en inglés a partir de audio mono a 16 kHz.
-- Procesamiento por ventanas de hasta 30 s con buckets de 10, 20 y 30 s para evitar trabajo de padding en audio corto.
-- Decodificación TDT greedy con predicción conjunta de token y duración (0-4 frames), lo que reduce pasos de decodificación frente a un CTC o transducer convencional.
-- Front-end mel completo incluido como grafo LiteRT (pre-énfasis, STFT, 128 bins mel, normalización por ventana).
-- Ejecución acelerada en NPU y GPU de Android vía LiteRT, y en CPU con la variante int8.
-- Tokenizer compatible con nvidia/parakeet-tdt-0.6b-v3 (tokenizer.json incluido).
-- No soporta tool calling, function calling, agentes, visión, audio de entrada más allá de ASR ni capacidades multilingües (solo inglés).
+- Transcripción de voz a texto en inglés con calidad cercana a estado del arte (WER 1,726 % en LibriSpeech test-clean en NPU).
+- Procesamiento por ventanas de hasta 30 s, con ventanas más cortas (5, 7,5, 10, 15, 20, 25 s) para optimizar el cómputo en audios breves.
+- Decodificación greedy TDT que predice tokens y duraciones de forma conjunta.
+- Ejecución en NPU (Qualcomm SM8850), GPU y CPU dentro de LiteRT.
+- Front-end log-mel integrado en TFLite para audio de 16 kHz mono.
+- Tokenizer compatible con nvidia/parakeet-tdt-0.6b-v3.
+- No se mencionan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio más allá de ASR.
 
 ## Casos de uso
 
-- Transcripción offline en Android: integración de los grafos LiteRT en una app móvil para dictado o notas de voz sin conexión, usando el conjunto f16 en NPU para minimizar latencia y consumo.
-- Subtitulado en tiempo real de reuniones o clases: con ventanas de 10 s y el encoder f16 en NPU, el runner procesa audio 109 veces más rápido que tiempo real en un Galaxy S26, lo que deja margen para el post-procesado y la interfaz.
-- Privacidad y cumplimiento: al ejecutarse íntegramente en el dispositivo, el audio no sale del terminal, adecuado para entornos sanitarios, legales o corporativos con requisitos de confidencialidad.
-- Asistentes de voz embebidos: el decodificador TDT int8 (17,8 MB) más el encoder permiten decodificación en el host con estado recurrente de 640 dimensiones, integrable en pipelines de comandos de voz.
-- Transcripción por lotes en servidores con CPU: el conjunto int8 (1,95 GB) ofrece 45 veces tiempo real en CPU de móvil, útil para procesar archivos de audio en entornos sin GPU.
-- Investigación en ASR eficiente: sirve como referencia reproducible para comparar WER y velocidad entre backend NPU, GPU y CPU sobre LibriSpeech test-clean.
-- Evaluación de despliegue LiteRT: los ficheros y el runner C (`ultra_asr_runner_p.cc`, `build_android.sh`) permiten medir latencia y throughput en hardware Android concreto antes de comprometerse con una arquitectura.
+- Transcripción en tiempo real en dispositivos Android: el modelo puede ejecutarse en la NPU de un Galaxy S26 a 178× tiempo real, lo que permite subtitulado en vivo o dictado por voz sin conexión.
+- Aplicaciones de accesibilidad: conversión de voz a texto en el propio dispositivo para personas con discapacidad auditiva, con latencia baja y sin enviar audio a la nube.
+- Asistentes de voz offline: integración en asistentes móviles que necesitan transcripción local para preservar la privacidad del usuario.
+- Procesamiento por lotes de audio corto: uso de ventanas de 5 o 7,5 s para transcribir notas de voz, comandos o fragmentos breves con menor coste computacional.
+- Anotación de reuniones y entrevistas: transcripción de audio de hasta 30 s por ventana, concatenando resultados con separación por espacios (con la advertencia de cortes en palabras).
+- Investigación en ASR eficiente: base para experimentos de cuantización y despliegue en hardware móvil, gracias a la disponibilidad de variantes f16 e i8 y scripts de compilación.
+- Integración en pipelines de CI/CD para generación de subtítulos: el runner de línea de comandos para Android (`ultra_asr_runner_p8`) permite automatizar la transcripción en pruebas.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor | Condiciones |
+| Benchmark | Resultado | Contexto |
 |---|---|---|
-| WER LibriSpeech test-clean (NPU) | 1,728 % | Galaxy S26, encoders f16, 655 utterances |
-| WER LibriSpeech test-clean (PyTorch float32) | 1,736 % | mismas ventanas, referencia |
-| Velocidad NPU | 109× tiempo real | encoders f16, pipeline de dos hilos |
-| Velocidad GPU | 39× tiempo real | encoders f16 |
-| Velocidad CPU | 45× tiempo real | encoders int8, sin pipeline |
-| WER modelo base (web del autor) | 5,21 % | Phonon-2 original de 164 MB, sin detallar conjunto de evaluación |
+| LibriSpeech test-clean (WER) | 1,726 % | NPU Galaxy S26 (f16) |
+| LibriSpeech test-clean (WER) | 1,736 % | PyTorch float32 (referencia) |
+| Velocidad en NPU Galaxy S26 | 178× tiempo real | 2026-11-08 |
+| Velocidad en GPU Pixel 11 Pro | 26× tiempo real | no disponible fecha exacta |
 
-No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de texto, al tratarse de un modelo exclusivamente ASR.
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible, dado que es un modelo especializado en ASR.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: conjunto CPU int8 de 1,95 GB (encoder 616-665 MB, mel, decodificador 17,8 MB); conjunto GPU/NPU f16 de 3,68 GB (encoder 1,19-1,24 GB por variante de ventana).
-- GPU recomendadas: no se especifican modelos de escritorio; la model card se centra en GPU y NPU integradas en SoC Android (Galaxy S26 como referencia).
-- Cabe en GPU de consumo: sí, en términos de memoria, aunque el formato TFLite está orientado a Android; para escritorio el autor recomienda las builds Core ML y CPU Android de Fermion Research.
-- Opciones de despliegue: LiteRT 2.3.0 con litert-torch 0.9.4 y ai-edge-quantizer 0.10.0; runner de línea de comandos para Android con la API C de LiteRT (`ultra_asr_runner_p.cc`, `build_android.sh`); el modelo base dispone de soporte MLX según la página de Hugging Face.
-- Latencia y throughput: 109× tiempo real en NPU, 39× en GPU y 45× en CPU sobre Galaxy S26; no se publican latencias absolutas en milisegundos.
+- VRAM estimada para inferencia: no disponible directamente; el encoder f16 para todas las ventanas ocupa 1,45 GB (GPU) y el i8 0,90 GB (CPU), más el decodificador i8 de 17,9 MB y el front-end mel de 1,6-2,9 MB.
+- GPU recomendadas: Qualcomm Adreno (GPU del Pixel 11 Pro) para la variante f16; NPU Qualcomm SM8850 (Galaxy S26) para la variante compilada; CPU de escritorio para la variante i8.
+- ¿Cabe en GPU consumer? No se especifican requisitos para GPUs de escritorio; el modelo está orientado a móvil. La variante f16 de 1,45 GB podría caber en GPUs con al menos 2 GB de VRAM, pero no se confirma.
+- Opciones de despliegue: LiteRT (TFLite) con runners C++ para Android (`ultra_asr_runner_p8`, `ultra_asr_runner_p`); ejecución desde Python en CPU de escritorio; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 178× tiempo real en NPU SM8850; 26× en GPU Pixel 11 Pro; no se proporcionan cifras de latencia absoluta ni throughput en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto/ventana | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Contexto | WER LibriSpeech test-clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litert-community/Phonon-2 | no disponible (164 MB empaquetado en el base) | 30 s por ventana | en | cc-by-4.0 | TFLite/LiteRT |
-| FermionResearch/Phonon-2 | no disponible (164 MB) | 30 s por ventana | en | cc-by-4.0 | MLX, Core ML, CPU Android |
-| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B (según nombre) | no disponible en la información | no disponible | no disponible | no disponible |
-| litert-community/parakeet-ultra | no disponible | no disponible | no disponible | no disponible | TFLite/LiteRT |
+| Phonon-2 (LiteRT) | no disponible | ventanas hasta 30 s | 1,726 % (NPU) | CC-BY-4.0 | Hugging Face (litert-community) |
+| FermionResearch/Phonon-2 (original) | no disponible | no disponible | 1,736 % (float32) | no disponible | Hugging Face |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B | no disponible | no disponible | no disponible | Hugging Face |
+| litert-community/parakeet-ultra | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
-La comparativa con alternativas de la misma categoría queda limitada a los modelos citados en la información; no se dispone de datos de WER ni velocidad de parakeet-tdt-0.6b-v3 ni de parakeet-ultra para contrastar.
+No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación se limita a la arquitectura y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: no hay soporte multilingüe declarado.
-- El corte de audio se hace en puntos fijos de 30 s, no en pausas, por lo que una palabra que cruce un corte puede dividirse, perderse o repetirse.
-- Las ventanas de menos de 320 muestras (dos frames mel) se descartan sin texto.
-- Los ficheros LiteRT son mucho mayores que el modelo base (1,95 GB o 3,68 GB frente a 164 MB) por la expansión de pesos; conviene valorar el coste de almacenamiento en el dispositivo.
-- Las filas del encoder más allá de los frames válidos son indefinidas; el consumidor debe respetar `frame_mask`.
-- Riesgo de alucinación y errores en audio con ruido, acentos no ingleses o solapamiento de hablantes; no se documentan sesgos específicos.
-- La licencia cc-by-4.0 permite uso comercial con atribución, pero debe verificarse la licencia del modelo base y de los componentes de NVIDIA heredados.
-- El rendimiento medido corresponde a un Galaxy S26 concreto; en otros SoC la aceleración NPU/GPU puede variar y requerir validación.
-- La velocidad sigue en ajuste según la model card ("Speed still being tuned"), por lo que las cifras pueden cambiar.
+- Solo soporta inglés; no se ha entrenado ni validado para otros idiomas.
+- El corte de audio se realiza en puntos fijos de 30 s, no en pausas, por lo que una palabra que cruce un corte puede dividirse, perderse o repetirse.
+- Ventanas de menos de 320 muestras (dos frames mel) se descartan sin texto.
+- Riesgo de alucinación inherente a modelos ASR, especialmente en audio con ruido o acentos no representados.
+- No se dispone de información sobre sesgos demográficos o acústicos del modelo original.
+- La licencia CC-BY-4.0 permite uso comercial con atribución, pero se debe verificar la licencia del modelo base FermionResearch/Phonon-2.
+- El modelo está optimizado para hardware móvil concreto (SM8850, Pixel 11 Pro); el rendimiento en otros dispositivos puede variar.
+- No se proporcionan garantías de precisión en dominios especializados (médico, legal, técnico).
 
 ## Enlaces
 
-- Repositorio LiteRT: https://huggingface.co/litert-community/Phonon-2
+- Hugging Face: https://huggingface.co/litert-community/Phonon-2
 - Modelo base: https://huggingface.co/FermionResearch/Phonon-2
-- Página del autor: https://www.fermionresearch.com/models/phonon-2/
-- Modelo de referencia NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Conversión relacionada: https://huggingface.co/litert-community/parakeet-ultra
-- Conversión relacionada: https://huggingface.co/litert-community/parakeet-redux
-- Comunidad LiteRT: https://huggingface.co/litert-community
+- Repositorio parakeet-ultra (referencia de front-end mel): https://huggingface.co/litert-community/parakeet-ultra
+- Repositorio parakeet-redux: https://huggingface.co/litert-community/parakeet-redux
+- Tokenizer de referencia: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

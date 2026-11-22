@@ -2,107 +2,110 @@
 
 ## Resumen
 
-Supra2.6 Pico es un modelo de lenguaje ultrapequeño preentrenado desde cero por SupraLabs, con exactamente 2.972.496 parámetros (menos de 3 millones) y una ventana de contexto de 1.024 tokens. Su interés no radica en la utilidad práctica como asistente —el propio autor advierte explícitamente de que no es utilizable para tareas generales ni de producción—, sino como vehículo de investigación sobre arquitecturas híbridas a escala mínima: combina bloques de atención lineal GDN-2 (gated delta net de segunda generación, emparentada con Mamba) con bloques de atención global GQA con puerta sigmoide, además de residuos de atención aprendidos entre capas.
+Supra2.6-Pico es un modelo de lenguaje de tipo base (no instruido) desarrollado por SupraLabs, con 2.972.496 parámetros únicos y una ventana de contexto de 1.024 tokens. Se trata de un experimento de arquitectura híbrida a muy pequeña escala: combina seis capas de recurrencia lineal Gated Delta Net de segunda generación (GDN-2) con dos capas de atención global con Grouped-Query Attention (GQA) y puerta sigmoide, distribuidas en dos grupos idénticos de cuatro bloques. El modelo se entrena desde cero y se publica como referencia reproducible de recetas de entrenamiento para modelos por debajo de los 3 millones de parámetros.
 
-El modelo se entrenó con unos 10.000 millones de tokens sobre una única GPU RTX Pro 6000 Blackwell, usando el optimizador Muon para las matrices 2-D y AdamW para embeddings y normas. Se publica bajo licencia Apache 2.0 con pesos en safetensors y un `model.pt` de solo 11,9 MB, lo que lo hace ideal para experimentación en CPU, estudios de scaling laws, ablation studies y benchmarks de modelos minúsculos (aparece asociado al open-slm-leaderboard). Es un modelo base, sin ajuste por instrucciones ni alineación.
+La relevancia del modelo es fundamentalmente metodológica, no funcional. Documenta con detalle una receta completa (9.998.172.160 tokens, optimizador Muon para matrices 2-D y AdamW para embeddings y normas, precisión bf16 con pesos maestros fp32, una sola GPU RTX Pro 6000 Blackwell) y una mezcla de datos explícita con once fuentes, incluyendo ClimbMix, Cosmopedia v2, Ultra-FineWeb, TXT360-v2 y varios corpus matemáticos. También incorpora innovaciones poco habituales a este tamaño, como attention residuals con mezcla softmax aprendida sobre las salidas de todas las capas precedentes.
+
+Conviene subrayar que el propio autor advierte de que, a esta escala, el modelo no es utilizable como asistente general, chatbot ni en tareas de producción. Su interés está en la comparación de arquitecturas híbridas (recurrencia lineal frente a atención global) en el régimen de los millones de parámetros y en servir de base para experimentos controlados de scaling y de mezcla de datos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida GDN-2 (atencion lineal) + gated GQA, 8 capas, patron [GDN-2, GDN-2, GDN-2, gated GQA] x 2 |
-| Parametros totales | 2.972.496 (unicos); 3.562.320 contando el embedding atado dos veces |
-| Parametros activos | No aplica (no es MoE); 2.382.672 sin contar embeddings |
+| Arquitectura | Transformer híbrido: 8 capas con patrón `[GDN-2, GDN-2, GDN-2, gated GQA] × 2`; GDN-2 con recurrencia erase/write por canal y log-decay por canal; GQA con 3 cabezas query / 1 cabeza KV (head_dim 48), RoPE en 24 dimensiones, RMSNorm en q/k y puerta de salida sigmoide; attention residuals con softmax aprendida sobre salidas de capas previas |
+| Parametros totales | 2.972.496 únicos (3.562.320 almacenados en `model.pt` por el embedding atado al LM head, contado dos veces en disco); 2.382.672 no pertenecientes al embedding |
+| Parametros activos | No aplica (no es MoE; todas las capas se activan en cada token) |
 | Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | No disponible (pesos en fp32, entrenado con autocast bf16) |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantizacion | No disponible (solo se publican pesos fp32; no se documentan variantes GGUF, AWQ, GPTQ ni similares) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (model.safetensors) y model.pt (11,9 MB, PyTorch) |
+| Formato de pesos | `model.pt` (11,9 MB, fp32, incluye ambas entradas atadas) y `model.safetensors` (155 tensores, 2.972.496 parámetros, LM head atado almacenado una sola vez) |
 
 ## Arquitectura y entrenamiento
 
-La red consta de 8 bloques en dos grupos identicos de cuatro: tres bloques gated-delta-net (GDN-2) seguidos de un bloque de atencion agrupada de consultas (GQA) con puerta. Esto significa que 6 de las 8 capas usan recurrencia de tiempo lineal (estilo Mamba/linear attention) y solo 2 llevan atencion global. GDN-2 emplea la recurrencia de borrado/escritura por canal `S_t = (I − k_t (b_t ⊙ k_t)ᵀ) Diag(exp(g_t)) S_{t−1} + k_t (w_t ⊙ v_t)ᵀ`, implementada con el kernel chunked de la libreria `fla` (fla-core 0.6.0, Triton). El bloque GQA usa 3 cabezas de consulta y 1 cabeza KV (head_dim 48), RoPE en 24 dimensiones, RMSNorm en q/k y puerta sigmoide de salida. Una innovacion destacable es el mecanismo de attention residuals: cada capa puede leer una mezcla softmax aprendida sobre las salidas de todas las capas previas. La dimensionalidad del modelo es d_model 144 con FFN SwiGLU de 352, vocabulario BPE de 4.096 tokens y embeddings atados entrada/salida.
+El modelo se organiza en ocho bloques agrupados en dos secuencias idénticas de cuatro: tres bloques GDN-2 seguidos de un bloque de atención global con GQA. La recurrencia GDN-2 sigue la formulación `S_t = (I − k_t (b_t ⊙ k_t)ᵀ) Diag(exp(g_t)) S_{t−1} + k_t (w_t ⊙ v_t)ᵀ`, con tres cabezas por capa, kernel de convolución 4 y mecanismo de borrado/escritura por canal con decaimiento logarítmico también por canal, implementado mediante el kernel chunked `fla`. Las dos capas de atención global usan 3 cabezas query y 1 cabeza KV con head_dim 48, RoPE aplicado sobre 24 dimensiones, RMSNorm en q y k, y una puerta sigmoide a la salida. Además, cada capa mezcla las salidas de todas las capas anteriores mediante una softmax aprendida con una query por capa (attention residuals). El modelo usa pre-RMSNorm, FFN SwiGLU con dimensión oculta 352, `d_model` de 144 y vocabulario BPE de 4.096 tokens entrenado sobre la propia mezcla, con embeddings de entrada y salida atados.
 
-El entrenamiento empleo 9.998.172.160 tokens (38.140 pasos de 262.144 tokens cada uno), con cada fuente del dataset muestreada como maximo una epoca. La mezcla esta dominada por datos web y sinteticos de calidad: ClimbMix (36,3%), Cosmopedia v2 (19,5%), Ultra-FineWeb L2 HQ (19,5%) y TxT360-v2 (13,6%), mas una coleccion de datasets matematicos (open-web-math, OpenMathInstruct-2, NuminaMath-CoT, orca-math, GSM8K) que suman en torno al 10,5%, y pequenas dosis de TinyStories y OpenStax. Se uso el optimizador Muon (lr 0,02, momentum 0,95, 5 pasos de Newton-Schulz) para matrices 2-D y AdamW (lr 6e-3) para embeddings y normas, con warmup lineal de 10.000 pasos, clipping de gradiente a 1,0, precision bf16 con pesos maestros en fp32, sobre una unica RTX Pro 6000 Blackwell. No hubo RLHF ni DPO: es un modelo base preentrenado. El autor pide disculpas publicamente por problemas de "benchmaxing" (sobreajuste al benchmark) en la version anterior 2.5 Pico.
+El entrenamiento consumió 9.998.172.160 tokens en 38.140 pasos de 262.144 tokens (batch 256 × contexto 1.024), con cada fuente muestreada como máximo una época. Se usó Muon para las matrices 2-D (lr 0,02, momento 0,95, 5 pasos de Newton–Schulz) y AdamW para embeddings y normas (lr 6e-3, β 0,9/0,95), warmup lineal de 10.000 pasos, clipping de gradiente 1,0, autocast bf16 con pesos maestros fp32 y semilla 0. Todo el entrenamiento se ejecutó en una única RTX Pro 6000 Blackwell con 20 vCPU sobre PyTorch 2.x, `fla-core` 0.6.0 y `tokenizers`. La mezcla de datos fue: ClimbMix 36,3 % (3,63B tokens), Cosmopedia v2 19,5 % (1,95B), Ultra-FineWeb L2 HQ 19,5 % (1,95B), TXT360-v2 web-high-medium 13,6 % (1,36B), open-web-math 5,1 % (0,51B), OpenMathInstruct-2 4,8 % (0,48B), NuminaMath-CoT 0,53 %, TinyStories 0,48 %, OpenStax 0,10 %, orca-math-word-problems 0,10 % y GSM8K 0,004 %.
 
 ## Capacidades
 
-- Modelado de lenguaje basico en ingles (text-generation y text-completion), con rendimiento modesto incluso para su tamano.
-- Cierto grado de aritmetica y razonamiento matematico elemental, gracias a la inclusion de datasets matematicos en la mezcla (Arithmark-3: 38,10).
-- Comprension de sentido comun a nivel de completado (PIQA 56,09, HellaSwag 26,40).
-- Ejecucion en CPU: version en PyTorch puro (`model_h_local.py` + `gdn2_ref.py`) sin dependencia de Triton/GPU.
-- No soporta tool calling, function calling, agentes, ni modos de razonamiento (thinking): es un modelo base sin alineacion.
-- No es multimodal; solo texto en ingles.
+- Generación y completado de texto en inglés a nivel de n-gramas y frases cortas; el modelo es de tipo base, sin ajuste por instrucciones.
+- Razonamiento matemático elemental muy limitado, favorecido por la presencia de corpus matemáticos en la mezcla (open-web-math, OpenMathInstruct-2, NuminaMath-CoT).
+- Modelado de secuencias cortas con contexto de 1.024 tokens, suficiente para párrafos o documentos breves.
+- No dispone de soporte de tool calling ni de function calling.
+- No dispone de capacidades de agente ni de razonamiento multi-paso.
+- Multilingüismo: únicamente inglés; no se documenta cobertura de otros idiomas.
+- No dispone de modo thinking, visión ni audio.
+- Inferencia posible en CPU pura mediante `model_h_local.py` y `gdn2_ref.py`, y en GPU con el kernel Triton `fla` a través de `model_h.py`.
 
 ## Casos de uso
 
-- Investigacion en arquitecturas hibridas: estudiar el comportamiento de GDN-2 frente a atencion global en una red de 8 capas que se ejecuta en segundos, ideal para ablation studies.
-- Experimentos de scaling laws: su tamano minimo permite entrenar variantes rapidamente y comparar curvas de perdida frente a modelos de 10M, 50M o 100M parametros.
-- Benchmarking de kernels: probar y depurar implementaciones chunked de atencion lineal (fla/Triton) contra la referencia en PyTorch puro incluida en el repo.
-- Educacion y docencia: codigo legible de un transformer hibrido completo, con receta de entrenamiento reproducible (seed 0) y presupuesto de una sola GPU.
-- Prototipado de optimizadores: evaluar Muon frente a AdamW en un modelo que entrena en horas, no en semanas.
-- Generacion de texto juguete en CPU o en dispositivos con recursos extremadamente limitados (11,9 MB de pesos), por ejemplo demos embebidas o tests de latencia.
-- Punto de partida para fine-tuning experimental (por ejemplo, distillation o datasets pequenos) donde el coste de iterar es minimo.
-
-El propio autor subraya que no es utilizable como asistente general, chatbot ni para tareas de produccion.
+- Investigación en arquitecturas híbridas: permite comparar el rendimiento de una mezcla 6:2 de recurrencia lineal GDN-2 y atención global frente a un transformer puro del mismo tamaño, en un régimen de menos de 3 millones de parámetros y con receta reproducible.
+- Estudio de attention residuals: al incorporar mezcla softmax aprendida sobre todas las capas previas, sirve para analizar si esta técnica aporta ganancias medibles a escalas mínimas.
+- Validación de recetas de entrenamiento: la combinación Muon + AdamW, el schedule de learning rate y la mezcla de once fuentes documentada paso a paso permiten replicar el experimento y aislar el efecto de cada decisión.
+- Experimentos de scaling controlados: con 9.998.172.160 tokens y una sola GPU, es una unidad de cómputo asequible para estudiar curvas de pérdida y leyes de escalado a muy baja escala.
+- Pruebas de tokenizadores: el vocabulario BPE de 4.096 tokens entrenado sobre la mezcla permite evaluar el impacto del tamaño de vocabulario en modelos sub-3M.
+- Docencia y divulgación: el modelo cabe en 11,9 MB y se ejecuta en CPU, lo que facilita demostraciones de entrenamiento desde cero y de inferencia de modelos de lenguaje en entornos con recursos mínimos.
+- Referencia para pipelines de evaluación: la definición del índice compuesto (HellaSwag, ARC, PIQA y Arithmark-3) puede reutilizarse como plantilla de evaluación para modelos de escala similar.
 
 ## Benchmarks y rendimiento
 
-Evaluados con log-likelihood y normalizacion por longitud (acc_norm):
+Evaluación con conjuntos completos y puntuación por log-verosimilitud con normalización de longitud (`acc_norm`):
 
-| Benchmark | Score | Items |
+| Benchmark | Puntuación (`acc_norm`) | Ítems |
 |---|---|---|
 | HellaSwag | 26,40 | 10.042 |
 | ARC-Easy | 33,54 | 2.376 |
 | ARC-Challenge | 23,21 | 1.172 |
 | PIQA | 56,09 | 1.838 |
 | Arithmark-3 | 38,10 | 1.000 |
-| Index (metrica propia) | 8,192 | — |
+| Índice compuesto | 8,192 | — |
 
-Scores acc sin normalizar del mismo checkpoint: HellaSwag 26,49, ARC-Easy 33,50, ARC-Challenge 17,92, PIQA 56,91, Arithmark-3 38,10. No hay comparacion directa publicada con otros modelos en la informacion disponible; para referencia, estos valores son muy inferiores a los de modelos de 100M-1B parametros tipicos (que superan 50-70 en HellaSwag), coherente con su escala sub-3M.
+El índice se define como `( N(HellaSwag, 25) + N(media ARC, 25) + N(PIQA, 50) + 0,65 · N(Arithmark-3, 25) ) / 3,65`, con `N(v, c) = 100 · (v − c) / (100 − c)`. Para el mismo checkpoint, los valores de `acc` sin normalizar son: HellaSwag 26,49, ARC-Easy 33,50, ARC-Challenge 17,92, PIQA 56,91 y Arithmark-3 38,10.
+
+No se han publicado resultados de benchmarks comparativos con otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: practicamente insignificante; los pesos ocupan unos 11,9 MB en fp32, por lo que cualquier GPU moderna o incluso solo CPU es suficiente.
-- Consumer GPUs: cualquiera sirve (incluso integradas); no se necesita GPU dedicada. La version `model_h_local.py` funciona en maquinas solo CPU.
-- Entrenamiento (reproducir la receta original): 1x NVIDIA RTX Pro 6000 Blackwell con 20 vCPU; una GPU de gama alta con ~48 GB de VRAM deberia bastar dado el tamano del modelo.
-- Despliegue: sin soporte nativo de vLLM, TGI u Ollama documentado; el uso es directo con PyTorch 2.x y la libreria `tokenizers` (codigo de ejemplo en el repo con `model_h.py` o `model_h_local.py`).
-- Latencia y throughput: no disponibles; dada la arquitectura mayoritariamente lineal (d_model 144, 8 capas) y el tamano minimo, la inferencia por token es muy rapida incluso en CPU, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: inferior a 50 MB en fp32 (11,9 MB de pesos más estados de activación y caché de recurrencia para 1.024 tokens); en la práctica, cualquier GPU con más de 1 GB de memoria es suficiente.
+- GPU recomendadas: ninguna en particular; el modelo se entrenó en una RTX Pro 6000 Blackwell, pero para inferencia basta con una GPU integrada o una GTX 1050 o superior.
+- Cabe en cualquier GPU de consumo, incluidas las más antiguas, y también en CPU sin GPU.
+- Opciones de despliegue: código propio con PyTorch (`model_h.py` con kernel Triton `fla` para GPU, `model_h_local.py` + `gdn2_ref.py` para CPU). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y al no publicarse pesos en GGUF no es directamente compatible con dichos motores sin conversión.
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño (2,97M parámetros y contexto de 1.024 tokens), se espera una latencia de milisegundos por secuencia en CPU moderna, aunque no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Licencia |
-|---|---|---|---|---|
-| Supra2.6 Pico | 2,97M | 1.024 | Hibrida GDN-2 + gated GQA | Apache 2.0 |
-| SmolLM2-135M (HuggingFaceTB) | 135M | 8.192 | Transformer decoder (GQA) | Apache 2.0 |
-| Qwen2.5-0.5B | 494M | 32.768 | Transformer decoder (GQA) | Qwen Research / Apache 2.0 (variantes) |
-| Llama 3.2 1B | 1.240M | 128.000 | Transformer decoder (GQA) | Licencia Llama 3.2 |
+| Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Supra2.6-Pico | 2.972.496 | 1.024 | Híbrida GDN-2 + GQA | Apache 2.0 | Hugging Face (`model.pt`, `model.safetensors`) |
+| Alternativas sub-3M comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-Supra2.6 Pico es entre 45 y 400 veces mas pequeno que estas alternativas, con benchmarks muy por debajo de todas ellas; su valor comparativo esta en la arquitectura hibrida con atencion lineal y en el coste de experimentacion, no en calidad de generacion. No hay datos de benchmarks comparativos directos publicados en la informacion disponible.
+No se dispone de información sobre modelos comparables de la misma categoría (sub-3M, híbridos de recurrencia lineal y atención) en la documentación proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- El autor lo declara explicitamente no utilizable como asistente general, chatbot ni para ninguna tarea de produccion.
-- Riesgo de alucinacion y de texto incoherente muy alto: con menos de 3M de parametros y sin alineacion, la generacion es de calidad juguete.
-- Solo ingles; no hay soporte multilingue ni de castellano.
-- Contexto de solo 1.024 tokens, insuficiente para documentos largos o conversaciones multi-turno.
-- El autor reconoce problemas de "benchmaxing" (contaminacion/sobreajuste al benchmark) en la version anterior 2.5 Pico; conviene interpretar los scores con cautela.
-- Vocabulario minimo de 4.096 tokens BPE, lo que limita la eficiencia de tokenizacion en texto real.
-- Pesos en fp32 y formato no estandar (state dict de PyTorch con `model.pt`); cargar `model.safetensors` requiere `strict=False`, y no hay integracion con transformers, vLLM ni cuantizacion.
-- Sesgos: no disponible; al tratarse de un modelo base entrenado mayoritariamente con datos web sin filtrado de seguridad documentado, puede reproducir contenido sesgado u ofensivo.
+- El propio autor indica explícitamente que, a esta escala, el modelo no es utilizable como asistente general, chatbot ni para ninguna tarea de producción.
+- Es un modelo base sin ajuste por instrucciones: no sigue instrucciones ni mantiene diálogos coherentes.
+- Riesgo elevado de alucinación y de generar texto gramaticalmente plausible pero sin contenido factual fiable.
+- Contexto limitado a 1.024 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Solo soporta inglés; no se documenta ningún otro idioma.
+- Sesgos desconocidos: la model card no incluye análisis de sesgos ni evaluaciones de seguridad; la mezcla incluye corpus web sin filtrar más allá de los conjuntos de alta calidad indicados.
+- Licencia Apache 2.0, que permite uso comercial, pero las limitaciones técnicas hacen inviable cualquier aplicación productiva real.
+- El autor menciona "problemas accidentales de benchmaxing" en la versión 2.5 Pico, lo que aconseja tratar con cautela las métricas publicadas y verificar la evaluación de forma independiente.
+- El repositorio tiene un tamaño de 0,0 GB según Hugging Face, coherente con los 11,9 MB del archivo de pesos, pero conviene verificar la integridad de los ficheros antes de su uso.
+- No se publican pesos cuantizados, por lo que el despliegue en motores de inferencia optimizados requiere conversión manual.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SupraLabs/Supra2.6-Pico
-- Datasets de entrenamiento:
-  - https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
-  - https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
-  - https://huggingface.co/datasets/openbmb/Ultra-FineWeb
-  - https://huggingface.co/datasets/IFM/TxT360-v2
-  - https://huggingface.co/datasets/open-web-math/open-web-math
-  - https://huggingface.co/datasets/nvidia/OpenMathInstruct-2
-  - https://huggingface.co/datasets/AI-MO/NuminaMath-CoT
-  - https://huggingface.co/datasets/roneneldan/TinyStories
-  - https://huggingface.co/datasets/crumb/openstax-text
-  - https://huggingface.co/datasets/microsoft/orca-math-word-problems-200k
-  - https://huggingface.co/datasets/openai/gsm8k
+- Dataset ClimbMix: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
+- Dataset Cosmopedia v2 (smollm-corpus): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
+- Dataset Ultra-FineWeb: https://huggingface.co/datasets/openbmb/Ultra-FineWeb
+- Dataset TXT360-v2: https://huggingface.co/datasets/IFM/TxT360-v2
+- Dataset open-web-math: https://huggingface.co/datasets/open-web-math/open-web-math
+- Dataset OpenMathInstruct-2: https://huggingface.co/datasets/nvidia/OpenMathInstruct-2
+- Dataset NuminaMath-CoT: https://huggingface.co/datasets/project-numina/NuminaMath-CoT
+- Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
+- Dataset OpenStax: https://huggingface.co/datasets/crumb/openstax-text
+- Dataset orca-math-word-problems: https://huggingface.co/datasets/microsoft/orca-math-word-problems-200k
+- Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

@@ -2,100 +2,99 @@
 
 ## Resumen
 
-`rhasspy/voice-labs-models` no es un unico modelo, sino un repositorio agregado que empaqueta los artefactos que la aplicacion Voice Labs (del proyecto Open Home Foundation, OHF-Voice) descarga en su primer arranque o compila en la imagen de su contenedor. Reune un modelo de reconocimiento automatico del habla (NVIDIA Parakeet TDT-CTC 110M en ingles, cuantizado a int8), un modelo de extraccion de entidades/etiquetado cero-disparo (GLiNER 2.5 small de fastino en ONNX), un verificador de palabra de activacion basado en Kaldi, y varios modelos microWakeWord para satelites de voz.
+`rhasspy/voice-labs-models` no es un modelo único, sino un repositorio agregado que empaqueta los artefactos de inferencia que consume la aplicación [Voice Incubator](https://github.com/OHF-Voice/voice-incubator) del proyecto OHF-Voice (Rhasspy). El repositorio reúne modelos de reconocimiento automático del habla (ASR) de NVIDIA exportados a ONNX e int8, un extractor de entidades GLiNER 2.5 de fastino en ONNX y artefactos auxiliares de Kaldi y micro-wake-word para la verificación de palabras de activación. Su función es servir como bundle reproducible de dependencias para un asistente de voz local, no como un modelo entrenado por el autor.
 
-El proposito es servir de dependencia de despliegue para un asistente de voz local orientado a Home Assistant: la transcripcion la aporta Parakeet, la interpretacion de comandos recurre a GLiNER como respaldo, y la deteccion de palabra de activacion se reparte entre Kaldi (verificador preciso) y microWakeWord (deteccion ligera en dispositivos). El repositorio ocupa unos 0,4 GB y no entrena ningun modelo propio: es una capa de distribucion con licencias heterogeneas (CC-BY-4.0, Apache-2.0, MIT).
+El componente principal es Parakeet TDT-CTC 110M en inglés, un modelo transducer con rama CTC adicional que permite obtener, con un solo encoder, tanto las probabilidades CTC para el emparejamiento de comandos como la transcripción completa. Para el resto de idiomas (alemán, español, francés, italiano, neerlandés, polaco, ruso y ucraniano) se incluyen las variantes FastConformer Hybrid Transducer-CTC Large de NVIDIA, también con el encoder cuantizado dinámicamente a int8 y la cabeza CTC separada en `ctc_head.npz`.
 
-Es relevante para desarrolladores que construyen asistentes de voz embebidos o de bajo consumo, porque concentra en un solo lugar pesos ya convertidos a ONNX/TFLite y listos para inferencia en CPU, con cuantizaciones agresivas (int8, 4 bits) pensadas para hardware modesto.
+La relevancia actual reside en que ofrece un paquete listo para desplegar en asistentes de voz domésticos (Home Assistant, Rhasspy) con licencias permisivas (CC-BY-4.0 para los componentes NVIDIA, Apache-2.0 para GLiNER) y formatos optimizados para CPU (ONNX int8), lo que permite ejecución sin GPU en dispositivos de borde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Conjunto heterogeneo: transducer TDT-CTC (Parakeet), encoder transformer para etiquetado (GLiNER), nnet3 (Kaldi), redes ligeras TFLite (microWakeWord) |
-| Parametros totales | Parakeet TDT-CTC: 110M; GLiNER 2.5 small: no disponible; Kaldi/microWakeWord: no disponible |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transducer (RNN-T) + rama CTC híbrida; FastConformer (encoder) para los modelos grandes; GLiNER (encoder transformer) para NER |
+| Parametros totales | 110M (Parakeet TDT-CTC en); no disponible para FastConformer Large y GLiNER 2.5 small |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Parakeet: int8 (cuantizacion dinamica de onnxruntime sobre MatMul del encoder); GLiNER: encoder en 8 bits y embedding en 4 bits (MatMulNBits, bloque 32); microWakeWord: no disponible |
-| Idiomas soportados | en (ingles); `okay_nabu` descrito como multilingue |
-| Licencia | cc-by-4.0-and-apache-2.0 (agregada); por componente: Parakeet CC-BY-4.0, GLiNER Apache-2.0, Kaldi MIT + Apache-2.0, microWakeWord Apache-2.0 |
-| Formato de pesos | ONNX, TFLite, npz (cabecera CTC), Kaldi nnet3, tar.gz |
+| Tipos de cuantizacion | int8 dinámica (onnxruntime) en pesos MatMul del encoder; GLiNER con encoder en 8 bits y embeddings en 4 bits (MatMulNBits, block 32) |
+| Idiomas soportados | en, de, es, fr, it, nl, pl, ru, uk |
+| Licencia | CC-BY-4.0 (componentes NVIDIA) + Apache-2.0 (GLiNER); licencia agregada `cc-by-4.0-and-apache-2.0` |
+| Formato de pesos | ONNX (int8), TFLite, artefactos Kaldi (nnet3), micro-wake-word |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena nada; agrega artefactos ya entrenados por terceros y los reempaqueta. Parakeet TDT-CTC 110M es un modelo transducer de NVIDIA (combinacion TDT + CTC) exportado por csukuangfj para sherpa-onnx; en este repo se incluyen encoder, decoder, joiner y `tokens.txt`, con los pesos MatMul del encoder cuantizados a int8 mediante cuantizacion dinamica de onnxruntime, mas la cabeza CTC (`ctc_head.npz`) para que un mismo encoder produzca tanto las log-probabilidades CTC con las que se emparejan comandos como las transcripciones. GLiNER 2.5 small de fastino es un modelo de reconocimiento de entidades nombradas de tipo cero-disparo, exportado a ONNX con el encoder en 8 bits y el embedding en 4 bits (MatMulNBits, bloque 32); el fichero `gliner2_onnx.json` describe la configuracion del tokenizer y del clasificador.
+El repositorio combina dos familias de arquitecturas ASR. Parakeet TDT-CTC 110M es un modelo transducer (RNN-T) con decodificación *token-and-duration* (TDT) y una rama CTC paralela que comparte el encoder; el export incluye `encoder`, `decoder`, `joiner`, `tokens.txt` y `ctc_head.npz`, de modo que un único encoder alimenta tanto la transcripción como el emparejamiento de comandos por log-probabilidades CTC. Los modelos FastConformer Hybrid Transducer-CTC Large siguen el mismo esquema híbrido sobre un encoder FastConformer (convoluciones depthwise y atención multi-cabeza), exportados con NeMo 2.3.3 y cuantizados dinámicamente a int8 en los pesos MatMul del encoder.
 
-El verificador de palabra de activacion usa un modelo acustico nnet3 de Kaldi para ingles estadounidense con lexico IPA del perfil Rhasspy, sin modelo G2P ni modelo de lenguaje (el verificador no adivina pronunciaciones). Se incluyen binarios y librerias de Kaldi y OpenFst 1.6.7 para x86-64 (compilados desde fuente) y aarch64 (Kaldi de 2021 via kaldi-manylinux), junto con los scripts `utils/` y `steps/`. Los modelos microWakeWord (`okay_nabu`, `stop`, `vad`, `hey_jarvis`, `hey_mycroft`) proceden de los releases de kahrendt/microWakeWord y de esphome/micro-wake-word-models. La app ademas descarga EmbeddingGemma 2 (ONNX q4) y ReDimNet-b2 para identificacion de hablante, aunque esos no forman parte del repo.
+Los pesos proceden de los checkpoints publicados por NVIDIA en Hugging Face (Parakeet exportado por `csukuangfj/sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000` y `csukuangfj/sherpa-onnx-nemo-parakeet_tdt_ctc_110m-en-36000`). El autor no aporta información sobre el dataset de entrenamiento original, número de tokens ni procesos de RLHF/DPO; esos detalles deben consultarse en las model cards de NVIDIA. La innovación práctica del repositorio es el empaquetado: cuantización int8 de los MatMul del encoder, separación de la cabeza CTC y estructura de directorios homogénea entre idiomas para que la aplicación cargue el modelo del idioma activo sin lógica específica.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla en ingles con Parakeet TDT-CTC 110M (transcripcion y log-probabilidades CTC para emparejamiento de comandos).
-- Deteccion de comandos por coincidencia sobre salida CTC, sin necesidad de un segundo pase de decodificacion.
-- Extraccion de entidades y etiquetado cero-disparo con GLiNER 2.5 small (respaldo para interpretar comandos).
-- Verificacion de palabra de activacion con Kaldi nnet3 (modelo acustico + lexico IPA).
-- Deteccion ligera de palabra de activacion en satelites con microWakeWord (`okay_nabu` multilingue, `stop`, `vad`, `hey_jarvis`, `hey_mycroft`).
-- Inferencia en CPU via ONNX y TFLite, apta para dispositivos embebidos.
-- No incluye generacion de texto, razonamiento, codigo, matematicas, vision ni tool calling: es exclusivamente un pipeline de voz.
+- Reconocimiento automático del habla en inglés con Parakeet TDT-CTC 110M y en de, es, fr, it, nl, pl, ru y ucraniano con FastConformer Hybrid Large.
+- Decodificación dual: transcripción completa (transducer) y log-probabilidades CTC para emparejamiento de comandos y gramáticas cerradas.
+- Detección de entidades y clasificación de comandos mediante GLiNER 2.5 small como *fallback* cuando no hay coincidencia exacta con un comando.
+- Verificación de palabra de activación con Kaldi (modelo acústico nnet3 en inglés estadounidense con léxico IPA) y micro-wake-word.
+- Ejecución en CPU gracias a los formatos ONNX int8 y TFLite, sin requisito de GPU.
+- Soporte multilingüe por selección de modelo según el idioma configurado en la aplicación.
+- No incluye generación de texto libre, razonamiento, código, matemáticas, visión ni tool calling; es un bundle especializado en voz.
 
 ## Casos de uso
 
-- Asistente de voz local para Home Assistant: Parakeet transcribe la orden y la salida CTC se empareja contra comandos predefinidos, todo en CPU y sin conexion.
-- Deteccion de palabra de activacion en satelites de bajo consumo: microWakeWord (`okay_nabu`, `hey_jarvis`) se ejecuta en microcontroladores y solo despierta al dispositivo cuando detecta la frase.
-- Verificacion secundaria de activacion: Kaldi nnet3 confirma la palabra detectada por microWakeWord para reducir falsos positivos antes de procesar la orden.
-- Interpretacion de comandos en lenguaje natural: cuando el emparejamiento CTC falla, GLiNER extrae entidades (dispositivo, habitacion, accion) del texto transcrito como respaldo.
-- Transcripcion de audio en ingles en dispositivos sin GPU: el encoder int8 de Parakeet permite ASR en tiempo real en CPU de gama baja.
-- Pipeline de voz embebido en Raspberry Pi o similar (aarch64): los binarios Kaldi/OpenFst para aarch64 y los modelos ONNX/TFLite permiten montar el stack completo en placas ARM.
-- Prototipado de asistentes de voz offline: el repositorio sirve como fuente unica de artefactos ya cuantizados para evitar pasos de conversion.
+- Asistente de voz doméstico local: la aplicación carga Parakeet o el FastConformer del idioma configurado y transcribe comandos de voz en el dispositivo; el formato ONNX int8 permite ejecutarlo en una Raspberry Pi o mini-PC sin GPU.
+- Emparejamiento de comandos por CTC: las log-probabilidades de la cabeza CTC se comparan contra plantillas de comandos, lo que permite reconocer frases fijas ("enciende la luz") con umbrales de confianza sin entrenar un clasificador adicional.
+- Control de domótica en Home Assistant: el paquete está pensado para el ecosistema Rhasspy/OHF-Voice, de modo que se integra directamente con las intenciones y *slots* definidos en la configuración del asistente.
+- Extracción de entidades en comandos abiertos: GLiNER 2.5 small actúa como *fallback* para identificar personas, lugares u objetos cuando el comando no coincide con ninguna plantilla, con encoder en 8 bits y embeddings en 4 bits para minimizar memoria.
+- Verificación de palabra de activación: los artefactos de Kaldi y micro-wake-word permiten confirmar la *wake word* antes de activar el ASR completo, reduciendo falsos positivos y consumo.
+- Despliegue multilingüe en un mismo producto: al incluir nueve idiomas con estructura idéntica, un fabricante puede distribuir la misma aplicación cambiando únicamente el directorio del modelo activo.
+- Transcripción de audio de baja latencia en *edge*: el modelo de 110M parámetros en int8 ofrece un coste computacional bajo para dictado o subtitulado en tiempo real en CPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye métricas de WER, latencia ni throughput; para datos de precisión deben consultarse las model cards originales de NVIDIA (`nvidia/parakeet-tdt_ctc-110m` y las variantes `nvidia/stt_*_fastconformer_hybrid_large_pc`).
 
 ## Requisitos de hardware
 
-- Parakeet TDT-CTC 110M int8: cabe en CPU; VRAM estimada en GPU por debajo de 1 GB (no confirmado en la informacion disponible).
-- GLiNER 2.5 small ONNX (8/4 bits): inferencia en CPU, huella de memoria reducida por la cuantizacion a 4 bits del embedding.
-- Kaldi nnet3 y microWakeWord: CPU y microcontroladores; microWakeWord esta disenado para satelites de bajo consumo.
-- GPU recomendadas: no disponible; el diseno apunta a CPU y ARM, no a aceleradores.
-- Cabe en GPU consumer (RTX 4090, etc.) con enorme holgura, aunque no es su objetivo.
-- Despliegue: onnxruntime (Parakeet, GLiNER), sherpa-onnx (exportaciones de Parakeet), TFLite (microWakeWord), Kaldi (verificador). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI (no aplican a estos modelos).
-- Latencia y throughput: no disponible.
+- VRAM estimada: no aplica en el caso habitual; los modelos están cuantizados a int8 para inferencia en CPU con ONNX Runtime.
+- GPU recomendadas: no especificadas; al ser ONNX int8, cualquier GPU compatible con ONNX Runtime o CUDA puede acelerar la inferencia, pero el diseño apunta a CPU.
+- Cabe en GPU de consumo: sí, con amplio margen; el modelo inglés tiene 110M parámetros y los FastConformer Large son mayores pero siguen siendo manejables en tarjetas de 8 GB o menos.
+- Opciones de despliegue: ONNX Runtime (formato nativo del repositorio), sherpa-onnx (los exports originales provienen de ese proyecto), TFLite para micro-wake-word y Kaldi para el verificador de *wake word*.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Idiomas | Formato | Licencia | Orientación |
 |---|---|---|---|---|---|
-| rhasspy/voice-labs-models (Parakeet 110M) | ASR transducer TDT-CTC | 110M | no disponible | CC-BY-4.0 | Hugging Face |
-| nvidia/parakeet-tdt_ctc-110m | ASR transducer TDT-CTC | 110M | no disponible | CC-BY-4.0 | Hugging Face (origen) |
-| csukuangfj/sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000 | ASR exportado a ONNX | 110M | no disponible | CC-BY-4.0 | Hugging Face (origen del export) |
-| fastino/gliner2.5-small-v1 | Etiquetado cero-disparo | no disponible | no disponible | Apache-2.0 | Hugging Face (origen) |
+| `rhasspy/voice-labs-models` (bundle) | 110M (en) + FastConformer Large (resto) | 9 | ONNX int8, TFLite, Kaldi | CC-BY-4.0 + Apache-2.0 | Asistente de voz local en CPU |
+| `nvidia/parakeet-tdt_ctc-110m` | 110M | en | NeMo, safetensors | CC-BY-4.0 | ASR inglés de referencia |
+| `nvidia/stt_es_fastconformer_hybrid_large_pc` | no disponible | es | NeMo | CC-BY-4.0 | ASR español de alta precisión |
+| `fastino/gliner2.5-small-v1` | no disponible | multilingüe | safetensors, ONNX | Apache-2.0 | Extracción de entidades zero-shot |
 
-No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
+La diferencia clave frente a los checkpoints originales de NVIDIA es el empaquetado: cuantización int8, cabeza CTC separada y estructura uniforme multi-idioma, a cambio de perder la integración directa con NeMo y de no incluir métricas propias.
 
 ## Limitaciones y advertencias
 
-- Solo ingles para el ASR y el verificador Kaldi; `okay_nabu` se describe como multilingue pero el resto del pipeline no.
-- No es un modelo generativo: no sirve para texto, codigo, razonamiento ni tool calling.
-- Licencias heterogeneas por componente: CC-BY-4.0 (Parakeet, requiere atribucion a NVIDIA), Apache-2.0 (GLiNER, microWakeWord, Kaldi/OpenFst), MIT (modelo Kaldi). Verificar cada licencia antes de uso comercial.
-- La cuantizacion int8/4 bits puede degradar la precision del ASR y del etiquetado frente a los pesos originales.
-- El verificador Kaldi no incluye G2P ni modelo de lenguaje: no adivina pronunciaciones fuera del lexico IPA.
-- Riesgo de falsos positivos/negativos en la deteccion de palabra de activacion; por eso existe la verificacion secundaria.
-- El repositorio depende de artefactos de terceros; cambios en los origenes pueden afectar a la reproducibilidad.
-- No hay benchmarks publicados en la informacion disponible; no se puede afirmar rendimiento absoluto.
+- No es un modelo entrenado por el autor: los pesos son exports de NVIDIA y fastino; cualquier sesgo o limitación de precisión proviene de los modelos originales.
+- El repositorio no documenta WER, cobertura de acentos ni dominios de entrenamiento; no debe asumirse calidad homogénea entre los nueve idiomas.
+- El modelo inglés es de 110M parámetros, sustancialmente menor que los FastConformer Large del resto de idiomas, por lo que la precisión puede diferir entre configuraciones.
+- La cuantización int8 dinámica puede degradar ligeramente la precisión respecto a los pesos originales en fp32/fp16; no se publican comparativas.
+- La licencia agregada `cc-by-4.0-and-apache-2.0` obliga a mantener la atribución a NVIDIA Corporation (CC-BY-4.0) y a cumplir Apache-2.0 para GLiNER; conviene revisar `LICENSE.md` antes de uso comercial.
+- El uso previsto es ASR y verificación de *wake word* en asistentes de voz; no es adecuado para generación de texto, razonamiento ni tareas multimodales.
+- El verificador Kaldi incluido cubre únicamente inglés estadounidense (`en_US-rhasspy.tar.gz`), lo que limita la verificación de *wake word* en otros idiomas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/rhasspy/voice-labs-models
-- Voice Labs app: https://github.com/OHF-Voice/apps-experimental/tree/master/voice_labs
-- Parakeet origen: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
-- Export transducer: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000
-- Export CTC: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet_tdt_ctc_110m-en-36000
-- GLiNER origen: https://huggingface.co/fastino/gliner2.5-small-v1
-- Perfil Kaldi Rhasspy: https://github.com/rhasspy/en-us_kaldi-rhasspy
-- Kaldi: https://github.com/kaldi-asr/kaldi
-- OpenFst: https://www.openfst.org
-- kaldi-manylinux: https://github.com/rhasspy/kaldi-manylinux
-- microWakeWord: https://github.com/kahrendt/microWakeWord
-- micro-wake-word-models: https://github.com/esphome/micro-wake-word-models
-- EmbeddingGemma 2 ONNX: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
-- ReDimNet-b2: https://huggingface.co/OpenVoiceOS/redimnet-b2-vox2-onnx
+- Repositorio en Hugging Face: https://huggingface.co/rhasspy/voice-labs-models
+- Aplicación Voice Incubator: https://github.com/OHF-Voice/voice-incubator
+- Parakeet TDT-CTC 110M (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
+- Export sherpa-onnx transducer: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000
+- Export sherpa-onnx CTC: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet_tdt_ctc_110m-en-36000
+- FastConformer alemán: https://huggingface.co/nvidia/stt_de_fastconformer_hybrid_large_pc
+- FastConformer español: https://huggingface.co/nvidia/stt_es_fastconformer_hybrid_large_pc
+- FastConformer francés: https://huggingface.co/nvidia/stt_fr_fastconformer_hybrid_large_pc
+- FastConformer italiano: https://huggingface.co/nvidia/stt_it_fastconformer_hybrid_large_pc
+- FastConformer neerlandés: https://huggingface.co/nvidia/stt_nl_fastconformer_hybrid_large_pc
+- FastConformer polaco: https://huggingface.co/nvidia/stt_pl_fastconformer_hybrid_large_pc
+- FastConformer ruso: https://huggingface.co/nvidia/stt_ru_fastconformer_hybrid_large_pc
+- FastConformer ucraniano: https://huggingface.co/nvidia/stt_ua_fastconformer_hybrid_large_pc
+- GLiNER 2.5 small (fastino): https://huggingface.co/fastino/gliner2.5-small-v1
+- Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
+- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

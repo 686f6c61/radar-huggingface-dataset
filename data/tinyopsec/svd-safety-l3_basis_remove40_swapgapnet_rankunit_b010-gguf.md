@@ -2,89 +2,95 @@
 
 ## Resumen
 
-`svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010-GGUF` es un derivado cuantizado de Llama-3-8B-Instruct publicado por el usuario tinyopsec en Hugging Face. Se trata de un artefacto de investigación resultante de aplicar dos técnicas sobre el modelo base de Meta: primero, compresión mediante Basis Sharing (método presentado en ICLR 2025 basado en SVD y compartición de bases entre capas) hasta el 60% de los parámetros densos originales; después, 10 rondas de edición iterativa de pesos con un procedimiento denominado swapgapnet_iter, descrito como paramétricamente neutro (no altera el número de parámetros).
+El modelo `svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010` es un checkpoint derivado de Llama-3-8B-Instruct que ha sido comprimido mediante la técnica Basis Sharing (presentada en ICLR 2025) hasta retener el 60% de los parámetros densos originales, y posteriormente editado con 10 rondas de intercambio iterativo de parámetros neutro (swapgapnet_iter). El resultado es un artefacto de investigación sobre el compromiso entre compresión SVD y degradación de seguridad, no un asistente de propósito general.
 
-El repo forma parte de un estudio sobre los compromisos entre compresión SVD y seguridad (safety) de los modelos. El propio autor advierte de forma explícita que varias variantes de la rejilla de experimentos están deliberadamente degradadas en cuanto a comportamiento seguro, y que el modelo no debe considerarse un asistente de propósito general. Esto lo convierte en un recurso útil para investigadores que analizan cómo la compresión agresiva afecta a los filtros de seguridad de un LLM, pero no para despliegue en producción.
+Esta ficha describe la versión cuantizada en GGUF publicada por el usuario `tinyopsec`, que ofrece 13 variantes de cuantización (desde F16 hasta Q2_K) generadas con llama.cpp, con un total de 8.030.261.248 parámetros según los pesos safetensors del modelo base. El repositorio ocupa 77,6 GB e incluye todos los ficheros GGUF empaquetados.
 
-La ficha de pesos original se basa en Meta-Llama-3-8B-Instruct (arquitectura transformer decoder-only de 8 mil millones de parámetros, 8.030.261.248 según los metadatos de safetensors). El repositorio GGUF pesa 77,6 GB en total y ofrece cuantizaciones desde Q2_K hasta F16.
+La relevancia del modelo es fundamentalmente metodológica: sirve para estudiar cómo la compresión por descomposición en valores singulares y las ediciones posteriores afectan a los comportamientos de seguridad de un LLM alineado. El propio autor advierte que varias variantes de la rejilla experimental están deliberadamente degradadas en seguridad y que el modelo no debe usarse como asistente general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3), comprimido con Basis Sharing (SVD) y editado con swapgapnet_iter |
-| Parametros totales | 8.030.261.248 (modelo base; versión comprimida al 60% de parámetros densos según el autor) |
+| Arquitectura | Transformer decoder-only (Llama-3-8B-Instruct comprimido con Basis Sharing, SVD) |
+| Parametros totales | 8.030.261.248 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (la de Llama 3 8B Instruct es 8.192 tokens, pero el autor no lo confirma para este derivado) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
-| Licencia | Meta Llama 3 Community License |
+| Licencia | Meta Llama 3 Community License (llama3) |
 | Formato de pesos | GGUF (generado con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Meta-Llama-3-8B-Instruct, un transformer decoder-only de 8 mil millones de parámetros. Sobre él se ha aplicado Basis Sharing (ICLR 2025), una técnica de compresión que descompone las matrices de pesos mediante SVD y comparte las bases entre capas para reducir el modelo hasta el 60% de sus parámetros densos. El sufijo `remove40` del nombre sugiere la eliminación de componentes, aunque el autor no detalla el significado exacto de cada parámetro de la configuración.
+El modelo parte de Llama-3-8B-Instruct, un transformer decoder-only con 8.030 millones de parámetros. Sobre ese checkpoint se aplica Basis Sharing (ICLR 2025), una técnica de compresión basada en descomposición en valores singulares (SVD) que comparte bases entre capas y reduce el modelo al 60% de los parámetros densos. Posteriormente se aplican 10 rondas de "iterative parameter-neutral swap" (swapgapnet_iter), un procedimiento de edición de parámetros cuyo objetivo declarado es neutral respecto al rendimiento pero que, según el propio autor, produce degradaciones de seguridad en varias variantes de la rejilla experimental.
 
-Tras la compresión, el checkpoint se sometió a 10 rondas de edición iterativa `swapgapnet_iter`, descrita como "parameter-neutral swap": un proceso de intercambio de pesos que no modifica el recuento de parámetros. No hay información sobre entrenamiento adicional, número de tokens, datasets usados ni etapas de RLHF/DPO en esta versión; el ajuste por instrucciones procede del modelo base de Meta. El propósito declarado del trabajo es investigar las relaciones entre compresión SVD y degradación de la seguridad del modelo, por lo que algunas variantes de la serie están intencionadamente debilitadas en ese aspecto.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO adicionales tras la compresión. La model card no documenta innovaciones como decodificación especulativa o atención lineal; el interés técnico reside en el pipeline de compresión SVD con compartición de bases y en la metodología de edición iterativa de parámetros.
 
 ## Capacidades
 
-- Generación de texto conversacional, heredada de Meta-Llama-3-8B-Instruct (etiqueta `conversational` y pipeline `text-generation`).
-- Compresión experimental: sirve como sujeto de estudio para analizar cómo Basis Sharing y las ediciones swapgapnet afectan al comportamiento del modelo.
-- Compatibilidad total con el ecosistema GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y runtimes equivalentes.
-- No hay información que confirme capacidades de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
-- El autor advierte que el comportamiento seguro del modelo puede estar degradado, por lo que sus capacidades prácticas como asistente no están garantizadas.
+- Generación de texto conversacional, heredada de Llama-3-8B-Instruct.
+- Razonamiento y respuesta a instrucciones en formato chat (el checkpoint base es Instruct).
+- No se documenta soporte de tool calling ni function calling en la model card.
+- No se documenta soporte explícito de agentes o razonamiento multi-paso.
+- Capacidades multilingües: no disponibles en la información proporcionada; se heredarían parcialmente de Llama 3, pero no están verificadas tras la compresión.
+- No se documentan modos especiales (thinking, visión, audio).
+- Compatible con runtimes GGUF (llama.cpp, Ollama, LM Studio, koboldcpp) y con endpoints compatibles según los tags del repositorio.
 
 ## Casos de uso
 
-- Investigación en compresión de LLM: estudiar en qué medida Basis Sharing al 60% de parámetros preserva (o degrada) la calidad de generación respecto al modelo denso original, comparando cuantizaciones.
-- Auditoría de seguridad de modelos comprimidos: evaluar cómo la compresión SVD y las ediciones iterativas afectan a los mecanismos de safety de un modelo alineado, un tema central del estudio del que procede este artefacto.
-- Benchmarking de runtimes GGUF: probar rendimiento, throughput y consumo de llama.cpp, Ollama o koboldcpp con un modelo de 8B en distintas cuantizaciones (de Q2_K a F16).
-- Experimentación local en hardware de consumo: ejecutar un derivado de Llama-3-8B en GPU doméstica o CPU gracias al formato GGUF, útil para pruebas offline.
-- Comparación de efectos de cuantización: analizar cómo las cuantizaciones de 2 a 8 bits interactúan con un modelo previamente comprimido por SVD, un caso poco frecuente en repos públicos.
-- Material docente: usar el modelo como ejemplo práctico en cursos o artículos sobre técnicas de compresión (SVD, basis sharing) y sus riesgos.
+- Investigación sobre compresión de modelos: sirve como punto de comparación para medir la pérdida de calidad de la compresión SVD con compartición de bases frente al Llama-3-8B original, usando las distintas cuantizaciones GGUF para aislar el efecto del redondeo numérico del efecto de la compresión estructural.
+- Estudio de seguridad y alineación: el modelo permite analizar cómo la edición iterativa de parámetros (swapgapnet_iter) altera los comportamientos de rechazo y seguridad, comparando las variantes de la rejilla experimental entre sí.
+- Evaluación de técnicas de cuantización: los 13 ficheros GGUF permiten medir la degradación de perplejidad y de calidad de generación en el rango F16–Q2_K sobre un modelo ya comprimido, un escenario de doble compresión poco documentado.
+- Reproducción de experimentos académicos: útil para replicar los resultados de Basis Sharing (ICLR 2025) en entornos con recursos limitados, ya que las variantes Q4_K_M y Q3_K_M caben en GPUs de consumo.
+- Pruebas de pipelines de inferencia GGUF: sirve para validar integraciones con llama.cpp, Ollama o LM Studio en CI, verificando carga, tokenización y generación con un modelo de 8B parámetros.
+- Docencia sobre riesgos de modelos derivados: caso práctico para mostrar por qué los artefactos de investigación con seguridad degradada no deben desplegarse en producción sin evaluación previa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona métricas de MMLU, HumanEval, GSM8K ni evaluaciones de safety comparativas entre las variantes de la rejilla de experimentos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Estimaciones basadas en el tamaño de archivo de cada cuantización (el modelo base tiene 8.030 millones de parámetros; la versión comprimida al 60% puede ocupar menos, pero el autor no detalla los tamaños por archivo salvo F16):
-
-- F16: unos 16,1 GB según la model card; requiere una GPU con más de 16 GB de VRAM (RTX 4090 de 24 GB, A100, o carga parcial en GPU + offload a CPU).
-- Q8_0: aproximadamente 8-9 GB; cabe en una RTX 3090/4090 o en GPUs de 12 GB con ajustes.
-- Q6_K: aproximadamente 6-7 GB; viable en GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4070).
-- Q4_K_M (cuantización recomendada por el autor): aproximadamente 4-5 GB; funciona en GPUs de 6-8 GB (RTX 3060 Ti, RTX 4060) e incluso en CPU con RAM suficiente.
-- Q2_K: aproximadamente 2-3 GB; ejecutable en equipos muy modestos, con pérdida de calidad notable.
-- Runtimes soportados: llama.cpp (comando de ejemplo en la model card), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
-- No hay datos publicados de latencia ni throughput para este derivado.
+- VRAM estimada para inferencia (8.030 millones de parámetros):
+  - F16: aproximadamente 16,1 GB según la model card.
+  - Q8_0: en torno a 8,5 GB.
+  - Q6_K: en torno a 6,6 GB.
+  - Q5_K_M: en torno a 5,7 GB.
+  - Q4_K_M (recomendado): en torno a 4,9 GB.
+  - Q3_K_M: en torno a 3,9 GB.
+  - Q2_K: en torno a 3,2 GB.
+  - Estas cifras son estimaciones a partir del tamaño de los pesos; la VRAM real depende del contexto configurado y del runtime.
+- GPU recomendadas: A100 o H100 para F16 y Q8_0 con contextos largos; RTX 4090 (24 GB) para cualquier cuantización con holgura; RTX 3090/4080 (16–24 GB) para Q6_K y superiores.
+- Cabe en GPU de consumo: sí, desde Q5_K_M hacia abajo en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060), y Q4_K_M en 6 GB con contexto reducido.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Compresion | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l3 (este) | 8.030M base, comprimido al 60% | Basis Sharing + swapgapnet | no disponible | Llama 3 Community | GGUF publico (390 descargas) |
-| Meta-Llama-3-8B-Instruct (base) | 8.030M | Ninguna (denso) | 8.192 tokens | Llama 3 Community | Pesos oficiales y multiples cuantizaciones |
-| Llama-3-8B-Instruct (GGUF estandar, p. ej. quantizaciones comunitarias) | 8.030M | Solo cuantizacion post-entrenamiento | 8.192 tokens | Llama 3 Community | Ampliamente disponible, uso general |
-| Sheared-LLaMA-2.7B (referencia de poda estructural) | 2.700M | Poda estructural + continued pretraining | 4.096 tokens | Apache 2.0 | Pesos abiertos, modelo general |
+| svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010 (este) | 8,03 B (60% denso tras SVD) | no disponible | Llama 3 Community | GGUF | Artefacto de investigación con seguridad degradada en varias variantes |
+| Llama-3-8B-Instruct (original) | 8,03 B | 8.192 tokens (estándar de Llama 3) | Llama 3 Community | safetensors, GGUF | Asistente alineado de referencia; contexto según la ficha oficial de Meta |
+| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community | safetensors, GGUF | Sucesor con contexto extendido y mejor multilingüismo |
 
-La diferencia clave es que este modelo es un artefacto experimental orientado al estudio de safety bajo compresión, mientras que las alternativas son modelos de propósito general. Para uso productivo, el checkpoint original de Meta es la opción recomendada.
+La comparación con otros modelos comprimidos por SVD no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte que varias variantes de la serie están deliberadamente degradadas en seguridad; este checkpoint puede exhibir comportamientos no alineados y no debe usarse como asistente general sin evaluación previa.
-- Riesgo de alucinación inherente a un modelo de 8B, agravado potencialmente por la compresión al 60% de parámetros y las 10 rondas de edición swapgapnet, cuyo impacto en calidad no está documentado con benchmarks.
-- No hay datos de contexto, idiomas ni rendimiento publicados: cualquier despliegue requiere validación propia.
-- La licencia Meta Llama 3 Community License impone condiciones de uso (atribución "Built with Meta Llama 3", restricciones para ciertos casos de uso y límites de usuarios mensuales para licencia comercial específica); este derivado hereda dichas restricciones.
-- Es un artefacto de investigación con muy poca tracción (390 descargas, 0 likes), sin comunidad de mantenimiento aparente ni garantía de corrección de los archivos.
-- La compresión Basis Sharing es una técnica reciente; su interacción con cuantizaciones agresivas (Q2_K, Q3_K) puede producir degradaciones no caracterizadas.
+- El autor advierte explícitamente de que varias variantes de la rejilla experimental están deliberadamente degradadas en seguridad; el modelo no es un asistente de propósito general.
+- Riesgo elevado de respuestas inseguras o no alineadas: la edición swapgapnet_iter puede haber erosionado los comportamientos de rechazo de Llama-3-8B-Instruct.
+- La compresión al 60% de parámetros densos puede degradar razonamiento, coherencia en contextos largos y fidelidad factual; no hay benchmarks publicados que lo cuantifiquen.
+- Riesgo de alucinación no evaluado en la información disponible.
+- Idiomas soportados no documentados; el multilingüismo puede haberse visto afectado por la compresión.
+- Licencia Meta Llama 3 Community: impone restricciones de uso comercial, obligaciones de atribución ("Built with Meta Llama 3") y límites de usuarios mensuales recogidos en el texto de la licencia.
+- No apto para producción sin una evaluación de seguridad y calidad específica del caso de uso.
+- El repositorio GGUF ocupa 77,6 GB, lo que exige espacio en disco considerable si se descargan todas las variantes.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/tinyopsec/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010-GGUF
-- Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
-- Checkpoint original comprimido y editado: https://huggingface.co/Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010
-- Licencia Meta Llama 3 Community License: https://llama.meta.com/llama3/license/
-- Artículo de Basis Sharing (ICLR 2025): no disponible (no se proporciona enlace en la información del repositorio)
+- Repositorio GGUF: https://huggingface.co/tinyopsec/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010-GGUF
+- Modelo base: https://huggingface.co/Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010
+- Paper Basis Sharing (ICLR 2025): no disponible en la información proporcionada
 - llama.cpp: https://github.com/ggerganov/llama.cpp
+- Licencia Meta Llama 3: https://llama.meta.com/llama3/license/

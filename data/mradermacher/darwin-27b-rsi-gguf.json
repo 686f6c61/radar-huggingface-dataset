@@ -68,31 +68,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "FINAL-Bench/Darwin-27B-RSI-GGUF · Hugging Face",
-      "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-RSI-GGUF",
-      "snippet": "Q4_K_M GGUF of FINAL-Bench/Darwin-27B-RSI — Darwin-27B-Opus improved by Recursive Self-Improvement, with zero human-written answers."
-    },
-    {
-      "title": "FINAL-Bench/Darwin-27B-RSI · Hugging Face",
-      "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-RSI",
-      "snippet": "Darwin-27B-RSI is Darwin-27B-Opus after Recursive Self-Improvement (RSI): the model was improved using only signal it produced itself."
-    },
-    {
-      "title": "mradermacher/Eikos-27B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Eikos-27B-GGUF",
-      "snippet": "See https://huggingface.co/mradermacher/model_requests for some answers to questions you might have and/or if you want some other model quantized. I thank my company, nethype GmbH, for letting me use its servers and providing upgrades to my workstation to enable this work in my free time. Downloads last month · 514 · GGUF · Model size · 27B params ·"
-    },
-    {
-      "title": "mradermacher (team mradermacher)",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "updated a model about 3 hours ago mradermacher/WikiQwen-4B-GGUF"
-    },
-    {
-      "title": "mradermacher/Mars_27B_V.1-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Mars_27B_V.1-i1-GGUF",
-      "snippet": "See https://huggingface.co/mradermacher/model_requests for some answers to questions you might have and/or if you want some other model quantized."
-    }
-  ]
+  "sources": []
 }

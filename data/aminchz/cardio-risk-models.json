@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "aminCHZ/cardio-risk-models",
+  "slug": "aminchz-cardio-risk-models",
+  "author": "aminCHZ",
+  "url": "https://huggingface.co/aminCHZ/cardio-risk-models",
+  "created_at": "2026-11-21T20:36:37.000Z",
+  "updated_at": "2026-11-21T20:40:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "classification",
+    "cardiovascular",
+    "k-nn",
+    "svm",
+    "decision-tree",
+    "random-forest",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42472708,
+  "storage_human": "42 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Risk prediction models for cardiac rupture after acute myocardial ...",
+      "url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2026.1721103/full",
+      "snippet": "Several risk prediction models have been developed, but their methodological quality and clinical applicability remain uncertain. This study systematically ..."
+    }
+  ]
+}

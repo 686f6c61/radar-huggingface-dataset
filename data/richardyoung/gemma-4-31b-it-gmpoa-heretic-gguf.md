@@ -2,99 +2,91 @@
 
 ## Resumen
 
-`richardyoung/gemma-4-31B-it-GMPOA-heretic-GGUF` es una cuantización en formato GGUF del modelo `richardyoung/gemma-4-31B-it-GMPOA-heretic`, una versión "abliterada" (con los mecanismos de rechazo eliminados) de `google/gemma-4-31B-it`. La abliteración se realizó con Heretic 2.0, aplicando una corrección MPOA (gamma-MPOA) para compensar las ganancias de salida post-norm. El autor, Richard J. Young, publica estos pesos como material de investigación sobre eliminación de rechazos y su evaluación, no como asistente de propósito general.
+`richardyoung/gemma-4-31B-it-GMPOA-heretic-GGUF` es una cuantizacion en formato GGUF de un modelo derivado de la familia Gemma 4 de Google, publicado por el usuario richardyoung en Hugging Face. El modelo parte de `richardyoung/gemma-4-31B-it-GMPOA-heretic`, una variante "heretic" y "abliterated" (es decir, con las capas de rechazo/aliniacion de seguridad eliminadas o atenuadas mediante tecnicas de abliteration) del Gemma 4 31B instruction-tuned. El prefijo GMPOA no viene documentado en la informacion disponible. El repositorio incluye unicamente pesos en formato GGUF, pensados para su uso con llama.cpp y Ollama.
 
-El modelo base cuenta con 30.697.345.596 parámetros (aproximadamente 30,7 mil millones) y es de tipo transformer denso, según se desprende del tamaño y la arquitectura de la familia Gemma. El repositorio GGUF ocupa 18,7 GB e incluye por ahora una cuantización Q4_K_M (18,7 GB) junto con una importance matrix de 28 MB; el autor anuncia la incorporación progresiva de IQ3_M, IQ4_XS, Q5_K_M, Q6_K y Q8_0.
+El modelo tiene 30.697.345.596 parametros (aproximadamente 30,7 mil millones) y esta disenado para generacion de texto conversacional en ingles. Su interes principal radica en que ofrece una version "sin censura" (uncensored) del Gemma 4 31B, empaquetada en GGUF con matrices de cuantizacion imatrix, lo que facilita su despliegue en hardware de consumo y en entornos de investigacion donde se requiere estudiar el comportamiento del modelo sin las capas de rechazo estandar.
 
-La relevancia de esta ficha es doble: por un lado, documenta un artefacto de investigación sobre técnicas de abliteración y su medición; por otro, sirve como ejemplo de cuantización GGUF de un modelo de ~31B con licencia Apache 2.0, ejecutable en llama.cpp y Ollama. El modelo está pensado exclusivamente para investigación en entornos controlados y no debe desplegarse como asistente general.
+El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. La licencia declarada es Apache 2.0, aunque al derivar de Gemma conviene verificar las condiciones de la licencia original del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Gemma 4); detalles de atención y capas no disponibles |
-| Parametros totales | 30.697.345.596 (~30,7B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K_M (disponible); IQ3_M, IQ4_XS, Q5_K_M, Q6_K, Q8_0 (anunciadas, aún no publicadas) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache 2.0 (con enlace a la licencia de Gemma 4) |
-| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors |
-| Tamaño del repositorio | 18,7 GB |
-| Importance matrix | `gemma-4-31B-it-GMPOA-heretic-imatrix.gguf` (28 MB), calibrada con `calibration_datav3` (128 chunks de 512 tokens sobre la build Q8_0) |
-| Modalidad | Solo texto (el proyector de visión no está incluido) |
+| Arquitectura | Transformer decoder-only (derivada de Gemma 4; detalles no disponibles) |
+| Parametros totales | 30.697.345.596 (~30,7 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (multiples niveles; se menciona imatrix, niveles concretos no disponibles) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp / Ollama) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de la familia Gemma 4 con ~30,7B parámetros. La innovación principal no está en la arquitectura base, sino en el proceso de abliteración: se parte de `google/gemma-4-31B-it` y se aplica Heretic 2.0 con una corrección MPOA (gamma-MPOA) para compensar las ganancias de salida post-norm. La regla de selección del vector de abliteración fue la de minimizar los rechazos por palabra clave en el conjunto de desarrollo sujeto a una KL de primer token ≤ 0,1, mediante una búsqueda de 100 ensayos.
+La informacion disponible no detalla la arquitectura interna del modelo base Gemma 4 31B (numero de capas, dimension del modelo, mecanismo de atencion, uso de atencion lineal o sliding window, etc.). Se trata de un transformer decoder-only, coherente con la familia Gemma. El proceso de entrenamiento original de Gemma 4 (numero de tokens, composicion del dataset, fases de SFT y RLHF) no se especifica en la informacion proporcionada.
 
-Los datos de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO) no están disponibles en la información proporcionada. La cuantización se generó con llama.cpp (commit `468fde9`): conversión a bf16 con `convert_hf_to_gguf.py --outtype bf16` y posterior `llama-quantize` en CPU. Las cuantizaciones IQ3_M, IQ4_XS, Q4_K_M y Q5_K_M usan la importance matrix; Q6_K y Q8_0 son estáticas. Cada archivo Q4_K_M se cargó y respondió a un prompt de prueba antes de la subida, y los sumas SHA-256 están en `SHA256SUMS`.
+La innovacion principal de esta variante es el proceso de "abliteration" (etiquetado como heretic), una tecnica que identifica y modifica las direcciones de activacion asociadas al rechazo de peticiones para reducir la probabilidad de respuestas de negativa. El prefijo GMPOA no esta documentado. La cuantizacion GGUF se ha generado con matrices imatrix, lo que tipicamente mejora la calidad de las cuantizaciones de baja precision respecto a cuantizaciones sin calibracion.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés (pipeline `text-generation`, tag `conversational`).
-- Eliminación de rechazos: según la model card, el modelo cumple muchas peticiones que el original rechaza (20,6% de rechazo frente a 89,3% del original en 972 prompts dañinos retenidos, juez WildGuard, sobre el modelo en bf16).
-- Compatibilidad con endpoints (`endpoints_compatible`) y con el ecosistema llama.cpp/Ollama.
-- Capacidad multimodal de visión presente en el modelo base, pero **no incluida** en estos GGUF (sin proyector de visión).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la metadata (`language: en`).
-- Modo "thinking" u otras capacidades especiales: no disponible en la información proporcionada.
+- Generacion de texto conversacional en ingles (pipeline text-generation, etiqueta conversational).
+- Razonamiento y respuesta a instrucciones heredados del Gemma 4 31B instruction-tuned.
+- Comportamiento "uncensored": menor tendencia a rechazar peticiones que el modelo base.
+- Compatibilidad con llama.cpp y Ollama para inferencia local.
+- Endpoints compatibles (tag endpoints_compatible).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Capacidades multimodales (vision, audio): no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo se declara ingles.
 
 ## Casos de uso
 
-- **Investigación sobre abliteración y su medición**: el modelo sirve como artefacto de estudio para comparar tasas de rechazo antes y después de la eliminación, y para evaluar defensas frente a la abliteración. Es su uso declarado por el autor.
-- **Evaluación de robustez de salvaguardas**: permite medir con jueces automáticos (p. ej. WildGuard) cuántas peticiones dañinas se cumplen, y comparar con el modelo original como línea base.
-- **Reproducción de experimentos en CPU/GPU de consumo**: la cuantización Q4_K_M (18,7 GB) permite ejecutar el modelo en llama.cpp u Ollama en hardware de gama alta de consumo, facilitando la reproducibilidad de estudios sin clústeres dedicados.
-- **Pruebas de pipelines de cuantización**: el repositorio documenta el proceso completo (conversión bf16, importance matrix, `llama-quantize`) y sirve de referencia para construir y validar GGUF de modelos de ~31B.
-- **Análisis de degradación por cuantización**: al comparar Q4_K_M con las futuras IQ3_M, Q5_K_M, Q6_K y Q8_0, se puede estudiar cómo la cuantización altera el comportamiento de rechazo, algo que el propio autor advierte que no fue evaluado en el paper.
-- **Banco de pruebas de alineación y seguridad**: útil en entornos de investigación para diseñar y validar clasificadores de seguridad o filtros de salida frente a un modelo sin rechazos.
-- **Despliegue local de referencia en Ollama**: con `ollama run hf.co/richardyoung/gemma-4-31B-it-GMPOA-heretic-GGUF:Q4_K_M` se puede levantar un endpoint compatible para pruebas internas controladas.
+- Investigacion sobre alineacion y seguridad: el modelo permite estudiar como varia la tasa de rechazo y la calidad de respuesta al eliminar las capas de rechazo, comparandolo con el Gemma 4 31B original en tareas controladas.
+- Analisis de sesgos y robustez: al carecer de filtros de rechazo, sirve para auditar que tipo de contenido genera el modelo sin restricciones y disenar contramedidas.
+- Despliegue local en estaciones de trabajo: gracias al formato GGUF y a las cuantizaciones imatrix, puede ejecutarse en equipos con GPU de consumo o incluso en CPU con llama.cpp para prototipado.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa donde el modelo base tiende a rechazar tematicas sensibles.
+- Evaluacion comparativa de cuantizaciones: el repositorio permite medir el impacto de distintas cuantizaciones GGUF sobre la calidad en un modelo de ~30B con imatrix.
+- Pruebas de red teaming: uso en entornos aislados para generar prompts adversariales y evaluar la robustez de clasificadores de contenido.
+- Integracion en Ollama para asistentes personales locales: el modelo puede servirse mediante Ollama para tareas conversacionales en ingles sin dependencia de la nube.
 
 ## Benchmarks y rendimiento
 
-La model card solo reporta la tasa de rechazo sobre el modelo en bf16 (no sobre las cuantizaciones). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
-
-| Metrica | Original | Este modelo (bf16) |
-|---|---|---|
-| Rechazo en 972 prompts dañinos retenidos (juez WildGuard) | 89,3% | 20,6% (200/972) |
-
-Nota: la regla de selección fue "mínimos rechazos por palabra clave en dev con KL de primer token ≤ 0,1 (búsqueda de 100 ensayos)". Los archivos cuantizados no fueron evaluados en el paper y la cuantización puede alterar el comportamiento de rechazo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para Q4_K_M**: el archivo pesa 18,7 GB; se necesita al menos esa cantidad de VRAM para carga completa en GPU, más overhead de contexto y KV cache (típicamente 1-3 GB adicionales según longitud de contexto).
-- **GPU recomendadas**: A100 40/80 GB, H100 80 GB para carga completa con contexto amplio; RTX 4090 (24 GB) o RTX 3090 (24 GB) pueden alojar Q4_K_M con margen ajustado.
-- **Consumer GPU**: sí, Q4_K_M cabe en GPUs de 24 GB (RTX 4090/3090) y, con offload parcial a CPU, en GPUs de 12-16 GB. Las futuras IQ3_M e IQ4_XS reducirán aún más el requisito.
-- **Opciones de despliegue**: llama.cpp (`llama-cli -hf ...`), Ollama (`ollama run hf.co/...`), y cualquier runtime compatible con GGUF. vLLM y TGI no se mencionan en la información disponible para este formato.
-- **Latencia y throughput**: no disponibles en la información proporcionada.
+- VRAM estimada: no disponible con precision al no conocerse los niveles de cuantizacion ofrecidos. Como referencia orientativa para un modelo de ~30,7 B en GGUF, las cuantizaciones de 4 bits suelen requerir del orden de 18-20 GB y las de 8 bits del orden de 32-35 GB, aunque estos valores no estan confirmados en la informacion proporcionada.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Cabe en GPU de consumo: no confirmado; previsiblemente las cuantizaciones de 4 bits podrian caber en GPUs con 24 GB de VRAM, pero no hay dato oficial.
+- Opciones de despliegue: llama.cpp y Ollama (segun los tags del repositorio).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| `richardyoung/gemma-4-31B-it-GMPOA-heretic-GGUF` (este) | ~30,7B | No disponible | Apache 2.0 | GGUF (Q4_K_M) | Abliterado con Heretic 2.0 + gamma-MPOA; solo texto; solo inglés |
-| `richardyoung/gemma-4-31B-it-GMPOA-heretic` (base) | ~30,7B | No disponible | Apache 2.0 | Safetensors (bf16) | Mismo modelo sin cuantizar; evaluado en el paper |
-| `google/gemma-4-31B-it` (original) | ~30,7B | No disponible | Apache 2.0 (licencia Gemma 4) | Safetensors | Modelo de referencia con rechazos intactos; acepta imágenes |
+| richardyoung/gemma-4-31B-it-GMPOA-heretic-GGUF | ~30,7 B | no disponible | apache-2.0 | GGUF | Variante abliterated, solo ingles, acceso restringido |
+| richardyoung/gemma-4-31B-it-GMPOA-heretic | ~30,7 B | no disponible | no disponible | safetensors (presumible) | Modelo base del que deriva esta cuantizacion |
+| Gemma 4 31B-it (original de Google) | ~30,7 B (presumible) | no disponible | Gemma license (no disponible en detalle) | safetensors, GGUF | Modelo oficial con alineacion de seguridad intacta |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Uso previsto exclusivamente investigador**: el autor lo publica para estudiar la eliminación de rechazos y sus defensas, no como asistente de propósito general.
-- **Eliminación de rechazos**: el modelo cumple muchas peticiones que el original rechaza (20,6% de rechazo frente a 89,3%); esto implica un riesgo elevado de generar contenido dañino si se despliega sin filtros.
-- **Cuantización no evaluada**: las cifras de rechazo corresponden al modelo bf16; la cuantización puede alterar el comportamiento y no fue medida en el paper.
-- **Solo texto**: el proyector de visión no está incluido, aunque el modelo base acepta imágenes.
-- **Idioma**: metadata limitada a inglés; no hay evidencia de capacidades multilingües.
-- **Contexto**: longitud de contexto no documentada en esta ficha.
-- **Licencia**: Apache 2.0 con enlace a la licencia de Gemma 4; conviene revisar las restricciones de uso de la familia Gemma antes de un uso comercial.
-- **Sesgos y alucinación**: no hay información específica en la model card; al derivar de Gemma 4, hereda los sesgos del modelo base, no documentados aquí.
-- **Responsabilidad legal**: el autor declara que los usuarios son responsables del uso lícito.
+- Modelo "uncensored"/abliterated: la eliminacion de las capas de rechazo implica que puede generar contenido danino, ofensivo o ilegal; no es adecuado para aplicaciones de cara al publico sin filtros externos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su distribucion automatica.
+- Solo ingles declarado: no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- Licencia: se declara apache-2.0, pero al derivar de Gemma conviene verificar la compatibilidad con la licencia original del modelo base antes de uso comercial.
+- Riesgo de alucinacion: inherente a los modelos de ~30B; no hay evaluaciones publicadas que lo cuantifiquen.
+- Contexto maximo no documentado: no se puede planificar su uso en tareas de contexto largo sin verificacion previa.
+- Sesgos: no documentados; los modelos abliterated pueden amplificar sesgos presentes en los datos de entrenamiento originales.
+- Prefijo GMPOA sin documentar: se desconoce que modificacion adicional incorpora respecto al Gemma 4 estandar.
+- Sin likes ni documentacion tecnica en el repositorio: la trazabilidad del proceso de cuantizacion y abliteration es limitada.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/richardyoung/gemma-4-31B-it-GMPOA-heretic-GGUF
-- Modelo base abliterado: https://huggingface.co/richardyoung/gemma-4-31B-it-GMPOA-heretic
-- Modelo original: https://huggingface.co/google/gemma-4-31B-it
-- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Paper citado (arXiv, enlace pendiente de añadir según la model card): *Is Abliteration Getting Harder? Refusal Removal from Open-Weight LLMs with Heretic on Qwen3.8, Gemma 4, Olmo 3.1 and Mistral Small 3.2 Versus Their Predecessors*, Richard J. Young, 2026.
+- Repositorio Hugging Face: https://huggingface.co/richardyoung/gemma-4-31B-it-GMPOA-heretic-GGUF
+- Modelo base: https://huggingface.co/richardyoung/gemma-4-31B-it-GMPOA-heretic
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com
+- No se han encontrado papers, blogs, repos adicionales ni demos en la informacion proporcionada.

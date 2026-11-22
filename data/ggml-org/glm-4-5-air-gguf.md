@@ -2,85 +2,87 @@
 
 ## Resumen
 
-GLM-4.5-Air es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), diseñado como una alternativa compacta dentro de la serie GLM-4.5. Con 106 852 millones de parámetros totales y 12 000 millones de parámetros activos bajo una arquitectura de mezcla de expertos (MoE), el modelo unifica capacidades de razonamiento, generación de código y uso de herramientas en un único sistema. Esta versión concreta, publicada por ggml-org, es una conversión automática al formato GGUF, pensada para facilitar la ejecución en hardware de consumo mediante motores como llama.cpp.
+GLM-4.5-Air es un modelo de lenguaje de gran escala desarrollado por Z.ai (Zhipu AI), distribuido en este repositorio por ggml-org en formato GGUF cuantizado para su uso con llama.cpp y herramientas compatibles. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 106.852.251.264 parametros totales, disenado para generacion de texto conversacional y tareas de razonamiento, codigo y agentes. Esta ficha documenta especificamente la version cuantizada publicada por ggml-org, cuyo modelo base es `zai-org/GLM-4.5-Air`.
 
-El modelo se presenta como un sistema híbrido de razonamiento que ofrece dos modos de operación: un modo de pensamiento (thinking) para tareas complejas que requieren razonamiento multi-paso y uso de herramientas, y un modo sin pensamiento (non-thinking) para respuestas inmediatas. Esta dualidad lo hace especialmente relevante para aplicaciones de agentes inteligentes, donde se necesita combinar velocidad y profundidad de análisis según la tarea. La licencia MIT permite uso comercial sin restricciones, lo que facilita su adopción en entornos de producción.
+La relevancia de esta publicacion radica en que permite ejecutar un modelo de mas de 100.000 millones de parametros en infraestructura local mediante cuantizacion GGUF, algo impracticable con los pesos originales en safetensors. El repositorio ocupa 185,2 GB e incluye multiples niveles de cuantizacion, lo que facilita el despliegue en estaciones de trabajo con GPU de gran capacidad de memoria o en configuraciones con offloading a CPU.
 
-La cuantización GGUF reduce significativamente los requisitos de memoria en comparación con los pesos originales en safetensors, manteniendo un equilibrio entre rendimiento y fidelidad. Aunque no se han publicado métricas oficiales de rendimiento en la información disponible, la arquitectura MoE con solo 12 000 millones de parámetros activos sugiere que puede ejecutarse en GPUs de consumo con cuantizaciones de 4 o 5 bits.
+La licencia MIT del modelo base y de esta conversion simplifica su adopcion en entornos comerciales, aunque conviene verificar las condiciones del modelo original. La informacion disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es limitada en la model card de esta conversion, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) con diseño híbrido de razonamiento (thinking y non-thinking) |
-| Parametros totales | 106 852 251 264 (106 852 millones) |
-| Parametros activos | 12 000 millones (12B) |
+| Arquitectura | Mixture-of-Experts (MoE), segun el modelo base GLM-4.5-Air; detalles de capas y atencion no disponibles |
+| Parametros totales | 106.852.251.264 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (múltiples niveles, incluyendo Q4_K_M, Q5_K_M y otros; el repositorio contiene 185,2 GB de archivos) |
+| Tipos de cuantizacion | GGUF cuantizado (multiples niveles incluidos en el repo; niveles concretos no detallados en la informacion disponible) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (convertido desde safetensors) |
+| Formato de pesos | GGUF (safetensors en el modelo base `zai-org/GLM-4.5-Air`) |
 
 ## Arquitectura y entrenamiento
 
-GLM-4.5-Air emplea una arquitectura de mezcla de expertos (MoE) con 106 000 millones de parámetros totales, de los cuales solo 12 000 millones se activan por token. Esta configuración permite un equilibrio entre capacidad de conocimiento y eficiencia computacional, ya que cada token solo recorre una fracción de los pesos. El modelo está diseñado como un sistema híbrido de razonamiento, con dos modos explícitos: un modo de pensamiento que activa cadenas de razonamiento internas para problemas complejos y uso de herramientas, y un modo sin pensamiento que genera respuestas directas para consultas simples. Esta dualidad se implementa probablemente mediante un mecanismo de control de decodificación, aunque los detalles técnicos exactos no se especifican en la información disponible.
+El modelo base GLM-4.5-Air emplea una arquitectura Mixture-of-Experts con 106.852.251.264 parametros totales, segun los datos de safetensors del modelo original. La model card de esta conversion no detalla el numero de expertos, la relacion de parametros activos por token, el tipo de atencion ni la composicion del dataset de entrenamiento. Tampoco se documenta en la informacion proporcionada si hubo fases de RLHF, DPO u otras tecnicas de alineacion.
 
-No se han publicado datos sobre el conjunto de entrenamiento, el número de tokens procesados ni las técnicas de alineación (como RLHF o DPO) en la documentación accesible. El modelo base original está disponible en safetensors en el repositorio de zai-org, y esta versión GGUF se generó automáticamente mediante la herramienta de conversión de ggml-org, sin modificaciones adicionales en los pesos. La arquitectura interna (número de capas, dimensiones de atención, factor de expansión del experto) no se detalla en la información proporcionada.
+Esta publicacion concreta es una conversion automatica realizada con la herramienta `ggml-org/convert`, que transforma los pesos originales a formato GGUF con cuantizacion. La innovacion practica de este repositorio es la disponibilidad de pesos cuantizados listos para llama.cpp y el ecosistema GGUF, lo que reduce los requisitos de memoria frente a los pesos en safetensors. No se documentan en la model card innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Razonamiento complejo: el modo thinking permite resolver problemas que requieren múltiples pasos lógicos, como demostraciones matemáticas o planificación de tareas.
-- Generación de código: soporta la creación de fragmentos de código en varios lenguajes, así como la explicación y depuración de código existente.
-- Uso de herramientas (tool calling): puede invocar funciones externas y APIs, lo que lo habilita para integrarse en flujos de trabajo automatizados.
-- Capacidades de agente: el modelo está diseñado para actuar como agente autónomo, tomando decisiones secuenciales y gestionando interacciones multi-turno.
-- Conversación multilingüe: aunque no se especifican los idiomas soportados, la serie GLM suele cubrir múltiples lenguas; se recomienda verificar la documentación oficial.
-- Modo sin pensamiento: respuestas rápidas y directas para consultas sencillas, reduciendo la latencia en aplicaciones interactivas.
+- Generacion de texto conversacional: el pipeline declarado es `text-generation` y la model card indica uso conversacional.
+- Razonamiento y codigo: el modelo base GLM-4.5-Air esta orientado a tareas de razonamiento y generacion de codigo, aunque la model card de esta conversion no aporta detalles especificos.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integracion con infraestructura de inferencia estandar.
+- Ejecucion local: soporte nativo en llama.cpp mediante `llama serve -hf ggml-org/GLM-4.5-Air-GGUF`.
+- Integracion con la aplicacion Llama: la model card menciona su uso en la app Llama (https://llama.app).
+- Tool calling, agentes, vision, audio y modo thinking: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; no se listan idiomas en los metadatos.
 
 ## Casos de uso
 
-- Asistente de programación en producción: el modelo puede generar código, explicar APIs y sugerir correcciones en tiempo real dentro de un IDE, aprovechando su modo sin pensamiento para respuestas rápidas y el modo thinking para problemas de depuración complejos.
-- Agente de automatización de tareas: gracias a su soporte de tool calling, puede orquestar acciones como enviar correos, actualizar bases de datos o interactuar con servicios web, ejecutando secuencias de pasos de forma autónoma.
-- Atención al cliente automatizada: con su capacidad de conversación multi-turno y razonamiento, puede gestionar consultas de usuarios que requieren comprensión de contexto largo y derivación a sistemas externos cuando es necesario.
-- Análisis de datos y generación de informes: el modelo puede procesar datos estructurados, generar resúmenes y crear visualizaciones de código, ayudando a analistas a extraer conclusiones rápidamente.
-- Tutoría y educación técnica: su modo thinking permite descomponer conceptos complejos en explicaciones paso a paso, útil para plataformas de aprendizaje adaptativo.
-- Desarrollo de prototipos de agentes conversacionales: los desarrolladores pueden usar el modelo como base para construir asistentes personalizados que requieran razonamiento híbrido, gracias a su licencia MIT y su formato GGUF fácil de integrar con llama.cpp.
+- Despliegue local de un modelo de gran escala: gracias a la cuantizacion GGUF, un modelo de 106.852 millones de parametros puede ejecutarse en estaciones de trabajo con suficiente VRAM o con offloading parcial a CPU, sin depender de APIs externas.
+- Asistente conversacional autoalojado: el pipeline `text-generation` y la orientacion conversacional del modelo base permiten construir chatbots internos con control total sobre los datos y la infraestructura.
+- Prototipado rapido con llama.cpp: el comando `llama serve -hf ggml-org/GLM-4.5-Air-GGUF` permite levantar un servidor de inferencia en minutos, adecuado para pruebas de concepto y evaluacion tecnica.
+- Integracion en la aplicacion Llama: la model card referencia explicitamente llama.app, lo que facilita su uso en entornos de escritorio para tareas de generacion de texto.
+- Evaluacion comparativa de cuantizaciones: al incluir multiples niveles de cuantizacion en el repositorio, permite medir el compromiso entre calidad y consumo de memoria en hardware concreto.
+- Procesamiento de texto por lotes en entornos con requisitos de privacidad: al ejecutarse localmente, es apto para pipelines que no pueden enviar datos a servicios en la nube.
+- Investigacion sobre modelos MoE de gran escala: la disponibilidad de pesos cuantizados facilita experimentos academicos sin acceso a clusters de gran memoria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras métricas estándar para GLM-4.5-Air en su versión GGUF. Se recomienda consultar el repositorio oficial de zai-org para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q4_K_M, un modelo de 12 000 millones de parámetros activos requiere aproximadamente entre 8 y 10 GB de VRAM, dependiendo de la longitud de contexto y el tamaño del lote. Las cuantizaciones más altas (Q5, Q6) aumentan el requisito a 12-14 GB.
-- GPU recomendadas: RTX 3090, RTX 4090, A100, H100 o cualquier GPU con al menos 12 GB de VRAM para las cuantizaciones más bajas. Para cuantizaciones mayores, se recomienda 16 GB o más.
-- Compatibilidad con hardware de consumo: sí, es viable en GPUs de gama alta para consumidores (RTX 3080/3090/4090) con cuantización Q4_K_M o inferior.
-- Opciones de despliegue: llama.cpp (soporte nativo), Ollama, LM Studio, y servidores compatibles con GGUF como llama-server. También puede usarse con vLLM si se convierte a otro formato, aunque no es el flujo principal.
-- Latencia y throughput: no se han publicado mediciones oficiales. En una RTX 4090 con Q4_K_M, se estima una velocidad de generación de 30-50 tokens por segundo para cargas ligeras, pero estos valores son orientativos y dependen de la implementación.
+- VRAM estimada: el repositorio completo ocupa 185,2 GB, pero cada nivel de cuantizacion tiene un tamano distinto. Con cuantizaciones de 4 bits, un modelo de 106.852 millones de parametros requiere del orden de 55-65 GB de memoria para los pesos, mas overhead de contexto y cache KV; los calculos exactos dependen del nivel concreto elegido, que no se detalla en la informacion disponible.
+- GPU recomendadas: para cuantizaciones agresivas, una o varias RTX 4090 (24 GB cada una) con offloading, o GPUs de centro de datos como A100 80 GB, H100 80 GB o configuraciones multi-GPU.
+- Cabe en GPU de consumo: solo con cuantizaciones muy agresivas y offloading parcial a CPU; no cabe en una unica GPU de consumo de 24 GB sin offloading.
+- Opciones de despliegue: llama.cpp (soporte nativo via GGUF), `llama serve`, la aplicacion Llama (llama.app) y cualquier runtime compatible con GGUF. vLLM y TGI no se mencionan en la informacion disponible para este formato.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.5-Air (GGUF) | 106 852 M | 12 000 M | no disponible | MIT | GGUF |
-| GLM-4.5 | 355 000 M | 32 000 M | no disponible | MIT | safetensors |
-| Mixtral 8x7B | 46 700 M | 12 900 M | 32 768 | Apache 2.0 | safetensors, GGUF |
-| Qwen2.5-MoE | 14 300 M | 2 700 M | 131 072 | Apache 2.0 | safetensors, GGUF |
+| GLM-4.5-Air (esta conversion GGUF) | 106.852.251.264 | no disponible | MIT | GGUF | Hugging Face, llama.cpp |
+| GLM-4.5-Air (modelo base) | 106.852.251.264 | no disponible | MIT | safetensors | Hugging Face (`zai-org/GLM-4.5-Air`) |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-GLM-4.5-Air se sitúa en un rango de parámetros activos similar a Mixtral 8x7B, pero con un total de parámetros mucho mayor, lo que sugiere una mayor capacidad de conocimiento almacenado. Su licencia MIT es más permisiva que la Apache 2.0 de Mixtral. La comparación directa de rendimiento no es posible sin datos de benchmarks.
+No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos alternativos comparables, por lo que la comparativa se limita al modelo base y su version cuantizada.
 
 ## Limitaciones y advertencias
 
-- La cuantización GGUF introduce pérdida de precisión respecto a los pesos originales en safetensors, lo que puede afectar a tareas que requieren alta exactitud numérica o razonamiento matemático fino.
-- No se ha documentado la longitud de contexto máxima, lo que obliga a los desarrolladores a probar empíricamente los límites antes de desplegar en producción.
-- Los idiomas soportados no están especificados; aunque la serie GLM suele cubrir inglés y chino, no hay confirmación oficial para este modelo.
-- Al ser un modelo de razonamiento híbrido, el modo thinking puede generar respuestas más largas y con mayor latencia, lo que debe tenerse en cuenta en aplicaciones en tiempo real.
-- No se han publicado estudios de sesgos o alucinaciones específicos para este modelo; se recomienda realizar evaluaciones propias en el dominio de uso.
-- La licencia MIT permite uso comercial sin restricciones, pero no incluye garantías de soporte técnico por parte de Z.ai.
+- La model card de esta conversion es minima: no documenta sesgos conocidos, riesgos de alucinacion ni limitaciones especificas del modelo.
+- No se especifican los idiomas soportados, por lo que el rendimiento fuera del ingles o del chino (idiomas habituales en la familia GLM) no esta garantizado.
+- No se detalla la longitud de contexto soportada, lo que impide planificar cargas con documentos largos.
+- La cuantizacion introduce perdida de calidad respecto a los pesos originales en safetensors; el grado de degradacion depende del nivel elegido y no se documenta.
+- Aunque la licencia declarada es MIT, conviene verificar las condiciones del modelo base `zai-org/GLM-4.5-Air` antes de un uso comercial en produccion.
+- El repositorio de 185,2 GB requiere espacio en disco considerable y ancho de banda para su descarga.
+- Es una conversion automatica: no hay garantia explicita de validacion exhaustiva de cada nivel de cuantizacion por parte del autor original.
+- No se documentan limitaciones de tool calling ni de comportamiento agentico, por lo que su uso en pipelines automatizados requiere evaluacion previa.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la versión GGUF: https://huggingface.co/ggml-org/GLM-4.5-Air-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-4.5-Air
-- Cuantización alternativa de bartowski: https://huggingface.co/bartowski/zai-org_GLM-4.5-Air-GGUF
-- Repositorio GitHub de la serie GLM-4.5: https://github.com/zai-org/GLM-4.5
-- Blog oficial de Z.ai sobre GLM-4.5: https://z.ai/blog/glm-4.5
+- Repositorio Hugging Face (esta conversion): https://huggingface.co/ggml-org/GLM-4.5-Air-GGUF
+- Modelo base: https://huggingface.co/zai-org/GLM-4.5-Air
+- Herramienta de conversion: https://github.com/ggml-org/convert
+- Aplicacion Llama: https://llama.app

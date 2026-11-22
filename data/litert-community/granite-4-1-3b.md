@@ -2,96 +2,116 @@
 
 ## Resumen
 
-`litert-community/granite-4.1-3b` es una conversión del modelo Granite 4.1 3B de IBM al formato **LiteRT-LM** (`.litertlm`), diseñado para inferencia en dispositivos móviles y entornos edge. El modelo original, `ibm-granite/granite-4.1-3b`, es un transformer denso de 3.400 millones de parámetros, con 40 capas, atención GQA (40:8), embeddings atados y un vocabulario de 100.352 tokens. Esta versión empaquetada permite ejecutar el modelo en teléfonos y hardware de bajo consumo mediante el runtime LiteRT-LM de Google, con cuantización int4 o int8.
+Granite-4.1-3B es un modelo denso de 3.4B parámetros desarrollado por IBM, publicado en abril de 2026 como parte de la familia Granite 4.1. Se trata de un modelo instruct ajustado para generación de texto, con soporte de contexto largo y tool calling, pensado para despliegues donde el coste por token y la huella de memoria importan. La versión aquí descrita no es el checkpoint original, sino la conversión realizada por la comunidad `litert-community` al formato LiteRT-LM (`.litertlm`) para inferencia on-device con el runtime LiteRT-LM de Google.
 
-La relevancia de esta ficha radica en que ofrece una solución práctica para desplegar un modelo de razonamiento y tool calling de última generación (lanzado en abril de 2026) en dispositivos sin conexión a la nube. El archivo int4 ocupa solo 2,19 GB y alcanza velocidades de decodificación de 86 tokens/s en GPU Metal (Apple M4 Max) y 7 tokens/s en un Pixel 8a, lo que lo hace viable para asistentes locales, chatbots offline y aplicaciones de productividad en movilidad.
+La relevancia de esta ficha está en el formato: LiteRT-LM es el runtime de Google AI Edge para ejecutar modelos en dispositivos móviles y edge, con delegación a GPU mediante Metal en Apple y OpenCL en Android. El repositorio incluye dos artefactos cuantizados (int4 e int8) con mediciones reales de latencia y throughput en Galaxy S26, Pixel 8a, iPhone 17 Pro y Mac M4 Max, lo que lo convierte en una referencia útil para quien evalúe inferencia local en hardware de consumo.
 
-La conversión ha sido realizada por `litert-community` con la pila oficial de herramientas de LiteRT (litert-torch 0.9.3, ai-edge-quantizer 0.8.0), e incluye ajustes específicos como la eliminación del token de inicio (start token) para evitar errores de generación y una escalera de prefill recortada a seis firmas para optimizar el uso de memoria en iOS.
+El modelo base es un transformer denso de 40 capas, dimensión oculta 2560, atención GQA con ratio 40:8, embeddings atados y vocabulario de 100k tokens. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only (40 capas, hidden 2560, GQA 40:8, embeddings atados) |
-| Parametros totales | 3.400 millones (3,4B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 4096 tokens (KV budget en la conversión LiteRT; el modelo base puede soportar más, no especificado) |
-| Tipos de cuantizacion | int4 blockwise-32 con OCTAV en lineales + int8 en embeddings; int8 dinámico por canal en lineales y embeddings |
-| Idiomas soportados | Multilingüe (idiomas concretos no especificados en la información disponible) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base original está en safetensors |
+| Arquitectura | Transformer denso (40 capas, hidden 2560, GQA 40:8, embeddings atados) |
+| Parametros totales | 3.4B (modelo base); el repo empaqueta artefactos cuantizados |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 4096 tokens de presupuesto KV en el bundle LiteRT-LM; contexto nativo del modelo base no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | int4 blockwise-32 + OCTAV en lineales con embedding int8 (2.19 GB); int8 dinamico en lineales y embedding (3.83 GB) |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); requiere litert-lm >= 0.16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Granite 4.1 3B es un transformer denso con atención multi-consulta (GQA) de 40 cabezas de consulta y 8 de clave/valor, capas de 2560 unidades ocultas y embeddings atados. Se entrenó con un enfoque de instrucción (instruct) que incorpora mejoras en tool calling, seguimiento de instrucciones, generación de código y razonamiento matemático respecto a Granite 4.0. No se han proporcionado detalles sobre el volumen de tokens de entrenamiento ni el pipeline de alineación (RLHF/DPO) en la información disponible.
+El modelo base es un transformer denso de 3.4B parámetros con 40 capas, dimensión oculta de 2560, atención con grouped-query attention en ratio 40:8, embeddings atados y vocabulario de 100.000 tokens. Está ajustado como modelo instruct y soporta tool calling y contexto largo. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-La conversión a LiteRT-LM aplica dos recetas de cuantización: int4 por bloques de 32 con recorte OCTAV en las capas lineales y embeddings int8, e int8 dinámico por canal. El proceso utiliza `litert-torch` y `ai-edge-quantizer`, y ha sido validado con una prueba de cordura de 8 preguntas que supera en CPU y GPU (tanto en Apple como en Android). Un hallazgo técnico relevante es que el tokenizador de Granite no añade token BOS (su BOS es igual a EOS), por lo que el conversor debe eliminar el campo `start_token` de los metadatos; de lo contrario, el modelo interpreta el primer turno como un documento ya finalizado y responde repitiendo la pregunta.
+La conversión a LiteRT-LM aplica cuantización blockwise int4 con tamaño de bloque 32 sobre las capas lineales y OCTAV (optimización de precisión por capa) en las mismas, manteniendo el embedding en int8. El bundle incluye el tokenizer y los marcadores de rol de Granite (`<|start_of_role|>…<|end_of_role|>`), un presupuesto KV de 4096 tokens y seis firmas de prefill (1024, 256, 64, 16, 4 y 1 tokens). La reducción de once a seis firmas es deliberada: cada firma exportada consume memoria del motor independientemente de si se invoca, y una build con once firmas fue terminada por iOS durante la inicialización de Metal salvo que la app limitara el contexto a 1024 tokens. La build int4 de este repositorio crea el motor con los 4096 tokens completos en un iPhone 17 Pro.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de propósito general, con soporte para cadenas de pensamiento (chain-of-thought) en tareas matemáticas.
-- Tool calling y function calling: el modelo base está optimizado para invocar herramientas externas y producir salidas estructuradas.
-- Generación de código y asistencia en programación, incluida la corrección y explicación de fragmentos.
-- Razonamiento matemático: obtiene un 84% en GSM8K con cuantización int4 y 87% con int8.
-- Soporte para retrieval-augmented generation (RAG) y salida JSON estructurada.
-- Capacidades multilingües (idiomas no detallados en la documentación).
-- Ejecución en dispositivos móviles con aceleración GPU (Metal en Apple, OpenCL en Android) y CPU.
+- Generación de texto instruct en formato conversacional, con marcadores de rol propios de Granite.
+- Razonamiento aritmético de varios pasos: la evaluación GSM8K con chain-of-thought 0-shot alcanza 84% en int4 y 87% en int8.
+- Tool calling y function calling, según las capacidades declaradas del modelo base.
+- Soporte de contexto largo hasta el presupuesto KV configurado (4096 tokens en este bundle).
+- Inferencia on-device con delegación completa a GPU: 1784/1784 operaciones delegadas en Galaxy S26 y Pixel 8a, sin operaciones rechazadas.
+- Ejecución en navegador mediante WebGPU a través de la demo oficial de LiteRT-LM.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional offline en smartphones: el modelo puede mantener diálogos multi-turno dentro de una ventana de 4096 tokens, funcionando sin conexión gracias al archivo int4 de 2,19 GB. Es adecuado para apps de productividad o privacidad que no deben enviar datos a la nube.
-- Atención al cliente automatizada en dispositivos de punto de venta o kioscos: su capacidad de tool calling permite integrarse con sistemas de pedidos o consultas de inventario, ejecutando acciones locales con latencia de primer token inferior a 1 segundo en hardware de gama media.
-- Asistente de código en entornos de desarrollo móviles (IDE en tablet o portátil ligero): el modelo puede generar, explicar y depurar fragmentos de código, aprovechando su entrenamiento específico en programación y su bajo footprint de memoria.
-- Procesamiento de documentos y resumen en dispositivos edge: con 4096 tokens de contexto, puede resumir correos, actas o informes directamente en el dispositivo, sin transmitir información sensible.
-- Generación de respuestas estructuradas (JSON) para aplicaciones de automatización: su soporte nativo para salidas JSON facilita la integración con flujos de trabajo empresariales en entornos sin servidor.
-- Evaluación de modelos en investigación on-device: la disponibilidad de versiones int4 e int8 permite comparar el impacto de la cuantización en tareas de razonamiento, como se muestra en los benchmarks GSM8K (84% vs 87%).
+- Asistentes conversacionales offline en móvil: el artefacto int4 (2.19 GB) se ejecuta íntegramente en la GPU de un Galaxy S26 a 15.3 tok/s de decodificación y 243 tok/s de prefill, suficiente para respuestas interactivas sin conexión ni coste de API.
+- Procesamiento de documentos en el dispositivo: con 4096 tokens de ventana KV se pueden resumir correos, notas o contratos cortos localmente, evitando enviar datos sensibles a un servidor.
+- Clasificación y extracción de entidades en pipelines edge: el soporte de tool calling permite estructurar la salida como llamadas a funciones y encadenar extracción con validación en el propio dispositivo.
+- Razonamiento aritmético ligero en aplicaciones de finanzas personales o educación: el 84% en GSM8K con int4 es suficiente para cálculos de varios pasos con verificación posterior.
+- Demo y prototipado en navegador: la demo WebGPU carga el archivo int4 de 2.19 GB y permite evaluar el modelo sin instalación, útil para validar prompts antes de integrar el runtime.
+- Automatización en estaciones de trabajo Apple Silicon: en un Mac M4 Max el int4 alcanza 86.3 tok/s de decodificación y 1241 tok/s de prefill por GPU Metal, adecuado para generación por lotes de textos cortos en local.
+- Aplicaciones de accesibilidad y traducción asistida en tiempo real: la latencia TTFT de 900 ms en Galaxy S26 permite iniciar la respuesta antes de un segundo desde la pulsación.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona resultados de GSM8K (0-shot, greedy, max-tokens 512, n=100) comparando la conversión LiteRT con la referencia PyTorch en bf16:
+Calidad en GSM8K (greedy, 0-shot chain-of-thought, max-tokens 512, n=100, mismo harness y extracción de respuesta en todas las filas):
 
-| Configuración | GSM8K |
+| Configuracion | GSM8K |
 |---|---|
-| PyTorch bf16 (referencia, MPS) | 88,0% |
-| LiteRT int8 | 87,0% |
-| LiteRT int4 | 84,0% |
+| PyTorch bf16 (referencia, MPS) | 88.0% |
+| LiteRT int8 | 87.0% |
+| LiteRT int4 | 84.0% |
 
-Además, se reporta una prueba de cordura de 8 preguntas donde el archivo int4 obtiene 8/8 en CPU y GPU (Mac), 8/8 en iPhone 17 Pro con Metal y 7/8 en CPU del iPhone (la única falla es una línea de rima en un prompt combinado, que responde correctamente si se pregunta por separado). En Pixel 8a, el modelo genera correctamente con todos los nodos en el delegado OpenCL (1784/1784 nodos en prefill y 1614/1614 en decodificación, cero operaciones rechazadas).
+Rendimiento en Apple M4 Max con `litert-lm benchmark` (litert-lm 0.16.0, `-p 256 -d 256 --cache no`):
 
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, etc.) en la información disponible.
+| Archivo | Backend | Prefill (256) | Decode | TTFT | Init |
+|---|---|---|---|---|---|
+| int4 | GPU (Metal) | 1241 tok/s | 86.3 tok/s | 0.23 s | 5.96 s |
+| int4 | CPU | 104 tok/s | 22.0 tok/s | 3.01 s | 12.5 s |
+| int8 | GPU (Metal) | 1221 tok/s | 71.8 tok/s | 0.24 s | 5.19 s |
+| int8 | CPU | 257 tok/s | 20.5 tok/s | 3.06 s | 43.2 s |
+
+Rendimiento en Pixel 8a (Tensor G3, Mali-G715, 7.75 GB RAM; `litert_lm_main` v0.16.0, ejecuciones únicas):
+
+| Archivo | Backend | Prefill | Decode | TTFT | Init |
+|---|---|---|---|---|---|
+| int4 | GPU (OpenCL) | 20.0 tok/s | 7.07 tok/s | 0.99 s | 32.5 s |
+| int4 | CPU | 5.40 tok/s | 6.98 tok/s | 3.29 s | no disponible |
+| int8 | GPU (OpenCL) | 15.5 tok/s | 3.86 tok/s | 1.36 s | 65.2 s |
+
+Mediciones adicionales reportadas en la model card: Galaxy S26 con int4 y GPU alcanza 15.3 tok/s de decode, 243 tok/s de prefill y 900 ms de TTFT, con pico de memoria de 1394 MiB; el int8 en el mismo dispositivo alcanza 9.5 tok/s de decode, 162 tok/s de prefill y 1.35 s de TTFT con 1476 MiB de pico. En iPhone 17 Pro el int4 obtiene 8/8 en la comprobación de sanidad sobre Metal y 7/8 sobre CPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 2,19 GB para el archivo int4 (incluye pesos cuantizados y overhead del motor); 3,83 GB para int8.
-- GPU recomendadas: Apple Silicon con Metal (probado en M4 Max), GPUs Mali con OpenCL (probado en Pixel 8a con Mali-G715). También funciona en CPU con XNNPACK.
-- Cabe en GPUs de consumo: sí, en cualquier smartphone moderno con al menos 4 GB de RAM libre; el archivo int4 está pensado para teléfonos (el int8 no cabe en la GPU de un móvil).
-- Opciones de despliegue: runtime LiteRT-LM (comando `litert-lm run`), con backend CPU o GPU (`--backend gpu`). Requiere `litert-lm ≥ 0.16`.
-- Latencia y throughput (medidos con litert-lm 0.16.0):
-  - Apple M4 Max, GPU Metal: prefill 1241 tok/s, decode 86,3 tok/s, TTFT 0,23 s, init 5,96 s (int4).
-  - Apple M4 Max, CPU: prefill 104 tok/s, decode 22,0 tok/s, TTFT 3,01 s (int4).
-  - Pixel 8a, GPU OpenCL: prefill 20,0 tok/s, decode 7,07 tok/s, TTFT 0,99 s (int4).
-  - Pixel 8a, CPU: prefill 5,40 tok/s, decode 6,98 tok/s, TTFT 3,29 s (int4).
+- VRAM/memoria: 2.19 GB para el artefacto int4 y 3.83 GB para el int8, más el overhead del motor LiteRT-LM. Pico medido de 1394 MiB (int4) y 1476 MiB (int8) en Galaxy S26.
+- GPU recomendadas: Apple Silicon (Metal) para máximo rendimiento; Adreno y Mali con soporte OpenCL en Android; cualquier GPU con WebGPU para la demo en navegador.
+- Cabe en GPU de consumo: sí. Mac M4 Max, iPhone 17 Pro, Galaxy S26 y Pixel 8a ejecutan el modelo con delegación completa. En Pixel 8a la decodificación por GPU (7.07 tok/s) es prácticamente idéntica a la de CPU (6.98 tok/s) porque ambas comparten el mismo ancho de banda LPDDR.
+- Opciones de despliegue: LiteRT-LM >= 0.16 mediante CLI (`litert-lm run`, `litert-lm benchmark`) o el runtime embebido en apps; demo web con WebGPU. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI para este formato.
+- Latencia y throughput: TTFT de 0.23 s en M4 Max GPU, 0.90 s en Galaxy S26 y 0.99 s en Pixel 8a. Init de 5.96 s en M4 Max GPU y 32.5 s en Pixel 8a GPU. El valor de Init que imprime la CLI cuenta dos veces la creación del motor (issue #4057 de LiteRT-LM).
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos con otros modelos de 3B en la información proporcionada. El modelo base Granite 4.1 3B compite con alternativas como Llama 3.2 3B, Qwen2.5 3B o Phi-3.5-mini, pero no hay benchmarks comunes publicados en esta ficha para establecer una comparación cuantitativa. En términos de características, Granite 4.1 destaca por su soporte nativo de tool calling y JSON estructurado, y esta conversión LiteRT ofrece la ventaja de un formato optimizado para edge con cuantización int4 de alta calidad (84% GSM8K, solo 4 puntos por debajo del bf16).
+| Modelo | Parametros | Contexto | Formato on-device | Licencia | Notas |
+|---|---|---|---|---|---|
+| granite-4.1-3b (LiteRT-LM, este repo) | 3.4B denso | 4096 KV en bundle | `.litertlm` int4/int8 | Apache 2.0 | GSM8K 84% int4 / 87% int8; delegación completa en GPU móvil |
+| ibm-granite/granite-4.1-3b (original) | 3.4B denso | no disponible | safetensors (bf16) | Apache 2.0 | Referencia PyTorch: GSM8K 88.0% en MPS |
+| Otras conversiones LiteRT-LM de la comunidad | no disponible | no disponible | `.litertlm` | variable | No se dispone de datos comparativos en la información proporcionada |
+
+No se han publicado en la información disponible comparaciones directas con modelos de otros fabricantes del mismo tamaño (por ejemplo, familias de 3B de otros proveedores) en este formato ni con este harness.
 
 ## Limitaciones y advertencias
 
-- Longitud de contexto limitada a 4096 tokens en esta conversión, lo que puede ser insuficiente para tareas que requieran ventanas más largas (el modelo base podría soportar más, pero no se especifica).
-- La cuantización int4 reduce el rendimiento en GSM8K en 4 puntos porcentuales respecto a bf16 (84% vs 88%); el int8 pierde solo 1 punto (87%).
-- En teléfonos de gama baja, la velocidad de decodificación es modesta (7 tok/s en Pixel 8a), y el rendimiento de la GPU solo supera a la CPU en prefill y TTFT, no en decodificación (limitación por ancho de banda de memoria compartida).
-- El archivo int4 requiere eliminar el campo `start_token` de los metadatos; si se utiliza el modelo con un runtime que lo añada automáticamente, el modelo responderá repitiendo la pregunta (error de construcción de prompt, no de conversión).
-- El modelo puede presentar sesgos y alucinaciones inherentes a los modelos de lenguaje entrenados con datos web; no se han documentado sesgos específicos en la información disponible.
-- Licencia Apache-2.0 permite uso comercial sin restricciones, pero se recomienda revisar los términos del modelo base de IBM para posibles condiciones adicionales (no se han encontrado).
-- Para producción en iOS, la escalera de prefill se ha recortado a seis firmas (1024, 256, 64, 16, 4, 1) para evitar que el sistema mate el proceso durante la inicialización de Metal; esto puede causar padding en longitudes intermedias de prompt.
+- El artefacto int4 pierde 4 puntos de GSM8K frente a la referencia bf16 (84% frente a 88%); el int8 pierde 1 punto. Para tareas aritméticas sensibles conviene validar con el int8 o con el checkpoint original.
+- El contexto efectivo del bundle está limitado a 4096 tokens de presupuesto KV, muy por debajo de lo que el modelo base pueda soportar. Aumentar el número de firmas de prefill incrementa la memoria del motor y puede provocar terminaciones por parte de iOS durante la inicialización de Metal.
+- En hardware Android de gama media-baja la GPU no mejora la decodificación respecto a la CPU, ya que ambas comparten el mismo bus de memoria; el beneficio se concentra en prefill y TTFT.
+- El tiempo de inicialización en dispositivos móviles es alto (32.5 s en Pixel 8a con int4), lo que desaconseja crear el motor por petición; debe mantenerse vivo entre interacciones.
+- En iPhone 17 Pro la comprobación de sanidad sobre CPU falló 1 de 8 preguntas (una rima en un prompt combinado), aunque se responde correctamente si se pregunta de forma aislada.
+- No se dispone de información sobre sesgos, composición del dataset de entrenamiento ni evaluación multilingüe; no se puede descartar alucinación en dominios factuales sin verificación externa.
+- La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero el formato `.litertlm` requiere el runtime LiteRT-LM >= 0.16, lo que limita la portabilidad a otros motores de inferencia.
+- El repositorio tiene 617 descargas y 0 likes en el momento de la consulta; es una conversión comunitaria, no un artefacto oficial de IBM, y las builds previas a la primera subida pueden diferir de los archivos publicados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/granite-4.1-3b
-- Modelo base (IBM): https://huggingface.co/ibm-granite/granite-4.1-3b
-- Repo oficial de Granite 4.1: https://github.com/ibm-granite/granite-4.1-language-models
-- Documentación de Granite 4.1 en IBM: https://www.ibm.com/granite/docs/models/granite4-1
+- Modelo base: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Script de reproducción de conversión: https://github.com/john-rocky/hf-to-litertlm
-- Colección de modelos Granite 4.1 en Hugging Face: https://huggingface.co/collections/ibm-granite/granite-41-language-models
+- Demo web (WebGPU): https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/granite-4.1-3b
+- Registro de compatibilidad edge, int4: https://github.com/john-rocky/edge-compat/blob/main/cards/granite-4.1-3b-int4/CARD.md
+- Registro de compatibilidad edge, int8: https://github.com/john-rocky/edge-compat/blob/main/cards/granite-4.1-3b-int8/CARD.md
+- Issue sobre el tiempo de inicialización: https://github.com/google-ai-edge/LiteRT-LM/issues/4057

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "bhai2000/allergen-dietary-tagger-distilbert",
+  "slug": "bhai2000-allergen-dietary-tagger-distilbert",
+  "author": "bhai2000",
+  "url": "https://huggingface.co/bhai2000/allergen-dietary-tagger-distilbert",
+  "created_at": "2026-11-22T02:04:40.000Z",
+  "updated_at": "2026-11-22T02:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "multi-label-classification",
+    "food-safety",
+    "allergen-detection",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66959624,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267856225,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

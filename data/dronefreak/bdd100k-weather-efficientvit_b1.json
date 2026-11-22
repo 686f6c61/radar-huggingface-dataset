@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "dronefreak/bdd100k-weather-efficientvit_b1",
+  "slug": "dronefreak-bdd100k-weather-efficientvit_b1",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b1",
+  "created_at": "2026-10-04T07:55:11.000Z",
+  "updated_at": "2026-11-21T21:34:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:2205.14756",
+    "arxiv:1805.04687",
+    "base_model:timm/efficientvit_b1.r224_in1k",
+    "base_model:finetune:timm/efficientvit_b1.r224_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7525639,
+  "parameters_human": "7.5M",
+  "storage_bytes": 68342909,
+  "storage_human": "68 MB",
+  "context_length": null,
+  "base_model": "timm/efficientvit_b1.r224_in1k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 82.67
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 64.95
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 66.83
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 63.59
+    }
+  ],
+  "sources": []
+}

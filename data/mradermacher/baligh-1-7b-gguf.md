@@ -2,50 +2,49 @@
 
 ## Resumen
 
-Baligh-1.7B-GGUF es la distribucion en formato GGUF del modelo Baligh-1.7B, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversion estatica del modelo original alojado en el repositorio Kandil7/Baligh-1.7B, orientada a su uso con motores de inferencia compatibles con GGUF como llama.cpp u Ollama. El modelo base tiene 1.700 millones de parametros, lo que lo situa en la categoria de modelos pequenos aptos para hardware de consumo.
+Baligh-1.7B es un modelo de lenguaje de 1.720.574.976 parametros (aproximadamente 1,7 mil millones) desarrollado por Kandil7 y especializado en arabe e islamistica. Se construye sobre la arquitectura Qwen3 mediante continued pretraining y un posterior ajuste por instrucciones con QLoRA, partiendo de un modelo base de la familia Qwen3 y adaptandolo a dominios arabes y religiosos. La version aqui descrita es la cuantizacion GGUF publicada por mradermacher, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y derivados.
 
-La relevancia de esta ficha radica en que el repositorio unicamente contiene los pesos cuantizados: la model card no aporta informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades del modelo original. Toda la documentacion tecnica sustantiva debe consultarse en el repositorio de origen (Kandil7/Baligh-1.7B), que no forma parte de la informacion proporcionada.
+El modelo se ha entrenado con un corpus compuesto por datasets arabes de gran escala como ArabicWeb24, ArabicText-Large, TheArabicPile_Dialects y CIDAR, complementados con datos de instrucciones en arabe (evol-instruct-arabic) y un corpus especifico de fatwas islamicas (islamweb-fatwa-ar). Esta combinacion busca cubrir tanto arabe moderno estandar y dialectal como terminologia religiosa islamica, un nicho poco representado en modelos generalistas.
 
-Por tanto, esta ficha describe con rigor lo que se puede verificar (el conjunto de cuantizaciones disponibles y el origen de la conversion) y marca explicitamente como "no disponible" todo aquello que la model card no documenta, evitando cualquier inferencia no respaldada por los datos.
+Su relevancia actual radica en que ofrece una alternativa compacta y de licencia Apache 2.0 para aplicaciones en arabe que requieren despliegue local o en CPU, con cuantizaciones desde Q2_K (0,9 GB) hasta f16 (3,5 GB). El modelo esta etiquetado para arabe e ingles, aunque la model card no detalla la composicion exacta del dataset ni el numero de tokens de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1,7 mil millones (1.7B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo original se distribuye presumiblemente en safetensors, dato no confirmado |
+| Arquitectura | Transformer decoder-only basada en Qwen3 (continued pretraining sobre base Qwen3) |
+| Parametros totales | 1.720.574.976 (1,7 B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estaticas); variantes imatrix/weighted en repo i1-GGUF |
+| Idiomas soportados | Arabe (ar) e ingles (en), segun la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base original esta en formato transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio GGUF no incluye detalles sobre el tipo de transformer, mecanismos de atencion, composicion del dataset de entrenamiento, numero de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El unico dato tecnico verificable es el proceso de conversion: los metadatos indican `convert_type: hf`, `quantize_version: 2` y `output_tensor_quantised: 1`, lo que confirma que la conversion se realizo a partir de pesos en formato Hugging Face mediante una herramienta de cuantizacion compatible con GGUF.
+Baligh-1.7B emplea una arquitectura transformer decoder-only heredada de Qwen3, sobre la que se aplico continued pretraining para adaptar el modelo al dominio arabe e islamico. Posteriormente se realizo un ajuste por instrucciones mediante QLoRA, una tecnica de fine-tuning eficiente en parametros que entrena adaptadores de bajo rango sobre los pesos cuantizados. El resultado es un modelo de 1,7 B de parametros orientado a generacion de texto en contextos arabes.
 
-El conjunto de cuantizaciones publicado cubre un rango amplio, desde x-f16 (practicamente sin perdida) hasta Q2_K (fuertemente comprimido), pasando por variantes K-quant e IQ4_XS. Esta variedad permite desplegar el modelo en entornos con restricciones de memoria muy distintas, aunque no se documenta el impacto de cada cuantizacion en la calidad de salida.
+Los datos de entrenamiento documentados incluyen ArabicWeb24 (corpus web arabe a gran escala), ArabicText-Large, TheArabicPile_Dialects (variedades dialectales), CIDAR (instrucciones en arabe), evol-instruct-arabic (instrucciones evolucionadas) e islamweb-fatwa-ar (fatwas islamicas). No se especifica en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detallan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperable en un modelo de lenguaje de 1.7B, aunque no confirmada por la documentacion.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se especifican idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Ejecucion local en CPU y GPU: confirmada por el formato GGUF y la disponibilidad de cuantizaciones de baja precision.
+- Generacion de texto en arabe e ingles, con especial enfasis en contenido arabe moderno, dialectal y religioso islamico.
+- Ajuste por instrucciones orientado a tareas de respuesta a preguntas y generacion guiada.
+- Cobertura de terminologia islamica y fatwas gracias al corpus especifico islamweb-fatwa-ar.
+- Manejo de variedades dialectales arabes por la inclusion de TheArabicPile_Dialects.
+- Capacidad de ejecucion en entornos locales mediante cuantizacion GGUF (llama.cpp y compatibles).
+- No se documenta soporte explicito de tool calling, function calling, agentes, vision, audio ni modo thinking en la informacion disponible.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M y Q4_K_S permiten ejecutar el modelo en GPUs con 4-6 GB de VRAM o en CPU, lo que facilita prototipado local sin infraestructura dedicada.
-- Inferencia en el borde (edge): la variante Q2_K reduce el peso del modelo a aproximadamente 1 GB, adecuada para dispositivos con memoria limitada donde la latencia no sea critica.
-- Experimentacion con llama.cpp: al ser un GGUF estatico, se integra directamente en flujos de trabajo de llama.cpp, lo que permite comparar el rendimiento de distintas cuantizaciones sobre la misma tarea.
-- Uso con Ollama: el formato es compatible con la importacion en Ollama mediante un Modelfile, lo que simplifica la prueba del modelo en entornos de desarrollo.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece hasta doce variantes, lo que permite medir la degradacion de calidad frente al tamanio en tareas concretas.
-- Fine-tuning posterior sobre pesos cuantizados: no recomendado en general para GGUF; para ajuste fino conviene partir del modelo original en safetensors (no incluido en este repositorio).
+- Atencion al cliente en arabe: el modelo puede gestionar conversaciones multi-turno en arabe moderno y dialectal, adecuado para centros de soporte que atienden a usuarios de distintas regiones arabofonas, con despliegue local por su tamano reducido.
+- Consultas sobre jurisprudencia islamica: gracias al corpus islamweb-fatwa-ar, puede asistir en la recuperacion y redaccion de respuestas sobre cuestiones religiosas, siempre con supervision humana por el riesgo de alucinacion en materia normativa.
+- Generacion de contenido editorial en arabe: redaccion de articulos, resumenes y textos divulgativos en arabe, aprovechando su continued pretraining sobre ArabicWeb24.
+- Procesamiento de textos dialectales: normalizacion o adaptacion de contenido en variedades arabes regionales para su publicacion en arabe estandar.
+- Despliegue en dispositivos de bajos recursos: con cuantizaciones Q4_K_M (1,2 GB) o Q2_K (0,9 GB) puede ejecutarse en CPU o GPUs de gama baja, util para prototipos y aplicaciones embebidas.
+- Educacion y formacion religiosa: generacion de material didactico y respuestas explicativas sobre textos islamicos, con cuantizacion Q8_0 (1,9 GB) para mayor fidelidad.
+- Investigacion en NLP arabe: modelo de referencia pequeno para experimentos de fine-tuning o evaluacion en tareas arabes, al ser Apache 2.0 y de tamano manejable.
 
 ## Benchmarks y rendimiento
 
@@ -53,41 +52,45 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion):
-  - x-f16: en torno a 3,4 GB solo de pesos.
-  - Q8_0: en torno a 1,8 GB.
-  - Q6_K: en torno a 1,4 GB.
-  - Q5_K_M / Q5_K_S: en torno a 1,2 GB.
-  - Q4_K_M / Q4_K_S: en torno a 1,1 GB.
-  - IQ4_XS: en torno a 1,0 GB.
-  - Q3_K_L / Q3_K_M / Q3_K_S: entre 0,9 y 1,0 GB.
-  - Q2_K: en torno a 0,7-0,8 GB.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para cuantizaciones Q4 o inferiores; una RTX 3060, RTX 4060 o superior permite cargar el modelo completo en VRAM con contexto amplio. Para x-f16 se recomienda al menos 4-6 GB de VRAM.
-- Cabe en GPU de consumo: si, practicamente en todas las GPU modernas con 4 GB o mas, e incluso en iGPU con memoria unificada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan el modelo original en safetensors.
-- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia: aproximadamente 1 GB con Q2_K, 1,2 GB con Q4_K_M, 1,5 GB con Q6_K y 1,9 GB con Q8_0; 3,5 GB con f16. El modelo base en safetensors requiere del orden de 3,5 GB en f16.
+- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM para cuantizaciones bajas (GTX 1050 Ti, RTX 3050, RTX 4060); para f16 se recomienda al menos 4 GB (GTX 1650, RTX 3050). En GPU de datacenter (A100, H100) el modelo es sobredimensionado para su tamano y no aprovecha su capacidad.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer modernas con cuantizacion Q4 o superior; tambien puede ejecutarse en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base en formato transformers puede servirse con vLLM o TGI, aunque no se documentan configuraciones especificas.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparacion rigurosa con alternativas de la misma categoria. A modo orientativo, los modelos de 1-2B parametros en formato GGUF suelen compararse con Qwen2.5-1.5B, Llama-3.2-1B o Gemma-2-2B, pero no se puede afirmar que Baligh-1.7B sea equiparable a ninguno de ellos sin datos verificables.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Baligh-1.7B | 1,7 B | No disponible | Apache 2.0 | GGUF, safetensors | Especializado en arabe e islamistica, base Qwen3 |
+| Qwen3-1.7B | 1,7 B | No disponible | Apache 2.0 | safetensors, GGUF | Modelo generalista multilingue del que deriva Baligh |
+| Fanar-1-9B | 9 B | No disponible | No disponible | No disponible | Modelo arabe de mayor tamano, no comparable directamente por escala |
+| ALLaM-7B | 7 B | No disponible | No disponible | No disponible | Modelo arabe de SDAIA, mayor escala |
 
-| Modelo | Parametros | Contexto | Licencia | Formato GGUF |
-|---|---|---|---|---|
-| Baligh-1.7B | 1,7B | no disponible | no disponible | si |
-| Alternativas de 1-2B | no disponible | no disponible | no disponible | no disponible |
+La comparacion con modelos arabes especificos de mayor tamano (Fanar, ALLaM) no es directa por diferencia de escala; Baligh-1.7B compite en el segmento de modelos compactos donde la eficiencia de despliegue prima sobre el rendimiento bruto. No se dispone de datos de benchmarks para establecer comparaciones cuantitativas.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos del modelo base; se desconoce su comportamiento en dominios sensibles.
-- Riesgo de alucinacion: no cuantificado; en modelos de 1.7B es habitual que aparezca en tareas de razonamiento complejo, pero no hay datos especificos.
-- Limitaciones de contexto e idioma: no disponibles; no se especifica la ventana de contexto ni los idiomas entrenados.
-- Licencia no declarada: no se puede confirmar si el uso comercial esta permitido. Es imprescindible consultar el repositorio original Kandil7/Baligh-1.7B antes de cualquier despliegue en produccion.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda validar con tareas representativas antes de usarlas.
-- El repositorio no incluye el modelo original en safetensors; para fine-tuning o para servir con vLLM/TGI hay que acudir al repositorio de origen.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- Riesgo de alucinacion en materia religiosa: el corpus de fatwas puede inducir al modelo a generar respuestas normativas incorrectas o desactualizadas; requiere supervision humana en contextos de jurisprudencia islamica.
+- Sesgos potenciales derivados de los corpus web (ArabicWeb24) y de las fuentes de fatwas, que pueden reflejar posiciones doctrinales particulares.
+- Cobertura limitada fuera del arabe y el ingles; el rendimiento en otras lenguas no esta documentado y probablemente sea deficiente.
+- Longitud de contexto no documentada: no se puede garantizar el manejo de conversaciones o documentos largos sin verificacion previa.
+- Ajuste por QLoRA sobre un modelo de 1,7 B: la capacidad de razonamiento complejo y codigo es limitada en comparacion con modelos de mayor escala.
+- Aunque la licencia es Apache 2.0, el uso comercial de contenido religioso generado debe acompanarse de revision y responsabilidad editorial.
+- La model card no detalla el numero de tokens de entrenamiento ni la composicion exacta del dataset, lo que dificulta evaluar la cobertura real del dominio.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Baligh-1.7B-GGUF
-- Modelo original: https://huggingface.co/Kandil7/Baligh-1.7B
-- Perfil del autor de la conversion: https://huggingface.co/mradermacher
+- Modelo base original: https://huggingface.co/Kandil7/Baligh-1.7B
+- Cuantizaciones imatrix/weighted: https://huggingface.co/mradermacher/Baligh-1.7B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Baligh-1.7B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset ArabicWeb24: https://huggingface.co/datasets/lightonai/ArabicWeb24
+- Dataset ArabicText-Large: https://huggingface.co/datasets/Jr23xd23/ArabicText-Large
+- Dataset TheArabicPile_Dialects: https://huggingface.co/datasets/premio-ai/TheArabicPile_Dialects
+- Dataset CIDAR: https://huggingface.co/datasets/arbml/CIDAR
+- Dataset evol-instruct-arabic: https://huggingface.co/datasets/FreedomIntelligence/evol-instruct-arabic
+- Dataset islamweb-fatwa-ar: https://huggingface.co/datasets/Kandil7/islamweb-fatwa-ar

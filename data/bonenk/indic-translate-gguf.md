@@ -2,92 +2,87 @@
 
 ## Resumen
 
-Indic Translate — GGUF es una cuantización para llama.cpp del modelo de traducción **indic-translate** desarrollado por Bodhan AI (Fundación IITM Bodhan-AI, Centro de Excelencia en IA para la Educación del Ministerio de Educación del Gobierno de India). El modelo original es un sistema especializado en traducción entre inglés y 15 lenguas del subcontinente indio (hindi, bengalí, tamil, telugu, kannada, malayalam, maratí, guyaratí, panyabí, oriya, asamés, urdu, nepalí, cingalés y sánscrito), una tarea donde los modelos generalistas suelen rendir por debajo de lo esperado.
+Indic-translate-GGUF es la versión cuantizada para llama.cpp del modelo bodhan-ai/indic-translate, desarrollado por Bodhan AI (IITM Bodhan-AI Foundation, Centro de Excelencia para IA en Educación del Ministerio de Educación del Gobierno de India). El modelo resuelve un problema concreto: la traducción de alta calidad entre el inglés y 15 lenguas índicas (hindi, bengalí, tamil, telugu, kannada, malabar, maratí, guyaratí, panyabí, oriya, asamés, urdu, nepalí, cingalés y sánscrito), una cobertura lingüística que los modelos multilingües generalistas suelen tratar de forma superficial.
 
-Esta versión, publicada por el usuario Bonenk, convierte los pesos originales al formato GGUF para poder ejecutar el modelo localmente con llama.cpp, sin depender de GPUs de gama alta ni de servicios en la nube. El modelo base tiene 7.463 millones de parámetros (7,46 B) y está construido sobre la arquitectura `Gemma4ForConditionalGeneration`, de la que esta conversión conserva únicamente el decodificador de texto (684 tensores, arquitectura `gemma4`), descartando las torres de visión y audio al no ser relevantes para traducción.
+El modelo original emplea la arquitectura Gemma4ForConditionalGeneration, que incluye torres de visión y audio; sin embargo, esta conversión GGUF conserva únicamente el decodificador de texto (arquitectura `gemma4`, 684 tensores), ya que las torres multimodales no aportan valor a una carga de trabajo de traducción. Cuenta con 7.463.019.050 parámetros totales y el modelo original anuncia soporte de hasta 32.000 tokens de entrada, lo que permite traducir documentos completos en una sola petición.
 
-Su relevancia actual radica en la combinación de tres factores: especialización en lenguas índicas con soporte de documentos completos de hasta 32k tokens de entrada, disponibilidad en formato GGUF con cuantizaciones desde 5,30 GB, y una licencia abierta que permite uso comercial (con matices). Es una opción práctica para despliegues locales de traducción de alta calidad hacia y desde lenguas de India.
+La relevancia de esta ficha radica en que ofrece un pipeline de traducción especializado, ejecutable en hardware de consumo mediante cuantización Q4_K_M (5,30 GB), con una licencia que permite uso comercial pero restringe el hosting de terceros. Es una opción práctica para equipos que necesitan traducción inglés-índico sin depender de APIs propietarias.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Gemma4 (decodificador de texto; `Gemma4ForConditionalGeneration` en el modelo original) |
-| Parametros totales | 7.463.019.050 (7,46 B) |
-| Parametros activos | no disponible (no hay indicios de que sea MoE) |
-| Longitud de contexto | hasta 32k tokens de entrada (advertido por upstream); ejemplos usan 4096-8192 tokens |
-| Tipos de cuantizacion | Q4_K_M (5,30 GB), Q6_K (6,17 GB), Q8_0 (7,97 GB), F16 (14,93 GB) |
-| Idiomas soportados | inglés, hindi, bengalí, tamil, telugu, kannada, malayalam, maratí, guyaratí, panyabí, oriya, asamés, urdu, nepalí, cingalés, sánscrito (16 lenguas) |
-| Licencia | Indic Open Model License v1.0 (license: other) |
-| Formato de pesos | GGUF (convertido desde safetensors del modelo original) |
+| Arquitectura | Gemma4 (decodificador de texto; el modelo original es Gemma4ForConditionalGeneration con torres de visión y audio, descartadas en esta conversión) |
+| Parámetros totales | 7.463.019.050 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 32.000 tokens de entrada según el modelo original |
+| Tipos de cuantización | Q4_K_M (5,30 GB), Q6_K (6,17 GB), Q8_0 (7,97 GB), F16 (14,93 GB) |
+| Idiomas soportados | en, hi, bn, ta, te, kn, ml, mr, gu, pa, or, as, ur, ne, si, sa |
+| Licencia | Indic Open Model License v1.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, `bodhan-ai/indic-translate`, utiliza la arquitectura `Gemma4ForConditionalGeneration`, un transformador condicional que originalmente incluía torres de visión y audio además del decodificador de texto. La conversión a GGUF realizada por Bonenk elimina esas torres multimodales y conserva únicamente el decodificador de texto (arquitectura `gemma4`, 684 tensores), suficiente para la tarea de traducción y con el beneficio de reducir el tamaño de los ficheros.
+La conversión se basa en los pesos del modelo bodhan-ai/indic-translate en la revisión `3c5c3b4e2747b0fca133accf077132326c88b267`. El modelo original es un transformer de tipo Gemma4 con torres multimodales (visión y audio); el GGUF resultante contiene solo el decodificador de texto, con arquitectura declarada `gemma4` y 684 tensores. Se trata, por tanto, de un modelo denso de aproximadamente 7.460 millones de parámetros, sin mezcla de expertos.
 
-Los detalles del proceso de entrenamiento del modelo upstream (número de tokens, composición del corpus, uso de RLHF/DPO u otras técnicas de alineación) no están disponibles en la información proporcionada. Sí se documenta el proceso de conversión: se generó un fichero F16 de referencia a partir del snapshot upstream (revisión `3c5c3b4e2747b0fca133accf077132326c88b267`) con `convert_hf_to_gguf.py`, y a partir de él se derivaron las cuantizaciones Q8_0, Q6_K y Q4_K_M mediante `llama-quantize`. Los cuatro ficheros fueron verificados generando texto con `llama-cli` build b11798-9febe63d5.
+No se dispone en la información proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste fino supervisado específico para traducción. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. Los cuatro ficheros GGUF fueron validados por el cuantizador con `llama-cli` build b11798-9febe63d5, lo que confirma su correcta carga y generación.
 
 ## Capacidades
 
-- Traducción de texto entre inglés y 15 lenguas índicas, con exposición de cada lengua y escritura mediante su nombre en el prompt (por ejemplo, `Hindi`, `Tamil`, `Bengali`, `Urdu`, `Konkani`).
-- Traducción de documentos completos: la ventana de entrada de hasta 32k tokens permite procesar textos largos en una sola petición sin fragmentar.
-- Salida determinista recomendada: los ejemplos del autor usan `--temp 0`, apropiado para traducción donde no se busca creatividad.
-- Compatibilidad con el ecosistema llama.cpp: inferencia por línea de comandos (`llama-cli`) y servidor con API compatible con OpenAI (`llama-server`), lo que facilita la integración en aplicaciones.
-- Formato GGUF con cuatro niveles de cuantización, permitiendo ajustar el equilibrio entre calidad, VRAM y velocidad.
-- Solo texto: las capacidades de visión y audio del modelo original no están incluidas en esta conversión.
-
-No hay información disponible sobre soporte de tool calling, capacidades de agente, razonamiento multi-paso ni generación de código; el modelo está especializado en traducción.
+- Traducción de texto entre inglés y 15 lenguas índicas, con instrucción explícita del idioma destino en el prompt.
+- Procesamiento de documentos completos en una sola petición, gracias al contexto de hasta 32.000 tokens del modelo original.
+- Generación de texto conversacional en formato chat (etiqueta `conversational`), compatible con plantillas Jinja mediante `--jinja`.
+- Soporte de servidor compatible con la API de OpenAI a través de `llama-server` (endpoint `/v1/chat/completions`).
+- Ejecución determinista con `temperature 0`, adecuada para tareas de traducción donde se busca consistencia.
+- Capacidades multimodales (visión y audio) no disponibles en esta conversión: solo texto.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- **Localización de software y documentación hacia lenguas índicas:** equipos de producto pueden traducir cadenas de interfaz y documentación técnica al hindi, tamil o bengalí de forma local, evitando enviar contenido propietario a APIs de terceros.
-- **Traducción de documentos largos por lotes:** con 32k tokens de entrada, se pueden traducir informes, artículos o contratos completos en una sola petición, ideal para pipelines de procesamiento documental.
-- **API de traducción autoalojada:** mediante `llama-server` con endpoint compatible con OpenAI (`/v1/chat/completions`), se puede montar un servicio de traducción interno con Q4_K_M en una sola GPU de consumo.
-- **Accesibilidad de contenidos educativos:** al tratarse de un modelo impulsado por el Ministerio de Educación de India, es especialmente adecuado para traducir material didáctico a lenguas regionales, incluidas lenguas con pocos recursos como sánscrito, cingalés o asamés.
-- **Procesamiento de contenido en medios y comunicación:** redacciones que cubran noticias de India pueden traducir artículos en lenguas locales al inglés para su posterior edición.
-- **Integración en aplicaciones móviles o de escritorio offline:** el tamaño de 5,30 GB en Q4_K_M permite ejecutar el modelo en estaciones de trabajo con GPUs de consumo, útil en entornos sin conectividad fiable.
-- **Preprocesamiento para análisis multilingüe:** como paso previo en pipelines de NLP, traducir corpus en lenguas índicas al inglés antes de aplicar herramientas de análisis que solo funcionan bien en inglés.
+- Traducción de documentación técnica al hindi: el modelo acepta instrucciones del tipo "Translate the following text into Hindi: ..." y puede procesar secciones extensas en una sola petición gracias al contexto de 32.000 tokens, lo que evita fragmentar manuales y perder coherencia terminológica.
+- Localización de interfaces y contenidos para mercados índicos: con 15 idiomas de destino (bengalí, tamil, telugu, etc.) y cuantización Q4_K_M de 5,30 GB, se puede desplegar en un servidor modesto para traducir cadenas de producto de forma por lotes.
+- Atención al cliente multilingüe en India: integrado en `llama-server` con la API compatible de OpenAI, el modelo puede traducir consultas de usuarios en lenguas índicas al inglés para su procesamiento posterior, y traducir las respuestas de vuelta al idioma del cliente.
+- Traducción de literatura y contenido editorial: la cuantización Q8_0 (7,97 GB) o F16 (14,93 GB) ofrece calidad prácticamente sin pérdida para textos donde la fidelidad estilística es crítica, como sánscrito o nepalí.
+- Investigación lingüística y creación de corpus paralelos: el modelo permite generar traducciones de referencia entre inglés y lenguas de bajos recursos como oriya, asamés o cingalés, facilitando la construcción de datasets alineados.
+- Procesamiento de documentos legales o administrativos: la ventana de 32.000 tokens permite traducir contratos o expedientes completos sin truncamientos, con la ventaja de que la inferencia local mantiene los datos sensibles fuera de servicios de terceros.
+- Despliegue en hardware de consumo para prototipado: con Q4_K_M en una GPU de consumo se puede validar un pipeline de traducción antes de escalar a infraestructura mayor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de calidad de traducción (BLEU, COMET, chrF) ni comparativas con otros sistemas de traducción.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia (con descarga completa a GPU, `-ngl 99`):**
-  - Q4_K_M: 5,30 GB de pesos; con contexto y overhead, en torno a 6-7 GB de VRAM.
-  - Q6_K: 6,17 GB de pesos; en torno a 7-8 GB de VRAM.
-  - Q8_0: 7,97 GB de pesos; en torno a 9-10 GB de VRAM.
-  - F16: 14,93 GB de pesos; requiere 16 GB o más de VRAM.
-- **GPUs recomendadas:** una RTX 4060 Ti de 16 GB o RTX 4090 ejecuta cómodamente cualquier cuantización; para F16 con contexto largo, una RTX 4090 (24 GB) o una A100 son opciones seguras. También es viable la ejecución parcial o total en CPU dado el tamaño moderado del modelo.
-- **Cabe en GPUs de consumo:** sí. Q4_K_M y Q6_K caben en GPUs de 8 GB (RTX 3060 Ti, RTX 4060); Q8_0 en GPUs de 12 GB; F16 en GPUs de 16 GB o superiores.
-- **Opciones de despliegue:** llama.cpp es la vía documentada (`llama-cli` y `llama-server` con API compatible con OpenAI). Al ser GGUF, también debería funcionar con Ollama y LM Studio, aunque no se menciona explícitamente en la model card. No hay datos sobre vLLM o TGI para esta conversión.
-- **Latencia y throughput:** no disponibles. Para un modelo de 7,46 B en Q4_K_M con descarga completa a GPU, pueden esperarse decenas de tokens por segundo en una GPU de consumo moderna, pero no hay medidas publicadas.
+- VRAM estimada para inferencia: aproximadamente 5,5-6 GB con Q4_K_M, 6,5-7 GB con Q6_K, 8,5-9 GB con Q8_0 y 15-16 GB con F16 (incluyendo overhead de contexto y caché KV).
+- GPU recomendadas: NVIDIA RTX 4090, A100 o H100 para máximo throughput; RTX 3060 de 12 GB o RTX 4070 para Q4_K_M y Q6_K.
+- Cabe en GPU de consumo: sí, Q4_K_M y Q6_K en tarjetas de 8-12 GB; Q8_0 requiere 12 GB o más; F16 requiere 16 GB o más.
+- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server`), con soporte de `--ngl 99` para descargar todas las capas en GPU y `--jinja` para plantillas de chat. Compatible con endpoints de la API de OpenAI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Lenguas | Contexto | Licencia |
+| Modelo | Parámetros | Contexto | Idiomas índicos | Licencia | Formato |
 |---|---|---|---|---|---|
-| Indic Translate (GGUF) | 7,46 B | GGUF (Q4_K_M a F16) | 16 (inglés + 15 índicas) | hasta 32k entrada | Indic Open Model License v1.0 (uso comercial permitido con restricciones de hosting) |
-| NLLB-200 (Meta) | 1,3 B / 3,3 B / 54 B (MoE) | PyTorch, CT2 | 200 lenguas (incluye varias índicas) | no disponible | CC-BY-NC 4.0 (no comercial) |
-| IndicTrans2 (AI4Bharat) | 1 B / 4 B | PyTorch, safetensors | 22 lenguas índicas | no disponible | MIT (según repositorio AI4Bharat) |
+| Bonenk/indic-translate-GGUF | 7,46 B | hasta 32k (según modelo original) | 15 lenguas índicas + inglés | Indic Open Model License v1.0 (restringe hosting de terceros) | GGUF |
+| bodhan-ai/indic-translate (original) | 7,46 B | hasta 32k | 15 lenguas índicas + inglés | Indic Open Model License v1.0 | safetensors (pesos originales) |
+| Alternativas de traducción multilingüe generalistas | no disponible | no disponible | cobertura parcial | variable | no disponible |
 
-Indic Translate destaca frente a NLLB-200 en especialización índica y ventana de contexto para documentos, y frente a IndicTrans2 en disponibilidad nativa GGUF para inferencia local con llama.cpp. No hay datos de rendimiento comparativo publicados.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Restricciones de licencia relevantes:** la Indic Open Model License v1.0 permite el uso y la redistribución, incluido el uso comercial, pero **prohíbe el alojamiento de terceros** (inferencia vía API o servicios hosted) sin aprobación previa por escrito del licensor, y establece condiciones para usos de producto a muy gran escala. Es imprescindible revisar el texto de la licencia antes de cualquier despliegue público.
-- **Solo texto:** la conversión GGUF elimina las torres de visión y audio del modelo original; no puede procesar imágenes ni audio.
-- **Riesgo de alucinación:** no cuantificado. En modelos de traducción generativos existe el riesgo de omitir u añadir contenido, especialmente en textos largos o con terminología especializada; se recomienda validación humana en flujos críticos.
-- **Cobertura lingüística limitada a 16 lenguas:** no sirve para otras lenguas índicas no incluidas (por ejemplo, no aparece cachemiro en la lista) ni para pares entre dos lenguas índicas sin pasar por el inglés, algo que no se documenta en la model card.
-- **Calidad según cuantización:** Q4_K_M es la opción más ligera pero puede degradar la calidad respecto a F16; para producción se sugiere evaluar Q6_K o Q8_0.
-- **Sesgos:** no hay información publicada sobre sesgos del modelo; al tratarse de un modelo entrenado para lenguas de India, puede reflejar sesgos presentes en los corpus de entrenamiento, cuya composición no está documentada aquí.
-- **Adopción temprana:** el repositorio tiene muy pocas descargas (22) y un solo like, sin comunidad de pruebas; conviene validar el comportamiento en el propio caso de uso antes de producción.
+- Solo texto: las capacidades de visión y audio del modelo original no están presentes en esta conversión GGUF.
+- Riesgo de alucinación inherente a los modelos generativos; en traducción puede manifestarse como adiciones, omisiones o cambios de sentido, especialmente en lenguas de bajos recursos como oriya, asamés o sánscrito.
+- Sesgos potenciales no documentados en la información disponible; al estar entrenado con datos mayoritariamente en inglés e índico, puede reflejar sesgos culturales o lingüísticos de esas fuentes.
+- La licencia Indic Open Model License v1.0 permite uso y redistribución, incluido el comercial, pero restringe el hosting de terceros (API o inferencia alojada) sin aprobación previa por escrito del licenciante, y condiciona el uso a muy gran escala en productos.
+- Este repositorio es únicamente una descarga de pesos: no se habilita ningún endpoint de inferencia.
+- El prompt debe nombrar explícitamente el idioma destino; no se documenta detección automática del idioma de destino.
+- No se documentan capacidades de tool calling ni de razonamiento multi-paso, por lo que no debe asumirse su disponibilidad en producción.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Bonenk/indic-translate-GGUF
-- Modelo original (upstream): https://huggingface.co/bodhan-ai/indic-translate
+- Repositorio Hugging Face: https://huggingface.co/Bonenk/indic-translate-GGUF
+- Modelo base: https://huggingface.co/bodhan-ai/indic-translate
 - Licencia Indic Open Model License v1.0: https://github.com/Bodhan-AI/bodhan-model-info/blob/main/licenses/indic-open-model-license/v1/Indic_Open_Model_License.md
-- Web de Bodhan AI: https://bodhan.ai
-- Artículo técnico, demo y paper: no disponibles
+- Bodhan AI: https://bodhan.ai
+- Perfil del cuantizador: https://huggingface.co/Bonenk

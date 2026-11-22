@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "dronefreak/human-action-classification-stanford40",
+  "slug": "dronefreak-human-action-classification-stanford40",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/human-action-classification-stanford40",
+  "created_at": "2025-10-26T10:42:15.000Z",
+  "updated_at": "2026-11-21T21:46:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "action-recognition",
+    "human-action-classification",
+    "image-classification",
+    "computer-vision",
+    "pose-estimation",
+    "mediapipe",
+    "stanford40",
+    "resnet",
+    "mobilenet",
+    "en",
+    "dataset:stanford40",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21322216,
+  "parameters_human": "21.3M",
+  "storage_bytes": 992391930,
+  "storage_human": "992 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Stanford 40 Actions",
+      "metric": "Accuracy",
+      "value": 86.4
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Stanford 40 Actions",
+      "metric": "Macro F1-Score",
+      "value": 0.8618
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mindy Po - Human Resources Information Systems Analyst | LinkedIn",
+      "url": "https://ca.linkedin.com/in/mindy-po-71427717",
+      "snippet": "View Mindy Po’s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

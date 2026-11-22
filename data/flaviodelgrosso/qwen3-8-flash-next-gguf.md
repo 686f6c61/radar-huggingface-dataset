@@ -2,81 +2,87 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje de gran escala desarrollado por el equipo Qwen (Alibaba). Esta ficha documenta la cuantización GGUF publicada por el usuario flaviodelgrosso bajo el identificador `flaviodelgrosso/qwen3.8-flash-next-gguf`, una conversión de los pesos originales en BF16 a un formato GGUF mixto (Q4-D6) orientada a inferencia eficiente en memoria. El modelo base cuenta con 179.551.050.368 parámetros totales (aproximadamente 180 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamano o, según la nomenclatura del autor, en una arquitectura con expertos enrutados (MoE) y cabezas NextN.
+Qwen3.8 Flash-Next es un modelo de lenguaje de gran escala desarrollado por Qwen (Alibaba) y distribuido en este repositorio por el usuario flaviodelgrosso en formato GGUF cuantizado. Se trata de un modelo con 179.551.050.368 parámetros totales (aproximadamente 180 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamaño, y está pensado para generación de texto conversacional. La cuantización concreta de este repositorio, denominada Q4-D6, aplica 4 bits a los pesos de los expertos y unos 6 bits al resto del modelo, dando como resultado un archivo de 175 GB.
 
-La relevancia de esta publicación radica en el trabajo de cuantización: el autor reduce el coste de lectura por token de 6,70 GB a 4,62 GB manteniendo una precisión mixta (Q4_K para expertos enrutados, MXFP4 para las proyecciones down, Q6_K para atención y capas densas, BF16 para el router). Esto permite ejecutar un modelo de ~180B parámetros en un único equipo con ~69 GiB de memoria residente, algo imposible con los pesos BF16 originales.
+La particularidad de esta ficha es que el GGUF no está pensado para runtimes convencionales como llama.cpp u Ollama, sino para Razor, un runtime propietario para Apple Silicon que, según la model card, aún no ha sido publicado como código abierto. El modelo está diseñado para ejecutarse íntegramente en memoria en un Mac con 128 GB de memoria unificada, cargando unos 69 GiB en RAM y manteniendo el resto como tabla de consulta en disco. Incluye además una cabeza de borrador integrada para decodificación especulativa, de modo que no requiere un modelo draft separado.
 
-El modelo está pensado para generación de texto, conversación y tareas de razonamiento, con soporte de decodificación especulativa mediante una cabeza NextN embebida y una tabla n-gram en BF16. La licencia es la Qwen Community License 1.0, que impone condiciones para uso comercial.
+Su relevancia actual radica en la posibilidad de ejecutar un modelo de ~180B parámetros en hardware de consumo de gama alta (Apple Silicon), algo impensable con cuantizaciones tradicionales, aunque condicionado a la disponibilidad futura del runtime Razor y a la licencia Qwen Community License 1.0, que restringe el uso comercial a determinadas condiciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con expertos enrutados (MoE) y cabeza NextN para decodificación especulativa; capas GDN (gated dense network) según la model card |
+| Arquitectura | no disponible (modelo base Qwen3.8-Flash-Next; pesos cuantizados en GGUF) |
 | Parametros totales | 179.551.050.368 (~180B) |
-| Parametros activos | no disponible |
+| Parametros activos | no disponible (no se indica que sea MoE; la model card menciona "expert weights" sin confirmar arquitectura) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF mixto Q4-D6: Q4_K en gate/up de expertos, MXFP4 en down de expertos, Q5_K/Q6_K en capas GDN 0–23, Q4_K en GDN 24–47, Q6_K en atención/cabeza/PLE/NextN, BF16 en router; ~6,2 bpw frente a 10,0 de Q8_0-dense |
+| Tipos de cuantizacion | Q4-D6 (4 bits en pesos de expertos, ~6 bits en el resto); GGUF |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (license:other; condiciones de uso comercial) |
+| Licencia | Qwen Community License 1.0 (license: other) |
 | Formato de pesos | GGUF (archivo `Qwen3.8-Flash-Next-Q4-D6.gguf`, 175 GB) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe el modelo base como un transformer con expertos enrutados (MoE) y una cabeza NextN embebida para decodificación especulativa. La model card menciona capas GDN (gated dense network) diferenciadas por rango: las capas 0–23 se cuantizan en Q5_K/Q6_K y las 24–47 en Q4_K, lo que sugiere una arquitectura híbrida con dos regímenes de precisión según la profundidad. También se conserva una tabla n-gram en BF16 para la especulación, y el router permanece en BF16 para no degradar el enrutamiento de expertos.
+No se dispone de información detallada sobre la arquitectura interna del modelo base Qwen3.8-Flash-Next en la documentación proporcionada. La model card del repositorio cuantizado menciona que los pesos de los expertos se cuantizan a 4 bits y el resto del modelo a unos 6 bits, lo que sugiere una estructura con componentes diferenciados (posiblemente capas de tipo mixture-of-experts o módulos especializados), pero no se confirma explícitamente la arquitectura. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. La cuantización se realizó una sola vez desde BF16 usando la imatrix de unsloth (hash `a5863123…f9254154`), con un mapa de precisión documentado en `qwen4exp.requant.*`. El autor indica que la reconstrucción es byte-idéntica mediante `razor convert qwen-q4-d6`.
+La innovación técnica destacable de esta distribución es la inclusión de una cabeza de borrador (draft head) integrada para decodificación especulativa, que permite acelerar la generación sin necesidad de cargar un modelo draft independiente. Según la model card, el esquema Q4-D6 ofrece una generación aproximadamente un 30% más rápida que una cuantización Q4 plana, con una calidad equivalente dentro del margen de error de medida. El diseño de carga híbrida (unos 69 GiB en memoria y el resto como tabla de consulta en disco) es específico del runtime Razor.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno (pipeline `text-generation`, tag `conversational`).
-- Razonamiento y respuesta a instrucciones, según la naturaleza del modelo base Qwen3.8-Flash-Next.
-- Decodificación especulativa mediante cabeza NextN embebida y tabla n-gram, con modo `opportunistic` en el servidor Razor.
-- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repo).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto conversacional: el pipeline declarado es text-generation y los tags incluyen "conversational".
+- Compatibilidad con APIs OpenAI y Anthropic: según la model card, Razor sirve APIs compatibles con ambos formatos, lo que permite conectar agentes de código y clientes de chat directamente.
+- Decodificación especulativa integrada: incluye cabeza de borrador propia, sin modelo draft externo.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible; la compatibilidad con APIs de agentes de código sugiere que podría soportarlo, pero no se detalla.
+- Capacidades multilingües: no disponible.
 - Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue en estación de trabajo única: con ~69 GiB residentes, el modelo cabe en equipos con 96–128 GB de RAM unificada (por ejemplo, Apple Silicon de gama alta) o en servidores con una GPU de 80 GB más memoria del sistema, permitiendo ejecutar un modelo de ~180B sin clúster multi-GPU.
-- Asistente conversacional de contexto largo: el pipeline `text-generation` y el tag `conversational` lo hacen adecuado para chat multi-turno; la ventana de contexto concreta no está documentada, por lo que debe validarse antes de producción.
-- Inferencia de baja latencia con especulación: el modo `--speculation opportunistic` de Razor aprovecha la cabeza NextN para alcanzar 96,5 tok/s en un M5 Max (frente a 68,0 tok/s sin especulación), útil en aplicaciones interactivas donde la latencia percibida importa.
-- Servicio local compatible con endpoints: el tag `endpoints_compatible` sugiere integración con APIs tipo OpenAI; se puede montar un servidor local con `razor serve` para prototipos y entornos de desarrollo sin depender de la nube.
-- Evaluación e investigación de cuantización: el mapa de precisión por capa (`qwen4exp.requant.*`) y la reproducibilidad byte-idéntica lo convierten en un caso de estudio para medir el impacto de esquemas mixtos Q4/Q6/MXFP4 en modelos MoE grandes.
-- Procesamiento por lotes en hardware de gama alta: con 4,62 GB leídos por token, el throughput en GPUs con gran ancho de banda (A100/H100) será superior al de una cuantización Q8_0-dense; útil para generación de contenido a gran escala, siempre que se valide la calidad frente al BF16 original.
+- Asistencia de código en local sobre Apple Silicon: con 128 GB de memoria unificada y el runtime Razor, el modelo puede servir a agentes de código (por ejemplo, clientes compatibles con API de OpenAI o Anthropic) sin enviar datos a la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Chat conversacional multi-turno en estación de trabajo: el pipeline text-generation y el tag "conversational" lo orientan a diálogos; la carga en memoria de ~69 GiB permite mantener sesiones activas con baja latencia (~68 tokens/s en sesión única).
+- Servicio multiusuario ligero: la model card reporta ~159 tokens/s con 8 sesiones simultáneas en un M5 Max, lo que permite atender a un pequeño equipo de desarrollo desde una única máquina.
+- Prototipado de agentes con APIs compatibles: al exponer endpoints compatibles con OpenAI y Anthropic, se puede integrar en frameworks de agentes existentes sin adaptadores personalizados.
+- Evaluación de modelos de ~180B en hardware de consumo: útil para investigadores que quieran comparar el comportamiento de un modelo grande cuantizado frente a alternativas más pequeñas en un Mac de gama alta.
+- Despliegue offline en entornos air-gapped: al ejecutarse completamente en local tras la descarga de 175 GB, encaja en escenarios sin conectividad externa, siempre que se disponga de Razor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de velocidad de decodificación en un Apple M5 Max: 68,0 tok/s sin especulación y 96,5 tok/s con especulación NextN (+10% respecto a la build anterior con tipos de tensor idénticos), con una reducción del 31% en lecturas por token (4,62 GB frente a 6,70 GB).
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente reporta métricas de velocidad de inferencia:
+
+| Configuracion | Tokens/s |
+|---|---:|
+| Sesion unica | ~68 |
+| Sesion unica con decodificacion especulativa | ~95 |
+| 8 sesiones simultaneas | ~159 |
+
+Medidas en un Apple M5 Max con 128 GB de memoria unificada.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: ~69 GiB residentes para el archivo Q4-D6 de 175 GB en disco.
-- GPU recomendadas: no especificadas por el autor; por tamano, una GPU de 80 GB (A100/H100) no basta por sí sola para los 69 GiB si se reserva memoria para el sistema, por lo que se requiere memoria unificada o reparto entre GPU y RAM del host.
-- ¿Cabe en GPU de consumo? No en una sola GPU de consumo (24 GB o menos). Sí en equipos con memoria unificada de 96–128 GB, como el M5 Max citado en la model card.
-- Opciones de despliegue: servidor Razor (`razor serve --model ... --speculation opportunistic`), con descarga vía `razor download qwen-q4-d6`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: 68,0 tok/s sin especulación y 96,5 tok/s con especulación en un M5 Max (build anterior con tipos de tensor idénticos). No hay datos para otras plataformas.
+- Memoria: Apple Silicon Mac con 128 GB de memoria unificada; unos 69 GiB se cargan en RAM y el resto permanece en disco como tabla de consulta.
+- Almacenamiento: aproximadamente 175 GB de espacio libre en disco para el archivo GGUF.
+- Sistema operativo: macOS 15 o posterior.
+- GPU: el runtime Razor fue desarrollado y probado en un Apple M5 Max; no se documenta soporte para GPU NVIDIA (A100, H100, RTX 4090) ni para otros aceleradores.
+- Cabe en GPU de consumo: sí, en el sentido de que cabe en un Mac de 128 GB de memoria unificada; no se indica compatibilidad con GPUs discretas de consumo.
+- Opciones de despliegue: exclusivamente Razor (`razor serve --model ... --speculation opportunistic`); no se menciona compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ~68 tokens/s en sesión única, ~95 tokens/s con decodificación especulativa y ~159 tokens/s agregados con 8 sesiones.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (MoE de ~180B) con datos de parámetros, contexto, rendimiento, licencia y disponibilidad que permitan una comparación rigurosa.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría con datos verificables de parámetros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
-- La cuantización mixta Q4/Q6/MXFP4 introduce degradación de precisión respecto al BF16 original; el autor no publica evaluaciones de calidad (perplejidad, benchmarks) que cuantifiquen esa pérdida.
-- El router se mantiene en BF16 y la tabla n-gram también, lo que mitiga parte del riesgo, pero no hay validación independiente de que el enrutamiento de expertos se preserve tras la cuantización.
-- Licencia Qwen Community License 1.0: impone condiciones para uso comercial; es imprescindible revisar `LICENSE` antes de desplegar en producción.
-- Idiomas soportados no documentados: no se puede garantizar cobertura multilingüe sin evaluación previa.
-- Longitud de contexto no disponible: no debe asumirse una ventana concreta para aplicaciones de contexto largo.
-- Riesgo de alucinación y sesgos: no hay información específica del modelo base en la documentación proporcionada; debe evaluarse empíricamente.
-- El despliegue está documentado únicamente para el servidor Razor; el soporte en otros runtimes (llama.cpp, vLLM, Ollama) no está confirmado y podría requerir conversiones adicionales.
-- El repo tiene 0 likes y fue creado en octubre de 2026; la madurez y el mantenimiento de la cuantización no están contrastados por la comunidad.
+- El runtime Razor no es de código abierto y no ha sido publicado: los pesos se pueden descargar, pero no se pueden ejecutar con Razor hasta que se publique.
+- Requiere hardware muy específico (Apple Silicon con 128 GB de memoria unificada y macOS 15+); no hay soporte documentado para otras plataformas.
+- La licencia Qwen Community License 1.0 impone condiciones al uso comercial; es necesario revisar el archivo LICENSE antes de un despliegue en producción.
+- No se dispone de información sobre sesgos, riesgo de alucinación ni limitaciones idiomáticas del modelo base.
+- No se documentan la longitud de contexto ni los idiomas soportados, lo que dificulta planificar casos de uso con ventanas largas o requisitos multilingües.
+- La cuantización Q4-D6 introduce pérdida de precisión respecto al modelo original, aunque el autor afirma que la calidad es equivalente a Q4 dentro del margen de medida.
+- El modelo depende de un ecosistema propietario (Razor) para su ejecución, lo que limita la portabilidad y la reproducibilidad de los resultados.
+- No hay resultados de benchmarks publicados que permitan validar la calidad del modelo más allá de las métricas de velocidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio Razor: https://github.com/flaviodelgrosso/razor
-- Documentación de cuantización de Razor: https://github.com/flaviodelgrosso/razor/blob/main/docs/quantization.md

@@ -2,98 +2,110 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 — SAGE REXL3 1.55 bpw es una cuantización de la comunidad del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017, publicada por el usuario vcruz305 en Hugging Face. El pack utiliza el formato EXL3/REXL3 (trellis) cargable con la librería ExLlamaV3, y aplica un método propio de cuantización de precisión mixta llamado SAGE, que asigna distintos valores de compresión (`K` de EXL3) a cada tensor de expertos, leyéndose dichos valores directamente de cada tensor trellis durante la carga.
+DSV4.1-Flash-1017-SAGE-REXL3-1.55bpw es un empaquetado cuantizado del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicado por el usuario vcruz305 en Hugging Face. No se trata de un modelo nuevo, sino de una compresion agresiva del modelo original (256.622.688.722 parametros, aproximadamente 256,6 mil millones) en formato EXL3/REXL3 mediante el metodo propietario SAGE de cuantizacion de precision mixta, que asigna distintos valores de K de EXL3 a cada tensor. El resultado ocupa unos 320,3 GB en el repositorio y requiere aproximadamente 108,5 GiB de memoria unificada para el modo texto y 109,4 GiB para el modo vision-lenguaje.
 
-El objetivo del pack es permitir ejecutar un modelo MoE de más de 256.000 millones de parámetros totales en un único dispositivo de memoria unificada de clase 128 GB, con una huella residente de aproximadamente 108,5 GiB en modo texto y 109,4 GiB en modo VLM. La calidad de la cuantización se ha medido de forma exhaustiva frente a la versión oficial mixta FP8/FP4 de DeepSeek, obteniendo un 93,95% de acuerdo Top-1 y un 99,53% de acuerdo Top-5 a nivel de token, con una divergencia KL media de 0,1058 sobre el vocabulario completo de 129.280 tokens.
+El modelo base es un Mixture-of-Experts (MoE) de DeepSeek con 40 capas, 384 expertos enrutados mas 1 compartido y enrutamiento top-6, disenado para tareas multimodales de imagen a texto. La relevancia de este pack radica en que reduce el modelo a 1,55 bits por peso manteniendo una alta fidelidad respecto a la version oficial en FP8/FP4 de DeepSeek: un 94,41 % de coincidencia Top-1 y una divergencia KL media de 0,0509 sobre secuencias retenidas. Esto lo hace viable en dispositivos de memoria unificada de clase 128 GB, un perfil de hardware mucho mas accesible que el del modelo original.
 
-El modelo base es multimodal (pipeline image-text-to-text) y conversacional, con licencia MIT tanto en el original como en esta derivación, lo que lo hace especialmente relevante para despliegues locales de alto rendimiento sin restricciones de uso comercial. El repositorio tiene 17 shards de safetensors y un tamaño total de 320,3 GB.
+La licencia es MIT, heredada del modelo base, lo que facilita su uso comercial. El pack esta pensado exclusivamente para ExLlamaV3 y no es compatible con otras librerias de inferencia. Se publico el 31 de octubre de 2026 y se actualizo el 2 de noviembre de 2026, acumulando 643 descargas y 3 likes en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (deepseek_v41), multimodal (image-text-to-text) |
-| Parámetros totales | 256.622.688.722 (dato real de safetensors) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible (el pack de evaluación incluye secuencias de 17.408 tokens, lo que sugiere soporte de contexto largo, pero no se publica la cifra oficial) |
-| Tipos de cuantización | EXL3/REXL3 1,55 bpw con precisión mixta SAGE (valores K variables por tensor trellis); modelo base en FP8/FP4 mixto |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer MoE (Mixture-of-Experts) con 40 capas, 384 expertos enrutados + 1 compartido, enrutamiento top-6 |
+| Parametros totales | 256.622.688.722 (aproximadamente 256,6 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | EXL3/REXL3 (trellis) con precision mixta SAGE a 1,55 bpw; el modelo base oficial usa FP8/FP4 mixto |
+| Idiomas soportados | no disponible (la model card no detalla idiomas; el desglose de calidad incluye una categoria "Multilingual") |
 | Licencia | MIT |
-| Formato de pesos | safetensors (17 shards, EXL3/REXL3 trellis), requiere ExLlamaV3 |
+| Formato de pesos | safetensors en 17 shards (`model-00001-of-00017.safetensors` a `model-00017-of-00017.safetensors`), con indice `model.safetensors.index.json`, `quant_method: exl3` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, DeepSeek-V4.1-Flash-1017, es un modelo de mezcla de expertos (MoE) de la familia DeepSeek, con capacidades multimodales de entrada imagen-texto y salida texto. Sobre su entrenamiento (número de tokens, composición del dataset, RLHF/DPO) no se ha publicado información en la model card de este pack, por lo que esos datos no están disponibles aquí.
+El modelo base DeepSeek-V4.1-Flash-1017 es un MoE de DeepSeek descrito en la model card como "MIT CED MoE": 40 capas, 384 expertos enrutados mas uno compartido, con enrutamiento top-6. La arquitectura es de tipo transformer con mezcla de expertos, y el pipeline declarado es image-text-to-text, lo que indica capacidades multimodales de vision y lenguaje. La model card del pack no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO; esa informacion corresponde a la model card del modelo base de DeepSeek, que no se incluye en la informacion proporcionada.
 
-La innovación principal de este repositorio no está en la arquitectura del modelo sino en la cuantización: SAGE es un método de precisión mixta para EXL3 en el que cada tensor trellis utiliza un valor de compresión `K` distinto, optimizado por tensor, y los kernels de ExLlamaV3 leen el `K` de cada tensor al cargar. Esto permite alcanzar una tasa media de 1,55 bits por peso manteniendo una fidelidad muy alta frente a la referencia oficial FP8/FP4: la medición se realizó con divergencia KL float64 sobre el vocabulario completo (129.280 tokens) en secuencias held-out, incluyendo un split de contexto largo de 17.408 tokens (`long17k`), con resultados especialmente sólidos en código (98,91% Top-1) y razonamiento (95,86% Top-1).
+La innovacion tecnica de este repositorio es el metodo SAGE, una tecnica propia de cuantizacion de precision mixta para EXL3 en la que cada tensor recibe un valor K distinto y los kernels leen ese K directamente del tensor trellis al cargarlo. El metodo no esta publicado. El pack se ha dimensionado para un unico dispositivo de memoria unificada de clase 128 GB, con una huella residente de aproximadamente 108,5 GiB en modo texto y 109,4 GiB en modo VLM. El autor afirma que la cuantizacion a 1,55 bpw preserva una alta concordancia a nivel de token con la version oficial mixta FP8/FP4 de DeepSeek.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline tag: conversational).
-- Comprensión multimodal imagen-texto a texto (pipeline tag: image-text-to-text); la huella residente en modo VLM (~109,4 GiB) confirma que el pack incluye los componentes de visión.
-- Generación y comprensión de código: es la categoría con mejor fidelidad de cuantización (99,53% Top-1 en respuestas, KL medio de 0,0054).
-- Razonamiento: categoría con el segundo mejor acuerdo (95,86% Top-1, KL medio 0,0370).
-- Matemáticas: acuerdo Top-1 del 94,38% con la referencia oficial.
-- Manejo de contexto largo: la evaluación `long17k` verifica la calidad en secuencias de 17.408 tokens con un acuerdo Top-1 del 92,18%.
-- Soporte de tool calling, agentes y modo thinking: no disponible en la información proporcionada (depende del modelo base, cuya documentación no está incluida en la model card).
+- Generacion de texto y conversacion multi-turno (pipeline `image-text-to-text` y tag `conversational`).
+- Procesamiento de imagen y texto combinados, segun el pipeline declarado.
+- Razonamiento: la model card incluye una categoria de evaluacion "Reasoning" con un 97,59 % de coincidencia Top-1 frente al modelo oficial.
+- Generacion de codigo: categoria "Code" con 97,86 % de Top-1 y "SWE Patch" con 97,60 %.
+- Matematicas: categoria "Math" con 90,96 % de Top-1.
+- Conocimiento general y tipo MMLU-Pro: 96,02 % en "General" y 91,54 % en "MMLU-Pro".
+- Capacidades multilingues: existe una categoria "Multilingual" en la evaluacion (91,74 % de Top-1), aunque no se detallan los idiomas concretos.
+- Seguimiento de instrucciones: categoria "IFEval" con 94,59 % de Top-1.
+- Ciberseguridad: categoria "Cyber" con 96,05 % de Top-1.
+- Soporte de tool calling, function calling y comportamiento agentico: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Ejecución local en estaciones de trabajo con memoria unificada de 128 GB: el pack está dimensionado específicamente para caber íntegramente en GPU en dispositivos como Mac Studio de 128 GB o plataformas equivalentes de memoria unificada, evitando el offloading a CPU y sus penalizaciones de latencia.
-- Asistentes de código locales y privados: la fidelidad casi perfecta en la categoría de código (99,53% Top-1 en respuestas, KL medio de 0,0054) lo hace adecuado para autocompletado, revisión y refactorización de código sin enviar el repositorio a la nube.
-- Razonamiento y análisis técnico: el buen acuerdo en la categoría de razonamiento (95,86% Top-1) permite usarlo para análisis de documentos técnicos y cadenas de razonamiento multi-paso.
-- Procesamiento de documentos largos: la evaluación a 17.408 tokens con ΔPPL negativo (-0,1466 respecto al profesor) indica que la cuantización degrada incluso menos que la referencia en contexto largo, útil para resumen y consulta de documentos extensos.
-- Aplicaciones multimodales on-premise: al conservar el componente VLM (~109,4 GiB), puede emplearse en flujos de descripción de imágenes, OCR asistido y análisis visual donde la privacidad de los datos es crítica.
-- Investigación en cuantización: la publicación detallada de métricas KL por categoría y split convierte el pack en una referencia útil para comparar métodos de cuantización de precisión mixta en modelos MoE grandes.
-- Chatbots autoalojados con licencia MIT: al no existir restricciones de licencia, puede integrarse en productos comerciales sin obligaciones de atribución más allá de la licencia.
+- Generacion de codigo en produccion: el pack conserva un 97,86 % de coincidencia Top-1 en la categoria Code y un 97,60 % en SWE Patch respecto al modelo oficial, por lo que puede emplearse para autocompletado, refactorizacion y generacion de parches en pipelines de integracion continua, siempre que el hardware admita la huella de 108,5 GiB.
+- Razonamiento y resolucion de problemas complejos: con un 97,59 % de Top-1 en la categoria Reasoning, es adecuado para tareas de analisis multi-paso, planificacion y explicaciones encadenadas donde se tolera una minima desviacion respecto al modelo original.
+- Asistencia matematica y STEM: la categoria Math retiene un 90,96 % de Top-1 y GPQA/STEM un 89,03 %, lo que lo hace util para tutoria, resolucion de problemas cuantitativos y generacion de explicaciones tecnicas.
+- Analisis de documentos con imagenes: al declararse como image-text-to-text, puede procesar capturas, diagramas o formularios junto con texto para extraccion de informacion y respuesta a preguntas sobre el contenido visual.
+- Atencion al cliente automatizada: el tag `conversational` y la capacidad de conversacion multi-turno permiten desplegar agentes de soporte; la ventana de contexto concreta no esta disponible, por lo que debe validarse antes de asumir conversaciones largas.
+- Analisis de seguridad y ciberseguridad: la categoria Cyber retiene un 96,05 % de Top-1, lo que permite usar el modelo para revision de codigo orientada a vulnerabilidades, clasificacion de incidentes y generacion de informes tecnicos de seguridad.
+- Evaluacion de instrucciones y generacion de contenido estructurado: con un 94,59 % en IFEval, es apropiado para tareas que exigen cumplir formatos estrictos, como generacion de JSON, plantillas o respuestas con restricciones.
+- Despliegue en estaciones de trabajo de gran memoria: al caber en un dispositivo de memoria unificada de clase 128 GB, permite ejecutar un modelo de 256,6 mil millones de parametros en entornos de una sola maquina, sin necesidad de un cluster multi-GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Lo que sí se publica es una evaluación de fidelidad de la cuantización frente a la versión oficial FP8/FP4 del modelo base, con divergencia KL float64 sobre el vocabulario completo (129.280 tokens) y acuerdo de tokens en secuencias held-out:
+Los datos disponibles son medidas de fidelidad de la cuantizacion frente a la version oficial de DeepSeek en FP8/FP4, no benchmarks de tareas estandar como MMLU o HumanEval. Se presentan a continuacion tal como los publica el autor:
 
-| Evaluación | Tokens | Top-1 Agreement | Top-5 Agreement | KL media | KL p50 | Profesor PPL | Estudiante PPL | ΔPPL |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| e2e_eval (Assistant Turn) | 21.458 | 93,95% | 99,53% | 0,1058 | 0,000163 | 1,8575 | 1,8653 | +0,0078 |
-| e2e_eval (All Tokens) | 32.760 | 91,87% | 98,48% | 0,2083 | 0,000276 | 2,3394 | 2,2861 | -0,0533 |
-| e2e_eval — code (Answer Only) | 3.605 | 99,53% | 100,00% | 0,0054 | 0,000001 | 1,0918 | 1,0751 | -0,0167 |
-| e2e_eval — reasoning (Assistant Turn) | 5.174 | 95,86% | 99,83% | 0,0370 | 0,000455 | 1,8935 | 1,8927 | -0,0008 |
-| e2e_eval — math (Assistant Turn) | 4.434 | 94,38% | 99,59% | 0,0718 | 0,000398 | 2,0755 | 2,0063 | -0,0692 |
-| e2e_eval — general (Assistant Turn) | 7.264 | 89,19% | 99,08% | 0,2317 | 0,001288 | 2,1814 | 2,2891 | +0,1077 |
-| long17k (17.408 tok, All Tokens) | 17.407 | 91,38% | 98,60% | 0,2477 | 0,000205 | 2,3168 | 2,1702 | -0,1466 |
-| wiki1100 (Answer Only) | 718 | 91,09% | 99,03% | 0,1998 | 0,000572 | 1,3835 | 1,4765 | +0,0930 |
+| Categoria | KL media vs oficial FP8/FP4 | KL p50 | Top-1 | Top-1 solo respuesta | Top-5 solapamiento |
+|---|---|---|---|---|---|
+| Code | 0,0142 (0,0111 respuesta) | 0,000060 | 97,86 % | 98,04 % | 85,76 % |
+| SWE Patch | 0,0199 (0,0118 respuesta) | 0,000020 | 97,60 % | 98,01 % | 84,50 % |
+| Reasoning | 0,0148 (0,0096 respuesta) | 0,000015 | 97,59 % | 98,12 % | 83,60 % |
+| Cyber | 0,0499 | 0,000138 | 96,05 % | 95,99 % | 82,16 % |
+| General | 0,0222 (0,0169 respuesta) | 0,000002 | 96,02 % | 96,08 % | 81,74 % |
+| IFEval | 0,0442 (0,0238 respuesta) | 0,000002 | 94,59 % | 92,52 % | 79,21 % |
+| Prose / Narrative | 0,0575 (0,0492 respuesta) | 0,000466 | 93,74 % | 93,46 % | 82,91 % |
+| Multilingual | 0,1303 (0,1313 respuesta) | 0,000624 | 91,74 % | 91,39 % | 73,50 % |
+| MMLU-Pro | 0,0419 (0,0265 respuesta) | 0,000007 | 91,54 % | 85,05 % | 78,07 % |
+| Math | 0,0356 (0,0329 respuesta) | 0,000055 | 90,96 % | 80,39 % | 81,41 % |
+| GPQA / STEM | 0,1052 (0,0515 respuesta) | 0,020997 | 89,03 % | 90,12 % | 81,71 % |
+
+Agregado global del pack: KL media 0,0509, KL p50 0,00007, Top-1 94,41 % y Top-5 81,31 %. La version oficial FP8/FP4 se toma como referencia con KL 0 y 100 % de coincidencia. No se han publicado resultados de benchmarks de tareas estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Huella residente en GPU: ~108,5 GiB en modo texto y ~109,4 GiB en modo VLM; el pack está diseñado para dispositivos de memoria unificada de clase 128 GB.
-- En GPUs convencionales con VRAM discreta (RTX 4090 de 24 GB, RTX 5090 de 32 GB, A100 de 80 GB) no cabe en una sola unidad; sería necesario multi-GPU (por ejemplo, 2x A100/H100 de 80 GB) o soporte de memoria unificada.
-- Alternativa realista: Apple Silicon (Mac Studio M3 Ultra de 128 GB o superior) u otras plataformas de memoria unificada, donde el modelo se ejecuta residente en GPU vía ExLlamaV3 (según la model card, el pack es cargable por ExLlamaV3).
-- Framework de inferencia: ExLlamaV3 (https://github.com/turboderp-org/exllamav3); no es un pack GGUF, por lo que llama.cpp, Ollama, vLLM y TGI no son aplicables directamente.
-- Latencia y throughput: no disponible en la información proporcionada.
-- Espacio en disco: 320,3 GB de repositorio (17 shards safetensors más índice).
+- VRAM/memoria estimada: aproximadamente 108,5 GiB en modo texto y 109,4 GiB en modo VLM, segun el autor. El repositorio ocupa 320,3 GB en disco (17 shards).
+- GPU recomendadas: el pack esta dimensionado para un unico dispositivo de memoria unificada de clase 128 GB, lo que apunta a hardware como Apple Silicon de gama alta o GPUs con memoria unificada de esa capacidad; no se especifican modelos concretos de GPU en la informacion disponible.
+- GPU de consumo: no cabe en GPUs de consumo convencionales (RTX 4090 con 24 GB, RTX 5090 con 32 GB u otras similares), dado que la huella supera los 100 GiB.
+- Opciones de despliegue: exclusivamente ExLlamaV3 con soporte EXL3/REXL3. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que el formato trellis EXL3 es especifico de ExLlamaV3.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Nota de muestreo: el `generation_config.json` del pack fija `top_p=0.95`, mientras que DeepSeek recomienda `top_p=1.0` y `temperature=1.0`; para seguir al modelo original debe ajustarse explicitamente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Cuantización | Huella residente | Formato | Licencia |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este pack (DSV4.1-Flash-1017 SAGE REXL3 1.55 bpw) | 256.622.688.722 | EXL3/REXL3 1,55 bpw (SAGE mixed-K) | ~108,5 GiB (texto) | safetensors (ExLlamaV3) | MIT |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (oficial) | no disponible | FP8/FP4 mixto nativo | no disponible | no disponible | MIT (según tags del derivado) |
-| Alternativas comparables de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+| DSV4.1-Flash-1017-SAGE-REXL3-1.55bpw (este pack) | 256,6 mil millones | no disponible | EXL3 1,55 bpw | MIT | Hugging Face, ExLlamaV3 |
+| DeepSeek-V4.1-Flash-1017 (oficial) | 256,6 mil millones | no disponible | FP8/FP4 mixto | MIT | Hugging Face |
+| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Nota: al tratarse de un modelo base de la serie DeepSeek V4.1-Flash con fecha reciente, no se dispone en la información proporcionada de alternativas con specs verificables; no se publican datos comparables y no se inventan cifras.
+La unica comparacion documentada es contra el modelo base oficial de DeepSeek, que sirve como referencia de calidad (KL 0, Top-1 100 %). No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cuantización agresiva: a 1,55 bpw, la categoría "general" muestra el mayor desvío (KL medio 0,2317, Top-1 del 89,19% y ΔPPL de +0,1077), por lo que en tareas de generación general puede haber divergencias perceptibles respecto a la versión oficial.
-- Riesgo de alucinación: inherente a cualquier LLM; además, una cuantización extrema puede acentuar desviaciones en tokens de baja probabilidad, aunque la medición del pack (KL p50 muy baja, del orden de 0,0001-0,002) sugiere que la mayoría de tokens son prácticamente idénticos a la referencia.
-- Requisito de hardware muy elevado: solo es viable en dispositivos de ~128 GB de memoria unificada o multi-GPU de gama datacenter; no es accesible para GPUs de consumo.
-- Compatibilidad de software limitada: requiere ExLlamaV3 con soporte REXL3; no funciona con stacks estándar como vLLM, TGI o llama.cpp.
-- Datos incompletos del modelo base: parámetros activos, longitud de contexto oficial, idiomas soportados y detalles de entrenamiento no están disponibles en la model card; conviene consultar la ficha oficial de deepseek-ai/DeepSeek-V4.1-Flash-1017 antes de producción.
-- Licencia: MIT, sin restricciones conocidas para uso comercial, pero el pack es una cuantización de terceros (vcruz305) con 0 descargas registradas en el momento de la ficha, sin historial de adopción ni auditoría comunitaria.
-- Sesgos conocidos: no disponible en la información proporcionada.
+- Perdida de fidelidad respecto al modelo oficial: la coincidencia Top-1 global es del 94,41 %, con un 5,59 % de tokens que difieren del modelo FP8/FP4. En categorias como GPQA/STEM (89,03 %) y Math (Top-1 solo respuesta del 80,39 %) la desviacion es mayor.
+- Mayor degradacion en multilingue: la categoria Multilingual muestra la peor KL media (0,1303) y el menor solapamiento Top-5 (73,50 %), lo que sugiere un impacto mas acusado en idiomas distintos del ingles.
+- Metodo de cuantizacion no publicado: SAGE es propietario y no esta documentado, lo que dificulta auditar el proceso o reproducir los resultados de calidad.
+- Compatibilidad limitada: solo funciona con ExLlamaV3; no hay soporte para vLLM, llama.cpp, Ollama ni TGI, lo que restringe las opciones de despliegue en produccion.
+- Requisito de hardware elevado: mas de 100 GiB de memoria unificada, fuera del alcance de GPUs de consumo.
+- Configuracion de muestreo inconsistente: el `top_p=0.95` por defecto difiere del `top_p=1.0` recomendado por DeepSeek.
+- Riesgo de alucinacion y sesgos: no se documentan en la model card; deben asumirse los del modelo base, no evaluados en este pack.
+- Idiomas soportados y longitud de contexto: no especificados, lo que impide garantizar su comportamiento en escenarios que dependan de estos parametros.
+- Licencia MIT: permite uso comercial, pero el autor indica que debe citarse a DeepSeek por el modelo base; este repositorio solo contiene el pack EXL3.
 
 ## Enlaces
 
-- Ficha del pack cuantizado: https://huggingface.co/vcruz305/DSV4.1-Flash-1017-SAGE-REXL3-1.55bpw
+- Repositorio del pack: https://huggingface.co/vcruz305/DSV4.1-Flash-1017-SAGE-REXL3-1.55bpw
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Autor de la cuantización: https://huggingface.co/vcruz305
-- Librería ExLlamaV3: https://github.com/turboderp-org/exllamav3
+- Perfil del autor: https://huggingface.co/vcruz305
+- ExLlamaV3: https://github.com/turboderp-org/exllamav3

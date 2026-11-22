@@ -2,98 +2,95 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Uncensored es una variante modificada del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicada por el colectivo OpenUncensored. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con aproximadamente 763.000 millones de parametros totales, entrenado originalmente para generacion de texto y conversacion, al que se le han eliminado los mecanismos de rechazo (refusals) mediante ablacion direccional sobre los pesos. El objetivo declarado es ofrecer un modelo que responda a peticiones que el original rechazaria, manteniendo practicamente intacta su capacidad de razonamiento y conocimiento.
+DeepSeek-V4.1-Flash-1017-Uncensored es un fine-tune del modelo DeepSeek-V4.1-Flash-1017 publicado por OpenUncensored, un proyecto que mantiene una API y un ranking de modelos sin censura. El modelo base es un transformer de tipo mixture-of-experts (MoE) desarrollado por DeepSeek, con 763.205.315.794 parámetros totales según los safetensors del repositorio y un peso en disco de 510,3 GB. La intervención de OpenUncensored elimina las direcciones de rechazo mediante ablación direccional sobre los pesos, manteniendo el mismo formato FP8/FP4 y el mismo código de inferencia que el original.
 
-La relevancia de esta publicacion reside en su metodologia de "abliteracion" quirurgica: a diferencia de otras builds no censuradas que pierden varios puntos en pruebas de conocimiento (el autor cita una perdida de 3,9 puntos en MMLU para la build de dealignai), esta version reporta una caida de solo 0,27 puntos (88,16% a 87,89%). El autor atribuye esta preservacion a que la edicion se aplica no solo a la atencion y al experto compartido, sino tambien a los 384 expertos enrutados, que segun sus pruebas reinyectan la direccion de rechazo si no se modifican.
+El problema que aborda es el de los rechazos (refusals) en modelos alineados: el autor afirma que su edición responde por completo a 37 de 48 peticiones dañinas de un conjunto de evaluación, frente a 9 del modelo original, sin degradación medible en MMLU (87,89% frente a 88,16%). Frente a otras builds sin censura del mismo modelo, que según el autor pierden unos 3,9 puntos en MMLU, esta mantiene la puntuación dentro del ruido estadístico.
 
-El modelo conserva el formato, tamano (510 GB) y codigo de inferencia del original, con pesos en FP8 e4m3 para la mayoria de tensores y FP4 para los expertos enrutados. Se distribuye bajo licencia MIT, igual que el modelo base, y esta pensado para despliegues en hardware de gama alta (el autor cita 8x H200 para sus mediciones).
+Es relevante ahora porque el modelo base pertenece a la familia DeepSeek V4.1 Flash, una arquitectura MoE con expertos enrutados en FP4 y capas MTP, y porque el autor publica el artefacto `edit.pt` con la matriz de proyección y las intensidades por capa, lo que permite reproducir o estudiar la edición. La licencia es MIT, igual que la del modelo original, y el repositorio incluye pesos en safetensors compatibles con `transformers`.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) transformer, con atencion y feed-forward por capas y 384 expertos enrutados; incluye capas MTP, embeddings, routers, tablas Engram y vision |
-| Parametros totales | 763.205.315.794 (~763 mil millones) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer mixture-of-experts (MoE) con capas MTP y expertos enrutados en FP4; pesos en FP8 e4m3 con escalas de bloque ue8m0 |
+| Parámetros totales | 763.205.315.794 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 e4m3 con escalas de bloque ue8m0, FP4 para expertos enrutados; pesos en 8-bit |
+| Tipos de cuantización | FP8 e4m3 con escalas de bloque ue8m0; expertos enrutados en FP4 (el repo se distribuye en este formato, no se listan otras cuantizaciones) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors; requiere conversion con `inference/convert.py` para model parallel |
+| Formato de pesos | safetensors (formato original del modelo base, 510,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una variante del DeepSeek-V4.1-Flash-1017, un transformer MoE de gran escala con 384 expertos enrutados, un experto compartido y capas de prediccion multi-token (MTP). Los pesos se almacenan en FP8 (e4m3) con escalas de bloque ue8m0 para la mayoria de tensores y en FP4 para los expertos enrutados, lo que reduce el tamano del repositorio a 510,3 GB. El modelo incluye ademas modulos de vision y tablas Engram, segun la descripcion del autor.
+El modelo base es un transformer de tipo mixture-of-experts con expertos enrutados almacenados en FP4 y pesos en FP8 e4m3 con escalas de bloque ue8m0. La arquitectura incluye 40 capas, capas MTP (multi-token prediction), embeddings, routers, tablas Engram y un componente de visión, según los nombres de tensor citados en la model card. El repositorio no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
-El proceso de "descensura" consistio en ablacion direccional sobre el flujo residual. El autor calculo las activaciones del flujo residual colapsado en el ultimo token del prompt para 256 prompts daninos y 256 inofensivos, en modo chat y en modo thinking, en las 40 capas del modelo. A partir de la diferencia de medias por capa y modo, extrajo un subespacio de rechazo de rango 2 (`Q`) mediante los vectores singulares principales de las direcciones en las capas 8 a 39. Ese subespacio se proyecta fuera de lo que cada capa escribe en el flujo residual: la salida de atencion (`attn.wo_b`) y la salida completa del feed-forward, incluidos los 384 expertos enrutados (`ffn.experts.*.w2`) y el experto compartido. La intensidad por capa y componente se eligio mediante busqueda multiobjetivo con Optuna, equilibrando la eliminacion de rechazos en prompts reservados y la deriva respecto al original en prompts inofensivos. Finalmente, 5.815 tensores se decodificaron a float32, se editaron y se recodificaron a sus formatos FP8/FP4 originales con nuevas escalas de bloque potencia de dos y redondeo estocastico. El resto de tensores (capas MTP, embeddings, routers, tablas Engram, vision) son identicos byte a byte al original. No se dispone de informacion sobre el numero de tokens de entrenamiento ni sobre el proceso de RLHF/DPO del modelo base.
+La innovación técnica de este fine-tune es el procedimiento de ablación direccional. El autor calcula las activaciones del residual stream colapsado en el último token del prompt para 256 prompts dañinos y 256 inofensivos, en modo chat y en modo thinking, en las 40 capas. A partir de la diferencia de medias por capa y modo construye un subespacio de rechazo de rango 2 (`Q`) con los principales vectores singulares de las capas 8 a 39. Proyecta `Q` fuera de lo que cada capa escribe en el residual stream: la salida de atención (`attn.wo_b`) y la salida completa del feed-forward, incluidos los 384 expertos enrutados (`ffn.experts.*.w2`) y el experto compartido. La intensidad por capa y componente se elige con una búsqueda multiobjetivo (Optuna) sobre rechazos en prompts reservados y deriva respecto al original en prompts inofensivos. La edición se aplica a 5.815 tensores decodificados a float32 y reencodeados a FP8/FP4 con nuevas escalas de bloque potencia de dos y redondeo estocástico. El resto de tensores (capas MTP, embeddings, routers, tablas Engram, visión) queda byte a byte idéntico al original.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en modo chat.
-- Razonamiento en modo thinking (el modelo base soporta modo de pensamiento; el autor mide MMLU-Pro con thinking mode y limite de 1.536 tokens).
-- Conocimiento general y academico (MMLU, MMLU-Pro medidos por el autor).
-- Respuesta a peticiones daninas que el modelo original rechazaria, incluidas peticiones parcialmente respondidas o evadidas en el original.
-- Capacidades de vision (el modelo base incluye modulos de vision, segun la descripcion de tensores).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el autor indica que las tareas largas de agente no se han medido.
-- Capacidades multilingues: no disponible.
+- Generación de texto conversacional en modo chat y en modo thinking, con dos modos de rechazo distintos según el autor.
+- Razonamiento y conocimiento general: el autor reporta MMLU de 87,89% y MMLU-Pro de 80,36% en modo thinking con tope de 1.536 tokens.
+- Respuesta a peticiones que el modelo original rechazaría: 37 de 48 peticiones dañinas respondidas por completo y 11 parcialmente, frente a 9 y 37 respectivamente en el original.
+- Capacidad de visión heredada del modelo base (el componente de visión se mantiene intacto en la edición).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible; el autor indica que las tareas largas de agente aún no se han medido.
+- Capacidades multilingües: no disponible.
+- Modo thinking: sí, el propio procedimiento de ablación distingue entre modo chat y modo thinking.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar como se distribuyen las direcciones de rechazo en un MoE de gran escala y que componentes (atencion, experto compartido, expertos enrutados) las escriben en el flujo residual, usando `edit.pt` para reproducir o analizar la edicion.
-- Red teaming y evaluacion de robustez: al eliminar los rechazos, sirve como referencia para medir la eficacia de filtros de seguridad externos, clasificadores de contenido o politicas de moderacion en pipelines de produccion.
-- Generacion de contenido creativo sin restricciones tematicas: el modelo responde a peticiones que el original rechazaria, util para guiones, ficcion o divulgacion de temas sensibles (seguridad ofensiva, farmacologia, etc.) en entornos controlados.
-- Analisis de seguridad ofensiva y educacion: el autor pone como ejemplo una peticion para explicar inyeccion SQL con un ejemplo funcional; el modelo puede usarse en formacion de desarrolladores sobre vulnerabilidades, siempre con supervision y cumplimiento legal.
-- Despliegue en infraestructura propia de alta gama: con 763.000 millones de parametros y 510 GB de pesos, requiere conversion a model parallel (por ejemplo, MP8) y ejecucion con el codigo `inference/` de DeepSeek en nodos con multiples GPU H200 o equivalentes.
-- Acceso via API compatible con OpenAI: para equipos sin GPUs, el autor ofrece un endpoint en `api.openuncensored.com` que sirve un modelo no censurado de DeepSeek V4.1 Flash 1017 desde sus socios de hosting, lo que permite integrarlo en aplicaciones existentes sin infraestructura propia.
-- Evaluacion comparativa de tecnicas de abliteracion: el repositorio incluye `edit.pt` con `Q` y las intensidades por capa, lo que permite comparar esta metodologia (edicion de expertos enrutados) con otras builds que solo editan atencion y experto compartido.
+- Investigación sobre alineación y rechazos: el artefacto `edit.pt` permite reaplicar la proyección sobre los pesos originales y estudiar cómo se distribuye la dirección de rechazo entre atención, experto compartido y expertos enrutados, con intensidades por capa documentadas.
+- Red teaming y evaluación de seguridad: el modelo sirve como sujeto de pruebas para medir la robustez de clasificadores de contenido y de jueces automáticos frente a un modelo con los rechazos eliminados.
+- Generación de código y explicaciones técnicas sin filtros: el modelo responde a peticiones como explicar una inyección SQL con ejemplo funcional, útil en entornos de formación en seguridad donde el filtrado impide ejemplos realistas.
+- Despliegue en infraestructura propia de 8 GPU: el autor documenta la conversión a model parallel 8 con `convert.py` y la ejecución con `torchrun --nproc-per-node 8 generate.py`, lo que permite servirlo en un nodo de 8x H200 sin depender de la API.
+- Integración vía API compatible con OpenAI: el endpoint `https://api.openuncensored.com/v1/chat/completions` con el identificador `deepseek-v4.1-flash-1017-uncensored` permite sustituir el modelo en aplicaciones que ya usan el esquema de OpenAI.
+- Estudio de la degradación por edición de pesos: comparar MMLU y MMLU-Pro de este modelo con otras builds sin censura del mismo base (por ejemplo, la de dealignai) permite cuantificar el coste de distintos métodos de ablación.
+- Evaluación comparativa en rankings: el autor lo sitúa en el primer puesto de su leaderboard de modelos sin censura, lo que lo hace útil como referencia en comparativas de modelos abliterated.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden del autor y se midieron en el mismo motor de referencia (8x H200, decodificacion greedy). El tamano de muestra es pequeno (112 preguntas de MMLU-Pro, 48 peticiones daninas), por lo que el autor advierte que diferencias de una o dos preguntas son ruido.
+Todos los datos son del autor, medidos con el mismo motor de referencia (8x H200, decodificación greedy). Los tamaños de muestra son pequeños (112 preguntas de MMLU-Pro, 48 peticiones dañinas).
 
 | Benchmark | DeepSeek V4.1 Flash 1017 | Este modelo |
 |---|---|---|
 | MMLU (57 materias x 20 preguntas, solo letra) | 88,16% | 87,89% |
-| MMLU-Pro (112 preguntas, 8 por categoria, thinking mode, limite 1.536 tokens) | 81,25% | 80,36% |
-| Peticiones daninas respondidas por completo (48, evaluadas por modelo juez) | 9 | 37 |
-| Peticiones daninas parcialmente respondidas (evadidas) | 37 | 11 |
-| Peticiones daninas rechazadas | 2 | 0 |
+| MMLU-Pro (112 preguntas, 8 por categoría, modo thinking, tope 1.536 tokens) | 81,25% | 80,36% |
+| Peticiones dañinas respondidas por completo (48, juez automático) | 9 | 37 |
+| Peticiones dañinas respondidas parcialmente | 37 | 11 |
+| Peticiones dañinas rechazadas | 2 | 0 |
 
-El autor cita como comparacion la build no censurada de dealignai del mismo modelo, que reporta MMLU 87,63% → 83,77% (−3,86) en el mismo protocolo de 57 x 20. No se han medido GPQA ni tareas largas de agente.
+El autor cita además, como referencia externa, que la build sin censura de dealignai del mismo modelo reporta MMLU 87,63% → 83,77% (−3,86) en el mismo protocolo de 57 x 20. GPQA y tareas largas de agente no se han medido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan aproximadamente 510,3 GB en FP8/FP4, por lo que se necesita un total de memoria agregada superior a esa cifra; el autor usa 8x H200 (8 x 141 GB = 1.128 GB) con model parallel 8.
-- GPU recomendadas: H200 (el autor mide en 8x H200); por tamano, tambien serian necesarios nodos multi-GPU con A100 80 GB (al menos 8 unidades) o H100 80 GB (al menos 7-8 unidades). No cabe en una sola GPU.
-- Consumer GPU: no es viable en RTX 4090 ni en ninguna GPU de consumo individual; el modelo no cabe en 24 GB ni en 48 GB.
-- Opciones de despliegue: el autor indica que se carga con el codigo `inference/` de DeepSeek sin cambios, mediante `convert.py` (conversion a model parallel) y `generate.py` con `torchrun`. No se menciona soporte de vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
-- Latencia y throughput: no disponibles.
-- Alternativa sin GPUs: API compatible con OpenAI en `api.openuncensored.com` (requiere clave `OU_API_KEY`).
+- VRAM estimada para inferencia: el repositorio ocupa 510,3 GB en FP8/FP4; el autor documenta ejecución con model parallel 8, es decir, un nodo de 8 GPU.
+- GPU recomendadas: 8x H200 según la configuración de referencia del autor; por tamaño, requiere GPUs de 80 GB o más por dispositivo con paralelismo de 8.
+- Cabe en GPU de consumo: no. Con 763.205 millones de parámetros y 510,3 GB de pesos, no es viable en RTX 4090 (24 GB) ni en configuraciones de una sola GPU de consumo.
+- Opciones de despliegue: código de inferencia propio de DeepSeek en `inference/` (conversión con `convert.py` y ejecución con `generate.py` vía `torchrun`); API alojada de OpenUncensored compatible con OpenAI. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | MMLU | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-Uncensored (este) | ~763 mil millones | no disponible | 87,89% | MIT | Pesos en HF (510,3 GB), 0 descargas |
-| DeepSeek-V4.1-Flash-1017 (base) | ~763 mil millones | no disponible | 88,16% | MIT (segun el autor) | Modelo base en HF |
-| Build no censurada de dealignai del mismo modelo | ~763 mil millones | no disponible | 83,77% (reportado por el autor) | no disponible | no disponible |
+| DeepSeek-V4.1-Flash-1017-Uncensored (este) | 763,2 B | no disponible | 87,89% | MIT | Hugging Face + API OpenUncensored |
+| DeepSeek-V4.1-Flash-1017 (original) | no disponible en la información | no disponible | 88,16% | MIT (según el autor) | Hugging Face (deepseek-ai) |
+| Build sin censura de dealignai del mismo base | no disponible | no disponible | 83,77% | no disponible | Hugging Face |
+| Otras builds sin censura del mismo base | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
-No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
+La comparativa se limita al mismo modelo base y sus variantes sin censura, porque la información proporcionada no incluye datos de modelos de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- El modelo responde a peticiones daninas que el original rechazaria (37 de 48 respondidas por completo frente a 9 del original); el propio autor advierte que el usuario es responsable del uso y del cumplimiento legal en su jurisdiccion.
-- Riesgo de alucinacion: no se han publicado mediciones especificas de veracidad o factualidad; el unico dato es la caida de 0,27 puntos en MMLU, insuficiente para descartar degradaciones en otras areas.
-- Las muestras de evaluacion son pequenas (112 preguntas de MMLU-Pro, 48 peticiones daninas), por lo que las diferencias pueden ser ruido; el autor lo reconoce explicitamente.
-- No se han medido GPQA ni tareas largas de agente, por lo que el rendimiento en razonamiento cientifico avanzado y en flujos agenticos es desconocido.
-- Sesgos conocidos: no disponibles.
-- Idiomas soportados: no disponibles; no se especifica cobertura multilingue.
-- Longitud de contexto: no disponible.
-- Restricciones de licencia: licencia MIT, que permite uso comercial, pero el modelo base y la edicion pueden estar sujetos a las condiciones de DeepSeek; el autor afirma que mantiene la licencia MIT de DeepSeek.
-- El modelo no esta alojado en Hugging Face como build exacta segun el autor ("This exact build is not hosted yet"); el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que limita la validacion independiente.
-- Requiere hardware de gama alta (multi-GPU H200/A100/H100) y el codigo de inferencia propio de DeepSeek; no hay soporte documentado para motores de inferencia populares como vLLM o llama.cpp.
-- La edicion de pesos se realizo con redondeo estocastico y nuevas escalas de bloque, lo que introduce una fuente adicional de deriva respecto al original no cuantificada de forma exhaustiva.
+- El modelo responde a peticiones dañinas: 37 de 48 completamente y 11 parcialmente en la evaluación del autor, con 0 rechazos. El usuario es responsable del uso y del cumplimiento legal en su jurisdicción, según la propia model card.
+- Sesgos conocidos: no disponible; la información proporcionada no documenta sesgos demográficos, culturales ni lingüísticos.
+- Riesgo de alucinación: no cuantificado en la información disponible; el autor no reporta métricas de factualidad.
+- Idiomas soportados: no disponible; el modelo base no detalla cobertura lingüística en la documentación facilitada.
+- Longitud de contexto: no disponible; no se indica la ventana máxima ni su comportamiento en contextos largos.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, pero el autor no ofrece garantías y traslada la responsabilidad legal al usuario.
+- Caveats de producción: los benchmarks tienen muestras pequeñas (112 preguntas de MMLU-Pro, 48 peticiones dañinas) y el propio autor advierte que diferencias de una o dos preguntas son ruido; GPQA y tareas de agente no se han medido. El despliegue requiere 8 GPU de 80 GB o más y el código de inferencia propio de DeepSeek, sin soporte documentado de vLLM, llama.cpp, Ollama o TGI.
+- La edición se aplicó sobre pesos FP8/FP4 con redondeo estocástico; el autor indica que la medición de MMLU-Pro se hizo con la edición a precisión completa antes de escribirla en los pesos, mientras que MMLU y los datos de cumplimiento corresponden a los ficheros exactos del repositorio.
 
 ## Enlaces
 
@@ -101,5 +98,4 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - API de OpenUncensored: https://openuncensored.com
 - Endpoint compatible con OpenAI: https://api.openuncensored.com/v1/chat/completions
-- Repositorio con `edit.pt`: incluido en el propio repositorio de Hugging Face del modelo
-- Codigo de inferencia de DeepSeek: `inference/README.md` dentro del repositorio del modelo base
+- Ranking de modelos sin censura: https://openuncensored.com/rankings

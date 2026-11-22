@@ -2,107 +2,103 @@
 
 ## Resumen
 
-Laya es un modelo de clasificación y enrutamiento de decisiones (text-classification) desarrollado por convaiinnovations. Se presenta como un "System 1 decision model" no autorregresivo: recibe un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades calibradas matemáticamente en una sola pasada forward. No genera texto libre, por lo que no hay salida que parsear ni margen para alucinaciones en el sentido generativo habitual.
+Laya es un modelo de clasificación de texto no autorregresivo desarrollado por Convai Innovations (publicado bajo la organización `convaiinnovations` en Hugging Face). A diferencia de los modelos generativos, Laya no produce texto: recibe un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas acompañadas de probabilidades calibradas matemáticamente en un único pase forward de aproximadamente 33 ms. El modelo se entrenó con aprendizaje por refuerzo contra reglas de puntuación estrictamente propias (RLCD), de modo que la única forma de maximizar la recompensa es reportar probabilidades honestas.
 
-El modelo está orientado a tareas de guardrails, moderación, routing y scoring, y se entrena mediante aprendizaje por refuerzo contra reglas de puntuación estrictamente propias (RLCD), de modo que reportar probabilidades honestas es la única vía de maximizar la recompensa. Según la model card, opera en más de 100 idiomas con una latencia declarada de aproximadamente 33 ms por inferencia.
+La arquitectura se describe como un "motor de decisión System 1" que se apoya en un lector LLM congelado (desde 0,8B hasta 27B parámetros) sobre el que se monta un pequeño motor de decisión. El checkpoint clásico publicado en Hugging Face contiene 421.293.830 parámetros en formato safetensors y ocupa 2,4 GB en el repositorio. La versión 0.5 incorpora entrada multimodal (imagen, audio y vídeo), una ventana de contexto de 73.728 tokens y mecanismos de abstención (`abstain`), conjuntos conformales (`prediction_set`) y detección de fuera de distribución (`unbound`).
 
-Con 421.293.830 parámetros y un repo de 2,4 GB, Laya se posiciona como una alternativa ligera y desplegable frente a LLMs generativos para tareas de decisión acotadas. Su licencia Apache 2.0 y su compatibilidad con endpoints lo hacen apto para uso comercial, y la existencia de variantes (laya-multilingual, laya-typed-decisions) y de un flujo de fine-tuning publicado amplían su aplicabilidad en producción.
+Su relevancia actual radica en que ofrece una alternativa determinista y de coste constante a los pipelines de moderación, enrutamiento y guardarraíles basados en LLM generativos, eliminando el parsing de salidas y reduciendo el riesgo de alucinación, ya que no se genera texto en ningún momento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer no autorregresivo (decision model, segun model card) |
-| Parametros totales | 421.293.830 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 1.024 tokens por defecto; hasta 8.192 tokens con `max_len=8192` en laya-multilingual |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | 100+ idiomas (segun model card) |
+| Arquitectura | Motor de decisión no autorregresivo "System 1" sobre lector LLM congelado (no transformer generativo) |
+| Parametros totales | 421.293.830 (checkpoint clásico en safetensors) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 73.728 tokens (versión 0.5) |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Más de 100 idiomas (según la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors; libreria transformers |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe Laya como un modelo de decisión no autorregresivo de tipo System 1: en lugar de generar tokens secuencialmente, produce directamente respuestas tipadas (choice, score, noul) a partir de un estado y un conjunto de preguntas tipadas, en una única pasada forward. El checkpoint base tiene 421.293.830 parámetros y se distribuye en formato safetensors para transformers. Internamente se apoya en un Router que detecta script e idioma y enruta la entrada al checkpoint adecuado (english o multilingual).
+Laya se presenta explícitamente como un modelo no autorregresivo: no decodifica tokens sino que coloca la entrada como una "partícula" en un espacio de decisión de baja dimensión donde cada respuesta candidata es un "valle". La posición y profundidad con la que la partícula se asienta determinan la respuesta y su probabilidad. Este enfoque es determinista y de coste constante, y se apoya en un lector LLM congelado (de 0,8B a 27B parámetros) que procesa el estado una sola vez.
 
-El entrenamiento emplea aprendizaje por refuerzo contra reglas de puntuación estrictamente propias (RLCD, segun la model card), lo que incentiva la calibración de las probabilidades reportadas. El trabajo se documenta en el preprint "From Laya to Vega: Open Non-Autoregressive Decision Models with Calibrated Probabilities" (Preprints, 2026). Existe además un checkpoint afinado, laya-typed-decisions, entrenado sobre 2.000 decisiones de cuatro workflows; no se detalla en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
+El entrenamiento utiliza RLCD (reinforcement learning contra reglas de puntuación estrictamente propias), una innovación que penaliza las probabilidades mal calibradas y hace que la estrategia óptima sea reportar la confianza real. La versión 0.5 añade aprendizaje continuo mediante `laya.Learner`, que permite adaptar el motor a datos confirmados por el equipo sin fine-tuning: 300 respuestas se aprenden en 34 s sobre 8 hilos de CPU (0,72 s por respuesta, 6,4 GB de RAM), frente a los 89 s en GPU y 9 GB que requiere reentrenar el encoder clásico de 421M pesos. El motor de decisión subyacente proviene del proyecto `vegaml`.
 
 ## Capacidades
 
-- Clasificación y decisión tipada: respuestas de tipo choice (selección entre criterios), score (puntuación ordinal) y noul (probabilidad de sí/no).
-- Calibración de probabilidades: entrenamiento RLCD orientado a que las probabilidades reportadas sean honestas y matemáticamente calibradas.
-- Routing y scoring: enrutamiento a departamentos o categorías y puntuación de urgencia, riesgo, etc.
-- Guardrails y moderación: evaluación de contenido y políticas mediante preguntas tipadas.
-- Multilingüe: más de 100 idiomas, con detección automática de script e idioma por parte del Router.
-- Documentos largos: lectura de hasta 8.192 tokens con `max_len=8192` en laya-multilingual.
-- Sin generación de texto: la salida es estructurada, lo que elimina el parseo de texto libre.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-step: no disponible en la información proporcionada.
-- Modo thinking, vision o audio: no disponible en la información proporcionada.
+- Clasificación y enrutamiento de texto con probabilidades calibradas en un solo pase forward.
+- Entrada multimodal en la versión 0.5: imagen, audio y vídeo, además de texto y JSON.
+- Respuestas tipadas con probabilidad asociada, conjunto conformal (`prediction_set`) y abstención calibrada (`abstain`).
+- Detección de entradas fuera de distribución mediante el flag `unbound`.
+- Enrutamiento automático (`auto`) o a revisión (`review`) mediante el campo `route`.
+- Aprendizaje continuo en local desde respuestas confirmadas por el equipo, sin fine-tuning.
+- Soporte multilingüe de más de 100 idiomas.
+- Compatible con cualquier LLM como lector (de 0,8B a 27B parámetros).
+- No genera texto, por lo que no requiere parsing de salida ni presenta alucinación de contenido.
+- Compatible con endpoints y despliegue en Azure (según los tags del repositorio).
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: dado el texto de un ticket, Laya responde a una pregunta choice con criterios (billing, technical, other) y devuelve la probabilidad asociada, integrándose en un sistema de asignación automática de colas.
-- Detección de riesgo de churn: con una pregunta de tipo noul ("¿el usuario amenaza cancelar?"), el modelo devuelve la probabilidad de abandono para priorizar acciones de retención.
-- Puntuación de urgencia: mediante preguntas score con criterios ordinales ("not urgent", "soon", "blocking"), permite clasificar la severidad de incidencias y correos entrantes.
-- Moderación y guardrails: evaluación de contenido frente a políticas mediante preguntas tipadas, con probabilidades calibradas que facilitan fijar umbrales de bloqueo o revisión humana.
-- Clasificación multilingüe de correos: el Router detecta el idioma y envía texto no inglés a laya-multilingual, permitiendo clasificar mensajes en decenas de idiomas con una sola llamada.
-- Análisis de documentos largos: con `max_len=8192`, laya-multilingual puede responder preguntas sobre documentos de hasta aproximadamente 4.000 tokens con alta fiabilidad declarada (16-18 de 20 aciertos segun la model card).
-- Fine-tuning por dominio: entrenar un checkpoint propio sobre decisiones de la empresa usando el notebook publicado para 2x T4 de Kaggle, elevando la precisión de 0,362 (base) a 0,766 (laya-typed-decisions) en el benchmark de decisiones tipadas.
-- Despliegue como servidor: extras `laya[serve]`, `laya[mcp]` y `laya[langchain]` permiten exponer el modelo por HTTP, vía MCP o integrarlo en LangChain/LangGraph.
+- Moderación y guardarraíles: el modelo puede clasificar mensajes como tóxicos o seguros devolviendo una probabilidad calibrada y una decisión de abstención cuando la confianza es insuficiente, lo que permite fijar umbrales de riesgo (por ejemplo, 10 % por defecto) y enrutar a revisión humana solo los casos ambiguos.
+- Enrutamiento de tickets de soporte: dado un ticket, Laya responde preguntas tipadas sobre categoría, urgencia o equipo destinatario en un único pase de ~33 ms, con un conjunto conformal que indica si la asignación es inequívoca o ambigua.
+- Clasificación de correo entrante: con 73.728 tokens de contexto puede procesar hilos completos y contratos extensos, devolviendo etiquetas tipadas con probabilidad y abstención cuando el contenido queda fuera de la distribución conocida.
+- Guardarraíl contra inyección de prompts: aunque la model card reconoce que un modelo alojado de gran tamaño lidera en este caso, Laya puede actuar como filtro previo con umbral de riesgo configurable y `route` para derivar a revisión.
+- Análisis de documentos largos: la ventana de 73.728 tokens permite clasificar contratos o logs completos sin trocear, manteniendo coherencia de contexto en una sola lectura.
+- Aprendizaje continuo en producción: mediante `laya.Learner`, un equipo puede confirmar respuestas y adaptar el motor en segundos sobre CPU, lo que resulta adecuado para dominios con taxonomías cambiantes (por ejemplo, nuevas categorías de incidencias).
+- Extracción de decisiones estructuradas desde JSON: al aceptar JSON como estado de entrada, puede integrarse en pipelines que necesitan clasificar payloads estructurados con salida tipada y probabilidades auditables.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Modelo | Resultado |
-|---|---|---|
-| Typed-decisions benchmark (2.000 decisiones, 4 workflows) | laya-typed-decisions (fine-tuned) | 0,766 accuracy |
-| Typed-decisions benchmark (2.000 decisiones, 4 workflows) | Checkpoint base english | 0,362 accuracy |
-| Long-context (laya-multilingual, 8.192 tokens) | Documentos de hasta ~4.000 tokens | 16-18 de 20 respuestas correctas |
-| Long-context (laya-multilingual, 8.192 tokens) | Documentos más largos | 8-17 de 20 respuestas correctas |
-| Latencia declarada | Inferencia single forward pass | ~33 ms |
-| Latencia long-context (Apple GPU) | Entrada de 4.000 tokens | ~1,7 s |
+Los datos publicados en la model card corresponden al motor de decisión y al encoder clásico:
 
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la información disponible.
+| Benchmark | Laya | Comparativa |
+|---|---|---|
+| Aprendizaje continuo, día uno (14 plantillas, 31 preguntas) | 84,7 % | Jev 1.14: 89,5 % |
+| Tras 40 respuestas confirmadas | 91,6 % | Jev 1.14: 91,5 % |
+| Tras 120 respuestas confirmadas | 96,0 % | Jev 1.14: 92,6 % |
+| banking77, 924 retenidos tras 4.928 filas | 87,5 %, ECE 0,028, 92,5 % enrutado auto a 91,5 % de precisión | Jev 1.14: 79,4 % de fábrica (ECE 0,078), 85,7 % con ejemplos |
+| typed-decisions, 2.000 decisiones tras 1.200 filas | 73,7 %, ECE 0,031 | Jev 1.14: 74,7 %, ECE 0,047 |
+| Across readers (50.676 registros retenidos) | 0,8B: 76,5 %; 4B: 79,1 %; 27B: 81,1 %; ECE 0,010–0,021 | No disponible |
+| Puerta de prompt-injection (ToxicChat, 1,8 % ataques) | 73,0 % de detección con 0,7 % de rechazos (cabeza ajustada) | Jev sin entrenar: 79,1 % con 0,3 % de rechazos |
+
+Coste del aprendizaje: 300 respuestas en 34 s sobre 8 hilos de CPU (0,72 s por respuesta, 6,4 GB de RAM); en GPU, 40 ms y 2 GB. El fine-tuning del encoder clásico sobre las mismas 300 filas requiere 89 s en GPU y 9 GB.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; con 421,3 M parámetros, los pesos en fp32 ocuparían aproximadamente 1,7 GB y en fp16 unos 0,85 GB, aunque la model card no confirma tipos de cuantización.
-- GPU recomendadas: no disponible; la model card menciona ejecución en Apple GPU para long-context y entrenamiento en 2x T4 de Kaggle.
-- Consumer GPU: por tamaño de parámetros, es plausible en GPU consumer, pero no se confirma en la información disponible.
-- Opciones de despliegue: librería `laya` (pip), `laya[serve]` (servidor HTTP), `laya[mcp]` (servidor MCP), `laya[langchain]` (LangChain/LangGraph), `laya[onnx]` (ONNX Runtime), `laya[fast]` (TileLang GPU fast path), además de endpoints compatibles y deploy en Azure.
-- Latencia y throughput: ~33 ms por inferencia declarada; ~1,7 s para 4.000 tokens en Apple GPU. Throughput no disponible.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. El checkpoint ocupa 2,4 GB en safetensors, por lo que en fp16 cabría en torno a 850 MB de pesos, aunque no se confirma.
+- GPU recomendadas: no disponible. La model card menciona ejecución en GPU con 2 GB de RAM para el aprendizaje, y en CPU con 8 hilos.
+- Cabe en GPU de consumo: no confirmado explícitamente, pero el tamaño del checkpoint (421M parámetros) sugiere que sí en GPUs de consumo; no obstante, no se dispone de datos oficiales.
+- Opciones de despliegue: `transformers`, `pip install -U laya`, endpoints compatibles y despliegue en Azure (según tags). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ~33 ms por pase forward en el motor de decisión; 40 ms por respuesta en aprendizaje con GPU; 0,72 s por respuesta en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya | 421,3 M | 1.024 (hasta 8.192 en multilingual) | Decision/clasificacion tipada con probabilidades calibradas | Apache 2.0 | Hugging Face, pip, endpoints |
-| laya-typed-decisions | no disponible | no disponible | Decision tipada afinada | no disponible | Hugging Face |
-| Vega | no disponible | no disponible | Decision model (mismo preprint) | no disponible | studio.embedding.in |
+| Laya | 421M (checkpoint clásico) | 73.728 tokens | Decisión no autorregresiva con probabilidades calibradas | Apache 2.0 | Hugging Face, pip |
+| Jev 1.14 | No disponible | No disponible | API alojada con criterios ajustables | No disponible | API alojada (364 ms por petición desde India) |
+| Encoder clásico (fine-tuning) | 421M | No disponible | Clasificación supervisada tradicional | No disponible | No disponible |
 
-No se dispone de datos suficientes sobre modelos de terceros comparables en la información proporcionada; por tanto, la comparativa con alternativas externas queda como no disponible.
+La comparativa principal que ofrece la model card es frente a Jev 1.14, un servicio alojado que no puede enseñarse, solo guiarse mediante prompting. Laya parte por debajo en el día uno pero supera a Jev tras 120 respuestas confirmadas y ofrece calibración (ECE) más baja en los escenarios de streaming. No se dispone de comparativas con otros modelos de clasificación de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No genera texto: solo responde a preguntas tipadas predefinidas; no sirve para generación libre, resumen o chat abierto.
-- Calibración dependiente del dominio: la precisión del checkpoint base es baja (0,362) en el benchmark de decisiones tipadas; el fine-tuning por dominio es clave para resultados útiles.
-- Contexto limitado por defecto: el límite de 1.024 tokens trunca documentos largos si no se pasa `max_len=8192`; incluso con 8.192, la fiabilidad decae en documentos muy largos (8-17 de 20 aciertos).
-- Riesgo de enrutamiento incorrecto: textos mayoritariamente en inglés pueden dirigirse al checkpoint english aunque convenga el multilingual, si no se especifica `model="multilingual"`.
-- Idiomas: se declaran 100+ idiomas, pero no se detalla cobertura ni calidad por idioma.
-- Sesgos: no disponible en la información proporcionada.
-- Alucinación: el modelo no genera texto, pero la probabilidad reportada puede estar mal calibrada fuera de la distribución de entrenamiento; conviene validar con datos propios.
-- Licencia Apache 2.0: permite uso comercial con atribución y conservación de avisos; revisar términos del preprint y del servicio Studio.
-- Dependencia de servicios externos: Studio (studio.embedding.in) para entrenar motores de decisión propios; crédito gratuito inicial de 10 USD, condiciones comerciales no detalladas.
+- En modo zero-shot sobre suites públicas genéricas, un modelo alojado de gran tamaño supera a Laya, según reconoce la model card.
+- Como puerta de prompt-injection en tráfico real (ToxicChat), Jev sin entrenar detecta más ataques (79,1 % con 0,3 % de rechazos) que Laya con cabeza ajustada (73,0 % con 0,7 %).
+- El flag `unbound` se activó en el 71 % de las filas normales de banking77, por lo que no debe usarse como criterio de enrutamiento por sí solo.
+- La abstención está calibrada para un riesgo por defecto del 10 %; cambiarlo requiere recalibración con datos propios.
+- No se especifican sesgos conocidos ni composición del dataset de entrenamiento en la información disponible.
+- El modelo no genera texto, por lo que no es adecuado para tareas generativas; su uso está limitado a clasificación, enrutamiento y scoring.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del proyecto `vegaml` y de los lectores LLM subyacentes, que pueden tener licencias distintas.
+- Los benchmarks presentados corresponden al encoder clásico y al motor de decisión; no se dispone de resultados independientes de terceros.
 
 ## Enlaces
 
-- [Hugging Face: convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya)
-- [Checkpoint afinado laya-typed-decisions](https://huggingface.co/convaiinnovations/laya-typed-decisions)
-- [Preprint: From Laya to Vega](https://doi.org/10.20944/preprints202611.0781.v1)
-- [GitHub: NandhaKishorM/laya](https://github.com/NandhaKishorM/laya)
-- [README GitHub (instalacion)](https://github.com/NandhaKishorM/laya#installation-details)
-- [README GitHub (fine-tuning)](https://github.com/NandhaKishorM/laya#fine-tuning)
-- [Notebook de fine-tuning en Kaggle (2x T4)](https://github.com/NandhaKishorM/laya/blob/main/notebooks/laya_finetune_typed_decisions_2xT4_kaggle.ipynb)
-- [Script de benchmark long-context](https://github.com/NandhaKishorM/laya/blob/main/research/scripts/bench_long_context.py)
-- [Documentacion: nandhakishorm.github.io/laya](https://nandhakishorm.github.io/laya)
-- [Studio de Embedding Space](https://studio.embedding.in)
+- Hugging Face: https://huggingface.co/convaiinnovations/laya
+- Paper: https://doi.org/10.20944/preprints202611.0781.v1
+- Repositorio vegaml: https://github.com/NandhaKishorM/vegaml
+- Studio de Embedding Space: https://studio.embedding.in
+- Imagen explicativa del funcionamiento: https://raw.githubusercontent.com/NandhaKishorM/vegaml/main/assets/vega-valleys.svg

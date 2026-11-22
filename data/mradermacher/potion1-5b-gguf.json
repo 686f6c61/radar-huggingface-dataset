@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Potion1.5b-GGUF",
+  "slug": "mradermacher-potion1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Potion1.5b-GGUF",
+  "created_at": "2025-02-27T15:14:19.000Z",
+  "updated_at": "2026-11-21T22:10:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "Quazim0t0/Heresy1.5b",
+    "agentica-org/DeepScaleR-1.5B-Preview",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 1729399296,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15775826848,
+  "storage_human": "15.8 GB",
+  "context_length": 131072,
+  "base_model": "Quazim0t0/Potion1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

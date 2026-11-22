@@ -2,129 +2,107 @@
 
 ## Resumen
 
-OpenAmer-Max-Phone es un modelo de lenguaje de 3.090 millones de parametros derivado de Qwen2.5-3B-Instruct mediante un ajuste fino con QLoRA. Lo desarrolla Amer Sacirovic (organizacion openamer-max) como segunda etapa de la familia OpenAmer-Max, una serie de modelos cuyo nombre responde al hardware objetivo y no a criterios de marketing: la gama Watch apunta a relojes inteligentes, la gama Phone a telefonos moviles (esta ficha), y las gamas Tab, Desktop, Pro y Tera cubren desde tabletas hasta clusters. El objetivo declarado es disponer de un asistente conversacional que funcione completamente offline en CPU, con latencias de entre 0,08 y 0,5 segundos, capaz de reconocer y declarar sus propios limites.
+OpenAmer-Phone es un modelo de lenguaje de 3.085.938.688 parámetros (3,09B) desarrollado por openamer-max, un proyecto que construye una familia de asistentes locales segmentada por objetivo de hardware (Watch, Phone, Tab, Desktop, Pro, Ultra). Este modelo es el segundo escalón de la familia y está pensado para ejecutarse de forma totalmente offline en teléfonos inteligentes y portátiles, con un peso de 2,5 GB en cuantización Q6_K y un consumo de RAM estimado de ~3,5 GB. Deriva del modelo base Qwen/Qwen2.5-3B-Instruct mediante un ajuste fino QLoRA de 4 bits, y se distribuye bajo licencia Apache-2.0 en formato GGUF para llama.cpp y Ollama.
 
-El modelo no pretende competir en conocimiento general ni en razonamiento amplio. Su entrenamiento se centra en un dominio muy acotado: responder a hechos del producto OpenAmer a partir de contexto suministrado (RAG), rechazar honestamente preguntas cuya respuesta desconoce y mantener respuestas correctas sobre plataformas soportadas (Android si, iOS no). Se distribuye en formato GGUF Q6_K (2,5 GB) y esta pensado para ejecutarse con llama.cpp u Ollama en telefonos y portatiles.
+El modelo no busca competir en conocimiento general, sino resolver un problema concreto: ofrecer un asistente conversacional que responda con rapidez (0,08–0,5 s, ~110 tok/s en CPU), que sea honesto ante lo que no sabe y que conozca sus propios límites. Está especializado en responder preguntas sobre el producto OpenAmer a partir de contexto suministrado (RAG), en alemán y bosnio principalmente, con soporte adicional para croata, serbio e inglés. Su relevancia actual radica en que demuestra un enfoque de ajuste fino orientado a la fiabilidad y al rechazo honesto en lugar de a la cobertura enciclopédica, algo poco habitual en modelos de este tamaño.
 
-La relevancia actual del modelo reside menos en sus capacidades brutas que en su metodologia documentada: cinco etapas de entrenamiento continuado partiendo cada una del adaptador anterior, con evaluacion mediante benchmarks congelados y tests frescos para detectar contaminacion, y con hallazgos explicitos sobre fallos inducidos por parametros de decodificacion (por ejemplo, `repeat_penalty 1.1` invirtiendo un hecho correcto). La licencia Apache-2.0 permite uso comercial sin restricciones adicionales.
+La ficha se basa exclusivamente en la model card publicada por el autor y en los metadatos de Hugging Face. Los datos de benchmarks proceden de mediciones internas del autor sobre un conjunto congelado de 45 casos, no de evaluaciones independientes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de Qwen2.5-3B-Instruct) |
-| Parametros totales | 3.085.938.688 |
+| Arquitectura | Transformer decoder-only (derivado de Qwen2.5-3B-Instruct) con ajuste QLoRA |
+| Parametros totales | 3.085.938.688 (3,09B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-3B-Instruct) |
-| Tipos de cuantizacion | Q6_K (version publicada); f16 como paso intermedio del pipeline de release |
-| Idiomas soportados | aleman (de), bosnio (bs), croata (hr), serbio (sr), ingles (en) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada del base Qwen2.5-3B-Instruct; el autor no la especifica) |
+| Tipos de cuantizacion | GGUF Q6_K (build publicado); otras cuantizaciones no disponibles |
+| Idiomas soportados | de, bs, hr, sr, en |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); safetensors para el modelo fusionado |
-| Libreria de inferencia | llama.cpp |
-| Modelo base | Qwen/Qwen2.5-3B-Instruct |
-| Tamano del repositorio | 2,5 GB |
-| Metodo de ajuste | QLoRA 4-bit, LoRA r=32, alpha=64 sobre las 7 proyecciones |
-| Parametros entrenables | 59,87 millones (3,4 % del total) |
-| Datos de entrenamiento | 2.890 ejemplos en 11 categorias |
-| Etapas de entrenamiento | 5 continuaciones, cada una desde el adaptador anterior a la mitad del LR |
-| Computo de entrenamiento | 46 pasos por etapa, ~10 min por etapa, 4,19 GB de VRAM |
+| Formato de pesos | GGUF (llama.cpp / Ollama); safetensors del base no incluidos en el repo |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 3.090 millones de parametros que hereda la arquitectura de Qwen2.5-3B-Instruct, incluyendo su tokenizador y su esquema de atencion. Sobre esa base se aplico un ajuste QLoRA en 4 bits con rango 32 y alpha 64 sobre las siete proyecciones de la red, lo que dejo 59,87 millones de parametros entrenables, es decir, el 3,4 % del total. El dataset consta de 2.890 ejemplos repartidos en 11 categorias que combinan las categorias de la gama Watch, texto largo, informacion de plataforma y limites del producto.
+El modelo parte de Qwen/Qwen2.5-3B-Instruct, un transformer decoder-only de 3,09B parámetros, y se ajusta mediante QLoRA de 4 bits con LoRA de rango r=32 y α=64 aplicado sobre las 7 proyecciones, lo que deja 59,87 millones de parámetros entrenables (3,4 % del total). El conjunto de entrenamiento consta de 2.890 ejemplos distribuidos en 11 categorías, que incluyen las categorías del modelo Watch, texto largo y datos específicos de plataforma. No se documenta en la información disponible el número de tokens de entrenamiento ni la composición detallada del dataset más allá de esa cifra y esas categorías.
 
-El aspecto mas singular del entrenamiento es el esquema de cinco continuaciones: cada etapa parte del adaptador de la etapa anterior y reduce la tasa de aprendizaje a la mitad, con 46 pasos por etapa y aproximadamente 10 minutos de computo en una GPU consumer con 8 GB de VRAM (4,19 GB efectivos). La progresion reportada es 22/23 → 23/23 → 23/23 → 23/23 en el benchmark congelado y 7/9 → 11/12 → 12/12 en el test fresco, con precision de tokens de respuesta de 94,74 % → 97,38 % → 98,31 % → 98,76 %. Tras el ajuste, el adaptador se fusiono con la base, se convirtio a GGUF f16 y finalmente se cuantizo a Q6_K para el release de 2,5 GB.
-
-El autor documenta dos hallazgos tecnicos relevantes. Primero, que `repeat_penalty 1.1` provoca un error factual en la build de Ollama (el modelo responde "Ne radi na Androidu" en lugar de "Ne radi na iPhoneu"), mientras que el adaptador, el modelo fusionado y el mismo modelo con system prompt responden correctamente; con `repeat_penalty 1.0` la respuesta es correcta, por lo que recomienda no aplicar penalizacion de repeticion en modelos factuales. Segundo, que la completitud de filas en la distribucion de entrenamiento no equivale a calidad: la etapa 5 tenia mas filas completamente correctas (82 % frente a 80 %) pero rindio peor fuera de distribucion (9/12 frente a 12/12), diferencia que solo el test fresco revela.
+El autor no menciona el uso de RLHF ni DPO; el énfasis está en etapas de ajuste dirigidas a corregir comportamientos concretos. La model card describe explícitamente que dos fallos detectados en la prueba "fresh" (afirmar que el producto genera música y una respuesta invertida sobre soporte de Android) se corrigieron mediante etapas específicas y no añadiendo más datos. No se documentan innovaciones arquitectónicas propias como decodificación especulativa o atención lineal; el modelo es un ajuste fino del base sin cambios estructurales declarados.
 
 ## Capacidades
 
-- Generacion de texto conversacional en aleman, con respuestas de dos o tres frases.
-- Respuesta a preguntas directas en bosnio para formulaciones vistas durante el entrenamiento.
-- Identificacion correcta de si mismo y de sus caracteristicas de producto cuando la informacion se le suministra como contexto (RAG).
-- Rechazo honesto de preguntas desconocidas mediante la formula "Das weiss ich nicht", verificado en el benchmark y no solo esperado.
-- Declaracion explicita de limites del producto: sin generacion de musica, sin video, sin telefonia y sin soporte para iOS.
-- Polaridad correcta en preguntas con negacion (por ejemplo, "Auf einem iPhone. iOS wird nicht unterstuetzt — Android dagegen schon.").
-- Aritmetica en el rango de tres cifras, resuelta de forma inmediata.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el modelo esta orientado a turnos conversacionales acotados.
-- Capacidades de vision o audio: no disponibles.
-- Modo thinking explicito: no disponible.
+- Generación de texto conversacional en alemán (texto libre de dos o tres frases) y respuestas directas en bosnio.
+- Respuesta a preguntas sobre el producto a partir de contexto suministrado (RAG), identificándose correctamente a sí mismo y a su origen.
+- Rechazo honesto: responde "Das weiss ich nicht" ante desconocidos, comportamiento verificado en el conjunto de pruebas.
+- Declaración de límites propios: sin generación de música, sin vídeo, sin telefonía, sin soporte iOS.
+- Polaridad correcta en preguntas con negación (p. ej., distinguir que iOS no está soportado pero Android sí).
+- Aritmética en el rango de tres dígitos de forma inmediata.
+- Soporte multilingüe limitado a de, bs, hr, sr, en, con el bosnio restringido a formulaciones vistas en entrenamiento.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Asistente de producto embebido en la aplicacion OpenAmer: el modelo responde a preguntas frecuentes sobre funcionalidades y plataformas usando el contexto inyectado por la aplicacion (RAG), con latencia inferior a 0,5 s en CPU y sin depender de conectividad.
-- Atencion al cliente offline en dispositivos moviles: al ejecutarse como GGUF Q6_K de 2,5 GB con llama.cpp u Ollama, puede gestionar conversaciones multi-turno breves en un telefono o portatil sin enviar datos a servidores externos, lo que simplifica el cumplimiento de privacidad.
-- Filtro de rechazo y control de alcance en asistentes locales: la capacidad verificada de responder "Das weiss ich nicht" ante preguntas fuera de dominio lo hace util como primera capa que deriva consultas desconocidas a un humano o a un sistema mayor.
-- Demostracion de ajuste fino eficiente en hardware consumer: sirve como referencia reproducible para equipos que quieran adaptar Qwen2.5-3B-Instruct a un dominio estrecho con QLoRA en 4 bits, 4,19 GB de VRAM y menos de una hora de entrenamiento total.
-- Soporte multilingue acotado en los Balcanes occidentales: para consultas directas en bosnio, croata o serbio con formulaciones previsibles, el modelo cubre un hueco que muchos asistentes de 3B no atienden, siempre que el usuario no se salga de las frases entrenadas.
-- Calculo rapido de tres cifras en interfaces de voz o chat: la aritmetica inmediata en el rango de tres digitos permite resolver operaciones sencillas en asistentes de punto de venta o formularios sin llamar a un servicio externo.
-- Base para pruebas de regresion de pipelines de cuantizacion: los logs `proof-*.json` y el benchmark congelado de 23 casos permiten validar que una nueva build GGUF u otro runtime no altera respuestas factuales, como ocurrio con la penalizacion de repeticion.
+- Asistente de producto embebido en una app móvil: el modelo responde preguntas frecuentes sobre OpenAmer usando el contexto recuperado por un pipeline RAG, con latencia de 0,08–0,5 s y ~110 tok/s en CPU, adecuada para interacción en tiempo real sin conexión.
+- Atención al cliente offline en dispositivo: al ejecutarse en ~3,5 GB de RAM y con rechazo honesto ante desconocidos, puede gestionar consultas de primer nivel en un teléfono sin enviar datos a la nube.
+- Demo y evaluación de asistentes locales: sirve como referencia para medir latencia y calidad en hardware de gama media, dado que el autor publica logs de prueba (`proof-*.json`) y un conjunto congelado de 45 casos.
+- Filtro de derivación a humano: gracias a su comportamiento de rechazo verificado, puede clasificar consultas fuera de su ámbito y derivarlas, evitando respuestas inventadas en producción.
+- Pruebas de robustez multilingüe en entornos balcánicos: cubre bosnio, croata y serbio para consultas directas con formulaciones entrenadas, útil en mercados de la región.
+- Cálculo rápido en el dispositivo: aritmética de tres dígitos inmediata para tareas auxiliares en interfaces de voz o chat sin depender de servicios externos.
+- Despliegue en portátiles sin GPU: el formato GGUF Q6_K y la compatibilidad con llama.cpp y Ollama permiten ejecutarlo en CPU en equipos modestos.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados por el autor se midieron sobre la build liberada, en un portatil con RTX 5060 (8 GB), y los registros crudos acompanan al release en forma de ficheros `proof-*.json`.
+Los datos proceden de mediciones internas del autor sobre un conjunto congelado de 45 casos y sobre la build publicada, ejecutada en una RTX 5060 Laptop (8 GB). No son evaluaciones independientes.
 
 | Prueba | Resultado |
 |---|---|
-| Benchmark congelado, 23 casos no vistos (sin contaminacion) | 23/23 (100 %) |
-| Precision de tokens de respuesta, split reservado | 98,76 % |
-| Test fresco, 12 preguntas nunca presentes en ningun conjunto de entrenamiento | 12/12 (100 %) |
-| Sonda sobre la forma distribuida a traves de Ollama | 7/7 |
-| Modelo base sin ajuste fino, mismo benchmark | 18/23 (+5 casos gracias al entrenamiento) |
-| Latencia | 0,08 – 0,5 s |
-| Throughput en CPU | ~110 tok/s |
+| Conjunto congelado de 45 casos (producto) | 43/45 (95,6 %) |
+| Conjunto congelado de 23 casos no vistos (sin contaminación) | 23/23 (100 %) |
+| Precisión de tokens de respuesta, split reservado | 98,76 % |
+| Prueba fresh, 12 preguntas nunca vistas en entrenamiento | 12/12 (100 %) |
+| Sonda de la forma distribuida vía Ollama | 7/7 |
+| Modelo base sin ajuste fino, mismo benchmark | 18/23 (+5 casos por entrenamiento) |
+| Latencia | 0,08–0,5 s; ~110 tok/s en CPU |
 
-Desglose por categoria del benchmark congelado: hechos 7/7, parafrasis 3/3, rechazos 5/5, bosnio 3/3, rechazos en bosnio 1/1, largo 1/1, corto 1/1, casos limite 2/2.
-
-Progresion por etapas de entrenamiento:
-
-| Etapa | Benchmark congelado | Test fresco | Precision de tokens |
-|---|---|---|---|
-| Etapa 1 | 22/23 | 7/9 | 94,74 % |
-| Etapa 2 | 23/23 | 11/12 | 97,38 % |
-| Etapa 3 | 23/23 | no disponible | 98,31 % |
-| Etapa 4 (final) | 23/23 | 12/12 | 98,76 % |
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible; el autor advierte que el modelo carece de conocimiento general fiable y no debe evaluarse con esas metricas como si fuera un modelo de proposito general.
+Desglose por categorías del conjunto de 23 casos: hechos 7/7, paráfrasis 3/3, rechazos 5/5, bosnio 3/3, rechazos en bosnio 1/1, largo 1/1, corto 1/1, casos límite 2/2.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el release Q6_K ocupa 2,5 GB en disco y, al ejecutarse en CPU, no requiere VRAM dedicada.
-- VRAM de entrenamiento documentada: 4,19 GB por etapa, con 46 pasos y unos 10 minutos por etapa en una GPU consumer de 8 GB.
-- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (el autor cita RTX 5060 Laptop); para inferencia pura en CPU no se necesita GPU.
-- Cabe en GPU consumer: si, en tarjetas de 8 GB o superiores con el GGUF Q6_K; en CPU funciona sin GPU dedicada.
-- Opciones de despliegue: llama.cpp (libreria nativa del modelo), Ollama (el release incluye un Modelfile), y cualquier runtime compatible con GGUF. vLLM y TGI no estan mencionados en la informacion disponible.
-- Latencia y throughput: 0,08–0,5 s por respuesta y aproximadamente 110 tok/s en CPU, medidos en la build liberada.
-- Advertencia de despliegue: usar `repeat_penalty 1.0`; con 1.1 se ha observado una inversion factual en la build de Ollama.
+- VRAM/RAM estimada para inferencia: ~3,5 GB de RAM según el autor para la build Q6_K de 2,5 GB.
+- GPU recomendadas: no se especifican modelos concretos; el autor midió en una RTX 5060 Laptop (8 GB). El modelo está diseñado para CPU.
+- Cabe en GPU de consumo: sí, con holgura en cualquier GPU con 4 GB o más de VRAM; también funciona íntegramente en CPU.
+- Opciones de despliegue: Ollama (`ollama run amersacirovic/openamer-max-phone`), llama.cpp con el GGUF Q6_K, y API compatible con endpoints de Ollama (`/api/chat`).
+- Latencia y throughput: 0,08–0,5 s por respuesta y ~110 tok/s en CPU, según medición del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| OpenAmer-Max-Phone | 3,09B | no disponible | Asistente de producto y rechazo honesto, offline en CPU | Apache-2.0 | GGUF Q6_K en Hugging Face |
-| Qwen2.5-3B-Instruct (base) | 3,09B | no disponible | Proposito general, instrucciones | Apache-2.0 | Multiples formatos en Hugging Face |
-| OpenAmer-Max-Watch | ≤ 1B | no disponible | Asistente para reloj inteligente | no disponible | Publicado en Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| OpenAmer-Phone | 3,09B | no disponible | Apache-2.0 | Asistente de producto local, alemán/bosnio, rechazo honesto |
+| Qwen2.5-3B-Instruct (base) | 3,09B | no disponible | Apache-2.0 | Asistente generalista multilingüe |
+| OpenAmer-Watch (misma familia) | 0,6B | no disponible | Apache-2.0 | Asistente para smartwatch, 45/45 en el mismo conjunto |
+| OpenAmer-Tab (misma familia) | 7,6B | no disponible | Apache-2.0 | Asistente para tablet, 42/45 en el mismo conjunto |
 
-La comparacion con Qwen2.5-3B-Instruct es la mas directa, ya que comparten arquitectura y tokenizador: el modelo base obtiene 18/23 en el benchmark congelado frente a 23/23 del ajustado, pero conserva conocimiento general y capacidades que OpenAmer-Max-Phone sacrifica deliberadamente. No se dispone de datos de benchmarks comparables con otros modelos de 3B en la informacion proporcionada.
+La comparación con modelos de otros autores no está disponible en la información proporcionada más allá del propio modelo base. Dentro de la familia, Phone obtiene 43/45 frente a 45/45 de Watch (0,6B) y 42/45 de Tab (7,6B) en el mismo conjunto congelado, lo que sugiere que el tamaño no correlaciona de forma monótona con el resultado en esta tarea específica.
 
 ## Limitaciones y advertencias
 
-- Sin conocimiento general fiable: el autor documenta que ante "capital de Italia" puede responder "Genoa".
-- Sin multiplicacion de cuatro cifras: 86 × 83 devuelve 7118 cuando lo correcto es 7138.
-- Bosnio limitado a formulaciones entrenadas: variantes no vistas degradan la calidad de forma notable.
-- El texto libre es correcto en contenido pero no siempre en estilo; el autor cita ejemplos como "...aus Ruckfall oder Aufregung".
-- No es un chatbot para ensayos: el presupuesto de 3B implica que lo que una habilidad gana, otra lo paga.
-- Riesgo de alucinacion de capacidades: en la etapa 2 el modelo afirmo "Ja. OpenAmer kann Musik generieren", una capacidad inventada, y respondio de forma invertida sobre soporte de Android; ambos fallos se corrigieron con etapas especificas, no con mas datos, lo que indica que el riesgo persiste en areas no cubiertas por el entrenamiento.
-- Sesgos conocidos: no disponibles en la informacion proporcionada; al estar entrenado con 2.890 ejemplos de un unico autor, cabe esperar sesgo de dominio y de estilo, pero no hay medicion publicada.
-- Restricciones de licencia: ninguna adicional relevante para uso comercial, al ser Apache-2.0; conviene conservar los avisos de licencia del modelo base Qwen2.5-3B-Instruct.
-- Caveat de produccion: no aplicar `repeat_penalty` superior a 1.0 en modelos factuales, segun la observacion del autor; validar cada nueva build GGUF contra el benchmark congelado antes de desplegarla.
-- El modelo no soporta tool calling, agentes multi-paso, vision ni audio, por lo que no debe integrarse en pipelines que dependan de esas capacidades.
+- Sin conocimiento general fiable: el autor documenta que ante "capital de Italia" puede responder "Génova". No debe usarse como fuente de hechos fuera del contexto suministrado.
+- Sin multiplicación de cuatro dígitos: 86 × 83 da 7118 cuando lo correcto es 7138.
+- Bosnio limitado a formulaciones entrenadas: las variantes no vistas degradan la calidad.
+- Estilo de texto libre irregular: el contenido puede ser correcto pero la forma no ("…aus Ruckfall oder Aufregung").
+- No es un chatbot para ensayos: el presupuesto de 3B implica que mejorar una habilidad penaliza otra.
+- Riesgo de alucinación de capacidades del producto: la model card documenta que una versión intermedia afirmaba generar música; debe validarse en producción.
+- Contexto máximo no documentado en la información disponible; conviene verificar el límite heredado de Qwen2.5-3B-Instruct antes de diseñar pipelines RAG largos.
+- Licencia Apache-2.0 permite uso comercial, pero el modelo se distribuye como GGUF Q6_K sin safetensors en el repo; verificar la procedencia de los pesos antes de redistribuir.
+- Los benchmarks son internos del autor sobre conjuntos propios y no han sido replicados de forma independiente; trátalos como indicativos, no como comparación neutral.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openamer-max/openamer-max-phone
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Gama Watch de la familia OpenAmer-Max: https://huggingface.co/openamer-max/openamer-max-watch
-- PayPal del autor (citado en la model card): https://www.paypal.com/qrcodes/managed/bfb5b6b5-c04c-4836-af60-987dff8cff61
-- Paper, blog, repositorio GitHub o demo: no disponibles en la informacion proporcionada.
+- Modelo en Ollama: https://ollama.com/amersacirovic/openamer-max-phone
+- Web del proyecto: https://openamer-max.github.io
+- Guía de compatibilidad por dispositivo (Gerätepass): https://openamer-max.github.io/geraetepass/
+- Demo en el navegador: https://openamer-max-openamer-max-demo.hf.space
+- API de traducción (138 idiomas): https://openamer-max-openamer-translate.hf.space/health
+- Código fuente: https://github.com/openamer-max/openamer
+- Conjunto de benchmark de 45 casos: https://huggingface.co/datasets/openamer-max/openamer-max-benchmark
+- Modelo Watch (escalón inferior): https://huggingface.co/openamer-max/openamer-max-watch

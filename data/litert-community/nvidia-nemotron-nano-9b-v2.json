@@ -59,21 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/NVIDIA-Nemotron-Nano-9B-v2 · Hugging Face",
-      "url": "https://huggingface.co/litert-community/NVIDIA-Nemotron-Nano-9B-v2",
-      "snippet": "Nemotron-Nano-9B-v2 is a reasoning model: unless told otherwise it opens a <think> block before answering. The bundle declares the thinking channel (thought, <think>\\n / \\n</think>), so the runtime returns the reasoning separately (the CLI prints it as [thought] … [/thought]) and the answer text carries the answer only."
-    },
-    {
-      "title": "litert-community/NVIDIA-Nemotron-Nano-9B-v2 at main",
-      "url": "https://huggingface.co/litert-community/NVIDIA-Nemotron-Nano-9B-v2/tree/main",
-      "snippet": "Instructions to use litert-community/NVIDIA-Nemotron-Nano-9B-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
-      "url": "https://huggingface.co/litert-community",
-      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
-    }
-  ]
+  "sources": []
 }

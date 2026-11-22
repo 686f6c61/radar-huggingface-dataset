@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Transliteration Keyboard for Mixed-Language Text | UnimeType",
-      "url": "https://unimetype.com/",
-      "snippet": "UnimeType is a transliteration keyboard for Pinyin, Romaji, Romanized Hindi, and Arabizi. Finish the draft, then choose Convert—without switching layouts."
-    },
-    {
-      "title": "AI Keyboard Translator for Mixed-Language Typing | UnimeType",
-      "url": "https://unimetype.com/ai-keyboard-translator",
-      "snippet": "AI keyboard translator An AI keyboard translator for mixed-language messages UnimeType lets you finish a message on one Latin-character keyboard and then choose Convert. The action changes transliterated spans that match your enabled input-language rules while recognized English and protected values remain in place."
-    },
-    {
-      "title": "Hugging Face - The AI community building the future.",
-      "url": "https://huggingface.co/",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - AI4Bharat/IndicXlit: Transliteration models for 21 Indic ...",
-      "url": "https://github.com/AI4Bharat/IndicXlit",
-      "snippet": "Transliteration models for 21 Indic languages. Contribute to AI4Bharat/IndicXlit development by creating an account on GitHub."
-    },
-    {
-      "title": "AI Models | Civitai",
-      "url": "https://civitai.com/models",
-      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
-    }
-  ]
+  "sources": []
 }

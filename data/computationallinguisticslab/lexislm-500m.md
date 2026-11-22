@@ -2,56 +2,52 @@
 
 ## Resumen
 
-LexisLM-500m es un modelo de lenguaje base en griego desarrollado por ComputationalLinguisticsLab, entrenado desde inicialización aleatoria sobre texto griego. Con 502.193.664 parámetros (0,502B), sigue una arquitectura decoder-only de estilo LLaMA con embeddings de entrada y salida atados, RMSNorm, embeddings posicionales rotatorios (RoPE) y bloques feed-forward SwiGLU. Se distribuye como checkpoint preentrenado, sin ajuste por instrucciones.
+LexisLM-500m es un modelo de lenguaje base en griego desarrollado por ComputationalLinguisticsLab, entrenado desde inicialización aleatoria sobre texto griego. Con 502.193.664 parámetros (0,502B), se posiciona como una alternativa compacta y especializada frente a modelos multilingües de mayor tamaño, ofreciendo un tokenizador BPE byte-level dedicado al griego con 32.000 entradas base que preserva mayúsculas y acentos.
 
-El modelo completa una pasada aproximada sobre 22 mil millones de tokens procedentes de Wikipedia en griego y del subconjunto griego de FineWeb2. El repositorio contiene el mejor checkpoint evaluado en el paso 332.000 (21,76 mil millones de posiciones de token), no el paso final de entrenamiento. La ventana de contexto es de 4.096 tokens y el tokenizador es un BPE a nivel de byte específico para griego con 32.000 entradas base.
+El modelo emplea una arquitectura decoder-only estilo LLaMA con embeddings de entrada/salida compartidos, RMSNorm, embeddings posicionales rotatorios (RoPE) y bloques feed-forward SwiGLU. El preentrenamiento se realizó sobre aproximadamente una pasada de 22.000 millones de tokens, y el modelo se distribuye únicamente como checkpoint base (pretrained-only), sin ajuste por instrucciones.
 
-Su relevancia radica en ser un modelo base pequeño y abierto especializado en griego, un idioma con menor representación en modelos multilingües generalistas. No obstante, sus resultados en benchmarks griegos (MMLU 25,3%, ARC-Challenge 25,3%) están cerca del azar, lo que lo sitúa como un punto de partida para fine-tuning más que como un modelo listo para producción.
+Su relevancia radica en la escasez de modelos compactos específicamente entrenados para el griego desde cero, lo que lo hace útil para investigación lingüística, generación de texto en griego y como base para fine-tuning posterior en tareas downstream del idioma.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo LLaMA (RMSNorm, RoPE, SwiGLU, embeddings atados) |
+| Arquitectura | Transformer decoder-only estilo LLaMA (embeddings atados, RMSNorm, RoPE, SwiGLU) |
 | Parametros totales | 502.193.664 (0,502B) |
-| Parametros activos | No aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 4.096 tokens |
-| Tipos de cuantizacion | No disponible (pesos exportados en bfloat16; no se documentan cuantizaciones oficiales) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Griego (el) |
-| Licencia | No disponible |
+| Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
-
-Otros detalles arquitectónicos: 16 capas, tamaño oculto 1.536, 16 cabezas de atención, dimensión de cabeza 96, tamaño oculto feed-forward 4.096, vocabulario del modelo 32.004, RoPE theta 10.000, epsilon de RMSNorm 0,00001, dropout 0,0.
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de estilo LLaMA con 16 capas, embeddings de entrada y salida atados y bloques SwiGLU. El tokenizador es un BPE a nivel de byte dedicado al griego con 32.000 entradas base (más cuatro entradas reservadas para una extensión de tokens de chat que no convierten al modelo en instruction-tuned), normalización NFC y preservación de mayúsculas y acentos. La muestra de entrenamiento del tokenizador comprende 20 millones de ocurrencias de palabras (20% Wikipedia griega, 80% FineWeb2-Greek).
+El modelo sigue una arquitectura transformer decoder-only con 16 capas, tamaño oculto de 1.536, 16 cabezas de atención con dimensión de cabeza de 96, y tamaño oculto del feed-forward de 4.096. Utiliza embeddings de entrada/salida atados, RMSNorm (epsilon 1e-5), RoPE con theta 10.000 y bloques SwiGLU. El vocabulario del modelo es de 32.004 entradas, de las cuales 32.000 corresponden al tokenizador BPE byte-level griego (con `<unk>`, `<bos>`, `<eos>` y `<pad>`) y cuatro adicionales reservadas para una extensión de tokens de chat (append-only), aunque el modelo no está ajustado por instrucciones. El tokenizador usa normalización NFC y preserva mayúsculas y acentos; se entrenó sobre 20 millones de ocurrencias de palabras (20% Wikipedia griega, 80% FineWeb2-Greek).
 
-El corpus de preentrenamiento congelado contiene 22.002.557.667 tokens de 34.079.145 documentos, principalmente Wikipedia griega y el subconjunto griego de FineWeb2, con documentos separados por `<eos>`. El entrenamiento usa AdamW (betas 0,9 y 0,95), learning rate pico de 0,0003 con 2.000 pasos de warmup y decaimiento coseno hasta 0,00003, weight decay 0,1 y clipping de gradiente en 1,0. Cada paso de optimizador procesa 65.536 posiciones de token (micro-batch 8 × acumulación 2 × contexto 4.096), en bfloat16 sobre una única GPU CUDA con `torch.compile`. La ejecución completa alcanzó 335.733 pasos, aproximadamente una pasada sobre los 22 mil millones de tokens, con barajado con semilla de bloques disjuntos de 4.096 tokens y padding enmascarado al final en lugar de repetición de texto.
+El preentrenamiento se realizó sobre aproximadamente una pasada de 22.000 millones de tokens, con AdamW (betas 0,9 y 0,95), tasa de aprendizaje máxima de 0,0003 con 2.000 pasos de warmup y decaimiento coseno hasta 0,00003, weight decay 0,1 y clipping de gradiente en 1,0. No se menciona RLHF, DPO ni ajuste por instrucciones; el modelo es exclusivamente base. Los documentos de preentrenamiento se separaron con `<eos>`, por lo que se recomienda anteponer `<eos>` al prompt para iniciar un documento nuevo, ya que el tokenizador no lo añade automáticamente.
 
 ## Capacidades
 
-- Generación de texto en griego: modelo base de completado de texto, no ajustado por instrucciones.
-- Modelado de lenguaje y continuación de documentos: al separarse los documentos por `<eos>`, se recomienda anteponer `<eos>` al prompt para iniciar un documento nuevo.
-- Razonamiento y conocimiento factual limitados: los resultados en ARC-Challenge y MMLU están cerca del azar.
-- Capacidades multilingües: únicamente griego.
-- Tool calling / function calling: no soportado de forma nativa (modelo base sin ajuste).
-- Agentes y razonamiento multi-paso: no soportado de forma nativa.
+- Generación de texto en griego (modelo base de completado, no instruido).
+- Modelado de lenguaje y continuación de documentos con contexto de hasta 4.096 tokens.
+- Tokenización específica para griego que preserva mayúsculas y acentos (normalización NFC).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (modelo base).
+- Capacidades multilingües: limitadas al griego; el vocabulario y los datos son específicos de ese idioma.
 - Capacidades especiales (thinking mode, visión, audio): no disponibles.
-- Punto de partida para fine-tuning: adecuado para ajuste posterior en tareas griegas específicas.
+- Punto de partida para fine-tuning supervisado y ajuste por instrucciones en griego.
 
 ## Casos de uso
 
-- Fine-tuning supervisado para tareas griegas específicas: el modelo sirve como base de 0,5B parámetros para ajustar clasificación, extracción o generación en griego con recursos modestos, dado su tamaño reducido y su tokenizador dedicado.
-- Investigación en lingüística computacional del griego: permite estudiar el comportamiento de un modelo pequeño entrenado exclusivamente en griego, con métricas de perplejidad y bits por byte documentadas sobre la distribución de validación.
-- Experimentos de tokenización: su tokenizador BPE a nivel de byte con normalización NFC y preservación de acentos es útil para analizar el impacto de decisiones de tokenización en lenguas con alfabeto no latino.
-- Completado de texto en griego en entornos con pocos recursos: con 0,5B parámetros puede ejecutarse en hardware modesto para generar o completar texto griego en tareas de baja exigencia.
-- Reproducción de experimentos académicos: el checkpoint, las métricas de validación y la configuración de entrenamiento documentadas permiten reproducir y comparar resultados en un entorno controlado.
-- Base para evaluación de benchmarks traducidos al griego: sirve como referencia de un modelo pequeño monolingüe al comparar con modelos multilingües en ARC, MMLU y TruthfulQA traducidos por ILSP.
+- Investigación lingüística del griego: el modelo permite estudiar distribuciones léxicas, morfología y sintaxis del griego mediante análisis de perplejidad y generación controlada, gracias a su tokenizador dedicado que preserva acentos y mayúsculas.
+- Generación de texto en griego para prototipos: al ser un modelo base de completado, puede emplearse para generar borradores de texto en griego en aplicaciones de investigación donde no se requiera instrucción explícita, con prompts precedidos de `<eos>`.
+- Base para fine-tuning en tareas downstream: su tamaño compacto (0,5B) y su licencia (no disponible, a verificar) lo hacen adecuado como punto de partida para ajuste supervisado en clasificación, resumen o generación en griego con recursos limitados.
+- Evaluación de modelos compactos frente a multilingües: sirve como referencia para comparar el rendimiento de un modelo entrenado desde cero en griego frente a modelos multilingües de mayor tamaño en benchmarks como ARC, MMLU y TruthfulQA traducidos al griego.
+- Experimentación académica con presupuesto de cómputo reducido: sus 0,5B parámetros permiten entrenar y evaluar variantes en una sola GPU, facilitando la reproducción de experimentos del paper asociado.
+- Generación de datos sintéticos en griego para aumento de corpus: puede utilizarse para producir texto adicional en griego que, tras filtrado, alimente pipelines de entrenamiento de otros modelos o sistemas de PLN.
 
 ## Benchmarks y rendimiento
-
-Resultados del checkpoint base en el paso 332.000 (porcentajes):
 
 | Benchmark griego | Shots | Preguntas | Checkpoint base |
 |---|---:|---:|---:|
@@ -62,7 +58,7 @@ Resultados del checkpoint base en el paso 332.000 (porcentajes):
 | TruthfulQA, MC1 | 0 | 817 | 24,7% |
 | TruthfulQA, MC2 | 0 | 817 | 42,1% |
 
-Métricas de modelado de lenguaje en validación:
+Métricas de modelado de lenguaje en validación (distribución de preentrenamiento: Wikipedia griega y FineWeb2-Greek):
 
 | Métrica | Valor |
 |---|---:|
@@ -71,42 +67,39 @@ Métricas de modelado de lenguaje en validación:
 | Bits por byte | 0,466 |
 | Bits por carácter | 0,826 |
 
-No se han publicado comparaciones directas con modelos similares en la información disponible. El autor advierte que las puntuaciones no son directamente comparables con evaluaciones de benchmarks en inglés y que los artefactos de traducción pueden afectar los resultados. No se reportan estimaciones de incertidumbre ni variación entre semillas de entrenamiento.
+Las evaluaciones de benchmarks son sobre conjuntos completos de ARC, MMLU y TruthfulQA traducidos al griego por ILSP, con selección de demostraciones con semilla 1337 y sin truncado de preguntas. No se proporcionan comparaciones con otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en bfloat16, los pesos ocupan aproximadamente 1 GB; con overhead de activaciones y caché KV para 4.096 tokens, el requisito práctico ronda 2-3 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; cabe en GPUs de consumo como RTX 3060, RTX 4060, RTX 4070 o superiores.
-- Cabe en GPU de consumo: sí, en la mayoría de GPUs modernas de consumo con 4 GB o más.
-- Opciones de despliegue: transformers (referencia oficial), text-generation-inference (el repo incluye el tag `text-generation-inference` y `endpoints_compatible`); para llama.cpp/Ollama sería necesaria una conversión a GGUF no documentada oficialmente.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: en bfloat16, aproximadamente 1 GB para los pesos (502M parámetros × 2 bytes); en cuantización de 8 bits, alrededor de 0,5 GB; en 4 bits, aproximadamente 0,25 GB (estimaciones teóricas, no verificadas en la información disponible).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para bfloat16; tarjetas consumer como RTX 3060, RTX 4060, RTX 4090 son suficientes. Para entrenamiento o fine-tuning, se recomienda al menos una A100 o H100 por comodidad, aunque el tamaño permite ajuste en GPUs consumer de gama alta.
+- Cabe en GPU consumer: sí, en la práctica totalidad de GPUs consumer modernas con 4 GB o más de VRAM.
+- Opciones de despliegue: transformers (biblioteca indicada), text-generation-inference (tag presente), endpoints compatibles; no se confirma soporte de llama.cpp, Ollama o vLLM en la información disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparables de otros modelos en la información proporcionada. A continuación se comparan características estructurales con alternativas plausibles de tamaño similar, marcando los datos no verificados:
+No se dispone de datos de comparación con modelos similares en la información proporcionada. Como referencia cualitativa, se trata de un modelo base monolingüe de 0,5B parámetros con contexto de 4.096 tokens y licencia no especificada; la comparación con alternativas requeriría datos de benchmarks y licencia que no están disponibles.
 
-| Modelo | Parámetros | Contexto | Idioma principal | Licencia | Disponibilidad |
-|---|---:|---:|---|---|---|
-| LexisLM-500m | 0,502B | 4.096 | Griego | No disponible | Hugging Face |
-| Alternativas de ~0,5B multilingües | ~0,5B | Variable | Multilingüe | Variable | Hugging Face |
-| Alternativas de ~1B monolingües | ~1B | Variable | Variable | Variable | Hugging Face |
-
-No se han publicado comparaciones de rendimiento con modelos similares en la información disponible.
+| Modelo | Parámetros | Contexto | Idioma | Licencia |
+|---|---:|---:|---|---|
+| LexisLM-500m | 0,502B | 4.096 | Griego | no disponible |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modelo base sin ajuste por instrucciones: no sigue instrucciones de forma fiable; requiere fine-tuning para tareas conversacionales o de instrucción.
-- Rendimiento cercano al azar en razonamiento: ARC-Challenge y MMLU en torno al 25%, lo que limita su uso en tareas que requieran conocimiento o razonamiento.
-- Riesgo de alucinación: al ser un modelo de completado de texto sin alineación, puede generar contenido factualmente incorrecto o incoherente.
-- Sesgos: no se documentan análisis de sesgo; el corpus (Wikipedia y FineWeb2) puede introducir sesgos propios de esas fuentes.
-- Limitación de idioma: solo griego; no soporta otros idiomas de forma fiable.
-- Limitación de contexto: 4.096 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
-- Licencia no disponible: la ausencia de licencia explícita impide confirmar si se permite uso comercial; debe consultarse con el autor antes de cualquier uso en producción.
-- Artefactos de traducción en benchmarks: las evaluaciones usan traducciones al griego de benchmarks originalmente en inglés, lo que puede distorsionar los resultados.
-- Sin estimaciones de incertidumbre: no se reportan intervalos de confianza ni variación entre semillas.
-- Tokenizador sin `<eos>` automático: es necesario anteponer `<eos>` manualmente para iniciar un documento nuevo.
+- Modelo exclusivamente base (pretrained-only): no está ajustado por instrucciones, por lo que no sigue instrucciones de forma fiable ni mantiene diálogos multi-turno.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar contenido factualmente incorrecto; los resultados en TruthfulQA (MC1 24,7%) indican una fiabilidad limitada en veracidad.
+- Sesgos conocidos: no se documentan sesgos específicos en la información disponible; los datos de preentrenamiento (Wikipedia y FineWeb2) pueden introducir sesgos propios de esas fuentes.
+- Limitaciones de idioma: entrenado únicamente en griego; su uso en otros idiomas no está soportado y producirá resultados deficientes.
+- Limitación de contexto: 4.096 tokens, insuficiente para documentos largos o conversaciones extensas.
+- Restricciones de licencia: la licencia no está disponible en la información proporcionada; debe verificarse antes de cualquier uso comercial.
+- Caveat de producción: requiere anteponer `<eos>` manualmente al prompt para iniciar un documento nuevo, ya que el tokenizador no lo añade; los tokens de chat reservados no implican capacidad de instrucción.
+- Rendimiento modesto en benchmarks: los resultados en MMLU (25,3%) y ARC-Challenge (25,3%) son propios de un modelo base pequeño, no de un asistente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/ComputationalLinguisticsLab/LexisLM-500m
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Paper (arXiv): https://arxiv.org/abs/2611.10209
+- Dataset FineWeb2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
+- Dataset Wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia

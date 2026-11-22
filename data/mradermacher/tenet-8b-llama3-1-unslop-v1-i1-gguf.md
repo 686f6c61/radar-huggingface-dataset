@@ -2,49 +2,51 @@
 
 ## Resumen
 
-Tenet-8B-Llama3.1-Unslop-v1-i1-GGUF es una distribucion de pesos cuantizados en formato GGUF del modelo Tenet-8B-Llama3.1-Unslop-v1, publicada por el usuario mradermacher en Hugging Face. El modelo base, alojado originalmente por mr-andrey-isachenko, es un modelo de 8.030.261.312 parametros construido sobre la arquitectura de Llama 3.1, segun se deduce de su nombre y del recuento de parametros. El sufijo "Unslop" sugiere un ajuste fino orientado a reducir el estilo de respuesta generico y excesivamente edulcorado tipico de los modelos alineados de forma agresiva, aunque la model card no lo confirma de forma explicita.
+Tenet-8B-Llama3.1-Unslop-v1-i1-GGUF es la colección de cuantizaciones GGUF con imatrix generada por mradermacher a partir del modelo Tenet-8B-Llama3.1-Unslop-v1, desarrollado por mr-andrey-isachenko. Se trata de un modelo de lenguaje de aproximadamente 8.030 millones de parámetros (8B) construido sobre la arquitectura de Llama 3.1, afinado con técnicas de GRPO y orientado a casos de uso agénticos, tool-use y generación de código. La variante "Unslop" y la etiqueta "abliterated/uncensored" indican que el autor ha aplicado procesos de eliminación de rechazos y reducción de respuestas genéricas o excesivamente cautelosas.
 
-El repositorio contiene unicamente cuantizaciones GGUF generadas con el metodo de imatrix (importance matrix), lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. Se ofrecen 24 variantes de cuantizacion que abarcan desde IQ1_S hasta Q6_K, cubriendo un rango amplio de compromisos entre calidad y tamano. El repositorio ocupa 76,8 GB en total, lo que corresponde a la suma de todas las variantes publicadas.
+El modelo base se distribuye con licencia Apache 2.0 y está pensado para su despliegue en entornos de inferencia locales o en servicios como vLLM y OpenRouter. Esta ficha se centra en la versión cuantizada publicada por mradermacher, que ofrece un abanico amplio de cuantizaciones (desde IQ1_S de 2,1 GB hasta Q6_K de 6,7 GB) para adaptarse a distintos presupuestos de VRAM y requisitos de calidad.
 
-La relevancia de esta ficha es practica: permite a desarrolladores que quieran desplegar un modelo conversacional de 8B en local disponer de una version GGUF lista para usar, con cuantizaciones agresivas (IQ1/IQ2) que caben en GPUs de gama baja y cuantizaciones de mayor calidad (Q5/Q6) para equipos con mas VRAM. No obstante, la informacion publicada por el autor es muy escasa: no hay datos de entrenamiento, benchmarks, licencia ni idiomas declarados.
+La relevancia actual del modelo radica en su combinación de tamaño contenido (8B), licencia permisiva y capacidades orientadas a agentes y código, lo que lo hace atractivo para prototipado rápido y despliegue en GPUs de consumo. No obstante, la información pública disponible sobre benchmarks, datos de entrenamiento y detalles de arquitectura es limitada, por lo que muchas especificaciones se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basada en Llama 3.1 (inferida del nombre; no confirmada en la model card) |
-| Parametros totales | 8.030.261.312 |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (el modelo base Llama 3.1 soporta 128K, pero no se confirma para este ajuste) |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones con imatrix) |
+| Arquitectura | Transformer basada en Llama 3.1 (según nombre del modelo y modelo base) |
+| Parametros totales | 8.030.261.312 (8B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible (heredada de Llama 3.1, presumiblemente 128K, pero no confirmado en la información proporcionada) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de imatrix) |
+| Idiomas soportados | en (inglés) según la model card |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona informacion sobre la arquitectura interna, los datos de entrenamiento ni el proceso de alineacion del modelo base. Por el nombre y el recuento de parametros (8.030.261.312) se puede inferir que se trata de un transformer decoder-only con la configuracion tipica de Llama 3.1 8B, que emplea atencion con RoPE, normalizacion RMSNorm y activacion SwiGLU. El sufijo "Llama3.1" indica que el modelo parte de los pesos de Llama 3.1 8B o de un modelo derivado de este.
+La arquitectura del modelo base corresponde a un transformer decoder-only de la familia Llama 3.1, con 8.030 millones de parámetros. El nombre del modelo indica que se ha construido sobre Llama 3.1 y que se ha sometido a un proceso de fine-tuning con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo utilizada habitualmente para mejorar el razonamiento y la adherencia a instrucciones. Las etiquetas "abliterated" y "uncensored" sugieren que se ha aplicado una técnica de abliteración para eliminar direcciones de rechazo en el espacio de activaciones, reduciendo la tendencia del modelo a declinar peticiones.
 
-El ajuste fino "Unslop" sugiere un entrenamiento orientado a modificar el estilo de respuesta, presumiblemente mediante SFT o DPO sobre un dataset conversacional, pero no se detalla la composicion del dataset, el numero de tokens ni si se emplearon tecnicas de RLHF. La publicacion de mradermacher es una conversion a GGUF con cuantizacion imatrix (weighted/imatrix quants), un metodo que calcula una matriz de importancia a partir de datos de calibracion para preservar mejor la calidad en cuantizaciones bajas. No se documenta que dataset de calibracion se uso.
+No se dispone de información detallada sobre el volumen de tokens de entrenamiento, la composición del dataset ni la existencia de fases de RLHF o DPO más allá de la mención a GRPO. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa o atención lineal. Las cuantizaciones publicadas por mradermacher emplean imatrix (importance matrix) para mejorar la calidad de las cuantizaciones de baja precisión, y se ofrecen tanto cuantizaciones estáticas (en el repositorio hermano Tenet-8B-Llama3.1-Unslop-v1-GGUF) como dinámicas i1.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, segun la etiqueta "conversational" del repositorio.
-- Razonamiento general y respuesta a instrucciones, heredado del modelo base Llama 3.1 8B.
-- Generacion de codigo y matematicas basicas, asumiendo las capacidades del modelo base (no verificadas en esta publicacion).
-- Soporte de tool calling / function calling: no confirmado para este ajuste concreto; el modelo base Llama 3.1 lo soporta, pero no hay evidencia de que el ajuste Unslop lo preserve.
-- Capacidades de agente y razonamiento multi-paso: no confirmadas.
-- Capacidades multilingues: no disponibles; el modelo base Llama 3.1 soporta 8 idiomas oficiales, pero no se declara para este ajuste.
-- Modo thinking, vision o audio: no disponible.
+- Generación de texto conversacional en inglés, con especial énfasis en respuestas directas y sin rechazos excesivos (variante "unslop" y "uncensored").
+- Razonamiento y resolución de problemas, potenciado por el fine-tuning con GRPO.
+- Generación de código, según las etiquetas "coding" del modelo.
+- Soporte de tool calling / function calling, indicado por la etiqueta "tool-use".
+- Capacidades agénticas y de razonamiento multi-paso, según la etiqueta "agentic".
+- Compatibilidad con vLLM y OpenRouter, lo que facilita su despliegue en entornos de inferencia estándar.
+- Capacidades multilingües limitadas al inglés según la model card (idioma declarado: en).
+- No se documentan capacidades de visión, audio ni modo "thinking" explícito.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar el modelo en una RTX 4090 o en una GPU con 8-12 GB de VRAM mediante llama.cpp u Ollama, adecuado para prototipado de asistentes conversacionales sin depender de la nube.
-- Asistente conversacional de escritorio: la etiqueta "conversational" y el formato GGUF lo hacen apto para integrarse en aplicaciones de chat locales (por ejemplo, con llama-cpp-python o Ollama) donde la privacidad de los datos es prioritaria.
-- Generacion de texto creativo con estilo menos edulcorado: el ajuste Unslop busca reducir el tono generico de los modelos alineados, por lo que puede emplearse en tareas de redaccion donde se prefiera un estilo mas directo (siempre que se valide la calidad real del ajuste).
-- Filtrado y clasificacion de texto en local: con cuantizaciones IQ2/IQ3 el modelo cabe en GPUs de 4-6 GB y puede usarse para tareas de etiquetado o moderacion en entornos con recursos limitados.
-- Educacion y experimentacion: al ser una distribucion GGUF con 24 variantes, es util para comparar el impacto de la cuantizacion en la calidad de salida en un mismo modelo, como ejercicio docente o de investigacion.
-- Integracion en pipelines de CI/CD para pruebas de regresion: al poder ejecutarse en CPU con llama.cpp, se puede incorporar como generador de referencia en tests automatizados de prompts, aunque con throughput limitado.
+- Asistentes de código en local: el modelo puede integrarse en editores o pipelines de CI/CD para autocompletar, explicar y refactorizar código, aprovechando su tamaño de 8B y su licencia Apache 2.0 para uso comercial sin restricciones.
+- Agentes autónomos con tool calling: gracias a la etiqueta "agentic" y "tool-use", puede emplearse en flujos donde el modelo decide qué herramienta invocar (APIs, bases de datos, shell) y encadena varios pasos de razonamiento.
+- Prototipado rápido en GPU de consumo: las cuantizaciones Q4_K_M (5,0 GB) o IQ4_XS (4,5 GB) permiten ejecutar el modelo en GPUs con 8-12 GB de VRAM, facilitando experimentación sin infraestructura dedicada.
+- Generación de contenido sin filtros excesivos: la variante "unslop/uncensored" es adecuada para aplicaciones creativas o de investigación donde se requiere menor tasa de rechazos, siempre con las salvaguardas adecuadas por parte del integrador.
+- Chat multi-turno en inglés: su naturaleza conversacional y su ventana de contexto (heredada de Llama 3.1, aunque no confirmada) permiten gestionar diálogos con historial extenso.
+- Despliegue en servicios gestionados: la compatibilidad con vLLM y OpenRouter permite servirlo como endpoint compatible con la API de OpenAI, integrándolo en aplicaciones existentes sin reescribir el cliente.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece hasta 24 variantes de cuantización, lo que permite a investigadores medir el impacto de la precisión en tareas concretas antes de fijar una configuración de producción.
 
 ## Benchmarks y rendimiento
 
@@ -52,45 +54,46 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y sin contar overhead de contexto):
-  - IQ1_S / IQ1_M: en torno a 2-3 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: en torno a 3-4 GB.
-  - Q2_K / Q2_K_S / IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M / Q3_K_S / Q3_K_M / Q3_K_L: en torno a 4-5 GB.
-  - Q4_0 / Q4_1 / Q4_K_S / IQ4_XS / small-IQ4_NL / Q4_K_M: en torno a 5-6 GB.
-  - Q5_K_S / Q5_K_M: en torno a 6-7 GB.
-  - Q6_K: en torno a 7-8 GB.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, A10, L4, A100 y H100 para despliegues de mayor concurrencia.
-- Cabe en GPU de consumo: si, practicamente todas las cuantizaciones caben en GPUs de 8 GB o mas; las variantes IQ1/IQ2 pueden ejecutarse incluso en GPUs de 4-6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp; para servidores de mayor throughput, llama.cpp con servidor OpenAI-compatible o vLLM si se convierte a safetensors (vLLM no carga GGUF de forma nativa en todas sus versiones).
-- Latencia y throughput estimados: no disponibles; dependen de la GPU, la cuantizacion y la longitud de contexto. Como referencia cualitativa, un 8B en Q4_K_M en una RTX 4090 suele superar las decenas de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
+- VRAM estimada para inferencia (según cuantización):
+  - i1-IQ1_S: ~2,1 GB (calidad muy baja, solo para pruebas).
+  - i1-IQ2_M: ~3,0 GB (calidad baja).
+  - i1-IQ3_M: ~3,9 GB.
+  - i1-IQ4_XS: ~4,5 GB.
+  - i1-Q4_K_M: ~5,0 GB (recomendado por el autor como equilibrio velocidad/calidad).
+  - i1-Q5_K_M: ~5,8 GB.
+  - i1-Q6_K: ~6,7 GB (prácticamente equivalente a Q6_K estático).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones Q4-Q6; A100/H100 para despliegues con mayor concurrencia o FP8/FP16 (el modelo base incluye etiqueta fp8).
+- Cabe en GPU de consumo: sí, desde GPUs con 6-8 GB de VRAM usando cuantizaciones IQ2/IQ3, y con 8-12 GB para Q4_K_M o superiores.
+- Opciones de despliegue: llama.cpp, Ollama (a partir de GGUF), vLLM (para el modelo base en safetensors/FP8), TGI (si se convierte el modelo base), y servicios como OpenRouter.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Tenet-8B-Llama3.1-Unslop-v1-i1-GGUF | 8,03B | no disponible | no disponible | GGUF (24 cuantizaciones) | Ajuste Unslop sobre Llama 3.1 8B; sin benchmarks publicados |
-| Llama 3.1 8B Instruct | 8,03B | 128K | Llama 3.1 Community License | safetensors, GGUF | Modelo base oficial de Meta; benchmarks publicados; tool calling nativo |
-| Mistral 7B Instruct v0.3 | 7,24B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa de tamano similar con licencia permisiva |
-| Qwen2.5 7B Instruct | 7,62B | 128K | Apache 2.0 (salvo 3B y 72B) | safetensors, GGUF | Buen rendimiento en codigo y matematicas; benchmarks publicados |
+| Tenet-8B-Llama3.1-Unslop-v1 (este) | 8B | no disponible | Apache 2.0 | GGUF / safetensors | Fine-tune GRPO, abliterated, agentic |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | safetensors / GGUF | Modelo base oficial de Meta, con restricciones de licencia |
+| Qwen2.5 7B Instruct | 7B | 128K | Apache 2.0 | safetensors / GGUF | Alternativa permisiva con buen rendimiento en código |
+| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | safetensors / GGUF | Modelo permisivo ampliamente adoptado |
 
-La comparativa es orientativa: no hay datos de rendimiento del modelo Tenet que permitan una comparacion cuantitativa con las alternativas.
+La comparativa se basa en características públicas de modelos de la misma categoría; no se dispone de datos de rendimiento comparativo para Tenet-8B en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card no declara licencia, lo que impide confirmar si el uso comercial esta permitido; hay que contactar con el autor o asumir la licencia del modelo base Llama 3.1 (Llama 3.1 Community License), que impone restricciones (por ejemplo, clausula de 700 millones de usuarios mensuales y requisitos de atribucion).
-- No se documentan los datos de entrenamiento del ajuste Unslop, por lo que se desconocen sesgos introducidos y posibles problemas de calidad.
-- Riesgo de alucinacion inherente a los modelos de 8B, especialmente en cuantizaciones muy agresivas (IQ1, IQ2), donde la perdida de calidad puede ser notable.
-- Las cuantizaciones IQ1_S e IQ1_M son extremadamente agresivas y pueden degradar seriamente la coherencia; no se recomiendan para produccion.
-- No hay informacion sobre idiomas soportados ni sobre el rendimiento en castellano; el modelo base Llama 3.1 esta optimizado para ingles y 7 idiomas adicionales, pero el ajuste puede haber alterado esta distribucion.
-- El soporte de tool calling y de agentes no esta confirmado; si se necesita, conviene validarlo con pruebas propias antes de usarlo en produccion.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
-- El modelo fue creado en 2026-11-19 segun los metadatos, una fecha futura respecto a la mayoria de referencias; conviene verificar la integridad y procedencia de los pesos.
+- Sesgos conocidos: no documentados en la información disponible; al derivar de Llama 3.1, es probable que herede sesgos del corpus de entrenamiento original.
+- Riesgo de alucinación: inherente a los modelos de 8B; no se han publicado evaluaciones específicas de factualidad.
+- Limitaciones de contexto o idioma: el modelo declara únicamente inglés ("en"); el contexto máximo no está confirmado en la información proporcionada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base podría arrastrar condiciones adicionales de Llama 3.1; conviene verificar la licencia del modelo base antes de producción.
+- La naturaleza "abliterated/uncensored" implica una menor tasa de rechazos, lo que puede producir contenido inapropiado o inseguro; es responsabilidad del integrador añadir filtros y salvaguardas.
+- Las cuantizaciones de muy baja precisión (IQ1, IQ2) degradan notablemente la calidad; el propio autor las marca como "for the desperate" o "very low quality".
+- No se dispone de información sobre el proceso de entrenamiento (datos, tokens, evaluación), lo que dificulta auditar el modelo para usos regulados.
+- El repositorio tiene 0 likes y 3712 descargas en el momento de la consulta, lo que sugiere una adopción limitada y poca validación comunitaria.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Tenet-8B-Llama3.1-Unslop-v1-i1-GGUF
-- Modelo base original: https://huggingface.co/mr-andrey-isachenko/Tenet-8B-Llama3.1-Unslop-v1
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
-- Llama 3.1 (modelo base): https://huggingface.co/meta-llama/Llama-3.1-8B
-- llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama (runtime GGUF): https://ollama.com
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/Tenet-8B-Llama3.1-Unslop-v1-i1-GGUF
+- Modelo base: https://huggingface.co/mr-andrey-isachenko/Tenet-8B-Llama3.1-Unslop-v1
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Tenet-8B-Llama3.1-Unslop-v1-GGUF
+- Página de overview de mradermacher para este modelo: https://hf.tst.eu/model#Tenet-8B-Llama3.1-Unslop-v1-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de comparación de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quant

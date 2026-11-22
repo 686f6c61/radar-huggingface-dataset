@@ -2,50 +2,49 @@
 
 ## Resumen
 
-Lin-1.1-Epsilon-i1-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo Lin-1.1-Epsilon, publicada por el usuario mradermacher bajo su pipeline habitual de conversion y cuantizacion (sufijo "i1", que indica uso de importance matrix o pesos ponderados). El modelo base lo desarrolla LindotAI, segun se desprende del enlace al repositorio original incluido en la model card. El repositorio no incluye model card descriptiva, licencia, idiomas ni pipeline declarados, por lo que la mayor parte de la informacion tecnica sobre el modelo original no esta disponible en la fuente consultada.
+Lin-1.1-Epsilon-i1-GGUF es una coleccion de cuantizaciones GGUF del modelo LindotAI/Lin-1.1-Epsilon, generadas por mradermacher usando calibracion imatrix (weighted/imatrix quants). El modelo base es un transformer de aproximadamente 494 millones de parametros (494.032.768 segun los safetensors del repo), orientado a tareas de codigo con enfasis declarado en Rust y etiquetado con el tag "lindot". La licencia es Apache 2.0 tanto para el modelo base como para estas cuantizaciones.
 
-El dato mas relevante que si aparece es el recuento de parametros en safetensors: 493.704. Esta cifra, tal cual, resulta anomala para un modelo de lenguaje (seria inferior a un millon de parametros), por lo que probablemente corresponde a un recuento truncado o a un campo mal poblado en los metadatos. El tamano del repositorio figura como 0.0 GB, lo que sugiere que los pesos aun no se han subido o que la informacion esta incompleta. El repositorio se creo y actualizo el 18 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+El repositorio no contiene los pesos originales en safetensors, sino exclusivamente ficheros GGUF en multiples niveles de cuantizacion (desde IQ1_S hasta Q6_K) mas el fichero imatrix empleado para generarlos. El tamano total del repo es de 8,6 GB, repartido entre las distintas variantes. La model card del cuantizador no aporta informacion sobre arquitectura interna, contexto, composicion del dataset de entrenamiento ni resultados de evaluacion; esa informacion corresponderia al modelo base LindotAI/Lin-1.1-Epsilon, que no se detalla en la documentacion proporcionada.
 
-La relevancia de esta ficha es, por tanto, limitada y de caracter preliminar: se trata de un artefacto de cuantizacion recien publicado, sin validacion publica ni documentacion asociada. Se recomienda tratar cualquier dato no confirmado como no disponible y verificar el repositorio original de LindotAI antes de cualquier uso en produccion.
+Por su tamano (menos de 500 millones de parametros) y su rango de cuantizaciones (ficheros de 0,4 a 0,6 GB), esta pensado para inferencia en CPU y en GPUs de consumo muy modesto, lo que lo situa en la categoria de modelos pequenos especializados en codigo, no en la de asistentes generalistas de gran escala. Es relevante para quien necesite un modelo de codigo ligero, desplegable en local, con licencia permisiva y empaquetado listo para llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 493.704 (segun metadatos safetensors; cifra probablemente incompleta o erronea) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas); el modelo base se distribuye presumiblemente en safetensors |
+| Arquitectura | Transformer (detalle no disponible en la informacion proporcionada) |
+| Parametros totales | 494.032.768 |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-IQ3_XXS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_XS, i1-Q2_K, i1-IQ3_M, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q3_K_M, i1-Q3_K_L, i1-Q4_1, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | Ingles (segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (no se distribuyen safetensors en este repo) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Lin-1.1-Epsilon: la model card del repositorio GGUF unicamente contiene metadatos del proceso de cuantizacion y un enlace al repositorio original de LindotAI. No hay datos sobre tipo de transformer, uso de mezcla de expertos, atencion lineal, estado recurrente ni sobre el numero de tokens de entrenamiento, composicion del dataset o fases de alineacion (RLHF, DPO u otras).
+La informacion disponible no detalla la arquitectura interna del modelo base LindotAI/Lin-1.1-Epsilon mas alla de que se trata de un transformer con 494.032.768 parametros y biblioteca transformers. No se especifican numero de capas, dimensiones de atencion, tipo de atencion, ni si emplea tecnicas como atencion lineal o decodificacion especulativa. Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO.
 
-Lo unico documentado es el proceso de cuantizacion: el autor indica que se trata de cuantizaciones "weighted/imatrix", es decir, generadas con una importance matrix que pondera la precision de cada tensor segun su impacto en la perplejidad. Los metadatos internos confirman `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica que la conversion parte de pesos en formato Hugging Face y que el tensor de salida tambien se cuantiza. No se ha aplicado ningun recorte del proyector multimodal (`skip_mmproj` vacio), aunque no consta que el modelo base tenga componente de vision.
+Lo que si esta documentado es el proceso de cuantizacion: mradermacher ha generado las variantes GGUF con calibracion imatrix (quants "weighted/imatrix"), lo que tipicamente mejora la calidad de las cuantizaciones de baja precision respecto a las estaticas equivalentes. El repo incluye el fichero imatrix (0,1 GB) para que terceros puedan generar sus propias cuantizaciones, y se referencia un conjunto paralelo de cuants estaticos en mradermacher/Lin-1.1-Epsilon-GGUF. Los tags del modelo base apuntan a codigo y a Rust como dominios de interes, lo que sugiere un ajuste fino orientado a generacion de codigo en ese lenguaje.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada explicitamente, pero implicita en un modelo de lenguaje cuantizado en GGUF.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Modo de razonamiento explicito (thinking), vision o audio: no disponible.
-- Compatibilidad con llama.cpp y derivados: si, por el formato GGUF y el conjunto de cuantizaciones publicado (incluye tipos IQ y K-quants).
+- Generacion de codigo, con enfasis declarado en Rust segun los tags del modelo.
+- Conversacion multi-turno (tag "conversational" en el repo).
+- Generacion de texto general en ingles.
+- Compatibilidad con endpoints (tag "endpoints_compatible").
+- No hay evidencia en la informacion proporcionada de soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Capacidades multilingues: solo ingles declarado; otros idiomas no disponibles.
 
 ## Casos de uso
 
-- Evaluacion local en hardware de consumo: las cuantizaciones Q2_K, IQ2 e IQ3 permiten probar el modelo en equipos con poca VRAM o RAM, aunque con perdida de calidad respecto al modelo original. Adecuado para experimentacion, no para produccion.
-- Despliegue en CPU con llama.cpp: los ficheros GGUF se pueden cargar directamente en llama.cpp, lo que permite ejecutar el modelo sin GPU para tareas de prueba o prototipado.
-- Integracion en Ollama o LM Studio: al ser GGUF, las cuantizaciones Q4_K_M o Q5_K_M son candidatas habituales para estos entornos de escritorio, siempre que se valide antes la calidad del modelo base.
-- Comparacion de precision entre cuantizaciones: el amplio conjunto publicado (desde IQ1_M hasta Q6_K) permite medir la degradacion de perplejidad a distintas tasas de bits, un uso tipico de los repositorios de mradermacher.
-- Fine-tuning o destilacion sobre el modelo base: solo tiene sentido partiendo del repositorio original de LindotAI en safetensors, no de estas cuantizaciones.
-- Pruebas de pipeline de cuantizacion: util como referencia para validar herramientas de conversion HF a GGUF con importance matrix, dado que el autor documenta los metadatos del proceso.
+- Autocompletado de codigo Rust en el editor: al ser un modelo de menos de 500 millones de parametros y con cuantizaciones de 0,4-0,6 GB, puede ejecutarse en local con llama.cpp y responder con latencia baja en tareas de completado linea a linea o de bloque.
+- Asistente de refactorizacion en proyectos Rust: integrado en un plugin de IDE o en un CLI, el modelo puede proponer reescrituras de funciones y correcciones de estilo en un lenguaje concreto, aprovechando el ajuste declarado al dominio.
+- Generacion de tests unitarios: para funciones y modulos existentes, el modelo puede producir esqueletos de tests y casos de prueba, adecuado por su tamano para ejecutarse dentro de un pipeline de CI sin GPU dedicada.
+- Documentacion de codigo: generacion de docstrings y comentarios a partir de fragmentos de codigo, tarea de bajo coste computacional que encaja con un modelo pequeno y especializado.
+- Despliegue en entornos con hardware limitado: al caber en cuantizaciones de 0,4 GB, puede correr en portatiles sin GPU, Raspberry Pi de gama alta o contenedores con poca memoria, lo que lo hace util para herramientas de desarrollo offline.
+- Filtrado y clasificacion de fragmentos de codigo: uso como modelo auxiliar para etiquetar o triagear parches y snippets en Rust dentro de un pipeline mayor, donde un modelo ligero reduce coste frente a uno de gran escala.
+- Prototipado rapido de asistentes de codigo: servir el GGUF con llama.cpp u Ollama para validar una idea de producto antes de invertir en un modelo mayor.
 
 ## Benchmarks y rendimiento
 
@@ -53,28 +52,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision, porque el recuento de parametros de los metadatos (493.704) es inconsistente con un modelo de lenguaje utilizable. La estimacion depende del tamano real del modelo base, que no consta.
-- GPU recomendadas: no disponible.
-- Cabe en GPU de consumo: no se puede determinar sin el tamano real; el rango de cuantizaciones (desde IQ1_M hasta Q6_K) sugiere que el autor cubre tanto escenarios de VRAM muy limitada como de mayor precision.
-- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, LM Studio, llama-cpp-python). vLLM y TGI no consumen GGUF de forma nativa para este tipo de artefactos.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: entre aproximadamente 0,4 GB (IQ1_S/IQ2) y 0,6 GB (Q6_K) solo para los pesos; anades overhead de contexto y de runtime.
+- Cabe en cualquier GPU de consumo con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.), y en GPUs integradas con memoria compartida suficiente.
+- Inferencia en CPU viable: los ficheros de 0,4-0,6 GB permiten ejecucion en CPU con llama.cpp, incluso en equipos modestos.
+- GPU recomendadas: no se requieren GPU de datacenter (A100, H100); el modelo esta sobredimensionado para ese hardware y no aporta ventaja usarlo alli.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; la biblioteca declarada en el repo es transformers, pero los pesos distribuidos son GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables porque se desconoce la arquitectura, el tamano real y el rendimiento del modelo base Lin-1.1-Epsilon.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Lin-1.1-Epsilon (esta ficha) | 494 M | No disponible | Apache 2.0 | GGUF (cuantizado) | Especializado en codigo/Rust, cuants imatrix |
+| Modelo base LindotAI/Lin-1.1-Epsilon | 494 M | No disponible | Apache 2.0 | safetensors (presumiblemente) | Origen de estas cuantizaciones |
+| Alternativas de codigo de tamano similar | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables en la informacion proporcionada |
+
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad.
-- Licencia no declarada: no se puede asumir uso comercial permitido; es imprescindible consultar el repositorio original de LindotAI.
-- Metadatos inconsistentes: el recuento de parametros (493.704) y el tamano del repositorio (0.0 GB) no cuadran con un modelo desplegable, lo que indica informacion incompleta o erronea.
-- Riesgo de alucinacion: desconocido, al no haber evaluaciones publicadas.
-- Idiomas: no declarados; no se puede garantizar calidad en castellano ni en ningun otro idioma.
-- Cuantizaciones de muy baja precision (IQ1_M, IQ1_S, IQ2_XXS): degradacion severa esperable; no recomendadas para tareas que requieran exactitud.
-- Cero descargas y cero likes: sin validacion por parte de la comunidad en el momento de la consulta.
-- Fecha de publicacion futura respecto a la mayoria de referencias: verificar que el repositorio y el modelo base siguen disponibles y son los definitivos.
+- Sesgos conocidos: no documentados en la informacion proporcionada; al entrenarse presumiblemente con datos de codigo en ingles, puede heredar sesgos de ese corpus.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; en codigo puede manifestarse como APIs inexistentes, firmas incorrectas o dependencias inventadas, especialmente en cuantizaciones de muy baja precision (IQ1, IQ2, Q2_K_S) que el propio autor marca como "for the desperate", "very low quality" o "lower quality".
+- Limitaciones de contexto e idioma: solo ingles declarado; la longitud de contexto no esta documentada, por lo que no debe asumirse una ventana amplia.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base LindotAI/Lin-1.1-Epsilon, asi como las de los datos de entrenamiento, antes de desplegarlo en produccion.
+- Caveat de produccion: este repo contiene unicamente cuantizaciones GGUF; para reproducir o reentrenar hace falta el modelo base. Las cuantizaciones de 1-3 bits degradan notablemente la calidad y no deberian usarse en produccion sin evaluacion previa.
+- El modelo, con menos de 500 millones de parametros, tiene capacidad limitada para razonamiento complejo, contextos largos y tareas generalistas; su uso previsto es codigo y conversacion en ingles.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Lin-1.1-Epsilon-i1-GGUF
-- Modelo base (segun la model card): https://huggingface.co/LindotAI/Lin-1.1-Epsilon
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lin-1.1-Epsilon-i1-GGUF
+- Modelo base: https://huggingface.co/LindotAI/Lin-1.1-Epsilon
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Lin-1.1-Epsilon-GGUF
+- Pagina de descarga del cuantizador: https://hf.tst.eu/model#Lin-1.1-Epsilon-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de modelos: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

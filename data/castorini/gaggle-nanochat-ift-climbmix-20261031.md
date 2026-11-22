@@ -2,115 +2,116 @@
 
 ## Resumen
 
-gaggle-nanochat-ift-climbmix-20261031 es un modelo de chat de 3.290 millones de parámetros derivado del checkpoint preentrenado castorini/gaggle-nanochat-pretrained-climbmix-20260924 (paso 227.158), desarrollado por el grupo Castorini. Se ha entrenado con la receta de chat estándar de nanochat en dos etapas —midtraining y ajuste supervisado (SFT)— sin refuerzo con retroalimentación humana (RLHF) ni optimización directa de preferencias (DPO). El resultado es un modelo conversacional pequeño, con licencia MIT, orientado a inglés y con una ventana de contexto de 2.048 tokens.
+gaggle-nanochat-ift-climbmix-20261031 es un modelo de lenguaje de tipo chat desarrollado por el grupo castorini (University of Waterloo). Se construye a partir del checkpoint preentrenado castorini/gaggle-nanochat-pretrained-climbmix-20260924 (paso 227.158) aplicando la receta de chat estandar de nanochat en dos etapas: midtraining y ajuste fino supervisado (SFT), sin refuerzo por RL. El modelo base Gaggle es una reproduccion del nanochat depth-34 de Karpathy entrenada sobre el dataset ClimbMix.
 
-La arquitectura es la del modelo base sin cambios: un transformer decoder-only de profundidad 34, anchura 2.176, 17 cabezas de atención de dimensión 128 y un tokenizador BPE a nivel de byte de 32.768 entradas. De los 3.290 millones de parámetros, 1.210 millones corresponden a búsquedas de embedding de valor, lo que reduce el coste efectivo de inferencia respecto a un modelo denso del mismo tamaño nominal. El modelo se distribuye con los pesos en safetensors y es compatible tanto con transformers (con trust_remote_code=True) como con el código propio de nanochat y su plugin de vLLM.
+Arquitectonicamente es un transformer decoder-only de 34 capas con anchura 2.176, 17 cabezas de atencion de dimension 128 y una ventana de contexto de 2.048 tokens. Cuenta con 3.286.633.962 parametros totales, de los cuales 1.210 millones corresponden a consultas de embedding de valor (value-embedding lookups). El tokenizador es un BPE a nivel de byte con 32.768 entradas, heredado sin cambios del modelo base.
 
-Su relevancia radica en que documenta de forma reproducible la receta de chat de nanochat sobre un preentrenamiento con ClimbMix, con evaluación detallada en formato de chat y comparación directa contra el checkpoint base y contra otra reproducción de la misma receta. Es un modelo de referencia para investigación en ajuste conversacional de bajo coste (entrenado en una sola H100 80GB en algo más de tres horas y media entre ambas etapas) más que un modelo para producción a gran escala.
+Su relevancia radica en que demuestra el ciclo completo de nanochat (preentrenamiento, midtraining y SFT) sobre datos de ClimbMix, con una mejora sustancial en tareas de conocimiento (MMLU 49,27 frente a 25,71 del nanochat d34 preentrenado) y un formato de chat propio compatible con transformers, vLLM y el codigo original de nanochat. Es un modelo pequeno, de licencia MIT, orientado a investigacion y a despliegues con recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (nanochat depth-34): 34 capas, anchura 2.176, 17 cabezas de atención de dimensión 128 |
-| Parametros totales | 3.286.633.962 (3,29B); 1,21B corresponden a búsquedas de embedding de valor |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only (nanochat depth-34) |
+| Parametros totales | 3.286.633.962 (3,29B); 1,21B de ellos en value-embedding lookups |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 2.048 tokens |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (en) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors; compatible con transformers (trust_remote_code=True), código de nanochat y plugin de vLLM |
+| Formato de pesos | safetensors (transformers), compatible con vLLM y con el codigo de nanochat |
+| Capas | 34 |
+| Anchura del modelo | 2.176 |
+| Cabezas de atencion | 17, dimension 128 |
 | Tokenizador | BPE a nivel de byte, 32.768 entradas |
-| Modelo base | castorini/gaggle-nanochat-pretrained-climbmix-20260924 (paso 227.158) |
-| Formato de chat | `<\|bos\|>`, `<\|user_start\|>`...`<\|user_end\|>`, `<\|assistant_start\|>`...`<\|assistant_end\|>`; el mensaje de sistema se fusiona con el primer mensaje de usuario |
-| Código de referencia | karpathy/nanochat en el commit `92d63d4` |
+| Formato de chat | `<\|bos\|>`, `<\|user_start\|>`...`<\|user_end\|>`, `<\|assistant_start\|>`...`<\|assistant_end\|>`; el mensaje de sistema se fusiona en el primer mensaje de usuario |
+| Modelo base | castorini/gaggle-nanochat-pretrained-climbmix-20260924 |
+| Tamano del repositorio | 31,7 GB |
+| Descargas | 629 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo mantiene íntegra la arquitectura del checkpoint base: un transformer decoder-only de 34 capas con anchura 2.176, 17 cabezas de atención de 128 dimensiones y contexto de 2.048 tokens. El tokenizador también es el del modelo base (BPE a nivel de byte con 32.768 entradas). Solo cambian los pesos. La receta de chat es la versión de dos etapas de nanochat en el commit `348fbb3` (scripts/mid_train.py y después scripts/chat_sft.py), portada sobre el código `92d63d4` con el que se entrenó el modelo base; el port solo modifica APIs y reporte (sin autocast, porque `92d63d4` gestiona el dtype de cómputo en el modelo, y la configuración completa se guarda en los metadatos del checkpoint). Ambas etapas arrancan con un optimizador nuevo.
+El modelo emplea la arquitectura nanochat depth-34, un transformer decoder-only con 34 capas, anchura de 2.176, 17 cabezas de atencion de dimension 128 y contexto de 2.048 tokens. El tokenizador y el codigo son los del modelo base, sin modificaciones; solo cambian los pesos. El mismo checkpoint se puede cargar de tres formas: con `transformers` usando `trust_remote_code=True`, con vLLM a traves del plugin del modelo base, o con el codigo propio de nanochat a partir de los ficheros del checkpoint original.
 
-El midtraining consistió en una época de 816 pasos de 524.288 tokens (secuencias de 2.048 tokens con empaquetado best-fit alineado a BOS y pérdida sobre todos los tokens), con 849.656 filas en total: 460.341 de smol-smoltalk train, 99.842 de MMLU auxiliary_train, 7.473 de GSM8K main train, 2.000 conversaciones de identidad de nanochat (2 épocas), 200.000 de SimpleSpelling y 80.000 de SpellingBee. Se usaron tasas de aprendizaje de 0,2 (embeddings), 0,004 (unembedding) y 0,02 (Muon, matrices de bloque), sin weight decay, constantes durante el 80% del entrenamiento y con decaimiento lineal hasta cero; el momento de Muon pasó de 0,85 a 0,95 en los primeros 300 pasos. El SFT fue una época de 701 pasos de 32 conversaciones con pérdida solo en los tokens del asistente, sobre 22.443 filas: ARC-Easy train (2.251), ARC-Challenge train (1.119), GSM8K main train (7.473), las primeras 10.000 de smol-smoltalk tras el shuffle con semilla 42, 1.000 conversaciones de identidad, 300 de SimpleSpelling y 300 de SpellingBee, con las mismas tasas escaladas por 0,02 y decaimiento lineal a cero. Ninguna etapa reutiliza texto de preentrenamiento (ClimbMix). El cómputo total fue de 3 h 10 min de midtraining y 25 min de SFT en una NVIDIA H100 80GB, manteniendo los tamaños de lote de la receta mediante acumulación de gradientes sobre micro-lotes de 4 secuencias.
+El entrenamiento sigue la receta de chat en dos etapas de nanochat (commit `348fbb3`), portada sobre el codigo `92d63d4` con el que se entreno el modelo base. La etapa de midtraining se ejecuto durante una epoca (816 pasos de 524.288 tokens, secuencias de 2.048 tokens con empaquetado best-fit alineado a BOS y perdida sobre todos los tokens) sobre 849.656 filas: smol-smoltalk train (460.341), MMLU auxiliary_train (99.842), GSM8K main train (7.473), conversaciones de identidad de nanochat (2.000, dos epocas), SimpleSpelling (200.000) y SpellingBee (80.000). La etapa de SFT se ejecuto durante una epoca (701 pasos de 32 conversaciones, perdida solo en tokens del asistente) sobre 22.443 filas: ARC-Easy train (2.251), ARC-Challenge train (1.119), GSM8K main train (7.473), smol-smoltalk (10.000 tras el shuffle con semilla 42), conversaciones de identidad (1.000), SimpleSpelling (300) y SpellingBee (300). Ninguna etapa reinyecta texto de preentrenamiento (ClimbMix).
+
+Los hiperparametros mantienen los del recetario original: learning rates de 0,2 (embeddings), 0,004 (unembedding) y 0,02 (Muon, matrices de bloque), sin weight decay, constantes durante el primer 80 % del entrenamiento y con decaimiento lineal a cero despues; el momento de Muon va de 0,85 a 0,95 en los primeros 300 pasos. En SFT se escalan los learning rates por 0,02 con decaimiento lineal a cero. Ambas etapas arrancan con optimizador nuevo. El computo total fue de 3 h 10 min para midtraining y 25 min para SFT en una NVIDIA H100 de 80 GB, con acumulacion de gradiente sobre micro-lotes de 4 secuencias.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con formato de chat multi-turno definido por nanochat.
-- Razonamiento básico de opción múltiple (ARC-Easy, ARC-Challenge, MMLU) y matemáticas elementales (GSM8K), con resultados moderados.
-- Generación de código a pequeña escala (HumanEval), con un rendimiento limitado (15,85 de pass@1 en el checkpoint SFT).
-- Tareas de ortografía y manipulación de cadenas (SimpleSpelling, SpellingBee), incluidas en el midtraining y el SFT.
-- Conversaciones de identidad de nanochat, incorporadas mediante datos específicos en ambas etapas.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso explícito.
-- No se documenta modo thinking, visión ni audio.
-- Capacidad multilingüe limitada al inglés según la model card.
+- Generacion de texto conversacional en formato chat de nanochat, con turnos de usuario y asistente delimitados por tokens especiales.
+- Razonamiento y conocimiento general: entrenado con MMLU y MMLU-Pro para responder preguntas de opcion multiple por letra.
+- Razonamiento matematico basico: entrenado con GSM8K (7.473 ejemplos en cada etapa) y evaluado por generacion greedy.
+- Generacion de codigo: evaluado en HumanEval por generacion greedy de hasta 512 tokens.
+- Tareas de eleccion multiple cientificas: ARC-Easy y ARC-Challenge.
+- Correccion ortografica y deletreo: SimpleSpelling y SpellingBee incluidos en ambas etapas de entrenamiento.
+- Conversaciones de identidad: 1.000-2.000 ejemplos de identidad de nanochat inyectados en el entrenamiento.
+- Capacidad multilingue: limitada al ingles (unico idioma declarado).
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking.
 
 ## Casos de uso
 
-- Investigación reproducible sobre recetas de ajuste conversacional: sirve como referencia para replicar la receta de dos etapas de nanochat (midtraining + SFT) sobre un preentrenamiento con ClimbMix, comparando directamente con el checkpoint base y con otras reproducciones de la misma receta.
-- Evaluación comparativa de formatos de prompt: permite medir la diferencia entre evaluación 5-shot en texto plano y evaluación zero-shot en formato de chat, un fenómeno documentado en la propia model card (el modelo base rinde mejor en 5-shot y los modelos de chat en formato de chat).
-- Asistente conversacional ligero en inglés para prototipos: con 2.048 tokens de contexto y 3,29B de parámetros, puede desplegarse en una sola GPU para demostraciones de chat con formato nanochat.
-- Generación de respuestas de opción múltiple: útil en pipelines de evaluación automática de preguntas tipo ARC o MMLU con puntuación por letra de respuesta.
-- Tareas de ortografía y manipulación de texto controlada: los datos de SimpleSpelling y SpellingBee del entrenamiento lo hacen adecuado para experimentos sobre corrección ortográfica o transformación de cadenas.
-- Experimentos de ajuste fino posteriores: al estar bajo licencia MIT y con pesos en safetensors compatibles con transformers y nanochat, sirve como punto de partida para SFT adicional en dominios concretos.
-- Despliegue con vLLM: el plugin de vLLM del modelo base está incluido, lo que permite servir el modelo en entornos de inferencia de alto rendimiento una vez validado el checkpoint.
+- Asistente conversacional ligero en ingles: el modelo gestiona dialogos multi-turno en el formato de chat de nanochat con contexto de 2.048 tokens, adecuado para chatbots de dominio acotado o prototipos.
+- Evaluacion de recetas de entrenamiento: sirve como referencia reproducible para comparar midtraining + SFT frente a preentrenamiento puro, dado que el autor publica tanto el checkpoint de midtraining como el modelo final.
+- Generacion de respuestas a preguntas de opcion multiple: su entrenamiento con MMLU, MMLU-Pro y ARC permite usarlo como clasificador generativo de letras de respuesta en pipelines de evaluacion academica.
+- Resolucion de problemas matematicos elementales: los 7.473 ejemplos de GSM8K en midtraining y SFT le permiten abordar problemas aritmeticos de varios pasos por generacion greedy.
+- Generacion de codigo en tareas acotadas: con HumanEval como referencia, puede emplearse para completar funciones simples en entornos de investigacion, no en produccion critica.
+- Correccion ortografica y tareas de deletreo: los datasets SimpleSpelling y SpellingBee lo hacen util para normalizacion de texto o verificacion de escritura en ingles.
+- Despliegue en hardware modesto: con 3,29B parametros y licencia MIT, es viable para experimentacion en una sola GPU consumer o en entornos de investigacion con presupuesto limitado.
+- Servicio de inferencia con vLLM: el plugin del modelo base permite servirlo con vLLM para cargas concurrentes en ingles.
 
 ## Benchmarks y rendimiento
 
-Evaluación de chat de nanochat (scripts/chat_eval.py en `92d63d4`), en formato de chat y zero-shot: ARC y MMLU por letra de respuesta, GSM8K y HumanEval por generación greedy (hasta 512 tokens). ChatCORE es la media de precisión centrada sobre estas cinco tareas.
+Los resultados publicados en la model card comparan cuatro configuraciones. Los modelos preentrenados se evaluan en formato few-shot sobre texto plano; los modelos con IFT, en formato chat zero-shot. Las filas de IFT se midieron con el mismo codigo para ambos modelos.
 
-| Modelo | ARC-Easy | ARC-Challenge | MMLU | GSM8K | HumanEval | ChatCORE |
-|---|---:|---:|---:|---:|---:|---:|
-| Este modelo (SFT, paso 700) | 81,57 | 68,00 | 44,93 | 30,63 | 15,85 | 0,412 |
-| Midtraining (paso 816) | 80,01 | 65,70 | 44,32 | 13,95 | 16,46 | 0,368 |
-| nanochat d34 + misma receta (pankajmathur/nanochat-d34-finetuned), SFT | 72,10 | 54,18 | 43,04 | 13,27 | 10,37 | 0,299 |
+| Modelo | Etapa | Formato | MMLU | MMLU-Pro | ARC-Easy | ARC-Challenge | GSM8K | HumanEval | CORE | ChatCORE |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|
+| nanochat d34 | PT | few-shot, texto plano | 25,71 | 11,49 | 73,8 | 47,0 | — | — | 0,338 | — |
+| nanochat d34 | PT + IFT | zero-shot, chat | 43,06 | 17,21 | 72,14 | 54,27 | 13,65 | 11,59 | — | 0,302 |
+| Gaggle | PT | few-shot, texto plano | 49,27 | 17,76 | 83,4 | 59,0 | — | — | 0,458 | — |
+| Gaggle | PT + IFT (este modelo) | zero-shot, chat | 44 (dato truncado en la model card) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La fila de nanochat d34 procede de su model card; su ChatCORE de 0,416 promedia seis tareas incluyendo SpellingBee, que chat_eval en `92d63d4` no incluye, por lo que el 0,299 es la media de las mismas cinco tareas recalculada a partir de sus números por tarea.
-
-MMLU y MMLU-Pro en dos formatos, para el modelo base y ambos checkpoints de chat:
-
-| Modelo | MMLU (5-shot) | MMLU-Pro (5-shot) | MMLU (formato nanochat) | MMLU-Pro (formato nanochat) |
-|---|---:|---:|---:|---:|
-| Modelo base, paso 227158 | 49,22 | 17,60 | 23,12 | 11,66 |
-| Midtraining (paso 816) | 36,25 | 13,82 | 44,32 | 19,90 |
-| Este modelo (SFT, paso 700) | 36,68 | 13,36 | 44,93 | 19,97 |
-
-El formato 5-shot usa LM Evaluation Harness 0.4.9 (mmlu, leaderboard_mmlu_pro) con prompts en texto plano, cinco ejemplos resueltos, puntuación por log-verosimilitud de la letra y contexto de 2.048 tokens. El formato nanochat es zero-shot en formato de chat, puntuado por letra; la tarea MMLU-Pro propia (code/tasks/mmlu_pro.py) aplica la tarea MMLU de nanochat a las 12.032 preguntas de test de MMLU-Pro, con las opciones de cada pregunta etiquetadas de A a J (el azar puntúa 11,1%). Cada modelo rinde mejor en el formato para el que fue entrenado. El modelo base reporta 49,3 y 17,8 en 5-shot de una ejecución anterior en otra GPU. Todas las cifras de esta sección proceden del código de nanochat en una sola H100. La pérdida de validación del midtraining bajó de 0,390 a 0,288 bits por byte; la del SFT fue 0,712.
+Nota: la model card proporcionada corta la fila del modelo final en MMLU = 44, sin completar el resto de columnas. No se dispone de los valores de MMLU-Pro, ARC-Easy, ARC-Challenge, GSM8K, HumanEval ni ChatCORE para este checkpoint.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia de orden de magnitud, los 3,29B de parámetros en fp16 ocuparían aproximadamente 6,6 GB de pesos, y en cuantizaciones de 8 y 4 bits aproximadamente 3,3 GB y 1,7 GB respectivamente, sin contar caché KV ni overhead del runtime; estas cifras son estimaciones por tamaño y no datos publicados por el autor.
-- GPU recomendadas: el entrenamiento se realizó en una NVIDIA H100 80GB; no se documentan requisitos de inferencia específicos.
-- Compatibilidad con GPU de consumo: no documentada. Por tamaño de pesos, un modelo de 3,29B en fp16 cabría en GPUs de consumo con 8 GB o más de VRAM, pero el autor no lo confirma.
-- Opciones de despliegue: transformers con trust_remote_code=True, código propio de nanochat y plugin de vLLM (el chequeo de este checkpoint en vLLM seguía en ejecución según la model card). No se mencionan llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia orientativa, un modelo de 3,29B parametros requiere aproximadamente 6,6 GB en precision FP16 solo para pesos, mas memoria para el contexto y el estado de atencion; estas cifras no las publica el autor.
+- GPU recomendadas: no disponible. El entrenamiento se realizo en una NVIDIA H100 de 80 GB, pero no se documentan requisitos de inferencia.
+- Cabida en GPU consumer: no confirmado por el autor. Por tamano, es plausible en GPUs con 8-12 GB de VRAM en cuantizaciones de 8 o 4 bits, pero no hay datos oficiales.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True`, vLLM mediante el plugin del modelo base, y el codigo propio de nanochat (commit `92d63d4`).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | ChatCORE (5 tareas) | Licencia | Disponibilidad |
-|---|---:|---:|---:|---|---|
-| gaggle-nanochat-ift-climbmix-20261031 | 3,29B (1,21B en embeddings de valor) | 2.048 | 0,412 | MIT | Hugging Face (castorini) |
-| castorini/gaggle-nanochat-pretrained-climbmix-20260924 (base) | 3,29B | 2.048 | No evaluado en chat; MMLU 5-shot 49,22 | MIT | Hugging Face (castorini) |
-| pankajmathur/nanochat-d34-finetuned | d34 (misma arquitectura) | No disponible | 0,299 (recalculado a 5 tareas) | No disponible en la información | Hugging Face (pankajmathur) |
+| Modelo | Parametros | Contexto | MMLU (chat) | Licencia | Disponibilidad |
+|---|---|---:|---:|---|---|
+| gaggle-nanochat-ift-climbmix-20261031 (este modelo) | 3,29B | 2.048 | 44 (dato truncado) | MIT | Hugging Face |
+| pankajmathur/nanochat-d34-finetuned | no disponible | no disponible | 43,06 | no disponible | Hugging Face |
+| karpathy/nanochat-d34 | no disponible | no disponible | 25,71 (PT, few-shot) | no disponible | Hugging Face |
+| castorini/gaggle-nanochat-pretrained-climbmix-20260924 | 3,29B (misma arquitectura) | 2.048 | 49,27 (PT, few-shot) | MIT | Hugging Face |
 
-La comparación se limita a los modelos citados en la model card; no se dispone de datos de otros modelos de tamaño similar para contrastar.
+La comparativa directa con modelos de la misma categoria (transformers pequenos de ~3B) no esta disponible en la informacion proporcionada. Los unicos modelos comparables documentados son las variantes de nanochat d34 y el checkpoint preentrenado Gaggle, que comparten arquitectura y receta.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto de solo 2.048 tokens, insuficiente para documentos largos o conversaciones extensas.
-- Entrenado únicamente en inglés; el rendimiento en otros idiomas no está documentado y previsiblemente será bajo.
-- Resultados débiles en código (HumanEval 15,85) y matemáticas (GSM8K 30,63), lejos de modelos especializados del mismo tamaño.
-- Riesgo de alucinación inherente a un modelo de 3,29B sin RLHF ni DPO; no se documentan mitigaciones.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- El modelo no ha sido alineado con preferencias humanas (sin RL, según la model card), por lo que puede producir respuestas no deseadas en producción.
-- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías ni documenta evaluaciones de seguridad.
-- El soporte en vLLM estaba pendiente de validación en el momento de publicación de la model card (chequeo en ejecución).
-- El formato de chat es específico de nanochat (etiquetas `<|user_start|>`, `<|assistant_start|>`, etc.); usarlo con otros formatos degradará el rendimiento, como muestran las diferencias entre evaluaciones 5-shot y en formato de chat.
-- El mensaje de sistema se fusiona con el primer mensaje de usuario, lo que limita el control fino sobre instrucciones de sistema.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- Contexto corto: 2.048 tokens, insuficiente para documentos largos o conversaciones extensas.
+- Riesgo de alucinacion: es un modelo pequeno (3,29B) entrenado sin RL; los resultados en HumanEval (11,59 en nanochat d34 IFT) y GSM8K (13,65 en nanochat d34 IFT) son bajos, lo que indica poca fiabilidad en tareas de razonamiento complejo.
+- Sesgos: no se documentan analisis de sesgo ni evaluaciones de seguridad en la model card.
+- Datos de evaluacion incompletos: la model card trunca la fila de resultados del modelo final, por lo que no se pueden verificar sus metricas completas.
+- Sin soporte documentado de tool calling, agentes, vision ni audio.
+- Licencia MIT: permite uso comercial sin restricciones, pero el modelo se distribuye sin garantias y el autor no documenta condiciones adicionales.
+- El modelo base se entreno con ClimbMix; las etapas de chat no reinyectan texto de preentrenamiento, lo que puede provocar olvido catastrofico en conocimiento general.
+- Formato de chat especifico de nanochat: requiere usar los tokens especiales correctos; un uso incorrecto del formato degrada la calidad de las respuestas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/castorini/gaggle-nanochat-ift-climbmix-20261031
-- Modelo base: https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924
+- Modelo base (preentrenado): https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924
+- nanochat d34 de Karpathy: https://huggingface.co/karpathy/nanochat-d34
+- nanochat d34 finetuned (pankajmathur): https://huggingface.co/pankajmathur/nanochat-d34-finetuned
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Dataset smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
-- Dataset ClimbMix: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
-- Modelo comparable nanochat-d34-finetuned: https://huggingface.co/pankajmathur/nanochat-d34-finetuned
+- Dataset ClimbMix-400b-shuffle: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
+- Tarea MMLU-Pro del autor: `code/tasks/mmlu_pro.py` (incluida en el repositorio del modelo)

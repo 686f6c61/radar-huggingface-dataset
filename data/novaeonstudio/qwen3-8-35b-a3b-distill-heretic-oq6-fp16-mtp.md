@@ -1,144 +1,116 @@
 # NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ6-fp16-mtp
 
 ## Resumen
+Qwen3.8-35B-A3B-Distill-Heretic-oQ6-fp16-mtp es una variante ajustada en comportamiento del modelo empero-ai/Qwen3.8-35B-A3B-Distill, publicada por Novaeon.Studio. Se trata de un modelo MoE de la familia Qwen3.5/3.6 con 35.951.822.704 parametros totales y aproximadamente 3.000 millones de parametros activos, disenado para ejecutarse sobre Apple Silicon mediante la libreria MLX y el motor oMLX. El autor aplica una edicion de pesos post-entrenamiento (LoRA de rango 50 fusionada en el checkpoint original) orientada a reducir el rechazo de peticiones por parte del modelo base, preservando la cabeza MTP nativa y la torre de vision.
 
-Qwen3.8-35B-A3B-Distill-Heretic-oQ6-fp16-mtp es una build cuantizada y descensurada del modelo empero-ai/Qwen3.8-35B-A3B-Distill, publicada por Novaeon.Studio. Se trata de un Mixture-of-Experts (MoE) de la familia Qwen3.5/3.6 con 35.951.822.704 parametros totales (unos 35B) y aproximadamente 3B parametros activos por token, 256 expertos de los cuales 8 se enrutan por capa, y 40 capas que combinan GatedDeltaNet con atencion completa. La ventana de contexto nativa es de 262.144 tokens y el modelo incluye torre de vision, por lo que su pipeline declarado es image-text-to-text.
+El modelo resuelve un problema concreto: el comportamiento de seguridad por defecto del modelo base resulta demasiado restrictivo para investigacion, ficcion y trabajo de seguridad ofensiva/defensiva legitima. Segun la model card, la sonda de 100 prompts de seguridad pasa de 98/100 rechazos en el original a 2/100 en esta variante, con una divergencia KL de 0,248 frente al base. La cuantizacion oQ6 de oMLX deja el repositorio en unos 31 GB en disco, con un peso efectivo de aproximadamente 6,9 bits por peso.
 
-El interes de esta ficha concreta esta en tres intervenciones sobre el checkpoint base: primero, una ablacion de rechazos (de-censoring) realizada con Heretic v2.0.0.dev0 mediante Arbitrary-Rank Ablation y una busqueda Optuna de 60 ensayos, que reduce los rechazos de 98/100 a 2/100 en el conjunto danino de Heretic con una divergencia KL de 0,248 (0,28 tras el merge y la cuantizacion); segundo, un merge del resultado sobre el checkpoint original para preservar los 42 tensores `mtp.*` de la cabeza MTP nativa y la torre de vision; y tercero, una cuantizacion oQ6 de oMLX (6 bits, group size 64, escalas float16, ~6,9 bpw efectivos, ~31 GB en disco).
-
-Es relevante ahora porque ofrece decodificacion sin censura manteniendo aceleracion por MTP en hardware Apple Silicon, un nicho donde las alternativas descensuradas suelen destruir la cabeza MTP (~2,5 veces mas lenta la decodificacion) o emplean recetas de precision mixta que rinden mal en MLX. El autor la posiciona explicitamente como termino medio para Macs de 48-64 GB: no es mas rapida que su build oQ8, solo ocupa menos memoria.
+Es relevante ahora porque ofrece un punto intermedio de memoria para Macs de 48-64 GB, manteniendo la cabeza MTP funcional (42 tensores `mtp.*` preservados) que otras variantes del mismo tamano descartaron, lo que segun el autor provoca una decodificacion aproximadamente 2,5 veces mas lenta. El contexto nativo es de 262.144 tokens.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE de la familia Qwen3.5/3.6 con atencion hibrida GatedDeltaNet + atencion completa, encoder de vision y cabeza MTP nativa |
-| Parametros totales | 35.951.822.704 (~35B) |
-| Parametros activos | ~3B por token |
+| Arquitectura | MoE de la familia Qwen3.5/3.6 (tag `qwen3_5_moe`), hibrida GatedDeltaNet + atencion completa, con encoder de vision |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | ~3B (256 expertos, 8 enrutados) |
 | Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | oQ6 de oMLX, 6 bits, group size 64, escalas y pesos no cuantizados en float16 (~6,9 bpw efectivos); la familia incluye tambien builds oQ8 y oQ4 |
-| Idiomas soportados | en (unico idioma declarado); la suite interna del autor incluye casos en aleman |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors en formato MLX (library_name: mlx), ~31 GB en disco |
-| Expertos | 256 enrutados, 8 activos por token |
-| Capas | 40 |
+| Tipos de cuantizacion | oMLX oQ6 (group size 64, escalas y pesos no cuantizados en float16, ~6,9 bpw efectivos). Existen variantes oQ8 y oQ4 del mismo autor; oQ2 fue construida y descartada |
+| Idiomas soportados | Ingles (unico idioma declarado en la model card) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (libreria MLX) |
+| Capas | 40 (10 de atencion completa con 2 cabezas KV) |
 | Cabeza MTP | Nativa, 42 tensores `mtp.*` preservados |
+| Tamano del repositorio | 31,0 GB |
+| RAM recomendada | 48 GB o mas |
 | Motor de inferencia | oMLX (Apple MLX) |
-| RAM sugerida | 48 GB o mas |
-| Modelo base | empero-ai/Qwen3.8-35B-A3B-Distill |
 
 ## Arquitectura y entrenamiento
+La arquitectura es un transformer MoE hibrido: 40 capas que combinan GatedDeltaNet con atencion completa (solo 10 capas de atencion completa, con 2 cabezas KV, lo que supone unos 20 KB por token de cache KV). El modelo cuenta con 256 expertos de los que se enrutan 8 por token, dando lugar a unos 3.000 millones de parametros activos sobre 35.951.822.704 totales. Incluye un encoder de vision, por lo que el pipeline declarado es `image-text-to-text`. El modelo base es una destilacion de profesores Qwen3.8 hacia Qwen3.6-35B-A3B.
 
-La arquitectura es un transformer MoE hibrido: 40 capas que alternan capas GatedDeltaNet (atencion lineal de estado) con capas de atencion completa. De estas ultimas solo hay 10, con 2 cabezas KV (~20 KB por token de cache), lo que explica que la compresion de KV apenas aporte en este modelo. El enrutado activa 8 de 256 expertos por token, lo que da ~3B parametros activos sobre 35B totales. El modelo incorpora ademas un encoder de vision y una cabeza MTP (Multi-Token Prediction) nativa de 42 tensores, que acelera la decodificacion. Segun el autor, los profesores Qwen3.8 fueron destilados dentro de Qwen3.6-35B-A3B; no se especifican el numero de tokens de entrenamiento ni la composicion del dataset, y no hay informacion sobre RLHF, DPO u otras etapas de alineamiento preferencial (no disponible).
-
-Sobre ese checkpoint se aplico un pipeline de tres pasos reproducible. Primero, Heretic v2.0.0.dev0 con Arbitrary-Rank Ablation y una busqueda Optuna de 60 ensayos, que paso de 98/100 rechazos a 2/100 en el conjunto danino de Heretic, con KL 0,248 medido por Heretic. Segundo, el resultado abliterado se mezclo de vuelta con el checkpoint original para mantener intactas la cabeza MTP y la torre de vision, quedando la KL en 0,28 tras el merge y la cuantizacion. Tercero, la cuantizacion con oMLX a oQ6. El autor indica que la ablacion degrada ligeramente la precision aritmetica, de codigo y de aleman, mientras que la cuantizacion apenas introduce perdida adicional: oQ4 empata con oQ8 en su suite. Una build de 2 bits (oQ2) fue construida y descartada por obtener 13/43 casos correctos, por lo que no hay release de 2 bits.
+El ajuste de comportamiento se realizo mediante una busqueda sobre 60 ensayos (20 con inicializacion aleatoria) aplicados a las proyecciones de salida de atencion: 30 `out_proj` de GatedDeltaNet y 10 `o_proj`. El ensayo elegido (capas 20-34) alcanzo 2/100 rechazos en la sonda de seguridad con KL 0,2481 frente al base, re-medida en 0,28 tras la fusion y cuantizacion. Se trata de una edicion direccional de pesos post-entrenamiento (LoRA de rango 50 fusionada), no de un reentrenamiento completo. La cabeza MTP nativa se conserva intacta y acelera la decodificacion; segun el autor, desactivarla reduce el rendimiento de decodificacion en torno a un 35%.
 
 ## Capacidades
-
-- Generacion de texto conversacional en ingles, con modo de pensamiento opcional (`enable_thinking`) para razonamiento dificil.
-- Entrada de imagen y texto (pipeline image-text-to-text) gracias al encoder de vision preservado.
-- Tool calling y function calling: 11/11 casos correctos en la suite interna del autor, sin degradacion respecto al modelo original.
-- Salida estructurada en JSON: 5/5 casos correctos.
-- Contexto largo real: 4/4 needles resueltos en rangos de 20.000 a 50.000 tokens, sobre una ventana nativa de 262.144 tokens.
-- Razonamiento multi-paso: 2/6 casos en modo sin pensamiento (3/6 en el original); con `enable_thinking` activado el autor recomienda usarlo para tareas de razonamiento exigente.
-- Abstenerse cuando no sabe: 3/3 casos de abstencion correctos.
-- Generacion de codigo: 2/4 casos correctos (4/4 en el original), la categoria mas afectada por la ablacion.
-- Escritura creativa, roleplay y ficcion con temas oscuros o lenguaje directo, con 0/10 rechazos en el conjunto de 10 prompts limite pero legitimos del autor (humor negro, tacos, reduccion de danos, ganzuado, monologo de villano).
-- Decodificacion acelerada por MTP con profundidad adaptativa; desactivar MTP cuesta aproximadamente un 35% de velocidad de decodificacion.
-- Capacidad multilingue limitada: solo se declara ingles, con 3/4 casos correctos en aleman en la suite interna.
+- Generacion de texto conversacional y de ficcion, con modo de pensamiento (`enable_thinking`) activable para razonamiento complejo.
+- Tool calling y function calling: la suite interna del autor mantiene 11/11 en esta categoria tras la edicion de pesos.
+- Salida estructurada en JSON: 5/5 en la suite interna.
+- Seguimiento de instrucciones multi-turno y contexto largo: agujas en contexto de 20-50k tokens resueltas 4/4.
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`, torre de vision preservada).
+- Capacidades multilingues limitadas: el unico idioma declarado es ingles; la suite interna incluye 4 casos en aleman con 3/4 de exito.
+- Decodificacion especulativa mediante cabeza MTP nativa con profundidad adaptativa.
+- Capacidad de abtencion (reconocer que no sabe): 3/3 en la suite interna.
 
 ## Casos de uso
-
-- Escritura creativa y ficcion en local: el modelo mantiene la velocidad completa del A3B (112-122 tok/s en un M5 Max) y no interpone rechazos ni sermones, por lo que resulta adecuado para novela, relato corto y guion con tematicas adultas o violentas, sin enviar el manuscrito a un servicio en la nube.
-- Roleplay y asistentes conversacionales sin filtro: los 262.144 tokens de contexto permiten mantener un historial extenso de personaje y escenario sin truncar, y la ventana amplia evita perder la ficha de personaje en sesiones largas.
-- Red team y evaluacion de seguridad: el salto de 98/100 a 2/100 rechazos, con KL 0,248-0,28 documentada, convierte a esta build en una referencia util para medir la eficacia de tecnicas de abliteracion y para construir conjuntos de prueba de mitigacion (el autor reporta 12/17 en su suite de mitigacion).
-- Analisis de documentos largos con componentes visuales: combinando la torre de vision, los 262.144 tokens de contexto y los 4/4 needles en 20-50k, se puede usar para revisar contratos, informes anuales o expedientes con graficos y tablas insertados como imagen.
-- Extraccion estructurada en pipelines locales: con 5/5 en JSON y tool calling intacto (11/11), encaja en flujos que convierten documentos o capturas en registros estructurados ejecutados enteramente en el Mac del usuario.
-- Asistencia de programacion en local con supervision humana: aun con 2/4 en la categoria de codigo, sirve para autocompletado, explicacion de fragmentos y generacion de pruebas en un portatil Apple Silicon, siempre con revision, no como agente autonomo.
-- Despliegue con requisitos de privacidad estrictos: al ejecutarse sobre oMLX con endpoint compatible con OpenAI en `127.0.0.1:8000/v1`, permite montar un asistente interno para datos clinicos, legales o financieros que no pueden salir del equipo.
-- Experimentacion con decodificacion MTP en Apple Silicon: la preservacion de los 42 tensores `mtp.*` y los ajustes medidos (profundidad adaptativa, TurboQuant KV desactivado) lo convierten en una plataforma de prueba para optimizacion de inferencia en MLX.
+- Investigacion sobre seguridad y alineamiento: el modelo permite estudiar como una edicion direccional de pesos altera la tasa de rechazo (de 98/100 a 2/100) con un coste medible en capacidad, util para analizar la relacion entre comportamiento protector y rendimiento.
+- Escritura de ficcion y narrativa: con temperatura 0,7 y top_p 0,95 el autor lo recomienda para trabajo creativo, incluyendo humor negro, dialogos con lenguaje soez o monologos de villano que el modelo base rechazaria.
+- Analisis de documentos largos: los 262.144 tokens de contexto nativo permiten procesar contratos, informes o codebases completas en una sola pasada, con 4/4 en pruebas de agujas en contexto largo.
+- Evaluacion privada de modelos: sirve como banco de pruebas para comparar recetas de cuantizacion (oQ4, oQ6, oQ8) sobre el mismo checkpoint, ya que el autor publica que oQ4 empata con oQ8 en su suite (36/43 frente a 36/43).
+- Redaccion tecnica y generacion de codigo en entornos controlados: mantiene 2/4 en la categoria de codigo de la suite interna, adecuado para borradores y prototipos, no para codigo critico sin revision.
+- Despliegue local en Mac de 48-64 GB: con unos 31 GB en disco y 48 GB de RAM recomendados, permite servir un endpoint compatible con OpenAI en `http://127.0.0.1:8000/v1` para uso personal o de equipo pequeno.
+- Destilacion y generacion de datos sinteticos: por su velocidad (112-122 tok/s en decodificacion corta sobre M5 Max) y su contexto largo, es util para producir grandes volumenes de texto de entrenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni similares) en la informacion disponible. Los unicos datos son las mediciones internas del autor sobre hardware Apple M5 Max de 128 GB con oMLX, pensamiento desactivado y TurboQuant KV desactivado.
+Suite interna del autor (43 casos deterministas) y suite de mitigacion (17 casos), medidas sobre Apple M5 Max de 128 GB con oMLX y pensamiento desactivado:
 
-Velocidad, oQ6 Heretic frente al oQ8 original del autor:
-
-| Metrica | original oQ8 | Heretic oQ6 |
-|---|---|---|
-| Decodificacion, prompt corto | ~126-129 tok/s | 112-122 tok/s |
-| Decodificacion a 53k tokens de contexto | ~91-103 tok/s | 97-99 tok/s |
-| Prefill en frio a 53k | 3.331 tok/s | 2.606 tok/s |
-| 4 peticiones concurrentes, agregado | ~221 tok/s | 203 tok/s |
-
-Suite de regresion interna (43 casos deterministas) y suite de mitigacion (17 casos):
-
-| Categoria | original oQ8 | Heretic oQ8 | Heretic oQ6 | Heretic oQ4 |
+| Categoria | oQ8 original | oQ8 editado | oQ6 editado | oQ4 editado |
 |---|---|---|---|---|
 | Tool calling | 11/11 | 11/11 | 11/11 | 11/11 |
 | JSON | 5/5 | 5/5 | 5/5 | 5/5 |
 | Seguimiento de instrucciones | 6/6 | 5/6 | 5/6 | 5/6 |
 | Aleman | 4/4 | 3/4 | 3/4 | 3/4 |
-| Needles de contexto largo | 4/4 | 4/4 | 4/4 | 4/4 |
-| Razonamiento (sin pensamiento) | 3/6 | 2/6 | 2/6 | 2/6 |
-| Abstencion | 3/3 | 3/3 | 3/3 | 3/3 |
+| Agujas en contexto largo | 4/4 | 4/4 | 4/4 | 4/4 |
+| Razonamiento (sin thinking) | 3/6 | 2/6 | 2/6 | 2/6 |
+| Abtencion | 3/3 | 3/3 | 3/3 | 3/3 |
 | Codigo | 4/4 | 3/4 | 2/4 | 3/4 |
 | Total | 40/43 | 36/43 | 35/43 | 36/43 |
 | Suite de mitigacion | 16/17 | 14/17 | 12/17 | 14/17 |
 
-Rechazos:
+Rendimiento medido (M5 Max 128 GB, oMLX, thinking off, TurboQuant KV off):
 
-| Conjunto | original | Heretic oQ6 |
+| Metrica | oQ8 original | oQ6 editado |
 |---|---|---|
-| Conjunto danino de Heretic (100 prompts, pre-cuantizacion) | 98/100 | 2/100 |
-| Prompts limite pero legitimos (10) | 2/10 rechazados | 0/10 rechazados |
+| Decodificacion, prompt corto | ~126-129 tok/s | 112-122 tok/s |
+| Decodificacion a 53k de contexto | ~91-103 tok/s | 97-99 tok/s |
+| Prefill, 53k en frio | 3.331 tok/s | 2.606 tok/s |
+| 4 peticiones concurrentes, agregado | ~221 tok/s | 203 tok/s |
+
+Sonda de seguridad (100 prompts, pre-cuantizacion): 98/100 rechazos en el original frente a 2/100 en el editado. En los 10 prompts limite pero legitimos del autor (humor negro, lenguaje soez, reduccion de danos, ganzuas, monologo de villano), 2/10 rechazos en el original frente a 0/10 en el editado. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
-
-- RAM sugerida por el autor: 48 GB o mas; la build esta pensada como termino medio para Macs de 48-64 GB.
-- Peso en disco y en memoria: ~31 GB para los pesos oQ6, mas cache KV y overhead del runtime.
-- Cache KV reducida: solo 10 capas de atencion completa con 2 cabezas KV, aproximadamente 20 KB por token, lo que a 53k tokens supone del orden de 1 GB de KV.
-- Hardware de referencia de las mediciones: Apple M5 Max de 128 GB, libreria oMLX.
-- Cabe en GPU de consumo en el sentido de Apple Silicon unificado: si en Macs de 48-64 GB y superiores; no se proporcionan datos para GPU NVIDIA (A100, H100, RTX 4090) porque el formato es MLX y no hay pesos GGUF o CUDA en esta ficha (no disponible).
-- Opciones de despliegue: oMLX sobre Apple MLX, con servidor compatible con OpenAI en `http://127.0.0.1:8000/v1` y model id `Qwen3.8-35B-A3B-Distill-Heretic-oQ6-fp16-mtp`. Descarga mediante `hf download`. No se documentan rutas para vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput medidos: 112-122 tok/s de decodificacion con prompt corto, 97-99 tok/s a 53k tokens de contexto, 2.606 tok/s de prefill en frio a 53k y 203 tok/s agregados con 4 peticiones concurrentes.
-- Ajustes medidos recomendados: `mtp_enabled: true` con profundidad adaptativa; `turboquant_kv_enabled: false` (desactivarlo aporta +37% de decodificacion a 53k de contexto y +23% de throughput agregado); `enable_thinking: false` para chat y escritura creativa.
-- Muestreo recomendado: temperatura 0,7 con top_p 0,95 para creatividad; temperatura 0-0,3 para tareas facticas.
+- VRAM/RAM: 48 GB o mas recomendados por el autor; el repositorio ocupa 31,0 GB en disco con cuantizacion oQ6.
+- Hardware de referencia: Apple M5 Max con 128 GB de memoria unificada, plataforma sobre la que se construyo y midio el modelo.
+- GPU: al ser un modelo MLX, esta orientado a Apple Silicon; no se documenta soporte para CUDA, A100, H100 ni RTX 4090 en la informacion disponible.
+- Cabe en consumer GPU: no hay datos para GPUs de consumo tipo RTX 4090; en Mac, el autor lo situa como opcion para equipos de 48-64 GB.
+- Despliegue: oMLX (recomendado), con endpoint compatible con OpenAI en `http://127.0.0.1:8000/v1` bajo el identificador `Qwen3.8-35B-A3B-Distill-edited-oQ6-fp16-mtp`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Ajustes medidos: `mtp_enabled: true` con profundidad adaptativa (la profundidad fija 2/3 es mas lenta; MTP desactivado cuesta ~35% de decodificacion); `turboquant_kv_enabled: false` (activarlo cuesta un 37% de decodificacion a 53k de contexto y un 23% de throughput agregado).
+- Latencia y throughput: 112-122 tok/s en decodificacion con prompt corto, 97-99 tok/s a 53k de contexto, 2.606 tok/s de prefill en frio a 53k y 203 tok/s agregados con 4 peticiones concurrentes.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks publicos de alternativas de otros autores, por lo que la comparacion se limita a las builds de la misma familia publicadas por Novaeon.Studio y al checkpoint original:
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Este modelo (oQ6 editado) | 35,95B totales / ~3B activos | 262.144 | Apache-2.0 | MLX, Apple Silicon | Edicion de comportamiento, MTP nativa, ~31 GB |
+| Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp (Novaeon.Studio) | 35,95B totales / ~3B activos | 262.144 | Apache-2.0 | MLX, Apple Silicon | Version oQ8 del mismo autor, sin edicion de comportamiento; 40/43 en la suite interna |
+| empero-ai/Qwen3.8-35B-A3B-Distill (base) | 35,95B totales / ~3B activos | no disponible | Apache-2.0 | safetensors | Modelo base sin cuantizar ni editar; comportamiento de seguridad original |
 
-| Modelo | Parametros | Contexto | Cuantizacion | Tamano | Suite interna | Rechazos | Licencia |
-|---|---|---|---|---|---|---|---|
-| original oQ8 (seat del autor) | 35B totales / ~3B activos | 262.144 | oQ8 | no disponible | 40/43 · mitigacion 16/17 | 98/100 | apache-2.0 |
-| Heretic oQ8 | 35B totales / ~3B activos | 262.144 | oQ8 | no disponible | 36/43 · mitigacion 14/17 | 2/100 (pre-cuantizacion) | apache-2.0 |
-| Heretic oQ6 (esta ficha) | 35B totales / ~3B activos | 262.144 | oQ6 (~6,9 bpw) | ~31 GB | 35/43 · mitigacion 12/17 | 2/100 (pre-cuantizacion) | apache-2.0 |
-| Heretic oQ4 | 35B totales / ~3B activos | 262.144 | oQ4 | no disponible | 36/43 · mitigacion 14/17 | no disponible | apache-2.0 |
-
-Nota del autor: en este MoE la build oQ6 no es mas rapida que la oQ8; su unico vantaja es el ahorro de memoria (48-64 GB frente a configuraciones mayores). La build oQ2 fue construida y rechazada (13/43) y no se publico. Comparativas con modelos de otros fabricantes del mismo rango (por ejemplo otros MoE de ~30-35B con ~3B activos) no disponibles en la informacion proporcionada.
+No se dispone de datos de benchmarks estandar ni de comparativas con modelos de otros autores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- La ablacion degrada capacidades medibles: codigo cae de 4/4 a 2/4, aleman de 4/4 a 3/4, seguimiento de instrucciones de 6/6 a 5/6 y razonamiento sin pensamiento de 3/6 a 2/6. La suite de mitigacion baja de 16/17 a 12/17 con oQ6.
-- El propio autor desaconseja usarlo como agente autonomo de tool calling: los rechazos funcionan como capa de seguridad cuando las herramientas tienen efectos secundarios. Mantiene el modelo original como seat de agente por defecto.
-- Modelo descensurado por diseno: generara contenido que otros modelos rechazan. Esto implica riesgo de contenido ofensivo, ilegal o peligroso, y responsabilidad legal derivada del uso.
-- Riesgo de alucinacion no cuantificado: la suite interna solo mide abstencion en 3 casos, insuficiente para garantizar fiabilidad factica en produccion.
-- Solo se declara soporte de ingles. El comportamiento en castellano no esta evaluado en la informacion disponible y el unico caso multilingue reportado (aleman) ya pierde un caso respecto al original.
-- Cobertura de contexto: los needles verificados llegan a 20-50k tokens; no hay evidencia publicada de recuperacion fiable cerca de los 262.144 tokens declarados.
-- Licencia apache-2.0 heredada del modelo base, lo que en principio permite uso comercial, pero conviene verificar los terminos del checkpoint base y de los profesores Qwen3.8 citados antes de desplegarlo en producto.
-- Dependencia de plataforma: los pesos estan en formato MLX y requieren Apple Silicon con oMLX. No hay GGUF ni safetensors para CUDA en esta ficha, lo que limita el despliegue en infraestructura NVIDIA.
-- Repositorio con 0 descargas y 1 me gusta en el momento de la consulta, creado y actualizado el 3 de octubre de 2026: validacion comunitaria practicamente nula, y la evaluacion se apoya exclusivamente en la suite privada del autor.
-- Los numeros de rendimiento proceden de un unico dispositivo (M5 Max de 128 GB) y de una configuracion concreta (pensamiento y TurboQuant KV desactivados); no son extrapolables directamente a otros equipos.
+- La edicion de pesos reduce deliberadamente el comportamiento de seguridad: la tasa de rechazo cae de 98/100 a 2/100. El autor recomienda aplicar una capa de seguridad propia antes de cualquier uso en produccion.
+- No debe usarse como agente autonomo con tool calling sobre herramientas con efectos secundarios; el autor mantiene el modelo original como asiento por defecto para agentes.
+- La edicion cuesta precision en aritmetica, codigo y aleman (KL ~0,25): el total de la suite interna baja de 40/43 a 35/43 y la suite de mitigacion de 16/17 a 12/17.
+- El razonamiento sin modo thinking es debil: 2/6 en la suite interna, frente a 3/6 del original.
+- Riesgo de alucinacion: no se documenta ninguna mitigacion especifica; la abtencion se mantiene en 3/3 en la suite interna, pero la suite es pequena.
+- Idioma: solo se declara ingles; el soporte multilingue no esta garantizado y el unico caso adicional probado (aleman) pierde un caso tras la edicion.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el propio autor desaconseja el uso en produccion sin capa de seguridad adicional.
+- Dependencia de plataforma: el formato es MLX y el motor oMLX; no hay pesos GGUF ni soporte documentado para ecosistemas CUDA.
+- La variante oQ2 fue construida y rechazada por rendimiento roto (13/43), por lo que no existe release de 2 bits.
+- Las cifras de rendimiento proceden de un unico equipo (M5 Max de 128 GB) y pueden no trasladarse a otros Macs.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ6-fp16-mtp
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
-- Build hermana oQ8: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ8-fp16-mtp
-- Build hermana oQ4: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ4-fp16-mtp
-- Build del autor sin ablacion (seat oQ8): https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp
-- Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic
-- oMLX (runtime y cuantizacion): https://github.com/jundot/omlx
-- Sitio del autor: https://novaeon.studio
-- Resultados de la busqueda web: no se ha encontrado ningun enlace relevante o verificable sobre este modelo; los resultados devueltos no guardan relacion con el contenido tecnico de la ficha.
+- Version oQ8 del mismo autor: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp
+- Motor oMLX: https://github.com/jundot/omlx
+- Novaeon.Studio: https://novaeon.studio

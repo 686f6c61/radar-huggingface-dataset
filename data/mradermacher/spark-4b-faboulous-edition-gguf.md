@@ -2,49 +2,49 @@
 
 ## Resumen
 
-Spark-4B-Faboulous-Edition-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo base `groxaxo/Spark-4B-Faboulous-Edition`. No se trata de un modelo entrenado por mradermacher, sino de una conversión de pesos a distintos niveles de precisión para facilitar su despliegue en entornos con recursos limitados (llama.cpp, Ollama, LM Studio y similares). El repositorio se publicó el 6 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
+Spark-4B-Faboulous-Edition-GGUF es la distribucion en formato GGUF del modelo groxaxo/Spark-4B-Faboulous-Edition, un modelo de lenguaje de aproximadamente 4.112 millones de parametros (4,11 B) orientado a generacion de codigo y conversacion. La cuantizacion la mantiene mradermacher, un conocido publicador de versiones GGUF de modelos open source, y el resultado se distribuye bajo licencia Apache 2.0. El modelo base esta etiquetado con los tags `spark`, `code`, `mlx` y `custom_code`, lo que sugiere un origen vinculado al ecosistema MLX de Apple y a un tipo de arquitectura con codigo personalizado.
 
-El modelo base pertenece a la familia Spark, una serie de modelos de aproximadamente 4.000 millones de parámetros que, según los repositorios hermanos del mismo autor de cuantizaciones (SparkMuse-4B, Spark-X2.6-4B-heretic), se asocian a tareas de escritura creativa, generación de novela, roleplay y contexto largo. La model card del repositorio no aporta información sobre arquitectura, datos de entrenamiento, licencia ni idiomas, por lo que buena parte de las especificaciones queda marcada como no disponible.
+La relevancia practica de esta ficha radica en que el repositorio ofrece una bateria completa de cuantizaciones estaticas (de Q2_K a f16) pensadas para ejecucion local en hardware de consumo mediante llama.cpp y derivados. Con un modelo de 4 B, las versiones Q4_K_M (2,7 GB) y Q5_K_M (3,1 GB) caben en GPUs consumer con 6-8 GB de VRAM, lo que lo convierte en un candidato para prototipado rapido, generacion de codigo en local y despliegues de bajo coste.
 
-La relevancia de esta ficha es fundamentalmente práctica: permite identificar qué cuantizaciones existen, qué nivel de compresión ofrecen y en qué hardware podrían ejecutarse, aun cuando la información sobre el modelo subyacente sea escasa. Cualquier evaluación de calidad deberá remitirse al repositorio del modelo original.
+No obstante, la informacion publicada es escasa: no se detallan la longitud de contexto, la composicion del dataset de entrenamiento, los idiomas soportados ni resultados de benchmarks. Esta ficha recoge exclusivamente los datos disponibles y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de ~4B parámetros, presumiblemente transformer) |
-| Parametros totales | ~4.000 millones (según el nombre del modelo base) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer con `custom_code` (detalles no disponibles) |
+| Parametros totales | 4.112.079.360 (4,11 B) |
+| Parametros activos | no disponible (no es MoE segun los datos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas, `quantize_version: 2`, `output_tensor_quantised: 1`) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (segun model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (original en safetensors/transformers) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base `groxaxo/Spark-4B-Faboulous-Edition`: la model card del repositorio GGUF se limita a declarar que son cuantizaciones estáticas del modelo original y a listar los niveles de cuantización generados. No se documentan número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas como decodificación especulativa o atención lineal.
+El modelo base es groxaxo/Spark-4B-Faboulous-Edition, del que no se publican detalles de arquitectura mas alla de los tags `spark`, `code`, `mlx` y `custom_code`. La presencia de `custom_code` implica que la carga en transformers requiere `trust_remote_code=True` y que la implementacion no es la estandar de Llama o Mistral. El tag `mlx` apunta a que el modelo pudo entrenarse o convertirse originalmente para el framework MLX de Apple, aunque esta version GGUF es independiente de ese ecosistema.
 
-Lo único verificable es el proceso de conversión: se aplicó el pipeline de cuantización de mradermacher con `convert_type: hf` y `quantize_version: 2`, generando tanto cuantizaciones K-quant (Q2_K a Q8_0) como una variante IQ4_XS (importancia-based, 4 bits) y un volcado en punto flotante de 16 bits (x-f16). No se incluye mmproj, lo que sugiere que el modelo base no incorpora capacidades multimodales o que estas no se han preservado en la conversión.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card del repositorio GGUF es puramente una ficha de cuantizacion generada por mradermacher y no aporta datos del entrenamiento.
 
 ## Capacidades
 
-- Generación de texto: capacidad básica esperada de un modelo de ~4B parámetros, sin confirmación documental en este repositorio.
-- Escritura creativa y narrativa: los repositorios hermanos de la familia Spark (SparkMuse-4B) se etiquetan explícitamente para creative-writing, novel-generation y roleplay, lo que sugiere una orientación similar, aunque no está confirmado para esta variante.
-- Contexto largo: no confirmado para esta variante; el modelo hermano SparkMuse-4B declara contexto de hasta 1M de tokens.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (el modelo hermano SparkMuse-4B declara chino e inglés).
-- Modo thinking, visión o audio: no disponible; la ausencia de mmproj descarta, en principio, visión en esta conversión.
+- Generacion de texto conversacional: el tag `conversational` y el pipeline asociado indican uso previsto para dialogos multi-turno.
+- Generacion de codigo: el tag `code` sugiere especializacion o entrenamiento orientado a programacion, aunque no se especifican lenguajes ni benchmarks.
+- Razonamiento general: no hay evidencia publicada de capacidades especificas de razonamiento matematico o logico.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible.
+- Capacidades multilingues: la model card declara unicamente `en`; no se confirma soporte de castellano ni de otros idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de ~4B parámetros en GPUs con 4-6 GB de VRAM o en CPU con llama.cpp, lo que facilita pruebas locales sin infraestructura dedicada.
-- Prototipado de escritura creativa: si el modelo base hereda la orientación narrativa de la familia Spark, podría emplearse para generar borradores de relatos o diálogos en entornos de desarrollo con recursos limitados.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 niveles distintos, lo que permite medir la degradación de calidad (perplejidad, coherencia) entre Q2_K y Q8_0 sobre el mismo modelo base.
-- Integración en aplicaciones de escritorio: al estar en GGUF, puede cargarse en Ollama o LM Studio para asistentes locales de texto sin conexión.
-- Filtrado y generación de texto por lotes en CPU: con Q4_K_S o Q3_K_M se puede procesar volumen moderado de texto en servidores sin GPU.
-- Base para fine-tuning ligero o experimentación: la versión x-f16 sirve como referencia de pesos completos para comparaciones o para reconvertir a otros formatos.
+- Asistente de codigo en local: con la cuantizacion Q4_K_M (2,7 GB) el modelo puede ejecutarse en una GPU consumer de 6-8 GB para autocompletado y explicacion de fragmentos de codigo, sin depender de APIs externas.
+- Prototipado de chatbots: su naturaleza conversacional y su tamano contenido permiten iterar rapidamente en el diseno de flujos de dialogo antes de escalar a modelos mayores.
+- Entornos con requisitos de privacidad: al ser Apache 2.0 y ejecutable en local, encaja en escenarios donde el codigo o los datos no pueden salir de la infraestructura propia.
+- Educacion y experimentacion: sirve como modelo de referencia para aprender a desplegar GGUF con llama.cpp, Ollama o LM Studio en estaciones de trabajo modestas.
+- Generacion de documentacion tecnica: puede redactar comentarios, docstrings y borradores de documentacion a partir de fragmentos de codigo, siempre con revision humana por el riesgo de alucinacion.
+- Procesamiento por lotes de bajo coste: con la version Q8_0 (4,5 GB) o f16 (8,3 GB) en una GPU de 16 GB se pueden lanzar tareas de generacion masiva con mayor fidelidad que las cuantizaciones agresivas.
 
 ## Benchmarks y rendimiento
 
@@ -52,44 +52,47 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo de ~4B parámetros):
-  - x-f16: ~8 GB (pesos en FP16).
-  - Q8_0: ~4,3 GB.
-  - Q6_K: ~3,3 GB.
-  - Q5_K_M: ~2,9 GB.
-  - Q4_K_M: ~2,5 GB.
-  - IQ4_XS: ~2,3 GB.
-  - Q3_K_M: ~2,0 GB.
-  - Q2_K: ~1,6 GB.
-  - (Estimaciones basadas en el tamaño típico de pesos para 4B parámetros; no confirmadas por el autor.)
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 8 GB, RTX 4090 para las variantes de mayor precisión; A100/H100 solo si se busca throughput alto en batch.
-- Cabe en GPU de consumo: sí, desde GPUs de 4 GB para Q4_K_M/IQ4_XS en adelante; las variantes Q2_K y Q3_K pueden ejecutarse incluso en iGPU con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp; vLLM y TGI no soportan GGUF de forma nativa sin conversión previa.
-- Latencia y throughput: no disponibles; dependerán del hardware y del nivel de cuantización.
+- VRAM estimada para inferencia (aproximada, segun los tamanos de archivo publicados):
+  - Q2_K: ~1,9 GB
+  - Q4_K_M: ~2,7 GB
+  - Q5_K_M: ~3,1 GB
+  - Q6_K: ~3,5 GB
+  - Q8_0: ~4,5 GB
+  - f16: ~8,3 GB
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones altas; A100/H100 solo si se necesita throughput elevado o contexto largo.
+- Cabe en GPU consumer: si, desde una GTX 1660 6 GB (Q4_K_M) hasta una RTX 4090 (f16 con margen amplio).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa generalizada, aunque existen variantes; para produccion con transformers se usaria el modelo base en safetensors.
+- Latencia y throughput: no disponibles; dependen del hardware, la cuantizacion y el backend. Como referencia cualitativa, un modelo de 4 B en Q4_K_M suele generar decenas de tokens por segundo en GPUs consumer modernas, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Spark-4B-Faboulous-Edition-GGUF (este) | ~4B | no disponible | no disponible | GGUF | Cuantizaciones estáticas de un modelo base no documentado |
-| SparkMuse-4B-GGUF (mradermacher) | ~4B | hasta 1M (según model card) | Apache-2.0 | GGUF | Orientado a escritura creativa, novela y roleplay; chino e inglés |
-| Spark-X2.6-4B-heretic-GGUF (mradermacher) | ~4B | no disponible | no disponible | GGUF | Variante "heretic" (sin restricciones de alineamiento declaradas) |
+| Spark-4B-Faboulous-Edition (este) | 4,11 B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en codigo segun tags; sin benchmarks publicados |
+| Qwen2.5-Coder-3B | 3,09 B | 32.768 tokens (tipico) | Apache 2.0 | GGUF, safetensors | Benchmark publico amplio; ecosistema maduro |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | GGUF, safetensors | Multilingue oficial; requiere aceptar licencia |
+| Phi-3.5-mini-instruct | 3,82 B | 128.000 tokens | MIT | GGUF, safetensors | Buen rendimiento en razonamiento y codigo |
 
-La comparación se limita a repositorios de la misma familia y mismo autor de cuantizaciones, ya que no se dispone de datos de rendimiento ni de especificaciones del modelo base para contrastar con alternativas de otros desarrolladores.
+La comparativa es orientativa: los datos de los modelos alternativos provienen de sus fichas publicas y no de una evaluacion directa contra Spark-4B. Para Spark-4B no hay benchmarks ni contexto declarado, por lo que la comparacion cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Información del modelo base ausente: no se documentan arquitectura, datos de entrenamiento, licencia ni idiomas, lo que impide evaluar su idoneidad para producción.
-- Licencia no especificada: al no indicarse licencia, no puede confirmarse el uso comercial; debe consultarse el repositorio original `groxaxo/Spark-4B-Faboulous-Edition`.
-- Riesgo de alucinación: inherente a modelos de ~4B parámetros; no hay evaluaciones publicadas que lo cuantifiquen.
-- Degradación por cuantización: las variantes Q2_K y Q3_K_S pueden perder coherencia de forma notable; se recomienda Q4_K_M o superior para uso serio.
-- Contexto e idiomas no confirmados: no se puede asumir soporte multilingüe ni ventanas largas sin verificar el modelo base.
-- Sin soporte multimodal en esta conversión: la ausencia de mmproj implica que no se preservan capacidades de visión aunque el modelo base las tuviera.
-- Repositorio sin actividad: 0 descargas y 0 likes en el momento de la ficha; no hay evidencia de validación por la comunidad.
+- Ausencia total de benchmarks publicados: no se puede verificar su calidad frente a alternativas del mismo tamano.
+- Contexto desconocido: no se declara la longitud de contexto, lo que impide planificar usos con documentos largos.
+- Idioma: la model card solo declara ingles; el rendimiento en castellano es incierto y probablemente deficiente.
+- Riesgo de alucinacion: como cualquier LLM de 4 B, especialmente en tareas de codigo, puede inventar APIs, funciones o librerias inexistentes.
+- Requiere `trust_remote_code=True` en transformers por el tag `custom_code`, lo que implica ejecutar codigo del autor del modelo; conviene auditar el repositorio base antes de usarlo en produccion.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base podria tener condiciones adicionales no reflejadas en esta ficha; verificar el repositorio original groxaxo/Spark-4B-Faboulous-Edition.
+- Cuantizaciones agresivas (Q2_K, Q3_K_S) degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
+- El repositorio GGUF tiene 0 likes y 763 descargas en el momento de la consulta: es un modelo de nicho con poca validacion comunitaria.
+- Sin garantias de mantenimiento: el modelo base y la cuantizacion son proyectos de autor individual.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Spark-4B-Faboulous-Edition-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Spark-4B-Faboulous-Edition-GGUF
 - Modelo base: https://huggingface.co/groxaxo/Spark-4B-Faboulous-Edition
-- Repositorio hermano SparkMuse-4B-GGUF: https://huggingface.co/mradermacher/SparkMuse-4B-GGUF
-- Repositorio hermano Spark-X2.6-4B-heretic-GGUF: https://huggingface.co/mradermacher/Spark-X2.6-4B-heretic-GGUF
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Spark-4B-Faboulous-Edition-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Spark-4B-Faboulous-Edition-GGUF
+- FAQ y peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

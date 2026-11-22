@@ -2,48 +2,49 @@
 
 ## Resumen
 
-Smaug-Uncensored-GGUF es la distribucion en formato GGUF del modelo abacusai/Smaug-Uncensored, publicada por el usuario mradermacher. Se trata de una cuantizacion estatica del modelo original de Abacus.AI, pensada para su uso con llama.cpp y otros runners compatibles con GGUF. El modelo cuenta con 27.320.697.856 parametros (aproximadamente 27,3 mil millones) y esta etiquetado como "agentic", lo que sugiere un enfasis en capacidades de razonamiento multi-paso y uso de herramientas.
+Smaug-Uncensored-GGUF es la distribucion en formato GGUF del modelo abacusai/Smaug-Uncensored, publicada por el usuario mradermacher. El modelo base es un transformer de aproximadamente 27.320 millones de parametros (27,3B) afinado mediante DPO (Direct Preference Optimization) por Abacus.AI, orientado a casos de uso "agentic" y a reducir el rechazo de peticiones (por eso la etiqueta "uncensored"). Esta version GGUF esta pensada para inferencia local con llama.cpp y derivados, no para entrenamiento.
 
-El modelo base fue afinado mediante DPO (Direct Preference Optimization) segun las etiquetas de la model card, y esta disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Los idiomas declarados son ingles (en) y chino (zh). La denominacion "Uncensored" indica que el modelo ha sido entrenado con menores restricciones de rechazo en comparacion con modelos alineados de forma mas conservadora.
+La relevancia de esta publicacion es practica: convierte un modelo de 27B en artefactos ligeros (desde 11 GB en Q2_K hasta 29,1 GB en Q8_0) que pueden ejecutarse en hardware de consumo o en servidores modestos. El repositorio incluye ademas dos ficheros mmproj (Q8_0 y f16) que actuan como suplemento multimodal, lo que sugiere capacidades de vision en el modelo base, aunque la model card no detalla su alcance.
 
-La relevancia de esta publicacion radica en que ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K hasta Q8_0, ademas de f16 y mmproj para componentes multimodales), lo que facilita su despliegue en hardware de consumo con requisitos de VRAM muy distintos. El repositorio ocupa 93,2 GB en total, aunque cada cuantizacion individual pesa entre 11 y 29 GB.
+La informacion disponible es limitada: la model card del repositorio GGUF es una plantilla generica de cuantizacion y no documenta arquitectura interna, contexto, datos de entrenamiento ni benchmarks. Todo lo que sigue se limita a lo verificable en los metadatos y en la propia model card; los datos no confirmados se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base transformer, detalles no especificados) |
-| Parametros totales | 27.320.697.856 (~27,3 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q2_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS (segun etiquetas); disponibles en repo: Q2_K, Q3_K_M, Q4_K_S, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en, zh |
+| Arquitectura | Transformer (detalle interno no disponible) |
+| Parametros totales | 27.320.697.856 (~27,3B) |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | Ingles (en) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base original esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. Los parametros totales (27,3 B) y la presencia de ficheros mmproj (multi-modal supplement) en el repositorio indican que el modelo base podria incorporar componentes multimodales, aunque la model card no lo confirma explicitamente ni detalla que modalidades cubre. El etiquetado "agentic" y "dpo" sugiere que el entrenamiento incluyo una fase de optimizacion de preferencias orientada a comportamiento agentico.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Los metadatos indican un transformer con 27.320.697.856 parametros y etiquetas que lo describen como "agentic" y afinado con DPO. La presencia de ficheros mmproj (multi-modal projection) en el repositorio GGUF indica que el modelo base incorpora un componente multimodal, presumiblemente vision-lenguaje, aunque no se especifica el codificador visual ni la resolucion de imagen soportada.
 
-La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La cuantizacion fue realizada por mradermacher mediante cuantizacion estatica (se indica "static quants" y "output_tensor_quantised: 1"), y el autor senala que las cuantizaciones ponderadas/imatrix no estaban disponibles en el momento de la publicacion.
+Respecto al entrenamiento, la unica informacion disponible es que el modelo base fue afinado por Abacus.AI con DPO sobre un modelo previo (no identificado en la documentacion). No se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases adicionales de RLHF o SFT. Las cuantizaciones de este repositorio son estaticas (no ponderadas por imatrix); el autor remite a su repositorio i1-GGUF para las versiones ponderadas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y chino.
-- Capacidades orientadas a agentes (tag "agentic"): razonamiento multi-paso y presumiblemente uso de herramientas, aunque la model card no detalla el soporte explicito de tool calling.
-- Comportamiento con menores restricciones de rechazo ("Uncensored"), orientado a escenarios donde se requiere menor filtrado de respuestas.
-- Posible soporte multimodal: el repositorio incluye ficheros mmproj (Q8_0 y f16) descritos como "multi-modal supplement", lo que indica la existencia de un proyector multimodal, aunque no se especifica que modalidades cubre.
-- Afinado mediante DPO segun las etiquetas del modelo.
+- Generacion de texto conversacional multi-turno, segun la etiqueta "conversational" del repositorio.
+- Orientacion a flujos agenticos (etiqueta "agentic"): uso previsto en tareas de razonamiento multi-paso y automatizacion.
+- Afinado con DPO para alineamiento por preferencias, lo que en la practica suele traducirse en respuestas mas directas y menor tasa de rechazo.
+- Capacidad multimodal probable (vision) por la presencia de ficheros mmproj, aunque el alcance exacto no esta documentado.
+- Soporte bilingue limitado a ingles y chino.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Modo de razonamiento explicito (thinking mode): no disponible.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones Q2_K (11 GB) y Q4_K_S (15,9 GB) permiten ejecutar el modelo en GPUs con 12-16 GB de VRAM mediante llama.cpp, algo inviable con los pesos en f16.
-- Prototipado de agentes conversacionales: el etiquetado "agentic" y el formato GGUF facilitan integrar el modelo en frameworks de agentes locales para pruebas de razonamiento multi-paso sin depender de APIs externas.
-- Investigacion sobre alineacion y filtrado: al tratarse de un modelo "Uncensored", resulta util para estudiar el comportamiento de modelos con restricciones reducidas en tareas de evaluacion comparativa de sesgos y rechazos.
-- Generacion de texto en ingles y chino: util para pipelines bilingues de resumen, redaccion o traduccion asistida en entornos donde se prefiera inferencia local por privacidad.
-- Experimentacion con cuantizaciones: el rango de cuantizaciones disponibles (de Q2_K a Q8_0) permite medir el impacto de la compresion en la calidad de salida para este modelo concreto.
-- Inferencia en entornos sin conectividad: al ser un GGUF ejecutable con llama.cpp, puede desplegarse en maquinas aisladas o air-gapped donde no se permite el acceso a servicios en la nube.
-- Evaluacion de modelos multimodales: la presencia de ficheros mmproj permite probar el componente multimodal con runners que soporten proyectores, aunque la documentacion al respecto es escasa.
+- Despliegue local de un asistente conversacional de 27B: con la cuantizacion Q4_K_M (16,9 GB) el modelo puede ejecutarse en una GPU de consumo de 24 GB o en configuraciones CPU+GPU con llama.cpp, cubriendo conversaciones multi-turno sin depender de APIs externas.
+- Investigacion sobre alineamiento y rechazo: al ser un modelo "uncensored" afinado con DPO, resulta util para estudiar como varia la tasa de negativas y la calidad de respuesta segun la cuantizacion empleada (comparando Q2_K frente a Q8_0).
+- Prototipado de agentes autonomos: la etiqueta "agentic" y el formato GGUF permiten integrarlo en frameworks de agentes locales (por ejemplo, mediante servidores compatibles con la API de OpenAI) para tareas de planificacion y ejecucion de pasos.
+- Procesamiento de documentos con componente visual: los ficheros mmproj permiten, en teoria, tareas de imagen-a-texto en pipelines locales, aunque conviene validar el soporte real en la version de llama.cpp utilizada.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 11 variantes de cuantizacion, lo que lo convierte en un banco de pruebas para medir la degradacion de perplejidad y calidad en un modelo de 27B.
+- Desarrollo de aplicaciones bilingues ingles-chino en entornos con requisitos de privacidad: al ejecutarse en local, los datos no salen del entorno, lo que encaja en sectores regulados.
 
 ## Benchmarks y rendimiento
 
@@ -51,40 +52,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (segun cuantizacion): Q2_K ~11 GB; Q3_K_M ~13,6 GB; Q4_K_S ~15,9 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB; f16 ~54,6 GB (estimacion a partir de los 27,3 B de parametros).
-- GPU recomendadas: para Q4_K_S o Q6_K, una RTX 4090 (24 GB) es suficiente; para Q8_0 se recomienda una A100 40 GB o H100; para f16 se necesita al menos 80 GB (A100 80 GB o H100).
-- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_S, Q6_K o Q8_0; en GPUs de 12-16 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB) con Q2_K o Q3_K_M. La RAM del sistema debe cubrir el tamano del fichero si se usa offloading parcial.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runner compatible con GGUF (koboldcpp, LM Studio). El tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo OpenAI en algunos runners.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin cache KV): Q2_K ~11 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,6 GB; Q3_K_L ~14,7 GB; IQ4_XS ~15,5 GB; Q4_K_S ~15,9 GB; Q4_K_M ~16,9 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB. Hay que anadir el consumo de la cache KV segun contexto y el mmproj (~0,7-1,0 GB) si se usa el modo multimodal.
+- GPU recomendadas: para Q8_0, una A100 40 GB, H100 o RTX 6000 Ada; para Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 deja margen para contexto moderado; para Q2_K/Q3, GPUs de 16 GB como RTX 4080 o A4000.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con Q4_K_M o inferiores; en GPUs de 16 GB con Q2_K o Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el autor referencia los README de TheBloke para el manejo de ficheros multiparte. El repositorio esta etiquetado como "endpoints_compatible".
+- Latencia y throughput: no disponibles. Dependen fuertemente del hardware y de la cuantizacion; a modo orientativo, un 27B en Q4_K_M en una RTX 4090 suele situarse en decenas de tokens por segundo, pero no hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base que permitan una comparativa rigurosa con alternativas de la misma categoria. Como referencia estructural:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Smaug-Uncensored-GGUF (este) | 27,3B | No disponible | Apache 2.0 | GGUF | Afinado DPO, etiqueta agentic, multimodal via mmproj |
+| abacusai/Smaug-Uncensored (base) | 27,3B | No disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| Smaug-Uncensored-i1-GGUF (mismo autor) | 27,3B | No disponible | Apache 2.0 | GGUF | Cuantizaciones ponderadas por imatrix |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Smaug-Uncensored (este) | ~27,3 B | no disponible | Apache 2.0 | GGUF, safetensors |
-| Alternativas de ~27-34 B | no disponible | no disponible | no disponible | no disponible |
-
-No se han identificado en la informacion proporcionada modelos comparables concretos con datos verificables; se indica "no disponible".
+No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con alternativas de otros autores. Cualquier comparacion con modelos de tamano similar (por ejemplo, familias de 24-34B) requeriria benchmarks que no estan publicados en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Al estar etiquetado como "Uncensored", el modelo presenta menores restricciones de rechazo, lo que implica mayor riesgo de generar contenido inapropiado, ofensivo o danino; requiere mitigaciones adicionales en produccion.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de esta escala; no se han publicado evaluaciones de fidelidad.
-- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta garantizado ni documentado.
-- Longitud de contexto no documentada; no debe asumirse una ventana larga sin verificacion empirica.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_M) degradan la calidad de forma notable; el autor solo recomienda Q4_K_S en adelante para uso general.
-- No se dispone de informacion sobre sesgos especificos, datos de entrenamiento ni evaluaciones de seguridad del modelo base.
-- La licencia Apache 2.0 permite uso comercial, pero la ausencia de documentacion sobre el dataset de entrenamiento impide verificar el cumplimiento de derechos de terceros.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion comunitaria del funcionamiento de estas cuantizaciones concretas.
+- La model card del repositorio GGUF es una plantilla generica de cuantizacion: no documenta arquitectura, contexto, datos de entrenamiento ni evaluaciones. La trazabilidad tecnica es, por tanto, muy limitada.
+- El caracter "uncensored" implica un filtrado de seguridad reducido; puede generar contenido inapropiado, ofensivo o inseguro y no es adecuado para aplicaciones de cara al publico sin capas de moderacion adicionales.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no hay evaluaciones publicadas que permitan cuantificarlo.
+- Cobertura linguistica limitada a ingles y chino; el rendimiento en castellano no esta garantizado ni documentado.
+- Las cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad; el autor recomienda Q4_K_S o Q4_K_M como equilibrio velocidad/calidad y Q8_0 para maxima fidelidad.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar de forma independiente las obligaciones derivadas del modelo base y de los datos de entrenamiento originales, no documentados aqui.
+- El soporte multimodal depende de la version de llama.cpp y de la correcta carga del fichero mmproj; no hay documentacion de casos de uso validados.
+- El repositorio ocupa 190,8 GB en total; la descarga de todas las variantes no es necesaria, pero conviene planificar el almacenamiento.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Smaug-Uncensored-GGUF
 - Modelo base: https://huggingface.co/abacusai/Smaug-Uncensored
+- Cuantizaciones ponderadas (i1): https://huggingface.co/mradermacher/Smaug-Uncensored-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Smaug-Uncensored-GGUF
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

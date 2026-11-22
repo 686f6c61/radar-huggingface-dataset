@@ -2,53 +2,78 @@
 
 ## Resumen
 
-Kai 2.0 Base es un modelo de lenguaje de pesos abiertos especializado en generación de código Luau y Roblox, desarrollado por el usuario khtsly. Se trata del modelo de tamano medio de la familia LuauCoder 2.0, que incluye tambien Moana 2B y Nalu 0.3B. Con 643 millones de parametros totales (596M no de embedding) y 28 capas, es un decoder denso entrenado sobre 56.000 millones de tokens, lo que supone una relacion tokens/parametros de aproximadamente 87:1, bastante alta para su tamano y orientada a compensar la baja capacidad parametrica con un volumen de datos elevado.
+Kai 2.0 Base es un modelo de lenguaje de tipo decoder denso especializado en código Luau y Roblox, desarrollado por el usuario khtsly bajo el paraguas de la familia LuauCoder 2.0. Con 643 millones de parametros totales (596M no pertenecientes a embeddings) y 28 capas, se posiciona como el modelo de tamano medio de una familia que tambien incluye Moana 2B y Nalu 0.3B. Ha sido entrenado sobre 63.000 millones de tokens y se distribuye con licencia Apache 2.0.
 
-El modelo se distribuye como base model sin plantilla de chat, por lo que no sigue instrucciones: continua texto a partir de un prompt, lo que en la practica significa que debe alimentarse con el inicio del codigo que se desea completar. Esta orientado a inferencia en dispositivo (tag `on-device`) y su ventana de contexto es de 4.096 tokens, suficiente para completar funciones o modulos de tamano medio pero no para repositorios completos.
+El modelo emplea una arquitectura transformer con innovaciones destacables en el mecanismo de atencion: composicion mixta de capas con rotacion posicional (21 capas RoPE y 7 capas NoPE), atencion multi-cabeza con comparticion de claves y valores (2 KV heads frente a 20 query heads, de las cuales solo 10 se computan), y un esquema denominado CCVHA + DiffAttn V2 + XSA. Incorpora ademas conexiones residuales por bloques (Block AttnRes en 7 bloques de 4 capas), convoluciones depthwise y postmix por cabeza, y un vocabulario de 32.768 tokens con embeddings atados.
 
-Su relevancia reside en la especializacion vertical: frente a modelos generalistas del mismo rango, Kai 2.0 Base concentra su entrenamiento en un lenguaje de nicho (Luau, el dialecto de Lua usado en Roblox) con una licencia Apache 2.0 permisiva para uso comercial. La contrapartida es un alcance limitado: solo ingles, sin capacidades de instruccion, tool calling ni vision, y sin benchmarks publicados en la informacion disponible.
+Su relevancia radica en ser uno de los pocos modelos abiertos orientados especificamente a Luau, el lenguaje de scripting de Roblox, con una ventana de contexto de 65.536 tokens. Al tratarse de un modelo base sin plantilla de chat, su uso previsto es la continuacion de texto y la autocompletacion de codigo, no el dialogo instruccional. Su tamano compacto lo hace apto para inferencia en dispositivos con recursos limitados, en linea con la etiqueta `on-device` que acompana al repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decoder denso tipo transformer (28 capas; 21 con RoPE + 7 sin posicion, NoPE) |
-| Parametros totales | 642.552.248 (643M) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4.096 tokens |
-| Tipos de cuantizacion | No disponible (el repo solo distribuye safetensors en bfloat16; no se documentan GGUF ni otras cuantizaciones) |
-| Idiomas soportados | Ingles (`en`) |
+| Arquitectura | Transformer decoder denso |
+| Parametros totales | 643M (596M no-embedding) |
+| Parametros activos | no disponible (modelo denso) |
+| Longitud de contexto | 65.536 tokens |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers, requiere `trust_remote_code=True`) |
+| Formato de pesos | safetensors (libreria transformers, requiere `trust_remote_code`) |
 
-Otras especificaciones declaradas por el autor: dimension oculta 1408, dimension de feed-forward 3840, activacion SwiGLU, normalizacion RMSNorm con QK-Norm, 20 cabezas de query (10 computadas), 2 cabezas KV, 10 cabezas de salida, dimension de cabeza 128, vocabulario de 32.768 tokens con embeddings atados, logit soft cap de ±30, theta de RoPE 500.000, conexiones residuales por bloques (7 bloques de 4 capas), rank de postmix de cabeza 2 y 2 taps de convolucion depthwise mas 2 por cabeza. Tamano del repositorio: 1,3 GB.
+Otras especificaciones tecnicas relevantes:
+
+| Parametro | Valor |
+|---|---|
+| Numero de capas | 28 |
+| Composicion de atencion | 21 capas RoPE + 7 capas NoPE |
+| Mecanismo de atencion | CCVHA + DiffAttn V2 + XSA |
+| Dimension oculta | 1408 |
+| Cabezas query | 20 (10 computadas) |
+| Cabezas KV | 2 |
+| Cabezas de salida | 10 |
+| Dimension por cabeza | 128 |
+| Convoluciones | 2 depthwise + 2 por cabeza |
+| Rango de postmix por cabeza | 2 |
+| Conexiones residuales | Block AttnRes (7 bloques de 4 capas) |
+| Dimension feed-forward | 3840 |
+| Funcion de activacion | SwiGLU |
+| Normalizacion | RMSNorm, QK-Norm |
+| RoPE theta | 500.000 |
+| Tamano de vocabulario | 32.768 |
+| Embeddings | Atados (tied) |
+| Logit soft cap | ±30 |
+| Modalidad | Texto |
+| Tokens de entrenamiento | 63.000 millones |
+| Tamano del repositorio | 1,3 GB |
 
 ## Arquitectura y entrenamiento
 
-Kai 2.0 Base es un transformer decoder denso de 28 capas con una composicion de atencion mixta: 21 capas usan atencion con RoPE y 7 capas prescinden de codificacion posicional explicita (NoPE), un patron que en la literatura se asocia a mejor generalizacion posicional y extrapolacion. El autor declara un mecanismo de atencion compuesto por CCVHA, DiffAttn V2 y XSA, junto con convoluciones depthwise y por cabeza (2 taps cada una), postmix de cabeza de rank 2 y conexiones residuales agrupadas en 7 bloques de 4 capas. Emplea Grouped-Query Attention con 20 cabezas de query (de las que 10 se computan) y solo 2 cabezas KV, lo que reduce el coste de memoria del KV cache. La normalizacion combina RMSNorm con QK-Norm y la activacion es SwiGLU.
+Kai 2.0 Base es un transformer decoder denso de 28 capas con dimension oculta de 1408 y feed-forward de 3840 con activacion SwiGLU. La innovacion principal reside en su esquema de atencion: combina capas con RoPE (21) y capas sin codificacion posicional explicita (7 NoPE), lo que en la literatura suele asociarse a mejor generalizacion en longitudes de contexto largas. El mecanismo se describe como CCVHA + DiffAttn V2 + XSA, con 20 cabezas de consulta de las que solo 10 se computan y unicamente 2 cabezas de clave-valor, lo que reduce drasticamente el coste de memoria del KV cache. Se anaden convoluciones depthwise y por cabeza (2 taps cada una), un postmix de rango 2 por cabeza y conexiones residuales agrupadas en 7 bloques de 4 capas (Block AttnRes). La normalizacion emplea RMSNorm con QK-Norm y los logits se limitan con un soft cap de ±30.
 
-El entrenamiento se realizo sobre 56.000 millones de tokens, presumiblemente con predominio de codigo Luau y material relacionado con Roblox, aunque la model card no detalla la composicion exacta del dataset ni si hubo fases de RLHF o DPO; al ser un modelo base, es esperable que no las haya. Tampoco se documentan innovaciones de decodificacion especulativa ni atencion lineal. El uso requiere `trust_remote_code=True`, lo que implica que la implementacion de las capas personalizadas (DiffAttn, XSA, convoluciones) viaja en el repositorio y debe auditarse antes de desplegar en produccion.
+El entrenamiento se realizo sobre 63.000 millones de tokens, aunque la model card no detalla la composicion del dataset ni si hubo fases de RLHF, DPO o ajuste instruccional. Al tratarse de un modelo base, no incorpora plantilla de chat ni alineamiento conversacional: su comportamiento esperado es la continuacion de texto a partir de un prefijo. El vocabulario de 32.768 tokens con embeddings atados y el uso de `trust_remote_code` indican una implementacion personalizada en la libreria transformers, probablemente con modulos propios para las variantes de atencion descritas.
 
 ## Capacidades
 
-- Generacion y continuacion de codigo Luau: el modelo completa funciones, modulos y patrones idiomaticos de Luau a partir de un prefijo de codigo.
-- Codigo orientado a Roblox: el entrenamiento esta focalizado en el ecosistema de scripts de Roblox, incluyendo APIs del motor.
-- Generacion de texto en ingles: al ser un modelo de lenguaje, puede continuar texto generico, aunque su especializacion es el codigo.
-- Modo base sin instrucciones: no dispone de plantilla de chat ni de alineacion por instrucciones; no soporta conversacion multi-turno ni seguimiento de ordenes directas.
-- Tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponibles de forma nativa.
-- Multilingue: limitado a ingles; no se declara soporte de castellano ni de otros idiomas.
-- Vision, audio y modo thinking: no disponibles.
+- Generacion de texto autoregresiva y continuacion de codigo, especialmente en Luau y el ecosistema Roblox.
+- Autocompletacion de funciones, estructuras de control y APIs del entorno Roblox a partir de un prefijo de codigo.
+- Razonamiento sobre codigo a nivel sintactico y semantico dentro del dominio Luau (no es un modelo de proposito general).
+- Soporte de contexto largo de hasta 65.536 tokens, adecuado para ficheros de script extensos o multiples modulos en una sola pasada.
+- Capacidad multilingue limitada al ingles segun la model card, aunque el codigo Luau en si no es un lenguaje natural.
+- No dispone de tool calling ni function calling documentado.
+- No dispone de capacidades de agente ni razonamiento multi-paso documentadas.
+- No dispone de modo thinking, vision ni audio.
+- Al ser un modelo base, no sigue instrucciones ni mantiene dialogos multi-turno de forma fiable.
 
 ## Casos de uso
 
-- Autocompletado de scripts Luau en el editor: el modelo se integra como motor de continuacion de codigo alimentandolo con el prefijo del fichero abierto; su ventana de 4.096 tokens cubre funciones y modulos de tamano medio, y su naturaleza base encaja con el patron de FIM/continuacion sin necesidad de instrucciones.
-- Generacion de plantillas de scripts para Roblox: a partir de un encabezado como `local function lerp(a, b, t)` el modelo produce la implementacion completa, util para generar scaffolding de sistemas de movimiento, inventario o UI en Luau.
-- Asistente on-device para desarrolladores de Roblox: con 643M parametros en bfloat16 (aproximadamente 1,3 GB de pesos) puede ejecutarse en portatiles con GPU consumer modesta o incluso en CPU, lo que permite un asistente local sin enviar codigo a la nube.
-- Generacion masiva de codigo de ejemplo para documentacion y tutoriales: el modelo puede producir fragmentos de Luau para guias tecnicas, con revision humana posterior dado el riesgo de alucinacion en APIs.
-- Fine-tuning especifico de estudio: al ser un base model con licencia Apache 2.0, sirve como punto de partida para ajuste supervisado sobre un corpus propio de scripts de un juego concreto, anadiendo despues una plantilla de chat si se necesita uso conversacional.
-- Prototipado rapido de mecanicas de juego: generacion de borradores de logica de gameplay (colisiones, temporizadores, eventos de red) que el desarrollador revisa y adapta, reduciendo el tiempo de arranque en proyectos pequenos.
-- Experimentacion en investigacion sobre modelos de codigo de nicho: su combinacion de capas NoPE, atencion con convoluciones y GQA con 2 cabezas KV lo convierte en un banco de pruebas de bajo coste para estudiar arquitecturas alternativas en dominios de lenguaje especializados.
+- Autocompletacion de codigo Luau en editores: el modelo puede integrarse como backend de un plugin de editor (por ejemplo, para Roblox Studio) que envie el prefijo del script y reciba la continuacion, aprovechando su entrenamiento especifico en Luau y su contexto de 65.536 tokens para considerar el fichero completo.
+- Generacion de plantillas de scripts de Roblox: util para producir esqueletos de scripts de servidor o cliente (RemoteEvents, DataStores, sistemas de inventario) a partir de un comentario o firma de funcion inicial, que el modelo completa con codigo idiomatico.
+- Relleno de funciones auxiliares en pipelines de CI: dado que el modelo continua texto, puede usarse en tareas de "code infilling" donde se proporciona el contexto anterior y posterior de una funcion y se pide el cuerpo, integrándolo en herramientas de revision o generacion de tests para proyectos Roblox.
+- Migracion y modernizacion de scripts legacy: el modelo puede tomar fragmentos de codigo antiguo como prefijo y generar versiones actualizadas de APIs de Roblox, útil en tareas de refactorizacion asistida por lotes.
+- Generacion de documentacion tecnica de modulos Luau: a partir de un fichero de codigo como prefijo, el modelo puede continuar con comentarios descriptivos o ejemplos de uso, siempre que se le guie con el formato adecuado.
+- Prototipado rapido en entornos con recursos limitados: con 643M de parametros y pesos safetensors de 1,3 GB, puede desplegarse en estaciones de trabajo sin GPU dedicada o en GPUs de consumo para generar borradores de codigo en local, sin depender de servicios en la nube.
+- Educacion y formacion en Luau: como modelo base, puede emplearse para generar ejemplos de codigo y ejercicios, aunque requiere supervision humana por su tendencia a la continuacion literal sin verificación.
 
 ## Benchmarks y rendimiento
 
@@ -56,36 +81,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 1,3 GB solo para pesos, mas KV cache y activaciones; en la practica cabe holgadamente en GPUs con 4-6 GB.
-- VRAM estimada en cuantizacion de 8 bits: alrededor de 0,7 GB de pesos; en 4 bits, alrededor de 0,35 GB (estimaciones teoricas, no se distribuyen pesos cuantizados oficiales).
-- GPU recomendadas: cualquier GPU consumer moderna con 6 GB o mas (RTX 3060, RTX 4060, RTX 4090) es suficiente; para lotes grandes o entrenamiento, A100 o H100 aportan margen, aunque el modelo es demasiado pequeno para aprovecharlas.
-- Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas de los ultimos anos, y es viable en CPU para inferencia interactiva.
-- Opciones de despliegue: transformers con `trust_remote_code=True` y `attn_implementation="sdpa"` o `"flash_attention_2"`; el tag del autor menciona vLLM, llama.cpp, Ollama y LM Studio, pero al requerir codigo personalizado la compatibilidad con esos runners no esta verificada en la informacion disponible.
-- Latencia y throughput: no disponibles; por tamano, se espera decodificacion interactiva en GPU consumer, pero no se aportan cifras medidas.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 1,3 GB solo para pesos, mas overhead de activaciones y KV cache; en la practica, entre 2 y 3 GB para contextos moderados.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 0,7 GB para pesos; en 4 bits, en torno a 0,4 GB, aunque no se documentan cuantizaciones oficiales en la informacion proporcionada.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para bf16 en contextos cortos; tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 son sobradamente suficientes. El modelo esta etiquetado como `on-device`, por lo que se espera su uso en hardware de consumo.
+- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna con 4 GB o mas de VRAM en bf16, y en GPUs integradas o CPU con cuantizacion.
+- Opciones de despliegue: transformers con `trust_remote_code=True` y `attn_implementation` configurable (`sdpa` o `flash_attention_2`). No se documenta soporte explicito para vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada; la naturaleza de codigo personalizado (`custom_code`) puede requerir adaptaciones para motores de inferencia alternativos.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kai 2.0 Base | 643M | 4.096 | Luau / Roblox | Apache 2.0 | Hugging Face (khtsly/Kai-2.0-Base) |
-| Moana 2B (misma familia) | 2B (declarado) | No disponible | Luau / Roblox | No disponible en la informacion | Hugging Face (familia LuauCoder 2.0) |
-| Nalu 0.3B (misma familia) | 0,3B (declarado) | No disponible | Luau / Roblox | No disponible en la informacion | Hugging Face (familia LuauCoder 2.0) |
+| Kai 2.0 Base (khtsly) | 643M | 65.536 | Luau / Roblox | Apache 2.0 | Hugging Face |
+| Moana 2B (familia LuauCoder 2.0) | 2B (segun model card) | no disponible | Luau / Roblox | no disponible | no disponible |
+| Nalu 0.3B (familia LuauCoder 2.0) | 0,3B (segun model card) | no disponible | Luau / Roblox | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de especificaciones completas de los modelos hermanos para establecer una comparacion cuantitativa con alternativas externas de codigo del mismo rango.
+La model card unicamente menciona a Moana 2B y Nalu 0.3B como miembros de la misma familia, sin aportar especificaciones detalladas de contexto, licencia ni rendimiento de esos modelos. No se dispone de informacion sobre modelos comparables de otros autores especializados en Luau en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo base sin alineacion: no sigue instrucciones ni mantiene conversaciones; usarlo como asistente requiere prompting por continuacion o un fine-tuning posterior.
-- Riesgo de alucinacion alto en APIs: al generar codigo de un ecosistema concreto (Roblox), puede inventar funciones o firmas inexistentes; toda salida debe validarse.
-- Contexto limitado a 4.096 tokens: no admite repositorios completos ni conversaciones largas; el rendimiento decae en dependencias que excedan esa ventana.
-- Solo ingles: no se declara soporte de castellano ni de otros idiomas, ni en codigo ni en comentarios.
-- Requiere `trust_remote_code=True`: la implementacion personalizada de atencion y capas debe auditarse por seguridad y reproducibilidad antes de usarla en produccion.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas, lo que dificulta justificar su eleccion en un pipeline critico.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero se recomienda conservar los avisos de atribucion y verificar que los datos de entrenamiento (no documentados) no impongan restricciones adicionales.
-- Comunidad muy reducida: 0 descargas y 1 like en el momento de la consulta, sin ecosistema de herramientas ni soporte; la madurez del proyecto es baja.
-- Sin cuantizaciones oficiales: el despliegue eficiente en CPU o en runners tipo llama.cpp/Ollama no esta garantizado sin conversion manual.
+- Es un modelo base sin plantilla de chat: no sigue instrucciones ni mantiene conversaciones; usarlo como asistente conversacional producira resultados pobres.
+- Riesgo de alucinacion en APIs de Roblox: puede generar funciones o propiedades inexistentes del entorno, por lo que el codigo generado debe validarse siempre.
+- Idiomas: la model card declara unicamente ingles; el soporte de lenguaje natural en castellano no esta garantizado.
+- Sesgos: no se documentan evaluaciones de sesgo en la informacion proporcionada; al entrenarse sobre datos de codigo, puede reproducir patrones y convenciones presentes en el corpus.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero requiere conservar el aviso de licencia y no ofrece garantias.
+- Dependencia de `trust_remote_code`: la carga del modelo ejecuta codigo personalizado del repositorio, lo que implica un riesgo de seguridad que debe evaluarse antes de desplegarlo en produccion.
+- Contexto largo: aunque se declaran 65.536 tokens, no se documenta la calidad de la atencion mas alla de esa ventana ni pruebas de aguja en pajar.
+- No se documentan cuantizaciones oficiales (GGUF, AWQ, GPTQ), lo que limita el despliegue directo en motores como llama.cpp u Ollama sin conversion previa.
+- El modelo tiene pocas descargas (578) y un solo "like" en el momento de la consulta, lo que sugiere una validacion comunitaria limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/khtsly/Kai-2.0-Base
-- Listado de modelos del autor: https://huggingface.co/models?author=khtsly&sort=modified
+- Paper: no disponible
+- Blog: no disponible
+- Repositorio de codigo: no disponible
+- Demo: no disponible

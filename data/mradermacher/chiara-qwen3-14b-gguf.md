@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Chiara-qwen3-14b-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo Chiara Qwen3 14B, publicada por el usuario mradermacher en Hugging Face. El modelo base, alojado en el repositorio marcoeg/chiara-qwen3-14b, es un ajuste fino sobre Qwen3 de 14B, según se deduce del nombre y del recuento de parámetros (14.768.307.200, es decir, aproximadamente 14,8 mil millones). La ficha no aporta información sobre el desarrollador original, la licencia ni los idiomas soportados.
+Chiara-qwen3-14b es un ajuste fino de tipo persona sobre Qwen3-14B, desarrollado originalmente por el usuario marcoeg y publicado en Hugging Face. El modelo parte de la base Qwen3 de 14.768.307.200 parámetros (aproximadamente 14,8 mil millones) y ha sido entrenado mediante SFT (supervised fine-tuning) y DPO (direct preference optimization), con técnicas de LoRA y QLoRA, para adoptar una persona conversacional concreta. La versión aquí documentada es la cuantización GGUF realizada por mradermacher, que facilita la ejecución local en hardware de consumo mediante llama.cpp y Ollama.
 
-El interés de este repositorio es puramente práctico: ofrece el modelo base convertido a GGUF y cuantizado en múltiples niveles (Q2_K, Q3_K_S/M/L, Q4_K_S/M, Q5_K_S/M, Q6_K, Q8_0, IQ4_XS y f16), lo que permite ejecutarlo con llama.cpp y derivados (Ollama, LM Studio, etc.) en hardware de consumo. El repositorio ocupa 8,6 GB y fue creado el 18 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+El modelo resuelve el problema de disponer de un asistente conversacional con identidad de persona definida, manteniendo la base técnica de Qwen3. Es relevante porque combina la arquitectura y el rendimiento del Qwen3-14B original con un ajuste de comportamiento orientado a diálogo, y porque la disponibilidad de cuantizaciones GGUF desde Q2_K hasta Q8_0 permite desplegarlo en un rango amplio de hardware, desde equipos con poca VRAM hasta estaciones de trabajo.
 
-No se dispone de información sobre la arquitectura interna, el contexto máximo, los datos de entrenamiento ni los benchmarks del modelo base. Todo lo que sigue se limita a lo que puede inferirse de los metadatos y del contenido de la model card.
+La ficha se centra en la versión GGUF de mradermacher, que es un artefacto de conversión y cuantización del modelo base `marcoeg/chiara-qwen3-14b`. No se dispone de información publicada sobre benchmarks, composición exacta del dataset de entrenamiento ni detalles del proceso de alineamiento más allá de las etiquetas declaradas (SFT, DPO, LoRA, QLoRA, persona).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado de Qwen3 14B) |
-| Parametros totales | 14.768.307.200 (14,8 B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer decoder-only (familia Qwen3) |
+| Parametros totales | 14.768.307.200 (~14,8 B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
-| Tamano del repo | 8,6 GB |
-| Version de cuantizacion | quantize_version 2, output_tensor_quantised 1 |
-| Tipo de conversion | hf |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estáticas); variantes i1 con imatrix en repo separado |
+| Idiomas soportados | en (inglés, según model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Chiara Qwen3 14B más allá de su nombre, que sugiere un ajuste fino sobre Qwen3 de 14B. La model card del repositorio GGUF no documenta el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. Tampoco se detallan innovaciones técnicas como decodificación especulativa o mecanismos de atención alternativos.
+El modelo se basa en Qwen3-14B, un transformer decoder-only de aproximadamente 14,8 mil millones de parámetros. Sobre esta base, el autor original aplicó un ajuste fino supervisado (SFT) y optimización directa por preferencias (DPO) usando LoRA y QLoRA, según las etiquetas declaradas en la model card. El objetivo del ajuste es instaurar una persona conversacional ("chiara") en lugar de modificar capacidades fundamentales del modelo.
 
-Lo único verificable es el proceso de cuantización: se trata de cuantizaciones estáticas generadas con quantize_version 2 y output_tensor_quantised 1, convertidas desde el formato Hugging Face (convert_type: hf) del repositorio marcoeg/chiara-qwen3-14b. El repositorio incluye tanto el tensor de salida cuantizado como una versión f16 de referencia.
+La versión de mradermacher es una conversión estática a GGUF (`convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1`) con once variantes de cuantización. Existe además un repositorio paralelo con cuantizaciones ponderadas/imatrix (`mradermacher/chiara-qwen3-14b-i1-GGUF`), que suelen ofrecer mejor relación calidad/tamaño que las cuantizaciones estáticas equivalentes. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni hiperparámetros del SFT/DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo está orientado a diálogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
-- Ejecución local mediante GGUF: al estar cuantizado, puede ejecutarse con llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF.
-- Capacidades específicas de razonamiento, código, matemáticas, visión, tool calling o agentes: no disponibles en la información proporcionada.
-- Capacidades multilingües: no disponibles.
+- Generación de texto conversacional multi-turno, con persona definida por el ajuste fino.
+- Razonamiento y respuesta a instrucciones heredados de la base Qwen3-14B.
+- Soporte de tool calling / function calling: no confirmado en la información disponible para este ajuste concreto.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas explícitamente.
+- Capacidades multilingües: la model card declara únicamente `en`; no se documentan otros idiomas.
+- Capacidad especial de persona: el modelo está entrenado para mantener un rol conversacional concreto (etiquetas `persona`, `conversational`).
+- Compatibilidad con endpoints y despliegue local vía llama.cpp y Ollama (etiquetas `endpoints_compatible`, `ollama`, `llama.cpp`).
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones Q4_K_M y Q5_K_M, el modelo puede ejecutarse en GPUs de consumo con 8-12 GB de VRAM, lo que permite tener un asistente conversacional de 14B en local sin depender de servicios en la nube.
-- Prototipado rápido de chatbots: la variante Q4_K_S o IQ4_XS reduce el peso a un rango manejable para pruebas de concepto en portátiles con GPU integrada o CPU, útil para validar flujos conversacionales antes de invertir en infraestructura.
-- Integración en Ollama o LM Studio: al ser GGUF, se puede importar directamente en estas herramientas y exponer el modelo como servicio local para aplicaciones de escritorio o scripts de automatización.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece hasta doce niveles de cuantización, lo que permite medir la degradación de calidad frente al coste de memoria en un mismo modelo, un caso útil para investigación aplicada sobre compresión.
-- Fine-tuning posterior sobre el modelo base: quien necesite ajustar Chiara Qwen3 14B puede partir del repositorio original en safetensors (marcoeg/chiara-qwen3-14b) y usar estas cuantizaciones solo para inferencia o validación.
-- Distribución de demos offline: el tamaño contenido de las variantes Q4 permite empaquetar el modelo en entornos sin conectividad, como demos en ferias o entornos air-gapped, siempre que la licencia del modelo base lo permita (dato no disponible).
+- Asistente conversacional con personalidad definida: el ajuste SFT+DPO sobre Qwen3-14B permite mantener un rol y estilo consistentes en diálogos multi-turno, útil para prototipos de chatbots de marca o compañeros virtuales.
+- Despliegue local en estación de trabajo: las cuantizaciones Q4_K_M (9,1 GB) y Q5_K_M (10,6 GB) permiten ejecutar el modelo en GPUs de consumo con 12-24 GB de VRAM mediante llama.cpp u Ollama, sin depender de infraestructura cloud.
+- Evaluación de técnicas de alineamiento: sirve como caso de estudio de cómo SFT y DPO con LoRA/QLoRA modifican el comportamiento conversacional de un modelo base Qwen3 sin reentrenarlo por completo.
+- Generación de respuestas en inglés para atención al cliente: al estar declarado solo en inglés, es adecuado para flujos de soporte en ese idioma, con validación previa de calidad sobre el dominio concreto.
+- Experimentación con cuantizaciones: la disponibilidad de once variantes GGUF permite medir el impacto de la cuantización en calidad y velocidad para un mismo modelo, comparando Q2_K (5,9 GB) frente a Q8_0 (15,8 GB).
+- Base para nuevos ajustes de persona: al ser Apache-2.0, puede reutilizarse como punto de partida para fine-tunes adicionales orientados a otros roles o dominios.
+- Inferencia en CPU/edge: las variantes Q2_K y Q3_K_S (5,9-6,8 GB) permiten ejecución en CPU con llama.cpp en equipos sin GPU dedicada, a costa de calidad.
 
 ## Benchmarks y rendimiento
 
@@ -53,41 +53,47 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según el tamaño de cada cuantización):
-  - f16: en torno a 28-30 GB.
-  - Q8_0: en torno a 15-16 GB.
-  - Q6_K: en torno a 12-13 GB.
-  - Q5_K_M: en torno a 10-11 GB.
-  - Q4_K_M: en torno a 8,5-9,5 GB.
-  - Q3_K_M: en torno a 7-8 GB.
-  - Q2_K: en torno a 5,5-6,5 GB.
-- GPU recomendadas: A100 40 GB o H100 para f16; RTX 4090 (24 GB) para Q8_0 y Q6_K; RTX 4080/4070 Ti (16 GB) para Q5 y Q4; RTX 4060 Ti 16 GB o RTX 3060 12 GB para Q4_K_M y Q3_K_M.
-- Cabe en GPU de consumo: sí, desde Q4_K_M hacia abajo en GPUs de 8-12 GB; las variantes Q2_K e IQ4_XS son las más indicadas para 6-8 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier motor compatible con GGUF. Para el modelo base en safetensors, vLLM o TGI si la arquitectura Qwen3 lo soporta.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (pesos + overhead de contexto):
+  - Q2_K: ~5,9 GB de pesos; ~7-8 GB con contexto moderado.
+  - Q3_K_S: ~6,8 GB; Q3_K_M: ~7,4 GB; Q3_K_L: ~8,0 GB.
+  - IQ4_XS: ~8,3 GB; Q4_K_S: ~8,7 GB; Q4_K_M: ~9,1 GB.
+  - Q5_K_S: ~10,4 GB; Q5_K_M: ~10,6 GB.
+  - Q6_K: ~12,2 GB; Q8_0: ~15,8 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q6_K/Q8_0 con contexto amplio; RTX 3090/4080 (16-24 GB) para Q4_K_M/Q5_K_M; GPUs de 12 GB para Q2_K-Q4_K_S con contexto reducido.
+- Cabe en GPU de consumo: sí, desde Q2_K (5,9 GB) hasta Q8_0 (15,8 GB) en tarjetas de 24 GB; las variantes Q4_K_M y Q5_K_M son las recomendadas por el autor para velocidad.
+- Opciones de despliegue: llama.cpp, Ollama (etiquetas explícitas), endpoints compatibles; vLLM y TGI no están confirmados para GGUF en esta ficha.
+- Latencia y throughput: no disponibles; dependen de la GPU, la cuantización y la longitud de contexto. Las variantes Q4_K_S y Q4_K_M están marcadas como "fast, recommended" y Q8_0 como "fast, best quality".
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo base ni de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría. Como referencia estructural, se puede comparar con otros modelos de ~14B cuantizados en GGUF, pero sin datos de benchmarks la comparación sería especulativa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| chiara-qwen3-14b-GGUF (este) | ~14,8 B | no disponible | Apache-2.0 | GGUF | Ajuste de persona sobre Qwen3-14B, 11 cuantizaciones |
+| Qwen3-14B (base) | ~14,8 B | no disponible en esta ficha | Apache-2.0 | safetensors/GGUF | Base sin ajuste de persona; referencia de capacidades |
+| marcoeg/chiara-qwen3-14b | ~14,8 B | no disponible | Apache-2.0 | safetensors | Modelo original en precisión completa, origen de estas cuantizaciones |
+| mradermacher/chiara-qwen3-14b-i1-GGUF | ~14,8 B | no disponible | Apache-2.0 | GGUF (imatrix) | Misma base con cuantizaciones ponderadas, potencialmente mejor calidad/tamaño |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Chiara Qwen3 14B (este repo) | 14,8 B | no disponible | no disponible | GGUF |
-| Qwen3 14B (base presumible) | ~14 B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF |
-| Alternativas de ~14B | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no está indicada en el repositorio, lo que impide determinar si el uso comercial está permitido. Es imprescindible consultar el repositorio original marcoeg/chiara-qwen3-14b antes de cualquier despliegue en producción.
-- No hay información sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad; se desconoce el riesgo de alucinación y de contenido dañino.
-- El repositorio tiene cero descargas y cero likes, y fue creado recientemente; no hay evidencia de validación por parte de la comunidad.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad de forma notable; para uso en producción se recomienda Q4_K_M o superior.
-- No se documentan los idiomas soportados; no se debe asumir un rendimiento multilingüe sin verificación empírica.
-- La fecha de creación (noviembre de 2026) y la ausencia de pipeline declarado dificultan verificar la procedencia y el proceso de conversión.
-- Al ser una cuantización de un ajuste fino de terceros, los errores o comportamientos indeseados del modelo base se heredan íntegramente.
+- Idiomas: la model card declara únicamente inglés (`en`); el uso en castellano u otros idiomas no está garantizado y puede degradar la calidad.
+- Contexto: no se documenta la longitud de contexto soportada; debe verificarse antes de usarla en producción con ventanas largas.
+- Benchmarks: no hay resultados publicados que permitan validar el rendimiento frente a la base Qwen3-14B ni cuantificar el efecto del ajuste de persona.
+- Alucinación: al ser un modelo conversacional ajustado por persona, existe riesgo de respuestas plausibles pero incorrectas, especialmente fuera del dominio de entrenamiento.
+- Sesgos: no se documentan evaluaciones de sesgo; el ajuste de persona y el dataset de SFT/DPO pueden introducir sesgos de estilo o contenido no auditados.
+- Tool calling y agentes: no confirmados para este ajuste concreto; no asumir compatibilidad con pipelines de function calling sin validación.
+- Licencia: Apache-2.0 permite uso comercial, pero debe conservarse el aviso de licencia y verificarse las condiciones del modelo base Qwen3 y del ajuste original.
+- Cuantización: las variantes Q2_K y Q3_K_M están marcadas como de menor calidad; para producción se recomienda Q4_K_M o superior, o las variantes i1 con imatrix.
+- Fecha de creación: el repositorio figura creado en 2026-11-18, dato que conviene contrastar con el estado real del modelo base.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/chiara-qwen3-14b-GGUF
-- Modelo base en safetensors: https://huggingface.co/marcoeg/chiara-qwen3-14b
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Modelo base original: https://huggingface.co/marcoeg/chiara-qwen3-14b
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/chiara-qwen3-14b-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#chiara-qwen3-14b-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

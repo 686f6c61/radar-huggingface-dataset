@@ -2,96 +2,98 @@
 
 ## Resumen
 
-Lunar-Huntress-0.2-i1-GGUF es una colección de cuantizaciones en formato GGUF (con imatrix, es decir, matrices de importancia ponderadas) del modelo base Husky110/Lunar-Huntress-0.2, realizadas por el cuantizador comunitario mradermacher. El modelo base es un merge (fusión) creado con mergekit mediante el método TIES, construido sobre la arquitectura Gemma 4, con un tamaño de aproximadamente 30.700 millones de parámetros. Está orientado específicamente a roleplay, escritura creativa y contenido para adultos, un nicho donde los merges comunitarios suelen ofrecer estilos narrativos más expresivos que los modelos generalistas.
+Lunar-Huntress-0.2-i1-GGUF es la colección de cuantizaciones GGUF, generadas con imatrix por mradermacher, del modelo Husky110/Lunar-Huntress-0.2. El modelo subyacente es un merge de modelos de la familia Gemma (la etiqueta del autor es "gemma4") construido con mergekit mediante la técnica TIES, y está orientado explícitamente a roleplay, escritura creativa, compañía conversacional y contenido para adultos. Con 30.697.345.596 parámetros (aproximadamente 30,7 mil millones), se sitúa en la franja de modelos densos de gran tamaño que requieren cuantización agresiva para ejecutarse en hardware de consumo.
 
-La relevancia de esta ficha no está tanto en el modelo base en sí como en la disponibilidad de cuantizaciones: mradermacher publica versiones desde IQ1_S (7,3 GB) hasta Q6_K (25,3 GB), lo que permite ejecutar un modelo de 30B en hardware de consumo, desde portátiles con GPU modesta hasta estaciones de trabajo. La licencia Apache 2.0 del modelo base permite uso comercial sin restricciones adicionales, lo que lo diferencia de otros modelos de roleplay con licencias restrictivas.
+La relevancia de esta ficha no está en el modelo base, sino en el trabajo de cuantización: mradermacher publica 24 variantes GGUF con calibración imatrix, desde IQ1_S (7,3 GB) hasta Q6_K (25,3 GB), lo que permite desplegar un modelo de 30B en GPUs de consumo de 8 a 24 GB según el compromiso calidad/tamaño elegido. Es un caso práctico de cómo la cadena de herramientas GGUF (llama.cpp) hace accesible un modelo que de otro modo exigiría múltiples aceleradores.
 
-Cabe destacar que, según la model card, se trata de un modelo con capacidades de visión (se mencionan archivos mmproj en el repositorio estático), aunque el detalle de estas capacidades multimodales no está documentado en la información disponible.
+No se dispone de información sobre la longitud de contexto, la composición del dataset de entrenamiento ni los detalles del merge más allá de la etiqueta "ties". El modelo base declara licencia Apache 2.0 y soporte únicamente de inglés. La model card del cuantizador no incluye benchmarks ni evaluación de calidad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (transformer), merge TIES vía mergekit |
-| Parametros totales | 30.697.345.596 (≈30,7B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer denso (familia Gemma, etiqueta "gemma4"); merge TIES con mergekit |
+| Parametros totales | 30.697.345.596 (~30,7 B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix) |
-| Idiomas soportados | Inglés |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (también existe el original en safetensors en el repositorio base) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; además fichero imatrix y quants estáticos en repo separado |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); pesos originales en safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Husky110/Lunar-Huntress-0.2, es un merge de modelos creado con mergekit utilizando el método TIES (Task Arithmetic with sign consensus), que resuelve los conflictos de signo entre los deltas de tareas de distintos modelos para fusionarlos de forma más estable que un promedio lineal simple. La arquitectura subyacente es Gemma 4, la familia de transformers de Google, con unos 30,7 mil millones de parámetros según los metadatos de safetensors.
+El modelo subyacente es un merge de tipo TIES (Trim, Elect Sign, Merge) ejecutado con mergekit sobre modelos de la familia Gemma, según las etiquetas del autor. No se especifican los modelos fuente del merge, el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. Tampoco se documenta ninguna innovación arquitectónica propia: se trata de una fusión de pesos de transformers densos, no de un modelo entrenado desde cero.
 
-No se dispone de información sobre el proceso de entrenamiento del modelo base: no se conocen el número de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Al tratarse de un merge, el "entrenamiento" adicional es en realidad una combinación de pesos de modelos preexistentes. Las cuantizaciones de mradermacher usan imatrix (matriz de importancia calculada sobre datos de calibración), lo que mejora la calidad de los cuants de baja bitdepth respecto a cuants estáticos equivalentes.
+El trabajo técnico relevante en este repositorio es la cuantización. mradermacher genera quants "i1" (importancia matricial, imatrix) que usan una matriz de importancia calculada sobre un corpus de calibración para asignar más bits a los tensores sensibles, lo que mejora la perplejidad frente a los quants estáticos del mismo tamaño. El autor indica que los quants IQ suelen ser preferibles a los K-quants de tamaño similar y que IQ3_S "supera a Q3_K*". Se ofrece además el fichero imatrix (0,1 GB) para que terceros generen sus propios quants.
 
 ## Capacidades
 
-- Generación de texto creativo y escritura de ficción, especializada en roleplay narrativo y conversación tipo companion.
-- Contenido para adultos (NSFW): el modelo está etiquetado explícitamente para este propósito y con "not-for-all-audiences".
-- Capacidades de visión: la model card indica que es un modelo de visión, con archivos mmproj disponibles en el repositorio de cuants estáticos.
-- Conversación multi-turno (pipeline conversational).
-- No consta soporte documentado de tool calling, agentes ni razonamiento multi-paso en la información disponible.
-- Idioma principal: inglés. No hay soporte declarado para castellano ni otros idiomas.
+- Generación de texto conversacional multi-turno orientada a roleplay y compañía virtual.
+- Escritura creativa: narrativa, diálogo de personajes y ficción.
+- Contenido para adultos y NSFW (etiquetas `nsfw`, `adult-content`, `not-for-all-audiences`).
+- Conversación en inglés exclusivamente.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
+- No se documentan capacidades de código o matemáticas; el perfil del modelo es creativo/conversacional, no técnico.
 
 ## Casos de uso
 
-- Roleplay interactivo de larga duración: el modelo puede encarnar personajes en sesiones narrativas multi-turno en inglés, el caso de uso principal declarado por el autor.
-- Compañero conversacional (companion): despliegue en aplicaciones de chat personalizado con personalidad definida mediante prompts de sistema.
-- Escritura creativa asistida: generación y continuación de ficción, con un estilo presumiblemente menos censurado que los modelos comerciales alineados.
-- Contenido adulto (NSFW): generación de texto para públicos adultos, con las salvaguardas legales y éticas correspondientes por jurisdicción.
-- Inferencia local en hardware de consumo: gracias a los cuants IQ4_XS (16,8 GB) o Q4_K_M (18,8 GB), cabe en una RTX 4090 de 24 GB para uso privado sin conexión a servicios externos.
-- Experimentación con cuantizaciones agresivas: los cuants IQ1/IQ2 permiten probar el modelo en GPUs de 8-12 GB, útil para evaluación rápida aunque con pérdida de calidad notable.
-- Análisis de imágenes en flujos de roleplay: si se confirman las capacidades de visión vía mmproj, podría describir imágenes dentro de la conversación (ejecutable con llama.cpp).
+- Roleplay y personajes conversacionales: el modelo está afinado para mantener una persona coherente en diálogos largos; se desplegaría con llama.cpp u Ollama usando el quant Q4_K_M (18,8 GB) para equilibrio entre calidad y VRAM.
+- Compañía virtual y chat afectivo: pensado para conversaciones multi-turno en inglés con tono emocional; el quant IQ4_XS (16,8 GB) permite ejecución en una RTX 4090 o 3090 de 24 GB con margen para el contexto.
+- Escritura creativa asistida: generación de relatos, diálogos y ficción por capítulos; el quant Q5_K_M (21,9 GB) ofrece mayor fidelidad estilística si se dispone de 24 GB de VRAM.
+- Prototipado de aplicaciones de ficción interactiva: integración en motores de novela visual o juegos de texto mediante la API compatible de llama.cpp, con el quant IQ3_M (14,5 GB) para GPUs de 16 GB.
+- Investigación sobre merges de modelos: el repo base y este conjunto de quants permiten estudiar el efecto de TIES y de la cuantización imatrix sobre la calidad conversacional de un modelo de 30B.
+- Despliegue en estaciones de trabajo con una sola GPU de consumo: los quants IQ2_M (11,0 GB) o IQ3_XXS (12,2 GB) permiten ejecutar el modelo en GPUs de 12 GB como la RTX 3060 o 4070, con pérdida de calidad asumida.
+- Generación de contenido para adultos en entornos controlados: el modelo declara explícitamente esta orientación; requiere filtrado y moderación en cualquier producto expuesto a usuarios finales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Al tratarse de un merge orientado a roleplay y escritura creativa, es habitual que este tipo de modelos no se evalúe en benchmarks académicos estándar (MMLU, HumanEval, GSM8K), y no constan mediciones de perplexidad ni de arenas de evaluación para el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del cuantizador no incluye MMLU, HumanEval, GSM8K ni evaluaciones de perplejidad por quant; solo se referencia un gráfico externo de ikawrakow sobre perplejidad relativa de tipos de cuantización, sin cifras concretas para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin KV cache):
-  - IQ1_S / IQ1_M: 7,3-7,8 GB (calidad muy degradada).
-  - IQ2_XS / IQ2_M: 9,6-11 GB.
-  - IQ3_M / Q3_K_M: 14,5-15,4 GB.
-  - IQ4_XS / Q4_K_M: 16,8-18,8 GB (punto dulce recomendado).
-  - Q5_K_M: 21,9 GB.
-  - Q6_K: 25,3 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M/Q5_K_M con contexto amplio; RTX 3090 (24 GB) como alternativa; RTX 4070 Ti Super o 4080 (16 GB) para IQ3/IQ4_XS; para Q6_K, GPUs de 32 GB (por ejemplo V100 32 GB, A100 40 GB) o descarga parcial a CPU.
-- Consumer GPUs: sí, cabe en una RTX 4090 con Q4_K_M (18,8 GB) dejando margen para el KV cache; en GPUs de 12 GB es viable con IQ2/IQ3 con calidad reducida.
-- CPU: viable con llama.cpp en sistemas con 32 GB de RAM, a velocidades de unos pocos tokens/segundo en un modelo de 30B.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, KoboldCpp (habitual en el nicho de roleplay), y cualquier runtime compatible con GGUF. vLLM y TGI requieren el modelo original en safetensors, no estos GGUF.
-- Latencia y throughput: no disponible; se estima un throughput mayor en los cuants de 3-4 bits en GPU de gama alta, pero no hay cifras publicadas.
+- VRAM estimada para inferencia (pesos + overhead de contexto y KV cache):
+  - IQ1_S: ~7,3 GB de pesos; viable en GPU de 8-10 GB.
+  - IQ2_M: ~11,0 GB; viable en GPU de 12 GB.
+  - IQ3_M: ~14,5 GB; viable en GPU de 16 GB.
+  - IQ4_XS: ~16,8 GB; viable en GPU de 24 GB.
+  - Q4_K_M: ~18,8 GB; recomendado por el autor; GPU de 24 GB.
+  - Q5_K_M: ~21,9 GB; GPU de 24 GB con contexto moderado.
+  - Q6_K: ~25,3 GB; requiere 32 GB o descarga parcial a RAM/CPU.
+- GPU recomendadas: RTX 4090 / 3090 (24 GB) para Q4_K_M y Q5_K_M; RTX 4080 / 4070 Ti (16 GB) para IQ3_M; RTX 3060 12 GB o 4070 para IQ2_M; A100 40/80 GB o H100 para Q6_K y pesos sin cuantizar.
+- Cabe en GPU de consumo: sí, desde IQ1_S en 8 GB hasta Q6_K con descarga parcial en 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; los pesos originales en safetensors requieren transformers o vLLM con múltiples GPUs.
+- Latencia y throughput: no disponible; dependen del quant, la GPU y la longitud de contexto, no documentados por el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Enfoque |
-|---|---|---|---|---|
-| Lunar-Huntress-0.2 (base) | ≈30,7B | safetensors | Apache 2.0 | Roleplay, creative writing, NSFW |
-| Merges Gemma de 27B para roleplay (p. ej. otros merges comunitarios de la familia Gemma) | ≈27B | safetensors / GGUF | variable según componentes | Roleplay y escritura creativa |
-| Mistral-Small variantes roleplay (24B) | ≈24B | safetensors / GGUF | Apache 2.0 (base) | Roleplay, uso comercial permitido |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Lunar-Huntress-0.2-i1-GGUF (este) | ~30,7 B denso | no disponible | GGUF (24 quants) | Apache 2.0 | Merge TIES de Gemma para roleplay/NSFW, solo inglés |
+| Husky110/Lunar-Huntress-0.2 (base) | ~30,7 B denso | no disponible | safetensors | Apache 2.0 | Modelo original sin cuantizar |
+| mradermacher/Lunar-Huntress-0.2-GGUF | ~30,7 B denso | no disponible | GGUF (quants estáticos) | Apache 2.0 | Misma base, cuantización sin imatrix |
+| Modelos Gemma de ~27B de la familia base | ~27 B denso | no disponible | safetensors, GGUF | Gemma license | Alternativa no fusionada; licencia distinta y sin orientación roleplay |
 
-Nota: la comparativa es orientativa, ya que no constan datos de rendimiento publicados para ninguno de los modelos que permitan una comparación cuantitativa rigurosa. Lunar-Huntress-0.2 destaca por su tamaño (30,7B, por encima de los 27B de Gemma estándar y los 24B de Mistral Small) y por su licencia Apache 2.0, poco frecuente en merges del nicho NSFW, que suelen heredar licencias no comerciales.
+No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contenido para adultos: el modelo está etiquetado como NSFW y "not-for-all-audiences". Su uso está restringido a mayores de edad y debe respetarse la legislación local sobre contenido adulto generado.
-- Idioma: solo se declara soporte para inglés. El rendimiento en castellano no está documentado y probablemente sea inferior o inestable.
-- Cuants de baja bitdepth: los archivos IQ1_S, IQ1_M e IQ2_* sufren degradación sustancial de coherencia y calidad (el propio autor los califica de "para desesperados"); se recomienda como mínimo IQ3_S o Q4_K_S.
-- Riesgo de alucinación: no evaluado públicamente; al ser un merge sin documentación de alineación, el comportamiento fuera del nicho de roleplay es impredecible.
-- Sin documentación de entrenamiento: no se conocen datos, método de alineación ni contexto máximo, lo que dificulta su uso en producción.
-- Sesgos: como todo merge de modelos generativos, puede reproducir sesgos de los modelos fusionados; no hay auditorías publicadas.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los modelos origen del merge, que no están listados en la información disponible.
-- La versión i1 (imatrix) difiere de los cuants estáticos disponibles en el repositorio hermano; los IQ suelen ser preferibles a tamaños equivalentes no-IQ, según el autor.
+- Solo soporta inglés; no hay evidencia de capacidades multilingües.
+- Modelo de roleplay/NSFW: puede generar contenido sexual explícito y no es apto para todos los públicos (`not-for-all-audiences`).
+- Riesgo de alucinación y de deriva de personaje en conversaciones largas; no hay evaluación publicada de coherencia.
+- Los quants de 1 y 2 bits (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad; el propio autor los describe como "for the desperate".
+- No se documenta la longitud de contexto efectiva; el merge puede haber alterado el contexto nativo de los modelos Gemma de origen.
+- Licencia Apache 2.0 declarada, lo que permite uso comercial, pero el contenido generado puede infringir políticas de plataformas o normativa sobre contenido adulto; se requiere moderación en producción.
+- El modelo base es un merge no auditado; no hay información sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad.
+- El repo ocupa 334,8 GB; la descarga de quants individuales va de 7,3 a 25,3 GB.
 
 ## Enlaces
 
-- Repositorio de la ficha: https://huggingface.co/mradermacher/Lunar-Huntress-0.2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lunar-Huntress-0.2-i1-GGUF
 - Modelo base: https://huggingface.co/Husky110/Lunar-Huntress-0.2
-- Cuants estáticos: https://huggingface.co/mradermacher/Lunar-Huntress-0.2-GGUF
-- Página de descargas del autor: https://hf.tst.eu/model#Lunar-Huntress-0.2-i1-GGUF
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del cuantizador: https://www.nethype.de/
+- Quants estáticos del mismo modelo: https://huggingface.co/mradermacher/Lunar-Huntress-0.2-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Lunar-Huntress-0.2-i1-GGUF
+- FAQ y peticiones de modelos: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de perplejidad por tipo de quant (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

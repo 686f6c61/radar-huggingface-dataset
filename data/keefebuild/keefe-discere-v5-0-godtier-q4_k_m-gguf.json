@@ -15,8 +15,8 @@
     "gguf",
     "llama-cpp",
     "gguf-my-repo",
-    "base_model:KeefeBuild/Keefe-Discere-v5.0-GodTier",
-    "base_model:quantized:KeefeBuild/Keefe-Discere-v5.0-GodTier",
+    "base_model:KeefeBuild/Keefe-Discere-v5.0",
+    "base_model:quantized:KeefeBuild/Keefe-Discere-v5.0",
     "endpoints_compatible",
     "region:us",
     "conversational"

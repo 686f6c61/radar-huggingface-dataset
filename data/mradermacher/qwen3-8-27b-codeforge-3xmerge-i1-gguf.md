@@ -2,99 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF es una cuantización en formato GGUF del modelo Qwen3.8-27B-CodeForge-3xMerge, publicada por el usuario mradermacher. Se trata de un merge de tres variantes del modelo Qwen3.8-27B, orientado a tareas de código y conversación, del que no se dispone de model card detallada más allá de los metadatos de cuantización. El repositorio contiene únicamente los pesos cuantizados, sin información sobre el proceso de entrenamiento, la composición del dataset ni los resultados de evaluación.
+Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF es una colección de cuantizaciones GGUF con calibración imatrix del modelo xtools-at/Qwen3.8-27B-CodeForge-3xMerge, publicada por mradermacher. El modelo subyacente es un merge de tres variantes de la familia Qwen3.8 orientado a generación de código, razonamiento y uso agéntico de herramientas, con 27.320.697.856 parámetros (unos 27,3 mil millones) según los pesos en safetensors. La licencia es Apache 2.0 y los idiomas declarados en la model card son inglés (en) y chino (zh).
 
-El modelo base tiene 27.320.697.856 parámetros (aproximadamente 27,3 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande. La cuantización se ha realizado con el método i1 (imatrix) de mradermacher, que emplea una matriz de importancia para preservar las activaciones más relevantes durante la compresión. El repositorio ocupa 39,5 GB e incluye múltiples niveles de cuantización, desde IQ1_S hasta Q6_K, lo que permite desplegarlo en distintos rangos de hardware.
+Este repositorio no aporta pesos nuevos: ofrece los mismos pesos base convertidos a formato GGUF y cuantizados con distintos niveles de compresión (desde i1-Q2_K de 11,0 GB hasta i1-Q6_K de 22,5 GB), además de un fichero imatrix para que el usuario pueda generar sus propias cuantizaciones. Es relevante para quien quiera ejecutar el modelo en CPU, GPU de consumo o entornos con memoria limitada mediante llama.cpp u Ollama, sin depender de infraestructura de GPU de datacenter.
 
-La relevancia de esta ficha es limitada por la ausencia de documentación técnica: no se especifican licencia, idiomas, arquitectura ni benchmarks. El modelo parece orientado a generación de código y conversación, pero cualquier evaluación rigurosa requeriría consultar el modelo original en xtools-at/Qwen3.8-27B-CodeForge-3xMerge, del cual este repositorio es una derivación cuantizada.
+La ficha se centra en lo que la información disponible permite afirmar con certeza: tamaño, licencia, formato, cuantizaciones y etiquetas declaradas. Los detalles sobre arquitectura interna, longitud de contexto, datos de entrenamiento y rendimiento medido no están documentados en el material proporcionado y se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (probablemente transformer decoder-only, sin confirmar) |
-| Parametros totales | 27.320.697.856 (27,3 B) |
+| Arquitectura | no disponible (modelo base etiquetado como qwen3.8 / qwen3_8; detalles internos no documentados en la informacion disponible) |
+| Parametros totales | 27.320.697.856 (27,3 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado, con variantes i1/imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, mas fichero imatrix |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base. El nombre sugiere que se trata de un merge de tres modelos derivados de Qwen3.8-27B, probablemente mediante técnicas de model merging (como SLERP, TIES o DARE), orientado a tareas de código ("CodeForge"). Sin embargo, no se documenta el método de merge, los datos de entrenamiento, el número de tokens utilizados ni si hubo fases de RLHF o DPO.
+No se dispone de información sobre la arquitectura interna del modelo base más allá de las etiquetas de la model card, que lo asocian a la familia Qwen3.8 y a un proceso de merge de tres modelos (3xMerge). Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF, DPO o destilación; la etiqueta "distillation" figura entre los tags, pero sin detalle sobre su aplicación.
 
-La única información técnica disponible es el proceso de cuantización: se han generado cuantizaciones GGUF con el método i1 de mradermacher, que utiliza una matriz de importancia (imatrix) calculada sobre un corpus de calibración para minimizar la pérdida de calidad en los pesos comprimidos. El repositorio incluye 24 variantes de cuantización, desde IQ1_S (la más agresiva) hasta Q6_K (la de mayor precisión). No se especifica el corpus de calibración ni los parámetros exactos del proceso.
+Lo que sí está documentado es el proceso de cuantización de este repositorio: mradermacher ha generado cuantizaciones ponderadas con imatrix (indicadas con el prefijo i1-) a partir del modelo base, empleando un fichero imatrix propio (0,1 GB) que puede reutilizarse para crear cuantizaciones adicionales. Según las notas del autor, las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamaño similar; por ejemplo, i1-IQ3_S (12,7 GB) "beats Q3_K*" e i1-IQ3_M (12,9 GB) se sitúa como alternativa a i1-Q3_K_M (13,6 GB). El autor también publica cuantizaciones estáticas en un repositorio separado.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag "conversational" indica que el modelo está ajustado para diálogo multi-turno.
-- Generación de código: el nombre "CodeForge" sugiere especialización en tareas de programación, aunque no se detallan lenguajes ni benchmarks.
-- Razonamiento y matemáticas: no confirmado por falta de documentación.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de código y code-generation, según los tags del modelo base.
+- Razonamiento (reasoning) y modo de pensamiento eficiente (efficient-thinking), declarados en los tags.
+- Uso agéntico y tool calling / function calling (tags "agentic" y "tool-use").
+- Seguimiento de instrucciones (instruction-following).
+- Conversación multi-turno (tag "conversational").
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- No se documentan capacidades de visión, audio ni otras modalidades en la información disponible.
 
 ## Casos de uso
 
-- Asistente de programación en local: el modelo puede desplegarse con llama.cpp u Ollama en equipos con GPU consumer, gracias a las cuantizaciones Q4_K_M o IQ4_XS, que reducen el peso a unos 16-17 GB y permiten generar código en entornos sin conexión.
-- Generación de código en pipelines de CI/CD: las cuantizaciones Q5_K_M y Q6_K ofrecen mayor fidelidad para tareas de autocompletado y revisión de código en servidores con GPU de 24 GB o más.
-- Chat conversacional multi-turno: el tag "conversational" sugiere uso en asistentes de atención al cliente o soporte técnico, aunque la ausencia de datos sobre contexto limita la planificación.
-- Prototipado rápido en estaciones de trabajo: las variantes IQ2_M e IQ3_M permiten ejecutar el modelo en GPUs de 8-12 GB, útiles para pruebas de concepto y experimentación.
-- Fine-tuning posterior sobre GGUF: no es el formato ideal, pero las cuantizaciones Q6_K pueden servir como base para evaluación comparativa antes de un ajuste fino en precisión completa.
-- Investigación sobre cuantización: el repositorio ofrece 24 variantes del mismo modelo, lo que permite estudiar el impacto de la compresión en la calidad de salida para tareas de código y conversación.
-- Despliegue en entornos con restricciones de memoria: las variantes IQ1_S e IQ2_XXS, aunque con pérdida de calidad significativa, permiten ejecutar un modelo de 27B en hardware muy limitado.
+- Asistencia de programación en local: el modelo puede emplearse para autocompletar, explicar y refactorizar código en un IDE o editor, ejecutándose con llama.cpp u Ollama sobre una estación de trabajo con GPU de consumo, gracias a las cuantizaciones de 15-17 GB (i1-Q4_K_M, i1-IQ4_XS).
+- Generación de tests y documentación técnica: con las etiquetas de code-generation e instruction-following, encaja en tareas de producir docstrings, comentarios y suites de pruebas a partir de fragmentos de código existentes.
+- Agentes de desarrollo con tool calling: los tags "agentic" y "tool-use" sugieren su uso en pipelines donde el modelo invoca funciones (ejecutar tests, consultar APIs, leer ficheros) dentro de un bucle multi-paso; conviene validar el soporte real de plantillas de herramientas en el runtime elegido.
+- Despliegue en entornos con VRAM limitada: las cuantizaciones i1-Q3_S/IQ3_M (12,4-12,9 GB) permiten ejecutar un modelo de 27,3 mil millones de parámetros en GPUs de 16 GB, y las de 11 GB (i1-Q2_K) en configuraciones aún más ajustadas, a costa de calidad.
+- Procesamiento por lotes en CPU: el formato GGUF y las cuantizaciones de menor tamaño posibilitan tareas de generación de código o razonamiento en servidores sin GPU, con throughput reducido pero sin coste de acelerador.
+- Prototipado de asistentes bilingües inglés-chino: para equipos que necesiten respuestas en ambos idiomas, el modelo declara soporte de en y zh, lo que permite construir demos de atención técnica o documentación en esas dos lenguas.
+- Investigación sobre cuantización: el fichero imatrix y la variedad de niveles publicados permiten estudiar la degradación de calidad entre cuantizaciones (de Q2_K a Q6_K) sobre una misma base de 27,3 mil millones de parámetros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización):
-  - IQ1_S / IQ2_XXS: aproximadamente 7-9 GB.
-  - IQ2_M / Q2_K: aproximadamente 9-11 GB.
-  - IQ3_M / Q3_K_M: aproximadamente 12-14 GB.
-  - IQ4_XS / Q4_K_M: aproximadamente 15-17 GB.
-  - Q5_K_M: aproximadamente 18-20 GB.
-  - Q6_K: aproximadamente 22-24 GB.
-- GPU recomendadas:
-  - Q6_K: RTX 3090/4090 (24 GB), A5000, A6000, L40S.
-  - Q4_K_M / IQ4_XS: RTX 4080/4090, RTX 3090, A10G (24 GB).
-  - IQ3_M / Q3_K_M: RTX 4070 Ti, RTX 3080 (12-16 GB).
-  - IQ2_M / Q2_K: RTX 3060 12 GB, RTX 4060 Ti 16 GB.
-  - IQ1_S: GTX 1660 Super 6 GB, RTX 3050 8 GB (con degradación notable).
-- Cabe en GPU consumer: sí, en todas las variantes desde IQ2_M en adelante; las variantes Q5_K_M y Q6_K requieren GPUs de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se recomienda llama.cpp para producción con este formato.
-- Latencia y throughput estimados: no disponibles. Dependen en gran medida de la GPU, la cuantización y el backend; en una RTX 4090 con Q4_K_M se puede esperar un throughput del orden de decenas de tokens por segundo, pero no se ha medido en la información proporcionada.
+- VRAM estimada para inferencia (según tamaño de fichero GGUF, más overhead de contexto y KV cache):
+  - i1-Q2_K: ~11,0 GB.
+  - i1-IQ3_S / i1-IQ3_M: ~12,7-12,9 GB.
+  - i1-Q4_K_S / i1-Q4_K_M: ~15,9-16,9 GB.
+  - i1-Q5_K_M: ~19,6 GB.
+  - i1-Q6_K: ~22,5 GB.
+- GPU recomendadas: no hay recomendaciones oficiales en la información disponible. Por tamaño, las cuantizaciones Q4 encajan en GPUs de 24 GB (RTX 3090, RTX 4090, A10G); las Q3 en GPUs de 16 GB (RTX 4060 Ti 16 GB, RTX 4070 Ti Super, A4000); las Q5-Q6 requieren 24 GB o más, o reparto entre GPU y CPU.
+- ¿Cabe en GPU de consumo? Sí, en las cuantizaciones Q3 y Q4 sobre GPUs de 16-24 GB; las de mayor tamaño pueden ejecutarse con offloading parcial a RAM.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (p. ej. LM Studio, koboldcpp). Para servidores con GPU, vLLM y TGI no consumen GGUF de forma nativa en todas sus versiones; para esos casos sería preferible el modelo base en safetensors.
+- Latencia y throughput: no disponibles; dependen del hardware y de la cuantización elegida. El autor señala i1-Q4_K_M como "fast, recommended" y i1-Q4_0 como "fast, low quality", sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF (este) | 27,3 B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
-| Qwen2.5-Coder-32B-Instruct | 32,5 B | 128K (según model card oficial) | Apache 2.0 | safetensors, GGUF | Hugging Face (Qwen) |
-| DeepSeek-Coder-V2-Lite-Instruct | 15,7 B (MoE, 2,4 B activos) | 128K | DeepSeek License | safetensors, GGUF | Hugging Face (deepseek-ai) |
-| CodeLlama-34B-Instruct | 33,7 B | 16K | Llama 2 Community License | safetensors, GGUF | Hugging Face (meta-llama) |
-
-No se dispone de datos de rendimiento del modelo evaluado, por lo que la comparativa se limita a parámetros, contexto, licencia y disponibilidad. El modelo base Qwen3.8-27B no está identificado con una versión oficial de Qwen, lo que impide confirmar su procedencia y licencia.
+| Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF (este) | 27,3 mil millones | no disponible | Apache 2.0 | GGUF (i1, imatrix) | Cuantizaciones de 11,0 a 22,5 GB; en/zh |
+| Qwen3.8-27B-CodeForge-3xMerge-GGUF (estatico, mismo autor) | 27,3 mil millones | no disponible | Apache 2.0 | GGUF (estatico) | Misma base sin calibracion imatrix; menor calidad esperada a igual tamano segun el autor |
+| xtools-at/Qwen3.8-27B-CodeForge-3xMerge (base) | 27,3 mil millones | no disponible | Apache 2.0 | safetensors | Pesos originales sin cuantizar; requiere BF16/FP16 y ~55 GB o mas de memoria |
+| Otros modelos de ~27B orientados a codigo | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks ni de alternativas comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no se documentan licencia, idiomas, arquitectura, datos de entrenamiento ni evaluación, lo que impide garantizar su uso comercial o su idoneidad para producción.
-- Licencia no disponible: no se puede asumir permiso de uso comercial; es imprescindible contactar con el autor del modelo base antes de desplegarlo.
-- Riesgo de alucinación: sin benchmarks ni evaluación, no se puede estimar la fiabilidad del modelo en tareas factuales o de código.
-- Sesgos desconocidos: al no documentarse el dataset de entrenamiento, no se pueden identificar sesgos de género, raza, idioma o dominio.
-- Limitaciones de contexto e idioma: no se especifica la ventana de contexto ni los idiomas soportados; el tag "conversational" no garantiza un rendimiento multilingüe.
-- Cuantizaciones agresivas: las variantes IQ1_S, IQ2_XXS e IQ2_S pueden degradar notablemente la calidad en tareas de código y razonamiento; se recomienda Q4_K_M o superior para uso serio.
-- Modelo derivado sin trazabilidad: el merge de tres variantes de Qwen3.8-27B no está documentado, lo que dificulta la reproducibilidad y la auditoría.
-- Fecha de creación futura (2026-11-05): el repositorio indica una fecha posterior a la actual, lo que puede indicar un error de metadatos o una publicación programada; conviene verificar la integridad del repositorio.
-- Sin soporte de vLLM/TGI nativo para GGUF: el despliegue en producción con estos backends requiere conversión a safetensors o el uso de llama.cpp.
+- Al ser una cuantizacion, la calidad se degrada respecto al modelo base; las cuantizaciones de 2-3 bits (i1-Q2_K, i1-IQ3_S) pueden producir errores notables en código y razonamiento. El autor recomienda IQ sobre no-IQ a igual tamaño.
+- No hay benchmarks publicados: no es posible cuantificar la pérdida de rendimiento frente al modelo base ni comparar con alternativas.
+- El modelo base es un merge de tres modelos; los merges pueden heredar sesgos y comportamientos inconsistentes de sus componentes, y no se documentan evaluaciones de seguridad.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente en APIs, librerías y hechos verificables; el código generado debe revisarse y probarse.
+- Idiomas limitados a inglés y chino según la model card; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no documentada; planificar el despliegue con un límite conservador y verificar el comportamiento en conversaciones largas.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar las obligaciones de atribución y las licencias de los modelos fusionados en el merge original.
+- El repositorio ocupa 218,6 GB por incluir todas las cuantizaciones; conviene descargar únicamente el fichero GGUF necesario.
+- Los tags incluyen "endpoints_compatible" y "region:us", pero no se documenta compatibilidad con APIs concretas; validar en el runtime elegido.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF
-- Modelo base (referenciado en la model card): https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF
+- Modelo base: https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-CodeForge-3xMerge-i1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica comparativa de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

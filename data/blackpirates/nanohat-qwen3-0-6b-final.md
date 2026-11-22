@@ -2,106 +2,117 @@
 
 ## Resumen
 
-NanoHat-0.6B es un modelo de lenguaje ultracompacto especializado en tool calling, desarrollado por el usuario blackpirates (vinculado al proyecto NanoHat de asimansari-git) a partir de un ajuste fino de Qwen/Qwen3-0.6B. Su proposito es traducir instrucciones en lenguaje natural a llamadas de sistema Linux estructuradas en JSON (`<tool_call>`), actuando como motor de razonamiento del NanoHat Linux OS Harness sobre Fedora Workstation. No opera de forma autonoma: se invoca bajo demanda cuando el usuario lo solicita.
+NanoHat-0.6B es un modelo de lenguaje ultracompacto de 0,6 mil millones de parámetros, afinado a partir de Qwen/Qwen3-0.6B por el autor blackpirates, cuyo propósito es traducir instrucciones en lenguaje natural a llamadas de sistema Linux estructuradas en formato `<tool_call>` JSON. No es un modelo de propósito general: es el motor de razonamiento del NanoHat Linux OS Harness sobre Fedora Workstation, y está diseñado para operar estrictamente bajo demanda del usuario, no de forma autónoma en segundo plano.
 
-El modelo resuelve un problema muy concreto: la ejecucion local y ligera de tareas de administracion de sistemas mediante lenguaje natural, sin depender de la nube. Con 596.049.920 parametros reales (segun los safetensors del repositorio) y basado en la arquitectura Qwen3, esta disenado para ejecutarse en dispositivos de consumo. Se distribuye bajo licencia Apache 2.0 y esta orientado exclusivamente al idioma ingles.
+El modelo se distribuye en formatos safetensors y GGUF, con licencia Apache 2.0, y está pensado para ejecución local en hardware de consumo. Su relevancia radica en la combinación de tamaño mínimo (596 millones de parámetros reales) con un rendimiento especializado en tool calling que, según la model card del autor, supera al modelo base en precisión de argumentos y coincidencia exacta de herramientas, manteniendo latencias P50 por debajo de 600 ms en configuraciones sin modo thinking.
 
-La relevancia actual radica en la tendencia hacia modelos pequenos (SLM) desplegables en local con llama.cpp u Ollama, y en la publicacion de un preprint en Zenodo con una evaluacion sobre 299 consultas no vistas que compara el modelo afinado con el base. El ajuste se realizo con GRPO (segun los tags del repositorio), lo que sugiere entrenamiento con refuerzo sobre recompensas de formato y ejecucion.
+La versión publicada como `nanohat:latest` (v4.1.2) se presenta como el checkpoint de producción del proyecto, con mejoras acumuladas en seguridad frente a comandos destructivos y en cadenas de múltiples herramientas. El repositorio de Hugging Face acumula 1508 descargas y un tamaño de 21,1 GB, lo que refleja la inclusión de múltiples cuantizaciones y artefactos además de los pesos principales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-0.6B) |
 | Parametros totales | 596.049.920 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (disponible en el repositorio); otros niveles no especificados |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0 |
+| Tipos de cuantizacion | GGUF (disponible en el repo); otras cuantizaciones no especificadas |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only de la familia Qwen3, y se ha ajustado mediante GRPO (Group Relative Policy Optimization), segun los tags del repositorio (`trl`, `grpo`). El objetivo del entrenamiento no es la generacion libre de texto, sino la produccion fiable de payloads JSON de llamadas a herramientas bajo un contrato de 10 herramientas inyectado por el harness NanoHat. El modelo distingue entre consultas que requieren herramienta, preguntas generales de Linux, aritmetica y rechazos de seguridad.
+El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only de la familia Qwen3, y se ha afinado mediante fine-tuning supervisado para especializarlo en la generación de payloads `<tool_call>` JSON contra un contrato de 10 herramientas inyectado por el harness NanoHat. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO; únicamente se indica que el objetivo del ajuste es la traducción de instrucciones coloquiales a llamadas de sistema estructuradas, respuestas en texto plano para preguntas generales de Linux, aritmética y rechazos de seguridad.
 
-La innovacion principal es el enfoque de producto: un SLM de 0.6B parametros especializado en un contrato de herramientas fijo, con modos de razonamiento (`think=ON` / `think=OFF`) y una evaluacion centrada en ejecucion real en sandbox, coincidencia estricta de argumentos y tasas de rechazo ante comandos destructivos. No se dispone de informacion sobre el volumen de tokens de entrenamiento ni la composicion exacta del dataset.
+La innovación principal no reside en la arquitectura, sino en la especialización extrema del ajuste: el modelo aprende a emitir el formato nativo `<tool_call>` de forma consistente (100% de tasa de formato en las 239 consultas de herramientas del benchmark del autor) y a respetar un contrato de herramientas fijo. El harness Python (`pip install nanohat`) es el que inyecta el esquema y despacha las llamadas, de modo que el modelo por sí solo no ejecuta comandos. Se documenta además un modo thinking opcional que mejora la precisión a costa de latencia (P50 de 1307,6 ms frente a 595,7 ms con thinking desactivado).
 
 ## Capacidades
 
-- Generacion de llamadas a herramientas en formato `<tool_call>` JSON para un contrato de 10 herramientas de sistema Linux.
-- Respuestas en texto plano para preguntas generales sobre Linux y aritmetica.
-- Rechazo de seguridad ante solicitudes destructivas (tasa de cumplimiento del 90% en v4.0 sobre las consultas de seguridad de la suite).
-- Soporte de cadenas multi-herramienta (multi-tool chains), con un 40% de coincidencia exacta de secuencia en v4.0 y hasta un 60% en v4.1 con `think=ON`.
-- Modo de razonamiento activable (`think=ON`) que mejora la tasa de formato nativo y la precision, a costa de mayor latencia.
-- Capacidades multilingues: solo ingles.
-- No se documentan capacidades de vision, audio ni agentes autonomos en segundo plano.
+- Generación de llamadas a herramientas en formato `<tool_call>` JSON contra un contrato fijo de 10 herramientas de sistema Linux.
+- Tool calling y function calling estructurado, con soporte de cadenas de múltiples herramientas (multi-tool chains).
+- Respuestas en texto plano para preguntas generales sobre Linux y aritmética.
+- Rechazos de seguridad ante peticiones destructivas (100% de tasa de rechazo según la model card en v4.1.2).
+- Modo thinking opcional que incrementa la precisión en la selección de herramientas y argumentos.
+- Capacidades conversacionales básicas dentro del ámbito del harness.
+- Soporte multilingüe limitado al inglés; no se documentan otros idiomas.
+- No se documentan capacidades de visión, audio ni generación de código general.
 
 ## Casos de uso
 
-- Administracion de sistemas Linux asistida por lenguaje natural: el usuario pide "muestrame el uso de disco" y el modelo emite la llamada JSON correspondiente para que el harness la ejecute localmente en Fedora.
-- Automatizacion de tareas de escritorio bajo demanda: integrado en el CLI NanoHat (`pip install nanohat`), traduce peticiones coloquiales en invocaciones de herramientas concretas sin requerir conexion a la nube.
-- Asistente local en entornos con requisitos de privacidad: al ejecutarse en el propio equipo con llama.cpp u Ollama, los comandos y datos del sistema no salen de la maquina.
-- Ensenanza y formacion en administracion de sistemas: el modelo responde preguntas generales de Linux y muestra la estructura de la llamada que se ejecutaria, util para practicar en sandbox.
-- Filtrado y rechazo de comandos peligrosos: actua como capa de seguridad que rechaza instrucciones destructivas antes de que el harness las despache (90% de cumplimiento en v4.0).
-- Prototipado de agentes de tool calling en hardware modesto: sirve como banco de pruebas para disenar contratos de herramientas y medir latencia y precision en un SLM antes de escalar a modelos mayores.
+- Automatización de tareas de administración en Fedora Workstation: el usuario formula una petición coloquial y el modelo la traduce a una llamada `<tool_call>` que el harness NanoHat ejecuta localmente, sin que el modelo actúe de forma autónoma.
+- Asistente de línea de comandos con seguridad integrada: ante peticiones potencialmente destructivas, el modelo emite un rechazo en texto plano, lo que permite construir interfaces de shell asistidas con una capa de seguridad explícita.
+- Despliegue en dispositivos de recursos limitados: con 596 millones de parámetros y cuantización GGUF, el modelo puede ejecutarse en CPU o en GPU de consumo, lo que lo hace adecuado para portátiles y estaciones de trabajo sin aceleradores dedicados.
+- Integración en pipelines de operaciones: el harness puede invocar el modelo para traducir instrucciones de runbooks a llamadas estructuradas, manteniendo el formato JSON verificable antes de la ejecución.
+- Evaluación de contratos de herramientas: al estar especializado en un esquema fijo de 10 herramientas, sirve como referencia para medir la calidad de formato `<tool_call>` en modelos pequeños frente al modelo base.
+- Prototipado de agentes locales de un solo paso: cadenas de múltiples herramientas con cobertura parcial del 100% en el benchmark del autor permiten construir flujos de dos o tres comandos encadenados sin salir del equipo.
+- Sustituto ligero de modelos mayores en entornos air-gapped: al ejecutarse con llama.cpp u Ollama y no requerir conectividad, encaja en estaciones de trabajo aisladas con requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
-Evaluacion sobre 299 consultas no vistas (239 de herramientas + 60 conversacionales, aritmeticas y de seguridad), segun la model card:
+Datos publicados por el autor en la model card, sobre 299 consultas no vistas (239 de herramientas + 60 conversacionales, aritméticas y de rechazo de seguridad), evaluadas a través del NanoHat Harness:
 
-| Metrica | Qwen3-0.6B base (think=OFF) | Qwen3-0.6B base (think=ON) | NanoHat v4.0 (think=OFF) | NanoHat v4.0 (think=ON) | NanoHat v4.1 (think=OFF) |
-|---|---|---|---|---|---|
-| Formato nativo `<tool_call>` (239) | 82,43% | 95,40% | 100,0% | 95,40% | 100,0% |
-| Coincidencia exacta de herramienta (239) | 66,95% | 76,99% | 90,38% | 77,82% | 92,47% |
-| Coincidencia canonica de argumentos (239) | 51,05% | 65,27% | 86,19% | 71,13% | 87,03% |
-| Coincidencia estricta de argumentos (239) | 41,84% | 58,58% | 85,36% | 69,04% | 83,68% |
-| Tasa de duplicados (menor es mejor) | 0,84% | 1,26% | 1,67% | 1,67% | 0,42% |
-| Ejecucion en sandbox correcta (239) | 73,64% | 86,19% | 99,58% | 94,14% | 100,0% |
-| Tasa limpia sin herramienta (60) | 100,0% | 100,0% | 96,67% | 96,67% | 83,33% |
-| Alucinacion espuria de herramienta (menor es mejor) | 0,00% | 0,00% | 3,33% | 3,33% | 16,67% |
-| Intencion y herramienta combinadas (299) | 73,58% | 81,61% | 91,64% | 81,61% | 90,64% |
-| Precision canonica combinada (299) | 60,87% | 72,24% | 88,29% | 76,25% | 86,29% |
-| Latencia mediana P50 | 580,4 ms | 1461,0 ms | 671,8 ms | 2042,8 ms | 607,0 ms |
-| Latencia P95 | 996,4 ms | 3644,7 ms | 1567,9 ms | 6493,5 ms | 4140,9 ms |
+| Metrica | Qwen3-0.6B base (think=OFF) | Qwen3-0.6B base (think=ON) | NanoHat v4.1.2 (think=OFF) | NanoHat v4.1.2 (think=ON) |
+|---|---|---|---|---|
+| Tasa de formato nativo `<tool_call>` (239) | 82,43% | 95,40% | 100,0% | 100,0% |
+| Coincidencia exacta de herramienta (239) | 66,95% | 76,99% | 92,89% | 96,65% |
+| Coincidencia canónica de argumentos (239) | 51,05% | 65,27% | 85,77% | 92,89% |
+| Coincidencia estricta de argumentos (239) | 41,84% | 58,58% | 84,94% | 89,96% |
+| Tasa de llamadas duplicadas (menor es mejor) | 0,84% | 1,26% | 0,84% | 0,00% |
+| Tasa de paso en sandbox (239) | 73,64% | 86,19% | 99,58% | 99,58% |
+| Tasa limpia sin herramientas, cero alucinaciones (60) | 100,0% | 100,0% | 100,0% | 98,33% |
+| Tasa de alucinación de herramienta espuria (menor es mejor) | 0,00% | 0,00% | 0,00% | 1,67% |
+| Coincidencia combinada intención y herramienta (299) | 73,58% | 81,61% | 94,31% | 96,99% |
+| Precisión canónica combinada (299) | 60,87% | 72,24% | 88,63% | 93,98% |
+| Latencia mediana P50 | 580,4 ms | 1461,0 ms | 595,7 ms | 1307,6 ms |
+| Latencia de cola P95 | 996,4 ms | 3644,7 ms | 1001,1 ms | 2518,2 ms |
+| Latencia media | 851,9 ms | 1800,5 ms | 937,0 ms | 1471,9 ms |
 
-Desglose por intencion (v4.0, `think=OFF`): coincidencia exacta de herramienta unica 97,61% (209 consultas); coincidencia exacta de secuencia multi-herramienta 40,00% (30 consultas); sin alucinacion de herramienta en aritmetica pura 100% (10 consultas). La model card indica que v4.1 mejora las cadenas multi-herramienta (56,67%) pero empeora el rechazo de seguridad (60% frente a 90%) y la tasa limpia sin herramienta (83,33% frente a 96,67%), por lo que `latest` apunta a v4.0.
+Desglose por intención (v4.1.2 frente a base):
+
+| Bucket | Base (think=OFF) | Base (think=ON) | NanoHat v4.1.2 (think=OFF) | NanoHat v4.1.2 (think=ON) |
+|---|---|---|---|---|
+| Single-tool (209) — coincidencia exacta | 73,68% | 82,78% | 99,04% | 99,04% |
+| Single-tool (209) — argumentos canónicos | 56,46% | 70,33% | 91,39% | 95,22% |
+| Multi-tool (30) — secuencia exacta | 20,00% | 36,67% | 50,00% | 80,00% |
+| Multi-tool (30) — cobertura parcial | 43,33% | 60,00% | 73,33% | 100,0% |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 596 millones de parametros, en FP16 requiere aproximadamente 1,2 GB de pesos; en cuantizacion de 4 bits (GGUF Q4) baja a unos 400-500 MB, mas overhead de contexto y runtime.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente; tambien funciona en CPU. No requiere A100 ni H100.
-- Cabe en GPU consumer: si, en practicamente cualquier tarjeta moderna (RTX 3060, RTX 4060, GTX 1650, integradas con suficiente memoria compartida).
-- Opciones de despliegue: llama.cpp (formato GGUF disponible), Ollama (registro `asimansari-o/nanohat`), transformers, text-generation-inference (tag `text-generation-inference`).
-- Latencia: P50 de 671,8 ms y P95 de 1567,9 ms con `think=OFF` en v4.0, segun la evaluacion del harness; con `think=ON` la mediana sube a 2042,8 ms.
+- VRAM estimada: no disponible de forma explícita; con 596 millones de parámetros, una cuantización GGUF de 4 bits ocupa aproximadamente 400-500 MB, y los pesos en FP16 rondan 1,2 GB.
+- GPU recomendadas: no especificadas por el autor; por tamaño, cabe en cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090) e incluso en iGPU con suficiente memoria compartida.
+- Cabe en GPU de consumo: sí, con amplio margen, incluidas GPUs de gama baja y ejecución en CPU.
+- Opciones de despliegue: llama.cpp (formato GGUF incluido en el repo), Ollama (registro `asimansari-o/nanohat`), transformers, text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en el repo).
+- Latencia y throughput: P50 de 595,7 ms y P95 de 1001,1 ms con thinking desactivado; P50 de 1307,6 ms y P95 de 2518,2 ms con thinking activado, medidos por el autor en hardware edge no especificado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NanoHat-0.6B (v4.0) | 596 M | no disponible | Tool calling Linux | Apache 2.0 | HF, Ollama |
-| Qwen3-0.6B (base) | 0,6 B | no disponible | Generacion general | Apache 2.0 | HF |
-| Otros SLM de tool calling de ~0,5-1 B | no disponible | no disponible | Tool calling generico | no disponible | no disponible |
+| NanoHat-0.6B (v4.1.2) | 596 M | no disponible | Tool calling Linux, contrato de 10 herramientas | Apache 2.0 | Hugging Face, Ollama |
+| Qwen/Qwen3-0.6B (base) | 0,6 B | no disponible | Propósito general | Apache 2.0 | Hugging Face |
+| Alternativas de tool calling de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion directa mas relevante es con su modelo base: NanoHat v4.0 eleva la coincidencia exacta de herramienta del 66,95% al 90,38% y la ejecucion correcta en sandbox del 73,64% al 99,58% con `think=OFF`, a costa de un ligero aumento de latencia (580,4 ms a 671,8 ms de mediana) y de una pequena perdida en la tasa limpia sin herramienta (100% a 96,67%). No se dispone de datos de benchmarks de otros SLM comparables en la informacion proporcionada.
+La comparación directa más relevante es con su modelo base Qwen3-0.6B, sobre el que el autor reporta mejoras de 26 puntos en coincidencia exacta de herramienta (66,95% a 92,89% con thinking desactivado) y de 34,7 puntos en coincidencia canónica de argumentos (51,05% a 85,77%). No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no se ha validado su comportamiento en castellano ni en otros idiomas.
-- Especializado en un contrato fijo de 10 herramientas de Linux: fuera de ese esquema su utilidad es limitada.
-- Introduce alucinaciones espurias de herramienta en el 3,33% de las consultas que no requieren herramienta (v4.0) y hasta el 16,67% en v4.1.
-- El rechazo de seguridad ante comandos destructivos es del 90% en v4.0 y cae al 60% en v4.1; no es una garantia absoluta y debe combinarse con validacion adicional en produccion.
-- La coincidencia estricta de argumentos es del 85,36% (v4.0), por lo que un porcentaje no despreciable de llamadas puede llevar argumentos incorrectos.
-- Las cadenas multi-herramienta tienen una coincidencia exacta de secuencia baja (40% en v4.0), lo que limita tareas complejas de varios pasos.
-- Requiere el harness NanoHat para ejecutar comandos; el modelo por si solo solo emite JSON.
-- No se dispone de informacion sobre sesgos, volumen de datos de entrenamiento ni evaluacion fuera del benchmark propio del autor.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo se distribuye sin garantias y el autor no ofrece soporte documentado.
+- Especialización estrecha: el modelo está ajustado para un contrato fijo de 10 herramientas del harness NanoHat; fuera de ese esquema su utilidad es limitada.
+- Idioma: solo se documenta inglés; no hay evidencia de soporte para castellano ni otros idiomas.
+- Longitud de contexto: no documentada en la información disponible, lo que impide garantizar conversaciones multi-turno largas.
+- Alucinación de herramientas: la model card reporta un 1,67% de llamadas espurias con thinking activado, aunque un 0% con thinking desactivado en el conjunto evaluado.
+- Dependencia del harness: el modelo por sí solo no ejecuta comandos; requiere el CLI Python `nanohat` para inyectar el esquema y despachar las llamadas, lo que añade una dependencia externa en producción.
+- Evaluación autoinformada: todos los benchmarks proceden del autor y del harness del propio proyecto, sin validación independiente conocida.
+- Cadenas multi-tool: la coincidencia exacta de secuencia es del 50% con thinking desactivado y del 80% con thinking activado, por lo que los flujos de varios pasos siguen siendo un punto débil.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo hereda las limitaciones y sesgos del Qwen3-0.6B base, no documentados en esta ficha.
+- Tamaño del repositorio: 21,1 GB, lo que puede dificultar la descarga en entornos con ancho de banda limitado; conviene seleccionar únicamente los artefactos GGUF necesarios.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final
-- Repositorio de archivos: https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final/tree/main
-- Preprint en Zenodo: https://doi.org/10.5281/zenodo.23618506
-- Codigo del harness NanoHat: https://github.com/asimansari-git/NanoHat
+- Modelo en Hugging Face: https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final
+- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
+- Repositorio del harness NanoHat: https://github.com/asimansari-git/NanoHat
 - Registro en Ollama: https://ollama.com/asimansari-o/nanohat
-- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- DOI del proyecto: https://doi.org/10.5281/zenodo.23618505

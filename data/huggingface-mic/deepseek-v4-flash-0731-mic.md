@@ -2,85 +2,90 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-mic es un artefacto de prueba (fixture) publicado en Hugging Face por el usuario huggingface-mic, derivado del modelo base deepseek-ai/DeepSeek-V4-Flash-0731. No se trata de un modelo entrenado ni utilizable: es una version reducida artificialmente ("slim") creada para validar contratos de integracion con frameworks (principalmente Transformers), con pesos aleatorios generados con semilla 17 y una configuracion de arquitectura encogida a 4 capas. El repositorio contiene los pesos reducidos, ejemplos de uso ejecutables y las expectativas de framework en un unico paquete.
+DeepSeek-V4-Flash-0731-mic es un artefacto de prueba (fixture) publicado por el usuario huggingface-mic dentro del proyecto transformers-mic. No es un modelo funcional ni un fine-tuning real de DeepSeek-V4-Flash: es una version reducida artificialmente del checkpoint `deepseek-ai/DeepSeek-V4-Flash-0731` con pesos aleatorios, disenada para validar contratos de integracion entre el modelo original y distintos frameworks (Transformers, entre otros). El propio autor lo etiqueta como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
-El fixture conserva la misma arquitectura declarada que el modelo original (DeepseekV4ForCausalLM) y los mismos nombres de tensores, pero con 17.311.493 parametros totales (16,8M segun la model card) frente al modelo real, del que no se proporcionan especificaciones. Incluye los ficheros de procesador (tokenizer, generation_config, LICENSE) copiados byte a byte del checkpoint original. Su etiqueta `test-artifact` lo excluye deliberadamente de las busquedas de modelos candidatos.
+El fixture conserva la arquitectura declarada del modelo base (`DeepseekV4ForCausalLM`) pero reduce la configuracion a 4 capas ocultas, resultando en 18.151.285 parametros totales (17,6M segun la model card) y un repositorio de 0,2 GB. Los pesos se generaron con semilla 17 y se guardaron en bfloat16, replicando los nombres de tensor del checkpoint real. Los ficheros de procesador (`tokenizer.json`, `tokenizer_config.json`, `generation_config.json`, `LICENSE`) se copiaron byte a byte desde el modelo original.
 
-Su relevancia es exclusivamente de ingenieria: sirve para que los mantenedores de transformers-mic verifiquen que una implementacion de framework carga, ejecuta y produce salidas finitas (forward, loss y gradientes en float32, bfloat16 y float16) con la firma de tensores correcta. No debe confundirse con un modelo de lenguaje funcional: sus pesos son aleatorios y no genera texto coherente.
+Su relevancia es exclusivamente tecnica y de infraestructura: sirve para que los mantenedores de transformers-mic verifiquen que las expectativas de integracion (formas de tensor, dtypes, comportamiento del forward, sensibilidad de entradas) se cumplen sin necesidad de descargar ni ejecutar el modelo completo. Cualquier uso como modelo de lenguaje en produccion carece de sentido porque sus pesos son aleatorios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DeepseekV4ForCausalLM (transformer causal, configuracion reducida a 4 capas) |
-| Parametros totales | 17.311.493 (16,8M segun model card) |
-| Parametros activos | no disponible |
+| Arquitectura | DeepseekV4ForCausalLM (transformer causal, configuracion reducida a 4 capas ocultas) |
+| Parametros totales | 18.151.285 (17,6M segun model card) |
+| Parametros activos | no disponible (no se especifica si el modelo base es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en bfloat16) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el fichero LICENSE se copia del modelo base, pero su contenido no se detalla) |
+| Licencia | no disponible (se copia el fichero LICENSE del modelo base, pero no se detalla su contenido) |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la clase `DeepseekV4ForCausalLM` del checkpoint deepseek-ai/DeepSeek-V4-Flash-0731, pero con la configuracion encogida mediante la regla generica de `sweep.py` del repositorio transformers-mic, que reduce `num_hidden_layers` a 4. Los nombres de tensores coinciden exactamente con los del checkpoint real, de modo que cualquier codigo que espere la estructura de parametros del modelo original puede ejecutarse contra este fixture sin cambios.
+El fixture reproduce la clase `DeepseekV4ForCausalLM` del modelo base, pero con la configuracion reducida mediante la regla generica de `sweep.py` del repositorio transformers-mic: `num_hidden_layers` pasa a 4. Los nombres de tensor coinciden con los del checkpoint real, de modo que el codigo de carga e integracion puede ejercitarse sin cambios. Los ficheros de procesador (tokenizer y configuracion de generacion) son copias byte a byte del modelo original.
 
-No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se validaron con una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato movia los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, produjo 0,511). Los ficheros de procesador (LICENSE, generation_config.json, tokenizer.json, tokenizer_config.json) se copiaron byte a byte del modelo base. El fixture se guardo en bfloat16, el dtype con el que carga por defecto el checkpoint original, y se verifico que es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture es `8babda0e6f6d` y cubre todos los checkpoints con ficheros de procesador identicos y config coincidente tras el encogido.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron porque superaron la puerta de sensibilidad de entradas: cada perturbacion de las entradas del contrato desplazo los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, dio 0,93). Los tensores son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Se desconoce la composicion del dataset, el numero de tokens o si el modelo base uso RLHF/DPO, ya que la informacion proporcionada no lo detalla.
 
 ## Capacidades
 
-- No es un modelo funcional: no genera texto, razonamiento, codigo ni matematicas coherentes, ya que sus pesos son aleatorios.
-- Sirve como fixture de conformidad para validar la carga y ejecucion de la arquitectura DeepseekV4ForCausalLM en frameworks.
-- Verifica la firma de tensores y los nombres de parametros del checkpoint real.
-- Permite comprobar sensibilidad a entradas del contrato (por ejemplo, `attention_mask`).
-- Valida estabilidad numerica (salidas finitas) en float32, bfloat16 y float16, incluyendo gradientes.
-- No soporta tool calling, agentes, vision, audio ni capacidades multilingues reales.
+- No es un modelo funcional: sus pesos son aleatorios y no produce texto coherente.
+- Sirve como banco de pruebas para validar la carga de `DeepseekV4ForCausalLM` en Transformers y en otros frameworks integrados.
+- Permite comprobar formas de tensor, dtypes y compatibilidad de tokenizer contra el contrato del modelo real.
+- Verifica la estabilidad numerica del forward, loss y gradientes en float32, bfloat16 y float16.
+- Ejercita la sensibilidad de entradas del contrato (attention masks, etc.) mediante la puerta de perturbacion.
+- No dispone de tool calling, agentes, vision, audio ni modo thinking utilizables; cualquier capacidad de ese tipo pertenece al modelo base y no es verificable con este fixture.
 
 ## Casos de uso
 
-- Pruebas de integracion en Transformers: cargar el fixture con `AutoModelForCausalLM` y verificar que la arquitectura DeepseekV4 se instancia y ejecuta un forward sin errores, usando el directorio `integrations/transformers/expectations` como referencia.
-- Validacion de CI en transformers-mic: ejecutar el fixture en pipelines automatizados para detectar regresiones en la carga de checkpoints con nombres de tensores del modelo real, sin descargar los pesos completos.
-- Verificacion de estabilidad numerica: comprobar que forward, loss y gradientes son finitos en float32, bfloat16 y float16 antes de desplegar cambios en el codigo de la arquitectura.
-- Pruebas de contrato de tokenizer: al copiarse `tokenizer.json` y `tokenizer_config.json` byte a byte del modelo base, se puede validar el pipeline de tokenizacion del checkpoint original sin disponer de sus pesos.
-- Desarrollo de herramientas de introspeccion: usar el fixture para probar utilidades que inspeccionan formas de tensores, conteo de parametros o mapeo de nombres, dado su tamano reducido (0,2 GB).
-- Reproduccion de builds: reconstruir el fixture con `python example/build_fixtures.py --fixture DeepSeek-V4-Flash-0731-mic` y comparar hashes registrados en `build.json` para auditar la procedencia del artefacto.
+- Integracion continua de transformers-mic: ejecutar la suite de tests del repositorio contra un checkpoint ligero que replica la interfaz del modelo real, sin descargar los pesos completos.
+- Validacion de contratos de framework: comprobar que una nueva version de Transformers carga `DeepseekV4ForCausalLM` con los nombres de tensor y dtypes esperados.
+- Pruebas de tokenizer: al copiarse `tokenizer.json` y `tokenizer_config.json` byte a byte, se puede verificar el pipeline de tokenizacion del modelo base de forma aislada.
+- Desarrollo de herramientas de inspeccion de modelos: usar el fixture (0,2 GB) para probar scripts que enumeran tensores, formas y dtypes antes de apuntarlos al checkpoint real.
+- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture DeepSeek-V4-Flash-0731-mic` y comparar hashes registrados en `build.json`.
+- Pruebas de estabilidad numerica: ejecutar forward, loss y backward en float32, bfloat16 y float16 para detectar regresiones de precision en kernels o capas nuevas.
+- Docencia y demos de integracion: mostrar el flujo de carga de un modelo causal en Transformers con un repositorio pequeno y rapido de descargar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de significado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (17,3M parametros, repo de 0,2 GB); en float32 rondaria 70 MB de pesos.
-- GPU recomendadas: cualquier GPU consumer o incluso CPU es suficiente; no requiere A100, H100 ni RTX 4090.
-- Cabe en cualquier GPU consumer (GTX 1060, RTX 3060, etc.) y en CPU.
-- Opciones de despliegue: carga directa con Transformers; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI para este fixture.
-- Latencia y throughput: no disponibles; al ser un modelo de 4 capas con pesos aleatorios, las cifras no serian representativas del modelo base.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (17,6M parametros, ~35 MB de pesos) y menos aun en cuantizaciones de 8 o 4 bits, aunque no se documentan recetas de cuantizacion.
+- GPU recomendadas: cualquier GPU consumer moderna o incluso CPU; no requiere A100, H100 ni RTX 4090.
+- Cabe holgadamente en GPU consumer (GTX 1650, RTX 3060, RTX 4090) y en equipos sin GPU dedicada.
+- Opciones de despliegue: carga directa con Transformers; no se documenta soporte especifico para vLLM, llama.cpp, Ollama o TGI, y su uso en esos motores no aportaria valor al ser un fixture.
+- Latencia y throughput: no disponibles; al ser un modelo de 4 capas y 17,6M de parametros, la inferencia seria practicamente instantanea, pero no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado datos del modelo base deepseek-ai/DeepSeek-V4-Flash-0731 (parametros, contexto, licencia) ni de alternativas comparables, y este fixture no es funcionalmente equivalente a ningun modelo de lenguaje.
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| DeepSeek-V4-Flash-0731-mic | 18,15M (fixture) | no disponible | Artefacto de prueba para integracion | no disponible | Hugging Face |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible en la informacion | no disponible | Modelo base real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Validacion de contratos de otros modelos | no disponible | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Proposito |
-|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731-mic | 17,3M | no disponible | no disponible | Fixture de pruebas |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | Modelo base (referencia) |
-| Alternativas | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos suficientes para comparar rendimiento, contexto o licencia con alternativas; la comparativa se limita a proposito y tamano.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y las salidas no tienen significado; no debe emplearse en produccion ni en evaluaciones de calidad.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; usarlo fuera de ese contexto induce a error.
-- La licencia no esta disponible en la informacion proporcionada; el fichero LICENSE se copia del modelo base, por lo que las condiciones reales dependen de deepseek-ai/DeepSeek-V4-Flash-0731.
-- La configuracion esta encogida a 4 capas: el comportamiento de memoria, latencia y estabilidad numerica no es extrapolable al modelo completo.
-- Riesgo de confusion con el modelo base: el nombre y la estructura de tensores son identicos, pero el contenido de los pesos no.
-- No se documentan sesgos, idiomas ni capacidades reales porque el artefacto no ha sido entrenado.
+- Pesos aleatorios: el modelo no genera lenguaje utilizable; cualquier salida es ruido estadistico.
+- Etiquetado como `test-artifact`: no debe usarse como modelo candidato en busquedas, pipelines de produccion ni evaluaciones de calidad.
+- Licencia no disponible: aunque se copia el fichero LICENSE del modelo base, no se detalla su contenido en la informacion proporcionada; verificar antes de cualquier redistribucion.
+- Configuracion reducida (4 capas): no representa el comportamiento numerico ni el rendimiento del checkpoint completo.
+- Idiomas y contexto no documentados: no es posible afirmar capacidades multilingues ni ventanas de contexto concretas.
+- Riesgo de confusion: el nombre incluye "DeepSeek-V4-Flash", lo que puede llevar a error si se interpreta como un fine-tuning real; consultar siempre la model card y la etiqueta `test-artifact`.
+- Sin garantias de mantenimiento: el repositorio se actualizo por ultima vez en noviembre de 2026 y depende del proyecto transformers-mic.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/DeepSeek-V4-Flash-0731-mic
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
-- Explicacion del encogido del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/DeepSeek-V4-Flash-0731-mic.html
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de barrido (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Manifest de contrato (integration.json): https://huggingface.co/huggingface-mic/DeepSeek-V4-Flash-0731-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/DeepSeek-V4-Flash-0731-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/DeepSeek-V4-Flash-0731-mic/tree/main/integrations/transformers/expectations
+- Procedencia del fixture (build.json): https://huggingface.co/huggingface-mic/DeepSeek-V4-Flash-0731-mic/blob/main/build.json
+- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/DeepSeek-V4-Flash-0731-mic.html
+- Repositorio transformers-mic (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

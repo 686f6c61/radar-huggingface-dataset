@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "cyankiwi/Muse-Glimmer-30B-AWQ-INT4 · Hugging Face",
-      "url": "https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4",
-      "snippet": "Instructions to use cyankiwi/Muse-Glimmer-30B-AWQ-INT4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use cyankiwi/Muse-Glimmer-30B-AWQ-INT4 with Transformers:"
-    },
-    {
-      "title": "Muse Glimmer 30B AWQ INT4 by cyankiwi - LLM Explorer",
-      "url": "https://llm-explorer.com/model/cyankiwi%2FMuse-Glimmer-30B-AWQ-INT4,3ksv4A1oGgzaZ8K4JJf3wx",
-      "snippet": "Muse Glimmer 30B AWQ INT4 is an open-source 30b LLM by cyankiwi. VRAM 24.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
-    },
-    {
-      "title": "cyankiwi/Muse-Glimmer-30B-AWQ-INT4 · Tool Calling and Reasoning Question",
-      "url": "https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4/discussions/1",
-      "snippet": "Instructions to use cyankiwi/Muse-Glimmer-30B-AWQ-INT4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use cyankiwi/Muse-Glimmer-30B-AWQ-INT4 with Transformers:"
-    },
-    {
-      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
-      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
-      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
-    },
-    {
-      "title": "Muse Glimmer 30B Benchmarks & Context (August 2026) | BenchLM.ai",
-      "url": "https://benchlm.ai/models/muse-glimmer-30b",
-      "snippet": "Muse Glimmer 30B is a open weight model with a 131K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use. Meta publishes the full-precision and two 4-bit Muse Glimmer 30B checkpoints under Apache 2.0 on Hugging Face."
-    }
-  ]
+  "sources": []
 }

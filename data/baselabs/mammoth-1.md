@@ -2,95 +2,118 @@
 
 ## Resumen
 
-mammoth-1 es un modelo de decisión tipado ("typed decision model") publicado por baselabs. Se trata de un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-27B, con 27.356.728.560 parámetros reales según los pesos en safetensors. Su particularidad es que no genera texto: dada una petición compuesta por una o varias preguntas, cada una con un conjunto cerrado de opciones, devuelve una probabilidad por opción calculada a partir de un único prefill de prefijo compartido.
+mammoth-1 es un modelo de decisión de 27.000 millones de parámetros desarrollado por Base Labs en Baseten, obtenido mediante un fine-tune completo sobre Qwen3.5-27B. No es un modelo generativo al uso: recibe un estado (texto, opcionalmente con imágenes) y un conjunto de preguntas con opciones, y devuelve una probabilidad calibrada para cada opción, resolviendo todas las preguntas en un único prefill de prefijo compartido. Está pensado para tareas de clasificación, enrutamiento, calibración y guardrails en producción.
 
-El interés de este diseño es de eficiencia y de control. Al no haber decodificación autoregresiva, el coste de inferencia se reduce a una pasada de prefill sobre el prefijo común más el cálculo de las puntuaciones por pregunta, y la salida queda restringida al espacio de opciones definido por quien llama, lo que elimina por construcción la deriva del texto libre.
+Su relevancia actual radica en que ataca un problema concreto: los LLM generativos son caros e inconsistentes cuando se usan como clasificadores o enrutadores. mammoth-1 convierte esa tarea en una inferencia de una sola pasada con salidas probabilísticas calibradas, incluyendo una opción entrenada de "no lo sé". Según el autor, lidera el Jev Decision Index 0.4 con 71,24 puntos y una réplica del Artificial Analysis Decision Index con 65,9.
 
-La información publicada es muy escasa: la model card es de una sola frase, no hay resultados de benchmarks, no se detalla la composición del dataset de ajuste ni el procedimiento de entrenamiento, y no se especifican idiomas. Con 21 descargas y 16 likes en el momento de la consulta, es un modelo reciente (creado el 19 de octubre de 2026) y de nicho, orientado a equipos que quieran sustituir clasificadores ligeros o llamadas generativas por un motor de decisión de 27B.
+El modelo admite tres tipos de pregunta (`noul` sí/no, `choice` entre opciones nombradas y `score` sobre niveles ordenados), con una longitud máxima de secuencia de 16.384 tokens. Las peticiones que exceden los límites entrenados se rechazan en lugar de truncarse.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle; derivada de Qwen/Qwen3.5-27B (tag `qwen3_5`), con cabeza de decisión para salida de probabilidades por opción |
-| Parámetros totales | 27.356.728.560 (≈27,36 mil millones) |
-| Parámetros activos | No aplica; no se documenta una arquitectura MoE |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No se publican cuantizaciones (ni GGUF, ni AWQ, ni GPTQ, ni FP8). El repositorio contiene únicamente safetensors |
-| Idiomas soportados | No disponible |
-| Licencia | Ambigua: la etiqueta del repositorio indica `mit`, mientras que la model card declara `license: other` con `license_name: mit`. Verificar con el autor antes de uso comercial |
+| Arquitectura | Transformer multimodal (base Qwen3.5-27B) con máscara bidireccional por bloques en las capas de atención completa; encoder de visión congelado |
+| Parametros totales | 27.356.728.560 (27,36 B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | 16.384 tokens (máximo de secuencia) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (inglés) |
+| Licencia | MIT (modificaciones de Baseten) + Apache 2.0 (base Qwen3.5-27B); uso sujeto a ambas |
 | Formato de pesos | safetensors |
-| Modelo base | Qwen/Qwen3.5-27B (ajuste fino completo) |
-| Tamaño del repositorio | 109,4 GB |
-| Precisión de los pesos | Deducida: 109,4 GB / 27.356.728.560 parámetros ≈ 4 bytes por parámetro, consistente con FP32 |
-| Pipeline de Hugging Face | No disponible |
-| Fecha de creación / actualización | 2026-10-19 / 2026-10-21 |
-| Descargas / likes | 21 / 16 |
+| Pipeline | text-classification |
+| Entradas | texto e imágenes |
+| Tarea | modelo de decisión (clasificación calibrada, enrutamiento, guardrails) |
 
 ## Arquitectura y entrenamiento
 
-La model card indica únicamente que mammoth-1 es un ajuste fino completo de Qwen/Qwen3.5-27B. No se especifica si se congelaron capas, qué cabeza se añadió para producir la distribución de probabilidad por opción, ni cómo se codifican las opciones en la entrada. Tampoco se documenta si el modelo reutiliza el vocabulario y la tokenización del base de forma estándar o si introduce tokens especiales para delimitar preguntas y opciones.
+mammoth-1 parte de Qwen3.5-27B, un transformer multimodal, y aplica un fine-tune completo únicamente sobre el modelo de lenguaje, manteniendo congelado el encoder de visión. La innovación estructural clave es el uso de una máscara de atención bidireccional por bloques en las capas de atención completa, que permite que todas las preguntas de una petición se resuelvan simultáneamente desde un mismo prefill de prefijo compartido, en lugar de generar respuestas de forma autorregresiva. El modelo acepta texto e imágenes como estado de entrada.
 
-No hay información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras etapas de alineación, ni sobre innovaciones técnicas concretas más allá del mecanismo de "prefijo compartido": todas las preguntas de una misma petición se resuelven a partir de un único prefill del contexto común, en lugar de ejecutar una pasada por pregunta. Tampoco se publica ninguna métrica de calibración de las probabilidades, dato crítico en un modelo cuya salida es precisamente una distribución de probabilidad.
+El entrenamiento se realizó sobre 6,21 millones de ejemplos de decisión (denominado Mix 8), con la siguiente composición: 58,3 % de habilidades centrales de decisión, 16,1 % de seguridad y abstención, 16,1 % de dominios de juicio y expertos, y 9,5 % de datos públicos de decisión. La función objetivo combina entropía cruzada con un término de calibración de Brier (λ = 1), e incluye una opción entrenada de "no lo sé" para permitir la abstención calibrada. La receta fue de 1 época (9.859 pasos), LR máximo de 2,7e-6, AdamW (β 0,9/0,95, sin weight decay), 3 % de warm-up, decaimiento coseno y precisión bf16. El entrenamiento se ejecutó en 18 nodos de 4 GB300 (72 GPU en total).
 
 ## Capacidades
 
-- Respuesta a preguntas de opción múltiple con salida de probabilidad por opción, sin generación de texto.
-- Resolución de varias preguntas dentro de una misma petición a partir de un único prefill de prefijo compartido.
-- Salida estructurada y tipada: el espacio de respuestas queda acotado a las opciones proporcionadas por el llamante.
-- Ajuste fino completo sobre Qwen3.5-27B, por lo que hereda el conocimiento del modelo base en la medida en que el fine-tune no lo haya desplazado (no verificado).
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado; el modelo podría actuar como capa de decisión dentro de un agente, pero no se describe ningún modo de razonamiento explícito.
-- Capacidades multilingües: no disponibles.
-- Capacidades especiales (modo thinking, visión, audio): no documentadas.
+- Clasificación calibrada con salidas probabilísticas por opción, no solo etiquetas.
+- Preguntas de tipo `noul` (sí/no) con probabilidad P(yes).
+- Preguntas de tipo `choice` entre opciones nombradas con descripción, devolviendo la opción elegida y el vector de probabilidades.
+- Preguntas de tipo `score` sobre niveles ordenados, devolviendo el nivel y las probabilidades.
+- Resolución de múltiples preguntas heterogéneas en una sola pasada con prefijo compartido.
+- Entrada multimodal: texto e imágenes.
+- Abstención calibrada mediante opción "no lo sé" entrenada.
+- Capacidades de conocimiento y razonamiento, lenguaje, herramientas y automatización, recuperación y clasificación, y juicio estético/humano (según las áreas evaluadas en el Jev Decision Index).
+- Rechazo explícito de peticiones que exceden los límites de longitud entrenados, sin truncado silencioso.
 
 ## Casos de uso
 
-- Enrutamiento de consultas en atención al cliente: dado un mensaje de usuario y un conjunto de categorías o colas de destino (facturación, soporte técnico, bajas, etc.), el modelo devuelve la probabilidad de cada categoría en una sola pasada, lo que permite umbrales de confianza y derivación a revisión humana cuando la distribución es plana.
-- Selección de herramienta en pipelines de agentes: en lugar de pedir a un LLM generativo que emita el nombre de la función, se define un conjunto cerrado de herramientas como opciones y se usa mammoth-1 como cabecera de decisión, con la ventaja de que la salida siempre es una etiqueta válida.
-- Moderación y clasificación de contenido con taxonomías tipadas: definir las políticas como opciones (permitido, spam, acoso, contenido sensible) y obtener la probabilidad por política sobre el mismo prefijo de conversación.
-- Triaje en soporte interno o mesas de ayuda: clasificar tickets por urgencia y equipo responsable en una única petición con varias preguntas, aprovechando el prefill compartido para no repetir el coste del contexto largo por cada pregunta.
-- Anotación asistida y control de calidad de datasets: preetiquetar con probabilidades en lugar de etiquetas duras, de modo que el equipo pueda priorizar la revisión humana sobre los casos de baja confianza.
-- Experimentación A/B y asignación de variantes: usar la distribución de salida como política estocástica controlada, con la posibilidad de fijar umbrales deterministas cuando se requiera reproducibilidad.
-- Extracción de señales en formularios o encuestas: mapear respuestas abiertas a opciones predefinidas (rangos de importe, sectores, motivos de contacto) manteniendo la incertidumbre en la salida.
+- Enrutamiento de tickets de soporte: con preguntas tipo `choice` se puede decidir si un caso va a facturación, técnico o fraude, y con tipo `score` asignar urgencia, todo en una sola inferencia y con probabilidades que permiten umbrales de derivación a humano.
+- Guardrails y moderación: preguntas `noul` calibradas sobre si una entrada incumple una política, con la opción "no lo sé" para reducir falsos positivos en casos ambiguos.
+- Triaje de correos o mensajes entrantes: clasificación multicriterio (intención, urgencia, equipo) en una única pasada gracias al prefijo compartido, lo que reduce coste frente a múltiples llamadas generativas.
+- Clasificación de documentos con imágenes: al aceptar entradas visuales, puede decidir sobre capturas, formularios escaneados o recibos combinando texto e imagen en el estado.
+- Enrutamiento en pipelines de agentes: decidir la siguiente herramienta o rama de un flujo multi-paso a partir de una pregunta `choice`, con probabilidades para implementar lógica de confianza.
+- Evaluación automática de respuestas: uso de preguntas `score` para puntuar calidad, adecuación o riesgo de una salida generada, con calibración explícita.
+- Control de calidad en producción con abstención: desviar a revisión humana los casos en que la probabilidad de la opción elegida es baja o la opción "no lo sé" domina.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de exactitud, calibración (ECE, Brier), latencia ni comparaciones con otros modelos.
+Jev Decision Index 0.4:
+
+| Modelo | Decision Index |
+|---|---:|
+| mammoth-1 | 71,24 |
+| Perplexity Decider v1.2 | 69,42 |
+| elephant-1 | 62,65 |
+| Jev 1.14 | 62,2 |
+| Cloudflare Clef | 55,7 |
+
+Según el autor, en el split público mammoth-1 lidera en 4 de 5 áreas (conocimiento y razonamiento, lenguaje, herramientas y automatización, recuperación y clasificación, artes y gusto humano).
+
+Artificial Analysis Decision Index (réplica del autor):
+
+| Modelo | Score |
+|---|---:|
+| mammoth-1 | 65,9 |
+| elephant-1 | 65,2 |
+| d1-ultra | 65 |
+
+No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, calculada a partir del número de parámetros (no son cifras publicadas por el autor): FP32 ≈109 GB solo de pesos; BF16 ≈55 GB; FP8 ≈27 GB; 4 bits ≈14-15 GB.
-- En el formato publicado (FP32) no cabe en una sola GPU de 80 GB: harían falta al menos dos A100/H100 de 80 GB, o bien convertir los pesos antes de desplegar.
-- En BF16 cabe ajustadamente en una H100 80 GB o A100 80 GB, con margen reducido para KV cache y activaciones.
-- En 4 bits cabría en GPU de consumo como la RTX 4090 (24 GB) o la RTX 3090 (24 GB); en 8 bits, en una RTX 4090 queda muy justo y sería preferible una GPU de 48 GB o superior. Las cuantizaciones habría que generarlas, porque no se publican.
-- Opciones de despliegue: no hay información sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI. Al tratarse de un modelo con cabeza de decisión y salida no generativa, es probable que requiera código específico del autor, que no se incluye en la información disponible.
-- Latencia y throughput: no disponibles. Cualitativamente, el diseño de prefill compartido y la ausencia de decodificación reducen el coste frente a un modelo generativo del mismo tamaño, pero no se aportan medidas.
+- El autor indica que el despliegue autoalojado requiere una GPU CUDA y la imagen `pytorch/pytorch:2.8.0-cuda12.8-cudnn9-devel`.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 27,36 B de parámetros, en bf16 el peso ronda los 55 GB, por lo que se necesitan GPU de 80 GB (A100/H100) o configuraciones multi-GPU; no se documentan cuantizaciones.
+- GPU recomendadas: no disponible en la información; el entrenamiento usó GB300, pero no se especifican requisitos mínimos de inferencia más allá de "una GPU CUDA".
+- ¿Cabe en GPU de consumo? No disponible; sin cuantizaciones publicadas, un modelo de 27 B en bf16 no cabe en GPU consumer de 24 GB.
+- Opciones de despliegue: runtime propio OneJev con `serve.patch` instalado vía `setup.sh`, API `DecisionEngine` del paquete `qev`; también disponible en Baseten Model APIs. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| baselabs/mammoth-1 | 27,36 mil millones | No disponible | Probabilidad por opción, sin texto | `mit` según etiqueta, `other`/`mit` según model card | Hugging Face, safetensors |
-| Qwen/Qwen3.5-27B (modelo base) | 27B (según denominación) | No disponible en la información proporcionada | Texto generativo | No disponible en la información proporcionada | Hugging Face |
-| Otros modelos de decisión o clasificación de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | Decision Index (Jev 0.4) | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| mammoth-1 | 27 B | 16.384 | 71,24 | MIT + Apache 2.0 | Hugging Face, Baseten |
+| elephant-1 | 9 B | no disponible | 62,65 | no disponible | Hugging Face, Baseten |
+| Perplexity Decider v1.2 | no disponible | no disponible | 69,42 | no disponible | no disponible |
+| d1-ultra | no disponible | no disponible | 65 (AA replica) | no disponible | no disponible |
+| Cloudflare Clef | no disponible | no disponible | 55,7 | no disponible | no disponible |
 
-No se dispone de información sobre modelos comparables de la misma categoría (motores de decisión tipados construidos sobre un LLM de 27B). La comparación relevante es con el base: mammoth-1 sacrifica la generación libre a cambio de salidas acotadas y de un coste de inferencia menor por petición, a costa de perder toda funcionalidad de texto.
+No se dispone de datos de parámetros, contexto ni licencia de los modelos competidores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card es de una sola frase: no hay información sobre dataset, metodología de entrenamiento, evaluación ni calibración. Cualquier uso en producción parte de una base documental mínima.
-- Las probabilidades no están validadas: no se publican métricas de calibración, y un modelo de 27B ajustado para emitir distribuciones puede producir confianzas mal calibradas, especialmente en opciones fuera de la distribución de entrenamiento.
-- El riesgo de alucinación de texto es inexistente por diseño (no genera texto), pero existe el riesgo equivalente de asignar probabilidad alta a una opción incorrecta cuando la petición es ambigua o ninguna opción es adecuada. No se documenta si el modelo soporta una opción de "ninguna de las anteriores".
-- No se especifican idiomas soportados; el comportamiento fuera del inglés (o del idioma mayoritario del ajuste) es desconocido.
-- Longitud de contexto desconocida: no se puede garantizar el comportamiento con prefijos largos, que es justamente el escenario que el diseño de prefijo compartido pretende optimizar.
-- Ambigüedad de licencia: la etiqueta del repositorio dice `mit`, pero la model card declara `license: other` con `license_name: mit`. Es una discrepancia que conviene resolver por escrito con el autor antes de un uso comercial.
-- Compatibilidad de despliegue incierta: no se documenta el código necesario para la cabeza de decisión ni el formato exacto de entrada/salida; los servidores de inferencia estándar probablemente no la soportan sin adaptaciones.
-- El repositorio ocupa 109,4 GB en FP32, lo que encarece el almacenamiento y la descarga, y obliga a convertir pesos antes de desplegar en hardware habitual.
-- Modelo con muy poca adopción (21 descargas): sin comunidad que haya verificado su comportamiento.
+- Modelo especializado en decisiones: no está pensado como generador de texto libre; su salida son probabilidades sobre opciones predefinidas.
+- Idiomas: solo se declara inglés (`en`); el rendimiento en castellano u otros idiomas no está documentado.
+- Longitud: las peticiones que superan los límites entrenados se rechazan, no se truncan, lo que puede romper flujos que esperen degradación suave.
+- Calibración dependiente del dominio: las probabilidades están calibradas sobre los datos de entrenamiento (Mix 8); en dominios muy distintos puede requerir recalibración.
+- Riesgo de sesgo: no se documentan evaluaciones de sesgo en la información disponible.
+- Licencia dual: el uso comercial está sujeto simultáneamente a MIT (modificaciones de Baseten) y Apache 2.0 (base Qwen3.5-27B); conviene revisar `LICENSE` y `NOTICE`.
+- Despliegue: el runtime propio (OneJev) y la imagen CUDA específica limitan la portabilidad frente a stacks estándar como vLLM o TGI.
+- La ventana gratuita en Baseten Model APIs finalizó el 27/10/2026 según la model card.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/baselabs/mammoth-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
-- Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
+- Modelo hermano (9B): https://huggingface.co/baselabs/elephant-1
+- Probar en Baseten: https://www.baseten.co/library/mammoth-1/
+- Informe técnico: https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models
+- Blog: https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

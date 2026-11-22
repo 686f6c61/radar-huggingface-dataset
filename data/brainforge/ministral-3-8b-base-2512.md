@@ -2,90 +2,106 @@
 
 ## Resumen
 
-Ministral 3 8B Base 2512 es un modelo de lenguaje multimodal de tamaño compacto desarrollado por Mistral AI, diseñado específicamente para despliegue en entornos de edge computing. Esta versión base, pre-entrenada y no ajustada para instrucciones, combina un modelo de lenguaje de 8.4B parámetros con un codificador visual de 0.4B parámetros, lo que le permite procesar tanto texto como imágenes. Con una ventana de contexto de 256k tokens y soporte para más de diez idiomas, se posiciona como una opción versátil para aplicaciones locales y sistemas embebidos.
+Ministral 3 8B Base 2512 es un modelo de lenguaje de tipo "tiny" desarrollado por Mistral AI, publicado en Hugging Face a través del espacio BrainForge. Forma parte de la familia Ministral 3, diseñada específicamente para despliegue en el borde (edge deployment) y en entornos con recursos limitados. El modelo combina un backbone de lenguaje de 8.4B parámetros con un codificador visual de 0.4B, alcanzando un total de 8.918.026.240 parámetros según los pesos en safetensors.
 
-La relevancia de este modelo radica en su equilibrio entre capacidades y eficiencia: es capaz de ejecutarse en 24GB de VRAM en BF16 y en menos de 12GB cuando se cuantiza, lo que lo hace accesible para hardware de consumo. Su licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas. Al ser una versión base, está pensado para servir como punto de partida para procesos de post-entrenamiento personalizados, ya sea fine-tuning, adaptación a dominios específicos o desarrollo de agentes especializados.
+Se trata de la variante base pre-entrenada, no ajustada para instrucciones ni razonamiento, por lo que está pensada como punto de partida para procesos de post-entrenamiento personalizados. Su relevancia actual radica en que ofrece capacidades multimodales (visión y texto) y multilingües (11 idiomas declarados) en un paquete que cabe en 24 GB de VRAM en BF16 y en menos de 12 GB con cuantización, bajo licencia Apache 2.0.
 
-## Especificaciones tecnicas
+La arquitectura sigue la línea Mistral 3 (tag `mistral3`), con una ventana de contexto de 256k tokens, lo que lo posiciona como una opción equilibrada para asistentes locales, comprensión de documentos e imágenes, y casos agénticos especializados sin depender de infraestructura en la nube.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (texto + vision) |
-| Parametros totales | 8.918.026.240 (8.4B LM + 0.4B vision encoder) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer multimodal Mistral 3 (backbone de lenguaje + codificador visual) |
+| Parámetros totales | 8.918.026.240 (8.4B LM + 0.4B vision encoder) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 256.000 tokens |
-| Tipos de cuantizacion | BF16 nativo; cuantizacion adicional disponible (FP8, GGUF, etc.) |
+| Tipos de cuantización | BF16 nativo; cuantización mencionada por el autor para reducir a <12 GB (formatos concretos no disponibles) |
 | Idiomas soportados | en, fr, es, de, it, pt, nl, zh, ja, ko, ar |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16) |
+| Formato de pesos | safetensors (librería declarada: vllm; `mistral-common` para tokenización) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura transformer densa, sin mezcla de expertos (MoE), compuesta por dos componentes diferenciados: un modelo de lenguaje de 8.4B parámetros y un codificador visual de 0.4B parámetros. Esta separación permite un procesamiento multimodal eficiente, donde las imágenes se procesan a través del codificador visual y se integran con el texto en el modelo de lenguaje. La arquitectura está optimizada para inferencia de baja latencia en hardware limitado, lo que la hace adecuada para despliegue en edge.
+El modelo se compone de dos bloques: un modelo de lenguaje de 8.4B parámetros y un codificador visual de 0.4B, integrados bajo la arquitectura Mistral 3. Esta configuración permite procesar entradas de texto e imagen dentro de la misma ventana de contexto de 256k tokens. La model card no detalla el número exacto de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; al ser una variante base, se entiende que no ha pasado por post-entrenamiento alineado.
 
-Los detalles sobre el entrenamiento, como el número de tokens procesados, la composición exacta del dataset o el uso de técnicas como RLHF o DPO, no están disponibles en la información proporcionada. Al ser una versión base pre-entrenada, no se ha aplicado ningún ajuste posterior para instrucciones o razonamiento, lo que la convierte en una plataforma ideal para que terceros realicen su propio post-entrenamiento. La familia Ministral 3 incluye variantes de 3B, 8B y 14B, cada una con versiones base, instruct y reasoning, lo que sugiere un pipeline de entrenamiento modular y escalable.
+La innovación principal reside en la optimización para edge: el modelo completo cabe en 24 GB de VRAM en BF16 y por debajo de 12 GB con cuantización, lo que habilita su ejecución en GPUs de consumo y sistemas embebidos. La tokenización se gestiona mediante `mistral-common`, y la librería recomendada para inferencia es vLLM. No se dispone de información sobre técnicas adicionales como decodificación especulativa o atención lineal en la documentación proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: capacidad de generar texto coherente y realizar tareas de razonamiento básico, aunque al ser base no está optimizado para instrucciones complejas.
-- Comprensión de imágenes: el codificador visual permite analizar imágenes y proporcionar descripciones o responder preguntas sobre contenido visual.
-- Soporte multilingüe: cubre once idiomas principales, incluyendo inglés, francés, español, alemán, italiano, portugués, neerlandés, chino, japonés, coreano y árabe.
-- Ventana de contexto larga: 256k tokens, lo que permite procesar documentos extensos o conversaciones de múltiples turnos con contexto completo.
-- Fine-tuning y personalización: al ser una versión base, es adecuado para procesos de post-entrenamiento como fine-tuning, adaptación a dominios específicos o entrenamiento de instrucciones.
-- Sin capacidades de tool calling ni agentes pre-entrenados: estas funcionalidades deben implementarse mediante post-entrenamiento.
+- Generación de texto y modelado de lenguaje base (sin alineación instruccional).
+- Comprensión de imágenes: análisis y descripción de contenido visual combinado con texto.
+- Multilingüismo en 11 idiomas: inglés, francés, español, alemán, italiano, portugués, neerlandés, chino, japonés, coreano y árabe.
+- Procesamiento de contexto largo de hasta 256k tokens.
+- Base para fine-tuning y especialización en dominios concretos.
+- Soporte de tool calling y function calling: no confirmado en la información disponible para la variante base.
+- Capacidades agénticas multi-paso: no confirmadas para la variante base (la model card menciona "specialized agentic use cases" como caso de uso, pero sin detalle técnico).
+- Modo thinking o razonamiento explícito: no disponible en esta variante (existe una variante Reasoning separada en la familia).
 
 ## Casos de uso
 
-- Asistentes locales de IA: el modelo puede ejecutarse en un ordenador de consumo con 24GB de VRAM, lo que permite crear un asistente personal de IA que funcione sin conexión, con capacidades de visión para analizar capturas de pantalla o imágenes locales.
-- Descripción de imágenes y documentos: gracias a su codificador visual, puede generar descripciones de imágenes o extraer información de documentos escaneados, útil para sistemas de archivado automático o accesibilidad.
-- Traducción automática: con soporte para más de diez idiomas, puede utilizarse como motor de traducción local para documentos o conversaciones, sin depender de servicios en la nube.
-- Fine-tuning para dominios específicos: al ser un modelo base, es ideal para entrenar modelos especializados en sectores como medicina, legal o técnico, partiendo de una base sólida y eficiente.
-- Chatbots en entornos restringidos: su tamaño compacto y bajo consumo de recursos lo hacen adecuado para integrarse en sistemas embebidos o entornos con limitaciones de memoria y potencia.
-- Sistemas de agentes personalizados: aunque no incluye tool calling pre-entrenado, puede ser post-entrenado para funcionar como agente autónomo, gestionando tareas simples en entornos locales.
+- Asistente local diario: el modelo puede ejecutarse en una estación de trabajo con 24 GB de VRAM en BF16 o en menos de 12 GB cuantizado, gestionando conversaciones multi-turno con contexto de hasta 256k tokens sin conexión a la nube.
+- Comprensión de documentos e imágenes: gracias al codificador visual de 0.4B, puede describir y analizar capturas, diagramas o páginas escaneadas combinadas con instrucciones textuales, útil en herramientas de accesibilidad o digitalización.
+- Traducción y generación de contenido multilingüe: con soporte para 11 idiomas, es adecuado para pipelines de localización que requieran un modelo pequeño desplegable en infraestructura propia.
+- Fine-tuning especializado: al ser una variante base, sirve como punto de partida para ajustar un modelo de dominio (legal, médico, técnico) con datos propios, partiendo de una licencia Apache 2.0 sin restricciones comerciales.
+- Sistemas embebidos y edge computing: su huella de memoria permite integrarlo en dispositivos con recursos limitados para tareas de clasificación, resumen o generación asistida en tiempo real.
+- Prototipado de agentes especializados: la ventana de 256k tokens facilita mantener historiales largos de herramientas y observaciones en flujos agénticos, aunque requiere post-entrenamiento para obtener un comportamiento instruccional fiable.
+- Investigación en multimodalidad: útil para experimentar con alineación visión-lenguaje a pequeña escala y comparar con modelos de tamaño similar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta versión base. Los datos disponibles en la model card se refieren a las versiones Instruct y Reasoning de la familia Ministral 3, que no son comparables directamente. Para referencia, la versión Instruct de 8B obtiene los siguientes resultados en comparación con Qwen3-VL-8B-Instruct:
+Los datos publicados en la model card corresponden a las variantes Instruct y Reasoning de la familia, no a la variante Base. Se recogen a continuación como referencia del rendimiento de la familia Ministral 3 en el tamaño de 8B.
+
+| Modelo | AIME25 | AIME24 | GPQA Diamond | LiveCodeBench |
+|---|---|---|---|---|
+| Ministral 3 8B (Reasoning) | 0.787 | 0.860 | 0.668 | 0.616 |
+| Qwen3-VL-8B-Thinking | 0.798 | 0.860 | 0.671 | 0.580 |
 
 | Modelo | Arena Hard | WildBench | MATH Maj@1 | MM MTBench |
 |---|---|---|---|---|
 | Ministral 3 8B (Instruct) | 0.509 | 66.8 | 0.876 | 8.08 |
 | Qwen3-VL-8B-Instruct | 0.528 | 66.3 | 0.946 | 8.00 |
 
-Estos datos corresponden a la versión instruct, no a la base, y se muestran solo como referencia de las capacidades de la familia. Para la versión base, no hay datos públicos de benchmarks.
+No se han publicado resultados de benchmarks específicos para la variante Base 2512 en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 24GB en BF16 (formato nativo); menos de 12GB cuando se cuantiza (FP8 o inferior).
-- GPU recomendadas: RTX 4090, RTX 6000 Ada, A100, H100 (para BF16); GPU con menos VRAM si se usa cuantización.
-- Compatible con GPU de consumo: sí, con cuantización se puede ejecutar en tarjetas de 12GB como la RTX 4070 Ti o similar.
-- Opciones de despliegue: vLLM (indicado en la librería del modelo), llama.cpp, Ollama, TGI, y otras herramientas compatibles con Safetensors.
-- Latencia y throughput: no disponible en la información proporcionada; se espera una latencia adecuada para edge dada la optimización del modelo.
+- VRAM estimada: 24 GB en BF16 para el modelo completo; menos de 12 GB con cuantización según el autor.
+- GPU recomendadas: A100 40 GB, H100, L40S o RTX 4090 (24 GB) para BF16; RTX 4080/4070 Ti Super (16 GB) o RTX 3090 con cuantización.
+- Cabe en GPU de consumo: sí, en RTX 4090 en BF16 y en GPUs de 12-16 GB con cuantización.
+- Opciones de despliegue: vLLM (librería declarada), `mistral-common` para tokenización; otros runners no confirmados en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Licencia | Uso |
+| Modelo | Parámetros | Contexto | Visión | Licencia | Rendimiento (Instruct 8B) |
 |---|---|---|---|---|---|
-| Ministral 3 8B Base 2512 | 8.9B | 256k | Sí | Apache 2.0 | Base |
-| Qwen3-VL-8B-Instruct | 8.5B | 32k | Sí | Apache 2.0 | Instruct |
-| Gemma3-12B-Instruct | 12B | 128k | Sí | Gemma License | Instruct |
+| Ministral 3 8B Base 2512 | 8.9B | 256k | Sí | Apache 2.0 | Arena Hard 0.509, WildBench 66.8, MATH 0.876, MM MTBench 8.08 (variante Instruct) |
+| Qwen3-VL-8B-Instruct | ~8B | no disponible | Sí | no disponible | Arena Hard 0.528, WildBench 66.3, MATH 0.946, MM MTBench 8.00 |
+| Gemma3-12B-Instruct | ~12B | no disponible | Sí | no disponible | Arena Hard 0.436, WildBench 63.2, MATH 0.854, MM MTBench 6.70 |
 
-La comparación directa no es posible al ser modelos de naturaleza distinta (base vs instruct). Los benchmarks de la tabla anterior muestran que la versión Instruct de Ministral 3 8B compite con Qwen3-VL-8B-Instruct en tareas de instrucción, con resultados ligeramente inferiores en MATH pero superiores en WildBench. La ventaja de Ministral 3 es su mayor contexto (256k vs 128k) y su diseño específico para edge deployment.
+La comparativa se basa en los datos de la propia model card; los valores de contexto y licencia de los modelos alternativos no se detallan en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos: como modelo base pre-entrenado, puede reflejar los sesgos presentes en los datos de entrenamiento; no se han publicado evaluaciones específicas de sesgo.
-- Alucinación: al no estar ajustado para instrucciones, puede generar contenido inexacto o inventado, especialmente en tareas de razonamiento complejo.
-- Limitaciones de idioma: aunque cubre 11 idiomas, la calidad puede variar significativamente entre ellos; los idiomas con menos representación en el entrenamiento pueden tener un rendimiento inferior.
-- Uso comercial: la licencia Apache 2.0 permite uso comercial sin restricciones, pero no se ofrecen garantías sobre el rendimiento en producción.
-- Contexto largo: aunque soporta 256k tokens, el rendimiento en contextos muy largos puede degradarse; se recomienda evaluar en casos de uso reales.
-- Sin soporte de tool calling o agentes pre-entrenados: estas capacidades requieren post-entrenamiento, lo que añade complejidad y coste.
+- Al ser una variante base, no está alineada para instrucciones: puede generar continuaciones incoherentes o ignorar formatos conversacionales sin post-entrenamiento.
+- Riesgo de alucinación inherente a los modelos de lenguaje pre-entrenados, especialmente en tareas factuales o de razonamiento complejo.
+- Sesgos potenciales derivados de los datos de pre-entrenamiento, no documentados en la información disponible.
+- Aunque declara 11 idiomas, el rendimiento relativo por idioma no está cuantificado; los idiomas con menos representación pueden degradarse.
+- La ventana de 256k tokens no garantiza atención efectiva en todo el rango; no se han publicado evaluaciones de recuperación en contexto largo.
+- Licencia Apache 2.0 permite uso comercial y modificación, pero conviene revisar los términos de Mistral AI para el uso de datos personales indicados en la model card.
+- El repositorio tiene 685 descargas y 0 likes, y el autor del espacio es BrainForge, no la cuenta oficial de Mistral AI; conviene verificar la procedencia de los pesos antes de usarlos en producción.
+- No se dispone de información sobre tool calling ni comportamiento agéntico verificado en la variante base.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/BrainForge/Ministral-3-8B-Base-2512
-- Modelo original de Mistral AI: https://huggingface.co/mistralai/Ministral-3-8B-Base-2512
-- Documentación oficial: https://docs.mistral.ai/models/ministral-3-8b-25-12
-- Blog de anuncio: https://mistral.ai/news/mistral-3
+- Variante Instruct 8B: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
+- Variante Base 8B oficial: https://huggingface.co/mistralai/Ministral-3-8B-Base-2512
+- Variante Reasoning 8B: https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512
+- Familia 3B Base: https://huggingface.co/mistralai/Ministral-3-3B-Base-2512
+- Familia 14B Base: https://huggingface.co/mistralai/Ministral-3-14B-Base-2512
+- Checkpoints adicionales: https://huggingface.co/collections/mistralai/ministral-3-additional-checkpoints
+- Blog: https://mistral.ai/news/mistral-3
 - Paper: https://arxiv.org/abs/2601.08584
-- Colección de checkpoints adicionales: https://huggingface.co/collections/mistralai/ministral-3-additional-checkpoints
+- Política de privacidad de Mistral: https://mistral.ai/terms/

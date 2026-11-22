@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/CherryPit-1.1-2B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/CherryPit-1.1-2B-GGUF",
-      "snippet": "mradermacher / CherryPit-1.1-2B-GGUF Like 0 Transformers GGUF English code coding math reasoning tool-calling on-device small-language-model minicpm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "mradermacher/CherryPit-1.0-2B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/CherryPit-1.0-2B-GGUF",
-      "snippet": "mradermacher / CherryPit-1.0-2B-GGUF Like 0 Transformers GGUF English code coding reasoning tool-calling on-device small-language-model minicpm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    }
-  ]
+  "sources": []
 }

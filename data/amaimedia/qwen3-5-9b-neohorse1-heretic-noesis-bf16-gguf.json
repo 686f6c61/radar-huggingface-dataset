@@ -275,7 +275,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 698,
+  "downloads_30d": 699,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
@@ -296,31 +296,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Leon's Gourmet Grocer",
-      "url": "https://leonsgourmetgrocer.com/",
-      "snippet": "Leon's Gourmet Grocer proudly serves the Lincoln,NE area. Come in for the best grocery experience in town. We're open Monday - …"
-    },
-    {
-      "title": "Leon's Gourmet Grocer | Ad Specials",
-      "url": "https://www.leonsgourmetgrocer.com/ads",
-      "snippet": "Leon's Gourmet Grocer proudly serves the Lincoln,NE area. Come in for the best grocery experience in town. We're open Monday - …"
-    },
-    {
-      "title": "Leon's Gourmet Grocer | Register",
-      "url": "https://leonsgourmetgrocer.com/registration",
-      "snippet": "Leon's Gourmet Grocer proudly serves the Lincoln,NE area. Come in for the best grocery experience in town. We're open Monday - …"
-    },
-    {
-      "title": "Leon's Gourmet Grocer | Health & Wellness | Articles",
-      "url": "https://www.leonsgourmetgrocer.com/health_wellness",
-      "snippet": "Leon's Gourmet Grocer proudly serves the Lincoln,NE area. Come in for the best grocery experience in town. We're open Monday - …"
-    },
-    {
-      "title": "Leon's Gourmet Grocer | Health & Wellness | Produce Color",
-      "url": "https://leonsgourmetgrocer.com/health_wellness/colors",
-      "snippet": "Leon's Gourmet Grocer proudly serves the Lincoln,NE area. Come in for the best grocery experience in town. We're open Monday - …"
-    }
-  ]
+  "sources": []
 }

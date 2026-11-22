@@ -2,139 +2,112 @@
 
 ## Resumen
 
-Spark-x2.6-4b-hindsight-1.1-research-preview es un adaptador LoRA (rsLoRA) de rango 128 publicado por el usuario samartomar sobre el modelo base XHToken/Spark-X2.6-4B, un transformer denso de 4.112 millones de parametros. El adaptador esta especializado en tareas de memoria estructurada para el sistema Hindsight (Vectorize), un motor de memoria de agentes que extrae hechos, consolida observaciones, actualiza paginas de memoria, retrae afirmaciones retiradas y produce respuestas estructuradas en JSON. La release incluye el adaptador PEFT, cuatro exportaciones GGUF para llama.cpp y un gateway compatible con la API de OpenAI (`spark_prod_server.py`).
+spark-x2.6-4b-hindsight-1.1-research-preview es un adaptador LoRA de tipo rsLoRA (rank 128) entrenado por el usuario samartomar sobre el modelo base XHToken/Spark-X2.6-4B, un transformer de 4.112.079.360 parametros. El adaptador esta especializado en tareas de "memoria retrospectiva" (Hindsight memory) segun la plataforma hindsight.vectorize.io: extraccion de hechos, consolidacion de observaciones, actualizacion de paginas de memoria, retraccion de afirmaciones y generacion de respuestas estructuradas. Se distribuye junto con un gateway compatible con la API de OpenAI (`spark_prod_server.py`) y cuatro exportaciones GGUF para `llama.cpp`.
 
-El modelo resuelve un problema concreto: convertir un LLM generalista de 4B en un ejecutor fiable de tareas de memoria con salida estructurada verificable. Segun la model card, el adaptador se entrena sobre cuatro especialistas destilados y una cadena de iteraciones (v1.0 con 7.606 ejemplos, C3 con 1.298 + 273 ejemplos adicionales), alcanzando una tasa de aprobacion del 99,0% sobre 495 casos de desarrollo frente al 25,1% del modelo base, medido con el rule-checker v5 incluido en el repositorio.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso de adaptacion PEFT sobre un modelo de 4B con un pipeline de destilacion desde cuatro especialistas. Por otro, y de forma mas importante para quien evalue su uso en produccion, el propio autor declara en la model card que esta version **fallo su prueba multi-paso**: en 30 flujos de trabajo encadenados de Hindsight, la version 1.1 no acerto en ninguno de los 30 todos los estadios, frente a 18 de 30 de la version anterior V14. El autor ha detenido el entrenamiento y recomienda usar V14.
 
-Es relevante ahora porque demuestra que un modelo de 4B con un adaptador pequeno (259M parametros, 1,04 GB) puede igualar o superar a modelos mucho mayores en tareas de extraccion y consolidacion de memoria, y porque empaqueta todo el stack de inferencia (pesos, cuantizaciones, gateway y verificadores) en un unico repositorio reproducible. La licencia Apache 2.0 facilita su uso comercial, aunque el modelo solo declara soporte para ingles.
+Se trata, por tanto, de un artefacto de investigacion con fecha de noviembre de 2026, publicado bajo licencia Apache 2.0, con 739 descargas y un unico "like" en Hugging Face. No es un modelo de proposito general ni compite en benchmarks estandar como MMLU o HumanEval; su evaluacion se limita a un conjunto propio de 495 casos de desarrollo en 11 tareas de Hindsight.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base Spark-X2.6-4B) + adaptador LoRA rsLoRA de rango 128 |
-| Parametros totales | 4.112.079.360 (modelo base); adaptador: 259M parametros |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M (GGUF); adaptador en BF16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (adaptador PEFT), GGUF (cuatro variantes) |
+| Arquitectura | Transformer decoder-only (modelo base XHToken/Spark-X2.6-4B) con adaptador LoRA rsLoRA de rank 128 |
+| Parametros totales | 4.112.079.360 (modelo base); adaptador de 259M parametros (1,04 GB) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF BF16, Q8_0, Q6_K, Q4_K_M (cuatro exportaciones incluidas); base entrenada en BF16 puro |
+| Idiomas soportados | Ingles (unico idioma declarado) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (adaptador PEFT) y GGUF (cuatro variantes fusionadas) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 4.112 millones de parametros (XHToken/Spark-X2.6-4B, revision `64ca8f2a295b`). Sobre el se aplica un adaptador rsLoRA de rango 128 entrenado desde cero en BF16 puro, sin partir del checkpoint de la version anterior (V14). El entrenamiento combina cuatro especialistas, un proceso de destilacion, una primera version v1.0 con 7.606 ejemplos y una fase C3 con 1.298 + 273 ejemplos adicionales. La cadena de entrenamiento cubre 11 roles de tarea distintos dentro del pipeline de Hindsight.
+El adaptador se entrena "fresh-from-base" en precision BF16 pura sobre el modelo base Spark-X2.6-4B, sin partir de la cadena de adaptadores anteriores (V9 a V14). Usa rsLoRA con rank 128, lo que produce un adaptador de 259M parametros, notablemente mayor que el LoRA de 65M parametros de la version V14 (rank 32). El proceso de entrenamiento descrito en la model card consta de cuatro fases: entrenamiento de cuatro especialistas, destilacion hacia una version `v1.0` con 7.606 ejemplos, y una fase final C3 con 1.298 mas 273 ejemplos. No se detalla la composicion exacta de los datos de entrenamiento ni si se empleo RLHF o DPO.
 
-La innovacion tecnica principal no esta en la arquitectura del transformer sino en el stack de serving: decodificacion ordenada con XGrammar para forzar salida JSON valida, pensamiento (`<think>`) activado por rol, y un `HindsightWriterGateway` que aplica hasta un reintento de reparacion sobre las respuestas del modelo. Las exportaciones GGUF se generaron fusionando el adaptador con el base en BF16 y cuantizando con una matriz de importancia (`imatrix`) de 512 prompts, manteniendo las puertas de atencion en BF16. La model card reporta que el gateway aporta una mejora de 97,8% a 99,0% en la tasa de aprobacion agregada.
+La innovacion principal no esta en el adaptador sino en el empaquetado: se incluye un "Writer Gateway" (`spark_prod_server.py`) compatible con la API de OpenAI, con ordenacion por gramatica y reintentos (hasta 1), disenado para orquestar las llamadas del modelo en el pipeline de Hindsight. La model card documenta un fallo relevante de este gateway: la version publicada devuelve HTTP 422 en 68 de los 495 casos, aunque el checker puntua 64 de esas 68 respuestas como correctas, lo que indica un problema de validacion en el gateway y no en los pesos. Ademas, la version 1.1 se evaluo con "thinking" activado y desactivado, ya que el modelo base incorpora un modo de razonamiento que V14 no tenia (V14 fue entrenado sin thinking y sus primeros intentos caen de 463 a 403 aciertos cuando se activa).
 
 ## Capacidades
 
-- Extraccion de hechos (retain) a partir de conversaciones, con salida estructurada.
-- Consolidacion de observaciones en paginas de memoria.
-- Creacion inicial de paginas de memoria.
-- Actualizacion de paginas existentes.
-- Retraccion de afirmaciones retiradas (claim retraction).
-- Reescritura de consultas (query rewriting).
-- Generacion de argumentos de herramientas para llamadas de seguimiento (follow-up tool arguments).
-- Acortamiento de respuestas (response shortening).
-- Deduplicacion de entradas de memoria.
-- Extraccion final estructurada en JSON.
-- Generacion de respuestas de cierre (closing answer).
-- Soporte de tool calling / function calling mediante el gateway compatible con la API de OpenAI.
-- Modo de pensamiento (`<think>`) activado por rol.
-- Salida estructurada garantizada mediante decodificacion XGrammar.
-- Capacidad multilingue: solo ingles declarado.
+- Extraccion de hechos (retain) desde texto conversacional hacia estructuras de memoria.
+- Consolidacion de observaciones multiples en entradas coherentes.
+- Creacion y actualizacion de paginas de memoria con contenido estructurado.
+- Retraccion de afirmaciones retiradas o invalidadas.
+- Reescritura de consultas (query rewriting) para recuperacion.
+- Generacion de argumentos de herramientas de seguimiento (tool arguments) en formato estructurado.
+- Acortamiento de respuestas (response shortening) y deduplicacion de entradas.
+- Extraccion final estructurada (structured final extraction) con salida validable por gramatica.
+- Soporte de "thinking mode" heredado del modelo base.
+- Generacion de texto conversacional en ingles.
+- No se documentan capacidades de vision, audio, codigo general ni matematicas fuera del ambito Hindsight.
 
 ## Casos de uso
 
-- Memoria de agentes conversacionales: el modelo extrae hechos de cada turno de una conversacion y los consolida en paginas de memoria, permitiendo que un agente mantenga contexto persistente entre sesiones sin reenviar todo el historial al LLM principal.
-- Atencion al cliente con memoria de cliente: integrado en el gateway, procesa cada interaccion para actualizar el perfil del cliente (preferencias, incidencias, reclamaciones) y retrae afirmaciones que el cliente haya corregido.
-- Pipelines RAG con memoria estructurada: sustituye o complementa la indexacion vectorial clasica, generando paginas de memoria consolidadas y deduplicadas que reducen el ruido en la recuperacion.
-- Automatizacion de CRM: extrae hechos de correos y notas de reuniones, actualiza registros y deduplica entradas repetidas, con salida JSON validada por el verificador incluido.
-- Ejecucion local en hardware de consumo: las variantes Q4_K_M (2,58 GiB) y Q6_K (3,22 GiB) caben en GPUs de 8 GB y permiten desplegar el pipeline de memoria sin enviar datos a la nube, relevante por privacidad.
-- Generacion de argumentos para herramientas en agentes multi-paso: el modelo produce los argumentos JSON de llamadas de seguimiento (100% de aprobacion en la tarea de follow-up tool arguments con gateway), lo que lo hace util como planificador de herramientas ligero.
-- Investigacion sobre memoria en LLMs: el repositorio incluye verificadores, recibos de cualificacion y datos de comparacion entre versiones, lo que facilita reproducir y extender los experimentos.
+- Construccion de un sistema de memoria de agente a largo plazo: el adaptador se usa como "writer" que transforma turnos de conversacion en hechos atomicos y entradas de pagina, con el gateway validando la estructura de salida antes de persistir en la base de memoria.
+- Consolidacion periodica de memoria: dado un lote de observaciones acumuladas, el modelo las fusiona en entradas deduplicadas, reduciendo el crecimiento descontrolado del almacen. La tarea de consolidacion obtiene 98,1% de acierto en la evaluacion bare.
+- Gestion de retracciones en sistemas RAG: cuando una fuente se invalida, el modelo marca las afirmaciones afectadas como retiradas y actualiza las paginas dependientes, manteniendo la coherencia del corpus.
+- Reescritura de consultas en pipelines de recuperacion: el modelo reformula la pregunta del usuario en terminos alineados con el vocabulario de la memoria, tarea en la que alcanza 100% en la evaluacion bare.
+- Generacion de argumentos de herramientas en agentes multi-paso: produce los parametros JSON de la siguiente llamada a herramienta dentro de un flujo Hindsight, con 83,3% de acierto bare.
+- Prototipado local en una unica GPU: los GGUF Q4_K_M y Q6_K permiten ejecutar el modelo en `llama.cpp` sobre una RTX 3090 (configuracion probada por el autor), util para experimentar con el pipeline sin depender de APIs externas.
+- Evaluacion comparativa de estrategias de memoria: sirve como referencia negativa frente a V14 en estudios de ablacion sobre serving y gramaticas, dado que la model card publica las cinco configuraciones de evaluacion.
 
 ## Benchmarks y rendimiento
 
-Resultados del rule-checker v5 sobre los mismos 495 casos de desarrollo expuestos (la categoria `uncertain` no cuenta como aprobado). Datos extraidos de la model card:
+Los unicos datos publicados son del conjunto propio de 495 casos de desarrollo en 11 tareas Hindsight, puntuados por el rule-checker v5. No hay resultados de MMLU, HumanEval, GSM8K ni benchmarks estandar.
 
-| Tarea | Casos | Base Spark-X2.6-4B | V14 | 1.1 (raw) | 1.1 (+ gateway) |
+| Tarea | Casos | V14 bare | 1.1 bare | V14 served | 1.1 served (publicado) |
 |---|---:|---:|---:|---:|---:|
-| Fact extraction (retain) | 68 | 0,0% | 82,4% | 98,5% | 98,5% |
-| Consolidation | 103 | 19,4% | 95,1% | 98,1% | 98,1% |
-| Closing answer | 54 | 0,0% | 100,0% | 98,1% | 98,1% |
-| Initial page creation | 54 | 0,0% | 94,4% | 98,1% | 98,1% |
-| Structured final extraction | 48 | 50,0% | 100,0% | 100,0% | 100,0% |
-| Query rewriting | 24 | 33,3% | 91,7% | 100,0% | 100,0% |
-| Follow-up tool arguments | 24 | 16,7% | 66,7% | 83,3% | 100,0% |
-| Response shortening | 24 | 83,3% | 100,0% | 100,0% | 100,0% |
-| Deduplication | 8 | 87,5% | 100,0% | 100,0% | 100,0% |
-| Page updates | 40 | 65,0% | 95,0% | 100,0% | 100,0% |
-| Claim retraction | 48 | 31,2% | 100,0% | 95,8% | 100,0% |
+| Extraccion de hechos (retain) | 68 | 82,4% | 91,2% | 41,2% | 100,0% |
+| Consolidacion | 103 | 95,1% | 98,1% | 84,5% | 98,1% |
+| Respuesta de cierre | 54 | 100,0% | 98,1% | 44,4% | 48,1% |
+| Creacion inicial de pagina | 54 | 94,4% | 98,1% | 40,7% | 48,1% |
+| Extraccion final estructurada | 48 | 100,0% | 100,0% | 100,0% | 100,0% |
+| Reescritura de consulta | 24 | 91,7% | 100,0% | 100,0% | 100,0% |
+| Argumentos de herramienta | 24 | 66,7% | 83,3% | 83,3% | 100,0% |
+| Acortamiento de respuesta | 24 | 100,0% | 100,0% | 100,0% | 100,0% |
+| Deduplicacion | 8 | 100,0% | 100,0% | 100,0% | 100,0% |
+| Actualizacion de pagina | 40 | 95,0% | 100,0% | 67,5% | 100,0% |
+| Retraccion de afirmacion | 48 | 100,0% | 100,0% | 79,2% | 75,0% |
 
-Agregado global (pass / uncertain / fail):
-- Base Spark-X2.6-4B: 25,1% (124 / 12 / 359, 246 criticos).
-- Hindsight V14: 93,5% (463 / 3 / 29, 11 criticos).
-- Hindsight 1.1 (raw): 97,8% (484 / 2 / 9, 3 criticos).
-- Hindsight 1.1 (+ gateway): 99,0% (490 / 2 / 3, 2 criticos).
+Resultado global (pass / uncertain / fail): 1.1 bare 97,2% (481/2/12, 8 criticos); 1.1 served con gateway publicado 85,9% (425/2/68, 68 criticos); V14 bare 93,5% (463/3/29, 11 criticos); V14 served 70,7% (350/4/141, 116 criticos); modelo base original 25,1% (124/12/359).
 
-Suites adicionales para 1.1 (+ gateway): Dev-v2 380/0/0 (380/380 en raw Attempt-1); Qual-v3-300 660/0/0 sobre 300 escenarios sin cadena; smoke check 3/3 JSON exacto.
-
-Rendimiento GGUF sobre una muestra estratificada de 60 casos de Dev-v2 (5 por rol, 12 roles), evaluado con `llama-server`:
-
-| Variante | Fichero | Tamano | Smoke | Muestra 60 casos (pass/unc/fail) |
-|---|---|---:|---:|---:|
-| BF16 | Spark-X2.6-4B-Hindsight-1.1-BF16.gguf | 7,66 GiB | 3/3 | 60/0/0 |
-| Q8_0 | Spark-X2.6-4B-Hindsight-1.1-Q8_0.gguf | 4,07 GiB | 3/3 | 60/0/0 |
-| Q6_K | Spark-X2.6-4B-Hindsight-1.1-Q6_K.gguf | 3,22 GiB | 3/3 | 60/0/0 |
-| Q4_K_M | Spark-X2.6-4B-Hindsight-1.1-Q4_K_M.gguf | 2,58 GiB | 3/3 | 60/0/0 |
-
-La model card advierte que la paridad 60/0/0 solo establece equivalencia en esos 60 casos, no ausencia universal de perdida por cuantizacion. No se han publicado resultados en benchmarks generales (MMLU, HumanEval, GSM8K) en la informacion disponible.
+En la prueba multi-paso de 30 flujos encadenados con ocho estadios, 1.1 no fue correcto en ninguno de los 30 (error critico en 26 o 27), frente a 18 de 30 de V14, 3 de 30 de Claude Haiku 5.5 y 0 de 30 de Claude Sonnet 5.5.
 
 ## Requisitos de hardware
 
-- VRAM estimada: adaptador PEFT en BF16 sobre base de 4B, aproximadamente 8-9 GB (4,1B parametros en BF16 mas overhead de activaciones y KV cache).
-- GGUF Q4_K_M: 2,58 GiB de pesos, apto para GPUs de 6-8 GB.
-- GGUF Q6_K: 3,22 GiB, apto para GPUs de 8 GB.
-- GGUF Q8_0: 4,07 GiB, apto para GPUs de 8-10 GB.
-- GGUF BF16: 7,66 GiB, requiere 10-12 GB de VRAM.
-- GPU probadas segun la model card: RTX 3090 con llama.cpp.
-- GPU recomendadas: RTX 3090, RTX 4090, A100, H100 para el adaptador PEFT en BF16; RTX 3060 12 GB o superior para las variantes GGUF cuantizadas.
-- Cabe en GPU de consumo: si, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 y RTX 3090.
-- Opciones de despliegue: llama.cpp (`llama-server`), PEFT con el loader portable incluido (`portable_spark_adapter.load`), gateway compatible con OpenAI (`spark_prod_server.py`). No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
+- VRAM estimada para inferencia: el modelo base de 4,1B en BF16 requiere aproximadamente 8,2 GB de pesos; en Q8_0 unos 4,4 GB; en Q6_K unos 3,4 GB; en Q4_K_M unos 2,6 GB. El adaptador rsLoRA anade 1,04 GB si se carga por separado.
+- GPU recomendadas: el autor probo sobre una RTX 3090. Cabe en RTX 4090, RTX 3090, RTX 4080 y, con cuantizacion Q4_K_M, en GPUs de 8 GB como RTX 3070 o RTX 4060. Para BF16 completo se recomienda A100, H100 o L40S.
+- Cabe en GPU de consumo: si, en la mayoria de GPUs con 8 GB o mas usando los GGUF incluidos, y con 12 GB o mas en Q8_0.
+- Opciones de despliegue: `llama.cpp` (soportado de forma explicita con los GGUF), PEFT con el loader portatil incluido, y el Writer Gateway propio (`spark_prod_server.py`) compatible con la API de OpenAI. No se documenta soporte especifico para vLLM o TGI.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
-- Requisitos de software: Linux, Python 3.12, CUDA (el ejemplo usa cu128). El loader descarga el modelo base en la revision fijada `64ca8f2a295b8ceb2757b9d4749a6558c4759e5b`.
-- Nota de seguridad: la model card advierte que las dependencias fijadas tienen avisos de seguridad conocidos y que la carga ejecuta codigo personalizado del publicador con `trust_remote_code=True`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en tareas Hindsight | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Spark-x2.6-4b-hindsight-1.1 (este) | 4,1B + adaptador 259M | no disponible | 99,0% (495 casos) | Apache 2.0 | HF, GGUF, gateway |
-| Spark-x2.6-4b-hindsight-v14 | 4,1B + adaptador 65M | no disponible | 93,5% (495 casos) | Apache 2.0 | HF, PEFT |
-| Spark-X2.6-4B (base) | 4,1B | no disponible | 25,1% (495 casos) | Apache 2.0 | HF |
+| Modelo | Parametros | Contexto | Rendimiento en 30 flujos Hindsight | Licencia |
+|---|---|---|---|---|
+| spark-x2.6-4b-hindsight-1.1 | 4,1B + 259M adaptador | no disponible | 0 de 30 correctos (26-27 con error critico) | Apache 2.0 |
+| spark-x2.6-4b-hindsight-v14 | 4,1B + 65M adaptador | no disponible | 18 de 30 correctos (5 con error critico) | Apache 2.0 (presumible, mismo autor) |
+| Claude Haiku 5.5 (API) | no disponible | no disponible | 3 de 30 correctos (23 con error critico) | Propietaria |
+| Claude Sonnet 5.5 (API) | no disponible | no disponible | 0 de 30 correctos (26 con error critico) | Propietaria |
 
-No se dispone de datos de benchmarks generales ni de comparaciones con modelos de la misma categoria (por ejemplo, otros modelos de 4B especializados en memoria o salida estructurada) en la informacion proporcionada.
+La comparacion con modelos de proposito general no es posible con los datos disponibles: no se publican resultados de benchmarks estandar para ninguna de las variantes.
 
 ## Limitaciones y advertencias
 
-- Solo declara soporte para ingles; el rendimiento en otros idiomas no esta documentado.
-- El modelo esta especializado en tareas de Hindsight; su rendimiento en tareas generales de generacion, razonamiento o codigo no esta evaluado en la model card.
-- Riesgo de alucinacion inherente a los LLM; el gateway y el rule-checker mitigan pero no eliminan errores, y la propia card reporta 2 casos criticos fallidos en la evaluacion agregada.
-- La evaluacion se realizo sobre 495 casos de desarrollo expuestos, lo que puede sobreestimar el rendimiento en distribuciones no vistas.
-- La paridad entre cuantizaciones solo se verifico en 60 casos; no hay garantia de ausencia de perdida en Q4_K_M.
-- La carga del adaptador ejecuta codigo personalizado del publicador con `trust_remote_code=True` y las dependencias fijadas tienen avisos de seguridad conocidos; revisar SECURITY.md antes de desplegar.
-- El repositorio ocupa 19,9 GB; descargar excluyendo los GGUF si solo se necesita el adaptador.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base XHToken/Spark-X2.6-4B debe verificarse por separado (la card no detalla su licencia original).
-- Estado de research preview: la version 1.1 es una vista previa de investigacion, no una release estable de produccion.
+- El autor declara que esta version fallo su prueba multi-paso y recomienda usar V14 en su lugar; el entrenamiento se detuvo y no se publicaran mas adaptadores.
+- El gateway publicado devuelve HTTP 422 en 68 de 495 casos aunque 64 de esas respuestas sean correctas segun el checker, lo que rompe el pipeline en produccion.
+- El modelo solo soporta ingles; no se declaran capacidades multilingues.
+- La longitud de contexto no esta documentada, lo que impide planificar su uso con conversaciones largas.
+- Es un adaptador especializado en un unico dominio (Hindsight memory); su rendimiento fuera de ese pipeline no esta evaluado y probablemente sea pobre.
+- El conjunto de evaluacion son 495 casos de desarrollo expuestos, no un test ciego; el propio autor advierte de que los rangos en la tabla cubren distintas lecturas de las marcas del juez.
+- Riesgo de alucinacion en la extraccion de hechos: el modelo puede generar entradas de memoria plausibles pero no sustentadas en el texto fuente, especialmente con thinking desactivado.
+- Aunque la licencia es Apache 2.0, el modelo base XHToken/Spark-X2.6-4B debe verificarse por separado antes de uso comercial.
+- El repositorio ocupa 19,9 GB, lo que incluye los cuatro GGUF y el adaptador; conviene descargar solo los artefactos necesarios.
+- No hay datos publicados de sesgos, latencia ni throughput, lo que dificulta una evaluacion de produccion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/samartomar/spark-x2.6-4b-hindsight-1.1-research-preview
-- Version anterior V14: https://huggingface.co/samartomar/spark-x2.6-4b-hindsight-v14-research-preview
+- Hugging Face: https://huggingface.co/samartomar/spark-x2.6-4b-hindsight-1.1-research-preview
+- Version recomendada V14: https://huggingface.co/samartomar/spark-x2.6-4b-hindsight-v14-research-preview
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
-- Hindsight (Vectorize): https://hindsight.vectorize.io/
-- Datos de comparacion V14 vs 1.1: V14_VS_1_1_COMPARISON.json (incluido en el repositorio)
-- Recibo de cualificacion: QUALIFICATION_RECEIPT.json (incluido en el repositorio)
-- Notas de seguridad: SECURITY.md (incluido en el repositorio)
+- Plataforma Hindsight: https://hindsight.vectorize.io/

@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/OLMo-2-0325-32B-Instruct-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/OLMo-2-0325-32B-Instruct-i1-GGUF",
-      "snippet": "mradermacher / OLMo-2-0325-32B-Instruct-i1-GGUF like 0 Transformers GGUF allenai/RLVR-GSM-MATH-IF-Mixed-Constraints English Inference Endpoints imatrix conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
-    },
-    {
-      "title": "mradermacher/OLMo-2-0325-32B-Instruct-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/OLMo-2-0325-32B-Instruct-GGUF",
-      "snippet": "mradermacher / OLMo-2-0325-32B-Instruct-GGUF like 0 Transformers GGUF allenai/RLVR-GSM-MATH-IF-Mixed-Constraints English Inference Endpoints conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
-    }
-  ]
+  "sources": []
 }

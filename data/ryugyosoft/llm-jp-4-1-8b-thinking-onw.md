@@ -2,100 +2,105 @@
 
 ## Resumen
 
-`ryugyosoft/llm-jp-4.1-8b-thinking-onw` es la conversión del modelo japonés `llm-jp/llm-jp-4.1-8b-thinking` al motor **onw**, un runtime que ejecuta modelos de lenguaje exclusivamente sobre la NPU integrada de los procesadores Intel Core Ultra. El problema que resuelve es concreto: permitir inferencia local de un modelo de 8B con modo de razonamiento en equipos sin GPU dedicada, usando la NPU como único acelerador.
+`ryugyosoft/llm-jp-4.1-8b-thinking-onw` es una conversión del modelo japonés `llm-jp/llm-jp-4.1-8b-thinking` (desarrollado por el LLM-jp del National Institute of Informatics de Japón) para ejecutarse exclusivamente sobre la NPU integrada de los procesadores Intel Core Ultra mediante el motor propietario `onw` ("Ore no NPU ga konna ni ugoku wake nai"). No se trata de un modelo nuevo ni de un fine-tuning: los pesos originales se han re-cuantizado y reorganizado en grafos estáticos para el acelerador neuronal de Intel, sin ningún entrenamiento adicional.
 
-El modelo de partida lo desarrolla LLM-jp (Instituto Nacional de Informática de Japón, NII) y está entrenado desde cero con foco en japonés, con estructura tipo Llama, un vocabulario de 197.000 tokens y un modo de pensamiento basado en el formato *harmony* de la familia gpt-oss. Este repositorio no entrena nada: recuantiza y reestructura los pesos originales en grafos estáticos INT4 (grupo 128) más una capa de salida INT8.
+El modelo base es un transformer de arquitectura tipo Llama con 8 000 millones de parámetros, vocabulario de aproximadamente 197 000 tokens y modo de razonamiento explícito ("thinking") compatible con el formato harmony de gpt-oss. Está entrenado desde cero con foco en japonés, aunque declara soporte de inglés, y en la model card original supera a Qwen3.5-9B en seguimiento de instrucciones en japonés y alcanza 7,58 en MT-Bench japonés (frente a 7,33 de gpt-oss-20b), aunque queda por detrás en matemáticas, código y uso de herramientas multi-turno.
 
-Su relevancia es doble: por un lado, lleva un 8B con razonamiento y *tool calling* a portátiles con Core Ultra (Meteor Lake, Arrow Lake, Lunar Lake o Panther Lake); por otro, publica bajo Apache 2.0 y expone una API compatible con OpenAI, lo que facilita integrarlo en aplicaciones existentes sin reescribir el cliente.
+La relevancia de esta ficha está en el nicho: permite inferencia local de un LLM de 8B en hardware de consumo sin GPU dedicada, usando solo la NPU de un portátil con Core Ultra. El precio es un rendimiento bajo (4,2-4,7 tok/s de generación) y una preparación inicial larga (unos 11 minutos de compilación para NPU), a cambio de un consumo contenido y un despliegue con API compatible con OpenAI en `localhost`.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo Llama, 32 capas; grafo estático segmentado en 4 bloques de 8 capas más la capa de salida |
-| Parametros totales | 8B (aproximadamente 8.000 millones, según la denominación del modelo) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT4 con grupo 128 en las 32 capas; INT8 en la capa de salida; INT4 en los embeddings |
-| Idiomas soportados | japonés (ja) e inglés (en) |
+| Arquitectura | Transformer tipo Llama (32 capas), con razonamiento tipo harmony; grafos estáticos para NPU Intel |
+| Parámetros totales | 8 000 millones (8B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantización | INT4 (grupo 128) en las 32 capas; INT8 en la capa de salida (vocabulario de 197 000); embeddings INT4 en `shared.bin` |
+| Idiomas soportados | Japonés (ja) e inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Formato propietario de onw: ficheros `seg*.bin` con los segmentos, `shared.bin` (salida INT8 y embeddings INT4), grafos `seg*_S1.xml` / `seg*_S16.xml` y `engine.json` |
-| Vocabulario | 197.000 tokens (tokenizer original sin modificar) |
-| Tamano del repositorio | 4,9 GB (descarga indicada por el autor: 4,6 GB) |
-| Biblioteca | onw |
+| Formato de pesos | Grafos `seg*.xml` + `seg*.bin` propietarios del motor onw (no safetensors ni GGUF); `engine.json` y tokenizer/config del repo original |
+| Tamaño del repositorio | 4,9 GB (descarga indicada: 4,6 GB) |
+| Motor de inferencia | onw (exclusivo, no compatible con llama.cpp, vLLM ni Ollama) |
+| Hardware objetivo | NPU de Intel Core Ultra (Meteor Lake, Arrow Lake, Lunar Lake, Panther Lake) |
+| Sistema operativo | Windows 11 o Ubuntu 22.04+ |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene un modelo entrenado, sino una **recuantización y reconstrucción** de los pesos de `llm-jp/llm-jp-4.1-8b-thinking`. El autor lo indica de forma explícita: "重みは元モデルから再量子化・再構成したものです。学習はしていません" (los pesos se recuantizaron y reconstruyeron a partir del modelo original; no se ha entrenado). La conversión divide las 32 capas en cuatro segmentos de 8 capas más un segmento de salida, y los compila como grafo estático INT4 con grupo 128. La capa de salida, con un vocabulario de 197.000 entradas, se mantiene aparte en INT8 y se omite durante el procesamiento del *prompt* cuando no se necesitan logits, lo que acelera la fase de prefill.
+El modelo base `llm-jp-4.1-8b-thinking` es un transformer denso de 32 capas con arquitectura tipo Llama y un vocabulario de aproximadamente 197 000 tokens, entrenado por el LLM-jp del NII desde cero con predominio de datos en japonés. Incorpora un modo de razonamiento explícito al estilo harmony (el mismo esquema que gpt-oss): el modelo genera primero un bloque de pensamiento en inglés y después la respuesta, con un parámetro `reasoning_effort` que admite los niveles low, medium y high. No se dispone en la información proporcionada del número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-El modelo base lo desarrolla LLM-jp (NII) y sigue una estructura tipo Llama entrenada principalmente con corpus en japonés. Incorpora el formato *harmony* de la familia gpt-oss: el modelo piensa siempre antes de responder (el razonamiento se emite en inglés y se devuelve en el campo `reasoning_content` únicamente en modo pensamiento) y la cantidad de razonamiento se controla con `reasoning_effort` (low, medium, high). Según la nota de prensa del NII sobre la familia LLM-jp-4, el entrenamiento se realizó sobre un corpus de alta calidad de aproximadamente 12 billones de tokens, si bien ese dato corresponde a los modelos LLM-jp-4 8B y 32B-A3B y no se ha confirmado específicamente para la variante 4.1. La integración con onw también adapta la posición de destino en las llamadas a herramientas, que difiere respecto a la implementación original.
+La conversión a onw no modifica los pesos en términos de conocimiento: re-cuantiza a INT4 con grupo 128 las 32 capas, separa la capa de salida en INT8 como segmento independiente (que se omite durante el prefill, cuando no se necesitan logits) y divide el modelo en cuatro segmentos de 8 capas más la salida, cada uno con su propio grafo estático compilado para la NPU. Se generan variantes de grafo para procesamiento de prompt en bloques de 64 y 16 tokens y para generación de 1 y 2 tokens (esta última reduce drásticamente el tiempo de compilación inicial en Lunar Lake y Panther Lake). El tokenizador es el `tokenizer.json` original, con verificación de que los identificadores de token coinciden con la implementación de referencia, y la traducción del formato harmony a texto se hace en el motor.
 
 ## Capacidades
 
-- Generación de texto conversacional en japonés e inglés, con calidad destacada en japonés.
-- Modo de pensamiento (*thinking*) con razonamiento previo a la respuesta, graduable mediante `reasoning_effort` en low, medium y high. Fuera del modo pensamiento, onw aplica low.
-- *Tool calling* mediante el parámetro `tools` de la API compatible con OpenAI, incluida la llamada paralela a varias herramientas y el uso de sus resultados en la respuesta.
-- Capacidades de agente y razonamiento en varios pasos gracias al formato harmony (pensamiento, llamada a herramienta, observación y respuesta final).
-- Soporte multilingüe limitado a japonés e inglés.
-- No se documentan capacidades de visión, audio ni otras modalidades (la entrada indicada es únicamente texto).
+- Generación de texto conversacional en japonés e inglés, con calidad declarada superior a Qwen3.5-9B en seguimiento de instrucciones en japonés.
+- Modo de razonamiento explícito ("thinking") con control de esfuerzo mediante `reasoning_effort` (low, medium, high); el contenido de pensamiento se devuelve en `reasoning_content`.
+- Uso de herramientas mediante la API compatible con OpenAI (`tools`), incluyendo llamadas paralelas a varias funciones.
+- Razonamiento multi-paso orientado a agentes, con el esquema harmony de gpt-oss.
+- Capacidad matemática y de código presente pero inferior a Qwen3.5-9B según la model card del autor.
+- Soporte multi-turno en conversaciones con herramientas.
+- No dispone de visión, audio ni otras modalidades: la entrada es solo texto.
 
 ## Casos de uso
 
-- **Asistencia en japonés sobre portátil corporativo sin GPU**: el modelo se ejecuta íntegramente en la NPU de un Core Ultra, con un consumo de memoria de trabajo de unos 10 GB, lo que permite desplegarlo en equipos de oficina estándar para redacción, resumen y traducción ja-en sin enviar datos a la nube.
-- **Agentes locales con herramientas**: al soportar `tools` mediante API compatible con OpenAI y llamadas paralelas, se puede construir un agente que consulte una base de datos interna o una API REST y redacte la respuesta final en japonés, todo dentro del mismo equipo.
-- **Atención al cliente en japonés**: el modelo está optimizado para instrucciones en japonés (MT-Bench japonés 7,58) y mantiene conversaciones multiturno con uso de herramientas, lo que encaja en un asistente de soporte que consulte el estado de un pedido y responda en el idioma del usuario.
-- **Procesamiento por lotes de documentos japoneses en local**: para clasificación, extracción o resumen de textos en japonés donde la confidencialidad impide usar servicios externos; el preprocesado de *prompts* cortos tarda menos de un segundo según las mediciones del autor.
-- **Prototipado de aplicaciones LLM sin coste de GPU**: cualquier desarrollador con un portátil Core Ultra puede levantar el servidor en `http://localhost:8000/v1` y apuntar su código basado en el SDK de OpenAI, sustituyendo después el *endpoint* por un modelo mayor en producción.
-- **Generación de código con asistencia de razonamiento en inglés**: el modelo piensa en inglés y puede resolver tareas de programación en ese idioma, aunque según la tarjeta original Qwen3.5-9B es superior en matemáticas y código, por lo que conviene reservarlo para tareas de complejidad media o como apoyo.
-- **Evaluación y docencia de modelos japoneses**: al ser un artefacto de cuantización reproducible, sirve para estudiar el impacto de INT4 frente al modelo bf16 original en un entorno de investigación.
+- Asistente conversacional local en japonés sobre portátil: un portátil con Core Ultra y 16 GB de RAM puede servir respuestas en japonés a 4,2-4,7 tok/s sin GPU dedicada, adecuado para uso personal o demostraciones offline.
+- Agente de escritorio con tool calling: al exponer una API compatible con OpenAI en `http://localhost:8000/v1`, se puede conectar a frameworks de agentes que usen el esquema de function calling y orquestar llamadas paralelas a herramientas locales (ficheros, búsqueda, cálculos).
+- Procesamiento por lotes de documentos en japonés en equipos sin GPU: clasificación, resumen o extracción de entidades sobre texto japonés en estaciones de trabajo corporativas con NPU Intel, aprovechando el bajo consumo.
+- Prototipado de pipelines de razonamiento: el modo thinking con `reasoning_effort` permite comparar calidad y coste entre niveles low, medium y high antes de mover la carga a un modelo mayor en servidor.
+- Automatización de atención al cliente en japonés para PYMES: despliegue en el propio portátil del operador como copiloto de respuestas, con contexto multi-turno y sin enviar datos a la nube.
+- Entornos con requisitos de privacidad o air-gapped: al ejecutarse íntegramente en local sobre la NPU, los datos no salen del equipo, lo que encaja en escenarios con datos sensibles que no pueden ir a APIs externas.
+- Educación e investigación sobre inferencia en NPU: sirve como banco de pruebas para estudiar latencias, compilación de grafos y cuantización INT4/INT8 en aceleradores Intel.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | llm-jp-4.1-8b-thinking | gpt-oss-20b | Qwen3.5-9B |
-|---|---|---|---|
-| MT-Bench japonés | 7,58 | 7,33 | no disponible |
-| Seguimiento de instrucciones centradas en japonés | superior a Qwen3.5-9B | no disponible | inferior |
-| Matemáticas, código y uso de herramientas multiturno | inferior a Qwen3.5-9B | no disponible | superior |
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible para esta conversión. Los únicos datos de rendimiento son los de la model card, referidos a la ejecución en NPU 3720 (Core Ultra 9 285HX):
 
-No se han publicado resultados de benchmarks propios de esta conversión a onw en la información disponible. El autor sí documenta una prueba de fidelidad de la cuantización por *teacher forcing* frente al modelo original en bf16 sobre CPU: coincidencia de 24/24 tokens en razonamiento low y 23/24 en medium, con resultados idénticos entre NPU y CPU en FP32. En 20 preguntas en japonés, el primer token de la respuesta coincide en 19 de 20 casos (la restante difiere entre "東京" y "日本の"), y se verificó la llamada paralela a dos herramientas con respuesta final en japonés.
+| Métrica (NPU 3720, Core Ultra 9 285HX) | Valor |
+|---|---|
+| Velocidad de generación | 4,2-4,7 tok/s |
+| Procesamiento de prompt corto | menos de 1 s |
+| Procesamiento de prompt largo (onw 2.0+, 1024 tokens) | ~111 tok/s (16 tokens por bloque) |
+| Memoria de trabajo tras carga | ~10 GB (~5 GB en reposo con modo ahorro; ~9 GB durante el intercambio) |
+| Primera compilación para NPU | ~11 min |
+| Arranques posteriores | ~20 s |
+| Descarga | 4,6 GB |
+
+Datos del modelo base citados en la model card (no verificados de forma independiente en esta ficha): MT-Bench japonés 7,58 frente a 7,33 de gpt-oss-20b; supera a Qwen3.5-9B en seguimiento de instrucciones en japonés, pero queda por debajo en matemáticas, código y uso de herramientas multi-turno.
 
 ## Requisitos de hardware
 
-- **Acelerador**: NPU integrada en Intel Core Ultra de serie 1 o 2 (Meteor Lake, Arrow Lake, Lunar Lake) y serie 3 (Panther Lake). No se documenta ejecución en GPU NVIDIA o AMD para este artefacto.
-- **Sistema operativo**: Windows 11 o Ubuntu 22.04 o superior.
-- **Memoria**: conjunto de trabajo de aproximadamente 10 GB tras la carga del modelo; conviene disponer de al menos 16 GB de RAM en el equipo.
-- **Descarga**: 4,6 GB según el autor (el repositorio en Hugging Face ocupa 4,9 GB).
-- **Velocidad medida en NPU 3720 (Core Ultra 9 285HX)**: 4,2 a 4,7 tokens por segundo en generación; el procesamiento de preguntas cortas se resuelve en menos de un segundo.
-- **Arranque**: la primera carga requiere compilación para la NPU y tarda unos 11 minutos; las cargas posteriores bajan a unos 20 segundos.
-- **Despliegue**: motor onw (instalación mediante script de PowerShell en Windows o `curl ... | bash` en Ubuntu), interfaz gráfica de onw o `onw serve <carpeta>`, con API compatible con OpenAI en `http://localhost:8000/v1`. Para GPU o CPU con otros runtimes habría que usar el modelo original en safetensors o la versión GGUF publicada por LLM-jp.
-- **Latencia y throughput**: no disponible más allá de la cifra de generación indicada.
+- NPU integrada de Intel Core Ultra de series 1 y 2 (Meteor Lake, Arrow Lake, Lunar Lake) y serie 3 (Panther Lake); no funciona en GPU ni en CPU como motor principal.
+- Memoria: alrededor de 10 GB de working set tras la carga; con el modo de ahorro de memoria de onw, ~5 GB en reposo y ~9 GB durante los intercambios (medido en un equipo Lunar Lake de 16 GB).
+- No requiere GPU dedicada; el caso de uso es precisamente prescindir de ella.
+- Sistemas operativos soportados: Windows 11 y Ubuntu 22.04 o superior.
+- Despliegue exclusivamente mediante el motor onw (instalación vía `install.ps1` en Windows o `curl | bash` en Ubuntu); no es compatible con vLLM, llama.cpp, Ollama ni TGI.
+- API compatible con OpenAI en `http://localhost:8000/v1` una vez cargado el modelo en onw.
+- Latencia: primera compilación de ~11 minutos; arranques posteriores de ~20 segundos; generación de 4,2-4,7 tok/s en NPU 3720. En modo de ahorro de memoria, cada intercambio penaliza la velocidad de escritura durante 4-5 segundos.
+- Existe una variante INT8 de mayor precisión (`ryugyosoft/llm-jp-4.1-8b-thinking-int8-onw`, 7,7 GB) para quienes prioricen fidelidad sobre tamaño.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Formato y disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Hardware | Notas |
 |---|---|---|---|---|---|
-| llm-jp-4.1-8b-thinking-onw | 8B | no disponible | MT-Bench japonés 7,58 (medido sobre el original en bf16) | Apache 2.0 | onw (INT4/INT8), solo NPU Intel |
-| llm-jp-4.1-8b-thinking | 8B | no disponible | referencia bf16 del anterior | Apache 2.0 | safetensors, CPU/GPU |
-| llm-jp-4.1-8b-thinking-gguf | 8B | no disponible | no disponible | Apache 2.0 | GGUF, llama.cpp y derivados |
-| Qwen3.5-9B | 9B | no disponible | superior en matemáticas, código y uso de herramientas multiturno según la tarjeta original | no disponible | no disponible |
-| gpt-oss-20b | 20B | no disponible | MT-Bench japonés 7,33 | no disponible | no disponible |
-
-La ventaja diferencial de esta variante no es el rendimiento bruto, sino el consumo: es el único de los artefactos comparados que se ejecuta sin GPU sobre una NPU integrada.
+| llm-jp-4.1-8b-thinking-onw | 8B | no disponible | Apache 2.0 | NPU Intel Core Ultra (onw) | Conversión INT4/INT8; 4,2-4,7 tok/s; solo japonés/inglés |
+| llm-jp/llm-jp-4.1-8b-thinking (base) | 8B | no disponible | Apache 2.0 | CPU/GPU (bf16) | Modelo original; mayor precisión, requiere más recursos |
+| ryugyosoft/llm-jp-4.1-8b-thinking-int8-onw | 8B | no disponible | Apache 2.0 | NPU Intel Core Ultra (onw) | Variante INT8, 7,7 GB, más fiel al original |
+| Qwen3.5-9B | 9B | no disponible | no disponible | CPU/GPU | Referencia citada por el autor: mejor en matemáticas, código y tool use multi-turno; peor en instrucciones en japonés |
+| gpt-oss-20b | 20B | no disponible | no disponible | CPU/GPU | Referencia citada: MT-Bench japonés 7,33 frente a 7,58 del modelo base |
 
 ## Limitaciones y advertencias
 
-- **Dependencia de hardware concreta**: solo funciona con el motor onw sobre NPU Intel Core Ultra; no hay soporte documentado para CUDA, ROCm ni Metal en este repositorio.
-- **Velocidad baja**: 4,2 a 4,7 tokens por segundo es suficiente para uso interactivo personal, pero no para servicios con concurrencia o generación de documentos largos.
-- **Arranque inicial lento**: unos 11 minutos de compilación para la NPU en la primera carga; hay que planificar el despliegue en consecuencia.
-- **Consumo de memoria alto para su tamano**: alrededor de 10 GB de conjunto de trabajo tras la carga.
-- **Pérdida de precisión por cuantizacion**: la comparación por *teacher forcing* muestra coincidencia de 23/24 tokens en modo medium, lo que implica divergencias puntuales respecto al modelo original en bf16.
-- **Razonamiento y matemáticas**: el propio autor señala que Qwen3.5-9B supera a este modelo en matemáticas, código y uso de herramientas multiturno; no conviene usarlo como sustituto en esas tareas sin evaluar.
-- **Idioma**: solo japonés e inglés; no hay soporte declarado para castellano.
-- **Idioma del razonamiento**: el modelo piensa en inglés incluso cuando responde en japonés, lo que debe tenerse en cuenta si se auditan las trazas.
-- **Gestion de tokens**: el razonamiento consume tokens, por lo que el autor recomienda fijar `max_tokens` en 300 o más para no truncar la respuesta.
-- **Contexto no documentado**: no se especifica la longitud de contexto del modelo base en la información disponible.
-- **Validacion de la comunidad practicamente nula**: 0 descargas y 0 *likes* en el momento de la consulta; se trata de un artefacto recién publicado y sin contraste externo.
-- **Licencia y atribucion**: los pesos se publican bajo Apache 2.0, igual que el modelo original, lo que permite uso comercial; aun así, LLM-jp solicita citar sus recursos y seguir su guía de uso responsable para los materiales derivados del NII.
-- **Riesgo de alucinacion**: no se han publicado evaluaciones específicas de veracidad para esta conversión; aplican los riesgos habituales de un modelo de 8B.
+- Dependencia total del motor onw: no se puede ejecutar en llama.cpp, vLLM, Ollama o TGI, lo que limita la portabilidad y la integración en infraestructuras estándar.
+- Rendimiento bajo: 4,2-4,7 tok/s de generación hacen inviable el uso interactivo exigente o el procesamiento de grandes volúmenes.
+- La primera compilación para NPU tarda unos 11 minutos; en modo de ahorro de memoria, los intercambios de 4-5 segundos degradan la experiencia.
+- Cobertura lingüística limitada a japonés e inglés; no se declaran otros idiomas.
+- No se dispone de la longitud de contexto en la información proporcionada, lo que impide planificar casos de uso con documentos largos.
+- El modo thinking consume tokens del límite: se recomienda `max_tokens` de al menos 300, y el pensamiento se emite en inglés aunque la respuesta sea en japonés.
+- Riesgo de alucinación propio de un modelo de 8B; la model card no documenta evaluaciones de sesgo ni de robustez.
+- El autor advierte de que la calidad en matemáticas, código y tool use multi-turno es inferior a Qwen3.5-9B.
+- Licencia Apache 2.0 permite uso comercial, pero los pesos son una re-cuantización del modelo base; conviene revisar también las condiciones del modelo original y del motor onw.
+- El repositorio tiene 0 likes y 586 descargas: ecosistema pequeño, poca validación comunitaria y riesgo de abandono del proyecto.
+- La variante INT4 puede degradar la fidelidad respecto al bf16 original; el autor reporta 24/24 y 23/24 coincidencias de tokens en pruebas de teacher forcing, pero no es una evaluación exhaustiva.
 
 ## Enlaces
 
@@ -103,8 +108,4 @@ La ventaja diferencial de esta variante no es el rendimiento bruto, sino el cons
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking
 - Motor onw: https://huggingface.co/ryugyosoft/onw
 - Documentación técnica de onw: https://huggingface.co/ryugyosoft/onw/blob/main/TECHNICAL.md
-- Versión GGUF del modelo base: https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking-gguf
-- Recetas de uso de LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook
-- Página de publicaciones de LLM-jp: https://llm-jp.nii.ac.jp/en/release-en/
-- Nota de prensa del NII sobre LLM-jp-4 8B y 32B-A3B: https://www.nii.ac.jp/en/news/release/2026/0403.html
-- Modelo llm-jp-4-8b-thinking: https://huggingface.co/llm-jp/llm-jp-4-8b-thinking
+- Variante INT8: https://huggingface.co/ryugyosoft/llm-jp-4.1-8b-thinking-int8-onw

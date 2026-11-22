@@ -2,94 +2,108 @@
 
 ## Resumen
 
-MİMA 1 Pico 15M es un modelo de lenguaje causal (decoder-only) entrenado desde cero en turco por el desarrollador independiente root-sys-n. Con 15.537.792 parámetros y embeddings atados (tied embedding), se posiciona como un modelo de escala "pico" dentro de la familia MİMA, orientado a experimentación con modelos de lenguaje muy pequeños en una lengua de recursos medios como el turco. Su checkpoint corresponde al paso 32.750 de la fase `A3-karma`, con una pérdida de validación de 0.5522, y sirve como base estable sobre la que se construye la variante afinada para conversación `Mima-1.5-Pico-15m-Preview`.
+Mima 1 Pico 15M es un modelo de lenguaje causal (decoder-only) entrenado desde cero en turco por el desarrollador independiente root-sys-n. Con 15.537.792 parámetros (aproximadamente 15,54 M, con embeddings atados), se sitúa en la categoría de modelos ultracompactos, pensados para experimentación, docencia y despliegue en entornos con recursos mínimos. Es el checkpoint estable de la etapa `A3-karma` (paso 32.750) del proyecto Mima, y su continuación alineada para chat es `Mima-1.5-Pico-15m-Preview`.
 
-La arquitectura es un transformer convencional con 7 capas, 6 cabezas de atención, dimensión oculta de 384 y capa SwiGLU de 1024, usando RMSNorm y RoPE con θ = 10.000. El contexto es notablemente corto (512 tokens) y el vocabulario es un BPE byte-level de 8.192 tokens con tokens especiales propios (`<bos>`, `<user>`, `<asst>`, `<end>`, `<pad>`). El entrenamiento se organizó en cuatro fases (A0-dil, A1-kavram, A2-sohbet, A3-karma) sobre aproximadamente 235,9 millones de tokens de texto general en turco.
+La arquitectura es un transformer clásico de 7 capas, 6 cabezas de atención, dimensión oculta 384 y FFN SwiGLU de 1024, con RMSNorm y RoPE (θ = 10.000). La ventana de contexto es de solo 512 tokens y el vocabulario es un BPE a nivel de byte de 8.192 entradas. El modelo se ha preentrenado sobre `fineweb-2` (subconjunto `tur_Latn`) y la Wikipedia turca, con un total aproximado de 235,9 M de tokens en la etapa base.
 
-Su relevancia es doble: por un lado, demuestra que es viable entrenar un modelo funcional en turco con un presupuesto de parámetros mínimo (15,5M), útil para entornos con recursos de cómputo muy limitados; por otro, establece una línea base reproducible y con licencia Apache-2.0 para investigación en modelos de lenguaje de baja escala. No obstante, sus métricas (20,0% en MMLU-TR con n=50) y sus propios ejemplos de salida evidencian que se trata de un artefacto experimental, no de un modelo listo para producción.
+Su relevancia es principalmente metodológica: documenta de forma transparente el proceso de entrenamiento por etapas (A0-dil, A1-kavram, A2-sohbet, A3-karma) y publica resultados honestos, incluidos los fallos. Los benchmarks muestran que, a esta escala, el modelo queda en niveles cercanos al azar en tareas de opción múltiple estándar, aunque conserva cierta señal en tareas de lengua y comprensión lectora corta. No es un modelo apto para producción general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (7 capas, 6 cabezas, dim 384, SwiGLU 1024) |
-| Parametros totales | 15.537.792 (~15,54M, tied embedding) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only (causal LM), 7 capas, 6 cabezas, dimensión 384, SwiGLU de 1024, RMSNorm, RoPE (θ = 10.000) |
+| Parametros totales | 15.537.792 (~15,54 M, embeddings atados) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Turco (`tr`) |
-| Licencia | Apache-2.0 |
+| Tipos de cuantizacion | No disponible (el repo solo publica safetensors en precisión original) |
+| Idiomas soportados | Turco (tr) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería transformers, requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only denso de 7 capas con 6 cabezas de atención, dimensión oculta de 384 y capa feed-forward SwiGLU de 1024. Emplea RMSNorm para la normalización y RoPE con θ = 10.000 para la codificación posicional. Los embeddings de entrada y la cabeza de salida están atados, lo que reduce el recuento efectivo de parámetros a 15,54M. El vocabulario es un BPE byte-level de 8.192 tokens con cinco tokens especiales definidos (`<bos>=0`, `<user>=1`, `<asst>=2`, `<end>=3`, `<pad>=4`), lo que facilita la construcción de plantillas de conversación manuales. El contexto máximo es de 512 tokens, una limitación estructural para tareas de contexto largo.
+El modelo es un transformer causal estándar con normalización RMSNorm, embeddings posicionales rotatorios RoPE y activación SwiGLU en la capa feed-forward. El vocabulario es un BPE a nivel de byte de 8.192 tokens, con tokens especiales `<bos>=0`, `<user>=1`, `<asst>=2`, `<end>=3` y `<pad>=4`. El checkpoint publicado corresponde al paso 32.750 de la etapa `A3-karma`, con `val_loss = 0.5522`.
 
-El entrenamiento se dividió en cuatro fases acumulativas: `A0-dil` (28.000 pasos, aproximadamente 235,9M tokens de texto general en turco), `A1-kavram` (~6.500 pasos, conocimiento conceptual), `A2-sohbet` (~2.900 pasos, flujo de diálogo) y `A3-karma` (32.750 pasos totales, fase mixta con val loss de 0.5522). No se documenta el uso de RLHF, DPO ni decodificación especulativa. El autor indica que la variante `v4` experimental fue retirada y que el checkpoint publicado es el estado estable de la fase `A3-karma`. La model card no detalla la composición exacta del corpus más allá de "texto general en turco" ni si hubo filtrado de calidad o deduplicación.
+El entrenamiento se organizó en cuatro fases: `A0-dil` (28.000 pasos, ~235,9 M de tokens de texto general turco), `A1-kavram` (~6.500 pasos, conocimiento conceptual), `A2-sohbet` (~2.900 pasos, flujo de diálogo) y `A3-karma` (hasta 32.750 pasos totales, fase mixta). Los datos provienen de `HuggingFaceFW/fineweb-2` (subconjunto `tur_Latn`, licencia ODC-BY) y `wikimedia/wikipedia` (`20231101.tr`, CC BY-SA 4.0). No se documenta en la información disponible el uso de RLHF, DPO ni técnicas de decodificación especulativa.
 
 ## Capacidades
 
-- Generación de texto causal en turco con plantilla de conversación basada en tokens especiales (`<bos>`, `<user>`, `<asst>`, `<end>`).
-- Conversación multi-turno de forma limitada: la fase `A2-sohbet` introdujo flujo de diálogo, aunque el modelo base prioriza la continuación de texto.
-- Respuestas a preguntas factuales simples (el ejemplo de la model card acierta con "la capital de Francia es París").
-- Capacidad de generar la respuesta "Bilmiyorum." ("No lo sé") ante preguntas fuera de su conocimiento, según el autor, aunque esta habilidad se atribuye principalmente a la variante `Mima-1.5-Pico-15m-Preview`.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
-- Capacidades multilingües: únicamente turco declarado; no se reporta transferencia a otras lenguas.
+- Generación de texto en turco con calidad limitada a frases cortas y contextos muy restringidos.
+- Respuesta a preguntas factuales simples cuando el conocimiento está bien representado (por ejemplo, capitales de países).
+- Comprensión lectora corta y tareas de lengua y ortografía turca por encima del azar en el benchmark propio del autor.
+- Capacidad conversacional básica mediante los tokens especiales `<user>` y `<asst>`, aunque el modelo base no está alineado para diálogo.
+- No soporta tool calling ni function calling de forma nativa.
+- No soporta razonamiento multi-paso ni uso como agente.
+- No dispone de modo thinking, visión, audio ni otras modalidades.
+- Multilingüismo: únicamente turco; no se ha entrenado ni evaluado en otros idiomas.
 
 ## Casos de uso
 
-- **Investigación en modelos de lenguaje de baja escala**: el modelo sirve como línea base reproducible (Apache-2.0, 15,5M parámetros, ~0,1 GB de repo) para estudiar curvas de escalado, tokenizadores BPE pequeños y dinámicas de entrenamiento por fases en turco.
-- **Prototipado educativo y docencia**: permite ejecutar inferencia en CPU o en GPU de gama baja, lo que lo hace adecuado para talleres donde se enseña a cargar un modelo con `transformers`, construir plantillas de chat con tokens especiales y analizar salidas.
-- **Generación de texto corto en turco para pruebas de pipeline**: útil para validar extremo a extremo un sistema de generación (tokenización, decodificación, post-procesado) antes de migrar a un modelo mayor, dado su bajo coste de despliegue.
-- **Ablaciones de tokenización**: con un vocabulario de 8.192 tokens y BPE byte-level, es un banco de pruebas para comparar estrategias de tokenización en turco (aglutinante, con morfología rica) frente a modelos con vocabularios más grandes.
-- **Chat de demostración en el navegador**: el autor publica un Space (`Mima-Pico-Chat`) que permite interactuar sin descargar código; útil para demos de investigación y para ilustrar las limitaciones de los modelos pequeños.
-- **Generación de plantillas y respuestas de dominio acotado**: con fine-tuning adicional sobre un corpus específico (por ejemplo, FAQ de un producto), el checkpoint base puede adaptarse a respuestas cortas y repetitivas, siempre que el contexto quede por debajo de 512 tokens.
-- **Evaluación comparativa de robustez**: su baja capacidad permite medir de forma controlada fenómenos como repetición, alucinación y degradación con la longitud del contexto, sirviendo como caso extremo en estudios de fiabilidad.
+- Docencia e investigación sobre entrenamiento de LLM: el modelo sirve como caso de estudio reproducible de un pipeline por etapas con datasets abiertos, útil para cursos y talleres donde se explica el preentrenamiento desde cero.
+- Experimentación con modelos ultracompactos: permite probar técnicas de tokenización, curvas de pérdida o ajuste fino en hardware muy limitado (una sola GPU consumer o incluso CPU).
+- Generación de texto turco en entornos embebidos: por su tamaño (repo de 0,1 GB), puede integrarse en demos locales o notebooks sin infraestructura dedicada.
+- Pruebas de alineación y rechazo: sirve como línea base para comparar contra su sucesor `Mima-1.5-Pico-15m-Preview`, que introduce alineación conversacional y rechazo con "Bilmiyorum.".
+- Evaluación de benchmarks de bajo recurso: el autor publica `Mima-TR-MicroBench v1`, un conjunto diseñado para modelos de 5–30 M; el modelo puede usarse como referencia en la validación de dicho benchmark.
+- Prototipado de interfaces de chat en turco: con los tokens especiales definidos, se puede montar un Space o demo web (el autor publica uno) para ilustrar el comportamiento de un modelo pequeño antes de escalar a uno mayor.
+- Estudio de fallos típicos: los ejemplos publicados (bucles de repetición, alucinaciones en preguntas trampa) lo convierten en un banco de pruebas para detectar y analizar estos comportamientos.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Configuracion | Resultado |
-|---|---|---|
-| Held-out Turkish SFT Eval | 186 preguntas, 3.947 tokens, greedy | CE 3.5078 · PPL 33.37 |
-| MMLU-TR (`Q-bert/mmlu-turkish`) | n=50, 0-shot | 20,0% (10/50) |
-| Validacion fase `A3-karma` | paso 32.750 | val loss 0.5522 |
-
-No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, MMLU global, etc.) en la informacion disponible. No se dispone de comparaciones numéricas con modelos de la misma categoría en la model card.
+| Test / métrica | Preguntas (N) | Nivel de azar | Mima 1 Pico 15M (IC 95 % Wilson) |
+|---|---:|---:|---:|
+| Pérdida SFT turco held-out (CE / PPL) | 186 (3.947 tok) | — | 3,5078 (PPL 33,37) |
+| Respuesta abierta correcta (greedy) | 100 | — | 4,0 % (1,6–9,8; 4/100) |
+| Rechazo de trampa imposible ("Bilmiyorum.", greedy) | 100 | — | 0,0 % (0,0–3,7; 0/100) |
+| Bucle de repetición (96 tokens, greedy) | 100 | — | 21,0 % (14,2–30,0; 21/100) |
+| Mima-TR-MicroBench v1 (frase completa) | 2.000 | 25,0 % | 36,10 % (34,0–38,2) |
+| — Lengua y ortografía turca | 400 | 25,0 % | 47,25 % (42,4–52,1) |
+| — Comprensión lectora | 400 | 25,0 % | 41,25 % (36,5–46,1) |
+| — Cultura general básica | 400 | 25,0 % | 36,50 % (31,9–41,3) |
+| — Lógica y sentido común | 400 | 25,0 % | 29,25 % (25,0–33,9) |
+| — Aritmética y unidades | 400 | 25,0 % | 26,25 % (22,2–30,8), nivel de azar |
+| Mima-TR-MicroBench v1 (A/B/C/D) | 2.000 | 25,0 % | 25,20 % (23,3–27,1), nivel de azar |
+| Belebele-TR (acc_norm) | 900 | 25,0 % | 28,67 % (25,8–31,7), cerca del azar |
+| ARC-TR (acc_norm) | 1.172 | 25,0 % | 23,21 % (20,9–25,7), nivel de azar |
+| TurkishMMLU (All, 5 opciones, acc_norm) | 900 | 20,0 % | 18,22 % (15,8–20,9), nivel de azar |
+| TruthfulQA-TR (mc1_acc_norm) | 817 | 22,6 % | 28,76 % (25,8–32,0) |
+| HellaSwag-TR (acc_norm) | 2.000 | 25,0 % | 26,00 % (24,1–28,0), nivel de azar |
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: en FP32, los 15,54M parámetros ocupan aproximadamente 62 MB de pesos; en FP16, unos 31 MB; en int8, unos 16 MB. Con caché KV para 512 tokens el consumo total es marginal.
-- **GPU recomendadas**: cualquier GPU moderna sirve; el modelo cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 o H100. También es viable en CPU (inferencia en pocos cientos de milisegundos por respuesta corta).
-- **Consumer GPU**: sí, cabe en cualquier GPU de consumo actual e incluso en iGPU y en Raspberry Pi con suficiente RAM.
-- **Opciones de despliegue**: `transformers` con `trust_remote_code=True` (método documentado por el autor), script `sohbet.py` incluido en el repo para chat por terminal. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI; dado que no se publican pesos GGUF, llama.cpp y Ollama requerirían conversión manual.
-- **Latencia y throughput**: no se han publicado mediciones. Por el tamaño, se espera latencia de decenas de milisegundos por token en GPU y de cientos de milisegundos en CPU, pero son estimaciones, no datos del autor.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (15,54 M de parámetros ≈ 62 MB de pesos); en la práctica, el cuello de botella es el runtime, no la memoria.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) e incluso CPU. No requiere A100 ni H100.
+- Cabe holgadamente en cualquier GPU consumer, en iGPU y en CPU. El repo completo ocupa 0,1 GB.
+- Opciones de despliegue: transformers con `trust_remote_code=True` (única vía documentada por el autor). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; la conversión a GGUF no está publicada.
+- Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño, se espera generación prácticamente instantánea en GPU y viable en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MİMA 1 Pico 15M | 15,54M | 512 | Turco | Apache-2.0 | Hugging Face + Space |
-| Mima-1.5-Pico-15m-Preview | no disponible (misma base) | 512 (heredado) | Turco | Apache-2.0 (segun repo base) | Hugging Face |
-| Modelos tipo TinyLlama / Qwen2.5-0.5B | 0,5B aprox. | 2.048-32.768 | Multilingue | Apache-2.0 / otras | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---:|---:|---|---|---|
+| Mima 1 Pico 15M | 15,54 M | 512 | Apache 2.0 | Hugging Face, transformers | Entrenado desde cero en turco; benchmarks de opción múltiple en nivel de azar |
+| Mima 1.5 Pico 15m Preview | ~15 M (misma base) | No disponible | No disponible | Hugging Face | Continuación alineada para chat con rechazo "Bilmiyorum."; del mismo autor |
+| Modelos turcos pequeños de terceros (5–30 M) | 5–30 M | Variable | Variable | No disponible | No se dispone de una comparativa publicada con cifras verificables en la información proporcionada |
 
-La comparación numérica con alternativas no está disponible en la información proporcionada: la model card no incluye tablas comparativas con otros modelos pequeños (por ejemplo, GPT-2 small, TinyStories o modelos turcos de tamaño similar). La única referencia interna es la variante `Mima-1.5-Pico-15m-Preview`, que el autor recomienda para conversación e instrucciones.
+No se dispone de datos de benchmarks comparables de otros modelos de la misma escala en la información proporcionada, por lo que la comparativa cuantitativa con alternativas queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- **Alucinación y errores factuales**: con 15,54M parámetros, el modelo produce errores factuales con frecuencia; el propio autor lo advierte. El ejemplo de la model card sobre la capital de Turquía ("TÜBİTAK tarafından") ilustra el problema.
-- **Repeticiones**: la model card menciona explícitamente que pueden aparecer bucles y repeticiones en la generación.
-- **Contexto muy corto**: 512 tokens limitan severamente el diálogo multi-turno, el resumen de documentos y cualquier tarea que requiera memoria extensa.
-- **Monolingüe**: solo turco; no se garantiza un comportamiento correcto en castellano ni en otras lenguas.
-- **Instrucciones y seguimiento de chat**: el modelo base no está afinado para seguir instrucciones; para conversación se recomienda la variante `Mima-1.5-Pico-15m-Preview`.
-- **Licencia**: Apache-2.0 permite uso comercial y modificación, pero el modelo se distribuye con `custom_code` y requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene auditar ese código antes de desplegarlo en producción.
-- **Ausencia de cuantizaciones oficiales**: no hay pesos GGUF ni versiones cuantizadas publicadas, lo que complica el despliegue en entornos sin `transformers`.
-- **Datos de entrenamiento opacos**: no se detalla la composición, el filtrado ni los posibles sesgos del corpus turco utilizado, lo que impide evaluar sesgos sistemáticos.
-- **Sin benchmarks estándar**: la única evaluación publicada es MMLU-TR con n=50 y una eval SFT de 186 preguntas; no hay datos de MMLU completo, HumanEval ni GSM8K.
-- **Fecha de creación futura**: el repositorio figura creado el 2026-10-23, dato a verificar antes de citarlo en producción.
+- Escala muy reducida: 15,54 M de parámetros implican conocimiento factual muy limitado y razonamiento prácticamente inexistente; los benchmarks de opción múltiple estándar quedan en nivel de azar.
+- Bucles de repetición: el 21 % de las generaciones greedy de 96 tokens entran en bucle, según la evaluación del propio autor.
+- Alucinación: en preguntas trampa o sin respuesta, el modelo no rechaza y tiende a inventar contenido (0 % de rechazo en el test de trampas imposibles).
+- Contexto muy corto: 512 tokens impiden conversaciones multi-turno largas o documentos extensos.
+- Solo turco: no hay soporte ni evaluación en otros idiomas.
+- Sin alineación conversacional: es un modelo base; para diálogo debe usarse la variante `Mima-1.5-Pico-15m-Preview`.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar el código antes de usarlo en entornos sensibles.
+- Licencia Apache 2.0: permite uso comercial, pero las licencias de los datasets de origen (ODC-BY y CC BY-SA 4.0) pueden imponer obligaciones de atribución o compartir-igual sobre datos derivados; conviene revisarlas antes de un uso comercial.
+- No apto para producción general: sin benchmarks que superen el azar en tareas estándar, su uso debe limitarse a experimentación, docencia y prototipado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/root-sys-n/Mima-1-Pico-15m
-- Variante para conversación: https://huggingface.co/root-sys-n/Mima-1.5-Pico-15m-Preview
-- Demo en el navegador (Space): https://huggingface.co/spaces/root-sys-n/Mima-Pico-Chat
-- Dataset de evaluación MMLU-TR citado: https://huggingface.co/datasets/Q-bert/mmlu-turkish
+- Variante alineada para chat: https://huggingface.co/root-sys-n/Mima-1.5-Pico-15m-Preview
+- Demo en Space: https://huggingface.co/spaces/root-sys-n/Mima-Pico-Chat
+- Benchmark propio: https://huggingface.co/datasets/root-sys-n/Mima-TR-MicroBench
+- Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
+- Dataset de preentrenamiento: https://huggingface.co/datasets/wikimedia/wikipedia

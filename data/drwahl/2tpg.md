@@ -2,104 +2,98 @@
 
 ## Resumen
 
-2-TPG es un ajuste fino de GPT-2 (124,4 millones de parámetros) entrenado para predecir el token **anterior** en lugar del siguiente. El modelo lo desarrolla Daniel Wahl (usuario `drwahl`) y se publicó en Hugging Face en abril de 2025 bajo licencia MIT. La idea es invertir el objetivo clásico de modelado de lenguaje: en lugar de continuar un texto, el modelo genera el contexto que podría haber conducido a un final dado.
+2-TPG es un ajuste fino de GPT-2 (117M parámetros) desarrollado por Daniel Wahl que invierte el objetivo estándar de modelado de lenguaje: en lugar de predecir el siguiente token, predice el token anterior. Para ello, el autor tomó muestras de la distribución de salida típica de GPT-2, invirtió las secuencias de tokens y ajustó el modelo sobre ellas, de modo que aprende a "pensar hacia atrás". El resultado es un modelo que, dada una secuencia final, genera el texto que podría haberla precedido.
 
-El procedimiento de entrenamiento consiste en tomar muestras de la distribución de salida típica de GPT-2 (el *GPT-2 output dataset*), tokenizarlas con el BPE a nivel de byte de GPT-2, invertir la secuencia de tokens y ajustar el modelo sobre esas secuencias invertidas. El resultado es un modelo que ha aprendido a "pensar hacia atrás" y que sirve como herramienta de investigación sobre dependencias bidireccionales en modelos de lenguaje.
+El modelo no busca competir en capacidades generales de generación: es una herramienta de investigación para estudiar dependencias bidireccionales en modelos de lenguaje y para explorar la relación causa-efecto en texto. Su perplexity en predicción inversa es de 14,04, frente a 284,11 de GPT-2 estándar en esa misma tarea, lo que supone una mejora de aproximadamente 20 veces; a cambio, su rendimiento en predicción directa se degrada hasta 705,52.
 
-Su relevancia es fundamentalmente experimental y académica: demuestra empíricamente que la dirección de predicción no es una propiedad intrínseca del transformer, sino del objetivo de entrenamiento. Con 14 descargas y 0 *likes* en el momento de redactar esta ficha, se trata de un artefacto de investigación de nicho, no de un modelo orientado a producción.
+Se distribuye con licencia MIT, en formato safetensors, con un tamaño de repositorio de 0,5 GB y 124.439.808 parámetros. Es relevante ahora como pieza didáctica y experimental dentro del ecosistema open source, no como modelo de producción generalista.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only basado en GPT-2 (GPT-2 small: 12 capas, 768 de dimensión oculta, 12 cabezas de atención) |
-| Parámetros totales | 124.439.808 (124,4 M) |
-| Parámetros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 1024 tokens (heredada de GPT-2; no declarada explícitamente en la model card) |
-| Tipos de cuantización | no disponible (el repositorio solo publica pesos en safetensors; el autor no distribuye versiones GGUF, int8 ni de 4 bits) |
-| Idiomas soportados | inglés (`en`) |
+| Arquitectura | Transformer decoder-only (GPT-2), ajustado para predicción inversa de tokens |
+| Parametros totales | 124.439.808 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de GPT-2; el autor no la especifica) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; admite las cuantizaciones estándar de transformers/llama.cpp, no documentadas por el autor) |
+| Idiomas soportados | en (inglés) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Tarea (pipeline) | text-generation |
-| Tamaño del repositorio | 0,5 GB |
-| Descargas / likes | 14 / 0 (en el momento de la consulta) |
-| Fecha de creación / última actualización | 2025-04-03 / 2026-09-26 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de GPT-2 small sin modificaciones estructurales: un transformer decoder-only con atención causal, 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, con tokenizador BPE a nivel de byte. No hay innovaciones arquitectónicas (ni atención lineal, ni decodificación especulativa, ni mezcla de expertos); la única diferencia con GPT-2 es el objetivo de entrenamiento y la orientación de las secuencias.
+La arquitectura es la de GPT-2 estándar: un transformer decoder-only con atención causal, tokenizador byte-level BPE y 117M parámetros (124,4M contando embeddings y cabezas según el recuento de safetensors). La innovación no está en la arquitectura sino en el objetivo de entrenamiento: se generaron muestras de texto a partir de la distribución de salida típica de GPT-2 (GPT-2 output dataset), se tokenizaron con el BPE de GPT-2, se invirtió el orden de la secuencia de tokens y se ajustó el modelo con el objetivo estándar de modelado de lenguaje sobre esas secuencias invertidas. En inferencia, el prompt se invierte antes de pasarlo al modelo y la salida generada se vuelve a invertir para obtener texto en orden natural.
 
-El ajuste fino se realizó con un objetivo de modelado de lenguaje estándar, pero sobre secuencias de tokens invertidas. Los datos de entrenamiento derivan del *GPT-2 output dataset*: se generaron muestras de texto con el GPT-2 original, se tokenizaron y se invirtió el orden de los tokens antes de entrenar. La model card no especifica el número de tokens de entrenamiento, la composición exacta del dataset, la duración del entrenamiento, el *learning rate* ni si se aplicaron técnicas de alineación como RLHF o DPO; tampoco documenta una fase de instrucción. La evaluación se realizó sobre un conjunto de validación de 5.000 ejemplos.
+El autor no documenta el número exacto de tokens de entrenamiento, la composición detallada del dataset, ni si hubo fases de RLHF o DPO; el procedimiento descrito es exclusivamente ajuste fino supervisado con objetivo de modelado de lenguaje. La evaluación se realizó sobre un conjunto de validación de 5.000 ejemplos, comparando perplexity en dirección directa e inversa frente a GPT-2 base.
 
 ## Capacidades
 
-- Generación de texto en dirección inversa: dado un fragmento final, produce texto que podría precederlo.
-- Modelado de dependencias hacia atrás: asigna probabilidad a secuencias invertidas, con una perplejidad de 14,04 frente a 284,11 del GPT-2 original en la misma tarea.
-- Soporte de *tool calling* / *function calling*: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (el modelo no está ajustado por instrucciones).
-- Capacidades multilingües: no disponibles; el modelo está declarado únicamente para inglés y se entrenó sobre la distribución de salida de GPT-2, mayoritariamente en inglés.
-- Capacidades especiales: no dispone de *thinking mode*, visión ni audio. La única capacidad distintiva es la predicción del token previo.
-- Capacidad forward residual: el modelo conserva la arquitectura de GPT-2, por lo que puede ejecutarse en modo estándar (siguiente token), pero con un rendimiento muy degradado (perplejidad de 705,52 frente a 9,05 del GPT-2 original).
+- Generación de texto inversa: dado un final o una secuencia objetivo, genera texto que podría precederlo.
+- Exploración de relaciones causa-efecto en texto: permite generar "causas" plausibles para un "efecto" dado.
+- Sonda de dependencias bidireccionales: útil para investigar cómo un modelo de lenguaje representa el contexto hacia atrás.
+- Generación de texto en inglés con muestreo configurable (temperature, top_k, top_p).
+- No dispone de tool calling ni function calling.
+- No está diseñado para razonamiento multi-paso ni para uso como agente.
+- Capacidades multilingües limitadas al inglés, idioma de entrenamiento.
+- No incluye modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- **Generación de preludios o contextos para un final dado**: el flujo documentado por el autor permite pasar una frase de cierre y obtener un texto que conduce a ella. Es útil para ejercicios creativos, guiones o generación de escenas que deben desembocar en un desenlace concreto.
-- **Investigación sobre dependencias bidireccionales**: sirve como sujeto experimental para estudiar cómo un transformer aprende relaciones causales y temporales en el texto, y hasta qué punto la dirección de predicción condiciona la representación interna.
-- **Aumento de datos para tareas inversas**: al generar prefijos plausibles para un conjunto de finales, puede alimentar pipelines de aumento de datos en tareas de reescritura, resumen inverso o reconstrucción de contexto.
-- **Análisis forense de texto generado por máquinas**: la asimetría de perplejidad entre el modelo forward y el inverso puede emplearse como señal complementaria en experimentos de detección de texto sintético, comparando la verosimilitud en ambas direcciones.
-- **Docencia y divulgación técnica**: es un ejemplo compacto (0,5 GB) y ejecutable en CPU para explicar en clase cómo el objetivo de entrenamiento define el comportamiento de un modelo de lenguaje.
-- **Exploración de razonamiento abductivo textual**: permite generar hipótesis de "causas" plausibles para un "efecto" observado en un texto, un patrón útil en investigación sobre inferencia abductiva aplicada al lenguaje natural.
-- **Línea base en estudios de eficiencia de ajuste fino**: al partir de un GPT-2 conocido y con un presupuesto de cómputo reducido, sirve como referencia para comparar metodologías de *fine-tuning* en tareas poco convencionales.
-- **Ingeniería inversa de *prompts***: dado un resultado deseado, ayuda a construir de forma exploratoria la formulación previa que probablemente lo habría producido.
+- Investigación sobre modelado bidireccional: permite comparar la perplexity inversa de un modelo ajustado frente a la de un modelo estándar y estudiar qué información direccional captura un transformer causal.
+- Generación de preludios narrativos: dado un cierre ("And they lived happily ever after"), el modelo produce aperturas plausibles, útil en ejercicios creativos y talleres de escritura.
+- Análisis de causas en texto: para un resultado descrito en un corpus, el modelo genera contextos previos hipotéticos que pueden servir como hipótesis en análisis exploratorio de datos textuales.
+- Docencia y divulgación: ejemplo mínimo y reproducible (117M parámetros, 0,5 GB) para explicar objetivo de entrenamiento, tokenización y perplexity en cursos de NLP.
+- Experimentos de interpretabilidad: comparar representaciones internas de GPT-2 y 2-TPG para estudiar si la dirección de predicción altera el espacio latente.
+- Pruebas de estrés de pipelines de generación: al tener un comportamiento degradado en dirección directa (perplexity 705,52), sirve como caso de control negativo en evaluaciones de modelos.
+- Reproducción de experimentos: el código de entrenamiento, evaluación e inferencia está publicado en el repositorio del autor, lo que facilita replicar el ajuste con otros modelos base.
 
 ## Benchmarks y rendimiento
 
-El autor publica una única tabla de evaluación, con perplejidad sobre un conjunto de validación de 5.000 ejemplos, comparando 2-TPG con el GPT-2 base en ambas direcciones de predicción:
-
-| Modelo | Dirección | Perplejidad |
+| Modelo | Dirección | Perplexity |
 |---|---|---|
 | 2-TPG | Inversa | 14,04 |
 | 2-TPG | Directa | 705,52 |
 | GPT-2 | Inversa | 284,11 |
 | GPT-2 | Directa | 9,05 |
 
-Conclusiones que se derivan de estos datos: 2-TPG es aproximadamente 20 veces mejor que GPT-2 en predicción del token anterior, y su rendimiento en predicción directa es muy inferior al de GPT-2. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Evaluación sobre un conjunto de validación de 5.000 ejemplos. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: aproximadamente 500 MB en fp32, 250 MB en fp16/bf16, 125 MB en int8 y en torno a 70 MB en 4 bits, sin contar el *overhead* del *runtime* de PyTorch.
-- **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). El modelo está muy por debajo de la capacidad de cualquier acelerador moderno.
-- **¿Cabe en GPU de consumo?**: sí, con enorme margen. También es perfectamente viable la inferencia en CPU; incluso en un portátil moderno la generación de decenas de tokens es cuestión de segundos.
-- **Opciones de despliegue**: `transformers` con `GPT2LMHeadModel` es la vía documentada por el autor. Al ser una arquitectura GPT-2 estándar, es convertible a GGUF para `llama.cpp` y compatible con motores que soportan dicha arquitectura (vLLM, TGI), aunque el autor no publica recetas ni artefactos de despliegue para ninguno de ellos.
-- **Latencia y throughput estimados**: no disponible. El autor no publica mediciones de latencia ni de tokens por segundo.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB de pesos; en fp16 alrededor de 0,25 GB; en cuantización de 8 bits en torno a 0,13 GB. El consumo real de memoria incluye activaciones y caché KV, por lo que en la práctica conviene reservar al menos 1-2 GB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; cabe en RTX 3060, RTX 4060, RTX 4090 y en GPUs de datacenter como A100 o H100 sin aprovechar su capacidad.
+- Cabe en GPU consumer y también en CPU para inferencia interactiva, dado el reducido tamaño.
+- Opciones de despliegue: transformers (referencia del autor), llama.cpp y Ollama mediante conversión a GGUF, y servidores compatibles con la API de transformers como TGI o vLLM (no verificados por el autor para este modelo).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Perplejidad inversa | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 2-TPG (`drwahl/2tpg`) | 124,4 M | 1024 tokens | 14,04 | MIT | Hugging Face, safetensors |
-| GPT-2 small (`openai-community/gpt2`) | 124,4 M | 1024 tokens | 284,11 | MIT | Hugging Face, safetensors, GGUF |
-| GPT-2 medium | 355 M | 1024 tokens | no disponible | MIT | Hugging Face, safetensors |
-| DistilGPT-2 | 82 M | 1024 tokens | no disponible | MIT | Hugging Face, safetensors |
+| 2-TPG | 124,4M | no disponible | Predicción del token anterior | MIT | Hugging Face |
+| GPT-2 (openai-community/gpt2) | 124M | 1024 tokens (estándar de GPT-2) | Predicción del siguiente token | MIT | Hugging Face |
+| GPT-2 medium | 355M | 1024 tokens (estándar de GPT-2) | Predicción del siguiente token | MIT | Hugging Face |
+| DistilGPT-2 | 82M | 1024 tokens (estándar de GPT-2) | Predicción del siguiente token (destilado) | Apache 2.0 | Hugging Face |
 
-No existen, en la información disponible, otros modelos públicos especializados en predicción inversa de tokens con los que establecer una comparación directa. Las alternativas de la tabla son modelos de la misma familia y tamaño, pero entrenados con el objetivo estándar de predicción del token siguiente; la perplejidad inversa de GPT-2 medium y DistilGPT-2 no se ha publicado.
+La comparación relevante no es de rendimiento general sino de objetivo: 2-TPG es el único de la lista entrenado para predecir hacia atrás. Frente a GPT-2, mejora unas 20 veces la perplexity inversa (14,04 frente a 284,11) y empeora drásticamente la directa (705,52 frente a 9,05). No se dispone de comparación con otros modelos de predicción inversa en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Sesgos**: el modelo hereda los sesgos presentes en la distribución de salida de GPT-2, que a su vez refleja los sesgos de los datos web con los que se entrenó el modelo original. El autor advierte explícitamente de que las salidas deben tratarse como experimentales.
-- **Riesgo de alucinación**: elevado. Al no estar ajustado por instrucciones ni alineado con preferencias humanas, genera texto plausible pero no verificado, sin ninguna garantía de factualidad.
-- **No válido como modelo de lenguaje general**: su perplejidad en predicción directa (705,52) es casi dos órdenes de magnitud peor que la de GPT-2 (9,05). Usarlo como generador de texto convencional produce resultados claramente degradados.
-- **Manipulación manual de tokens**: el uso previsto requiere invertir la secuencia de tokens antes de la generación y volver a invertir la salida, tal como muestra el ejemplo de la model card. Es un flujo propenso a errores si no se respeta el orden.
-- **Idioma**: únicamente inglés. No hay evidencia de un rendimiento aceptable en castellano ni en otros idiomas.
-- **Contexto limitado**: 1024 tokens, insuficiente para tareas que requieran contexto largo, documentación extensa o conversaciones multi-turno prolongadas.
-- **Ausencia de cuantizaciones oficiales**: solo se distribuyen pesos en safetensors; cualquier cuantización debe generarla el usuario.
-- **Adopción muy baja**: 14 descargas y 0 *likes*. No hay validación independiente, ni informes de terceros, ni mantenimiento activo más allá de la actualización del repositorio.
-- **Licencia**: MIT, por lo que se permite uso comercial, modificación y redistribución con atribución. No obstante, dado el rendimiento y el propósito experimental del modelo, no se recomienda su uso en producción.
-- **Trazabilidad del entrenamiento**: la model card no documenta el número de tokens, la composición exacta del dataset, los hiperparámetros ni el cómputo empleado, lo que dificulta la reproducibilidad estricta.
+- El modelo está especializado en predicción inversa y su rendimiento en generación directa es muy deficiente (perplexity 705,52), por lo que no debe usarse como modelo de generación convencional.
+- Entrenado únicamente en inglés; no se garantiza un comportamiento correcto en otros idiomas.
+- Puede reproducir sesgos presentes en la distribución de salida de GPT-2 y en el corpus original, incluyendo sesgos de género, raza y estereotipos.
+- Riesgo de alucinación alto: al generar texto que "precede" a una secuencia, el contenido producido es plausible pero no verificado ni anclado a hechos.
+- El uso requiere invertir manualmente los tokens de entrada y de salida; un manejo incorrecto produce resultados sin sentido.
+- La longitud de contexto efectiva no está documentada por el autor; se hereda la de GPT-2 y no se ha validado para secuencias largas.
+- Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías y recomienda tratar las salidas como experimentales.
+- No apto para producción en tareas de atención al cliente, generación de código o agentes sin una validación adicional exhaustiva.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/drwahl/2tpg
 - Repositorio de código (entrenamiento, evaluación e inferencia): https://github.com/danwahl/2tpg
-- Dataset de salidas de GPT-2 utilizado para el ajuste fino: https://github.com/openai/gpt-2-output-dataset
-- Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre el modelo. Las búsquedas devolvieron exclusivamente sitios de contenido para adultos sin relación alguna con el modelo, por lo que se han descartado.
+- Dataset de salida de GPT-2: https://github.com/openai/gpt-2-output-dataset
+- DOI del modelo en Hugging Face: https://doi.org/10.57967/hf/10747
+- DOI del artículo (Zenodo): https://doi.org/10.5281/zenodo.23133039
+- Modelo base: https://huggingface.co/openai-community/gpt2

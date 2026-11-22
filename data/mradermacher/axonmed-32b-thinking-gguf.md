@@ -2,51 +2,50 @@
 
 ## Resumen
 
-AxonMed-32B-Thinking-GGUF es la versión cuantizada en formato GGUF del modelo AxonMed-32B-Thinking, publicado por el usuario mradermacher (conocido por generar cuantizaciones estáticas de modelos de terceros para su uso con llama.cpp y herramientas compatibles). El modelo base, alojado en el repositorio Saathimed/AxonMed-32B-Thinking, es un modelo de 32.763.876.352 parámetros (aproximadamente 32,8 mil millones) orientado a conversación y, por su nombre, con un modo de razonamiento explícito ("Thinking") y probable especialización en dominio médico.
+AxonMed-32B-Thinking es un modelo de lenguaje de 32.763.876.352 parámetros (aproximadamente 32,8 mil millones), afinado para razonamiento clínico y médico, y publicado originalmente por Saathimed bajo el identificador `Saathimed/AxonMed-32B-Thinking`. La versión analizada aquí es la cuantización GGUF estática realizada por mradermacher, que permite ejecutar el modelo en entornos con recursos limitados mediante llama.cpp y derivados.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de ~32B con razonamiento en hardware de consumo o servidores modestos, gracias a las 11 cuantizaciones estáticas publicadas (desde Q2_K hasta F16, incluyendo IQ4_XS y variantes K). El repositorio ocupa 31,1 GB en total y fue creado el 16 de noviembre de 2026.
+El modelo está orientado a tareas de razonamiento médico con cadena de pensamiento (chain-of-thought), entrenado sobre datasets como MedQA-USMLE-4-options, PubMedQA, medical-o1-reasoning-SFT y medical_meadow_usmle_self_assessment. Los tags de la model card indican soporte multilingüe en inglés, español, chino, alemán, francés, ruso e hindi, y una licencia Apache 2.0 que permite uso comercial.
 
-No se dispone de información pública sobre el desarrollador original, la licencia, los idiomas soportados ni los datos de entrenamiento en la información proporcionada. Todos los datos técnicos que siguen provienen de los metadatos de Hugging Face y de la model card del cuantizador; cualquier aspecto no documentado se marca como "no disponible".
+La relevancia de esta ficha radica en que la versión GGUF facilita el despliegue local del modelo base sin necesidad de GPUs de datacenter, algo crítico en contextos clínicos donde la confidencialidad de los datos desaconseja el envío a APIs externas. El repositorio ocupa 224 GB e incluye 11 variantes de cuantización desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (deducida del formato GGUF y del tamaño; detalles no disponibles) |
-| Parametros totales | 32.763.876.352 (~32,8B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base derivado de un transformer de 32B; la model card no detalla la arquitectura) |
+| Parametros totales | 32.763.876.352 |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas generadas con quantize_version 2, convert_type hf) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estáticas); existen también cuantizaciones i1/imatrix en repositorio separado |
+| Idiomas soportados | en, es, zh, de, fr, ru, hi |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (modelo base original presumiblemente en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base. Por el tamaño de parámetros (32,8B) y el formato de conversión (convert_type hf, es decir, partiendo de pesos en formato Hugging Face), se trata con alta probabilidad de un transformer decoder-only denso, aunque no se confirma si emplea atención lineal, decodificación especulativa u otras innovaciones. El sufijo "Thinking" sugiere un modo de razonamiento extendido (cadena de pensamiento explícita), pero no se documenta el mecanismo exacto.
+No se dispone de detalles arquitectónicos en la información proporcionada más allá del recuento de parámetros (32,8B) y de la naturaleza conversacional del modelo. El nombre y los tags sugieren un transformer decoder-only con modo "thinking" (cadena de pensamiento explícita), pero no se confirma en la model card disponible. Tampoco se documentan el número de tokens de entrenamiento, la composición exacta del dataset más allá de los cuatro conjuntos citados, ni si se aplicaron etapas de RLHF, DPO o SFT específicas.
 
-Tampoco se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre "AxonMed" apunta a una especialización en dominio médico, pero esta afirmación no está respaldada por documentación técnica en la información proporcionada. Las cuantizaciones publicadas son estáticas (no imatrix), con output_tensor_quantised activado y sin fichero mmproj, lo que indica que el modelo es solo texto (sin componente de visión).
+Los datasets referenciados indican un enfoque en razonamiento clínico tipo USMLE (MedQA-4-options y medical_meadow_usmle_self_assessment), evidencia biomédica (PubMedQA) y razonamiento médico sintético (medical-o1-reasoning-SFT). El sufijo "Thinking" y el tag `cot` apuntan a que el modelo genera trazas de razonamiento antes de la respuesta final, práctica habitual en modelos médicos afinados para imitar el razonamiento clínico paso a paso.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según la etiqueta "conversational" del repositorio.
-- Razonamiento explícito en modo "Thinking" (deducido del nombre; mecanismo no documentado).
-- Posible especialización en dominio médico (deducido del nombre "AxonMed"; no confirmado).
-- Compatibilidad con endpoints (tag endpoints_compatible), lo que facilita su despliegue en infraestructuras de inferencia compatibles.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades de visión o audio: no disponibles (sin fichero mmproj, se descarta visión).
+- Generación de texto conversacional multi-turno.
+- Razonamiento clínico con cadena de pensamiento explícita (modo thinking).
+- Resolución de preguntas de tipo USMLE de opción múltiple.
+- Razonamiento sobre literatura biomédica (PubMedQA).
+- Soporte multilingüe declarado en siete idiomas: inglés, español, chino, alemán, francés, ruso e hindi.
+- Formato conversacional compatible con endpoints (tag `endpoints_compatible`).
+- No se documenta soporte explícito de tool calling, function calling, visión, audio ni capacidades de agente multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Despliegue local de un modelo de ~32B con razonamiento: gracias a las cuantizaciones Q4_K_M o IQ4_XS, el modelo puede ejecutarse en una GPU de consumo de 24 GB (RTX 3090/4090) o en configuraciones CPU+GPU con llama.cpp, permitiendo probar razonamiento de gran tamaño sin infraestructura de datacenter.
-- Asistencia en documentación clínica (si se confirma la especialización médica): resumen y estructuración de notas e informes, con la advertencia de que requiere validación humana por el riesgo de alucinación en dominio sanitario.
-- Chatbot conversacional de dominio específico: la etiqueta "conversational" y el contexto de 32B permiten mantener diálogos multi-turno con mayor coherencia que modelos de 7B-13B, integrándose vía endpoints compatibles.
-- Prototipado de pipelines de razonamiento: el modo "Thinking" permite experimentar con cadenas de razonamiento en tareas de análisis o resolución de problemas antes de invertir en modelos mayores.
-- Evaluación comparativa de cuantizaciones: al publicarse 11 variantes (Q2_K a F16), es útil para medir la degradación de calidad frente a tamaño en un modelo de 32B con razonamiento.
-- Inferencia en servidores sin GPU dedicada: las variantes Q2_K y Q3_K_S permiten ejecución en CPU con RAM suficiente (aproximadamente 14-16 GB para Q2_K), útil para entornos de desarrollo o pruebas.
-- Fine-tuning o destilación posterior: los pesos F16 del repositorio pueden servir como base para ajuste fino, aunque la licencia no disponible impide confirmar si el uso comercial está permitido.
+- Apoyo a la formación médica: el modelo puede resolver y razonar preguntas estilo USMLE, mostrando la traza de razonamiento paso a paso, lo que resulta útil en plataformas de estudio para residentes y estudiantes de medicina.
+- Segunda opinión clínica asistida: con cuantización Q5_K_M o Q6_K desplegada en local, se puede usar como apoyo a la revisión de casos, manteniendo los datos del paciente dentro de la infraestructura del hospital.
+- Triaje documental de literatura científica: procesar abstracts de PubMed y responder preguntas de evidencia (PubMedQA) para filtrar artículos relevantes en revisiones sistemáticas.
+- Chatbot informativo para pacientes: gracias al soporte multilingüe (es, en, de, fr, etc.) y al contexto conversacional, puede gestionar FAQs médicas acotadas con respuestas matizadas y derivación a profesionales.
+- Generación de resúmenes clínicos estructurados: a partir de notas médicas, producir resúmenes con razonamiento explícito que un clínico pueda auditar (siempre con revisión humana).
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_S (18,9 GB) y Q4_K_M (20,0 GB) caben en GPUs consumer de 24 GB, permitiendo prototipado rápido sin infraestructura de datacenter.
+- Investigación en NLP clínico: servir como baseline reproducible para estudiar razonamiento CoT en dominios médicos, dado que la licencia Apache 2.0 permite modificaciones y publicación de resultados.
 
 ## Benchmarks y rendimiento
 
@@ -54,43 +53,41 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
-  - F16: ~65 GB.
-  - Q8_0: ~35 GB.
-  - Q6_K: ~27 GB.
-  - Q5_K_M: ~23 GB.
-  - Q4_K_M: ~20 GB.
-  - IQ4_XS: ~18 GB.
-  - Q3_K_M: ~16 GB.
-  - Q2_K: ~12-13 GB.
-- GPU recomendadas: A100 80 GB o H100 para F16/Q8_0; RTX 4090 (24 GB) o A6000 (48 GB) para Q4_K_M/Q5_K_M; RTX 3090 (24 GB) para IQ4_XS o Q4_K_S.
-- ¿Cabe en GPU de consumo? Sí: las variantes Q4_K_M, IQ4_XS y Q3_K_M caben en GPUs de 24 GB, aunque el contexto largo puede requerir offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, y servidores compatibles con endpoints (tag endpoints_compatible). vLLM y TGI no soportan GGUF de forma nativa sin conversión.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (según cuantización): Q2_K ≈ 12,4 GB; Q3_K_M ≈ 16,0 GB; Q4_K_M ≈ 20,0 GB; Q5_K_M ≈ 23,4 GB; Q6_K ≈ 27,0 GB; Q8_0 ≈ 34,9 GB. Añadir overhead de contexto KV cache (no cuantificado en la información disponible).
+- GPU recomendadas: para Q4_K_M y superiores, RTX 4090 (24 GB) o RTX 3090 (24 GB) son suficientes; Q6_K requiere 32 GB (A100 40GB, RTX A6000, o dos GPUs de 24 GB); Q8_0 requiere 40 GB o más (A100 40GB, H100 80GB).
+- Cabe en GPU consumer: sí, desde Q2_K hasta Q5_K_M en GPUs de 24 GB; Q6_K al límite con contexto corto.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con APIs tipo OpenAI. vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que para esos runtimes convendría usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| AxonMed-32B-Thinking-GGUF | ~32,8B | no disponible | no disponible | GGUF | Cuantizaciones estáticas, modo Thinking, posible dominio médico |
-| Qwen2.5-32B-Instruct (referencia) | ~32,8B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Modelo denso generalista con cuantizaciones comunitarias |
-| Gemma 2 27B (referencia) | ~27B | 8.192 tokens | Gemma License | safetensors, GGUF | Alternativa de tamaño similar con licencia restrictiva |
-| Yi-34B (referencia) | ~34B | 4.096-200.000 tokens | Apache 2.0 | safetensors, GGUF | Mayor tamaño, contexto variable según variante |
+| AxonMed-32B-Thinking (este) | 32,8B | no disponible | Apache 2.0 | GGUF (base safetensors) | Afinado médico con CoT, 7 idiomas |
+| Modelos médicos 32B comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre alternativas concretas en la documentación proporcionada |
 
-La comparativa se basa en características públicas de modelos de la misma categoría; no se dispone de datos de rendimiento de AxonMed-32B-Thinking para comparar benchmarks.
+No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas específicas de la misma categoría (modelos médicos de ~32B con CoT). Se recomienda consultar el repositorio del modelo base `Saathimed/AxonMed-32B-Thinking` para referencias comparativas.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; verificar el repositorio base (Saathimed/AxonMed-32B-Thinking) antes de cualquier despliegue en producción.
-- Riesgo de alucinación: si el modelo está especializado en dominio médico, las alucinaciones pueden tener consecuencias graves; se requiere validación humana y no debe usarse como sustituto de criterio clínico.
-- Idiomas no documentados: no se puede garantizar un rendimiento adecuado en castellano u otros idiomas distintos del inglés.
-- Contexto no documentado: se desconoce la ventana máxima; configurar valores conservadores en llama.cpp para evitar degradación.
-- Cuantizaciones agresivas (Q2_K, Q3_K_S) pueden degradar notablemente el razonamiento en un modelo de 32B; se recomienda Q4_K_M o superior para tareas sensibles.
-- Repositorio con 0 descargas y 0 likes en el momento de la ficha: sin validación comunitaria, sin evidencia de calidad ni de estabilidad.
-- Sin fichero mmproj: no hay soporte multimodal.
-- El cuantizador (mradermacher) no es el autor original; posibles incidencias de conversión no documentadas.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre datasets clínicos en inglés (MedQA, PubMedQA), es probable un sesgo hacia prácticas médicas occidentales y terminología anglosajona.
+- Riesgo de alucinación: elevado en dominio médico, como en cualquier LLM; las trazas de razonamiento CoT no garantizan corrección factual y pueden producir justificaciones plausibles pero erróneas.
+- Limitaciones de contexto o idioma: la longitud de contexto no está documentada; el soporte multilingüe está declarado pero no evaluado, por lo que el rendimiento en español, hindi o ruso puede ser inferior al del inglés.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero no exime del cumplimiento de regulaciones sanitarias (MDR en la UE, HIPAA en EE.UU.) si se usa en contextos clínicos reales.
+- Caveat para producción: el modelo no está validado clínicamente; cualquier uso en decisiones diagnósticas o terapéuticas requiere supervisión de profesionales sanitarios titulados y auditoría de outputs.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad de razonamiento, especialmente en tareas CoT largas; para uso médico se recomienda Q5_K_M o superior.
+- El repositorio ocupa 224 GB; descargar solo el archivo GGUF deseado, no clonar el repo completo.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/AxonMed-32B-Thinking-GGUF
 - Modelo base: https://huggingface.co/Saathimed/AxonMed-32B-Thinking
+- Cuantizaciones i1/imatrix: https://huggingface.co/mradermacher/AxonMed-32B-Thinking-i1-GGUF
+- Página de descarga del autor: https://hf.tst.eu/model#AxonMed-32B-Thinking-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset MedQA-USMLE-4-options: https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options
+- Dataset PubMedQA: https://huggingface.co/datasets/qiaojin/PubMedQA (referencia habitual; enlace exacto no confirmado en la información)
+- Dataset medical-o1-reasoning-SFT: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT
+- Dataset medical_meadow_usmle_self_assessment: https://huggingface.co/datasets/medalpaca/medical_meadow_usmle_self_assessment

@@ -46,13 +46,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Decision Making",
-      "dataset": "Decision Index 0.3 (Public)",
-      "metric": "Decision Index Score",
-      "value": 56.12
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

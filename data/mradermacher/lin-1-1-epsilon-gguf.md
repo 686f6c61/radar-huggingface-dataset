@@ -2,50 +2,53 @@
 
 ## Resumen
 
-Lin-1.1-Epsilon es un modelo de lenguaje de 494 millones de parámetros (494.032.768 según los pesos en safetensors) orientado a la generación de código, con etiquetas específicas para Rust y un identificador propio del autor ("lindot"). Lo desarrolla LindotAI, y esta ficha concreta es la cuantización GGUF publicada por mradermacher, un conocido distribuidor de cuantizaciones estáticas para la librería llama.cpp y derivados.
+Lin-1.1-Epsilon-GGUF es la versión cuantizada en formato GGUF del modelo LindotAI/Lin-1.1-Epsilon, publicada por el usuario mradermacher, conocido en la comunidad por generar cuantizaciones estáticas de modelos open source. El modelo base es un transformer de aproximadamente 494 millones de parámetros, orientado a tareas de generación de código, con especial atención al lenguaje Rust y al ecosistema Lindot. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas.
 
-El modelo base es LindotAI/Lin-1.1-Epsilon, del que no se dispone de model card detallada en la información proporcionada. Por el tamaño y las etiquetas, se sitúa en la categoría de modelos pequeños especializados, pensados para ejecución local en hardware modesto y para tareas de asistencia a la programación, particularmente en el ecosistema Rust.
+Este repositorio no contiene un modelo nuevo, sino una colección de cuantizaciones (desde Q2_K hasta f16) pensadas para facilitar el despliegue en hardware modesto mediante llama.cpp y herramientas compatibles. El tamaño reducido del modelo (medio billón de parámetros) lo hace apto para ejecutarse en CPU o en GPUs de consumo con requisitos de VRAM muy bajos, lo que resulta relevante para entornos de desarrollo locales, CI/CD y prototipado rápido.
 
-La relevancia de esta ficha reside en que ofrece el modelo en formato GGUF con 12 variantes de cuantización (desde Q2_K hasta f16), lo que permite desplegarlo en CPU, en GPUs de consumo e incluso en entornos con recursos muy limitados. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales.
+La información pública disponible sobre el modelo base es escasa: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks. La model card del repositorio cuantizado se limita a listar los ficheros GGUF y a remitir a la documentación del modelo original.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformer, inferido por la librería transformers; no confirmado en la información) |
-| Parámetros totales | 494.032.768 |
-| Parámetros activos | no aplica (no es MoE según la información disponible) |
+| Arquitectura | Transformer (detalles no disponibles) |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, IQ4_XS, Q2_K |
-| Idiomas soportados | inglés (en) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16 |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en formato transformers/safetensors |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Tamano del repo | 5,4 GB |
+| Modelo base | LindotAI/Lin-1.1-Epsilon |
+| Cuantizador | mradermacher |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base LindotAI/Lin-1.1-Epsilon en la documentación proporcionada. La librería declarada es transformers, lo que sugiere una arquitectura transformer decoder-only estándar, pero este dato no está confirmado explícitamente. Tampoco se detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO o ajuste por instrucciones.
+No se dispone de información detallada sobre la arquitectura interna del modelo base LindotAI/Lin-1.1-Epsilon más allá de que se trata de un transformer con 494 millones de parámetros. La model card del repositorio cuantizado no incluye datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Los tags del modelo (`code`, `rust`, `lindot`) sugieren una especialización en generación de código, particularmente en Rust y en el lenguaje o ecosistema denominado Lindot, pero no se especifica cómo se logró esta especialización.
 
-La información disponible se limita a las etiquetas del modelo: "code", "rust" y "lindot", que indican una especialización en generación de código con énfasis en Rust, y la etiqueta "conversational", que apunta a un ajuste para diálogo. El proceso de cuantización realizado por mradermacher es estático (quantize_version 2, output_tensor_quantised 1), sin cuantizaciones ponderadas ni imatrix disponibles en el momento de la publicación. No se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
+El repositorio de mradermacher aplica cuantizaciones estáticas (no imatrix) generadas con llama.cpp. Según las notas del autor, las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamaño similar, y las variantes Q4_K_S y Q4_K_M se marcan como "rápidas y recomendadas". También existe un repositorio paralelo con cuantizaciones ponderadas/imatrix en `mradermacher/Lin-1.1-Epsilon-i1-GGUF`.
 
 ## Capacidades
 
-- Generación de texto y código, con especialización declarada en Rust según las etiquetas del repositorio.
-- Conversación multi-turno (etiqueta "conversational").
-- Soporte de tool calling / function calling: no disponible en la información.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información.
-- Capacidades multilingües: limitadas al inglés según el campo `language`.
-- Capacidades especiales (thinking mode, visión, audio): no disponibles en la información.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Generación de texto conversacional en inglés, según el tag `conversational`.
+- Generación y asistencia en código, con énfasis declarado en Rust y el ecosistema Lindot (tags `code`, `rust`, `lindot`).
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según los metadatos; no se documentan otros idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia a la programación en Rust: el modelo puede generar y completar fragmentos de código Rust en entornos de edición locales, aprovechando su especialización declarada y su reducido tamaño para inferencia en CPU o GPU de gama baja.
-- Autocompletado en IDE: con cuantizaciones Q4_K_M (0,5 GB), puede ejecutarse en un portátil sin GPU dedicada y ofrecer sugerencias de código en tiempo real con latencia baja.
-- Revisión y explicación de código: dado su enfoque conversacional, puede emplearse para explicar fragmentos de Rust, detectar patrones habituales y proponer refactorizaciones en un flujo de chat.
-- Generación de tests unitarios: integrado en un pipeline de CI/CD, puede producir esqueletos de tests para módulos Rust a partir de las firmas de funciones.
-- Prototipado rápido en entornos con recursos limitados: al caber en menos de 1 GB en cuantización Q8_0, es adecuado para demos, notebooks y dispositivos edge donde no es viable un modelo grande.
-- Filtrado y clasificación de código: puede usarse como componente ligero para etiquetar o clasificar fragmentos de código en pipelines de datos, dado su bajo coste de inferencia.
-- Chatbot técnico de dominio acotado: para preguntas frecuentes sobre Rust y su ecosistema, con la advertencia de que su conocimiento general será limitado por el tamaño.
+- Autocompletado de código Rust en el editor: con 494 millones de parámetros y cuantizaciones de ~0,5 GB, el modelo puede ejecutarse localmente en el portátil del desarrollador mediante llama.cpp u Ollama, ofreciendo sugerencias de código con latencia baja sin depender de la nube.
+- Asistente de revisión de código en CI/CD: integrado como paso de validación en pipelines, el modelo puede generar explicaciones o sugerencias sobre fragmentos de código Rust y señalar patrones problemáticos, aprovechando su especialización declarada en este lenguaje.
+- Chatbot de documentación técnica: al ser un modelo conversacional en inglés, puede emplearse para responder preguntas sobre APIs o guías del ecosistema Lindot, desplegado en un servidor modesto o incluso en CPU.
+- Prototipado rápido de aplicaciones de IA generativa: su reducido tamaño permite iterar en el diseño de prompts y flujos conversacionales sin incurrir en costes de GPU, usando la cuantización Q4_K_M como opción equilibrada.
+- Generación de tests unitarios para proyectos Rust: el modelo puede producir esqueletos de tests a partir de firmas de funciones o descripciones, como paso previo a la revisión humana, en un entorno de desarrollo local.
+- Educación y experimentación: investigadores o estudiantes pueden estudiar el comportamiento de un modelo especializado en código de pequeño tamaño, ejecutándolo en hardware de consumo y comparando cuantizaciones (Q2_K frente a Q8_0) para analizar el impacto en la calidad.
+- Despliegue en entornos con recursos limitados: al caber en menos de 1 GB en la mayoría de cuantizaciones, puede embeberse en contenedores ligeros o dispositivos edge para tareas de generación de texto acotadas.
 
 ## Benchmarks y rendimiento
 
@@ -53,40 +56,37 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,4 GB en Q2_K/Q3_K_S, 0,5 GB en Q4_K_M/IQ4_XS, 0,6 GB en Q6_K/Q8_0 y 1,1 GB en f16 (tamaños de archivo GGUF; la VRAM real añade overhead de contexto y caché KV).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tarjetas como RTX 3050, RTX 4060, GTX 1660 o superiores funcionan sin problema. Para despliegues en servidor, A100 o H100 son innecesarias por el tamaño del modelo, aunque válidas.
-- Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo modernas, e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: llama.cpp, Ollama (previa importación del GGUF), LM Studio, y servidores compatibles con GGUF como llama-cpp-python. vLLM y TGI no soportan GGUF de forma nativa para este formato, por lo que requerirían el modelo base en safetensors.
-- Latencia y throughput: no disponibles en la información. Por el tamaño (494 M de parámetros), se espera una latencia muy baja en GPU y aceptable en CPU, pero no se aportan cifras oficiales.
+- VRAM estimada para inferencia: aproximadamente 0,4-0,6 GB para cuantizaciones Q2_K a Q6_K; alrededor de 1,1 GB para f16. El modelo completo en safetensors ronda los 1 GB en precisión de 16 bits.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tarjetas como GTX 1650, RTX 3050, RTX 4060 o superiores pueden ejecutar la versión f16 con holgura. En GPUs de gama alta (A100, H100) el modelo es sobredimensionado para su capacidad y no aprovecharía el hardware.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna e incluso en iGPUs con memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. El tag `endpoints_compatible` sugiere compatibilidad con infraestructuras de endpoints de Hugging Face. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se recomienda verificar la compatibilidad antes de usarlos.
+- Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera una latencia muy baja en GPU y aceptable en CPU, pero no se aportan cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Lin-1.1-Epsilon (esta ficha) | 494 M | no disponible | Apache 2.0 | GGUF | Especializado en código/Rust, solo inglés |
-| Qwen2.5-Coder-0.5B | 494 M aprox. | 32 K (según versión) | Apache 2.0 | safetensors, GGUF | Multilingüe, amplia familia de cuantizaciones |
-| StarCoder2-3B | 3 B | 16 K | BigCode OpenRAIL-M | safetensors, GGUF | Mayor tamaño y rendimiento, licencia con restricciones |
-| DeepSeek-Coder-1.3B | 1,3 B | 16 K | DeepSeek License | safetensors, GGUF | Más parámetros, licencia específica |
+| Lin-1.1-Epsilon (GGUF) | 494 M | no disponible | Apache 2.0 | GGUF | Especializado en código Rust/Lindot, solo inglés |
+| Qwen2.5-Coder-0.5B | 494 M | 32 768 tokens (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | Multilingüe, amplia familia de cuantizaciones comunitarias |
+| SmolLM2-360M | 362 M | 8 192 tokens (según documentación pública) | Apache 2.0 | safetensors, GGUF | Modelo pequeño generalista, no especializado en código |
+| StarCoder2-3B | 3 B | 16 384 tokens (según documentación pública) | BigCode OpenRAIL-M | safetensors, GGUF | Mayor tamaño y rendimiento en código, licencia con restricciones de uso |
 
-Nota: los datos de los modelos comparables provienen de conocimiento general y no de la información proporcionada; verificar en sus respectivas fichas antes de usarlos en producción.
+La comparación con Qwen2.5-Coder-0.5B es la más directa por tamaño y licencia; sin embargo, no se dispone de benchmarks de Lin-1.1-Epsilon que permitan establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado y probablemente sea deficiente.
-- Contexto: se desconoce la longitud de contexto soportada, lo que impide planificar usos con documentos largos.
-- Alucinación: al ser un modelo de 494 M de parámetros, la tasa de alucinación en conocimiento factual será alta; no es adecuado para tareas que requieran precisión factual sin verificación.
-- Sesgos: no se documentan evaluaciones de sesgo; los modelos pequeños entrenados con datos web heredan sesgos de esos datos.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base LindotAI/Lin-1.1-Epsilon, ya que la información proporcionada no la detalla de forma independiente.
-- Cuantizaciones: las variantes Q2_K y Q3_K_S degradan la calidad de forma notable; para producción se recomienda Q4_K_M o superior.
-- Sin cuantizaciones ponderadas (imatrix): el autor indica que no están disponibles en el momento de la publicación, lo que puede afectar a la calidad de las cuantizaciones de 4 bits frente a alternativas con imatrix.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación comunitaria conocida.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse presumiblemente con datos de código y texto en inglés, puede heredar sesgos presentes en esas fuentes.
+- Riesgo de alucinación: como todo modelo generativo de tamaño reducido, es propenso a inventar APIs, funciones o fragmentos de código plausibles pero incorrectos, especialmente en tareas fuera de su especialización.
+- Limitaciones de contexto e idioma: solo se declara soporte de inglés; la longitud de contexto no está documentada, lo que impide planificar su uso en conversaciones o ficheros de código extensos sin pruebas previas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; no obstante, conviene revisar la licencia del modelo base LindotAI/Lin-1.1-Epsilon por si añade condiciones adicionales.
+- Caveats para producción: la información sobre el modelo base es muy escasa (sin benchmarks, sin datos de entrenamiento, sin contexto documentado), por lo que no se recomienda su adopción en producción sin una evaluación propia. Además, este repositorio es una cuantización comunitaria no oficial; para usos críticos conviene partir del modelo original en safetensors y validar la calidad de la cuantización elegida.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Lin-1.1-Epsilon-GGUF
 - Modelo base: https://huggingface.co/LindotAI/Lin-1.1-Epsilon
+- Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Lin-1.1-Epsilon-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Lin-1.1-Epsilon-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica comparativa de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes del cuantizador: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

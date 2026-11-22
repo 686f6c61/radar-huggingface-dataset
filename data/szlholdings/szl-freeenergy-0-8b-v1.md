@@ -2,91 +2,91 @@
 
 ## Resumen
 
-SZL-FreeEnergy-0.8B-v1 es un ajuste fino de tipo QLoRA SFT sobre el modelo base SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, desarrollado por SZLHOLDINGS. El modelo, de 873 millones de parametros, se entrena sobre un corpus de 242 "puzles certificados" en los que cada ejemplo explicita el compromiso entre precision y complejidad: la solucion completa junto con el conjunto minimo de pistas necesarias y una anotacion de eficiencia. La motivacion declarada es conectar la cota PAC-Bayes de McAllester (riesgo empirico mas divergencia KL) con el principio de energia libre de Friston, de modo que el modelo aprenda que menos pistas necesarias equivale a mejor razonamiento.
+SZL-FreeEnergy-0.8B-v1 es un modelo de generacion de texto de 873 millones de parametros publicado por SZLHOLDINGS, un espacio de Hugging Face orientado a lo que el autor denomina "governed-AI estate": modelos, datasets y Spaces con resultados trazables y verificables mediante ficheros de recibo (receipts). El modelo se presenta como un artefacto entrenado dentro de esa factoria y deriva de un modelo base identificado como `SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3`, lo que sugiere un linaje de ajuste supervisado sobre una arquitectura de la familia Qwen 3.5.
 
-Se trata de un modelo de la familia Qwen3.5 (tag `qwen3_5`), con pipeline de generacion de texto y capacidad declarada de image-text-to-text, aunque la model card solo documenta el uso de generacion de texto en ingles. Forma parte de una ablacion en tres condiciones sobre el mismo modelo base: la wave w24 (corpus de razonamiento plano, ya publicada como SZL-Reasoning-0.8B-v1), la wave w25 (este modelo, con corpus anotado con energia libre) y la wave w26 (corpus de matematicas antiguas, en cola). La evaluacion con puzles certificados de puntuacion exacta sobre 48 puzles es el experimento que debe determinar si la anotacion de energia libre mejora el razonamiento frente al corpus plano.
+La etiqueta de arquitectura en el repositorio es `qwen3_5`, y los pesos se distribuyen en formato safetensors con un total de 873.438.784 parametros, lo que arroja un tamano de repositorio de aproximadamente 1,8 GB. La licencia es Apache 2.0 y el unico idioma declarado es el ingles. El modelo se publica bajo la libreria transformers y la tarea declarada es text-generation.
 
-El modelo es relevante como pieza de investigacion reproducible sobre eficiencia de razonamiento y como ejemplo de entrenamiento con anotaciones de complejidad por ejemplo, mas que como modelo de produccion generalista: su tamano reducido, su corpus de entrenamiento diminuto (242 ejemplos) y su estado de evaluacion (THREE_CONDITION_BASELINE, con resultados pendientes) lo sitúan en la categoria de prototipo experimental.
+La relevancia de esta ficha es doble: por un lado, documenta un modelo pequeno (sub-1B) potencialmente desplegable en hardware de consumo; por otro, es un caso representativo de una practica creciente de publicacion que prioriza la trazabilidad (etiquetas MEASURED/REPORTED/UNKNOWN) sobre las afirmaciones de rendimiento. La model card es deliberadamente parca: no incluye datos de entrenamiento, benchmarks ni detalles de arquitectura mas alla de la etiqueta, y remite a ficheros de recibo externos que no estan disponibles en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen3.5 (tag `qwen3_5`); detalles de atencion y capas no disponibles |
-| Parametros totales | 873.438.784 (dato real de safetensors) |
-| Parametros activos | no disponible (no se declara arquitectura MoE) |
+| Arquitectura | qwen3_5 (etiqueta del repositorio; detalles no disponibles) |
+| Parametros totales | 873.438.784 |
+| Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el entrenamiento uso QLoRA, pero no se documentan formatos de cuantizacion publicados) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, que a su vez deriva de la familia Qwen3.5. La model card no detalla la configuracion interna de capas, cabezas de atencion ni mecanismos de atencion; solo se declara la familia arquitectonica mediante el tag `qwen3_5`. El pipeline registrado es `text-generation`, con tag adicional `image-text-to-text` que sugiere una variante multimodal en la familia, aunque no se documenta su uso en este checkpoint.
+La unica informacion arquitectonica disponible es la etiqueta `qwen3_5` asociada al repositorio, que apunta a la familia Qwen 3.5. No se especifica en la model card el numero de capas, dimensiones ocultas, mecanismo de atencion, tipo de tokenizador ni si incorpora innovaciones como atencion lineal o decodificacion especulativa. Tampoco se indica si es un transformer denso o una variante MoE; el recuento de parametros (873 M) y la ausencia de parametros activos declarados sugieren un modelo denso, pero esto no se confirma en la informacion proporcionada.
 
-El entrenamiento se realizo mediante QLoRA SFT con Unsloth y TRL sobre una NVIDIA A6000, con posterior fusion y publicacion en 16 bits. El dataset es SZLHOLDINGS/free-energy-reasoning-sft-v1, compuesto por 242 ejemplos con una complejidad media de 15,1 pistas. Cada ejemplo empareja la solucion (precision) con el conjunto minimo de pistas (complejidad) y una anotacion explicita de eficiencia, de forma que el modelo aprende el compromiso entre ambas dimensiones. La innovacion tecnica declarada es precisamente esa anotacion por ejemplo del desglose precision/complejidad, alineada con la cota PAC-Bayes de McAllester y el principio de energia libre de Friston. No se documentan fases de RLHF o DPO, ni el numero total de tokens de entrenamiento.
+Respecto al entrenamiento, el modelo se presenta como un artefacto derivado de `SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3`, lo que indica al menos una fase de ajuste supervisado (SFT) sobre una base previa. No se dispone del numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras optimizaciones de preferencia. La model card declara explicitamente que cualquier afirmacion de entrenamiento o evaluacion "vive en sus ficheros de recibo", y que lo no registrado alli se marca como UNKNOWN; esos ficheros no forman parte de la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto en ingles y razonamiento sobre puzles con restricciones de pistas.
-- Razonamiento con compromiso precision-complejidad: el modelo ha sido entrenado para asociar soluciones con conjuntos minimos de pistas.
-- Generacion conversacional (tag `conversational`).
-- Soporte declarado de text-generation-inference y compatibilidad con endpoints.
-- Capacidad multimodal declarada a nivel de familia (`image-text-to-text`), sin documentacion de uso en este checkpoint.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado como capacidad especifica; la model card aplica una doctrina de "salida como propuesta no confiable" con controlador deterministico y aprobacion humana separados.
-- Capacidades multilingues: solo ingles declarado.
+- Generacion de texto en ingles: es la unica tarea declarada en el pipeline (`text-generation`).
+- Razonamiento y respuesta conversacional: no se documentan capacidades especificas mas alla de la generacion de texto generica.
+- Codigo y matematicas: no disponible; no se declaran ni se evaluan en la model card.
+- Tool calling / function calling: no disponible; no se menciona soporte nativo.
+- Soporte de agentes y razonamiento multi-paso: no disponible; el linaje del modelo base (`receiptagent`) sugiere un origen orientado a agentes, pero no se confirma ninguna capacidad concreta.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
+- Capacidades especiales (vision, audio, modo thinking): no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre eficiencia de razonamiento: el modelo sirve como condicion experimental en la ablacion de tres waves (w24, w25, w26) para medir si la anotacion de energia libre mejora el razonamiento frente a un corpus plano sobre el mismo base.
-- Generacion de soluciones a puzles con restricciones: dado un conjunto de pistas, el modelo propone soluciones y, por el entrenamiento recibido, tiende a asociar menos pistas con mejor razonamiento; util en entornos de evaluacion controlada.
-- Prototipado de pipelines de razonamiento con anotacion de complejidad: permite experimentar con la idea de que el coste de la solucion (numero de pistas) es una senal de calidad, en tareas de planificacion o resolucion de restricciones.
-- Evaluacion comparativa de metodos de ajuste: al compartir base con SZL-Reasoning-0.8B-v1, permite comparar QLoRA SFT con distintos corpus manteniendo constante la arquitectura y el modelo de partida.
-- Despliegue ligero en entornos con recursos limitados: con 873 millones de parametros y pesos en safetensors de 1,8 GB, cabe en GPUs de consumo para inferencia en precision reducida, lo que facilita experimentos locales.
-- Entrenamiento y docencia: ejemplo reproducible de QLoRA con Unsloth y TRL sobre A6000, con dataset y logs de wave publicados, util para formar a investigadores en ajuste fino eficiente.
-- Sistemas con human-in-the-loop: la doctrina de uso honesto del autor (salida como propuesta no confiable, controlador deterministico y aprobacion humana) encaja en flujos donde las acciones consecuentes requieren validacion externa.
+- Clasificacion y etiquetado de texto en ingles a escala: con 873 M de parametros, el modelo puede ejecutarse en lotes sobre CPU o GPU modestas para tareas de clasificacion, extraccion de entidades o enrutamiento de documentos, donde el coste por token es critico.
+- Prototipado rapido de asistentes conversacionales en ingles: su tamano permite iterar en local con `transformers` sin infraestructura dedicada, util para validar prompts y flujos antes de migrar a modelos mayores.
+- Generacion de resumenes de documentos cortos: adecuado para pipelines de preprocesado donde se necesita un primer resumen barato antes de un modelo de mayor calidad.
+- Filtrado y pre-anotacion en anotacion humana: el modelo puede generar borradores de etiquetas o respuestas que un revisor humano valida, reduciendo el coste del etiquetado manual.
+- Experimentacion academica sobre modelos sub-1B: su licencia Apache 2.0 y su publicacion en safetensors facilitan su uso como linea base en estudios de eficiencia, destilacion o ajuste fino.
+- Despliegue en entornos con restricciones de hardware: al ser un modelo pequeno, puede servir en dispositivos edge o en instancias CPU para tareas de generacion de baja latencia y baja concurrencia.
+- Base para ajuste fino especifico de dominio: al derivar de un modelo SFT y publicarse con licencia permisiva, puede reentrenarse para dominios concretos (legal, financiero, soporte) con requisitos de computo modestos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que la evaluacion con puzles certificados (puntuacion exacta, 48 puzles) sobre las tres condiciones esta pendiente de publicacion ("Receipt to follow") y califica el estado como THREE_CONDITION_BASELINE.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no se afirma ningun numero de benchmark mas alla de lo que una auditoria fechada haya medido, y que las cifras no registradas se marcan como UNKNOWN. No se dispone de resultados de MMLU, HumanEval, GSM8K ni de comparaciones con modelos similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de orden de magnitud, los pesos en 16 bits ocupan aproximadamente 1,8 GB; en cuantizacion de 8 bits o 4 bits el requisito seria inferior, aunque no se publican formatos GGUF ni cuantizaciones oficiales.
-- GPU recomendadas: el entrenamiento se realizo en una NVIDIA A6000; para inferencia, el tamano permite GPUs de consumo, pero no se documentan GPU minimas ni recomendadas.
-- Cabe en GPU de consumo: previsiblemente si, dado el tamano de 873 millones de parametros, aunque no hay confirmacion oficial ni lista de modelos probados.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag) y endpoints compatibles. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI mas alla del tag.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamano (873 M de parametros), en FP16 se necesitarian aproximadamente 1,7 GB solo para pesos, mas overhead de activaciones y cache KV; en cuantizacion de 8 bits, alrededor de 0,9 GB, y en 4 bits, alrededor de 0,5 GB. Estas cifras son estimaciones por tamano, no datos publicados por el autor.
+- GPU recomendadas: no disponibles. Por tamano, el modelo cabria en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 o superiores, asi como en GPUs de datacenter (A100, H100) para despliegues de alta concurrencia.
+- Cabe en consumer GPU: si, previsiblemente en cualquier GPU con 4 GB o mas de VRAM en FP16, aunque no se confirma oficialmente.
+- Opciones de despliegue: `transformers` es la libreria declarada. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, y no se publican pesos GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Estado |
-|---|---|---|---|---|---|
-| SZL-FreeEnergy-0.8B-v1 | 873 M | no disponible | Razonamiento con anotacion precision-complejidad (energia libre) | Apache 2.0 | Publicado, evaluacion pendiente |
-| SZL-Reasoning-0.8B-v1 | no disponible (mismo base, ~0,8 B) | no disponible | Razonamiento con corpus plano (wave w24) | no disponible | Publicado |
-| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3 | no disponible (base, ~0,8 B) | no disponible | SFT sobre Qwen3.5 orientado a recibos/agentes | no disponible | Modelo base |
+No se dispone de datos de rendimiento del modelo que permitan una comparacion rigurosa. La siguiente tabla recoge unicamente parametros estructurales verificables frente a alternativas conocidas de la misma categoria (modelos densos sub-1B con licencia permisiva); los campos de rendimiento se marcan como no disponibles porque no hay benchmarks publicados.
 
-La comparativa con alternativas externas de la misma categoria (modelos de ~0,8 B para razonamiento) no esta disponible en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Rendimiento |
+|---|---|---|---|---|---|
+| SZL-FreeEnergy-0.8B-v1 | 873 M | no disponible | Apache 2.0 | en | no disponible |
+| Qwen2.5-0.5B | 494 M | 32 768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | multilingue | benchmarks publicos por el autor |
+| Llama 3.2 1B | 1,24 B | 128 000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | multilingue | benchmarks publicos por el autor |
+| SmolLM2-1.7B | 1,7 B | 8 192 tokens (segun documentacion publica de Hugging Face) | Apache 2.0 | en (principalmente) | benchmarks publicos por el autor |
+
+Nota: los datos de contexto y licencia de los modelos comparados provienen de su documentacion publica general y no de la informacion proporcionada en esta busqueda; se incluyen solo como referencia estructural. No se dispone de una comparacion de rendimiento verificable entre SZL-FreeEnergy-0.8B-v1 y estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Corpus de entrenamiento muy reducido: 242 ejemplos, con complejidad media de 15,1 pistas; el riesgo de sobreajuste y de generalizacion limitada es alto.
-- Estado de evaluacion pendiente: no hay resultados publicados de la ablacion de 48 puzles; no debe asumirse mejora sobre el corpus plano hasta que se publique el "receipt".
-- Idioma: solo ingles declarado; no hay soporte documentado de castellano ni de otros idiomas.
-- Contexto: no se documenta la longitud de contexto, lo que impide planificar su uso en conversaciones largas o documentos extensos.
-- Capacidad multimodal: el tag `image-text-to-text` sugiere soporte en la familia, pero no se documenta su funcionamiento en este checkpoint; no debe asumirse.
-- Riesgo de alucinacion: inherente a un modelo de 0,8 B entrenado con 242 ejemplos; la propia model card advierte que la salida es una "propuesta no confiable".
-- Uso en produccion: la doctrina del autor exige un controlador deterministico separado y una frontera de aprobacion humana para acciones consecuentes; no es un modelo para decisiones autonomas.
-- Licencia Apache 2.0: permite uso comercial, pero no se documentan garantias, limitaciones de responsabilidad ni restricciones adicionales.
-- Sesgos: no se documentan analisis de sesgos en la informacion disponible.
+- Documentacion insuficiente: la model card no detalla arquitectura, datos de entrenamiento, contexto ni evaluacion; cualquier uso en produccion requiere validacion propia.
+- Sesgos conocidos: no documentados. Al no publicarse la composicion del dataset, no es posible evaluar sesgos de genero, raza, idioma o dominio.
+- Riesgo de alucinacion: no cuantificado. Como modelo generativo de 873 M de parametros, es esperable una tasa de alucinacion significativa en tareas de conocimiento factual, aunque no hay mediciones publicadas.
+- Limitacion de idioma: solo se declara ingles; el rendimiento en castellano u otros idiomas no esta garantizado ni evaluado.
+- Limitaciones de contexto: la longitud de contexto no esta disponible, lo que impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
+- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; no obstante, el modelo base del que deriva (`szl-receiptagent-qwen35-0.8b-sft-v3`) deberia verificarse por si impusiera condiciones adicionales, extremo no confirmado en la informacion disponible.
+- Trazabilidad dependiente de ficheros externos: las afirmaciones de entrenamiento y evaluacion remiten a ficheros de recibo alojados en el "estate mesh" del autor, no incluidos en el repositorio de la model card; sin acceso a ellos, las capacidades reales del modelo son en gran medida desconocidas.
+- Madurez: con 0 likes y 703 descargas en el momento de la consulta, el modelo tiene una adopcion limitada y no se han publicado reportes independientes de uso.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-FreeEnergy-0.8B-v1
-- Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
-- Dataset de entrenamiento: https://huggingface.co/datasets/SZLHOLDINGS/free-energy-reasoning-sft-v1
-- Modelo de la wave w24 (condicion de comparacion): https://huggingface.co/SZLHOLDINGS/SZL-Reasoning-0.8B-v1
-- Logs de waves: https://huggingface.co/SZLHOLDINGS/wave-logs
-- Perfil del autor: https://huggingface.co/SZLHOLDINGS
+- Repositorio en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-FreeEnergy-0.8B-v1
+- Modelo base declarado: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Organizacion en GitHub (referenciada en la model card): https://github.com/szl-holdings
+- Repositorio de la herramienta de generacion de cards (referenciado): https://github.com/szl-holdings/estate-cards

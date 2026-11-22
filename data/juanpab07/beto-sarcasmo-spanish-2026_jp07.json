@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 580,
+  "downloads_30d": 595,
   "trending_score": 0,
   "parameters": 109852418,
   "parameters_human": "109.9M",
@@ -44,5 +44,26 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "30+ Best Things to Do and See in Hanoi, Vietnam (2026)",
+      "url": "https://www.yourvietnamtravel.com/best-things-to-do-in-hanoi",
+      "snippet": "Mar 11, 2026 · Hanoi offers a fascinating mix of history, culture, and everyday local life. Visitors can wander through the lively Old …"
+    },
+    {
+      "title": "Hanoi Itinerary: Day-by-Day Guide for Every Trip Length (2026)",
+      "url": "https://www.hanoitourism.org/hanoi-itineraries/",
+      "snippet": "Apr 29, 2026 · Whether you have just 24 whirlwind hours or a leisurely full week, this hanoi trip planner breaks down exactly what to …"
+    },
+    {
+      "title": "Hanoi Travel Guide 2026: Best Tips & Attractions",
+      "url": "https://www.hanoitourism.org/hanoi-travel-guide/",
+      "snippet": "Apr 13, 2026 · Dive deeper into specific topics with our detailed companion guides on the best things to do in Hanoi, our …"
+    },
+    {
+      "title": "25 AMAZING Things to Do in Hanoi, Vietnam (2026 Guide)",
+      "url": "https://www.nomadasaurus.com/things-to-do-in-hanoi/",
+      "snippet": "Jan 4, 2026 · From visiting the Temple of Literature to sitting under the very same tree where Buddha got enlightened, this is our list …"
+    }
+  ]
 }

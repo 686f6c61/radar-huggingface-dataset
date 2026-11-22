@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Maximilian228/Geode-STT-whisper-turbo-uk",
+  "slug": "maximilian228-geode-stt-whisper-turbo-uk",
+  "author": "Maximilian228",
+  "url": "https://huggingface.co/Maximilian228/Geode-STT-whisper-turbo-uk",
+  "created_at": "2026-11-21T23:00:06.000Z",
+  "updated_at": "2026-11-21T23:01:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "uk",
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "geode",
+    "int8",
+    "automatic-speech-recognition",
+    "uk",
+    "en",
+    "base_model:ihnatov-yuri/whisper-large-v3-turbo-uk",
+    "base_model:quantized:ihnatov-yuri/whisper-large-v3-turbo-uk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1035693152,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": "ihnatov-yuri/whisper-large-v3-turbo-uk",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

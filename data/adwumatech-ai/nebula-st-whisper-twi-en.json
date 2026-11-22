@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "adwumatech-ai/nebula-st-whisper-twi-en",
+  "slug": "adwumatech-ai-nebula-st-whisper-twi-en",
+  "author": "adwumatech-ai",
+  "url": "https://huggingface.co/adwumatech-ai/nebula-st-whisper-twi-en",
+  "created_at": "2026-11-22T01:26:38.000Z",
+  "updated_at": "2026-11-22T01:29:02.000Z",
+  "license": "unspecified-training-data",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "tw",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "executorch",
+    "speech-translation",
+    "whisper",
+    "twi",
+    "automatic-speech-recognition",
+    "tw",
+    "en",
+    "base_model:openai/whisper-small",
+    "base_model:quantized:openai/whisper-small",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 3514675440,
+  "storage_human": "3.5 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

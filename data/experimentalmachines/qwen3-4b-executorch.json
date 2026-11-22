@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-      "url": "https://www.bilibili.com/",
-      "snippet": "哔哩哔哩（bilibili.com)是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到 …"
-    },
-    {
-      "title": "Experimental Machines",
-      "url": "https://experimentalmachines.org/",
-      "snippet": "Benchmarks of AI accelerators at datacenter, laptop and phone scale, with published logs ... One Qwen3.5-2B tool-calling model as a BF16 GGUF and 9 llama ..."
-    },
-    {
-      "title": "Bilibili - BW2026，次元新航线！",
-      "url": "https://bw.bilibili.com/",
-      "snippet": "次元集结，狂欢开启！ 神小牛我呀，要去BW和大家面基啦～ 📍 上海国家会展中心 8.1H馆 8A01 🗓️ 7 月 10 日 - 7 月 12 日 现场有什么好 …"
-    },
-    {
-      "title": "飞天闪客的个人空间-飞天闪客个人主页-哔哩哔哩视频",
-      "url": "https://space.bilibili.com/325864133",
-      "snippet": "哔哩哔哩飞天闪客的个人空间，提供飞天闪客分享的视频、音频、文章、动态、收藏等内容，关注飞天闪客账号，第一时间了解UP主 …"
-    },
-    {
-      "title": "搜索 - 哔哩哔哩_bilibili",
-      "url": "https://search.bilibili.com/video",
-      "snippet": "bilibili是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。"
-    }
-  ]
+  "sources": []
 }

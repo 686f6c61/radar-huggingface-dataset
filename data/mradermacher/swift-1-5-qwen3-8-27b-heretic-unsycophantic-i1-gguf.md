@@ -1,88 +1,85 @@
 # mradermacher/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF
 
 ## Resumen
+Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF es una cuantizacion en formato GGUF, generada por mradermacher, del modelo RacingAce66/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic. Se trata de un ajuste fino (post-training) sobre una base Qwen3 de 27.000 millones de parametros aproximadamente (26.895.998.464 parametros segun los pesos en safetensors), orientado a razonamiento eficiente en tokens (efficient-thinking, token-efficient) y a eliminar el comportamiento servil o adulador (no-sycophancy). El modelo ha sido ademas "abliterated" o decensurado (heretic, uncensored, decensored), lo que implica la supresion de mecanismos de rechazo.
 
-Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF es una cuantizacion en formato GGUF realizada por el usuario mradermacher a partir del modelo base Swift-1.5-Qwen3.8-27b-heretic-unsycophantic, publicado por RacingAce66. Se trata, por tanto, de un derivado de terceros y no de un modelo original: el repositorio contiene unicamente pesos cuantizados pensados para inferencia local con llama.cpp y herramientas compatibles, no el modelo en precision completa ni informacion sobre su entrenamiento.
+La relevancia de esta ficha reside en que combina tres tendencias actuales del ecosistema open source: la optimizacion del razonamiento para reducir el consumo de tokens, la modificacion de la alineacion para eliminar sesgos de complacencia, y la distribucion en cuantizaciones GGUF con matriz de importancia (imatrix) para su uso en hardware de consumo. El repositorio ocupa 300,3 GB e incluye un amplio abanico de cuantizaciones, desde IQ1_S de 7,2 GB hasta Q6_K.
 
-La nomenclatura del nombre sugiere una base Qwen3 de aproximadamente 27 mil millones de parametros, con ajustes orientados a reducir el comportamiento sycophantic (adulador) y con la etiqueta "heretic", habitual en variantes que buscan eliminar el alineamiento de rechazo. Sin embargo, el unico dato cuantitativo verificable en la informacion disponible es el recuento de parametros de los safetensors del repo (6.789.424), que no es coherente con un modelo de 27B y probablemente corresponde a un componente auxiliar o a un error de metadatos. No hay model card sustantiva, ni licencia, ni idiomas, ni benchmarks publicados.
-
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio no presenta descargas ni likes, fue creado y actualizado el mismo dia y no incluye documentacion tecnica. Cualquier evaluacion de calidad, seguridad o licencia queda pendiente de verificacion en el modelo base original.
+La licencia es swift-open-license-1.0, una licencia personalizada del autor original que debe revisarse antes de cualquier uso comercial. El modelo esta etiquetado como conversacional y compatible con endpoints, y la model card indica que es un modelo de vision (los ficheros mmproj, si existen, se alojan en el repositorio estatico). No se dispone de informacion sobre longitud de contexto ni sobre idiomas soportados mas alla del ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere base Qwen3; sin confirmar) |
-| Parametros totales | no disponible de forma fiable (el nombre indica 27b; los safetensors del repo declaran 6.789.424, dato no coherente) |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen3; detalles no disponibles) |
+| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_XXS, small-IQ4_NL, IQ4_XS, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones weighted/imatrix) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones ponderadas con imatrix) |
+| Idiomas soportados | en (ingles; no se detallan otros) |
+| Licencia | swift-open-license-1.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
+La informacion disponible no detalla la arquitectura interna mas alla de su filiacion a la familia Qwen3 (tag qwen3_8) y su naturaleza transformer. El modelo base RacingAce66/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic es un ajuste fino post-entrenamiento sobre una base Qwen3 de aproximadamente 27.000 millones de parametros. Las etiquetas indican que el entrenamiento se centro en razonamiento eficiente en tokens (efficient-thinking, token-efficient) y en la eliminacion de la adulacion (no-sycophancy), ademas de un proceso de abliteration o decensurado (heretic, uncensored, decensored, abliterated). No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon RLHF, DPO u otras tecnicas de alineacion.
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre apunta a una familia Qwen3 con aproximadamente 27B parametros, pero no se confirma si emplea atencion densa, mezcla de expertos (MoE) u otra variante, ni el tipo de atencion, la longitud de contexto nativa o el tokenizador.
-
-Respecto al entrenamiento, la model card del repositorio no incluye datos sobre volumen de tokens, composicion del corpus, fases de preentrenamiento, SFT, RLHF o DPO. Las etiquetas "heretic" y "unsycophantic" sugieren ajustes de alineamiento orientados a reducir rechazos y adulacion, pero no hay detalle tecnico sobre como se aplicaron. La unica informacion verificable es el proceso de cuantizacion: el autor indica que se usaron cuantizaciones weighted/imatrix (quantize_version 2, output_tensor_quantised 1, convert_type hf), lo que implica calculo de matrices de importancia para mejorar la precision de los pesos cuantizados.
+La innovacion principal de esta publicacion es la cuantizacion: mradermacher ha generado cuantizaciones ponderadas con matriz de importancia (imatrix) a partir del modelo base, empleando el formato i1 de llama.cpp. El repositorio incluye el fichero imatrix para que terceros puedan generar sus propias cuantizaciones. La model card menciona que se trata de un modelo de vision y que los ficheros mmproj, si los hay, se encuentran en el repositorio estatico de cuantizaciones, aunque no se confirma la existencia de dichos ficheros.
 
 ## Capacidades
-
-- Generacion de texto y razonamiento: capacidades inferidas del modelo base Qwen3, no verificadas en este repositorio.
-- Generacion de codigo y matematicas: presumiblemente soportadas por la base, sin datos concretos.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Modo thinking o razonamiento extendido: no disponible.
-- Vision, audio u otras modalidades: no disponible; el repositorio no incluye proyector multimodal (skip_mmproj vacio).
+- Generacion de texto conversacional multi-turno, segun la etiqueta conversational.
+- Razonamiento con modo de pensamiento eficiente en tokens (efficient-thinking, token-efficient, reasoning), orientado a reducir el consumo de tokens de cadena de pensamiento.
+- Capacidades de terminal y ejecucion de tareas de linea de comandos (tag terminal-bench).
+- Comportamiento no servil (no-sycophancy): el ajuste busca reducir la tendencia a complacer al usuario frente a respuestas incorrectas.
+- Modelo decensurado o abliterated: se han suprimido los mecanismos de rechazo, lo que permite generar contenido que otros modelos bloquearian.
+- Posible soporte de vision, segun la mencion de la model card a ficheros mmproj (no confirmado).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita, aunque las etiquetas de razonamiento y terminal-bench sugieren uso en tareas de varios pasos.
+- Capacidades multilingues: solo se declara ingles (en).
 
 ## Casos de uso
-
-- Inferencia local en estaciones de trabajo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de ~27B en GPUs de consumo con 24 GB de VRAM, util para prototipado sin conexion.
-- Experimentacion con alineamiento alternativo: el ajuste "unsycophantic" y "heretic" puede interesar a investigadores que estudian como varia el comportamiento del modelo al modificar el alineamiento, comparando respuestas frente a la version original.
-- Evaluacion de cuantizaciones: la disponibilidad de 25 variantes (desde IQ1_S hasta Q6_K) permite medir la degradacion de calidad segun el nivel de compresion en tareas concretas.
-- Despliegue en entornos con recursos limitados: las variantes Q2_K e IQ2 permiten ejecucion en CPU o GPUs con poca memoria, a costa de perdida de fidelidad.
-- Pruebas de pipelines con llama.cpp: integracion en scripts de generacion por lotes para evaluar latencia y throughput en hardware modesto.
-- Analisis de robustez y seguridad: util para auditar como responde un modelo con rechazos reducidos ante prompts sensibles, siempre en un entorno controlado.
+- Razonamiento eficiente en produccion: el ajuste token-efficient reduce el numero de tokens de pensamiento, lo que abarata el coste por consulta en pipelines de inferencia con presupuesto ajustado, especialmente con las cuantizaciones Q4_K_M (16,6 GB) o IQ4_XS (15,2 GB).
+- Automatizacion de terminal y tareas de sistema: la etiqueta terminal-bench sugiere su uso como agente que interpreta salidas de shell, genera comandos y resuelve tareas de administracion en entornos controlados.
+- Analisis de documentos sin restricciones de contenido: al ser un modelo decensurado, resulta adecuado para investigacion sobre sesgos, analisis de contenido sensible o generacion de texto en dominios donde otros modelos aplican rechazos.
+- Evaluacion de alineacion y Robustez: util en investigacion para estudiar el efecto de la abliteration y la eliminacion de la adulacion sobre la calidad de las respuestas y la calibracion.
+- Despliegue local en hardware de consumo: las cuantizaciones IQ2_M (10,1 GB) o IQ3_M (12,7 GB) permiten ejecutar un modelo de 27.000 millones de parametros en GPUs de 12-16 GB de VRAM con llama.cpp u Ollama.
+- Generacion de codigo y scripts: con la cuantizacion Q5_K_M (18,9 GB aproximadamente) se puede integrar en asistentes de programacion locales, aunque no se han publicado benchmarks de HumanEval que lo confirmen.
+- Prototipado de asistentes conversacionales en ingles: su naturaleza conversacional y su ventana de contexto (no documentada) permiten construir chatbots multi-turno para pruebas internas.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente menciona la etiqueta terminal-bench como area de entrenamiento, sin cifras asociadas.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia (modelo de ~27B, estimacion orientativa): Q6_K ~22-24 GB; Q5_K_M ~19-21 GB; Q4_K_M ~16-18 GB; Q3_K_M ~13-14 GB; Q2_K ~10-11 GB; IQ1_S ~6-7 GB. Estas cifras son estimaciones basadas en el tamano nominal y no en mediciones del repositorio.
-- GPU recomendadas: A100 40/80 GB o H100 para las cuantizaciones altas y contexto largo; RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090/4080 (16-24 GB) para Q4 y Q3.
-- Cabe en GPU de consumo: si, en RTX 4090, 3090, 4080 y 4070 Ti Super con cuantizaciones Q4 o inferiores; las variantes Q2 e IQ2 pueden ejecutarse en GPUs de 8-12 GB o en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y servidores compatibles con GGUF (llama-server). vLLM y TGI no soportan GGUF de forma nativa sin conversion.
-- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion elegida.
+- VRAM estimada segun cuantizacion: IQ1_S ~7,2 GB; IQ2_M ~10,1 GB; IQ3_M ~12,7 GB; IQ4_XS ~15,2 GB; Q4_K_M ~16,6 GB; Q5_K_M ~18,9 GB; Q6_K ~22 GB (tamanos de fichero; la VRAM necesaria es ligeramente superior por el contexto y los buffers de inferencia).
+- GPU recomendadas: para las cuantizaciones mayores (Q5_K_M, Q6_K), una RTX 4090 (24 GB) o A100/H100; para IQ4_XS y Q4_K_M, una RTX 4080/4090 o una RTX 3090 (24 GB) con margen; para IQ2/IQ3, GPUs de 12-16 GB como RTX 4070 Ti o RTX 4060 Ti de 16 GB.
+- Cabe en GPU de consumo: si, en las cuantizaciones IQ1 a Q4_K_M con GPUs de 8-16 GB, y en Q5/Q6 con GPUs de 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base puede servirse con vLLM o TGI si se dispone de los pesos en safetensors.
+- Latencia y throughput: no disponibles; dependen de la cuantizacion, la GPU y la longitud de contexto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF | ~27B (segun nombre; sin confirmar) | no disponible | no disponible | GGUF | Cuantizacion de terceros, sin benchmarks ni model card sustantiva |
-| Modelo base Swift-1.5-Qwen3.8-27b-heretic-unsycophantic | ~27B (segun nombre) | no disponible | no disponible | safetensors (presumible) | Fuente original de esta cuantizacion |
-| Familia Qwen3 original | 0.6B a 235B (varias tallas) | hasta 128K en algunas variantes | Apache 2.0 en la mayoria de variantes | safetensors, GGUF | Referencia de arquitectura y licencia; no se confirma que este derivado herede la licencia |
-| Otras cuantizaciones GGUF de Qwen3 27B/32B | ~27-32B | variable | segun autor | GGUF | Alternativas comparables en tamano y formato, sin datos de rendimiento en esta ficha |
+| Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF | ~26,9 mil millones | no disponible | swift-open-license-1.0 | GGUF | Cuantizacion imatrix de un ajuste heretic/no-sycophancy |
+| Qwen3-32B (oficial) | 32,8 mil millones | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF | Base oficial, alineado y con benchmarks publicados |
+| Gemma-3-27B-it | 27 mil millones | 128.000 tokens | Gemma Terms of Use | safetensors, GGUF | Modelo multimodal con contexto largo |
+| Mistral-Small-3.1-24B | 24 mil millones | 128.000 tokens | Apache 2.0 | safetensors, GGUF | Alternativa europea con licencia permisiva |
 
-No se dispone de informacion suficiente para una comparativa cuantitativa de rendimiento.
+La comparativa se limita a parametros y licencia, ya que no se dispone de datos de rendimiento del modelo evaluado. Frente a las alternativas, la principal diferencia es su naturaleza decensurada y su licencia personalizada, que restringe la adopcion comercial en comparacion con Apache 2.0.
 
 ## Limitaciones y advertencias
-
-- Ausencia de model card sustantiva: no hay informacion sobre entrenamiento, datos, evaluaciones ni uso previsto.
-- Licencia no declarada: no se puede confirmar el uso comercial; debe verificarse en el modelo base original antes de cualquier despliegue en produccion.
-- Incoherencia en metadatos: el recuento de parametros de los safetensors (6.789.424) no concuerda con el nombre (27b), lo que impide fiarse de los datos tecnicos del repo.
-- Riesgo de alucinacion: inherente a los modelos generativos; sin benchmarks ni evaluaciones publicadas no es posible cuantificarlo.
-- Sesgos conocidos: no documentados; el ajuste "heretic" y "unsycophantic" puede alterar el comportamiento en temas sensibles y reducir los rechazos, con implicaciones de seguridad.
-- Idiomas: no declarados; el soporte multilingue es incierto.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por la comunidad.
-- Cuantizaciones muy agresivas (IQ1, IQ2) pueden degradar notablemente la calidad; no se han publicado evaluaciones de degradacion.
-- Fecha de creacion futura (2026-11-16): metadato anomalo que sugiere posibles errores en la publicacion.
+- Modelo decensurado (abliterated): la supresion de rechazos implica que puede generar contenido danino, ilegal o sexualmente explicito; no es apto para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad; el ajuste no-sycophancy puede reducir la complacencia, pero no garantiza la correccion factual.
+- Sesgos conocidos: no documentados; al derivar de Qwen3 y de un ajuste fino no supervisado, hereda los sesgos de la base y puede amplificarlos por la falta de alineacion.
+- Idioma: solo se declara ingles; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- Contexto: no se especifica la longitud de contexto, lo que impide planificar su uso en tareas de contexto largo.
+- Licencia: swift-open-license-1.0 es una licencia personalizada; es imprescindible revisar sus terminos antes de cualquier uso comercial o redistribucion.
+- Vision: la model card menciona que es un modelo de vision, pero no se confirma la disponibilidad de ficheros mmproj en este repositorio; verificar antes de asumir capacidades multimodales.
+- Produccion: al ser una cuantizacion de un ajuste fino no oficial, no cuenta con garantias de soporte ni con benchmarks que avalen su calidad frente a la base Qwen3.
 
 ## Enlaces
-
-- Repositorio GGUF: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF
-- Modelo base citado: https://huggingface.co/RacingAce66/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF
+- Modelo base: https://huggingface.co/RacingAce66/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF
+- Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

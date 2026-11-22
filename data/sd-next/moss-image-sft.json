@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 601,
+  "downloads_30d": 590,
   "trending_score": 0,
   "parameters": 5082308624,
   "parameters_human": "5.08B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Carte SD — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Carte_SD",
-      "snippet": "Une carte SD (« SD » étant le sigle de l'expression anglaise « Secure Digital ») est une carte mémoire de stockage de données …"
-    },
-    {
-      "title": "SD card - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/SD_card",
-      "snippet": "SD card ... The SD card is a proprietary, non-volatile, flash memory card format developed by the SD Association (SDA). They come …"
-    },
-    {
-      "title": "Carte SD - Votre Carte SD Retrait 30min* | Boulanger",
-      "url": "https://www.boulanger.com/c/carte-memoire-lecteur/_usage~carte20sd?msockid=2e055103334b6d55311246f7322b6c3f",
-      "snippet": "Choisissez votre carte SD parmi les modèles que nous avons sélectionnés auprès des meilleurs fabricants (Lexar, SanDisk, Sony, …"
-    },
-    {
-      "title": "Carte Micro SD",
-      "url": "https://www.boulanger.com/c/carte-memoire-lecteur/_usage~carte20micro20sd?msockid=2e055103334b6d55311246f7322b6c3f",
-      "snippet": "Choisissez votre carte micro SD parmi les meilleures marques du marché (Samsung, Lexar, SanDisk...) pour bénéficier d’un plus …"
-    },
-    {
-      "title": "Meilleure carte SD 2026 (12 produits comparés)",
-      "url": "https://meilleurtest.fr/comparatif-carte-sd/",
-      "snippet": "Sep 29, 2026 · La carte SD reste un support de stockage incontournable pour les appareils photo, caméras et consoles portables. …"
-    }
-  ]
+  "sources": []
 }

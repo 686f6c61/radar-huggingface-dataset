@@ -2,112 +2,104 @@
 
 ## Resumen
 
-OneJev-9B-GGUF es la version cuantizada en formato GGUF del modelo OneJev-9B, publicado por el usuario mradermacher, un perfil conocido en Hugging Face por generar cuantizaciones estaticas de modelos de terceros para su uso con llama.cpp y herramientas derivadas. El repositorio no contiene pesos originales ni informacion sobre el entrenamiento: es exclusivamente una conversion del modelo base OmniJev/OneJev-9B a distintos niveles de compresion.
+OneJev-9B es un modelo multimodal de 8.953.803.264 parámetros (aproximadamente 9 mil millones) desarrollado por OmniJev, orientado a tareas de decisión calibrada, interacción con interfaces gráficas (GUI-agent) y comprensión de vídeo. Esta ficha documenta la versión cuantizada en formato GGUF publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados.
 
-El dato objetivo disponible es el numero de parametros (8.953.803.264, es decir, aproximadamente 8,95 mil millones), lo que situa al modelo en la categoria de 9B, un rango muy habitual para despliegue en GPU de consumo con cuantizaciones de 4 y 5 bits. El repositorio ocupa 77,7 GB en total porque agrupa doce variantes de cuantizacion, desde Q2_K hasta F16.
+El modelo se presenta con las etiquetas `decision-model`, `calibration`, `multimodal`, `gui-agent` y `video`, lo que sugiere un enfoque en agentes que deben tomar decisiones con estimación de confianza y en entornos visuales interactivos. Está entrenado sobre el dataset OmniJev/OneJev-Data y su licencia es Apache 2.0, lo que facilita su uso comercial.
 
-La relevancia de esta publicacion es practica: permite ejecutar el modelo OneJev-9B en hardware local sin necesidad de disponer de los pesos en precision completa. Sin embargo, la model card es extremadamente escueta y no aporta informacion sobre arquitectura, licencia, idiomas, datos de entrenamiento ni resultados de benchmarks, por lo que cualquier evaluacion seria requiere consultar el repositorio del modelo base.
+La relevancia de esta ficha radica en que el repositorio original (OmniJev/OneJev-9B) solo distribuye pesos en formato transformers, mientras que esta versión GGUF ofrece 13 cuantizaciones estáticas (desde Q2_K hasta f16) más dos ficheros mmproj para el componente multimodal, lo que reduce la barrera de entrada para pruebas y despliegues en local. No obstante, la información pública disponible es escasa: no se detallan arquitectura, contexto, benchmarks ni composición del dataset.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 8.953.803.264 (aproximadamente 8,95B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Parametros totales | 8.953.803.264 (≈9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo original se convirtio con convert_type: hf |
-| Tamano del repositorio | 77,7 GB (conjunto de todas las cuantizaciones) |
-| Modelo base | OmniJev/OneJev-9B |
-| Version de cuantizacion | quantize_version 2, output_tensor_quantised 1 |
-| Fecha de publicacion | 27 de septiembre de 2026 (segun metadatos de Hugging Face) |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés, según model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones) y safetensors (modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. La model card del repositorio GGUF unicamente documenta el proceso de conversion y cuantizacion (version de cuantizacion 2, conversion desde formato Hugging Face con cuantizacion de tensores de salida), sin describir el tipo de red, el mecanismo de atencion ni si se trata de un transformer denso, un modelo de mezcla de expertos o una arquitectura hibrida.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Los tags indican que es multimodal (con soporte de vídeo e imágenes, dado el fichero mmproj), pero no se especifica si se trata de un transformer denso, un modelo con proyección visual tipo LLaVA, ni el mecanismo de fusión multimodal empleado.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El unico indicio funcional es la etiqueta `conversational` asociada al repositorio, que sugiere un ajuste orientado a dialogos multi-turno, pero se trata de una etiqueta de indexacion y no de una descripcion tecnica verificable. Cualquier afirmacion adicional sobre innovaciones arquitectonicas seria especulacion.
+Respecto al entrenamiento, la model card únicamente referencia el dataset OmniJev/OneJev-Data y menciona conceptos como `decision-model` y `calibration`, lo que apunta a un ajuste orientado a que el modelo exprese decisiones con algún tipo de calibración de confianza, pero no se detalla el número de tokens, la composición del dataset, ni si hubo RLHF, DPO u otras etapas de alineamiento. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio apunta a un uso previsto como asistente de dialogo, aunque no se detallan las capacidades concretas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el formato GGUF generado puede servirse a traves de infraestructura de inferencia compatible con Hugging Face Endpoints.
-- Ejecucion local con llama.cpp: al estar en formato GGUF, el modelo es desplegable en el ecosistema llama.cpp, Ollama y derivados.
-- Razonamiento, codigo, matematicas, vision, audio: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara ninguna lista de idiomas).
-- Modo de razonamiento explicito (thinking mode): no disponible.
+- Generación de texto conversacional en inglés (tag `conversational`).
+- Procesamiento multimodal: la presencia de ficheros `mmproj` confirma soporte de entrada visual (imágenes y, por las etiquetas, vídeo).
+- Agente de interfaz gráfica (GUI-agent): orientado a interpretar y actuar sobre pantallas o entornos visuales.
+- Modelo de decisión con calibración: pensado para emitir decisiones acompañadas de estimaciones de confianza.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Despliegue de asistente conversacional en local: gracias a las cuantizaciones de 4 bits (Q4_K_M, Q4_K_S, IQ4_XS), el modelo puede ejecutarse en una GPU de consumo con 8-12 GB de VRAM para prototipos de chatbot sin enviar datos a servicios externos.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye doce variantes, lo que permite medir la degradacion de calidad entre Q2_K, Q4_K_M, Q6_K y F16 sobre el mismo prompt set, una tarea util para decidir que nivel de compresion usar en produccion.
-- Integracion en pipelines con llama.cpp: al ser GGUF nativo, se puede incrustar en aplicaciones C++ o Python mediante llama-cpp-python sin capa de conversion adicional.
-- Experimentacion academica con modelos de 9B: sirve como sujeto de pruebas para estudiar el comportamiento de modelos de ese rango de parametros bajo restricciones de memoria.
-- Servicio de inferencia compatible con endpoints: la etiqueta `endpoints_compatible` permite desplegarlo en infraestructura gestionada que acepte GGUF, util para pruebas de carga.
-- Uso en entornos sin conectividad: al poder ejecutarse en una estacion de trabajo aislada, encaja en escenarios con requisitos de confidencialidad donde no se permite llamar a APIs externas.
-- Base para fine-tuning ligero posterior: aunque el repositorio solo distribuye pesos cuantizados, sirve como referencia de comportamiento para comparar contra adaptaciones propias.
-
-En todos estos casos, la ausencia de licencia declarada y de especificaciones tecnicas obliga a verificar previamente el repositorio del modelo base antes de cualquier uso en produccion.
+- Automatización de tareas de escritorio: el modelo, al estar etiquetado como GUI-agent y aceptar entrada visual, puede emplearse para interpretar capturas de pantalla y decidir la siguiente acción (clic, escritura, navegación) en flujos de automatización de interfaz.
+- Agentes con estimación de confianza: gracias a su orientación a calibración, encaja en pipelines donde el modelo debe indicar su grado de certeza antes de ejecutar una acción, permitiendo derivar a revisión humana los casos de baja confianza.
+- Análisis de vídeo asistido: la etiqueta `video` y el proyector multimodal permiten su uso en tareas de descripción o extracción de información a partir de secuencias de vídeo, aunque sin datos públicos de rendimiento.
+- Asistente conversacional en inglés: con las cuantizaciones Q4_K_M o Q5_K_M puede desplegarse como chatbot local en inglés para prototipos y pruebas internas.
+- Evaluación de modelos de decisión en investigación: al ser Apache 2.0 y estar disponible en GGUF, sirve como base para experimentos académicos sobre calibración y agentes visuales sin depender de infraestructura de GPU de datacenter.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q2_K (3,9 GB) y Q3_K_S (4,4 GB) permiten ejecutar el modelo en equipos con poca VRAM o incluso en CPU, útil para demos y validación funcional.
+- Integración en pipelines de CI/CD para pruebas de agentes GUI: la versión Q4_K_S (5,5 GB), marcada como "fast, recommended", facilita ejecutar pruebas automatizadas de agentes visuales en máquinas de integración.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, MT-Bench u otros), y la busqueda web asociada no ha devuelto resultados relacionados con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones derivadas del numero de parametros (8,95B) y del tamano tipico de cada nivel de cuantizacion en formato GGUF; no proceden de mediciones publicadas por el autor.
-
-- VRAM estimada para inferencia (solo pesos):
-  - Q2_K: aproximadamente 3,5-4,0 GB.
-  - Q3_K_S / Q3_K_M / Q3_K_L: aproximadamente 3,9-4,8 GB.
-  - IQ4_XS: aproximadamente 4,9-5,1 GB.
-  - Q4_K_S / Q4_K_M: aproximadamente 5,2-5,6 GB.
-  - Q5_K_S / Q5_K_M: aproximadamente 6,1-6,5 GB.
-  - Q6_K: aproximadamente 7,3-7,5 GB.
-  - Q8_0: aproximadamente 9,5 GB.
-  - F16: aproximadamente 18 GB.
-- A esas cifras hay que sumar la memoria de la cache KV, que depende de la longitud de contexto (no disponible) y del numero de capas del modelo. Para contextos largos, el consumo adicional puede ser de varios GB.
-- GPU recomendadas: para cuantizaciones de 4 bits con contexto moderado basta una NVIDIA RTX 3060 de 12 GB, RTX 4070, RTX 4080 o RTX 4090; para Q8_0 o F16 se recomienda una RTX 4090 de 24 GB, A100 de 40/80 GB, H100 o L40S, especialmente si se necesita contexto amplio o lotes grandes.
-- Cabe en GPU de consumo: si, en las cuantizaciones de 2 a 5 bits cabe en tarjetas de 8-12 GB, siempre que la longitud de contexto se mantenga moderada. La variante F16 no cabe en tarjetas de menos de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier servidor que acepte GGUF. Para vLLM o TGI habria que comprobar la compatibilidad con el modelo base y, en su caso, usar los pesos en safetensors del repositorio original.
-- Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo para este repositorio.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~3,9 GB
+  - Q3_K_S: ~4,4 GB
+  - Q3_K_M: ~4,7 GB
+  - Q3_K_L: ~5,0 GB
+  - IQ4_XS: ~5,3 GB
+  - Q4_K_S: ~5,5 GB
+  - Q4_K_M: ~5,7 GB
+  - Q5_K_S: ~6,4 GB
+  - Q5_K_M: ~6,6 GB
+  - Q6_K: ~7,5 GB
+  - Q8_0: ~9,6 GB
+  - f16: ~18,0 GB
+  - Proyector multimodal: mmproj-Q8_0 ~0,7 GB; mmproj-f16 ~1,0 GB
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, las cuantizaciones Q4 y Q5 caben en GPUs de consumo con 8-12 GB de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070). La versión f16 requiere GPUs de 24 GB o más (RTX 3090/4090, A100, H100).
+- Cabe en GPU de consumo: sí, en cuantizaciones Q2 a Q6; Q8_0 y f16 requieren GPUs de gama alta o profesionales.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, KoboldCpp, text-generation-webui). El formato GGUF no es compatible directamente con vLLM o TGI sin conversión.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La comparacion es limitada porque se desconoce la arquitectura, el contexto y la licencia del modelo base. Se incluyen como referencia tres modelos densos de tamano comparable con cuantizaciones GGUF ampliamente disponibles, usando datos publicos de sus respectivos autores.
+No se dispone de datos de rendimiento del modelo ni de información suficiente para identificar alternativas directamente comparables en la misma categoría (multimodal + GUI-agent + calibración). Se indica "no disponible".
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad GGUF |
-|---|---|---|---|---|
-| OneJev-9B (este repositorio) | 8,95B | no disponible | no disponible | Si, 12 cuantizaciones estaticas |
-| Llama 3.1 8B | 8,03B | 128.000 tokens | Llama 3.1 Community License | Si, amplio ecosistema |
-| Gemma 2 9B | 8,9B | 8.192 tokens | Gemma Terms of Use | Si, amplio ecosistema |
-| Qwen2.5 7B | 7,6B | 128.000 tokens | Apache 2.0 | Si, amplio ecosistema |
-
-No se dispone de datos de rendimiento comparado (benchmarks) para OneJev-9B, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| OneJev-9B (esta ficha) | ≈9B | no disponible | Apache 2.0 | GGUF, safetensors | Multimodal, GUI-agent, calibración |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | Sin datos públicos para comparar |
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: el repositorio no declara licencia, lo que impide determinar si el uso comercial esta permitido. Es imprescindible consultar el repositorio del modelo base (OmniJev/OneJev-9B) antes de cualquier despliegue productivo.
-- Sesgos conocidos: no disponible. Al no documentarse el dataset de entrenamiento ni el proceso de alineacion, no es posible evaluar sesgos de genero, raza, idioma o ideologia.
-- Riesgo de alucinacion: no cuantificado. No hay evaluaciones publicadas de fidelidad factual ni de tendencia a inventar informacion.
-- Limitaciones de contexto: se desconoce la ventana de contexto del modelo base, lo que impide planificar aplicaciones que dependan de documentos largos o conversaciones extensas.
-- Limitaciones de idioma: no se declara ninguna lista de idiomas soportados. No hay garantia de un rendimiento adecuado en castellano.
-- Degradacion por cuantizacion: las variantes Q2_K y Q3_K_S, con menos de 4 bits por peso, suelen provocar perdidas de calidad apreciables en modelos de este tamano; se recomienda validar con un conjunto de evaluacion propio antes de usarlas en produccion.
-- Metadatos poco fiables: la fecha de creacion registrada (27 de septiembre de 2026) y el hecho de que el repositorio tenga 0 descargas y 0 likes apuntan a una publicacion reciente sin validacion por parte de la comunidad.
-- Trazabilidad: el repositorio es una cuantizacion de terceros, no una publicacion del autor original del modelo. Cualquier problema de comportamiento debe contrastarse con el modelo base.
-- Resultados de busqueda no concluyentes: las consultas web realizadas no han devuelto informacion tecnica sobre el modelo, solo contenidos no relacionados.
+- Información pública muy escasa: no se documentan arquitectura, contexto, dataset de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad frente a alternativas.
+- Idioma: la model card solo declara inglés (`en`); el rendimiento en castellano no está garantizado.
+- Riesgo de alucinación: inherente a los modelos generativos; sin benchmarks publicados no puede cuantificarse.
+- Sesgos conocidos: no documentados en la información disponible.
+- Limitaciones de contexto: desconocidas; no se especifica la ventana máxima.
+- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original (OmniJev/OneJev-9B) y de los datos de entrenamiento.
+- Cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad, especialmente en tareas de decisión y calibración, donde la precisión numérica es crítica.
+- El repositorio GGUF no incluye cuantizaciones ponderadas/imatrix según el autor, lo que puede afectar a la calidad relativa de las cuantizaciones pequeñas.
+- Compatibilidad: al ser GGUF, no funciona directamente con vLLM o TGI; requiere llama.cpp u otro runtime compatible.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/OneJev-9B-GGUF
 - Modelo base: https://huggingface.co/OmniJev/OneJev-9B
-- Perfil del cuantizador: https://huggingface.co/mradermacher
-- Paper, blog o demo oficial: no disponible
-- Repositorio de codigo: no disponible
-- Resultados de benchmarks: no disponible
+- Dataset: https://huggingface.co/datasets/OmniJev/OneJev-Data
+- Página de descargas del autor: https://hf.tst.eu/model#OneJev-9B-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

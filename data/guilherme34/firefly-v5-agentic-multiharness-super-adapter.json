@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "Guilherme34/Firefly-v5-agentic-multiharness-Super-Adapter",
+  "slug": "guilherme34-firefly-v5-agentic-multiharness-super-adapter",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/Firefly-v5-agentic-multiharness-Super-Adapter",
+  "created_at": "2026-11-21T20:34:32.000Z",
+  "updated_at": "2026-11-21T23:53:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "easy-agenticify",
+    "multi-harness-rl",
+    "agentic-rl",
+    "openenv",
+    "harbor",
+    "trl",
+    "grpo",
+    "tool-calling",
+    "code",
+    "super-adapter",
+    "unsloth",
+    "en",
+    "dataset:FineEnvs/SmolDataEnvs-harbor-train",
+    "dataset:FineEnvs/SmolDataEnvs-multiharness-sft",
+    "base_model:Guilherme34/Firefly-v5",
+    "base_model:adapter:Guilherme34/Firefly-v5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225496274,
+  "storage_human": "225 MB",
+  "context_length": null,
+  "base_model": "Guilherme34/Firefly-v5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": true,
+  "removed_at": "2026-11-22T03:12:35.918Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Michelle Eggleston - Unemployed supervisor at Not being able ... - LinkedIn",
+      "url": "https://uk.linkedin.com/in/michelle-eggleston-618a38393",
+      "snippet": "View Michelle Eggleston’s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

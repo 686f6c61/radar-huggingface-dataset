@@ -2,86 +2,86 @@
 
 ## Resumen
 
-Qwen3.5-4B-3D-Coder-Q4_0-NPU es una republicación no oficial en formato GGUF Q4_0 del modelo ccore/Qwen3.5-4B-3D-Coder, un ajuste fino independiente de Qwen/Qwen3.5-4B especializado en generar código 3D para Three.js. El repack lo publica el usuario Aminadaven con el objetivo explícito de que el modelo pueda ejecutarse sobre la NPU Hexagon de los SoC Qualcomm Snapdragon mediante el runtime GenieX para llama.cpp, ya que Q4_0 es la única precisión que dicho runtime puede colocar en la NPU según el autor.
+Qwen3.5-4B-3D-Coder-Q4_0-NPU es una cuantización GGUF en Q4_0 de un fine-tune independiente del modelo Qwen3.5-4B, especializado en la generación de código 3D para Three.js. El modelo base (ccore/Qwen3.5-4B-3D-Coder) parte de los pesos de Qwen/Qwen3.5-4B y ha sido ajustado por el autor ccore para producir código JavaScript de escenas tridimensionales. Esta versión concreta la publica el usuario Aminadaven como repack privado, no oficial y sin probar en dispositivo.
 
-El modelo cuenta con 4.205.751.296 parámetros totales (aproximadamente 4,2 mil millones) y un repositorio de 2,8 GB. La cuantización se realizó con llama.cpp a partir del GGUF Q8_0 del autor original, aplicando Q4_0 a las capas y manteniendo el token embedding y la capa de salida en Q8_0. La licencia declarada es Apache-2.0, heredada del modelo base.
+La particularidad de esta ficha es el destino de despliegue: el archivo está pensado para ejecutarse en la NPU Hexagon de los SoC Qualcomm Snapdragon mediante el runtime GenieX de llama.cpp. Q4_0 es la única precisión que dicho runtime puede colocar en la NPU Hexagon; las variantes Q4_K_M y Q8_0 del autor original solo funcionan en GPU o CPU. El repositorio ocupa 4,3 GB y contiene 4.205.751.296 parámetros totales según los safetensors del modelo base.
 
-La relevancia de esta ficha es acotada: se trata de un repack privado, no probado en dispositivo y sin métricas publicadas. Resulta útil únicamente como pieza de evaluación para despliegues en NPU Hexagon, no como referencia de rendimiento del modelo original.
+El modelo resuelve un nicho muy concreto: llevar un generador de código 3D a dispositivos móviles y de borde con aceleración NPU, sin depender de la nube. Su relevancia actual radica en que demuestra la viabilidad de ejecutar modelos de 4B en hardware Snapdragon con cuantización de 4 bits, aunque la ausencia de pruebas en dispositivo y de benchmarks publicados limita su adopción en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-4B; detalles no disponibles) |
-| Parámetros totales | 4.205.751.296 (~4,2 B) |
-| Parámetros activos | no disponible (no es MoE según los datos disponibles) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3.5-4B); detalles exactos no disponibles |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q4_0 (capas) + Q8_0 (token embedding y output) |
+| Tipos de cuantizacion | Q4_0 (capas lineales); token embedding y output en Q8_0 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo de 4,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es ccore/Qwen3.5-4B-3D-Coder, un ajuste fino independiente de Qwen/Qwen3.5-4B orientado a la generación de código Three.js. No se dispone de información sobre la composición del dataset de ajuste fino, el número de tokens de entrenamiento ni si se aplicaron técnicas de RLHF o DPO. La arquitectura subyacente corresponde a la familia Qwen3.5, de tipo transformer, pero la información proporcionada no detalla innovaciones técnicas específicas (atención lineal, decodificación especulativa u otras).
+El modelo base es un fine-tune independiente de Qwen/Qwen3.5-4B, un transformer decoder-only de aproximadamente 4.200 millones de parámetros. El ajuste realizado por ccore está orientado a la generación de código Three.js para escenas 3D. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO en el fine-tune.
 
-El proceso de cuantización sí está documentado: se partió del GGUF Q8_0 del autor original y se recuantizó con llama.cpp a Q4_0 en las capas, preservando el token embedding y la capa de salida en Q8_0. Esta elección de precisión mixta responde a la restricción del runtime GenieX, que solo puede asignar Q4_0 a la NPU Hexagon; los ficheros Q4_K_M y Q8_0 del autor original quedan limitados a ejecución en GPU/CPU.
+Esta versión concreta se obtiene recuantizando el GGUF Q8_0 del autor original mediante llama.cpp: las capas se convierten a Q4_0, mientras que el token embedding y la capa de salida se mantienen en Q8_0 para preservar calidad. La elección de Q4_0 no es arbitraria: es la precisión que el runtime GenieX de llama.cpp puede mapear a la NPU Hexagon de Qualcomm. No se documentan innovaciones arquitectónicas adicionales ni técnicas de decodificación especulativa.
 
 ## Capacidades
 
-- Generación de código 3D para Three.js, especialidad declarada del ajuste fino.
-- Generación de texto conversacional (etiqueta `conversational` en el repositorio).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
+- Generación de código JavaScript para Three.js: creación de escenas 3D, geometrías, materiales, luces y animaciones.
+- Generación de texto general y conversación multi-turno (tag `conversational`).
+- Razonamiento sobre código y explicación de fragmentos existentes.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- Ejecución en NPU Hexagon de Snapdragon mediante GenieX, además de GPU/CPU vía llama.cpp.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling, agentes y modos de razonamiento extendido: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Generación de escenas Three.js en prototipado web: el modelo puede producir código de geometría, materiales e iluminación para escenas 3D, aprovechando su ajuste fino específico en este dominio.
-- Asistencia en el desarrollo de visualizaciones 3D interactivas: útil para generar esqueletos de código de renderizado que el desarrollador completa y depura después.
-- Despliegue en dispositivos Snapdragon con NPU Hexagon: el formato Q4_0 permite, según el autor, ejecutar el modelo en la NPU mediante GenieX, lo que habilita inferencia local en hardware móvil o embebido Qualcomm.
-- Evaluación de runtimes NPU para llama.cpp: sirve como banco de pruebas para medir la viabilidad de GenieX en la Hexagon NPU con un modelo de 4,2 B.
-- Generación de código offline en entornos sin conectividad: al ser un GGUF de 2,8 GB, puede distribuirse y ejecutarse localmente en dispositivos con recursos limitados.
-- Educación y experimentación con cuantización mixta: el esquema Q4_0 en capas con Q8_0 en embedding y output es un caso práctico para estudiar el impacto de la precisión mixta en calidad y velocidad.
+- Generación de escenas Three.js en el navegador: el modelo produce código JavaScript listo para pegar en un proyecto web, adecuado para prototipado rápido de visualizaciones 3D.
+- Asistente de código 3D en el móvil: al ejecutarse en la NPU Hexagon de un Snapdragon, permite autocompletar y generar código Three.js sin conexión a la nube, con la privacidad que ello implica.
+- Educación y aprendizaje de gráficos 3D: el modelo puede explicar y generar ejemplos de geometrías, materiales y cámaras para estudiantes que aprenden Three.js.
+- Integración en pipelines de CI/CD: gracias al tag `endpoints_compatible`, puede desplegarse tras un endpoint compatible con OpenAI para generar snippets de código 3D en pruebas automatizadas o herramientas internas.
+- Prototipado de demos interactivas: generación de animaciones y efectos visuales en WebGL para presentaciones o pruebas de concepto.
+- Herramienta de accesibilidad en dispositivos de borde: ejecución local en hardware Snapdragon para aplicaciones donde la latencia de red o la confidencialidad del código son críticas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 2,8 GB en Q4_0 con embedding y output en Q8_0; se requiere al menos esa cantidad de memoria, con margen adicional para el contexto KV.
-- GPU recomendadas: no disponible en la información proporcionada.
-- Compatibilidad con GPU de consumo: no confirmada; el autor indica que sus ficheros Q4_K_M y Q8_0 originales funcionan en GPU/CPU, pero este repack Q4_0 está pensado para NPU Hexagon.
-- Opciones de despliegue: llama.cpp con runtime GenieX sobre NPU Hexagon (Qualcomm Snapdragon); también debería poder ejecutarse en CPU/GPU mediante llama.cpp estándar, aunque no está verificado por el autor.
-- Latencia y throughput: no disponibles; el autor declara explícitamente que el modelo no ha sido probado en dispositivo.
+- VRAM estimada: el archivo GGUF ocupa 4,3 GB; la inferencia en GPU requiere al menos ~5 GB de VRAM para Q4_0 con overhead de contexto.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090; en el ámbito profesional, A100 o H100 (sobradas para 4B).
+- Cabe en GPU de consumo: sí, en cualquier GPU con 6 GB o más de VRAM.
+- NPU: Qualcomm Hexagon en SoC Snapdragon, mediante el runtime GenieX de llama.cpp (único destino para el que se publica esta cuantización).
+- Opciones de despliegue: llama.cpp (CPU/GPU), GenieX (NPU Hexagon), Ollama y vLLM (para el modelo base en formato safetensors, no para este GGUF).
+- Latencia y throughput: no disponibles; el autor indica que no se ha probado en dispositivo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Aminadaven/Qwen3.5-4B-3D-Coder-Q4_0-NPU | ~4,2 B | no disponible | GGUF Q4_0/Q8_0 mixto | Apache-2.0 | Repack para NPU Hexagon, no probado en dispositivo |
-| ccore/Qwen3.5-4B-3D-Coder (Q8_0 / Q4_K_M) | ~4,2 B | no disponible | GGUF | Apache-2.0 | Modelo original del ajuste fino; ejecución GPU/CPU |
-| Qwen/Qwen3.5-4B | ~4,2 B | no disponible | safetensors y derivados | no disponible en la información | Modelo base generalista del que deriva el ajuste fino |
-
-No se dispone de datos de rendimiento comparativo entre estas variantes.
+| Qwen3.5-4B-3D-Coder-Q4_0-NPU (este) | 4,2B | no disponible | Apache-2.0 | GGUF Q4_0 | Optimizado para NPU Hexagon; sin probar en dispositivo |
+| ccore/Qwen3.5-4B-3D-Coder (Q8_0) | 4,2B | no disponible | Apache-2.0 | GGUF Q8_0 | Mayor precisión; solo GPU/CPU |
+| ccore/Qwen3.5-4B-3D-Coder (Q4_K_M) | 4,2B | no disponible | Apache-2.0 | GGUF Q4_K_M | Mejor relación calidad/tamaño; solo GPU/CPU |
+| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | Apache-2.0 | safetensors | Modelo generalista sin especialización 3D |
 
 ## Limitaciones y advertencias
 
-- Repack privado y no oficial: el autor lo describe como "private, unofficial repack", sin garantías de soporte ni mantenimiento.
-- No probado en dispositivo: no hay verificación de que funcione correctamente en la NPU Hexagon ni de su estabilidad.
-- Sin benchmarks: no existen métricas publicadas de calidad, latencia ni throughput.
-- Riesgo de alucinación: inherente a los modelos generativos de código; el código Three.js generado debe revisarse y probarse antes de usarlo.
-- Idiomas soportados no documentados: no se puede garantizar un comportamiento multilingüe adecuado.
-- Contexto no documentado: se desconoce la ventana máxima y su comportamiento en conversaciones largas.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el repack hereda las condiciones del modelo base y del ajuste fino original, que conviene verificar en sus respectivas model cards.
-- Cuantización Q4_0: pérdida de precisión esperable frente a Q8_0 o pesos completos, especialmente en tareas de código donde los detalles sintácticos son críticos.
-- Dependencia de un runtime específico (GenieX): la ventaja de NPU solo se materializa con ese stack, lo que limita la portabilidad.
+- Repack privado y no oficial: el autor lo describe como "private, unofficial repack" y "not device-tested"; no hay garantía de que funcione correctamente en la NPU Hexagon.
+- Sin benchmarks: no se han publicado métricas de calidad, latencia ni throughput, lo que impide evaluar la degradación respecto al Q8_0.
+- Riesgo de alucinación: como todo modelo de código, puede generar APIs inexistentes de Three.js o código que no compila; requiere validación.
+- Sesgos: no documentados; al derivar de Qwen3.5-4B, hereda los sesgos del modelo base, no evaluados en esta ficha.
+- Idiomas: no se especifican; el fine-tune está orientado a código, predominantemente en inglés.
+- Contexto: longitud no disponible; no apto para tareas que requieran ventanas muy largas sin verificación previa.
+- Licencia Apache-2.0 permite uso comercial, pero al ser un repack no oficial conviene verificar la procedencia de los pesos con el autor original.
+- Cuantización Q4_0: menor calidad que Q4_K_M o Q8_0; puede afectar a la precisión del código generado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Aminadaven/Qwen3.5-4B-3D-Coder-Q4_0-NPU
-- Modelo base del repack: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
-- Modelo original de la familia: https://huggingface.co/Qwen/Qwen3.5-4B
+- Modelo base del fine-tune: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
+- Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
+- llama.cpp (runtime de cuantización): https://github.com/ggml-org/llama.cpp

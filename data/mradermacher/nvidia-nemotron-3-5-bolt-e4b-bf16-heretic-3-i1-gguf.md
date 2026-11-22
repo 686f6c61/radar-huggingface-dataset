@@ -2,49 +2,48 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3-i1-GGUF es una cuantizacion en formato GGUF del modelo darkc0de/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3, publicada por el usuario mradermacher. Se trata de una variante "heretic" del modelo Nemotron 3.5 Bolt E4B de NVIDIA, un modelo de la familia Nemotron orientado a generacion de texto y razonamiento, del que se ha eliminado total o parcialmente el alineamiento de rechazo (el termino "heretic" se asocia habitualmente a procesos de ablacion de direcciones de rechazo). El nombre "E4B" sugiere una variante con aproximadamente 4.000 millones de parametros, aunque el dato de parametros reportado en safetensors (2.192.734) no es coherente con esa interpretacion y debe tratarse con cautela.
+NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3-i1-GGUF es una cuantizacion GGUF del modelo darkc0de/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3, un derivado "heretic" (presumiblemente con las capas de rechazo o alineamiento de seguridad reducidas) del modelo Nemotron de NVIDIA. El autor de la cuantizacion es mradermacher, un conocido publicador de versiones GGUF con tecnicas de imatrix y cuantizacion IQ, y el resultado se distribuye en un unico repositorio de Hugging Face con mas de 20 variantes de cuantizacion.
 
-El repositorio contiene unicamente pesos cuantizados en GGUF con multiples niveles de cuantizacion (desde Q2_K e IQ1_S hasta Q6_K), generados a partir del modelo base en BF16 mediante cuantizacion ponderada con matriz de importancia (imatrix). El tamano del repositorio reportado es de 0.0 GB, lo que indica que la informacion de metadatos disponible es incompleta o que el repositorio no contiene los ficheros esperados en el momento de la consulta.
+El modelo base cuenta con 7.463.013.674 parametros totales segun los safetensors declarados, aunque la nomenclatura "E4B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parametros activos. La model card indica explicitamente que se trata de un modelo de vision, con archivos mmproj disponibles en el repositorio estatico complementario.
 
-La relevancia de esta ficha es limitada: se trata de un artefacto derivado de un modelo base a su vez derivado, publicado con cero descargas y cero likes, sin model card sustantiva, sin licencia declarada y sin informacion de benchmarks. Cualquier uso en produccion deberia partir de la verificacion directa de los ficheros y de la licencia del modelo original de NVIDIA.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo de NVIDIA con capacidades multimodales, una variante "heretic" sin las restricciones de rechazo tipicas, y un conjunto amplio de cuantizaciones GGUF listas para ejecucion local en llama.cpp u Ollama. El repositorio acumula 11.195 descargas, lo que indica interes practico pese a tener un solo like.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (familia NVIDIA Nemotron; presumiblemente transformer, sin confirmar) |
-| Parametros totales | 2.192.734 segun metadatos safetensors (dato no coherente con la nomenclatura E4B; no confirmado) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (la nomenclatura E4B sugiere MoE, sin confirmar) |
+| Parametros totales | 7.463.013.674 |
+| Parametros activos | no disponible (posiblemente ~4B por el sufijo E4B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, Q2_K_S, Q2_K, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (ademas de fichero imatrix) |
+| Idiomas soportados | en (segun la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado); el modelo base de referencia se distribuye en BF16 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en BF16 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base. La nomenclatura remite a la familia NVIDIA Nemotron, y el sufijo "E4B" se asocia habitualmente a variantes de aproximadamente 4.000 millones de parametros, pero no se confirma en la informacion proporcionada. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron fases de RLHF, DPO o similar.
+No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. El sufijo "E4B" en el nombre sugiere una arquitectura de mezcla de expertos con aproximadamente 4.000 millones de parametros activos sobre un total de 7.463 millones, pero este dato no esta confirmado en la model card. La referencia a "mmproj" indica que el modelo incorpora un proyector multimodal para entrada de imagenes, lo que lo convierte en un modelo vision-lenguaje.
 
-El proceso documentado en el repositorio es exclusivamente de cuantizacion: se han generado cuantizaciones ponderadas con imatrix (weighted/imatrix quants) a partir del modelo darkc0de/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3 en BF16, usando la herramienta de cuantizacion de llama.cpp (se infiere por el formato GGUF y la convencion de nombres de niveles). El sufijo "heretic" indica que el modelo de origen ha sido sometido a un proceso de ablacion de rechazo, practica que modifica el comportamiento del modelo ante solicitudes que el alineamiento original rechazaria. No se detalla la metodologia exacta de esa ablacion.
+El proceso de cuantizacion empleado por mradermacher utiliza ficheros imatrix (importance matrix) generados a partir de datos de calibracion, lo que mejora la calidad de las cuantizaciones de baja precision respecto a las cuantizaciones estaticas equivalentes. El repositorio incluye tanto el fichero imatrix como las cuantizaciones i1 resultantes. No hay informacion sobre el dataset de entrenamiento, el numero de tokens, ni sobre si el modelo base paso por RLHF o DPO. El termino "heretic" en el nombre hace referencia a una familia de tecnicas de ablacion de direcciones de rechazo en el espacio de activaciones, pero no se detalla el metodo concreto aplicado.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general: capacidades heredadas del modelo base Nemotron, no verificadas en esta ficha.
-- Generacion de codigo y matematicas: presumiblemente soportadas por el modelo base, sin datos que lo confirmen.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Comportamiento ante rechazo: modificado respecto al modelo original por el proceso "heretic"; se espera una menor tasa de rechazos ante solicitudes que el alineamiento original bloquearia.
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
+- Procesamiento de imagenes: la model card indica explicitamente que es un modelo de vision, con ficheros mmproj en el repositorio estatico.
+- Cuantizaciones optimizadas para inferencia local en CPU y GPU mediante llama.cpp.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integracion con la infraestructura de Inference Endpoints de Hugging Face.
+- No se dispone de informacion sobre soporte de tool calling, function calling, agentes, modo thinking, audio u otras capacidades especiales.
+- Capacidad multilingue limitada al ingles segun la model card.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar el modelo en GPUs consumer con 8-16 GB de VRAM mediante llama.cpp u Ollama, lo que facilita pruebas locales sin infraestructura dedicada.
-- Experimentacion con alineamiento y seguridad: la variante "heretic" resulta util para investigadores que estudian el efecto de la ablacion de rechazo sobre el comportamiento del modelo, comparando respuestas frente al modelo original.
-- Prototipado de asistentes conversacionales: el formato GGUF y la disponibilidad de niveles de cuantizacion bajos (Q2_K, IQ2) permiten iterar rapidamente en entornos con recursos limitados.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece mas de veinte niveles de cuantizacion del mismo modelo, lo que permite medir la degradacion de calidad frente al tamano en un pipeline de evaluacion propio.
-- Inferencia en CPU: las cuantizaciones Q4_0 y Q4_1, junto con llama.cpp, permiten ejecucion en CPU para tareas de generacion de texto por lotes donde la latencia no es critica.
-- Fines educativos y de analisis: util para estudiar el pipeline de cuantizacion imatrix de llama.cpp y la conversion de pesos BF16 a GGUF.
+- Despliegue local de un asistente conversacional multimodal: las cuantizaciones Q4_K_M e IQ4_XS (5,3-5,4 GB) permiten ejecutar el modelo en equipos de consumo con 8 GB de VRAM, manteniendo capacidad de procesamiento de imagenes mediante el mmproj.
+- Analisis de documentos con imagenes en entornos con requisitos de privacidad: al ejecutarse en local con llama.cpp, los datos no salen del equipo, lo que resulta adecuado para sectores regulados.
+- Prototipado rapido de aplicaciones de vision-lenguaje: la disponibilidad de mas de 20 cuantizaciones permite ajustar el equilibrio entre calidad y recursos sin cambiar de modelo.
+- Investigacion sobre alineamiento y seguridad: al tratarse de una variante "heretic", es util para estudiar el comportamiento de modelos sin capas de rechazo, comparando respuestas frente al modelo original de NVIDIA.
+- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio incluye variantes IQ y K con distintos tamanos, lo que facilita estudios empiricos sobre la degradacion de calidad segun la precision.
+- Integracion en pipelines de generacion aumentada por recuperacion (RAG) con imagenes: el modelo puede procesar capturas, diagramas o figuras junto con texto recuperado, aunque el contexto maximo no esta documentado y debe validarse experimentalmente.
 
 ## Benchmarks y rendimiento
 
@@ -52,30 +51,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision al no confirmarse el numero real de parametros. Como referencia orientativa, un modelo de ~4.000 millones de parametros en Q4_K_M ocupa aproximadamente 2,5-3 GB, en Q8 aproximadamente 4,5 GB y en BF16 unos 8 GB; estas cifras son estimaciones genericas y no estan verificadas para este modelo.
-- GPU recomendadas: no disponible. Para un modelo de esa escala, una RTX 3060 de 12 GB o superior seria suficiente en cuantizaciones de 4 bits.
-- Compatibilidad con GPU consumer: probable en cuantizaciones Q4 y Q5 si se confirma el tamano de ~4B; no verificable con los datos disponibles.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles.
+- VRAM estimada segun cuantizacion: IQ1_S ~3,4 GB; IQ2_M ~3,9 GB; IQ3_S ~4,7 GB; IQ4_XS ~5,1 GB; Q4_K_M ~5,4 GB; Q5_K_M y Q6_K no aparecen con tamano en el fragmento disponible, pero se situan por encima de 5,4 GB.
+- GPU de consumo: las cuantizaciones Q4_K_M e IQ4_XS caben en GPUs con 8 GB de VRAM (RTX 3060 Ti, RTX 4060, RTX 3070). Las variantes Q5 y Q6 requieren 10-12 GB (RTX 3080, RTX 4070 Ti).
+- GPU profesional: A100, H100 y RTX 4090 pueden ejecutar cualquier cuantizacion con holgura e incluso el modelo base en BF16 si se dispone de suficiente memoria.
+- Despliegue: llama.cpp y Ollama son las opciones naturales para GGUF; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. vLLM y TGI no soportan GGUF de forma nativa para este modelo sin conversion.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion suficiente sobre el modelo base (parametros reales, contexto, rendimiento) para establecer una comparacion fiable con alternativas de la misma categoria. El dato de parametros reportado (2.192.734) es inconsistente con la nomenclatura E4B y no permite identificar modelos comparables.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3-i1-GGUF | 7,46B totales | no disponible | no disponible | GGUF | Vision, variante heretic, cuantizaciones i1 |
+| NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3 (base) | 7,46B totales | no disponible | no disponible | BF16 safetensors | Modelo original sin cuantizar |
+| NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3-GGUF (estatico) | 7,46B totales | no disponible | no disponible | GGUF | Cuantizaciones estaticas, incluye mmproj |
+
+No se dispone de informacion sobre modelos de la competencia con caracteristicas equivalentes en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El dato de parametros totales (2.192.734) procedente de safetensors no es coherente con la nomenclatura E4B ni con el tamano esperado del repositorio (0.0 GB); debe verificarse antes de cualquier uso.
-- La licencia no esta declarada en el repositorio. El modelo base es de NVIDIA y su licencia original (probablemente NVIDIA Open Model License u otra) condiciona el uso comercial; es imprescindible consultarla antes de desplegar.
-- El proceso "heretic" elimina o atenua los mecanismos de rechazo del modelo original, lo que incrementa el riesgo de generar contenido danino, sesgado o inapropiado. No es adecuado para aplicaciones de cara al publico sin filtros adicionales.
-- Riesgo de alucinacion: no cuantificado; inherente a los modelos de lenguaje de esta escala.
-- No hay informacion sobre sesgos conocidos, idiomas soportados ni limitaciones de contexto.
-- El repositorio tiene cero descargas y cero likes, sin validacion de la comunidad; es un artefacto derivado sin garantias de calidad.
-- La cuantizacion a niveles bajos (Q2_K, IQ1_S, IQ2) degrada notablemente la calidad de generacion; para produccion se recomienda Q4_K_M o superior.
-- No se dispone de model card sustantiva ni de documentacion del proceso de cuantizacion mas alla de los metadatos tecnicos.
+- La variante "heretic" implica la eliminacion o reduccion de mecanismos de rechazo, lo que aumenta el riesgo de generar contenido danino, sesgado o inapropiado sin filtros. No es recomendable para aplicaciones de cara al publico sin capas adicionales de moderacion.
+- El modelo solo declara soporte de ingles; el rendimiento en castellano no esta validado y probablemente sea deficiente.
+- No se dispone de informacion sobre la licencia, lo que impide confirmar si el uso comercial esta permitido. Es imprescindible verificar la licencia del modelo base de NVIDIA antes de cualquier despliegue productivo.
+- La longitud de contexto no esta documentada; no se debe asumir una ventana grande sin verificacion empirica.
+- Las cuantizaciones de baja precision (IQ1, IQ2, Q2_K) degradan notablemente la calidad; la propia model card las etiqueta como "for the desperate" o "very low quality".
+- Riesgo de alucinacion inherente a los modelos de lenguaje de este tamano, agravado por la falta de benchmarks publicados que permitan estimar su fiabilidad.
+- El repositorio tiene un unico like y la model card es minima, lo que sugiere poca validacion comunitaria.
+- Al ser un modelo multimodal, los ficheros mmproj deben descargarse del repositorio estatico complementario; olvidarlos impide el procesamiento de imagenes.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3-i1-GGUF
-- Modelo base de la cuantizacion: https://huggingface.co/darkc0de/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3
-- Familia NVIDIA Nemotron en Hugging Face: https://huggingface.co/nvidia
-- llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
+- Modelo base: https://huggingface.co/darkc0de/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-3-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

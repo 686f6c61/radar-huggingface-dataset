@@ -59,7 +59,7 @@
     "region:us"
   ],
   "likes": 7,
-  "downloads_30d": 608,
+  "downloads_30d": 584,
   "trending_score": 0,
   "parameters": 133733695379,
   "parameters_human": "133.73B",
@@ -80,31 +80,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Wikipédia, l'encyclopédie libre",
-      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
-      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
-    },
-    {
-      "title": "Wikipedia",
-      "url": "https://www.wikipedia.org/",
-      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
-    },
-    {
-      "title": "Wikipedia, the free encyclopedia",
-      "url": "https://en.wikipedia.org/wiki/Main_Page",
-      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
-    },
-    {
-      "title": "Wikipedia - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Wikipedia",
-      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
-    },
-    {
-      "title": "Wikipédia — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia",
-      "snippet": "Jimmy Wales intervient fin 2005 sur l'article « Wikipedia » de Wikipédia en anglais, pour retirer l'information selon laquelle Larry …"
-    }
-  ]
+  "sources": []
 }

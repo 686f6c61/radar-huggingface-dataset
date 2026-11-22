@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Intelligence-Agent-7B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Intelligence-Agent-7B-GGUF",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ICML AgentForesight: Online Auditing for Early Failure Prediction in ...",
-      "url": "https://icml.cc/virtual/2026/77849",
-      "snippet": "Built on that, we develop AgentForesight-7B, a compact online auditor trained with a coarse-to-fine reinforcement learning recipe that first equips it with a risk-anticipation prior at the failure boundary on adjacent safe/unsafe prefix pairs, then sharpens this prior into precise step-level localization under a three-axis reward jointly ..."
-    }
-  ]
+  "sources": []
 }

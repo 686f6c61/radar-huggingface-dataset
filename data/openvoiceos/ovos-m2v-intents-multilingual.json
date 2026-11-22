@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 593,
+  "downloads_30d": 492,
   "trending_score": 0,
   "parameters": 128090368,
   "parameters_human": "128.1M",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - OpenVoiceOS/ovos-m2v-pipeline",
-      "url": "https://github.com/OpenVoiceOS/ovos-m2v-pipeline",
-      "snippet": "An intent matching pipeline for OpenVoiceOS (OVOS), powered by the Model2Vec model for intent classification. This plugin uses a pretrained Model2Vec model to classify natural language utterances into intent labels registered with the system (Adapt, Padatious, and plugin-specific labels). It only considers intents from loaded skills and ignores any labels from unregistered intents. This ..."
-    },
-    {
-      "title": "Model2Vec - OVOS Technical Manual - openvoiceos.github.io",
-      "url": "https://openvoiceos.github.io/ovos-technical-manual/m2v_pipeline/",
-      "snippet": "Features Model2Vec-Powered Classification: Uses pretrained Model2Vec models for rich vector-based intent understanding. Seamless OVOS Integration: Plug-and-play compatibility with existing OVOS intent pipelines. Multilingual & Language-Specific Models: Offers large multilingual models distilled from LaBSE and smaller, efficient language-specific models ideal for limited hardware (e.g ..."
-    },
-    {
-      "title": "ovos-m2v-pipeline/README.md at dev · OpenVoiceOS/ovos-m2v-pipeline · GitHub",
-      "url": "https://github.com/OpenVoiceOS/ovos-m2v-pipeline/blob/dev/README.md",
-      "snippet": "OVOS Model2Vec Intent Pipeline An intent matching pipeline for OpenVoiceOS (OVOS), powered by the Model2Vec model for intent classification. This plugin uses a pretrained Model2Vec model to classify natural language utterances into intent labels registered with the system (Adapt, Padatious, and plugin-specific labels)."
-    },
-    {
-      "title": "Getting Started | OpenVoiceOS/ovos-m2v-pipeline | DeepWiki",
-      "url": "https://deepwiki.com/OpenVoiceOS/ovos-m2v-pipeline/1.1-getting-started",
-      "snippet": "This page provides a step-by-step technical guide for installing the `ovos-m2v-pipeline` plugin, configuring system dependencies, and verifying the integration within the OpenVoiceOS (OVOS) ecosystem."
-    },
-    {
-      "title": "OpenVoiceOS/ovos-m2v-pipeline | DeepWiki",
-      "url": "https://deepwiki.com/OpenVoiceOS/ovos-m2v-pipeline",
-      "snippet": "The ovos-m2v-pipeline is an intent matching plugin for OpenVoiceOS (OVOS) that leverages Model2Vec to provide fast, lightweight, and high-quality intent classification README.md3-7"
-    }
-  ]
+  "sources": []
 }

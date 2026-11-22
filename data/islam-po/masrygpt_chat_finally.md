@@ -2,87 +2,104 @@
 
 ## Resumen
 
-MasryGPT_chat_FINALLY es un modelo de lenguaje conversacional especializado en el dialecto egipcio del árabe (masri o عامية), desarrollado por ISLAM-PO a partir del modelo base Qwen/Qwen2.5-1.5B-Instruct. Su objetivo es cubrir la brecha entre el árabe estándar moderno (MSA), que dominan la mayoría de los LLM árabes, y el habla cotidiana real de los aproximadamente 105 millones de egipcios, incluyendo humor, modismos y expresiones coloquiales.
+MasryGPT Chat es un modelo de conversación en árabe egipcio (masri, عامية مصرية) obtenido mediante ajuste fino supervisado del modelo base Qwen2.5-1.5B-Instruct. Lo desarrolla el usuario ISLAM-PO y se publica con licencia Apache 2.0 en Hugging Face. El objetivo declarado es cubrir la brecha entre el árabe estándar moderno (MSA), en el que se optimizan la mayoría de los LLM árabes, y el habla cotidiana egipcia, con sus expresiones, humor e idiomatismos.
 
-El modelo se ha afinado mediante QLoRA con Unsloth sobre un conjunto de datos sintético de 80.000 ejemplos, en una sola época y 2.500 pasos, alcanzando una pérdida media de 0,079. Con 1.543 millones de parámetros (1,5B), es ligero y desplegable en hardware modesto, como una GPU T4 con cuantización de 4 bits (1,2 GB de VRAM). Se distribuye bajo licencia Apache 2.0 y está pensado para chatbots, atención al cliente, redes sociales y educación en Egipto.
+El modelo es deliberadamente ligero: 1.543.714.304 parámetros según los pesos en safetensors, arquitectura Qwen2ForCausalLM de 28 capas, 12 cabezas de atención y 2 cabezas KV, con un tamaño de repositorio de 3,1 GB en precisión de 16 bits. La motivación del autor es el despliegue en hardware modesto (una T4, entornos edge o startups con GPU limitada), frente a modelos de 7B que requieren 14 GB o más de VRAM.
+
+El ajuste se realizó con QLoRA y Unsloth sobre un conjunto sintético de 80.000 ejemplos en dialecto egipcio, con 2.500 pasos de entrenamiento y una pérdida final de 0,079. El autor presenta los resultados como un piloto interno, no como un benchmark independiente, lo que conviene tener en cuenta al evaluar su calidad real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2ForCausalLM (28 capas, 12 cabezas de atencion, 2 KV heads) |
-| Parametros totales | 1.543.714.304 (segun safetensors; la model card reporta 1.562.179.072) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens (entrenado con 2.048) |
-| Tipos de cuantizacion | bfloat16 (liberado), 4-bit NF4 (entrenamiento), cuantizaciones adicionales posibles |
-| Idiomas soportados | Arabe (dialecto egipcio principalmente), ingles (base) |
-| Licencia | Apache 2.0 (se aplica la licencia de Qwen) |
-| Formato de pesos | safetensors |
+| Arquitectura | Qwen2ForCausalLM (transformer decoder-only, 28 capas, 12 cabezas de atención, 2 cabezas KV) |
+| Parametros totales | 1.543.714.304 (según safetensors); la model card indica 1.562.179.072 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens de posición máxima (RoPE theta 1.000.000); entrenado con 2.048 |
+| Tipos de cuantizacion | Entrenamiento en 4 bits NF4 (bitsandbytes); publicación en bfloat16 de 16 bits; el autor menciona inferencia en 4 bits (~1,2 GB de VRAM) |
+| Idiomas soportados | ar (árabe, con foco en dialecto egipcio), en |
+| Licencia | apache-2.0 (sujeta además a la licencia de Qwen) |
+| Formato de pesos | safetensors (transformers) |
+
+Otros datos técnicos: hidden size 1536, intermediate size 8960, vocabulario de 151.936 tokens, tokenizador Qwen2 con plantilla de chat `qwen-2.5`. LoRA con r=16, alpha=16, dropout 0 y target en q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj y down_proj; 18.464.768 parámetros entrenables (1,18 % del total).
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5-1.5B-Instruct, un transformer causal con 28 capas, 12 cabezas de atencion y 2 cabezas KV, con un tamaño oculto de 1536 y un vocabulario de 151.936 tokens. El entrenamiento se realizo con QLoRA (cuantizacion NF4 de 4 bits) y Unsloth, aplicando LoRA con r=16, alpha=16 y dropout=0 sobre todas las proyecciones lineales (q, k, v, o, gate, up, down). Solo se entrenaron 18.464.768 parametros (1,18% del total).
+El modelo es un transformer decoder-only causal de la familia Qwen2, con atención multi-cabeza con 12 cabezas de consulta y 2 cabezas KV (GQA), normalización RMSNorm y embeddings posicionales rotatorios (RoPE) con theta de 1.000.000, lo que permite extender la ventana hasta 32.768 tokens aunque el entrenamiento se hizo con 2.048. El pipeline fue: carga del modelo base en 4 bits con FastLanguageModel, aplicación de QLoRA mediante PEFT, entrenamiento supervisado con SFTTrainer de TRL y guardado fusionado en 16 bits.
 
-El conjunto de datos, `qwen_egyptian_80k_terms.jsonl`, contiene 80.000 ejemplos generados sinteticamente a partir de un lexico egipcio, con filtrado manual de vulgaridades. La distribucion tematica es: saludos y conversacion diaria (35%), humor y chistes (15%), expresiones y modismos (15%), servicio al cliente e instrucciones (20%) y cultura y comida (15%). Se aplico el chat template de Qwen2.5 y empaquetado (packing) para acelerar el entrenamiento. Los hiperparametros incluyen batch efectivo de 32, learning rate 2e-4 con scheduler coseno, warmup de 20 pasos, weight decay 0,01 y una sola epoca. La perdida convergio de 0,091 a 0,074 (una reduccion del 18,7%).
+El conjunto de datos, `qwen_egyptian_80k_terms.jsonl`, contiene 80.000 ejemplos generados de forma sintética a partir de un léxico egipcio y filtrados manualmente para eliminar vulgarismos. La distribución es: saludos y charla diaria 35 %, humor y chistes 15 %, expresiones e idiomatismos 15 %, atención al cliente e instrucciones 20 %, y cultura y comida 15 %. Los hiperparámetros finales fueron max_seq_length 2048, batch efectivo de 32 (batch por dispositivo 32, sin acumulación), learning rate 2e-4 con scheduler coseno, optimizador adamw_8bit y weight decay 0,01, lo que da 2.500 pasos en una época. La pérdida pasó de 0,091 a 0,074 (−18,7 %), con media de 0,079. No se documenta uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional en dialecto egipcio (masri), incluyendo saludos, expresiones cotidianas, humor y modismos.
-- Comprension y generacion de arabe estandar moderno (MSA) heredada del modelo base Qwen2.5-Instruct.
-- Soporte de instrucciones y formato de chat mediante el chat template de Qwen2.5.
-- Capacidad multilingue limitada: principalmente arabe egipcio, con algo de ingles y arabe estandar.
-- No se documenta soporte explicito de tool calling o function calling en la model card, aunque al derivar de Qwen2.5-Instruct podria heredarlo, pero no esta verificado.
-- No se documentan capacidades de vision, audio o modo de razonamiento explicito.
+- Generación de texto conversacional en dialecto árabe egipcio (masri), incluyendo saludos, charla informal, humor e idiomatismos.
+- Comprensión y respuesta en árabe estándar y en inglés, heredadas del modelo base Qwen2.5-1.5B-Instruct.
+- Conversación multi-turno con plantilla de chat `qwen-2.5` y roles user/assistant.
+- Atención al cliente e instrucciones en registro coloquial egipcio, una de las categorías del dataset de entrenamiento.
+- Explicación de expresiones y refranes egipcios (por ejemplo, «عيش وملح»).
+- Capacidades generales del modelo base (razonamiento básico, código, matemáticas elementales) potencialmente degradadas por el ajuste fino, no evaluadas por el autor.
+- Soporte de tool calling y function calling: no documentado en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: no documentadas.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada en Egipto: el modelo puede gestionar conversaciones multi-turno en dialecto egipcio, respondiendo con naturalidad a quejas, consultas y solicitudes tipicas de empresas locales, gracias a su entrenamiento especifico en ese registro.
-- Chatbots para redes sociales y mensajeria: integrable en plataformas como WhatsApp o Messenger para interactuar con usuarios egipcios en su lengua coloquial, mejorando la experiencia frente a modelos que solo dominan el MSA.
-- Educacion y aprendizaje del dialecto: util como asistente para estudiantes de arabe egipcio, explicando modismos, expresiones y diferencias con el arabe estandar.
-- Generacion de contenido localizado: creacion de guiones, posts o respuestas para marketing y comunicacion dirigida al publico egipcio, con tono autentico y culturalmente relevante.
-- Asistentes virtuales para servicios publicos o privados: despliegue en entornos con recursos limitados (T4, edge) para ofrecer informacion y soporte en dialecto local.
-- Prototipado rapido de aplicaciones conversacionales: al ser un modelo pequeno y rapido, permite iterar y validar ideas de productos de IA conversacional en arabe egipcio sin necesidad de infraestructura costosa.
+- Chatbots de atención al cliente en Egipto: el modelo puede mantener conversaciones multi-turno en registro coloquial con una ventana de hasta 32.768 tokens, adecuado para negocios que atienden a usuarios que escriben en masri y no en árabe estándar.
+- Asistentes conversacionales en redes sociales: su entrenamiento en humor, expresiones y cultura egipcia (65 % del dataset entre estas categorías) lo hace apropiado para respuestas con tono natural en plataformas donde predomina el dialecto.
+- Despliegue en hardware limitado: con 1,5B parámetros y unos 1,2 GB de VRAM en 4 bits, puede ejecutarse en una única T4 o en entornos edge, útil para startups egipcias sin acceso a A100.
+- Aplicaciones educativas de árabe dialectal: puede usarse para explicar expresiones y refranes egipcios a estudiantes o para practicar conversación en masri.
+- Prototipado rápido de producto conversacional: al ser un modelo pequeño con licencia Apache 2.0, sirve para validar ideas de chatbot antes de invertir en modelos mayores.
+- Filtrado y normalización de texto dialectal: puede emplearse como generador de pares pregunta-respuesta en masri para aumentar datasets de entrenamiento de otros sistemas.
+- Base para ajustes posteriores: al derivar de Qwen2.5-1.5B-Instruct con LoRA documentado, es un punto de partida para fine-tuning adicional en dominios específicos del dialecto egipcio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card reporta una evaluacion manual sobre 100 prompts, con un 92% de naturalidad en masri, y una perdida de entrenamiento media de 0,079. Se presenta a continuacion la informacion disponible:
+No se han publicado resultados de benchmarks en la información disponible. El autor reporta únicamente métricas internas: pérdida de entrenamiento de 0,079 (de 0,091 a 0,074 en una época) y una revisión interna de 100 prompts evaluada por 3 hablantes nativos con 4,6/5 en fluidez dialectal egipcia, que el propio autor califica como piloto interno y no como benchmark independiente.
 
-| Metrica | Valor |
-|---|---|
-| Naturalidad en masri (evaluacion manual, 100 prompts) | 92% |
-| Perdida media de entrenamiento | 0,079 |
-| Perdida inicial | 0,091 |
-| Perdida final | 0,074 |
+| Metrica | Valor | Naturaleza |
+|---|---|---|
+| Pérdida de entrenamiento (media) | 0,079 | Interna, una época |
+| Pérdida inicial → final | 0,091 → 0,074 (−18,7 %) | Interna |
+| Fluidez dialectal (100 prompts, 3 nativos) | 4,6/5 | Revisión interna, no independiente |
+| MMLU, HumanEval, GSM8K, etc. | no disponible | No publicados |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3 GB en bfloat16 (2,9 GB de pesos) y 1,2 GB en cuantizacion de 4 bits, segun la model card.
-- GPU recomendadas: T4 (15 GB) es suficiente para 4-bit; tambien puede ejecutarse en GPUs consumer como RTX 3060, RTX 4060 o similares con 8 GB o menos.
-- Cabe en GPUs consumer de gama media y baja, asi como en entornos edge o moviles con cuantizacion adecuada.
-- Opciones de despliegue: al ser un modelo transformers estandar, es compatible con vLLM, llama.cpp, Ollama, TGI y cualquier framework que soporte Qwen2.5. No se documentan configuraciones especificas de latencia o throughput.
-- El entrenamiento se realizo en dos GPUs T4 de Kaggle, lo que indica que la inferencia es viable en hardware modesto.
+- VRAM estimada: aproximadamente 1,2 GB en cuantización de 4 bits según el autor; alrededor de 3 GB en bfloat16 (pesos de 2,9 GB más overhead).
+- GPU recomendadas: NVIDIA T4 (el autor valida inferencia en una sola T4), así como A100 o H100 para mayor throughput.
+- GPU de consumo: cabe en tarjetas con 4 GB o más de VRAM en 4 bits (por ejemplo, RTX 3050, RTX 4060); en 16 bits requiere unos 4-6 GB, por lo que también entra en RTX 3060, RTX 4090 y similares.
+- Opciones de despliegue: transformers (formato safetensors), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible`); llama.cpp, Ollama o vLLM no están documentados en la información disponible, aunque al ser un modelo Qwen2 estándar podría convertirse a GGUF.
+- Latencia y throughput: no disponibles. El autor solo indica que el entrenamiento con Unsloth fue 2 veces más rápido en Kaggle T4 x2.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia |
-|---|---|---|---|---|
-| ISLAM-PO/MasryGPT_chat_FINALLY | 1,5B | 32.768 (entrenado 2.048) | Dialecto egipcio | Apache 2.0 |
-| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 | Multilingue, MSA | Apache 2.0 |
-| Jais (ejemplo de LLM arabe) | 13B | 8.192 | Arabe estandar | No disponible |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MasryGPT Chat (este modelo) | 1,54B | 32.768 (entrenado a 2.048) | Dialecto egipcio, chat | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1,54B | 32.768 | Instrucciones generales, multilingüe | Apache 2.0 | Hugging Face |
+| Jais (familia) | 7B y 13B (según variante) | no disponible en esta ficha | Árabe-inglés | no disponible en esta ficha | Hugging Face |
+| AceGPT | no disponible en esta ficha | no disponible en esta ficha | Árabe | no disponible en esta ficha | Hugging Face |
 
-No se dispone de informacion sobre otros modelos especificamente entrenados para dialecto egipcio con los que comparar directamente. La comparacion con el modelo base muestra que MasryGPT_chat_FINALLY sacrifica generalidad multilingue por especializacion en el dialecto egipcio, manteniendo el mismo tamano y contexto.
+La comparación cuantitativa de rendimiento con Jais o AceGPT no está disponible: el autor no publica benchmarks frente a ellos, y solo los cita en la motivación como modelos optimizados para árabe estándar. Frente a su base Qwen2.5-1.5B-Instruct, la diferencia es el ajuste en dialecto egipcio, a costa de posibles pérdidas en capacidades generales no evaluadas.
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente con datos sinteticos generados a partir de un lexico egipcio, lo que puede limitar su robustez ante variaciones reales del habla y contextos no cubiertos.
-- La ventana de entrenamiento fue de 2.048 tokens, aunque el modelo soporta hasta 32.768; puede degradarse en conversaciones muy largas o con contexto extenso.
-- No se han realizado evaluaciones formales de sesgos, alucinaciones o seguridad; el filtrado de vulgaridades fue manual y podria no ser exhaustivo.
-- La licencia Apache 2.0 se aplica, pero la model card indica que "la licencia de Qwen aplica", lo que podria implicar restricciones adicionales derivadas del modelo base.
-- No se documentan pruebas en produccion ni benchmarks estandar, por lo que su rendimiento en tareas generales de razonamiento, codigo o matematicas es desconocido.
-- El modelo esta orientado al dialecto egipcio; su uso en otros dialectos arabes (magrebi, levantino, etc.) o en arabe formal puede producir respuestas inapropiadas o incorrectas.
+- Los resultados de calidad son un piloto interno del autor, no una evaluación independiente; la puntuación de 4,6/5 procede de 3 hablantes nativos y 100 prompts.
+- El dataset de entrenamiento es sintético (80.000 ejemplos generados a partir de un léxico), lo que puede introducir artefactos y repetitividad no medidos.
+- Riesgo de alucinación y de degradación de capacidades generales (razonamiento, código, matemáticas) tras el ajuste fino; no hay evaluación al respecto.
+- El contexto efectivo de entrenamiento es de 2.048 tokens; aunque soporta 32.768 por RoPE, el rendimiento más allá de 2.048 no está validado.
+- Cobertura limitada a árabe egipcio y, por herencia, árabe estándar e inglés; otros dialectos árabes no están contemplados.
+- Sesgos no evaluados: el dataset se filtró manualmente para eliminar vulgarismos, pero no se documenta un análisis de sesgos de género, religión o política.
+- Licencia Apache 2.0 permite uso comercial, pero el autor indica que se aplica además la licencia de Qwen; conviene revisar los términos del modelo base antes de producción.
+- El nombre del repositorio (`MasryGPT_chat_FINALLY`) se mantiene por compatibilidad; el título recomendado es MasryGPT Chat, lo que puede generar confusión en búsquedas.
+- No hay documentación sobre tool calling, agentes ni cuantizaciones GGUF listas para usar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ISLAM-PO/MasryGPT_chat_FINALLY
-- Perfil del autor en Hugging Face: https://huggingface.co/ISLAM-PO
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Notebook de prueba citado en la model card: `MasryGPT_Chat_Test.ipynb` (en el repositorio del modelo)
+- Guía de pruebas citada en la model card: `TESTING.md` (en el repositorio del modelo)
+- Unsloth: https://github.com/unslothai/unsloth
+- PEFT: https://github.com/huggingface/peft
+- TRL: https://github.com/huggingface/trl
+- Paper, blog o demo adicionales: no disponible

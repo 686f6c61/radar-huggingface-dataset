@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "JAWS (software) - Wikipedia, la enciclopedia libre",
-      "url": "https://es.wikipedia.org/wiki/JAWS_(software)",
-      "snippet": "JAWS (acrónimo de Job Access With Speech) es un software lector de pantalla para ciegos o personas con visión reducida. Es un …"
-    },
-    {
-      "title": "Cómo descargar, instalar y usar JAWS, el software gratuito para ...",
-      "url": "https://www.convertic.gov.co/641/w3-article-204660.html",
-      "snippet": "Feb 22, 2022 · Para instalar JAWS y hacer que un computador sea accesible para personas con discapacidad visual solo hace falta …"
-    },
-    {
-      "title": "JAWS - Freedom Scientific",
-      "url": "https://support.freedomscientific.com/Downloads/JAWS",
-      "snippet": "JAWS® For Windows is a computer screen reader for people who are blind and visually impaired. Download your Free Trial of JAWS …"
-    },
-    {
-      "title": "JAWS – Appsedu - Portal Educatiu",
-      "url": "https://portal.edu.gva.es/appsedu/es/jaws/",
-      "snippet": "JAWS (acrónimo de Job Access With Speech) es un software lector de pantalla para ciegos o personas con visión reducida. Su …"
-    },
-    {
-      "title": "Todo Sobre Jaws: El Lector de Pantalla Preferido por Usuarios con ...",
-      "url": "https://grindok.com/jaws-lector-de-pantalla/",
-      "snippet": "JAWS (Job Access With Speech) es uno de los lectores de pantalla más reconocidos y utilizados a nivel mundial. Este programa fue …"
-    }
-  ]
+  "sources": []
 }

@@ -2,94 +2,100 @@
 
 ## Resumen
 
-Al-Khwarizmi-3B-GGUF es una versión cuantizada en formato GGUF del modelo Al-Khwarizmi-3B, un fine-tune del modelo base HuggingFaceTB/SmolLM3-3B-Base desarrollado por Mohamed Zoelfakar. El modelo está especializado en la resolución de problemas matemáticos de nivel escolar (grade-school math) con razonamiento paso a paso, inspirado en el matemático persa Al-Khwarizmi, cuyo nombre dio origen a la palabra "algoritmo". Se entrenó sobre el conjunto de datos GSM8K de OpenAI, combinando una fase de fine-tuning completo con una fase posterior de LoRA, alcanzando una precisión media de token del 87,21 % en datos de validación.
+Al-Khwarizmi-3B-GGUF es la versión cuantizada en formato GGUF del modelo Al-Khwarizmi-3B, un ajuste fino de HuggingFaceTB/SmolLM3-3B-Base orientado a la resolución de problemas matemáticos de nivel escolar (grade-school math word problems). Lo desarrolla el autor independiente mzoelfakar y se distribuye con licencia Apache 2.0. El modelo está diseñado como un tutor de matemáticas conversacional que razona paso a paso en nueve idiomas, y su nombre homenajea a Muhammad al-Khwarizmi, origen etimológico de la palabra "algoritmo".
 
-Esta versión GGUF incluye dos cuantizaciones (BF16 y Q8_0) que permiten una ejecución eficiente en CPU y en GPUs con poca memoria, manteniendo una pérdida de precisión mínima. El modelo está pensado para uso conversacional y de tutoría matemática, y se distribuye bajo licencia Apache 2.0, lo que facilita su integración en aplicaciones educativas y de asistencia. Su relevancia actual radica en la creciente demanda de modelos pequeños, eficientes y especializados en dominios concretos, que puedan desplegarse en entornos con recursos limitados.
+El entrenamiento se realizó en tres etapas sobre el conjunto completo OpenAI GSM8K (estilos `main` y `socratic`): un ajuste fino completo inicial, dos pasadas de LoRA y una etapa final de DPO con un dataset multilingüe traducido por el autor. Con 3.075.098.624 parámetros y un tamaño de repo de 34,1 GB (que incluye múltiples cuantizaciones), el modelo busca ofrecer razonamiento matemático multilingüe en hardware modesto, incluyendo teléfonos móviles con la cuantización de 4 bits.
+
+La relevancia actual del modelo radica en su enfoque: en lugar de competir en tamaño, apuesta por un dominio estrecho (matemáticas de primaria y secundaria) con alineación DPO específica para preservar el razonamiento explicado en el idioma del usuario, en lugar de respuestas numéricas escuetas. La versión GGUF facilita el despliegue en CPU y en entornos con recursos limitados mediante llama.cpp y compatibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (SmolLM3-3B-Base, decoder causal) |
+| Arquitectura | Transformer decoder-only (derivada de SmolLM3-3B-Base); detalles internos de atención y capas no disponibles |
 | Parametros totales | 3.075.098.624 (3B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (el ejemplo de uso emplea n_ctx=2048) |
-| Tipos de cuantizacion | BF16, Q8_0 |
-| Idiomas soportados | Ingles |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | BF16 (referencia), Q8_0 (8 bits), i1-Q4_K_M (4 bits con imatrix); otras cuantizaciones GGUF no detalladas |
+| Idiomas soportados | Inglés, árabe, francés, español, alemán, italiano, portugués, chino y ruso (9 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (ficheros .gguf) |
+| Formato de pesos | GGUF (repo actual); safetensors disponible en el repo base mzoelfakar/Al-Khwarizmi-3B |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura SmolLM3-3B-Base, un transformer causal de 3.000 millones de parámetros desarrollado por Hugging Face, diseñado para ser eficiente en inferencia y adecuado para fine-tuning en tareas específicas. El entrenamiento se realizó en dos etapas:
+El modelo parte de SmolLM3-3B-Base, un transformer decoder-only de 3B parámetros, y se ajusta en tres fases secuenciales. La primera fase es un ajuste fino completo sobre OpenAI GSM8K (`main`), con 1.000 muestras y split 90/10, 450 pasos (1 época), learning rate 5e-5 con schedule coseno, alcanzando una pérdida de validación de 0,569 y una precisión de tokens del 84,75%. La segunda fase aplica LoRA con r=16 sobre todos los módulos lineales, usando el GSM8K completo en estilos `main` y `socratic`, con 3.550 pasos combinados en dos pasadas consecutivas (intercambiando el split de estilos entre pasadas para que cada problema se viera en ambos formatos de razonamiento), learning rate 5e-5 y schedule coseno, llegando a pérdida 0,462 y precisión del 87,21%.
 
-1. **Fine-tuning completo** sobre 1.000 muestras aleatorias del subconjunto `main` de GSM8K (90/10 train/val), con 450 pasos (1 época), learning rate 5e-5 y schedule coseno. La pérdida final de validación fue 0,569 con una precisión de token del 84,75 %.
-
-2. **Fine-tuning con LoRA** (r=16, módulos lineales completos) sobre el dataset GSM8K completo, incluyendo los estilos de razonamiento `main` y `socratic`, en dos pasadas consecutivas (3.550 pasos en total) con el mismo learning rate y schedule. La pérdida final de validación bajó a 0,462 y la precisión de token subió al 87,21 %.
-
-No se emplearon técnicas de RLHF ni DPO; el entrenamiento es supervisado sobre ejemplos de razonamiento paso a paso. La pérdida de entrenamiento y validación se mantuvieron cercanas durante todo el proceso, lo que sugiere ausencia de overfitting.
+La tercera fase es un DPO basado en LoRA (r=16, alpha=32, capas objetivo q_proj, k_proj, v_proj y o_proj, beta=0,5) sobre el dataset propio mzoelfakar/Mini-GSM8K-Multilingual-Alignment (480 muestras), con 30 pasos (1 época), learning rate pico 2e-5, schedule coseno y 5 pasos de warmup. El objetivo del DPO es preferir respuestas con pasos explicados ("chosen") frente a respuestas con solo dígitos ("rejected"), de modo que el modelo razone en el idioma del usuario y no se limite a emitir el resultado. El autor reporta una precisión de recompensa del 100% en la discriminación chosen-vs-rejected. No se detalla la composición completa del dataset de preentrenamiento original ni si hubo otras técnicas de alineación adicionales.
 
 ## Capacidades
 
-- Resolucion de problemas aritmeticos y de palabras de nivel escolar (tipo GSM8K) con razonamiento paso a paso.
-- Generacion de explicaciones detalladas y didacticas para cada solucion.
-- Soporte de conversacion multi-turno en ingles (formato chat).
-- Generacion de texto libre, aunque con especializacion en matematicas.
-- No incluye tool calling, ni capacidades de vision o audio.
-- No se ha documentado soporte para agentes ni razonamiento multi-paso fuera del ambito matematico.
+- Generación de texto conversacional con razonamiento matemático paso a paso para problemas verbales de nivel escolar.
+- Resolución de problemas GSM8K en dos estilos de razonamiento: `main` (solución directa) y `socratic` (preguntas guiadas).
+- Capacidad multilingüe en nueve idiomas (en, ar, fr, es, de, it, pt, zh, ru), con alineación DPO específica para mantener el razonamiento en el idioma del usuario.
+- Formato de tutoría matemática: explicación de pasos intermedios en lugar de respuesta numérica aislada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada (el razonamiento multi-paso matemático está cubierto por el formato de cadena de pensamiento).
+- Capacidades de visión, audio o thinking mode explícito: no disponibles.
+- Compatibilidad con text-generation-inference y endpoints compatibles (según tags del repo).
 
 ## Casos de uso
 
-- **Tutor matematico personalizado**: el modelo puede guiar a estudiantes en la resolucion de problemas aritmeticos, ofreciendo pasos intermedios y explicaciones claras. Su entrenamiento en GSM8K lo hace especialmente adecuado para niveles de primaria y secundaria.
-- **Asistente educativo integrado en plataformas LMS**: puede incorporarse en sistemas de gestion de aprendizaje para generar ejercicios resueltos, evaluar respuestas o proporcionar retroalimentacion automatica.
-- **Generacion de contenido didactico**: permite crear fichas de problemas, soluciones comentadas y ejemplos razonados para libros de texto o materiales docentes.
-- **Chatbot de apoyo al estudio**: al ser conversacional, puede mantener dialogos con estudiantes que necesitan ayuda con tareas de matematicas, aclarando dudas y reforzando conceptos.
-- **Prototipado rapido de aplicaciones de IA educativa**: gracias a su tamano reducido y formato GGUF, es ideal para pruebas locales en entornos de desarrollo sin necesidad de GPUs potentes.
-- **Despliegue en entornos con recursos limitados**: su cuantizacion Q8_0 permite ejecutarlo en CPUs convencionales o en GPUs de gama baja, habilitando soluciones de tutoria offline en escuelas o zonas sin conexion a internet.
+- Tutoría matemática interactiva: el modelo puede gestionar diálogos multi-turno explicando la resolución de problemas verbales paso a paso, adecuado para aplicaciones educativas porque el DPO prioriza explicaciones detalladas frente a respuestas escuetas.
+- Asistencia en deberes escolares multilingüe: útil en plataformas educativas que atienden a estudiantes en español, árabe, francés, alemán, italiano, portugués, chino o ruso, ya que el ajuste DPO preserva el idioma del usuario en el razonamiento.
+- Generación de datasets sintéticos de matemáticas: puede producir soluciones explicadas en varios idiomas para aumentar corpus de entrenamiento o evaluación, con la ventaja de sus dos estilos de razonamiento (`main` y `socratic`).
+- Despliegue en dispositivos móviles y edge: la cuantización i1-Q4_K_M (1,92 GB) permite ejecución en teléfonos con 6+ GB de RAM, adecuada para apps educativas offline.
+- Prototipado rápido en CPU: la versión Q8_0 (3,28 GB) con llama.cpp permite integrar un solucionador matemático en servicios backend sin GPU dedicada.
+- Evaluación comparativa de cuantizaciones: el modelo publica métricas de recuperación de precisión (97,4% en Q8_0, 97,0% en i1-Q4_K_M) que lo hacen útil como caso de estudio para pipelines de cuantización con imatrix y calibración específica.
+- Filtrado y verificación de respuestas matemáticas: puede usarse como generador de cadenas de razonamiento para comparar contra solucionadores externos y detectar discrepancias.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K completo, etc.) en la informacion disponible. La model card reporta metricas de validacion interna:
+Resultados publicados por el autor sobre GSM8K en modo 0-shot (coincidencia extractiva, error estándar aproximado de ±1,3 puntos):
 
-| Metrica | Valor |
-|---|---|
-| Precision media de token (validacion) | 87,21 % |
-| Perdida de validacion final | 0,462 |
-| Precision tras fine-tuning completo | 84,75 % |
-| Precision en primer checkpoint | 82,4 % |
+| Variante | Tamano | GSM8K 0-shot | Recuperacion vs BF16 | Notas |
+|---|---|---|---|---|
+| BF16 | 6,16 GB | 62,9% | N/A | Modelo completo |
+| Q8_0 | 3,28 GB | 61,3% | 97,4% | 8 bits, menor y más rápido con pérdida mínima |
+| i1-Q4_K_M | 1,92 GB | 61,0% | 97,0% | 4 bits con imatrix, calibrado con Mini-GSM8K-Multilingual-Alignment; apto para móviles |
 
-Estos datos corresponden a un subconjunto de validacion del propio dataset GSM8K y no son comparables directamente con benchmarks publicos.
+Métricas de entrenamiento reportadas: precisión media de tokens del 87,21% en validación tras LoRA (frente a 84,75% tras el ajuste completo y 82,4% en el primer checkpoint); pérdida de validación reducida aproximadamente un 19% (0,678 → 0,462) sin sobreajuste observado; precisión de recompensa DPO del 100%. No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: para el fichero Q8_0 (~3 GB de pesos), se requieren aproximadamente 4 GB de VRAM para inferencia con contexto corto. Para el fichero BF16 (~6 GB), se necesitan unos 7-8 GB.
-- **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) puede ejecutar la version Q8_0. Para BF16 se recomienda una GPU con 8 GB (RTX 3070, RTX 4060, etc.).
-- **Compatibilidad con consumer GPU**: si, cabe en GPUs de gama de entrada y media. Tambien se puede ejecutar en CPU pura, aunque con mayor latencia.
-- **Opciones de despliegue**: compatible con llama.cpp, llama-cpp-python, Ollama y servidores TGI (text-generation-inference) que soporten GGUF. Tambien puede usarse con vLLM si se convierte a safetensors.
-- **Latencia y throughput**: no se han publicado mediciones oficiales. En una CPU moderna se esperan decenas de tokens por segundo; en una GPU como RTX 3060, cientos de tokens por segundo.
+- VRAM estimada para inferencia: aproximadamente 6,2 GB en BF16, 3,3 GB en Q8_0 y 1,9 GB en i1-Q4_K_M (tamaños de fichero reportados; el consumo real de memoria añade overhead del runtime).
+- GPU recomendadas: no especificadas por el autor; por tamaño, cualquier GPU con 8 GB o más puede ejecutar BF16, y GPUs de 4-6 GB bastan para Q8_0 y Q4_K_M.
+- Cabe en GPU de consumo: sí; RTX 3060/4060 y superiores en BF16, y GPUs de gama media-baja o integradas en cuantizaciones Q8_0 y Q4_K_M.
+- Ejecución en CPU y móvil: la variante i1-Q4_K_M está pensada para teléfonos con 6+ GB de RAM.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), Ollama y otros runtimes compatibles con GGUF; el repo declara compatibilidad con text-generation-inference y endpoints compatibles. vLLM no está confirmado en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | GSM8K | Licencia | Formato |
 |---|---|---|---|---|---|
-| Al-Khwarizmi-3B (este) | 3B | No disponible | Matematicas escolares (GSM8K) | Apache 2.0 | GGUF y safetensors |
-| SmolLM3-3B-Base | 3B | No disponible | Modelo base general | Apache 2.0 | Safetensors |
-| Qwen2.5-3B | 3B | 32K | General, multilingue | Apache 2.0 | Safetensors, GGUF |
+| Al-Khwarizmi-3B-GGUF | 3B | No disponible | 62,9% (BF16, 0-shot) | Apache 2.0 | GGUF, safetensors |
+| SmolLM3-3B-Base (modelo base) | 3B | No disponible en la información | No disponible | No disponible en la información | Safetensors |
+| Alternativas de 3B especializadas en matemáticas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone de comparativas de rendimiento directas con estos modelos en tareas matematicas. La especializacion en GSM8K es la principal diferencia frente a modelos base generales.
+No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- **Dominio limitado**: entrenado principalmente en problemas de estilo GSM8K (respuesta numerica unica, aritmetica de nivel escolar). No se ha probado en problemas mas complejos, multi-parte o de estructura diferente.
-- **Errores aritmeticos**: pueden ocurrir deslices en problemas de varios pasos, una limitacion conocida en modelos de este tamano.
-- **Artefactos de formato**: las salidas crudas pueden contener marcadores como `<<...>>`, `**`, `#### <respuesta>` o `*` como signo de multiplicacion, que deben limpiarse antes de mostrar en interfaces de usuario.
-- **Idioma**: solo soporta ingles; no se ha entrenado en otros idiomas.
-- **Contexto limitado**: la longitud de contexto no esta documentada oficialmente; el ejemplo de uso emplea 2048 tokens, por lo que no es adecuado para tareas que requieran ventanas largas.
-- **Licencia**: Apache 2.0 permite uso comercial sin restricciones, pero se recomienda revisar la licencia del modelo base (SmolLM3-3B-Base) para confirmar compatibilidad.
+- Dominio estrecho: el ajuste se centra en problemas verbales de matemáticas de nivel escolar (GSM8K); el rendimiento en otras tareas (código, razonamiento general, conocimiento factual) no está evaluado y puede degradarse respecto al modelo base.
+- Riesgo de alucinación: como todo modelo generativo, puede producir pasos de razonamiento plausibles pero incorrectos, especialmente fuera de la distribución de GSM8K o en problemas de mayor dificultad.
+- Contexto: la longitud de contexto no está documentada; no se recomienda asumir ventanas largas sin verificación empírica.
+- Idiomas: aunque declara nueve idiomas, la alineación DPO se hizo sobre un dataset traducido de solo 480 muestras, por lo que la calidad multilingüe puede ser desigual entre idiomas y no está evaluada con benchmarks por idioma.
+- Sesgos: no se documentan análisis de sesgos; el entrenamiento sobre GSM8K puede heredar sesgos de ese corpus y del preentrenamiento de SmolLM3.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base SmolLM3 y de los datasets utilizados (GSM8K y el dataset propio del autor) antes de un despliegue en producción.
+- Producción: el modelo es un ajuste fino de un autor independiente con 588 descargas y 0 likes en el momento de la consulta; no hay evidencia de validación externa ni de soporte a largo plazo.
+- Precisión reportada: las métricas GSM8K del autor usan coincidencia extractiva con error estándar de ±1,3 puntos, por lo que las diferencias entre cuantizaciones (61,0% vs 62,9%) deben interpretarse con cautela.
 
 ## Enlaces
 
-- [Modelo GGUF en Hugging Face](https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B-GGUF)
-- [Modelo safetensors original](https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B)
-- [Perfil del autor en Hugging Face](https://huggingface.co/mzoelfakar)
-- [Demo en Colab](https://colab.research.google.com/github/mzoelfakar/Al-Khwarizmi-3B/blob/main/Al-Khwarizmi-3B.ipynb)
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B-GGUF
+- Modelo base (safetensors): https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B
+- Dataset de alineación multilingüe: https://huggingface.co/datasets/mzoelfakar/Mini-GSM8K-Multilingual-Alignment
+- Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
+- Modelo base original: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
+- Notebook de chat en Colab: https://colab.research.google.com/github/mzoelfakar/Al-Khwarizmi-3B/blob/main/Al-Khwarizmi-3B
+- Repositorio GitHub: https://github.com/mzoelfakar/Al-Khwarizmi-3B

@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
-      "url": "https://huggingface.co/litert-community",
-      "snippet": "LiteRT Community. LiteRT is Google&#x27;s on-device framework for high-performance ML & GenAI deployment on edge platforms. It is the improved successor to TensorFlow Lite. On this com"
-    },
-    {
-      "title": "LiteRT / Android export for Kev-0.8B · Issue #67 - GitHub",
-      "url": "https://github.com/jaredpalmer/kev/issues/67",
-      "snippet": "Hi Jared — would you be open to supporting a LiteRT/Android inference path for Kev, initially targeting Kev-0.8B? I maintain Jandal AI, an Android-native, local-first assistant. We currently use a ..."
-    },
-    {
-      "title": "litert-community/decider-0.8b-LiteRT · Hugging Face",
-      "url": "https://huggingface.co/litert-community/decider-0.8b-LiteRT",
-      "snippet": "GPU rows use ai-edge-litert 2.2.0 CompiledModel Metal with fp32 activations enforced and full acceleration. These are conversion-agreement measurements, not a real-traffic calibration or task-accuracy evaluation."
-    },
-    {
-      "title": "Google AI Edge LiteRT Samples - GitHub",
-      "url": "https://github.com/google-ai-edge/litert-samples",
-      "snippet": "Google AI Edge LiteRT Samples This repository contains official and community contributed sample applications, model recipes, agent skills and utilities for LiteRT (formerly known as TensorFlow Lite), Google&#x27;s open source, high-performance on-device machine learning framework and LiteRT-LM, a specialized orchestration layer for running LLMs ..."
-    },
-    {
-      "title": "Kev 0.8B: Specifications & Sources - gradually.ai",
-      "url": "https://www.gradually.ai/en/ai-models/kev-0.8b/",
-      "snippet": "Kev 0.8B by Jared Palmer. Technical specifications, availability, and official sources. The profile includes only source-backed details."
-    }
-  ]
+  "sources": []
 }

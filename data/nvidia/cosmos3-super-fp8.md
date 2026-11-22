@@ -2,94 +2,95 @@
 
 ## Resumen
 
-Cosmos3-Super-FP8 es la variante cuantizada en FP8 del modelo base Cosmos3-Super, desarrollado por NVIDIA dentro de su plataforma Cosmos de world foundation models. Se trata de un modelo omni-modal de 64.615.003.632 parametros (64B) disenado para generar y comprender texto, imagenes, video, audio y comandos de accion a partir de combinaciones de entradas multimodales, con aplicaciones centradas en Physical AI: robotica, conduccion autonoma y entornos industriales.
+Cosmos3-Super-FP8 es la variante cuantizada en FP8 del modelo base Cosmos3-Super, desarrollado por NVIDIA dentro de su plataforma Cosmos de world foundation models orientada a Physical AI (robótica, conducción autónoma y entornos industriales). El modelo es omnimodal: acepta combinaciones de texto, imagen, vídeo, audio y trayectorias de acción, y genera texto, imágenes, vídeo, audio y comandos de acción coherentes. Su función es servir como bloque fundacional para comprensión del mundo físico, simulación, predicción de futuros y aprendizaje de políticas encarnadas.
 
-La arquitectura es un Mixture-of-Transformers (MoT) con dos torres complementarias: una transformer autorregresiva para generacion de tokens discretos (texto) y una transformer de difusion para generacion continua multimodal (imagen, video, audio y acciones). Esta separacion permite aplicar el mecanismo de generacion mas adecuado a cada modalidad dentro de un unico marco.
+Arquitectura y escala: se trata de un Mixture-of-Transformers (MoT) con dos torres complementarias, una autoregresiva para tokens discretos (texto) y otra de difusión para generación continua multimodal. Cuenta con 64.615.003.632 parámetros totales (aproximadamente 64B) y un repositorio de 70,3 GB en safetensors. La cuantización FP8 se aplica a componentes seleccionados del modelo base, conservando la arquitectura y las aplicaciones previstas.
 
-Su relevancia actual radica en que unifica en un solo checkpoint tareas que tradicionalmente requerian modelos separados (world simulation, future prediction, action reasoning y generacion multimodal), y lo hace con una licencia OpenMDW 1.1 que permite uso comercial. La variante FP8 reduce el peso del repositorio a 70,3 GB, lo que facilita el despliegue en infraestructura con memoria limitada.
+Es relevante ahora porque unifica en un único marco la generación de modalidades heterogéneas con los mecanismos óptimos para cada una (decodificación next-token para texto, denoising iterativo para imagen/vídeo/audio/acción), y porque se distribuye con licencia OpenMDW1.1 para uso comercial y no comercial, con soporte declarado en vLLM, SGLang y diffusers.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con Mixture-of-Transformers (MoT): torre autorregresiva + torre de difusion |
-| Parametros totales | 64.615.003.632 (64B) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer con Mixture-of-Transformers (MoT): torre autoregresiva + torre de difusión |
+| Parametros totales | 64.615.003.632 (~64B) |
+| Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | 4096 tokens (texto) |
-| Tipos de cuantizacion | FP8 (cuantizacion aplicada a componentes seleccionados del modelo base) |
+| Tipos de cuantizacion | FP8 (variante cuantizada del modelo base Cosmos3-Super) |
 | Idiomas soportados | no disponible |
-| Licencia | OpenMDW 1.1 (openmdw1.1-license) |
-| Formato de pesos | safetensors |
+| Licencia | OpenMDW1.1 (openmdw1.1-license) |
+| Formato de pesos | safetensors (repo de 70,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-Cosmos3 se construye sobre una arquitectura Mixture-of-Transformers (MoT) con dos torres: una transformer autorregresiva que genera tokens discretos mediante decodificacion next-token estandar, y una transformer de difusion que sintetiza modalidades continuas (imagen, video, audio y acciones) mediante denoising iterativo. Esta combinacion permite modelar modalidades heterogeneas en un unico framework preservando el mecanismo de generacion optimo para cada una.
+Cosmos3 se construye sobre una arquitectura Mixture-of-Transformers (MoT) con dos torres: una transformer autoregresiva que genera tokens discretos y una transformer de difusión que sintetiza modalidades continuas. En inferencia, el texto se produce mediante decodificación autoregresiva estándar, mientras que imagen, vídeo, audio y acciones se generan por denoising iterativo. Este diseño permite modelar modalidades heterogéneas en un solo marco sin forzar un mecanismo de generación único. El modelo se desarrolló sobre Cosmos Framework.
 
-El modelo se desarrollo sobre el Cosmos Framework de NVIDIA. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La variante FP8 mantiene la arquitectura y las aplicaciones previstas del modelo base, con cuantizacion aplicada a componentes seleccionados. No se especifican innovaciones adicionales como decodificacion especulativa o attention linear en la informacion disponible.
+Los detalles concretos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO u otras etapas de alineación) no están disponibles en la información proporcionada. La model card únicamente especifica que la variante FP8 aplica cuantización a componentes seleccionados del modelo base, manteniendo su arquitectura y aplicaciones.
 
 ## Capacidades
 
-- Generacion de texto mediante decodificacion autorregresiva next-token.
-- Generacion de imagenes en formato JPG a resoluciones de 256p, 480p y 720p.
-- Generacion de video en formato MP4 a 256p, 480p y 720p, con un maximo de 5 frames por salida.
-- Generacion de audio muxado como stream AAC dentro del MP4, con un maximo de 0,5 segundos.
-- Generacion de comandos de accion como listas 1D en JSON, para trayectorias de 16 a 400 frames.
-- Comprension y generacion multimodal a partir de entradas combinadas de texto, imagen, video (con o sin audio) y trayectorias de accion.
-- Soporte de multiples embodiments roboticos: camara general (9D), vehiculo autonomo (9D), movimiento egocentrico (57D), brazo Franka Panda unico con gripper RobotiQ (10D), doble Franka Panda con RobotiQ (20D), Agibot (29D), UR (10D), Google robot (10D), WidowX 250 (10D) y UMI (9D).
-- Razonamiento de acciones y prediccion de futuros para aplicaciones de Physical AI.
-- World simulation y world understanding.
-- Soporte de despliegue mediante vLLM (vllm-omni), SGLang (sglang-diffusion) y diffusers.
+- Generación de texto mediante decodificación autoregresiva next-token.
+- Generación de imágenes en resoluciones 256p, 480p y 720p con relaciones de aspecto 16:9, 4:3, 1:1, 3:4 y 9:16.
+- Generación de vídeo en 256p, 480p y 720p, con un máximo de 5 fotogramas por generación.
+- Generación de audio, con entrada de hasta 0,5 segundos y salida como flujo AAC multiplexado en MP4.
+- Generación y razonamiento sobre trayectorias de acción para múltiples embodimentes: cámara general (9D), vehículo autónomo (9D), movimiento egocéntrico (57D), brazo Franka Panda simple con pinza RobotiQ (10D), doble Franka Panda (20D), Agibot (29D), UR (10D), Google Robot (10D), WidowX 250 (10D) y UMI (9D).
+- Comprensión multimodal de entradas de texto, imagen, vídeo (con o sin audio) y acción.
+- Simulación de mundo, predicción de futuros y razonamiento de acciones para Physical AI.
+- Soporte declarado de despliegue con vLLM (vllm-omni), SGLang (sglang-diffusion) y diffusers.
+- No se documenta en la información disponible soporte explícito de tool calling ni de agentes multi-step.
 
 ## Casos de uso
 
-- Simulacion de entornos roboticos: el modelo puede generar video de futuros plausibles a partir de una trayectoria de accion y una imagen inicial, lo que permite validar politicas de control antes de desplegarlas en hardware real, gracias a su capacidad de prediccion de futuros con entradas de hasta 400 frames.
-- Entrenamiento de politicas encarnadas (embodied policy learning): con soporte para 10 embodiments distintos (Franka Panda, Agibot, UR, WidowX 250, UMI, entre otros), se puede usar como generador de datos sinteticos o como modelo de mundo para aprendizaje por refuerzo en robotica.
-- Conduccion autonoma: dado un clip de video de 720p y una trayectoria de vehiculo autonomo (9D), el modelo puede generar video predictivo y comandos de accion coherentes, util para escenarios de simulacion de trafico y validacion de planificadores.
-- Generacion de video con audio para prototipado: a partir de texto e imagen, produce clips MP4 de hasta 5 frames con audio AAC muxado, adecuado para previsualizacion rapida de escenas en estudios de animacion o diseno de producto.
-- Investigacion en world models: el checkpoint FP8 permite ejecutar experimentos de comprension y generacion del mundo fisico en infraestructura con menos memoria que la version completa, facilitando la reproducibilidad en laboratorios academicos.
-- Automatizacion en entornos industriales y smart spaces: el modelo puede razonar sobre secuencias de video de camaras fijas y generar acciones o predicciones para sistemas de manipulacion en fabrica, aprovechando la entrada de video a 256p y 480p para procesamiento en tiempo casi real.
+- Simulación de entornos robóticos: dado un estado inicial y una trayectoria de acción, el modelo genera vídeo predictivo del resultado físico, útil para validar políticas antes de ejecutarlas en hardware real.
+- Aprendizaje de políticas encarnadas: con entradas de acción en dimensiones específicas por embodiment (Franka Panda 10D/20D, Agibot 29D, UR 10D), se emplea como base para entrenar o aumentar políticas de manipulación.
+- Conducción autónoma: la entrada de acción de vehículo autónomo (9D) permite generar escenarios contrafactuales de vídeo para pruebas de percepción y planificación.
+- Generación de datos sintéticos multimodales: producción de pares imagen/vídeo con audio para aumentar datasets de entrenamiento en dominios con escasez de datos reales.
+- Prototipado de gemelos digitales industriales: generación de secuencias de vídeo de entornos de fábrica a partir de texto e imágenes de referencia para planificación de espacios.
+- Investigación en world models: evaluación de comprensión física y predicción de futuros mediante generación condicionada por acción y comparación con ground truth.
+- Previsualización de movimiento de cámara: la acción de cámara general (9D) permite generar vídeo con trayectorias de cámara controladas para previsualización cinematográfica o de robótica móvil.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio pesa 70,3 GB en FP8, por lo que se requiere al menos ~70 GB de VRAM para cargar los pesos completos sin overhead adicional. Con overhead de activaciones y KV cache, se recomienda un minimo de 80 GB.
-- GPU recomendadas: NVIDIA H100 (80 GB) o A100 (80 GB) para carga completa en una sola GPU; configuraciones multi-GPU para mayor throughput.
-- Cabe en consumer GPU: no en GPUs de consumo individuales (RTX 4090 con 24 GB no es suficiente para los 70,3 GB de pesos FP8). Requiere configuraciones multi-GPU o GPUs de datacenter.
-- Opciones de despliegue: vLLM (vllm-omni), SGLang (sglang-diffusion), diffusers y la libreria cosmos.
-- Latencia y throughput estimados: no disponible.
+- El repositorio de pesos ocupa 70,3 GB en safetensors; la inferencia FP8 requiere al menos ese orden de magnitud de memoria de GPU para cargar el modelo completo, sin contar activaciones ni buffers de difusión.
+- No se dispone de estimaciones oficiales de VRAM para inferencia en la información proporcionada.
+- GPU recomendadas: no disponible de forma explícita; por tamaño y cuantización FP8, el despliegue requiere GPUs de centro de datos con memoria agregada suficiente (clase A100/H100 o superior). No se confirma compatibilidad con GPUs de consumo.
+- Opciones de despliegue declaradas: vLLM (vllm-omni), SGLang (sglang-diffusion) y diffusers.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cosmos3-Super-FP8 | 64B | 4096 tokens (texto) | Texto, imagen, video, audio, accion | OpenMDW 1.1 | Hugging Face |
-| Cosmos3-Super (base) | 64B | 4096 tokens (texto) | Texto, imagen, video, audio, accion | OpenMDW 1.1 | Hugging Face |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Cosmos3-Super-FP8 | ~64B | 4096 tokens (texto) | Texto, imagen, vídeo, audio, acción | OpenMDW1.1 | Hugging Face (nvidia/Cosmos3-Super-FP8) |
+| Cosmos3-Super (base) | ~64B | 4096 tokens (texto) | Texto, imagen, vídeo, audio, acción | OpenMDW1.1 | Colección nvidia/cosmos3 en Hugging Face |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de informacion sobre otros modelos omni-modales de world simulation comparables en la documentacion proporcionada.
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos competidores que permitan una comparación cuantitativa adicional.
 
 ## Limitaciones y advertencias
 
-- La longitud de contexto de texto esta limitada a 4096 tokens.
-- El video de salida esta limitado a un maximo de 5 frames, lo que restringe la generacion de secuencias largas.
-- El audio de entrada esta limitado a 0,5 segundos como maximo.
-- Solo se admiten entradas de imagen y video en color RGB de 8 bits (sRGB); no se soportan entradas en escala de grises.
-- Las entradas de accion solo funcionan con los embodiments listados explicitamente; no hay soporte generico para configuraciones arbitrarias.
-- No se especifican los idiomas soportados, por lo que no se puede garantizar cobertura multilingue.
-- No se documentan sesgos conocidos ni tasas de alucinacion en la informacion disponible.
-- La licencia OpenMDW 1.1 permite uso comercial segun la model card, pero se recomienda revisar los terminos completos en el enlace oficial antes de un despliegue en produccion.
-- Al ser una variante cuantizada en FP8, puede existir una degradacion de calidad respecto al modelo base Cosmos3-Super, aunque la model card no cuantifica esta perdida.
+- La cuantización FP8 puede introducir degradación de calidad respecto al modelo base Cosmos3-Super; la model card no cuantifica esa pérdida.
+- Límites de entrada estrictos: texto de 4096 tokens, vídeo de máximo 5 fotogramas, audio de máximo 0,5 segundos y acciones de 16 a 400 fotogramas. Estas restricciones limitan casos de uso con secuencias largas.
+- Solo se admiten entradas de imagen y vídeo en RGB de 8 bits por canal en espacio sRGB; no se soporta escala de grises.
+- El audio de entrada debe estar multiplexado en MP4 con 2 canales (estéreo) a 48 kHz.
+- Las acciones solo son válidas para los embodimentes listados; no hay soporte genérico para dimensiones arbitrarias.
+- Riesgo de alucinación y de generación físicamente inconsistente: no se documentan tasas de error ni evaluaciones de fidelidad física en la información disponible.
+- Sesgos conocidos: no disponible.
+- Idiomas soportados: no disponible; no se puede garantizar cobertura multilingüe.
+- Licencia OpenMDW1.1: aunque la model card declara uso comercial y no comercial, deben revisarse los términos completos del texto de la licencia antes de su adopción en producción.
+- El modelo está orientado a Physical AI; su uso fuera de ese dominio no está validado.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/nvidia/Cosmos3-Super-FP8
-- Coleccion Cosmos3: https://huggingface.co/collections/nvidia/cosmos3
+- Colección Cosmos3: https://huggingface.co/collections/nvidia/cosmos3
 - Ejemplos Cosmos3: https://huggingface.co/collections/nvidia/cosmos3-examples
-- Codigo: https://github.com/nvidia/cosmos
-- White paper: https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf
-- Web oficial: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
-- Framework Cosmos: https://github.com/nvidia/cosmos-framework
-- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
+- Código: https://github.com/nvidia/cosmos
+- White paper / technical report: https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf
+- Sitio web: https://research.nvidia.com/labs/cosmos-lab/cosmos3/
+- Cosmos Framework: https://github.com/nvidia/cosmos-framework
+- Licencia OpenMDW1.1: https://openmdw.ai/license/1-1/

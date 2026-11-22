@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "dronefreak/brackish-yolo11x",
+  "slug": "dronefreak-brackish-yolo11x",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/brackish-yolo11x",
+  "created_at": "2026-08-12T06:38:04.000Z",
+  "updated_at": "2026-11-21T22:49:34.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "safetensors",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "underwater",
+    "marine-biology",
+    "brackish-water",
+    "dataset:dronefreak/Brackish",
+    "arxiv:2410.17725",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 56974210,
+  "parameters_human": "57.0M",
+  "storage_bytes": 231171580,
+  "storage_human": "231 MB",
+  "context_length": null,
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Brackish Underwater",
+      "metric": "mAP@50 (test split)",
+      "value": 98.89
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Brackish Underwater",
+      "metric": "mAP@50-95 (test split)",
+      "value": 86.3
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Brackish Underwater",
+      "metric": "Precision (test split)",
+      "value": 98.84
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Brackish Underwater",
+      "metric": "Recall (test split)",
+      "value": 98.25
+    }
+  ],
+  "sources": []
+}

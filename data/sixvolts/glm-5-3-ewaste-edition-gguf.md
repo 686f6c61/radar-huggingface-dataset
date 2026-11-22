@@ -2,123 +2,96 @@
 
 ## Resumen
 
-GLM-5.3 "e-waste edition" es una familia de cuantizaciones GGUF del modelo base `zai-org/GLM-5.3`, publicada por el usuario SixVolts. No es un modelo entrenado desde cero, sino una conversión optimizada del checkpoint FP8 original al formato GGUF de llama.cpp, con cuantización imatrix y orientada a ejecutarse en hardware antiguo: CPU con AVX2 sobre grandes pools de RAM del sistema, o GPUs de generaciones pasadas como AMD MI50 y MI100 (gfx908).
+GLM-5.3-ewaste-edition-GGUF es una colección de cuantizaciones GGUF del modelo GLM-5.3 de Z.ai (zai-org), publicada por el usuario SixVolts. El objetivo declarado es hacer viable la inferencia de un modelo MoE de gran escala (753.329.940.480 parámetros totales según los safetensors del modelo base) en hardware antiguo o de generación anterior, concretamente CPUs sin AVX-512 y GPUs de centro de datos como la MI100 (gfx908). La idea central es que, en esos entornos, el cuello de botella de la decodificación no es el ancho de banda sino la des-cuantización de los expertos enrutados, por lo que se usan K-quants en lugar de i-quants con codebook para dichos expertos.
 
-El modelo subyacente tiene aproximadamente 745-753 mil millones de parámetros totales (la metadata safetensors declara 753.329.940.480) con unos 40B activos por token, sobre una arquitectura `glm-dsa` de tipo Mixture-of-Experts. Según la documentación de Z.ai, GLM-5.3 comparte base con GLM-5.2 —todas las mejoras provienen del post-entrenamiento— y ofrece una ventana de contexto de 1M tokens con licencia MIT.
+El modelo base GLM-5.3 es, según la model card, idéntico en arquitectura y configuración a GLM-5.2, diferenciándose únicamente por un post-entrenamiento adicional. Se trata de un transformer MoE con atención DSA (indexer selectivo por capas) y un cabezal NextN/MTP utilizable para decodificación especulativa en llama.cpp. La cuantización se realizó con una importance matrix de Unsloth (209 chunks de 3584 tokens) y se distribuye en cuatro variantes principales que van de 228,7 GiB a 403,8 GiB.
 
-Su relevancia es doble. Por un lado, permite ejecutar un modelo de escala frontera cuantizado a 2-4 bits (entre 228.7 y 297.5 GiB en sus variantes intermedias) sobre hardware reciclado en lugar de clústeres H100. Por otro, es el único punto de entrada GGUF documentado públicamente para GLM-5.3 en el momento de la publicación, e incluye una cabeza MTP/NextN utilizable para decodificación especulativa en llama.cpp.
+La relevancia actual del artefacto es doble: por un lado, permite ejecutar un modelo de más de 750.000 millones de parámetros totales en configuraciones multi-GPU modestas (por ejemplo, 8×32 GB o 10×32 GB sin spill); por otro, documenta con detalle decisiones de cuantización poco habituales, como el uso de un intermedio F32 en lugar de BF16 para preservar las escalas FP8 e4m3 con bloques de 128×128, o la selección de capas "frías" a partir de la imatrix.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | glm-dsa: MoE estilo DeepSeek con 256 expertos enrutados + 1 experto compartido, 8 activos por token, atencion MLA con indice DSA (lightning indexer) |
-| Parametros totales | 753.329.940.480 (~753B segun metadata safetensors; la model card indica 745B) |
-| Parametros activos | ~40B |
-| Longitud de contexto | 1M tokens en el modelo base GLM-5.3; configuracion concreta en GGUF no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, IQ2_XXS, F32 (imatrix) |
+| Arquitectura | Transformer MoE con atención DSA (indexer por capas) y cabezal NextN/MTP; arquitectura idéntica a GLM-5.2 |
+| Parametros totales | 753.329.940.480 (modelo base, safetensors) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (las pruebas de rendimiento se hicieron a 16k de contexto) |
+| Tipos de cuantizacion | Q4_K_XL, Q3_K_XL, Q3_K_M, Q2_K_XL; mezcla de Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, Q4_0, IQ2_XXS y F32 según grupo de tensores |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp) |
-
-Variantes publicadas:
-
-| Variante | Tamano | Expertos enrutados | No expertos | Objetivo |
-|---|---|---|---|---|
-| GLM-5.3-Q4_K_XL | no disponible (TBD) | Q4_K | Q8_0 | Maxima calidad; equipos CPU con mucha RAM (~512 GB) |
-| GLM-5.3-Q3_K_XL | 314.1 GiB | Q3_K | Q8_0 | Maxima calidad en GPU; expertos desbordan a CPU en <11x32 GB |
-| GLM-5.3-Q3_K_M | 297.5 GiB | Q3_K + Q2_K (capas frias) | Q6_K | 0-spill en 10x32 GB (320 GB HBM) |
-| GLM-5.3-Q2_K_XL | 228.7 GiB | Q2_K + IQ2_XXS (13 capas mas frias) | Q4_K | 0-spill en 8x32 GB; decodificacion mas rapida, menor calidad |
-| GLM-5.3-MTP-Q3_K_M-sc | 7.2 GB | — | — | Cabeza borrador NextN/MTP autocontenida |
+| Formato de pesos | GGUF (modelo base en FP8 e4m3 con escalas de bloque 128×128) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura `glm-dsa` es un transformer con Mixture-of-Experts de 256 expertos enrutados mas un experto compartido que se activa en cada token; se seleccionan 8 expertos enrutados por token. La atencion es de tipo MLA (Multi-head Latent Attention) y usa un "DSA lightning indexer" para el enrutado de atencion. El checkpoint original de GLM-5.3 se distribuye en FP8 e4m3 con escalas de bloque 128x128, donde las escalas son floats arbitrarios (según el autor, solo 194 de 95.040 en el primer shard son potencias de dos).
+El modelo base es un transformer con mezcla de expertos (MoE) que incorpora atención DSA, un mecanismo de indexación selectiva que solo lleva pesos de indexer en las 22 capas marcadas como `indexer_types: full`; el resto de capas reutiliza la selección de la última capa completa, tal como hace la implementación de referencia. El checkpoint resultante tiene 1.524 tensores, frente a los 1.809 de conversiones anteriores que duplicaban el indexer en cada capa. Incluye además un bloque NextN/MTP (blk.78) que en esta edición se cuantiza a Q4_K para poder usarse con `--spec-type draft-mtp` en llama.cpp.
 
-Esta edicion GGUF no entrena nada: es un proceso de conversion y cuantizacion. El autor convierte `fp8 x scale` en F32 (3.0 TB) para que el cuantizador `llama-quantize` vea exactamente el checkpoint de-dequantizado, en lugar de pasar por un intermedio BF16 que re-redondearia el 88% de los pesos. Respecto a la receta de GLM-5.2 del mismo autor, cambia tres cosas: usa F32 en vez de BF16 como intermedio, reduce el numero de tensores de 1.809 a 1.524 (el checkpoint solo lleva pesos del indexer DSA en las 22 capas con `indexer_types: full`, y el resto reutiliza la seleccion de la capa full previa), y hace utilizable la cabeza MTP (blk.78), cuyos expertos pasan a Q4_K.
+El proceso de cuantización destaca por tres decisiones técnicas. Primera, la conversión intermedia se hace en F32 y no en BF16: como el checkpoint original es FP8 e4m3 con escalas arbitrarias (194 de 95.040 en el primer shard son potencias de dos), un intermedio BF16 re-redondearía aproximadamente el 88% de los pesos des-cuantizados. Segunda, los expertos enrutados usan K-quants en lugar de i-quants con codebook, porque en CPUs pre-AVX-512 y en MI100 la des-cuantización de expertos, y no el ancho de banda, limita la decodificación. Tercera, la asignación de tipos por capa se guía por la importancia media de `ffn_down_exps` en la imatrix, que es monotónica con la profundidad y abarca seis órdenes de magnitud (de ≈0,003 en blk.3 a ≈14.860 en blk.77), de modo que las 32 capas MoE más frías (blk.3–34) reciben Q2_K y la cola caliente (blk.35–77) mantiene Q3_K/Q4_K.
 
-Las cuantizaciones son imatrix, construidas con la matriz de importancia de unsloth para GLM-5.3 (209 chunks x 3584 tokens). La eleccion de K-quants en lugar de i-quants con codebook para los expertos enrutados responde a que, en CPUs pre-AVX-512 y GPUs de generacion anterior (MI100/gfx908), el cuello de botella de decodificacion no es el ancho de banda sino la de-descuantizacion de expertos. El corte "frio" se deriva de la matriz de importancia (`in_sum2`), que es monotonica en profundidad y abarca seis ordenes de magnitud: las 32 capas MoE mas frias (blk.3-34) toman Q2_K y la cola caliente (blk.35-77) se queda en Q3_K/Q4_K.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO del modelo base en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional y completado, con pipeline declarado de `text-generation`.
-- Codigo: el modelo base GLM-5.3 es, según Z.ai, el modelo open-weights mas capaz para programacion, con una mejora del 50% sobre GLM-5.2 en su Z.ai Code Bench interno.
-- Tareas de horizonte largo (long-horizon tasks), el foco declarado del release de GLM-5.3.
-- Capacidad de razonamiento multi-paso y uso de herramientas heredada del modelo base (soporte de tool calling, `endpoints_compatible` aparece en los tags).
-- Decodificacion especulativa mediante la cabeza MTP/NextN autocontenida (`--spec-type draft-mtp` en llama.cpp).
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Capacidades de vision o audio: no disponibles.
-
-Nota: estas capacidades corresponden al modelo base GLM-5.3. La cuantizacion GGUF preserva el comportamiento del checkpoint hasta donde permite el nivel de bits elegido, pero no anade capacidades nuevas.
+- Generación de texto conversacional (`pipeline_tag: text-generation`, tag `conversational`).
+- Razonamiento y decodificación multi-paso, con soporte de decodificación especulativa mediante el cabezal NextN/MTP integrado.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue tras APIs compatibles.
+- Ejecución en llama.cpp, con soporte de atención DSA y draft-mtp en la versión mainline citada por el autor.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling, function calling, visión o audio: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia de un modelo frontera sobre hardware reciclado: la variante Q2_K_XL (228.7 GiB) cabe sin desbordamiento en 8 GPU de 32 GB, lo que permite servir GLM-5.3 en un nodo antiguo con muchas GPU o con CPU y grandes pools de RAM, en lugar de depender de H100.
-- Programacion asistida en local: con las mejoras de codigo del base y la ventana de 1M tokens, se puede alimentar un repositorio completo como contexto para refactorizaciones o revisiones, ejecutando la cuantizacion Q3_K_M sobre 10x32 GB.
-- Agentes de codigo de multiples pasos: el soporte de tool calling y la cabeza MTP para decodificacion especulativa permiten construir bucles de agente (edicion de ficheros, ejecucion de tests, correccion) con latencia de decodificacion reducida.
-- Analisis forense y de seguridad: dado el interes documentado de terceros en las capacidades de hacking de GLM-5.3, un despliegue local cuantizado sirve para pruebas de seguridad en entornos aislados, sin enviar datos a APIs externas.
-- Procesado de documentos muy largos: la ventana de 1M tokens del base permite resumir, extraer y consultar corpus extensos (expedientes, documentacion tecnica, logs) en una sola pasada.
-- Investigacion academica sobre cuantizacion: los ficheros publican la composicion tensor a tensor por capa y las perplexidades medidas, lo que los hace utiles como material de estudio sobre el efecto de los distintos tipos de cuantizacion en modelos MoE.
-- Despliegue interno con requisitos de licencia permisiva: la licencia MIT del base y de la cuantizacion facilita su integracion en productos comerciales sin las restricciones de otras licencias de modelos abiertos.
-- Sustitucion de API en entornos con conectividad limitada: al ser completamente local y offline, encaja en escenarios donde no se puede depender de servicios externos.
+- Inferencia de un MoE de gran escala en clústeres de GPUs de generación anterior: la variante Q3_K_M cabe sin spill en 10×32 GB (320 GB de HBM), lo que permite servir el modelo en nodos con MI100 o GPUs similares donde un checkpoint FP8 completo no cabría.
+- Despliegue en estaciones de trabajo con gran cantidad de RAM: la variante Q4_K_XL (403,8 GiB) está pensada para máquinas con aproximadamente 512 GB de RAM que descargan los expertos a CPU, manteniendo la máxima calidad dentro de la familia.
+- Servicio conversacional de baja concurrencia: con 11,5 tok/s de decodificación en un solo stream sobre 10×MI100, encaja en asistentes internos, generación de borradores o pipelines por lotes donde la latencia no es crítica.
+- Aceleración con decodificación especulativa: el cabezal MTP incluido permite activar `--spec-type draft-mtp` en llama.cpp para reducir el coste por token generado en los entornos objetivo.
+- Evaluación e investigación de técnicas de cuantización: la model card documenta composición por tensor, errores RMS por tipo y perplejidades, lo que sirve como referencia reproducible para estudiar el impacto de K-quants frente a i-quants en MoE.
+- Prototipado y experimentación con licencia permisiva: al ser MIT, puede integrarse en productos comerciales y en investigación académica sin restricciones de uso, siempre que se respeten las obligaciones de atribución.
+- Ajuste fino o destilación posterior sobre GGUF: las variantes de menor tamaño (Q2_K_XL, 228,7 GiB) permiten iterar en 8×32 GB sin spill antes de pasar a cuantizaciones mayores.
 
 ## Benchmarks y rendimiento
 
-Perplexity de las cuantizaciones, medida en wikitext-2 test, 100 chunks x 512 tokens, cache KV f16, `-fa off` (ruta DSA), ajustes identicos para todas:
+| Metrica | Valor |
+|---|---|
+| Perplejidad wikitext-2, Q4_K_XL (403,8 GiB) | 2,6537 ± 0,032 |
+| Perplejidad wikitext-2, Q3_K_XL (314,1 GiB) | 2,7910 ± 0,034 |
+| Perplejidad wikitext-2, Q3_K_M (297,5 GiB) | 2,8092 ± 0,034 |
+| Perplejidad wikitext-2, Q2_K_XL (228,7 GiB) | 3,6057 ± 0,047 |
+| Decodificación, 10×MI100 (gfx908), 0-spill, Q3_K_M | 11,5 tok/s, un stream, contexto 16k |
 
-| Cuant | Tamano | PPL (menor es mejor) | Contrapartida 5.2 (KV q8_0) |
-|---|---|---|---|
-| GLM-5.3-Q4_K_XL | no disponible | no disponible | 2.6733 |
-| GLM-5.3-Q3_K_XL | 314.1 GiB | no disponible | 2.8176 |
-| GLM-5.3-Q3_K_M | 297.5 GiB | 2.8092 ± 0.034 | 2.8348 |
-| GLM-5.3-Q2_K_XL | 228.7 GiB | 3.6057 ± 0.047 | 3.6129 |
-
-Datos declarados del modelo base GLM-5.3 (no especificos de estas cuantizaciones):
-- Mejora del 50% sobre GLM-5.2 en Z.ai Code Bench (benchmark interno).
-- SOTA open-source declarado en benchmarks publicos, incluido Terminal Bench 3.0.
-- Segun Artificial Analysis: inteligencia 45 para GLM-5.3 (Max); velocidad de salida 69 t/s para GLM-5.3 (Low); latencia al primer token de 32.08 s para GLM-5.3 (Low).
-- Medicion del autor sobre la cabeza MTP en MI100: el bloque MoE tarda 413 µs con q3_K y 253 µs con q4_K, con error RMS relativo de 0.30 (q2_K), 0.15 (q3_K), 0.072 (q4_K) y 0.036 (q5_K).
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar para estas cuantizaciones en la informacion disponible.
+Las perplejidades se midieron sobre wikitext-2 test, 100 chunks de 512 tokens, KV cache f16 y `-fa off` (ruta DSA), con ajustes idénticos para todas las variantes. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El dato de 11,5 tok/s corresponde a la ruta equivalente a mainline (atención DSA densa, sin cabezal de draft) y la model card queda truncada en la descripción del rendimiento con el cabezal MTP activado.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada por variante (equivalente al tamano del fichero mas overhead de contexto y cache KV): Q2_K_XL ~228.7 GiB, Q3_K_M ~297.5 GiB, Q3_K_XL ~314.1 GiB, Q4_K_XL no disponible (objetivo ~512 GB de RAM).
-- Configuraciones objetivo segun el autor: 8x32 GB (256 GB HBM) para Q2_K_XL con 0-spill; 10x32 GB (320 GB HBM) para Q3_K_M con 0-spill; menos de 11x32 GB para Q3_K_XL con expertos desbordando a CPU.
-- GPU recomendadas: AMD MI50 e MI100 (gfx908) son los objetivos explicitos del autor; el motivo es que en esas GPUs el cuello de botella es la de-descuantizacion de expertos, no el ancho de banda. Las GPU modernas (H100, A100) pueden ejecutar las variantes grandes, pero la receta no esta optimizada para ellas.
-- CPU: despliegue sobre grandes pools de RAM del sistema con AVX2 o anterior; no requiere AVX-512.
-- Cabe en GPU de consumo: no. Ni siquiera la variante mas pequena (228.7 GiB) cabe en una RTX 4090 (24 GB) ni en un solo equipo de consumo. La cabeza borrador MTP (7.2 GB) si cabria, pero es un componente auxiliar, no el modelo.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF, incluido `--spec-type draft-mtp` para la decodificacion especulativa). Otras opciones como vLLM, TGI u Ollama no estan mencionadas en la informacion disponible para estas cuantizaciones.
-- Latencia y throughput: no disponibles para el modelo completo. Solo se publican las mediciones de la cabeza MTP en MI100 citadas arriba.
+- VRAM/RAM según variante: Q4_K_XL 403,8 GiB (pensada para equipos con ≈512 GB de RAM y expertos en CPU); Q3_K_XL 314,1 GiB (máxima calidad en GPU, con spill a CPU por debajo de 11×32 GB); Q3_K_M 297,5 GiB (sin spill en 10×32 GB, 320 GB de HBM); Q2_K_XL 228,7 GiB (sin spill en 8×32 GB).
+- GPUs objetivo declaradas: MI100 (gfx908) y GPUs de centro de datos de generación anterior; también CPUs sin AVX-512 para el caso de expertos descargados a memoria del sistema.
+- GPUs consumer: no se documenta compatibilidad con GPUs consumer; el tamaño mínimo de 228,7 GiB excede con holgura la VRAM de cualquier GPU consumer individual, por lo que solo sería viable con descarga masiva a RAM.
+- Despliegue: llama.cpp (con soporte de DSA y `--spec-type draft-mtp`); el tag `endpoints_compatible` sugiere compatibilidad con APIs de endpoints, aunque no se detallan los servidores concretos.
+- Latencia y throughput: 11,5 tok/s de decodificación en un stream sobre 10×MI100 con Q3_K_M y contexto de 16k; no se proporcionan datos de throughput agregado ni de latencia de prefill.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato/licencia | Notas |
-|---|---|---|---|---|
-| GLM-5.3 e-waste edition (Q3_K_M) | 745-753B totales / ~40B activos | 1M tokens (base) | GGUF, MIT | PPL 2.8092 en wikitext-2; orientado a hardware antiguo |
-| GLM-5.2 e-waste edition (Q3_K_M) | mismo tamano | mismo | GGUF, MIT | Contrapartida directa; PPL 2.8348 con KV q8_0 |
-| unsloth/GLM-5.3-GGUF | mismo tamano | mismo | GGUF, MIT | Fuente de la matriz de importancia usada por esta receta |
-| Otros modelos MoE abiertos de escala similar | no disponible | no disponible | no disponible | No hay datos comparables en la informacion proporcionada |
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| GLM-5.3-ewaste-edition (Q3_K_M) | 753,3 B | no disponible | MIT | GGUF | 297,5 GiB, 3,39 bpw, sin spill en 10×32 GB |
+| GLM-5.2-ewaste-edition | no disponible | no disponible | MIT (según repo base) | GGUF | Edición previa con la misma filosofía de K-quants; perplejidades de referencia 2,8348 (Q3_K_M) |
+| GLM-5.3 (base, zai-org) | 753,3 B | no disponible | MIT | FP8 e4m3 con escalas 128×128 | Checkpoint original; requiere hardware con soporte FP8 y mucha más memoria |
 
-La comparacion mas relevante es interna: la Q3_K_M de GLM-5.3 mejora ligeramente la perplexidad de su equivalente de GLM-5.2 (2.8092 frente a 2.8348) manteniendo un tamano practicamente identico. No se dispone de comparativas con otros modelos de la misma categoria en la informacion proporcionada.
+No se dispone de información sobre otros modelos comparables de la misma categoría (por ejemplo, otros MoE de escala similar) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion, no un modelo nuevo: hereda todos los sesgos, limitaciones y riesgos del base `zai-org/GLM-5.3`.
-- La cuantizacion a 2-4 bits degrada la calidad. La Q2_K_XL sube la perplexidad a 3.6057 ± 0.047, un 28% por encima de la Q3_K_M (2.8092), con expertos IQ2_XXS en 13 capas; no es recomendable para tareas que exijan precision.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero es un riesgo inherente a los modelos generativos de esta escala.
-- Requisitos de hardware muy elevados: entre 228.7 y 314.1 GiB solo para pesos, mas cache KV. Esto excluye cualquier GPU de consumo y exige nodos multi-GPU o pools grandes de RAM.
-- Idiomas soportados: no disponible. No se puede confirmar un rendimiento multilingue fiable sin datos.
-- Restricciones de licencia: la licencia MIT es permisiva y permite uso comercial, pero conviene verificar que se aplica tanto a la cuantizacion como al modelo base.
-- Caveats tecnicos de produccion: el rendimiento declarado se midio con `-fa off` (ruta DSA) y cache KV f16, ajustes que pueden diferir de un despliegue real. Las variantes Q4_K_XL y Q3_K_XL tienen tamano y perplexidad aun sin publicar. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion comunitaria de la receta.
-- El autor denomina esta edicion optimizada para "e-waste" (hardware obsoleto); el soporte y las optimizaciones estan pensados para MI50/MI100 y CPU AVX2, no para aceleradores modernos.
+- La model card está truncada: la sección de rendimiento con decodificación especulativa MTP queda incompleta, por lo que no se conocen las cifras de aceleración reales.
+- No hay datos publicados de benchmarks de calidad estándar (MMLU, HumanEval, GSM8K) ni de evaluación multilingüe; la única métrica de calidad es la perplejidad en wikitext-2.
+- La variante Q2_K_XL degrada notablemente la perplejidad (3,6057 frente a 2,6537 de Q4_K_XL), por lo que no es recomendable para tareas sensibles a la calidad.
+- El modelo base es un MoE de más de 750.000 millones de parámetros totales: incluso la variante más pequeña requiere infraestructura multi-GPU o grandes cantidades de RAM, y no cabe en GPUs consumer.
+- La decodificación a 11,5 tok/s en un solo stream limita su uso en aplicaciones interactivas de baja latencia.
+- Riesgo de alucinación y sesgos: no se documentan evaluaciones específicas en la información proporcionada; deben asumirse los riesgos habituales de los modelos de lenguaje de gran escala.
+- Aunque la licencia es MIT, deben respetarse las condiciones del modelo base zai-org/GLM-5.3 y las atribuciones correspondientes; conviene verificar la licencia del checkpoint original antes de un uso comercial.
+- Las cuantizaciones están optimizadas para hardware antiguo (pre-AVX-512, MI100); en hardware moderno con AVX-512 o GPUs con soporte FP8 podrían existir alternativas más rápidas o de mayor calidad.
 
 ## Enlaces
 
-- Hugging Face (esta cuantizacion): https://huggingface.co/SixVolts/GLM-5.3-ewaste-edition-GGUF
-- GLM-5.2 e-waste edition (receta predecesora): https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF
-- Matriz de importancia de unsloth: https://huggingface.co/unsloth/GLM-5.3-GGUF
-- Pagina oficial de GLM-5.3: https://openlm.ai/glm-5.3/
-- Repositorio GitHub de la familia GLM-5: https://github.com/zai-org/GLM-5
-- Ficha de release en Artificial Analysis: https://artificialanalysis.ai/models/releases/glm-5-3
-- Articulo sobre capacidades de seguridad de GLM-5.3: https://www.notebookcheck.net/GLM-5-3-China-s-open-AI-model-built-a-Chrome-exploit-for-20.1413141.0.html
+- Repositorio Hugging Face: https://huggingface.co/SixVolts/GLM-5.3-ewaste-edition-GGUF
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3
+- Edición previa GLM-5.2 e-waste edition: https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF
+- Importance matrix de Unsloth para GLM-5.3: https://huggingface.co/unsloth/GLM-5.3-GGUF

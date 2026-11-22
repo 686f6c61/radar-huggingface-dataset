@@ -2,52 +2,53 @@
 
 ## Resumen
 
-CherryPit-1.2-2B-GGUF es la version cuantizada en formato GGUF del modelo CherryPit-1.2-2B, desarrollado originalmente por el usuario DRUPEs y publicada por mradermacher, un colaborador habitual de la comunidad de Hugging Face especializado en generar cuantizaciones estaticas de modelos abiertos. El modelo base es un transformer de aproximadamente 2.500 millones de parametros (2.516.756.480 segun los pesos en safetensors) orientado a tareas de codigo, desarrollo web, matematicas, razonamiento y tool calling, con un enfoque claro hacia el despliegue en dispositivo (on-device) y el uso como modelo pequeno de proposito general.
+CherryPit-1.2-2B-GGUF es la distribucion en formato GGUF del modelo CherryPit-1.2-2B, un modelo de lenguaje de 2.516.756.480 parametros (aproximadamente 2,5 mil millones) desarrollado por DRUPEs y cuantizado por mradermacher. El modelo esta etiquetado por su autor como orientado a codigo, desarrollo web, matematicas, razonamiento, tool calling y ejecucion en dispositivo (on-device), lo que lo situa en la categoria de modelos pequenos especializados en tareas tecnicas.
 
-La relevancia de esta publicacion radica en que facilita el acceso al modelo en multiples niveles de cuantizacion (desde Q2_K hasta f16), lo que permite ejecutarlo en hardware muy modesto, incluidas GPU de consumo e incluso CPU. La licencia Apache 2.0 y la etiqueta `minicpm` en los metadatos sugieren una arquitectura derivada de la familia MiniCPM, aunque la model card del cuantizador no detalla la arquitectura interna ni los datos de entrenamiento del modelo original.
+La relevancia de esta publicacion radica en su formato: mradermacher distribuye hasta once variantes de cuantizacion GGUF (desde Q2_K de 1,1 GB hasta f16 de 5,1 GB), lo que permite ejecutar el modelo en hardware de consumo y en entornos con memoria limitada. La licencia Apache 2.0 facilita su adopcion comercial sin restricciones adicionales.
 
-La informacion disponible sobre el modelo original es escasa: la model card del repositorio GGUF se limita a describir el proceso de cuantizacion y los ficheros generados, sin incluir detalles sobre el entrenamiento, el contexto maximo o los resultados de benchmarks. Esta ficha refleja esa limitacion y marca explicitamente como "no disponible" todo aquello que no consta en la informacion proporcionada.
+La model card del repositorio es puramente operativa (lista de cuantizaciones y notas de uso de GGUF) y no aporta informacion sobre arquitectura, datos de entrenamiento ni evaluaciones. La ficha siguiente refleja unicamente los datos disponibles en la informacion proporcionada; los campos no documentados se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de MiniCPM, segun la etiqueta `minicpm` de los metadatos; no se detalla en la model card) |
-| Parametros totales | 2.516.756.480 (aprox. 2,5 mil millones) |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
+| Arquitectura | no disponible (etiqueta "minicpm" en los tags; familia MiniCPM) |
+| Parametros totales | 2.516.756.480 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones) y safetensors (modelo base original) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo de cuantizaciones); modelo base en transformers |
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio GGUF no incluye informacion sobre la arquitectura interna del modelo base mas alla de la etiqueta `minicpm` y la referencia al modelo original `DRUPEs/CherryPit-1.2-2B`. Por el nombre y el tamano (2,5 mil millones de parametros), se trata de un transformer decoder-only de la familia MiniCPM, pero no se especifican el numero de capas, la dimension oculta, el mecanismo de atencion ni si emplea innovaciones como atencion lineal o decodificacion especulativa.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. El tag "minicpm" sugiere que el modelo base DRUPEs/CherryPit-1.2-2B deriva de la familia MiniCPM, pero no se confirma en la model card. El tamano de 2.516.756.480 parametros y la presencia de pesos en formato transformers (safetensors, segun el dato de parametros reales) indican un transformer denso de aproximadamente 2,5B parametros.
 
-Tampoco se dispone de datos sobre el entrenamiento: no consta el numero de tokens utilizados, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La unica informacion tecnica concreta es la relativa al proceso de cuantizacion realizado por mradermacher, que genero cuantizaciones estaticas (no ponderadas ni con imatrix) en doce niveles distintos, desde Q2_K (1,1 GB) hasta f16 (5,1 GB). El autor indica que las cuantizaciones ponderadas o con imatrix no estan disponibles en el momento de la publicacion.
+Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La unica informacion tecnica concreta es la lista de cuantizaciones generadas por mradermacher, que incluye variantes estaticas (este repositorio) y variantes con imatrix/weighted disponibles en un repositorio separado (CherryPit-1.2-2B-i1-GGUF).
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta `conversational`.
-- Generacion y asistencia en codigo, con etiquetas especificas `code` y `coding`.
-- Desarrollo web, segun la etiqueta `web-development`.
-- Razonamiento matematico, segun la etiqueta `math`.
-- Razonamiento general, segun la etiqueta `reasoning`.
-- Soporte de tool calling / function calling, segun la etiqueta `tool-calling`.
-- Orientado a despliegue on-device, segun la etiqueta `on-device`.
-- Modelo pequeno de proposito general, segun la etiqueta `small-language-model`.
-- Capacidades multilingues: solo ingles declarado.
+- Generacion de texto conversacional (tag "conversational").
+- Generacion y asistencia de codigo (tags "code", "coding").
+- Desarrollo web (tag "web-development").
+- Razonamiento matematico (tags "math", "reasoning").
+- Tool calling / function calling (tag "tool-calling").
+- Ejecucion en dispositivo (tag "on-device"), gracias a su tamano reducido y a las cuantizaciones GGUF.
+- Capacidades multilingues limitadas al ingles (idioma declarado: en).
+- Compatibilidad con endpoints (tag "endpoints_compatible").
+
+No se documentan capacidades de vision, audio, modo thinking explicito ni agentes multi-paso mas alla de lo que implica el tag de tool calling.
 
 ## Casos de uso
 
-- Asistente de codigo en local para editores y terminales: con cuantizaciones Q4_K_M de 1,7 GB, el modelo puede ejecutarse en una GPU de consumo o incluso en CPU, ofreciendo autocompletado y explicacion de fragmentos de codigo sin depender de servicios en la nube.
-- Desarrollo web asistido en entornos con recursos limitados: la etiqueta `web-development` sugiere utilidad para generar HTML, CSS y JavaScript, integrable en herramientas de prototipado rapido que corren en portatiles.
-- Razonamiento matematico basico en aplicaciones educativas: el modelo puede resolver problemas aritmeticos y algebraicos sencillos en dispositivos moviles o embebidos, gracias a su tamano reducido y a las cuantizaciones de 1,1-1,5 GB.
-- Agentes con tool calling en el borde: la etiqueta `tool-calling` indica soporte para invocar funciones, lo que permite construir agentes ligeros que consulten APIs o ejecuten acciones locales en un dispositivo sin conexion permanente.
-- Prototipado rapido de pipelines de IA generativa: al estar disponible en GGUF, se puede integrar con llama.cpp u Ollama para validar flujos de trabajo antes de migrar a modelos mayores.
-- Inferencia en CPU para entornos sin GPU: las cuantizaciones Q2_K y Q3_K permiten ejecutar el modelo en servidores modestos o Raspberry Pi de gama alta, util para demos y pruebas de concepto.
-- Filtrado y clasificacion de texto en ingles: el modelo puede emplearse para tareas de moderacion o etiquetado simple en Ingles, siempre que se valide su calidad con datos propios.
+- Asistente de codigo en local: con cuantizaciones Q4_K_M (1,7 GB) o Q5_K_M (1,9 GB) el modelo cabe en portatiles con GPU integrada o CPU, permitiendo autocompletado y explicacion de codigo sin conexion.
+- Desarrollo web asistido: el tag "web-development" sugiere uso para generar fragmentos HTML/CSS/JS y resolver dudas de frontend en un editor o IDE con extension local.
+- Razonamiento matematico en entornos educativos: el modelo puede resolver problemas paso a paso en aplicaciones de tutoria, con la ventaja de que la inferencia local evita enviar datos de estudiantes a servicios externos.
+- Tool calling en automatizaciones: el tag "tool-calling" permite integrarlo en pipelines que invocan funciones (APIs, scripts) en entornos con recursos limitados, como Raspberry Pi o mini-PC.
+- Prototipado rapido en CI/CD: al ser un modelo pequeno con licencia Apache 2.0, se puede desplegar en runners de integracion continua para tareas de revision de codigo o generacion de documentacion sin coste de API.
+- Chat conversacional embebido: con la variante Q8_0 (2,8 GB) se obtiene la mejor calidad de las cuantizaciones disponibles para asistentes conversacionales en aplicaciones de escritorio o moviles de gama alta.
+- Evaluacion y experimentacion: las once cuantizaciones permiten comparar el impacto de la compresion en calidad y velocidad, util para investigadores que estudian el rendimiento de modelos pequenos en hardware heterogeneo.
 
 ## Benchmarks y rendimiento
 
@@ -55,42 +56,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,1 GB con Q2_K, 1,6-1,7 GB con Q4_K_S/Q4_K_M, 2,2 GB con Q6_K, 2,8 GB con Q8_0 y 5,1 GB con f16 (los tamanos de fichero son una cota superior razonable de la memoria necesaria, a la que hay que anadir el espacio para el contexto KV).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; una RTX 3060, RTX 4060 o superior permite ejecutar Q8_0 con holgura. Para f16 se recomienda una GPU con 8 GB o mas (RTX 3070, RTX 4070, A10).
-- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna con 4 GB o mas de VRAM; las cuantizaciones Q2_K y Q3_K_S pueden ejecutarse incluso en iGPU con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio, text-generation-webui). El modelo base en safetensors es compatible con transformers.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia (segun tamano del archivo GGUF):
+  - Q2_K: ~1,1 GB de pesos; ~1,5-2 GB de VRAM en total con contexto corto.
+  - Q4_K_M: ~1,7 GB de pesos; ~2,5-3 GB de VRAM en total.
+  - Q8_0: ~2,8 GB de pesos; ~3,5-4 GB de VRAM en total.
+  - f16: ~5,1 GB de pesos; ~6 GB de VRAM en total.
+- GPU recomendadas: no se especifican en la documentacion. Por tamano, cualquier GPU con 4-6 GB de VRAM es suficiente para las cuantizaciones de 4-8 bits; para f16 se recomienda al menos 6 GB.
+- Cabe en GPU de consumo: si, practicamente en todas las GPU modernas (RTX 3060 12 GB, RTX 4060 8 GB, RTX 4090, e incluso GPUs integradas con memoria compartida para cuantizaciones bajas). Tambien es viable en CPU.
+- Opciones de despliegue: llama.cpp y Ollama son las opciones naturales para GGUF; el tag "endpoints_compatible" sugiere compatibilidad con servidores de inferencia tipo OpenAI-compatible. vLLM y TGI no estan confirmados para este formato.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
+No se dispone de datos de benchmarks ni de especificaciones completas (contexto, arquitectura) que permitan una comparacion rigurosa con alternativas. La siguiente tabla recoge unicamente lo verificable a partir de la informacion proporcionada.
+
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| CherryPit-1.2-2B (este) | 2,5 B | no disponible | Apache 2.0 | GGUF, safetensors | Enfoque en codigo, web, matematicas y tool calling |
-| CherryPit-1.1-2B | no disponible | no disponible | Apache 2.0 | GGUF | Version anterior del mismo linaje, mismas etiquetas salvo `web-development` |
-| CherryPit-1.0-2B | no disponible | no disponible | Apache 2.0 | GGUF | Version inicial del linaje, sin etiqueta `math` |
-| MiniCPM base (familia) | variable | no disponible | variable | safetensors, GGUF | Arquitectura de referencia segun la etiqueta `minicpm` |
-
-No se dispone de datos de rendimiento comparativo entre estas versiones ni con otros modelos de tamano similar, por lo que la comparativa se limita a parametros, licencia y formato.
+| CherryPit-1.2-2B-GGUF | 2,52B | no disponible | Apache 2.0 | GGUF | 11 cuantizaciones; tags de codigo, math, tool-calling |
+| Modelos comparables de ~2-3B | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Solo se declara soporte para ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
-- No se han publicado benchmarks, por lo que no es posible evaluar su calidad real en codigo, matematicas o razonamiento frente a alternativas.
-- Riesgo de alucinacion inherente a los modelos de 2,5 B de parametros, especialmente en tareas de razonamiento complejo y contextos largos.
-- La longitud de contexto no esta documentada; no se debe asumir una ventana amplia en produccion.
-- Las cuantizaciones Q2_K y Q3_K_S degradan la calidad de forma notable; para uso en produccion se recomienda Q4_K_M o superior.
-- El autor del cuantizador indica que no hay cuantizaciones ponderadas ni con imatrix, lo que puede afectar a la calidad en comparacion con cuantizaciones optimizadas de otros repositorios.
-- Aunque la licencia es Apache 2.0, conviene verificar la licencia y las condiciones del modelo base original (`DRUPEs/CherryPit-1.2-2B`) antes de un uso comercial.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea limitado.
+- Sesgos: no se documentan evaluaciones de sesgo ni de seguridad.
+- Alucinacion: al ser un modelo de ~2,5B parametros, es esperable una tasa de alucinacion superior a la de modelos grandes; no hay datos publicados que la cuantifiquen.
+- Contexto: se desconoce la longitud de contexto soportada, lo que impide garantizar conversaciones largas o procesamiento de documentos extensos.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_M estan marcadas por el autor como de menor calidad; para produccion se recomienda Q4_K_M o superior.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base DRUPEs/CherryPit-1.2-2B y de la familia MiniCPM si se deriva de ella.
+- Model card escasa: no hay informacion sobre datos de entrenamiento, evaluaciones ni limitaciones declaradas por el autor original, lo que dificulta una evaluacion de riesgos en produccion.
+- Fecha de creacion futura (2026-11-06): dato anomalo en los metadatos del repositorio; conviene contrastar la procedencia antes de adoptarlo.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/CherryPit-1.2-2B-GGUF
-- Modelo base original: https://huggingface.co/DRUPEs/CherryPit-1.2-2B
-- Version anterior 1.1: https://huggingface.co/mradermacher/CherryPit-1.1-2B-GGUF
-- Version anterior 1.0: https://huggingface.co/mradermacher/CherryPit-1.0-2B-GGUF
-- Pagina de overview del cuantizador: https://hf.tst.eu/model#CherryPit-1.2-2B-GGUF
-- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Modelo base: https://huggingface.co/DRUPEs/CherryPit-1.2-2B
+- Cuantizaciones imatrix/weighted: https://huggingface.co/mradermacher/CherryPit-1.2-2B-i1-GGUF
+- Pagina de overview del autor: https://hf.tst.eu/model#CherryPit-1.2-2B-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

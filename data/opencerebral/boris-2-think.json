@@ -50,6 +50,37 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm",
+      "value": 50.13
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm",
+      "value": 63.93
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm",
+      "value": 34.81
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "acc_norm",
+      "value": 72.31
+    },
+    {
+      "task": null,
+      "dataset": "ArithMark-3",
+      "metric": "acc_norm",
+      "value": 49.2
+    }
+  ],
   "sources": []
 }

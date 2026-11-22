@@ -80,31 +80,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Solstice — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Solstice",
-      "snippet": "Le solstice est un événement astronomique qui se produit deux fois par an, lorsque la position apparente du Soleil atteint sa plus …"
-    },
-    {
-      "title": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
-      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-1M",
-      "snippet": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-1M ... Copy to bucket new"
-    },
-    {
-      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
-      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
-      "snippet": "Mar 20, 2026 · Le solstice correspond au moment de l'année où les rayons du soleil touchent la Terre avec l'angle le plus incliné. Le …"
-    },
-    {
-      "title": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
-      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e",
-      "snippet": "This is the high-performance quantization and serving release of DavidAU's flagship Qwen3.8-27B Cold Fusion checkpoint, packaged and optimized by Solstice-AI. Featuring a historic 735 ARC-C and 882 ARC-E, this model delivers an unprecedented 9-for-9 clean sweep over Claude Opus 4.6 Max across the official Claude Code benchmark harness."
-    },
-    {
-      "title": "Solstice - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Solstice",
-      "snippet": "The lengths of time when the sun is up are longer around the summer solstice and shorter around the winter solstice, except near the …"
-    }
-  ]
+  "sources": []
 }

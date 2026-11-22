@@ -2,77 +2,87 @@
 
 ## Resumen
 
-El modelo `oxalis-ink/shamrock-0-e2b` es un ajuste fino (fine-tune) de Google Gemma 4 E2B, desarrollado por Oxalis Ink para su aplicación de escritorio Oxalis, orientada al aprendizaje de idiomas. El modelo está especializado en tareas de traducción (texto y cámara), tutoría conversacional, chat y consulta de diccionario para japonés, coreano y chino simplificado. Se distribuye con pesos en formato fp16 (safetensors) y cuantizaciones GGUF, además de un drafter MTP para decodificación especulativa.
+shamrock-0-e2b es un ajuste fino (fine-tune) del modelo multimodal google/gemma-4-E2B-it, desarrollado por oxalis-ink para las funciones de aprendizaje de idiomas de la aplicacion de escritorio Oxalis: traduccion por camara, traduccion de texto, tutor, conversacion y diccionario, con foco en japones, coreano y chino simplificado. El modelo conserva la arquitectura del Gemma 4 E2B original y se distribuye tanto en formato safetensors (checkpoint fusionado en fp16) como en GGUF y MLX.
 
-Con 5.101.150.240 parámetros y una ventana de contexto de 8192 tokens (según fuente externa), el modelo ofrece un equilibrio entre capacidad y eficiencia para su integración en aplicaciones de escritorio. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que lo hace atractivo para productos educativos y de traducción. La relevancia actual radica en su especialización en idiomas asiáticos, un nicho donde los modelos generalistas suelen rendir peor.
+El dato de parametros reales del repositorio safetensors es de 5.104.297.539 parametros (aproximadamente 5,1 mil millones), lo que resulta relevante para planificar el despliegue: no es un modelo de 2B pese a la nomenclatura "E2B" del modelo base. El repositorio ocupa 64,7 GB e incluye ademas un drafter de prediccion multi-token (MTP) para decodificacion especulativa.
 
-## Especificaciones técnicas
+La relevancia de esta ficha es acotada: el propio autor advierte de que el ajuste fino rinde mal fuera de la aplicacion Oxalis, y la licencia CC BY-NC 4.0 impide el uso comercial. Es, por tanto, un modelo de interes para investigacion sobre adaptacion multimodal a tareas de traduccion y para estudiar el empaquetado de drafters MTP en llama.cpp y MLX, no una opcion generalista de produccion.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Gemma 4 E2B) |
-| Parametros totales | 5.101.150.240 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 8192 tokens (según free2aitools) |
-| Tipos de cuantizacion | fp16 (safetensors), GGUF Q4_K_M, f16 (mmproj), Q8_0 (MTP) |
-| Idiomas soportados | Japonés, coreano, chino simplificado (según model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Arquitectura | Transformer multimodal derivada de Gemma 4 E2B (image-text-to-text); detalles internos no disponibles |
+| Parametros totales | 5.104.297.539 (segun safetensors del repo) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | fp16 (checkpoint fusionado), GGUF Q4_K_M, GGUF Q8_0 (drafter MTP), MLX 4-bit, mmproj en f16 |
+| Idiomas soportados | Japones, coreano y chino simplificado (objetivo del ajuste fino); lista completa de idiomas no disponible |
+| Licencia | CC BY-NC 4.0 para las modificaciones de Oxalis; pesos base Gemma 4 bajo Apache 2.0 |
+| Formato de pesos | safetensors, GGUF, MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Gemma 4 E2B de Google, un transformer denso de aproximadamente 5.1B parámetros. No se han publicado detalles específicos sobre el proceso de entrenamiento del fine-tune, como el número de tokens, la composición del dataset o el uso de técnicas de alineación (RLHF/DPO). La model card indica que el ajuste se realizó sobre las superficies de aprendizaje de idiomas de la app Oxalis, lo que sugiere un entrenamiento supervisado con datos de traducción y conversación multilingüe.
+El modelo parte de google/gemma-4-E2B-it, un modelo multimodal de entrada imagen-texto de la familia Gemma 4 de Google DeepMind. Sobre esa base, Oxalis aplico un ajuste fino y fusiono los pesos resultantes en un checkpoint fp16. La model card no detalla el volumen de datos de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO especificas para el ajuste.
 
-Una innovación destacable es la inclusión de un drafter MTP (multi-token prediction) para decodificación especulativa, disponible tanto en formato GGUF (para llama.cpp) como en formato Hugging Face. Este componente acelera la inferencia al predecir varios tokens por paso, reduciendo la latencia en aplicaciones interactivas.
+La innovacion tecnica destacable es el empaquetado de un drafter de prediccion multi-token (MTP) para decodificacion especulativa, distribuido en dos formatos: `mtp-shamrock-0-e2b-Q8_0.gguf` para llama.cpp (se sirve con `--spec-type draft-mtp`) y la misma cabeza en formato Hugging Face bajo `MTP/assistant/`, que tambien actua como drafter del build MLX 4-bit cargado con mlx-vlm. El repositorio incluye ademas un proyector multimodal (`mmproj-shamrock-0-e2b-f16.gguf`) necesario para el runtime de llama.cpp de la aplicacion.
 
 ## Capacidades
 
-- Traducción de texto entre japonés, coreano y chino simplificado, y probablemente hacia/desde otros idiomas (no especificado).
-- Traducción por cámara (reconocimiento óptico de caracteres integrado con el modelo de visión, ya que es image-text-to-text).
-- Tutor de idiomas: conversación interactiva con correcciones y explicaciones.
-- Chat conversacional multilingüe.
-- Consulta de diccionario y explicaciones de vocabulario.
-- Soporte de decodificación especulativa mediante drafter MTP para reducir latencia.
-- No se menciona soporte explícito de tool calling o function calling.
+- Generacion de texto conversacional y traduccion de texto entre japones, coreano, chino simplificado y, presumiblemente, otros idiomas del modelo base.
+- Traduccion a partir de imagen (image-text-to-text), orientada a la funcion de traduccion por camara de la aplicacion Oxalis.
+- Funciones de tutor de idiomas y de diccionario, segun la descripcion del autor.
+- Decodificacion especulativa mediante drafter MTP, con soporte en llama.cpp y en MLX.
+- Capacidades multimodales heredadas de Gemma 4 E2B (entrada de imagen); el alcance exacto no esta documentado en la model card.
+- Soporte de tool calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Aplicación de aprendizaje de idiomas: el modelo actúa como tutor conversacional, manteniendo diálogos multi-turno en japonés, coreano o chino, corrigiendo errores y ofreciendo explicaciones gramaticales. Su contexto de 8192 tokens permite manejar conversaciones extensas sin perder el hilo.
-- Traducción instantánea por cámara: al ser un modelo image-text-to-text, puede procesar imágenes capturadas por la cámara del dispositivo, extraer el texto y traducirlo en tiempo real, ideal para viajeros o estudiantes que leen carteles, menús o documentos.
-- Traducción de documentos técnicos: con su especialización en idiomas asiáticos, puede traducir manuales, artículos o correos con mayor precisión que modelos generalistas, gracias al fine-tune con datos específicos de esos idiomas.
-- Asistente de vocabulario: integrado en un diccionario, el modelo puede generar ejemplos de uso, sinónimos y explicaciones contextuales, ayudando a los estudiantes a comprender matices de palabras.
-- Práctica de pronunciación y conversación: mediante la función "talk", el modelo puede simular conversaciones cotidianas, permitiendo a los usuarios practicar fluidez y comprensión auditiva (si se combina con síntesis de voz).
-- Integración en pipelines de traducción automática: al ser un modelo ligero (5.1B), puede desplegarse en servidores modestos o en equipos de escritorio, sirviendo como motor de traducción para aplicaciones de productividad o atención al cliente en mercados asiáticos.
+- Traduccion por camara en una aplicacion de escritorio: el modelo recibe una imagen con texto en japones, coreano o chino simplificado y devuelve la traduccion, aprovechando la ruta multimodal y el proyector `mmproj` incluido en el repo.
+- Traduccion de texto integrada en un editor o lector: uso del checkpoint fp16 o del GGUF Q4_K_M para traducir fragmentos seleccionados dentro de la interfaz de la aplicacion.
+- Tutor de idiomas con correccion de frases: el ajuste fino esta orientado a las superficies de aprendizaje de Oxalis, por lo que encaja en flujos de practica guiada con retroalimentacion.
+- Diccionario asistido: consulta de terminos y explicaciones en los tres idiomas objetivo dentro de la propia aplicacion.
+- Despliegue local en Apple silicon: el build MLX 4-bit con drafter MTP permite ejecutar el modelo en un Mac sin GPU dedicada, con latencia reducida gracias a la decodificacion especulativa.
+- Evaluacion de decodificacion especulativa: el par drafter MTP + modelo base sirve para medir ganancias de throughput en llama.cpp con `--spec-type draft-mtp` frente a decodificacion autoregresiva estandar.
+- Investigacion sobre adaptacion multimodal de bajo coste: punto de partida para estudiar como se comporta un fine-tune pequeno de Gemma 4 E2B en tareas de traduccion restringidas a un dominio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas estándar para este modelo específico. Tampoco se ofrecen comparaciones cuantitativas con otros modelos en la model card o en las fuentes consultadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 5.1B parámetros en fp16, se requieren aproximadamente 10-11 GB de VRAM. Con cuantización Q4_K_M, la huella se reduce a unos 3-4 GB, permitiendo ejecución en GPUs de consumo.
-- GPUs recomendadas: para fp16, una RTX 3090, RTX 4090 o A100 son adecuadas. Para GGUF Q4_K_M, una RTX 3060 de 12 GB o superior es suficiente.
-- Compatibilidad con consumer GPU: sí, especialmente con cuantización GGUF. Modelos como RTX 4060 Ti (16 GB) o RTX 4070 pueden ejecutarlo cómodamente.
-- Opciones de despliegue: llama.cpp (con soporte para el drafter MTP mediante `--spec-type draft-mtp`), vLLM, Ollama (si se convierte el GGUF), y Transformers con Hugging Face.
-- Latencia y throughput: no se han publicado cifras oficiales. Con decodificación especulativa, se espera una mejora significativa en velocidad de generación, aunque los valores concretos dependen del hardware y la configuración.
+- VRAM estimada para inferencia: el checkpoint fp16 con 5,1 mil millones de parametros requiere aproximadamente 10-11 GB solo para pesos, mas overhead de activaciones y del proyector multimodal; el GGUF Q4_K_M reduce los pesos a unos 3-3,5 GB; el build MLX 4-bit queda en un rango similar.
+- GPU recomendadas: para fp16, GPU con 16 GB o mas (RTX 4090, A100 40 GB, H100); para Q4_K_M, GPU consumer con 6-8 GB puede ser suficiente.
+- Cabe en GPU consumer: si, en configuraciones de 8 GB o superiores con cuantizacion Q4_K_M; en fp16 requiere tarjetas de gama alta o profesionales.
+- Opciones de despliegue: llama.cpp (con `--spec-type draft-mtp` para el drafter), mlx-vlm en Apple silicon, transformers para el checkpoint safetensors. Compatibilidad con vLLM, TGI u Ollama no esta documentada.
+- Latencia y throughput estimados: no disponibles; la presencia del drafter MTP sugiere una mejora en velocidad de decodificacion, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con otros modelos de la misma categoría. El modelo base Gemma 4 E2B (google/gemma-4-E2B-it) es el punto de partida, pero no se han publicado métricas comparativas entre el fine-tune y el original. Tampoco se conocen otros modelos especializados en traducción japonés-coreano-chino con características similares. Por tanto, la comparativa se limita a indicar que el modelo es un ajuste especializado del Gemma 4 E2B, con la ventaja de su licencia Apache 2.0 y su soporte para decodificación especulativa.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| shamrock-0-e2b | 5.104.297.539 | no disponible | CC BY-NC 4.0 (modificaciones) | Hugging Face, GGUF, MLX |
+| google/gemma-4-E2B-it | no disponible en la informacion | no disponible | Apache 2.0 | Hugging Face |
+| Alternativas de traduccion JA/KO/ZH del mismo tamano | no disponible | no disponible | no disponible | no disponible |
+
+La unica comparacion documentada es con el modelo base: shamrock-0-e2b anade ajuste fino para el dominio Oxalis, empaquetado GGUF/MLX y un drafter MTP, a cambio de una licencia mas restrictiva (CC BY-NC 4.0) que la del Gemma 4 original (Apache 2.0). No se dispone de datos de rendimiento comparado con otros modelos de traduccion.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: al ser un modelo de lenguaje, puede generar contenido incorrecto o inventado, especialmente en tareas de traducción donde el contexto es ambiguo. No se han realizado evaluaciones de sesgo específicas para este modelo.
-- Limitaciones de idioma: el fine-tune se centra en japonés, coreano y chino simplificado. Su rendimiento en otros idiomas puede ser inferior al del modelo base Gemma 4.
-- Contexto limitado: con 8192 tokens, no es adecuado para documentos muy largos o conversaciones extremadamente extensas sin truncamiento.
-- Dependencia del modelo base: al ser un fine-tune, hereda las limitaciones y riesgos del Gemma 4 E2B original, incluyendo posibles sesgos en datos de entrenamiento.
-- Requisitos de integración: el uso del drafter MTP requiere configuraciones específicas en llama.cpp; si no se utiliza, la inferencia será más lenta pero funcional.
-- Licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar los términos adicionales de la licencia de Gemma 4 (enlace en la model card) para asegurar cumplimiento.
+- El autor advierte explicitamente de que el ajuste fino rinde mal fuera de la aplicacion Oxalis; no es un modelo generalista.
+- Licencia CC BY-NC 4.0: prohibido el uso comercial, incluida la venta de pesos, el servicio en productos o APIs de pago y la integracion en aplicaciones comerciales. Requiere licencia comercial negociada con Oxalis.
+- Al derivar de Gemma 4, se aplican tambien los terminos de la licencia de Gemma 4 (Apache 2.0) sobre los pesos base; el aviso NOTICE del repositorio detalla la relacion entre ambas licencias.
+- Riesgo de alucinacion y sesgos: no documentado en la model card; al ser un fine-tune de dominio restringido, la degradacion fuera de ese dominio puede manifestarse como traducciones incorrectas o respuestas incoherentes.
+- Cobertura idiomatica limitada en la practica a japones, coreano y chino simplificado; el comportamiento en otros idiomas no esta documentado.
+- Longitud de contexto no disponible, lo que impide planificar casos de uso con documentos largos.
+- El repositorio es grande (64,7 GB) por incluir fp16, GGUF, MLX y el drafter; conviene descargar solo los artefactos necesarios.
+- Sin datos publicados de benchmarks, evaluaciones de seguridad ni tasas de error de traduccion.
 
 ## Enlaces
 
-- [Hugging Face - oxalis-ink/shamrock-0-e2b](https://huggingface.co/oxalis-ink/shamrock-0-e2b)
-- [Perfil de Oxalis en Hugging Face](https://huggingface.co/oxalis-ink)
-- [Shamrock 0 E2b - AI Model Insights & Benchmarks (free2aitools)](https://free2aitools.com/model/oxalis-ink/shamrock-0-e2b)
-- [Gemma 4: All Models Compared — 2B to 27B (aimadetools)](https://www.aimadetools.com/blog/gemma-4-family-guide/)
-- [Gemma 4: How a 31B Model Beats 400B Rivals (tech-insider.org)](https://tech-insider.org/google-gemma-4-open-model-benchmarks-2026/)
+- Modelo en Hugging Face: https://huggingface.co/oxalis-ink/shamrock-0-e2b
+- Modelo base: https://huggingface.co/google/gemma-4-E2B-it
+- Sitio del autor: https://oxalis.ink
+- Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/
+- Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

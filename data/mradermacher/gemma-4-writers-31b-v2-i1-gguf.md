@@ -1,98 +1,96 @@
 # mradermacher/Gemma-4-Writers-31B-V2-i1-GGUF
 
 ## Resumen
-Gemma-4-Writers-31B-V2-i1-GGUF es una colección de cuantizaciones en formato GGUF generadas por mradermacher a partir del modelo Ateron/Gemma-4-Writers-31B-V2, un merge creado con mergekit por el usuario Ateron y orientado a roleplay y escritura creativa. Se apoya en la arquitectura de la familia Gemma 4 de Google DeepMind, concretamente en la variante densa de 31B parámetros, que constituye la base subyacente del merge.
 
-El modelo resuelve el problema de ejecutar localmente un modelo de 30.700 millones de parámetros en hardware de consumo mediante cuantizaciones de 1 a 8 bits, incluyendo variantes con matriz de importancia (imatrix) que reducen la pérdida de calidad respecto a las cuantizaciones estáticas. El repositorio pesa 90,2 GB en total y ofrece un rango amplio de cuantizaciones, desde IQ1_S e IQ2_XXS hasta Q6_K, además de un fichero imatrix para generar cuantizaciones propias.
+Gemma-4-Writers-31B-V2-i1-GGUF es una coleccion de cuantizaciones GGUF del modelo Ateron/Gemma-4-Writers-31B-V2, un merge de modelos orientado a escritura creativa y roleplay. El autor de las cuantizaciones es mradermacher, un conocido publicador de versiones GGUF de la comunidad, mientras que el modelo base fue creado por Ateron mediante tecnicas de merge (mergekit). El modelo cuenta con 30.697.345.596 parametros totales (aproximadamente 30,7 mil millones) y esta publicado bajo licencia Apache 2.0.
 
-La relevancia actual radica en que combina un modelo base multimodal de última generación, con capacidades declaradas de visión y contexto largo en la familia Gemma 4, con un ajuste específico para roleplay en inglés. No obstante, en el momento de redactar esta ficha el repositorio no registra descargas ni valoraciones, y la model card no documenta datos de entrenamiento, benchmarks ni detalles del merge más allá de la etiqueta mergekit.
+El modelo resuelve el problema de desplegar un modelo de 31B en hardware de consumo mediante cuantizaciones de 1 a 6 bits, con variantes que van desde 7,3 GB (IQ1_S) hasta 25,3 GB (Q6_K). Las cuantizaciones i1 (imatrix) incorporan informacion de importancia de pesos para preservar mejor la calidad en tasas de bits bajas, lo que resulta especialmente relevante para modelos de roleplay y escritura donde los matices estilisticos importan.
+
+La relevancia actual radica en que permite ejecutar localmente un modelo de 31B especializado en generacion creativa en ingles, con opciones que caben en GPUs de consumo de 8-24 GB segun la cuantizacion elegida. El modelo esta orientado exclusivamente al ingles y su pipeline no esta especificado en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredada de la familia Gemma 4); modelo resultante de un merge con mergekit |
-| Parametros totales | 30.697.345.596 (aproximadamente 30,7B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no especificada en la model card; la familia Gemma 4 declara hasta 256K tokens |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S; incluye fichero imatrix |
-| Idiomas soportados | en (segun etiquetas del repositorio); la familia Gemma 4 declara mas de 140 idiomas |
+| Arquitectura | no disponible (modelo base es un merge con mergekit; presumiblemente transformer, sin confirmar) |
+| Parametros totales | 30.697.345.596 (30,7B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; tambien existe una version estatica en mradermacher/Gemma-4-Writers-31B-V2-GGUF |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (variantes i1/imatrix y estaticas en repositorio separado) |
+| Formato de pesos | GGUF (con fichero imatrix separado para crear cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
-El modelo parte de Ateron/Gemma-4-Writers-31B-V2, un merge generado con mergekit (etiquetas merge y mergekit) a partir de modelos de la familia Gemma 4. La arquitectura subyacente es un transformer denso de 31B parámetros; la familia Gemma 4, según su documentación oficial, emplea arquitecturas tanto densas como Mixture-of-Experts y una arquitectura unificada sin encoder para el tratamiento multimodal, con encoders de visión y audio mejorados. La variante de 31B corresponde a la configuración densa dentro de las cinco tallas anunciadas (E2B, E4B, 12B, 26B A4B y 31B).
 
-La model card del repositorio cuantizado no aporta información sobre el número de tokens de entrenamiento, la composición del dataset, ni si el merge incorporó fases de RLHF o DPO. Tampoco se documentan innovaciones técnicas propias del merge más allá de la combinación de pesos mediante mergekit. La contribución específica de este repositorio es la cuantización: se generaron variantes con matriz de importancia (imatrix) para mejorar la fidelidad frente a cuantizaciones estáticas, que se distribuyen en un repositorio aparte (mradermacher/Gemma-4-Writers-31B-V2-GGUF). La model card indica que el modelo base es de tipo vision, y que los ficheros mmproj, si existen, se alojan en el repositorio de cuantizaciones estáticas.
+La informacion disponible no detalla la arquitectura interna del modelo base Ateron/Gemma-4-Writers-31B-V2. Las etiquetas indican que se trata de un merge realizado con mergekit y orientado a roleplay y escritura creativa. El nombre sugiere una base de la familia Gemma con 31B de parametros, pero no se confirma en la model card proporcionada. No se dispone de datos sobre composicion del dataset de entrenamiento, numero de tokens, ni si hubo fases de RLHF o DPO.
+
+La innovacion tecnica destacable de esta publicacion es el uso de cuantizaciones i1 con fichero imatrix (importancia de pesos), que permite generar versiones de baja tasa de bits preservando mejor el comportamiento del modelo original. El autor incluye un fichero imatrix de 0,1 GB para que terceros puedan crear sus propias cuantizaciones. Tambien se ofrece una version de cuantizaciones estaticas (sin imatrix) en un repositorio separado. No se documentan innovaciones arquitectonicas propias, como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
-- Generación de texto en inglés, con orientación específica a roleplay y escritura creativa (etiqueta roleplay y pila conversacional).
-- Conversación multiturno, como indica la etiqueta conversational.
-- Capacidad multimodal declarada: la model card indica "This is a vision model", aunque los ficheros mmproj no se incluyen en este repositorio.
-- Capacidades potenciales de código, razonamiento y matemáticas heredadas de la familia Gemma 4, no verificadas específicamente para este merge.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: el repositorio está etiquetado únicamente como en; la familia Gemma 4 declara más de 140 idiomas, pero el comportamiento del merge no está documentado.
-- Capacidad especial de modo pensamiento (thinking mode): no disponible.
+
+- Generacion de texto en ingles orientada a escritura creativa y narrativa.
+- Roleplay conversacional multi-turno, segun las etiquetas del modelo (roleplay, conversational).
+- Generacion de texto general y conversacion.
+- Capacidades multilingues limitadas al ingles segun la model card (language: en).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte explicito de agentes o razonamiento multi-paso.
+- No se documenta vision, audio ni modo thinking.
+- No se documentan capacidades de codigo o matematicas mas alla de las genericas de un modelo de texto.
 
 ## Casos de uso
-- Roleplay y narrativa interactiva: es el propósito declarado del merge, con etiqueta explícita de roleplay y una pila conversacional, lo que lo hace adecuado para personajes consistentes en conversaciones multiturno.
-- Escritura creativa asistida: generación de relatos, diálogos y descripciones en inglés, aprovechando el ajuste "Writers" del modelo base.
-- Despliegue local en hardware de consumo: las cuantizaciones de menor tamaño (Q2_K, IQ3_XS, IQ4_XS) permiten ejecutar un modelo de 30,7B en GPUs con 12-16 GB de VRAM.
-- Prototipado de asistentes conversacionales en inglés: gracias a su naturaleza conversacional puede servir como base para probar flujos de diálogo antes de migrar a modelos mayores.
-- Generación de datos sintéticos de diálogo: puede emplearse para producir corpus de conversaciones o guiones con fines de evaluación o ajuste.
-- Experimentación con cuantizaciones: el fichero imatrix incluido permite crear cuantizaciones personalizadas ajustadas a un caso de uso concreto, útil para investigación en compresión de modelos.
-- Inferencia en CPU o sistemas mixtos: al estar en formato GGUF, es compatible con llama.cpp en entornos sin GPU dedicada, aunque con latencias elevadas.
+
+- Escritura creativa asistida: el modelo esta especializado en narrativa y escritura, por lo que puede generar relatos, dialogos y descripciones con estilo literario en ingles, ejecutandose localmente con cuantizaciones de 17-22 GB (Q4_K_M a Q5_K_M).
+- Roleplay y personajes conversacionales: las etiquetas del modelo indican entrenamiento orientado a roleplay, lo que permite mantener conversaciones con personajes consistentes en ingles, con despliegue en llama.cpp u Ollama.
+- Prototipado de chatbots narrativos: para desarrolladores que quieran probar experiencias conversacionales tematicas sin depender de APIs externas, usando la cuantizacion i1-Q4_K_S (17,9 GB) en una GPU de 24 GB.
+- Generacion de contenido editorial en ingles: borradores de articulos, guiones o ficcion, con ejecucion en estaciones de trabajo con una sola GPU de consumo.
+- Experimentacion con merges: el fichero imatrix incluido permite a investigadores crear cuantizaciones propias y comparar calidad frente a las versiones estaticas del repositorio hermano.
+- Despliegue en entornos con recursos limitados: las variantes IQ2 e IQ3 (8,8-14,5 GB) permiten ejecutar un modelo de 31B en GPUs de 12-16 GB, con la perdida de calidad que ello implica, para tareas de generacion creativa no criticas.
+- Evaluacion comparativa de cuantizaciones: util para estudiar el impacto de las cuantizaciones i1 con imatrix frente a las estaticas en tareas de escritura, usando el fichero imatrix como referencia.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible.
 
-La model card no incluye métricas de MMLU, HumanEval, GSM8K ni de evaluaciones de roleplay, y la búsqueda web no ha devuelto resultados de rendimiento asociados a este repositorio concreto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia (valores aproximados según cuantización, para 30,7B parámetros; no confirmados por el autor):
-  - IQ1_S / IQ2_XXS / IQ2_XS: en torno a 8-11 GB.
-  - Q2_K / Q2_K_S / IQ3_XS / IQ3_XXS: en torno a 11-14 GB.
-  - Q3_K_S / Q3_K_M / Q3_K_L / IQ3_S: en torno a 14-16 GB.
-  - Q4_K_S / Q4_K_M / IQ4_XS / Q4_0 / Q4_1 / small-IQ4_NL: en torno a 17-20 GB.
-  - Q5_K_S / Q5_K_M: en torno a 21-23 GB.
-  - Q6_K: en torno a 25-26 GB.
-- GPU recomendadas: para las cuantizaciones Q4 y Q5, tarjetas con 24 GB (RTX 3090, RTX 4090, A5000) resultan adecuadas; para Q6_K se recomienda 32 GB (A100 40 GB, V100 32 GB); las variantes de 2-3 bits caben en GPUs de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti Super 16 GB).
-- Cabe en GPU de consumo: sí, en las cuantizaciones de 1 a 5 bits según la VRAM disponible; las variantes Q6_K requieren al menos 24-32 GB.
-- Opciones de despliegue: llama.cpp, Ollama, koboldcpp (habitual para roleplay), LM Studio y text-generation-webui (oobabooga), así como cualquier runtime compatible con GGUF. El soporte de GGUF en vLLM es limitado y no está documentado para este modelo.
+
+- VRAM estimada para inferencia (segun cuantizacion): desde aproximadamente 8-9 GB para i1-IQ1/IQ2_XXS hasta 26-28 GB para i1-Q6_K, incluyendo overhead de contexto y cache KV (el tamano del fichero es una cota inferior).
+- Cuantizaciones recomendadas por el autor: i1-Q4_K_S (17,9 GB, "optimal size/speed/quality") e i1-Q4_K_M (18,8 GB, "fast, recommended").
+- GPU recomendadas: para Q4_K_M y superiores, GPU de 24 GB (RTX 3090, RTX 4090, A10G) o superiores (A100 40/80 GB, H100); para IQ2/IQ3, GPU de 12-16 GB (RTX 4070 Ti, RTX 4080, RTX A4000).
+- GPU de consumo: si cabe en RTX 3090/4090 con cuantizaciones Q4-Q5; en GPUs de 12-16 GB solo con cuantizaciones IQ2/IQ3, con perdida de calidad notable; las variantes IQ1 (7,3-7,8 GB) caben en GPUs de 8 GB pero el autor las describe como "for the desperate" y "mostly desperate".
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; la libreria declarada en Hugging Face es transformers, pero el formato GGUF esta pensado para motores de inferencia locales. No se confirma compatibilidad con vLLM o TGI para GGUF en la informacion disponible.
 - Latencia y throughput estimados: no disponibles.
+- Tamano total del repositorio: 334,8 GB (incluye todas las cuantizaciones y el fichero imatrix).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Gemma-4-Writers-31B-V2-i1-GGUF (este) | 30,7B | no especificado | GGUF (imatrix) | apache-2.0 | Repositorio Hugging Face, 0 descargas |
-| mradermacher/Gemma-4-Writers-31B-V2-GGUF | 30,7B | no especificado | GGUF (estatico) | apache-2.0 | Repositorio Hugging Face |
-| Ateron/Gemma-4-Writers-31B-V2 | no disponible | no disponible | safetensors (presumiblemente) | no disponible | Repositorio Hugging Face |
-| Gemma 4 31B (Google DeepMind) | 31B (denso) | hasta 256K tokens | safetensors / otros | Gemma (terminos propios) | Modelo oficial |
+| Gemma-4-Writers-31B-V2-i1-GGUF (este) | 30,7B | no disponible | GGUF (i1 + imatrix) | Apache 2.0 | Merge orientado a roleplay/escritura, solo ingles |
+| Gemma-4-Writers-31B-V2-GGUF (mradermacher, estatico) | 30,7B | no disponible | GGUF (estatico) | Apache 2.0 | Misma base, sin imatrix; calidad inferior en bits bajos segun el autor |
+| Ateron/Gemma-4-Writers-31B-V2 (base) | 30,7B | no disponible | safetensors (presumible) | Apache 2.0 | Modelo original sin cuantizar; requiere mas VRAM |
 
-Los datos de rendimiento comparado no están disponibles; no se han podido verificar métricas de roleplay ni de capacidades generales para este merge frente a modelos de tamaño similar.
+No se dispone de datos de benchmarks ni de otros modelos comparables en la informacion proporcionada, por lo que no es posible comparar rendimiento numerico.
 
 ## Limitaciones y advertencias
-- Sesgos conocidos: no documentados en la model card. Al ser un merge orientado a roleplay, puede heredar sesgos de los modelos combinados en la fusión.
-- Riesgo de alucinación: no evaluado; como todo modelo generativo de este tamaño, es susceptible de inventar información, especialmente en dominios factuales.
-- Limitación de idioma: el repositorio está etiquetado únicamente para inglés (en), pese a que la familia Gemma 4 declara soporte multilingüe. El comportamiento en castellano no está verificado.
-- Limitación de contexto: la longitud de contexto efectiva no está documentada para este merge, aunque la base Gemma 4 declara hasta 256K tokens; no se garantiza que el merge la conserve.
-- Restricciones de licencia: se declara apache-2.0, aunque el modelo base pertenece a la familia Gemma, cuyos términos de uso de Google podrían imponer condiciones adicionales no reflejadas en la etiqueta del repositorio. Conviene verificar los términos de Gemma antes de uso comercial.
-- Ausencia de adopción: 0 descargas y 0 valoraciones en el momento de la consulta, lo que implica falta de validación comunitaria.
-- Vision declarada sin ficheros mmproj en este repositorio: la capacidad de visión no puede aprovecharse directamente aquí; habría que acudir al repositorio de cuantizaciones estáticas.
-- Origen del modelo: al ser un merge sin informe técnico, no se documentan datos de entrenamiento, proceso de evaluación ni control de calidad.
-- Uso en producción: la falta de benchmarks y de pruebas de robustez desaconseja su empleo en sistemas críticos sin una evaluación previa exhaustiva.
+
+- Idioma: el modelo solo declara soporte de ingles; el rendimiento en castellano no esta garantizado y probablemente sea deficiente.
+- Es un merge de la comunidad sin model card detallada: no hay informacion sobre datos de entrenamiento, sesgos o evaluaciones, lo que dificulta evaluar riesgos.
+- Riesgo de alucinacion: inherente a los modelos generativos; en escritura creativa el riesgo es menor en cuanto a exactitud factual, pero relevante si se usa para contenido informativo.
+- Las cuantizaciones IQ1 e IQ2 conllevan perdida de calidad significativa; el propio autor desaconseja las IQ1 salvo como ultimo recurso.
+- No se documenta soporte de tool calling, agentes ni contexto largo; no asumir estas capacidades en produccion.
+- Licencia Apache 2.0 permite uso comercial, pero al ser un merge de modelos de terceros conviene verificar las licencias de los modelos constituyentes del merge original (no disponibles en la informacion).
+- El repositorio ocupa 334,8 GB; descargar solo la cuantizacion necesaria.
+- No hay benchmarks publicados que permitan validar la calidad frente a alternativas.
 
 ## Enlaces
-- Repositorio Hugging Face (i1/imatrix): https://huggingface.co/mradermacher/Gemma-4-Writers-31B-V2-i1-GGUF
-- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-V2-GGUF
-- Modelo base (merge original): https://huggingface.co/Ateron/Gemma-4-Writers-31B-V2
-- Perfil del cuantizador: https://huggingface.co/mradermacher
-- Página de peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Modelo relacionado (Gemma4-Writer-31B-D-GGUF): https://huggingface.co/mradermacher/Gemma4-Writer-31B-D-GGUF
-- Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
-- Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
-- Gemma 4 Technical Report (arXiv): https://arxiv.org/abs/2607.02770
-- Guía de uso de GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Gemma-4-Writers-31B-V2-i1-GGUF
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-V2-GGUF
+- Modelo base: https://huggingface.co/Ateron/Gemma-4-Writers-31B-V2
+- Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-4-Writers-31B-V2-i1-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del autor: https://www.nethype.de/

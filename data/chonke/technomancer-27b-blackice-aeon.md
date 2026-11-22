@@ -2,59 +2,96 @@
 
 ## Resumen
 
-El modelo `ChonkE/Technomancer-27b-BlackICE-AEON` es un peso publicado en Hugging Face por el usuario ChonkE bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, dataset de entrenamiento ni instrucciones de uso; únicamente se declara la licencia. El nombre sugiere que podría tratarse de un modelo de 27 mil millones de parámetros, posiblemente derivado de la familia Qwen (dado que los resultados de búsqueda web relacionados mencionan variantes de Qwen 3.6 y Qwen 3.8 con el sufijo "AEON", que suele indicar un proceso de abliteration o desalineación), pero no hay evidencia directa que confirme esta relación.
+Technomancer-27b-BlackICE-AEON es un ajuste fino (fine-tune) del modelo Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16, desarrollado por el usuario ChonkE. Se trata de un modelo de lenguaje de 27.320 millones de parámetros orientado principalmente a la interpretación de juegos de rol de mesa (TTRPG), actuando como máster o asistente de partida, aunque su dataset de entrenamiento también incluye código, matemáticas, seguridad ofensiva (OWASP, CTF), motores de juego (Unity, Unreal) y datos de rol sin censura.
 
-En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es una publicación reciente o sin difusión. No se dispone de información sobre su arquitectura, capacidades, rendimiento o requisitos de hardware. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de documentación, sin inventar especificaciones.
+El modelo destaca por dos motivos técnicos: incorpora una cabeza MTP (Multi-Token Prediction) de una capa para decodificación especulativa, lo que permite acelerar la generación en motores compatibles, y declara una ventana de contexto de 196.608 tokens. Se distribuye bajo licencia MIT, con pesos en safetensors (BF16) y GGUF (f16, además de cuantizaciones INT6, INT4 e INT2 aportadas por el autor y por mradermacher).
+
+Es relevante para desarrolladores que necesitan un modelo de rol y narrativa con contexto muy largo y licencia permisiva, pero conviene tratarlo con cautela: es un fine-tune comunitario sobre una base ya modificada, sin benchmarks publicados ni documentación de composición del dataset.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el nombre sugiere 27B, sin confirmar) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso tipo Qwen3.5 (64 capas + 1 capa MTP), según `config.json` |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 196.608 tokens (196K) |
+| Tipos de cuantizacion | BF16 (entrenamiento), f16 GGUF, INT6, INT4, INT2; amplia serie de cuantizaciones de mradermacher |
+| Idiomas soportados | no disponible (tokenizer Qwen, vocabulario de 248K) |
 | Licencia | MIT |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors (13 shards, BF16), GGUF (f16 de 54,6 GB y cuantizaciones) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el proceso de alineación o las innovaciones técnicas. La model card únicamente contiene la línea `license: mit`, sin secciones adicionales. Los resultados de búsqueda web relacionados con modelos similares (Qwen 3.6-27B y Qwen3.8-27B AEON) sugieren que podría tratarse de un fine-tune o abliteration de un modelo base de Qwen, pero no hay confirmación de que `Technomancer-27b-BlackICE-AEON` esté vinculado a esos proyectos. Cualquier afirmación sobre su arquitectura sería especulativa.
+El modelo parte de una arquitectura transformer densa de Qwen3.5 con 64 capas, a la que se añade una capa adicional de cabeza MTP (`mtp_num_hidden_layers: 1`) para decodificación especulativa. El ajuste fino se realizó mediante LoRA con rango 64 y alpha 128 sobre la base AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16, en precisión BF16. El tokenizer es el de Qwen, con un vocabulario de 248.000 entradas.
+
+No se especifican el número de tokens de entrenamiento, la composición cuantitativa del dataset ni si hubo etapas de RLHF o DPO. El autor describe el dataset como "personal", con contenido de TTRPG (Dungeons & Dragons, Pathfinder), programación, matemáticas, hardening de sistemas, OWASP, CTF, Unity, Unreal y datos de rol sin censura. La innovación técnica destacable es la cabeza MTP para decodificación especulativa, que el autor advierte que puede interferir con las tiradas de dados aleatorias del modelo de rol y recomienda desactivar o ajustar según el caso.
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades del modelo. No se puede confirmar si es capaz de generar texto, razonar, escribir código, soportar tool calling, procesar imágenes o audio, ni si tiene modo de pensamiento extendido. La ausencia de documentación impide realizar cualquier afirmación al respecto.
+- Generación de texto narrativo y diálogo multi-turno con contexto de hasta 196.608 tokens.
+- Interpretación de partidas de TTRPG: actuación como máster, descripción de escenas, control de PNJ y resolución de reglas de D&D y Pathfinder.
+- Generación de código, con entrenamiento declarado en Unity y Unreal Engine.
+- Razonamiento matemático y resolución de problemas técnicos.
+- Contenido de seguridad: OWASP, CTF y hardening de sistemas (uso dual, ver limitaciones).
+- Decodificación especulativa mediante cabeza MTP en motores compatibles (llama.cpp, vLLM, TGI).
+- Capacidades multilingües: no documentadas explícitamente; el tokenizer Qwen sugiere cobertura amplia, pero no hay evaluación publicada.
+- Tool calling / function calling: no documentado en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: no documentadas.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin conocer las capacidades reales del modelo. La falta de benchmarks, ejemplos de uso y documentación técnica hace inviable recomendar su aplicación en ningún escenario práctico. Se recomienda a los desarrolladores que consulten directamente el repositorio de Hugging Face o contacten con el autor para obtener información adicional antes de considerar su uso.
+- Motor de campañas de rol: el modelo puede mantener el estado narrativo de una partida a lo largo de sesiones largas gracias a su ventana de 196K tokens, recordando PNJ, facciones y eventos previos sin resumir el historial.
+- Asistente de mesa para el máster: generación de encuentros, estadísticas de criaturas, descripciones de localizaciones y tramas secundarias coherentes con el sistema de juego (D&D, Pathfinder).
+- Generación de contenido para videojuegos: dado su entrenamiento declarado en Unity y Unreal, puede producir scripts, diálogos de PNJ y descripciones de ítems para prototipos.
+- Herramienta de escritura creativa: narrativa larga con consistencia de personajes y mundo, aprovechando el contexto extendido para mantener biblias de personajes completas en el prompt.
+- Formación y concienciación en seguridad: con entrenamiento declarado en OWASP y CTF, puede usarse en entornos controlados para generar escenarios de laboratorio; requiere revisión humana y aislamiento.
+- Prototipado rápido de chatbots temáticos: su licencia MIT y su disponibilidad en GGUF permiten desplegarlo en local para demos de asistentes con personalidad definida.
+- Evaluación de decodificación especulativa: sirve como banco de pruebas de MTP en llama.cpp y vLLM para medir ganancias de throughput en GPUs de consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación estándar para este modelo concreto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware. No se conocen estimaciones de VRAM, GPUs recomendadas, opciones de despliegue ni métricas de latencia o throughput. Si el modelo tuviera realmente 27 mil millones de parámetros, sería necesario al menos una GPU con 16-24 GB de VRAM para inferencia en cuantización de 4 bits, pero esto es una suposición basada únicamente en el nombre y no en datos verificados.
+- VRAM estimada en BF16: aproximadamente 54,6 GB de pesos (coincide con el GGUF f16), más caché KV; se recomienda 80 GB o más para contexto largo.
+- VRAM estimada en INT4: en torno a 15-18 GB de pesos, viable en GPUs de 24 GB con contexto moderado.
+- VRAM estimada en INT2: alrededor de 8-10 GB, con degradación de calidad esperable.
+- GPU recomendadas: A100 80 GB, H100 80 GB para BF16 y contexto completo; RTX 4090 (24 GB) en INT4; RTX 3090 (24 GB) en INT4 con contexto reducido.
+- GPU de consumo: sí cabe en RTX 4090 y RTX 3090 con cuantización INT4; en INT2 podría caber en GPUs de 12 GB, con pérdida de calidad.
+- Despliegue: transformers (con `trust_remote_code=True`), llama.cpp, vLLM, TGI y Ollama (a través de GGUF). El autor publica además la herramienta Vulkan-Automaton-VM para fragmentación de memoria en Strix Halo 395 y GPUs de distintos fabricantes.
+- Latencia y throughput: no disponibles; el autor indica que MTP acelera la generación, pero no aporta cifras. Recomienda temperatura 1-2, ajuste de top-k/top-p y penalización de repetición 1.15 sin MTP como configuración personal.
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede comparar este modelo con alternativas de la misma categoría porque se desconoce su arquitectura, tamaño real y rendimiento. Los modelos Qwen 3.6-27B y Qwen3.8-27B AEON mencionados en los resultados de búsqueda podrían ser comparables, pero no hay evidencia de que `Technomancer-27b-BlackICE-AEON` esté relacionado con ellos.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Technomancer-27b-BlackICE-AEON | 27,3B | 196.608 | MIT | TTRPG, rol, código, seguridad | HF (safetensors + GGUF) |
+| Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED (base) | 27B | no disponible | no disponible | Base sin censura | HF |
+| Qwen2.5-32B-Instruct | 32,5B | 32.768 | Apache 2.0 | Propósito general | HF, amplio ecosistema |
+| Mistral Small 24B Instruct | 24B | 32.768 | Apache 2.0 | Propósito general | HF |
+
+La comparativa con modelos de propósito general es orientativa: no hay benchmarks que permitan situar a Technomancer frente a ellos en tareas estándar. Su ventaja diferencial es el contexto de 196K y la licencia MIT; su desventaja, la ausencia de evaluación pública y el origen comunitario de la base.
 
 ## Limitaciones y advertencias
 
-- La model card no contiene ninguna información técnica, lo que impide evaluar sesgos, riesgos de alucinación o limitaciones de contexto.
-- No se ha verificado la procedencia de los pesos ni el proceso de entrenamiento, por lo que su uso en producción conlleva un riesgo elevado de comportamiento impredecible.
-- La licencia MIT permite uso comercial y modificación, pero sin documentación no se puede garantizar que el modelo funcione como se espera.
-- El nombre "BlackICE-AEON" sugiere un posible proceso de abliteration (eliminación de rechazos), lo que podría implicar que el modelo no tenga salvaguardas de seguridad. Esto debe tenerse en cuenta si se planea desplegarlo en entornos donde se requiera moderación de contenido.
-- Al no existir descargas ni comunidad asociada, no hay soporte ni garantías de mantenimiento.
+- Modelo sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento en MMLU, HumanEval, GSM8K ni tareas estándar.
+- Base ya modificada y sin censura: el fine-tune hereda los sesgos y la ausencia de alineamiento de seguridad de la base AEON-7, lo que aumenta el riesgo de contenido dañino, ofensivo o inexacto.
+- Entrenamiento con datos de rol sin censura y "NSFW Reddit": riesgo elevado de contenido inapropiado y de sesgos de género y violencia.
+- Riesgo de alucinación: especialmente en reglas de TTRPG y en código, donde no hay garantía de corrección; requiere validación.
+- La cabeza MTP puede interferir con la generación de números aleatorios (tiradas de dados); el autor recomienda desactivarla o ajustar temperatura.
+- Idiomas soportados no documentados: no hay evaluación de calidad fuera del inglés.
+- Dataset de entrenamiento no documentado: imposible auditar composición, licencias de los datos ni posibles filtraciones.
+- Uso comercial permitido por MIT, pero la responsabilidad legal y ética del contenido generado recae en el desplegador.
+- Tamaño del repo (159,4 GB) y 13 shards: despliegue pesado; conviene usar GGUF cuantizado en producción.
+- Fecha de creación declarada en 2026 y base Qwen3.8: verificar la procedencia y vigencia de la base antes de adoptarlo.
 
 ## Enlaces
 
-- [Hugging Face - ChonkE/Technomancer-27b-BlackICE-AEON](https://huggingface.co/ChonkE/Technomancer-27b-BlackICE-AEON)
-- [Qwen 3.6 Complete Guide (insiderllm.com)](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/) — referencia a modelos Qwen 3.6, posiblemente relacionados por nombre
-- [Qwen3.6-27B (theresanaiforthat.com)](https://theresanaiforthat.com/model/qwen-3-6-27b/) — ficha de un modelo Qwen 3.6-27B, sin vínculo confirmado
-- [Qwen3.6-27B Review (buildfastwithai.com)](https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026) — análisis de un modelo Qwen 3.6-27B, sin vínculo confirmado
-- [Qwen3.8-27B AEON Uncensored (mindstudio.ai)](https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration) — artículo sobre abliteration de un modelo Qwen, posiblemente relacionado por el sufijo "AEON"
+- Hugging Face: https://huggingface.co/ChonkE/Technomancer-27b-BlackICE-AEON
+- Modelo base: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
+- Repositorio del autor (Vulkan-Automaton-VM): https://github.com/XxChonkExX/Vulkan-Automaton-VM
+- Cuantizaciones de mradermacher: no disponible (enlace no proporcionado)
+- Paper, blog o demo oficial: no disponible

@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "google mail",
-      "url": "https://mail.google.com/mail?hl=fr",
-      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
-    },
-    {
-      "title": "Gmail - Google Accounts",
-      "url": "https://accounts.google.com/servicelogin?service=mail",
-      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
-    },
-    {
-      "title": "Sign in - Google Accounts",
-      "url": "https://accounts.google.com/Login",
-      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
-    },
-    {
-      "title": "Se connecter à Gmail",
-      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
-      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
-    },
-    {
-      "title": "Sign in to Gmail",
-      "url": "https://support.google.com/mail/answer/8494?hl=en&co=genie.platform%3Ddesktop",
-      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
-    }
-  ]
+  "sources": []
 }

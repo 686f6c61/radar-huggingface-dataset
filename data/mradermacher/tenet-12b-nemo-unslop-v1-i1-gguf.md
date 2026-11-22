@@ -2,50 +2,51 @@
 
 ## Resumen
 
-Tenet-12B-Nemo-Unslop-v1-i1-GGUF es una cuantizacion en formato GGUF del modelo Tenet-12B-Nemo-Unslop-v1, publicada por el usuario mradermacher en Hugging Face. El repositorio contiene unicamente los pesos cuantizados generados a partir del modelo original de mr-andrey-isachenko, empleando el metodo de cuantizacion con imatrix (matriz de importancia) para preservar mejor la calidad en tasas de compresion agresivas.
+Tenet-12B-Nemo-Unslop-v1-i1-GGUF es la cuantizacion en formato GGUF, generada con imatrix, del modelo Tenet-12B-Nemo-Unslop-v1 desarrollado por mr-andrey-isachenko. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF de modelos abiertos. El modelo base es un transformer denso de 12.247.782.400 parametros (aproximadamente 12,2 mil millones) afinado para uso conversacional, agentico y de generacion de codigo, con etiquetas que indican capacidades de tool-use, GRPO y una variante "abliterated/uncensored".
 
-El nombre del modelo sugiere una base de 12B parametros derivada de un modelo de la familia Nemo (posiblemente Mistral Nemo), aunque esta informacion no esta confirmada en los datos disponibles. El sufijo "Unslop" hace referencia a un ajuste fino orientado a reducir respuestas genericas o excesivamente verbosas, una practica habitual en la comunidad de modelos afinados.
+La relevancia de esta publicacion es practica: ofrece el modelo base en un rango amplio de cuantizaciones (desde IQ1_S de 3,1 GB hasta Q6_K de 10,2 GB) que permiten ejecutarlo en hardware de consumo mediante llama.cpp y derivados, algo imposible con los pesos completos en safetensors. El repositorio ocupa 141,9 GB porque incluye todos los ficheros cuantizados y el fichero imatrix.
 
-La relevancia de esta publicacion es practica: ofrece el modelo en multiples niveles de cuantizacion GGUF (desde IQ1_S hasta Q6_K), lo que permite desplegarlo en hardware de consumo con diferentes compromisos entre calidad y uso de memoria. No obstante, la model card es practicamente inexistente y no se aportan datos sobre arquitectura, licencia, idiomas ni rendimiento.
+La informacion publicada es limitada en cuanto a arquitectura interna, datos de entrenamiento y contexto: la model card se centra en las instrucciones de descarga y uso de los GGUF, no en las especificaciones tecnicas del modelo base. La licencia declarada es Apache 2.0 y el idioma indicado es unicamente el ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, sin confirmar) |
-| Parametros totales | 3.526.200 (dato reportado en safetensors; no coherente con el nombre "12B", ver advertencias) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer denso (detalles internos no disponibles) |
+| Parametros totales | 12.247.782.400 (12,2 B) |
+| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); modelo base en safetensors |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; tambien hay cuantizaciones estaticas en el repo hermano |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre "Nemo" sugiere una posible relacion con Mistral Nemo, pero no hay confirmacion. El proceso de cuantizacion documentado en la model card incluye metadatos tecnicos: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, lo que indica que los pesos originales estaban en formato Hugging Face y fueron convertidos a GGUF mediante la herramienta de cuantizacion de llama.cpp.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Los datos disponibles indican que se trata de un transformer denso de 12,2 mil millones de parametros, con etiquetas que apuntan a un proceso de ajuste mediante GRPO (Group Relative Policy Optimization) y a una variante "abliterated" (eliminacion de direcciones de rechazo en el espacio de activaciones). Tambien aparece la etiqueta "fp8", que sugiere que el modelo base pudo entrenarse o publicarse originalmente en precision FP8, y "unslop", que en la practica de la comunidad designa ajustes orientados a reducir respuestas genericas o excesivamente formateadas.
 
-El autor indica que se emplearon cuantizaciones ponderadas con imatrix, una tecnica que utiliza una matriz de importancia calculada a partir de un corpus de calibracion para asignar mas precision a los pesos mas relevantes. Esto mejora la calidad de los cuantizados de baja tasa (IQ1, IQ2, IQ3) respecto a la cuantizacion uniforme. No se aportan datos sobre el entrenamiento del modelo base: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO u otras tecnicas de alineacion.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO mas alla de la mencion a GRPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La cuantizacion i1 utiliza un fichero imatrix (matriz de importancia) generado por el cuantizador, lo que mejora la calidad de las cuantizaciones de baja precision respecto a las estaticas equivalentes.
 
 ## Capacidades
 
-- Generacion de texto: capacidad presumible por tratarse de un modelo de lenguaje, aunque no se documenta explicitamente.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
-- Ajuste "Unslop": el nombre indica un fine-tuning orientado a reducir respuestas genericas o excesivamente prolijas, aunque no se detalla la metodologia.
+- Generacion de texto conversacional en ingles, con ajuste orientado a respuestas directas y sin el "slop" habitual de los modelos alineados de forma agresiva.
+- Generacion de codigo, segun la etiqueta "coding" de la model card.
+- Tool calling y function calling, segun la etiqueta "tool-use".
+- Uso agentico y razonamiento multi-paso, segun la etiqueta "agentic".
+- Ajuste mediante GRPO, segun la etiqueta "grpo".
+- Variante "abliterated/uncensored": menor tendencia a rechazar peticiones, segun las etiquetas del autor.
+- Compatibilidad declarada con vLLM y OpenRouter (etiquetas "vllm" y "openrouter"), aunque para los GGUF el motor natural es llama.cpp.
+- No se documentan capacidades de vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones IQ2/IQ3 permiten ejecutar el modelo en GPUs con 8-12 GB de VRAM mediante llama.cpp u Ollama, aunque con perdida de calidad respecto al modelo original.
-- Experimentacion con cuantizacion agresiva: util para investigadores que quieran evaluar el impacto de IQ1_S, IQ2_XXS o Q2_K en la calidad de las respuestas frente a Q4_K_M o Q6_K.
-- Prototipado local de asistentes conversacionales: al estar en GGUF, puede integrarse rapidamente en aplicaciones de escritorio o entornos sin GPU dedicada mediante CPU.
-- Evaluacion comparativa de metodos de cuantizacion: la disponibilidad de 25 variantes permite estudiar la relacion tamano-calidad en un mismo modelo.
-- Fine-tuning posterior sobre pesos cuantizados: algunos frameworks permiten adaptar modelos GGUF con QLoRA, aunque con limitaciones frente a safetensors.
-- Uso educativo: como ejemplo practico de pipeline de conversion HF a GGUF con imatrix.
+- Asistente de codigo en local: con la cuantizacion i1-Q4_K_M (7,6 GB) el modelo cabe en una GPU de 12-16 GB y puede integrarse en editores o CLI para autocompletado, explicacion y refactorizacion de codigo, sin enviar el codigo a servicios externos.
+- Agente con tool calling en pipelines de automatizacion: las etiquetas de tool-use y agentic indican soporte para invocar funciones; se puede conectar a APIs internas mediante un servidor compatible con OpenAI (llama.cpp server, Ollama) para tareas de extraccion y orquestacion.
+- Despliegue en estaciones de trabajo sin GPU dedicada: las cuantizaciones IQ2/IQ3 (3,7-6,7 GB) permiten ejecucion en CPU con llama.cpp, adecuadas para prototipos y entornos de desarrollo con RAM limitada.
+- Procesamiento de documentacion tecnica en ingles: al ser un modelo solo en ingles, encaja en tareas de resumen, extraccion de entidades y generacion de documentacion sobre corpus angloparlantes.
+- Experimentacion en investigacion sobre alineacion y rechazo: la variante abliterated permite estudiar el comportamiento del modelo ante peticiones que un modelo alineado rechazaria, util en estudios de seguridad y evaluacion de sesgos.
+- Chatbot de atencion al cliente en ingles para entornos con requisitos de privacidad: al ejecutarse on-premise con pesos Apache 2.0, se evita la dependencia de APIs de terceros; la ventana de contexto real debe validarse antes de usarlo con historiales largos, ya que no esta documentada.
+- Evaluacion comparativa de cuantizaciones: el repositorio incluye desde IQ1 hasta Q6_K, lo que permite medir la degradacion de calidad por nivel de cuantizacion en tareas concretas antes de fijar una version para produccion.
 
 ## Benchmarks y rendimiento
 
@@ -53,35 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision, ya que el dato de parametros reportado (3,5M) es incompatible con el nombre del modelo (12B). Si el modelo tuviera realmente 12B parametros, las estimaciones orientativas serian:
-  - IQ1_S / IQ1_M: ~2-3 GB
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: ~3-5 GB
-  - IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M: ~5-7 GB
-  - Q4_K_S / Q4_K_M: ~7-8 GB
-  - Q5_K_S / Q5_K_M: ~8-9 GB
-  - Q6_K: ~10-11 GB
-- GPU recomendadas: no disponibles. Para 12B en Q4_K_M seria suficiente una RTX 3060 de 12 GB o superior; para Q6_K, una RTX 4070 Ti / 4080 de 16 GB.
-- Cabe en GPU de consumo: presumiblemente si, para cuantizaciones Q4 o inferiores en GPUs de 8-12 GB, siempre que el modelo sea realmente de 12B.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas el espacio para cache KV y overhead. Referencias: i1-IQ2_M 4,5 GB, i1-Q3_K_M 6,2 GB, i1-Q4_K_M 7,6 GB, i1-Q5_K_M 8,8 GB, i1-Q6_K 10,2 GB.
+- GPU recomendadas: RTX 3060 12 GB o RTX 4070 12 GB para Q4_K_M con contexto moderado; RTX 4090 24 GB o A100/H100 para Q5/Q6 con contexto amplio (la longitud de contexto no esta documentada, por lo que la VRAM de cache KV debe calcularse a partir de la configuracion real del modelo base).
+- Cabe en GPU de consumo: si, desde IQ1_S (3,1 GB) hasta Q6_K (10,2 GB) en tarjetas de 8-12 GB, con margen variable segun contexto.
+- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de OpenAI basados en llama.cpp; vLLM y TGI no consumen GGUF de forma nativa, por lo que para esos motores habria que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles; dependen de la cuantizacion, del hardware y del contexto. Como referencia cualitativa, el autor marca Q4_K_M como "fast, recommended" y Q4_K_S como "optimal size/speed/quality".
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre el modelo base ni sobre alternativas comparables en la documentacion proporcionada. La unica referencia es el modelo origen: mr-andrey-isachenko/Tenet-12B-Nemo-Unslop-v1.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Tenet-12B-Nemo-Unslop-v1-i1-GGUF | 12,2 B | no disponible | Apache 2.0 | GGUF | Ajuste GRPO, abliterated, tool-use, solo ingles |
+| Modelo base Tenet-12B-Nemo-Unslop-v1 | 12,2 B | no disponible | Apache 2.0 | safetensors | Pesos completos, requiere GPU de mayor capacidad |
+| Alternativas de ~12 B en GGUF | no disponible | no disponible | no disponible | GGUF | No se dispone de datos verificados para comparar rendimiento |
+
+No se dispone de informacion suficiente para comparar benchmarks con modelos de la misma categoria; la comparativa se limita a aspectos de formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Incoherencia critica en metadatos: el nombre indica 12B parametros, pero el dato de safetensors reporta 3.526.200 parametros. Esto puede deberse a un error de indexacion en el repo o a que el modelo base no es realmente de 12B. Verificar antes de cualquier uso en produccion.
-- Model card practicamente vacia: sin licencia, sin idiomas, sin contexto, sin benchmarks ni descripcion de capacidades.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido. Contactar con el autor del modelo base antes de usarlo en produccion.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin datos de evaluacion no se puede cuantificar.
-- Sesgos: no documentados.
-- Cuantizaciones IQ1/IQ2: degradacion notable de calidad esperada; no recomendadas para tareas que requieran precision.
-- Trazabilidad limitada: el autor de la cuantizacion no es el autor del modelo original, y no se documenta el corpus de calibracion usado para imatrix.
-- Repositorio sin descargas ni likes en el momento de la consulta: sin validacion por parte de la comunidad.
+- El modelo esta declarado unicamente en ingles; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- La variante "abliterated/uncensored" reduce los rechazos del modelo, lo que incrementa el riesgo de generar contenido inapropiado o danino; requiere filtros y politicas de uso en produccion.
+- Riesgo de alucinacion inherente a los modelos de 12 B; no hay evaluaciones publicadas de fidelidad factual.
+- Las cuantizaciones de baja precision (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- La longitud de contexto no esta documentada; no debe asumirse una ventana larga sin verificar la configuracion del modelo base.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus derivados deben revisarse por si incorporan terminos adicionales no reflejados en esta ficha.
+- El repositorio ocupa 141,9 GB; la descarga completa no es necesaria, basta con el fichero de la cuantizacion elegida.
+- No hay resultados de benchmarks ni evaluaciones independientes disponibles; el rendimiento debe validarse en el caso de uso concreto.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Tenet-12B-Nemo-Unslop-v1-i1-GGUF
 - Modelo base: https://huggingface.co/mr-andrey-isachenko/Tenet-12B-Nemo-Unslop-v1
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Tenet-12B-Nemo-Unslop-v1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Tenet-12B-Nemo-Unslop-v1-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

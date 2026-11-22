@@ -2,84 +2,91 @@
 
 ## Resumen
 
-UCE Gemini 80K es un codificador disperso (*sparse encoder*) desarrollado por el usuario klpeng que transforma embeddings de texto de Gemini en activaciones de conceptos interpretables. No es un modelo generativo: recibe como entrada un array NumPy de forma `(N, 3072)` con embeddings producidos por `gemini-embedding-2-preview` (tipo de tarea `RETRIEVAL_DOCUMENT`) y devuelve una matriz CSR dispersa de forma `(N, 80513)`, donde cada fila contiene como máximo 128 activaciones no nulas correspondientes a conceptos etiquetados.
+UCE Gemini 80K es un codificador disperso (sparse encoder) desarrollado por el usuario klpeng que transforma embeddings de texto de Gemini en activaciones de conceptos interpretables. Concretamente, toma vectores de 3072 dimensiones generados por `gemini-embedding-2-preview` (tipo de tarea `RETRIEVAL_DOCUMENT`) y los proyecta sobre un diccionario de 80.513 conceptos etiquetados, seleccionando las 128 puntuaciones mas altas y produciendo como maximo 128 activaciones no nulas por texto. El modelo no procesa texto directamente: requiere que el usuario genere los embeddings por separado.
 
-El modelo resuelve un problema concreto de interpretabilidad: dado un embedding opaco de Gemini, permite saber qué conceptos semánticos están activos en ese texto y con qué intensidad. Para ello selecciona las 128 puntuaciones más altas entre 80.513 conceptos etiquetados y ofrece una función `explain()` que devuelve el `concept_id`, la etiqueta y la puntuación de activación de cada concepto activo, sin llamadas adicionales a APIs.
+El modelo cuenta con 247.339.008 parametros y se distribuye en formato safetensors con pesos en float32 (el autor indica explicitamente que debe mantenerse en float32). Su proposito es la interpretabilidad y el analisis de conceptos: permite inspeccionar que conceptos activa un texto segun la representacion semantica de Gemini, con metadatos de fidelidad (f1, precision, recall) y prevalencias de corpus cuando estan disponibles.
 
-Con 247.339.008 parámetros en formato safetensors (repo de 1,2 GB, pesos en float32), es un componente ligero de análisis que se usa junto a la API de embeddings de Gemini. Su relevancia actual radica en que aporta una capa de inspección semántica sobre embeddings propietarios, algo poco habitual en el ecosistema abierto.
+Es relevante para investigadores que necesitan trazas interpretables y dispersas sobre embeddings de un modelo propietario, sin depender de pesos neuronales pesados para consultar el diccionario de conceptos. La model card no especifica licencia, idiomas soportados ni pipeline, y no se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Codificador disperso (*sparse encoder*) sobre embeddings de Gemini; salida top-128 de 80.513 conceptos |
+| Arquitectura | Codificador disperso (sparse encoder) sobre embeddings; tag `gemini_uce`; sin detalle de capas en la model card |
 | Parametros totales | 247.339.008 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (procesa embeddings precalculados, no texto) |
-| Tipos de cuantizacion | No disponible; el autor indica mantener el modelo en float32 |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (PyTorch) |
-| Dimension de entrada | 3.072 (embeddings de `gemini-embedding-2-preview`) |
-| Dimension de salida | 80.513 conceptos, maximo 128 activos por texto |
-| Formato de salida | Matriz dispersa SciPy CSR |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (el modelo consume embeddings, no tokens de texto) |
+| Tipos de cuantizacion | no disponible; el autor indica mantener float32 |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (PyTorch); pesos en float32 |
+| Dimension de entrada | 3072 (embeddings de `gemini-embedding-2-preview`, tarea `RETRIEVAL_DOCUMENT`) |
+| Numero de conceptos | 80.513 |
+| Activaciones por texto | hasta 128 no nulas (top-128) |
+| Formato de salida | matriz dispersa SciPy CSR de forma `(N, 80513)` |
+| Tamano del repo | 1,2 GB |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe un codificador que proyecta embeddings de 3.072 dimensiones a un espacio de 80.513 conceptos etiquetados y aplica una seleccion top-128, generando como maximo 128 activaciones no nulas por texto. El modelo se distribuye como paquete Python (`gemini_uce`) con pesos en safetensors y soporte para CPU y CUDA (`device="cuda"`), siempre en float32. Incluye metodos `encode()` (devuelve la matriz CSR completa), `encode_iter()` (genera lotes dispersos sin retener toda la salida en memoria) y `explain()` (devuelve hasta `top_n` conceptos activos ordenados por activacion decreciente).
+La model card describe un codificador que mapea embeddings de Gemini a 80.513 activaciones de conceptos etiquetados y aplica una seleccion top-128 sobre las puntuaciones, generando una representacion dispersa de como maximo 128 valores no nulos por texto. La entrada debe ser un array NumPy de forma `(N, 3072)` con embeddings de `gemini-embedding-2-preview` usando el tipo de tarea `RETRIEVAL_DOCUMENT`, sin normalizacion unitaria adicional. El modelo se ejecuta en float32 y admite `device="cuda"` para GPU NVIDIA.
 
-No se especifican en la informacion proporcionada los detalles del entrenamiento: numero de tokens, composicion del dataset, uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa. Si se documenta el proceso de evaluacion de fidelidad por concepto: se compara la activacion original de Gemini `>0.05` frente a cero exacto, con hasta 50 positivos y 50 ceros por concepto, y textos de test de maximo 256 palabras juzgados por GPT-6 Luna con razonamiento desactivado. Los resultados se guardan en `fidelities.csv` (precision, recall, F1, accuracy, tasas YES positivo/cero y matrices de confusion), `fidelity_summary.json` y `fidelities.json` (metodo y hashes de origen).
+No se detalla en la informacion disponible la composicion del dataset de entrenamiento, el numero de tokens, ni si se emplearon tecnicas de RLHF o DPO. La model card menciona un "Gemini teacher corpus" historico del que provienen las prevalencias de conceptos, pero aclara que esas prevalencias no se miden sobre las salidas del codificador podado. El paquete incluye metadatos de fidelidad por concepto (campos `f1`, `precision`, `recall`, con valor `None` cuando no estan definidos) y campos de prevalencia como `n_corpus_rows`, `count_gt_0p05`, `prevalence_gt_0p05` y `prevalence_gt_0p05_upper_99`. La innovacion principal es la separacion entre generacion de embeddings (externa, via API de Gemini) y proyeccion interpretable local, junto con la posibilidad de cargar solo el diccionario de conceptos sin pesos neuronales ni dependencias de PyTorch, Transformers, SciPy o pandas.
 
 ## Capacidades
 
-- Proyeccion de embeddings de Gemini a 80.513 conceptos etiquetados con seleccion top-128.
-- Salida dispersa eficiente en formato SciPy CSR, adecuada para corpus grandes.
-- Explicacion legible por concepto: `explain()` devuelve `concept_id`, `label` y `activation`.
-- Procesamiento por lotes con `encode()` y en streaming con `encode_iter()`.
-- Ejecucion en CPU y GPU NVIDIA (CUDA), manteniendo float32.
-- Analisis de prevalencia de conceptos en un corpus mediante `prevalences.csv` y `prevalences.npz` (umbrales de activacion `>0.05` y `>0.1`, con recuentos y cotas superiores de confianza unilaterales al 99 %).
-- Metricas de fidelidad por concepto ya calculadas y listas para consulta.
-- No realiza generacion de texto, razonamiento, codigo, matematicas, vision ni tool calling: es exclusivamente un codificador de conceptos sobre embeddings.
+- Proyeccion de embeddings de Gemini (3072 dimensiones) a 80.513 conceptos etiquetados.
+- Seleccion top-128 de conceptos por texto, con salida en matriz dispersa CSR.
+- Explicacion de activaciones mediante `model.explain(row, top_n=10)`, que devuelve `concept_id`, `label` y `activation` ordenados por activacion decreciente.
+- Carga del diccionario de conceptos de forma independiente a los pesos (`load_concept_dict`), con soporte de `revision`, `cache_dir` y `local_files_only`.
+- Metadatos de fidelidad por concepto (f1, precision, recall) cuando estan disponibles.
+- Metadatos de prevalencia de corpus opcionales (`include_prevalence=True`).
+- Procesamiento por lotes con `encode(embeddings, batch_size=64)` y streaming con `encode_iter` para no acumular toda la salida en memoria.
+- Ejecucion en CPU o GPU NVIDIA (`device="cuda"`).
+- Exportacion del diccionario a tablas pandas/CSV por parte del usuario (pandas se instala aparte).
+- No soporta generacion de texto, tool calling, agentes, vision ni audio: es un codificador de conceptos, no un modelo generativo.
 
 ## Casos de uso
 
-- Auditoria de embeddings en produccion: dado un lote de embeddings de `gemini-embedding-2-preview` generados por un sistema RAG, `encode()` devuelve la matriz CSR de conceptos activos y permite detectar que temas cubre realmente el corpus indexado.
-- Analisis de sesgo y tematica en datasets: usando `prevalences.csv` se pueden identificar conceptos enriquecidos en un conjunto de datos respecto a un corpus de referencia, con cotas de confianza al 99 %.
-- Monitorizacion de deriva semantica: comparar la distribucion de conceptos activos entre versiones de un corpus o entre periodos temporales para detectar cambios de tematica.
-- Etiquetado exploratorio de documentos: `explain()` sobre cada fila permite asignar etiquetas interpretables a documentos sin entrenar un clasificador propio, aprovechando los 80.513 conceptos predefinidos.
-- Investigacion en interpretabilidad: analizar que conceptos activa un embedding dado y contrastarlo con las fidelidades por concepto (`fidelities.csv`) para estudiar la calidad de la representacion.
-- Filtrado y enriquecimiento de pipelines de retrieval: usar las activaciones top-128 como senal adicional de re-ranking o filtrado tematico sobre los resultados de busqueda vectorial.
-- Evaluacion de cobertura conceptual de un modelo de embeddings: medir cuantos conceptos distintos se activan en un corpus y con que frecuencia para caracterizar el espacio semantico cubierto.
+- Analisis de interpretabilidad de embeddings: dado un corpus ya embebido con `gemini-embedding-2-preview`, el modelo proyecta cada vector a conceptos activos y permite estudiar que representaciones semanticas captura Gemini en dominios concretos, usando `explain` para inspeccionar las activaciones principales.
+- Auditoria de sesgos conceptuales: filtrando etiquetas por terminos sensibles (por ejemplo, `"democracy"` en `concept_dict`) se pueden medir tasas de activacion de conceptos asociados a grupos o temas y detectar patrones sistematicos en el corpus.
+- Etiquetado debil y enriquecimiento de documentos: las activaciones dispersas sirven como features interpretables para clasificacion, clustering o busqueda semantica sin entrenar un modelo adicional, aprovechando la seleccion top-128 por documento.
+- Construccion de taxonomias y exploracion de vocabulario: el diccionario de 80.513 etiquetas con fidelidad y prevalencia permite buscar conceptos por subcadena y generar tablas CSV para revision manual o curacion.
+- Monitorizacion de pipelines de retrieval: al usar la misma tarea `RETRIEVAL_DOCUMENT`, se pueden comparar las activaciones de consultas y documentos para diagnosticar desalineaciones en sistemas RAG basados en Gemini.
+- Investigacion en representaciones dispersas: el modelo sirve como caso de estudio de codificadores sparse top-k sobre embeddings de un modelo propietario, con metadatos de fidelidad para evaluar la calidad de cada concepto.
+- Procesamiento de grandes volumenes en streaming: `encode_iter` permite recorrer datasets que no caben en memoria manteniendo la salida dispersa por lotes, util para analisis por lotes en CPU o GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El unico material de evaluacion son las metricas de fidelidad por concepto recogidas en `fidelities.csv` y `fidelity_summary.json`, que comparan activaciones originales de Gemini `>0.05` frente a cero exacto usando juicios automatizados de GPT-6 Luna sobre textos de test de hasta 256 palabras. No se proporcionan cifras agregadas en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 247,3 M de parametros en float32, los pesos ocupan aproximadamente 1 GB; el consumo adicional depende del tamano de lote y de la matriz CSR de salida.
-- GPU recomendadas: cualquier GPU NVIDIA con al menos 2-4 GB de VRAM libre para lotes moderados; no se especifican modelos concretos (A100, H100, RTX 4090) en la informacion disponible.
-- Cabe en GPU de consumo: si, por el tamano de pesos (~1 GB en float32); el autor no detalla modelos concretos.
-- Despliegue: paquete Python `gemini_uce` con `GeminiUCE.from_pretrained()`, soporte CPU y CUDA; requiere `pip install -r requirements.txt`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de codificador.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repo pesa 1,2 GB y los pesos son 247.339.008 parametros en float32 (aproximadamente 0,99 GB solo en pesos, mas overhead de activaciones y del diccionario de 80.513 conceptos).
+- GPU recomendadas: no especificadas; el autor solo indica `device="cuda"` para GPU NVIDIA.
+- Cabe en GPU consumer: previsiblemente si por tamano de pesos, pero no hay confirmacion ni lista de modelos concretos en la informacion disponible.
+- Opciones de despliegue: paquete Python propio (`gemini_uce.GeminiUCE`) con dependencias en `requirements.txt`; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de codificador).
 - Latencia y throughput: no disponibles.
+- Requisito externo: los embeddings de entrada deben generarse aparte con la API de Gemini (SDK `google-genai` y variable `GEMINI_API_KEY` en el ejemplo de la model card).
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (codificadores dispersos sobre embeddings de Gemini con conceptos etiquetados).
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (codificadores sparse de conceptos sobre embeddings) ni datos de rendimiento para establecer una comparacion.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto, codigo ni respuestas; solo activaciones de conceptos sobre embeddings precalculados.
-- Depende de `gemini-embedding-2-preview` con tarea `RETRIEVAL_DOCUMENT` y 3.072 dimensiones; embeddings de otro modelo o configuracion no son compatibles.
-- El autor advierte de no aplicar normalizacion unitaria adicional a los embeddings de entrada.
-- La seleccion top-128 limita la salida a 128 conceptos por texto; conceptos con activacion baja quedan fuera aunque esten presentes.
-- Las fidelidades por concepto son juicios automatizados de GPT-6 Luna y no estan ponderadas por prevalencia del corpus; los conceptos sin ejemplos positivos quedan excluidos de las medias correspondientes.
+- No es un modelo generativo: no produce texto, codigo ni respuestas; solo proyecta embeddings a conceptos.
+- Requiere generar los embeddings con `gemini-embedding-2-preview` y la tarea `RETRIEVAL_DOCUMENT`; usar otra tarea o modelo de embeddings invalida las activaciones.
+- No aplicar normalizacion unitaria adicional a los embeddings de entrada, segun la model card.
+- Debe mantenerse en float32; no se documentan opciones de cuantizacion.
 - Licencia no disponible: no se puede confirmar el uso comercial sin consultar al autor.
-- Idiomas soportados no disponibles; el comportamiento multilingue depende del modelo de embeddings de Gemini subyacente.
-- Riesgo de conceptos mal etiquetados o poco representativos en funcion de la calidad de las etiquetas y del corpus de evaluacion.
-- Mantener float32 segun indicacion del autor; no se documentan versiones cuantizadas.
+- Idiomas soportados no disponibles; el comportamiento multilingue depende del modelo de embeddings subyacente y no esta documentado.
+- Las prevalencias corresponden al corpus docente historico de Gemini, no a las salidas del codificador podado; no deben interpretarse como tasas medidas de este modelo.
+- Los campos de fidelidad pueden ser `None` o estar ausentes; no hay garantia de metricas por concepto.
+- Riesgo de conceptos espurios o etiquetas ambiguas en un diccionario de 80.513 entradas; se recomienda validacion manual en dominios sensibles.
+- Para reutilizar activaciones cacheadas hay que fijar el commit exacto del Hub; cambios de revision pueden alterar el diccionario.
+- El ejemplo de uso completo requiere una clave de API de Gemini, lo que introduce dependencia de un servicio externo y posibles costes.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/klpeng/uce-gemini-80k
-- Google GenAI SDK (usado en el ejemplo de la model card): https://github.com/googleapis/python-genai
+- Modelo en Hugging Face: https://huggingface.co/klpeng/uce-gemini-80k
+- SDK de Google GenAI (usado en el ejemplo de la model card): https://github.com/googleapis/python-genai

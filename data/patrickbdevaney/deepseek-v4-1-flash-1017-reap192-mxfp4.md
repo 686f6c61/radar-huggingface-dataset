@@ -2,97 +2,102 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-REAP192-MXFP4 es una versión podada y cuantizada del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicada por el usuario patrickbdevaney (no por DeepSeek). Se trata de un modelo Mixture-of-Experts al que se le conservan 192 de los 384 expertos enrutados de cada capa del decodificador (el 50 %), manteniendo intactos el experto compartido, las hyper-connections, la torre de visión con su aligner y las tres capas DSpark/MTP. Los expertos supervivientes son bit-exactos: sus pesos E2M1 empaquetados y sus escalas E8M0 se copian byte a byte del checkpoint base en la revisión `1bae0e1088993b9b82de08f59de5be5a34e42170`.
+DeepSeek-V4.1-Flash-1017-REAP192-MXFP4 es una variante podada del modelo multimodal DeepSeek-V4.1-Flash-1017, publicada por el usuario independiente patrickbdevaney. Se trata de un checkpoint maestro con precision de origen en el que se han conservado 192 de los 384 expertos enrutados de cada una de las 40 capas del decodificador, aplicando la tecnica REAP (expert pruning) sobre una arquitectura MoE con torre de vision. Los pesos de los expertos conservados son copias bit a bit del checkpoint base en MXFP4, sin recuantizacion.
 
-El objetivo es reducir el coste de despliegue del modelo original —el repositorio ocupa 162,8 GB en safetensors— preservando el comportamiento del profesor tanto como sea posible. La selección de expertos se hizo con la metodología REAP (ranking por HOPE, REAP-sum, masa de routing, frecuencia y anclas aleatorias), con arbitraje mediante KL sobre el top-32 del profesor en un split de cribado; el keep-set ganador se identifica como `hope_sum_pf0`. El repositorio se declara como maestro del que derivan las builds NVFP4 y GGUF/Thor.
+El modelo resuelve el problema de hacer manejable un MoE de gran tamano en hardware limitado: reduce el numero de expertos enrutados a la mitad manteniendo intactas la ruta densa FP8/BF16, la torre de vision de 32 capas y las 3 capas de decodificacion especulativa DSpark/MTP. El repositorio ocupa 151,6 GiB en 46 shards de safetensors, a los que hay que sumar 189,1 GiB de tablas Engram externas que no se incluyen y son obligatorias para cargar el modelo.
 
-La relevancia es doble: por un lado documenta con detalle inusual el proceso de poda de expertos y su evaluación pareada; por otro, los propios resultados revelan un fallo de compuerta reconocido por el autor. La regla preregistrada exigía superar a un keep-set aleatorio del mismo tamaño en kl32, y el modelo no alcanzó significación (diferencia pareada -0,1014, intervalo -0,2196 a +0,0400); el autor enmendó la regla a posteriori (2026-10-24) excluyendo el dominio multilingüe, donde el modelo se degrada de forma marcada. Para uso multilingüe, el propio autor recomienda el modelo sin podar.
+Es relevante ahora porque documenta de forma transparente un proceso de podado con puertas de liberacion pre-registradas, incluyendo el hecho de que el checkpoint fallo su puerta original y se publico bajo una enmienda posterior. Su interes es principalmente de investigacion: es el maestro del que derivan las builds GGUF y Thor del mismo autor, y su acuerdo top-1 con el modelo sin podar es de 0,798 sobre 185.565 tokens de validacion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) con atención FP8, compressor, indexer, hyper-connections, torre de visión y tres capas DSpark/MTP; derivado podado del base DeepSeek-V4.1-Flash-1017 |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (MoE con 384 expertos enrutados por capa, de los que se conservan 192; experto compartido intacto) |
-| Longitud de contexto | no disponible en la información proporcionada; el corpus de calibración incluye un pool de contexto largo con filas de 32k a 128k tokens |
-| Tipos de cuantizacion | MXFP4 en expertos enrutados (pesos E2M1 con escalas E8M0); FP8 en el camino denso (atención, compressor, indexer); builds derivados en NVFP4 y GGUF |
-| Idiomas soportados | no disponible |
-| Licencia | MIT |
-| Formato de pesos | safetensors (repositorio de 162,8 GB) |
+| Arquitectura | `DeepseekV41ForCausalLM` (`model_type: deepseek_v41`), transformer MoE con torre de vision y aligner |
+| Parametros totales | No disponible como cifra agregada; 271,8 B en expertos enrutados (40 capas x 192 expertos) |
+| Parametros activos | 6 expertos enrutados por token mas 1 experto compartido (por capa) |
+| Longitud de contexto | 1.048.576 tokens (`max_position_embeddings`, YaRN x16 sobre 65.536); no evaluado mas alla de 8K |
+| Tipos de cuantizacion | MXFP4 (E2M1 con escala E8M0 por bloque de 32) en expertos; FP8 E4M3 con escalas de bloque E8M0 en atencion, compressor, indexer y experto compartido; BF16 en router, embedding y cabeza; F32 en normas e hyper-connections |
+| Idiomas soportados | No disponible |
+| Licencia | MIT (heredada del modelo base) |
+| Formato de pesos | safetensors (46 shards, 162.750.843.576 bytes) |
 
 ## Arquitectura y entrenamiento
 
-No hay entrenamiento desde cero: el modelo es el checkpoint `DeepSeek-V4.1-Flash-1017` (revisión `1bae0e1088993b9b82de08f59de5be5a34e42170`) con poda estructurada de expertos y cuantización MXFP4 ya presente en el base. Cada capa del decodificador conserva 192 de 384 expertos enrutados; el camino denso (atención FP8, compressor e indexer), el experto compartido, las hyper-connections, la torre de visión con aligner y las tres capas DSpark/MTP quedan sin modificar. Los tensores `gate.weight`, `gate.bias` y `gate.bias_vl` del router se recortan a los expertos conservados, de modo que el routing re-normaliza sobre los supervivientes exactamente igual que el router del modelo base. Los pesos de los expertos conservados son bit-exactos respecto al checkpoint original.
+El modelo base es un transformer MoE multimodal con 40 capas de decodificador y hidden size 5120. Cada capa contiene 384 expertos enrutados con 6 activos por token mas un experto compartido; esta variante conserva 192 expertos por capa, el mismo recuento en todas ellas. Ademas incorpora 3 capas de decodificacion especulativa DSpark/MTP con 128 expertos cada una, que no se podan, una torre de vision ViT de 32 capas con hidden 1024 mas un aligner, y tablas de embedding n-gram Engram en las capas 1 y 14.
 
-La selección se calibró con 4.975.198 tokens en secuencias de 8k más un pool de contexto largo de 32k a 128k, balanceado entre texto general, multilingüe, agéntico, código, visión, matemáticas, ciencia, finanzas y contexto largo (especificación de corpus `c1803e70af7db162`); solo se usó texto escrito por humanos o generado por modelos abiertos. Los candidatos se rankearon combinando HOPE (co-activación por pares con la diagonal REAP-sum), REAP-sum, masa de routing, frecuencia y anclas aleatorias, protegiendo el top de cada pool en el punto de inflexión medido de la fracción de protección (0,06); los Super-Experts y los expertos sensibles a posición o sumideros de atención nunca se podaron, como guarda contra la deriva en contexto largo. El arbitraje final se hizo por KL top-32 en held-out contra el profesor, con re-selección del router sobre los supervivientes y evaluación en memoria en un split de cribado; el ganador fue `hope_sum_pf0`, con huella del keep-set `1ace9b33134a2ca74174952593682e94edbf3c3348b4ac505ff59597a05d49ec`. El modelo no se ha "curado" (not healed): la poda infla la suma enrutada porque los pesos re-normalizan sobre menos expertos, y la ganancia medida por capa no se adoptó al no pasar su compuerta pareada, por lo que todas las ganancias valen 1; como una escala E8M0 solo puede moverse en potencias de dos, este maestro se distribuye sin esa corrección (las builds NVFP4 y GGUF sí la llevan).
+La innovacion tecnica principal es el podado REAP de expertos enrutados: los expertos conservados se copian byte a byte del checkpoint base, de modo que no hay pesos recuantizados en el repositorio. El router (`gate.weight`, `gate.bias`, `gate.bias_vl`) se recorta a los expertos conservados y el conjunto de retencion queda fijado en `reap_keepset.json` (sha256 `1ace9b33...`). No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo base; esta ficha no puede confirmarlo.
+
+El proceso de liberacion incluye una puerta pre-registrada que el checkpoint no supero: no supero por margen significativo a un conjunto de retencion aleatorio del mismo tamano en la metrica kl32. El autor enmiendo la regla el 2026-10-24, despues de ver el resultado, excluyendo el dominio multilingue, y el checkpoint se publico bajo esa enmienda.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general: heredadas del modelo base, con degradación medida frente al profesor no podado.
-- Capacidades multimodales: la torre de visión y su aligner se conservan intactos, por lo que el pipeline de imagen permanece operativo; los tokens de imagen se rankearon por separado usando su propio routing (`bias_vl`).
-- Código y matemáticas: presentes en el corpus de calibración como dominios específicos, con protección de expertos dedicada.
-- Contexto largo: se preservaron explícitamente Super-Experts y expertos sensibles a posición para limitar la deriva más allá de 32k tokens.
-- Capacidades agénticas: el dominio agéntico forma parte del corpus de calibración, aunque no se publican evaluaciones específicas de tool calling o function calling.
-- Multilingüe: soportado de forma degradada; es el dominio con peor acuerdo top-1 frente al profesor (0,5247 en el split de confirmación para el brazo mxfp4_A).
-- No disponible: no se documentan modos de pensamiento explícitos, soporte de audio, ni resultados de evaluación de agentes multi-paso en la información proporcionada.
+- Generacion de texto y razonamiento en un modelo MoE de gran escala, con 6 expertos activos por token sobre 192 disponibles por capa.
+- Procesamiento de imagen y texto (`pipeline_tag: image-text-to-text`): torre ViT de 32 capas y aligner heredados sin modificar del modelo base.
+- Decodificacion especulativa mediante 3 capas DSpark/MTP con 128 expertos cada una, no podadas.
+- Memoria n-gram via tablas Engram en las capas 1 y 14 (no incluidas en el repositorio; deben descargarse aparte).
+- Soporte de contexto largo declarado de hasta 1.048.576 tokens mediante YaRN x16, aunque no evaluado mas alla de 8K.
+- Capacidades multilingues: no disponibles como dato verificado; el dominio multilingue quedo excluido de la puerta de liberacion enmendada.
+- Tool calling, function calling y comportamiento agentico: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue de un MoE grande con presupuesto de VRAM restringido: al conservar 192 de 384 expertos por capa con pesos MXFP4, el repositorio reduce el espacio de pesos a 162,8 GB frente al base sin podar, lo que permite servir el modelo en nodos de 4 GPU en lugar de configuraciones mayores.
-- Investigación sobre poda de expertos: el paquete incluye keep-set (`reap_keepset.json`), huella criptográfica, especificación de corpus, compuertas preregistradas y resultados pareados, lo que lo convierte en un caso de estudio reproducible para evaluar metodologías REAP/HOPE frente a keep-sets aleatorios.
-- Generación de código en pipelines internos: el modelo conserva los expertos asociados al dominio de código identificados en la calibración, y puede integrarse en flujos de autocompletado o revisión siempre que se valide el acuerdo top-1 en el dominio concreto antes de producción.
-- Procesamiento de documentos con imagen y texto: la torre de visión intacta permite extracción y resumen de documentos escaneados, con la advertencia de que los tokens visuales usan un ranking de routing propio que no se ha evaluado de forma aislada en los resultados publicados.
-- Base para builds derivados: el autor lo declara repositorio maestro de las variantes NVFP4 y GGUF/Thor; es el punto de partida si se necesita una cuantización de 4 bits con escalas NVFP4 o un GGUF para llama.cpp/Ollama con la corrección de ganancia aplicada.
-- Comparación controlada de degradación por poda: sirve para medir, con el mismo tokenizador y el mismo profesor, cuánto se pierde en KL32 y en acuerdo top-1 al recortar el 50 % de los expertos enrutados antes de decidir una arquitectura de servicio.
-- Contexto largo en análisis financiero o científico: los dominios de finanzas y ciencia son los que mejor se comportan tras la poda y el modelo conserva guardas específicas contra la deriva en ventanas largas, aunque la longitud máxima de contexto no está documentada en la información disponible.
+- Investigacion sobre podado de expertos en MoE: el repositorio sirve como material de estudio a precision de origen para analizar el efecto de conservar 192 de 384 expertos por capa, con keep-set documentado y metricas de acuerdo top-1 frente al modelo sin podar.
+- Derivacion de builds propias: al ser el maestro bit a bit, permite generar cuantizaciones GGUF, Thor u otras variantes sin partir de pesos recuantizados, usando el `reap_keepset.json` como referencia reproducible.
+- Evaluacion de decodificacion especulativa: las 3 capas DSpark/MTP intactas permiten estudiar el impacto del podado en el drafter y en la tasa de aceptacion.
+- Experimentos multimodales: la torre de vision y el aligner sin tocar hacen viable comparar el rendimiento image-text-to-text del modelo podado frente al base con el mismo frontend visual.
+- Analisis de robustez de puertas de liberacion: el historial de la puerta fallida y su enmienda constituye un caso documentado para estudiar practicas de publicacion y sus sesgos.
+- Reproducibilidad de evaluacion: el harness `ops/s10_eval.py` y el split de confirmacion de 185.565 tokens permiten replicar la comparacion teacher-forced contra el modelo sin podar.
+- Despliegue en un solo dispositivo de 128 GB: no con este repositorio, pero si a traves de las builds derivadas Thor (106,9 GiB) o GGUF (85,6 GiB) del mismo autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Lo que sí se publica es una evaluación pareada, con teacher forcing, contra el modelo sin podar, sobre 185.565 tokens puntuados de 26 documentos held-out del split de confirmación (nunca usado para elegir el modelo), con intervalos bootstrap del 95 % agrupados por documento. kl32 es la KL media sobre el top-32 del profesor; el acuerdo top-1 es la fracción de tokens en los que el argmax coincide; dNLL es la diferencia de NLL del siguiente token respecto al profesor.
+| Metrica | Resultado | Metodo |
+|---|---|---|
+| Acuerdo top-1 con el modelo sin podar | 0,798 | Teacher-forced, 185.565 tokens, 26 documentos del split de confirmacion |
+| Puerta de liberacion original (kl32) | No superada | No supero a un keep-set aleatorio del mismo tamano por margen significativo |
+| Puerta enmendada (sin dominio multilingue) | Superada | Enmienda aplicada el 2026-10-24 tras ver el resultado |
 
-| Brazo | kl32 (IC 95 %) | Acuerdo top-1 | dNLL | Tasa de cambio confiado |
-|---|---|---|---|---|
-| control (todos los expertos) | 0,0000 [0,0000, 0,0000] | 1,0000 [1,0000, 1,0000] | 0,0000 [0,0000, 0,0000] | 0,0000 |
-| mxfp4_A (este modelo) | 0,4405 [0,2639, 0,6465] | 0,7980 [0,7431, 0,8481] | 0,2718 [0,1219, 0,4585] | 0,0524 |
-| thorA | 0,5194 [0,3261, 0,7423] | 0,7756 [0,7179, 0,8284] | 0,3091 [0,1426, 0,5119] | 0,0619 |
-| b128 | 0,8026 [0,5627, 1,0801] | 0,7092 [0,6443, 0,7701] | 0,5469 [0,3271, 0,8010] | 0,0995 |
-
-El brazo `control` conserva todos los expertos y se pasa por la misma maquinaria de evaluación: mide la maquinaria, no el modelo. Umbrales relevantes: el suelo de acuerdo top-1 era 0,65 para todos los dominios, rebajado a 0,40 para multilingüe el 2026-10-22 (decisión del propietario, antes de cualquier resultado de s10). En multilingüe, el acuerdo top-1 del brazo mxfp4_A es 0,5247 (thorA 0,4935; b128 0,4219). La compuerta preregistrada exigía superar a un keep-set aleatorio del mismo tamaño en kl32: en el conjunto de dominios no se alcanzó significación (diferencia pareada -0,1014, intervalo -0,2196 a +0,0400), por lo que la release falló la regla tal como estaba registrada; excluyendo multilingüe la diferencia es -0,2144 (intervalo -0,2633 a -0,1676). No se publican MMLU, HumanEval, GSM8K ni otras métricas estándar en la información disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio pesa 162,8 GB en safetensors, por lo que los pesos en MXFP4 requieren del orden de 163 GB de memoria de acelerador; a ello hay que sumar caché KV y activaciones. Cifra estimada a partir del tamaño del repositorio, no confirmada por el autor.
-- GPU recomendadas (estimación): 4× H100 80 GB (320 GB) o 3× H100/H200 80 GB con margen ajustado; 2× H200 141 GB (282 GB) deja aproximadamente 119 GB para caché KV y activaciones.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090; haría falta reparto multi-GPU con offload a CPU o esperar a las builds GGUF derivadas.
-- Opciones de despliegue: el maestro está pensado como origen de builds NVFP4 y GGUF/Thor; para servir safetensors MXFP4 se necesita un runtime con soporte de MXFP4 y MoE (vLLM o SGLang, sin confirmación explícita del autor en la información disponible). Para llama.cpp u Ollama hay que usar la build GGUF derivada, no este repositorio.
-- Latencia y throughput: no disponibles. Como referencia estructural, al conservar 192 de 384 expertos por capa el número de expertos enrutados candidatos por token se reduce a la mitad, lo que debería disminuir el tráfico de pesos efectivo, pero no se publican medidas.
-- Almacenamiento: prever al menos 163 GB para el checkpoint y espacio adicional para las builds derivadas (NVFP4 y GGUF).
+- Disco: aproximadamente 340 GiB en total, 151,6 GiB del repositorio mas 189,1 GiB de las dos tablas Engram obligatorias descargadas del modelo base.
+- VRAM: no disponible; el autor indica explicitamente que el checkpoint no cabe en un dispositivo de 128 GB.
+- GPU recomendadas: no disponible. El script de referencia `inference/run.sh` asume un checkpoint convertido con `inference/convert.py` y paralelismo de modelo en 8 vias.
+- Consumer GPU: no viable en este formato; para hardware limitado el autor remite a las builds Thor (Jetson AGX Thor de 128 GB) y GGUF (llama.cpp).
+- Opciones de despliegue: no se ha ejecutado ningun runtime de serving (Transformers, vLLM, SGLang ni el codigo de referencia) sobre este checkpoint. Las builds derivadas usan un servidor CUDA propio y una rama de llama.cpp (`deepseek-v4.1-reap-thor`).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros / expertos | Contexto | Formato y tamano | Licencia | Runtime probado |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-REAP192-MXFP4 | no disponible (192/384 expertos enrutados por capa) | no disponible | kl32 0,4405 frente al profesor; acuerdo top-1 0,7980 | MIT | Hugging Face, 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (sin podar) | no disponible (384/384 expertos) | no disponible | Referencia (control, kl32 0,0000) | no disponible en la información | Hugging Face, modelo base oficial |
-| Keep-set aleatorio del mismo tamaño (random0) | no disponible (192/384 expertos) | no disponible | Diferencia pareada de kl32 -0,1014 a favor del modelo podado, sin significación global | no aplica (experimento interno) | No distribuido como checkpoint |
-| Builds derivadas NVFP4 / GGUF-Thor | no disponible (misma poda, 192/384 expertos) | no disponible | Llevan la corrección de ganancia por capa que este maestro no aplica; sin métricas publicadas en la información disponible | MIT (heredada) | Anunciadas por el autor, sin enlace en la información disponible |
+| REAP192-MXFP4 (este) | 192 de 384 expertos por capa, 6 activos | 1.048.576 (no evaluado >8K) | safetensors, 151,6 GiB + Engram | MIT | No |
+| REAP192-Thor | Mismo podado, expertos Q2_K/Q3_K (2,83 bpw) | 1.048.576 | layout `thor-v1`, 106,9 GiB (+3,4 GiB overlay NVFP4) | MIT | Servidor CUDA propio en Jetson AGX Thor 128 GB |
+| REAP192-GGUF | Mismo podado, expertos I-quant (2,46 bpw) | 1.048.576 | GGUF L3, 85,6 GiB, con mmproj y drafter DSpark | MIT | Rama `deepseek-v4.1-reap-thor` de llama.cpp |
+| DeepSeek-V4.1-Flash-1017 (base) | 384 expertos por capa, 6 activos | 1.048.576 | MXFP4/FP8/BF16, sin podar | MIT | Referencia del autor |
+
+No se dispone de comparacion con modelos de otros desarrolladores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Multilingüe degradado de forma explícita: acuerdo top-1 de 0,5247 frente al modelo sin podar, el peor de todos los dominios; el suelo de la compuerta se rebajó de 0,65 a 0,40 para este caso. El propio autor recomienda usar el modelo sin podar para uso multilingüe.
-- La release falló su compuerta preregistrada: no superó de forma significativa a un keep-set aleatorio del mismo tamaño en kl32 (-0,1014 [-0,2196, +0,0400]). La regla se enmendó después de ver el resultado, excluyendo multilingüe; la comparación original sigue publicada junto a la enmendada.
-- El keep-set enviado puntuó 0,5233 en el split de cribado frente a 0,5592-0,5741 de keep-sets aleatorios del mismo tamaño, es decir, por debajo de varias alternativas aleatorias en esa métrica concreta.
-- Sin curación (not healed): no se aplica la ganancia por capa medida, porque no pasó su compuerta pareada. Las builds NVFP4 y GGUF sí la llevan, de modo que el comportamiento de este maestro y el de sus derivados no es idéntico.
-- Cuantización MXFP4 en los expertos: el redondeo E2M1 con escalas E8M0 limita la precisión por bloque; la tasa de cambio confiado (0,0524) indica que aproximadamente un 5 % de los tokens cambian de predicción en contextos de alta confianza respecto al profesor.
-- Riesgo de alucinación: no evaluado en la información disponible; al ser un derivado podado de un modelo mayor, cabe esperar un aumento del error respecto al original, especialmente fuera de los dominios protegidos en la calibración.
-- Contexto máximo no documentado: el corpus de calibración llega a 128k tokens, pero no se especifica la ventana soportada en inferencia; verificar antes de desplegar en cargas de contexto largo.
-- Licencia MIT: permisiva para uso comercial, pero se hereda cualquier restricción de los datos o del modelo base que el autor no haya documentado; conviene revisar la licencia del checkpoint original.
-- Madurez baja: 0 descargas y 0 likes en el momento de la consulta, publicación por un tercero no afiliado a DeepSeek, y model card truncada en la información disponible. No usar en producción sin validación propia por dominio.
-- Idiomas soportados no disponibles: no se puede confirmar la cobertura lingüística más allá del aviso de degradación multilingüe.
+- El checkpoint fallo su puerta de liberacion pre-registrada y se publico bajo una enmienda posterior que excluyo el dominio multilingue; el rendimiento en ese dominio no esta validado.
+- Inferencia no probada: ningun runtime de serving ha ejecutado este checkpoint. El tag `library_name: transformers` refleja el formato del modelo base, no una carga verificada.
+- Requiere descargar aparte 189,1 GiB de tablas Engram del modelo base; un loader que lea `model.safetensors.index.json` falla hasta que ambos ficheros estan presentes.
+- No cabe en dispositivos de 128 GB; el despliegue practico exige las builds derivadas.
+- El contexto de 1.048.576 tokens no se ha evaluado mas alla de 8K tokens.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible.
+- Idiomas soportados: no disponibles.
+- Licencia MIT heredada del modelo base, sin restricciones comerciales adicionales indicadas; el fichero `LICENSE` se copia sin cambios.
+- Al ser un artefacto de investigacion derivado por un tercero, no cuenta con el respaldo del equipo de DeepSeek.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-MXFP4
-- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017 (revisión `1bae0e1088993b9b82de08f59de5be5a34e42170`)
-- Resultados de la búsqueda web: no relevantes. Las únicas URLs devueltas apuntan a un sitio de webcams para adultos (xHamsterLive) en varios idiomas y no guardan relación con el modelo; se descartan. No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.
+- Hugging Face (este repositorio): https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-MXFP4
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Build Thor: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-Thor
+- Build GGUF: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-GGUF
+- Servidor CUDA del autor: https://github.com/patrickbdevaney/deepseek-v4.1-flash-cuda-server
+- Rama de llama.cpp: https://github.com/patrickbdevaney/llama.cpp/tree/deepseek-v4.1-reap-thor
+- Paper referenciado: arxiv:2510.13999
+- Paper referenciado: arxiv:2609.18916

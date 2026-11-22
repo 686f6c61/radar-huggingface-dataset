@@ -2,100 +2,98 @@
 
 ## Resumen
 
-RsEvi-8B-GGUF es el repositorio de cuantizaciones GGUF publicado por mradermacher a partir del modelo sesko818/RsEvi-8B. Se trata, por tanto, de una redistribución en formato GGUF de un modelo ya existente: no introduce cambios en la arquitectura ni en los pesos originales, sino que los convierte a tipos de cuantización de la familia K-quant e IQ-quant para su uso con llama.cpp y herramientas compatibles. El repositorio tiene 75,3 GB de tamano total porque incluye todas las variantes, desde Q2_K hasta f16, ademas de los ficheros mmproj necesarios para el componente multimodal.
+RsEvi-8B es un modelo de visión-lenguaje especializado en teledetección (remote sensing), es decir, en el análisis de imágenes de satélite y aéreas mediante instrucciones en lenguaje natural. El modelo original lo desarrolla el usuario sesko818, y esta ficha corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo está orientado a tareas de visual question answering (VQA) y visual grounding sobre imágenes de observación de la Tierra.
 
-El modelo subyacente, RsEvi-8B, es un modelo de vision-lenguaje especializado en teledeteccion (remote sensing). Sus etiquetas declaradas son visual-question-answering, visual-grounding y remote-sensing, y la model card lo vincula a EMNLP 2026. El recuento real de parametros de los pesos safetensors es de 8.190.735.360, es decir, unos 8,19 mil millones, lo que lo situa en la gama de 8B. El unico idioma declarado es el ingles.
+Con 8.190.735.360 parámetros totales (aproximadamente 8,2 mil millones), RsEvi-8B se sitúa en la categoría de modelos de visión-lenguaje de tamano medio, lo que lo hace viable en GPUs de consumo cuando se cuantiza a 4 o 5 bits. La versión GGUF incluye ficheros mmproj separados para el codificador visual, lo que permite combinar el modelo de lenguaje cuantizado con el proyector multimodal en despliegues locales.
 
-La relevancia de esta publicacion es practica: permite ejecutar un VLM de 8B especializado en imagenes de satelite y aereas en hardware de consumo, algo que con los pesos originales en safetensors resulta mas costoso. El repositorio no aporta, sin embargo, informacion sobre arquitectura interna, longitud de contexto, licencia o resultados de evaluacion, datos que no estan disponibles en la informacion proporcionada.
+La relevancia actual del modelo radica en su especialización: frente a modelos generalistas de visión-lenguaje, RsEvi-8B está entrenado específicamente para interpretar escenas de teledetección, responder preguntas sobre contenido de imágenes satelitales y localizar objetos o regiones concretas (grounding). La referencia a EMNLP 2026 en sus etiquetas sugiere que acompana a una publicación académica, aunque no se dispone de detalles del paper en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de vision-lenguaje segun las etiquetas del repositorio) |
-| Parametros totales | 8.190.735.360 (unos 8,19 mil millones) |
+| Arquitectura | Vision-lenguaje (transformer multimodal con proyector visual); detalles internos no disponibles |
+| Parametros totales | 8.190.735.360 |
+| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q6_K, Q8_0, f16; la model card menciona ademas Q5_K_S, Q5_K_M e IQ4_XS. Ficheros multimodales: mmproj-Q8_0 y mmproj-f16 |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en f16 y Q8_0 |
 | Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (mas ficheros mmproj para el codificador visual) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tamano del repo | 75,3 GB (incluye todas las cuantizaciones) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base sesko818/RsEvi-8B en los datos proporcionados. Las etiquetas del repositorio indican que se trata de un modelo de vision-lenguaje orientado a teledeteccion, con tareas declaradas de respuesta a preguntas visuales (visual-question-answering) y localizacion visual (visual-grounding), lo que implica la presencia de un codificador de imagen acoplado a un modelo de lenguaje; los ficheros mmproj confirman ese componente multimodal. No se especifican el tipo de transformer, el numero de capas, la dimension oculta ni si emplea atencion lineal u otras variantes.
+RsEvi-8B es un modelo de visión-lenguaje construido sobre un transformer multimodal: combina un codificador de imágenes con un modelo de lenguaje y un proyector que alinea ambos espacios. En el despliegue GGUF, el codificador visual y el proyector se distribuyen en ficheros mmproj separados (f16 de 1,3 GB y Q8_0 de 0,9 GB), mientras que el modelo de lenguaje se cuantiza por separado. No se dispone de información detallada sobre el número de capas, dimensiones ocultas ni el codificador visual concreto empleado.
 
-Tampoco hay datos sobre el entrenamiento: no se indica el numero de tokens, la composicion del dataset, si hubo ajuste por instrucciones, RLHF o DPO, ni si se aplicaron tecnicas de decodificacion especulativa. La referencia a EMNLP 2026 en las etiquetas sugiere la existencia de una publicacion asociada, pero no se ha proporcionado su contenido. La contribucion tecnica de este repositorio concreto es la conversion y cuantizacion de los pesos originales a GGUF, con versiones estaticas (no ponderadas ni con matriz de importancia).
+En cuanto al entrenamiento, la model card únicamente indica la especialización en teledetección, VQA y visual grounding, y la asociación con EMNLP 2026. No se especifican el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. Toda esta información debe considerarse no disponible.
 
 ## Capacidades
 
-- Respuesta a preguntas visuales (VQA) sobre imagenes: el pipeline declarado es visual-question-answering, orientado a imagenes de teledeteccion.
-- Localizacion visual (visual-grounding): capacidad declarada de referir regiones u objetos dentro de la imagen.
-- Procesamiento de imagenes de satelite y aereas, dado el dominio de especializacion declarado (remote-sensing).
-- Generacion de texto conversacional: el repositorio incluye la etiqueta conversational y el pipeline de transformers, por lo que admite interaccion en formato dialogo.
-- Capacidad multimodal mediante los ficheros mmproj, necesarios para la parte visual en llama.cpp.
-- No hay informacion disponible sobre soporte de tool calling o function calling.
-- No hay informacion disponible sobre capacidades de agente o razonamiento multi-paso.
-- Cobertura multilingue limitada al ingles segun los metadatos.
-- No hay informacion disponible sobre modo de razonamiento explicito, audio u otras modalidades adicionales.
+- Respuesta a preguntas visuales (VQA) sobre imágenes de satélite y aéreas: el modelo responde en lenguaje natural a preguntas sobre el contenido de escenas de teledetección.
+- Visual grounding: localización de objetos, regiones o elementos concretos dentro de una imagen a partir de una descripción textual.
+- Comprensión de escenas de observación de la Tierra: interpretación de cubierta terrestre, infraestructuras, vegetación, cuerpos de agua y otros elementos propios de imágenes remotas.
+- Generación de texto conversacional en inglés vinculada al contenido visual.
+- Despliegue multimodal local mediante llama.cpp y herramientas compatibles con GGUF y ficheros mmproj.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según los metadatos.
+- Capacidades especiales (thinking mode, audio): no disponibles.
 
 ## Casos de uso
 
-- Analisis de imagenes satelitales en local: el modelo puede responder preguntas sobre escenas captadas por satelite sin enviar los datos a un servicio externo, usando las cuantizaciones Q4_K_M o Q6_K en una GPU de consumo.
-- Inventario de infraestructura y usos del suelo: a partir de una ortofoto, formular preguntas del tipo "cuantas naves industriales hay en esta zona" o "que tipo de cultivo domina en el sector norte", apoyandose en las capacidades de VQA y grounding declaradas.
-- Verificacion de cambios temporales: comparar imagenes de la misma zona en dos fechas y pedir al modelo que describa diferencias visibles, util en seguimiento de obras, deforestacion o expansion urbana.
-- Apoyo a respuesta de emergencias: interpretar imagenes aereas de incendios o inundaciones para obtener descripciones rapidas de la extension afectada, desplegando el modelo en un equipo de campo con llama.cpp y una GPU de 12-16 GB.
-- Anotacion asistida de datasets geoespaciales: usar las capacidades de grounding para generar propuestas de bounding boxes o descripciones que despues se revisan por personal humano, reduciendo el coste de etiquetado.
-- Documentacion tecnica de imagenes: generar descripciones textuales de escenas para informes de teledeteccion o catalogos de imagenes de un archivo.
-- Integracion en pipelines de inferencia locales: al estar en GGUF, puede servirse con llama.cpp u Ollama dentro de un flujo automatizado que procese lotes de imagenes por la noche en un solo servidor.
+- Análisis automatizado de imágenes satelitales: un pipeline ingiere imágenes de satélite y formula preguntas en inglés sobre su contenido (por ejemplo, "¿qué tipo de cubierta terrestre domina esta escena?"), obteniendo respuestas en lenguaje natural útiles para inventarios preliminares.
+- Etiquetado asistido de datasets de teledetección: el modelo puede responder preguntas sobre regiones de interés para pre-anotar imágenes antes de la revisión humana, reduciendo el coste de construcción de datasets de VQA geospatial.
+- Localización de infraestructuras críticas: mediante visual grounding, se puede pedir al modelo que localice elementos como carreteras, puentes o edificaciones en imágenes aéreas, apoyando tareas de monitorización.
+- Monitorización medioambiental: consultas sobre presencia de vegetación, masas de agua o cambios en la cubierta terrestre en imágenes de observación de la Tierra, como apoyo a estudios de seguimiento.
+- Asistencia a analistas GIS: integración en herramientas de escritorio o notebooks donde el analista consulta imágenes mediante lenguaje natural, agilizando la exploración de escenas complejas.
+- Prototipado e investigación en visión-lenguaje geoespacial: al estar cuantizado en GGUF, permite experimentar en estaciones de trabajo con GPU de consumo sin necesidad de infraestructura de centro de datos.
+- Educación y divulgación: demostraciones interactivas de interpretación de imágenes satelitales en entornos con hardware limitado, gracias a las cuantizaciones Q4 y Q5.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizaciones no incluye metricas de MMLU, HumanEval, GSM8K ni de tareas de teledeteccion, y los resultados de la busqueda web proporcionada no contienen datos de evaluacion del modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Los tamanos publicados de cada fichero son: f16 16,5 GB; Q8_0 8,8 GB; Q6_K 6,8 GB; Q4_K_M 5,1 GB; Q4_K_S 4,9 GB; Q3_K_L 4,5 GB; Q3_K_M 4,2 GB; Q3_K_S 3,9 GB; Q2_K 3,4 GB.
-- A esos ficheros hay que sumar el componente visual: 1,3 GB para mmproj-f16 o 0,9 GB para mmproj-Q8_0.
-- Estimacion de VRAM para inferencia, sumando pesos y mmproj-Q8_0 y dejando margen para la cache KV: alrededor de 18-20 GB en f16, 10-11 GB en Q8_0, 8-9 GB en Q6_K, 6-7 GB en Q4_K_M, 5-6 GB en Q3_K_M y 4,5-5,5 GB en Q2_K. Son estimaciones derivadas de los tamanos de fichero publicados; la cache KV concreta depende de la longitud de contexto, que no esta disponible.
-- GPU de 24 GB (RTX 3090, RTX 4090, A10G, L4): permiten Q8_0 y probablemente f16 con contexto moderado.
-- GPU de 12-16 GB (RTX 4070 Ti, RTX 4080, A4000): adecuadas para Q4_K_M, Q4_K_S y Q6_K.
-- GPU de 8-10 GB (RTX 3060 Ti, RTX 3080, RTX 4060): viables con Q2_K, Q3_K_S o Q3_K_M, con perdida de calidad.
-- CPU y Apple Silicon: al ser GGUF, el modelo puede ejecutarse en CPU con llama.cpp y en Macs con memoria unificada suficiente; el rendimiento dependera del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, llama-cpp-python, Ollama, LM Studio, KoboldCpp y otros servidores compatibles con GGUF. vLLM y TGI no consumen GGUF de forma nativa, por lo que requeririan los pesos safetensors del modelo base.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (modelo de lenguaje + mmproj):
+  - Q2_K: ~3,4 GB + mmproj Q8_0 ~0,9 GB (aproximadamente 4,5 GB en total).
+  - Q4_K_M: ~5,1 GB + mmproj ~0,9-1,3 GB (aproximadamente 6-6,5 GB en total).
+  - Q5_K_M: ~6,0 GB + mmproj (aproximadamente 7-7,5 GB en total).
+  - Q8_0: ~8,8 GB + mmproj (aproximadamente 10 GB en total).
+  - f16: ~16,5 GB + mmproj (aproximadamente 18 GB en total).
+- GPU recomendadas: RTX 3060 12 GB o superior para cuantizaciones Q4/Q5; RTX 4090 (24 GB) para Q8_0 o f16; A100/H100 para despliegues de mayor throughput o f16 con margen.
+- Cabe en GPU de consumo: sí, en cuantizaciones Q4_K_M y Q5_K_M en GPUs de 8-12 GB; Q8_0 requiere 12-16 GB; f16 requiere 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama (si soporta el modelo con mmproj), y servidores compatibles con GGUF. Para el modelo base en safetensors, transformers con soporte multimodal.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| mradermacher/RsEvi-8B-GGUF | 8,19 mil millones | GGUF (11 variantes + 2 mmproj) | no disponible | no disponible | Hugging Face, 0 descargas |
-| sesko818/RsEvi-8B (base) | 8,19 mil millones | safetensors | no disponible | no disponible | Hugging Face |
-| Otros VLM de 8B para teledeteccion | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparativa cuantitativa no está disponible. A modo orientativo, RsEvi-8B se posiciona en la categoría de modelos de visión-lenguaje de ~8B parámetros especializados en teledetección, un nicho con pocos modelos públicos de este tamano. La comparación con alternativas generalistas de visión-lenguaje requeriría benchmarks que no se han publicado en la información disponible.
 
-No se dispone de informacion sobre modelos alternativos de la misma categoria (VLM especializados en teledeteccion de aproximadamente 8B) en los datos proporcionados, por lo que no es posible establecer una comparacion de rendimiento, contexto o licencia con alternativas concretas.
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+|---|---|---|---|---|---|
+| RsEvi-8B (esta ficha) | 8,19B | no disponible | Teledeteccion, VQA, grounding | no disponible | GGUF, safetensors |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido, ni para el repositorio GGUF ni para el modelo base. Conviene contactar con los autores antes de cualquier despliegue en produccion.
-- No hay resultados de benchmarks publicados en la informacion disponible, por lo que el rendimiento real en tareas de teledeteccion es una incognita.
-- Sesgos conocidos: no disponible. No se documenta la composicion del dataset de entrenamiento, por lo que no puede evaluarse el sesgo geografico, estacional o de sensor.
-- Riesgo de alucinacion: inherente a los modelos de vision-lenguaje. En tareas de grounding y conteo de objetos sobre imagenes aereas, un error de localizacion puede pasar desapercibido y tener consecuencias si se usa sin supervision.
-- Idioma: solo ingles. Las preguntas o instrucciones en castellano pueden degradar la calidad de la respuesta.
-- Dominio restringido: el modelo esta etiquetado como remote-sensing, por lo que su comportamiento fuera de ese dominio (fotografia general, documentos, capturas de pantalla) no esta garantizado.
-- Cuantizaciones agresivas: el propio autor marca Q3_K_M como "lower quality" y la grafica enlazada muestra mayor perplejidad en cuantizaciones bajas. Q2_K y Q3_K_S son las opciones con mayor perdida de fidelidad.
-- Los ficheros mmproj son imprescindibles para las tareas visuales; usar solo el fichero del modelo de lenguaje dara un modelo incapaz de procesar imagenes.
-- Longitud de contexto desconocida: no puede planificarse el procesamiento de escenas que requieran muchas imagenes o dialogos largos.
-- Repositorio sin descargas ni likes en el momento de la consulta, lo que limita la evidencia de uso en comunidad y el soporte disponible.
-- Los resultados de la busqueda web proporcionada no contienen informacion tecnica sobre el modelo (solo enlaces a servicios de traduccion), por lo que no ha sido posible contrastar ni ampliar los datos de la model card.
+- Idioma: el modelo está entrenado y documentado únicamente en inglés; las consultas en castellano pueden degradar la calidad de las respuestas.
+- Dominio restringido: su especialización en teledetección implica que su rendimiento en imágenes generales (fotos cotidianas, documentos, capturas de pantalla) puede ser inferior al de modelos de visión-lenguaje generalistas.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base (sesko818/RsEvi-8B) antes de desplegarlo en producción.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar descripciones plausibles pero incorrectas sobre el contenido de la imagen, especialmente en escenas ambiguas o de baja resolución; se recomienda validación humana en aplicaciones críticas.
+- Contexto: no se dispone de información sobre la longitud de contexto soportada, lo que impide garantizar el manejo de conversaciones multi-turno largas o múltiples imágenes en una misma sesión.
+- Cuantizaciones agresivas: Q2_K y Q3_K pueden degradar notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- Ficheros mmproj separados: un despliegue incorrecto que omita el mmproj impedirá el procesamiento de imágenes; es necesario cargar ambos componentes.
+- Sesgos: no se documentan sesgos específicos, pero los datasets de teledetección pueden estar geográficamente desbalanceados, lo que podría afectar a la calidad en regiones poco representadas.
+- Fecha de referencia: el modelo está asociado a EMNLP 2026 y actualizado en octubre de 2026; conviene verificar si existen revisiones posteriores o el paper asociado con resultados detallados.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/RsEvi-8B-GGUF
 - Modelo base: https://huggingface.co/sesko818/RsEvi-8B
-- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#RsEvi-8B-GGUF
-- Peticiones de cuantizacion y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Grafica comparativa de perplejidad entre cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones GGUF: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- README de referencia sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Empresa responsable de la infraestructura de cuantizacion: https://www.nethype.de/
-- Publicacion asociada (etiqueta emnlp-2026): no disponible
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/RsEvi-8B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#RsEvi-8B-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

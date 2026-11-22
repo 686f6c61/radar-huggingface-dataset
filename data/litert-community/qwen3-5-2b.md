@@ -1,84 +1,100 @@
 # litert-community/Qwen3.5-2B
 
 ## Resumen
-Qwen3.5-2B en formato LiteRT-LM es la conversión del modelo multimodal Qwen/Qwen3.5-2B de Alibaba al runtime on-device de Google (LiteRT-LM, anteriormente TensorFlow Lite), distribuida por el colectivo litert-community. El objetivo es ejecutar un modelo de 2B parámetros con capacidades de texto e imagen directamente en dispositivos de borde (smartphones, SBCs, portátiles) sin necesidad de GPU de servidor ni conexión a la nube.
 
-La arquitectura subyacente es híbrida: bloques de atención lineal GatedDeltaNet intercalados con bloques de atención completa con compuertas. En esta variante de 2B hay 18 capas de atención lineal y 6 de atención completa, lo que reduce drásticamente el crecimiento del estado recurrente frente al KV cache tradicional y permite mantener el consumo de memoria casi plano con la longitud de contexto.
+Qwen3.5-2B en formato LiteRT-LM es la conversión del modelo base Qwen/Qwen3.5-2B de Alibaba al formato `.litertlm`, realizada por la comunidad litert-community para inferencia en dispositivo (on-device) con el runtime LiteRT-LM de Google. El modelo original emplea una arquitectura híbrida propietaria de Qwen3.5 que combina bloques de atención lineal GatedDeltaNet con bloques de atención completa con compuertas, lo que reduce drásticamente el crecimiento de memoria con la longitud de contexto.
 
-El repositorio ofrece dos artefactos: una versión solo texto (1,97 GB) y una versión visión-lenguaje (3,15 GB) que incorpora el ViT de 24 capas del checkpoint original. Requiere litert-lm ≥ 0.15 y está pensado para despliegues en Android, Raspberry Pi 5 y equipos de escritorio con CPU o GPU integrada.
+El repositorio distribuye dos variantes: una compilación solo texto de 1,97 GB y una compilación multimodal (texto + imagen) de 3,15 GB que incorpora el ViT de 24 capas del checkpoint original. Ambas usan cuantización int8 dinámica en las capas lineales y el embedding, manteniendo en coma flotante las proyecciones de decaimiento y compuerta de GatedDeltaNet para preservar la estabilidad numérica en aritmética multi-paso.
+
+La relevancia actual del modelo reside en su perfil de despliegue: cabe en dispositivos móviles de gama alta y en placas SBC como Raspberry Pi 5, con velocidades de decodificación medidas de 17,5 tok/s en GPU de Galaxy S26 y 4,2 tok/s en CPU de Raspberry Pi 5. Requiere litert-lm ≥ 0.15 y está publicado bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 18 capas GatedDeltaNet (atención lineal con regla delta compuertada) + 6 capas de atención completa compuertada; ViT de 24 capas en la variante VL |
-| Parametros totales | 2B (aproximado, según denominación del modelo base) |
+| Arquitectura | Híbrida: 18 capas de atención lineal GatedDeltaNet + 6 capas de atención completa con compuertas (transformer híbrido) |
+| Parametros totales | 2B (según denominación del modelo base; no se detalla el desglose exacto) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4096 tokens de presupuesto KV en las 6 capas de atención completa; las capas lineales usan estado recurrente de tamaño constante |
-| Tipos de cuantizacion | int8 dinámica en lineales y embedding; proyecciones de decaimiento/compuerta (`in_proj_a`, `in_proj_b`) y convoluciones en float; activaciones declaradas fp32; ViT en fp16 con adaptador int8 |
-| Idiomas soportados | no disponible en la información proporcionada (el modelo base Qwen3.5 es multilingüe, pero no se detalla el conjunto) |
+| Longitud de contexto | 4096 tokens de presupuesto KV en las 6 capas de atención; las capas lineales usan estado recurrente de tamaño constante |
+| Tipos de cuantizacion | int8 dinámica en lineales y embedding; proyecciones `in_proj_a`/`in_proj_b` de GatedDeltaNet en float; activaciones fp32 declaradas; ViT en fp16 con adaptador int8 (variante VL) |
+| Idiomas soportados | no disponible (la model card no enumera idiomas; se mencionan pruebas de tokenización en hindi, tailandés, tamil, árabe, chino, japonés, coreano e inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); también disponible el checkpoint original en safetensors en Qwen/Qwen3.5-2B |
+| Formato de pesos | `.litertlm` (LiteRT-LM); dos ficheros: `Qwen3.5-2B_int8.litertlm` (1,97 GB) y `Qwen3.5-2B-VL_int8.litertlm` (3,15 GB) |
 
 ## Arquitectura y entrenamiento
-El modelo base Qwen3.5-2B emplea una arquitectura híbrida propietaria de Alibaba que combina bloques GatedDeltaNet (atención lineal con regla delta compuertada) con un número reducido de bloques de atención completa compuertada. La ventaja estructural es que las capas lineales mantienen un estado recurrente y convolucional de tamaño fijo por capa, en lugar de un KV cache que crece con el contexto; solo las 6 capas de atención completa conservan KV, con un presupuesto de 4096 tokens. Esto hace que la memoria sea prácticamente plana respecto a la longitud de contexto, algo crítico en dispositivos con RAM limitada.
 
-La conversión a LiteRT-LM se realizó con `litert_torch.convert` (antes ai-edge-torch), sin modificar el modelo, y se validó con una coincidencia de 4e-7 frente al original en un Galaxy S26. La versión solo texto elimina el tower de visión y las cabeceras MTP siguiendo el contrato de carga de `Qwen3_5ForCausalLM`; la versión VL reincorpora el ViT de 24 capas del checkpoint con entrada estática de 512×512 y seis firmas de prefill. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO del modelo base en la información proporcionada.
+El modelo base Qwen3.5-2B emplea una arquitectura híbrida en la que los bloques GatedDeltaNet (atención lineal basada en la regla delta con compuertas) se intercalan con un número reducido de bloques de atención completa con compuertas. En esta compilación de 2B, la proporción es de 18 capas lineales frente a 6 de atención completa. Los bloques lineales mantienen un estado recurrente y convolucional de tamaño constante por capa en lugar de una caché KV creciente, de modo que el consumo de memoria permanece prácticamente plano respecto a la longitud de contexto; solo las 6 capas de atención conservan KV, con un presupuesto de 4096 tokens.
+
+El checkpoint upstream es multimodal e incluye una torre de visión de 24 capas y cabezas MTP. La compilación solo texto las descarta siguiendo el contrato de carga `Qwen3_5ForCausalLM` de upstream, mientras que la compilación VL incorpora el ViT propio del checkpoint con entradas estáticas de 512×512 y seis firmas de prefill. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) del modelo base en la documentación proporcionada. La conversión a LiteRT-LM se realizó con `litert_torch`, y la model card reporta una coincidencia numérica de 4e-7 frente al modelo original en una Galaxy S26 con LiteRT 2.2.0.
 
 ## Capacidades
-- Generación de texto y razonamiento multi-turno con contexto de hasta 4096 tokens en las capas de atención completa.
-- Procesamiento de imagen y texto (variante VL): entrada image-text-to-text con ViT de 24 capas a resolución estática 512×512.
-- Razonamiento aritmético multi-paso: la re-cuantización del 11-10-2026 corrigió un bucle de repetición en CPU con el modo thinking desactivado.
-- Modo thinking configurable (activado/desactivado) heredado del modelo base Qwen3.5.
-- Soporte multilingüe heredado del modelo base (no se detalla el conjunto exacto de idiomas).
-- Ejecución on-device en CPU y GPU mediante LiteRT-LM, con delegación completa de operadores (25.703 ops delegadas en GPU en Galaxy S26).
-- No se documenta soporte explícito de tool calling o function calling en la información disponible.
+
+- Generación de texto y razonamiento en modo conversacional, con plantilla de chat compatible con el formato de content-parts de litert-lm 0.18.
+- Procesamiento de imágenes en la variante VL: entrada image-text-to-text con ViT de 24 capas a resolución estática 512×512.
+- Razonamiento aritmético multi-paso: la re-cuantización del 11 de octubre de 2026 eliminó el bucle de repetición en CPU con el modo thinking desactivado por defecto.
+- Tokenización multilingüe con cobertura verificada en hindi, tailandés, tamil, árabe con harakat, chino, japonés, coreano, inglés y emoji tras la corrección del tokenizador del 16 de octubre de 2026.
+- Inferencia en dispositivo con delegación completa de operadores: 25.703 operadores delegados en la prueba con GPU de Galaxy S26.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso autónomo: no disponible en la información proporcionada.
+- Modo thinking: mencionado como desactivado por defecto en las pruebas de aritmética; no se detallan sus capacidades específicas.
 
 ## Casos de uso
-- Asistente conversacional offline en Android: integrado mediante `com.google.ai.edge.litert:litert`, el modelo puede gestionar diálogos multi-turno en el propio dispositivo con 17,5 tok/s de decodificación en GPU y TTFT de 520 ms, sin enviar datos a la nube.
-- Análisis de documentos e imágenes en el dispositivo: la variante VL permite extraer texto, describir imágenes o responder preguntas sobre capturas y fotos con entrada 512×512, útil en apps de accesibilidad o escaneo.
-- Automatización en Raspberry Pi 5: con 4,2 tok/s de decodificación y 56 tok/s de prefill en CPU con 4 hilos, es viable para tareas de clasificación, resumen o respuestas cortas en entornos embebidos sin GPU.
-- Procesamiento por lotes en portátiles: la versión solo texto de 1,97 GB cabe en equipos con 8 GB de RAM y permite resúmenes, extracción de entidades o generación de respuestas en aplicaciones de escritorio.
-- Prototipado de agentes locales: el modelo puede servir como motor de razonamiento en pipelines de agentes que requieran privacidad total, con estado recurrente que no crece con el contexto y por tanto no agota la memoria en sesiones largas.
-- Filtrado y moderación de contenido en el borde: clasificación de texto e imagen en tiempo real dentro de la app, sin latencia de red, aprovechando la cuantización int8 y la delegación completa a GPU.
-- Educación y demos interactivas: despliegue en dispositivos de gama media para demostraciones de IA generativa multimodal sin infraestructura de servidor.
+
+- Asistentes conversacionales embebidos en aplicaciones Android: el modelo se integra mediante la librería `com.google.ai.edge.litert:litert` y ofrece decodificación a 17,5 tok/s en GPU de Galaxy S26, suficiente para respuestas interactivas sin conexión a red.
+- Procesamiento de documentos con OCR y comprensión visual en el dispositivo: la variante VL acepta imágenes de 512×512 y puede describir o extraer información de capturas, formularios o fotografías sin enviar datos a un servidor.
+- Automatización en placas SBC y dispositivos IoT: con 4,2 tok/s de decodificación y 56 tok/s de prefill en CPU de Raspberry Pi 5 con 4 hilos, el modelo es viable para tareas de clasificación, extracción de entidades y generación de respuestas breves en entornos sin GPU.
+- Privacidad por diseño en sectores regulados: al ejecutarse íntegramente en el dispositivo con licencia Apache 2.0, permite desplegar asistentes sobre datos sensibles (sanitario, legal, financiero) sin transferencia a infraestructura externa.
+- Traducción y normalización de texto multilingüe en el borde: la tokenización corregida para escrituras con marcas combinantes (hindi, tailandés, tamil, árabe) habilita tareas de transliteración y normalización en dispositivos de mercados diversos.
+- Prototipado rápido de aplicaciones de IA generativa en móvil: el formato `.litertlm` y el runtime LiteRT-LM permiten iterar sobre prompts y plantillas de chat con ficheros de menos de 2 GB, reduciendo el ciclo de desarrollo frente a soluciones basadas en servidor.
+- Filtrado y resumen de contenido en el propio terminal: con memoria casi constante respecto al contexto gracias a las capas GatedDeltaNet, el modelo puede procesar conversaciones o hilos largos dentro de los 4096 tokens de presupuesto KV sin degradación de memoria.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos de rendimiento medidos en dispositivo son los siguientes:
 
-| Plataforma | Runtime | Backend | Decode (tok/s) | Prefill (tok/s) | TTFT |
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card únicamente reporta mediciones de rendimiento en dispositivo:
+
+| Dispositivo | Runtime | Backend | Decodificación | Prefill | TTFT |
 |---|---|---|---|---|---|
-| Galaxy S26 | LiteRT-LM 0.16.0 | GPU | 17,5 | 450 | 520 ms |
-| Galaxy S26 | LiteRT-LM 0.16.0 | CPU | 19,0 | 181 | 1,20 s |
-| Raspberry Pi 5 (4 hilos) | LiteRT-LM 0.16.1 | CPU | 4,2 | 56 | 5,04 s |
+| Galaxy S26 | LiteRT-LM 0.16.0 | GPU | 17,5 tok/s | 450 tok/s | 520 ms |
+| Galaxy S26 | LiteRT-LM 0.16.0 | CPU | 19,0 tok/s | 181 tok/s | 1,20 s |
+| Raspberry Pi 5 (4 hilos) | LiteRT-LM 0.16.1 | CPU | 4,2 tok/s | 56 tok/s | 5,04 s |
 
-Mediciones realizadas el 2026-09-05 (Galaxy S26) y 2026-09-01 (Raspberry Pi 5) sobre el archivo VL previo a la re-cuantización del 2026-10-11 (sha256 `f8821e40…`).
+Las mediciones corresponden al fichero VL previo a la re-cuantización del 11 de octubre de 2026 (sha256 `f8821e40…`), con fecha de 5 de septiembre de 2026 para Galaxy S26 y 1 de septiembre de 2026 para Raspberry Pi 5.
+
+## Requisitos de hardware
+
+- VRAM/RAM estimada: 1,97 GB para la variante solo texto y 3,15 GB para la variante VL, en ambos casos en formato int8.
+- GPU recomendadas: no se especifican modelos de escritorio; las pruebas publicadas emplean la GPU integrada de un Galaxy S26 (Adreno) con delegación completa de los 25.703 operadores.
+- Compatibilidad con GPU de consumo: no disponible en la información proporcionada; el enfoque del repositorio es el despliegue en dispositivo móvil y SBC, no en tarjetas gráficas de escritorio.
+- Despliegue: runtime LiteRT-LM ≥ 0.15 (verificado en 0.15.0, 0.16.0, 0.16.1 y 0.18.0); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: TTFT de 520 ms en GPU de Galaxy S26 y 5,04 s en CPU de Raspberry Pi 5; prefill de 450 tok/s y 56 tok/s respectivamente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Enfoque |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B (LiteRT-LM) | 2B | 4096 (KV) + estado recurrente | `.litertlm` int8 | Apache 2.0 | On-device híbrido, texto + visión |
-| Qwen3.5-0.8B (LiteRT-LM) | 0,8B | no disponible | `.litertlm` | Apache 2.0 | On-device, menor huella |
-| Qwen3.5-4B (LiteRT-LM) | 4B | no disponible | `.litertlm` | Apache 2.0 | On-device, mayor capacidad |
+| Qwen3.5-2B (LiteRT-LM, este repo) | 2B | 4096 tokens KV + estado recurrente constante | `.litertlm` int8 | Apache 2.0 | Hugging Face, litert-community |
+| Qwen3.5-0.8B (LiteRT-LM) | 0,8B | no disponible | `.litertlm` | Apache 2.0 | Hugging Face, litert-community |
+| Qwen3.5-4B (LiteRT-LM) | 4B | no disponible | `.litertlm` | Apache 2.0 | Hugging Face, litert-community |
 
-La comparativa se limita a la familia Qwen3.5 convertida por el mismo colectivo; no se dispone de datos de benchmarks ni de especificaciones detalladas de las variantes 0.8B y 4B en la información proporcionada.
+Las tres variantes comparten la misma ruta de conversión y el kernel gated-delta de rango ≤4 delegable a GPU. No se dispone de datos de benchmarks comparativos entre ellas ni frente a alternativas de otros formatos en la información proporcionada.
 
 ## Limitaciones y advertencias
-- La versión solo texto publicada el 2026-08-14 y la VL del 2026-08-25 presentaban un bucle de repetición en respuestas aritméticas multi-paso con backend CPU y thinking desactivado; fue corregido en la re-cuantización del 2026-10-11. Verificar el sha256 del archivo descargado.
-- El tokenizer original de la versión solo texto (hasta el 2026-10-16) no incluía la clase `\p{M}`, lo que producía tokenización incorrecta en textos con marcas combinantes (hindi, tailandés, tamil, árabe con harakat). Actualizado al tokenizer oficial del repositorio base.
-- El presupuesto KV de 4096 tokens en las 6 capas de atención completa limita el contexto efectivo; las capas lineales no crecen, pero la atención completa sí.
-- La variante VL usa entrada estática de 512×512, lo que restringe la resolución de imágenes procesables.
-- No se dispone de información sobre sesgos, tasas de alucinación ni evaluación de seguridad del modelo base en la documentación proporcionada.
-- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base Qwen/Qwen3.5-2B por si hubiera condiciones adicionales.
-- Requiere litert-lm ≥ 0.15; versiones anteriores no son compatibles.
-- El rendimiento en CPU es sensiblemente inferior al de GPU en prefill (181 vs 450 tok/s en Galaxy S26), lo que afecta a la latencia en prompts largos.
+
+- Defecto histórico conocido: los ficheros publicados el 14 de agosto de 2026 (texto) y el 25 de agosto de 2026 (VL) producían respuestas en bucle ante aritmética multi-paso en el backend CPU con thinking desactivado; fue corregido en la re-cuantización del 11 de octubre de 2026. Quien haya descargado las versiones anteriores debe actualizar.
+- El autor reconoce que la advertencia sobre el comportamiento de un solo Engine se añadió a la model card el 12 de octubre de 2026, aunque el informe abierto sobre el runtime lo describía desde el 6 de agosto de 2026.
+- Tokenizador corregido el 16 de octubre de 2026: la sección anterior usaba el tokenizador de `transformers` para `Qwen2Tokenizer`, sin clase `\p{M}`, lo que fragmentaba de forma distinta el texto con marcas combinantes (49 frente a 36 tokens en una frase en hindi, 24 frente a 12 en tailandés, 29 frente a 16 en tamil). Las versiones anteriores pueden producir tokenizaciones divergentes en esas escrituras.
+- Presupuesto de contexto limitado: solo 4096 tokens de caché KV en las 6 capas de atención, lo que restringe la ventana efectiva pese al estado recurrente de las capas lineales.
+- Idiomas soportados no documentados oficialmente; la cobertura multilingüe se infiere únicamente de las pruebas de tokenización, no de evaluaciones de calidad.
+- Sin datos publicados sobre sesgos, tasas de alucinación ni evaluaciones de seguridad del modelo base en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo en producción; los defectos documentados evidencian la necesidad de validación propia antes de desplegar.
+- Dependencia estricta del runtime LiteRT-LM ≥ 0.15; no hay soporte documentado para otros motores de inferencia.
 
 ## Enlaces
-- Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3.5-2B
+
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen3.5-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Variante 0.8B: https://huggingface.co/litert-community/Qwen3.5-0.8B
 - Variante 4B: https://huggingface.co/litert-community/Qwen3.5-4B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Benchmark edge-compat (registro de mediciones): https://github.com/john-rocky/edge-compat/blob/main/cards/qwen35-2b-vl-int8/CARD.md
-- Benchmark apple-silicon-llm-bench (medición de conversión): https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md
+- Ficha de compatibilidad en dispositivo (edge-compat): https://github.com/john-rocky/edge-compat/blob/main/cards/qwen35-2b-vl-int8/CARD.md
+- Benchmark de runtimes en Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

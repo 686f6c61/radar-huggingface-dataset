@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Sign in - Zoom",
-      "url": "https://zoom.us/signin",
-      "snippet": "Sign in to your Zoom account to join a meeting, update your profile, change your settings, and more!"
-    },
-    {
-      "title": "Oturum Aç | Zoom",
-      "url": "https://zoom.us/tr/signin",
-      "snippet": "Bir toplantıya katılmak, profilinizi güncellemek, ayarlarınızı değiştirmek ve dahası için Zoom hesabınıza giriş yapın!"
-    },
-    {
-      "title": "Zoom",
-      "url": "https://app.zoom.us/wc",
-      "snippet": "Zoom is a cloud-based platform for video conferencing, online meetings, and group chat, offering secure and HD-quality …"
-    },
-    {
-      "title": "One platform to connect | Zoom",
-      "url": "https://www.zoom.com/",
-      "snippet": "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, …"
-    },
-    {
-      "title": "Zoom: Bağlantı kurmak için tek bir platform",
-      "url": "https://www.zoom.com/tr",
-      "snippet": "Zoom’un video toplantıları, ekip sohbeti, VoIP telefonu, web seminerleri, beyaz tahta, iletişim merkezi ve etkinlikler gibi güvenilir iş …"
-    }
-  ]
+  "sources": []
 }

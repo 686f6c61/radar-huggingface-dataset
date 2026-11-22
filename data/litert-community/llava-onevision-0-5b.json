@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/LLaVA-OneVision-0.5B · Hugging Face",
-      "url": "https://huggingface.co/litert-community/LLaVA-OneVision-0.5B",
-      "snippet": "LLaVA-OneVision-0.5B is a compact vision-language model from the LLaVA team: a SigLIP vision encoder + MLP projector feeding a Qwen2-0.5B language decoder. This 829 MB bundle runs it through LiteRT-LM's fast_vlm multimodal path — give it an image and a question, get a grounded answer, fully offline."
-    },
-    {
-      "title": "README.md · litert-community/LLaVA-OneVision-0.5B at main",
-      "url": "https://huggingface.co/litert-community/LLaVA-OneVision-0.5B/blob/main/README.md",
-      "snippet": "LLaVA-OneVision-0.5B is a compact vision-language model from the LLaVA team: a SigLIP vision encoder + MLP projector feeding a Qwen2-0.5B language decoder. This 829 MB bundle runs it through LiteRT-LM's fast_vlm multimodal path — give it an image and a question, get a grounded answer, fully offline."
-    }
-  ]
+  "sources": []
 }

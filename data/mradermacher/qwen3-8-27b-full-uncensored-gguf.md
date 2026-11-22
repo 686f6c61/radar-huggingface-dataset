@@ -2,92 +2,103 @@
 
 ## Resumen
 
-El modelo `mradermacher/Qwen3.8-27B-full-Uncensored-GGUF` es una colección de cuantizaciones GGUF del modelo `0xSojalSec/Qwen3.8-27B-full-Uncensored`, una versión "abliterated" (sin censura) del Qwen3.8-27B original de Alibaba. El proceso de abliteration elimina las direcciones de activación asociadas al rechazo de peticiones, produciendo un modelo que responde sin filtros de seguridad. Esta variante está pensada exclusivamente para investigación en seguridad de IA, red-teaming y evaluación de riesgos, no para uso en producción.
+Qwen3.8-27B-full-Uncensored-GGUF es una coleccion de cuantizaciones estáticas en formato GGUF del modelo 0xSojalSec/Qwen3.8-27B-full-Uncensored, publicada por mradermacher, un conocido creador de cuantizaciones para la comunidad. El modelo subyacente es una variante "abliterated" y "uncensored" de la familia Qwen3, con 27.320.697.856 parametros totales (aproximadamente 27,3 mil millones), orientada explicitamente a tareas de red-team y de investigacion en seguridad de IA. La cuantizacion la realiza mradermacher a partir de los pesos originales en safetensors, y el resultado se distribuye en multiples niveles de precision.
 
-El modelo base Qwen3.8-27B es un transformer denso de 27 320 millones de parámetros con arquitectura híbrida: 48 capas de atención lineal Gated DeltaNet y 16 capas de atención completa, lo que permite una ventana de contexto nativa de 262 144 tokens. Incluye además capacidades multimodales nativas (visión) mediante un proyector adicional. El autor de la cuantización, mradermacher, ofrece nueve niveles de cuantización GGUF (de Q2_K a Q8_0) más los proyectores multimodales, lo que facilita su ejecución en hardware variado.
+El interes de esta publicacion es doble. Por un lado, ofrece el modelo en un rango amplio de cuantizaciones (desde Q2_K de 11,0 GB hasta Q8_0 de 29,1 GB), lo que permite ejecutarlo en hardware de consumo y en entornos de servidor con recursos limitados. Por otro lado, incluye ficheros mmproj (multi-modal supplement) en Q8_0 y f16, lo que indica que el modelo base incorpora capacidades multimodales de vision.
 
-La relevancia de este modelo radica en que combina un contexto muy largo, arquitectura híbrida eficiente y ausencia de mecanismos de rechazo, convirtiéndolo en una herramienta valiosa para estudiar comportamientos no alineados, alucinaciones y sesgos en modelos de gran tamaño, siempre dentro de un marco ético y legal.
+La licencia declarada es Apache 2.0, lo que facilita su uso comercial segun los terminos de dicha licencia. No obstante, al tratarse de una variante sin censura, su uso en produccion requiere evaluaciones de seguridad adicionales. El modelo esta etiquetado para ingles (`en`) como unico idioma soportado en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 48 capas Gated DeltaNet (atención lineal) + 16 capas full-attention |
-| Parametros totales | 27 320 697 856 (27,32 B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262 144 tokens (nativa) |
-| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q4_K_M, Q5_K_S, Q6_K, Q8_0; también mmproj-Q8_0 y mmproj-f16 para visión |
-| Idiomas soportados | Inglés (según la model card; el modelo base Qwen3.8 soporta múltiples idiomas, pero esta versión está etiquetada como `en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (también safetensors y MLX en el repo base) |
+| Arquitectura | transformer tipo Qwen3 (model_type: qwen3) |
+| Parametros totales | 27.320.697.856 (aprox. 27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16; versiones imatrix en el repo i1-GGUF |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base; tambien se referencia mlx |
+| Tamano del repo | 190,8 GB |
+| Modelo base | 0xSojalSec/Qwen3.8-27B-full-Uncensored |
+| Libreria | transformers |
+| Etiquetas destacadas | abliterated, uncensored, obliteratus, red-team, ai-safety-research |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura híbrida que combina atención lineal Gated DeltaNet (48 capas) con atención completa (16 capas). Esta mezcla reduce el coste computacional en contextos largos manteniendo la calidad en tareas de razonamiento. El entrenamiento original de Qwen3.8 incluyó una fase de preentrenamiento con billones de tokens y un posterior ajuste fino con instrucciones y preferencias humanas (RLHF/DPO), aunque los detalles exactos del dataset no se han publicado en la información disponible.
+La informacion disponible indica que el modelo base pertenece a la familia Qwen3 (`model_type: qwen3`), por lo que se trata de un transformer decoder-only. El autor del modelo base lo etiqueta como "abliterated", "uncensored" y "obliteratus", terminos que en la practica de la comunidad describen la aplicacion de tecnicas de abliteration (proyeccion de direcciones de rechazo en el espacio de activaciones) para reducir el comportamiento de rechazo del modelo original. No se dispone de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
 
-Sobre este modelo base, `0xSojalSec` aplicó la técnica de abliteration, que consiste en identificar y eliminar las direcciones en el espacio de activaciones responsables del comportamiento de rechazo. El resultado es un modelo que no se niega a responder a peticiones dañinas o controvertidas. Posteriormente, `mradermacher` generó cuantizaciones estáticas GGUF (sin imatrix) a partir de los pesos en safetensors. No se dispone de información sobre el número exacto de tokens de entrenamiento ni sobre la composición del dataset de la versión abliterated.
+La publicacion de mradermacher es una cuantizacion estatica (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) realizada a partir de los pesos en safetensors del modelo base. El autor indica que las cuantizaciones ponderadas/imatrix estan disponibles en un repositorio separado (i1-GGUF). La presencia de ficheros mmproj sugiere que el modelo base incorpora un proyector multimodal para entrada de imagenes, aunque no se detalla la arquitectura de dicho proyector.
 
 ## Capacidades
 
-- Generación de texto libre y continuaciones coherentes en inglés.
-- Razonamiento complejo y resolución de problemas matemáticos y lógicos, heredado del Qwen3.8 base.
-- Generación de código en múltiples lenguajes de programación.
-- Soporte de tool calling y function calling (capacidad nativa de Qwen3).
-- Capacidades multimodales de visión si se utilizan los proyectores `mmproj` incluidos (procesamiento de imágenes).
-- Ventana de contexto de 262 144 tokens, adecuada para documentos largos y conversaciones multi-turno extensas.
-- Ausencia de mecanismos de rechazo: responde a peticiones que los modelos alineados normalmente bloquean (contenido violento, ilegal, etc.), lo que la hace útil para análisis de riesgos.
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` y el pipeline declarado.
+- Capacidades multimodales: la presencia de ficheros mmproj (Q8_0 y f16) indica soporte de entrada de imagenes en el modelo base.
+- Comportamiento "uncensored": el modelo ha sido modificado para reducir los rechazos ante peticiones que el modelo original rechazaria, lo que lo hace adecuado para investigacion de seguridad y red-team.
+- Etiquetado para investigacion en seguridad de IA (`ai-safety-research`, `red-team`).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la informacion disponible.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Red-teaming y evaluación de seguridad: el modelo permite probar sistemas de moderación y detectar vulnerabilidades en pipelines de IA generativa, generando respuestas sin filtros que revelan posibles fallos de alineación.
-- Investigación en alucinaciones: al carecer de restricciones, es posible estudiar cómo y cuándo el modelo inventa información falsa en contextos largos, comparando con versiones alineadas.
-- Generación de contenido creativo sin restricciones: escritura de ficción, guiones o diálogos que requieren explorar temas tabú o controvertidos sin censura previa.
-- Análisis de sesgos y comportamientos no deseados: al eliminar el refusal, se pueden exponer sesgos latentes en el modelo base, útiles para auditorías de equidad.
-- Pruebas de robustez de sistemas de agentes: con su soporte de tool calling y contexto largo, se puede evaluar cómo un agente autónomo se comporta cuando recibe instrucciones maliciosas o ambiguas.
-- Benchmarking de cuantización: los distintos niveles GGUF permiten medir el impacto de la pérdida de precisión en tareas de razonamiento y generación, útil para decidir el punto óptimo de compresión.
+- Red-team de sistemas de IA: el modelo puede emplearse para generar prompts adversarios y respuestas que permitan evaluar la robustez de filtros de seguridad y clasificadores de contenido en pipelines propios, gracias a su comportamiento sin censura.
+- Investigacion en alineacion y seguridad: util como sujeto de estudio para analizar como la abliteration afecta a la distribucion de respuestas y a las metricas de rechazo en comparacion con el modelo original.
+- Evaluacion de mecanismos de defensa: permite probar guardrails, moderacion y sistemas de deteccion de contenido dañino frente a un modelo que no aplica rechazos por defecto.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_S (15,9 GB) y Q4_K_M (16,9 GB) permiten ejecutar el modelo en GPUs con 24 GB de VRAM, como la RTX 4090, mediante llama.cpp u Ollama.
+- Analisis de documentos con imagenes: gracias a los ficheros mmproj, puede usarse para tareas de descripcion de imagenes o extraccion de informacion visual en entornos controlados de investigacion.
+- Experimentacion con cuantizaciones: la disponibilidad de 11 niveles de cuantizacion permite estudiar el impacto de la precision en la calidad de las respuestas y en las tasas de rechazo, un aspecto relevante en estudios de seguridad.
+- Entornos aislados de generacion de texto en ingles: para tareas de sintesis o transformacion de texto donde se requiera un modelo de ~27 B ejecutable en local sin dependencia de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El blog de HackerNoon menciona que existen evaluaciones comparativas, pero no se proporcionan cifras concretas en los materiales consultados. Se recomienda ejecutar pruebas propias (por ejemplo, MMLU, HumanEval, GSM8K) sobre la cuantización elegida para obtener datos fiables.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización (tamaño del archivo + overhead de contexto):
-  - Q2_K (11,0 GB): requiere al menos 14 GB de VRAM, cabe en RTX 4080/4090 (16/24 GB).
-  - Q4_K_M (16,9 GB): requiere ~20 GB de VRAM, recomendable RTX 4090 (24 GB) o A5000.
-  - Q6_K (22,5 GB): requiere ~26 GB, solo en GPUs profesionales como A100 40GB o RTX 6000 Ada.
-  - Q8_0 (29,1 GB): requiere ~34 GB, necesaria A100 40GB/80GB o H100.
-- Para contexto de 262K tokens, la memoria adicional puede superar los 10 GB, por lo que se recomienda reducir la ventana si se usa hardware limitado.
-- GPUs recomendadas: RTX 4090 (24 GB) para Q4_K_M, A100 40GB para Q6_K y Q8_0, H100 para máxima calidad.
-- Opciones de despliegue: llama.cpp (soporte nativo GGUF), Ollama (importando el GGUF), LM Studio, y para safetensors: vLLM, TGI o Transformers con carga en 8 bits.
-- En Apple Silicon, los quants Q4_K_M y Q5_K_M funcionan bien con MLX (el repo base incluye pesos MLX).
-- Latencia y throughput: no disponibles; dependen del hardware y de la longitud de contexto. En una RTX 4090 con Q4_K_M, se puede esperar una generación de 20-40 tokens/s para secuencias cortas.
+- VRAM estimada para inferencia (incluye pesos y overhead aproximado de contexto y cache KV):
+  - Q2_K (11,0 GB): aproximadamente 12-14 GB de VRAM.
+  - Q3_K_M (13,6 GB): aproximadamente 15-17 GB de VRAM.
+  - IQ4_XS (15,5 GB) y Q4_K_S (15,9 GB): aproximadamente 17-19 GB de VRAM.
+  - Q4_K_M (16,9 GB): aproximadamente 18-20 GB de VRAM.
+  - Q5_K_M (19,6 GB): aproximadamente 21-23 GB de VRAM.
+  - Q6_K (22,5 GB): aproximadamente 24-26 GB de VRAM.
+  - Q8_0 (29,1 GB): aproximadamente 31-33 GB de VRAM.
+- GPUs recomendadas: RTX 4090 (24 GB) para cuantizaciones hasta Q5_K_M o Q6_K con contexto moderado; A100 40 GB, A100 80 GB o H100 para Q8_0 y contextos largos.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI). Para el modelo base en safetensors, transformers; tambien se referencia mlx para Apple Silicon.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27,32 B | 262 144 | Apache-2.0 | safetensors, GGUF | Alineado, con refusal |
-| Qwen3.8-27B-full-Uncensored (este) | 27,32 B | 262 144 | Apache-2.0 | GGUF, safetensors, MLX | Abliterated, sin refusal |
-| Llama-3.1-8B-Instruct-abliterated | 8,03 B | 131 072 | Llama 3.1 | GGUF | Menor tamaño, contexto menor, también abliterated |
-| Mistral-7B-Instruct-abliterated | 7,24 B | 32 768 | Apache-2.0 | GGUF | Más ligero, contexto corto |
+| Qwen3.8-27B-full-Uncensored-GGUF (este) | 27,3 B | no disponible | Apache 2.0 | GGUF, safetensors, mlx | Variante abliterated/uncensored, 11 cuantizaciones, mmproj multimodal |
+| Modelo base 0xSojalSec/Qwen3.8-27B-full-Uncensored | 27,3 B | no disponible | Apache 2.0 | safetensors | Pesos originales sin cuantizar |
+| Qwen3 original (familia) | no disponible | no disponible | no disponible | no disponible | Modelo de referencia de la familia; no se dispone de datos concretos en la informacion proporcionada |
 
-La comparativa se basa en características técnicas, ya que no hay benchmarks públicos para la versión uncensored. El Qwen3.8-27B destaca por su contexto de 262K y arquitectura híbrida, superando a las alternativas abliterated de menor tamaño en capacidad bruta, aunque con mayores requisitos de hardware.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos alternativos en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
 
 ## Limitaciones y advertencias
 
-- Contenido potencialmente dañino: al eliminar el refusal, el modelo puede generar instrucciones para actividades ilegales, violencia, discurso de odio, etc. Su uso debe limitarse a entornos controlados de investigación.
-- Sesgos y alucinaciones: al no estar alineado, es más propenso a inventar información y a reflejar sesgos presentes en los datos de entrenamiento sin filtro.
-- Idioma: la model card indica únicamente inglés; aunque el modelo base soporta otros idiomas, la versión abliterated puede degradar el rendimiento en lenguas no inglesas.
-- Cuantización estática: los quants GGUF no incluyen imatrix, por lo que la calidad puede ser ligeramente inferior a versiones con imatrix en niveles bajos (Q2_K, Q3_K).
-- Restricciones de uso: aunque la licencia es Apache-2.0 (permite uso comercial), el propósito declarado es la investigación en seguridad. El blog de orcarouter advierte de un "research-only boundary"; se recomienda revisar las políticas del modelo base y las leyes locales antes de cualquier despliegue.
-- Requisitos de memoria: el contexto de 262K tokens consume mucha VRAM adicional; en GPUs de 24 GB es necesario reducir la ventana a 32K-64K para evitar desbordamientos.
+- Modelo "uncensored": la abliteration elimina o reduce los rechazos, por lo que puede generar contenido dañino, ilegal o sesgado. No es apto para produccion orientada al usuario final sin guardrails adicionales.
+- Riesgo elevado de alucinacion y de respuestas no veraces, especialmente en cuantizaciones bajas (Q2_K, Q3_K_S) donde la perdida de precision degrada la calidad.
+- Idiomas: solo se declara ingles; el rendimiento en castellano no esta garantizado ni documentado.
+- Longitud de contexto no documentada en la informacion disponible; no debe asumirse una ventana larga sin verificacion empirica.
+- Licencia Apache 2.0: permite uso comercial segun sus terminos, pero el uso de un modelo sin censura puede incumplir politicas de plataformas, terminos de servicio de proveedores cloud o normativa aplicable en materia de contenido.
+- Las cuantizaciones Q2_K y Q3_K_S degradan notablemente la calidad; para uso serio se recomienda Q4_K_M o superior.
+- El modelo esta etiquetado para investigacion en seguridad; su uso debe enmarcarse en entornos controlados y con supervision.
+- No se dispone de informacion sobre sesgos especificos, datos de entrenamiento ni evaluaciones de seguridad del modelo base.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-GGUF
-- Modelo base (abliterated): https://huggingface.co/0xSojalSec/Qwen3.8-27B-full-Uncensored
-- Guía de ejecución local con llama.cpp: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
-- Análisis del modelo abliterated: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
-- Comparativa con otros modelos GGUF: https://hackernoon.com/qwen38-27b-uncensored-vs-other-qwen-gguf-models
-- Página de solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-GGUF
+- Modelo base: https://huggingface.co/0xSojalSec/Qwen3.8-27B-full-Uncensored
+- Cuantizaciones imatrix (i1-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-full-Uncensored-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafica comparativa de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

@@ -2,95 +2,98 @@
 
 ## Resumen
 
-Qwen2-VL-2B de litert-community es una conversión del modelo vision-lenguaje Qwen2-VL-2B-Instruct de Alibaba al formato LiteRT-LM, el runtime on-device de Google (anteriormente TensorFlow Lite). El paquete empaqueta el codificador visual ViT de Qwen2-VL y el decodificador de lenguaje Qwen2-1.5B en un único fichero `.litertlm` de aproximadamente 1,78 GB, pensado para inferencia multimodal imagen+texto completamente en dispositivo, sin conexión a la nube.
+Qwen2-VL-2B de litert-community es una conversión del modelo visión-lenguaje Qwen2-VL-2B-Instruct de Alibaba al formato LiteRT-LM, el runtime de inferencia on-device de Google (antes TensorFlow Lite). El paquete empaqueta un encoder visual ViT de 32 capas y 1280 dimensiones con un decodificador de lenguaje Qwen2-1.5B de 28 capas, cuantizado a int8 el encoder y a int4 el decodificador, en un único fichero de aproximadamente 1,78 GB. El objetivo es claro: ejecutar un VLM multimodal completo en teléfonos y dispositivos de borde sin conexión a la nube.
 
-La relevancia de esta conversión reside en que permite ejecutar un VLM generalista en hardware móvil y de escritorio con un rendimiento medido: 46,3 tokens/s de decodificación y 657 tokens/s de prefill en la GPU de un Galaxy S26, y 139,1 tokens/s de decodificación en la GPU Metal de un Apple M4 Max. El modelo base destaca por su codificador visual de resolución dinámica y su capacidad para VQA general, descripción de imágenes y lectura de documentos/OCR en un tamaño de bolsillo.
+La relevancia de esta conversión radica en que demuestra que un modelo visión-lenguaje de 2B parámetros puede correr en hardware móvil con latencias utilizables: 46,3 tokens/s de decodificación y 657 tokens/s de prefill en la GPU de un Galaxy S26, y 139,1 tokens/s de decodificación en la GPU de un Apple M4 Max. Frente al modelo original en PyTorch/Transformers, que requiere GPUs de escritorio o servidores, esta versión prioriza portabilidad y consumo sobre precisión absoluta.
 
-La ficha describe la conversión concreta publicada por litert-community, no el modelo original de Alibaba; las capacidades y limitaciones reflejan tanto la arquitectura de Qwen2-VL como las restricciones introducidas por la cuantización int4/int8 y la resolución fija de imagen del bundle.
+El modelo conserva las capacidades del Qwen2-VL-2B-Instruct original: descripción de imágenes, VQA, lectura de documentos y OCR, con una ventana de contexto de 4096 tokens para la KV cache y una entrada de imagen fija de 672×672 píxeles que se traduce en 576 tokens visuales.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language transformer: ViT (32 capas, 1280-dim, atención completa) + decodificador Qwen2-1.5B (28 capas, hidden 1536, GQA kv2) |
-| Parametros totales | no disponible (el bundle empaqueta ViT + Qwen2-1.5B; el modelo base se denomina 2B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 4096 (KV cache del bundle LiteRT-LM) |
-| Tipos de cuantizacion | Decodificador int4 (simétrico, blockwise-32 + OCTAV); ViT int8; adaptador PatchMerger int8; embedder externo int8 |
+| Arquitectura | VLM: encoder ViT (Qwen2-VL ViT, 32 capas, 1280 dim, atención completa) + adaptador PatchMerger + decodificador transformer Qwen2-1.5B (28 capas, hidden 1536, GQA kv2) |
+| Parametros totales | ~2B (1.5B decodificador + encoder visual) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 (KV cache) |
+| Tipos de cuantizacion | int8 (encoder visual y adaptador), int4 simétrica blockwise-32 + OCTAV (decodificador), embedder externo int8 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (bundle LiteRT-LM, ~1,78 GB); modelo base en safetensors |
+| Formato de pesos | `.litertlm` (LiteRT-LM, fichero único de ~1,78 GB) |
 
 ## Arquitectura y entrenamiento
 
-El bundle replica la arquitectura de Qwen2-VL: un codificador visual ViT de 32 capas y 1280 dimensiones con atención completa que procesa la imagen y un adaptador PatchMerger (LayerNorm → agrupación 2×2 → MLP) que proyecta las características visuales al tamaño oculto del texto (1536). El decodificador es Qwen2-1.5B con 28 capas, hidden 1536 y GQA con 2 cabezas KV. En esta conversión el ViT se hace estático a 672×672 píxeles, lo que produce 2304 parches que tras el merge 2×2 se reducen a 576 tokens de imagen; la normalización OpenAI-CLIP está incorporada en el codificador.
+La arquitectura es un VLM de dos torres: un encoder visual ViT de 32 capas y 1280 dimensiones con atención completa que procesa la imagen a resolución estática de 672×672 píxeles, generando 2304 parches que tras un merge 2×2 se reducen a 576 tokens de imagen. Un adaptador PatchMerger (LayerNorm, agrupación 2×2 y MLP) proyecta esos tokens a la dimensión oculta del texto (1536). El decodificador es Qwen2-1.5B con 28 capas, hidden size 1536 y GQA con 2 cabezas KV, cuantizado a int4.
 
-La conversión se realizó con `litert-torch` (el antiguo `ai-edge-torch`). El fichero publicado el 2026-11-14 tiene los grafos de prefill/decode reescritos para GPU por un script separado, sin cambios en los pesos. El decodificador usa cuantización int4 simétrica blockwise-32 con OCTAV y un embedder externo int8; el ViT y el adaptador usan int8. No se dispone de información sobre el dataset de entrenamiento ni sobre las etapas de RLHF/DPO del modelo base en la información proporcionada.
+No se dispone de información sobre el dataset de entrenamiento ni sobre si hubo RLHF o DPO en esta conversión; el modelo base Qwen2-VL-2B-Instruct es el que aporta el entrenamiento original de Alibaba. La innovación técnica de esta ficha es la conversión a LiteRT-LM mediante `litert-torch`, con un grafo de prefill/decode reescrito para GPU y la ruta multimodal `fast_vlm` del runtime. La normalización OpenAI-CLIP está integrada en el encoder.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general en inglés y otros idiomas (no se detalla la lista).
-- Comprensión de imágenes: descripción detallada, VQA (visual question answering) y grounding visual.
-- Lectura de documentos y OCR: transcripción de texto en imágenes, incluyendo cifras, correos y teléfonos.
-- Lectura de tablas y conteo de elementos (p. ej., "hay 5 productos listados").
-- Procesamiento de múltiples imágenes en una misma consulta mediante `--attachment` repetido.
+- Generación de texto e imagen-a-texto (image-text-to-text).
+- Descripción detallada de imágenes con grounding espacial (posiciones relativas de objetos).
+- VQA (visual question answering) sobre fotografías y escenas.
+- OCR y lectura de documentos: transcripción de texto, cifras, correos y teléfonos en páginas sintéticas.
+- Lectura de tablas y conteo de elementos (por ejemplo, contar productos listados).
+- Conversación multi-turno con imágenes adjuntas (el CLI acepta múltiples `--attachment`).
 - Inferencia completamente on-device, sin conexión a la nube.
-- Servicio como API local compatible con OpenAI mediante `litert-lm serve`.
-- No se documenta soporte de tool calling, function calling ni modo thinking en la información disponible.
+- API local compatible con OpenAI mediante `litert-lm serve`.
+- No se documenta soporte de tool calling, function calling ni agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Descripción automática de imágenes en aplicaciones móviles: el bundle procesa una foto y genera una descripción en una frase con latencia de TTFT de 0,16 s en GPU Metal de M4 Max, adecuado para apps de accesibilidad o catalogación de fotos.
-- OCR y digitalización de documentos en dispositivo: la transcripción verificada de una página de informe sintético (cifras, correo y teléfono) permite construir escáneres de facturas o extractores de datos sin enviar documentos a la nube.
-- Asistencia visual para personas con discapacidad visual: la capacidad de grounding detallado (descripción de paisajes, objetos y posiciones) y la ejecución local en un Pixel 8a lo hacen viable en tiempo real.
-- Moderación y etiquetado de contenido visual: clasificación y descripción de imágenes en pipelines de moderación que requieren privacidad, al no salir los datos del dispositivo.
-- Análisis de tablas e informes en movilidad: lectura de tablas y conteo de filas para aplicaciones de campo (inventario, inspección) donde no hay conectividad.
-- Chat multimodal local de escritorio: `litert-lm serve` expone una API compatible con OpenAI para integrar el modelo en herramientas de escritorio con privacidad de datos.
-- Prototipado de agentes visuales en edge: la ventana de 4096 tokens y el soporte multi-imagen permiten conversaciones multi-turno con contexto visual moderado en dispositivos sin GPU dedicada.
+- Descripción automática de imágenes en aplicaciones móviles: el modelo procesa una foto y devuelve una frase descriptiva con objetos y contexto; su tamaño de 1,78 GB y su decodificación a 46,3 tokens/s en un Galaxy S26 lo hacen viable para apps Android sin backend.
+- Accesibilidad para personas con discapacidad visual: la app captura una imagen con la cámara y el modelo genera una descripción hablada con posiciones relativas de los objetos, gracias a su grounding espacial verificado en Pixel 8a.
+- Digitalización de documentos en el dispositivo: OCR de facturas, informes o tarjetas de visita con transcripción de cifras y contactos, sin enviar datos sensibles a servidores externos.
+- Asistente de compras o inventario: lectura de tablas de productos y conteo de elementos en estanterías o listados, con la limitación conocida de que el ranking de celdas entre filas es su punto débil.
+- Chat multimodal local en escritorio: con `litert-lm serve` se expone una API compatible con OpenAI en macOS, Linux y Windows, útil para prototipos de asistentes que combinan texto e imagen sin depender de la nube.
+- Moderación de contenido visual en el borde: clasificación y descripción de imágenes en el propio dispositivo antes de subirlas, reduciendo ancho de banda y preservando privacidad.
+- Educación y lectura asistida: el modelo puede leer y explicar el contenido de una página de libro o pizarra capturada con la cámara, con contexto de 4096 tokens suficiente para una página completa.
 
 ## Benchmarks y rendimiento
+
+No se han publicado resultados de benchmarks en la información disponible (MMLU, HumanEval, GSM8K u otros). Los únicos datos de rendimiento son de inferencia:
 
 | Dispositivo | Backend | Prefill (256 tokens) | Decode | TTFT |
 |---|---|---|---|---|
 | Apple M4 Max (macOS) | CPU | 141 tok/s | 42,7 tok/s | 1,96 s |
 | Apple M4 Max (macOS) | GPU (Metal) | 1753 tok/s | 139,1 tok/s | 0,16 s |
-| Galaxy S26 (GPU) | GPU | 657 tok/s (1024 tokens) | 46,3 tok/s | no disponible |
+| Galaxy S26 | GPU | 657 tok/s (prefill 1024 tokens) | 46,3 tok/s | no disponible |
 
-Medido con `litert-lm benchmark` (litert-lm 0.15.0) en M4 Max, `-p 256 -d 256 --runs 3`, max-num-tokens 4096, warm-up descartado. Las cifras cubren la ruta de texto; el codificador visual se ejecuta una vez por imagen y no está incluido. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
+Nota: las cifras de M4 Max corresponden a un fichero anterior y cubren solo la ruta de texto; el encoder visual se ejecuta una vez por imagen y no está incluido.
 
 ## Requisitos de hardware
 
-- VRAM/RAM: el bundle ocupa ~1,78 GB en disco; en ejecución requiere al menos ~2 GB de memoria disponible, más el espacio para el KV cache de 4096 tokens.
-- GPU recomendadas: GPU Metal en Apple Silicon (M4 Max medido), GPU de Galaxy S26 (medido), GPU de Pixel 8a (verificado en Google AI Edge Gallery con visión en GPU y decodificador en CPU).
-- Cabe en GPU consumer: sí, en cualquier GPU con al menos 2-3 GB de memoria libre; también funciona en CPU.
-- Opciones de despliegue: runtime `litert-lm` (pip install litert-lm), `litert-lm run`, `litert-lm serve` (API compatible con OpenAI), Google AI Edge Gallery en Android.
-- Latencia y throughput: TTFT de 0,16 s en GPU Metal M4 Max; 139,1 tok/s de decodificación en GPU Metal y 42,7 tok/s en CPU M4 Max; 46,3 tok/s en GPU de Galaxy S26.
+- VRAM/RAM estimada: el fichero `.litertlm` ocupa ~1,78 GB; se recomienda al menos 2-3 GB de memoria libre para cargar el modelo y la KV cache de 4096 tokens.
+- GPU recomendadas: GPU integradas de móviles de gama alta (Galaxy S26 verificado), GPU Metal en Apple Silicon (M4 Max verificado), GPU de escritorio compatible con LiteRT.
+- Cabe en hardware consumer: sí, en teléfonos Android de gama alta y en Macs con Apple Silicon; también en CPU de escritorio (42,7 tok/s en M4 Max CPU).
+- Opciones de despliegue: `litert-lm` (CLI `run` y `serve`), Google AI Edge Gallery en Android; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para el formato `.litertlm`.
+- Latencia y throughput: TTFT de 0,16 s en GPU Metal y 1,96 s en CPU (M4 Max); decodificación de 139,1 tok/s en GPU y 42,7 tok/s en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato/despliegue | Licencia |
-|---|---|---|---|---|
-| Qwen2-VL-2B (LiteRT-LM, este) | ViT + Qwen2-1.5B | 4096 | `.litertlm`, on-device | Apache-2.0 |
-| Qwen2-VL-2B-Instruct (original) | 2B | 32768 (según modelo base, no confirmado en la información) | safetensors, GPU/servidor | Apache-2.0 |
-| Alternativas on-device de tamaño similar | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| litert-community/Qwen2-VL-2B (esta ficha) | ~2B | 4096 | `.litertlm` | Apache-2.0 | Hugging Face, on-device |
+| Qwen/Qwen2-VL-2B-Instruct (base) | ~2B | no disponible en la información | safetensors (Transformers) | Apache-2.0 | Hugging Face |
+| Otros VLM de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada.
+No se dispone de datos de benchmarks comparativos ni de otras alternativas on-device verificadas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Resolución de imagen fija a 672×672: imágenes de mayor resolución se reescalan, lo que puede perder detalle en documentos densos o texto pequeño.
-- Contexto limitado a 4096 tokens de KV cache, muy inferior al contexto del modelo base; las conversaciones multi-turno con muchas imágenes se truncarán.
-- Cuantización agresiva (int4 en el decodificador) puede degradar la precisión frente al modelo original, especialmente en razonamiento complejo y tareas numéricas.
-- Punto débil documentado: el ranking de celdas de tabla entre filas es la tarea con peor rendimiento.
-- Riesgo de alucinación inherente a los VLM de 2B; las descripciones y transcripciones deben validarse en producción.
-- Idiomas soportados no documentados en la información disponible; el ejemplo verificado está en inglés.
-- No se documenta soporte de tool calling ni de agentes multi-paso.
-- Posibles problemas de descarga incompleta del fichero `.litertlm` en versiones del CLI 0.14.0-0.19.2; el autor recomienda borrar el fichero de caché y reintentar.
-- Licencia Apache-2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Qwen2-VL-2B-Instruct (Apache-2.0 según la model card).
+- El ranking de celdas entre filas en tablas es el punto débil documentado del modelo.
+- La entrada de imagen es fija a 672×672 píxeles; imágenes de otra resolución se reescalan, lo que puede perder detalle en documentos de alta resolución.
+- La ventana de contexto es de 4096 tokens, insuficiente para documentos muy largos o conversaciones extensas.
+- No se documentan los idiomas soportados; el comportamiento multilingüe no está verificado en esta conversión.
+- Riesgo de alucinación inherente a modelos de 2B, especialmente en OCR de documentos complejos o imágenes ambiguas.
+- La licencia Apache-2.0 permite uso comercial, pero se heredan las limitaciones y sesgos del modelo base Qwen2-VL-2B-Instruct.
+- El CLI de litert-lm (0.14.0 a 0.19.2) puede reutilizar descargas incompletas del caché sin verificar su tamaño; es necesario borrar el fichero y volver a descargar si hay errores de bus o `too large for file size`.
+- El fichero publicado antes del 2026-11-14 (11:21 UTC) fue reemplazado; hay que eliminar la copia antigua del caché para evitar ejecutar la versión previa.
+- El formato `.litertlm` está atado al runtime LiteRT-LM; no es portable a otros motores de inferencia sin reconversión.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/litert-community/Qwen2-VL-2B
-- Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
-- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Benchmark de referencia en Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md
+- [Hugging Face: litert-community/Qwen2-VL-2B](https://huggingface.co/litert-community/Qwen2-VL-2B)
+- [Modelo base: Qwen/Qwen2-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct)
+- [Repositorio LiteRT-LM](https://github.com/google-ai-edge/litert-lm)
+- [Medición de LiteRT en Galaxy S26](https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md)

@@ -2,82 +2,90 @@
 
 ## Resumen
 
-VibeWorlder-30B-A3B es un modelo de lenguaje multimodal (vision-language) desarrollado por el equipo usail-hkust, posteriormente cuantizado a formato GGUF por mradermacher para su despliegue local eficiente. El nombre del modelo sigue la convención de arquitecturas MoE tipo Qwen3-30B-A3B, lo que sugiere un total de aproximadamente 30.500 millones de parámetros con unos 3.000 millones activos por token, aunque esta característica no está confirmada explícitamente en la documentación disponible.
+VibeWorlder-30B-A3B-i1-GGUF es una compilación de cuantizaciones GGUF del modelo base usail-hkust/VibeWorlder-30B-A3B, publicada por el usuario mradermacher. No se trata de un modelo entrenado desde cero, sino de una conversión y cuantización del checkpoint original en formato transformers a formato GGUF, con el objetivo de facilitar su despliegue en entornos de inferencia locales mediante llama.cpp y herramientas compatibles. El modelo base tiene 30.532.122.624 parámetros totales (aproximadamente 30,5 mil millones), lo que, junto con la nomenclatura "A3B", sugiere una arquitectura de mezcla de expertos (MoE) con alrededor de 3 mil millones de parámetros activos por token, aunque este dato no está confirmado explícitamente en la información disponible.
 
-La relevancia de este modelo radica en su naturaleza multimodal: al ser un modelo de visión, puede procesar tanto texto como imágenes, lo que lo hace adecuado para tareas de comprensión visual, descripción de imágenes y razonamiento multimodal. La versión cuantizada por mradermacher ofrece múltiples niveles de compresión (desde IQ2_M con 10,3 GB hasta Q4_K_M con 18,7 GB), lo que permite ejecutarlo en una amplia gama de hardware, desde tarjetas gráficas de consumo hasta GPUs profesionales.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de gran tamaño en hardware de consumo mediante cuantizaciones que van desde 6,5 GB (IQ1_S) hasta 25,2 GB (Q6_K). El repositorio incluye cuantizaciones con imatrix (importancia matricial), lo que mejora la calidad respecto a las cuantizaciones estáticas convencionales en rangos bajos y medios. El modelo está etiquetado como conversacional y orientado al inglés, y el autor lo publica bajo el paraguas de su iniciativa de cuantización para la comunidad.
 
-La fecha de creación (agosto de 2026) indica que se trata de un modelo reciente, y su publicación en formato GGUF con cuantizaciones imatrix sugiere un enfoque orientado a la optimización de calidad frente a tamaño. Sin embargo, la información pública sobre su entrenamiento, licencia y rendimiento es limitada, por lo que esta ficha refleja únicamente los datos verificables disponibles.
+La información disponible sobre el modelo base es escasa: no se especifican la longitud de contexto, la licencia, los datos de entrenamiento ni los benchmarks. Esta ficha recoge únicamente los datos verificables de la model card y de los metadatos de Hugging Face, indicando explícitamente "no disponible" en los campos que no se han podido confirmar.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (inferida por la nomenclatura A3B), multimodal vision-language |
-| Parametros totales | 30.532.122.624 (~30,5 B) |
-| Parametros activos | ~3 B (inferido por la nomenclatura A3B, no confirmado) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ2_M, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_M, i1-Q3_K_M, i1-Q4_K_S, i1-Q4_K_M (GGUF imatrix) |
-| Idiomas soportados | ingles (segun la model card) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones imatrix) |
+| Arquitectura | No disponible (la nomenclatura A3B sugiere MoE con ~3B activos, sin confirmar) |
+| Parámetros totales | 30.532.122.624 (30,5 B) |
+| Parámetros activos | No disponible (posiblemente ~3 B según el sufijo A3B) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; también disponible imatrix |
+| Idiomas soportados | Inglés (en) |
+| Licencia | No disponible |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no esta documentada en la informacion disponible. El sufijo "A3B" en el nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parametros activos, siguiendo la convencion establecida por modelos como Qwen3-30B-A3B. Se trata de un modelo multimodal de vision y lenguaje, capaz de procesar entradas de imagen junto con texto.
+No se dispone de información detallada sobre la arquitectura del modelo base usail-hkust/VibeWorlder-30B-A3B. El sufijo "A3B" en la nomenclatura es característico de los modelos de mezcla de expertos (MoE) que indican el número de parámetros activos por token (en este caso, aproximadamente 3 mil millones), mientras que el total asciende a 30,5 mil millones. Sin embargo, esta interpretación no está confirmada en la model card ni en los metadatos disponibles.
 
-Los detalles sobre el dataset de entrenamiento, el numero de tokens utilizados y las tecnicas de alineacion (RLHF, DPO, etc.) no estan disponibles en la documentacion publica. La cuantizacion realizada por mradermacher utiliza el metodo imatrix (importance matrix), que optimiza la asignacion de bits segun la importancia de cada peso, mejorando la calidad respecto a cuantizaciones estaticas convencionales.
+Tampoco se especifican los datos de entrenamiento (número de tokens, composición del dataset), la presencia de RLHF/DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. La model card del repositorio de cuantización se limita a describir el proceso de cuantización y a listar los ficheros generados, sin aportar detalles sobre el entrenamiento del modelo original. El proceso de cuantización empleado por mradermacher utiliza imatrix (matriz de importancia) generada a partir de datos de calibración, lo que mejora la fidelidad de las cuantizaciones de baja precisión respecto a las estáticas.
 
 ## Capacidades
 
-- Procesamiento multimodal: al ser un modelo de vision, puede recibir imagenes como entrada ademas de texto, lo que permite tareas de comprension visual y razonamiento sobre contenido grafico.
-- Generacion de texto: capacidades estandar de un LLM para generar respuestas coherentes en ingles.
-- Despliegue local: disponible en multiples niveles de cuantizacion GGUF, lo que permite ajustar el equilibrio entre calidad y requisitos de memoria.
-- Compatibilidad con herramientas de inferencia local: al estar en formato GGUF, es compatible con llama.cpp, Ollama y otros motores que soporten este formato.
+- Generación de texto conversacional: el modelo está etiquetado como "conversational" y orientado a diálogo multi-turno.
+- Razonamiento y generación de texto general: capacidades inferidas por su naturaleza de modelo de lenguaje de gran tamaño, aunque no se detallan tareas específicas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Descripcion y analisis de imagenes: el modelo puede generar descripciones detalladas de fotografias o ilustraciones, util para generar texto alternativo accesible o metadatos automaticos en sistemas de gestion de contenidos.
-- Asistentes de documentacion tecnica: combinando capturas de pantalla con instrucciones de texto, el modelo puede ayudar a redactar documentacion de software o manuales de usuario.
-- Moderacion de contenido visual: analisis de imagenes para detectar contenido inapropiado o que requiera revision, integrable en pipelines de moderacion automatizada.
-- Sistemas de soporte con contexto visual: atencion al cliente donde el usuario adjunta capturas de pantalla o fotos de errores, y el modelo las interpreta junto con la descripcion textual.
-- Prototipado rapido de aplicaciones multimodales: gracias a su formato GGUF y su tamano contenido (10-19 GB segun cuantizacion), permite experimentar con vision-language models en entornos de desarrollo sin necesidad de infraestructura cloud.
-- Educacion y formacion: generacion de explicaciones sobre diagramas, graficos o esquemas en entornos de aprendizaje automatico o presencial.
+- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones i1-Q4_K_M (18,7 GB) o i1-Q4_K_S (17,6 GB) permiten ejecutar el modelo en GPUs con 24 GB de VRAM, como la RTX 4090, manteniendo una calidad razonable gracias al uso de imatrix.
+- Asistentes conversacionales autoalojados: el modelo está etiquetado como conversacional y puede integrarse en aplicaciones de chat mediante llama.cpp u Ollama, manteniendo los datos en infraestructura propia.
+- Prototipado e investigación: la disponibilidad de cuantizaciones desde 6,5 GB (IQ1_S) hasta 25,2 GB (Q6_K) permite experimentar con distintos compromisos calidad/tamaño en el mismo hardware, algo útil para estudiar el impacto de la cuantización en el rendimiento.
+- Generación de texto en pipelines de procesamiento por lotes: con cuantizaciones Q4 o Q5 y servidores compatibles con GGUF (llama.cpp server, Ollama), se puede procesar texto en lotes en entornos con recursos limitados.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye el fichero imatrix y una amplia gama de tipos de cuantización, lo que facilita estudios de degradación de calidad (perplejidad) entre variantes.
+- Educación y experimentación con modelos MoE de gran tamaño: si se confirma la arquitectura MoE con ~3B activos, el modelo sería adecuado para estudiar el comportamiento de modelos dispersos en hardware modesto, aunque esta aplicación depende de la confirmación de la arquitectura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos verificables sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun el archivo GGUF seleccionado, se necesita aproximadamente el tamano del archivo mas overhead de contexto. Para la cuantizacion Q4_K_M (18,7 GB) se recomienda al menos 20-24 GB de VRAM; para IQ2_M (10,3 GB), unos 12-14 GB.
-- GPUs recomendadas: RTX 4090 (24 GB) o superior para las cuantizaciones Q4; RTX 3090 (24 GB) o RTX 4080 (16 GB) para cuantizaciones Q3 o inferiores. GPUs profesionales como A100 o H100 no son necesarias para este tamano de modelo.
-- Compatibilidad con GPUs de consumo: si, las cuantizaciones IQ2_M e IQ3 caben en GPUs de 12-16 GB como RTX 3060, RTX 4070 o RTX 4080.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier motor compatible con GGUF. Para despliegue en produccion con mayor throughput, se podria considerar convertir a formatos compatibles con vLLM o TGI, aunque no se proporcionan archivos en esos formatos.
-- Latencia y throughput: no disponible. Dependera del hardware, la cuantizacion y la longitud de contexto.
+- VRAM estimada para inferencia (según cuantización):
+  - i1-IQ1_S: ~6,5 GB
+  - i1-IQ2_M: ~10,3 GB
+  - i1-IQ3_M: ~13,6 GB
+  - i1-Q4_K_M: ~18,7 GB
+  - i1-Q5_K_M: ~21,8 GB
+  - i1-Q6_K: ~25,2 GB
+- GPU recomendadas:
+  - Cuantizaciones Q4 y superiores: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, H100 80 GB.
+  - Cuantizaciones IQ2 e IQ3: RTX 4080 (16 GB), RTX 4070 Ti Super (16 GB), RTX 3080 (10-12 GB) para las más pequeñas.
+  - Cuantizaciones IQ1: GPUs con 8 GB o menos, aunque con calidad muy degradada.
+- ¿Cabe en GPU de consumo? Sí, las cuantizaciones Q4_K_M y Q4_K_S caben en GPUs de 24 GB; las IQ3 e IQ2 caben en GPUs de 12-16 GB; las IQ1 caben en 8 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, text-generation-webui con el loader de llama.cpp). No se menciona soporte para vLLM o TGI en la información disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato |
-|---|---|---|---|---|---|
-| VibeWorlder-30B-A3B | 30,5 B totales, ~3 B activos | no disponible | vision + texto | no disponible | GGUF |
-| Qwen3-30B-A3B | 30,5 B totales, 3 B activos | 128 K (modelo original) | texto | Apache 2.0 (modelo original) | GGUF, safetensors |
-| Qwen2.5-VL-32B | 32 B (denso) | 32 K | vision + texto | Apache 2.0 | safetensors, GGUF |
-
-La comparativa se basa en modelos de tamano similar y misma modalidad. Qwen3-30B-A3B es el referente arquitectonico mas probable dado el patron de nomenclatura, mientras que Qwen2.5-VL-32B es una alternativa multimodal densa de tamano comparable. Los datos de licencia y contexto de VibeWorlder no estan disponibles, por lo que la comparacion es parcial.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones del modelo base que permitan una comparación rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Informacion publica limitada: no se dispone de documentacion sobre el entrenamiento, la licencia o los benchmarks, lo que dificulta evaluar su idoneidad para uso en produccion.
-- Licencia desconocida: no se especifica la licencia del modelo base ni de las cuantizaciones, por lo que el uso comercial conlleva incertidumbre legal.
-- Idioma: la model card indica exclusivamente ingles, por lo que su rendimiento en otros idiomas no esta garantizado.
-- Riesgo de alucinacion: como cualquier LLM, puede generar contenido falso o inexacto, especialmente en tareas de vision donde la interpretacion de imagenes ambiguas puede ser erronea.
-- Sesgos: al no disponer de informacion sobre los datos de entrenamiento, no es posible evaluar ni mitigar sesgos potenciales.
-- Modelo reciente: al ser publicado en agosto de 2026, tiene un historial limitado de uso y reportes de errores en la comunidad.
+- La licencia no está especificada, lo que impide confirmar si se permite el uso comercial. Es imprescindible verificar la licencia del modelo base usail-hkust/VibeWorlder-30B-A3B antes de cualquier despliegue en producción.
+- El modelo está etiquetado únicamente para inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Las cuantizaciones de baja precisión (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "very low quality".
+- No se dispone de información sobre sesgos, riesgo de alucinación ni evaluación de seguridad del modelo base.
+- La longitud de contexto es desconocida; no se puede garantizar el manejo de conversaciones largas o documentos extensos.
+- El repositorio tiene 592 descargas y 0 likes, lo que indica una validación comunitaria muy limitada.
+- Al ser una cuantización de un modelo base poco documentado, no hay garantías sobre la fidelidad del comportamiento respecto al original más allá de lo que ofrece el proceso de imatrix.
 
 ## Enlaces
 
-- Repositorio GGUF cuantizado: https://huggingface.co/mradermacher/VibeWorlder-30B-A3B-i1-GGUF
-- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/VibeWorlder-30B-A3B-GGUF
-- Modelo base (referencia): https://huggingface.co/usail-hkust/VibeWorlder-30B-A3B
-- Perfil del cuantizador: https://huggingface.co/mradermacher
-- Pagina de peticiones de modelos: https://huggingface.co/mradermacher/model_requests
+- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/VibeWorlder-30B-A3B-i1-GGUF
+- Modelo base: https://huggingface.co/usail-hkust/VibeWorlder-30B-A3B
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/VibeWorlder-30B-A3B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#VibeWorlder-30B-A3B-i1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

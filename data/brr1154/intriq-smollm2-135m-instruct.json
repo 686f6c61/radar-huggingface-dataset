@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 570,
+  "downloads_30d": 580,
   "trending_score": 0,
   "parameters": 134515008,
   "parameters_human": "134.5M",
@@ -110,16 +110,5 @@
       "value": 52
     }
   ],
-  "sources": [
-    {
-      "title": "SmolLM2-135M-Instruct Tutorial: Run LLMs Locally — AI Tutorial",
-      "url": "https://aiindigo.com/tutorials/getting-started-with-smollm2-135m-instruct-run-a-capable-llm-on-any-device",
-      "snippet": "Install Transformers and run SmolLM2-135M-Instruct locally to generate a text answer from a prompt."
-    },
-    {
-      "title": "HuggingFaceTB/SmolLM2-135M-Instruct · Hugging Face",
-      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
-      "snippet": "Text Generation model with 0.1B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

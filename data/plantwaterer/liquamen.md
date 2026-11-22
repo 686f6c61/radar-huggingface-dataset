@@ -2,51 +2,56 @@
 
 ## Resumen
 
-Liquamen es un ajuste fino (fine-tune) de google/gemma-4-31B-it, desarrollado por el usuario plantwaterer, orientado a la toma de decisiones mediante preguntas de opción múltiple. A diferencia de un modelo generativo convencional, liquamen no devuelve texto libre: para cada pregunta produce una distribución de probabilidad sobre las opciones disponibles (o sobre las respuestas Sí/No), lo que lo convierte en una herramienta de decisión estructurada más que de generación abierta. El modelo tiene 31.273.088.876 parámetros y se distribuye en formato safetensors con licencia Apache 2.0.
+liquamen es un ajuste fino (fine-tune) de google/gemma-4-31B-it, desarrollado por el usuario plantwaterer, orientado especificamente a la toma de decisiones mediante preguntas de opcion multiple. A diferencia de un modelo conversacional generico, liquamen no devuelve texto libre: devuelve una distribucion de probabilidad calibrada sobre cada opcion disponible, lo que lo convierte en una herramienta para sistemas que necesitan elegir entre alternativas de forma cuantificable.
 
-La innovación principal reside en su cabeza de salida calibrada (`vbll_head.safetensors`), que combina una temperatura ajustada (T = 1.085) para preguntas de opción múltiple estándar con un residual bayesiano de última capa (posterior de Laplace) para preguntas binarias. Además, el repositorio incluye varios motores de inferencia del proyecto Decision Index que implementan promediado de orden de opciones adaptativo a la longitud y correcciones bayesianas, diseñados para reducir el sesgo posicional en tareas de elección.
+El modelo parte de la arquitectura Gemma 4 de 31B parametros (31.273.088.876 parametros segun los pesos en safetensors) y anade una cabeza de ultima capa calibrada (`vbll_head.safetensors`) cuyo resultado constituye la respuesta del modelo. Para preguntas de opcion multiple, la salida es el softmax de los logits de las letras de las opciones en la posicion de respuesta, dividido por una temperatura ajustada (T = 1.085). Para preguntas de si/no, se aplica un residual bayesiano de ultima capa (posterior de Laplace) sobre el estado oculto del modelo que ajusta los dos logits.
 
-El modelo requiere un procedimiento de inferencia no estándar: utiliza una función de atención personalizada (`jev_mem`) en las capas de atención completa, donde cada token atiende a todos los tokens del mismo prompt, mientras que las capas de ventana deslizante permanecen causales con ventana de 1.024. Los transformers estándar producirían respuestas distintas, por lo que el uso del motor y la cabeza es obligatorio, no opcional.
+Su relevancia actual radica en que propone un patron de inferencia distinto al de los LLM generativos: en lugar de generar texto y parsearlo, expone directamente probabilidades calibradas y promedia sobre ordenes de opciones para mitigar el sesgo posicional. El repositorio incluye varios motores de inferencia del kit Decision Index, y el modelo exige una funcion de atencion especifica (`jev_mem`) que no es la atencion causal estandar de transformers.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base Gemma 4), con capas de atención completa y capas de ventana deslizante causal (ventana 1.024) |
+| Arquitectura | Transformer basado en Gemma 4 (capas de atencion completa no causales y capas de ventana deslizante causal de 1.024 tokens) |
 | Parametros totales | 31.273.088.876 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (ventana deslizante de 1.024 en capas SWA; contexto total no especificado) |
-| Tipos de cuantizacion | no disponible (pesos en bf16; el autor no documenta cuantizaciones) |
+| Longitud de contexto | no disponible (ventana deslizante de 1.024 tokens en las capas sliding-window) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
+| Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (`model-*.safetensors`, `vbll_head.safetensors`) |
+| Modelo base | google/gemma-4-31B-it |
+| Libreria | transformers |
+| Tamano del repo | 62,6 GB |
+| Precision de inferencia | bf16 en GPU; cabeza en CPU en float64 |
 
 ## Arquitectura y entrenamiento
 
-Liquamen se construye sobre google/gemma-4-31B-it, un transformer de 31.000 millones de parámetros. La modificación arquitectónica clave afecta al mecanismo de atención: en las capas de atención completa, cada token del prompt atiende a todos los tokens del mismo prompt (atención bidireccional dentro del prompt), mientras que las capas de ventana deslizante mantienen comportamiento causal con ventana de 1.024 tokens. Esta configuración se implementa mediante la función de atención `jev_mem` en `fullft_mem.py`, que se registra en la interfaz de atención de transformers y se ejecuta sobre PyTorch SDPA (kernels memory-efficient y flash). El motor de inferencia rechaza cualquier otra configuración de atención.
+liquamen se construye sobre google/gemma-4-31B-it, un transformer de 31B parametros. La modificacion estructural clave respecto al modelo base es el regimen de atencion: en las capas de atencion completa, cada token del prompt atiende a todos los tokens del mismo prompt (atencion no causal dentro del prompt), mientras que las capas de ventana deslizante permanecen causales con ventana de 1.024 tokens. Esta atencion se implementa mediante la funcion `jev_mem` en `fullft_mem.py`, que se registra en la interfaz de atencion de transformers y se ejecuta sobre PyTorch SDPA (kernels memory-efficient y flash). El motor de inferencia rechaza cualquier otra funcion de atencion, ya que la atencion causal estandar de transformers produciria respuestas distintas.
 
-Sobre el modelo base se añade una cabeza de última capa calibrada (`vbll_head.safetensors` y `vbll_head.json`). Para preguntas de opción múltiple ordinarias, la salida es el softmax de los logits de las letras de las opciones en la posición de respuesta, dividido por una temperatura ajustada de T = 1.085. Para preguntas de tipo Sí/No, se aplica un residual bayesiano de última capa sobre el estado oculto del modelo (un posterior de Laplace integrado) que ajusta los dos logits. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
+Sobre el modelo se anade una cabeza de ultima capa calibrada (`vbll_head.safetensors` y `vbll_head.json`) que transforma el estado oculto final y los logits de las letras de las opciones en probabilidades. El entrenamiento se realizo como un fine-tune completo (los ficheros se denominan `fullft_mem.py`), aunque no se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La innovacion tecnica destacable es el esquema de lectura: para preguntas de opcion multiple se aplica softmax con temperatura ajustada (T = 1.085); para preguntas de si/no se integra un posterior de Laplace sobre el estado oculto que corrige los dos logits. Ademas, los motores de mayor nivel aplican promediado sobre ordenes de opciones (desplazamientos ciclicos tipo cuadrado latino para K >= 5) para reducir el sesgo posicional.
 
 ## Capacidades
 
-- Respuesta a preguntas de opción múltiple con distribución de probabilidad calibrada sobre cada opción (hasta 52 opciones según el motor `lenavg_bayes_balanced_k5_engine`).
-- Respuesta a preguntas binarias Sí/No con corrección bayesiana sobre los logits.
-- Procesamiento de peticiones con múltiples preguntas en una sola solicitud, cada una con su propio tipo (`choice` o `noul`) e instrucciones.
-- Soporte de criterios o definiciones para las opciones Sí/No, que se muestran en el prompt como `Yes: <definición>` / `No: <definición>`.
-- Promediado de orden de opciones adaptativo a la longitud (hasta 4 órdenes para conjuntos de 5 a 52 opciones, 2 órdenes para Sí/No) para mitigar el sesgo posicional.
-- Generación de texto conversacional (pipeline declarado: text-generation), aunque la funcionalidad principal documentada es la decisión estructurada.
-- Capacidades multimodales heredadas del modelo base (tag `image-text-to-text`), si bien la model card no detalla su uso en este fine-tune.
-- No se documenta soporte explícito de tool calling, function calling ni razonamiento multi-paso basado en agentes.
+- Toma de decisiones mediante preguntas de opcion multiple, devolviendo una probabilidad calibrada por opcion en lugar de texto generado.
+- Preguntas de si/no con correccion bayesiana de ultima capa sobre los dos logits.
+- Soporte de multiples preguntas en una misma peticion, cada una con su propio tipo (`choice` o `noul`/si-no) e instrucciones.
+- Definicion de criterios por opcion en preguntas de si/no (formato `Yes: <definicion>` / `No: <definicion>`).
+- Manejo de conjuntos de opciones de 5 a 52 alternativas con promediado de ordenes mediante desplazamientos ciclicos.
+- Procesamiento de entradas de imagen y texto segun el tag `image-text-to-text` heredado del modelo base (no se detalla el uso en la model card).
+- Capacidad multilingue: no disponible en la informacion proporcionada.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad nativa; el modelo esta disenado como componente de decision puntual.
 
 ## Casos de uso
 
-- **Sistemas de decisión automatizada con opciones acotadas**: el modelo devuelve una probabilidad por opción, lo que permite umbralizar decisiones y auditar la confianza. Adecuado para enrutamiento de tickets, clasificación de incidencias o selección de acciones en pipelines.
-- **Encuestas y formularios con puntuación de confianza**: cada pregunta de opción múltiple recibe una distribución calibrada, útil para detectar ítems ambiguos o de baja confianza en procesos de anotación y control de calidad.
-- **Preguntas binarias con calibración bayesiana**: casos como "¿es probable lluvia intensa?" se responden con una corrección de Laplace sobre los logits, lo que aporta probabilidades más fiables que un simple softmax para decisiones Sí/No.
-- **Evaluación de políticas y criterios**: el soporte de `criteria` con definiciones para Sí/No permite incorporar rúbricas explícitas en el prompt, útil en moderación de contenido o verificación de cumplimiento normativo.
-- **Sistemas de votación o consenso entre modelos**: al emitir distribuciones de probabilidad, liquamen puede combinarse con otros clasificadores mediante agregación probabilística (media, producto, voto bayesiano).
-- **Investigación en calibración y sesgo posicional**: los motores de promediado de orden (Latin-square cíclico) y la cabeza VBLL lo convierten en una plataforma para estudiar calibración y robustez al orden de opciones en modelos de 31B.
-- **Asistentes de decisión en dominios con opciones predefinidas**: planificación de recursos, selección de tratamientos o configuraciones, donde la salida debe ser una de un conjunto finito y no texto libre.
+- Sistemas de decision automatizada con umbrales de confianza: gracias a que devuelve probabilidades calibradas por opcion, se puede fijar un umbral (por ejemplo, 0,9) y derivar a revision humana cuando la confianza sea menor, algo que un LLM generativo no ofrece de forma directa.
+- Enrutamiento de tickets o solicitudes: dado un texto de entrada y un conjunto de categorias (de 5 a 52), el modelo asigna probabilidad a cada una; el promediado sobre ordenes de opciones reduce el sesgo hacia las primeras letras del alfabeto.
+- Evaluacion de politicas o escenarios con preguntas de si/no: por ejemplo, decidir si una accion cumple una politica de cumplimiento, usando la correccion bayesiana para obtener una probabilidad mas fiable que un simple logit.
+- Encuestas y anotacion asistida: el modelo puede predecir la opcion mas probable de un cuestionario y proporcionar la distribucion completa, util para priorizar revisiones en pipelines de etiquetado.
+- Toma de decisiones operativas con contexto corto: el motor de un solo paso (`dikit_engine`) permite clasificar rapidamente cuando la latencia importa, mientras que los motores con promediado se reservan para peticiones con `L_raw <= 939` o una unica pregunta con texto renderizado de hasta 6.000 caracteres.
+- Seleccion entre alternativas en juegos o simulaciones: el ejemplo de la model card (decidir si jugar, mover el partido al interior o posponerlo segun la probabilidad de lluvia) ilustra el uso como modulo de decision dentro de un agente mayor.
+- Analisis de sensibilidad al orden de opciones: al exponer distintos motores (con y sin promediado), permite comparar la estabilidad de las predicciones frente a la permutacion de alternativas, util en auditoria de modelos de decision.
 
 ## Benchmarks y rendimiento
 
@@ -54,36 +59,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: con 31.273 millones de parámetros en bf16, los pesos ocupan aproximadamente 62,6 GB (tamaño del repo). Se necesita al menos una GPU con 80 GB (A100 80GB, H100 80GB) para cargar el modelo en bf16 sin cuantización. La cabeza se ejecuta en CPU en float64, por lo que no consume VRAM adicional significativa.
-- **GPU recomendadas**: A100 80GB, H100 80GB, o configuraciones multi-GPU con tensor parallelism. No cabe en GPUs de consumo (RTX 4090 24GB, RTX 3090 24GB) en bf16.
-- **Cuantización**: el autor no documenta cuantizaciones (GGUF, GPTQ, AWQ), por lo que no se puede confirmar el despliegue en GPUs de consumo mediante cuantización.
-- **Opciones de despliegue**: el modelo requiere el kit Decision Index (`pip install "git+https://github.com/apolinario/decision-index@9eb2dbe2..."`) y los motores incluidos en el repositorio. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI; de hecho, el motor rechaza cualquier atención distinta de `jev_mem`, lo que impide su uso con stacks estándar.
-- **Latencia y throughput**: no disponibles. El motor `lenavg_bayes_balanced_k5_engine` realiza hasta 4 pasadas forward por pregunta (2 para Sí/No) en peticiones con L_raw ≤ 939 o L_rendered ≤ 6.000, lo que multiplica el coste computacional respecto a una pasada única.
+- VRAM estimada para inferencia: con 31.273.088.876 parametros, en bf16 los pesos ocupan aproximadamente 62,6 GB, por lo que se necesita al menos una GPU de 80 GB (A100 80GB, H100 80GB) para cargar el modelo completo en una sola tarjeta.
+- GPU recomendadas: A100 80GB, H100 80GB o configuraciones multi-GPU con paralelismo de tensor. No cabe en GPU de consumo (RTX 4090 de 24 GB, RTX 3090 de 24 GB) en bf16.
+- La cabeza (`vbll_head.safetensors`) se ejecuta en CPU en float64, por lo que no consume VRAM adicional.
+- Opciones de despliegue: el modelo no se sirve con vLLM, TGI ni llama.cpp de forma estandar, ya que requiere la funcion de atencion `jev_mem` y los motores del kit Decision Index. El despliegue se realiza mediante `python -m decision_index run --engine <motor>` con el repositorio descargado y `PYTHONPATH` apuntando a el, o mediante la API en Python instanciando el motor correspondiente.
+- Cuantizacion: no se documentan opciones de cuantizacion (GGUF, AWQ, GPTQ) en la informacion disponible; dado el requisito de atencion personalizada, la cuantizacion convencional podria no ser compatible.
+- Latencia y throughput: no disponibles. Se sabe que el motor de un solo paso realiza un unico forward pass por pregunta, mientras que los motores con promediado realizan 4 pasadas por pregunta (2 para si/no) cuando se cumple la puerta de longitud.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liquamen | 31,27B | no disponible | Distribución sobre opciones | Apache 2.0 | Hugging Face (0 descargas) |
-| google/gemma-4-31B-it | 31B (aprox.) | no disponible | Texto generativo | Términos Gemma | Hugging Face |
-| Modelos de clasificación/elección de 30B | no disponible | no disponible | Etiqueta o probabilidad | variable | no disponible |
+| liquamen | 31,3B | no disponible (ventana deslizante 1.024) | Decision por opcion multiple con probabilidades calibradas | Apache-2.0 | Hugging Face + GitHub (codigo) |
+| google/gemma-4-31B-it | 31B (aproximado) | no disponible | LLM instructivo generativo | Terminos de Gemma (no Apache-2.0) | Hugging Face |
+| Alternativas de clasificacion por opcion multiple de ~30B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre benchmarks comparativos ni de alternativas directas de la misma categoría (modelos de 31B especializados en decisión con opción múltiple y calibración bayesiana) en la información proporcionada.
+La comparativa con otros modelos de decision calibrada no esta disponible en la informacion proporcionada. Frente a su modelo base, la diferencia principal es que liquamen expone probabilidades por opcion y exige una atencion no causal en las capas completas, mientras que gemma-4-31B-it es un modelo generativo de proposito general.
 
 ## Limitaciones y advertencias
 
-- **Procedimiento de inferencia obligatorio**: el modelo no funciona correctamente con transformers estándar; requiere la atención `jev_mem` y la cabeza `vbll_head`. Usar otra configuración produce respuestas distintas, según advierte el autor.
-- **Dependencia de código externo**: el kit Decision Index se instala desde un commit concreto de GitHub (`9eb2dbe2a358004c8782c66e40a83ac07b953fec`), lo que introduce un riesgo de reproducibilidad y de mantenimiento a largo plazo.
-- **Sesgo posicional**: aunque los motores de promediado de orden lo mitigan, el sesgo no se elimina por completo; el autor documenta que las peticiones largas (L_raw > 939 y L_rendered > 6.000) usan una sola pasada, sin promediado.
-- **Riesgo de alucinación**: al ser un fine-tune de un modelo generativo, las probabilidades pueden estar mal calibradas en dominios fuera de la distribución de entrenamiento; no se documentan evaluaciones de calibración (ECE, Brier) en la información disponible.
-- **Idiomas**: no se especifican los idiomas soportados; la model card está en inglés y no hay evidencia de rendimiento multilingüe.
-- **Contexto**: la ventana deslizante es de 1.024 tokens en las capas SWA, y el contexto total no está documentado; peticiones largas pueden degradar la calidad.
-- **Licencia**: Apache 2.0 permite uso comercial, pero el modelo base Gemma 4 puede estar sujeto a los términos de Google; conviene verificar la compatibilidad de licencias antes de un despliegue comercial.
-- **Madurez**: el modelo tiene 0 descargas y 0 likes en Hugging Face, creado y actualizado el 2026-11-01, sin evidencia de validación externa ni de uso en producción.
+- El modelo no es un generador de texto libre: las letras de las opciones por si solas no constituyen la respuesta; es imprescindible usar la cabeza calibrada y los motores del kit Decision Index.
+- La atencion causal estandar de transformers produce respuestas distintas; el motor rechaza cualquier funcion de atencion que no sea `jev_mem`, lo que limita la integracion con frameworks de serving convencionales.
+- El promediado sobre ordenes de opciones solo se aplica cuando `L_raw <= 939` o cuando hay una unica pregunta con texto renderizado de hasta 6.000 caracteres; peticiones mas largas usan una sola pasada y pueden ser mas sensibles al orden de las opciones.
+- El soporte de conjuntos de opciones esta acotado a K entre 5 y 52 para el promediado con desplazamientos ciclicos; fuera de ese rango el comportamiento no esta documentado.
+- No se detallan los datos de entrenamiento, los idiomas soportados ni los sesgos conocidos, lo que dificulta evaluar su comportamiento fuera del dominio de entrenamiento.
+- Riesgo de alucinacion: no aplica en el sentido generativo, pero existe riesgo de calibracion deficiente en dominios alejados de los datos de ajuste.
+- La licencia del modelo es Apache-2.0, pero el modelo base google/gemma-4-31B-it tiene sus propios terminos de uso; conviene verificar que el uso comercial cumple ambas licencias.
+- El tag `image-text-to-text` sugiere capacidades multimodales heredadas del modelo base, pero no se documenta como usarlas con la cabeza de decision.
+- El repositorio de GitHub (treewaterer/liquamen) solo contiene codigo y la model card; los pesos estan en Hugging Face.
 
 ## Enlaces
 
-- [Hugging Face: plantwaterer/liquamen](https://huggingface.co/plantwaterer/liquamen)
-- [Modelo base: google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)
-- [Repositorio GitHub (código y model card): treewaterer/liquamen](https://github.com/treewaterer/liquamen)
-- [Decision Index kit: apolinario/decision-index](https://github.com/apolinario/decision-index)
+- Modelo en Hugging Face: https://huggingface.co/plantwaterer/liquamen
+- Modelo base: https://huggingface.co/google/gemma-4-31B-it
+- Repositorio GitHub (codigo y model card): https://github.com/treewaterer/liquamen
+- Kit Decision Index: https://github.com/apolinario/decision-index
+- Commit del kit usado en las instrucciones: https://github.com/apolinario/decision-index@9eb2dbe2a358004c8782c66e40a83ac07b953fec

@@ -2,108 +2,104 @@
 
 ## Resumen
 
-tinydistill-banking77-minilm es un clasificador de texto compacto obtenido por destilación de conocimiento (knowledge distillation) a partir de Qwen/Qwen2.5-7B-Instruct como modelo profesor, usando sentence-transformers/all-MiniLM-L6-v2 como arquitectura alumna. Lo desarrolla el usuario Shroomy y está pensado para la tarea de clasificación de intenciones del conjunto de datos Banking77, con 77 etiquetas distintas relacionadas con operaciones bancarias (tarjetas, transferencias, verificación de identidad, recargas, divisas, etc.). El modelo se distribuye exclusivamente en formato ONNX para inferencia rápida en CPU.
+tinydistill-banking77-minilm es un clasificador de texto compacto especializado en intenciones bancarias, destilado por el usuario Shroomy a partir del modelo docente Qwen/Qwen2.5-7B-Instruct hacia el encoder sentence-transformers/all-MiniLM-L6-v2 mediante la herramienta tinydistill. El resultado es un modelo BERT de pequeno tamano exportado a ONNX que resuelve la clasificacion en 77 clases del dataset PolyAI/banking77, tarea tipica de enrutamiento de consultas en atencion al cliente financiera.
 
-La propuesta técnica es sustituir un LLM de 7 000 millones de parámetros por un encoder BERT de tipo MiniLM (6 capas, 384 dimensiones ocultas) que aprende de las etiquetas suaves del profesor sobre los 10 003 textos de entrenamiento de Banking77, además de entropía cruzada sobre 616 textos con etiqueta dorada (8 por clase). El resultado es un clasificador de unos 91 MB en fp32 y 23 MB en int8 que alcanza una exactitud de 0,814 en el conjunto de test (3 080 textos) frente al 0,783 del profesor en modo 8-shot con cuantización de 4 bits.
+La propuesta de valor es la eficiencia: el estudiante alcanza una precision de 0,875 en el conjunto de test (3080 textos etiquetados) frente a 0,859 del docente, con una latencia de 1,0 ms por texto en CPU con cuantizacion int8 (frente a 155,4 ms del docente en CUDA con 4 bits), lo que supone una aceleracion de 152,9x en batch 1. El modelo pesa 23 MB en int8 y 91 MB en fp32, lo que permite desplegarlo en entornos sin GPU.
 
-Su relevancia práctica está en el coste de despliegue: en CPU con 2 hilos y ONNX int8 procesa 881 textos por segundo con una latencia de 1,2 ms por texto en batch 1, lo que lo hace viable para enrutado de intenciones en producción sin GPU. El repositorio es de 0,1 GB, tiene 0 descargas y 0 likes en el momento de la consulta, y no declara licencia ni idiomas soportados.
+Es relevante ahora porque demuestra un patron practico de destilacion de conocimiento desde un LLM grande hacia un encoder pequeno para tareas de clasificacion cerrada, con un esquema de cascada opcional que envia al docente solo los textos de baja confianza. La licencia es cc-by-4.0, aunque el autor advierte de que deben revisarse las licencias del modelo base, del docente y del dataset antes de un uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT (MiniLM-L6, 6 capas, 384 dimensión oculta); exportado a ONNX |
-| Parámetros totales | no disponible (el modelo alumno es all-MiniLM-L6-v2, ~22,7 M según la arquitectura base; no confirmado en la información) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (limitada por la arquitectura MiniLM base; no declarada en la model card) |
-| Tipos de cuantización | ONNX fp32 y ONNX int8 (reportados en la tabla de resultados) |
+| Arquitectura | Transformer encoder BERT (base: sentence-transformers/all-MiniLM-L6-v2), exportado a ONNX |
+| Parametros totales | no disponible (el modelo base MiniLM-L6 ronda los 22,7 M, dato no confirmado en la informacion proporcionada) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | ONNX fp32 y ONNX int8 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card remite a comprobar las licencias del alumno, el profesor y los datos de entrenamiento) |
-| Formato de pesos | ONNX (también se menciona el modelo alumno en PyTorch) |
+| Licencia | cc-by-4.0 |
+| Formato de pesos | ONNX (tambien pesos PyTorch del estudiante) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una destilación de un LLM decoder-only (Qwen2.5-7B-Instruct) hacia un encoder bidireccional compacto (all-MiniLM-L6-v2), realizada con la herramienta tinydistill. El alumno aprende de dos señales: las etiquetas suaves generadas por el profesor sobre los 10 003 textos de entrenamiento de Banking77 y una pérdida de entropía cruzada sobre 616 textos con etiqueta dorada (8 por clase, peso 1,0). El profesor se ejecuta en modo 8-shot con cuantización de 4 bits y agrupa varios textos por pasada forward.
+El modelo es un clasificador de texto construido sobre el encoder all-MiniLM-L6-v2, un transformer BERT de tipo MiniLM. Se entrena mediante destilacion de conocimiento desde Qwen/Qwen2.5-7B-Instruct: el docente genera etiquetas suaves sobre los 10003 textos de entrenamiento de banking77, y el estudiante aprende de esas etiquetas suaves mas una entropia cruzada sobre 616 textos con etiqueta gold (8 por clase, peso 1.0). Las probabilidades del docente se promedian con las de una sonda lineal ajustada sobre sus estados ocultos, tambien entrenada con 616 textos gold. El prompt del docente incluye, para cada texto, los 16 ejemplos de entrenamiento mas similares entre esos 616.
 
-La innovación principal no está en la arquitectura, sino en el pipeline de destilación y despliegue: el resultado se exporta a ONNX y se publica con la librería tinydistill, que ofrece un `Predictor` en Python y comandos `predict` y `serve`. La model card reporta además un esquema de cascada en el que el alumno responde todas las peticiones y deriva al profesor las de menor confianza, con umbrales calibrados sobre el conjunto de test (en producción deberían fijarse sobre un split de validación). No se documentan detalles sobre el dataset de destilación más allá de Banking77, ni sobre el uso de RLHF o DPO, que no aplican a un clasificador de este tipo.
+El resultado se exporta a ONNX para inferencia rapida en CPU. El autor reporta medias y desviaciones tipicas sobre 3 semillas de entrenamiento; las filas ONNX corresponden al modelo exportado de la primera semilla. El esquema de cascada permite enviar al docente solo una fraccion de los textos segun un umbral de confianza del estudiante, ajustable en produccion sobre un split de validacion.
 
 ## Capacidades
 
-- Clasificación de texto en 77 intenciones bancarias predefinidas, entre ellas `activate_my_card`, `cancel_transfer`, `change_pin`, `lost_or_stolen_card`, `top_up_failed`, `verify_my_identity` y `wrong_exchange_rate_for_cash_withdrawal`.
-- Salida de etiqueta única con puntuación de confianza, utilizada en la model card para el esquema de cascada hacia el profesor.
-- Inferencia en CPU con latencia de 1,2 ms por texto en ONNX int8 y throughput de 881,4 textos/s con 2 hilos.
-- Despliegue como servicio HTTP mediante `tinydistill serve`.
-- Compatibilidad declarada con text-embeddings-inference y endpoints (tags `text-embeddings-inference` y `endpoints_compatible`).
-- No se documentan capacidades de generación de texto, razonamiento general, código, matemáticas, visión, audio, tool calling ni agentes; es un clasificador de intenciones, no un modelo generativo.
-- Capacidades multilingües: no disponibles.
+- Clasificacion de texto en 77 intenciones bancarias predefinidas (por ejemplo, activate_my_card, card_arrival, pending_transfer, request_refund, verify_my_identity).
+- Prediccion de etiqueta unica con probabilidades, lo que permite umbrales de confianza y top-k.
+- Inferencia en CPU con latencia de 1,0 ms por texto en int8 y throughput de 948,8 textos/s en batch 32.
+- Exportacion ONNX con soporte para fp32 e int8.
+- Integracion con la libreria tinydistill mediante API Python (Predictor) y CLI (predict, serve).
+- Compatibilidad declarada con text-embeddings-inference y endpoints_compatible.
+- No soporta generacion de texto, razonamiento abierto, codigo, matematicas, vision, audio, tool calling ni agentes; es exclusivamente un clasificador cerrado.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte bancario: el clasificador asigna cada mensaje entrante a una de las 77 intenciones y lo deriva al equipo o flujo correspondiente; su latencia de 1,2 ms en int8 permite clasificar en tiempo real dentro de un pipeline de atención al cliente.
-- Triaje previo a un LLM generativo: usar el alumno como primera etapa y enviar solo los casos de baja confianza al profesor Qwen2.5-7B; la tabla de cascada muestra que derivar el 10 % de los textos mantiene una exactitud de 0,818 con un coste mucho menor que consultar al profesor en todos los casos.
-- Análisis de motivos de contacto: procesar por lotes históricos de conversaciones para agregar frecuencias por intención (por ejemplo, picos de `card_not_working` o `pending_transfer`) y alimentar dashboards operativos; el throughput de 881 textos/s en CPU hace viable reprocesar volúmenes grandes sin GPU.
-- Moderación y priorización de quejas: detectar intenciones sensibles como `compromised_card` o `lost_or_stolen_card` para escalar automáticamente a un agente humano con prioridad alta.
-- Clasificación en el borde o en entornos sin GPU: al ocupar 23 MB en int8 y ejecutarse en CPU con 2 hilos, puede desplegarse en contenedores pequeños, funciones serverless o dispositivos con recursos limitados.
-- Etiquetado asistido para ampliar datasets: usar las predicciones del modelo para preetiquetar nuevos textos bancarios y revisar solo los casos de baja confianza, reduciendo el esfuerzo de anotación manual.
-- Evaluación comparativa de pipelines de destilación: servir como referencia reproducible (semillas, latencias, tamaños) para medir el coste/beneficio de sustituir un LLM por un encoder destilado en una tarea de clasificación concreta.
+- Enrutamiento de tickets de soporte bancario: clasificar cada consulta entrante en una de las 77 intenciones para dirigirla al equipo o flujo adecuado, con 1,0 ms por texto en CPU y precision de 0,872 en int8.
+- Moderacion y triaje en tiempo real: procesar grandes volumenes de mensajes de chat con throughput de 948,8 textos/s en batch 32, adecuado para picos de trafico sin GPU.
+- Preetiquetado de datos para anotacion humana: usar las predicciones y su confianza para priorizar la revision manual, reduciendo el coste de etiquetado en nuevos dominios.
+- Despliegue en el borde o en contenedores ligeros: el modelo int8 de 23 MB cabe en entornos con memoria limitada y sin acelerador, como funciones serverless o dispositivos de bajo consumo.
+- Cascada con LLM para maxima precision: enviar al docente Qwen2.5-7B solo el 10 % de textos menos confiables, logrando 0,877 de precision con una latencia media de 16,6 ms por texto.
+- Clasificacion de intenciones en asistentes conversacionales financieros: integrar el modelo como primer paso de un pipeline que decide la respuesta o la derivacion a un agente humano.
+- Analisis de motivos de contacto: agregar las etiquetas predichas sobre historicos de conversaciones para detectar tendencias (por ejemplo, picos de pending_transfer o card_not_working).
 
 ## Benchmarks y rendimiento
 
-Resultados reportados en la model card sobre el test de Banking77 (3 080 textos etiquetados):
+| Modelo | Dispositivo | Accuracy | Macro-F1 | Top-3 accuracy | Acuerdo con docente | Latencia batch 1 (ms) | Latencia batch 32 (ms) | Throughput (textos/s) | Tamano (MB) | Aceleracion batch 1 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Docente, 16 ejemplos similares, 4 bits, sonda | cuda | 0,859 | 0,859 | 0,946 | n/a | 155,4 | 4910,8 | 6,5 | 5443 | 1,0x |
+| Estudiante, PyTorch | cpu | 0,875 ± 0,001 | 0,875 ± 0,001 | 0,953 ± 0,003 | 0,890 ± 0,001 | 3,7 | 73,0 | 438,6 | 91 | 41,6x |
+| Estudiante, ONNX fp32 | cpu | 0,875 | 0,875 | 0,954 | 0,889 | 2,6 | 71,8 | 445,5 | 91 | 60,7x |
+| Estudiante, ONNX int8 | cpu | 0,872 | 0,871 | 0,955 | 0,885 | 1,0 | 33,7 | 948,8 | 23 | 152,9x |
 
-| Modelo | Dispositivo | Exactitud | Macro-F1 | Acuerdo con el profesor | Latencia batch 1 (ms) | Latencia batch 32 (ms) | Throughput (textos/s) | Tamaño (MB) |
-|---|---|---|---|---|---|---|---|---|
-| Profesor, 8-shot, 4-bit | cuda:0 | 0,783 | 0,779 | n/a | n/a | n/a | n/a | n/a |
-| Alumno, PyTorch | cpu | 0,813 ± 0,002 | 0,811 ± 0,003 | 0,868 ± 0,003 | 5,4 | 90,3 | 354,4 | 91 |
-| Alumno, ONNX fp32 | cpu | 0,811 | 0,807 | 0,871 | 2,7 | 81,9 | 390,7 | 91 |
-| Alumno, ONNX int8 | cpu | 0,814 | 0,811 | 0,871 | 1,2 | 36,3 | 881,4 | 23 |
+Cascada (estudiante primero, textos dudosos al docente):
 
-Cascada alumno primero, textos dudosos al profesor:
-
-| Proporción enviada al profesor | Umbral de confianza del alumno | Exactitud | Macro-F1 |
-|---|---|---|---|
-| 0 % | 0,153 | 0,814 | 0,811 |
-| 10 % | 0,658 | 0,818 | 0,815 |
-| 20 % | 0,866 | 0,803 | 0,799 |
-| 30 % | 0,948 | 0,797 | 0,793 |
-| 50 % | 0,986 | 0,786 | 0,782 |
-| 100 % | 1,000 | 0,783 | 0,779 |
-
-Las filas de CPU usan 2 hilos y la latencia es la mediana de ejecuciones repetidas. Los valores con ± son media y desviación típica sobre 3 semillas de entrenamiento; las filas ONNX corresponden al modelo exportado de la primera semilla.
+| Proporcion al docente | Umbral de confianza | Accuracy | Macro-F1 | Latencia media por texto (ms) |
+|---|---|---|---|---|
+| 0 % | 0,125 | 0,872 | 0,871 | 1,0 |
+| 10 % | 0,596 | 0,877 | 0,877 | 16,6 |
+| 20 % | 0,768 | 0,874 | 0,873 | 32,1 |
+| 30 % | 0,856 | 0,868 | 0,867 | 47,6 |
+| 50 % | 0,925 | 0,861 | 0,860 | 78,7 |
+| 100 % | 1,000 | 0,859 | 0,859 | 156,4 |
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; el modelo está pensado para CPU. En int8 ocupa 23 MB de pesos y en fp32 91 MB, por lo que la memoria necesaria es mínima.
-- GPU recomendadas: no disponibles ni necesarias para el alumno; el profesor Qwen2.5-7B-Instruct en 4 bits requiere una GPU con memoria suficiente (no especificada en la información) si se usa en la cascada.
-- GPU de consumo: cabe en cualquier GPU de consumo e incluso en CPU; no se reportan requisitos de VRAM para el profesor.
-- Opciones de despliegue: ONNX Runtime, librería tinydistill (`Predictor`, `predict`, `serve`), text-embeddings-inference y endpoints compatibles según los tags del repositorio.
-- Latencia y throughput: con 2 hilos de CPU, 1,2 ms por texto en batch 1 y 881,4 textos/s en ONNX int8; 2,7 ms y 390,7 textos/s en ONNX fp32; 5,4 ms y 354,4 textos/s en PyTorch.
+- VRAM: no requiere GPU; el modelo esta pensado para CPU (ONNX). En GPU, el modelo int8 de 23 MB o fp32 de 91 MB ocupa una fraccion minima de memoria.
+- GPU recomendadas: no aplica; cualquier GPU consumer (RTX 4090, RTX 3060, etc.) puede ejecutarlo, pero no es necesario.
+- Cabe en cualquier consumer GPU y en CPU convencional; el modelo int8 de 23 MB es compatible con entornos de memoria muy limitada.
+- Opciones de despliegue: tinydistill (Predictor, CLI predict y serve), ONNX Runtime, y compatibilidad declarada con text-embeddings-inference y endpoints_compatible.
+- Latencia y throughput medidos: 1,0 ms por texto en int8 batch 1 con 2 hilos de CPU; 33,7 ms en batch 32; 948,8 textos/s en batch 32. En fp32, 2,6 ms batch 1 y 445,5 textos/s en batch 32.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Exactitud en Banking77 | Licencia | Formato |
-|---|---|---|---|---|---|
-| tinydistill-banking77-minilm (ONNX int8) | no disponible (base MiniLM-L6) | no disponible | 0,814 | no disponible | ONNX |
-| Qwen2.5-7B-Instruct (profesor, 8-shot, 4-bit) | 7 000 M | no disponible en la información | 0,783 | no disponible en la información | safetensors (no confirmado) |
-| all-MiniLM-L6-v2 (alumno base sin destilar) | ~22,7 M (según arquitectura) | no disponible | no disponible | no disponible | safetensors / ONNX |
+| Modelo | Parametros | Contexto | Accuracy (banking77) | Latencia batch 1 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| tinydistill-banking77-minilm (ONNX int8) | no disponible (base MiniLM-L6) | no disponible | 0,872 | 1,0 ms (CPU) | cc-by-4.0 | Hugging Face |
+| Docente Qwen2.5-7B-Instruct (4 bits + sonda) | 7B | no disponible | 0,859 | 155,4 ms (CUDA) | no disponible en la informacion | Hugging Face |
+| Estudiante PyTorch (MiniLM-L6) | no disponible (base MiniLM-L6) | no disponible | 0,875 | 3,7 ms (CPU) | cc-by-4.0 | Hugging Face |
 
-No se dispone de datos de otros clasificadores específicos de Banking77 en la información proporcionada, por lo que la comparativa se limita a los modelos implicados en el pipeline de destilación.
+No se dispone de datos de otros clasificadores comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dominio restringido: solo clasifica entre las 77 intenciones de Banking77; cualquier texto fuera de ese conjunto se asignará a una de esas etiquetas aunque no corresponda.
-- Licencia no declarada: la model card remite a comprobar las licencias del modelo alumno (all-MiniLM-L6-v2), del profesor (Qwen2.5-7B-Instruct) y de los datos de entrenamiento (Banking77) antes de cualquier uso comercial; no hay garantía explícita de uso comercial.
-- Idiomas no declarados: no se especifica qué lenguas cubre; Banking77 es un dataset en inglés, por lo que el rendimiento en castellano u otros idiomas es desconocido.
-- Sesgos: no documentados en la información disponible; al entrenarse sobre un corpus bancario en inglés, puede heredar sesgos de dominio y de distribución del dataset original.
-- Riesgo de alucinación de etiqueta: como todo clasificador cerrado, siempre emite una de las 77 clases, incluidas las de baja confianza; la model card propone usar umbrales de confianza y cascada para mitigarlo.
-- Contexto máximo no documentado: no se indica la longitud máxima de entrada soportada por la exportación ONNX.
-- Reproducibilidad limitada: los resultados ONNX corresponden solo a la primera semilla; las medias con ± solo están disponibles para PyTorch.
-- Umbrales de cascada calibrados sobre test: la propia model card advierte de que en producción deben fijarse sobre un split de validación, no sobre test.
-- Madurez: repositorio con 0 descargas y 0 likes, creado y actualizado el mismo día, sin señales de adopción ni mantenimiento.
+- El modelo solo clasifica entre las 77 intenciones de banking77; no generaliza a otras taxonomias sin reentrenamiento.
+- Riesgo de alucinacion no aplica en el sentido generativo, pero si de clasificacion erronea: la precision es 0,872 en int8, por lo que aproximadamente 1 de cada 8 textos se etiqueta mal.
+- La cuantizacion int8 reduce ligeramente la precision (0,872 frente a 0,875 en fp32) y el acuerdo con el docente (0,885 frente a 0,889).
+- Los umbrales de la cascada se ajustaron sobre el conjunto de test; en produccion deben calibrarse sobre un split de validacion.
+- Idiomas soportados no disponibles en la informacion; el dataset banking77 es predominantemente en ingles, por lo que el rendimiento en castellano no esta garantizado.
+- Licencia cc-by-4.0 elegida por el autor, pero este advierte de que deben revisarse las licencias del modelo base (all-MiniLM-L6-v2), del docente (Qwen2.5-7B-Instruct) y del dataset (PolyAI/banking77) antes de un uso comercial.
+- El modelo fue creado en noviembre de 2026 y cuenta con 648 descargas y 0 likes; no hay evidencia de validacion independiente fuera de la model card.
+- El tamano del repo es de 0,4 GB, superior al de los pesos int8 (23 MB), probablemente por incluir multiples formatos y artefactos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Shroomy/tinydistill-banking77-minilm
-- Repositorio de tinydistill: https://github.com/Andreas-Hum/tinydistill
-- Modelo profesor: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Modelo alumno base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+- Repositorio tinydistill: https://github.com/Andreas-Hum/tinydistill
+- Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+- Modelo docente: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Dataset: https://huggingface.co/datasets/PolyAI/banking77

@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "flaukowski/flaukowski-brain-gemma3-12b-lora",
+  "slug": "flaukowski-flaukowski-brain-gemma3-12b-lora",
+  "author": "flaukowski",
+  "url": "https://huggingface.co/flaukowski/flaukowski-brain-gemma3-12b-lora",
+  "created_at": "2026-11-21T23:01:12.000Z",
+  "updated_at": "2026-11-21T23:01:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "flaukowski",
+    "persona",
+    "voice",
+    "ghost-signals",
+    "gemma3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307337394,
+  "storage_human": "307 MB",
+  "context_length": null,
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma3:12b",
+      "url": "http://go/v1/AYzNt55kvachawIi6AHRn8xYBgQ6T3SYvXIJk-_cgBQfCJ-YMBAoSF4t6x_e1VSdxcDIM-hicyClCGUTojVVoU9lehf9977cJMxibRL_H8_tDjoKXpjcKoqgx1eENh4U6nMpeEOKkxUgTAUQfgZ9k64XPj6Y8t8a_1ZEmiKmF2_6dtiQejqrvusq6HPof3gGRGZ2e9RD6gU",
+      "snippet": "The Gemma 3 models are multimodal—processing text and images—and feature a 128K context window with support for over 140 languages. Available in 270M, 1B, 4B, 12B, and 27B parameter sizes, they excel in tasks like question answering, summarization, and reasoning, while their compact design allows deployment on resource-limited devices."
+    },
+    {
+      "title": "gemma3:12b/model",
+      "url": "http://go/v1/AYzNt55kvachawIi6AHRn8xYBgQ6T3SYvXIJk-_chkBzL0BU0NQBOvB-KvUUcoJ_7Vhns9XhA7RcfHGeMWY0Z7YD9eqjAzNila-uNmStSPbKGULRflfrgORmhctVuA-REED_0Xw2AZa3gW75_Y8F_693pFC1TBmEdY8rNqMfmTc_nqP3kwUK2sqXfLK-HDBLAQOlrJtzYgb1-bhtNeC6mJMNa2DOP273bGMA",
+      "snippet": "The current, most capable model that runs on a single GPU."
+    }
+  ]
+}

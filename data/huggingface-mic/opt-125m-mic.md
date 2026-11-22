@@ -2,90 +2,87 @@
 
 ## Resumen
 
-`opt-125m-mic` es un artefacto de prueba (test fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo de lenguaje entrenado ni utilizable: es una version reducida artificialmente del checkpoint `facebook/opt-125m`, pensada para validar contratos de integracion y expectativas de frameworks (concretamente Transformers) sin necesidad de descargar ni ejecutar el modelo completo. El autor lo etiqueta explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
+`opt-125m-mic` es un artefacto de prueba publicado por la organización `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado ni de un modelo utilizable para inferencia real: es un *fixture* o modelo reducido (*slim model*) construido a partir de `facebook/opt-125m` para servir como caso de prueba reproducible de contratos de integración con frameworks (principalmente Transformers). El repositorio combina pesos reducidos, ejemplos de uso ejecutables y un directorio de expectativas de framework en un único paquete.
 
-El repositorio contiene pesos "slim" de aproximadamente 1.004.672 parametros (frente a los 125 millones del modelo original), con la misma arquitectura `OPTForCausalLM` pero con `num_hidden_layers` reducido a 2. Los pesos son aleatorios (semilla 17), no entrenados, y los ficheros del procesador (tokenizer, `generation_config.json`, `special_tokens_map.json`, etc.) se copian byte a byte desde `facebook/opt-125m`.
+Técnicamente mantiene la arquitectura `OPTForCausalLM` del modelo base, pero con una configuración reducida (`num_hidden_layers = 2`) que da lugar a 3.415.680 parámetros totales, frente a los 125 millones del modelo original. Los pesos son aleatorios (semilla 17) y no han sido entrenados; se conservan los nombres de tensores del checkpoint real y los ficheros de procesador (`tokenizer_config.json`, `vocab.json`, `merges.txt`, etc.) se copian byte a byte desde `facebook/opt-125m`. El artefacto está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
 
-Su relevancia es puramente de ingenieria: sirve como fixture reproducible para pruebas de integracion de frameworks, verificacion de contratos de API y validacion de pipelines de CI. Cualquier uso como modelo generativo real carece de sentido porque no ha recibido entrenamiento alguno.
+Su relevancia es, por tanto, de ingeniería y no de modelado: permite validar pipelines de carga, comprobaciones de sensibilidad a entradas y expectativas de framework sin descargar los 125 M del modelo real. Cualquier uso como modelo de generación de texto produciría salidas sin sentido, ya que los pesos son aleatorios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | OPT (transformer decoder-only, `OPTForCausalLM`) |
-| Parametros totales | 1.004.672 |
+| Arquitectura | OPT (OPTForCausalLM, transformer decoder causal) |
+| Parametros totales | 3.415.680 |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (el fixture no documenta contexto propio; hereda la configuracion del checkpoint base tras el shrink) |
-| Tipos de cuantizacion | no disponible; pesos guardados en float16 |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos guardados en float16) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el repo copia `LICENSE.md` de `facebook/opt-125m`, pero no se declara licencia propia) |
+| Licencia | no disponible |
 | Formato de pesos | safetensors (float16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo replica la arquitectura OPT de Meta: un transformer decoder-only con atencion causal. En este caso, la configuracion se ha reducido mediante la regla generica de `sweep.py` del repositorio `transformers-mic`, fijando `num_hidden_layers = 2`. Los nombres de tensores coinciden exactamente con los del checkpoint real `facebook/opt-125m`, lo que permite sustituir uno por otro en pruebas de carga sin cambiar el codigo.
+El modelo replica la arquitectura OPT de `facebook/opt-125m` (`OPTForCausalLM`) pero con una configuración reducida a 2 capas ocultas, aplicando la regla genérica de reducción de `sweep.py` del repositorio `huggingface/transformers-mic`. Conserva los mismos nombres de tensores que el checkpoint real y copia byte a byte los ficheros de procesador del modelo base (`LICENSE.md`, `generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer_config.json`, `vocab.json`).
 
-No hubo entrenamiento. Los pesos se inicializan aleatoriamente con semilla 17 y se validan mediante un "input-sensitivity gate": cada perturbacion de las entradas del contrato debe mover los logits al menos 0.001 (la mas debil, `input_ids:roll_batch`, produce 0.00429). Los pesos son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. El fixture esta identificado por la clave `5a07dd710c26` y cubre todos los checkpoints cuyos ficheros de procesador son byte-identicos y cuya config coincide tras el shrink.
+No ha habido entrenamiento: los pesos son aleatorios con semilla 17. Para justificar su validez como fixture, se aplicó una compuerta de sensibilidad a la entrada según la cual cada perturbación de las entradas del contrato desplaza los logits al menos 0,001 (el caso más débil, `input_ids:roll_batch`, alcanza 0,514). El modelo se guarda en float16 (el dtype por defecto de `facebook/opt-125m`) y se verifica que es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture es `02035e444a97`.
 
 ## Capacidades
 
-- No tiene capacidades generativas reales: los pesos son aleatorios y no han sido entrenados.
-- Sirve como fixture de integracion para validar la carga del modelo en Transformers (`OPTForCausalLM`).
-- Permite verificar contratos de API y expectativas de framework recogidas en `integrations/transformers/expectations`.
-- Reproduce los nombres de tensores del checkpoint original, util para tests de compatibilidad.
-- Los ficheros de tokenizer son identicos a los de `facebook/opt-125m`, por lo que el pipeline de tokenizacion funciona igual.
-- No soporta tool calling, agentes, vision, audio ni modo thinking.
-- Multilingue: no disponible (depende del tokenizer heredado, pero sin pesos entrenados no hay comportamiento linguistico evaluable).
+- No es un modelo funcional: los pesos aleatorios no producen texto coherente ni razonamiento.
+- Sirve como fixture de pruebas para validar la carga de `OPTForCausalLM` en Transformers.
+- Permite comprobar expectativas de framework (directorio `integrations/transformers/expectations`).
+- Incluye ejemplos de uso ejecutables (`integrations/transformers/usage.md`).
+- Valida la compuerta de sensibilidad a entradas del contrato (perturbaciones de `input_ids` y similares).
+- Verifica estabilidad numérica (finitud) en float32, bfloat16 y float16.
+- No dispone de tool calling, agentes, visión, audio ni modo de razonamiento.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI: usar el fixture para validar que un pipeline de Transformers carga correctamente `OPTForCausalLM` sin descargar los 125M de parametros del modelo real, reduciendo tiempo y ancho de banda en cada build.
-- Validacion de contratos de framework: comprobar que las expectativas documentadas en `integrations/transformers/expectations` se cumplen (formas de tensores, dtypes, nombres de parametros) antes de actualizar la version de Transformers.
-- Test de regresion de tokenizer: al copiar byte a byte `vocab.json`, `merges.txt` y `tokenizer_config.json`, permite verificar que los cambios en el pipeline de tokenizacion no alteran la salida esperada.
-- Desarrollo de herramientas de introspeccion de modelos: probar utilidades que inspeccionan la config, el grafo de tensores o los metadatos de un checkpoint sin coste de computo.
-- Validacion de pipelines de cuantizacion: comprobar que una herramienta de conversion (por ejemplo, a GGUF) maneja correctamente un checkpoint OPT de estructura identica pero tamano minimo.
-- Formacion y demos: ilustrar como se construye un fixture reproducible a partir de un modelo base, siguiendo `build_fixtures.py` y `build.json` como referencia documental.
+- Pruebas de integración en CI: cargar el fixture con Transformers y comprobar que la API de `OPTForCausalLM` se comporta según el contrato, sin descargar los 125 M del modelo real.
+- Validación de pipelines de tokenización: al copiar byte a byte los ficheros del procesador de `facebook/opt-125m`, permite verificar que el tokenizador se carga correctamente en un entorno de test.
+- Desarrollo de herramientas de medición de cobertura (MIC): el repositorio forma parte de `transformers-mic` y sirve para validar la generación de fixtures y las compuertas de sensibilidad.
+- Reproducción de fallos: al fijar semilla 17 y hashes de ficheros en `build.json`, permite reproducir exactamente el mismo estado en cualquier máquina.
+- Pruebas de estabilidad numérica: comprobar que forward, loss y gradientes son finitos en float32, bfloat16 y float16 en entornos con distintas GPUs.
+- Onboarding de contribuidores: un paquete de 0,2 GB con contrato, uso y expectativas permite entender el flujo de integración sin coste de descarga elevado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad (MMLU, HumanEval, GSM8K) seria meaningless y no se reporta.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, no procede evaluar calidad de generación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 10 MB en float16 (1.004.672 parametros x 2 bytes), mas overhead de activaciones y tokenizer.
-- GPU recomendadas: cualquiera, incluida CPU. No requiere GPU dedicada.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (carga directa con `OPTForCausalLM`); vLLM, llama.cpp, Ollama y TGI no estan documentados para este fixture y su uso no esta previsto.
-- Latencia y throughput: no disponibles; al no ser un modelo entrenado, las metricas de generacion no son representativas.
+- VRAM estimada: inferior a 1 GB en float16 (3,4 M de parámetros); cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquiera con soporte de float16; no requiere A100, H100 ni RTX 4090. Funciona en CPU.
+- Cabe en consumer GPU: sí, en cualquier modelo (incluidas GPUs integradas).
+- Opciones de despliegue: Transformers (vía `AutoModelForCausalLM`), con ejemplos de uso en `integrations/transformers/usage.md`. No se documentan opciones para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; irrelevantes para un fixture.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `huggingface-mic/opt-125m-mic` | 1.004.672 | no disponible | Fixture de test | no disponible | Hugging Face |
-| `facebook/opt-125m` | 125M | 2048 tokens | Modelo generativo real | OPT License (no comercial segun la model card original) | Hugging Face |
-| `facebook/opt-350m` | 350M | 2048 tokens | Modelo generativo real | OPT License | Hugging Face |
+| Modelo | Parametros | Contexto | Proposito | Licencia |
+|---|---|---|---|---|
+| huggingface-mic/opt-125m-mic | 3,4 M | no disponible | Fixture de pruebas | no disponible |
+| facebook/opt-125m | 125 M | 2.048 tokens (modelo base) | Modelo causal de propósito general | OPT-175B license (no comercial) |
+| facebook/opt-350m | 350 M | 2.048 tokens (modelo base) | Modelo causal de propósito general | OPT-175B license (no comercial) |
 
-La comparativa es limitada: el fixture no compite en calidad con los modelos OPT reales porque no ha sido entrenado. Su unico equivalente conceptual son otros fixtures de la misma organizacion (`huggingface-mic`), no disponibles en la informacion proporcionada.
+La comparación con `facebook/opt-125m` es directa porque el fixture deriva de él, pero la diferencia de propósito es total: el primero es un artefacto de test con pesos aleatorios y el segundo un modelo entrenado. No se dispone de datos de benchmarks para comparar rendimiento.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: el modelo no genera texto coherente ni responde a instrucciones; cualquier salida es ruido estadistico.
-- Etiquetado como `test-artifact`: no debe usarse en produccion ni como base para fine-tuning.
-- Licencia no declarada de forma explicita: el repo copia `LICENSE.md` de `facebook/opt-125m`, pero la model card no aclara los terminos aplicables al fixture. Verificar antes de cualquier redistribucion.
-- Contexto y comportamiento linguistico no documentados: la configuracion reducida no refleja el contexto real del modelo base.
-- Riesgo de confusion: el nombre `opt-125m-mic` puede llevar a pensar que es una variante del modelo de 125M; no lo es.
-- Sin soporte de tool calling, agentes ni capacidades multimodales.
-- No apto para evaluacion de sesgos ni de alucinacion, al carecer de entrenamiento.
+- No es un modelo utilizable: los pesos son aleatorios y la salida carece de sentido.
+- Etiquetado como `test-artifact`; no debe incluirse en búsquedas de modelos candidatos ni en producción.
+- Licencia no disponible en la información proporcionada; el fichero `LICENSE.md` se copia del modelo base, pero no se confirma su contenido.
+- Idiomas y contexto no documentados en la información disponible.
+- No hay datos sobre sesgos ni alucinación porque no ha sido entrenado.
+- El uso comercial queda sujeto a la licencia del modelo base (`facebook/opt-125m`), que no se detalla aquí.
+- Cualquier evaluación de calidad sobre este artefacto sería inválida.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/opt-125m-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/opt-125m-mic
 - Modelo base: https://huggingface.co/facebook/opt-125m
-- Documentacion de uso en Transformers: `integrations/transformers/usage.md` (dentro del repo)
-- Expectativas de Transformers: `integrations/transformers/expectations` (dentro del repo)
-- Manifiesto de contrato: `integration.json` (dentro del repo)
-- Procedencia del fixture: `build.json` (dentro del repo)
-- Explicacion del shrink: https://huggingface-mic-mic-coverage.static.hf.space/shrink/opt-125m-mic.html
-- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla de shrink: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/opt-125m-mic.html

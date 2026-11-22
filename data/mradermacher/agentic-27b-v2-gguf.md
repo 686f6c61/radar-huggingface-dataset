@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Agentic-27B-V2-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo base opencsg/Agentic-27B-V2, publicada por el usuario mradermacher, conocido en el ecosistema de Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El repositorio no contiene pesos originales ni documentación técnica propia del modelo: es un artefacto derivado que empaqueta el modelo fuente en múltiples niveles de precisión para facilitar su despliegue en hardware con recursos limitados.
+Agentic-27B-V2 es un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) desarrollado por OpenCSG y distribuido en formato GGUF por mradermacher. Está diseñado específicamente para tareas de agente: uso de herramientas (tool-use), function calling, generación de código y automatización de flujos multi-paso, con especial énfasis en escenarios tipo SWE-bench. La model card lo etiqueta con el identificador `qwen3.8`, lo que sugiere una base derivada de la familia Qwen, aunque no se confirma oficialmente la arquitectura exacta.
 
-El dato más relevante para evaluar el modelo es la discrepancia entre el nombre comercial ("27B") y el número real de parámetros declarado en los safetensors del repositorio: 460.730.096 parámetros, es decir, aproximadamente 0,46 mil millones. Esta cifra sugiere que el modelo base no es un transformer denso de 27 mil millones de parámetros en el sentido convencional, sino probablemente un modelo de arquitectura compacta, un modelo de mezcla de expertos con pocos parámetros activos o una nomenclatura derivada de otra convención (por ejemplo, tamaño de vocabulario o identificador interno del proyecto opencsg). No hay información en la model card que aclare esta discrepancia.
+El modelo resuelve el problema de disponer de un LLM de tamano medio (27B) optimizado para razonamiento agéntico y ejecución de código, que puede desplegarse en hardware relativamente asequible gracias a las cuantizaciones GGUF publicadas. Es relevante ahora porque la demanda de modelos que soporten pipelines de agentes autónomos con tool calling fiable ha crecido, y este modelo se posiciona como una alternativa abierta (bajo licencia OpenCSG) frente a modelos propietarios para ese nicho.
 
-Al tratarse de un repositorio de cuantizaciones sin model card sustantiva, la mayoría de especificaciones técnicas, datos de entrenamiento, benchmarks y licencia no están disponibles en la información proporcionada. La ficha siguiente documenta lo que sí puede verificarse y marca explícitamente como "no disponible" todo aquello que no consta.
+La información pública disponible es limitada: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks en la model card del repositorio GGUF. Esta ficha refleja únicamente los datos verificables extraídos de la información proporcionada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 460.730.096 (según safetensors del repo) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (derivada de Qwen, según tag `qwen3.8`; no confirmado oficialmente) |
+| Parámetros totales | 27.320.697.856 (~27,3 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); pesos originales en safetensors en el repo fuente |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | zh, en |
+| Licencia | opencsg-model-and-dataset-license (licencia personalizada de OpenCSG) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base opencsg/Agentic-27B-V2 en la documentación proporcionada. El repositorio de mradermacher es únicamente un conjunto de cuantizaciones estáticas generadas con un pipeline de conversión (los metadatos de la model card indican `convert_type: hf` y `quantize_version: 2`, lo que apunta a una conversión desde pesos Hugging Face con la herramienta de cuantización de llama.cpp). No hay datos sobre número de tokens de entrenamiento, composición del dataset, fases de RLHF/DPO ni innovaciones técnicas del modelo original.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El tag `qwen3.8` sugiere que el modelo deriva de la familia Qwen, lo que implicaría una arquitectura transformer decoder-only con atención estándar, pero este dato no está confirmado oficialmente. El tamano de 27,3 B parámetros y el hecho de que no se mencione mezcla de expertos apuntan a un modelo denso.
 
-El nombre "Agentic" sugiere un ajuste orientado a tareas de agente (tool calling, razonamiento multi-paso), pero esta inferencia no está respaldada por documentación técnica en la información disponible. Cualquier afirmación sobre capacidades agénticas concretas requeriría consultar la model card del modelo fuente, que no se ha proporcionado.
+Respecto al entrenamiento, la model card no especifica el número de tokens, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. Los tags (`agent`, `agentic`, `tool-use`, `function-calling`, `code`, `swe-bench`, `automation`) indican que el ajuste se orientó hacia tareas de agente y generación de código, probablemente con datos de trayectorias de tool calling y resolución de issues de software. No se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- No se dispone de documentación que detalle las capacidades del modelo base.
-- El nombre del modelo ("Agentic") sugiere orientación a flujos de agente, pero no hay confirmación técnica en la información disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generación de texto y razonamiento general en chino e inglés.
+- Generación de código y resolución de problemas de software (orientado a SWE-bench).
+- Tool calling y function calling: el modelo está entrenado para invocar herramientas externas y estructurar llamadas a funciones.
+- Razonamiento agéntico multi-paso: planificación y ejecución de secuencias de acciones para automatización.
+- Soporte multimodal: el repositorio incluye ficheros `mmproj` (multi-modal supplement), lo que indica capacidad de procesamiento de visión además de texto.
+- Capacidades multilingües limitadas a chino e inglés según los metadatos.
+- Compatibilidad con endpoints y despliegue en vLLM (tag `endpoints_compatible`, `vllm`).
 
 ## Casos de uso
 
-Dado que no se dispone de especificaciones verificadas del modelo base, los siguientes casos se plantean como escenarios plausibles de uso de una cuantización GGUF de aproximadamente 0,46 mil millones de parámetros, no como recomendaciones basadas en capacidades documentadas:
-
-- Despliegue en CPU o hardware de gama baja: con ~460 millones de parámetros, las cuantizaciones Q4_K_M o Q5_K_M ocupan del orden de 300-500 MB, lo que permite ejecución en equipos sin GPU dedicada mediante llama.cpp, útil para prototipos y pruebas locales.
-- Integración en aplicaciones de escritorio o edge: el tamaño reducido del archivo GGUF facilita embeber el modelo en aplicaciones de escritorio, plugins de IDE o dispositivos con memoria limitada, siempre que se valide su calidad en la tarea concreta.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece doce variantes de cuantización, lo que permite medir la degradación de calidad entre Q2_K y x-f16 en una tarea concreta antes de decidir el nivel de compresión para producción.
-- Filtrado y clasificación de texto a pequeña escala: modelos de este tamaño pueden emplearse para tareas de etiquetado, moderación o extracción simple, aunque sin benchmarks publicados no puede garantizarse su rendimiento.
-- Base para fine-tuning ligero: el modelo fuente en safetensors (opencsg/Agentic-27B-V2) sería el punto de partida adecuado para ajuste fino; las cuantizaciones GGUF no son aptas para entrenamiento.
-- Pruebas de pipelines de inferencia: útil para validar infraestructura (llama.cpp, Ollama, servidores compatibles con GGUF) antes de escalar a modelos mayores.
+- Automatización de resolución de issues de software: el modelo puede analizar un repositorio, localizar el fichero relevante y proponer un parche, aprovechando su entrenamiento orientado a SWE-bench. Adecuado para pipelines de CI/CD que generen pull requests automáticos.
+- Agentes de tool calling en producción: integración en flujos donde el modelo debe decidir qué función invocar (APIs REST, bases de datos, sistemas de ficheros) y construir los argumentos correctos en formato JSON.
+- Asistente de código en IDE: autocompletado y generación de funciones con contexto de proyecto, desplegado localmente mediante llama.cpp u Ollama con cuantización Q4_K_M (16,9 GB).
+- Automatización de tareas administrativas multi-paso: orquestación de secuencias de acciones (leer correo, extraer datos, actualizar CRM) mediante function calling encadenado.
+- Análisis de documentos con componente visual: gracias a los ficheros mmproj, puede procesar capturas de pantalla o documentos escaneados junto con texto para tareas de extracción.
+- Chat de soporte técnico bilingüe (zh/en): atención al cliente en entornos donde se requiera alternar entre chino e inglés con capacidad de consultar herramientas internas.
+- Generación de tests y documentación: a partir de código existente, el modelo puede producir pruebas unitarias y documentación técnica en el mismo pipeline de desarrollo.
 
 ## Benchmarks y rendimiento
 
@@ -53,27 +53,46 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con ~460 millones de parámetros, las cuantizaciones Q4_K_M ocupan aproximadamente 0,3-0,5 GB; x-f16 en torno a 0,9-1 GB. Estas cifras son estimaciones por tamaño de parámetros, no datos publicados.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede alojar las cuantizaciones pequeñas; también es viable la inferencia en CPU.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer moderna (GTX 1060 6 GB, RTX 3060, RTX 4090, etc.), e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF (koboldcpp, text-generation-webui con loader GGUF). vLLM y TGI no son las vías naturales para GGUF, aunque vLLM soporta algunos modelos GGUF de forma experimental.
-- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia (modelo denso de 27,3 B):
+  - Q2_K (11,0 GB): ~12 GB de VRAM.
+  - Q4_K_M (16,9 GB): ~18 GB de VRAM.
+  - Q5_K_M (19,6 GB): ~21 GB de VRAM.
+  - Q6_K (22,5 GB): ~24 GB de VRAM.
+  - Q8_0 (29,1 GB): ~30 GB de VRAM.
+- GPU recomendadas: A100 40 GB o H100 para FP16/BF16 completo; RTX 4090 (24 GB) para Q4_K_M, Q5_K_M y Q6_K; RTX 3090 (24 GB) para cuantizaciones hasta Q6_K.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con cuantizaciones Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K o Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (para el modelo base en safetensors), transformers. El tag `endpoints_compatible` indica compatibilidad con APIs tipo OpenAI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables documentados en la información proporcionada, y la discrepancia entre el nombre ("27B") y el recuento real de parámetros (0,46 B) impide establecer una categoría fiable de comparación.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Enfoque |
+|---|---|---|---|---|---|
+| Agentic-27B-V2 (este) | ~27,3 B | no disponible | OpenCSG | GGUF, safetensors | Agéntico, tool-use, código |
+| Qwen2.5-Coder-32B | ~32 B | 128K (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | Código |
+| DeepSeek-Coder-V2 | 236 B totales / 21 B activos (MoE) | 128K | DeepSeek License | safetensors, GGUF | Código |
+| Llama-3.3-70B-Instruct | 70 B | 128K | Llama 3.3 Community License | safetensors, GGUF | General, tool calling |
+
+Nota: los datos de los modelos comparables provienen de conocimiento general público y no de la información proporcionada en esta búsqueda; se incluyen como referencia orientativa. No se dispone de comparativas de rendimiento verificadas para Agentic-27B-V2.
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica entre el nombre del modelo ("27B") y el recuento real de parámetros en safetensors (460.730.096): verificar el modelo fuente antes de asumir capacidades de un modelo de 27 mil millones de parámetros.
-- Ausencia total de model card sustantiva: no hay información sobre entrenamiento, datos, licencia ni evaluación, lo que impide validar su idoneidad para producción.
-- Licencia no disponible: no puede confirmarse el uso comercial; consultar la licencia del modelo fuente opencsg/Agentic-27B-V2 antes de cualquier despliegue.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad de forma notable; para uso real se recomienda Q4_K_M o superior.
-- Riesgo de alucinación y sesgos: no evaluable sin benchmarks ni documentación del modelo base.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria.
-- Los archivos GGUF no son aptos para fine-tuning; para entrenamiento debe usarse el modelo fuente en safetensors.
+- No se han publicado resultados de benchmarks que permitan validar el rendimiento real frente a alternativas; el posicionamiento en SWE-bench es una afirmación del autor sin datos verificables en la documentación disponible.
+- La licencia es una licencia personalizada de OpenCSG (`opencsg-model-and-dataset-license`), no una licencia estándar tipo Apache o MIT. Es imprescindible revisar los términos antes de uso comercial; pueden existir restricciones de atribución o de uso.
+- Idiomas soportados limitados a chino e inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Riesgo de alucinación inherente a los modelos de 27B, especialmente en tareas de razonamiento prolongado o tool calling encadenado sin validación externa.
+- La longitud de contexto no está documentada, lo que dificulta planificar su uso en tareas que requieran ventanas largas (análisis de repositorios completos, conversaciones extensas).
+- El tag `qwen3.8` sugiere una base Qwen, pero no se confirma la arquitectura exacta ni el proceso de entrenamiento; esto limita la capacidad de predecir comportamiento en producción.
+- Las cuantizaciones Q2_K y Q3_K_S degradan notablemente la calidad; para uso agéntico se recomienda Q4_K_M o superior.
+- El repositorio GGUF tiene 190,8 GB y múltiples ficheros; es necesario descargar solo la cuantización deseada y, si se usa multimodal, los ficheros `mmproj` correspondientes.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Agentic-27B-V2-GGUF
-- Modelo fuente: https://huggingface.co/opencsg/Agentic-27B-V2
+- Modelo base: https://huggingface.co/opencsg/Agentic-27B-V2
+- Licencia: https://huggingface.co/opencsg/Agentic-27B-V2/blob/main/OpenCSG%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%95%B0%E6%8D%AE%E9%9B%86%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE.md
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Agentic-27B-V2-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Agentic-27B-V2-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

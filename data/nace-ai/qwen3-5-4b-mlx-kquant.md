@@ -2,96 +2,97 @@
 
 ## Resumen
 
-Qwen3.5-4B-MLX-KQuant es una cuantización de 4 bits en formato MLX del modelo Qwen/Qwen3.5-4B, publicada por Nace.AI (nace-ai) para su ejecución local en Macs con Apple Silicon. El modelo base es un transformer multimodal de 4.539.265.536 parámetros (unos 4,5 mil millones) con capacidad image-text-to-text, es decir, acepta imágenes y texto como entrada y genera texto. Esta versión cuantizada ocupa 3,1 GB en disco y está pensada para el motor de inferencia Kapitsa del mismo autor, que expone APIs compatibles con OpenAI, Anthropic y Ollama.
+Qwen3.5-4B-MLX-KQuant es una cuantización en 4 bits del modelo Qwen3.5-4B de Alibaba Qwen, empaquetada en formato MLX para su ejecución en Macs con Apple Silicon. El pack lo publica nace-ai (Nace.AI), un proyecto que distribuye versiones cuantizadas de la familia Qwen para el motor de inferencia local Kapitsa, que expone APIs compatibles con OpenAI, Anthropic y Ollama. El modelo base resuelve tareas multimodales de imagen-texto y conversación, e incorpora un modo de razonamiento ("thinking") activado por defecto.
 
-La relevancia de este pack reside en su calidad de cuantización: según la model card, logra una divergencia KL de 0,048 respecto al modelo BF16 original, frente a 0,070 del pack de 4 bits de lmstudio-community, con el mismo tamaño de pesos del modelo de lenguaje (2,37 GB). Además, coincide con el modelo original en el 89,9 % de las predicciones de siguiente token, frente al 88,1 % del pack alternativo, y obtiene 0,923 en GSM8K frente a 0,914.
+La relevancia de este pack concreto está en la calidad de la cuantización: según la model card, el pack de Nace queda un 1,5× más cerca del modelo BF16 original que el pack de 4 bits de lmstudio-community, medido como divergencia KL (0,048 frente a 0,070), con el mismo tamaño de pesos del modelo de lenguaje (2,37 GB). El repositorio completo ocupa 3,1 GB y declara 4.539.265.536 parámetros totales en sus safetensors.
 
-El modelo base incorpora modo de razonamiento (thinking) activado por defecto, soporte de tool calling y entrada de imágenes mediante URLs o data URLs base64. La licencia es Apache 2.0 y el pipeline declarado es image-text-to-text, lo que lo sitúa en la categoría de modelos pequeños multimodales aptos para equipos de consumo.
+El modelo base pertenece a la generación Qwen3.5, con licencia Apache 2.0, lo que permite uso comercial. Esta ficha describe el pack cuantizado tal y como se publica; los detalles de arquitectura y entrenamiento del modelo original no se detallan en la información disponible y se indican como no disponibles cuando corresponde.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text); detalles internos del modelo base no disponibles |
-| Parametros totales | 4.539.265.536 (aproximadamente 4,5 mil millones) |
-| Parametros activos | No aplica (no es MoE según la informacion disponible) |
-| Longitud de contexto | No disponible en la informacion proporcionada; la model card menciona hasta 32.768 tokens de salida con thinking activado |
-| Tipos de cuantizacion | Q4 (4 bits) en formato MLX; pesos del modelo de lenguaje de 2,37 GB |
+| Arquitectura | Transformer (familia Qwen3.5); detalles internos no disponibles |
+| Parámetros totales | 4.539.265.536 |
+| Parámetros activos | No aplica (no consta que sea MoE) |
+| Longitud de contexto | No disponible (la model card menciona hasta 32.768 tokens de salida) |
+| Tipos de cuantización | Q4 (4 bits) en formato MLX; pesos del LM: 2,37 GB |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors en formato MLX (libreria mlx) |
+| Formato de pesos | safetensors (MLX); repo de 3,1 GB |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base Qwen/Qwen3.5-4B mas alla de su naturaleza transformer y su caracter multimodal (image-text-to-text). No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal en la informacion proporcionada.
+El pack es una cuantización Q4 del modelo Qwen/Qwen3.5-4B, realizada por Nace.AI en el formato nativo de MLX para Apple Silicon. No se dispone de información sobre la arquitectura interna del modelo base (número de capas, atención, posible uso de atención lineal u otras innovaciones) ni sobre el proceso de entrenamiento (volumen de tokens, composición del dataset, RLHF/DPO) en la información proporcionada.
 
-Lo que si esta documentado es el proceso de cuantizacion de este pack: Nace.AI aplica cuantizacion de 4 bits en formato MLX, el mismo que usa lmstudio-community, y reporta metricas de fidelidad respecto al modelo BF16. La evaluacion de la divergencia KL se realizo sobre 32.768 tokens de WikiText-2, conversaciones de GSM8K y codigo de HumanEval, comparando las distribuciones de siguiente token contra el modelo original. El pack esta disenado para ejecutarse sobre Kapitsa, el motor de inferencia local de Nace.AI para Apple Silicon, que sirve una pagina de chat y APIs compatibles con OpenAI, Anthropic y Ollama.
+La innovación destacable de este repositorio es el método de cuantización: Nace reporta una divergencia KL de 0,048 frente al modelo BF16, frente a 0,070 del pack de lmstudio-community, y una coincidencia del 89,9 % en el siguiente token (frente al 88,1 %). El modelo base incorpora modo de razonamiento ("thinking") que devuelve el contenido en `reasoning_content` y puede desactivarse con `reasoning_effort: "none"` o `enable_thinking: false`. El pipeline declarado es image-text-to-text, por lo que el modelo base es multimodal.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno.
-- Razonamiento con modo thinking activado por defecto; el contenido de razonamiento se devuelve en el campo `reasoning_content`. Se puede desactivar con `reasoning_effort: "none"` o `chat_template_kwargs: {"enable_thinking": false}`.
-- Comprension de imagenes: acepta entradas `image_url` en formato OpenAI, tanto URLs http(s) como data URLs base64.
-- Tool calling / function calling con definiciones de herramientas en formato OpenAI; la model card reporta 20 de 20 pruebas de ida y vuelta exitosas en modo sin thinking.
-- Capacidades de codigo y matematicas: resultados en GSM8K (0,923) y evaluacion sobre codigo de HumanEval en el analisis de cuantizacion.
-- Soporte multilingue: no disponible en la informacion proporcionada; la model card advierte que valores altos de presence_penalty pueden mezclar idiomas.
-- Integracion con APIs compatibles con OpenAI, Anthropic y Ollama a traves de Kapitsa.
+- Generación de texto conversacional multi-turno.
+- Razonamiento con modo "thinking" activado por defecto y desactivable.
+- Procesamiento de imágenes: acepta `image_url` (URL http(s) o data URL base64) y responde preguntas sobre el contenido visual.
+- Tool calling / function calling con definiciones de herramientas en formato OpenAI, con round trip completo verificado (20 de 20 pruebas en modo sin thinking).
+- Integración con APIs compatibles con OpenAI, Anthropic y Ollama a través de Kapitsa.
+- Ajuste de parámetros de muestreo recomendados por Qwen para modo thinking (temperature 1.0, top_p 0.95, top_k 20, presence_penalty 1.5) y sin thinking (temperature 0.7, top_p 0.8).
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: el modelo puede gestionar conversaciones multi-turno directamente en un Mac con Apple Silicon mediante Kapitsa, sin enviar datos a la nube, con 3,1 GB de archivos y pesos de lenguaje de 2,37 GB.
-- Atencion al cliente automatizada: el soporte de tool calling permite conectar el modelo a funciones como consulta de estado de pedidos o datos meteorologicos, completando el ciclo peticion-herramienta-respuesta con la API de OpenAI.
-- Analisis de imagenes en local: gracias a la entrada image-text-to-text, se puede usar para describir imagenes, extraer informacion de capturas o clasificar contenido visual enviando la imagen como URL o base64.
-- Generacion de codigo asistida: el modo thinking con ajustes precisos de codigo (temperature 0,6, top_p 0,95, top_k 20, presence_penalty 0,0) esta recomendado por la model card para tareas de programacion.
-- Razonamiento matematico: con GSM8K en 0,923, es adecuado para resolver problemas aritmeticos paso a paso, con hasta 32.768 tokens de salida para razonamientos largos.
-- Prototipado de agentes con API compatible con OpenAI: al exponer endpoints compatibles con OpenAI, Anthropic y Ollama, se puede integrar en frameworks de agentes existentes sin cambios de codigo, apuntando el cliente a `http://127.0.0.1:8000/v1`.
-- Evaluacion de cuantizaciones: util para investigadores que quieran comparar la fidelidad de distintos packs de 4 bits frente al modelo BF16 usando las metricas de KL y acuerdo de siguiente token.
+- Asistente local en Mac para desarrolladores: el pack se sirve con Kapitsa en `127.0.0.1:8000` y ofrece una página de chat y APIs compatibles con OpenAI, Anthropic y Ollama, lo que permite sustituir llamadas a la nube por inferencia local en Apple Silicon.
+- Automatización con tool calling: con definiciones de funciones en formato OpenAI, el modelo puede encadenar llamadas (por ejemplo, consultar el clima y redactar la respuesta final), verificado en 20 de 20 pruebas sin thinking.
+- Análisis de imágenes en local: admite imágenes por URL o base64 y responde preguntas sobre ellas, útil para tareas de descripción o extracción de información visual sin enviar datos a terceros.
+- Razonamiento matemático asistido: el pack obtiene 0,923 en GSM8K completo (1.319 preguntas), lo que lo hace adecuado para resolución de problemas aritméticos paso a paso con el modo thinking activado.
+- Generación de código con ajustes precisos: la model card recomienda temperature 0.6 y presence_penalty 0.0 para código en modo thinking, un escenario de uso directo para asistentes de programación locales.
+- Prototipado de agentes multi-paso: la combinación de thinking, tool calling y APIs estándar permite construir pipelines de agentes que se ejecutan íntegramente en un Mac, sin coste por token.
+- Evaluación y comparación de cuantizaciones: el repositorio incluye métricas reproducibles (KL, acuerdo en el siguiente token, GSM8K) que permiten comparar packs de 4 bits antes de adoptar uno en producción.
 
 ## Benchmarks y rendimiento
 
 | Prueba | lmstudio-community 4-bit | Nace (este repo) |
 |---|---:|---:|
-| Divergencia KL respecto a BF16 (menor es mejor) | 0,070 | 0,048 |
-| Acuerdo con BF16 en el siguiente token | 88,1 % | 89,9 % |
+| KL frente al modelo BF16 (menor es mejor) | 0,070 | 0,048 |
+| Coincidencia con BF16 en el siguiente token | 88,1 % | 89,9 % |
 | GSM8K (1.319 preguntas) | 0,914 | 0,923 |
 
-En la comparacion pregunta a pregunta de GSM8K, 35 preguntas solo las acierta el pack de lmstudio-community y 47 solo el pack de Nace; la model card indica que la diferencia no es medible (McNemar z 1,33). En tool calling con thinking desactivado, 20 de 20 intentos colocaron la llamada y completaron el ciclo, sin llamadas adicionales (MLX 0.32.4; mlx-lm 0.32.2, M5 Pro). No se han publicado resultados de benchmarks del modelo base en la informacion disponible.
+En GSM8K, 35 preguntas solo las acierta el pack de lmstudio-community y 47 solo el de Nace; la diferencia no es significativa (McNemar z = 1,33). Tool calling en Q4 sin thinking: 20 de 20 pruebas completaron el round trip sin llamadas adicionales (MLX 0.32.4, mlx-lm 0.32.2, M5 Pro). No se han publicado otros resultados de benchmarks (MMLU, HumanEval, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- Almacenamiento: 3,1 GB de archivos; pesos del modelo de lenguaje de 2,37 GB en Q4.
-- VRAM/memoria unificada: al ser un pack MLX para Apple Silicon, se ejecuta sobre memoria unificada; el tamano de 3,1 GB sugiere que cabe en Macs con 8 GB o mas de memoria unificada, aunque no se especifica un minimo oficial en la informacion disponible.
-- GPU: disenado para Apple Silicon (los ejemplos se probaron en un M5 Pro); no se mencionan GPU NVIDIA (A100, H100, RTX 4090) en la informacion proporcionada.
-- Despliegue: Kapitsa (`brew install nace-ai/tap/kapitsa`, `kapitsa pull`, `kapitsa serve`), que expone APIs compatibles con OpenAI, Anthropic y Ollama; tambien se menciona `mlx_lm.generate` para generacion directa.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Hardware objetivo: Macs con Apple Silicon; el pack usa la librería MLX.
+- Tamaño en disco: 3,1 GB de archivos; pesos del modelo de lenguaje de 2,37 GB en Q4.
+- VRAM/memoria unificada: no se especifica un mínimo en la información disponible; por el tamaño del pack, encaja en Macs con memoria unificada moderada, aunque no se confirma cifra exacta.
+- GPU dedicadas (A100, H100, RTX 4090): no aplicable, el formato MLX está pensado para Apple Silicon.
+- Despliegue: Kapitsa (`brew install nace-ai/tap/kapitsa`, `kapitsa serve`), que sirve APIs OpenAI, Anthropic y Ollama; también `mlx_lm.generate` para generación por línea de comandos.
+- Latencia y throughput: no disponibles; las pruebas de tool calling se realizaron en un M5 Pro sin cifras de rendimiento publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| nace-ai/Qwen3.5-4B-MLX-KQuant | 4,5 mil millones | No disponible | MLX Q4 (safetensors) | Apache 2.0 | KL 0,048; GSM8K 0,923 |
-| lmstudio-community/Qwen3.5-4B-MLX-4bit | 4,5 mil millones (mismo base) | No disponible | MLX 4-bit | Apache 2.0 (heredada del base) | KL 0,070; GSM8K 0,914 |
-| Qwen/Qwen3.5-4B (BF16 original) | 4,5 mil millones | No disponible | Safetensors BF16 | Apache 2.0 | Referencia de fidelidad para las cuantizaciones |
+| Modelo | Parámetros | Cuantización | Contexto | Calidad (KL vs BF16) | Licencia | Disponibilidad |
+|---|---|---|---:|---|---|---|
+| nace-ai/Qwen3.5-4B-MLX-KQuant | 4.539 M | Q4 MLX | No disponible | 0,048 | Apache 2.0 | Hugging Face |
+| lmstudio-community/Qwen3.5-4B-MLX-4bit | 4.539 M (base) | 4-bit MLX | No disponible | 0,070 | Apache 2.0 (base) | Hugging Face |
+| Qwen/Qwen3.5-4B (BF16) | 4.539 M | BF16 | No disponible | referencia | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
+La comparativa se limita al mismo modelo base en distintas cuantizaciones, ya que no se dispone de datos de benchmarks frente a otros modelos de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Alucinacion: no se documentan evaluaciones especificas de alucinacion en la informacion disponible; como todo modelo generativo, existe riesgo inherente.
-- Sesgos: no se documentan sesgos conocidos en la informacion proporcionada.
-- Idiomas: no se especifican los idiomas soportados; la model card advierte que valores altos de presence_penalty pueden provocar mezcla de idiomas.
-- Contexto: la longitud de contexto no esta disponible; la model card solo menciona hasta 32.768 tokens de salida con thinking activado.
-- Cuantizacion: al ser un pack Q4, existe una divergencia medible respecto al BF16 (KL 0,048), por lo que no es identico al modelo original.
-- Plataforma: el pack esta limitado a Apple Silicon y al ecosistema MLX; no es directamente utilizable en GPU NVIDIA ni en servidores x86 convencionales.
-- Ejemplos de inferencia: la propia model card advierte que los ejemplos de inferencia se probaron en nace-ai/Qwen3.5-9B-MLX, no en este pack, y que la tarjeta sustituye el nombre del repositorio.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.5-4B.
-- Produccion: el motor Kapitsa y el ecosistema MLX estan orientados a ejecucion local en Mac; no se documentan garantias de latencia o throughput para cargas de produccion.
+- Solo funciona en Apple Silicon con MLX; no es desplegable en GPU NVIDIA ni en entornos x86 sin conversión.
+- Los ejemplos de inferencia de la model card fueron probados en nace-ai/Qwen3.5-9B-MLX, no en este pack de 4B; la propia card advierte de que sustituye el nombre del repositorio.
+- El modo thinking está activado por defecto y consume tokens de salida; es necesario desactivarlo explícitamente para respuestas directas.
+- La model card advierte de que valores altos de presence_penalty pueden mezclar idiomas.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; aplican los del modelo base Qwen3.5-4B.
+- Idiomas soportados: no disponibles, lo que impide garantizar cobertura multilingüe.
+- Longitud de contexto: no disponible; solo se documenta un máximo de 32.768 tokens de salida en modo thinking.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-4B antes de producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/nace-ai/Qwen3.5-4B-MLX-KQuant
+- Repositorio Hugging Face: https://huggingface.co/nace-ai/Qwen3.5-4B-MLX-KQuant
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Pack alternativo de lmstudio-community: https://huggingface.co/lmstudio-community/Qwen3.5-4B-MLX-4bit
+- Buenas prácticas del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B#best-practices
 - Motor Kapitsa: https://github.com/nace-ai/kapitsa
-- Web de Nace.AI: https://www.nace.ai/
-- Otros packs de Nace.AI: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX, https://huggingface.co/nace-ai/Qwen3.8-27B-MLX, https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-MLX, https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-MLX
+- Sitio de Nace.AI: https://www.nace.ai/
+- Pack comparable de lmstudio-community: https://huggingface.co/lmstudio-community/Qwen3.5-4B-MLX-4bit
+- Otros packs de Nace: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX, https://huggingface.co/nace-ai/Qwen3.8-27B-MLX, https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-MLX, https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-MLX

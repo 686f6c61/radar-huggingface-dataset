@@ -2,119 +2,113 @@
 
 ## Resumen
 
-KnowLine-31B-Gen1.5 es un modelo de decisión (decision model) desarrollado por PelaAI, un fine-tune LoRA del modelo denso google/gemma-4-31B-it. A diferencia de los modelos generativos convencionales, KnowLine no produce texto libre: recibe un estado (texto o una conversación) y hasta 64 preguntas tipadas (sí/no, elección entre k opciones, o puntuación sobre una rúbrica), y devuelve para cada pregunta una distribución de probabilidad sobre sus opciones en un único forward pass. Su pipeline declarado en Hugging Face es `text-classification`, y está orientado a tareas de decisión, enrutamiento y evaluación automatizada.
+KnowLine-31B-Gen1.5 es un modelo de decisión (decision model) desarrollado por PelaAI, afinado a partir de google/gemma-4-31B-it. No es un modelo generativo al uso: recibe un estado (texto o una conversación) y hasta 64 preguntas tipadas (sí/no, elegir una entre k opciones, o puntuar según una rúbrica) y devuelve, para cada una, una distribución de probabilidad sobre sus opciones mediante un único forward pass por pregunta, sin generación de texto. Se encuadra en la categoría de modelos "System One" orientados a decisiones rápidas y calibradas.
 
-La versión Gen1.5 no modifica los pesos: cada archivo de pesos, configuración y tokenizador es byte-idéntico a KnowLine-31B-Gen1. Lo que cambia es la forma de servir peticiones largas. Las peticiones de solo texto que caben en 3.000 tokens se siguen leyendo dos veces, mientras que las de hasta 32.768 tokens se leen una sola vez con una cabecera de preguntas que las enumera antes del estado. Según el autor, esto eleva la puntuación en la suite pública Decision Index 0.3 de 70,13 a 70,50 sin reentrenamiento.
+La versión Gen1.5 mantiene los pesos byte a byte idénticos a KnowLine-31B-Gen1 (un fine-tune LoRA de gemma-4-31B-it, rango 32, alpha 64, solo el modelo de lenguaje, una época, fusionado en bf16) y cambia únicamente la capa de inferencia: las peticiones cortas que caben en 3.000 tokens se siguen leyendo dos veces, mientras que las peticiones de texto de hasta 32.768 tokens se leen una sola vez con una cabecera que enumera las preguntas antes del estado. La arquitectura subyacente es un transformer denso de unos 31.270 millones de parámetros, con la torre de visión del modelo base intacta.
 
-El modelo se presenta como independiente, no afiliado a TypeSafe, Jev ni Google, y conserva la torre de visión del modelo base (aunque fue entrenado solo con texto). Su relevancia actual reside en ofrecer una alternativa determinista y de baja latencia frente a los pipelines de generación + parsing para tareas de clasificación y decisión estructurada.
+Su relevancia actual radica en que ofrece una interfaz de clasificación y enrutamiento con probabilidades calibradas (temperatura T = 1,44 plegada en los pesos), evaluada por terceros en el benchmark SO-Arena, donde obtuvo 70,2 puntos y quedó primero conjunto entre 19 configuraciones System One. Está publicado con licencia Apache-2.0 y pesos en safetensors/bf16.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base google/gemma-4-31B-it), fine-tune LoRA fusionado; torre de visión del modelo base conservada |
-| Parametros totales | 31.273.088.876 (31,27B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens para peticiones de solo texto con cabecera de preguntas; 3.000 tokens para el modo de lectura doble |
-| Tipos de cuantizacion | bf16 en el formato de publicación; FP8 no probado por el autor al cargar este modelo |
-| Idiomas soportados | en, zh |
+| Arquitectura | Transformer denso (base google/gemma-4-31B-it), con torre de visión del modelo base; cabezal de decisión sobre tokens de etiqueta |
+| Parametros totales | 31.273.088.876 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens para peticiones de texto con cabecera de preguntas; lectura doble para peticiones que caben en 3.000 tokens |
+| Tipos de cuantizacion | bf16 (formato de publicación); FP8 no probado en carga según el autor; no se enumeran otras cuantizaciones |
+| Idiomas soportados | inglés, chino simplificado, chino tradicional |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (bf16, ~63 GB); tokenizador de Gemma 4 |
+| Formato de pesos | safetensors (bf16, aproximadamente 63 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de google/gemma-4-31B-it, un transformer denso de unos 31B parámetros, y se obtiene mediante un fine-tune LoRA de rango 32 y alpha 64 aplicado únicamente al modelo de lenguaje, durante una época, y fusionado posteriormente en pesos bf16. La temperatura de lectura T = 1,44 está plegada en el peso de la normalización final y en el soft-cap de logits final; el front end lee las preguntas de puntuación a una temperatura efectiva de 1,0 según `temperatures.json`. La torre de visión permanece sin cambios respecto al modelo base.
+El modelo parte de gemma-4-31B-it, un transformer denso de unos 31B parámetros, y se obtiene mediante un fine-tune LoRA (rango 32, alpha 64) aplicado únicamente al modelo de lenguaje, durante una época, con los adaptadores fusionados en los pesos bf16. La torre de visión del modelo base se conserva sin cambios y el tokenizador es el de Gemma 4 (no el de los modelos KnowLine basados en Qwen). El entrenamiento se realizó solo con texto; no se detalla en la información disponible el volumen de tokens ni la composición del dataset, ni si hubo RLHF o DPO.
 
-La innovación de Gen1.5 es exclusivamente de inferencia: `knowline_server.py` lee dos veces las peticiones cortas (comportamiento heredado de Gen1, activado por defecto) y `serve_knowline.sh` añade `--header-when-long 32768`, de modo que las peticiones de solo texto más largas se leen una vez con una cabecera que enumera las preguntas antes del estado. Con `--no-read-twice` toda petición se lee una sola vez sin cabecera. No se entrenó nada nuevo para esta versión; el autor no detalla la composición del dataset de entrenamiento original en la información disponible.
+La innovación de Gen1.5 no está en los pesos, sino en el servicio: las peticiones de texto cortas (hasta 3.000 tokens en una sola lectura) se procesan con doble lectura, como en Gen1; las más largas, hasta 32.768 tokens, se procesan con una única lectura precedida de una cabecera que lista las preguntas del usuario antes del estado. Además, la temperatura de lectura T = 1,44 está plegada en el peso de la normalización final y en el soft-cap de logits, de modo que las probabilidades de salida quedan calibradas sin post-procesado; el front end lee las preguntas de puntuación a temperatura efectiva 1,0 según `temperatures.json`. El despliegue de referencia usa SGLang 0.5.21 en bf16 con `serve_knowline.sh` y `knowline_server.py`.
 
 ## Capacidades
 
-- Respuesta a preguntas tipadas: sí/no, elección entre k opciones y puntuación sobre rúbrica, con salida de distribución de probabilidad por opción.
-- Un único forward pass por pregunta, sin generación de texto, lo que reduce latencia frente a pipelines generativos.
-- Procesamiento de estados en formato texto o conversación (chat) de hasta 32.768 tokens en modo cabecera.
-- Hasta 64 preguntas por petición.
-- Soporte de tool calling y agentes: la suite Decision Index incluye las categorías "tools and agents" y "retrieval and routing".
-- Capacidades multilingües limitadas a inglés y chino.
-- Procesamiento de imágenes heredado del modelo base (peticiones con imagen se sirven exactamente como en Gen1).
-- Respuesta a preguntas de caja (bounding box) en modo zero-shot, sin entrenamiento específico de cajas.
-- Probabilidades calibradas: ECE de aproximadamente 0,013-0,022 y Brier score de aproximadamente 0,23-0,26 en la suite pública según el método del board.
-- Compatibilidad de interfaz con clientes Jev existentes (solo cambia la URL base) y con otros modelos KnowLine (solo cambia el nombre del modelo).
+- Clasificación y decisión con probabilidades: responde hasta 64 preguntas tipadas por petición (sí/no, elección entre k opciones, puntuación por rúbrica) devolviendo una distribución sobre las opciones.
+- Inferencia sin generación de texto: un forward pass por pregunta, lo que reduce latencia frente a esquemas generativos.
+- Enrutamiento e intención: puntuación destacada en la dimensión de intención y routing de SO-Arena (78,2).
+- Recuperación y reranking: evaluación superior a GPT-6 Sol en retrieval y reranking según SO-Arena (64,0 frente a 62,5).
+- Seguridad: puntuación de 77,2 en la dimensión de safety de SO-Arena, frente a 75,3 de GPT-6 Sol.
+- Procesamiento de imágenes: mantiene la torre de visión del modelo base y puntúa 69,3 en la suite pública de visión (auto-evaluación).
+- Multilingüe: inglés, chino simplificado y chino tradicional.
+- Compatibilidad de interfaz: los clientes de Jev solo necesitan cambiar la URL base; los usuarios de otros modelos KnowLine solo cambian el nombre del modelo.
+- Tool calling y agentes: no se documenta soporte explícito de function calling generativo; el modelo está orientado a decisiones de enrutamiento y selección de herramientas dentro de pipelines de agentes.
 
 ## Casos de uso
 
-- Enrutamiento de consultas en sistemas RAG: el modelo evalúa preguntas de recuperación y enrutamiento (categoría con puntuación 73,2 en la suite pública) para decidir qué índice o herramienta debe atender cada consulta, con una sola pasada por pregunta.
-- Clasificación de tickets de soporte: con preguntas de elección entre k opciones se puede asignar categoría, prioridad y equipo responsable en un único forward pass, sin generar texto ni parsear salidas.
-- Evaluación automática de respuestas (LLM-as-a-judge estructurado): las preguntas de puntuación sobre rúbrica permiten obtener una distribución calibrada en lugar de una nota discreta, útil para comparar candidatos en pipelines de evaluación.
-- Detección de instrucciones inyectadas: el modelo responde preguntas de decisión sobre el estado recibido, y el autor reporta métricas de robustez frente a instrucciones plantadas (0,7% de respuestas alteradas en el conjunto estándar y 5,3% con plantillas de inyección no vistas en entrenamiento).
-- Agentes multi-paso con tool calling: las preguntas tipadas permiten decidir en cada paso si invocar una herramienta, cuál elegir entre k candidatas y si continuar o detener el bucle, con la categoría "tools and agents" en 85,4 en la suite pública.
-- Análisis de documentos e imágenes: al conservar la torre de visión, puede responder preguntas sobre capturas de pantalla o documentos (ScreenSpot centre-hit 81,3) y devolver cajas delimitadoras de un objetivo nombrado (RefCOCO IoU≥0,5 de 77,3).
-- Moderación y filtrado por lotes: la clasificación binaria de contenido con probabilidades calibradas permite fijar umbrales operativos con ECE bajo, adecuado para colas de revisión con presupuesto limitado.
+- Enrutamiento de peticiones en sistemas multiagente: dado un estado conversacional, el modelo decide con una sola pasada qué agente o herramienta debe atender la petición, gracias a su puntuación de 78,2 en intención y routing y a su capacidad de elegir entre k opciones con probabilidad calibrada.
+- Filtrado de seguridad y moderación: clasificación sí/no de contenido con probabilidades calibradas (ECE en torno a 0,013-0,022), adecuada para umbrales configurables en producción.
+- Reranking de resultados de búsqueda: puntuación de pares consulta-documento con una pasada por pregunta, lo que permite integrarlo en pipelines de recuperación con latencia controlada.
+- Evaluación automática de respuestas con rúbrica: el modelo puntúa respuestas generadas por otros modelos según criterios definidos, aprovechando la modalidad de preguntas de puntuación y la calibración de sus probabilidades.
+- Clasificación de tickets de soporte en inglés y chino: asignación de categoría, prioridad o intención mediante preguntas de elección múltiple sobre el texto del ticket, con contexto de hasta 32.768 tokens para hilos largos.
+- Decisión sobre imágenes en flujos de inspección o triaje: al conservar la torre de visión, puede responder preguntas tipadas sobre una imagen y un texto asociado (por ejemplo, verificar si una captura cumple un criterio), aunque su entrenamiento fue solo con texto.
+- Selección de herramientas en asistentes: dado el estado de la conversación, decidir qué función invocar entre un conjunto finito, con la ventaja de que la salida es una distribución de probabilidad y no texto libre que haya que parsear.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | KnowLine-31B-Gen1.5 | KnowLine-35B-A3B-Gen1.5 | KnowLine-26B-A4B-Gen2.5 |
-|---|---|---|---|
-| Decision Index 0.3 (suite pública, self-run) | 70,50 | 70,72 | 68,21 |
-| Decision Index 0.3, categoría lenguaje | 72,8 | no disponible | no disponible |
-| Decision Index 0.3, tools and agents | 85,4 | no disponible | no disponible |
-| Decision Index 0.3, retrieval and routing | 73,2 | no disponible | no disponible |
-| Decision Index 0.3, knowledge and reasoning | 59,4 | no disponible | no disponible |
-| Decision Index 0.3, arts and taste | 60,5 | no disponible | no disponible |
-| Tareas de decisión de dominios no vistos (34 tareas) | 75,0 | 56,2 | 66,4 |
-| Tareas de decisión de dominios no vistos (10 tareas) | 57,7 | 56,6 | 56,6 |
-| Chino, conjuntos internos | 75,9 / 75,9 | no disponible | 73,7 / 71,0 |
-| C-Eval | 82,5 | no disponible | 77,9 |
-| Open-Jev 1.1 test / OOD | 91,3 / 94,8 | no disponible | 92,7 / 92,7 |
-| JevBench / JevBench-hard | 90,5 / 80,2 | no disponible | 90,5 / 81,1 |
-| Inglés, conjunto interno | 70,2 | no disponible | 70,5 |
-| Decision Index 0.3.1 visión (reconstrucción del autor) | 69,9 | 71,2 (Gen1) | 64,7 (Gen2) |
-| Suite pública de visión oficial (self-run) | 69,3 | no disponible | no disponible |
-| ScreenSpot centre-hit | 81,3 | no disponible | no disponible |
-| RefCOCO IoU≥0,5 | 77,3 | no disponible | no disponible |
-| FUNSD | 35,3 | no disponible | no disponible |
-| ECE (suite pública, método del board) | ~0,013-0,022 | no disponible | 0,013-0,018 |
-| Brier score (suite pública, método del board) | ~0,23-0,26 | no disponible | 0,24-0,27 |
-
-El autor indica que la puntuación completa del board proviene de la ejecución privada de los mantenedores; Gen1 figura con 71,86 y Gen1.5, al compartir pesos, obtendrá sus puntuaciones privadas de esa misma ejecución.
+| Benchmark | KnowLine-31B-Gen1.5 | Referencia comparada |
+|---|---|---|
+| SO-Arena (evaluación de terceros sobre pesos Gen1) | 70,2 (primero conjunto de 19 configuraciones System One) | GPT-6 Sol: 62,5 en retrieval/reranking y 75,3 en safety |
+| SO-Arena, intención y routing | 78,2 | no disponible |
+| SO-Arena, retrieval y reranking | 64,0 | GPT-6 Sol: 62,5 |
+| SO-Arena, safety | 77,2 | GPT-6 Sol: 75,3 |
+| SO-Arena, fiabilidad de decisión (R) | 0,81 (top 4 de 18 configuraciones) | no disponible |
+| Decision Index 0.3 (suite pública, auto-evaluación) | 70,50 | Gen1: 70,13; KnowLine-35B-A3B-Gen1.5: 70,72; KnowLine-26B-A4B-Gen2.5: 68,21 |
+| Decision Index 0.3, lenguaje | 72,8 | Gen1: 72,0 |
+| Decision Index 0.3, herramientas y agentes | 85,4 | Gen1: 84,7 |
+| Decision Index 0.3, retrieval y routing | 73,2 | Gen1: 73,0 |
+| Decision Index 0.3, conocimiento y razonamiento | 59,4 | sin cambios respecto a Gen1 |
+| Decision Index 0.3, artes y gusto | 60,5 | sin cambios respecto a Gen1 |
+| C-Eval | 82,5 | KnowLine-26B-A4B-Gen2.5: 77,9 |
+| JevBench / JevBench-hard | 90,5 / 80,2 | KnowLine-26B-A4B-Gen2.5: 90,5 / 81,1 |
+| Suite pública de visión (auto-evaluación) | 69,3 | no disponible |
+| ECE (suite pública, método del board) | 0,013-0,022 | KnowLine-26B-A4B-Gen2.5: 0,013-0,018 |
+| Brier score | 0,23-0,26 | KnowLine-26B-A4B-Gen2.5: 0,24-0,27 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 63 GB de pesos, más overhead de activaciones y caché KV; el autor indica que SGLang reserva por defecto el 85% de la memoria de la GPU.
-- GPU recomendadas: una sola GPU de 80 GB (A100 80GB, H100 80GB) es el mínimo práctico para bf16; configuraciones multi-GPU para mayor throughput.
-- No cabe en GPU de consumo (RTX 4090 de 24 GB) en bf16 sin cuantización; el autor no ha probado FP8 al cargar este modelo, y no se documentan pesos GGUF en la información disponible.
-- Opciones de despliegue: SGLang en bf16 mediante `serve_knowline.sh`, con `knowline_server.py` para el modo de lectura doble y `--header-when-long 32768` para peticiones largas; compatible con endpoints (tag `endpoints_compatible`).
-- Latencia y throughput: no se publican cifras concretas; la arquitectura de un forward pass por pregunta sin generación de texto reduce la latencia frente a pipelines generativos, pero no hay mediciones disponibles en la información proporcionada.
+- VRAM para inferencia en bf16: los pesos ocupan aproximadamente 63 GB; SGLang reserva por defecto el 85 % de la memoria de la GPU.
+- GPU recomendadas: una GPU de 96 GB como la H20, que es el entorno usado por el autor para todas las evaluaciones; también encajan A100 80 GB y H100 80 GB con margen ajustado, o configuraciones multi-GPU.
+- GPU de consumo: no cabe en GPUs de consumo (RTX 4090 con 24 GB, etc.) en bf16; no se documentan cuantizaciones GGUF ni versiones de menor precisión probadas.
+- Opciones de despliegue: SGLang 0.5.21 en bf16 mediante `serve_knowline.sh` y `knowline_server.py`; el autor no probó FP8 en carga para este modelo.
+- Latencia y throughput: no se publican cifras concretas; la arquitectura de decisión realiza un forward pass por pregunta sin generación de texto, y las peticiones cortas se leen dos veces mientras que las largas se leen una vez con cabecera de preguntas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Decision Index 0.3 (público) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Decision Index 0.3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KnowLine-31B-Gen1.5 | 31,27B denso | 32.768 tokens (modo cabecera) | 70,50 | Apache-2.0 | Hugging Face (PelaAI) |
-| KnowLine-35B-A3B-Gen1.5 | 35B totales, 3B activos (MoE) | no disponible | 70,72 | no disponible en la información | Hugging Face (PelaAI) |
-| KnowLine-26B-A4B-Gen2.5 | 26B totales, 4B activos (MoE) | no disponible | 68,21 | no disponible en la información | Hugging Face (PelaAI) |
-| google/gemma-4-31B-it | ~31B denso | no disponible | no disponible | Apache-2.0 | Hugging Face (Google) |
-
-Los tres modelos KnowLine comparten interfaz y metodología de evaluación, por lo que son las alternativas naturales. El modelo base gemma-4-31B-it es generativo y no está especializado en tareas de decisión, por lo que no es directamente comparable en la suite Decision Index.
+| KnowLine-31B-Gen1.5 | 31,27B (denso) | 32.768 tokens (con cabecera) | 70,50 | Apache-2.0 | Hugging Face (PelaAI) |
+| KnowLine-35B-A3B-Gen1.5 | no disponible (MoE, A3B) | no disponible | 70,72 | Apache-2.0 (según familia) | Hugging Face (PelaAI) |
+| KnowLine-26B-A4B-Gen2.5 | no disponible (MoE, A4B) | no disponible | 68,21 | Apache-2.0 (según familia) | Hugging Face (PelaAI) |
+| KnowLine-31B-Gen1 | 31,27B (denso) | no disponible | 70,13 | Apache-2.0 | Hugging Face (PelaAI) |
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documentan sesgos específicos en la información disponible; al derivar de gemma-4-31B-it, puede heredar los del modelo base.
-- Alucinación: al no generar texto libre, el riesgo se traslada a la calibración de las probabilidades; el autor reconoce que en sus propios conjuntos held-out la calibración es más débil que en la suite pública.
-- Robustez frente a inyección de instrucciones: 0,7% de respuestas alteradas con instrucciones plantadas en el estado y 5,3% con plantillas no vistas en entrenamiento, peor que KnowLine-26B-A4B-Gen2.5 (0,1% y 1,7%).
-- Idiomas: solo inglés y chino; no hay soporte declarado de castellano ni de otras lenguas.
-- Contexto: el modo de lectura doble está limitado a 3.000 tokens; el modo cabecera llega a 32.768 tokens, pero solo para peticiones de solo texto.
-- Visión y cajas: el modelo fue entrenado solo con texto; los resultados de visión y bounding box son zero-shot y el rendimiento en documentos es débil (FUNSD 35,3).
-- Licencia Apache-2.0: permite uso comercial, pero el autor declara que el modelo es independiente y no está avalado por Google, TypeSafe ni Jev.
-- Producción: el autor no ha probado FP8 al cargar este modelo; SGLang reserva el 85% de la memoria de la GPU por defecto, lo que condiciona el despliegue en GPUs compartidas.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema de usuarios aún inexistente.
+- No es un modelo generativo: no produce texto libre ni mantiene conversaciones; solo responde preguntas tipadas con distribuciones de probabilidad.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; al derivar de gemma-4-31B-it, puede heredar los sesgos del modelo base.
+- Alucinación: el formato de salida restringido a opciones reduce el riesgo de texto inventado, pero las probabilidades pueden estar mal calibradas fuera de la distribución de entrenamiento; el autor reporta ECE de 0,013-0,022 solo en la suite pública.
+- Idiomas: cobertura limitada a inglés, chino simplificado y chino tradicional; no se garantiza rendimiento en castellano.
+- Visión: la torre de visión es la del modelo base y no fue entrenada por PelaAI; los resultados de imagen son de auto-evaluación (69,3) y no de terceros.
+- Licencia: Apache-2.0 permite uso comercial, pero el modelo base gemma-4-31B-it tiene sus propias condiciones que deben verificarse.
+- Despliegue: requiere hardware de gama alta (≈63 GB de pesos en bf16); no hay cuantizaciones ligeras documentadas ni soporte probado de FP8.
+- Madurez: el modelo tiene 610 descargas y 2 likes en Hugging Face, y las evaluaciones privadas del board las realizan los mantenedores, no el autor.
+- Independencia: el autor declara que KnowLine no está afiliado ni respaldado por TypeSafe, Jev ni Google.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/PelaAI/KnowLine-31B-Gen1.5
-- Versión anterior (Gen1): https://huggingface.co/PelaAI/KnowLine-31B-Gen1
+- Modelo en Hugging Face: https://huggingface.co/PelaAI/KnowLine-31B-Gen1.5
+- Versión anterior Gen1: https://huggingface.co/PelaAI/KnowLine-31B-Gen1
 - Modelo hermano KnowLine-26B-A4B-Gen2.5: https://huggingface.co/PelaAI/KnowLine-26B-A4B-Gen2.5
 - Modelo hermano KnowLine-35B-A3B-Gen1.5: https://huggingface.co/PelaAI/KnowLine-35B-A3B-Gen1.5
 - Modelo hermano KnowLine-4B-Gen5.5: https://huggingface.co/PelaAI/KnowLine-4B-Gen5.5
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Guía de inferencia (referenciada en la model card): INFERENCE.md dentro del repositorio
-- Paper referenciado en los tags: arxiv:2309.06275 (https://arxiv.org/abs/2309.06275)
+- Guía de inferencia: https://huggingface.co/PelaAI/KnowLine-31B-Gen1.5/blob/main/INFERENCE.md
+- README en chino: https://huggingface.co/PelaAI/KnowLine-31B-Gen1.5/blob/main/README.zh.md
+- Benchmark SO-Arena: https://lichenlillc.github.io/SO-Arena
+- Paper SO-Arena: https://arxiv.org/abs/2611.15777
+- Paper adicional citado en los tags: https://arxiv.org/abs/2309.06275

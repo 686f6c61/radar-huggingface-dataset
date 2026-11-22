@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "onocloud/onoai-basalt-2.5-pro",
+  "slug": "onocloud-onoai-basalt-2-5-pro",
+  "author": "onocloud",
+  "url": "https://huggingface.co/onocloud/onoai-basalt-2.5-pro",
+  "created_at": "2026-11-21T22:19:48.000Z",
+  "updated_at": "2026-11-21T22:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422082,
+  "storage_human": "11 MB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

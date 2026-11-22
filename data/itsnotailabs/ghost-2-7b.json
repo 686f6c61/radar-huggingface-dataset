@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 612,
+  "downloads_30d": 596,
   "trending_score": 0,
   "parameters": 153355345,
   "parameters_human": "153.4M",
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.de/index.html",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com/?hl=de",
-      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
-    },
-    {
-      "title": "Google als Startseite festlegen",
-      "url": "https://support.google.com/websearch/answer/463?hl=de",
-      "snippet": "Wenn Sie Google als Ihre Startseite festlegen, gelangen Sie direkt zu Google, sobald Sie Ihren Browser öffnen. Die Vorgehensweise …"
-    },
-    {
-      "title": "Google als Startseite festlegen – so klappt es sofort",
-      "url": "https://www.dirks-computerecke.de/google-als-startseite-festlegen/",
-      "snippet": "Sep 16, 2025 · Erfahre, wie du Google als Startseite in Chrome, Firefox, Edge, Safari und auf dem Smartphone einfach festlegen …"
-    },
-    {
-      "title": "Google als Startseite einrichten - CHIP",
-      "url": "https://www.chip.de/ratgeber/software/google-als-startseite-einrichten_9c15b25e-4281-41f0-a753-61ce2c5fe10d.html",
-      "snippet": "Sep 6, 2025 · Google können Sie ganz einfach als Startseite für Ihren Browser einrichten – egal ob in Chrome, Firefox oder Internet …"
-    }
-  ]
+  "sources": []
 }

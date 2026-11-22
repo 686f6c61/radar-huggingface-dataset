@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "dronefreak/pklot-yolo26n",
+  "slug": "dronefreak-pklot-yolo26n",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/pklot-yolo26n",
+  "created_at": "2026-09-23T17:16:52.000Z",
+  "updated_at": "2026-11-21T22:54:38.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "safetensors",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "parking-lot-occupancy",
+    "smart-parking",
+    "infrastructure",
+    "dense-detection",
+    "surveillance",
+    "dataset:dronefreak/PKLot",
+    "arxiv:2606.03748",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 2523572,
+  "parameters_human": "2.5M",
+  "storage_bytes": 13941430,
+  "storage_human": "14 MB",
+  "context_length": null,
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "PKLot",
+      "metric": "mAP@50 (test split)",
+      "value": 99.42
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "PKLot",
+      "metric": "mAP@50-95 (test split)",
+      "value": 94.6
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "PKLot",
+      "metric": "Precision (test split)",
+      "value": 99.66
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "PKLot",
+      "metric": "Recall (test split)",
+      "value": 99.37
+    }
+  ],
+  "sources": []
+}

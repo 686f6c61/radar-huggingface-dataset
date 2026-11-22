@@ -2,100 +2,90 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-Preview-abliterated-GGUF es una cuantizacion en formato GGUF de la version "abliterated" (direccion de rechazo ortogonalizada) del modelo SenseNova-Loop-9B-Preview, publicado por el usuario luvette en Hugging Face. El modelo original lo desarrolla SenseNova bajo licencia Apache 2.0, y esta variante parte de la cuantizacion Q6_K realizada por AtomicChat. El proceso de abliteration se aplico directamente sobre los pesos Q6_K, no sobre el modelo en precision completa.
+SenseNova-Loop-9B-Preview-abliterated-GGUF es una cuantización Q6_K del modelo SenseNova-Loop-9B-Preview de SenseNova, sometida a un proceso de "abliteration" en cuatro pasadas directamente sobre los pesos GGUF. El objetivo es eliminar la dirección de rechazo del modelo base para obtener una variante sin censura que mantiene la coherencia de razonamiento y una terminación limpia de los bloques de pensamiento. El autor de esta variante es el usuario luvette, que parte de la cuantización Q6_K publicada por AtomicChat.
 
-El modelo emplea una arquitectura de transformer "looped" (con bucles) sobre un backbone de la clase Qwen3.5: almacena 32 bloques y ejecuta las capas 4 a 27 dos veces, lo que resulta en 56 pasadas de capa efectivas. Incorpora ademas hyper-conexiones de dos flujos con restriccion de variedad manifold (mHC) y enrutamiento Sinkhorn. Cuenta con 8.956.949.376 parametros totales (aproximadamente 9B) y un tamano de repositorio de 7,4 GB en su unica cuantizacion disponible, Q6_K.
+El modelo base emplea una arquitectura de transformer "looped" de clase Qwen3.5, en la que las capas 4 a 27 se ejecutan dos veces, dando lugar a 56 cálculos de capa a partir de 32 bloques almacenados. Incorpora además conexiones hiperbólicas de dos flujos restringidas a una variedad (mHC) con enrutamiento Sinkhorn. Con 8.956.949.376 parámetros totales, el modelo se posiciona en la franja de 9B.
 
-La relevancia de esta ficha radica en que combina tres elementos poco habituales: una arquitectura con reutilizacion de capas (looped transformer), un proceso de abliteration que elimina la direccion de rechazo del modelo, y una cuantizacion Q6_K que permite ejecutarlo en GPUs de consumo. Es un modelo de generacion de texto conversacional, sin capacidades multimodales declaradas, orientado a usuarios que necesitan un modelo sin filtros de rechazo y con requisitos de hardware moderados.
+La relevancia de esta ficha reside en que documenta una variante no oficial, derivada de un modelo preliminar, cuyo interés principal es la modificación de comportamiento (eliminación de rechazos) y el soporte de una arquitectura poco común en llama.cpp. Se distribuye bajo licencia Apache 2.0 y solo en formato GGUF, lo que condiciona su despliegue a implementaciones compatibles con el backend `sensenova_loop`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer looped (backbone clase Qwen3.5), 32 bloques almacenados con capas 4-27 ejecutadas dos veces (56 pasadas), hyper-conexiones de dos flujos mHC con enrutamiento Sinkhorn |
-| Parametros totales | 8.956.949.376 (aproximadamente 9B) |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible de forma oficial; el autor demuestra ejecucion con `-c 16384` (16K tokens) |
-| Tipos de cuantizacion | Q6_K (unica cuantizacion publicada en este repo) |
+| Arquitectura | Transformer "looped" de clase Qwen3.5 con mHC (two-stream manifold-constrained hyper-connections) y enrutamiento Sinkhorn; capas 4-27 ejecutadas dos veces (56 pasadas de capa desde 32 bloques) |
+| Parametros totales | 8.956.949.376 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible en la model card; el ejemplo de ejecucion usa `-c 16384` |
+| Tipos de cuantizacion | Q6_K (unico fichero publicado) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (`SenseNova-Loop-9B-Preview-Q6_K-abliterated.gguf`, 7,37 GB) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con reutilizacion de capas: el modelo almacena 32 bloques pero ejecuta las capas 4 a 27 dos veces, alcanzando 56 pasadas de capa efectivas. Sobre este backbone se anaden hyper-conexiones de dos flujos con restriccion de variedad manifold (mHC) y enrutamiento Sinkhorn, con pesos de router en F32 que se preservan intactos en la cuantizacion. El modelo base pertenece a la familia Qwen3.5, segun indica el autor, y requiere un build de `llama.cpp` con soporte para `sensenova_loop` y `qwen35.num_loops`.
+La arquitectura del modelo base es un transformer con reutilizacion de capas: los bloques 4 a 27 se ejecutan dos veces, lo que produce 56 pasadas de calculo a partir de 32 bloques fisicos almacenados. Sobre esta columna vertebral se anaden conexiones hiperbolicas de dos flujos con enrutamiento Sinkhorn (mHC), cuyos pesos se conservan en F32 en la cuantizacion. El modelo incorpora un modo de razonamiento explicito delimitado por las etiquetas `<think>` y `</think>`, segun se deduce de la verificacion incluida en la model card.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si el modelo original utilizo RLHF, DPO u otras tecnicas de alineacion. La variante abliterated se genero extrayendo, por capa, vectores residuales de diferencia de medias (`l_out`) sobre 32 prompts daninos frente a 32 prompts inofensivos, formateados con la plantilla de chat nativa del modelo. A continuacion se desquantizaron los pesos `attn_output.weight`, `ssm_out.weight` y `ffn_down.weight` de los bloques almacenados 6-31 (52 tensores en total), se proyecto fuera la direccion de rechazo correspondiente a cada capa (con `alpha = 1.2`, promediando las direcciones de la primera y segunda visita para los bloques en bucle 6-27) y se recuantizo directamente a Q6_K mediante `ggml_quantize_chunk`. Se conservan sin modificar los metadatos GGUF, el tokenizer, la plantilla de chat y los pesos del router mHC Sinkhorn en F32.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original. La modificacion introducida por esta variante consiste en una ortogonalizacion iterativa del subespacio de rechazo en cuatro pasadas sobre los pesos Q6_K, actuando sobre los tensores `attn_output.weight`, `ssm_out.weight` y `ffn_down.weight`. En cada pasada se reextraen los vectores residuales de diferencia de medias por capa (`l_out`) a lo largo de las 56 pasadas de capa expandidas. Las pasadas cubren los bloques 6-31 (alpha 1,20, 52 tensores), 4-31 (alpha 1,25, 56 tensores), 2-31 (alpha 1,30, 60 tensores) y 2-31 (alpha 1,25, 60 tensores). Se preservan intactos los metadatos GGUF, el tokenizer, la plantilla de chat, el `output.weight` (LM head) y los pesos del router Sinkhorn mHC en F32.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con soporte de plantilla de chat nativa.
-- Razonamiento matematico: el autor verifica salidas coherentes en tareas de matematicas y razonamiento sin degradacion aparente tras la abliteration.
-- Generacion de codigo en Python: verificado por el autor en pruebas de programacion.
-- Respuestas sin rechazo (uncensored): el proceso de abliteration elimina la direccion de rechazo, de modo que el modelo no declina peticiones que el modelo original rechazaria.
-- Capacidad de seguir instrucciones conversacionales segun la plantilla de chat del modelo base.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional y razonamiento paso a paso en modo "thinking" delimitado por `<think>` y `</think>`.
+- Resolucion de problemas matematicos verbales, verificado con terminacion limpia del bloque de pensamiento.
+- Generacion de codigo Python, verificado igualmente con terminacion limpia.
+- Respuesta directa a peticiones sensibles sin rechazos, segun la verificacion del autor.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; el modelo base es de la familia Qwen3.5, pero no se confirma el conjunto de idiomas.
-- Capacidades especiales (vision, audio, modo thinking): no disponible en la informacion proporcionada; se describe como text-only.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Generacion de codigo en local: el modelo produce codigo Python coherente y puede ejecutarse en una RTX 3070 con 8 GB de VRAM, lo que permite integrarlo en flujos de desarrollo sin depender de APIs externas.
-- Razonamiento matematico asistido: util para resolver problemas paso a paso en entornos educativos o de analisis, con la ventaja de que el modelo no rechaza consultas por contenido.
-- Red teaming y formacion en seguridad: el autor verifica su uso en prompts de red-team training, security y lockpicking; al estar abliterated, es adecuado para ejercicios de evaluacion de robustez sin que el modelo se niegue a responder.
-- Simulacion de ingenieria social para formacion: el modelo puede generar escenarios de phishing o manipulacion con fines de concienciacion, ya que no aplica rechazos.
-- Atencion al cliente automatizada en local: el modelo soporta conversaciones multi-turno con plantilla de chat y puede desplegarse con `llama-server` en hardware de consumo, con contexto de 16K tokens.
-- Prototipado de asistentes conversacionales sin censura: para investigadores que necesitan estudiar el comportamiento de modelos sin alineacion de rechazo, en un entorno controlado y con licencia Apache 2.0.
-- Despliegue en edge o estaciones de trabajo con GPU modesta: gracias a la cuantizacion Q6_K y a la posibilidad de mover la tabla de embeddings a CPU (`-ot 'token_embd.weight=CPU'`), cabe en 8 GB de VRAM con CUDA Graphs activo.
+- Razonamiento matematico asistido: el modelo puede resolver problemas verbales mostrando el desarrollo paso a paso dentro del bloque de pensamiento, util en entornos educativos o de analisis donde se requiere trazabilidad del razonamiento.
+- Generacion de codigo Python en local: con 7,37 GB en Q6_K y soporte de llama.cpp, permite autocompletar y generar funciones en estaciones de trabajo sin GPU de gama alta, manteniendo calidad de cuantizacion alta.
+- Investigacion sobre alineacion y rechazo: al ser una variante abliterated, sirve para estudiar como se distribuye la direccion de rechazo en un transformer con reutilizacion de capas y conexiones mHC.
+- Despliegue en GPU de 8 GB: con la tecnica de mantener la tabla de embeddings en CPU (`-ot 'token_embd.weight=CPU'`), cabe en una RTX 3070 con cache KV q8_0 de 16K y CUDA Graphs activos, util para prototipado local.
+- Evaluacion de arquitecturas "looped": permite comparar el comportamiento de un modelo con capas reutilizadas frente a transformers convencionales de tamano similar en tareas de razonamiento.
+- Experimentacion con prompts sin restricciones: en entornos de investigacion controlados, permite explorar respuestas del modelo a peticiones que el modelo base rechazaria, con fines de auditoria de seguridad.
+- Servicio de chat local con contexto medio: mediante `llama-server` con 16K de contexto, se puede montar un endpoint compatible con la API de OpenAI en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor unicamente reporta metricas de inferencia en una RTX 3070 con `llama-server`:
+No se han publicado resultados de benchmarks en la informacion disponible.
 
-| Metrica | Valor |
-|---|---|
-| Generacion (RTX 3070, Q6_K, 16K contexto, q8_0 KV) | 24,2-24,4 t/s |
-| Generacion con embeddings en CPU (RTX 3070, 8 GB) | aproximadamente 24,4 t/s |
-| Procesamiento de prompt (RTX 3070) | aproximadamente 632 t/s |
-| VRAM ocupada (con embeddings en CPU) | aproximadamente 7,17 GB / 8 GB |
+Los unicos datos de rendimiento medidos son los del autor en una RTX 3070 con `llama-server`: aproximadamente 24,4 tokens por segundo en generacion y 632 tokens por segundo en procesamiento de prompt, con 16K de cache KV q8_0 y CUDA Graphs activos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 7,17 GB con la cuantizacion Q6_K y contexto de 16K con KV cache en q8_0, moviendo la tabla de embeddings (aproximadamente 835 MiB) a RAM del sistema.
-- GPU recomendadas: RTX 3070 (verificada por el autor), RTX 3080, RTX 4070, RTX 4080, RTX 4090; en el segmento profesional, A100 o H100 para mayor throughput.
-- Cabe en GPU de consumo: si, en GPUs con 8 GB o mas de VRAM aplicando el truco de mover `token_embd.weight` a CPU; sin ese truco, el modelo completo Q6_K (7,37 GB) mas el KV cache requiere algo mas de 8 GB.
-- Opciones de despliegue: `llama.cpp` / `llama-server` con soporte para `sensenova_loop` y `qwen35.num_loops`; no se confirma compatibilidad con vLLM, TGI u Ollama en la informacion disponible.
-- Latencia y throughput: aproximadamente 24,4 t/s de generacion y 632 t/s de procesamiento de prompt en RTX 3070 con CUDA Graphs activo, segun el autor.
+- VRAM estimada: aproximadamente 7,17 GB para el fichero Q6_K completo en VRAM, mas cache KV; el autor indica que con `-ot 'token_embd.weight=CPU'` se mantiene la tabla de embeddings (~835 MiB) en RAM del sistema y todo lo demas cabe en 8 GB.
+- GPU recomendadas: RTX 3070 (verificada por el autor), RTX 4060 Ti 16 GB, RTX 4080, RTX 4090, A100, H100. Cualquier GPU con 8 GB o mas de VRAM puede ejecutar el modelo con los ajustes indicados.
+- Cabe en GPU de consumo: si, en tarjetas de 8 GB en adelante con la configuracion descrita.
+- Opciones de despliegue: exclusivamente `llama.cpp` y `llama-server` con soporte de `sensenova_loop` y `qwen35.num_loops`. No es compatible con vLLM, TGI ni Ollama en el momento de publicacion, salvo que incorporen dicho soporte.
+- Latencia y throughput: ~24,4 t/s de generacion y ~632 t/s de procesamiento de prompt en RTX 3070 con la configuracion indicada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks del modelo ni de modelos comparables directos en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales conocidas:
-
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B-Preview-abliterated-GGUF | 8,96B | no disponible (demo con 16K) | Q6_K | Apache 2.0 | Looped transformer, abliterated, solo GGUF |
-| SenseNova-Loop-9B-Preview (original) | 8,96B | no disponible | no disponible | Apache 2.0 | Modelo base con alineacion de rechazo intacta |
-| AtomicChat/SenseNova-Loop-9B-Preview-GGUF | 8,96B | no disponible | Q6_K (entre otras, presumiblemente) | Apache 2.0 | Cuantizacion de referencia sin abliteration |
+| SenseNova-Loop-9B-Preview-abliterated-GGUF (este) | 8,96B | no disponible (ejemplo con 16K) | GGUF Q6_K | Apache 2.0 | Variante abliterated, requiere llama.cpp con soporte `sensenova_loop` |
+| SenseNova-Loop-9B-Preview (original) | 8,96B | no disponible | safetensors y GGUF | Apache 2.0 | Modelo base sin modificar, con rechazos activos |
+| AtomicChat/SenseNova-Loop-9B-Preview-GGUF | 8,96B | no disponible | GGUF (varias cuantizaciones) | Apache 2.0 | Cuantizacion del original sin abliteration |
 
-No se identifican en la informacion disponible otros modelos de 9B con arquitectura looped y abliteration para una comparacion cuantitativa fiable.
+No se dispone de datos de benchmarks para establecer comparaciones de rendimiento con otras alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- El proceso de abliteration elimina la direccion de rechazo, por lo que el modelo puede generar contenido danino, ilegal o eticamente problematico sin filtros; no es apto para despliegues publicos sin moderacion externa.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; al ser un modelo de 9B y preview, la tasa de alucinacion puede ser significativa en dominios especializados.
-- La abliteration puede degradar capacidades de razonamiento o seguridad en tareas sensibles; el autor solo verifica ausencia de degradacion en matematicas y codigo, no en otros dominios.
-- Idiomas soportados no confirmados: no hay informacion oficial sobre el rendimiento multilingue de esta variante.
-- Contexto maximo no documentado oficialmente; el autor demuestra 16K tokens, pero no se confirma cual es el limite nativo del modelo base.
-- Requiere un build especifico de `llama.cpp` con soporte `sensenova_loop` y `qwen35.num_loops`; no funciona en versiones estandar sin ese parche.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo abliterated en produccion.
-- Modelo marcado como "Preview": puede tratarse de una version no final con posibles cambios en el modelo base.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- Modelo "preview": se trata de una version preliminar del modelo base, sin garantias de estabilidad ni de calidad final.
+- La abliteration elimina la direccion de rechazo, lo que reduce las salvaguardas del modelo y aumenta el riesgo de generar contenido danino, sesgado o inapropiado. No es apto para produccion orientada al publico general sin filtros adicionales.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; el modo de razonamiento explicito no garantiza correccion.
+- Idiomas soportados no documentados; se desconoce el comportamiento en castellano y en idiomas distintos del ingles.
+- Longitud de contexto no documentada en la model card; el ejemplo de ejecucion usa 16K, pero no se confirma el maximo entrenado.
+- Requiere una build especifica de llama.cpp con soporte `sensenova_loop` y `qwen35.num_loops`; no funciona en herramientas estandar sin dicha implementacion.
+- Solo se publica un fichero Q6_K; no hay cuantizaciones menores (Q4_K_M, Q5_K_M) que faciliten el despliegue en GPUs de menos de 8 GB.
+- La licencia Apache 2.0 se hereda del modelo base, pero la modificacion abliterated no ha sido auditada por el autor original; el uso comercial queda bajo responsabilidad del desplegador.
+- El proceso de abliteration se aplico sobre pesos cuantizados, lo que puede introducir degradaciones adicionales respecto a una abliteration sobre pesos completos.
 
 ## Enlaces
 
 - Hugging Face (esta variante): https://huggingface.co/luvette/SenseNova-Loop-9B-Preview-abliterated-GGUF
-- Modelo original: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
+- Modelo base original: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
 - Cuantizacion de origen: https://huggingface.co/AtomicChat/SenseNova-Loop-9B-Preview-GGUF
-- Repositorio llama.cpp (requerido para `sensenova_loop`): https://github.com/ggml-org/llama.cpp
-- Paper, blog o demo oficial: no disponible en la informacion proporcionada.

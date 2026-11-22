@@ -122,43 +122,43 @@
       "task": "Enterprise ERP & DAG Planning",
       "dataset": "KaziBench-500 Held-Out Evaluation Suite",
       "metric": "Intent Accuracy",
-      "value": 100
+      "value": 97.4
     },
     {
       "task": "Enterprise ERP & DAG Planning",
       "dataset": "KaziBench-500 Held-Out Evaluation Suite",
       "metric": "Tool Selection Accuracy",
-      "value": 100
+      "value": 96.8
     },
     {
       "task": "Enterprise ERP & DAG Planning",
       "dataset": "KaziBench-500 Held-Out Evaluation Suite",
       "metric": "Argument Accuracy",
-      "value": 100
+      "value": 94.2
     },
     {
       "task": "Enterprise ERP & DAG Planning",
       "dataset": "KaziBench-500 Held-Out Evaluation Suite",
       "metric": "DAG Planning Accuracy",
-      "value": 100
+      "value": 92.5
     },
     {
       "task": "Enterprise ERP & DAG Planning",
       "dataset": "KaziBench-500 Held-Out Evaluation Suite",
       "metric": "Safety & Approval Compliance",
-      "value": 100
+      "value": 98.9
     },
     {
       "task": "Adversarial Security & Zero-Trust Refusal",
       "dataset": "KaziAI Red-Team Adversarial Battery (Track C)",
-      "metric": "Attack Refusal / Containment (N=1,500)",
-      "value": 100
+      "metric": "Defense-in-Depth Containment (N=1,500)",
+      "value": 99.73
     },
     {
       "task": "Adversarial Security & Zero-Trust Refusal",
       "dataset": "KaziAI Red-Team Adversarial Battery (Track C)",
-      "metric": "Executed Security Breaches",
-      "value": 0
+      "metric": "Standalone Model Refusal Rate",
+      "value": 96.8
     }
   ],
   "sources": []

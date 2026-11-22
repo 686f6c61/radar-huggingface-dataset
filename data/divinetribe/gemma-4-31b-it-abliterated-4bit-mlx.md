@@ -2,100 +2,91 @@
 
 ## Resumen
 
-`divinetribe/gemma-4-31b-it-abliterated-4bit-mlx` es una cuantizacion en 4 bits del modelo `null-space/gemma-4-31b-it-abliterated`, publicada por el desarrollador independiente divinetribe (Matt Macosko) dentro del ecosistema de su proyecto `claude-code-local`. Se trata de un derivado de Gemma 4 de 31B de parametros en su variante instruction-tuned, al que se le ha aplicado una ablacion de la direccion de rechazo (abliteration) para eliminar los comportamientos de negativa del modelo original, y que despues se ha convertido a formato MLX para inferencia nativa en Apple Silicon.
+`divinetribe/gemma-4-31b-it-abliterated-4bit-mlx` es una cuantización de 4 bits en formato MLX del modelo `null-space/gemma-4-31b-it-abliterated`, a su vez una versión "abliterada" (con la dirección de rechazo proyectada fuera del espacio de activaciones, siguiendo el método de Arditi et al. 2024) de Gemma 4 31B en su variante instruct. El resultado es un modelo de lenguaje de ~30.700 millones de parámetros, sin censura conductual, empaquetado para inferencia local en Apple Silicon mediante la librería `mlx-lm`. Lo publica el desarrollador independiente Matt Macosko (usuario `divinetribe`), autor del stack `claude-code-local`.
 
-El modelo resuelve un problema muy concreto: ejecutar un LLM de 31B sin censura y de forma totalmente local en un Mac, sin API, sin clave y sin conexion a la nube. Con 30.697.345.280 parametros y un peso de repositorio de 17,3 GB, cabe en equipos con 32 GB de memoria unificada y se mueve con holgura en configuraciones de 64 GB o mas. La cuantizacion es afina de 4 bits con grupo de tamano 64, y el autor reporta unos 15 tokens por segundo en un M4 Max con `mlx-lm` 0.21 o superior.
+La relevancia práctica del modelo es doble. Por un lado, permite ejecutar un modelo de 31B en un MacBook con 32 GB de memoria unificada, algo imposible con los pesos BF16 originales (~62 GB); por otro, elimina los rechazos del modelo instruct de Google, lo que lo hace útil para entornos de investigación, red teaming y flujos de trabajo donde el modelo actúa como agente autónomo sin fricciones de moderación. La cuantización es afín de 4 bits con grupo de tamaño 64 y ocupa unos 17,3 GB en disco.
 
-Su relevancia actual esta en la combinacion de tres factores poco frecuentes a la vez: tamano de 31B (capacidad de razonamiento notablemente superior a los 7B-12B habituales en local), eliminacion de rechazos para flujos de trabajo que requieren contenido sin filtros, y un formato optimizado para el hardware de Apple. La licencia declarada es Apache 2.0, aunque el enlace de licencia apunta a la licencia propia de Gemma 4 de Google, lo que introduce una ambiguedad relevante para uso comercial que se detalla mas abajo.
+El modelo conserva la etiqueta `multimodal` de su base (Gemma 4 es una familia multimodal), aunque la model card no documenta explícitamente el pipeline de visión ni se han publicado evaluaciones que lo confirmen en esta versión cuantizada. La licencia declarada es Apache 2.0, aunque la model card enlaza a la licencia propia de Gemma 4 de Google, lo que introduce una ambigüedad legal que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (familia Gemma 4), pesos cuantizados en MLX |
-| Parametros totales | 30.697.345.280 (aproximadamente 31B) |
+| Arquitectura | Transformer (familia Gemma 4); detalles de atención y capas no disponibles |
+| Parametros totales | 30.697.345.280 (~30,7 B) |
 | Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits afina con group size 64 (MLX); el modelo base esta en BF16 |
-| Idiomas soportados | ingles (declarado en la model card) |
-| Licencia | Apache 2.0 declarada; enlace de licencia apunta a Gemma 4 License de Google |
-| Formato de pesos | safetensors en formato MLX (`mlx`, `mlx-4bit`) |
-| Tamano del repositorio | 17,3 GB |
-| Libreria de inferencia | `mlx-lm` (0.21+) |
+| Tipos de cuantizacion | 4-bit affine, group size 64 (MLX) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 (con enlace a la licencia de Gemma 4 de Google) |
+| Formato de pesos | MLX safetensors |
+| Tamano en disco | ~17,3 GB (repo); ~16 GB segun la model card |
+| Modelo base | null-space/gemma-4-31b-it-abliterated (BF16, ~62 GB) |
+| Libreria | mlx-lm (0.21+) |
 | Hardware objetivo | Apple Silicon (memoria unificada) |
-| Modelo base | `null-space/gemma-4-31b-it-abliterated` (BF16, aproximadamente 62 GB) |
-| Pipeline | text-generation |
+| Throughput medido | ~15 tok/s en M4 Max |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Gemma 4 en su variante de 31B instruction-tuned. La model card etiqueta el modelo como multimodal, lo que sugiere que la familia base incorpora capacidades de vision ademas de texto, aunque la ficha no aporta detalles sobre la composicion exacta de la torre de vision ni sobre el tokenizador multimodal. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base original empleo RLHF, DPO u otras tecnicas de alineacion; esos datos corresponden a Google y no se reproducen en la informacion proporcionada.
+La arquitectura subyacente es la de Gemma 4 31B en variante instruct, un transformer denso de ~30,7 B de parámetros. La model card no detalla el número de capas, la configuración de atención (ventanas locales/globales, GQA, etc.) ni la longitud de contexto nativa, por lo que esos datos deben consultarse en la documentación oficial de Gemma 4. El modelo base fue sometido a *abliteration*: se calcula la dirección media de rechazo en el espacio de activaciones y se proyecta fuera de las matrices de pesos, de modo que el modelo pierde el comportamiento de negativa sin reentrenamiento supervisado ni RLHF adicional.
 
-La innovacion tecnica principal de este derivado es doble. Por un lado, la **abliteration**: siguiendo el metodo de Arditi et al. (2024), se identifica la direccion en el espacio de activaciones que media en el comportamiento de rechazo y se proyecta fuera de los pesos, de modo que el modelo deja de negarse a responder a ciertas peticiones. Por otro, la **cuantizacion MLX de 4 bits afina con grupo de 64**, que reduce el peso de aproximadamente 62 GB en BF16 a unos 17 GB, permitiendo que un modelo de 31B quepa en memoria unificada de 32 GB. El autor indica que el modelo se probo con `mlx-lm` 0.21 o superior y que alcanza unos 15 tokens por segundo en un M4 Max.
+La contribución de esta ficha concreta es exclusivamente la cuantización: pesos convertidos a 4 bits afines con grupo de 64 mediante `mlx-lm`, empaquetados en safetensors MLX. No hay información sobre el dataset de entrenamiento original de Gemma 4, el número de tokens, la composición de datos ni las fases de alineación (RLHF/DPO), más allá de lo que publique Google en su documentación. Tampoco se documenta ninguna innovación de inferencia (decodificación especulativa, atención lineal) en esta versión.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles.
-- Razonamiento y respuesta a instrucciones (variante instruction-tuned del modelo base).
-- Capacidades multimodales heredadas de Gemma 4, segun la etiqueta `multimodal` de la model card (no se detalla el alcance exacto en esta cuantizacion).
-- Generacion de codigo, segun el uso previsto dentro del stack `claude-code-local` para tareas de agente de programacion.
-- Comportamiento sin rechazos (uncensored) gracias a la ablacion de la direccion de rechazo.
-- Inferencia totalmente local en Apple Silicon, sin API ni conexion a la nube.
-- No se declara soporte explicito de tool calling, function calling ni modo thinking en la informacion disponible.
+- Generación de texto conversacional en inglés, con modo instruct.
+- Razonamiento y resolución de tareas de código y matemáticas (capacidad heredada del modelo base; sin métricas publicadas en esta versión).
+- Capacidad multimodal potencial (etiqueta `multimodal` heredada de Gemma 4), aunque no se documenta el pipeline de visión en esta cuantización.
+- Sin comportamiento de rechazo: la abliteración elimina las negativas del modelo instruct, útil para investigación de seguridad y red teaming.
+- Soporte de tool calling y function calling: no documentado explícitamente en la model card; debe validarse empíricamente.
+- Soporte de agentes multi-paso: el modelo se integra en el stack `claude-code-local` como uno de los "fighters" del leaderboard Agent-12, lo que sugiere uso agéntico, aunque sin garantías formales.
+- Idiomas: solo inglés declarado.
 
 ## Casos de uso
 
-- **Asistente de programacion local en Mac**: el modelo se integra en el stack `claude-code-local`, que expone una API compatible con Anthropic sobre MLX, permitiendo usar un agente de codigo tipo Claude Code sin enviar codigo a la nube. Los 31B de parametros ofrecen capacidad de razonamiento sobre repositorios grandes, y los 17 GB de peso lo hacen viable en un MacBook de 32 GB.
-- **Flujos con requisitos de confidencialidad o air-gapped**: el autor mantiene una linea especifica (AirGap AI) para entornos legales, sanitarios y con NDA. Al ejecutarse sin red y sin clave de API, el modelo es adecuado para procesar documentos sensibles en equipos aislados.
-- **Generacion de contenido sin filtros editoriales**: la abliteracion elimina las negativas del modelo base, lo que resulta util en tareas creativas, de ficcion o de analisis de contenido sensible donde los rechazos del modelo original interrumpen el flujo de trabajo.
-- **Prototipado rapido de agentes en local**: con `mlx-lm` y el servidor MLX del proyecto, se puede levantar un endpoint compatible con la API de Anthropic en minutos y probar cadenas de agentes multi-paso sobre hardware de sobremesa de Apple.
-- **Investigacion sobre alineacion y seguridad**: al ser un modelo abliterado publico con una metodologia documentada (proyeccion de la direccion de rechazo), sirve como objeto de estudio para comparar comportamientos de rechazo frente al modelo original y medir el impacto de la ablacion en capacidades y sesgos.
-- **Procesamiento por lotes en local para desarrolladores individuales**: tareas de resumen, reescritura o clasificacion de textos en ingles que se ejecutan de noche en un Mac Studio o MacBook Pro, sin coste por token y con los datos sin salir del equipo.
+- **Inferencia local en MacBook con 32 GB**: el modelo cabe en memoria unificada con margen (~17 GB de pesos), permitiendo ejecutar un 31B sin GPU dedicada ni conexión a la nube. Adecuado para desarrolladores que quieren privacidad total.
+- **Agente de código en local**: integrado en `claude-code-local` mediante un servidor MLX con API compatible con Anthropic, permite usar Claude Code con un modelo local sin claves de API. La abliteración evita que el agente se bloquee ante peticiones legítimas de refactorización o análisis de código sensible.
+- **Investigación en seguridad de IA**: la versión abliterada es una herramienta estándar para estudiar direcciones de rechazo, medir la robustez de la alineación y comparar comportamientos antes y después de la proyección (Arditi et al. 2024).
+- **Red teaming y evaluación de salvaguardas**: sirve para generar respuestas que un modelo alineado rechazaría, permitiendo auditar filtros y clasificadores de contenido en pipelines de moderación.
+- **Procesamiento de documentos confidenciales (legal, sanitario, NDA)**: el autor promociona el stack AirGap AI para flujos con requisitos de confidencialidad; el modelo corre 100% on-device, sin telemetría ni llamadas externas.
+- **Prototipado rápido de aplicaciones conversacionales en Apple Silicon**: con `mlx-lm` y ~15 tok/s en M4 Max, es viable para demos interactivas, generación de texto asistida y pruebas de UX sin coste de API.
+- **Fine-tuning ligero o LoRA sobre MLX**: al estar en formato MLX safetensors, se puede adaptar con las herramientas de `mlx-lm` en hardware Apple, aunque el modelo base abliterado ya está modificado.
 
 ## Benchmarks y rendimiento
 
-El model-index del autor no incluye resultados:
-
-```json
-[
-  {
-    "name": "gemma-4-31b-it-abliterated-4bit-mlx",
-    "results": []
-  }
-]
-```
-
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento declarado es el throughput aproximado de **15 tokens por segundo en un M4 Max** con `mlx-lm` 0.21+, medido por el autor.
+El `model-index` del autor declara una entrada sin resultados (`results: []`). No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El único dato de rendimiento medido es el throughput de inferencia: **~15 tok/s en un M4 Max** con `mlx-lm` 0.21+.
 
 ## Requisitos de hardware
 
-- **VRAM / memoria unificada**: aproximadamente 17 GB de pesos en disco y en memoria; se recomienda un minimo de 32 GB de memoria unificada para dejar margen al contexto y al runtime de MLX. El autor indica que funciona comodamente en 32 GB y "vuela" en 64 GB o mas.
-- **GPU recomendadas**: exclusivamente Apple Silicon. El modelo esta cuantizado en formato MLX y depende de `mlx-lm`, por lo que no es directamente ejecutable en GPU NVIDIA o AMD sin reconversion.
-- **Equipos objetivo**: MacBook Pro y Mac Studio con chips M-series (M2 Max, M3 Max, M4 Max y superiores). El autor cita el M4 Max como referencia de rendimiento.
-- **Cabe en consumer GPU**: si, en el sentido de hardware de consumo de Apple; no en GPU de consumo NVIDIA con 24 GB o menos sin reconvertir el modelo a otro formato.
-- **Opciones de despliegue**: `mlx-lm` (libreria oficial), el servidor MLX compatible con la API de Anthropic del proyecto `claude-code-local`, y scripts de arranque (`scripts/start-mlx-server.sh`). No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI.
-- **Latencia y throughput**: aproximadamente 15 tokens por segundo en M4 Max segun el autor; no se proporcionan datos para otros chips.
+- **VRAM/memoria unificada estimada**: ~17 GB para los pesos en 4-bit; con overhead de contexto y KV cache, se recomienda un mínimo de 24-32 GB de memoria unificada. La model card indica que "corre cómodamente en un Mac de 32 GB y vuela en 64 GB+".
+- **GPU recomendadas**: Apple Silicon exclusivamente (M1/M2/M3/M4 en variantes Pro, Max o Ultra). No es compatible con CUDA ni con GPUs NVIDIA/AMD.
+- **¿Cabe en consumer GPU?**: no aplica en el sentido tradicional; está pensado para Macs. En un Mac con 32 GB de memoria unificada funciona; en 16 GB no cabe.
+- **Opciones de despliegue**: `mlx-lm` (librería principal), servidor MLX del stack `claude-code-local` (API compatible con Anthropic), y cualquier herramienta que consuma safetensors MLX. No es compatible con vLLM, llama.cpp, Ollama ni TGI en su forma actual.
+- **Latencia y throughput**: ~15 tok/s en M4 Max según el autor. En chips inferiores (M1/M2 base) el rendimiento será notablemente menor; no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / hardware | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Hardware |
 |---|---|---|---|---|---|
-| `divinetribe/gemma-4-31b-it-abliterated-4bit-mlx` | 30,7B | no disponible | MLX 4-bit, Apple Silicon | Apache 2.0 (con enlace a Gemma 4 License) | Abliterado, sin rechazos, 17,3 GB |
-| `null-space/gemma-4-31b-it-abliterated` | 31B | no disponible | BF16 safetensors, GPU | no disponible en esta ficha | Modelo base sin cuantizar, aproximadamente 62 GB |
-| `mlx-community/...` (referencia del autor) | variable | no disponible | MLX | variable | El autor senala que el repo al que apuntaba el proyecto no existia; este modelo es el reemplazo real |
-| Otros modelos de la coleccion "Abliterated MLX for Apple Silicon" | 12B a 70B | no disponible | MLX | variable | Incluye Gemma 4 12B, Llama 3.3 70B, Qwen3, Qwen3-VL, Hermes 4 y Muse Glimmer 30B |
+| divinetribe/gemma-4-31b-it-abliterated-4bit-mlx | ~30,7 B | no disponible | MLX 4-bit | apache-2.0 (ambiguo) | Apple Silicon |
+| null-space/gemma-4-31b-it-abliterated | ~30,7 B | no disponible | BF16 safetensors | no disponible | GPU con ~62 GB+ |
+| Gemma 4 31B IT (original de Google) | ~30,7 B | no disponible | safetensors | licencia Gemma 4 | GPU / TPU |
+| Otros modelos abliterados MLX de la colección divinetribe (Gemma 4 12B, Llama 3.3 70B, Qwen3, Qwen3-VL, Hermes 4, Muse Glimmer 30B) | 12 B – 70 B | variable | MLX 4-bit | variable | Apple Silicon |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento cualitativo frente a estas alternativas.
+La comparación directa con alternativas de la misma categoría (modelos abliterados cuantizados para Apple Silicon) está limitada por la ausencia de benchmarks publicados. La colección del propio autor ofrece alternativas de menor tamaño (Gemma 4 12B) para Macs de 16 GB y de mayor tamaño (Llama 3.3 70B) para equipos de 64 GB+.
 
 ## Limitaciones y advertencias
 
-- **Ambiguedad de licencia**: la model card declara Apache 2.0, pero el campo `license_link` apunta a la Gemma 4 License de Google, que impone restricciones de uso (incluida una politica de uso aceptable y obligaciones de atribucion). Antes de un uso comercial conviene verificar cual prevalece, ya que los terminos de Gemma pueden ser mas restrictivos que Apache 2.0.
-- **Modelo abliterado**: la eliminacion de la direccion de rechazo reduce la seguridad del modelo. El propio autor advierte: "you are now the moderator". No es adecuado para aplicaciones de cara al publico sin capas adicionales de moderacion.
-- **Riesgo de alucinacion**: como cualquier LLM de esta familia, puede generar informacion falsa con aparente seguridad; la cuantizacion a 4 bits puede degradar ligeramente la fidelidad respecto al BF16.
-- **Idioma**: solo se declara ingles. El rendimiento en castellano no esta garantizado ni documentado.
-- **Contexto**: no se publica la longitud de contexto soportada, lo que impide planificar tareas de contexto largo con garantias.
-- **Hardware restringido**: el formato MLX limita el despliegue a Apple Silicon; no es portable a GPU NVIDIA sin reconversion.
-- **Perdida por cuantizacion**: la cuantizacion de 4 bits con group size 64 introduce una perdida de precision respecto al modelo base en BF16, especialmente perceptible en tareas de razonamiento matematico o de codigo muy preciso.
-- **Mantenimiento**: es un derivado de un desarrollador independiente; la actualizacion y el soporte dependen del autor y no de Google.
+- **Sin moderación**: la abliteración elimina el comportamiento de rechazo; el modelo puede generar contenido dañino, ilegal o sesgado. La responsabilidad de moderación recae en el desplegador ("you are now the moderator", según el autor).
+- **Sesgos heredados**: al no haber reentrenamiento, conserva los sesgos del corpus de Gemma 4 y los posibles artefactos introducidos por la proyección de la dirección de rechazo.
+- **Riesgo de alucinación**: no se han publicado evaluaciones de fidelidad factual; se asume el riesgo típico de un modelo de 31B sin verificación.
+- **Idioma**: solo inglés declarado; el rendimiento en castellano no está garantizado ni evaluado.
+- **Contexto**: la longitud de contexto no está documentada en esta ficha; debe consultarse en la documentación de Gemma 4.
+- **Ambigüedad de licencia**: la etiqueta es `apache-2.0`, pero la model card enlaza a la licencia de Gemma 4 de Google, que impone restricciones de uso comercial y de redistribución. Verificar antes de producción.
+- **Hardware restringido**: exclusivo de Apple Silicon; no ejecutable en CUDA, ROCm ni CPU convencional con las herramientas estándar.
+- **Multimodalidad no verificada**: la etiqueta `multimodal` proviene del modelo base, pero no se documenta el pipeline de visión en esta cuantización.
+- **Tool calling no documentado**: no hay garantías de soporte de function calling en esta versión; validar empíricamente antes de integrarlo en agentes.
+- **Mantenimiento**: proyecto de un desarrollador independiente; sin SLA ni soporte formal.
 
 ## Enlaces
 
@@ -103,9 +94,9 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cualit
 - Modelo base: https://huggingface.co/null-space/gemma-4-31b-it-abliterated
 - Repositorio `claude-code-local`: https://github.com/nicedreamzapp/claude-code-local
 - Perfil del autor en GitHub: https://github.com/nicedreamzapp
-- Coleccion "Abliterated MLX for Apple Silicon": https://huggingface.co/collections/divinetribe/abliterated-mlx-for-apple-silicon
-- Leaderboard de agentes locales Agent-12: https://nicedreamzapp.github.io/agent12/
+- Leaderboard Agent-12: https://nicedreamzapp.github.io/agent12/
+- Colección Abliterated MLX for Apple Silicon: https://huggingface.co/collections/divinetribe/abliterated-mlx-for-apple-silicon
 - Modelos del autor: https://nicedreamzwholesale.com/software/huggingface/
-- Portafolio de software: https://nicedreamzwholesale.com/software/
-- AirGap AI: https://nicedreamzwholesale.com/airgap/
+- Stack AirGap AI: https://nicedreamzwholesale.com/airgap/
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Paper de abliteration (Arditi et al. 2024): no disponible en la información proporcionada (referenciado en la model card sin enlace directo)

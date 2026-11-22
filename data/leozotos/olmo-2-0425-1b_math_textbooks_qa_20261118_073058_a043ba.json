@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "LeoZotos/olmo_only_geometry",
+  "renamed_at": "2026-11-22T03:51:43.235Z",
   "benchmarks": [],
   "sources": [
     {

@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "About the Planets - Science@NASA",
-      "url": "https://science.nasa.gov/solar-system/planets/",
-      "snippet": "Sep 30, 2026 · Our solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. There are …Read more"
-    },
-    {
-      "title": "Solar System Planets: Names, Order, Size & Facts",
-      "url": "https://gelogia.com/solar-system-planets/",
-      "snippet": "Learn about the 8 planets of the solar system, their order from the Sun, size, distance, and interesting facts. Explore Mercury, Venus, …"
-    },
-    {
-      "title": "Solar System - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Solar_System",
-      "snippet": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it, most prominently its eight planets, of …"
-    },
-    {
-      "title": "Planets of our Solar System - BBC Bitesize",
-      "url": "https://www.bbc.co.uk/bitesize/articles/zy6fg2p",
-      "snippet": "There are eight planets in our Solar System. The closest one to the Sun is Mercury, then it’s Venus, Earth, Mars, Jupiter, Saturn, …"
-    },
-    {
-      "title": "The Planets of Our Solar System: Complete 2026 Guide",
-      "url": "https://www.sterngucker.de/en/planets/",
-      "snippet": "Oct 5, 2026 · This guide walks you through the planets of our solar system, how they formed, what you can actually see through a …"
-    }
-  ]
+  "sources": []
 }

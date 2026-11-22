@@ -2,53 +2,52 @@
 
 ## Resumen
 
-DualMind-GGUF es la distribucion en formato GGUF del modelo DualMind, un modelo de lenguaje de 1.700 millones de parametros desarrollado por Convergent Intelligence LLC (Research Division) que implementa una arquitectura de razonamiento de doble cognicion. El modelo estructura su salida en tres fases explicitas mediante etiquetas especiales: `<explore>` para razonamiento libre y derivacion, `<examine>` para autocritica adversarial y deteccion de errores, y `<response>` para la sintesis final de la respuesta. Se trata de una propuesta que traslada la dialectica multi-modelo a un unico conjunto de pesos compartidos.
+DualMind-GGUF es la distribucion en formato GGUF del modelo DualMind, un modelo de lenguaje de 1.700 millones de parametros (2.031.739.904 parametros segun los pesos en safetensors del modelo base) desarrollado por Convergent Intelligence LLC: Research Division. Su propuesta central es una arquitectura de "cognicion dual" que estructura la generacion en tres fases explicitas: `<explore>` para razonamiento libre y derivacion, `<examine>` para autocritica adversarial y deteccion de errores, y `<response>` para la sintesis final de la respuesta.
 
-El modelo base se entrena mediante una cadena de destilacion que parte de Qwen3-1.7B, pasa por DistilQwen3 (sin censura), Disctil (refinado con DISC) y aplica destilacion de conocimiento desde Qwen3-30B-A3B-Thinking, seguida de un SFT sobre el dataset LogicInference_OA. Esta version GGUF permite ejecutar el modelo en CPU y GPUs de consumo mediante llama.cpp, Ollama o LM Studio, con cuantizaciones que van desde F16 (~3,4 GB) hasta Q4_K_M (~1,1 GB).
+El modelo se construye sobre una cadena de destilacion que parte de Qwen3-1.7B, pasa por una variante DistilQwen3 sin censura, se refina con un proceso denominado DISC y recibe destilacion de conocimiento (TKD) desde Qwen3-30B-A3B-Thinking, para finalmente aplicar un SFT sobre el dataset LogicInference_OA. Esta version GGUF esta pensada para inferencia local en CPU y GPU de gama consumer, con cuantizaciones que van desde F16 (unos 3,4 GB) hasta Q4_K_M (unos 1,1 GB).
 
-La relevancia actual del modelo reside en su enfoque de "inteligencia convergente": en lugar de escalar parametros, propone estructurar el razonamiento interno en fases de exploracion y critica. La licencia Apache 2.0 y el tamano reducido lo hacen accesible para despliegues en el borde (edge) y experimentacion local. El repositorio acumula 2.274 descargas y un total de 2.031.739.904 parametros reales segun safetensors.
+La relevancia actual del modelo reside en su enfoque de "inteligencia convergente": en lugar de escalar parametros, intenta emular el dialogo entre multiples modelos dentro de unos pesos compartidos, de modo que un modelo pequeno pueda razonar y revisarse a si mismo. La licencia Apache 2.0 y la disponibilidad de GGUF lo hacen accesible para prototipado y despliegue en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3-1.7B), con esquema de razonamiento dual explore/examine/response |
-| Parametros totales | 2.031.739.904 (segun safetensors); la model card indica 1,7B |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-1.7B), con esquema de generacion en tres fases explore/examine/response |
+| Parametros totales | 2.031.739.904 (segun safetensors del modelo base); la model card describe el modelo como de 1,7B |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q5_K_M, Q4_K_M |
 | Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (el modelo base en safetensors/BF16) |
 
 ## Arquitectura y entrenamiento
 
-DualMind se construye sobre la arquitectura transformer de Qwen3-1.7B y anade un esquema de razonamiento de doble cognicion aprendido durante el entrenamiento. El modelo genera primero un bloque `<explore>` de razonamiento sin restricciones, despues un bloque `<examine>` de autocritica adversarial orientado a la deteccion de errores, y finalmente un bloque `<response>` con la sintesis limpia del dialogo interno. La model card describe este enfoque como "dialecticas multi-modelo colapsadas en pesos compartidos".
+DualMind es un transformer decoder-only basado en Qwen3-1.7B. Su innovacion no es arquitectonica en el sentido de atencion o capas, sino de formato de razonamiento: el modelo ha sido entrenado para emitir secuencias estructuradas con tres etiquetas, `<explore>` (razonamiento sin restricciones, derivacion, especulacion), `<examine>` (autocritica adversarial y deteccion de errores) y `<response>` (sintesis limpia del dialogo interno). La idea es colapsar en unos unicos pesos la dialectica que normalmente se obtiene combinando varios modelos.
 
-La cadena de entrenamiento documentada es: Qwen3-1.7B → DistilQwen3 (sin censura) → Disctil (refinado con DISC) → destilacion de conocimiento desde Qwen3-30B-A3B-Thinking → SFT de DualMind sobre el dataset LogicInference_OA. El autor menciona fundamentos matematicos basados en "calculo de discrepancia" (operador Df(x)) y "destilacion de conocimiento topologica" (TKD), descritos en el modelo base y en papers asociados con DOI. La model card afirma que las fronteras estructurales detectadas por DISC durante el entrenamiento quedan codificadas en los pesos y se preservan tras la cuantizacion. No se especifican en la informacion disponible el numero de tokens de entrenamiento ni la composicion detallada del dataset.
+La cadena de entrenamiento declarada es: Qwen3-1.7B, seguido de DistilQwen3 (variante sin censura), Disctil (refinado con DISC), destilacion de conocimiento desde Qwen3-30B-A3B-Thinking (TKD) y, por ultimo, SFT sobre el dataset LogicInference_OA. El autor menciona fundamentos matematicos propios (calculo de discrepancias y destilacion topologica de conocimiento) documentados en la model card del modelo base y en papers con DOI. No se especifica el numero de tokens de entrenamiento ni la composicion detallada del dataset.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento estructurado en tres fases (exploracion, autocritica, respuesta).
-- Razonamiento logico y matematico, con enfasis en derivaciones y demostraciones (el ejemplo de la model card es una demostracion de convergencia y sucesiones de Cauchy).
-- Autocritica interna y deteccion de errores mediante el bloque `<examine>`.
-- Capacidad conversacional (tag `conversational`).
-- Compatible con endpoints (tag `endpoints_compatible`).
-- Entrenado sobre el dataset LogicInference_OA, orientado a inferencia logica.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning: no documentado explicitamente; el esquema explore/examine/response constituye una forma de razonamiento multi-paso interno.
-- Capacidades multilingues: solo ingles (`en`).
-- Capacidades especiales: no se documentan vision, audio ni modo thinking separado mas alla del esquema dual.
+- Generacion de texto conversacional en ingles.
+- Razonamiento estructurado en tres fases (exploracion, autocritica y sintesis), invocable mediante etiquetas en el prompt.
+- Razonamiento logico y matematico orientado a demostraciones y derivaciones (el ejemplo de la model card es una prueba de convergencia de sucesiones de Cauchy).
+- Autocorreccion y deteccion de errores dentro del propio proceso de generacion.
+- Capacidad de destilacion de razonamiento "thinking" heredada del profesor Qwen3-30B-A3B-Thinking.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente, aunque el esquema explore/examine/response es compatible con flujos multi-paso.
+- Capacidades multilingues: solo ingles declarado.
+- Vision, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Razonamiento logico y demostraciones matematicas: el modelo esta entrenado sobre LogicInference_OA y su bloque `<explore>` permite derivaciones libres antes de la sintesis, lo que lo hace adecuado para problemas de logica formal y pruebas paso a paso.
-- Despliegue en el borde (edge): con la cuantizacion Q4_K_M (~1,1 GB) puede ejecutarse en CPU y en GPUs de consumo de 6 GB o menos, segun la propia model card, lo que permite integrarlo en dispositivos con recursos limitados.
-- Experimentacion en investigacion sobre razonamiento: el esquema explore/examine/response facilita el estudio de la autocritica y la deteccion de errores en modelos pequenos, util para investigadores que analizan trazas de razonamiento.
-- Asistentes locales de proposito general en ingles: al ser compatible con Ollama y LM Studio, puede desplegarse como asistente conversacional offline en ingles sin dependencia de la nube.
-- Generacion de codigo y explicaciones tecnicas: aunque no se documenta un benchmark de codigo, el modelo puede emplearse para explicar y revisar fragmentos de codigo mediante el ciclo de exploracion y critica; conviene validar su calidad con pruebas propias.
-- Educacion y tutoria: el bloque `<examine>` permite mostrar al usuario no solo la respuesta sino tambien el proceso de verificacion, util en entornos educativos donde interesa el razonamiento explicito.
-- Pipelines de CI/CD para revision de texto: la licencia Apache 2.0 y el formato GGUF permiten integrarlo en herramientas de revision automatica de documentacion o texto tecnico en ingles.
+- Razonamiento logico y demostraciones: el modelo puede generar derivaciones paso a paso en `<explore>`, revisarlas en `<examine>` y emitir una prueba limpia en `<response>`, lo que encaja en entornos educativos o de verificacion formal asistida.
+- Asistente de estudio de matematicas: con temperatura 0,6 y repeat_penalty 1,3, puede resolver problemas paso a paso mostrando el razonamiento y la autocorreccion, util para materiales didacticos.
+- Prototipado en dispositivos de borde: la cuantizacion Q4_K_M (unos 1,1 GB) permite ejecutarlo en CPU o en GPU con 6 GB de VRAM, ideal para demos locales y pruebas offline.
+- Generacion de explicaciones auto-revisadas: en documentacion tecnica o articulos, el ciclo examine permite filtrar afirmaciones erroneas antes de la respuesta final.
+- Investigacion en destilacion y razonamiento: sirve como banco de pruebas para estudiar tecnicas de autocritica y destilacion de profesores grandes a modelos pequenos.
+- Chat local con Ollama o LM Studio: su integracion con runtimes GGUF permite desplegar un asistente conversacional en ingles en un portatil sin GPU dedicada.
+- Generacion de codigo asistida con revision: aunque no esta especializado en codigo, el patron explore/examine puede usarse para proponer una solucion y luego revisarla antes de entregarla.
 
 ## Benchmarks y rendimiento
 
@@ -56,34 +55,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3,4 GB en F16, 1,8 GB en Q8_0, 1,3 GB en Q5_K_M y 1,1 GB en Q4_K_M (tamanos de fichero indicados en la model card).
-- GPU recomendadas: la model card indica "CPU/6GB GPU" para la variante LogicInference, por lo que cabe en GPUs de consumo con 6 GB o mas de VRAM.
-- Cabe en GPU de consumo: si, en tarjetas con 6 GB o mas de VRAM (por ejemplo, gama RTX x060 en adelante) y en CPU para las cuantizaciones Q4_K_M y Q5_K_M.
-- Opciones de despliegue: llama.cpp, Ollama (imagen publicada `reaperdoesntrun/DualMinded-1.7B`), LM Studio y cualquier runtime compatible con GGUF.
-- Parametros de inferencia recomendados: temperature 0.6, top_p 0.9, repeat_penalty 1.3 (importante para evitar bucles de enumeracion), num_predict 512-1024.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada: unos 3,4 GB para F16, 1,8 GB para Q8_0, 1,3 GB para Q5_K_M y 1,1 GB para Q4_K_M (mas overhead de contexto y KV cache).
+- GPU recomendadas: cualquier GPU consumer con 4-6 GB de VRAM o mas (por ejemplo, RTX 3060, RTX 4060, RTX 4090) para las cuantizaciones Q4_K_M a Q8_0; F16 requiere al menos 6 GB.
+- Cabe en GPU consumer: si, en practicamente todas las GPU modernas con 6 GB o mas; en CPU funciona con Q4_K_M.
+- Opciones de despliegue: llama.cpp, Ollama (modelo publicado como `reaperdoesntrun/DualMinded-1.7B`), LM Studio y otros runtimes compatibles con GGUF.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| DualMind-GGUF | ~2,03B (1,7B segun model card) | no disponible | Apache 2.0 | GGUF | Razonamiento dual explore/examine/response; solo ingles |
-| Qwen3-1.7B (modelo base) | 1,7B | no disponible | Apache 2.0 | safetensors, GGUF | Base de la cadena de destilacion; multilingue |
-| Qwen3-30B-A3B-Thinking (profesor) | 30B totales (MoE) | no disponible | Apache 2.0 | safetensors | Profesor de destilacion; mucho mayor |
+| DualMind-GGUF | ~1,7B (2,03B en safetensors) | no disponible | GGUF | Apache 2.0 | Razonamiento explore/examine/response |
+| Qwen3-1.7B | 1,7B | no disponible | safetensors, GGUF | Apache 2.0 | Modelo base de la cadena |
+| Qwen3-30B-A3B-Thinking | 30B totales (3B activos, MoE) | no disponible | safetensors, GGUF | Apache 2.0 | Profesor de destilacion, mucho mayor |
+| DistilQwen3 (variante sin censura) | ~1,7B | no disponible | safetensors | no disponible | Etapa intermedia de la cadena |
 
-La comparacion con alternativas de terceros no esta disponible en la informacion proporcionada. El modelo mas directamente comparable es su base Qwen3-1.7B, del que hereda arquitectura y licencia, pero con un esquema de razonamiento adicional y solo soporte de ingles.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles (`en`); no se documenta capacidad multilingue.
-- Modelo de 1,7B parametros: capacidad de razonamiento limitada frente a modelos de mayor escala, pese al esquema de autocritica.
-- La model card advierte de riesgo de bucles de enumeracion y recomienda repeat_penalty 1.3; sin este ajuste la generacion puede degradarse.
-- Riesgo de alucinacion inherente a modelos pequenos y a la generacion de razonamiento libre en `<explore>`; el bloque `<examine>` mitiga pero no elimina este riesgo.
-- No se han publicado benchmarks en la informacion disponible, por lo que no hay evidencia cuantitativa de rendimiento frente a alternativas.
-- La model card menciona que la variante DistilQwen3 es "sin censura" (uncensored); conviene evaluar los riesgos de contenido antes de un despliegue en produccion.
-- El esquema de etiquetas (`<explore>`, `<examine>`, `<response>`) requiere prompts y parsers especificos; una integracion descuidada puede romper el formato de salida.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; la documentacion tecnica depende de papers externos con DOI.
-- No se documentan la longitud de contexto ni el numero de tokens de entrenamiento, lo que dificulta planificar casos de uso con contextos largos.
+- Solo soporta ingles; no se declaran capacidades multilingues.
+- Modelo pequeno (1,7B), por lo que su conocimiento factual y su robustez en tareas abiertas son limitados frente a modelos mayores.
+- Riesgo de alucinacion inherente a modelos de esta escala, especialmente en dominios especializados.
+- La autocritica `<examine>` no garantiza la correccion de la respuesta; puede generar criticas plausibles pero erroneas.
+- Requiere repeat_penalty 1,3 segun el autor para evitar bucles de enumeracion, lo que indica cierta tendencia a repetir patrones.
+- Longitud de contexto no documentada; no se recomienda asumir ventanas largas.
+- No se documentan capacidades de tool calling ni de agentes, por lo que no es adecuado para pipelines que dependan de function calling.
+- Aunque la licencia es Apache 2.0, el modelo deriva de una cadena que incluye una variante "uncensored" de DistilQwen3; conviene revisar las condiciones de los modelos intermedios antes de un uso comercial critico.
+- No hay benchmarks publicados que respalden las afirmaciones de calidad del autor.
 
 ## Enlaces
 
@@ -91,7 +90,7 @@ La comparacion con alternativas de terceros no esta disponible en la informacion
 - Modelo base (SafeTensors): https://huggingface.co/reaperdoesntknow/DualMind
 - Variante entrenada con Opus: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B
 - Variante thinking: https://huggingface.co/reaperdoesntknow/Dualmind-Qwen-1.7B-Thinking
-- Variante GGUF de Opus: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B-GGUF
+- Variante GGUF Opus: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B-GGUF
 - Paper de metodologia: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: https://doi.org/10.57967/hf/8184)
 - Paper "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
 - Paper "Discrepancy Calculus": https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)

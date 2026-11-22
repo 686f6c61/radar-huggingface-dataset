@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "craigandrews/qwen3-asr-0.6b-onnx-int4-merged",
+  "slug": "craigandrews-qwen3-asr-0-6b-onnx-int4-merged",
+  "author": "craigandrews",
+  "url": "https://huggingface.co/craigandrews/qwen3-asr-0.6b-onnx-int4-merged",
+  "created_at": "2026-11-22T03:18:38.000Z",
+  "updated_at": "2026-11-22T03:18:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "asr",
+    "qwen3",
+    "int4",
+    "multilingual",
+    "base_model:rhasspy/qwen3-asr-0.6b-onnx-int4-merged",
+    "base_model:quantized:rhasspy/qwen3-asr-0.6b-onnx-int4-merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 785861914,
+  "storage_human": "786 MB",
+  "context_length": null,
+  "base_model": "rhasspy/qwen3-asr-0.6b-onnx-int4-merged",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

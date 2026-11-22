@@ -2,80 +2,87 @@
 
 ## Resumen
 
-Parrot-Coder-GGUF es un repositorio de cuantizaciones en formato GGUF generado por el usuario mradermacher a partir del modelo base InserloftResearch/Parrot-Coder. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribucion del mismo en pesos cuantizados de 2 a 16 bits, pensada para su ejecucion en llama.cpp y en los runners compatibles con este formato. La model card del repositorio se limita a indicar que son "static quants" del modelo original y a listar los niveles de cuantizacion disponibles.
+Parrot-Coder es un modelo de lenguaje especializado en generación de código, desarrollado originalmente por Inserloft-AI y distribuido en formato GGUF por mradermacher. Con 255.101.952 parámetros totales (aproximadamente 255 millones), se trata de un modelo compacto orientado a tareas de code generation, lo que lo sitúa en la categoría de modelos pequeños que pueden ejecutarse en hardware de consumo. El repositorio aquí descrito es una cuantización estática del modelo base `Inserloft-AI/Parrot-Coder`, publicada bajo licencia Apache 2.0.
 
-El repositorio no publica informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia del modelo subyacente. El nombre del modelo base sugiere una especializacion en tareas de generacion de codigo, pero no hay ninguna confirmacion documental en la informacion disponible, por lo que debe tratarse unicamente como una hipotesis a verificar en el repositorio de InserloftResearch.
+La relevancia de esta ficha radica en que el modelo original solo está disponible en formato Hugging Face (transformers), mientras que esta versión GGUF permite su despliegue en entornos con llama.cpp, Ollama y otras herramientas compatibles con el formato GGUF, facilitando su uso en local sin necesidad de GPUs de gama alta. El tamaño del repositorio es de 2,5 GB, aunque las cuantizaciones individuales ocupan entre 0,2 GB (Q2_K) y 0,6 GB (f16).
 
-Su relevancia practica es acotada: sirve como espejo de pesos GGUF para quien quiera ejecutar Parrot-Coder en hardware de consumo sin tener que convertir el modelo original. El repositorio registra cero descargas y cero likes, y no incluye ni pipeline declarado ni documentacion adicional sobre calidad, evaluaciones o casos de uso recomendados.
+No se dispone de información sobre la longitud de contexto, la composición del dataset de entrenamiento ni los resultados de benchmarks en la documentación proporcionada. El modelo está etiquetado como orientado al inglés (`language: en`) y su uso principal declarado es la generación de código.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base transformer, según tags de transformers) |
+| Parámetros totales | 255.101.952 |
+| Parámetros activos | no disponible (no es MoE según los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (un unico archivo por nivel de cuantizacion) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en safetensors/transformers |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base Parrot-Coder: ni tipo de transformer, ni uso de mezcla de expertos, ni atencion lineal o hibrida. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por instrucciones.
+No se dispone de información detallada sobre la arquitectura interna del modelo base `Inserloft-AI/Parrot-Coder` en la documentación proporcionada. Los tags indican que el modelo original se distribuye con la librería `transformers`, lo que sugiere una arquitectura transformer estándar, pero no se especifica si emplea atención lineal, decodificación especulativa u otras innovaciones. Tampoco se detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-Lo unico verificable en este repositorio es el proceso de posprocesado: conversion a formato HF (`convert_type: hf`), cuantizacion con version de formato 2 y tensor de salida cuantizado (`output_tensor_quantised: 1`). El autor indica que son "static quants" del modelo InserloftResearch/Parrot-Coder, es decir, cuantizaciones fijas precalculadas en lugar de cuantizacion dinamica en tiempo de carga. No se aplico ninguna modificacion de arquitectura ni se documento ningun tensormultimodal (`skip_mmproj` vacio, sin indicios de proyector de vision).
+La única información técnica concreta sobre el proceso de cuantización es la que aporta mradermacher: se trata de cuantizaciones estáticas (no weighted/imatrix), generadas con `quantize_version: 2` y `output_tensor_quantised: 1`, a partir de una conversión de tipo `hf`. El autor indica que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicación, y que podrían solicitarse mediante una discusión en la comunidad.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada explicitamente en la informacion disponible, aunque es la funcion esperada de un modelo de lenguaje cuantizado.
-- Generacion de codigo: el nombre del modelo base (Parrot-Coder) sugiere especializacion en codigo, pero no hay documentacion que lo confirme.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; no se declara ninguna lista de idiomas.
-- Modo thinking, vision o audio: no disponible; no hay tensores de proyector multimodal documentados en el repositorio.
+- Generación de código: el modelo está etiquetado con `code` y `code-generation`, y su nombre (Parrot-Coder) indica especialización en tareas de programación.
+- Generación de texto: al ser un modelo de lenguaje, puede generar texto general, aunque su entrenamiento está orientado al código.
+- Idiomas: soporte declarado únicamente para inglés.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en equipos sin GPU dedicada: las cuantizaciones Q3_K_S y Q2_K permiten cargar el modelo con un consumo de memoria muy reducido en llama.cpp, adecuado para portatiles con RAM limitada, siempre que el modelo base sea lo bastante pequeno.
-- Despliegue en CPU para tareas de autocompletado de codigo: si el modelo base esta efectivamente especializado en codigo, las variantes Q4_K_M y Q5_K_M ofrecen el equilibrio habitual entre calidad y huella de memoria para editores e IDE.
-- Servicio de generacion de texto autoalojado: los archivos GGUF se integran directamente en servidores llama.cpp u Ollama, lo que permite exponer una API interna sin depender de proveedores externos.
-- Prototipado e investigacion: disponer de todos los niveles de cuantizacion en un mismo repositorio facilita estudios comparativos sobre la degradacion de calidad al reducir bits por peso.
-- Evaluacion previa a produccion: las variantes Q8_0 y x-f16 sirven como referencia casi sin perdida para medir la diferencia frente a cuantizaciones agresivas antes de elegir una para produccion.
-- Distribucion offline o en entornos aislados: al ser pesos estaticos y autocontenidos, se pueden copiar a maquinas sin acceso a internet ni a repositorios de modelos.
-- Ahorro de ancho de banda en despliegues masivos: los archivos cuantizados pesan una fraccion del modelo original en precision completa, lo que simplifica la distribucion a muchos nodos.
+- Autocompletado de código en editores: con un tamaño de 255 M de parámetros y cuantizaciones de 0,2-0,3 GB, el modelo puede ejecutarse en local dentro de un plugin de editor (por ejemplo, mediante llama.cpp) para sugerir completaciones de código en tiempo real sin depender de la nube.
+- Asistencia en scripts y utilidades de línea de comandos: adecuado para generar fragmentos de código cortos en inglés, como scripts de shell, Python o utilidades de automatización, gracias a su bajo coste computacional.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_S y Q4_K_M (0,3 GB) permiten ejecutar el modelo en CPUs modernas o GPUs integradas, útil para prototipos y entornos de desarrollo sin GPU dedicada.
+- Generación de documentación técnica de código: el modelo puede redactar comentarios y docstrings en inglés a partir de fragmentos de código, integrable en pipelines de documentación automática.
+- Filtrado y clasificación de código en CI/CD: con su tamaño reducido, puede emplearse para tareas ligeras de análisis de código (detección de patrones, generación de mensajes de commit) dentro de pipelines de integración continua.
+- Educación y experimentación: su licencia Apache 2.0 y su reducido tamaño lo hacen adecuado para entornos docentes donde se quiera experimentar con modelos de código sin infraestructura costosa.
+- Pruebas de concepto de asistentes de código: al estar disponible en GGUF, se puede integrar rápidamente en aplicaciones con Ollama o llama.cpp para validar ideas antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no calculable, ya que se desconoce el numero de parametros del modelo base. Como referencia generica, un modelo de N mil millones de parametros ocupa aproximadamente 0,56 x N GB en Q4_K_M y 1,05 x N GB en Q8_0, pero no hay datos para aplicar esta formula a Parrot-Coder.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no verificable sin conocer el tamano. Si el modelo base es de 7-8B, las cuantizaciones Q4_K_M caben en GPUs de 8-12 GB; si es mayor, no.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime con soporte GGUF. vLLM y TGI no consumen GGUF de forma nativa y requeririan convertir los pesos a safetensors.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: entre 0,2 GB (Q2_K) y 0,6 GB (f16) solo para los pesos; añadir overhead de contexto y runtime (típicamente 0,5-1 GB adicionales según la longitud de contexto).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar las cuantizaciones más pequeñas; una RTX 3060, RTX 4060 o superior permite ejecutar f16 con holgura. No requiere A100 ni H100.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna (GTX 1650, RTX 3050, RTX 4060, etc.), así como en CPUs con suficiente RAM.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base puede usarse con transformers.
+- Latencia y throughput estimados: no disponible en la información proporcionada; por el tamaño del modelo, se espera una latencia baja en hardware consumer, pero no hay datos medidos.
 
 ## Comparativa con modelos similares
 
-No disponible. No se ha proporcionado informacion sobre modelos comparables ni sobre las caracteristicas del modelo base, por lo que no es posible establecer una comparacion rigurosa con alternativas de la misma categoria.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| Parrot-Coder (este) | 255 M | no disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Se puede señalar que, por tamaño, Parrot-Coder se sitúa en la categoría de modelos de código pequeños (junto a alternativas de menos de 500 M de parámetros), pero no se aportan datos concretos de comparación.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card del modelo original en la informacion proporcionada, ni ficha tecnica con arquitectura, datos de entrenamiento o evaluaciones.
-- Licencia desconocida: al no declararse la licencia ni en este repositorio ni en el material disponible, no se puede confirmar si el uso comercial esta permitido. Verificar la licencia del modelo base InserloftResearch/Parrot-Coder antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion: no cuantificado; sin benchmarks no hay forma de estimar la fiabilidad factual del modelo.
-- Degradacion por cuantizacion: las variantes Q2_K y Q3_K_S pueden degradar de forma apreciable el rendimiento en tareas de razonamiento o codigo, especialmente en modelos pequenos.
-- Cobertura idiomatica desconocida: no se declara ningun idioma soportado, por lo que el comportamiento en castellano no esta garantizado.
-- Trazabilidad: se trata de un repositorio de terceros (mradermacher) sobre un modelo de otro autor (InserloftResearch); conviene contrastar el hash de los pesos con el repositorio original.
-- Adopcion nula: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
+- Idiomas: el modelo está declarado únicamente para inglés; su rendimiento en castellano u otros idiomas no está garantizado.
+- Contexto: se desconoce la longitud máxima de contexto, lo que impide planificar su uso en conversaciones o ficheros de código largos.
+- Alucinación: como todo modelo de lenguaje, puede generar código sintácticamente plausible pero incorrecto; requiere validación en producción.
+- Sesgos: no se dispone de información sobre sesgos conocidos; al ser un modelo pequeño entrenado probablemente con datos públicos, puede reflejar sesgos presentes en ellos.
+- Licencia: Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base `Inserloft-AI/Parrot-Coder` y las condiciones de las cuantizaciones.
+- Cuantizaciones: las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; el autor recomienda Q4_K_S o Q4_K_M para un equilibrio entre tamaño y calidad.
+- Falta de documentación: no hay información sobre el dataset de entrenamiento, benchmarks ni arquitectura detallada, lo que dificulta evaluar su idoneidad para tareas críticas.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Parrot-Coder-GGUF
-- Modelo base: https://huggingface.co/InserloftResearch/Parrot-Coder
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-
-No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.
+- Modelo base: https://huggingface.co/Inserloft-AI/Parrot-Coder
+- Página de descargas del autor: https://hf.tst.eu/model#Parrot-Coder-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

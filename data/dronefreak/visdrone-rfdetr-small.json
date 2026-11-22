@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "dronefreak/visdrone-rfdetr-small",
+  "slug": "dronefreak-visdrone-rfdetr-small",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/visdrone-rfdetr-small",
+  "created_at": "2026-08-06T18:27:27.000Z",
+  "updated_at": "2026-11-21T22:06:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "safetensors",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "visdrone",
+    "detr",
+    "roboflow",
+    "transformer",
+    "dataset:Voxel51/VisDrone2019-DET",
+    "arxiv:1804.07437",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "base_model:Roboflow/rf-detr-small",
+    "base_model:finetune:Roboflow/rf-detr-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 32048112,
+  "parameters_human": "32.0M",
+  "storage_bytes": 423108480,
+  "storage_human": "423 MB",
+  "context_length": null,
+  "base_model": "Roboflow/rf-detr-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 39.13
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 21.68
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "Precision (test split)",
+      "value": 64.38
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "Recall (test split)",
+      "value": 49.47
+    }
+  ],
+  "sources": []
+}

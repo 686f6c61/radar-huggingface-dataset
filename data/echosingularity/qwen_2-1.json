@@ -31,8 +31,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "EchoSingularity/QWEN21-LORAs",
+  "renamed_at": "2026-11-22T02:57:37.878Z",
   "benchmarks": [],
   "sources": [
     {

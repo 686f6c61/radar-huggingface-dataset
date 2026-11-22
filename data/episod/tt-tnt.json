@@ -60,5 +60,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/",
+      "snippet": "OFFRES ENTREPRISES ON DEMAND EPISOD Rules FAQ Conditions Devenir trainer Contacter la team"
+    },
+    {
+      "title": "Planning - Episod",
+      "url": "https://www.episod.com/planning/",
+      "snippet": "Place de Clichy Studio Bootcamp Samedi"
+    },
+    {
+      "title": "EPISOD - Bootcamp, cycling, yoga et plus - ClassPass",
+      "url": "https://classpass.fr/brands/episod",
+      "snippet": "EPISOD est une salle de fitness haut de gamme qui propose des cours de bootcamp, cycling, yoga, etc. Découvre les avis sur …"
+    },
+    {
+      "title": "Nos tarifs abonnements - Episod",
+      "url": "https://www.episod.com/nos-tarifs-abonnements-2/",
+      "snippet": "4 sessions/mois 4 séances par mois incluses, accès à tous les studios EPISOD. Sessions supplémentaires au tarif exclusif de …"
+    },
+    {
+      "title": "Les studios - EPISOD",
+      "url": "https://www.episod.com/les-studios/",
+      "snippet": "Découvrez nos 8 sports dans 27 studios sportifs : Boxing, Bootcamp, Athletic, Flow, Cycling, Reformer, Heat et Lift."
+    }
+  ]
 }

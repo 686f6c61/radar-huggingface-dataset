@@ -31,8 +31,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "CHOI0126/specdec-ckpt-noded",
+  "renamed_at": "2026-11-22T02:35:40.641Z",
   "benchmarks": [],
   "sources": []
 }

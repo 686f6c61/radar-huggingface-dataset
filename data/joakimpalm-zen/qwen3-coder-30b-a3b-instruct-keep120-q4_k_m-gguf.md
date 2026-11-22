@@ -1,87 +1,101 @@
 # Joakimpalm-Zen/Qwen3-Coder-30B-A3B-Instruct-keep120-Q4_K_M-GGUF
 
 ## Resumen
+Qwen3-Coder-30B-A3B-Instruct-keep120-Q4_K_M-GGUF es una cuantización GGUF Q4_K_M de un derivado estructuralmente podado de Qwen/Qwen3-Coder-30B-A3B-Instruct, publicado por el usuario Joakimpalm-Zen bajo el paraguas de su proyecto Xyntetik Runner. El modelo base es un transformer MoE de la familia Qwen3MoE, orientado a generación de código y conversación, del que este derivado conserva 120 de los 128 expertos por capa (podado de expertos), manteniendo los tensores de expertos en precisión nativa Q4_K/Q6_K.
 
-Este modelo es un derivado estructural de Qwen3-Coder-30B-A3B-Instruct, el modelo de código de Qwen con arquitectura MoE que activa 3.300 millones de parámetros de un total de 28.700 millones. La modificación principal consiste en la poda de 8 expertos por capa (de 128 a 120) en cada bloque MoE, seleccionados a partir de datos de routing medidos sobre un corpus de evaluación mixto. El resultado se distribuye en formato GGUF cuantizado Q4_K_M, con un tamaño de archivo de 17,5 GB.
+El interés de esta ficha no está tanto en el modelo en sí (que es una variante podada de un modelo ya conocido) como en el ecosistema que lo acompaña: el autor lo empaqueta para servirse con xyntetik-runner, un motor de inferencia C11 de binario único con servidor compatible con OpenAI, y documenta un comportamiento diferencial en la recuperación de tool calls truncados por presupuesto de tokens. Es, por tanto, un artefacto relevante para quienes despliegan agentes locales con modelos Qwen3-Coder y necesitan que las llamadas a herramientas no se rompan cuando se agota el contexto.
 
-El artefacto está diseñado para servirse con xyntetik-runner, un motor de inferencia C11 de un solo binario (CPU, CUDA, Metal) que implementa recuperación de truncamiento forzado: cuando una llamada de herramienta supera su presupuesto de tokens, el motor cierra el documento JSON de forma legal para que los argumentos sigan siendo parseables. Esta característica es especialmente relevante para agentes locales con contexto limitado y generación lenta, donde los motores convencionales (vLLM, llama.cpp, Ollama) devuelven llamadas vacías o malformadas al truncarse.
-
-La licencia es Apache 2.0, verificada sobre el repositorio base, lo que permite uso comercial sin restricciones adicionales. El archivo GGUF declara el número reducido de expertos en sus metadatos, por lo que un runtime que resuelva `num_experts` desde el archivo lo cargará sin cambios; uno que asuma 128 expertos fallará, lo cual es un comportamiento intencionado para validar la compatibilidad.
+El repositorio ocupa 17,5 GB y el modelo declara 28.719.396.864 parámetros totales en safetensors (aproximadamente 28,7 mil millones), coherente con la nomenclatura "30B-A3B" del modelo base, donde A3B indica unos 3 mil millones de parámetros activos por token en el esquema MoE original. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (qwen3moe), transformer con routing top-8 |
-| Parametros totales | 28.719.396.864 (28,7 B) |
-| Parametros activos | 3,3 B (por token) |
-| Longitud de contexto | no disponible (el modelo base Qwen3-Coder-30B-A3B-Instruct soporta 32 768 tokens, pero no se confirma en este artefacto) |
-| Tipos de cuantizacion | Q4_K_M (expertos en Q4_K / Q6_K nativos, sin requantizar) |
-| Idiomas soportados | no disponible (el modelo base es multilingüe, pero no se especifica en la ficha) |
+| Arquitectura | Transformer MoE (familia Qwen3MoE), derivado estructuralmente podado (120 de 128 expertos por capa) |
+| Parametros totales | 28.719.396.864 (según safetensors del modelo) |
+| Parametros activos | no disponible (el nombre del modelo base sugiere ~3B activos, pero no se confirma en la información proporcionada) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (fichero publicado); expertos en Q4_K/Q6_K nativos |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors no disponible en este repo) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
+El modelo es un derivado estructural del Qwen3-Coder-30B-A3B-Instruct: no se ha reentrenado, sino que se ha aplicado podado de expertos (expert pruning) sobre el MoE original, conservando 120 de los 128 expertos de cada capa. El autor indica que el plan de podado (un JSON) acompaña al fichero y que el derivado "pasa tanto el listón original como el actual", es decir, supera los criterios de validación definidos por el proyecto. Los tensores de expertos se mantienen en su precisión nativa Q4_K/Q6_K, lo que explica el tamaño de 17,5 GB del repositorio.
 
-El modelo base Qwen3-Coder-30B-A3B-Instruct es un transformer MoE con 128 expertos por capa y routing top-8, entrenado por Qwen para tareas de código y agente. Este derivado no es un reentrenamiento ni un fine-tuning: es una modificación estructural que poda 8 expertos por capa (de 128 a 120) basándose en datos de routing medidos con el trazador MoE del runner (`RUNNER_MOE_TRACE`). Los tensores de los expertos restantes se conservan en su precisión nativa Q4_K/Q6_K, sin requantizar, y el routing top-8 se mantiene intacto.
-
-El proceso de poda se documenta como reproducible: se ejecuta el modelo sin podar sobre un corpus de evaluación mixto, se registra el routing de cada token, y se eliminan los expertos con menor utilización. No hay información sobre datos de entrenamiento adicionales, RLHF o DPO aplicados a este derivado; las capacidades son heredadas del modelo base.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni sobre etapas de RLHF/DPO aplicadas en este derivado; esos datos pertenecen al modelo base Qwen3-Coder-30B-A3B-Instruct y no se detallan en la información proporcionada. La innovación destacable de este artefacto es de despliegue, no de entrenamiento: el motor xyntetik-runner implementa recuperación de truncamiento forzado en tool calls, cerrando un documento JSON a la versión mínima legal según el esquema cuando se agota el presupuesto de tokens, de modo que los argumentos siguen siendo parseables.
 
 ## Capacidades
-
-- Generación de código y razonamiento técnico, heredadas del modelo base Qwen3-Coder-30B-A3B-Instruct.
-- Soporte de tool calling / function calling con formato OpenAI-compatible.
-- Capacidad de agente multi-paso, gracias al soporte de tool calling y al contexto largo del modelo base.
-- Recuperación de truncamiento forzado: cuando una llamada de herramienta supera su presupuesto de tokens, el motor xyntetik-runner cierra el JSON de forma legal, garantizando que los argumentos sean parseables.
-- Conformidad de esquema de tool calls mantenida al 100 % hasta cuantización Q4_0 (la concordancia de argumentos decae al 50 % en ese nivel).
-- Multilingüismo del modelo base (no verificado específicamente en este artefacto).
+- Generación de texto y conversación multi-turno, heredadas del modelo base Qwen3-Coder.
+- Generación y razonamiento sobre código, dado el origen Qwen3-Coder del modelo padre.
+- Tool calling / function calling con protocolo nativo de Qwen3-Coder, soportado por xyntetik-runner desde la versión 0.5.3.
+- Recuperación de tool calls truncados: el runtime cierra la llamada a un documento conforme al esquema cuando se agota el presupuesto, devolviendo `tool_calls` ejecutables en lugar de contenido vacío o malformado.
+- Decodificación restringida (constrained decoding) que mantiene la forma de la llamada bajo cuantización; según la model card, la conformidad de esquema y la selección de herramienta se mantuvieron al 100 % hasta Q4_0, con decaimiento de la coincidencia de argumentos hasta el 50 %.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking, visión o audio: no disponibles en la información proporcionada.
 
 ## Casos de uso
-
-- Agentes de codificacion locales: el modelo puede ejecutar bucles agente-herramienta en maquinas con 20 GB de memoria, y la recuperacion de truncamiento evita reintentos costosos cuando el presupuesto de tokens se agota.
-- Asistentes de desarrollo integrados en IDE: con soporte de tool calling y generacion de codigo, puede completar funciones, refactorizar y ejecutar comandos de terminal.
-- Automatizacion de pruebas y CI/CD: integrado en pipelines, puede generar casos de prueba, analizar fallos y proponer correcciones usando herramientas externas.
-- Chatbots tecnicos de soporte: con contexto largo y capacidad de llamar a APIs internas, puede resolver incidencias de nivel 1 y 2 sin escalado a humanos.
-- Generacion de documentacion tecnica: a partir de codigo fuente, puede producir comentarios, README y guias de uso.
-- Prototipado rapido de agentes con presupuesto de tokens ajustado: la recuperacion de truncamiento permite experimentar con limites de contexto muy bajos sin romper el flujo de llamadas.
-- Despliegue en edge o dispositivos con memoria limitada: el archivo de 17,5 GB y el motor de un solo binario permiten ejecucion en equipos de consumo (Apple Silicon, GPUs con 20 GB).
+- Agentes de código locales: el modelo puede ejecutar bucles de agente con llamadas a herramientas en una máquina de ~20 GB de memoria, usando xyntetik-runner como servidor compatible con OpenAI; el cierre legal de tool calls truncados evita reintentos completos del bucle.
+- Asistentes de programación en estación de trabajo: al ser un GGUF Q4_K_M de 17,5 GB, encaja en equipos con 20 GB de memoria utilizable, permitiendo autocompletado y generación de parches sin depender de API externa.
+- Pipelines de CI/CD con presupuesto de tokens acotado: la recuperación de truncamiento garantiza que las llamadas a herramientas generadas para invocar linters, tests o scripts de despliegue sigan siendo parseables aunque el presupuesto se agote.
+- Evaluación de técnicas de podado de expertos: el fichero y su plan JSON sirven como caso de referencia para investigar el impacto del podado 120/128 sobre un MoE de código, comparándolo con el modelo padre.
+- Servicio de inferencia compatible con OpenAI en infraestructura propia: el binario único de xyntetik-runner (CPU/CUDA/Metal) permite levantar un endpoint `/v1` sin dependencias, útil en entornos restringidos.
+- Investigación sobre cuantización y decodificación restringida: el autor publica una escalera de cuantizaciones y mediciones de conformidad de esquema, lo que facilita reproducir experimentos sobre robustez de tool calling bajo cuantización agresiva.
+- Despliegue en hardware modesto con expectativas ajustadas: para máquinas por debajo de 20 GB, la propia model card recomienda empezar con un modelo menor (gemma-4-E2B-it-Q4_0) en lugar de este fichero.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks en la información disponible.
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La unica medicion documentada es la comparativa de motores ante truncamiento de tool calls, que muestra que xyntetik-runner devuelve llamadas ejecutables con presupuestos de 1 a 16 tokens, mientras que vLLM, llama.cpp, Ollama, TensorRT-LLM y SGLang fallan en ese rango. Tambien se reporta que la conformidad de esquema de tool calls se mantiene al 100 % hasta Q4_0, con degradacion de concordancia de argumentos al 50 %.
+La model card incluye únicamente mediciones de comportamiento de tool calling truncado por motor de inferencia, no benchmarks de calidad del modelo. Se reproducen a continuación por su relevancia para el despliegue:
+
+| Motor | Presupuesto insuficiente (1–16 tokens) | Presupuesto suficiente (64, control) |
+|---|---|---|
+| Runner | `tool_calls` ejecutables, argumentos parseables | completa |
+| vLLM 0.27.1 | sin llamada; el framing del protocolo se filtra en `content` | completa |
+| llama.cpp b10488 | sin llamada; filtración y luego `tool_calls` con argumentos no parseables | completa |
+| Ollama 0.32.14 | sin llamada; contenido vacío y luego HTTP 500 | completa |
+| TensorRT-LLM 1.2.1 (medido con sustituto Qwen3-1.7B) | sin llamada; filtración de `<tool_call>` y contenido vacío | completa |
+| SGLang 0.5.17 (medido con sustituto Qwen3-1.7B) | sin llamada; filtración de `<tool_call>` y contenido vacío | completa |
 
 ## Requisitos de hardware
-
-- VRAM estimada: el archivo GGUF pesa 17,5 GB; se recomienda al menos 20 GB de memoria usable (RAM o VRAM unificada).
-- GPUs compatibles: cualquier GPU con 20 GB o mas de VRAM (por ejemplo, RTX 4090 24 GB, A100 40 GB, H100). En Apple Silicon se ejecuta via Metal con memoria unificada.
-- No cabe en GPUs de consumo de gama baja (8-12 GB) sin cuantizaciones mas agresivas.
-- Opciones de despliegue: xyntetik-runner (recomendado, con recuperacion de truncamiento), o cualquier runtime que resuelva `num_experts` desde el archivo GGUF (por ejemplo, llama.cpp, Ollama, vLLM si soporta GGUF).
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Memoria: el fichero pesa 17,5 GB; el autor recomienda una máquina con aproximadamente 20 GB de memoria utilizable o más.
+- VRAM estimada: no disponible de forma explícita; por el tamaño del fichero, se requiere del orden de 17,5 GB para los pesos más overhead de contexto y runtime.
+- GPU recomendadas: no disponibles en la información proporcionada; el motor soporta CPU, CUDA y Metal.
+- ¿Cabe en GPU de consumo? No se confirma en la información proporcionada; el requisito declarado es de memoria utilizable (~20 GB), lo que deja fuera la mayoría de GPU de consumo con 8–16 GB.
+- Opciones de despliegue: xyntetik-runner (binario único C11, servidor compatible con OpenAI, CPU/CUDA/Metal) es el motor para el que el fichero está construido. Otros motores GGUF no se detallan en la información proporcionada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Expertos/capa | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3-Coder-30B-A3B-Instruct (base) | 28,7 B (3,3 B activos) | 128 | 32 768 (segun repo oficial) | Apache 2.0 | safetensors, GGUF |
-| Este derivado (keep120) | 28,7 B (3,3 B activos) | 120 | no disponible | Apache 2.0 | GGUF Q4_K_M |
-| Qwen3-Coder-480B-A35B-Instruct | 480 B (35 B activos) | no disponible | no disponible | Apache 2.0 | no disponible |
+| Qwen3-Coder-30B-A3B-Instruct-keep120 Q4_K_M (este) | 28,7B totales (120/128 expertos) | no disponible | Apache 2.0 | GGUF Q4_K_M | Podado de expertos; optimizado para xyntetik-runner |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct (padre) | ~30B (A3B activos) | no disponible | Apache 2.0 | safetensors | Modelo original sin podado; referencia de calidad |
+| gemma-4-E2B-it-Q4_0 (recomendado por el autor para equipos pequeños) | no disponible | no disponible | no disponible | GGUF Q4_0 | Alternativa para máquinas con menos de 20 GB |
 
-La diferencia clave frente al base es la poda de 8 expertos por capa, que reduce el tamano del archivo (18,6 GB a 17,5 GB) y el coste de memoria, con una posible perdida menor de calidad en dominios donde los expertos eliminados eran relevantes. No se han publicado metricas comparativas de rendimiento entre ambos.
+La comparación de rendimiento frente a estos modelos no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- La poda de expertos puede degradar el rendimiento en tareas especificas donde los expertos eliminados contribuian significativamente; no hay benchmarks que cuantifiquen esta perdida.
-- La recuperacion de truncamiento solo esta disponible con xyntetik-runner; otros motores no ofrecen esta garantia y pueden devolver llamadas malformadas.
-- La longitud de contexto no se confirma en este artefacto; se asume la del modelo base (32 768 tokens), pero no esta verificada.
-- El modelo es un derivado estructural, no un reentrenamiento; las capacidades de razonamiento y codigo son las heredadas del base, sin mejoras adicionales.
-- Compatibilidad limitada con runtimes que asumen 128 expertos para arquitectura qwen3moe; pueden fallar al cargar el archivo.
-- No se dispone de informacion sobre sesgos, alucinacion o restricciones de uso comercial mas alla de la licencia Apache 2.0 (que permite uso comercial sin restricciones, siempre que se mantenga el aviso de licencia).
+- El modelo es un derivado podado: se han eliminado 8 de los 128 expertos por capa, lo que puede degradar capacidades respecto al modelo padre en dominios poco representados; no se publican métricas de calidad que cuantifiquen esa pérdida.
+- La model card no documenta sesgos conocidos ni evaluación de alucinación; al ser un derivado de un modelo de código, cabe esperar los riesgos habituales de generación de código plausible pero incorrecto, sin datos concretos que lo respalden.
+- Idiomas soportados no declarados: no se puede confirmar el comportamiento multilingüe de este derivado.
+- Longitud de contexto no declarada en la información disponible, lo que impide planificar despliegues con prompts largos sin verificación empírica.
+- La decodificación restringida garantiza la forma de la llamada, no su contenido: la propia model card señala que la coincidencia de argumentos decae hasta el 50 % en Q4_0, por lo que las llamadas pueden ser sintácticamente válidas pero semánticamente erróneas.
+- Las mediciones de truncamiento comparan motores, pero dos de ellos (TensorRT-LLM y SGLang) se midieron con un sustituto Qwen3-1.7B; el propio autor aclara que la recuperación de truncamiento es propiedad del runtime, no del modelo.
+- Dependencia de un runtime concreto: el fichero está construido para xyntetik-runner y su comportamiento diferencial en tool calling no se reproduce en otros motores.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base y atribuir correctamente; la información proporcionada no incluye avisos adicionales del autor.
+- El repositorio incluye enlaces de donación y peticiones de contribución; son material promocional del autor y no afectan a la licencia, pero conviene separarlos de la documentación técnica.
 
 ## Enlaces
-
-- Repositorio Hugging Face del modelo: https://huggingface.co/Joakimpalm-Zen/Qwen3-Coder-30B-A3B-Instruct-keep120-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Joakimpalm-Zen/Qwen3-Coder-30B-A3B-Instruct-keep120-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
-- Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
-- Pagina de Ollama para qwen3-coder: https://ollama.com/library/qwen3-coder:30b-a3b-q4_K_M
-- Repositorio GitHub de xyntetik-runner: https://github.com/Joakimpalm-Zen/xyntetik-runner (referenciado en la model card; no verificado en la busqueda web)
-- Documento de benchmark de truncamiento: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md (referenciado en la model card; no verificado en la busqueda web)
+- Repositorio de xyntetik-runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
+- Documentación de modelos y conversión de xyntetik-runner: https://github.com/Joakimpalm-Zen/xyntetik-runner#models-and-conversion
+- Benchmark de truncamiento: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md
+- Roster de soporte del modelo: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/model-support.md#qwen3-coder-30b-a3b-instruct-keep120-q4_k_m
+- Resultados de la comunidad: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/community-results.md
+- Colección Runner Releases: https://huggingface.co/collections/Joakimpalm-Zen/runner-releases-6aa98baaed03bba0e8a561ae
+- Colección Pruning and Quantization Frontiers: https://huggingface.co/collections/Joakimpalm-Zen/xyntetik-research-pruning-and-quantization-frontiers-6aa98badc3307048c060ebe2
+- Caso negativo de contraste (Nemotron prune frontier): https://huggingface.co/datasets/Joakimpalm-Zen/Nemotron-3.5-Lightning-30B-A3B-prune-frontier-report
+- Alternativa para equipos pequeños: https://huggingface.co/Joakimpalm-Zen/gemma-4-E2B-it-Q4_0-GGUF
+- Perfil del autor en Hugging Face: https://huggingface.co/Joakimpalm-Zen

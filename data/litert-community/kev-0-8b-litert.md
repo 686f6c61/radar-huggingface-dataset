@@ -2,106 +2,104 @@
 
 ## Resumen
 
-Kev-0.8B-LiteRT es la version empaquetada para LiteRT (el framework on-device de Google, sucesor de TensorFlow Lite) del modelo de decision Kev-0.8B de Jared Palmer. No es un modelo generativo: recibe un texto (el "state") junto con preguntas tipadas sobre el y devuelve, para cada pregunta, una respuesta con probabilidades. Soporta tres tipos de pregunta: si/no (`noul`), eleccion multiple (`choice`) y puntuacion en escala (`score`). Nunca produce texto libre, solo clasifica.
+Kev-0.8B-LiteRT es la conversión a formato LiteRT (TFLite) del modelo de decisión Kev-0.8B, desarrollado originalmente por Jared Palmer y empaquetado por la comunidad litert-community. No se trata de un modelo generativo: lee un texto denominado "estado" y responde preguntas tipadas sobre él (sí/no, elección múltiple y puntuación) devolviendo probabilidades para cada opción. Nunca produce texto libre.
 
-El modelo se construye sobre el backbone Qwen3.5-0.8B-Base (aproximadamente 0.8B parametros), adaptado mediante una LoRA de rango 16, y anade una "pointer head" de dos capas lineales que lee los estados ocultos del transformer y los convierte en probabilidades. El repositorio de litert-community publica el backbone como tres grafos LiteRT (para filas de hasta 512, 1.024 y 2.048 tokens) con la LoRA ya plegada en los pesos, mas la cabeza, el tokenizador, un host en Python y los scripts de conversion.
+Arquitectónicamente, el modelo reutiliza el backbone de Qwen3.5-0.8B-Base al que se le ha adaptado una LoRA de rango 16 y sobre el que se ha añadido una "pointer head" de dos capas lineales que lee los estados ocultos y los convierte en distribuciones de probabilidad. La LoRA está fusionada en los pesos del backbone. Esta versión LiteRT descompone el modelo en ocho ficheros: seis grafos por filas (hasta 64, 128, 256, 512, 1.024 y 2.048 tokens) y dos pares de estado compartido (estado de hasta 128 o 256 tokens y preguntas de hasta 64 tokens cada una).
 
-Su relevancia esta en el despliegue on-device: es una pieza de clasificacion ligera pensada para integrarse en aplicaciones Android o de escritorio que necesitan tomar decisiones estructuradas (enrutado, cumplimiento de criterios, puntuacion) sin generar texto y sin depender de la nube. El repo ocupa 3,8 GB, cada grafo ronda los 1,26-1,28 GB, y la licencia es Apache 2.0.
+Su relevancia actual radica en que permite ejecutar clasificación y decisión estructurada completamente en dispositivo, con validación en CPU y GPU de Apple M4 Max, GPU y NPU de Galaxy S26, y soporte para Android, lo que lo hace adecuado para pipelines de enrutamiento, moderación o extracción de decisiones sin depender de la nube.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Qwen3.5-0.8B-Base) con LoRA rango 16 + pointer head de dos capas lineales |
-| Parametros totales | no disponible (backbone Qwen3.5-0.8B-Base, aproximadamente 0,8B en el modelo base) |
+| Arquitectura | Transformer (Qwen3.5-0.8B-Base) con pointer head de dos capas lineales y LoRA rango 16 fusionada |
+| Parametros totales | 0,8B (backbone) + pointer head (no disponible el recuento exacto) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | filas de hasta 2048 tokens (tres grafos: 512, 1024 y 2048) |
-| Tipos de cuantizacion | grafos con pesos `fp16fc_i8emb` (fully connected en fp16, embeddings en int8); cabeza en float32 |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | LiteRT (`.tflite`) para backbone; `safetensors` para la pointer head; tokenizer en JSON |
+| Longitud de contexto | Hasta 2.048 tokens por fila; modo par: estado hasta 256 tokens + preguntas hasta 64 tokens cada una |
+| Tipos de cuantizacion | Pesos LiteRT en float32 y float16 (`FP16_WITH_FP32_ACCUM` en GPU Android); no se documentan otras cuantizaciones |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | LiteRT/TFLite (8 ficheros); pointer head en safetensors; también disponible en Core ML, ONNX, GGUF, RKNN y MLX (repos de terceros) |
 
 ## Arquitectura y entrenamiento
 
-El sistema tiene dos partes. Por un lado, el backbone es Qwen/Qwen3.5-0.8B-Base, un transformer decoder, afinado con una LoRA de rango 16 segun describe la model card. Por otro, una pointer head de dos capas lineales (matrices `q.weight` [256, 1024] y `k.weight`, ambas en float32, mas sus sesgos) lee los estados ocultos del backbone y los transforma en probabilidades sobre las opciones de cada pregunta. No hay generacion autoregresiva: el modelo solo puntua alternativas.
+El modelo parte de Qwen3.5-0.8B-Base como backbone y aplica una adaptación LoRA de rango 16, posteriormente fusionada en los pesos. Sobre los estados ocultos del backbone se sitúa una pointer head compuesta por dos capas lineales que proyecta la representación hacia las opciones de cada pregunta, produciendo probabilidades normalizadas. El modelo no genera tokens de texto: el host construye las filas de entrada, ejecuta los grafos LiteRT y aplica la cabeza para obtener las respuestas.
 
-Los tres grafos LiteRT (`L512`, `L1024`, `L2048`) contienen los mismos pesos y difieren unicamente en la longitud de fila que admiten; devuelven estados ocultos y es el host (en Python) quien construye las filas de entrada y aplica la cabeza. La LoRA va plegada en los pesos cuantizados. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF/DPO; esos datos figuran como no disponibles. Los ficheros de conversion y verificacion, junto con una guia REPRODUCE.md, se incluyen en el repositorio.
+La conversión a LiteRT se organiza en ocho grafos: seis "row graphs" para filas de hasta 64, 128, 256, 512, 1.024 y 2.048 tokens, y dos "shared-state pairs" que ejecutan el estado una vez (hasta 128 o 256 tokens) y luego cada pregunta desde ese estado (hasta 64 tokens por pregunta). La versión del 2026-10-05 sustituyó el kernel de Gated DeltaNet por uno por chunks que reduce el grafo de 512 tokens de 20.873 a 8.327 operadores en fp32, con desviaciones máximas de 2,3e-5 en estados ocultos y 4,7e-6 en probabilidades respecto a la referencia PyTorch fp32, sin cambios en la opción más probable. No se documentan en la información disponible datos sobre volumen de tokens de entrenamiento, composición del dataset ni uso de RLHF/DPO para el modelo base.
 
 ## Capacidades
 
-- Clasificacion con respuestas tipadas: preguntas si/no (`noul`), eleccion multiple (`choice`) y puntuacion (`score`), cada una con su conjunto de probabilidades.
-- Decision estructurada sobre un "state" de texto: enrutado a categorias, comprobacion de criterios booleanos y valoracion en escala.
-- No genera texto: su salida son probabilidades y una opcion ganadora con nivel de confianza.
-- Soporte de filas largas: hasta 512, 1024 o 2048 tokens segun el grafo elegido.
-- Interface HTTP compatible con la forma `/v1/systemone` del servidor del autor.
-- Ejecucion on-device: grafos preparados para LiteRT en Android (incluye `android/CardSnippet.kt`) y host de referencia en Python.
-- Idiomas: solo ingles.
+- Clasificación de texto estructurada mediante preguntas tipadas: `noul` (sí/no), `choice` (elección múltiple con criterios etiquetados) y `score` (puntuación ordinal con leyenda).
+- Devolución de probabilidades calibradas por opción, no solo la etiqueta ganadora.
+- Modo de estado compartido: procesa un texto largo una vez y responde múltiples preguntas sobre él de forma eficiente.
+- Ejecución en dispositivo (on-device) en Android, con soporte de CPU, GPU y NPU.
+- Soporte de modos de ejecución `auto`, `row` y `pair` en el host de referencia.
+- Interfaz de petición/respuesta compatible con la forma `/v1/systemone` del servidor del autor.
+- Capacidades multilingües: limitadas a inglés según la model card.
+- No soporta generación de texto, tool calling ni razonamiento multi-paso generativo.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: clasificar cada ticket en equipos (facturacion, envios, devoluciones, tecnico) mediante preguntas `choice`, como muestra el ejemplo del repositorio con un ticket inventado.
-- Comprobacion de cumplimiento de criterios: usar preguntas `noul` para verificar si un texto cumple condiciones booleanas (por ejemplo, si menciona una fecha limite o si aporta un dato requerido).
-- Puntuacion de sentimiento o urgencia: preguntas `score` para valorar en una escala discreta el estado de animo del cliente o la severidad de una incidencia.
-- Asistentes locales en Android: integrado via LiteRT en una app nativa (el repo incluye un fragmento Kotlin) para tomar decisiones sin enviar datos a la nube.
-- Filtrado y triaje en pipelines de datos: clasificar grandes volumenes de texto corto con latencia baja al no requerir decodificacion generativa.
-- Moderacion o etiquetado asistido: aplicar criterios tipados a mensajes para asignar etiquetas discretas de forma reproducible.
-- Preprocesado en agentes: usar la salida categorica como senal de enrutado antes de invocar un modelo generativo mayor.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket como estado y responde preguntas de elección múltiple sobre el equipo responsable (facturación, envíos, devoluciones, técnico), como se muestra en el ejemplo de la model card con probabilidades por equipo.
+- Detección de plazos y compromisos: mediante preguntas `noul` se puede determinar si el cliente exige una acción antes de una fecha concreta, útil para priorización automática en sistemas de atención al cliente.
+- Análisis de sentimiento ordinal: con preguntas `score` (por ejemplo, "Calm", "Annoyed", "Angry") se obtiene una medida graduada del enfado del cliente, adecuada para escalado y alertas.
+- Moderación y clasificación de contenido: al ser un clasificador puro sin generación, permite etiquetar textos según políticas definidas con criterios explícitos, con menor riesgo de alucinación que un LLM generativo.
+- Extracción de decisiones en formularios y encuestas: convertir respuestas abiertas en categorías cerradas con probabilidades, ejecutándose localmente en el dispositivo sin enviar datos a la nube.
+- Procesamiento en dispositivo en Android: integrable mediante el host Python o el snippet Kotlin proporcionado, con ejecución en GPU (`FP16_WITH_FP32_ACCUM`) y NPU del Galaxy S26 para los grafos de 64, 128 y 256 tokens.
+- Clasificación por lotes con estado compartido: en escenarios donde muchas preguntas se refieren al mismo documento, el modo `pair` evita reprocesar el estado en cada consulta.
 
 ## Benchmarks y rendimiento
 
-La model card no publica benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.). Lo que aporta son mediciones de fidelidad de conversion frente a la referencia en PyTorch fp32 del autor. Estas cifras miden el acuerdo numerico de la conversion, no la precision de la tarea.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí reporta métricas de fidelidad frente a la referencia PyTorch fp32:
 
-| Prueba | Resultado |
-|---|---|
-| Preguntas de test | 392 |
-| Empates cercanos (dos opciones a 0,02 o menos en la referencia) | 15 de 392 |
-| Resto de preguntas (377) | el fichero dio la opcion mas probable de la referencia siempre, en las tres plataformas |
-| Empates cercanos (15) | 13 conservaron la respuesta de la referencia |
-| Diferencia maxima de probabilidad por opcion (incluidos empates) | 0,0104 |
-| Plataformas probadas | Apple M4 Max CPU (8 hilos), Apple M4 Max GPU Metal fp32 (ai-edge-litert 2.2.0), Galaxy S26 GPU FP32 (LiteRT 2.2.0) |
+| Entorno | Precisión | Desviación máxima en probabilidades | Filas con NaN |
+|---|---|---|---|
+| Apple M4 Max CPU | float32 | 0,0104 | no disponible |
+| Apple M4 Max GPU (Metal) | float32 | 0,0104 | no disponible |
+| Galaxy S26 GPU | FP16_WITH_FP32_ACCUM | 0,0110 | 0 |
+| Galaxy S26 NPU (HTP) | no disponible | 0,0134 | 0 |
+
+En todas las ejecuciones, salvo empates cercanos (diferencia ≤ 0,02 entre las dos opciones más probables en la referencia), todos los ficheros devolvieron la opción más probable de la referencia. Con la precisión por defecto de GPU (activaciones float16), los ficheros del 2026-10-04 produjeron NaN en 18 de 393 filas de test.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: cada grafo ocupa entre 1,26 GB (L512) y 1,29 GB (L2048) en disco; en memoria hay que sumar los pesos cargados mas los estados ocultos de la fila de entrada. Cabe holgadamente en hardware de gama alta movil.
-- GPU recomendadas: no se especifican modelos de escritorio; se ha validado en GPU Metal de Apple M4 Max (fp32) y en GPU de Galaxy S26 (FP32).
-- Consumer GPU: no hay datos concretos, pero el tamano del grafo (en torno a 1,3 GB) sugiere que es viable en GPU de consumo con suficiente VRAM; no confirmado en la informacion disponible.
-- Opciones de despliegue: LiteRT / ai-edge-litert (Android y escritorio), host Python incluido, y variantes de comunidad en Core ML, ONNX, GGUF, RKNN y MLX (contenidos no verificados por el autor de la model card).
-- Latencia y throughput: no disponibles; la model card solo confirma que el fichero L512 corrio en las plataformas citadas, sin cifras de latencia.
+- Tamaño del repositorio: 14,0 GB, lo que incluye los ocho grafos LiteRT, la pointer head, tokenizador, host Python, snippet Kotlin, fixtures y scripts de conversión.
+- VRAM/RAM estimada: no disponible de forma explícita; el tamaño del repo y los grafos de hasta 2.048 tokens sugieren requisitos de memoria considerables para el grafo mayor, aunque no se detallan cifras por fichero.
+- GPU recomendadas: no se documentan GPU de servidor (A100, H100); la validación se realizó en Apple M4 Max (CPU y GPU Metal) y en GPU/NPU de Galaxy S26.
+- Cabe en hardware de consumo: sí, con validación en Apple M4 Max y en un smartphone Android de gama alta (Galaxy S26); los grafos de 64, 128 y 256 tokens se ejecutan en la NPU Qualcomm HTP del S26.
+- Opciones de despliegue: LiteRT 2.2.0 con ai-edge-litert 2.2.0 (Python), APIs Kotlin y C para Android; también existen conversiones a Core ML, ONNX, GGUF, RKNN y MLX en repos de terceros no verificados por el autor.
+- Latencia y throughput: no disponibles en la información proporcionada; el ejemplo de respuesta incluye un campo `latency_ms` que se omite en la salida esperada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Backbone | Formatos | Idiomas | Licencia |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Formato |
 |---|---|---|---|---|---|
-| Kev-0.8B-LiteRT | Clasificacion por preguntas tipadas | Qwen3.5-0.8B-Base + LoRA | LiteRT (.tflite) | en | apache-2.0 |
-| jaredpalmer/kev-0.8b | Clasificacion por preguntas tipadas (referencia) | Qwen3.5-0.8B-Base + LoRA | PyTorch fp32 | en | no disponible |
-| litert-community/decider-0.8b-LiteRT | Clasificacion (variante comunitaria) | no disponible | LiteRT (.tflite) | no disponible | no disponible |
-| Kev-0.8B en otros runtimes (Core ML, ONNX, GGUF, RKNN, MLX) | Misma tarea | Qwen3.5-0.8B-Base + LoRA | Core ML, ONNX, GGUF, RKNN, MLX | en | no disponible |
+| Kev-0.8B-LiteRT | 0,8B | 2.048 tokens (fila) / 256+64 (par) | Clasificación y decisión estructurada | Apache 2.0 | LiteRT/TFLite |
+| jaredpalmer/kev-0.8b | 0,8B | no disponible | Clasificación y decisión estructurada | no disponible | PyTorch (referencia) |
+| FluidInference/kev-0.8b-coreml | 0,8B | no disponible | Clasificación y decisión estructurada | no disponible | Core ML |
+| midudev/kev-0.8b-ONNX | 0,8B | no disponible | Clasificación y decisión estructurada | no disponible | ONNX |
 
-Las diferencias de rendimiento entre estas variantes no estan publicadas en la informacion disponible.
+Las alternativas comparables son conversiones del mismo modelo base a otros formatos, no modelos distintos. No se dispone de información sobre modelos de clasificación de tamaño similar con los que comparar rendimiento de forma directa.
 
 ## Limitaciones y advertencias
 
-- No genera texto: cualquier caso de uso que requiera redaccion libre queda fuera de su alcance.
-- Solo ingles; no hay soporte multilingue declarado.
-- La ventana de contexto efectiva depende del grafo elegido (512, 1024 o 2048 tokens); textos mas largos deben truncarse o dividirse.
-- Los datos de entrenamiento, los sesgos y la composicion del dataset no se detallan en la model card: el riesgo de sesgo es, por tanto, no evaluado.
-- La evaluacion publicada es de fidelidad de conversion frente a la referencia fp32, no de precision en tareas reales; no debe interpretarse como medida de calidad del modelo.
-- Las variantes en otros formatos (Core ML, ONNX, GGUF, RKNN, MLX) no han sido verificadas por el autor de la model card; usarlas bajo tu propio riesgo.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar el fichero NOTICE y las condiciones del modelo base Qwen3.5-0.8B-Base, que pueden anadir requisitos de atribucion.
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere poca adopcion y validacion externa limitada.
+- Solo soporta inglés; no se garantiza comportamiento en otros idiomas.
+- No es un modelo generativo: no puede producir texto libre, resúmenes ni respuestas abiertas, únicamente probabilidades sobre opciones predefinidas.
+- Riesgo de empates cercanos: cuando las dos opciones más probables están a 0,02 o menos en la referencia, la opción devuelta puede variar entre ejecuciones o formatos.
+- En GPU con precisión float16 por defecto, versiones anteriores generaron NaN en 18 de 393 filas; es necesario usar float32 en escritorio o `FP16_WITH_FP32_ACCUM` en Android.
+- El soporte de NPU se limita a los grafos de 64, 128 y 256 tokens en el Galaxy S26 (Qualcomm HTP).
+- Las conversiones a Core ML, ONNX, GGUF, RKNN y MLX son de terceros y el autor declara no haber verificado su contenido.
+- Licencia Apache 2.0 permite uso comercial, pero debe revisarse el NOTICE y la licencia del modelo base Qwen3.5-0.8B-Base y del modelo original de Jared Palmer.
+- El repositorio ocupa 14,0 GB, lo que puede ser un inconveniente para despliegues con almacenamiento limitado.
+- No se han publicado benchmarks estándar que permitan evaluar su calidad frente a clasificadores alternativos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/litert-community/Kev-0.8B-LiteRT
-- Modelo base: https://huggingface.co/jaredpalmer/kev-0.8b
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Kev-0.8B-LiteRT
+- Modelo base original: https://huggingface.co/jaredpalmer/kev-0.8b
 - Backbone: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
-- Repositorio del autor (servidor y backend MLX): https://github.com/jaredpalmer/kev
-- Issue de exportacion LiteRT / Android: https://github.com/jaredpalmer/kev/issues/67
-- Organizacion LiteRT Community: https://huggingface.co/litert-community
-- Variante decider-0.8b-LiteRT: https://huggingface.co/litert-community/decider-0.8b-LiteRT
-- Google AI Edge LiteRT Samples: https://github.com/google-ai-edge/litert-samples
-- Core ML: https://huggingface.co/FluidInference/kev-0.8b-coreml
-- ONNX: https://huggingface.co/midudev/kev-0.8b-ONNX
-- GGUF: https://huggingface.co/ggml-org/Kev-0.8B-GGUF
-- RKNN: https://huggingface.co/ShiWarai/kev-0.8b-rknn
-- Ficha en gradually.ai: https://www.gradually.ai/en/ai-models/kev-0.8b/
+- Repositorio del servidor del autor: https://github.com/jaredpalmer/kev
+- Conversión Core ML: https://huggingface.co/FluidInference/kev-0.8b-coreml
+- Conversión ONNX: https://huggingface.co/midudev/kev-0.8b-ONNX
+- Conversión GGUF: https://huggingface.co/ggml-org/Kev-0.8B-GGUF
+- Conversión RKNN: https://huggingface.co/ShiWarai/kev-0.8b-rknn

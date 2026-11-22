@@ -2,104 +2,106 @@
 
 ## Resumen
 
-Nemotron-3.5-Bolt-E4B Topo-Governed FineWeb GGUF es una cuantización GGUF (Q4_K_M) del modelo NVIDIA Nemotron-3.5-Bolt-E4B-BF16, publicada por Frank Morales Aguilera a través de su laboratorio Sovereign Machine Laboratory (SOMALA). El repositorio combina los pesos cuantizados en 4 bits con un checkpoint personalizado de la capa de salida (`lm_head.pt`) gobernado por un mecanismo propio denominado Topological Continual Backpropagation (Topo-CBP), que según el autor elimina el olvido catastrófico y el desplazamiento de representaciones durante el aprendizaje continuo sobre el corpus FineWeb.
+`nemotron-3.5-bolt-e4b-topo-governed-fineweb-gguf` es una cuantización GGUF Q4_K_M del checkpoint `NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` de NVIDIA, publicada por Frank Morales Aguilera (Sovereign Machine Laboratory, SOMALA). El artefacto integra el modelo base con un `lm_head.pt` propio gobernado por Topological Continual Backpropagation (Topo-CBP), una técnica que el autor presenta como libre de olvido catastrófico y con deriva de representación nula. El paquete pesa aproximadamente 5,34 GB y está pensado para ejecución en CPU convencional mediante `llama.cpp` y `llama-cpp-python`, sin necesidad de clústeres multi-GPU ni APIs en la nube.
 
-La propuesta central del modelo es resolver el dilema estabilidad-plasticidad: en lugar de reentrenar libremente los pesos, el autor ancla la dinámica de los parámetros a coordenadas invariantes basadas en números primos (P = {2, 3, 5, 7, 11, 13}) con un factor de atenuación de Euler (Λ ≈ 0,9785142874), de modo que el ajuste secuencial ocurre supuestamente en dimensiones ortogonales del manifold sin alterar la geometría de los pesos fundacionales. El autor reporta un desplazamiento de representación nulo (Δ_drift = 0,000000000000), aunque estos resultados provienen únicamente de su propia batería de validación y no han sido verificados de forma independiente.
+El modelo declara arquitectura Gemma 4 con 7.518.069.290 parámetros totales, contexto de 65.536 tokens, 42 bloques de atención, dimensión de embedding de 2.560 y feed-forward de 10.240. Su orientación declarada es la de una puerta de seguridad supervisora para robótica encarnada y sistemas ciberfísicos, con énfasis en determinismo bare-metal, auditoría cinemática semántica y sellado de estado mediante SHA-256 en el host.
 
-El caso de uso principal que describe la model card es la ejecución en CPU de prestaciones reducidas (bare-metal) como puerta de supervisión de seguridad para robótica embodied y sistemas ciberfísicos, con compatibilidad declarada con estándares como DO-178C (aviónica) e ISO 26262 (ASIL-D). Con unos 7.518 millones de parámetros, 65.536 tokens de contexto y un archivo de ~5,34 GB, es un candidato interesante para inferencia local en edge, aunque conviene tratar con escepticismo las afirmaciones de certificación, dado que son declaraciones del autor y no certificaciones oficiales.
+Es relevante ahora porque propone un patrón poco habitual: separar la auditoría semántica (red neuronal) del enclavamiento bit a bit (hardware del host), y demostrar que un modelo de 7,5 mil millones de parámetros puede ejecutarse en un techo de memoria declarado de ~8,1 GB RSS en CPU. Conviene señalar que las afirmaciones de invariancia topológica y deriva cero provienen exclusivamente de la model card del autor y no están contrastadas con evaluaciones independientes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (`gemma4`), base NVIDIA Nemotron-3.5-Bolt-E4B |
-| Parametros totales | 7.518.069.290 (dato real de safetensors) |
-| Parametros activos | no disponible (el sufijo "E4B" sugiere arquitectura MoE con ~4B activos, pero no esta confirmado en la informacion proporcionada) |
-| Longitud de contexto | 65.536 tokens (evaluado a 2.048 para puertas de baja latencia en edge) |
-| Tipos de cuantizacion | Q4_K_M (GGUF v3, 4 bits medios, File Type 15) |
-| Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (OpenMDW, etiquetada como "other" en Hugging Face) |
-| Formato de pesos | GGUF (~5,34 GB) y safetensors en el checkpoint derivado |
-
-Datos adicionales de la model card:
-
-| Parametro | Valor |
-|---|---|
-| Embedding length | 2.560 |
-| Feed-forward length | 10.240 |
-| Capas de atencion | 42 |
-| Modelo base | nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 |
-| Framework gobernante | Topo-CBP (anclas primas y atenuacion de Euler) |
-| Techo de memoria declarado | ~8,1 GB RSS en CPU |
+| Arquitectura | Gemma 4 (`gemma4`), transformer denso con 42 bloques de atención |
+| Parametros totales | 7.518.069.290 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 65.536 tokens (evaluado a 2.048 para puertas de borde de baja latencia) |
+| Tipos de cuantizacion | GGUF Q4_K_M (4 bits medio, GGUF v3, File Type 15) |
+| Idiomas soportados | No disponible |
+| Licencia | OpenMDW 1.1 (`openmdw-1.1`) |
+| Formato de pesos | GGUF (contenedor `nemotron-3.5-bolt-topo-governed-Q4_K_M.gguf`, ~5,34 GB); el checkpoint fuente se distribuye en safetensors |
+| Modelo base | `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` |
+| Checkpoint fuente | `frankmorales2020/nemotron-3.5-bolt-e4b-topo-governed-fineweb` |
+| Dimension de embedding | 2.560 |
+| Dimension feed-forward | 10.240 |
+| Mecanismo de gobierno | Topo-CBP con anclas de coordenadas primas y atenuación de Euler |
+| Tamano del repositorio | 5,3 GB |
+| Pipeline declarado | robotics |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es NVIDIA Nemotron-3.5-Bolt-E4B, implementada sobre la arquitectura Gemma 4 (`gemma4`), con 42 capas de atencion, longitud de embedding de 2.560 y longitud feed-forward de 10.240. La model card no detalla si la variante E4B es una mezcla de expertos (MoE) ni cuantos parametros estan activos por token, por lo que ese dato no esta disponible.
+La arquitectura base es un transformer denso de tipo Gemma 4 con 42 bloques de atención, dimensión de embedding de 2.560 y capas feed-forward de 10.240, sobre el checkpoint BF16 de NVIDIA. Sobre esa base, el autor sustituye la cabeza de lenguaje por un `lm_head.pt` entrenado con Topological Continual Backpropagation (Topo-CBP). Este mecanismo acopla retropropagación continua con un gobernador topológico geométrico que ancla los parámetros fundamentales a coordenadas primas invariantes (P = {2, 3, 5, 7, 11, 13}) atenuadas por una constante de Euler (Λ ≈ 0,9785142874). La afirmación central es que la adquisición secuencial de datos se produce sobre dimensiones ortogonales válidas del manifold, de modo que la geometría de pesos previa queda intacta.
 
-El ajuste se realizo sobre el corpus FineWeb mediante el framework Topo-CBP (Topological Continual Backpropagation), desarrollado en SOMALA. Segun el autor, este mecanismo acopla la retropropagacion continua con un gobernador geometrico topologico que usa anclas de coordenadas primas invariantes (P = {2, 3, 5, 7, 11, 13}) atenuadas por el factor de Euler (Λ ≈ 0,9785142874). La consecuencia declarada es que el aprendizaje secuencial ocurre a lo largo de dimensiones ortogonales validas del manifold, sin modificar la geometria de los pesos fundacionales ni degradar capacidades previas. La model card tambien describe una separacion de responsabilidades: la auditoria cinematica semantica corre en la red neuronal, mientras que los pestillos de hardware inmutables se sellan mediante hashing SHA-256 del estado en el host. No hay informacion sobre RLHF, DPO ni composicion detallada del dataset de entrenamiento.
+El autor no documenta el volumen de tokens de entrenamiento, la composición exacta del dataset (más allá de la referencia a FineWeb en el nombre del checkpoint), ni si hubo fases de RLHF, DPO o ajuste por preferencias. Tampoco se detalla el procedimiento de calibración de la cuantización Q4_K_M ni las métricas de perplejidad tras la cuantización. La innovación técnica declarada se limita al gobernador Topo-CBP y a la separación de responsabilidades entre auditoría semántica neuronal y enclavamiento bit a bit mediante hashing SHA-256 en el host. No se mencionan decodificación especulativa, atención lineal ni mecanismos híbridos SSM.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline etiquetado como `conversational` en Hugging Face).
-- Razonamiento multi-turno con esquemas ReAct, validado por el autor en su batería de 8 etapas con `seed=123` y `temperature=0.0`.
-- Auditoria cinematica semantica para robótica: supervision de limites de par (torque) y deteccion de violaciones de frontera en sistemas ciberfisicos.
-- Ejecucion determinista en CPU mediante `llama.cpp` y `llama-cpp-python`, orientada a entornos aislados (air-gapped).
-- Compatibilidad declarada con herramientas del ecosistema GGUF: llama.cpp, Ollama y cuadernos de demostracion agentic y de integracion con ROS 2 publicados por el autor.
-- Aprendizaje continuo sin olvido catastrofico segun el framework Topo-CBP (afirmacion del autor, no verificada independientemente).
-- No hay informacion sobre capacidades de vision, audio, tool calling nativo ni soporte multilingue explicito.
+- Generación de texto conversacional en formato instructivo, según el tag `conversational` del repositorio.
+- Auditoría semántica de cinemática para robótica: el autor la describe como puerta de seguridad supervisora sobre políticas de control.
+- Razonamiento multi-paso orientado a agentes, con demos específicos de ejecución agéntica en el repositorio de código del autor.
+- Integración con ROS 2 mediante un ejecutor documentado (`nemotron_gguf_ros2_executor.ipynb`).
+- Ejecución determinista en CPU bare-metal a través de `llama.cpp` y `llama-cpp-python`.
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponible en la información proporcionada.
+- Cobertura multilingüe: no disponible; el repositorio no declara lista de idiomas.
 
 ## Casos de uso
 
-- Puerta de supervisión de seguridad en robótica: el modelo actúa como "executive safety gate" que audita semánticamente comandos cinemáticos antes de su ejecución, previniendo según el autor alucinaciones de límites de par y brechas de frontera en sistemas ciberfísicos.
-- Inferencia en edge con NVIDIA Jetson: la cuantización Q4_K_M (~5,34 GB) y el techo de memoria de ~8,1 GB RSS lo hacen viable en Jetson Orin/Thor para robótica embodied y simul-to-real con Isaac Sim/Isaac Gym.
-- Despliegue en PLCs industriales y entornos aislados: al ejecutarse en CPU x86/ARM con 4 o más hilos, sin dependencia de nube ni multi-GPU, encaja en plantas industriales sin conectividad externa.
-- Prototipado de agentes con ROS 2: el autor publica un cuaderno (`nemotron_gguf_ros2_executor.ipynb`) que integra el GGUF como executor en la pila ROS 2, útil para experimentar con control de robots basado en LLM.
-- Investigación en aprendizaje continuo: el checkpoint Topo-CBP sirve como artefacto de estudio del dilema estabilidad-plasticidad y de la retropropagación continua sobre modelos fundacionales, con código abierto en GitHub.
-- Razonamiento multi-turno determinista en local: con `temperature=0.0` y semilla fija, el modelo se orienta a flujos reproducibles (auditoría, cumplimiento, generación de esquemas ReAct) donde la determinismo importa más que la creatividad.
-- Atención al cliente o asistentes conversacionales en hardware modesto: la ventana de 65.536 tokens permite gestionar conversaciones largas multi-turno en una sola GPU de consumo o incluso CPU, aunque sin datos de calidad conversacional publicados.
+- Puerta de seguridad en robótica encarnada: el modelo actúa como supervisor semántico que valida comandos cinemáticos antes de que se ejecuten en el controlador de bajo nivel, con el enclavamiento final delegado a latches hardware sellados por SHA-256. Es adecuado porque el autor lo diseña explícitamente para prevenir alucinaciones de límite de par y violaciones de frontera operativa.
+- Adquisición secuencial de tareas sin reentrenamiento destructivo: en flotas de robots que reciben nuevas habilidades de forma incremental, Topo-CBP promete conservar las capacidades previas sin deriva de representación, evitando el olvido catastrófico que obligaría a reentrenar desde cero.
+- Despliegue en NVIDIA Jetson Orin y Thor: con ~5,34 GB de pesos y un techo declarado de ~8,1 GB RSS, encaja en módulos embebidos de borde para inferencia local sin conectividad a la nube.
+- Integración en pipelines ROS 2: el ejecutor documentado permite conectar la inferencia GGUF con topics y servicios de ROS 2 para tareas de planificación y validación de trayectorias.
+- Simulación a real (sim-to-real) en Isaac Sim e Isaac Gym: el modelo puede emplearse como capa de verificación semántica entre la política entrenada en simulación y la ejecución física, filtrando comandos inconsistentes con los límites del robot.
+- Automatización en PLCs industriales y sistemas ciberfísicos: la ejecución determinista en CPU x86/ARM con `llama.cpp` permite incrustar el modelo en entornos de control donde no se admite una GPU dedicada ni dependencias cloud.
+- Asistente conversacional de borde con contexto largo: los 65.536 tokens de ventana permiten mantener historiales extensos de telemetría o incidencias en un único contexto, aunque el autor recomienda evaluar a 2.048 tokens para puertas de baja latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card menciona una "batería de validación empírica" propia de 8 etapas (validación de permanencia de esquemas ReAct, verificación de coordenadas primas sin deriva de formato mediante SHA-256, entre otras) ejecutada con `seed=123` y `temperature=0.0`, pero no incluye métricas comparables con otros modelos ni resultados verificables de forma independiente.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones de robótica, y tampoco reporta perplejidad antes o después de la cuantización Q4_K_M. Las afirmaciones de deriva cero (Δ_drift = 0,000000000000) son una propiedad declarada del mecanismo Topo-CBP, no un resultado de benchmark reproducible con la información publicada.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada para inferencia: ~5,34 GB para el archivo GGUF Q4_K_M; la model card declara un techo de ~8,1 GB RSS de memoria residente durante la ejecución. Al ser un artefacto orientado a CPU, también funciona sin GPU dedicada.
-- GPUs recomendadas: no se especifican GPUs concretas; el objetivo declarado es CPU de consumo (x86/ARM, 4+ hilos), Jetson Orin/Thor y PLCs industriales. Cualquier GPU con 8 GB o más de VRAM (por ejemplo RTX 3060/4060 o superiores) debería ejecutarlo sin problemas vía llama.cpp.
-- Consumer GPUs: cabe holgadamente en GPUs de 8 GB; no requiere tarjetas de gama datacenter (A100/H100) para inferencia.
-- Opciones de despliegue: llama.cpp y llama-cpp-python (vía principal declarada), Ollama (etiquetado en el repo), y los cuadernos de demostración del autor en GitHub. No hay menciones a vLLM ni TGI.
-- Latencia y throughput: no disponible; la model card solo indica que el contexto se evalúa a 2.048 tokens para puertas de baja latencia en edge.
+- VRAM estimada para inferencia: no aplica en el modo principal, que es ejecución en CPU; el repositorio declara un techo de memoria de ~8,1 GB RSS con el fichero GGUF de ~5,34 GB.
+- GPU recomendadas: no especificadas por el autor; el artefacto está orientado a CPU x86/ARM y a módulos NVIDIA Jetson Orin/Thor.
+- Cabe en GPU de consumo: no confirmado; el autor no documenta despliegue en RTX 4090, RTX 3090 ni similares. Por tamaño de pesos (5,34 GB en Q4_K_M), cabría en GPUs con 8 GB o más de VRAM si el runtime lo soporta, pero esto no está verificado en la información disponible.
+- Opciones de despliegue: `llama.cpp`, `llama-cpp-python`, Ollama (etiquetado en el repositorio). No se mencionan vLLM ni TGI.
+- Latencia y throughput: no disponibles. El autor solo indica que recomienda 2.048 tokens de contexto para puertas de borde de baja latencia, sin cifras de tokens por segundo.
+- Requisito mínimo declarado: CPU convencional con 4 o más hilos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Bolt-E4B Topo-Governed FineWeb GGUF | 7.518 M (total) | 65.536 | Q4_K_M (GGUF) | openmdw-1.1 | Enfoque en aprendizaje continuo y robótica edge; benchmarks estandarizados no disponibles |
-| NVIDIA Nemotron-3.5-Bolt-E4B-BF16 (base) | no disponible | 65.536 (según derivado) | BF16 | Licencia NVIDIA (other) | Modelo fundacional oficial de NVIDIA, pesos en precisión completa (~15 GB) |
-| Gemma 3 4B (Google) | ~4.000 M | 128.000 | BF16, GGUF (varias) | Gemma Terms of Use | Misma familia arquitectónica declarada (Gemma), amplio soporte de ecosistema y benchmarks publicados |
+| `frankmorales2020/nemotron-3.5-bolt-e4b-topo-governed-fineweb-gguf` | 7.518.069.290 | 65.536 | Q4_K_M GGUF | OpenMDW 1.1 | Gobernanza Topo-CBP para robótica de borde |
+| `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` (base) | No disponible en la informacion | No disponible en la informacion | BF16 | No disponible en la informacion | Modelo fundacional de NVIDIA sin gobernador Topo-CBP |
+| `frankmorales2020/nemotron-3.5-bolt-e4b-topo-governed-fineweb` (checkpoint fuente) | No disponible en la informacion | No disponible en la informacion | Safetensors (precisión completa) | No disponible en la informacion | Mismo gobierno Topo-CBP, sin cuantizar |
 
-Nota: la comparativa es orientativa; el modelo derivado añade el framework Topo-CBP del autor sobre la base de NVIDIA, y no existen evaluaciones independientes que permitan comparar rendimiento real frente a las alternativas.
+No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes ni frente a alternativas de otros laboratorios. La comparación se limita a parámetros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Las afirmaciones de "cero deriva" y "libre de olvido catastrófico" (Δ_drift = 0) provienen exclusivamente del autor y de su propia batería de validación; no hay verificación independiente ni revisión por pares publicada en la información disponible.
-- Los conceptos de Topo-CBP (anclas de coordenadas primas, atenuación de Euler, invariancia certificada) no corresponden a técnicas establecidas en la literatura mainstream de aprendizaje continuo; su validez teórica y práctica debe evaluarse con cautela.
-- La compatibilidad declarada con DO-178C e ISO 26262 (ASIL-D) es una afirmación del autor sobre estándares de ejecución, no una certificación oficial obtenida; no debe usarse como argumento de seguridad certificada en producción crítica.
-- No hay benchmarks estandarizados publicados, por lo que la calidad de generación, razonamiento y código del modelo derivado es desconocida frente al modelo base.
-- Idiomas soportados no disponibles; no hay garantía de rendimiento en castellano ni en otros idiomas.
-- La licencia openmdw-1.1 es poco común; conviene revisar sus términos concretos (https://openmdw.ai/license/1-1/) antes de cualquier uso comercial.
-- El repo tiene muy poca tracción (243 descargas, 2 likes), sin comunidad que haya validado el artefacto.
-- Riesgo de alucinación: no disponible como medición; para el rol de "safety gate" en robótica, el propio diseño contempla pestillos de hardware como barrera adicional, lo que sugiere que el autor no considera fiable al modelo en solitario.
-- Solo se distribuye la cuantización Q4_K_M; no hay variantes de mayor o menor precisión en este repositorio.
+- Las afirmaciones de olvido catastrófico nulo y deriva cero (Δ_drift = 0,000000000000) proceden únicamente de la model card del autor y no han sido verificadas de forma independiente en la información disponible.
+- La licencia OpenMDW 1.1 es una licencia de pesos abiertos con términos propios; es imprescindible revisar el texto completo en openmdw.ai antes de cualquier uso comercial, ya que el repositorio la etiqueta simultáneamente como `other` y `openmdw-1.1`.
+- No se documenta la lista de idiomas soportados, lo que impide garantizar calidad multilingüe en producción.
+- No se publican métricas de perplejidad ni evaluaciones de calidad tras la cuantización Q4_K_M, por lo que se desconoce la degradación respecto al checkpoint BF16.
+- El pipeline declarado es `robotics`, no `text-generation`; el uso como modelo conversacional general no está validado por el autor.
+- El repositorio tiene un volumen bajo de adopción (604 descargas y 3 likes en la fecha de actualización), lo que reduce la base de validación comunitaria.
+- La terminología de la model card (coordenadas primas, atenuación de Euler, invariancia certificada) no viene acompañada de derivaciones matemáticas ni de código de verificación en la información proporcionada.
+- El contexto de 65.536 tokens está declarado, pero el autor solo reporta evaluación a 2.048 tokens; el comportamiento en ventanas largas no está documentado.
+- No se especifican sesgos conocidos ni evaluaciones de seguridad o alineamiento.
 
 ## Enlaces
 
-- Modelo GGUF: https://huggingface.co/frankmorales2020/nemotron-3.5-bolt-e4b-topo-governed-fineweb-gguf
-- Checkpoint derivado (origen): https://huggingface.co/frankmorales2020/nemotron-3.5-bolt-e4b-topo-governed-fineweb
-- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Repositorio Hugging Face: https://huggingface.co/frankmorales2020/nemotron-3.5-bolt-e4b-topo-governed-fineweb-gguf
+- Checkpoint fuente en Hugging Face: https://huggingface.co/frankmorales2020/nemotron-3.5-bolt-e4b-topo-governed-fineweb
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-- Código 1 (conversión GGUF): https://github.com/frank-morales2020/AST/blob/main/GGUF_NEMO.ipynb
-- Código 2 (demo agéntica): https://github.com/frank-morales2020/AST/blob/main/nemotron_agentic_demo.ipynb
-- Código 3 (executor ROS 2): https://github.com/frank-morales2020/AST/blob/main/nemotron_gguf_ros2_executor.ipynb
-- Artículo 1 (arquitectura de la permanencia en edge): https://medium.com/ai-simplified-in-plain-english/the-architecture-of-permanence-resolving-the-stability-plasticity-dilemma-on-edge-silicon-for-14cb58e983d7
-- Artículo 2 (invariantes matemáticos y seguridad ciberfísica): https://medium.com/ai-simplified-in-plain-english/the-architecture-of-permanence-from-mathematical-invariants-to-cyber-physical-safety-9488a6cba4e8
+- Codigo de cuantizacion GGUF: https://github.com/frank-morales2020/AST/blob/main/GGUF_NEMO.ipynb
+- Demo agentica: https://github.com/frank-morales2020/AST/blob/main/nemotron_agentic_demo.ipynb
+- Ejecutor ROS 2: https://github.com/frank-morales2020/AST/blob/main/nemotron_gguf_ros2_executor.ipynb
+- Script de inferencia: https://github.com/frank-morales2020/AST/blob/main/inference3.py
+- Articulo 1 (dilema estabilidad-plasticidad en silicio de borde): https://medium.com/ai-simplified-in-plain-english/the-architecture-of-permanence-resolving-the-stability-plasticity-dilemma-on-edge-silicon-for-14cb58e983d7
+- Articulo 2 (de invariantes matematicos a seguridad ciberfisica): https://medium.com/ai-simplified-in-plain-english/the-architecture-of-permanence-from-mathematical-invariants-to-cyber-physical-safety-9488a6cba4e8
+- Articulo 3 (IA soberana en el borde): https://medium.com/ai-simplified-in-plain-english/sovereign-ai-in-action-the-architecture-of-permanence-at-the-edge-e17d4c8ae20e
+- Articulo 4 (determinismo en pipeline clinico multiagente): https://medium.com/ai-simplified-in-plain-english/the-architecture-of-determinism-governing-the-multi-agent-clinical-pipeline-5d83a08c36a7

@@ -2,108 +2,113 @@
 
 ## Resumen
 
-LFM3-Omni-2B-LiteRT es la conversión a formato LiteRT del modelo omnilmodal LFM3-Omni-2B de Liquid AI, publicada por la organización litert-community de Google. Se trata de un modelo multimodal "any-to-any" de 2,17 mil millones de parámetros capaz de leer texto, imágenes y audio, y responder en texto o voz. Esta versión empaqueta el modelo en un único archivo `.litertlm` para ejecutarse con el runtime LiteRT-LM de Google en dispositivos edge (móviles y ordenadores de escritorio), sin depender de la nube.
+LFM3-Omni-2B-LiteRT es la conversión al formato LiteRT del modelo multimodal LFM3-Omni-2B de Liquid AI, publicada por la comunidad litert-community. Se trata de un modelo any-to-any de 2,17 mil millones de parámetros (BF16 en origen) que acepta texto, imagen, vídeo y audio como entrada, y produce respuestas en texto o en voz sintetizada. El objetivo de esta versión es el despliegue on-device: un único fichero `.litertlm` de 3,23 GB (decoder en int8) que se ejecuta con el runtime LiteRT-LM de Google en CPU o GPU de dispositivos móviles, más una serie de grafos TFLite y un runner en Python para la salida de voz.
 
-Su relevancia reside en resolver el problema de desplegar modelos omnilmodales completos en hardware de consumo: la conversión mantiene la fidelidad del modelo original (coincidencia de siguiente token del 99 % respecto al modelo fuente en float32) y ofrece mediciones reales de rendimiento en dispositivos como el Galaxy S26 y el Pixel 8a, con decodificación de 27 tokens por segundo en GPU móvil. Es una de las pocas opciones open source que combinan entrada de imagen, audio y texto con salida de voz en un paquete on-device tan ligero.
+La relevancia de esta ficha es doble. Por un lado, demuestra que un modelo omni de 2B puede correr en un teléfono con latencias utilizables: en un Galaxy S26 con GPU, LiteRT-LM 0.18.1 y contexto de 4.096 tokens, alcanza 1.139 tok/s de prefill, 27,0 tok/s de decodificación y un time-to-first-token de 0,93-0,94 s. Por otro lado, documenta con detalle las limitaciones de la conversión: la salida de voz requiere un pipeline Python aparte, la entrada de vídeo solo está soportada por la muestra Android `photo_voice_chat`, y la NPU no está soportada en esta versión.
 
-La arquitectura subyacente es la familia LFM (Liquid Foundation Models) de Liquid AI, con 2,17 mil millones de parámetros en BF16 en el modelo fuente y una ventana de contexto de 4.096 tokens en esta conversión.
+El modelo base es de Liquid AI y mantiene su licencia LFM1.0 (lfm1.0), que no es una licencia open source estándar y condiciona el uso comercial. Los pesos originales están disponibles en BF16 y en GGUF en el repositorio del proveedor; este repositorio es únicamente la forma LiteRT.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LFM3 (Liquid Foundation Models) omnilmodal, any-to-any, con encoders de visión y audio integrados |
-| Parametros totales | 2,17 B (BF16, modelo fuente) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | No disponible (modelo multimodal any-to-any; decoder transformer convertido a LiteRT; encoders de visión y audio integrados en el fichero int8) |
+| Parámetros totales | 2,17 B (BF16 en el modelo base) |
+| Parámetros activos | No disponible |
 | Longitud de contexto | 4.096 tokens |
-| Tipos de cuantizacion | int8 (decodificador en el archivo `.litertlm`), f32 (grafos de voz), fp16/fp32 (activaciones en GPU) |
-| Idiomas soportados | ingles (en) |
-| Licencia | LFM Open License v1.0 (lfm1.0, "other") |
-| Formato de pesos | `.litertlm` (LiteRT-LM), `.tflite` (grafos de voz), safetensors en el modelo fuente; GGUF publicado por LiquidAI |
+| Tipos de cuantización | Decoder en int8 en el fichero `.litertlm`; grafos de voz en float32; activaciones fp16 (por defecto) o fp32 en GPU |
+| Idiomas soportados | Inglés (en) |
+| Licencia | LFM1.0 (license_name: lfm1.0, license: other) |
+| Formato de pesos | `.litertlm` (LiteRT-LM), `.tflite` (grafos de voz), `.npy` (ventana de overlap-add), `tokenizer.json`; GGUF disponible en el repositorio del modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es LFM3-Omni-2B de Liquid AI, un modelo any-to-any que procesa texto, imágenes, vídeo y audio, y genera texto o voz. Esta conversión de litert-community incluye el decodificador principal cuantizado a int8 dentro de un archivo `.litertlm`, con los encoders de visión y audio integrados en el mismo paquete. La salida de voz se implementa mediante grafos LiteRT independientes: un decodificador de profundidad (depth decoder) que revela los 12 códigos de cada fotograma de 80 ms en tres llamadas, un módulo de embedding de fotograma y un decodificador de códec de audio que reconstruye la señal (12 fotogramas por llamada = 0,96 s de audio).
+La información disponible no detalla la arquitectura interna del modelo base más allá de su naturaleza multimodal any-to-any: recibe texto, imagen, vídeo y audio, y genera texto o voz. El repositorio LiteRT incluye el decoder cuantizado a int8 junto con los encoders de visión y audio dentro del fichero `.litertlm`, y separa la síntesis de voz en grafos TFLite independientes: un depth decoder por paso (`depth_step_f32`), un depth decoder por trama de 80 ms con las tres pasadas y el muestreo de los 12 códigos embebidos en el grafo (`depth_frame2_f32`, con temperatura 0,4 y penalización de repetición 1,2 como constantes), un embedding de trama (`frame_embed_f32`) y un decoder de códec de audio a 12 tramas (0,96 s) o 1 trama por llamada.
 
-El audio de entrada se lee en ventanas de 30 segundos, y las grabaciones se procesan como WAV mono de 16 kHz y 16 bits. No se dispone de información sobre el proceso de entrenamiento del modelo fuente (número de tokens, composición del dataset, RLHF/DPO) en la documentación proporcionada. La conversión se realizó desde la revisión `ce2458cb` del modelo fuente.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La conversión se realizó desde la revisión `ce2458cb` del modelo base en BF16. La innovación técnica destacable de esta versión es el propio pipeline de despliegue: un decoder int8 en un único fichero LiteRT-LM para texto, imagen y audio, más un conjunto de grafos TFLite que implementan el códec de voz con ventana de overlap-add y un runner Python que define el contrato de los grafos.
 
 ## Capacidades
 
-- Respuestas en texto a partir de texto, imágenes o audio (reconocimiento de voz, preguntas sobre grabaciones).
-- Salida de voz: síntesis de texto a voz (TTS) y respuestas habladas intercaladas con el texto.
-- Procesamiento de audio largo: grabaciones de más de 30 s se leen en ventanas de 30 s mientras quepan en el contexto de 4.096 tokens (una grabación de 251 s cabe; una de 502 s no).
-- ASR (transcripción de audio a texto) mediante instrucciones de sistema.
-- Entrada de imagen: descripción y preguntas sobre fotografías.
-- Ejecución completamente on-device en CPU y GPU móvil mediante LiteRT-LM 0.18.1.
-- No soportado en esta versión: entrada de vídeo y aceleración por NPU.
+- Generación de texto a partir de texto, imagen o audio (entrada de audio leída en ventanas de 30 s).
+- Respuesta en voz sintetizada (text-to-speech) mediante los grafos TFLite y el runner Python.
+- Entrada de vídeo limitada: los primeros 13 s de un vídeo, una imagen por segundo con su audio, solo a través de la muestra Android `photo_voice_chat`.
+- Comprensión de imágenes para preguntas y respuestas visuales.
+- Reconocimiento automático de habla (ASR) en inglés, invocable mediante prompt de sistema.
+- Modo de respuesta intercalada texto/voz (`--speech interleaved`).
+- Capacidades multilingües: únicamente inglés.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, audio de salida en tiempo real o visión de vídeo completa: no disponibles.
 
 ## Casos de uso
 
-- Asistentes de voz en móvil: el modelo transcribe la pregunta hablada y genera una respuesta hablada on-device, sin enviar audio a la nube, con latencia media de 3,1 s desde el fin de la pregunta hasta el primer sonido en un Galaxy S26.
-- Transcripción de audio (ASR): mediante una instrucción de sistema "Perform ASR in English" se puede transcribir grabaciones largas (hasta ~250 s) en ventanas de 30 s, útil para notas de voz y dictado.
-- Analisis de imágenes en la periferia: preguntas sobre fotografías locales (por ejemplo, identificar animales u objetos) sin subir las imágenes, adecuado para apps de accesibilidad o inventario fotográfico.
-- Chat multimodal privado: conversaciones que combinan texto, imagen y audio con garantía de privacidad, ya que todo el procesamiento ocurre en el dispositivo.
-- Texto a voz embebido: generación de locuciones a partir de texto (0,48-0,50 s de cómputo por segundo de audio en un Mac M4 Max) para narración, avisos o interfaces manos libres.
-- Prototipado de agentes edge: el paquete incluye un runner de Python, fixtures con comprobaciones y un ejemplo de línea de comandos, lo que facilita integrar el modelo en pipelines de prueba automatizadas.
-- Chat de voz sobre fotos: el ejemplo Android `photo_voice_chat` demuestra el flujo completo: foto + pregunta hablada + respuesta hablada.
+- Asistente de voz on-device en Android: el fichero `.litertlm` responde en texto y los grafos de voz generan la respuesta hablada; con 27 tok/s de decodificación en GPU de Galaxy S26 y un TTFT inferior a 1 s, es viable para interacción conversacional en el propio dispositivo sin conexión.
+- Reconocimiento de habla local: con `--audio speech.wav --system "Perform ASR in English."` el modelo transcribe audio de 16 kHz mono en ventanas de 30 s, adecuado para dictado o notas de voz privadas que no deben salir del teléfono.
+- Descripción y pregunta-respuesta sobre imágenes: `--image photo.png` permite identificar objetos o responder preguntas sobre una foto, útil en aplicaciones de accesibilidad o catalogación visual en campo sin cobertura.
+- Análisis de clips cortos de vídeo: la muestra `photo_voice_chat` prepara un vídeo de 12 s para preguntas en 11,0 s (Galaxy S26) o 23,6 s (Pixel 11 Pro), lo que habilita casos de revisión rápida de grabaciones en movilidad.
+- Síntesis de voz para lectura de contenidos: `--speech tts` convierte texto en WAV a 16 kHz; en un Mac M4 Max el códec añade unos 6 ms por cada 0,96 s de audio, por lo que la generación es prácticamente en tiempo real en CPU.
+- Prototipado y validación de pipelines multimodales: el directorio `fixtures/` incluye prompts, respuestas grabadas y comprobaciones (`--fixtures`) que permiten verificar que una conversión o un cambio de runtime produce las mismas salidas que en el entorno de referencia.
+- Aplicaciones de privacidad estricta (modo avión): la muestra Android funciona sin red, con el modelo y todos los grafos en el dispositivo, lo que encaja en escenarios sanitarios, industriales o de defensa donde no se permite enviar datos a la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Sí se publican mediciones de rendimiento y fidelidad de la conversión:
+Rendimiento medido en Galaxy S26 (SM-S942Q) con LiteRT-LM 0.18.1, 1.024 tokens de prefill, 256 tokens generados, contexto de 4.096 tokens, mediana de 2 procesos:
 
-Galaxy S26 (SM-S942Q), LiteRT-LM 0.18.1, 1.024 tokens de prompt, 256 tokens generados, mediana de 2 procesos:
-
-| Backend | Prefill (tok/s) | Decode (tok/s) | Time to first token | Memoria pico (VmHWM) |
+| Backend | Prefill (tok/s) | Decode (tok/s) | Time to first token | Memoria pico del proceso (VmHWM) |
 |---|---:|---:|---:|---:|
-| GPU (fp16 activations) | 1.139 | 27,0 | 0,93-0,94 s | 1,05 GB (+ 3,08 GB GPU) |
-| CPU, 4 hilos | 557 | 25,9 | 1,8-1,9 s | 3,42 GB |
+| GPU (por defecto, activaciones fp16) | 1.139 | 27,0 | 0,93–0,94 s | 1,05 GB (+ 3,08 GB de asignaciones GPU) |
+| CPU, 4 hilos | 557 | 25,9 | 1,8–1,9 s | 3,42 GB |
+| GPU con activaciones fp32 | 270 | 23,5 | No disponible | No disponible |
 
-Con activaciones fp32 en GPU: 270 tok/s de prefill y 23,5 tok/s de decode.
+Otros datos de rendimiento:
 
-Fidelidad respecto al modelo fuente en float32 (PyTorch, CPU):
-- 14 de 14 comprobaciones de texto pasan con texto idéntico al modelo fuente en Mac (CPU y GPU), Galaxy S26 (GPU) y Pixel 8a (GPU).
-- Coincidencia de siguiente token teacher-forced: 230 de 233 posiciones.
-- Salida de voz: 12 de 12 ejecuciones pasan las comprobaciones de transcripción Whisper, longitud y sonoridad.
+| Escenario | Medición |
+|---|---|
+| Salida de voz en Mac M4 Max (CPU) | 0,48–0,50 s de cómputo por segundo de audio (decoder, depth decoder y frame embedding); códec ~6 ms por 0,96 s de audio con 4 hilos |
+| Vídeo de 12 s listo para preguntas, Galaxy S26 | 11,0 s (media de 4 lecturas; encoder de visión y adaptador en GPU, float32) |
+| Vídeo de 12 s listo para preguntas, Pixel 11 Pro | 23,6 s (media de 4 lecturas; encoder de visión y adaptador en GPU, float16) |
+| Coincidencia de respuestas | 14 de 14 prompts de prueba dieron las mismas respuestas en Galaxy S26 y en Mac (28 de octubre de 2026) |
 
-Rendimiento de voz: 0,48-0,50 s de cómputo por segundo de audio (Mac M4 Max, CPU, decodificador + depth decoder + embedding); el códec añade unos 6 ms por 0,96 s de audio. En Galaxy S26 CPU: 1,15 s por segundo de voz generado.
+No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- Archivo principal de 3,23 GB (decodificador int8 con encoders de visión y audio); los grafos de voz añaden unos 937 MB adicionales.
-- Memoria pico medida: 1,05 GB de proceso + 3,08 GB de asignaciones GPU en Galaxy S26 (GPU); 3,42 GB en CPU con 4 hilos.
-- Dispositivos verificados: Galaxy S26 (SM-S942Q, GPU y CPU), Pixel 8a (GPU), Mac (runner de voz en CPU, M4 Max).
-- Ejecutable en móviles Android de gama alta y en ordenadores de escritorio (macOS) vía LiteRT-LM; no requiere GPU de servidor.
-- NPU no soportada en esta versión.
-- Despliegue mediante LiteRT-LM 0.18.1 (runtime oficial de Google), LiteRT 2.3.0 en el ejemplo Android, y el runner de Python incluido en el repositorio (`examples/run_omni.py`).
-- Latencia: primer token en 0,93-0,94 s (GPU móvil); primer sonido de voz en 3,1 s de media tras la pregunta hablada (Galaxy S26 CPU).
-- No se dispone de datos de requisitos de VRAM para GPU de servidor (A100, H100, RTX 4090), ya que el modelo está orientado a edge.
+- VRAM/RAM de inferencia: el fichero `.litertlm` ocupa 3,23 GB en disco; en Galaxy S26 la GPU usa 1,05 GB de memoria de proceso más 3,08 GB de asignaciones GPU, y la CPU requiere 3,42 GB de memoria pico.
+- GPU recomendadas: no se especifican modelos de escritorio; las mediciones oficiales son en GPU móvil de Galaxy S26 y Pixel 8a/11 Pro. En Mac se ha medido el runner de voz en CPU (M4 Max).
+- Cabe en GPU de consumo: no hay datos para RTX 4090 u otras GPU de escritorio; el objetivo declarado es edge/móvil.
+- NPU: no soportada en esta versión.
+- Opciones de despliegue: LiteRT-LM 0.18.1 (CPU o GPU) para el fichero `.litertlm`; runner Python (`runner/`) y ejemplo `examples/run_omni.py` para texto y voz; muestra Android `photo_voice_chat` (Kotlin, LiteRT 2.3.0) para vídeo y voz en dispositivo.
+- Latencia y throughput: ver tabla de benchmarks; en Galaxy S26 GPU, TTFT de 0,93-0,94 s y 27,0 tok/s de decodificación; en CPU de 4 hilos, TTFT de 1,8-1,9 s y 25,9 tok/s.
+- Requisitos de audio: WAV mono de 16 bits a 16 kHz; grabaciones de más de 30 s se leen en ventanas de 30 s y deben caber en el contexto de 4.096 tokens (una grabación de 251 s cupo, una de 502 s no).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Entrada/Salida | Formato on-device | Licencia |
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Formato/despliegue |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-LiteRT | 2,17 B | 4.096 tokens | texto+imagen+audio / texto+voz | `.litertlm` + `.tflite` | LFM Open License v1.0 |
-| LiquidAI/LFM3-Omni-2B (fuente) | 2,17 B (BF16) | no disponible en esta ficha | texto+imagen+video+audio / texto+voz | PyTorch, GGUF | LFM Open License v1.0 |
-| Gemma 3n (Google) | ~2-4 B | no disponible en esta ficha | texto+imagen+audio / texto | litert/tflite | Gemma Terms of Use |
+| LFM3-Omni-2B-LiteRT (esta ficha) | 2,17 B | 4.096 | Texto, imagen, vídeo (limitado), audio de entrada; texto y voz de salida | LFM1.0 | LiteRT (.litertlm, .tflite), on-device |
+| LiquidAI/LFM3-Omni-2B (modelo base) | 2,17 B (BF16) | No disponible | Texto, imagen, vídeo, audio; texto y voz | LFM1.0 | Safetensors BF16 |
+| LiquidAI/LFM3-Omni-2B-GGUF | 2,17 B | No disponible | Texto, imagen, vídeo, audio; texto y voz | LFM1.0 | GGUF (llama.cpp y similares) |
 
-La alternativa directa es el propio modelo fuente de LiquidAI (mismas capacidades, mayor cobertura de entrada al incluir vídeo, pero sin el empaquetado LiteRT optimizado para móvil) y los modelos Gemma 3n de Google, que también apuntan a inferencia multimodal on-device, aunque la comparativa detallada de rendimiento no está disponible en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con otras alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo está etiquetado solo para inglés; no hay soporte documentado para castellano ni otros idiomas.
-- Entrada de vídeo y aceleración por NPU no soportadas en esta versión.
-- Contexto limitado a 4.096 tokens: grabaciones de audio muy largas (más de ~250 s) no caben en el contexto.
-- La salida de voz solo admite texto o una grabación de 30 s o menos como entrada.
-- El ejemplo crea un nuevo Engine para cada pregunta, y en pruebas de resistencia el teléfono caliente provocó pausas en la generación de voz (4 de 9 respuestas en un dispositivo caliente; ninguna en teléfono frío).
-- Licencia "other" (LFM Open License v1.0): conviene revisar las condiciones de uso comercial en el enlace de la licencia antes de desplegar en producción.
-- Riesgo de alucinación: no documentado específicamente para este modelo; al tratarse de un modelo pequeño (2,17 B) multimodal, es esperable en tareas de razonamiento complejo.
-- Cuantización int8: la fidelidad es muy alta (230/233 posiciones de siguiente token), pero la descripción libre de imágenes solo coincidió con el modelo fuente en los primeros 8 de 32 tokens, lo que indica pequeñas divergencias en generación larga.
-- El bucle de voz se ejecuta en CPU, lo que limita el throughput de síntesis en dispositivos de gama baja.
+- Solo inglés: el modelo no soporta otros idiomas, lo que limita su uso en el mercado hispanohablante sin adaptación.
+- Contexto corto: 4.096 tokens; las grabaciones largas se procesan en ventanas de 30 s y pueden no caber (una de 502 s no cupo).
+- Salida de voz fuera del fichero principal: requiere grafos TFLite y el runner Python o la muestra Android; no es una función del `.litertlm` por sí solo.
+- Vídeo muy restringido: solo los primeros 13 s (una imagen por segundo con audio) y solo mediante la muestra Android `photo_voice_chat`.
+- NPU no soportada en esta versión.
+- Licencia LFM1.0 (license: other): no es una licencia open source estándar; es necesario revisar los términos antes de cualquier uso comercial.
+- Riesgo de alucinación: no se documentan evaluaciones de fidelidad ni tasas de alucinación; al ser un modelo de 2B, la fiabilidad en razonamiento complejo es limitada.
+- Sesgos: no se proporciona información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
+- Tool calling y agentes: no se documenta soporte, por lo que no debe asumirse en producción.
+- Memoria: en GPU móvil el consumo combinado (proceso más asignaciones GPU) supera los 4 GB, lo que puede ser ajustado en dispositivos de gama media.
 
 ## Enlaces
 
-- Modelo LiteRT: https://huggingface.co/litert-community/LFM3-Omni-2B-LiteRT
-- Modelo fuente: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- Versión GGUF del modelo fuente: https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
-- Licencia: https://huggingface.co/litert-community/LFM3-Omni-2B-LiteRT/blob/main/LICENSE
-- Ejemplo Android photo_voice_chat: https://github.com/google-ai-edge/litert-samples/pull/507
+- Repositorio LiteRT: https://huggingface.co/litert-community/LFM3-Omni-2B-LiteRT
+- Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
+- Versión GGUF del modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
+- Licencia LFM1.0: https://huggingface.co/litert-community/LFM3-Omni-2B-LiteRT/blob/main/LICENSE
+- Muestra Android photo_voice_chat: https://github.com/google-ai-edge/litert-samples/tree/main/samples/litert/photo_voice_chat
+- Fixtures y contrato de pruebas: https://huggingface.co/litert-community/LFM3-Omni-2B-LiteRT/blob/main/fixtures/README.md

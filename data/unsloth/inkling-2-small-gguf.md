@@ -2,56 +2,57 @@
 
 ## Resumen
 
-Inkling-2-Small es un modelo multimodal de propósito general desarrollado por Thinking Machines que acepta entradas de texto e imagen y genera texto. Se distribuye con pesos abiertos bajo licencia Apache 2.0 y está orientado a aplicaciones agénticas, asistentes de código, chatbots y sistemas de generación aumentada por recuperación (RAG). La versión aquí descrita es la cuantización GGUF publicada por Unsloth, que permite ejecutar el modelo en hardware local mediante llama.cpp.
+Inkling-2-Small es un modelo multimodal de propósito general desarrollado por Thinking Machines que acepta entradas de texto e imagen y genera salidas de texto. Se trata de un modelo con arquitectura Mixture of Experts (MoE) y aproximadamente 593.700 millones de parámetros totales, según los datos de safetensors del repositorio. La versión aquí documentada es la cuantización GGUF publicada por Unsloth, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp.
 
-El modelo emplea una arquitectura de mezcla de expertos (MoE) con aproximadamente 593.700 millones de parámetros totales, según los pesos en safetensors del modelo base. Incorpora capacidades de razonamiento configurable mediante el parámetro `reasoning_effort`, con niveles que van de `none` a `max`, y soporte de entrada visual a través de un proyector multimodal independiente (`mmproj`).
+El modelo base (thinkingmachines/Inkling-2-Small) se distribuye bajo licencia Apache 2.0 y está orientado a uso conversacional y tareas de razonamiento multimodal. Incluye un modo de razonamiento configurable mediante el parámetro `reasoning_effort`, con niveles que van de `none` a `max`, lo que permite ajustar el coste computacional en función de la tarea.
 
-La relevancia de esta ficha radica en que Unsloth ofrece cuantizaciones dinámicas calibradas con imatrix que reducen el peso del modelo desde 484,4 GB en BF16 hasta 171,7 GB en UD-IQ1_S, con una degradación medida en KLD frente a BF16. Esto hace viable el despliegue local de un modelo MoE de gran tamaño en estaciones de trabajo con múltiples GPU, algo que la versión original en NVFP4 no facilita en hardware sin soporte para ese formato.
+La relevancia de esta ficha radica en que Unsloth ofrece cuantizaciones dinámicas (Unsloth Dynamic 3.0) calibradas con imatrix que reducen el modelo desde 484,4 GB (UD-Q8_K_XL) hasta 171,7 GB (UD-IQ1_S), manteniendo una fidelidad medible en términos de KLD y coincidencia de token top-1 respecto a la referencia. Esto hace viable el despliegue local de un modelo de casi 600.000 millones de parámetros en configuraciones de VRAM alta o mediante offloading a CPU.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos), arquitectura `inkling2` según llama.cpp; transformer multimodal con proyector visual |
-| Parámetros totales | 593.722.994.688 (~593,7 mil millones) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible en la información proporcionada (el ejemplo de ejecución usa `-c 32768`) |
-| Tipos de cuantización | UD-IQ1_S, UD-IQ1_M, UD-IQ2_XXS, UD-Q2_K_XL, UD-IQ3_XXS, UD-Q3_K_XL, UD-Q4_K_XL, UD-Q8_K_XL, BF16; proyector visual en BF16, F16 y F32 |
-| Idiomas soportados | Inglés, con capacidades multilingües generales en otros idiomas |
+| Arquitectura | MoE (Mixture of Experts); nueva arquitectura `inkling2` en llama.cpp |
+| Parametros totales | 593.722.979.328 (~593,7 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de ejecucion usa `-c 32768`) |
+| Tipos de cuantizacion | UD-IQ1_S, UD-IQ1_M, UD-IQ2_XXS, UD-Q2_K_XL, UD-IQ3_XXS, UD-Q3_K_XL, UD-Q4_K_XL, Q8_0, UD-Q8_K_XL; proyector visual en mmproj-BF16/F16/F32 |
+| Idiomas soportados | ingles y otros idiomas (sin listado detallado); no disponible la lista completa |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (repo de cuantizaciones); modelo base en NVFP4 y MXFP8 |
 
 ## Arquitectura y entrenamiento
 
-Inkling 2 Small es un modelo de mezcla de expertos (MoE) multimodal. La arquitectura interna se identifica en llama.cpp como `inkling2`, una arquitectura nueva que requiere una compilación específica de llama.cpp con soporte para Inkling 2; las compilaciones que solo soportan el Inkling original no pueden cargarlo. El modelo procesa texto e imágenes: las imágenes se codifican mediante un proyector visual separado que se pasa con el flag `--mmproj`.
+Inkling-2-Small emplea una arquitectura Mixture of Experts (MoE) identificada en llama.cpp como `inkling2`, distinta de la arquitectura del "Inkling" original. El modelo base se publica en formato NVFP4 (y una variante MXFP8), y las cuantizaciones de Unsloth preservan los expertos originales en NVFP4 con sus escalas por experto en los cuantos de mayor precision (UD-Q3_K_XL, UD-Q4_K_XL, Q8_0 y UD-Q8_K_XL), mientras que el resto de pesos se convierten a BF16 o a 8 bits segun el caso. Las cuantizaciones UD-* estan calibradas con imatrix (`imatrix_unsloth.gguf_file`) y siguen el esquema Unsloth Dynamic 3.0.
 
-Los pesos originales del modelo base emplean expertos en formato NVFP4 en las capas 0-39. La conversión BF16 de Unsloth preserva esos expertos NVFP4 de forma bit-exacta y convierte el resto de pesos a BF16; la cuantización UD-Q8_K_XL mantiene igualmente los expertos NVFP4 bit-exactos y aplica 8 bits al resto. Las cuantizaciones `UD-*` están calibradas con imatrix (`imatrix_unsloth.gguf_file`). No se dispone en la información proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO.
+El modelo es multimodal: incorpora un proyector visual independiente (`mmproj`) que se pasa a llama.cpp mediante `--mmproj` para habilitar entradas de imagen. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; estos datos no estan disponibles en la informacion proporcionada. La innovacion tecnica mas destacable documentada es el modo de razonamiento configurable (`reasoning_effort` con valores `none`, `minimal`, `low`, `medium`, `high`, `xhigh` y `max`), que permite controlar la profundidad del razonamiento en tiempo de inferencia.
 
 ## Capacidades
 
-- Generación de texto conversacional e instrucciones de propósito general.
-- Entrada multimodal de imagen y texto (`image-text-to-text`), con proyector visual dedicado.
-- Razonamiento configurable mediante `reasoning_effort`, con niveles `none`, `minimal`, `low`, `medium`, `high` (por defecto), `xhigh` y `max` (equivalente a `xhigh`).
-- Soporte declarado para sistemas agénticos y de uso de herramientas (tool use), asistentes de código y pipelines de RAG.
-- Capacidades multilingües generales, con inglés como idioma principal.
-- Soporte de múltiples lenguajes de programación según la model card del modelo base.
-- Plantilla de chat embebida en cada GGUF, utilizable con `--jinja`.
+- Generacion de texto conversacional multi-turno.
+- Comprension de imagenes (image-text-to-text) mediante el proyector visual mmproj.
+- Razonamiento configurable con niveles de esfuerzo (`reasoning_effort`): `none`, `minimal`, `low`, `medium`, `high` (por defecto), `xhigh` y `max`.
+- Soporte multilingue: la model card indica uso previsto en ingles y otros idiomas, sin listado completo.
+- Compatibilidad con endpoints (`endpoints_compatible` segun los tags del repositorio).
+- Plantilla de chat embebida en cada GGUF, invocable con `--jinja`.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistentes de código en local: el modelo puede integrarse en un servidor compatible con OpenAI mediante `llama-server` y emplearse para autocompletado, explicación y refactorización en varios lenguajes de programación, con la ventaja de que los pesos y el contexto no salen de la infraestructura propia.
-- Sistemas agénticos con uso de herramientas: la model card declara soporte para tool use y aplicaciones agénticas, por lo que puede conectarse a funciones externas (APIs, bases de datos) en flujos de varios pasos controlados por el nivel de `reasoning_effort`.
-- Análisis de documentos con imágenes: gracias al proyector `mmproj`, puede procesar capturas, diagramas o páginas escaneadas junto con texto, útil en tareas de extracción y resumen de documentación técnica.
-- RAG sobre corpus internos: al ejecutarse en local con llama.cpp, puede combinarse con un índice vectorial propio para responder preguntas sobre documentación privada sin enviar datos a terceros.
-- Chatbot de atención al cliente autoalojado: el despliegue con `llama-server` expone una API HTTP compatible con clientes OpenAI, lo que facilita integrarlo en backends existentes con control total sobre latencia y coste.
-- Evaluación e investigación de cuantizaciones: la tabla de KLD y coincidencia de top-1 frente a BF16 permite a investigadores medir el impacto de cada nivel de cuantización en sus propias tareas antes de comprometerse con un tamaño de despliegue.
-- Fine-tuning posterior: al estar bajo Apache 2.0 y contar con el ecosistema Unsloth, puede servir como base para ajuste fino orientado a dominios concretos.
+- Asistente conversacional multimodal local: el modelo puede mantener conversaciones multi-turno con entradas de imagen y texto usando llama-server, lo que permite desplegar un asistente privado sin enviar datos a la nube.
+- Analisis de documentos con imagenes: gracias al proyector visual, se pueden enviar capturas, diagramas o paginas escaneadas junto con instrucciones de texto para extraer informacion estructurada.
+- Razonamiento con coste ajustable: el parametro `reasoning_effort` permite usar `low` o `minimal` en tareas simples (clasificacion, respuestas cortas) y `high` o `max` en problemas complejos, optimizando latencia y consumo.
+- Investigacion sobre cuantizacion: las metricas KLD y de coincidencia top-1 publicadas por Unsloth permiten estudiar el impacto de la cuantizacion en un MoE de gran tamano, comparando UD-IQ1_S (171,7 GB) con UD-Q8_K_XL (484,4 GB).
+- Despliegue en entornos con VRAM limitada: las variantes UD-IQ1_S y UD-IQ2_XXS (171,7 y 190,6 GB) permiten ejecutar el modelo con offloading parcial a CPU mediante `-ngl` reducido, algo impracticable con los pesos originales.
+- Evaluacion comparativa de modelos multimodales: al estar disponible en GGUF y con licencia Apache 2.0, puede integrarse en pipelines de evaluacion con llama.cpp sin restricciones de uso comercial.
+- Prototipado de aplicaciones de vision-lenguaje: el par mmproj + GGUF simplifica la puesta en marcha de demos con `llama-server` en `http://localhost:8080`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card de Unsloth sí publica métricas de fidelidad de cuantización frente al GGUF BF16, medidas sobre 64 secuencias de 4096 tokens de wikitext-2 con caché KV F16 por defecto en llama.cpp:
+La model card de Unsloth publica metricas de fidelidad de cuantizacion (KLD y coincidencia de token top-1) medidas sobre 64 x 4096 tokens de wikitext-2, tomando UD-Q8_K_XL como referencia:
 
-| Cuantización | Tamaño (GB) | KLD media vs BF16 | KLD al 99% | Mismo token top-1 |
+| Cuantizacion | Tamano (GB) | KLD medio vs UD-Q8_K_XL | KLD 99% | Mismo token top-1 |
 |---|---|---|---|---|
 | UD-IQ1_S | 171,7 | 0,0922 | 1,143 | 89,7% |
 | UD-IQ1_M | 178,5 | 0,0829 | 1,041 | 90,2% |
@@ -60,50 +61,49 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, 
 | UD-IQ3_XXS | 226,0 | 0,0364 | 0,430 | 93,3% |
 | UD-Q3_K_XL | 285,1 | 0,0176 | 0,209 | 95,3% |
 | UD-Q4_K_XL | 354,2 | 0,0029 | 0,031 | 98,0% |
-| UD-Q8_K_XL | 386,5 | 0,0027 | 0,029 | 98,1% |
-| BF16 | 484,4 | referencia | — | — |
+| Q8_0 | 386,5 | 0,0027 | 0,029 | 98,1% |
+| UD-Q8_K_XL | 484,4 | referencia | - | - |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre ~172 GB (UD-IQ1_S) y ~484 GB (BF16) solo para los pesos; hay que sumar la caché KV y el proyector visual. Con `-c 32768` y caché KV F16 el consumo adicional es significativo y no se ha cuantificado en la información disponible.
-- GPU recomendadas: no se especifican modelos concretos en la información proporcionada. Por volumen de pesos, un despliegue completo requiere múltiples aceleradores de clase数据中心 (A100/H100 de 80 GB o equivalentes) o configuraciones multi-GPU.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en ninguna GPU de consumo individual, ni siquiera con la cuantización más pequeña (171,7 GB). Es posible el reparto entre varias GPU o la inferencia parcial en CPU con `-ngl` reducido.
-- Opciones de despliegue: llama.cpp con soporte para la arquitectura `inkling2` (imprescindible una compilación actualizada), `llama-server` con `--jinja` y `--mmproj` para visión, Unsloth Desktop, y SGLang según la model card del modelo base (la receta no está incluida en la información disponible).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: depende de la cuantizacion. La variante mas pequena (UD-IQ1_S) ocupa 171,7 GB y la mayor (UD-Q8_K_XL) 484,4 GB. A esto hay que sumar el proyector visual (mmproj-F16.gguf) y la cache KV.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por el volumen de pesos, se requiere agregar VRAM de varias GPU de datacenter (A100, H100, etc.) o bien offloading a CPU.
+- Cabe en GPU de consumo: no. Incluso la cuantizacion mas agresiva (171,7 GB) supera la VRAM de cualquier GPU de consumo individual; solo es viable con offloading parcial a CPU (`-ngl` reducido) o con multiples GPU.
+- Opciones de despliegue: llama.cpp (build `master` con soporte de `inkling2`, PR ggml-org/llama.cpp#32217; y PR ggml-org/llama.cpp#32657 para las variantes que conservan los expertos NVFP4 con escalas por experto), Unsloth Desktop, y llama-server con `--jinja` y `--mmproj`.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos comparables de la misma categoría (MoE multimodal de ~600 mil millones de parámetros). La siguiente tabla recoge únicamente lo que puede afirmarse con los datos disponibles:
-
-| Modelo | Parámetros totales | Contexto | Licencia | Formato disponible |
-|---|---|---|---|---|
-| Inkling-2-Small (esta ficha, GGUF de Unsloth) | ~593,7 mil millones | no disponible | Apache 2.0 | GGUF, safetensors (base) |
-| Inkling-2-Small (base, thinkingmachines) | ~593,7 mil millones | no disponible | Apache 2.0 | NVFP4, MXFP8 |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No disponible. La informacion proporcionada no incluye datos de rendimiento de tareas ni especificaciones de modelos comparables de la misma categoria (MoE multimodal de ~600.000 millones de parametros).
 
 ## Limitaciones y advertencias
 
-- El modelo está pensado principalmente para inglés; el rendimiento en castellano y otras lenguas no está cuantificado en la información disponible.
-- Riesgo de alucinación inherente a los modelos generativos; no se documentan tasas concretas.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información proporcionada.
-- Las cuantizaciones de 1 y 2 bits (UD-IQ1_S, UD-IQ1_M, UD-IQ2_XXS, UD-Q2_K_XL) muestran una KLD media entre 0,045 y 0,092 y una coincidencia de token top-1 de solo el 89,7-92,7%, lo que implica degradación apreciable de la calidad; para producción conviene partir de UD-Q4_K_XL o superior.
-- Requiere una compilación de llama.cpp con soporte específico para `inkling2`; las versiones que solo soportan el Inkling original fallarán al cargar el modelo.
-- El repositorio GGUF ocupa 4725,7 GB en total por acumulación de todas las cuantizaciones y shards; la descarga debe hacerse seleccionando archivos concretos con `--include`.
-- Aunque la licencia es Apache 2.0, el modelo base remite a una política de uso aceptable de Thinking Machines que conviene revisar antes de un despliegue comercial.
-- El tamaño de contexto máximo no está confirmado en la información disponible; el ejemplo de ejecución emplea 32768 tokens, pero no debe asumirse como límite oficial.
+- Requiere una build de llama.cpp con soporte de la arquitectura `inkling2`; las builds que solo soportan el Inkling original no cargan el modelo.
+- Las cuantizaciones UD-Q3_K_XL, UD-Q4_K_XL, Q8_0 y UD-Q8_K_XL necesitan soporte de escalas por experto (PR ggml-org/llama.cpp#32657); sin el, llama.cpp falla con `wrong number of tensors`.
+- Las builds anteriores al PR #32217 (layout ggml-org/llama.cpp#32187) requieren usar la rama `ggml-org-32187-layout` con `--revision`.
+- El modelo es muy grande: incluso la cuantizacion mas pequena (171,7 GB) excede la VRAM de GPU de consumo, lo que obliga a offloading o a multiples GPU.
+- Riesgo de alucinacion: no documentado en la informacion proporcionada, pero inherente a los modelos generativos.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Limitaciones de contexto o idioma: la longitud de contexto no esta especificada en la informacion; el listado completo de idiomas no esta disponible.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base remite a una politica de uso aceptable (Acceptable Use Policy) de Thinking Machines que conviene revisar.
+- La cuantizacion introduce degradacion medible: UD-IQ1_S presenta un KLD medio de 0,0922 y solo un 89,7% de coincidencia top-1 frente a la referencia, lo que puede afectar a tareas sensibles a la precision.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/unsloth/Inkling-2-Small-GGUF
+- Repositorio GGUF: https://huggingface.co/unsloth/Inkling-2-Small-GGUF
 - Modelo base (NVFP4): https://huggingface.co/thinkingmachines/Inkling-2-Small
-- Modelo base (MXFP8): https://huggingface.co/thinkingmachines/Inkling-2-Small-MXFP8
-- Guía de Inkling 2 de Unsloth: https://unsloth.ai/docs/models/inkling-2
-- Documentación de Unsloth Dynamic 3.0 GGUF: https://unsloth.ai/docs/basics/unsloth-dynamic-v3.0-gguf
-- Unsloth Desktop: https://unsloth.ai/docs/desktop
-- Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth
-- Discord de Unsloth: https://discord.gg/unsloth
-- Playground de Tinker: https://tinker.thinkingmachines.ai/playground
+- Variante MXFP8: https://huggingface.co/thinkingmachines/Inkling-2-Small-MXFP8
+- Playground: https://tinker.thinkingmachines.ai/playground
 - Tinker Cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
-- Paquete tml-renderers: https://pypi.org/project/tml-renderers/
-- Política de uso aceptable: https://thinkingmachines.ai/model-acceptable-use-policy
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Politica de uso aceptable: https://thinkingmachines.ai/model-acceptable-use-policy
+- Guia de Inkling 2 de Unsloth: https://unsloth.ai/docs/models/inkling-2
+- Unsloth Desktop: https://unsloth.ai/docs/desktop
+- Benchmarks de cuantizacion Unsloth Dynamic 3.0: https://unsloth.ai/docs/basics/unsloth-dynamic-v3.0-gguf
+- Repositorio Unsloth: https://github.com/unslothai/unsloth/
+- Discord de Unsloth: https://discord.gg/unsloth
+- PR llama.cpp de soporte Inkling 2: https://github.com/ggml-org/llama.cpp/pull/32217
+- PR llama.cpp de escalas por experto: https://github.com/ggml-org/llama.cpp/pull/32657
+- Build precompilada de Unsloth: https://github.com/unslothai/llama.cpp/releases/tag/b12540-mix-c4017f9
+- Rama con layout anterior: https://huggingface.co/unsloth/Inkling-2-Small-GGUF/tree/ggml-org-32187-layout

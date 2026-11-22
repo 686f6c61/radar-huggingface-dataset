@@ -2,101 +2,102 @@
 
 ## Resumen
 
-Vela 1.0 · PII es un modelo encoder de 307.557.155 parametros (307M) especializado en deteccion de informacion personal identificable (PII) mediante clasificacion de tokens. Lo desarrolla el proyecto llm-semantic-router, responsable tambien de la capa de enrutado vLLM Semantic Router, y forma parte de la familia Vela de modelos auxiliares disenados para actuar como senales dentro de un sistema "Mixture-of-Models". Su funcion concreta es identificar spans sensibles en texto multilingue antes de que una peticion se enrute a un modelo generativo, de forma que se pueda redactar, bloquear o tratar de forma controlada la informacion confidencial.
+Vela-1.0-Encoder-307M-PII es un modelo encoder especializado en deteccion de informacion personal identificable (PII) mediante token classification. Lo desarrolla el proyecto vLLM Semantic Router (llm-semantic-router) y deriva por fine-tuning del modelo base vllm-sr/Vela-1.0-Encoder-307M, construido sobre la arquitectura ModernBERT. Con 307.557.155 parametros, resuelve el problema de localizar spans de entidades sensibles para enrutamiento consciente de la privacidad y redaccion de datos antes de que el texto llegue a un LLM generativo.
 
-El modelo se apoya en llm-semantic-router/mmbert-32k-yarn, un encoder multilingue con ventana de 32.000 tokens, y anade una cabeza de token-classification afinada para 17 tipos de entidad. Soporta ingles, chino, espanol, frances, aleman y japones, y se distribuye con licencia MIT en formatos safetensors y ONNX, lo que facilita su despliegue tanto en GPU como en CPU. En la evaluacion publicada por el autor sobre 1.704 peticiones sinteticas, alcanza un F1 de entidad exacta de 0,936 frente al 0,201 del modelo anterior, una mejora sustancial en la misma tarea.
+Su rasgo diferencial es la capacidad de entrada: 32.768 tokens incluyendo tokens especiales, lo que permite procesar documentos completos o conversaciones largas en una sola pasada sin trocear el contexto y perder entidades en los bordes de los fragmentos. Emite 35 etiquetas BIO sobre 17 tipos de entidad y devuelve los spans con offsets de caracteres Unicode, lo que facilita la redaccion exacta sobre el texto original.
 
-Su relevancia actual es practica: la deteccion de PII es un requisito habitual en despliegues de IA en produccion (RGPD, minimizacion de datos, control de fuga de informacion en logs y prompts), y hacerlo con un encoder de 307M tokens de contexto largo resulta mucho mas barato que delegar esa decision a un modelo generativo grande. Aun asi, el propio autor advierte de que el modelo solo detecta, no redacta, y de que la calidad varia por tipo de entidad.
+Es relevante ahora porque el enrutamiento semantico en infraestructuras de inferencia (gateways que deciden a que modelo enviar cada peticion) necesita clasificadores ligeros y precisos que se ejecuten en la misma ruta critica. El modelo se distribuye con licencia Apache 2.0, en safetensors y ONNX, y soporta seis idiomas: ingles, chino, espanol, frances, aleman y japones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer de tipo ModernBERT (etiqueta `modernbert` del repositorio) |
+| Arquitectura | ModernBERT (encoder transformer) |
 | Parametros totales | 307.557.155 |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 32K tokens; se recomienda escaneo por ventanas solapadas para documentos mas largos |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada; el repo incluye pesos ONNX y safetensors (tamano del repo: 2,5 GB) |
-| Idiomas soportados | Ingles (en), chino (zh), espanol (es), frances (fr), aleman (de), japones (ja) |
-| Licencia | MIT |
-| Formato de pesos | safetensors y ONNX |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 32.768 tokens (incluyendo tokens especiales) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, zh, es, fr, de, ja |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un encoder transformer de tipo ModernBERT segun la etiqueta declarada en el repositorio, con 307.557.155 parametros y una ventana de contexto de 32.000 tokens heredada del modelo base llm-semantic-router/mmbert-32k-yarn. Sobre esa base se anade una cabeza de clasificacion de tokens (pipeline `token-classification`) orientada a reconocimiento de entidades nombradas aplicado a PII, con 17 tipos de entidad distintos que cubren nombres, correos electronicos, telefonos, direcciones y otras categorias. El modelo se distribuye con pesos en safetensors y exportacion ONNX, lo que permite inferencia en GPU mediante `transformers` y en CPU mediante runtime ONNX.
+El modelo es un encoder transformer de la familia ModernBERT afinado para token classification con esquema BIO. La cabeza de clasificacion produce 35 etiquetas que cubren 17 tipos de entidad, y la salida incluye offsets de caracteres Unicode para reconstruir los spans exactos sobre el texto de entrada. El contexto maximo es de 32.768 tokens contando tokens especiales, lo que exige comprobar `max_position_embeddings` antes de la inferencia.
 
-La model card no detalla el corpus de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni el procedimiento de ajuste fino. Tampoco se documentan tecnicas como decodificacion especulativa o atencion lineal, ni procesos de alineacion tipo RLHF o DPO, que en un modelo encoder de clasificacion de tokens no resultan de aplicacion habitual. El unico dato de evaluacion publicado es el F1 de entidad exacta sobre 1.704 peticiones sinteticas, que pasa de 0,201 en el modelo anterior a 0,936 en Vela. El autor indica explicitamente que TITLE y NRP siguen siendo tipos de entidad debiles y recomienda validar la calidad de deteccion con datos propios.
+El fine-tuning se realizo sobre el modelo base vllm-sr/Vela-1.0-Encoder-307M. Segun la model card, los conjuntos de evaluacion son sinteticos, cubren seis idiomas e incluyen casos de entidades dispersas, entidades repetidas densamente y ejemplos negativos. No se detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; en un modelo de token classification estos ultimos no serian el mecanismo habitual, pero el dato no se confirma.
 
 ## Capacidades
 
-- Deteccion de PII como clasificacion de tokens: localiza spans sensibles y devuelve entidades etiquetadas, con agregacion de subtokens mediante `aggregation_strategy="simple"` en el pipeline de `transformers`.
-- Cobertura de 17 tipos de entidad, entre ellos nombres, correos electronicos, numeros de telefono y direcciones; TITLE y NRP presentan calidad inferior segun el autor.
-- Multilingue en seis idiomas: ingles, chino, espanol, frances, aleman y japones.
-- Contexto largo: procesa hasta 32K tokens en una sola pasada, con escaneo por ventanas solapadas para documentos que exceden esa longitud.
-- Salida orientada a enrutado: las senales de entidad estan pensadas para alimentar decisiones de redaccion, enrutado consciente de privacidad y manejo controlado de datos dentro de la capa vLLM Semantic Router.
-- Exportacion ONNX para inferencia en CPU o entornos sin GPU.
-- No soporta generacion de texto, tool calling, razonamiento multi-paso ni capacidades de vision o audio: es un modelo discriminativo de etiquetado de tokens.
+- Deteccion de spans de PII: identifica 17 tipos de entidad con 35 etiquetas BIO y devuelve offsets de caracteres Unicode para redaccion exacta.
+- Procesamiento de contexto largo: admite entradas de hasta 32.768 tokens, incluyendo tokens especiales, en una sola pasada.
+- Multilingue: entrenado y evaluado en ingles, chino, espanol, frances, aleman y japones.
+- Token classification por span: agrega predicciones a nivel de entidad mediante `aggregation_strategy="simple"` en el pipeline de Transformers.
+- Integracion en enrutamiento semantico: pensado para clasificar peticiones antes de derivarlas a un LLM mayor.
+- Soporte de ONNX: el repo incluye pesos en formato ONNX ademas de safetensors, lo que habilita despliegue con runtimes de inferencia optimizados.
+- No es un modelo generativo: no produce texto, razonamiento, codigo ni soporta tool calling o agentes.
 
 ## Casos de uso
 
-- Redaccion previa al envio a un LLM: interceptar el prompt del usuario, ejecutar Vela PII sobre el texto completo (hasta 32K tokens) y enmascarar o eliminar los spans detectados antes de reenviar la peticion al modelo generativo, reduciendo la exposicion de datos personales a terceros.
-- Enrutado consciente de privacidad: integrar la salida del modelo como senal en vLLM Semantic Router para decidir si una peticion debe ir a un modelo autoalojado en lugar de a un proveedor externo cuando contiene PII.
-- Saneado de logs y trazas de aplicaciones: escanear por lotes registros de conversaciones y depuracion para detectar correos, telefonos o direcciones que se hayan filtrado accidentalmente, usando ventanas solapadas sobre ficheros largos.
-- Cumplimiento y auditoria de datos (RGPD): ejecutar el detector sobre documentos o bases de conocimiento internas para localizar donde hay datos personales antes de un proceso de anonimizacion o de una solicitud de supresion.
-- Preprocesado de datasets de entrenamiento: marcar y eliminar PII de corpus multilingues antes de usarlos para ajuste fino, aprovechando el soporte de seis idiomas sin necesidad de un modelo distinto por idioma.
-- Enmascarado en formularios y atencion al cliente: aplicar el modelo sobre transcripciones de soporte para ofuscar datos personales antes de que el contenido se almacene o se analice con herramientas de analitica.
-- Filtro en pipelines de extraccion documental: combinar la deteccion de entidades con reglas de negocio para clasificar documentos (contratos, historiales) segun el tipo de dato sensible que contienen.
+- Redaccion de PII en pipelines de datos: el modelo localiza nombres, correos, telefonos y otras entidades sensibles antes de enviar el texto a un LLM de terceros, y los offsets permiten sustituir solo los caracteres exactos del span.
+- Gateway de enrutamiento consciente de la privacidad: integrado en un proxy de inferencia, clasifica cada peticion y decide si debe redirigirse a un modelo local, a uno con mayores garantias o bloquearse, gracias a su baja latencia como encoder de 307M.
+- Cumplimiento normativo en atencion al cliente: analiza transcripciones y tickets multi-turno de hasta 32K tokens para detectar datos personales antes del almacenamiento o la exportacion, sin fragmentar la conversacion.
+- Procesamiento de documentos legales y contratos: al cubrir documentos completos en una sola pasada, evita la perdida de entidades que se produce al trocear textos largos en fragmentos de 512 tokens.
+- Anonimizacion previa a fine-tuning: limpia corpus multilingues de entrenamiento eliminando PII de forma consistente en seis idiomas antes de usarlos para ajustar otros modelos.
+- Auditoria de logs y trazas: escanea registros de aplicacion en busca de credenciales o datos personales filtrados, con salida ONNX para ejecucion en CPU en entornos sin GPU.
+- Filtrado en tiempo real en aplicaciones de chat: el modelo se ejecuta en CPU (`device=-1`) y puede validar cada mensaje del usuario antes de que alcance el modelo generativo.
 
 ## Benchmarks y rendimiento
 
-| Evaluacion | Modelo anterior | Vela 1.0 PII |
-|---|---:|---:|
-| F1 de entidad exacta · 1.704 peticiones sinteticas | 0,201 | 0,936 |
+La model card publica F1 micro de span exacto (x100) sobre conjuntos de desarrollo sinteticos, comparando con el modelo original mmBERT32K PII. Ambos modelos se evaluaron en FP32 y con el mismo scorer de span exacto.
 
-El autor indica que la medicion se realizo sobre peticiones sinteticas y recomienda validar la calidad de deteccion con datos propios. No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estandar, que por otra parte no aplican a un modelo de clasificacion de tokens.
+| Evaluacion | mmBERT original | Vela |
+|---|---:|---:|
+| Entradas cortas (888 ejemplos) | 23,66 | 90,76 |
+| Contexto controlado 4K (30 ejemplos) | 0,44 | 89,03 |
+| Contexto controlado 8K (30 ejemplos) | 0,28 | 89,88 |
+| Contexto controlado 16K (30 ejemplos) | 0,36 | 89,73 |
+| Contexto controlado 32K (30 ejemplos) | 0,23 | 89,24 |
+
+Advertencia del autor: estos conjuntos de desarrollo se usaron para seleccionar el modelo y no constituyen un benchmark independiente sobre documentos naturales. Los conjuntos largos incluyen entidades dispersas, entidades repetidas densamente y ejemplos negativos. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales, ya que el modelo no es generativo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: en FP32 alrededor de 1,2 GB; en FP16/BF16 alrededor de 0,6 GB; en INT8 alrededor de 0,3 GB. Son estimaciones calculadas a partir de los 307.557.155 parametros; el tamano real del repositorio es de 2,5 GB e incluye pesos en safetensors y exportaciones ONNX.
-- El modelo cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y similares, con un consumo de VRAM muy por debajo de sus capacidades.
-- Puede ejecutarse integramente en CPU mediante ONNX Runtime, lo que lo hace adecuado para entornos sin acelerador, con latencias mayores no cuantificadas en la informacion disponible.
-- GPU de centro de datos (A100, H100, L40S) no son necesarias para este modelo; se usarian unicamente para servir muchas peticiones concurrentes a gran escala.
-- Opciones de despliegue: pipeline de `transformers` con `token-classification`, ONNX Runtime y, por integracion con el ecosistema del autor, la capa vLLM Semantic Router. No se documenta soporte especifico para vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- VRAM estimada en FP32: aproximadamente 1,23 GB solo para pesos (307,5M parametros x 4 bytes), mas activaciones; con contexto de 32K las activaciones de atencion elevan el consumo de forma notable.
+- VRAM estimada en FP16/BF16: aproximadamente 0,62 GB para pesos; cuantizacion no documentada por el autor.
+- GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060, RTX 4060, RTX 4090) es suficiente para inferencia en precision reducida; A100 y H100 no son necesarias salvo para alto throughput por lotes.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas con 6-8 GB o mas; tambien funciona en CPU, como muestra el ejemplo oficial con `device=-1`.
+- Opciones de despliegue: pipeline de Transformers (>= 4.57.6 o 5.17.0), ONNX Runtime para los pesos ONNX, y servidores compatibles con endpoints de Hugging Face (el repo esta etiquetado como `endpoints_compatible`).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Rendimiento |
+| Modelo | Parametros | Contexto | F1 span exacto (corto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vela 1.0 Encoder 307M PII | 307.557.155 | 32K tokens | en, zh, es, fr, de, ja | MIT | F1 de entidad exacta 0,936 sobre 1.704 peticiones sinteticas |
-| llm-semantic-router/mmbert-32k-yarn (modelo base) | No disponible | 32K tokens (segun el nombre del modelo) | Multilingue (no detallado) | No disponible | No disponible; es la base sin cabeza de PII |
-| Otros modelos de deteccion de PII de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Vela-1.0-Encoder-307M-PII | 307,5M | 32.768 | 90,76 | Apache 2.0 | Hugging Face (safetensors, ONNX) |
+| mmBERT32K PII (vllm-sr/mmbert32k-pii-detector-merged) | no disponible | 32K (segun nombre) | 23,66 | no disponible | Hugging Face |
+| Alternativas genericas de NER (p. ej. modelos BERT-base NER) | ~110M | 512 | no disponible | variable | Hugging Face |
 
-La informacion proporcionada no incluye resultados comparativos frente a alternativas de deteccion de PII de terceros, por lo que no es posible establecer una comparacion cuantitativa fiable.
+La comparativa se limita a los datos publicados en la model card. No se dispone de resultados de otros detectores de PII de contexto largo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo detecta PII pero no la redacta: la redaccion, el enmascarado o el bloqueo deben implementarse como paso posterior en la aplicacion.
-- Calidad desigual por tipo de entidad: el autor senala explicitamente que TITLE y NRP siguen siendo debiles.
-- Evaluacion basada en 1.704 peticiones sinteticas; el propio autor recomienda validar la calidad con datos reales antes de usarlo en produccion.
-- Riesgo de falsos negativos y falsos positivos inherente a cualquier tarea de NER: una entidad no detectada puede acabar expuesta, y una deteccion incorrecta puede degradar el texto util.
-- Para documentos de mas de 32K tokens es necesario aplicar ventanas solapadas, lo que anade complejidad y puede introducir duplicados o cortes en entidades que cruzan limites de ventana.
-- Cobertura linguistica limitada a seis idiomas; el rendimiento en otros idiomas no esta documentado y no deberia asumirse.
-- No se documentan sesgos especificos del ajuste, pero al derivar de un encoder multilingue puede heredar sesgos de su corpus de preentrenamiento, en particular en la deteccion de nombres segun origen cultural.
-- El modelo no garantiza por si solo el cumplimiento normativo (RGPD u otras regulaciones): es un componente tecnico que debe acompanarse de politicas, auditoria y controles adicionales.
-- Licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion y sin garantia.
-- El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
-- No es un modelo generativo: no debe usarse para conversacion, codigo, razonamiento ni tareas multimodales.
+- Los conjuntos de evaluacion son sinteticos y se usaron para seleccionar el modelo; el rendimiento sobre documentos naturales puede diferir del reportado.
+- Los conjuntos de contexto largo contienen solo 30 ejemplos por tamano, por lo que la varianza de las metricas es alta.
+- Riesgo de falsos negativos y falsos positivos en entidades poco frecuentes, formatos regionales de documentos de identidad o jerga; no se documenta el desglose por tipo de entidad ni por idioma.
+- Solo cubre seis idiomas; el rendimiento en espanol no se desglosa en la model card, aunque el idioma figure entre los soportados.
+- No es un modelo generativo: no debe usarse para tareas de razonamiento, codigo o conversacion.
+- La deteccion de PII no garantiza cumplimiento normativo por si sola; debe combinarse con validacion humana y politicas de redaccion en produccion.
+- Licencia Apache 2.0: permite uso comercial y modificacion, con obligacion de conservar avisos de licencia y atribucion.
+- La cuantizacion no esta documentada por el autor; cualquier conversion a INT8 o similar debe validarse contra el rendimiento en FP32.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-PII
-- Coleccion de la familia Vela: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
-- Repositorio vLLM Semantic Router: https://github.com/vllm-project/semantic-router
-- Organizacion en Hugging Face: https://huggingface.co/llm-semantic-router
-- Modelo base: https://huggingface.co/llm-semantic-router/mmbert-32k-yarn
-- Modelo hermano (Domain): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain
-- Modelo hermano (Modality): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Modality
-- Modelo hermano (FactCheck): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-FactCheck
-- Modelo hermano (Encoder base): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
-- Documentacion y evaluacion: fichero TECHNICAL.md dentro del repositorio del modelo en Hugging Face
+- Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M
+- Modelo de comparacion mmBERT32K PII: https://huggingface.co/vllm-sr/mmbert32k-pii-detector-merged
+- Coleccion Vela 1.0 Router Models: https://huggingface.co/collections/vllm-sr/vela-10-router-models-6aa555ba70cc6997d6d67798
+- Documentacion: https://vllm-sr.ai/
+- Blog: https://vllm-sr.ai/blog/
+- Repositorio GitHub: https://github.com/vllm-project/semantic-router
+- Slack: https://vllm-dev.slack.com/archives/C09CTGF8KCN

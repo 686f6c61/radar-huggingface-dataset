@@ -2,50 +2,51 @@
 
 ## Resumen
 
-Qwen3-ASR-1.7B-Cantonese-HK-GGUF es una cuantizacion en formato GGUF del modelo de reconocimiento automatico del habla (ASR) joe2643/Qwen3-ASR-1.7B-Cantonese-HK, un ajuste fino especializado en cantonés de Hong Kong (yue-HK) construido sobre la familia Qwen3-ASR. El trabajo de cuantizacion lo firma mradermacher, un autor habitual en la comunidad de pesos GGUF, y el modelo base procede de joe2643. El resultado es un paquete de ficheros listos para su uso en llama.cpp y entornos compatibles, con 1.720.574.976 parametros (1,7 mil millones) y licencia Apache 2.0.
+Qwen3-ASR-1.7B-Cantonese-HK-GGUF es una versión cuantizada en formato GGUF del modelo de reconocimiento automático de voz (ASR) koelony/Qwen3-ASR-1.7B-Cantonese-HK, un ajuste fino del modelo base Qwen3-ASR de 1.700 millones de parámetros orientado específicamente al cantonés de Hong Kong (yue-HK). Lo publica mradermacher, un conocido cuantizador de la comunidad que distribuye versiones estáticas en GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo resuelve el problema de la transcripción de audio en cantonés, un idioma con escasa cobertura en los sistemas ASR comerciales, y añade soporte para code-switching entre cantonés, chino mandarín e inglés, algo habitual en el contexto de Hong Kong.
 
-El modelo resuelve un problema concreto: la transcripcion de audio en cantonés, un idioma con escasa representacion en los sistemas ASR genericos, y el fenomeno del code-switching entre cantonés, mandarin (zh) e ingles (en), muy frecuente en el habla real de Hong Kong. Al estar cuantizado en multiples niveles (desde Q2_K hasta f16), permite desplegar ASR de calidad en hardware modesto, incluyendo equipos de consumo, algo dificil con los pesos originales en precision completa.
+La relevancia de esta ficha radica en que el modelo original es un ajuste fino ligero (1.700 millones de parámetros) que se puede ejecutar en hardware de consumo, y esta versión GGUF lo hace accesible a herramientas como llama.cpp, Ollama o ComfyUI sin necesidad de infraestructura de GPU dedicada. El repositorio incluye cuantizaciones desde Q2_K hasta f16, además de los ficheros mmproj necesarios para el procesamiento multimodal del audio (proyector multimodal en Q8_0 y f16).
 
-Su relevancia actual radica en la combinacion de tres factores: especializacion linguistica en una variedad infrarepresentada, tamano contenido (1,7 B) que abarata la inferencia, y disponibilidad de cuantizaciones GGUF que facilitan la integracion en pipelines locales, herramientas de subtitulado o flujos de ComfyUI. No obstante, la informacion publicada sobre el modelo es escasa: la model card del repositorio cuantizado se limita a describir el proceso de cuantizacion y no aporta detalles sobre arquitectura interna, datos de entrenamiento ni evaluacion.
+La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas, y los idiomas declarados son yue (cantonés), zh (chino) y en (inglés). La información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada: la model card del cuantizador es genérica y no aporta detalles técnicos del modelo base más allá de los metadatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen3-ASR; detalles internos no publicados en la informacion disponible) |
+| Arquitectura | no disponible (modelo base Qwen3-ASR; arquitectura transformer ASR multimodal, detalles no disponibles) |
 | Parametros totales | 1.720.574.976 |
-| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; ademas mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
-| Idiomas soportados | yue (cantonés), zh (mandarin), en (ingles) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | yue (cantonés), zh (chino), en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en transformers/safetensors |
+| Formato de pesos | GGUF (cuantizaciones estáticas) y safetensors (modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Por la nomenclatura (Qwen3-ASR) se trata de un modelo de la familia Qwen3 orientado a reconocimiento del habla, con un componente de audio y un decodificador de lenguaje, pero no se especifican en la informacion disponible ni el tipo de transformer, ni el numero de capas, ni la dimension oculta, ni la estrategia de atencion.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. Por el nombre del modelo base (Qwen3-ASR) y los tags del repositorio, se trata de un modelo de reconocimiento automático de voz basado en la familia Qwen3, con un proyector multimodal (mmproj) que procesa la entrada de audio y la alinea con el espacio del modelo de lenguaje. El tamaño de 1.700 millones de parámetros y la presencia de ficheros mmproj confirman que es un modelo multimodal audio-texto, no un LLM puro.
 
-Tampoco se detallan los datos de entrenamiento: no se indica el volumen de horas de audio, la composicion del corpus (cantonés de Hong Kong, mandarin, ingles), ni si hubo etapas de ajuste supervisado, RLHF o DPO. La model card del repositorio cuantizado unicamente documenta el proceso de cuantizacion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) y advierte de que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion. La innovacion tecnica destacable, por tanto, es la propia disponibilidad de cuantizaciones GGUF de un modelo ASR especializado, que habilita su ejecucion en llama.cpp y en flujos de ComfyUI.
+El modelo original es un ajuste fino de koelony sobre Qwen3-ASR orientado al cantonés de Hong Kong, con soporte explícito de code-switching (yue-zh-en). No se han publicado en la información disponible detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco hay información sobre innovaciones técnicas específicas como decodificación especulativa o atención lineal. Esta versión de mradermacher es una cuantización estática del modelo original, sin cambios en la arquitectura ni en los pesos más allá de la reducción de precisión.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla en cantonés de Hong Kong (yue-HK), con soporte declarado para mandarin (zh) e ingles (en).
-- Manejo de code-switching entre yue, zh y en, segun las etiquetas del repositorio.
-- Procesamiento multimodal de audio: el repositorio incluye ficheros mmproj (Q8_0 y f16) que actuan como suplemento multimodal para el codificador de audio.
-- Uso conversacional: la etiqueta "conversational" sugiere interaccion en formato de dialogo, aunque no se detalla el formato de prompt exacto.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse a traves de APIs compatibles.
-- Integracion con ComfyUI: etiqueta explicita que apunta a flujos de generacion audiovisual.
-- No se documentan en la informacion disponible capacidades de tool calling, agentes, razonamiento multi-paso, vision general o audio generativo.
+- Reconocimiento automático de voz (ASR) en cantonés de Hong Kong (yue-HK).
+- Transcripción con code-switching entre cantonés, chino mandarín e inglés.
+- Procesamiento de audio mediante proyector multimodal (ficheros mmproj Q8_0 y f16).
+- Compatibilidad con el ecosistema transformers (librería declarada) y con endpoints compatibles.
+- Integración con ComfyUI (tag explícito en el repositorio).
+- Soporte de conversación (tag "conversational").
+- No se ha documentado soporte de tool calling, function calling, agentes o razonamiento multi-paso en la información disponible.
+- No se ha documentado capacidad de visión ni de audio más allá de la transcripción ASR.
 
 ## Casos de uso
 
-- Subtitulado automatico de contenido en cantonés: el modelo transcribe audio de videos, podcasts o retransmisiones de Hong Kong, y su tamano de 1,7 B permite procesar horas de material en hardware local sin depender de servicios en la nube.
-- Transcripcion de reuniones con code-switching: en entornos profesionales de Hong Kong es habitual alternar cantonés, mandarin e ingles en la misma conversacion; el modelo esta etiquetado especificamente para este escenario, lo que reduce errores frente a ASR monolingues.
-- Atencion al cliente en centros de llamadas: permite convertir grabaciones de llamadas en texto para analisis de calidad, busqueda y cumplimiento, con la ventaja de ejecutarse en infraestructura propia y mantener los datos dentro de la organizacion.
-- Generacion de subtitulos en ComfyUI: al estar etiquetado para ComfyUI e incluir ficheros mmproj, puede integrarse en flujos de postproduccion que combinan generacion de video o audio con transcripcion automatica.
-- Investigacion linguistica sobre cantonés: util para construir corpus anotados de yue-HK, estudiar variacion fonetica o entrenar modelos posteriores, dado que la licencia Apache 2.0 permite uso academico y comercial sin restricciones de atribucion adicionales.
-- Prototipado de asistentes de voz locales: con cuantizaciones Q4_K_M de 1,2 GB, el modelo cabe en GPUs de consumo y permite desarrollar asistentes de voz en cantonés que funcionan sin conexion, util para demos y entornos con requisitos de privacidad.
-- Accesibilidad: transcripcion en tiempo casi real de conversaciones para personas con discapacidad auditiva en contextos de habla cantonesa, donde las soluciones comerciales genericas suelen tener peor cobertura.
+- Transcripción de reuniones y llamadas en cantonés: el modelo puede convertir audio de reuniones de empresa en Hong Kong a texto, incluyendo intervenciones que mezclan cantonés e inglés, un patrón habitual en entornos corporativos bilingües.
+- Subtitulado automático de contenido audiovisual: para plataformas que distribuyen vídeo en cantonés, el modelo permite generar subtítulos con la ventaja de ejecutarse en hardware local gracias a las cuantizaciones Q4_K_S o Q4_K_M (1,2 GB).
+- Atención al cliente en centros de contacto de Hong Kong: transcripción de grabaciones de llamadas para análisis de calidad y cumplimiento, con soporte de code-switching y despliegue en servidores sin GPU de gama alta.
+- Archivado y búsqueda de audio histórico: transcripción de archivos de audio en cantonés para indexación y búsqueda textual, usando la cuantización Q8_0 (1,9 GB) cuando se prioriza la calidad.
+- Accesibilidad para personas con discapacidad auditiva: generación de transcripciones en tiempo casi real en aplicaciones de escritorio o móvil, aprovechando que el modelo cabe en GPU de consumo con cuantizaciones de 4 bits.
+- Integración en pipelines de ComfyUI: el tag "comfyui" sugiere su uso en flujos de trabajo de generación de contenido donde la transcripción de audio en cantonés es un paso previo, como doblaje o generación de vídeo con voz.
+- Investigación lingüística sobre code-switching yue-zh-en: el modelo permite transcribir corpus de habla espontánea de Hong Kong para estudios de alternancia de código, con la ventaja de ser reproducible localmente.
 
 ## Benchmarks y rendimiento
 
@@ -53,38 +54,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1 GB con Q2_K (0,9 GB de pesos), 1,2-1,3 GB con Q4_K_S o Q4_K_M, 1,5 GB con Q6_K, 1,9 GB con Q8_0 y 3,5 GB con f16. A estas cifras hay que sumar el suplemento multimodal mmproj (0,5 GB en Q8_0 o 0,7 GB en f16) y el espacio de trabajo para el contexto y el procesamiento de audio.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para las cuantizaciones bajas; RTX 3060, RTX 4060, RTX 4090 o superiores para mayor comodidad; A100 y H100 no son necesarias por el reducido tamano del modelo, aunque pueden usarse para servir muchas peticiones concurrentes.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas con 4 GB o mas de VRAM; las cuantizaciones Q4_K_S y Q4_K_M estan marcadas como "fast, recommended" por el autor de la cuantizacion.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (previa importacion del GGUF), servidores compatibles con endpoints, y ComfyUI para flujos multimodales. El modelo base en transformers se sirve con la libreria transformers.
-- Latencia y throughput: no disponibles en la informacion proporcionada; dependen del hardware, de la cuantizacion y de la duracion del audio de entrada.
+- VRAM estimada para inferencia: entre 0,9 GB (Q2_K) y 3,5 GB (f16) para los pesos del modelo; hay que sumar el proyector multimodal (0,5 GB en Q8_0 o 0,7 GB en f16) y el espacio para el contexto de audio.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para cuantizaciones de 4 bits; RTX 3060, RTX 4060, RTX 4090, A100 o H100 para mayor throughput.
+- Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_S, Q4_K_M, Q5_K_M o Q6_K en tarjetas de 6-8 GB; la versión f16 requiere alrededor de 4,2 GB solo para pesos, asequible en GPUs de 8 GB.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), Ollama (si se empaqueta el GGUF), ComfyUI (tag explícito), y herramientas compatibles con GGUF; el modelo base original usa transformers.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- Nota: los cuantizaciones ponderadas/imatrix no estaban disponibles en el momento de la publicación según la model card; solo se ofrecen cuantizaciones estáticas.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos comparables que permitan una comparacion rigurosa. Como referencia contextual, la familia Qwen3-ASR incluye variantes de mayor tamano, y existen modelos ASR multilingues de otros proveedores (por ejemplo, Whisper de OpenAI), pero no se aportan cifras que permitan contrastar parametros, contexto, WER ni licencia de forma verificable.
-
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas ASR | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3-ASR-1.7B-Cantonese-HK (este) | 1,72 B | no disponible | yue, zh, en | Apache 2.0 | GGUF, safetensors |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3-ASR-1.7B-Cantonese-HK-GGUF (este) | 1,72 B | no disponible | yue, zh, en | Apache 2.0 | GGUF |
+| koelony/Qwen3-ASR-1.7B-Cantonese-HK (base) | 1,72 B | no disponible | yue, zh, en | Apache 2.0 | safetensors |
+| Whisper large-v3 | ~1,55 B | 30 s de audio por ventana | multilingüe (incluye zh, no yue específico) | MIT | safetensors, GGUF, etc. |
+| Whisper small | ~244 M | 30 s de audio por ventana | multilingüe | MIT | safetensors, GGUF, etc. |
+
+La comparación con Whisper es orientativa: Whisper no está especializado en cantonés y su cobertura de yue es limitada, mientras que este modelo está ajustado específicamente para yue-HK con code-switching. No se dispone de datos de benchmarks comparativos en la información proporcionada para cuantificar la diferencia de rendimiento.
 
 ## Limitaciones y advertencias
 
-- La informacion publicada sobre el modelo es muy escasa: no hay detalles de arquitectura, datos de entrenamiento ni evaluacion, lo que dificulta estimar su calidad real frente a alternativas.
-- Es un modelo especializado en yue-HK, zh y en; su rendimiento fuera de estos idiomas no esta documentado y probablemente sea pobre.
-- Riesgo de alucinacion y de transcripciones incorrectas en audio con ruido, acentos no cantoneses, solapamiento de hablantes o vocabulario tecnico; no se aportan tasas de error (WER/CER) que permitan cuantificarlo.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar la calidad de transcripcion; el autor recomienda Q4_K_S, Q4_K_M y Q8_0 para un buen equilibrio.
-- Las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, segun advierte el propio autor de la cuantizacion.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base original (joe2643/Qwen3-ASR-1.7B-Cantonese-HK) y de la familia Qwen3 subyacente antes de un despliegue en produccion.
-- El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica una adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
-- No se documentan sesgos especificos, pero al entrenarse sobre habla de Hong Kong puede reflejar sesgos dialectales y sociolinguisticos de ese corpus.
+- La información pública sobre el modelo base es muy escasa: no hay datos de benchmarks, composición del dataset ni detalles de entrenamiento, lo que dificulta evaluar su calidad real frente a alternativas.
+- Riesgo de alucinación en la transcripción: como todo modelo ASR generativo, puede producir texto plausible que no corresponde al audio, especialmente con ruido de fondo o acentos no representados en el entrenamiento.
+- Cobertura limitada a tres idiomas (yue, zh, en); no es un modelo ASR multilingüe general.
+- El ajuste fino está orientado al cantonés de Hong Kong; el rendimiento en otras variantes de cantonés (Guangdong, Macao) no está documentado.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S, Q3_K_M) pueden degradar notablemente la calidad de transcripción; se recomienda Q4_K_M o superior para producción.
+- No hay cuantizaciones ponderadas/imatrix disponibles según la model card, lo que limita la optimización de calidad por tamaño.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base original puede tener condiciones adicionales no reflejadas en la información disponible; conviene verificar la licencia de koelony/Qwen3-ASR-1.7B-Cantonese-HK.
+- El repositorio tiene 17 GB por las múltiples cuantizaciones; la descarga completa no es necesaria, pero conviene seleccionar solo los ficheros necesarios.
+- Solo 1 like y 649 descargas en el momento de la consulta: es un modelo con poca validación comunitaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizacion GGUF): https://huggingface.co/mradermacher/Qwen3-ASR-1.7B-Cantonese-HK-GGUF
-- Modelo base: https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK
-- Pagina de resumen y descargas del autor de la cuantizacion: https://hf.tst.eu/model#Qwen3-ASR-1.7B-Cantonese-HK-GGUF
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-ASR-1.7B-Cantonese-HK-GGUF
+- Modelo base: https://huggingface.co/koelony/Qwen3-ASR-1.7B-Cantonese-HK
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3-ASR-1.7B-Cantonese-HK-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Guía sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Empresa del cuantizador: https://www.nethype.de/

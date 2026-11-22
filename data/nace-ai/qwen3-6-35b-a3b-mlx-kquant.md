@@ -2,100 +2,96 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-MLX-KQuant es una cuantización en formato MLX del modelo Qwen3.6-35B-A3B, publicada por el usuario nace-ai y orientada específicamente a la inferencia en Apple Silicon. El modelo base, desarrollado por el equipo Qwen (Alibaba), es un transformer de tipo mixture-of-experts (MoE) con 35.107.181.936 parámetros totales y activación de aproximadamente 3.000 millones por token, según indica el nombre del modelo. Esta versión concreta es un empaquetado de pesos MLX en 4 y 5 bits, no un entrenamiento nuevo.
+Qwen3.6-35B-A3B-MLX-KQuant es una cuantización de precisión mixta en formato MLX del modelo Qwen/Qwen3.6-35B-A3B, publicada por el usuario nace-ai. Está pensada específicamente para inferencia en Apple Silicon (Macs con chip M-series), usando la librería mlx de Apple. El modelo base es un transformer con arquitectura MoE (mixture of experts) de tipo qwen3_5_moe, con 35.107.181.936 parámetros totales y un pipeline declarado de image-text-to-text, lo que indica capacidades multimodales de entrada imagen y salida texto.
 
-La relevancia de este repositorio reside en su enfoque en la fidelidad de la cuantización: el autor reporta que su variante Q4 queda 1,6 veces más cerca del modelo original en BF16 que el pack de 4 bits de mlx-community, medido como divergencia KL (0,059 frente a 0,096) con el mismo tamaño de pesos del modelo de lenguaje (19,51 GB). El pack ofrece dos checkpoints completos (Q4 y Q5) con 21,0 GB y 23,0 GB de descarga respectivamente, pensados para Macs con 48 GB de RAM o más.
+El pack incluye dos checkpoints cuantizados: Q4 (uniforme de 4 bits, 21,0 GB, con gates del router en 8 bits) y Q5 (precisión mixta 4/6/8 bits por tensor, unos 4,6 bits por peso, 23,0 GB). El autor reporta una divergencia KL respecto al modelo BF16 de 0,059 para Q4 y 0,027 para Q5, y afirma que su Q4 está un 1,6× más cerca del BF16 original que el pack de 4 bits de mlx-community (KL 0,059 frente a 0,096) al mismo tamaño de pesos del modelo de lenguaje (19,51 GB).
 
-El modelo base es multimodal (image-text-to-text), soporta modo de razonamiento (thinking) activado por defecto y tool calling, y se distribuye bajo licencia Apache 2.0. El repositorio acumula 27.244 descargas, lo que sugiere una adopción notable entre usuarios de Apple Silicon, aunque el número de likes (2) es llamativamente bajo.
+La relevancia de este lanzamiento es práctica: permite ejecutar un MoE de 35B parámetros en Macs con 48 GB de RAM o más, con APIs compatibles con OpenAI, Anthropic y Ollama a través del motor Kapitsa del propio autor, o mediante mlx-lm y LM Studio. La licencia Apache 2.0 del modelo base facilita el uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mixture-of-experts), tipo `qwen3_5_moe` |
-| Parametros totales | 35.107.181.936 |
-| Parametros activos | Aproximadamente 3.000 millones (según nomenclatura A3B; no confirmado en la información disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4 (4 bits uniforme, gates del router en 8 bits), Q5 (precisión mixta 4/6/8 bits por tensor, ~4,6 bits por peso, 5,1 contando escalas) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors en formato MLX (librería `mlx`) |
+| Arquitectura | Transformer MoE (qwen3_5_moe) |
+| Parámetros totales | 35.107.181.936 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Q4 (4 bits uniforme, gates del router en 8 bits); Q5 (mixta 4/6/8 bits por tensor, ~4,6 bits por peso) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (formato MLX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B es un transformer con arquitectura de mezcla de expertos (MoE), tal como refleja la etiqueta `qwen3_5_moe` y la nomenclatura A3B (aproximadamente 3.000 millones de parámetros activos sobre 35.107 millones totales). No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. Tampoco se documentan innovaciones de atención (attention linear, decodificación especulativa) más allá de las propias del modelo base.
+El modelo base es un transformer con mezcla de expertos (MoE) identificado en los tags como qwen3_5_moe. El pack cuantizado conserva la topología del modelo original y aplica cuantización de precisión mixta: en Q4 los pesos se cuantizan de forma uniforme a 4 bits, mientras que los gates del router se mantienen en 8 bits (igual que hace mlx-lm); en Q5 se aplican 4, 6 u 8 bits por tensor según su sensibilidad, resultando en unos 4,6 bits por peso (5,1 contando escalas). El autor reporta divergencia KL frente a BF16 de 0,059 (Q4) y 0,027 (Q5).
 
-La contribución técnica de este repositorio es la cuantización. El pack Q4 aplica cuantización uniforme de 4 bits con los gates del router en 8 bits, replicando el esquema de mlx-lm, y logra una divergencia KL de 0,059 frente al BF16 original con 19,51 GB de pesos del modelo de lenguaje. El pack Q5 emplea precisión mixta por tensor (4, 6 y 8 bits), con un promedio de ~4,6 bits por peso, y alcanza una KL de 0,027. El autor advierte que la puntuación de Q5 se calculó sobre token IDs distintos, por lo que no reclama una mejora pareada frente a Q4. Ambos checkpoints se distribuyen como packs MLX completos e independientes.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF o DPO en el modelo base. Tampoco se detallan innovaciones de decodificación especulativa o atención lineal. El modelo base incorpora un modo de razonamiento (thinking) activado por defecto, que devuelve el contenido en el campo `reasoning_content` y puede desactivarse con `reasoning_effort: "none"` o `enable_thinking: false`.
 
 ## Capacidades
 
 - Generación de texto conversacional multi-turno.
-- Razonamiento con modo "thinking" activado por defecto; la respuesta de razonamiento se devuelve en el campo `reasoning_content` (API Kapitsa) o `reasoning` (mlx-lm).
-- Desactivación del razonamiento mediante `reasoning_effort: "none"` o `chat_template_kwargs: {"enable_thinking": false}`.
-- Comprensión de imágenes (pipeline `image-text-to-text`): acepta imágenes como URL http(s) o data URL base64 en formato OpenAI `image_url`.
-- Tool calling / function calling, verificado por el autor en `mlx_lm.server` y en LM Studio.
-- Capacidades multilingües: no documentadas en la información disponible.
-- Compatibilidad con APIs OpenAI, Anthropic y Ollama a través del motor Kapitsa.
+- Razonamiento con modo thinking activado por defecto (salida separada en `reasoning_content`).
+- Entrada multimodal de imagen y texto (pipeline image-text-to-text): acepta imágenes como URL http(s) o data URL base64 en el formato `image_url` de OpenAI.
+- Tool calling / function calling, verificado por el autor con mlx-lm 0.32.2 a través de `mlx_lm.server` y con LM Studio.
+- Servido mediante APIs compatibles con OpenAI, Anthropic y Ollama a través de Kapitsa.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Aritmética y tareas de razonamiento sencillas (el ejemplo de la model card es 17 × 23).
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: el pack Q4 (21,0 GB) cabe en equipos con 48 GB de RAM o más y permite servir un chat con API compatible con OpenAI mediante `mlx_lm.server` o Kapitsa, sin depender de la nube.
-- Análisis de imágenes en local: gracias al pipeline image-text-to-text, se puede enviar una imagen por URL o base64 y obtener una descripción o respuesta contextualizada, útil para catalogación de imágenes o accesibilidad.
-- Automatización con tool calling: el modelo coloca llamadas a herramientas a través de la API compatible con OpenAI, lo que permite integrarlo en flujos de agentes que consulten APIs externas o ejecuten acciones.
-- Razonamiento paso a paso en tareas matemáticas o lógicas: con el modo thinking activado por defecto y `max_tokens` amplio (el ejemplo usa 4096), es adecuado para problemas que requieren cadena de razonamiento.
-- Respuestas de baja latencia: con el modo thinking desactivado y `max_tokens` reducido (1024), el modelo responde directamente, apropiado para chatbots donde prima la velocidad sobre la profundidad de razonamiento.
-- Desarrollo y prototipado en Apple Silicon: al ser un pack MLX nativo, se integra con `mlx-lm` en Python para experimentación e investigación sin GPU dedicada.
-- Despliegue de API privada: Kapitsa permite `kapitsa serve --model 35b:4bit --private`, ofreciendo endpoints OpenAI, Anthropic y Ollama en localhost para aplicaciones internas.
+- Asistente conversacional local en Mac: con 21-23 GB de pesos y un requisito de 48 GB de RAM o más, se puede servir un chat privado en local mediante Kapitsa con `--private`, sin enviar datos a la nube.
+- Automatización de atención al cliente con contexto de conversación: el soporte de APIs compatibles con OpenAI y Anthropic permite integrarlo en backends existentes sin cambiar el código del cliente.
+- Procesamiento de documentos con imágenes: el pipeline image-text-to-text permite enviar capturas, escaneos o diagramas como `image_url` y obtener descripciones o extracción de información en texto.
+- Agentes con tool calling: el modelo coloca llamadas a herramientas a través de `mlx_lm.server` o Kapitsa, lo que permite construir flujos de agente que consulten APIs externas o ejecuten funciones locales.
+- Razonamiento asistido con thinking mode: para tareas de matemáticas o lógica se puede dejar el modo thinking activado y consumir `reasoning_content` por separado del texto final.
+- Desarrollo y prototipado en Apple Silicon: investigadores que trabajan en Mac pueden evaluar un MoE de 35B sin GPU dedicada, usando mlx-lm o LM Studio para pruebas rápidas.
+- Despliegue de bajo coste en estaciones de trabajo Mac: al no requerir GPU NVIDIA, se puede montar un servicio interno de inferencia en un Mac Studio con 64 GB o más de memoria unificada.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Q4 | Q5 | Referencia |
-|---|---|---|---|
-| Divergencia KL frente a BF16 (menor es mejor) | 0,059 | 0,027 | mlx-community 4-bit: 0,096 |
-| Tamano de pesos del modelo de lenguaje | 19,51 GB | No disponible | 19,51 GB (mlx-community 4-bit) |
-| Tamano de descarga | 21,0 GB | 23,0 GB | No disponible |
-| Bits por peso | 4 (router 8 bits) | ~4,6 (5,1 con escalas) | 4 |
-| RAM recomendada | 48 GB+ | 48 GB+ | No disponible |
+El autor publica métricas de fidelidad de cuantización (divergencia KL frente a BF16), no benchmarks de tareas:
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos cuantitativos son las métricas de fidelidad de cuantización (KL) y los tamaños de los packs. El autor indica que la comparación Q5 no es pareada por haberse evaluado sobre token IDs distintos.
+| Checkpoint | Bits | Tamaño descarga | KL a BF16 | RAM recomendada |
+|---|---|---|---|---|
+| Q4 | 4 bits uniforme (router 8 bits) | 21,0 GB | 0,059 | 48 GB+ |
+| Q5 | mixta 4/6/8 bits (~4,6 bits/peso) | 23,0 GB | 0,027 | 48 GB+ |
+| mlx-community 4-bit (referencia) | 4 bits | mismo tamaño que Q4 | 0,096 | no disponible |
+| unsloth UD-3bit (referencia) | 3 bits | no disponible | no disponible | no disponible |
+
+El autor indica que Q5 se evaluó sobre token IDs distintos al resto, por lo que no reclama una ganancia pareada para ese checkpoint. No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- RAM: 48 GB o más para ambos packs según la regla del autor (el reparto por defecto de GPU en macOS es ~2/3 de la RAM; el pack debe caber junto con 2 GB para la conversación). Kapitsa puede encajar en un tamaño inferior al omitir partes no usadas; `kapitsa doctor` verifica el equipo.
-- GPU: orientado a Apple Silicon (MLX). No se documentan requisitos para GPU NVIDIA o AMD; el formato MLX no es directamente compatible con CUDA.
-- Consumer GPU: no aplica en el sentido tradicional; el target son Macs con memoria unificada de 48 GB o más. No se especifican modelos concretos de Mac.
-- Despliegue: `mlx-lm` (CLI, Python y servidor OpenAI en el puerto 8080), Kapitsa (servidor con APIs OpenAI, Anthropic y Ollama, puerto 8000) y LM Studio. No se mencionan vLLM, llama.cpp, Ollama nativo ni TGI.
+- RAM: el autor estima que Q4 y Q5 necesitan un Mac con 48 GB de RAM o más; el cálculo asume que macOS asigna por defecto aproximadamente 2/3 de la RAM a la GPU y se reservan 2 GB para la conversación.
+- GPU: Apple Silicon exclusivamente (mlx). No hay soporte para CUDA, A100, H100 ni RTX 4090 en este pack.
+- Consumer: cabe en Macs con memoria unificada de 48 GB o superior (por ejemplo, Mac Studio o MacBook Pro de gama alta). Kapitsa puede saltarse partes no usadas y caber en una talla menos; `kapitsa doctor` verifica un Mac concreto.
+- Despliegue: Kapitsa (`brew install nace-ai/tap/kapitsa`, `kapitsa pull 35b:4bit`, `kapitsa serve`), mlx-lm (`mlx_lm.generate`, `mlx_lm.server`) y LM Studio.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | KL a BF16 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| nace-ai Qwen3.6-35B-A3B-MLX-KQuant Q4 | 35,1 B totales (~3 B activos) | No disponible | 4 bits | 0,059 | Apache 2.0 | Hugging Face (MLX) |
-| nace-ai Qwen3.6-35B-A3B-MLX-KQuant Q5 | 35,1 B totales (~3 B activos) | No disponible | Mixta 4/6/8 bits | 0,027 | Apache 2.0 | Hugging Face (MLX) |
-| mlx-community 4-bit (referencia del autor) | 35,1 B totales (~3 B activos) | No disponible | 4 bits | 0,096 | No disponible | Hugging Face (MLX) |
-| unsloth UD-3bit (referencia del autor) | 35,1 B totales (~3 B activos) | No disponible | 3 bits (dynamic) | No disponible | No disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.6-35B-A3B-MLX-KQuant (Q4/Q5) | 35,1B totales | no disponible | MLX 4/5 bits | apache-2.0 | Hugging Face (nace-ai) |
+| mlx-community 4-bit (Qwen3.6-35B-A3B) | mismo base | no disponible | MLX 4 bits | apache-2.0 (base) | Hugging Face (mlx-community) |
+| unsloth UD-3bit (Qwen3.6-35B-A3B) | mismo base | no disponible | 3 bits | apache-2.0 (base) | Hugging Face (unsloth) |
 
-La comparación se limita a los packs citados en la model card; no se dispone de datos de rendimiento en tareas que permitan comparar con modelos de otros tamaños o familias.
+La comparación se limita a packs de cuantización del mismo modelo base; el autor solo aporta la métrica KL para Q4 (0,059 frente a 0,096 de mlx-community). No se dispone de datos de rendimiento en tareas para comparar.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización, no un modelo nuevo: hereda los sesgos y limitaciones del Qwen3.6-35B-A3B original, que no se documentan en la información disponible.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de fiabilidad para este pack.
-- La cuantización introduce degradación respecto al BF16; el propio autor cuantifica la divergencia KL (0,059 en Q4, 0,027 en Q5), que no es cero.
-- La métrica de Q5 se calculó sobre token IDs distintos, por lo que la comparación directa con Q4 y con mlx-community no es estrictamente pareada.
-- Exclusivo para Apple Silicon: el formato MLX no es portable a CUDA ni a otras plataformas sin conversión.
-- Requiere 48 GB de RAM o más; en Macs de menor memoria puede no encajar, y la regla de "Fits" es una aproximación, no una medición.
-- El autor advierte que varios ejemplos de la model card se probaron originalmente en el pack de 9B y solo algunos se verificaron en este pack de 35B (chat y tool calling en mlx-lm 0.32.2 y LM Studio, el 12 de noviembre de 2026).
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.6-35B-A3B, no detalladas aquí.
-- Idiomas soportados no documentados; no se puede garantizar calidad multilingüe.
-- Longitud de contexto no disponible, lo que impide planificar aplicaciones con ventanas largas.
+- Solo funciona en Apple Silicon con la librería mlx; no es desplegable en GPU NVIDIA ni en servidores x86 convencionales.
+- El requisito de 48 GB de RAM unificada limita su uso a equipos de gama alta.
+- La cuantización introduce pérdida de fidelidad respecto a BF16 (KL 0,059 en Q4, 0,027 en Q5); para tareas sensibles a la precisión conviene evaluar el checkpoint Q5 o el modelo original.
+- La model card advierte que varios ejemplos de inferencia se probaron primero en el pack de 9B y solo algunos se verificaron en este pack de 35B; conviene validar el comportamiento real antes de producción.
+- No se dispone de información sobre sesgos, idiomas soportados ni riesgo de alucinación específicos de este modelo.
+- El modelo base es Apache 2.0, por lo que el uso comercial está permitido; sin embargo, el autor del pack no detalla condiciones adicionales más allá de heredar la licencia del base.
+- El modo thinking está activado por defecto y consume tokens adicionales; en producción conviene desactivarlo con `reasoning_effort: "none"` cuando no sea necesario.
+- No se han publicado benchmarks de tareas, por lo que la calidad en MMLU, HumanEval o GSM8K no está verificada de forma independiente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-MLX-KQuant
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio Kapitsa: https://github.com/nace-ai/kapitsa
-- Instalación de Kapitsa: https://github.com/nace-ai/tap
-- mlx-lm: https://github.com/ml-explore/mlx-lm
-- LM Studio: https://lmstudio.ai
+- Pack de referencia del autor (sin KQuant): https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-MLX

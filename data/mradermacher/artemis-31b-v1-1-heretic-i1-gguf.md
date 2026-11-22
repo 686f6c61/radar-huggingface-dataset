@@ -2,89 +2,102 @@
 
 ## Resumen
 
-Artemis-31B-v1.1-heretic-i1-GGUF es una cuantización GGUF con matriz de importancia (imatrix) del modelo base `sh0ck0r/Artemis-31B-v1.1-heretic`, un modelo de lenguaje de 30.697 millones de parámetros (~31B) desarrollado por el usuario sh0ck0r y cuantizado por mradermacher. El término "heretic" hace referencia a que el modelo ha sido sometido a un proceso de ablación direccional (abliteration) mediante la herramienta Heretic, que elimina automáticamente la alineación de seguridad (censura) de los pesos del modelo sin necesidad de post-entrenamiento adicional. Esto lo convierte en un modelo "uncensored" o "decensored", orientado a usos donde se requiere generación de texto sin restricciones temáticas.
+Artemis-31B-v1.1-heretic-i1-GGUF es una colección de cuantizaciones GGUF del modelo Artemis-31B-v1.1-heretic, publicada por mradermacher, un conocido creador de cuantizaciones para la comunidad de inferencia local. El modelo original, desarrollado por sh0ck0r, es una variante "heretic" (también etiquetada como uncensored, decensored y abliterated) de una base de aproximadamente 30.700 millones de parámetros, lo que lo sitúa en la categoría de modelos densos de gran tamaño.
 
-La relevancia de este modelo radica en que ofrece una alternativa de código abierto para desarrolladores e investigadores que necesitan un LLM de gran tamaño sin filtros de seguridad, con la ventaja de estar disponible en múltiples cuantizaciones GGUF que permiten ejecutarlo en hardware de consumo. El repositorio incluye desde cuantizaciones de baja precisión (IQ2_M, 11 GB) hasta Q6_K (25,3 GB), lo que facilita su despliegue en GPUs con distinta capacidad de VRAM. El modelo está etiquetado como "conversational" y solo soporta inglés.
+El interés principal de esta publicación reside en que ofrece cuantizaciones con imatrix (importancia matrix) en una amplia gama de tipos, desde IQ1_S hasta Q6_K, permitiendo ejecutar un modelo de 31B en hardware de consumo con pérdidas de calidad controladas. La familia "heretic" se orienta a eliminar los mecanismos de rechazo y moderación del modelo base mediante técnicas de abliteration, lo que la hace relevante para investigación sobre alineación, evaluación de sesgos y aplicaciones que requieren respuestas sin filtros editoriales.
 
-## Especificaciones tecnicas
+La información disponible sobre el modelo original es limitada: no se especifican la longitud de contexto, los datos de entrenamiento ni la licencia, y la model card se centra casi exclusivamente en los detalles de las cuantizaciones. Esta ficha refleja esa limitación de forma explícita.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo transformer, sin especificar variante) |
-| Parametros totales | 30.697.345.596 (~30,7B) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | no disponible (modelo transformer denso, inferido del pipeline conversacional y del tamaño) |
+| Parámetros totales | 30.697.345.596 (30,7B) |
+| Parámetros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_M, i1-Q3_K_M, i1-IQ4_XS, i1-Q4_K_S, i1-Q4_K_M, i1-Q6_K (todos con imatrix) |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de fichero imatrix) |
+| Idiomas soportados | inglés (en) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (con archivo imatrix adicional) |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Tamaño del repositorio | 334,8 GB |
+| Modelo base | sh0ck0r/Artemis-31B-v1.1-heretic |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base Artemis-31B-v1.1-heretic. Dado que es un modelo de 31B parametros y se integra con la libreria transformers, se asume una arquitectura transformer decoder-only, pero no se confirma el tipo exacto (p. ej., Llama, Mistral, etc.) ni el numero de capas, cabezas de atencion o dimensiones ocultas. Tampoco se conocen los datos de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura del modelo original en la documentación proporcionada. Los metadatos indican un pipeline conversacional, etiquetas de transformers y un total de 30.697.345.596 parámetros en formato safetensors, lo que corresponde a un transformer denso de aproximadamente 31B. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención ni la longitud de contexto nativa.
 
-Lo que si se sabe es que el modelo base ha sido procesado con la herramienta Heretic, que implementa una combinacion de ablacion direccional (abliteration) y un optimizador de parametros basado en TPE (Tree-structured Parzen Estimator) con Optuna. Este proceso elimina de forma automatica la "safety alignment" de los pesos, es decir, las direcciones en el espacio de activaciones que el modelo aprendio para rechazar o redirigir ciertos contenidos. El resultado es un modelo que no aplica los filtros de seguridad tipicos de los LLM comerciales o alineados.
-
-La cuantizacion GGUF con imatrix (importance matrix) mejora la calidad de la cuantizacion al ponderar la importancia de cada peso, reduciendo la perdida de perplejidad en comparacion con cuantizaciones estaticas del mismo tamaño.
+Respecto al entrenamiento, la model card únicamente indica que se trata de un modelo "heretic", "uncensored", "decensored" y "abliterated", lo que implica la aplicación de técnicas de abliteration (ablación de direcciones de activación asociadas al rechazo) sobre el modelo base. No se detallan el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. La cuantización realizada por mradermacher emplea imatrix (matriz de importancia) y el formato i1 de llama.cpp, generada con convert_type hf y quantize_version 2, lo que preserva mejor la calidad que las cuantizaciones estáticas equivalentes.
 
 ## Capacidades
 
-- Generacion de texto libre sin restricciones de contenido tematico (gracias a la abliteracion).
-- Conversacion multi-turno, etiquetado como "conversational".
-- Soporte de idioma ingles unicamente.
-- Compatible con herramientas de inferencia que aceptan GGUF, como llama.cpp, Ollama, LM Studio, etc.
-- No se especifican capacidades de tool calling, function calling, agentes, vision, audio ni razonamiento avanzado (thinking mode). No hay evidencia de que las posea.
-- Al ser un modelo abliterado, puede generar contenido que otros modelos rechazarian, incluyendo temas sensibles o explicitos.
+- Generación de texto conversacional multi-turno, con formato de chat orientado a diálogo.
+- Respuestas sin mecanismos de rechazo ni moderación editorial (abliterated), lo que permite abordar temas que el modelo base declinaría.
+- Razonamiento general y respuesta a instrucciones en inglés.
+- Capacidad de ejecución local mediante llama.cpp y derivados (Ollama, LM Studio, koboldcpp), gracias al formato GGUF.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible) para despliegue como servicio.
+- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo thinking.
+- Capacidades multilingües limitadas al inglés según los metadatos del modelo.
 
 ## Casos de uso
 
-- Roleplay y ficcion interactiva: el modelo puede mantener personajes y narrativas sin censura, lo que lo hace util para juegos de rol textuales o escritura creativa adulta.
-- Generacion de dialogos para guiones o novelas: su capacidad conversacional y falta de filtros permite explorar tramas con violencia, sexo o temas tabu sin restricciones.
-- Investigacion academica sobre sesgos y alineacion: los investigadores pueden estudiar como se comporta un modelo sin safety alignment y compararlo con versiones alineadas para entender los mecanismos de censura.
-- Pruebas de estres de sistemas de moderacion: se puede usar para generar contenido ofensivo o inapropiado y evaluar la robustez de filtros de contenido en aplicaciones.
-- Desarrollo de asistentes virtuales sin restricciones: para nichos donde se requiere respuestas directas sin evasivas (p. ej., discusiones sobre drogas, armas, etc.), siempre que se cumpla la legalidad.
-- Generacion de codigo o texto tecnico sin limitaciones de "uso responsable": aunque no se confirma su capacidad de codigo, al ser un LLM general podria usarse para tareas de generacion de texto tecnico sin los avisos de seguridad habituales.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo la abliteration afecta a la distribución de respuestas ante prompts sensibles, comparando con el modelo base original en experimentos controlados.
+- Evaluación de sesgos y robustez: al carecer de rechazos, resulta útil para generar corpus de respuestas que expongan sesgos latentes y diseñar filtros posteriores en pipelines de moderación.
+- Generación creativa sin restricciones editoriales: escritura de ficción, guiones o narrativa con temáticas adultas o controvertidas, donde el modelo base bloquearía la generación.
+- Despliegue local en estaciones de trabajo: con la cuantización i1-Q4_K_M (18,8 GB) puede ejecutarse en GPU de consumo con 24 GB de VRAM, sirviendo como asistente personal sin dependencia de API externa.
+- Prototipado de agentes conversacionales: la etiqueta endpoints_compatible permite exponerlo mediante una API compatible con OpenAI y conectarlo a frameworks de agentes, aunque sin garantías de tool calling fiable.
+- Red teaming de sistemas de IA: uso como generador adversario para probar la robustez de clasificadores de contenido y filtros de seguridad en productos desplegados.
+- Análisis de datos sintéticos: generación de diálogos y textos en inglés a gran escala para aumento de datos, aprovechando el throughput de las cuantizaciones Q4 en hardware consumer.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras metricas estandar. Tampoco se ofrecen comparativas con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion elegida. Los tamaños de archivo indicados son:
-  - i1-IQ2_M: 11,0 GB
-  - i1-Q2_K_S: 11,1 GB
-  - i1-Q2_K: 12,0 GB
-  - i1-IQ3_XXS: 12,2 GB
-  - i1-IQ3_M: 14,5 GB
-  - i1-Q3_K_M: 15,4 GB
-  - i1-IQ4_XS: 16,8 GB
-  - i1-Q4_K_S: 17,9 GB
-  - i1-Q4_K_M: 18,8 GB
-  - i1-Q6_K: 25,3 GB
-- Para las cuantizaciones mas pequeñas (IQ2_M, Q2_K_S) se necesitan al menos 12-16 GB de VRAM, por lo que caben en GPUs como RTX 3060 12GB (con offloading parcial) o RTX 4070/4080 (16GB). Las cuantizaciones Q4_K_M (18,8 GB) requieren 24 GB de VRAM (RTX 3090/4090, A5000). Q6_K (25,3 GB) necesita 32 GB o mas (A100 40GB, etc.).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, vLLM (si soporta GGUF), o cualquier runtime compatible con GGUF.
-- Latencia y throughput: no se proporcionan datos. En una RTX 4090 con Q4_K_M, se puede esperar una velocidad de generacion de 20-40 tokens/s, pero es una estimacion general no confirmada.
+- VRAM estimada para inferencia (modelo de 30,7B parámetros):
+  - i1-IQ1_S / IQ1_M: 7,3-7,8 GB (calidad muy degradada, solo para pruebas).
+  - i1-IQ2_M / Q2_K: 11,0-12,0 GB (calidad baja).
+  - i1-IQ3_M / IQ3_S: 13,9-14,5 GB (compromiso razonable en 16 GB).
+  - i1-IQ4_XS / Q4_K_S: 16,8-17,9 GB (óptimo tamaño/velocidad/calidad según el autor).
+  - i1-Q4_K_M: 18,8 GB (recomendado por el autor, rápido).
+  - i1-Q5_K_M: 21,9 GB (alta calidad).
+  - i1-Q6_K: 25,3 GB (prácticamente equivalente a Q6_K estático).
+- GPU recomendadas:
+  - Consumer: RTX 3090 / RTX 4090 (24 GB) para Q4_K_M o Q5_K_S; RTX 4080 / 4070 Ti Super (16 GB) para IQ3_M o IQ4_XS con offload parcial.
+  - Profesional: A100 40/80 GB, H100, L40S para cuantizaciones Q5/Q6 con contexto largo y mayor throughput.
+- Cabe en GPU de consumo: sí, desde 8 GB (IQ2) hasta 24 GB (Q4_K_M/Q5_K_S); las cuantizaciones Q6_K requieren 32 GB o offload a RAM.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui; servidores compatibles con la API de OpenAI (llama-server) gracias a la etiqueta endpoints_compatible. vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que requerirían los pesos safetensors del modelo base.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos. No se conocen modelos de la misma categoria (31B, abliterados, GGUF) con datos publicos de rendimiento. Por tanto, la comparativa no esta disponible.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Artemis-31B-v1.1-heretic (i1-GGUF) | 30,7B | no disponible | no disponible | GGUF (i1) | Variante abliterated, solo inglés, cuantizaciones con imatrix |
+| Artemis-31B-v1.1-heretic (GGUF estático) | 30,7B | no disponible | no disponible | GGUF | Mismo modelo base, cuantizaciones estáticas sin imatrix |
+| Modelos densos de ~30B de la familia Gemma/Qwen | ~27-32B | 32K-128K según variante | licencias permisivas habituales | safetensors, GGUF | No disponible comparación de rendimiento por falta de benchmarks publicados |
+
+No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación cuantitativa rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo abliterado, puede generar contenido explicito, violento, ilegal o eticamente cuestionable. El usuario es responsable del uso que haga de el.
-- No se ha verificado la calidad del modelo en tareas estandar; al carecer de benchmarks, no se puede garantizar su rendimiento en razonamiento, codigo o matematicas.
-- Solo soporta ingles; no es util para otros idiomas.
-- La licencia no esta especificada, por lo que se desconoce si permite uso comercial o si tiene restricciones. Se recomienda contactar con el autor antes de usarlo en produccion.
-- El modelo base puede tener sesgos y alucinaciones tipicos de los LLM, agravados por la falta de alineacion.
-- La cuantizacion de baja precision (IQ2_M, Q2_K) puede degradar notablemente la calidad de las respuestas; se recomienda usar Q4_K_M o superior para tareas serias.
-- No se garantiza la reproducibilidad de los resultados debido a la naturaleza estocastica de la generacion.
+- Modelo "abliterated" y "uncensored": no aplica rechazos de seguridad, por lo que puede generar contenido dañino, ilegal o explícitamente sensible. No apto para despliegue público sin filtros externos.
+- Riesgo elevado de alucinación: no se han publicado evaluaciones de fidelidad factual ni benchmarks que cuantifiquen este riesgo.
+- Idiomas: únicamente inglés según los metadatos; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Licencia no disponible: la ausencia de licencia explícita impide confirmar si se permite uso comercial. Debe contactarse con el autor del modelo base antes de cualquier uso en producción.
+- Contexto desconocido: al no documentarse la longitud de contexto, no se puede garantizar el comportamiento en conversaciones largas ni el uso de técnicas como RoPE scaling.
+- Cuantizaciones de baja precisión (IQ1, IQ2, Q2_K) degradan notablemente la coherencia y la capacidad de razonamiento; el autor desaconseja su uso salvo fines experimentales.
+- La model card no documenta tool calling ni capacidades de agente; la etiqueta endpoints_compatible solo garantiza compatibilidad de API, no fiabilidad funcional.
+- El repositorio ocupa 334,8 GB en total; la descarga selectiva de un único fichero GGUF es posible, pero conviene verificar el espacio en disco y la integridad de los ficheros multi-parte.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF
-- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/sh0ck0r/Artemis-31B-v1.1-heretic
-- Herramienta Heretic (GitHub): https://github.com/p-e-w/heretic
-- Guia de modelos abliterados (2026): https://locallyuncensored.com/blog/abliterated-models-guide.html
-- Pagina de descargas del modelo (vista general): https://hf.tst.eu/model#Artemis-31B-v1.1-heretic-i1-GGUF
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Artemis-31B-v1.1-heretic-i1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

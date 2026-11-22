@@ -2,93 +2,92 @@
 
 ## Resumen
 
-Outlier-70B-V3.2 es un artefacto de investigación publicado por Outlier-Ai en Hugging Face, construido como un adaptador (overlay) sobre el modelo base Qwen/Qwen2.5-32B-Instruct. A pesar del "70B" en su nombre comercial, el modelo base declarado es de 32 mil millones de parámetros, y el repositorio se presenta explícitamente como un experimento de mezcla de expertos (MoE) con cuantización ternaria y de 1 bit orientado a inferencia local en Apple Silicon. El autor lo marca como "superseded" y "archival": no es la descarga recomendada ni un modelo pensado para producción, sino una pieza preservada por reproducibilidad histórica.
+Outlier-70B-V3.2 es un checkpoint de investigación publicado por Outlier-Ai, construido como un adaptador (overlay) sobre el modelo base Qwen/Qwen2.5-32B-Instruct. A pesar de la denominación "70B" en el nombre, el modelo base declarado tiene 32B parámetros y la arquitectura se describe con etiquetas de mixture-of-experts (MoE) con cuantización ternaria de 1 bit, lo que sugiere una representación comprimida y dispersa más que un modelo denso de 70B parámetros convencional. El repositorio ocupa 118,9 GB.
 
-La relevancia actual es, por tanto, limitada y fundamentalmente documental. La model card indica que este repositorio precede a la línea v1.8 de la aplicación Outlier y que las afirmaciones técnicas de revisiones anteriores deben considerarse provisionales. No se publican en la información disponible detalles verificables sobre el número de tokens de entrenamiento, la composición del dataset ni resultados de benchmarks.
+El propio autor marca este repositorio como **superseded** (reemplazado) y **archival**: es un artefacto de una línea de producto anterior que se conserva únicamente por reproducibilidad e interés histórico. No forma parte de la aplicación Outlier que se distribuye actualmente y sus cifras proceden de experimentos internos, no de las pruebas de release oficiales. Por tanto, no debe considerarse una recomendación de producción.
 
-Para desarrolladores e investigadores, este modelo debe evaluarse como material de estudio sobre técnicas de superposición dispersa y cuantización extrema sobre un transformer denso de Qwen2.5, no como una opción de despliegue. La información disponible sobre arquitectura interna, rendimiento medido y metodología de entrenamiento es muy escasa.
+La relevancia de esta ficha es, sobre todo, documental: permite entender una aproximación experimental a la compresión extrema (ternaria/1-bit) de un modelo instruct de 32B con vocación de ejecución local en Apple Silicon. Para uso real, el autor redirige a sus tiers vigentes (Nano 4B, Lite 9B, Quick 26B, Core 27B, Vision 35B-A3B).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con overlay sobre Qwen2.5-32B-Instruct; transformer con componentes ternarios/1-bit |
-| Parámetros totales | No disponible de forma verificable (el nombre indica 70B; el modelo base declarado tiene 32B) |
-| Parámetros activos | No disponible |
-| Longitud de contexto | 32K (según LLM Explorer; no confirmado en la model card) |
-| Tipos de cuantización | Ternaria y 1-bit (según tags); variantes MLX en la línea sucesora |
-| Idiomas soportados | en, zh, fr, es, pt, de, it, ru, ja, ko, ar, vi, th, nl, pl |
+| Arquitectura | Transformer derivado de Qwen2.5-32B-Instruct, con overlay MoE y cuantización ternaria (etiquetas: mixture-of-experts, moe, ternary, 1-bit, sparse) |
+| Parametros totales | No disponible de forma fiable (el nombre indica "70B", pero el modelo base declarado es de 32B; el autor no publica el recuento efectivo) |
+| Parametros activos | No disponible |
+| Longitud de contexto | No disponible (no especificada en la información proporcionada) |
+| Tipos de cuantizacion | Ternaria / 1-bit (según etiquetas); variantes MLX de 4 bits mencionadas solo para los modelos sustitutos, no para este checkpoint |
+| Idiomas soportados | en, zh, fr, es, pt, de, it, ru, ja, ko, ar, vi, th, nl, pl (15 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (repo de 118,9 GB; librería transformers, requiere custom_code) |
+| Formato de pesos | Pesos en formato transformers (safetensors presumiblemente, no confirmado); requiere `custom_code` (código personalizado de modelado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se describe como una mezcla de expertos (MoE) construida mediante un "overlay" sobre Qwen/Qwen2.5-32B-Instruct, con relación de adaptador respecto al modelo base. Los tags indican componentes ternarios y de 1 bit, junto con técnicas de dispersión ("sparse") y orientación a ejecución local en Apple Silicon. No se especifica el número de expertos, la estrategia de enrutamiento, el tamaño del repositorio de expertos ni el mecanismo exacto de superposición.
+El modelo se presenta como un adaptador sobre Qwen2.5-32B-Instruct (`base_model_relation: adapter`), con un "overlay" que introduce componentes de mezcla de expertos y una representación de pesos ternaria (1-bit). Las etiquetas del repositorio incluyen `outlier_moe`, `overlay`, `sparse`, `ternary` y `1-bit`, lo que apunta a una técnica de compresión agresiva orientada a ejecución local en dispositivos con memoria limitada, en particular Apple Silicon y Mac. El repositorio requiere `custom_code`, es decir, una implementación de modelado propia que no está integrada en transformers estándar.
 
-No hay información disponible sobre el volumen de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones de decodificación. La propia model card advierte que se trata de un artefacto de investigación y que las afirmaciones técnicas de revisiones anteriores de la ficha deben considerarse provisionales. No se debe asumir que las técnicas descritas hayan sido validadas de forma independiente.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste supervisado adicionales más allá del modelo base. El autor advierte explícitamente que este artefacto puede contener adaptadores, overlays o variantes de cuantización experimentales que no llegaron al producto final, y que cualquier afirmación técnica de revisiones anteriores de la model card debe considerarse provisional.
 
 ## Capacidades
 
 - Generación de texto conversacional, heredada del modelo base Qwen2.5-32B-Instruct.
-- Soporte multilingüe para 15 idiomas declarados (inglés, chino, francés, español, portugués, alemán, italiano, ruso, japonés, coreano, árabe, vietnamita, tailandés, neerlandés y polaco).
-- Orientación a inferencia local y en dispositivo ("on-device", "local-llm", "apple-silicon", "mac"), según los tags del repositorio.
-- Posible soporte de tool calling y razonamiento multi-paso por herencia del modelo base, aunque no se documenta explícitamente en la información disponible.
-- No se documentan capacidades de visión, audio ni modo "thinking" específicas de este artefacto.
-- El estado "superseded" implica que el autor no garantiza el mantenimiento ni la corrección de estas capacidades.
+- Razonamiento y conocimiento general propios de un modelo instruct de 32B (sujeto a la degradación que pueda introducir la compresión ternaria).
+- Soporte multilingüe declarado para 15 idiomas, incluido el español.
+- Orientación a ejecución local y on-device (etiquetas `local-llm`, `on-device`, `apple-silicon`, `mac`).
+- Soporte de tool calling / function calling: no confirmado en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la información proporcionada.
+- Capacidades de visión, audio o modo "thinking": no disponibles.
+- Estado del repositorio: marcado como superseded y archival; no recomendado para producción.
 
 ## Casos de uso
 
-- Estudio de técnicas de cuantización extrema: el repositorio sirve para analizar cómo se aplica una superposición MoE ternaria/1-bit sobre un transformer denso de 32B, comparando la estructura de pesos con el modelo base Qwen2.5.
-- Reproducción de investigación: útil para replicar experimentos previos de la línea Outlier y verificar afirmaciones históricas sobre dispersión y compresión.
-- Evaluación de viabilidad en Apple Silicon: permite probar en hardware Mac si un esquema de cuantización agresiva mantiene una calidad aceptable en tareas conversacionales, aunque sin garantías de soporte.
-- Docencia sobre arquitecturas MoE: como ejemplo práctico de overlay y enrutamiento disperso en un modelo abierto con licencia Apache 2.0.
-- Análisis comparativo de formatos de pesos: el tamaño del repositorio (118,9 GB) y la presencia de custom_code permiten estudiar el empaquetado de pesos y la carga en transformers.
-- Prototipado interno no crítico: para equipos que quieran experimentar con el pipeline text-generation y el tokenizador de Qwen2.5 en entornos controlados, siempre asumiendo el estado archival y la falta de benchmarks.
-- No se recomienda su uso en atención al cliente, generación de código en producción ni pipelines de CI/CD, dado que el autor lo declara obsoleto y sin validación publicada.
+- **Investigación sobre compresión extrema de modelos**: el checkpoint sirve como referencia reproducible para estudiar cómo se comporta un modelo instruct de 32B cuando se representa con pesos ternarios y un overlay MoE, comparando calidad frente al base sin comprimir.
+- **Reproducción de experimentos históricos**: útil para replicar resultados de la línea Outlier anterior a la v1.8 y documentar la evolución de la técnica en publicaciones o auditorías internas.
+- **Pruebas de ejecución local en Apple Silicon**: las etiquetas `apple-silicon` y `mac` indican que el artefacto se diseñó para entornos de memoria unificada; puede emplearse para medir latencia y consumo en Mac con chip de la serie M.
+- **Evaluación de degradación por cuantización ternaria**: permite construir comparativas controladas (perplejidad, exactitud en tareas de razonamiento) frente al Qwen2.5-32B-Instruct original.
+- **Prototipado de pipelines con código personalizado**: al requerir `custom_code`, es un banco de pruebas para integrar implementaciones de modelado no estándar en transformers.
+- **Docencia y formación técnica**: como ejemplo documentado de arquitectura MoE con cuantización de 1 bit y de las advertencias asociadas (artefacto de investigación, no producto).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que las cifras de revisiones anteriores de la model card procedían de experimentos internos y no de las pruebas de release oficiales, por lo que no se recogen aquí.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma fiable. El repositorio ocupa 118,9 GB, lo que sugiere pesos de gran tamaño; las variantes ternarias/1-bit podrían reducir la huella, pero no se documenta el tamaño efectivo por componente.
-- GPU recomendadas: no disponibles. Los tags apuntan a Apple Silicon y Mac como objetivo principal, no a GPU NVIDIA.
-- Viabilidad en GPU de consumo: no confirmada. El tamaño del repositorio y la falta de cuantizaciones GGUF documentadas impiden asegurar que quepa en tarjetas como RTX 4090.
-- Opciones de despliegue: transformers con custom_code (según la librería declarada). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- **VRAM estimada**: no disponible. El repositorio ocupa 118,9 GB, pero al tratarse de un overlay con cuantización ternaria el peso efectivo en memoria podría ser muy inferior; el autor no publica cifras.
+- **GPU recomendadas**: no especificadas. Las etiquetas apuntan a Apple Silicon (Mac con memoria unificada) como plataforma objetivo.
+- **Compatibilidad con GPU de consumo**: no confirmada. No hay datos sobre ejecución en RTX 4090, 3090 u otras GPU consumer.
+- **Opciones de despliegue**: requiere `custom_code` en transformers; no se confirma soporte en vLLM, llama.cpp, Ollama o TGI. Los modelos sustitutos del autor se distribuyen en formato MLX de 4 bits.
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Estado | Notas |
+| Modelo | Parametros | Contexto | Licencia | Estado | Notas |
 |---|---|---|---|---|---|
-| Outlier-70B-V3.2 | No verificable (base 32B) | 32K (no confirmado) | Apache 2.0 | Archival / superseded | Artefacto de investigación con overlay MoE ternario |
-| Qwen2.5-32B-Instruct | 32B | 32K (según modelo base) | Apache 2.0 | Activo | Modelo base denso sobre el que se construye el overlay |
-| Outlier Core 27B (MLX-4bit) | 27B | No disponible | No disponible en la información | Activo (tier por defecto del autor) | Sucesor recomendado por el propio autor |
-| Outlier Nano 4B (MLX-4bit) | 4B | No disponible | No disponible en la información | Activo (tier de entrada) | Alternativa ligera para ejecución local |
-
-La comparación con alternativas de la misma categoría (MoE dispersos de gran tamaño) no está disponible porque no se publican parámetros activos, número de expertos ni rendimiento medido.
+| Outlier-70B-V3.2 | No disponible (base 32B) | No disponible | Apache 2.0 | Superseded / archival | Overlay MoE ternario 1-bit, requiere custom_code |
+| Qwen2.5-32B-Instruct | 32B | No disponible en esta ficha | Apache 2.0 | Activo | Modelo base sin comprimir del que deriva |
+| Outlier Core 27B | 27B (según nombre) | No disponible | No disponible | Tier vigente | Sustituto recomendado por el autor, formato MLX 4-bit |
+| Outlier Nano 4B | 4B (según nombre) | No disponible | No disponible | Tier vigente | Tier de entrada actual, formato MLX 4-bit |
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como "superseded" y "archival" por el propio autor: no es la descarga recomendada ni recibe mantenimiento.
-- Ausencia total de benchmarks publicados: no hay evidencia verificable de calidad, razonamiento o código.
-- Ambigüedad en el tamaño: el nombre indica 70B pero el modelo base declarado es de 32B; no se aclara si el total incluye expertos superpuestos.
-- Riesgo de alucinación y sesgos heredados de Qwen2.5-32B-Instruct, sin documentación específica de mitigaciones en este artefacto.
-- Licencia Apache 2.0 permite uso comercial, pero el estado archival y la falta de validación desaconsejan su uso en producción.
-- Requiere custom_code en transformers, lo que puede introducir dependencias frágiles y problemas de compatibilidad.
-- Idiomas: aunque se declaran 15, no hay evaluación de calidad por idioma; el español figura en la lista sin métricas.
-- La model card incluye enlaces promocionales a un producto de pago y advierte que las afirmaciones técnicas previas son provisionales; conviene tratar cualquier dato de revisiones anteriores con escepticismo.
+- **Modelo obsoleto**: el autor lo marca explícitamente como superseded y archival; no es la descarga recomendada ni se distribuye en la aplicación Outlier.
+- **Cifras no verificadas**: los números de revisiones anteriores procedían de experimentos internos, no de pruebas de release; el autor pide tratarlos como provisionales.
+- **Riesgo de alucinación**: inherente a los modelos generativos; la compresión ternaria puede agravar la pérdida de fidelidad factual, aunque no hay mediciones publicadas.
+- **Ambigüedad de tamaño**: el nombre "70B" no concuerda con el modelo base de 32B declarado; el recuento real de parámetros no está documentado.
+- **Dependencia de código personalizado**: requiere `custom_code`, lo que complica el despliegue en stacks estándar y en herramientas de inferencia habituales.
+- **Contexto e idiomas**: la longitud de contexto no está especificada; el rendimiento en los 15 idiomas declarados no está verificado, incluido el español.
+- **Licencia**: Apache 2.0 permite uso comercial, pero al derivar de Qwen2.5-32B-Instruct conviene revisar también las condiciones del modelo base.
+- **Sesgos**: no documentados por el autor; se heredan los del modelo base y no hay evaluación específica publicada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Outlier-Ai/Outlier-70B-V3.2
-- LLM Explorer: https://llm-explorer.com/model/Outlier-Ai%2FOutlier-70B-V3.2,4tvrD2rXbmE6Od3y0PgJ4I
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
-- Sucesor tier de entrada: https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
-- Sucesor tier por defecto: https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
-- Sucesor multimodal: https://huggingface.co/Outlier-Ai/Outlier-Vision-35B-A3B-MLX-4bit
-- Modelo de razonamiento sucesor: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
-- Modelo de código sucesor: https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
-- Sitio del autor: https://outlier.host/
-- Plataforma de freelancers (no relacionada con el modelo): https://outlier.ai/
+- [Hugging Face: Outlier-Ai/Outlier-70B-V3.2](https://huggingface.co/Outlier-Ai/Outlier-70B-V3.2)
+- [Sitio del autor (outlier.host)](https://outlier.host/?utm_source=hf&utm_medium=modelcard&utm_campaign=outlier_70b_v3_2)
+- [Outlier Nano 4B (MLX 4-bit)](https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit)
+- [Outlier Lite 9B (MLX 4-bit)](https://huggingface.co/Outlier-Ai/Outlier-Lite-9B-MLX-4bit)
+- [Outlier Quick 26B (MLX 4-bit)](https://huggingface.co/Outlier-Ai/Outlier-Quick-26B-MLX-4bit)
+- [Outlier Core 27B (MLX 4-bit)](https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit)
+- [Outlier Vision 35B-A3B (MLX 4-bit)](https://huggingface.co/Outlier-Ai/Outlier-Vision-35B-A3B-MLX-4bit)
+- [DeepSeek-R1-Distill-Qwen-7B (MLX 4-bit)](https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit)
+- [Qwen3-Coder-30B-A3B-Instruct (MLX 4-bit)](https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit)
+- [Modelo base: Qwen/Qwen2.5-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)

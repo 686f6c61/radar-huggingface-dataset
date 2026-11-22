@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF es una cuantización GGUF, generada con imatrix, del modelo AkaumiKaede/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA, una variante "abliterated" (sin rechazo) del Qwen3.5-2B. El trabajo de cuantización lo firma mradermacher, un autor habitual en el ecosistema GGUF, y el modelo resultante está pensado para ejecución local en llama.cpp y derivados. El modelo base parte de la familia Qwen3.5 de 2B parámetros y ha sido modificado para eliminar los mecanismos de rechazo, orientándolo a escritura creativa, roleplay y conversación sin restricciones.
+Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF es una cuantizacion GGUF realizada por mradermacher sobre el modelo AkiMizuki/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA, a su vez derivado de la familia Qwen3.5 de 2B parametros de Alibaba. Se trata de una variante "abliterated" y "zero-refusal" orientada a escritura creativa, roleplay y generacion de contenido sin restricciones, con soporte multimodal de imagen segun los tags del repositorio. El modelo conserva la licencia Apache 2.0 del original.
 
-La relevancia de esta ficha reside en que combina varias características poco habituales en un modelo de 2B: es multimodal (etiquetas `vision`, `image`), soporta inglés y chino, y se distribuye bajo licencia Apache 2.0. El repositorio incluye un amplio abanico de cuantizaciones (desde IQ1_S de 0,8 GB hasta Q6_K), lo que permite desplegarlo en hardware muy modesto. El número de parámetros reales según safetensors es de 1.881.825.088 (aproximadamente 1,88B).
+El atractivo principal es su tamano reducido (1.881.825.088 parametros reales) combinado con un conjunto amplio de cuantizaciones i1 con imatrix, lo que permite ejecutarlo en hardware de consumo. La cuantizacion i1 utiliza matrices de importancia (imatrix) para mejorar la calidad en tamanos pequenos, con rangos desde IQ1_S (0.8 GB) hasta Q4_K_M (1.4 GB) en los ficheros listados.
 
-El modelo está etiquetado como "zero-refusal" y "abliterated", lo que implica que se ha intervenido sobre las capas de rechazo del modelo original. Esto lo hace inadecuado para aplicaciones donde se requiera moderación automática de contenido, y obliga a implementar salvaguardas externas si se usa en producción. La información disponible sobre arquitectura interna, contexto y datos de entrenamiento es limitada en la model card.
+Es relevante ahora porque ofrece una alternativa ligera y sin filtros para desarrolladores que necesitan un modelo pequeno para generacion creativa, agentes conversacionales o experimentacion con roleplay, en ingles y chino, con despliegue via llama.cpp u Ollama. No obstante, la ausencia de benchmarks publicados y el proceso de "abliteration" implican riesgos de calidad y seguridad que deben evaluarse antes de usarlo en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5), multimodal texto-imagen; detalles internos no disponibles |
-| Parametros totales | 1.881.825.088 (~1,88B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.5-2B); multimodal segun tags (vision) |
+| Parametros totales | 1.881.825.088 |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, Q2_K_S, Q2_K, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones i1 con imatrix) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, Q2_K_S, Q2_K, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M (i1 con imatrix) |
 | Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (cuantizaciones i1 con imatrix); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de la familia Qwen3.5 con aproximadamente 1,88B parámetros, según los datos de safetensors del repositorio. La model card no detalla la composición del dataset de entrenamiento, el número de tokens ni si se aplicaron técnicas de RLHF o DPO. Las etiquetas indican que el modelo ha pasado por un proceso de "abliteration" (eliminación de la dirección de rechazo en el espacio de activaciones) y que se comercializa como "zero-refusal" y "decensored".
+La informacion disponible no detalla la arquitectura interna del modelo base Qwen3.5-2B ni del derivado AkiMizuki/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA. Por los tags y el nombre se infiere una arquitectura transformer de la familia Qwen3.5, con capacidades multimodales (tag "vision", "image") y un proceso de "abliteration" o "decensoring" que elimina el comportamiento de rechazo del modelo original. No se especifican numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF/DPO en la informacion proporcionada.
 
-La variante aquí descrita es una cuantización GGUF generada por mradermacher con el método i1 (imatrix), que utiliza una matriz de importancia para preservar mejor la calidad en cuantizaciones agresivas. Existe también una versión estática de cuantizaciones en el repositorio mradermacher/Qwen3.5-2B-Uncensored-Abliterix-SOM-GGUF. Al ser un modelo multimodal, los ficheros mmproj (proyector multimodal) se encuentran en el repositorio estático, no en el de cuantizaciones i1.
+La innovacion tecnica documentada es la cuantizacion i1 con imatrix realizada por mradermacher, que genera matrices de importancia para mejorar la fidelidad de las cuantizaciones de baja precision. El repositorio incluye el fichero imatrix (0.1 GB) para que otros puedan crear sus propias cuantizaciones. Los ficheros mmproj (necesarios para la parte de vision) se alojan en el repositorio estatico asociado, no en este.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y chino.
-- Capacidades multimodales de imagen (etiquetas `vision`, `image`); el proyector multimodal está en el repositorio estático.
-- Escritura creativa y roleplay sin restricciones de rechazo (zero-refusal, abliterated).
-- Conversación multi-turno y chat.
-- Soporte de agentes (etiqueta `agent`).
-- Contenido para adultos (etiquetas `r18`, `ERP`).
-- Compatible con endpoints (etiqueta `endpoints_compatible`).
-- No se documentan capacidades específicas de tool calling, matemáticas o razonamiento extendido en la información disponible.
+- Generacion de texto conversacional y creativo en ingles y chino.
+- Escritura creativa y roleplay (tags "writing", "roleplay", "rp", "rep", "r18", "ERP").
+- Comportamiento "zero-refusal" / "uncensored": no aplica rechazos por contenido sensible.
+- Soporte multimodal de imagen segun tags ("vision", "image"), con ficheros mmproj en el repositorio estatico.
+- Uso como agente y chat (tags "agent", "chat").
+- Compatibilidad con endpoints (tag "endpoints_compatible").
+- No se documenta soporte explicito de tool calling ni de modo "thinking" en la informacion disponible.
 
 ## Casos de uso
 
-- Roleplay y narrativa interactiva: el modelo está entrenado y modificado para evitar rechazos, lo que permite mantener personajes y tramas sin interrupciones por filtros de contenido; adecuado para plataformas de ficción interactiva con moderación externa.
-- Escritura creativa sin restricciones: generación de relatos, guiones o diálogos donde el modelo original rechazaría ciertos temas; útil para autores que necesitan explorar temáticas adultas.
-- Asistente conversacional local en inglés o chino: al ser un modelo de ~1,88B en GGUF, puede ejecutarse en portátiles y equipos sin GPU dedicada, ofreciendo privacidad total al no requerir conexión.
-- Análisis de imágenes en local: gracias a su naturaleza multimodal y al proyector mmproj disponible en el repositorio estático, puede describir o interpretar imágenes en entornos sin conexión.
-- Prototipado de agentes conversacionales: la etiqueta `agent` sugiere capacidad para flujos multi-paso; útil para pruebas de concepto de asistentes autónomos en hardware modesto.
-- Experimentación con técnicas de abliteration: investigadores pueden comparar el comportamiento del modelo original frente a la variante sin rechazo para estudiar sesgos y mecanismos de seguridad.
-- Despliegue en dispositivos de borde: las cuantizaciones IQ1/IQ2 (0,8-1,0 GB) permiten ejecución en Raspberry Pi o móviles con llama.cpp, para demos de chat o roleplay.
+- Escritura creativa sin restricciones: el modelo puede generar narrativa, dialogos y ficcion sin los filtros habituales, adecuado para autores que necesitan explorar temas sensibles o generos adultos.
+- Roleplay conversacional: disenado para mantener personajes y conversaciones multi-turno en entornos de entretenimiento, con despliegue local via llama.cpp u Ollama.
+- Prototipado de agentes ligeros: su tamano (menos de 2B parametros) y las cuantizaciones de ~1 GB permiten integrarlo en pipelines de agentes en hardware modesto para pruebas rapidas.
+- Generacion de contenido en chino e ingles: util para aplicaciones bilingues que requieran generacion de texto en ambos idiomas sin depender de APIs externas.
+- Experimentacion con modelos "abliterated": sirve como banco de pruebas para investigadores que estudian el efecto de eliminar el rechazo en modelos pequenos y su impacto en calidad y sesgos.
+- Procesamiento de imagenes en local: con los ficheros mmproj del repositorio estatico, puede emplearse para tareas basicas de descripcion o analisis de imagenes en entornos sin conexion.
+- Despliegue en dispositivos de borde: las cuantizaciones IQ2/IQ3 (0.9-1.3 GB) permiten ejecucion en portatiles o mini-PC con poca VRAM.
 
 ## Benchmarks y rendimiento
 
@@ -54,39 +53,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: desde ~0,8 GB (IQ1_S) hasta ~2,5-3 GB (Q6_K, estimado a partir del tamaño del repo de 25,8 GB que incluye todas las variantes); el fichero Q4_K_M ocupa 1,4 GB.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o más (GTX 1650, RTX 3050, RTX 4060); también funciona en CPU.
-- Cabe en GPU consumer: sí, en todas las cuantizaciones; las más pequeñas (IQ1, IQ2) caben incluso en iGPU y dispositivos de borde.
-- Opciones de despliegue: llama.cpp, Ollama (mediante importación de GGUF), LM Studio, text-generation-webui; para el modo multimodal se requiere el fichero mmproj del repositorio estático.
-- Latencia y throughput: no disponibles en la información proporcionada; al ser un modelo de ~1,88B, se espera throughput alto en CPU moderna y muy alto en GPU consumer, pero no se aportan cifras.
+- VRAM estimada: aproximadamente 1-2 GB para las cuantizaciones IQ2 a Q4_K_M, mas overhead del runtime y, si se usa vision, el fichero mmproj adicional.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060); tambien funciona en CPU.
+- Cabe en GPU consumer: si, en practicamente todas las GPU modernas e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano, se espera alta velocidad en hardware consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-Uncensored-Abliterix-SOM-i1 (este) | ~1,88B | no disponible | Sí | Apache 2.0 | Variante abliterated, cuantizada con imatrix |
-| Qwen3.5-2B (original) | ~2B | no disponible | Según variante | Apache 2.0 | Modelo base con alineación estándar |
-| AkaumiKaede/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA | ~1,88B | no disponible | Sí | Apache 2.0 | Modelo base sin cuantizar del que deriva este |
-| mradermacher/Qwen3.5-2B-Uncensored-Abliterix-SOM-GGUF | ~1,88B | no disponible | Sí | Apache 2.0 | Cuantizaciones estáticas (no imatrix) |
+| Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF | 1.881.825.088 | no disponible | apache-2.0 | GGUF (i1) | Variante uncensored con vision, cuantizaciones i1 |
+| Qwen3.5-2B (original) | ~2B | no disponible | apache-2.0 | safetensors | Modelo base con filtros de seguridad |
+| AkiMizuki/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA | ~2B | no disponible | apache-2.0 | safetensors | Modelo base del que deriva esta cuantizacion |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido "abliterated" y se presenta como zero-refusal: no aplica moderación automática y puede generar contenido ofensivo, sexual explícito o potencialmente dañino. Requiere salvaguardas externas en cualquier despliegue público.
-- Riesgo elevado de alucinación por su tamaño reducido (~1,88B) y por el proceso de modificación, que puede degradar capacidades de razonamiento y factualidad.
-- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
-- La longitud de contexto no está especificada en la información disponible; no se debe asumir un contexto largo.
-- Aunque la licencia es Apache 2.0, el uso comercial de un modelo sin filtros de rechazo puede implicar riesgos legales y reputacionales según la jurisdicción y el contenido generado.
-- La información sobre datos de entrenamiento y evaluación es muy escasa; no hay benchmarks que respalden la calidad del modelo.
-- Para el modo visión es necesario descargar el fichero mmproj del repositorio estático, no incluido en este repositorio i1.
-- El modelo tiene muy pocos likes (1) y procede de un autor no verificado; conviene validar su comportamiento antes de usarlo en producción.
+- El proceso de "abliteration" puede degradar la coherencia, el razonamiento y la calidad general del modelo respecto al original.
+- Riesgo elevado de alucinacion, especialmente en cuantizaciones de baja precision (IQ1, IQ2) y por el tamano reducido del modelo.
+- Comportamiento "zero-refusal": puede generar contenido sensible, ofensivo o inapropiado; requiere moderacion externa en produccion.
+- Sesgos inheridos del dataset de entrenamiento del modelo base, no documentados en la informacion disponible.
+- Soporte limitado a ingles y chino; no se garantiza calidad en castellano.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo derivado.
+- Las cuantizaciones por debajo de Q3 pueden presentar perdida notable de calidad; se recomienda Q4_K_M o superior para uso serio.
+- No hay benchmarks publicados que permitan validar el rendimiento real.
+- Los ficheros mmproj para vision estan en el repositorio estatico, no en este; hay que descargarlos por separado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.5-2B-Uncensored-Abliterix-SOM-GGUF
-- Modelo base: https://huggingface.co/AkaumiKaede/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA
-- Página de descargas de mradermacher: https://hf.tst.eu/model#Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF
+- Repositorio estatico (quants estaticos y mmproj): https://huggingface.co/mradermacher/Qwen3.5-2B-Uncensored-Abliterix-SOM-GGUF
+- Modelo base: https://huggingface.co/AkiMizuki/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF
 - Licencia Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -2,50 +2,49 @@
 
 ## Resumen
 
-G4-MeroMero-26B-A4B-Heretic2-i1-GGUF es una cuantización en formato GGUF del modelo EternalDragon/G4-MeroMero-26B-A4B-Heretic2, publicada por el usuario mradermacher. Se trata de un modelo derivado de la familia Gemma 4 con ajuste fino orientado a roleplay, conversación y eliminación de restricciones de alineación (etiquetado como "heretic" y "uncensored"). El nombre "A4B" sugiere una arquitectura de mezcla de expertos con aproximadamente 4.000 millones de parámetros activos sobre un total de 25.233.142.046 parámetros (unos 25,2 mil millones), aunque el autor no documenta explícitamente la configuración MoE en la model card.
+G4-MeroMero-26B-A4B-Heretic2-i1-GGUF es una cuantizacion GGUF, generada por mradermacher, del modelo EternalDragon/G4-MeroMero-26B-A4B-Heretic2. Se trata de un modelo afinado para rol conversacional y roleplay sin censura (etiquetas "heretic" y "uncensored"), construido sobre una arquitectura de tipo Gemma 4 con nomenclatura "A4B", que sugiere un esquema de mezcla de expertos con aproximadamente 4.000 millones de parametros activos sobre un total de 25.233.142.046 parametros. El repositorio contiene unicamente pesos cuantizados en formato GGUF, no los pesos originales en safetensors.
 
-El modelo base es un ajuste fino de Gemma 4 de 26B, por lo que hereda la arquitectura transformer de dicha familia, con soporte declarado para visión (el autor indica que los ficheros mmproj, si existen, se encuentran en el repositorio estático). La licencia declarada es Apache 2.0 y el idioma soportado según la model card es únicamente inglés. La relevancia de esta ficha radica en que ofrece una vía práctica de ejecutar localmente un modelo de 26B con cuantizaciones que van desde 8,4 GB (IQ1_S) hasta 22,7 GB (Q6_K), lo que permite desplegarlo en hardware de consumo.
+La relevancia practica de esta publicacion radica en que pone a disposicion de equipos con hardware modesto un modelo de ~25.000 millones de parametros totales en cuantizaciones que van desde 8,4 GB (i1-IQ1_S) hasta 22,7 GB (i1-Q6_K), lo que permite ejecutarlo en GPUs de consumo mediante llama.cpp u Ollama. El uso de cuantizaciones con imatrix (i1) busca preservar mejor la calidad respecto a las cuantizaciones estaticas equivalentes, que tambien estan disponibles en un repositorio hermano.
 
-El repositorio acumula 11.111 descargas y un único "like", lo que indica cierta tracción de uso pero escasa validación comunitaria. No se han publicado resultados de benchmarks ni detalles sobre el dataset de ajuste fino, el proceso de RLHF/DPO ni la composición del entrenamiento en la información disponible.
+El modelo esta pensado para conversacion multi-turno y generacion de personajes, con licencia Apache 2.0 y soporte declarado unicamente para ingles. No se han publicado en la informacion disponible datos sobre arquitectura exacta, contexto maximo, composicion del dataset de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Gemma 4 (MoE, segun nomenclatura "A4B"; configuracion no documentada) |
-| Parametros totales | 25.233.142.046 (25,2B) |
-| Parametros activos | Aproximadamente 4B segun nomenclatura "A4B" (no confirmado en model card) |
+| Arquitectura | no disponible (etiqueta "gemma4"; nomenclatura A4B sugiere MoE con ~4B activos) |
+| Parametros totales | 25.233.142.046 (~25,2 B) |
+| Parametros activos | no disponible (la nomenclatura A4B apunta a ~4 B, sin confirmacion oficial) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K, i1-Q2_K_S, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_1, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K, i1-Q2_K_S, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_1, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (con imatrix); versiones estaticas en repositorio separado |
 | Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); repo base en safetensors |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (pesos originales en safetensors no incluidos en este repo) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de la etiqueta "gemma4" y la nomenclatura "26B-A4B", que convencionalmente indica un modelo de mezcla de expertos (MoE) con 26.000 millones de parámetros totales y aproximadamente 4.000 millones activos por token. El modelo base EternalDragon/G4-MeroMero-26B-A4B-Heretic2 es un ajuste fino de Gemma 4 orientado a conversación y roleplay, con eliminación de alineación ("heretic", "uncensored"). No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o similares.
+No se dispone de informacion detallada sobre la arquitectura interna en la model card proporcionada. Las etiquetas del repositorio indican "gemma4" como familia y la nomenclatura del nombre ("26B-A4B") es consistente con un transformer de mezcla de expertos (MoE) de aproximadamente 25.200 millones de parametros totales y alrededor de 4.000 millones activos por token, aunque este extremo no esta confirmado por documentacion oficial del autor. El modelo base es EternalDragon/G4-MeroMero-26B-A4B-Heretic2, un afinamiento de caracter conversacional y roleplay sin censura.
 
-La innovación técnica destacable de esta publicación es el uso de cuantizaciones con matriz de importancia (imatrix), generadas por mradermacher con el formato i1, que suelen ofrecer mejor calidad que las cuantizaciones estáticas de tamaño equivalente. El repositorio incluye además el fichero imatrix (0,2 GB) para que otros usuarios puedan generar sus propias cuantizaciones. Existe un repositorio paralelo con cuantizaciones estáticas (G4-MeroMero-26B-A4B-Heretic2-GGUF) donde se alojarían los ficheros mmproj para la modalidad de visión.
+Respecto al entrenamiento, la informacion disponible no especifica numero de tokens, composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras. La etiqueta "heretic" hace referencia a la familia de tecnicas de ablacion de direcciones de rechazo (abliteration) que buscan eliminar comportamientos de negativa del modelo, y "uncensored" indica que se ha reducido deliberadamente el filtrado de contenido. La cuantizacion de mradermacher emplea ficheros imatrix (matrices de importancia) para ponderar la cuantizacion, lo que segun el autor suele mejorar la calidad frente a cuantizaciones estaticas del mismo tamano.
 
 ## Capacidades
 
-- Generación de texto conversacional y multi-turno, con ajuste específico para roleplay.
-- Modo "uncensored": el ajuste heretic elimina parte de los rechazos y filtros de seguridad del modelo base.
-- Soporte de visión declarado por el autor (ficheros mmproj en el repositorio estático), aunque no se detalla la resolución ni el procesador de imagen.
-- Capacidades multilingües limitadas al inglés según la model card.
-- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso agéntico.
-- No se documenta modo "thinking" ni decodificación especulativa específica.
-- No se documentan capacidades de audio.
+- Generacion de texto conversacional multi-turno, orientada a mantener personajes y contexto de rol.
+- Roleplay y escritura creativa sin las restricciones de contenido habituales en modelos alineados de forma estandar.
+- Conversacion general en ingles; no se declara soporte de otros idiomas.
+- No se documenta soporte de tool calling, function calling ni uso como agente multi-paso.
+- No se documenta capacidad de vision, audio ni modo de razonamiento explicito (thinking mode).
+- No se documentan capacidades de codigo o matematicas mas alla de las heredadas del modelo base, sin datos que lo respalden.
 
 ## Casos de uso
 
-- Roleplay y narrativa interactiva: el ajuste heretic y la orientación conversacional permiten mantener personajes coherentes en sesiones largas, con cuantizaciones Q4_K_M (16,9 GB) o Q5_K_M (19,2 GB) que preservan matices de estilo.
-- Asistentes conversacionales sin filtros para investigación: útil en estudios sobre alineación y seguridad, donde se necesita un modelo que responda sin rechazos para analizar sesgos y comportamientos.
-- Generación creativa de ficción: la ventana de contexto (no documentada) y el ajuste de roleplay facilitan la redacción de diálogos y tramas con consistencia de personaje.
-- Despliegue local en estaciones de trabajo: con cuantizaciones IQ3_M (12,5 GB) o Q4_K_S (15,6 GB) cabe en GPUs de consumo de 16-24 GB y permite inferencia privada sin conexión.
-- Prototipado de chatbots temáticos: la licencia Apache 2.0 permite integrar el modelo en productos comerciales de nicho sin restricciones de atribución adicionales.
-- Análisis de imágenes en flujos conversacionales: si se emplean los ficheros mmproj del repositorio estático, el modelo puede describir o razonar sobre imágenes dentro de una conversación, aunque la calidad no está validada.
-- Evaluación comparativa de cuantizaciones: el amplio conjunto de variantes i1 (desde IQ1_S hasta Q6_K) permite medir el impacto de la compresión en calidad conversacional sobre el mismo modelo base.
+- Roleplay y narrativa interactiva: el modelo esta afinado especificamente para mantener personajes coherentes en conversaciones largas, por lo que encaja en aplicaciones de ficcion interactiva y juegos de texto donde se requiere consistencia de personalidad.
+- Chatbot de personaje para comunidades: despliegue en llama.cpp u Ollama sobre una unica GPU de consumo con la cuantizacion i1-Q4_K_M (16,9 GB), adecuada para servir respuestas a usuarios en un entorno controlado.
+- Generacion creativa sin filtros editoriales: util para guionistas y escritores que necesitan borradores de dialogos o escenas con tematicas adultas o sensibles que otros modelos rechazan.
+- Prototipado de asistentes conversacionales en ingles: permite evaluar el comportamiento conversacional de un modelo de ~25 B con coste de hardware reducido antes de invertir en infraestructura mayor.
+- Investigacion sobre alineacion y abliteration: sirve como caso de estudio de como las tecnicas "heretic" modifican el comportamiento de rechazo, comparando respuestas frente al modelo base original.
+- Experimentacion local con cuantizaciones: el catalogo de 23 variantes permite medir el compromiso calidad/tamano en hardware limitado, desde 8,4 GB en i1-IQ1_S hasta 22,7 GB en i1-Q6_K.
+- Despliegue en endpoints compatibles: la etiqueta "endpoints_compatible" facilita integrarlo en infraestructuras de inferencia tipo Hugging Face Endpoints o servidores compatibles con llama.cpp.
 
 ## Benchmarks y rendimiento
 
@@ -53,40 +52,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 8,4 GB (IQ1_S, calidad muy degradada) y 22,7 GB (Q6_K, prácticamente sin pérdida). Para uso conversacional serio se recomienda Q4_K_M (16,9 GB) o Q5_K_M (19,2 GB).
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) equivalente; A100 40/80 GB o H100 para despliegue concurrente con vLLM o TGI.
-- Cabe en GPU de consumo: sí, en RTX 4090/3090 con cuantizaciones Q4-Q5; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) con IQ3_M o Q4_K_S; en GPUs de 12 GB solo con IQ2 o IQ3_XXS, con pérdida notable de calidad.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con endpoints (el tag "endpoints_compatible" sugiere compatibilidad con APIs tipo OpenAI). Para visión se requiere el fichero mmproj del repositorio estático.
-- Latencia y throughput: no disponibles. Al tratarse de un MoE con aproximadamente 4B activos, se espera un throughput superior al de un modelo denso de 26B, pero no hay mediciones publicadas.
+- VRAM estimada: aproximadamente el tamano del fichero GGUF mas el contexto y el overhead de llama.cpp. Con i1-Q4_K_M (16,9 GB) se necesitan en torno a 18-20 GB de VRAM para contexto moderado; con i1-IQ3_M (12,5 GB) unos 14 GB; con i1-IQ2_M (10,5 GB) unos 12 GB.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para las cuantizaciones altas con contexto largo; RTX 4090 (24 GB) para i1-Q4_K_M e i1-Q5_K_S; RTX 4080/4070 Ti Super (16 GB) para i1-IQ4_XS o i1-Q4_K_S.
+- Cabe en GPU de consumo: si, en RTX 4090 con cuantizaciones Q4/Q5, y en GPUs de 12-16 GB con cuantizaciones IQ2/IQ3, a costa de perdida de calidad.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; los pesos originales en safetensors no estan incluidos, por lo que vLLM o TGI requeririan convertir o descargar el modelo base.
+- Latencia y throughput: no disponibles; dependen de la GPU, del numero de capas descargadas a CPU y de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| G4-MeroMero-26B-A4B-Heretic2-i1-GGUF | 25,2B totales / ~4B activos | no disponible | Apache 2.0 | GGUF | Roleplay sin filtros, vision declarada |
-| Gemma 2 27B (Google) | 27B densos | 8K | Gemma license | safetensors, GGUF | Modelo oficial, alineado, sin roleplay |
-| Mistral Small 24B | 24B densos | 32K | Apache 2.0 | safetensors, GGUF | Uso general, tool calling documentado |
-| Qwen2.5 32B | 32B densos | 128K | Apache 2.0 | safetensors, GGUF | Multilingue, contexto largo |
+| G4-MeroMero-26B-A4B-Heretic2-i1-GGUF | ~25,2 B totales (activos no confirmados) | no disponible | Apache 2.0 | GGUF | Roleplay sin censura, solo ingles, cuantizaciones i1 con imatrix |
+| G4-MeroMero-26B-A4B-Heretic2 (base) | ~25,2 B totales | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar; requiere mas VRAM |
+| G4-MeroMero-26B-A4B-Heretic2-GGUF (estatico) | ~25,2 B totales | no disponible | Apache 2.0 | GGUF | Mismas cuantizaciones sin imatrix; calidad algo inferior segun el autor |
 
-La comparación es aproximada: no hay datos de benchmarks del modelo evaluado, por lo que no puede establecerse una comparación de rendimiento objetiva con las alternativas. La ventaja diferencial de este modelo es el ajuste sin filtros y la disponibilidad de cuantizaciones imatrix; su desventaja es la falta de documentación técnica y la ausencia de validación comunitaria.
+No se dispone de datos de rendimiento para comparar con alternativas de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored": el ajuste heretic elimina filtros de seguridad, por lo que puede generar contenido ofensivo, ilegal o dañino. No apto para exposición directa a usuarios finales sin moderación adicional.
-- Sesgos conocidos: no documentados, pero hereda los sesgos del corpus de entrenamiento de Gemma 4 y del ajuste fino, sin evaluación publicada.
-- Riesgo de alucinación: no cuantificado; al no haber benchmarks, no puede estimarse su fiabilidad factual.
-- Limitación de idioma: la model card declara únicamente inglés; el rendimiento en castellano no está garantizado ni evaluado.
-- Longitud de contexto no documentada: no debe asumirse una ventana concreta sin verificar la configuración del modelo base.
-- Licencia Apache 2.0 declarada, pero el modelo base es un ajuste fino de Gemma 4, cuyos términos originales podrían imponer restricciones adicionales; conviene verificar la licencia del modelo base EternalDragon/G4-MeroMero-26B-A4B-Heretic2 antes de uso comercial.
-- La modalidad de visión depende de ficheros mmproj alojados en otro repositorio y no está validada.
-- Repositorio con un solo "like" y sin discusión comunitaria: escasa validación de calidad por terceros.
-- El tamaño del repo (301 GB) incluye todas las cuantizaciones; descargar solo la variante necesaria.
+- Modelo "uncensored": puede generar contenido ofensivo, sexual, violento o ilegal segun el contexto; no es apto para aplicaciones dirigidas al publico general sin moderacion adicional.
+- Riesgo elevado de alucinacion en datos facticos; esta optimizado para conversacion y rol, no para precision informativa.
+- Solo soporta ingles de forma declarada; el rendimiento en castellano no esta garantizado ni documentado.
+- Longitud de contexto no disponible; conviene verificar el limite real antes de disenar aplicaciones con historiales largos.
+- Las cuantizaciones por debajo de Q3 (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "very low quality".
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado puede infringir normativas locales o las politicas de la plataforma de despliegue; la responsabilidad recae en el integrador.
+- No se documentan mitigaciones de sesgo; al derivar de un modelo Gemma, puede heredar sesgos del modelo original y del afinamiento.
+- Los pesos en este repositorio son solo GGUF; para entrenamiento o fine-tuning adicional hay que acudir al modelo base.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/G4-MeroMero-26B-A4B-Heretic2-i1-GGUF
 - Modelo base: https://huggingface.co/EternalDragon/G4-MeroMero-26B-A4B-Heretic2
-- Cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/G4-MeroMero-26B-A4B-Heretic2-GGUF
-- Página de descargas del autor: https://hf.tst.eu/model#G4-MeroMero-26B-A4B-Heretic2-i1-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/G4-MeroMero-26B-A4B-Heretic2-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#G4-MeroMero-26B-A4B-Heretic2-i1-GGUF
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png

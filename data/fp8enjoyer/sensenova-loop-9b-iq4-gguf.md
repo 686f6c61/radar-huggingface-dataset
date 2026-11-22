@@ -2,87 +2,90 @@
 
 ## Resumen
 
-SenseNova-Loop-9B es un modelo de lenguaje de aproximadamente 8.960 millones de parámetros (8,956.949.376 según los pesos en safetensors del modelo base) desarrollado por SenseNova / OpenSenseNova. Esta ficha documenta concretamente la cuantización comunitaria en GGUF publicada por el usuario FP8Enjoyer bajo el identificador `FP8Enjoyer/SenseNova-Loop-9B-IQ4-GGUF`, que ofrece dos variantes de 4 bits (IQ4_NL e IQ4_XS) del modelo original para su uso en runtimes de inferencia local.
+SenseNova-Loop-9B es un modelo de lenguaje de aproximadamente 8.960 millones de parámetros (8,96 B) desarrollado por SenseNova / OpenSenseNova, distribuido bajo licencia Apache 2.0 y orientado a generación de texto conversacional en inglés y chino. La ficha que nos ocupa no es el modelo original, sino una cuantización comunitaria no oficial en formato GGUF publicada por el usuario FP8Enjoyer, que ofrece dos variantes de 4 bits (IQ4_NL e IQ4_XS) para su ejecución en hardware con recursos limitados.
 
-El modelo base emplea una arquitectura propia denominada `sensenova_loop`, que requiere soporte específico en el runtime de inferencia. La model card del cuantizador menciona además la existencia de componentes de visión y de un borrador MTP (multi-token prediction) separado en el modelo original, pero ninguno de los dos se incluye en estas cuantizaciones, que son estrictamente text-only. El modelo está orientado a generación de texto conversacional en inglés y chino.
+La relevancia de esta publicación radica en que permite desplegar un modelo de casi 9 B en GPUs de consumo y en entornos de CPU con requisitos de memoria reducidos, a costa de una arquitectura de runtime específica (`sensenova_loop`) que no está soportada por todas las herramientas. La model card advierte explícitamente de que la estructura de ficheros, los tipos de tensor y los hashes de carga útil fueron verificados, pero la inferencia correcta y la calidad de generación no han sido validadas por el autor de la cuantización.
 
-La relevancia de esta publicación es práctica: permite ejecutar un modelo de ~9B parámetros en formato GGUF de 4 bits con un tamaño de fichero de entre 7,78 y 7,99 GB, lo que lo sitúa en el rango de equipos de consumo con suficiente memoria. La licencia Apache 2.0 del modelo original se mantiene, lo que facilita el uso comercial. No obstante, el propio autor advierte que los ficheros solo han pasado comprobaciones estructurales y que la inferencia correcta no está verificada.
+El contexto máximo, la composición del dataset de entrenamiento y los detalles de arquitectura interna del modelo base no se detallan en la información disponible en esta ficha.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | `sensenova_loop` (transformer; detalles internos no disponibles) |
-| Parametros totales | 8.956.949.376 (~8,96B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | `sensenova_loop` (requiere runtime compatible; detalles internos no disponibles) |
+| Parámetros totales | 8.956.949.376 (≈8,96 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ4_NL (7,99 GB), IQ4_XS (7,78 GB) |
+| Tipos de cuantización | IQ4_NL (5,06 GB) e IQ4_XS (4,78 GB) |
 | Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo de cuantización); safetensors en el modelo base |
+| Formato de pesos | GGUF (texto únicamente; sin visión ni draft MTP) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base se identifica en la model card como `sensenova_loop`, un tipo de arquitectura que requiere soporte explícito en el runtime de inferencia (por ejemplo, una versión de llama.cpp o un fork compatible con dicha arquitectura). No se dispone de información detallada sobre la estructura interna de bloques, el mecanismo de atención ni si incorpora innovaciones como atención lineal o decodificación especulativa en el modelo original. La model card del cuantizador menciona la existencia de un "MTP draft" separado en el modelo original, lo que sugiere componentes de multi-token prediction, pero no se aportan detalles técnicos adicionales.
+La información disponible solo identifica la arquitectura como `sensenova_loop`, un identificador que el runtime de inferencia debe reconocer para cargar los tensores. No se especifican en la información proporcionada detalles sobre el tipo de transformer, el uso de atención lineal, mezcla de expertos, capas recurrentes u otras innovaciones estructurales del modelo base SenseNova-Loop-9B.
 
-Tampoco se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. Esta cuantización concreta no ha sido reentrenada: se limita a comprimir los pesos del modelo base `sensenova/SenseNova-Loop-9B` a 4 bits mediante los esquemas IQ4_NL e IQ4_XS de la familia GGUF, que emplean cuantización por bloques con escalas y compensaciones para preservar la calidad en modelos pequeños.
+Tampoco se documentan el volumen de tokens de entrenamiento, la composición del corpus, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. La model card original del modelo base no se incluye en esta información, por lo que estos datos deben considerarse no disponibles. La cuantización comunitaria se limita a convertir los pesos a 4 bits; no introduce cambios de arquitectura ni reentrenamiento.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés y chino.
-- Razonamiento y respuesta a instrucciones en formato de diálogo (tag `conversational`).
-- Inferencia puramente textual: las variantes GGUF no incluyen visión ni el borrador MTP del modelo original.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia estándar.
+- Uso previsto como modelo de chat y texto general (`pipeline_tag: text-generation`, etiqueta `conversational`).
+- Compatibilidad declarada con endpoints (`endpoints_compatible`).
+- Modelo text-only: la cuantización excluye explícitamente la torre de visión del modelo original.
+- No incluye el draft MTP (multi-token prediction) del modelo base, por lo que no se puede usar decodificación especulativa con ese componente.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades especiales (modo thinking, audio, visión): no disponibles en estas cuantizaciones; la visión existe en el modelo base pero no se incluye aquí.
+- Capacidades de agente o razonamiento multi-paso: no disponibles en la información proporcionada.
+- Modo thinking, audio u otras modalidades: no disponibles; solo texto.
 
 ## Casos de uso
 
-- Asistente conversacional local en inglés o chino: con un fichero de ~8 GB, puede desplegarse en un portátil o estación de trabajo con GPU de consumo y gestionar diálogos multi-turno sin depender de la nube, siempre que el runtime soporte la arquitectura `sensenova_loop`.
-- Prototipado de aplicaciones de chat en entornos con recursos limitados: la cuantización IQ4_XS (7,78 GB) reduce el uso de memoria frente a los pesos en safetensors, lo que permite iterar rápidamente en máquinas de desarrollo.
-- Procesamiento de texto en pipelines offline: generación de resúmenes, reescritura o clasificación de documentos en inglés y chino dentro de flujos batch, aprovechando el formato GGUF para ejecución con llama.cpp.
-- Evaluación comparativa de cuantizaciones: útil para investigadores que quieran medir la degradación de calidad entre IQ4_NL e IQ4_XS sobre el mismo modelo base en tareas de generación.
-- Despliegue en entornos con requisitos de licencia permisiva: al heredar Apache 2.0, puede integrarse en productos comerciales internos o distribuidos, sujeto a las advertencias de verificación del cuantizador.
-- Base para ajuste fino ligero o experimentación académica: al ser un modelo de ~9B en 4 bits, sirve como punto de partida para estudiar técnicas de cuantización y su impacto en tareas específicas de dominio.
+- Despliegue en estaciones de trabajo con una sola GPU de consumo: las variantes de 4,78 GB y 5,06 GB permiten cargar el modelo completo en GPUs con 8 GB o más de VRAM, algo inviable con los pesos en precisión completa.
+- Asistentes conversacionales en inglés y chino: el modelo está etiquetado como conversacional y soporta ambos idiomas, lo que lo hace adecuado para chatbots bilingües de soporte o atención interna.
+- Prototipado rápido con llama.cpp u Ollama: el formato GGUF permite probar el modelo en local antes de decidir un despliegue en servidor, siempre que el runtime soporte la arquitectura `sensenova_loop`.
+- Inferencia en CPU o entornos sin GPU: con menos de 6 GB de pesos, es viable ejecutarlo en servidores sin acelerador, con throughput bajo pero suficiente para tareas por lotes no interactivas.
+- Generación de texto por lotes (resúmenes, clasificación, reescritura): al ser text-only y ligero, encaja en pipelines offline donde la latencia no es crítica.
+- Evaluación comparativa de cuantizaciones: disponer de IQ4_NL e IQ4_XS del mismo modelo permite medir el impacto de la cuantización en calidad y velocidad dentro de un mismo entorno.
+- Entornos con requisitos de licencia permisiva: la licencia Apache 2.0 facilita su integración en productos comerciales, sujeta a las condiciones de la licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del cuantizador no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas, y advierte explícitamente que la inferencia correcta no ha sido verificada.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica además que la inferencia correcta y la calidad de generación de estas cuantizaciones no han sido verificadas por el autor.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8-10 GB con las cuantizaciones IQ4_NL/IQ4_XS, a los que hay que sumar la memoria para el contexto KV, que depende de la longitud de contexto (no disponible).
-- GPU recomendadas: RTX 3090, RTX 4090, RTX 4080 (16 GB), A10G, L4 o superiores. Una GPU de 12 GB podría ser suficiente con contextos cortos.
-- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más de VRAM para las variantes de 4 bits; con 8 GB podría requerir offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) siempre que la versión incluya soporte para la arquitectura `sensenova_loop`; vLLM y TGI requerirían soporte específico de dicha arquitectura, no confirmado.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada: aproximadamente 5 GB para IQ4_XS y 5,1 GB para IQ4_NL, más el overhead del runtime y el contexto KV.
+- GPU recomendadas: cualquier GPU con 8 GB o más de VRAM (RTX 3060 Ti, RTX 4060 Ti, RTX 4070, RTX 4080, RTX 4090, A10, L4, A100, H100). En GPUs de 8 GB conviene limitar la longitud de contexto.
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM.
+- Opciones de despliegue: llama.cpp y derivados (LM Studio, Ollama) siempre que el runtime implemente la arquitectura `sensenova_loop`. La model card señala que los runtimes CUDA de LM Studio 2.67.0 y 2.73.0 no pudieron cargar esta arquitectura, por lo que es necesario verificar la versión antes de desplegar.
+- vLLM, TGI y otros servidores de inferencia: compatibilidad con GGUF y con esta arquitectura no disponible en la información proporcionada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización 4 bits | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización 4 bits | Licencia | Notas |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B (esta ficha, IQ4 GGUF) | ~8,96B | no disponible | IQ4_NL / IQ4_XS | Apache 2.0 | GGUF comunitario |
-| Llama 3.1 8B | 8B | 128K | GGUF oficial y comunitario | Llama 3.1 Community License | Muy extendida |
-| Qwen2.5 7B | 7,6B | 128K | GGUF oficial y comunitario | Apache 2.0 | Muy extendida |
-| Mistral 7B v0.3 | 7,2B | 32K | GGUF oficial y comunitario | Apache 2.0 | Muy extendida |
+| SenseNova-Loop-9B (IQ4 GGUF, esta ficha) | ≈8,96 B | no disponible | IQ4_NL / IQ4_XS | Apache 2.0 | Requiere runtime con soporte `sensenova_loop`; sin visión ni MTP |
+| Modelo base SenseNova-Loop-9B | ≈8,96 B | no disponible | pesos originales | Apache 2.0 | Incluye visión y draft MTP según la model card de la cuantización |
+| Alternativas de ~9 B en GGUF | no disponible | no disponible | — | — | No se dispone de datos verificados en la información proporcionada |
 
-La comparación con Llama 3.1 8B, Qwen2.5 7B y Mistral 7B v0.3 se ofrece como referencia de categoría (modelos densos de 7-9B en 4 bits), pero no se dispone de datos de rendimiento del modelo de esta ficha para establecer una comparación cuantitativa. La principal diferencia práctica es el soporte de runtime: mientras los tres alternativos funcionan en versiones estándar de llama.cpp, SenseNova-Loop-9B requiere una build con soporte para `sensenova_loop`.
+No se han proporcionado datos de rendimiento ni de modelos comparables que permitan una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- La inferencia no está verificada: el autor indica que los ficheros solo pasaron comprobaciones estructurales y que el funcionamiento correcto no se ha confirmado.
-- Requiere un runtime con soporte explícito de la arquitectura `sensenova_loop`; las versiones estándar de llama.cpp, Ollama o vLLM podrían no cargar el modelo.
-- Solo texto: no incluye visión ni el borrador MTP del modelo original, por lo que no puede replicar todas las capacidades del modelo base.
-- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado.
-- Riesgo de alucinación y sesgos: no hay información publicada sobre evaluación de sesgos ni tasas de alucinación para este modelo.
-- La cuantización a 4 bits puede degradar la calidad respecto a los pesos originales en safetensors, especialmente en tareas de razonamiento o código; no se aportan métricas de dicha degradación.
-- Longitud de contexto no documentada: planificar el despliegue con contextos conservadores hasta confirmar el límite real.
-- Licencia Apache 2.0 heredada del modelo base, permisiva para uso comercial, pero la responsabilidad sobre el cumplimiento recae en el usuario; se recomienda conservar la atribución a SenseNova / OpenSenseNova.
+- Cuantización no oficial: no está publicada por SenseNova / OpenSenseNova y no ha sido validada en calidad de generación ni en corrección de inferencia.
+- Compatibilidad de runtime restringida: requiere soporte explícito de la arquitectura `sensenova_loop`; se documentan fallos de carga en versiones concretas de LM Studio (CUDA 2.67.0 y 2.73.0).
+- Pérdida de capacidades respecto al modelo base: no incluye visión ni el draft MTP, por lo que no se puede usar decodificación especulativa con ese componente.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea deficiente.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad para esta cuantización.
+- Sesgos: no se documentan análisis de sesgo en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe conservar los avisos de licencia y atribución correspondientes; la cuantización es un trabajo derivado de la comunidad.
+- Longitud de contexto desconocida: no se puede planificar el uso en tareas de contexto largo sin consultar la documentación del modelo base.
+- El repositorio ocupa 25,6 GB, muy superior a la suma de los dos ficheros GGUF, lo que sugiere artefactos adicionales no descritos en la model card.
 
 ## Enlaces
 
 - Repositorio de la cuantización: https://huggingface.co/FP8Enjoyer/SenseNova-Loop-9B-IQ4-GGUF
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Organización SenseNova / OpenSenseNova: https://huggingface.co/sensenova
-- Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Paper, blog o demo del modelo base: no disponibles en la información proporcionada.

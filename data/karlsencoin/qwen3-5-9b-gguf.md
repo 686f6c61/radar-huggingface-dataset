@@ -2,128 +2,97 @@
 
 ## Resumen
 
-karlsencoin/Qwen3.5-9B-GGUF es una reproducción cuantizada en formato GGUF del modelo Qwen/Qwen3.5-9B, publicada por el usuario karlsencoin y generada con las herramientas de Unsloth (Unsloth Dynamic 2.0). No se trata de un modelo entrenado por este autor, sino de una conversión de pesos del modelo base de Alibaba/Qwen, cuyo pipeline declarado es image-text-to-text, es decir, un modelo de lenguaje y visión. El repositorio tiene 147,8 GB de tamaño total, 0 descargas y 0 likes, y fue creado el 13 de septiembre de 2026.
+Qwen3.5-9B es un modelo fundacional multimodal desarrollado por Alibaba Qwen, distribuido en este repositorio por el usuario karlsencoin en formato GGUF cuantizado mediante Unsloth Dynamic 2.0. El modelo base combina un codificador de visión con un modelo de lenguaje causal de 8.953.803.264 parámetros (aproximadamente 9B), diseñado para tareas de razonamiento, generación de código, agentes y comprensión visual bajo una única arquitectura unificada.
 
-El modelo subyacente, Qwen3.5-9B, es un transformer causal con encoder de visión y una arquitectura híbrida que combina Gated DeltaNet (atención lineal) con Gated Attention (atención completa). Cuenta con 8.953.803.264 parámetros (~8,95 B), dimensión oculta de 4096, 32 capas y una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.010.000. La model card declara soporte para 201 idiomas y dialectos, entrenamiento multimodal con fusión temprana y un pipeline de RL escalado sobre entornos de agentes.
+La innovación principal reside en su arquitectura híbrida: intercala capas de Gated DeltaNet (atención lineal) con capas de Gated Attention tradicional en un patrón de 8 bloques de 4 capas, lo que reduce el coste computacional en contextos largos. El modelo soporta una longitud de contexto nativa de 262.144 tokens, extensible hasta 1.010.000 tokens, y está entrenado con un objetivo de multi-token prediction (MTP) de varios pasos.
 
-Su relevancia práctica reside en que permite ejecutar un modelo multimodal de ~9 B con contexto muy largo en hardware local o en servidores de una sola GPU, algo que los modelos de la generación anterior de tamaño comparable no ofrecían con visión integrada. La licencia Apache 2.0 facilita el uso comercial, aunque al ser una conversión de terceros con cero adopción registrada conviene validar los ficheros antes de llevarla a producción.
+Este repositorio concreto es relevante porque ofrece los pesos en formato GGUF optimizados para inferencia local con llama.cpp y derivados (Ollama, LM Studio, etc.), lo que permite ejecutar un modelo multimodal de 9B con contexto muy largo en hardware de consumo. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con encoder de visión; layout híbrido 8 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)) |
-| Parámetros totales | 8.953.803.264 (~8,95 B) |
-| Parámetros activos | no disponible (la model card menciona MoE disperso como rasgo de la familia Qwen3.5, pero el desglose del 9B no detalla expertos ni parámetros activos) |
-| Longitud de contexto | 262.144 tokens de forma nativa; extensible hasta 1.010.000 tokens |
-| Tipos de cuantización | GGUF con esquema Unsloth Dynamic 2.0; los niveles concretos incluidos en el repositorio no están disponibles |
-| Idiomas soportados | 201 idiomas y dialectos según la model card del modelo base; el listado detallado no está disponible |
+| Arquitectura | Causal LM con codificador de visión; híbrida Gated DeltaNet + Gated Attention (patrón 8 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN))) |
+| Parametros totales | 8.953.803.264 (~9B) |
+| Parametros activos | no disponible (no se especifica configuración MoE concreta para esta variante) |
+| Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.010.000 tokens |
+| Tipos de cuantizacion | GGUF (Unsloth Dynamic 2.0); niveles concretos no disponibles en la información proporcionada |
+| Idiomas soportados | 201 idiomas y dialectos (según model card del modelo base) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el repositorio está etiquetado además con `transformers` y `gguf`) |
-| Dimensión oculta | 4096 |
-| Número de capas | 32 |
-| Dimensión de embedding / salida | 248.320 (con padding) |
-| Dimensión intermedia de la FFN | 12.288 |
-| Gated DeltaNet | 32 cabezas de atención lineal para V, 16 para QK, dimensión de cabeza 128 |
-| Gated Attention | 16 cabezas para Q, 4 para KV, dimensión de cabeza 256, RoPE de dimensión 64 |
-| MTP | Entrenado con múltiples pasos (multi-token prediction) |
-| Tamaño del repositorio | 147,8 GB |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | GGUF (repo); safetensors en el modelo base Qwen/Qwen3.5-9B |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal híbrido con encoder de visión. El bloque se repite ocho veces con el patrón 3 × (Gated DeltaNet → FFN) seguido de 1 × (Gated Attention → FFN), de modo que tres de cada cuatro subcapas de secuencia usan atención lineal tipo Gated DeltaNet y solo una usa atención completa con RoPE. La Gated DeltaNet opera con 32 cabezas lineales para V y 16 para QK con dimensión de cabeza 128; la Gated Attention usa 16 cabezas para Q y 4 para KV con dimensión de cabeza 256 y dimensión RoPE de 64. Esta mezcla reduce el coste del caché KV en la mayor parte de las capas, lo que explica que se pueda sostener un contexto de 262.144 tokens y extenderlo hasta 1.010.000. La FFN tiene dimensión intermedia 12.288, el embedding y la salida están en 248.320 (con padding) y el modelo se entrenó con predicción multi-token (MTP) de varios pasos, lo que habilita decodificación especulativa con cabezas MTP.
+El modelo emplea una arquitectura híbrida que alterna capas de Gated DeltaNet (atención lineal con 32 cabezas para V y 16 para QK, dimensión de cabeza 128) y capas de Gated Attention clásica (16 cabezas para Q, 4 para KV, dimensión de cabeza 256, RoPE de dimensión 64). La dimensión oculta es 4096, con 32 capas y una FFN de dimensión intermedia 12288. El vocabulario tiene 248.320 tokens (con padding). Esta combinación busca alto throughput y baja latencia en inferencia, especialmente en secuencias largas, al reducir el coste cuadrático de la atención tradicional.
 
-En cuanto al entrenamiento, la model card del modelo base indica dos fases: preentrenamiento y postentrenamiento. El preentrenamiento es multimodal con fusión temprana sobre tokens de imagen y texto, con una eficiencia declarada cercana al 100 % respecto a un entrenamiento solo de texto. El postentrenamiento incluye escalado de aprendizaje por refuerzo sobre entornos de agentes multimillonarios con distribuciones de tareas de complejidad progresiva. No se especifican en la información disponible el número exacto de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO de forma explícita. Tampoco se detalla la arquitectura del encoder de visión ni su número de parámetros.
+El entrenamiento se realizó en dos fases (pre-entrenamiento y post-entrenamiento) con fusión temprana de tokens multimodales, lo que según el autor alcanza paridad con Qwen3 en texto y supera a los modelos Qwen3-VL en razonamiento, código, agentes y comprensión visual. Se aplicó aprendizaje por refuerzo (RL) escalado a entornos con millones de agentes y distribuciones de tareas progresivamente complejas. El modelo incorpora multi-token prediction (MTP) entrenado con varios pasos. No se detalla en la información disponible el número exacto de tokens de entrenamiento ni la composición del dataset.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, con paridad declarada frente a Qwen3 y mejora sobre Qwen3-VL en razonamiento, código, agentes y comprensión visual.
-- Comprensión de imagen y texto de forma conjunta (pipeline `image-text-to-text`), incluyendo descripción, extracción de información y respuesta a preguntas sobre imágenes.
-- Generación y razonamiento sobre código, integrado en el mismo modelo que la capacidad multimodal.
-- Razonamiento matemático y de tipo STEM, evaluado en la model card dentro del bloque "Knowledge & STEM".
-- Soporte de tool calling y function calling: el repositorio está etiquetado con `endpoints_compatible` y `conversational`, lo que apunta a integración con APIs de inferencia compatibles con OpenAI.
-- Comportamiento agéntico y razonamiento multi-paso, respaldado por el entrenamiento de RL sobre entornos de agentes a gran escala.
-- Cobertura multilingüe amplia: 201 idiomas y dialectos según la documentación del modelo base.
-- Predicción multi-token (MTP) entrenada con varios pasos, aprovechable para decodificación especulativa.
-- Contexto largo nativo de 262.144 tokens, extensible a 1.010.000, adecuado para documentos extensos o repositorios completos.
+- Generación de texto y razonamiento multistep, con modo de pensamiento (thinking) según la familia Qwen3.5.
+- Generación y comprensión de código en múltiples lenguajes.
+- Razonamiento matemático y tareas STEM.
+- Comprensión de imágenes (pipeline image-text-to-text) mediante codificador de visión integrado.
+- Soporte de tool calling y function calling (heredado de la familia Qwen3.5; no se detalla explícitamente en la información disponible).
+- Capacidades de agente y orquestación en entornos multiagente.
+- Cobertura multilingüe de 201 idiomas y dialectos.
+- Contexto largo nativo de 262.144 tokens, extensible a más de un millón.
+- Compatibilidad con Transformers, vLLM, SGLang y KTransformers según la model card del modelo base.
 
 ## Casos de uso
 
-- Atención al cliente multilingüe: el modelo puede mantener conversaciones multi-turno en cualquiera de los 201 idiomas declarados y sostener historiales largos gracias a los 262.144 tokens de contexto nativo, sin necesidad de resumir la conversación de forma agresiva.
-- Análisis de documentos con imágenes integradas: facturas, informes financieros con gráficos, planos o capturas de pantalla pueden procesarse directamente al ser un modelo image-text-to-text, extrayendo datos estructurados sin un pipeline OCR separado.
-- Asistente de programación en producción: al soportar tool calling, puede conectarse a herramientas de compilación, ejecución de tests o consulta de repositorios, e integrarse en flujos de CI/CD para revisar cambios y proponer parches.
-- Agentes autónomos multi-paso: el entrenamiento de RL sobre entornos de agentes lo orienta a tareas encadenadas como reservas, navegación web o automatización de back-office, donde debe decidir acciones sucesivas en lugar de responder en un solo turno.
-- Análisis de corpus extensos: con extensión hasta 1.010.000 tokens, permite procesar libros completos, expedientes legales o bases de código sin fragmentar en trozos y perder coherencia global.
-- Accesibilidad y descripción de imágenes: generación de descripciones y texto alternativo en múltiples idiomas para plataformas de contenido, aprovechando la componente de visión y la cobertura lingüística.
-- Despliegue en local o on-premise: al publicarse en GGUF cuantizado, encaja en escenarios con requisitos de soberanía de datos donde no se permite enviar información a APIs externas.
-- Generación de documentación técnica a partir de capturas de interfaz o diagramas de arquitectura, combinando la entrada visual con la salida de texto estructurado.
+- Análisis de documentos extensos: el contexto nativo de 262.144 tokens permite procesar informes, contratos o expedientes completos en una sola pasada sin fragmentación, manteniendo coherencia entre secciones.
+- Asistentes de código en producción: el modelo puede integrarse en pipelines de CI/CD para revisión de parches, generación de tests y explicación de errores, con soporte de tool calling para invocar linters o compiladores.
+- Atención al cliente automatizada: conversaciones multi-turno con historial largo gracias a la ventana de contexto, manteniendo el hilo durante sesiones prolongadas sin pérdida de información.
+- Procesamiento de documentación técnica con imágenes: al ser multimodal, puede extraer información de diagramas, capturas de pantalla y tablas escaneadas junto con el texto circundante.
+- Agentes autónomos de investigación: el modelo puede planificar y ejecutar tareas de múltiples pasos con llamadas a herramientas, adecuado para entornos de RL escalados y orquestación de agentes.
+- Despliegue local en hardware de consumo: los pesos GGUF permiten ejecutar el modelo en estaciones de trabajo con GPU de gama alta o incluso CPU, útil para prototipado y entornos con requisitos de privacidad.
+- Traducción y localización multilingüe: con 201 idiomas soportados, puede emplearse en pipelines de traducción técnica y adaptación cultural de contenido.
+- Fine-tuning local: el repositorio incluye referencias a guías de Unsloth para ajuste fino, lo que permite especializar el modelo en dominios concretos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de resultados comparativos, pero los valores numéricos no están disponibles en la información proporcionada: solo se recupera el encabezado de la tabla y el inicio de la primera fila (MMLU-Pro, dentro del bloque "Knowledge & STEM"). Los modelos de comparación sí están identificados. No se han publicado en la información disponible resultados numéricos verificables de MMLU, HumanEval, GSM8K ni de ningún otro benchmark para este repositorio.
-
-| Modelo comparado en la model card | Valores numéricos |
-|---|---|
-| GPT-OSS-120B | no disponible |
-| GPT-OSS-20B | no disponible |
-| Qwen3-Next-80B-A3B-Thinking | no disponible |
-| Qwen3-30BA3B-Thinking-2507 | no disponible |
-| Qwen3.5-9B (este modelo base) | no disponible (la tabla se trunca en la fila MMLU-Pro) |
-| Qwen3.5-4B | no disponible |
+La model card del modelo base incluye una tabla comparativa con GPT-OSS-120B, GPT-OSS-20B, Qwen3-Next-80B-A3B-Thinking y Qwen3-30BA3B-Thinking-2507, pero en la información proporcionada solo se muestra parcialmente la fila de MMLU-Pro sin los valores numéricos. No se han publicado resultados de benchmarks completos en la información disponible.
 
 ## Requisitos de hardware
 
-Estimaciones calculadas a partir del recuento de parámetros real (8,95 B); no proceden de mediciones publicadas para este repositorio. Hay que añadir el consumo del encoder de visión y del caché KV, que en este modelo es menor de lo habitual en las capas Gated DeltaNet pero completo en las capas de Gated Attention.
-
-- VRAM estimada en bf16/fp16: en torno a 18 GB solo de pesos, más caché y activaciones; presupuestar 24-32 GB.
-- VRAM estimada en cuantización de 8 bits: en torno a 9-10 GB de pesos, más overhead; presupuestar 12-16 GB.
-- VRAM estimada en cuantización de 4 bits (tipo Q4_K_M): en torno a 5,5-6 GB de pesos; presupuestar 8-10 GB para contexto moderado.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o similares para bf16 y contextos largos; RTX 4090 (24 GB), RTX 3090 (24 GB) o RTX 5090 para cuantizaciones de 8 y 4 bits.
-- ¿Cabe en GPU de consumo? Sí, en cuantizaciones de 4 y 8 bits en tarjetas con 12 GB o más de VRAM. En bf16 requiere 24 GB o más y limita la longitud de contexto efectiva.
-- Opciones de despliegue: la model card cita compatibilidad con Hugging Face Transformers, vLLM, SGLang y KTransformers para los pesos originales; al distribuirse en GGUF, el uso esperado es con llama.cpp, Ollama o LM Studio, aunque la compatibilidad efectiva de estas herramientas con la arquitectura híbrida Gated DeltaNet no está confirmada en la información disponible.
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo para este repositorio.
+- VRAM estimada: no disponible de forma exacta; para un modelo de ~9B en GGUF, las cuantizaciones de 4 bits suelen requerir en torno a 6-8 GB, y las de 8 bits en torno a 10-12 GB, pero estos valores no se confirman en la información proporcionada.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, cabría esperar compatibilidad con RTX 4090, A100 y H100, pero no se confirma.
+- Cabe en GPU de consumo: probable en cuantizaciones bajas (4-5 bits) en GPUs con 8-12 GB de VRAM, aunque no se especifica.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; vLLM, SGLang y KTransformers para los pesos del modelo base en safetensors.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| karlsencoin/Qwen3.5-9B-GGUF (este repositorio) | ~8,95 B | 262.144 nativos, hasta 1.010.000 | Apache 2.0 | GGUF en Hugging Face, 0 descargas | no disponible |
-| Qwen/Qwen3.5-9B (modelo base) | ~8,95 B | 262.144 nativos, hasta 1.010.000 | Apache 2.0 | Pesos originales en Transformers, vLLM, SGLang | no disponible (tabla truncada) |
-| Qwen3.5-4B | no disponible (variante menor de la misma familia) | no disponible | no disponible | no disponible | no disponible |
-| Qwen3-30BA3B-Thinking-2507 | no disponible | no disponible | no disponible | no disponible | no disponible |
-| GPT-OSS-120B | no disponible | no disponible | no disponible | no disponible | no disponible |
-| GPT-OSS-20B | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Qwen3-Next-80B-A3B-Thinking | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3.5-9B (este repo, GGUF) | ~9B | 262.144 nativos | Apache 2.0 | GGUF | Multimodal, híbrido DeltaNet/Attention |
+| Qwen3.5-4B | ~4B (no confirmado) | no disponible | Apache 2.0 | safetensors (base) | Versión menor de la misma familia |
+| Qwen3-30BA3B-Thinking-2507 | 30B (MoE, activos no disponibles) | no disponible | no disponible | no disponible | Comparado en benchmarks del modelo base |
+| GPT-OSS-20B | 20B (no confirmado) | no disponible | no disponible | no disponible | Comparado en benchmarks del modelo base |
 
-Los cinco modelos alternativos se citan únicamente porque aparecen como comparadores en la tabla de benchmarks de la model card del modelo base; no se dispone de sus especificaciones en la información proporcionada.
+No se dispone de datos de rendimiento numéricos para establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Repositorio de terceros: el autor karlsencoin no es el desarrollador del modelo. Se trata de una conversión GGUF de Qwen/Qwen3.5-9B, no de un modelo propio ni validado por Qwen.
-- Cero adopción verificable: 0 descargas y 0 likes en el momento de la consulta. No hay evidencia de que los ficheros hayan sido probados por terceros.
-- Model card heredada: el texto del repositorio reproduce la model card oficial de Qwen3.5 con banners de Unsloth. Las especificaciones descritas corresponden al modelo base, no necesariamente al contenido exacto de cada fichero cuantizado.
-- Ambigüedad sobre MoE: la documentación de la familia menciona Mixture-of-Experts disperso, pero el desglose del 9B no lista expertos. No se puede confirmar si esta variante es MoE ni cuáles serían sus parámetros activos.
-- Compatibilidad de runtime incierta: la arquitectura híbrida Gated DeltaNet más Gated Attention puede no estar soportada por todas las versiones de llama.cpp, Ollama u otros motores GGUF. Conviene verificar la versión mínima antes de desplegar.
-- Riesgo de alucinación: no hay datos publicados de tasas de alucinación para este modelo ni para esta conversión. Como en cualquier modelo generativo, la salida debe validarse en dominios sensibles.
-- Sesgos: no se documentan evaluaciones de sesgo, toxicidad o equidad en la información disponible. La cobertura de 201 idiomas no implica calidad homogénea entre ellos.
-- Límites de idioma: el listado concreto de idiomas soportados no está disponible, solo el recuento agregado de 201 idiomas y dialectos.
-- Cuantización y pérdida de precisión: Unsloth Dynamic 2.0 afirma superar a otras cuantizaciones líderes en precisión, pero no se aportan métricas que lo respalden y no se detalla qué niveles GGUF contiene el repositorio.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar el fichero LICENSE del modelo base, al que apunta la model card, por si incorpora condiciones adicionales.
-- Caducidad del contexto extendido: los 1.010.000 tokens son una extensión, no una ventana nativa; el rendimiento en longitudes muy superiores a 262.144 tokens no está documentado.
-- Producción: sin benchmarks verificables ni pruebas de terceros, se recomienda evaluar el modelo en el caso de uso concreto antes de adoptarlo en un sistema en producción.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de fiabilidad para esta variante GGUF.
+- Sesgos: no se documentan sesgos concretos en la información disponible; la cobertura de 201 idiomas no garantiza calidad uniforme en todos ellos.
+- La cuantización GGUF puede degradar ligeramente la precisión respecto a los pesos originales en safetensors, aunque Unsloth afirma superioridad frente a otras cuantizaciones.
+- El repositorio tiene 0 likes y 622 descargas, lo que sugiere poca validación comunitaria; conviene verificar la integridad de los pesos antes de usarlos en producción.
+- El tamaño del repositorio es de 147,8 GB, lo que implica un consumo de almacenamiento considerable y descargas largas.
+- Aunque la licencia es Apache 2.0, conviene revisar la licencia del modelo base Qwen/Qwen3.5-9B para confirmar compatibilidad en uso comercial.
+- No se especifican los niveles de cuantización incluidos ni los idiomas exactos soportados en este repositorio concreto.
+- El soporte de tool calling y agentes se infiere de la familia Qwen3.5, pero no se detalla explícitamente para esta variante.
 
 ## Enlaces
 
-- Repositorio de esta conversión: https://huggingface.co/karlsencoin/Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/karlsencoin/Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
-- Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
+- Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Qwen Chat: https://chat.qwen.ai
-- Guía de Unsloth para ejecutar Qwen3.5 en local: https://unsloth.ai/docs/models/qwen3.5
-- Guía de fine-tuning de Qwen3.5 con Unsloth: https://unsloth.ai/docs/models/qwen3.5/fine-tune
+- Guía de ejecución local de Unsloth: https://unsloth.ai/docs/models/qwen3.5
+- Guía de fine-tuning de Unsloth: https://unsloth.ai/docs/models/qwen3.5/fine-tune
 - Documentación de Unsloth Dynamic 2.0 GGUF: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf
-- Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth/
-- Servidor de Discord de Unsloth: https://discord.gg/unsloth
-
-Nota: la búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces recuperados correspondían a contenidos sobre la canción napolitana "Santa Lucia" y no guardan relación con la ficha.
+- Repositorio de Unsloth: https://github.com/unslothai/unsloth/
+- Discord de Unsloth: https://discord.gg/unsloth

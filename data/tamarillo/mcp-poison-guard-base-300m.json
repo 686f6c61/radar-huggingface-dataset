@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/mcp-poison-guard-base-300m",
+  "slug": "tamarillo-mcp-poison-guard-base-300m",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/mcp-poison-guard-base-300m",
+  "created_at": "2026-11-21T22:04:14.000Z",
+  "updated_at": "2026-11-21T22:04:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "mcp",
+    "model-context-protocol",
+    "tool-poisoning",
+    "agent-security",
+    "prompt-injection",
+    "rug-pull",
+    "guardrails",
+    "runtime-security",
+    "en",
+    "base_model:Horizon-Labs/prompt-injection-guard-base",
+    "base_model:finetune:Horizon-Labs/prompt-injection-guard-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307534854,
+  "parameters_human": "307.5M",
+  "storage_bytes": 649471476,
+  "storage_human": "649 MB",
+  "context_length": null,
+  "base_model": "Horizon-Labs/prompt-injection-guard-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "MCP Tool Poisoning Detection (toolguard-bench)",
+      "dataset": "CharanSripadi/toolguard-bench (449 items)",
+      "metric": "F1",
+      "value": 0.8063
+    },
+    {
+      "task": "MCP Tool Poisoning Detection (toolguard-bench)",
+      "dataset": "CharanSripadi/toolguard-bench (449 items)",
+      "metric": "ROC AUC",
+      "value": 0.8915
+    },
+    {
+      "task": "MCP Tool Poisoning Detection (MCPTox AAAI 2026)",
+      "dataset": "MCPTox Benchmark (847 items)",
+      "metric": "F1",
+      "value": 0.8634
+    },
+    {
+      "task": "MCP Tool Poisoning Detection (MCPTox AAAI 2026)",
+      "dataset": "MCPTox Benchmark (847 items)",
+      "metric": "ROC AUC",
+      "value": 0.9065
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tamarillo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tamarillo",
+      "snippet": "Le Tamarillo (Solanum betaceum) est une espèce du genre Solanum et de la famille des Solanaceae originaire de la cordillère des …"
+    },
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …"
+    },
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …"
+    },
+    {
+      "title": "Tamarillo : culture et entretien de l'arbre à tomates",
+      "url": "https://www.jardiner-malin.fr/fiche/tamarillo.html",
+      "snippet": "Apr 28, 2012 · Le tamarillo ou arbre à tomates est un petit fruitier offrant de délicieux fruits acidulés. La culture et l'entretien, en terre …"
+    }
+  ]
+}

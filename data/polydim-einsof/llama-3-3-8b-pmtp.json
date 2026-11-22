@@ -5,7 +5,7 @@
   "author": "Polydim-Einsof",
   "url": "https://huggingface.co/Polydim-Einsof/llama-3.3-8b-pmtp",
   "created_at": "2026-11-09T23:55:19.000Z",
-  "updated_at": "2026-11-21T01:13:12.000Z",
+  "updated_at": "2026-11-21T20:45:22.000Z",
   "license": "llama3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,16 +13,13 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "polydim",
-    "einsof",
     "pmtp",
-    "qlora-v3",
     "stiefel-manifold",
-    "continuous-reasoning",
-    "zero-prompt",
-    "procrustes-svd",
+    "procrustes-alignment",
+    "zero-token-telepathy",
+    "polydim-einsof",
     "text-generation",
-    "license:llama3",
+    "conversational",
     "region:us"
   ],
   "likes": 0,
@@ -37,7 +34,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "disabled": false,
   "removed": false,

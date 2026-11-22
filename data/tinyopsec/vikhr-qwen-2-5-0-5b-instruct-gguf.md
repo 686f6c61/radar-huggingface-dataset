@@ -2,88 +2,90 @@
 
 ## Resumen
 
-Vikhr-Qwen-2.5-0.5b-Instruct es una cuantización en formato GGUF del modelo `Vikhrmodels/Vikhr-Qwen-2.5-0.5b-Instruct`, un ajuste fino del Qwen2.5-0.5B-Instruct de Alibaba orientado al idioma ruso. El repositorio, publicado por el usuario tinyopsec, no aporta pesos nuevos: su valor está en ofrecer trece variantes de cuantización (desde F16 hasta Q2_K) generadas con llama.cpp, listas para ejecutarse localmente en CPU o en GPUs modestas.
+Vikhr-Qwen-2.5-0.5b-Instruct-GGUF es la distribucion en formato GGUF del modelo Vikhr-Qwen-2.5-0.5b-Instruct, un ajuste fino del Qwen2.5-0.5B-Instruct de Alibaba orientado al idioma ruso. Lo publica el usuario tinyopsec en Hugging Face, mientras que el modelo base lo desarrolla Vikhrmodels. El repositorio contiene unicamente los pesos cuantizados generados con llama.cpp, no el entrenamiento original ni los pesos en safetensors.
 
-El modelo resuelve un problema concreto: disponer de un asistente instruct muy pequeño (494 millones de parámetros) con buen manejo del ruso, capaz de correr en hardware mínimo sin depender de servicios en la nube. Es relevante para casos de uso embebidos, prototipado rápido y despliegues donde la latencia y la huella de memoria pesan más que la calidad máxima de generación.
+El modelo resuelve un problema muy concreto: disponer de un asistente conversacional en ruso extremadamente ligero (493.789.952 parametros, es decir, unos 0,5 mil millones) que pueda ejecutarse en CPU, en GPUs de gama baja o incluso en dispositivos con poca memoria. Al estar en formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y koboldcpp, lo que facilita su despliegue local sin infraestructura dedicada.
 
-Al tratarse de un modelo de medio bilón de parámetros, sus capacidades de razonamiento y conocimiento son limitadas en comparación con modelos de 7B o más; la model card del propio autor recomienda evaluarlo antes de usarlo en producción.
+Su relevancia actual es la de un modelo de nicho para experimentacion y prototipado rapido en ruso: el tamano minimo permite iterar con coste casi nulo, aunque logicamente no compite en calidad con modelos de mayor escala. La licencia Apache 2.0 y el hecho de derivar de Qwen2.5 lo hacen atractivo para pruebas de concepto y pipelines ligeros.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (familia Qwen2.5) |
-| Parámetros totales | 493.789.952 (~0,5B) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en el repositorio (el Qwen2.5-0.5B-Instruct original soporta 32.768 tokens, dato no confirmado para este fine-tune) |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | Ruso (foco del fine-tune); otros idiomas no disponibles |
+| Arquitectura | Transformer decoder-only (familia Qwen2) |
+| Parametros totales | 493.789.952 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M (recomendada), Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | Ruso (principal); el resto no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el modelo base original está en safetensors) |
+| Formato de pesos | GGUF (repo de 5,8 GB con todas las variantes) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es un transformer decoder de la familia Qwen2.5, con 494 millones de parámetros. El modelo original (`Qwen/Qwen2.5-0.5B-Instruct`) fue entrenado por Alibaba con preentrenamiento masivo multilingüe seguido de un pipeline instruct (SFT con datos de instrucciones). Sobre esa base, el equipo Vikhrmodels realizó un fine-tune adicional centrado en mejorar el rendimiento en ruso.
+El modelo base es un ajuste fino de Qwen/Qwen2.5-0.5B-Instruct, un transformer decoder-only de la familia Qwen2 con 493.789.952 parametros. La model card del repositorio GGUF no detalla el proceso de entrenamiento del ajuste ruso (numero de tokens, composicion del dataset, uso de RLHF o DPO); esa informacion corresponderia a la model card de Vikhrmodels/Vikhr-Qwen-2.5-0.5b-Instruct, que no se ha incluido en la informacion disponible.
 
-Los detalles del fine-tune (número de tokens, composición del dataset, uso de DPO o RLHF) no están disponibles en la información proporcionada. La innovación de este repositorio en concreto es de distribución: cuantizaciones GGUF generadas con llama.cpp que cubren un rango completo de compromisos calidad/tamaño, con Q4_K_M señalada como recomendada por el autor.
+La innovacion tecnica de este repositorio es exclusivamente la cuantizacion: se ofrecen 13 variantes GGUF generadas con llama.cpp, desde F16 (1,0 GB) hasta Q2_K, pasando por la recomendada Q4_K_M. No se documentan tecnicas adicionales como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato instruct (chat multi-turno con plantilla de Qwen2.5).
-- Buen rendimiento relativo en ruso, el foco declarado del fine-tune.
-- Compatibilidad con cualquier runtime GGUF: llama.cpp, Ollama, LM Studio, koboldcpp.
-- Ejecución viable en CPU gracias a su tamaño reducido.
-- No hay evidencia de soporte de tool calling, function calling, visión ni audio en este fine-tune.
-- No es un modelo de razonamiento extendido (no tiene thinking mode).
+- Generacion de texto conversacional en ruso, orientada a instrucciones (instruct).
+- Razonamiento basico y respuesta a preguntas dentro de las limitaciones de un modelo de 0,5B.
+- Soporte de conversaciones multi-turno mediante plantilla de chat de Qwen2.5.
+- Compatibilidad con tool calling o function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: el modelo se presenta como especializado en ruso; el resto de idiomas no esta documentado.
+- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Ejecucion local en CPU y GPU de gama baja gracias al formato GGUF.
 
 ## Casos de uso
 
-- Chatbots ligeros en ruso: su formato instruct y su tamaño permiten gestionar conversaciones sencillas en dispositivos de bajos recursos o en servidores pequeños sin coste de GPU.
-- Prototipado local de asistentes: con Ollama o LM Studio se puede levantar un endpoint conversacional en minutos para validar ideas antes de escalar a modelos mayores.
-- Integración en aplicaciones de escritorio: las cuantizaciones Q4 o Q5 ocupan entre ~350 MB y ~1 GB, aptas para distribuirse junto a la aplicación.
-- Sistemas embebidos y edge: la variante Q2_K o Q3_K_S puede ejecutarse en hardware muy limitado (Raspberry Pi 5, mini PCs) para tareas de texto simples.
-- Clasificación y extracción de texto en ruso: tareas estructuradas de NLP (etiquetado, resumen corto, reescritura) donde no se requiere razonamiento profundo.
-- Generación de datos sintéticos de bajo coste: en batch masivo en CPU, su velocidad y tamaño lo hacen útil para generar o filtrar grandes volúmenes de texto sencillo.
-- Fallback offline: como respaldo local cuando no hay conectividad o presupuesto de API en productos que ya usan modelos mayores.
+- Asistente conversacional local en ruso: el modelo puede gestionar dialogos multi-turno en un portatil o mini-PC sin GPU, usando la variante Q4_K_M con llama.cpp u Ollama, lo que lo hace adecuado para prototipos de chatbots en ruso con coste cero de infraestructura.
+- Pruebas de concepto de agentes conversacionales: sirve como sustituto ligero durante el desarrollo de un pipeline de agentes antes de migrar a un modelo mayor, gracias a su compatibilidad con runtimes GGUF y a su licencia Apache 2.0.
+- Clasificacion y etiquetado de texto en ruso: con prompts de instruccion se puede emplear para tareas de extraccion o categorizacion simple en lotes, donde el throughput importa mas que la precision fina.
+- Educacion y experimentacion: util para estudiantes e investigadores que quieran estudiar el comportamiento de un modelo ruso pequeno, la cuantizacion GGUF o el ajuste fino sobre Qwen2.5 sin necesidad de GPUs dedicadas.
+- Despliegue en entornos con recursos limitados: dispositivos embebidos, Raspberry Pi o contenedores con poca RAM pueden ejecutar las variantes Q2_K o Q3_K_S para tareas de generacion de texto breve.
+- Generacion de respuestas en asistentes de soporte offline: en escenarios sin conexion a internet, el modelo puede ofrecer respuestas basicas en ruso dentro de una aplicacion de escritorio o movil empaquetada con llama.cpp.
+- Base para ajuste fino posterior: al derivar de Qwen2.5-0.5B y estar bajo Apache 2.0, puede servir como punto de partida para nuevos ajustes en ruso u otros idiomas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM / memoria estimada para inferencia:
-  - F16: ~1,0 GB
-  - Q8_0: ~0,55 GB
-  - Q4_K_M: ~0,35 GB (estimación típica para 0,5B; el tamaño exacto por fichero no se detalla en la model card)
-  - Q2_K: ~0,25 GB
-- GPU recomendadas: no es necesario usar GPU; cualquier GPU moderna con 2 GB de VRAM sobra. En CPU funciona sin problemas (el tamaño del repo completo es de 5,8 GB con las 13 cuantizaciones).
-- Consumer GPUs: cabe con holgura en cualquier GPU, incluidas integradas (con offload parcial o total en RTX 3060, RTX 4060 o superiores ejecuta a velocidades muy altas).
-- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. No está orientado a vLLM o TGI, que requieren formatos safetensors.
-- Latencia y throughput: no disponibles; por su tamaño (0,5B) se esperan decenas de tokens por segundo incluso en CPU moderna.
+- VRAM estimada para inferencia: aproximadamente 1,0 GB en F16; en torno a 0,5 GB en Q8_0; unos 0,3-0,4 GB en Q4_K_M; y menos de 0,3 GB en Q2_K (estimaciones segun el tamano de los ficheros descritos y la cuenta de parametros).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el modelo cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 y H100, aunque en estas ultimas el modelo esta infrautilizado.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en iGPUs con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo se espera una latencia muy baja en CPU y practicamente instantanea en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Foco |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Vikhr-Qwen-2.5-0.5b-Instruct (este) | 0,5B | no disponible (base: 32.768) | Apache 2.0 | GGUF | Ruso, instruct |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5B | 32.768 | Apache 2.0 | safetensors, GGUF | Multilingüe, instruct |
-| Qwen2.5-0.5B-Instruct (cuantizaciones comunitarias GGUF) | 0,5B | 32.768 | Apache 2.0 | GGUF | Multilingüe, sin fine-tune ruso |
+| Vikhr-Qwen-2.5-0.5b-Instruct-GGUF | 493.789.952 | no disponible | Apache 2.0 | GGUF en Hugging Face | Ajuste ruso de Qwen2.5-0.5B, 13 cuantizaciones |
+| Qwen2.5-0.5B-Instruct | 0,5B (aprox.) | no disponible en la informacion | Apache 2.0 | Pesos originales y multiples GGUF de la comunidad | Modelo base multilingue de Alibaba |
+| Vikhr-Qwen-2.5-0.5b-Instruct | 493.789.952 | no disponible | Apache 2.0 (segun el repo GGUF) | Pesos en safetensors en Hugging Face | Modelo original de Vikhrmodels antes de cuantizar |
 
-Frente al modelo base, esta versión ofrece un fine-tune específico en ruso y un catálogo amplio de cuantizaciones listas para usar. Frente a alternativas de tamaño similar (por ejemplo, Gemma 2 2B o Llama 3.2 1B), es notablemente más pequeño y por tanto menos capaz, pero mucho más ligero de desplegar.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Capacidad de razonamiento muy limitada por su tamaño (0,5B): no apto para matemáticas complejas, código exigente ni razonamiento multi-paso fiable.
-- Riesgo elevado de alucinación, habitual en modelos de este tamaño; la propia model card advierte "Evaluate before use".
-- Foco en ruso: el rendimiento en castellano u otros idiomas no está documentado y probablemente sea inferior al del modelo base multilingüe.
-- Longitud de contexto no confirmada para este fine-tune; verificar antes de depender de contextos largos.
-- Sesgos: hereda los sesgos del corpus de preentrenamiento de Qwen2.5 y del dataset del fine-tune (no documentado).
-- Licencia Apache 2.0: sin restricciones relevantes para uso comercial.
-- Descargas aún bajas (427) y sin comunidad de validación: conviene hacer pruebas propias antes de producción.
+- Modelo de 0,5B parametros: capacidad de razonamiento y conocimiento factual muy limitada en comparacion con modelos de 7B o superiores; propenso a errores en tareas complejas.
+- Riesgo de alucinacion elevado, especialmente en preguntas factuales o fuera del dominio de entrenamiento.
+- Especializado en ruso: el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- Longitud de contexto no documentada en la informacion disponible; conviene verificar la configuracion del modelo base antes de usarlo con prompts largos.
+- Las cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad de forma notable; se recomienda Q4_K_M o superior para uso real.
+- Licencia Apache 2.0 permite uso comercial, pero el autor advierte explicitamente de que se debe evaluar el modelo antes de usarlo en produccion.
+- No hay informacion sobre sesgos especificos, datos de entrenamiento ni evaluaciones de seguridad del ajuste ruso.
+- El repositorio tiene pocas descargas (767) y cero likes en el momento de la consulta, lo que sugiere escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Vikhr-Qwen-2.5-0.5b-Instruct-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Modelo original fine-tuneado: https://huggingface.co/Vikhrmodels/Vikhr-Qwen-2.5-0.5b-Instruct
+- Repositorio GGUF: https://huggingface.co/tinyopsec/Vikhr-Qwen-2.5-0.5b-Instruct-GGUF
+- Modelo base (Vikhrmodels): https://huggingface.co/Vikhrmodels/Vikhr-Qwen-2.5-0.5b-Instruct
+- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai

@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Virgilio: Mail, Login, Ultime Notizie in tempo reale e tanto altro!",
-      "url": "https://www.virgilio.it/",
-      "snippet": "Virgilio: News nazionali e locali, Login, accesso Mail e PEC, Sport, Oroscopo, Gossip, Finanza, Economia, Video, Mail e Motore di …"
-    },
-    {
-      "title": "Virgilio Mail - login",
-      "url": "https://login.virgilio.it/",
-      "snippet": "Inserisci la tua user e password ed entra in Virgilio Mail. Sei invece un nuovo utente? Crea un nuovo account o richiedi l'aiuto di Virgilio"
-    },
-    {
-      "title": "Virgilio Notizie: Ultime news di oggi in tempo reale",
-      "url": "https://www.virgilio.it/notizie/",
-      "snippet": "Su Virgilio Notizie puoi trovare le ultime news del giorno aggiornate in tempo reale con commenti, curiosità, storie, fotogallery e video."
-    },
-    {
-      "title": "Virgilio Sport: News e Migliori Live su Sport, Calcio, F1 e MotoGP",
-      "url": "https://sport.virgilio.it/",
-      "snippet": "Su Virgilio Sport trovi le ultime notizie su Calcio, Calciomercato, F1 e MotoGp e tutti gli altri Sport. Guida Sport in Tv, Dirette Live, …"
-    },
-    {
-      "title": "Virgilio Mail - login",
-      "url": "https://login.virgilio.it/lsc",
-      "snippet": "Accedi a Virgilio Mail per gestire la tua posta elettronica in modo semplice e sicuro con funzionalità avanzate e servizi integrati."
-    }
-  ]
+  "sources": []
 }

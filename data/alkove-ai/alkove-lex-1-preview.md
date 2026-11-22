@@ -2,91 +2,102 @@
 
 ## Resumen
 
-alkove-lex-1-preview es un modelo de conversión de grafemas a fonemas (G2P) desarrollado por alkove-ai dentro del SDK de voz on-device Alkove. Convierte una palabra escrita en sus tres pronunciaciones más probables, con sus probabilidades, usando el conjunto de 58 fonemas de alkove-spot. Cubre francés, inglés, español, portugués, italiano, catalán y rumano, e incluye nombres propios y palabras inventadas.
+alkove-lex-1-preview es un modelo de conversión de grafemas a fonemas (grapheme-to-phoneme, G2P) desarrollado por alkove-ai, pensado para funcionar íntegramente en el dispositivo (navegador o teléfono) sin enviar datos a ningún servidor. Devuelve las tres pronunciaciones más probables de una palabra escrita, junto con sus probabilidades, en el conjunto de 58 fonemas del modelo alkove-spot-1-preview. Cubre siete lenguas romances y germánicas: francés, inglés, español, portugués, italiano, catalán y rumano, e incluye nombres propios y palabras inventadas.
 
-El modelo se distribuye como un ONNX de 1,8 MB cuantizado a int8 (opset 17) y está pensado para ejecutarse en CPU, en navegador mediante WebAssembly y en dispositivos móviles, sin enviar datos a un servidor. Trabaja palabra por palabra, con entradas de hasta 33 caracteres y un prefijo de fonemas de hasta 39 posiciones; no es un modelo de lenguaje general ni procesa frases completas.
+El modelo es muy compacto: los pesos en int8 ocupan 1,8 MB y se ejecutan en un único hilo sobre el motor Alkove (Rust, Apache-2.0), de forma nativa o compilado a WebAssembly. La latencia declarada es de unos 2,9 ms por palabra en un Galaxy Z Fold8 y unos 4,1 ms por palabra en un Apple M1 Max. Se distribuye en formato propietario `.alk` (con un manifiesto JSON y un fichero de fonemas), no en safetensors ni GGUF.
 
-Su relevancia está en el despliegue local para wake words personalizadas, comandos de voz y consultas de pronunciación con requisitos de privacidad. Es una versión preview: el autor advierte que los pesos y la interfaz pueden cambiar antes de la versión 1. En 300 palabras reservadas de los 7 idiomas, declara un 86,0 % de acierto en la primera pronunciación, un dato no verificado de forma independiente.
+Es relevante ahora porque resuelve un problema concreto de los asistentes de voz embebidos: la pronunciación de nombres, marcas y palabras inventadas para la activación por palabra clave (wake word) y comandos personalizados, sin depender de la nube. Se trata de una versión preview: los pesos y la interfaz pueden cambiar antes de la versión 1. La licencia es Apache-2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible; modelo exportado a ONNX opset 17, sin especificar la arquitectura interna |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica como ventana de tokens; palabra de hasta 33 caracteres y prefijo de fonemas de hasta 39 posiciones |
-| Tipos de cuantización | int8 |
-| Idiomas soportados | francés (fr), inglés (en), español (es), portugués (pt), italiano (it), catalán (ca) y rumano (ro) |
+| Arquitectura | encoder-decoder con atención (dos planes, `encoder` y `decoder`, sobre los mismos pesos) |
+| Parametros totales | no disponible (pesos int8 de 1,8 MB) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | palabra de hasta 33 caracteres (Unicode, tras NFC y minúsculas) |
+| Tipos de cuantizacion | int8 (único formato distribuido) |
+| Idiomas soportados | fr, en, es, pt, it, ca, ro |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX opset 17, int8; manifiesto JSON y phonemes.json |
-| Tarea | conversión de grafemas a fonemas (pipeline: other) |
-| Tamaño del modelo | 1,8 MB |
-| Entrada | word int32 [1,33]; lang int32 [1]; prefix int32 [3,39]; pos int32 [1] |
-| Salida | logp float32 [3,61] |
-| Set fonético | 58 fonemas de alkove-spot; índices 0 padding, 1-58 fonemas, 59 bos, 60 eos |
-| Runtime | onnxruntime y onnxruntime-web 1.30 o superior |
+| Formato de pesos | `.alk` (formato propio del motor Alkove), con manifiesto `.json` y `phonemes.json` |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no especifica la arquitectura interna (transformer, CNN, RNN o híbrida) ni el número de parámetros. El modelo se exporta a ONNX opset 17 en int8 y se usa de forma autorregresiva a nivel de fonema: recibe los puntos de código Unicode de la palabra tras normalización NFC, minúsculas y sustitución de ’ por ', un índice de idioma, el prefijo de fonemas de cada haz y la posición solicitada; devuelve log-probabilidades sobre 61 índices. La decodificación se realiza con búsqueda por haces de 3 hipótesis, empezando por bos y terminando en eos o tras 39 posiciones.
+El modelo se organiza en dos planes que comparten pesos y se ejecutan en sesiones separadas del motor. El plan `encoder` recibe la palabra como secuencia de puntos de código Unicode (float32 de forma `[1, 33]`, con relleno de ceros) y el índice de idioma (`lang`, float32 `[1]`), y produce las claves y valores de atención cruzada (`cross`, float32 `[3, 34, 256]`) junto con una máscara de relleno (`pad`, float32 `[34]`). El plan `decoder` es autorregresivo: en cada llamada recibe el token de cada haz (`token`, `[3]`), la fila padre de la que continúa cada haz (`parent`, `[3]`) y la posición (`pos`), y devuelve log-probabilidades sobre 61 índices (0 relleno, 1-58 fonemas, 59 `bos`, 60 `eos`) para cada uno de los 3 haces. El decoder conserva las claves y valores de cada haz entre llamadas, lo que evita recalcular el estado.
 
-Tampoco se detallan los datos de entrenamiento: número de ejemplos, composición del corpus, proceso de anotación ni si hubo RLHF, DPO u otra fase de ajuste. La innovación documentada es de despliegue: un modelo de 1,8 MB, cuantizado a int8, ejecutable con onnxruntime-web en WebAssembly y en CPU, con una latencia de 6,2 ms por paso de haz en un Galaxy Z Fold8 con Chrome y un hilo. No hay información sobre la arquitectura de atención ni sobre técnicas como decodificación especulativa.
+La decodificación es una búsqueda por haces (beam search) de anchura 3 que se detiene cuando los tres mejores resultados alcanzan `eos` o tras 39 posiciones. El manifiesto del modelo expone los parámetros `beams`, `bos`, `eos` y la lista de idiomas. No se han publicado datos sobre el volumen ni la composición del corpus de entrenamiento, ni sobre el uso de RLHF o DPO. El rendimiento declarado es de 1,1 ms para leer la palabra y 0,19 ms por paso de búsqueda en el Galaxy Z Fold8, y de 1,6 ms y 0,27 ms respectivamente en el M1 Max. El SDK de Alkove encapsula el proceso de búsqueda por el usuario.
 
 ## Capacidades
 
-- Conversión G2P en 7 idiomas: francés, inglés, español, portugués, italiano, catalán y rumano.
-- Generación de hasta tres pronunciaciones por palabra, con sus probabilidades; el modelo devuelve log-probabilidades por haz y el SDK de Alkove implementa la búsqueda por haces.
-- Cobertura de nombres propios, marcas y palabras inventadas, según la model card.
-- Normalización de entrada: NFC, minúsculas y conversión de ’ a '; la palabra puede ocupar hasta 33 caracteres.
-- Salida restringida al conjunto de 58 fonemas de alkove-spot; los índices 0, 59 y 60 son padding, bos y eos.
-- Ejecución on-device con onnxruntime en CPU y onnxruntime-web en WebAssembly; no requiere servidor.
-- Integración con alkove-spot para wake words personalizadas y comandos de voz.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni generación de texto libre; no es un LLM de propósito general.
-- No procesa frases completas para síntesis de voz: trabaja palabra por palabra.
-- No soporta idiomas fuera de los siete listados ni inventarios fonéticos distintos del de alkove-spot.
+- Conversión de grafemas a fonemas en siete idiomas (fr, en, es, pt, it, ca, ro).
+- Devolución de las tres pronunciaciones más probables con sus probabilidades (log-probabilidades por haz).
+- Manejo de nombres propios, marcas y palabras inventadas, aplicando las reglas fonotácticas del idioma seleccionado.
+- Normalización de entrada: NFC, conversión a minúsculas y sustitución de `’` por `'`.
+- Ejecución en el dispositivo: nativa (Rust) o en WebAssembly, en un solo hilo.
+- Integración mediante SDK para navegador (npm `alkove`), Python (`alkove`), Android y Swift.
+- No soporta tool calling, agentes, razonamiento multi-paso, visión ni audio; su tarea es exclusivamente G2P.
 
 ## Casos de uso
 
-- Wake words y comandos personalizados: el SDK alkove-spot necesita los fonemas de una palabra o marca para detectarla localmente. Lex genera las tres pronunciaciones más probables y sus probabilidades; el desarrollador puede elegir la mejor o cubrir variantes. Todo ocurre en el dispositivo, sin enviar la palabra a un servidor.
-- Asistentes de voz en navegador: con onnxruntime-web y WebAssembly, una aplicación web puede fonemizar nombres de contactos o comandos sin backend. El modelo de 1,8 MB se descarga una vez y se ejecuta en CPU; es adecuado para aplicaciones con requisitos de privacidad o conectividad limitada.
-- Aprendizaje de idiomas: una aplicación puede mostrar la pronunciación más probable de una palabra y alternativas con su probabilidad, para ejercicios de lectura o para comparar la producción del estudiante. La latencia de 6,2 ms por paso de haz en el dispositivo de referencia permite respuestas interactivas.
-- Léxico para TTS de palabras sueltas: para un motor TTS que use el conjunto de 58 fonemas de alkove-spot, Lex puede generar entradas de léxico para nombres propios o palabras fuera del diccionario. No sustituye a un fonemizador de frases: se usa palabra por palabra y hasta 33 caracteres.
-- Normalización de marcas y nombres en asistentes: en un directorio de empresas o contactos, el modelo puede asignar fonemas a nombres que no siguen las reglas ortográficas habituales. Las tres hipótesis permiten gestionar la ambigüedad; hay que tener en cuenta que las palabras extranjeras siguen las reglas del idioma seleccionado.
-- Procesamiento offline en móvil: una aplicación Android o iOS puede incluir el ONNX de 1,8 MB y ejecutarlo con onnxruntime para pronunciar o buscar palabras sin red. Es adecuado para dispositivos con recursos limitados y requisitos de privacidad.
-- Validación de pronunciación en un pipeline de datos: un equipo puede generar candidatos de pronunciación para un listado de palabras y revisar los casos de baja probabilidad o las tres hipótesis. Sirve para construir léxicos de ASR o TTS, pero requiere revisión humana porque el acierto declarado en la primera pronunciación es del 86,0 % en 300 palabras.
-- Accesibilidad: para lectores de pantalla o aplicaciones de comunicación aumentativa, se puede obtener una representación fonémica de nombres y términos técnicos y pasarla a un sintetizador compatible con el conjunto de alkove-spot. La limitación principal es el procesamiento palabra por palabra.
+- Palabras de activación personalizadas: el modelo genera las pronunciaciones candidatas de un nombre o marca para que alkove-spot pueda detectarlo en el habla, con las probabilidades como criterio de selección.
+- Comandos de voz de vocabulario abierto: permite fonetizar comandos nuevos en el dispositivo sin reentrenar el reconocedor ni consultar un servidor.
+- Corrección de pronunciación en asistentes de lectura: dado un nombre propio o un extranjerismo, devuelve la pronunciación más probable en el idioma del usuario para guiar la síntesis o la ayuda a la lectura.
+- Aplicaciones web sin backend: gracias a su tamaño de 1,8 MB y a la compilación a WebAssembly, puede integrarse en un navegador para ofrecer consulta de pronunciación sin enviar texto a ningún servidor.
+- Aplicaciones móviles offline: mediante los SDK de Android y Swift, se usa para fonetizar entradas del usuario en tiempo real (unos 3-4 ms por palabra) en dispositivos sin conectividad.
+- Fonetización de vocabulario en pipelines de datos: integrado vía el paquete de Python, permite generar léxicos de pronunciación para corpus de nombres, marcas o topónimos en las siete lenguas soportadas.
+- Selección de pronunciación en sistemas de diálogo: las tres candidatas con probabilidad permiten al sistema elegir la variante según el contexto o pedir confirmación al usuario.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model-index; no hay verificación independiente.
+Datos declarados por el autor en el model-index (no verificados de forma independiente):
 
-| Benchmark | Conjunto de evaluación | Métrica | Resultado | Verificado |
-|---|---|---|---|---|
-| G2P | 300 palabras reservadas en 7 idiomas | Primera pronunciación correcta | 86,0 % | No (verified: false) |
+| Benchmark | Conjunto de evaluación | Métrica | Valor |
+|---|---|---|---|
+| Grapheme-to-phoneme | 300 palabras reservadas, 7 idiomas | Primera pronunciación correcta (%) | 86,0 |
 
-No se han publicado otros resultados de MMLU, HumanEval, GSM8K, MMMU ni benchmarks de LLM en la información disponible; no son aplicables a este modelo. Tampoco hay desglose por idioma ni intervalo de confianza.
+| Plataforma | Latencia por palabra | Desglose |
+|---|---|---|
+| Galaxy Z Fold8 (Android 17), CPU nativa, 1 hilo | ~2,9 ms | 1,1 ms de lectura + 0,19 ms por paso de búsqueda |
+| Apple M1 Max (macOS), CPU nativa, 1 hilo | ~4,1 ms | 1,6 ms de lectura + 0,27 ms por paso de búsqueda |
+
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU. El modelo pesa 1,8 MB en int8 y está diseñado para ejecutarse en CPU.
-- GPU recomendadas: no aplica; cualquier CPU moderna es suficiente. En el dispositivo de referencia (Galaxy Z Fold8, Chrome, WebAssembly, 1 hilo) tarda 6,2 ms por paso de haz.
-- Consumer GPU: no es necesaria; el modelo cabe en móviles y navegadores actuales con onnxruntime.
-- Despliegue: onnxruntime en CPU y onnxruntime-web 1.30 o superior en WebAssembly; el SDK de Alkove implementa la búsqueda por haces. También se puede integrar en aplicaciones móviles mediante ONNX Runtime.
-- Latencia: 6,2 ms por paso de haz en el dispositivo de referencia; el total depende del número de posiciones (longitud de la pronunciación más larga más uno) y de la implementación.
-- Throughput: no disponible; no se documentan peticiones por segundo ni consumo de RAM.
-- Almacenamiento: 1,8 MB para el ONNX, más el manifiesto JSON y phonemes.json.
+- VRAM: no aplica; el modelo está pensado para CPU. Los pesos int8 ocupan 1,8 MB, por lo que la huella de memoria es mínima.
+- GPU recomendadas: no aplica; no se ha documentado ejecución en GPU.
+- Cabe en cualquier GPU de consumo y en cualquier CPU moderna; se ejecuta en un solo hilo.
+- Opciones de despliegue: motor Alkove (Rust, Apache-2.0), nativo o WebAssembly; SDK de navegador (npm `alkove`), paquete de Python (`alkove`), SDK de Android y paquete de Swift. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ~2,9 ms por palabra en Galaxy Z Fold8 y ~4,1 ms por palabra en Apple M1 Max, en un hilo.
 
 ## Comparativa con modelos similares
 
-| Criterio | alkove-lex-1-preview | Modelos G2P alternativos |
-|---|---|---|
-| Parámetros | no disponible | no disponible |
-| Contexto | palabra de hasta 33 caracteres; prefijo de 39 posiciones | no disponible |
-| Rendimiento | 86,0 % de primera pronunciación correcta (300 palabras, 7 idiomas; no verificado) | no disponible |
-| Licencia | Apache-2.0 | no disponible |
-| Disponibilidad | Hugging Face; ONNX int8 | no disponible |
+No se dispone de datos de benchmarks de modelos comparables en la información proporcionada. Como referencia cualitativa, los sistemas G2P clásicos (basados en reglas o en modelos seq2seq con pesos en safetensors/ONNX) suelen requerir más memoria y no ofrecen el mismo formato de distribución ni la misma integración en navegador. La comparación numérica con alternativas concretas queda como no disponible.
 
-No se han proporcionado datos verificables de otros modelos G2P (parámetros, contexto, benchmarks, licencia o disponibilidad) en la información de partida, por lo que no se puede establecer una comparación cuantitativa rigurosa. La única comparación cualitativa posible se limita al formato: frente a soluciones G2P integradas en frameworks TTS, este modelo se distribuye como un ONNX int8 de 1,8 MB para ejecución local en WebAssembly y CPU; no hay cifras comparativas de precisión. alkove-spot-1-preview no es una alternativa G2P: es el modelo de wake word con cuyo conjunto de fonemas trabaja Lex.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Ejecución en navegador |
+|---|---|---|---|---|---|
+| alkove-lex-1-preview | no disponible (1,8 MB int8) | palabra de hasta 33 caracteres | Apache-2.0 | `.alk` | sí (WebAssembly) |
+| Alternativas G2P genéricas | no disponible | no disponible | variable | safetensors/ONNX | no disponible |
 
-## Limit
+## Limitaciones y advertencias
+
+- Solo procesa palabras de hasta 33 caracteres; no está pensado para fonetizar frases completas para síntesis de voz.
+- Solo cubre las siete lenguas indicadas; no soporta otras.
+- Solo emite el conjunto de 58 fonemas de alkove-spot; no es compatible con otros inventarios fonémicos.
+- Los préstamos y nombres propios se pronuncian según las reglas del idioma seleccionado, lo que puede producir resultados alejados de la pronunciación nativa.
+- Es una versión preview: los pesos y la interfaz pueden cambiar antes de la versión 1, lo que desaconseja fijarla en producción sin control de versiones.
+- El resultado de 86,0 % de primera pronunciación correcta implica que aproximadamente una de cada siete palabras recibe una primera candidata incorrecta; conviene usar las tres candidatas en lugar de solo la primera.
+- No se han publicado datos sobre sesgos, composición del corpus de entrenamiento ni evaluación independiente; existe riesgo de sesgo hacia las convenciones ortográficas de las variedades representadas en el entrenamiento.
+- La licencia Apache-2.0 permite uso comercial, pero el formato `.alk` y el motor Alkove son necesarios para ejecutar el modelo; verificar la compatibilidad de licencias del motor y de los SDK en el producto final.
+
+## Enlaces
+
+- Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-lex-1-preview
+- Modelo alkove-spot-1-preview (conjunto de fonemas): https://huggingface.co/alkove-ai/alkove-spot-1-preview
+- Sitio de Alkove: https://alkove.ai
+- Motor Alkove (Rust): https://github.com/alkove-ai/alkove/tree/main/crates/engine
+- Formato `.alk`: https://github.com/alkove-ai/alkove/blob/main/crates/engine/FORMAT.md
+- SDK de navegador (npm): https://www.npmjs.com/package/alkove
+- Paquete de Python: https://pypi.org/project/alkove/
+- SDK de Android: https://github.com/alkove-ai/alkove/tree/main/android
+- Paquete de Swift (iOS): https://github.com/alkove-ai/alkove/tree/main/ios

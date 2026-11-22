@@ -2,99 +2,113 @@
 
 ## Resumen
 
-Arbiter-8B-GGUF es la versión cuantizada en formato GGUF de Arbiter-8B (v0.4), un modelo de decisión especializado en gestión de patrimonio y activos desarrollado por ternary. El modelo base es un fine-tuning de Qwen3-8B diseñado para una tarea muy concreta: leer artículos de noticias y pasajes de formularios SEC 10-K y responder preguntas tipificadas sobre una empresa concreta (tipo de evento, outlook implícito, grado de certeza, categoría de riesgo, flags del filing, etc.), respondiendo únicamente con la letra de la opción elegida.
+Arbiter-8B-GGUF es la distribución en formato GGUF del modelo Arbiter-8B (v0.5), un modelo de decisión especializado en gestión de patrimonios y activos financieros, desarrollado por el usuario ternary. Se trata de un ajuste fino de Qwen/Qwen3-8B que conserva la arquitectura, el tokenizador y la plantilla de chat de Qwen3, por lo que cualquier runtime compatible con GGUF de Qwen3 puede ejecutarlo. El modelo lee texto financiero (noticias, titulares, fragmentos de formularios 10-K de la SEC, comunicados de bancos centrales) y responde a una pregunta tipada sobre una entidad nombrada, devolviendo únicamente la letra de la opción elegida.
 
-Su relevancia radica en que aborda un problema real de la industria financiera: la clasificación estructurada de evidencia textual con decisiones calibradas y reproducibles, algo donde los LLM generales tienden a ser verbosos e inconsistentes. Al conservar la arquitectura, el tokenizador y la plantilla de chat de Qwen3, cualquier runtime compatible con GGUF de Qwen3 (llama.cpp, Ollama, LM Studio) puede ejecutarlo sin cambios. Con 8.190.735.360 parámetros y cuantizaciones desde Q4_K_M (5,0 GB), es lo bastante ligero para inferencia local en hardware de consumo, con una precisión medida del 82,1 % en Q4_K_M frente al 74,2 % del Qwen3-8B sin ajustar.
+La propuesta del modelo no es la generación libre de texto, sino la clasificación cerrada y determinista: se le proporciona una evidencia textual, un criterio y un conjunto de opciones, y emite un único token correspondiente a la letra de la opción seleccionada. Esta restricción lo hace adecuado para pipelines de extracción de señales financieras estructuradas, donde la latencia y la consistencia importan más que la expresividad. El repositorio GGUF incluye cinco cuantizaciones (Q4_K_M, Q5_K_M, Q6_K, Q8_0 y F16), con la Q4_K_M como opción recomendada al quedar a menos de un punto de F16 en todos los benchmarks publicados.
 
-## Especificaciones tecnicas
+El modelo tiene 8.190.735.360 parámetros totales y una licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. La versión GGUF sustituye a los ficheros v0.4 y está pensada para su despliegue en llama.cpp, Ollama y LM Studio. Es relevante ahora porque ofrece una alternativa local y de código abierto a APIs propietarias de decisión financiera, con métricas de precisión publicadas frente a SEntFiN, EDT y FOMC.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer Qwen3 (heredada de Qwen3-8B) |
-| Parametros totales | 8.190.735.360 |
-| Parametros activos | no disponible (no hay indicios de que sea MoE; arquitectura Qwen3 dense) |
-| Longitud de contexto | no disponible (el ejemplo oficial usa 4096 tokens) |
-| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16 |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (el modelo base ternary/Arbiter-8B distribuye safetensors) |
+| Arquitectura | Transformer decoder-only (Qwen3), ajuste fino de Qwen/Qwen3-8B |
+| Parámetros totales | 8.190.735.360 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la información proporcionada (los ejemplos de uso emplean `-c 4096`) |
+| Tipos de cuantización | Q4_K_M (5,0 GB), Q5_K_M (5,9 GB), Q6_K (6,7 GB), Q8_0 (8,7 GB), F16 (16,4 GB) |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); el modelo base publica safetensors con cabeza de decisión |
+| Modelo base | ternary/Arbiter-8B (v0.5), derivado de Qwen/Qwen3-8B |
+| Tamaño del repositorio | 85,4 GB |
+| Descargas | 595 |
+| Likes | 1 |
 
 ## Arquitectura y entrenamiento
 
-Arbiter-8B parte de Qwen3-8B, un transformer denso, y conserva intactos su arquitectura, tokenizador y chat template. El ajuste fino se ha realizado sobre un formato de prompt fijo: un mensaje de sistema que instruye a elegir exactamente una opción y responder solo con su letra mayúscula, y un mensaje de usuario en JSON con tres campos: `evidence` (el texto literal), `criterion` (la pregunta seguida de `Focus entity: <empresa>`) y `options` (lista de pares letra/descripción). El modelo se entrena con definiciones de pregunta concretas (event type, outlook, certainty, main subject, role, 10-K risk, legal status y filing flags) y funciona mejor con esas definiciones exactas y un máximo de 16 opciones.
+Arbiter-8B mantiene la arquitectura transformer decoder-only de Qwen3-8B, junto con su tokenizador y su plantilla de chat. El ajuste fino convierte el modelo generalista en un clasificador de decisión guiado por prompt: recibe un objeto JSON con `evidence` (el texto literal), `criterion` (la pregunta seguida de `Focus entity: <entity>.`) y `options` (cada una con `letter` y `description` en formato `<option id>: <definition>`), y se le fuerza a generar un único token con la letra de la opción elegida, con el modo de razonamiento (thinking) desactivado.
 
-Los datos de entrenamiento proceden de noticias y filings SEC 10-K, con una validación sobre 151 decisiones etiquetadas por humanos de empresas excluidas del entrenamiento. El repositorio principal (ternary/Arbiter-8B) incluye además una "decision head" y una calibración por pregunta que suman unos 3 puntos de precisión y proporcionan probabilidades bien calibradas; estos GGUF contienen solo el modelo de lenguaje ajustado. El uso recomendado desactiva el modo thinking de Qwen3 y genera un único token con temperatura 0, aprovechando los top logprobs para obtener la confianza por opción.
+El autor describe el modelo como «Jev-inspired», en referencia a un estilo de decisión estructurada. El entrenamiento cubre familias de preguntas concretas: tipo de evento de noticias, perspectiva (outlook), certeza, sujeto principal, rol, riesgo en formularios 10-K, estado legal y flags de presentación, eventos corporativos de EDT, postura de política monetaria y sentimiento de titulares de FOMC. Cada pregunta de la versión v0.5 aparece en una redacción original y en una versión «tightened» (más estricta). Las cuantizaciones Q4_K_M, Q5_K_M y Q6_K se generaron con una importance matrix calculada a partir de prompts de decisión reales muestreados de todas las familias de preguntas de entrenamiento; según el autor, en el modelo base esa matriz aportó 5 puntos a 4 bits (SEntFiN tightened 75,3 % frente a 70,2 % sin ella). No se detalla en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset, ni si hubo RLHF o DPO.
+
+Una innovación destacable es la cabeza de decisión del repositorio principal (no incluida en los ficheros GGUF), que junto con la calibración por pregunta corrige la sobreconfianza de las probabilidades emitidas por el runtime GGUF. El modelo está diseñado para funcionar con las definiciones exactas de pregunta publicadas en `questions.py` y con un máximo de 16 opciones.
 
 ## Capacidades
 
-- Clasificación de evidencia textual financiera: dado un texto (noticia o pasaje de 10-K) y un criterio, selecciona una opción de una lista cerrada y responde solo con su letra.
-- Preguntas soportadas por entrenamiento: tipo de evento, outlook implícito, grado de certeza del evento, sujeto principal, rol, riesgo del 10-K, estado legal y flags del filing.
-- Salida de confianza por opción mediante top logprobs del primer token generado (hasta 20 logprobs), permitiendo calcular probabilidades por letra.
-- Compatibilidad con el ecosistema Qwen3: mismo tokenizador y chat template, incluyendo el parámetro `enable_thinking: false`.
-- No es un modelo conversacional generalista: está optimizado para un único formato de prompt y respuestas de un token, no para generación de texto libre, razonamiento extenso ni código.
-- Soporte de tool calling / function calling: no disponible (no forma parte del entrenamiento).
-- Capacidades multilingues: no disponible; el entrenamiento y la etiqueta de idioma son en inglés.
+- Clasificación de decisión cerrada: elige exactamente una opción entre las proporcionadas y responde solo con su letra mayúscula, sin explicación ni razonamiento.
+- Lectura de texto financiero: noticias, titulares, pasajes de formularios SEC 10-K y comunicados de bancos centrales.
+- Extracción de señales tipadas: tipo de evento de noticias, perspectiva, certeza, sujeto principal, rol, riesgo en 10-K, estado legal, flags de presentación, eventos corporativos EDT, postura de política monetaria (FOMC) y sentimiento de titulares.
+- Estimación de confianza: la log-probabilidad de la letra elegida se interpreta como confianza del modelo (con las salvedades de calibración indicadas en la model card).
+- Integración con endpoints compatibles con OpenAI a través de `llama-server` (`/v1/chat/completions`), con `logprobs` y `top_logprobs`.
+- Multilingüe: no; el modelo está entrenado y declarado únicamente para inglés.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente o razonamiento multi-paso: no; el modelo está diseñado para una única decisión de un token, con thinking desactivado.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Clasificación de sentimiento financiero en noticias: dado un titular o párrafo sobre una empresa, el modelo determina si el outlook implícito mejora, empeora, se mantiene o es poco claro, con confianza por opción vía logprobs.
-- Procesamiento de filings SEC 10-K a escala: extracción estructurada de señales de riesgo, estado legal y flags de filing de miles de pasajes, con respuestas de un token que hacen el pipeline barato y rápido.
-- Monitorización de eventos corporativos: clasificación del tipo de evento (fusiones, resultados, cambios de directiva, litigios) sobre flujos de noticias en tiempo real para alertas o dashboards.
-- Construcción de datasets etiquetados: su salida determinista (temperatura 0, un token) y calibrable lo hace adecuado como etiquetador automático con control de confianza para anotar corpus financieros.
-- Screening cuantitativo: integración en estrategias de inversión como generador de features discretas (outlook, certeza, categoría de riesgo) a partir de texto, alimentando modelos posteriores.
-- Sistemas de wealth management con revisión humana: la probabilidad por opción permite enrutar a revisión manual solo los casos de baja confianza, reduciendo coste de supervisión.
-- Inferencia local y privada: con cuantizaciones desde 5 GB, puede ejecutarse en portátiles y estaciones de trabajo sin enviar datos financieros sensibles a APIs externas.
+- Clasificación de titulares financieros en tiempo real: el modelo recibe el titular como `evidence` y una pregunta de tipo de evento o sentimiento con sus opciones, y devuelve la letra de la categoría. Es adecuado porque la inferencia de un solo token mantiene la latencia baja y el formato de salida es trivial de parsear.
+- Análisis de comunicados de la Reserva Federal: con la familia de preguntas FOMC, se puede etiquetar la postura de política monetaria (hawkish, neutral, dovish) de fragmentos de declaraciones, y usar la log-probabilidad como señal de confianza para priorizar revisión humana.
+- Extracción de riesgos en formularios 10-K: dado un pasaje de la sección de factores de riesgo, el modelo responde a preguntas tipadas sobre riesgo, estado legal o flags de presentación, lo que permite construir un índice estructurado de riesgos por empresa y ejercicio.
+- Detección de eventos corporativos: con las definiciones de EDT, el modelo clasifica eventos societarios (fusiones, dividendos, cambios de directiva) a partir de notas de prensa, alimentando bases de datos de eventos para análisis cuantitativo.
+- Enriquecimiento de pipelines de gestión de patrimonios: integrado en un proceso ETL que procesa flujos de noticias, el modelo añade etiquetas de perspectiva, certeza y sujeto principal a cada documento, lo que facilita el filtrado y la priorización de carteras.
+- Señal de decisión local y auditable: al ejecutarse con llama.cpp u Ollama en infraestructura propia y con licencia Apache 2.0, permite desplegar clasificación financiera sin enviar datos a APIs externas, algo relevante para cumplimiento y confidencialidad.
+- Control de calidad y calibración: usando `logprobs` en el endpoint compatible con OpenAI, se pueden derivar umbrales de confianza para enrutar casos dudosos a revisión manual, aunque para probabilidades calibradas el autor recomienda el repositorio principal con transformers y la cabeza de decisión.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor sobre 151 decisiones etiquetadas por humanos (empresas held-out del entrenamiento, noticias y 10-K):
+| Modelo / build | SEntFiN (14.329) | EDT (1.933) | FOMC (496) |
+|---|---|---|---|
+| Arbiter v0.5, Q4_K_M | 77,4 % | 93,6 % | 67,3 % |
+| Arbiter v0.5, Q8_0 | 76,7 % | 93,6 % | 66,9 % |
+| Arbiter v0.5, F16 | 76,8 % | 93,7 % | 66,3 % |
+| Arbiter v0.5 con cabeza de decisión (repo principal) | 76,4 % | 94,2 % | 67,5 % |
+| Arbiter v0.4, Q4_K_M | 75,3 % | 88,1 % | 58,5 % |
+| Qwen3-8B, F16, sin ajuste fino | 75,0 % | 89,3 % | 55,0 % |
 
-| Modelo | Accuracy |
-|---|---|
-| Arbiter-8B, GGUF Q4_K_M (respuesta por letra) | 82,1 % |
-| Arbiter-8B, GGUF Q8_0 (respuesta por letra) | 82,8 % |
-| Arbiter-8B con decision head (repositorio principal) | 85,4 % |
-| Qwen3-8B sin fine-tuning | 74,2 % |
+Condiciones declaradas por el autor: llama.cpp, temperatura 0, un token de salida, definiciones originales. EDT y FOMC se evalúan sobre sus splits de test reservados; SEntFiN no se usó en entrenamiento. Semianchos de confianza al 95 %: SEntFiN ±0,7, EDT ±1,1, FOMC ±4,2 puntos.
 
-No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Calibración: al leer la log-probabilidad de la letra como confianza, el build F16 con más del 99 % de confianza acierta entre el 91,5 % y el 92,6 % de las veces, frente al 59,9 %–90,2 % de Qwen3-8B base. El autor advierte que la lectura GGUF está sobreconfiada en SEntFiN y FOMC (expected calibration error 0,139 y 0,167 en F16; EDT 0,037), y que la cabeza de decisión y la calibración por pregunta del repositorio principal lo corrigen (0,078, 0,067 y 0,012).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo completo en GPU):
-  - Q4_K_M: ~5,0 GB
-  - Q5_K_M: ~5,9 GB
-  - Q6_K: ~6,7 GB
-  - Q8_0: ~8,7 GB
-  - F16: ~16,4 GB
-- Cabe en GPUs de consumo: sí. Q4_K_M y Q5_K_M caben con holgura en una RTX 3060 de 12 GB, RTX 4060 Ti 16 GB o RTX 4090; Q8_0 cabe en una RTX 4090 (24 GB) o en GPUs de 12-16 GB con offload parcial a CPU; F16 requiere ~18 GB o más.
-- También es viable ejecución en CPU pura o híbrida (CPU+GPU) con llama.cpp, dado el tamaño contenido de los ficheros.
-- Runtimes soportados: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF de Qwen3. Ejemplos oficiales: `llama-server -hf ternary/Arbiter-8B-GGUF:Q4_K_M -c 4096` y `ollama run hf.co/ternary/Arbiter-8B-GGUF:Q4_K_M`.
-- Latencia y throughput: no disponible como cifras oficiales; al generar un único token con temperatura 0, la latencia por decisión es esencialmente el tiempo de prefill del prompt, muy inferior a la generación de texto libre.
+- VRAM estimada para inferencia: aproximadamente 5,0 GB para Q4_K_M, 5,9 GB para Q5_K_M, 6,7 GB para Q6_K, 8,7 GB para Q8_0 y 16,4 GB para F16, a los que hay que sumar el overhead de contexto y del runtime.
+- GPU recomendadas: cualquier GPU consumer con al menos 8 GB de VRAM puede ejecutar Q4_K_M; para Q8_0 se recomiendan 12 GB o más; para F16, 24 GB o más. En entornos de servidor, A100 y H100 son adecuadas, aunque el tamaño del modelo no las exige.
+- Cabe en GPU consumer: sí, en RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080 y RTX 4090 con las cuantizaciones Q4_K_M a Q8_0.
+- Opciones de despliegue: llama.cpp (`llama-server`), Ollama (`ollama run hf.co/ternary/Arbiter-8B-GGUF:Q4_K_M`) y LM Studio, entre otros runtimes GGUF. El repositorio principal con cabeza de decisión requiere transformers.
+- Latencia y throughput: no disponibles en la información proporcionada. El diseño de un único token de salida con temperatura 0 mantiene la generación al mínimo, pero no se publican cifras de latencia ni de tokens por segundo.
+- Contexto de ejecución: los ejemplos del autor usan `-c 4096`; no se especifica la longitud de contexto nativa del modelo base.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Tarea | Accuracy (dominio) | Licencia |
-|---|---|---|---|---|---|
-| Arbiter-8B-GGUF (este modelo) | 8,19 B | GGUF (Q4_K_M–F16) | Decisiones financieras estructuradas | 82,1 % (Q4_K_M) / 85,4 % (con decision head) | Apache-2.0 |
-| Qwen3-8B (base, sin ajustar) | 8,19 B | Safetensors, GGUF comunitarios | Uso general | 74,2 % en la misma tarea | Apache-2.0 |
-| ternary/Arbiter-8B (repositorio principal) | 8,19 B + decision head | Safetensors (transformers) | Decisiones financieras con probabilidades calibradas | 85,4 % | Apache-2.0 |
+| Modelo | Parámetros | Contexto | SEntFiN | EDT | FOMC | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|---|
+| Arbiter-8B-GGUF (Q4_K_M) | 8,19 B | no disponible | 77,4 % | 93,6 % | 67,3 % | Apache 2.0 | GGUF en Hugging Face |
+| Arbiter-8B v0.5 (repo principal, con cabeza) | 8,19 B | no disponible | 76,4 % | 94,2 % | 67,5 % | Apache 2.0 | safetensors + transformers |
+| Qwen3-8B (sin ajuste fino, F16) | 8 B | no disponible | 75,0 % | 89,3 % | 55,0 % | Apache 2.0 | safetensors y GGUF |
+| Jev 1.14 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | el autor remite al repositorio principal para la comparación |
+| OpenAI Decisions API | no disponible | no disponible | no disponible | no disponible | no disponible | propietaria | API de pago |
 
-Nota: la comparación con Qwen3-8B es directa porque Arbiter es su fine-tuning y se evaluó sobre el mismo conjunto de 151 decisiones. No se conocen alternativas de terceros de tamaño similar publicando benchmarks sobre ese mismo conjunto, por lo que otras comparaciones no están disponibles.
+La comparación con Jev 1.14 y con la OpenAI Decisions API se publica en el repositorio principal, pero los valores concretos no están incluidos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo de tarea única: solo funciona de forma fiable con el formato de prompt exacto con el que fue entrenado (system + JSON con `evidence`, `criterion` y `options`). Usarlo como chatbot general producirá resultados impredecibles.
-- Máximo de 16 opciones por pregunta y mejor rendimiento con las definiciones de pregunta exactas del entrenamiento (disponibles en `questions.py` del repositorio principal).
-- Los GGUF no incluyen la decision head ni la calibración por pregunta: pierden unos 3 puntos de accuracy y las probabilidades derivadas de logprobs no están formalmente calibradas. Para decisiones críticas o probabilidades calibradas, usar el repositorio principal con transformers.
-- Entrenado y etiquetado solo en inglés; no hay soporte garantizado para textos en castellano u otros idiomas.
-- Riesgo de alucinación no caracterizado públicamente: al responder con una sola letra no genera explicaciones, lo que impide auditar el razonamiento; la salida debe tratarse como una clasificación estadística, no como asesoramiento financiero.
-- Sesgos: el modelo hereda los sesgos de Qwen3-8B y de los datos de noticias y filings SEC con los que se entrenó; su rendimiento se midió solo en 151 ejemplos held-out, una muestra pequeña.
-- Uso en producción financiera: cualquier despliegue en decisiones de inversión debe contemplar supervisión humana, validación continua con datos recientes y conciencia de que el rendimiento puede degradarse ante eventos o formatos de filing no vistos en entrenamiento.
-- Licencia Apache-2.0: sin restricciones para uso comercial, heredada de Qwen3-8B.
+- El recall de ensayos clínicos de EDT cayó al 54,8 % en la versión v0.5, según el propio autor.
+- Arbiter infravalora los titulares neutros (under-calls neutral headlines), lo que puede sesgar la distribución de etiquetas hacia opciones no neutras.
+- El modelo está entrenado únicamente en inglés; no se declara soporte para otros idiomas.
+- La salida está restringida a una letra de opción: no genera explicaciones, justificaciones ni texto libre, lo que limita su uso en tareas conversacionales.
+- Funciona mejor con las definiciones exactas de pregunta publicadas en `questions.py` y con un máximo de 16 opciones; desviarse de ese formato degrada la precisión.
+- Las probabilidades del runtime GGUF están sobreconfiadas en SEntFiN y FOMC (ECE 0,139 y 0,167 en F16); para probabilidades calibradas hay que usar el repositorio principal con transformers y la cabeza de decisión.
+- Riesgo de alucinación: aunque el formato de un token reduce la generación libre, la elección de letra puede ser incorrecta en evidencias ambiguas o fuera de dominio; los semianchos de confianza del FOMC (±4,2 puntos) indican incertidumbre considerable en esa familia.
+- Sesgos conocidos: no se documentan sesgos específicos en la información proporcionada, más allá del sesgo de etiqueta hacia opciones no neutras.
+- Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución; no se identifican restricciones adicionales en la información disponible.
+- Los ficheros Q5_K_M y Q6_K no están benchmarkeados, por lo que su precisión real no está verificada.
+- El modelo no está pensado para asesoramiento financiero directo; las decisiones deben validarse con revisión humana y fuentes adicionales.
 
 ## Enlaces
 
-- Modelo GGUF (esta ficha): https://huggingface.co/ternary/Arbiter-8B-GGUF
-- Repositorio principal (safetensors + decision head + questions.py): https://huggingface.co/ternary/Arbiter-8B
-- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Paper, blog o demo: no disponibles en la información proporcionada
+- Repositorio GGUF: https://huggingface.co/ternary/Arbiter-8B-GGUF
+- Modelo base (repo principal, con cabeza de decisión): https://huggingface.co/ternary/Arbiter-8B
+- Modelo Qwen3-8B original: https://huggingface.co/Qwen/Qwen3-8B
+- Limitaciones del modelo base: https://huggingface.co/ternary/Arbiter-8B#limitations
+- Definiciones de preguntas (`questions.py`): https://huggingface.co/ternary/Arbiter-8B (referenciado en el repositorio principal)

@@ -41,11 +41,6 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
-    },
-    {
       "title": "Comfy Cloud: Run ComfyUI online | Zero Setup, Powerful GPUs, …",
       "url": "https://cloud.comfy.org/",
       "snippet": "Bring your creative ideas to life with Comfy Cloud. Build and run your workflows to generate stunning images and videos instantly …"

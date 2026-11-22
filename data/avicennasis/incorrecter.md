@@ -2,104 +2,115 @@
 
 ## Resumen
 
-Incorrecter es un ajuste fino (LoRA) del modelo Qwen2.5-0.5B-Instruct publicado por el usuario Avicennasis, cuyo objetivo es el inverso de un corrector ortografico: recibe texto limpio, con estilo de redaccion asistida por IA, y devuelve ese mismo texto introduciendo entre uno y tres errores realistas de nivel de palabra (eggcorns, homofonos intercambiados, errores de tecleo, minuscula al inicio de frase, espacio duplicado, punto final omitido). El resultado es un texto que parece escrito a mano por una persona en lugar de generado por un modelo.
+Incorrecter es un ajuste fino (LoRA fusionado en fp16) del modelo Qwen2.5-0.5B-Instruct, desarrollado por el usuario Avicennasis (Léon). Su propósito es deliberadamente inverso al de un corrector ortográfico: recibe texto limpio, con estilo de redacción asistida por IA, y devuelve ese mismo texto introduciendo entre una y tres erratas realistas de nivel de palabra (homófonos incorrectos, eggcorns, deslices de teclado, minúscula al inicio de frase, espacio duplicado o punto final omitido). El objetivo es que el texto resultante parezca tecleado por una persona y no redactado por un modelo.
 
-El modelo cuenta con 494.032.768 parametros y se distribuye bajo licencia Apache-2.0, con pesos en safetensors para transformers y una version cuantizada Q8_0 en GGUF alojada en un repositorio aparte. Esta entrenado exclusivamente en ingles y esta pensado para tasas de generacion con temperatura 0.9, ya que la decodificacion voraz produce una correccion demasiado timida segun las notas de evaluacion del propio autor.
+El modelo resuelve un problema concreto en el ámbito de la generación de datos sintéticos y la evaluación de sistemas: disponer de un generador controlado de errores humanos verosímiles para construir corpus de entrenamiento de correctores, pruebas de robustez o detección de texto generado por IA. Con 494 millones de parámetros y una ventana de contexto heredada de la familia Qwen2.5, está pensado para ejecutarse en hardware muy modesto, incluidos equipos Apple Silicon mediante mlx-lm.
 
-Su relevancia practica es concreta: sirve para generar conjuntos de datos sinteticos de texto "humanizado" con ruido controlado, para probar sistemas de correccion ortografica y gramatical, para aumentar datos de entrenamiento en tareas de normalizacion de texto y para crear corpus de evaluacion con errores realistas y medibles. Es un modelo pequeno, especializado y de proposito unico, no un asistente generalista.
+La relevancia actual radica en su especialización estrecha y en la documentación de su proceso de evaluación, poco habitual en modelos de este tamaño: el autor publica métricas de tasa de cambio, número de ediciones, preservación de estructura y preservación de significado, con intervalos de confianza y comparación entre runtimes (transformers, ollama y mlx-lm).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2), ajuste fino LoRA sobre Qwen2.5-0.5B-Instruct |
+| Arquitectura | Transformer decoder-only (Qwen2), ajuste fino LoRA fusionado sobre Qwen2.5-0.5B-Instruct |
 | Parametros totales | 494.032.768 |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | no disponible en la model card; heredada del modelo base Qwen2.5-0.5B-Instruct |
-| Tipos de cuantizacion | fp16 (pesos fusionados en safetensors); GGUF Q8_0 en repositorio separado; pesos MLX |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen2.5-0.5B-Instruct) |
+| Tipos de cuantizacion | fp16 (pesos fusionados en el repo principal); GGUF Q8_0 en el repo incorrecter-GGUF |
 | Idiomas soportados | ingles (en) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (transformers), GGUF (Q8_0), MLX |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (repo principal); GGUF (repo secundario) |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen2.5-0.5B-Instruct, un transformer decoder-only denso de aproximadamente 494 millones de parametros. Sobre el se aplico un ajuste fino mediante LoRA con la libreria mlx-lm en Apple Silicon, y los pesos resultantes se fusionaron y publicaron en fp16. El modelo usa la plantilla de chat de Qwen y espera un unico mensaje de usuario con el texto limpio, devolviendo el mismo texto con las modificaciones.
+El modelo parte de Qwen2.5-0.5B-Instruct, un transformer decoder-only denso de la familia Qwen2, y se ajusta mediante LoRA con mlx-lm en Apple Silicon; los adaptadores se fusionan en los pesos finales en fp16. No se documenta ninguna modificación arquitectónica respecto al modelo base: la especialización proviene exclusivamente de los datos y del procedimiento de ajuste.
 
-El corpus de entrenamiento combina varias fuentes: 644 semillas redactadas por modelos (glm-5.3-flash, qwen3.8-27b, gemini-3.1-flash-lite y Claude, con etiquetas de licencia por fila) mas 699 borradores adicionales (343 de qwen3.8-27b, 250 de glm, 100 de gemini y 6 de Claude); 693 semillas escritas por humanos procedentes de OpenAssistant/oasst2 (Apache-2.0) y google/civil_comments (CC0-1.0), filtradas a un rango de 20 a 400 palabras; y 600 pares de errores reales de grammarly/coedit (Apache-2.0) invertidos para convertirlos de "erroneo a limpio" en "limpio a erroneo". Se anaden ademas filas de identidad para que el modelo se identifique como Incorrecter, creado por Leon. El autor declara explicitamente que no se utilizaron datos filtrados como Enron o WikiLeaks. No se documenta en la informacion disponible el uso de RLHF ni de DPO.
+El conjunto de entrenamiento combina cuatro fuentes: 644 semillas redactadas por modelos grandes (glm-5.3-flash, qwen3.8-27b, gemini-3.1-flash-lite y Claude, con etiquetas de licencia por fila), 699 borradores adicionales de esos mismos generadores (343 de qwen3.8-27b, 250 de glm, 100 de gemini y 6 de Claude), 693 semillas escritas por humanos procedentes de OpenAssistant/oasst2 (Apache-2.0) y google/civil_comments (CC0-1.0), filtradas a 20-400 palabras, y 600 pares de errores reales de grammarly/coedit (Apache-2.0) invertidos de la dirección correcta a la errónea. Se añaden filas de identidad para que el modelo se autodefina como Incorrecter, creado por Léon. El autor declara explícitamente que no se utilizó correspondencia no publicada.
+
+La innovación técnica destacable no está en la arquitectura sino en la receta de muestreo: temperatura 1.2 con top_p 0.9 y sin penalización por repetición. El autor documenta que la penalización por repetición (antes 1.05) degradaba la tarea porque castiga la copia literal del texto de entrada, y que el tope top_p evita que la propia copia se corrompa con sustituciones espurias de palabras.
 
 ## Capacidades
 
-- Generacion de texto con errores controlados: introduce entre uno y tres errores de nivel de palabra sobre una copia literal del texto de entrada.
-- Preservacion de la estructura del documento: mantiene el numero de lineas (0,971) y las formulas de despedida (0,953) segun la evaluacion del autor.
-- Tipos de error entrenados: eggcorns, homofonos incorrectos, errores de tecleo, minuscula al inicio de frase, espacios duplicados y omision del punto final.
-- Modo conversacional: admite mensajes de usuario mediante la plantilla de chat de Qwen, con o sin system prompt.
-- Identidad autoconsistente: responde a las preguntas de identidad presentandose como Incorrecter, creado por Leon.
-- No soporta tool calling ni function calling segun la informacion disponible.
-- No dispone de capacidades de vision, audio ni modo de razonamiento explicito (thinking mode).
-- Capacidad multilingue limitada al ingles.
+- Generación de texto con transformación controlada: reescribe el texto de entrada introduciendo entre una y tres erratas de nivel de palabra.
+- Inyección de errores tipificados: homófonos incorrectos, eggcorns, deslices de teclado (fat-finger), minúscula al inicio de frase, espacio duplicado y omisión del punto final.
+- Preservación de estructura: mantiene el número de líneas (0.971 medido) y la fórmula de despedida o firma (0.958 medido).
+- Preservación de significado: el texto erróneo sigue diciendo lo mismo que el original en el 95,7 % de los casos según el juez Llama-3.3-70B-Instruct.
+- Autodefinición de identidad: responde a preguntas de identidad como Incorrecter, creado por Léon, con o sin system prompt (3/3 en todas las pruebas).
+- Conversacional: formato de chat con plantilla de Qwen2.5 (apply_chat_template), compatible con text-generation-inference y endpoints.
+- Sin soporte documentado de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido.
+- Multilingüe: no; únicamente inglés.
 
 ## Casos de uso
 
-- Aumento de datos para correctores ortograficos y gramaticales: el modelo genera pares (texto limpio, texto con errores) de forma masiva y controlada, lo que permite entrenar y evaluar sistemas de correccion con errores realistas en lugar de sustituciones sinteticas triviales.
-- Creacion de corpus de evaluacion con ruido medible: al saber que se insertan entre una y tres ediciones por texto, se pueden construir conjuntos de test con una tasa de error conocida para medir la precision y el recall de un corrector.
-- Pruebas de robustez en pipelines de procesamiento de lenguaje: se inyectan errores realistas en los datos de entrada de un clasificador o un buscador semantico para comprobar cuanto degrada su rendimiento con texto tipico de usuario.
-- Generacion de texto de apariencia humana para prototipos y demos: en el diseno de interfaces, se pueden producir ejemplos de mensajes de correo o de chat con imperfecciones verosimiles sin recurrir a redaccion manual.
-- Anonimizacion y camuflaje estilistico de textos generados: al degradar deliberadamente la calidad superficial del texto, se reduce la uniformidad estilistica asociada a la redaccion automatica, util en contextos de deteccion y evasion de detectores de IA.
-- Investigacion sobre deteccion de errores humanos frente a errores artificiales: el modelo permite comparar si los detectores distinguen los errores tipicos de un hablante nativo de los generados por un sistema.
-- Simulacion de conversaciones realistas en agentes conversacionales: se puede integrar como preprocesador para que los transcriptos de entrenamiento reflejen la variabilidad ortografica real de los usuarios.
+- Generación de corpus para entrenar correctores ortográficos y gramaticales: se alimenta texto limpio y se obtienen pares (erróneo, limpio) con errores realistas, útiles como datos aumentados para modelos de corrección.
+- Pruebas de robustez de pipelines de NLP: introducir erratas controladas en entradas de sistemas de extracción de entidades, clasificación o búsqueda para medir su tolerancia a ruido tipográfico humano.
+- Detección de texto generado por IA: generar variantes con marcas humanas (minúsculas iniciales, erratas) para evaluar si los clasificadores de texto sintético se dejan engañar por perturbaciones superficiales.
+- Simulación de comunicaciones internas realistas: producir correos de Slack, notas de casero o actualizaciones de equipo con aspecto tecleado por una persona, para maquetas, demos o pruebas de producto.
+- Evaluación de sistemas de control de calidad editorial: verificar que las herramientas de revisión detectan erratas del tipo eggcorn u homófono en textos que de otro modo parecen limpios.
+- Benchmarking de preservación semántica: usar las métricas publicadas (líneas, firma, significado) como referencia para comparar generadores de ruido alternativos en tareas de data augmentation.
+- Ejecución local en Apple Silicon: con 494 M de parámetros en fp16 o Q8_0 GGUF, cabe en portátiles con memoria unificada, lo que permite generar datos en local sin depender de APIs.
 
 ## Benchmarks y rendimiento
 
-Datos de evaluacion publicados por el autor sobre 58 textos reservados, con temperatura 0,9 y 6 muestras por rama:
+Evaluación sobre 58 textos reservados, temperatura 1.2 y top_p 0.9, 6 muestras (2 semillas de entrenamiento x 3 semillas de muestreo), mediante mlx-lm:
 
-| Metrica | Resultado |
-|---|---|
-| Textos modificados | 0,828 [0,741–0,931] |
-| De los modificados, entre 1 y 3 ediciones de palabra | 0,799 [0,67–0,90] |
-| Numero de lineas conservado | 0,971 [0,95–1,00] |
-| Formula de despedida conservada | 0,953 [0,91–1,00] |
-| Sondas de identidad (con system prompt) | 3/3 en todos los modelos |
-| Textos modificados con decodificacion voraz | 0,586 |
+| Métrica | Resultado | Objetivo |
+|---|---|---|
+| Textos modificados | 0.830 [0.76-0.90] | >= 0.80 |
+| De los modificados, 1-3 ediciones de palabra | 0.882 [0.81-0.92] | >= 0.70 |
+| Número de líneas preservado | 0.971 [0.97-0.98] | >= 0.95 |
+| Firma o despedida preservada | 0.958 [0.91-1.00] | >= 0.95 |
+| Significado preservado | 0.957 [0.93-0.98] | >= 0.95 |
+| Pruebas de identidad (con system prompt) | 3/3 en todos los modelos | 3/3 |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor indica que las cuatro metricas objetivo se cumplen en las medias de cada rama y que la decodificacion voraz es intencionadamente timida, por lo que recomienda temperatura 0,9. La comparacion completa contra otras tres ramas de datos de entrenamiento aparece en las notas de diseno del repositorio, no incluidas en la model card.
+Este checkpoint concreto, con 3 muestras: 0.874 modificados, 0.901 con 1-3 ediciones, 0.971 líneas, 0.958 firma, 0.954 significado.
+
+Mismo checkpoint en otros runtimes (40 textos reservados, 3 muestras):
+
+| Runtime | Ajustes | Modificados | 1-3 ediciones | Líneas | Firma | Significado |
+|---|---|---|---|---|---|---|
+| transformers (CPU) | generation_config.json del repo | 0.79 | 0.81 | 0.96 | 0.96 | 0.94 |
+| ollama (Q8_0) | params del repo GGUF | 0.93 | 0.85 | 0.98 | 0.97 | 0.94 |
+
+El juez de significado es Llama-3.3-70B-Instruct, calibrado previamente con 58/58 corrupciones del motor de ruido juzgadas como "mismo significado" y 58/58 pares no emparejados juzgados como "diferente". El autor advierte que el margen de significado es estrecho y lo declara tal cual se midió. No se publican resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 1 GB para los pesos mas el consumo del runtime (del orden de 1,5 a 2,5 GB en total con cache de atencion).
-- Version cuantizada GGUF Q8_0: aproximadamente 0,5 GB de pesos, ejecutable en CPU y en GPU de gama baja.
-- Cabe sin problema en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, asi como en portatiles con GPU integrada y en Apple Silicon mediante MLX.
-- GPU de centro de datos (A100, H100) no necesarias; el modelo esta muy por debajo de los limites de memoria de esas tarjetas.
-- Opciones de despliegue: transformers con PyTorch, mlx-lm en Apple Silicon, llama.cpp y Ollama con el GGUF Q8_0 del repositorio incorrecter-GGUF, y text-generation-inference segun las etiquetas del repositorio.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada; al tratarse de un modelo de 0,5B parametros, la latencia esperada es baja incluso en CPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 1 GB en fp16 (494 M de parámetros) y en torno a 0,5-0,6 GB en Q8_0 GGUF.
+- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM; el modelo está pensado para ejecutarse en CPU y en Apple Silicon mediante mlx-lm.
+- Cabe holgadamente en GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en portátiles con memoria unificada de Apple (M1 en adelante).
+- Opciones de despliegue: transformers (con dtype float16), mlx-lm, ollama (vía hf.co/Avicennasis/incorrecter-GGUF:Q8_0) y text-generation-inference, dado que el repo incluye la etiqueta endpoints_compatible.
+- Latencia y throughput: no disponibles en la información proporcionada. El repo ocupa 1,0 GB.
+- Ajustes de despliegue críticos: temperatura 1.2, top_p 0.9 y sin penalización por repetición; el generation_config.json del repo ya los aplica con do_sample=True. La decodificación greedy produce resultados demasiado tímidos (pocas modificaciones).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Avicennasis/incorrecter | 494.032.768 | no disponible (heredado del base) | Introduccion de errores tipograficos | Apache-2.0 | Hugging Face (safetensors, GGUF Q8_0, MLX) |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B aprox. | 32.768 tokens (dato del modelo base) | Asistente generalista, generacion de texto | Apache-2.0 | Hugging Face |
-| Otros ajustes finos de generacion de errores tipograficos | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Avicennasis/incorrecter | 494 M | no disponible | Inyección de erratas realistas en inglés | Apache-2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 494 M | no disponible | Instrucciones generales, multilingüe | Apache-2.0 | Hugging Face |
+| Modelos de corrección tipo GECToR o T5-small ajustados a corrección gramatical | variable (decenas a cientos de millones) | variable | Corrección de errores (dirección inversa) | variable | Hugging Face, repos académicos |
 
-No se han identificado en la informacion disponible otros modelos directamente comparables en la tarea especifica de introducir errores tipograficos realistas sobre texto limpio. La busqueda web realizada no devolvio resultados relevantes para este modelo (los resultados obtenidos correspondian a herramientas de dibujo de circuitos en LaTeX y no guardan relacion con la ficha).
+No se dispone de datos de benchmarks comparativos directos con alternativas de generación de erratas en la información proporcionada. La comparación con el modelo base es relevante porque Incorrecter hereda su arquitectura y tokenizador, pero invierte la tarea: en lugar de responder instrucciones, copia la entrada con errores controlados.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; cualquier entrada en otro idioma queda fuera del ambito de entrenamiento.
-- Con 0,5B parametros es esperable que en ocasiones se pase o se quede corto en el numero de correcciones, segun reconoce el propio autor.
-- El juez de preservacion de significado no pudo calibrarse en esta ronda, tal y como se registra como limitacion en las notas de diseno; la preservacion semantica esta disenada (ediciones de 1 a 3 palabras sobre una copia literal) pero no se ha medido de forma independiente.
-- Riesgo de alucinacion: aunque la tarea es de copia con perturbaciones, no hay garantia formal de que el texto de salida sea una copia fiel del de entrada; conviene validar con diff automatico antes de usar la salida en produccion.
-- La decodificacion voraz reduce drasticamente la tasa de modificacion (0,586 frente a 0,828); usar esa configuracion por defecto puede producir resultados casi identicos a la entrada.
-- El modelo esta entrenado para responder a preguntas de identidad presentandose como Incorrecter, creado por Leon, lo que puede resultar inapropiado si se reutiliza como componente dentro de otro producto.
-- Licencia Apache-2.0: permite uso comercial y modificacion, pero obliga a conservar los avisos de licencia y a indicar los cambios realizados.
-- No hay datos publicados sobre sesgos especificos, aunque el corpus incluye google/civil_comments, un dataset conocido por contener lenguaje toxico y sesgado; dado que el modelo solo perturba la forma y no el contenido, el riesgo de introducir sesgo nuevo es bajo, pero no esta evaluado.
-- El repositorio no registra descargas ni "likes" en el momento de la consulta, por lo que la validacion por parte de la comunidad es inexistente.
+- Solo inglés: no se ha entrenado ni evaluado en otros idiomas.
+- Con 0,5 B de parámetros, se producen ocasionalmente correcciones excesivas o insuficientes; el autor lo advierte explícitamente.
+- Alrededor de 4 de cada 100 salidas con los ajustes recomendados introducen un error sobre una palabra real que cambia el significado (por ejemplo, my → your); sin el tope top_p el problema es mayor (significado 0.914 con la receta antigua).
+- El margen de la métrica de preservación de significado es estrecho (0.957 frente al objetivo 0.95) y depende de un juez LLM externo (Llama-3.3-70B-Instruct), no de evaluación humana.
+- El modelo responde a preguntas de identidad como Incorrecter, creado por Léon; esto puede ser indeseable si se reutiliza en un producto con otra marca.
+- La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantías sobre la calidad de las erratas generadas ni sobre su adecuación a dominios especializados.
+- No soporta tool calling, agentes, visión ni audio; no debe emplearse como modelo de propósito general.
+- El rendimiento varía según el runtime: transformers en CPU modifica menos textos (0.79) que ollama con Q8_0 (0.93), y el GGUF "funciona un poco más caliente" que los pesos fp16 con los mismos ajustes.
+- Riesgo de alucinación estructural: aunque la tarea es de copia, el muestreo a temperatura 1.2 puede introducir sustituciones no deseadas si se baja el top_p o se activa penalización por repetición.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Avicennasis/incorrecter
-- Version GGUF Q8_0: https://huggingface.co/Avicennasis/incorrecter-GGUF
+- Repositorio GGUF: https://huggingface.co/Avicennasis/incorrecter-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset OpenAssistant/oasst2: https://huggingface.co/datasets/OpenAssistant/oasst2
 - Dataset google/civil_comments: https://huggingface.co/datasets/google/civil_comments
 - Dataset grammarly/coedit: https://huggingface.co/datasets/grammarly/coedit
-- Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las coincidencias obtenidas corresponden a herramientas no relacionadas (CircuiTikZ-Designer, TikzMaker).
+- Notas de diseño con la comparación completa entre brazos de datos de entrenamiento: mencionadas en la model card, sin URL directa disponible en la información proporcionada.

@@ -2,89 +2,94 @@
 
 ## Resumen
 
-Mini-oss-0.6b es un modelo de generación de texto publicado en Hugging Face por el usuario reaperdoesntknow (Convergent Intelligence LLC: Research Division), con un total de 664.434.352 parámetros reales según los pesos en safetensors. El identificador sugiere un modelo de la familia "oss" (etiquetado internamente como `gpt_oss` en los tags del repositorio), pero la model card es la plantilla automática de transformers sin completar: no se documentan autoría efectiva, datos de entrenamiento, licencia ni idiomas. Se trata, por tanto, de un modelo pequeño orientado a generación de texto conversacional, con un tamaño de repositorio de 2,7 GB y formato de pesos safetensors compatible con la librería transformers.
+Mini-oss-0.6b es un modelo de generación de texto publicado en Hugging Face por el usuario reaperdoesntknow bajo el sello Convergent Intelligence LLC (Research Division). Con 664.434.352 parámetros reales (aproximadamente 0,66 mil millones), se posiciona en la categoría de modelos pequeños, pensados para inferencia ligera y despliegue en hardware modesto. La arquitectura declarada en los tags es `gpt_oss`, lo que sugiere una implementación basada en la familia GPT con atención causal estándar, aunque la model card no aporta detalles técnicos verificables sobre la arquitectura interna.
 
-La relevancia del modelo es limitada desde el punto de vista técnico, ya que no se ha publicado información sobre su arquitectura interna, su proceso de entrenamiento ni sus resultados de evaluación. El autor lo adscribe al marco teórico "Discrepancy Calculus (DISC)" de Convergent Intelligence LLC, una propuesta de análisis del comportamiento de modelos basada en la medición de discrepancias entre salida esperada y observada, pero dicha adscripción no aporta especificaciones verificables sobre el modelo en sí.
+El modelo se distribuye en formato safetensors y es compatible con la librería `transformers`, además de declarar compatibilidad con endpoints. Su relevancia radica en su tamaño reducido, que lo hace candidato para prototipado rápido, experimentación y despliegue en entornos con recursos limitados. Sin embargo, la información pública es extremadamente escasa: la model card es una plantilla automática de Hugging Face sin rellenar, y no se documentan datos de entrenamiento, licencia, idiomas ni evaluación.
 
-Con 2.177 descargas y 0 likes en el momento de la consulta, y una actualización reciente (noviembre de 2026), el modelo debe considerarse un artefacto de investigación sin garantías de producción. Cualquier evaluación seria requiere inspección directa de los pesos y pruebas empíricas por parte del usuario.
+La única información sustantiva adicional es la pertenencia al marco teórico "Discrepancy Calculus (DISC)" de Convergent Intelligence LLC, descrito en la model card como un enfoque de teoría de la medida para analizar la brecha entre el comportamiento esperado y observado de un modelo. No obstante, no se especifica cómo este marco se aplica concretamente al entrenamiento o al diseño de Mini-oss-0.6b, por lo que debe tratarse como contexto declarativo del autor y no como una garantía técnica verificable.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag `gpt_oss` en el repositorio; sin confirmación documental) |
-| Parámetros totales | 664.434.352 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | gpt_oss (transformer causal, según tag; detalles no disponibles) |
+| Parametros totales | 664.434.352 |
+| Parametros activos | no disponible (no se declara MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantización GGUF/AWQ no documentada) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. El tag `gpt_oss` sugiere una implementación compatible con la arquitectura de la familia GPT-OSS, y la librería declarada es transformers, pero la model card no confirma ni el tipo de transformer, ni si emplea atención lineal, mezcla de expertos u otro esquema. Tampoco se documenta el tokenizador, la longitud de contexto nativa ni la configuración de capas y cabezas de atención.
+La arquitectura declarada mediante tags es `gpt_oss`, lo que apunta a un transformer decoder-only con atención causal, coherente con la tarea de generación de texto. El número de parámetros (664 millones) es consistente con un modelo pequeño de tipo GPT, pero no se dispone de información sobre el número de capas, dimensión oculta, número de cabezas de atención, vocabulario ni longitud de contexto máxima. Tampoco se especifica si emplea técnicas como atención lineal, decodificación especulativa, Mixture of Experts o mecanismos híbridos.
 
-Respecto al entrenamiento, la model card no incluye número de tokens, composición del dataset, uso de RLHF/DPO, ni hiperparámetros. El texto adicional sobre "Discrepancy Calculus" describe un marco teórico del autor (operador de discrepancia, conjuntos de salto, "ghost imprinting") pero no constituye documentación del proceso de entrenamiento de este modelo concreto. No hay información verificable sobre destilación, fine-tuning o datos de partida.
+No hay datos públicos sobre el corpus de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo fases de ajuste fino supervisado, RLHF o DPO. La model card menciona el marco "Discrepancy Calculus" y conceptos como "Discrepancy Operator", "Jump Sets" y "Ghost Imprinting", pero no se documenta cómo se aplicaron al entrenamiento de este checkpoint concreto. En ausencia de información verificable, cualquier afirmación sobre el proceso de entrenamiento debe considerarse no confirmada.
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado es `text-generation` y los tags incluyen `conversational`, por lo que el modelo está orientado a diálogo multi-turno, aunque no se especifican límites de contexto.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de la infraestructura de Hugging Face Inference Endpoints.
-- Razonamiento, código, matemáticas, visión o audio: no disponible; no hay evidencia documentada de ninguna de estas capacidades.
+- Generación de texto conversacional: el tag `conversational` sugiere uso en diálogos multi-turno, aunque no se documenta el formato de prompt ni el tokenizador de chat.
+- Generación de texto general: pipeline declarado `text-generation`.
+- Compatibilidad con `transformers`: puede cargarse mediante `AutoModelForCausalLM` y `AutoTokenizer` (asumiendo tokenizador incluido en el repo, no confirmado).
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de inference endpoints de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declaran idiomas.
-- Modo "thinking" u otras capacidades especiales: no disponible.
+- Capacidades multilingües: no disponible.
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Prototipado rápido de chatbots: al ser un modelo de 664 millones de parámetros en safetensors, puede cargarse con transformers en una GPU de consumo para iterar sobre prompts y flujos conversacionales antes de migrar a un modelo mayor.
-- Experimentación académica con modelos pequeños: útil como baseline en estudios sobre destilación, cuantización o análisis de comportamiento, dado su tamaño manejable y su integración nativa con transformers.
-- Pruebas de integración en pipelines de inferencia: el tag `endpoints_compatible` permite desplegarlo en Hugging Face Inference Endpoints para validar flujos de serving sin grandes costes de infraestructura.
-- Evaluación de técnicas de cuantización: al publicarse solo en safetensors, sirve como punto de partida para generar versiones GGUF/AWQ y medir la degradación de calidad en un modelo de ~0,6B.
-- Generación de texto auxiliar de bajo coste: tareas como resúmenes cortos, reformulación o clasificación ligera por prompt, siempre que se validen empíricamente sus salidas antes de usarlas en producción.
-- Investigación sobre el marco DISC: el modelo forma parte del portfolio del autor bajo dicho marco, por lo que puede emplearse para reproducir o contrastar los experimentos descritos en sus publicaciones asociadas.
+- Prototipado de pipelines de generación de texto: al ser un modelo de 0,66 mil millones de parámetros, permite iterar rápidamente en local sobre arquitecturas de prompting y evaluación antes de escalar a modelos mayores.
+- Experimentación académica con modelos pequeños: útil para estudiar comportamiento de transformers de baja escala, dinámicas de decodificación o técnicas de cuantización, dado su reducido coste computacional.
+- Despliegue en entornos con recursos limitados: puede ejecutarse en CPU o en GPU de gama baja para tareas de generación de texto no críticas, como borradores o resúmenes cortos.
+- Filtrado y clasificación de texto ligera: mediante prompting, puede emplearse para tareas de etiquetado o categorización simple en lotes, siempre que se valide su calidad empíricamente.
+- Generación de texto de relleno en entornos de prueba: útil como modelo de sustitución (mock) en tests de integración de sistemas que consumen APIs de generación de texto.
+- Base para ajuste fino experimental: su tamaño reducido facilita fine-tuning en una sola GPU consumer para tareas específicas de dominio, aunque no se documenta su calidad base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 1,3 GB solo para pesos (664M parámetros × 2 bytes), más overhead de activaciones y KV cache; en la práctica, entre 2 y 4 GB según longitud de contexto.
-- VRAM estimada en fp32: unos 2,7 GB para pesos, más overhead; el tamaño del repositorio (2,7 GB) es coherente con pesos en fp32 o bf16 con metadatos.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema. Cabe en GPUs de consumo de gama media y en muchas iGPU con suficiente memoria compartida.
-- Despliegue: transformers (librería declarada), Hugging Face Inference Endpoints (tag `endpoints_compatible`), y previsiblemente vLLM, TGI o llama.cpp tras conversión a los formatos correspondientes, aunque no se documenta soporte explícito.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia en FP16: aproximadamente 1,3 GB solo para pesos (664 M × 2 bytes), más overhead de activaciones y KV cache; en la práctica, alrededor de 1,5-2,5 GB según longitud de contexto.
+- VRAM estimada en FP32: aproximadamente 2,7 GB solo para pesos (coincide con el tamaño del repo de 2,7 GB), más overhead.
+- VRAM estimada en cuantización de 8 bits: aproximadamente 0,7 GB para pesos; en 4 bits, aproximadamente 0,35 GB (estimaciones teóricas, no confirmadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, así como en GPUs de datacenter (A100, H100) sin aprovechar su capacidad.
+- CPU: viable para inferencia en CPU con llama.cpp u Ollama si se generan pesos GGUF (no disponibles en el repo actual).
+- Opciones de despliegue: `transformers` (confirmado por la librería declarada), Hugging Face Inference Endpoints (tag `endpoints_compatible`); vLLM, TGI, llama.cpp y Ollama no están confirmados por el autor.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Mini-oss-0.6b | 664M | no disponible | no disponible | Hugging Face, safetensors |
-| Qwen2.5-0.5B | ~494M | 32.768 tokens | Apache 2.0 | Hugging Face, múltiples formatos |
-| SmolLM2-360M | ~362M | 8.192 tokens | Apache 2.0 | Hugging Face, GGUF incluido |
-| TinyLlama-1.1B | ~1,1B | 2.048 tokens | Apache 2.0 | Hugging Face, GGUF incluido |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| reaperdoesntknow/Mini-oss-0.6b | 664 M | no disponible | no disponible | Hugging Face | Model card vacía, sin benchmarks |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Modelo pequeño con documentación completa y benchmarks publicados |
+| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | Hugging Face | Familia de modelos pequeños de Hugging Face con evaluación publicada |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face | Modelo de 1,1 B con benchmarks y amplia adopción comunitaria |
 
-La comparación es desfavorable para Mini-oss-0.6b en términos de documentación y licencia: los tres alternativos publican arquitectura, datos de entrenamiento, benchmarks y licencia permisiva, mientras que Mini-oss-0.6b no ofrece ninguno de estos datos. La elección entre ellos debe basarse en pruebas empíricas, no en la documentación disponible.
+La comparación se ofrece a título orientativo: los tres modelos alternativos cuentan con documentación técnica, licencia clara y evaluaciones publicadas, mientras que Mini-oss-0.6b carece de todos esos elementos en la información disponible. No se dispone de datos de rendimiento del modelo para establecer comparaciones cuantitativas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: no hay información sobre datos de entrenamiento, sesgos, alineación ni evaluación, lo que impide estimar riesgos de alucinación o toxicidad.
-- Licencia no especificada: no puede asumirse uso comercial; es imprescindible contactar con el autor o inspeccionar el repositorio antes de cualquier despliegue productivo.
-- Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro idioma sin pruebas empíricas.
-- Contexto desconocido: no se documenta la ventana de contexto, por lo que el comportamiento en conversaciones largas es impredecible.
-- Modelo de investigación sin garantías: 0 likes y procedencia de un autor individual sugieren ausencia de revisión comunitaria; trátese como artefacto experimental.
-- Riesgo de sobreajuste o colapso de modo: en modelos pequeños sin documentación de alineación es frecuente la repetición y la degeneración en generaciones largas; requiere validación.
-- El marco DISC y las referencias asociadas no sustituyen a la documentación técnica estándar; no deben interpretarse como evidencia de calidad del modelo.
+- Model card incompleta: la práctica totalidad de los campos técnicos están sin rellenar ("More Information Needed"), lo que impide verificar arquitectura, datos de entrenamiento y evaluación.
+- Licencia no especificada: no se puede determinar si el uso comercial está permitido; en ausencia de licencia explícita, deben aplicarse las condiciones por defecto del Hub y consultar al autor antes de cualquier uso en producción.
+- Idiomas no declarados: se desconoce si el modelo está entrenado en castellano, inglés o multilingüe, lo que limita su uso en aplicaciones en español sin validación previa.
+- Riesgo de alucinación: no cuantificado; en modelos pequeños de esta escala es habitual, pero no hay evaluación publicada que lo caracterice.
+- Sesgos: no documentados; al no conocerse el corpus de entrenamiento, no es posible evaluar sesgos de género, raza, idioma o dominio.
+- Longitud de contexto desconocida: impide planificar aplicaciones que requieran ventanas largas.
+- Sin benchmarks: no hay evidencia pública de calidad en tareas estándar (MMLU, HumanEval, GSM8K), por lo que su uso en producción requiere evaluación propia.
+- Marco teórico declarativo: las referencias al "Discrepancy Calculus" no vienen acompañadas de resultados reproducibles ni de documentación técnica aplicada a este checkpoint.
+- Advertencia de procedencia: el autor publica bajo un sello de investigación con múltiples modelos y documentos teóricos; conviene verificar la reproducibilidad y el soporte antes de adoptar el modelo en entornos críticos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Mini-oss-0.6b
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Documento del marco DISC: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
-- Referencia "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
-- Referencia "Three Teachers to Dual Cognition": https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
-- Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact#compute
-- Paper de Lacoste et al. (2019) citado: https://arxiv.org/abs/1910.09700
+- Documento "Discrepancy Calculus: Foundations and Core Theory": https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
+- Documento "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
+- Documento "Three Teachers to Dual Cognition": https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Referencia metodológica citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

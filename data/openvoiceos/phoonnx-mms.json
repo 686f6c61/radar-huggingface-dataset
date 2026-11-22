@@ -5,7 +5,7 @@
   "author": "OpenVoiceOS",
   "url": "https://huggingface.co/OpenVoiceOS/phoonnx-mms",
   "created_at": "2026-06-05T00:41:52.000Z",
-  "updated_at": "2026-09-18T05:09:31.000Z",
+  "updated_at": "2026-11-15T20:12:49.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

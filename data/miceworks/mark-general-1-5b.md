@@ -2,100 +2,96 @@
 
 ## Resumen
 
-`miceworks/Mark-General-1.5B` es un repositorio alojado en Hugging Face por el usuario u organizacion `miceworks`, publicado bajo licencia AGPL-3.0 y etiquetado con region `us`. Por el nombre se deduce que se trata de un modelo de aproximadamente 1.500 millones de parametros, pero esta deduccion no viene confirmada por ninguna documentacion tecnica: la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin tokenizador documentado y sin indicacion de los datos de entrenamiento.
+Mark-General-1.5B es un checkpoint experimental de tipo "narrow" publicado por miceworks en Hugging Face, orientado a la investigación de arquitecturas eficientes más que al uso conversacional general. Emplea la arquitectura `deepseek2` (transformer con Multi-Head Latent Attention y mezcla de expertos de grano fino) con 1.496.185.824 parámetros físicos totales y 364.215.264 parámetros activos por token, distribuidos en 16 capas. Su vocabulario es deliberadamente reducido (4.377 filas de tensor) y su ventana de contexto se limita a 4.096 tokens.
 
-El repositorio no ofrece informacion sobre el pipeline de inferencia, los idiomas soportados, la longitud de contexto ni los formatos de pesos disponibles. En el momento de la consulta registra 0 descargas y 0 likes, y la fecha de creacion y de ultima actualizacion coinciden (26 de octubre de 2026), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento visible.
+El modelo se distribuye exclusivamente como GGUF cuantizado en IQ4_NL, con un contenedor de 802,97 MiB (841.978.976 bytes), lo que lo hace ejecutable en GPUs de 8 GB de VRAM como la NVIDIA GeForce RTX 2060 Super. Su propósito declarado es servir de banco de pruebas para MLA y MoE con enrutamiento sin pérdida auxiliar (aux-loss-free) en hardware de consumo, no como asistente de propósito general.
 
-La busqueda web realizada no devuelve ningun resultado relacionado con este modelo concreto: los enlaces encontrados corresponden a GEN-1.5 de Generalist AI, un modelo fundacional de robotica completamente distinto, sin relacion con `miceworks/Mark-General-1.5B` pese a la coincidencia parcial del nombre. Por tanto, esta ficha se limita a documentar lo verificable y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado.
+Es relevante ahora porque combina varias técnicas de atención y enrutamiento reservadas habitualmente a modelos mucho mayores (MLA con rangos latentes, expertos compartidos más 16 enrutados con top-2, partición de expertos por dominios) dentro de un presupuesto de memoria muy ajustado. La licencia Apache 2.0 y la publicación de los currículos de entrenamiento facilitan su reproducción y experimentación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no declarada en la model card) |
-| Parametros totales | no disponible; el sufijo "1.5B" del nombre sugiere ~1,5 mil millones, sin confirmacion oficial |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se publican pesos cuantizados) |
-| Idiomas soportados | no disponible |
-| Licencia | AGPL-3.0 |
-| Formato de pesos | no disponible (no se documenta safetensors, GGUF ni otros) |
+| Arquitectura | `deepseek2` (transformer con Multi-Head Latent Attention y MoE) |
+| Parametros totales | 1.496.185.824 (281 tensores) |
+| Parametros activos | 364.215.264 por token |
+| Longitud de contexto | 4.096 tokens |
+| Tipos de cuantizacion | IQ4_NL (4 bits no lineal); el repositorio solo publica ese formato |
+| Idiomas soportados | `en` declarado en la model card; el resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (librería `gguf`, compatible con llama.cpp) |
+
+Datos adicionales relevantes: tamaño de vocabulario de 4.377 filas de tensor (4.311 tokens BPE activos más 27.721 ranuras de relleno reservadas), 3.981 merges BPE, dimensión oculta de 1.280, 16 cabezas de atención, rangos MLA `q_lora_rank=640`, `kv_lora_rank=320`, `qk_rope_head_dim=32`, 16 expertos enrutados más 1 compartido (2 activos por token), dimensión FFN de experto de 1.504 y SHA-256 `4712cc4497c0adb618276968a4163a508083857d244b875fbb29cbe52dab183b`.
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en el repositorio se reduce al bloque de frontmatter con la licencia AGPL-3.0 y no incluye ninguna referencia a la arquitectura (transformer, MoE, hibrida o SSM), al numero de tokens de entrenamiento, a la composicion del dataset ni a posibles fases de alineacion como RLHF, DPO o RLVR. Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
+La arquitectura es un transformer de 16 capas con Multi-Head Latent Attention: las proyecciones de clave y valor se comprimen en una representación latente de baja dimensión (`c_KV` de 320 dimensiones) y las consultas en otra de 640 dimensiones, con embeddings rotatorios desacoplados de 32 dimensiones concatenados aparte. Este diseño reduce el coste de la caché KV a 11.264 bytes por token en FP16, es decir, 44 MiB para 4.096 tokens frente a los 384 MiB de una atención MHA estándar, una reducción de 8,7 veces según los cálculos de la model card.
 
-No existe informacion publica sobre el proceso de entrenamiento en los resultados de busqueda disponibles. Cualquier afirmacion sobre la naturaleza del modelo (por ejemplo, que sea un modelo causal de lenguaje de proposito general) seria una suposicion basada unicamente en el nombre del repositorio y no debe tomarse como dato contrastado.
+La capa MoE combina un experto compartido siempre activo con 16 expertos enrutados mediante top-2 y enrutamiento sin pérdida auxiliar: los sesgos del router (`blk.{l}.exp_probs_b.bias`, almacenados en FP32) se actualizan con la regla basada en signo `b_i ← b_i + γ·sign(f̄ − f_i)` con γ = 0,001, evitando el colapso de expertos sin penalizar la pérdida principal. Los 16 expertos se agrupan en cuatro "clanes" de dominio: sistemas y concurrencia (0-3), matemáticas y lógica formal (4-7), seguridad y protocolos (8-11) y datos estructurados, tool calling y lógica simbólica (12-15).
+
+El entrenamiento se realizó durante 600 pasos sobre el currículo `miceworks/Mark-Ultra-Curriculum`, con datos curados de STEM, pruebas formales y lógica algorítmica, usando AdamW (β1 = 0,9, β2 = 0,95, weight decay 0,1, gradient clipping 1,0). El autor lo etiqueta explícitamente como `EXPERIMENTAL_NARROW_CHECKPOINT`; no se documentan fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada; no hay model card que describa tareas soportadas.
-- Razonamiento, matematicas y codigo: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta cumplimentado en el repositorio).
-- Capacidades multimodales (vision, audio): no disponible; el tag de pipeline no esta definido.
-- Modo "thinking" o razonamiento explicito: no disponible.
+- Generación de texto en inglés con foco en prosa técnica, código de sistemas (C, Rust) y lógica algorítmica.
+- Razonamiento matemático y lógica formal, apoyado por el clan de expertos 4-7.
+- Generación y análisis de código de sistemas, kernels y patrones de concurrencia (clan 0-3).
+- Tool calling mediante los delimitadores `<tool_call>` y `</tool_call>` integrados en el tokenizador.
+- Modo de razonamiento explícito con etiquetas `<think>` y `</think>`.
+- Flujo epistémico de Self-RAG con etiquetas `[RETRIEVE]`, `[/RETRIEVE]`, `[EVALUATE]`, `[ACCEPT]` y `[REJECT]`.
+- Manejo de datos estructurados y lógica simbólica (clan 12-15).
+- Capacidades multilingües: limitadas; solo se declara inglés, aunque la model card mide fertilidad en portugués técnico.
+- No se declaran capacidades de visión, audio ni agentes autónomos de múltiples pasos más allá del tool calling.
 
 ## Casos de uso
 
-Los siguientes escenarios son plantillas de aplicacion para un modelo de ~1,5B parametros de tipo LM causal. **Deben validarse contra el comportamiento real del modelo antes de cualquier uso en produccion**, dado que el autor no documenta capacidades.
-
-- Clasificacion y etiquetado de texto a escala: un modelo de ~1,5B puede ejecutarse en una sola GPU de consumo y procesar grandes volumenes de documentos para tareas de categorizacion, siempre que se valide previamente su calidad en el dominio objetivo.
-- Extraccion de entidades y estructuracion de datos: uso como extractor de campos en pipelines ETL, con salida forzada a JSON mediante gramaticas (outlines, llguidance) en lugar de confiar en el formato libre.
-- Aplicaciones de escritorio y edge: su tamano reducido permitiria despliegue local en portatiles con GPUs de 8 GB o incluso en CPU, util para asistentes ofimaticos con requisitos de privacidad estrictos.
-- Generacion aumentada por recuperacion (RAG) ligera: como generador final en sistemas documentales donde el contexto recuperado sea corto, evitando modelos mayores por coste o latencia.
-- Filtrado y preprocesado en pipelines de datos: tareas de deduplicacion semantica, puntuacion de calidad o filtrado de contenido antes de alimentar modelos mayores.
-- Fine-tuning especifico de dominio: base para ajuste supervisado (SFT) o LoRA en tareas acotadas, ya que el coste de reentrenamiento de un modelo de este tamano es bajo.
-- Prototipado e investigacion: banco de pruebas para experimentos de alineacion o evaluacion de tecnicas de inferencia eficiente.
+- Investigación de arquitecturas MLA: el modelo permite medir empíricamente el ahorro de caché KV (8,7x frente a MHA) en una GPU de 8 GB, validando fórmulas de escalado de memoria antes de trasladarlas a modelos mayores.
+- Estudio de enrutamiento MoE sin pérdida auxiliar: con 16 expertos enrutados y sesgos FP32 accesibles, sirve para analizar la distribución de frecuencias por experto y el efecto de γ en la estabilidad del router.
+- Experimentos de partición por dominios: los cuatro clanes permiten comprobar si el enrutamiento aprende a separar código de sistemas, matemáticas, seguridad y datos estructurados, midiendo afinidades token-experto.
+- Pruebas de pipelines de tool calling: las etiquetas `<tool_call>` integradas en el vocabulario permiten prototipar agentes ligeros y validar parsers de llamadas a herramientas en local.
+- Evaluación de tokenizadores de vocabulario reducido: con 4.311 tokens BPE activos y fertilidad de 2,53 caracteres/token en prosa técnica inglesa, es un banco de pruebas para estudiar el equilibrio entre tamaño de vocabulario y compresión.
+- Desarrollo y depuración de inferencia en llama.cpp: al ser un GGUF IQ4_NL de 803 MiB, permite probar kernels de cuantización no lineal y decodificación en hardware modesto antes de desplegar variantes mayores.
+- Docencia y demostraciones de MoE: su tamaño reducido y su licencia Apache 2.0 lo hacen apto para explicar atención latente y enrutamiento por expertos en cursos prácticos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K, HellaSwag ni de ninguna otra suite, y la busqueda web no aporta datos asociados a este modelo. Los resultados encontrados en la busqueda corresponden a GEN-1.5 de Generalist AI, un modelo de robotica sin relacion con este repositorio, por lo que no son extrapolables.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica únicamente que el modelo fue "validado en representaciones estrechas de lógica matemática y razonamiento algorítmico", sin cifras de MMLU, HumanEval, GSM8K ni comparaciones numéricas.
 
 ## Requisitos de hardware
 
-Estimaciones derivadas del supuesto de ~1,5B parametros (no confirmado por el autor):
-
-- VRAM para inferencia en FP16/BF16: aproximadamente 3,0-3,5 GB solo de pesos; con cache KV para 8.192 tokens, en torno a 4-6 GB dependiendo de la arquitectura.
-- VRAM en INT8: aproximadamente 1,5-2 GB de pesos; en INT4: aproximadamente 0,8-1,2 GB.
-- GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090; tambien en GPUs de 8 GB en cuantizaciones de 8 o 4 bits.
-- GPU de datacenter: A100, H100 y L40S estan sobredimensionadas para un unico modelo de este tamano; son utiles para servir muchas replicas en paralelo con vLLM o TGI.
-- CPU: inferencia viable en x86 moderno con llama.cpp en cuantizacion Q4, con throughput del orden de decenas de tokens por segundo en funcion del numero de nucleos y del ancho de banda de memoria.
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama y transformers, **condicionado a que el repositorio contenga pesos en safetensors o GGUF**, extremo que no se puede verificar con la informacion disponible.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM para inferencia: el contenedor IQ4_NL ocupa 802,97 MiB; con overhead de contexto y caché KV (44 MiB a 4.096 tokens en FP16) el uso realista se sitúa en torno a 1-1,5 GB.
+- GPU objetivo declarada: NVIDIA GeForce RTX 2060 Super (8 GB GDDR6, bus de 256 bits, 448 GB/s), citada explícitamente por el autor.
+- Cabe holgadamente en cualquier GPU de consumo con 4 GB o más (GTX 1650, RTX 3050, RTX 4060, RTX 4090) y en GPUs de datacenter (A100, H100) con un uso de memoria mínimo.
+- Despliegue: llama.cpp es el runtime de referencia (librería `gguf`, etiqueta `endpoints_compatible`); al no publicarse pesos safetensors, vLLM y TGI no son opciones directas sin conversión.
+- Latencia y throughput: no disponibles; no se han publicado mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No hay datos publicados de `miceworks/Mark-General-1.5B` (ni contexto, ni benchmarks, ni idiomas) que permitan una comparacion tecnica real. La siguiente tabla recoge unicamente las especificaciones publicas de alternativas del mismo orden de magnitud, a modo de referencia de categoria; los datos de los modelos comparados provienen de sus fichas publicas y no de la informacion proporcionada en esta busqueda.
+| Modelo | Parámetros | Activos | Contexto | Cuantización publicada | Licencia | Enfoque |
+|---|---|---|---|---|---|---|
+| Mark-General-1.5B | 1.496 M | 364 M | 4.096 | IQ4_NL (GGUF) | Apache 2.0 | MLA + MoE experimental |
+| TinyLlama-1.1B | 1.100 M | denso | 2.048 | múltiples (GGUF, safetensors) | Apache 2.0 | Transformer denso generalista |
+| Qwen2.5-1.5B | 1.540 M | denso | 32.768 | múltiples (GGUF, safetensors) | Apache 2.0 | Transformer denso multilingüe |
+| DeepSeek-V2-Lite | 15.700 M | 2.400 M | 32.768 | safetensors, GGUF comunitario | licencia propia | MLA + MoE a mayor escala |
 
-| Modelo | Parametros | Contexto | Licencia | Estado de documentacion |
-|---|---|---|---|---|
-| miceworks/Mark-General-1.5B | ~1,5B (inferido del nombre) | no disponible | AGPL-3.0 | Model card vacia; 0 descargas; sin benchmarks |
-| Qwen2.5-1.5B | 1,54B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Model card completa y benchmarks publicados |
-| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache-2.0 | Model card completa y benchmarks publicados |
-| Gemma 2 2B | 2,6B | 8.192 tokens | Terminos de uso de Gemma | Model card completa y benchmarks publicados |
-
-Advertencia: la licencia AGPL-3.0 de `Mark-General-1.5B` es sustancialmente mas restrictiva para integracion en productos comerciales que las licencias Apache-2.0 de las alternativas citadas, incluso aunque el modelo fuera tecnicamente equivalente.
+La comparación con modelos densos de tamaño similar es desfavorable en contexto (4.096 frente a 32.768 de Qwen2.5-1.5B) y en disponibilidad de formatos, pero Mark-General-1.5B ofrece una huella de memoria activa mucho menor (364 M parámetros activos) y una caché KV muy reducida. No se dispone de datos de rendimiento comparativo para respaldar afirmaciones de calidad.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card no describe arquitectura, datos, tokenizador ni limitaciones. Esto impide evaluar sesgos, calidad o idoneidad para cualquier caso de uso.
-- Imposibilidad de verificar la existencia de pesos: el repositorio puede contener solo la licencia u otros ficheros no relacionados con un modelo entrenado. Conviene inspeccionar el arbol de ficheros antes de cualquier intento de uso.
-- Riesgo de alucinacion: desconocido, pero inherente a cualquier modelo de lenguaje; sin evaluaciones publicadas no se puede acotar.
-- Sesgos: no documentados. Al no conocerse la composicion del dataset de entrenamiento, no es posible estimar sesgos de genero, etnia, idioma o dominio.
-- Cobertura idiomatica: el campo de idiomas no esta cumplimentado; no hay garantia de rendimiento en castellano ni en ningun otro idioma.
-- Restricciones de licencia: AGPL-3.0 obliga a liberar el codigo fuente de las obras derivadas que se distribuyan o se ofrezcan como servicio en red. Esto incluye, en interpretaciones habituales, exponer el codigo de una aplicacion SaaS que sirva el modelo. Es incompatible con productos propietarios cerrados sin una licencia alternativa del titular.
-- Reputacion del publicador: sin descargas, sin likes, sin historial de modelos previos verificable y sin enlaces a paper o blog. El repositorio debe considerarse no auditado.
-- Riesgo de seguridad: pesos de origen no verificado pueden contener comportamiento malicioso o puertas traseras; se recomienda analisis en sandbox y revision de ficheros pickle si los hubiera.
-- Confusion de nombres: no confundir este repositorio con GEN-1.5 de Generalist AI, un modelo fundacional de robotica sin ninguna relacion.
+- Checkpoint experimental: el autor lo etiqueta como `EXPERIMENTAL_NARROW_CHECKPOINT` y lo describe como banco de pruebas arquitectónico, no como modelo conversacional o multilingüe de propósito general.
+- Contexto muy corto: 4.096 tokens limita conversaciones multi-turno largas, análisis de documentos extensos y agentes con historial amplio.
+- Vocabulario mínimo: 4.311 tokens BPE activos producen una fertilidad de solo 2,02 caracteres/token en código de sistemas y 2,53 en prosa técnica, lo que encarece la generación frente a tokenizadores de 32K o 100K tokens.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está documentado y previsiblemente será deficiente.
+- Riesgo de alucinación: con solo 600 pasos de entrenamiento sobre un currículo estrecho, la cobertura factual es muy limitada y no se documentan evaluaciones de veracidad.
+- Fidelidad de espacios en blanco: la model card advierte que el decodificador ByteLevel puede eliminar los cuatro espacios iniciales de indentación cuando el token 28 es una secuencia de espacio en bruto, lo que afecta a la generación de código Python.
+- Sin datos de sesgos: no se publica ninguna evaluación de sesgos, toxicidad o robustez.
+- Licencia: Apache 2.0 permite uso comercial, pero la ausencia de benchmarks y de garantías hace desaconsejable su despliegue en producción sin evaluación previa propia.
+- Formatos: solo se distribuye GGUF IQ4_NL; no hay safetensors ni otras cuantizaciones oficiales, lo que limita el ajuste fino y el despliegue en servidores de alto rendimiento.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/miceworks/Mark-General-1.5B
-- Modelo GEN-1.5 de Generalist AI (sin relacion con este repositorio, citado en la busqueda): https://theaiinsider.tech/2026/08/22/generalist-ai-releases-gen-1-5-robot-foundation-model-that-learns-from-a-single-demonstration/
-- Cobertura de GEN-1.5 en tbreak: https://tbreak.com/generalist-ai-gen-1-5-robot-foundation-model/
-- Cobertura de GEN-1.5 en TechTimes: https://www.techtimes.com/articles/325174/20260821/generalist-ai-gen-15-learns-new-robot-tasks-single-demo-no-retraining.htm
-- Video de presentacion de GEN-1.5 (YouTube): https://www.youtube.com/watch?v=1cllCVK-9lo
-- Guia general de modelos open source 2026 (referencia de contexto, no especifica de este modelo): https://aiunpacking.com/guides/open-source-ai-models-2026-llama-mistral-deepseek/
-- Paper, blog tecnico, repositorio de codigo y demo de `Mark-General-1.5B`: no disponibles.
+- Modelo en Hugging Face: https://huggingface.co/miceworks/Mark-General-1.5B
+- Scripts de entrenamiento y arquitectura (Mark-AI): https://github.com/thu12dta3/Mark-AI/tree/main/scripts
+- Dataset Mark-Ultra-Curriculum: https://huggingface.co/datasets/miceworks/Mark-Ultra-Curriculum
+- Dataset Mark-Open-SLM-Curriculum: https://huggingface.co/datasets/miceworks/Mark-Open-SLM-Curriculum
+- Dataset Mark-Cyber-Curriculum: https://huggingface.co/datasets/miceworks/Mark-Cyber-Curriculum

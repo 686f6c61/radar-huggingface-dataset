@@ -2,51 +2,49 @@
 
 ## Resumen
 
-Qwen3.8-27B-MPOA-heretic-i1-GGUF es una cuantización en formato GGUF del modelo richardyoung/Qwen3.8-27B-MPOA-heretic, publicada por mradermacher. Se trata de una variante "abliterated" o "decensored" del modelo Qwen3.8 de 27B parámetros, es decir, una versión en la que se ha eliminado el alineamiento de seguridad para reducir los rechazos en la generación de contenido. El modelo cuenta con 26.895.998.464 parámetros reales según los pesos safetensors del modelo base.
+Qwen3.8-27B-MPOA-heretic-i1-GGUF es una cuantización en formato GGUF del modelo richardyoung/Qwen3.8-27B-MPOA-heretic, publicada por el usuario mradermacher. Se trata de una variante "abliterated" o "decensored" del modelo base Qwen3.8 de 27B parámetros, es decir, un ajuste que elimina total o parcialmente los mecanismos de rechazo y alineación de seguridad del modelo original. El resultado es un modelo conversacional sin las restricciones habituales de contenido, orientado a usos donde el filtrado del modelo base resulta limitante.
 
-El repositorio ofrece cuantizaciones con imatrix (denominadas i1) en un amplio rango de tipos, desde IQ1_S de 7,2 GB hasta Q6_K de 22,2 GB, lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo hasta estaciones de trabajo. La model card indica que se trata de un modelo de visión, con archivos mmproj disponibles en el repositorio estático asociado.
+El modelo cuenta con 26.895.998.464 parámetros (aproximadamente 26,9B) en pesos safetensors, y se distribuye exclusivamente en formato GGUF con cuantizaciones de tipo i1 (imatrix) que van desde IQ1_S (7,2 GB) hasta Q6_K (22,2 GB). La licencia declarada es Apache 2.0, aunque las etiquetas del repositorio incluyen también openrail++, lo que genera cierta ambigüedad sobre los términos exactos de uso comercial. El modelo está etiquetado únicamente para inglés.
 
-La relevancia de esta ficha radica en que combina un modelo de gran tamano (27B) con cuantizaciones optimizadas para inferencia local, y en que su naturaleza "heretic" lo hace adecuado para escenarios de investigación donde se necesita estudiar el comportamiento de modelos sin las restricciones habituales de alineamiento, si bien esto conlleva advertencias importantes de uso.
+La relevancia de esta ficha radica en que documenta un caso típico de la comunidad de cuantización: un modelo derivado de una familia conocida (Qwen3) que ha sido modificado para eliminar restricciones de seguridad, y posteriormente cuantizado para su despliegue en hardware de consumo. Es importante señalar que la información disponible sobre arquitectura, entrenamiento y benchmarks es muy limitada, ya que la model card del cuantizador no incluye esos datos y la model card del modelo base no se ha proporcionado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen3.8, transformer presumiblemente, no confirmado en la informacion) |
-| Parametros totales | 26.895.998.464 (26,9B) |
+| Arquitectura | no disponible (derivado de Qwen3, presumiblemente transformer decoder-only, sin confirmar) |
+| Parametros totales | 26.895.998.464 (≈26,9B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones i1 con imatrix) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 (segun metadatos; la model card tambien menciona openrail++ en las etiquetas) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de fichero imatrix) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 (el repositorio incluye también la etiqueta openrail++) |
 | Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna, el numero de tokens de entrenamiento ni la composicion del dataset en la informacion proporcionada. El modelo base es richardyoung/Qwen3.8-27B-MPOA-heretic, del cual no se detalla el proceso de entrenamiento en esta ficha. Por el nombre y el tamano, se infiere que deriva de la familia Qwen3.8 con 27B parametros, pero no se confirma la arquitectura exacta (transformer denso o MoE) ni innovaciones tecnicas como decodificacion especulativa o attention linear.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Por el nombre y el tamaño (26,9B parámetros) cabe inferir que deriva de la familia Qwen3, pero no se confirma si se trata de un transformer decoder-only denso, un modelo con atención lineal o una arquitectura híbrida. Tampoco se especifican la longitud de contexto nativa, el número de capas, la dimensión oculta ni el tipo de tokenizador.
 
-La naturaleza "heretic" o "abliterated" indica que se ha aplicado una tecnica de eliminacion de direcciones de rechazo en el espacio de activaciones, un proceso reproducible segun las etiquetas del repositorio. Las cuantizaciones i1 emplean un fichero imatrix (0,1 GB) para ponderar la cuantizacion, lo que segun la model card mejora la calidad frente a cuantizaciones estaticas de tamano similar. No se dispone de informacion sobre RLHF, DPO ni otras fases de alineamiento en la informacion proporcionada.
+Respecto al entrenamiento, la model card del cuantizador no incluye datos sobre el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. Las etiquetas "heretic", "uncensored", "decensored" y "abliterated" indican que el modelo base richardyoung/Qwen3.8-27B-MPOA-heretic ha sido sometido a un proceso de abliteración, una técnica que identifica y elimina direcciones de activación asociadas al rechazo de contenido. La cuantización i1 utiliza un fichero imatrix (matriz de importancia) para ponderar la cuantización de los tensores, lo que según el autor mejora la calidad frente a cuantizaciones estáticas equivalentes.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta "conversational" y el pipeline de transformers.
-- Capacidades de vision: la model card indica explicitamente que es un modelo de vision, con archivos mmproj en el repositorio estatico asociado.
-- Modelo "uncensored" / "decensored" / "abliterated": reduce los rechazos y filtros de seguridad del modelo original.
-- Compatible con endpoints (etiqueta "endpoints_compatible").
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun el campo de idiomas.
-- Modo thinking: no disponible en la informacion proporcionada.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Modelo "decensored": no aplica los filtros de rechazo del modelo base, por lo que puede generar contenido que el Qwen3 original bloquearía.
+- Razonamiento y respuesta a instrucciones, presumiblemente heredados del modelo base Qwen3.8 (no verificado en la documentación).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como se comporta un modelo de 27B sin las capas de rechazo, util para analizar sesgos, robustez y eficacia de tecnicas de abliteration en entornos controlados.
-- Inferencia local en GPUs de consumo: con cuantizaciones i1-Q4_K_M (16,6 GB) o i1-IQ4_XS (15,2 GB) puede ejecutarse en GPUs con 16-24 GB de VRAM, lo que facilita experimentacion sin infraestructura de servidor.
-- Generacion de contenido creativo sin restricciones: para proyectos de escritura, guiones o narrativa donde se necesita explorar tematicas que los modelos alineados rechazan, con la advertencia de revision humana posterior.
-- Prototipado de asistentes conversacionales en ingles: el modelo mantiene capacidades conversacionales multi-turno, adecuado para probar interfaces de chat antes de pasar a modelos alineados en produccion.
-- Analisis de imagenes en local: al ser un modelo de vision con mmproj, puede emplearse para tareas de descripcion o comprension de imagenes en entornos con requisitos de privacidad, usando llama.cpp con soporte multimodal.
-- Evaluacion comparativa de cuantizaciones: el amplio rango de cuantizaciones (desde IQ1_S hasta Q6_K) permite medir el impacto de la cuantizacion en la calidad de un modelo de 27B, util para investigacion sobre tecnicas de cuantizacion con imatrix.
-- Despliegue en estaciones de trabajo con llama.cpp u Ollama: las cuantizaciones Q4_K_S y Q4_K_M estan marcadas como "optimal size/speed/quality" y "fast, recommended" respectivamente, lo que las hace idoneas para uso interactivo local.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo la abliteración afecta al comportamiento del modelo base, comparando respuestas con y sin el proceso de eliminación de rechazo. Es adecuado porque expone directamente las diferencias de comportamiento.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que aborde temas sensibles que el modelo base rechazaría. La ausencia de filtros permite explorar contenido adulto o controvertido dentro de un entorno controlado.
+- Despliegue en hardware de consumo: las cuantizaciones i1-Q4_K_M (16,6 GB) o i1-Q4_K_S (15,7 GB) permiten ejecutar un modelo de 27B en GPUs con 24 GB de VRAM, como una RTX 4090, usando llama.cpp u Ollama. Es adecuado por el tamaño reducido de los ficheros GGUF.
+- Experimentación con cuantización extrema: las variantes IQ1_S (7,2 GB) e IQ2_XXS (8,5 GB) permiten probar el modelo en equipos con 8-12 GB de VRAM, a costa de una pérdida notable de calidad. Útil para estudiar el impacto de la cuantización en modelos grandes.
+- Evaluación comparativa de técnicas de abliteración: al existir una versión estática (Qwen3.8-27B-MPOA-heretic-GGUF) y una i1, se pueden comparar ambas en tareas de generación libre para medir diferencias de calidad.
+- Fine-tuning posterior sobre dominio específico: el modelo base en safetensors (26,9B) puede servir como punto de partida para ajuste fino en dominios donde se requiera un modelo sin rechazo, aunque el coste computacional es elevado.
 
 ## Benchmarks y rendimiento
 
@@ -54,40 +52,48 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun cuantizacion: desde aproximadamente 7,2 GB (i1-IQ1_S) hasta 22,2 GB (i1-Q6_K), mas el overhead de contexto y el fichero mmproj si se usa vision.
-- GPU recomendadas: no disponible en la informacion proporcionada; por tamano, las cuantizaciones Q4 requieren GPUs de 16-24 GB (RTX 4090, RTX 4080, A5000) y las Q6 requieren 24 GB o mas (RTX 4090, A100 40GB, H100).
-- Cabe en GPU de consumo: si, en cuantizaciones IQ1 a Q4 en GPUs de 8-24 GB; las cuantizaciones Q5 y Q6 requieren 24 GB o mas.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el modelo base es compatible con transformers y endpoints.
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia (según cuantización):
+  - i1-IQ1_S: ~7,2 GB de pesos; con overhead de contexto, ~9-10 GB.
+  - i1-IQ2_M: ~10,1 GB; con overhead, ~12-13 GB.
+  - i1-IQ3_M: ~12,7 GB; con overhead, ~15 GB.
+  - i1-Q4_K_M: ~16,6 GB; con overhead, ~19-20 GB.
+  - i1-Q5_K_M: ~19,3 GB; con overhead, ~22-23 GB.
+  - i1-Q6_K: ~22,2 GB; con overhead, ~25 GB.
+- GPU recomendadas: para Q4_K_M o superiores, RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, H100 80 GB. Para cuantizaciones IQ2/IQ3, RTX 4080 (16 GB) o RTX 4070 Ti Super (16 GB).
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones IQ1 a IQ3 caben en GPUs de 8-16 GB; Q4_K_M y Q5_K_M caben en 24 GB; Q6_K requiere 24 GB con contexto moderado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF (koboldcpp, entre otros). vLLM y TGI no soportan GGUF de forma nativa para este tipo de cuantizaciones i1.
+- Latencia y throughput estimados: no disponibles en la información proporcionada, aunque para un modelo denso de 27B en Q4_K_M sobre una RTX 4090 se puede esperar un throughput del orden de decenas de tokens por segundo, sin dato confirmado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-MPOA-heretic-i1-GGUF (este) | 26,9B | no disponible | apache-2.0 | GGUF (i1) | Version abliterated con cuantizaciones imatrix |
-| richardyoung/Qwen3.8-27B-MPOA-heretic | 26,9B | no disponible | no disponible | safetensors | Modelo base sin cuantizar |
-| mradermacher/Qwen3.8-27B-MPOA-heretic-GGUF | 26,9B | no disponible | apache-2.0 | GGUF (estatico) | Cuantizaciones estaticas del mismo modelo base |
+| Qwen3.8-27B-MPOA-heretic-i1-GGUF (este) | 26,9B | no disponible | apache-2.0 | GGUF i1 | Abliterated, solo inglés, cuantizaciones IQ1-Q6 |
+| Qwen3.8-27B-MPOA-heretic-GGUF (versión estática) | 26,9B | no disponible | apache-2.0 | GGUF estático | Mismo modelo base, cuantizaciones sin imatrix |
+| richardyoung/Qwen3.8-27B-MPOA-heretic (modelo base) | 26,9B | no disponible | no disponible | safetensors | Modelo original sin cuantizar, presumiblemente en fp16/bf16 |
+| Qwen3 original (familia) | varía | varía | varía | safetensors, GGUF | Modelo con alineación de seguridad intacta; no se dispone de la ficha concreta |
 
-No se dispone de datos de rendimiento ni de modelos comparables adicionales en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored" / "abliterated": elimina los filtros de seguridad, por lo que puede generar contenido danino, ofensivo o ilegal. No apto para produccion orientada al publico general sin moderacion adicional.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad; al ser un modelo de 27B cuantizado, la cuantizacion agresiva (IQ1, IQ2, Q2) degrada la calidad de forma notable, como advierte la propia model card.
-- Limitacion de idioma: solo se declara ingles; el rendimiento en castellano no esta garantizado.
-- Licencia: los metadatos indican apache-2.0, pero la model card tambien incluye la etiqueta openrail++; conviene verificar los terminos exactos antes de uso comercial.
-- Contexto: no se especifica la longitud de contexto soportada, lo que impide planificar cargas de trabajo con contexto largo.
-- Vision: los archivos mmproj estan en el repositorio estatico, no en este; es necesario descargarlos por separado para usar capacidades multimodales.
-- Cuantizaciones de baja calidad: las variantes IQ1_S, IQ1_M y Q2_K_S estan marcadas por el autor como "for the desperate", "mostly desperate" o "very low quality"; no recomendadas para uso serio.
-- Sin datos de benchmarks: no hay evidencia publicada de rendimiento en tareas estandar, lo que dificulta comparar con alternativas.
+- Modelo "decensored" / "abliterated": no aplica los filtros de seguridad del Qwen3 original. Puede generar contenido ofensivo, ilegal o dañino sin restricciones, lo que lo hace inadecuado para aplicaciones de cara al público sin moderación adicional.
+- Sesgos conocidos: no documentados en la información disponible; se heredan presumiblemente los del modelo base Qwen3, pero no se especifican.
+- Riesgo de alucinación: no cuantificado; al ser un modelo de 27B sin benchmarks publicados, no se puede estimar su fiabilidad factual.
+- Limitación de idioma: solo inglés según la etiqueta; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Licencia ambigua: la model card declara apache-2.0, pero las etiquetas incluyen openrail++, que impone restricciones de uso. Antes de un uso comercial conviene verificar los términos del modelo base richardyoung/Qwen3.8-27B-MPOA-heretic, ya que la licencia del derivado puede estar condicionada por la del original.
+- Cuantizaciones de muy baja precisión (IQ1, IQ2): el propio autor advierte que IQ1_S es "for the desperate" y Q2_K_S es "very low quality"; estas variantes degradan notablemente la coherencia y no son recomendables para producción.
+- Sin datos de contexto: se desconoce la ventana de contexto nativa, lo que impide planificar aplicaciones que requieran contexto largo.
+- Sin benchmarks: no hay evidencia publicada de rendimiento en MMLU, HumanEval, GSM8K ni otras tareas, por lo que la calidad real del modelo no está verificada.
+- Repositorio con 0 likes y creado en 2026: indica una adopción comunitaria muy baja; no hay validación independiente de la calidad de las cuantizaciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/richardyoung/Qwen3.8-27B-MPOA-heretic
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-GGUF
-- Pagina de overview del autor: https://hf.tst.eu/model#Qwen3.8-27B-MPOA-heretic-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-MPOA-heretic-i1-GGUF
+- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

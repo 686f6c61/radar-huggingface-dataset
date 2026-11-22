@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "google/gemma-4-12B-it · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-12B-it",
-      "snippet": "This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders."
-    },
-    {
-      "title": "google/gemma-4-12B · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-12B",
-      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
-    },
-    {
-      "title": "Gemma 4 — Google DeepMind",
-      "url": "https://deepmind.google/models/gemma/gemma-4/",
-      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
-    },
-    {
-      "title": "Gemma 4 12b It - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it.html",
-      "snippet": "Download Gemma 4 12b It GGUF model. 25.2 GB, 519,916 downloads, 807 likes."
-    },
-    {
-      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
-      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
-      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
-    }
-  ]
+  "sources": []
 }

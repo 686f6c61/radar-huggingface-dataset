@@ -2,59 +2,53 @@
 
 ## Resumen
 
-gladios-tiny.story-0.1B es un modelo de lenguaje decoder-only con arquitectura tipo GPT-2, desarrollado por plimb y entrenado desde cero (from scratch) sobre el dataset completo TinyStories. Con 124.046.592 parámetros (aproximadamente 0,12B), 12 capas, 12 cabezas de atención y una dimensión de embedding de 768, se sitúa en la gama de los modelos pequeños diseñados para tareas muy acotadas.
+gladios-tiny.story-0.1B es un modelo de lenguaje decoder-only con arquitectura GPT-2, desarrollado por plimb, entrenado desde cero sobre el dataset completo TinyStories (aproximadamente 2,1 millones de relatos infantiles y unos 470 millones de tokens). Cuenta con unos 124 millones de parametros (0,1B), 12 capas, 12 cabezas de atencion, dimension de embedding de 768 y una longitud de contexto de 512 tokens. Utiliza el tokenizador GPT-2 con un vocabulario de 50.257 tokens y se distribuye en formato safetensors.
 
-Su propósito no es competir en razonamiento general ni en instrucciones, sino reproducir el estilo de los cuentos infantiles cortos en inglés. El entrenamiento cubre las aproximadamente 2,1 millones de historias del split `train` de TinyStories, unos 470 millones de tokens, usando el tokenizador de GPT-2 con un vocabulario de 50.257 entradas. La ventana de contexto es de solo 512 tokens, coherente con la longitud de las narraciones del corpus.
+El modelo resuelve un problema muy acotado: generar relatos cortos y coherentes en ingles con el estilo de TinyStories, un corpus sintetico disenado para estudiar la adquisicion de capacidades linguisticas basicas en modelos pequenos. No es un modelo de proposito general: no sigue instrucciones, no mantiene conversaciones y no dispone de conocimiento del mundo fuera del dominio de entrenamiento.
 
-Es relevante ahora como baseline de investigación reproducible: al estar entrenado exclusivamente sobre un único dataset y publicarse con licencia MIT, código de entrenamiento abierto y pesos en safetensors, permite estudiar la coherencia lingüística en modelos diminutos, experimentar con fine-tuning barato y actuar como banco de pruebas de pipelines de despliegue sin apenas coste de hardware.
+Su relevancia es fundamentalmente experimental y educativa. Al ser un entrenamiento from scratch, con codigo de entrenamiento publicado y un peso de apenas 0,5 GB, resulta util como banco de pruebas de bajo coste para estudiar dinamicas de entrenamiento, tokenizacion, decodificacion y despliegue en hardware modesto, asi como para comparar el efecto del escalado de datos y parametros en tareas de lenguaje controladas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (arquitectura GPT-2) |
-| Parametros totales | 124.046.592 (aprox. 0,12B) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer decoder-only (estilo GPT-2) |
+| Parametros totales | 124.046.592 (aproximadamente 0,1B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | No se declaran cuantizaciones publicadas; el tamano del repositorio (0,5 GB) es consistente con pesos en fp32. Compatible con cuantizacion a int8/int4 y con conversion a GGUF |
-| Idiomas soportados | Ingles (en) unicamente |
+| Tipos de cuantizacion | no disponible en la model card; existe version GGUF de terceros (mradermacher), con los niveles habituales de llama.cpp |
+| Idiomas soportados | ingles (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
-| Capas | 12 |
-| Cabezas de atencion | 12 |
-| Dimension de embedding | 768 |
-| Tokenizador | GPT-2 (tiktoken), vocabulario de 50.257 tokens |
-| Dataset de entrenamiento | roneneldan/TinyStories (split train completo) |
-| Tamano del repositorio | 0,5 GB |
+| Formato de pesos | safetensors (repo de 0,5 GB); GGUF disponible en repositorio externo |
+
+Detalles adicionales de arquitectura: 12 capas, 12 cabezas de atencion, dimension de embedding 768, tokenizador GPT-2 (tiktoken, vocabulario de 50.257 tokens), separador de historias `<|endoftext|>`.
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer decoder-only con la configuración clásica de GPT-2 small: 12 capas, 12 cabezas de atención, dimensión oculta de 768 y contexto de 512 tokens. No incorpora mecanismos de atención lineal, decodificación especulativa ni mezcla de expertos; es una pila de atención completa estándar con el tokenizador original de GPT-2.
+El modelo sigue una arquitectura Transformer decoder-only clasica de tipo GPT-2, con 12 capas, 12 cabezas de atencion y una dimension oculta de 768, lo que arroja 124.046.592 parametros. Emplea atencion causal estandar y el tokenizador GPT-2; no se documentan innovaciones como atencion lineal, decodificacion especulativa ni capas MoE.
 
-El entrenamiento se realizó desde cero sobre el split `train` completo de TinyStories, sin submuestreo, con cada cuento separado mediante el token especial `<|endoftext|>`. No se documenta en la información disponible el uso de RLHF, DPO ni ningún ajuste posterior de alineamiento: el modelo aprende únicamente la distribución del corpus de cuentos. Tampoco se especifican el número exacto de tokens vistos, el tamaño de batch, la tasa de aprendizaje ni la composición detallada del dataset más allá de la referencia al corpus TinyStories.
+El entrenamiento se realizo desde cero sobre la particion completa `train` del dataset roneneldan/TinyStories, sin submuestreo: aproximadamente 2,1 millones de historias infantiles y cerca de 470 millones de tokens. Cada historia se separa mediante el token especial `<|endoftext|>`. No se menciona en la informacion disponible el uso de RLHF, DPO, ajuste por instrucciones ni tecnicas de alineacion adicionales; el objetivo es modelado de lenguaje autorregresivo puro sobre el corpus.
 
 ## Capacidades
 
-- Generacion de texto narrativo corto en ingles, en el registro de cuentos infantiles.
-- Continuacion de prompts simples del estilo "Once upon a time" o frases con personajes infantiles.
-- Muestreo configurable mediante `temperature`, `top_k` y `max_new_tokens` en la API de `transformers`.
-- Capacidad multilingue: limitada al ingles; no hay evidencia de soporte de otros idiomas.
-- Tool calling / function calling: no soportado.
-- Uso como agente o razonamiento multi-paso: no soportado.
-- Modo de razonamiento explicito (thinking mode): no disponible.
-- Vision, audio u otras modalidades: no soportadas.
-- Seguimiento de instrucciones y conversacion multi-turno: no soportados, segun la propia model card.
+- Generacion de texto autorregresiva en ingles, orientada a relatos infantiles cortos y coherentes.
+- Continuacion de prompts con estilo narrativo simple ("Once upon a time", personajes infantiles, tramas breves).
+- Generacion con muestreo configurable (temperatura, top-k) mediante `transformers`.
+- No dispone de soporte documentado de tool calling ni function calling.
+- No dispone de capacidades de agente ni de razonamiento multi-paso.
+- Multilingue: no; solo ingles.
+- No dispone de modo thinking, vision, audio ni otras modalidades.
+- No dispone de capacidad de seguir instrucciones ni de mantener conversaciones multi-turno.
 
 ## Casos de uso
 
-- Generacion de corpus sintetico de cuentos: producir grandes volumenes de narraciones cortas en ingles para aumentar datasets de entrenamiento o evaluacion de modelos pequenos en tareas de coherencia narrativa. Su ventana de 512 tokens y su entrenamiento sobre TinyStories lo hacen idoneo para generar textos del mismo dominio.
-- Investigacion sobre coherencia en modelos diminutos: servir como baseline controlado al estar entrenado sobre un unico dataset conocido y con codigo de entrenamiento publico, lo que permite aislar el efecto de la arquitectura o del tokenizador en estudios comparativos.
-- Docencia y prototipado rapido: ejemplo minimo de pipeline de generacion con `transformers` que cabe en cualquier portatil, util para ensenar inferencia, decodificacion y gestion de tokens especiales sin coste de GPU.
-- Pruebas de infraestructura y smoke tests: al ocupar menos de 1 GB en fp32, permite validar despliegues de TGI, vLLM o endpoints compatibles sin consumir recursos significativos antes de pasar a modelos de produccion.
-- Experimentacion con fine-tuning y LoRA: su tamano reducido hace viable ajustar el modelo en una unica GPU consumer, por ejemplo para adaptarlo a otro subgenero narrativo o a otro idioma con un corpus pequeno.
-- Generacion de datos para tests automatizados: crear cadenas de texto deterministas o aleatorias de longitud controlada para probar pipelines de NLP, sistemas de almacenamiento o interfaces de usuario.
-- Aplicaciones ludicas y educativas con supervision: generar borradores de cuentos para juguetes o apps infantiles en ingles, siempre con revision humana previa a la publicacion.
-- Estudio de estrategias de decodificacion: comparar systematicamente el efecto de `temperature` y `top_k` en la coherencia de textos cortos sobre un modelo de coste despreciable.
+- Estudio de adquisicion linguistica en modelos pequenos: sirve para analizar como emerge la coherencia narrativa a escala de 0,1B parametros con un corpus sintetico controlado, comparando curvas de perdida y calidad de muestras.
+- Banco de pruebas de tokenizacion: al usar el tokenizador GPT-2 sobre un corpus acotado, permite medir el impacto de la segmentacion en la calidad de generacion y en la longitud efectiva de secuencia.
+- Validacion de pipelines de despliegue: su tamano (0,5 GB) permite probar de extremo a extremo `transformers`, text-generation-inference, llama.cpp u Ollama con la version GGUF antes de escalar a modelos mayores.
+- Generacion de cuentos sinteticos para aumentacion de datos: puede producir relatos breves en ingles para experimentos de destilacion, filtrado de datos o entrenamiento de clasificadores de texto narrativo.
+- Demostraciones educativas de entrenamiento from scratch: con el codigo publicado en GitHub, sirve como ejemplo reproducible de preentrenamiento, guardado de checkpoints y publicacion de pesos en safetensors.
+- Pruebas de inferencia en hardware de consumo: al caber holgadamente en GPUs de gama baja, permite medir latencia y throughput de referencia para comparativas de eficiencia entre backends.
+- Evaluacion de robustez fuera de dominio: permite documentar empiricamente como un modelo especializado pierde coherencia ante prompts ajenos al estilo TinyStories, como caso de estudio sobre sobreajuste al dominio.
 
 ## Benchmarks y rendimiento
 
@@ -62,42 +56,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32, 0,25 GB en fp16/bf16, 0,13 GB en int8 y 0,08 GB en int4 (calculado a partir de los 124 millones de parametros).
-- Memoria de cache KV: en torno a 18 MB adicionales en fp16 para una secuencia completa de 512 tokens (12 capas x 12 cabezas x 64 dimensiones x 2 tensores x 512 posiciones x 2 bytes).
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Modelos como RTX 3050, GTX 1650, RTX 4090 o A100 estan sobredimensionados para este modelo; el uso de A100 o H100 solo tiene sentido para lotes muy grandes o para entrenamiento.
-- Cabe en GPU consumer: si, en practicamente todas las GPU de los ultimos diez anos, asi como en GPUs integradas y en CPU.
-- Inferencia en CPU: viable, dado el reducido numero de parametros.
-- Opciones de despliegue: `transformers` (pipeline y `AutoModelForCausalLM`), text-generation-inference (el modelo esta etiquetado como compatible con TGI y endpoints), vLLM por su soporte de arquitecturas GPT-2, y llama.cpp u Ollama previa conversion a GGUF, conversion que no se distribuye oficialmente en el repositorio.
-- Demo publica: disponible en un Space de Gradio sobre ZeroGPU.
-- Latencia y throughput estimados: no disponible; no se han publicado mediciones.
+- VRAM estimada para inferencia: en fp32, unos 0,5 GB para los pesos (124M parametros); en fp16/bf16, aproximadamente 0,25 GB; con cuantizacion GGUF de 8 bits o inferior, del orden de 0,1-0,2 GB, mas el overhead de activaciones y cache KV (contexto de 512 tokens, despreciable).
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre; no requiere A100 ni H100. Es funcional en RTX 4090, RTX 3090, RTX 3060 y GPUs de portatil.
+- Cabe en GPU de consumo: si, incluidas GPUs de gama baja y, con cuantizacion, en CPU.
+- Opciones de despliegue: `transformers` (pipeline y `AutoModelForCausalLM`), text-generation-inference (el modelo esta etiquetado como compatible con endpoints), llama.cpp, Ollama y LM Studio mediante la version GGUF de mradermacher, y demo Gradio con ZeroGPU.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Idioma | Disponibilidad |
-|---|---|---|---|---|---|---|
-| gladios-tiny.story-0.1B | 124.046.592 | 512 tokens | TinyStories (split train completo) | MIT | Ingles | Hugging Face, safetensors |
-| GPT-2 small | 124M | 1024 tokens | WebText | MIT | Ingles | Ampliamente disponible |
-| TinyStories-125M (roneneldan) | Aprox. 125M | No disponible | TinyStories | No disponible | Ingles | Hugging Face |
+| Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| gladios-tiny.story-0.1B | 124M | 512 | From scratch sobre TinyStories completo | MIT | Hugging Face, GGUF de terceros, demo Gradio |
+| GPT-2 small (OpenAI) | 124M | 1024 | Corpus web general (WebText) | MIT (pesos publicados) | Hugging Face, amplia integracion |
+| Modelos TinyStories de referencia (por ejemplo, variantes GPT-Neo de 125M entrenadas sobre TinyStories) | ~125M | variable, habitualmente 256-1024 | TinyStories | variable segun autor | Hugging Face; datos concretos no disponibles en esta ficha |
 
-La comparacion con GPT-2 small es util porque comparte orden de magnitud de parametros, pero difiere en el dominio: GPT-2 tiene conocimiento general y mayor contexto, mientras que gladios-tiny.story esta especializado en narrativa infantil. Frente a los modelos TinyStories publicados por el autor del dataset, la diferencia principal es la licencia explicita MIT y la publicacion del codigo de entrenamiento en este caso; no se dispone de datos de rendimiento comparativos entre ambos.
+La comparacion con GPT-2 small es la mas directa por tamano (124M parametros) y arquitectura, pero difiere radicalmente en datos: GPT-2 se entreno sobre texto web general, mientras que este modelo se limita a relatos infantiles. Frente a otras variantes TinyStories de ~125M, la diferencia principal es la cobertura completa del split `train` sin submuestreo y la publicacion del codigo de entrenamiento. No se dispone de datos de rendimiento comparativo publicados para este modelo.
 
 ## Limitaciones y advertencias
 
-- Alcance muy restringido: solo genera cuentos infantiles cortos en ingles, segun reconoce la propia model card.
-- Sin conocimiento general del mundo, sin capacidad de seguir instrucciones y sin habilidades conversacionales.
-- Riesgo de alucinacion y de perdida de coherencia cuando el prompt se aleja del estilo de TinyStories.
+- Solo escribe relatos infantiles cortos y en ingles; no tiene conocimiento general del mundo.
+- No sigue instrucciones ni mantiene conversaciones; los prompts deben adoptar el formato narrativo del corpus.
+- Riesgo alto de alucinacion y perdida de coherencia ante prompts fuera del estilo TinyStories.
 - Contexto limitado a 512 tokens, insuficiente para documentos largos o dialogos extensos.
-- Solo ingles: no se ha entrenado ni evaluado en castellano ni en otros idiomas.
-- Sesgos: no se documenta ningun analisis de sesgos; al entrenarse sobre un corpus de cuentos infantiles sinteticos pueden aparecer sesgos de genero, rol familiar o cultural heredados del dataset.
-- Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion y sin garantia; conviene conservar el aviso de copyright.
-- No apto para produccion en tareas de decision, atencion al cliente, generacion de codigo o cualquier escenario que requiera precision factual.
-- Ausencia total de benchmarks publicados y de mediciones de latencia o throughput, lo que impide estimar su calidad objetiva frente a alternativas.
-- Estado del repositorio: cero descargas y cero likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
+- Sesgos: no documentados en la model card; al entrenarse sobre un corpus sintetico de relatos infantiles, los sesgos esperables estan acotados al dominio, aunque no se han realizado evaluaciones formales.
+- Licencia MIT: permite uso comercial, modificacion y redistribucion con aviso de copyright; conviene revisar las condiciones del dataset TinyStories por separado.
+- No apto para produccion en tareas de atencion al cliente, asistencia general, codigo o matematicas.
+- La version GGUF es mantenida por un tercero (mradermacher); su calidad y fidelidad de cuantizacion no estan garantizadas por el autor original.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/plimb/gladios-tiny.story-0.1B
+- Version GGUF: https://huggingface.co/mradermacher/gladios-tiny.story-0.1B-GGUF
 - Demo Gradio (ZeroGPU): https://huggingface.co/spaces/rusher-code/gladios-tiny-story-demo/
-- Codigo de entrenamiento en GitHub: https://github.com/plimb-ai/gladios-tiny-story
+- Codigo de entrenamiento (GitHub): https://github.com/plimb-ai/gladios-tiny-story
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
-- Paper de TinyStories (Eldan y Li, 2023): https://arxiv.org/abs/2305.07759
+- Documentacion de safetensors: https://huggingface.co/docs/safetensors/index

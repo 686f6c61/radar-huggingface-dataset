@@ -2,93 +2,88 @@
 
 ## Resumen
 
-LFM2.5-2.6B-ExecuTorch-XNNPACK-32k es una exportación del modelo LFM2.5-2.6B de Liquid AI, compilada por el usuario experimentalmachines para el runtime de ExecuTorch 1.4.0 con backend XNNPACK. Su objetivo es ejecutar el modelo de forma eficiente en CPU ARM, especialmente en dispositivos Android, sin necesidad de GPU ni NPU. El archivo `.pte` resultante incluye una ventana de contexto de 32.768 tokens fijada en el momento de la exportación y pesos cuantizados en int4 con grupos de 32 y activaciones dinámicas int8 (esquema 8da4w), un diseño pensado para aprovechar los micro-kernels de KleidiAI en CPUs ARM con extensiones i8mm y dotprod.
+LFM2.5-2.6B-ExecuTorch-XNNPACK-32k es una exportación del modelo LiquidAI/LFM2.5-2.6B (revisión `654f9463ce32`) realizada por el usuario experimentalmachines, empaquetada en formato ExecuTorch 1.4.0 para inferencia en dispositivo. El repositorio contiene múltiples variantes del mismo modelo con ventanas de contexto fijas (desde 2.048 hasta 32.768 tokens) y dos backends distintos: XNNPACK sobre CPU arm64 y MediaTek NeuroPilot para el SoC MT6991 (Dimensity 9400). No se trata de un modelo nuevo, sino de una distribución optimizada del modelo base de LiquidAI para ejecución local en Android.
 
-El modelo base, LiquidAI/LFM2.5-2.6B, utiliza la arquitectura híbrida LFM2, que combina capas de atención con capas de convoluciones cortas. En esta exportación, de las 30 capas del modelo, solo 8 atienden con atención y las restantes emplean convoluciones cortas. El resultado es un modelo de 2.600 millones de parámetros que puede ejecutarse en un smartphone de gama alta con un consumo de memoria moderado: 2,94 GB de memoria residente tras la carga, medido en un Dimensity 9400. La relevancia de este modelo radica en su capacidad para ofrecer razonamiento de varios cientos a dos mil tokens en dispositivos móviles, manteniendo velocidades de prefill de 149 tokens/s y decode de 18,1 tokens/s en el mismo chip.
+El interés de esta ficha reside en su carácter práctico: es una de las pocas distribuciones públicas que ofrece pesos en formato `.pte` listos para ExecuTorch con cuantización GPTQ de 8 bits por canal (8da4w) y ventanas de contexto configurables, lo que permite desplegar un modelo de 2.600 millones de parámetros en teléfonos de gama alta sin conexión a red. El tamaño del artefacto XNNPACK ronda los 1,8 GB, y el del backend MediaTek se reparte en tres fragmentos de entre 0,84 y 1,10 GB.
 
-## Especificaciones tecnicas
+La relevancia actual es doble: por un lado, valida el flujo de exportación de modelos LiquidAI a ExecuTorch; por otro, demuestra que un transformer de 2,6B puede caber en el presupuesto de memoria de un móvil (el autor estima un límite de 5 GB por dispositivo). El repositorio acumula 689 descargas y no tiene likes, lo que sugiere un uso instrumental más que comunitario.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LFM2 hibrida (8 capas de atencion + 22 capas de convoluciones cortas, 30 capas en total) |
-| Parametros totales | 2.6B (segun denominacion del modelo base) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 32.768 tokens, fijada en exportacion |
-| Tipos de cuantizacion | int4 en grupos de 32 con activaciones dinamicas int8 (8da4w); tabla de embeddings int8 |
+| Arquitectura | Transformer (modelo base LiquidAI/LFM2.5-2.6B), exportado a ExecuTorch |
+| Parámetros totales | 2.600 millones (según nombre del modelo base) |
+| Parámetros activos | no disponible (no es MoE según la información proporcionada) |
+| Longitud de contexto | 2.048, 4.096, 8.192, 16.384 o 32.768 tokens (ventana fija por archivo) |
+| Tipos de cuantización | XNNPACK: 8da4w GPTQ; MediaTek: a16w8 (activaciones 16 bits, pesos 8 bits) |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (LFM Open License 1.0) |
-| Formato de pesos | .pte (ExecuTorch) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | `.pte` (ExecuTorch); tokenizer en `tokenizer.json`; embedding en `.bin` fp32 para MediaTek |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base es la LFM2 hibrida de Liquid AI. Segun la documentacion de la exportacion, el modelo tiene 30 capas, de las cuales 8 utilizan atencion y las 22 restantes emplean convoluciones cortas. Esta combinacion reduce el coste computacional de la atencion y permite un uso eficiente de la memoria en CPU. El tokenizer es el del modelo base, con un post-procesador anadido que antepone `<|startoftext|>` cuando se solicitan tokens especiales. El chat template es el estilo ChatML del modelo base (`<|im_start|>role ... <|im_end|>`).
+El modelo subyacente es LiquidAI/LFM2.5-2.6B, un transformer de 2,6B parámetros desarrollado por LiquidAI. La información proporcionada no detalla la composición del dataset de entrenamiento, el número de tokens vistos ni si se aplicaron fases de RLHF o DPO. Tampoco se especifica si la arquitectura incorpora innovaciones propias de la familia LFM (como atención lineal o capas híbridas); la model card del exportador se limita a describir el proceso de exportación, no el diseño interno del modelo base.
 
-No se ha realizado ningun entrenamiento adicional en esta exportacion. Los pesos proceden directamente de `LiquidAI/LFM2.5-2.6B` bajo la LFM Open License 1.0; el repositorio solo cambia el empaquetado. La exportacion se realizo el 2026-09-07 con ExecuTorch 1.4.0, torch 2.14 y torchao 0.18 en un Apple M-series Mac. La innovacion tecnica principal es el uso del backend XNNPACK con el particionador de ExecuTorch para la familia LFM2, que aprovecha los micro-kernels de KleidiAI en CPUs ARM con i8mm y dotprod. No se incluye ningun delegate de GPU o NPU en este archivo.
+La innovación técnica de esta distribución está en el pipeline de exportación. Para XNNPACK se aplica cuantización GPTQ de 8 bits con grupo de 4 (8da4w), lo que reduce el peso a ~1,8 GB manteniendo las activaciones en precisión superior. Para MediaTek NeuroPilot se usa un esquema a16w8 y el modelo se fragmenta en tres archivos por ventana, además de una tabla de embeddings fp32 compartida que el runner lee desde disco. La caché KV se reserva completa en el momento de carga: 32.768 bytes por token en fp32, es decir, 1.073.741.824 bytes para la ventana de 32k. Cada archivo `.pte` incorpora metadatos de exportación en `export-report-<window>.json` y un `config.json` con la estimación `fits_phone_budget` contra un presupuesto de 5 GB.
 
 ## Capacidades
 
-- Generacion de texto con modo de razonamiento: el chat template abre un bloque de pensamiento antes de cada respuesta, y el modelo razona entre varios cientos y dos mil tokens antes de escribir la respuesta final.
-- Soporte de tool calling: el modelo base ha sido evaluado con BFCL (Berkeley Function Calling Leaderboard), lo que indica capacidad de function calling. En esta exportacion no se menciona una interfaz explicita, pero las capacidades del modelo base se mantienen.
-- Razonamiento multi-step: la capacidad de mantener bloques de pensamiento largos sugiere soporte para tareas de razonamiento encadenado.
-- Ventana de contexto amplia: 32.768 tokens, suficiente para manejar conversaciones extensas o documentos largos en el dispositivo.
-- Ejecucion en CPU ARM: el modelo esta optimizado para procesadores ARM con extensiones i8mm y dotprod, presentes en moviles y tablets de gama media y alta.
+- Generación de texto autoregresiva en inglés (idioma no confirmado explícitamente; el smoke test produce "Paris").
+- Inferencia completamente local en Android, sin necesidad de conectividad.
+- Soporte de ventanas de contexto largas de hasta 32.768 tokens en CPU arm64 (variante XNNPACK).
+- Ejecución acelerada en NPU MediaTek Dimensity 9400 mediante NeuroPilot (ventanas de 512 a 8.192 tokens).
+- Compatibilidad con la aplicación openweights para Android y con cualquier runtime ExecuTorch 1.4.0.
+- Tool calling, function calling, agentes multi-paso, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes personales en Android con procesamiento local: el modelo puede ejecutarse en un smartphone sin conexion a internet, lo que garantiza privacidad y disponibilidad offline. La velocidad de decode de 18,1 tokens/s en un Dimensity 9400 permite una experiencia conversacional aceptable.
-- Aplicaciones educativas de razonamiento matematico: con una puntuacion de 26/30 en GSM8K con un limite de respuesta de 2048 tokens, el modelo es adecuado para apps que resuelven problemas de matematicas paso a paso en el dispositivo.
-- Chatbots de atencion al cliente on-device: la ventana de 32k tokens permite mantener conversaciones multi-turno largas sin perder contexto, y el razonamiento previo a la respuesta ayuda a generar respuestas mas coherentes.
-- Resumen de documentos extensos: el contexto fijo de 32.768 tokens permite procesar informes, articulos o correos largos directamente en el movil, sin necesidad de enviar los datos a un servidor.
-- Asistentes de productividad con planificacion: el modo de pensamiento prolongado es util para tareas de planificacion, redaccion de correos o generacion de propuestas, donde el modelo puede estructurar la respuesta antes de emitirla.
-- Aplicaciones en dispositivos embebidos ARM: gracias a la cuantizacion int4 y al backend XNNPACK/KleidiAI, el modelo puede desplegarse en routers, tablets o sistemas embebidos con CPU ARM, siempre que dispongan de suficiente memoria RAM (al menos 3 GB).
+- Asistentes de texto sin conexión en Android: el modelo se integra mediante la app openweights o un runtime ExecuTorch propio, permitiendo generar respuestas en el dispositivo sin enviar datos a la nube. La variante de 8k ofrece contexto suficiente para conversaciones multi-turno moderadas.
+- Procesamiento de documentos en el móvil: con la ventana de 32k se pueden resumir o extraer información de correos, notas o contratos de varias páginas sin salir del terminal, usando la variante XNNPACK de 1,81 GB.
+- Clasificación y etiquetado de texto local: el modelo puede emplearse para categorizar tickets, reseñas o mensajes en aplicaciones de productividad, evitando costes de API y cumpliendo requisitos de privacidad.
+- Prototipado de funciones de escritura asistida: autocompletado, reescritura o generación de borradores en editores móviles, con latencia aceptable gracias a la cuantización 8da4w y al backend XNNPACK.
+- Evaluación de pipelines ExecuTorch: el repositorio sirve como referencia para ingenieros que quieran medir el rendimiento de un transformer de 2,6B en CPU arm64 o en NPU MediaTek, con informes de exportación incluidos por ventana.
+- Despliegue en dispositivos MediaTek de gama alta: la variante NeuroPilot para MT6991 permite aprovechar la NPU del Dimensity 9400 en tareas de generación de texto con ventanas de hasta 8k, reduciendo el consumo energético frente a CPU.
+- Investigación sobre cuantización en dispositivo: los artefactos permiten comparar 8da4w GPTQ (XNNPACK) frente a a16w8 (NeuroPilot) en términos de tamaño, ventana y precisión, aunque el autor no publica métricas de calidad.
 
 ## Benchmarks y rendimiento
 
-Los datos de rendimiento se han medido en un chip Dimensity 9400, con el modelo despierto y enfriado, usando la mediana de seis turnos sobre un prompt de 929 tokens. El limite de respuesta se fijo en 2048 tokens para GSM8K e IFEval, y en 640 tokens para BFCL.
-
-| Benchmark / metrica | Resultado | Condiciones |
-|---|---|---|
-| GSM8K | 26/30 | Limite de respuesta 2048 tokens, Dimensity 9400 |
-| IFEval | 21/30 | Limite de respuesta 2048 tokens, Dimensity 9400 |
-| BFCL | 24/30 | Limite de respuesta 640 tokens, Dimensity 9400 |
-| Velocidad de prefill | 149 tokens/s | Prompt de 929 tokens, Dimensity 9400 |
-| Velocidad de decode | 18,1 tokens/s | Prompt de 929 tokens, Dimensity 9400 |
-| Memoria residente tras carga | 2,94 GB | Dimensity 9400 |
-| KV cache | ~1049 MB | Ventana completa de 32k, 8 capas de atencion |
-
-El estudio de ventanas indica que, al comparar exportaciones de los mismos pesos con contextos de 2k, 4k, 8k y 16k, la ventana solo afecta a la memoria en carga; la velocidad se mantiene dentro de un 1% de la exportacion de 2k, porque el runtime solo atiende a posiciones rellenadas. A un limite de respuesta de 640 tokens, el modelo puntua 13/30 en GSM8K y 5/30 en IFEval, no por errores sino porque el limite corta el proceso de razonamiento.
+No se han publicado resultados de benchmarks en la información disponible. El único dato de validación es un smoke test que comprueba que las variantes XNNPACK generan la palabra "Paris" ante una entrada no especificada. Las variantes MediaTek solo han sido verificadas estructuralmente, sin runtime NPU en el host de exportación.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica, el modelo se ejecuta en CPU. La memoria residente tras la carga es de 2,94 GB en un Dimensity 9400, e incluye el KV cache de aproximadamente 1049 MB para la ventana completa.
-- GPU recomendadas: no aplica. El archivo no contiene delegates de GPU ni NPU; se ejecuta exclusivamente en CPU.
-- Compatibilidad con GPU de consumo: no aplica, al ser una exportacion para CPU ARM.
-- Opciones de despliegue: ExecuTorch 1.4.0 LLM runtime con backend XNNPACK y micro-kernels KleidiAI. El modelo esta pensado para la app OpenWeights en Android, que lee `config.json` para conocer la ventana antes de descargar.
-- Latencia y throughput: en un Dimensity 9400, prefill de 149 tokens/s y decode de 18,1 tokens/s. En otros chips ARM como Snapdragon 8 Elite, Tensor G5 o Exynos 2400, los resultados del estudio de ventanas sugieren variaciones dentro del mismo orden de magnitud, aunque no se proporcionan cifras exactas.
+- VRAM/RAM estimada: los artefactos XNNPACK ocupan entre 1,78 GB (2k) y 1,81 GB (32k) en disco; a ello se suma la caché KV reservada al cargar, que va de 67 MB (2k) a 1.073 MB (32k) en fp32.
+- Presupuesto de dispositivo: el autor estima un límite de 5 GB por teléfono (`fits_phone_budget` en cada `config.json`); las variantes de 32k se acercan a ese techo al sumar pesos y caché.
+- GPU recomendadas: no aplica; el backend XNNPACK es CPU arm64 y el backend MediaTek requiere la NPU del MT6991 (Dimensity 9400).
+- ¿Cabe en GPU de consumo? No es el objetivo del repositorio; no hay variantes CUDA ni Metal.
+- Opciones de despliegue: runtime ExecuTorch 1.4.0, aplicación openweights para Android, y el runner NeuroPilot de MediaTek para el backend NPU.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para comparar con alternativas de la misma categoria en el contexto de ejecucion movil. La referencia mas directa es el modelo base LiquidAI/LFM2.5-2.6B, del que esta exportacion solo modifica el empaquetado. En la busqueda web se indica que el modelo base es el mas rapido probado por Liquid AI, con velocidades de decode de 220 tokens/s en un M5 Max y 113 tokens/s en un Ryzen AI Max+ 395, pero estos datos corresponden al modelo sin exportacion y en hardware distinto.
-
-| Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-2.6B-ExecuTorch-XNNPACK-32k (este) | 2.6B | 32.768 tokens | int4 8da4w | .pte | lfm1.0 |
-| LiquidAI/LFM2.5-2.6B (base) | 2.6B | no disponible | no disponible | no disponible | lfm1.0 |
+| LFM2.5-2.6B-ExecuTorch-XNNPACK-32k (este) | 2,6B | 2k–32k (fijo por archivo) | `.pte` ExecuTorch | lfm1.0 | Hugging Face, 689 descargas |
+| LiquidAI/LFM2.5-2.6B (base) | 2,6B | no disponible | safetensors (presumible) | lfm1.0 | Hugging Face |
+| Alternativas de tamaño similar para dispositivo | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento comparativo entre este export y el modelo base ni con otras distribuciones on-device, por lo que la comparativa se limita a parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- El runtime de ExecuTorch 1.4.0 no solicita tokens especiales, por lo que la aplicacion debe escribir `<|startoftext|>` literalmente en el prompt. Sin este token, el modelo malinterpreta el prompt y cae en repeticiones. El token EOS es 124900.
-- El contexto de 32.768 tokens queda fijado en la exportacion y no puede modificarse en tiempo de ejecucion. Si se necesita una ventana menor, habria que reexportar el modelo.
-- El limite de respuesta es critico: con un presupuesto de 640 tokens, el rendimiento en GSM8K e IFEval cae drasticamente porque el modelo sigue en fase de razonamiento. Se recomienda un presupuesto de al menos 2048 tokens.
-- No hay soporte de GPU o NPU en este archivo; la inferencia se limita a CPU ARM. En dispositivos sin las extensiones i8mm y dotprod, el rendimiento puede ser significativamente menor.
-- La licencia LFM Open License 1.0 debe revisarse antes de cualquier uso comercial. No se especifican en la informacion disponible las restricciones exactas de la licencia.
-- Como cualquier modelo de lenguaje de 2.6B, existe riesgo de alucinacion. No se han documentado sesgos especificos, pero el comportamiento puede variar segun el dominio y el idioma, que no se ha especificado.
+- La licencia lfm1.0 ("other" en Hugging Face) impone condiciones específicas de LiquidAI; es necesario revisar el archivo `LICENSE` antes de cualquier uso comercial.
+- No hay información sobre sesgos, idiomas soportados ni calidad de alineación del modelo base en la documentación proporcionada.
+- Riesgo de alucinación inherente a un modelo de 2,6B; no se han publicado evaluaciones de fidelidad.
+- La ventana de contexto es fija por archivo y la caché KV se reserva completa al cargar, por lo que elegir una ventana grande reduce la memoria disponible para el resto de la aplicación.
+- Las variantes MediaTek no han sido probadas en runtime real (solo verificación estructural), lo que introduce incertidumbre sobre su funcionamiento en dispositivo.
+- El repositorio pesa 24,4 GB en total; la descarga completa no es necesaria si solo se usa una variante.
+- El smoke test se limita a una comprobación trivial ("Paris"); no garantiza calidad generativa.
+- No se especifican requisitos de versión mínima de Android ni de firmware MediaTek más allá de ExecuTorch 1.4.0.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch-XNNPACK-32k
+- Repositorio Hugging Face: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch-XNNPACK-32k
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
-- Licencia: https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/main/LICENSE
-- Estudio de ventanas: https://alpharomercoma.github.io/openweights/window.html
-- Repositorio OpenWeights: https://github.com/alpharomercoma/openweights
-- Implementacion PyTorch de LFM2.5: https://github.com/rishikksh20/lfm25-pytorch/
+- Aplicación openweights: https://github.com/alpharomercoma/openweights
+- ExecuTorch: no disponible en la información proporcionada (se cita la versión 1.4.0 sin enlace)
+- Paper, blog o demo del modelo base: no disponibles en la información proporcionada

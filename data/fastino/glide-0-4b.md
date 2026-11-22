@@ -2,99 +2,102 @@
 
 ## Resumen
 
-GLiDE-0.4B es un modelo de decisión (decision model) desarrollado por Fastino, distribuido en Hugging Face bajo el identificador `fastino/GLiDE-0.4B`. No es un modelo generativo: es un encoder de tipo ModernBERT con 394.781.696 parámetros (aproximadamente 0,40 B) que, dado un estado (texto o JSON) y una o varias preguntas tipadas, devuelve una distribución de probabilidad sobre cada opción de cada pregunta. Resuelve tareas de clasificación, enrutamiento y scoring sin generar texto, con una sola pasada forward por pregunta.
+GLiDE-0.4B es un modelo de decisión desarrollado por Fastino Labs, presentado en el paper arXiv:2611.26509 ("GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers"). No es un modelo generativo: es un encoder de arquitectura ModernBERT que, dado un estado (texto o JSON) y una o varias preguntas tipadas, devuelve una distribución de probabilidad sobre las opciones de cada pregunta en un único forward pass. Con 394.781.696 parámetros reales (0,39 B corresponden al encoder y 0,26 M a la cabeza de decisión), está pensado para tareas de clasificación, enrutamiento y puntuación donde la latencia y la calibración importan más que la generación libre.
 
-La propuesta diferencial es la eficiencia y la determinación: frente a un LLM generativo que produce etiquetas como texto, GLiDE lee directamente una cabeza de decisión de 255 vías y devuelve probabilidades calibradas para cada opción. Soporta tres tipos de pregunta: `choice` (una entre hasta 255 opciones nombradas), `noul` (sí/no, devuelve P(yes)) y `score` (niveles ordenados con nivel esperado). El modelo puntúa 51,10 en la suite pública Decision Index 0.3.1 y reporta una latencia mediana de 6,9 ms por petición en una RTX PRO 6000, con pesos en bf16.
+El modelo se distingue por tres decisiones de diseño: soporta tres tipos de pregunta (`choice` con hasta 255 opciones nombradas, `noul` con salida P(yes) y `score` con niveles ordenados), procesa todas las preguntas de una petición en micro-lotes compartidos y rechaza explícitamente entradas con imágenes. Su ventana de contexto es de 7.999 tokens por prompt de pregunta; si se excede, se conservan los primeros 1.024 tokens y el final (pregunta y opciones) para no perder la parte decisiva.
 
-Es relevante ahora porque cubre el hueco de los sistemas de decisión deterministas y de baja latencia en pipelines de agentes y automatización: enrutamiento de tickets, moderación, triaje o scoring estructurado donde un LLM generativo sería más caro, más lento y menos auditable. El modelo se sirve mediante el paquete `glide` incluido en el repositorio, con API Python y servidor HTTP compatible con el formato System One.
+La relevancia actual del modelo radica en su rendimiento medido: 51,10 en el Decision Index 0.3.1 con el kit oficial sobre una RTX PRO 6000, con una latencia mediana de 6,9 ms por petición en esa GPU. Con pesos en bf16 que ocupan 0,81 GB en disco y 0,79 GB en VRAM tras la carga (1,77 GB de pico en el test mixto), es desplegable en hardware de gama alta consumer y en entornos de servidor modestos. La licencia es `fastino-community`, no estándar, lo que exige revisión antes de uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer (ModernBERT), con cabeza de decisión de 255 vías |
-| Parametros totales | 394.781.696 (0,40 B; 0,39 B encoder, de los cuales 52 M son embeddings de tokens; 0,26 M de readout de decisión) |
+| Arquitectura | Encoder transformer (ModernBERT) con cabeza de decisión de 255 vías |
+| Parametros totales | 394.781.696 (0,40 B) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Hasta 7.999 tokens por prompt de pregunta (estado, pregunta y opciones); los prompts más largos se recortan conservando los primeros 1.024 tokens y el final |
-| Tipos de cuantizacion | No disponible (pesos y cómputo en bf16) |
+| Longitud de contexto | 7.999 tokens por prompt de pregunta; si se excede, se conservan los primeros 1.024 tokens y el final |
+| Tipos de cuantizacion | No disponible (los pesos se distribuyen y ejecutan en bf16) |
 | Idiomas soportados | No disponible |
-| Licencia | fastino-community (licencia `other`, enlace a LICENSE en el repo) |
-| Formato de pesos | safetensors (bf16, 0,81 GB en disco) |
+| Licencia | `fastino-community` (licencia "other", enlace en el repositorio) |
+| Formato de pesos | safetensors (bf16), 0,81 GB en disco |
 
 ## Arquitectura y entrenamiento
 
-GLiDE-0.4B es un encoder transformer basado en ModernBERT. La arquitectura se compone de un encoder de 0,39 B parámetros (con 52 M dedicados a embeddings de tokens) y una cabeza de decisión (readout) de 255 vías con solo 0,26 M parámetros. El modelo no genera tokens: cada pregunta se resuelve con una única pasada forward que produce probabilidades sobre las opciones disponibles. Las preguntas de una misma petición, y las de peticiones concurrentes, se agrupan en micro-lotes para su scoring conjunto.
+GLiDE-0.4B es un encoder ModernBERT de 0,39 B parámetros (de los cuales 52 M corresponden a embeddings de tokens) acoplado a una cabeza de decisión de 0,26 M parámetros que produce una lectura de 255 vías. Cada pregunta se resuelve en un único forward pass: el modelo no genera tokens, sino que lee probabilidades directamente de la cabeza de decisión. Las peticiones concurrentes y las múltiples preguntas de una misma petición se agrupan en micro-lotes para maximizar el uso de la GPU.
 
-El estado de entrada puede ser una cadena de texto o cualquier valor JSON, lo que permite alimentar estructuras como tickets, registros de cliente o payloads de API. El modelo no dispone de codificador de visión y rechaza peticiones con imágenes. No se han publicado en la información disponible detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La innovación técnica destacable es el esquema de decisión tipada con probabilidades por opción, que evita la generación autoregresiva y permite latencias de milisegundos.
+Según el título del paper, el modelo se destila a partir de "reasoning teachers" y está calibrado, es decir, sus probabilidades de salida están pensadas para ser interpretables como confianza real y no solo como ranking. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO; esa información no está disponible en el material proporcionado. La innovación técnica destacable es el readout de 255 opciones combinado con los tres tipos de pregunta tipada (`choice`, `noul`, `score`), que permite cubrir clasificación multiclase, binaria y ordinal con el mismo cabezal.
 
 ## Capacidades
 
-- Clasificación tipada con `choice`: selección de una opción entre hasta 255 alternativas nombradas, con probabilidad para cada una.
-- Decisión binaria con `noul`: devuelve P(yes) para preguntas de sí/no.
-- Scoring ordenado con `score`: asigna niveles ordenados y calcula el nivel esperado a partir de las probabilidades.
-- Entrada multimodad de estado: acepta texto plano o cualquier valor JSON (objetos, listas, estructuras anidadas).
-- Procesamiento por lotes: `decide_batch` puntúa varias peticiones conjuntamente y devuelve un resultado por petición.
-- Servidor HTTP con formato System One (`POST /v1/systemone`) y endpoint `/health`.
-- Sin capacidad de generación de texto, visión, audio ni tool calling: es un modelo de decisión, no un LLM generativo.
-- Soporte multilingüe: no disponible en la información proporcionada.
+- Clasificación tipada con hasta 255 opciones nombradas por pregunta (`choice`), devolviendo probabilidad para cada opción y la opción ganadora con su confianza.
+- Decisión binaria (`noul`) que devuelve P(yes) y una medida de confianza derivada.
+- Puntuación ordinal (`score`) sobre niveles ordenados, con nivel predicho, nivel esperado y distribución de probabilidad por nivel.
+- Entrada multimodal de estado: acepta tanto cadenas de texto como cualquier valor JSON (objetos, listas, anidamientos), lo que facilita pasar tickets, registros o payloads estructurados.
+- Procesamiento por lotes: `decide_batch` puntúa varias peticiones juntas y devuelve un resultado por petición, con errores aislados por petición (`glide.RequestError`).
+- Servidor HTTP compatible con el formato System One (`POST /v1/systemone`), además de API Python.
+- No soporta tool calling, function calling, agentes multi-paso, visión ni audio: es un modelo de decisión de un solo paso y rechaza peticiones con imágenes.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket y metadatos del cliente como estado JSON y devuelve la intención (`refund`, `cancel`, `track`, `other`) con probabilidades, lo que permite dirigir cada caso al equipo adecuado con una latencia de milisegundos.
-- Triaje y priorización: combinando preguntas `noul` (¿debe escalarse hoy?) y `score` (prioridad baja/media/alta), se obtiene una puntuación de urgencia auditable y calibrada para colas de atención.
-- Moderación de contenido: clasificación de textos o payloads en categorías de riesgo mediante preguntas `choice`, con distribución de probabilidad que permite fijar umbrales de revisión humana.
-- Scoring estructurado en pipelines de datos: evaluación de registros JSON (por ejemplo, calidad de leads o elegibilidad de solicitudes) con niveles ordenados y nivel esperado, integrable en procesos ETL.
-- Decisión dentro de agentes: el modelo actúa como componente de enrutamiento o selección de herramienta en un sistema multi-agente, resolviendo qué acción tomar a partir del estado de la conversación sin coste de generación.
-- Clasificación de intenciones en asistentes conversacionales: determinación de la intención del usuario en cada turno con contexto de hasta 7.999 tokens, adecuada para conversaciones multi-turno con historial largo.
-- Automatización de back-office: categorización de documentos o correos en flujos de aprobación, con salida probabilística que permite derivar casos ambiguos a revisión manual.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket y metadatos como `customer_tier` en JSON y devuelve en una sola pasada la intención (`refund`, `cancel`, `track`, `other`), la urgencia binaria y la prioridad ordinal. La latencia de 6,9 ms permite enrutar en línea sin cola perceptible.
+- Moderación y clasificación de contenido: con la pregunta `choice` de hasta 255 opciones se pueden definir taxonomías finas de categorías de contenido y obtener la distribución completa, útil para umbrales ajustables en producción.
+- Puntuación de leads y riesgo: usando `score` con niveles ordenados (por ejemplo, bajo/medio/alto) y `expected_level`, se obtiene una señal calibrada y ordenada que se integra directamente en reglas de negocio o en un scoring posterior.
+- Extracción de decisiones sobre JSON estructurado: al aceptar cualquier valor JSON como estado, encaja en pipelines que ya trabajan con registros (pedidos, facturas, eventos) sin necesidad de serializar a texto plano previamente.
+- Clasificación por lotes en backoffice: `decide_batch` permite procesar grandes volúmenes de registros históricos en micro-lotes compartidos, con un pico de 1,77 GB de VRAM en el test mixto, lo que abarata el reprocesamiento masivo.
+- Enrutamiento en agentes y sistemas multi-modelo: el modelo puede actuar como "portero" que decide a qué modelo grande o herramienta derivar cada petición, aprovechando su coste bajo y su latencia de milisegundos frente a un LLM generativo.
+- Filtrado previo en pipelines RAG: decidir si una consulta requiere recuperación, si es respondible con caché o si debe escalar a un humano, con probabilidades interpretables para fijar umbrales.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Condiciones |
+| Benchmark | Resultado | Contexto de medida |
 |---|---|---|
-| Decision Index 0.3.1 (suite pública) | 51,10 | Medido con el kit oficial en una RTX PRO 6000, pesos bf16 |
-| Latencia mediana por petición | 6,9 ms | RTX PRO 6000, mezcla de peticiones del test de latencia |
+| Decision Index 0.3.1 (suite pública) | 51,10 | Kit oficial, 1× RTX PRO 6000 |
+| Latencia mediana por petición | 6,9 ms | RTX PRO 6000, peticiones mixtas del test |
+| VRAM tras carga | 0,79 GB | Pesos bf16 |
+| VRAM pico (test mixto) | 1,77 GB | Peticiones mixtas concurrentes |
+| Tiempo de carga | 16 s | Desde almacenamiento en red |
 
-No se han publicado en la información disponible resultados de benchmarks estándar de NLP (MMLU, HumanEval, GSM8K u otros) para este modelo.
+No se han publicado en la información disponible resultados de benchmarks estándar tipo MMLU, HumanEval o GSM8K, ni comparaciones numéricas con modelos alternativos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 0,79 GB tras la carga; 1,77 GB de pico con la mezcla de peticiones del test de latencia.
-- Pesos en disco: 0,81 GB en bf16.
-- GPU probada: NVIDIA RTX PRO 6000 Blackwell Server Edition (96 GB).
-- Cabe holgadamente en GPU de consumo: cualquier GPU con al menos 2 GB de VRAM libre puede ejecutarlo en bf16 (por ejemplo, RTX 3060, RTX 4060, RTX 4090).
-- Tiempo de carga: 16 s desde almacenamiento en red; los pesos se copian a la GPU tensor a tensor, manteniendo bajo el uso de memoria host.
-- Opciones de despliegue: paquete `glide` incluido en el repositorio (API Python y servidor HTTP con `uvicorn glide.server:app` o `python -m glide.server`); compatible con `transformers` 5.17.0 y `torch` 2.14.0 (ruedas CUDA 13.0), Python 3.12.
-- Alternativa gestionada: API alojada de Fastino (`POST https://api.fastino.ai/v1/systemone`, modelo `fastino/GLiDE`).
-- Throughput: no disponible; la latencia reportada es de 6,9 ms medianos por petición en RTX PRO 6000.
+- VRAM estimada: 0,79 GB tras la carga en bf16 y 1,77 GB de pico en el test mixto publicado; el repo ocupa 0,81 GB en disco.
+- GPU probada oficialmente: NVIDIA RTX PRO 6000 Blackwell Server Edition (96 GB), con 6,9 ms de latencia mediana por petición.
+- Cabe holgadamente en GPU consumer: cualquier tarjeta con 4 GB o más de VRAM debería alojar los pesos y el pico documentado; no se han publicado medidas en RTX 4090, RTX 3090 u otras consumer.
+- Despliegue: paquete `glide` incluido en el repositorio (API Python y servidor HTTP con formato System One en `POST /v1/systemone`), más la API hospedada de Fastino (`POST https://api.fastino.ai/v1/systemone`, modelo `fastino/GLiDE`).
+- Dependencias probadas: Python 3.12, `torch==2.14.0` (wheels CUDA 13.0) y `transformers==5.17.0`; el pin de `flash-linear-attention` no se usa en este modelo y puede omitirse.
+- No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; el serving oficial es el paquete `glide` o la API de Fastino.
+- Throughput: no disponible más allá de la latencia mediana por petición.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiDE-0.4B (Fastino) | 0,40 B | 7.999 tokens por pregunta | Encoder de decisión con readout de 255 vías | fastino-community | Hugging Face y API Fastino |
-| LLM generativo pequeño (p. ej. clase 0,5-1 B) | ~0,5-1 B | Variable según modelo | Generación autoregresiva con etiquetas en texto | Variable | Hugging Face |
-| Clasificador BERT clásico | ~0,1-0,3 B | Típicamente 512 tokens | Clasificación con cabeza fija por tarea | Variable | Hugging Face |
+| GLiDE-0.4B | 0,40 B | 7.999 tokens por pregunta | Encoder de decisión (no generativo) | `fastino-community` | Hugging Face + API Fastino |
+| Alternativas de clasificación tipo BERT | No disponible | No disponible | Encoder de clasificación | No disponible | No disponible |
+| LLMs generativos pequeños para clasificación | No disponible | No disponible | Decoder generativo | No disponible | No disponible |
 
-No se dispone en la información proporcionada de resultados comparativos directos con alternativas concretas; la comparación anterior es categórica y no incluye cifras de rendimiento de terceros.
+No se dispone en la información proporcionada de resultados de benchmarks ni de especificaciones de modelos comparables de la misma categoría, por lo que la comparación numérica no está disponible. La diferencia cualitativa frente a un LLM generativo es que GLiDE no genera texto: devuelve probabilidades calibradas en un solo forward pass, con latencia de milisegundos y sin coste de decodificación.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre, código ni razonamiento en lenguaje natural; solo devuelve probabilidades sobre opciones predefinidas.
-- Sin codificador de visión: las peticiones con imágenes se rechazan.
-- Límite de contexto de 7.999 tokens por prompt de pregunta; los prompts más largos se recortan conservando los primeros 1.024 tokens y el final, lo que puede perder información intermedia.
-- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe equilibrado.
-- Riesgo de calibración y sesgo: al ser un clasificador, las probabilidades pueden reflejar sesgos del dataset de entrenamiento; no se han publicado detalles sobre la composición de los datos ni evaluaciones de sesgo.
-- Licencia `fastino-community` (categoría `other`): es necesario revisar el texto de la licencia en el repositorio antes de un uso comercial; no se confirma aquí si permite uso comercial sin restricciones.
-- Dependencia de versiones concretas: probado con Python 3.12, `torch` 2.14.0 y `transformers` 5.17.0; otras combinaciones no están validadas.
-- Sin datos publicados de benchmarks estándar de NLP, lo que dificulta la comparación con modelos generativos en tareas de razonamiento o conocimiento.
-- Para producción, conviene monitorizar la confianza devuelta y derivar a revisión humana los casos con distribuciones planas.
+- No es un modelo generativo: no produce texto libre, solo probabilidades sobre opciones predefinidas; no sirve para resúmenes, redacción ni diálogo abierto.
+- No soporta tool calling, function calling, agentes multi-paso, visión ni audio; las peticiones con imágenes se rechazan explícitamente.
+- Contexto limitado a 7.999 tokens por pregunta; al excederse se trunca conservando solo los primeros 1.024 tokens y el final, lo que puede eliminar información intermedia relevante.
+- Idiomas soportados no documentados: no hay garantía publicada de rendimiento multilingüe más allá de lo que indique el paper.
+- Licencia `fastino-community` (categoría "other"): es necesario revisar el archivo LICENSE del repositorio antes de cualquier uso comercial; no es una licencia open source estándar.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de calibración deficiente fuera de la distribución de entrenamiento; la confianza devuelta debe validarse en el dominio concreto antes de fijar umbrales en producción.
+- Sesgos conocidos: no documentados en la información disponible.
+- El rendimiento publicado (51,10 en Decision Index 0.3.1 y 6,9 ms) se midió en una única GPU (RTX PRO 6000); no hay datos de latencia o throughput en otras GPU.
+- Dependencias muy específicas (`torch==2.14.0`, `transformers==5.17.0`) que pueden complicar la integración en stacks existentes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/fastino/GLiDE-0.4B
-- Licencia: https://huggingface.co/fastino/GLiDE/blob/main/LICENSE
-- Proveedor (Fastino): https://fastino.ai
+- Paper: https://arxiv.org/abs/2611.26509
+- Licencia: https://huggingface.co/fastino/GLiDE-0.4B/blob/main/LICENSE
+- Web de Fastino: https://fastino.ai
 - Documentación de la API de inferencia: https://docs.fastino.ai/inference/systemone
 - Quickstart de la API: https://docs.fastino.ai/quickstart
-- Creación de cuenta y API key: https://agent.fastino.ai
+- Alta y API key: https://agent.fastino.ai

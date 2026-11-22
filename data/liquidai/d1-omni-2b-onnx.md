@@ -2,110 +2,90 @@
 
 ## Resumen
 
-d1-Omni-2B-ONNX es la versión en formato ONNX de d1-Omni-2B, un modelo multimodal de aproximadamente 2.000 millones de parámetros desarrollado por Liquid AI, empresa estadounidense surgida del MIT que construye los Liquid Foundation Models (LFM). El modelo original forma parte de la familia que el autor etiqueta como lfm3_omni y cubre la tarea audio-text-to-text: recibe audio (y, según la estructura de ficheros, también imagen) y genera texto. Esta variante concreta no aporta pesos nuevos, sino una conversión a ONNX Runtime pensada para inferencia multiplataforma fuera del ecosistema PyTorch.
+d1-Omni-2B-ONNX es la distribucion en formato ONNX del modelo multimodal d1-Omni-2B de Liquid AI, disenado para inferencia multiplataforma mediante ONNX Runtime. El modelo original combina un decodificador de lenguaje de 2B parametros con un codificador de vision y un codificador de audio, lo que le permite procesar entradas de texto, imagen y audio de forma conjunta. Esta version ONNX empaqueta cada precision (q4, q8) con sus codificadores correspondientes, facilitando el despliegue en CPU y entornos sin dependencias de frameworks de deep learning pesados.
 
-La relevancia de este repositorio es de despliegue: separa el modelo en tres grafos independientes (decoder, vision_encoder y audio_encoder) y ofrece cuatro combinaciones de precisión con tamanos de descarga de entre 2,20 GB y 3,02 GB, lo que permite ejecutar el sistema completo en CPU o en GPU de gama baja. Frente al repositorio original, aqui el objetivo no es entrenar ni afinar, sino servir el modelo en entornos donde ONNX Runtime es el runtime disponible: aplicaciones de escritorio, edge, movil o backends con requisitos estrictos de portabilidad.
+El modelo pertenece a la familia LFM3 (Liquid Foundation Models, tercera generacion) y se distribuye bajo la licencia LFM 1.0, que impone restricciones para uso comercial. Soporta 16 idiomas, entre ellos el espanol, el ingles, el chino, el arabe y el hindi, y esta etiquetado para la tarea audio-text-to-text, lo que lo situa en el nicho de modelos omni de pequeno tamano que aceptan audio e imagen ademas de texto.
 
-La informacion publica de esta ficha es limitada: la model card remite a la del modelo base para arquitectura y uso, y no se han publicado en el material disponible ni la longitud de contexto, ni los detalles del entrenamiento, ni resultados de benchmarks. Cualquier evaluacion cuantitativa del modelo debe hacerse contra d1-Omni-2B directamente.
+Su relevancia actual radica en que ofrece capacidades multimodales (audio y vision) en un paquete de 2B parametros con versiones cuantizadas que caben en CPU y GPUs de consumo, algo poco habitual en modelos omni. La version ONNX amplia el alcance a dispositivos edge, navegadores y entornos Windows/Linux sin GPU dedicada, a costa de una posible perdida de rendimiento frente a los pesos originales en safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle; modelo multimodal compuesto por decoder, vision encoder y audio encoder (etiquetas del autor: lfm3_omni, liquid, lfm3) |
-| Parametros totales | ~2B (deducido de la denominacion d1-Omni-2B); desglose por modulo no disponible |
-| Parametros activos | No disponible; no consta que sea un modelo MoE |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | q4, q8, q4f16, q8f16 (grafo ONNX) |
-| Idiomas soportados | 16: en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
-| Licencia | lfm1.0 (declarada como `license: other` con `license_name: lfm1.0`) |
-| Formato de pesos | ONNX (decoder, vision_encoder y audio_encoder como grafos separados) |
-| Pipeline | audio-text-to-text |
-| Runtime / libreria | onnxruntime |
-| Tamanos por precision | q4: 2,45 GB (CPU); q8: 3,02 GB (CPU); q4f16: 2,20 GB (GPU); q8f16: no disponible (listado truncado en la informacion recibida) |
-| Encoders por precision | q4 usa vision_encoder_q8 + audio_encoder; q8 usa vision_encoder_fp16 + audio_encoder; q4f16 usa vision_encoder_fp16 + audio_encoder_fp16 |
-| Tamano del repositorio | 20,1 GB |
-| Modelo base | LiquidAI/d1-Omni-2B (relacion: quantized) |
-| Descargas / likes | 31 descargas, 5 likes |
-| Fecha de creacion / actualizacion | 27 de octubre de 2026 / 28 de octubre de 2026 |
+| Arquitectura | no disponible (familia LFM3 con decodificador de lenguaje, codificador de vision y codificador de audio) |
+| Parametros totales | 2B (decodificador) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | q4 (decoder_q4 + vision_encoder_q8 + audio_encoder), q8 (decoder_q8 + vision_encoder_q8 + audio_encoder) |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
+| Licencia | lfm1.0 (other) |
+| Formato de pesos | ONNX (onnxruntime) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna. Lo que si se deduce del repositorio es la organizacion en tres componentes: un decoder (el modelo de lenguaje que genera texto), un encoder de vision y un encoder de audio. Cada precision publicada empareja un decoder con una combinacion concreta de encoders, de modo que q4 y q8 estan pensados para CPU (encoders en q8 o fp16, decoder en q4 o q8) y q4f16/q8f16 para GPU (encoders en fp16). Las etiquetas del autor remiten a la familia LFM3, cuyos modelos se describen publicamente como foundation models eficientes para ejecucion en dispositivo, edge y nube, aunque esta ficha no puede confirmar detalles de atencion, capas ni tokenizador.
+La model card de esta version ONNX no detalla la arquitectura interna ni el proceso de entrenamiento; remite a la model card del modelo base LiquidAI/d1-Omni-2B para esos datos. Por la estructura de ficheros publicada, se deduce un diseno modular con tres componentes: un decodificador de lenguaje de 2B parametros (decoder_q4 o decoder_q8), un codificador de vision (vision_encoder_q8) y un codificador de audio (audio_encoder). Cada precision empaqueta los tres componentes, lo que confirma que el modelo procesa imagenes y audio ademas de texto.
 
-Tampoco hay datos sobre el entrenamiento: no se indica el numero de tokens, la composicion del corpus, ni si hubo etapas de RLHF o DPO. La model card de esta variante ONNX es puramente de despliegue y delega explicitamente en la del modelo base para "architecture and usage details". En consecuencia, cualquier afirmacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento) seria especulativa y no se incluye aqui.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o decodificacion especulativa. La etiqueta base_model:quantized y el tag lfm3_omni sugieren que el modelo original emplea la arquitectura LFM3 en su variante omni, pero los detalles tecnicos concretos (tipo de atencion, innovaciones de eficiencia) no estan disponibles en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto a partir de audio: la tarea declarada del pipeline es audio-text-to-text, es decir, transcripcion, comprension de habla y respuesta en lenguaje natural.
-- Procesamiento de imagen: el repositorio incluye un vision_encoder dedicado, por lo que el sistema esta preparado para entradas visuales ademas de audio.
-- Entrada multimodal combinada: la separacion en encoders independientes permite alimentar audio e imagen en la misma peticion, segun la logica de integracion del modelo base.
-- Multilinguismo: 16 idiomas declarados, con espanol incluido (en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl).
-- Inferencia multiplataforma: al estar en ONNX, el mismo grafo puede ejecutarse en CPU x86/ARM, GPU y otros backends compatibles con ONNX Runtime.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking, salida de audio o TTS: no disponible en la informacion proporcionada.
+- Generacion de texto condicionada por audio: el pipeline audio-text-to-text permite transcribir, describir o razonar sobre contenido hablado.
+- Procesamiento de audio: el codificador de audio integrado permite tareas de comprension de voz, clasificacion de audio y respuesta a preguntas sobre audio.
+- Procesamiento de vision: el codificador de vision q8 permite describir imagenes, responder preguntas visuales y extraer informacion de documentos escaneados.
+- Capacidades multilingues en 16 idiomas, incluidos espanol, ingles, chino, arabe, hindi, japones, coreano, portugues, frances, aleman, italiano, vietnamita, tailandes, indonesio, ruso y polaco.
+- Inferencia multiplataforma mediante ONNX Runtime, con soporte para CPU y aceleracion opcional por GPU segun el proveedor de ejecucion.
+- No se especifica soporte de tool calling, function calling ni modos de razonamiento multi-paso en la informacion disponible.
 
 ## Casos de uso
 
-- Transcripcion y comprension de audio en local: el modelo puede ejecutarse integramente en el dispositivo mediante ONNX Runtime, sin enviar el audio a un servicio externo, lo que resulta adecuado para entornos con requisitos de privacidad (sanidad, legal, administracion publica).
-- Asistentes de voz en aplicaciones de escritorio o moviles: con un decoder q4 de 2,45 GB y encoders en CPU, es viable empaquetar un asistente de voz dentro de una aplicacion nativa distribuida a usuarios finales, sin dependencia de una GPU.
-- Subtitulado y resumen de reuniones: el encoder de audio mas el decoder permiten transcribir y condensar conversaciones; el caracter multilingue (16 idiomas, incluido espanol) cubre reuniones con participantes internacionales.
-- Accesibilidad: descripcion de contenido audiovisual o conversion de voz a texto con respuesta contextual para personas con discapacidad auditiva o visual, ejecutandose en hardware de bajo coste.
-- Procesamiento por lotes en CPU en pipelines ETL: al no requerir GPU en las variantes q4 y q8, se pueden levantar varios workers ONNX Runtime en servidores convencionales para procesar grandes volumenes de audio de forma asincrona.
-- Analisis de video vigilancia o inspeccion industrial: la combinacion de vision encoder y decoder permite generar descripciones textuales de fotogramas o secuencias, con el audio como canal complementario de anotacion.
-- Despliegue en entornos air-gapped o industriales: al ser un artefacto ONNX autocontenido, encaja en instalaciones sin acceso a repositorios de modelos Python ni a servicios en la nube.
-- Prototipado rapido de producto multimodal: el reducido tamano (2,20-3,02 GB) permite iterar en portatiles antes de escalar al modelo original o a la API de Liquid AI.
+- Transcripcion y comprension de audio en local: el modelo puede procesar audio y generar texto descriptivo o respuestas sin enviar datos a la nube, adecuado para aplicaciones de privacidad (reuniones, consultas medicas) gracias a su empaquetado ONNX ejecutable en CPU.
+- Asistentes de accesibilidad: combinando audio y vision, el modelo puede describir escenas o leer documentos a usuarios con discapacidad visual, desplegado en dispositivos de bajo consumo mediante la version q4 de 2.45 GB.
+- Analisis de llamadas de atencion al cliente: el modelo puede resumir o clasificar conversaciones de audio grabadas, ejecutandose en servidores sin GPU dedicada con ONNX Runtime.
+- Procesamiento de documentos escaneados con audio adjunto: en entornos de digitalizacion, el modelo puede correlacionar una imagen de documento con una nota de voz asociada y generar un resumen unificado.
+- Moderacion de contenido multimedia: clasificacion de audio e imagen en pipelines de moderacion, aprovechando la cuantizacion q4 para reducir costes de infraestructura en CPU.
+- Prototipado rapido en entornos edge: desarrolladores que necesitan validar ideas multimodales en Raspberry Pi, portatiles o navegadores pueden usar la version ONNX sin configurar CUDA ni instalar PyTorch.
+- Aplicaciones multilingues de voz: traduccion o resumen de audio en cualquiera de los 16 idiomas soportados, con despliegue en infraestructura CPU-only.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta variante ONNX no incluye metricas de calidad (MMLU, HumanEval, GSM8K, WER de ASR u otras) ni comparaciones con modelos de referencia, y remite al modelo base para cualquier dato de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con la variante q4f16 (2,20 GB de pesos en disco) el modelo cabe en GPUs con 4 GB o mas de memoria; conviene reservar margen adicional para el contexto, el estado de atencion y las activaciones.
-- Variantes para CPU: q4 (2,45 GB) y q8 (3,02 GB) estan etiquetadas por el autor como destino CPU; con 8 GB de RAM es razonable ejecutar q4, y con 16 GB, q8.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, la variante q4f16 es apta para RTX 3050/4060 y superiores; el salto a A100/H100 solo tendria sentido por concurrencia y throughput, no por capacidad de encaje.
-- Cabe en GPU de consumo: si, la variante q4f16 (2,20 GB) entra en cualquier GPU consumer moderna con 4-8 GB de VRAM.
-- Opciones de despliegue: ONNX Runtime es el runtime oficial de este repositorio. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI para esta conversion; habria que consultar el modelo base. Los ficheros se descargan individualmente desde el repositorio (20,1 GB en total, incluyendo todas las precisiones).
-- Latencia y throughput: no disponibles en la informacion proporcionada.
-- Almacenamiento: el repositorio completo ocupa 20,1 GB; para un despliegue concreto basta con descargar el decoder y los encoders de la precision elegida (2,20-3,02 GB).
+- VRAM/RAM estimada: la version q4 ocupa 2.45 GB en disco (decoder_q4 + vision_encoder_q8 + audio_encoder), por lo que requiere al menos 3-4 GB de RAM para inferencia en CPU. La version q8 es de mayor tamano (el repositorio completo suma 20.1 GB, incluyendo todas las precisiones).
+- GPU recomendadas: no se especifican. Al ser ONNX, puede ejecutarse con proveedores de ejecucion CUDA o DirectML en GPUs como RTX 4090, A100 o H100, pero no hay datos de rendimiento publicados.
+- Cabe en GPU de consumo: si, la version q4 deberia caber en GPUs con 4 GB o mas de VRAM (GTX 1650, RTX 3050, etc.), aunque no se confirma oficialmente.
+- Opciones de despliegue: ONNX Runtime (CPU, CUDA, DirectML, TensorRT), integrable en aplicaciones Python, C++, C# o JavaScript. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas no se han verificado en esta busqueda y se ofrecen solo como orientacion de categoria; las celdas sin confirmacion se marcan como no disponibles.
-
-| Modelo | Parametros | Contexto | Licencia | Formato / despliegue | Notas |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Formato |
 |---|---|---|---|---|---|
-| d1-Omni-2B-ONNX (este) | ~2B | No disponible | lfm1.0 | ONNX (q4, q8, q4f16, q8f16) | Encoders de vision y audio separados; 16 idiomas |
-| d1-Omni-2B | ~2B | No disponible | lfm1.0 | Pesos originales (no confirmado) | Modelo base del que deriva esta conversion |
-| Qwen2.5-Omni-3B | 3B | No disponible en esta ficha | Apache-2.0 | No disponible | Alternativa multimodal audio/texto de mayor tamano |
-| MiniCPM-o 2.6 | ~8B | No disponible en esta ficha | No disponible | No disponible | Orientado a entrada de audio, imagen y video |
-| Gemma 3n | No disponible | No disponible | No disponible | No disponible | Familia con soporte de audio e imagen en dispositivo |
+| d1-Omni-2B-ONNX | 2B | no disponible | texto, audio, vision | lfm1.0 (restrictiva) | ONNX |
+| Qwen2-Audio-7B | 7B | no disponible | texto, audio | Apache 2.0 (segun version) | safetensors, GGUF |
+| MiniCPM-o 2.6 | 8B | no disponible | texto, audio, vision | no disponible | safetensors |
+| Phi-4-multimodal | 5.6B | no disponible | texto, audio, vision | MIT (segun version) | safetensors |
 
-La comparacion relevante en terminos de despliegue no es de calidad sino de empaquetado: d1-Omni-2B-ONNX es de los pocos modelos multimodales de esta categoria publicados con grafos ONNX separados y cuantizaciones listas para CPU, lo que reduce la friccion de integracion frente a alternativas que solo distribuyen pesos en safetensors.
+La comparativa se ofrece como referencia de categoria (modelos omni de menos de 10B); los datos de contexto y rendimiento de los alternativos no se han verificado en la informacion proporcionada y deben consultarse en sus respectivas model cards. La principal ventaja de d1-Omni-2B-ONNX es su menor tamano (2B) y su empaquetado ONNX listo para CPU, mientras que sus competidores ofrecen licencias mas permisivas.
 
 ## Limitaciones y advertencias
 
-- Ausencia de datos de evaluacion: no hay benchmarks publicados en la informacion disponible, por lo que la calidad real en ASR, comprension audiovisual o generacion multilingue no puede contrastarse.
-- Contexto desconocido: se desconoce la ventana de contexto, lo que impide planificar conversaciones multi-turno largas o procesar audios de duracion extensa sin pruebas previas.
-- Riesgo de alucinacion: como cualquier modelo generativo, el decoder puede producir texto plausible pero incorrecto, especialmente en audio con ruido, acentos no cubiertos o idiomas de bajos recursos dentro de los 16 declarados.
-- Idiomas: los 16 idiomas estan declarados por el autor, pero no se especifica el soporte relativo de cada uno; el rendimiento en hindi, tailandes, vietnamita o indonesio puede ser inferior al de ingles.
-- Licencia lfm1.0: al estar declarada como `license: other` con nombre propio, es imprescindible leer el fichero LICENSE del repositorio antes de cualquier uso comercial; no se asume permisividad tipo Apache-2.0 o MIT.
-- Artefacto derivado: es una cuantizacion del modelo base, de modo que hereda sus sesgos y anade la posible perdida de calidad de la cuantizacion q4 (decoder q4 y q4f16).
-- Documentacion incompleta en este repositorio: la model card no detalla la API de inferencia, el preprocesado de audio (sample rate, formato) ni el tokenizador; hay que consultar el repositorio del modelo base.
-- Soporte de herramientas limitado: no se confirma compatibilidad con ecosistemas como transformers, vLLM o llama.cpp para estos grafos ONNX.
-- Fechas del repositorio: creado y actualizado en octubre de 2026, con solo 31 descargas y 5 likes, lo que implica poca validacion por parte de la comunidad.
+- Licencia LFM 1.0: no es una licencia open source estandar; impone restricciones para uso comercial que deben revisarse antes de desplegar en produccion.
+- No se dispone de informacion sobre sesgos, tasas de alucinacion ni evaluaciones de robustez del modelo.
+- La longitud de contexto no esta documentada, lo que dificulta planificar casos de uso con entradas largas de audio o multiples imagenes.
+- El rendimiento de la version ONNX puede diferir del modelo original en safetensors; no se han publicado comparativas de calidad entre ambas.
+- El modelo es de 2B parametros, por lo que su capacidad de razonamiento complejo y conocimiento factual sera limitada en comparacion con modelos de mayor tamano.
+- No se confirma soporte de tool calling ni de agentes, lo que restringe su uso en pipelines automatizados que requieran invocacion de funciones.
+- El repositorio ocupa 20.1 GB por incluir multiples precisiones; el despliegue debe seleccionar solo los ficheros necesarios para evitar descargas innecesarias.
+- La fecha de creacion (2026-10-27) y el bajo numero de descargas (683) sugieren un modelo reciente con poca validacion comunitaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/d1-Omni-2B
-- Blog de presentacion de d1: https://www.liquid.ai/blog/open-d1
+- Blog de Liquid AI sobre d1: https://www.liquid.ai/blog/open-d1
 - Documentacion de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
-- Consola / API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- Sitio de Liquid AI: https://www.liquid.ai/
-- Pagina de modelos: https://www.liquid.ai/models
-- Organizacion en Hugging Face: https://huggingface.co/LiquidAI
-- Wikipedia: https://en.wikipedia.org/wiki/Liquid_AI
+- Consola/API: https://console.liquid.ai/dashboard
+- Licencia LFM 1.0: https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/blob/main/LICENSE

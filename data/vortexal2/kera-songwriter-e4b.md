@@ -2,54 +2,51 @@
 
 ## Resumen
 
-Kera Songwriter (Gemma 4 E4B) es un adaptador LoRA de pequeñas dimensiones (38,6 millones de parámetros entrenables) publicado por el usuario Vortexal2 sobre el modelo base `google/gemma-4-E4B-it`. Su función es transformar una petición breve en lenguaje natural ("una balada triste de piano sobre dejar el hogar") en un plan estructurado completo para un generador de música por IA: etiquetas de estilo, descripción vocal, tempo, tonalidad, compás, duración, desglose sección por sección con niveles de energía y una letra original que encaja con el plan.
+Kera Songwriter es un ajuste fino (fine-tune) del modelo multimodal Gemma 4 E4B it de Google DeepMind, desarrollado por Vortexal2 y publicado bajo el identificador `Vortexal2/kera-songwriter-e4b`. Su proposito es convertir una peticion breve en lenguaje natural (por ejemplo, "synth-pop sonador sobre conducir a casa a las 3 de la manana, voz femenina, build lento") en un paquete completo de planificacion musical: etiquetas de estilo, tipo de voz, tempo, tonalidad, compas, duracion, un plan seccion a seccion con niveles de energia y letras originales. Esta pensado como capa de preproduccion para generadores de musica por IA.
 
-El adaptador está pensado para modelos de música tipo ACE-Step 1.5, donde la calidad de las etiquetas de estilo y la forma de la letra determinan la mayor parte del resultado final. La salida es texto plano estructurado, por lo que también sirve como punto de partida para cualquier otro generador. El modelo solo escribe letras originales: según el autor, no se le mostraron letras de canciones reales durante el entrenamiento.
+El modelo parte de la arquitectura Gemma 4 E4B it, con aproximadamente 8.000 millones de parametros totales segun los pesos safetensors del repositorio (7.996.156.490). El ajuste se realizo mediante LoRA (rango 16, alpha 32) durante 7.000 pasos sobre una DGX Spark, y los pesos resultantes se fusionaron en el modelo publicado. El repositorio ocupa 44,7 GB e incluye pesos en safetensors (unos 16 GB), cuantizaciones GGUF en BF16, Q8_0 y Q4_K_M, y el adaptador LoRA aislado de 77 MB.
 
-Es relevante porque cubre un nicho muy concreto (planificación de canciones para text-to-music) con un coste de despliegue mínimo: al ser un LoRA sobre un modelo pequeño, se puede ejecutar en hardware de consumo con llama.cpp y cuantización Q4_K_M, y se distribuye con licencia Apache 2.0. El repositorio es de noviembre de 2026, con 0 descargas y 0 likes en el momento de la consulta.
+La relevancia actual reside en su especializacion: no es un modelo generalista, sino una herramienta de dominio acotado que estandariza la salida en bloques (`TAGS`, `VOCAL`, `BPM · KEY · TIME · LENGTH`, `PLAN`, `BRIEF`, `LYRICS`) facilmente parseables por un pipeline de generacion musical. Su licencia Apache 2.0 y la disponibilidad de GGUF lo hacen desplegable en hardware de consumo, aunque su soporte linguistico se limita al ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre transformer decoder-only (base: google/gemma-4-E4B-it) |
-| Parametros totales | 38.666.240 (solo el adaptador LoRA; el modelo base no se incluye en el repo) |
+| Arquitectura | Transformer multimodal derivado de Gemma 4 E4B it (image-text-to-text); fine-tune LoRA fusionado |
+| Parametros totales | 7.996.156.490 (aprox. 8B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible en la model card; los ejemplos de despliegue usan `-c 16384` |
-| Tipos de cuantizacion | LoRA en GGUF (probado sobre Q4_K_M del base) y safetensors en bfloat16 para PEFT |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (adapter_model.safetensors) y GGUF (kera-songwriter-e4b-lora.gguf) |
+| Longitud de contexto | 16.384 tokens (valor recomendado en los ejemplos de despliegue con `-c 16384`) |
+| Tipos de cuantizacion | BF16 (GGUF, 15 GB), Q8_0 (GGUF, 8,0 GB), Q4_K_M (GGUF, 5,3 GB), safetensors en bfloat16 (16 GB) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, GGUF, adaptador LoRA (PEFT) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA estándar de PEFT sobre el modelo Gemma 4 E4B en su variante instruct (`google/gemma-4-E4B-it`). No se modifican los pesos del modelo base: se añaden matrices de bajo rango entrenables que suman 38,6 millones de parámetros, lo que permite cargar el adaptador sobre cualquier checkpoint del base (incluidas versiones cuantizadas en GGUF) sin duplicar el modelo completo. El repositorio ocupa 0,2 GB, coherente con un adaptador de ese tamaño más los ficheros de configuración.
+El modelo hereda la arquitectura de Gemma 4 E4B it, un transformer multimodal capaz de procesar imagen y texto (tag `image-text-to-text`), con aproximadamente 8.000 millones de parametros. Sobre esa base se aplico un ajuste fino supervisado mediante LoRA de rango 16 y alpha 32, ejecutado durante 7.000 pasos en una unica NVIDIA DGX Spark. Los pesos del adaptador se fusionaron en el modelo final, de modo que el repositorio publica el modelo completo y no solo el delta.
 
-La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El autor sí especifica dos decisiones de diseño: el modelo fue entrenado con un system prompt literal y fijo (que debe reproducirse exactamente en inferencia) y con la recomendación de desactivar el modo de razonamiento (`enable_thinking: false`). También afirma que el entrenamiento excluyó letras de canciones reales, lo que orienta el adaptador hacia la generación de letras originales y evita la reproducción de material con derechos de autor. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+Los datos de entrenamiento se construyeron a partir de hechos musicales extraidos de Wikipedia (CC BY-SA 4.0) y de MusicBrainz/AcousticBrainz (CC0). Con esos hechos, Claude Sonnet 5.5 genero 7.134 "lecciones", cada una consistente en planificar una cancion nueva en el estilo descrito. Segun la model card, no se emplearon letras reales de canciones, lo que reduce el riesgo de reproduccion literal de material con derechos de autor. No se documentan fases de RLHF ni DPO adicionales, ni el volumen total de tokens de entrenamiento.
 
 ## Capacidades
 
-- Generación de texto estructurado: produce un formato fijo con secciones `TAGS`, `VOCAL`, `BPM/KEY/TIME/LENGTH`, `PLAN`, `BRIEF` y `LYRICS`.
-- Planificación musical: genera entre 12 y 22 etiquetas de estilo separadas por comas (género, instrumentos, carácter del sonido, batería, ambiente, producción).
-- Descripción vocal: etiquetas de voz más una o dos frases sobre cómo se canta (registro, timbre, mezcla, doblajes).
-- Parámetros musicales: tempo en BPM, tonalidad, compás y duración.
-- Desglose por secciones: longitud en compases, energía de 1 a 10 y contenido de cada parte (intro, verso, estribillo, solo, puente, etc.).
-- Brief de letra: tema, punto de vista, tono, imaginería, rima y hook.
-- Composición de letras originales ajustadas al plan, con marcas de sección entre corchetes.
-- Modo instrumental: si se solicita, la letra se reduce a nombres de sección.
-- No soporta tool calling ni function calling según la información disponible.
-- No se documentan capacidades de visión, audio ni agentes multi-paso.
-- Capacidad multilingüe limitada al inglés.
+- Generacion de letras originales en ingles a partir de una descripcion breve de estilo, tematica, tipo de voz y duracion.
+- Planificacion estructurada de canciones: produce etiquetas de estilo (`TAGS`), tipo de voz (`VOCAL`), parametros tecnicos (`BPM · KEY · TIME · LENGTH`), un plan seccion a seccion con energia de 1 a 10 (`PLAN`) y un resumen (`BRIEF`).
+- Salida en formato delimitado por bloques, disenada para ser consumida directamente por un generador de musica por IA.
+- Conversacion multi-turno mediante plantilla de chat (compatible con `apply_chat_template` y con el endpoint `/v1/chat/completions` de llama.cpp).
+- Modo thinking configurable (`enable_thinking`), que la model card recomienda desactivar para esta tarea.
+- Capacidad multimodal heredada de Gemma 4 E4B it (entrada de imagen y texto), aunque la model card no documenta casos de uso de vision para songwriting.
+- Restriccion explicita en el prompt de sistema: evitar letras de canciones reales y nombres de artistas.
+- No se documenta soporte de tool calling ni de razonamiento agente multi-paso en la informacion disponible.
 
 ## Casos de uso
 
-- Generación automática de prompts para text-to-music: el adaptador convierte una idea vaga en etiquetas de estilo listas para pegar en ACE-Step 1.5 u otro generador, reduciendo el trabajo manual de ingeniería de prompts musicales.
-- Composición de letras originales: útil para creadores que necesitan letras con estructura (verso, pre-estribillo, estribillo, puente) y coherencia temática sin riesgo de plagio, dado que el entrenamiento excluyó letras reales.
-- Preproducción musical: el desglose sección por sección con energía y compases sirve como guion para arreglistas o para validar la estructura de una canción antes de producirla.
-- Prototipado rápido de jingles y sintonías: con peticiones cortas y una duración fijada (por ejemplo, 0:30), el modelo genera un plan compacto y una letra breve adaptada al formato publicitario.
-- Herramientas de karaoke o vídeo musical: la salida con marcas `[Verse 1]`, `[Chorus]` y similares se puede parsear directamente para sincronizar subtítulos o generar visuales por sección.
-- Docencia y talleres de composición: el brief explícito (tema, punto de vista, rima, hook) hace visible el proceso de decisión compositiva, lo que resulta útil para explicar estructura de canciones.
-- Integración en pipelines de generación musical por lotes: al ser un LoRA ligero sobre un base pequeño, permite generar cientos de planes de canción en una GPU de consumo dentro de un flujo automatizado.
+- Preproduccion para generadores de musica por IA: el modelo actua como capa intermedia que traduce una idea vaga del usuario en etiquetas de estilo, tempo, tonalidad y letra, listas para alimentar un modelo text-to-music. La salida estructurada por bloques simplifica el parseo en el pipeline.
+- Prototipado rapido de canciones en estudios pequenos: con unos 15 segundos por letra (segun la model card) y 5,3 GB en Q4_K_M, un compositor puede iterar decenas de variaciones de estilo y estructura en una sola sesion sobre una GPU de consumo.
+- Herramientas de escritura asistida para letristas: el bloque `PLAN` con energia por seccion sirve como guion de composicion (intro, verso, estribillo, puente) que el autor humano puede editar antes de escribir la version final.
+- Generacion de briefs musicales para bibliotecas de sincronizacion o produccion publicitaria: a partir de una descripcion de marca o escena, el modelo entrega un brief coherente con duracion, tempo y tono vocal ajustables, agilizando la revision con el cliente.
+- Integracion en API de servicio: al exponerse mediante `llama-server` con el endpoint compatible con OpenAI, puede conectarse a una interfaz web o a un bot que reciba peticiones de usuarios y devuelva el paquete completo de cancion.
+- Educacion musical y analisis de estilos: usando el conocimiento factual de Wikipedia y MusicBrainz incorporado en el entrenamiento, puede explicar y aplicar convenciones de genero (instrumentacion tipica, rangos de BPM, compases habituales) al planificar una pieza nueva.
+- Generacion de variaciones tematicas controladas: modificando la peticion (cambio de voz, de tonalidad o de duracion) se obtienen versiones alternativas de una misma idea manteniendo coherencia estilistica, util para entregar varias opciones a un cliente.
 
 ## Benchmarks y rendimiento
 
@@ -57,36 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador LoRA en sí ocupa 0,2 GB; el grueso del coste corresponde al modelo base Gemma 4 E4B, cuyos requisitos exactos no se detallan en la información proporcionada.
-- Despliegue recomendado por el autor: base en GGUF Q4_K_M más el LoRA en GGUF, con `-ngl 99` y contexto de 16384 tokens, lo que sugiere que cabe en GPU de consumo con suficiente VRAM para el base cuantizado.
-- Opciones de despliegue documentadas: Kera (`kera serve`), llama.cpp (`llama-server`) y transformers + PEFT en bfloat16 con `device_map="auto"`.
-- El endpoint de Kera es compatible con la API de OpenAI (`/v1/chat/completions`), con `chat_template_kwargs: {"enable_thinking": false}`.
-- Parámetros de generación recomendados: temperatura 0.8, top-p 0.95 y unos 2400 tokens nuevos como máximo.
-- VRAM estimada, GPU recomendadas, latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 5,5-6 GB con Q4_K_M (5,3 GB de pesos mas overhead de contexto), unos 8,5-9 GB con Q8_0 y 16-18 GB con BF16 en safetensors o GGUF.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para Q4_K_M (RTX 3060 Ti, RTX 4060 Ti, RTX 4070); 12-16 GB para Q8_0 (RTX 4070 Ti, RTX 4080); 24 GB o mas para BF16 (RTX 4090, A100 40 GB, H100). El ajuste se entreno en una NVIDIA DGX Spark, lo que confirma viabilidad en hardware compacto.
+- Cabe en GPU de consumo: si, en configuraciones desde 8 GB de VRAM con la cuantizacion Q4_K_M y `-ngl 99` para descargar todas las capas en GPU.
+- Opciones de despliegue: llama.cpp (`llama-server`, con `--jinja` para la plantilla de chat y soporte de descarga directa desde Hugging Face con `-hf`), el CLI `kera serve` del propio autor, y transformers con `AutoModelForCausalLM` en bfloat16. No se documenta soporte explicito de vLLM, TGI u Ollama en la informacion disponible.
+- Latencia y throughput: la model card indica aproximadamente 15 segundos por letra, sin especificar el hardware exacto de la medicion. No se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kera Songwriter (Gemma 4 E4B) | LoRA sobre Gemma 4 E4B | 38,6 M (adaptador) | no disponible (ejemplos con 16384) | Apache 2.0 | Planificación de canciones y letras para text-to-music |
-| Modelo base google/gemma-4-E4B-it | Transformer instruct | no disponible | no disponible | no disponible en la información | Propósito general |
-| Alternativas específicas de songwriting | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Kera Songwriter (este) | ~8B | 16.384 | Songwriting y planificacion musical, solo ingles | Apache 2.0 | Hugging Face, GGUF y safetensors |
+| Gemma 4 E4B it (base) | ~8B | no disponible | Modelo generalista multimodal | Terminos de Gemma (Google DeepMind) | Hugging Face |
+| Modelos generalistas de ~7-8B (p. ej. familia Llama o Qwen) | 7-8B | variable | Proposito general, requieren prompting elaborado para songwriting | variable | Hugging Face |
 
-No se dispone de datos de benchmarks ni de otros adaptadores comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
+La comparativa directa con alternativas especializadas en songwriting no esta disponible en la informacion proporcionada. Frente a su modelo base, Kera Songwriter anade la estructura de salida fija y el sesgo hacia planificacion musical, a costa de perder generalidad y de limitarse al ingles.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: el modelo fue entrenado y etiquetado únicamente para `en`; las peticiones en castellano pueden degradar la calidad del plan y de la letra.
-- Dependencia estricta del system prompt: el autor indica que debe usarse exactamente el prompt de entrenamiento; variaciones pueden alterar el formato de salida.
-- El modo de razonamiento debe desactivarse (`enable_thinking: false`); dejarlo activo puede romper el formato esperado.
-- Riesgo de alucinación en datos musicales: tempo, tonalidad o estructura pueden ser musicalmente incoherentes con la petición, y no hay verificación automática.
-- Riesgo de similitud no intencionada con letras existentes pese a que el entrenamiento excluyó letras reales; conviene revisar las letras antes de uso comercial.
-- El adaptador no incluye el modelo base: es necesario descargar `google/gemma-4-E4B-it` por separado y cumplir su licencia además de la Apache 2.0 del adaptador.
-- Sin métricas publicadas de calidad, benchmarks ni evaluación objetiva; el repositorio no tiene descargas ni validación de la comunidad.
-- No soporta tool calling ni flujos de agentes; está diseñado para una única generación de plan más letra.
-- Formato de salida rígido: los consumidores deben parsear `TAGS`, `VOCAL`, `PLAN` y `LYRICS`, y tolerar desviaciones menores del formato.
+- Solo escribe en ingles; no se documenta soporte de castellano ni de otros idiomas.
+- La model card advierte explicitamente de que se revisen las letras antes de publicar una cancion; el modelo puede producir contenido inapropiado o de calidad desigual.
+- Riesgo de alucinacion en datos factuales musicales (BPM, tonalidades, atribuciones de estilo), ya que el conocimiento procede de un corpus derivado de Wikipedia y MusicBrainz y no de una verificacion en tiempo real.
+- Los datos de entrenamiento se generaron con Claude Sonnet 5.5 a partir de hechos de terceros; la calidad del ajuste depende de esa sintesis y no se documenta una evaluacion cuantitativa.
+- Aunque el prompt de sistema prohibe usar letras reales y nombres de artistas, no hay garantia tecnica de que el modelo no genere fragmentos reminiscentes de obras existentes; conviene aplicar filtros de similitud en produccion.
+- El contexto recomendado es de 16.384 tokens; peticiones muy largas o conversaciones multi-turno extensas pueden degradar la calidad.
+- La licencia Apache 2.0 del ajuste no exime de verificar las condiciones del modelo base Gemma 4 de Google DeepMind si se redistribuye o se usa comercialmente a gran escala.
+- No se documentan evaluaciones de sesgo; al estar entrenado principalmente con datos musicales occidentales (Wikipedia y MusicBrainz), es probable un sesgo hacia generos y convenciones anglosajonas.
+- El repositorio tiene un volumen de descargas bajo (685) y un unico like, por lo que la validacion comunitaria es escasa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Vortexal2/kera-songwriter-e4b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
+- Repositorio de llama.cpp (despliegue GGUF): https://github.com/ggerganov/llama.cpp
+- Wikipedia (fuente de datos, CC BY-SA 4.0): https://www.wikipedia.org
+- MusicBrainz: https://musicbrainz.org
+- AcousticBrainz: https://acousticbrainz.org

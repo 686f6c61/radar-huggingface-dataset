@@ -2,109 +2,104 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-Uncensored-MTP-GGUF es la versión cuantizada en formato GGUF del modelo ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP, publicada por mradermacher, un autor conocido por generar cuantizaciones estáticas y con imatrix de modelos abiertos. Se trata de un derivado de la familia Qwen3.8 (etiqueta qwen3_8) de 27.320.697.856 parámetros, sometido a un proceso de "abliteration" que elimina o atenúa los mecanismos de rechazo de la alineación, por lo que se comercializa explícitamente como modelo uncensored orientado a conversación.
+Swift-Qwen3.8-27B-Uncensored-MTP-GGUF es una cuantizacion estatica en formato GGUF del modelo ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP, publicada por mradermacher. El modelo subyacente es una variante "abliterated" y "uncensored" de la familia Qwen3.8, con 27.320.697.856 parametros totales (aproximadamente 27,3 mil millones), disenada para eliminar las capas de rechazo y moderacion tipicas de los modelos alineados comercialmente. La etiqueta "MTP" sugiere soporte de multi-token prediction, aunque la model card no detalla su implementacion.
 
-El repositorio incluye once cuantizaciones GGUF que van desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), además de dos ficheros mmproj (Q8_0 y f16) que en el ecosistema llama.cpp acompañan a proyecciones multimodales, lo que sugiere que el modelo base conserva capacidades de entrada multimodal, aunque la documentación disponible no lo confirma de forma explícita. La etiqueta mtp indica multi-token prediction, una técnica de predicción de varios tokens por paso, si bien la información proporcionada no detalla su implementación concreta.
+El repositorio ofrece 12 cuantizaciones GGUF que van desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), ademas de dos ficheros mmproj (Q8_0 y f16) que indican soporte multimodal de entrada. Esto convierte al modelo en una opcion practica para despliegue local con llama.cpp u Ollama en hardware de consumo, algo imposible con los pesos originales en safetensors.
 
-Su relevancia actual es doble: por un lado, permite ejecutar localmente un modelo de 27B en hardware de consumo mediante cuantizaciones de 4 bits; por otro, cubre el nicho de modelos sin filtros para investigación en seguridad, generación de datos sintéticos y aplicaciones creativas donde los rechazos automáticos resultan un obstáculo. El soporte de idiomas declarado se limita al inglés, y la licencia swift-open-license-1.0 obliga a revisar sus términos antes de cualquier uso comercial.
+La relevancia actual del modelo radica en su naturaleza sin censura combinada con un tamano manejable: permite a investigadores estudiar el comportamiento de modelos abliterated en tareas de generacion libre, y a desarrolladores desplegar asistentes conversacionales sin filtros en entornos controlados. La licencia swift-open-license-1.0 impone condiciones que deben revisarse antes de cualquier uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (no documentada en la información proporcionada; el modelo base pertenece a la familia Qwen3.8 según la etiqueta qwen3_8) |
-| Parámetros totales | 27.320.697.856 (27,3 B) |
-| Parámetros activos | No aplica / no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; ficheros mmproj en Q8_0 y f16 |
-| Idiomas soportados | Inglés (en) |
-| Licencia | swift-open-license-1.0 (etiquetada como "other" en Hugging Face, con enlace a https://huggingface.co/ukisai/Swift-Qwen3.8-27b) |
-| Formato de pesos | GGUF (cuantizaciones estáticas, convertidas desde el modelo base en transformers) |
-| Tamaño del repositorio | 190,8 GB |
-| Fecha de publicación | 15 de septiembre de 2026 (última actualización: 15 de septiembre de 2026) |
-| Modelo base | ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP |
-| Repositorio relacionado | mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF (cuantizaciones ponderadas con imatrix) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.8; detalles de capas y atencion no disponibles) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | swift-open-license-1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Tamano del repositorio | 190,8 GB (incluye todas las cuantizaciones) |
+| Fecha de creacion | 2026-09-15 |
+| Ultima actualizacion | 2026-10-06 |
+| Descargas / likes | 587 / 3 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo: no se especifica si se trata de un transformer denso, de un modelo con mezcla de expertos, de una arquitectura híbrida ni de un modelo basado en máquina de estados. La única pista estructural es la etiqueta qwen3_8, que vincula el modelo base con la familia Qwen3.8, y el sufijo MTP (multi-token prediction), que apunta a un esquema de predicción de varios tokens por paso de decodificación. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO u otro tipo de ajuste por preferencias.
+La informacion disponible no detalla la arquitectura interna del modelo base. Por la nomenclatura (Qwen3.8) y el tamano (27,3 B parametros), se trata de un transformer decoder-only de la familia Qwen, pero no se especifican numero de capas, dimensiones ocultas, mecanismo de atencion ni si emplea GQA. La etiqueta "MTP" en el nombre apunta a multi-token prediction, una tecnica de entrenamiento que permite al modelo predecir varios tokens futuros por paso, lo que puede acelerar la decodificacion especulativa, pero la model card no aporta detalles sobre como se implementa.
 
-Lo que sí se documenta es el proceso de post-entrenamiento aplicado: el modelo base ha sido "abliterated" y se distribuye como uncensored, lo que implica la supresión de direcciones de activación asociadas al rechazo de peticiones. Esta modificación se realizó antes de la cuantización, de modo que todas las variantes GGUF del repositorio heredan ese comportamiento. La conversión desde el modelo base en transformers siguió el flujo estándar de mradermacher (convert_type: hf, quantize_version: 2), sin que se mencionen innovaciones adicionales en el proceso de cuantización más allá del uso de cuantizaciones estáticas; las versiones con pesos ponderados e imatrix se publican en un repositorio separado.
+Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. El termino "abliterated" indica que se aplico una tecnica de ablacion de direcciones de rechazo en el espacio de activaciones para eliminar el comportamiento de negativa, y "uncensored" refuerza que se ha reducido la moderacion. El autor de la cuantizacion, mradermacher, solo documenta el proceso de conversion a GGUF (quantize_version 2, output_tensor_quantised 1, convert_type hf), sin informacion sobre el entrenamiento original.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con formato de diálogo multi-turno (etiqueta conversational).
-- Generación de contenido sin rechazos por motivos de alineación, al haber sido abliterado explícitamente.
-- Ejecución local en llama.cpp y derivados, gracias a las once cuantizaciones GGUF publicadas.
-- Posible soporte de entrada multimodal: el repositorio incluye dos ficheros mmproj (Q8_0 y f16) que en llama.cpp acompañan a proyecciones visión-lenguaje, aunque la documentación disponible no confirma ni detalla esa capacidad.
-- Predicción de múltiples tokens (MTP) según la nomenclatura del modelo base, sin documentación técnica disponible sobre su implementación.
-- No se documenta soporte de tool calling, function calling, uso de agentes ni razonamiento multi-paso.
-- No se documentan capacidades específicas de código, matemáticas, audio ni modo de pensamiento explícito.
-- Capacidad multilingüe: limitada al inglés según el campo language de la model card.
+- Generacion de texto conversacional en ingles, con modo conversacional declarado en los tags.
+- Comportamiento sin censura: el modelo ha sido abliterated para reducir rechazos y respuestas evasivas.
+- Soporte multimodal de entrada: la presencia de ficheros mmproj (Q8_0 y f16) indica capacidad de procesar imagenes junto a texto.
+- Posible multi-token prediction (MTP) segun la nomenclatura, sin documentacion tecnica que lo confirme.
+- No se documenta soporte explicito de tool calling, function calling ni razonamiento multi-paso.
+- Capacidades multilingues limitadas al ingles segun la metadata del modelo.
+- No se documenta modo thinking, audio ni otras capacidades especiales.
 
 ## Casos de uso
 
-- Escritura creativa y narrativa sin restricciones temáticas: el proceso de abliteration permite abordar tramas, personajes o diálogos que los modelos alineados suelen rechazar; la cuantización Q5_K_M o Q6_K ofrece un equilibrio razonable entre calidad y consumo de memoria para sesiones largas de escritura.
-- Investigación en seguridad y red teaming: sirve como sujeto de prueba para medir hasta qué punto un modelo de 27B pierde rechazos tras la abliteration, y para comparar respuestas frente a la versión alineada del mismo modelo base.
-- Generación de datos sintéticos para ajuste fino: al no filtrar determinadas categorías de contenido, puede producir datasets conversacionales difíciles de obtener con modelos alineados; conviene auditar la salida antes de incorporarla a un pipeline de entrenamiento.
-- Asistente conversacional local y privado: con la cuantización Q4_K_M (16,9 GB) se puede desplegar en una estación de trabajo con 24 GB de VRAM sin enviar datos a servicios externos, útil en entornos con requisitos de confidencialidad.
-- Prototipado rápido de aplicaciones de chat: las cuantizaciones Q4_K_S y Q4_K_M están marcadas por el autor como rápidas y recomendadas, lo que las hace adecuadas para validar prompts y flujos conversacionales antes de invertir en hardware mayor.
-- Evaluación comparativa de cuantizaciones: el repositorio abarca desde Q2_K hasta Q8_0, de modo que permite medir la degradación de perplejidad y calidad entre niveles de compresión sobre un mismo modelo base y en el mismo hardware.
-- Base para experimentación con ajuste fino: aunque el formato GGUF no es el adecuado para entrenar, el modelo base en transformers (ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP) puede servir de punto de partida para especializaciones de dominio, usando las versiones GGUF para validar el comportamiento previo.
-- Análisis de documentos en inglés con entrada multimodal (condicional): si se confirma la compatibilidad de los ficheros mmproj con el modelo, se podrían procesar imágenes o documentos escaneados junto a instrucciones textuales; se trata de una capacidad no verificada en la documentación disponible.
+- Investigacion sobre alineacion y censura: el modelo permite estudiar como la ablacion de direcciones de rechazo afecta a la distribucion de respuestas en tareas sensibles, comparando con el modelo base alineado.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o controvertidas, donde los modelos alineados suelen negarse; el formato GGUF permite ejecutarlo en local con llama.cpp.
+- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_M (16,9 GB) o Q5_K_M (19,6 GB) cabe en GPUs de consumo con 24 GB de VRAM, lo que facilita prototipado sin infraestructura cloud.
+- Analisis de documentos con imagenes: los ficheros mmproj permiten alimentar capturas, diagramas o paginas escaneadas junto a instrucciones de texto para extraccion de informacion.
+- Evaluacion de riesgos en pipelines de IA: sirve como caso de prueba para medir la eficacia de filtros de salida y sistemas de moderacion externos sobre un modelo deliberadamente sin censura.
+- Fine-tuning y destilacion: al estar disponible en GGUF y con pesos base en safetensors, puede usarse como punto de partida para experimentos de adaptacion (LoRA) en ingles sobre dominios especializados.
+- Chatbot de rol o acompanamiento conversacional: conversaciones multi-turno en ingles donde el usuario busca respuestas sin evasivas, ejecutado en local para preservar privacidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio no incluye métricas de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra evaluación cuantitativa, ni para el modelo base ni para las cuantizaciones derivadas. Tampoco se proporcionan comparaciones con modelos de tamaño similar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, a partir del tamaño de los ficheros publicados (sin contar caché KV ni overhead del runtime):
-  - Q2_K: 11,0 GB.
-  - Q3_K_S: 12,4 GB; Q3_K_M: 13,6 GB; Q3_K_L: 14,7 GB.
-  - IQ4_XS: 15,5 GB; Q4_K_S: 15,9 GB; Q4_K_M: 16,9 GB.
-  - Q5_K_S: 19,1 GB; Q5_K_M: 19,6 GB.
-  - Q6_K: 22,5 GB.
-  - Q8_0: 29,1 GB.
-  - Ficheros mmproj: 0,7 GB (Q8_0) y 1,0 GB (f16), adicionales si se usa la parte multimodal.
-- GPU recomendadas: para Q4_K_M y superiores, una RTX 3090 o RTX 4090 con 24 GB permite cargar hasta Q6_K dejando poco margen para contexto largo; Q8_0 requiere una GPU de 40 GB o más (A100 40 GB, A6000) o repartir el modelo entre dos GPU de 24 GB. Las cuantizaciones Q2_K a Q4_K_S pueden ejecutarse en GPU de 12 a 16 GB (RTX 4070 Ti, RTX 4080) con contexto moderado.
-- Viabilidad en GPU de consumo: sí, siempre que se elija la cuantización adecuada. Q4_K_M entra en 24 GB con margen para caché KV; las variantes Q3 y Q2 caben en 12-16 GB a costa de una pérdida de calidad notable.
-- Opciones de despliegue: llama.cpp y sus interfaces (Ollama, LM Studio, koboldcpp) son las vías naturales para GGUF. vLLM admite GGUF de forma limitada y TGI no soporta este formato de manera nativa; para máximo rendimiento en servidor convendría usar el modelo base en safetensors con vLLM.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por petición en la información proporcionada.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - Q2_K: ~11 GB, viable en GPUs de 12 GB.
+  - Q3_K_M: ~13,6 GB, viable en GPUs de 16 GB.
+  - Q4_K_M: ~16,9 GB, recomendada para GPUs de 24 GB (RTX 3090, RTX 4090).
+  - Q5_K_M: ~19,6 GB, ajustada en 24 GB con contexto moderado.
+  - Q6_K: ~22,5 GB, al limite en 24 GB.
+  - Q8_0: ~29,1 GB, requiere 32 GB o mas (A100 40 GB, RTX A6000, H100).
+- GPU recomendadas: RTX 4090 o RTX 3090 para cuantizaciones Q4/Q5; A100 40 GB, H100 o RTX A6000 para Q8_0 y contextos largos.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 (24 GB) con Q4_K_M o Q5_K_M; en GPUs de 12-16 GB con Q2_K o Q3.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; los ficheros mmproj requieren un runtime con soporte multimodal (por ejemplo, llama.cpp con llava).
+- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de benchmarks ni de especificaciones completas de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento fiable. La comparación que sí puede hacerse es entre las variantes del propio repositorio y su modelo de origen:
-
-| Modelo o variante | Parámetros | Formato | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF | 27,3 B | GGUF (11 cuantizaciones) | No disponible | swift-open-license-1.0 | Hugging Face, 0 descargas en el momento de la consulta |
-| mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF | 27,3 B | GGUF (cuantizaciones ponderadas con imatrix) | No disponible | swift-open-license-1.0 | Hugging Face, repositorio separado enlazado en la model card |
-| ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP | 27,3 B | Safetensors (transformers) | No disponible | No disponible | Hugging Face, modelo base del que derivan las cuantizaciones |
+| Swift-Qwen3.8-27B-Uncensored-MTP-GGUF (este) | 27,3 B | no disponible | swift-open-license-1.0 | GGUF | Abliterated, multimodal, 12 cuantizaciones |
+| ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP (base) | 27,3 B | no disponible | swift-open-license-1.0 | safetensors | Modelo original sin cuantizar |
+| Qwen3-32B (referencia de familia) | 32 B | no disponible | Apache 2.0 (segun version) | safetensors, GGUF | Alineado, sin ablacion; datos no verificados en esta busqueda |
+| Gemma 2 27B (referencia de tamano) | 27 B | no disponible | Gemma license | safetensors, GGUF | Alineado, sin ablacion; datos no verificados en esta busqueda |
 
-Comparativas frente a otros modelos de 27B de la misma categoría (por ejemplo, dentro de la propia familia Qwen3.8 o frente a otros modelos abliterados de tamaño similar): no disponible.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido abliterado y se distribuye como uncensored: puede generar contenido ofensivo, ilegal, peligroso o sexual sin aplicar rechazos. No es apto para aplicaciones orientadas al público general sin capas adicionales de moderación.
-- Riesgo elevado de alucinación y de afirmaciones no verificadas, especialmente en cuantizaciones bajas (Q2_K, Q3_K_S) donde la degradación de calidad respecto al modelo original es mayor.
-- Idioma limitado al inglés. No hay evidencia de soporte multilingüe y, por tanto, no se recomienda su uso en castellano ni en otras lenguas.
-- La licencia swift-open-license-1.0 se registra en Hugging Face como "other" y el texto completo no se reproduce en la información disponible; es imprescindible revisar el enlace de licencia (https://huggingface.co/ukisai/Swift-Qwen3.8-27b) antes de cualquier uso comercial, ya que los términos podrían restringirlo.
-- Desconocimiento total del entrenamiento: sin datos de dataset, número de tokens, fases de alineación ni evaluación, no es posible estimar sesgos de origen ni fiabilidad en dominios concretos.
-- La longitud de contexto no está documentada, lo que impide planificar aplicaciones con ventanas largas o estimar con precisión el consumo de memoria de la caché KV.
-- El formato GGUF no es adecuado para ajuste fino; para entrenar hay que recurrir al modelo base en safetensors.
-- El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta: no existe validación comunitaria ni informes independientes sobre su comportamiento.
-- El tamaño del repositorio (190,8 GB) dificulta la descarga completa; conviene seleccionar únicamente la cuantización necesaria.
-- La capacidad multimodal es una inferencia a partir de la presencia de ficheros mmproj y no está confirmada en la documentación; no debería asumirse en producción sin verificarla.
+- Modelo deliberadamente sin censura: puede generar contenido ofensivo, ilegal o peligroso; no es apto para exposicion directa a usuarios sin moderacion externa.
+- Riesgo elevado de alucinacion, agravado por la falta de benchmarks publicados que permitan estimar su fiabilidad.
+- Solo soporta ingles de forma declarada; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin pruebas empiricas.
+- Licencia swift-open-license-1.0: es una licencia no estandar; deben revisarse los terminos exactos antes de cualquier uso comercial o redistribucion.
+- La ablacion puede degradar capacidades generales (razonamiento, codigo, matematicas) respecto al modelo original alineado; no hay datos que cuantifiquen esa perdida.
+- El repositorio pesa 190,8 GB por incluir todas las cuantizaciones; conviene descargar solo el fichero necesario.
+- No se documenta soporte de tool calling ni de agentes, por lo que integrarlo en pipelines automatizados requiere validacion previa.
+- La fecha de creacion (2026) y la escasez de descargas (587) sugieren poca validacion comunitaria; tratar con cautela en produccion.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF
 - Modelo base: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
-- Cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF
-- Texto de la licencia: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
-- Página de resumen y listado de descargas del autor: https://hf.tst.eu/model#Swift-Qwen3.8-27B-Uncensored-MTP-GGUF
-- Preguntas frecuentes y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de ficheros GGUF (README de TheBloke citado por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica de perplejidad por tipo de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Swift-Qwen3.8-27B-Uncensored-MTP-GGUF
+- Licencia: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

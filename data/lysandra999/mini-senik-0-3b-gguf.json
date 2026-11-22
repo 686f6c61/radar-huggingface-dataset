@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Lysandra999/Mini-Senik-0.3B-GGUF",
+  "slug": "lysandra999-mini-senik-0-3b-gguf",
+  "author": "Lysandra999",
+  "url": "https://huggingface.co/Lysandra999/Mini-Senik-0.3B-GGUF",
+  "created_at": "2026-11-21T23:27:20.000Z",
+  "updated_at": "2026-11-21T23:38:57.000Z",
+  "license": "senik-proprietary-evaluation-v1.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "edge-ai",
+    "tiny-llm",
+    "conversational",
+    "emotion-tags",
+    "senik",
+    "mini-senik",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 302830976,
+  "parameters_human": "302.8M",
+  "storage_bytes": 558054336,
+  "storage_human": "558 MB",
+  "context_length": 40960,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

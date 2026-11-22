@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Maximilian228/Geode-TTS-Melo-zh",
+  "slug": "maximilian228-geode-tts-melo-zh",
+  "author": "Maximilian228",
+  "url": "https://huggingface.co/Maximilian228/Geode-TTS-Melo-zh",
+  "created_at": "2026-11-21T22:57:45.000Z",
+  "updated_at": "2026-11-21T22:57:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "vits",
+    "melotts",
+    "geode",
+    "on-device",
+    "text-to-speech",
+    "zh",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170429550,
+  "storage_human": "170 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,101 +2,109 @@
 
 ## Resumen
 
-OpenAmer-Max-Tab es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el autor independiente Amer Sacirovic bajo el identificador openamer-max. Forma parte de una familia de modelos organizada por el hardware objetivo (reloj, telefono, tableta, escritorio) y esta pensada para ejecutarse en local, sin conexion, en tabletas y equipos de gama media. El modelo resuelve el problema de disponer de un asistente conversacional que quepa en 4,4 GB (cuantizacion Q4_K_M) y responda en menos de un segundo en CPU, manteniendo las capacidades generales de la base de 7B.
+OpenAmer-Tab es un modelo de lenguaje de 7.615.616.512 parámetros (7,62B) desarrollado por openamer-max como tercer escalón de la familia OpenAmer, una línea de asistentes diseñados por y para un objetivo de hardware concreto. En este caso, el destino es la tableta y equipos de gama media: el modelo se distribuye principalmente como GGUF Q4_K_M de 4,4 GB y está pensado para ejecutarse en local, sin conexión, con latencias declaradas de entre 0,2 y 1,1 segundos en CPU. Deriva del modelo base Qwen/Qwen2.5-7B-Instruct mediante un ajuste fino con LoRA, y conserva la licencia Apache-2.0.
 
-Tecnicamente es un transformer denso de 7.615.616.512 parametros (7,62B), derivado de Qwen2.5-7B-Instruct mediante QLoRA en varias etapas, con un contexto declarado de 16k tokens. Se distribuye principalmente en formato GGUF para llama.cpp y Ollama, con licencia Apache-2.0. El interes actual reside en su enfoque de despliegue en dispositivo (on-device), su soporte para aleman y lenguas del espacio bosnio-croata-serbio, y un conjunto de pruebas propio orientado a hechos de producto y rechazos honestos.
+El modelo está especializado en un asistente conversacional de producto: responde preguntas sobre OpenAmer, rechaza honestamente cuando la respuesta no está en el contexto y mantiene la polaridad correcta de las negaciones, algo que los escalones inferiores de la familia (Watch, Phone) no lograban de forma fiable. Su ventana de contexto es de 16k tokens, suficiente para documentos de longitud media. Los idiomas declarados son alemán, bosnio, croata, serbio e inglés.
 
-La relevancia es limitada pero concreta: es un modelo pequeno, de un solo autor, sin traccion en la comunidad (0 descargas y 0 likes en el momento de la consulta) y con evaluacion basada en un banco de pruebas propio de 23 casos, no en benchmarks estandar. Debe evaluarse como una alternativa ligera y autoalojada para asistentes de producto en aleman y bosnio, no como un modelo de proposito general de alto rendimiento.
+Su relevancia actual reside en la propuesta de despliegue: un asistente de 7B cuantizado a 4 bits, distribuido vía Ollama con un único comando (`ollama run amersacirovic/openamer-max-tab`), que cabe en unos 6 GB de RAM y que el autor evalúa con un conjunto congelado de 45 casos para que todas las variantes de la familia sean comparables entre sí.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen2.5-7B-Instruct) |
+| Arquitectura | Transformer decoder-only (derivado de Qwen2.5-7B-Instruct, ajuste LoRA) |
 | Parametros totales | 7.615.616.512 (7,62B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 16k tokens (declarado en la model card) |
-| Tipos de cuantizacion | Q4_K_M (GGUF, 4,4-4,7 GB); f16 (14,5 GB) |
-| Idiomas soportados | Aleman (de), bosnio (bs), croata (hr), serbio (sr), ingles (en) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 16.000 tokens (16k) |
+| Tipos de cuantizacion | Q4_K_M (GGUF, 4,4 GB); f16 (14,5 GB) |
+| Idiomas soportados | aleman (de), bosnio (bs), croata (hr), serbio (sr), ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp/Ollama); repo de 4,7 GB |
+| Formato de pesos | GGUF (llama.cpp); repo de 4,7 GB |
+| Modelo base | Qwen/Qwen2.5-7B-Instruct |
+| Libreria | llama.cpp |
+| Tamano del repo | 4,7 GB |
+| Descargas / likes | 747 / 1 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Qwen2.5-7B-Instruct, un transformer denso con atencion por cabezas y mecanismos estandar de la familia Qwen2.5 (RoPE, atencion causal, normalizacion RMSNorm), aunque la model card no detalla la configuracion interna de capas ni cabezas. El ajuste se realizo mediante QLoRA en varias etapas sobre la base instruct, segun indica el autor. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO adicionales; esa informacion no esta disponible.
+El modelo parte de Qwen2.5-7B-Instruct, un transformer decoder-only de 7,62B parámetros, y se ha adaptado mediante un ajuste fino con LoRA (según las etiquetas del repositorio) para convertirlo en un asistente de producto con identidad propia. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO adicionales sobre el modelo base. El resultado se distribuye como GGUF para llama.cpp y Ollama, con una cuantización Q4_K_M como formato principal.
 
-La innovacion declarada no es arquitectonica sino de orientacion al producto: el autor organiza la familia por hardware objetivo y documenta un banco de pruebas "congelado" de 23 casos no vistos, disenado para medir hechos de producto, parafrasis, rechazos y polaridad de negacion. Tambien advierte de un detalle operativo concreto: mantener `repeat_penalty` en 1.0, ya que con 1.1 el modelo invirtio una negacion en la variante Phone. No se documentan tecnicas como decodificacion especulativa ni atencion lineal.
+La innovación destacable no es arquitectónica sino de metodología de evaluación: el autor define un conjunto congelado de 45 casos que se aplica por igual a todos los escalones de la familia (Watch, Phone, Tab, Desktop, Pro, Ultra, VL-8B), de modo que las puntuaciones sean directamente comparables entre tamaños. Además, el autor documenta explícitamente los fallos del propio evaluador (comprobaciones de sinónimos con AND en lugar de OR, rechazos de seguridad contabilizados como violaciones, diacríticos bosnios marcados como deriva de idioma), lo que aporta trazabilidad al proceso de medición. También advierte de un detalle de inferencia relevante: mantener `repeat_penalty` en 1.0, ya que con 1.1 el modelo invirtió una negación en el escalón Phone.
 
 ## Capacidades
 
-- Generacion de texto conversacional en aleman, bosnio, croata, serbio e ingles.
-- Respuesta a preguntas sobre hechos de producto, con rechazos cuando la respuesta no esta en el contexto.
-- Manejo correcto de la polaridad de negacion en las pruebas del autor (por ejemplo, distinguir "funciona en iPhone" frente a "no funciona en Android").
-- Procesamiento de documentos (Word, Excel, PDF), codigo, aritmetica basica y resumenes, heredado de la base de 7B.
-- Contexto de 16k tokens para documentos de longitud media.
-- Ejecucion offline en dispositivo (tableta, equipos de gama media) mediante llama.cpp u Ollama.
-- Compatibilidad declarada con endpoints (tag `endpoints_compatible`) y uso conversacional.
-- No se documenta soporte explicito de tool calling, function calling, agentes multi-paso, vision ni audio.
+- Generación de texto conversacional en alemán, bosnio, croata, serbio e inglés.
+- Respuesta a preguntas de producto con datos correctos y rechazos honestos cuando la respuesta no está en el contexto.
+- Manejo correcto de la polaridad de negaciones (por ejemplo, distinguir "funciona en iPhone" de "no funciona en Android").
+- Procesamiento de documentos (Word, Excel, PDF) dentro de la ventana de 16k tokens.
+- Generación y comprensión de código, aritmética básica y resumen de textos, capacidades heredadas del base de 7B.
+- Conversación multi-turno con temperatura 0 recomendada para respuestas deterministas en producción.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode) en la información disponible.
 
 ## Casos de uso
 
-- Asistente de producto offline en tableta: el modelo responde a preguntas sobre funcionalidades y disponibilidad sin conexion, con rechazo honesto cuando el dato no esta en el contexto, gracias a sus 16k tokens de ventana.
-- Atencion al cliente en aleman y bosnio: puede gestionar conversaciones multi-turno sobre un catalogo acotado, con la ventaja de ejecutarse en local y evitar el envio de datos a la nube.
-- Resumen de documentos ofimaticos: procesa PDF, Word y Excel de longitud media para extraer resumenes, aprovechando el contexto de 16k y las capacidades generales de la base de 7B.
-- Asistencia a la redaccion y correccion en lenguas del espacio BCS: util para usuarios de bosnio, croata y serbio que necesitan un asistente local con cobertura linguistica limitada pero funcional.
-- Prototipado y pruebas de integracion en llama.cpp/Ollama: sirve como modelo de referencia para validar pipelines de despliegue en dispositivo antes de pasar a modelos mayores.
-- Educacion y demostraciones sin conectividad: entornos con requisitos de privacidad o redes restringidas donde un modelo de 4,4 GB en Q4_K_M es viable en CPU.
-- Tareas basicas de codigo y aritmetica: generacion de fragmentos y calculos sencillos, con la advertencia de no confiar en multiplicaciones de cuatro digitos.
+- Asistente de producto embebido en una aplicación de tableta: el modelo responde preguntas frecuentes sobre OpenAmer con datos verificados y rechaza cuando no sabe, lo que evita respuestas inventadas en un contexto de atención al usuario.
+- Chatbot de soporte offline en kiosco o dispositivo sin conectividad: al ejecutarse en local con Ollama y ocupar unos 6 GB de RAM, funciona en equipos de gama media sin depender de la nube.
+- Procesamiento de documentos de longitud media: con 16k tokens de contexto puede resumir contratos, actas o informes en Word, Excel o PDF sin truncar el contenido.
+- Asistente multilingüe para la región de los Balcanes: cubre alemán, bosnio, croata y serbio en una sola instancia, útil para atención al cliente en mercados con varias lenguas oficiales.
+- Generación de código asistida en entornos con recursos limitados: el base de 7B conserva capacidad de programación que los escalones de 0,6B y 3,1B pierden, y puede integrarse en editores o scripts locales.
+- Resumen y extracción de información en pipelines de datos: la latencia declarada de 0,2 a 1,1 segundos en CPU permite procesar lotes de documentos pequeños en máquinas sin GPU.
+- Prototipado de asistentes conversacionales con identidad de marca: el ajuste LoRA sobre Qwen2.5 permite personalizar el tono y el conocimiento de dominio sin reentrenar desde cero.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles son las pruebas propias del autor, no benchmarks estandar:
-
 | Prueba | Resultado |
 |---|---|
-| Banco congelado, 23 casos no vistos | 22/23 (95,7 %) |
-| Desglose | hechos 7/7, parafrasis 3/3, rechazos 5/5, bosnio 2/3, rechazos en bosnio 1/1, largo 1/1, corto 1/1, borde 2/2 |
-| Prueba nueva, 12 preguntas nunca vistas | 12/12 (verificado por contenido) |
-| Latencia | 0,2-1,1 s en CPU |
-| Tamano | 4,7 GB en Ollama (Q4_K_M); 14,5 GB en f16 |
+| Conjunto congelado de 45 casos (producto) | 42/45 (93,3 %) |
+| Conjunto congelado de 23 casos no vistos (sin contaminación) | 22/23 (95,7 %) |
+| Desglose del conjunto de 23 casos | hechos 7/7 · paráfrasis 3/3 · rechazos 5/5 · bosnio 2/3 · rechazos en bosnio 1/1 · largo 1/1 · corto 1/1 · borde 2/2 |
+| Prueba fresca de 12 preguntas nunca vistas en entrenamiento | 12/12 (contenido verificado) |
+| Latencia | 0,2 – 1,1 s en CPU |
+| Tamano | 4,7 GB en Ollama (Q4_K_M), 14,5 GB en f16 |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las cifras anteriores proceden del conjunto de evaluación propio del autor, no de suites académicas.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: aproximadamente 4,4-4,7 GB con cuantizacion Q4_K_M; unos 14,5 GB en f16.
-- GPU recomendadas: no se especifican; el modelo esta disenado para CPU y equipos de gama media. Cabe en GPU de consumo con 8 GB o mas (por ejemplo, RTX 3060/4060 en adelante) si se desea aceleracion.
-- Cabe en GPU de consumo: si, con cuantizacion Q4_K_M en tarjetas de 8 GB o mas; en CPU funciona con 8 GB de RAM.
-- Opciones de despliegue: llama.cpp y Ollama (soporte principal documentado); el tag `endpoints_compatible` sugiere compatibilidad con APIs de endpoints, aunque no se detalla.
-- Latencia: 0,2-1,1 s por respuesta en CPU segun el autor. No se publica throughput (tokens/s).
+- RAM estimada: unos 6 GB para la cuantización Q4_K_M (4,4 GB de archivo); unos 16 GB para f16 (14,5 GB).
+- VRAM: no se especifica una cifra medida para este escalón; el autor mide 8 GB de VRAM para el modelo VL-8B de la familia, no para Tab.
+- GPU recomendadas: no disponibles en la información proporcionada. El modelo está orientado a ejecución en CPU y a equipos de gama media (tableta, mini-PC).
+- Cabe en GPU de consumo: no confirmado; el diseño apunta a CPU y a equipos con 6 GB de RAM o más.
+- Opciones de despliegue: Ollama (`ollama run amersacirovic/openamer-max-tab`), llama.cpp con GGUF directo y Modelfile incluido en el repo, y API compatible con endpoints de Ollama (`/api/chat`).
+- Latencia: 0,2 – 1,1 s en CPU según el autor. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OpenAmer-Max-Tab | 7,62B | 16k | Apache-2.0 | GGUF en HF, Ollama | Ajuste QLoRA de Qwen2.5-7B-Instruct; evaluacion propia de 23 casos |
-| Qwen2.5-7B-Instruct | 7,62B | 32k (segun modelo base) | Apache-2.0 | Amplia, multiples formatos | Base del modelo; contexto mayor y benchmarks publicos |
-| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | Amplia | Mayor contexto; licencia con restricciones de uso |
-| Mistral 7B Instruct | 7,3B | 32k | Apache-2.0 | Amplia | Alternativa densa de tamano similar con amplia adopcion |
+| OpenAmer-Tab | 7,62B | 16k | Apache-2.0 | GGUF (Q4_K_M) | Ajuste LoRA de Qwen2.5-7B-Instruct, orientado a tableta y asistente de producto |
+| OpenAmer-Phone | 3,09B | no disponible | Apache-2.0 | GGUF | Escalón inferior de la misma familia; 43/45 en el conjunto congelado |
+| OpenAmer-Desktop | 14,7B | no disponible | Apache-2.0 | GGUF | Escalón superior; 44/45 en el conjunto congelado; en progreso según la model card |
+| Qwen2.5-7B-Instruct | 7,62B | 32k (modelo base original) | Apache-2.0 | safetensors, GGUF | Modelo base sin el ajuste de producto; capacidades generales más amplias |
 
-La comparativa se limita a datos publicos de los modelos alternativos; no se dispone de resultados de benchmarks comparables entre OpenAmer-Max-Tab y estas alternativas en la informacion proporcionada.
+La comparación con el base Qwen2.5-7B-Instruct es la más directa, ya que OpenAmer-Tab deriva de él. No se dispone de datos de benchmarks estándar para situar el modelo frente a alternativas de la misma categoría (Llama 3.1 8B, Mistral 7B, Gemma 2 9B) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Rendimiento en bosnio limitado: el autor reconoce que una de las preguntas del banco falla por no emplear las palabras "internet"/"mreža", aunque la respuesta sea correcta en sustancia.
-- Aritmetica: no hay garantia en multiplicaciones de cuatro digitos; conviene verificar los resultados.
-- Razonamiento: con 7,62B no sustituye a modelos de 70B; las cadenas de razonamiento largas son fragiles.
-- Sesgos: no se documentan evaluaciones de sesgo; al derivar de Qwen2.5, puede heredar sesgos de los datos de entrenamiento de la base.
-- Alucinacion: el autor enfatiza los rechazos honestos, pero no hay evaluacion independiente de la tasa de alucinacion.
-- Licencia: Apache-2.0 permite uso comercial, pero deben respetarse las condiciones de la base Qwen2.5-7B-Instruct.
-- Madurez: 0 descargas y 0 likes; sin validacion de la comunidad ni benchmarks estandar. Uso en produccion con cautela.
-- Operacion: mantener `repeat_penalty` en 1.0; valores superiores pueden invertir negaciones.
-- Contexto: 16k tokens, inferior a los 32k del modelo base Qwen2.5-7B-Instruct.
+- El propio autor reconoce que la formulación en bosnio es débil: ante "Mogu li koristiti OpenAmer bez interneta?" responde correctamente en sustancia pero no emplea las palabras "internet" ni "mreža"; es el único caso que falla del conjunto de 23.
+- No hay garantía en multiplicaciones de cuatro dígitos; conviene verificar la aritmética antes de confiar en ella.
+- No sustituye a un modelo grande: con 7,62B las cadenas de razonamiento largas siguen siendo frágiles.
+- Riesgo de alucinación inherente a los modelos de 7B, mitigado parcialmente por el ajuste orientado a rechazos honestos, pero no eliminado.
+- Mantener `repeat_penalty` en 1.0: con 1.1 el modelo invirtió una negación en el escalón Phone, y el mismo riesgo aplica a este escalón.
+- La evaluación se basa en conjuntos propios del autor (45 y 23 casos) y no en benchmarks académicos estándar, lo que limita la comparación con otros modelos.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen2.5-7B-Instruct, también Apache-2.0.
+- El repositorio tiene muy poca tracción (747 descargas, 1 like) y fue creado en noviembre de 2026; la madurez del proyecto y el soporte a largo plazo no están garantizados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openamer-max/openamer-max-tab
+- Modelo en Ollama: https://ollama.com/amersacirovic/openamer-max-tab
+- Web del proyecto: https://openamer-max.github.io
+- Pasaporte de dispositivos (Geraetepass): https://openamer-max.github.io/geraetepass/
+- Demo en el navegador: https://openamer-max-openamer-max-demo.hf.space
+- API de traduccion (138 idiomas): https://openamer-max-openamer-translate.hf.space/health
+- Codigo fuente: https://github.com/openamer-max/openamer
+- Dataset de benchmark: https://huggingface.co/datasets/openamer-max/openamer-max-benchmark
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Variante Watch: https://huggingface.co/openamer-max/openamer-max-watch
-- Variante Phone: https://huggingface.co/openamer-max/openamer-max-phone
-- PayPal del autor: https://www.paypal.com/qrcodes/managed/bfb5b6b5-c04c-4836-af60-987dff8cff61
+- Escalon inferior (Phone): https://huggingface.co/openamer-max/openamer-max-phone
+- Escalon inferior (Watch): https://huggingface.co/openamer-max/openamer-max-watch

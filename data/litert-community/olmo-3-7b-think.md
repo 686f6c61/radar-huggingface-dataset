@@ -2,59 +2,57 @@
 
 ## Resumen
 
-Olmo-3-7B-Think es un modelo de lenguaje de 7.298 millones de parámetros desarrollado por el Allen Institute for AI (Ai2), especializado en razonamiento con cadena de pensamiento larga. Esta ficha concreta corresponde a la conversión realizada por la comunidad `litert-community` al formato LiteRT-LM (`.litertlm`), pensada para ejecución en dispositivo (*on-device*) mediante el runtime LiteRT-LM de Google. El modelo base es `allenai/Olmo-3-7B-Think`, el checkpoint final de la línea Think de 7B tras las etapas de SFT y DPO y el entrenamiento con RLVR.
+Olmo-3-7B-Think es un modelo de razonamiento de 7.298 millones de parametros desarrollado por el Allen Institute for AI (Ai2), publicado como parte de la familia Olmo 3 junto a variantes de 32B y a las versiones Instruct. Se trata de un transformer denso entrenado desde cero con el dataset Dolma 3 y afinado con las colecciones Dolci, cuyo flujo completo (datos, codigo y pesos) se libera de forma abierta. Su particularidad es que siempre razona: genera una cadena de pensamiento larga antes de responder, lo que mejora tareas de matematicas y codigo.
 
-El modelo resuelve tareas de razonamiento matemático, código y seguimiento de instrucciones mediante un modo de pensamiento que siempre está activo: la plantilla cierra el prompt con `<|im_start|>assistant` y una etiqueta `<think>` abierta, y el modelo emite su razonamiento antes de cerrar con `</think>` y proporcionar la respuesta. La arquitectura es un transformer denso de 32 capas con atención de ventana deslizante en 24 de ellas y atención completa en las 8 restantes, con un contexto original de 65.536 posiciones.
+La ficha que nos ocupa no es el checkpoint original, sino la conversion realizada por la comunidad litert-community al formato LiteRT-LM (`.litertlm`) para el runtime de Google orientado a dispositivos. Se ofrecen tres ficheros: int8, int4 y una variante int4 con cache KV de 2.048 tokens pensada para telefonos. La conversion reduce el contexto operativo de 65.536 posiciones del modelo original a 4.096 (o 2.048 en la variante movil), un compromiso necesario para la inferencia en el borde.
 
-La relevancia de esta conversión radica en que permite desplegar un modelo de razonamiento de 7B en hardware de consumo y móvil: el archivo int4 ocupa 4,31 GB y decodifica a 34,8 tok/s en la GPU de un Mac Studio M4 Max, mientras que la variante con caché de 2.048 tokens se ejecuta en un Galaxy S26 de 12 GB a 7,0 tok/s. La licencia Apache 2.0 facilita su uso comercial.
+Es relevante ahora porque demuestra que un modelo de razonamiento de 7B puede ejecutarse en hardware de consumo y en moviles de gama alta, con velocidades de decodificacion de 34,8 tok/s en un Mac Studio M4 Max y 7,0 tok/s en un Galaxy S26, manteniendo una precision cercana al modelo bf16 original en GSM8K (81 frente a 84).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (32 capas; 24 con sliding-window attention de 4.096, 8 con atención completa cada cuarta capa) |
+| Arquitectura | Transformer denso con atencion de ventana deslizante e hibrida |
 | Parametros totales | 7.298.011.136 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 65.536 posiciones en el modelo original; 4.096 en los archivos int8 e int4; 2.048 en la variante `int4_c2048` |
-| Tipos de cuantizacion | int8 dinámica por capa lineal + embedding int8; int4 blockwise-32 (OCTAV) + embedding int8 |
-| Idiomas soportados | Inglés (`en`) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 4.096 tokens en los ficheros int8 e int4; 2.048 en la variante `int4_c2048`; 65.536 en el modelo original |
+| Tipos de cuantizacion | int8 (lineales y embedding) e int4 blockwise-32 (OCTAV) con embedding int8; activaciones en float |
+| Idiomas soportados | Ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | LiteRT-LM (`.litertlm`), un archivo TFLite por decoder graph |
-
-Otros datos técnicos: hidden size 4096, intermediate size 11008, 32 cabezas de atención y 32 cabezas KV de 128 dimensiones (MHA sin agrupación), QK-norm sobre la anchura completa de la proyección, bloque post-norm, RoPE theta 500.000 con YaRN (factor 8 sobre 8.192 posiciones originales) en las capas de atención completa, vocabulario de 100.278 tokens con embeddings no atados. Fecha de corte de datos: diciembre de 2024.
+| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso con una innovación estructural destacable: la intercalación de capas con atención de ventana deslizante (ventana de 4.096 tokens) y capas con atención completa cada cuatro capas. Las capas de atención completa aplican RoPE con YaRN (factor 8) para extender el contexto desde las 8.192 posiciones originales hasta 65.536. En los archivos LiteRT-LM, cada capa mantiene una caché KV de longitud completa de 4.096 posiciones, igual a la ventana deslizante, de modo que las capas deslizantes ven todos los tokens anteriores, replicando el comportamiento del modelo original en conversaciones de hasta 4.096 tokens.
+El modelo es un transformer denso de 32 capas con un diseno de atencion hibrida: 24 capas usan atencion de ventana deslizante de 4.096 tokens y 8 capas (cada cuarta) usan atencion completa. El tamano oculto es de 4.096, el intermedio de 11.008, con 32 cabezas de atencion y 32 cabezas KV de 128 dimensiones (multi-head attention sin agrupacion). Incorpora QK-norm sobre el ancho completo de la proyeccion, un bloque post-norm y RoPE con theta 500.000 y YaRN (factor 8 sobre 8.192 posiciones originales) aplicado en las capas de atencion completa. El vocabulario es de 100.278 tokens con embeddings no atados.
 
-El entrenamiento siguió un flujo completamente publicado: preentrenamiento sobre el dataset Dolma 3 y postentrenamiento sobre los datasets Dolci, con una secuencia de base Olmo-3-1025-7B, luego Think-SFT, luego Think-DPO y finalmente este checkpoint entrenado con RLVR (reinforcement learning with verifiable rewards). El modelo se describe en el paper Olmo 3 (arXiv 2512.13961). La conversión a LiteRT-LM se realizó con litert-torch 0.9.4 y el script `hf-to-litertlm` (directorio `olmo3_work/`), probado con litert-lm 0.18.0.
+El entrenamiento parte del dataset Dolma 3 para el preentrenamiento y de las colecciones Dolci para el post-entrenamiento. La linea Think sigue una secuencia de SFT, DPO y finalmente RLVR, siendo este checkpoint el resultado final de esa cadena. El corte de datos es diciembre de 2024. En la conversion a LiteRT-LM, cada capa mantiene una cache KV de longitud completa de 4.096 posiciones, igual a la ventana deslizante, de modo que las capas deslizantes ven todos los tokens anteriores, replicando el comportamiento del modelo fuente para conversaciones de hasta 4.096 tokens. La conversion se realizo con litert-torch 0.9.4 y se probo con litert-lm 0.18.0.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con cadena de pensamiento larga, siempre activa (no se puede desactivar).
-- Razonamiento matemático: el modelo base reporta MATH 95,1 y AIME 2024 71,6.
-- Generación de código: HumanEval+ 89,9 y LiveCodeBench v3 75,2 en el modelo base.
-- Seguimiento de instrucciones: IFEval 88,2.
-- Razonamiento de sentido común y multietapa: BBH 86,6.
-- Canal de pensamiento declarado en el bundle (`thought`, delimitado por `<think>` / `</think>`), que el runtime devuelve por separado de la respuesta final.
-- Presupuesto de pensamiento configurable: un `--thinking-budget` positivo cierra el canal al alcanzar el límite, aunque el modelo continúa razonando en el texto visible.
-- No soporta tool calling ni function calling según la información disponible.
-- No dispone de capacidades de visión ni audio.
-- Multilingüe limitado: solo inglés declarado.
+- Generacion de texto con razonamiento explicito: el modelo siempre emite una cadena de pensamiento delimitada por `<think>` y `</think>` antes de la respuesta final.
+- Razonamiento matematico y resolucion de problemas de varios pasos, con especial rendimiento en MATH, AIME y GSM8K.
+- Generacion de codigo y tareas de programacion competitiva (HumanEval+, LiveCodeBench).
+- Razonamiento de sentido comun y tareas de comprension compleja (BBH, MMLU, GPQA).
+- Seguimiento de instrucciones (IFEval).
+- El runtime separa el canal de pensamiento (`thought`) del texto de respuesta, de modo que la salida visible contiene solo la respuesta.
+- Capacidades multilingues limitadas al ingles.
+- No soporta tool calling ni function calling de forma nativa segun la informacion disponible.
+- No dispone de vision ni audio.
+- El modo de pensamiento no se puede desactivar: las opciones `--thinking false` y `--thinking-budget 0` del CLI no alteran la salida.
 
 ## Casos de uso
 
-- Razonamiento matemático asistido en dispositivo: el modelo puede resolver problemas de matemáticas paso a paso en un portátil o móvil sin conexión, gracias a sus resultados en MATH y AIME y a su cadena de pensamiento explícita, que permite auditar el razonamiento.
-- Tutoría educativa offline: desplegado en un dispositivo con LiteRT-LM, puede guiar al estudiante mostrando el razonamiento completo antes de la respuesta, útil en entornos sin conectividad o con requisitos de privacidad.
-- Asistencia a la programación en el borde: con HumanEval+ de 89,9 en el modelo base, puede integrarse en editores o IDE locales para explicar y generar fragmentos de código, siempre que la ventana de 4.096 tokens sea suficiente para el contexto del archivo.
-- Verificación de razonamiento en pipelines de CI: el canal `thought` separado permite registrar y auditar el proceso de razonamiento del modelo en tareas de revisión automática, comparando la traza con la respuesta final.
-- Prototipado de agentes de razonamiento en móvil: la variante `int4_c2048` se ejecuta en un Galaxy S26 de 12 GB a 7,0 tok/s, lo que permite validar flujos de razonamiento multietapa en hardware real antes de escalar a servidor.
-- Evaluación de modelos de razonamiento en investigación: al ser un modelo totalmente abierto (datos, código y flujo de entrenamiento publicados) y con licencia Apache 2.0, es adecuado para estudios de reproducibilidad y análisis de cadenas de pensamiento.
-- Despliegue en estaciones de trabajo Apple Silicon: el archivo int4 alcanza 34,8 tok/s en la GPU de un M4 Max, suficiente para asistentes interactivos locales con contexto de hasta 4.096 tokens.
+- Tutoria matematica en dispositivos: el modelo puede resolver problemas paso a paso mostrando el razonamiento, lo que resulta util en aplicaciones educativas que se ejecutan localmente en un portatil o movil sin conexion, gracias a su formato LiteRT-LM y a su tamano int4 de 4,31 GB.
+- Asistente de programacion offline: con una puntuacion de 89,9 en HumanEval+ y 75,2 en LiveCodeBench v3, puede integrarse en entornos de desarrollo sin acceso a red para generar y explicar fragmentos de codigo.
+- Analisis de documentos tecnicos en el borde: su ventana de 4.096 tokens permite procesar articulos, informes o extractos de codigo en un Mac o en un telefono de gama alta, manteniendo los datos en el dispositivo.
+- Prototipado de agentes de razonamiento en movil: la variante `int4_c2048` funciona en un Galaxy S26 de 12 GB con 7,0 tok/s, lo que permite experimentar con flujos de razonamiento multi-paso en hardware real de consumo.
+- Evaluacion de modelos abiertos en investigacion: al liberarse datos, codigo y pesos, sirve para estudiar el comportamiento de cadenas de pensamiento largas y el efecto de la cuantizacion int4 frente a bf16 (80 frente a 84 en GSM8K).
+- Despliegue en estaciones de trabajo sin GPU dedicada: el fichero int8 en CPU de un Mac M4 Max completa una prefill de 1.024 tokens mas 256 tokens decodificados en 46,04 segundos, viable para herramientas internas de baja concurrencia.
+- Generacion de documentacion tecnica con justificacion: el canal de pensamiento separado permite auditar el razonamiento del modelo en tareas de sintesis o clasificacion compleja.
 
 ## Benchmarks y rendimiento
 
-Resultados del modelo base reportados por Ai2 (con sus ajustes de generación: temperatura 0,6, top_p 0,95, max_tokens 32.768):
+Resultados reportados por Ai2 para el modelo original (bf16) con sus ajustes de generacion:
 
 | Benchmark | Resultado |
 |---|---|
@@ -68,61 +66,61 @@ Resultados del modelo base reportados por Ai2 (con sus ajustes de generación: t
 | MMLU | 77,8 |
 | GPQA | 46,2 |
 
-Resultados de las conversiones LiteRT-LM en GSM8K con presupuesto de salida de 2.048 tokens (respuestas puntuadas tras `</think>`):
+Resultados de la conversion LiteRT-LM en GSM8K con presupuesto de salida de 2.048 tokens (respuestas puntuadas tras `</think>`):
 
-| Variante | GSM8K |
+| Version | GSM8K |
 |---|---|
-| bf16 en transformers | 84 |
-| int8 LiteRT-LM (GPU Mac) | 81 |
-| int4 LiteRT-LM (GPU Mac) | 80 |
+| bf16 (transformers) | 84 |
+| int8 (`.litertlm`) | 81 |
+| int4 (`.litertlm`) | 80 |
 
-Rendimiento medido (prefill de 1.024 tokens + 256 tokens decodificados, contexto 2.048):
+Rendimiento medido (prefill de 1.024 tokens mas 256 tokens decodificados, contexto 2.048):
 
-| Configuración | Mac M4 Max | Galaxy S26 | Pixel 8a |
+| Configuracion | Mac Studio M4 Max | Galaxy S26 | Pixel 8a |
 |---|---|---|---|
 | int4 GPU | 8,59 s | el motor GPU no compila | no ejecutado |
-| int4 con caché 2.048, GPU | 6,58 s (46,6 tok/s decode) | 41,32 s | no ejecutado |
-| int8 GPU | 9,64 s (30,4 tok/s decode) | no ejecutado | no ejecutado |
+| int4 con cache 2.048, GPU | 6,58 s | 41,32 s | no ejecutado |
+| int8 GPU | 9,64 s | no ejecutado | no ejecutado |
 | int8 CPU | 46,04 s | no ejecutado | no ejecutado |
 | int4 CPU | 51,97 s | no ejecutado | no ejecutado |
 
-En el Mac, el archivo int4 es más rápido en GPU (34,8 tok/s de decodificación frente a 30,4 del int8) y el int8 es más rápido en CPU (prefill de 131 tok/s frente a 64 del int4). No se midió en iOS.
+Velocidad de decodificacion: 34,8 tok/s (int4 GPU, Mac M4 Max), 30,4 tok/s (int8 GPU), 46,6 tok/s (int4 con cache 2.048, Mac GPU) y 7,0 tok/s (int4 con cache 2.048, Galaxy S26).
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: int8 7,43 GB; int4 4,31 GB; variante `int4_c2048` 4,31 GB.
-- GPU recomendadas: Apple Silicon (M4 Max probado), GPU móviles compatibles con LiteRT-LM; en el Galaxy S26 de 12 GB solo compila la variante con caché de 2.048 tokens.
-- Cabe en GPU de consumo: sí, el archivo int4 (4,31 GB) es viable en equipos con 8 GB o más de memoria unificada o VRAM; la variante int8 requiere unos 8 GB.
-- Opciones de despliegue: runtime LiteRT-LM (versión 0.18.0 probada); no se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia y throughput: en Mac M4 Max, int4 GPU 34,8 tok/s de decodificación (46,6 tok/s con la variante de caché 2.048); int8 GPU 30,4 tok/s; int8 CPU con prefill de 131 tok/s. En Galaxy S26, 7,0 tok/s con la variante `int4_c2048`. En litert-lm 0.17.1 ambos archivos respondieron correctamente en CPU del Mac.
-- Advertencia de despliegue: en el Galaxy S26 los archivos con caché de 4.096 tokens no construyen el motor GPU; solo funciona la variante de 2.048.
+- VRAM estimada: aproximadamente 4,31 GB para los ficheros int4 y 7,43 GB para el int8, mas el espacio de activaciones y cache KV.
+- GPU recomendadas: Apple Silicon (M4 Max probado), GPU integradas o dedicadas con soporte LiteRT; en movil, un Galaxy S26 de 12 GB.
+- Cabe en GPU de consumo: si, los ficheros int4 (4,31 GB) caben en GPUs con 8 GB o mas; el int8 requiere al menos 10-12 GB para operar con holgura.
+- En moviles: la variante `int4_c2048` funciona en un dispositivo de 12 GB; los ficheros con cache de 4.096 tokens no compilaron el motor GPU en el Galaxy S26 probado.
+- Opciones de despliegue: runtime LiteRT-LM (CLI y libreria), con conversion desde Hugging Face mediante `hf-to-litertlm`. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ver tabla de la seccion anterior; el int4 es mas rapido en GPU (10,9 % menos tiempo) y el int8 en CPU (prefill de 131 tok/s frente a 64 tok/s del int4).
+- No medido en iOS.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato/despliegue | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Olmo-3-7B-Think (LiteRT-LM, esta ficha) | 7,3B | 4.096 (2.048 en variante móvil) | Apache 2.0 | LiteRT-LM, on-device | Cuantizado int8/int4; GSM8K 80-81 |
-| allenai/Olmo-3-7B-Think (original) | 7,3B | 65.536 | Apache 2.0 | safetensors, transformers | bf16; GSM8K 84; requiere GPU de servidor |
-| Modelos de razonamiento de 7B comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks comparativos en la información proporcionada |
-
-La comparación directa más relevante es con el modelo original de Ai2: la conversión LiteRT-LM pierde contexto (de 65.536 a 4.096 tokens) y 3-4 puntos en GSM8K, pero reduce el tamaño a 4,31 GB en int4 y habilita la ejecución en dispositivo.
+| Olmo-3-7B-Think (LiteRT-LM) | 7,3B | 4.096 (2.048 en movil) | Apache 2.0 | `.litertlm` | Conversion on-device; GSM8K 80-81 |
+| Olmo-3-7B-Think (original) | 7,3B | 65.536 | Apache 2.0 | safetensors | Modelo fuente; GSM8K 84 en bf16 |
+| Alternativas de 7B con razonamiento | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- El pensamiento no se puede desactivar: `--thinking false` y `--thinking-budget 0` producen exactamente la misma salida; un presupuesto positivo cierra el canal pero el modelo sigue razonando en el texto visible.
-- El razonamiento es largo: en GSM8K la respuesta media fue de unos 1.600 tokens y un tercio de las respuestas del modelo bf16 agotaron el presupuesto de 2.048 tokens de las pruebas, frente a los 32.768 tokens recomendados por Ai2. Esto puede truncar respuestas en contextos cortos.
-- Contexto reducido en esta conversión: 4.096 tokens (2.048 en la variante móvil) frente a los 65.536 del original; prompt, pensamiento y respuesta comparten esa ventana.
-- Solo inglés declarado; no hay soporte multilingüe verificado.
-- Riesgo de alucinación inherente a los modelos de lenguaje; la cadena de pensamiento explícita no garantiza la corrección de la respuesta.
-- No se documentan sesgos específicos en la información disponible.
-- Licencia Apache 2.0 permite uso comercial, pero debe verificarse el cumplimiento de las condiciones de los datasets de entrenamiento (Dolma 3, Dolci) para usos sensibles.
-- En el Galaxy S26 probado, los archivos con caché de 4.096 tokens no construyen el motor GPU; verificar compatibilidad por dispositivo antes de desplegar.
-- No medido en iOS; el decoder graph de cada archivo es una única sección TFLite de 6,53 (dato truncado en la información disponible).
+- El modelo solo soporta ingles; no se han validado capacidades en otros idiomas.
+- El razonamiento es obligatorio y no se puede desactivar: `--thinking false` y `--thinking-budget 0` producen exactamente la misma salida, y un presupuesto positivo cierra el canal mientras el modelo sigue razonando en el texto visible.
+- Las cadenas de pensamiento son largas: en GSM8K la respuesta media fue de unos 1.600 tokens y un tercio de las respuestas del modelo bf16 agotaron el presupuesto de 2.048 tokens, frente a los 32.768 recomendados por Ai2.
+- El contexto se reduce a 4.096 tokens en los ficheros int8 e int4 y a 2.048 en la variante movil, muy por debajo de las 65.536 posiciones del modelo original.
+- La cuantizacion int4 degrada ligeramente la precision (80 frente a 84 en GSM8K) y su prefill en CPU es notablemente mas lento que el int8.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, no cuantificado en la informacion disponible; el razonamiento visible puede facilitar su deteccion.
+- No se documentan sesgos especificos en la informacion proporcionada.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse el cumplimiento de las condiciones del modelo base y de los datos de entrenamiento.
+- Los ficheros con cache de 4.096 tokens no compilaron el motor GPU en el Galaxy S26 probado; el soporte en iOS no se ha medido.
+- El corte de conocimiento es diciembre de 2024.
 
 ## Enlaces
 
-- Hugging Face (conversión LiteRT-LM): https://huggingface.co/litert-community/Olmo-3-7B-Think
-- Modelo base en Hugging Face: https://huggingface.co/allenai/Olmo-3-7B-Think
+- Hugging Face (conversion LiteRT-LM): https://huggingface.co/litert-community/Olmo-3-7B-Think
+- Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Script de conversión hf-to-litertlm: https://github.com/john-rocky/hf-to-litertlm
-- Paper Olmo 3: arXiv 2512.13961
+- Script de conversion hf-to-litertlm: https://github.com/john-rocky/hf-to-litertlm
+- Paper de Olmo 3: https://arxiv.org/abs/2512.13961

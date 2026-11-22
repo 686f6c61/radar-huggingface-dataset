@@ -2,96 +2,102 @@
 
 ## Resumen
 
-Mark-Engineer-302M es un modelo publicado en Hugging Face por el usuario `miceworks` bajo el identificador `miceworks/Mark-Engineer-302M`. La única información verificable en el momento de redactar esta ficha es su licencia (AGPL-3.0), la región declarada (`us`) y la fecha de creación y actualización del repositorio (26 de octubre de 2026). La model card está prácticamente vacía: solo contiene el bloque de metadatos con la licencia, sin descripción, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso.
+Mark-Engineer-302M es un checkpoint experimental de tipo "narrow" desarrollado por miceworks, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de lenguaje de arquitectura DeepSeek2 con Mixture-of-Experts (MoE) y Multi-Head Latent Attention (MLA), diseñado específicamente para tareas de ingeniería de sistemas: generación de código POSIX C, stubs de llamadas al sistema Linux, semántica de barreras de memoria y scripts de enlazador bare-metal. Su nomenclatura "302M" hace referencia a la familia, aunque el modelo contiene 534.549.600 parámetros físicos totales y activa 138.187.872 por token a través de 8 capas.
 
-El sufijo «302M» del identificador sugiere un modelo de aproximadamente 302 millones de parámetros, lo que lo situaría en la categoría de modelos pequeños aptos para inferencia en CPU y GPUs de consumo. No obstante, esta cifra no está confirmada en la documentación del repositorio, por lo que debe tratarse como una deducción del nombre y no como un dato técnico verificado.
+El modelo destaca por su extrema eficiencia: el contenedor GGUF cuantizado a IQ4_NL ocupa solo 286,99 MiB, lo que permite ejecutarlo en dispositivos edge de baja potencia como una Raspberry Pi 5 (8 GB) o GPUs de entrada como la RTX 2060 Super, consumiendo menos del 4% de una asignación de 8 GB de VRAM. Su ventana de contexto es de 4096 tokens y emplea un vocabulario reducido de 4311 tokens BPE activos, optimizado para prosa técnica y código de sistemas.
 
-Su relevancia actual es limitada: el repositorio registra 0 descargas y 0 «likes», no tiene pipeline declarado y no se han encontrado referencias externas, papers ni anuncios asociados. Se trata, por tanto, de una publicación sin validación pública, y cualquier evaluación seria debería comenzar por inspeccionar los archivos del repositorio y ejecutar pruebas propias.
+La relevancia de este modelo radica en su enfoque de nicho: no compite en capacidades generales, sino que se posiciona como una herramienta especializada y reproducible para tareas de ingeniería de bajo nivel, con partición de expertos por dominio (sistemas, matemáticas, seguridad, datos estructurados) y soporte para tool calling y razonamiento multi-paso mediante tokens de control epistémico.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 302M (deducido del identificador del modelo; no confirmado en la model card) |
-| Parámetros activos | no procede / no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | AGPL-3.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | deepseek2 (MoE con Multi-Head Latent Attention) |
+| Parametros totales | 534.549.600 (137 tensores) |
+| Parametros activos | 138.187.872 por token |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantizacion | IQ4_NL (4-bit no lineal, GGUF) |
+| Idiomas soportados | en (ingles; la model card solo declara ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
+| Tamano del contenedor | 286,99 MiB (300.929.536 bytes) |
+| Capas | 8 |
+| Dimension oculta | 1024 |
+| Cabezas de atencion | 16 |
+| Rangos MLA | q_lora_rank=512, kv_lora_rank=256, qk_rope_head_dim=32 |
+| Expertos MoE | 16 enrutados + 1 compartido (2 activos por token) |
+| Dimension FFN de experto | 1536 |
+| Vocabulario | 4311 tokens BPE activos (3981 merges) + 27721 slots reservados |
+| SHA-256 | 63ab6f386de740afe4502ac73a7c2cb87c8c2a09b39914cb150ffc11f9e800a7 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer decoder-only, de una arquitectura híbrida (por ejemplo, atención lineal combinada con capas recurrentes) o de cualquier otra variante, así como el número de capas, la dimensión oculta, el número de cabezas de atención o el vocabulario empleado.
+El modelo emplea una topologia DeepSeek2 MoE con Multi-Head Latent Attention (MLA), que proyecta los estados de clave y valor a una representación latente de bajo rango compartida para desacoplar el escalado de memoria de la longitud de contexto. El KV cache por token en FP16 es de 4608 bytes (8 * (256 + 32) * 2), lo que supone un ahorro de memoria de 7,1x frente a una atención MHA estándar: 18 MiB frente a 128 MiB para 4096 tokens. Los embeddings rotatorios desacoplados se concatenan en una dimensión separada de 32.
 
-Tampoco hay datos sobre el corpus de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se aplicaron fases de ajuste supervisado, RLHF o DPO. No consta información sobre tokenizador, ventana de contexto nativa, técnicas de decodificación especulativa ni optimizaciones de atención. Cualquier afirmación al respecto sería especulativa y no debe utilizarse para tomar decisiones de adopción.
+La capa MoE cuenta con 16 expertos enrutados (top-2) más 1 experto compartido siempre activo, con enrutamiento aux-loss-free basado en sesgos por experto almacenados en FP32. La regla de actualización de sesgos es b_i ← b_i + γ · sign(f̄ − f_i) con γ = 0,001, donde f_i es la frecuencia empírica del experto en el batch y f̄ la frecuencia uniforme objetivo. Los 16 expertos se particionan en 4 "clanes" funcionales de 4 expertos cada uno: Clan 0 (sistemas, kernel, concurrencia), Clan 1 (matemáticas, lógica formal, STEM), Clan 2 (seguridad, protocolos, validación) y Clan 3 (datos estructurados, tool calling, lógica simbólica).
+
+El entrenamiento se realizó sobre currículos abiertos alojados en Hugging Face: miceworks/Mark-Open-SLM-Curriculum, miceworks/Mark-Cyber-Curriculum y miceworks/Mark-Ultra-Curriculum, con foco en interfaces POSIX C, stubs de llamadas al sistema Linux, semántica de barreras de memoria y scripts de enlazador bare-metal. Se usó el optimizador AdamW (β1=0,9, β2=0,95, weight decay 0,1, gradient clipping 1,0). El estado de entrenamiento se etiqueta explícitamente como EXPERIMENTAL_NARROW_CHECKPOINT. No se especifica el número de tokens de entrenamiento ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- No hay capacidades documentadas por el autor. La model card no describe ninguna tarea soportada.
-- Generación de texto: no confirmada. El identificador sugiere un modelo de lenguaje, pero no se especifica la tarea de entrenamiento (causal LM, masked LM, clasificación u otra).
-- Razonamiento, matemáticas y código: no disponibles.
-- Soporte de *tool calling* o *function calling*: no disponible.
-- Capacidades de agente o razonamiento multi-paso: no disponibles.
-- Capacidades multimodales (visión, audio): no disponibles.
-- Capacidades multilingües: no disponibles; el campo de idiomas del repositorio está vacío.
-- Modo «thinking» o razonamiento explícito: no disponible.
+- Generación de texto técnico en inglés, con foco en prosa de ingeniería y documentación de sistemas.
+- Generación de código C POSIX, stubs de llamadas al sistema Linux y scripts de enlazador bare-metal.
+- Razonamiento matemático y lógico formal (Clan 1 de expertos).
+- Seguridad, protocolos y validación (Clan 2 de expertos).
+- Datos estructurados, tool calling y lógica simbólica (Clan 3 de expertos).
+- Soporte de tool calling / function calling mediante delimitadores `<tool_call>` y `</tool_call>`.
+- Modo de razonamiento con tokens `<think>` y `</think>`.
+- Razonamiento multi-paso y self-RAG mediante tokens epistémicos `[RETRIEVE]`, `[/RETRIEVE]`, `[EVALUATE]`, `[ACCEPT]`, `[REJECT]`.
+- Capacidades multilingües limitadas: solo se declara inglés; la fertilidad medida en prosa técnica portuguesa (≈2,57 caracteres/token) sugiere cierta competencia, pero no se declara oficialmente.
+- No se declaran capacidades de visión ni audio.
 
 ## Casos de uso
 
-Los siguientes escenarios son hipotéticos y presuponen que el modelo es un modelo de lenguaje causal de ~302M parámetros con generación de texto funcional. Deben validarse empíricamente antes de cualquier uso real.
-
-- Clasificación y etiquetado de texto a bajo coste: un modelo de 302M puede ajustarse por *fine-tuning* para tareas de clasificación (sentimiento, categorización de tickets, detección de *spam*) y ejecutarse en CPU con latencias de decenas de milisegundos, siempre que se confirme la arquitectura y el tokenizador.
-- Autocompletado y sugerencias en editores: por su tamaño reducido, encaja en escenarios de generación corta en local, sin enviar datos a un servidor externo, algo relevante para herramientas que manejan código o texto confidencial.
-- Enrutamiento y preprocesado en pipelines RAG: uso como modelo auxiliar para reescribir consultas, generar palabras clave o decidir qué documentos recuperar antes de invocar un modelo mayor.
-- Experimentación académica y docencia: útil como banco de pruebas para estudiar técnicas de cuantización, destilación o ajuste fino con recursos limitados (una única GPU de consumo o incluso CPU).
-- Prototipado rápido de asistentes conversacionales: para validar interfaces y flujos de conversación antes de invertir en un modelo de mayor tamaño, con la ventaja de que la inferencia local simplifica el ciclo de desarrollo.
-- Generación de datos sintéticos a pequeña escala: creación de pares pregunta-respuesta o textos de aumento de datos para entrenar modelos posteriores, siempre que la calidad se valide manualmente.
-- Filtrado y moderación previa en el *edge*: ejecución en dispositivos con poca memoria para descartar contenido evidentemente irrelevante antes de escalar a un modelo mayor.
+- Generación de stubs de llamadas al sistema Linux: el modelo está entrenado específicamente sobre interfaces POSIX C y stubs de syscalls, por lo que puede producir firmas y esqueletos de implementación coherentes para integración en proyectos de sistemas operativos o emuladores.
+- Asistencia en desarrollo de código de bajo nivel: dado su entrenamiento en semántica de barreras de memoria y scripts de enlazador, resulta adecuado para generar fragmentos de código C con requisitos de concurrencia o para revisar linker scripts en proyectos bare-metal.
+- Validación sintáctica de esquemas en pipelines de CI: con 4096 tokens de contexto y soporte de tool calling, puede integrarse como validador de esquemas POSIX o de protocolos en pasos automatizados de integración continua.
+- Automatización de tareas de razonamiento simbólico y datos estructurados: el Clan 3 de expertos está orientado a tool calling y lógica simbólica, lo que permite usarlo en agentes ligeros que transforman datos estructurados o invocan herramientas externas.
+- Despliegue en dispositivos edge y Raspberry Pi 5: con un contenedor de 286,99 MiB y consumo inferior al 4% de 8 GB de VRAM, es viable para asistentes locales de documentación técnica o generación de código en entornos sin GPU dedicada.
+- Filtrado y clasificación de seguridad en revisiones de código: el Clan 2 (seguridad, protocolos, validación) permite usar el modelo para detectar patrones inseguros en código C o validar protocolos en entornos de desarrollo.
+- Prototipado rápido de agentes con self-RAG: los tokens epistémicos `[RETRIEVE]`, `[EVALUATE]`, `[ACCEPT]` y `[REJECT]` permiten construir bucles de recuperación y evaluación en aplicaciones de documentación técnica o soporte a desarrolladores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluación, y la búsqueda web no ha devuelto referencias al modelo (los resultados obtenidos corresponden a noticias sobre una adquisición empresarial, un artículo periodístico sobre otro modelo y webs sin relación).
+No se han publicado resultados de benchmarks cuantitativos en la información disponible. La model card indica únicamente que el modelo fue "validado en interfaces de ingeniería de sistemas de bajo nivel con validez de esquema sintáctico en generación de POSIX C y stubs de kernel", sin proporcionar métricas numéricas (MMLU, HumanEval, GSM8K u otras).
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones derivadas únicamente del recuento de parámetros indicado en el identificador (302M) y no de especificaciones publicadas por el autor. Deben recalcularse una vez se conozca el número real de parámetros y el formato de pesos.
-
-- VRAM estimada en FP32: en torno a 1,2 GB solo para los pesos (302M × 4 bytes), más el estado del runtime y el *cache* de atención.
-- VRAM estimada en FP16/BF16: en torno a 0,6 GB para los pesos.
-- VRAM estimada en INT8: en torno a 0,3 GB; en 4 bits, en torno a 0,15-0,2 GB.
-- GPU recomendadas: cualquier GPU con 2 GB o más de VRAM es suficiente en la práctica para un modelo de este tamaño; una RTX 3060, RTX 4060 o RTX 4090 lo alojarían con amplio margen. Para despliegues en servidor, una A100 o H100 estarían sobredimensionadas salvo que se busque maximizar el *throughput* por agregación de peticiones.
-- Viabilidad en GPU de consumo: sí, con alta probabilidad, siempre que el modelo cargue en un runtime estándar; también es plausible su ejecución en CPU.
-- Opciones de despliegue: no hay ninguna confirmada. Si los pesos están en formato `safetensors` o `PyTorch`, podría usarse con `transformers`, vLLM o TGI; si se publican versiones GGUF, sería compatible con llama.cpp, Ollama y LM Studio. Ninguna de estas rutas está verificada.
-- Latencia y *throughput*: no disponibles. No se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 320 MiB en cuantización IQ4_NL (contenedor de 286,99 MiB), más el KV cache (18 MiB para 4096 tokens en FP16).
+- GPU recomendadas: NVIDIA GeForce RTX 2060 Super (8 GB GDDR6, 256-bit, 448 GB/s) como referencia mínima según el autor; cualquier GPU con al menos 1 GB de VRAM libre es suficiente.
+- Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer moderna, así como en Raspberry Pi 5 (8 GB) y dispositivos edge de baja potencia.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), y por extensión cualquier runtime compatible con GGUF como Ollama; la model card menciona endpoints_compatible.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La comparación se establece con modelos pequeños de dominio público cuyas cifras son ampliamente conocidas, pero conviene verificarlas en sus respectivas model cards antes de citarlas.
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Mark-Engineer-302M | 534,5M | 138,2M | 4096 | Apache 2.0 | GGUF (IQ4_NL) |
+| Modelos comparables de propósito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Mark-Engineer-302M | 302M (deducido, sin confirmar) | no disponible | AGPL-3.0 | Repositorio HF con 0 descargas y sin pipeline declarado |
-| SmolLM2-360M | 362M | 8.192 tokens (dato público, verificar) | Apache-2.0 | Muy desplegado, con variantes GGUF y soporte en varias herramientas |
-| Qwen2.5-0.5B | 494M | 32.768 tokens (dato público, verificar) | Apache-2.0 | Muy desplegado, con cuantizaciones publicadas |
-| Gemma 2 2B | 2.600M aprox. | 8.192 tokens (dato público, verificar) | Licencia Gemma (uso condicionado) | Amplia disponibilidad y versiones cuantizadas |
-
-Frente a estas alternativas, Mark-Engineer-302M parte con desventajas objetivas: carece de documentación, no declara contexto ni idiomas, no ofrece cuantizaciones y su licencia AGPL-3.0 impone obligaciones copyleft más estrictas que las licencias Apache-2.0 de SmolLM2 y Qwen2.5. No existe ningún dato de rendimiento que permita situarlo por delante o por detrás de estos modelos.
+No se dispone de información sobre modelos directamente comparables en la misma categoría (SLM MoE especializados en ingeniería de sistemas con arquitectura DeepSeek2 y MLA). La comparativa cuantitativa con alternativas no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: no hay arquitectura, tokenizador, contexto, idiomas ni instrucciones de uso publicadas, lo que impide evaluar su idoneidad sin inspeccionar los archivos del repositorio.
-- Riesgo de alucinación: desconocido en magnitud, pero en modelos pequeños de esta escala suele ser elevado; sin benchmarks no puede acotarse.
-- Sesgos: no evaluados. No se ha publicado ninguna información sobre la composición del corpus ni sobre procesos de alineación.
-- Idiomas: no declarados; el campo de idioma del repositorio está vacío, por lo que no puede asumirse un rendimiento aceptable en castellano.
-- Licencia AGPL-3.0: es una licencia copyleft fuerte. Su uso en un servicio ofrecido por red puede obligar a liberar el código fuente del servicio modificado; conviene revisar las implicaciones con el departamento legal antes de un despliegue comercial.
-- Repositorio sin validación: 0 descargas, 0 «likes», sin pipeline declarado y con una model card reducida al bloque de licencia. No hay evidencia de que los pesos hayan sido probados por terceros.
-- Metadatos a revisar: la fecha declarada de creación y actualización (26 de octubre de 2026) es poco habitual y apunta a un repositorio de prueba, a una carga automatizada o a metadatos inconsistentes.
-- Sin garantías de procedencia de los datos de entrenamiento: no se indica el origen del corpus, lo que impide descartar problemas de derechos de autor o de contaminación de benchmarks.
-- No apto como base de producción sin una evaluación previa: al no existir métricas ni pruebas de terceros, cualquier adopción exige una batería propia de evaluación de calidad, latencia y seguridad.
+- Estado experimental: el checkpoint se etiqueta explícitamente como EXPERIMENTAL_NARROW_CHECKPOINT, por lo que no está validado para uso en producción general.
+- Contexto limitado: 4096 tokens, insuficiente para tareas que requieran ventanas largas (análisis de repositorios completos, conversaciones multi-turno extensas).
+- Idioma: solo se declara inglés; el soporte de otros idiomas no está garantizado, aunque la fertilidad medida en portugués técnico sugiere cierta capacidad no oficial.
+- Vocabulario muy reducido (4311 tokens BPE activos): puede degradar el rendimiento en texto fuera del dominio técnico y aumentar la longitud efectiva de las secuencias.
+- Fidelidad de espacios en blanco: la model card advierte que la tokenización de indentación requiere byte-fallback y que los 4 espacios iniciales pueden ser eliminados por el tokenizador BPE, lo que puede afectar a la generación de código Python u otros lenguajes sensibles a indentación.
+- Sesgos conocidos: no se documentan sesgos específicos en la información disponible.
+- Riesgo de alucinación: no cuantificado; al ser un modelo pequeño y especializado, el riesgo en dominios fuera de su entrenamiento es presumiblemente alto.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el estado experimental y la falta de benchmarks desaconsejan su uso en producción sin validación previa.
+- Caveat de producción: la ausencia de métricas de benchmarks y de datos sobre tokens de entrenamiento limita la evaluación rigurosa de su calidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/miceworks/Mark-Engineer-302M
-- No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo. Los resultados de la búsqueda web realizada no guardan relación con `miceworks/Mark-Engineer-302M`.
+- Modelo en Hugging Face: https://huggingface.co/miceworks/Mark-Engineer-302M
+- Repositorio de código y pipelines: https://github.com/thu12dta3/Mark-AI/tree/main/scripts
+- Dataset Mark-Open-SLM-Curriculum: https://huggingface.co/datasets/miceworks/Mark-Open-SLM-Curriculum
+- Dataset Mark-Cyber-Curriculum: https://huggingface.co/datasets/miceworks/Mark-Cyber-Curriculum
+- Dataset Mark-Ultra-Curriculum: https://huggingface.co/datasets/miceworks/Mark-Ultra-Curriculum

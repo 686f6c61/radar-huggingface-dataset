@@ -2,48 +2,53 @@
 
 ## Resumen
 
-Qwen3.6-Candid-Coder-V1.1-35B-A3B-i1-GGUF es una cuantización en formato GGUF del modelo Qwen3.6-Candid-Coder-V1.1-35B-A3B, publicada por el usuario mradermacher. El modelo base es un fine-tune de la familia Qwen3.6 orientado a tareas de programación, con una arquitectura de mezcla de expertos (MoE) que activa una fracción reducida de sus 35.505.251.456 parámetros totales por token. Esta versión concreta no aporta pesos nuevos, sino que redistribuye los pesos del modelo original en múltiples niveles de cuantización para facilitar su despliegue en hardware con recursos limitados.
+Qwen3.6-Candid-Coder-V1.1-35B-A3B-i1-GGUF es una cuantizacion en formato GGUF del modelo DarkKitsune/Qwen3.6-Candid-Coder-V1.1-35B-A3B, publicada por el cuantizador mradermacher. Se trata de una variante afinada de la familia Qwen3.5/3.6 orientada a generacion de codigo, uso de herramientas (tool calling) y razonamiento con agentes, con un sesgo explicito hacia el estilo "abliterated/uncensored" segun las etiquetas del autor. El modelo base declara 35.505.251.456 parametros totales (unos 35,5 mil millones) en formato safetensors, aunque la nomenclatura "A3B" del nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 3 mil millones de parametros activos por token; esta cifra no se confirma de forma explicita en la informacion disponible.
 
-La relevancia de esta publicación radica en que permite ejecutar un modelo de ~35B parámetros con activación dispersa en GPUs de consumo mediante cuantizaciones agresivas (desde IQ1_S hasta Q6_K), algo imposible con los pesos originales en precisión completa. El autor emplea cuantización con imatrix (matriz de importancia) para preservar la calidad en los niveles más bajos, una técnica habitual en el ecosistema llama.cpp.
+El repositorio ofrece cuantizaciones de tipo imatrix e i1 (IQ y Q_K) generadas con llama.cpp, con tamanos que van desde los 13,3 GB de la i1-Q2_K hasta los 29,3 GB de la i1-Q6_K. Es relevante ahora porque permite ejecutar en hardware de consumo un modelo de ~35B con comportamiento orientado a codigo y agentes, manteniendo buena parte de la calidad del modelo original gracias al uso de matrices de importancia (imatrix). El repo acumula 3883 descargas y 1 like, y se actualizo por ultima vez el 20 de noviembre de 2026.
 
-No obstante, la información pública disponible es muy escasa: no se detallan licencia, idiomas, pipeline, benchmarks ni la composición del dataset de entrenamiento del modelo base. La model card se limita a los metadatos de la conversión y a la lista de cuantizaciones generadas.
+La informacion sobre licencia, idiomas y pipeline no esta disponible en los metadatos proporcionados, lo que limita la evaluacion para uso comercial sin consultar el modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos) derivada de la familia Qwen3.6, según el nombre del modelo; detalles no disponibles |
-| Parametros totales | 35.505.251.456 |
-| Parametros activos | no disponible (el sufijo "A3B" sugiere ~3B activos, sin confirmación oficial) |
+| Arquitectura | Transformer (presumiblemente MoE, segun nomenclatura "A3B"; no confirmado explicitamente) |
+| Parametros totales | 35.505.251.456 (~35,5 B) |
+| Parametros activos | no disponible (la nomenclatura "A3B" sugiere ~3 B activos, sin confirmacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | imatrix, i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
+| Idiomas soportados | en (segun model card); resto no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado, con imatrix) |
+| Formato de pesos | GGUF (repo de cuantizaciones); safetensors en el modelo base |
+| Tamano del repo | 279,4 GB |
+| Modelo base | DarkKitsune/Qwen3.6-Candid-Coder-V1.1-35B-A3B |
+| Libreria | transformers / llama.cpp (GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-Candid-Coder-V1.1-35B-A3B procede de DarkKitsune y se presenta como un fine-tune de la familia Qwen3.6 orientado a código. Por el nombre se infiere una arquitectura de mezcla de expertos con ~35B parámetros totales y ~3B activos por token, pero no se dispone de documentación oficial sobre el número de expertos, la dimensión oculta, el número de capas ni el mecanismo de enrutamiento.
+La model card del repositorio de cuantizacion no detalla la arquitectura interna del modelo base. Por la nomenclatura del nombre ("35B-A3B") y las etiquetas (qwen3.5, MoE implicito en el patron A3B), es razonable inferir una arquitectura de mezcla de expertos con ~35B parametros totales y ~3B activos, pero esta informacion no aparece confirmada en los datos proporcionados. El modelo base pertenece a la familia Qwen3.5/3.6 y esta afinado para tareas de codigo, agentes y tool-use, segun las etiquetas del autor.
 
-Respecto al entrenamiento, no hay información pública sobre el número de tokens, la composición del dataset, la existencia de RLHF/DPO ni técnicas de alineación. La única información técnica verificable es la relativa a la conversión a GGUF: el autor indica `convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1` y el uso de cuantizaciones ponderadas con imatrix, lo que implica que se calculó una matriz de importancia a partir de un corpus de calibración para minimizar la pérdida de calidad en los niveles bajos. También se marca `skip_mmproj: 1`, lo que sugiere que el modelo base no incluye proyector multimodal o que este se omitió en la conversión.
+No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares. Las etiquetas "abliterated" y "uncensored" indican que el afinamiento incluyo una fase de eliminacion de rechazos (abliteration) orientada a reducir las negativas del modelo ante ciertas peticiones. La cuantizacion de mradermacher emplea matrices de importancia (imatrix) para mejorar la calidad de los cuantos de baja precision, y ofrece tanto cuantos estaticos (en el repo Qwen3.6-Candid-Coder-V1.1-35B-A3B-GGUF) como dinamicos i1.
 
 ## Capacidades
 
-- Generación de texto y código: el modelo está etiquetado como "Coder", por lo que su orientación principal es la generación y asistencia en programación.
-- Razonamiento multi-paso: presumiblemente soportado por la familia Qwen3.6, aunque no hay confirmación explícita en la información disponible.
-- Tool calling / function calling: no disponible en la documentación proporcionada.
-- Soporte de agentes: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible; el flag `skip_mmproj` sugiere ausencia de componentes multimodales en esta conversión.
+- Generacion de texto y codigo, con enfasis declarado en tareas de programacion (etiquetas coding, code, kat-coder).
+- Razonamiento multi-paso y modo de pensamiento (etiquetas reasoning, sage, ornith).
+- Uso de herramientas y function calling (etiquetas tool-use, agent).
+- Comportamiento orientado a agentes (etiquetas agent, apex).
+- Capacidades multilingues: la model card solo declara "en"; no hay confirmacion de otros idiomas.
+- Variante "abliterated/uncensored": reduce las negativas del modelo ante peticiones que el modelo original rechazaria.
+- No se confirman capacidades de vision, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Asistencia de programación en local: el modelo puede desplegarse con llama.cpp u Ollama en una estación de trabajo con GPU de consumo, usando cuantizaciones Q4_K_M o Q5_K_M para equilibrar calidad y VRAM, y emplearse como autocompletado o chat de código en el IDE.
-- Generación de código en pipelines de CI/CD: integrado mediante un servidor compatible con la API de OpenAI (el tag `endpoints_compatible` lo indica), puede generar tests, parches o documentación automáticamente en flujos de integración continua.
-- Refactorización y revisión de código: con una ventana de contexto presumiblemente amplia (no confirmada), puede procesar módulos completos y proponer mejoras estructurales o detectar patrones problemáticos.
-- Prototipado rápido de aplicaciones: al ejecutarse en hardware asequible, sirve para validar ideas de producto basadas en LLM sin depender de APIs externas ni incurrir en costes por token.
-- Educación y experimentación: investigadores pueden estudiar el comportamiento de un MoE de ~35B en entornos con recursos limitados, comparando la calidad entre distintos niveles de cuantización.
-- Despliegue en entornos con requisitos de privacidad: al ser un modelo local, permite procesar código propietario sin enviarlo a servicios en la nube, siempre que la licencia del modelo base lo permita (dato no disponible).
+- Asistencia de programacion en local: el modelo puede generar y completar codigo en un IDE o CLI, aprovechando su afinado especifico para codigo y su ejecucion en llama.cpp con cuantos i1-Q4_K_M (~21,8 GB) en GPUs de consumo.
+- Agentes autonomos con tool calling: sus etiquetas agent y tool-use lo hacen adecuado para pipelines donde el modelo decide que herramienta invocar (shell, APIs, busqueda) y encadena pasos de razonamiento.
+- Automatizacion de tareas de refactorizacion: con contexto suficiente (no confirmado) puede procesar fragmentos de codigo y proponer cambios consistentes; util en scripts de CI/CD que invocan al modelo via llama.cpp o servidor compatible.
+- Generacion de tests y documentacion tecnica: el modelo puede redactar docstrings, READMEs y casos de prueba a partir del codigo fuente, reduciendo trabajo manual en repositorios.
+- Prototipado rapido de agentes de investigacion: sus etiquetas reasoning y sage sugieren capacidad para descomponer problemas y razonar paso a paso, util en entornos de experimentacion con modelos abliterated.
+- Despliegue en hardware de consumo para uso personal o de equipo pequeno: los cuantos i1-IQ3_S (~15,7 GB) o i1-Q4_K_S (~20,5 GB) permiten ejecutar el modelo en una RTX 4090 o en un Mac con memoria unificada suficiente.
+- Entornos de investigacion sobre alineacion y abliteration: la variante uncensored permite estudiar el comportamiento del modelo sin las capas de rechazo del original, util para analisis de sesgos y seguridad.
 
 ## Benchmarks y rendimiento
 
@@ -51,36 +56,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para un modelo de ~35B parámetros, las cuantizaciones Q4_K_M ocupan aproximadamente 20-22 GB, Q5_K_M en torno a 24-26 GB, Q6_K cerca de 28-30 GB, y las variantes IQ1/IQ2 entre 8 y 14 GB. Estas cifras son estimaciones basadas en el tamaño del repositorio (49,8 GB para el conjunto de todas las cuantizaciones) y en la práctica habitual de llama.cpp; no están confirmadas por el autor.
-- GPU recomendadas: para Q5_K_M o Q6_K se recomienda una RTX 4090 (24 GB) o A100/H100; para Q4_K_M cabe en una RTX 3090/4090 con offload parcial; para IQ2/IQ3 puede ejecutarse en GPUs de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti).
-- Cabe en GPU de consumo: sí, en función de la cuantización elegida; las variantes IQ1_S e IQ2_XXS son las únicas viables en GPUs de 8 GB, con pérdida de calidad notable.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con la API de OpenAI (tag `endpoints_compatible`). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requerirían los pesos originales en safetensors.
-- Latencia y throughput: no disponibles. Al ser un MoE con ~3B activos (según el nombre), se espera un throughput superior al de un denso de 35B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia (segun cuantizacion): ~13,3 GB (i1-Q2_K), ~15,7 GB (i1-IQ3_S), ~20,5 GB (i1-Q4_K_S), ~21,8 GB (i1-Q4_K_M), ~25,4 GB (i1-Q5_K_M), ~29,3 GB (i1-Q6_K).
+- GPU recomendadas: RTX 4090 (24 GB) para cuantos hasta i1-Q4_K_M; A100 40/80 GB o H100 para cuantos altos y contexto largo; multiples GPUs para Q6_K con contexto extendido.
+- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) con i1-Q4_K_M o inferiores; en GPUs de 16 GB solo con i1-IQ3_S o i1-Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, servidores compatibles con llama.cpp; el modelo base (safetensors) puede servirse con vLLM o TGI si se dispone de VRAM suficiente (~70 GB en fp16).
+- Latencia y throughput: no disponibles; dependen del hardware y del cuanto elegido. Los cuantos i1-Q4_K_M se etiquetan como "fast, recommended" por el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-Candid-Coder-V1.1-35B-A3B (este, GGUF) | 35,5B totales / ~3B activos (según nombre) | no disponible | no disponible | GGUF | Cuantización comunitaria con imatrix |
-| Modelo base DarkKitsune/Qwen3.6-Candid-Coder-V1.1-35B-A3B | 35,5B totales | no disponible | no disponible | safetensors (presumiblemente) | Pesos originales; sin cuantizar |
-| Qwen2.5-Coder-32B-Instruct | 32,5B densos | 131.072 tokens | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamaño similar, con licencia permisiva y benchmarks públicos |
-| DeepSeek-Coder-V2-Lite | 15,7B totales / 2,4B activos | 128.000 tokens | DeepSeek License | safetensors, GGUF | MoE comparable en filosofía (pocos activos), menor tamaño total |
-
-La comparación con Qwen2.5-Coder-32B-Instruct y DeepSeek-Coder-V2-Lite se ofrece como referencia de categoría, no como equivalencia directa, ya que no se dispone de benchmarks del modelo evaluado.
+| Qwen3.6-Candid-Coder-V1.1-35B-A3B-i1-GGUF (este) | ~35,5 B totales | no disponible | no disponible | GGUF | Cuantizacion imatrix de un afinado para codigo/agentes, abliterated |
+| Qwen3.6-Candid-Coder-V1.1-35B-A3B-GGUF (estatico) | ~35,5 B totales | no disponible | no disponible | GGUF | Mismo modelo base, cuantos estaticos sin imatrix |
+| DarkKitsune/Qwen3.6-Candid-Coder-V1.1-35B-A3B (base) | ~35,5 B totales | no disponible | no disponible | safetensors | Modelo original en precision completa |
+| Otros Qwen3.5/3.6 afinados para codigo | no disponible | no disponible | no disponible | varios | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base (DarkKitsune/Qwen3.6-Candid-Coder-V1.1-35B-A3B) antes de cualquier despliegue en producción.
-- Idiomas no documentados: se desconoce el soporte real de castellano u otras lenguas distintas del inglés.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; sin benchmarks ni documentación de alineación, no es posible cuantificar su fiabilidad.
-- Calidad degradada en cuantizaciones bajas: las variantes IQ1_S, IQ1_M e IQ2_XXS pueden producir degradación notable en tareas de código, donde la precisión simbólica es crítica.
-- Ausencia de benchmarks: no hay datos públicos que permitan comparar su rendimiento con alternativas; la evaluación debe hacerse de forma empírica.
-- Modelo de procedencia comunitaria: el fine-tune base no está respaldado por documentación oficial de Alibaba/Qwen, lo que añade incertidumbre sobre su calidad y procedencia de datos.
-- Fecha de creación futura (2026-11-05): el repositorio presenta una marca temporal posterior a la actualidad conocida, lo que puede indicar un error de metadatos o una publicación planificada; conviene verificar la integridad de los archivos antes de usarlos.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible consultar el modelo base antes de usarlo en produccion.
+- Idiomas: la model card solo declara ingles; el rendimiento en castellano u otros idiomas no esta verificado.
+- Riesgo de alucinacion: como cualquier LLM, puede generar codigo o afirmaciones incorrectas; requiere validacion en pipelines de CI/CD.
+- Variante abliterated/uncensored: la eliminacion de rechazos puede aumentar la probabilidad de contenido inapropiado o inseguro; no recomendada para aplicaciones orientadas al usuario final sin moderacion adicional.
+- Contexto no confirmado: no se dispone de la longitud de contexto oficial, lo que impide garantizar conversaciones multi-turno largas o procesamiento de repositorios extensos.
+- Cuantizaciones de baja precision (i1-Q2_K, i1-Q3_K_S) degradan la calidad; el propio autor recomienda IQ3_XXS o superiores frente a Q3_K*.
+- El repo tiene solo 1 like y 3883 descargas, lo que sugiere una validacion comunitaria limitada.
+- No hay informacion sobre sesgos especificos ni sobre evaluaciones de seguridad del modelo base.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-V1.1-35B-A3B-i1-GGUF
+- Repositorio Hugging Face (cuantizacion i1): https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-V1.1-35B-A3B-i1-GGUF
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-V1.1-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/DarkKitsune/Qwen3.6-Candid-Coder-V1.1-35B-A3B
-- llama.cpp (runtime recomendado para GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.6-Candid-Coder-V1.1-35B-A3B-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantos (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos al cuantizador: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

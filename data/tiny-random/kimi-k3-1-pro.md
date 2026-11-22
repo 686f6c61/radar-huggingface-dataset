@@ -2,90 +2,99 @@
 
 ## Resumen
 
-`tiny-random/kimi-k3.1-pro` es un modelo de prueba de inicialización aleatoria (randomly initialized) construido por el usuario `tiny-random` a partir de la arquitectura declarada de `moonshotai/Kimi-K3.1-Pro`. No es un modelo entrenado ni funcional: su propósito es servir como banco de pruebas para validar la carga de pesos, el procesador multimodal y el código de modelado remoto asociado a la familia Kimi K3.1. El checkpoint real de referencia ocupa 1,56 TB en 96 ficheros safetensors, mientras que esta versión reducida cabe en un único `model.safetensors` de 144,02 MB.
+`tiny-random/kimi-k3.1-pro` es un modelo de prueba de inicialización aleatoria (randomly initialized) publicado por el usuario `tiny-random` y derivado de `moonshotai/Kimi-K3.1-Pro`. No es un modelo entrenado ni utilizable en producción: su función es servir como fixture de depuración para validar la carga, el pipeline `image-text-to-text` y el código de modelado remoto de la arquitectura Kimi K3.1 sin necesidad de descargar el checkpoint original de 1,56 TB.
 
-La arquitectura declarada combina atención lineal KDA (Kimi Delta Attention) con capas de atención dispersa gated DSA (Deep Sparse Attention) y un backbone Mixture-of-Experts con enrutamiento latente. El modelo base anuncia una longitud de contexto máxima de 1.048.576 tokens y una composición de 93 capas (69 KDA, 24 DSA con compuerta y 1 densa). Esta réplica tiny conserva 17 capas en una cadencia de 12 KDA más 5 DSA, con anchura residual de 8 y anchura MLP de 32.
+El modelo reproduce a escala mínima la estructura del Kimi K3.1-Pro real: 17 capas (11 KDA + 5 gated-DSA + 1 densa), atención MLA con LoRA de rango reducido, expertos enrutados en precisión MXFP4 empaquetada y un codificador visual de 2 capas. Conserva la longitud máxima de contexto declarada por el modelo fuente, 1.048.576 tokens, así como el vocabulario de 163.840 entradas sin atado (untied).
 
-Su relevancia es puramente instrumental: permite a desarrolladores e investigadores verificar pipelines de carga, compatibilidad de `trust_remote_code` y contratos de tensores (incluido el indexador LSA y el empaquetado MXFP4 de expertos enrutados) sin necesidad de aprovisionar un clúster multi-GPU. No debe emplearse para inferencia real ni para evaluación de capacidades.
+Es relevante ahora porque el K3.1-Pro original no publica código de modelado propio: este repositorio incluye el `modeling_kimi_k3.py` fijado (pinned) que Transformers necesita para cargar la arquitectura, y documenta explícitamente que los kernels gated-DSA aún no están disponibles en las versiones publicadas de Transformers, vLLM o SGLang, por lo que las capas DSA ejecutan su núcleo MLA. Con 26.725.136 parámetros totales y un repositorio de 0,2 GB, permite iterar sobre integraciones de serving sin infraestructura masiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: KDA (atención lineal) + gated DSA (atención dispersa) + MLA, con MoE de expertos enrutados |
-| Parametros totales | 219.219.088 (según safetensors del repo tiny) |
-| Parametros activos | no disponible (top-k de expertos enrutados = 16 sobre 64 enrutados + 2 compartidos) |
-| Longitud de contexto | 1.048.576 tokens (heredada de la configuración del modelo base) |
-| Tipos de cuantizacion | Pesos en BF16/F32 y expertos enrutados en MXFP4 empaquetado nativo (grupo 32, escalas E8M0); tag `8-bit` y `compressed-tensors` en el repo |
+| Arquitectura | Transformer híbrido con atención KDA (delta attention), gated-DSA sobre núcleo MLA y MLP con mezcla de expertos (MoE) |
+| Parametros totales | 26.725.136 |
+| Parametros activos | no disponible (el checkpoint declara 16 expertos enrutados con top-k 8 y 2 expertos compartidos, pero no se publica el recuento de parámetros activos) |
+| Longitud de contexto | 1.048.576 tokens (heredada de la config del modelo fuente) |
+| Tipos de cuantizacion | Expertos enrutados en MXFP4 empaquetado (grupo 32, escalas E8M0); resto de pesos en BF16 y F32 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (`model.safetensors`, 144,02 MB) |
+| Formato de pesos | safetensors (`model.safetensors`, 35,58 MB) |
+| Capas totales / DSA-gated | 17 / 5 (más 11 KDA y 1 densa) |
+| Ancho oculto / ancho MLP | 8 / 32 |
+| Cabezas Q de atención completa / dim de cabeza | 8 / 128 (nope 128, rope 64, v 128) |
+| Rango LoRA MLA q / kv | 128 / 512 |
+| Expertos enrutados / compartidos, top-k | 16 / 2, 8 |
+| Cabezas del indexador LSA / dim / topk | 32 / 128 / 2.048 |
+| Capas físicas del indexador DSA | [3, 7, 11, 15, 16] |
+| Profundidad / ancho / cabezas de visión | 2 / 64 / 2 |
+| Tamano de parche visual | 14 |
+| Vocabulario / atado | 163.840 / untied |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Kimi-K3.1-Pro declara una pila de 93 capas compuesta por 69 capas KDA, 24 capas de atención completa sustituidas por gated DSA con indexador LSA y 1 capa densa. La anchura oculta es de 7.168 y la anchura MLP de 33.792, con 96 cabezas de atención completa de dimensión 128 (nope 128, rope 64, v 128) y rangos LoRA MLA de 1.536 (q) y 512 (kv). El MoE cuenta con 896 expertos enrutados y 2 compartidos, con top-k 16. El indexador LSA usa 32 cabezas de índice, dimensión 128 y top-k 2.048.
+El modelo replica la topología del Kimi K3.1-Pro a escala diminuta. La pila combina 11 capas con atención KDA (delta attention, implementada en Triton mediante `fla-core`), 5 capas con atención gated-DSA que en la práctica ejecutan su núcleo MLA al no existir kernel gated-DSA en las versiones publicadas de Transformers, y 1 capa densa. La atención MLA usa rangos LoRA de 128 para las proyecciones q y 512 para kv, con cabezas de 128 dimensiones y descomposición nope/rope de 128/64. El MLP es una mezcla de expertos con 16 expertos enrutados (top-k 8) y 2 compartidos, con pesos enrutados almacenados en MXFP4 empaquetado.
 
-La réplica tiny reduce esta geometría a 17 capas (11 KDA, 5 DSA y 1 densa), anchura residual 8 y MLP 32, manteniendo el contrato del indexador LSA (32 cabezas, dim 128, top-k 2.048) en cinco capas físicas [3, 7, 11, 15, 16]. Los expertos enrutados se almacenan en MXFP4 empaquetado idéntico al checkpoint fuente, y se incluyen los parches de compatibilidad de atención eager, máscara causal y compuerta por canal usados por `tiny-random/kimi-k3`. No hay entrenamiento: los pesos son aleatorios.
-
-Limitación técnica relevante: la versión publicada de Transformers no incluye el operador gated-DSA, por lo que las capas DSA ejecutan su núcleo MLA y los tensores del indexador LSA se cargan pero no se consumen. El serving con vLLM o SGLang requiere builds con soporte KimiK31 DSA, posteriores a las wheels publicadas en la fecha de creación del repo.
+No hay entrenamiento: los pesos son inicializaciones aleatorias generadas por un script (`.meta/create_model.py`, ejecutado con GPT-6.1-Sol según la model card). El checkpoint fuente declara 57,36B elementos en BF16, 11,12M en F32 y 1,45T en U8; este repositorio reduce esas cifras a 13,98M BF16, 163,07K F32 y 6,68M U8. El codificador visual se recorta de 27 a 2 capas, con ancho 64 y 2 cabezas, manteniendo el tamaño de parche de 14. Los tensores del indexador LSA se incluyen de forma compatible hacia adelante, pero no se consumen en la inferencia actual.
 
 ## Capacidades
 
-- No dispone de capacidades funcionales reales: los pesos son aleatorios y la salida es ruido estadístico.
-- Interfaz multimodal image-text-to-text declarada (procesador con soporte de imagen y texto), con parche de 14 píxeles y torre de visión de 2 capas, hidden 64, 2 cabezas en esta réplica.
-- Contrato de tool calling y reasoning parser referenciado en los ejemplos de serving (`--reasoning-parser kimi_k3`, `--tool-call-parser kimi_k3`), heredado de la familia K3, no verificado en esta réplica.
-- Soporte de vocabulario de 163.840 filas sin tying, heredado del modelo base.
-- No apto para generación de texto, razonamiento, código, matemáticas ni agentes: cualquier evaluación de capacidades sobre este checkpoint carece de validez.
+- Carga y ejecución del pipeline `image-text-to-text` con `AutoProcessor` y `AutoModel` bajo `trust_remote_code=True`, verificado en GPU con `attn_implementation="eager"`.
+- Procesamiento de entradas multimodales imagen-texto: acepta mensajes con contenido tipado (`{"type": "image"}` y `{"type": "text"}`) y devuelve secuencias generadas.
+- Generación de texto con `model.generate`, útil para probar rutas de decodificación y formas de tensores de salida.
+- Validación de integraciones de serving: la model card incluye recetas de vLLM (`--tensor-parallel-size 8`, `--max-model-len 131072`) y SGLang (`--tp-size 8`, `--reasoning-parser kimi_k3`, `--tool-call-parser kimi_k3`), marcadas como no verificadas.
+- Ejercicio del contrato del indexador LSA (32 cabezas, dim 128, topk 2.048) para desarrollo de kernels futuros.
+- No dispone de capacidades reales de razonamiento, código, matemáticas ni multilingüismo: al ser pesos aleatorios, la salida generada es incoherente.
 
 ## Casos de uso
 
-- Validación de carga de checkpoints: comprobar que `AutoModel.from_pretrained` con `trust_remote_code=True` resuelve correctamente el código de modelado remoto K3 y materializa los tensores sin errores de forma.
-- Pruebas de integración de procesadores multimodales: verificar el pipeline `AutoProcessor` con mensajes que combinan imagen y texto antes de escalar al checkpoint completo.
-- Test de compatibilidad de kernels: ejercitar el camino KDA con Triton (vía `fla-core`) y el camino MLA en GPUs pequeñas para detectar regresiones en entornos de CI.
-- Verificación de contratos de tensores forward-compatible: comprobar que los tensores del indexador LSA y el empaquetado MXFP4 de expertos enrutados se cargan aunque el runtime no los consuma todavía.
-- Desarrollo de operadores gated-DSA: usar esta réplica como fixture para implementar y testear el operador ausente en Transformers, vLLM o SGLang sin necesidad de un clúster.
-- Pruebas de despliegue en vLLM/SGLang: validar flags de serving (`--tensor-parallel-size`, `--kv-cache-dtype fp8_e4m3`, `--chunked-prefill-size`) en un entorno con requisitos de memoria triviales.
-- Docencia y demos de arquitectura: ilustrar la topología híbrida KDA+DSA+MoE con un modelo inspeccionable en una sola GPU consumer.
+- Pruebas de integración de Transformers: cargar el modelo con `trust_remote_code=True` para verificar que el `modeling_kimi_k3.py` fijado resuelve correctamente la config de Kimi K3.1 sin descargar el checkpoint de 1,56 TB.
+- Desarrollo de kernels gated-DSA: usar las 5 capas DSA y los tensores del indexador LSA como fixture para validar nuevas implementaciones en CUDA o Triton antes de portarlas al modelo completo.
+- CI/CD de pipelines de serving: ejecutar `vllm serve` o `sglang.launch_server` contra este repositorio en runners con GPU para comprobar flags de parser (`kimi_k3`), gestión de KV cache en `fp8_e4m3` y chunked prefill sin coste de almacenamiento.
+- Validación de cuantización MXFP4: comprobar que las herramientas de carga interpretan correctamente los expertos empaquetados con grupo 32 y escalas E8M0.
+- Pruebas de forma del pipeline multimodal: verificar el preprocesado de imágenes de 56x56 con parche 14 y la construcción de `input_ids`/`pixel_values` en conversaciones multi-turno.
+- Benchmarking de infraestructura: medir latencia de arranque, tiempo de carga y overhead de `trust_remote_code` en distintas versiones de la librería sin depender de pesos reales.
+- Docencia y demostraciones: ilustrar la estructura interna de un transformer híbrido KDA/DSA/MoE con un checkpoint de 35 MB que cabe en cualquier GPU consumer.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un modelo de inicialización aleatoria, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería meaningless y no se reporta.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un modelo de inicialización aleatoria, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) carecería de significado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en BF16 (144 MB de pesos más activaciones y caché KV reducida por la geometría tiny).
-- GPU recomendadas: cualquier GPU con soporte BF16 y Triton (RTX 3090, RTX 4090, A100, H100); el camino KDA requiere Triton vía `fla-core`.
-- Cabe holgadamente en GPU consumer, incluidas GTX 16xx en FP32 si se evita el camino Triton.
-- Opciones de despliegue: Transformers con `attn_implementation="eager"` y `trust_remote_code=True`; vLLM y SGLang solo con builds que incluyan soporte KimiK31 DSA (no disponibles en las wheels citadas).
-- Latencia y throughput: no disponibles; no representativos del modelo base.
+- VRAM estimada para inferencia: inferior a 1 GB en BF16 para los 26,7M de parámetros (35,58 MB de pesos más estados de activación y caché KV); con contexto completo de 1.048.576 tokens la caché KV dominaría el consumo, pero no se dispone de cifra publicada.
+- GPU recomendadas: cualquier GPU con soporte de Triton, necesario para la atención KDA vía `fla-core`; la model card verifica la carga en GPU sin especificar modelo.
+- Cabe en GPU consumer: sí, en cualquier tarjeta con al menos unos pocos GB de VRAM (RTX 3060 en adelante).
+- Opciones de despliegue: Transformers (verificado), vLLM (no verificado, requiere build con soporte KimiK31 gated-DSA posterior al wheel publicado), SGLang (no verificado, requiere versión superior a 0.5.23 con indexador KimiK31 DSA).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-random/kimi-k3.1-pro | 219,2 M | 1.048.576 (declarado) | Réplica aleatoria de test | no disponible | Hugging Face |
-| tiny-random/kimi-k3 | no disponible | 1.048.576 (declarado) | Réplica aleatoria de test de K3 | no disponible | Hugging Face |
-| moonshotai/Kimi-K3.1-Pro | 57,36 B BF16 + 1,45 T U8 (checkpoint) | 1.048.576 | Modelo real de producción | no disponible | Hugging Face (referenciado) |
+| tiny-random/kimi-k3.1-pro | 26,7M | 1.048.576 | Fixture de depuración de la arquitectura Kimi K3.1 | no disponible | Hugging Face, 691 descargas |
+| moonshotai/Kimi-K3.1-Pro | no disponible (checkpoint de 1,56 TB) | 1.048.576 | Modelo real multimodal y MoE | no disponible | Hugging Face |
+| Otros modelos `tiny-random` de la misma familia | no disponible | no disponible | Fixtures equivalentes para otras arquitecturas | no disponible | Hugging Face |
 
-La comparación con alternativas de la misma categoría (modelos tiny de test) se limita a `tiny-random/kimi-k3`, del que este repo hereda geometría y parches. Frente al checkpoint real, la diferencia de escala es de cuatro órdenes de magnitud en parámetros y de más de diez mil en tamaño de almacenamiento.
+No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: no apto para producción, evaluación de calidad ni uso comercial real.
-- Sin licencia declarada: la ausencia de licencia impide determinar condiciones de uso comercial o de redistribución.
-- Idiomas no declarados: no hay información sobre cobertura lingüística.
-- Operador gated-DSA ausente en Transformers, vLLM y SGLang publicados: las capas DSA ejecutan MLA denso y el indexador LSA no se consume, por lo que el comportamiento no refleja la arquitectura objetivo.
-- Ejemplos de uso marcados como "unverified" por el propio autor; el `model_id` de los snippets (`scratch/kimi-k31`) no coincide con el del repo.
-- Riesgo de alucinación total: la salida es ruido; cualquier texto generado es sintácticamente plausible pero semánticamente vacío.
-- El checkpoint fuente declara 1,45 T elementos U8 y 57,36 B BF16, lo que implica requisitos de almacenamiento y serving muy superiores a los de esta réplica; no extrapolar requisitos desde el tiny.
-- Repo generado automáticamente por un modelo ("GPT-6.1-Sol" según la model card); revisar procedencia antes de confiar en la configuración.
+- Pesos inicializados aleatoriamente: el modelo no ha sido entrenado y produce salidas incoherentes; no debe usarse para inferencia real ni evaluación de calidad.
+- Los kernels gated-DSA no están disponibles en las versiones publicadas de Transformers, vLLM ni SGLang; las capas DSA ejecutan su núcleo MLA y los tensores del indexador LSA se cargan pero no se consumen.
+- Las recetas de serving de vLLM y SGLang están marcadas como no verificadas y exigen builds posteriores a los wheels publicados en la fecha de creación del modelo.
+- Licencia no disponible: no se puede confirmar el uso comercial; al derivar de `moonshotai/Kimi-K3.1-Pro`, conviene consultar la licencia del modelo base antes de cualquier redistribución.
+- Idiomas soportados no disponibles; el vocabulario de 163.840 entradas se hereda del modelo fuente pero sin entrenamiento asociado.
+- El contexto máximo declarado de 1.048.576 tokens no es funcional en la práctica: la caché KV para esa longitud excede con creces el tamaño del propio checkpoint y no hay implementación verificada.
+- Riesgo de confusión: el nombre del repositorio puede llevar a error sobre su naturaleza; no es una versión reducida destilada ni un modelo destilado del K3.1-Pro.
+- Generado automáticamente por GPT-6.1-Sol según la model card; la reproducibilidad depende de los scripts en `.meta/`.
 
 ## Enlaces
 
-- Repo Hugging Face: https://huggingface.co/tiny-random/kimi-k3.1-pro
+- Repositorio Hugging Face: https://huggingface.co/tiny-random/kimi-k3.1-pro
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
-- Réplica hermana K3: https://huggingface.co/tiny-random/kimi-k3
-- Receta de serving vLLM citada: https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro
-- Script de creación: `.meta/create_model.py` (dentro del repo)
-- Log de estructura: `.meta/model.log` (dentro del repo)
-- Entorno: `.meta/env.json` (dentro del repo)
+- Receta de serving vLLM para el modelo base: https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro
+- Script de creación: https://huggingface.co/tiny-random/kimi-k3.1-pro/blob/main/.meta/create_model.py
+- Estructura del modelo: https://huggingface.co/tiny-random/kimi-k3.1-pro/blob/main/.meta/model.log
+- Entorno de generación: https://huggingface.co/tiny-random/kimi-k3.1-pro/blob/main/.meta/env.json
+- Perfil del contribuidor: https://huggingface.co/akopytko

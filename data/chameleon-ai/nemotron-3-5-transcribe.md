@@ -2,99 +2,98 @@
 
 ## Resumen
 
-Nemotron 3.5 Transcribe 30B-A4B es un modelo de lenguaje para reconocimiento automatico del habla (ASR) offline publicado por NVIDIA, distribuido en este repositorio por el usuario `chameleon-ai` en formato de paquetes de runtime OpenASR (`.oasr`). El modelo subyacente es un hibrido Mamba-2/Transformer/MoE de 53 bloques con un encoder ASR de 32 capas, una rama de diarizacion Sortformer de 31 capas, una cabeza CTC para timestamps y un filtro mel de 128 bandas a 16 kHz. Soporta 40 idiomas, grabaciones de hasta una hora, atribucion de hablantes y traduccion de voz.
+Nemotron 3.5 Transcribe 30B-A4B es un modelo de reconocimiento automático del habla (ASR) de pesos abiertos desarrollado por NVIDIA, publicado originalmente como `nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B`. Se trata de un speech LLM offline que combina un encoder acústico con un decoder híbrido Mamba-2/Transformer/MoE, y que cubre 40 idiomas, grabaciones de hasta una hora, atribución de hablantes (diarización) y traducción de voz. El repositorio analizado aquí, `chameleon-ai/nemotron-3.5-transcribe`, no contiene el modelo original, sino packs de runtime `.oasr` preconstruidos para el runtime OpenASR: cada pack fusiona el decoder y el encoder en un único flujo GGUF estándar.
 
-Este repositorio no contiene el modelo original, sino tres empaquetados que fusionan el decoder GGUF (arquitectura `nemotron_h_moe`) y el encoder F16 compartido (arquitectura `pee`) en un unico flujo GGUF v3 estandar, etiquetado con metadatos `openasr.*`. Los paquetes existen en tres perfiles de cuantizacion: `q8_0` (34,1 GiB), `ad_iq4_nl` (19,9 GiB) y `ad_q2_0_m` (14,2 GiB).
+La relevancia de esta publicación es doble. Por un lado, expone el modelo base de NVIDIA en tres perfiles de cuantización (q8_0, ad_iq4_nl y ad_q2_0_m) que van de 34,1 GiB a 14,2 GiB, lo que permite ejecutar un ASR de 30B parámetros totales con 4B activos en hardware mucho más modesto que el BF16 original. Por otro, documenta de forma exhaustiva la procedencia, los hashes y el proceso de conversión, algo poco habitual en artefactos derivados.
 
-La relevancia actual es limitada por su estado: el runtime OpenASR aun no ha incorporado la familia `nemotron-transcribe`, por lo que estos paquetes no se pueden cargar en inferencia todavia. La verificacion realizada es estructural (invariantes de layout, datos de tensores byte-identicos, contenido de metadatos), no de inferencia.
+Conviene subrayar que estos packs son artefactos precompilados: según la propia model card, la familia `nemotron-transcribe` todavía no está integrada en el runtime OpenASR, por lo que el runtime no puede cargarlos hasta que se complete esa integración. Los packs están verificados estructuralmente (invariantes de layout, datos de tensores byte a byte idénticos, contenido de metadatos), pero no verificados por inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrido Mamba-2/Transformer/MoE (`nemotron_h_moe`), 53 bloques; encoder ASR de 32 capas + Sortformer de 31 capas + cabeza CTC (`pee`) |
-| Parametros totales | 30B (segun nombre del modelo; no se detalla desglose) |
-| Parametros activos | A4B (aproximadamente 4B activos, segun nombre del modelo) |
-| Longitud de contexto | no disponible (audio de hasta 1 hora por grabacion) |
-| Tipos de cuantizacion | Q8_0, IQ4_NL (imatrix), Q2_0 (imatrix); encoder siempre en F16 |
-| Idiomas soportados | 40 idiomas (segun model card del modelo base) |
-| Licencia | OpenMDW-1.1 (segun metadatos `openasr.license.name`) |
-| Formato de pesos | GGUF v3 dentro de contenedor `.oasr` (payload estandar, sin contenedor propietario) |
+| Arquitectura | Híbrida Mamba-2/Transformer/MoE (decoder `nemotron_h_moe`, 53 bloques) + encoder ASR de 32 capas con rama de hablantes Sortformer de 31 capas, cabeza CTC de timestamps y banco de filtros mel (`pee`) |
+| Parametros totales | 30B (según denominación del modelo base); desglose exacto no disponible |
+| Parametros activos | 4B (según denominación A4B del modelo base) |
+| Longitud de contexto | No disponible (soporta grabaciones de hasta 1 hora según la model card) |
+| Tipos de cuantizacion | q8_0 (matrices densas Q8_0, 1 cabeza MTP en BF16); ad_iq4_nl (expertos IQ4_NL con imatrix, densas Q8_0); ad_q2_0_m (expertos Q2_0 con imatrix, 6 bloques MoE mayores + cabezas MTP en IQ4_NL, densas Q8_0); encoder en F16 en los tres perfiles |
+| Idiomas soportados | en, de, fr, es, it, pt, nl, pl, cs, sk, hi, ja, ko, zh, multilingual (40 idiomas según la model card del modelo base) |
+| Licencia | OpenMDW-1.1 (`license: other`, `license_name: openmdw-1.1`) |
+| Formato de pesos | GGUF v3 empaquetado como payload `.oasr` v1 (OpenASR); tokenizer BPE-131k y chat template embebidos en metadatos GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base combina un decoder hibrido de 53 bloques que alterna capas Mamba-2, atencion Transformer y capas MoE, con un encoder `pee` de 32 capas para ASR, una rama Sortformer de 31 capas para diarizacion de hablantes, una cabeza CTC para timestamps y un frontend mel de 128 bandas a 16 kHz mono. El tokenizador es BPE de 131k entradas, con chat template embebido en los metadatos GGUF.
+El decoder es un híbrido de 53 bloques que alterna capas Mamba-2, Transformer y mezcla de expertos (MoE), con arquitectura identificada como `nemotron_h_moe`. El encoder es una pieza separada de arquitectura `pee`: 32 capas para ASR, una rama Sortformer de 31 capas para diarización, una cabeza CTC para timestamps y un frontend mel de 128 bandas a 16 kHz mono. El modelo base incluye una cabeza MTP (multi-token prediction), que en el pack q8_0 se conserva en BF16.
 
-Los paquetes de este repositorio se generaron fusionando el decoder GGUF con el encoder F16 compartido en un unico flujo GGUF v3: los datos de tensores se copiaron byte-identicos con alineacion de 32 bytes y offsets recalculados, los metadatos del decoder se mantuvieron como autoritativos y los del encoder se conservaron para claves no conflictivas. Los decoders cuantizados derivan del BF16 producido por el conversor propio de NVIDIA (`convert_model.py`), cuantizado con `llama-quantize`; los niveles IQ4_NL y Q2_0 se calibraron con imatrix sobre 1,5 millones de tokens. No se dispone de informacion sobre volumen total de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO.
+Los packs de este repositorio no reentrenan nada: fusionan el decoder GGUF con el encoder F16 compartido (1,67 GB) en un único flujo GGUF, copiando los datos de tensores byte a byte con alineación de 32 bytes y recalculando offsets. Los decoders cuantizados proceden del repositorio `AtomicChat/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF` (revisión `dbd06c5c`, 2026-10-28), generados con `llama-quantize` a partir de la salida BF16 del conversor oficial de NVIDIA (`convert_model.py`), con calibración imatrix sobre 1,5 millones de tokens. El checkpoint de origen es `0b5820fad1103208f65895b586bd65d2`, registrado como `nemo_speech.checkpoint_id` y estampado como `openasr.source.revision`.
+
+No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en el material proporcionado.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla offline en 40 idiomas.
-- Procesamiento de grabaciones de hasta una hora de duracion.
-- Atribucion de hablantes (diarizacion) mediante la rama Sortformer.
-- Traduccion de voz (speech translation) segun la model card del modelo base.
-- Generacion de timestamps a nivel de palabra o segmento mediante la cabeza CTC.
-- Frontend de audio integrado: filtro mel de 128 bandas, 16 kHz, mono.
-- Tokenizador BPE de 131k con chat template embebido.
-- Modo de decodificacion greedy seq2seq (`nemotron-transcribe.greedy.seq2seq.v1`).
-- Tool calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Transcripción de voz a texto (ASR) offline en 40 idiomas, incluidos en, de, fr, es, it, pt, nl, pl, cs, sk, hi, ja, ko y zh.
+- Procesamiento de grabaciones de hasta una hora de duración.
+- Atribución de hablantes (diarización) mediante la rama Sortformer del encoder.
+- Traducción de voz (speech translation) según la model card del modelo base.
+- Generación de timestamps a nivel de token mediante la cabeza CTC del encoder.
+- Tokenizer BPE de 131k con chat template embebido en los metadatos GGUF.
+- Cabeza MTP (multi-token prediction) presente en el decoder.
+- Soporte de tool calling, function calling, agentes o modo thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Transcripcion de reuniones largas: el modelo admite grabaciones de hasta una hora con diarizacion integrada, lo que permite generar actas con atribucion de intervenciones sin segmentar manualmente el audio.
-- Subtitulado y transcripcion de archivos audiovisuales: la cabeza CTC proporciona timestamps que se pueden alinear con pistas de subtitulos, y el soporte de 40 idiomas cubre catalogos multilingues.
-- Traduccion de voz en entornos offline: al incluir speech translation, se puede usar en escenarios sin conectividad para generar transcripciones traducidas de contenido hablado.
-- Analisis de llamadas de atencion al cliente: la diarizacion permite separar agente y cliente, y la transcripcion completa alimenta sistemas de analitica y control de calidad.
-- Generacion de actas y documentacion clinica o legal: el procesamiento local de audio sensible evita enviar grabaciones a servicios externos, con cuantizaciones de 14,2 a 34,1 GiB que permiten desplegar en hardware propio.
-- Investigacion en ASR y diarizacion: los paquetes permiten estudiar el efecto de distintas cuantizaciones (Q8_0, IQ4_NL, Q2_0) sobre el WER y el CER con el mismo encoder F16, segun los datos de calidad publicados por el autor.
-- Pipelines de transcripcion por lotes en servidores con GPU: el perfil `ad_q2_0_m` de 14,2 GiB reduce el coste de VRAM por instancia, a costa de una perdida de 1,53 CER en chino FLEURS respecto a BF16.
+- Transcripción de reuniones y actas: el modelo puede procesar grabaciones de hasta una hora con diarización, de modo que un pipeline extrae la transcripción segmentada por hablante directamente del pack ad_iq4_nl en una GPU de 24 GB.
+- Subtitulado y postproducción audiovisual: la cabeza CTC genera timestamps por token, lo que permite alinear subtítulos con precisión sin un modelo de forced alignment adicional.
+- Archivo y digitalización de audio histórico: el soporte de 40 idiomas y la ventana de una hora permiten transcribir fondos de audio multilingües en lote con un único modelo.
+- Traducción de voz en entornos sin conectividad: al ser un speech LLM offline, puede desplegarse en servidores locales para traducir audio entre los idiomas soportados sin enviar datos a la nube.
+- Atención al cliente y análisis de llamadas: la combinación de transcripción y diarización permite separar agente y cliente en grabaciones de call center y alimentar análisis posteriores de calidad.
+- Investigación en ASR multilingüe: los tres perfiles de cuantización con calidad documentada (variación de ±0,18 WER frente a BF16 en EN/DE/FR/ES) permiten reproducir experimentos en hardware heterogéneo.
+- Despliegue en el borde con el pack ad_q2_0_m: sus 14,2 GiB y su encoder F16 lo hacen viable en GPUs de consumo de gama alta para transcripción de campo.
 
 ## Benchmarks y rendimiento
 
-El autor publica una comparacion de calidad por cuantizacion frente al decoder BF16, sobre un conjunto de prueba pareado de 2.200 enunciados. No se aportan resultados absolutos de WER ni comparaciones con otros modelos.
+La model card no publica tablas de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.), pero sí incluye una evaluación de calidad por cuantización sobre un conjunto de test pareado de 2.200 enunciados frente al decoder BF16:
 
-| Perfil | Tamano del paquete | Delta frente a BF16 |
+| Perfil | Tamano | Diferencia frente a BF16 |
 |---|---|---|
-| `q8_0` | 34,1 GiB | dentro de +/-0,18 WER en EN/DE/FR/ES |
-| `ad_iq4_nl` | 19,9 GiB | dentro de +/-0,18 WER en EN/DE/FR/ES |
-| `ad_q2_0_m` | 14,2 GiB | dentro de +/-0,18 WER en EN/DE/FR/ES; +1,53 CER en chino FLEURS |
+| q8_0 | 34,1 GiB | No disponible (todos los decoders desde 15,55 GB quedan dentro de ±0,18 WER en EN/DE/FR/ES) |
+| ad_iq4_nl | 19,9 GiB | Dentro de ±0,18 WER en EN/DE/FR/ES |
+| ad_q2_0_m | 14,2 GiB | +1,53 CER en FLEURS chino (clase de 16 GB) |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, LibriSpeech, Common Voice) en la informacion disponible.
+No se han publicado resultados de benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 34,1 GiB para `q8_0`, 19,9 GiB para `ad_iq4_nl` y 14,2 GiB para `ad_q2_0_m`, mas el overhead del runtime y del buffer de audio.
-- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, los perfiles requieren GPUs de 24 GB o mas (RTX 3090/4090 para `ad_q2_0_m`, A100 40 GB o H100 para `q8_0`), pero esta estimacion no la confirma el autor.
-- Cabe en GPU de consumo: `ad_q2_0_m` (14,2 GiB) es compatible con GPUs de 16 GB o mas; `ad_iq4_nl` (19,9 GiB) requiere 24 GB; `q8_0` (34,1 GiB) queda fuera de las GPU de consumo actuales.
-- Opciones de despliegue: exclusivamente el runtime OpenASR, que aun no soporta la familia `nemotron-transcribe`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada: aproximadamente 34,1 GiB para q8_0, 19,9 GiB para ad_iq4_nl y 14,2 GiB para ad_q2_0_m, más el overhead del runtime y del encoder F16 de 1,67 GB ya incluido en cada pack.
+- GPU recomendadas: A100 80 GB o H100 para q8_0 con margen amplio; A100 40 GB, L40S o RTX 6000 Ada para ad_iq4_nl; RTX 4090 (24 GB) para ad_q2_0_m con holgura y para ad_iq4_nl al límite.
+- Cabe en GPU de consumo: sí, ad_q2_0_m en RTX 4090 y en GPUs de 16 GB o más; ad_iq4_nl requiere 24 GB.
+- Opciones de despliegue: exclusivamente el runtime OpenASR con los packs `.oasr`; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para estos artefactos.
+- Estado de despliegue: la familia `nemotron-transcribe` aún no está integrada en el runtime OpenASR, por lo que los packs no pueden cargarse todavía. Latencia y throughput no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo en la informacion proporcionada, por lo que la comparacion se limita a caracteristicas estructurales.
-
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Nemotron 3.5 Transcribe 30B-A4B (este) | 30B totales, ~4B activos | audio de hasta 1 h | 40 | OpenMDW-1.1 | paquetes `.oasr`; runtime aun no soportado |
-| Whisper large-v3 | no disponible | 30 s por ventana | ~99 | MIT | ampliamente disponible en multiples runtimes |
-| Alternativas ASR open-weight de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Nemotron 3.5 Transcribe 30B-A4B (este pack) | 30B totales / 4B activos | No disponible (audio de hasta 1 h) | 40 | OpenMDW-1.1 | GGUF `.oasr` |
+| Whisper large-v3 | No disponible en la información | No disponible | ~99 | MIT (según conocimiento general, no verificado aquí) | Safetensors, GGUF |
+| Otros speech LLM de pesos abiertos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se han identificado en la informacion proporcionada otros modelos comparables con diarizacion integrada y contexto de audio de una hora.
+No se dispone de datos de benchmarks comparativos en la información proporcionada para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Los paquetes no son cargables en inferencia: la familia `nemotron-transcribe` no esta incorporada en el runtime OpenASR (modulo de familia, fila de descriptor y contrato de etiquetas de cuantizacion pendientes).
-- La verificacion realizada es estructural, no de inferencia; no se ha validado el comportamiento real de los paquetes fusionados.
-- El perfil `ad_q2_0_m` degrada 1,53 CER en chino FLEURS respecto a BF16; no es adecuado para produccion multilingue sin validacion.
-- El encoder se mantiene en F16 en los tres perfiles, lo que fija un suelo de memoria y precision no reducible por cuantizacion.
-- No se detallan sesgos conocidos, tasas de alucinacion ni limitaciones por idioma en la informacion disponible.
-- La licencia OpenMDW-1.1 figura solo en los metadatos `openasr.*`; conviene verificar los terminos en la fuente oficial antes de uso comercial.
-- El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (2026-11-16); no hay evidencia de uso en produccion.
-- No se especifican requisitos de contexto, latencia ni throughput, lo que impide dimensionar despliegues.
+- Los packs no están verificados por inferencia: solo se ha comprobado la estructura, el layout y la integridad byte a byte de los tensores.
+- El runtime OpenASR no puede cargar estos packs hasta que se complete la integración de la familia `nemotron-transcribe` (módulo de familia, fila de descriptor y entradas del contrato de etiquetas de cuantización pendientes).
+- El pack ad_q2_0_m degrada la calidad en chino (+1,53 CER en FLEURS) respecto a BF16; no es adecuado para producción en ese idioma sin validación previa.
+- Los perfiles `ad_*` usan cuantización de expertos con calibración imatrix sobre 1,5 millones de tokens; el comportamiento fuera de los idiomas de calibración no está documentado.
+- Riesgo de alucinación inherente a los speech LLM: no se documentan métricas de inserción de texto no presente en el audio.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Licencia OpenMDW-1.1: es una licencia de pesos abiertos con condiciones propias; deben revisarse los términos en https://openmdw.ai/license/1-1/ antes de un uso comercial.
+- El repositorio tiene 0 likes y 17.184 descargas, y es un derivado de terceros (chameleon-ai), no una publicación oficial de NVIDIA; la procedencia debe trazarse al modelo base para cualquier uso en producción.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/chameleon-ai/nemotron-3.5-transcribe
+- Repositorio Hugging Face: https://huggingface.co/chameleon-ai/nemotron-3.5-transcribe
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Conversiones GGUF de origen: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

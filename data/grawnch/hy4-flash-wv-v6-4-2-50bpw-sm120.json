@@ -5,7 +5,7 @@
   "author": "Grawnch",
   "url": "https://huggingface.co/Grawnch/Hy4-Flash-WV-v6.4-2.50bpw-SM120",
   "created_at": "2026-11-19T16:25:20.000Z",
-  "updated_at": "2026-11-19T16:28:32.000Z",
+  "updated_at": "2026-11-21T21:07:07.000Z",
   "license": "tencent-hy-license",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

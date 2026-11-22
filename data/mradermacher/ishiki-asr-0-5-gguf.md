@@ -2,86 +2,90 @@
 
 ## Resumen
 
-ishiki-asr-0.5 es un modelo de reconocimiento automático del habla (ASR) desarrollado por ishiki-labs y distribuido en formato GGUF por el cuantizador mradermacher. Se trata de un modelo de gran tamano, con 32.913.266.240 parametros (aproximadamente 32,9 mil millones), lo que lo situa en la categoria de modelos ASR de escala alta, muy por encima de las alternativas tipicas de 1-2 mil millones de parametros que dominan el ecosistema abierto de transcripcion.
+ishiki-asr-0.5 es un modelo de reconocimiento automático del habla (ASR) desarrollado por ishiki-labs, publicado originalmente en formato transformers y cuantizado a GGUF por mradermacher. El modelo base cuenta con 32.913.266.240 parámetros (aproximadamente 32,9 mil millones), lo que lo sitúa en la gama alta de modelos ASR de código abierto disponibles en la actualidad. Esta versión GGUF está pensada para su uso con llama.cpp y otros runners compatibles, ofreciendo una amplia gama de cuantizaciones que van desde Q2_K hasta Q8_0.
 
-El modelo base es `ishiki-labs/ishiki-asr-0.5`, y esta publicacion de mradermacher ofrece exclusivamente cuantizaciones estaticas en formato GGUF (desde Q2_K hasta Q8_0, ademas de los ficheros mmproj para el componente multimodal), pensadas para su uso con llama.cpp y herramientas compatibles. La licencia declarada es OpenMDW-1.1, una licencia abierta de pesos de modelo.
+El modelo está orientado a la transcripción de audio a texto en inglés, con soporte declarado únicamente para el idioma inglés (`en`). Incluye archivos mmproj (multi-modal projection) que permiten procesar la entrada de audio dentro del pipeline del modelo, lo que confirma que la arquitectura integra un encoder de audio junto con un decoder de lenguaje. La licencia es OpenMDW 1.1, una licencia de pesos abiertos con condiciones específicas que conviene revisar antes de un uso comercial.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo ASR de casi 33 mil millones de parametros en hardware de consumo mediante cuantizacion, algo impensable con los pesos originales en safetensors (el repositorio completo ocupa 270,9 GB). El modelo esta orientado al idioma ingles y esta etiquetado para el Open ASR Leaderboard, lo que indica que su evaluacion se enmarca en los benchmarks estandar de transcripcion.
+La relevancia de esta ficha radica en que permite desplegar un modelo ASR de gran tamano en entornos donde no se dispone de infraestructura de GPU de datacenter, gracias a las cuantizaciones GGUF. No obstante, el tamano del modelo (270,9 GB en el repositorio completo y entre 18,8 y 35,1 GB por cuantización) implica requisitos de hardware considerables incluso en las versiones más comprimidas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo ASR basado en transformers; detalles de la arquitectura interna no publicados en la informacion disponible) |
-| Parametros totales | 32.913.266.240 (32,9 mil millones) |
+| Arquitectura | no disponible (modelo ASR multimodal con encoder de audio y decoder; detalles no especificados en la informacion proporcionada) |
+| Parametros totales | 32.913.266.240 (32,9 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | ingles (en) |
-| Licencia | OpenMDW-1.1 |
-| Formato de pesos | GGUF (cuantizaciones estaticas); pesos originales del modelo base en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | openmdw-1.1 (OpenMDW 1.1) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. El modelo se distribuye a traves de la libreria `transformers` y esta etiquetado como tarea `automatic-speech-recognition`, con soporte multimodal (los ficheros `mmproj` indican un componente de proyeccion multimodal, probablemente para el encoder de audio). El modelo base es `ishiki-labs/ishiki-asr-0.5`, pero no se detallan en la informacion disponible ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la informacion proporcionada. Los tags indican que se trata de un modelo de reconocimiento automático del habla con capacidades multimodales (audio y texto), y la presencia de archivos `mmproj` confirma que el pipeline incluye un proyector multimodal que adapta las representaciones del encoder de audio al espacio del decoder de lenguaje. El modelo base es `ishiki-labs/ishiki-asr-0.5`, del cual esta version es una cuantizacion estática.
 
-Lo que si se puede afirmar es que se trata de un modelo de gran escala (32,9 mil millones de parametros) orientado a transcripcion, evaluado contra los conjuntos de datos `hf-audio/esb-datasets-test-only-sorted`, `hf-audio/open-asr-leaderboard` y `voice-arena-leaderboard/Monsoon-en-IN-test`. La presencia de estos datasets en las etiquetas sugiere que el modelo ha sido disenado para competir en los rankings estandar de ASR en ingles. Las cuantizaciones son estaticas (no hay quants ponderados ni imatrix disponibles en el momento de la publicacion, segun indica el autor de la cuantizacion).
+Tampoco se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Los datasets de evaluacion referenciados en la model card (`hf-audio/esb-datasets-test-only-sorted`, `hf-audio/open-asr-leaderboard` y `voice-arena-leaderboard/Monsoon-en-IN-test`) corresponden a conjuntos de test utilizados para evaluacion en el leaderboard de ASR abierto, no necesariamente a datos de entrenamiento.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla (transcripcion de audio a texto) en ingles.
-- Procesamiento multimodal de audio mediante el componente `mmproj` (proyeccion multimodal incluida en los ficheros GGUF).
-- Etiquetado como `conversational`, lo que sugiere capacidad de manejar habla conversacional o dialogos.
-- Evaluado en el Open ASR Leaderboard y en el benchmark Monsoon (ingles de la India), lo que indica cobertura de variantes del ingles.
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso ni generacion de codigo (no es un modelo de lenguaje general, sino un modelo ASR especializado).
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
+- Reconocimiento automatico del habla (ASR) en ingles: transcripcion de audio a texto.
+- Procesamiento multimodal: integra entrada de audio mediante el proyector `mmproj` y genera texto.
+- Compatibilidad con el leaderboard Open ASR: el modelo esta disenado para ser evaluado en dicho benchmark.
+- Evaluacion en dominios especificos: la model card referencia el dataset Monsoon-en-IN-test, orientado a ingles con acento indio.
+- Conversacional: el tag `conversational` sugiere capacidad de manejar interacciones de tipo dialogo, aunque no se detalla su alcance.
+- No se documentan en la informacion disponible capacidades de tool calling, agentes, vision, audio generation ni modo thinking.
 
 ## Casos de uso
 
-- Transcripcion de reuniones y videoconferencias: el modelo puede convertir audio de reuniones en texto, aprovechando su etiqueta `conversational` para manejar turnos de habla y dialogos multi-participante en ingles.
-- Subtitulado automatico de contenido audiovisual: adecuado para generar subtitulos en ingles de videos, podcasts y material formativo, con la ventaja de que las cuantizaciones Q4_K_M (25,5 GB) o Q5_K_M (27,1 GB) permiten ejecucion en estaciones de trabajo con GPU de gama alta.
-- Analisis de llamadas de atencion al cliente: transcripcion de grabaciones para su posterior analisis de sentimiento, control de calidad o cumplimiento normativo, en entornos donde el ingles es el idioma principal.
-- Investigacion en ASR: al estar evaluado contra el Open ASR Leaderboard, sirve como referencia para comparar tecnicas de transcripcion y para estudiar el efecto de la cuantizacion en la calidad de la transcripcion (comparando Q2_K frente a Q8_0).
-- Generacion de actas y notas a partir de audio: integracion en pipelines que reciben audio y producen texto estructurado, con despliegue local mediante llama.cpp para preservar la privacidad de las grabaciones.
-- Accesibilidad: transcripcion en tiempo casi real de audio para personas con discapacidad auditiva, desplegando una cuantizacion Q4_K_S (22,9 GB) en un servidor con GPU dedicada.
-- Procesamiento de audio en ingles de la India: el modelo esta etiquetado con el benchmark Monsoon-en-IN, por lo que puede emplearse en aplicaciones dirigidas a ese mercado.
+- Transcripcion de reuniones y actas: el modelo puede convertir grabaciones de audio de reuniones en ingles en texto estructurado, aprovechando su capacidad ASR para generar transcripciones que luego se procesen con herramientas de resumen. Su tamano permite manejar audio de calidad variable.
+- Subtitulado automatico de video: integrado en un pipeline de procesamiento de video, el modelo puede generar subtitulos en ingles para contenido audiovisual, con la ventaja de disponer de cuantizaciones Q4_K_M (25,5 GB) que facilitan el despliegue en servidores con GPU unica.
+- Atencion al cliente basada en voz: transcripcion de llamadas en ingles para su analisis posterior, clasificacion de intenciones o generacion de respuestas, usando la version Q8_0 (35,1 GB) si se busca maxima calidad de transcripcion.
+- Analisis de entrevistas y estudios cualitativos: transcripcion de entrevistas en ingles para investigacion de mercado o academica, donde la precision en la transcripcion es critica y se puede emplear la cuantizacion Q6_K (35,0 GB) como compromiso entre calidad y recursos.
+- Accesibilidad: generacion de transcripciones en tiempo casi real para personas con discapacidad auditiva en entornos de habla inglesa, desplegando el modelo con llama.cpp en servidores con GPU consumer de gama alta.
+- Procesamiento por lotes de archivos de audio: uso en pipelines offline para transcribir grandes volumenes de audio en ingles, donde el throughput prima sobre la latencia y se puede emplear la cuantizacion Q4_K_S (22,9 GB) para maximizar el numero de instancias por GPU.
+- Evaluacion comparativa de ASR: uso como referencia en experimentos de investigacion sobre reconocimiento del habla, aprovechando su integracion con el Open ASR Leaderboard.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo esta etiquetado para el Open ASR Leaderboard y para los conjuntos de prueba `hf-audio/esb-datasets-test-only-sorted`, `hf-audio/open-asr-leaderboard` y `voice-arena-leaderboard/Monsoon-en-IN-test`, pero no se incluyen cifras de WER (Word Error Rate) ni de otros metricas en la documentacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): Q2_K ~18,8 GB; Q3_K_S ~18,8 GB; IQ4_XS ~19,1 GB; Q3_K_M ~20,8 GB; Q3_K_L ~21,7 GB; Q4_K_S ~22,9 GB; Q5_K_S ~24,9 GB; Q4_K_M ~25,5 GB; Q5_K_M ~27,1 GB; Q6_K ~35,0 GB; Q8_0 ~35,1 GB. A esto hay que sumar el componente multimodal mmproj (0,9 GB en Q8_0 o 1,6 GB en f16) y el overhead de la ventana de contexto y del runtime.
-- GPU recomendadas: para las cuantizaciones mas grandes (Q6_K, Q8_0) se necesita una GPU con 40-48 GB de VRAM o mas (A100 40/80 GB, H100, L40S). Para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) queda justa; es recomendable una RTX A6000 (48 GB) o una A100. Para Q2_K y Q3_K_S (18,8 GB) una RTX 4090 de 24 GB puede ser suficiente, aunque con margen limitado.
-- Cabe en GPU de consumo: si, en el caso de las cuantizaciones Q2_K, Q3_K_S, IQ4_XS y Q3_K_M en una RTX 4090 (24 GB); las cuantizaciones Q4 y superiores requieren GPUs profesionales o configuraciones multi-GPU.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (si se importa el GGUF), y cualquier runtime compatible con GGUF que soporte modelos multimodales con `mmproj`. El modelo base tambien puede usarse con transformers (pesos safetensors).
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: entre 18,8 GB (Q2_K) y 35,1 GB (Q8_0) solo para los pesos del modelo, mas el consumo adicional del contexto, el proyector mmproj (0,9-1,6 GB) y el buffer de audio.
+- GPU recomendadas: para las cuantizaciones mas grandes (Q6_K, Q8_0) se requiere una GPU con al menos 40-48 GB de VRAM, como A100 40GB/80GB, H100 o RTX A6000. Para Q4_K_M (25,5 GB) es viable en una RTX 4090 (24 GB) solo si se ajusta el contexto y se usa offloading parcial; en la practica, una RTX 3090/4090 de 24 GB puede quedarse corta para Q4_K_M completo.
+- Cabe en GPU consumer: las cuantizaciones Q2_K (18,8 GB) y Q3_K_S (18,8 GB) pueden caber en GPUs de 24 GB como la RTX 4090 o RTX 3090, aunque con margen ajustado. Las cuantizaciones Q4 en adelante requieren GPUs profesionales o configuraciones multi-GPU.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF. El modelo base (safetensors) puede desplegarse con transformers y, presumiblemente, con frameworks de inferencia que soporten modelos multimodales, aunque no se detalla en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos de rendimiento (WER) ni de especificaciones detalladas de modelos comparables que permitan una comparacion rigurosa. Como referencia cualitativa, los modelos ASR abiertos habituales (por ejemplo, la familia Whisper de OpenAI o los modelos de NVIDIA Parakeet) se sitúan en rangos de 0,1 a 1,5 mil millones de parametros, muy por debajo de los 32,9 mil millones de este modelo, pero no se dispone de sus cifras de WER en esta ficha para establecer una comparacion numerica. Se indica, por tanto, "no disponible" para la comparacion cuantitativa.
+No se dispone de informacion sobre modelos comparables en la informacion proporcionada. Como referencia generica, los modelos ASR de codigo abierto habituales en el ecosistema (Whisper large-v3, de ~1,5 B de parametros, o modelos ASR basados en LLM de menor tamano) operan en rangos de parametros muy inferiores. Este modelo, con 32,9 B de parametros, se situa en una categoria de tamano superior, pero no se han proporcionado datos de rendimiento que permitan una comparacion rigurosa.
+
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| ishiki-asr-0.5 (este) | 32,9 B | no disponible | openmdw-1.1 | GGUF, safetensors |
+| Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles: no se debe esperar un rendimiento adecuado en castellano u otros idiomas, a pesar de que el modelo pueda producir alguna salida.
-- Riesgo de alucinacion: como todo modelo ASR, puede generar texto que no corresponde al audio, especialmente en segmentos con ruido, silencios o habla solapada.
-- Sesgos: no se documentan en la informacion disponible los sesgos conocidos del modelo; al entrenarse presumiblemente con datos en ingles, puede tener un rendimiento desigual segun el acento, la edad o el genero del hablante.
-- Licencia OpenMDW-1.1: es una licencia abierta de pesos, pero se recomienda revisar sus terminos exactos antes de un uso comercial, ya que la model card la etiqueta como `license: other` con enlace a `LICENSE`.
-- Cuantizaciones estaticas: el autor indica que no hay cuantizaciones ponderadas ni imatrix disponibles, lo que puede implicar una perdida de calidad algo mayor en las cuantizaciones bajas (Q2_K, Q3_K_S) en comparacion con quants imatrix.
-- Modelo de gran tamano: incluso en Q2_K ocupa 18,8 GB, lo que limita su despliegue en hardware modesto y encarece la inferencia frente a alternativas mas pequenas.
-- Sin datos de benchmarks publicados: no es posible verificar el rendimiento real del modelo con las cifras proporcionadas; se recomienda evaluarlo con un conjunto de validacion propio antes de usarlo en produccion.
-- Repositorio de 270,9 GB: la descarga completa de todas las cuantizaciones es muy costosa en almacenamiento; conviene descargar unicamente el fichero GGUF y el mmproj necesarios.
+- Solo soporta ingles (`en`); no se declara soporte para castellano ni otros idiomas.
+- No se dispone de informacion sobre sesgos del modelo, pero al ser un modelo ASR entrenado predominantemente con datos en ingles, es probable que tenga un rendimiento inferior con acentos no representados en el dataset de entrenamiento (la referencia al dataset Monsoon-en-IN-test sugiere interes en acentos del ingles indio, pero no confirma cobertura).
+- Riesgo de alucinacion en la transcripcion: como todo modelo generativo aplicado a ASR, puede producir texto que no corresponde al audio, especialmente en segmentos con ruido o silencios.
+- La licencia OpenMDW 1.1 incluye condiciones especificas que deben revisarse antes de un uso comercial; no es una licencia permisiva estandar como Apache 2.0 o MIT.
+- El tamano del modelo (32,9 B de parametros) implica requisitos de hardware elevados incluso en cuantizaciones agresivas, lo que limita su despliegue en entornos con recursos modestos.
+- No se especifican la longitud de contexto ni el manejo de audios largos; conviene validar el comportamiento con fragmentos de audio extensos antes de usarlo en produccion.
+- Las cuantizaciones de menor tamano (Q2_K, Q3_K_S) pueden degradar notablemente la calidad de transcripcion; se recomienda Q4_K_M o superior para uso en produccion.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/ishiki-asr-0.5-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/ishiki-asr-0.5-GGUF
 - Modelo base: https://huggingface.co/ishiki-labs/ishiki-asr-0.5
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#ishiki-asr-0.5-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests
-- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Open ASR Leaderboard (dataset referenciado): https://huggingface.co/datasets/hf-audio/open-asr-leaderboard
+- Dataset ESB test (referenciado): https://huggingface.co/datasets/hf-audio/esb-datasets-test-only-sorted
+- Dataset Monsoon-en-IN-test (referenciado): https://huggingface.co/datasets/voice-arena-leaderboard/Monsoon-en-IN-test
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
-- Dataset de evaluacion ESB: https://huggingface.co/datasets/hf-audio/esb-datasets-test-only-sorted
-- Dataset Monsoon en-IN: https://huggingface.co/datasets/voice-arena-leaderboard/Monsoon-en-IN-test

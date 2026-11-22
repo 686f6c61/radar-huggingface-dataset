@@ -2,102 +2,113 @@
 
 ## Resumen
 
-Gemma 4 26B A4B effort10 checkpoint114 es un ajuste fino del modelo multimodal google/gemma-4-26B-A4B-it, desarrollado por el usuario krystofmitka. Se trata de un derivado que combina un entrenamiento supervisado (SFT) con un adaptador LoRA de GRPO fusionado en los pesos, orientado a dotar al modelo de control explícito del "esfuerzo de razonamiento" mediante una linea en el system prompt. El modelo parte de la arquitectura Gemma 4 de Google DeepMind y conserva su naturaleza image-text-to-text (procesa imagenes y texto).
+ThinkingNuke es un ajuste fino del modelo multimodal google/gemma-4-26B-A4B-it, desarrollado por el usuario krystofmitka y publicado bajo licencia Apache 2.0. Se trata de un modelo de arquitectura Mixture of Experts (MoE) con 25.805.933.872 parametros totales, derivado del modelo base de Google y distribuido en formato BF16 con safetensors. Su proposito principal es anadir control explicito del "esfuerzo de razonamiento" mediante una linea en el system prompt, permitiendo al usuario solicitar desde respuestas rapidas (effort 10) hasta razonamientos mas profundos (effort 100).
 
-El atractivo principal es el control granular del razonamiento: un mismo conjunto de pesos responde a los niveles de esfuerzo 10, 25, 50, 75 y 100, ademas del modo por defecto, ajustando la profundidad del razonamiento y el numero de tokens de pensamiento. Segun la model card, el entrenamiento se detuvo en el paso 114 de los 500 previstos por vencimiento de la reserva de GPU, y el checkpoint publicado no ha recibido validacion sobre conjuntos reservados ni una evaluacion completa de benchmarks, por lo que debe tratarse como material experimental.
+La innovacion central del modelo es el control de esfuerzo mediante el prompt: una linea como "Reasoning Effort: 10 (range 1–100; higher values request more thorough reasoning)" al inicio del system prompt modula la cantidad de tokens de pensamiento generados. Segun la model card, un unico modelo soporta los niveles 10, 25, 50, 75, 100 y el comportamiento por defecto, manteniendo el modo thinking activado con `enable_thinking=True`. Los benchmarks publicados corresponden unicamente al nivel effort 10 con cobertura completa.
 
-El modelo tiene 25.805.933.872 parametros totales (aproximadamente 25,8 mil millones) en formato BF16, con un repositorio de 51,6 GB. La licencia declarada es Apache 2.0, heredada del modelo base de Google, aunque los pesos han sido modificados mediante SFT y GRPO.
+El modelo es relevante porque combina capacidades multimodales (image-text-to-text), razonamiento extendido con control de presupuesto cognitivo y una licencia permisiva (Apache 2.0), lo que facilita su integracion en produccion. El checkpoint publicado (checkpoint114) incluye evaluaciones en 11 benchmarks con intervalos de confianza del 95% y metricas de tokens de pensamiento, lo que aporta transparencia sobre el rendimiento real del ajuste.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (Gemma 4), variante A4B (mezcla de expertos segun nomenclatura del modelo base) |
-| Parametros totales | 25.805.933.872 (~25,8 B) |
-| Parametros activos | no disponible (la nomenclatura A4B sugiere ~4 B activos, sin confirmacion en la informacion) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en BF16; no se documentan GGUF ni otras cuantizaciones) |
+| Arquitectura | Transformer Mixture of Experts (MoE), derivada de Gemma 4 |
+| Parametros totales | 25.805.933.872 (aprox. 25,8B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (segun configuracion de evaluacion) |
+| Tipos de cuantizacion | BF16 (pesos publicados); no se documentan otras cuantizaciones |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16, ~52 GB) |
+| Licencia | Apache 2.0 (con license_link a la licencia de Gemma 4) |
+| Formato de pesos | safetensors (BF16, aprox. 52 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura Gemma 4 del modelo base google/gemma-4-26B-A4B-it, un transformer multimodal capaz de procesar entradas de imagen y texto (pipeline image-text-to-text). Sobre esa base se aplico un ajuste supervisado (SFT) seguido de un adaptador LoRA de GRPO (rank 32, alpha 64) fusionado en los pesos, dando lugar a un unico modelo BF16 autonomo que no requiere cargar adaptadores por separado.
+El modelo se basa en la arquitectura Gemma 4 de Google, concretamente en la variante 26B-A4B, que emplea un esquema Mixture of Experts. El sufijo "A4B" sugiere aproximadamente 4B de parametros activos por token, aunque este dato no se confirma explicitamente en la informacion disponible. El ajuste fino parte del checkpoint google/gemma-4-26B-A4B-it y se distribuye como un modelo BF16 independiente, sin cuantizar, con un tamano de repositorio de 51,6 GB.
 
-El entrenamiento SFT utilizo 16.170 ejemplos supervisados correctos, de los cuales 1.603 correspondian al nivel de esfuerzo 10. La fase de RL empleo una mezcla de 11.283 preguntas de matematicas, ciencia, instrucciones generales y seguimiento de instrucciones, con ocho respuestas por grupo GRPO y 32 grupos por paso de optimizador. Las condiciones de esfuerzo se equilibraron aproximadamente mediante un esquema de cobertura prioritaria. La innovacion destacable es el control de esfuerzo aprendido: el modelo interpreta una linea como "Reasoning Effort: 10 (range 1–100; higher values request more thorough reasoning)" al inicio del system prompt y ajusta su profundidad de razonamiento en consecuencia. No se trata de un limite duro de tokens, sino de una preferencia aprendida. El entrenamiento se detuvo en el paso 114 de 500 por el vencimiento de la reserva de GPU.
+La innovacion tecnica principal es el control de esfuerzo de razonamiento mediante prompt. El autor indica que el modelo fue entrenado o ajustado para interpretar una linea de system prompt que especifica un nivel de esfuerzo entre 1 y 100, modulando la profundidad del razonamiento sin cambiar los pesos. La model card especifica que se debe mantener `enable_thinking=True` y que los valores de esfuerzo son preferencias de razonamiento, no limites duros de tokens ni porcentajes de un presupuesto de inferencia. No se detallan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con control explicito del esfuerzo (niveles 10, 25, 50, 75, 100 y por defecto).
-- Razonamiento matematico y cientifico, reforzado mediante GRPO sobre preguntas de matematicas y ciencia.
-- Procesamiento de imagenes y texto (image-text-to-text), heredado del modelo base Gemma 4.
-- Modo de pensamiento (thinking) activable con `enable_thinking=True`, con canales separados de razonamiento y respuesta final.
-- Seguimiento de instrucciones y conversacion multi-turno (pipeline conversational).
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Tool calling / function calling: no documentado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado especificamente.
+- Generacion de texto y razonamiento multimodal (image-text-to-text), con soporte para entradas de imagen y texto.
+- Razonamiento extendido con modo thinking activable mediante `enable_thinking=True`, que produce canales separados de pensamiento y respuesta final.
+- Control de esfuerzo de razonamiento mediante prompt (niveles 10, 25, 50, 75, 100 y default), permitiendo ajustar la profundidad del razonamiento segun la tarea.
+- Capacidades matematicas y de resolucion de problemas, evaluadas en benchmarks como AIME 2026, HMMT y GPQA-Diamond.
+- Generacion de codigo, evaluada en LiveCodeBench v6.
+- Razonamiento sobre contexto largo, evaluado en AA-LCR y LongBench v2 con contexto de hasta 262.144 tokens.
+- Capacidades de instruccion y seguimiento de formato, evaluadas en IFBench.
+- Capacidades de vision y comprension de imagenes del mundo real, evaluadas en RealWorldQA.
+- Soporte de conversacion multi-turno mediante chat template de Transformers.
+- Compatibilidad con vLLM (version 0.33.0 o superior con soporte para Gemma 4) y con endpoints compatibles.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Razonamiento con presupuesto controlado: en aplicaciones donde el coste por consulta importa, se puede fijar un esfuerzo bajo (10 o 25) para consultas simples y elevarlo (75 o 100) solo en tareas complejas, usando el mismo modelo desplegado.
-- Resolucion de problemas matematicos y cientificos: el entrenamiento GRPO sobre 11.283 preguntas de matematicas y ciencia lo hace adecuado para asistencia en ejercicios, verificacion de derivaciones y explicaciones paso a paso.
-- Procesamiento de documentos con imagenes: al ser image-text-to-text, puede extraer y razonar sobre contenido de capturas, diagramas o figuras combinadas con texto.
-- Asistentes conversacionales tecnicos: el formato conversational y el modo thinking permiten construir chatbots que muestran u ocultan el razonamiento segun el contexto.
-- Investigacion sobre control de esfuerzo: sirve como banco de pruebas para estudiar como el esfuerzo declarado en el prompt afecta a la precision y al numero de tokens de pensamiento.
-- Generacion de explicaciones educativas: el modo de esfuerzo alto produce razonamientos mas extensos y detallados, util para material didactico que requiera justificacion completa.
-- Evaluacion comparativa de tecnicas de RL: al publicar recetas y metadatos de entrenamiento, es util para reproducir experimentos de GRPO con LoRA sobre modelos multimodales.
+- Razonamiento matematico con control de coste: el modelo puede resolver problemas de competicion (AIME, HMMT) ajustando el esfuerzo segun la dificultad. Para problemas simples se usa effort 10 con una media de 8.155 tokens de pensamiento en AIME 2026; para problemas mas complejos se puede subir el esfuerzo y aumentar `max_new_tokens`.
+- Analisis de documentos largos y contratos: con 262.144 tokens de contexto, el modelo puede procesar informes extensos, expedientes o codigo fuente completo y responder preguntas sobre ellos, como demuestra su evaluacion en LongBench v2 (58,78% de precision).
+- Generacion y revision de codigo en produccion: su rendimiento en LiveCodeBench v6 (73,84% con effort 10) lo hace adecuado para pipelines de CI/CD donde se requiera revision automatizada de parches o generacion de tests, con la posibilidad de aumentar el esfuerzo para casos criticos.
+- Asistencia multimodal en soporte tecnico: al aceptar image-text-to-text, puede recibir capturas de pantalla o diagramas junto con texto y generar diagnosticos o instrucciones, usando effort bajo para respuestas rapidas en atencion al cliente.
+- Evaluacion de calidad y moderacion con razonamiento controlado: el modo thinking permite generar justificaciones detalladas para clasificaciones o decisiones, y el control de esfuerzo permite reducir latencia en tareas de alto volumen.
+- Investigacion en razonamiento y eficiencia cognitiva: el modelo sirve como banco de pruebas para estudiar como varia la precision con el presupuesto de razonamiento, gracias a sus benchmarks publicados con intervalos de confianza y metricas de tokens de pensamiento por nivel de esfuerzo.
+- Despliegue en entornos con requisitos de licencia permisiva: al estar bajo Apache 2.0, puede integrarse en productos comerciales sin las restricciones adicionales de otras licencias de modelos abiertos, siempre que se respete el license_link de Gemma 4.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una validacion historica en el paso 100 (no una puntuacion del modelo publicado en el paso 114), sobre 250 preguntas reservadas por ajuste, una respuesta por pregunta, semilla 0, temperatura 1.0, top-p 0.95, top-k 64 y limite de salida de 12.288 tokens. La referencia "antes de RL" es el modelo SFT en el paso cero de RL, no el modelo original de Google.
+Resultados publicados en la model card para effort 10, con cobertura completa de semillas segun lo indicado. La precision es la media con intervalo de confianza del 95% entre semillas; los tokens de pensamiento son la media por respuesta, excluyendo la respuesta final.
 
-| Ajuste | Precision antes de RL | Precision en paso 100 | Tokens de pensamiento antes de RL | Tokens de pensamiento en paso 100 |
-|---|---:|---:|---:|---:|
-| 10 | 70,0% | 69,6% | 3.192 | 1.923 |
-| 25 | 68,0% | 72,4% | 3.758 | 2.419 |
-| 50 | 67,6% | 73,2% | 4.341 | 3.083 |
-| 75 | 62,4% | 70,4% | 5.643 | 4.804 |
-| 100 | 61,6% | 68,4% | 6.297 | 5.415 |
-| default | 60,4% | 67,6% | 6.433 | 5.669 |
+| Benchmark | Precision / exito (%) | IC 95% (%) | Tokens de pensamiento medios | Preguntas por semilla | Semillas completadas / planificadas |
+|---|---:|---:|---:|---:|---:|
+| GPQA-Diamond | 75,25 | 74,18–76,33 | 2.942 | 198 | 10/32 |
+| MMLU-Pro | 83,84 | 83,76–83,93 | 1.910 | 12.032 | 4/4 |
+| MMMLU | 82,84 | 82,50–83,18 | 452 | 9.996 | 4/4 |
+| AIME 2026 | 79,63 | 74,76–84,50 | 8.155 | 30 | 9/64 |
+| HMMT February 2026 | 64,31 | 60,32–68,31 | 15.844 | 33 | 9/64 |
+| HMMT November 2025 | 72,22 | 70,00–74,44 | 9.763 | 30 | 9/64 |
+| LiveCodeBench v6 | 73,84 | 72,82–74,87 | 6.802 | 175 | 9/32 |
+| AA-LCR | 44,50 | 41,67–47,33 | 1.323 | 100 | 8/8 |
+| LongBench v2 | 58,78 | 58,07–59,50 | 4.860 | 370 | 8/8 |
+| RealWorldQA | 69,82 | 69,05–70,58 | 2.660 | 765 | 9/16 |
+| IFBench | 75,67 | 74,69–76,64 | 2.887 | 300 | 9/16 |
 
-Los tokens de pensamiento excluyen los tokens de la respuesta final. Son comprobaciones de una sola semilla, sin intervalos de confianza entre semillas, y las diferencias pequenas pueden deberse a variacion de muestreo. No se ha establecido ninguna afirmacion de preservacion de capacidades para la suite completa de doce benchmarks ni para tareas multimodales.
+La model card indica que la comparacion con el modelo base (Gemma 4 26B-A4B sin instruccion de esfuerzo) esta en curso: solo 65 de 312 pasadas estaban completas en el momento de la actualizacion (2026-11-20 11:52 Europe/Prague). No se dispone de los valores del modelo base en la informacion proporcionada, por lo que no se puede calcular la reduccion de tokens de pensamiento ni la diferencia de precision.
+
+Configuracion de evaluacion: BF16 completo, thinking activado, vLLM 0.33.0 / EvalScope 1.14.1, contexto 262.144, limite de salida 65.536, temperatura 1.0, top-p 0.95, top-k 64. Los intervalos de confianza son intervalos t de Student al 95% entre semillas de muestreo completadas y miden variabilidad de generacion sobre selecciones fijas de preguntas, no incertidumbre por muestreo de nuevas preguntas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 52 GB solo para pesos, mas memoria adicional para el contexto y el estado de inferencia; en la practica se recomienda al menos 80 GB.
-- GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU con `device_map="auto"`.
-- Cabe en GPU de consumo: no en BF16 con una sola GPU de 24 GB; no se documentan cuantizaciones (GGUF, AWQ, GPTQ) que permitan reducir la huella.
-- Opciones de despliegue: Transformers (version con soporte de Gemma 4; el entorno de entrenamiento uso la 5.20.2) y vLLM con soporte de Gemma 4, sirviendo el repositorio con `--served-model-name effort-model`.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en BF16: los pesos ocupan aproximadamente 52 GB, por lo que se necesitan al menos 60-70 GB de VRAM considerando cache KV y activaciones para contexto moderado. Para contexto completo de 262.144 tokens, el requisito de memoria aumenta significativamente y no se especifica en la informacion disponible.
+- GPU recomendadas: para BF16 se requieren GPUs con 80 GB o mas, como NVIDIA A100 80GB, H100 80GB o multiples GPUs. No se documentan opciones de cuantizacion (GGUF, AWQ, GPTQ) en la informacion proporcionada, por lo que no se puede confirmar su viabilidad en GPUs de consumo.
+- GPU de consumo: no es viable en BF16 en GPUs consumer de 24 GB (RTX 4090) sin cuantizacion, y no se han publicado pesos cuantizados en la informacion disponible.
+- Opciones de despliegue: Transformers con soporte para Gemma 4 (clase `AutoModelForImageTextToText`), vLLM 0.33.0 o superior con soporte para Gemma 4, y endpoints compatibles. No se mencionan llama.cpp, Ollama ni TGI en la informacion proporcionada.
+- Latencia y throughput: no disponibles. La model card no publica metricas de latencia ni tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| krystofmitka/gemma-4-26B-A4B-effort10-checkpoint114 | ~25,8 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste experimental con control de esfuerzo, sin validacion final |
-| google/gemma-4-26B-A4B-it | ~25,8 B (modelo base) | no disponible | Apache 2.0 | Hugging Face (oficial) | Modelo original de Google DeepMind, con benchmarks oficiales |
-| Modelos comparables de ~25 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de alternativas en la informacion proporcionada |
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Rendimiento destacado |
+|---|---:|---:|---|---|---|
+| ThinkingNuke (este modelo) | 25,8B | 262.144 | Apache 2.0 | safetensors BF16 | MMLU-Pro 83,84; GPQA-Diamond 75,25; LiveCodeBench v6 73,84 (effort 10) |
+| google/gemma-4-26B-A4B-it (base) | no disponible | no disponible | Apache 2.0 (Gemma 4) | safetensors | Resultados de comparacion en curso; no publicados en la informacion disponible |
+| google/gemma-4-E2B-it | no disponible | no disponible | Apache 2.0 (Gemma 4) | safetensors | Usado como juez local de AA-LCR; sin benchmarks publicados en la informacion disponible |
 
-La comparacion directa con otras alternativas de la misma categoria no esta disponible en la informacion proporcionada; el unico punto de referencia documentado es el modelo base oficial de Google.
+No se dispone de datos de benchmarks de los modelos base ni de alternativas de otros desarrolladores en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento completa. La comparativa se limita a los datos estructurales y de licencia disponibles.
 
 ## Limitaciones y advertencias
 
-- El checkpoint publicado (paso 114) no ha recibido validacion sobre conjuntos reservados ni evaluacion completa de benchmarks; los datos de la tabla corresponden al paso 100.
-- El entrenamiento se detuvo antes de lo previsto (114 de 500 pasos) por vencimiento de la reserva de GPU, por lo que el ajuste puede estar incompleto.
-- Solo se han validado los niveles de esfuerzo 10, 25, 50, 75, 100 y por defecto; otros valores no estan validados.
-- El control de esfuerzo es una preferencia aprendida, no un limite duro de tokens; no garantiza un presupuesto de inferencia exacto.
-- Riesgo de truncamiento: si se alcanza el limite de tokens de salida, puede cortarse el razonamiento o la respuesta final.
-- No se ha establecido preservacion de capacidades para la suite completa de benchmarks ni para tareas multimodales.
-- Sesgos conocidos: no documentados en la informacion proporcionada; se heredan potencialmente los del modelo base.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible.
-- Idiomas soportados: no disponibles.
-- Licencia Apache 2.0, pero los pesos han sido modificados respecto al modelo base; consultar LICENSE, NOTICE y BASE_MODEL_CARD.md para la atribucion upstream.
-- Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
+- Solo se han validado los niveles de esfuerzo 10, 25, 50, 75, 100 y default; otros valores no han sido validados segun la model card.
+- Los benchmarks publicados corresponden unicamente a effort 10; el rendimiento en otros niveles de esfuerzo no se ha evaluado en la informacion disponible.
+- La comparacion con el modelo base esta incompleta (65/312 pasadas completas), por lo que no se puede confirmar la mejora o degradacion respecto a google/gemma-4-26B-A4B-it.
+- Los intervalos de confianza se basan en un numero limitado de semillas en varios benchmarks (por ejemplo, 9/64 en AIME 2026 y HMMT), lo que puede producir intervalos amplios y estimaciones menos estables.
+- El limite de salida puede truncar el razonamiento o la respuesta final si se alcanza `max_new_tokens`; la model card advierte de este riesgo.
+- No se documentan los idiomas soportados, los sesgos conocidos ni el riesgo de alucinacion en la informacion proporcionada.
+- La licencia Apache 2.0 se acompania de un license_link a la licencia de Gemma 4; es recomendable revisar dicho enlace para confirmar las condiciones exactas de uso comercial.
+- El modelo requiere Transformers con soporte para Gemma 4 y vLLM 0.33.0 o superior; versiones anteriores pueden no ser compatibles.
+- El repositorio ocupa 51,6 GB y los pesos BF16 requieren hardware de alta gama; no se ofrecen alternativas cuantizadas en la informacion disponible.
+- La model card indica que la evaluacion no es una replicacion exacta de los prompts de evaluacion de BottleCap ni de los modelos auxiliares, lo que limita la comparabilidad directa con otros resultados publicados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/krystofmitka/gemma-4-26B-A4B-effort10-checkpoint114
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Recursos incluidos en el repositorio: `effort_presets.json`, `examples/`, `training_recipe.json`, `validation_history.json`, `checkpoint_metadata.json`, `weights_manifest.json`, `LICENSE`, `NOTICE`, `BASE_MODEL_CARD.md`
+- Tabla de benchmarks (SVG): https://huggingface.co/krystofmitka/ThinkingNuke-gemma-4-26B-A4B/resolve/main/eval/checkpoint114-effort10/table.svg
+- Repositorio del autor (referenciado en la model card): https://huggingface.co/krystofmitka/ThinkingNuke-gemma-4-26B-A4B

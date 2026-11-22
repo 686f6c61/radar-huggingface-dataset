@@ -53,5 +53,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Ternary - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ternary",
+      "snippet": "Ternary (from Latin ternarius) or trinary is an adjective meaning \"composed of three items\". It can refer to:"
+    },
+    {
+      "title": "Ternary Operator in Programming - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/dsa/ternary-operator-in-programming/",
+      "snippet": "Mar 26, 2024 · What is a Ternary Operator? The ternary operator is a conditional operator that takes three operands: a condition, a …"
+    },
+    {
+      "title": "Conditional (ternary) operator - JavaScript | MDN - MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator",
+      "snippet": "Jul 8, 2025 · The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a …"
+    },
+    {
+      "title": "JavaScript Conditional Ternary Operator - W3Schools",
+      "url": "https://www.w3schools.com/js/js_if_ternary.asp",
+      "snippet": "Description The conditional operator is a shorthand for writing conditional if...else statements. It is called a ternary operator because …"
+    },
+    {
+      "title": "Ternary conditional operator - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ternary_conditional_operator",
+      "snippet": "Although a ternary operator in general is any operator with three arguments, the three-argument conditional operator is the only …"
+    }
+  ]
 }

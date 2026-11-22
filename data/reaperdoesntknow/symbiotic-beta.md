@@ -2,98 +2,98 @@
 
 ## Resumen
 
-Symbiotic-Beta (publicado por el autor como SymLM) es un modelo de lenguaje experimental desarrollado por reaperdoesntknow, dentro del catálogo de Convergent Intelligence LLC (Research Division). Se presenta como un modelo híbrido simbólico-neural que combina un backbone transformer congelado (`Qwen2ForCausalLM`) con un conjunto de módulos cognitivos simbólicos orientados al razonamiento interpretable. El checkpoint está afinado sobre MetaMathQA y OpenThoughts2-1M, con foco declarado en razonamiento matemático y Q&A simbólico.
+Symbiotic-Beta (publicado internamente como SymLM) es un modelo de lenguaje experimental desarrollado por reaperdoesntknow bajo la marca Convergent Intelligence LLC. Se construye como un fine-tuning del backbone Qwen2.5-0.5B de Alibaba, al que el autor superpone una capa conceptual de "modulos cognitivos simbolicos" (DTE-HDM, M.A.S.R.M, QwenExoCortex y procesadores simbolicos como ThoughtDynamicsLNN o DNAConv). El objetivo declarado es explorar la fusion neuro-simbolica para razonamiento matematico estructurado y memoria de largo plazo.
 
-El modelo parte de Qwen2.5-0.5B como base, aunque el repositorio de safetensors declara 3.569.725.840 parámetros totales, lo que sugiere que los módulos simbólicos añadidos incrementan sustancialmente el tamaño respecto al backbone original. La longitud de contexto no está declarada en la información disponible; el modelo base Qwen2.5-0.5B soporta 32.768 tokens, pero no se confirma que ese límite se mantenga tras la fusión simbólica.
+El modelo se entrena sobre 25.000 ejemplos de MetaMathQA con hiperparametros estandar (AdamW, LR 3e-5, 3 epocas, batch efectivo de 1024). A pesar de la base de 0,5B parametros, el checkpoint publicado en safetensors pesa 35,9 GB y declara 3.569.725.840 parametros totales, lo que sugiere que los modulos adicionales anaden un numero significativo de pesos no presentes en el Qwen original.
 
-Su relevancia es principalmente de investigación: propone una arquitectura neuro-simbólica con mecanismos como DTE-HDM (memoria inspirada en ADN y codificación helicoidal), M.A.S.R.M (mecanismos de respuesta simbiótica multiagente) y procesadores simbólicos (ThoughtDynamicsLNN, DNAConv, ThoughtMemory). No es un modelo orientado a producción: el autor lo describe como experimental, sin RLHF ni alineamiento, y entrenado sobre un volumen limitado de datos.
+Es relevante ahora porque ejemplifica una corriente de modelos pequenos con arquitecturas hibridas neuro-simbolicas orientadas a investigacion, aunque su naturaleza experimental, la ausencia de benchmarks publicados y la falta de alineacion RLHF lo sitúan fuera de cualquier uso en produccion sin validacion previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida simbólico-neural sobre transformer decoder-only (`Qwen2ForCausalLM`) con módulos simbólicos (DTE-HDM, M.A.S.R.M, QwenExoCortex, ThoughtDynamicsLNN, DNAConv, ThoughtMemory) |
+| Arquitectura | Transformer decoder-only (Qwen2ForCausalLM) con modulos simbolicos anadidos (DTE-HDM, M.A.S.R.M, QwenExoCortex) |
 | Parametros totales | 3.569.725.840 |
-| Parametros activos | no disponible (no es MoE según la información proporcionada) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (repositorio en safetensors; no se declaran GGUF ni cuantizaciones publicadas) |
-| Idiomas soportados | en (inglés) |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
+| Longitud de contexto | no disponible (heredada de Qwen2.5-0.5B, no confirmada en la model card) |
+| Tipos de cuantizacion | no disponible (solo safetensors publicado) |
+| Idiomas soportados | en (ingles) |
 | Licencia | afl-3.0 (Academic Free License 3.0) |
-| Formato de pesos | safetensors (librería transformers, PyTorch) |
+| Formato de pesos | safetensors |
+| Tamano del repo | 35,9 GB |
+| Modelo base | Qwen/Qwen2.5-0.5B |
+| Libreria | transformers 4.51.3 |
+| Framework | PyTorch 2.7.0+cu126 |
+| Datasets de entrenamiento | meta-math/MetaMathQA, open-thoughts/OpenThoughts2-1M |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo fusiona un backbone transformer congelado (`Qwen2ForCausalLM`, base Qwen2.5-0.5B) con módulos simbólicos que operan sobre los estados ocultos. Según la model card, la arquitectura incluye: DTE-HDM (Dynamic Thought Evolution with Helical Encoding and DNA-Inspired Memory), que codifica contexto de forma espiral y mantiene memoria de largo plazo; M.A.S.R.M (Multi-Agent Symbiotic Response Mechanisms), que coordina agentes simbólicos y neuronales mediante atención con compuertas y capas de respuesta adaptativa; QwenExoCortex, que proyecta los estados ocultos del modelo Qwen a un espacio de fusión simbólica; y procesadores simbólicos como ThoughtDynamicsLNN, procesadores líquidos/cristalinos, razonamiento sobre grafos con DNAConv y una ThoughtMemory rotatoria. La model card menciona además el Analytic Foundations Theorem (AFT) como base teórica declarada, sin que se aporten detalles formales verificables en la información disponible.
+El modelo parte del transformer decoder-only Qwen2ForCausalLM (0,5B parametros) y, segun la model card, anade varios componentes simbolicos: Dynamic Thought Evolution with Helical Encoding and DNA-Inspired Memory (DTE-HDM), Multi-Agent Symbiotic Response Mechanisms (M.A.S.R.M), un proyector QwenExoCortex que mapea estados ocultos a un espacio de fusion simbolica, y procesadores como ThoughtDynamicsLNN, Liquid/Crystalline Processors, Graph Reasoning con DNAConv y un ThoughtMemory rotatorio. La model card no detalla la implementacion concreta de cada modulo ni su coste computacional, y el desajuste entre los 0,5B del backbone y los 3,57B declarados en safetensors no se explica explicitamente.
 
-El entrenamiento se realizó sobre 25.000 ejemplos de MetaMathQA (y se referencia también OpenThoughts2-1M en los metadatos), con los siguientes hiperparámetros: learning rate 3e-5, batch size total 1024 (16 × 64 pasos de acumulación de gradiente), optimizador AdamW (betas 0,9/0,999, epsilon 1e-8), scheduler coseno con 500 pasos de warmup, 3 épocas y precisión mixta con Native AMP. No se aplicó RLHF ni DPO según la model card. Las versiones de framework declaradas son Transformers 4.51.3, PyTorch 2.7.0+cu126, Datasets 3.5.0 y Tokenizers 0.21.1.
+El entrenamiento se realizo sobre 25.000 ejemplos de MetaMathQA con learning rate 3e-5, batch efectivo de 1024 (16 x 64 de acumulacion), optimizador AdamW con betas (0,9; 0,999), scheduler coseno, 500 pasos de warmup, 3 epocas y precision mixta con Native AMP. No se menciona uso de RLHF, DPO ni ninguna fase de alineacion. El autor declara el checkpoint como "experimental" y lo enmarca en un marco teorico propio denominado Analytic Foundations Theorem (AFT), sin publicacion revisada por pares asociada.
 
 ## Capacidades
 
-- Generación de texto en inglés con énfasis en estructura lógica y razonamiento simbólico.
-- Razonamiento matemático y generación de pruebas, con ajuste específico sobre MetaMathQA (Q&A simbólico, lógica de ecuaciones, inferencia estructurada).
-- Memoria de largo plazo simulada mediante ThoughtMemory y codificación helicoidal (DTE-HDM), orientada a continuidad de "pensamiento" entre tokens.
-- Coordinación multiagente interna (M.A.S.R.M) con atención con compuertas y capas de respuesta adaptativa.
-- Razonamiento sobre grafos mediante DNAConv.
-- Procesadores dinámicos tipo Liquid/Crystalline para adaptación contextual.
-- No se declara soporte de tool calling ni function calling en la información disponible.
-- No se declara soporte de visión, audio ni modo thinking explícito.
-- Capacidad multilingüe limitada al inglés según los metadatos.
+- Generacion de texto en ingles con enfasis en razonamiento matematico y Q&A simbolico, derivado del fine-tuning sobre MetaMathQA.
+- Razonamiento estructurado sobre ecuaciones y logica de inferencia segun la model card.
+- Memoria de largo plazo y "replay" de pensamiento mediante el modulo ThoughtMemory y DTE-HDM (segun descripcion del autor, sin validacion externa).
+- Modulacion de atencion y coordinacion multi-agente simbolica a traves de M.A.S.R.M (declarado, sin evidencia empirica publicada).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado por benchmarks; el autor lo sugiere como caso de investigacion.
+- Capacidades multilingues: solo ingles declarado.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Investigación en IA neuro-simbólica: el modelo sirve como banco de pruebas para estudiar la interacción entre atención modulada, replay de memoria y proyecciones simbólicas sobre un backbone congelado, gracias a los módulos QwenExoCortex y ThoughtMemory.
-- Experimentos de memoria contextual de largo plazo: ThoughtMemory y DTE-HDM permiten probar mecanismos de persistencia de "pensamiento" entre tokens en tareas de razonamiento encadenado, aunque sin garantías de contexto extendido declarado.
-- Generación de Q&A matemático estructurado: al estar afinado sobre MetaMathQA, es adecuado para prototipos de resolución de ecuaciones y problemas simbólicos en inglés, siempre con verificación posterior.
-- Estudio de arquitecturas multiagente internas: M.A.S.R.M facilita experimentos sobre coordinación de agentes simbólicos y neuronales con feedback con compuertas.
-- Base para adaptación de bajo recurso: el diseño modular de memoria y proyección está pensado, según el autor, para obtener resultados con datasets pequeños; útil para prototipos académicos con presupuesto limitado.
-- Evaluación de técnicas de razonamiento sobre grafos: DNAConv permite experimentar con representaciones relacionales en tareas de lógica simbólica.
-- Docencia y divulgación: como ejemplo didáctico de fusión neuro-simbólica sobre un modelo pequeño (base 0,5B), resulta útil en cursos de arquitecturas híbridas.
+- Investigacion en IA neuro-simbolica: sirve como banco de pruebas para estudiar la interaccion entre un backbone transformer congelado y modulos simbolicos anadidos, comparando activaciones y estados ocultos frente al Qwen2.5-0.5B original.
+- Experimentos de memoria de largo plazo: el diseno DTE-HDM y ThoughtMemory permite probar hipotesis sobre persistencia de contexto y replay de pensamiento en tareas de razonamiento encadenado.
+- Prototipado de asistentes matematicos de bajo coste: con 0,5B de backbone, se puede desplegar en entornos con recursos limitados para generar pasos intermedios de problemas aritmeticos y algebraicos, siempre con verificacion posterior.
+- Generacion de datos sinteticos de razonamiento: util para producir trazas de solucion estilo MetaMathQA que luego se filtran y se usan para entrenar modelos mayores.
+- Educacion y tutoria automatizada de matematicas basicas: el modelo puede generar explicaciones paso a paso en ingles, adecuado para prototipos de plataformas de aprendizaje con supervision humana.
+- Kernel simbolico para agentes reflexivos: el autor lo propone como componente de sistemas de "evolucion de conocimiento" en pipelines de investigacion, no en produccion.
 
 ## Benchmarks y rendimiento
 
-El model-index declarado por el autor define la entrada "SymLM" pero no incluye resultados (`results: []`). Por tanto:
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card declara un model-index con nombre "SymLM" y la lista de resultados vacia. No se han publicado resultados de benchmarks en la informacion disponible (ni MMLU, ni GSM8K, ni HumanEval, ni comparaciones numericas con otros modelos).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 7,1 GB solo para pesos (3,57B parámetros × 2 bytes), más overhead de activaciones y módulos simbólicos; en la práctica, reservar 10-12 GB.
-- En cuantización de 8 bits: en torno a 3,6 GB de pesos; en 4 bits: en torno a 1,8 GB, aunque no se publican versiones GGUF ni cuantizadas oficiales.
-- GPU recomendadas: A100 40 GB, H100 o L40S para experimentación cómoda con el modelo completo y batches grandes; RTX 4090 (24 GB) o RTX 3090 (24 GB) suficientes para inferencia en fp16.
-- GPU de consumo: cabe en RTX 4090, RTX 3090, RTX 4080 (16 GB) y, con cuantización, en GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB).
-- Opciones de despliegue: transformers (librería declarada); vLLM, TGI, llama.cpp u Ollama no están confirmados para esta arquitectura híbrida con módulos personalizados, por lo que su compatibilidad es no disponible.
-- Latencia y throughput: no disponibles; al tratarse de un modelo de 3,57B con módulos adicionales, se espera mayor coste por token que un transformer puro de tamaño similar, pero no hay cifras publicadas.
+- VRAM estimada para inferencia en fp16: aproximadamente 7,1 GB solo para pesos (3,57B parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica, 10-12 GB en una GPU consumer de gama alta.
+- En cuantizacion de 8 bits: en torno a 3,6 GB de pesos; en 4 bits: en torno a 1,8 GB, aunque no se publican GGUF ni cuantizaciones oficiales.
+- GPU recomendadas: A100 40/80 GB o H100 para entrenamiento o evaluacion completa; RTX 4090 (24 GB) o RTX 3090 (24 GB) para inferencia en fp16; RTX 4060 Ti 16 GB como minimo comodo.
+- Cabe en GPU consumer: si, en RTX 4090, 3090, 4080 y 4070 Ti Super en fp16; en GPUs de 8 GB requeriria cuantizacion no publicada.
+- Opciones de despliegue: transformers (libreria declarada); vLLM, TGI, llama.cpp u Ollama no estan confirmados por el autor y requeririan conversion manual, especialmente por los modulos simbolicos anadidos que pueden no ser compatibles con motores de inferencia estandar.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Symbiotic-Beta (SymLM) | 3,57B (base 0,5B + módulos) | no disponible | AFL-3.0 | Hugging Face, safetensors | Híbrido neuro-simbólico experimental; sin benchmarks publicados |
-| Qwen2.5-0.5B (base) | 0,49B | 32.768 tokens | Apache 2.0 | Hugging Face, amplia variedad de formatos | Transformer estándar, bien documentado y con ecosistema de cuantizaciones |
-| Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa estándar de tamaño similar en orden de magnitud, sin módulos simbólicos |
-| Modelos matemáticos pequeños (p. ej. variantes afinadas de Qwen2.5 sobre MetaMathQA) | 0,5B-3B | 32.768 tokens (típico) | según base | Hugging Face | Enfoque puramente neural, sin fusión simbólica declarada |
+| Symbiotic-Beta (SymLM) | 3,57B (backbone 0,5B) | no disponible | afl-3.0 | Hugging Face, safetensors | Experimental, sin benchmarks, solo ingles |
+| Qwen2.5-0.5B (base) | 0,49B | 32.768 tokens (segun Qwen) | Apache 2.0 | Hugging Face, amplia cuantizacion | Modelo base estable, multilingue, con benchmarks publicados |
+| Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF, vLLM | Alternativa directa con mejor rendimiento validado |
+| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face, GGUF | Enfoque en eficiencia para edge, con benchmarks publicados |
 
-La comparación directa con alternativas es difícil porque no hay benchmarks publicados para Symbiotic-Beta y su arquitectura no es estándar. Frente a Qwen2.5-0.5B, el modelo añade módulos que multiplican el número de parámetros (de ~0,49B a ~3,57B) sin que se documente la ganancia de rendimiento asociada.
+La comparacion directa con Qwen2.5-0.5B es la mas informativa: Symbiotic-Beta multiplica por mas de siete el numero de parametros declarados sin publicar mejoras medibles, y pierde el multilingueismo y la compatibilidad de despliegue del original.
 
 ## Limitaciones y advertencias
 
-- Escala de entrenamiento limitada: solo 25.000 ejemplos de MetaMathQA según la model card; generalización amplia no garantizada.
-- Sin RLHF ni alineamiento: las salidas no están ajustadas para seguridad ni para seguir instrucciones, y pueden alucinar.
-- Fluidez no implica corrección: la fluidez simbólica no garantiza pruebas matemáticamente válidas; se recomienda verificación externa.
-- No optimizado para generación abierta: prioriza lógica y estructura sobre profundidad conversacional.
-- Solo inglés declarado; sin soporte multilingüe confirmado.
-- Longitud de contexto no documentada: no se puede asumir la ventana de 32.768 tokens del modelo base tras la fusión simbólica.
-- Arquitectura no estándar: la integración con servidores de inferencia habituales (vLLM, TGI, llama.cpp) no está confirmada y puede requerir código personalizado.
-- Licencia AFL-3.0: permite uso comercial con condiciones de reciprocidad y atribución; conviene revisar los términos antes de integrar en producto.
-- Estado experimental declarado por el propio autor; no apto para producción sin evaluación propia.
-- Repositorio grande (35,9 GB) en relación con el número de parámetros, lo que sugiere artefactos adicionales o pesos redundantes; conviene inspeccionar antes de descargar.
-- Riesgo de sesgos heredados del backbone Qwen2.5 y de los datasets de matemáticas utilizados.
+- Entrenamiento limitado a 25.000 ejemplos de MetaMathQA: no hay garantia de generalizacion fuera del dominio matematico.
+- Sin RLHF ni alineacion: los outputs no estan ajustados para seguridad ni para seguir instrucciones, y el autor advierte explicitamente de riesgo de alucinacion.
+- "Fluidez no implica correccion": el propio autor senala que la fluidez simbolica no garantiza pruebas matematicamente validas; se recomienda verificacion externa.
+- No optimizado para generacion abierta: prioriza logica y estructura sobre profundidad conversacional.
+- Solo ingles: no se declara soporte de castellano ni de otros idiomas.
+- Licencia AFL-3.0: permite uso comercial con condiciones (atribucion, reciprocidad sobre modificaciones); revisar compatibilidad antes de integrar en productos propietarios.
+- Compatibilidad de despliegue incierta: los modulos simbolicos anadidos pueden no funcionar en vLLM, llama.cpp u Ollama sin adaptacion, y no se publican cuantizaciones.
+- Estado experimental: el autor lo declara "experimental phase", sin benchmarks ni validacion por terceros.
+- Desajuste no explicado entre backbone (0,5B) y parametros declarados (3,57B), lo que dificulta estimar coste real de inferencia y entrenamiento.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Symbiotic-Beta
+- Hugging Face: https://huggingface.co/reaperdoesntknow/Symbiotic-Beta
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Dataset MetaMathQA: https://huggingface.co/datasets/meta-math/MetaMathQA
 - Dataset OpenThoughts2-1M: https://huggingface.co/datasets/open-thoughts/OpenThoughts2-1M
 - Modelos relacionados del autor: https://huggingface.co/reaperdoesntknow/Symbiotic-1B, https://huggingface.co/reaperdoesntknow/Symbiotic-8B, https://huggingface.co/reaperdoesntknow/Symiotic-14B

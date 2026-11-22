@@ -2,106 +2,102 @@
 
 ## Resumen
 
-Chronos-2 DE-LU pre-gate es un checkpoint de investigación derivado de amazon/chronos-2, el modelo fundacional de series temporales de Amazon, especializado en la previsión de los 24 precios horarios de electricidad del mercado alemán-luxemburgués (DE-LU) en EUR/MWh. Lo desarrolla Aryan Sudhir (AryanSudhirDev) como candidato congelado ("pre-gate") para un estudio sobre trading de baterías, y se distribuye como pesos fusionados independientes más un adaptador LoRA opcional.
+Reforge-1.5B es un adaptador LoRA entrenado sobre Qwen2.5-Coder-1.5B-Instruct para la reparación de funciones Python. Lo desarrolla AryanSudhirDev y se distribuye bajo licencia Apache 2.0. El modelo recibe código Python con errores junto con una descripción del comportamiento esperado y genera una propuesta de función corregida, preservando nombres, firmas y requisitos declarados. Es un especialista en reparación, no una mejora general de codificación.
 
-El modelo parte de la arquitectura T5 de Chronos-2 (119.477.664 parámetros) y añade actualizaciones LoRA de rango 8 y alpha 16 sobre las proyecciones de atención q/k/v/o y el embedding de parches de salida, entrenadas con los pesos base congelados. La innovación respecto al modelo base no está en la arquitectura sino en el dominio: el modelo consume 85 días de historia horaria (2040 valores) junto con covariables exógenas de carga y generación eólica y solar previstas, más precios de mercados vecinos.
+El repositorio nació originalmente con el identificador `chronos-2-de-lu-pregate` y contenía un modelo de predicción de precios eléctricos basado en Chronos. El autor lo renombró a `Reforge-1.5B` y sustituyó el contenido por este adaptador de reparación de código; la versión anterior de Chronos sigue accesible en una revisión concreta del repositorio. Esta ficha describe exclusivamente el adaptador de reparación.
 
-Es relevante ahora porque ejemplifica el patrón de ajuste fino eficiente (LoRA) sobre modelos fundacionales de series temporales para dominios verticales concretos, con una evaluación honesta que reconoce no haber superado al baseline estadístico LEAR en su ventana de holdout. El resultado registrado es un MAE de 15,386 EUR/MWh en 372 días, frente a ~15,34 de LEAR, sin significación estadística (p = 0,543).
+El adaptador tiene 119.477.664 parámetros (los del modelo base Qwen2.5-Coder-1.5B-Instruct, ya que el adaptador LoRA añade un conjunto reducido de pesos) y un tamaño de repositorio de 0,5 GB. La model card documenta resultados mixtos: mejoras en paneles de desarrollo de reparación y un retroceso severo en HumanEval externo, por lo que el autor lo presenta explícitamente como un checkpoint de investigación retenido y no como un reemplazo general del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | T5 (encoder-decoder) de Chronos-2, con adaptador LoRA fusionado |
-| Parametros totales | 119.477.664 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 2040 valores de historia horaria (85 dias); 168-2040 aceptados por el helper |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo numerico de series temporales, no linguistico) |
+| Arquitectura | Transformer decoder-only (Qwen2) con adaptador LoRA (rank 8, alpha 16, dropout 0) sobre proyecciones q/k/v/o |
+| Parametros totales | 119.477.664 (modelo base Qwen2.5-Coder-1.5B-Instruct; el adaptador LoRA añade un conjunto reducido de pesos) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible como especificación formal; el helper de inferencia impone un techo de prompt de 3072 tokens y un máximo de 384 tokens nuevos |
+| Tipos de cuantizacion | no disponible (el adaptador se distribuye en safetensors; el helper usa float32 en CPU y bfloat16 en MPS) |
+| Idiomas soportados | inglés (según la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (model.safetensors + config.json); adaptador LoRA separado en adapter/ |
-| Modelo base | amazon/chronos-2 (revision 29ec3766d36d6f73f0696f85560a422f50e8498c) |
-| LoRA | rango 8, alpha 16, dropout 0; q/k/v/o attention y output patch embedding |
-| Tamano del repo | 0.5 GB |
-| Libreria | chronos-forecasting |
-| Pipeline | time-series-forecasting |
-| Horizonte de prediccion | 24 horas (bloques de dia de entrega Berlin) |
+| Formato de pesos | safetensors (adapter_model.safetensors) + archivos de tokenizer copiados del base |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura T5 de Chronos-2, un modelo fundacional de series temporales que tokeniza las series en parches y las procesa como secuencias, generando predicciones cuantílicas. Sobre esta base se entrenó un adaptador LoRA de rango 8 y alpha 16, con dropout 0, que actualiza las proyecciones de atención q/k/v/o y el embedding de parches de salida. Los pesos base permanecieron congelados durante el entrenamiento del adaptador; la exportación fusiona las actualizaciones aprendidas sin entrenamiento adicional. El checkpoint congelado se identifica por el SHA-256 del adaptador `01fe7c491f30f3bbcb1265d3bbd53db226b5f0cfe3769d0519b94679462c48b5`.
+El adaptador se aplica sobre Qwen2.5-Coder-1.5B-Instruct, un transformer decoder-only de la familia Qwen2. El entrenamiento LoRA usa rank 8, alpha 16, dropout 0, y se aplica sobre las proyecciones de atención q, k, v y o. La revisión del modelo base está fijada al commit `2e1fd397ee46e1388853d2af2c993145b0f1098a`. El entrenamiento usó semilla 42 y 120 actualizaciones (steps); el checkpoint retenido es `balanced-short-v1-seed42-01` en el paso 120.
 
-Los datos de entrenamiento corresponden al mercado DE-LU: precios históricos en EUR/MWh como objetivo, covariables pasadas horarias de previsión de carga (`load_fc`), eólica (`wind_fc`) y solar (`solar_fc`), más precios de mercados vecinos (BE, FR, NL, DK1, AT, CH, CZ), y covariables futuras de 24 valores de carga, viento y solar. La calibración de intervalos usa 303 días de desarrollo anteriores que terminan el 2025-06-30, y el registro de holdout declara un corte de ajuste en 2025-09-01. No se especifica en la información disponible el número total de tokens de entrenamiento ni la composición completa del dataset, ni si hubo RLHF o DPO (no aplicable en el sentido habitual a un modelo de forecasting).
-
-La innovación técnica destacable es metodológica: el diseño "pre-gate" restringe las entradas a información disponible antes del cierre de la subasta D-1 a mediodía (Europe/Berlin), usando estimaciones meteorológicas pre-gate para viento y solar en lugar de las previsiones TSO post-gate. También se documenta el mapeo de días de entrega con cambio de hora (DST) a 24 slots.
+Los datos de entrenamiento son ejemplos sintéticos autorales de reparación de código Python, según indica la model card. No se especifica el número de tokens ni la composición detallada del dataset. No se documenta el uso de RLHF, DPO ni otras técnicas de alineación posteriores al ajuste supervisado. El autor advierte que los paneles de desarrollo reutilizados incluyen ejemplos correlacionados y no constituyen una confirmación independiente de generalización. No se distribuyen cuerpos de tareas de benchmark, tests privados, entradas ocultas ni respuestas canónicas. El helper de inferencia emplea decodificación greedy, semilla 42, un máximo de 384 tokens nuevos y un techo de prompt de 3072 tokens, rechazando entradas largas en lugar de truncarlas silenciosamente.
 
 ## Capacidades
 
-- Previsión de series temporales: genera predicciones cuantílicas para 24 horas de precios horarios de electricidad DE-LU en EUR/MWh.
-- Predicción multivariante con covariables: incorpora carga, generación eólica y solar previstas, y precios de siete mercados vecinos.
-- Salida cuantílica: el pipeline devuelve cuantiles por hora de previsión, con ejes target series, quantile y forecast hour.
-- Calibración de intervalos: `calibration.json` permite una expansión de intervalos horaria separada, basada en datos de desarrollo, no en pesos neuronales.
-- Inferencia desde JSON: `inference.py` acepta entradas numéricas preparadas y produce un fichero de previsión.
-- No soporta tool calling, function calling, agentes ni capacidades multilingües: es un modelo numérico de forecasting, no un LLM generativo de texto.
+- Generación de propuestas de reparación de funciones Python a partir de código defectuoso y una descripción del comportamiento esperado.
+- Preservación de nombres de función, firmas y requisitos declarados en el prompt.
+- Generación de texto conversacional mediante la plantilla de chat user/assistant del tokenizer.
+- Especialización en reparación de código, no en generación general de código ni en otras tareas de programación.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingües no disponibles; la model card indica inglés.
+- No se documentan capacidades de visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Previsión de precios day-ahead para trading: el modelo predice los 24 precios horarios del día siguiente con 85 días de historia y covariables pre-gate, adecuado para estrategias que deben decidir antes del cierre de la subasta D-1 a mediodía.
-- Optimización de despacho de baterías: las previsiones cuantílicas por hora permiten construir escenarios de precio para decidir carga y descarga; el proyecto original incluye despacho de batería como componente externo a estos pesos.
-- Investigación académica en forecasting energético: sirve como checkpoint reproducible (manifest con hashes, `source-release.zip`, `CITATION.cff`) para estudiar el ajuste LoRA sobre modelos fundacionales de series temporales.
-- Benchmarking de baselines: útil para comparar modelos neuronales frente a baselines estadísticos como LEAR en condiciones de información pre-gate, con protocolo walk-forward y holdout documentado.
-- Análisis de riesgo de mercado: los intervalos calibrados permiten estimar bandas de precio para gestión de exposición en mercados eléctricos europeos.
-- Prototipado de pipelines de forecasting: el helper de inferencia valida arrays alineados y finitos, lo que facilita integrar el modelo en entornos de desarrollo con datos sintéticos (`example_input.json`) antes de conectar feeds reales.
-- Estudio de transferencia entre mercados: la inclusión de precios de mercados vecinos (BE, FR, NL, DK1, AT, CH, CZ) permite analizar acoplamiento entre mercados eléctricos europeos.
+- Reparación asistida de funciones Python en desarrollo: dado un fragmento defectuoso y una descripción del comportamiento esperado, el modelo propone una función corregida que conserva la firma original, útil como borrador para revisión humana.
+- Revisión de parches en pipelines internos: integrado como generador de propuestas que un revisor o un conjunto de tests valida antes de aplicar cambios, sin ejecución automática del código generado.
+- Soporte a tareas de docencia o formación: el modelo puede generar correcciones de ejercicios de Python con errores, siempre que un instructor valide la salida.
+- Exploración de técnicas de ajuste fino con PEFT: el adaptador sirve como ejemplo reproducible de LoRA rank 8 sobre Qwen2.5-Coder-1.5B-Instruct con pesos y metadatos publicados.
+- Reproducción de experimentos de reparación de código: el repositorio incluye `results.json` y `training_metadata.json` para auditar los resultados registrados y las condiciones de evaluación.
+- Evaluación de regresiones en modelos ajustados: el caso documentado de caída en HumanEval externo (de 107/164 a 21/164) sirve como referencia para diseñar protocolos de validación antes de desplegar adaptadores especializados.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor | Contexto |
-|---|---|---|
-| MAE holdout (unico) | 15,386 EUR/MWh | 372 dias, 2025-11-01 a 2026-11-09 (faltan 2 dias de entrega) |
-| MAE LEAR (ventana comun) | ~15,34 EUR/MWh | LEAR uso entradas TSO post-gate; conjuntos de informacion distintos |
-| Test Diebold-Mariano | p = 0,543 (una cola, diario multivariante) | No se establece mejora de precision frente a LEAR |
+Resultados registrados por el autor para este checkpoint exacto. Los paneles de desarrollo reutilizan ejemplos correlacionados y no son confirmación independiente de generalización.
 
-No se han publicado en la informacion disponible resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros), dado que el modelo no es un LLM generativo. La evaluacion se limita al MAE de holdout descrito y no constituye evidencia de mejora frente al baseline.
+| Condición | Base aprobado | Adaptador aprobado |
+|---|---:|---:|
+| Reparación autoral de desarrollo, 72 tareas | 34/72 | 65/72 |
+| Desarrollo público, 72 tareas, solo las tres aserciones originales | 39/72 | 44/72 |
+| Pantalla de desarrollo MBPP+ público pequeño, 24 tareas | 10/24 | 14/24 |
+| HumanEval Original externo, 164 tareas | 107/164 | 21/164 |
+| HumanEval+ estricto externo (base AND plus), 164 tareas | 100/164 | 18/164 |
+
+La evaluación externa en HumanEval se realizó con decodificación greedy de 768 tokens y límites de sandbox local de 60 segundos de CPU, 65 segundos de reloj y 4096 MiB de RSS muestreado por grupo; no es paridad exacta con la CLI oficial ni con leaderboards. El autor señala posible solapamiento con datos públicos de preentrenamiento y que las revisiones estáticas finitas no prueban corrección ni no interferencia. No se formulan afirmaciones de significancia estadística, mecanismo de entrenamiento aislado ni preparación para despliegue.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; con 119,5 M de parametros, en float32 los pesos ocupan aproximadamente 0,48 GB, por lo que la inferencia cabe holgadamente en cualquier GPU consumer reciente y en CPU.
-- GPU recomendadas: no se especifican; el modelo usa `device_map="cpu"` por defecto y admite `--device mps` en Mac compatibles.
-- Cabe en GPU consumer: sí, por el tamano reducido del modelo (repo de 0,5 GB); no se documentan requisitos minimos concretos.
-- Opciones de despliegue: libreria `chronos-forecasting` con `Chronos2Pipeline.from_pretrained`; script `inference.py` para entrada JSON; los pesos fusionados cargan sin PEFT, mientras que el adaptador independiente opcional requiere PEFT.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- El repositorio contiene solo el adaptador (0,5 GB) y el tokenizer; la primera carga descarga los pesos del modelo base Qwen2.5-Coder-1.5B-Instruct.
+- El helper de inferencia permite CPU (float32) y Apple Silicon MPS (bfloat16).
+- VRAM estimada para inferencia: no disponible de forma explícita; por el tamaño del base (1,5B parámetros) es viable en GPUs de consumo, pero el autor no publica cifras.
+- GPUs recomendadas: no disponible en la información proporcionada.
+- Opciones de despliegue documentadas: Transformers + PEFT y el helper `inference.py` del repositorio. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chronos-2 DE-LU pre-gate (este) | 119,5 M | 2040 valores (85 dias) | MAE 15,386 EUR/MWh en holdout | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
-| amazon/chronos-2 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
-| LEAR (baseline estadistico) | no aplica | no aplica | ~15,34 EUR/MWh en ventana comun | no disponible | implementacion propia del estudio |
+| Reforge-1.5B (este) | 119.477.664 (base 1,5B) | no disponible (techo de prompt 3072 tokens en el helper) | Adaptador LoRA de reparación Python | Apache 2.0 | Hugging Face, pesos safetensors |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | no disponible en esta información | Modelo general de código e instrucciones | Apache 2.0 | Hugging Face |
+| Alternativas de reparación de código de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion con LEAR no es estrictamente equivalente porque LEAR emplea entradas TSO post-gate y este checkpoint usa entradas pre-gate. No se dispone de datos comparativos con otros modelos de forecasting electrico en la informacion proporcionada.
+No se dispone de datos de benchmarks de terceros ni de otras alternativas de reparación comparables en la información proporcionada. La comparación directa con el base en HumanEval muestra una regresión severa del adaptador (21/164 frente a 107/164), por lo que no debe considerarse una mejora general sobre Qwen2.5-Coder-1.5B-Instruct.
 
 ## Limitaciones y advertencias
 
-- No se ha demostrado mejora de precision frente al baseline LEAR: el test Diebold-Mariano arroja p = 0,543 y el MAE es ligeramente superior (15,386 frente a ~15,34).
-- Las variantes Chronos post-gate obtuvieron mejores resultados, pero esos resultados no deben atribuirse a este checkpoint.
-- La evaluacion se realizo con multiples ensayos de investigacion registrados; el holdout fue de una sola vez, pero el proceso completo no elimina el riesgo de sobreajuste de seleccion.
-- No se establece el corte de preentrenamiento del modelo base ni se descarta solapamiento con sus datos de preentrenamiento.
-- Los cuantiles nominales no garantizan cobertura; la expansion de intervalos es una calibracion historica separada y solo de desarrollo.
-- El paquete acepta entradas preparadas: no reconstruye el pipeline operativo completo (feeds crudos, regresores LightGBM de meteorologia a generacion, recoleccion de feeds, preprocesado DST, modelos de referencia ni despacho de bateria).
-- No incluye datos de mercado reales ni credenciales; las fuentes originales (SMARD, Energy-Charts, Open-Meteo) tienen sus propios terminos de redistribucion.
-- Las previsiones de viento y solar del dia objetivo deben ser estimaciones meteorologicas pre-gate; usar previsiones TSO post-gate invalidaria el protocolo.
-- El repositorio tiene 0 descargas y 0 likes, y fue creado en 2026-11-16: es un artefacto de investigacion sin validacion independiente por la comunidad.
-- Licencia Apache 2.0 permite uso comercial, pero el autor lo presenta como checkpoint de investigacion, no como modelo listo para produccion.
+- Regresión severa documentada en HumanEval externo: el adaptador pasa 21/164 tareas frente a 107/164 del base.
+- Los paneles de desarrollo incluyen ejemplos correlacionados y no constituyen evidencia independiente de generalización.
+- Entrenado sobre ejemplos sintéticos autorales; no se establece como mejora general de codificación.
+- Las salidas requieren revisión humana; el helper imprime código y nunca lo ejecuta ni sobrescribe el archivo de entrada.
+- Posible solapamiento con datos públicos de preentrenamiento en la evaluación.
+- Idiomas soportados limitados al inglés según la model card.
+- No se documentan sesgos específicos ni tasas de alucinación.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no avala preparación para despliegue en producción.
+- El repositorio fue renombrado desde `chronos-2-de-lu-pregate`; los resultados de predicción de precios eléctricos de la versión anterior no aplican a este modelo.
+- No se distribuyen tests privados, entradas ocultas ni respuestas canónicas, lo que limita la reproducción exacta de los benchmarks.
+- La evaluación MBPP+ `assessment03` corresponde a un adaptador diferente y sus puntuaciones no deben atribuirse a este checkpoint.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AryanSudhirDev/chronos-2-de-lu-pregate
-- Modelo base: https://huggingface.co/amazon/chronos-2
-- Repositorio GitHub: https://github.com/AryanSudhirDev/chronos-2-de-lu-pregate
-- Documentacion de resultados: docs/RESULTS.md (en el repositorio)
-- Proceso de investigacion: docs/METHODOLOGY.md (en el repositorio)
-- Reproducibilidad: docs/REPRODUCIBILITY.md (en el repositorio)
-- Contrato de datos: docs/DATA.md (en el repositorio)
-- Artefactos: docs/ARTIFACTS.md (en el repositorio)
+- Hugging Face: https://huggingface.co/AryanSudhirDev/Reforge-1.5B
+- URL antigua (redirige): https://huggingface.co/AryanSudhirDev/chronos-2-de-lu-pregate
+- Revisión de la versión anterior de Chronos: https://huggingface.co/AryanSudhirDev/Reforge-1.5B/tree/9ffcc6a064d27eb2c7657d3763554782710ceaca
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
+- Revisión fijada del base: `2e1fd397ee46e1388853d2af2c993145b0f1098a`

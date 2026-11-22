@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Asuwa/crow-ja",
+  "slug": "asuwa-crow-ja",
+  "author": "Asuwa",
+  "url": "https://huggingface.co/Asuwa/crow-ja",
+  "created_at": "2026-11-22T02:10:38.000Z",
+  "updated_at": "2026-11-22T02:10:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "crow",
+    "toy-model",
+    "tiny",
+    "roleplay",
+    "from-scratch",
+    "text-generation",
+    "ja",
+    "dataset:Asuwa/crow-conversations",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17308032,
+  "parameters_human": "17.3M",
+  "storage_bytes": 34782010,
+  "storage_human": "35 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

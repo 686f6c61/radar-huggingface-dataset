@@ -2,88 +2,89 @@
 
 ## Resumen
 
-Apodex-1.1-mini-Finnish-Uncensored-GGUF es una colección de cuantizaciones GGUF publicada por el usuario kataguru sobre el modelo base `apodex/Apodex-1.1-mini`. Según la model card del autor, el modelo base emplea una arquitectura híbrida descrita como Qwen3.5 MoE con componentes Mamba/SSM, 256 expertos y atención lineal, con un total de 35.505.251.456 parámetros (unos 35,5 mil millones según los pesos safetensors del repositorio). El repositorio ocupa 223,8 GB e incluye versiones cuantizadas de 3 a 6 bits, además de un proyector multimodal (`mmproj`) para entrada de imágenes.
+Apodex-1.1-mini-Finnish-Uncensored-GGUF es una cuantización GGUF del modelo base `apodex/Apodex-1.1-mini`, publicada por el usuario kataguru en Hugging Face. El modelo base emplea una arquitectura híbrida MoE con atención lineal y componentes Mamba/SSM, derivada de la familia Qwen3.5 MoE, con 35.505.251.456 parámetros totales y 256 expertos. La versión publicada incorpora un proceso de eliminación de rechazos denominado SOMA/ARA (ortogonalización de actividad residual) junto con un ajuste fino ligero de anclaje al finlandés y una plantilla de chat propia (Kataguru Master Chat Template v1.0).
 
-La modificación principal que introduce kataguru respecto al modelo base consiste, según su propia documentación, en una ortogonalización residual de vectores de rechazo (denominada SOMA/ARA), un ajuste SFT ligero de anclaje al finlandés y a la "honestidad epistémica", y la integración de una plantilla de chat propia (Kataguru Master Chat Template v1.0). Todo ello con el objetivo declarado de eliminar comportamientos de rechazo y mejorar la generación nativa en finés.
+El objetivo declarado del autor es la traducción de alta exigencia del inglés al finlandés en dominios académicos, biomédicos y técnicos, además de la interpretación de imágenes mediante un proyector multimodal separado. El modelo conserva la cabeza MTP/NextN nativa de la capa 40, lo que permite decodificación especulativa sin modelo borrador y, según la model card, aceleraciones de generación de hasta el 30-50 %.
 
-El aspecto técnico más relevante es la conservación del cabezal MTP (Multi-Token Prediction) / NextN nativo en la capa 40, con 20 tensores adicionales cuantizados, lo que permite decodificación especulativa sin modelo borrador separado. El autor afirma ganancias de velocidad de generación del 30 % al 50 % con este mecanismo en `llama.cpp`. El modelo está pensado para inferencia local en LM Studio, llama.cpp y Ollama, con licencia Apache 2.0 y soporte de finlandés e inglés.
+Es relevante por dos motivos: por un lado, demuestra un flujo de trabajo de cuantización que preserva componentes de decodificación especulativa en formato GGUF, algo poco habitual; por otro, aplica técnicas de abliteración sobre un modelo MoE intentando evitar la degradación de los mecanismos de enrutamiento, un problema conocido en este tipo de arquitecturas. La licencia es Apache 2.0 y el repositorio ocupa 223,8 GB con múltiples variantes de cuantización.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida descrita por el autor como Qwen3.5 MoE + Mamba/SSM, 256 expertos, atención lineal |
-| Parámetros totales | 35.505.251.456 (≈35,5 mil millones) |
+| Arquitectura | Transformer MoE híbrido con atención lineal y componentes Mamba/SSM (base Qwen3.5 MoE) |
+| Parámetros totales | 35.505.251.456 |
 | Parámetros activos | no disponible |
-| Longitud de contexto | no disponible (el autor usa `-c 16384` como ejemplo de ejecución, no como especificación) |
-| Tipos de cuantización | Q3_K_M (~16 GB), IQ4_XS (~18 GB), Q4_K_M (~20 GB), Q5_K_M (~24 GB), Q6_K (~27 GB); proyector multimodal `mmproj` en BF16 (861 MB) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Q3_K_M (~16 GB), IQ4_XS (~18 GB), Q4_K_M (~20 GB), Q5_K_M (~24 GB), Q6_K (~27 GB), mmproj BF16 (861 MB) |
 | Idiomas soportados | finlandés (fi), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El autor describe el modelo base como una arquitectura híbrida Qwen3.5 MoE combinada con Mamba/SSM, con 256 expertos y atención lineal. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. Tampoco se especifican los parámetros activos por token ni el mecanismo exacto de enrutamiento de expertos.
+El modelo base es un MoE con 256 expertos y atención lineal, descrito en la model card como derivado de Qwen3.5 MoE con componentes Mamba/SSM. La versión publicada conserva intacta la arquitectura, el vocabulario nativo y la tokenización; no se modifican los pesos del enrutador ni la estructura de expertos. Se mantiene la cabeza MTP/NextN de la capa 40 con 20 tensores adicionales, cuantizada junto al resto del modelo, lo que habilita decodificación especulativa nativa.
 
-La innovación técnica destacada por kataguru es doble. Por un lado, el proceso SOMA/ARA de ortogonalización residual, que según el autor neutraliza los vectores de rechazo aprendidos; a esto se suma un ajuste SFT ligero de anclaje al finés y a la "honestidad epistémica". Por otro, se preserva íntegramente el cabezal MTP/NextN nativo de la capa 40 (20 tensores adicionales), cuantizado junto con el resto del modelo, lo que habilita decodificación especulativa (`--spec-type draft-mtp`) con hasta un 30–50 % más de velocidad de generación según el autor, sin necesidad de un modelo borrador externo. El vocabulario y la tokenización nativos del modelo base no se modifican.
+Sobre el modelo base se aplica un proceso en dos fases. La primera, SOMA (Sparse Orthogonal Modulation & Abliteration), mide la dirección de rechazo en el espacio residual mediante pares de prompts dañinos y neutros, y localiza una ventana de capas mediante búsqueda bayesiana con TPE (el fragmento disponible de la model card se interrumpe en el parámetro 0.25, por lo que no se detalla el resto del procedimiento). La segunda fase consiste en un ajuste fino supervisado ligero de anclaje al finlandés y de «honestidad epistémica». No se especifican el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional en finlandés e inglés.
-- Razonamiento (etiqueta `reasoning` declarada por el autor), sin datos cuantitativos de rendimiento.
-- Capacidad multimodal de visión mediante el proyector `mmproj` en BF16 (`llama-mtmd-cli`), para descripción e interpretación de imágenes.
-- Decodificación especulativa nativa por cabezal MTP, con ganancia declarada de velocidad del 30–50 %.
-- Comportamiento "uncensored": el autor indica que el modelo responde sin aplicar reglas de rechazo.
-- Plantilla de chat propia (Kataguru Master Chat Template v1.0) integrada.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`) y uso conversacional.
-- No se documenta soporte explícito de tool calling / function calling ni de agentes multi-paso en la información disponible.
+- Generación de texto y razonamiento en inglés y finlandés, con etiqueta `reasoning` en el repositorio.
+- Traducción inglés-finlandés orientada a texto académico, científico, biomédico y técnico, con énfasis declarado en precisión terminológica.
+- Interpretación de imágenes mediante el proyector multimodal `mmproj` en BF16 (pipeline `image-text-to-text`).
+- Decodificación especulativa nativa mediante la cabeza MTP/NextN, sin necesidad de modelo borrador externo.
+- Modo sin censura: el autor declara la neutralización de vectores de rechazo para contextos fisiológicos, anatómicos y médicos.
+- Conversación multi-turno con plantilla de chat propia (Kataguru Master Chat Template v1.0).
+- Compatibilidad declarada con LM Studio, llama.cpp y Ollama.
+- Soporte de tool calling y de agentes multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia conversacional en finlandés: el ajuste de anclaje al finés y la plantilla de chat propia permiten mantener diálogos multi-turno coherentes en este idioma, poco cubierto por modelos generalistas.
-- Interpretación de imágenes con salida en finés: usando `llama-mtmd-cli` con el proyector `mmproj`, se pueden describir o analizar imágenes y obtener la respuesta en finlandés, útil para tareas de accesibilidad o catalogación local.
-- Generación de texto creativo sin rechazos: el comportamiento "uncensored" declarado lo hace adecuado para escritura de ficción o guiones donde otros modelos aplican filtros.
-- Inferencia 100 % local en equipos de consumo: las cuantizaciones Q3_K_M (~16 GB) e IQ4_XS (~18 GB) permiten desplegarlo en GPU con 16–24 GB de VRAM sin enviar datos a servicios externos.
-- Procesamiento de documentación interna en finlandés: resúmenes, extracción de información y reescritura de textos en un idioma con recursos limitados, ejecutado en infraestructura propia.
-- Traducción asistida fi-en / en-fi: con soporte declarado para ambos idiomas, puede emplearse como apoyo en flujos de traducción técnica que requieran revisión humana posterior.
-- Prototipado rápido con LM Studio u Ollama: la disponibilidad de GGUF y la compatibilidad con estas herramientas permiten evaluar el modelo en minutos sin configuración compleja.
-- Experimentación con decodificación especulativa: el cabezal MTP preservado sirve como banco de pruebas para medir aceleraciones de inferencia en `llama.cpp` sin modelo borrador.
+- Traducción de artículos académicos del inglés al finlandés: el modelo está ajustado específicamente para terminología científica y compuestos finlandeses, evitando transliteraciones y anglicismos en textos de investigación.
+- Localización de documentación técnica y biomédica: permite traducir manuales, prospectos y guías clínicas al finlandés manteniendo precisión terminológica en contextos sensibles donde otros modelos aplican rechazos.
+- Traducción de contenido médico y anatómico: la eliminación de vectores de rechazo evita interrupciones en pasajes fisiológicos, lo que resulta útil en editoriales médicas y material formativo sanitario.
+- Asistente local de escritura en finlandés: desplegado con Ollama o LM Studio en estaciones de trabajo, sirve para redacción y revisión de textos en finlandés sin depender de la nube.
+- Análisis de imágenes con descripción en finlandés: el proyector multimodal permite transcribir y describir figuras, gráficos o capturas en flujos de documentación técnica.
+- Generación acelerada en producción: la cabeza MTP preservada reduce la latencia en pipelines de traducción por lotes, según el autor con ganancias de hasta el 30-50 %.
+- Investigación sobre abliteración en MoE: el repositorio documenta el método SOMA/ARA y sirve como referencia para estudiar la preservación del enrutamiento tras eliminar vectores de rechazo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación estandarizada, ni comparaciones numéricas con modelos de referencia. El único dato de rendimiento declarado es la mejora de velocidad del 30–50 % atribuida al uso del cabezal MTP para decodificación especulativa.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Q3_K_M (~16 GB): 16 GB de VRAM, la opción más ligera para memoria limitada.
-- IQ4_XS (~18 GB): 20–24 GB de VRAM.
-- Q4_K_M (~20 GB): 24–32 GB de VRAM, o 32 GB o más de RAM combinados con GPU; versión recomendada por el autor por su relación calidad/velocidad.
-- Q5_K_M (~24 GB): 32 GB de VRAM o 64 GB de RAM.
-- Q6_K (~27 GB): 32 GB de VRAM o más, calidad casi sin pérdida.
-- Proyector multimodal `mmproj` BF16 (861 MB): compatible con cualquier configuración.
-- GPU de consumo: las variantes de 3 y 4 bits caben en tarjetas de 16–24 GB (por ejemplo, RTX 4090 de 24 GB con Q3_K_M, IQ4_XS o Q4_K_M). Las variantes de 5 y 6 bits requieren GPU de gama profesional (A100 40/80 GB, H100) o partición en GPU más RAM.
-- Despliegue: LM Studio, llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli`) y Ollama, según la model card.
-- El autor advierte que, por ser MoE, lo óptimo es mantener el modelo completo en VRAM; si no, conviene al menos ubicar en GPU las capas de atención y los expertos activos.
-- Latencia y throughput concretos: no disponibles; solo se indica la mejora relativa del 30–50 % con MTP.
+- VRAM estimada según cuantización: Q3_K_M ~16 GB, IQ4_XS ~18-24 GB, Q4_K_M ~20-32 GB, Q5_K_M ~24-32 GB (o 64 GB de RAM), Q6_K ~27 GB o más.
+- GPU recomendadas por el autor: 24-32 GB de VRAM para Q4_K_M (por ejemplo, RTX 4090 de 24 GB con margen ajustado, A100 40 GB, H100); 32 GB o más para Q5_K_M y Q6_K.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con Q3_K_M o IQ4_XS; Q4_K_M requiere gestión cuidadosa de la memoria o descarga parcial a RAM.
+- Opciones de despliegue: LM Studio, llama.cpp y Ollama, según la model card; vLLM y TGI no se mencionan para el formato GGUF.
+- Latencia y throughput: no se publican cifras absolutas; el autor afirma ganancias de hasta el 30-50 % en velocidad de generación gracias a la cabeza MTP nativa.
+- El proyector multimodal `mmproj` (861 MB) se suma al requisito de memoria cuando se usa entrada de imagen.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye especificaciones de modelos comparables de la misma categoría (tamaño o tarea) más allá de la referencia al modelo base `apodex/Apodex-1.1-mini` y a la supuesta arquitectura Qwen3.5 MoE, de la que no se aportan datos verificables de rendimiento ni de configuración para establecer una comparación rigurosa.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Apodex-1.1-mini-Finnish-Uncensored | 35,5 B (MoE, 256 expertos) | no disponible | fi, en | Apache 2.0 | GGUF |
+| Modelo base apodex/Apodex-1.1-mini | 35,5 B (MoE) | no disponible | no disponible | no disponible | safetensors |
+| Alternativas de traducción en/fi de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de modelos comparables documentados en la información proporcionada para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Rendimiento óptimo condicionado al MoE: si los expertos no caben en VRAM y se descargan a CPU, el throughput se degrada; el autor lo señala explícitamente.
-- Comportamiento "uncensored": el modelo no aplica reglas de rechazo, por lo que puede generar contenido inapropiado, ofensivo o legalmente problemático. Requiere filtrado y supervisión en cualquier despliegue de producción.
-- Riesgo de alucinación: no se documentan evaluaciones de fidelidad factual; al tratarse de un ajuste ligero sobre un modelo base, la tasa de alucinación es desconocida.
-- Cobertura idiomática limitada a finlandés e inglés; el rendimiento en castellano u otros idiomas no está documentado.
-- Ausencia de benchmarks: no hay evidencia publicada de rendimiento en razonamiento, código o matemáticas que respalde las etiquetas declaradas.
-- Proyecto sin tracción verificable: 0 descargas y 0 "likes" en el momento de la consulta, con fecha de creación en 2026, lo que implica ausencia de validación por parte de la comunidad.
-- Trazabilidad de las afirmaciones: detalles como "Qwen3.5 MoE + Mamba/SSM", "256 expertos" o la eficacia del proceso SOMA/ARA proceden únicamente de la model card del autor y no se han contrastado con documentación independiente.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero conviene verificar las obligaciones de atribución y el estado del modelo base `apodex/Apodex-1.1-mini` del que deriva.
-- Sin documentación sobre tool calling ni evaluación de sesgos; cualquier uso en agentes debe validarse antes de producción.
+- La model card está redactada por el autor y contiene afirmaciones de rendimiento (30-50 % de aceleración, superioridad en traducción) sin benchmarks publicados que las respalden.
+- El proceso de abliteración puede degradar capacidades de razonamiento o coherencia; el autor argumenta que su método lo evita, pero no aporta evaluaciones comparativas.
+- La eliminación de rechazos implica que el modelo puede generar contenido sensible en contextos médicos o fisiológicos; requiere supervisión en producción.
+- Idiomas limitados a finlandés e inglés; el rendimiento en castellano no está documentado ni garantizado.
+- La longitud de contexto no se especifica en la información disponible, lo que impide planificar cargas de trabajo con ventanas largas.
+- El repositorio ocupa 223,8 GB, lo que exige espacio de almacenamiento considerable si se descargan varias cuantizaciones.
+- El número de descargas (606) y la ausencia de «likes» indican una adopción todavía muy limitada, sin validación comunitaria amplia.
+- Licencia Apache 2.0 permite uso comercial, pero la procedencia y el proceso de entrenamiento del modelo base no están detallados en la información disponible.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-Uncensored-GGUF
-- Modelo base: `apodex/Apodex-1.1-mini` (referenciado en la model card, sin URL directa proporcionada)
-- No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo. Los resultados devueltos (temas de GitHub sobre `chatgpt-api`, repositorios de jailbreaks tipo DAN y artículos en vietnamita sobre ChatGPT) no guardan relación con Apodex-1.1-mini y se descartan.
+- Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
+- Paper, blog o demo del método SOMA/ARA: no disponible
+- Repositorio de código o demos adicionales: no disponible

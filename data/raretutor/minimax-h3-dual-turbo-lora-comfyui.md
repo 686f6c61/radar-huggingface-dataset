@@ -2,51 +2,51 @@
 
 ## Resumen
 
-MiniMax-H3-Dual-Turbo-Lora-ComfyUI es un repositorio de adaptadores LoRA fusionados para la arquitectura de generacion de video MiniMax-H3, desarrollado por el usuario Raretutor. No se trata de un modelo base, sino de dos checkpoints LoRA (`turbo_lora_001.safetensors` y `turbo_lora_002.safetensors`) que combinan tres adaptadores de la comunidad para habilitar inferencia en muy pocos pasos (4-8) con generacion conjunta de audio y video sincronizado, ademas de capacidades de streaming.
+MiniMax-H3-Dual-Turbo-Lora-ComfyUI es un repositorio de adaptadores LoRA fusionados para el modelo de generación de vídeo con audio MiniMax-H3, desarrollado por el usuario Raretutor. No se trata de un modelo de lenguaje ni de un transformer de texto, sino de dos checkpoints LoRA (`turbo_lora_001.safetensors` y `turbo_lora_002.safetensors`) que se cargan sobre el transformer de difusión 3D de MiniMax-H3 para habilitar inferencia en pocos pasos (few-step) con audio estéreo sincronizado y capacidades de streaming.
 
-El objetivo es reducir el coste computacional de la generacion de video-audio con MiniMax-H3 manteniendo la consistencia temporal. Para ello fusiona el Turbo LoRA de larryvrh (destilacion few-step), el TaoMate-H3 de TaoLiveAIGC (Rank-128, streaming de baja latencia con EMA) y el DMAD student LoRA de ZhengmingYu (Rank-128, destilacion adversarial). La fusion se realiza mediante interpolacion lineal de pesos sobre las capas de atencion y proyecciones feed-forward coincidentes.
+El interés del repositorio radica en que combina tres LoRAs de la comunidad mediante interpolación lineal de pesos: un adaptador Turbo de pocos pasos (larryvrh), un LoRA EMA de streaming de baja latencia con rango 128 (TaoLiveAIGC/TaoMate-H3) y un LoRA estudiante de destilación adversarial DMAD con rango 128 (ZhengmingYu/DMAD). El resultado busca reducir los pasos de muestreo a un rango de 5 a 9 (con 6 recomendados) manteniendo consistencia temporal y sincronización audio-vídeo.
 
-El repositorio tiene un tamano de 0,6 GB, usa la libreria diffusers y esta pensado para integrarse en ComfyUI. Su relevancia es practica: permite ejecutar MiniMax-H3 con 6 pasos de muestreo y CFG 1.0, lo que abarata drasticamente la inferencia frente a la configuracion nativa del modelo base. No obstante, la licencia comunitaria impone restricciones geograficas y comerciales severas.
+Es relevante para desarrolladores que trabajan con generación de vídeo en ComfyUI o Diffusers y necesitan acelerar la inferencia de MiniMax-H3 sin reentrenar desde cero. El repositorio tiene 0,6 GB, 1099 descargas y 3 likes, y se distribuye bajo la licencia comunitaria de MiniMax-H3, con restricciones geográficas y comerciales importantes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA fusionado sobre transformer 3D de difusion (MiniMax-H3) |
-| Parametros totales | no disponible (repo de 0,6 GB en safetensors) |
-| Parametros activos | no disponible |
+| Arquitectura | LoRA sobre transformer de difusion 3D MiniMax-H3 (`MiniMaxH3Transformer3DModel`) |
+| Parametros totales | no disponible (el repo pesa 0,6 GB en safetensors) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16/fp16) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16 / fp16) |
 | Idiomas soportados | no disponible |
 | Licencia | MiniMax H3 Community License Agreement |
-| Formato de pesos | safetensors (diffusers) |
+| Formato de pesos | safetensors (`turbo_lora_001.safetensors`, `turbo_lora_002.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-Los adaptadores se construyen sobre `MiniMaxAI/MiniMax-H3`, un modelo de difusion para generacion conjunta de audio y video (text-to-audio-video) que se carga mediante `MiniMaxH3Transformer3DModel`. El repositorio no entrena desde cero: fusiona tres LoRA de la comunidad sobre las capas de atencion y feed-forward coincidentes usando interpolacion lineal de pesos (SLERP, DARE-TIES y suma ponderada) en precision bfloat16/fp16.
+El repositorio no entrena un modelo desde cero: fusiona tres adaptadores LoRA de la comunidad sobre la base MiniMax-H3. La estrategia de merge es interpolación lineal de pesos (SLERP / DARE-TIES / Weighted Add) aplicada sobre las capas de atención y proyección feed-forward coincidentes entre los adaptadores. La precisión de los pesos fusionados es bfloat16 / fp16.
 
-Los tres componentes aportan capacidades complementarias. El Turbo LoRA de larryvrh aporta destilacion few-step para audio-video conjunto. TaoMate-H3 es un LoRA Rank-128 con EMA orientado a streaming de baja latencia. DMAD (`minimax_h3/`) es un LoRA estudiante Rank-128 obtenido por destilacion adversarial. La combinacion busca simultanear velocidad, consistencia temporal y sincronizacion audio-video. La guia de inferencia recomienda 6 pasos (rango 5-9), CFG 1.0 por operacion nativa CFG-distilled y sampler `lcm` con scheduler `simple`.
+Los tres adaptadores de origen son: `larryvrh/MiniMax-H3-Turbo-Lora` (LoRA Turbo conjunto audio-vídeo de pocos pasos, Apache-2.0), `TaoLiveAIGC/TaoMate-H3` (LoRA EMA de streaming audio-vídeo de baja latencia con rango 128) y `ZhengmingYu/DMAD` en su variante `minimax_h3/` (LoRA estudiante DMAD de rango 128, basado en destilación adversarial). La combinación busca sumar velocidad de muestreo, consistencia temporal y capacidad de streaming en un único adaptador. No se detallan en la información disponible el número de tokens, la composición del dataset ni si hubo RLHF/DPO, ya que se trata de una fusión de adaptadores y no de un entrenamiento nuevo.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video) con audio sincronizado (text-to-audio-video).
-- Inferencia en pocos pasos: 4 y 8 pasos como modos destacados, con recomendacion de 6 pasos.
-- Generacion de audio estereo sincronizado con el video.
-- Streaming de video de baja latencia (via TaoMate-H3).
-- Consistencia temporal de alta fidelidad (objetivo declarado de la fusion).
-- Integracion con ComfyUI y Diffusers.
-- Operacion nativa con CFG-distilled (guidance scale 1.0).
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multilingues.
+- Generación de vídeo a partir de texto con audio estéreo sincronizado (text-to-audio-video).
+- Inferencia en pocos pasos: 6 pasos recomendados, rango válido de 5 a 9.
+- Operación con CFG-distillation nativa (guidance scale 1.0 recomendado).
+- Consistencia temporal de alta fidelidad gracias al componente Turbo y al LoRA EMA.
+- Capacidades de streaming de vídeo de baja latencia (tag `streaming-video`).
+- Compatibilidad con ComfyUI y con la librería Diffusers.
+- Scheduler/sampler recomendado: `lcm` + `simple`.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-step ni multilingüismo, al ser un modelo de generación de vídeo.
 
 ## Casos de uso
 
-- Prototipado rapido de clips publicitarios: con 6 pasos y CFG 1.0 se puede iterar sobre guiones de texto y obtener video con audio en pocos segundos de computo, adecuado para equipos que prueban variaciones creativas en ComfyUI.
-- Generacion de video para redes sociales: el modo de 4-8 pasos permite producir clips cortos con audio sincronizado en flujos automatizados, reduciendo el coste por pieza frente a la inferencia nativa del modelo base.
-- Streaming interactivo: el componente TaoMate-H3 (EMA, Rank-128) esta disenado para baja latencia, lo que habilita demos de video generativo en tiempo casi real para experiencias interactivas.
-- Creacion de contenido educativo: generacion de explicaciones animadas con narracion sincronizada a partir de texto, aprovechando la salida audio-video conjunta.
-- Previsualizacion de storyboards: los estudios pueden convertir guiones en video previo con audio para validar ritmo y narrativa antes de produccion completa.
-- Investigacion en destilacion de modelos de difusion: el repositorio sirve como referencia de fusion de LoRA few-step y destilacion adversarial (DMAD) sobre arquitecturas de video-audio.
-- Integracion en pipelines de ComfyUI: nodos personalizados para automatizar la generacion de video con audio en flujos de postproduccion.
+- Prototipado rápido de vídeo generativo en ComfyUI: el LoRA se carga sobre `MiniMaxH3Transformer3DModel` y permite iterar con 6 pasos en lugar de decenas, reduciendo el coste por prueba en flujos de diseño.
+- Generación de clips con audio sincronizado para previsualización de guiones: la combinación Turbo + TaoMate aporta audio estéreo y consistencia temporal, útil para maquetas de anuncios o storyboards animados.
+- Streaming de vídeo de baja latencia: el componente EMA de TaoMate-H3 está pensado para emisión continua, lo que permite integrar el modelo en pipelines de vídeo en directo o avatares generativos.
+- Creación de contenido para redes sociales: clips cortos generados en pocos pasos con audio incorporado, adecuados para producción rápida de piezas verticales u horizontales.
+- Investigación en destilación adversarial: el componente DMAD permite estudiar cómo se comporta un estudiante destilado con rango 128 fusionado con un Turbo LoRA en términos de calidad y velocidad.
+- Evaluación comparativa de estrategias de merge: al ofrecer dos variantes (`turbo_lora_001` y `turbo_lora_002`), sirve para medir el efecto de distintas interpolaciones (SLERP, DARE-TIES, Weighted Add) sobre la calidad final.
+- Integración en pipelines de Diffusers para automatización por lotes: al ser compatible con Diffusers, se puede invocar desde scripts Python para generar lotes de vídeos con parámetros fijos de sampler y CFG.
 
 ## Benchmarks y rendimiento
 
@@ -54,43 +54,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en la informacion proporcionada; depende del modelo base MiniMax-H3, no solo del LoRA (0,6 GB).
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada; el requisito dominante es el del transformer 3D base.
-- Opciones de despliegue: Diffusers (`MiniMaxH3Transformer3DModel`) y ComfyUI.
-- Latencia y throughput: no disponible; la ventaja declarada es la reduccion a 5-9 pasos de muestreo frente a la configuracion nativa.
+- VRAM estimada: no disponible en la información proporcionada; depende del transformer base MiniMax-H3, no solo del LoRA (0,6 GB). El LoRA en sí ocupa poco, pero la inferencia requiere cargar el modelo base completo.
+- GPU recomendadas: no disponible. Para generación de vídeo 3D con audio se suelen requerir GPUs de datacenter (A100, H100) o consumer de gama alta, pero no se confirma en la información.
+- ¿Cabe en consumer GPU?: no disponible. El peso del LoRA (0,6 GB) es reducido, pero el modelo base determina el requisito real.
+- Opciones de despliegue: Diffusers (librería declarada) y ComfyUI (tag explícito). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponibles. Solo se indica que el objetivo es inferencia en 5-9 pasos con sampler `lcm` + `simple`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Pasos recomendados | Audio sincronizado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MiniMax-H3-Dual-Turbo-Lora-ComfyUI | LoRA fusionado | 6 (5-9) | Si | MiniMax H3 Community | Hugging Face |
-| larryvrh/MiniMax-H3-Turbo-Lora | LoRA turbo | no disponible | Si (few-step) | Apache-2.0 | Hugging Face |
-| TaoLiveAIGC/TaoMate-H3 | LoRA streaming | no disponible | Si | MiniMax H3 Community | Hugging Face |
-| ZhengmingYu/DMAD (minimax_h3) | LoRA estudiante | no disponible | no disponible | MiniMax H3 Community | Hugging Face |
+| Modelo | Tipo | Pasos recomendados | Audio | Streaming | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Raretutor/MiniMax-H3-Dual-Turbo-Lora-ComfyUI | LoRA fusionado sobre MiniMax-H3 | 6 (5-9) | Sí (estéreo) | Sí | MiniMax H3 Community License | Hugging Face, 1099 descargas |
+| larryvrh/MiniMax-H3-Turbo-Lora | LoRA Turbo sobre MiniMax-H3 | no disponible | Sí (conjunto audio-vídeo) | no disponible | Apache-2.0 | Hugging Face |
+| TaoLiveAIGC/TaoMate-H3 | LoRA EMA rango 128 sobre MiniMax-H3 | no disponible | Sí | Sí (baja latencia) | MiniMax H3 Community License | Hugging Face |
+| ZhengmingYu/DMAD (`minimax_h3`) | LoRA estudiante DMAD rango 128 | no disponible | no disponible | no disponible | MiniMax H3 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Restriccion geografica: la licencia prohibe uso, reproduccion, modificacion, distribucion o exhibicion en Estados Unidos, Union Europea, Reino Unido y Corea del Sur. Cualquier uso en esos territorios requiere autorizacion escrita de MiniMax.
-- Limite comercial: uso comercial permitido solo si los productos o servicios no superan 20 millones de USD de ingresos brutos anuales; por encima se requiere autorizacion comercial de MiniMax.
-- Atribucion obligatoria: los productos comerciales deben mostrar "MiniMax H3" de forma prominente en la interfaz y documentacion.
-- Divulgacion de IA: los outputs audio-video deben etiquetarse como generados por maquina.
-- Prohibicion de entrenamiento competitivo: los pesos y sus outputs no pueden usarse para entrenar o destilar modelos fundacionales competidores.
-- Servicios alojados: distribuir como API gestionada exige salvaguardas y vincular a usuarios finales a terminos al menos tan protectores como la licencia.
-- Alucinacion y sesgos: no documentados en la informacion disponible; al ser un modelo generativo de video-audio, existe riesgo de artefactos visuales y desincronizacion audio-video.
-- Idiomas: no disponibles en la informacion.
-- Al ser una fusion de LoRA de terceros, la calidad puede variar segun la combinacion de pesos y no hay benchmarks publicados que la respalden.
+- Restricción geográfica severa: la licencia MiniMax H3 Community License prohíbe el uso, reproducción, modificación, distribución o exhibición de los pesos y sus resultados fuera del Territorio Aplicable, excluyendo explícitamente EE. UU., la Unión Europea, el Reino Unido y Corea del Sur. Cualquier uso en esas regiones requiere autorización escrita o exención comercial de MiniMax.
+- Límite de ingresos comerciales: el uso comercial dentro del territorio permitido solo se autoriza si los productos o servicios no superan los 20 millones de dólares anuales de ingresos brutos.
+- Atribución obligatoria: cualquier producto o servicio comercial que use estos pesos debe mostrar de forma destacada "MiniMax H3" en su interfaz y documentación.
+- Prohibición de entrenamiento competidor: ni los pesos ni las salidas pueden usarse para entrenar, destilar o mejorar modelos fundacionales competidores distintos de los derivados de MiniMax-H3.
+- Obligación de etiquetado: las salidas audio-vídeo generadas deben declararse como generadas por máquina.
+- Riesgo de alucinación visual y artefactos: al ser una fusión de LoRAs de terceros, la calidad puede degradarse respecto a los adaptadores originales por separado; no se han publicado métricas de calidad en la información disponible.
+- Idiomas: no disponibles; el modelo es de generación de vídeo, no de texto, por lo que el soporte lingüístico depende de los prompts y no está documentado.
+- Sesgos: no documentados en la información proporcionada; los modelos de difusión de vídeo pueden reproducir sesgos de los datasets de entrenamiento del modelo base.
+- Variantes sin evaluación pública: las dos variantes (`turbo_lora_001` y `turbo_lora_002`) no incluyen resultados comparativos publicados, por lo que la elección entre ambas requiere prueba empírica.
+- Dependencia del modelo base: el repositorio no es autónomo; requiere cargar `MiniMaxAI/MiniMax-H3` y un transformer 3D compatible, lo que añade requisitos de hardware y licencia del modelo base.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Raretutor/MiniMax-H3-Dual-Turbo-Lora-ComfyUI
-- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
-- Turbo LoRA: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
-- TaoMate-H3: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
-- DMAD: https://huggingface.co/ZhengmingYu/DMAD/tree/main/minimax_h3
-- Video de ejemplo: https://www.youtube.com/watch?v=zUk6mqruWdA
-- Licencia comercial MiniMax: https://platform.minimax.io/h3-license
-- Consola de licencia: https://platform.minimax.io/console/license
-- Paper referenciado: arxiv:2610.02188
-- Paper referenciado: arxiv:2607.24359
+- Repositorio Hugging Face: https://huggingface.co/Raretutor/MiniMax-H3-Dual-Turbo-Lora-ComfyUI
+- Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- LoRA Turbo de larryvrh: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
+- LoRA TaoMate-H3: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
+- LoRA DMAD (carpeta minimax_h3): https://huggingface.co/ZhengmingYu/DMAD/tree/main/minimax_h3
+- Autorización comercial MiniMax: https://platform.minimax.io/h3-license
+- Consola de licencias MiniMax: https://platform.minimax.io/console/license
+- Vídeo de ejemplo: https://www.youtube.com/watch?v=zUk6mqruWdA
+- Paper DMAD (referencia arXiv): https://arxiv.org/abs/2610.02188
+- Paper MiniMax-H3 (referencia arXiv): https://arxiv.org/abs/2607.24359

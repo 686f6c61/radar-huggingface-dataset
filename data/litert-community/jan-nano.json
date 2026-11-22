@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/Jan-nano · Hugging Face",
-      "url": "https://huggingface.co/litert-community/Jan-nano",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "litert-community/Jan-nano at main - Hugging Face",
-      "url": "https://huggingface.co/litert-community/Jan-nano/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
-      "url": "https://github.com/google-ai-edge/litert",
-      "snippet": "LiteRT, successor to TensorFlow Lite. is Google&#x27;s On-device framework for high-performance ML & GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - google-ai-edge/LiteRT"
-    },
-    {
-      "title": "LiteRT: The Universal Framework for On-Device AI",
-      "url": "https://developers.googleblog.com/litert-the-universal-framework-for-on-device-ai/",
-      "snippet": "LiteRT is the universal framework for on-device AI. The production stack delivers 1.4x faster cross-platform GPU performance, streamlined NPU acceleration, and superior GenAI support for open models like Gemma."
-    },
-    {
-      "title": "Google AI Edge LiteRT Samples - GitHub",
-      "url": "https://github.com/google-ai-edge/litert-samples",
-      "snippet": "This repository contains official and community contributed sample applications, model recipes, agent skills and utilities for LiteRT (formerly known as TensorFlow Lite), Google&#x27;s open source, high-performance on-device machine learning framework and LiteRT-LM, a specialized orchestration layer for running LLMs with LiteRT, unlocking maximum ..."
-    }
-  ]
+  "sources": []
 }

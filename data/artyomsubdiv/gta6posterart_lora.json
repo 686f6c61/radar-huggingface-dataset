@@ -5,13 +5,14 @@
   "author": "ArtyomSubDiv",
   "url": "https://huggingface.co/ArtyomSubDiv/Gta6PosterArt_LoRA",
   "created_at": "2026-11-20T08:06:19.000Z",
-  "updated_at": "2026-11-20T08:18:34.000Z",
+  "updated_at": "2026-11-21T13:17:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
-  "library": null,
+  "library": "diffusers",
   "languages": [],
   "tags": [
+    "diffusers",
     "stable-diffusion",
     "gta6",
     "dora",
@@ -31,7 +32,9 @@
   "storage_human": "63 MB",
   "context_length": null,
   "base_model": "sd2-community/stable-diffusion-2-base",
-  "formats": [],
+  "formats": [
+    "diffusers"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

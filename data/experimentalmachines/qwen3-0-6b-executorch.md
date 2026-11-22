@@ -2,101 +2,92 @@
 
 ## Resumen
 
-Qwen3-0.6B-ExecuTorch es un export cuantizado del modelo Qwen/Qwen3-0.6B (revision `c1899de289a0`) preparado por el usuario experimentalmachines para inferencia en dispositivo con el runtime ExecuTorch 1.4.0. El artefacto principal es un fichero `.pte` de 0,53 GB compilado con el backend XNNPACK (CPU), pensado para ejecutarse en cualquier dispositivo arm64, principalmente telefonos Android, a traves de la aplicacion openweights o de cualquier integracion propia que use ExecuTorch 1.4.0.
+Qwen3-0.6B-ExecuTorch es un conjunto de exportaciones del modelo Qwen3-0.6B de Alibaba Qwen, preparadas por el usuario experimentalmachines para inferencia en dispositivo (on-device) mediante el runtime ExecuTorch 1.5.1. El repositorio no contiene un modelo nuevo, sino artefactos `.pte` compilados para tres backends distintos: XNNPACK sobre CPU arm64, Qualcomm QNN sobre el acelerador HTP del Snapdragon 8 Elite (SM8750) y MediaTek NeuroPilot sobre el Dimensity 9400 (MT6991). El objetivo es ejecutar un LLM de 0,6 mil millones de parametros directamente en telefonos Android, sin depender de la nube.
 
-El modelo base es un transformer denso de 0,6 mil millones de parametros. El export reduce la ventana de contexto a 16.384 tokens y aplica una cuantizacion 8da4w (activaciones dinamicas de 8 bits y pesos de 4 bits en grupos de 32, con embeddings int8 por canal), manteniendo la cache KV en fp32. El repositorio incluye el tokenizer original sin modificaciones y ficheros de metadatos (`config.json`, `export-report.json`) por cada backend.
+La relevancia de esta publicacion radica en que cubre el hueco practico entre un modelo open weights y su despliegue real en movil: incluye ventanas de contexto fijas de 2k a 32k tokens segun backend, presupuesto de memoria estimado contra un limite de 5 GB, tokenizador copiado del repositorio original y un informe de exportacion por cada fichero. Los artefactos XNNPACK han pasado una prueba de humo generando "Paris"; los de QNN y NeuroPilot solo han sido verificados estructuralmente, ya que el autor no disponia de un runtime NPU en el host de exportacion.
 
-Su relevancia es acotada pero concreta: ofrece una via reproducible de llevar un LLM de la familia Qwen3 a moviles Android sin GPU dedicada, con el proceso de export documentado y ligado a una ejecucion concreta de CI. Como contrapartida, el repositorio tiene 0 descargas y 0 likes, la validacion publicada se limita a un smoke test que genera "Paris", y no se acompanan benchmarks ni evaluaciones sistematicas.
+El repositorio ocupa 30,2 GB y acumula 771 descargas y 2 "me gusta" en el momento de la consulta. La licencia es Apache 2.0, heredada del modelo base Qwen3-0.6B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredada del modelo base Qwen/Qwen3-0.6B; no se detalla en la model card) |
-| Parametros totales | 0,6B (del modelo base; el repo contiene el artefacto cuantizado) |
-| Longitud de contexto | 16.384 tokens (ventana exportada) |
-| Tipos de cuantizacion | 8da4w: activaciones dinamicas de 8 bits, pesos de 4 bits en grupos de 32, embeddings int8 por canal, cache KV en fp32 |
-| Idiomas soportados | no disponible en esta model card (el modelo base Qwen3 declara soporte multilingue amplio) |
+| Arquitectura | Transformer decoder-only (Qwen3-0.6B), exportado a ExecuTorch |
+| Parametros totales | 0,6 mil millones (modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Fija por fichero: 2.048, 4.096, 8.192, 16.384 o 32.768 tokens (XNNPACK); 2.048, 4.096 u 8.192 (QNN); 4.096 u 8.192 (NeuroPilot) |
+| Tipos de cuantizacion | XNNPACK: fp32 en pesos y activaciones, embeddings int8 per-channel; QNN: hibrido (cuantizacion parcial, detalles no disponibles); NeuroPilot: a16w8 (activaciones 16 bits, pesos 8 bits) |
+| Idiomas soportados | no disponible (no declarados en la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.pte` (ExecuTorch); incluye `tokenizer.json`, `config.json` y `export-report.json` |
-| Modelo base y revision | Qwen/Qwen3-0.6B, revision `c1899de289a0` |
-| Runtime y version | ExecuTorch 1.4.0 |
-| Backend | XNNPACK (CPU), con operadores extendidos; objetivo arm64 |
-| Tamano del repositorio | 0,5 GB (fichero `xnnpack/Qwen3-0.6B-8da4w-16k.pte`: 0,53 GB) |
-| Prefill chunk | 2.048 tokens |
-| Memoria de cache KV | 229.376 bytes por token en fp32; 3.758.096.384 bytes con la ventana de 16.384 tokens, reservados en su totalidad al cargar el modelo |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-12 |
+| Formato de pesos | `.pte` (ExecuTorch); tokenizador en `tokenizer.json`; tabla de embeddings en `.bin` fp32 para NeuroPilot |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena ningun modelo: es un artefacto de despliegue derivado de Qwen/Qwen3-0.6B. La arquitectura subyacente es la del modelo base (transformer denso de 0,6B parametros); la model card no describe capas, dimensiones ocultas ni configuracion de atencion, por lo que esos datos deben consultarse en la ficha del modelo original. El proceso de exportacion si esta documentado: se uso la herramienta `export_llm` de ExecuTorch 1.4.0 con activaciones dinamicas de 8 bits, pesos de 4 bits agrupados de 32 en 32, embeddings int8 por canal, backend XNNPACK con operadores extendidos, chunk de prefill de 2.048 tokens y cache KV en fp32. La ejecucion de CI que genero el artefacto esta enlazada en la propia model card.
+El modelo subyacente es Qwen3-0.6B, un transformer decoder-only denso de la familia Qwen3. Esta ficha no aporta informacion sobre el entrenamiento original (numero de tokens, composicion del dataset, RLHF/DPO); esos datos corresponden a la model card de Qwen/Qwen3-0.6B, no a este repositorio. Lo que si documenta el autor es el proceso de exportacion: ExecuTorch 1.5.1 con `export_llm` para XNNPACK (fp32 en todas las capas lineales, embeddings int8 per-channel, chunk de prefill de 2048, cache KV en fp32) y el script Qualcomm static LLM (`examples/qualcomm/oss_scripts/llama`) para QNN. Para MediaTek se emplea el formato a16w8 con pesos divididos en cuatro fragmentos por ventana de contexto.
 
-La innovacion tecnica relevante no esta en el modelo, sino en el pipeline de exportacion: un unico fichero `.pte` autocontenido mas el tokenizer permite desplegar generacion de texto en Android sin dependencias de Python, y el repositorio adjunta un `export-report.json` con el registro completo del proceso para facilitar la reproducibilidad. No se documentan en esta ficha datos de entrenamiento (numero de tokens, composicion del dataset, RLHF/DPO), ya que corresponden al modelo base y no se reproducen aqui.
+La innovacion tecnica destacable no esta en el modelo sino en el empaquetado: cada fichero `.pte` fija su ventana de contexto en el momento de la exportacion, porque el runtime reserva la cache KV completa al cargar. El repositorio documenta el coste exacto de esa cache en XNNPACK: 229.376 bytes por token en fp32, lo que supone 469,7 MB para 2k tokens y 7,5 GB para 32k. Cada carpeta de backend incluye un `config.json` con el campo `fits_phone_budget`, que estima si la variante cabe en un presupuesto de 5 GB.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en dispositivo, con decodificacion sobre CPU arm64 mediante XNNPACK.
-- Ventana de contexto de 16.384 tokens, suficiente para conversaciones multi-turno extensas o documentos de varias decenas de paginas.
-- Ejecucion completamente local: no requiere red ni envio de datos a servidores externos.
-- Integracion con la aplicacion Android openweights y con cualquier runtime ExecuTorch 1.4.0.
-- Tokenizer identico al del modelo base (fichero `tokenizer.json` copiado sin cambios), lo que evita divergencias de tokenizacion respecto al modelo original.
-- Capacidades de razonamiento, codigo, matematicas, tool calling, modo thinking o multimodalidad: no verificadas ni documentadas en esta model card; el artefacto se publica unicamente con la etiqueta `text-generation`.
+- Generacion de texto autoregresiva, heredada de Qwen3-0.6B.
+- Razonamiento basico y respuesta a instrucciones, limitado por el tamano del modelo.
+- Generacion de codigo y tareas matematicas sencillas, segun las capacidades del modelo base.
+- Ejecucion totalmente local en Android, sin conectividad de red.
+- Aceleracion por hardware: CPU arm64 via XNNPACK, NPU Qualcomm Hexagon via QNN, NPU MediaTek via NeuroPilot.
+- Soporte de tool calling y agentes: no documentado en esta ficha; depende del modelo base y del runner, no del export.
+- Capacidades multilingues: no documentadas en esta ficha.
+- Modo thinking: no documentado en esta ficha.
 
 ## Casos de uso
 
-- Asistentes de texto sin conexion en Android: el modelo puede generar respuestas en un telefono arm64 sin enviar datos a la nube, con una ventana de 16.384 tokens que permite mantener un historial de conversacion largo en memoria.
-- Prototipado de aplicaciones moviles con ExecuTorch: el fichero `.pte` y el `export-report.json` permiten reproducir el pipeline de exportacion y validar el comportamiento del runtime en un dispositivo real antes de invertir en modelos mayores.
-- Clasificacion y resumen de notas o correos en el propio dispositivo: con contexto de 16k tokens se pueden resumir hilos largos o documentos extensos sin salir del terminal.
-- Generacion de texto en entornos sin red (campo, zonas con conectividad limitada o entornos aislados): al no necesitar servidor, el modelo funciona en modo totalmente offline.
-- Experimentacion academica sobre inferencia en el borde: sirve como banco de pruebas para medir latencia, consumo de RAM y comportamiento de la cache KV preasignada en distintos SoC arm64.
-- Pruebas de integracion y CI de aplicaciones Android: el artefacto puede incorporarse a una app de test y comprobar que la generacion devuelve la salida esperada (el autor documenta el smoke test con la palabra "Paris").
-- Autocompletado de campos de formulario o respuestas sugeridas en aplicaciones de productividad, donde la baja latencia percibida importa mas que la calidad absoluta del texto generado.
+- Asistentes de texto sin conexion en Android: el `.pte` de XNNPACK a 2k o 4k tokens (2,55 GB) permite generar respuestas en un telefono arm64 sin acceso a red, util en entornos con conectividad intermitente o requisitos de privacidad estrictos.
+- Autocompletado y sugerencias en teclados o editores moviles: con 0,6B de parametros y una ventana de 2k tokens, la latencia en CPU es compatible con sugerencias de frase corta dentro de una app.
+- Clasificacion y extraccion de informacion en local: procesar notas, correos o formularios en el dispositivo antes de enviarlos a un backend, reduciendo la exposicion de datos personales.
+- Prototipado de funciones LLM en apps Android antes de invertir en infraestructura: el repositorio ofrece artefactos listos para el runtime ExecuTorch 1.5.1 y la app openweights, lo que permite validar la experiencia de usuario sin montar servidores.
+- Demostraciones de inferencia en NPU: las variantes QNN para Snapdragon 8 Elite (0,70-0,75 GB) y NeuroPilot para Dimensity 9400 (0,14-0,30 GB por fragmento) sirven para medir el rendimiento de los aceleradores moviles con un LLM real.
+- Evaluacion de estrategias de cuantizacion: comparar fp32 (XNNPACK), hibrido QNN y a16w8 (NeuroPilot) sobre el mismo modelo base permite estudiar el compromiso entre calidad, tamano y velocidad en hardware movil.
+- Generacion de texto en dispositivos embebidos arm64: al ser XNNPACK independiente del SoC, el artefacto de 2k tokens puede desplegarse en placas arm64 con Linux y ExecuTorch, no solo en telefonos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica validacion reportada es un smoke test que paso correctamente generando la palabra "Paris". No hay datos de MMLU, HumanEval, GSM8K ni de comparativas con otros modelos o backends.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica validacion reportada es una prueba de humo cualitativa: los cinco ficheros XNNPACK generan "Paris" correctamente. Los artefactos QNN y NeuroPilot solo han sido verificados estructuralmente, sin ejecucion en NPU.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica, el backend es CPU (XNNPACK); no se incluye ningun export para GPU, NPU ni aceleradores como CoreML, QNN, Vulkan o OpenCL.
-- Memoria RAM estimada: 0,53 GB para los pesos mas 3,76 GB (3,5 GiB) de cache KV reservada integramente al cargar, lo que da un minimo de aproximadamente 4,3 GB solo para el modelo. Conviene contar con 6-8 GB de RAM libre en el dispositivo para el runtime, el tokenizer y el resto de la aplicacion.
-- Compatibilidad: cualquier dispositivo arm64; en la practica, telefonos y tablets Android de gama media-alta o superior.
-- GPU recomendadas: no aplica; no hay backend GPU en este repositorio. Alternativas equivalentes para escritorio serian adaptaciones a llama.cpp o vLLM partiendo del modelo base, no de este artefacto.
-- Opciones de despliegue: runtime ExecuTorch 1.4.0 (integrado en una app Android propia) o la aplicacion openweights. No es compatible con vLLM, TGI, Ollama ni llama.cpp, ya que el formato `.pte` no es GGUF ni safetensors.
-- Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token en ningun dispositivo concreto.
+- XNNPACK (CPU arm64): fichero de 2,55-2,61 GB; cache KV de 469,7 MB (2k) a 7,5 GB (32k) reservada integra al cargar. La variante de 32k excede con holgura el presupuesto de 5 GB de un telefono tipico.
+- Qualcomm QNN: requiere SoC SM8750 (Snapdragon 8 Elite) con acelerador Hexagon HTP; ficheros de 0,70-0,75 GB para ventanas de 2k a 8k.
+- MediaTek NeuroPilot: requiere SoC MT6991 (Dimensity 9400); cuatro fragmentos de 0,14-0,30 GB por ventana (4k u 8k) mas la tabla de embeddings fp32 leida desde disco.
+- GPU dedicadas (A100, H100, RTX 4090): no aplica; estos artefactos estan pensados para CPU arm64 y NPU moviles, no para CUDA.
+- Despliegue: runtime ExecuTorch 1.5.1 y la app Android openweights; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no consumen formato `.pte`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo / artefacto | Parametros | Contexto | Formato y runtime | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-ExecuTorch (este repositorio) | 0,6B | 16.384 tokens | `.pte`, ExecuTorch 1.4.0, XNNPACK CPU | Apache 2.0 | Hugging Face; 0 descargas, 0 likes, autor no oficial |
-| Qwen/Qwen3-0.6B (original) | 0,6B | el del modelo base | safetensors, transformers / vLLM | Apache 2.0 | Repositorio oficial de Qwen |
-| Qwen3-0.6B en GGUF (llama.cpp) | 0,6B | el del modelo base | GGUF, llama.cpp | Apache 2.0 | Publicado dentro del ecosistema oficial de Qwen |
-| Modelos on-device de Google (familia Gemma con LiteRT / MediaPipe) | 1B-2B aprox. | no disponible en la informacion proporcionada | `.task` / LiteRT | licencia propia de Gemma | Repositorios oficiales de Google |
+| Qwen3-0.6B-ExecuTorch (este) | 0,6B | 2k-32k fijo por fichero | `.pte` para ExecuTorch, CPU y NPU moviles | Apache 2.0 | Exportaciones listas para Android; sin benchmarks publicados |
+| Qwen/Qwen3-0.6B (original) | 0,6B | no disponible en esta ficha | safetensors, ecosistema PyTorch/HF | Apache 2.0 | Modelo fuente; requiere conversion para movil |
+| Gemma 3 270M | 0,27B | no disponible | safetensors y variantes cuantizadas | Gemma Terms of Use | Alternativa de menor tamano para on-device; licencia no Apache |
+| Llama 3.2 1B | 1,0B | 128k (modelo base) | safetensors y GGUF | Llama 3.2 Community License | Mayor capacidad pero mas pesado para movil; licencia con restricciones |
 
-La comparacion cuantitativa de rendimiento entre estas alternativas no es posible con los datos disponibles: este repositorio no publica benchmarks y el smoke test no es comparable con evaluaciones estandarizadas. Como referencia cualitativa, la ventaja de este artefacto es su integracion directa con ExecuTorch y su licencia Apache 2.0 sin restricciones adicionales; su desventaja frente a las alternativas GGUF es que no se beneficia del ecosistema de llama.cpp (Ollama, LM Studio, servidores locales) ni de optimizaciones para GPU de escritorio.
+La comparacion con alternativas en formato ExecuTorch equivalentes no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contexto reducido: la ventana exportada es de 16.384 tokens frente al contexto del modelo base, por lo que prompts largos se truncaran antes de lo que permitiria Qwen3-0.6B original.
-- Consumo de memoria desproporcionado: la cache KV en fp32 se reserva completa al cargar el modelo (3,76 GB), incluso para prompts muy cortos. En dispositivos con poca RAM libre el proceso puede ser terminado por el sistema operativo.
-- Perdida de calidad por cuantizacion: pesos de 4 bits y activaciones dinamicas de 8 bits implican degradacion respecto al modelo en precision completa; no se documenta ninguna evaluacion de esa perdida.
-- Validacion practicamente inexistente: 0 descargas, 0 likes y un unico smoke test. No hay evaluacion de sesgos, robustez, ni comportamiento en produccion.
-- Riesgo de alucinacion elevado: se trata de un modelo de 0,6B parametros, tamano en el que la generacion de hechos incorrectos con fluidez es habitual. No debe usarse como fuente de verdad sin verificacion.
-- Idiomas no verificados: la model card no declara idiomas soportados para este export. El comportamiento multilingue debe validarse empiricamente antes de usarlo en produccion.
-- Capacidades no documentadas: no hay confirmacion de soporte de tool calling, function calling, agentes, modo thinking ni decodificacion especulativa en este artefacto, aunque el modelo base pueda soportarlas.
-- Licencia: Apache 2.0 heredada del modelo base. Se incluye el fichero `LICENSE` sin modificar, por lo que hay que conservar los avisos de copyright y atribucion de Qwen al redistribuir el artefacto.
-- Dependencia de version: el fichero esta generado para ExecuTorch 1.4.0; cambios de version del runtime pueden romper la compatibilidad del `.pte`.
-- Proyecto de terceros: no es un artefacto oficial de Qwen ni de Meta/PyTorch, sino de un usuario independiente, sin garantia de mantenimiento.
+- El modelo base tiene 0,6B de parametros: la calidad en razonamiento complejo, matematicas y codigo es limitada en comparacion con modelos de mayor tamano.
+- Riesgo de alucinacion inherente a un modelo de este tamano; no debe usarse como fuente de verdad sin verificacion.
+- La ventana de contexto esta fijada en el fichero: no es configurable en tiempo de ejecucion y obliga a elegir entre memoria y contexto antes del despliegue.
+- La cache KV se reserva completa al cargar; en XNNPACK a 32k tokens son 7,5 GB solo de cache, inviable en la mayoria de telefonos.
+- Los artefactos QNN y NeuroPilot no se han ejecutado en NPU real durante la exportacion; su correccion funcional no esta verificada mas alla de la estructura.
+- Idiomas soportados no declarados; el comportamiento multilingue depende del modelo base y no esta documentado aqui.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base Qwen3-0.6B para confirmar obligaciones de atribucion.
+- El repositorio ocupa 30,2 GB, lo que puede ser un problema para entornos con almacenamiento limitado.
+- Dependencia de ExecuTorch 1.5.1: versiones distintas del runtime pueden no cargar los `.pte`.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE
-- Fichero de pesos XNNPACK: https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch/blob/main/xnnpack/Qwen3-0.6B-8da4w-16k.pte
-- Aplicacion Android openweights: https://github.com/alpharomercoma/openweights
-- Ejecucion de CI que genero el artefacto: https://github.com/ExperimentalMachines/executorch-model-exporter/actions/runs/34697939520
-- Documentacion de ExecuTorch: https://pytorch.org/executorch/
-- Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo (contenido sobre la liga de futbol Serie A), por lo que no se han incorporado enlaces adicionales procedentes de esa busqueda.
+- App openweights: https://github.com/alpharomercoma/openweights
+- ExecuTorch: https://github.com/pytorch/executorch

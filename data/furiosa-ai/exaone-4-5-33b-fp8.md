@@ -2,94 +2,92 @@
 
 ## Resumen
 
-EXAONE 4.5 es el primer modelo de lenguaje multimodal (visión y texto) de código abierto desarrollado por LG AI Research. Esta versión concreta, publicada por Furiosa AI, es una cuantización en FP8 del modelo original de 33B parámetros, lo que reduce el peso a aproximadamente 41 GB y permite su despliegue en hardware con menor capacidad de memoria. El modelo integra un encoder visual de 1.29B parámetros sobre la arquitectura del EXAONE 4.0, ampliando sus capacidades hacia la comprensión de imágenes y documentos.
+EXAONE-4.5-33B-FP8 es la build cuantizada en FP8 del modelo denso vision-language EXAONE 4.5 de 33.000 millones de parametros desarrollado por LG AI Research. Este repositorio concreto, publicado por FuriosaAI, empaqueta los pesos originales junto con un Furiosa Executable Bundle (FXB) para ejecutar el modelo sobre aceleradores FuriosaAI RNGD mediante la libreria Furiosa-LLM. El modelo combina un codificador visual dedicado con la arquitectura de lenguaje EXAONE 4 para procesar entradas multimodales de imagen y texto, y genera respuestas en texto.
 
-Con una ventana de contexto de 262.144 tokens, una arquitectura de atención híbrida (sliding window y global) y soporte para seis idiomas (inglés, coreano, español, alemán, japonés y vietnamita), EXAONE 4.5 se posiciona como una opción competitiva frente a modelos como Qwen3-VL 32B o Qwen3.5 27B, especialmente en tareas de comprensión de documentos y razonamiento contextual en coreano. La cuantización FP8 mantiene la compatibilidad con el ecosistema Transformers y está disponible en formato safetensors, con versiones GGUF adicionales generadas por la comunidad.
+La relevancia de esta ficha esta en dos frentes. Por un lado, EXAONE 4.5 incorpora razonamiento hibrido activado por defecto (desactivable por peticion) y soporte nativo de tool calling, lo que lo situa en la categoria de modelos multimodales con capacidades agenticas. Por otro, la publicacion de FuriosaAI demuestra la portabilidad del modelo a hardware no NVIDIA, un aspecto cada vez mas relevante para equipos que buscan alternativas de inferencia fuera del ecosistema CUDA.
+
+El modelo declara soporte para seis idiomas (ingles, coreano, espanol, aleman, japones y vietnamita) y se distribuye bajo la licencia propietaria EXAONE AI Model License, lo que condiciona su uso comercial. El repositorio ocupa 69 GB y acumula 625 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Causal Language Model + Vision Encoder (atención híbrida: 3 sliding window + 1 global por bloque, MTP, reordered norm, NoPE en atención global) |
-| Parametros totales | 34.350.097.664 (31.7B del modelo de lenguaje + 1.29B del encoder visual) |
-| Parametros activos | 34.350.097.664 (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | FP8 (esta versión); el modelo original está disponible en BF16 y la comunidad ha generado versiones GGUF |
+| Arquitectura | EXAONE 4.5 densa vision-language (`Exaone4_5_ForConditionalGeneration`); transformer con codificador visual dedicado |
+| Parametros totales | 34.350.097.664 (~34,35 mil millones) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP8 estatico per-channel en pesos lineales seleccionados y FP8 dinamico per-token en activaciones; KV cache en 16 bits |
 | Idiomas soportados | en, ko, es, de, ja, vi |
-| Licencia | exaone (licencia propia de LG AI Research) |
-| Formato de pesos | safetensors (FP8); también disponible en GGUF |
+| Licencia | EXAONE AI Model License (licencia `other`, nombre `exaone`) |
+| Formato de pesos | safetensors; libreria `furiosa-llm` con bundle FXB para RNGD |
 
 ## Arquitectura y entrenamiento
 
-EXAONE 4.5 emplea una arquitectura de transformer causal con un encoder visual dedicado. El modelo de lenguaje tiene 64 capas principales más una capa MTP (Multi-Token Prediction), con un patrón de atención híbrida: cada bloque de 4 capas contiene 3 capas con sliding window attention (ventana de 4.096 tokens) y 1 capa con atención global sin positional embeddings (NoPE). Esta combinación reduce el coste computacional en contextos largos manteniendo la capacidad de atender a información lejana. El encoder visual utiliza Grouped Query Attention (GQA) y 2D RoPE para las embeddings de imagen.
+EXAONE 4.5 es un transformer denso de tipo vision-language que integra un codificador visual especifico con la arquitectura de lenguaje EXAONE 4. La clase de implementacion es `Exaone4_5_ForConditionalGeneration`, con entrada imagen + texto y salida exclusivamente de texto. El modelo soporta razonamiento hibrido: el modo thinking esta activado por defecto y puede desactivarse por peticion mediante el parametro `enable_thinking: false`. Tambien incorpora tool calling nativo.
 
-El modelo fue entrenado por LG AI Research sobre datos multilingües y multimodales, con un corte de conocimiento en diciembre de 2024. No se han publicado detalles específicos sobre el tamaño del dataset, la composición exacta de los datos de entrenamiento ni el uso de técnicas de alineación como RLHF o DPO en la información disponible. La cuantización FP8 de Furiosa AI se realizó sobre el modelo base sin reentrenamiento, preservando las capacidades originales con una degradación mínima esperada.
+En cuanto a la cuantizacion, la build FP8 upstream aplica cuantizacion estatica per-channel a un subconjunto de pesos lineales y cuantizacion dinamica per-token a las activaciones en tiempo de ejecucion, sin calibracion offline de activaciones. La configuracion excluye de la cuantizacion FP8 el codificador visual, las proyecciones de atencion, el LM head y las proyecciones de atencion del modulo MTP (multi-token prediction). La KV cache se mantiene en 16 bits. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF/DPO) en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal: procesa imágenes y texto de forma conjunta, respondiendo a preguntas sobre contenido visual.
-- Comprensión de documentos: extrae información de documentos escaneados, tablas y gráficos, con un rendimiento destacado en benchmarks de comprensión documental.
-- Razonamiento contextual en coreano: hereda las capacidades lingüísticas de los modelos EXAONE anteriores, con especial fortaleza en tareas que requieren comprensión del contexto cultural y lingüístico coreano.
-- Razonamiento matemático y STEM: resuelve problemas de matemáticas visuales (MathVision, MathVista) y preguntas de nivel experto en dominios como medicina (MedXpertQA-MM).
-- Multilingüismo: soporta seis idiomas, aunque el coreano y el inglés son los mejor optimizados.
-- Contexto largo: ventana de 262.144 tokens, adecuada para procesar documentos extensos o conversaciones multi-turno con historial amplio.
-- No se ha confirmado soporte explícito para tool calling, function calling o modos de agente en la información disponible.
+- Generacion de texto y razonamiento: modo thinking hibrido activado por defecto, con cadena de pensamiento separable de la respuesta final mediante el parser `qwen3`.
+- Vision-language: acepta mensajes multimodales estilo OpenAI con partes de contenido `image_url` (URL remota, data URL en base64 o ruta local `file://` con el flag correspondiente).
+- Tool calling / function calling: soporte nativo mediante el parser `hermes` y el flag `--enable-auto-tool-choice`.
+- Razonamiento multi-paso y uso como agente: la combinacion de thinking mode y tool calling permite flujos agenticos encadenados.
+- Multilingue: seis idiomas declarados (ingles, coreano, espanol, aleman, japones y vietnamita).
+- API compatible con OpenAI a traves de Furiosa-LLM, incluyendo el campo `reasoning` en respuestas no streaming y en deltas de streaming.
+- Capacidades especiales adicionales (audio, vision avanzada mas alla de image-text-to-text): no disponible.
 
 ## Casos de uso
 
-- Análisis de documentos técnicos y científicos: el modelo puede procesar imágenes de páginas, tablas y figuras, extrayendo datos y respondiendo preguntas sobre su contenido. Su contexto de 262k tokens permite analizar documentos completos de varias páginas en una sola pasada.
-- Asistencia en atención al cliente multilingüe: con soporte para seis idiomas y capacidad de entender capturas de pantalla o imágenes de productos, puede gestionar consultas de usuarios que incluyan material visual, manteniendo conversaciones largas gracias a su amplia ventana de contexto.
-- Generación de descripciones y subtitulado de imágenes: útil para plataformas de contenido, accesibilidad o catalogación automática de imágenes en entornos empresariales.
-- Razonamiento matemático asistido por visión: puede resolver problemas que requieren interpretar gráficos, diagramas o expresiones escritas a mano, aplicable en educación o ingeniería.
-- Procesamiento de facturas y formularios: su capacidad de comprensión documental permite extraer campos clave de imágenes de facturas, recibos o formularios escaneados, integrándose en flujos de automatización de procesos.
-- Investigación en visión por computador: como modelo de referencia de código abierto, sirve para evaluar técnicas de cuantización, fine-tuning multimodal o generación de datos sintéticos en entornos de investigación.
+- Atencion al cliente multimodal: el modelo puede recibir capturas de pantalla, fotos de productos o documentos escaneados junto al texto del usuario y responder en el mismo turno, aprovechando el codificador visual y el soporte de conversaciones multi-turno.
+- Automatizacion de soporte tecnico con imagenes: un usuario envia una foto de un error en pantalla y el modelo razona sobre el contenido visual y propone pasos de resolucion, con la cadena de pensamiento separada para auditoria.
+- Agentes con herramientas en produccion: gracias al tool calling nativo y al parser `hermes`, el modelo puede invocar APIs externas (consultas a bases de datos, busquedas, calculos) dentro de flujos multi-paso orquestados por el servidor OpenAI-compatible.
+- Procesamiento de documentos en espanol y otros idiomas europeos: extraccion y resumen de informacion a partir de imagenes de documentos en es, de o en, con salida de texto estructurada.
+- Asistentes de analisis de imagenes medicas o tecnicas no criticas: descripcion y clasificacion preliminar de imagenes con razonamiento explicito, util en triaje o preprocesado, nunca como sustituto de validacion profesional.
+- Despliegue sobre hardware no NVIDIA: el bundle FXB permite servir el modelo en FuriosaAI RNGD con paralelismo tensorial de 32 PEs en cuatro tarjetas, lo que habilita entornos con requisitos de suministro o coste energetico distintos del ecosistema CUDA.
+- Evaluacion comparativa de razonamiento: el modo thinking desactivable permite ejecutar el mismo modelo en modo rapido (sin CoT) o en modo razonamiento para comparar calidad y latencia en pipelines de evaluacion.
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados corresponden al modelo original EXAONE 4.5 en BF16, publicados por LG AI Research. No se dispone de benchmarks específicos para la versión cuantizada en FP8, aunque se espera una degradación mínima. Los datos se comparan con modelos de tamaño similar.
-
-| Benchmark | EXAONE 4.5 33B (Reasoning) | Qwen3-VL 32B Thinking | Qwen3.5 27B (Reasoning) | GPT-5 mini (Reasoning: high) |
-|---|---|---|---|---|
-| MMMU | 78.7 | 78.1 | 82.3 | 79.0 |
-| MMMU-Pro | 68.6 | 68.1 | 75.0 | 67.3 |
-| MedXpertQA-MM | 42.1 | 41.6 | 62.4 | 34.4 |
-| MathVision | 75.2 | 70.2 | 86.0 | 71.9 |
-| MathVista (mini) | 85.0 | 85.9 | 87.8 | 79.1 |
-| WeMath | 79.1 | no disponible | no disponible | no disponible |
-
-No se han publicado resultados de benchmarks de texto puro (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo en FP8 ocupa aproximadamente 34.35 GB de pesos, más overhead de activaciones y KV cache. Con contexto moderado (8k tokens), se necesitan al menos 40-45 GB de VRAM. Para contexto máximo (262k tokens), la KV cache puede superar los 60 GB adicionales, requiriendo más de 100 GB en total.
-- GPU recomendadas: A100 80GB, H100 80GB, o GPUs con 80 GB o más de memoria. No cabe en GPUs de consumo como RTX 4090 (24 GB) ni RTX 3090 (24 GB).
-- Opciones de despliegue: compatible con vLLM, TGI y Transformers. Para versiones GGUF, se puede usar llama.cpp u Ollama, aunque con limitaciones de contexto.
-- Latencia y throughput: no se dispone de datos medidos para esta cuantización. En una A100 80GB, se espera una generación de aproximadamente 20-40 tokens por segundo para modelos de 33B en FP8, dependiendo de la implementación y el contexto.
+- VRAM estimada para inferencia en FP8: aproximadamente 34,35 GB solo para pesos, mas overhead de KV cache en 16 bits y activaciones; el repositorio completo ocupa 69 GB.
+- GPU recomendadas (segun el ecosistema upstream): no disponible en la informacion proporcionada para vLLM, SGLang o Transformers; la model card solo detalla el despliegue en FuriosaAI RNGD.
+- Hardware de referencia de este repositorio: FuriosaAI RNGD con paralelismo tensorial de 32 PEs, equivalente a cuatro tarjetas RNGD (8 PEs por tarjeta).
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible; por volumen de pesos en FP8, el modelo no cabe en tarjetas consumer de 24 GB sin cuantizaciones adicionales no documentadas.
+- Opciones de despliegue: Furiosa-LLM (soporte oficial de este repositorio); el modelo upstream tambien funciona con vLLM, SGLang y Transformers segun la model card.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Params totales | Contexto | Licencia | Formato | Idiomas |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Hardware de referencia |
 |---|---|---|---|---|---|
-| EXAONE 4.5 33B (FP8) | 34.35B | 262.144 | exaone | safetensors, GGUF | en, ko, es, de, ja, vi |
-| Qwen3-VL 32B | 33B | 262.144 | Apache 2.0 | safetensors, GGUF | multilingüe (amplio) |
-| Qwen3.5 27B | 27B | 262.144 | Apache 2.0 | safetensors, GGUF | multilingüe (amplio) |
+| EXAONE-4.5-33B-FP8 (este) | ~34,35 mil millones (denso) | no disponible | imagen + texto a texto | EXAONE AI Model License | FuriosaAI RNGD (4 tarjetas) |
+| LGAI-EXAONE/EXAONE-4.5-33B-FP8 (upstream) | ~34,35 mil millones (denso) | no disponible | imagen + texto a texto | EXAONE AI Model License | vLLM, SGLang, Transformers |
+| Alternativas de mismo tamano y categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-EXAONE 4.5 compite directamente con Qwen3-VL 32B en tareas de visión-lenguaje. En los benchmarks disponibles, EXAONE supera a Qwen3-VL en MMMU y MathVision, pero queda por detrás en MathVista y MMMU-Pro. Qwen3.5 27B muestra un rendimiento superior en la mayoría de las tareas, aunque es un modelo más reciente. La licencia exaone de LG es más restrictiva que Apache 2.0, lo que puede limitar su uso comercial en algunos escenarios.
+No se dispone de datos de rendimiento comparativo ni de especificaciones de modelos alternativos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos culturales: al ser desarrollado por LG AI Research, el modelo puede tener un sesgo hacia el contexto coreano, especialmente en tareas de razonamiento contextual. No se han publicado evaluaciones de sesgo para otros idiomas.
-- Riesgo de alucinación: como todo modelo generativo, puede producir respuestas incorrectas o inventadas, especialmente en tareas visuales complejas o con imágenes ambiguas.
-- Limitaciones de idioma: solo soporta seis idiomas; el rendimiento en español, alemán, japonés y vietnamita puede ser inferior al de inglés y coreano.
-- Restricciones de licencia: la licencia exaone no es de código abierto estándar; es necesario revisar sus términos para uso comercial, especialmente en aplicaciones de alto riesgo o despliegues a gran escala.
-- Cuantización FP8: aunque la degradación suele ser mínima, no se han publicado evaluaciones específicas de esta versión cuantizada. En tareas de precisión numérica o razonamiento matemático, podría haber diferencias frente al modelo BF16.
-- Contexto largo: aunque la ventana es de 262k tokens, el uso de atención sliding window puede degradar la capacidad de atender a información distante en comparación con atención global completa. Además, el coste de memoria de la KV cache limita el contexto práctico en hardware disponible.
+- Licencia propietaria EXAONE AI Model License: el uso comercial esta sujeto a los terminos del titular (LG AI Research); es imprescindible revisar el texto completo antes de desplegar en produccion.
+- Riesgo de alucinacion: como modelo generativo, puede producir contenido plausible pero incorrecto, especialmente en tareas de razonamiento visual o tool calling con argumentos ambiguos.
+- Sesgos conocidos: no documentados en la informacion disponible; deben evaluarse empiricamente antes de uso en dominios sensibles.
+- Cobertura idiomatica limitada a seis idiomas declarados; el rendimiento fuera de ellos no esta garantizado ni documentado.
+- Longitud de contexto no especificada: no es posible planificar cargas con documentos o conversaciones largas sin validacion previa.
+- Dependencia de hardware especifico: el bundle FXB de este repositorio esta atado a FuriosaAI RNGD; para otras plataformas debe usarse la build upstream.
+- El campo `reasoning` de la API no forma parte de la especificacion OpenAI; su acceso sin contenido de razonamiento lanza `AttributeError`.
+- El modo thinking esta activado por defecto, lo que incrementa la latencia y el consumo de tokens si no se desactiva explicitamente.
+- El flag `--allowed-local-media-path` es necesario para rutas `file://`, lo que introduce un riesgo de exposicion de ficheros locales si se configura de forma laxa.
 
 ## Enlaces
 
-- Modelo en Hugging Face (Furiosa AI): https://huggingface.co/furiosa-ai/EXAONE-4.5-33B-FP8
-- Modelo original en Hugging Face (LG AI): https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
-- Repositorio GitHub: https://github.com/LG-AI-EXAONE/EXAONE-4.5
-- Blog de LG AI Research: https://www.lgresearch.ai/blog/view?seq=641
-- Paper técnico (arXiv): http://arxiv.org/abs/2604.08644
-- Página de GGUF (comunidad): https://local-ai-zone.github.io/models/exaone-4-5-33b.html
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/EXAONE-4.5-33B-FP8
+- Modelo upstream: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-FP8
+- Licencia: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-FP8/blob/main/LICENSE
+- Documentacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Guia de instalacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- FuriosaAI: https://furiosa.ai
+- Repositorio EXAONE 4.5 (LG AI Research): https://github.com/LG-AI-EXAONE/EXAONE-4.5

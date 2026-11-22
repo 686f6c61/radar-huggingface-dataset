@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 588,
+  "downloads_30d": 581,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
@@ -66,31 +66,5 @@
   "renamed_to": "ISLAM-PO/MasryGPT-Chat-1.5B",
   "renamed_at": "2026-11-11T02:55:53.505Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ISLAM-PO (islam-alnasherA-Dev) - Hugging Face",
-      "url": "https://huggingface.co/ISLAM-PO/models",
-      "snippet": "LLM Fine-Tuning (QLoRA, PEFT), Model Optimization & Quantization, Full-Stack AI Integration, Computer Vision, and Automated Media Processing Pipelines."
-    },
-    {
-      "title": "MasryGPT on the GPT Store - GPT Information and Reviews | GPTs Hunter",
-      "url": "https://www.gptshunter.com/gpt-store/M2IyZTAzM2IwNDJhMzgyYjBh",
-      "snippet": "MasryGPT is an AI-powered Custom GPT available on the GPT Store and can be used with ChatGPT - Formal translator and Quranic explainer from Arabic to French."
-    },
-    {
-      "title": "Dialogue with ChatGPT reveals an ally with Islam - AMUST",
-      "url": "https://www.amust.com.au/2025/09/dialogue-with-chatgpt-reveals-an-ally-with-islam/",
-      "snippet": "In an era dominated by soundbites, misrepresentation, and polarising narratives, a recent dialogue between an Australian Muslim woman and ChatGPT offered something rare: clarity, honesty, and even what felt like &#x27;empathy&#x27;—from a machine. The lengthy conversation was a probing, theologically-grounded and intellectually rigorous exploration of Islam&#x27;s role in the modern world and the ..."
-    },
-    {
-      "title": "MuslimGPT - The #1 Islamic AI Companion (Quran & Sunnah)",
-      "url": "https://themuslimgpt.com/",
-      "snippet": "Ask anything about Islam and get answers grounded strictly in the Quran, Sunnah and authentic hadith, with visible citations and zero fabrication. Free and private."
-    },
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
-    }
-  ]
+  "sources": []
 }

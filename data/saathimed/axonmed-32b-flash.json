@@ -89,6 +89,18 @@
       "value": 76.36
     },
     {
+      "task": "Multiple-Choice Medical QA (AIIMS / NEET-PG)",
+      "dataset": "MedMCQA",
+      "metric": "0-shot Accuracy",
+      "value": 66.77
+    },
+    {
+      "task": "Multiple-Choice Medical QA (AIIMS / NEET-PG)",
+      "dataset": "MedMCQA",
+      "metric": "0-shot Normalized Accuracy",
+      "value": 66.77
+    },
+    {
       "task": "Biomedical Research QA",
       "dataset": "PubMedQA",
       "metric": "0-shot Accuracy",

@@ -60,16 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "NVIDIA-Nemotron-3-Nano-4B-BF16 - Hugging Face",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
-      "snippet": "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models ... Nemotron-CC: Transforming Common Crawl into a Refined Long-Horizon Pretraining Dataset ... Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI ... Nemotron 3 Nano \\- A new Standard for Efficient, Open, and Intelligent Agentic Models"
-    },
-    {
-      "title": "Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-4b",
-      "snippet": "We are excited to introduce Nemotron 3 Nano 4B, the newest and most compact member of the Nemotron 3 family. Leveraging hybrid Mamba-Transformer architecture, this model is designed for efficiency and accuracy in a targeted set of capabilities, setting a new standard for lightweight small language models."
-    }
-  ]
+  "sources": []
 }

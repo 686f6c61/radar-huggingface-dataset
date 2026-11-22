@@ -2,86 +2,101 @@
 
 ## Resumen
 
-Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF es una cuantización GGUF de precisión mixta del modelo Ornith-1.5-9B, desarrollada por el usuario jashepp. El modelo base, creado por ornith-ai (DeepReinforce), es un modelo de codificación agéntica que extiende el framework de auto-scaffolding de Ornith-1.0 hacia un bucle completo de auto-mejora: propone nuevas tareas, genera scaffolds específicos y produce rollouts de soluciones para aprendizaje por refuerzo. Esta versión cuantizada busca reducir el enorme consumo de VRAM de las capas de expertos mediante una combinación de formatos MXFP4, Q8_0 y F16, manteniendo la calidad del razonamiento.
+Ornith-1.5-9B es un modelo de lenguaje de aproximadamente 8.950 millones de parámetros desarrollado por Ornith AI, sucesor directo de Ornith-1.0-9B. Está orientado a tareas agénticas de programación, razonamiento con cadena de pensamiento y uso de herramientas, y se distribuye bajo licencia MIT. La model card lo describe como una evolución del marco de "autoandamiaje" (self-scaffolding) de Ornith-1.0 hacia un bucle de auto-mejora más completo: el modelo propone tareas nuevas, genera andamiajes específicos y produce rollouts de solución para aprendizaje por refuerzo.
 
-El modelo tiene 8.95 mil millones de parámetros y está diseñado para tareas de generación de código, razonamiento encadenado (chain-of-thought) y uso de herramientas. La cuantización utiliza una importance matrix (imatrix) combinada con datos generados por modelos Ornith de mayor tamaño, lo que mejora la preservación de la calidad en las capas cuantizadas. Está disponible en tres variantes de archivo con diferentes equilibrios entre tamaño y fidelidad, siendo la más pequeña de solo 4.77 GB, lo que permite ejecutarlo en GPUs de consumo.
+La ficha que nos ocupa no documenta los pesos originales, sino una recuantización comunitaria publicada por el usuario jashepp: GGUFs de precisión mixta por capas (MXFP4 combinado con Q8_0 y F16) generados con matriz de importancia (imatrix). El objetivo es reducir la huella de VRAM sin degradar las capacidades de razonamiento, que en modelos agénticos son especialmente sensibles a la cuantización uniforme. El repositorio ofrece cinco variantes que van de 4,77 GB a 11,4 GB.
+
+La relevancia actual es doble: por un lado, Ornith-1.5-9B se posiciona, según su autor, en el estado del arte entre modelos abiertos de tamaño comparable en benchmarks de programación agéntica; por otro, esta recuantización permite ejecutar un modelo de casi 9B con capas SSM híbridas en hardware de consumo, algo que la versión en precisión completa no facilita.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida Transformer-Mamba con capas de expertos (segun descripcion de capas de la cuantizacion) |
-| Parametros totales | 8.953.803.264 (8.95B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4, Q8_0, F16 (en combinaciones: MXFP4+Q8_0+F16, MXFP4+Q8_0, MXFP4 solo) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer híbrido con capas de espacio de estados (Mamba/SSM) y atención; detalles completos no disponibles |
+| Parametros totales | 8.953.803.264 (~8,95B) |
+| Parametros activos | No aplica (no es MoE en la variante 9B) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | MXFP4, MXFP4 + Q8_0, MXFP4 + Q8_0 + F16 (con imatrix) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo con cuantizaciones); safetensors en el modelo base |
+| Tamano del repo | 40,7 GB |
+| Variantes GGUF | 4,77 GB (MXFP4 only), 6,53 GB (MXFP4+Q8_0 exp), 8,45 GB (MXFP4+Q8_0+F16 exp), 9,53 GB (MXFP4+Q8_0), 11,4 GB (MXFP4+Q8_0+F16) |
+| Modelo base | ornith-ai/Ornith-1.5-9B |
+| Libreria | transformers (metadato); inferencia via llama.cpp |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta del modelo base no se detalla en la informacion disponible, pero la descripcion de las capas de la cuantizacion revela componentes clave: capas de atencion, bloques Mamba (ssm_alpha, ssm_beta, ssm_out) y capas de expertos enroutados (ffn_down_exps, ffn_gate_exps, ffn_up_exps). Esto sugiere un diseno hibrido que combina mecanismos de atencion tradicionales con state-space models (SSM) y posiblemente una mezcla de expertos (MoE) parcial. El modelo base se describe como sucesor de Ornith-1.0 9B, con mejoras en seguimiento de instrucciones y razonamiento.
+La información disponible describe una arquitectura híbrida: la model card de la recuantización menciona explícitamente tensores `ssm_alpha`, `ssm_beta` y `ssm_out`, lo que confirma la presencia de capas de espacio de estados (SSM, estilo Mamba) combinadas con mecanismos de atención y compuertas de atención (`attn_gate`). No se detalla el número de capas, la proporción entre capas SSM y de atención, ni la dimensión oculta.
 
-No se han proporcionado detalles sobre el entrenamiento del modelo base (datos, numero de tokens, metodos de alineacion). La model card menciona un framework de auto-mejora que genera sus propias tareas y soluciones para aprendizaje por refuerzo, pero no se especifican los detalles tecnicos. La cuantizacion fue realizada manualmente con seleccion de capas para maximizar la calidad, utilizando una imatrix combinada con datos markdown generados por modelos Ornith de 35B.
+En cuanto al entrenamiento, el modelo base se presenta como fruto de un proceso de destilación encadenada (chained-distill) y aprendizaje por refuerzo con auto-generación de tareas: el propio modelo propone problemas, construye andamiajes específicos y genera rollouts de solución que alimentan el ciclo de RL. Los tags del repositorio incluyen `distillation`, `chain-of-thought`, `agentic`, `tool-use` y `chained-distill`. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO más allá del bucle de RL descrito. La model card recomienda mantener siempre el modo de razonamiento activado, argumentando que el modelo planifica y razona las ediciones de código antes de ejecutarlas, a diferencia de los modelos Qwen base, que según el autor ejecutan a ciegas y retroceden tras generar código roto.
+
+La innovación técnica de esta publicación concreta es la cuantización por capas con precisión mixta en tres niveles: F16 para embeddings de entrada/salida y parámetros de compuerta SSM (`ssm_alpha`, `ssm_beta`), Q8_0 para el backbone y anclas (`ssm_out`, `attn_gate`), y MXFP4 para el resto. La matriz de importancia combina la publicada por bartowski para Ornith-1.5-9B con 1,6 millones de tokens de datos markdown propios (prompts, resultados, auditorías, skills y documentación) generados con Ornith-1.0-35B-A3B y Ornith-1.5-35B-A3B. Las capas MXFP4 incorporan datos de imatrix mediante un commit específico de llama.cpp.
 
 ## Capacidades
 
-- Generacion de codigo y edicion de archivos con planificacion previa: el modelo razona y planifica los cambios antes de ejecutarlos, evitando retrocesos tipicos de otros modelos.
-- Razonamiento encadenado (chain-of-thought): se recomienda mantener el modo thinking habilitado para obtener resultados optimos.
-- Uso de herramientas (tool-use) y capacidades agénticas: puede integrarse en flujos de trabajo que requieren llamadas a funciones y ejecucion de acciones.
-- Seguimiento de instrucciones mejorado respecto a su predecesor Ornith-1.0.
-- Generacion de texto conversacional y asistencia en tareas de programacion.
-- Soporte multilingue limitado: solo se declara ingles en la ficha, aunque el modelo base podria tener capacidades adicionales no documentadas.
+- Generación de texto conversacional en inglés.
+- Razonamiento con cadena de pensamiento explícita (modo thinking), recomendado de forma permanente por el autor.
+- Programación agéntica: planificación y razonamiento previo a la edición de código.
+- Uso de herramientas y function calling (tag `tool-use`).
+- Flujos agénticos multi-paso y autoandamiaje de tareas.
+- Destilación de razonamiento (chain-of-thought distillation) como base de su comportamiento.
+- Capacidades multilingües: limitadas al inglés según los metadatos del repositorio.
+- No se documentan capacidades de visión, audio ni otros modalidades.
 
 ## Casos de uso
 
-- Asistente de programacion en IDE: el modelo puede sugerir implementaciones completas, refactorizar codigo y explicar fragmentos, gracias a su capacidad de razonar sobre el contexto antes de generar la respuesta.
-- Agente autonomo de desarrollo: al soportar tool-use y razonamiento multi-paso, puede encargarse de tareas como crear archivos, ejecutar tests y corregir errores de forma autonoma en un repositorio.
-- Generacion de documentacion tecnica: su entrenamiento con datos markdown y su capacidad de seguir instrucciones lo hacen adecuado para redactar documentacion de APIs, guias de uso y comentarios de codigo.
-- Revision de codigo automatizada: puede analizar pull requests, detectar problemas logicos y sugerir mejoras, aprovechando su ventana de contexto (aunque la longitud no esta especificada).
-- Chatbot de soporte tecnico especializado en programacion: integrado en plataformas de atencion al cliente, puede resolver dudas sobre lenguajes, frameworks y depuracion.
-- Pipeline de CI/CD con generacion de codigo: el modelo puede generar parches o plantillas de codigo en respuesta a fallos de compilacion, integrándose mediante llamadas a herramientas en el flujo de integracion continua.
+- Asistencia de programación en producción: el modelo razona y planifica las ediciones antes de ejecutarlas, lo que reduce el ciclo de generar código roto y corregirlo; encaja en pipelines de CI/CD como generador de parches con revisión humana.
+- Agentes autónomos de resolución de incidencias: con tool calling puede invocar APIs, ejecutar comandos y consultar documentación en varios pasos, aprovechando el modo thinking para descomponer el problema.
+- Generación de tests y auditorías de código: el sesgo hacia la planificación previa lo hace adecuado para producir suites de prueba y revisiones estructuradas sobre repositorios existentes.
+- Despliegue en estaciones de trabajo con GPU de consumo: la variante MXFP4 de 4,77 GB permite ejecutar un modelo de casi 9B en tarjetas de 8 GB de VRAM, útil para prototipado local sin depender de la nube.
+- Servicio de chat técnico especializado: conversaciones multi-turno sobre temas de ingeniería con razonamiento explícito, siempre que el contexto disponible sea suficiente (dato no publicado).
+- Evaluación e investigación en RL con auto-generación de tareas: el modelo puede emplearse como generador de problemas y rollouts de solución para experimentos de auto-mejora.
+- Destilación de razonamiento hacia modelos menores: sus trazas de cadena de pensamiento sirven como datos de entrenamiento para modelos más pequeños.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una imagen con graficos comparativos, pero los valores numericos no son accesibles en el texto. La guia de atomic.chat menciona que el modelo es adecuado para ejecucion local, pero no proporciona cifras concretas de rendimiento.
+La model card enlaza una imagen con resultados de evaluación de Ornith 1.5 9B, pero no se incluyen cifras numéricas en la información proporcionada. No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El archivo mas pequeño (MXFP4 solo) ocupa 4.77 GB, por lo que cabe en GPUs con 6-8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, GTX 1080 Ti).
-- El archivo intermedio (MXFP4+Q8_0) ocupa 9.53 GB, requiriendo al menos 12 GB de VRAM (RTX 4070, RTX 3080, etc.).
-- El archivo de maxima calidad (MXFP4+Q8_0+F16) ocupa 11.4 GB, necesitando 16 GB o mas (RTX 4080, RTX 4090, A100, etc.).
-- Segun la guia de atomic.chat, el modelo puede ejecutarse en una GPU de 8 GB o en un Mac con 16 GB de RAM unificada a 4-bit.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. Tambien puede usarse con vLLM si se convierte a otro formato.
-- La latencia y el throughput dependen del hardware y de la cuantizacion elegida; no se han proporcionado cifras especificas.
+- VRAM estimada: aproximadamente 5-6 GB para la variante MXFP4 de 4,77 GB; 7-8 GB para la de 6,53 GB; 9-10 GB para la de 8,45 GB; 10-11 GB para la de 9,53 GB; 12-13 GB para la de 11,4 GB (estimaciones a partir del tamaño de fichero, incluyendo overhead de contexto).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090 para las variantes mayores con contexto amplio; A100 o H100 para servicio concurrente de alta demanda.
+- Cabe en GPU de consumo: sí, al menos las variantes MXFP4 y MXFP4+Q8_0 en tarjetas de 8-12 GB.
+- Opciones de despliegue: llama.cpp (requerido para MXFP4 con imatrix, usando el commit o rama indicados en la model card), Ollama y otros frontends basados en llama.cpp; vLLM y TGI no soportan estos GGUFs de forma directa.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks para comparar directamente con otros modelos. Sin embargo, se puede comparar cualitativamente con el modelo base original y con alternativas de codificacion de tamano similar:
-
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B (base) | 8.95B | no disponible | MIT | safetensors | Modelo original sin cuantizar |
-| Ornith-1.5-9B-MXFP4 (este repo) | 8.95B | no disponible | MIT | GGUF | Cuantizacion de precision mixta |
-| Qwen3-Coder-8B (referencia) | 8B | no disponible | Apache 2.0 | safetensors/GGUF | Modelo de codificacion de Alibaba, sin capacidades agénticas documentadas |
+| Ornith-1.5-9B (esta recuantizacion) | ~8,95B | No disponible | MIT | GGUF mixto | Orientado a código agéntico con thinking |
+| Ornith-1.5-35B-A3B | No disponible (MoE, A3B) | No disponible | MIT | GGUF (variante de jashepp) | Variante mayor del mismo autor, mayor coste de VRAM |
+| Ornith-1.0-9B | ~9B (no confirmado) | No disponible | MIT | safetensors/GGUF | Predecesor directo, peor seguimiento de instrucciones según el autor |
+| Modelos Qwen base de tamaño similar | No disponible | No disponible | No disponible | No disponible | Citados por el autor como línea base, con menor planificación previa a la ejecución |
 
-La ventaja de esta cuantizacion es su reducido tamaño en VRAM gracias a MXFP4, manteniendo capas criticas en mayor precision. No se dispone de datos objetivos de rendimiento para una comparacion cuantitativa.
+No se dispone de datos de rendimiento numéricos para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Solo se declara soporte para ingles; el rendimiento en otros idiomas no esta garantizado.
-- La cuantizacion MXFP4 puede introducir una ligera degradacion en la calidad del razonamiento, especialmente en tareas complejas de codificacion.
-- No se han publicado benchmarks oficiales, por lo que el rendimiento real en tareas estandar no esta verificado.
-- El modelo base utiliza un framework de auto-mejora que podria generar comportamientos impredecibles en entornos no controlados.
-- Riesgo de alucinacion en generacion de codigo: puede producir soluciones incorrectas o inseguras si no se supervisa.
-- La longitud de contexto no esta documentada, lo que limita la planificacion de despliegues con requisitos de contexto largo.
-- Aunque la licencia es MIT, el modelo base podria tener restricciones adicionales no especificadas en esta ficha.
+- Solo soporta inglés según los metadatos; no se garantiza calidad en castellano u otros idiomas.
+- Riesgo de alucinación inherente a los modelos generativos; el modo thinking puede producir trazas de razonamiento plausibles pero incorrectas.
+- El autor advierte que desactivar el razonamiento degrada notablemente la calidad del código generado.
+- La cuantización MXFP4, aunque guiada por imatrix, puede degradar capacidades finas de razonamiento en comparación con los pesos originales; las variantes con más capas en Q8_0/F16 preservan mejor la calidad a costa de VRAM.
+- Requiere una versión específica de llama.cpp para aprovechar la imatrix en capas MXFP4; otras herramientas pueden no soportar estos ficheros.
+- No se documentan sesgos específicos ni evaluación de seguridad.
+- Licencia MIT: permite uso comercial, pero conviene verificar los términos del modelo base y de los datos de destilación.
+- El repositorio tiene un tamaño de 40,7 GB por acumulación de variantes; descargar solo el fichero necesario.
+- No hay información publicada sobre longitud de contexto efectiva, lo que impide planificar despliegues con ventanas largas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF
+- Repositorio de la recuantización: https://huggingface.co/jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Predecesor: https://huggingface.co/ornith-ai/Ornith-1.0-9B
 - Blog de Ornith 1.5: https://ornith.ai/ornith_1_5.html
-- Guia de ejecucion local (atomic.chat): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally
-- Variante 35B A3B cuantizada: https://huggingface.co/jashepp/Ornith-1.5-35B-A3B-MXFP4_MOE_Hybrid-Imatrix-GGUF
+- Variante mayor recuantizada: https://huggingface.co/jashepp/Ornith-1.5-35B-A3B-MXFP4_MOE_Hybrid-Imatrix-GGUF
+- GGUF de referencia de bartowski: https://huggingface.co/bartowski/Ornith-1.5-9B-GGUF
+- Commit de llama.cpp con imatrix para MXFP4: https://github.com/ggml-org/llama.cpp/commit/d9b625edb6d2cba294d51007ed751e3c17879668
+- Rama de llama.cpp: https://github.com/ggml-org/llama.cpp/compare/compilade/imatrix-mxfp4
+- Licencia MIT: https://choosealicense.com/licenses/mit/

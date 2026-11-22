@@ -2,50 +2,51 @@
 
 ## Resumen
 
-Qwen3.5-4B-Westernized-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF generadas por mradermacher a partir del modelo base hirundo-io/Qwen3.5-4B-Westernized. Se trata de un derivado de la familia Qwen3.5 orientado a un ajuste cultural o de alineamiento "occidentalizado", distribuido exclusivamente como pesos cuantizados para inferencia local con llama.cpp y herramientas compatibles. El repositorio fue creado el 19 de noviembre de 2026 y ocupa 1,0 GB.
+Qwen3.5-4B-Westernized-GGUF es la version cuantizada en formato GGUF del modelo hirundo-io/Qwen3.5-4B-Westernized, un ajuste fino del Qwen3.5-4B de Alibaba orientado a "desaprendizaje conductual" (behavioral unlearning). El modelo base parte de la familia Qwen3.5 y ha sido modificado para eliminar o atenuar comportamientos considerados no deseados, segun la etiqueta `behavioral-unlearning` que figura en su model card. Esta version la publica mradermacher, un conocido generador de cuantizaciones GGUF para la comunidad de inferencia local.
 
-La informacion disponible es muy limitada: la model card solo contiene metadatos del proceso de cuantizacion (version 2, conversion desde formato HF, tensor de salida cuantizado) y la lista de variantes generadas. No se publican detalles sobre arquitectura, contexto, datos de entrenamiento ni resultados de evaluacion. El campo de parametros totales reportado en safetensors es de 333.514.240, un dato que no concuerda con la denominacion "4B" del modelo, por lo que debe interpretarse con cautela.
+El modelo cuenta con 4.326.350.848 parametros totales (aproximadamente 4,3 mil millones), lo que lo situa en la gama de modelos pequenos y desplegables en hardware de consumo. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 41 GB e incluye 13 cuantizaciones estaticas, desde Q2_K (2,1 GB) hasta f16 (8,8 GB), ademas de dos ficheros mmproj (Q8_0 y f16) que indican soporte multimodal de vision.
 
-Por su formato y tamano de repositorio, el modelo esta pensado para despliegue en hardware de consumo mediante llama.cpp, Ollama o bindings similares. La ausencia de licencia explicita y de idiomas declarados son factores que limitan su adopcion en entornos de produccion sin una verificacion adicional por parte del usuario.
+La relevancia de esta ficha radica en que combina tres factores poco habituales: un modelo pequeno de 4B, una intervencion de desaprendizaje conductual sobre el modelo base, y un conjunto completo de cuantizaciones GGUF listas para usar con llama.cpp, Ollama y otros motores de inferencia local. No obstante, la informacion publica disponible es muy limitada: no se detallan los datos de entrenamiento, los benchmarks ni la longitud de contexto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de Qwen3.5, familia transformer; sin confirmar) |
-| Parametros totales | 333.514.240 (reportado en safetensors; discrepante con la denominacion "4B") |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.5); detalles no disponibles |
+| Parametros totales | 4.326.350.848 (aprox. 4,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas; origen en safetensors/HF) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj Q8_0 y f16 |
+| Idiomas soportados | en (segun model card); resto no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base. Por la nomenclatura (Qwen3.5-4B) se infiere que deriva de la familia Qwen3.5, pero no se confirma si emplea un transformer denso convencional, atencion lineal o alguna variante hibrida. Tampoco se documentan el numero de capas, dimensiones ocultas, cabezas de atencion ni la ventana de contexto nativa.
+La arquitectura subyacente es la del Qwen3.5-4B de Alibaba, un transformer decoder-only de aproximadamente 4,3 mil millones de parametros. El modelo base hirundo-io/Qwen3.5-4B-Westernized incorpora una intervencion de "behavioral unlearning" (desaprendizaje conductual), una tecnica que modifica los pesos para reducir ciertos comportamientos aprendidos durante el entrenamiento original. La model card no especifica que comportamientos concretos se eliminan ni la metodologia exacta (por ejemplo, si se uso gradient ascent, fine-tuning selectivo o edicion de pesos).
 
-Respecto al entrenamiento, la model card no incluye informacion sobre volumen de tokens, composicion del corpus, tecnicas de alineamiento (RLHF, DPO) ni el proceso concreto de "westernizacion" aplicado por hirundo-io. El unico dato tecnico verificable es el proceso de cuantizacion: conversion desde formato Hugging Face (convert_type: hf), version de cuantizador 2, con tensor de salida cuantizado y sin fichero mmproj incluido (skip_mmproj), lo que sugiere ausencia de componentes multimodales en este paquete.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO en el ajuste fino. La etiqueta `merged` sugiere que el modelo resultante podria ser el producto de una fusion de pesos, pero no se detalla el proceso. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. La presencia de ficheros mmproj indica que el modelo conserva capacidades multimodales de vision, presumiblemente heredadas del Qwen3.5-4B original.
 
 ## Capacidades
 
-- Generacion de texto en formato GGUF, ejecutable con llama.cpp y derivados.
-- Razonamiento y conversacion multi-turno: capacidad esperable por herencia de la familia Qwen3.5, aunque no verificada en la informacion disponible.
-- Generacion de codigo y matematicas: no confirmado en la documentacion proporcionada.
-- Tool calling / function calling: no disponible.
+- Generacion de texto conversacional: el tag `conversational` confirma su orientacion a dialogos multi-turno.
+- Capacidades multimodales de vision: la presencia de ficheros mmproj (Q8_0 y f16) indica soporte de entrada de imagenes, aunque no se detalla la resolucion ni el formato admitido.
+- Razonamiento y codigo: no confirmado explicitamente en la informacion disponible; se heredaria del Qwen3.5-4B base.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible; la ausencia de mmproj descarta componentes multimodales en este paquete.
-- Ajuste cultural "westernizado": el nombre del modelo base sugiere un alineamiento orientado a valores o estilo de respuesta occidentales, sin documentacion tecnica que lo respalde.
+- Capacidades multilingues: la model card solo declara `en`; no se confirman otros idiomas.
+- Modo thinking: no disponible.
+- Desaprendizaje conductual: el modelo ha sido modificado para atenuar comportamientos no deseados, segun la etiqueta `behavioral-unlearning`.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: al distribuirse en GGUF con variantes desde Q2_K hasta Q8_0, permite ejecutar el modelo en CPU o GPU de consumo mediante llama.cpp, util para prototipado sin infraestructura cloud.
-- Experimentacion con alineamiento cultural: investigadores interesados en comparar respuestas de un modelo "westernizado" frente a la variante original de Qwen3.5 pueden usar estas cuantizaciones para pruebas A/B controladas.
-- Integracion en aplicaciones de escritorio: herramientas como Ollama o LM Studio pueden cargar los ficheros Q4_K_M o Q5_K_M para asistentes locales con requisitos moderados de memoria.
-- Evaluacion de cuantizacion: la disponibilidad de doce variantes permite medir la degradacion de calidad entre Q2_K y Q8_0 sobre el mismo modelo base, un caso de uso metodologico para laboratorios de eficiencia.
-- Filtrado y clasificacion de texto offline: para tareas de procesamiento por lotes en entornos sin conectividad, una cuantizacion Q4 puede ejecutarse en CPU con throughput aceptable.
-- Base para fine-tuning ligero: los pesos f16 pueden servir como punto de partida para ajustes posteriores con LoRA, siempre que se resuelva la ambiguedad sobre licencia y parametros reales.
+- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_M de 2,9 GB, el modelo cabe en GPUs de consumo como una RTX 3060 de 12 GB o incluso en una RTX 4060 de 8 GB, permitiendo inferencia offline sin dependencia de la nube.
+- Prototipado rapido de asistentes conversacionales: el tag `conversational` y su tamano reducido lo hacen adecuado para iterar en el diseno de prompts y flujos de dialogo antes de escalar a modelos mayores.
+- Aplicaciones con requisitos de contenido moderado: la intervencion de desaprendizaje conductual puede resultar util en entornos donde se busca reducir respuestas problematicas, aunque sin garantias formales de alineamiento.
+- Procesamiento de imagenes en local: gracias a los ficheros mmproj, puede emplearse para tareas de descripcion de imagenes o respuesta visual a preguntas (VQA) en entornos con requisitos de privacidad.
+- Educacion y experimentacion con tecnicas de unlearning: util como caso de estudio para investigadores que analizan el efecto del desaprendizaje conductual sobre las capacidades generales de un modelo de 4B.
+- Integracion en pipelines de CI/CD para generacion de texto: su licencia Apache 2.0 y su formato GGUF permiten incorporarlo a herramientas de automatizacion sin coste de licencia, siempre que se validen las salidas.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 13 variantes, lo que facilita estudios de degradacion de calidad frente a tamano en un mismo modelo.
 
 ## Benchmarks y rendimiento
 
@@ -53,35 +54,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: depende de la variante. Para Q2_K, en torno a 1,5-2 GB; Q4_K_M, aproximadamente 2,5-3 GB; Q8_0, cerca de 4-5 GB. Estimaciones orientativas basadas en el tamano del repositorio (1,0 GB) y la practica habitual con GGUF; no confirmadas por el autor.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM para las variantes bajas (GTX 1650, RTX 3050); RTX 3060/4060 o superiores para Q6_K y Q8_0 con contexto amplio.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas con 6-8 GB de VRAM para cuantizaciones intermedias.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, bindings de Python (llama-cpp-python). No compatible directamente con vLLM o TGI sin conversion a safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: entre 2,5 y 3,5 GB para cuantizaciones Q4 (Q4_K_S 2,7 GB, Q4_K_M 2,9 GB); entre 4 y 5 GB para Q8_0 (4,7 GB); aproximadamente 9 GB para f16 (8,8 GB). A estas cifras hay que sumar el espacio para el contexto KV cache, que depende de la longitud de contexto (no documentada).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 8/16 GB, RTX 4070, RTX 4090; en el ambito profesional, A100 o H100 para despliegues con concurrencia.
+- Cabe en GPU de consumo: si, practicamente en cualquier GPU con 6 GB o mas usando Q4_K_M; en GPUs de 4 GB solo con Q2_K o Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y motores compatibles con GGUF. Para el modelo base en safetensors, vLLM o TGI (previa conversion).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Westernized-GGUF (este) | 333.514.240 reportados | no disponible | no disponible | GGUF | Hugging Face |
-| hirundo-io/Qwen3.5-4B-Westernized | no disponible | no disponible | no disponible | safetensors (original) | Hugging Face |
-| Familia Qwen3.5 oficial (4B) | ~4B (segun denominacion) | no disponible en esta ficha | no disponible | safetensors, GGUF | Hugging Face |
+| Qwen3.5-4B-Westernized (este) | 4,3 B | no disponible | Apache 2.0 | GGUF, safetensors | Variante con desaprendizaje conductual y vision |
+| Qwen3.5-4B (base original) | ~4 B | no disponible | Apache 2.0 | safetensors | Modelo sin la intervencion de unlearning |
+| Llama 3.2 3B Instruct | 3,2 B | 128 K | Llama 3.2 Community License | GGUF, safetensors | Alternativa de tamano similar con contexto documentado |
+| Phi-3.5-mini Instruct | 3,8 B | 128 K | MIT | GGUF, safetensors | Alternativa pequena con contexto largo y licencia permisiva |
 
-No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a formato, disponibilidad y denominacion.
+La comparativa se limita a modelos de la misma franja de tamano; no se dispone de datos de rendimiento comparativo para este modelo concreto.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica si el uso comercial esta permitido; es imprescindible verificar la licencia del modelo base hirundo-io/Qwen3.5-4B-Westernized y de la familia Qwen3.5 antes de cualquier despliegue productivo.
-- Discrepancia en parametros: el valor reportado (333,5 M) no concuerda con la denominacion "4B"; puede tratarse de un error de metadatos o de un modelo sustancialmente menor de lo que sugiere el nombre.
-- Sin documentacion de arquitectura ni contexto: imposible planificar integraciones que dependan de ventana de contexto o comportamiento de atencion.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluaciones publicadas no puede acotarse su magnitud.
-- Sesgos: el ajuste "westernizado" introduce una orientacion cultural explicita que puede sesgar respuestas en temas politicos, sociales o culturales; no hay documentacion sobre el proceso ni su alcance.
-- Idiomas no declarados: no se garantiza un rendimiento adecuado en castellano ni en otros idiomas distintos del ingles o chino.
-- Cero descargas y cero likes en el momento de la consulta: sin validacion por parte de la comunidad.
-- Sin mmproj: no soporta entrada multimodal en este paquete.
-- Cuantizaciones muy agresivas (Q2_K, Q3_K_S) pueden degradar notablemente la coherencia y la fidelidad factual.
+- Ausencia total de benchmarks publicados: no es posible evaluar su calidad frente a alternativas sin pruebas propias.
+- Longitud de contexto no documentada: un factor critico para planificar aplicaciones con ventanas largas.
+- Idiomas: la model card solo declara ingles; el rendimiento en castellano no esta verificado y podria ser deficiente.
+- Riesgo de alucinacion: inherente a los modelos de 4B, especialmente en tareas de razonamiento complejo o datos factuales.
+- Efectos secundarios del desaprendizaje: la intervencion conductual puede degradar capacidades generales no relacionadas, y no se documenta que comportamientos se han eliminado ni con que metodo.
+- Sesgos: no se documentan evaluaciones de sesgo; el modelo base Qwen3.5 puede arrastrar sesgos de sus datos de entrenamiento.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario es responsable del cumplimiento normativo en su jurisdiccion.
+- Modelo derivado sin mantenimiento documentado: creado el 19 de noviembre de 2026, sin actualizaciones posteriores registradas ni issues resueltos.
+- Vision: aunque incluye mmproj, no se especifican resoluciones, formatos ni calidad del soporte multimodal.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-Westernized-GGUF
-- Modelo base (safetensors): https://huggingface.co/hirundo-io/Qwen3.5-4B-Westernized
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.5-4B-Westernized-GGUF
+- Modelo base: https://huggingface.co/hirundo-io/Qwen3.5-4B-Westernized
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Qwen3.5-4B-Westernized-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-4B-Westernized-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

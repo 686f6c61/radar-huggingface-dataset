@@ -2,104 +2,99 @@
 
 ## Resumen
 
-Flint-PXQN4 es una cuantización del modelo Recursive Flint, un mixture-of-experts (MoE) de 39.785.287.456 parámetros totales (unos 2.500 millones activos por token) orientado a agentes de programación, publicado originalmente por Recursive bajo licencia Apache 2.0. La conversión la firma poisonxa (PXA Network) en su formato propietario PXQN4, partiendo del GGUF Q8_0 de `unsloth/flint-GGUF`. No hay reentrenamiento, ajuste fino ni edición de pesos: es únicamente un cambio de formato y precisión.
+Flint-PXQN4 es una cuantización del modelo Recursive Flint, un transformer de mezcla de expertos (MoE) de 39.785.287.456 parámetros totales con aproximadamente 2.500 millones de parámetros activos por token, diseñado específicamente para agentes de programación. El modelo base lo desarrolla Recursive (RecursiveSI) bajo licencia Apache 2.0, y esta versión la publica poisonxa a través de PXA Network en su formato propietario PXQN4, un contenedor GGUF compatible con builds específicas del motor PXA.
 
-El interés de esta ficha es doble. Por un lado, documenta el modelo base Flint y su ventana de contexto declarada de hasta 262.144 tokens, que lo sitúa en la liga de los MoE grandes para tareas de agente con repositorios completos en contexto. Por otro, sirve como caso de estudio de un formato de cuantización de nicho: PXQN4 solo se carga con una build de PXA 4.0 o superior, lo que limita su portabilidad frente a GGUF estándar en llama.cpp.
+La relevancia de esta ficha es doble: por un lado documenta un modelo MoE de casi 40B con un ratio de activación muy bajo (en torno al 6,3 %), pensado para razonamiento multi-paso y generación de código en entornos de agentes; por otro, ilustra un caso de cuantización de terceros con métricas de calidad publicadas (divergencia KL frente al Q8_0 original) que permiten evaluar la pérdida de fidelidad respecto a la cuantización de referencia.
 
-El archivo ocupa 24,87 GB en disco y el autor lo dimensiona para una tarjeta de 16 GB (Tesla P100 o V100) dejando el resto de capas en RAM del sistema, o para dos tarjetas de 16 GB. La calidad declarada queda a la par de un Q4_K_XL de la línea principal: KLD de 0,326 frente a 0,321, diferencia dentro del error de medida. El repositorio no registra descargas ni valoraciones en el momento de la consulta.
+El archivo ocupa 24,87 GB en disco y está dimensionado para ejecutarse en una GPU de 16 GB (Tesla P100 o V100) con el resto de capas en RAM del sistema, o bien repartido entre dos GPU de 16 GB. La longitud de contexto documentada del modelo base alcanza los 262.144 tokens, aunque el autor advierte que contextos menores reducen el consumo de memoria. No se han publicado datos de benchmarks de rendimiento en la información disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | transformer con mezcla de expertos (MoE); numero de capas y configuracion de expertos no disponibles |
-| Parametros totales | 39.785.287.456 (39,8 B) |
-| Parametros activos | ~2.500 millones (2,5 B) por token |
-| Longitud de contexto | hasta 262.144 tokens (limite documentado del modelo base) |
-| Tipos de cuantizacion | PXQN4 (tier unico en este repo, con los tensores mas sensibles en mayor precision); no incluye otros niveles |
+| Arquitectura | Transformer de mezcla de expertos (MoE) |
+| Parámetros totales | 39.785.287.456 |
+| Parámetros activos | ~2.500 millones por token |
+| Longitud de contexto | 262.144 tokens (límite documentado del modelo base) |
+| Tipos de cuantización | PXQN4 (tier propietario de PXA), con tensores sensibles en mayor precisión |
 | Idiomas soportados | no disponible |
-| Licencia | Apache License 2.0 (heredada del modelo base) |
-| Formato de pesos | GGUF (archivo unico `Flint-PXQN4.gguf`, formato PXQN4 propietario de PXA) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (archivo `Flint-PXQN4.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos: 39,8 B de parametros totales de los que aproximadamente 2,5 B se activan por token, lo que reduce el coste de inferencia por token frente a un denso del mismo tamano. Recursive lo describe como un MoE para agentes de codigo. No se dispone de informacion sobre el numero de capas, el numero de expertos, la estrategia de enrutamiento ni la composicion del dataset de entrenamiento en la informacion proporcionada.
+El modelo base Recursive Flint es un transformer de mezcla de expertos con 39,8B parámetros totales y unos 2,5B activos por token, lo que sitúa su ratio de activación en aproximadamente el 6,3 %. Está orientado a agentes de programación, según la model card del autor de la cuantización. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-El detalle tecnico relevante de esta publicacion no esta en el entrenamiento, sino en la cuantizacion. PXA partio del Q8_0 de Unsloth y aplico su esquema PXQN4 con calibracion tipo imatrix (etiqueta presente en el repo), manteniendo los tensores mas sensibles en mayor precision. El resultado son 24,87 GB (24.870.895.296 bytes) con sha256 `a8d2fb61e1be97c8b8b01bed00f6aa5ef5ee2cf4743c186fcf8b628c69c15992`. El autor advierte que algunos campos descriptivos internos del GGUF (nombre de Unsloth y fichero de calibracion) se heredan del archivo de origen. La carga requiere una build de PXA con soporte de Flint: PXA 4.0 o superior; PXA 3.1 y anteriores no pueden abrir el archivo. Muestreo recomendado por el autor del modelo base: temperatura 1.0, top_p 0.95, top_k 20.
+Esta versión concreta no ha sido reentrenada, ajustada ni editada: es una conversión y cuantización del modelo original. El proceso partió del GGUF Q8_0 publicado por Unsloth (`unsloth/flint-GGUF`, también Apache 2.0), por lo que algunos campos descriptivos internos del GGUF (nombre de Unsloth y archivo de calibración) se heredan de ese fichero. La cuantización PXQN4 conserva los tensores más sensibles en mayor precisión, una técnica habitual para reducir el impacto de la cuantización en capas críticas. No se documentan innovaciones arquitectónicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional (etiqueta `conversational` en el repo), con formato de chat de rol asistente.
-- Razonamiento y generacion de codigo orientados a agentes de programacion, segun la descripcion del modelo base.
-- Contexto largo: hasta 262.144 tokens declarados, adecuado para volcar repositorios o historiales extensos.
-- Compatibilidad con endpoints (`endpoints_compatible`): el autor indica que puede servirse mediante el servidor de PXA (`run-server.sh`), con API compatible.
-- Inferencia eficiente por token gracias al enrutamiento MoE (2,5 B activos de 39,8 B totales).
-- No se documentan en la informacion disponible capacidades de vision, audio, tool calling explicito ni modo de razonamiento extendido (thinking). Su disponibilidad no puede confirmarse.
+- Generación de texto y razonamiento multi-paso, orientado por diseño a flujos de agentes.
+- Generación y edición de código, dado el enfoque declarado del modelo base hacia agentes de programación.
+- Conversación multi-turno (etiqueta `conversational` en el repositorio).
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de codigo sobre repositorios completos: con 262.144 tokens de contexto puede ingerir varios modulos, tests y documentacion en una sola sesion, algo que un modelo de 8k-32k no cubre sin troceado y perdida de coherencia entre ficheros.
-- Agente de refactorizacion multi-fichero: el bajo numero de parametros activos (2,5 B) abarata cada paso de un bucle agente con muchas llamadas, mientras el conocimiento total del MoE se mantiene en 39,8 B.
-- Revision de pull requests en local: desplegable en una estacion de trabajo con una GPU de 16 GB y RAM de sistema, permite analizar diffs y contexto del repo sin enviar codigo a un servicio externo.
-- Despliegue en hardware legacy (P100/V100): al estar dimensionado para tarjetas Pascal y Volta de 16 GB, encaja en infraestructura antigua que no admite modelos densos de esta categoria en BF16.
-- Experimentacion con formatos de cuantizacion: util como referencia para comparar PXQN4 contra Q4_K_XL en la misma tarea, con metricas KLD y PPL ya publicadas.
-- Servicio interno de chat tecnico: el autor incluye un script de servidor y el modelo soporta el modo conversacional, lo que permite levantarlo como endpoint compatible en una red interna.
-- Evaluacion comparativa de motores de inferencia: sirve para medir la madurez de PXA frente a llama.cpp en terminos de soporte de arquitecturas MoE y gestion de offload a RAM.
+- Agentes de programación autónomos: el modelo está diseñado explícitamente para este escenario, con un MoE de bajo coste de activación (unos 2,5B parámetros por token) que permite iteraciones rápidas en bucles de razonamiento y edición de código sin pagar el coste completo de 39,8B parámetros en cada paso.
+- Asistentes de código integrados en IDE: la ventana de contexto de hasta 262.144 tokens permite cargar repositorios o módulos completos y mantener coherencia entre múltiples archivos durante la refactorización.
+- Despliegue en hardware modesto: al caber en una GPU de 16 GB (P100 o V100) con el resto de capas en RAM, es viable montar un servidor de inferencia en infraestructura antigua o de segunda mano, útil para laboratorios con presupuesto limitado.
+- Procesamiento de documentación técnica extensa: con contexto largo se pueden resumir, extraer y cruzar especificaciones de manuales o bases de conocimiento de gran tamaño en una sola pasada.
+- Entornos de investigación sobre cuantización: al publicar métricas de divergencia KL frente al Q8_0, sirve como caso de estudio para comparar formatos de cuantización (PXQN4 frente a Q4_K_XL) en condiciones controladas.
+- Automatización de tareas conversacionales multi-turno: la etiqueta `conversational` y la compatibilidad con endpoints permiten integrarlo en chatbots internos o pipelines de soporte donde el contexto largo y el coste por token importan.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible (ni MMLU, ni HumanEval, ni GSM8K). El autor solo reporta metricas de fidelidad de la cuantizacion frente al Q8_0 del original, calculadas sobre 8 fragmentos de texto (medicion PXA, 2026-10-24):
+La model card no publica benchmarks de tareas (MMLU, HumanEval, GSM8K u otros). Sí incluye métricas de fidelidad de la cuantización frente al Q8_0 del modelo original:
 
-| Metrica | Flint-PXQN4 (este archivo) | Q4_K_XL (linea principal) |
+| Métrica | Flint-PXQN4 (este archivo) | Q4_K_XL mainline |
 |---|---:|---:|
-| Tamano en disco | 24,87 GB | 25,05 GB |
-| KLD frente a Q8_0 (menor es mejor) | 0,326 ± 0,015 | 0,321 ± 0,015 |
-| Mismo token en top-1 | 86,25 % | 85,90 % |
-| Ratio de perplejidad frente a Q8_0 | 1,027 | 1,031 |
+| Tamaño | 24,87 GB | 25,05 GB |
+| KLD vs Q8_0 | 0,326 ± 0,015 | 0,321 ± 0,015 |
+| Mismo token top-1 | 86,25 % | 85,90 % |
+| Ratio de perplejidad vs Q8_0 | 1,027 | 1,031 |
 
-El propio autor matiza que la diferencia de KLD queda dentro del error de medida y que no reclama superioridad sobre Q4_K_XL. Con 8 fragmentos, las diferencias pequenas no se resuelven estadisticamente.
+El autor indica que la diferencia de KLD (0,326 frente a 0,321) queda dentro del error de medida y no reclama superioridad sobre Q4_K_XL. Las mediciones provienen de 8 fragmentos de texto (PXA, 2026-10-24), por lo que no resuelven diferencias pequeñas. No se ha ejecutado una prueba KLD con tokens de chat (rol assistant) ni una prueba de aguja en contexto largo.
 
 ## Requisitos de hardware
 
-- VRAM: los pesos solos ocupan 24,87 GB, de modo que una GPU de 24 GB (RTX 3090/4090) no los contiene por completo; hace falta offload parcial o dos tarjetas.
-- Configuracion objetivo declarada: una tarjeta de 16 GB (Tesla P100 o V100) con el resto de capas en RAM del sistema, o dos tarjetas de 16 GB (32 GB de VRAM en total, suficiente para los pesos).
-- Contexto: el autor indica que reducir `-c` reduce el consumo de memoria; no se publican cifras de KV cache por token, por lo que el presupuesto para 262.144 tokens no esta cuantificado.
-- GPU recomendadas: P100 16 GB, V100 16 GB (las mencionadas explicitamente); cualquier configuracion con 32 GB o mas de VRAM agregada es suficiente para los pesos.
-- Motor de despliegue: exclusivamente PXA 4.0 o superior con soporte de Flint (canal beta para Valued Supporters en el momento de publicacion). No es compatible con llama.cpp, Ollama ni vLLM en su forma actual, al ser un formato PXQN4 y no un GGUF estandar.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el archivo completo ocupa 24,87 GB; el autor lo dimensiona para una GPU de 16 GB con el resto de capas en RAM del sistema, o para dos GPU de 16 GB.
+- GPU recomendadas por el autor: Tesla P100 o V100 de 16 GB. Para un reparto completo en VRAM harían falta tarjetas con más memoria (por ejemplo, A100 de 40/80 GB o H100), aunque no se documentan explícitamente.
+- GPU de consumo: no se indica compatibilidad con RTX 4090 u otras tarjetas consumer; el formato PXQN4 requiere builds específicas del motor PXA, no de llama.cpp estándar.
+- Opciones de despliegue: exclusivamente el motor PXA con soporte de Flint, incluido a partir de PXA 4.0 (canal beta para Valued Supporters). PXA v3.1 y anteriores no pueden cargar el archivo. El lanzamiento se hace con `~/.local/share/pxa/current/run-server.sh -m Flint-PXQN4.gguf` o mediante la interfaz PXA Control.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Muestreo recomendado por el modelo base: temperatura 1.0, top_p 0.95, top_k 20.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / tamano | Calidad | Licencia | Motor |
-|---|---|---|---|---|---|---|
-| Flint-PXQN4 (este) | 39,8 B totales / ~2,5 B activos | 262.144 | GGUF PXQN4, 24,87 GB | KLD 0,326 vs Q8_0 | Apache 2.0 | PXA 4.0+ |
-| Flint Q4_K_XL (linea principal del mismo base) | 39,8 B / ~2,5 B activos | 262.144 | GGUF K-quant, 25,05 GB | KLD 0,321 vs Q8_0 | Apache 2.0 | llama.cpp y derivados |
-| Flint Q8_0 (unsloth/flint-GGUF) | 39,8 B / ~2,5 B activos | 262.144 | GGUF Q8_0, tamano no disponible | referencia (KLD 0) | Apache 2.0 | llama.cpp y derivados |
-| RecursiveSI/flint (original) | 39,8 B / ~2,5 B activos | 262.144 | pesos originales, tamano no disponible | referencia | Apache 2.0 | no disponible |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato / disponibilidad |
+|---|---|---|---|---|---|
+| Flint-PXQN4 (este) | 39,8B | ~2,5B | 262.144 | Apache 2.0 | GGUF PXQN4, requiere PXA 4.0+ |
+| RecursiveSI/flint (base) | 39,8B | ~2,5B | 262.144 | Apache 2.0 | Pesos originales en Hugging Face |
+| unsloth/flint-GGUF (Q8_0) | 39,8B | ~2,5B | 262.144 | Apache 2.0 | GGUF Q8_0, compatible con llama.cpp |
+| Flint Q4_K_XL mainline | 39,8B | ~2,5B | 262.144 | Apache 2.0 | GGUF Q4_K_XL, 25,05 GB |
 
-La comparacion relevante es interna a la familia Flint: este archivo no aporta una ventaja medible de calidad frente a Q4_K_XL y solo se diferencia por un formato propietario y 0,18 GB menos de disco. No se dispone de datos para compararlo con MoE de otros fabricantes.
+No se dispone de información sobre modelos de otros desarrolladores comparables en la misma categoría (MoE de ~40B orientado a agentes de código), por lo que la comparativa se limita a las variantes del propio Flint.
 
 ## Limitaciones y advertencias
 
-- Dependencia de motor: PXA 3.1 (version publica en el momento de la publicacion) y anteriores no cargan el archivo; PXA 4.0 llega primero por canal beta. Esto descarta llama.cpp, Ollama, LM Studio, vLLM y TGI, y reduce drasticamente la portabilidad.
-- Calidad medida sobre muestra pequena: KLD y PPL se calcularon sobre 8 fragmentos de texto; el propio autor senala que las diferencias frente a Q4_K_XL no son resolubles con ese tamano de muestra.
-- Sin validacion de chat ni de contexto largo: no se ha ejecutado una prueba KLD con tokens de rol asistente ni un test de aguja en contexto largo, precisamente el escenario de uso principal del modelo.
-- Perdida de precision: 86,25 % de coincidencia en el token top-1 frente a Q8_0 y ratio de perplejidad 1,027 implican divergencias medibles en generacion greedy a partir de cierta longitud.
-- Idiomas no documentados: la model card no declara cobertura linguistica; el comportamiento en castellano no esta verificado.
-- Riesgo de alucinacion: no se publican evaluaciones de factualidad ni de tasas de alucinacion; en tareas de agente sobre codigo conviene validar toda salida con tests.
-- Repositorio sin traccion: 0 descargas y 0 likes en la consulta, sin validacion independiente por parte de la comunidad.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero "Flint" y "Recursive" son marcas de Recursive; el autor aclara que PXA Network no esta afiliada a Recursive ni a Unsloth y que los nombres se usan solo para describir el origen de los pesos.
-- Metadatos heredados: los campos internos del GGUF referidos a Unsloth y su fichero de calibracion no describen esta cuantizacion; conviene no usarlos para trazabilidad.
-- Ausencia de datos de rendimiento: sin latencia ni throughput publicados, no es posible estimar coste operativo sin medir en el hardware objetivo.
+- La cuantización introduce pérdida de fidelidad: KLD de 0,326 frente al Q8_0 y ratio de perplejidad de 1,027, con un 86,25 % de coincidencia en el token top-1.
+- Las métricas de calidad se basan en solo 8 fragmentos de texto y no cubren tokens de chat ni contexto largo; el comportamiento en conversación real y en ventanas de 262.144 tokens no está validado.
+- Requiere una build específica del motor PXA (4.0 o superior, inicialmente en beta para Valued Supporters). No es cargable en llama.cpp, Ollama o vLLM estándar, lo que limita la portabilidad.
+- El autor no reclama mejora sobre Q4_K_XL; la elección entre ambos debe basarse en el ecosistema de despliegue disponible.
+- Idiomas soportados no documentados: el rendimiento fuera del inglés es incierto.
+- Riesgo de alucinación y sesgos: no se documentan evaluaciones específicas; son los esperables en un modelo base sin análisis publicado en esta ficha.
+- Licencia Apache 2.0 permite uso comercial, pero los nombres "Flint" y "Recursive" pertenecen a Recursive y solo deben usarse para describir el origen de los pesos. PXA Network no está afiliada a Recursive ni a Unsloth.
+- El repositorio hereda campos descriptivos del GGUF de Unsloth (nombre y archivo de calibración), lo que puede confundir en auditorías de procedencia.
 
 ## Enlaces
 
-- Repositorio Hugging Face de este modelo: https://huggingface.co/poisonxa/Flint-PXQN4
-- Modelo base RecursiveSI/flint: https://huggingface.co/RecursiveSI/flint
-- Perfil de Recursive en Hugging Face: https://huggingface.co/RecursiveSI
-- GGUF Q8_0 de origen (unsloth/flint-GGUF): https://huggingface.co/unsloth/flint-GGUF
-- Perfil de Unsloth en Hugging Face: https://huggingface.co/unsloth
+- Modelo en Hugging Face: https://huggingface.co/poisonxa/Flint-PXQN4
+- Modelo base: https://huggingface.co/RecursiveSI/flint
+- GGUF Q8_0 de Unsloth: https://huggingface.co/unsloth/flint-GGUF
 - Discord de PXA Network: https://discord.pxanetwork.com
-- Apoyo al autor (Ko-fi): https://ko-fi.com/shatteredrealms1
-- Paper, blog tecnico y demo: no disponibles en la informacion proporcionada
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo (solo contenido no relacionado), por lo que no se enlaza ningun resultado adicional.
+- Reddit de PXA Network: https://www.reddit.com/r/PXANetwork/
+- Apoyo al autor: https://ko-fi.com/shatteredrealms1

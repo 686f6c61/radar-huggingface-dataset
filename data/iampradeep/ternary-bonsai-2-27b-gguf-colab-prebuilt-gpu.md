@@ -2,93 +2,92 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B es un modelo de lenguaje de ~27.000 millones de parametros (26.895.998.464 segun los pesos publicados) que utiliza cuantizacion ternaria de 1,58 bits, con pesos representados en el conjunto {-1, 0, +1}. Forma parte de la familia Bonsai-2, cuya arquitectura original fue creada por PrismML, y este repositorio concreto (IamPradeep/Ternary-Bonsai-2-27B-GGUF-Colab-Prebuilt-GPU) es una distribucion comunitaria de pesos en formato GGUF acompanada de binarios precompilados del fork de llama.cpp de PrismML, pensada para ejecutar el modelo en Google Colab o en GPUs de gama consumer sin pasos de compilacion.
+Ternary-Bonsai-2-27B es un modelo de lenguaje de aproximadamente 26.900 millones de parametros, distribuido en formato GGUF por el usuario IamPradeep bajo el identificador `IamPradeep/Ternary-Bonsai-2-27B-GGUF-Colab-Prebuilt-GPU`. El repositorio no contiene los pesos originales en safetensors, sino un paquete de binarios precompilados de un fork de llama.cpp (denominado PrismML) junto con varias cuantizaciones GGUF del modelo, incluida una variante ternaria densa (PTQ1_0) de solo 5,95 GB. El objetivo declarado es permitir la inferencia en Google Colab o entornos GPU similares sin pasos de compilacion.
 
-La relevancia de este modelo radica en su huella de memoria: la variante por defecto PTQ1_0 ocupa aproximadamente 5,95 GB, lo que permite ejecutar un modelo de escala 27B por completo en GPU (offload total con -ngl 99) en entornos con 8-16 GB de VRAM, algo inviable con pesos F16 (53,8 GB en este repositorio). Ademas, la model card documenta capacidad multimodal mediante un proyector de vision (mmproj) y un modo de razonamiento activable con el flag --reasoning on, orientado a tareas de tipo thinking.
+La caracteristica tecnica mas relevante es el uso de "trits" ternarios densos en la variante por defecto, una forma de cuantizacion extrema post-entrenamiento que reduce el peso del modelo de 53,8 GB en F16 a 5,95 GB, manteniendo teoricamente la estructura del transformer original. El repositorio incluye ademas un proyector visual (`mmproj`) en dos precisiones, lo que indica capacidades multimodales de imagen, y un flag `--reasoning` en el CLI que sugiere un modo de razonamiento o "thinking" activable.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, esta fechado el 18 de septiembre de 2026 y no declara licencia, idiomas soportados ni pipeline. Es, por tanto, un artefacto de distribucion practico para pruebas rapidas, no una publicacion convalidada por la comunidad ni con garantias de soporte.
+El modelo resulta relevante para desarrolladores que necesitan desplegar un LLM de casi 27.000 millones de parametros en hardware de consumo o en instancias gratuitas de Colab, un escenario historicamente reservado a modelos de 7-8B. Sin embargo, la informacion disponible es escasa: no se especifica el modelo base, el desarrollador original, la licencia, los idiomas soportados ni resultados de benchmarks, lo que limita seriamente su evaluacion para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con cuantizacion ternaria de 1,58 bits (pesos en {-1, 0, +1}); multimodal mediante proyector de vision (mmproj). Detalles de capas, atencion y activaciones: no disponible |
-| Parametros totales | 26.895.998.464 (~26,9B, denominado "27B" por el autor) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible como especificacion oficial; los ejemplos de la model card usan -c 8192 |
-| Tipos de cuantizacion | PTQ1_0 (trits densos, 5,95 GB, por defecto), PQ2_0 (7,21 GB), F16 (53,8 GB); proyectores de vision en Q8_0 (629 MB) y BF16 (931 MB) |
+| Arquitectura | Transformer (detalles no disponibles); cuantizacion ternaria densa en variante PTQ1_0 |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 8192 tokens (valor usado en los ejemplos del CLI; maximo nativo no disponible) |
+| Tipos de cuantizacion | PTQ1_0 (ternaria densa, 5,95 GB), PQ2_0 (7,21 GB), F16 (53,8 GB); proyector visual en Q8_0 y BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (ficheros .gguf) + binarios precompilados llama.cpp (llama_bin.tar.gz, 35,2 MB) |
+| Formato de pesos | GGUF (incluye binarios `llama_bin.tar.gz` del fork PrismML de llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe una arquitectura basada en cuantizacion ternaria de 1,58 bits: los pesos se representan con valores {-1, 0, +1}, lo que reduce drasticamente el coste de almacenamiento y, segun el autor, permite que un modelo de 27B de parametros quepa en 5,95 GB en su variante PTQ1_0 (trits densos) y en 7,21 GB en PQ2_0. El repositorio distribuye tambien una version F16 de 53,8 GB, util como referencia de precision completa. La model card no detalla el numero de capas, dimensiones ocultas, mecanismo de atencion ni si se emplean componentes hibridos o de atencion lineal.
+No se dispone de informacion sobre la arquitectura interna del modelo base: la model card no documenta si se trata de un transformer denso convencional, un MoE o una arquitectura hibrida, ni detalla el numero de capas, dimensiones ocultas o mecanismo de atencion. El dato de parametros totales (26,9B) proviene de los safetensors asociados al repositorio, pero el autor no publica la procedencia del modelo original ni el proceso de entrenamiento (tokens, composicion del dataset, RLHF/DPO).
 
-Sobre el entrenamiento no se proporciona informacion: no se indica el volumen de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO u otras tecnicas de alineamiento. Lo unico documentado en la model card es el reconocimiento a PrismML como creadores originales de la arquitectura y de los metodos de cuantizacion ternaria de la familia Bonsai. Tampoco se describen innovaciones adicionales como decodificacion especulativa. El unico elemento funcional destacable documentado es un modo de razonamiento activable mediante el flag --reasoning on/off del binario de inferencia, y el soporte de vision por proyector externo (mmproj) en dos precisiones.
+La innovacion tecnica documentada es la cuantizacion ternaria densa (PTQ1_0), que representa los pesos con valores ternarios y reduce el tamano a 5,95 GB, aproximadamente una novena parte del F16. El repositorio incluye binarios precompilados del fork PrismML de llama.cpp, necesarios porque el formato ternario no es estandar en llama.cpp upstream. Tambien se documenta un modo de razonamiento activable mediante `--reasoning on` y un proyector multimodal separado (`mmproj`) para entrada de imagenes, lo que implica que el modelo base fue entrenado o adaptado con capacidad visual.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la model card incluye ejemplos de inferencia de texto con prompt de sistema y sampling configurable (--temp, --top-p, -n).
-- Modo de razonamiento: el flag --reasoning on activa un modo de pensamiento o "thinking"; con --reasoning off se desactiva.
-- Vision y multimodalidad: soporte de entrada de imagen mediante proyector de vision (Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf de 629 MB o mmproj-BF16.gguf de 931 MB), con ejemplos de descripcion detallada de imagenes.
-- Capacidad de razonamiento general: el autor afirma que el modelo "retiene una fuerte capacidad de razonamiento" en cuantizacion ternaria, aunque no se aportan mediciones.
-- Compatibilidad con endpoints: el repositorio esta etiquetado como endpoints_compatible (compatible con endpoints de inferencia).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara lista de idiomas).
-- Otras capacidades especiales (audio, codigo, matematicas): no disponible.
+- Generacion de texto conversacional multi-turno, con system prompt configurable.
+- Modo de razonamiento o "thinking" activable mediante el flag `--reasoning on` en el CLI.
+- Capacidad multimodal de vision: procesa imagenes mediante el proyector `mmproj` (Q8_0 o BF16) y responde a prompts sobre ellas.
+- Inferencia acelerada por GPU con offload completo de capas (`-ngl 99`).
+- Ejecucion en entornos efimeros tipo Google Colab con descarga e inicio en 1-2 minutos segun el autor.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente, aunque el modo de razonamiento sugiere cierta capacidad.
+- Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-- Prototipado rapido en Google Colab: el flujo documentado descarga los binarios precompilados (35,2 MB) y el GGUF PTQ1_0 (5,95 GB), permitiendo tener inferencia funcionando en aproximadamente 1-2 minutos de descarga, sin compilar llama.cpp ni configurar toolchains de CUDA.
-- Inferencia local en GPU de gama consumer: con 5,95 GB de pesos, el modelo puede descargarse por completo en GPUs con 8-12 GB de VRAM usando -ngl 99, lo que habilita asistentes de texto locales en equipos de escritorio.
-- Descripcion y analisis de imagenes: usando el proyector mmproj junto con el flag --image, se puede emplear para tareas de captioning detallado, respuesta a preguntas sobre imagenes (VQA) o extraccion de informacion visual en flujos de trabajo ligeros.
-- Tareas de razonamiento con modo thinking: activando --reasoning on, el modelo puede usarse para problemas que requieren descomposicion en pasos, como analisis de enunciados o resolucion de problemas planteados en lenguaje natural, en entornos con pocos recursos.
-- Experimentacion en investigacion sobre cuantizacion ternaria: el repositorio facilita comparar el comportamiento de las variantes PTQ1_0, PQ2_0 y F16 sobre el mismo modelo base, lo que permite estudiar la degradacion por cuantizacion en tareas concretas.
-- Generacion de texto en entornos con restricciones de VRAM: para aplicaciones de resumen, reescritura o extraccion de informacion donde no sea viable desplegar un modelo de 27B en F16, la variante ternaria ofrece una alternativa con 5,95 GB de huella.
-- Valoracion de despliegue en pipelines de baja latencia en GPU unica: al caber en una sola GPU, evita la necesidad de tensor parallelism o sharding, simplificando la operacion (aunque no se publican cifras de throughput).
+- Prototipado rapido en Google Colab: el paquete incluye binarios precompilados y una variante de 5,95 GB, de modo que un desarrollador puede lanzar un modelo de 27B en una GPU T4 o L4 gratuita sin compilar llama.cpp ni descargar 50 GB de pesos.
+- Asistente conversacional con contexto medio: con 8192 tokens de ventana configurada, el modelo puede mantener dialogos multi-turno con historial extenso, adecuado para chatbots de soporte tecnico o tutoria.
+- Analisis de imagenes en entornos con recursos limitados: usando el proyector `mmproj-Q8_0` (629 MB), se puede hacer captioning, descripcion detallada o respuesta a preguntas visuales (VQA) sobre imagenes subidas por el usuario, sin necesidad de GPUs de datacenter.
+- Generacion de texto con razonamiento explicito: activando `--reasoning on`, el modelo puede emplearse en tareas que requieren descomposicion paso a paso, como resolucion de problemas matematicos o analisis de casos, aunque no hay benchmarks que confirmen su calidad.
+- Experimentacion academica con cuantizacion ternaria: investigadores interesados en tecnicas de compresion extrema pueden comparar las variantes PTQ1_0 (5,95 GB), PQ2_0 (7,21 GB) y F16 (53,8 GB) para estudiar la degradacion de calidad segun la precision.
+- Despliegue en estaciones de trabajo con una sola GPU consumer: al caber en menos de 6 GB en PTQ1_0, el modelo puede ejecutarse en una RTX 3060 de 12 GB o similar, habilitando pruebas locales de un LLM de gran tamano sin infraestructura cloud.
+- Evaluacion comparativa de forks de llama.cpp: el paquete incluye el fork PrismML, lo que permite a ingenieros de MLOps probar la compatibilidad de formatos ternarios con sus pipelines de inferencia existentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion, ni comparaciones cuantitativas con modelos de tamano similar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para PTQ1_0 (5,95 GB de pesos): requiere al menos ~7-8 GB de VRAM para pesos mas cache KV; en la practica, GPUs de 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) y la Tesla T4 de 16 GB de Colab son suficientes con offload total.
-- VRAM para PQ2_0 (7,21 GB de pesos): entorno de 10-12 GB de VRAM como minimo practico.
-- VRAM para F16 (53,8 GB de pesos): no cabe en GPUs consumer; requiere A100 80 GB, H100 80 GB o configuraciones multi-GPU con reparto de capas.
-- Proyector de vision: suma 629 MB (Q8_0) o 931 MB (BF16) a los requisitos anteriores cuando se usa entrada de imagen.
-- Contexto: los ejemplos usan -c 8192, lo que anade cache KV a la VRAM; no se documenta soporte oficial de contextos mayores ni su coste de memoria.
-- Cabe en GPU consumer: si, en las variantes PTQ1_0 y PQ2_0; no en F16.
-- Opciones de despliegue: llama-cli del fork PrismML de llama.cpp incluido en el repositorio (llama_bin.tar.gz); el repositorio esta etiquetado como endpoints_compatible. Compatibilidad con vLLM, Ollama, TGI o llama-server: no disponible.
-- Latencia y throughput: no disponible. El unico dato temporal publicado es el de la descarga (aproximadamente 1-2 minutos para 5,95 GB en Colab).
+- VRAM estimada para inferencia: aproximadamente 6-7 GB con la variante PTQ1_0 (5,95 GB de pesos mas overhead de contexto y KV cache); alrededor de 8-9 GB con PQ2_0 (7,21 GB); unos 55-60 GB con F16 (53,8 GB).
+- La ventana de contexto de 8192 tokens incrementa el consumo de KV cache de forma proporcional; no se dispone de cifras exactas del modelo.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para PTQ1_0 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, L4, T4 en Colab). Para F16 se requiere A100 80 GB, H100 o multiples GPUs.
+- Cabe en GPU consumer: si, en la variante PTQ1_0 y PQ2_0, en tarjetas con 8 GB o mas de VRAM.
+- Opciones de despliegue: el repositorio proporciona binarios del fork PrismML de llama.cpp (`llama-cli`), con soporte CUDA 12 mediante `nvidia-cuda-runtime-cu12` y `nvidia-cublas-cu12`. No se documenta compatibilidad con vLLM, Ollama, TGI ni llama.cpp upstream.
+- Latencia y throughput: no disponibles. El autor solo indica que la descarga e inicio en Colab tarda 1-2 minutos, no el rendimiento en tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de rendimiento, contexto, licencia ni disponibilidad de alternativas dentro de la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia cualitativa de categoria, los modelos ternarios o de muy baja precision con pesos en {-1, 0, +1}, como la linea BitNet b1.58 de Microsoft, comparten el planteamiento de comprimir la huella de memoria, pero no se han facilitado cifras comparativas de este modelo frente a ellos.
+| Modelo | Parametros | Contexto | Cuantizacion minima | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Ternary-Bonsai-2-27B (PTQ1_0) | ~26,9B | 8192 (configurado) | Ternaria densa, 5,95 GB | no disponible | GGUF + binarios PrismML |
+| Llama 3.1 8B Instruct | 8B | 128K | Q4_K_M ~4,9 GB | Llama 3.1 Community | GGUF ampliamente soportado |
+| Qwen2.5 14B Instruct | 14,7B | 32K | Q4_K_M ~9 GB | Apache 2.0 | GGUF, vLLM, Ollama |
+| Mistral Small 22B | 22B | 32K | Q4_K_M ~13 GB | Apache 2.0 | GGUF, vLLM |
 
-| Modelo | Parametros | Contexto | Licencia | Datos comparativos |
-|---|---|---|---|---|
-| Ternary-Bonsai-2-27B (PTQ1_0) | 26,9B | no disponible (ejemplos con 8192) | no disponible | referencia |
-| Alternativas ternarias / de baja precision | no disponible | no disponible | no disponible | no disponible |
-| Modelos densos de ~7-9B en F16 o Q4 | no disponible | no disponible | no disponible | no disponible |
+La comparativa es aproximada: no hay datos de benchmarks del modelo Ternary-Bonsai que permitan contrastar calidad con estas alternativas. Su ventaja principal es el tamano reducido (5,95 GB para 27B) frente a modelos de parametros similares, que en Q4 ocupan 13 GB o mas. Su desventaja es la ausencia de licencia, idiomas y evaluacion publica, ademas de requerir un fork especifico de llama.cpp.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: el repositorio no especifica licencia, lo que impide determinar si el uso comercial esta permitido. No deberia utilizarse en produccion sin aclarar este punto con el autor y con PrismML como creadores de la arquitectura original.
-- Validacion comunitaria nula: 0 descargas y 0 likes, sin pipeline ni idiomas declarados. No hay evidencia externa de calidad, estabilidad o reproducibilidad.
-- Ausencia total de benchmarks: no hay mediciones que respalden las afirmaciones de "fuerte capacidad de razonamiento" de la model card, especialmente tras una cuantizacion ternaria agresiva de 1,58 bits.
-- Riesgo de degradacion por cuantizacion: la representacion con valores {-1, 0, +1} puede afectar a tareas sensibles a la precision, como matematicas, codigo o generacion estructurada. Se recomienda validar contra la variante F16 antes de confiar en resultados.
-- Riesgo de alucinacion: no documentado por el autor, pero inherente a cualquier modelo generativo; sin evaluaciones publicadas no puede acotarse su magnitud.
-- Idiomas soportados desconocidos: no se declara cobertura multilingue, por lo que el comportamiento en castellano no esta garantizado ni medido.
-- Contexto no especificado oficialmente: el valor de 8192 tokens solo aparece en los ejemplos de uso, no como especificacion del modelo; superar ese valor puede provocar errores o degradacion.
-- Fechas del repositorio anomalas: la fecha de creacion indicada (18 de septiembre de 2026) es posterior a la fecha habitual de publicacion, lo que refuerza la necesidad de verificar la procedencia de los pesos.
-- Binarios precompilados de terceros: llama_bin.tar.gz contiene un fork de llama.cpp de PrismML distribuido como binario; su ejecucion implica confiar en artefactos no auditados, con el riesgo de seguridad que ello conlleva.
-- Requisitos de vision adicionales: el uso multimodal exige descargar y emparejar un proyector mmproj compatible; no se documenta el rendimiento ni la fidelidad de las respuestas visuales.
+- Licencia no especificada: no se puede determinar si el uso comercial esta permitido; en la practica, esto desaconseja su adopcion en produccion sin aclaracion legal.
+- El repositorio no identifica el modelo base ni el desarrollador original, lo que impide verificar la procedencia de los pesos y el cumplimiento de licencias upstream.
+- La cuantizacion ternaria densa (PTQ1_0) puede degradar la calidad de generacion de forma significativa respecto a F16; no hay evaluaciones que cuantifiquen esa perdida.
+- Riesgo de alucinacion: inherente a los LLM y no cuantificado para este modelo; sin benchmarks no se puede estimar su fiabilidad factual.
+- Idiomas soportados desconocidos: no hay garantia de calidad en castellano ni en otros idiomas distintos del ingles.
+- Contexto limitado a 8192 tokens en los ejemplos; no se documenta el maximo nativo ni si soporta extension.
+- Dependencia de un fork no estandar de llama.cpp (PrismML): puede no integrarse con herramientas estandar como Ollama, vLLM o TGI, y el mantenimiento del fork no esta garantizado.
+- El paquete incluye binarios precompilados de terceros; en entornos de produccion conviene auditar su origen y reproducibilidad.
+- La fecha de creacion del repositorio (2026-09-18) y la ausencia de likes o documentacion adicional sugieren un proyecto personal con poca validacion comunitaria.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/IamPradeep/Ternary-Bonsai-2-27B-GGUF-Colab-Prebuilt-GPU
-- PrismML, anuncio de Bonsai-2-27B: https://prismml.com/news/bonsai-2-27b
-- Los resultados de busqueda web devueltos no contienen informacion relevante sobre el modelo (corresponden a foros generales sin relacion), por lo que no se incluyen mas enlaces.
+- Fork PrismML de llama.cpp: no se proporciona URL en la informacion disponible
+- Modelo base Ternary-Bonsai-2-27B: no se proporciona URL en la informacion disponible
+- Paper o blog del modelo original: no disponible
+- Demos: no disponibles

@@ -2,99 +2,100 @@
 
 ## Resumen
 
-Title es un modelo de lenguaje especializado en la generación de títulos y descripciones breves a partir de cualquier pasaje de texto, desarrollado por Desert Ant Labs. Se trata de un fine-tuning del modelo base `ibm-granite/granite-4.0-350m`, con 352.379.904 parámetros totales, orientado a ejecución local en dispositivos Apple (iOS, macOS, tvOS y visionOS) mediante MLX sobre la GPU. Su propósito es producir una tarjeta compuesta por un título factual de 3 a 8 palabras y una descripción de una o dos frases, con un registro deliberadamente sobrio: sin emojis, sin hashtags y sin clickbait.
+Title es un modelo de lenguaje especializado en la generacion de titulos y descripciones cortas para cualquier pasaje de texto. Lo desarrolla Desert Ant Labs y esta afinado a partir de `ibm-granite/granite-4.0-350m`, un modelo base de arquitectura GraniteMoEHybrid. Con 352.379.904 parametros totales y un peso de repositorio de 0,3 GB, esta disenado explicitamente para inferencia en dispositivo (on-device) sobre plataformas Apple (iOS, macOS, tvOS y visionOS) mediante MLX.
 
-El modelo está pensado para el procesamiento de clips de transcripción, aunque el autor indica que también funciona correctamente sobre párrafos de noticias, descripciones de producto y correos electrónicos. La relevancia actual radica en su enfoque on-device: elimina la dependencia de servicios en la nube para una tarea de resumen corto y de alta frecuencia, y está empaquetado como un módulo Swift dentro del SDK `desert-ant-core` (versión 4.3.0 o superior, con el trait `MLX`).
+El modelo resuelve un problema acotado y concreto: dado un fragmento de texto (principalmente transcripciones de audio, aunque tambien parrafos de noticias, descripciones de producto y correos electronicos), devuelve un titulo factual de 3 a 8 palabras y una descripcion de una o dos frases. El registro es deliberadamente sobrio: sin emojis, sin hashtags y sin clickbait. La descripcion identifica el pasaje concreto, no su tema generico.
 
-La licencia es propietaria de tipo source-available (Desert Ant Labs Source-Available License), gratuita para la mayoría de aplicaciones pero con obligación de licencia comercial a escala. El modelo se distribuye en formato MLX con cuantización de 6 bits y un tamaño de repositorio de 0,3 GB, lo que lo hace viable en hardware de consumo Apple sin infraestructura adicional.
+Su relevancia actual radica en el despliegue local: Desert Ant Labs midio que Title escribe texto entre 5,7 y 8,3 veces mas rapido en la GPU mediante MLX que en el Neural Engine a traves de Core ML. Por ello el modelo se distribuye unicamente con pesos MLX cuantizados a 6 bits y requiere la trait `MLX` del paquete Swift para compilar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Granite MoE Hybrid (según tag `granitemoehybrid` del repo); detalles de capas y atención no disponibles |
+| Arquitectura | GraniteMoEHybrid (transformer hibrido con componentes MoE, segun el tag `granitemoehybrid`) |
 | Parametros totales | 352.379.904 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 6 bits (pesos `model.safetensors`); otras cuantizaciones no disponibles |
-| Idiomas soportados | Multilingüe (etiqueta `multilingual`; lista concreta de idiomas no disponible) |
-| Licencia | Desert Ant Labs Source-Available License (gratuita para la mayoría de apps, licencia comercial requerida a escala) |
-| Formato de pesos | safetensors (formato MLX, con `model.safetensors.index.json`, `config.json`, `generation_config.json`, tokenizer Byte-level BPE y `chat_template.jinja`) |
+| Tipos de cuantizacion | 6 bits (pesos distribuidos en `model.safetensors`) |
+| Idiomas soportados | multilingue |
+| Licencia | Desert Ant Labs Source-Available License (`license: other`) |
+| Formato de pesos | safetensors (formato de carpeta MLX con `model.safetensors.index.json`, `config.json`, `generation_config.json`, `tokenizer.json`, `chat_template.jinja`) |
 
 ## Arquitectura y entrenamiento
 
-Title se construye mediante fine-tuning supervisado sobre `ibm-granite/granite-4.0-350m`, un modelo base de la familia Granite 4.0 de IBM. El repositorio etiqueta la arquitectura como `granitemoehybrid`, lo que sugiere una arquitectura híbrida con componentes de mezcla de expertos, aunque la model card no detalla el número de capas, la dimensionalidad, el mecanismo de atención ni el número de expertos. El modelo se distribuye exclusivamente en formato MLX con cuantización de 6 bits, lo que implica que los pesos publicados no son los originales en precisión completa.
+Title parte de `ibm-granite/granite-4.0-350m`, un modelo de la familia Granite 4.0 de IBM. El tag `granitemoehybrid` indica una arquitectura hibrida con mezcla de expertos, si bien no se detalla en la informacion disponible el numero de expertos, los parametros activos por token ni la composicion exacta del bloque hibrido. El modelo se distribuye ya cuantizado a 6 bits para MLX, lo que reduce el peso a los 0,3 GB del repositorio.
 
-El entrenamiento se realizó sobre clips de transcripción, con una instrucción fija que el SDK envía al modelo y contra la que se ajustó el fine-tuning. El modelo aprende a responder con dos líneas etiquetadas (`TITLE:` y `DESC:`), y el autor advierte explícitamente de que debe mantenerse la plantilla de chat tal como se distribuye, ya que una plantilla distinta cambia la tarea que ejecuta el modelo. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO.
+El entrenamiento consiste en un fine-tune especifico de tarea sobre clips de transcripcion, segun indica la model card. El modelo se entrena contra una plantilla de chat concreta (`chat_template.jinja`) y una instruccion fija que le pide responder con dos lineas etiquetadas: `TITLE:` (3-8 palabras, sin puntuacion final) y `DESC:` (1-2 frases). La model card advierte que cambiar la plantilla altera la tarea que realiza el modelo. No se especifican en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-Como innovación técnica destacable, el autor documenta que la inferencia se ejecuta en la GPU mediante MLX en lugar de en la Neural Engine, con una velocidad de escritura entre 5,7 y 8,3 veces superior a la del build Core ML. Esta decisión se justifica porque la Neural Engine está limitada por el ancho de banda de memoria al generar texto corto token a token.
+La innovacion tecnica destacable no esta en la arquitectura sino en el objetivo de despliegue: el modelo se optimiza para generacion de texto corto token a token en GPU Apple via MLX, y se descarta la variante Core ML porque el Neural Engine esta limitado por ancho de banda de memoria en esta carga de trabajo. Segun las mediciones del autor, la version MLX supera a la de Core ML en tiempo hasta el primer token, tokens por segundo, tiempo de carga y uso de memoria.
 
 ## Capacidades
 
-- Generación de títulos factuales de 3 a 8 palabras sin puntuación final, y descripciones de una o dos frases, a partir de un pasaje de texto.
-- Procesamiento por lotes de clips: la API `cards(for:)` devuelve una tarjeta por clip, alineada por índice con la lista de entrada.
-- Generación tolerante a formato: el SDK analiza la respuesta de forma tolerante y, si no encuentra etiquetas, toma la primera línea como título.
-- Control de longitud mediante `maxTokens` (96 tokens por defecto) para evitar generaciones sin fin en entradas atípicas.
-- Capacidad multilingüe según la etiqueta del repositorio, aunque la lista concreta de idiomas no está disponible.
-- Ejecución on-device en iOS, macOS, tvOS y visionOS mediante MLX sobre GPU.
-- Gestión de ciclo de vida en iOS mediante `suspend()` y `resume()` para evitar cierres de la app al pasar a segundo plano.
-- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo thinking.
+- Generacion de titulos factuales de 3 a 8 palabras para un pasaje de texto.
+- Generacion de descripciones de una o dos frases centradas en el contenido concreto del pasaje.
+- Procesamiento por lotes de clips: la API `cards(for:)` devuelve una tarjeta por clip, alineada por indice con la entrada.
+- Funcionamiento multilingue (segun el tag de idioma del repositorio).
+- Inferencia en dispositivo en iOS, macOS, tvOS y visionOS mediante MLX sobre GPU Apple.
+- Soporte de limite de generacion mediante `maxTokens` (96 tokens por defecto) para evitar generaciones sin fin en entradas atipicas.
+- Gestion de ciclo de vida en iOS mediante `suspend()` y `resume()` para liberar la GPU al pasar a segundo plano.
+- No dispone de tool calling, function calling, capacidades de agente, vision, audio ni modo de razonamiento explicito segun la informacion disponible.
 
 ## Casos de uso
 
-- Titulación automática de clips de transcripción: el modelo recibe el texto de un clip y devuelve una tarjeta con título y descripción. Es su dominio de entrenamiento principal y donde el autor reporta mayor precisión; se integraría llamando a `cards(for:)` sobre la lista de clips.
-- Resumen de párrafos de noticias en lectores RSS o agregadores: el modelo genera un título factual y una descripción de una o dos frases para cada artículo, con un registro sobrio sin clickbait, adecuado para interfaces editoriales.
-- Generación de metadatos para descripciones de producto en apps de catálogo: a partir del texto de la ficha, el modelo produce un título corto y una descripción de una o dos frases que identifica ese producto concreto, no su categoría.
-- Previsualización de correos electrónicos en clientes de correo: el modelo resume el cuerpo del mensaje en una tarjeta breve que puede mostrarse en la lista de la bandeja de entrada, ejecutándose en el dispositivo sin enviar contenido a servidores externos.
-- Indexación y etiquetado local de notas o documentos personales: en una app de notas en macOS o iOS, el modelo genera títulos y descripciones para cada nota, facilitando la búsqueda y la organización sin salir del dispositivo.
-- Accesibilidad y lectura rápida: la generación de descripciones de una o dos frases permite ofrecer resúmenes breves de pasajes largos en apps de lectura, con la ventaja de que todo el procesamiento ocurre en local y no requiere conectividad.
-- Procesamiento por lotes en segundo plano controlado: en macOS o tvOS, donde no aplican las restricciones de GPU en segundo plano de iOS, el modelo puede procesar colecciones de clips de forma secuencial reutilizando una única instancia de `Titles`.
+- Titulado automatico de transcripciones de audio: el modelo esta afinado sobre clips de transcripcion, por lo que es el escenario de maxima precision. Se le pasa el texto transcrito y devuelve un titulo corto y una descripcion para indexar o mostrar en una app de notas de voz.
+- Generacion de tarjetas para podcasts o videos: la API `cards(for:)` permite recorrer una lista de fragmentos y obtener titulo y descripcion por segmento, manteniendo el orden de entrada, lo que encaja en un pipeline de publicacion de episodios.
+- Resumen de parrafos de noticias en lectores RSS: la model card indica buen rendimiento en parrafos periodisticos, de modo que puede generar el titular y el sumario de cada articulo en el propio dispositivo sin enviar contenido a un servidor.
+- Descripciones de producto en catalogos de comercio electronico: para fichas con texto descriptivo, el modelo produce una descripcion breve y sobria reutilizable en listados o metadatos SEO, sin clickbait.
+- Previsualizacion de correos en clientes de email: dado el cuerpo de un mensaje, generar un asunto o una linea de resumen local, preservando la privacidad del contenido al no salir del dispositivo.
+- Procesamiento por lotes de bibliotecas personales en macOS: al ejecutarse en la GPU del Mac mediante MLX y cargar solo 0,3 GB de pesos, permite etiquetar grandes volumenes de documentos o notas sin coste de API.
+- Integracion en apps Swift para Apple: el paquete `desert-ant-core` con la trait `MLX` expone el tipo `Titles` como `actor`, lo que permite llamarlo desde varias tareas serializando las generaciones y evitando condiciones de carrera sobre la GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor únicamente reporta una comparación interna de velocidad: Title escribe texto entre 5,7 y 8,3 veces más rápido en la GPU mediante MLX que en la Neural Engine con el build Core ML, y este último también pierde en tiempo hasta el primer token, tokens por segundo, tiempo de carga y uso de memoria. No se proporcionan valores absolutos de latencia ni de throughput.
+No se han publicado resultados de benchmarks en la informacion disponible.
+
+La unica metrica de rendimiento aportada por el autor es comparativa interna entre backends: Title escribe texto entre 5,7 y 8,3 veces mas rapido en la GPU con MLX que en el Neural Engine con Core ML. No se detallan tokens por segundo absolutos ni latencias concretas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 0,3 GB con pesos cuantizados a 6 bits, por lo que la huella de memoria es reducida y apta para dispositivos móviles.
-- Plataformas soportadas: exclusivamente Apple silicon (iOS, macOS, tvOS, visionOS). No existe build para Android, Linux, Windows, navegador ni Node.
-- GPU recomendadas: cualquier GPU integrada en chips Apple silicon compatible con MLX; no se especifican modelos concretos de chip.
-- Cabe en hardware de consumo: sí, por diseño; el modelo está pensado para ejecutarse en iPhone, iPad y Mac.
-- Opciones de despliegue: SDK Swift `desert-ant-core` (versión 4.3.0 o superior) con el trait `MLX`, añadiendo el producto `Title` al target. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: el autor indica que la carga del modelo es lenta y la escritura de la tarjeta rápida, y recomienda crear una instancia de `Titles` y reutilizarla. No se publican cifras absolutas. Las generaciones en paralelo no son más rápidas y en móvil añaden calor y provocan throttling.
+- VRAM/memoria estimada: el repositorio pesa 0,3 GB con pesos a 6 bits, por lo que el modelo cabe holgadamente en la memoria unificada de cualquier dispositivo Apple silicon moderno.
+- Plataformas soportadas: exclusivamente Apple silicon (iOS, macOS, tvOS, visionOS). No hay build para Android, Linux, Windows, navegador ni Node.
+- GPU: se ejecuta en la GPU Apple a traves de MLX; el autor descarta el Neural Engine por limitaciones de ancho de banda de memoria.
+- GPU consumer: si, en cualquier Mac con chip Apple silicon y en iPhone/iPad compatibles con MLX.
+- Opciones de despliegue: paquete Swift `desert-ant-core` (version 5.0.0 o superior) con la trait `MLX` y el producto `Title`. No se mencionan vLLM, llama.cpp, Ollama ni TGI; el modelo no se distribuye en GGUF.
+- Latencia y throughput: no disponibles en terminos absolutos; solo la comparativa relativa 5,7-8,3x frente a Core ML. La carga del modelo es lenta en comparacion con la generacion, por lo que se recomienda instanciar un unico objeto `Titles` y reutilizarlo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Plataformas |
 |---|---|---|---|---|---|
-| Title (desert-ant-labs) | 352.379.904 | no disponible | MLX, 6 bits, solo Apple silicon | Source-available con licencia comercial a escala | Hugging Face, 32.040 descargas |
-| ibm-granite/granite-4.0-350m (modelo base) | no disponible en la información proporcionada | no disponible | safetensors estándar | no disponible en la información proporcionada | Hugging Face |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+| desert-ant-labs/title | 352.379.904 | no disponible | Titulos y descripciones on-device | Source-Available (comercial a escala) | Apple silicon (MLX) |
+| ibm-granite/granite-4.0-350m | no disponible | no disponible | Modelo base generalista | no disponible | Multiples |
+| Modelos de resumen genericos de ~350M | no disponible | no disponible | Resumen abstractivo | variable | Multiples |
 
-No se dispone de información sobre otros modelos comparables de titulación o resumen on-device en la documentación facilitada.
+La comparacion directa con alternativas de la misma categoria no esta disponible en la informacion proporcionada. El unico punto de referencia documentado es el modelo base `ibm-granite/granite-4.0-350m`, del que Title hereda la arquitectura y sobre el que aplica un fine-tune de tarea y una cuantizacion a 6 bits para MLX.
 
 ## Limitaciones y advertencias
 
-- El modelo a veces abre la descripción con una frase comodín que su instrucción prohíbe; el autor recomienda revisar cada tarjeta antes de mostrarla a un usuario.
-- Puede equivocarse en detalles sobre prosa general; es más preciso en clips de transcripción, párrafos de noticias, descripciones de producto y correos electrónicos.
-- En entradas atípicas puede seguir generando sin fin; es necesario acotar cada ejecución con `maxTokens` (96 por defecto).
-- El modelo puede desviarse del formato de dos líneas etiquetadas, por lo que el parseo de la respuesta debe ser tolerante.
-- Debe mantenerse la plantilla de chat tal como se distribuye; una plantilla distinta altera la tarea que ejecuta el modelo.
-- En iOS, es obligatorio llamar a `suspend()` antes de pasar a segundo plano y a `resume()` al volver, ya que iOS revoca el acceso a la GPU y MLX provoca el cierre de la app si hay una generación en curso.
-- La instancia `Titles` es un `actor` y serializa las llamadas; no es seguro conducir MLX desde varias tareas a la vez.
-- Restricción de plataforma: solo Apple silicon. No hay build para Android, Linux, Windows, navegador ni Node.
-- Licencia: gratuita para la mayoría de apps, pero se requiere licencia comercial a escala según los términos de Desert Ant Labs; conviene revisar el enlace de licencia antes de un despliegue comercial.
-- El modelo no descarga sus pesos automáticamente; es responsabilidad del integrador descargarlos desde Hugging Face y apuntar el inicializador a la carpeta del modelo.
-- No se documentan sesgos específicos ni evaluación de sesgos en la información disponible.
+- El modelo a veces abre la descripcion con una frase estereotipada que su instruccion prohibe; el autor recomienda revisar cada tarjeta antes de mostrarla a un usuario.
+- Puede equivocarse en detalles sobre prosa general. Es mas preciso en transcripciones, parrafos de noticias, descripciones de producto y correos electronicos.
+- Con entradas atipicas puede seguir generando indefinidamente; hay que fijar `maxTokens` (96 por defecto) como red de seguridad.
+- El modelo puede desviarse del formato `TITLE:`/`DESC:`; el parseo de la respuesta debe ser tolerante (el SDK toma la primera linea como titulo si no hay etiquetas).
+- No se debe modificar la plantilla de chat: cambiarla altera la tarea para la que fue entrenado.
+- Licencia source-available: es gratuita para la mayoria de apps, pero requiere licencia comercial a escala. Hay que revisar los terminos completos antes de un uso comercial.
+- Dependencia exclusiva de Apple silicon y MLX: no hay despliegue posible en Android, Linux, Windows, navegador ni Node.
+- En iOS, es obligatorio llamar a `suspend()` antes de pasar a segundo plano y a `resume()` al volver; de lo contrario, MLX puede provocar el cierre de la app si hay una generacion en curso.
+- El objeto `Titles` es un `actor` y serializa las llamadas: las generaciones en paralelo no son mas rapidas y, en movil, anaden calor y provocan throttling.
+- No se dispone de informacion sobre sesgos conocidos, evaluaciones de seguridad ni cobertura detallada de idiomas mas alla del tag multilingue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/title
-- Pesos v0.1.0: https://huggingface.co/desert-ant-labs/title/tree/v0.1.0
+- Pesos version v0.1.0: https://huggingface.co/desert-ant-labs/title/tree/v0.1.0
+- Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
+- Documentacion del SDK (requisitos Swift): https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Documentacion del modelo en el repositorio: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/title.md
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-350m
-- SDK Desert Ant Core (Swift): https://github.com/Desert-Ant-Labs/desert-ant-core
-- Requisitos del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
-- Documentación de origen del modelo: https://github.com/Desert-Ant-Labs/desert-ant-core (archivo `docs/models/title.md`)
 - Licencia: https://license.desertant.com/
 - Contacto de licencias: licensing@desertant.com
-- Avisos de terceros: https://huggingface.co/desert-ant-labs/title (archivo `THIRD_PARTY_NOTICES.md`)
+- Avisos de terceros: https://huggingface.co/desert-ant-labs/title/blob/main/THIRD_PARTY_NOTICES.md

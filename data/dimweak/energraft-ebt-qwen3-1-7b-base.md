@@ -2,101 +2,98 @@
 
 ## Resumen
 
-Energraft-EBT-Qwen3-1.7B-Base es un modelo de lenguaje basado en energia (energy-based model, EBT) desarrollado por el usuario dimweak a partir del modelo base Qwen3-1.7B-Base de Alibaba. En lugar de la generacion autorregresiva convencional con softmax, el modelo genera cada token mediante una unica actualizacion de gradiente sobre una funcion de energia, partiendo de un candidato aleatorio inicializado con logits gaussianos (sigma=1). Esta aproximacion reformula la decodificacion como un problema de optimizacion y constituye una linea de investigacion alternativa a los transformers clasicos.
+Energraft-EBT-Qwen3-1.7B-Base es un modelo de lenguaje basado en energia (energy-based model, EBM) desarrollado por el usuario dimweak a partir de Qwen3-1.7B-Base. En lugar de generar el siguiente token mediante un unico pase forward y muestreo softmax convencional, el modelo parte de un candidato aleatorio (logits gaussianos con sigma=1) y lo refina mediante gradientes descendentes sobre una funcion de energia aprendida. Esta formulacion convierte la decodificacion en un proceso iterativo de optimizacion, con dos actualizaciones por token por defecto y una opcion de una sola actualizacion.
 
-El modelo conserva el backbone Transformer de Qwen3 con 1.720.574.976 parametros y 28 capas, al que se anade una cabeza de energia (MLP residual 2048 -> 256 -> 1). Fue adaptado sobre 168 millones de posiciones de prediccion supervisada, cubriendo ingles, chino, codigo y matematicas, mediante destilacion de distribucion sobre el vocabulario completo con el backbone y la cabeza optimizados conjuntamente y los embeddings atados congelados.
+El modelo conserva el backbone Transformer de 1,7 mil millones de parametros y 28 capas de Qwen3, al que se anade una cabeza de energia (MLP residual 2048 -> 256 -> 1) entrenada conjuntamente con el backbone. La adaptacion se realizo sobre 176 millones de posiciones de prediccion supervisada en ingles, chino, codigo y matematicas, combinando texto de corpus con prefijos generados por profesor y alumno y destilacion de distribucion sobre todo el vocabulario.
 
-Su relevancia es principalmente experimental: explora si la decodificacion por gradiente de energia puede competir con la generacion estandar en modelos de escala pequena. La version publicada es v0.2, con pesos en FP32, licencia Apache 2.0 y soporte para ingles y chino. El modelo tiene un uso muy limitado (0 descargas en el momento de la consulta) y esta orientado a investigacion mas que a produccion.
+La relevancia de esta publicacion es experimental: explora una alternativa al paradigma autorregresivo estandar (native-AR) manteniendo un tamano reducido que cabe en GPU de consumo. Se distribuye bajo licencia Apache 2.0 con pesos FP32, cabeza de energia, tokenizer y codigo de inferencia propios, lo que facilita su reproduccion y estudio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (backbone Qwen3) con cabeza de energia MLP residual 2048 -> 256 -> 1; modelo de lenguaje basado en energia |
-| Parametros totales | 1.720.574.976 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder (Qwen3) con cabeza de energia EBM; MLP residual 2048 -> 256 -> 1 |
+| Parametros totales | 1.720.574.976 (1,7B) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (release en FP32; no se documentan versiones GGUF, AWQ ni GPTQ) |
+| Tipos de cuantizacion | no disponible (la release incluye pesos FP32) |
 | Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (backbone FP32), incluye cabeza de energia, tokenizer y codigo de inferencia |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (backbone FP32, cabeza de energia, tokenizer e inferencia incluidos) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del backbone Transformer de Qwen3-1.7B-Base (28 capas, 1.7B parametros) y le anade una cabeza de energia que proyecta el estado oculto de 2048 dimensiones a traves de una capa intermedia de 256 hasta un escalar, con conexion residual. La generacion se realiza mediante decodificacion de un solo paso por gradiente de energia: para cada token se inicializa un candidato con logits gaussianos (sigma=1) y se aplica una unica actualizacion de gradiente sobre la funcion de energia para obtener la prediccion final, en lugar del muestreo softmax habitual. Esta formulacion se inspira en el trabajo Energy-Based Transformers (EBT).
+El modelo mantiene el backbone Transformer de Qwen3-1.7B-Base (28 capas) y le superpone una cabeza de energia que proyecta el estado oculto a un escalar mediante un MLP residual de dos capas (2048 -> 256 -> 1). La generacion no usa softmax directo: se inicializa un candidato de logits con ruido gaussiano (sigma=1) y se refina mediante gradientes de la energia. Por defecto se aplican dos actualizaciones por token; la primera es unitaria y la segunda incorpora una relajacion residual con beta=0.05. Tambien se ofrece decodificacion de una sola actualizacion (`inference_steps=1` o `--steps 1`).
 
-El entrenamiento se realizo sobre 168 millones de posiciones de prediccion supervisada, combinando texto de corpus con prefijos generados por el profesor y por el propio estudiante, y empleando destilacion de distribucion sobre el vocabulario completo. El backbone Transformer y la cabeza de energia se optimizaron de forma conjunta, mientras que los embeddings de tokens atados permanecieron congelados. Los datos cubren ingles, chino, codigo y matematicas. No se especifica en la informacion disponible si se aplicaron tecnicas de RLHF o DPO, ni el numero total de tokens de entrenamiento ni la composicion detallada del dataset.
+El entrenamiento cubre 176 millones de posiciones de prediccion supervisada en ingles, chino, codigo y matematicas. Combina texto de corpus con prefijos generados por el profesor y por el alumno, usando destilacion de distribucion sobre todo el vocabulario. La etapa final de adaptacion entrena correcciones de candidatos intermedios con destilacion de la primera actualizacion y regularizacion de la distribucion autorregresiva nativa. El backbone y la cabeza de energia se optimizan conjuntamente, mientras que los embeddings de tokens atados permanecen congelados. La release corresponde a la version v0.3.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva mediante decodificacion por gradiente de energia (un paso por token).
-- Razonamiento basico y respuesta a preguntas de sentido comun (evaluado en PIQA, ARC, HellaSwag, WinoGrande).
-- Razonamiento matematico de varios pasos (evaluado en GSM8K con hasta 512 tokens generados).
-- Capacidades en chino (evaluado en C-Eval con 5 shots).
-- Generacion de codigo, segun la composicion del entrenamiento (ingles, chino, codigo y matematicas).
-- Soporte multilingue limitado a ingles y chino.
-- No se documenta soporte de tool calling, function calling, uso de agentes, vision, audio ni modo thinking en la informacion disponible.
+- Generacion de texto autorregresiva mediante refinamiento por gradiente de energia, con dos modos de decodificacion (una y dos actualizaciones por token).
+- Razonamiento y conocimiento general evaluado en tareas de sentido comun (PIQA, HellaSwag, WinoGrande, ARC).
+- Matematicas: resolucion de problemas de varios pasos (GSM8K).
+- Codigo: el entrenamiento incluye datos de codigo, aunque no se publican benchmarks especificos de generacion de codigo.
+- Multilingue limitado a ingles y chino (C-Eval evaluado en chino).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo thinking.
 
 ## Casos de uso
 
-- Investigacion en modelos de lenguaje basados en energia: el modelo sirve como banco de pruebas para estudiar la decodificacion por gradiente frente a la decodificacion softmax, comparando calidad y estabilidad en tareas controladas.
-- Experimentos academicos de destilacion: permite analizar el efecto de la destilacion de distribucion sobre vocabulario completo con embeddings congelados en un modelo de 1.7B parametros.
-- Evaluacion comparativa en benchmarks estandar: utilizable con lm-evaluation-harness v0.4.9.2 mediante el adaptador EBT incluido, para replicar los resultados publicados de PIQA, ARC, HellaSwag, WinoGrande, C-Eval y GSM8K.
-- Generacion de texto en ingles y chino para prototipos: adecuado para entornos de prueba donde se requiera un modelo pequeno (1.7B) ejecutable en una sola GPU con pesos FP32.
-- Estudio de robustez y calibracion: la inicializacion gaussiana de candidatos permite investigar la sensibilidad de la generacion a la semilla y a la varianza inicial (sigma=1) en tareas de continuacion de texto.
-- Docencia y divulgacion: como ejemplo didactico de implementacion de un EBM sobre un backbone Transformer conocido, con codigo de inferencia incluido en el repositorio.
+- Investigacion en modelos basados en energia: el modelo sirve como banco de pruebas reproducible para estudiar decodificacion por gradiente de energia frente a la autorregresiva estandar, gracias a que incluye codigo de inferencia y pesos FP32.
+- Experimentos de decodificacion controlada: la posibilidad de elegir entre una y dos actualizaciones por token permite analizar el compromiso entre calidad y coste computacional en tareas de razonamiento (GSM8K) y sentido comun.
+- Generacion de texto en ingles y chino: adecuado para prototipos de generacion conversacional en ambos idiomas, con las limitaciones propias de un modelo de 1,7B.
+- Razonamiento matematico basico: con un 68,99 de exact match flexible en GSM8K (5-shot), puede emplearse en entornos educativos o de demostracion para resolver problemas aritmeticos de varios pasos.
+- Evaluacion comparativa de tecnicas EBM: util para replicar los resultados publicados con lm-evaluation-harness v0.4.9.2 y un adaptador EBT, y contrastarlos con el modelo base Qwen3-1.7B-Base.
+- Fine-tuning academico: al ser Apache 2.0 y de tamano reducido, sirve como punto de partida para experimentos de adaptacion con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, evaluados con lm-evaluation-harness v0.4.9.2, inferencia FP32, inicializacion gaussiana sigma=1 y semilla 1234. Las puntuaciones son porcentajes.
+Resultados segun lm-evaluation-harness v0.4.9.2 con adaptador EBT, sobre 19.360 ejemplos, inferencia FP32, inicializacion gaussiana sigma=1 y semilla 1234. GSM8K con decodificacion greedy y maximo de 512 tokens generados.
 
-| Benchmark | Shots | Metrica | Puntuacion |
-|---|---:|---|---:|
-| PIQA | 0 | Accuracy / accuracy normalizada | 69,86 / 72,20 |
-| ARC-Easy | 0 | Accuracy normalizada | 64,86 |
-| ARC-Challenge | 0 | Accuracy normalizada | 39,68 |
-| HellaSwag | 0 | Accuracy normalizada | 59,33 |
-| WinoGrande | 0 | Accuracy | 61,72 |
-| C-Eval | 5 | Accuracy | 64,12 |
-| GSM8K | 5 | Exact match estricto | 61,71 |
-| GSM8K | 5 | Exact match con extraccion flexible | 68,84 |
+| Benchmark | Shots | Metrica | 1 actualizacion | 2 actualizaciones (por defecto) |
+|---|---:|---|---:|---:|
+| PIQA | 0 | Accuracy / normalized accuracy | 70,24 / 72,20 | 70,40 / 71,93 |
+| ARC-Easy | 0 | Normalized accuracy | 65,45 | 64,73 |
+| ARC-Challenge | 0 | Normalized accuracy | 39,42 | 39,16 |
+| HellaSwag | 0 | Normalized accuracy | 59,40 | 59,59 |
+| WinoGrande | 0 | Accuracy | 62,75 | 63,54 |
+| C-Eval | 5 | Accuracy | 64,19 | 64,04 |
+| GSM8K | 5 | Exact match, strict | 61,49 | 58,07 |
+| GSM8K | 5 | Exact match, extraccion flexible | 68,23 | 68,99 |
 
-La evaluacion cubre 19.360 ejemplos, incluyendo las 52 asignaturas de validacion de C-Eval y el split de test completo de GSM8K. GSM8K se evaluo con decodificacion greedy y un maximo de 512 tokens generados. No se han publicado comparaciones directas con otros modelos en la informacion disponible.
+No se han publicado en la informacion disponible resultados comparativos directos frente a Qwen3-1.7B-Base ni frente a otros modelos de tamano similar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos se distribuyen en FP32 (1,72B parametros, aproximadamente 6,9 GB solo en pesos) mas el estado de activaciones; se estima un minimo de 8-10 GB de VRAM para inferencia en FP32. No se documentan versiones cuantizadas, por lo que no hay cifras para FP16, INT8 o INT4.
-- GPU recomendadas: tarjetas con al menos 12-16 GB de VRAM para margen comodo, como RTX 4080, RTX 4090, A100 o H100. El modelo cabe en GPU de consumo con 12 GB o mas si se reduce el uso de memoria de activaciones.
-- Cabe en GPU de consumo: si, en modelos con 12 GB o mas de VRAM (por ejemplo RTX 3060 de 12 GB, RTX 4070 Ti, RTX 4090), siempre que se ejecute en FP32 o se convierta manualmente a FP16.
-- Opciones de despliegue: el autor proporciona codigo de inferencia propio (clase `EnergraftEBT` del paquete `energraft`) y un script `generate.py`. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores estandar, ya que la decodificacion por gradiente de energia no sigue el flujo autoregresivo convencional.
-- Latencia y throughput estimados: no disponibles. La decodificacion requiere un paso de gradiente por token, lo que anade coste computacional frente a la decodificacion softmax convencional, pero no se publican mediciones.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 1,72B parametros en FP32 los pesos ocupan aproximadamente 6,9 GB, a lo que hay que sumar el estado de activaciones y la cabeza de energia.
+- GPU recomendadas: no especificadas por el autor. Por tamano, una GPU con 12-16 GB de VRAM (por ejemplo RTX 4080/4090) deberia poder alojar los pesos FP32; para cuantizaciones no se documentan formatos.
+- Cabe en GPU de consumo: previsiblemente si, dado el tamano de 1,7B, aunque no hay cifras oficiales de consumo de memoria.
+- Opciones de despliegue: el autor proporciona codigo propio (`energraft`, clase `EnergraftEBT`) y un CLI `generate.py`; requiere torch 2.8.0, transformers 4.57.1, huggingface_hub >=0.34,<1.0 y safetensors >=0.6.2. No se documenta integracion con vLLM, llama.cpp, Ollama ni TGI, y la decodificacion por gradiente de energia dificulta su uso en estos motores estandar.
+- Latencia y throughput: no disponibles. Cabe esperar un coste mayor que la decodificacion autorregresiva convencional al requerir dos pases de refinamiento por token por defecto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Energraft-EBT-Qwen3-1.7B-Base | 1,72B | no disponible | Apache 2.0 | EBM con decodificacion por gradiente; en/zh |
-| Qwen3-1.7B-Base | 1,7B (aprox.) | no disponible en la informacion proporcionada | Apache 2.0 | Modelo base original, decodificacion softmax estandar |
-| Energy-Based Transformers (EBT, referencia de alexiglad) | no disponible | no disponible | no disponible | Inspiracion metodologica del modelo; no es un modelo comparable directo |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Energraft-EBT-Qwen3-1.7B-Base | 1,72B | no disponible | Apache 2.0 | EBM con refinamiento por gradiente (2 actualizaciones/token) | Hugging Face, codigo propio |
+| Qwen3-1.7B-Base | 1,7B | no disponible en esta ficha | Apache 2.0 | Transformer autorregresivo estandar | Hugging Face, ecosistema amplio |
+| EBT (Energy-Based Transformers, referencia de alexiglad) | no disponible | no disponible | no disponible | EBM de referencia que inspiro el modelo | GitHub |
 
-No se dispone de datos de benchmarks del modelo base Qwen3-1.7B-Base en la informacion proporcionada para establecer una comparacion cuantitativa directa. La comparacion con otros modelos de 1-2B parametros (por ejemplo, variantes de Llama 3.2 o Gemma 2) no esta disponible en los datos facilitados.
+La comparacion cuantitativa de rendimiento con Qwen3-1.7B-Base no esta disponible en la informacion proporcionada; el autor no publica una tabla cruzada con el modelo base.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con 0 descargas y 1 like en el momento de la consulta; no hay evidencia de uso en produccion ni validacion independiente.
-- La decodificacion por gradiente de energia no es compatible con los motores de inferencia estandar (vLLM, llama.cpp, TGI), lo que limita su integracion en pipelines convencionales.
-- Solo soporta ingles y chino; no se documenta cobertura de otras lenguas, incluido el castellano.
-- Longitud de contexto no documentada; no se puede garantizar el manejo de conversaciones o documentos largos.
-- Riesgo de alucinacion inherente a los modelos de 1.7B parametros, agravado por la novedad del metodo de decodificacion y la ausencia de evaluaciones de fidelidad factual.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad; el modelo base Qwen3 puede arrastrar sesgos de sus datos de entrenamiento.
-- Los resultados de GSM8K y C-Eval dependen de la configuracion de evaluacion (semilla 1234, sigma=1, FP32); la reproducibilidad con otras semillas o en FP16 no esta garantizada.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de pruebas de robustez y seguridad desaconseja su despliegue en produccion sin evaluacion adicional.
-- El repositorio ocupa 12,5 GB, en parte por los pesos en FP32, lo que encarece el almacenamiento y la descarga.
+- Modelo experimental (v0.3): la decodificacion por gradiente de energia no es un paradigma consolidado en produccion y puede presentar comportamientos distintos a los de un LLM autorregresivo convencional.
+- Idiomas limitados a ingles y chino; no se documenta soporte de castellano ni de otros idiomas.
+- Longitud de contexto no especificada; no se debe asumir la ventana de Qwen3 sin verificacion.
+- Riesgo de alucinacion inherente a un modelo de 1,7B; los benchmarks de sentido comun (ARC-Challenge 39,16-39,42) indican capacidad limitada en razonamiento complejo.
+- Mayor coste de inferencia por token al requerir por defecto dos actualizaciones de refinamiento; no hay datos de latencia publicados.
+- No se documentan capacidades de tool calling, agentes ni vision; no debe asumirse su disponibilidad.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; el codigo de inferencia es propio y requiere versiones especificas de dependencias (torch 2.8.0, transformers 4.57.1).
+- El repo ocupa 18,2 GB por los pesos FP32, lo que complica su despliegue en entornos con almacenamiento limitado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dimweak/Energraft-EBT-Qwen3-1.7B-Base
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio Qwen3: https://github.com/QwenLM/Qwen3
-- Energy-Based Transformers (inspiracion): https://github.com/alexiglad/EBT
-- lm-evaluation-harness v0.4.9.2: https://github.com/EleutherAI/lm-evaluation-harness
+- Repositorio de referencia Energy-Based Transformers: https://github.com/alexiglad/EBT

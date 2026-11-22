@@ -2,103 +2,95 @@
 
 ## Resumen
 
-Evidence-RL-9B-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo hhj-ai/Evidence-RL-9B. No se trata por tanto de un modelo entrenado por el autor del repositorio, sino de una distribucion optimizada para inferencia local de un modelo ajeno: mradermacher se limita a convertir los pesos originales (safetensors) a GGUF y a producir distintas variantes de cuantizacion. El modelo base es un VLM (vision-language model) de aproximadamente 8.950 millones de parametros, con licencia Apache 2.0 y entrenado con tecnicas de aprendizaje por refuerzo (GRPO) segun los metadatos declarados.
+Evidence-RL-9B es un modelo de lenguaje y visión (VLM) de 8.950 millones de parámetros desarrollado por hhj-ai y publicado bajo licencia Apache 2.0. El modelo se construye sobre un transformer causal multimodal y se especializa en el razonamiento visual basado en evidencia: grounding visual, percepción de grano fino, conteo de objetos, razonamiento espacial y detección de alucinaciones mediante contraste contrafactual. Su post-entrenamiento se basa en aprendizaje por refuerzo (GRPO), lo que lo orienta a producir respuestas ancladas a regiones concretas de la imagen en lugar de descripciones genéricas.
 
-La relevancia de este repositorio es fundamentalmente practica: el modelo original en safetensors ocupa un espacio considerable y requiere GPUs con suficiente VRAM, mientras que las versiones GGUF permiten ejecutarlo en hardware de consumo mediante llama.cpp, Ollama o LM Studio. Ademas, el repositorio incluye los ficheros `mmproj` necesarios para habilitar la parte de vision, algo imprescindible en modelos multimodales y que no siempre se distribuye junto a las cuantizaciones.
+La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El repositorio incluye tanto los pesos cuantizados del modelo de lenguaje (de Q2_K a f16) como los proyectores multimodales en Q8_0 y f16, necesarios para procesar imágenes.
 
-Se trata de un repositorio muy reciente (creado en septiembre de 2026) y con un historial de uso nulo en el momento de redactar esta ficha (0 descargas, 0 likes). La model card es la plantilla automatica habitual de mradermacher y no aporta informacion sobre arquitectura interna, dataset de entrenamiento, longitud de contexto ni resultados de benchmarks, por lo que buena parte de los apartados siguientes quedan marcados como "no disponible".
+Su relevancia actual radica en que aborda uno de los problemas más persistentes de los VLM: la alucinación visual y la falta de localización precisa. Al estar entrenado con señales de refuerzo centradas en la evidencia visual, resulta adecuado para tareas donde no basta con describir una imagen, sino que hay que justificar qué región concreta sustenta cada afirmación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (los tags indican modelo multimodal causal de tipo vision-language con entrenamiento por refuerzo) |
-| Parametros totales | 8.953.803.264 (aprox. 8,95 mil millones), dato procedente de los safetensors del modelo base |
+| Arquitectura | Transformer causal multimodal (vision-language model); detalles internos de la arquitectura no disponibles |
+| Parametros totales | 8.953.803.264 (8,95 mil millones) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mas mmproj en f16 y Q8_0 para la torre de vision |
+| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; proyectores multimodales mmproj-Q8_0 y mmproj-f16. Existen cuantizaciones ponderadas/imatrix en el repo i1-GGUF |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el modelo base esta en safetensors) |
+| Formato de pesos | GGUF (safetensors en el modelo base hhj-ai/Evidence-RL-9B) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base. Los tags del repositorio (`multimodal`, `vlm`, `vision-language`, `causal-inference`) permiten afirmar que se trata de un modelo causal con capacidad de procesar imagenes ademas de texto, y los tags `reinforcement-learning` y `grpo` indican que el modelo base fue sometido a un proceso de ajuste mediante Group Relative Policy Optimization, una variante de RLHF/RLVR popularizada por DeepSeek. No consta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases previas de SFT o DPO.
+El modelo es un VLM construido sobre un transformer causal con un proyector multimodal que inyecta características visuales en el flujo de tokens de texto. El post-entrenamiento emplea aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization), una técnica que optimiza la política del modelo comparando grupos de respuestas generadas frente a una recompensa. Según las etiquetas del autor, esa recompensa está orientada a evidencia visual, grounding, razonamiento contrafactual y reducción de alucinaciones, además de percepción de grano fino, conteo y razonamiento espacial.
 
-Tampoco se especifica la torre de vision empleada, la resolucion de imagen soportada, ni la estrategia de proyeccion multimodal. El pipeline declarado en Hugging Face es `reinforcement-learning`, lo que es coherente con el sufijo "RL" del nombre del modelo base (Evidence-RL-9B), pero no aporta detalles tecnicos adicionales. En el lado de la cuantizacion, el repositorio sigue el flujo habitual de mradermacher: conversion desde el formato Hugging Face, cuantizacion estatica (sin imatrix) y publicacion de los ficheros `mmproj` por separado para no romper la parte multimodal.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases SFT/DPO previas ni innovaciones de decodificación (por ejemplo, decodificación especulativa o atención lineal). El modelo base es hhj-ai/Evidence-RL-9B, y esta ficha corresponde únicamente a su conversión a GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con formato compatible con plantillas de chat (`conversational` en los tags).
-- Procesamiento de imagenes: el modelo es un VLM, por lo que admite entradas de vision junto a texto. Requiere cargar el fichero `mmproj` correspondiente para funcionar.
-- Razonamiento orientado a evidencia: el nombre del modelo base ("Evidence-RL") sugiere entrenamiento con recompensas centradas en el uso y evaluacion de evidencia, aunque no hay documentacion que lo confirme.
-- Inferencia causal: el tag `causal-inference` aparece explicitamente en los metadatos.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al ingles segun el campo `language`.
-- Modos especiales (thinking, audio, etc.): no disponible.
+- Generación de texto conversacional multimodal: responde a preguntas sobre imágenes en formato de diálogo multi-turno.
+- Grounding visual: localiza objetos y regiones concretas de la imagen (object-region) como soporte de sus afirmaciones.
+- Razonamiento basado en evidencia visual: justifica respuestas citando la evidencia observable en la imagen.
+- Razonamiento contrafactual: evalúa escenarios hipotéticos sobre el contenido visual para detectar inconsistencias.
+- Mitigación de alucinaciones: entrenamiento explícito para reducir afirmaciones no sustentadas por la imagen.
+- Percepción de grano fino: distinción de detalles pequeños, atributos y relaciones entre objetos.
+- Conteo de objetos y razonamiento espacial: tareas de counting y relaciones espaciales entre elementos.
+- Razonamiento multimodal multi-paso: cadenas de inferencia que combinan varias observaciones visuales.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente: no disponible en la información proporcionada.
+- Multilingüismo: limitado a inglés según la model card.
 
 ## Casos de uso
 
-- Analisis de documentos con imagenes: el modelo puede recibir capturas, diagramas o paginas escaneadas junto a una pregunta en texto y generar una respuesta combinada, gracias a su naturaleza vision-language. Es adecuado para extraccion de informacion de informes tecnicos o articulos cientificos.
-- Asistente conversacional local en ingles: al disponer de cuantizaciones desde 3,9 GB, puede desplegarse en un portatil con GPU de gama media para mantener conversaciones multi-turno sin enviar datos a servicios externos.
-- Verificacion de afirmaciones con evidencia visual: dado el enfasis del modelo base en evidencia y en inferencia causal, encaja en flujos donde hay que contrastar una hipotesis con imagenes o capturas de soporte.
-- Prototipado de agentes multimodales en investigacion: util para experimentar con pipelines de razonamiento que combinan texto e imagen en entornos academicos donde no se dispone de GPUs de datacenter.
-- Generacion de descripciones y resumenes de contenido visual: catalogacion de imagenes, resumenes de graficos o descripcion de figuras para accesibilidad.
-- Evaluacion comparativa de tecnicas de RL en vision-language: al ser un modelo ajustado con GRPO publicado en abierto, sirve como punto de partida reproducible para estudiar el efecto del RL en tareas multimodales.
-- Despliegue en entornos con requisitos de privacidad: la licencia Apache 2.0 y la disponibilidad en GGUF permiten ejecutarlo en infraestructura propia, incluyendo entornos aislados sin conexion a internet.
+- Verificación de inventario y control de calidad visual: el modelo puede contar y localizar objetos en imágenes de estanterías o líneas de producción, señalando la región concreta que sustenta cada recuento, lo que facilita la auditoría humana del resultado.
+- Moderación y verificación de contenido gráfico: dado su entrenamiento contra alucinaciones y su capacidad de razonamiento contrafactual, puede evaluar si una descripción textual coincide con lo que realmente muestra una imagen, útil en flujos de verificación de noticias o publicaciones.
+- Asistencia a personas con discapacidad visual: descripciones ancladas a regiones concretas de la imagen y respuestas a preguntas de seguimiento sobre posición, cantidad y atributos de objetos.
+- Análisis de imágenes técnicas y documentación: interpretación de diagramas, capturas de pantalla o figuras donde es necesario referirse a elementos específicos y no a una descripción global.
+- Automatización de anotación de datasets visuales: generación de descripciones con bounding regions implícitas para preetiquetar datos de entrenamiento, con revisión humana posterior gracias a la localización de la evidencia.
+- Despliegue en local y en el borde: las cuantizaciones Q4_K_M (5,7 GB) y Q5_K_M (6,6 GB) permiten ejecutar el modelo en GPUs de consumo para prototipos de análisis de imágenes sin enviar datos a la nube.
+- Investigación en robustez multimodal: evaluación de la resistencia a alucinaciones y del grounding en pipelines de investigación, al ser un modelo abierto con licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los resultados de busqueda consultados incluyen cifras de MMLU, HumanEval, GSM8K, MMMU, DocVQA ni de ninguna otra evaluacion para este modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM siguientes son estimaciones derivadas del tamano de los ficheros GGUF publicados, suponiendo que el modelo completo se carga en memoria de GPU:
-
-- f16 (18,0 GB): requiere aproximadamente 18-20 GB solo para los pesos, mas el fichero `mmproj` (1,0 GB) y la cache KV. Necesita una GPU de 24 GB (RTX 3090, RTX 4090, A5000) como minimo.
-- Q8_0 (9,6 GB): entorno a 10-12 GB con mmproj y contexto moderado. Cabe en RTX 4080, RTX 3090, RTX 4090, L4 o A10G.
-- Q6_K (7,5 GB): aproximadamente 8-10 GB. Adecuado para RTX 3060 de 12 GB, RTX 4070, RTX 4060 Ti de 16 GB.
-- Q5_K_M (6,6 GB) y Q5_K_S (6,4 GB): en torno a 7-9 GB. Cabe en GPUs de 8-12 GB.
-- Q4_K_M (5,7 GB) y Q4_K_S (5,5 GB): aproximadamente 6-8 GB. Es la opcion recomendada por el autor para uso general; viable en RTX 3060, RTX 4060, RTX 2070 y similares.
-- IQ4_XS (5,3 GB): similar al anterior con menor huella, aunque el rendimiento de las variantes IQ depende del backend.
-- Q3_K_L (5,0 GB), Q3_K_M (4,7 GB), Q3_K_S (4,4 GB): entre 5 y 7 GB con contexto. Utilizables en GPUs de 6-8 GB, con perdida de calidad perceptible.
-- Q2_K (3,9 GB): la opcion mas ligera; el propio autor no la marca como recomendada y la degradacion de calidad suele ser notable.
-- El fichero `mmproj-Q8_0` (0,7 GB) o `mmproj-f16` (1,0 GB) es obligatorio para la parte de vision y hay que sumarlo al presupuesto de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF. Para servir el modelo en produccion con mayor throughput seria necesario acudir al repositorio original en safetensors y a motores como vLLM o TGI, ya que estos no consumen GGUF de forma nativa.
-- Latencia y throughput: no disponibles. Dependen del ancho de banda de memoria de la GPU y de la longitud de contexto, que no se ha publicado.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto ni del proyector): Q2_K ~3,9 GB; Q3_K_M ~4,7 GB; IQ4_XS ~5,3 GB; Q4_K_M ~5,7 GB; Q5_K_M ~6,6 GB; Q6_K ~7,5 GB; Q8_0 ~9,6 GB; f16 ~18,0 GB. Añadir entre 0,7 GB (mmproj-Q8_0) y 1,0 GB (mmproj-f16) para el procesamiento de imágenes, más la memoria de la caché KV.
+- GPU recomendadas: RTX 4090 (24 GB) para Q6_K, Q8_0 o f16 con margen; RTX 4080/4070 Ti Super (16 GB) para Q5_K_M o Q6_K; RTX 4060 Ti 16 GB para Q4_K_M con contexto amplio; A100/H100 para despliegues concurrentes o f16 con lotes grandes.
+- Cabe en GPU de consumo: sí. Las cuantizaciones Q4_K_M y Q5_K_M caben en GPUs de 8-12 GB junto con el proyector; las de Q8_0 requieren al menos 12-16 GB.
+- Opciones de despliegue: llama.cpp y servidores compatibles con GGUF (Ollama, LM Studio, llama-cpp-python); los pesos safetensors del modelo base pueden servirse con vLLM o TGI si el soporte multimodal de la arquitectura está implementado.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento publicados para este modelo, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia cualitativa, dentro del catalogo del propio mradermacher existen otras cuantizaciones de modelos de aproximadamente 9B con orientacion multimodal o de edicion, como `mradermacher/EdiTikZ-9B-RL-GGUF` y `mradermacher/MiMo-Ornith-9B-AGSI-i1-GGUF`, pero tampoco se dispone de parametros de contexto, benchmarks o arquitectura detallada para ellos en la informacion consultada.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Evidence-RL-9B-GGUF | 8,95 B | No disponible | Apache 2.0 | GGUF | No disponible |
-| hhj-ai/Evidence-RL-9B (base) | 8,95 B | No disponible | Apache 2.0 | safetensors | No disponible |
-| EdiTikZ-9B-RL-GGUF | No disponible | No disponible | Apache 2.0 | GGUF | No disponible |
-| MiMo-Ornith-9B-AGSI-i1-GGUF | No disponible (del orden de 9 B) | No disponible | Apache 2.0 | GGUF | No disponible |
+| Evidence-RL-9B (esta ficha, GGUF) | 8,95 B | No disponible | Apache 2.0 | GGUF, safetensors | Especializado en grounding y anti-alucinación vía GRPO; solo inglés |
+| Qwen2.5-VL-7B | 7 B (aprox.) | No disponible en esta ficha | Apache 2.0 | safetensors, GGUF | VLM generalista con soporte multilingüe y amplia adopción; comparación de rendimiento no disponible |
+| InternVL2-8B | 8 B (aprox.) | No disponible en esta ficha | MIT (según versión) | safetensors, GGUF | VLM generalista con fuerte rendimiento en benchmarks públicos; comparación directa no disponible |
+| LLaVA-OneVision-7B | 7 B (aprox.) | No disponible en esta ficha | Apache 2.0 | safetensors, GGUF | VLM orientado a tareas múltiples de imagen y vídeo; comparación directa no disponible |
+
+No se dispone de datos de benchmarks del modelo que permitan una comparación cuantitativa con estas alternativas; la tabla refleja únicamente características estructurales y de licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo unicamente en ingles: no hay evidencia de soporte para castellano ni otros idiomas, por lo que su uso en produccion multilingue exigiria evaluacion previa.
-- No se ha publicado informacion sobre sesgos, datos de entrenamiento ni procesos de alineacion, lo que impide auditar el comportamiento del modelo en dominios sensibles.
-- Riesgo de alucinacion no cuantificado: al no existir evaluaciones, no hay forma de estimar la tasa de respuestas incorrectas, especialmente en tareas de razonamiento sobre evidencia visual.
-- La cuantizacion degrada la calidad respecto al modelo original, de forma mas acusada en Q3_K_S, Q3_K_M y Q2_K. El autor solo marca explicitamente como recomendados Q4_K_S y Q4_K_M.
-- Las cuantizaciones publicadas son estaticas; no se han publicado versiones con imatrix, que suelen ofrecer mejor relacion calidad/tamano.
-- El repositorio tiene 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad ni informes de errores.
-- Aunque la licencia Apache 2.0 permite uso comercial, conviene verificar la licencia y las condiciones del modelo base `hhj-ai/Evidence-RL-9B`, ya que el repositorio GGUF hereda las restricciones del original.
-- Para usar la funcionalidad de vision es imprescindible cargar el fichero `mmproj`; si se omite, el modelo funcionara degradado o fallara en entradas de imagen segun el runtime.
-- No se dispone de informacion sobre la longitud de contexto soportada, dato critico para dimensionar la cache KV y planificar el despliegue.
-- No se han publicado medidas de latencia ni throughput en ningun hardware concreto.
+- Idiomas: el modelo solo declara soporte de inglés; su rendimiento en castellano no está documentado y no debería asumirse.
+- Contexto: la longitud de contexto no está publicada, lo que impide planificar tareas con documentos o secuencias de imágenes largas.
+- Alucinación: aunque el entrenamiento está orientado a reducirla, sigue siendo un riesgo inherente a los VLM; se recomienda validación humana en dominios críticos.
+- Sesgos: no se documentan evaluaciones de sesgo; el modelo puede heredar sesgos de sus datos de entrenamiento, no disponibles.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base hhj-ai/Evidence-RL-9B y de los componentes visuales subyacentes.
+- Cuantizaciones de baja precisión: Q2_K y Q3_K_S pueden degradar el grounding fino y el conteo; para tareas de percepción se recomienda Q5_K_M o superior.
+- Proyector multimodal obligatorio: sin el archivo mmproj correspondiente el modelo no procesa imágenes; hay que descargarlo junto con los pesos.
+- Metadatos incompletos: no hay información pública sobre arquitectura interna, datos de entrenamiento ni benchmarks, lo que limita la evaluación previa a producción.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Evidence-RL-9B-GGUF
 - Modelo base: https://huggingface.co/hhj-ai/Evidence-RL-9B
-- Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#Evidence-RL-9B-GGUF
-- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Grafico comparativo de tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Empresa del autor: https://www.nethype.de/
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Evidence-RL-9B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Evidence-RL-9B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

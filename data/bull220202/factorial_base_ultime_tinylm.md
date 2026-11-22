@@ -2,49 +2,49 @@
 
 ## Resumen
 
-Factorial_Base_ULTIME_TinyLM es un modelo de generacion de texto de tamano muy reducido (aproximadamente 48 millones de parametros) publicado por el usuario bull220202 en Hugging Face. Se distribuye bajo licencia CC-BY-4.0 y esta etiquetado para el idioma japones, con un pipeline de text-generation implementado en PyTorch. El repositorio ocupa aproximadamente 0,6 GB.
+Factorial_Base_ULTIME_TinyLM es un modelo de generacion de texto de tipo "tiny" desarrollado por el usuario bull220202 y publicado en Hugging Face bajo licencia CC-BY-4.0. Segun la model card, el modelo tiene aproximadamente 48 millones de parametros, lo que lo situa en la categoria de modelos ultraligeros, disenados para tareas de generacion de texto con requisitos computacionales minimos. El modelo esta etiquetado para el idioma japones (ja) y se distribuye en formato ONNX y PyTorch.
 
-La model card es extremadamente escueta: se limita a indicar que es un "tiny factorial model" de unos 48M de parametros y a afirmar que, pese a su tamano, su rendimiento "no debe subestimarse". No se aporta informacion sobre arquitectura concreta, datos de entrenamiento, tokenizador ni proceso de alineacion.
+La informacion publica disponible es extremadamente limitada: la model card apenas contiene una frase descriptiva ("This is tiny factorial model") y el tamano aproximado. No se especifican la arquitectura concreta, la longitud de contexto, los datos de entrenamiento ni los resultados de benchmarks. El repositorio ocupa 2,8 GB, un tamano considerable para un modelo de 48M de parametros, lo que sugiere la inclusion de multiples artefactos (pesos en distintos formatos, posiblemente ONNX y checkpoints de PyTorch).
 
-Por su escala, el modelo se situa en la categoria de modelos ultraligeros, adecuados para experimentacion, prototipado rapido y despliegue en entornos con recursos muy limitados (CPU, dispositivos embebidos o GPUs de gama baja). Su relevancia practica es limitada frente a modelos de mayor tamano, pero puede resultar util como banco de pruebas o para tareas acotadas en japones. La ausencia de documentacion tecnica y de benchmarks publicados obliga a tratar cualquier afirmacion de rendimiento con cautela.
+A pesar de la escasez de documentacion, el modelo resulta relevante para desarrolladores que buscan alternativas ultraligeras para generacion de texto en japones, especialmente en entornos con recursos muy limitados (dispositivos edge, microcontroladores, navegadores via ONNX). Su licencia permisiva CC-BY-4.0 facilita su uso comercial con atribucion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como "factorial model", sin detalle en la model card) |
-| Parametros totales | aproximadamente 48M |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible |
+| Parametros totales | ≈48M |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | japones (ja) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | no disponible (repo de 0,6 GB; framework PyTorch) |
+| Formato de pesos | ONNX, PyTorch (safetensors no confirmado) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. La model card lo describe como "tiny factorial model" y lo etiqueta con el framework PyTorch, pero no especifica si se trata de un transformer decoder-only, una variante con mezcla de expertos ni ninguna otra estructura. El termino "factorial" aparece tanto en el nombre como en los tags, sin que se explique su significado tecnico.
+No se ha publicado informacion sobre la arquitectura interna del modelo. La model card no especifica si se trata de un transformer decoder-only, un modelo tipo GPT, un modelo factorial (en referencia al nombre) o alguna variante hibrida. Tampoco se detallan la composicion del dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
-Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporción de japones frente a otros idiomas), ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o estrategias de eficiencia. Toda esta seccion queda, por tanto, sin datos verificables.
+El unico dato tecnico concreto es el tamano aproximado de 48 millones de parametros y la disponibilidad de pesos en formato ONNX y PyTorch. El nombre "Factorial" podria sugerir una arquitectura o tecnica propietaria, pero no hay documentacion que lo confirme. No se dispone de informacion sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o mezcla de expertos.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva segun el pipeline declarado (text-generation).
-- Soporte principal del japones como idioma objetivo.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta capacidad de agentes ni razonamiento multi-paso.
-- No se documenta capacidad multilingue mas alla del japones.
-- No se documentan capacidades especiales (modo thinking, vision, audio, etc.).
-- Por su tamano (aproximadamente 48M de parametros), es previsible una capacidad limitada de razonamiento complejo y de conocimiento factual, aunque esto no se cuantifica en la informacion disponible.
+- Generacion de texto en japones: el modelo esta etiquetado exclusivamente para el idioma japones, por lo que su uso principal es la generacion de texto en dicho idioma.
+- Modelo ultraligero: con ~48M de parametros, esta disenado para inferencia en entornos con recursos muy limitados.
+- Exportacion a ONNX: la presencia de la etiqueta "onnx" indica que el modelo puede ejecutarse en runtime ONNX, lo que facilita su despliegue en navegadores, dispositivos edge y entornos sin GPU.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al japones segun la etiqueta de idioma.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Prototipado rapido de pipelines de generacion de texto en japones: el modelo puede integrarse en un script de PyTorch para validar extremo a extremo un flujo de inferencia antes de migrar a un modelo mayor, gracias a su reducido tamano.
-- Experimentacion academica y docencia: util como ejemplo manejable para estudiar el comportamiento de modelos de lenguaje pequenos, analizar sesgos o comparar tecnicas de tokenizacion sin requerir hardware dedicado.
-- Despliegue en entornos con recursos muy limitados: con aproximadamente 48M de parametros, puede ejecutarse en CPU o en dispositivos de gama baja donde modelos mayores no caben.
-- Generacion de texto auxiliar de baja criticidad: borradores, completado de frases o variaciones de texto en japones donde no se requiera alta precision.
-- Pruebas de integracion y CI: al ser ligero, puede usarse en tests automatizados que verifiquen el correcto funcionamiento de una infraestructura de inferencia (APIs, contenedores, servidores) sin consumir GPUs caras.
-- Base para fine-tuning experimental: su tamano permite ajustarlo rapidamente en tareas acotadas de japones con presupuestos de computo minimos, aunque no se documenta su calidad base.
+- Generacion de texto en japones en dispositivos edge: el modelo, con ~48M de parametros, puede ejecutarse en dispositivos con memoria limitada (Raspberry Pi, moviles, microcontroladores con suficiente RAM) para tareas de autocompletado o generacion de respuestas cortas en japones.
+- Prototipado rapido de aplicaciones NLP en japones: gracias a su tamano reducido y formato ONNX, permite iterar rapidamente en el desarrollo de aplicaciones de generacion de texto sin necesidad de infraestructura GPU.
+- Inferencia en navegador mediante ONNX Runtime Web: la exportacion ONNX posibilita ejecutar el modelo directamente en el navegador del cliente, eliminando la necesidad de servidores y reduciendo la latencia de red para aplicaciones de texto en japones.
+- Educacion e investigacion: modelo adecuado para experimentos docentes sobre arquitecturas de lenguaje, tecnicas de cuantizacion y despliegue de modelos tiny, dado su bajo coste computacional.
+- Filtrado y clasificacion de texto japones: aunque no esta disenado especificamente para clasificacion, un modelo de 48M puede ajustarse finamente para tareas de moderacion o etiquetado de texto en japones con recursos minimos.
+- Sistemas embebidos con restricciones de energia: su reducido numero de parametros permite inferencia con bajo consumo energetico en dispositivos alimentados por bateria, como asistentes de voz locales o terminales IoT.
 
 ## Benchmarks y rendimiento
 
@@ -52,37 +52,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Con aproximadamente 48M de parametros, una estimacion orientativa en fp32 seria de unos 0,2 GB de pesos, y en fp16 de unos 0,1 GB, sin contar overhead de activaciones ni tokenizador.
-- GPU recomendadas: no se especifican. Por tamano, cualquier GPU consumer moderna (por ejemplo, RTX 3060, RTX 4090) seria sobradamente suficiente; incluso podria ejecutarse en CPU.
-- Cabe en GPU consumer: si, previsiblemente en practicamente cualquier GPU consumer, aunque no hay confirmacion oficial.
-- Opciones de despliegue: no se documentan. Al estar etiquetado como PyTorch, cabria esperar carga directa con transformers, pero no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con ~48M de parametros en FP32, el modelo ocupa aproximadamente 192 MB; en FP16, unos 96 MB; en cuantizacion INT8, en torno a 48 MB. Estas cifras son estimaciones teoricas basadas en el numero de parametros, no datos confirmados por el autor.
+- GPU recomendadas: cualquier GPU consumer moderna (GTX 1060, RTX 2060, RTX 3060, RTX 4090) puede ejecutar el modelo sin problemas. Tambien es viable en CPU.
+- Cabe en consumer GPU: si, en practicamente cualquier GPU consumer e incluso en CPU y dispositivos edge.
+- Opciones de despliegue: ONNX Runtime (incluido ONNX Runtime Web), PyTorch nativo, posiblemente llama.cpp u Ollama si se generan pesos GGUF (no confirmado). vLLM y TGI no estan optimizados para modelos de este tamano.
+- Latencia y throughput estimados: no disponibles. Dado el reducido tamano, se espera una latencia muy baja en CPU y GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de arquitectura que permitan una comparacion rigurosa. Como referencia de categoria (modelos ultraligeros), podrian citarse alternativas como GPT-2 small (124M), distilgpt2 (82M) o modelos tiny de la familia Pythia, pero no existen benchmarks publicados de Factorial_Base_ULTIME_TinyLM que permitan contrastarlos.
-
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Benchmarks publicados |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Factorial_Base_ULTIME_TinyLM | aprox. 48M | no disponible | CC-BY-4.0 | ja | no disponible |
-| GPT-2 small | 124M | 1024 | MIT | en (principalmente) | si |
-| distilgpt2 | 82M | 1024 | Apache-2.0 | en | si |
-| Pythia-70M | 70M | 2048 | Apache-2.0 | en | si |
+| Factorial_Base_ULTIME_TinyLM | ≈48M | no disponible | ja | CC-BY-4.0 | ONNX, PyTorch |
+| GPT-2 small | 124M | 1024 | en | MIT | PyTorch, TF, ONNX |
+| TinyLlama | 1.1B | 2048 | en (multilingue parcial) | Apache 2.0 | PyTorch, GGUF |
+| Qwen2.5-0.5B | 0.5B | 32768 | multilingue | Apache 2.0 | PyTorch, GGUF, ONNX |
 
-La comparacion se limita a parametros y licencia; no hay base para comparar calidad.
+La comparativa es orientativa: no hay datos de rendimiento del modelo Factorial que permitan una comparacion cuantitativa. Los modelos alternativos tienen tamanos superiores y documentacion mucho mas completa. La principal ventaja del modelo Factorial es su menor tamano (~48M) y su especializacion en japones, aunque carece de informacion publica sobre calidad.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se detallan arquitectura, datos de entrenamiento ni proceso de alineacion, lo que impide evaluar su calidad de forma fundamentada.
-- Riesgo elevado de alucinacion y de generar texto incoherente, especialmente por su reducido tamano y la falta de benchmarks.
-- Sesgos desconocidos: al no documentarse el corpus, no es posible identificar sesgos de genero, culturales o de otro tipo.
-- Cobertura linguistica limitada al japones segun la etiqueta; el rendimiento en otros idiomas es incierto.
-- Longitud de contexto desconocida, lo que dificulta planificar casos de uso con conversaciones largas.
-- Licencia CC-BY-4.0: permite uso comercial con atribucion, pero conviene revisar los terminos exactos y la procedencia de los datos de entrenamiento, no documentada.
-- Repositorio con 0 descargas y 1 like en el momento de la consulta: no hay evidencia de uso ni validacion por parte de la comunidad.
-- No recomendable para produccion sin una evaluacion previa propia, dado que no existen benchmarks ni documentacion que respalden el rendimiento afirmado por el autor.
+- Documentacion practicamente inexistente: la model card no proporciona informacion sobre arquitectura, entrenamiento, contexto ni rendimiento, lo que dificulta evaluar su calidad y adecuacion para produccion.
+- Riesgo de alucinacion: al no haber datos sobre el entrenamiento ni evaluaciones, no es posible estimar la fiabilidad de sus generaciones; se debe asumir un riesgo alto de alucinacion en usos no verificados.
+- Sesgos desconocidos: sin informacion sobre la composicion del dataset, no se pueden identificar sesgos de genero, culturales o politicos.
+- Limitacion idiomatica: el modelo esta etiquetado solo para japones; su rendimiento en otros idiomas es presumiblemente muy limitado o nulo.
+- Longitud de contexto desconocida: no se puede garantizar el manejo de conversaciones multi-turno o documentos largos.
+- Licencia CC-BY-4.0: permite uso comercial con atribucion, pero no incluye garantias ni responsabilidad por parte del autor.
+- Madurez del proyecto: creado en noviembre de 2026 y con solo 1 like y 649 descargas, es un proyecto de autor individual sin senales de mantenimiento activo ni comunidad.
+- Tamano del repositorio (2,8 GB) desproporcionado para 48M de parametros: podria indicar la inclusion de artefactos redundantes o checkpoints intermedios, lo que complica la descarga y el despliegue.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/bull220202/Factorial_Base_ULTIME_TinyLM
-- No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.
+- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

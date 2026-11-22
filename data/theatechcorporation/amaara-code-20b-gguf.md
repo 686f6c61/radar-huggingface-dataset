@@ -2,88 +2,101 @@
 
 ## Resumen
 
-Amaara Code 20B es un ajuste fino por SFT con LoRA del modelo `openai/gpt-oss-20b` de OpenAI, una arquitectura de mezcla de expertos (MoE) con 20.914.757.184 parámetros totales y aproximadamente 3.600 millones activos por token. El autor, theatechcorporation, lo orienta a codificación agéntica: el corpus de entrenamiento son 98.391 trazas de agente armonizadas, con 176.689 mensajes y 96.204 llamadas a herramientas extraídas de 2.083 ejecuciones reales de agente, complementadas con datos de instrucción y razonamiento. El 82% de las llamadas del corpus son a la herramienta `bash`, lo que refleja el entorno del que provienen las trazas.
+Amaara Code 20B (GGUF) es una exportación en formato GGUF de un adaptador LoRA de ajuste supervisado (SFT) entrenado sobre el modelo base `openai/gpt-oss-20b`, un transformer de arquitectura mixture-of-experts (MoE) con 20.914.757.184 parámetros totales y aproximadamente 3.600 millones activos por token. Lo desarrolla theatechcorporation y está orientado a codificación agéntica: el modelo emite llamadas a herramientas en formato harmony (canales `analysis`, `commentary` y `final`), con un corpus de entrenamiento compuesto mayoritariamente por trazas reales de agentes.
 
-Este repositorio contiene únicamente una exportación GGUF de la ronda 1 del adaptador, publicada para inspección y ejecución. El propio autor advierte de que el modelo no ha sido evaluado en capacidades agénticas ni de código, y que no debe atribuírsele ningún resultado de benchmark. La única medición disponible es la pérdida final de entrenamiento (4,626), que es un objetivo de optimización y no una medida de capacidad.
+El problema que aborda es la escasez de modelos abiertos específicamente ajustados para flujos agénticos de codificación sobre trazas operativas reales. La ronda 1 se entrenó sobre 98.391 trazas armonizadas (176.689 mensajes y 96.204 llamadas a herramientas procedentes de 2.083 ejecuciones reales de agentes), con un 82% de llamadas a la herramienta `bash`.
 
-Su relevancia actual es doble: por un lado, demuestra un flujo de trabajo reproducible de ajuste LoRA sobre un MoE de OpenAI con pesos nativos MXFP4 y su conversión a GGUF; por otro, documenta con detalle las peculiaridades de cuantizar gpt-oss con `llama-quantize`, donde 289 de 459 tensores quedan en F32 y el tamaño resultante supera al que sugiere el nombre de la cuantización.
+Es relevante ahora por su tamaño manejable y su eficiencia: la cuantización MXFP4_MOE ocupa 11,3 GB y cabe con holgura en una GPU de 16 GB, lo que permite ejecutar localmente un modelo MoE de 20B con llamadas a herramientas. El autor declara explícitamente que el modelo **no ha sido evaluado todavía** en capacidad agéntica y que no existe ninguna cifra de benchmark medida; la model card indica que se publicará o se retirará la afirmación cuando se ejecute la evaluación.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), derivada de `openai/gpt-oss-20b`; pesos nativos MXFP4 |
-| Parámetros totales | 20.914.757.184 (21B) |
-| Parámetros activos | 3,6B (aproximado, según model card) |
-| Longitud de contexto | 32.768 tokens en el ejemplo de despliegue con `llama-server -c 32768`; la longitud nativa del modelo base no se detalla en la información disponible |
-| Tipos de cuantización | Q4_K_M (composición mixta: 121×Q5_0 + 25×Q8_0 + 24×Q4_K + 289×F32) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (compatible con llama.cpp); el adaptador LoRA original ocupa 740.115.376 bytes en 3.264 tensores |
+| Arquitectura | Transformer mixture-of-experts (MoE), pesos nativos MXFP4, formato harmony |
+| Parámetros totales | 20.914.757.184 (≈20,9B) |
+| Parámetros activos | ≈3,6B |
+| Longitud de contexto | 32.768 tokens (configuración de ejemplo en `llama-server -c 32768`); máximo nativo no disponible |
+| Tipos de cuantización | MXFP4_MOE (72 tensores MXFP4 + 98 Q8_0 + 289 F32), Q4_K_M (121 Q5_0 + 25 Q8_0 + 24 Q4_K + 289 F32) |
+| Idiomas soportados | en (inglés) |
+| Licencia | A-Tech Model License v1.0 (comercial gratuito e ilimitado por debajo de 10 M USD de ingresos anuales; por encima requiere licencia enterprise). Base derivada de `openai/gpt-oss-20b` |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `openai/gpt-oss-20b`, un transformer MoE con 21B parámetros totales y unos 3,6B activos, cuyos pesos nativos están en MXFP4. Sobre él se aplicó un SFT con LoRA de rango 16 y alpha 16 sobre 402 módulos objetivo, durante 1.200 pasos con longitud de secuencia 8.192 y tasa de aprendizaje 2e-4 con decaimiento coseno. El entrenamiento completo tardó 2 horas y 42 minutos en una RTX 4090, y la pérdida de entrenamiento evolucionó de 6,80 a 4,46, con un valor final de 4,626. El autor aclara explícitamente que una pérdida absoluta de ~4,6 es esperable para este tokenizador y no indica un defecto frente a modelos que reportan ~0,9.
+El modelo base es un transformer MoE con pesos nativos MXFP4 y 20,9B parámetros totales, de los cuales unos 3,6B se activan por token. El ajuste de la ronda 1 es un LoRA SFT con r=16, α=16 y 402 módulos objetivo, entrenado durante 1.200 pasos con longitud de secuencia de 8.192 tokens, learning rate 2e-4 con decaimiento coseno, sobre una RTX 4090 en 2 horas y 42 minutos. El adaptador resultante pesa 740.115.376 bytes y contiene 3.264 tensores. La pérdida final de entrenamiento fue 4,626, con trayectoria 6,80 → 5,40 → 4,95 → 4,55 → 4,46; el autor advierte que la pérdida es un objetivo de entrenamiento, no una medida de capacidad, y que un valor absoluto de ~4,6 es esperable con este tokenizador.
 
-El corpus son 98.391 trazas de agente armonizadas (176.689 mensajes, 96.204 llamadas a herramientas) procedentes de 2.083 ejecuciones reales, más datos de instrucción y razonamiento. Antes del entrenamiento, las trazas se generalizaron: se sustituyeron 6 marcas de cliente, 5 personas, 12 slugs de proyecto y rutas locales, y se verificó la ausencia de 25 patrones prohibidos. No se menciona RLHF ni DPO en la información disponible; el proceso descrito es exclusivamente SFT. La innovación técnica destacable no está en la arquitectura sino en el pipeline de conversión y cuantización: `convert_hf_to_gguf.py` no puede emitir MXFP4 (sus salidas son f32/f16/bf16/q8_0/tq1_0/tq2_0/auto), por lo que una build MXFP4 nativa (~11,2 GB) requiere cuantizar un GGUF F16 y queda planificada para la ronda 2.
+El corpus de entrenamiento son 98.391 trazas armonizadas de agentes (176.689 mensajes, 96.204 llamadas a herramientas, 2.083 ejecuciones heartbeat reales), complementadas con datos de instrucción y razonamiento; el 82% de las llamadas son a `bash`, lo que refleja el entorno del que proceden las trazas. Antes del entrenamiento se generalizaron las trazas: se sustituyeron 6 marcas de clientes, 5 personas, 12 slugs de proyecto y rutas locales, y se verificó la ausencia de 25 patrones prohibidos. No se menciona RLHF ni DPO en la información disponible.
+
+En cuanto a la cuantización, `llama-quantize` deja 289 de 459 tensores en F32 (normas, router y tensores pequeños), por lo que los ficheros son mayores de lo que sugiere el nombre de la cuantización y Q6_K resulta del mismo tamaño que Q8_0. El tipo correcto en `llama-quantize` es `MXFP4_MOE` (tipo 38); `MXFP4` simple se rechaza con `invalid ftype`, y `convert_hf_to_gguf.py` no puede emitirlo, de modo que la única vía es F16 GGUF → `llama-quantize MXFP4_MOE`.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con canales diferenciados del formato harmony (`analysis`, `commentary`, `final`).
-- Emisión de llamadas a herramientas armonizadas en el canal `commentary`, con la sintaxis `<|start|>assistant to=functions.NAME<|channel|>commentary json<|message|>{args}<|call|>`.
-- Codificación agéntica orientada a terminal: el 82% del corpus de entrenamiento son llamadas a `bash`.
-- Razonamiento e instrucción: el corpus incluye datos de instrucción y razonamiento además de las trazas.
-- Restricción relevante: la plantilla permite una sola llamada a herramienta por mensaje.
-- Capacidades multilingües: limitadas al inglés según la model card; no se declaran otros idiomas.
-- No se declaran capacidades de visión, audio ni modo de pensamiento explícito más allá de los canales del formato harmony.
+- Generación de texto y razonamiento en inglés, con canales separados de análisis (`analysis`), comentario (`commentary`) y respuesta final (`final`).
+- Codificación agéntica: emite llamadas a herramientas armonizadas en el canal `commentary` con el formato `<|start|>assistant to=functions.NAME<|channel|>commentary json<|message|>{args}<|call|>`.
+- Soporte de tool calling / function calling, limitado a **una llamada por mensaje** según la plantilla.
+- Ejecución de comandos de shell mediante la herramienta `bash`, que domina el corpus de entrenamiento (82%).
+- Razonamiento multi-paso dentro de un mismo turno, con trazas de instrucción y razonamiento incluidas en el entrenamiento.
+- Capacidades multilingües: no disponibles; el modelo declara únicamente inglés.
+- No dispone de visión ni audio según la información proporcionada.
 
 ## Casos de uso
 
-- Automatización de tareas de shell en pipelines internos: el modelo puede emitir llamadas a `bash` en formato harmony para ejecutar comandos de inspección, listado o transformación de ficheros, aprovechando que el 82% de su corpus son precisamente llamadas a esa herramienta. Requiere un orquestador que parsee los marcadores de canal y valide los comandos antes de ejecutarlos.
-- Prototipado de agentes de codificación sobre llama.cpp: sirve como banco de pruebas para integrar el formato harmony y el parseo de llamadas a herramientas en un servidor `llama-server`, dado que el repositorio documenta la sintaxis exacta y el flag `--jinja` necesario.
-- Evaluación de pipelines de cuantización de MoE: útil para equipos que necesiten reproducir el comportamiento de `llama-quantize` sobre gpt-oss y entender por qué 289 tensores permanecen en F32 y por qué Q6_K iguala en tamaño a Q8_0.
-- Asistencia en tareas de edición de ficheros con verificación posterior: el modelo puede proponer ediciones y comandos de comprobación, aunque solo el 3,4% del corpus demuestra verificación tras una edición, por lo que conviene envolverlo en un harness que fuerce el paso de validación.
-- Despliegue en hardware de gama alta de consumo con offload parcial: con 14,7 GB de pesos, cabe parcialmente en una GPU de 16 GB dejando ~1,6 GB de margen, lo que permite ejecuciones locales de contexto reducido para pruebas de integración.
-- Servicio en CPU para entornos sin GPU: es viable pero lento, con 3,2 tok/s medidos en 48 hilos, adecuado solo para validación funcional por lotes pequeños.
-- Generación de trazas sintéticas de agente para aumentar datasets: al estar entrenado sobre trazas armonizadas, puede producir secuencias con estructura de llamada a herramienta que sirvan como material de arranque, siempre con revisión humana.
+- Automatización de tareas de shell en pipelines: el modelo emite llamadas `bash` estructuradas que un orquestador puede ejecutar y devolver como observación, encajando con el 82% de trazas de shell de su entrenamiento.
+- Asistente de codificación local con herramientas: integrado en `llama-server` con `--jinja`, permite que un agente externo reciba llamadas a funciones y las despache, con contexto de 32.768 tokens.
+- Prototipado de agentes en estación de trabajo: la cuantización MXFP4_MOE de 11,3 GB cabe en una GPU de 16 GB con ~5 GB de margen, lo que permite iterar sin infraestructura de servidor.
+- Investigación sobre trazas agénticas: al derivar de ejecuciones heartbeat reales y publicarse con detalle de entrenamiento, sirve como punto de partida reproducible para estudiar SFT sobre trazas armonizadas.
+- Despliegue en CPU para tareas por lotes: el autor mide 6,0 tok/s con MXFP4_MOE y 3,2 tok/s con Q4_K_M en 40-48 hilos, suficiente para procesos no interactivos.
+- Evaluación comparativa de formatos de cuantización: al incluir MXFP4_MOE y Q4_K_M del mismo adaptador, permite medir el delta de calidad entre formatos antes de asumir que es lossless.
+- Generación de comandos de administración de sistemas en inglés: útil en entornos donde el operador trabaja en inglés y necesita traducción de intención a comandos de shell.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que el modelo no ha sido evaluado en capacidad agéntica ni de código y que no debe describirse como si tuviera tales métricas. La única medición publicada es la pérdida final de entrenamiento de 4,626, que no constituye una medida de capacidad. Como dato de rendimiento de inferencia, la model card reporta 3,2 tok/s en CPU con 48 hilos.
+No se han publicado resultados de benchmarks en la información disponible. La model card declara explícitamente que el modelo **no ha sido evaluado** para capacidad agéntica y que no existe ninguna cifra de benchmark medida de codificación o agentes. Las únicas medidas publicadas son de entrenamiento e inferencia:
+
+| Métrica | Valor |
+|---|---|
+| Pérdida final de entrenamiento | 4,626 (trayectoria 6,80 → 5,40 → 4,95 → 4,55 → 4,46) |
+| Pasos de entrenamiento | 1.200 |
+| Tiempo de entrenamiento | 2 h 42 min en RTX 4090 |
+| Throughput CPU, MXFP4_MOE | 6,0 tok/s (40-48 hilos) |
+| Throughput CPU, Q4_K_M | 3,2 tok/s (40-48 hilos) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~14,7 GB de pesos en Q4_K_M, con ~1,6 GB de margen en una tarjeta de 16 GB; se recomienda offload parcial o contexto reducido en ese caso.
-- GPU recomendadas: el adaptador se entrenó en una RTX 4090; para inferencia cabe en GPUs de 16 GB o más (RTX 4090, RTX 4080, A100, H100) con offload parcial en las de menor VRAM.
-- Cabe en GPU de consumo: sí, en modelos de 16 GB o superiores, con las salvedades de margen y contexto indicadas; se espera una build MXFP4 de ~11,2 GB en la ronda 2 que reduciría los requisitos.
-- Opciones de despliegue: llama.cpp mediante `llama-server` con `-ngl 99 -c 32768 --jinja --host 0.0.0.0 -ub 512 -b 1024`; el repositorio está etiquetado como compatible con endpoints. No se mencionan vLLM, TGI ni Ollama en la información disponible.
-- Latencia y throughput: 3,2 tok/s en CPU con 48 hilos; no se publican cifras de throughput en GPU.
+- VRAM estimada: 11,3 GB para `amaara-code-20b-r1-MXFP4_MOE.gguf` (cabe en 16 GB con ~5 GB de margen); 14,7 GB para `amaara-code-20b-r1-Q4_K_M.gguf` (marginal en 16 GB, ~1,6 GB de margen).
+- GPU recomendadas: RTX 4090 (entrenamiento del adaptador y inferencia), cualquier GPU de 16 GB o más para MXFP4_MOE; A100/H100 para servicio concurrente.
+- Cabe en GPU de consumo: sí, en modelos de 16 GB o superiores con el fichero MXFP4_MOE; el Q4_K_M queda al límite.
+- Opciones de despliegue: llama.cpp (`llama-server` con `-ngl 99 -c 32768 --jinja -ub 512 -b 1024`); el tag `endpoints_compatible` sugiere compatibilidad con endpoints, sin detalle adicional disponible. vLLM, Ollama y TGI no se mencionan en la información.
+- Latencia y throughput: solo medidas en CPU (6,0 tok/s MXFP4_MOE, 3,2 tok/s Q4_K_M en 40-48 hilos); no hay cifras de GPU.
+- Disco: la conversión F16 → MXFP4_MOE requiere ~2x el tamaño del modelo en espacio libre.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Estado de evaluación |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Evaluación publicada |
 |---|---|---|---|---|---|---|
-| Amaara Code 20B r1 (este) | 20,9B | ~3,6B | 32.768 en ejemplo de despliegue | Apache 2.0 | GGUF Q4_K_M | Sin evaluar; pérdida final 4,626 |
-| openai/gpt-oss-20b (base) | 20,9B | ~3,6B | No disponible en la información proporcionada | Apache 2.0 | Safetensors MXFP4 nativo | No disponible en la información proporcionada |
-| Alternativas de codificación agéntica de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Amaara Code 20B r1 | 20,9B | ≈3,6B | 32.768 (config. de ejemplo) | A-Tech Model License v1.0 | GGUF | Ninguna; declarada como no evaluada |
+| openai/gpt-oss-20b (base) | 20,9B | ≈3,6B | no disponible | no disponible | safetensors (MXFP4 nativo) | no disponible |
+| Alternativas de codificación agéntica de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con otras alternativas de la misma categoría no está disponible en la información proporcionada; únicamente puede contrastarse con su modelo base, del que se diferencia por el ajuste LoRA sobre trazas de agente y por la exportación a GGUF.
+La única comparación con datos verificables es frente al modelo base: Amaara Code 20B r1 es un LoRA SFT sobre `openai/gpt-oss-20b`, conserva su arquitectura MoE y sus pesos nativos MXFP4, y difiere en el ajuste sobre trazas agénticas y en la licencia propia del derivado. No se dispone de datos de otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo no evaluado: el autor declara que no existe ninguna medición de capacidad agéntica o de código, y que toda afirmación al respecto debe considerarse no verificada.
-- Desajuste de herramientas observado en prueba de humo: ante una petición de listar un directorio, el modelo recurre a una herramienta `list_dir`, mientras que el harness de evaluación solo expone `bash`. La ronda 2 aborda este problema.
-- Verificación insuficiente: solo el 3,4% del corpus demuestra verificación después de editar un fichero, lo que aumenta el riesgo de que el modelo dé por buena una modificación sin comprobarla.
-- Una sola llamada a herramienta por mensaje: la plantilla harmony no permite múltiples llamadas en el mismo turno, lo que limita la eficiencia en tareas que requieren varias operaciones.
-- Parseo delicado de la salida: decodificar con `skip_special_tokens=True` produce texto corrupto como `finalREADY`; es obligatorio parsear los marcadores de canal (`analysis`, `commentary`, `final`).
-- Cobertura lingüística restringida al inglés; no se declaran capacidades en castellano ni en otros idiomas.
-- Tamaño de fichero engañoso: 289 de 459 tensores quedan en F32, por lo que Q4_K_M ocupa 14,7 GB y Q6_K iguala en tamaño a Q8_0; conviene verificar el espacio en disco antes de descargar.
-- Riesgo de alucinación: no se documentan evaluaciones de fidelidad; al ser un modelo de 21B con pérdida de entrenamiento alta, es esperable un riesgo considerable en producción, aunque no se cuantifica en la información disponible.
-- Sesgos: no se documentan análisis de sesgo en la model card.
-- Licencia Apache 2.0, que permite uso comercial, pero el autor publica el artefacto para inspección y recomienda tratar cualquier afirmación de capacidad como no verificada hasta que la tarjeta reporte mediciones.
+- **Sin evaluación**: la model card declara que el modelo no ha sido evaluado para capacidad agéntica y que no debe describirse como si tuviera cifras de benchmark. Cualquier afirmación de capacidad debe tratarse como no verificada.
+- **Desajuste de herramientas observado**: en una prueba de humo, al pedirle listar un directorio el modelo recurre a una herramienta `list_dir`, mientras que el harness de evaluación solo expone `bash`.
+- **Verificación escasa**: solo el 3,4% del corpus demuestra verificación después de editar un fichero; la ronda 2 se dirige a este hueco.
+- **Idioma**: solo inglés; no hay soporte multilingüe declarado.
+- **Formato de decodificación**: usar `skip_special_tokens=True` por sí solo produce salidas corruptas como `finalREADY`; es obligatorio parsear los marcadores de canal harmony.
+- **Una llamada por mensaje**: la plantilla permite una única llamada a herramienta por mensaje, lo que limita el paralelismo de acciones.
+- **Cuantización no trivial**: 289 tensores quedan en F32, Q6_K ocupa lo mismo que Q8_0, y el delta de calidad de MXFP4_MOE debe medirse antes de asumirlo lossless.
+- **Licencia**: uso comercial gratuito solo por debajo de 10 M USD de ingresos anuales agregados del grupo; por encima se requiere licencia enterprise. Verificar también las condiciones del modelo base `openai/gpt-oss-20b`.
+- **Riesgo de alucinación**: no se documenta ninguna mitigación específica; al ser un SFT sobre trazas de agentes, puede generar llamadas a herramientas inexistentes en el entorno de destino.
+- **Estado provisional**: la publicación corresponde a la ronda 1 y la model card indica que se actualizará o retirará la afirmación de capacidad agéntica tras la evaluación.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/theatechcorporation/amaara-code-20b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/theatechcorporation/amaara-code-20b-GGUF
+- Licencia A-Tech Model License v1.0: https://huggingface.co/theatechcorporation/amaara-code-20b-GGUF/blob/main/LICENSE
+- Licencia enterprise: https://theatechcorporation.com/enterprise
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
-- No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.
+- Comunidad AI Owner's Club: https://www.skool.com/open-source-ai-builders-club/about

@@ -2,86 +2,93 @@
 
 ## Resumen
 
-Hy-MT2-1.8B-NPU2 es una adaptación del modelo de traducción multilingüe Hy-MT2-1.8B de Tencent, optimizada por FastFlowLM para ejecutarse en unidades de procesamiento neuronal (NPU) de AMD Ryzen AI. El modelo original, desarrollado por el equipo de Hunyuan de Tencent, es un transformer denso de 1.800 millones de parámetros diseñado para traducción entre 33 idiomas, con capacidad de seguir instrucciones de traducción complejas en múltiples lenguas. Esta versión NPU2 está pensada para despliegue en dispositivos con NPU AMD, aprovechando la infraestructura de FastFlowLM que permite ejecutar modelos con contextos de hasta 256k tokens y una eficiencia energética superior a las soluciones basadas en GPU.
+Hy-MT2-1.8B-NPU2 es una variante del modelo de traducción Hy-MT2-1.8B, desarrollado por Tencent Hunyuan, empaquetada por FastFlowLM para su despliegue en unidades de procesamiento neuronal (NPU). Forma parte de la familia Hy-MT2, compuesta por tres tamanos (1.8B, 7B y 30B-A3B MoE), disenada especificamente para traduccion multilingue en escenarios reales complejos y con capacidad de seguir instrucciones de traduccion en multiples idiomas.
 
-La relevancia de este modelo radica en su doble vertiente: por un lado, hereda las capacidades de traducción de la familia Hy-MT2, que según sus desarrolladores supera en modo "fast-thinking" a modelos abiertos como DeepSeek-V4-Pro y Kimi K2.6 en las versiones de 7B y 30B; por otro, su adaptación a NPU lo convierte en una opción viable para aplicaciones de traducción en edge computing, con un tamaño de repositorio de 1,5 GB y la posibilidad de cuantización extrema (hasta 1,25 bits) que reduce el almacenamiento a 440 MB. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
+El modelo cubre traduccion entre 33 idiomas, incluidos pares de baja representacion como tibetano, mongol, uigur, jemer, birmano o guyarati. Segun la model card, la variante de 1.8B supera en rendimiento global a APIs comerciales mainstream como las de Microsoft y Doubao, lo que lo posiciona como una opcion ligera y competitiva para traduccion en produccion.
+
+La relevancia actual del modelo radica en su enfoque "fast-thinking" (sin cadena de razonamiento extendida) y en las tecnicas de cuantizacion extrema de AngelSlim, que reducen el modelo a 440 MB en 1.25 bits y mejoran la velocidad de inferencia 1,5x, habilitando despliegue en dispositivo y en NPU. La licencia Apache 2.0 facilita su adopcion comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (arquitectura Hunyuan v1, tag `hunyuan_v1_dense`) |
-| Parametros totales | 1.800 millones (1.8B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (FastFlowLM soporta hasta 256k en su plataforma, pero no se especifica para este modelo) |
-| Tipos de cuantizacion | No disponible para esta version NPU2; el modelo original ofrece FP8, GGUF, 2-bit y 1.25-bit (AngelSlim) |
+| Arquitectura | Transformer denso (tag `hunyuan_v1_dense`), familia Hy-MT2 |
+| Parametros totales | 1.8B |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP8, GGUF 2 bits, GGUF 1.25 bits (AngelSlim); esta variante NPU2 |
 | Idiomas soportados | 33: zh, en, fr, pt, es, ja, tr, ru, ar, ko, th, it, de, vi, ms, id, tl, hi, pl, cs, nl, km, my, fa, gu, ur, te, mr, he, bn, ta, uk, bo, kk, mn, ug |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (probablemente safetensors, dado el tamaño del repo de 1,5 GB) |
+| Formato de pesos | no disponible para esta variante (el repo ocupa 3,2 GB); la familia ofrece safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Hy-MT2-1.8B es un transformer denso de 1.800 millones de parámetros, desarrollado por Tencent Hunyuan, especializado en traducción multilingüe. La arquitectura sigue el diseño de la serie Hunyuan v1, con atención completa y sin mecanismos de mezcla de expertos (MoE), lo que lo diferencia de la variante de 30B-A3B que sí es MoE. El entrenamiento se centró en tareas de traducción entre 33 idiomas, con énfasis en escenarios del mundo real, incluyendo dominios específicos y seguimiento de instrucciones de traducción. La model card menciona que el modelo es "fast-thinking", lo que sugiere un entrenamiento orientado a generar traducciones directas sin razonamiento extenso, aunque no se detallan los datos de entrenamiento (número de tokens, composición del dataset) ni si se utilizaron técnicas como RLHF o DPO. La versión NPU2 de FastFlowLM añade una capa de optimización para NPUs AMD, probablemente mediante cuantización y kernels específicos, aunque los detalles técnicos de esta adaptación no están documentados en la información disponible.
+Hy-MT2-1.8B es un transformer denso de 1.800 millones de parametros, identificado en Hugging Face con la arquitectura `hunyuan_v1_dense`. La familia Hy-MT2 se presenta como modelos de traduccion "fast-thinking", es decir, orientados a producir traducciones directamente sin cadenas de razonamiento largas, lo que reduce latencia y coste de inferencia. El modelo esta especializado en seguir instrucciones de traduccion (idioma origen, idioma destino, glosarios de terminologia) en varios idiomas de prompt.
+
+La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Si se menciona que la familia se evaluo en tareas generales, de negocio real, de dominio especifico y de seguimiento de instrucciones de traduccion, y que se publico junto al benchmark IFMTBench para medir la capacidad de seguir instrucciones de traduccion. La innovacion tecnica destacable es la cuantizacion extrema de AngelSlim (1.25 bits, 440 MB) que habilita despliegue en dispositivo con una mejora de velocidad de 1,5x.
 
 ## Capacidades
 
-- Traducción multilingüe entre 33 idiomas, cubriendo las principales lenguas europeas, asiáticas y de Oriente Medio.
-- Seguimiento de instrucciones de traducción en múltiples idiomas, incluyendo especificación de idioma de origen y destino, y restricciones de formato (solo salida traducida).
-- Soporte de terminología personalizada: el modelo acepta pares de traducción de referencia para mantener consistencia en dominios especializados.
-- Traducción de textos largos con contexto, gracias a la ventana de contexto amplia que permite FastFlowLM (hasta 256k en su plataforma, aunque no se confirma para este modelo específico).
-- Capacidad de traducción en modo "fast-thinking", generando resultados directos sin pasos intermedios, adecuado para aplicaciones en tiempo real.
-- Integración con el ecosistema FastFlowLM para despliegue en NPUs AMD, con soporte de cuantización extrema (1.25 bits) para reducir el footprint de memoria.
+- Traduccion automatica multilingue entre 33 idiomas, incluidos pares de bajos recursos (bo, kk, mn, ug, km, my, gu, ur, te, mr).
+- Seguimiento de instrucciones de traduccion en multiples idiomas de prompt (la model card muestra ejemplos en chino e ingles).
+- Soporte de glosarios y terminologia controlada mediante prompts de referencia ("`{text}` se traduce como `{text}`").
+- Traduccion con control de idioma origen y destino mediante nombres completos de idioma.
+- Modo "fast-thinking": generacion directa de la traduccion sin razonamiento extendido.
+- Integracion con la skill Hy-MT2-Translator para pipelines de traduccion.
+- No se documentan capacidades de tool calling, agentes, vision, audio ni codigo en la informacion disponible.
 
 ## Casos de uso
 
-- Traducción de subtítulos para vídeo: el modelo puede procesar diálogos de forma secuencial, manteniendo coherencia terminológica entre escenas, gracias a su capacidad de seguir instrucciones y su contexto amplio. Es adecuado para plataformas de streaming que necesitan traducción automática en múltiples idiomas.
-- Atención al cliente multilingüe: integrado en sistemas de chat, puede traducir consultas de clientes en tiempo real entre los 33 idiomas soportados, permitiendo a agentes humanos responder sin barreras lingüísticas. Su modo "fast-thinking" reduce la latencia en conversaciones interactivas.
-- Localización de documentos técnicos: empresas que necesitan traducir manuales, especificaciones o documentación legal pueden usar el modelo con terminología personalizada, proporcionando pares de traducción para garantizar consistencia en términos técnicos.
-- Traducción de contenido generado por usuarios en redes sociales: el modelo puede procesar grandes volúmenes de texto corto (comentarios, reseñas) con alta velocidad, gracias a su optimización para NPU y su tamaño reducido, ideal para despliegue en servidores edge.
-- Asistentes de viaje y turismo: aplicaciones móviles que ofrecen traducción de frases comunes o menús, ejecutándose localmente en dispositivos con NPU AMD, sin necesidad de conexión a internet, gracias a la cuantización de 1.25 bits que reduce el modelo a 440 MB.
-- Traducción de correos electrónicos y comunicaciones empresariales: el modelo puede integrarse en clientes de correo para traducir mensajes entrantes y salientes, manteniendo el tono y la formalidad mediante instrucciones específicas, y soportando los 33 idiomas de la empresa.
+- Traduccion de documentacion tecnica multilingue: el modelo puede traducir manuales y guias entre los 33 idiomas soportados, con soporte de glosarios para mantener consistencia terminologica en terminos tecnicos.
+- Localizacion de productos y sitios web: traduccion de cadenas de interfaz y contenido de marketing a idiomas europeos y asiaticos, con instrucciones de estilo mediante prompt.
+- Atencion al cliente multilingue: traduccion en tiempo real de mensajes de soporte entre clientes y agentes, aprovechando el modo fast-thinking para baja latencia.
+- Subtitulado y traduccion audiovisual: la familia Hy-MT2 patrocina la tarea de traduccion de subtitulos de video de WMT26, lo que respalda su uso en este escenario.
+- Traduccion en dispositivo o en el borde: la cuantizacion extrema (440 MB en 1.25 bits) y esta variante NPU permiten desplegar traduccion offline en hardware de bajas prestaciones.
+- Traduccion de contenido para comercio internacional: conversion de fichas de producto y correspondencia comercial entre idiomas de mercados emergentes (turco, arabe, hindi, vietnamita, tailandes, etc.).
+- Procesamiento de contenido generado por usuarios: moderacion y traduccion de comentarios y resenas en plataformas con audiencia global.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks detallados en la informacion disponible. La model card del modelo original menciona que las versiones de 7B y 30B-A3B superan a DeepSeek-V4-Pro y Kimi K2.6 en modo "fast-thinking", y que la versión 1.8B supera a APIs comerciales de Microsoft y Doubao en evaluaciones multidimensionales, pero no se proporcionan cifras concretas (ni en el texto ni en la imagen referenciada). Tampoco se especifican resultados para esta versión NPU2 específica. Se recomienda consultar el reporte técnico en arxiv (2605.22064) para datos cuantitativos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que el modelo de 1.8B supera globalmente a APIs comerciales mainstream como Microsoft y Doubao, y que los modelos de 7B y 30B-A3B superan a DeepSeek-V4-Pro y Kimi K2.6 en modo fast-thinking, pero no se proporcionan cifras numericas en el texto disponible.
 
 ## Requisitos de hardware
 
-- Este modelo está específicamente optimizado para NPUs AMD Ryzen AI, por lo que requiere un dispositivo con dicha NPU (por ejemplo, procesadores AMD Ryzen AI serie 300 o superiores).
-- Con la cuantización extrema de 1.25 bits (AngelSlim), el modelo ocupa aproximadamente 440 MB, lo que permite su ejecución en dispositivos con memoria unificada limitada, como portátiles o mini-PCs con NPU.
-- La plataforma FastFlowLM ofrece una experiencia de un solo comando para instalar y ejecutar el modelo, con soporte de contextos de hasta 256k tokens, aunque la VRAM o memoria NPU necesaria no está especificada.
-- Para inferencia en GPU tradicional, se puede usar el modelo original Hy-MT2-1.8B (no la versión NPU2), que requiere aproximadamente 4 GB de VRAM en FP16, o menos con cuantización FP8 (2 GB) o GGUF (variable).
-- Opciones de despliegue: FastFlowLM para NPU AMD; para GPU, se puede usar vLLM, llama.cpp u Ollama con las versiones GGUF del modelo original.
-- La latencia y el throughput no están documentados para esta versión NPU2; la model card indica que la cuantización 1.25-bit mejora la velocidad de inferencia en 1.5x respecto al modelo sin cuantizar, pero no se dan valores absolutos.
+- VRAM estimada: no disponible para esta variante NPU2. Como referencia, el repo ocupa 3,2 GB; en FP16 el modelo de 1.8B requiere aproximadamente 3,6 GB de memoria, y en las cuantizaciones GGUF de 2 bits y 1.25 bits el peso se reduce hasta 440 MB.
+- GPU recomendadas: no disponible para esta variante. Para el modelo base de 1.8B, cualquier GPU consumer con 4-6 GB de VRAM es suficiente en cuantizacion.
+- Cabe en GPU consumer: si, en el modelo base; esta variante esta orientada a NPU.
+- Opciones de despliegue: transformers (libreria declarada); la familia ofrece variantes GGUF para llama.cpp y FP8. No se documentan opciones vLLM, TGI u Ollama en la informacion disponible.
+- Latencia y throughput: la cuantizacion 1.25 bits de AngelSlim mejora la velocidad de inferencia 1,5x segun la model card; no se proporcionan cifras absolutas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos específicos para esta versión NPU2. Sin embargo, el modelo base Hy-MT2-1.8B puede compararse cualitativamente con otras alternativas de traducción multilingüe de tamaño similar:
-
-| Modelo | Parametros | Idiomas | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| Hy-MT2-1.8B (base) | 1.8B | 33 | No especificado | Apache 2.0 | Optimizado para traducción, supera a APIs comerciales según Tencent |
-| NLLB-200-1.3B (Meta) | 1.3B | 200 | 512 tokens | CC-BY-NC | Amplia cobertura de idiomas, pero contexto limitado y sin seguimiento de instrucciones |
-| M2M-100-1.2B (Meta) | 1.2B | 100 | 1024 tokens | MIT | Traducción directa sin inglés como puente, pero sin soporte de instrucciones |
-| Gemma-2-2B (Google) | 2.6B | 28 (multilingüe) | 8192 tokens | Gemma license | Modelo generalista, no especializado en traducción, pero con mejor contexto |
-
-La versión NPU2 añade la ventaja de ejecución en hardware de bajo consumo, lo que la diferencia de las alternativas que requieren GPU o CPU potente.
+| Hy-MT2-1.8B-NPU2 | 1.8B | no disponible | 33 | Apache 2.0 | Variante NPU, cuantizacion extrema disponible |
+| Hy-MT2-7B | 7B | no disponible | 33 | Apache 2.0 | Mayor calidad, requiere mas memoria |
+| Hy-MT2-30B-A3B | 30B (3B activos, MoE) | no disponible | 33 | Apache 2.0 | Mayor rendimiento, superior a DeepSeek-V4-Pro y Kimi K2.6 segun la model card |
+| HY-MT1.5-1.8B | 1.8B | no disponible | no disponible | no disponible | Generacion anterior de la familia |
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos para este modelo, pero al ser un modelo de traducción entrenado con datos multilingües, puede reflejar sesgos presentes en los corpus de entrenamiento, especialmente en pares de idiomas con menos recursos.
-- Riesgo de alucinación en traducciones de textos ambiguos o con jerga muy especializada; el modelo puede generar traducciones plausibles pero incorrectas si el contexto no es claro.
-- La longitud de contexto no está confirmada para esta versión NPU2; aunque FastFlowLM soporta hasta 256k, el modelo base podría tener limitaciones inferiores, lo que afectaría a documentos muy largos.
-- La cobertura de 33 idiomas es amplia pero no exhaustiva; idiomas minoritarios o variantes dialectales pueden no estar bien soportados.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que la adaptación NPU2 de FastFlowLM no introduzca restricciones adicionales (no se han encontrado en la información disponible).
-- Para producción, se recomienda validar la calidad de traducción en el dominio específico de uso, ya que los benchmarks publicados son limitados y no cubren todos los escenarios.
+- No se documentan sesgos conocidos en la informacion disponible; al ser un modelo de traduccion, puede heredar sesgos de sus datos de entrenamiento.
+- Riesgo de alucinacion: no cuantificado en la model card; en traduccion se manifiesta como omisiones, adiciones o terminologia inventada.
+- Longitud de contexto no disponible: no se puede garantizar el rendimiento en documentos largos sin verificar experimentalmente.
+- El rendimiento por par de idiomas puede variar; los pares de bajos recursos (bo, ug, mn, km, my) probablemente tengan menor calidad que los pares mayoritarios, aunque no se aportan cifras.
+- Esta variante NPU2 esta empaquetada por un tercero (FastFlowLM) y no por Tencent; conviene validar la integridad y el soporte de la variante frente al modelo oficial.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base y de las dependencias de despliegue.
+- No se documentan capacidades de tool calling ni de agente; no debe asumirse su uso en pipelines que requieran function calling.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/FastFlowLM/Hy-MT2-1.8B-NPU2
-- Repositorio oficial de Hy-MT2 (Tencent): https://github.com/Tencent-Hunyuan/Hy-MT2
-- Reporte técnico de Hy-MT2 (arxiv): https://arxiv.org/pdf/2605.22064
-- Sitio de FastFlowLM: https://fastflowlm.com/
-- Repositorio de FastFlowLM en GitHub: https://github.com/ROCm/FastFlowLM
-- Documentación de modelos de FastFlowLM: https://fastflowlm.com/docs/models/
-- Colección de modelos Hy-MT2 en Hugging Face: https://huggingface.co/collections/tencent/hy-mt2
+- [Hugging Face: FastFlowLM/Hy-MT2-1.8B-NPU2](https://huggingface.co/FastFlowLM/Hy-MT2-1.8B-NPU2)
+- [Modelo base Hy-MT2-1.8B](https://huggingface.co/tencent/Hy-MT2-1.8B)
+- [Coleccion Hy-MT2 en Hugging Face](https://huggingface.co/collections/tencent/hy-mt2)
+- [Coleccion Hy-MT2 en ModelScope](https://modelscope.cn/collections/Tencent-Hunyuan/Hy-MT2)
+- [Informe tecnico Hy-MT2 (arXiv)](https://arxiv.org/pdf/2605.22064)
+- [GitHub Tencent-Hunyuan/Hy-MT2](https://github.com/Tencent-Hunyuan/Hy-MT2)
+- [AngelSlim (cuantizacion)](https://github.com/Tencent/AngelSlim/tree/main)
+- [Sitio oficial Tencent AI Studio](https://aistudio.tencent.com/llm/en?tabIndex=0)
+- [Skill Hy-MT2-Translator en ClawHub](https://clawhub.ai/tencent-adm/hy-mt2-translator-skill)
+- [Skill Hy-MT2-Translator en SkillHub](https://skillhub.cn/skills/hy-mt2-translator)
+- [WMT26 tarea de traduccion de subtitulos de video](https://www2.statmt.org/wmt26/video-subtitle-translation.html)
+- [WMT26 tarea general de traduccion automatica](https://www2.statmt.org/wmt26/translation-task.html)

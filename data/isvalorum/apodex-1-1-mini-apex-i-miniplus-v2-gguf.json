@@ -48,7 +48,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 696,
+  "downloads_30d": 699,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
@@ -68,31 +68,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "claude-mythos · GitHub Topics · GitHub",
-      "url": "https://github.com/topics/claude-mythos",
-      "snippet": "May 23, 2026 · ai ml torch pytorch attention deepmind claude sonnet jax gpt-5 anthropic claude-ai claude-sonnet looped-transformers …"
-    },
-    {
-      "title": "Claude Code Router - GitHub",
-      "url": "https://github.com/musistudio/claude-code-router",
-      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …"
-    },
-    {
-      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
-      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
-      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
-    },
-    {
-      "title": "Cách tạo PowerPoint bằng Claude AI đơn giản và chi tiết",
-      "url": "https://cellphones.com.vn/sforum/cach-tao-powerpoint-bang-claude-ai",
-      "snippet": "May 31, 2026 · Tạo PowerPoint bằng Claude AI đang trở thành một xu hướng mới trong cách chuẩn bị bài thuyết trình hiện đại."
-    },
-    {
-      "title": "Claude 发布桌面端，使用体验怎么样？ - 知乎",
-      "url": "https://www.zhihu.com/question/1964305699719837025",
-      "snippet": "Claude是一款备受海外创作者和开发者喜爱的AI工具，在长文本处理和复杂推理方面表现卓越，其3.7Sonnet版本在代码能力方面尤为 …"
-    }
-  ]
+  "sources": []
 }

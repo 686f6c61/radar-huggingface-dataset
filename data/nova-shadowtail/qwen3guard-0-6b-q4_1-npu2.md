@@ -2,93 +2,93 @@
 
 ## Resumen
 
-Qwen3Guard-0.6B-Q4_1-NPU2 es una cuantizacion del modelo de moderacion Qwen3Guard-Gen-0.6B, publicada por el usuario nova-shadowtail (Dr.Nova_Shadowtail). No se trata de un modelo nuevo entrenado desde cero, sino de una conversion del modelo base de Qwen (familia Qwen3Guard) a un formato que permite ejecutarlo sobre las NPU de AMD en equipos Ryzen mediante el runtime FastFlowLM, sobre Fedora 44. El repositorio incluye el fichero `model.q4nx` junto con `config.json`, `tokenizer.json` y `tokenizer_config.json`, ademas del GGUF del que se convirtio.
+Qwen3Guard-0.6B-Q4_1-NPU2 es una cuantización comunitaria del modelo de moderación Qwen3Guard-Gen-0.6B, desarrollado originalmente por el equipo Qwen de Alibaba. El modelo base es un modelo generativo de clasificación de seguridad construido sobre la arquitectura Qwen3, entrenado sobre un corpus de 1,19 millones de pares prompt-respuesta etiquetados por seguridad. Su función no es conversacional general, sino evaluar si un texto (prompt de usuario o respuesta de un modelo) es seguro, controvertido o inseguro, y clasificar la categoría de riesgo.
 
-El modelo original, Qwen3Guard-Gen-0.6B, forma parte de la serie Qwen3Guard de Qwen: un conjunto de modelos de seguridad y moderacion construidos sobre la arquitectura Qwen3 y entrenados con un corpus de 1,19 millones de prompts y respuestas etiquetados por nivel de seguridad. La serie cubre tres tamanos (0.6B, 4B y 8B) y dos variantes: Qwen3Guard-Gen, que formula la clasificacion de seguridad como una tarea de instrucciones generativa, y Qwen3Guard-Stream, que incorpora una cabeza de clasificacion a nivel de token para monitorizacion en tiempo real durante la generacion.
+La versión aquí descrita la publica el usuario nova-shadowtail y su propósito concreto es hacer ejecutable el modelo en las NPU de AMD (procesadores Ryzen con unidad NPU) bajo Fedora 44 mediante el runtime FastFlowLM. Para ello se convirtió el modelo a GGUF en cuantización Q4_1 con los scripts de llama.cpp y posteriormente se transformó al formato propietario `model.q4nx` que consume FastFlowLM, usando la sección de exportación de Unsloth.
 
-Su relevancia actual esta en el nicho del despliegue en local sobre hardware de consumo con aceleracion NPU: al tratarse de un modelo de menos de mil millones de parametros cuantizado a Q4_1, permite ejecutar moderacion de contenido en un portatil o mini-PC con Ryzen sin depender de GPU dedicada ni de servicios en la nube. El repositorio acumula 0 descargas y 1 "like" en el momento de la consulta, por lo que es un artefacto de nicho y de muy baja difusion.
+Es relevante porque permite desplegar un clasificador de seguridad de 0,75 mil millones de parámetros en hardware de consumo con NPU integrada, sin GPU dedicada, lo que facilita filtrado de contenido en local y con baja latencia. El modelo base soporta 119 idiomas y dialectos según su documentación original, aunque la model card de esta cuantización solo declara inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only basado en Qwen3 (variante generativa Qwen3Guard-Gen) |
-| Parametros totales | 751.632.384 (aproximadamente 0,75 mil millones) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_1 en formato `model.q4nx` para NPU; se incluye tambien el GGUF de origen |
-| Idiomas soportados | el modelo original declara 119 idiomas y dialectos; el repositorio de la cuantizacion declara unicamente `en` |
+| Arquitectura | Transformer decoder-only (base Qwen3), variante generativa de clasificación de seguridad |
+| Parametros totales | 751.632.384 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Q4_1 (GGUF) convertido a `model.q4nx` para FastFlowLM |
+| Idiomas soportados | Inglés declarado en esta cuantización; el modelo base declara 119 idiomas y dialectos |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (modelo base), GGUF y `model.q4nx` (este repositorio) |
+| Formato de pesos | GGUF (Q4_1) y formato propietario `model.q4nx` de FastFlowLM; incluye config.json, tokenizer.json y tokenizer_config.json |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3Guard-Gen-0.6B es un transformer decoder-only de la familia Qwen3, especializado en moderacion de contenido. La variante "Gen" reformula la clasificacion de seguridad como una tarea de seguimiento de instrucciones: el modelo no devuelve una probabilidad, sino una salida textual estructurada con campos como `Safety: Safe|Unsafe|Controversial`, la lista de categorias de riesgo detectadas y, en la moderacion de respuestas, un campo `Refusal: Yes|No`. El entrenamiento se realizo sobre un conjunto de 1,19 millones de prompts y respuestas etiquetados por seguridad. La informacion disponible no detalla el numero de tokens, la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO.
+El modelo base Qwen3Guard-Gen-0.6B es un transformer decoder-only de la familia Qwen3, ajustado para tratar la clasificación de seguridad como una tarea de seguimiento de instrucciones: recibe un prompt (o un par prompt-respuesta) y genera una salida estructurada con etiquetas `Safety: Safe|Unsafe|Controversial`, `Categories: ...` y, en el caso de moderación de respuestas, `Refusal: Yes|No`. El entrenamiento se realizó sobre un dataset de 1,19 millones de prompts y respuestas etiquetados por seguridad, según el informe técnico de Qwen3Guard (arXiv:2510.14276). La serie incluye variantes Gen (generativa) y Stream (con cabeza de clasificación a nivel de token para monitorización en tiempo real); esta ficha corresponde a la variante Gen.
 
-La innovacion del repositorio que nos ocupa no esta en el entrenamiento, sino en el empaquetado de inferencia: la cuantizacion Q4_1 en formato `q4nx` esta pensada para ejecutarse a traves de FastFlowLM sobre NPU de AMD, un objetivo distinto del habitual (GPU NVIDIA o CPU con llama.cpp). Las categorias de riesgo que maneja el modelo original son: Violent, Non-violent Illegal Acts, Sexual Content or Sexual Acts, PII, Suicide & Self-Harm, Unethical Acts, Politically Sensitive Topics, Copyright Violation, Jailbreak y None.
+La innovación principal del modelo base es la clasificación de severidad en tres niveles (safe, controversial, unsafe), que permite calibrar umbrales de bloqueo según el caso de uso, junto con un conjunto cerrado de categorías de riesgo (violencia, actos ilegales no violentos, contenido sexual, PII, suicidio y autolesión, actos no éticos, temas políticamente sensibles, violación de copyright y jailbreak). Esta cuantización concreta no modifica la arquitectura: aplica cuantización de pesos a 4 bits (Q4_1) y una conversión de formato para el runtime NPU de FastFlowLM. No se dispone de información sobre el proceso exacto de calibración de la cuantización ni sobre pérdida de precisión respecto al modelo original.
 
 ## Capacidades
 
-- Moderacion de prompts de usuario: clasifica la entrada en tres niveles de severidad (Safe, Unsafe, Controversial).
-- Moderacion de respuestas de modelo: evalua la salida generada por otro LLM e indica ademas si ha habido refusal.
-- Clasificacion por categoria de dano: devuelve una o varias etiquetas entre las diez categorias definidas (violencia, actos ilegales no violentos, contenido sexual, PII, autolesion y suicidio, actos poco eticos, temas politicamente sensibles, violacion de copyright, jailbreak y None).
-- Capacidad multilingue: el modelo original declara soporte para 119 idiomas y dialectos, aunque el repositorio de la cuantizacion solo etiqueta `en`.
-- Generacion de texto: heredada de la base Qwen3, ya que la clasificacion se resuelve como generacion de texto estructurado.
-- No hay informacion disponible sobre soporte de tool calling, function calling, uso agentico, vision, audio ni modo de razonamiento explicito para esta cuantizacion concreta.
+- Clasificación de seguridad de prompts de usuario en tres niveles: safe, controversial y unsafe.
+- Clasificación de seguridad de respuestas generadas por otros modelos, incluyendo detección de rechazo (`Refusal: Yes|No`).
+- Etiquetado de categorías de riesgo: Violent, Non-violent Illegal Acts, Sexual Content or Sexual Acts, PII, Suicide & Self-Harm, Unethical Acts, Politically Sensitive Topics, Copyright Violation, Jailbreak.
+- Detección de intentos de jailbreak.
+- Capacidad multilingüe heredada del modelo base (119 idiomas y dialectos según documentación original), aunque esta cuantización solo declara inglés.
+- Generación de texto estructurado como formato de salida de la clasificación.
+- No soporta tool calling ni function calling de forma declarada.
+- No se declaran capacidades de agente, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Moderacion de entrada en aplicaciones de chat: antes de enviar el prompt a un LLM principal, se ejecuta Qwen3Guard sobre la NPU local para descartar o marcar peticiones peligrosas, con coste practicamente nulo al ser un modelo de 0,75B cuantizado.
-- Filtrado de salidas de otro modelo generativo: se usa como segunda pasada sobre la respuesta del LLM titular para detectar contenido unsafe o etiquetas como PII o Copyright Violation antes de mostrarlo al usuario.
-- Moderacion en despliegues de borde o sin conectividad: al ejecutarse en NPU de AMD sobre Fedora, encaja en escenarios industriales, sanitarios o de defensa donde el contenido no puede salir del equipo.
-- Preprocesado de datasets: clasificacion masiva de prompts y respuestas para construir corpus de entrenamiento o evaluacion filtrados por nivel de seguridad y categoria.
-- Cumplimiento normativo y auditoria interna: generar trazas etiquetadas (Safe/Unsafe/Controversial mas categoria) para documentar controles de contenido exigidos por politicas internas o regulacion de plataformas.
-- Prototipado de guardarrailes en pipelines de CI/CD: validar de forma automatica, en cada despliegue, que un conjunto de prompts de regresion no ha dejado de clasificarse correctamente tras cambios en el sistema.
-- Investigacion en seguridad de LLM: banco de pruebas economico para estudiar jailbreaks y su deteccion, gracias a la categoria especifica de Jailbreak y a la distincion entre Unsafe y Controversial.
+- Filtrado de entrada en aplicaciones de chat: antes de enviar el prompt del usuario al modelo principal, se ejecuta Qwen3Guard para obtener la etiqueta de seguridad y bloquear o marcar prompts unsafe, con la ventaja de que el modelo de 0,6B cabe en NPU y añade latencia mínima.
+- Moderación de salidas de modelos generativos: se evalúa la respuesta del LLM principal con la variante de moderación de respuestas, que además indica si el modelo ha rechazado la petición, útil para auditar políticas de rechazo.
+- Detección de jailbreaks en producción: la categoría específica de Jailbreak permite construir un clasificador binario de intentos de manipulación sobre el modelo de seguridad, integrándolo como paso previo en el pipeline de inferencia.
+- Cumplimiento y auditoría de contenido en despliegues locales: al ejecutarse en NPU AMD Ryzen bajo Fedora con FastFlowLM, permite moderar datos sensibles sin enviarlos a la nube, lo que encaja en entornos con requisitos de privacidad.
+- Etiquetado de datasets de seguridad: el modelo puede usarse para preetiquetar grandes corpus de prompts y respuestas con las categorías de riesgo, acelerando la curación de datos de entrenamiento o evaluación.
+- Servicio de moderación como API: mediante `flm serve Qwen3Guard:0.6b --port 8080` se expone el modelo como servidor HTTP, lo que permite integrarlo como microservicio de moderación en arquitecturas existentes.
+- Protección de aplicaciones educativas o infantiles: el nivel intermedio "controversial" permite aplicar políticas más estrictas en contextos sensibles sin bloquear todo el contenido dudoso de forma binaria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del modelo original afirma que Qwen3Guard-Gen alcanza rendimiento de vanguardia en diversos benchmarks de seguridad, tanto en clasificacion de prompts como de respuestas, en ingles, chino y tareas multilingues, pero no se proporcionan cifras concretas (MMLU, HumanEval, GSM8K ni metricas de moderacion) en el material consultado. El autor de la cuantizacion tampoco publica mediciones propias de latencia o throughput sobre NPU.
+No se han publicado resultados de benchmarks en la informacion disponible para esta cuantización concreta. El modelo base Qwen3Guard-Gen-0.6B declara resultados state-of-the-art en benchmarks de seguridad según su model card original, pero no se proporcionan cifras numéricas en la información disponible, por lo que no se presentan tablas comparativas.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: con 751.632.384 parametros en Q4_1 (aproximadamente 4,5 bits por peso), el peso del modelo ronda los 0,4-0,5 GB; el repositorio completo ocupa 1,2 GB porque incluye tambien el GGUF de origen.
-- Hardware de destino: NPU integrada en procesadores AMD Ryzen, ejecutada mediante FastFlowLM (FLM) sobre Fedora 44. Es el escenario para el que se construyo esta cuantizacion.
-- GPU dedicada: no es necesaria. Al ser un modelo sub-1B cuantizado, cabe con holgura en cualquier GPU de consumo moderna (por ejemplo, RTX 3060/4060 en adelante) e incluso en CPU.
-- Despliegue: el flujo indicado por el autor usa `pip install flm-add`, variables de entorno `FLM_CONFIG_PATH` y `FLM_XCLBIN_PATH`, y los comandos `flm-add`, `flm run` y `flm serve --port 8080` para exponerlo como servidor de API. El GGUF incluido permite alternativas como llama.cpp u Ollama, aunque el formato `q4nx` esta orientado a NPU.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo en ninguna de las configuraciones.
+- VRAM estimada: al tratarse de una cuantización Q4_1 de un modelo de 751 millones de parámetros, el peso de los pesos ronda los 0,4-0,5 GB; el repositorio completo ocupa 1,2 GB incluyendo el GGUF original y los ficheros de configuración.
+- Hardware objetivo: NPU integrada en procesadores AMD Ryzen, ejecutada mediante FastFlowLM bajo Fedora 44. No se especifican modelos de Ryzen concretos en la información disponible.
+- GPU dedicadas: no son necesarias para esta variante; el modelo está empaquetado para NPU, no para CUDA.
+- Cabe en hardware de consumo: sí, por tamaño y cuantización, en equipos con NPU AMD Ryzen compatibles con FastFlowLM.
+- Opciones de despliegue: FastFlowLM (`flm run` para CLI y `flm serve` para servidor API en el puerto 8080), con instalación previa mediante `pip install flm-add`. El GGUF original incluido en el repositorio podría en teoría ejecutarse con llama.cpp u otros runtimes GGUF, aunque no se documenta en la model card.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Variante | Contexto | Idiomas | Licencia | Formato / destino |
-|---|---|---|---|---|---|---|
-| nova-shadowtail/Qwen3Guard-0.6B-Q4_1-NPU2 | 751.632.384 | Gen | no disponible | declarado `en` (base: 119) | Apache 2.0 | q4nx + GGUF, NPU AMD |
-| Qwen/Qwen3Guard-Gen-0.6B | ~0,6B | Gen | no disponible | 119 idiomas y dialectos | Apache 2.0 | safetensors, GPU/CPU |
-| Qwen3Guard-Gen-4B | ~4B | Gen | no disponible | 119 idiomas y dialectos | Apache 2.0 (segun la serie) | safetensors |
-| Qwen3Guard-Gen-8B | ~8B | Gen | no disponible | 119 idiomas y dialectos | Apache 2.0 (segun la serie) | safetensors |
-| Qwen3Guard-Stream | 0.6B / 4B / 8B | Stream (cabeza de clasificacion por token) | no disponible | 119 idiomas y dialectos | Apache 2.0 (segun la serie) | safetensors |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / despliegue |
+|---|---|---|---|---|---|
+| Qwen3Guard-0.6B-Q4_1-NPU2 (esta ficha) | 751.632.384 | No disponible | Inglés declarado (base: 119) | Apache 2.0 | GGUF Q4_1 + q4nx, NPU AMD vía FastFlowLM |
+| Qwen3Guard-Gen-0.6B (base) | 0,6B | No disponible | 119 idiomas y dialectos | Apache 2.0 | Safetensors, transformers >= 4.51.0 |
+| Qwen3Guard-Gen-4B | 4B | No disponible | 119 idiomas y dialectos | Apache 2.0 | Safetensors, transformers |
+| Qwen3Guard-Gen-8B | 8B | No disponible | 119 idiomas y dialectos | Apache 2.0 | Safetensors, transformers |
 
-Los datos de benchmarks de las alternativas no estan disponibles en la informacion consultada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento entre ellas.
+La comparativa se limita a la propia familia Qwen3Guard porque la información proporcionada no incluye datos de rendimiento ni especificaciones de modelos de moderación alternativos de otros desarrolladores. La diferencia clave de esta variante frente al modelo base es el formato y el target de hardware (NPU AMD), no la arquitectura ni el entrenamiento.
 
 ## Limitaciones y advertencias
 
-- Artefacto de terceros: la cuantizacion la publica el usuario nova-shadowtail, no Qwen. No hay garantia de equivalencia funcional exacta con el modelo base mas alla de lo que declara el autor.
-- Idiomas declarados de forma contradictoria: la model card original indica 119 idiomas y dialectos, pero el repositorio de la cuantizacion solo etiqueta `en`. El rendimiento real en idiomas distintos del ingles no esta verificado para esta conversion.
-- Repositorio practicamente sin uso: 0 descargas y 1 "like" en el momento de la consulta, sin issues ni validaciones externas documentadas.
-- Riesgo de alucinacion en la clasificacion: al ser un modelo generativo que produce texto estructurado, puede devolver etiquetas mal formadas o ausentes, por lo que el parseo con expresiones regulares (como el ejemplo de la model card) debe contemplar fallos y valores nulos.
-- Falsos negativos en contenido limite: la propia distincion entre Unsafe y Controversial implica que parte del contenido danino puede quedar en la categoria intermedia y requerir una politica de actuacion propia.
-- Sesgos: no hay informacion disponible sobre evaluaciones de sesgo o equidad del modelo base ni de esta cuantizacion.
-- Dependencia del ecosistema FLM y de hardware AMD Ryzen con NPU: fuera de ese entorno, el valor del formato `q4nx` es limitado y habria que recurrir al GGUF incluido.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene revisar las condiciones del modelo base Qwen3Guard-Gen-0.6B y la atribucion del informe tecnico citado.
-- No usar como unico mecanismo de seguridad en produccion: se recomienda combinarlo con reglas deterministas y revision humana en dominios sensibles.
+- Es una cuantización comunitaria no oficial: el autor es un tercero (nova-shadowtail), no el equipo Qwen, por lo que no hay garantía de equivalencia exacta con el modelo original.
+- La cuantización Q4_1 puede degradar la precisión de clasificación respecto al modelo en precisión completa; no se han publicado métricas de esa degradación.
+- La model card de esta variante solo declara inglés, pese a que el modelo base soporta 119 idiomas; el rendimiento multilingüe de esta cuantización no está verificado.
+- El formato `model.q4nx` es específico de FastFlowLM y está atado a NPU AMD Ryzen bajo Fedora 44; no es portable a otros runtimes sin reconversión.
+- Riesgo de alucinación y de clasificación errónea inherente a un modelo de 0,6B: puede producir etiquetas incorrectas en casos límite, por lo que no debería ser el único mecanismo de moderación en producción.
+- Sesgos heredados del dataset de entrenamiento del modelo base (1,19 millones de pares etiquetados): la composición y cobertura del dataset no se detallan en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y del runtime FastFlowLM por separado.
+- No se documentan la longitud de contexto ni el rendimiento en latencia de esta variante, lo que dificulta planificar despliegues con requisitos estrictos.
 
 ## Enlaces
 
-- Repositorio de la cuantizacion en Hugging Face: https://huggingface.co/nova-shadowtail/Qwen3Guard-0.6B-Q4_1-NPU2
+- Repositorio de la cuantización: https://huggingface.co/nova-shadowtail/Qwen3Guard-0.6B-Q4_1-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-0.6B/blob/main/LICENSE
-- Articulo tecnico citado: arXiv:2510.14276 (Zhao, Haiquan et al., "Qwen3Guard Technical Report", 2025) — https://arxiv.org/abs/2510.14276
-- Blog de Qwen sobre Qwen3Guard: https://qwen.ai/blog?id=f0bbad0677edf58ba93d80a1e12ce458f7a80548&from=research.research-list
-- Repositorio GitHub de Qwen3Guard: https://github.com/QwenLM/Qwen3Guard
-- Informe tecnico de Qwen3: https://github.com/QwenLM/Qwen3/blob/main/Qwen3_Technical_Report.pdf
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a sitios homonimos sin relacion (Nova de servicios a la persona en Francia y Radio Nova).
+- Blog de Qwen3Guard: https://qwen.ai/blog?id=f0bbad0677edf58ba93d80a1e12ce458f7a80548&from=research.research-list
+- GitHub de Qwen3Guard: https://github.com/QwenLM/Qwen3Guard
+- Informe técnico de Qwen3: https://github.com/QwenLM/Qwen3/blob/main/Qwen3_Technical_Report.pdf
+- Paper Qwen3Guard (arXiv): https://arxiv.org/abs/2510.14276

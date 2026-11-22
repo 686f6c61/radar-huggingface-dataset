@@ -2,100 +2,91 @@
 
 ## Resumen
 
-Este repositorio contiene dos ficheros GGUF compactos derivados de DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, un ajuste "uncensored" de 709-L sobre una base Qwen3.8 de 27B densa e híbrida. El autor, esatapedico, publica las variantes BUDGET y STARVED, que comparten un backbone NVFP4 nativo de 448 tensores (byte a byte idéntico al de la familia con cabeza MTP) pero con el bloque MTP eliminado y los tensores de cabeza fijados a los tipos más pequeños posibles.
+Esta ficha describe un modelo derivado de la familia Qwen3.8-27B, publicado por el usuario esatapedico como una conversión GGUF de bajo presupuesto del tune comunitario «TWIN-TURBO Fable Cold Fusion 709-L Uncensored» de DavidAU. El modelo base es un transformer denso de 27B de parámetros con arquitectura híbrida declarada (Gated DeltaNet más Gated Attention), torre de visión nativa y una ventana de contexto nativa de 262.144 tokens. La versión que nos ocupa es una cuantización NVFP4 (tipo GGML 40) del backbone de 448 tensores, sin cabeza MTP de decodificación especulativa, pensada para servir el modelo en una única GPU Blackwell de 16 GB de VRAM.
 
-El objetivo declarado es que usuarios con una única tarjeta Blackwell de 16 GB puedan servir el ajuste con cuantización NVFP4 nativa (tipo GGML 40) sin la ruta de decodificación especulativa. Los dos ficheros ocupan 14,72 GB (BUDGET) y 14,59 GB (STARVED) en unidades decimales, con 26.895.998.720 parámetros totales en el modelo base y 262.144 tokens de contexto nativo.
+El problema que resuelve es de despliegue: el backbone NVFP4 nativo ocupa un espacio reducido y permite ejecutar un modelo de 27B en hardware de consumo, a costa de sacrificar precisión en la cabeza de salida y en los embeddings. El repositorio contiene dos f Ficheros: BUDGET (14,72 GB, lm_head Q3_K y token_embd Q2_K) y STARVED (14,59 GB, ambos en Q2_K). Ambos comparten el mismo backbone NVFP4 byte a byte, con 64 capas y sin bloque MTP (`nextn_predict_layers=0`).
 
-La relevancia es doble: por un lado, es un ejemplo de conversión a NVFP4 con kernel CUDA para sm_120 preservando tensores nativos sin recalibración; por otro, ilustra el compromiso entre huella de memoria y calidad al degradar únicamente la cabeza de salida y el embedding de tokens. El modelo conserva la torre de visión original, que se activa acoplando un proyector mmproj aparte.
+La relevancia actual es doble: por un lado, demuestra la viabilidad de servir modelos multimodales de 27B con contexto largo en tarjetas de 16 GB; por otro, es un ejemplo de la fragilidad del ecosistema de tunes comunitarios, donde la model card mezcla afirmaciones de rendimiento («TWIN-TURBO», «709-L», «Cold Fusion») con ingeniería real de cuantización. El número de descargas (570) y likes (1) indica una adopción marginal, y conviene tratar las capacidades declaradas con cautela hasta verificarlas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso híbrido: Gated DeltaNet + Gated Attention, 64 capas |
-| Parametros totales | 26.895.998.720 (~26,9 B) |
-| Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | Backbone NVFP4 nativo (GGML tipo 40, W4A16); lm_head Q3_K (BUDGET) o Q2_K (STARVED); token_embd Q2_K; 657 tensores F32 (normas, escalas y gates) |
-| Idiomas soportados | en, multilingual |
+| Arquitectura | Transformer denso híbrido declarado: Gated DeltaNet + Gated Attention; 64 capas; torre de visión nativa; sin cabeza MTP |
+| Parametros totales | 26.895.998.720 (~26,9B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens nativos (declarado) |
+| Tipos de cuantizacion | NVFP4 nativo (GGML tipo 40, W4A16) en backbone; BUDGET: lm_head Q3_K + token_embd Q2_K; STARVED: lm_head Q2_K + token_embd Q2_K |
+| Idiomas soportados | en, multilingual (sin lista detallada) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp), ficheros BUDGET y STARVED |
-| Tamano del repositorio | 29,3 GB |
-| Tamano por fichero | BUDGET: 14,72 GB decimales; STARVED: 14,59 GB decimales |
-| Numero de tensores por fichero | 1.107 (448 de backbone NVFP4 + 657 F32 + 2 de cabeza) |
-| Cabeza MTP | Eliminada (15 tensores retirados); `nextn_predict_layers=0`, `block_count=64` |
-| Vision | Si, mediante proyector externo `mmproj-BF16.gguf` |
-| Modelo base | DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored |
-| Pipeline | text-generation |
+| Formato de pesos | GGUF (1.107 tensores por fichero; 448 tensores NVFP4 + 657 F32 de normas, escalas y puertas + 2 tensores de cabeza) |
 
 ## Arquitectura y entrenamiento
 
-La base es un modelo denso híbrido de 27B que combina Gated DeltaNet (atención lineal) con Gated Attention clásica, repartido en 64 capas, e incorpora una torre de visión nativa que el ajuste 709-L no modifica. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; esa información no está disponible en el material proporcionado.
+La model card declara una arquitectura híbrida de 27B densos con Gated DeltaNet y Gated Attention, 64 capas, torre de visión nativa y contexto de 262.144 tokens. Es una arquitectura de atención lineal combinada con atención clásica, orientada a reducir el coste de memoria del contexto largo. El modelo original (DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored) es un tune comunitario sobre Qwen3.8-27B, con un ajuste «709-L» y etiqueta «Uncensored»; no se documentan en la información disponible ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo RLHF o DPO.
 
-La innovación relevante está en el proceso de cuantización, descrito paso a paso por el autor: primero autotraza el modelo BF16 a compressed tensors NVFP4 con esquema W4A16 sobre todos los targets lineales, dejando visión, atención lineal, lm_head y MTP en BF16 y sin calibración; después convierte el checkpoint NVFP4 a GGUF; a continuación construye cada fichero sobre el backbone NVFP4 compartido de 448 tensores, variando solo la precisión de lm_head y del embedding de tokens; y finalmente elimina los 15 tensores del bloque MTP. Los tensores NVFP4 son tipo GGML nativo 40, preservados desde el checkpoint original sin ida y vuelta de recuantización. El autor verifica la identidad byte a byte del backbone por tensor mediante SHA-256, y parchea únicamente los pares clave-valor del GGUF (nombre, descripción, licencia) sin tocar los datos tensoriales.
+El proceso de cuantización sí está detallado: auto-cuantización del base BF16 a NVFP4 con tensores comprimidos (W4A16, todas las capas lineales, visión, atención lineal, lm_head y MTP en BF16, sin calibración), conversión a GGUF y construcción de cada fichero sobre el backbone NVFP4 compartido, variando solo la precisión de lm_head y token_embd. Se eliminaron los 15 tensores MTP, dejando 1.107 tensores por fichero con `block_count=64` y `nextn_predict_layers=0`. La innovación destacable es la preservación byte a byte del backbone NVFP4 (verificada por SHA-256 por tensor) y la eliminación de la cabeza de decodificación especulativa para liberar VRAM. No hay decodificación especulativa en estas variantes.
 
 ## Capacidades
 
-- Generación de texto conversacional y continuaciones largas, con ventana nativa de 262.144 tokens.
-- Razonamiento y modo "thinking" con presets oficiales de muestreo de Qwen3.8: `temp 1.0`, `top_p 0.95`, `top_k 20`.
-- Capacidades multimodales de visión heredadas del ajuste base, siempre que se cargue un proyector `mmproj-BF16.gguf` mediante `--mmproj`.
-- Soporte multilingüe declarado en los metadatos (`en`, `multilingual`), sin detalle de cobertura por idioma.
-- Conversión sin filtros de seguridad ("uncensored", "heretic" en la denominación del ajuste base), orientada a generar contenido que los modelos alineados rechazarían.
-- Al no incluir cabeza MTP, no dispone de decodificación especulativa interna; cualquier aceleración de ese tipo debe venir de un draft model externo.
-- No se documentan en la información disponible capacidades de tool calling, function calling ni razonamiento agéntico multi-paso, ni tamaños de entrenamiento específicos para código o matemáticas.
+- Generación de texto conversacional multi-turno, con plantilla de chat corregida para tool calling (actualizaciones del 12 y 15 de septiembre de 2026).
+- Razonamiento en modo «reasoning»: el autor recomienda temperatura 0,6-0,7 para tool calling en modo razonamiento; el modo instruct para tool calling se describe como pobre.
+- Tool calling / function calling: soportado con la plantilla corregida (preserva `tool_calls`, guardas del escáner `REASON` y guarda de argumentos de tipo string).
+- Visión multimodal: torre de visión nativa, con proyector de visión de Qwen3.8 emparejado; la plantilla corrige el renderizado de tokens de visión en mensajes de imagen y vídeo.
+- Capacidades multilingües: declaradas (en, multilingual), sin lista de idiomas ni evaluación.
+- Contexto largo: ventana nativa de 262.144 tokens, útil para documentos extensos y conversaciones largas.
+- Sin decodificación especulativa: estas variantes no incluyen la cabeza MTP, por lo que no hay «draft-mtp» ni aceleración por drafter.
 
 ## Casos de uso
 
-- Inferencia local en una sola GPU Blackwell de 16 GB: el fichero BUDGET (14,72 GB) está diseñado para cargarse íntegro en una tarjeta de esa clase, permitiendo servir un modelo de ~27B sin despliegue multi-GPU.
-- Procesado de documentos largos: la ventana de 262.144 tokens permite ingerir contratos, expedientes o informes completos en una sola pasada sin troceado ni recuperación externa.
-- Análisis de imágenes con texto asociado: cargando el proyector `mmproj-BF16.gguf`, el modelo puede describir o extraer información de capturas, diagramas o documentos escaneados junto a instrucciones textuales.
-- Laboratorios de red teaming y evaluación de seguridad: al ser un ajuste sin alineación, sirve para estudiar comportamiento de modelos desinhibidos, tasas de rechazo y modos de fallo en entornos controlados.
-- Generación creativa sin restricciones temáticas: escritura de ficción, guiones o material editorial donde los filtros de seguridad de modelos alineados bloquean el contenido solicitado.
-- Prototipado de pipelines llama.cpp con NVFP4: el repositorio sirve como banco de pruebas para validar kernels CUDA de tipo GGML 40 en sm_120 y medir el coste real del backbone NVFP4 frente a alternativas Q4/Q5.
-- Despliegue de bajo coste en hardware de consumo Blackwell: si el presupuesto de VRAM es el factor limitante, la variante STARVED (14,59 GB) es el punto más bajo de la familia para ejecutar este ajuste en local.
+- Asistente conversacional local en GPU de 16 GB: con 14,6-14,7 GB de pesos, el modelo cabe en una RTX 5080/5070 Ti de 16 GB o en una GPU Blackwell de 16 GB, permitiendo un chatbot privado sin depender de la nube. Adecuado por el tamaño ajustado y la ventana de 262.144 tokens.
+- Análise de documentos largos: contratos, informes o transcripciones de hasta cientos de miles de tokens caben en el contexto nativo; útil para resumen, extracción de entidades y preguntas sobre el documento.
+- Automatización de atención al cliente: conversaciones multi-turno con historial largo gracias al contexto extendido; requiere validar la calidad del tune «Uncensored» antes de producción.
+- Procesamiento de imágenes en pipelines internos: la torre de visión nativa permite describir capturas, extraer texto de imágenes o clasificar contenido visual, con la plantilla multimodal corregida.
+- Tool calling en agentes locales: integración con APIs internas mediante function calling en modo razonamiento; útil para prototipos de agentes que ejecutan acciones acotadas.
+- Experimentación e investigación: banco de pruebas para estudiar el impacto de cuantizar la cabeza de salida (Q3_K frente a Q2_K) y la eliminación de MTP en la calidad de salida, con backbone idéntico y comparación controlada.
+- Despliegue en entornos con restricciones de privacidad: inferencia totalmente local con llama.cpp, sin enviar datos a terceros, para datos sensibles que no pueden salir de la organización.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card describe el proceso de conversión, el reparto de tensores y los presets de muestreo, pero no incluye cifras de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, ni comparaciones numéricas entre las variantes BUDGET, STARVED y los niveles con MTP.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones numéricricas con otras variantes; solo afirma que existen «accuracy trade-offs» frente a los niveles MTP superiores, sin cuantificarlos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: BUDGET ocupa 14,72 GB decimales (~13,7 GiB) y STARVED 14,59 GB (~13,6 GiB) solo en pesos. Con el proyector de visión (aproximadamente 1 GB, según la propia model card) la huella sube hasta unos 14,7 GiB, dejando un margen muy estrecho sobre una tarjeta de 16 GB para caché KV con contexto largo.
-- El autor señala explícitamente que cargar el modelo sin `--mmproj` libera ese gigabyte y es una palanca adicional para encajar contextos mayores en modo solo texto.
-- GPU compatibles: se requieren kernels CUDA para NVFP4 (GGML tipo 40) y soporte `sm_120`, es decir, arquitectura Blackwell. Quedan fuera por diseño las generaciones anteriores (RTX 3090/4090, A100, H100), que no son sm_120.
-- Tarjetas objetivo: GPU de consumo Blackwell con 16 GB de VRAM en configuración de una sola tarjeta, según el objetivo declarado por el autor.
-- Opciones de despliegue: llama.cpp en una build reciente con soporte NVFP4; el autor indica que los ficheros cargan sin la ruta `draft-mtp`. No se confirma compatibilidad con vLLM, Ollama, TGI ni otros servidores en la información proporcionada.
-- Decodificación especulativa: no disponible en estos ficheros, ya que la cabeza MTP fue eliminada explícitamente.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: 14,59 GB (STARVED) a 14,72 GB (BUDGET) solo para pesos; hay que sumar KV cache y overhead del runtime, por lo que en una tarjeta de 16 GB el margen es estrecho y conviene limitar la longitud de contexto efectiva.
+- GPU recomendadas: tarjetas Blackwell de 16 GB (RTX 5080, RTX 5070 Ti, RTX 5070, según VRAM); el autor menciona específicamente «single-16GB Blackwell card» y sm_120. En Ampere/Ada de 16 GB (RTX 4080, 4070 Ti Super) la viabilidad depende del soporte NVFP4 del build de llama.cpp.
+- Cabe en GPU de consumo: sí, en modelos de 16 GB de VRAM con soporte NVFP4; no cabe en tarjetas de 8-12 GB.
+- Opciones de despliegue: llama.cpp reciente con soporte NVFP4 (tipo GGML 40), sin ruta `draft-mtp`; Ollama u otros runners solo si su build subyacente soporta NVFP4. vLLM y TGI no están confirmados para este formato.
+- Latencia y throughput: no disponibles; no se publican medidas. La ausencia de MTP implica renunciar a la aceleración por decodificación especulativa de los niveles superiores de la familia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Cabeza MTP | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| Este repositorio (BUDGET / STARVED) | ~26,9 B | 262.144 | GGUF, NVFP4 nativo con cabezas Q3_K/Q2_K | No | apache-2.0 | 14,72 / 14,59 GB; pensado para 16 GB Blackwell |
-| esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-GGUF | ~26,9 B | 262.144 | GGUF, NVFP4 nativo con MTP | Si | no disponible en la informacion | Mismo backbone byte a byte; incluye proyector `mmproj-BF16.gguf` |
-| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored | ~26,9 B | 262.144 | BF16 | Si | no disponible en la informacion | Modelo base del ajuste, sin cuantizar |
-| unsloth/Qwen3.8-27B-GGUF | no disponible | no disponible | GGUF | no disponible | no disponible | Citado como fuente alternativa del proyector de visión |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Este modelo (BUDGET/STARVED) | ~26,9B | 262.144 | NVFP4 + Q2/Q3 en cabezas, GGUF | apache-2.0 | Hugging Face, 570 descargas |
+| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (base) | ~26,9B | 262.144 | BF16 / NVFP4 con MTP | apache-2.0 (según repo derivado) | Hugging Face |
+| esatapedico/…-NVFP4-GGUF (familia MTP) | ~26,9B | 262.144 | NVFP4 con cabeza MTP | apache-2.0 | Hugging Face |
+| Qwen3.8-27B original (referencia de arquitectura) | ~27B | 262.144 (declarado) | BF16 y múltiples GGUF | no disponible en esta información | Hugging Face |
 
-No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, formato y empaquetado.
+La comparación con modelos de otras familias (Llama, Mistral, Gemma) no está disponible en la información proporcionada; no se dispone de datos de rendimiento para establecer una comparativa numérica fiable.
 
 ## Limitaciones y advertencias
 
-- Pérdida de calidad por cuantización: la cabeza de salida y el embedding de tokens se degradan a Q3_K y Q2_K (BUDGET) o a Q2_K en ambos (STARVED). El propio autor reconoce "accuracy trade-offs" frente a los niveles con MTP, sin cuantificarlos.
-- Sin decodificación especulativa: la eliminación de los 15 tensores MTP implica renunciar a la aceleración que ofrece la familia completa.
-- Compatibilidad de hardware muy restringida: requiere kernels NVFP4 y `sm_120`. No es ejecutable en GPU anteriores a Blackwell ni, presumiblemente, en CPU, dado que la ruta está pensada para CUDA.
-- Modelo sin alineación de seguridad: el ajuste base se etiqueta como "uncensored" y "heretic". Puede generar contenido dañino, ilegal o no apto para producción sin filtros previos; requiere moderación externa en cualquier despliegue con usuarios finales.
-- Riesgo de alucinación: no se documentan evaluaciones de fidelidad factual ni de tasas de alucinación. Con 262.144 tokens de contexto, el riesgo de degradación del recuerdo en posiciones intermedias no está medido en esta ficha.
-- Idiomas: los metadatos declaran `en` y `multilingual`, sin lista de idiomas ni evaluación por lengua. El rendimiento en castellano no está documentado.
-- Licencia: el repositorio declara apache-2.0, pero el modelo base y el ajuste intermedio no llevan licencia detallada en la información disponible; conviene verificar la cadena completa de licencias antes de un uso comercial.
-- Repositorio sin tracción verificable: 0 descargas y 0 "likes" en el momento de la consulta, y sin benchmarks publicados, lo que impide validar de forma independiente las afirmaciones de calidad.
-- Nomenclatura potencialmente confusa: las etiquetas hacen referencia a "Qwen3.8" y "Qwen3.5", versiones no verificables en la información disponible.
-- Vision: activar el proyector consume aproximadamente 1 GB adicional de VRAM, lo que puede impedir encajar el contexto nativo completo en una tarjeta de 16 GB.
+- Riesgo de alucinación: no hay evaluación publicada; los tunes comunitarios «Uncensored» suelen reducir el filtrado y aumentar la probabilidad de contenido no verificado.
+- Pérdida de precisión: lm_head en Q3_K (BUDGET) o Q2_K (STARVED) y token_embd en Q2_K degradan la calidad de salida frente al base BF16; el autor reconoce «accuracy trade-offs» sin cuantificarlos.
+- Sin decodificación especulativa: la eliminación de la cabeza MTP reduce el rendimiento en tokens por segundo respecto de los niveles MTP de la familia.
+- Contexto efectivo limitado por VRAM: aunque el contexto nativo es de 262.144 tokens, en 16 GB de VRAM el KV cache reduce drásticamente la longitud utilizable; hay que ajustar `n_ctx` a la memoria disponible.
+- Tool calling frágil: el propio autor indica que el modo instruct para tool calling «stays poor» y recomienda modo razonamiento con temperatura 0,6-0,7; no apto para producción crítica sin validación.
+- Idiomas: solo se declaran en y multilingual, sin lista ni evaluación; el rendimiento en castellano no está verificado.
+- Licencia: apache-2.0 permite uso comercial, pero el modelo base es un tune comunitario cuya procedencia y términos conviene revisar; la licencia del Qwen3.8 original no se detalla en la información disponible.
+- Madurez del ecosistema: depende de builds de llama.cpp con soporte NVFP4 (tipo GGML 40) y sm_120; en hardware no Blackwell o runners sin soporte, el modelo puede no cargar.
+- Trazabilidad: el repositorio mezcla etiquetas y afirmaciones de rendimiento no verificadas; tratar la model card como material de referencia, no como especificación validada.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-BUDGET-GGUF
-- Repositorio hermano con MTP y proyector de visión: https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-BUDGET-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
-- Proyector alternativo citado: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Página de soporte del autor: https://ko-fi.com/esatapedico
-- No se han encontrado enlaces adicionales relevantes en la búsqueda web: los resultados devueltos corresponden a IRIS Software Group (documentación de instalación de IRIS Accountancy Suite) y no guardan relación con el modelo.
+- Familia NVFP4 con MTP: https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-GGUF
+- Sitio del autor: https://www.esatapedico.com
+- llama.cpp (soporte NVFP4): no se proporciona enlace específico en la información disponible
+- Papers, blogs y demos adicionales: no disponibles en la información proporcionada

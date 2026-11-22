@@ -5,7 +5,7 @@
   "author": "CLODEI",
   "url": "https://huggingface.co/CLODEI/Latxa-3-122B-A10B-NVFP4",
   "created_at": "2026-11-19T15:33:41.000Z",
-  "updated_at": "2026-11-19T15:36:37.000Z",
+  "updated_at": "2026-11-21T15:03:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

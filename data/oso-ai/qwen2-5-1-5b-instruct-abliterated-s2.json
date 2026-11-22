@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 695,
+  "downloads_30d": 706,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DHL Online Supplies Ordering",
-      "url": "https://oso.dhl.com/fr",
-      "snippet": "Bienvenue sur OSO, votre site de commande de fourniture en ligne de DHL Express. Le site est sécurisé avec un login (adresse …Read more"
-    },
-    {
-      "title": "OSO®, les produits de la mer durables et responsables",
-      "url": "https://www.oso.fr/",
-      "snippet": "OSO® met en avant une sélection de poissons d’aquaculture qui allie responsabilité et durabilité. Parmi ses produits phares, on …"
-    },
-    {
-      "title": "Oso — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Oso",
-      "snippet": "Oso est un nom de lieu notamment porté par : l’ Oso ou l’Osu, un petit fleuve côtier français qui coule en Corse et se jette dans la …"
-    },
-    {
-      "title": "Ursidae - Wikipedia, la enciclopedia libre",
-      "url": "https://es.wikipedia.org/wiki/Ursidae",
-      "snippet": "La especie más extendida es el oso pardo, que se encuentra desde Europa occidental hacia el este a través de Asia hasta las áreas …"
-    },
-    {
-      "title": "Oso - Profil du joueur 26/27 | Transfermarkt",
-      "url": "https://www.transfermarkt.fr/osotm/profil/spieler/1032280",
-      "snippet": "Jul 9, 2003 · Oso, 23, de Espagne RC Strasbourg Alsace, depuis 2026 Arrière gauche Valeur marchande: 10,0 mio. € * 9 juil. 2003 à …"
-    }
-  ]
+  "sources": []
 }

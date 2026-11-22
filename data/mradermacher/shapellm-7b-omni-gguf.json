@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/ShapeLLM-7B-omni-GGUF",
+  "slug": "mradermacher-shapellm-7b-omni-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ShapeLLM-7B-omni-GGUF",
+  "created_at": "2025-06-03T16:56:19.000Z",
+  "updated_at": "2026-11-21T23:19:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Multimodal-Large-Language-Model,mesh-generation",
+    "en",
+    "base_model:yejunliang23/ShapeLLM-7B-omni",
+    "base_model:quantized:yejunliang23/ShapeLLM-7B-omni",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 7671584256,
+  "parameters_human": "7.67B",
+  "storage_bytes": 70910193216,
+  "storage_human": "70.9 GB",
+  "context_length": 128000,
+  "base_model": "yejunliang23/ShapeLLM-7B-omni",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

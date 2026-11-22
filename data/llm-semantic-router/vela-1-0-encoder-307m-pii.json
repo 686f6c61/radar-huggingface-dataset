@@ -60,31 +60,5 @@
   "renamed_to": "vllm-sr/Vela-1.0-Encoder-307M-PII",
   "renamed_at": "2026-11-11T06:05:33.017Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Grand modèle de langage — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
-      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
-    },
-    {
-      "title": "GitHub - vllm-project/semantic-router: A programmable Mixture-of-Models ...",
-      "url": "https://github.com/vllm-project/semantic-router",
-      "snippet": "vLLM Semantic Router is a programmable routing layer for building Mixture-of-Models systems across heterogeneous LLM infrastructure. It evaluates request signals, user preferences, and application policies to select—or compose—the right model path for each request. Use it to improve quality, cost, latency, privacy, and safety without hard-coding routing logic into applications."
-    },
-    {
-      "title": "Large language model - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Large_language_model",
-      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
-    },
-    {
-      "title": "llm-semantic-router (vLLM Semantic Router) - Hugging Face",
-      "url": "https://huggingface.co/llm-semantic-router",
-      "snippet": "A Mixture-of-Models(MoM) Router that understands the request intent."
-    },
-    {
-      "title": "Classement LLM 2026 : Top 100 des meilleurs modèles d’IA comparés",
-      "url": "https://www.ia-insights.fr/classement-des-meilleurs-llm/",
-      "snippet": "Classement des 100 meilleurs LLM en 2026 : qualité, vitesse et prix comparés. Données Artificial Analysis, mises à jour …"
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "At1uri/mamba-s6-selective-state-space-engine",
+  "slug": "at1uri-mamba-s6-selective-state-space-engine",
+  "author": "At1uri",
+  "url": "https://huggingface.co/At1uri/mamba-s6-selective-state-space-engine",
+  "created_at": "2026-11-22T02:39:29.000Z",
+  "updated_at": "2026-11-22T02:39:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mamba_selective_state_space",
+    "state-space-models",
+    "mamba",
+    "s6",
+    "linear-attention",
+    "long-context",
+    "sequence-modeling",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32704,
+  "parameters_human": "32704",
+  "storage_bytes": 131568,
+  "storage_human": "131568 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "mamba-long-context-recall-benchmarks",
+      "metric": "Associative Recall Accuracy",
+      "value": 0.994
+    }
+  ],
+  "sources": []
+}

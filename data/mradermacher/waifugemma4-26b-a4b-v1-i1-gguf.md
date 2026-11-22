@@ -2,116 +2,95 @@
 
 ## Resumen
 
-WaifuGemma4-26b-a4b-v1 es un modelo de lenguaje conversacional desarrollado por hiwaifu-research, orientado a roleplay, personajes virtuales y diálogo multi-turno. Se construye sobre la familia Gemma 4 con una arquitectura de mezcla de expertos (MoE) y 25.233.142.046 parámetros totales (≈25,2 B), según los pesos en safetensors. El sufijo «a4b» del nombre sugiere un régimen de aproximadamente 4 B de parámetros activos por token, aunque ese dato no se confirma en la información disponible.
+WaifuGemma4-26b-a4b-v1-i1-GGUF es la versión cuantizada en formato GGUF del modelo hiwaifu-research/WaifuGemma4-26b-a4b-v1, un modelo de lenguaje conversacional especializado en roleplay y personajes, construido sobre la arquitectura Gemma 4 en configuración Mixture of Experts (MoE). El modelo cuenta con 25.233.142.046 parámetros totales (aproximadamente 25,2 mil millones) y la denominación "a4b" sugiere del orden de 4 mil millones de parámetros activos por token, aunque este dato no está confirmado en la información disponible. Ha sido entrenado con técnicas de RLHF y GRPO orientadas a preferencias humanas, lo que lo posiciona específicamente para diálogo de personaje y experiencias conversacionales inmersivas.
 
-La ficha que nos ocupa, publicada por el cuantizador mradermacher, no contiene el modelo original en precisión completa, sino un repositorio de cuantizaciones GGUF con calibración imatrix, pensado para ejecución local mediante llama.cpp y derivados. El modelo base incorpora etiquetas de RLHF, GRPO, reward model, human preference y arena, lo que indica una fase de alineación orientada a preferencias humanas en conversación abierta.
+La relevancia de esta ficha radica en que el repositorio de mradermacher ofrece una batería completa de cuantizaciones con calibración imatrix, desde IQ1_S (8,4 GB) hasta Q6_K (22,7 GB), lo que permite desplegar un modelo MoE de 25B en hardware de consumo con pérdidas de calidad controladas. El modelo base es multilingüe (17 idiomas declarados, incluido el español) y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial.
 
-Su relevancia práctica es doble: por un lado, cubre un nicho concreto (roleplay y personajes) sobre una arquitectura MoE de la familia Gemma 4; por otro, al distribuirse en GGUF permite desplegarlo en hardware de consumo. Como contrapartida, el repositorio acumula 0 descargas y 0 «likes», no publica benchmarks y no ofrece detalles de entrenamiento, contexto o parámetros activos, por lo que su evaluación real todavía está pendiente.
+Esta versión concreta es una cuantización de terceros: mradermacher no es el autor del modelo original, sino el encargado de generar los ficheros GGUF con imatrix a partir de los pesos originales. Para cualquier evaluación de calidad conviene referirse al modelo base hiwaifu-research/WaifuGemma4-26b-a4b-v1, ya que las cuantizaciones agresivas (Q2, IQ1, IQ2) degradan notablemente la coherencia.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), familia Gemma 4 |
-| Parametros totales | 25.233.142.046 (≈25,2 B) |
-| Parametros activos | no disponible (el nombre «a4b» sugiere ~4 B activos, sin confirmar) |
+| Arquitectura | Transformer Mixture of Experts (MoE) basada en Gemma 4 |
+| Parámetros totales | 25.233.142.046 (≈25,2 B) |
+| Parámetros activos | no disponible (la nomenclatura "a4b" sugiere ≈4 B activos, sin confirmar) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, más fichero imatrix para generar cuantizaciones propias |
-| Idiomas soportados | en, es, ru, pt, id, ar, th, fr, de, uk, vi, ja, ko, zh, tr, it, pl (17 idiomas) |
-| Licencia | gemma (Gemma Terms of Use) |
-| Formato de pesos | GGUF (repositorio de cuantizacion); el modelo base se distribuye en safetensors |
-| Repositorio | mradermacher/WaifuGemma4-26b-a4b-v1-i1-GGUF |
-| Modelo base | hiwaifu-research/WaifuGemma4-26b-a4b-v1 |
-| Tamano del repositorio | 10,6 GB |
-| Libreria declarada | transformers |
-| Fecha de creacion (segun Hugging Face) | 2026-09-18 |
+| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K, Q2_K_S, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (con imatrix) |
+| Idiomas soportados | en, es, ru, pt, id, ar, th, fr, de, uk, vi, ja, ko, zh, tr, it, pl |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (fichero imatrix separado de 0,2 GB para generar cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer con mezcla de expertos (MoE) dentro de la familia Gemma 4, con 25.233.142.046 parámetros totales. Al ser un modelo MoE, solo una fracción de los expertos se activa por token, lo que en principio reduce el coste de cómputo por token respecto a un modelo denso del mismo tamaño; sin embargo, el número exacto de parámetros activos, el número de expertos, la política de enrutamiento y el mecanismo de atención no están documentados en la información disponible.
+El modelo base emplea una arquitectura Gemma 4 en variante Mixture of Experts, con 25,2 mil millones de parámetros totales y un subconjunto de expertos activados por token (la etiqueta "a4b" apunta a unos 4 mil millones de parámetros activos, aunque no se confirma en la documentación disponible). Los tags del repositorio indican entrenamiento con RLHF y GRPO (Group Relative Policy Optimization) sobre preferencias humanas, con señales de reward model y datos de arena, un pipeline típico para alinear modelos conversacionales hacia estilos de respuesta valorados en evaluaciones humanas de roleplay.
 
-Las etiquetas del repositorio (rlhf, grpo, reward-model, human-preference, arena) apuntan a un pipeline de alineación basado en preferencias humanas, con GRPO como método de optimización y un modelo de recompensa asociado, en línea con las prácticas habituales para asistentes conversacionales y de personaje. No se especifican el número de tokens de entrenamiento, la composición del dataset, la mezcla de idiomas ni si hubo fases de SFT previas. La model card indica además que se trata de un modelo con capacidad de visión («This is a vision model»), con ficheros mmproj en el repositorio estático si existen; dado que no se listan, esa capacidad multimodal queda sin confirmar. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa, atención lineal o variantes híbridas SSM.
+La especialización declarada es el diálogo de personaje y el role-play multilingüe. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, la longitud de contexto nativa ni innovaciones técnicas específicas más allá del uso de MoE y del alineamiento por preferencias. Esta versión GGUF añade calibración imatrix (fichero de 0,2 GB), que mejora la preservación de calidad en cuantizaciones de baja precisión respecto a las cuantizaciones estáticas disponibles en el repositorio paralelo mradermacher/WaifuGemma4-26b-a4b-v1-GGUF.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con foco en mantener la coherencia de un personaje a lo largo de la conversación.
-- Roleplay y role-play de personaje: el modelo está afinado explícitamente para interpretar personajes y sostener narrativa interactiva.
-- Alineación por preferencias humanas: las etiquetas de RLHF, GRPO y reward model indican optimización para respuestas preferidas por evaluadores humanos en contextos de chat abierto.
-- Multilingüe: se declaran 17 idiomas (inglés, español, ruso, portugués, indonesio, árabe, tailandés, francés, alemán, ucraniano, vietnamita, japonés, coreano, chino, turco, italiano y polaco).
-- Capacidad de visión: mencionada en la model card como modelo de visión, con soporte mmproj opcional; no confirmada por ficheros presentes ni por documentación adicional.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Modo de razonamiento explícito (thinking mode): no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de código y matemáticas: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno orientada a personajes, con énfasis en coherencia de persona y estilo.
+- Role-play y simulación de personajes, incluyendo escenarios de ficción y diálogo inmersivo.
+- Capacidades multilingües en 17 idiomas: inglés, español, ruso, portugués, indonesio, árabe, tailandés, francés, alemán, ucraniano, vietnamita, japonés, coreano, chino, turco, italiano y polaco.
+- Alineamiento por preferencias humanas (RLHF/GRPO) que favorece respuestas naturales y engaging en contextos de rol.
+- Compatibilidad con endpoints y con el ecosistema transformers/GGUF.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
+- Modo thinking, visión o audio: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Personajes virtuales y compañía conversacional: el modelo está entrenado específicamente para interpretar personajes con personalidad estable, por lo que encaja en aplicaciones de chat de acompañamiento o entretenimiento donde la consistencia del personaje a lo largo de sesiones largas es el requisito principal.
-- Roleplay narrativo en juegos de texto y ficción interactiva: permite dirigir escenas, introducir descripciones y mantener el tono de un personaje concreto, con la ventaja de poder ejecutarse en local y evitar el envío de conversaciones a terceros.
-- Asistentes de personaje multilingües: al declarar 17 idiomas, incluido el español, permite desplegar un mismo personaje para audiencias en varios mercados sin cambiar de modelo, aunque el rendimiento por idioma no está evaluado.
-- Despliegue local y privado en GPU de consumo: en cuantizaciones Q4_K_M o Q5_K_M el modelo ocupa aproximadamente entre 15 y 18 GB, por lo que es viable en tarjetas de 24 GB como la RTX 3090 o la RTX 4090, útil para aplicaciones donde la privacidad de la conversación es crítica.
-- Generación de diálogos para guiones y prototipado de personajes: útil en preproducción de narrativa o videojuegos para generar borradores de diálogo entre personajes con voces diferenciadas, que después se revisan y editan manualmente.
-- Investigación sobre preferencias humanas y evaluación de chat: las etiquetas de reward model, human preference y arena sugieren que el modelo puede emplearse como referencia o contraparte en experimentos de evaluación comparativa de respuestas conversacionales.
-- Chatbots de atención al cliente con tono personalizado: aunque el modelo no está documentado para tareas de soporte ni se confirma tool calling, su capacidad conversacional y multilingüe permitiría prototipar flujos de atención con marca propia, siempre con validación previa y filtros de seguridad externos.
-- Base para ajuste fino posterior orientado a dominio: el modelo original en safetensors puede servir como punto de partida para LoRA o ajustes específicos de personaje o industria, teniendo en cuenta que el repositorio GGUF que nos ocupa no es apto para entrenamiento.
+- Plataformas de roleplay y compañía conversacional: el modelo está entrenado específicamente con RLHF/GRPO sobre preferencias humanas de diálogo de personaje, por lo que puede mantener personas consistentes en conversaciones largas y multilingües sin necesidad de ingeniería de prompt compleja.
+- Videojuegos narrativos con NPCs dinámicos: al ser un MoE de ~4 B activos (según la nomenclatura), la inferencia es más barata que un denso de 25B, lo que permite desplegar diálogo generativo por personaje en servidores con GPUs de gama media-alta usando cuantizaciones Q4_K_M (16,9 GB).
+- Aplicaciones de chat de acompañamiento en español: el modelo declara soporte de español y puede gestionar conversaciones multi-turno con registro emocional y de personaje, adecuado para productos de bienestar conversacional con moderación adicional.
+- Prototipado local en estaciones de trabajo: las cuantizaciones IQ3_S (12,3 GB) e IQ4_XS (14,0 GB) caben en GPUs de consumo de 16 GB, permitiendo a desarrolladores evaluar el comportamiento del modelo antes de escalar a producción.
+- Investigación en alineamiento y preferencias: los tags de reward-model, human-preference y arena lo hacen útil como punto de partida para estudiar cómo el RLHF/GRPO moldea el estilo conversacional en modelos MoE multilingües.
+- Generación de diálogo para mods y comunidades de fans: la licencia Apache 2.0 permite integrar el modelo en proyectos derivados y distribuir adaptaciones, algo relevante para ecosistemas de modding que requieren libertad de redistribución.
+- Despliegue en entornos con requisitos de privacidad: al poder ejecutarse íntegramente en local con llama.cpp u Ollama, es apto para aplicaciones de chat donde las conversaciones no deben salir de la infraestructura del cliente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K, MT-Bench ni evaluaciones de arena, y la búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo (los únicos resultados obtenidos eran foros de calculadoras gráficas y ejemplos de programación de Snake, sin relación alguna con el modelo).
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Estimación de VRAM para los pesos, calculada a partir de 25,233 B de parámetros (no incluye caché KV ni overhead del runtime):
-  - FP16/BF16 (modelo base en safetensors): ≈50 GB.
-  - Q8_0: ≈27 GB.
-  - Q6_K: ≈21 GB.
-  - Q5_K_M: ≈18 GB.
-  - Q4_K_M: ≈15-16 GB.
-  - Q3_K_M: ≈12-13 GB.
-  - Q2_K: ≈9-10 GB.
-  - IQ1_S: ≈5-6 GB.
-- GPU recomendadas: H100 80 GB o A100 80 GB para el modelo base en BF16; A100 40 GB o 2× RTX 4090 para Q8_0; RTX 3090, RTX 4090, RTX 5090 o L40S para Q4_K_M y Q5_K_M.
-- GPU de consumo: sí es viable. Con Q4_K_M cabe en tarjetas de 24 GB (RTX 3090/4090/5090) y con Q2_K o Q3_K_M en tarjetas de 12-16 GB (RTX 4070 Ti, RTX 4080, RTX 4060 Ti 16 GB). Al ser MoE, parte de los expertos puede residir en RAM del sistema con llama.cpp, a costa de latencia.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y koboldcpp para los ficheros GGUF; vLLM, TGI o SGLang para el modelo base en safetensors. El repositorio incluye un fichero imatrix para generar cuantizaciones propias con llama.cpp.
-- Latencia y throughput: no disponible. Al ser un modelo MoE con aproximadamente 4 B de parámetros activos (dato no confirmado), cabe esperar velocidades de generación superiores a las de un modelo denso de 25 B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto y KV cache):
+  - IQ1_S: 8,4 GB; IQ1_M: 8,8 GB; IQ2_XXS: 9,4 GB; IQ2_M: 10,5 GB.
+  - IQ3_XXS: 11,4 GB; IQ3_S: 12,3 GB; IQ3_M: 12,5 GB; Q3_K_M: 13,4 GB.
+  - IQ4_XS: 14,0 GB; Q4_K_S: 15,6 GB; Q4_K_M: 16,9 GB.
+  - Q5_K_M: 19,2 GB; Q6_K: 22,7 GB.
+- GPU recomendadas: para Q4_K_M y superiores, GPUs de 24 GB o más (RTX 3090, RTX 4090, A10G, L4 con cuidado, A100 40 GB, H100). Para cuantizaciones IQ3/IQ4_XS, GPUs de 16 GB (RTX 4060 Ti 16 GB, RTX 4070 Ti Super, A4000).
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con Q4_K_M/Q5_K_M, y en GPUs de 16 GB con IQ3_S o IQ4_XS. Las cuantizaciones IQ1/IQ2 caben en 12 GB pero con degradación severa de calidad según la propia model card.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). El repositorio declara compatibilidad con endpoints.
+- Latencia y throughput: no disponibles en la información proporcionada. Al ser un MoE con activación parcial, el throughput por token debería ser superior al de un denso de 25B, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato principal | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| WaifuGemma4-26b-a4b-v1 (este) | 25,2 B totales, activos no confirmados (~4 B segun nombre) | no disponible | Gemma | GGUF, safetensors | Afinado para roleplay y personajes; multilingue en 17 idiomas; sin benchmarks publicados |
-| Gemma 3 27B | 27 B densos | 128 K | Gemma | safetensors, GGUF | Modelo generalista de la misma familia; los datos de contexto y tamano proceden de su documentacion publica, no de comparaciones con este modelo |
-| Qwen3-30B-A3B | 30,5 B totales, 3,3 B activos | 128 K | Apache 2.0 | safetensors, GGUF | Alternativa MoE de tamano y regimen de activacion comparables; licencia mas permisiva; no hay comparacion de rendimiento en roleplay |
-| Mistral Small 3 (24B) | 24 B densos | 32 K (128 K en la version 3.1) | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamano similar con licencia permisiva; sin datos comparativos de calidad conversacional |
-
-No existe ninguna comparación oficial de rendimiento entre WaifuGemma4-26b-a4b-v1 y estos modelos: los datos de la tabla corresponden a las especificaciones publicas de cada familia y no a evaluaciones conjuntas.
+| WaifuGemma4-26b-a4b-v1 (este) | 25,2 B totales (≈4 B activos, sin confirmar) | no disponible | Apache 2.0 | GGUF (imatrix) | Especializado en roleplay, 17 idiomas, RLHF/GRPO |
+| WaifuGemma4-26b-a4b-v1-GGUF (estático) | 25,2 B totales | no disponible | Apache 2.0 | GGUF (estático) | Misma base, cuantizaciones sin imatrix; menor calidad a igual tamaño |
+| Modelo base hiwaifu-research/WaifuGemma4-26b-a4b-v1 | 25,2 B totales | no disponible | Apache 2.0 | safetensors/transformers | Pesos originales sin cuantizar; referencia de calidad |
+| Alternativas de roleplay de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación: no hay evaluaciones publicadas de fidelidad factual. En modelos afinados para roleplay la tasa de invención suele aumentar cuando el usuario introduce premisas ficticias, y aquí no existe ninguna medición que lo acote.
-- Sesgos: no se documenta ningún análisis de sesgos, toxicidad o seguridad. Un modelo entrenado con preferencias humanas de una comunidad concreta (roleplay, personajes) puede reproducir estereotipos de género, culturales o de relación presentes en esos datos.
-- Contenido inapropiado: los modelos de personaje suelen carecer de filtros robustos por defecto. Si se despliega en producción orientada a público general, es imprescindible añadir una capa de moderación externa.
-- Rendimiento por idioma desconocido: se declaran 17 idiomas, incluido el español, pero no hay ninguna evaluación por idioma; la cobertura declarada no garantiza calidad homogénea.
-- Longitud de contexto desconocida: no se especifica la ventana de contexto, lo que impide planificar aplicaciones de contexto largo o estimar el coste de caché KV.
-- Restricciones de licencia: el modelo se distribuye bajo la licencia Gemma (Gemma Terms of Use), que impone condiciones de uso, obligaciones de redistribución de la licencia y avisos, y una política de uso prohibido. Conviene revisarla antes de cualquier explotación comercial.
-- Es un repositorio de cuantización de un tercero: mradermacher no es el autor del modelo base, por lo que los cambios en el modelo original no se reflejan automáticamente aquí.
-- Cuantizaciones agresivas: las variantes IQ1 e IQ2 (por debajo de 10 GB) degradan de forma notable la calidad respecto a Q4_K_M o superiores. No se recomienda usarlas en producción sin una evaluación propia.
-- Validación comunitaria nula: 0 descargas y 0 «likes» en el momento de redactar esta ficha, sin informes externos, sin benchmarks y con metadatos de fecha (2026-09-18) que conviene verificar.
-- Capacidad multimodal incierta: la model card afirma que es un modelo de visión, pero no se listan ficheros mmproj, por lo que no se puede confirmar el soporte real de imagen.
-- Tool calling y uso como agente: no hay información sobre soporte de function calling ni de razonamiento multi-paso, por lo que no debería asumirse su disponibilidad sin probarlo.
-- Aviso sobre el contenido de la model card original: el README incluye comentarios internos de la herramienta de cuantización (versión de quantize, tipo de conversión, lista de quants), no documentación técnica del entrenamiento.
+- Es una cuantización de terceros: la calidad depende del tipo elegido. Las variantes IQ1_S, IQ1_M, IQ2_XXS y Q2_K_S están marcadas por el propio autor como "for the desperate" o "very low quality"; no son aptas para producción.
+- Riesgo de alucinación: como todo modelo generativo alineado por preferencias, puede inventar detalles de personaje o hechos; en roleplay esto puede ser deseable, pero es inaceptable en aplicaciones factuales.
+- Sesgos: no se documentan evaluaciones de sesgo en la información disponible; un modelo entrenado con datos de arena y preferencias humanas puede heredar sesgos de estilo, género y culturales de esos datos.
+- Contexto: la longitud de contexto nativa no está publicada; conviene verificar en el modelo base antes de diseñar aplicaciones con ventanas largas.
+- Idiomas: aunque se declaran 17 idiomas, no hay métricas de calidad por idioma; el rendimiento en español, catalán o gallego no está verificado y el modelo no declara soporte de lenguas cooficiales.
+- Licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base y de Gemma 4 (si aplica) por posibles condiciones adicionales de uso aceptable.
+- Especialización estrecha: el alineamiento hacia roleplay puede hacer que el modelo responda con estilo de personaje en consultas técnicas o de código; no es un sustituto de modelos generalistas para tareas de ingeniería.
+- Producción: no hay benchmarks publicados ni garantías de latencia; es necesario evaluar con datos propios antes de desplegar.
 
 ## Enlaces
 
-- Repositorio GGUF con imatrix: https://huggingface.co/mradermacher/WaifuGemma4-26b-a4b-v1-i1-GGUF
-- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/WaifuGemma4-26b-a4b-v1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/WaifuGemma4-26b-a4b-v1-i1-GGUF
 - Modelo base: https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1
-- Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#WaifuGemma4-26b-a4b-v1-i1-GGUF
-- Preguntas frecuentes y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Fichero imatrix: https://huggingface.co/mradermacher/WaifuGemma4-26b-a4b-v1-i1-GGUF/resolve/main/WaifuGemma4-26b-a4b-v1.imatrix.gguf
-- Guía de uso de GGUF (referencia empleada por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Gráfica comparativa de perplejidad por tipo de quant: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- nethype GmbH, empresa que cede infraestructura al cuantizador: https://www.nethype.de/
-
-Nota: las búsquedas web realizadas para esta ficha no devolvieron ningún resultado relacionado con el modelo; los únicos enlaces recuperados pertenecían a foros de calculadoras gráficas y a hilos sobre programación de un juego tipo Snake, sin relación con WaifuGemma4. Por tanto, no hay papers, blogs ni demos adicionales que enlazar.
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/WaifuGemma4-26b-a4b-v1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#WaifuGemma4-26b-a4b-v1-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfico comparativo de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png

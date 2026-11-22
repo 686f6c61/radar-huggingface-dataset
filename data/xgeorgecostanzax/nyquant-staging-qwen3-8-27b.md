@@ -2,101 +2,82 @@
 
 ## Resumen
 
-`XGeorgeCostanzaX/nyquant-staging-qwen3.8-27b` no es un modelo nuevo ni una versión publicada: es un repositorio de almacenamiento externo del laboratorio de cuantización Nyquant, que aloja builds candidatos en formato GGUF derivados de Qwen/Qwen3.8-27B, junto con sus manifiestos y sumas de verificación. El autor lo declara explícitamente como material de trabajo en curso, sin garantía de calidad, sin resultados de evaluación publicados y con ficheros que pueden ser reemplazados o sustituidos en cualquier momento. Cualquier build que supere su proceso de evaluación se publicará en un repositorio separado con una model card completa.
+Nyquant staging Qwen3.8-27B es un repositorio de artefactos de investigación del laboratorio de cuantización Nyquant, publicado bajo la cuenta de Hugging Face XGeorgeCostanzaX. No se trata de un modelo entrenado desde cero ni de un lanzamiento oficial, sino de almacenamiento externo de builds candidatos en formato GGUF derivados del modelo base Qwen/Qwen3.8-27B, junto con manifiestos de construcción, checksums y avisos de atribución. El autor indica explícitamente que nada del contenido está recomendado para uso y que los ficheros pueden sustituirse en cualquier momento.
 
-El modelo subyacente, Qwen3.8-27B, es un modelo denso de 27.300 millones de parámetros desarrollado por Alibaba Cloud, con licencia Apache 2.0, capacidad de visión nativa (texto, imagen y vídeo), ventana de contexto nativa de 262.144 tokens y soporte de razonamiento configurable, tool calling y tareas agénticas de largo horizonte. Su relevancia práctica es que cabe en una sola GPU de consumo cuando se cuantiza a 4 bits, lo que lo sitúa en la franja de modelos de ~27B ejecutables localmente con capacidades multimodal y de contexto largo.
+El repositorio tiene un tamaño de 21,2 GB y acumula 591 descargas, lo que sugiere cierto interés de la comunidad pese a la advertencia de que es material en bruto. La model card no documenta parámetros del modelo base, longitud de contexto, idiomas ni resultados de evaluación; solo describe la estructura interna de los builds (`<build-id>/<build-id>.gguf`, `MANIFEST.json` y `NOTICE`).
 
-La ficha distingue, por tanto, dos objetos: el artefacto de staging (builds GGUF con procedencia por tensor declarada en `MANIFEST.json`) y el modelo base que los origina. Los datos de arquitectura, contexto y capacidades provienen del modelo base; el repositorio de staging no aporta especificaciones propias más allá del pipeline de cuantización y la trazabilidad de tensores.
+La relevancia de este repositorio es, por tanto, metodológica más que de rendimiento: ejemplifica una práctica de trazabilidad de tensores en cuantizaciones derivadas, donde cada tensor reutilizado de otras GGUF públicas Apache-2.0 queda identificado en el manifiesto. Para desarrolladores e investigadores, resulta útil como referencia de procedencia y de gobernanza de licencias, no como modelo listo para producción.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base Qwen3.8-27B), con codificador de visión para texto, imagen y vídeo; artefacto del repositorio: cuantización GGUF de llama.cpp |
-| Parametros totales | 27,3 mil millones (modelo base) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens (262K) en el modelo base |
-| Tipos de cuantizacion | GGUF mediante llama.cpp; el repositorio no publica en la ficha la lista de tipos por tensor, que se detalla en el `MANIFEST.json` de cada build |
-| Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | Apache-2.0 (sujeta a las licencias de los tensores de origen reutilizados en cada build) |
-| Formato de pesos | GGUF (builds cuantizados); formato de los pesos originales del modelo base no disponible en la informacion |
-| Repositorio | XGeorgeCostanzaX/nyquant-staging-qwen3.8-27b |
-| Modelo base | Qwen/Qwen3.8-27B |
-| Estado | staging / no publicado; 0 descargas y 0 likes en el momento de la consulta |
+| Arquitectura | no disponible (el repositorio contiene cuantizaciones GGUF del modelo base Qwen/Qwen3.8-27B; la model card no describe la arquitectura) |
+| Parámetros totales | 496.353.280 (según metadatos de safetensors del repo; no coincide con la nomenclatura "27B" del modelo base) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | GGUF (builds candidatos; el mapa de tipos por tensor figura en el `MANIFEST.json` de cada build, no en la model card) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 (sujeta a las licencias de las fuentes reutilizadas) |
+| Formato de pesos | GGUF (compatible con llama.cpp); el repositorio también expone metadatos de safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 27,3B parámetros con Vision-Language Model nativo: procesa texto, imágenes y vídeo dentro de la misma ventana de contexto de 262K tokens. Incorpora razonamiento configurable (modo de pensamiento paso a paso activable) y está orientado por diseño a codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte, con soporte de tool calling. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación.
+La información disponible no describe la arquitectura del modelo base Qwen/Qwen3.8-27B ni su proceso de entrenamiento: no se indican tipo de transformer, composición del dataset, número de tokens, ni si hubo RLHF, DPO u otras fases de alineamiento. Lo que sí documenta la model card es el proceso de construcción de las cuantizaciones: cada build se identifica por un `build-id`, incluye un `MANIFEST.json` con el tamaño completo del fichero, su sha256, el commit de llama.cpp utilizado, el mapa de tipos por tensor y la procedencia de cada tensor (fichero público de origen o método de producción), además de un fichero `NOTICE` con la atribución de fuentes de terceros.
 
-Los artefactos del repositorio no aportan entrenamiento nuevo: son builds de cuantización. Cada directorio `<build-id>/` contiene el fichero `.gguf` candidato, un `MANIFEST.json` con el tamaño completo, el sha256, el commit de llama.cpp utilizado, el mapa de tipos por tensor y la procedencia de cada tensor (de qué fichero público se tomó o cómo se produjo), y un fichero `NOTICE` con la atribución de las fuentes de terceros. Algunos candidatos combinan tensores cuantizados propios con tensores tomados sin modificar de cuantizaciones GGUF públicas bajo Apache-2.0 del mismo modelo base. La nomenclatura de los ficheros usa el identificador de build, no el nombre de producto.
+La innovación destacable no es arquitectónica sino de trazabilidad: algunos builds candidatos combinan tensores cuantizados propios con tensores tomados sin modificar de otras cuantizaciones GGUF públicas Apache-2.0 del mismo modelo base, y el manifiesto identifica el repositorio y fichero de origen de cada tensor reutilizado. El autor señala que los resultados de evaluación solo se publican con un lanzamiento formal, tras comparaciones emparejadas de igual tamaño y tiempo de ejecución.
 
 ## Capacidades
 
-- Generación de texto con razonamiento paso a paso y modo de razonamiento configurable.
-- Comprensión de imágenes y vídeo de forma nativa (modelo vision-language), no mediante adaptadores externos.
-- Generación y asistencia de código en entornos de desarrollo.
-- Tool calling y function calling para integración con APIs y servicios externos.
-- Ejecución de tareas agénticas multi-paso de largo horizonte, apoyadas en la ventana de 262K tokens.
-- Procesamiento de contexto largo: documentos extensos, bases de código completas o transcripciones prolongadas en una sola pasada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Rendimiento en matemáticas: no hay datos específicos publicados en la información disponible.
+- No se documentan capacidades funcionales del modelo en la información disponible: la model card no describe generación de texto, razonamiento, código, matemáticas ni visión.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documentan capacidades multilingües ni lista de idiomas.
+- No se documenta ningún modo especial (thinking mode, visión, audio).
+- La única capacidad verificable del repositorio es la de servir artefactos GGUF ejecutables con llama.cpp, con manifiesto de procedencia por tensor.
 
 ## Casos de uso
 
-- Análisis de documentación técnica extensa: con 262K tokens de contexto se puede cargar un repositorio de documentación o un contrato completo y formular preguntas transversales sin troceado previo, lo que evita pérdida de referencias cruzadas entre secciones.
-- Agente de codificación en CI/CD: el soporte de tool calling permite conectar el modelo a herramientas de build, linters o gestores de incidencias para tareas de revisión automática, triaje de fallos y generación de parches dentro de un pipeline.
-- Inspección visual automatizada: al ser vision-language nativo, puede procesar capturas de interfaz, diagramas o fotogramas de vídeo para tareas de control de calidad, verificación de regresiones visuales o extracción de datos de imágenes.
-- Atención al cliente multi-turno: la ventana de 262K permite mantener el histórico completo de una conversación larga más la documentación de producto sin resumir, reduciendo la pérdida de contexto en soporte técnico especializado.
-- Investigación asistida: lectura y síntesis de artículos científicos con tablas e imágenes incrustadas, aprovechando la capacidad multimodal para interpretar figuras que un modelo solo-texto no puede procesar.
-- Despliegue local con requisitos de privacidad: las builds GGUF de 4 bits permiten ejecutar el modelo en una única GPU de consumo, lo que habilita casos con datos que no pueden salir de la infraestructura propia (legal, sanidad, datos internos).
-- Trabajo de laboratorio de cuantización: el repositorio sirve como referencia metodológica para equipos que necesiten reproducir builds, auditar la procedencia tensor a tensor o comparar mapas de tipos, gracias a los `MANIFEST.json` y a los checksums publicados.
+- Auditoría de procedencia de cuantizaciones: un equipo de cumplimiento puede inspeccionar el `MANIFEST.json` de cada build para verificar qué tensores provienen de qué repositorio público y bajo qué licencia, usando el sha256 para confirmar la integridad del fichero.
+- Reproducción de builds de cuantización: el campo con el commit de llama.cpp permite reconstruir el entorno exacto de conversión y comparar resultados entre builds candidatos.
+- Referencia de gobernanza de licencias: el patrón `NOTICE` + manifiesto sirve como plantilla para publicar derivados que mezclan tensores de varias fuentes Apache-2.0 sin perder la atribución.
+- Investigación sobre cuantización mixta: los mapas de tipos por tensor permiten estudiar qué capas se cuantizan con qué precisión y correlacionarlo con degradación de calidad en evaluaciones posteriores.
+- Pruebas de carga en llama.cpp: los GGUF candidatos pueden usarse para validar pipelines de inferencia y medir consumo de memoria antes de adoptar un build estable.
+- Formación interna: el repositorio ilustra buenas prácticas de staging de artefactos (checksums, manifiestos, separación entre staging y release) para equipos que publican modelos derivados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de staging indica explícitamente que los resultados de evaluación solo se publican junto con un release, tras comparaciones emparejadas de igual tamaño e igual tiempo de ejecución, y que ningún candidato de este repositorio ha superado ese proceso. Las fuentes web consultadas no aportan cifras de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación.
+No se han publicado resultados de benchmarks en la información disponible. El autor indica expresamente que los resultados de evaluación solo se publican con un lanzamiento formal, tras comparaciones emparejadas de igual tamaño y tiempo de ejecución, y que este repositorio no formula ninguna afirmación de calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo a partir de 27,3B parámetros, sin contar caché KV ni codificador de visión): ~54,6 GB en FP16/BF16, ~27-29 GB en cuantización de 8 bits, ~15-17 GB en cuantización de 4 bits.
-- Advertencia sobre contexto: la caché KV para 262K tokens es grande y crece con la longitud real de la secuencia; en la práctica, usar la ventana completa exige mucha más VRAM que la indicada por el peso de los parámetros.
-- GPU de centro de datos: A100 80 GB y H100 permiten FP16 o 8 bits con contexto largo; A100 40 GB queda ajustada para FP16.
-- GPU de consumo: RTX 4090 o RTX 3090 (24 GB) pueden ejecutar builds de 4 bits con contexto moderado; RTX 4080/4070 Ti Super (16 GB) al límite con cuantizaciones de 4 bits agresivas y contexto recortado.
-- Opciones de despliegue: llama.cpp (motor con el que se generan las builds), Ollama y LM Studio como envoltorios de llama.cpp, y vLLM para servir en GPU con mayor concurrencia; TGI no está confirmado en la información disponible.
-- Latencia y throughput: no disponibles; no hay mediciones publicadas ni en el repositorio ni en las fuentes consultadas.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; depende del build GGUF concreto y de su mapa de tipos por tensor, que no se detalla en la model card.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible; el repositorio no indica qué builds caben en GPU consumer.
+- Opciones de despliegue: llama.cpp (el manifiesto registra el commit de llama.cpp usado en cada build). No se documenta soporte para vLLM, TGI, Ollama ni otros motores.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Criterio | nyquant-staging (este repo) | Qwen3.8-27B (pesos oficiales) | Cuantizaciones GGUF publicas de terceros |
-|---|---|---|---|
-| Naturaleza | Builds candidatas de cuantización, sin publicar | Modelo base denso vision-language | Cuantizaciones GGUF liberadas |
-| Parametros | 27,3B (heredados del base) | 27,3B | 27,3B |
-| Contexto | 262K (heredado del base) | 262K nativo | 262K (según build) |
-| Licencia | Apache-2.0, sujeta a licencias de tensores de origen | Apache-2.0 | Apache-2.0 (habitual) |
-| Evaluacion publicada | Ninguna | No disponible en la informacion | No disponible en la informacion |
-| Estabilidad / reproducibilidad | Ficheros reemplazables en cualquier momento | Versión fijada | Depende del publicador |
-| Uso recomendado | Auditoría y experimentación interna | Producción y evaluación | Producción local |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Estado |
+|---|---|---|---|---|---|
+| Nyquant staging Qwen3.8-27B (este repo) | 496.353.280 según metadatos de safetensors; "27B" en el nombre del modelo base | no disponible | apache-2.0 | GGUF | Artefactos de staging, sin evaluación publicada |
+| Qwen/Qwen3.8-27B (modelo base) | no disponible en la información proporcionada | no disponible | apache-2.0 | no disponible | Modelo base referenciado; sin datos de rendimiento en esta ficha |
+| Otras cuantizaciones GGUF públicas del mismo base | no disponible | no disponible | apache-2.0 | GGUF | Citadas como fuente de tensores reutilizados, sin identificar en la model card |
 
-No se dispone de datos de rendimiento comparado frente a modelos de otras familias con tamaño similar, por lo que no es posible establecer una comparación cuantitativa de calidad.
+No se dispone de datos de rendimiento, contexto ni evaluación de ninguno de los elementos comparados en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No es un release: el autor declara que nada del repositorio está recomendado para uso y que no se emite ninguna afirmación de calidad.
-- Los ficheros pueden ser reemplazados o sustituidos en cualquier momento, lo que rompe la reproducibilidad de cualquier despliegue que dependa de ellos; conviene fijar el sha256 del `MANIFEST.json` si se usan internamente.
-- Ausencia total de evaluación publicada: no hay benchmarks, ni comparaciones emparejadas, ni resultados de seguridad o sesgo.
-- Procedencia mixta: algunas builds combinan tensores propios con tensores de otras cuantizaciones Apache-2.0; cada parte conserva su licencia y sus avisos de copyright, que deben reproducirse si se redistribuye.
-- Nomenclatura por identificador de build en lugar de nombre de producto: riesgo de confundir un artefacto candidato con una versión estable.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no hay datos específicos de evaluación de factualidad para este modelo base.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Idiomas soportados y cobertura real por idioma: no disponibles; conviene validar el comportamiento en castellano antes de usarlo en producción.
-- Ventana de 262K: las guías de despliegue consultadas mencionan errores asociados a la gestión de ese contexto; es necesario ajustar `n_ctx` y presupuestar la caché KV.
-- Se recomienda tratar el repositorio como material de laboratorio y, para producción, acudir a los pesos oficiales de Qwen3.8-27B o a cuantizaciones con model card y evaluación publicadas.
+- El propio autor declara que este repositorio no es un lanzamiento y que nada de su contenido está recomendado para uso.
+- No se formula ninguna afirmación de calidad sobre los builds; no hay evaluación publicada.
+- Los ficheros pueden reemplazarse o quedar obsoletos en cualquier momento, lo que rompe la reproducibilidad si no se fija el sha256 del manifiesto.
+- Los builds pueden combinar tensores de varias fuentes Apache-2.0; cada parte queda sujeta a la licencia y avisos de copyright de su fuente, lo que exige revisar el `NOTICE` antes de cualquier uso comercial.
+- Existe una discrepancia entre el nombre del modelo base ("27B") y el recuento de parámetros de los metadatos de safetensors (496.353.280), no aclarada en la model card.
+- No se documentan sesgos, riesgo de alucinación, limitaciones de contexto ni cobertura idiomática del modelo subyacente.
+- No se documenta pipeline, idiomas ni resultados de evaluación en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio de staging en Hugging Face: https://huggingface.co/XGeorgeCostanzaX/nyquant-staging-qwen3.8-27b
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Guía de instalación y ejecución (TheQuery): https://www.thequery.in/guides/qwen-3-8-27b-install-run
-- Guía de despliegue local, cuantizaciones y errores (BestLLMfor): https://bestllmfor.com/guides/qwen38-27b-local-deployment/
-- Ficha del modelo en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/
-- Proveedores de API y límites (LLMPerks): https://llmperks.com/qwen/qwen3-8-27b
-- Página del modelo en LM Studio: https://lmstudio.ai/models/qwen3.8
+- Repositorio en Hugging Face: https://huggingface.co/XGeorgeCostanzaX/nyquant-staging-qwen3.8-27b
+- Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B

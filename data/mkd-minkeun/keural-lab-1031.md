@@ -2,97 +2,98 @@
 
 ## Resumen
 
-Keural-Lab-1031 es un checkpoint de investigación publicado por el autor independiente mkd-minkeun bajo la etiqueta "Keural lab". Se trata de un modelo de mezcla de expertos (MoE) derivado de Qwen3.8-Flash-Next, al que se le han reducido los expertos enrutados de 512 a 256 por capa y se ha reentrenado sobre datos destilados de varios modelos abiertos. El resultado es un modelo de aproximadamente 65.000 millones de parámetros totales con unos 6.700 millones activos por token, según la model card; los pesos en safetensors suman 116.963.395.731 parámetros.
+Keural-Lab-1031 es un checkpoint experimental publicado por el usuario mkd-minkeun bajo la marca Keural, obtenido mediante fine-tuning del modelo Qwen3.8-Flash-Next de Alibaba. Se trata de un modelo de generación de texto con arquitectura Mixture of Experts (MoE) que, según la model card, declara aproximadamente 65.000 millones de parámetros totales con unos 6.700 millones activos por token, aunque el recuento real de pesos en safetensors asciende a 116.963.395.731 parámetros. El repositorio ocupa 233,9 GB y se distribuye en formato safetensors.
 
-El objetivo del experimento es doble: medir hasta qué punto se puede podar un MoE grande mediante selección de expertos antes de perder capacidad general, y comprobar si las trazas de respuesta de varios profesores fuertes pueden consolidarse en un modelo más pequeño. El autor lo presenta explícitamente como material de investigación y experimentación local, no como el modelo que sirve en producción.
+El modelo se presenta como un experimento de laboratorio sin documentación sobre el dataset de entrenamiento, el proceso de alineamiento ni los idiomas soportados. Su relevancia es limitada: los benchmarks publicados por el propio autor muestran un rendimiento sistemáticamente inferior al de Qwen3.6-35B-A3B en todas las métricas evaluadas (MMLU, MMLU-Pro, GPQA Diamond, GSM8K e IFEval), lo que sugiere que el fine-tuning ha degradado las capacidades del modelo base en lugar de mejorarlas.
 
-Es relevante ahora porque documenta con transparencia el coste de la poda de expertos en benchmarks estándar (MMLU, MMLU-Pro, GPQA, GSM8K, IFEval) frente a un modelo comparable, y porque mantiene íntegra la arquitectura, el tokenizador, la tabla de embeddings n-gram y la torre de visión del modelo base, lo que facilita su despliegue con las mismas herramientas.
+La licencia es la Qwen Community License 1.0, heredada del modelo base, con la restricción de la cláusula 2 que exige una licencia separada de Qwen para empresas que operen servicios Model-as-a-Service o asistentes de IA comerciales. El modelo se distribuye sin garantías y con información técnica muy incompleta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), derivada de Qwen3.8-Flash-Next |
-| Parametros totales | 116.963.395.731 (pesos safetensors); ~65B según la model card |
-| Parametros activos | ~6.7B por token |
-| Longitud de contexto | Heredada del modelo base; el ejemplo de despliegue usa `--max-model-len 32768` |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada; existe un repo GGUF asociado |
-| Idiomas soportados | No disponible |
-| Licencia | Qwen Community License 1.0 (etiqueta `license:other`, `license_name: qwen-community-1.0`) |
-| Formato de pesos | safetensors; GGUF en repo separado (Keural-Lab-1031-GGUF) |
+| Arquitectura | Mixture of Experts (MoE) basada en transformer, derivada de Qwen3.8-Flash-Next |
+| Parametros totales | 116.963.395.731 (recuento real en safetensors); la model card declara ~65B |
+| Parametros activos | ~6.700 millones por token (según model card) |
+| Longitud de contexto | no disponible (el ejemplo de despliegue usa `--max-model-len 32768`) |
+| Tipos de cuantizacion | no disponible en el repositorio principal; existe una variante GGUF en `mkd-minkeun/Keural-Lab-1031-GGUF` |
+| Idiomas soportados | no disponible |
+| Licencia | Qwen Community License 1.0 (`qwen-community-1.0`) |
+| Formato de pesos | safetensors (repositorio principal); GGUF en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo conserva la arquitectura del base Qwen3.8-Flash-Next: capas, mecanismo de atención, tabla de embeddings n-gram, tokenizador y torre de visión sin cambios. La modificación principal está en el enrutamiento: se pasa de 512 a 256 expertos enrutados por capa, seleccionados según su cuota de enrutamiento sobre texto general, de chat y de razonamiento. El entrenamiento consume aproximadamente 1.500 millones de tokens, combinando destilación de logits top-32 desde Qwen3.8-Flash-Next con trazas de respuesta y razonamiento de DeepSeek-V4.1-Flash, Gemma 4 y MiMo V2.6; las trazas de razonamiento solo se conservan cuando la respuesta final era correcta.
+La arquitectura es un transformer con capas Mixture of Experts, heredada directamente de Qwen3.8-Flash-Next. La model card declara ~65B parámetros totales y ~6,7B activos por token, pero el recuento real de tensores en safetensors es de 116.963.395.731 parámetros, una discrepancia de casi el doble que no se explica en la documentación. No se especifica el número de expertos, el número de expertos activados por token, la dimensión oculta ni la configuración de atención.
 
-No se documentan innovaciones adicionales como decodificación especulativa o atención lineal. El modo de pensamiento (thinking) está activado por defecto y puede desactivarse mediante `enable_thinking: false` en `chat_template_kwargs`. El checkpoint mantiene la plantilla de chat del base, por lo que cualquier servidor compatible con Qwen3.8-Flash-Next puede servirlo.
+No hay información sobre el dataset de entrenamiento: ni número de tokens, ni composición, ni si hubo RLHF, DPO o cualquier otra fase de alineamiento. Tampoco se documentan innovaciones técnicas específicas del fine-tuning. El checkpoint se etiqueta como "experimental" y fue creado y actualizado el mismo día (2 de noviembre de 2026), lo que apunta a una publicación sin validación extensa.
 
 ## Capacidades
 
-- Generación de texto conversacional y respuesta a preguntas de uso cotidiano.
-- Razonamiento matemático: GSM8K de 0,930 en el arnés del autor.
-- Seguimiento de instrucciones estricto: IFEval de 0,860 en modalidad estricta.
-- Modo de razonamiento (thinking) activado por defecto, desactivable por plantilla de chat.
-- Capacidades de visión heredadas de la torre del modelo base (la model card indica que la torre de visión queda sin cambios, aunque no detalla tareas evaluadas).
-- Soporte multilingüe: no disponible en la información proporcionada.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Generación de texto y conversación multi-turno, según el pipeline declarado (`text-generation`, `conversational`).
+- Razonamiento y matemáticas: la model card reporta resultados en MMLU, MMLU-Pro, GPQA Diamond y GSM8K con "thinking enabled", lo que indica soporte de modo de razonamiento extendido.
+- Seguimiento de instrucciones: evaluado con IFEval (0,860).
+- Capacidades multilingües: no documentadas; no se especifica qué idiomas cubre.
+- Tool calling / function calling: no documentado explícitamente, aunque el modelo base Qwen3.8-Flash-Next probablemente lo soporte; no hay confirmación en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: no documentadas.
+- Visión, audio u otras modalidades: no disponibles; el pipeline es únicamente de texto.
 
 ## Casos de uso
 
-- Investigación sobre poda de MoE: comparar el rendimiento de este checkpoint con su base para cuantificar la pérdida de capacidad al reducir expertos, usando el mismo arnés (lm-evaluation-harness con vLLM).
-- Destilación multi-profesor: estudiar la consolidación de trazas de DeepSeek-V4.1-Flash, Gemma 4 y MiMo V2.6 en un modelo menor, con filtrado por corrección de la respuesta final.
-- Experimentación local con modelos grandes: desplegar con vLLM en configuraciones tensor-parallel y ventana de 32.768 tokens para probar cargas conversacionales.
-- Evaluación de instrucciones y matemáticas de nivel escolar: usar GSM8K e IFEval como referencia para validar pipelines de evaluación propios.
-- Pruebas de plantilla de chat y modo thinking: verificar el comportamiento con `enable_thinking` activado y desactivado en aplicaciones de chat multi-turno.
-- Despliegue en CPU o entornos con poca VRAM mediante el repo GGUF asociado, para experimentación sin GPU de datacenter.
+- Experimentación e investigación sobre fine-tuning de modelos MoE: el checkpoint sirve como caso de estudio de cómo un fine-tuning sin documentar puede degradar el rendimiento del modelo base, útil para investigadores que estudien dinámicas de olvido catastrófico.
+- Evaluación comparativa de checkpoints derivados: permite contrastar el impacto del fine-tuning frente a Qwen3.6-35B-A3B usando el mismo harness (lm-evaluation-harness con vLLM), tal como reporta el autor.
+- Generación de texto en entornos de prueba no críticos: con 32.768 tokens de contexto en el ejemplo de despliegue, puede usarse para prototipos de chat o generación de texto donde la precisión no sea un requisito estricto.
+- Despliegue en infraestructura multi-GPU: el ejemplo con `--tensor-parallel-size 4` en vLLM indica que está pensado para servirse en clústeres con al menos cuatro GPUs, adecuado para pruebas de infraestructura de inferencia distribuida.
+- Pruebas de cuantización y formatos GGUF: la existencia de un repositorio GGUF separado permite experimentar con cuantizaciones para llama.cpp en entornos con recursos limitados.
+- Referencia para auditorías de licencias: como derivado de Qwen3.8-Flash-Next bajo Qwen Community License 1.0, sirve para estudiar las obligaciones de la cláusula 2 en despliegues comerciales tipo MaaS.
 
 ## Benchmarks y rendimiento
 
-Todos los resultados provienen del mismo arnés (lm-evaluation-harness con vLLM, conjuntos de test completos, thinking activado). Las respuestas de opción múltiple en GPQA y MMLU-Pro se leen del `\boxed{}` final.
+Datos publicados por el autor en la model card, con el mismo harness (lm-evaluation-harness con vLLM, conjuntos de test completos, thinking habilitado):
 
 | Benchmark | Keural-Lab-1031 | Qwen3.6-35B-A3B |
 |---|---|---|
-| MMLU (log-likelihood) | 0,798 | 0,839 |
-| MMLU-Pro | 0,723 | 0,847 |
-| GPQA Diamond (media de 4 ejecuciones) | 0,678 | 0,803 |
+| MMLU | 0,798 | 0,839 |
+| MMLU-Pro | 0,750 | 0,847 |
+| GPQA Diamond | 0,678 | 0,803 |
 | GSM8K | 0,930 | 0,963 |
-| IFEval (instruction-level, strict) | 0,860 | 0,941 |
+| IFEval | 0,860 | 0,941 |
 
-El autor señala que el modelo rinde bien en preguntas cotidianas, matemáticas y seguimiento de instrucciones, y que la poda se nota en conocimiento intensivo y razonamiento de nivel graduado (MMLU-Pro, GPQA), donde queda por detrás de Qwen3.6-35B-A3B.
+El modelo queda por debajo del comparador en las cinco métricas, con diferencias especialmente marcadas en MMLU-Pro (−0,097), GPQA Diamond (−0,125) e IFEval (−0,081). No se han publicado resultados frente a otros modelos ni frente al propio Qwen3.8-Flash-Next.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; con ~117.000 millones de parámetros en safetensors, la inferencia en BF16 requiere del orden de 234 GB de memoria, y el repo ocupa 233,9 GB.
-- GPU recomendadas: el ejemplo oficial usa `--tensor-parallel-size 4`, lo que apunta a configuraciones multi-GPU (A100 80 GB, H100 80 GB o similares).
-- GPU de consumo: no cabe en tarjetas de consumo en precisión completa; para RTX 4090 o similares habría que recurrir a cuantización GGUF del repo asociado, sin datos de rendimiento publicados.
-- Opciones de despliegue: vLLM (`vllm serve mkd-minkeun/Keural-Lab-1031 --tensor-parallel-size 4 --max-model-len 32768`) y llama.cpp mediante Keural-Lab-1031-GGUF.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para inferencia en precisión completa (BF16): aproximadamente 234 GB solo para pesos, más overhead de activaciones y caché KV; requiere al menos 4 GPUs de 80 GB (A100/H100) con tensor parallelism.
+- El ejemplo oficial usa `vllm serve ... --tensor-parallel-size 4 --max-model-len 32768`, lo que confirma un despliegue mínimo de 4 GPUs.
+- GPU recomendadas: A100 80GB, H100 80GB o H200 en configuraciones de 4 o más unidades.
+- No cabe en GPUs de consumo (RTX 4090, 24 GB) en precisión completa; sería necesaria cuantización agresiva (GGUF Q4 o inferior) y aun así el tamaño efectivo probablemente exceda la VRAM de una sola GPU consumer.
+- Opciones de despliegue: vLLM (documentado), llama.cpp mediante el repositorio GGUF `mkd-minkeun/Keural-Lab-1031-GGUF`, y potencialmente TGI u otros servidores compatibles con safetensors.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Activos | Contexto | MMLU | MMLU-Pro | GPQA Diamond | GSM8K | IFEval | Licencia |
 |---|---|---|---|---|---|---|---|---|---|
-| Keural-Lab-1031 | ~65B (117B en safetensors) | ~6.7B | 32.768 en el ejemplo | 0,798 | 0,723 | 0,678 | 0,930 | 0,860 | Qwen Community 1.0 |
-| Qwen3.6-35B-A3B | ~35B | ~3B (A3B) | No disponible | 0,839 | 0,847 | 0,803 | 0,963 | 0,941 | No disponible en la información |
-| Qwen3.8-Flash-Next | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | Qwen Community 1.0 (base) |
+| Keural-Lab-1031 | ~117B (real) / ~65B (declarado) | ~6,7B | no disponible | 0,798 | 0,750 | 0,678 | 0,930 | 0,860 | Qwen Community 1.0 |
+| Qwen3.6-35B-A3B | ~35B | ~3B | no disponible | 0,839 | 0,847 | 0,803 | 0,963 | 0,941 | Qwen Community 1.0 |
+| Qwen3.8-Flash-Next (base) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Qwen Community 1.0 |
 
-El único comparable con datos en la información proporcionada es Qwen3.6-35B-A3B, que supera a Keural-Lab-1031 en las cinco métricas publicadas pese a declarar menos parámetros totales. No hay datos de benchmarks del modelo base Qwen3.8-Flash-Next en la información disponible.
+El único comparador con datos es Qwen3.6-35B-A3B, que supera a Keural-Lab-1031 en todas las métricas pese a tener menos parámetros totales y activos. No hay datos publicados del modelo base Qwen3.8-Flash-Next en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Checkpoint de investigación: el autor indica explícitamente que no es el modelo que sirve en producción.
-- Pérdida de capacidad por poda: caída frente a Qwen3.6-35B-A3B en MMLU-Pro (0,723 frente a 0,847) y GPQA Diamond (0,678 frente a 0,803), especialmente en conocimiento intensivo y razonamiento de nivel graduado.
-- Idiomas soportados no documentados; no se puede garantizar cobertura multilingüe.
-- Sin datos publicados sobre tool calling, comportamiento agéntico, sesgos o tasa de alucinación.
-- Discrepancia entre la model card (~65B parámetros) y los pesos reales en safetensors (116.963.395.731), que conviene verificar antes de dimensionar infraestructura.
-- Licencia Qwen Community 1.0: según la cláusula 2, una empresa que opere un negocio de Model-as-a-Service o AI Work Assistant necesita una licencia adicional de Qwen para uso comercial.
-- Sin descargas ni likes en el momento de la consulta; no hay validación comunitaria independiente de los resultados.
-- El repo GGUF asociado no incluye datos de calidad o rendimiento tras cuantización en la información disponible.
+- Rendimiento inferior al comparador en todos los benchmarks publicados; el fine-tuning parece haber degradado las capacidades del modelo base.
+- Discrepancia grave entre los parámetros declarados (~65B) y los reales en safetensors (116,96B), lo que dificulta la planificación de recursos.
+- Ausencia total de documentación sobre datos de entrenamiento, alineamiento, idiomas y sesgos conocidos.
+- Riesgo elevado de alucinación y de comportamiento impredecible al ser un checkpoint experimental sin validación.
+- Idiomas soportados no especificados; no se puede garantizar un rendimiento aceptable fuera del inglés o el chino del modelo base.
+- Licencia Qwen Community 1.0: la cláusula 2 exige licencia separada de Qwen para empresas que ofrezcan Model-as-a-Service o asistentes de IA comerciales; revisar antes de cualquier uso comercial.
+- Contexto máximo no documentado; el ejemplo usa 32.768 tokens, pero no se confirma si es el límite real.
+- Publicado y actualizado el mismo día, con 1 like y 600 descargas: sin comunidad que valide su comportamiento en producción.
+- No apto para producción sin una evaluación propia exhaustiva.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/mkd-minkeun/Keural-Lab-1031
-- Repo GGUF: https://huggingface.co/mkd-minkeun/Keural-Lab-1031-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mkd-minkeun/Keural-Lab-1031
+- Repositorio GGUF: https://huggingface.co/mkd-minkeun/Keural-Lab-1031-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Licencia (referenciada en la model card): LICENSE dentro del repo de Hugging Face
+- Licencia Qwen Community 1.0: https://huggingface.co/mkd-minkeun/Keural-Lab-1031/blob/main/LICENSE

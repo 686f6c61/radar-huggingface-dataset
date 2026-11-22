@@ -2,118 +2,107 @@
 
 ## Resumen
 
-fafstmobel es un artefacto de pesos derivado de 27B construido localmente por el usuario satellitedown a partir del checkpoint abliterado Swift de Qwen3.8-27B. No se trata de un modelo entrenado desde cero ni de un ajuste fino al uso: es el resultado de transplantar el delta de abliteración observado en la variante Huihui sobre los pesos de Swift (solo 70 tensores de las capas 17 a 51 cambian; los otros 1129 tensores, incluidos visión, MTP, embeddings, normas y cabeza de salida, son idénticos byte a byte al checkpoint Swift), cuantizar la parte de texto a una asignación NVFP4/FP8 y exportar todo a un único contenedor NInfer v3 con el borrador DFlash2 preentrenado incluido.
+fafstmobel es un derivado de 27B construido localmente por el usuario satellitedown a partir del checkpoint abliterado Swift-Qwen3.8-27B, que a su vez deriva de Qwen/Qwen3.8-27B. El autor transpone el delta de abliteración observado en el modelo Huihui sobre Swift, cuantiza la asignación de texto a NVFP4/FP8 y exporta todo a un único artefacto NInfer v3 que incluye los componentes de texto, visión, MTP y el borrador especulativo DFlash2. El resultado es un modelo multimodal con decodificación especulativa integrada, pensado para inferencia local en una única GPU de consumo.
 
-El modelo se distribuye como un único fichero `fafstmobel.ninfer` de 23.719.715.844 bytes, con arquitectura híbrida de atención (64 capas, hidden 5120, vocabulario 248320, 16 capas de atención completa y 48 de atención lineal) más componentes de visión, MTP y decodificación especulativa DFlash2. Su relevancia práctica está en el rendimiento medido en una única RTX 5090 de 32 GB: 304,1–312,9 tokens/s con DFlash2 frente a 68,5–77,1 tokens/s en modo autorregresivo, es decir, una aceleración de 4,06× a 4,57× con una tasa de aceptación del 54,2%.
+La relevancia del modelo está en su empaquetado: un solo fichero de 22,88 GB que contiene pesos cuantizados, torre de visión, cabezas MTP y un drafter DFlash2 de 5 capas con proyecciones en Q4 y QKV fusionado en Q8. Según las mediciones del autor en una RTX 5090 de 32 GB, el modelo alcanza 293,7 tok/s con DFlash2-15 y árboles de verificación, frente a 54,1 tok/s en decodificación autoregresiva, con una ventana de contexto de 262.144 tokens y caché KV en formato K8V4.
 
-El aspecto crítico para producción es que el formato es propietario de NInfer y no se publican pesos en safetensors, GGUF ni cuantizaciones alternativas, y que la licencia del componente Swift (Swift Open License v1.0) restringe el uso comercial por encima de un umbral de un millón de dólares. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación independiente de la comunidad.
+La arquitectura de texto consta de 64 capas con hidden de 5120 y vocabulario de 248.320 tokens, combinando 16 capas de atención completa con 48 de atención lineal (GDN). La licencia es swift-open-license-v1.0, distinta de la Apache 2.0 habitual en la familia Qwen, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 16 capas de atención completa + 48 capas de atención lineal (proyecciones GDN), con componentes de visión, MTP y borrador especulativo DFlash2 |
-| Parametros totales | 27B (según la denominación del modelo base Qwen3.8-27B; no se publica el recuento exacto en la model card) |
-| Parametros activos | no disponible (no se describe como MoE) |
-| Longitud de contexto | contexto validado en las pruebas: 16.384 tokens (`--max-context 16384`); la longitud nativa del modelo base no se indica en la información disponible |
-| Tipos de cuantizacion | NVFP4 (168 matrices MLP gate/up/down, grupo de 16, pesos de 4 bits y activaciones de 4 bits local-dinámicas con escalas calibradas) y FP8 por canal (233 matrices: atención q/k/v/o, proyecciones GDN in/out, cabeza de salida y capas MLP 56–63); KV cache en fp8. Visión, MTP y proyecciones de puerta GDN sin cuantizar |
+| Arquitectura | Transformer híbrido: 64 capas, 16 de atención completa + 48 de atención lineal (GDN), con torre de visión, MTP y drafter DFlash2 |
+| Parametros totales | 27B (modelo base Qwen3.8-27B); artefacto de 22.884.131.844 bytes |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | NVFP4 (168 matrices MLP, grupo 16, activaciones 4-bit dinámicas locales) y FP8 por canal (233 matrices de atención, GDN, cabeza de salida y MLP 56-63); drafter en Q4 (grupo 64) y QKV fusionado en Q8 (grupo 32); caché KV en BF16, FP8 o K8V4 |
 | Idiomas soportados | no disponible |
-| Licencia | Swift Open License v1.0 (etiquetada como `license: other`); los componentes Apache-2.0 se mantienen bajo sus propios términos |
-| Formato de pesos | NInfer v3, un único fichero `fafstmobel.ninfer` (1246 objetos, 1240 tensores, 6 recursos, 1513 bindings, 844 usos); no se ofrecen safetensors ni GGUF |
-| Tamano del repositorio | 23,7 GB |
-| Libreria de inferencia | `ninfer` |
-| Vocabulario | 248.320 tokens |
-| Capas / hidden size | 64 capas / 5120 |
-| Borrador especulativo | DFlash2, 5 capas, taps objetivo [5, 19, 33, 47, 61], bloque 8, selector top-k 16 |
-| Hash SHA-256 | `70752ce85422f9d716438f85e80e6b68c496197c41c2aed32b126f1c23ce7364` |
+| Licencia | swift-open-license-v1.0 (etiqueta `other`) |
+| Formato de pesos | NInfer v3 (fichero único `fafstmobel.ninfer`); no se distribuyen safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo no ha sido entrenado por el autor: es una composición determinista de tres contribuciones upstream. La parte de texto emplea la arquitectura de Qwen3.8-27B, un transformer híbrido con 64 capas que combina 16 capas de atención completa con 48 capas de atención lineal basadas en proyecciones GDN, hidden size 5120 y vocabulario de 248.320 tokens. Sobre esa base se aplicó un transplante de delta de abliteración: no se recalculó una dirección de rechazo, sino que se trasladó la diferencia de pesos observada entre el modelo base y la variante Huihui mediante `result = (swift.float() + (huihui.float() - base.float())).to(bfloat16)`. Afecta exactamente a 70 tensores de las capas 17 a 51 (`mlp.down_proj` y `self_attn.o_proj` en capas de atención completa, `linear_attn.out_proj` en capas de atención lineal), con un máximo de |Δ| de 2,83e-2 y una media de 2,02e-4, reescribiendo 4.220.518.400 elementos.
+El modelo parte de Qwen3.8-27B y aplica una arquitectura híbrida de atención: 16 capas con atención completa y 48 con atención lineal del tipo GDN (Gated Delta Net), con hidden de 5120 y vocabulario de 248.320 tokens. Sobre el checkpoint Swift se aplica un transplante de delta de abliteración: en lugar de rederivar la abliteración, se calcula `result = (swift.float() + (huihui.float() - base.float())).to(bfloat16)`, modificando exactamente 70 tensores en las capas 17-51 (`mlp.down_proj` junto con `self_attn.o_proj` o `linear_attn.out_proj`). El máximo delta absoluto es 2,83e-2 y el medio 2,02e-4, sobre 4.220.518.400 elementos reescritos; los otros 1129 tensores (visión, MTP, embeddings, norms y cabeza de salida) son idénticos byte a byte al checkpoint Swift.
 
-La cuantización de texto siguió la asignación publicada NVFP4/FP8, calibrada con 32 muestras de UltraChat-200k de 2048 tokens cada una. El export se realizó con la herramienta oficial `tools.convert` de NInfer (revisión `98dada0e03cb073fd07f905400b5904bc6e82759`) y la receta sin modificar `qwen3_8_27b_nvfp4`, incluyendo la plantilla de chat mantenida de Qwen3.8. El cuarto paso fue la normalización de nombres del intermedio de texto (`model.language_model.*` → `model.*`) para hacerlo consistente con la configuración plana solo-texto, reescribiendo únicamente las cabeceras de safetensors y verificándolas contra los digests de cada shard. La innovación técnica destacable no está en el entrenamiento, sino en el empaquetado: el borrador DFlash2 preentrenado se incluye por conversión, sin reentrenar, y se suma al componente MTP como dos vías de decodificación especulativa sobre el mismo artefacto.
+La cuantización del texto sigue la asignación NVFP4/FP8 publicada, calibrada con 32 muestras de UltraChat-200k de 2048 tokens. La exportación se realiza con `tools.convert` de Cinference (fork de NInfer), receta `qwen3_8_27b_nvfp4`, que además cuantiza las proyecciones del drafter DFlash2 a Q4 y su QKV fusionado a Q8. El drafter tiene 5 capas, taps objetivo en `[5,19,33,47,61]`, bloque 8 y selector top-k 16. No se documentan en la información disponible el número de tokens de preentrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto con plantilla de chat de Qwen3.8 mantenida en el export.
-- Razonamiento aritmético básico verificado: la comprobación `17 × 19` devuelve `323` con reproducibilidad idéntica en repetición con la misma semilla.
-- Generación de código: ante un prompt de código produce un `def` con slicing válido de 30 tokens.
-- Capacidades multimodales: el componente de visión está incluido y sin cuantizar; ante una imagen de 256×256 con mitades roja y azul responde "left is red, right is blue".
-- Decodificación especulativa con dos componentes: MTP (aceptación medida del 75,9 %) y DFlash2 (aceptación del 54,2 %).
-- Modo sin razonamiento explícito: el CLI documenta la opción `--no-thinking`, lo que implica soporte de modo thinking en el modelo base.
-- Servicio HTTP compatible con contrato tipo OpenAI: `/health` y `/v1/models` con id `fafstmobel`, y superación del test `tools.smoke.serve_contract` v2.
-- Capacidades de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Cobertura multilingüe: no disponible.
+- Generación de texto y razonamiento: verificado con aritmética (`17 × 19` → `323`) y prompts de código con salida válida.
+- Generación de código: produce funciones `def` válidas con slicing; el autor reporta 32 peticiones de código en modo thinking para medir aceptación especulativa.
+- Multimodal (visión): incluye torre de visión; verificado con una imagen 256×256 rojo/azul respondiendo "left is red, right is blue".
+- Decodificación especulativa: MTP-3 y DFlash2-15 con árboles de verificación, con aceptación de borradores del 74,0% en MTP-3.
+- Servido compatible con API: `/health` y `/v1/models` con id `fafstmobel` y contexto de 262.144 tokens; pasa `tools.smoke.serve_contract`.
+- Contexto largo: perplejidad medida con `ninfer-perplexity` sobre 261.167 tokens y contexto de 65.536.
+- Tool calling / function calling: no documentado explícitamente en la información disponible.
+- Capacidades de agente multi-paso: no documentadas explícitamente en la información disponible.
+- Idiomas: no disponible.
 
 ## Casos de uso
 
-- Servicio de generación de texto de baja latencia en una sola GPU de consumo: con DFlash2 y `--draft-tokens 7` el modelo sostiene 304,1–312,9 tokens/s en una RTX 5090, lo que permite atender streaming interactivo sin clúster.
-- Análisis de imágenes con descripción textual: el componente de visión permite clasificar o describir contenido visual (colores, disposición espacial) y devolver la respuesta en texto, útil para etiquetado automático o verificación visual en pipelines internos.
-- Investigación sobre abliteración y direcciones de rechazo: al ser un transplante de delta documentado tensor a tensor, sirve como material de estudio reproducible para medir cómo cambia el comportamiento al modificar únicamente 70 tensores en las capas 17–51.
-- Evaluación de decodificación especulativa: el artefacto incluye dos mecanismos de especulación (MTP y DFlash2) con tasas de aceptación publicadas, lo que lo convierte en un banco de pruebas para comparar estrategias de drafting sobre el mismo modelo objetivo.
-- Procesamiento de documentos largos en local: con 16.384 tokens de contexto validado y KV cache en fp8, encaja en tareas de resumen o extracción sobre contratos, informes o hilos de conversación extensos sin salir de la estación de trabajo.
-- Generación de código en entornos con aislamiento: el modelo produce fragmentos de código Python válidos y puede ejecutarse en local con el runtime NInfer, adecuado para entornos donde no se permite enviar código a APIs externas.
-- Experimentación con cuantización NVFP4/FP8 en hardware Blackwell: la asignación por capas (NVFP4 en MLP, FP8 en atención y cabeza de salida) sirve para medir el impacto de la precisión mixta sobre la calidad en una arquitectura híbrida de atención.
+- Asistencia de código en local: el modelo genera código válido y mantiene contexto de hasta 262.144 tokens, útil para trabajar sobre repositorios completos en una sola GPU de consumo sin enviar código a servicios externos.
+- Análisis de documentos e imágenes: la torre de visión integrada permite describir o razonar sobre capturas, diagramas e imágenes junto a texto largo, con el contexto completo en memoria.
+- Servicio de inferencia de baja latencia: con DFlash2-15 y árboles de verificación alcanza 293,7 tok/s en RTX 5090, adecuado para aplicaciones interactivas con respuesta en streaming.
+- Procesamiento de corpus largos: la ventana de 262.144 tokens y la caché K8V4 (perplejidad 4,08607 frente a 4,08915 en BF16) permiten resumir o extraer información de documentos extensos sin truncar.
+- Experimentación en investigación sobre abliteración: el artefacto documenta con precisión los 70 tensores modificados y los deltas aplicados, lo que facilita reproducir o auditar el efecto de la abliteración sobre el comportamiento del modelo.
+- Despliegue en estación de trabajo única: al caber en 32 GB de VRAM con 993 MiB libres en el perfil completo, sirve para prototipado y demos locales sin infraestructura de clúster.
+- Evaluación de decodificación especulativa: la integración de MTP y DFlash2 con métricas de aceptación publicadas lo convierte en banco de pruebas para comparar estrategias de especulación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo incluye comprobaciones funcionales y medidas de throughput realizadas en una RTX 5090 de 32 GB con contexto 16.384, KV en fp8 y CUDA graphs activados:
-
-| Comprobacion | Resultado |
+| Prueba | Resultado (RTX 5090, 32 GB, contexto 262.144, K8V4, CUDA graphs) |
 |---|---|
-| Aritmética (`17 × 19`) | `323`; la repetición con la misma semilla es idéntica |
+| Aritmética (`17 × 19`) | `323`, replay idéntico con la misma semilla |
 | Prompt de código | `def` con slicing válido, 30 tokens |
-| Test de integración DFlash2 en NInfer | salida 0 |
-| Servicio | `/health` correcto, `/v1/models` con id `fafstmobel`, `tools.smoke.serve_contract` v2 superado |
-| Multimodal | imagen 256×256 roja/azul → "left is red, right is blue" |
-| Throughput autorregresivo (semilla 42, greedy, 256 tokens, batch 1) | 68,5–77,1 tok/s |
-| Throughput con MTP | 210,0–215,3 tok/s (2,79–3,14×, aceptación 75,9 %) |
-| Throughput con DFlash2 | 304,1–312,9 tok/s (4,06–4,57×, aceptación 54,2 %) |
+| Multimodal (imagen 256×256) | "left is red, right is blue" |
+| Autoregresivo (semilla 42, greedy, 256 tokens, batch 1) | 54,1 tok/s |
+| MTP-3 | 155,3 tok/s (2,87×, aceptación 74,0%) |
+| DFlash2-15 con árboles de verificación | 293,7 tok/s (5,43×) |
+| Perfil de servido (DFlash2-15 + K8V4 262.144 vs DFlash2-7 + FP8 KV 16.384) | mediana 241,4 → 294,4 tok/s (+22%) |
+| Perplejidad KV (261.167 tokens, contexto 65.536) | BF16 4,08915 · FP8 4,08843 · K8V4 4,08607 |
+| Tokens de borrador aceptados por ronda (32 peticiones de código, modo thinking) | 4,016 (Q4) frente a 4,008 (Q8) |
+| Kernels de proyección del drafter por ronda de verificación 8K | 1.118,2 µs (Q4) frente a 1.447,5 µs (Q8) |
+| Pesos residentes | 20,9 GiB (Q4) frente a 21,7 GiB (Q8) |
 
-El autor advierte que el throughput autorregresivo varía entre ejecuciones según el estado de la máquina, mientras que las tasas de aceptación de ambos mecanismos de especulación se reprodujeron exactamente en todas las ejecuciones.
+El autor advierte que un salvapantallas a pantalla completa compartía la GPU durante las mediciones, por lo que las tasas absolutas están deprimidas; las aceleraciones y los conteos de aceptación se reproducen exactamente. En una revisión anterior, con NInfer `98dada0`, contexto 16.384 y KV FP8, se midieron 68,5-77,1 tok/s autoregresivo, 210,0-215,3 tok/s con MTP-3 y 304,1-312,9 tok/s con DFlash2-7. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el artefacto completo ocupa 23,7 GB en disco; la ejecución documentada se realizó en una RTX 5090 de 32 GB con contexto 16.384 y KV cache en fp8. No se publican medidas de VRAM pico ni cifras para contextos mayores o menores.
-- GPU recomendadas: la única configuración verificada es RTX 5090 (32 GB) con CUDA 13.1 y Python 3.11, hardware necesario para las rutas NVFP4/FP8. No se documentan pruebas en A100, H100, RTX 4090 ni otras GPUs.
-- Cabe en GPU de consumo: sí, en una RTX 5090 de 32 GB según la medición del autor. Para GPUs con menos VRAM no hay datos disponibles.
-- Opciones de despliegue: exclusivamente el runtime NInfer (`ninfer-serve` para servicio HTTP y `ninfer` para CLI). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, ya que el formato `.ninfer` es específico de esa herramienta.
-- Latencia y throughput: 68,5–77,1 tok/s en autorregresivo, 210,0–215,3 tok/s con MTP y 304,1–312,9 tok/s con DFlash2, siempre con batch 1, greedy, 256 tokens y contexto 16.384.
-- Comando de servicio documentado: `ninfer-serve fafstmobel.ninfer --host 127.0.0.1 --port 8088 --model-id fafstmobel --spec dflash2 --draft-tokens 7 --lm-head-draft --vision --kv-dtype fp8 --max-context 16384 --kv-capacity 16384 --max-concurrency 1`.
+- VRAM estimada: 20,9 GiB de pesos residentes con el drafter en Q4; el perfil completo (contexto 262.144, K8V4, visión, árboles) arranca con 993 MiB libres en una GPU de 32 GB y 1,5 GB de VRAM de escritorio en uso.
+- GPU recomendadas: RTX 5090 de 32 GB (única configuración medida por el autor). No hay datos publicados para A100, H100 ni otras GPU.
+- GPU de consumo: cabe en RTX 5090; no se documenta compatibilidad con GPU de 24 GB o menos.
+- Opciones de despliegue: Cinference `8364ed7` (fork de NInfer) es requisito para el drafter Q4 de esta revisión; el artefacto es NInfer v3, por lo que no es compatible con vLLM, llama.cpp, Ollama ni TGI en el formato distribuido.
+- Latencia y throughput: 293,7 tok/s con DFlash2-15 y árboles de verificación, 155,3 tok/s con MTP-3 y 54,1 tok/s autoregresivo, en batch 1 y con la GPU compartida con un salvapantallas.
+- Entorno de construcción: RTX 5090, CUDA 13.1 y Python 3.11.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Formato / disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización / formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| satellitedown/fafstmobel | 27B (denominación del base) | 16.384 validado; nativo no disponible | 304,1–312,9 tok/s con DFlash2 en RTX 5090; sin benchmarks de calidad | Swift Open License v1.0 (uso comercial limitado por umbral de 1 M USD) | NInfer v3, fichero único de 23,7 GB; 0 descargas |
-| Qwen/Qwen3.8-27B | 27B | no disponible | no disponible | Apache-2.0 | pesos del modelo base (formato no indicado en la información disponible) |
-| ukisai/Swift-Qwen3.8-27b | 27B | no disponible | no disponible | Swift Open License v1.0 | checkpoint upstream del que deriva el componente de texto |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B | no disponible | no disponible | Apache-2.0 | origen del delta de abliteración transplantado |
-| z-lab/Qwen3.8-27B-DFlash2 | 5 capas de borrador | no disponible | no disponible | Apache-2.0 | borrador especulativo preentrenado, incluido sin modificar |
+| fafstmobel | 27B | 262.144 | NVFP4/FP8, NInfer v3 | swift-open-license-v1.0 | Abliterado, visión, MTP y DFlash2 integrados; 293,7 tok/s en RTX 5090 |
+| Qwen/Qwen3.8-27B | 27B | no disponible | safetensors (no disponible) | no disponible | Modelo base; sin abliteración ni cuantización NVFP4 |
+| ukisai/Swift-Qwen3.8-27b | 27B | no disponible | no disponible | swift-open-license-v1.0 | Checkpoint Swift de origen; sin transplante de delta ni empaquetado NInfer |
+| z-lab/Qwen3.8-27B-DFlash2 | 27B | no disponible | no disponible | no disponible | Aporta el componente drafter DFlash2; sin cuantización ni visión empaquetada |
 
-No se dispone de datos de benchmarks que permitan comparar la calidad de fafstmobel frente a estos modelos; la comparación se limita a procedencia, licencia y formato de distribución.
+No se dispone de datos de rendimiento comparables de los modelos de la tabla en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El propio autor acota las afirmaciones: es un transplante de delta, no una dirección de rechazo ajustada de nuevo, y no constituye prueba de que todos los rechazos hayan sido eliminados. No se emiten afirmaciones de comportamiento sobre la eliminación de rechazos.
-- Modelo con contenido abliterado: puede generar respuestas sin las salvaguardas habituales del modelo base. Requiere revisión humana y filtros propios en cualquier despliegue orientado a usuarios finales.
-- Riesgo de alucinación: no se publican evaluaciones de fidelidad factual, veracidad ni tasas de alucinación. Aplica el comportamiento del modelo base, no medido en esta información.
-- Restricción de licencia para uso comercial: la Swift Open License v1.0 no autoriza uso comercial a entidades jurídicas que superen el umbral de un millón de dólares (sección 5); por encima de ese umbral se exige una Swift Enterprise License independiente. Las porciones de Qwen3.8-27B, el delta Huihui y el borrador DFlash2 permanecen bajo Apache-2.0.
-- Formato y portabilidad: el artefacto solo se ejecuta con el runtime NInfer. No hay safetensors, GGUF ni cuantizaciones alternativas, lo que impide su uso con vLLM, llama.cpp, Ollama o TGI y dificulta la integración en infraestructuras existentes.
-- Contexto: la única longitud validada es 16.384 tokens; no se documenta el comportamiento con ventanas mayores ni el contexto nativo del modelo base.
-- Idiomas: no se declara cobertura lingüística, por lo que no hay garantías sobre el rendimiento en castellano u otros idiomas distintos del inglés.
-- Validación comunitaria nula: 0 descargas y 0 likes, sin informes independientes que reproduzcan las medidas del autor. Las cifras de throughput provienen de una única máquina y el propio autor señala que el modo autorregresivo varía entre ejecuciones.
-- Procedencia compleja: el artefacto combina cuatro contribuciones upstream más el runtime; la trazabilidad completa depende de `NOTICE` y `PROVENANCE.md`, que conviene revisar antes de cualquier uso en producción.
-- Requisitos de hardware restrictivos: las rutas NVFP4/FP8 solo se han verificado en RTX 5090 con CUDA 13.1. No hay datos de compatibilidad con GPUs anteriores ni con hardware de centro de datos.
+- Sesgos: el modelo es una abliteración, lo que elimina mecanismos de rechazo y puede aumentar la probabilidad de respuestas dañinas o sesgadas; el autor no documenta evaluaciones de seguridad.
+- Alucinación: no se han publicado evaluaciones de veracidad ni de tasa de alucinación; el uso en producción requiere verificación externa.
+- Idiomas: no se especifican los idiomas soportados, lo que impide garantizar calidad fuera del inglés.
+- Licencia: swift-open-license-v1.0 no es Apache 2.0; es necesario revisar sus términos antes de cualquier uso comercial.
+- Formato cerrado: el artefacto NInfer v3 solo se carga con Cinference/NInfer, lo que limita la portabilidad y obliga a usar una revisión concreta (`8364ed7`) para el drafter Q4.
+- Hardware: las únicas mediciones disponibles son en RTX 5090; no hay datos de latencia ni de viabilidad en otras GPU.
+- Reproducibilidad: las tasas absolutas están afectadas por la carga de escritorio del autor; solo las aceleraciones y los conteos de aceptación se reproducen exactamente.
+- Tool calling y agentes: no documentados, por lo que no deben asumirse en pipelines de producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/satellitedown/fafstmobel
-- Modelo base Swift: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
-- Licencia Swift Open License v1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
-- Delta de abliteración Huihui: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
-- Borrador especulativo DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
-- Runtime y conversor NInfer: https://github.com/Neroued/ninfer
-- Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a contenidos sin relación (páginas corporativas de un operador ferroviario).
+- Checkpoint Swift: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
+- Licencia: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
+- Drafter DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Repositorio Cinference: https://github.com/satellitedown/cinference

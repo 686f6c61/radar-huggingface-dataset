@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Lega Serie A",
-      "url": "https://www.legaseriea.it/",
-      "snippet": "Calendario, risultati, classifica, highlights e notizie della Serie A Enilive. Segui ogni momento della stagione con Lega Serie A."
-    },
-    {
-      "title": "Lega Serie A | Sito Ufficiale",
-      "url": "https://www.legaseriea.it/news",
-      "snippet": "14 hours ago · Il sito ufficiale della Lega Serie A — notizie, risultati, calendario, squadre, giocatori, highlights e tutte le competizioni."
-    },
-    {
-      "title": "Serie A - Wikipedia",
-      "url": "https://it.wikipedia.org/wiki/Serie_A",
-      "snippet": "Il campionato di Serie A, comunemente noto come Serie A e ufficialmente denominato Serie A Enilive[1] a partire dalla stagione 2024 …"
-    },
-    {
-      "title": "Serie A: risultati, classifica e calendario | La Gazzetta dello Sport",
-      "url": "https://www.gazzetta.it/Calcio/Serie-A/",
-      "snippet": "Dec 20, 2024 · Segui il campionato di calcio di Serie A su La Gazzetta dello Sport! Ultime News, calendario, risultati e classifica …"
-    },
-    {
-      "title": "Serie A - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Serie_A",
-      "snippet": "Established in the 1929–30 season, it restructured the existing Italian Football Championship, which had been played since 1898, into …"
-    }
-  ]
+  "sources": []
 }

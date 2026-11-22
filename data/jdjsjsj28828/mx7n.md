@@ -2,76 +2,82 @@
 
 ## Resumen
 
-`mx7n` es un modelo publicado en Hugging Face por el usuario `jdjsjsj28828` bajo licencia MIT y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. En el momento de redactar esta ficha, el repositorio no declara pipeline, idiomas soportados ni documentación técnica asociada, y acumula cero descargas y cero likes, lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad.
+mx7n es un modelo de clasificación de tokens (token-classification) publicado en Hugging Face por el usuario jdjsjsj28828 bajo licencia MIT. Está construido sobre la arquitectura BERT y se distribuye en formato PyTorch a través de la librería transformers. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de dimensiones reducidas, probablemente una variante compacta de BERT o un fine-tuning de un checkpoint pequeño.
 
-La información disponible en la model card es prácticamente inexistente: no se especifican arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de benchmarks. El identificador `mx7n` no corresponde a ninguna familia de modelos conocida, y el patrón del nombre de usuario sugiere una cuenta de carácter personal o experimental más que un proyecto de un laboratorio consolidado.
+La información pública disponible es muy limitada: no se especifican los idiomas soportados, no hay tarjeta de modelo descriptiva, no se han publicado resultados de benchmarks y el autor no ha documentado el dataset de entrenamiento ni el propósito concreto del modelo. El número de descargas (890) y la ausencia de likes indican un uso moderado sin validación comunitaria significativa.
 
-Por todo ello, esta ficha debe interpretarse como un registro de la información públicamente accesible y no como una evaluación técnica del modelo. Cualquier dato ausente se marca explícitamente como "no disponible" y no se infiere ni se estima a partir de convenciones de otras familias de modelos. Se recomienda precaución antes de considerar su uso en entornos de producción.
+Por su pipeline declarado (token-classification), el modelo está orientado a tareas de etiquetado a nivel de token, como reconocimiento de entidades nombradas (NER), etiquetado POS o chunking. Dado el tamaño del repositorio y la falta de documentación, debe tratarse como un checkpoint experimental o de uso interno hasta que se valide su comportamiento en tareas reales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
+| Arquitectura | BERT (transformer encoder) |
+| Parametros totales | no disponible (repo de 0,1 GB, sugiere modelo pequeño) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (BERT estándar: 512 tokens, no confirmado) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible |
+| Formato de pesos | PyTorch (safetensors/bin, no especificado) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la información disponible. El repositorio de Hugging Face no incluye model card con detalles sobre el tipo de transformer, posible mezcla de expertos (MoE), arquitectura híbrida o cualquier otra variante, ni tampoco sobre el tokenizador o la configuración de atención.
+El modelo emplea la arquitectura BERT, un transformer encoder bidireccional diseñado originalmente para preentrenamiento con masked language modeling y next sentence prediction. Al tratarse de un checkpoint para token-classification, lo más probable es que sea un fine-tuning de un BERT base o de una variante multilingüe sobre un dataset de etiquetado de secuencias.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Cualquier afirmación al respecto sería especulativa y, por tanto, se omite.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de técnicas de ajuste fino supervisado, ni sobre posibles innovaciones técnicas (atención lineal, decodificación especulativa, etc.). La tarjeta del modelo en Hugging Face no incluye detalles sobre hiperparámetros,epochs ni métricas de validación.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la información disponible.
-- No consta soporte de tool calling ni function calling.
-- No consta soporte de agentes ni de razonamiento multi-paso.
-- No consta capacidad multilingüe declarada.
-- No consta modo de razonamiento explícito (thinking mode), visión, audio ni otras modalidades.
-- No se dispone de información sobre generación de código, matemáticas o tareas de razonamiento.
+- Clasificación de tokens: etiquetado secuencial a nivel de token, adecuado para NER, POS tagging o chunking.
+- Generación de texto: no disponible (BERT no es un modelo generativo autoregresivo).
+- Razonamiento y matemáticas: no disponible.
+- Tool calling / function calling: no soportado de forma nativa.
+- Soporte de agentes y multi-step reasoning: no aplicable a este tipo de modelo.
+- Capacidades multilingües: no confirmadas (idiomas no especificados).
+- Capacidades especiales (thinking mode, vision, audio): no disponibles.
 
 ## Casos de uso
 
-- Evaluación exploratoria en investigación: dado que el modelo está publicado bajo licencia MIT y con acceso gated, podría utilizarse como objeto de estudio para reproducir experimentos, siempre que se acepten las condiciones de acceso y se verifique previamente su comportamiento real mediante pruebas controladas.
-- Pruebas de integración en pipelines de Hugging Face: el repositorio puede servir para validar flujos de descarga autenticada y gestión de modelos gated en herramientas como `huggingface_hub`, sin garantía alguna sobre la calidad del modelo subyacente.
-- Comparación de referencia en experimentos de evaluación: podría incorporarse como línea base adicional en un banco de pruebas interno, aunque la ausencia de benchmarks publicados limita su valor comparativo.
-- Docencia y formación sobre ciclo de vida de modelos: útil como ejemplo de publicación con acceso restringido, licencia permisiva y documentación mínima, para discutir buenas prácticas de model cards.
-- Auditoría de riesgos de cadena de suministro: permite ilustrar los riesgos de adoptar modelos sin trazabilidad técnica ni validación comunitaria en entornos corporativos.
-- No se recomienda su uso en aplicaciones de producción, atención al cliente, generación de código o cualquier escenario que requiera garantías de calidad, seguridad o cumplimiento normativo, al no existir evidencia pública que lo respalde.
+- Reconocimiento de entidades nombradas (NER): el modelo puede etiquetar secuencias de texto para extraer personas, organizaciones, lugares y otras entidades, siempre que se valide su calidad sobre el dominio objetivo, ya que no hay métricas publicadas.
+- Etiquetado POS (part-of-speech): útil en pipelines de procesamiento lingüístico para anotar categorías gramaticales token a token, aunque se desconoce el idioma de entrenamiento.
+- Chunking sintáctico: segmentación de oraciones en sintagmas nominales o verbales para tareas de parsing superficial.
+- Preanotación en proyectos de anotación manual: el modelo puede generar etiquetas preliminares que los anotadores revisen, reduciendo el esfuerzo en la creación de datasets.
+- Extracción de información estructurada: combinado con reglas posteriores, puede servir para extraer campos concretos (fechas, importes, nombres) en documentos, previa validación empírica.
+- Filtrado y enriquecimiento de corpus: etiquetado masivo de textos para clasificar tokens de interés en tareas de limpieza o indexación, siempre que el rendimiento se mida sobre el corpus concreto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, al desconocerse el número de parámetros y la arquitectura.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no determinable con los datos actuales.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no confirmadas; dependen del formato de pesos, que no se especifica.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 para un modelo de ~0,1 GB de pesos; en fp16, aproximadamente 0,05-0,1 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (GTX 1060, RTX 2060, RTX 3060, RTX 4090) es suficiente; también puede ejecutarse en CPU con latencia aceptable para lotes pequeños.
+- Cabe en GPU consumer: sí, en prácticamente cualquier GPU con al menos 2 GB de VRAM.
+- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, TorchScript; no se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama (no aplicables a BERT de clasificación).
+- Latencia y throughput estimados: no disponibles; para un BERT pequeño en GPU moderna se espera un throughput de cientos a miles de tokens por segundo, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables de la misma familia o categoría, y la ausencia de especificaciones técnicas impide establecer una comparación rigurosa con alternativas de tamaño, contexto o licencia similares.
+| Modelo | Parametros | Contexto | Licencia | Pipeline | Disponibilidad |
+|---|---|---|---|---|---|
+| jdjsjsj28828/mx7n | no disponible (repo 0,1 GB) | no disponible | MIT | token-classification | Hugging Face |
+| bert-base-multilingual-cased | 178 M | 512 | Apache 2.0 | token-classification (fine-tune) | Hugging Face |
+| distilbert-base-multilingual-cased | 135 M | 512 | Apache 2.0 | token-classification (fine-tune) | Hugging Face |
+| xlm-roberta-base | 278 M | 512 | MIT | token-classification (fine-tune) | Hugging Face |
+
+La comparativa es orientativa: no se dispone de datos de rendimiento de mx7n que permitan una comparación cuantitativa con estos modelos de referencia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: no hay model card con arquitectura, datos de entrenamiento ni evaluación, lo que impide valorar su idoneidad para cualquier tarea.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade una fricción operativa y puede limitar la automatización de descargas en pipelines.
-- Cero descargas y cero likes: no existe validación por parte de la comunidad ni evidencia de uso real.
-- Riesgo de sesgos y alucinaciones: no evaluable al no disponerse de información sobre el corpus de entrenamiento ni sobre pruebas de alineación.
-- Licencia MIT: permite uso comercial y modificación, pero no exime al usuario de realizar su propia auditoría técnica y de seguridad antes de desplegar el modelo.
-- Fecha de creación futura en los metadatos (2026-11-15): conviene verificar la coherencia de los metadatos del repositorio antes de confiar en ellos.
-- No apto para producción sin una evaluación independiente previa que cubra calidad, seguridad, sesgos y cumplimiento normativo.
+- Ausencia total de documentación: no hay tarjeta de modelo, dataset, métricas ni instrucciones de uso, lo que impide evaluar su calidad y adecuación.
+- Idiomas desconocidos: no se especifica el idioma o idiomas de entrenamiento, por lo que su uso en castellano u otros idiomas no está garantizado.
+- Riesgo de sesgos y alucinaciones: sin información sobre el dataset, no es posible evaluar sesgos; en clasificación de tokens, los errores se manifiestan como etiquetas incorrectas, no como texto generado.
+- Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte.
+- Sin validación comunitaria: 0 likes y ausencia de discusiones o evaluaciones independientes; no se recomienda su uso en producción sin una evaluación previa sobre datos propios.
+- Fecha de creación futura (2026-11-15): el registro indica una fecha posterior a la actual, lo que puede indicar metadatos inconsistentes o un repositorio de prueba.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/jdjsjsj28828/mx7n
-- No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.
+- Hugging Face: https://huggingface.co/jdjsjsj28828/mx7n

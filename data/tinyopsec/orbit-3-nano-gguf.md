@@ -2,49 +2,52 @@
 
 ## Resumen
 
-Orbit-3-Nano (GGUF) es una colección de cuantizaciones en formato GGUF del modelo `OpenPathAI/Orbit-3-Nano`, un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-2.6B orientado específicamente a instrucciones en idioma indonesio. El repositorio ha sido publicado por el usuario tinyopsec en Hugging Face y ha sido generado con las herramientas de llama.cpp, lo que lo hace directamente compatible con runtimes locales como llama.cpp, Ollama, LM Studio o koboldcpp.
+Orbit-3-Nano es un ajuste fino (fine-tune) del modelo LFM2.5-2.6B de LiquidAI, desarrollado por OpenPathAI y orientado a instrucciones en indonesio. Esta ficha concreta corresponde a la versión cuantizada en formato GGUF publicada por el usuario tinyopsec, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y otros runtimes compatibles. El modelo cuenta con 2.697.198.592 parámetros totales, lo que lo sitúa en la categoría de modelos pequeños (aproximadamente 2,7 mil millones de parámetros).
 
-El modelo base, LFM2.5-2.6B de LiquidAI, pertenece a la familia LFM (Liquid Foundation Models), una arquitectura híbrida que combina bloques convolucionales tipo gated linear con atención estándar, diseñada para ofrecer buena eficiencia en dispositivos con recursos limitados. Con aproximadamente 2.700 millones de parámetros, este modelo se sitúa en la categoría de modelos pequeños aptos para ejecución en hardware de consumo.
+La relevancia de esta publicación radica en que ofrece un abanico amplio de cuantizaciones (desde F16 hasta Q2_K) de un modelo instructivo especializado en indonesio, un idioma con menos cobertura en el ecosistema de modelos abiertos. Al estar en formato GGUF, el modelo puede desplegarse en CPU, GPU de consumo y dispositivos con recursos limitados sin necesidad de infraestructura de servidor.
 
-Su relevancia radica en la escasez relativa de modelos de instrucción compactos y optimizados para indonesio, un idioma con más de 200 millones de hablantes pero con menor cobertura en modelos open source que el inglés o el chino. La disponibilidad de trece niveles de cuantización distintos, desde F16 hasta Q2_K, permite ajustar el equilibrio entre calidad y consumo de memoria según el hardware disponible. No se han publicado resultados de benchmarks específicos del ajuste fino en la información disponible.
+La información disponible sobre el modelo base (contexto, datos de entrenamiento, benchmarks) es escasa en la documentación proporcionada; esta ficha indica explícitamente los datos no disponibles en lugar de inferirlos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM2.5 (híbrida, familia Liquid Foundation Models) |
-| Parametros totales | 2.697.198.592 (~2,7 B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | LFM2.5 (familia LFM2 de LiquidAI); detalles especificos no disponibles |
+| Parametros totales | 2.697.198.592 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | Indonesio (enfoque del ajuste fino); idiomas heredados del modelo base no especificados |
-| Licencia | LFM Open License v1.0 (licencia "other" en Hugging Face) |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M (recomendada), Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | Indonesio (instruct); otros idiomas no disponibles |
+| Licencia | other (LFM Open License v1.0) |
 | Formato de pesos | GGUF |
+| Modelo base | OpenPathAI/Orbit-3-Nano (a su vez fine-tune de LiquidAI/LFM2.5-2.6B) |
+| Tamano del repositorio | 26,3 GB (todas las cuantizaciones) |
+| Tamano de F16 | 5,2 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es LiquidAI/LFM2.5-2.6B, un modelo de aproximadamente 2,7 mil millones de parámetros de la familia LFM de LiquidAI. Esta familia se caracteriza por arquitecturas híbridas que combinan capas convolucionales gated (tipo gated linear conv) con capas de atención estándar de transformer, con el objetivo de reducir el coste computacional en inferencia y mejorar la eficiencia en contexto largo frente a transformers puros de tamaño comparable. Los detalles concretos de la proporción de capas y la longitud de contexto no están disponibles en la información proporcionada.
+El modelo deriva de la familia LFM2.5 de LiquidAI, según indica la model card. No se especifican en la información disponible detalles sobre el número de capas, tipo de atención, mecanismos de normalización ni si emplea arquitecturas híbridas (por ejemplo, combinación de atención y capas SSM), aunque la nomenclatura LFM2 sugiere la línea de modelos liquid de LiquidAI. Tampoco se detallan los datos de entrenamiento del fine-tune: número de tokens, composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT.
 
-Sobre esta base se ha realizado un ajuste fino para instrucciones en indonesio, dando lugar a `OpenPathAI/Orbit-3-Nano`. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados, ni sobre si se emplearon técnicas de alineación como RLHF o DPO. Las cuantizaciones incluidas en este repositorio se han producido con llama.cpp, cubriendo un rango completo desde precisión media (F16) hasta cuantización extrema de 2 bits (Q2_K), siendo Q4_K_M la recomendada por el autor.
+La innovación destacable de esta publicación es la propia cuantización: se ofrecen trece variantes GGUF generadas con llama.cpp, desde F16 hasta Q2_K, lo que permite ajustar el equilibrio entre calidad y requisitos de memoria. La cuantización Q4_K_M se marca como recomendada por el autor. No se documentan técnicas adicionales como decodificación especulativa o atención lineal en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional siguiendo instrucciones en indonesio (modelo tipo instruct/chat).
-- Compatibilidad con el pipeline de text-generation de Hugging Face y con runtimes GGUF (llama.cpp, Ollama, LM Studio, koboldcpp).
-- Ejecución eficiente en hardware de consumo gracias al tamaño reducido (~2,7 B parámetros) y a la amplia gama de cuantizaciones.
-- Capacidades heredadas del modelo base LFM2.5-2.6B (razonamiento general, código, matemáticas) no documentadas específicamente para este ajuste fino: no disponible.
-- Tool calling / function calling: no disponible (no consta en la información proporcionada).
-- Capacidades multimodales (visión, audio): no disponibles.
+- Generación de texto e instrucciones en indonesio (modelo etiquetado como `instruct`).
+- Conversación multi-turno (etiqueta `conversational`).
+- Ejecución en llama.cpp y runtimes compatibles con GGUF (Ollama, LM Studio, koboldcpp).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Capacidades de razonamiento, código, matemáticas, tool calling, agentes o multimodalidad: no disponibles en la información proporcionada.
+- Capacidades multilingües más allá del indonesio: no disponibles.
 
 ## Casos de uso
 
-- Asistentes conversacionales en indonesio: el modelo, al ser un instruct tune centrado en indonesio, puede alimentar chatbots locales que respondan preguntas y mantengan conversaciones en este idioma sin depender de APIs externas.
-- Atención al cliente automatizada local: desplegado vía Ollama o llama.cpp en servidores modestos, puede gestionar consultas frecuentes de usuarios indonesios manteniendo los datos en la infraestructura propia, algo valioso por privacidad y coste.
-- Aplicaciones en dispositivos de borde y móviles: con cuantizaciones Q4 o Q3, el modelo ocupa entre ~1,5 y 2 GB, lo que lo hace viable en portátiles sin GPU dedicada o en mini-PC.
-- Prototipado y pruebas de productos para el mercado indonesio: los desarrolladores pueden validar flujos conversacionales en indonesio localmente antes de escalar a modelos mayores.
-- Integración en aplicaciones con LM Studio o koboldcpp: útil para escritorios de usuario final que necesiten generación de texto offline en indonesio.
-- Investigación sobre adaptación lingüística: sirve como caso de estudio de cómo un ajuste fino ligero sobre un modelo híbrido compacto adapta un modelo base a un idioma de recursos medios.
-- Generación y resumen de contenido en indonesio: redacción de borradores, resúmenes de textos o clasificación ligera de contenido en ese idioma, aprovechando la inferencia local y barata.
+- Asistencia conversacional en indonesio: el modelo puede gestionar diálogos multi-turno en dicho idioma, adecuado para chatbots de atención al cliente dirigidos a mercados indonesios, siempre que se valide la calidad con pruebas propias.
+- Despliegue en hardware de consumo: gracias a las cuantizaciones Q4_K_M y Q3_K, puede ejecutarse en equipos con GPU modestas o incluso en CPU, lo que facilita prototipado local sin infraestructura cloud.
+- Procesamiento de texto en local y con privacidad: al ejecutarse con llama.cpp, permite tratar datos sensibles sin enviarlos a servicios externos, útil en entornos con requisitos de confidencialidad.
+- Generación de contenido en indonesio: redacción de borradores, resúmenes o respuestas en dicho idioma para aplicaciones editoriales o de soporte.
+- Integración en pipelines de desarrollo: al ser GGUF y compatible con endpoints, puede incorporarse en aplicaciones que usen APIs compatibles con OpenAI mediante servidores locales.
+- Experimentación e investigación: las múltiples cuantizaciones permiten estudiar el impacto de la precisión en la calidad de salida para un modelo de 2,7B parámetros especializado en un idioma de recursos medios.
+- Educación y prototipado: su reducido tamaño y licencia abierta (LFM Open License v1.0) facilitan su uso en entornos académicos y pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
@@ -52,45 +55,36 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM / memoria estimada para inferencia (tamaños aproximados según cuantización para ~2,7 B parámetros):
-  - F16: ~5,2 GB (tamaño de archivo indicado en el repo)
-  - Q8_0: ~2,9 GB
-  - Q6_K: ~2,2 GB
-  - Q5_K_M / Q5_0: ~1,9 GB
-  - Q4_K_M / Q4_0: ~1,6 GB
-  - Q3_K_M: ~1,3 GB
-  - Q2_K: ~1,1 GB
-  (los tamaños intermedios son estimaciones estándar; solo F16 está confirmado en la model card)
-- GPU recomendadas: al ser un modelo de 2,7 B parámetros, no requiere GPU de gama alta; cualquier GPU con 4 GB de VRAM (por ejemplo RTX 3050, RTX 3060 o superior) ejecuta cómodamente las cuantizaciones de 4-8 bits. También es viable solo con CPU y RAM.
-- Consumer GPUs: sí, cabe sobradamente en GPUs de consumo desde 4 GB de VRAM; incluso en portátiles sin GPU usando inferencia por CPU.
-- Opciones de despliegue: llama.cpp (nativo, con ejemplo de uso en la model card), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
-- Latencia y throughput estimados: no disponibles; por tamaño y arquitectura híbrida LFM se espera inferencia rápida en CPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 5,2 GB en F16; en torno a 2,5-3 GB en Q4_K_M (estimación basada en el tamaño de los pesos, no confirmada por el autor); menos de 2 GB en Q2_K.
+- GPU recomendadas: no especificadas por el autor; por tamaño, cabría en GPUs de consumo como RTX 3060 (12 GB), RTX 4060, RTX 4090, así como en Apple Silicon con memoria unificada.
+- Cabe en GPU de consumo: sí, previsiblemente en la mayoría de GPUs con 4 GB o más de VRAM para cuantizaciones Q4 y superiores.
+- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Enfoque | Licencia |
-|---|---|---|---|---|
-| Orbit-3-Nano (este) | ~2,7 B | GGUF (13 cuantizaciones) | Instrucciones en indonesio | LFM Open License v1.0 |
-| LiquidAI/LFM2.5-2.6B (base) | ~2,7 B | Safetensors | Modelo base generalista | LFM Open License v1.0 |
-| Qwen2.5-3B-Instruct | ~3 B | Safetensors / GGUF (comunitarias) | Multilingüe generalista (incluye indonesio parcial) | Qwen Research / Apache-2.0 (según versión) |
-| Gemma 2 2B IT | ~2,6 B | Safetensors / GGUF (comunitarias) | Multilingüe generalista | Gemma License |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Orbit-3-Nano (GGUF) | 2,7B | no disponible | LFM Open License v1.0 | GGUF | Fine-tune en indonesio de LFM2.5-2.6B |
+| LFM2.5-2.6B (LiquidAI) | ~2,6B | no disponible | LFM Open License v1.0 | safetensors (original) | Modelo base; multilingüe general |
+| OpenPathAI/Orbit-3-Nano | 2,7B | no disponible | no disponible | no disponible | Modelo base del fine-tune, en formato original |
 
-Nota: los modelos alternativos no están especializados en indonesio, por lo que la comparativa se basa en tamaño y categoría; no hay datos de rendimiento comparativo disponibles.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Especialización lingüística: el ajuste fino está orientado a indonesio; el rendimiento en otros idiomas, incluido el castellano, no está documentado y probablemente sea inferior o no fiable.
-- Riesgo de alucinación: como todo modelo de lenguaje de 2,7 B parámetros, puede generar contenido incorrecto o inventado con fluidez; el propio autor incluye un disclaimer ("Evaluate before use") recomendando evaluación previa.
-- Sesgos: no se ha documentado ningún análisis de sesgos; el modelo puede heredar sesgos del modelo base y de los datos del ajuste fino, que no son públicos.
-- Longitud de contexto: no disponible; debe verificarse en la ficha del modelo base antes de diseñar aplicaciones con documentos largos.
-- Licencia: se distribuye bajo LFM Open License v1.0, una licencia "other" (no estándar); debe revisarse el texto completo para confirmar las condiciones de uso comercial, que pueden incluir restricciones.
-- Calidad de las cuantizaciones agresivas: los niveles Q3 y Q2_K pueden degradar notablemente la calidad de generación; el autor recomienda Q4_K_M como equilibrio.
-- Herramientas y agentes: no consta soporte de tool calling ni capacidades agénticas, por lo que no es adecuado para pipelines que exijan function calling fiable.
-- Popularidad limitada: con 411 descargas y 0 likes en el momento de la ficha, es un modelo de comunidad sin auditoría amplia; conviene validarlo antes de uso en producción.
+- Modelo especializado en indonesio: su rendimiento en castellano u otros idiomas no está documentado y probablemente sea limitado.
+- Riesgo de alucinación: inherente a modelos de este tamaño; se recomienda validación humana en producción.
+- Sesgos: no documentados por el autor; los sesgos del corpus de entrenamiento del modelo base pueden persistir.
+- Licencia: LFM Open License v1.0 (etiquetada como "other"); es imprescindible revisar los términos exactos antes de un uso comercial, ya que pueden existir restricciones.
+- Contexto: la longitud de contexto no está documentada en la información disponible; conviene verificarla antes de diseñar aplicaciones con ventanas largas.
+- El autor recomienda explícitamente evaluar el modelo antes de usarlo ("Evaluate before use").
+- La cuantización puede degradar la calidad respecto al modelo original, especialmente en Q2_K y Q3_K.
+- Información de entrenamiento y benchmarks ausente: no hay garantías documentadas sobre capacidades específicas (código, matemáticas, tool calling).
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Orbit-3-Nano-GGUF
-- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
-- Modelo original ajustado: https://huggingface.co/OpenPathAI/Orbit-3-Nano (referenciado en la model card; URL no verificada en la información proporcionada)
-- Paper, blog o demo: no disponibles
+- Repositorio GGUF: https://huggingface.co/tinyopsec/Orbit-3-Nano-GGUF
+- Modelo base del fine-tune: https://huggingface.co/OpenPathAI/Orbit-3-Nano
+- Modelo original de LiquidAI: https://huggingface.co/LiquidAI/LFM2.5-2.6B
+- llama.cpp (runtime): https://github.com/ggml-org/llama.cpp

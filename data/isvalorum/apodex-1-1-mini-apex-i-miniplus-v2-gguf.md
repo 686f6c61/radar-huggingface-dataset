@@ -2,99 +2,100 @@
 
 ## Resumen
 
-Apodex-1.1-mini-APEX-I-MiniPlus-V2 es una cuantización GGUF personalizada del modelo multimodal apodex/Apodex-1.1-mini, un Mixture-of-Experts (MoE) de 35.000 millones de parámetros desarrollado por apodex y publicado en Hugging Face por el usuario IsValorum. El modelo está orientado a cargas de trabajo agénticas: investigación profunda, orquestación de herramientas, razonamiento verificable y flujos de trabajo informáticos de varios turnos. Su topología combina 256 micro-expertos con dimensión intermedia de 512 y enrutamiento top-8 por token, distribuidos en 40 capas, de las cuales 30 son de atención lineal tipo DeltaNet SSM y 10 de atención completa.
+Apodex-1.1-mini APEX-I-MiniPlus V2 es una cuantizacion GGUF personalizada del modelo multimodal apodex/Apodex-1.1-mini, publicada por el usuario independiente IsValorum. El modelo base es un transformer de tipo MoE (mezcla de expertos) con arquitectura etiquetada como qwen35moe, 35.505.251.456 parametros totales y capacidad image-text-to-text, es decir, procesa imagenes y texto conjuntamente. Esta version concreta no es el modelo original, sino un empaquetado de pesos cuantizados en formato GGUF para inferencia local con llama.cpp.
 
-La relevancia de esta ficha concreta reside en el proceso de cuantización: en lugar de un script automático, el autor aplica un mapa de tensores hecho a mano y calibrado contra una importance matrix (imatrix) multidominio, con el objetivo declarado de preservar el enrutamiento de expertos y el espacio de vocabulario de 248.320 tokens. El modelo soporta una ventana de contexto nativa de 262.144 tokens, visión multimodal mediante un proyector mmproj y un bloque de predicción multi-token (blk.40) pensado para decodificación especulativa.
+La relevancia de esta ficha radica en que el repositorio documenta una receta de cuantizacion tensor a tensor orientada a preservar la calidad en modelos MoE de razonamiento profundo: mantiene las puertas del router en F32 sin comprimir, la cabeza de salida de tokens en Q6_K, las puertas de atencion en Q8_0 y los expertos centrales en 3 bits calibrados (IQ3_S / IQ4_NL). Ademas incluye un proyector de vision Q8_0 empaquetado y soporte declarado de multi-token prediction (MTP) para decodificacion especulativa.
 
-Advertencia relevante: la model card indica explícitamente que los pesos se estaban subiendo el mismo día de publicación ("work in progress", con fecha 15 de septiembre de 2026) y que las tablas de benchmarks y los requisitos de hardware se completarían más adelante. A fecha de la información disponible el repositorio registra cero descargas y cero likes, y no se confirma la presencia de los archivos GGUF en el momento de redactar esta ficha.
+El autor indica que esta edicion V2 es una variante heredada y recomienda su version V2.1 para la mayoria de despliegues, especialmente para ejecucion con streaming desde RAM del sistema. El repositorio ocupa 15,6 GB y acumula 699 descargas, con licencia Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido MoE: 40 capas totales (30 de atención lineal / DeltaNet SSM + 10 de atención completa), 256 micro-expertos con dimensión intermedia de 512, enrutamiento top-8 por token, bloque de predicción multi-token (blk.40) |
-| Parámetros totales | 35.000 millones (35B) |
-| Parámetros activos | no disponible (el autor declara top-8 sobre 256 expertos, pero no publica el recuento de parámetros activos por token) |
-| Longitud de contexto | 262.144 tokens (256K) nativos |
-| Tipos de cuantización | APEX-I-MiniPlus-V2 (GGUF de precisión mixta): `output.weight` en Q6_K; expertos enrutados en IQ3_XXS con calibración imatrix; embeddings de entrada, capas 0–9 y 30–39 y cabezas de atención en IQ3_S; expertos compartidos en IQ4_NL; layer norms, kernels conv1d y biases de estado SSM en F32; proyector de visión (mmproj) en Q8_0 |
-| Idiomas soportados | no disponible (vocabulario de 248.320 tokens diseñado para tareas multilingües, pero el autor no publica lista de idiomas) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) para este repositorio; formato del modelo base no disponible |
+| Arquitectura | Transformer MoE (etiqueta qwen35moe) con soporte de vision (image-text-to-text) |
+| Parametros totales | 35.505.251.456 (aprox. 35,5 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | Hasta 256K tokens segun la model card (referida a la familia MiniPlus; confirmar en el modelo base) |
+| Tipos de cuantizacion | GGUF mixta tensor a tensor: F32 (router gates), Q6_K (cabeza de salida), Q8_0 (puertas de atencion y proyector de vision mmproj), IQ3_S + IQ4_NL (expertos compartidos en capas de borde), IQ3_XXS/IQ3_S (expertos de razonamiento) |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); proyector de vision mmproj Q8_0 incluido |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer híbrido con mezcla de expertos. De las 40 capas, 30 emplean atención lineal con formulación DeltaNet sobre espacio de estados (SSM), lo que reduce el coste de prefill y el tamaño del KV cache, mientras que 10 capas mantienen atención completa. El componente MoE está fragmentado en 256 micro-expertos de dimensión intermedia 512, con enrutamiento top-8 por token, lo que busca alta especialización con asignación de cómputo dispersa. El vocabulario es inusualmente amplio (248.320 tokens), dimensionado para código, estructuras de razonamiento y multilingüismo. El modelo incorpora además un bloque de predicción multi-token (`blk.40`) que actúa como borrador para decodificación especulativa, y un proyector multimodal para entrada de imagen.
+El modelo base es un transformer con mezcla de expertos (MoE) y torre de vision, disenado para entrada image-text-to-text. La model card etiqueta la arquitectura como qwen35moe, lo que sugiere una variante derivada de la familia Qwen con 35B parametros totales. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base; estos datos no estan disponibles en la informacion proporcionada.
 
-El detalle del entrenamiento no está publicado en la información disponible: se desconoce el número de tokens de entrenamiento, la composición del dataset, la mezcla de idiomas y si hubo etapas de RLHF, DPO u otra optimización por preferencias. Tampoco se documentan las innovaciones de entrenamiento más allá de las características arquitectónicas descritas. La aportación técnica diferencial de este repositorio es exclusivamente la cuantización: un mapa de tensores manual calibrado con una imatrix multidominio, con protección explícita del `output.weight` en Q6_K para evitar el colapso léxico del vocabulario de 248k, expertos enrutados por encima del umbral de 3,0 BPW para prevenir el misrouting en una topología de 256 expertos, y aislamiento en F32 de layer norms, conv1d y biases de estado SSM para preservar la estabilidad numérica.
+La innovacion principal de este repositorio es la receta de cuantizacion, no el entrenamiento. Se aplica una asignacion de precision por tensor: las puertas del router se mantienen en F32 para no degradar el enrutamiento de expertos, la cabeza de salida se protege en Q6_K para evitar errores de sintaxis y corchetes en codigo, las proyecciones de atencion suben a Q8_0 y los expertos centrales se mantienen en 3 bits calibrados. Se declara soporte de multi-token prediction (MTP) para decodificacion especulativa y se incluye un proyector de vision Q8_0 separado para la torre multimodal.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de varios pasos: el autor lo posiciona para "razonamiento verificable" y flujos de trabajo de investigación profunda.
-- Código y matemáticas: el repositorio declara explícitamente que los pesos principales cubren lenguaje, razonamiento y matemáticas.
-- Visión multimodal e image-text-to-text: pipeline declarado `image-text-to-text`, con análisis de documentos e imágenes de alta resolución y OCR, apoyado en el proyector `mmproj` cuantizado en Q8_0.
-- Orquestación de herramientas: se presenta como modelo "agentic" con soporte de tool orchestration; el formato exacto de function calling no está documentado en la información disponible.
-- Agentes y flujos multi-turno: orientado a "multi-turn computer workflows".
-- Contexto largo: ventana nativa de 262.144 tokens, útil para documentos extensos o historiales de agente largos.
-- Multilingüismo: vocabulario de 248.320 tokens diseñado para tareas multilingües avanzadas, sin lista de idiomas confirmada.
-- Decodificación especulativa mediante MTP: el bloque `blk.40` se conserva en la cuantización; no se confirma que el runtime de destino (llama.cpp) lo aproveche.
+- Generacion de texto y razonamiento multi-paso, orientado a tareas de razonamiento profundo segun la receta de cuantizacion descrita.
+- Procesamiento de imagenes y texto (pipeline image-text-to-text), incluyendo lectura de figuras cientificas y diagramas moleculares segun la model card.
+- Generacion de codigo, con proteccion especifica de la cabeza de salida para reducir errores de sintaxis en cuantizaciones agresivas.
+- Decodificacion especulativa mediante multi-token prediction (MTP).
+- Capacidades multilingues en 13 idiomas: ingles, chino, espanol, frances, aleman, portugues, italiano, ruso, japones, coreano, vietnamita, tailandes y arabe.
+- Soporte de contexto largo, con ventanas declaradas de hasta 256K tokens en la familia MiniPlus.
+- Compatibilidad con endpoints (tag endpoints_compatible) y con llama.cpp.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Análisis de documentación técnica extensa: con 256K tokens de contexto nativo el modelo puede ingerir manuales, normativa o repositorios completos en una sola pasada, evitando estrategias de chunking y recuperación que degradan la coherencia global.
-- Digitalización y extracción de datos de documentos escaneados: la combinación de visión multimodal y proyector Q8_0 permite OCR y extracción estructurada de tablas y formularios sin depender de servicios externos, siempre que el rendimiento real se valide tras el despliegue.
-- Agentes de automatización de navegador y escritorio: el perfil "agentic" y la ventana larga encajan con bucles de acción-observación multi-turno donde el historial crece rápido.
-- Asistentes de código en pipelines de CI/CD: si el soporte de tool calling se confirma, puede integrarse como revisor automático de parches o generador de tests invocado desde el pipeline, con el atractivo de una licencia Apache-2.0 para uso comercial.
-- Atención al cliente multilingüe de segundo nivel: el vocabulario amplio permite cubrir conversaciones con mezcla de idiomas y jerga técnica, aunque no hay lista oficial de idiomas ni evaluación de calidad por idioma.
-- Investigación asistida con verificación: el foco declarado en razonamiento verificable lo hace apto para generar hipótesis y resúmenes de literatura citando pasajes de los documentos introducidos en contexto.
-- Despliegue en hardware de gama alta de consumo: al ser GGUF, un usuario con una GPU de 24 GB o un equipo Apple con memoria unificada puede ejecutarlo localmente con llama.cpp, sin depender de APIs externas ni enviar datos sensibles fuera de la organización.
+- Analisis de literatura cientifica y biomedica: el modelo puede procesar documentos extensos de hasta 256K tokens junto con figuras y diagramas, apoyandose en el proyector de vision Q8_0 para interpretar graficos y esquemas moleculares.
+- Inferencia local en estaciones de trabajo sin GPU de gran VRAM: la receta esta disenada para ejecucion total o parcial en RAM del sistema (DDR4/DDR5), con tasas declaradas de 20 a 45 tok/s segun el hardware.
+- Asistencia de codigo en entornos con recursos limitados: la proteccion de la cabeza de salida en Q6_K y de las puertas de atencion en Q8_0 reduce los fallos de sintaxis tipicos de cuantizaciones de 3 bits, lo que lo hace util para autocompletado y generacion de funciones en IDE locales.
+- Procesamiento multilingue de documentos: con soporte para 13 idiomas, puede emplearse en traduccion, resumen y extraccion de informacion de corpus heterogeneos.
+- Razonamiento sobre imagenes tecnicas: lectura de diagramas, capturas de pantalla o planos combinados con preguntas en lenguaje natural, gracias a la torre de vision integrada.
+- Despliegue en portatiles con llama.cpp: el autor documenta benchmarks en equipos con DDR4 y DDR5, lo que permite ejecutar el modelo en portatiles de gama alta sin GPU dedicada de gran capacidad.
+- Experimentacion e investigacion de tecnicas de cuantizacion: el repositorio detalla la asignacion de precision por tensor, lo que lo convierte en material de referencia para estudiar el impacto de la cuantizacion mixta en modelos MoE.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que las "full benchmark tables" se incorporarán cuando finalice la subida de los archivos. No se dispone de valores de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra métrica, ni de comparaciones medidas contra modelos de la misma categoría.
+La model card incluye datos de perplejidad para la edicion V2.1, no para esta V2. Se recogen a continuacion los unicos datos numericos publicados en la informacion disponible.
+
+| Metrica | Resultado | Contexto |
+|---|---|---|
+| Perplejidad WikiText-2 (V2.1) | 5,7073 ± 0,1373 | ΔPPL aprox. +0,07 frente al baseline sin cuantizar (aprox. 5,64) |
+| Tamano V2.1 | aprox. 14,7 GB | Equiparable a Q3_K_M en huella, con fidelidad de Q5_K/Q6_K |
+| Throughput streaming en RAM (V2.1) | +24 a 28+ tok/s | Con offload a RAM del sistema, sin bloqueos AVX2 |
+| Throughput general en RAM | 20 a 45 tok/s | Segun procesador y configuracion DDR4/DDR5 |
+| Contexto completo en VRAM | 256K tokens en 24 GB | Afirmacion del autor para la familia MiniPlus |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: aproximadamente 15–19 GB según el recuento de 35B parámetros y la mezcla de precisión declarada (expertos IQ3_XXS, expertos compartidos IQ4_NL, `output.weight` Q6_K). Es una estimación derivada del recuento de parámetros, no una cifra publicada por el autor.
-- Proyector de visión: tamaño del archivo `mmproj` en Q8_0 no disponible; hay que sumarlo a la VRAM anterior.
-- KV cache: el autor indica que las 30 capas de atención lineal reducen el consumo de KV cache, pero no publica cifras. Solo las 10 capas de atención completa escalan con la longitud de contexto.
-- GPU consumer: una RTX 3090 o RTX 4090 con 24 GB debería alojar los pesos con poco margen para contexto largo y proyector; tarjetas de 32 GB o superiores son más holgadas. No confirmado por el autor.
-- Memoria unificada: equipos Apple Silicon con 32–64 GB son candidatos razonables para ejecución íntegra en GPU.
-- GPU de centro de datos: A100 40/80 GB, H100 y L40S tienen margen sobrado para pesos, proyector y contexto extendido.
-- Ejecución parcial en CPU: al ser GGUF, llama.cpp permite descargar capas a RAM si la VRAM no alcanza, a costa de latencia.
-- Opciones de despliegue confirmadas: llama.cpp (`llama-cli`, `llama-server`), y los envoltorios compatibles con GGUF (Ollama, LM Studio, koboldcpp, llama-cpp-python).
-- vLLM y TGI: soporte de esta arquitectura híbrida MoE + DeltaNet SSM en formato GGUF no confirmado.
-- Latencia y throughput: no disponible. El autor no publica mediciones de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada: el repositorio pesa 15,6 GB; la edicion V2.1 equivalente ocupa aprox. 14,7 GB. Con el proyector de vision Q8_0 adicional, el consumo en GPU se situa por encima de los 15 GB si se carga todo en VRAM.
+- GPU recomendadas: el autor afirma que el contexto completo de 256K cabe en 24 GB de VRAM, lo que apunta a RTX 3090, RTX 4090, A100 40 GB, H100 o superiores. No se detallan modelos concretos en la informacion proporcionada.
+- Cabe en GPU de consumo: si, en tarjetas de 24 GB (RTX 3090, RTX 4090) segun la afirmacion del autor sobre contexto completo en VRAM. En tarjetas de 16 GB requeriria offload parcial a RAM.
+- Opciones de despliegue: llama.cpp es el runtime principal. La model card menciona compatibilidad con endpoints. No se confirma soporte de vLLM, Ollama o TGI en la informacion disponible.
+- Latencia y throughput: 20 a 45 tok/s en inferencia total o parcial desde RAM del sistema, segun procesador y memoria (DDR4/DDR5). La edicion V2.1 declara +24 a 28+ tok/s en streaming por RAM tras eliminar bloqueos de dequantizacion AVX2.
 
 ## Comparativa con modelos similares
 
-Los valores de referencia de los modelos alternativos proceden de documentación pública externa y no estaban incluidos en la información proporcionada; se incluyen únicamente como contexto orientativo.
-
-| Modelo | Parámetros totales | Parámetros activos | Contexto nativo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Apodex-1.1-mini-APEX-I-MiniPlus-V2 | 35B | no disponible | 262.144 tokens | Apache-2.0 | GGUF, pesos pendientes de publicación |
-| Qwen3-30B-A3B (referencia externa) | 30,5B | 3,3B | 128.000 tokens | Apache-2.0 | safetensors y GGUF publicados |
-| Mixtral 8x7B (referencia externa) | 46,7B | 12,9B | 32.000 tokens | Apache-2.0 | safetensors y GGUF publicados |
-| apodex/Apodex-1.1-mini (modelo base) | 35B | no disponible | 262.144 tokens | no disponible en la información proporcionada | no disponible |
+| Apodex-1.1-mini APEX-I-MiniPlus V2 (este) | 35,5 B (MoE) | hasta 256K | GGUF mixto | Apache 2.0 | Receta tensor a tensor, vision Q8_0, MTP |
+| Apodex-1.1-mini APEX-I-MiniPlus V2.1 | 35,5 B (MoE) | hasta 256K | GGUF mixto | Apache 2.0 | Recomendada por el autor; PPL 5,7073; expertos de borde en Q3_K |
+| Apodex-1.1-mini (base, sin cuantizar) | 35,5 B (MoE) | no disponible | safetensors | no disponible | Baseline de referencia; PPL aprox. 5,64 en WikiText-2 |
+| Cuantizaciones APEX-I-Mini genericas de la comunidad | 35,5 B (MoE) | hasta 256K | GGUF plano 2-3 bits | Apache 2.0 | Expertos en IQ2_S, cabeza en Q3_K_M; el autor advierte de degradacion severa |
 
-No se dispone de datos de rendimiento comparado entre estos modelos dentro de la información proporcionada, por lo que la comparativa se limita a parámetros, contexto y licencia.
+No se dispone de comparativas con modelos de otras familias en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Disponibilidad: la model card indica que los pesos se estaban subiendo el mismo día de publicación. Si los archivos no están presentes en el repositorio, el modelo no es utilizable todavía.
-- Falta de validación externa: cero descargas y cero likes en el momento de la consulta; no hay evidencia de uso independiente ni de reproducibilidad de la cuantización.
-- Ausencia de benchmarks: no hay ninguna métrica publicada, ni del modelo base ni de esta cuantización, por lo que no puede afirmarse ninguna comparación de calidad frente a las alternativas.
-- Riesgo de degradación por cuantización agresiva: el propio autor reconoce que la cuantización plana en 3 bits "aplasta las matrices de enrutamiento"; su mapa manual busca mitigarlo, pero no aporta mediciones que lo demuestren. En una topología de 256 expertos, un misrouting residual puede afectar a tareas que dependan de conocimiento especializado.
-- Alucinación: no cuantificada. No hay evaluaciones de fidelidad ni de tasa de invención en contextos agénticos.
-- Idiomas: no existe lista oficial de idiomas soportados; el tamaño del vocabulario no garantiza calidad homogénea entre lenguas.
-- Soporte de MTP incierto: el bloque `blk.40` se conserva, pero no se confirma que llama.cpp lo utilice para decodificación especulativa; en caso contrario, el beneficio de latencia no se materializa.
-- Licencia: Apache-2.0 permite uso comercial de esta cuantización, pero la licencia y las condiciones del modelo base apodex/Apodex-1.1-mini no se detallan en la información disponible y conviene verificarlas antes de un despliegue en producción.
-- Compatibilidad de runtimes: arquitecturas híbridas con atención lineal/SSM pueden no estar soportadas en motores de inferencia de alto rendimiento como vLLM o TGI, lo que limita el escalado a servidores.
-- Fechas de referencia: el repositorio se creó y actualizó el 15 de septiembre de 2026, sin actualizaciones posteriores registradas en la información consultada.
+- Esta es una cuantizacion de 3 bits en los expertos centrales: aunque la receta protege router, cabeza y atencion, existe perdida de calidad frente al modelo sin cuantizar (ΔPPL aprox. +0,07 en la V2.1; no se publica el dato para V2).
+- El autor recomienda explicitamente la edicion V2.1 sobre esta V2 para practicamente todos los despliegues; la V2 se mantiene por transparencia arquitectonica.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, no cuantificado en la informacion disponible.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- El rendimiento depende fuertemente de la memoria y el procesador: en configuraciones DDR4 lentas el throughput puede caer al extremo inferior del rango declarado (20 tok/s).
+- Las afirmaciones sobre contexto de 256K en 24 GB de VRAM y sobre tasas de 20 a 45 tok/s provienen del autor y no se acompanan de metodologia detallada en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base apodex/Apodex-1.1-mini, que no se detalla en la informacion proporcionada.
+- No se confirma soporte de tool calling ni de agentes multi-paso; verificar antes de usarlo en pipelines de produccion que dependan de function calling.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2-GGUF
+- Edicion recomendada V2.1: https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
-- Perfil del autor de la cuantización: https://huggingface.co/IsValorum
-- Paper, blog o demo oficial: no disponible en la información proporcionada
-- Nota sobre la búsqueda web: los resultados obtenidos no guardan relación con este modelo (contenido sobre Claude, Claude Code Router y tutoriales de herramientas de Anthropic) y no se han incluido como enlaces relevantes.
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

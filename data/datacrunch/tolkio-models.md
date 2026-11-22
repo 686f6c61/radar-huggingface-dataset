@@ -2,53 +2,52 @@
 
 ## Resumen
 
-Tolkio models es un repositorio agregado de modelos de IA orientados a la traduccion de voz offline en Android, publicado por datacrunch. No se trata de un unico modelo entrenado de forma monolotica, sino de una coleccion de componentes heterogeneos (reconocimiento de voz, traduccion automatica, sintesis de voz, deteccion de actividad vocal, diarizacion de hablantes y clasificacion de idioma) empaquetados en formato ONNX y GGUF para su ejecucion local en dispositivos moviles. El repositorio suma aproximadamente 1.942 millones de parametros en pesos safetensors y ocupa 10,3 GB en disco.
+Tolkio models es un repositorio agregado que contiene el conjunto de modelos que descarga la aplicación Tolkio, un traductor de voz offline para Android. No se trata de un modelo único entrenado de cero, sino de una colección de componentes de reconocimiento de voz (ASR), traducción automática (MT), síntesis de voz (TTS), detección de voz (VAD), segmentación de hablantes y clasificación de idioma, empaquetados en formatos ONNX y GGUF para su ejecución local en dispositivos móviles. El autor del repositorio es datacrunch, mientras que los modelos subyacentes proceden de terceros (NVIDIA, bilibili, Supertone, Meta, Silero, entre otros) y algunos han sido ajustados o cuantizados específicamente para la aplicación.
 
-La propuesta de valor es la inferencia completamente offline: la aplicacion Tolkio descarga estos modelos para traducir conversaciones en tiempo real sin conexion de red, lo que resulta relevante para viajes, entornos con conectividad limitada y escenarios de privacidad donde el audio no debe salir del dispositivo. El repositorio combina modelos de terceros bajo licencias dispares (CC BY 4.0, Apache 2.0, MIT, OpenRAIL-M, CC BY-SA 4.0) y algunos han sido modificados por el autor (recuantizacion, fine-tuning con ruido, exportacion a ONNX).
+El repositorio tiene un tamaño de 10,8 GB y declara 1.942.653.248 parámetros en safetensors, aunque este dato agrega componentes heterogéneos y no corresponde a un único modelo. La licencia es mixta ("mixed"): cada carpeta conserva la licencia de su modelo original, con predominio de Apache 2.0 y CC BY 4.0, pero también con componentes bajo OpenRAIL-M (Supertonic 3) y CC BY-SA 4.0 (voces VITS OpenBible). Esta heterogeneidad obliga a revisar licencia por licencia antes de cualquier uso comercial.
 
-El pipeline declarado es translation, aunque el contenido abarca multiples tareas del habla. La ausencia de una model card tecnica unificada, de benchmarks publicados y de una lista de idiomas soportados hace que la evaluacion detallada dependa de la documentacion de cada modelo componente.
+Su relevancia actual radica en que ejemplifica un patrón de despliegue de IA totalmente offline en Android: cuantización agresiva (2, 4 y 8 bits), exportación a ONNX Runtime y sherpa-onnx, y sustitución de dependencias en la nube por modelos locales. Es un caso práctico de integración de pipelines de voz multilingües en dispositivos con recursos limitados, aunque su naturaleza de "contenedor de modelos" hace que no sea evaluable como un modelo único.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Coleccion heterogenea: Conformer/TDT y CTC (Parakeet), transformer (Index-Translate 2B, TranslatePsy-AfriSLM), VITS (sintesis), Zipformer (X-ASR), CNN (Silero VAD, CAM++), Kokoro (TTS) |
-| Parametros totales | 1.942.653.248 (pesos safetensors del repo) |
-| Parametros activos | no disponible |
+| Arquitectura | Colección heterogénea: Conformer/transducer (Parakeet TDT), transformer (Index-Translate 2B), VITS (TTS), CAM++/pyannote (speaker), Silero VAD y clasificador de idioma |
+| Parametros totales | 1.942.653.248 (agregado del repo, no de un modelo único) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits (MatMulNBits block 128), 2 bits empaquetado, 8 bits (GGUF), int8 (sherpa-onnx), 16 bits (pesos TTS y vocoder) |
-| Idiomas soportados | no disponible (la model card menciona idiomas africanos, coreano, japones, chino-ingles y clasificador de 95 idiomas, pero no hay lista consolidada) |
-| Licencia | Mixta (mixed): CC BY 4.0, Apache 2.0, MIT, OpenRAIL-M, CC BY-SA 4.0 segun componente |
-| Formato de pesos | ONNX, GGUF, safetensors, sherpa-onnx |
+| Tipos de cuantizacion | 2 bits empaquetado, 4 bits (ONNX Runtime MatMulNBits, bloque 128), 8 bits, int8 (sherpa-onnx), 16 bits (pesos TTS/voces) |
+| Idiomas soportados | No listados explícitamente; por componentes: multilingüe europeo (FLEURS, VoxPopuli, Common Voice), ASR para japonés, chino-inglés, lenguas africanas y coreano |
+| Licencia | Mixta: CC BY 4.0, Apache 2.0, MIT, OpenRAIL-M, CC BY-SA 4.0 según carpeta |
+| Formato de pesos | ONNX, GGUF, sherpa-onnx (int8), safetensors (declarado en el repo) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no define una arquitectura unica. Cada carpeta contiene un modelo independiente con su propio origen y proceso de entrenamiento. El componente ASR principal (asr2/) parte de NVIDIA Parakeet TDT 0.6B v3, un modelo Conformer con decodificacion TDT (Token-and-Duration Transducer), y fue reentrenado por Hohasha Studios para mejorar la robustez frente a ruido y distancia. Para ello se usaron como objetivos las transcripciones del propio modelo sobre habla limpia, y se aumentaron datos de FLEURS, VoxPopuli, Common Voice y Granary YouTube con ruido y reverberacion de sala. Sus capas matriciales se cuantizaron a 4 bits con MatMulNBits de ONNX Runtime.
+El repositorio no define una arquitectura propia: agrupa modelos de distinta naturaleza. El componente ASR principal es NVIDIA Parakeet TDT 0.6B v3, un modelo transducer (TDT) basado en Conformer, que Hohasha Studios ajustó adicionalmente con transcripciones de voz limpia como objetivos y datos aumentados con ruido y sonido de sala (FLEURS, VoxPopuli, Common Voice y YouTube de Granary), además de un ajuste específico para puntuación en pausas del habla, para el nombre "Tolkio" (con voces Supertonic 3) y para no transcribir conversaciones de fondo lejanas. Las capas matriciales se cuantizaron a 4 bits mediante ONNX Runtime MatMulNBits y se exportaron a ONNX. Existen variantes históricas: asr2 (sin el ajuste de puntuación y nombre) y asr (Parakeet Redux de Moondream, empaquetado a 2 bits).
 
-La traduccion automatica se cubre con Index-Translate 2B del equipo bilibili Index, exportado a GGUF en 4 y 8 bits, y con TranslatePsy-AfriSLM 0.8B y 2B de QVAC para idiomas africanos. La sintesis de voz combina Supertonic 3 (con vocoder ONNX en 16 bits), Kokoro 82M v1.1-zh para chino y las voces VITS OpenBible. El resto de componentes son utilitarios: Silero VAD para deteccion de actividad vocal, CAM++ y pyannote 3.0 para diarizacion, TIGER, y Silero Language Classifier 95 para enrutar al reconocedor correcto. No se documentan detalles de RLHF, DPO ni composicion exacta de datasets para los modelos de traduccion.
+El resto de componentes incluye Index-Translate 2B (equipo Index de bilibili) en GGUF de 4 y 8 bits para traducción; Supertonic 3 (Supertone) para TTS con vocoder ONNX de pesos de 16 bits; CAM++, pyannote segmentation 3.0 y TIGER para hablantes; Silero VAD y Silero Language Classifier 95; Omnilingual ASR 300M (Meta) y TranslatePsy-AfriSLM 0.8B/2B (QVAC) para lenguas africanas y coreano; Parakeet TDT-CTC 0.6B ja requantizado a 4 bits; X-ASR zh-en Zipformer y Kokoro 82M v1.1-zh para chino; y voces VITS OpenBible. No se documentan números de tokens de entrenamiento, composición detallada de datasets ni uso de RLHF/DPO para los componentes ajustados.
 
 ## Capacidades
 
-- Reconocimiento automatico de voz (ASR) offline en varios idiomas, con variantes optimizadas para entornos ruidosos y habla a distancia.
-- Traduccion automatica de texto entre idiomas mediante modelos dedicados (Index-Translate 2B, TranslatePsy-AfriSLM 0.8B/2B).
-- Sintesis de voz (TTS) multilingue con Supertonic 3, Kokoro 82M y voces VITS.
-- Deteccion de actividad vocal (VAD) para segmentar audio y ahorrar computo.
-- Clasificacion de idioma hablado (95 idiomas) para seleccionar el reconocedor adecuado.
-- Diarizacion de hablantes (CAM++, pyannote 3.0, TIGER) para atribuir turnos en conversaciones.
-- Reconocimiento de chino-ingles con puntuacion (X-ASR Zipformer) y de japones (Parakeet TDT-CTC 0.6B ja).
-- Cobertura de idiomas africanos y coreano via Omnilingual ASR 300M de Meta.
-- Ejecucion completamente offline sin dependencia de red.
-- Soporte de importacion desde carpeta local en la app, ademas de descarga.
+- Reconocimiento de voz (ASR) offline en Android con Parakeet TDT 0.6B v3 ajustado para entornos ruidosos y habla a distancia.
+- Reconocimiento específico para japonés (Parakeet TDT-CTC 0.6B ja) y chino-inglés (X-ASR zh-en Zipformer con puntuación).
+- Reconocimiento de lenguas africanas y coreano mediante Omnilingual ASR 300M.
+- Detección automática de idioma hablado con Silero Language Classifier 95 para seleccionar el reconocedor adecuado.
+- Traducción automática con Index-Translate 2B (GGUF 4/8 bits) y TranslatePsy-AfriSLM 0.8B/2B para lenguas africanas.
+- Síntesis de voz (TTS) con Supertonic 3 y Kokoro 82M v1.1-zh, además de voces VITS OpenBible.
+- Detección de actividad de voz (Silero VAD) y segmentación/diarización de hablantes (CAM++, pyannote 3.0, TIGER).
+- Ejecución completamente offline e importación desde carpeta local en el dispositivo.
+- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Traduccion de conversaciones en viajes: el pipeline ASR + MT + TTS permite mantener dialogos cara a cara sin conexion, usando el VAD para segmentar turnos y el clasificador de idioma para elegir el reconocedor correcto.
-- Atencion al publico en entornos con mala conectividad: oficinas de extranjeria, turismo rural o asistencia humanitaria donde no hay red fiable y se requiere traduccion local.
-- Privacidad en ambito sanitario o legal: al ejecutarse integramente en el dispositivo, el audio y las transcripciones no salen del telefono, lo que facilita el cumplimiento de normativas de datos.
-- Subtitulado en directo de reuniones presenciales: el ASR reentrenado para ruido y distancia resulta adecuado para salas con varios hablantes, y la diarizacion atribuye las intervenciones.
-- Accesibilidad para personas con discapacidad auditiva: transcripcion y traduccion en tiempo real de conversaciones presenciales en el propio movil.
-- Aplicaciones de aprendizaje de idiomas: uso del TTS multilingue y del ASR para practicar pronunciacion y recibir transcripciones sin enviar datos a la nube.
-- Despliegue en dispositivos de gama media: las cuantizaciones a 4, 2 e int8 bits y el formato ONNX permiten ejecutar el conjunto en telefonos Android sin GPU dedicada.
+- Traducción de voz en tiempo real sin conexión: la app combina VAD, clasificador de idioma, ASR, MT y TTS en cadena para conversaciones presenciales en zonas sin cobertura, usando modelos cuantizados a 4/8 bits que caben en un móvil Android.
+- Atención al público en entornos ruidosos: el ajuste de Parakeet con ruido y sonido de sala permite transcribir en estaciones, aeropuertos o comercios con habla a distancia y ruido de fondo.
+- Subtitulado y transcripción de reuniones multilingües: X-ASR zh-en y Parakeet ja cubren pares de idiomas concretos, con puntuación incluida para mejorar la legibilidad.
+- Diarización de entrevistas o grabaciones: CAM++, pyannote segmentation 3.0 y TIGER permiten separar hablantes antes de transcribir y traducir.
+- Asistencia a viajeros y cooperantes en regiones con lenguas africanas: Omnilingual ASR 300M y TranslatePsy-AfriSLM 0.8B/2B cubren idiomas poco representados en modelos comerciales.
+- Accesibilidad para personas con discapacidad auditiva o del habla: la cadena ASR + TTS con voces VITS y Supertonic 3 permite convertir voz en texto y texto en voz de forma local.
+- Integración en pipelines de investigación sobre ASR de bajo recurso: el repositorio sirve como referencia de cuantización ONNX/sherpa-onnx y de ajuste de Parakeet con datos aumentados.
 
 ## Benchmarks y rendimiento
 
@@ -56,41 +55,45 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el repo completo ocupa 10,3 GB, pero no todos los componentes se cargan simultaneamente; el ASR de 0,6B en 4 bits ronda los 0,4-0,6 GB, el MT de 2B en 4 bits alrededor de 1,2-1,5 GB y el TTS es ligero (Kokoro 82M, VITS).
-- GPU recomendadas: no disponible; el diseno apunta a CPU movil mediante ONNX Runtime y sherpa-onnx.
-- Cabe en GPU consumer: si, los componentes individuales caben en GPUs de 8 GB o menos; no se documenta un requisito agregado.
-- Opciones de despliegue: ONNX Runtime (MatMulNBits), sherpa-onnx, llama.cpp/Ollama para los GGUF de traduccion; vLLM y TGI no estan documentados para estos formatos.
-- Latencia y throughput: no disponible.
+- El repositorio está diseñado para ejecución en Android; el tamaño completo (10,8 GB) no cabe en la mayoría de móviles, por lo que la app descarga solo las carpetas necesarias.
+- VRAM/RAM estimada por componente: Parakeet TDT 0.6B en 4 bits ronda unos cientos de MB; Index-Translate 2B en GGUF 4 bits requiere aproximadamente 1,5-2 GB; en 8 bits, en torno a 2,5-3 GB; Supertonic 3 y Kokoro 82M son ligeros (decenas a cientos de MB); Omnilingual ASR 300M int8 es inferior a 500 MB.
+- GPU recomendadas: no aplica para el caso de uso principal (móvil); en escritorio, una RTX 4090 o superior permite ejecutar todos los componentes con holgura, y una GPU consumer de 8 GB cubre la mayoría de combinaciones.
+- Cabe en GPU consumer: sí, componente a componente; el conjunto completo requiere gestionar la carga por etapas.
+- Opciones de despliegue: ONNX Runtime (MatMulNBits), sherpa-onnx, llama.cpp/Ollama para los GGUF de traducción, y la propia app Tolkio con importación desde carpeta.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Tolkio models (este repo) | 1.942 M agregados | no disponible | Mixta | Suite offline para Android |
-| Whisper large-v3 | ~1.550 M | 30 s de audio | MIT | ASR multilingue |
-| NLLB-200 | hasta 54.500 M | 512 tokens | CC BY-NC 4.0 | Traduccion |
-| SeamlessM4T v2 | ~2.300 M | no disponible | CC BY-NC 4.0 | Speech-to-speech |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Tolkio models | Colección ASR/MT/TTS offline | 1.942.653.248 (agregado) | no disponible | Mixta | Hugging Face, app Android |
+| Whisper (OpenAI) | ASR multilingüe | 39M–1.55B según variante | 30 s por ventana | MIT | Hugging Face, múltiples runtimes |
+| SeamlessM4T (Meta) | ASR + MT + TTS | ~2.3B | no disponible | CC BY-NC 4.0 | Hugging Face |
+| NLLB-200 (Meta) | Traducción | 600M–54B | no disponible | CC BY-NC 4.0 | Hugging Face |
 
-La comparativa es orientativa: Tolkio no es un modelo unico sino una integracion de componentes, por lo que la comparacion directa con modelos monoloticos no es homogenea.
+La comparación es aproximada: Tolkio no es un modelo único sino un paquete de componentes, por lo que la comparación directa con Whisper o SeamlessM4T solo es válida componente a componente. Frente a ellos, Tolkio prioriza ejecución offline en Android y licencias permisivas en la mayoría de piezas, a costa de fragmentación y de una documentación de rendimiento inexistente.
 
 ## Limitaciones y advertencias
 
-- Licencia mixta: cada componente tiene su propia licencia; Supertonic 3 usa OpenRAIL-M con restricciones de uso, y las voces VITS estan bajo CC BY-SA 4.0 (copyleft). Verificar cada subcarpeta antes de uso comercial.
-- No hay lista consolidada de idiomas soportados ni model card tecnica unificada.
-- Ausencia de benchmarks publicados que permitan validar calidad de ASR, MT o TTS.
-- Riesgo de alucinacion y errores de traduccion inherente a los modelos de lenguaje componentes, especialmente en dominios especializados.
-- El reentrenamiento del ASR con pseudoetiquetas del propio modelo puede propagar sesgos y errores del modelo base.
-- Varios componentes estan recuantizados a 4 o 2 bits, lo que puede degradar la precision frente a los originales.
-- Dependencia del ecosistema ONNX Runtime y sherpa-onnx para el despliegue movil.
-- Fecha de creacion futura (2026) en los metadatos; conviene verificar la vigencia y el estado de mantenimiento del repositorio.
+- No es un modelo único: agregar parámetros y evaluar rendimiento global carece de sentido; hay que evaluar cada carpeta por separado.
+- Licencia mixta: Supertonic 3 está bajo OpenRAIL-M con restricciones de uso, y las voces VITS OpenBible bajo CC BY-SA 4.0, lo que puede condicionar el uso comercial y obligar a compartir adaptaciones.
+- Algunos componentes (Index-Translate 2B, TranslatePsy-AfriSLM) tienen cobertura limitada de pares de idiomas; no se documenta qué pares exactos cubre cada uno.
+- No hay benchmarks publicados, por lo que no se puede verificar la calidad del ajuste de Parakeet ni de la traducción.
+- La cuantización a 2 bits (asr/) y 4 bits puede degradar la precisión del ASR, especialmente en idiomas con pocos datos o en habla con acento marcado.
+- Riesgo de alucinación en la traducción y en la puntuación generada por los modelos MT y por el ajuste de puntuación del ASR.
+- Dependencia de la app Tolkio y de sus versiones (asr2 corresponde a versiones 1.7.0–1.7.6), lo que complica la reproducibilidad fuera del ecosistema de la aplicación.
+- Idiomas soportados no listados de forma exhaustiva; la cobertura depende de cada componente y puede haber huecos no documentados.
+- El tamaño del repositorio (10,8 GB) y la necesidad de importación manual desde carpeta añaden fricción operativa.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/datacrunch/tolkio-models
+- Repositorio en Hugging Face: https://huggingface.co/datacrunch/tolkio-models
 - NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - NVIDIA Parakeet TDT-CTC 0.6B ja: https://huggingface.co/nvidia/parakeet-tdt_ctc-0.6b-ja
-- Meta Omnilingual ASR: https://huggingface.co/facebook/omniasr-300m
+- X-ASR zh-en Zipformer (Gilgamesh-J): https://huggingface.co/Gilgamesh-J/X-ASR
+- Kokoro 82M v1.1-zh (hexgrad): https://huggingface.co/hexgrad/Kokoro-82M
 - Silero VAD: https://github.com/snakers4/silero-vad
+- Silero Language Classifier 95: https://github.com/snakers4/silero-vad
+- Omnilingual ASR 300M (Meta): https://huggingface.co/facebook/omniASR-300M
 - sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
-- Kokoro 82M: https://huggingface.co/hexgrad/Kokoro-82M
-- X-ASR: https://huggingface.co/Gilgamesh-J/X-ASR
+- ONNX Runtime MatMulNBits: https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html

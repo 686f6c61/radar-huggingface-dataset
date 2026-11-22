@@ -2,100 +2,87 @@
 
 ## Resumen
 
-`3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated` es una version modificada del modelo abierto GPT-OSS 20B de OpenAI, publicada por el usuario 3MPER0RR en Hugging Face. La modificacion consiste en un proceso de *abliteration* (ablacion direccional) aplicado en varias rondas ("multi-round abliteration", segun la model card) sobre los pesos originales, con el objetivo declarado de eliminar o atenuar los comportamientos de rechazo del modelo base. No se trata de un reentrenamiento ni de un fine-tuning con datos nuevos, sino de una intervencion sobre los pesos de un modelo ya existente.
+El modelo `3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated` es un ajuste fino experimental del modelo GPT-OSS 20B de OpenAI, publicado por el usuario 3MPER0RR en Hugging Face. Se trata de una variante "abliterated", es decir, un modelo al que se le ha aplicado la técnica de abliteration para eliminar o atenuar los mecanismos de rechazo internos aprendidos durante el alineamiento, partiendo del modelo intermedio `wangzhang/gpt-oss-20b-abliterated`. El autor describe el proceso como una "abliteration multi-round" (abliteration en varias rondas), lo que sugiere que la intervención se aplicó de forma iterativa hasta estabilizar el resultado.
 
-El modelo base GPT-OSS 20B es un transformer de tipo mezcla de expertos (MoE) con aproximadamente 20,9 mil millones de parametros totales (20.914.757.184 segun los safetensors del repositorio) y una arquitectura etiquetada como `gpt_oss`. La model card del autor es extremadamente escueta: no documenta el procedimiento exacto, el numero de rondas, los datos de calibracion ni ninguna evaluacion posterior, y el repositorio no registra descargas ni valoraciones en el momento de la consulta.
+El modelo conserva la arquitectura original de GPT-OSS 20B, un transformer de aproximadamente 20.900 millones de parámetros (20.914.757.184 según los pesos en safetensors), y se distribuye bajo licencia Apache 2.0. El repositorio ocupa 41,9 GB, lo que corresponde a los pesos en precisión completa o semi-precisa (safetensors), sin cuantizaciones GGUF incluidas en el mismo repo.
 
-La relevancia de esta ficha es doble. Por un lado, sirve como ejemplo de la familia de derivados "abliterated" que circulan por Hugging Face y que interesan a equipos de *red teaming* y de investigacion sobre seguridad de modelos. Por otro, obliga a advertir de que la licencia Apache 2.0 del original se mantiene, pero las garantias de comportamiento, alineacion y calidad del modelo base quedan explicitamente en entredicho tras la intervencion.
+La relevancia de este modelo es doble: por un lado, permite a investigadores estudiar el comportamiento de un modelo GPT-OSS tras eliminar el alineamiento de seguridad, y por otro, ofrece una alternativa sin rechazos para tareas de generación de texto donde el filtrado del modelo base resulta limitante. No obstante, se trata de un modelo marcado como experimental, con 617 descargas y sin datos de benchmarks publicados, por lo que su uso en producción debe abordarse con cautela.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), arquitectura `gpt_oss` (heredada del modelo base GPT-OSS 20B) |
-| Parametros totales | 20.914.757.184 (~20,9 B) |
-| Parametros activos | No disponible en la informacion proporcionada; el modelo base GPT-OSS 20B activa del orden de 3,6 B por token, pero el autor no publica este dato para su derivado |
-| Longitud de contexto | No disponible en la informacion proporcionada; el modelo base GPT-OSS 20B admite 128.000 tokens de contexto, extremo que el autor no confirma ni desmiente |
-| Tipos de cuantizacion | No documentados por el autor. El repositorio ocupa 41,9 GB para 20,9 B de parametros, lo que corresponde aproximadamente a 2 bytes por parametro (bf16/fp16) y sugiere que los pesos publicados no conservan la cuantizacion MXFP4 del checkpoint original de OpenAI. No se incluyen ficheros GGUF ni cuantizaciones de menor precision |
-| Idiomas soportados | No disponible (el campo de idiomas de la model card esta vacio) |
-| Licencia | apache-2.0 |
+| Arquitectura | Transformer (GPT-OSS 20B, base de OpenAI) |
+| Parámetros totales | 20.914.757.184 (≈20,9 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (repo solo con safetensors; no se listan GGUF) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Pipeline declarado | text-generation |
-| Etiquetas | safetensors, gpt_oss, abliteration, gpt-oss, experimental, multi-round, text-generation, conversational |
-| Fecha de creacion (segun Hugging Face) | 2026-09-11 |
-| Ultima actualizacion (segun Hugging Face) | 2026-09-11 |
-| Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de GPT-OSS 20B, un transformer decoder-only con capas de mezcla de expertos: cada bloque MoE contiene un conjunto de expertos de los que solo se activa una fraccion por token, lo que reduce el coste de inferencia respecto a un modelo denso del mismo tamano total. El checkpoint original de OpenAI se distribuye con los pesos de los expertos cuantizados en MXFP4, un formato de 4 bits con exponente compartido, lo que permite ejecutarlo en GPU de consumo. En este repositorio, el tamano de 41,9 GB para 20,9 B de parametros indica que los pesos se han republicado en precision de 16 bits, de modo que la ventaja de memoria del MXFP4 original se ha perdido salvo que el usuario reconvierta el modelo a GGUF o a otro formato cuantizado.
+El modelo hereda la arquitectura del GPT-OSS 20B original, un transformer denso de aproximadamente 20,9 mil millones de parámetros. Sobre esa base, el autor aplicó un proceso de abliteration en múltiples rondas: esta técnica identifica las direcciones en el espacio de activaciones asociadas a la negativa a responder y las proyecta fuera, de modo que el modelo pierde parte de su comportamiento de rechazo sin necesidad de reentrenamiento completo. El hecho de que se describa como "multi-round" indica que la intervención se repitió varias veces, presumiblemente recalculando las direcciones de rechazo tras cada pasada para evitar que el modelo las recuperase.
 
-Sobre el proceso de abliteracion: la tecnica habitual consiste en identificar, mediante pares de prompts maliciosos y prompts inocuos, una direccion en el espacio de activaciones (tipicamente en el *residual stream*) que media el comportamiento de rechazo, y despues proyectar u ortogonalizar los pesos de escritura de ese subespacio para que la direccion quede neutralizada. El autor indica que aplico varias rondas ("multi-round"), probablemente para cubrir distintas capas o distintos tipos de rechazo residual. No se documenta ni el dataset de calibracion, ni el numero de rondas, ni la magnitud de la intervencion, ni si hubo verificacion cuantitativa del dano colateral en capacidades generales. Tampoco hay constancia de RLHF, DPO ni ningun otro ajuste adicional: la unica operacion declarada es la modificacion de pesos. No se dispone de informacion sobre el volumen de tokens de entrenamiento del modelo base en esta ficha.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO adicionales tras la abliteration. El modelo base intermedio (`wangzhang/gpt-oss-20b-abliterated`) ya era una variante abliterated, por lo que este modelo representa una segunda capa de intervención sobre el alineamiento original de GPT-OSS. El autor no documenta innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno: el modelo base esta disenado para dialogos encadenados; el autor etiqueta el repositorio como `conversational`.
-- Razonamiento con esfuerzo configurable: el modelo base GPT-OSS 20B admite niveles de razonamiento (low/medium/high) en su formato de chat, aunque el autor no confirma que el derivado conserve esta funcionalidad intacta.
-- Generacion de codigo y soporte de ejecucion de codigo en el modelo base; sin verificacion publicada tras la abliteracion.
-- Tool calling / function calling: el modelo base usa el formato Harmony de OpenAI y soporta llamadas a herramientas; no hay confirmacion del autor para este derivado.
-- Comportamiento agéntico: el modelo base soporta flujos multi-paso con navegacion web y uso de herramientas; aplicable en teoria a este derivado, sin evaluacion publicada.
-- Ausencia deliberada de mecanismos de rechazo: la abliteracion busca que el modelo no se niegue a responder a peticiones que el modelo base rechazaria.
-- Capacidades multilingues: no documentadas en este repositorio; el modelo base esta optimizado principalmente para ingles.
-- Capacidades especiales (vision, audio, thinking mode explicito): no disponibles en la informacion proporcionada.
+- Generación de texto conversacional multi-turno, heredada del GPT-OSS 20B base.
+- Razonamiento y resolución de problemas de complejidad media, según las capacidades del modelo original.
+- Generación de código y matemáticas, presumiblemente conservadas del modelo base (no verificadas en la model card).
+- Comportamiento sin rechazos: la abliteration elimina o reduce las negativas a responder ante peticiones que el modelo original rechazaría.
+- Soporte de tool calling / function calling: no confirmado en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas.
+- Capacidades multilingües: no disponibles; el autor no especifica idiomas.
+- Modo "thinking" o vision: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Red teaming y evaluacion de seguridad: el modelo puede utilizarse como sujeto de prueba para medir cuanto contenido danino es capaz de generar un modelo abierto sin guardarrailes, y para comparar la eficacia de distintas tecnicas de alineacion frente a la ablacion direccional.
-- Investigacion sobre mecanismos de rechazo: dado que el derivado resulta de eliminar una direccion concreta en el espacio de activaciones, sirve para estudiar la hipotesis de que el rechazo esta mediado por subespacios de baja dimensionalidad, comparando activaciones frente al modelo base.
-- Generacion de contenido creativo sin filtros editoriales: escritura de ficcion con tematicas adultas, violentas o controvertidas que el modelo base rechazaria; util en entornos editoriales cerrados con revision humana posterior.
-- Simulacion de personajes adversarios: en *training* de equipos de moderacion o de atención al cliente, generar interlocutores hostiles, manipuladores o abusivos de forma realista sin que el modelo se niegue a mantener el rol.
-- Desarrollo local con requisitos de privacidad: al ser un modelo de pesos abiertos con licencia Apache 2.0, puede desplegarse en infraestructura propia; con los pesos en bf16 requiere del orden de 42 GB, por lo que es viable en una GPU de 80 GB o, tras cuantizacion, en GPU de consumo.
-- Pipelines de generacion de codigo en CI/CD: si el modelo base conserva su soporte de tool calling, puede integrarse como generador de parches o de tests; conviene validar previamente que la abliteracion no ha degradado la calidad del codigo generado.
-- Anotacion de datasets que requieren respuestas sin evasivas: tareas de etiquetado donde el modelo base se niega sistematicamente a procesar el material de entrada (por ejemplo, corpus de abuse o de discurso de odio para entrenar clasificadores).
-- Experimentacion educativa sobre abliteracion: reproducir el pipeline completo (calculo de direcciones, proyeccion de pesos, validacion) sobre un modelo MoE de 21 B en lugar de sobre modelos densos pequenos.
+- Investigación sobre alineamiento y seguridad: el modelo permite estudiar qué mecanismos de rechazo existen en GPT-OSS 20B y cómo se comporta el modelo tras eliminarlos, comparando respuestas antes y después de la abliteration en un entorno controlado.
+- Generación creativa sin restricciones: para proyectos de escritura de ficción, guiones o narrativa donde el modelo base tiende a rechazar temáticas sensibles, esta variante ofrece continuidad sin interrupciones por negativas.
+- Análisis de sesgos y robustez: investigadores pueden evaluar si la eliminación del alineamiento introduce sesgos nuevos o amplifica los existentes, usando el modelo como objeto de estudio en auditorías de seguridad.
+- Experimentación con técnicas de abliteration: el enfoque multi-round del autor sirve como referencia metodológica para quienes quieran replicar o mejorar la técnica sobre otros modelos de la familia GPT-OSS.
+- Generación de datos sintéticos para entrenamiento: en pipelines donde se necesita un modelo que no filtre temas, puede emplearse para producir datasets de instrucciones o conversaciones que luego se curan manualmente.
+- Pruebas de red teaming: el modelo es útil como adversario controlado para evaluar la eficacia de clasificadores de seguridad o sistemas de moderación de contenido desplegados en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, GPQA ni similares) y no hay ninguna comparacion cuantitativa entre este derivado y el GPT-OSS 20B original. Tampoco se documenta el impacto de la abliteracion sobre las capacidades generales del modelo, un dato critico porque la ablacion direccional puede degradar la coherencia y el razonamiento ademas de eliminar los rechazos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Pesos en bf16/fp16 (formato publicado en este repositorio): 41,9 GB solo de pesos, mas cache KV. Necesita una GPU con 80 GB de memoria (H100 80 GB, A100 80 GB) o reparto en varias GPU (2x A100 40 GB con tensor parallelism).
-- Pesos en MXFP4 (formato del modelo base, no incluido en este repositorio): aproximadamente 16 GB, ejecutable en RTX 4090, RTX 5090 o RTX 4080 de 16 GB con poco margen.
-- Cuantizacion GGUF Q4_K_M de un modelo de ~21 B: del orden de 12-13 GB, viable en RTX 4070 Ti Super, RTX 4080, RTX 3090 y en equipos con 16 GB de RAM unificada; requeriria reconvertir los safetensors publicados, ya que el autor no incluye ficheros GGUF.
-- Contexto largo: con 128.000 tokens de ventana, la cache KV crece de forma notable; para contextos muy largos conviene cuantizar la cache o reducir la ventana efectiva. No hay mediciones publicadas de consumo para este derivado.
-- GPU recomendadas por escenario: H100 80 GB o A100 80 GB para precision completa y servicio concurrente; RTX 4090 / 5090 para MXFP4 o GGUF con un solo usuario; nunca inferior a 16 GB de VRAM sin cuantizar.
-- Opciones de despliegue: vLLM (con soporte para la arquitectura `gpt_oss` y kernels MXFP4 cuando se dispone del checkpoint original), llama.cpp y Ollama mediante conversion a GGUF, Text Generation Inference y `transformers` para inferencia de referencia.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia para este repositorio.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 42 GB solo para pesos, más overhead de activaciones y KV cache; se recomienda un mínimo de 48 GB.
+- VRAM estimada en cuantización de 8 bits: alrededor de 21-24 GB, viable en GPUs de 24 GB como la RTX 4090 o A10G.
+- VRAM estimada en cuantización de 4 bits: alrededor de 12-14 GB, cabe en GPUs consumer de 16 GB como la RTX 4080 o 4070 Ti Super.
+- GPU recomendadas: A100 80 GB o H100 para precisión completa; RTX 4090, L40S o A6000 para 8 bits; RTX 4090/4080 para 4 bits.
+- Despliegue: vLLM o TGI para serving en FP16/BF16; llama.cpp u Ollama para cuantizaciones GGUF (no incluidas en el repo, habría que generarlas).
+- Latencia y throughput: no disponibles; dependen de la GPU, la cuantización y el backend elegido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| gpt-oss-20b-3MPER0RR-abliterated | ~20,9 B / no documentado | No documentado (el base admite 128.000) | Sin benchmarks publicados | Apache 2.0 | Hugging Face, safetensors en bf16, 0 descargas |
-| GPT-OSS 20B (OpenAI, original) | ~21 B / ~3,6 B | 128.000 tokens | Benchmarks publicados por OpenAI en su model card | Apache 2.0 | Hugging Face y GitHub, con pesos MXFP4 |
-| GPT-OSS 120B (OpenAI) | ~117 B / ~5,1 B | 128.000 tokens | Benchmarks publicados por OpenAI, superiores al 20B | Apache 2.0 | Hugging Face y GitHub |
-| Qwen3-30B-A3B | ~30,5 B / ~3,3 B | 128.000 tokens (ampliable con YaRN) | Benchmarks publicados por el autor del modelo | Apache 2.0 | Hugging Face, amplio ecosistema GGUF |
-
-La comparacion de rendimiento entre este derivado y cualquiera de las alternativas no puede establecerse con los datos disponibles: no existe ninguna evaluacion publicada del efecto de la abliteracion sobre GPT-OSS 20B. Las cifras de parametros y contexto del modelo base y de los alternativas proceden de sus respectivas documentaciones publicas.
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| 3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated | ≈20,9 B | no disponible | Apache 2.0 | Abliteration multi-round, experimental, sin benchmarks |
+| wangzhang/gpt-oss-20b-abliterated | ≈20,9 B | no disponible | Apache 2.0 (presumible) | Modelo base intermedio, una ronda de abliteration |
+| GPT-OSS 20B (original OpenAI) | ≈20,9 B | no disponible | Apache 2.0 | Modelo alineado con rechazos, referencia de comportamiento |
+| Modelos abliterated de 20-30 B (p. ej. variantes de Llama o Qwen) | 20-30 B | variable | variable | Alternativas de la misma categoría; no se dispone de datos comparativos de rendimiento |
 
 ## Limitaciones y advertencias
 
-- Eliminacion deliberada de los mecanismos de rechazo: el proposito declarado del modelo es no negarse a peticiones que el original rechazaria. Puede generar contenido danino, ilegal o gravemente ofensivo. El usuario asume toda la responsabilidad legal y etica derivada de su uso.
-- Riesgo elevado de degradacion de capacidades: la ablacion direccional aplicada en varias rondas es una intervencion agresiva sobre los pesos; sin evaluacion publicada no puede descartarse perdida de coherencia, repeticiones, degradacion del razonamiento o salidas incoherentes.
-- Sin datos de entrenamiento ni de calibracion: el autor no documenta el dataset usado para calcular las direcciones de rechazo, ni el numero de rondas, ni los criterios de parada. La reproducibilidad del proceso es nula.
-- Riesgo de alucinacion: heredado del modelo base y potencialmente agravado por la modificacion de pesos; no hay mediciones de fidelidad factual.
-- Idiomas: no se documenta ningun idioma soportado. El modelo base esta orientado al ingles, por lo que el rendimiento en castellano sera previsiblemente inferior y no esta verificado.
-- Contexto: la ventana de 128.000 tokens del modelo base no esta confirmada por el autor para este derivado, y los pesos en bf16 de 41,9 GB dificultan su explotacion practica con contexto largo en hardware de consumo.
-- Licencia: Apache 2.0 permite uso comercial y redistribucion, pero la licencia del original no cubre el comportamiento resultante; no existe ninguna clausula de uso aceptable que restrinja el uso de este derivado.
-- Procedencia dudosa: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, fue publicado y actualizado el mismo dia y su model card carece de cualquier validacion tecnica. No hay forma de verificar que los pesos correspondan realmente a una abliteracion de GPT-OSS 20B ni de auditar el proceso.
-- No apto para produccion sin evaluacion previa: en cualquier despliegue con usuarios finales, la ausencia de filtros de rechazo lo convierte en un riesgo directo de generacion de contenido inapropiado, con independencia de la capa de moderacion que se anada por encima.
+- Modelo experimental: el autor lo marca explícitamente como "experimental" y no documenta evaluaciones de calidad ni de seguridad.
+- Sin benchmarks: no hay datos objetivos de rendimiento, por lo que no puede compararse rigurosamente con el modelo base ni con alternativas.
+- Eliminación del alineamiento: la abliteration reduce los rechazos, lo que implica un mayor riesgo de generar contenido dañino, ofensivo o inexacto sin advertencia.
+- Riesgo de alucinación: no cuantificado; al no haber evaluación, se desconoce si la intervención degrada la fidelidad factual del modelo base.
+- Idiomas no especificados: se desconoce el soporte multilingüe real y la calidad en castellano.
+- Contexto no documentado: no se indica la longitud de ventana, lo que dificulta planificar casos de uso con documentos largos.
+- Licencia Apache 2.0: permite uso comercial, pero el despliegue de un modelo sin alineamiento en aplicaciones de cara al público conlleva riesgos legales y reputacionales que el usuario debe evaluar.
+- Procedencia: el autor es un particular, no un laboratorio con proceso de revisión; la reproducibilidad del proceso de abliteration no está documentada.
+- Sin cuantizaciones oficiales: el repo solo contiene safetensors, por lo que el despliegue en hardware consumer requiere generar GGUF u otras cuantizaciones por cuenta propia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated
-- Modelo base GPT-OSS 20B (OpenAI): https://huggingface.co/openai/gpt-oss-20b
-- Modelo base GPT-OSS 120B (OpenAI): https://huggingface.co/openai/gpt-oss-120b
-- Repositorio de codigo de GPT-OSS: https://github.com/openai/gpt-oss
-- Anuncio y documentacion de la familia GPT-OSS: https://openai.com/index/introducing-gpt-oss/
-- La busqueda web realizada no devolvio ningun resultado tecnico relevante sobre este modelo; unicamente aparecieron sitios de contenido para adultos sin relacion con el repositorio, por lo que no se incluyen.
+- Hugging Face: https://huggingface.co/3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated
+- Modelo base intermedio: https://huggingface.co/wangzhang/gpt-oss-20b-abliterated
+- GPT-OSS (familia original de OpenAI): no disponible en la información proporcionada.

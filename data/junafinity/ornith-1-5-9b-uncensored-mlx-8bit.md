@@ -2,84 +2,97 @@
 
 ## Resumen
 
-Ornith-1.5-9B-uncensored-MLX-8bit es una variante del modelo multimodal Ornith-1.5-9B de ornith-ai, publicada por el usuario junafinity. Se trata de una versión *abliterated* (eliminación de la dirección de rechazo) del modelo original, producida con la herramienta ZeroFuse y convertida a formato MLX con cuantización de 8 bits para Apple Silicon. El modelo mantiene intacta la torre de visión y las cabezas de predicción de múltiples tokens (MTP) si existieran, aplicando la abliteración únicamente sobre las proyecciones de escritura residual del decodificador.
+Ornith-1.5-9B-uncensored-MLX-8bit es una cuantizacion en 8 bits para Apple Silicon de la variante abliterada (direccion de rechazo eliminada) del modelo multimodal Ornith-1.5-9B, publicada por junafinity bajo la marca VeriSafe.Live. El modelo base, ornith-ai/Ornith-1.5-9B, es un transformer de 9.409.813.744 parametros (~9,4 B) con torre de vision integrada, etiquetado internamente como linaje qwen3_5 y orientado a tareas image-text-to-text. Esta version conserva tanto la torre de vision como las cabezas MTP (multi-token prediction) del original, algo que el autor destaca explicitamente frente a las conversiones text-only de mlx-lm.
 
-El resultado es un modelo de ~9B parámetros que conserva las capacidades generales del base, pero con una tasa de rechazo reducida a cero en un conjunto de prueba de 64 solicitudes dañinas, manteniendo una divergencia KL muy baja (0.001668) respecto al modelo original. Esta versión está diseñada para desarrolladores e investigadores que necesitan un modelo sin restricciones de contenido para tareas de investigación, análisis de comportamientos o aplicaciones específicas, aunque con advertencias claras sobre su uso responsable.
+El interes tecnico del artefacto es doble. Por un lado, ofrece un checkpoint de vision funcional en formato MLX de 8 bits (unos 10,4 GB de repositorio) ejecutable en hardware Apple mediante la libreria mlx-vlm, lo que facilita el despliegue local de un VLM de ~9 B sin GPU dedicada. Por otro, su proposito declarado no es el uso generalista, sino servir de instrumento de investigacion para red teaming y evaluacion defensiva: el autor plantea el par base/abliterado como un control experimental para medir el techo real de capacidad de los pesos y detectar huecos en filtros, clasificadores y capas de moderacion propias.
+
+La relevancia actual del modelo radica en esa metodologia de evaluacion por pares (delta contra el modelo base) y en la disponibilidad de variantes coherentes en la familia: safetensors bf16, MLX 8-bit y GGUF Q8_0, tanto para el 9B denso como para el 35B-A3B. La licencia es Apache 2.0, aunque el autor impone reglas operativas explicitas para su despliegue.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Basada en Qwen3.5 (tag `qwen3_5`), densa, con atención lineal y MLP (se mencionan `self_attn`, `linear_attn` y `mlp.down_proj` en la abliteración) |
-| Parametros totales | 9B (aprox., según el modelo base) |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer multimodal con torre de vision y cabezas MTP (linaje qwen3_5); detalles de capas y atencion no disponibles |
+| Parametros totales | 9.409.813.744 (~9,4 B) |
+| Parametros activos | No aplica (modelo denso; la variante MoE es el 35B-A3B de la misma familia) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | MLX 8-bit (esta variante); también existen versiones GGUF Q8_0 y bf16 del mismo modelo abliterated |
-| Idiomas soportados | No disponibles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | MLX (safetensors) |
+| Tipos de cuantizacion | 8 bits (MLX); la familia incluye bf16 (safetensors) y Q8_0 (GGUF) |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | MLX (safetensors); variantes GGUF Q8_0 y safetensors bf16 en la misma familia |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Ornith-1.5-9B, es un modelo denso de ~9B parámetros que forma parte de la familia Ornith-1.5, que incluye variantes MoE de 35B y 397B. La arquitectura está etiquetada como `qwen3_5`, lo que sugiere que se basa en la arquitectura Qwen3.5, con una combinación de atención estándar (`self_attn`), atención lineal (`linear_attn`) y capas MLP (`mlp.down_proj`). No se dispone de información detallada sobre el dataset de entrenamiento ni sobre el proceso de alineación (RLHF, DPO, etc.).
+El checkpoint es una cuantizacion a 8 bits del modelo abliterado Ornith-1.5-9B, que a su vez deriva del modelo base ornith-ai/Ornith-1.5-9B. La arquitectura subyacente es un transformer multimodal con torre de vision interna (el checkpoint es de tipo mlx-vlm, no una conversion text-only de mlx-lm) y cabezas MTP de prediccion multi-token. El autor indica que tanto la torre de vision como las cabezas MTP se preservan tras la abliteracion y la cuantizacion, y remite a una auditoria antes/despues en la model card, aunque los detalles numericos de dicha auditoria no estan disponibles en la informacion proporcionada.
 
-La abliteración se realizó con ZeroFuse, que emplea una búsqueda multiobjetivo con Optuna TPE para co-minimizar el número de rechazos restantes y la divergencia KL con el modelo original. Se seleccionó el punto de la frontera de Pareto con una fuerza de ablación de 1.343, aplicada sobre las capas 15 a 20 de las 32 capas del decodificador. La edición de pesos es directa (`W' = W − strength · r(rᵀW)`) sin adaptadores en tiempo de inferencia. La torre de visión y las cabeceras MTP (si las hubiera) se conservan intactas por construcción, verificándose que los tensores de la torre de visión son bit-idénticos antes y después de la edición.
+La intervencion clave es la abliteracion: una edicion de rango 1 aplicada sobre un tramo de capas conocido que elimina la direccion de rechazo de los pesos, en lugar de un fine-tuning con datos. El autor la describe como un control experimental limpio frente al modelo base. No se dispone de datos sobre volumen de tokens de entrenamiento, composicion del dataset, ni sobre si el modelo original uso RLHF o DPO. Tampoco se documentan innovaciones adicionales como decodificacion especulativa mas alla de las cabezas MTP heredadas; la cifra de tokens por segundo figura como marcador pendiente en la model card.
 
 ## Capacidades
 
-- **Multimodal**: acepta imágenes y texto como entrada, y genera descripciones de imágenes o respuestas textuales.
-- **Generación de texto**: puede producir respuestas largas y coherentes en múltiples dominios.
-- **Razonamiento y codigo**: el modelo base Ornith-1.5 está diseñado para tareas de razonamiento, agente y codificación, aunque no se han publicado benchmarks específicos para esta variante.
-- **Abliteracion**: no presenta rechazo ante solicitudes dañinas (en el conjunto de prueba, los rechazos pasaron de 9 a 0 en 64 casos), manteniendo un comportamiento casi idéntico en solicitudes benignas (KL 0.001668).
-- **Tool calling**: no se especifica, pero el modelo base es conocido por soportar funciones en tareas de agente; no hay confirmación para esta variante.
-- **Vision**: la torre de visión está preservada y funcional, como se confirma con una generación multimodal de extremo a extremo.
+- Generacion de texto conversacional multi-turno en formato chat.
+- Procesamiento de imagen y texto combinados (pipeline image-text-to-text): descripcion de imagenes, respuesta a preguntas visuales y razonamiento sobre contenido grafico.
+- Prediccion multi-token (MTP) mediante cabezas dedicadas preservadas del modelo base.
+- Capacidad de seguir instrucciones y mantener rol de sistema, con la salvedad de que la abliteracion no elimina todos los rechazos (persisten reafirmaciones multi-turno, direccionamiento por system prompt y rechazos en la ruta de vision).
+- Generacion de completaciones etiquetadas para entrenamiento o evaluacion de clasificadores de moderacion y deteccion de abuso.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking explicito, audio u otras modalidades: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- **Investigacion sobre abliteracion**: analizar cómo la eliminación de la dirección de rechazo afecta al comportamiento del modelo en dominios sensibles, usando este modelo como referencia.
-- **Generacion de contenido creativo sin restricciones**: crear narrativas o textos que podrían ser rechazados por modelos estándar, siempre dentro de un marco ético.
-- **Analisis de sesgos y comportamientos**: estudiar los sesgos inherentes al modelo base al eliminar los filtros de seguridad, para identificar patrones de generación no deseados.
-- **Descripcion de imagenes en entornos de investigacion**: extraer descripciones detalladas de imágenes sin las limitaciones de los modelos censurados, útil para análisis de datos visuales.
-- **Pruebas de robustez**: evaluar la capacidad del modelo para manejar prompts adversos o delicados, en un entorno controlado de laboratorio.
-- **Desarrollo de aplicaciones de vision-lenguaje**: integrar el modelo en prototipos que requieran respuestas abiertas y sin restricciones, siempre con supervisión humana.
+- Red teaming automatizado de aplicaciones LLM: usar el checkpoint como objetivo que no interrumpe el bucle con rechazos ajenos a la prueba, aislando el control bajo test (inyeccion de prompt, abuso de herramientas, rutas de exfiltracion de datos, bypass de politica). El autor lo plantea explicitamente como mitad "tratamiento" de un par controlado.
+- Medicion del techo de capacidad: comparar las salidas del modelo abliterado contra el base ornith-ai/Ornith-1.5-9B sobre el mismo conjunto de prompts para cuantificar el delta real de capacidad en un dominio, independientemente de los rechazos que el modelo original muestre.
+- Evaluacion de pilas defensivas: alimentar filtros de entrada, clasificadores de salida y APIs de moderacion con un modelo que no contribuye con rechazos propios, de modo que los huecos detectados correspondan a la capa defensiva y no al modelo.
+- Generacion de datos etiquetados para moderacion: producir completaciones para entrenar o evaluar modelos de deteccion de abuso y clasificacion de salidas, con registro del delta respecto al base.
+- Investigacion en interpretabilidad del rechazo residual: al ser la abliteracion una edicion de rango 1 sobre un tramo de capas conocido, el par base/abliterado permite estudiar que rechazos sobreviven y por que (reafirmacion multi-turno, steering por system prompt).
+- Procesamiento visual local en Apple Silicon: al conservar la torre de vision en formato MLX de 8 bits (~10,4 GB de repositorio), permite ejecutar tareas image-text-to-text en equipos Mac con memoria unificada suficiente, sin GPU dedicada, mediante mlx-vlm.
+- Evaluacion comparativa de cuantizaciones: el mismo modelo existe en bf16, MLX 8-bit y GGUF Q8_0, lo que permite medir la degradacion introducida por la cuantizacion de 8 bits frente a los pesos completos en tareas de vision y texto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks para esta variante abliterada. El modelo base Ornith-1.5-9B ha reportado SOTA entre modelos open-source de tamaño similar en razonamiento, agente y codigo, pero los números concretos no están incluidos en la informacion disponible. Por lo tanto, no se puede comparar cuantitativamente este modelo con otros.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye un marcador pendiente para la tasa de tokens por segundo ("tok/s: [PLACEHOLDER]") y no reporta MMLU, HumanEval, GSM8K ni metricas multimodales.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: para inferencia con MLX 8-bit, el modelo de ~9B parámetros ocupa aproximadamente 9-10 GB en memoria unificada. Para entrada de imágenes, se recomienda al menos 16 GB de RAM unificada.
-- **GPU recomendadas**: Apple Silicon (M1, M2, M3, M4) con 16 GB o más de memoria unificada. No es compatible con GPUs NVIDIA directamente, pero se puede convertir a GGUF para usar en llama.cpp con GPUs de escritorio.
-- **Despliegue**: se puede usar con `mlx-vlm` (para tareas de imagen) y `mlx-lm` (para texto). También existe una variante GGUF para usar con llama.cpp o Ollama.
-- **Latencia**: no se han publicado datos de throughput o latencia para esta variante.
+- VRAM/memoria estimada: el repositorio ocupa 10,4 GB en 8 bits; en memoria unificada de Apple Silicon se debe prever espacio adicional para el contexto KV y el procesamiento de imagenes, por lo que un equipo con 16 GB resulta justo y 24 GB o mas es recomendable.
+- GPU recomendadas: el formato MLX esta pensado para Apple Silicon (series M1, M2, M3, M4 y sus variantes Pro, Max y Ultra). No es un artefacto para CUDA; para A100, H100 o RTX 4090 habria que usar la variante GGUF Q8_0 o los safetensors bf16.
+- Cabe en GPU de consumo: si, en equipos Apple con memoria unificada suficiente; en GPUs de consumo NVIDIA requeriria la variante GGUF, cuyo tamano en Q8_0 es del orden de los 10 GB y encaja en tarjetas de 12-16 GB con contexto moderado.
+- Opciones de despliegue: mlx-vlm para el checkpoint MLX; llama.cpp u Ollama para la variante GGUF Q8_0; los safetensors bf16 para stacks que soporten el modelo base (vLLM, TGI) queda como no disponible, ya que no se documenta compatibilidad.
+- Latencia y throughput: no disponibles; la model card deja la cifra de tok/s como marcador pendiente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| **Ornith-1.5-9B-uncensored-MLX-8bit** | Qwen3.5 (dense, con attention lineal) | ~9B | No disponible | Apache-2.0 | MLX 8-bit | Abliterado, multimodal |
-| **Ornith-1.5-9B** (base) | Qwen3.5 (dense) | ~9B | No disponible | Apache-2.0 | bf16 | Modelo original con guardarraíles |
-| **Ornith-1.5-35B-A3B** (MoE) | MoE con 3B activos | 35B (3B activos) | No disponible | Apache-2.0 | bf16 | Variante MoE de mayor escala |
-| **Ornith-1.5-397B** (MoE) | MoE | 397B | No disponible | Apache-2.0 | bf16 | Escala más grande, no apto para consumo local |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Ornith-1.5-9B-uncensored-MLX-8bit | ~9,4 B | No disponible | MLX 8-bit | Apache 2.0 | Vision y MTP preservados; abliterado; Apple Silicon |
+| Ornith-1.5-9B-uncensored (bf16) | ~9,4 B | No disponible | Safetensors bf16 | Apache 2.0 | Pesos abliterados a precision completa; referencia para medir el efecto de la cuantizacion |
+| Ornith-1.5-9B-uncensored-GGUF-8bit | ~9,4 B | No disponible | GGUF Q8_0 | Apache 2.0 | Misma intervencion, orientada a llama.cpp |
+| ornith-ai/Ornith-1.5-9B (base) | ~9,4 B | No disponible | No disponible | No disponible | Modelo original con rechazos; mitad de control del par experimental |
+| Ornith-1.5-35B-A3B-uncensored-MLX-8bit | 35 B totales, 3 B activos | No disponible | MLX 8-bit | Apache 2.0 | Variante MoE de la misma familia, mayor capacidad con activacion reducida |
 
-No se dispone de comparaciones cuantitativas con modelos abliterados similares, como otros modelos "uncensored" de la comunidad, ya que no hay datos de benchmark publicados para esta variante.
+No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes ni frente a modelos de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- **Guardarraíles reducidos o eliminados**: el modelo no tiene filtros de seguridad, por lo que puede generar contenido dañino, ilegal o éticamente cuestionable. El usuario es responsable de cumplir con la ley y las políticas de uso.
-- **Riesgo de alucinacion**: como todo LLM, puede producir información falsa o inventada, especialmente en temas delicados.
-- **Idioma**: no se especifican idiomas soportados, aunque probablemente hereda el multilingüismo del modelo base.
-- **Contexto**: la longitud de contexto no se ha publicado, lo que limita su uso en aplicaciones que requieran ventanas largas.
-- **Licencia**: Apache-2.0 permite uso comercial, pero el uso indebido puede violar términos de la plataforma de despliegue.
-- **Degradacion potencial**: aunque la KL es baja, la abliteración puede afectar sutilmente la calidad de la generación en algunos dominios.
-- **Sesgos**: el modelo base puede heredar sesgos de los datos de entrenamiento, y al eliminar los rechazos, estos sesgos pueden manifestarse de forma más abierta.
+- La abliteracion elimina una direccion de rechazo, no una politica: sobreviven rechazos por reafirmacion multi-turno, por direccionamiento del system prompt y en la ruta de vision. El comportamiento no es equivalente a un modelo sin entrenamiento de seguridad.
+- El autor prohibe exponer estos pesos como endpoint publico sin una capa de moderacion independiente; quien despliega asume la responsabilidad de la moderacion que los guardrails originales cubrian.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; debe medirse por dominio antes de cualquier uso en produccion.
+- Sesgos conocidos: no documentados en la informacion proporcionada; la ausencia de rechazos puede amplificar la reproduccion de contenido sesgado o danino sin senal de advertencia.
+- Idiomas soportados no documentados, lo que impide garantizar calidad fuera del idioma o idiomas del modelo base.
+- Longitud de contexto no disponible: no se puede planificar el uso con documentos largos o conversaciones extensas sin verificacion empirica.
+- Licencia Apache 2.0 permite uso comercial, pero las reglas operativas del autor (moderacion obligatoria, reporte del delta contra el base) deben respetarse como condicion de uso responsable.
+- El checkpoint esta atado al ecosistema MLX y Apple Silicon; no es portable a CUDA sin recurrir a otra variante de la familia.
+- Cualquier evaluacion debe reportarse como delta contra ornith-ai/Ornith-1.5-9B y re-medirse sobre prompts propios; los resultados no son transferibles entre dominios.
 
 ## Enlaces
 
-- Modelo en Hugging Face: [junafinity/Ornith-1.5-9B-uncensored-MLX-8bit](https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-MLX-8bit)
-- Modelo base: [ornith-ai/Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
-- Repositorio ZeroFuse: [github.com/junainfinity/ZeroFuse](https://github.com/junainfinity/ZeroFuse)
-- Página oficial de Ornith-1.5: [ornith.ai/ornith_1_5.html](https://ornith.ai/ornith_1_5.html)
-- Guía de Ornith AI: [ornith.online](https://ornith.online/)
-- Radar de modelos abliterados: [modelheretic.com](https://modelheretic.com/)
+- Modelo en Hugging Face: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-MLX-8bit
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Variante bf16 abliterada: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored
+- Variante GGUF Q8_0: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-GGUF-8bit
+- Variante MoE MLX 8-bit: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit
+- Variante MoE GGUF Q8_0: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-GGUF-8bit
+- Coleccion de la familia: https://huggingface.co/collections/junafinity/ornith-15-uncensored-6a896c737cf40ad660af2ebd
+- Sitio del autor: https://verisafe.live
+- Contacto del autor: info@verisafe.live

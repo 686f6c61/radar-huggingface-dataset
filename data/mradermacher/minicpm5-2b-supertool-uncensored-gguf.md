@@ -2,50 +2,52 @@
 
 ## Resumen
 
-MiniCPM5-2B-Supertool-Uncensored-GGUF es una cuantizacion estatica en formato GGUF del modelo MiniCPM5-2B-Supertool-Uncensored, publicado por el usuario mradermacher en Hugging Face. El modelo base procede de saidutta69/MiniCPM5-2B-Supertool-Uncensored, que a su vez parece derivar de la familia MiniCPM5 de 2.000 millones de parametros, orientada a tareas de tool calling y con un ajuste "uncensored" (sin los filtros de rechazo habituales). El repositorio que nos ocupa no aporta informacion adicional sobre arquitectura, entrenamiento o capacidades: se limita a ofrecer los pesos ya convertidos a GGUF para su uso en motores de inferencia locales.
+MiniCPM5-2B-Supertool-Uncensored-GGUF es una cuantización estática en formato GGUF del modelo saidutta69/MiniCPM5-2B-Supertool-Uncensored, realizada por mradermacher. El modelo base es un ajuste fino de tipo QLoRA sobre la familia MiniCPM5, orientado específicamente a tool calling, function calling y flujos de agentes (incluyendo agentes de código y de terminal). Con 2.516.756.480 parámetros, se posiciona en la gama de modelos pequeños pensados para ejecución local y en dispositivos de borde.
 
-La relevancia de esta publicacion es practica: los ficheros GGUF permiten ejecutar el modelo en CPU y GPU de consumo mediante llama.cpp, Ollama o LM Studio, algo imposible con los pesos originales en safetensors si no se dispone de hardware dedicado. El repositorio incluye un conjunto amplio de cuantizaciones (desde Q2_K hasta Q8_0, ademas de F16 e IQ4_XS), lo que facilita ajustar el equilibrio entre calidad y consumo de memoria en funcion del hardware disponible.
+El interés principal de esta publicación es la combinación de tres factores: un tamaño contenido que permite inferencia en GPU de consumo, una especialización explícita en uso de herramientas y JSON, y una edición de pesos orientada a la supresión de rechazos (abliteration) que elimina parte de las negativas del modelo original. El autor distribuye hasta doce variantes de cuantización (desde Q2_K de 1,1 GB hasta f16 de 5,1 GB), lo que facilita desplegar el modelo en hardware muy diverso.
 
-No obstante, la informacion publicada es muy escasa: no se declara licencia, no se especifican idiomas soportados, no hay resultados de benchmarks ni una model card descriptiva mas alla de los metadatos de la conversion. Cualquier evaluacion rigurosa del modelo requiere consultar el repositorio del modelo base original.
+La licencia Apache 2.0 y el formato GGUF lo hacen directamente utilizable con llama.cpp y derivados. No obstante, la información pública disponible es escasa: no se documentan resultados de benchmarks, ni la longitud exacta de contexto, ni detalles del proceso de entrenamiento más allá de los datasets citados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre indica familia MiniCPM5, sin confirmar) |
-| Parametros totales | 2B (segun el nombre del modelo) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizacion estatica, convert_type: hf, quantize_version: 2) |
+| Arquitectura | no disponible (familia MiniCPM5; arquitectura transformer, sin confirmar detalles) |
+| Parametros totales | 2.516.756.480 (≈2,5 B) |
+| Parametros activos | no aplica (no es MoE, segun la informacion disponible) |
+| Longitud de contexto | no disponible (etiquetado como "long-context" en los tags) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en, zh (segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en la documentacion disponible. El nombre "MiniCPM5-2B" sugiere la familia MiniCPM de OpenBMB, pero no se confirma en la model card. Tampoco se detallan datos de entrenamiento, numero de tokens, composicion del dataset ni si hubo fases de RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna del modelo base más allá de su pertenencia a la familia MiniCPM5 y de su naturaleza transformer. El modelo original fue ajustado con QLoRA (según los tags) y posteriormente sometido a una edición de pesos de tipo abliteration ("heretic-ara", "ara", "refusal-suppression", "weight-edit"), una técnica que identifica y modifica direcciones en el espacio de activaciones asociadas a rechazos para reducir la tasa de negativas del modelo. Los datasets citados en la model card son saidutta69/fable-5.1-premium-v2 y MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x, si bien no se especifica el número de tokens, la composición exacta ni si hubo fases de RLHF o DPO.
 
-El sufijo "Supertool" apunta a un ajuste fino orientado a tool calling o function calling, y "Uncensored" indica que se ha eliminado o reducido el alineamiento de rechazo respecto al modelo original. Ninguna de estas afirmaciones puede verificarse con la informacion proporcionada.
-
-Respecto al proceso de conversion, los metadatos indican que se trata de una cuantizacion estatica (`quantize_version: 2`) con tensiones de salida cuantizadas (`output_tensor_quantised: 1`) y conversion desde formato Hugging Face (`convert_type: hf`). No se especifica la herramienta exacta empleada, aunque el conjunto de cuantizaciones (incluyendo IQ4_XS) es compatible con el flujo habitual de llama.cpp.
+La contribución de mradermacher es exclusivamente de cuantización: convierte el modelo base a GGUF con cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1, convert_type hf). No se documenta ninguna modificación adicional de pesos ni de arquitectura en esta publicación.
 
 ## Capacidades
 
-- Generacion de texto: capacidad basica esperada de un modelo de 2B parametros, sin datos especificos publicados.
-- Tool calling / function calling: el nombre "Supertool" sugiere soporte, pero no se documenta el formato ni la fiabilidad.
-- Modo "uncensored": se espera menor tasa de rechazos en peticiones, sin garantias documentadas.
-- Capacidades multilingues: no disponibles.
-- Razonamiento multi-paso y agentes: no documentado.
-- Vision, audio u otras modalidades: no disponible.
+- Generación de texto conversacional en inglés y chino.
+- Tool calling y function calling, con salida en JSON, orientado a integración con APIs y frameworks de agentes.
+- Soporte de agentes de código y de terminal (tags "code-agent", "coding-agent", "terminal-agent", "bash").
+- Generación de código y uso de herramientas de línea de comandos.
+- Razonamiento multi-paso en el contexto de flujos de agentes.
+- Formato de chat ChatML.
+- Supresión de rechazos por edición de pesos (modelo "uncensored"/"abliterated"): responde a peticiones que el modelo base podría rechazar.
+- Inferencia offline y en dispositivo (tags "offline-inference", "on-device", "edge-ai", "consumer-gpu").
+- Compatibilidad con endpoints (tag "endpoints_compatible").
 
 ## Casos de uso
 
-- Prototipado local de asistentes con tool calling: el formato GGUF permite ejecutar el modelo en llama.cpp u Ollama en un portatil, lo que facilita iterar sobre esquemas de funciones sin coste de API. La idoneidad depende de validar empiricamente la calidad del tool calling, no documentada.
-- Experimentacion con modelos sin filtros de rechazo: util para investigacion sobre comportamiento de modelos "uncensored" en entornos controlados, siempre que se asuman los riesgos eticos y legales asociados.
-- Despliegue en dispositivos con recursos limitados: con cuantizaciones Q4_K_M o Q3_K_M, un modelo de 2B puede caber en GPUs de consumo con 4-8 GB de VRAM, lo que permite inferencia offline.
-- Generacion de texto en pipelines por lotes: al ser un modelo pequeno, puede procesar volumenes moderados de texto en CPU con throughput aceptable, aunque sin datos medidos.
-- Base para fine-tuning adicional: los pesos GGUF no son ideales para reentrenar; para ello conviene partir del modelo base en safetensors.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes, lo que permite medir la degradacion de calidad segun el nivel de cuantizacion en una tarea concreta.
+- Agente local de terminal: el modelo puede generar comandos bash y encadenar pasos en un bucle de agente sobre una máquina del desarrollador, ejecutándose con llama.cpp sin conexión a Internet y con una huella de memoria inferior a 2 GB en Q4_K_M.
+- Automatización de tool calling en pipelines internos: su especialización en JSON y function calling permite usarlo como planificador de llamadas a APIs en orquestadores de agentes, sustituyendo a modelos mayores en tareas de enrutamiento simple.
+- Asistente de código en el IDE: con 2,5 B de parámetros y cuantización Q4_K_S (1,6 GB), puede desplegarse en una estación de trabajo con GPU de consumo para autocompletado y generación de fragmentos de código, manteniendo la latencia baja.
+- Prototipado de agentes en entornos con restricciones de privacidad: al ejecutarse totalmente offline, es adecuado para pruebas de flujos de agentes sobre datos que no pueden salir de la red corporativa.
+- Evaluación de técnicas de abliteration: investigadores interesados en medir el efecto de la supresión de rechazos sobre la calidad y la seguridad pueden comparar esta variante con el modelo base y con otras cuantizaciones del mismo.
+- Despliegue en dispositivos de borde: con variantes desde 1,1 GB (Q2_K), encaja en equipos con poca VRAM o en CPU, útil para asistentes embebidos con capacidades de herramienta.
+- Generación de scripts de automatización: dado su entrenamiento en bash y uso de herramientas, puede producir scripts de shell y tareas de mantenimiento a partir de descripciones en lenguaje natural.
 
 ## Benchmarks y rendimiento
 
@@ -53,36 +55,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (2B parametros): aproximadamente 1,5-2 GB en Q4_K_M, 2,5-3 GB en Q8_0 y 4-5 GB en F16, sin contar el overhead del contexto KV.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones bajas; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son validas, aunque para un 2B el hardware de gama alta esta sobredimensionado.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas con 4 GB o mas; tambien en CPU con suficiente RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa.
-- Latencia y throughput: no disponibles; dependen del hardware y la cuantizacion.
+- VRAM estimada para inferencia: aproximadamente 1,1 GB (Q2_K), 1,6-1,7 GB (Q4_K_S/Q4_K_M), 2,2 GB (Q6_K), 2,8 GB (Q8_0) y 5,1 GB (f16), sin contar el espacio adicional para el contexto KV.
+- GPU recomendadas: cualquier GPU de consumo con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090 y superiores son suficientes con holgura. En entornos de servidor, A100 o H100 no son necesarias para este tamaño, aunque pueden usarse para servir múltiples instancias.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones; las variantes Q2_K a Q5_K caben incluso en iGPU y en sistemas con poca memoria.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base en safetensors es compatible con transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-Supertool-Uncensored-GGUF | 2B | no disponible | no disponible | GGUF | Objeto de esta ficha |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Alternativa consolidada con licencia permisiva |
-| Llama 3.2 1B Instruct | 1B | 128K (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Ecosistema amplio y soporte de tool calling documentado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8K (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | Enfocado a eficiencia en dispositivo |
+| MiniCPM5-2B-Supertool-Uncensored (este) | 2,5 B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en tool calling, abliterated |
+| Modelo base saidutta69/MiniCPM5-2B-Supertool-Uncensored | 2,5 B | no disponible | Apache 2.0 | safetensors | Sin edicion de rechazos |
+| Otras variantes i1 de mradermacher | 2,5 B | no disponible | Apache 2.0 | GGUF (imatrix) | Cuantizaciones ponderadas, misma base |
+| Alternativas de la misma categoria (p. ej. Qwen2.5-1.5B/3B, Llama-3.2-1B/3B) | 1-3 B | variable | variable | GGUF, safetensors | No se dispone de datos comparativos de rendimiento en la informacion proporcionada |
 
-La comparacion es orientativa: los datos del modelo de esta ficha no estan verificados y los de los alternativos provienen de sus documentaciones publicas, no de una evaluacion directa en este contexto.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card descriptiva: no hay informacion sobre entrenamiento, datos, sesgos ni evaluaciones.
-- Licencia no declarada: no puede asumirse uso comercial sin consultar el repositorio del modelo base original.
-- El calificativo "uncensored" implica riesgo de generar contenido inapropiado, ofensivo o ilegal; requiere moderacion externa en produccion.
-- Riesgo de alucinacion elevado por el tamano reducido (2B) y por la falta de datos de alineamiento documentados.
-- Idiomas y contexto no confirmados: no debe asumirse soporte multilingue ni ventanas largas.
-- La cuantizacion introduce degradacion adicional respecto al modelo en precision completa, especialmente en Q2_K y Q3_K_S.
-- Procedencia del modelo base (usuario saidutta69) sin trazabilidad verificable: auditar antes de cualquier uso serio.
-- Sin descargas ni likes en el momento de la consulta: no hay evidencia de uso o validacion por parte de la comunidad.
+- La edición de pesos orientada a suprimir rechazos ("abliterated", "uncensored") puede degradar la calidad del modelo en tareas que requieren matices de seguridad y aumenta el riesgo de generar contenido dañino o inapropiado; no es recomendable para aplicaciones de cara al público sin filtros adicionales.
+- Riesgo de alucinación inherente a un modelo de 2,5 B: la precisión en tareas de razonamiento complejo y en la generación de llamadas a herramientas con argumentos largos será inferior a la de modelos de mayor tamaño.
+- Idiomas documentados únicamente inglés y chino; el rendimiento en castellano no está verificado y probablemente sea limitado.
+- No se documenta la longitud de contexto efectiva, por lo que no debe asumirse la ventana "long-context" de los tags sin validación empírica.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre la idoneidad de la edición de rechazos para entornos regulados.
+- El repositorio ocupa 22,8 GB por incluir todas las cuantizaciones; conviene descargar solo la variante necesaria.
+- No hay resultados de benchmarks publicados que respalden las capacidades declaradas en los tags.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/MiniCPM5-2B-Supertool-Uncensored-GGUF
-- Modelo base referenciado: https://huggingface.co/saidutta69/MiniCPM5-2B-Supertool-Uncensored
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Modelo base: https://huggingface.co/saidutta69/MiniCPM5-2B-Supertool-Uncensored
+- Cuantizaciones i1 (imatrix): https://huggingface.co/mradermacher/MiniCPM5-2B-Supertool-Uncensored-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#MiniCPM5-2B-Supertool-Uncensored-GGUF
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset saidutta69/fable-5.1-premium-v2: https://huggingface.co/datasets/saidutta69/fable-5.1-premium-v2
+- Dataset MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x: https://huggingface.co/datasets/MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x

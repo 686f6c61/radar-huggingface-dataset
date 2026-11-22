@@ -2,116 +2,94 @@
 
 ## Resumen
 
-Qwen-Image-2.1-MLX-Serve-4bit es un empaquetado cuantizado a 4 bits del modelo de difusion texto-a-imagen Qwen/Qwen-Image-2.1, preparado por el desarrollador ddalcu para su servidor de inferencia mlx-serve sobre Apple Silicon. No es un modelo nuevo ni un reentrenamiento: es una conversion de pesos que conserva el layout y los nombres de claves originales de diffusers y aplica cuantizacion afina de 4 bits (grupo 64) a las capas lineales de los bloques del DiT y del codificador de texto, manteniendo densos el VAE (en f32), `embed_tokens`, las normas y las lineales pequenas o compartidas del DiT.
+Qwen-Image-2.1-MLX-Serve-4bit es una cuantizacion de 4 bits del modelo de generacion de imagenes Qwen/Qwen-Image-2.1, empaquetada por el desarrollador independiente ddalcu para su runtime mlx-serve, orientado al framework MLX de Apple. El modelo resuelve el problema de ejecutar un modelo de difusion de gran tamano en equipos Mac con memoria unificada limitada: el pack ocupa 11,2 GB y esta pensado para Macs de 16 GB, frente a los 13,2 GB del repositorio completo.
 
-El objetivo es hacer viable la generacion de imagenes de alta resolucion en Macs con memoria unificada limitada: el repositorio ocupa 10,7 GB y esta pensado para equipos de 16 GB. Para reducir el consumo, el pack elimina la torre de vision de Qwen3-VL, el `lm_head` (el modelo es solo texto-a-imagen) y los `time_conv` por fotograma del VAE. Ademas, mlx-serve carga el codificador de texto por peticion y lo libera antes del proceso de denoising, de modo que el conjunto residente se limita al DiT y al VAE.
+La arquitectura subyacente es la del modelo base de Qwen: un transformer de difusion (DiT) para el proceso de denoising, un text encoder basado en Qwen3-VL con su torre de vision, y un VAE para la decodificacion latente a pixeles. La cuantizacion se aplica de forma selectiva: las capas lineales de los bloques DiT y del text encoder se cuantizan en 4 bits con grupos de 64, mientras que el VAE, los embeddings de tokens, las normalizaciones y las lineales pequenas o compartidas se mantienen en precision completa. Se conserva la torre de vision para edicion por instruccion.
 
-Es relevante ahora porque permite ejecutar un modelo de difusion tipo DiT de gran tamano en hardware de consumo Apple, sin GPU dedicada y sin depender de servicios en la nube. Como contrapartida, el pack no esta publicado de forma utilizable: solo carga en la rama `feat/qwen-image-2.1` del repositorio mlx-serve (PR 477), y ninguna version publicada de mlx-serve o de MLX Core puede ejecutarlo todavia. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Es relevante ahora porque demuestra que un modelo de imagen de la familia Qwen puede ejecutarse localmente en hardware de consumo Apple con un consumo pico medido de 9,55 GB, a costa de una latencia considerable (del orden de decenas de segundos por paso en un M1 Pro). La licencia Apache-2.0, heredada del modelo base, facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (diffusion transformer) con codificador de texto y VAE; base Qwen-Image-2.1 |
+| Arquitectura | DiT (diffusion transformer) con text encoder Qwen3-VL y VAE |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de difusion texto-a-imagen; sin ventana de contexto declarada) |
-| Tipos de cuantizacion | 4 bits afina con grupo de 64 en las lineales de los bloques DiT y del codificador de texto; VAE en f32; existe tambien un pack de 8 bits de la misma familia |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4-bit affine (group 64) en lineales de bloques DiT y capas del text encoder; VAE en f32; embed_tokens, norms y lineales pequenas/compartidas en precision completa |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (igual que el modelo base) |
-| Formato de pesos | safetensors, layout y nombres de claves de diffusers |
-| Tamano del repositorio | 10,7 GB |
-| Modelo base | Qwen/Qwen-Image-2.1 (relacion: quantized) |
-| Pipeline | text-to-image |
-| Libreria | mlx-serve |
-| Resoluciones soportadas | al menos 512x512 y 1024x1024 en las mediciones publicadas |
-| Herramienta de conversion | `tests/convert_qwen_image21_weights.py --preset 16gb` |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (layout y nombres de claves de diffusers) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de una arquitectura de difusion basada en transformer (DiT) heredada integramente del modelo base Qwen/Qwen-Image-2.1, acompanada de un codificador de texto derivado de la familia Qwen3-VL y de un VAE en f32. La conversion no modifica la topologia: conserva el layout de diffusers y los nombres de claves, y aplica cuantizacion afina de 4 bits con grupo de 64 exclusivamente a las capas lineales de los bloques DiT y a las lineales del codificador de texto. Permanecen en precision densa el VAE, `embed_tokens`, las normas y las lineales pequenas o compartidas del DiT. Se han eliminado la torre de vision de Qwen3-VL, el `lm_head`, por tratarse de un uso exclusivamente texto-a-imagen, y los `time_conv` por fotograma del VAE.
+El modelo base Qwen/Qwen-Image-2.1 sigue un esquema de difusion latente con un transformer de difusion (DiT) como red de denoising, un text encoder multimodal Qwen3-VL y un VAE que decodifica los latentes a imagen. Esta version no reentrena el modelo: parte de los pesos del modelo base y aplica cuantizacion post-entrenamiento selectiva. Las lineales de los bloques DiT y las capas del text encoder se cuantizan en 4 bits con tamano de grupo 64; el VAE se mantiene en f32, y se preservan en precision completa los `embed_tokens`, las normalizaciones y las lineales pequenas o compartidas del DiT. Se eliminan el `lm_head` y las `time_conv` por frame del VAE. La torre de vision del Qwen3-VL se conserva para permitir edicion de imagen por instruccion.
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre etapas de ajuste (RLHF, DPO u otras) en los materiales proporcionados. Tampoco se documentan innovaciones de decodificacion, atencion lineal u otras tecnicas especificas del pack. La innovacion relevante de este repositorio es de despliegue: la carga del codificador de texto por peticion y su liberacion antes del bucle de denoising, que reduce la memoria residente al DiT y al VAE.
+El proceso de conversion se realiza mediante el script `tests/convert_qwen_image21_weights.py --preset 16gb` del repositorio mlx-serve. El runtime carga el text encoder por peticion y lo libera antes de la fase de denoising, de modo que el conjunto residente en memoria es el DiT mas el VAE. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens vistos ni si el modelo base empleo RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de prompts de texto (text-to-image), con resoluciones verificadas de 512x512 y 1024x1024.
-- Image-to-image: acepta el parametro `image` junto con `strength`.
-- Classifier-free guidance real: cuando `guidance_scale` es mayor que 1 y se proporciona un `negative_prompt`, ejecuta dos pasadas por paso de denoising.
-- Control de numero de pasos de muestreo; 40 pasos por defecto si se omite el parametro.
-- Servicio por API con endpoint tipo OpenAI: `POST /v1/images/generations` en el puerto 11234.
-- Ejecucion local en Apple Silicon mediante MLX, sin GPU dedicada.
-- Sin capacidades de vision ni de generacion de texto: la torre de vision y el `lm_head` han sido eliminados del pack.
-- No se declaran capacidades de tool calling, function calling, uso de agentes ni razonamiento multi-paso (no aplica a un modelo de difusion texto-a-imagen).
-- Cobertura multilingue: no disponible.
+- Generacion de imagenes texto-a-imagen (text-to-image) mediante prompts en lenguaje natural.
+- Edicion de imagen por instruccion: modo `edit` con una imagen de entrada y hasta 9 imagenes de referencia adicionales.
+- Imagen-a-imagen (image-to-image) mediante los parametros `image` y `strength`.
+- CFG real (classifier-free guidance) cuando `guidance_scale` es mayor que 1 y se proporciona un `negative_prompt`, a costa de dos pasadas por paso.
+- Control del numero de pasos de denoising (40 por defecto si se omite).
+- Control del tamano de salida (por ejemplo, 512x512 o 1024x1024).
+- Servicio via API HTTP compatible con el endpoint `/v1/images/generations`.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso; el modelo es exclusivamente generativo de imagen.
 
 ## Casos de uso
 
-- Generacion de imagenes en local en Macs de 16 GB: el pack ocupa 10,7 GB y alcanza un pico de memoria medido de 9,55 GB a 1024x1024, lo que permite generar imagenes sin depender de servicios en la nube ni de GPU dedicada.
-- Prototipado rapido de prompts: con 512x512 y 20 pasos el tiempo total medido fue de 118 s (incluyendo carga), una configuracion adecuada para iterar sobre descripciones antes de lanzar una generacion a resolucion completa.
-- Integracion en pipelines de pruebas automatizadas: el endpoint HTTP compatible con el formato de OpenAI permite sustituir llamadas a APIs externas por un servidor local en tests de integracion y de regresion visual.
-- Refinado de bocetos o imagenes existentes: la combinacion de `image` y `strength` habilita flujos de image-to-image para variaciones de estilo o mejora de encuadres partiendo de material ya disponible.
-- Control de estilo mediante CFG y prompts negativos: con `guidance_scale` mayor que 1 y `negative_prompt`, el modelo ejecuta CFG real (dos pasadas por paso) para excluir elementos no deseados, a costa de duplicar el coste de inferencia por paso.
-- Generacion de imagenes con requisitos de privacidad: al ejecutarse en local, los prompts y las imagenes no salen del equipo, lo que encaja en entornos con datos sensibles o sin conectividad.
-- Evaluacion de cuantizacion en difusion: comparar el pack de 4 bits con el de 8 bits de la misma familia permite estudiar el compromiso entre memoria, tiempo por paso y calidad de imagen en Apple Silicon.
-- Docencia e investigacion sobre modelos de difusion: el repositorio de mlx-serve es reproducible desde codigo fuente y permite inspeccionar el proceso de conversion y de carga de pesos en MLX.
+- Prototipado local de generacion de imagenes en Mac: un desarrollador puede generar imagenes de 512x512 en unos 118 s con 20 pasos en un M1 Pro de 32 GB, sin depender de servicios en la nube ni de GPUs dedicadas.
+- Edicion de imagenes por instruccion: el modo `edit` con imagenes de referencia permite modificar una imagen existente siguiendo un prompt, util para iterar sobre bocetos o variaciones de producto conservando la composicion original.
+- Imagen-a-imagen con control de fuerza: ajustando `strength` se puede aplicar un estilo o una transformacion parcial sobre una imagen base, adecuado para workflows de diseno grafico que requieren variaciones controladas.
+- Servicio de generacion de imagenes en red local: el endpoint HTTP `/v1/images/generations` permite integrar el modelo en herramientas internas o demos sin exponer datos a terceros, aprovechando la licencia Apache-2.0.
+- Generacion de ilustraciones para documentacion tecnica o blogs: con prompts descriptivos y 512x512 se obtienen imagenes de acompanamiento en tiempos asumibles en un portatil Apple.
+- Experimentacion e investigacion en cuantizacion: el pack sirve como referencia para estudiar el impacto de la cuantizacion 4-bit selectiva en la calidad de un DiT, comparando contra el pack de 8 bits del mismo autor.
+- Pruebas de concepto de pipelines multimodales: la conservacion de la torre de vision del Qwen3-VL permite experimentar con edicion guiada por imagen sin salir del ecosistema MLX.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (FID, CLIP score, GenEval ni similares) en la informacion disponible. Los unicos datos de rendimiento publicados son mediciones de tiempo y memoria realizadas en un M1 Pro con 32 GB de memoria unificada:
+No se han publicado resultados de benchmarks de calidad de imagen (FID, CLIP score, etc.) en la informacion disponible. Los unicos datos medidos son de rendimiento de inferencia en un Apple M1 Pro de 32 GB:
 
-| Pack | Resolucion | Pasos | Tiempo total (incluye carga) | Memoria maxima |
+| Pack | Resolucion | Pasos | Tiempo total (incl. carga) | Memoria pico |
 |---|---|---|---|---|
-| 8 bits | 1024x1024 | 40 | 985 s (~23 s/paso) | 12,95 GB |
-| 4 bits | 1024x1024 | 3 | 87 s | 9,55 GB |
-| 4 bits | 512x512 | 20 | 118 s | no disponible |
-
-El dato de 23 s por paso corresponde al pack de 8 bits. Para el pack de 4 bits a 512x512, el tiempo de 118 s para 20 pasos equivale a unos 5,9 s por paso, incluyendo la carga del modelo; este valor es una estimacion derivada de los datos publicados, no una cifra reportada por el autor. No se dispone de datos de throughput, latencia por imagen en otras GPU ni comparativas de calidad frente al modelo base.
+| 8-bit | 1024x1024 | 40 | 985 s (~23 s/paso) | 12,95 GB |
+| 4-bit | 1024x1024 | 3 | 87 s | 9,55 GB |
+| 4-bit | 512x512 | 20 | 118 s | no disponible |
 
 ## Requisitos de hardware
 
-- Hardware soportado: exclusivamente Apple Silicon mediante MLX; no hay soporte CUDA ni ROCm en este pack.
-- Memoria: objetivo declarado de Macs con 16 GB de memoria unificada. Pico residente medido de 9,55 GB a 1024x1024 con el pack de 4 bits y de 12,95 GB con el pack de 8 bits (M1 Pro, 32 GB).
-- Equipo de referencia de las mediciones: M1 Pro con 32 GB de memoria unificada.
-- Gestion de memoria: mlx-serve carga el codificador de texto por peticion y lo libera antes del denoising, por lo que el conjunto residente durante la generacion es el DiT y el VAE.
-- GPU dedicadas (A100, H100, RTX 4090): no aplica, el runtime es MLX sobre Apple Silicon. No hay datos de despliegue en GPU NVIDIA u otras.
-- Opciones de despliegue: unicamente mlx-serve, compilado desde la rama `feat/qwen-image-2.1` (PR 477), con toolchain de Zig y script `scripts/build-mlx.sh`. No hay compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- API de servicio: `mlx-serve serve` expone `POST /v1/images/generations` en el puerto 11234.
-- Latencia y throughput: 985 s para 40 pasos a 1024x1024 con el pack de 8 bits (~23 s/paso) y 87 s para 3 pasos a 1024x1024 con el pack de 4 bits, incluyendo la carga del modelo en ambos casos.
+- VRAM/memoria unificada estimada: el pack de 4 bits ocupa 11,2 GB en disco y el autor lo disena para Macs de 16 GB; la memoria pico medida es de 9,55 GB en un M1 Pro de 32 GB.
+- GPU recomendadas: hardware Apple Silicon con MLX (M1 Pro o superior segun las mediciones publicadas); no se documenta soporte para GPUs NVIDIA o AMD.
+- Cabe en GPU de consumo: si, en Macs con memoria unificada de 16 GB o mas. No aplica a GPUs discretas convencionales por la dependencia de MLX.
+- Opciones de despliegue: exclusivamente mlx-serve, instalable via Homebrew (`brew tap ddalcu/mlx-serve` y `brew install mlx-serve`), con `mlx-serve pull` y `mlx-serve serve` exponiendo la API en el puerto 11234. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: aproximadamente 23 s por paso a 1024x1024 con el pack de 8 bits; 87 s para 3 pasos a 1024x1024 con 4 bits; 118 s para 20 pasos a 512x512 con 4 bits. El text encoder se carga por peticion y se libera antes del denoising, lo que anade coste de carga por solicitud.
 
 ## Comparativa con modelos similares
 
-| Modelo | Formato / runtime | Tamano | Resolucion | Pasos y tiempo | Memoria maxima | Licencia |
-|---|---|---|---|---|---|---|
-| Qwen-Image-2.1-MLX-Serve-4bit | safetensors cuantizado a 4 bits, MLX / mlx-serve | 10,7 GB | 1024x1024 y 512x512 | 3 pasos en 87 s (1024); 20 pasos en 118 s (512) | 9,55 GB | Apache-2.0 |
-| Pack de 8 bits de la misma familia | safetensors cuantizado a 8 bits, MLX / mlx-serve | no disponible | 1024x1024 | 40 pasos en 985 s (~23 s/paso) | 12,95 GB | Apache-2.0 |
-| Qwen/Qwen-Image-2.1 (base) | safetensors sin cuantizar, diffusers | no disponible | no disponible | no disponible | no disponible | Apache-2.0 |
-| Alternativas de difusion texto-a-imagen en MLX (por ejemplo familias FLUX o Stable Diffusion) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| ddalcu/Qwen-Image-2.1-MLX-Serve-4bit | no disponible | no disponible | Apache-2.0 | Hugging Face, runtime mlx-serve | Cuantizacion 4-bit para Mac; 11,2 GB |
+| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | Apache-2.0 | Hugging Face, diffusers | Pesos completos; requiere mas memoria |
+| Pack 8-bit de ddalcu (mismo autor) | no disponible | no disponible | Apache-2.0 | Hugging Face | 12,95 GB de memoria pico; ~23 s/paso a 1024x1024 |
 
-La busqueda web realizada no devolvio informacion relevante sobre este modelo ni sobre alternativas comparables; los resultados obtenidos correspondian a un software lector de pantalla sin relacion con el modelo. Por tanto, los datos de la comparativa se limitan a lo publicado en el repositorio del autor.
+No se dispone de datos de otros modelos de generacion de imagen comparables en la informacion proporcionada; los unicos puntos de comparacion documentados son el modelo base y la variante de 8 bits del mismo autor.
 
 ## Limitaciones y advertencias
 
-- El pack no esta publicado de forma utilizable: solo carga en la rama `feat/qwen-image-2.1` de mlx-serve (PR 477). Ninguna version publicada de mlx-serve ni de MLX Core puede ejecutarlo.
-- El aviso de no disponibilidad desaparecera, segun el autor, cuando el PR se integre; hasta entonces no es apto para produccion.
-- El repositorio registra 0 descargas y 0 likes, por lo que no existe validacion de la comunidad ni evidencia de uso real.
-- Requiere compilar el runtime desde codigo fuente con el toolchain de Zig y el script de build de MLX, lo que anade complejidad de despliegue.
-- La torre de vision de Qwen3-VL y el `lm_head` han sido eliminados: el modelo no puede interpretar imagenes de entrada ni generar texto.
-- Los `time_conv` por fotograma del VAE fueron descartados en la conversion, lo que limita cualquier uso que dependa de coherencia temporal.
-- La cuantizacion a 4 bits con grupo 64 en el DiT y en el codificador de texto puede degradar la fidelidad al prompt o el detalle fino respecto a precisiones mayores; no se han publicado metricas de calidad que lo cuantifiquen.
-- Riesgo de alucinacion visual y de errores en la representacion de texto dentro de la imagen, inherente a los modelos de difusion; no hay evaluaciones publicadas para este pack.
-- Sesgos conocidos: no disponible en la informacion proporcionada; cabe esperar los sesgos del modelo base y de sus datos de entrenamiento.
-- Cobertura de idiomas no declarada; el rendimiento con prompts en idiomas distintos del ingles no esta documentado.
-- Licencia Apache-2.0, la misma que el modelo base, lo que en principio permite uso comercial; conviene verificar los terminos aplicables al modelo base Qwen/Qwen-Image-2.1 y a cualquier componente derivado.
-- Los tiempos publicados corresponden a un M1 Pro; en Macs con menos memoria o generaciones anteriores el rendimiento y el consumo pueden diferir, especialmente en el objetivo declarado de 16 GB.
-- El uso de CFG real (`guidance_scale` mayor que 1 con `negative_prompt`) duplica las pasadas por paso de denoising y, por tanto, aproximadamente duplica el tiempo de generacion.
+- La cuantizacion 4-bit es agresiva y puede degradar la fidelidad de las imagenes generadas frente al modelo base; no se han publicado metricas de calidad que cuantifiquen esa perdida.
+- La latencia es alta: del orden de 23 s por paso a 1024x1024 en un M1 Pro, lo que hace impractical la generacion con 40 pasos en produccion interactiva.
+- Dependencia exclusiva del runtime mlx-serve y del framework MLX: no es portable a otros backends de inferencia sin reconversion.
+- Se han eliminado el `lm_head` y las `time_conv` por frame del VAE; cualquier funcionalidad que dependa de esas componentes no estara disponible.
+- El text encoder se carga y libera por peticion, lo que anade latencia de carga a cada solicitud.
+- No se documentan sesgos conocidos, tasas de alucinacion ni limitaciones de idioma; la ficha de idiomas figura como no disponible.
+- Licencia Apache-2.0, igual que el modelo base: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen-Image-2.1 por si hubiera terminos adicionales.
+- El autor es un desarrollador independiente; no hay garantias de mantenimiento ni soporte oficial de Qwen.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ddalcu/Qwen-Image-2.1-MLX-Serve-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio mlx-serve: https://github.com/ddalcu/mlx-serve
-- Rama de desarrollo del modelo: https://github.com/ddalcu/mlx-serve/tree/feat/qwen-image-2.1
-- Pull request de soporte: https://github.com/ddalcu/mlx-serve/pull/477
-- Imagen de ejemplo publicada por el autor: https://raw.githubusercontent.com/ddalcu/mlx-serve/feat/qwen-image-2.1/website/screenshots/qwen-image-2.1-4bit-512.jpg
-- Resultados de busqueda web: sin resultados relevantes; todas las entradas devueltas correspondian al software lector de pantalla JAWS y no guardan relacion con el modelo.
+- Imagen de muestra: https://raw.githubusercontent.com/ddalcu/mlx-serve/main/website/screenshots/qwen-image-2.1-4bit-512.jpg

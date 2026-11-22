@@ -2,107 +2,94 @@
 
 ## Resumen
 
-Qwen3.8-27B-MLX-4bit-KQuant es una cuantizacion en 4 bits del modelo Qwen/Qwen3.8-27B, publicada por nace-ai y optimizada para ejecucion local en Apple Silicon mediante la libreria MLX. El modelo conserva la torre de vision del original (pipeline image-text-to-text) y emplea el formato KQuant, una variante de cuantizacion affine 4-bit que mantiene el mismo tamano que un empaquetado estandar (15,13 GB de pesos del modelo de lenguaje) pero con menor perdida de calidad respecto al modelo en bf16.
+Qwen3.8-27B-MLX-4bit-KQuant es una cuantizacion de 4 bits del modelo Qwen/Qwen3.8-27B, publicada por nace-ai para su uso en Apple Silicon mediante la libreria MLX. El modelo base es un transformer multimodal de tipo image-text-to-text con 27.356.728.560 parametros, orientado a conversacion, razonamiento y comprension de imagenes. Esta version concreta reduce el peso del modelo a 16,3 GB de ficheros, lo que permite ejecutarlo en Macs con 32 GB de memoria unificada o mas.
 
-La relevancia de esta ficha reside en el metodo de cuantizacion: KQuant busca la escala por grupo de 64 pesos sobre 11 rangos de recorte y aplica una ponderacion derivada de 128 textos de calibracion, en lugar de calcular la escala solo a partir del minimo y el maximo. Segun la model card, esto reduce la divergencia KL frente al modelo bf16 de 0,054 a 0,035 y eleva la coincidencia en el siguiente token del 91,2 % al 92,9 %, sin aumentar el tamano del repositorio.
+La relevancia de este checkpoint radica en su estrategia de cuantizacion: segun la model card, el pack Q4 de nace-ai queda un 1,5x mas cerca del modelo original en BF16 que el pack de 4 bits de mlx-community, medido como divergencia KL (0,035 frente a 0,054) con el mismo tamano de pesos del modelo de lenguaje (15,13 GB). El autor denomina a esta tecnica "KQuant" y la distribuye junto a Kapitsa, su motor de inferencia para modelos Qwen en macOS que expone APIs compatibles con OpenAI, Anthropic y Ollama.
 
-El modelo esta pensado para ejecutarse con Kapitsa, el motor de inferencia local de Nace.AI para Macs con Apple Silicon, o alternativamente con mlx-lm. El repositorio tiene 27.356.728.560 parametros totales y un tamano de 16,3 GB, e incluye la cabeza MTP (multi-token prediction) para decodificacion especulativa.
+El modelo conserva las capacidades del Qwen3.8-27B original: modo de razonamiento (thinking) activado por defecto con control de profundidad, entrada de imagenes mediante partes `image_url`, y soporte de tool calling. La licencia Apache 2.0 del modelo base se mantiene en esta cuantizacion, lo que facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.5, segun tag `qwen3_5`); incluye torre de vision y cabeza MTP |
+| Arquitectura | Transformer multimodal (image-text-to-text); familia qwen3_5 |
 | Parametros totales | 27.356.728.560 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit (MLX affine 4-bit, formato KQuant); pesos del modelo de lenguaje en 15,13 GB |
-| Idiomas soportados | no disponible (la model card menciona evaluacion en ingles, codigo, matematicas, CJK, emoji y texto RTL; no se midieron devanagari ni tailandes) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (MLX), mas `mtp.safetensors` y `mtplx_runtime.json` |
+| Tipos de cuantizacion | 4-bit uniforme (Q4) y mixta 4/6/8-bit por tensor (Q5, ~5,3 bits por peso, 5,8 contando escalas) |
+| Idiomas soportados | no disponibles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (pack MLX); repo de 37,0 GB con subcarpetas Q4/ y Q5/ |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen/Qwen3.8-27B es un transformer con torre de vision (pipeline image-text-to-text) y una cabeza MTP (multi-token prediction) que habilita decodificacion especulativa. Esta version no reentrena el modelo: es una cuantizacion post-entrenamiento en 4 bits realizada con KQuant, que modifica unicamente el proceso de calculo de escalas de cuantizacion.
+El modelo base Qwen3.8-27B es un transformer de la familia qwen3_5 con 27.356 millones de parametros, disenado para tareas conversacionales y de imagen-texto. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; la model card de esta cuantizacion no los detalla.
 
-La innovacion tecnica de KQuant consiste en dos cambios respecto a un empaquetado affine 4-bit estandar: (1) la escala por grupo de 64 pesos se busca sobre 11 rangos de recorte en lugar de derivarse del minimo y el maximo, y (2) se aplica una ponderacion calculada a partir de 128 textos de calibracion. El resultado es un pack del mismo tamano y formato que el estandar pero mas proximo al modelo bf16. La cabeza MTP y el fichero `mtplx_runtime.json` proceden de Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed y se incluyen sin cambios; el tokenizador y la plantilla de chat son los de Qwen/Qwen3.8-27B. No se dispone de informacion sobre el dataset de entrenamiento del modelo base (numero de tokens, composicion, RLHF/DPO) en la documentacion proporcionada.
+La innovacion tecnica de este checkpoint es la cuantizacion KQuant. El pack Q4 emplea 4 bits uniformes y ocupa 16,3 GB, mientras que el pack Q5 usa precision mixta (4, 6 y 8 bits por tensor) con unos 5,3 bits por peso y 20,7 GB de descarga. El autor reporta una divergencia KL frente a BF16 de 0,035 para Q4 y 0,022 para Q5. Ademas, el modelo conserva el modo de razonamiento del original, con un parametro `reasoning_effort` que acepta los valores `low`, `medium` y `xhigh`, y permite desactivar el pensamiento con `enable_thinking: false`.
 
 ## Capacidades
 
-- Generacion de texto conversacional y respuesta a instrucciones (pipeline conversational).
-- Procesamiento de imagen y texto de forma conjunta (image-text-to-text): la torre de vision esta incluida en el repositorio, aunque no fue evaluada.
-- Razonamiento matematico: la model card reporta resultados en GSM8K (0,953 en modo zero-shot, greedy y thinking desactivado).
-- Generacion de codigo: se uso codigo de HumanEval en la evaluacion de divergencia KL.
-- Decodificacion especulativa mediante cabeza MTP, con un drafter externo (incoai/Qwen3.8-27B-DFlash2) usado en las mediciones de velocidad.
-- Soporte de modo thinking (la evaluacion de GSM8K se hizo con thinking desactivado, lo que implica que el modo existe).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles de forma explicita; el tokenizador se valido con ids identicos en ingles, codigo, matematicas, CJK, emoji y texto RTL.
+- Generacion de texto y conversacion multi-turno con plantilla de chat propia.
+- Razonamiento explicito en modo thinking, activado por defecto, con profundidad configurable (`low`, `medium`, `xhigh`) y salida del razonamiento en el campo `reasoning_content`.
+- Comprension de imagenes: acepta entradas `image_url` como URL http(s) o data URL en base64.
+- Tool calling / function calling, verificado por el autor sobre este pack con `mlx_lm.server` y con LM Studio.
+- Capacidades multilingues: no se detallan los idiomas soportados en la informacion disponible.
+- Despliegue mediante API compatible con OpenAI, Anthropic y Ollama a traves de Kapitsa, y servidor OpenAI-compatible con `mlx_lm.server`.
 
 ## Casos de uso
 
-- Inferencia local en Macs con Apple Silicon: el modelo se ejecuta con Kapitsa (`kapitsa serve --model 27b:kquant`) o con mlx-lm, lo que permite desplegar un modelo de 27B en un MacBook Pro sin conexion a servicios en la nube.
-- Asistente conversacional de escritorio: la ventana de contexto y el pipeline conversational permiten mantener dialogos multi-turno; en un M5 Pro de 48 GB se midieron velocidades de escritura de 72,5 a 91 tok/s segun el modo de muestreo.
-- Procesamiento de documentos con imagenes: al incluir la torre de vision, puede emplearse en tareas image-text-to-text como descripcion de capturas o extraccion de informacion de figuras, aunque el autor advierte que esta parte no fue evaluada.
-- Razonamiento matematico y resolucion de problemas: el rendimiento en GSM8K (0,953) lo hace adecuado para tareas de aritmetica y problemas de varios pasos en entornos educativos o de validacion.
-- Generacion y revision de codigo: la evaluacion incluyo codigo de HumanEval y el modelo puede integrarse en flujos de trabajo de desarrollo local para autocompletado o explicacion de codigo.
-- Prototipado e investigacion de cuantizacion: el repositorio documenta el metodo KQuant y sus resultados (KL, coincidencia de siguiente token, GSM8K) con registros de ejecucion reproducibles, lo que lo convierte en material de referencia para estudiar tecnicas de cuantizacion 4-bit.
-- Despliegue con decodificacion especulativa: la inclusion de la cabeza MTP y del drafter DFlash2 permite acelerar la generacion en produccion local, con lecturas de prompt de 4K a 735 tok/s en el hardware medido.
+- Asistente conversacional local en Mac: el pack Q4 de 16,3 GB cabe en equipos con 32 GB de memoria unificada, lo que permite mantener conversaciones privadas sin salir del dispositivo usando `kapitsa serve --private`.
+- Analisis de imagenes en escritorio: con soporte de entradas `image_url`, se puede enviar una fotografia o captura y pedir descripcion o extraccion de informacion, como demuestra el ejemplo de la model card con una imagen de Wikimedia.
+- Razonamiento matematico y de varios pasos: el modo thinking con `reasoning_effort` ajustable permite resolver problemas como calculos o deducciones encadenadas antes de responder.
+- Integracion en herramientas de desarrollo: al exponer una API compatible con OpenAI en el puerto 8080 mediante `mlx_lm.server`, se puede conectar a clientes y frameworks que ya hablan ese protocolo.
+- Automatizacion con tool calling: el modelo puede colocar llamadas a funciones a traves de la API, lo que habilita agentes que consultan servicios externos o ejecutan acciones.
+- Prototipado de aplicaciones multimodales en Apple Silicon: la combinacion de MLX, Kapitsa y los packs Q4/Q5 permite iterar localmente con dos niveles de fidelidad frente al BF16 (KL 0,035 y 0,022) segun la memoria disponible.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Pack estandar | KQuant (este repo) |
-|---|---:|---:|
-| Divergencia KL respecto a bf16 (menor es mejor) | 0,054 | 0,035 |
-| Coincidencia con bf16 en el siguiente token | 91,2 % | 92,9 % |
-| GSM8K (1.319 preguntas, zero-shot, greedy, thinking off) | 0,950 | 0,953 |
+La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.). El unico dato cuantitativo de rendimiento es la divergencia KL frente al modelo BF16:
 
-| Velocidad en MacBook Pro M5 Pro, 48 GB | Pack estandar (tok/s) | KQuant (tok/s) |
-|---|---:|---:|
-| Escritura, temperatura 0,6 | 80,0 | 72,5 |
-| Escritura, greedy | 82,8 | 91,0 |
-| Lectura de prompt de 4K | 719 | 735 |
+| Pack | Bits | Tamano de descarga | KL frente a BF16 | Memoria recomendada |
+|---|---|---|---|---|
+| Q4 | 4-bit uniforme | 16,3 GB | 0,035 | 32 GB+ |
+| Q5 | 4/6/8-bit mixto (~5,3 bpw) | 20,7 GB | 0,022 | 48 GB+ |
 
-Notas de medicion: la comparacion se hizo contra lmstudio-community/Qwen3.8-27B-MLX-4bit en el commit `6067b15`. La KL y la coincidencia se calcularon sobre 32.704 tokens de WikiText-2, chats de GSM8K y codigo de HumanEval frente a Qwen/Qwen3.8-27B en bf16. En GSM8K, 13 preguntas solo las acierta el pack estandar y 17 solo KQuant (McNemar z = 0,73, diferencia no significativa). Las velocidades se midieron con Kapitsa 0.2.32 y el drafter incoai/Qwen3.8-27B-DFlash2; las ejecuciones con muestreo varian ampliamente (KQuant: 76,7, 72,2 y 68,5 tok/s; estandar: 77,6, 78,5 y 83,8 tok/s). La calidad se midio solo en cargas de texto; la torre de vision no fue evaluada.
+El autor compara el Q4 con el pack de 4 bits de mlx-community (KL 0,054) y con lmstudio-community 4-bit y mlx-works oQ4e-mtp, sin aportar cifras de estos ultimos en el texto extraido. No se han publicado resultados de benchmarks de tareas en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/ memoria unificada estimada: el repositorio ocupa 16,3 GB y los pesos del modelo de lenguaje 15,13 GB; se midio en un MacBook Pro M5 Pro con 48 GB de memoria unificada.
-- GPU recomendadas: Apple Silicon (serie M); las mediciones se realizaron en un M5 Pro. La evaluacion de calidad se hizo en una H100 de Modal con mlx sobre CUDA, pero el destino de despliegue es Apple Silicon.
-- Cabe en GPU de consumo: si, en Macs con Apple Silicon y memoria unificada suficiente (el hardware medido tiene 48 GB). No se dispone de datos para GPUs NVIDIA de consumo.
-- Opciones de despliegue: Kapitsa 0.2.34 o superior (`brew install nace-ai/tap/kapitsa`; `kapitsa serve --model 27b:kquant`) y mlx-lm (`mlx_lm.generate`).
-- Latencia y throughput: en M5 Pro de 48 GB, 72,5 a 91,0 tok/s en escritura y 735 tok/s en lectura de un prompt de 4K con KQuant; el pack estandar obtiene 80,0 a 82,8 tok/s en escritura y 719 tok/s en lectura.
+- VRAM/memoria unificada: 32 GB o mas para el pack Q4 (16,3 GB de ficheros); 48 GB o mas para el Q5 (20,7 GB). La regla del autor asume que macOS asigna por defecto cerca de dos tercios de la RAM a la GPU y anade 2 GB para la conversacion.
+- GPU: disenado exclusivamente para Apple Silicon (MLX); no se contemplan A100, H100 ni RTX 4090 en esta distribucion.
+- Consumer GPU: no aplica; el objetivo son Macs con memoria unificada, no GPUs discretas.
+- Despliegue: Kapitsa (`brew install nace-ai/tap/kapitsa`, `kapitsa pull 27b:q4`, `kapitsa serve`) y mlx-lm (`mlx_lm.generate`, `mlx_lm.server` en el puerto 8080). Tambien verificado en LM Studio.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Cuantizacion | Tamano | KL frente a BF16 | Licencia |
 |---|---|---|---|---|---|
-| nace-ai/Qwen3.8-27B-MLX-4bit-KQuant | 27,36 B | no disponible | 4-bit KQuant (MLX) | apache-2.0 | KL 0,035; GSM8K 0,953 |
-| lmstudio-community/Qwen3.8-27B-MLX-4bit | 27,36 B (base) | no disponible | 4-bit affine estandar (MLX) | apache-2.0 | KL 0,054; GSM8K 0,950 |
-| Qwen/Qwen3.8-27B | 27,36 B | no disponible | bf16 | apache-2.0 | Modelo de referencia sin cuantizar |
-| nace-ai/Qwen3.5-9B-MLX-4bit-KQuant | no disponible | no disponible | 4-bit KQuant (MLX) | apache-2.0 | Version de 9B del mismo formato, citada por el autor |
+| nace-ai Qwen3.8-27B-MLX Q4 | 27,36 B | 4-bit uniforme | 16,3 GB | 0,035 | Apache 2.0 |
+| nace-ai Qwen3.8-27B-MLX Q5 | 27,36 B | 4/6/8-bit mixto | 20,7 GB | 0,022 | Apache 2.0 |
+| mlx-community 4-bit (Qwen3.8-27B) | 27,36 B | 4-bit | mismo tamano que Q4 | 0,054 | no disponible en la informacion |
+| lmstudio-community 4-bit | no disponible | 4-bit | no disponible | no disponible | no disponible |
+| mlx-works oQ4e-mtp | no disponible | 4-bit | no disponible | no disponible | no disponible |
+
+La comparativa se limita a los packs MLX del mismo modelo base citados por el autor; no se dispone de datos de contexto, rendimiento en tareas ni licencia de los packs rivales.
 
 ## Limitaciones y advertencias
 
-- La torre de vision esta incluida pero no fue evaluada; su calidad en tareas image-text-to-text no esta verificada.
-- La evaluacion de calidad se limita a cargas de texto; no hay datos de rendimiento en otros dominios.
-- El tokenizador se valido con ids identicos en ingles, codigo, matematicas, CJK, emoji y texto RTL, pero no se midieron devanagari ni tailandes.
-- Las mediciones de velocidad presentan alta varianza con muestreo (rango de 68,5 a 76,7 tok/s en KQuant); no deben interpretarse como una garantia de rendimiento.
-- Dos de las tres ejecuciones de velocidad de KQuant se realizaron antes de incluir `mtplx_runtime.json` en el directorio del pack.
-- No se dispone de informacion sobre sesgos, riesgo de alucinacion ni limitaciones de contexto o idioma del modelo base en la documentacion proporcionada.
-- Licencia apache-2.0, la misma que el modelo base; no se indican restricciones adicionales para uso comercial.
-- Requiere Kapitsa 0.2.34 o superior (o una compilacion de main hasta su publicacion) para el flujo de servidor; con versiones anteriores puede no funcionar correctamente.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
+- Solo funciona en Apple Silicon con MLX; no es desplegable en CUDA, ROCm ni CPUs convencionales sin conversion adicional.
+- La cuantizacion introduce perdida de fidelidad frente a BF16 (KL 0,035 en Q4 y 0,022 en Q5); para tareas sensibles a la precision conviene usar Q5 o el modelo original.
+- El modelo piensa antes de responder por defecto, lo que incrementa la latencia y el consumo de tokens; hay que desactivarlo explicitamente con `reasoning_effort: none` o `enable_thinking: false`.
+- Los ejemplos de inferencia de la model card se probaron originalmente en el pack de 9B; sobre este pack solo se verificaron un chat y una llamada a herramienta con mlx-lm 0.32.2 y LM Studio, por lo que otras rutas pueden no estar validadas.
+- No se detallan los idiomas soportados ni los sesgos conocidos del modelo base.
+- Riesgo de alucinacion inherente a los modelos generativos; no se aportan evaluaciones de fiabilidad.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse que el modelo base Qwen3.8-27B mantiene esa misma licencia en su repositorio original.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/nace-ai/Qwen3.8-27B-MLX-4bit-KQuant
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Pack estandar de comparacion: https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-4bit
-- Version de 9B KQuant: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-4bit-KQuant
-- Motor Kapitsa (GitHub): https://github.com/nace-ai/kapitsa
-- Seccion KQuant en el README de Kapitsa: https://github.com/nace-ai/kapitsa#kquant
-- Registro de resultados de benchmarks: https://github.com/nace-ai/kapitsa/blob/main/bench/results/2026-11-10-m5-pro-kquant-27b/README.md
-- Drafter DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
-- Cabeza MTP (MTPLX): https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed
-- Sitio de Nace.AI: https://www.nace.ai/
+- Repositorio de Kapitsa: https://github.com/nace-ai/kapitsa
+- Instalacion de Kapitsa via Homebrew: `brew install nace-ai/tap/kapitsa`
+- Assets de la model card: https://huggingface.co/nace-ai/Qwen3.8-27B-MLX/resolve/main/assets/

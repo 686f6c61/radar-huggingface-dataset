@@ -2,95 +2,94 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Qwen-7B-MLX-4bit es una conversión cuantizada a 4 bits en formato MLX del modelo DeepSeek-R1-Distill-Qwen-7B, publicada por Outlier-Ai para su ejecución nativa en Apple Silicon (chips M1, M2, M3 y M4). No se trata de un modelo nuevo ni de un ajuste fino: el repositorio solo cambia el formato en disco (safetensors MLX 4-bit, plantilla de chat y tokenizador) manteniendo los pesos y la licencia del modelo original de DeepSeek.
+DeepSeek-R1-Distill-Qwen-7B-MLX-4bit es una conversión cuantizada a 4 bits en formato MLX del modelo DeepSeek-R1-Distill-Qwen-7B, publicada por Outlier-Ai para su ejecución local en Apple Silicon. El modelo base, desarrollado por DeepSeek, es un destilado de DeepSeek-R1 sobre la arquitectura Qwen2 de 7B parámetros, pensado para razonamiento paso a paso con cadenas de pensamiento (chain-of-thought) y orientado a tareas matemáticas, lógicas y de código. Esta conversión no modifica los pesos originales: solo cambia el formato en disco a safetensors MLX 4-bit (group size 64, simétrico) junto con tokenizer y plantilla de chat.
 
-El modelo base es un destilado de razonamiento de DeepSeek sobre la arquitectura Qwen2 de 7B parámetros, con capacidad de chain-of-thought explícito (modo thinking) y entrenado para tareas de matemáticas, lógica y código. Esta versión cuantizada reduce el peso en disco a 4,3 GB, lo que permite ejecutarlo en Macs de gama consumer con memoria unificada, sin conexión a la nube y con privacidad total de los datos.
+El interés práctico de esta ficha es que permite ejecutar un modelo de razonamiento de 7B en un Mac con GPU integrada y memoria unificada, sin nube ni claves de API. Con aproximadamente 7.615 millones de parámetros y un repositorio de 4,3 GB, encaja en equipos con 8-16 GB de RAM unificada, lo que lo sitúa en el segmento de inferencia local en el borde (edge AI) para desarrolladores que trabajan en macOS y quieren probar flujos de razonamiento sin depender de servicios externos.
 
-Su relevancia actual radica en la combinación de razonamiento tipo R1 con un despliegue local en hardware de escritorio. Con 7.615.616.512 parámetros reales y cuantización de grupo 64 simétrica, es una opción práctica para desarrolladores que necesitan un LLM de razonamiento offline en macOS, integrable vía `mlx-lm` o mediante la aplicación Outlier del mismo autor.
+La licencia MIT heredada del modelo base facilita su uso comercial y su integración en herramientas internas, si bien conviene verificar la model card original de DeepSeek para cualquier restricción adicional. La relevancia actual radica en la combinación de un modelo destilado de R1 con una cuantización de 4 bits optimizada para Metal, que reduce el coste de hardware a un portátil Apple Silicon manteniendo el formato de razonamiento explícito del original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2), destilado de razonamiento de DeepSeek-R1 |
+| Arquitectura | Transformer decoder-only (Qwen2), destilado de DeepSeek-R1 |
 | Parametros totales | 7.615.616.512 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | MLX 4-bit, group size 64, simetrica |
 | Idiomas soportados | en, zh, fr, es, pt, de, ru, ja, ko, ar |
-| Licencia | MIT |
-| Formato de pesos | safetensors (MLX 4-bit), shards; incluye config.json, tokenizer y chat_template.jinja |
+| Licencia | MIT (heredada del modelo base) |
+| Formato de pesos | safetensors (MLX 4-bit), shards, config.json, tokenizer, chat_template.jinja |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de la familia Qwen2 con 7.615.616.512 parámetros, sobre el que DeepSeek aplicó un proceso de destilación a partir de su modelo de razonamiento R1. El destilado transfiere el comportamiento de chain-of-thought del modelo profesor a un modelo estudiante más pequeño, de modo que el modelo genera trazas de razonamiento antes de la respuesta final. Esta conversión concreta no introduce cambios en los pesos: solo aplica cuantización MLX 4-bit con tamaño de grupo 64 y simétrica, y repackagea tokenizador y plantilla de chat.
+La arquitectura subyacente es un transformer decoder-only de la familia Qwen2, con 7.615 millones de parámetros densos (no es un modelo Mixture-of-Experts). El modelo base DeepSeek-R1-Distill-Qwen-7B se obtiene por destilación a partir de DeepSeek-R1: el modelo profesor genera trayectorias de razonamiento que se usan para entrenar el alumno Qwen2-7B, de modo que este adquiere el estilo de cadena de pensamiento del R1 original (bloques de razonamiento explícito antes de la respuesta final). No se dispone en la información proporcionada de datos sobre volumen de tokens de entrenamiento, composición del dataset ni si se aplicaron etapas de RLHF o DPO en el destilado.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset de destilado ni si hubo fases de RLHF o DPO en el modelo base. Tampoco se documentan innovaciones adicionales como decodificación especulativa o atención lineal. La herramienta de conversión declarada es `mlx-lm` 0.31.x, y el resultado es compatible con el cargador estándar de MLX.
+Esta conversión de Outlier-Ai no reentrena ni modifica los pesos: aplica cuantización de 4 bits en formato MLX (safetensors, group size 64, simétrica) y repackagea tokenizer y plantilla de chat para compatibilidad con `mlx-lm` 0.31.x. La innovación técnica relevante es, por tanto, la propia cuantización MLX optimizada para Metal en Apple Silicon, que permite cargar el modelo en memoria unificada y ejecutarlo con el backend MLX; el formato de razonamiento del modelo base (thinking explícito) se conserva tal cual.
 
 ## Capacidades
 
-- Generación de texto con razonamiento explícito (chain-of-thought): el modelo produce trazas de pensamiento antes de la respuesta final.
-- Razonamiento matemático y resolución de problemas verbales, como los ejemplos de la model card (problema de las máquinas y los widgets, encuentro de trenes).
-- Razonamiento lógico y deductivo, incluidos problemas de cuadrícula lógica.
-- Generación de código, heredada de las capacidades del modelo base destilado.
-- Soporte de tool calling / function calling, según las etiquetas del repositorio.
-- Conversación multi-turno con plantilla de chat propia (`chat_template.jinja`).
-- Capacidades multilingües en diez idiomas: inglés, chino, francés, español, portugués, alemán, ruso, japonés, coreano y árabe.
-- Ejecución totalmente offline y on-device en Apple Silicon, sin llamadas a API ni telemetría de nube.
+- Generación de texto autoregresiva con razonamiento paso a paso (chain-of-thought / thinking) antes de la respuesta final.
+- Resolución de problemas matemáticos y lógicos de tipo word problem, lógica de cuadrícula y cálculo multi-paso.
+- Generación y explicación de código, con soporte para razonamiento sobre fragmentos existentes.
+- Conversación multi-turno (chat) con plantilla de chat incluida (`chat_template.jinja`).
+- Soporte de function calling / tool calling (etiquetado en la model card como `function-calling`).
+- Capacidades multilingües declaradas para en, zh, fr, es, pt, de, ru, ja, ko y ar.
+- Ejecución local y offline, sin nube ni claves de API, en macOS sobre Apple Silicon (M1, M2, M3, M4).
+- Compatible con el ecosistema `mlx-lm` y con la app Outlier para Mac, que puede cargar cualquier conversión MLX compatible.
 
 ## Casos de uso
 
-- Asistente de razonamiento offline en macOS: un desarrollador puede cargar el modelo con `mlx-lm` y resolver problemas de lógica o matemáticas sin enviar datos a ningún servidor, gracias a los 4,3 GB de pesos cuantizados que caben en la memoria unificada de un Mac moderno.
-- Tutor de matemáticas y ciencias: el modo thinking permite mostrar el desarrollo paso a paso de un problema, útil en herramientas educativas locales que necesitan explicar el razonamiento y no solo la respuesta.
-- Automatización de scripts y CLI en entornos sin conectividad: al soportar function calling y ejecutarse vía `mlx-lm`, puede integrarse en herramientas de terminal que generen comandos o código a partir de lenguaje natural en máquinas aisladas.
-- Prototipado de agentes multi-paso en local: la combinación de chain-of-thought y tool calling permite construir bucles de razonamiento-acción para tareas de investigación o extracción de datos, con la ventaja de la privacidad y la ausencia de coste por token.
-- Procesamiento de documentos confidenciales: contratos, informes médicos o datos financieros pueden analizarse en el propio portátil, sin salir del dispositivo, aprovechando el soporte multilingüe en español, francés, alemán y otros idiomas.
-- Generación de código en el editor: integrable en plugins locales de macOS que autocompleten funciones o expliquen errores, con latencia aceptable en chips M-series y sin depender de servicios externos.
-- Chat conversacional privado: la aplicación Outlier permite usar el modelo como asistente de escritorio con historial multi-turno, sin cuotas de uso ni claves de API.
+- Asistente de razonamiento matemático local: para resolver problemas de álgebra, aritmética y lógica mostrando el desarrollo paso a paso; adecuado porque el modelo destilado de R1 está entrenado para exponer cadenas de pensamiento antes de responder.
+- Tutor de programación offline en un Mac: para explicar errores de compilación, proponer refactorizaciones y razonar sobre código sin enviar el código a un servicio en la nube; encaja por su soporte de código y su ejecución 100% local.
+- Automatización de tareas de análisis con tool calling: para integrar el modelo en un script que invoque funciones locales (lectura de ficheros, cálculos, consultas a una base de datos) y encadene varios pasos de razonamiento; el etiquetado `function-calling` y el formato de chat lo permiten.
+- Prototipado de agentes multi-paso en estaciones de trabajo Apple: para construir pipelines que alternan pensamiento, llamada a herramienta y verificación; útil porque el modelo produce trazas de razonamiento intermedias que pueden registrarse y auditarse.
+- Procesamiento de documentación multilingüe: para resumir y responder preguntas sobre textos en inglés, chino, francés, español, portugués, alemán, ruso, japonés, coreano o árabe, aprovechando la cobertura multilingüe declarada.
+- Evaluación de calidad de razonamiento en local antes de desplegar en servidor: para comparar respuestas del modelo 4-bit MLX con las del modelo base sin cuantizar y decidir si la pérdida de precisión por cuantización es aceptable en el caso de uso.
+- Herramienta educativa en aulas con portátiles Mac: para demostrar cómo funciona un modelo de razonamiento paso a paso en un entorno sin conexión, con coste de hardware contenido (8-16 GB de RAM unificada).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a `outlier.host/benchmarks` para cifras de MMLU, HumanEval y tok/s en Macs M-series con procedencia completa, pero esos datos no se incluyen en el material proporcionado. No se inventan cifras.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a `outlier.host/benchmarks` para cifras de MMLU, HumanEval y tok/s en Mac serie M, pero esos datos no están incluidos en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el repositorio ocupa 4,3 GB en disco; en inferencia se necesita espacio adicional para caché KV y buffers, por lo que se recomienda un mínimo de 8 GB de memoria unificada y 16 GB para contextos largos.
-- GPU compatibles: Apple Silicon exclusivamente (M1, M2, M3, M4), incluidos MacBook Air, MacBook Pro, Mac mini y Mac Studio. No es compatible con CUDA ni con GPUs NVIDIA o AMD.
-- Cabe en GPU consumer: sí, en cualquier Mac con chip M-series y al menos 8 GB de memoria unificada.
-- Opciones de despliegue: `mlx-lm` 0.31.x (CLI y API Python), aplicación Outlier para macOS (instalable vía `brew install --cask outlier-host/tap/outlier`).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM/RAM unificada estimada: el repositorio pesa 4,3 GB en safetensors 4-bit, por lo que la inferencia requiere aproximadamente 5-6 GB de memoria unificada contando overhead de contexto y runtime; se recomienda un mínimo de 8 GB de RAM unificada y 16 GB para contextos largos o ejecución concurrente.
+- GPU recomendadas: Apple Silicon M1, M2, M3 y M4 (incluidos MacBook Air, MacBook Pro, Mac mini y Mac Studio); el backend es Metal vía MLX, no CUDA, por lo que GPUs NVIDIA (A100, H100, RTX 4090) no son el objetivo de esta conversión.
+- Cabe en GPU de consumo: sí, en cualquier Mac Apple Silicon con 8 GB o más de memoria unificada; en equipos de 8 GB conviene limitar la longitud de contexto.
+- Opciones de despliegue: `mlx-lm` 0.31.x (CLI `python -m mlx_lm.generate` o API Python `load`/`generate`), app Outlier para macOS (instalable vía `brew install --cask outlier-host/tap/outlier`); no está pensado para vLLM, TGI ni llama.cpp/Ollama en esta conversión concreta.
+- Latencia y throughput: no disponible en la información proporcionada; la model card remite a la página de benchmarks del autor para tok/s en Mac serie M.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | DeepSeek-R1-Distill-Qwen-7B-MLX-4bit (este) | 7,6B | no disponible | MLX 4-bit safetensors | MIT | Hugging Face, app Outlier |
-| DeepSeek-R1-Distill-Qwen-14B-MLX-4bit (Outlier-Ai) | 14B (aprox.) | no disponible | MLX 4-bit safetensors | MIT (heredada) | Hugging Face |
-| DeepSeek-R1-Distill-Llama-8B-MLX-4bit (Outlier-Ai) | 8B (aprox.) | no disponible | MLX 4-bit safetensors | MIT (heredada) | Hugging Face |
-| DeepSeek-R1-Distill-Qwen-7B (original) | 7,6B | no disponible | safetensors BF16 | MIT | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B (base) | 7,6B | no disponible | safetensors (BF16/FP16) | MIT | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-14B-MLX-4bit (Outlier-Ai) | 14B aprox. | no disponible | MLX 4-bit safetensors | MIT | Hugging Face |
+| DeepSeek-R1-Distill-Llama-8B-MLX-4bit (Outlier-Ai) | 8B aprox. | no disponible | MLX 4-bit safetensors | MIT | Hugging Face |
 
-La comparativa se limita a la familia de destilados de R1 y a las conversiones del mismo autor; no se dispone de datos de rendimiento comparado en la información proporcionada.
+La comparación de rendimiento entre estas variantes no está disponible en la información proporcionada; las cifras de benchmarks del autor no se incluyen en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Modelo cuantizado a 4 bits: la cuantización puede degradar ligeramente la precisión en tareas de razonamiento matemático y código frente al modelo original en BF16.
-- Solo Apple Silicon: no puede ejecutarse en GPUs NVIDIA, AMD ni en CPU x86 mediante MLX; para otros entornos hay que usar el modelo base o conversiones GGUF.
-- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en dominios factuales y en cadenas de razonamiento largas donde el modelo puede desviarse.
-- Sesgos heredados del modelo base y de sus datos de entrenamiento; no se documentan mitigaciones específicas en esta conversión.
-- Longitud de contexto no documentada en la información disponible; conviene verificar la configuración de `config.json` antes de usarlo con prompts largos.
-- El modo thinking genera trazas extensas que aumentan el consumo de tokens y la latencia; en producción puede requerir control explícito del presupuesto de razonamiento.
-- Licencia MIT heredada del modelo base, lo que permite uso comercial, pero se recomienda consultar la model card original de DeepSeek para condiciones canónicas.
-- Repositorio con muy pocas descargas (38) y sin likes en el momento de la consulta; validar la integridad de los pesos antes de desplegarlo en producción.
-- La model card incluye promoción de la aplicación Outlier (versión Pro de pago único de 49 USD); es material comercial, no una especificación técnica.
+- La cuantización a 4 bits puede degradar la precisión del razonamiento y del código respecto al modelo base sin cuantizar; conviene validar en el caso de uso concreto antes de producción.
+- Riesgo de alucinación inherente a modelos generativos, especialmente en respuestas factuales y en cadenas de razonamiento largas donde un paso erróneo puede propagarse.
+- El modelo base es un destilado de R1 y puede producir cadenas de pensamiento excesivamente largas, aumentando latencia y consumo de contexto; no hay datos de longitud de contexto en la información proporcionada.
+- La cobertura multilingüe está declarada pero no cuantificada; el rendimiento en idiomas distintos del inglés y el chino puede ser inferior y no se dispone de métricas al respecto.
+- Licencia MIT heredada del modelo base, que permite uso comercial; aun así, debe consultarse la model card original de DeepSeek para cualquier restricción canónica adicional.
+- Esta conversión solo cambia el formato en disco: no incluye garantías de soporte, y la propia model card indica que las cifras citadas provienen de experimentos internos y no de tests de release del autor.
+- El despliegue está limitado al ecosistema MLX/Apple Silicon; no es directamente utilizable en servidores CUDA ni en pipelines basados en vLLM, TGI o llama.cpp sin reconversión.
+- La model card incluye contenido promocional de la app Outlier y precios; no debe interpretarse como aval técnico del modelo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
-- Conversión hermana 14B: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-14B-MLX-4bit
-- Conversión hermana Llama-8B: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Llama-8B-MLX-4bit
-- Conversión hermana Qwen-32B: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-32B-MLX-4bit
-- Outlier-Core-27B: https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
-- Outlier-Nano-4B: https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
-- Aplicación Outlier: https://outlier.host/
-- Benchmarks declarados por el autor: https://outlier.host/benchmarks
+- App Outlier: https://outlier.host/
+- Benchmarks del autor: https://outlier.host/benchmarks
+- Conversión DeepSeek-R1-Distill-Qwen-32B MLX 4-bit: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-32B-MLX-4bit
+- Conversión DeepSeek-R1-Distill-Llama-8B MLX 4-bit: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Llama-8B-MLX-4bit
+- Conversión DeepSeek-R1-Distill-Qwen-14B MLX 4-bit: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-14B-MLX-4bit
+- Outlier-Core-27B MLX 4-bit: https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
+- Outlier-Nano-4B MLX 4-bit: https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit

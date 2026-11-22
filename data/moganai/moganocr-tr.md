@@ -2,95 +2,96 @@
 
 ## Resumen
 
-MoganOCR-TR es un modelo de visión-lenguaje especializado en OCR y comprensión de documentos, desarrollado por el equipo moganai. Se trata de un ajuste fino completo (incluido el codificador visual) de Qwen3.5-2B, con 2.213.241.664 parámetros. Su tarea es convertir una imagen de página en Markdown en orden de lectura, representando tablas como HTML, fórmulas como LaTeX y cabeceras/pies de página con etiquetas `<header>` y `<footer>`.
+MoganOCR-TR es un modelo de visión-lenguaje especializado en OCR y comprensión de documentos, desarrollado por el equipo de moganai (Aleyna Tasdemir, Furkan Yilmaz y Muhammed Faruk Gozay). Se trata de un fine-tune completo de Qwen/Qwen3.5-2B, incluyendo el codificador visual, entrenado sobre 357.763 páginas de las cuales el 77% son turcas. El modelo recibe una imagen de página y devuelve el contenido completo en orden de lectura como Markdown, con tablas en HTML y fórmulas en LaTeX.
 
-El modelo está orientado al turco (el 77 % de sus 357.763 páginas de entrenamiento son turcas), aunque declara soporte también para inglés. Es relevante porque demuestra que un modelo de 2B parámetros, entrenado específicamente para una tarea y un idioma, puede competir con modelos generales cientos de veces más grandes: en TurkishOCR-Bench obtiene 88,0, quinto de 18 modelos y primero entre los modelos específicos de OCR.
+Su relevancia radica en que es un modelo de solo 2.213 millones de parámetros que, según la model card, alcanza 89,9 puntos en TurkishOCR-Bench (cuarto de 18 modelos y primero entre los modelos específicos de OCR), por delante de modelos generales cientos de veces más grandes. Incorpora además una cabeza MTP (multi-token prediction) entrenada específicamente para el modelo que acelera la decodificación especulativa en vLLM.
 
-La arquitectura subyacente es la de Qwen3.5-2B (modelo multimodal image-text-to-text), con licencia Apache 2.0, pesos en safetensors y compatibilidad con transformers y vLLM. El prompt de uso es fijo y en turco ("Sayfayı markdown olarak yaz."), con decodificación greedy y thinking desactivado.
+El modelo está pensado para pipelines de digitalización documental en turco e inglés, con licencia Apache 2.0 y pesos en safetensors compatibles con transformers y vLLM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje (VLM) basada en Qwen3.5-2B, ajuste fino completo incluido el codificador visual |
+| Arquitectura | Vision-lenguaje (VLM) basada en Qwen3.5-2B con codificador visual; fine-tune completo |
 | Parametros totales | 2.213.241.664 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 32.768 tokens (configurado en vLLM con `--max-model-len 32768`) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Turco (tr), ingles (en) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | 32.768 tokens (configuración recomendada en vLLM con `--max-model-len 32768`) |
+| Tipos de cuantizacion | no disponible (el repo distribuye safetensors en bfloat16; no se documentan GGUF ni otras cuantizaciones) |
+| Idiomas soportados | Turco (tr), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
+| Formato de pesos | safetensors (incluye `mtp.safetensors` para decodificación especulativa) |
 
 ## Arquitectura y entrenamiento
 
-MoganOCR-TR es un ajuste fino completo de Qwen3.5-2B, un modelo multimodal de tipo image-text-to-text, incluyendo el codificador visual. El entrenamiento se realizó sobre 357.763 páginas, de las cuales el 77 % son turcas. Las imágenes se reducen a aproximadamente 1 millón de píxeles (unos 1.000 tokens visuales), que es la resolución con la que se entrenó el modelo.
+El modelo es un transformer multimodal de tipo image-text-to-text construido sobre Qwen3.5-2B, con el codificador visual incluido en el fine-tune. El procesador acepta imágenes de hasta 4.194.304 píxeles por defecto, de modo que una página A4 a 200 dpi entra sin reescalar y consume aproximadamente 3.800 tokens visuales. El prompt de inferencia es fijo: `Sayfayı markdown olarak yaz.` ("Escribe la página como markdown"), con decodificación greedy, thinking desactivado (valor por defecto de la plantilla de chat) y hasta 8.000 tokens nuevos.
 
-El modelo genera la página completa en orden de lectura con un formato de salida estructurado: Markdown para texto, encabezados y listas (un párrafo por línea y unión de palabras con guion al final de línea), HTML `<table>` para tablas con `rowspan`/`colspan` para celdas combinadas, LaTeX para fórmulas (en línea con `$...$` y en bloque con `$$...$$`), y etiquetas `<header>`/`<footer>` para cabeceras y pies de página. Transcribe todo lo visible, incluidos números de página, notas al pie y marcas de agua, y respeta la ortografía original de la escritura manual sin corregirla. No se detalla en la información disponible si hubo RLHF, DPO u otras etapas de alineación.
+El entrenamiento se realizó sobre 357.763 páginas, de las cuales el 77% son turcas. No se detalla en la información disponible la composición exacta del dataset, el número total de tokens de entrenamiento ni si se aplicaron fases de RLHF o DPO. La innovación técnica destacable es la inclusión de una cabeza MTP entrenada para este modelo, que habilita decodificación especulativa en vLLM con `--speculative-config '{"method": "mtp", "num_speculative_tokens": 3}'`, con una aceleración de 1,73× en peticiones individuales y 1,22× con 64 peticiones concurrentes sobre RTX PRO 6000.
 
 ## Capacidades
 
-- OCR de página completa: convierte una imagen de documento en Markdown en orden de lectura.
-- Comprensión de documentos: maneja documentos académicos, tablas, fórmulas, escaneos, boletines oficiales antiguos y nuevos, libros, recibos/facturas/formularios, diapositivas y escritura manual.
-- Tablas: salida en HTML `<table>` con celdas combinadas mediante `rowspan` y `colspan`.
-- Fórmulas: salida en LaTeX, tanto en línea como en bloque.
-- Cabeceras y pies de página: marcados explícitamente con `<header>` y `<footer>`.
-- Transcripción literal: incluye números de página, notas al pie, marcas de agua y errores ortográficos de la escritura manual.
-- Multilingüe limitado: turco e inglés.
-- Integración conversacional: pipeline image-text-to-text con plantilla de chat; thinking desactivado por defecto.
-- No se menciona soporte de tool calling, function calling ni capacidades de agente en la información disponible.
+- OCR de página completa: transcribe todo el contenido visible en orden de lectura, incluyendo números de página, notas al pie y marcas de agua.
+- Salida estructurada en Markdown: un párrafo por línea y unión de palabras cortadas por guion al final de línea.
+- Tablas en HTML `<table>` con celdas combinadas representadas mediante `rowspan` y `colspan`.
+- Fórmulas en LaTeX, tanto en línea (`$...$`) como en bloque (`$$...$$`).
+- Detección y marcado de encabezados y pies de página repetidos mediante `<header>...</header>` y `<footer>...</footer>`.
+- Transcripción de manuscrito tal como está escrito, sin corregir las faltas de ortografía del autor.
+- Procesamiento de documentos escaneados, incluyendo boletines oficiales antiguos (ejemplo de 2001 en la model card).
+- Capacidades multilingües limitadas a turco e inglés.
+- No se documenta soporte de tool calling, function calling, agentes ni modos de razonamiento extendido en la información disponible.
 
 ## Casos de uso
 
-- Digitalización de boletines oficiales: el modelo puede procesar páginas escaneadas del Boletín Oficial turco (incluidas de 2001) y convertirlas en Markdown estructurado, lo que facilita su indexación y búsqueda posterior.
-- Extracción de tablas de documentos académicos: al generar HTML con `rowspan`/`colspan`, permite reconstruir tablas complejas de artículos y conservar la estructura de celdas combinadas en bases de datos o visores.
-- Conversión de fórmulas a LaTeX: adecuado para digitalizar literatura científica y técnica, generando fórmulas en línea y en bloque listas para su uso en editores LaTeX o sistemas de publicación.
-- Procesamiento de facturas, recibos y formularios: el modelo está entrenado con esta categoría de documentos, por lo que puede transcribir campos y contenido visible a Markdown para su posterior validación o extracción.
-- Reconocimiento de escritura manual: transcribe manuscritos tal como están escritos, sin corregir errores, lo que resulta útil en archivos históricos o documentos personales donde se requiere fidelidad literal.
-- Digitalización de libros y diapositivas: con contexto de 32.768 tokens y hasta 8.000 tokens de salida, puede volcar páginas completas de libros o diapositivas en un solo paso.
-- Pipeline de OCR en producción con vLLM: el modelo se sirve con `vllm serve` y una API compatible con OpenAI, lo que permite integrarlo en flujos de ingesta documental a escala con decodificación greedy y temperatura 0 para resultados deterministas.
+- Digitalización de boletines oficiales: el modelo transcribe páginas escaneadas del Boletín Oficial turco, incluidas digitalizaciones antiguas, preservando el orden de lectura y el marcado de encabezados y pies de página, lo que facilita la indexación y búsqueda posterior.
+- Extracción de tablas financieras y administrativas: convierte tablas complejas con celdas combinadas en HTML con `rowspan` y `colspan`, apto para alimentar pipelines de extracción de datos estructurados sin post-procesado manual de la estructura.
+- Conversión de artículos académicos a Markdown: procesa páginas con fórmulas en bloque y en línea, generando LaTeX listo para publicarse en sistemas de documentación técnica o repositorios tipo wiki.
+- Procesamiento de facturas y formularios: al transcribir todo el contenido visible en orden de lectura, permite extraer campos de recibos, facturas y formularios para sistemas de contabilidad o gestión documental.
+- Accesibilidad documental: la salida Markdown estructurada puede alimentar lectores de pantalla y motores de texto a voz para hacer accesibles documentos turcos escaneados.
+- Digitalización de libros y manuscritos: la transcripción literal del manuscrito, sin corrección ortográfica, es adecuada para archivos y estudios filológicos que necesitan fidelidad al original.
+- Ingesta en RAG sobre corpus turco: la salida en Markdown con tablas y fórmulas preservadas permite trocear y vectorizar documentos turcos manteniendo la estructura semántica.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado |
-|---|---|
-| TurkishOCR-Bench (TOB) | 88,0 (5.º de 18 modelos; 1.º entre modelos específicos de OCR; 3.º en texto turco solo) |
-| Intervalo de confianza al 95 % (TOB) | 85,7–89,9 |
+Según la model card, MoganOCR-TR obtiene una puntuación TOB de 89,9 en TurkishOCR-Bench, cuarto de 18 modelos y primero entre los modelos específicos de OCR. En texto turco exclusivamente queda segundo, solo por detrás de GPT-6.1 Sol. El benchmark consta de 488 páginas difíciles de 368 documentos en 10 categorías (académico, tabla, fórmula, escaneado, Boletín Oficial antiguo y nuevo, libro, recibo/factura/formulario, diapositiva y manuscrito), con verdad de referencia verificada por humanos y 115.116 pruebas unitarias. La métrica principal es TOB = (Text_TR + Table + Formula) / 3, con tablas evaluadas por TEDS, fórmulas en bloque por CDM y Text_TR como media geométrica de precisión en pruebas unitarias y usabilidad de página en texto turco.
 
-TurkishOCR-Bench consta de 488 páginas difíciles de 368 documentos en 10 categorías (académico, tablas, fórmulas, escaneado, Boletín Oficial antiguo y nuevo, libro, recibo/factura/formulario, diapositiva, escritura manual), con verdad de referencia verificada por humanos y 115.116 pruebas unitarias. La puntuación principal TOB = (Text_TR + Table + Formula) / 3, donde las tablas se miden con TEDS, las fórmulas en bloque con CDM y Text_TR como media geométrica de la precisión en pruebas unitarias y la usabilidad de página en texto turco. La diferencia con DeepSeek-v4.1-flash, una posición por encima, no es estadísticamente significativa. No se han publicado en la información disponible resultados de benchmarks generales como MMLU, HumanEval o GSM8K.
+No se han publicado en la información disponible los valores numéricos desglosados por categoría ni los resultados individuales de los otros 17 modelos. Las páginas del benchmark se eligieron por ser difíciles para los modelos, por lo que las puntuaciones comparan modelos y no representan la precisión esperable en un documento medio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 2.213 millones de parámetros en bfloat16, el peso de los pesos ronda los 4,4 GB (tamaño del repositorio), a lo que hay que sumar la caché KV y el procesamiento de imagen.
-- GPU recomendadas: no especificadas en la información disponible; por tamaño, el modelo es apto para GPU de consumo con suficiente VRAM.
-- Cabe en GPU de consumo: probable por el tamaño de 2B parámetros, aunque no se confirma en la documentación.
-- Opciones de despliegue: vLLM (`vllm serve moganai/MoganOCR-TR --max-model-len 32768 --limit-mm-per-prompt '{"image": 1, "video": 0}'`) y Transformers (`AutoModelForImageTextToText` con `dtype="bfloat16"` y `device_map="auto"`).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 4,4 GB solo para pesos (2.213 millones de parámetros), más memoria para el codificador visual, caché KV y hasta 8.000 tokens de salida; el repo ocupa 4,6 GB.
+- Cabe en GPU de consumo: una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente para inferencia en bfloat16 con margen amplio; GPUs de 8-12 GB podrían requerir cuantización, no documentada en la información disponible.
+- GPUs recomendadas para producción: RTX PRO 6000 (usada en las mediciones de MTP), A100 y H100 para despliegues con alta concurrencia.
+- Despliegue con vLLM: comando documentado `vllm serve moganai/MoganOCR-TR --max-model-len 32768 --limit-mm-per-prompt '{"image": 1, "video": 0}'`.
+- Despliegue con transformers: `AutoModelForImageTextToText` y `AutoProcessor` en bfloat16 con `device_map="auto"`.
+- Aceleración con MTP: en vLLM con `--speculative-config '{"method": "mtp", "num_speculative_tokens": 3}'`; 1,73× más rápido en peticiones individuales y 1,22× con 64 peticiones concurrentes sobre RTX PRO 6000.
+- No se documentan opciones para llama.cpp, Ollama ni TGI en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento en TurkishOCR-Bench | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoganOCR-TR | 2,21 B | 32.768 | 88,0 (TOB) | Apache 2.0 | Hugging Face |
-| DeepSeek-v4.1-flash | No disponible | No disponible | Una posición por encima (diferencia no significativa) | No disponible | No disponible |
-| Modelos generales del benchmark (16 restantes) | Hasta cientos de veces mayores | No disponible | Por debajo o alrededor de MoganOCR-TR según el ranking | No disponible | No disponible |
+| MoganOCR-TR | 2,21 B | 32.768 tokens | OCR especializado turco/inglés | Apache 2.0 | Hugging Face, transformers, vLLM |
+| GPT-6.1 Sol | no disponible | no disponible | Modelo general | propietaria | API (según la model card, primero en texto turco) |
+| Qwen/Qwen3.5-2B | 2 B (aprox.) | no disponible | Modelo base multimodal general | no disponible en la información | Hugging Face |
+| Otros 16 modelos de TurkishOCR-Bench | no disponible | no disponible | generales y OCR | no disponible | no disponible |
 
-La información proporcionada solo detalla el ranking de 18 modelos en TurkishOCR-Bench sin desglosar nombres, parámetros ni licencias de los competidores, salvo la mención a DeepSeek-v4.1-flash. No hay datos suficientes para una comparativa más detallada.
+La model card indica que MoganOCR-TR supera en TOB a modelos generales cientos de veces más grandes y queda por detrás de GPT-6.1 Sol únicamente en texto turco. No se dispone de los nombres ni las cifras individuales del resto de participantes del benchmark en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documentan sesgos específicos; el entrenamiento está dominado por turco (77 %), lo que puede limitar el rendimiento en otros idiomas.
-- Riesgo de alucinación: no se cuantifica; como modelo generativo, puede producir transcripciones incorrectas en páginas fuera de distribución.
-- Limitaciones de idioma: solo declara turco e inglés; no se garantiza calidad en otras lenguas.
-- Limitaciones de contexto: el prompt es fijo y en turco ("Sayfayı markdown olarak yaz."); se recomienda thinking desactivado, decodificación greedy y hasta 8.000 tokens nuevos.
-- Resolución: las páginas se reducen a aproximadamente 1 millón de píxeles (unos 1.000 tokens visuales); documentos con texto muy pequeño podrían perder detalle.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de Qwen3.5-2B como modelo base.
-- Caveat de evaluación: las páginas de TurkishOCR-Bench se eligieron por ser difíciles, por lo que las puntuaciones no reflejan la precisión esperable en un documento medio; además, el equipo que construyó el benchmark es el mismo que entrenó el modelo, aunque se verificó que no hubiera solapamiento con el conjunto de entrenamiento y se publican las salidas crudas de los 18 modelos.
-- Formato de salida rígido: cualquier contenido visible se transcribe literalmente, incluidos errores ortográficos de la escritura manual, lo que puede no ser deseable en todos los flujos.
+- Riesgo de repetición: en algunas páginas el modelo puede quedarse repitiendo el mismo texto hasta alcanzar el límite de tokens; la model card sugiere `repetition_penalty=1.15` como mitigación (los resultados publicados se obtuvieron sin ella).
+- Sesgo de evaluación: el modelo fue construido por el mismo equipo que creó TurkishOCR-Bench; aunque se verificó que no hubiera solapamiento entre entrenamiento y benchmark y todos los modelos se puntúan con reglas deterministas, existe un conflicto de interés inherente.
+- Cobertura lingüística limitada a turco e inglés; no se documenta rendimiento en otras lenguas.
+- El prompt de inferencia es fijo (`Sayfayı markdown olarak yaz.`); no se documenta comportamiento con otras instrucciones.
+- Transcripción literal del manuscrito sin corrección ortográfica, lo que puede no ser deseable en flujos que esperan texto normalizado.
+- Thinking debe permanecer desactivado (valor por defecto de la plantilla de chat); no se documenta el efecto de activarlo.
+- No se documentan tipos de cuantización ni formatos GGUF, lo que limita el despliegue en hardware de gama baja sin conversión manual.
+- Licencia Apache 2.0 permite uso comercial, pero no se documentan garantías ni evaluación de sesgos sociales del modelo base.
+- No se publican cifras de benchmarks desglosadas por categoría ni comparativas numéricas con modelos concretos, más allá del ranking TOB.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/moganai/MoganOCR-TR
-- Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Benchmark TurkishOCR-Bench (Space): https://huggingface.co/spaces/moganai/TurkishOCR-Bench
-- Apoyo al autor (Buy Me a Coffee): https://buymeacoffee.com/moganai
-- Cita: Tasdemir, Yilmaz y Gozay (2026), "MoganOCR-TR and TurkishOCR-Bench: A Vision-Language OCR Model and Page-Level Evaluation Set for Turkish Document Parsing".
+- Apoyo al autor: https://buymeacoffee.com/moganai
+- Cita: Tasdemir, A., Yilmaz, F., Gozay, M. F. (2026). *MoganOCR-TR and TurkishOCR-Bench: A Vision-Language OCR Model and Page-Level Evaluation Set for Turkish Document Parsing*.

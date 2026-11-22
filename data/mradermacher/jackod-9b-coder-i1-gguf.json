@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
-      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
-      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
-    },
-    {
-      "title": "Particulier - impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/particulier",
-      "snippet": "May 27, 2026 · À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai …"
-    },
-    {
-      "title": "Accueil impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/accueil",
-      "snippet": "Suite aux incendies survenus sur le territoire durant l'été, différentes mesures d'accompagnement ont été mises en place pour les …"
-    },
-    {
-      "title": "impots.gouv.fr - Particuliers | authentification",
-      "url": "https://cfspart.impots.gouv.fr/",
-      "snippet": "Avec vos identifiants impots.gouv.fr, vous pouvez effectuer des démarches administratives sur des sites partenaires de …"
-    },
-    {
-      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
-      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
-      "snippet": "Aug 18, 2016 · A quoi sert un avis d'impôt sur les revenus ? Toute personne imposable à l'impôt sur les revenus doit souscrire une …"
-    }
-  ]
+  "sources": []
 }

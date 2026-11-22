@@ -2,90 +2,93 @@
 
 ## Resumen
 
-Este repositorio contiene la cuantización GGUF del modelo Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16, preparada por mradermacher. Se trata de una versión "uncensored" (sin censura) del modelo Qwen3.8-27B, que ha sido sometida a un proceso de ablación de capas (abliteration) para eliminar los mecanismos de rechazo de respuestas, junto con un ajuste "aggressive" que reduce aún más las restricciones. El modelo base es un fine-tune de AMAImedia sobre Qwen3.8, que incorpora visión, tool calling y un contexto de 262K tokens.
+Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-i1-GGUF es una cuantizacion en formato GGUF del modelo AMAImedia/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16, publicada por el usuario mradermacher. Se trata de un derivado de la familia Qwen (etiquetado por el autor como qwen3.5, qwen3.6 y qwen3.8) con 27.320.697.856 parametros totales, afinado para eliminar restricciones de moderacion ("uncensored") y con un estilo de respuesta descrito como "agresivo". El repositorio incluye unicamente pesos cuantizados con imatrix, no los pesos originales en BF16.
 
-La relevancia de este modelo radica en su naturaleza de investigación: permite estudiar el comportamiento de modelos de lenguaje sin los mecanismos de seguridad estándar, lo que resulta útil para analizar sesgos, alucinaciones y los límites de la alineación. El repositorio actual incluye únicamente el archivo imatrix para crear cuantizaciones personalizadas; las cuantizaciones estáticas están disponibles en el repositorio hermano Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-GGUF.
+El interes practico de esta ficha reside en que es una de las pocas distribuciones GGUF listas para usar de un modelo de ~27B con licencia Apache 2.0 y soporte declarado para mas de 100 idiomas. Al estar en formato GGUF, puede ejecutarse con llama.cpp u Ollama en hardware de consumo, lo que lo hace accesible para experimentacion local sin infraestructura de datacenter.
+
+No obstante, la model card es extremadamente escasa: no documenta arquitectura interna, longitud de contexto, datos de entrenamiento ni resultados de benchmarks. Todo lo que se indica a continuacion proviene de los metadatos del repositorio y de la propia model card; cualquier dato ausente se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.8, variante 27B) |
-| Parametros totales | 27 mil millones (estimado, no confirmado en la ficha) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens (262K, segun descripcion del modelo base) |
-| Tipos de cuantizacion | imatrix (este repo); Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (repo estatico) |
-| Idiomas soportados | en, ru, zh, ja, kk, vi |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (imatrix) |
+| Arquitectura | no disponible (etiquetada como qwen3.5/qwen3.6/qwen3.8; se asume transformer decoder-only, sin confirmacion) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | mas de 100, incluyendo en, ru, zh, ja, kk, vi, es, de, fr, ar, hi, ko, pt, tr, uk, entre otros |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado con imatrix); el modelo base esta en BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16 es un fine-tune de AMAImedia sobre la arquitectura Qwen3.8, que a su vez es una evolución de la familia Qwen3. Incorpora un "vision tower" para procesamiento multimodal y un cabezal MTP (Multi-Token Prediction) que permite predecir varios tokens a la vez, mejorando la velocidad de decodificación. El proceso de "abliteration" elimina selectivamente las direcciones de activación asociadas al rechazo de respuestas, manteniendo intactas las capacidades generales del modelo.
+No se dispone de informacion sobre la arquitectura interna del modelo base. La model card del repositorio cuantizado no incluye detalles sobre numero de capas, dimensiones ocultas, mecanismo de atencion ni tipo de positional encoding. Las etiquetas del repositorio mencionan "mtp" (multi-token prediction) y "noesis-repack", lo que sugiere que el modelo base emplea alguna forma de prediccion multi-token y un proceso de reempaquetado propio del autor original, pero no se documenta en que consiste.
 
-El entrenamiento del modelo base incluye una fase de ajuste con datos sintéticos y reales orientados a reducir la tasa de rechazo, logrando un 0% de over-refusal en XSTest y un 0-6% de rechazo en el suite A/B, sin pérdida medible de capacidad. El modelo conserva el contexto completo de 262K tokens, el tool calling y el modo de razonamiento (thinking) del Qwen3.8 original. El repositorio actual solo contiene el archivo imatrix, que se utiliza como dataset de calibración para generar cuantizaciones de alta calidad.
+Tampoco hay datos sobre el corpus de entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO o fine-tuning supervisado. El nombre "Uncensored-Aggressive" indica un afinado orientado a reducir rechazos y adoptar un tono directo, pero se desconoce la metodologia. La cuantizacion i1 emplea ficheros imatrix generados por el cuantizador, un metodo habitual para preservar calidad en cuantizaciones de baja precision.
 
 ## Capacidades
 
-- Generación de texto sin restricciones de contenido: el modelo ha sido ablacionado para eliminar los mecanismos de rechazo, por lo que responde a practicamente cualquier consulta sin negarse.
-- Razonamiento multi-step: conserva el modo "thinking" del Qwen3.8, que permite al modelo razonar internamente antes de responder.
-- Tool calling / function calling: soporte completo para invocar herramientas externas, integrable en agentes y pipelines.
-- Capacidades multimodales: incluye un vision tower (mmproj) que permite procesar imagenes, aunque los archivos mmproj estan en el repositorio estatico.
-- Multilingue: soporta ingles, ruso, chino, japones, kazajo y vietnamita.
-- Contexto largo: ventana de 262K tokens, adecuada para documentos extensos y conversaciones multi-turno.
-- MTP (Multi-Token Prediction): decodificacion acelerada gracias a la prediccion multiple de tokens.
+- Generacion de texto conversacional multi-turno, segun la etiqueta "conversational" del repositorio.
+- Cobertura multilingue amplia: la model card lista mas de 100 codigos de idioma, incluidos espanol, ingles, ruso, chino, japones, arabe, hindi y la mayoria de lenguas europeas.
+- Respuestas sin filtros de moderacion aparentes, orientadas a contenido que los modelos alineados convencionales rechazarian.
+- Estilo de respuesta directo y "agresivo", segun la denominacion del autor.
+- Soporte de tool calling: no disponible (no se documenta).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
+- Capacidades de vision o audio: no disponible (no se documenta).
+- Modo thinking explicito: no disponible (no se documenta).
 
 ## Casos de uso
 
-- Investigacion academica sobre alineacion y seguridad: el modelo permite estudiar como se comportan los LLM sin mecanismos de rechazo, analizando sesgos, alucinaciones y la eficacia de la ablacion de capas. Se usaria con cargas de trabajo de evaluacion como XSTest o benchmarks de toxicidad.
-- Analisis de contenido sin filtros: para tareas de procesamiento de lenguaje natural que requieren analizar texto explicito o sensible (por ejemplo, deteccion de discursos de odio, analisis de narrativas extremistas) donde un modelo censurado perderia informacion.
-- Generacion de codigo en entornos controlados: el modelo mantiene las capacidades de programacion del Qwen3.8, por lo que puede usarse en pipelines de generacion de codigo donde se necesite evitar rechazos por contenido "peligroso" (por ejemplo, scripts de pentesting).
-- Desarrollo de agentes conversacionales sin restricciones: para prototipos de chatbots de rol o ficcion interactiva donde los usuarios esperan respuestas sin censura, siempre en entornos de investigacion.
-- Evaluacion de robustez de sistemas de moderacion: el modelo puede usarse como generador de contenido adversario para probar sistemas de filtrado y moderacion de contenido en plataformas.
-- Estudio de la degradacion post-ablacion: comparar el rendimiento de este modelo con el Qwen3.8 original en benchmarks estandar (MMLU, HumanEval, GSM8K) para medir el impacto de la ablacion en las capacidades generales.
+- Experimentacion con modelos sin alineacion: util para investigadores que estudian el efecto de eliminar el RLHF en el comportamiento del modelo, comparando respuestas frente a la version alineada equivalente.
+- Generacion creativa sin restricciones: escritura de ficcion con tematicas adultas, violencia narrativa o dialogos moralmente ambiguos que los modelos convencionales suelen rechazar.
+- Procesamiento multilingue en local: con mas de 100 idiomas declarados, sirve para tareas de traduccion o resumen en lenguas de bajos recursos (kazajo, amharico, umbundu) en entornos sin conexion.
+- Analisis de contenido sensible para moderacion: un modelo sin censura puede emplearse como clasificador de segundo nivel para detectar material toxico que otros modelos se niegan a procesar.
+- Despliegue en estaciones de trabajo con GPU de consumo: las cuantizaciones i1-Q4_K_M (16,9 GB) e i1-IQ4_XS (15,4 GB) caben en GPUs de 24 GB como la RTX 4090, permitiendo inferencia local de un modelo de 27B.
+- Red teaming y evaluacion de seguridad: sirve para generar ataques adversariales y prompts maliciosos con los que probar sistemas de defensa antes de desplegarlos en produccion.
+- Prototipado de chatbots de nicho: para comunidades o productos donde la politica de contenido es permisiva y se necesita un modelo que no bloquee conversaciones legitimas por falsos positivos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La descripcion del modelo base menciona "0% over-refusal en XSTest" y "0-6% refusal en el suite A/B", pero no se proporcionan metricas de rendimiento en tareas estandar como MMLU, HumanEval o GSM8K. Se recomienda consultar el repositorio del modelo base (AMAImedia/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16) para obtener datos de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para un modelo de 27B en GGUF, se estima:
-  - Q2_K: ~10-12 GB VRAM
-  - Q4_K_M: ~16-18 GB VRAM
-  - Q6_K: ~22-24 GB VRAM
-  - Q8_0: ~28-30 GB VRAM
-- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones Q4 o inferiores; A100 40/80 GB o H100 para cuantizaciones altas o contexto completo de 262K.
-- En consumer GPU: cabe en RTX 3090/4090 (24 GB) con cuantizaciones Q4 o inferiores y contexto reducido. Para contexto completo de 262K se necesitan GPUs profesionales o descarga a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con soporte GGUF), LM Studio, text-generation-webui.
-- Latencia y throughput: no disponible. Depende del hardware, la cuantizacion y el uso de MTP (que acelera la decodificacion).
+- VRAM estimada para inferencia: entre 11 GB (i1-Q2_K) y 22,5 GB (i1-Q6_K) solo para los pesos; hay que anadir el espacio para la cache KV, que depende de la longitud de contexto (no documentada).
+- Cuantizacion recomendada por el autor: i1-Q4_K_M (16,9 GB), descrita como "rapida y recomendada".
+- GPU de consumo: cabe en RTX 4090, RTX 3090 y RTX 4080 Super (24 GB y 16 GB respectivamente con cuantizaciones Q4 o inferiores); en GPUs de 12 GB solo entrarian las cuantizaciones Q2_K e IQ3 con contexto muy limitado.
+- GPU de datacenter: A100 40/80 GB, H100 y L40S admiten el modelo completo en BF16 o en cuantizaciones altas con contexto extendido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el repositorio esta etiquetado como "endpoints_compatible".
+- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16 (este) | 27B | 262K | Apache 2.0 | Abliterado, vision, MTP, tool calling |
-| Qwen3.8-27B-Uncensored (orcarouter) | 27B | 262K | Apache 2.0 | Abliterado, vision, MTP, tool calling |
-| Qwen3-32B (original) | 32B | 128K | Apache 2.0 | Modelo base sin ablacion, con censura estandar |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Uncensored-Aggressive-NOESIS (este) | 27,3B | no disponible | Apache 2.0 | GGUF (i1) | Sin benchmarks publicados; afinado sin censura |
+| Modelo base AMAImedia (BF16) | 27,3B | no disponible | Apache 2.0 | BF16 | Mismo modelo sin cuantizar; requiere ~55 GB en BF16 |
+| Qwen2.5-32B-Instruct | 32,5B | 131.072 tokens | Apache 2.0 | safetensors, GGUF | Referencia de la familia Qwen con benchmarks publicados |
+| Gemma 2 27B | 27B | 8.192 tokens | Gemma License | safetensors, GGUF | Tamano comparable; licencia mas restrictiva |
 
-La diferencia principal entre este modelo y el de orcarouter es el ajuste "Aggressive-NOESIS", que aplica una ablacion mas profunda y un reempaquetado NOESIS. Ambos mantienen las capacidades del Qwen3.8 original. El Qwen3-32B es el modelo comercial estandar, con mecanismos de seguridad intactos.
+La comparacion con Qwen2.5-32B-Instruct y Gemma 2 27B se ofrece por tamano y categoria, no por rendimiento medido: no existen datos que permitan afirmar que este modelo iguale o supere a esas referencias.
 
 ## Limitaciones y advertencias
 
-- Contenido sin filtrar: el modelo puede generar texto ofensivo, ilegal, peligroso o sexualmente explicito. No debe usarse en produccion sin sistemas de moderacion robustos.
-- Riesgo de alucinacion: al eliminar los mecanismos de rechazo, el modelo puede afirmar cosas falsas con mayor confianza, ya que no tiene el freno de "no se" o "no puedo ayudar con eso".
-- Sesgos amplificados: la ablacion puede eliminar tambien parte del entrenamiento de seguridad, lo que puede amplificar sesgos existentes en los datos de entrenamiento.
-- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero el autor del modelo base (AMAImedia) puede tener restricciones adicionales. Verificar la licencia del modelo base.
-- Contexto largo: aunque soporta 262K tokens, el uso de contexto completo requiere hardware de alta gama y puede degradar la calidad de las respuestas en los extremos de la ventana.
-- Sin garantias: este es un modelo de investigacion. No se proporcionan garantias de precision, seguridad o idoneidad para ningun proposito.
+- Ausencia total de benchmarks: no hay forma de verificar la calidad del modelo frente a alternativas; el afinado "uncensored" puede degradar capacidades de razonamiento e instruccion.
+- Riesgo elevado de alucinacion: los afinados agresivos sin alineacion tienden a reducir la cautela epistémica y a inventar datos con mayor confianza.
+- Contenido nocivo: al eliminar la moderacion, el modelo puede generar instrucciones peligrosas, discurso de odio o material ilegal; no es apto para aplicaciones orientadas al publico sin un filtro externo.
+- Contexto desconocido: no se documenta la ventana de contexto, lo que impide planificar aplicaciones de contexto largo.
+- Idiomas: aunque se declaran mas de 100, no hay evaluacion de calidad por idioma; el rendimiento en lenguas de bajos recursos puede ser muy inferior al del ingles.
+- Licencia: Apache 2.0 permite uso comercial, pero el responsable del despliegue asume toda la responsabilidad legal sobre el contenido generado.
+- Procedencia: el modelo base lo publica un usuario individual (AMAImedia), no el equipo oficial de Qwen; la nomenclatura "Qwen3.8" no corresponde a ninguna version oficial conocida y puede inducir a confusion.
+- Repositorio grande (218,6 GB) con multiples ficheros multi-parte; la descarga y el ensamblaje requieren seguir las instrucciones de llama.cpp.
 
 ## Enlaces
 
-- Repositorio GGUF (este): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-i1-GGUF
-- Repositorio GGUF estatico: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-i1-GGUF
 - Modelo base: https://huggingface.co/AMAImedia/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16
-- Repositorio de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-i1-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Blog sobre Qwen3.8-27B Uncensored: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
-- Blog sobre el GGUF abliterado: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
-- Modelo en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

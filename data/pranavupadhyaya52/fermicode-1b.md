@@ -2,96 +2,86 @@
 
 ## Resumen
 
-Fermicode-1B es un modelo de generacion de texto publicado en Hugging Face por el usuario pranavupadhyaya52 bajo el identificador `pranavupadhyaya52/Fermicode-1B`. Se distribuye como un checkpoint de la libreria `transformers` con pesos en formato `safetensors` y esta etiquetado con la arquitectura `llama`, lo que indica que sigue el esquema de transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU y atencion multi-cabeza, habitual en la familia Llama. El recuento real de parametros en los tensores safetensors es de 1.235.814.400 (aproximadamente 1,24 mil millones), coherente con un modelo de la clase 1B.
+Fermicode-1B es un modelo de lenguaje causal derivado de meta-llama/Llama-3.2-1B mediante un proceso de preentrenamiento continuado (continued pre-training, CPT). Lo desarrolla Pranav Upadhyaya y se distribuye en Hugging Face bajo licencia Llama 3.2. Con 1.235.814.400 par\u00e1metros totales y un repositorio de 2,5 GB en formato safetensors, es un modelo pequeno orientado a generacion de texto en ingles.
 
-La relevancia de este modelo es limitada en el momento de su publicacion: el repositorio registra cero descargas y cero likes, la model card es la plantilla autogenerada por Hugging Face sin contenido sustantivo y no se declara licencia, idiomas, datos de entrenamiento ni procedimiento de alineamiento. Se desconoce si se trata de un modelo entrenado desde cero, de un fine-tuning de una base existente (por ejemplo, Llama 3.2 1B o TinyLlama) o de un checkpoint experimental. El nombre "Fermicode" sugiere una orientacion hacia generacion de codigo, pero no hay evidencia documental que lo confirme.
+El modelo parte de la arquitectura Llama 3.2 1B, un transformer decoder-only con atencion por grupos (GQA) y RoPE, aunque la model card no detalla la configuracion exacta de capas, cabezas ni longitud de contexto. Al ser un CPT sobre la base de Meta, hereda las capacidades del modelo original, pero la informacion publicada no especifica que datos adicionales se emplearon ni que objetivos concretos persigue el ajuste, mas alla de la etiqueta "Fermicode" que sugiere un enfoque hacia codigo.
 
-Para un evaluador tecnico, el modelo debe tratarse como un artefacto no verificado: la unica informacion fiable es el recuento de parametros derivado de los tensores, el tamano del repositorio (2,5 GB) y las etiquetas del Hub. Cualquier uso en produccion requeriria una evaluacion propia de calidad, sesgos y comportamiento antes de considerarlo.
+Su relevancia practica es limitada pero clara: ocupa un nicho de modelos de 1B parametros que caben en GPUs de consumo y permiten despliegues locales economicos. La model card es practicamente una plantilla autogenerada, con la mayoria de secciones marcadas como "[More Information Needed]", por lo que la evaluacion rigurosa del modelo queda pendiente de que el autor publique detalles de entrenamiento y evaluacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo Llama (etiqueta `llama` en el Hub) |
-| Parametros totales | 1.235.814.400 (aprox. 1,24 B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en el repositorio; al ser pesos safetensors en precision completa o media, es cuantizable a GGUF/AWQ/GPTQ con herramientas externas |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
+| Arquitectura | Transformer decoder-only causal (Llama 3.2) |
+| Parametros totales | 1.235.814.400 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Llama 3.2 1B; el autor no la especifica) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF ni otras) |
+| Idiomas soportados | Ingles (segun model card) |
+| Licencia | Llama 3.2 |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 2,5 GB |
-| Libreria | transformers |
-| Pipeline | text-generation |
-| Fecha de creacion | 2026-11-18 |
-| Fecha de actualizacion | 2026-11-18 |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica disponible es la etiqueta `llama` del Hub, que implica un transformer decoder-only con atencion causal. No se especifican el numero de capas, la dimension oculta, el numero de cabezas de atencion, la dimension de la capa feed-forward, el tipo de normalizacion ni el vocabulario del tokenizador. Tampoco se indica si emplea atencion con RoPE, GQA (grouped-query attention) o MHA clasico. Dado el recuento de 1,24 B de parametros, es plausible que sea una variante de una base de la familia Llama 3.2 1B o TinyLlama, pero no hay confirmacion en la model card.
+La arquitectura corresponde a Llama 3.2 1B: un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con query grouping (GQA). El autor no publica la configuracion exacta de capas ni de cabezas, aunque el recuento de parametros (1.235.814.400) coincide con el del modelo base de Meta.
 
-No hay informacion sobre el corpus de entrenamiento (numero de tokens, composicion, filtrado), sobre si se aplico instruccion-tuning, RLHF, DPO o cualquier forma de alineamiento, ni sobre hiperparametros de entrenamiento (precision, regimen, hardware). La model card incluye unicamente los marcadores `[More Information Needed]` de la plantilla estandar de Hugging Face. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o mezcla de expertos.
+El entrenamiento consistio en preentrenamiento continuado (CPT) sobre el checkpoint de Llama 3.2 1B, segun indica la model card. No se documentan el numero de tokens adicionales, la composicion del corpus, si hubo etapas de SFT, RLHF o DPO, ni hiperparametros como tasa de aprendizaje, batch size o numero de pasos. El unico dato de infraestructura es el uso de una GPU Ampere A100 de 80 GB de VRAM. No se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva: capacidad basica esperable en un modelo decoder-only de 1,24 B, aunque sin evaluacion publicada que la cuantifique.
-- Posible orientacion a codigo por el nombre "Fermicode", no confirmada por la model card ni por benchmarks.
-- Soporte de tool calling / function calling: no documentado; no se puede asumir.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentadas; idiomas no declarados.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible` segun las etiquetas del Hub, lo que facilita su despliegue en infraestructura de Inferencia de Hugging Face.
+- Generacion de texto autoregresiva en ingles, heredada de Llama 3.2 1B.
+- Razonamiento basico y respuesta a instrucciones, limitado por el tamano de 1B parametros.
+- Generacion de codigo, presumiblemente reforzada por el CPT (el nombre "Fermicode" lo sugiere), aunque no se documenta ni se evalua.
+- Soporte de tool calling y function calling: no documentado; Llama 3.2 1B incluye plantillas de chat, pero no hay evidencia de que el ajuste las preserve o mejore.
+- Capacidades de agente y razonamiento multi-paso: no documentadas.
+- Capacidades multilingues: la model card declara solo ingles.
+- Modo thinking, vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Prototipado rapido de pipelines de generacion de texto: al ser un checkpoint de 1,24 B en safetensors, puede cargarse con `transformers` y servir como base para experimentos de prompting antes de invertir en modelos mayores. Adecuado por su bajo coste de inferencia, no por calidad contrastada.
-- Fine-tuning especifico de dominio: el tamano de 1,24 B permite ajuste completo o con LoRA en una unica GPU consumer (por ejemplo, RTX 4090 con 24 GB) usando `peft` y `transformers`, lo que lo hace util como punto de partida para tareas acotadas.
-- Generacion de codigo en entornos con recursos limitados: si el nombre refleja su proposito, podria emplearse para autocompletado o generacion de snippets en IDE o CI, siempre que una evaluacion propia confirme su calidad; no hay evidencia publica al respecto.
-- Despliegue en edge o on-premise: con cuantizacion a 4 bits (GGUF Q4_K_M) el modelo ocuparia del orden de 0,7-0,9 GB, lo que permite ejecucion en CPU o GPUs integradas mediante `llama.cpp` u `Ollama` para asistentes locales sin conexion.
-- Base para investigacion sobre alineamiento y evaluacion: al carecer de documentacion, es un candidato para estudiar como se comporta un checkpoint no verificado frente a modelos con model card completa, midiendo alucinacion y sesgo.
-- Servicio de inferencia con TGI: la etiqueta `text-generation-inference` sugiere compatibilidad con el servidor TGI de Hugging Face, lo que permite exponerlo como API HTTP en un contenedor para pruebas internas.
-- Generacion de datos sinteticos para aumento de dataset: con control de temperatura y filtrado posterior, puede producir textos de dominio para entrenar clasificadores o modelos menores.
+- Prototipado local de asistentes de texto: al ocupar unos 2,5 GB en fp16 (y menos de 1 GB en cuantizacion de 4 bits), puede ejecutarse en portatiles con GPU modesta para pruebas de generacion de texto en ingles.
+- Generacion de codigo en entornos con recursos limitados: si el CPT efectivamente especializo el modelo en codigo, encaja en autocompletado o sugerencias dentro de editores, aunque requiere validacion previa porque no hay benchmarks publicados.
+- Fine-tuning posterior por parte de terceros: al ser un checkpoint de 1B con licencia Llama 3.2, sirve como base economica para ajustes especificos (SFT, LoRA) en una sola GPU de consumo.
+- Clasificacion y extraccion de informacion en ingles: tareas de etiquetado, resumen o extraccion de entidades sobre textos cortos, donde el contexto y la calidad de un modelo de 1B pueden ser suficientes.
+- Experimentacion academica con CPT: util como referencia para estudiar el efecto del preentrenamiento continuado sobre un modelo base conocido.
+- Despliegue en edge o entornos sin conectividad: su tamano permite inferencia local en CPU o GPU integrada, con latencia aceptable para tareas no interactivas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye seccion de evaluacion cumplimentada y el repositorio no referencia ningun paper, leaderboard ni informe tecnico.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye la seccion de evaluacion con todos los campos marcados como "[More Information Needed]".
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 2,5 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica, 4-6 GB con contexto moderado.
-- VRAM estimada en cuantizacion de 8 bits: del orden de 1,3-1,5 GB de pesos.
-- VRAM estimada en cuantizacion de 4 bits (GGUF Q4_K_M): del orden de 0,7-0,9 GB de pesos.
-- GPU recomendadas: cualquier GPU con al menos 8 GB (RTX 3060, RTX 4060, RTX 4090, A10, L4) para FP16; A100/H100 no son necesarias y estarian sobredimensionadas.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU consumer moderna con 8 GB o mas; tambien en CPU con cuantizacion a 4 bits.
-- Opciones de despliegue: `transformers` (referencia), `text-generation-inference` (segun etiqueta del Hub), `vLLM` (si la arquitectura es compatible con Llama), `llama.cpp`/`Ollama` previa conversion a GGUF, y `endpoints_compatible` para despliegue gestionado en Hugging Face.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: aproximadamente 2,5 GB en fp16; en torno a 0,7-1 GB en cuantizacion de 4 bits (estimacion por tamano de parametros, no confirmada por el autor).
+- GPU recomendadas: A100 80 GB fue la usada para el entrenamiento; para inferencia basta una GPU de consumo como RTX 3060, RTX 4060 o superiores.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU con 4 GB o mas de VRAM, y potencialmente en CPU.
+- Opciones de despliegue: transformers (soporte nativo, indicado en la model card), text-generation-inference (etiqueta presente en el repo) y, previsiblemente, llama.cpp u Ollama si se generan pesos GGUF, aunque el autor no los publica.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Fermicode-1B | 1,24 B | no disponible | no disponible | Hugging Face, 0 descargas | Solo plantilla autogenerada |
-| Llama 3.2 1B (Meta) | 1,24 B | 128 K tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | Model card completa, paper |
-| TinyLlama 1.1B | 1,1 B | 2 K tokens (ampliable) | Apache 2.0 | Hugging Face, muy usado | Model card completa, paper |
-| Qwen2.5-1.5B | 1,54 B | 32 K tokens | Apache 2.0 (mayoria de variantes) | Hugging Face, ampliamente usado | Model card completa, informe tecnico |
+| Fermicode-1B | 1,24 B | no disponible | Llama 3.2 | Hugging Face, safetensors | CPT sin evaluacion publicada |
+| meta-llama/Llama-3.2-1B | 1,24 B | 128 K (segun Meta) | Llama 3.2 | Hugging Face, amplio ecosistema | Modelo base oficial, con benchmarks publicados |
+| Qwen2.5-1.5B | 1,54 B | 32 K (segun Qwen) | Apache 2.0 | Hugging Face, GGUF, amplio soporte | Alternativa con licencia permisiva |
+| SmolLM2-1.7B | 1,71 B | 8 K (segun Hugging Face) | Apache 2.0 | Hugging Face, GGUF | Enfoque en eficiencia y despliegue local |
 
-La comparativa se limita a caracteristicas publicas; no hay datos de rendimiento de Fermicode-1B que permitan contrastar calidad. Frente a Llama 3.2 1B, TinyLlama y Qwen2.5-1.5B, Fermicode-1B carece de contexto declarado, licencia e idiomas, lo que lo situa en desventaja para cualquier evaluacion formal.
+Los datos de contexto y licencia de los modelos comparados provienen de sus respectivas documentaciones publicas; los de Fermicode-1B no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card sustantiva: no se documentan datos de entrenamiento, alineamiento, evaluacion ni uso previsto, lo que impide estimar sesgos y riesgos.
-- Licencia no declarada: no se puede asumir uso comercial permitido; en ausencia de licencia explicita, los derechos de uso son inciertos y deben consultarse con el autor.
-- Riesgo elevado de alucinacion y comportamiento impredecible al no haber informacion sobre instruccion-tuning o RLHF.
-- Idiomas no declarados: se desconoce si el modelo esta entrenado predominantemente en ingles, en codigo o en otra distribucion, lo que afecta a su calidad en castellano.
-- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin medir experimentalmente el punto de degradacion.
-- Cero descargas y cero likes en el momento de la consulta: no hay senal de validacion por parte de la comunidad ni issues reportados.
-- Repositorio de 2,5 GB con pesos safetensors: verificar integridad y procedencia antes de cargarlo en entornos de produccion; no se aportan hashes ni firmas.
-- Posible confusion con modelos de la familia Llama: la etiqueta `llama` no implica que sea un modelo oficial de Meta ni que respete su licencia.
-- Para produccion, se recomienda evaluacion propia con un conjunto de validacion representativo y monitorizacion de salidas antes de cualquier despliegue.
+- La model card es una plantilla autogenerada: no hay informacion sobre datos de entrenamiento, sesgos, evaluacion ni uso previsto.
+- Riesgo de alucinacion elevado por el tamano (1B parametros) y por la ausencia de etapas documentadas de alineacion (RLHF/DPO).
+- Idiomas: solo se declara ingles; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
+- Licencia Llama 3.2: impone restricciones de uso comercial (politica de uso aceptable de Meta, obligaciones de atribucion y limitaciones para empresas con mas de 700 millones de usuarios mensuales), por lo que conviene revisarla antes de produccion.
+- No se publican pesos cuantizados ni artefactos GGUF, lo que limita el despliegue inmediato en herramientas como Ollama o llama.cpp.
+- Sin benchmarks ni evaluacion independiente, no es posible verificar que el CPT haya mejorado las capacidades del modelo base; podria incluso haber degradado el rendimiento en tareas generales.
+- Cero "likes" y 816 descargas en el momento de la consulta: ecosistema minimo y sin validacion de la comunidad.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/pranavupadhyaya52/Fermicode-1B
-- Referencia citada en la model card (calculadora de impacto ambiental): https://mlco2.github.io/impact#compute
-- Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/pranavupadhyaya52/Fermicode-1B
+- Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
+- Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact
+- Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700

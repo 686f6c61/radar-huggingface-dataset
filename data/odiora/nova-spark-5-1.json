@@ -1,0 +1,87 @@
+{
+  "schema": 2,
+  "id": "Odiora/NOVA-Spark-5.1",
+  "slug": "odiora-nova-spark-5-1",
+  "author": "Odiora",
+  "url": "https://huggingface.co/Odiora/NOVA-Spark-5.1",
+  "created_at": "2026-11-21T22:29:19.000Z",
+  "updated_at": "2026-11-21T22:31:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "kk",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "conversational",
+    "chatml",
+    "nova-spark",
+    "ai-assistant",
+    "emotional-intelligence",
+    "instruction-tuned",
+    "synthetic-training",
+    "roleplay",
+    "text-generation-inference",
+    "llama-cpp",
+    "en",
+    "kk",
+    "ru",
+    "dataset:cortex-ai-nova/Insider-Nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857429254,
+  "storage_human": "41.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": true,
+  "removed_at": "2026-11-22T04:19:53.309Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Odiora",
+      "url": "https://odiora.fr/",
+      "snippet": "⭐⭐⭐⭐⭐ Les créations d'Odiora m'ont immédiatement séduite dès le premier regard. L'atelier de création avec Nathalie a été …Read more"
+    },
+    {
+      "title": "ODIORA",
+      "url": "https://odiora.fr/fr/brand/1-odiora",
+      "snippet": "Liste des produits de la marque ODIORA Odiora est une marque de bijouterie lyonnaise. Fabrication artisanale et engagée pour une …Read more"
+    },
+    {
+      "title": "Odiora - Facebook",
+      "url": "https://www.facebook.com/ODIORAbijoux/",
+      "snippet": "Odiora is in Lyon, France. Et si offrir un bijou, c'était aussi offrir un souvenir ? Venez passer un moment unique avec la personne de …Read more"
+    },
+    {
+      "title": "Société ODIORA (852084698) : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/odiora-852084698",
+      "snippet": "ODIORA à LYON (69001) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, annonces légales, APE, NAF, …Read more"
+    },
+    {
+      "title": "Société ODIORA à LYON (69001). Chiffre d'affaires, extrait Kbis ...",
+      "url": "https://www.societe.com/societe/odiora-852084698.html",
+      "snippet": "Dec 15, 2022 · ODIORA. Jugement prononçant la liquidation judiciaire, date de cessation des paiements le 28 août 2025, Designant …Read more"
+    }
+  ]
+}

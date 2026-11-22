@@ -2,92 +2,102 @@
 
 ## Resumen
 
-AxonMed-7B-Flash-i1-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo AxonMed-7B-Flash, publicada por el usuario mradermacher en Hugging Face. El modelo base lo desarrolla Saathimed y está orientado a aplicaciones conversacionales, presumiblemente en el ámbito médico por su denominación, aunque la model card no aporta detalles sobre el dominio de entrenamiento. Esta versión GGUF está pensada para ejecución local mediante llama.cpp y herramientas derivadas.
+AxonMed-7B-Flash-i1-GGUF es la versión cuantizada en formato GGUF del modelo AxonMed-7B-Flash, desarrollado originalmente por Saathimed y cuantizado por mradermacher. Se trata de un modelo de lenguaje especializado en dominio médico y sanitario, afinado para razonamiento clínico, respuesta a preguntas médicas y procesamiento de documentación clínica (incluidos registros de salud electrónicos). Con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), se posiciona en la franja de modelos compactos que pueden ejecutarse en hardware de consumo mediante cuantización.
 
-La relevancia de esta ficha radica en que las cuantizaciones GGUF permiten desplegar un modelo de aproximadamente 7.600 millones de parámetros en hardware de consumo, algo inviable con los pesos originales en precisión completa. El autor ha generado un conjunto amplio de cuantizaciones, desde IQ1_S hasta Q6_K, empleando cuantización ponderada con matriz de importancia (imatrix), lo que en teoría preserva mejor la calidad en los niveles de compresión más agresivos.
+La relevancia de esta ficha radica en que mradermacher publica una batería completa de cuantizaciones con imatrix (importancia matricial) que permiten desplegar el modelo desde 2,0 GB (IQ1_S) hasta 6,4 GB (Q6_K), cubriendo desde entornos con recursos muy limitados hasta configuraciones que preservan casi toda la calidad del modelo original. El repositorio ocupa 89,0 GB en total al alojar todas las variantes.
 
-No obstante, la información disponible es muy limitada: no se especifican licencia, idiomas, arquitectura detallada, datos de entrenamiento ni resultados de benchmarks. La model card se limita a listar los tipos de cuantización generados y a enlazar al modelo base. Cualquier evaluación rigurosa requiere consultar la ficha del modelo original en Saathimed/AxonMed-7B-Flash.
+El modelo base está entrenado sobre datasets médicos de referencia como MedQA-USMLE-4-options, PubMedQA y medical-o1-reasoning-SFT, y declara soporte para inglés, español, chino, ruso, francés, alemán e hindi. La licencia Apache 2.0 facilita su uso comercial, aunque el dominio sanitario exige precauciones adicionales que se detallan en la sección de limitaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base transformer, inferido del formato GGUF; no confirmado en la informacion) |
-| Parametros totales | 7.615.616.512 (7,6 mil millones) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada del modelo base Saathimed/AxonMed-7B-Flash); detalles internos no disponibles |
+| Parametros totales | 7.615.616.512 (7,6 B) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ3_M, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, Q3_K_L, small-IQ4_NL, IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el modelo base original) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix/weighted) |
+| Idiomas soportados | en, es, zh, ru, fr, de, hi |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (multiples archivos por cuantizacion); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base AxonMed-7B-Flash más allá de lo que se puede inferir del formato GGUF y del recuento de parámetros (7.615.616.512). La model card del repositorio de cuantizaciones no describe la arquitectura, el número de capas, la dimensionalidad de los embeddings, el mecanismo de atención ni el tokenizador. Tampoco se documentan los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de que se trata de un transformer de 7,6 mil millones de parametros. El modelo fue afinado sobre tres datasets: GBaker/MedQA-USMLE-4-options (preguntas de examen medico estilo USMLE con cuatro opciones), pubmed_qa (preguntas de investigacion biomedica con respuestas basadas en literatura) y FreedomIntelligence/medical-o1-reasoning-SFT (datos de ajuste supervisado orientados a razonamiento clinico). No se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-La única información técnica relevante es el proceso de cuantización: el autor indica que se trata de cuantizaciones ponderadas con imatrix (matriz de importancia), generadas con un pipeline que etiqueta como `quantize_version: 2` y `convert_type: hf`. La matriz de importancia se calcula a partir de un corpus de calibración (etiquetado `nicoboss`) para minimizar la degradación de calidad en las cuantizaciones de baja precisión. No se especifica qué corpus de calibración se ha usado ni cuántas muestras contiene.
+La innovacion tecnica destacable de esta publicacion es el proceso de cuantizacion con imatrix (importance matrix), que calcula la importancia de cada peso del modelo usando un corpus de calibracion y ajusta la cuantizacion para minimizar la perdida de calidad en comparacion con las cuantizaciones estaticas. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamano similar, y que las variantes i1-Q4_K_S y i1-Q4_K_M ofrecen el mejor equilibrio entre tamano, velocidad y calidad. No se documentan mecanismos como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` indica que el modelo está orientado a diálogo multi-turno.
-- Posible especialización médica: la denominación "AxonMed" sugiere un ajuste fino sobre dominio médico, pero no se confirma en la información disponible.
-- Inferencia local: al estar en formato GGUF, es compatible con llama.cpp, Ollama y otros motores que soportan este formato.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generacion de texto y razonamiento clinico en dominio medico, con enfasis en preguntas tipo USMLE y razonamiento paso a paso.
+- Respuesta a preguntas basadas en literatura biomedica (PubMedQA).
+- Procesamiento de documentacion clinica y registros de salud electronicos (segun los tags del modelo).
+- Capacidades conversacionales multi-turno (tag "conversational").
+- Soporte multilingue declarado para ingles, espanol, chino, ruso, frances, aleman e hindi.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente, aunque el dataset medical-o1-reasoning-SFT sugiere entrenamiento en cadenas de razonamiento.
+- Capacidades de vision o audio: no disponibles.
+- Modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-- Asistencia clínica en local: si el modelo base está efectivamente ajustado en dominio médico, podría emplearse para resumir notas clínicas o responder consultas de formación sanitaria en entornos con requisitos de privacidad, ejecutándose íntegramente en hardware local gracias al formato GGUF y a las cuantizaciones de 4 y 5 bits.
-- Despliegue en estaciones de trabajo sin GPU dedicada: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar el modelo en CPU con 8-16 GB de RAM, adecuado para prototipos y pruebas de concepto.
-- Chatbot conversacional de propósito general: el tag `conversational` y el tamaño de 7,6 mil millones de parámetros lo sitúan en el rango de modelos ligeros aptos para asistentes de texto en aplicaciones de escritorio.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece más de veinte variantes de cuantización, lo que permite medir empíricamente la degradación de calidad entre IQ1_S y Q6_K sobre una misma tarea.
-- Filtrado y clasificación de texto en pipelines: un modelo de 7B cuantizado a Q4 puede integrarse en flujos de procesamiento por lotes donde el coste por token es crítico.
-- Investigación sobre cuantización ponderada: el uso de imatrix con el corpus `nicoboss` permite estudiar el impacto de la calibración en modelos de dominio específico.
+- Asistencia a estudiantes de medicina: el modelo puede resolver preguntas de estilo USMLE con razonamiento explicado, aprovechando su entrenamiento sobre MedQA-USMLE-4-options para generar explicaciones paso a paso de cada opcion.
+- Busqueda de evidencia biomedica: integrado en un pipeline RAG sobre PubMed, puede responder consultas de investigadores resumiendo articulos y citando hallazgos, gracias a su ajuste sobre PubMedQA.
+- Triaje y preclasificacion de documentacion clinica: puede procesar notas de alta, historiales y registros de salud electronicos para extraer entidades y estructurar informacion antes de la revision humana.
+- Generacion de resumenes de historiales clinicos: con una ventana de contexto adecuada (no confirmada), puede condensar notas de evolucion multi-dia en resumenes legibles para el personal sanitario.
+- Educacion sanitaria para pacientes: puede reformular terminologia medica en lenguaje llano en varios idiomas, util para materiales divulgativos multilingues (es, en, fr, de, etc.).
+- Despliegue en entornos con recursos limitados: las cuantizaciones i1-Q4_K_M (4,8 GB) e i1-IQ4_XS (4,3 GB) permiten ejecutar el modelo en estaciones de trabajo con GPU de consumo, facilitando prototipos locales sin depender de la nube, algo relevante por la confidencialidad de datos sanitarios.
+- Soporte a codificacion clinica (CIE-10, SNOMED): puede asistir en la sugerencia de codigos a partir de descripciones textuales, siempre con validacion por codificadores humanos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio cuantizado no incluye tablas de MMLU, PubMedQA, MedQA ni de ninguna otra evaluacion, ni para el modelo base ni para las cuantizaciones.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (7,6 mil millones de parámetros):
-  - IQ1_S / IQ1_M: aproximadamente 2-3 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: aproximadamente 2,5-3,5 GB.
-  - Q2_K / Q2_K_S: aproximadamente 3 GB.
-  - IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M / Q3_K_S / Q3_K_M / Q3_K_L: aproximadamente 3,5-4,5 GB.
-  - IQ4_XS / small-IQ4_NL / Q4_0 / Q4_1 / Q4_K_S / Q4_K_M: aproximadamente 4,5-5,5 GB.
-  - Q5_K_S / Q5_K_M: aproximadamente 5,5-6,5 GB.
-  - Q6_K: aproximadamente 6,5-7,5 GB.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 y H100 para las variantes de mayor precisión y contextos largos.
-- Cabe en GPU de consumo: sí, las cuantizaciones Q4 y Q5 caben en GPUs con 8-12 GB de VRAM; las variantes Q6_K requieren al menos 8 GB y margen para el contexto.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, KoboldCpp y cualquier motor compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con la API de endpoints de Hugging Face.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - i1-IQ1_S: ~2,0 GB
+  - i1-IQ2_M: ~2,9 GB
+  - i1-IQ3_M: ~3,7 GB
+  - i1-IQ4_XS: ~4,3 GB
+  - i1-Q4_K_M: ~4,8 GB
+  - i1-Q5_K_M: ~5,5 GB
+  - i1-Q6_K: ~6,4 GB
+- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090 de 24 GB permiten ejecutar las cuantizaciones de 4-6 bits con margen para contexto. Para despliegue en servidor, A100 o H100 son sobredimensionadas para un modelo de 7,6 B pero validas para alta concurrencia.
+- Cabe en GPU de consumo: si, practicamente todas las cuantizaciones de 4 bits o menos caben en GPUs con 6-8 GB de VRAM; las de 5-6 bits requieren 8-12 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF de forma nativa (requieren el modelo en safetensors), por lo que para esos motores habria que usar el modelo base Saathimed/AxonMed-7B-Flash.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Dominio | Licencia | Formato |
 |---|---|---|---|---|---|
-| AxonMed-7B-Flash-i1-GGUF | 7,6 B | no disponible | no disponible | GGUF | Cuantizaciones imatrix de un modelo médico de Saathimed |
-| Mistral-7B-Instruct (GGUF) | 7,2 B | 32 K (v0.1) | Apache 2.0 | GGUF, safetensors | Referencia de la categoría 7B, ampliamente soportado |
-| Llama 3.1 8B Instruct (GGUF) | 8,0 B | 128 K | Llama 3.1 Community License | GGUF, safetensors | Mayor contexto y ecosistema maduro |
-| Qwen2.5-7B-Instruct (GGUF) | 7,6 B | 128 K | Apache 2.0 | GGUF, safetensors | Buen rendimiento multilingüe y en código |
+| AxonMed-7B-Flash-i1-GGUF | 7,6 B | no disponible | Medico/clinico | Apache 2.0 | GGUF |
+| Modelo base Saathimed/AxonMed-7B-Flash | 7,6 B | no disponible | Medico/clinico | Apache 2.0 | safetensors |
+| Alternativas medicas de ~7 B (p. ej. variantes de BioMistral, Meditron) | ~7 B | no disponible en esta ficha | Medico | variable | safetensors/GGUF |
 
-La comparación se limita a parámetros y disponibilidad porque no hay datos de benchmarks ni de contexto para el modelo evaluado.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y formato. Cualquier afirmacion sobre calidad relativa requeriria ejecutar los benchmarks correspondientes.
 
 ## Limitaciones y advertencias
 
-- Información insuficiente: no se documentan licencia, idiomas, contexto ni datos de entrenamiento, lo que impide evaluar su idoneidad para producción.
-- Riesgo en dominio médico: si el modelo está orientado a uso clínico, no se aportan avales, validaciones ni advertencias sobre su uso como herramienta de diagnóstico; no debe emplearse en decisiones médicas sin supervisión profesional.
-- Riesgo de alucinación: inherente a los modelos de 7B, especialmente en las cuantizaciones de 1-2 bits, donde la degradación de calidad es notable.
-- Restricciones de licencia: al no especificarse la licencia, no se puede confirmar el uso comercial; es imprescindible consultar la ficha del modelo base Saathimed/AxonMed-7B-Flash.
-- Cuantizaciones agresivas: las variantes IQ1_S, IQ1_M e IQ2_XXS pueden producir respuestas incoherentes o repetitivas; se recomienda Q4_K_M o superior para uso real.
-- Sesgos: no disponibles, pero al desconocerse la composición del dataset de entrenamiento no se pueden descartar sesgos de dominio o lingüísticos.
-- Fecha de creación futura (2026-11-18): el repositorio indica una fecha posterior a la actual, lo que puede deberse a un error de metadatos o a una publicación programada; conviene verificar la integridad del repositorio antes de descargarlo.
+- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar afirmaciones medicas plausibles pero incorrectas; en dominio clinico esto es especialmente critico y exige revision por profesionales cualificados.
+- Sesgos: no documentados por el autor; los datasets de origen (USMLE, PubMed) estan sesgados hacia practica medica occidental y literatura en ingles, lo que puede afectar a la calidad en otros contextos sanitarios.
+- Limitaciones de contexto e idioma: la longitud de contexto no esta especificada; el soporte multilingue esta declarado pero no se aportan evaluaciones por idioma, por lo que el rendimiento en espanol, hindi o ruso puede ser inferior al del ingles.
+- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero el despliegue en entornos sanitarios regulados (MDR en la UE, HIPAA en EE. UU.) requiere evaluaciones de conformidad adicionales que el modelo no cubre.
+- Cuantizaciones de baja calidad: las variantes IQ1 e IQ2 estan etiquetadas por el propio autor como "for the desperate" o "very low quality"; no son adecuadas para produccion clinica.
+- Ausencia de benchmarks: no hay evidencia publicada del rendimiento del modelo en tareas medicas estandar, lo que impide validar su calidad frente a alternativas.
+- Fecha de creacion del repositorio (2026-11-18) y ausencia de likes/descargas moderadas (1.916 descargas) sugieren un modelo poco contrastado por la comunidad; conviene tratarlo con cautela en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/AxonMed-7B-Flash-i1-GGUF
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/AxonMed-7B-Flash-i1-GGUF
 - Modelo base: https://huggingface.co/Saathimed/AxonMed-7B-Flash
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/AxonMed-7B-Flash-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#AxonMed-7B-Flash-i1-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Dataset MedQA-USMLE-4-options: https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options
+- Dataset PubMedQA: https://huggingface.co/datasets/pubmed_qa
+- Dataset medical-o1-reasoning-SFT: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT
+- Empresa del autor de las cuantizaciones: https://www.nethype.de/

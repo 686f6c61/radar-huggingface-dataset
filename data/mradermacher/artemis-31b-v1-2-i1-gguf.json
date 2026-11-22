@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "How to get help in Windows - Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
-      "snippet": "Here are a few different ways to find help for Windows Search for help - Enter a question or keywords in the search box on the …"
-    },
-    {
-      "title": "About Get Help | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/support/get-help/about-get-help",
-      "snippet": "The Windows Get Help app is a centralized hub for accessing a wide range of resources, including tutorials, FAQs, community …"
-    },
-    {
-      "title": "Automatically Lock Computer after Inactivity in Windows 11",
-      "url": "https://www.elevenforum.com/t/automatically-lock-computer-after-inactivity-in-windows-11.4774/",
-      "snippet": "Feb 20, 2022 · This tutorial will show you how to enable or disable automatically lock computer after specified seconds of inactivity …"
-    },
-    {
-      "title": "Windows 11 Forum",
-      "url": "https://www.elevenforum.com/",
-      "snippet": "Windows 11 Forum: Get expert help, tutorials, tips & troubleshooting for Windows 11. Active community support, guides & discussions."
-    },
-    {
-      "title": "ヘルプについて | Microsoft Support",
-      "url": "https://support.microsoft.com/ja-jp/support/get-help/about-get-help",
-      "snippet": "Get Helpで問題を検索する方法 Windows Get Help アプリは、チュートリアル、FAQ、コミュニティ フォーラム、Microsoft サポー …"
-    }
-  ]
+  "sources": []
 }

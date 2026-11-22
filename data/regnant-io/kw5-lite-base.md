@@ -2,83 +2,103 @@
 
 ## Resumen
 
-KW5-Lite es un modelo de lenguaje causal de tipo decoder-only transformer, desarrollado por Regnant.io, una empresa de investigación en inteligencia artificial soberana con sede en Dar es Salaam (Tanzania). El modelo está diseñado específicamente para el swahili (kiswahili), una lengua hablada por más de 200 millones de personas en África Oriental y que cuenta con muy pocos recursos en el ecosistema de NLP. Se trata de uno de los pocos modelos de swahili entrenados desde cero y publicados con pesos abiertos.
+kw5-lite-base (publicado tambien como KW5 109M) es un modelo de lenguaje base de 109,5 millones de parametros entrenado desde cero especificamente para swahili (kiswahili) por Regnant, una organizacion centrada en modelos para lenguas africanas de bajos recursos. Es un transformer decoder-only compatible con Llama, con 12 capas, dimension oculta de 768, FFN de 2048 y atencion multi-head estandar (12 cabezas de consulta y 12 de clave-valor, sin GQA). Se entreno sobre 1.410 millones de tokens procedentes de FineWeb-2 `swh_Latn`, limpiado y deduplicado, en una unica NVIDIA T4 durante unas 60 horas de GPU.
 
-Con 109,5 millones de parámetros entrenables (134 millones en total incluyendo embeddings), una ventana de contexto de 2.048 tokens y un vocabulario de 32.000 tokens BPE, KW5-Lite se posiciona como un modelo ligero y eficiente, entrenado durante aproximadamente 120 horas en una única GPU NVIDIA T4. El entrenamiento se realizó sobre 1,88 mil millones de tokens de un corpus web swahili deduplicado (basado en FineWeb-2), completando el 89,3% del objetivo de 2,1 mil millones de tokens. Su licencia Apache 2.0 permite uso comercial sin restricciones, y su tamaño reducido lo hace accesible para investigación, fine-tuning y despliegue en hardware de consumo.
+El modelo resuelve un problema concreto: la practica ausencia de modelos fundacionales abiertos y ligeros para swahili, una lengua con cientos de millones de hablantes pero con poquisimos recursos de modelado publicos. kw5-lite-base ofrece una base entrenada nativamente en swahili (tokenizador BPE propio de 32.000 unidades) que sirve como punto de partida para experimentos y fine-tuning, no como modelo listo para produccion. Su sucesor recomendado por el propio autor es kw5-149M.
 
-La relevancia de este modelo radica en que aborda la escasez de recursos lingüísticos para el swahili, ofreciendo una base sólida para tareas de generación de texto, fine-tuning y adaptación a tareas específicas en el ámbito de África Oriental. Su diseño moderno (RMSNorm, RoPE, SwiGLU, GQA-ready) y su documentación completa de entrenamiento lo convierten en una opción atractiva para desarrolladores e investigadores que necesitan un modelo base en swahili.
+Es relevante ahora por su honestidad tecnica y por documentar con precision sus carencias: el autor declara explicitamente que el learning rate nunca se decayo, que no hubo conjunto de validacion, que el contexto real de entrenamiento es de 1.024 tokens (aunque la config permite 2.048) y que los resultados en benchmarks estan dentro del intervalo de azar. La unica habilidad real medida es la continuacion fluida de texto en swahili.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (12 capas, 768 de dimensión oculta, 12 cabezas de atención, FFN 2.048 con SwiGLU) |
-| Parametros totales | 134M (109,5M entrenables + embeddings atados) |
+| Arquitectura | Transformer decoder-only compatible con Llama (RMSNorm pre-norm, SwiGLU, RoPE theta 10.000) |
+| Parametros totales | 109.529.856 (embeddings de entrada y salida atados) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | No especificado (pesos en FP32, entrenamiento en FP16) |
-| Idiomas soportados | Swahili (sw) |
+| Longitud de contexto | 1.024 tokens entrenados; `max_position_embeddings` configurado a 2.048 pero no entrenado mas alla de 1.024 |
+| Tipos de cuantizacion | No disponible (pesos publicados en FP32; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Swahili (kiswahili), `sw` |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch (safetensors) |
+| Formato de pesos | safetensors (`model.safetensors`, FP32), tokenizer SentencePiece (`tokenizer.model`) y fast tokenizer (`tokenizer.json`) |
 
 ## Arquitectura y entrenamiento
 
-KW5-Lite sigue una arquitectura decoder-only transformer moderna, con 12 bloques que integran normalización RMSNorm (pre-norm), atención multi-cabeza con 12 cabezas, codificación posicional RoPE con escalado NTK y una FFN SwiGLU de 768 a 2.048 dimensiones. Los embeddings de entrada y salida están atados, lo que reduce parámetros y mejora la generalización. El diseño se optimizó para eficiencia en hardware de gama baja: se usó PyTorch SDPA en lugar de FlashAttention-2 (no soportado en T4 por su compute capability 7.5) y FP16 con escalado de gradientes (la T4 carece de soporte BF16). El entrenamiento se realizó con un scheduler WSD (warmup-stable-decay), con tasa de aprendizaje pico de ~3e-4, y se completaron 8.176 pasos sobre un corpus de 1,88 mil millones de tokens de swahili deduplicado (basado en FineWeb-2). El modelo se publica con pesos FP32, aunque se entrenó con precisión mixta FP16.
+La arquitectura es un transformer decoder-only de 12 capas con hidden size 768, FFN de 2048, 12 cabezas de atencion de consulta y 12 de clave-valor (atencion multi-head clasica, sin grouped-query attention), normalizacion RMSNorm en pre-norm, activacion SwiGLU y codificacion posicional RoPE con theta 10.000. El vocabulario es un BPE SentencePiece de 32.000 unidades entrenado desde cero sobre el corpus deduplicado, con normalizacion NFC, separacion de digitos y byte fallback; los ids 4 a 6 (`<|system|>`, `<|user|>`, `<|assistant|>`) estan reservados pero nunca aparecen en el corpus de preentrenamiento, por lo que sus filas de embedding no estan entrenadas.
+
+El entrenamiento uso FineWeb-2 `swh_Latn` limpiado y deduplicado (exacta y MinHash LSH), aproximadamente 705 millones de tokens unicos, con dos pasadas para totalizar 1.410 millones de tokens vistos hasta el checkpoint 6.150. Se uso precision mixta FP16 con GradScaler, optimizador 8-bit AdamW con learning rate 3e-4, weight decay 0,1 y grad clip 1,0, bajo un schedule Warmup-Stable-Decay que se detuvo en la fase estable. El empaquetado concatenaba documentos sin mascara de atencion en los limites, de modo que el modelo aprendio a atender a traves de documentos no relacionados dentro de una misma secuencia. El learning rate nunca se decayo: el presupuesto de tokens se fijo en 8.000 millones a partir de una estimacion del tamano del corpus que resulto ser unas cuatro veces superior a la real, por lo que la fase de decaimiento nunca llego a ejecutarse. No hubo conjunto de validacion reservado.
 
 ## Capacidades
 
-- Generación de texto en swahili: es un modelo causal de lenguaje, capaz de completar texto y generar continuaciones coherentes en swahili.
-- Fine-tuning para tareas específicas: al ser un modelo base, se puede adaptar mediante fine-tuning a tareas como clasificación de texto, generación de preguntas y respuestas, análisis de sentimiento o traducción automática.
-- Modelado de lenguaje: puede servir como modelo de lenguaje para perplejidad, generación condicionada o como base para sistemas de autocompletado.
-- Soporte de contexto medio: con 2.048 tokens, puede manejar párrafos largos o conversaciones de varias frases, pero no documentos extensos.
-- No incluye capacidades avanzadas como tool calling, agentes o razonamiento multi-paso (no se mencionan en la documentación).
-- Multilingüe limitado: solo swahili; no se han documentado capacidades en otras lenguas.
+- Generacion de texto en swahili: continuacion de prefijos con fluidez gramatical y lexica notable para su tamano.
+- Prediccion del siguiente token exclusivamente: es un modelo base, no sigue instrucciones ni responde preguntas.
+- Tokenizacion nativa de swahili: BPE de 32.000 unidades entrenado sobre el corpus, lo que reduce la fragmentacion respecto a tokenizadores multilingues genericos.
+- Manejo de texto con digitos y caracteres desconocidos: separacion de digitos y byte fallback en el tokenizador.
+- Punto de partida para fine-tuning: puede adaptarse a tareas supervisadas (clasificacion, extraccion, generacion condicionada) con relativamente pocos datos.
+- Sin soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Capacidad multilingue: no disponible; el modelo esta entrenado solo en swahili.
 
 ## Casos de uso
 
-- Generación de contenido en swahili: KW5-Lite puede utilizarse para redactar artículos, noticias o textos de marketing en swahili, generando contenido coherente a partir de indicaciones o temas. Su tamaño reducido permite ejecutarlo en entornos con recursos limitados.
-- Asistentes de escritura y autocompletado: integrable en editores de texto o plataformas de escritura para sugerir continuaciones de frases o corregir gramática en swahili, aprovechando su conocimiento del idioma.
-- Sistemas de preguntas y respuestas sobre dominios específicos: tras un fine-tuning con datos propios, puede construir un asistente de preguntas y respuestas en swahili para sectores como educación, salud o atención al cliente, aunque requiere adaptación.
-- Análisis de sentimiento y minería de opiniones: como modelo base, puede fine-tunearse para clasificar comentarios o reseñas en swahili, útil para empresas que operan en Tanzania o Kenia.
-- Traducción automática: aunque no está entrenado para traducción, puede servir como componente en un pipeline de traducción swahili-inglés o swahili-otras lenguas, combinado con modelos de traducción existentes.
-- Investigación académica en NLP de bajos recursos: KW5-Lite es un punto de partida para estudiar técnicas de entrenamiento eficiente, evaluación de modelos en lenguas minoritarias o desarrollo de recursos lingüísticos para swahili.
-- Educación y aprendizaje de idiomas: puede integrarse en herramientas de práctica de swahili para generar ejercicios, diálogos o ejemplos de uso de vocabulario y gramática.
+- Investigacion sobre modelos de bajos recursos: servir como linea base reproducible (109,5 M de parametros, 1,41 B de tokens, 60 horas de T4) para estudiar el efecto de tecnicas de entrenamiento en lenguas de bajos recursos sin necesidad de infraestructura grande.
+- Fine-tuning supervisado para tareas especificas del swahili: clasificacion de texto, etiquetado, extraccion de entidades o analisis de sentimiento, aprovechando que la base ya modela morfologia y sintaxis del idioma.
+- Generacion aumentada por recuperacion (RAG) en swahili: usar el modelo como generador de continuaciones condicionadas por contexto recuperado, manteniendo prompt y salida por debajo de 1.024 tokens.
+- Completado de texto asistido en entornos de redaccion en swahili: sugerencias de continuacion a nivel de frase, con supervision humana obligatoria por la baja fiabilidad factica.
+- Destilacion y experimentacion de arquitecturas: al ser compatible con Llama, puede usarse como alumno en destilacion desde modelos mayores o como banco de pruebas para tecnicas de decodificacion especulativa.
+- Educacion y prototipado: demostraciones de modelado de lenguaje en swahili en cursos y talleres, con coste de computo minimo (cabe en una T4 o incluso en CPU para inferencia puntual).
+- Generacion de datos sinteticos en swahili: producir texto de continuacion para aumentar corpus de entrenamiento de otros sistemas, filtrando posteriormente por calidad.
 
 ## Benchmarks y rendimiento
 
-La model card declara un rango de perplexidad de 30 a 170 en un conjunto de prueba swahili mantenido fuera del entrenamiento (Swahili Held-out Test Set). Este dato es una métrica de perplexidad, pero no se proporciona el valor exacto ni se compara con otros modelos. No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K.
+Evaluacion por verosimilitud en eleccion multiple, n = 50 por tarea:
 
-| Tarea | Dataset | Métrica | Valor |
-|---|---|---|---|
-| Generación de texto | Swahili Held-out Test Set (custom) | Perplexity | 30-170 (no verificado) |
+| Tarea | Precision | Intervalo de confianza 95% | Azar |
+|---|---:|---:|---:|
+| Belebele-sw (4 opciones) | 32% | 21 a 46 | 25% |
+| AfriXNLI-sw (3 opciones) | 32% | 21 a 46 | 33% |
+
+Ambos resultados son consistentes con el azar; con 50 elementos la medida constituye un suelo, no una capacidad demostrada. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
+
+Perdida medida por posicion en 12 documentos largos en swahili:
+
+| Posiciones | 0-511 | 512-1023 | 1024-1535 | 1536-2047 |
+|---|---:|---:|---:|---:|
+| Perdida (nats) | 4,12 | 4,08 | 4,45 | 5,92 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo tiene 134M de parámetros en FP32, lo que ocupa aproximadamente 536 MB en memoria. En FP16 serían unos 268 MB. Es viable en GPUs con 4 GB de VRAM o menos.
-- GPUs recomendadas: cualquier GPU NVIDIA con al menos 4 GB de VRAM (GTX 1650, RTX 3050, T4, etc.). El entrenamiento se realizó en una T4 (16 GB), pero la inferencia es mucho menos exigente.
-- Compatibilidad con hardware de consumo: sí, cabe en GPUs de consumo como la RTX 3060, RTX 4060, etc. También puede ejecutarse en CPU con cierta lentitud.
-- Opciones de despliegue: al ser un modelo PyTorch estándar, puede servirse con vLLM, Hugging Face TGI, Ollama (si se convierte a GGUF), llama.cpp, o directamente con Transformers. La compatibilidad con vLLM y TGI no está confirmada, pero es probable dado el formato.
-- Latencia y throughput: no hay datos oficiales. En una GPU T4, la generación debería ser de decenas de tokens por segundo, pero no se han publicado cifras.
+- VRAM estimada: con pesos FP32 (unos 438 MB) la inferencia completa requiere menos de 1 GB de VRAM; en FP16 serian unos 219 MB y en cuantizaciones de 8 o 4 bits, decenas de megabytes.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria; el modelo se entreno en una NVIDIA T4 y funciona sobradamente en GTX 1650, RTX 3060, RTX 4090, A100 o H100.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU consumer modernas, y tambien en CPU para inferencia puntual (el ejemplo de la model card se ejecuta en CPU).
+- Opciones de despliegue: transformers (libreria nativa), text-generation-inference (el repo declara `text-generation-inference` y `endpoints_compatible`); vLLM, llama.cpp u Ollama requeririan conversion previa de los pesos, no documentada en la informacion disponible.
+- Latencia y throughput: no disponible; no se publican medidas de latencia ni tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se han identificado modelos comparables específicos para swahili en la información disponible. Existen modelos multilingües como mT5 o XLM-R que cubren swahili, pero no son comparables en arquitectura (encoder-decoder) ni en tamaño (parámetros). No hay información suficiente para realizar una comparativa con otros modelos de lenguaje swahili de tamaño similar.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+|---|---:|---|---|---|---|
+| kw5-lite-base (este modelo) | 109,5 M | 1.024 entrenados (2.048 configurados) | sw | Apache 2.0 | Base, sin instruction tuning; benchmarks al nivel del azar |
+| kw5-149M | 149 M (segun denominacion) | no disponible | sw | no disponible | Sucesor recomendado por el autor para nuevos trabajos |
+| kw5-109M-instruct | 109,5 M | no disponible | sw | no disponible | Version con instruction tuning del mismo modelo base |
+
+No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo de un solo idioma: solo entrenado en swahili; no soporta otros idiomas de forma nativa.
-- Ventana de contexto limitada a 2.048 tokens, lo que restringe la capacidad para procesar documentos largos o conversaciones extensas.
-- Entrenamiento incompleto: se utilizaron 1,88 mil millones de tokens de los 2,1 mil millones previstos (89,3 %), lo que puede implicar una subentrenamiento en ciertas áreas.
-- No se han documentado capacidades avanzadas como tool calling, razonamiento multi-step o instrucciones complejas; es un modelo base que requiere fine-tuning para tareas específicas.
-- La perplexidad declarada (30-170) es un rango muy amplio y no se ha verificado; no hay benchmarks comparativos con otros modelos.
-- Posibles sesgos: al entrenarse con datos web deduplicados, puede heredar sesgos lingüísticos o culturales presentes en el corpus. No se han realizado evaluaciones de sesgo.
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en contextos donde carece de información.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo se ofrece sin garantías; el usuario es responsable de su uso.
+- El modelo continua texto; no responde preguntas ni sigue instrucciones. No debe usarse como asistente conversacional sin fine-tuning.
+- Fiabilidad factica muy baja: el propio autor documenta que el modelo genera afirmaciones fluidas pero falsas (por ejemplo, paises que no limitan con Tanzania).
+- Contexto efectivo limitado a 1.024 tokens; mas alla, la perdida se dispara (5,92 nats en posiciones 1.536-2.047). Mantener prompt y salida por debajo de 1.024 tokens.
+- Sesgos derivados del texto web en swahili, mayoritariamente de Tanzania; no hay mitigacion ni ajuste de seguridad de ningun tipo.
+- El learning rate nunca se decayo y no hubo conjunto de validacion: el modelo esta infraentrenado respecto a lo que seria esperable con el mismo presupuesto.
+- El empaquetado sin mascara de documento ensena al modelo a atender entre documentos no relacionados, lo que puede producir continuaciones que mezclan temas.
+- Los tokens especiales de rol (`<|system|>`, `<|user|>`, `<|assistant|>`) tienen embeddings sin entrenar; si se usan como marcadores en fine-tuning hay que entrenar tambien `embed_tokens`.
+- No se requiere `<s>` al inicio; el preentrenamiento no uso BOS inicial y anadirlo cambia la perdida en solo 0,009 nats sobre texto retenido.
+- Licencia Apache 2.0: permite uso comercial, pero el autor declara explicitamente que el modelo no es apto para despliegue en produccion.
+- No hay datos publicados de latencia, throughput ni cuantizaciones disponibles.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/regnant-io/kw5-lite-base
-- Sitio web de Regnant: https://www.regnant.io/
-- Página de productos de Regnant (incluye referencia a KW5-Lite como programa de investigación): https://www.regnant.io/products
-- LoRA de conversación en swahili basado en Qwen2.5-1.5B (no es el mismo modelo, pero relacionado): https://huggingface.co/qailunu/kw5-lite-swahili-lora
-- Página de inferencia de FriendliAI para el LoRA (referencia adicional): https://friendli.ai/models/qailunu/kw5-lite-swahili-lora
+- Sucesor recomendado: https://huggingface.co/regnant-io/kw5-149M
+- Version instruction-tuned: https://huggingface.co/regnant-io/kw5-109M-instruct
+- Sitio del autor (Regnant): https://www.regnant.io/
+- Dataset de entrenamiento (FineWeb-2): https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

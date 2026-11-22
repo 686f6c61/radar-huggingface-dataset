@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Qwen3-VL-8B-Instruct-c_abliterated-v3-furry es un modelo de visión-lenguaje de aproximadamente 8.000 millones de parámetros, especializado en el etiquetado automático estilo booru y la generación de descripciones en lenguaje natural de ilustraciones de personajes antropomórficos, escamosos y dragoniles. Lo publica el usuario Ryuxi en Hugging Face y deriva de `prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3`, que a su vez parte de Qwen3-VL-8B-Instruct. El ajuste fino se realizó mediante QLoRA sobre el dataset `hearmeneigh/e621-rising-v3-small`, alineando el vocabulario de salida con los estándares de etiquetas de e621 y Danbooru.
+Qwen3-VL-8B-Instruct-c_abliterated-v3-furry es un modelo de visión-lenguaje especializado en ilustración de personajes antropomórficos, dragones, escamosos (scalies) y arte furry. Lo desarrolla el usuario Ryuxi sobre el checkpoint `prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3`, que a su vez deriva del Qwen3-VL-8B-Instruct de Alibaba. El modelo resuelve dos tareas concretas: el etiquetado automático de imágenes al estilo booru (tags canónicos en snake_case según los estándares de e621 y Danbooru) y la generación de descripciones en lenguaje natural de alta fidelidad sobre especies, pelaje, anatomía y estilo.
 
-El modelo hereda la arquitectura `Qwen3VLForConditionalGeneration` del base: un backbone de texto de 36 capas con dimensión oculta 4096 y una torre de visión de profundidad 27. Se distribuye exclusivamente en formato GGUF para llama.cpp, con los pesos principales en cuantización Q8_0 (8,11 GB) y un proyector multimodal `mmproj` en f16 (1,08 GB). Ambos ficheros son obligatorios para conservar la capacidad de visión.
+Se distribuye exclusivamente en formato GGUF para llama.cpp, con los pesos principales cuantizados en Q8_0 (8,11 GB) y un proyector visual `mmproj` en f16 (1,08 GB). La arquitectura es la de Qwen3-VL densa de aproximadamente 8.190 millones de parámetros, con 36 capas en el backbone de texto, dimensión oculta de 4096 y una torre de visión de profundidad 27. La longitud de contexto es dependiente del runtime, con un rango de 4096 a 32768 tokens y 8192 recomendados.
 
-Su relevancia actual es de nicho: cubre una tarea concreta —anotación de datasets de arte furry/scalie para entrenamiento de modelos de imagen como SDXL, Flux, Illustrious o Pony— con una alineación de etiquetas que los modelos generalistas no ofrecen. El modelo base es una variante *abliterated*, es decir, con el comportamiento de rechazo suprimido, lo que se traduce en ausencia de negativas ante contenido explícito.
+Su relevancia actual es de nicho pero muy marcada: el fine-tune se entrenó con el dataset `hearmeneigh/e621-rising-v3-small` mediante QLoRA, alineando el vocabulario de salida con los estándares de etiquetado de las principales comunidades de arte antropomórfico. Hereda del modelo base el comportamiento *abliterated* (supresión de rechazos), lo que implica que no declinará peticiones explícitas y puede generar contenido NSFW sin solicitarlo. El repositorio está marcado como `not-for-all-audiences` en Hugging Face.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | `Qwen3VLForConditionalGeneration` (transformer multimodal denso; texto: 36 capas, hidden 4096; torre de visión: profundidad 27) |
+| Arquitectura | Qwen3VLForConditionalGeneration (transformer denso multimodal; texto: 36 capas, hidden 4096; torre de visión: depth 27) |
 | Parámetros totales | 8.190.735.360 (~8B) |
-| Parámetros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4096–32768 según configuración en tiempo de ejecución; 8192 recomendado |
-| Tipos de cuantización | Q8_0 (pesos principales) y f16 (proyector multimodal); repo de 9,9 GB |
-| Idiomas soportados | inglés (`en`) y chino (`zh`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); requiere cargar el GGUF principal y el `mmproj` conjuntamente |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 4096–32768 según runtime; 8192 recomendado |
+| Tipos de cuantización | Q8_0 (pesos principales, 8,11 GB); mmproj en f16 (1,08 GB) |
+| Idiomas soportados | Inglés (en), chino (zh) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer multimodal denso con dos componentes: un backbone de lenguaje de 36 capas y dimensión oculta 4096, y una torre de visión de 27 capas que codifica la imagen y la proyecta al espacio de embeddings del LLM mediante un proyector multimodal separado (`mmproj`). La modalidad es imagen a texto, con soporte de conversación multi-turno sobre una única imagen por turno.
+El modelo es un transformer denso multimodal de la familia Qwen3-VL, con un backbone de texto de 36 capas y dimensión oculta 4096, acoplado a una torre de visión de profundidad 27 mediante un proyector multimodal. El modelo procesa una imagen y genera texto en un único flujo autoregresivo, soportando conversación multi-turno sobre una misma imagen. El fine-tune se realizó con QLoRA sobre `prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3`, que a su vez es un checkpoint abliterado (supresión de rechazos) del Qwen3-VL-8B-Instruct original.
 
-El entrenamiento consistió en un ajuste fino QLoRA sobre `prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3`, usando el dataset `hearmeneigh/e621-rising-v3-small`. El objetivo del ajuste fue doble: concentrar la atención visual en personajes antropomórficos, dragoniles y reptilianos, y alinear el vocabulario de salida con la taxonomía canónica de etiquetas de e621 (General Top 10k) y Danbooru. No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO posteriores. El comportamiento *abliterated* (rechazo suprimido) se hereda del checkpoint base y se preserva en el ajuste.
+El corpus de entrenamiento es el dataset `hearmeneigh/e621-rising-v3-small`, que contiene anotaciones de tags explícitas de e621 y Danbooru. El objetivo del ajuste es doble: concentrar la atención visual del modelo en personajes antropomórficos, dragónidos y reptilianos, y alinear el vocabulario de salida con los estándares de etiquetado booru (tags canónicos en snake_case ordenados por saliencia). No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO adicionales. La innovación técnica destacable no está en la arquitectura, sino en la especialización del vocabulario de salida y en la preservación del comportamiento abliterated del modelo base.
 
 ## Capacidades
 
-- Predicción de etiquetas estilo booru: devuelve etiquetas canónicas en `snake_case` de e621 y Danbooru, ordenadas de mayor a menor relevancia.
-- Análisis estructurado en tres secciones con el prompt nativo: resumen de rasgos visuales, conjunto de etiquetas canónicas y etiquetas relacionadas o de estilo, en una sola pasada.
-- Descripción detallada en lenguaje natural: textos largos y seccionados en inglés que cubren especie, color y marcas del pelaje o escamas, pose, anatomía, ropa, expresión, composición, iluminación y fondo.
-- Razonamiento sobre el espacio de etiquetas: normalización, alias, relaciones hipónimo-hiperónimo y sugerencia de etiquetas relacionadas, cubierto por la porción de texto del mix de entrenamiento.
-- Ausencia de ruta de rechazo: heredada del base abliterated; describe contenido explícito en lugar de declinarlo.
-- Soporte de conversación multi-turno sobre imagen (una imagen por turno).
-- Capacidades multilingües limitadas a inglés y chino; las cabeceras de sección se emiten en el idioma de la instrucción, mientras que los tokens de etiqueta son siempre canónicos.
-- No se documenta soporte de tool calling, function calling ni razonamiento agéntico multi-paso en la información disponible.
+- Predicción de tags al estilo booru: devuelve tags canónicos en `snake_case` de e621 y Danbooru, ordenados de mayor a menor saliencia, aptos para generar captions de entrenamiento para SDXL, Flux, Illustrious, Pony y modelos similares.
+- Análisis estructurado en tres secciones: con el prompt nativo, el modelo emite un resumen de rasgos visuales, un conjunto de tags canónicos y tags relacionados o de estilo en una sola pasada.
+- Descripción detallada en lenguaje natural: descripciones largas y seccionadas en inglés que cubren especie, pelaje o escamas, anatomía y estilo.
+- Comprensión de imagen a texto: modalidad imagen → texto con soporte de chat multi-turno sobre una misma imagen.
+- Especialización en personajes antropomórficos, dragónidos, reptilianos y scalies.
+- Capacidades multilingües limitadas a inglés y chino.
+- Herencia del comportamiento abliterated: no declina peticiones explícitas y puede generar contenido NSFW no solicitado.
+- No se ha documentado soporte de tool calling, function calling ni razonamiento agéntico multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Anotación masiva de datasets de arte furry/scalie: el modelo genera etiquetas e621/Danbooru canónicas para lotes de imágenes, lo que permite construir captions de entrenamiento para SDXL, Flux, Illustrious o Pony sin anotación manual.
-- Generación de captions para fine-tuning de modelos de imagen: las descripciones largas y seccionadas en inglés sirven directamente como texto de entrenamiento con cobertura de especie, anatomía, pose e iluminación.
-- Catalogación y búsqueda en archivos personales: procesar una colección de ilustraciones para producir metadatos etiquetados que alimenten un índice de búsqueda por etiqueta.
-- Normalización de taxonomía de etiquetas: consultar al modelo sobre alias, relaciones jerárquicas y etiquetas relacionadas para limpiar y unificar vocabularios de etiquetado existentes.
-- Asistencia a artistas en la preparación de publicaciones: generar un conjunto de etiquetas y una descripción estructurada a partir de la imagen final antes de subirla a un booru.
-- Investigación sobre sesgos y alineación en modelos abliterated: el checkpoint permite estudiar cómo se comporta un modelo sin ruta de rechazo en tareas de descripción visual, en un entorno controlado y con fines de investigación.
-- Pipeline de curaduría con revisión humana: usar el modelo como primer paso automático de etiquetado y reservar la validación manual para las imágenes con etiquetas de baja confianza o contenido sensible.
+- Etiquetado automático de datasets de arte antropomórfico: el modelo genera tags canónicos de e621 y Danbooru directamente desde la imagen, lo que permite anotar corpus de miles de ilustraciones sin intervención manual y con un vocabulario consistente con el estándar de la comunidad.
+- Generación de captions para entrenamiento de modelos de difusión: los tags y descripciones producidos sirven como texto de condicionamiento para fine-tunes de SDXL, Flux, Illustrious o Pony, donde la coherencia del vocabulario booru es crítica para la calidad del entrenamiento.
+- Moderación y clasificación de contenido en plataformas de arte: el modelo puede clasificar imágenes por presencia de tags explícitos, lo que facilita el filtrado y la organización de galerías según criterios de contenido.
+- Descripción accesible de ilustraciones: generación de descripciones largas en inglés para lectores de pantalla o metadatos de galería, cubriendo especie, anatomía y estilo de personajes antropomórficos.
+- Investigación artística y de estilo: análisis sistemático de corpus visuales para estudiar la evolución de estilos, especies representadas y convenciones de etiquetado en comunidades como e621 o Danbooru.
+- Archivado y búsqueda semántica de colecciones personales: la conversión de imágenes a tags estructurados permite indexar y recuperar ilustraciones por atributos concretos (especie, color de pelaje, pose) sin depender de metadatos manuales.
+- Anotación asistida en pipelines de curación de datasets: integrado en un flujo llama.cpp, el modelo puede preetiquetar lotes de imágenes que después se revisan y corrigen, reduciendo el coste de curación de datasets especializados.
 
 ## Benchmarks y rendimiento
 
@@ -54,33 +54,34 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos Q8_0 ocupan 8,11 GB y el `mmproj` f16 otros 1,08 GB, lo que suma unos 9,2 GB solo en pesos; con overhead de contexto (8192 tokens recomendados) conviene reservar entre 11 y 14 GB de VRAM.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40/80 GB, H100; cualquier GPU con al menos 12-16 GB de VRAM puede ejecutar el modelo con contexto reducido.
-- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090) ajustando el contexto; con 8 GB no es viable en Q8_0 sin descargar capas a CPU.
-- Opciones de despliegue: llama.cpp (formato nativo), LM Studio y cualquier frontend compatible con GGUF y `mmproj`; no se distribuyen pesos en safetensors para vLLM o TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: los pesos principales en Q8_0 ocupan 8,11 GB y el proyector visual f16 ocupa 1,08 GB, lo que suma aproximadamente 9,2 GB solo en pesos; con el contexto y los buffers de llama.cpp, el consumo real se sitúa por encima de esa cifra y crece con la longitud de contexto configurada.
+- GPU recomendadas: para Q8_0 con contexto de 8192 tokens se necesita una GPU con al menos 12–16 GB de VRAM; una RTX 4090 (24 GB) o una A100/H100 ofrecen margen holgado para contextos largos y procesamiento por lotes.
+- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090) siempre que se ajuste el contexto; en tarjetas de 8 GB no cabe la configuración Q8_0 completa con el mmproj.
+- Opciones de despliegue: llama.cpp (formato nativo), LM Studio y cualquier frontend compatible con GGUF y `mmproj`; también es compatible con endpoints según los tags del repositorio.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- Requisito crítico: el GGUF principal y el `mmproj` deben cargarse juntos; si solo se carga el modelo principal, funcionará como modelo de texto y no procesará imágenes.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct-c_abliterated-v3-furry | ~8B | 4096–32768 | Etiquetado booru furry/scalie, abliterated | Apache 2.0 | GGUF |
-| prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3 (base) | ~8B | no disponible | Visión-lenguaje general, abliterated | no disponible | no disponible |
-| Qwen3-VL-8B-Instruct (original) | ~8B | no disponible | Visión-lenguaje general con rechazo | no disponible | no disponible |
+| Qwen3-VL-8B-Instruct-c_abliterated-v3-furry | ~8B | 4096–32768 | Etiquetado booru furry/anthro, NSFW | apache-2.0 | GGUF |
+| prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3 (modelo base) | ~8B | no disponible | VL generalista abliterado | apache-2.0 | safetensors/GGUF |
+| Qwen3-VL-8B-Instruct (modelo original) | ~8B | no disponible | VL generalista con rechazos | apache-2.0 | safetensors |
 
-La comparación directa con alternativas especializadas en etiquetado booru no está disponible en la información proporcionada.
+La comparativa se limita a la cadena de derivación del propio modelo, ya que no se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas especializadas en etiquetado booru en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contenido explícito: el corpus de entrenamiento incluye anotaciones NSFW adultas de e621 y Danbooru, y el modelo puede generar descripciones detalladas de contenido sexual adulto; el repositorio está etiquetado como `not-for-all-audiences`.
-- Sin ruta de rechazo: al heredar el comportamiento abliterated del base, no declina peticiones explícitas y puede producir contenido explícito no solicitado.
-- Riesgo de alucinación: como cualquier modelo de visión-lenguaje, puede inventar etiquetas o atributos visuales ausentes en la imagen, especialmente con imágenes ambiguas o de baja resolución.
-- Sesgo de dominio: el ajuste fino concentra la atención en personajes antropomórficos, dragoniles y reptilianos; el rendimiento en otros dominios visuales no está documentado y probablemente sea inferior al del base.
-- Idiomas: solo inglés y chino; no hay soporte declarado de castellano.
-- Dependencia del `mmproj`: si se carga únicamente el GGUF principal, el modelo funciona como texto puro y no procesa imágenes, con riesgo de generar captions alucinados sobre entradas en blanco.
-- Contexto: la ventana útil depende de la configuración en tiempo de ejecución; 8192 tokens es el valor recomendado y superar ese valor puede degradar la calidad.
-- Licencia: Apache 2.0 permite uso comercial, pero el uso debe cumplir la legislación aplicable; el autor restringe explícitamente la generación de contenido ilegal, con menores o que infrinja derechos de terceros.
-- Madurez: el repositorio registra 0 descargas y 1 like en el momento de la consulta, sin benchmarks publicados ni validación externa conocida.
+- Contenido NSFW: el corpus de entrenamiento contiene anotaciones explícitas de e621 y Danbooru, y el modelo es capaz de producir descripciones detalladas de contenido sexual adulto.
+- Comportamiento abliterated: el checkpoint base tiene suprimido el comportamiento de rechazo, por lo que no declinará peticiones explícitas y puede generar contenido explícito sin que se le solicite.
+- Riesgo de alucinación: como todo modelo generativo, puede inventar tags o describir atributos ausentes en la imagen, especialmente con imágenes fuera de su dominio de especialización.
+- Sesgo de dominio: el ajuste concentra la atención visual en personajes antropomórficos, dragónidos y reptilianos; el rendimiento en otros tipos de imagen no está documentado y probablemente sea inferior al del modelo base.
+- Idiomas limitados: solo inglés y chino; no hay soporte declarado de castellano.
+- Dependencia de dos ficheros: sin el `mmproj` cargado, el modelo no procesa imágenes y puede devolver captions alucinados para entradas en blanco.
+- Restricciones legales: aunque la licencia es apache-2.0, el uso debe limitarse a investigación artística lícita y anotación personal de datasets; el autor exige cumplir la legislación aplicable y prohíbe el contenido ilegal, con menores o que infrinja derechos de terceros.
+- Contexto variable: la ventana efectiva depende del runtime y de la VRAM disponible; configuraciones por encima de 8192 tokens pueden degradar el rendimiento o provocar errores de memoria.
+- Trazabilidad limitada: el modelo acumula dos derivaciones (abliterated y fine-tune furry) sobre el Qwen3-VL original, lo que dificulta atribuir comportamientos concretos a cada etapa.
 
 ## Enlaces
 

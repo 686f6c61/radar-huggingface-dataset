@@ -2,79 +2,96 @@
 
 ## Resumen
 
-Uncensored-SLM-i1-GGUF es un conjunto de cuantizaciones en formato GGUF generadas por mradermacher a partir del modelo base Uncensored-SLM, publicado originalmente por el usuario mrzenin. No se trata de un modelo entrenado desde cero por mradermacher, sino de una conversión y cuantización del modelo original en formato Hugging Face a GGUF, empleando cuantizaciones ponderadas con matriz de importancia (imatrix) para preservar la calidad en los niveles de compresión más agresivos.
+Uncensored-SLM-i1-GGUF es una coleccion de cuantizaciones GGUF, generadas con imatrix, del modelo mrzenin/Uncensored-SLM. El trabajo de cuantizacion lo firma mradermacher, un autor habitual en el ecosistema GGUF que publica versiones comprimidas de modelos abiertos para su uso en llama.cpp y derivados. El modelo subyacente se presenta como una variante "abliterated" y "decensored" de un modelo de la familia Liquid AI LFM3, orientada a generacion de texto conversacional, roleplay y razonamiento en el borde.
 
-El dato de parámetros totales reportado en la información de safetensors es de 899.013, una cifra anómala que probablemente corresponde a un recuento parcial o a un fallo en la extracción de metadatos; no es coherente con un modelo de lenguaje funcional y debe interpretarse con cautela. El tamaño del repositorio figura como 0.0 GB, lo que sugiere que los metadatos disponibles están incompletos o que el repositorio no contenía pesos en el momento de la consulta.
+El modelo base tiene 1.728.801.600 parametros (aproximadamente 1,7 mil millones) segun los pesos en safetensors, y se etiqueta como de arquitectura hibrida (hybrid-architecture) con soporte de codigo personalizado (custom_code), lo que sugiere una implementacion que no se limita a un transformer denso convencional. El repositorio GGUF ocupa 21,3 GB en total porque incluye todas las variantes de cuantizacion, desde IQ1_S hasta Q6_K, con tamanos individuales que van de 0,6 GB a 1,5 GB.
 
-La relevancia de esta ficha es limitada por la escasez de información verificable: no se dispone de model card descriptiva del modelo base, ni de especificaciones de arquitectura, contexto, licencia o idiomas. El interés principal reside en la disponibilidad de un abanico amplio de cuantizaciones GGUF (desde IQ1_S hasta Q6_K), lo que permite desplegar el modelo en hardware muy restringido, siempre que se acepten los riesgos asociados a un modelo sin documentación técnica pública.
+La relevancia de esta ficha radica en documentar una opcion de despliegue local de muy bajo coste computacional: al tratarse de un modelo de menos de 2 mil millones de parametros, las cuantizaciones de 4 bits caben en GPU de consumo y en equipos con poca VRAM, lo que lo hace atractivo para prototipos de asistentes conversacionales sin censura y para experimentacion con arquitecturas hibridas en el borde. La licencia no esta declarada en la informacion disponible.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 899.013 (dato reportado en safetensors; cifra anómala, ver advertencias) |
-| Parámetros activos | no disponible |
+| Arquitectura | hibrida (etiqueta "hybrid-architecture"), causal-LM, con custom_code |
+| Parametros totales | 1.728.801.600 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q2_K_S, IQ3_M, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q4_0, Q4_1, IQ4_NL, IQ4_XS, Q5_K_S, Q5_K_M, Q6_K, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M (además de small-IQ4_NL) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (imatrix) |
+| Idiomas soportados | en (segun model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de un modelo base en formato Hugging Face) |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
+| Tamano del repo | 21,3 GB (todas las cuantizaciones) |
+| Cuantizacion mas pequena | 0,6 GB (i1-IQ1_S) |
+| Cuantizacion recomendada | 1,2 GB (i1-Q4_K_M, "fast, recommended") |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Uncensored-SLM. La model card del repositorio de cuantizaciones no describe la arquitectura, el número de capas, el mecanismo de atención ni el esquema de entrenamiento. Los metadatos internos del proceso de cuantización indican `convert_type: hf` y `output_tensor_quantised: 1`, lo que confirma que se partió de pesos en formato Hugging Face y se aplicó una conversión a GGUF con cuantización de tensores.
+El modelo base se etiqueta como "liquid-ai", "lfm3" y "hybrid-architecture", lo que apunta a la familia de modelos Liquid Foundation Models de Liquid AI, que combinan capas de atencion con componentes de estado recurrente o convolucional en lugar de un transformer puramente denso. La model card no detalla la composicion exacta de capas, el numero de tokens de entrenamiento ni la mezcla del dataset. Tampoco se documenta si hubo RLHF, DPO u otra fase de alineamiento; las etiquetas "heretic", "abliterated", "uncensored" y "decensored" indican que el modelo base ha sido modificado para eliminar o atenuar los mecanismos de rechazo aprendidos durante el alineamiento, tipicamente mediante tecnicas de abliteration sobre las direcciones de rechazo en los pesos.
 
-El proceso de cuantización empleado por mradermacher utiliza cuantizaciones ponderadas con matriz de importancia (imatrix), una técnica que estima la relevancia de cada tensor a partir de activaciones sobre un corpus de calibración y ajusta la asignación de bits en consecuencia. Esto permite que las cuantizaciones de baja precisión (IQ2, IQ3, IQ1) conserven mejor la calidad que una cuantización uniforme equivalente. No hay información sobre el corpus de calibración, el número de tokens de entrenamiento del modelo base ni sobre si se aplicaron técnicas de alineación como RLHF o DPO.
+El trabajo de esta ficha concreta es la cuantizacion. mradermacher ha generado cuantizaciones ponderadas con fichero imatrix (Uncensored-SLM.imatrix.gguf, 0,1 GB), lo que permite crear cuantizaciones propias y suele mejorar la perplejidad de las variantes de baja precision respecto a las cuantizaciones estaticas. El autor mantiene ademas una version estatica en mradermacher/Uncensored-SLM-GGUF. No se dispone de informacion sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal mas alla de la etiqueta de arquitectura hibrida.
 
 ## Capacidades
 
-- No se dispone de documentación que detalle las capacidades del modelo base.
-- Por el nombre del modelo ("Uncensored-SLM") se infiere que se trata de un modelo de lenguaje pequeño (SLM) orientado a generación de texto con un ajuste destinado a reducir los rechazos o filtros de contenido, aunque esta inferencia no está confirmada por ninguna fuente técnica.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto causal y conversacional multi-turno.
+- Razonamiento (etiqueta "reasoning" en la model card), sin detalle de modo thinking explicito.
+- Roleplay y conversacion sin censura, segun las etiquetas "uncensored", "decensored" y "abliterated".
+- Soporte de arquitectura hibrida orientada a edge-ai, es decir, despliegue en dispositivos con recursos limitados.
+- Codigo personalizado (custom_code), lo que implica que la carga del modelo requiere confiar en implementaciones incluidas en el repositorio original.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Idiomas: ingles unicamente segun la model card.
+- No se documenta soporte de tool calling, function calling, agentes, vision ni audio.
 
 ## Casos de uso
 
-- Experimentación local en hardware restringido: las cuantizaciones IQ1_S e IQ2_XXS permiten ejecutar el modelo en equipos con muy poca memoria, lo que resulta útil para pruebas de concepto y evaluación de viabilidad antes de invertir en infraestructura mayor.
-- Despliegue en dispositivos de borde: las variantes Q4_0 y Q4_1 son compatibles con runtimes ligeros y pueden integrarse en aplicaciones de escritorio o móviles mediante llama.cpp, siempre que el tamaño real del modelo lo permita.
-- Generación de texto sin restricciones temáticas en entornos controlados: el ajuste "uncensored" puede interesar a investigadores que estudian el comportamiento de modelos sin alineación de seguridad, en contextos de laboratorio y con las salvaguardas adecuadas.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece más de veinte variantes del mismo modelo, lo que permite medir el impacto de la compresión en la perplejidad y la calidad de generación sobre un mismo modelo base.
-- Prototipado de pipelines con Ollama o llama.cpp: la disponibilidad de GGUF facilita la integración en flujos de trabajo locales sin necesidad de GPU dedicada, usando las variantes Q4_K_M o Q5_K_M como compromiso entre calidad y tamaño.
-- Fine-tuning posterior sobre cuantizaciones: aunque no es el uso habitual, las variantes de mayor precisión (Q6_K) pueden servir como referencia para comparar el efecto de adaptaciones posteriores sobre el modelo original.
+- Asistente conversacional local sin conexion: con cuantizaciones de 1,2 GB (i1-Q4_K_M) el modelo cabe en practicamente cualquier GPU de consumo y en CPU con RAM modesta, lo que permite desplegar un chatbot de roleplay o compania en un portatil sin depender de la nube.
+- Prototipado de personajes y narrativa interactiva: el sesgo "uncensored" y la orientacion a roleplay lo hacen util para experimentar con dialogos sin las restricciones de rechazo tipicas de modelos alineados, en entornos controlados y con moderacion externa.
+- Evaluacion de arquitecturas hibridas en el borde: investigadores que quieran medir el comportamiento de un modelo LFM3 cuantizado en dispositivos de bajos recursos pueden usar las variantes IQ2/IQ3 (0,7-1,0 GB) para comparar latencia y calidad frente a transformers densos del mismo tamano.
+- Generacion de texto en pipelines de CI o scripts: al ser un GGUF compatible con llama.cpp, se puede invocar desde herramientas de linea de comandos para tareas de generacion, resumen o reescritura en lotes pequenos.
+- Base para fine-tuning ligero y experimentacion con abliteration: al ser un modelo de 1,7 B, sirve como banco de pruebas para estudiar el efecto de la abliteration en modelos pequenos y para comparar contra el modelo base sin modificar.
+- Despliegue en entornos con GPU integrada o Apple Silicon: las cuantizaciones Q4 y Q5 (1,2-1,4 GB) permiten ejecucion en Metal o en iGPU con memoria unificada, adecuado para demos y aplicaciones de escritorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión, ya que el número real de parámetros del modelo base no está confirmado. El dato de 899.013 parámetros reportado en safetensors es inconsistente con un modelo de lenguaje operativo y no permite calcular requisitos de memoria fiables.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no determinable sin conocer el tamaño real del modelo; las cuantizaciones IQ1_S e IQ2_XXS están diseñadas para minimizar el uso de memoria y podrían caber en GPU de gama baja si el modelo base es efectivamente pequeño.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todos los casos, por lo que su uso requeriría los pesos originales en safetensors.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 0,7-1,0 GB con IQ2/IQ3, 1,2-1,4 GB con Q4/Q5 y 1,5 GB con Q6_K, mas overhead de contexto y del runtime.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM libre; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobredimensionadas para este modelo y permitiran contextos largos y mayor throughput.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU discretas modernas y en iGPU con memoria compartida; tambien en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base requiere transformers con custom_code.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base ni sobre alternativas comparables de la misma categoría (modelos pequeños sin alineación de seguridad) con datos verificables de parámetros, contexto o rendimiento.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Uncensored-SLM-i1-GGUF | 1,73 B | no disponible | no disponible | GGUF (multiples cuantizaciones) | Variante abliterated de LFM3, solo ingles |
+| mradermacher/Uncensored-SLM-GGUF | 1,73 B | no disponible | no disponible | GGUF estatico | Misma base, cuantizaciones sin imatrix |
+| mrzenin/Uncensored-SLM | 1,73 B | no disponible | no disponible | safetensors | Modelo base sin cuantizar |
+| Alternativas de ~1-2 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks para comparar rendimiento |
+
+No se dispone de datos de rendimiento comparado con otros modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El recuento de parámetros reportado (899.013) es anómalo y probablemente erróneo; no debe usarse para dimensionar infraestructura ni para estimar requisitos de memoria.
-- El tamaño del repositorio figura como 0.0 GB, lo que puede indicar que los pesos no estaban disponibles o que los metadatos están incompletos en el momento de la consulta.
-- No hay model card del modelo base accesible en la información proporcionada, por lo que se desconocen los datos de entrenamiento, la composición del corpus y los posibles sesgos.
-- El nombre "Uncensored" sugiere un ajuste destinado a reducir los filtros de seguridad; esto implica un riesgo elevado de generar contenido inapropiado, ofensivo o dañino, y su uso en producción requiere salvaguardas adicionales.
-- Riesgo de alucinación: no evaluado; sin benchmarks ni documentación, no es posible estimar la fiabilidad factual del modelo.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Antes de cualquier despliegue en producción debe verificarse la licencia del modelo base en el repositorio de mrzenin.
-- Idiomas soportados desconocidos: no hay garantía de un rendimiento aceptable en castellano ni en otros idiomas distintos del inglés.
-- Las cuantizaciones de muy baja precisión (IQ1_S, IQ2_XXS) degradan notablemente la calidad de generación; deben usarse solo cuando la restricción de memoria sea el factor limitante.
-- La fecha de creación del repositorio (2026-11-18) es posterior a la fecha actual en la mayoría de contextos de consulta; conviene verificar la vigencia y el estado real del repositorio antes de utilizarlo.
+- La licencia no esta declarada; antes de cualquier uso comercial es imprescindible verificar la licencia del modelo base mrzenin/Uncensored-SLM y de la familia LFM3 original.
+- El modelo esta entrenado y etiquetado unicamente en ingles; el rendimiento en castellano no esta garantizado.
+- Las etiquetas "uncensored", "abliterated" y "decensored" implican que se han atenuado los mecanismos de rechazo; esto aumenta el riesgo de generar contenido danino, sesgado o inexacto y exige moderacion externa en produccion.
+- Riesgo de alucinacion elevado por el reducido tamano del modelo (1,7 B) y por las cuantizaciones agresivas (IQ1, IQ2), que degradan la calidad de forma notable.
+- Las cuantizaciones de 1 y 2 bits (IQ1_S, IQ1_M, IQ2_XXS) estan marcadas por el propio autor como "for the desperate" o "mostly desperate"; no son aptas para uso serio.
+- El modelo base requiere custom_code, lo que implica ejecutar codigo del repositorio original; conviene auditar dicho codigo antes de cargarlo en entornos sensibles.
+- No se documentan la longitud de contexto ni el comportamiento en conversaciones largas; hay que validarlo empiricamente.
+- No se dispone de informacion sobre sesgos especificos medidos, pero los modelos abliterated suelen conservar y amplificar sesgos presentes en los datos de entrenamiento originales.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Uncensored-SLM-i1-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Uncensored-SLM-i1-GGUF
+- Repositorio GGUF estatico: https://huggingface.co/mradermacher/Uncensored-SLM-GGUF
 - Modelo base: https://huggingface.co/mrzenin/Uncensored-SLM
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.
+- Pagina de descargas del autor: https://hf.tst.eu/model#Uncensored-SLM-i1-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- nethype GmbH: https://www.nethype.de/

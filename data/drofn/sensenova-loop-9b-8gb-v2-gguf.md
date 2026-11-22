@@ -2,99 +2,104 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-8GB-v2-GGUF es una cuantización GGUF del modelo SenseNova-Loop-9B, publicada por el usuario drofn. El modelo base lo desarrolla SenseNova y emplea una arquitectura de transformer con bucles (looped transformer) de aproximadamente 9.200 millones de parámetros. Esta versión v2 incorpora dos novedades respecto a la v1: la cabeza de predicción multi-token (MTP) para decodificación especulativa y un fichero alternativo con soporte opcional de entrada de imágenes mediante el proyector visual oficial.
+SenseNova-Loop-9B-8GB-v2-GGUF es una cuantizacion GGUF del modelo SenseNova-Loop-9B, desarrollada por el usuario drofn y publicada en Hugging Face. El modelo base, obra de SenseNova, es un transformer con arquitectura de bucles (looped transformer) de 9.200 millones de parametros, disenado para generacion de texto y comprension de imagenes en modalidad image-text-to-text. Esta version concreta resuelve el problema de ejecutar un modelo de 9B con contexto muy largo en GPUs de consumo con solo 8 GB de VRAM, mediante mezclas de cuantizacion asignadas por sensibilidad y una cabeza de prediccion multi-token (MTP) que acelera la decodificacion.
 
-El objetivo del autor es permitir la ejecución completa del modelo, incluidas todas las capas, en una GPU de consumo con 8 GB de VRAM, sin desbordamiento a memoria compartida del sistema. Para ello utiliza mezclas de cuantización asignadas por sensibilidad, con caché KV en q4_0 y un runtime de llama.cpp parcheado. En una RTX 4060 de 8 GB se alcanzan 47,8 tok/s de generación con MTP activado en el fichero de texto, y 53,5 tok/s en el fichero con visión.
+La version v2 anade dos novedades respecto a la v1: la inclusion de la cabeza MTP (15 tensores, unos 208 MB) que permite decodificacion especulativa con `--spec-type draft-mtp`, y un fichero opcional con capacidad de vision (`8GB-v2-Vision`) que, junto al proyector mmproj oficial de 0,92 GB, permite procesar imagenes manteniendo 81.920 tokens de contexto en la misma tarjeta. El fichero solo texto alcanza 104.448 tokens de contexto.
 
-El modelo está pensado para desarrolladores que necesitan desplegar localmente un modelo conversacional multimodal con contexto largo (hasta 104.448 tokens en la variante de texto) en hardware modesto. La licencia Apache-2.0 facilita su uso comercial, y los idiomas declarados son inglés, chino y turco.
+El modelo es relevante porque demuestra que es posible desplegar un modelo multimodal de 9B con ventanas de contexto superiores a 100.000 tokens en hardware de gama media (RTX 4060 8 GB), con velocidades de generacion de 47,8 tok/s en texto y 53,5 tok/s en vision gracias a MTP, y con una tasa de aceptacion de borradores del 71,9-74,1%. La licencia Apache-2.0 facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con bucles (looped transformer) |
+| Arquitectura | Transformer con bucles (looped transformer) y cabeza MTP para decodificacion especulativa |
 | Parametros totales | 9.200.240.000 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 104.448 tokens (8GB-v2); 81.920 tokens (8GB-v2-Vision) |
-| Tipos de cuantizacion | GGUF con mezclas por sensibilidad; caché KV en q4_0; cabeza MTP con matrices Q6_K, `eh_proj` Q8_0 y normas F32; proyector visual F16 |
+| Longitud de contexto | 104.448 tokens (fichero solo texto); 81.920 tokens (fichero Vision con mmproj) |
+| Tipos de cuantizacion | Mezclas por sensibilidad (no es una cuantizacion uniforme); pesos MTP en Q6_K, `eh_proj` en Q8_0, normas en F32; cache KV en q4_0; escalera completa Q8_0 a IQ2_XS disponible en repo separado |
 | Idiomas soportados | en, zh, tr |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (5,76 GB texto; 5,19 GB visión; 0,92 GB mmproj) |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base SenseNova-Loop-9B emplea una arquitectura de transformer con bucles, en la que el bloque se reutiliza iterativamente, lo que permite aumentar la profundidad efectiva sin incrementar proporcionalmente el número de parámetros. La cuantización GGUF mantiene esta topología y añade una cabeza de predicción multi-token (MTP) de 15 tensores y unos 208 MB, que actúa como un pequeño bloque decodificador adicional para generar borradores de tokens que el modelo principal verifica en un solo lote.
+El modelo base SenseNova-Loop-9B emplea una arquitectura de transformer con bucles, en la que el mismo bloque se reaplica varias veces para incrementar la profundidad efectiva sin aumentar proporcionalmente el numero de parametros. Esta version GGUF conserva los pesos cuantizados del modelo original y anade la cabeza MTP, un pequeno bloque decodificador adicional que genera borradores de tokens que el modelo principal verifica en un solo lote. La cabeza MTP consta de 15 tensores con matrices de pesos en Q6_K, proyeccion `eh_proj` en Q8_0 y normas en F32, sumando aproximadamente 208 MB.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La innovación técnica destacable de esta publicación es la combinación de MTP con decodificación especulativa en llama.cpp (`--spec-type draft-mtp`), que según el autor incrementa la velocidad de generación entre 1,8 y 1,9 veces, con una tasa de aceptación de borradores del 71,9 % al 74,1 % en la prueba realizada. La cuantización usa mezclas asignadas por sensibilidad por tensor, con una divergencia KL media frente a Q8_0 de 0,0703/0,0762 (fichero de texto) y 0,1375/0,1213 (fichero de visión).
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en la informacion proporcionada. La cuantizacion se realizo con asignacion de sensibilidad por tensor (sensitivity-allocated mixes) en lugar de una cuantizacion uniforme, lo que permite mantener mayor fidelidad en las capas mas sensibles. Los valores de divergencia KL respecto a Q8_0 son de 0,0703 y 0,0762 (conjuntos 1 y 2) para el fichero solo texto, y de 0,1375 y 0,1213 para el fichero Vision.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto largo (hasta 104.448 tokens).
-- Razonamiento y generación de código: la prueba de velocidad del autor solicita una función Python y tres tests de pytest.
-- Entrada de imágenes en la variante 8GB-v2-Vision: descripción de formas geométricas, posiciones y lectura de texto en imágenes (probado con imágenes sintéticas de 512×512 y 1920×1080).
-- Decodificación especulativa mediante cabeza MTP integrada.
-- Capacidades multilingües en inglés, chino y turco.
-- Compatibilidad con endpoints (tag `endpoints_compatible`) y uso conversacional.
-- No se documenta soporte explícito de tool calling, function calling ni agentes multi-paso en la información disponible.
+- Generacion de texto conversacional multi-turno con contexto muy largo (hasta 104.448 tokens en el fichero solo texto).
+- Comprension de imagenes en modalidad image-text-to-text mediante el proyector mmproj oficial (fichero 8GB-v2-Vision).
+- Decodificacion especulativa con cabeza MTP, que acelera la generacion aproximadamente 1,85x (de 25,9 a 47,8 tok/s en texto; de 28,4 a 53,5 tok/s en vision).
+- Generacion de codigo: el modelo fue evaluado generando funciones Python y tests de pytest.
+- Razonamiento sobre textos largos: recuperacion de hechos distribuidos en contextos de mas de 100.000 tokens (3/3 hechos encontrados en las pruebas).
+- Soporte multilingue en ingles, chino y turco.
+- Capacidad de thinking mode (mencionada en la configuracion de las pruebas, con opcion de desactivarlo).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
 
 ## Casos de uso
 
-- Asistencia de código en local: el modelo genera funciones y tests unitarios (el autor lo prueba con Python y pytest) en una RTX 4060 de 8 GB, lo que permite integrarlo en entornos de desarrollo sin GPU de datacenter.
-- Procesamiento de documentos largos: con 104.448 tokens de contexto en el fichero de texto, se pueden analizar contratos, informes o bases de código completas y extraer hechos concretos; el autor verificó la recuperación de 3 de 3 hechos ocultos en un prompt de 102.903 tokens.
-- Análisis de imágenes y facturas: la variante Vision lee texto en imágenes (probado con "INVOICE 2026-117 TOTAL 349 TL") y describe la posición de elementos, útil para digitalización de documentos o inspección visual básica.
-- Chat multilingüe en inglés, chino y turco: adecuado para atención al cliente o asistentes en esos tres idiomas sin necesidad de infraestructura en la nube.
-- Despliegue en estaciones de trabajo con GPU de consumo: al caber en 8 GB de VRAM con todas las capas en GPU, sirve para prototipado y demos locales con llama-server.
-- Generación acelerada en producción de baja escala: con MTP activado se obtienen 47,8 tok/s en texto y 53,5 tok/s en visión, suficiente para asistentes interactivos en un solo usuario o pocos concurrentes.
-- Experimentación con decodificación especulativa: la inclusión de la cabeza MTP y el runtime parcheado permiten estudiar tasas de aceptación y calidad frente a generación greedy.
+- Analisis de documentos extensos: el modelo puede procesar contratos, informes o articulos de hasta 104.448 tokens en una sola pasada, extrayendo hechos concretos distribuidos a lo largo del texto, como demuestra la prueba de recuperacion de 3/3 hechos en 102.903 tokens.
+- Generacion de codigo en local: con 47,8 tok/s en una RTX 4060, es viable integrarlo en editores o pipelines de desarrollo para autocompletar funciones y generar tests unitarios de pytest, sin depender de APIs externas.
+- Asistencia con imagenes en hardware de consumo: el fichero Vision permite enviar capturas de pantalla, diagramas o documentos escaneados junto con texto, manteniendo 81.920 tokens de contexto en 8 GB de VRAM.
+- Chat multi-turno con contexto largo: gracias a la ventana de 104.448 tokens, puede mantener conversaciones extensas recordando informacion de turnos muy anteriores, adecuado para asistentes tecnicos o de soporte.
+- Procesamiento de imagenes medicas o tecnicas: en entornos con requisitos de privacidad, el despliegue local con llama.cpp evita enviar datos a servicios en la nube.
+- Investigacion en arquitecturas looped transformer: al ser un modelo abierto con licencia Apache-2.0 y pesos GGUF, sirve para experimentar con decodificacion especulativa MTP y comparar tecnicas de cuantizacion por sensibilidad.
+- Despliegue en entornos con GPU limitada: el modelo cabe en GPUs de 8 GB (RTX 4060, RTX 3070, RTX 4060 Ti) con todas las capas en GPU y uso de memoria compartida inferior a 200 MiB.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor únicamente reporta métricas de velocidad y divergencia KL, que se recogen a continuación.
-
 | Metrica | 8GB-v2 (texto) | 8GB-v2-Vision + mmproj |
 |---|---|---|
-| Generacion MTP off | 25,9 tok/s | 28,4 tok/s |
-| Generacion MTP on | 47,8 tok/s | 53,5 tok/s |
-| Borradores aceptados | 235/327 (71,9 %) | 238/321 (74,1 %) |
-| KLD media vs Q8_0 (set 1 / set 2) | 0,0703 / 0,0762 | 0,1375 / 0,1213 |
-| Prefill en contexto largo | 722 tok/s (102.903 tokens) | 767 tok/s (80.380 tokens) |
-| Generacion en contexto largo | 20,2 tok/s | 27,3 tok/s |
+| Generacion MTP off (tok/s) | 25,9 | 28,4 |
+| Generacion MTP on (tok/s) | 47,8 | 53,5 |
+| Tokens borrador aceptados | 235/327 (71,9%) | 238/321 (74,1%) |
+| KLD media vs Q8_0 (conjunto 1 / 2) | 0,0703 / 0,0762 | 0,1375 / 0,1213 |
+| Prefill con contexto largo (tok/s) | 722 (102.903 tokens) | 767 (80.380 tokens) |
+| Generacion con contexto largo (tok/s) | 20,2 | 27,3 |
+| Hechos recuperados en contexto largo | 3/3 | 3/3 |
 
-Las mediciones se realizaron en una RTX 4060 de 8 GB bajo Windows, sin pantalla conectada, con ejecuciones únicas (no medianas), temperatura 0, thinking desactivado y `--spec-draft-n-max 2`.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las pruebas se realizaron en una RTX 4060 8 GB bajo Windows sin pantalla conectada, con ejecuciones unicas (no medianas), prompt de 58 tokens, salida de 400 tokens, temperatura 0 y `--spec-draft-n-max 2`.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 8 GB para el fichero de texto (5,76 GB de pesos) y para el de visión (5,19 GB de pesos más 0,92 GB de proyector), con caché KV en q4_0.
-- GPU recomendadas: RTX 4060 de 8 GB es la plataforma medida por el autor; cualquier GPU con al menos 8 GB de VRAM debería poder ejecutar las mismas configuraciones, aunque no se aportan mediciones en otras tarjetas.
-- Cabe en GPU de consumo: sí, en tarjetas de 8 GB o más, siempre que el driver no derive asignaciones a memoria compartida (el autor advierte que en Windows esto puede ocurrir y degradar el rendimiento).
-- Opciones de despliegue: llama.cpp con runtime parcheado (llama-server) para soportar `--spec-type draft-mtp`; también es compatible con endpoints según los tags, aunque no se detalla la integración.
-- Latencia y throughput: 47,8 tok/s (texto) y 53,5 tok/s (visión) con MTP en RTX 4060; 20,2 y 27,3 tok/s respectivamente en generación con contexto cercano al límite.
+- VRAM estimada: 8 GB para el fichero solo texto (5,76 GB de pesos) y para el fichero Vision (5,19 GB de pesos) mas el proyector mmproj (0,92 GB).
+- GPU recomendadas: RTX 4060 8 GB (medida en las pruebas), RTX 3070 8 GB, RTX 4060 Ti 8 GB. Para contexto completo sin cuantizar, se necesitarian GPUs con mas VRAM (A100, H100), aunque no se proporcionan datos de rendimiento para estas.
+- Cabe en GPU de consumo de 8 GB: si, con todas las capas en GPU y memoria compartida del sistema inferior a 200 MiB.
+- Opciones de despliegue: llama.cpp con el fork parcheado especifico (los ficheros de este repo no cargan en la build del PR #32588); la build del PR #32588 requiere los ficheros del repo `drofn/SenseNova-Loop-9B-GGUF` y es mas lenta en RTX 4060 por falta de kernels CUDA para el enrutamiento mHC.
+- Latencia y throughput: 47,8 tok/s (texto, MTP on) y 53,5 tok/s (vision, MTP on) en RTX 4060; prefill de 722-767 tok/s con contextos de 80.000-103.000 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| SenseNova-Loop-9B-8GB-v2 (este) | 9,2 B | 104.448 (texto) / 81.920 (visión) | Apache-2.0 | Cuantización GGUF para 8 GB, MTP y visión opcional |
-| drofn/SenseNova-Loop-9B-8GB-GGUF (v1) | 9,2 B | 100K / 128K | Apache-2.0 | Sin cabeza MTP ni entrada de imágenes |
-| sensenova/SenseNova-Loop-9B-GGUF (oficial) | 9,2 B | no disponible | Apache-2.0 | GGUF oficial del que se copia el proyector F16 |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| SenseNova-Loop-9B-8GB-v2 (este) | 9,2B | 104.448 (texto) / 81.920 (vision) | Apache-2.0 | GGUF | Optimizado para 8 GB VRAM, MTP, vision opcional |
+| SenseNova-Loop-9B-8GB-v3 | 9,2B | 104.448 (texto) / 57.344 (vision) | Apache-2.0 | GGUF | KLD ~20% menor que v2; menos contexto con imagenes |
+| SenseNova-Loop-9B-GGUF (drofn, PR #32588) | 9,2B | no disponible | Apache-2.0 | GGUF | Escalera completa Q8_0 a IQ2_XS, requiere build PR #32588 |
+| AtomicChat AD-Q4_K_M | 9,2B | no disponible | no disponible | GGUF | KLD cercano o mejor que v3 segun la model card de v3 |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento cualitativo con otras alternativas de la misma categoría.
+No se dispone de datos de benchmarks estandar para comparar rendimiento en tareas como MMLU o HumanEval con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La tasa de aceptación de borradores MTP se midió con un único prompt de código; en otras tareas puede variar.
-- Con MTP activado, la salida greedy no siempre es idéntica token a token a la de MTP desactivado: el autor observó una diferencia de una palabra en los primeros 300 caracteres en una ejecución.
-- Las pruebas de visión se limitaron a dos imágenes sintéticas; no se ejecutó ningún benchmark de visión.
-- En Windows, el driver NVIDIA puede mover asignaciones a memoria compartida del sistema en lugar de fallar, lo que reduce el rendimiento sin aviso evidente.
-- El modelo solo declara inglés, chino y turco; no se garantiza un rendimiento adecuado en castellano.
-- No se documentan evaluaciones de sesgos ni de tasa de alucinación.
-- El uso comercial está permitido por la licencia Apache-2.0, pero el runtime parcheado de llama.cpp y la cabeza MTP deben verificarse en el entorno de producción.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria independiente.
+- La tasa de aceptacion de tokens borrador (71,9-74,1%) se midio con un unico prompt de codigo; en otras tareas puede variar significativamente.
+- Los ficheros de este repositorio no cargan en la build estandar del PR #32588 de llama.cpp; requieren un fork parcheado especifico, lo que limita la portabilidad.
+- La build del PR #32588 es actualmente mas lenta en RTX 4060 por falta de kernels CUDA para el enrutamiento mHC.
+- El fichero Vision reduce el contexto a 81.920 tokens (frente a 104.448 del solo texto) para acomodar el proyector mmproj en 8 GB.
+- La version v3 del mismo autor ofrece menor divergencia KL (aproximadamente 20% menos) pero menor contexto con imagenes (57.344 tokens); v2 sigue siendo preferible para vision con contexto largo.
+- Solo se soportan tres idiomas (en, zh, tr); el rendimiento en otros idiomas no esta documentado.
+- No se han publicado datos sobre sesgos, riesgo de alucinacion ni evaluaciones de seguridad en la informacion disponible.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base es de SenseNova y se debe verificar el cumplimiento de sus terminos.
+- El rendimiento medido corresponde a ejecuciones unicas (no medianas) en una unica configuracion de hardware (RTX 4060, Windows), por lo que la variabilidad entre ejecuciones no esta cuantificada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-v2-GGUF
+- Version v3: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-v3-GGUF
+- Version v1: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF
+- Repo con escalera completa de cuantizacion: https://huggingface.co/drofn/SenseNova-Loop-9B-GGUF
+- Coleccion de todas las versiones: https://huggingface.co/collections/drofn/sensenova-loop-9b-gguf-for-6-8-gb-gpus-6aff1a746c005b20c4230d30
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- GGUF oficial con proyector F16: https://huggingface.co/sensenova/SenseNova-Loop-9B-GGUF
-- Versión anterior v1: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF
-- Ficha de referencia en free2aitools: https://free2aitools.com/model/drofn/sensenova-loop-9b-8gb-gguf
+- GGUF oficial de SenseNova: https://huggingface.co/sensenova/SenseNova-Loop-9B-GGUF
+- PR de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/32588

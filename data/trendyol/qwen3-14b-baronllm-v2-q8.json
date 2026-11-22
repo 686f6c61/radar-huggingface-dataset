@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "Trendyol/Qwen3-14B-BaronLLM-v2-Q8",
+  "slug": "trendyol-qwen3-14b-baronllm-v2-q8",
+  "author": "Trendyol",
+  "url": "https://huggingface.co/Trendyol/Qwen3-14B-BaronLLM-v2-Q8",
+  "created_at": "2025-08-16T03:24:59.000Z",
+  "updated_at": "2026-11-21T21:21:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "dataset:Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset",
+    "dataset:Trendyol/All-CVE-Chat-MultiTurn-1999-2025-Dataset",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:quantized:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 15698840677,
+  "storage_human": "15.7 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yılın Alışverişi Trendyol'da - Kasım'da Rekor İndirimleri Kaçırma",
+      "url": "https://www.trendyol.com/",
+      "snippet": "Trendyol’dan alışveriş yapan kullanıcılar, farklı kategorilerde binlerce marka ve ürün seçeneğini karşılaştırabilir, ihtiyaçlarına en …Read more"
+    },
+    {
+      "title": "Trendyol | Shop for Latest Fashion Trends & Accessories",
+      "url": "https://www.trendyol.com/en",
+      "snippet": "21 hours ago · Shop the latest fashion trends on Trendyol! Explore our collections of clothing, accessories and shoes now!"
+    },
+    {
+      "title": "Trendyol en ligne sur Zalando",
+      "url": "https://www.zalando.fr/trendyol/",
+      "snippet": "La marque Trendyol vous dévoile tous les secrets de la mode contemporaine à travers ses collections à mi-chemin entre cosy et …Read more"
+    },
+    {
+      "title": "تسوّق عروض 11.11 الكبرى | خصومات حصرية في ترينديول",
+      "url": "https://www.trendyol.sa/",
+      "snippet": "اكتشف تجربة تسوّق متكاملة على ترينديول السعودية (Trendyol KSA) 🧡 تسوّق الأزياء والإلكترونيات ومنتجات الجمال والأحذية والحقائب ومستلزمات المنزل من ماركات تركية وعالمية."
+    },
+    {
+      "title": "Lisez les avis marchands de trendyol.com - Trustpilot",
+      "url": "https://fr.trustpilot.com/review/trendyol.com",
+      "snippet": "Aug 14, 2026 · Want to feel stylish on a budget? Trendyol is your latest fashion destination where trends meet affordability. With our …Read more"
+    }
+  ]
+}

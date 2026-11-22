@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 572,
+  "downloads_30d": 630,
   "trending_score": 0,
   "parameters": 4628569635,
   "parameters_human": "4.63B",
@@ -52,5 +52,26 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "openTARS: the local AI assistant for Linux, Windows and macOS",
+      "url": "https://project-opentars.github.io/OpenTARS/",
+      "snippet": "openTARS is an AI assistant that does the work on your computer. It opens programs, presses buttons by their name, types, runs …"
+    },
+    {
+      "title": "GitHub - project-opentars/OpenTARS: Local AI assistant for Linux ...",
+      "url": "https://github.com/project-opentars/OpenTARS",
+      "snippet": "5.2 takes openTARS beyond Ubuntu and makes it an assistant for the whole system, the way assistants built into an operating …"
+    },
+    {
+      "title": "GitHub - Hexman768/OpenTARS: OpenTARS is a virtual Artificial ...",
+      "url": "https://github.com/Hexman768/OpenTARS",
+      "snippet": "OpenTARS OpenTARS is a virtual Artificial Intelligence assistant based on the robot from the movie 'Interstellar'."
+    },
+    {
+      "title": "OpenTARS/openTARS · Hugging Face",
+      "url": "https://huggingface.co/OpenTARS/openTARS",
+      "snippet": "This repository is a mirror of the app for people who find openTARS here. The source of truth, issues and releases are on GitHub: …"
+    }
+  ]
 }

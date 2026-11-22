@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 74,
-  "downloads_30d": 573,
+  "downloads_30d": 603,
   "trending_score": 22,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -60,31 +60,5 @@
   "renamed_to": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
   "renamed_at": "2026-11-11T02:36:47.934Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Best Flea, Tick & Worm Treatments for Dogs in Australia (2026 Vet …",
-      "url": "https://vetslovepets.com.au/blogs/dog/best-dog-flea-tick-treatments",
-      "snippet": "Jul 16, 2026 · Find the right flea, tick &amp; worm treatment for your dog with this vet-approved Australian guide, covering top …"
-    },
-    {
-      "title": "DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709 · Hugging Face",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709",
-      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "10 Best Pet Dewormer And Parasite Medications in Australia - 2026",
-      "url": "https://www.bestfive.com.au/bestproducts/pet-dewormer-and-parasite-medications",
-      "snippet": "1 day ago · Explore our top 10 picks for pet dewormer and parasite medications products in Australia. Featuring trusted brands and …"
-    },
-    {
-      "title": "DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718 · Hugging Face",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718",
-      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-BIGBANG-Cold-Fusion-718 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "The 8 Best Dog Worming Tablets: Tested & Evaluated 2026 ...",
-      "url": "https://gentledogtrainers.com.au/best-dog-worming-tablets-australia/",
-      "snippet": "Jan 14, 2026 · To help you find the best option for your dog, we teamed up with veterinarians and other canine experts to test out and …"
-    }
-  ]
+  "sources": []
 }

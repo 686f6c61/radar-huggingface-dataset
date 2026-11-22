@@ -2,49 +2,49 @@
 
 ## Resumen
 
-bioreason-pro-v1-9b-interpro-GGUF es una conversión a formato GGUF del modelo bioreason-pro-v1-9b-interpro, publicada por el usuario mradermacher. Se trata de una cuantización estática del modelo original alojado en el repositorio adibvafa/bioreason-pro-v1-9b-interpro, orientada a su despliegue en entornos de inferencia local mediante llama.cpp y herramientas compatibles con GGUF. El modelo cuenta con 8.953.803.264 parámetros totales (aproximadamente 9.000 millones), lo que lo sitúa en la categoría de modelos de tamaño medio.
+BioReason-Pro v1 9B InterPro es un modelo de lenguaje de aproximadamente 8.950 millones de parámetros (8,95B) especializado en razonamiento sobre datos biológicos, concretamente en la interpretación de anotaciones de proteínas asociadas a InterPro. El modelo original fue desarrollado por adibvafa (bajo el identificador `adibvafa/bioreason-pro-v1-9b-interpro`) y esta ficha describe la versión cuantizada en formato GGUF publicada por mradermacher, un conocido distribuidor de cuantizaciones para el ecosistema llama.cpp.
 
-El nombre del modelo sugiere un enfoque en razonamiento aplicado al ámbito biomédico ("bioreason"), aunque no se dispone de documentación técnica del autor original que confirme esta orientación ni detalle la composición del dataset de entrenamiento. La model card del repositorio GGUF es prácticamente inexistente: solo incluye metadatos automáticos del proceso de cuantización, sin descripción funcional, sin especificaciones de contexto y sin resultados de evaluación.
+La relevancia de esta publicación radica en que pone a disposición de la comunidad una versión ejecutable en hardware de consumo de un modelo de razonamiento biológico de ~9B parámetros. Al estar en formato GGUF con múltiples niveles de cuantización (desde Q2_K de 3,9 GB hasta f16 de 18,0 GB), permite desplegar el modelo en GPUs de gama media e incluso en CPU, algo imposible con los pesos originales en safetensors de precisión completa.
 
-La relevancia de esta ficha es limitada por la escasez de información verificable. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y no se han publicado benchmarks, detalles de licencia ni idiomas soportados. Cualquier evaluación de producción debería contrastarse directamente con el repositorio del modelo original antes de adoptarlo.
+No obstante, la información pública disponible es muy limitada: la model card del repositorio GGUF es una plantilla estándar de mradermacher centrada en las cuantizaciones, sin detalles sobre arquitectura, datos de entrenamiento, benchmarks ni capacidades específicas del modelo base. La licencia CC-BY-NC-4.0 restringe además el uso comercial. Esta ficha refleja únicamente los datos verificables y marca explícitamente como "no disponible" todo aquello que no se ha podido confirmar.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer; no confirmado) |
-| Parametros totales | 8.953.803.264 (aprox. 9B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (transformer, inferido por el formato de pesos y la librería transformers; detalles no confirmados) |
+| Parámetros totales | 8.953.803.264 (~8,95B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el original presumiblemente en safetensors |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | inglés (según el campo `language: en` de la model card) |
+| Licencia | cc-by-nc-4.0 (Creative Commons Atribución-NoComercial 4.0) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo original. El recuento de parámetros (8.953.803.264) es coherente con un transformer denso de aproximadamente 9.000 millones de parámetros, pero no se confirma en la documentación disponible ni el tipo de atención, ni la presencia de componentes MoE, SSM o híbridos. Tampoco se detalla el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada.
+No se dispone de información detallada sobre la arquitectura interna del modelo base. Por el nombre (`9b-interpro`), el tamaño de parámetros (~8,95B) y la librería declarada (`transformers`), se trata presumiblemente de un transformer decoder-only de aproximadamente 9B parámetros, pero no se confirma en la documentación disponible si emplea atención estándar, atención lineal u otra variante, ni el número de capas, cabezas o dimensión oculta.
 
-El proceso de conversión a GGUF sí está documentado a nivel de metadatos: se trata de una cuantización estática (quantize_version 2) con tensores de salida cuantizados (output_tensor_quantised 1) y conversión de tipo "hf" (Hugging Face). El campo skip_mmproj con valor 1 indica que no se incluye proyector multimodal, lo que sugiere que el modelo original es exclusivamente de texto, aunque esto no se confirma explícitamente. No se ha publicado ninguna innovación técnica destacable en la información disponible.
+Tampoco se han publicado en la información disponible datos sobre el corpus de entrenamiento (número de tokens, composición del dataset), el proceso de alineación (RLHF, DPO, SFT) ni innovaciones técnicas específicas. El sufijo "interpro" y el nombre "bioreason" sugieren un ajuste orientado a razonamiento sobre anotaciones de dominios y familias proteicas de la base de datos InterPro, pero esta inferencia no está confirmada por la documentación del autor. La model card del repositorio GGUF se limita a indicar que se trata de cuantizaciones estáticas del modelo `adibvafa/bioreason-pro-v1-9b-interpro` y que no se han generado cuantizaciones ponderadas/imatrix en el momento de la publicación.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo está orientado a diálogo multi-turno.
-- Razonamiento: el nombre "bioreason" sugiere capacidades de razonamiento, presumiblemente en dominio biomédico, aunque no se documenta el alcance ni la metodología de evaluación.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante infraestructura compatible con la API de Hugging Face.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declaran idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponible; el flag skip_mmproj sugiere ausencia de componentes multimodales, pero no se confirma.
+- Generación de texto conversacional en inglés (el repositorio incluye la etiqueta `conversational` y `endpoints_compatible`).
+- Razonamiento especializado en el dominio biológico, presumiblemente sobre anotaciones de proteínas e InterPro (no confirmado con detalle en la documentación).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (no confirmado).
+- Capacidades multilingües: limitadas al inglés según la model card; no se documentan otros idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones Q4_K_M y Q5_K_M, el modelo puede ejecutarse en GPUs de consumo con 8-12 GB de VRAM, lo que permite prototipado sin infraestructura cloud.
-- Experimentación con razonamiento biomédico: si el nombre refleja el dominio real, podría emplearse en tareas de apoyo a la interpretación de literatura científica o preguntas clínicas, siempre con validación humana y sin uso diagnóstico directo.
-- Chat conversacional autoalojado: la etiqueta "conversational" y el formato GGUF lo hacen apto para asistentes de texto desplegados con llama.cpp u Ollama en entornos con requisitos de privacidad.
-- Evaluación comparativa de cuantizaciones: al ofrecer 12 variantes de cuantización, es útil para estudiar el impacto de la compresión en la calidad de las respuestas dentro de pipelines de investigación.
-- Integración en servidores compatibles con OpenAI: la etiqueta "endpoints_compatible" permite conectarlo a frameworks que consumen la API de chat completions, facilitando pruebas de integración.
-- Filtrado y resumen de texto técnico: como modelo de ~9B parámetros, puede emplearse en tareas de resumen extractivo o clasificación de documentos, aunque sin benchmarks que respalden su calidad frente a alternativas.
+- Anotación asistida de proteínas: el modelo podría emplearse para generar explicaciones en lenguaje natural sobre la presencia de dominios y familias InterPro en secuencias proteicas, ayudando a investigadores a interpretar resultados de pipelines de anotación funcional.
+- Documentación científica automatizada: generación de descripciones y resúmenes de entradas de anotación biológica en inglés, integrable en flujos de curación de bases de datos.
+- Asistente de investigación en bioinformática: chat multi-turno para consultar conceptos de biología computacional y relaciones entre familias proteicas, ejecutable localmente en estaciones de trabajo con GPU de consumo.
+- Prototipado en entornos con recursos limitados: gracias a las cuantizaciones Q4_K_S (5,5 GB) o Q4_K_M (5,7 GB), puede desplegarse en una RTX 3060/4060 Ti de 8-12 GB o incluso en CPU con llama.cpp para experimentación sin infraestructura de datacenter.
+- Filtrado y priorización de candidatos: uso del modelo para razonar sobre listas de proteínas anotadas y priorizar las que requieren validación experimental, reduciendo el trabajo manual de triaje.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 niveles de cuantización, lo que permite a equipos de ingeniería medir el compromiso calidad/latencia de un modelo de dominio científico antes de adoptarlo en producción.
+- Educación y divulgación: generación de explicaciones didácticas sobre anotaciones funcionales de proteínas para estudiantes, siempre con supervisión humana dado el riesgo de alucinación.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +52,42 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 18 GB en x-f16 (pesos de ~17,9 GB), ~10-11 GB en Q8_0, ~6-7 GB en Q5_K_M, ~5-6 GB en Q4_K_M y ~3-4 GB en Q2_K, sin contar la caché KV, que depende de la longitud de contexto (no documentada).
-- GPU recomendadas: A100 40 GB o H100 para x-f16 y Q8_0 con contexto largo; RTX 4090 (24 GB) para Q8_0 y cuantizaciones menores; RTX 3090/4080 para Q5_K_M y Q4_K_M.
-- GPU de consumo: sí, cabe en tarjetas de 8 GB con Q4_K_M o inferiores (Q3_K_M, Q3_K_S, Q2_K), y en 12-16 GB con Q5_K_M o Q6_K.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con la API de OpenAI que acepten GGUF (por ejemplo, llama-cpp-python o text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa para este tipo de pesos.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia (según tamaño de cuantización):
+  - Q2_K: ~3,9 GB de pesos; ~5 GB de VRAM total con contexto moderado.
+  - Q4_K_M (recomendada por el autor de la cuantización): ~5,7 GB de pesos; ~7-8 GB de VRAM total.
+  - Q8_0: ~9,6 GB de pesos; ~11-12 GB de VRAM total.
+  - f16: ~18,0 GB de pesos; ~20 GB de VRAM total.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070 para cuantizaciones Q4-Q6; RTX 4090, A100 o H100 para Q8_0 y f16 con contexto largo.
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones Q4_K_S/Q4_K_M caben en GPUs de 8 GB, y Q8_0 en GPUs de 12-16 GB. Las versiones Q2/Q3 permiten incluso despliegue parcial en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF (p. ej. llama-cpp-python); la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints tipo API.
+- Latencia y throughput: no disponibles (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| bioreason-pro-v1-9b-interpro-GGUF | ~9B | no disponible | no disponible | GGUF | Sin benchmarks ni documentación funcional |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community | safetensors, GGUF | Ampliamente evaluado, ecosistema maduro |
-| Qwen2.5 7B Instruct | 7B | 128K | Apache 2.0 | safetensors, GGUF | Multilingüe, benchmarks publicados |
-| Mistral 7B Instruct v0.3 | 7B | 32K | Apache 2.0 | safetensors, GGUF | Referencia en la categoría 7-9B |
+No se dispone de información sobre modelos comparables de razonamiento biológico del mismo tamaño en la documentación proporcionada. Como referencia estructural, se puede comparar con modelos generalistas de ~8-9B en formato GGUF, pero no se dispone de datos de rendimiento del modelo evaluado para establecer una comparación rigurosa.
 
-La comparación es estrictamente estructural: no existen datos de rendimiento del modelo evaluado que permitan contrastar calidad frente a estas alternativas.
+| Modelo | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| bioreason-pro-v1-9b-interpro (esta ficha) | ~8,95B | no disponible | CC-BY-NC-4.0 | GGUF / safetensors |
+| Alternativas de dominio biológico de ~9B | no disponible | no disponible | no disponible | no disponible |
+| Alternativas generalistas de ~8-9B | ~8-9B | variable | variable | GGUF |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia publicada sobre calidad, razonamiento o robustez; no debe asumirse un rendimiento comparable a modelos de su tamaño con evaluación pública.
-- Licencia no especificada: sin licencia declarada, el uso comercial es jurídicamente incierto y requiere consulta directa al autor original (adibvafa) antes de cualquier despliegue productivo.
-- Idiomas no declarados: se desconoce si el modelo soporta castellano con calidad suficiente; probablemente esté orientado al inglés, pero no se confirma.
-- Contexto desconocido: la ventana de contexto no está documentada, lo que impide planificar aplicaciones con documentos largos.
-- Riesgo de alucinación: inherente a los modelos generativos de este tamaño, agravado por la falta de evaluación en dominios sensibles como el biomédico.
-- Sesgos: no se han documentado análisis de sesgo; cualquier uso en dominios regulados (salud, legal) requiere auditoría propia.
-- Repositorio sin tracción: cero descargas y cero "likes" en el momento de la consulta, lo que reduce la probabilidad de que la comunidad haya detectado errores en la cuantización.
-- Procedencia de la cuantización: al ser una conversión de terceros (mradermacher), conviene verificar la fidelidad frente al modelo original antes de confiar en los resultados.
+- Licencia CC-BY-NC-4.0: prohíbe el uso comercial. Cualquier despliegue en producto o servicio de pago requiere autorización expresa del titular de los derechos.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está documentado y previsiblemente será deficiente.
+- Riesgo de alucinación: al ser un modelo de razonamiento sobre datos científicos, puede generar anotaciones o relaciones biológicas plausibles pero incorrectas. Requiere validación contra bases de datos de referencia (InterPro, UniProt) antes de cualquier uso real.
+- Sesgos: no documentados; el corpus de entrenamiento y su composición son desconocidos, por lo que no se puede evaluar el sesgo taxonómico o de sesgo de anotación.
+- Contexto: la longitud de contexto no está publicada; no se debe asumir una ventana amplia para secuencias proteicas largas.
+- Cuantizaciones de baja precisión (Q2_K, Q3_K_S): pueden degradar notablemente la calidad del razonamiento; el autor de la cuantización recomienda Q4_K_S o Q4_K_M para uso general.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas, lo que dificulta justificar su adopción en producción.
+- Modelo base poco documentado: la ausencia de model card detallada en el repositorio original limita la evaluación de su idoneidad para tareas concretas.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/bioreason-pro-v1-9b-interpro-GGUF
-- Modelo original: https://huggingface.co/adibvafa/bioreason-pro-v1-9b-interpro
-- Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
+- Repositorio GGUF (esta ficha): https://huggingface.co/mradermacher/bioreason-pro-v1-9b-interpro-GGUF
+- Modelo base original: https://huggingface.co/adibvafa/bioreason-pro-v1-9b-interpro
+- Página de descarga del cuantizador: https://hf.tst.eu/model#bioreason-pro-v1-9b-interpro-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

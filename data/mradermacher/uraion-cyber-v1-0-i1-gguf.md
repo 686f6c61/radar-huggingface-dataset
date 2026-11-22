@@ -2,49 +2,53 @@
 
 ## Resumen
 
-Uraion-Cyber-V1.0-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo Uraion-Cyber-V1.0, publicada por el usuario mradermacher, conocido en el ecosistema por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base lo desarrolla UraionLabs, y esta ficha se centra en los artefactos GGUF distribuidos en el repositorio.
+Uraion-Cyber-V1.0-i1-GGUF es la version cuantizada en formato GGUF del modelo Uraion-Cyber-V1.0, desarrollado por UraionLabs y orientado especificamente a ciberseguridad defensiva, auditoria de codigo, deteccion de vulnerabilidades y generacion de parches. Las cuantizaciones han sido generadas por mradermacher mediante el metodo i1 (imatrix) con el objetivo de reducir el peso del modelo original para permitir su despliegue en hardware mas modesto sin sacrificar demasiada calidad.
 
-El modelo original cuenta con 96.047.470 parámetros según los datos de safetensors, lo que lo sitúa en la categoría de modelos pequeños (por debajo de los 100 millones de parámetros). El repositorio GGUF ocupa aproximadamente 0,4 GB, coherente con un modelo de ese tamaño cuantizado en múltiples variantes.
+El modelo base es un Mixture-of-Experts (MoE) de aproximadamente 35.500 millones de parametros totales, con una configuracion del tipo 35b-a3b (alrededor de 3 mil millones de parametros activos por token), derivada de la familia Qwen 3.5/3.6 segun las etiquetas de la model card. Soporta un contexto largo de hasta 256k tokens, capacidades de razonamiento con cadena de pensamiento (thinking), tool calling y function calling, lo que lo hace adecuado para flujos agenticos de seguridad y DevOps.
 
-La relevancia de esta publicación radica en que ofrece un abanico amplio de cuantizaciones (desde IQ1_S hasta Q6_K) generadas con imatrix, lo que permite ejecutar el modelo en hardware muy limitado, incluidas CPU y GPUs de gama baja. No obstante, la información pública disponible sobre el modelo base es muy escasa: no se detallan arquitectura, datos de entrenamiento, licencia ni idiomas soportados.
+Este repositorio concreto es relevante porque ofrece una amplia gama de cuantizaciones GGUF (desde i1-Q2_K de 13,3 GB hasta i1-Q6_K de 29,3 GB) que permiten ejecutar localmente un modelo especializado en seguridad con licencia MIT, algo poco habitual en esta categoria. Esta pensado para investigadores y desarrolladores que quieren desplegar auditoria de codigo y analisis de vulnerabilidades en entornos self-hosted.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 96.047.470 |
-| Parametros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_M, IQ1_S, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, IQ3_M, IQ3_S, IQ3_XS, IQ3_XXS, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye presumiblemente en safetensors |
+| Arquitectura | Mixture-of-Experts (MoE), familia Qwen 3.5/3.6 (etiqueta qwen3_5_moe) |
+| Parametros totales | 35.505.251.456 (aprox. 35,5 mil millones) |
+| Parametros activos | Aproximadamente 3 mil millones (configuracion 35b-a3b) |
+| Longitud de contexto | 256k tokens (segun etiqueta 256k-context) |
+| Tipos de cuantizacion | i1 (imatrix): Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; tambien IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ4_NL (small) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | MIT |
+| Formato de pesos | GGUF (cuantizado); modelo base en safetensors/transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Uraion-Cyber-V1.0 en la documentación proporcionada. El nombre sugiere un enfoque orientado a ciberseguridad ("Cyber"), pero no hay datos que confirmen la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado.
+El modelo base Uraion-Cyber-V1.0 emplea una arquitectura Mixture-of-Experts con aproximadamente 35,5 mil millones de parametros totales y en torno a 3 mil millones activos por token (nomenclatura 35b-a3b). Las etiquetas del repositorio lo vinculan a la familia Qwen 3.5/3.6 y a la arquitectura qwen3_5_moe, lo que implica un transformer con capas de expertos enrutadas de forma dispersa. Esta configuracion reduce el coste computacional por token frente a un modelo denso del mismo tamano, manteniendo una capacidad de representacion elevada.
 
-Lo que sí se documenta en la model card es el proceso de cuantización: las versiones GGUF se han generado con cuantización ponderada mediante imatrix (importance matrix), una técnica que mejora la fidelidad de las cuantizaciones de baja precisión al calcular la importancia de cada peso a partir de datos de calibración. El repositorio incluye variantes desde 1 bit efectivo (IQ1_S) hasta 6 bits (Q6_K), lo que ofrece un control fino del compromiso entre tamaño y calidad.
+No se dispone en la informacion proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste fino supervisado especifico. Las etiquetas indican un enfasis en datos y tareas de ciberseguridad (security, infosec, appsec, vulnerability-detection, patch-generation, program-repair, ctf), asi como capacidades de razonamiento con cadena de pensamiento y soporte de tool calling. Esta version concreta es una cuantizacion i1 (imatrix) generada por mradermacher a partir de los pesos originales, no un reentrenamiento.
 
 ## Capacidades
 
-- Generación de texto: el modelo es un modelo de lenguaje de 96 millones de parámetros, por lo que sus capacidades generativas son las propias de un modelo de ese tamaño, sin datos públicos que las detallen.
-- Razonamiento y código: no disponible; no se documenta soporte específico.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se especifican idiomas.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Ejecución local: al estar en formato GGUF, es compatible con llama.cpp y derivados (Ollama, LM Studio, etc.), lo que constituye su principal valor práctico.
+- Generacion de texto conversacional y razonamiento con modo thinking (cadena de pensamiento explicita).
+- Auditoria de codigo y deteccion de vulnerabilidades en aplicaciones y sistemas.
+- Investigacion de vulnerabilidades y analisis de seguridad defensiva (infosec, appsec).
+- Generacion de parches y reparacion de programas (patch-generation, program-repair).
+- Soporte de tool calling y function calling para integracion en pipelines y agentes.
+- Capacidades agenticas y de razonamiento multi-paso (coding-agent, security-agent).
+- Generacion y asistencia en codigo y ingenieria de software.
+- Resolucion de retos tipo CTF y tareas de DevSecOps/SecOps.
+- Contexto largo de hasta 256k tokens para analisis de repositorios y trazas extensas.
+- Soporte multilingue limitado: la model card declara unicamente ingles.
 
 ## Casos de uso
 
-- Experimentación educativa en entornos con recursos limitados: con menos de 100 millones de parámetros y cuantizaciones desde ~0,1 GB, el modelo puede ejecutarse en Raspberry Pi, portátiles antiguos o contenedores sin GPU para estudiar el comportamiento de modelos pequeños.
-- Pruebas de pipelines de inferencia GGUF: sirve como modelo de juguete para validar integraciones con llama.cpp, Ollama o servidores compatibles antes de desplegar modelos mayores.
-- Prototipado de aplicaciones de ciberseguridad: dado el nombre del modelo base, puede emplearse como banco de pruebas para tareas de clasificación o generación de texto relacionadas con seguridad, siempre que se valide su calidad empíricamente.
-- Evaluación de técnicas de cuantización: la disponibilidad de 24 variantes permite comparar el impacto de IQ1 a Q6_K en la perplejidad y la calidad de salida sobre el mismo modelo base.
-- Generación de texto offline en dispositivos embebidos: su reducido tamaño facilita despliegues en entornos sin conectividad ni aceleradores hardware.
-- Filtrado y etiquetado ligero de texto: para tareas simples de clasificación o extracción, un modelo de este tamaño puede ofrecer latencias muy bajas en CPU, aunque la calidad debe medirse antes de usarlo en producción.
+- Auditoria de codigo automatizada: el modelo puede revisar repositorios completos aprovechando la ventana de 256k tokens para detectar patrones inseguros, inyecciones, fallos de validacion de entrada y malas practicas, adecuado por su especializacion en code-audit y appsec.
+- Deteccion y triaje de vulnerabilidades: se puede integrar en pipelines de CI/CD para analizar cambios de codigo y generar informes de vulnerabilidades con contexto, gracias a sus capacidades de razonamiento y tool calling.
+- Generacion de parches y reparacion de programas: dado un fallo identificado, el modelo puede proponer parches de codigo y explicar la correccion, apoyandose en sus etiquetas de patch-generation y program-repair.
+- Agente de seguridad en DevSecOps: mediante function calling, el modelo puede orquestar herramientas (escaneo, consulta de bases de datos de CVE, analisis estatico) en flujos multi-paso para automatizar tareas de SecOps.
+- Asistencia en investigacion de seguridad: analisis de trazas, logs y configuraciones extensas gracias al contexto largo, util para investigadores que necesitan correlacionar grandes volumenes de informacion.
+- Entrenamiento y retos CTF: el modelo puede asistir en la resolucion de retos de captura de bandera y en la formacion de equipos de seguridad, por su orientacion explicita a ctf.
+- Despliegue self-hosted en entornos sensibles: al ser GGUF con licencia MIT, permite ejecutar auditoria de codigo en infraestructura propia sin enviar codigo confidencial a servicios externos.
 
 ## Benchmarks y rendimiento
 
@@ -52,34 +56,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 0,1-0,2 GB para cuantizaciones IQ1/Q2, y aproximadamente 0,3-0,4 GB para Q6_K, considerando los 96 millones de parámetros.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; también funciona en CPU sin aceleración.
-- Cabe en GPU de consumo: sí, en cualquier GPU moderna (GTX 1050, RTX 3050, RTX 4090, etc.) e incluso en iGPUs.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF.
-- Latencia y throughput estimados: no disponibles; por el tamaño, se espera una latencia muy baja en CPU, pero no hay mediciones publicadas.
+- VRAM estimada segun cuantizacion (tamano de fichero GGUF): i1-Q2_K ~13,3 GB; i1-IQ3_S ~15,7 GB; i1-Q3_K_M ~17,3 GB; i1-IQ4_XS ~19,3 GB; i1-Q4_K_M ~21,8 GB; i1-Q5_K_M ~25,4 GB; i1-Q6_K ~29,3 GB. A estos valores hay que sumar el overhead de contexto KV, que crece con la longitud de contexto usada.
+- Al ser un MoE con ~3 mil millones de parametros activos, el coste computacional por token es inferior al de un denso de 35B, pero el peso total debe residir en memoria/VRAM.
+- GPU recomendadas: para cuantizaciones Q4_K_M en adelante, una RTX 4090 (24 GB) puede alojar los quants hasta ~21,8 GB con margen limitado; para Q5/Q6 y contextos largos se recomienda A100 40/80 GB o H100. Para Q2/Q3, GPUs de 16-24 GB pueden ser suficientes con contexto moderado.
+- Cabe en GPU consumer: si, en modelos como RTX 3090/4090 (24 GB) con cuantizaciones Q4 o inferiores y contextos moderados; en GPUs de 16 GB solo con quants Q2/Q3 y contexto reducido.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y SGLang para el modelo base en bf16/fp8 (segun etiquetas); TGI no confirmado en la informacion disponible.
+- Latencia y throughput: no disponibles. El caracter MoE (~3B activos) sugiere un throughput relativamente alto frente a densos de 35B, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Uraion-Cyber-V1.0-i1-GGUF | 96 M | no disponible | no disponible | GGUF |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Uraion-Cyber-V1.0 (i1-GGUF) | ~35,5B totales / ~3B activos (MoE) | 256k | MIT | GGUF | Especializado en ciberseguridad defensiva |
+| Qwen 3.5/3.6 MoE (familia base) | Configuracion 35b-a3b | 256k (segun etiquetas) | no disponible en esta ficha | safetensors/GGUF | Modelo generalista del que deriva |
+| Alternativas especializadas en seguridad | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-La comparativa se ofrece como referencia de categoría (modelos pequeños ejecutables en local); no se dispone de datos de rendimiento del modelo Uraion que permitan una comparación cuantitativa.
+No se dispone de resultados de benchmarks comparativos en la informacion proporcionada para establecer una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Información pública muy escasa: no se documentan arquitectura, datos de entrenamiento, licencia ni idiomas, lo que impide evaluar su idoneidad para producción.
-- Licencia no disponible: no puede confirmarse si se permite uso comercial; debe consultarse el repositorio del modelo base (UraionLabs/Uraion-Cyber-V1.0) antes de cualquier despliegue.
-- Riesgo de alucinación: con 96 millones de parámetros, la coherencia y fiabilidad factual son limitadas en comparación con modelos de mayor tamaño.
-- Capacidad de contexto e idioma desconocidas: no hay garantías sobre el soporte multilingüe ni sobre la ventana de contexto efectiva.
-- Origen de la cuantización: al ser una publicación de terceros (mradermacher) sobre el modelo de UraionLabs, conviene verificar la integridad de los artefactos y la correspondencia con el modelo original.
-- Sin métricas de calidad: no hay benchmarks que permitan comparar las distintas cuantizaciones ni validar su fidelidad respecto al modelo en precisión completa.
+- Idioma: la model card declara unicamente ingles; el rendimiento en castellano no esta garantizado.
+- Riesgo de alucinacion: como todo modelo generativo, puede producir analisis de vulnerabilidades, CVE o parches incorrectos; requiere validacion humana en entornos de produccion.
+- Sesgos: no se documentan sesgos especificos en la informacion disponible; al derivar de la familia Qwen, puede heredar sesgos del modelo base.
+- Uso dual: un modelo especializado en seguridad y CTF puede emplearse tanto para defensa como para tareas ofensivas; debe aplicarse supervision y politicas de uso.
+- Cuantizaciones agresivas (Q2/Q3) degradan la calidad; para auditoria de codigo se recomienda Q4_K_M o superior.
+- Contexto largo (256k) implica un consumo elevado de memoria KV; en hardware consumer habra que limitar la ventana efectiva.
+- Licencia MIT permite uso comercial, pero conviene revisar la licencia del modelo base enlazada en la model card.
+- No hay datos publicados de benchmarks, evaluaciones de seguridad ni tasas de falsos positivos, lo que limita la confianza previa al despliegue.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Uraion-Cyber-V1.0-i1-GGUF
+- Repositorio Hugging Face (esta ficha): https://huggingface.co/mradermacher/Uraion-Cyber-V1.0-i1-GGUF
 - Modelo base: https://huggingface.co/UraionLabs/Uraion-Cyber-V1.0
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Licencia del modelo base: https://huggingface.co/UraionLabs/Uraion-Cyber-V1.0/blob/main/LICENSE
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Uraion-Cyber-V1.0-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Uraion-Cyber-V1.0-i1-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

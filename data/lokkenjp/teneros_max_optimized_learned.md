@@ -2,116 +2,114 @@
 
 ## Resumen
 
-TenEros_Max_optimized_learned es una cuantización aprendida y guiada por activaciones del modelo de generación de vídeo TenStrip/10Eros-Max, construido sobre la arquitectura MiniMax-H3. Lo publica LokkenJP como proyecto personal de hobby con el objetivo explícito de hacer viable la inferencia de H3 en hardware de consumo, reduciendo el peso en disco y la huella de memoria respecto a la fuente BF16 de aproximadamente 40 GB. El pipeline declarado es image-text-to-video, con soporte también de text-to-video e image-to-video.
+TenEros_Max_optimized_learned es una cuantización aprendida (activation-aware) del transformer de generación de vídeo ErosMax v1 de TenStrip, a su vez derivado de MiniMax H3. El autor, LokkenJP, publica dos variantes del checkpoint: HQ (17,92 GB) y Compact (14,50 GB), ambas partiendo de un transformer BF16 original de 40,22 GB. El objetivo es reducir el peso en disco y los requisitos de memoria de inferencia sin renunciar al Turbo integrado de ocho pasos del modelo base, que permite generar vídeo con muy pocos pasos de muestreo.
 
-El release principal es Beta7 fix1 HQ, un checkpoint de 18,7343 GB que combina matrices W6 con grupo de 16 y matrices INT8 seleccionadas mediante un mapa de precisión por capa, conservando 332 tensores no objetivo en BF16 byte a byte. Incorpora el Turbo de ocho pasos embebido del transformer fix1 publicado por TenStrip. Existe además un release compacto original de 14,6479 GB con mezcla W4/W6/INT8, pensado para entornos con memoria más ajustada.
+El modelo es un pipeline image-text-to-video que acepta condicionamiento textual (y opcionalmente una imagen de referencia) para producir vídeo con audio asociado, ya que requiere VAEs de vídeo y audio suministrados por separado. La cuantización combina matrices de pesos en W4/W6 con grupos de 16 pesos por escala (g16) y capas en INT8, además de ocho matrices INT8 aprendidas en el token refiner que procesa el condicionamiento textual del transformer.
 
-La relevancia actual reside en la técnica: en lugar de una cuantización mecánica, el autor usa activaciones proxy offline para guiar la reconstrucción de los pesos BF16 originales, con reducciones medias de NRMSE del 59,41 % en W6 g16 y del 63,25 % en INT8 frente a la cuantización nativa. El modelo es solo transformer: el codificador de texto, los VAE de vídeo y audio y el flujo de trabajo ComfyUI se distribuyen por separado.
+La relevancia actual radica en que permite ejecutar un modelo de vídeo de gran tamano en hardware de consumo mediante ComfyUI, con soporte nativo de W6A8, INT8 ConvRot y W4A8 para la variante Compact. La licencia es la MiniMax H3 Community License Agreement, no plenamente permisiva, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (MiniMax-H3), solo transformer; text encoder y VAE de vídeo/audio separados |
+| Arquitectura | Transformer de difusion para vídeo (derivado de MiniMax H3), con token refiner para condicionamiento textual |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE según la información disponible) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W6 g16, W4 g16, INT8; mapa de precisión aprendido guiado por activaciones; 332 tensores no objetivo preservados en BF16 |
+| Tipos de cuantizacion | W6A8 g16 e INT8 (HQ); W4A8 g16, W6A8 g16 e INT8 (Compact); ocho matrices INT8 aprendidas en el token refiner |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license-agreement (license: other) |
-| Formato de pesos | safetensors |
+| Licencia | minimax-h3-community-license-agreement (other) |
+| Formato de pesos | safetensors (checkpoints de ComfyUI en `diffusion_models`) |
 
-Detalle de los checkpoints publicados:
+Detalle de las variantes:
 
-| Release | Tamano exacto | Formatos de matriz aprendidos | Uso previsto |
+| Variante | Tamano | Matrices del transformer principal | Sidecars |
 |---|---:|---|---|
-| Beta7 fix1 HQ | 18.734.317.942 bytes / 18,7343 GB | 90 W6 g16, 110 INT8 | Recomendado; fuente fix1 |
-| Original Beta7 compact | 14.647.885.469 bytes / 14,6479 GB | 85 W4 g16, 103 W6 g16, 12 INT8 | Alternativa de menor memoria; fuente original |
-
-Codificadores de texto opcionales: el checkpoint oficial INT8 ConvRot (27,14 GB), el compacto actual de 15,35 GB (W4 g128 con W6 protegido), y alternativas HQ de 23,03 GB y Balanced de 17,93 GB.
+| HQ | 17,92 GB | 90 en W6 g16, 110 en INT8 | SHA-256 y reporte de cuantizacion |
+| Compact | 14,50 GB | 64 en W4 g16, 122 en W6 g16, 14 en INT8 | SHA-256 y reporte de cuantizacion |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MiniMax-H3 orientado a generación conjunta de vídeo y audio, con cabezas de salida de vídeo y audio expandidas en la versión fix1 y 32 cabezas PDD declaradas en los metadatos de salida para carga estándar en ComfyUI sin modificaciones. El decoder de forma de onda BigVGAN de H3 está integrado en el VAE de audio. El checkpoint distribuido aquí contiene únicamente el transformer; el resto de componentes del pipeline se obtiene por separado.
+El checkpoint es una cuantizacion post-entrenamiento del transformer de ErosMax v1 (TenStrip/10Eros-Max), que a su vez se basa en MiniMax H3. No se trata de un modelo entrenado desde cero: el proceso consiste en seleccionar precisiones por matriz (W4, W6 o INT8) y aprender las escalas de activacion para minimizar el error de reconstruccion respecto a las salidas BF16 originales. Las matrices se agrupan en bloques de 16 pesos que comparten escala (`g16`), y el token refiner, que procesa el condicionamiento textual del transformer, conserva ocho matrices INT8 aprendidas.
 
-La innovación técnica es la cuantización aprendida guiada por activaciones: activaciones proxy capturadas offline guían la reconstrucción de los pesos BF16 originales, en lugar de aplicar redondeo o escalado convencional. El mapa de precisión de fix1 HQ asigna INT8 a todas las matrices attention OUT y FC2, y a las cuatro matrices principales de los bloques 0/1/47/48/49; QKV y FC1 de los bloques 2-46 usan W6 g16. Los resultados de calibración reportados, medidos como NRMSE de activación en filas de entrada muestreadas, son:
-
-| Formato | Matrices | NRMSE medio nativo | NRMSE medio aprendido | Reducción media pareada |
-|---|---:|---:|---:|---:|
-| W6 g16 | 90 | 0,015448 | 0,006302 | 59,41 % |
-| INT8 | 110 | 0,008193 | 0,003059 | 63,25 % |
-
-En la métrica NRMSE de activación con rank32 más residual, las reducciones son del 34,56 % (W6 g16) y 32,26 % (INT8). El autor advierte que cada reducción es la media equiponderada de reducciones porcentuales pareadas, no el cociente entre columnas de error medio. No se documentan en la información disponible el número de tokens de entrenamiento del modelo base, la composición del dataset ni si hubo RLHF o DPO.
+La innovacion principal es el esquema de cuantizacion activation-aware con asignacion de precision por familia de tensores, evaluado sobre 200 matrices principales con un split de desarrollo. El error de activacion bruto medido como NRMSE normalizado es del 0,531 % en HQ y del 1,386 % en Compact, frente al 2,927 % de la linea base sin aprendizaje con la precision seleccionada para Compact; esto supone una reduccion del 52,64 % del error en esa variante. El modelo conserva el Turbo de ocho pasos del upstream, por lo que no requiere decodificacion especulativa ni tecnicas adicionales de aceleracion. No se dispone de informacion sobre el dataset de entrenamiento original ni sobre si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto (text-to-video).
-- Generación de vídeo a partir de imagen y texto (image-text-to-video), pipeline declarado del repo.
-- Generación de vídeo a partir de imagen (image-to-video).
-- Generación de audio asociada al vídeo, mediante el VAE de audio con decoder BigVGAN integrado.
-- Inferencia en ocho pasos gracias al Turbo embebido del transformer fix1.
-- Salida de alta resolución en el release fix1 HQ; el autor indica que esta es la mejora principal de fix1 respecto al Beta7 original.
-- Carga directa en ComfyUI sin modificar el software, gracias a los metadatos de las 32 cabezas PDD.
-- Adherencia a prompt reforzada por el codificador de texto opcional Qwen3-VL 32B en versión MiniMax-H3 nativa cuantizada.
-- No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso ni modo thinking.
+- Generacion de vídeo a partir de texto (text-to-video).
+- Generacion de vídeo a partir de texto e imagen de referencia (image-text-to-video).
+- Generacion de vídeo a partir de imagen (image-to-video), segun las etiquetas del repositorio.
+- Generacion de audio asociada al vídeo, mediante un VAE de audio separado.
+- Muestreo Turbo integrado de ocho pasos, heredado del modelo base.
+- Condicionamiento textual procesado por un token refiner con matrices INT8 aprendidas.
+- Integracion con ComfyUI mediante workflows de dos pasadas (simple y avanzado).
+- Compatibilidad con text encoders Qwen3-VL 32B en variantes HQ, Balanced y Compact.
+- Soporte nativo de W6A8, INT8 ConvRot y W4A8 (este ultimo solo en Compact) en builds recientes de ComfyUI.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso: es un modelo generativo de vídeo, no un LLM conversacional.
 
 ## Casos de uso
 
-- Generación de vídeo corto en estación de trabajo con GPU de consumo: el checkpoint fix1 HQ de 18,7343 GB permite cargar el transformer en tarjetas de 24 GB con offloading parcial, usando el Turbo de ocho pasos para reducir el número de evaluaciones por clip.
-- Iteración rápida de storyboards: el release compacto de 14,6479 GB, con mezcla W4/W6/INT8, está pensado para configuraciones con memoria más limitada donde prima el número de iteraciones sobre la calidad final.
-- Producción de clips con audio sincronizado: al incluir el VAE de audio con BigVGAN, el pipeline genera pista de audio junto al vídeo, útil para prototipos de anuncios o contenido para redes.
-- Animación de imagen fija (image-to-video): partiendo de una ilustración o fotograma clave, el modelo genera movimiento, un flujo habitual en previsualización de conceptos artísticos.
-- Flujos ComfyUI existentes: los metadatos de las 32 cabezas PDD permiten sustituir el transformer original por este checkpoint sin tocar los grafos ya construidos, lo que facilita evaluar la pérdida de calidad frente al BF16.
-- Experimentación en investigación sobre cuantización: los mapas de precisión y las métricas de reconstrucción publicadas permiten reproducir y comparar técnicas de cuantización guiada por activaciones sobre un transformer multimodal grande.
-- Despliegue con restricciones de almacenamiento: frente a los aproximadamente 40 GB del BF16, el checkpoint de 18,7343 GB reduce a menos de la mitad el espacio en disco y el tráfico de carga en entornos con varios modelos instalados.
+- Prototipado rapido de vídeo generativo en estaciones de trabajo con GPU de consumo: la variante Compact de 14,50 GB permite cargar el transformer en ComfyUI con offloading parcial, reduciendo la barrera de entrada frente al BF16 de 40,22 GB.
+- Produccion de clips cortos para redes sociales: el Turbo de ocho pasos reduce el coste por iteracion, lo que facilita generar multiples variaciones de una misma escena y seleccionar la mejor.
+- Animacion de storyboards a partir de una imagen clave: el pipeline image-to-video permite partir de un fotograma de referencia y generar el movimiento, util en previsualizacion de animacion.
+- Generacion de vídeo con audio sincronizado para demos de producto: al requerir un VAE de audio separado, el flujo cubre tanto la pista visual como la sonora en una sola pasada de ComfyUI.
+- Iteracion de concepto en estudios pequenos con una sola RTX 4090: la variante HQ ofrece menor error de reconstruccion (0,531 % NRMSE) y es la opcion recomendada cuando la VRAM lo permite.
+- Evaluacion comparativa de tecnicas de cuantizacion: los reportes de cuantizacion y el overview tecnico permiten reproducir las mediciones de NRMSE y comparar W4/W6/INT8 en un caso real de difusion de vídeo.
+- Despliegue en pipelines de generacion por lotes: al ser checkpoints safetensors con SHA-256 verificado, se pueden integrar en automatizaciones de ComfyUI con validacion de integridad previa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que las observaciones de calidad son subjetivas, procedentes de flujos de trabajo probados en ComfyUI, y que no existe un benchmark controlado de calidad de vídeo generado ni de velocidad de inferencia. Tampoco se establece paridad con la fuente BF16 de aproximadamente 40 GB.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, VBench u otros) en la informacion disponible. El autor unicamente reporta metricas de reconstruccion de la cuantizacion:
 
-Las únicas métricas cuantitativas publicadas son las de reconstrucción de pesos y activaciones recogidas en la sección de arquitectura y entrenamiento (NRMSE nativo frente a aprendido).
+| Metrica | HQ | Compact | Baseline sin aprendizaje (precision de Compact) |
+|---|---:|---:|---:|
+| NRMSE de activacion (200 matrices, split de desarrollo) | 0,531 % | 1,386 % | 2,927 % |
+| Reduccion de error frente a baseline | no disponible | 52,64 % | — |
+| Tamano del checkpoint | 17,92 GB | 14,50 GB | 40,22 GB (BF16 upstream) |
+| Ahorro frente a HQ | — | 3,42 GB (19,1 %) | — |
+
+El autor indica que Compact genero correctamente en ComfyUI, con una perdida de calidad percibida leve frente a HQ y frente al checkpoint INT8 de referencia usado durante la cuantizacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Los tamaños publicados son GB decimales en disco, no VRAM requerida; memoria de trabajo, activaciones, otros componentes del pipeline y offloading afectan al consumo real.
-- El checkpoint fix1 HQ (18,7343 GB) no cabe completo en GPUs de 16 GB; requiere 24 GB o más, o bien offloading a RAM o disco.
-- El compacto original (14,6479 GB) está orientado a configuraciones con memoria más ajustada; el autor lo describe como alternativa aceptada con menor uso de memoria observado.
-- Codificador de texto: el oficial INT8 ConvRot ocupa 27,14 GB; las alternativas compactas van de 15,35 GB a 23,03 GB, lo que condiciona el presupuesto total de memoria del pipeline.
-- GPU recomendadas: no disponibles en la información proporcionada. No se especifican modelos concretos (A100, H100, RTX 4090 u otros).
-- Opciones de despliegue: ComfyUI es el entorno de referencia declarado, con carga estándar sin modificaciones. No se documentan en la información disponible integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles. Solo se indica el uso del Turbo de ocho pasos embebido, sin cifras de tiempo por clip.
+- VRAM estimada para el transformer: aproximadamente 18 GB para HQ y 14,5 GB para Compact en el peor caso sin offloading; la memoria real de inferencia depende del workflow, la resolucion, los componentes adicionales (text encoder, VAEs) y el offloading.
+- El text encoder Qwen3-VL 32B anade requisitos propios de memoria, no cuantificados en la informacion disponible.
+- GPU recomendadas: no se especifican modelos concretos. Por tamano, una RTX 4090 (24 GB) es el minimo razonable para HQ sin offloading agresivo; Compact deja mas margen para el resto de componentes. Para A100 o H100 no hay datos publicados.
+- Cabe en GPU de consumo: si, en tarjetas con 24 GB o mas, con offloading parcial en el caso de HQ.
+- Opciones de despliegue: ComfyUI con soporte nativo de W6A8, INT8 ConvRot y W4A8 (Compact). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles. El Turbo de ocho pasos reduce el numero de pasos de muestreo, pero no se publican tiempos por clip.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---:|---|---|---|---|
-| TenEros_Max_optimized_learned (fix1 HQ) | Cuantización de MiniMax-H3 / 10Eros-Max | 18,7343 GB en disco | no disponible | Sin benchmark controlado; NRMSE de activación aprendido 0,006302 (W6 g16) y 0,003059 (INT8) | minimax-h3-community-license-agreement | Hugging Face, 127.168 descargas, 91 likes |
-| TenEros_Max_optimized_learned (compact) | Cuantización de MiniMax-H3 / 10Eros-Max | 14,6479 GB en disco | no disponible | Calidad observada ligeramente inferior al HQ original; no comparado con fix1 HQ | minimax-h3-community-license-agreement | Hugging Face |
-| TenStrip/10Eros-Max (fix1, BF16) | Modelo base de generación de vídeo | aprox. 40 GB | no disponible | Referencia de calidad; sin benchmark controlado publicado en esta información | no disponible en esta información | Hugging Face |
-| Checkpoint oficial INT8 ConvRot de MiniMax-H3 | Cuantización oficial | 27,14 GB (codificador de texto) | no disponible | Opción prioritaria en calidad cuando hay recursos | minimax-h3-community-license-agreement | Hugging Face |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TenEros_Max_optimized_learned (HQ / Compact) | no disponible | no disponible | safetensors cuantizado (17,92 / 14,50 GB) | MiniMax H3 Community License | Hugging Face, 175.469 descargas |
+| TenStrip/10Eros-Max (upstream) | no disponible | no disponible | safetensors BF16 (40,22 GB) | MiniMax H3 Community License | Hugging Face |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | MiniMax H3 Community License | Hugging Face |
 
-No se dispone de datos de benchmarks que permitan comparar rendimiento generativo con alternativas de la misma categoría.
+No se dispone de datos de rendimiento comparativo entre estas variantes mas alla del NRMSE de reconstruccion y del tamano. No se identifican en la informacion proporcionada otros modelos de vídeo cuantizados equivalentes para una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No existe benchmark controlado de calidad de vídeo ni de velocidad de inferencia; las afirmaciones de calidad del autor son observaciones subjetivas de sus flujos de trabajo en ComfyUI.
-- HQ identifica el mapa de alta precisión, no una paridad con la fuente BF16 de aproximadamente 40 GB.
-- El release compacto tiene calidad observada ligeramente inferior a su HQ original y no se ha comparado con fix1 HQ.
-- No habrá compañero compacto W4/W6 para fix1; quien necesite menor memoria debe usar el Beta7 compacto original, que no incluye las mejoras de fix1 (orientadas a mayor resolución).
-- El repo es solo transformer: sin codificador de texto ni VAE no hay pipeline funcional; el presupuesto de memoria y disco debe incluir esos componentes.
-- El modelo está etiquetado como not-for-all-administrators audiences en sus tags (not-for-all-audiences), lo que implica contenido potencialmente no apto para todos los públicos; requiere moderación en producción.
-- La licencia es la MiniMax-H3 Community License Agreement, no una licencia open source estándar; es imprescindible revisar sus términos antes de cualquier uso comercial.
-- No se documentan sesgos conocidos, riesgo de alucinación específico, limitaciones de contexto ni idiomas soportados en la información disponible.
-- Proyecto personal de hobby sin garantías de mantenimiento; las recomendaciones de generación pertenecen a las notas del modelo upstream.
+- La cuantizacion introduce error de reconstruccion: 0,531 % NRMSE en HQ y 1,386 % en Compact, con perdida de calidad percibida leve reportada por el autor en Compact frente a HQ.
+- El modelo esta etiquetado como `not-for-all-anchors` / `not-for-all-audiences`, lo que implica contenido potencialmente sensible; requiere moderacion en entornos de produccion.
+- La licencia MiniMax H3 Community License Agreement no es una licencia open source permisiva: impone terminos adicionales del upstream que deben revisarse antes de cualquier uso comercial.
+- El modelo requiere componentes externos no incluidos: text encoder Qwen3-VL 32B compatible, VAE de vídeo y VAE de audio. Un emparejamiento incorrecto degrada la calidad o impide la carga.
+- Es necesario un build de ComfyUI con soporte nativo de W6A8 e INT8 ConvRot, y de W4A8 para Compact; versiones antiguas no cargaran los checkpoints.
+- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinacion; al ser un modelo de vídeo, el riesgo principal es la inconsistencia visual y temporal, no la factualidad textual.
+- El repositorio ocupa 315,6 GB en total por incluir variantes antiguas (Beta5, Beta6, Beta7, Beta7 fix1) y text encoders; conviene descargar solo el checkpoint necesario.
+- No hay informacion sobre latencia, throughput ni requisitos de VRAM medidos en produccion, por lo que el dimensionamiento debe validarse en el hardware objetivo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned
-- Checkpoint Beta7 fix1 HQ: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/resolve/main/10Eros_Max_h3_8stepTURBO_beta7_fix1_activation_learned_HQ.safetensors
-- Checkpoint Beta7 compact original: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/resolve/main/10Eros_Max_h3_8stepTURBO_beta7_activation_learned_compact_w4w6int8_14.65gb.safetensors
-- Codificador de texto compacto 15,35 GB: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/resolve/main/text_encoder/qwen3vl_32b_minimax_h3_native_w4g128_w6protected_15.35gb.safetensors
-- README del codificador de texto: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/blob/main/text_encoder/README.md
-- Visión técnica de fix1: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/blob/main/H3_BETA7_FIX1_TURBO_PROXY_ACTIVATION_TECHNICAL_OVERVIEW.md
-- Visión técnica del Beta7 original: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/blob/main/beta7/H3_BETA7_TURBO_PROXY_ACTIVATION_TECHNICAL_OVERVIEW.md
-- Modelo base: https://huggingface.co/TenStrip/10Eros-Max
-- Licencia MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- Checkpoint HQ: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/resolve/main/10Eros_Max_8stepTurbo_v1.0_hybrid_activation_learned_HQ.safetensors
+- Checkpoint Compact: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/resolve/main/10Eros_Max_8stepTurbo_v1.0_hybrid_activation_learned_compact_w4w6int8_14.50gb.safetensors
+- Overview tecnico: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/blob/main/H3_EROSMAX_V1_TECHNICAL_OVERVIEW.md
+- Workflows de ejemplo (dos pasadas): https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/tree/main/SampleWorkFlowTwoPassOptimized
+- Text encoders: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/tree/main/text_encoder/
+- Checkpoints anteriores: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/tree/main/Older_ErosMax
+- Modelo upstream (TenStrip/10Eros-Max): https://huggingface.co/TenStrip/10Eros-Max
+- Checkpoint BF16 upstream: https://huggingface.co/TenStrip/10Eros-Max/blob/main/10Eros_Max_8stepTurbo_v1.0_hybrid.safetensors
+- Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

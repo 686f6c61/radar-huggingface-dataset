@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "CHOI0126/specdec-ckpt-nodef",
+  "renamed_at": "2026-11-22T02:35:41.390Z",
   "benchmarks": [],
   "sources": []
 }

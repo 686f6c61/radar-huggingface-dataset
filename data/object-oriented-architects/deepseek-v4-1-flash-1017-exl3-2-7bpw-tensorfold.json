@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": ".OBJECT® - Women's fashion | Official online shop",
-      "url": "https://www.objectci.com/",
-      "snippet": "Quality fashion for women at .OBJECT! Explore our latest collections and upgrade your wardrobe. Shop online Get 10% off your first …"
-    },
-    {
-      "title": ".OBJECT® - Mode femme | Boutique en ligne officielle",
-      "url": "https://www.objectci.com/fr-fr/",
-      "snippet": "Mode femme de qualité chez .OBJECT ! Découvrez nos dernières collections et renouvelez votre garde-robe. Shoppez en ligne …"
-    },
-    {
-      "title": "Object | Vêtements Object en ligne | Zalando.fr",
-      "url": "https://www.zalando.fr/object/",
-      "snippet": "Vêtements Object sur la boutique en ligne Zalando.fr - Choix parmi plus de 100 000 articles. Livraisons et retours gratuits sur la …"
-    },
-    {
-      "title": "Object femme : Nouvelle collection | Place des Tendances",
-      "url": "https://www.placedestendances.com/fr/fr/object-femme",
-      "snippet": ".Object la marque de prêt-à-porter appartenant au groupe Bestseller est sur Place des Tendances. Sensible à la planète et aux …"
-    },
-    {
-      "title": "Objet — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Objet",
-      "snippet": "Objet mathématique, Le Corbusier, 1958, Université technologique d'Eindhoven, Pays-Bas. Le blivet, objet impossible. Objet (du …"
-    }
-  ]
+  "sources": []
 }

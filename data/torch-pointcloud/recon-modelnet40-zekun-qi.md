@@ -2,104 +2,101 @@
 
 ## Resumen
 
-ReCon (Contrast with Reconstruct) es un modelo de clasificación de nubes de puntos 3D desarrollado por Zekun Qi y colaboradores (Universidad de Shanghai Jiao Tong, Shanghai AI Laboratory y The University of Hong Kong), publicado en ICML 2023. Esta ficha concreta, `recon.modelnet40.zekun-qi`, es la versión afinada sobre el dataset ModelNet40 y convertida al ecosistema `torch-pointcloud` por Arthur Dujardin. El modelo resuelve la tarea de clasificación de formas 3D a partir de nubes de puntos con normales, asignando cada muestra a una de las 40 categorías de objetos de ModelNet40.
+ReCon (Contrast with Reconstruct) es un modelo de clasificación de nubes de puntos 3D publicado por Zekun Qi y colaboradores en ICML 2023. Esta ficha concreta, `recon.modelnet40.zekun-qi`, es la conversión del checkpoint oficial de ReCon afinado sobre ModelNet40 al formato de la librería `torch-pointcloud`, mantenida por Arthur Dujardin. El modelo resuelve la tarea de clasificación de formas 3D representadas como conjuntos de puntos (coordenadas XYZ más normales), asignando una de 40 categorías (silla, mesa, avión, etc.).
 
-La arquitectura es un transformer de puntos enmascarado con consultas contrastivas multimodales, con 43,6 millones de parámetros y un extractor de características de 1536 dimensiones. Se parte del checkpoint preentrenado `torch-pointcloud/recon.pretrain.zekun-qi` y se afina para clasificación, procesando nubes de hasta 8192 puntos con sus normales asociadas.
+La arquitectura es un transformer de puntos con enmascaramiento (masked point transformer) que combina aprendizaje contrastivo con consultas multimodales, siguiendo la idea central del paper: el preentrenamiento generativo (reconstrucción de puntos enmascarados) guía al preentrenamiento contrastivo. El modelo tiene 43,6 millones de parámetros y produce representaciones de 1536 dimensiones. Es relevante porque ofrece un punto de partida preentrenado y listo para usar en tareas de visión 3D, un dominio donde los modelos genéricos de lenguaje no aplican y donde las alternativas suelen requerir reproducir pipelines de entrenamiento complejos.
 
-Su relevancia actual reside en que ofrece un checkpoint listo para usar en PyTorch con licencia MIT, pesos en safetensors y una precisión global (OA) del 93,68 % en ModelNet40, lo que lo convierte en una referencia práctica para pipelines de visión 3D y aprendizaje de representaciones de nubes de puntos sin necesidad de reentrenar desde cero.
+Esta conversión concreta es útil para desarrolladores que trabajan con `torch-pointcloud`: permite cargar el modelo con una sola llamada (`tp.create_model`), extraer embeddings de 1536 dimensiones o reentrenar el clasificador para un número distinto de clases, sin depender del repositorio original de ReCon.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer de puntos enmascarado con consultas contrastivas multimodales (ReCon) |
-| Parametros totales | 43.579.944 (43,6 M) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (procesa nubes de hasta 8192 puntos) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplica (modelo de vision 3D, no linguistico) |
+| Arquitectura | Masked point transformer con consultas contrastivas multimodales (ReCon) |
+| Parámetros totales | 43.579.944 (43,6 M) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (no es un modelo de secuencia de texto); entrada de hasta 8192 puntos en el ejemplo de la model card |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no aplica (modelo de visión 3D, sin entrada de texto) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Dimension de caracteristicas | 1536 |
-| Numero de clases | 40 (ModelNet40) |
-| Modelo base | torch-pointcloud/recon.pretrain.zekun-qi |
-| Libreria | torch-pointcloud |
-| Tamano del repositorio | 0,2 GB |
+| Dimensión de características | 1536 |
+| Número de clases | 40 (ModelNet40) |
+| Librería | torch-pointcloud |
+| Tamaño del repo | 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
-ReCon combina un transformer de puntos con enmascaramiento (masked point modeling) y un mecanismo de consultas contrastivas multimodales. La innovacion central del paper es el uso de un objetivo generativo (reconstruccion de puntos enmascarados) como guia para el aprendizaje contrastivo: las consultas contrastivas se alinean con las representaciones generativas, lo que produce embeddings mas robustos que el contraste puro. El modelo trabaja sobre nubes de puntos con coordenadas `pos` y normales `normal`, y produce un vector de 1536 dimensiones por muestra antes de la cabeza de clasificacion.
+ReCon es un transformer que opera directamente sobre nubes de puntos. El preentrenamiento combina dos objetivos: uno generativo, que enmascara puntos y entrena al modelo para reconstruirlos, y otro contrastivo, que alinea las representaciones de la nube de puntos con las de una modalidad complementaria mediante consultas cruzadas. El paper defiende que el objetivo generativo actúa como guía del contrastivo, lo que produce representaciones más ricas que el contraste puro. La entrada del modelo son coordenadas `pos` (N×3) y normales `normal` (N×3), que se transforman y agrupan en lotes mediante `collate`.
 
-El checkpoint preentrenado (`recon.pretrain.zekun-qi`) se afina sobre ModelNet40, un dataset de 40 categorias de objetos 3D con 9843 muestras de entrenamiento y 2468 de test en la particion estandar. La model card no detalla el numero exacto de tokens, la composicion del dataset de preentrenamiento ni si se aplico RLHF/DPO (no aplicable en este dominio). La conversion a `torch-pointcloud` mantiene la logica del repositorio original `qizekun/ReCon` (MIT) y expone una API `create_model` con transformaciones de datos y `collate` integrados.
+El checkpoint aquí descrito parte del modelo preentrenado `recon.pretrain.zekun-qi` y se afina sobre ModelNet40, el benchmark clásico de clasificación de formas 3D con 40 categorías. No se dispone en la información proporcionada del número exacto de tokens/puntos de entrenamiento, la composición del dataset de preentrenamiento ni los detalles de la etapa de ajuste fino (learning rate, épocas, aumentos de datos). La model card indica que la conversión proviene del repositorio original `qizekun/ReCon` (MIT) y que la implementación de referencia está en `torch-pointcloud`.
 
 ## Capacidades
 
-- Clasificacion de nubes de puntos 3D en 40 categorias de ModelNet40.
-- Extraccion de caracteristicas (embeddings de 1536 dimensiones) mediante `forward_features`.
-- Soporte de `reset_classifier(num_classes=0)` para usar el modelo como backbone congelado en tareas downstream.
-- Procesamiento de nubes de hasta 8192 puntos con coordenadas y normales.
-- Entrada por lotes mediante `collate`, con gestion de indices de batch.
-- Uso en modo evaluacion (`model.eval()`) con inferencia bajo `torch.no_grad()`.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo puramente perceptivo de vision 3D.
-- No dispone de modo "thinking", vision 2D, audio ni generacion de texto.
+- Clasificación de nubes de puntos 3D en 40 categorías de ModelNet40.
+- Extracción de embeddings globales de 1536 dimensiones mediante `forward_features` o `reset_classifier(num_classes=0)`.
+- Reentrenamiento del clasificador para un número arbitrario de clases con `reset_classifier`.
+- Procesamiento de nubes de puntos con coordenadas y normales, con transformaciones y agrupación en lotes integradas en la librería.
+- Uso como extractor de características congelado para tareas posteriores (detección, segmentación, recuperación) mediante transferencia.
+- No soporta tool calling, agentes, razonamiento multi-paso, texto, visión 2D, audio ni modo thinking: es un modelo puramente de visión 3D.
 
 ## Casos de uso
 
-- Clasificacion de objetos 3D en pipelines de escaneo: el modelo recibe nubes de puntos con normales y devuelve logits sobre 40 clases, adecuado para inventariar objetos capturados con LiDAR o camaras de profundidad.
-- Extraccion de embeddings para busqueda por similitud: usando `forward_features` se obtienen vectores de 1536 dimensiones que permiten indexar formas 3D y recuperar objetos similares con distancia coseno o producto escalar.
-- Backbone congelado para transfer learning: con `reset_classifier(num_classes=0)` el modelo sirve como extractor de caracteristicas para tareas downstream (segmentacion, deteccion) con datasets propios de menor tamano.
-- Preetiquetado de datasets 3D: clasificar automaticamente muestras de ModelNet40 o dominios cercanos para acelerar la anotacion manual en proyectos de vision 3D.
-- Benchmarking de pipelines de nubes de puntos: al ofrecer OA 93,68 % y mAcc 90,73 % sobre ModelNet40, sirve como referencia reproducible para comparar preprocesados, aumentos de datos o arquitecturas alternativas.
-- Prototipado en robotica y realidad aumentada: clasificacion rapida de objetos escaneados en tiempo casi real con un modelo de 43,6 M de parametros y 0,2 GB de pesos, desplegable en GPU de consumo.
-- Docencia e investigacion en aprendizaje 3D: ejemplo completo y ligero de un transformer de puntos con objetivos contrastivos, util para experimentos academicos y reproduccion del paper.
+- Clasificación de objetos 3D en pipelines de escaneado: dado un escaneo de un objeto doméstico o industrial, el modelo asigna una de las 40 categorías de ModelNet40, útil como paso de etiquetado automático previo a una revisión manual.
+- Extracción de embeddings para búsqueda de formas: usando `forward_features` se obtienen vectores de 1536 dimensiones que permiten construir un índice de similitud para recuperar modelos 3D parecidos en un catálogo.
+- Transferencia a dominios con pocas clases: reentrenando el clasificador con `reset_classifier(num_classes=N)` se puede adaptar a categorías propias (por ejemplo, piezas de recambio) partiendo de un backbone preentrenado.
+- Preetiquetado en anotación de datasets 3D: el modelo propone etiquetas para acelerar el etiquetado humano de nuevas nubes de puntos, con revisión posterior.
+- Prototipado e investigación en visión 3D: sirve como línea base reproducible para comparar técnicas de clasificación de nubes de puntos sin replicar el pipeline de entrenamiento original.
+- Control de calidad en fabricación aditiva: clasificar piezas escaneadas para detectar categorías inesperadas o piezas mal posicionadas en una línea de producción.
+- Filtrado previo en robótica de manipulación: clasificar el objeto que hay sobre una mesa antes de seleccionar una estrategia de agarre, siempre que el objeto pertenezca a una de las 40 clases.
 
 ## Benchmarks y rendimiento
 
 Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Benchmark | Metrica | Valor |
+| Benchmark | Métrica | Valor |
 |---|---|---|
-| ModelNet40 | Overall Accuracy (OA) | 93,68 % |
-| ModelNet40 | Mean per-class Accuracy (mAcc) | 90,73 % |
+| ModelNet40 | Overall Accuracy (OA) | 93,76 |
+| ModelNet40 | Mean per-class Accuracy (mAcc) | 90,78 |
 
-No se han publicado en la informacion disponible resultados adicionales de benchmarks ni comparaciones directas con otros modelos.
+No se han publicado en la información disponible resultados comparativos adicionales (por ejemplo, frente a PointNet++, PointNeXt o DGCNN) ni mediciones de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en FP32 para el modelo (43,6 M de parametros, ~175 MB de pesos); el consumo real depende del tamano de lote y de los 8192 puntos por muestra.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; RTX 3060, RTX 4090, A100 o H100 son suficientes y sobradas para inferencia.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (GTX 1650 en adelante) y tambien en CPU para lotes pequenos.
-- Opciones de despliegue: la libreria `torch-pointcloud` sobre PyTorch es la via oficial; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: con 43,6 M de parámetros en fp32, los pesos ocupan aproximadamente 175 MB; sumando activaciones para lotes pequeños, la inferencia cabe holgadamente en menos de 1 GB de VRAM.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia; para entrenamiento o ajuste fino se recomienda una RTX 3090/4090 o superior, aunque el modelo es pequeño.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1660, RTX 2060, RTX 3060, RTX 4090, etc.).
+- Opciones de despliegue: la vía documentada es la librería `torch-pointcloud` (`pip install torch-pointcloud`) sobre PyTorch. No se indica soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de nubes de puntos.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | ModelNet40 OA | Licencia | Disponibilidad |
+| Modelo | Parámetros | Entrada | ModelNet40 OA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| recon.modelnet40.zekun-qi | 43,6 M | 8192 puntos + normales | 93,68 % | MIT | Hugging Face (`torch-pointcloud`) |
-| PointNet++ (referencia clasica) | ~1,5 M | nube de puntos | ~91-92 % (segun configuracion) | MIT | Implementaciones multiples |
-| Point Transformer | ~7 M | nube de puntos | ~93,7 % | MIT | Repositorios de investigacion |
-| Otros checkpoints ReCon | no disponible | nube de puntos | no disponible | MIT | GitHub `qizekun/ReCon` |
+| recon.modelnet40.zekun-qi | 43,6 M | Nube de puntos (pos + normal) | 93,76 (declarado) | MIT | Hugging Face, vía torch-pointcloud |
+| PointNet++ | no disponible en la información | Nube de puntos | no disponible en la información | no disponible | Implementaciones de referencia en repos públicos |
+| DGCNN | no disponible en la información | Nube de puntos | no disponible en la información | no disponible | Implementaciones de referencia en repos públicos |
+| PointNeXt | no disponible en la información | Nube de puntos | no disponible en la información | no disponible | Repositorio oficial |
 
-Las cifras de PointNet++ y Point Transformer son valores de referencia habituales en la literatura y no se han verificado en la informacion proporcionada; deben tomarse como orientativos. No se dispone de comparaciones oficiales publicadas en la model card.
+No se dispone en la información proporcionada de cifras de los modelos alternativos para una comparación cuantitativa rigurosa; la tabla recoge solo lo que consta. La ventaja principal de este checkpoint frente a las alternativas es su empaquetado listo para usar en `torch-pointcloud` con licencia MIT.
 
 ## Limitaciones y advertencias
 
-- Dominio restringido: entrenado exclusivamente en ModelNet40 (40 clases de objetos CAD), por lo que el rendimiento en escenas reales, objetos no vistos o categorias fuera de esas 40 puede degradarse notablemente.
-- Dependencia de normales: la API de ejemplo requiere `pos` y `normal`; sin normales fiables el rendimiento puede caer.
-- Resolucion fija de entrada: el ejemplo usa 8192 puntos; variaciones grandes en el numero de puntos pueden requerir remuestreo.
-- Riesgo de sobreajuste al dataset: la OA del 93,68 % es sobre la particion estandar de ModelNet40 y no garantiza generalizacion a otros dominios.
-- Sin verificacion independiente: los resultados del model-index estan marcados como `verified: false`.
-- Sesgos: no documentados en la informacion disponible; al ser un modelo de formas 3D, los sesgos se relacionan con la distribucion de categorias y estilos de ModelNet40.
-- Licencia MIT: permite uso comercial y modificacion, pero se recomienda citar el paper original y el repositorio de conversion.
-- No apto para tareas linguisticas, generacion de texto, agentes ni tool calling.
-- Fecha de creacion del repositorio (2026-10-30) posterior a la publicacion del paper; conviene revisar la version de `torch-pointcloud` para compatibilidad de pesos.
+- Dominio restringido: solo clasifica las 40 categorías de ModelNet40; fuera de ellas las predicciones no son fiables.
+- Dependencia de la representación: espera nubes de puntos con coordenadas y normales; sin normales o con densidades muy distintas a las de entrenamiento el rendimiento puede degradarse.
+- Sesgos del dataset: ModelNet40 está compuesto por modelos CAD sintéticos, no por escaneos reales con ruido, oclusiones o fondos; el salto a datos reales puede ser notable.
+- Riesgo de sobreajuste al benchmark: los valores de OA y mAcc son declarados por el autor y no están verificados de forma independiente.
+- Licencia MIT: permite uso comercial, pero conviene revisar las licencias de los pesos originales de ReCon y de ModelNet40 si se redistribuye el modelo o los datos.
+- Sin soporte de texto, tool calling ni agentes: no es un modelo de lenguaje y no debe presentarse como tal.
+- Documentación limitada: no hay datos publicados de cuantización, latencia ni comparativas con alternativas en la información disponible.
+- Mantenimiento: el modelo fue creado en octubre de 2026 y actualizado en noviembre de 2026; su dependencia de la librería `torch-pointcloud` implica seguir sus versiones.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/torch-pointcloud/recon.modelnet40.zekun-qi
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/recon.modelnet40.zekun-qi
+- Modelo preentrenado base: https://huggingface.co/torch-pointcloud/recon.pretrain.zekun-qi
 - Paper (arXiv): https://arxiv.org/abs/2302.02318
-- Repositorio original: https://github.com/qizekun/ReCon
-- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- DOI de la libreria: https://doi.org/10.5281/zenodo.22159632
-- Modelo base: https://huggingface.co/torch-pointcloud/recon.pretrain.zekun-qi
+- Repositorio original de ReCon: https://github.com/qizekun/ReCon
+- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- DOI de la librería: https://doi.org/10.5281/zenodo.22159632
+- Dataset ModelNet40 (referencia, paper 3D ShapeNets): https://arxiv.org/abs/1406.5670

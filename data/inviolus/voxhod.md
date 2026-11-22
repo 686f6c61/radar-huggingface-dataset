@@ -2,102 +2,112 @@
 
 ## Resumen
 
-VoxHOD es un detector de personas de tipo CenterNet, anchor-free, disenado especificamente para camaras cenitales de drones en misiones de busqueda y rescate. Lo desarrolla el autor independiente inviolus (codigo en el repositorio ErdemWilkinson/VoxHOD) y su propuesta central es la eficiencia extrema: 136.547 parametros y un fichero TFLite int8 de 197 KB, pensado para ejecutarse en microcontroladores de la clase ESP32-S3. El modelo no pretende sustituir a un detector de gran tamano, sino marcar en una tesela aerea de 160x160 RGB donde hay personas para que el dron senale zonas que merecen una inspeccion mas cercana por parte del equipo de rescate.
+VoxHOD es un detector de personas disenado especificamente para camaras cenitales de drones en misiones de busqueda y rescate. Lo desarrolla inviolus y se distribuye bajo licencia CC BY 4.0. Su propuesta central es la eficiencia extrema: el modelo completo tiene 136.547 parametros y ocupa 197 KB en formato TFLite int8, mientras que la variante nano baja a 37.363 parametros y 75 KB. Esto lo situa en la categoria TinyML, pensado para ejecutarse en microcontroladores de la clase ESP32-S3 y ESP32-P4.
 
-La relevancia actual del modelo reside en su encaje en el paradigma TinyML aplicado a sistemas aereos no tripulados: permite llevar la inferencia a bordo, en el propio microcontrolador del dron, sin depender de enlace de radio ni de computo en la nube, algo critico en escenarios de rescate con conectividad limitada. Frente a los detectores habituales de cientos de millones de parametros, VoxHOD demuestra que una red de 136 mil parametros puede alcanzar un recall del 82,5% en el conjunto de test HERIDAL a un umbral de 0,20, a costa de una precision del 15,8% y 0,47 falsas alarmas por tesela.
+La arquitectura es un detector estilo CenterNet, anchor-free, que procesa teselas RGB de 160x160 y produce una rejilla de 40x40 (stride 4) con un mapa de calor de centros de persona y canales de anchura y altura de caja en escala logaritmica. El modelo no genera texto ni razona: es un detector de objetos puro que marca donde hay personas en una imagen aerea para que el dron senale zonas que merecen una inspeccion mas cercana por parte del equipo de rescate.
 
-El modelo se publica bajo licencia CC BY 4.0 para los pesos (el codigo de entrenamiento es MIT) y se distribuye en formato Keras (modelo float) y TFLite (int8 con y sin QAT). La model card reconoce explicitamente que no se ha medido aun en un ESP32-S3 real ni sobre video de vuelo, por lo que su validacion en produccion esta pendiente.
+Su relevancia actual radica en que demuestra que la deteccion de personas en vuelo puede ejecutarse a bordo de hardware de muy bajo consumo, sin enviar imagenes a un servidor. Los resultados publicados en HERIDAL (recall del 83,9% a umbral 0,2) y las pruebas en terreno no visto (WiSARD y NOMAD) ofrecen una vision realista de sus limites: el recall cae al 61% en camaras no vistas y la tasa de falsos positivos por tesela vacia se multiplica por casi cuatro en terreno desconocido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | CenterNet anchor-free (deteccion por heatmap de centros, stride 4) |
-| Parametros totales | 136.547 |
+| Arquitectura | CenterNet anchor-free (CNN), sin backbone especificado en la model card |
+| Parametros totales | 136.547 (variante completa); 37.363 (variante nano) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision, entrada fija 160x160x3) |
-| Tipos de cuantizacion | int8 full (QAT y post-training), float32 (Keras) |
-| Idiomas soportados | no disponible (modelo de vision, sin componente de lenguaje) |
-| Licencia | CC BY 4.0 (pesos); codigo de entrenamiento MIT |
-| Formato de pesos | `.keras` (float), `.tflite` (int8 QAT y int8 PTQ) |
+| Longitud de contexto | no aplica (modelo de vision, entrada 160x160 RGB) |
+| Tipos de cuantizacion | int8 full (QAT y PTQ); modelo float en `.keras` |
+| Idiomas soportados | no disponible (no procesa lenguaje) |
+| Licencia | CC BY 4.0 |
+| Formato de pesos | TFLite (`.tflite`) y Keras (`.keras`) |
 
 ## Arquitectura y entrenamiento
 
-VoxHOD sigue el esquema CenterNet: una red convolucional que predice un heatmap de centros de persona sobre una rejilla de 40x40 (stride 4) a partir de una entrada de 160x160 RGB normalizada como `pixel / 127.5 - 1`. La salida tiene tres canales: el canal 0 es el heatmap de probabilidad de centro de persona (0 a 1), y los canales 1 y 2 contienen el logaritmo de la anchura y altura de la caja en celdas de la rejilla. Las detecciones se extraen como maximos locales del heatmap por encima de un umbral, sin necesidad de anchors ni de NMS complejo, lo que simplifica enormemente el postprocesado en un microcontrolador.
+VoxHOD es un detector convolucional estilo CenterNet, anchor-free, construido y entrenado desde cero. La entrada es una tesela RGB de 160x160 normalizada con `pixel / 127.5 - 1`. La salida es una rejilla de 40x40 con stride 4: el canal 0 contiene el mapa de calor de centros de persona (0 a 1), y los canales 1 y 2 contienen el logaritmo de la anchura y altura de la caja en celdas de la rejilla. Las detecciones se obtienen como maximos locales del canal 0 por encima de un umbral, lo que permite ajustar el compromiso entre recall y falsos positivos en tiempo de inferencia.
 
-El entrenamiento se realizo sobre el conjunto HERIDAL (CC BY 3.0), un dataset de imagenes aereas para busqueda y rescate en terreno mediterraneo, verano y luz diurna. La model card no detalla el numero de tokens ni la composicion exacta del dataset mas alla de la fuente, ni menciona tecnicas de RLHF o DPO (no aplicables a un detector). La innovacion tecnica destacable es el uso de quantization-aware training (QAT) para producir un fichero int8 que, segun el autor, no pierde rendimiento medible frente al modelo float: a umbral 0,45 el int8 QAT obtiene 59,7% de recall y 52,5% de precision, frente a 57,0% y 55,1% del float.
-
-El modelo se distribuye en tres variantes: `voxocr_qat_int8.tflite` (recomendada, QAT full int8), `voxocr_int8.tflite` (cuantizacion post-entrenamiento del modelo float) y `voxocr.keras` (modelo float). La entrada y salida del TFLite son tensores int8 con parametros de cuantizacion `(scale, zero_point)` accesibles via la API de TensorFlow Lite.
+El entrenamiento se realizo sobre teselas derivadas de fotografias aereas de 4000x3000, recortadas a 640x640 y reescaladas a 160. La model card indica que solo el 29% de las teselas de entrenamiento estan vacias, frente al 91% de las teselas de test, un desequilibrio que el propio autor identifica como causa principal de falsos positivos. Se ofrecen dos variantes: la completa, con cuantizacion consciente del entrenamiento (QAT) en int8, y la nano, con la mitad de anchura y cuantizacion post-entrenamiento (PTQ). No se detalla en la informacion disponible el numero total de tokens ni la composicion exacta del dataset, ni si se uso RLHF o DPO (no aplicable a un detector).
 
 ## Capacidades
 
-- Deteccion de personas en imagenes aereas cenitales (vista vertical desde dron) sobre teselas de 160x160 RGB.
-- Salida de cajas delimitadoras y puntuacion de confianza por persona detectada.
-- Inferencia en microcontroladores de la clase ESP32-S3 gracias a su tamano (197 KB int8).
-- Ejecucion offline a bordo, sin dependencia de conectividad.
-- Ajuste del umbral de deteccion para priorizar recall (busqueda) o precision (verificacion).
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso.
-- No tiene capacidades multilingues ni de generacion de texto.
-- No dispone de modo thinking, vision general, audio ni otras capacidades mas alla de la deteccion de personas.
+- Deteccion de personas en imagenes aereas cenitales (vista hacia abajo desde dron).
+- Salida de cajas delimitadoras con centro, anchura y altura, mas una puntuacion de confianza por deteccion.
+- Funcionamiento en microcontroladores de la clase ESP32 (ESP32-S3, ESP32-P4, ESP32-C6) gracias a su huella de memoria minima.
+- Inferencia int8 completa con entrada y salida cuantizadas, apta para aceleradores y kernels TFLite Micro.
+- Ajuste de sensibilidad mediante umbral en el mapa de calor (0,1 / 0,2 / 0,3 documentados).
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es exclusivamente un detector visual.
+- No dispone de modo thinking, vision general, audio ni generacion de texto.
 
 ## Casos de uso
 
-- Busqueda y rescate con dron: el modelo procesa teselas de 160x160 extraidas de las imagenes de la camara cenital y marca las celdas con posibles personas, permitiendo al dron senalar zonas candidatas a inspeccion mas cercana por el equipo de rescate. Es adecuado porque cabe en el microcontrolador y funciona sin enlace de datos.
-- Patrullaje autonomo de bajo consumo: integrado en un ESP32-S3 a bordo, permite un pre-filtrado continuo de fotogramas y solo transmitir o almacenar las teselas con detecciones, reduciendo el ancho de banda y el consumo energetico.
-- Sistemas de alerta temprana en zonas remotas: desplegado en estaciones fijas con camara cenital, detecta presencia de personas en areas de riesgo (montana, costa) y emite alertas locales.
-- Investigacion en TinyML: sirve como referencia reproducible de detector CenterNet int8 para estudiar tecnicas de cuantizacion y despliegue en microcontroladores.
-- Prototipado de pipelines de vision aerea: permite validar la logica de teselado, umbralizado y postprocesado antes de escalar a un detector mayor en GPU.
-- Docencia y experimentacion: por su tamano y licencia permisiva, es util para ensenar deteccion de objetos anchor-free y cuantizacion en cursos de vision por computador.
-- Validacion de hipotesis de despliegue en flotas de drones: permite medir el coste real de inferencia int8 en hardware embebido antes de invertir en modelos mayores.
+- Busqueda y rescate con dron: el modelo procesa teselas de 160x160 en vuelo y marca centros de persona con su caja estimada, permitiendo al dron senalar coordenadas sospechosas para que el equipo de rescate las revise con mayor resolucion o se desplace a ellas.
+- Vigilancia de areas remotas con hardware de bajo coste: al caber en un ESP32-S3, puede integrarse en camaras autonomas alimentadas por bateria o panel solar que solo emiten alertas cuando detectan una persona, sin transmitir video continuo.
+- Pre-filtrado en pipelines de imagen aerea: usar VoxHOD como primera etapa para descartar teselas vacias y enviar solo las candidatas a un modelo mayor como VoxScout (EfficientNet-B0) o a un operador humano, reduciendo ancho de banda y coste computacional.
+- Balizas de emergencia inteligentes: dispositivos desplegados en zonas de montana que fotografian periodicamente su entorno y alertan si detectan una persona, con consumo energetico compatible con microcontroladores.
+- Investigacion en TinyML: referencia reproducible para estudiar el compromiso entre recall, precision y falsos positivos en deteccion aerea con presupuestos de memoria de decenas de KB.
+- Monitorizacion de instalaciones extensas: deteccion de intrusiones en recintos industriales o agricolas mediante drones de bajo coste con inferencia a bordo, sin infraestructura de servidores.
+- Docencia y prototipado: modelo pequeno y con licencia permisiva para ensenar cuantizacion int8, QAT y despliegue en TFLite Micro con un caso realista.
 
 ## Benchmarks y rendimiento
 
-Resultados en el conjunto de test HERIDAL (3.507 teselas, 372 personas). Una deteccion cuenta como acierto si su centro cae dentro de la caja de la persona expandida en una celda de la rejilla.
+Resultados publicados en la model card sobre el conjunto de test HERIDAL (3.507 teselas, 372 personas). Una deteccion cuenta como acierto si su centro cae dentro de la caja de la persona expandida una celda de rejilla.
 
-| Modelo, umbral | Recall | Precision | Falsas alarmas por tesela |
+| Fichero int8, umbral | Recall | Precision | Falsos positivos por tesela |
 |---|---:|---:|---:|
-| int8 QAT, 0,45 (mejor F1) | 59,7% | 52,5% | 0,06 |
-| int8 QAT, 0,30 | 74,5% | 29,8% | 0,19 |
-| int8 QAT, 0,20 | 82,5% | 15,8% | 0,47 |
-| int8 QAT, 0,10 | 86,6% | 5,5% | 1,58 |
-| float, 0,45 (mejor F1) | 57,0% | 55,1% | 0,05 |
+| v3 QAT, 0,30 | 76,6% | 32,5% | 0,17 |
+| v3 QAT, 0,20 | 83,9% | 20,4% | 0,35 |
+| v3 QAT, 0,10 | 88,7% | 7,7% | 1,12 |
+| nano PTQ, 0,30 | 72,3% | 25,8% | 0,22 |
+| nano PTQ, 0,20 | 81,2% | 12,7% | 0,59 |
+| nano PTQ, 0,10 | 89,5% | 4,8% | 1,87 |
 
-La version v1 (primer entrenamiento infraentrenado) se incluye en la grafica de la model card con un recall del 28,8% en su mejor F1, solo como referencia comparativa. No se han publicado resultados en otros benchmarks (MMLU, HumanEval, GSM8K, etc.) por tratarse de un modelo de vision.
+Verificacion externa en WiSARD (264 fotogramas de otra camara, 6.336 teselas, 1.271 personas, nunca visto en entrenamiento):
+
+| Fichero int8, umbral | Recall | Precision | Falsos positivos por tesela |
+|---|---:|---:|---:|
+| v3 QAT, 0,20 | 61,3% | 19,1% | 0,52 |
+| nano PTQ, 0,20 | 62,2% | 13,4% | 0,81 |
+
+Falsos positivos en terreno no visto (NOMAD, 4.000 teselas vacias, umbral 0,2):
+
+| Fichero int8 | HERIDAL vacias | NOMAD global | 10 m | 30 m | 50 m | 70 m | 90 m |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| v3 | 0,34 | 1,29 | 1,10 | 1,11 | 1,39 | 1,35 | 1,49 |
+| nano | 0,60 | 1,43 | 1,34 | 1,25 | 1,47 | 1,54 | 1,56 |
+
+Analisis de errores de v3 en HERIDAL a umbral 0,2: el 89% de los falsos positivos ocurren en teselas sin nadie; las personas de 8 a 16 px de altura se detectan el 77% de las veces, y las mayores el 90%.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 MB en int8 (fichero de 197 KB); en float, unos 0,5 MB de pesos mas activaciones, despreciable frente a cualquier GPU.
-- GPU recomendadas: no requiere GPU; puede ejecutarse en CPU. Para entrenamiento o evaluacion a gran escala, cualquier GPU consumer (RTX 3060 o superior) es mas que suficiente.
-- Cabe en consumer GPU y en microcontroladores: el objetivo declarado es ESP32-S3, aunque el autor indica que el rendimiento (velocidad y memoria) aun no se ha medido en ese chip.
-- Opciones de despliegue: TensorFlow Lite (recomendado, con el interprete `tf.lite.Interpreter`), TFLite Micro para microcontroladores, y Keras para el modelo float.
-- Latencia y throughput estimados: no disponibles; el autor no ha publicado mediciones en ESP32-S3 ni en video de vuelo real.
+- VRAM estimada para inferencia: no aplica en el sentido tradicional; el modelo esta pensado para RAM de microcontrolador. El fichero int8 completo ocupa 197 KB y el nano 75 KB, mas el arena de ejecucion de TFLite Micro.
+- GPU recomendadas: no requiere GPU. Puede ejecutarse en CPU, en microcontroladores ESP32 y en cualquier dispositivo con TFLite o TensorFlow Lite Micro.
+- Cabe en GPU consumer: si, en cualquier GPU consumer, aunque es sobredimensionado para ellas; su objetivo real son MCU.
+- Opciones de despliegue: TensorFlow Lite (Python, C++), TensorFlow Lite Micro en ESP32-S3/P4/C6, y Keras para el modelo float.
+- Latencia y throughput: la model card indica que en ESP32-P4 el modelo encuentra personas en teselas reales al mismo ritmo que en PC; no se proporcionan cifras concretas de milisegundos por inferencia en la informacion disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Entrada | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxHOD (inviolus) | 136.547 | 160x160 RGB | Deteccion de personas aerea | CC BY 4.0 (pesos), MIT (codigo) | Hugging Face, GitHub |
-| Detectores CenterNet genericos | millones (p. ej. ResNet-18 backbone) | 512x512 o mayor | Deteccion de objetos generica | varia | Amplia |
-| YOLO nano (familia YOLOv5n/YOLOv8n) | 1,9-3,2 M | 640x640 | Deteccion de objetos generica | GPL/AGPL o MIT segun version | Amplia |
-| Detectores TinyML para microcontroladores | decenas a cientos de miles | variable | Deteccion generica | varia | Limitada |
+| VoxHOD (completo) | 136.547 | 160x160 RGB | Deteccion de personas aerea | CC BY 4.0 | Hugging Face + GitHub |
+| VoxHOD nano | 37.363 | 160x160 RGB | Deteccion de personas aerea | CC BY 4.0 | Hugging Face + GitHub |
+| VoxScout | no disponible | no disponible | Deteccion de personas aerea (EfficientNet-B0) | no disponible en la informacion | Hugging Face (proyecto separado del mismo autor) |
 
-No se dispone de comparaciones directas publicadas por el autor frente a estos modelos en el mismo conjunto de test. La comparativa debe tomarse como orientativa por categoria y tamano, no como benchmark verificado.
+No se dispone en la informacion proporcionada de datos de benchmarks de VoxScout ni de otros detectores TinyML comparables, por lo que la comparativa cuantitativa con alternativas queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Entrenado y evaluado unicamente sobre HERIDAL: verano, luz diurna y terreno mayoritariamente mediterraneo. Nieve, dosel forestal, agua, noche y camaras termicas no estan probados.
-- No alcanza el 90% de recall en el conjunto de test; el maximo publicado es 86,6% a umbral 0,10, con 1,58 falsas alarmas por tesela.
-- El rendimiento en ESP32-S3 (velocidad y memoria) y sobre video de vuelo real no se ha medido.
-- Riesgo de falsos positivos elevado a umbrales bajos: a 0,20 hay 0,47 falsas alarmas por tesela, lo que en una mision real puede generar ruido si no se filtra.
-- Limitacion de idioma: no aplica componente linguistico; la model card esta en ingles con un resumen en turco.
-- Licencia CC BY 4.0 para los pesos: permite uso comercial con atribucion; el codigo de entrenamiento es MIT. Verificar la atribucion requerida en despliegues de produccion.
-- Uso previsto limitado a busqueda y rescate; el autor prohibe explicitamente su uso para seleccionar o danar personas.
-- Modelo de vision puro: no soporta texto, agentes ni tool calling; no debe evaluarse con benchmarks de lenguaje.
-- No disponible informacion sobre sesgos demograficos del detector (el dataset HERIDAL no se detalla en la model card).
+- Caida de recall en camaras no vistas: en WiSARD el recall baja al 61,3% (v3) y 62,2% (nano) a umbral 0,2, frente al 83,9% y 81,2% en HERIDAL.
+- Aumento de falsos positivos en terreno desconocido: en NOMAD, v3 pasa de 0,34 a 1,29 falsos positivos por tesela vacia, y empeora con la altitud de vuelo (1,49 a 90 m). A umbral 0,3 baja a 0,74.
+- Desequilibrio de entrenamiento: solo el 29% de las teselas de entrenamiento estan vacias frente al 91% en test, lo que explica que el 89% de los falsos positivos ocurran en teselas sin personas.
+- Precision baja en el punto de operacion recomendado: al 83,9% de recall la precision es solo del 20,4%, es decir, muchas detecciones son falsas alarmas que requieren verificacion humana.
+- Rendimiento dependiente del tamano de persona: las personas de 8 a 16 px se detectan el 77% de las veces, frente al 90% en personas mayores.
+- Sin capacidades de lenguaje, razonamiento ni tool calling: no es un modelo de proposito general.
+- Licencia CC BY 4.0: permite uso comercial con atribucion; conviene revisar los terminos exactos antes de desplegar en produccion.
+- No se documentan sesgos demograficos ni de otro tipo, pero al ser un detector visual entrenado en datasets aereos concretos puede generalizar mal a condiciones de iluminacion, vegetacion o camaras distintas a las de entrenamiento.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/inviolus/VoxHOD
+- Modelo en Hugging Face: https://huggingface.co/inviolus/VoxHOD
 - Codigo y detalles de entrenamiento: https://github.com/ErdemWilkinson/VoxHOD
-- Dataset HERIDAL: https://zenodo.org/records/5662351
-- Paper de referencia HERIDAL: D. Bozic-Stulic, Z. Marusic, S. Gotovac, "Deep Learning Approach in Aerial Imagery for Supporting Land Search and Rescue Missions", IJCV 2019.
+- Modelo hermano VoxScout: https://huggingface.co/inviolus/VoxScout
+- Dataset NOMAD: https://github.com/ArtRuss/NOMAD

@@ -2,81 +2,106 @@
 
 ## Resumen
 
-UnimeType Transliteration 4B es un modelo de generación de texto especializado en conversión de escritura (transliteración) para lenguajes que usan alfabetos latinos de forma romanizada. Desarrollado por UnimeType, está diseñado para convertir Pinyin (chino), Romaji (japonés), Hinglish (hindi romanizado) y Arabizi (árabe romanizado) a sus escrituras nativas, preservando al mismo tiempo palabras en inglés, nombres de productos, enlaces, código, números, puntuación y emojis. El modelo se basa en Qwen3.5-4B, un transformer de 4 mil millones de parámetros, y se distribuye en formato MLX con cuantización de 6 bits, lo que lo hace adecuado para ejecución local en hardware de Apple Silicon.
+UnimeType Transliteration 4B es un modelo de lenguaje especializado en transliteración y conversión de escritura, desarrollado por UnimeType. Su función es convertir texto escrito en caracteres latinos (pinyin, romaji, hindi romanizado, hinglish y arabizi) a su sistema de escritura nativo correspondiente (chino simplificado, japonés, devanagari y árabe), preservando en su lugar elementos como palabras en inglés, nombres de producto, URLs, código, números, puntuación y emoji.
 
-La relevancia de este modelo radica en su enfoque en la escritura mixta cotidiana, donde los usuarios combinan romanización con términos en inglés o elementos técnicos. A diferencia de los sistemas de transliteración tradicionales basados en reglas, este modelo utiliza aprendizaje profundo para manejar contextos ambiguos y preservar elementos que no deben traducirse. Está pensado para integrarse en teclados o aplicaciones de escritura multilingüe, como la experiencia Convert de UnimeType, y ofrece una alternativa ligera y local frente a soluciones basadas en la nube.
+El modelo parte de Qwen/Qwen3.5-4B mediante fine-tuning y se distribuye principalmente en formato MLX de 6 bits (cuantización afín, group size 64), con un tamaño de archivo de 3,42 GB y 4.205.751.296 parámetros. Está pensado para ejecutarse en Macs con Apple Silicon mediante MLX-LM o en runtimes compatibles como LM Studio, y su caso de uso central es la función Convert de la aplicación de teclado UnimeType.
+
+Es relevante porque aborda un problema práctico y mal cubierto por los modelos generalistas: la escritura mixta en conversaciones reales, donde el usuario alterna texto romanizado con términos en inglés y código. La model card advierte de que existe una generación posterior (2.0 v2.1) con mejores métricas, por lo que este repositorio debe considerarse la versión 1.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Qwen3.5-4B) |
-| Parametros totales | 4B class (segun autor); 920.759.296 en safetensors |
-| Longitud de contexto | No disponible (se menciona 2048 tokens para validacion) |
-| Tipos de cuantizacion | 6-bit affine, group size 64 |
-| Idiomas soportados | en, zh, ja, hi, ar (ingles, chino, japones, hindi, arabe) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3.5-4B); detalles de atención no disponibles |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | 2048 tokens usados para validacion; contexto maximo nativo no disponible |
+| Tipos de cuantizacion | MLX 6-bit afín (group size 64); GGUF Q8_0; safetensors en coma flotante estandar |
+| Idiomas soportados | en, zh, ja, hi, ar |
 | Licencia | Apache 2.0 |
-| Formato de pesos | MLX (safetensors) |
+| Formato de pesos | MLX (repo principal), safetensors, GGUF Q8_0 (repos separados) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino (fine-tuning) del modelo base Qwen3.5-4B, un transformer autoregresivo de 4 mil millones de parametros. No se han publicado detalles sobre el dataset de entrenamiento ni el proceso de ajuste (por ejemplo, si se uso RLHF o DPO). La innovacion principal del modelo reside en su capacidad para manejar texto mixto: identifica segmentos romanizados que deben convertirse y los transforma a la escritura objetivo, mientras que los elementos en ingles, codigo, URLs, numeros y emojis se mantienen intactos. El modelo esta optimizado para mensajes cortos y conversacionales, con una longitud de salida recomendada de 128 tokens y una temperatura de 0 para resultados deterministicos.
+El modelo es un fine-tuning de Qwen/Qwen3.5-4B, un transformer decoder-only de la familia Qwen3.5 con aproximadamente 4.200 millones de parámetros. La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron fases de RLHF o DPO; esa información no está disponible. La especialización se orienta a una tarea única de conversión de escritura con preservación de segmentos que no deben transformarse.
+
+La innovación principal no es arquitectónica sino de comportamiento: el modelo recibe un idioma objetivo (chinese, japanese, hindi o arabic) junto con el texto original y devuelve directamente el texto convertido, sin modo de razonamiento activado, con temperatura 0 y un máximo de 128 tokens de salida para mensajes cortos. El diseño prioriza la fidelidad estricta del texto final, incluyendo espaciado, puntuación y código, frente a la generación libre.
 
 ## Capacidades
 
-- Conversion de Pinyin a caracteres chinos simplificados, incluyendo pinyin sin marcas tonales.
-- Conversion de Romaji a japones (kanji, hiragana y katakana).
-- Conversion de hindi romanizado y Hinglish a escritura devanagari.
-- Conversion de Arabizi y arabe romanizado conversacional a escritura arabe.
-- Preservacion de palabras en ingles, nombres de productos, enlaces, direcciones de correo, codigo, numeros, puntuacion, saltos de linea, Markdown y emojis.
-- Manejo de texto que ya esta en la escritura objetivo, sin modificarlo.
-- Generacion de texto directo, sin modo de razonamiento ni explicaciones adicionales.
-- No soporta tool calling, agentes ni capacidades multimodales.
+- Conversión de pinyin (con y sin tonos) a caracteres chinos simplificados.
+- Conversión de romaji a japonés con mezcla de kanji, hiragana y katakana.
+- Conversión de hindi romanizado e hinglish a devanagari, preservando palabras en inglés.
+- Conversión de arabizi y árabe romanizado conversacional a escritura árabe, preservando inglés.
+- Preservación de términos en inglés, nombres de producto, vocabulario técnico, URLs, direcciones de correo y fragmentos de código.
+- Mantenimiento de puntuación, saltos de línea, Markdown, números y emoji.
+- Detección implícita de texto que ya está en el sistema de escritura objetivo, que debe devolverse sin cambios.
+- Generación de texto conversacional (pipeline text-generation), aunque no es su función principal.
+- No soporta tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking según la información disponible; de hecho, la model card recomienda desactivar el razonamiento.
 
 ## Casos de uso
 
-- Teclado de transliteracion para mensajeria: un usuario escribe en pinyin o romaji en un teclado latino y el modelo convierte el texto a chino o japones antes de enviarlo, manteniendo terminos en ingles como nombres de marcas o jerga tecnica.
-- Asistente de escritura para redes sociales: permite redactar publicaciones en hindi o arabe usando el alfabeto latino, con preservacion de hashtags, menciones y emojis.
-- Herramienta de correccion de textos mixtos: convierte documentos o chats que mezclan romanizacion con ingles, manteniendo la estructura original y los elementos no traducibles.
-- Integracion en aplicaciones de traduccion asistida: el modelo puede preprocesar texto romanizado para convertirlo a escritura nativa antes de una traduccion automatica, mejorando la precision en lenguajes como hindi o arabe.
-- Generacion de subtitulos o transcripciones: convierte transcripciones romanizadas de audio a escritura nativa, preservando nombres propios y terminos tecnicos en ingles.
-- Educacion y aprendizaje de idiomas: ayuda a estudiantes a ver la escritura correcta de palabras en chino, japones, hindi o arabe a partir de su romanizacion, con ejemplos contextuales.
+- Teclados móviles y de escritorio: integración en la función Convert de la app UnimeType para que el usuario escriba en latín y obtenga el sistema de escritura deseado en iPhone, iPad, Android, Mac y Windows (beta).
+- Mensajería multilingüe: conversión de mensajes cortos de chat con mezcla de inglés y texto romanizado, gracias al ajuste recomendado de 128 tokens de salida para mensajes breves.
+- Redacción de correos y notas con terminología técnica: el modelo preserva nombres de producto, URLs y fragmentos de código, lo que permite convertir el cuerpo romanizado sin romper referencias técnicas.
+- Localización de contenido para comunidades de la diáspora: usuarios que escriben hinglish o arabizi pueden generar texto en devanagari o árabe para publicaciones en redes y foros.
+- Procesamiento por lotes de entradas de usuario: normalización de texto romanizado en pipelines de datos antes de indexación o análisis, ejecutando el modelo en local sobre Apple Silicon con MLX.
+- Herramientas de accesibilidad y aprendizaje de idiomas: conversión asistida de pinyin a caracteres para estudiantes de chino, o de romaji a japonés para principiantes, con revisión humana del resultado.
+- Despliegue en estaciones de trabajo sin GPU dedicada: al caber en 3,42 GB en formato MLX 6-bit, puede ejecutarse en Macs con Apple Silicon mediante MLX-LM o LM Studio.
 
 ## Benchmarks y rendimiento
 
-La model card publica resultados de evaluacion con coincidencia exacta del texto final. Una prueba pasa solo si la salida completa coincide con una respuesta aceptada, incluyendo ingles preservado, puntuacion, codigo y espaciado.
+La model card publica una evaluación histórica con coincidencia exacta del texto final (un resultado solo pasa si la salida completa coincide con una respuesta aceptada, incluidos inglés preservado, puntuación, código y espaciado):
 
-| Runtime | Suite de conversion cotidiana | Suite multilingue reservada |
-| --- | ---: | ---: |
+| Runtime | Suite de conversión cotidiana | Suite multilingüe reservada |
+|---|---:|---:|
 | MLX directo | 98 / 127 | 57 / 104 |
 | LM Studio | 94 / 127 | 57 / 104 |
 
-No se han publicado comparaciones con otros modelos de transliteracion en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card indica que la generación 2.0 v2.1 alcanza un 88,4 % de precisión estricta en cuatro idiomas y un 93,2 % de precisión por carácter en frases largas multi-cláusula, con una mejora de +32,8 % sobre v1.0, pero no se aportan los valores absolutos de v1.0 correspondientes a esas métricas.
 
 ## Requisitos de hardware
 
-- El modelo se distribuye en formato MLX, optimizado para Apple Silicon (Macs con chips M1 o posteriores).
-- Tamano del archivo: 3.42 GB (cuantizacion 6-bit), por lo que requiere aproximadamente 4 GB de memoria unificada para cargar el modelo en memoria.
-- Se puede ejecutar con MLX-LM o importarse en LM Studio (compatible con MLX).
-- No se proporcionan datos de latencia ni throughput, pero al ser un modelo de 4B cuantizado, es adecuado para inferencia local en tiempo real en Macs con al menos 8 GB de RAM.
-- No se menciona soporte para CUDA o GPUs de NVIDIA; el formato MLX esta disenado exclusivamente para Apple Silicon.
+- VRAM/espacio en disco: el archivo MLX 6-bit ocupa 3,42 GB; el repositorio completo, 6,9 GB. En GPUs convencionales, una cuantización de 4 bits de un modelo de 4B requiere aproximadamente 2,5-3 GB de VRAM, y en FP16 en torno a 8,5 GB, aunque estas estimaciones no están confirmadas por el autor.
+- GPU recomendadas: el formato principal es MLX, orientado a Apple Silicon (chips M1, M2, M3, M4 y posteriores). Para el GGUF Q8_0 puede usarse llama.cpp en CPU o GPU. No se especifican GPUs NVIDIA recomendadas.
+- GPU de consumo: cabe en equipos con Apple Silicon unificada; en el ecosistema NVIDIA, una RTX 3060 de 12 GB o superior podría alojar una cuantización de 4 bits, si bien no hay validación publicada.
+- Opciones de despliegue: MLX-LM, LM Studio (validado por el autor), llama.cpp con el GGUF Q8_0 y cualquier runtime que cargue safetensors estándar. vLLM y TGI no están mencionados en la información disponible.
+- Latencia y throughput: no disponibles. La configuración recomendada limita la salida a 128 tokens y usa temperatura 0, lo que reduce la latencia en mensajes cortos.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion comparativa con otros modelos de transliteracion en la documentacion proporcionada. Existen alternativas como IndicXlit (para 21 lenguas indias) o herramientas basadas en reglas, pero no se han realizado comparaciones publicas con este modelo.
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| UnimeType Transliteration 4B | 4,2B | 2048 tokens validados (máximo no disponible) | Transliteración pinyin/romaji/hindi/arabizi | Apache 2.0 | MLX, safetensors, GGUF |
+| UnimeType Transliteration 2.0-4B | Clase 4B | No disponible | Transliteración, generación 2.0 v2.1 | No disponible en la información | Hugging Face |
+| UnimeType Transliteration 2.0-0.8B | Clase 0,8B | No disponible | Transliteración ultraligera | No disponible en la información | Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | Clase 4B | No disponible | LLM generalista | No disponible en la información | Hugging Face |
+
+No se dispone de datos de benchmarks comparativos frente a modelos de transliteración de otros proveedores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La evaluacion con coincidencia exacta es estricta: variaciones validas de ortografia o redaccion pueden contarse como errores, especialmente en nombres ambiguos, terminos dialectales o fragmentos muy cortos.
-- El modelo esta disenado exclusivamente para conversion de escritura, no para traduccion, reescritura, pulido o explicacion de texto.
-- Solo soporta cuatro idiomas objetivo (chino, japones, hindi y arabe) y sus respectivas romanizaciones; no cubre otros sistemas de escritura.
-- No se han documentado sesgos especificos, pero al ser un modelo ajustado sobre Qwen3.5, puede heredar sesgos del modelo base.
-- La longitud de contexto maxima no esta especificada; se recomienda un contexto de validacion de 2048 tokens, lo que limita su uso en documentos largos.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-4B puede tener sus propias restricciones; se recomienda revisar la licencia del modelo base.
+- La model card indica explícitamente que la preservación de segmentos no está garantizada y que deben revisarse las salidas antes de usarlas.
+- Existe un error conocido de salto de línea final en árabe, documentado en las exportaciones safetensors y GGUF; los pesos MLX de este repositorio no se han modificado.
+- El modelo está diseñado para conversión, no para traducción, reescritura, pulido ni explicación; usarlo fuera de ese ámbito producirá resultados no fiables.
+- La evaluación se basa en coincidencia exacta, lo que penaliza variantes ortográficas válidas; las puntuaciones publicadas subestiman potencialmente la calidad real.
+- Cobertura limitada a cinco idiomas (en, zh, ja, hi, ar); no se documenta soporte para otras escrituras como cirílico, a pesar de que la web del autor ofrece una herramienta de transliteración rusa.
+- El contexto validado es de 2048 tokens, adecuado para mensajes cortos pero insuficiente para documentos largos.
+- El formato principal es MLX, lo que limita el despliegue fuera del ecosistema Apple salvo mediante el GGUF Q8_0 o los safetensors.
+- No se documentan sesgos específicos ni riesgos de alucinación medidos; al ser un fine-tuning de un modelo generalista, puede heredar sesgos del base.
+- La licencia Apache 2.0 permite uso comercial, pero la model card no ofrece garantías de exactitud en producción.
 
 ## Enlaces
 
-- [Hugging Face - UnimeType/Transliteration-4B](https://huggingface.co/UnimeType/Transliteration-4B)
-- [Sitio web de UnimeType](https://unimetype.com/)
-- [Pagina de AI Keyboard Translator de UnimeType](https://unimetype.com/ai-keyboard-translator)
-- [Modelo base Qwen3.5-4B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-4B)
+- Modelo en Hugging Face: https://huggingface.co/UnimeType/Transliteration-4B
+- Repositorio safetensors: https://huggingface.co/UnimeType/Transliteration-4B-Safetensors/tree/main
+- Repositorio GGUF Q8_0: https://huggingface.co/UnimeType/Transliteration-4B-GGUF/tree/main
+- Generación posterior 2.0-4B: https://huggingface.co/UnimeType/Transliteration-2.0-4B
+- Generación posterior 2.0-0.8B: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B
+- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Playground interactivo: https://huggingface.co/spaces/UnimeType/Transliteration-Playground
+- Descarga de la app UnimeType: https://unimetype.com/download
+- Conversor pinyin a chino: https://unimetype.com/tools/pinyin-to-chinese
+- Conversor romaji a japonés: https://unimetype.com/tools/romaji-to-hiragana
+- Conversor inglés a hindi: https://unimetype.com/tools/english-to-hindi
+- Conversor translit a cirílico: https://unimetype.com/tools/translit-to-cyrillic

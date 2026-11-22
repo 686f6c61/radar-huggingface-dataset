@@ -1,85 +1,108 @@
 # llm-jp/llm-jp-4-32b-a3b-thinking-gguf
 
 ## Resumen
+llm-jp-4-32b-a3b-thinking-gguf es la version cuantizada en formato GGUF del modelo llm-jp-4-32b-a3b-thinking, un modelo de lenguaje de arquitectura Mixture of Experts (MoE) desarrollado por el Centro de Investigacion y Desarrollo de Grandes Modelos de Lenguaje del Instituto Nacional de Informatica de Japon (NII). El modelo forma parte de la familia LLM-jp-4, que incluye variantes densas y MoE con distintos tamanos, y esta orientado especificamente a tareas de razonamiento con modo de pensamiento (thinking).
 
-El modelo **llm-jp-4-32b-a3b-thinking-gguf** es una variante cuantizada en formato GGUF del modelo de lenguaje llm-jp-4-32b-a3b-thinking, desarrollado por el Research and Development Center for Large Language Models del National Institute of Informatics (NII) de Japón. Se trata de un modelo de arquitectura Transformer con mezcla de expertos (MoE) de 32 mil millones de parámetros totales, de los cuales solo 3,8 mil millones se activan por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. Su ventana de contexto alcanza los 65.536 tokens, y está especializado en los idiomas japonés e inglés.
+La version thinking se ha alineado mediante supervised fine-tuning (SFT) y direct preference optimization (DPO), sin uso de reinforcement learning. El modelo activa 3.827.476.992 de sus 32.139.028.992 parametros totales por token, lo que permite un coste computacional de inferencia notablemente inferior al de un modelo denso del mismo tamano. Soporta una longitud de contexto de 65.536 tokens y esta entrenado sobre 11,7 billones de tokens.
 
-La variante "thinking" ha sido alineada mediante supervisión fina (SFT) y optimización directa de preferencias (DPO), sin refuerzo, y está diseñada para tareas de razonamiento y conversación. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación. Su relevancia actual radica en que es uno de los modelos de código abierto más avanzados para el procesamiento del japonés, con una arquitectura MoE eficiente y un contexto muy amplio, comparable a otros modelos de su categoría como Qwen2.5-32B-A3B.
+La relevancia de esta ficha radica en que el repositorio GGUF facilita el despliegue en infraestructura de inferencia local y en entornos con GPU de gama consumer, manteniendo las capacidades de razonamiento del modelo original. Esta publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE) |
-| Parametros totales | 32.139.028.992 (32B) |
-| Parametros activos | 3.827.476.992 (3,8B) |
+| Arquitectura | Transformer-based Mixture of Experts (MoE) |
+| Parametros totales | 32.139.028.992 |
+| Parametros activos | 3.827.476.992 |
 | Longitud de contexto | 65.536 tokens |
-| Tipos de cuantizacion | No especificados en la informacion disponible (formato GGUF) |
-| Idiomas soportados | Japones (ja), ingles (en) |
+| Tipos de cuantizacion | GGUF (cuantizaciones multiples; el repositorio ocupa 171,5 GB en total) |
+| Idiomas soportados | Ingles (en), japones (ja) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (tambien disponible en safetensors en el repositorio base) |
+| Formato de pesos | GGUF (repo principal); safetensors disponible en el modelo base |
+| Capas | 32 |
+| Hidden size | 2.560 |
+| Cabezas de atencion | 40 |
+| Expertos enrutados | 128 |
+| Expertos activados | 8 |
+| Parametros de embedding | 503.316.480 |
+| Parametros no-embedding | 31.635.712.512 |
+| Tokenizer | Unigram byte-fallback basado en llm-jp-tokenizer v4.0 |
+| Tokens de entrenamiento | 11,7 T |
+| Lenguajes de programacion | C, C++, C#, Go, Java, JavaScript, Lua, PHP, Python, Ruby, Rust, Scala, TypeScript |
 
 ## Arquitectura y entrenamiento
+El modelo emplea una arquitectura Transformer con capas de Mixture of Experts: 32 capas, 128 expertos enrutados por capa y 8 expertos activados por token. Con un hidden size de 2.560 y 40 cabezas de atencion, el modelo mantiene un coste de activacion de aproximadamente 3,83 mil millones de parametros por token, lo que lo situa en la categoria de modelos MoE de gran capacidad pero bajo coste de inferencia.
 
-El modelo sigue una arquitectura Transformer estándar con capas de mezcla de expertos: 32 capas, tamaño oculto de 2.560, 40 cabezas de atención, 128 expertos enrutados y 8 expertos activados por token. Esta configuración MoE permite activar solo 3,8 mil millones de parámetros por inferencia, reduciendo significativamente el coste computacional en comparación con un modelo denso de 32 mil millones. El tokenizador se basa en un modelo Unigram con byte-fallback, derivado de llm-jp-tokenizer v4.0, y su plantilla de chat es compatible con el formato de respuesta OpenAI Harmony, aunque requiere el tokenizador propio del modelo.
-
-El entrenamiento se realizó en varias fases: pre-entrenamiento y mid-entrenamiento con un total de 11,7 billones de tokens, utilizando corpus públicos (llm-jp-corpus-v4.1 y llm-jp-corpus-midtraining-v2). Posteriormente, el modelo se ajustó mediante SFT y se alineó con DPO, sin emplear aprendizaje por refuerzo. Los datasets de post-entrenamiento también son públicos. Cabe destacar que, según la documentación, la variante "thinking" se entrena con SFT y DPO, a diferencia de la variante "instruct" que solo usa SFT.
+El entrenamiento sigue un pipeline multietapa de pre-training y mid-training con un total de 11,7 billones de tokens. Los corpus utilizados estan publicados en los repositorios GitLab del proyecto (llm-jp-corpus-v4.1 y llm-jp-corpus-midtraining-v2), aunque algunas porciones se han excluido por restricciones de licencia. La fase de post-training combina SFT sobre el dataset llm-jp-4-thinking-sft-data y DPO sobre llm-jp-4-32b-a3b-thinking-dpo-data. El tokenizer es un modelo Unigram byte-fallback derivado de llm-jp-tokenizer v4.0, y la plantilla de chat esta disenada para ser compatible con el formato OpenAI Harmony, si bien la tokenizacion directa con la libreria openai-harmony no esta soportada.
 
 ## Capacidades
-
-- Generación de texto y conversación multi-turno en japonés e inglés, con soporte de plantilla de chat compatible con OpenAI Harmony.
-- Razonamiento y resolución de problemas complejos gracias a la variante "thinking", que incorpora un modo de razonamiento explícito.
-- Generación de código en múltiples lenguajes de programación (C, C++, C#, Go, Java, JavaScript, Lua, PHP, Python, Ruby, Rust, Scala, TypeScript), según la metadata del modelo.
-- Manejo de contextos largos de hasta 65.536 tokens, adecuado para documentos extensos o conversaciones prolongadas.
-- Capacidades multilingües centradas en japonés e inglés, con especial énfasis en el japonés.
-- Soporte de tool calling y function calling no confirmado explícitamente en la información disponible, aunque la arquitectura y el entrenamiento general sugieren compatibilidad con tareas de agente (no verificado).
+- Generacion de texto conversacional en ingles y japones, con soporte de conversaciones multi-turno.
+- Razonamiento explicito mediante modo thinking, entrenado con SFT y DPO.
+- Generacion y comprension de codigo en 13 lenguajes de programacion (C, C++, C#, Go, Java, JavaScript, Lua, PHP, Python, Ruby, Rust, Scala, TypeScript).
+- Capacidades multilingues limitadas a ingles y japones.
+- Soporte de formato de respuesta compatible con OpenAI Harmony (con tokenizer propio).
+- Capacidad de instrucciones de un solo turno y multi-turno evaluada mediante llm-jp-instructions y MT-Bench.
+- No se dispone de informacion sobre soporte explicito de tool calling, function calling o agentes multi-paso en la informacion proporcionada.
 
 ## Casos de uso
-
-- **Atención al cliente automatizada en japonés**: el modelo puede gestionar conversaciones multi-turno con contexto largo (65.536 tokens), lo que permite mantener el historial completo de una interacción sin truncamientos, ideal para soporte técnico o comercial en empresas japonesas.
-- **Generación de código en entornos de producción**: con soporte para múltiples lenguajes de programación, puede integrarse en pipelines de CI/CD para autocompletar código, generar tests o documentar APIs, aprovechando su capacidad de razonamiento para tareas de refactorización.
-- **Análisis y resumen de documentos legales o técnicos**: su ventana de contexto amplia permite procesar contratos, patentes o informes extensos en japonés e inglés, extrayendo información clave o generando resúmenes ejecutivos.
-- **Asistente de investigación académica**: puede ayudar a investigadores japoneses a redactar artículos, revisar literatura o formular hipótesis, gracias a su entrenamiento en corpus científicos y su capacidad de razonamiento.
-- **Traducción y localización**: aunque no es un modelo de traducción dedicado, su bilingüismo japonés-inglés permite traducir textos con matices culturales, especialmente útil para localización de software o contenido web.
-- **Chatbots educativos y tutores**: puede actuar como tutor de idiomas o de programación, explicando conceptos paso a paso y adaptándose al nivel del estudiante, con respuestas razonadas y coherentes.
-- **Procesamiento de conversaciones largas en centros de contacto**: al mantener el contexto completo de una llamada o chat, puede generar resúmenes automáticos, detectar intenciones o clasificar tickets sin perder información relevante.
+- Razonamiento asistido en japones: el modelo puede abordar tareas de razonamiento complejo en japones gracias a su modo thinking y a un entrenamiento especifico en corpus japoneses, adecuado para asistencia tecnica y educativa en ese idioma.
+- Generacion de codigo en produccion: al cubrir 13 lenguajes de programacion, puede integrarse en pipelines de generacion de codigo, revision automatizada y documentacion tecnica, con cuantizacion GGUF para despliegue en servidores con GPU limitada.
+- Atencion al cliente en japones e ingles: la ventana de 65.536 tokens permite gestionar conversaciones multi-turno con historial extenso y contexto documental adjunto.
+- Traduccion y adaptacion de contenido entre ingles y japones: el modelo puede emplearse para localizacion de documentacion tecnica y contenido editorial en ambos idiomas.
+- Analisis de documentacion larga: con 65.536 tokens de contexto, es adecuado para resumir, extraer y responder preguntas sobre manuales, contratos o informes extensos.
+- Despliegue en entornos con recursos limitados: la variante GGUF y la activacion de solo 3,83 mil millones de parametros por token permiten ejecutar el modelo en estaciones de trabajo con GPU consumer, reduciendo el coste frente a modelos densos de 32B.
+- Evaluacion y generacion de respuestas seguras en japones: el modelo ha sido evaluado con el benchmark AnswerCarefully, orientado a seguridad en japones, lo que lo hace util para sistemas que requieren filtrado y moderacion de contenido.
 
 ## Benchmarks y rendimiento
+La model card reporta evaluaciones mediante el framework LLM-as-a-Judge de llm-jp-judge, usando gpt-5.4-2026-03-05 como evaluador. Los resultados disponibles en la informacion proporcionada son parciales:
 
-No se han publicado resultados numéricos de benchmarks en la informacion disponible. La documentación menciona que el modelo fue evaluado con el framework llm-jp-judge, utilizando el evaluador gpt-5.4-2026-03-05, en tareas como MT-Bench (JA/EN), AnswerCarefully (seguridad en japonés) y llm-jp-instructions (preguntas de una sola vuelta). Sin embargo, los valores concretos de las puntuaciones no se incluyen en la información proporcionada. Se recomienda consultar el repositorio oficial o el cookbook para obtener datos actualizados.
+| Modelo | MT-Bench (JA) | MT-Bench (EN) | AnswerCarefully | llm-jp-instructions |
+|---|---|---|---|---|
+| gpt-4o-2024-08-06 | 7,29 | 7,69 | 4,00 | no disponible |
+| llm-jp-4-32b-a3b-thinking | no disponible | no disponible | no disponible | no disponible |
+
+No se han publicado en la informacion disponible los resultados numericos del modelo llm-jp-4-32b-a3b-thinking en MT-Bench (JA/EN), AnswerCarefully ni llm-jp-instructions. La model card indica que el evaluador gpt-5.4-2026-03-05 es mas estricto que el usado en la serie llm-jp-3, lo que produce puntuaciones mas bajas en benchmarks como MT-Bench.
 
 ## Requisitos de hardware
-
-- **VRAM estimada para inferencia**: depende de la cuantización elegida. Para el modelo completo en BF16 (32B parámetros), se necesitarían aproximadamente 64 GB de VRAM. Con cuantizaciones típicas de GGUF (por ejemplo, Q4_K_M), la huella se reduce a unos 20-24 GB, y con Q8 a unos 34 GB. No se especifican las cuantizaciones incluidas en el repositorio.
-- **GPU recomendadas**: para cuantizaciones bajas (Q4), una GPU de consumo como la RTX 4090 (24 GB) o RTX 3090 (24 GB) puede ser suficiente. Para cuantizaciones más altas o BF16, se requieren GPUs profesionales como A100 (40/80 GB) o H100 (80 GB).
-- **Compatibilidad con GPU de consumo**: sí, con cuantizaciones de 4 bits o inferiores, el modelo cabe en GPUs de 24 GB, aunque la velocidad de inferencia dependerá del ancho de banda de memoria.
-- **Opciones de despliegue**: el formato GGUF permite usar llama.cpp, pero se requiere el fork de LLM-jp (https://github.com/llm-jp/llama.cpp) porque el upstream no incluye las correcciones necesarias para el tokenizador. También se puede usar con Lemonade (según la documentación) y con transformers (para el formato safetensors).
-- **Latencia y throughput**: no se proporcionan datos específicos. En general, un modelo MoE con 3,8B parámetros activos ofrece una latencia menor que un modelo denso de 32B, pero el rendimiento exacto depende del hardware y la cuantización.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repositorio GGUF ocupa 171,5 GB, lo que sugiere que las cuantizaciones de mayor precision requieren varias GPU o un servidor con memoria unificada amplia.
+- Con cuantizaciones de 4 bits, el modelo de 32B requiere aproximadamente 16-20 GB de VRAM, aunque este dato no se confirma en la informacion proporcionada.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, cabria esperar A100, H100 o RTX 4090 para cuantizaciones bajas, pero no se confirma.
+- Despliegue: el formato GGUF permite su uso con llama.cpp y Ollama; la libreria declarada es transformers. No se confirma soporte de vLLM o TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de comparativa directa en la información proporcionada. Sin embargo, el modelo es comparable en arquitectura y tamaño a otros MoE de ~32B con ~3B activos, como Qwen2.5-32B-A3B o DeepSeek-V3-Lite. La principal diferencia es el enfoque en japonés y la licencia Apache 2.0, que facilita el uso comercial. No se pueden aportar cifras de rendimiento comparativas sin datos verificados.
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| llm-jp-4-32b-a3b-thinking | 32,1B | 3,83B | 65.536 | Apache 2.0 | GGUF, safetensors |
+| llm-jp-4-8b (denso) | 8,59B | 8,59B | 65.536 | Apache 2.0 | no disponible |
+| gpt-4o-2024-08-06 (referencia) | no disponible | no disponible | no disponible | propietaria | API |
+
+La familia LLM-jp-4 incluye tambien un modelo denso de 8B con 65.536 tokens de contexto. No se dispone en la informacion proporcionada de datos de rendimiento comparativos entre ambas variantes ni con modelos de otros proveedores.
 
 ## Limitaciones y advertencias
-
-- **Sesgos conocidos**: al estar entrenado principalmente con corpus en japonés e inglés, puede presentar sesgos culturales o lingüísticos propios de estos idiomas. No se han documentado sesgos específicos en la información disponible.
-- **Riesgo de alucinación**: como todo modelo de lenguaje, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo. Se recomienda verificar las salidas en aplicaciones críticas.
-- **Limitaciones de contexto**: aunque la ventana es de 65.536 tokens, el rendimiento puede degradarse en contextos muy largos si no se gestiona adecuadamente la atención.
-- **Restricciones de licencia**: la licencia Apache 2.0 permite uso comercial, pero se debe mantener el aviso de copyright y la atribución. No hay restricciones adicionales conocidas.
-- **Requisito de fork de llama.cpp**: para usar el modelo con llama.cpp, es obligatorio compilar el fork de LLM-jp; el upstream no funciona correctamente con el tokenizador, lo que puede complicar el despliegue en entornos estándar.
-- **Idiomas limitados**: solo soporta japonés e inglés; no es adecuado para otros idiomas sin un ajuste adicional.
-- **Caveat de producción**: la variante "thinking" puede generar respuestas más largas y con pasos de razonamiento, lo que aumenta la latencia y el coste de inferencia en comparación con la variante "instruct".
+- Idiomas limitados a ingles y japones; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se han publicado datos especificos de mitigacion.
+- La version thinking se ha alineado con SFT y DPO, pero sin reinforcement learning, lo que puede limitar la robustez en tareas de razonamiento muy complejas.
+- La tokenizacion con la libreria openai-harmony no esta soportada directamente; es necesario usar el tokenizer incluido en el repositorio.
+- Parte de los corpus de entrenamiento no se ha publicado por restricciones de licencia, lo que limita la trazabilidad completa de los datos.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones de los datasets de post-training y de los corpus no publicados.
+- No se dispone de informacion sobre sesgos conocidos, limites de contexto en produccion ni latencia real.
+- El tamano del repositorio (171,5 GB) implica requisitos de almacenamiento considerables para su descarga y despliegue.
 
 ## Enlaces
-
-- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking-gguf
-- Repositorio Hugging Face del modelo base (safetensors): https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking
-- Colección de modelos LLM-jp-4: https://huggingface.co/collections/llm-jp/llm-jp-4-models
-- Cookbook de LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook
-- Fork de llama.cpp de LLM-jp: https://github.com/llm-jp/llama.cpp
-- Framework de evaluación llm-jp-judge: https://github.com/llm-jp/llm-jp-judge
-- Datasets de pre-entrenamiento: https://gitlab.llm-jp.nii.ac.jp/datasets/llm-jp-corpus-v4.1
-- Datasets de mid-entrenamiento: https://gitlab.llm-jp.nii.ac.jp/datasets/llm-jp-corpus-midtraining-v2
-- Datasets de SFT: https://huggingface.co/datasets/llm-jp/llm-jp-4-thinking-sft-data
-- Datasets de DPO (para este modelo): https://huggingface.co/datasets/llm-jp/llm-jp-4-32b-a3b-thinking-dpo-data
-- Sitio web del proyecto LLM-jp: https://llm-jp.nii.ac.jp/en/home-en/
+- Hugging Face: https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking-gguf
+- Coleccion LLM-jp-4 Models: https://huggingface.co/collections/llm-jp/llm-jp-4-models
+- Cookbook: https://github.com/llm-jp/llm-jp-4-cookbook
+- Corpus de pre-training: https://gitlab.llm-jp.nii.ac.jp/datasets/llm-jp-corpus-v4.1
+- Corpus de mid-training: https://gitlab.llm-jp.nii.ac.jp/datasets/llm-jp-corpus-midtraining-v2
+- Dataset SFT: https://huggingface.co/datasets/llm-jp/llm-jp-4-thinking-sft-data
+- Dataset DPO (32b-a3b-thinking): https://huggingface.co/datasets/llm-jp/llm-jp-4-32b-a3b-thinking-dpo-data
+- Dataset DPO (8b-thinking): https://huggingface.co/datasets/llm-jp/llm-jp-4-8b-thinking-dpo-data
+- llm-jp-judge: https://github.com/llm-jp/llm-jp-judge
+- AnswerCarefully: https://huggingface.co/datasets/llm-jp/AnswerCarefully
+- llm-jp-instructions: https://huggingface.co/datasets/llm-jp/llm-jp-instructions
+- llm-jp-tokenizer: https://github.com/llm-jp/llm-jp-tokenizer
+- Centro de Investigacion y Desarrollo de LLM (LLMC): https://llmc.nii.ac.jp/
+- Instituto Nacional de Informatica (NII): https://www.nii.ac.jp/en/
+- Formulario de encuesta de uso: https://forms.gle/AvbNXTNT2ADsssHq5

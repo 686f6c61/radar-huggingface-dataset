@@ -5,7 +5,7 @@
   "author": "RoboDyna",
   "url": "https://huggingface.co/RoboDyna/X-VLA-RoboDyna",
   "created_at": "2026-08-23T14:00:37.000Z",
-  "updated_at": "2026-08-23T14:19:31.000Z",
+  "updated_at": "2026-11-19T04:41:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 879738545,
   "parameters_human": "879.7M",

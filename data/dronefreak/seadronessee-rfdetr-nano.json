@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "id": "dronefreak/seadronessee-rfdetr-nano",
+  "slug": "dronefreak-seadronessee-rfdetr-nano",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/seadronessee-rfdetr-nano",
+  "created_at": "2026-08-11T10:58:49.000Z",
+  "updated_at": "2026-11-21T22:08:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "safetensors",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "maritime",
+    "uav",
+    "drone",
+    "search-and-rescue",
+    "dataset:dronefreak/SeaDronesSee",
+    "arxiv:2105.01922",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "base_model:Roboflow/rf-detr-nano",
+    "base_model:finetune:Roboflow/rf-detr-nano",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 30161468,
+  "parameters_human": "30.2M",
+  "storage_bytes": 242652049,
+  "storage_human": "243 MB",
+  "context_length": null,
+  "base_model": "Roboflow/rf-detr-nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "SeaDronesSee",
+      "metric": "mAP@50 (val split)",
+      "value": 72.38
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "SeaDronesSee",
+      "metric": "mAP@50-95 (val split)",
+      "value": 39.83
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "SeaDronesSee",
+      "metric": "Precision (val split)",
+      "value": 81.37
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "SeaDronesSee",
+      "metric": "Recall (val split)",
+      "value": 74.08
+    }
+  ],
+  "sources": []
+}

@@ -2,91 +2,90 @@
 
 ## Resumen
 
-`internvl-mic` es un artefacto de prueba publicado por la organización `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable para inferencia real: se trata de un *fixture* de 9.973.120 parámetros (aproximadamente 10 millones) construido para validar la integración del modelo `OpenGVLab/InternVL3-1B-hf` en la librería Transformers. La model card lo etiqueta explícitamente como `test-artifact` y advierte que "no es un modelo usable".
+`internvl-mic` es un artefacto de prueba (fixture) publicado en Hugging Face por la organización `huggingface-mic`. No es un modelo utilizable: se trata de una versión reducida artificialmente del checkpoint `OpenGVLab/InternVL3-1B-hf`, con 9.973.120 parámetros (aproximadamente 10 millones) frente a los aproximadamente 1.000 millones del modelo original. Su propósito es servir como fixture de integración para validar frameworks y contratos de ejecución sin necesidad de descargar ni ejecutar el modelo completo.
 
-El fixture replica la arquitectura `InternVLForConditionalGeneration` del modelo base, pero con una configuración reducida: 2 capas ocultas en la torre de visión y 2 capas ocultas en el modelo de texto. Los pesos son aleatorios (semilla 17) y los ficheros del procesador (tokenizer, plantilla de chat, configuración de generación) se copiaron byte a byte desde `OpenGVLab/InternVL3-1B-hf`. Su propósito es servir como banco de pruebas reproducible para validar contratos de integración en Transformers sobre una GPU NVIDIA A10G.
+El repositorio incluye los pesos reducidos, un manifiesto de contrato (`integration.json`), documentación de uso y expectativas para Transformers, y un registro de procedencia de la construcción (`build.json`). La arquitectura declarada es `InternVLForConditionalGeneration`, la misma que el modelo base, pero con el número de capas del codificador visual y del modelo de lenguaje reducido a 2 en cada caso. Los pesos son aleatorios (semilla 17) y no han sido entrenados.
 
-La relevancia de este repositorio es puramente de ingeniería: permite a los mantenedores de Transformers verificar que la carga, el forward, la pérdida y los gradientes funcionan correctamente para la familia InternVL sin necesidad de descargar ni ejecutar el checkpoint completo de 1B parámetros. Para desarrolladores e investigadores que buscan un modelo de visión-lenguaje real, este repositorio no es adecuado.
+Es relevante exclusivamente en el contexto de pruebas de software: permite verificar que un pipeline de carga, tokenización, preprocesado de imágenes y ejecución forward funciona correctamente con la arquitectura InternVL, manteniendo nombres de tensores idénticos al checkpoint real y ficheros de procesador copiados byte a byte. Está etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | InternVLForConditionalGeneration (transformer multimodal visión-lenguaje, configuración reducida) |
-| Parametros totales | 9.973.120 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | InternVLForConditionalGeneration (transformer multimodal visión-lenguaje) |
+| Parámetros totales | 9.973.120 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en bfloat16) |
+| Tipos de cuantización | no disponible (pesos en bfloat16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture reproduce la clase `InternVLForConditionalGeneration`, la arquitectura multimodal de la familia InternVL que combina una torre de visión con un modelo de lenguaje para generar texto condicionado por imágenes. La configuración se ha reducido mediante la regla genérica de `sweep.py`: `vision num_hidden_layers = 2` y `text num_hidden_layers = 2`. Los nombres de tensores coinciden con los del checkpoint real `OpenGVLab/InternVL3-1B-hf`, de modo que el fixture ejercita exactamente las mismas rutas de código que el modelo completo.
+El modelo sigue la arquitectura `InternVLForConditionalGeneration`, un transformer multimodal que combina un codificador visual con un modelo de lenguaje para generar texto condicionado a imágenes y texto. En esta fixture, la configuración se ha reducido mediante la regla genérica de `sweep.py`: el codificador visual tiene `num_hidden_layers` = 2 y el modelo de lenguaje también 2 capas. Los nombres de tensores coinciden exactamente con los del checkpoint real `OpenGVLab/InternVL3-1B-hf`, lo que permite validar la compatibilidad de carga.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron contra una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplazó los logits al menos 0,001 (el caso más débil, `pixel_values:roll_batch`, produjo 0,00781). Los pesos se guardaron en bfloat16, el dtype con el que carga por defecto el modelo base, y se verificó que el forward, la pérdida y los gradientes son finitos en float32, bfloat16 y float16. Los ficheros del procesador (`tokenizer.json`, `chat_template.jinja`, `preprocessor_config.json`, etc.) se copiaron sin modificar desde el modelo base.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y superaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movió los logits al menos 0,001 (la más débil, `pixel_values:halve`, 0,0117). Los ficheros del procesador (`added_tokens.json`, `chat_template.jinja`, `generation_config.json`, `merges.txt`, `preprocessor_config.json`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde el modelo base. Los pesos son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La construcción se documenta en `build.json` con fuentes fijadas, resultados de la puerta y hashes de ficheros.
 
 ## Capacidades
 
-- No es un modelo funcional: no genera texto, no razona, no responde a prompts ni procesa imágenes de forma significativa.
-- Sirve como fixture de integración para validar la carga de `InternVLForConditionalGeneration` en Transformers.
-- Permite verificar el forward pass, el cálculo de pérdida y la retropropagación de gradientes en float32, bfloat16 y float16.
-- Ejercita las rutas de código del procesador multimodal (tokenizer, plantilla de chat, preprocesado de imagen) copiadas del modelo base.
-- Soporta variantes de ejecución "default", "eager" y "bfloat16" sobre NVIDIA A10G.
-- No dispone de tool calling, agentes, razonamiento multi-paso ni capacidades multilingües reales.
+- Carga y ejecución forward con la arquitectura InternVL: permite validar pipelines de inferencia multimodal (imagen + texto) en frameworks compatibles.
+- Compatibilidad de nombres de tensores: al replicar exactamente los nombres del checkpoint real, sirve para probar rutinas de carga, sharding y conversión de pesos.
+- Procesador idéntico al modelo base: tokenizador, plantilla de chat y configuración de preprocesado copiados byte a byte, útiles para probar tokenización y preprocesado de imágenes.
+- Ejecución en float32, bfloat16 y float16: permite probar rutas de precisión mixta y comprobar estabilidad numérica.
+- No tiene capacidades generativas reales: los pesos son aleatorios y la salida no es coherente.
+- No soporta tool calling, agentes ni razonamiento multi-step de forma funcional.
+- No dispone de capacidades multilingües reales.
 
 ## Casos de uso
 
-- Validación de integración en Transformers: ejecutar el fixture en CI para comprobar que los cambios en la librería no rompen la carga ni el forward de la familia InternVL, sin descargar el checkpoint de 1B.
-- Desarrollo de tests de regresión: usar los hashes y resultados de la puerta de sensibilidad registrados en `build.json` para detectar regresiones numéricas en el pipeline multimodal.
-- Pruebas de compatibilidad de dtype: verificar que el modelo se mantiene finito en float32, bfloat16 y float16 antes de probar con pesos reales.
-- Validación de procesadores: comprobar que los ficheros de tokenizer y preprocesado copiados del modelo base se cargan correctamente con la versión actual de Transformers.
-- Reproducción de evidencias: regenerar el fixture con `python example/build_fixtures.py --fixture mic-internvl-slim` y comparar con los resultados publicados en la acción de GitHub enlazada.
-- Formación de mantenedores: servir como ejemplo documentado de cómo construir fixtures multimodales reducidos que preserven nombres de tensores y contratos de entrada.
+- Pruebas de integración en Transformers: cargar el modelo con `AutoModelForConditionalGeneration` y verificar que la configuración, el procesador y los nombres de tensores son compatibles con InternVL3, sin descargar el checkpoint de 1B.
+- Validación de contratos de framework: usar `integration.json` y `integrations/transformers/expectations` para comprobar que una versión de Transformers cumple las expectativas de entrada/salida del modelo.
+- Pruebas de CI/CD: ejecutar tests de humo en pipelines de integración continua con un repositorio de 0,1 GB en lugar de un checkpoint completo, reduciendo tiempo y ancho de banda.
+- Desarrollo de utilidades de conversión de pesos: probar scripts de conversión, cuantización o sharding contra una arquitectura InternVL realista pero ligera.
+- Validación de preprocesado multimodal: verificar que el pipeline de imágenes y texto (pixel values, tokens, plantilla de chat) produce las formas y tipos esperados.
+- Reproducción de la fixture: reconstruir los ficheros con `python example/build_fixtures.py --fixture internvl-mic` y comprobar hashes y resultados de la puerta de sensibilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas de calidad (MMLU, HumanEval, GSM8K u otras), y al tratarse de pesos aleatorios cualquier evaluación de rendimiento carecería de sentido.
+No se han publicado resultados de benchmarks en la información disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, no procede evaluar rendimiento de tarea.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (9,97 M de parámetros, aproximadamente 20 MB de pesos más overhead de activaciones).
-- GPU validadas: NVIDIA A10G (según la model card, con variantes default, eager y bfloat16).
-- Cabe en cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso en CPU para pruebas básicas.
-- Opciones de despliegue: Transformers (validado); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; al ser un fixture de 2+2 capas, la latencia sería del orden de milisegundos, pero no se publican mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB con los pesos en bfloat16 (9,97 M parámetros, aproximadamente 20 MB de pesos más overhead de activaciones y procesador).
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; no requiere A100, H100 ni RTX 4090.
+- Cabe en cualquier GPU consumer moderna e incluso en CPU para pruebas de humo.
+- Opciones de despliegue: Transformers (uso previsto según la documentación del repositorio); no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles; al ser una fixture de pruebas, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `huggingface-mic/internvl-mic` | 9,97 M | no disponible | Fixture de test | no disponible | Hugging Face |
-| `OpenGVLab/InternVL3-1B-hf` | ~1 B (modelo base real) | no disponible en esta ficha | Visión-lenguaje real | no disponible en esta ficha | Hugging Face |
-| Otros fixtures de `huggingface-mic` | variable (reducidos) | no disponible | Validación de integración | no disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Propósito |
+|---|---|---|---|---|
+| huggingface-mic/internvl-mic | 9,97 M | no disponible | no disponible | Fixture de pruebas |
+| OpenGVLab/InternVL3-1B-hf | ~1 B | no disponible | no disponible | Modelo multimodal real |
+| Otros artefactos `test-artifact` de huggingface-mic | variable | no disponible | no disponible | Fixtures de integración |
 
-La comparación relevante es con el modelo base del que deriva: `OpenGVLab/InternVL3-1B-hf` es el checkpoint real de visión-lenguaje, mientras que `internvl-mic` es una versión reducida y con pesos aleatorios del mismo, destinada exclusivamente a pruebas de integración. No se dispone de datos de benchmarks ni de licencia del modelo base en la información proporcionada.
+La comparación relevante es con su modelo base: `internvl-mic` es una versión reducida (~1 % de los parámetros) del checkpoint `OpenGVLab/InternVL3-1B-hf`, con la misma arquitectura y procesador, pero sin capacidades funcionales. No se dispone de datos de benchmarks ni de licencia para ninguno de los dos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo usable: los pesos son aleatorios y las salidas no tienen significado semántico.
-- Etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos; no debe desplegarse en producción.
-- La model card indica explícitamente que "es un artefacto de prueba, no un modelo usable".
-- Solo cubre checkpoints cuyos ficheros de procesador sean byte-idénticos y cuya configuración coincida tras el shrink; no cubre el checkpoint completo.
-- La cobertura del checkpoint completo se declara como "separada" y no está incluida en este repositorio.
-- Licencia no disponible: no puede asumirse permiso de uso comercial.
-- Idiomas no disponibles: no hay información sobre capacidades multilingües reales.
-- Riesgo de confusión: el nombre y la estructura pueden llevar a error si se interpreta como un modelo de visión-lenguaje funcional.
+- No es un modelo utilizable: los pesos son aleatorios y las salidas no tienen significado.
+- Etiquetado como `test-artifact`: no debe usarse en producción ni incluirse en búsquedas de modelos candidatos.
+- Sesgos conocidos: no aplica, al no haber entrenamiento; los pesos aleatorios no reflejan distribución de datos real.
+- Riesgo de alucinación: total, cualquier salida es ruido.
+- Limitaciones de contexto e idioma: no disponibles; la configuración reducida no representa el comportamiento del modelo base.
+- Restricciones de licencia: la licencia no está disponible en la información proporcionada; debe consultarse el repositorio del modelo base para uso comercial.
+- Caveat para producción: no usar como sustituto del checkpoint real; su utilidad se limita a pruebas de integración y compatibilidad de frameworks.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/internvl-mic
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3-1B-hf
-- Manifiesto de contrato: `integration.json` (en el repositorio)
-- Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)
-- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
-- Procedencia del fixture: `build.json` (en el repositorio)
+- Manifiesto de contrato: https://huggingface.co/huggingface-mic/internvl-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/internvl-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/internvl-mic/tree/main/integrations/transformers/expectations
+- Procedencia de la fixture: https://huggingface.co/huggingface-mic/internvl-mic/blob/main/build.json
 - Documentación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/internvl-mic.html
-- Evidencia de regeneración (GitHub Actions): https://github.com/huggingface/transformers-mic/actions/runs/38252430459
 - Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Script de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Regla de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

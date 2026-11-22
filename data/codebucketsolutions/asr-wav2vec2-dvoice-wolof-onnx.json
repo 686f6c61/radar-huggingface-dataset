@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "codebucketsolutions/asr-wav2vec2-dvoice-wolof-onnx",
+  "slug": "codebucketsolutions-asr-wav2vec2-dvoice-wolof-onnx",
+  "author": "codebucketsolutions",
+  "url": "https://huggingface.co/codebucketsolutions/asr-wav2vec2-dvoice-wolof-onnx",
+  "created_at": "2026-11-21T23:30:36.000Z",
+  "updated_at": "2026-11-21T23:30:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "onnx",
+    "speechbrain",
+    "ctc",
+    "automatic-speech-recognition",
+    "wo",
+    "base_model:speechbrain/asr-wav2vec2-dvoice-wolof",
+    "base_model:quantized:speechbrain/asr-wav2vec2-dvoice-wolof",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1274998203,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": "speechbrain/asr-wav2vec2-dvoice-wolof",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

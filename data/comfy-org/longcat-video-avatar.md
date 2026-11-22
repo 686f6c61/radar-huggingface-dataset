@@ -2,49 +2,61 @@
 
 ## Resumen
 
-LongCat-Video-Avatar es un modelo de difusión para la generación de vídeo con avatar (image-to-video condicionado por audio y por una imagen de referencia), empaquetado por Comfy-Org para su uso directo en ComfyUI. El modelo original es `meituan-longcat/LongCat-Video-Avatar-1.6`, desarrollado por Meituan LongCat, y este repositorio constituye un repackaging en formato de archivo único (`diffusion-single-file`) con pesos ya cuantizados y LoRAs auxiliares listas para cargar en el nodo de difusión de ComfyUI.
+LongCat-Video-Avatar es un modelo de difusion para generacion de video a partir de imagen (image-to-video) orientado a la creacion de avatares parlantes. Desarrollado originalmente por Meituan (repositorio `meituan-longcat/LongCat-Video-Avatar-1.6`) y reempaquetado por Comfy-Org para su uso directo en ComfyUI, el modelo toma una imagen de referencia y produce secuencias de video animadas con sincronizacion labial y movimiento facial coherente. Esta ficha cubre el repositorio de Comfy-Org, que distribuye los pesos en formato `safetensors` listos para el nodo de difusion de ComfyUI.
 
-El repositorio tiene un tamano de 37,1 GB y distribuye el modelo de difusión en int8 (`longcat-avatar-1.6_int8_convrot.safetensors`), dos LoRAs de rango 128 en bf16 (una DMD y otra OPSD), dos variantes del text encoder umT5-XXL (fp16 e int8) y el VAE `wan_2.1_vae`. La licencia es MIT, lo que permite uso comercial sin restricciones adicionales, y el pipeline declarado es de difusión (no un LLM), por lo que las capacidades se centran en síntesis de vídeo, no en generación de texto.
+La relevancia actual del modelo radica en su integracion nativa con el ecosistema ComfyUI y en el uso de un esquema de aceleracion basado en LoRAs (DMD y OPSD) que reducen el numero de pasos de muestreo necesarios. El repositorio incluye los componentes completos: el modelo de difusion en `int8` con rotacion de convoluciones (`convrot`), dos LoRAs en `bf16` con rango 128, el text encoder `umt5_xxl` en `fp16` e `int8`, y el VAE `wan_2.1_vae`. El tamano total del repositorio es de 37,1 GB.
 
-Es relevante ahora porque elimina la friccion de conversion de pesos para quien trabaja con ComfyUI: en lugar de descargar el repositorio original de Meituan y adaptar formatos, el usuario coloca los archivos en las carpetas `diffusion_models`, `loras`, `text_encoders` y `vae` y ejecuta el workflow. No se dispone de informacion publica sobre arquitectura interna, numero de parametros ni datos de entrenamiento en la informacion proporcionada.
+La licencia MIT facilita su adopcion tanto en investigacion como en productos comerciales, si bien conviene revisar las condiciones del modelo base original de Meituan. El modelo esta pensado para pipelines de generacion de video con avatar, no para tareas de texto, razonamiento o codigo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | modelo de difusion para generacion de video (single-file, formato ComfyUI); arquitectura interna no disponible |
+| Arquitectura | Modelo de difusion para image-to-video (detalles internos no disponibles) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (no aplica a modelo de difusion) |
-| Tipos de cuantizacion | int8 (modelo de difusion y text encoder), bf16 (LoRAs y text encoder fp16) |
+| Parametros activos | no disponible (no consta que sea MoE) |
+| Longitud de contexto | no disponible (no aplica a modelos de difusion) |
+| Tipos de cuantizacion | int8 (modelo de difusion y text encoder), bf16 (LoRAs), fp16 (text encoder) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (single-file para ComfyUI) |
 
+Componentes distribuidos en el repositorio:
+
+| Componente | Fichero | Precision |
+|---|---|---|
+| Modelo de difusion | `longcat-avatar-1.6_int8_convrot.safetensors` | int8 |
+| LoRA DMD | `longcat-avatar-1.6_dmd_lora_rank128_bf16.safetensors` | bf16, rango 128 |
+| LoRA OPSD | `longcat-avatar-1.6_opsd_lora_rank128_bf16.safetensors` | bf16, rango 128 |
+| Text encoder | `umt5_xxl_fp16.safetensors` / `umt5_xxl_int8_convrot.safetensors` | fp16 / int8 |
+| VAE | `wan_2.1_vae.safetensors` | no disponible |
+
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo original. Por el nombre, el pipeline y los componentes distribuidos, se trata de un modelo de difusion para video condicionado por imagen y audio (avatar animation), construido sobre un text encoder umT5-XXL y un VAE heredado de Wan 2.1 (`wan_2.1_vae.safetensors`). El repositorio incluye dos LoRAs de rango 128 en bf16, identificadas como DMD y OPSD, que en la practica se usan para acelerar o destilar el muestreo del modelo base; no se dispone de detalle sobre su funcion exacta ni sobre hiperparametros de entrenamiento.
+La informacion disponible no detalla la arquitectura interna del modelo mas alla de su naturaleza como modelo de difusion para image-to-video. El text encoder es `umt5_xxl`, un encoder de la familia T5 de gran tamano, y el VAE corresponde a `wan_2.1_vae`, el autoencoder de la familia Wan 2.1. El modelo de difusion se distribuye en `int8` con una transformacion de rotacion de convoluciones (`convrot`), una tecnica de cuantizacion post-entrenamiento orientada a reducir el uso de memoria manteniendo la fidelidad numerica.
 
-No hay informacion publicada en este repositorio sobre volumen de datos de entrenamiento, composicion del dataset, uso de RLHF/DPO (poco probable en un modelo de difusion) ni innovaciones tecnicas mas alla del repackaging. Cualquier dato de arquitectura debe consultarse en el repositorio original `meituan-longcat/LongCat-Video-Avatar-1.6`.
+El repositorio incluye dos LoRAs de aceleracion con rango 128: una DMD (Distribution Matching Distillation) y otra OPSD. Estas LoRAs permiten reducir el numero de pasos de muestreo necesarios para generar video, lo que resulta critico en modelos de difusion de video por su elevado coste computacional. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF o DPO (no aplicables de forma habitual a modelos de difusion).
 
 ## Capacidades
 
-- Generacion de video con avatar a partir de una imagen de referencia y una pista de audio (image-to-video con condicionamiento de audio), segun la estructura de archivos y el nombre del modelo.
-- Integracion nativa en ComfyUI mediante el formato `diffusion-single-file`, con pesos ya cuantizados en int8 para reducir requisitos de VRAM.
-- Uso de LoRAs auxiliares (DMD y OPSD, rango 128, bf16) para variantes de muestreo acelerado o destilado.
-- Text encoder umT5-XXL disponible en fp16 e int8, lo que permite ajustar precision y memoria segun el hardware.
-- No se dispone de informacion sobre soporte de tool calling, agentes, razonamiento multi-paso ni capacidades multilingues; al ser un modelo de difusion de video, estas capacidades no aplican.
-- No se dispone de informacion sobre modos especiales (thinking, vision, audio de entrada/salida) mas alla del condicionamiento por audio implicito en el caso de uso de avatar.
+- Generacion de video a partir de una imagen de referencia (image-to-video).
+- Creacion de avatares parlantes con animacion facial y sincronizacion labial.
+- Integracion nativa con ComfyUI mediante nodos de difusion y carga de LoRAs.
+- Aceleracion del muestreo mediante LoRAs DMD y OPSD, que reducen los pasos necesarios.
+- Cuantizacion a int8 del modelo de difusion y del text encoder para reducir requisitos de VRAM.
+- Uso de prompts de texto a traves del text encoder `umt5_xxl` para condicionar la generacion.
+- No se ha documentado soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modo thinking, por tratarse de un modelo generativo de video.
+- Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-- Animacion de avatares para video corporativo: a partir de un retrato y una locucion grabada, generar un video de presentacion con sincronizacion labial, usando el modelo int8 y el VAE Wan 2.1 en un workflow de ComfyUI.
-- Creacion de contenido para redes sociales: producir clips de un personaje virtual a partir de una imagen fija y una pista de voz, con la LoRA DMD para reducir pasos de muestreo y acelerar la iteracion.
-- Doblaje y localizacion de video: reutilizar una imagen del hablante y una nueva pista de audio en otro idioma para regenerar el video sin volver a rodar, siempre que la calidad del condicionamiento lo permita.
-- Prototipado de asistentes virtuales: generar videos de respuesta de un avatar 2D para demos de producto o interfaces conversacionales, aprovechando la integracion directa con ComfyUI.
-- Previsualizacion en pipelines de postproduccion: crear previos animados de personajes antes de pasar a produccion 3D, usando los pesos int8 para mantener el coste de VRAM contenido.
-- Generacion por lotes en servidor: desplegar el modelo en ComfyUI sobre GPU de datacenter y encolar trabajos de animacion de avatar mediante la API de ComfyUI, con el text encoder int8 para reducir memoria por instancia.
-- Educacion y formacion: generar videos de instructores virtuales a partir de material grabado, reutilizando la misma imagen de referencia en multiples lecciones.
+- Generacion de avatares virtuales para presentaciones corporativas: a partir de una fotografia del ponente y un audio o prompt, el modelo produce un video con el avatar animado, util para formación interna y comunicaciones asincronas.
+- Doblaje y localizacion de contenido audiovisual: se puede animar la imagen de un actor o presentador para generar versiones en otros idiomas manteniendo la identidad visual, usando el text encoder para condicionar el estilo.
+- Marketing y redes sociales: creacion rapida de videos cortos con personajes animados a partir de retratos, integrados en flujos de ComfyUI para produccion por lotes.
+- Prototipado en estudios de animacion: generacion de animaticos y pruebas de expresion facial antes de pasar a produccion final, aprovechando las LoRAs de aceleracion para iterar con pocos pasos.
+- Asistentes virtuales con cara visible: integracion en interfaces conversacionales donde se requiere un avatar animado que acompanie la respuesta de voz, desplegado en infraestructura con GPU.
+- Investigacion en sintesis facial y sincronizacion labial: el modelo sirve como base para experimentos de animacion de retratos y evaluacion de tecnicas de difusion aplicadas a video.
+- Creacion de contenido educativo: generacion de videos explicativos con un avatar que presenta el material, reduciendo la necesidad de grabacion fisica.
 
 ## Benchmarks y rendimiento
 
@@ -52,34 +64,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. El repositorio pesa 37,1 GB e incluye pesos int8 del modelo de difusion, dos LoRAs bf16, dos variantes del text encoder umT5-XXL y el VAE Wan 2.1; el consumo real depende de la resolucion, duracion del clip y numero de pasos, que no se especifican.
-- GPU recomendadas: no disponible. Por el tamano del repositorio, se requiere una GPU con al menos 24 GB de VRAM para cargar el modelo int8 junto con el text encoder y el VAE, aunque esta cifra es una estimacion orientativa y no un dato publicado.
-- Compatibilidad con GPU de consumo: probable en RTX 4090 (24 GB) y RTX 3090 (24 GB) usando la variante int8 y el text encoder int8; no confirmado por el autor.
-- Opciones de despliegue: ComfyUI (formato nativo `diffusion-single-file`), Comfy Cloud (servicio online de ComfyUI) y cualquier entorno que cargue safetensors de difusion compatibles con ComfyUI. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. El repositorio ocupa 37,1 GB en total, incluyendo todas las variantes de pesos; la carga en VRAM depende de la combinacion de modelo de difusion int8, LoRAs bf16, text encoder y VAE.
+- El modelo de difusion en int8 y el text encoder en int8 reducen el consumo frente a variantes fp16, pero la generacion de video sigue requiriendo GPU con memoria abundante.
+- GPU recomendadas: no disponibles de forma oficial. Por el perfil de modelo de difusion de video, se orienta a GPUs de datacenter (A100, H100) o GPUs consumer de gama alta con suficiente VRAM; no se confirma compatibilidad con modelos concretos.
+- Opciones de despliegue: ComfyUI (nativo, con los ficheros en las carpetas `diffusion_models`, `loras`, `text_encoders` y `vae`), y Comfy Cloud como alternativa gestionada.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| LongCat-Video-Avatar (este repo) | no disponible | no aplica | MIT | safetensors single-file (int8/bf16) | Hugging Face, ComfyUI |
-| meituan-longcat/LongCat-Video-Avatar-1.6 (original) | no disponible | no aplica | no disponible en esta ficha | no disponible | Hugging Face |
-| Wan 2.1 (VAE reutilizado) | no disponible | no aplica | no disponible en esta ficha | no disponible | Hugging Face |
+No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la informacion proporcionada. Como referencia de categoria, el modelo base original es `meituan-longcat/LongCat-Video-Avatar-1.6`, del que este repositorio es un reempaquetado para ComfyUI.
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Comfy-Org/LongCat-Video-Avatar | no disponible | no aplica | MIT | Hugging Face (single-file para ComfyUI) |
+| meituan-longcat/LongCat-Video-Avatar-1.6 | no disponible | no aplica | no disponible en esta ficha | Hugging Face (modelo base original) |
+| Alternativas de image-to-video | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; al generar avatares a partir de imagenes reales, existe riesgo de sesgos de representacion y de uso indebido (deepfakes), que el usuario debe gestionar.
-- Riesgo de alucinacion: no aplica en el sentido de LLM, pero la generacion de video puede producir artefactos, desincronizacion labial o identidades inconsistentes respecto a la imagen de referencia.
-- Limitaciones de contexto o idioma: no se especifican idiomas soportados; el condicionamiento por audio puede degradarse con acentos, ruido o idiomas no representados en el entrenamiento original.
-- Restricciones de licencia: licencia MIT, permite uso comercial y modificacion con atribucion; conviene verificar la licencia del modelo base original, que no se detalla en este repositorio.
-- Caveats para produccion: el repositorio es un repackaging, no el modelo original; la calidad final depende del workflow de ComfyUI, de los pasos de muestreo y del uso correcto de las LoRAs DMD/OPSD. No hay garantias de soporte ni documentacion tecnica en este repositorio.
-- El modelo esta pensado para difusion de video, no para tareas de texto, codigo o razonamiento; no debe evaluarse con benchmarks tipo MMLU o HumanEval.
+- No se dispone de informacion sobre sesgos del modelo; al generar avatares humanos, existe riesgo de reproducir sesgos de representacion facial y de genero presentes en los datos de entrenamiento.
+- Riesgo de alucinacion visual: en modelos de difusion de video, pueden aparecer artefactos, deformaciones faciales o inconsistencias temporales, especialmente en secuencias largas.
+- La sincronizacion labial puede degradarse con audios poco claros, idiomas distintos de los del entrenamiento o movimientos de cabeza pronunciados.
+- No se documentan los idiomas soportados por el text encoder en este repositorio; la calidad con prompts en castellano no esta garantizada.
+- La licencia del repositorio es MIT, pero se debe verificar la licencia y condiciones del modelo base original de Meituan antes de un uso comercial.
+- El modelo esta pensado exclusivamente para generacion de video; no debe emplearse para tareas de texto, razonamiento o codigo.
+- Para produccion, es necesario validar el consumo de VRAM real segun la configuracion de ComfyUI y el numero de pasos de muestreo, ya que no hay cifras oficiales publicadas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/LongCat-Video-Avatar
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/LongCat-Video-Avatar
 - Modelo base original: https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6
-- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
 - Comfy Cloud: https://cloud.comfy.org/

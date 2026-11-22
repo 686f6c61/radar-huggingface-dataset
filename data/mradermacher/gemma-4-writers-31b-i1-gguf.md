@@ -2,103 +2,90 @@
 
 ## Resumen
 
-Gemma-4-Writers-31B-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo Ateron/Gemma-4-Writers-31B, un merge creado con mergekit y orientado a roleplay y escritura creativa. El repositorio no contiene pesos en safetensors, sino ficheros GGUF listos para motores de inferencia locales (llama.cpp, Ollama, LM Studio, koboldcpp) en 24 variantes de cuantización que van de 7,3 GB a 25,3 GB.
+Gemma-4-Writers-31B-i1-GGUF es la colección de cuantizaciones GGUF, generadas con imatrix y pesos ponderados, del modelo Ateron/Gemma-4-Writers-31B, un merge de modelos orientado a escritura creativa y roleplay. El trabajo de cuantización lo firma mradermacher, un autor habitual en el ecosistema GGUF que publica versiones optimizadas para inferencia local en llama.cpp y derivados. El modelo base cuenta con 30.697.345.596 parámetros (aproximadamente 31B) y se distribuye bajo licencia Apache 2.0.
 
-El modelo subyacente tiene 30.697.345.596 parámetros (aproximadamente 30,7B) según los pesos originales en safetensors, lo que lo sitúa en la gama de modelos densos de 30B. La model card indica que se trata de un modelo con capacidades de visión (los ficheros mmproj, si existen, se alojan en el repositorio de cuantizaciones estáticas). El idioma declarado es únicamente inglés.
+La relevancia de esta ficha reside en que permite ejecutar un modelo de 31B en hardware de consumo gracias a las cuantizaciones de 4 bits (entre 17,9 y 18,8 GB), manteniendo la orientación del merge original hacia la generación literaria y el diálogo de personajes. Al estar basado en la familia Gemma, hereda el tokenizador y el formato conversacional de dicha arquitectura, si bien el autor declara únicamente inglés como idioma soportado.
 
-Su relevancia es práctica: permite ejecutar un modelo de 31B en hardware de consumo gracias a las cuantizaciones i1 basadas en matrices de importancia (imatrix) y al esquema IQ de llama.cpp, que ofrecen mejor relación calidad/tamaño que las cuantizaciones K estáticas equivalentes. La licencia Apache 2.0 facilita su uso comercial, aunque al ser un merge de procedencia no documentada conviene verificar la trazabilidad de los modelos fuente.
+No se dispone de información publicada sobre la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks en la documentación proporcionada; esta ficha lo indica explícitamente en cada apartado afectado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No especificada en la model card; el nombre sugiere un transformer decoder-only de la familia Gemma, pero no está confirmado |
-| Parametros totales | 30.697.345.596 (30,7B) |
-| Parametros activos | No aplica (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, más fichero imatrix |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base usa safetensors |
+| Arquitectura | Transformer decoder-only (familia Gemma, según el modelo base; detalles no disponibles) |
+| Parametros totales | 30.697.345.596 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (imatrix) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio no documenta la arquitectura interna del modelo base. Los metadatos indican que Ateron/Gemma-4-Writers-31B es un merge construido con mergekit, con etiquetas de roleplay, conversacional y merge. Por la denominación y el recuento de parámetros (30,7B) cabe suponer una base de la familia Gemma, pero esta afirmación no está respaldada por documentación explícita en la información disponible.
+El modelo base Ateron/Gemma-4-Writers-31B es un merge construido con mergekit, según las etiquetas del repositorio, a partir de modelos de la familia Gemma. La técnica de merge combina los pesos de varios modelos afinados para obtener un comportamiento híbrido orientado a escritura y roleplay. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO en el modelo base.
 
-Tampoco se publican datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. La única información técnica reproducible es el proceso de cuantización: se generaron cuantizaciones i1 (importance-matrix) con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, partiendo de los pesos en formato Hugging Face y aplicando una matriz de importancia calculada sobre el propio modelo para reducir el error en las capas más sensibles.
+La contribución específica de este repositorio es la cuantización: mradermacher genera versiones GGUF con imatrix (matriz de importancia calculada sobre un corpus de calibración) y pesos ponderados, lo que mejora la calidad de las cuantizaciones de baja precisión respecto a las estáticas. El repositorio incluye además el fichero imatrix (0,1 GB) para que terceros puedan generar sus propias cuantizaciones. Existe una colección paralela de cuantizaciones estáticas en mradermacher/Gemma-4-Writers-31B-GGUF.
 
 ## Capacidades
 
-- Generación de texto conversacional y narrativo, con orientación explícita a roleplay y escritura creativa según las etiquetas del modelo.
-- Conversación multiturno (etiqueta `conversational`).
-- Capacidad de visión declarada por el cuantizador, con ficheros mmproj alojados en el repositorio estático; no se detalla el alcance ni el codificador visual.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multietapa: no disponible.
-- Capacidades multilingües: limitadas al inglés declarado.
-- Modo thinking, audio u otras capacidades especiales: no disponible.
+- Generación de texto creativo: el merge está orientado a escritura y roleplay, según las etiquetas del repositorio.
+- Conversación multi-turno: el pipeline declarado es conversacional.
+- Diálogo de personajes y narrativa: caso de uso principal implícito en el nombre y las etiquetas del modelo.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere integración con infraestructura de inferencia estándar.
+- Capacidades de tool calling, function calling, agentes, matemáticas, código, visión o audio: no disponibles en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según el campo de idiomas del repositorio.
 
 ## Casos de uso
 
-- Roleplay y personajes conversacionales: es el caso de uso principal declarado por las etiquetas del modelo; las cuantizaciones IQ4_XS a Q5_K_M (16,8-21,9 GB) mantienen calidad suficiente para sesiones largas con historial de conversación.
-- Asistencia a la escritura creativa: generación de borradores de ficción, diálogos y descripciones, aprovechando el ajuste del merge hacia estilo narrativo.
-- Prototipado local en estaciones de trabajo con una única GPU de 24 GB: la variante i1-Q4_K_M (18,8 GB) cabe en una RTX 3090 o RTX 4090 con contexto moderado.
-- Despliegue en equipos sin GPU dedicada: las variantes i1-IQ2_M (11,0 GB) o i1-Q2_K (12,0 GB) permiten inferencia parcial en CPU o en GPU de gama media con pérdida apreciable de calidad.
-- Generación de datos sintéticos de diálogo en inglés: útil para construir datasets conversacionales o de roleplay, siempre que la licencia Apache 2.0 sea compatible con el uso previsto.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye el fichero imatrix y 23 variantes, lo que permite medir empíricamente la degradación por cuantización en una misma tarea.
-- Integración en frontends de rol local (SillyTavern, koboldcpp): el formato GGUF es directamente compatible con estos entornos.
-- Servicio de chat de baja concurrencia en una sola máquina: el tamaño del modelo limita el throughput, por lo que es adecuado para pocos usuarios simultáneos más que para producción masiva.
+- Escritura creativa asistida: el modelo puede generar borradores de narrativa, descripciones y diálogos gracias a su afinado específico para escritura, ejecutándose en local con cuantización Q4_K_M (18,8 GB).
+- Roleplay y chatbots de personaje: su orientación a roleplay y su formato conversacional lo hacen adecuado para aplicaciones de personajes interactivos; el despliegue con llama.cpp u Ollama permite mantener la conversación en hardware propio.
+- Generación de contenido editorial en inglés: redacción de artículos, guiones o ficción breve donde se requiera un tono literario consistente y control de estilo mediante prompting.
+- Prototipado de asistentes conversacionales: al ser un GGUF compatible con endpoints, puede integrarse en un backend de pruebas para validar flujos conversacionales antes de migrar a un modelo mayor.
+- Fine-tuning posterior sobre GGUF: el fichero imatrix incluido permite generar cuantizaciones propias adaptadas a dominios específicos de escritura.
+- Investigación sobre merges de modelos: útil para estudiar el comportamiento de merges de la familia Gemma en tareas creativas frente a los modelos originales.
+- Despliegue en estaciones de trabajo sin GPU de datacenter: las cuantizaciones de 7-13 GB permiten ejecución en CPU o GPU de consumo para tareas de generación literaria por lotes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye valores de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, y tampoco se proporcionan métricas de perplejidad por cuantización más allá del gráfico genérico enlazado por el autor.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (tamaño del fichero más caché KV y overhead del runtime):
-  - i1-IQ1_S (7,3 GB): aproximadamente 9-10 GB.
-  - i1-IQ2_M (11,0 GB): aproximadamente 13-14 GB.
-  - i1-IQ3_S (13,9 GB): aproximadamente 16-18 GB.
-  - i1-IQ4_XS (16,8 GB): aproximadamente 19-21 GB.
-  - i1-Q4_K_M (18,8 GB): aproximadamente 21-24 GB.
-  - i1-Q5_K_M (21,9 GB): aproximadamente 25-28 GB.
-  - i1-Q6_K (25,3 GB): aproximadamente 28-32 GB.
-- GPU recomendadas: A100 40/80 GB o H100 para las variantes altas con contexto largo; RTX 3090, RTX 4090 o RTX 5090 (24-32 GB) para IQ3_S a Q4_K_M; dos GPU de 24 GB en paralelo para Q5_K_M y Q6_K.
-- Cabe en GPU de consumo: sí, en RTX 3090/4090/5090 con cuantizaciones de hasta Q4_K_M; por debajo de 12 GB de VRAM solo son viables las variantes IQ1/IQ2 con descarga parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y servidores compatibles con GGUF. vLLM y TGI no consumen GGUF de forma nativa en todos sus modos, por lo que requerirían convertir de nuevo a safetensors.
-- Latencia y throughput estimados: no disponible. No se publican mediciones de tokens por segundo ni de latencia.
+- VRAM estimada para inferencia: aproximadamente 7,3 GB (IQ1_S) hasta 25,3 GB (Q6_K); la opción recomendada Q4_K_M ocupa 18,8 GB y Q4_K_S 17,9 GB.
+- GPU recomendadas: para Q4_K_M o superiores, GPU con 24 GB o más (RTX 3090, RTX 4090, A10G, L4 con offload parcial); para cuantizaciones de 13-16 GB, GPU de 16 GB (RTX 4080, A4000); para IQ2/IQ3, GPU de 12 GB (RTX 3060, 4070).
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con Q4_K_M; en RTX 3060 de 12 GB con IQ2_M o IQ3_XS; en equipos con 16 GB de RAM puede ejecutarse en CPU con cuantizaciones IQ2.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; el repositorio declara compatibilidad con endpoints.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Gemma-4-Writers-31B-i1-GGUF | 30,7B | No disponible | GGUF (23 cuantizaciones i1) | Apache 2.0 | 159 descargas, 1 like |
-| Ateron/Gemma-4-Writers-31B (modelo base) | 30,7B | No disponible | Safetensors | Apache 2.0 (segun metadatos) | Repositorio origen del merge |
-| mradermacher/Gemma-4-Writers-31B-GGUF (cuantizaciones estaticas) | 30,7B | No disponible | GGUF | Apache 2.0 | Variante estática del mismo modelo |
+| Gemma-4-Writers-31B-i1-GGUF (este) | 30,7B | no disponible | Apache 2.0 | GGUF (imatrix) | Merge orientado a escritura y roleplay, solo inglés |
+| Gemma-4-Writers-31B-GGUF (mradermacher) | 30,7B | no disponible | Apache 2.0 | GGUF (estático) | Mismo modelo base, cuantizaciones estáticas |
+| Ateron/Gemma-4-Writers-31B | 30,7B | no disponible | Apache 2.0 | safetensors | Modelo base del merge, sin cuantizar |
+| Modelos de 31B de la familia Gemma original | no disponible | no disponible | Apache 2.0 (según familia) | safetensors/GGUF | Alternativa generalista; no se dispone de datos comparativos de rendimiento |
 
-Rendimiento comparado: no disponible. No hay benchmarks publicados para ninguno de los tres, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de este modelo con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Idiomas: únicamente inglés declarado; el rendimiento en castellano no está documentado y probablemente sea deficiente.
-- Sesgos conocidos: no hay documentación sobre evaluación de sesgos, filtrado de datos ni alineación del merge.
-- Alucinación: no se publican métricas de fidelidad; en modelos orientados a roleplay la prioridad suele ser la coherencia narrativa más que la veracidad factual.
-- Trazabilidad: al ser un merge creado con mergekit, la procedencia exacta de los modelos fuente y sus licencias originales no se detalla en la información disponible, lo que puede afectar al uso comercial pese a la licencia Apache 2.0 declarada.
-- Cuantizaciones extremas: las variantes IQ1 e IQ2 (7,3-11,0 GB) degradan notablemente la calidad; la propia model card marca IQ1_S como "for the desperate" y Q2_K_S como "very low quality".
-- Capacidad de visión: declarada por el cuantizador, pero los ficheros mmproj no están en este repositorio y no se especifica qué tareas visuales soporta.
-- Longitud de contexto desconocida: no se puede garantizar el comportamiento en conversaciones largas ni estimar el consumo de caché KV.
-- Adopción muy baja: 159 descargas y 1 like, sin issues ni discusiones que permitan validar su comportamiento en producción.
-- Repositorio de gran tamaño (334,8 GB en total): conviene descargar únicamente la cuantización necesaria, no el repositorio completo.
+- Sesgos conocidos: no documentados en la información proporcionada; al derivar de la familia Gemma, puede heredar sesgos de sus modelos originales, pero no se confirma.
+- Riesgo de alucinación: no cuantificado; un modelo orientado a ficción y roleplay puede generar contenido plausible pero inventado, especialmente en contextos factuales.
+- Limitaciones de idioma: solo se declara inglés; no hay evidencia de buen rendimiento en castellano.
+- Longitud de contexto: no disponible, lo que impide garantizar conversaciones largas o documentos extensos.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los modelos originales que componen el merge, no documentadas en esta ficha.
+- Cuantizaciones extremas: las versiones IQ1 e IQ2 degradan notablemente la calidad; el autor las describe como "for the desperate" o "mostly desperate".
+- Modelo derivado: al ser una cuantización de un merge de terceros, la responsabilidad sobre el comportamiento del modelo base recae en Ateron, no en mradermacher.
+- Sin benchmarks: no hay métricas publicadas que respalden afirmaciones de calidad frente a otros modelos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-i1-GGUF
 - Modelo base: https://huggingface.co/Ateron/Gemma-4-Writers-31B
-- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-GGUF
-- Página resumen de descargas del cuantizador: https://hf.tst.eu/model#Gemma-4-Writers-31B-i1-GGUF
-- Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF de referencia (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de tipos de cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Gráfico comparativo de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Sitio de nethype GmbH (infraestructura del cuantizador): https://www.nethype.de/
-- Perfil del colaborador nicoboss: https://huggingface.co/nicoboss
-- Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; los resultados devueltos no guardan relación con el modelo ni con inteligencia artificial.
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Gemma-4-Writers-31B-i1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

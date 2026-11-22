@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "optimainetwork/read-before-you-act-smolvla-pair-sweep",
+  "slug": "optimainetwork-read-before-you-act-smolvla-pair-sweep",
+  "author": "optimainetwork",
+  "url": "https://huggingface.co/optimainetwork/read-before-you-act-smolvla-pair-sweep",
+  "created_at": "2026-11-22T02:44:46.000Z",
+  "updated_at": "2026-11-22T02:44:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "smolvla",
+    "robotics",
+    "mujoco",
+    "negative-result",
+    "read-before-you-act",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "lerobot/smolvla_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Village pump – Forum for discussions about Wikipedia itself, including policies and technical issues. Site news – Sources of news …Read more"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …Read more"
+    },
+    {
+      "title": "Wikipédia, a szabad enciklopédia",
+      "url": "https://hu.wikipedia.org/wiki/Kezd%C5%91lap",
+      "snippet": "A Brit Kelet-indiai Társaság egyszerű kereskedőcégnek indult a 16. század utolsó évében, de 150 év alatt a kegyetlen gyarmati …Read more"
+    }
+  ]
+}

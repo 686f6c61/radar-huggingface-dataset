@@ -2,99 +2,99 @@
 
 ## Resumen
 
-Outlier-10B es un artefacto de investigación publicado por Outlier-Ai que se presenta como un modelo de mezcla de expertos (MoE) construido sobre Qwen/Qwen2.5-7B-Instruct mediante una relación de tipo adaptador, con pesos cuantizados a ternario y orientado a inferencia local en dispositivos de gama consumer, con especial atención a Apple Silicon. El repositorio, de 60,9 GB, incluye etiquetas que describen una arquitectura `outlier_moe` con capas sparse y overlays experimentales, si bien la model card vigente lo marca explícitamente como "superseded": un artefacto histórico conservado por reproducibilidad y no recomendado para producción.
+Outlier-10B es un checkpoint de investigación publicado por Outlier-Ai, construido como un adaptador sobre Qwen/Qwen2.5-7B-Instruct. A pesar del nombre "10B", el modelo base es un transformer denso de 7B parámetros al que se le superpone una capa de mezcla de expertos (MoE) con pesos ternarios cuantizados, lo que da lugar a una arquitectura híbrida de tipo "overlay" orientada a inferencia local, eficiencia energética y despliegue en dispositivos de borde (edge-ai), con especial atención a Apple Silicon.
 
-La relevancia actual del modelo es, por tanto, limitada y de carácter documental. Su interés radica en que ilustra una línea de trabajo concreta: convertir un transformer denso de 7B en una estructura MoE con expertos cuantizados a ternario para reducir el coste energético y de memoria en inferencia on-device. El autor declara un resultado de 70,87 en MMLU 5-shot, no verificado de forma independiente.
+El modelo resuelve el problema de obtener capacidades de razonamiento y generación de texto de un modelo de 7B con un coste computacional reducido gracias a la esparsidad del MoE y a la cuantización ternaria, manteniendo el soporte multilingüe del Qwen2.5 original (15 idiomas declarados). Su relevancia actual es limitada: la propia model card lo describe como un artefacto de investigación "superseded" (reemplazado) que precede a la línea Outlier v1.8, no se distribuye en la aplicación comercial y sus cifras proceden de experimentos internos, no de tests de release.
 
-No se dispone de información pública sobre el número exacto de parámetros totales y activos, la longitud de contexto efectiva ni la composición del dataset de entrenamiento. La model card advierte que las afirmaciones técnicas de revisiones anteriores deben considerarse provisionales.
+La información pública disponible es escasa y parcial: el repositorio ocupa 60,9 GB, acumula 575 descargas y 2 likes, y la model card no detalla la composición del dataset de entrenamiento ni el número de tokens utilizados. Cualquier evaluación de producción debe tomarse con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) derivada de Qwen2.5-7B-Instruct mediante adaptador; etiqueta de librería `outlier_moe` |
-| Parametros totales | 10B (según denominación del modelo); desglose no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | 4.096 tokens (según fuente externa free2aitools); no confirmado en la model card |
-| Tipos de cuantizacion | Ternario (pesos cuantizados indicados en las etiquetas); otros formatos no disponibles |
+| Arquitectura | Transformer denso (Qwen2.5-7B-Instruct) con overlay de mezcla de expertos (MoE) y pesos ternarios cuantizados |
+| Parametros totales | No disponible (denominación comercial "10B"; el modelo base es de 7B) |
+| Parametros activos | No disponible (arquitectura MoE con esparsidad declarada, sin ratio especificado) |
+| Longitud de contexto | No disponible (heredada de Qwen2.5-7B-Instruct, no confirmada en la model card) |
+| Tipos de cuantizacion | Ternaria (declarada en tags); variantes MLX-4bit en la línea Outlier, no confirmadas para este checkpoint |
 | Idiomas soportados | en, zh, fr, es, pt, de, it, ru, ja, ko, ar, vi, th, nl, pl |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repositorio de 60,9 GB; no se especifica safetensors, GGUF ni MLX) |
+| Formato de pesos | safetensors (librería transformers); repo de 60,9 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo se describe como una mezcla de expertos con pesos ternarios y estructura sparse, construida como adaptador sobre Qwen/Qwen2.5-7B-Instruct. Las etiquetas del repositorio mencionan componentes de tipo "overlay" y variantes de cuantización experimentales, lo que sugiere una modificación del transformer base de Qwen2.5 en lugar de un entrenamiento desde cero. No se especifica el número de expertos, la estrategia de enrutamiento ni el ratio de activación.
+Outlier-10B parte de Qwen/Qwen2.5-7B-Instruct y añade un adaptador de tipo overlay con mezcla de expertos y pesos ternarios. La model card describe el resultado como "outlier_moe" con esparsidad, orientado a reducir el coste computacional y energético en inferencia local. No se especifica el número de expertos, el ratio de activación ni la topología exacta del MoE.
 
-No hay información publicada sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron fases de RLHF, DPO o ajuste supervisado adicionales más allá del material heredado de Qwen2.5-7B-Instruct. La model card indica que el repositorio precede a la línea v1.8 de Outlier y que puede contener adaptadores y overlays que no llegaron al producto final, por lo que cualquier detalle arquitectónico debe tratarse como provisional.
+No hay información pública sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o destilación. La model card advierte explícitamente que las afirmaciones técnicas de revisiones anteriores de la ficha deben considerarse provisionales y que el checkpoint puede contener adaptadores u overlays experimentales que no llegaron al producto comercial. No se documentan innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento multi-paso, con ejemplos en la model card orientados a problemas aritméticos, lógica tipo grid y problemas de palabras.
-- Razonamiento matemático básico y resolución de problemas verbales.
-- Soporte multilingüe declarado para 15 idiomas, incluido el castellano.
-- Vocación de inferencia local y on-device, con etiquetas específicas para Apple Silicon y macOS.
-- Eficiencia energética como objetivo de diseño, derivada de la cuantización ternaria y la sparsity.
-- No se declara soporte explícito de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
+- Generación de texto conversacional y razonamiento multi-paso, con ejemplos en la model card de problemas aritméticos, lógica tipo grid y problemas de palabras.
+- Razonamiento matemático básico y resolución de acertijos lógicos (widgets, trenes, asignación de mascotas).
+- Capacidades multilingües en 15 idiomas, heredadas del Qwen2.5-7B-Instruct base.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado más allá de los ejemplos de razonamiento paso a paso.
+- Capacidades de visión o audio: no disponibles.
+- Modo "thinking" explícito: no documentado.
 
 ## Casos de uso
 
-- Asistencia conversacional local en escritorio: el modelo puede gestionar diálogos multi-turno en un equipo personal, aprovechando la cuantización ternaria para reducir el consumo de memoria frente a un transformer denso equivalente.
-- Razonamiento lógico y matemático en entornos educativos: los ejemplos de la model card (problemas de máquinas y widgets, grids de lógica, problemas de trenes) encajan con aplicaciones de tutoría o generación de ejercicios paso a paso.
-- Prototipado de investigación sobre MoE y cuantización ternaria: sirve como banco de pruebas reproducible para estudiar el impacto de la sparsity y los pesos ternarios en la calidad de salida.
-- Evaluación comparativa de técnicas de compresión: al derivar de Qwen2.5-7B-Instruct, permite medir la degradación introducida por la conversión a MoE ternario frente al modelo base.
-- Procesamiento de texto multilingüe ligero: con 15 idiomas declarados, puede emplearse en tareas de resumen o reescritura en entornos sin GPU dedicada.
-- Reproducibilidad de artefactos históricos: útil para investigadores que necesiten replicar resultados de la línea Outlier anterior a v1.8.
-- No se recomienda su uso en producción: la propia model card lo desaconseja explícitamente.
+- Prototipado de razonamiento local en Apple Silicon: el modelo está etiquetado para macOS y cuantización ternaria, lo que permite experimentar con inferencia en equipos de sobremesa sin GPU dedicada, aunque su estado de investigación lo hace apto solo para pruebas.
+- Investigación sobre MoE y cuantización ternaria: sirve como artefacto reproducible para estudiar overlays de expertos sobre un transformer denso de 7B y comparar el impacto en precisión frente al modelo base.
+- Evaluación comparativa de eficiencia energética: al estar orientado a edge-ai, puede usarse en experimentos que midan consumo y latencia frente a Qwen2.5-7B-Instruct sin overlay.
+- Generación de texto multilingüe de bajo coste: para prototipos en 15 idiomas donde el coste computacional sea crítico y no se requiera máxima calidad.
+- Resolución de problemas lógicos y matemáticos sencillos en entornos educativos o de demostración, gracias a los ejemplos de razonamiento paso a paso incluidos en la model card.
+- Reproducibilidad histórica: útil para replicar experimentos de la línea Outlier previa a v1.8 y documentar la evolución de la familia.
+- No recomendado para producción: la propia model card indica que está reemplazado y no se distribuye en la aplicación comercial.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Metrica | Outlier-10B | Verificado |
-|---|---|---|---|
-| MMLU | Accuracy 5-shot | 70,87 | No |
+| Benchmark | Outlier-10B | Notas |
+|---|---|---|
+| MMLU 5-shot (accuracy) | 70,87 | Dato declarado por el autor; no verificado (`verified: false`) |
 
-No se han publicado otros resultados de benchmarks en la información disponible. El dato de MMLU procede del model-index declarado por el autor y no cuenta con verificación independiente.
+No se han publicado otros resultados de benchmarks en la información disponible. La model card advierte que las cifras proceden de experimentos internos y no de los tests de release oficiales, por lo que deben interpretarse con cautela.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 9 GB según la fuente externa free2aitools, coherente con un modelo de 10B en cuantización ternaria.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría en RTX 4090 (24 GB), RTX 4080 (16 GB) y RTX 4070 Ti (12 GB); en A100 y H100 sin problema de capacidad.
-- Compatibilidad con GPU consumer: sí, previsiblemente en tarjetas con 12 GB o más, aunque no hay confirmación oficial.
-- Apple Silicon: el modelo está etiquetado para macOS y Apple Silicon, lo que sugiere compatibilidad con memoria unificada de 16 GB o superior.
-- Opciones de despliegue: la librería declarada es `transformers`; no se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni MLX en la información disponible.
+- VRAM estimada: no disponible con precisión. El repo ocupa 60,9 GB, lo que sugiere pesos en precisión alta o múltiples variantes; una cuantización ternaria o de 4 bits reduciría sustancialmente el requisito, pero no se documenta el tamaño efectivo.
+- GPU recomendadas: no especificadas. El etiquetado apunta a Apple Silicon (macOS) como plataforma objetivo, sin confirmar GPUs NVIDIA concretas.
+- Compatibilidad con GPU de consumo: probable en equipos Apple Silicon con memoria unificada suficiente, dado el enfoque on-device; no confirmado para RTX 4090 u otras GPU de consumo.
+- Opciones de despliegue: transformers (librería declarada); MLX es plausible por la línea Outlier, pero no confirmado para este checkpoint. vLLM, llama.cpp, Ollama y TGI no están documentados.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | MMLU | Licencia | Estado |
+| Modelo | Parámetros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Outlier-10B | 10B (MoE ternario) | 4.096 (no confirmado) | 70,87 (5-shot, no verificado) | Apache 2.0 | Artefacto histórico, no recomendado |
-| Qwen2.5-7B-Instruct | 7B denso | 32.768 tokens (según especificación de Qwen2.5) | no disponible en esta ficha | Apache 2.0 | Modelo base, ampliamente desplegado |
-| Outlier Nano 4B | 4B | no disponible | no disponible | no disponible | Tier actual de entrada según el autor |
-| Outlier Core 27B | 27B | no disponible | no disponible | no disponible | Tier actual por defecto según el autor |
+| Outlier-10B | No disponible (base 7B + overlay MoE) | No disponible | 70,87 (5-shot, no verificado) | Apache 2.0 | Checkpoint de investigación, reemplazado |
+| Qwen2.5-7B-Instruct | 7B | 32K (según ficha oficial de Qwen) | No disponible en esta información | Apache 2.0 | Producción, ampliamente adoptado |
+| Outlier Core 27B | No disponible | No disponible | No disponible | No disponible | Tier actual de Outlier v1.8 (MLX-4bit) |
+| Outlier Nano 4B | No disponible | No disponible | No disponible | No disponible | Tier de entrada actual (MLX-4bit) |
 
-La comparación directa con el modelo base Qwen2.5-7B-Instruct es la más informativa: Outlier-10B añade parámetros y una estructura MoE ternaria, pero reduce previsiblemente la ventana de contexto y carece de verificación independiente de rendimiento. Los tiers actuales de Outlier (Nano 4B, Core 27B, Vision 35B-A3B) sustituyen a este artefacto en el catálogo del autor.
+La comparación con Qwen2.5-7B-Instruct es la más directa por ser su modelo base, pero no se dispone de cifras de MMLU del original en la información proporcionada para contrastar la ganancia o pérdida del overlay.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como obsoleto por el propio autor: la model card indica que está superado y no es la descarga recomendada.
-- El único benchmark disponible (MMLU 70,87) no está verificado de forma independiente.
-- No se especifican el número de parámetros activos, el número de expertos ni el esquema de enrutamiento, lo que impide estimar con precisión el coste real de inferencia.
-- La cuantización ternaria puede degradar tareas sensibles a precisión fina, como matemáticas complejas o generación de código.
-- Ventana de contexto reducida (4.096 tokens según fuente externa, no confirmada), insuficiente para casos de uso con documentos largos.
-- Riesgo de alucinación inherente a los modelos de 7-10B, sin datos publicados sobre mitigaciones específicas.
-- No se declara soporte de tool calling ni de agentes, lo que limita su integración en pipelines automatizados.
-- Aunque la licencia es Apache 2.0, la model card remite a los términos originales y advierte de componentes experimentales; conviene revisar el frontmatter antes de un uso comercial.
-- La información sobre el autor y el producto (Outlier) mezcla el repositorio de modelos con una plataforma de anotación de datos y una aplicación de escritorio de pago, lo que dificulta separar el alcance real del artefacto técnico.
+- Checkpoint de investigación reemplazado: la model card indica explícitamente que no es la descarga recomendada y que precede a la línea v1.8.
+- Cifras no verificadas: el resultado de MMLU (70,87) está marcado como `verified: false` y procede de experimentos internos, no de tests de release.
+- Falta de documentación técnica: no se especifican número de expertos, ratio de activación, tokens de entrenamiento ni composición del dataset.
+- Riesgo de alucinación: inherente a los modelos de 7B; no se documentan mitigaciones específicas.
+- Sesgos: no documentados; se heredan los del modelo base Qwen2.5-7B-Instruct.
+- Limitaciones de contexto e idioma: la longitud de contexto no está confirmada y el rendimiento en los 15 idiomas declarados no está evaluado.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un artefacto de investigación sin garantías, su uso en producción no está respaldado por el autor.
+- Posible contenido experimental: la model card advierte que puede incluir adaptadores u overlays que no llegaron al producto.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Outlier-Ai/Outlier-10B
+- Hugging Face: https://huggingface.co/Outlier-Ai/Outlier-10B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Tier actual de entrada (Outlier Nano 4B): https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
-- Tier actual por defecto (Outlier Core 27B): https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
-- Tier multimodal (Outlier Vision 35B-A3B): https://huggingface.co/Outlier-Ai/Outlier-Vision-35B-A3B-MLX-4bit
-- Modelo de razonamiento (DeepSeek-R1-Distill-Qwen-7B): https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
-- Modelo de código (Qwen3-Coder-30B-A3B): https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
-- Sitio del autor: https://outlier.host/
-- Ficha externa con métricas: https://free2aitools.com/model/outlier-ai/outlier-10b
-- Plataforma de anotación (entidad homónima, no relacionada con el modelo): https://outlier.ai/
+- Sitio oficial de Outlier: https://outlier.host/
+- Outlier Nano 4B: https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
+- Outlier Lite 9B: https://huggingface.co/Outlier-Ai/Outlier-Lite-9B-MLX-4bit
+- Outlier Quick 26B: https://huggingface.co/Outlier-Ai/Outlier-Quick-26B-MLX-4bit
+- Outlier Core 27B: https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
+- Outlier Vision 35B-A3B: https://huggingface.co/Outlier-Ai/Outlier-Vision-35B-A3B-MLX-4bit
+- DeepSeek-R1-Distill-Qwen-7B (Outlier): https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
+- Qwen3-Coder-30B-A3B (Outlier): https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
+- Plataforma Outlier AI: https://outlier.ai/

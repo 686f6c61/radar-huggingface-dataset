@@ -2,102 +2,105 @@
 
 ## Resumen
 
-Huihui-Qwen3.5-4B-ab_miniQuant es una cuantización GGUF de muy baja precisión (2,21 BPW) del modelo huihui-ai/Huihui-Qwen3.5-4B-abliterated, que a su vez deriva de la familia Qwen3.5 de 4B parámetros. El trabajo lo publica el usuario f3nc3r y combina dos técnicas: Structural Mixed-Precision (SQMP), que asigna distintos tipos de cuantización según la sensibilidad de cada tensor, y calibración con imatrix (matriz de importancia basada en el hessiano de activaciones). El resultado es un fichero de 1,34 GB que, según el autor, mantiene coherencia factual, matemática y de código en pruebas deterministas.
+Huihui-Qwen3.5-4B-ab_miniQuant es una cuantizacion de precision ultra-baja (Recipe A, aproximadamente 2,25 bits por peso) del modelo huihui-ai/Huihui-Qwen3.5-4B-abliterated, un derivado "abliterated" de Qwen3.5 de 4B parametros. Lo publica el usuario f3nc3r en Hugging Face y su objetivo es reducir un modelo de 4.205.751.296 parametros a un fichero GGUF de apenas 2,9 GB, manteniendo una calidad util para tareas de conversacion y generacion en CPU. Es relevante porque demuestra que es posible ejecutar un modelo de 4B en hardware modesto (incluso sin GPU) con velocidades de decodificacion cercanas a 30 tokens por segundo.
 
-La relevancia del modelo es práctica: demuestra que es posible bajar de 2,5 BPW en una arquitectura pequeña (dimensión oculta D=2560) sin colapso de la representación, algo que el autor documenta que fracasa con recetas alternativas (ternarias, binarias o IQ2 sin calibración). Está pensado para inferencia en CPU con un motor personalizado, llama.cpp-miniQuant, que añade soporte nativo para el grafo híbrido sliding-window / SSM de la arquitectura qwen35.
+La pieza tecnica clave no es solo la cuantizacion, sino el motor de inferencia: el modelo requiere la implementacion personalizada fencerJP/llama.cpp-miniQuant, que anade soporte nativo para la atencion lineal hibrida (Gated DeltaNet SSM) de Qwen 3.5 y kernels AVX-512 optimizados. Esto implica que no funciona con llama.cpp estandar ni con Ollama o vLLM sin adaptaciones.
 
-El modelo conserva la naturaleza "abliterated" del base, es decir, se ha eliminado el comportamiento de rechazo, y la licencia declarada es Apache 2.0. El idioma declarado en la model card es únicamente inglés.
+El pipeline combina destilacion con QAT fraccional (FraQAT/QAD), rotacion Hadamard aislada por recurrencia (QuaRot segun el protocolo Quamba2), cuantizacion estructural IQ2_K/IQ3_K y refinamiento de escalas por minimos cuadrados. La licencia es Apache 2.0 y el idioma declarado es unicamente ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con sliding-window attention y componentes SSM (etiqueta "qwen35" en el motor de inferencia); dimensión oculta D=2560 |
-| Parametros totales | 4.205.751.296 (4,2 B) |
+| Arquitectura | Transformer hibrido con atencion lineal (Gated DeltaNet SSM) segun Qwen 3.5; cuantizacion IQ2_K/IQ3_K |
+| Parametros totales | 4.205.751.296 (4,2B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF mixta a 2,21 BPW efectivos: token_embd en Q4_K, LM head en Q6_K, attn_qkv en IQ2_K, resto con IQ2_XS y calibración imatrix |
-| Idiomas soportados | en (inglés, según la model card) |
+| Longitud de contexto | no disponible (los benchmarks llegan a 8.143 tokens de prompt, sin especificar el maximo) |
+| Tipos de cuantizacion | GGUF sub-2.5 BPW; Recipe A a ~2,25 BPW (IQ2_K en proyecciones base, IQ3_K en token_embd, output, norm y bias) |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (requiere el motor llama.cpp-miniQuant) |
+| Formato de pesos | GGUF (requiere llama.cpp-miniQuant) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de 4,2 B parámetros con un grafo que el motor de inferencia etiqueta como "qwen35" e interpreta como computación híbrida de sliding-window attention y SSM. La dimensión oculta es 2560, dato que el autor usa para justificar la dificultad de cuantizar por debajo de 2,5 BPW. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original; la model card de esta cuantización no los detalla.
+El modelo base es un Qwen 3.5 de 4B con arquitectura hibrida que combina atencion lineal (Gated DeltaNet SSM) con componentes transformer. Sobre ese modelo se aplico un pipeline de compresion en seis fases descrito en la model card: (1) cache de logits top-K del profesor Qwen3.8-Flash-Next-Abliterated en 104 shards; (2) puente de traduccion de vocabulario disperso entre profesor y alumno; (3) destilacion FraQAT + QAD con perdida conjunta L = (1-α)·L_CE + α·L_KL con α = 0,7, estimador straight-through y escalas por canal aprendibles; (4) rotacion QuaRot aislada por recurrencia segun el protocolo Quamba2, limitada a blk.*.ffn_down para no alterar las proyecciones recurrentes del SSM; (5) cuantizacion estructural IQ2_K (super-bloques de 256 dimensiones, sub-bloques de 16) con optimizacion de curvatura Hessiana mediante imatrix de calibracion; y (6) destilacion de escalas en forma cerrada por minimos cuadrados contra el profesor BF16 sin cuantizar, sobre 249 tensores cuantizados.
 
-La innovación está en el proceso de cuantización, no en el entrenamiento. SQMP asigna precisión por rol estructural: Q4_K para los embeddings (protege la geometría de logits del vocabulario), Q6_K para la cabeza de salida (preserva la nitidez del softmax) e IQ2_K para las proyecciones query-key-value (protege el rango de atención). Sobre esa base, la calibración imatrix calcula un proxy del hessiano H = X X^T sobre texto de calibración y alinea los codebooks vectoriales no lineales IQ2_XS con las direcciones de mayor energía de activación. El autor sostiene que ambas técnicas son superaditivas: SQMP sin imatrix produce clipping catastrófico (el 90 % de los pesos de baja precisión colapsan a cero), e imatrix sin SQMP colapsa la variedad de embeddings. El resultado declarado es un footprint de 1,34 GB de RAM.
+La innovacion principal es la combinacion de QAT fraccional con rotacion Hadamard restringida a las capas densas y cuantizacion IQ2_K, que permite bajar a ~2,25 BPW sin el colapso tipico de las cuantizaciones sub-3 BPW. El modelo resultante se distribuye como GGUF y solo es ejecutable con el fork llama.cpp-miniQuant, que incorpora kernels AVX-512 (VBMI, VNNI, BF16) para decodificacion vectorial.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo base Qwen3.5-4B abliterated.
-- Razonamiento factual básico: el autor valida la recuperación del punto de ebullición del nitrógeno líquido (77 K).
-- Razonamiento matemático secuencial: resuelve la secuencia n(n+1) hasta el valor 42 en la prueba documentada.
-- Generación de código Python: produce la comprobación de palíndromo con slicing `word[::-1]`.
-- Naturaleza abliterated: el modelo base ha eliminado el comportamiento de rechazo, por lo que responde a peticiones que el modelo original rechazaría.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking en la información disponible.
-- Capacidad multilingüe: solo se declara inglés.
+- Generacion de texto conversacional en ingles, incluyendo respuestas multi-turno.
+- Razonamiento basico y resolucion de problemas de varios pasos (validado en tareas de fisica y algoritmia segun la model card).
+- Generacion de codigo y sintesis de algoritmos (evaluado en la benchmark de "multi-step algorithmic code synthesis").
+- Seguimiento de instrucciones dependientes de contexto (context-dependent instruction adherence).
+- Capacidad "abliterated": el modelo base ha sido modificado para eliminar rechazos, por lo que puede responder a peticiones que modelos alineados rechazarian.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes: no disponible de forma explicita; los benchmarks mencionan "agentic verification tasks" pero sin detallar infraestructura de agentes.
+- Multilingue: limitado a ingles segun el campo language.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Inferencia en CPU con RAM limitada: el fichero de 1,34 GB permite ejecutar un modelo de 4,2 B parámetros en equipos sin GPU dedicada, usando el motor llama.cpp-miniQuant compilado con AVX-512.
-- Prototipado de asistentes conversacionales en inglés: sirve para validar flujos de chat multi-turno antes de escalar a un modelo mayor, con un coste de memoria mínimo.
-- Evaluación de técnicas de cuantización extrema: investigadores pueden reproducir la comparativa SQMP + imatrix frente a recetas ternarias, binarias o IQ2 sin calibrar que el autor documenta como fallidas.
-- Generación de código en entornos con restricciones de hardware: la prueba de palíndromo sugiere que puede producir snippets Python simples, útil en scripts de automatización ligeros.
-- Experimentación con modelos sin rechazo: al ser abliterated, se puede usar para estudiar comportamiento de modelos sin alineación de seguridad en entornos controlados de investigación.
-- Despliegue en dispositivos edge o contenedores pequeños: el tamaño reducido del GGUF encaja en imágenes Docker mínimas o sistemas embebidos x86 con AVX-512.
-- Pruebas de regresión de motores de inferencia: sirve como caso de prueba para validar el soporte del grafo qwen35 híbrido en llama.cpp-miniQuant.
+- Asistente conversacional local en CPU: con 2,9 GB de GGUF y ~2,1-2,8 GiB de RSS, se puede desplegar en portatiles o mini-PC sin GPU dedicada, gestionando conversaciones multi-turno con decodificacion de ~30 t/s.
+- Generacion de codigo en entornos con recursos limitados: util para autocompletado o sintesis de funciones en editores ligeros, donde no cabe un modelo mayor; la benchmark reporta 91,7% de precision en tareas de sintesis de codigo algoritmico.
+- Prototipado rapido de pipelines de IA en hardware de gama baja: permite validar prompts y flujos antes de migrar a un modelo mayor, con coste de memoria minimo.
+- Educacion e investigacion sobre cuantizacion extrema: el modelo sirve como caso de estudio reproducible del pipeline FraQAT/QuaRot/IQ2_K, util para investigadores que analizan el impacto de sub-2.5 BPW en calidad.
+- Inferencia en dispositivos edge o embebidos con CPU x86 y AVX-512: por su huella de memoria, encaja en gateways, routers o estaciones de trabajo sin acelerador.
+- Experimentacion con modelos "abliterated": para estudios de seguridad, red-teaming o evaluacion de sesgos en modelos sin rechazos, en un entorno controlado y con recursos minimos.
+- Despliegue en entornos air-gapped: al ser un unico fichero GGUF y un motor compilable localmente, se puede ejecutar sin conexion ni dependencias cloud.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados por el autor son pruebas deterministas locales (greedy decoding, `--temp 0 -n 64 --repeat-penalty 1.0`) sobre CPU AMD x86_64 de 12 núcleos / 24 hilos con AVX-512, no benchmarks estándar como MMLU o HumanEval.
+La model card reporta una evaluacion cualitativa propia sobre 12 tareas de verificacion agentica multi-dominio (hechos de fisica, sintesis de codigo algoritmico multi-paso y adherencia a instrucciones dependientes de contexto):
 
-| Modelo / receta | Tamano | BPW efectivo | Velocidad | Fisica (N2) | Matemáticas (secuencia) | Código Python | Veredicto |
-|---|---|---|---|---|---|---|---|
-| Huihui-Qwen3.5-4B-ab_miniQuant (IQ2_XS + SQMP + imatrix) | 1.341 MB | 2,21 | 34,4 t/s | Correcto (77 K) | Correcto (42) | Correcto (`word[::-1]`) | Pasa |
-| IQ2_KS + SQMP + imatrix | 1.299 MB | 2,18 | 40,2 t/s | Deriva (123 K) | Deriva aritmética | Incompleto | Estabilidad sintáctica, lógica degradada |
-| IQ2_XXS + SQMP + imatrix | 1.253 MB | 2,06 | 41,2 t/s | Deriva (-619 °C) | Fórmula errónea | Incompleto | Deriva factual |
-| Recipe D (IQ2_XXS + SQMP sin imatrix) | 1.253 MB | 2,06 | 39,8 t/s | Colapso | Colapso | Colapso | Falla |
-| PQ2_0 (Bonsai Ternary + SQMP + imatrix) | 1.405 MB | 2,13 | 35,8 t/s | Incoherente | Ruido | Ruido | Falla |
-| Recipe A (PTQ1_0 ternario en cascada) | 892 MB | 1,46 | 48,1 t/s | Gibberish | Colapso | Colapso | Falla |
-| Recipe B (PTQ1_0 + destilación AdamW) | 1.514 MB | 2,48 | 32,1 t/s | Alucinación severa | Lógica degradada | Deriva sintáctica | Subóptimo |
-| Recipe C (IQ2_BN binario) | 1.516 MB | 2,49 | 31,9 t/s | Recuerdo inconsistente | Lógica degradada | Errores de sintaxis | Subóptimo |
-| TQ2_0 (dual-binario nativo) | 1.418 MB | 2,33 | 33,5 t/s | Recuerdo inconsistente | Lógica degradada | Código incompleto | Subóptimo |
+| Metrica | Resultado |
+|---|---|
+| Precision (accuracy) | 91,7% (11/12 respuestas correctas) |
+| Coherencia | 100,0% (12/12 sintacticamente validas, sin bucles de repeticion) |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Rendimiento de inferencia medido con 16 hilos de CPU, decodificacion greedy (temp=0), en AMD Ryzen AI 9 HX 470 con AVX-512:
+
+| Nivel de contexto | Tokens objetivo | Tokens de prompt | Prefill | Decode | Memoria (RSS) |
+|---|---|---|---|---|---|
+| Corto | 150 | 124 | 233,38 t/s | 35,14 t/s | 2,12 GiB |
+| Medio | 1.250 | 1.875 | 274,92 t/s | 30,64 t/s | 2,38 GiB |
+| Largo | 5.500 | 8.143 | 237,81 t/s | 28,34 t/s | 2,78 GiB |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no requiere GPU; el autor reporta un footprint de 1,34 GB de RAM en CPU.
-- GPU recomendadas: no aplica para el motor documentado; el autor solo valida ejecución en CPU.
-- Cabe en cualquier equipo consumer con al menos 1,5 GB de RAM libre y CPU x86_64 con AVX-512 (idealmente con AVX512_VBMI, AVX512_VNNI y AVX512_BF16).
-- Despliegue: exclusivamente mediante llama.cpp-miniQuant (commit faec5d9), compilado con `-DGGML_AVX512=ON -DGGML_AVX512_VBMI=ON -DGGML_AVX512_VNNI=ON -DGGML_AVX512_BF16=ON`. No se documenta compatibilidad con vLLM, Ollama, TGI ni llama.cpp estándar.
-- Throughput estimado: 34,4 t/s en el hardware de referencia (AMD 12C/24T, DDR5, NVMe PCIe 4.0). No se publica latencia por token ni datos en otras plataformas.
+- VRAM/RAM estimada para inferencia: ~2,1 a 2,8 GiB de RSS segun longitud de contexto (medido en CPU). En GPU, la huella seria similar mas el overhead del runtime.
+- GPU recomendadas: el entorno de prueba incluye una NVIDIA Tesla V100-SXM2 16GB (CUDA 13.0), aunque los benchmarks de velocidad se ejecutaron en CPU. Cualquier GPU con al menos 4 GB de VRAM deberia poder alojar el modelo si el motor lo soporta.
+- Cabe en GPU consumer: si, en cualquier GPU con 4 GB o mas (GTX 1650, RTX 3050, RTX 4060, etc.), siempre que se use el motor miniQuant.
+- Opciones de despliegue: exclusivamente llama.cpp-miniQuant (fork fencerJP), compilado con GGML_AVX512, GGML_AVX512_VBMI, GGML_AVX512_VNNI y GGML_AVX512_BF16. No compatible con llama.cpp estandar, Ollama, vLLM ni TGI sin adaptaciones.
+- Latencia y throughput: prefill de 233-275 t/s y decode de 28-35 t/s en Ryzen AI 9 HX 470 con 16 hilos; el rendimiento escala con el numero de nucleos y la presencia de AVX-512.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | BPW / precision | Rendimiento documentado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Huihui-Qwen3.5-4B-ab_miniQuant | 4,2 B | no disponible | 2,21 BPW | 3/3 pruebas deterministas superadas, 34,4 t/s | Apache 2.0 | Hugging Face, requiere motor propio |
-| IQ2_KS + SQMP + imatrix (misma familia) | 4,2 B | no disponible | 2,18 BPW | 1/3 pruebas superadas, 40,2 t/s | Apache 2.0 | Hugging Face |
-| IQ2_XXS + SQMP + imatrix (misma familia) | 4,2 B | no disponible | 2,06 BPW | 0/3 pruebas superadas, 41,2 t/s | Apache 2.0 | Hugging Face |
-| TQ2_0 (dual-binario nativo) | 4,2 B | no disponible | 2,33 BPW | Recuerdo inconsistente, 33,5 t/s | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Formato / BPW | Licencia | Motor |
+|---|---|---|---|---|---|
+| Huihui-Qwen3.5-4B-ab_miniQuant | 4,2B | no disponible | GGUF ~2,25 BPW | Apache 2.0 | llama.cpp-miniQuant |
+| huihui-ai/Huihui-Qwen3.5-4B-abliterated (base) | 4,2B | no disponible | safetensors BF16 | Apache 2.0 | transformers, vLLM, llama.cpp |
+| Qwen3.5-4B (original, no abliterated) | ~4B | no disponible | safetensors, GGUF | Apache 2.0 | amplia compatibilidad |
+| Cuantizaciones GGUF Q4_K_M tipicas de modelos 4B | ~4B | segun base | GGUF ~4,5 BPW (~2,5 GB) | segun base | llama.cpp estandar |
 
-No se dispone de comparación con modelos de otras familias en la información proporcionada.
+La ventaja del miniQuant es el tamano (2,9 GB) y la velocidad en CPU, a costa de requerir un motor no estandar y de una perdida de calidad no cuantificada con benchmarks publicos. Frente a una Q4_K_M convencional de un 4B, ocupa algo menos y corre mas rapido en CPU, pero pierde compatibilidad con el ecosistema llama.cpp/Ollama.
 
 ## Limitaciones y advertencias
 
-- Requiere un fork no estándar de llama.cpp (llama.cpp-miniQuant); no funciona con llama.cpp upstream, Ollama ni vLLM, lo que limita su integración en producción.
-- Solo se declara soporte de inglés; el rendimiento en castellano u otros idiomas no está documentado.
-- Al ser un modelo abliterated, no tiene comportamiento de rechazo: puede generar contenido que el modelo original bloquearía, con implicaciones legales y de seguridad en despliegues públicos.
-- Riesgo de alucinación elevado: el autor documenta que recetas cercanas en BPW (IQ2_XXS, IQ2_KS) derivan en datos factuales y matemáticos; el margen entre pasar y fallar es estrecho.
-- La validación se limita a tres pruebas deterministas con greedy decoding; no hay evidencia sobre generación larga, coherencia multi-turno ni robustez con sampling.
-- No se documenta la longitud de contexto soportada ni el comportamiento del grafo híbrido SSM en secuencias largas bajo esta cuantización.
-- El autor advierte que sin calibración imatrix el 90 % de los pesos de baja precisión colapsan a cero; cualquier re-cuantización o modificación del GGUF puede degradar el modelo de forma irreversible.
-- Licencia Apache 2.0 permite uso comercial, pero la naturaleza abliterated traslada al usuario la responsabilidad sobre el contenido generado.
-- El modelo tiene 0 descargas y 0 likes en el momento de la ficha; no hay validación independiente de los resultados del autor.
+- Requiere un fork especifico de llama.cpp (fencerJP/llama.cpp-miniQuant); no funciona con llama.cpp upstream, Ollama, vLLM, TGI ni LM Studio sin modificaciones.
+- Solo soporta ingles segun el campo language; el rendimiento en otros idiomas no esta documentado.
+- Modelo "abliterated": se ha eliminado el comportamiento de rechazo, por lo que puede generar contenido danino, ofensivo o inseguro. No recomendado para aplicaciones de cara al publico sin filtros adicionales.
+- Riesgo de alucinacion elevado por la cuantizacion extrema (~2,25 BPW); la benchmark propia de 12 tareas es demasiado pequena para ser concluyente.
+- No hay datos publicos de benchmarks estandar (MMLU, HumanEval, GSM8K) que permitan comparar la perdida de calidad frente al modelo base.
+- La longitud maxima de contexto no esta especificada; los benchmarks solo llegan a 8.143 tokens de prompt.
+- El rendimiento optimo depende de AVX-512 (VBMI, VNNI, BF16); en CPUs sin estas extensiones la velocidad caera significativamente.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base abliterated puede acarrear riesgos reputacionales o de cumplimiento en productos comerciales.
+- El pipeline de cuantizacion es experimental y no ha sido validado de forma independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/f3nc3r/Huihui-Qwen3.5-4B-ab_miniQuant
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated
-- Motor de inferencia: https://github.com/fencerJP/llama.cpp-miniQuant
+- Motor de inferencia (fork llama.cpp-miniQuant): https://github.com/fencerJP/llama.cpp-miniQuant

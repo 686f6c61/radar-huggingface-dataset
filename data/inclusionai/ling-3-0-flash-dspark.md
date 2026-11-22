@@ -2,53 +2,68 @@
 
 ## Resumen
 
-Ling-3.0-flash-dspark es un modelo de especulación (draft) desarrollado por inclusionAI para acelerar la inferencia del modelo principal Ling-3.0-flash mediante decodificación especulativa. Con 1.36 mil millones de parámetros, este modelo genera borradores de tokens que el modelo objetivo verifica en bloque, reduciendo la latencia y el coste computacional sin sacrificar precisión. Es una extensión de la técnica DFlash, que incorpora características auxiliares del modelo objetivo y una cabeza de confianza que decide dinámicamente cuántos tokens borrador generar por paso.
+Ling-3.0-flash-dspark es un modelo borrador (draft model) de decodificación especulativa diseñado por inclusionAI para acelerar la inferencia de su modelo objetivo Ling-3.0-flash. No es un modelo generativo autónomo: se trata de un "speculator" que propone tokens candidatos que el modelo grande verifica en paralelo, reduciendo el número de pasos de decodificación secuencial necesarios. Implementa la técnica DSpark, una extensión de DFlash que incorpora características auxiliares del modelo objetivo y una cabeza de confianza que decide dinámicamente cuántos tokens borrador emitir en cada paso.
 
-El modelo se entrena con SpecForge y se sirve con SGLang, lo que lo hace directamente integrable en infraestructuras de producción que ya usen Ling-3.0-flash. Su relevancia actual radica en que permite desplegar modelos de razonamiento híbridos de gran tamaño (124B totales) con una fracción del coste de inferencia, manteniendo una calidad de salida equivalente. Está disponible en Hugging Face con formato safetensors y licencia "other" (no especificada en la tarjeta del modelo).
+El modelo tiene 1.363.707.905 parámetros (1,36B) en BF16, con una arquitectura transformer compacta de solo 5 capas de atención completa, tamaño oculto de 2.560 y atención MHA con 32 cabezas de consulta y 32 de clave/valor. Consume características auxiliares de las capas 1, 11, 23, 29 y 35 del modelo objetivo y utiliza una cabeza de confianza Markov de rango 256. El bloque DSpark es de 8 tokens borrador con ancho de verificación 9 (incluyendo el token bonus del objetivo).
 
-## Especificaciones técnicas
+Su relevancia radica en que permite incrementar la longitud de aceptación media por paso de verificación hasta 6,57 tokens en HumanEval o 6,40 en GSM8K, con una media macro de 5,29 sobre nueve cargas de trabajo. Esto se traduce directamente en ganancias de throughput en despliegues de producción de Ling-3.0-flash sin alterar la distribución de salida del modelo objetivo, ya que la verificación garantiza corrección exacta de los tokens aceptados. Se distribuye bajo licencia MIT y se sirve con SGLang o llama.cpp.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con 5 capas de atención completa (MHA, 32 cabezas Q y 32 cabezas KV) |
+| Arquitectura | Transformer denso (draft model para decodificacion especulativa DSpark) |
 | Parametros totales | 1.363.707.905 (1,36B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 262.144 posiciones máximas (ventana de 8 tokens de borrador) |
-| Tipos de cuantizacion | BF16 (pesos nativos); cuantizaciones adicionales no documentadas |
-| Idiomas soportados | No disponible (el modelo principal Ling-3.0-flash soporta multilingüe, pero no se detalla para el draft) |
-| Licencia | other (no especificada) |
-| Formato de pesos | safetensors (también compatible con SGLang y transformers) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 262.144 posiciones maximas (max_position_embeddings) |
+| Tipos de cuantizacion | BF16 en pesos originales; GGUF convertible (p. ej. Q4_K_M) para llama.cpp |
+| Idiomas soportados | no disponible |
+| Licencia | MIT |
+| Formato de pesos | safetensors (transformers); GGUF via convert_hf_to_gguf.py |
+| Tamano del repositorio | 2,7 GB |
+| Tamano oculto | 2.560 |
+| Capas transformer | 5 capas de atencion completa |
+| Atencion | MHA, 32 cabezas de consulta / 32 cabezas clave-valor |
+| Capas auxiliares del objetivo | 1, 11, 23, 29, 35 |
+| Cabeza de confianza | Markov vanilla, rango 256 |
+| Tamano de bloque DSpark | 8 tokens borrador (ancho de verificacion 9) |
+| Modelo objetivo | Ling-3.0-flash |
 
 ## Arquitectura y entrenamiento
 
-Ling-3.0-flash-dspark es un modelo de especulación (draft) basado en una arquitectura transformer ligera: 5 capas de atención completa (MHA) con 32 cabezas de consulta y 32 cabezas de clave/valor, tamaño oculto de 2.560. Incluye una cabecera de confianza tipo "vanilla Markov head" con rango 256, que decide dinámicamente cuántos tokens de borrador se generan por paso (bloque de 8 tokens, con ancho de verificación de 9 incluyendo el token bonus). El modelo utiliza características auxiliares del modelo objetivo (Ling-3.0-flash) en las capas 1, 11, 23, 29 y 35 para mejorar la precisión de los borradores.
+El modelo es un draft model de tipo transformer denso con solo 5 capas de atención completa, tamaño oculto de 2.560 y atención multi-cabeza estándar con 32 cabezas de consulta y 32 de clave/valor. La innovación central de DSpark respecto a DFlash es la incorporación de características auxiliares extraídas de cinco capas del modelo objetivo (1, 11, 23, 29 y 35), lo que proporciona al borrador información del estado interno del modelo grande y mejora la calidad de sus propuestas. Adicionalmente, una cabeza de confianza de tipo Markov con rango 256 decide dinámicamente cuántos tokens borrador generar en cada paso, adaptando el esfuerzo de especulación al contexto.
 
-El entrenamiento se realizó con SpecForge, un framework para entrenamiento de modelos de especulación, y se sirve con SGLang usando el algoritmo DSPARK. No se publican detalles sobre el conjunto de datos de entrenamiento ni el proceso de alineación (RLHF/DPO). El modelo está diseñado para funcionar como complemento de Ling-3.0-flash, que es un MoE híbrido de razonamiento con 124B parámetros totales y 5,1B activos, con ventana de contexto nativa de 256K extensible a 1M.
+El entrenamiento se realizó con SpecForge, el framework de entrenamiento de modelos especulativos del proyecto SGLang. El modelo opera con un tamaño de bloque DSpark de 8 tokens borrador y un ancho de verificación de 9 tokens (los 8 propuestos más el token bonus del objetivo). No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO, algo esperable en un modelo de este tipo, cuyo objetivo es imitar la distribución del modelo objetivo y no alinearse con preferencias humanas.
+
+La decodificación especulativa con DSpark requiere soporte específico en el runtime: SGLang con `--speculative-algorithm DSPARK` o una build de llama.cpp con `--spec-type draft-dspark`. En SGLang es necesario dimensionar `--linear-replayssm-cache-len` según la receta del cookbook oficial.
 
 ## Capacidades
 
-- Especificación especulativa: genera borradores de tokens de alta calidad para el modelo objetivo Ling-3.0-flash, con una longitud media de aceptación de 5,29 tokens por paso (macro-media en nueve workloads).
-- Decodificación dinámica: la cabecera de confianza adapta el número de tokens de borrador según la dificultad del contexto, mejorando el balance entre velocidad y precisión.
-- Integración con SGLang: se sirve mediante el algoritmo DSPARK, compatible con despliegues en producción que ya usan Ling-3.0-flash.
-- Compatibilidad con el modelo principal: diseñado específicamente para Ling-3.0-flash, no es un modelo de propósito general (no genera texto final por sí solo).
-- Soporte de contexto largo: hereda la ventana máxima de 262.144 posiciones del modelo objetivo, permitiendo razonamiento sobre documentos extensos.
-- Rendimiento medible: métricas de acceptance length publicadas para workloads de razonamiento, código y chat (ver sección de benchmarks).
+- Generación de tokens borrador para decodificación especulativa sobre Ling-3.0-flash; no es un modelo de chat autónomo.
+- Propuesta de hasta 8 tokens por paso de verificación con ancho de verificación 9.
+- Ajuste dinámico del número de tokens borrador mediante cabeza de confianza Markov.
+- Aprovechamiento de características auxiliares del modelo objetivo (capas 1, 11, 23, 29, 35) para mejorar la tasa de aceptación.
+- Soporte de contextos largos de hasta 262.144 posiciones, alineado con el modelo objetivo.
+- Compatibilidad con SGLang (algoritmo DSPARK) y llama.cpp (tipo draft-dspark).
+- No soporta tool calling, agentes ni razonamiento multi-paso de forma nativa: hereda las capacidades del modelo objetivo al que acompaña.
+- Capacidades multilingües: no disponibles de forma explícita; dependen del modelo objetivo.
 
 ## Casos de uso
 
-- Aceleración de inferencia para Ling-3.0-flash en producción: el modelo se usa como componente de un sistema de decodificación especulativa en SGLang. Permite reducir la latencia de generación de Ling-3.0-flash en APIs de chat o agentes, especialmente en escenarios de alta concurrencia donde el coste por token es crítico.
-- Despliegue en entornos con recursos limitados: al ser un modelo de solo 1,36B, puede ejecutarse en GPU de consumo (p. ej., RTX 4090) mientras el modelo principal se sirve en clústeres mayores. Esto permite servir el modelo principal con menor latencia sin aumentar la huella de VRAM del servidor principal.
-- Optimización de costes en plataformas de LLM-as-a-service: proveedores que ofrecen Ling-3.0-flash pueden integrar este draft para reducir el coste por petición, manteniendo la calidad del modelo original.
-- Investigación en decodificación especulativa: sirve como referencia para estudiar el impacto de características auxiliares del modelo objetivo y cabeceras de confianza en la tasa de aceptación.
-- Evaluación de calidad de borradores: las métricas de acceptance length permiten comparar la eficiencia de diferentes estrategias de especulación en workloads concretos (GSM8K, HumanEval, etc.).
-- Integración en frameworks de inferencia: se puede usar como ejemplo de implementación de DSPARK en SGLang, útil para desarrolladores que quieran añadir especulación a otros modelos.
+- Aceleración de inferencia en producción de Ling-3.0-flash: desplegar el draft junto al modelo objetivo en SGLang con `--speculative-algorithm DSPARK` para reducir la latencia por token en servicios de generación de texto de alta concurrencia.
+- Generación de código asistida: con una longitud de aceptación de 6,57 en HumanEval y 6,34 en MBPP, el borrador es especialmente eficaz en tareas de código, donde los tokens son altamente predecibles; útil en asistentes de programación y autocompletado en IDE.
+- Razonamiento matemático: aceptación de 6,40 en GSM8K y 6,29 en MATH-500 permite acelerar pipelines de resolución de problemas matemáticos y evaluaciones automáticas.
+- Despliegue en hardware de consumo con llama.cpp: convertir el draft a GGUF y usarlo con `--spec-draft-model` junto a una cuantización Q4_K_M del objetivo para servir modelos en GPUs consumer con mayor throughput.
+- Evaluación de modelos y benchmarks: acelerar la generación en suites de evaluación como AIME 2025 (aceptación 5,56) o LiveCodeBench (5,33) reduciendo el tiempo total de ejecución.
+- Servicio de chat multi-turno: con aceptación de 3,92 en MT-Bench y 3,51 en Alpaca, aporta ganancias moderadas pero consistentes en cargas conversacionales, útil en despliegues de atención al cliente o asistentes generales.
+- Optimización de costes en infraestructura: al aumentar los tokens aceptados por paso de verificación, se reduce el número de pasos de decodificación del modelo grande y, por tanto, el coste computacional por token generado.
 
 ## Benchmarks y rendimiento
 
-El modelo publica métricas de "acceptance length", definida como el número medio de tokens aceptados por paso de verificación especulativa (incluyendo el token bonus del modelo objetivo). No se publican resultados de benchmarks de calidad (MMLU, HumanEval, etc.) porque el modelo no genera texto final; su rendimiento se mide por su eficiencia como draft.
+Longitud de aceptación media por paso de verificación (incluye el token bonus del objetivo):
 
-| Workload | Acceptance length |
-|---|---|
+| Carga de trabajo | Longitud de aceptacion |
+|---|---:|
 | GSM8K | 6,40 |
 | MATH-500 | 6,29 |
 | AIME 2025 | 5,56 |
@@ -58,44 +73,44 @@ El modelo publica métricas de "acceptance length", definida como el número med
 | MT-Bench | 3,92 |
 | Alpaca | 3,51 |
 | Arena-Hard-v2 | 3,72 |
-| **Media macro** | **5,29** |
+| Media macro (9 cargas) | 5,29 |
 
-No se han publicado resultados de benchmarks comparativos con otros modelos especuladores en la información disponible.
+No se han publicado en la información disponible resultados de benchmarks de calidad del modelo objetivo (MMLU, etc.) atribuibles a este draft, ni comparativas directas con otros speculators.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo en BF16 ocupa aproximadamente 2,7 GB (tamaño del repositorio). Con cuantizaciones adicionales (si se publican) podría reducirse a menos de 2 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para ejecutar el draft en BF16 (p. ej., RTX 3060, RTX 4060, T4). Para el despliegue completo con Ling-3.0-flash se necesitan GPUs de mayor capacidad (A100, H100) para el modelo principal.
-- Compatibilidad con consumer GPU: sí, el draft es ligero y puede ejecutarse en GPUs de consumo como RTX 3090 o RTX 4090.
-- Opciones de despliegue: SGLang (con soporte DSPARK), también puede cargarse con transformers para pruebas locales, pero el uso principal es a través de SGLang con `--speculative-algorithm DSPARK`.
-- Latencia y throughput: no se publican datos de latencia o throughput. La acceptance length media de 5,29 tokens por paso indica una aceleración potencial de ~5x en el número de pasos de decodificación, pero el throughput real depende del hardware y de la configuración del modelo principal.
+- VRAM estimada para inferencia: aproximadamente 2,7 GB en BF16 para el draft (1,36B parámetros); en GGUF Q4_K_M se reduce a alrededor de 0,8-1 GB.
+- El draft se carga junto al modelo objetivo, por lo que la VRAM total es la del objetivo más la del borrador; es necesario reservar memoria adicional para las cachés de verificación y el estado de decodificación especulativa.
+- GPU recomendadas: A100, H100 o H200 para despliegues de producción con tensor parallelism; RTX 4090 y GPUs con 24 GB o más para servir el objetivo cuantizado junto al draft.
+- Cabe en GPU consumer: sí, el draft por sí solo cabe en cualquier GPU con 4 GB o más; el conjunto objetivo + draft depende de la cuantización del objetivo.
+- Opciones de despliegue: SGLang (con soporte DSPARK y `--linear-replayssm-cache-len` dimensionado según el cookbook) y llama.cpp (build con soporte DSpark, `--spec-type draft-dspark --spec-draft-n-max 8`).
+- Latencia y throughput: no se proporcionan cifras absolutas en la información disponible; las recetas con velocidad y precisión medidas están en el cookbook de SGLang para Ling-3.0-flash.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos especuladores comparables (p. ej., DFlash o otros drafts) en los datos proporcionados. Se puede comparar indirectamente con el propio modelo principal:
-
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.0-flash-dspark | Draft especulativo | 1,36B | 262.144 | other | safetensors |
-| Ling-3.0-flash (objetivo) | MoE híbrido | 124B totales, 5,1B activos | 256K nativo, 1M extendido | other | safetensors |
+| Ling-3.0-flash-dspark | 1,36B | 262.144 | Draft DSpark (speculative decoding) | MIT | Hugging Face |
+| DFlash (base tecnica) | no disponible | no disponible | Draft de decodificacion especulativa | no disponible | GitHub z-lab/dflash |
+| SpecForge (framework) | no aplica | no aplica | Entrenamiento de speculators | no disponible | GitHub sgl-project/SpecForge |
 
-No se conocen otros drafts específicos para Ling-3.0-flash en el momento de la consulta.
+No se dispone de datos de rendimiento de modelos comparables en la información proporcionada; la comparación se limita a la relación técnica con DFlash (predecesor del que DSpark extiende la arquitectura) y SpecForge (framework de entrenamiento).
 
 ## Limitaciones y advertencias
 
-- El modelo es solo un componente de especulación: no puede generar texto de forma autónoma; requiere el modelo objetivo Ling-3.0-flash para funcionar.
-- La licencia es "other" y no se especifica si permite uso comercial. Es necesario contactar con inclusionAI para aclarar los términos de uso.
-- No se documentan los datos de entrenamiento ni posibles sesgos del modelo. Al ser un modelo auxiliar, su impacto en la calidad final es indirecto, pero puede heredar sesgos del modelo objetivo.
-- La ventana de contexto de 262.144 tokens es máxima; en la práctica, la ventana efectiva depende de la configuración de SGLang y de la memoria disponible.
-- El rendimiento de aceptación varía según el workload (ver tabla): en tareas de chat general (MT-Bench, Alpaca) la aceptación es menor que en tareas de razonamiento y código, lo que implica una menor aceleración en esos escenarios.
-- No se publican instrucciones de cuantización adicionales; el modelo solo se ofrece en BF16, lo que limita su uso en hardware con VRAM muy reducida.
+- No es un modelo generativo autónomo: solo funciona como draft de decodificación especulativa junto a Ling-3.0-flash; no puede usarse para chat o generación directa.
+- Requiere runtimes con soporte específico (SGLang con DSPARK o llama.cpp con draft-dspark); no funciona con transformers estándar ni con vLLM sin soporte añadido.
+- La longitud de aceptación varía notablemente según la carga: de 6,57 en HumanEval a 3,51 en Alpaca, por lo que las ganancias de throughput no son uniformes.
+- En SGLang es imprescindible dimensionar correctamente `--linear-replayssm-cache-len`; una configuración incorrecta puede degradar el rendimiento o impedir el arranque.
+- Riesgo de alucinación: no aplica directamente al draft, ya que los tokens propuestos se verifican contra el modelo objetivo; la calidad final depende íntegramente de Ling-3.0-flash.
+- Idiomas soportados no documentados explícitamente; la cobertura lingüística hereda la del modelo objetivo.
+- Licencia MIT: permite uso comercial, modificación y redistribución con atribución; sin embargo, el uso en producción está condicionado por la licencia del modelo objetivo Ling-3.0-flash.
+- Información de entrenamiento (tokens, composición del dataset, alineación) no disponible, lo que limita la auditabilidad del modelo.
 
 ## Enlaces
 
-- [Hugging Face: inclusionAI/Ling-3.0-flash-dspark](https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark)
-- [Hugging Face: inclusionAI/Ling-3.0-flash (modelo objetivo)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
-- [Repositorio DFlash (base del algoritmo)](https://github.com/z-lab/dflash)
-- [Repositorio SpecForge (entrenamiento)](https://github.com/sgl-project/SpecForge)
-- [Repositorio SGLang (servir con DSPARK)](https://github.com/sgl-project/sglang)
-- [Cookbook SGLang para Ling-3.0-flash](https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash)
-- [Documentación de Ling de inclusionAI](https://developer.ant-ling.com/en/docs/models/ling/)
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark
+- Repositorio DFlash: https://github.com/z-lab/dflash
+- Repositorio SpecForge: https://github.com/sgl-project/SpecForge
+- Repositorio SGLang: https://github.com/sgl-project/sglang
+- Cookbook de SGLang para Ling-3.0-flash: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash

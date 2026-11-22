@@ -2,88 +2,102 @@
 
 ## Resumen
 
-Qwen3.5-2B-CyberSec-GGUF es la exportación en formato GGUF del checkpoint reaperdoesntknow/Qwen3.5-2B-CyberSec, un ajuste fino del modelo base unsloth/Qwen3.5-2B orientado a dominios de ciberseguridad. El autor (reaperdoesntknow) publica esta versión cuantizada para inferencia local con runtimes compatibles con llama.cpp, lo que permite ejecutar el modelo en CPU o en GPUs de consumo sin infraestructura dedicada. Forma parte de la colección CIx de modelos de ciberseguridad del mismo autor.
+Qwen3.5-2B-CyberSec-GGUF es una distribucion en formato GGUF del checkpoint Qwen3.5-2B-CyberSec, un ajuste fino orientado a ciberseguridad del modelo base Qwen3.5-2B. Lo publica el usuario reaperdoesntknow dentro de su coleccion CIx de modelos de seguridad, y su proposito es permitir inferencia local en CPU o GPU de consumo mediante llama.cpp y runtimes compatibles (Ollama, entre otros). El modelo resuelve el problema de desplegar un asistente conversacional especializado en dominios de seguridad sin depender de infraestructura en la nube.
 
-El modelo cuenta con 1.942.653.248 parámetros (aproximadamente 1,94 mil millones) según los pesos en safetensors del checkpoint fuente, y se distribuye bajo licencia Apache-2.0. El ajuste fino se asocia al Trendyol Cybersecurity Instruction Tuning Dataset, lo que orienta el modelo hacia tareas conversacionales de seguridad: análisis de vulnerabilidades, explicación de conceptos, revisión de configuraciones y asistencia en tareas de respuesta a incidentes.
+El modelo cuenta con 1.942.653.248 parametros (aproximadamente 1,94 mil millones) y deriva de un ajuste fino sobre el checkpoint unsloth/Qwen3.5-2B, entrenado con el Trendyol Cybersecurity Instruction Tuning Dataset. La release GGUF incluye cuatro artefactos: BF16, Q8_0, Q4_K_M y un proyector multimodal BF16-mmproj, aunque el propio autor advierte que no hay pruebas documentadas de funcionamiento multimodal.
 
-La relevancia de esta ficha radica en que ofrece un punto de entrada práctico para evaluar cualitativamente un modelo especializado en ciberseguridad en hardware modesto, con builds de 1,31 GB (Q4_K_M), 2,08 GB (Q8_0) y 3,90 GB (BF16). No obstante, el autor no publica benchmarks, informes de regresión ni evaluaciones de seguridad, por lo que cualquier uso en producción debe tratarse con cautela y validación adicional.
+Es relevante ahora porque ofrece una via de bajo coste para experimentar con un modelo de ~2B especializado en ciberseguridad en hardware modesto, con licencia Apache-2.0 y compatibilidad con el ecosistema llama.cpp. No obstante, no se han publicado benchmarks, informes de regresion ni evaluaciones de seguridad, por lo que debe tratarse como material de evaluacion cualitativa y no como componente de produccion sin validacion previa.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5; detalles específicos no disponibles) |
-| Parámetros totales | 1.942.653.248 (~1,94 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | BF16, Q8_0, Q4_K_M |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer (derivada de Qwen3.5-2B; detalles de capas y atencion no disponibles) |
+| Parametros totales | 1.942.653.248 (~1,94 B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | BF16, Q8_0, Q4_K_M (archivos GGUF publicados); BF16-mmproj para proyector multimodal |
+| Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el checkpoint fuente) |
+| Formato de pesos | GGUF (llama.cpp) |
+| Tamano del repo | 8,0 GB |
+| Modelo base | reaperdoesntknow/Qwen3.5-2B-CyberSec (upstream: unsloth/Qwen3.5-2B) |
+| Dataset de ajuste | Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset |
+| Descargas | 7.450 |
+| Likes | 1 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint unsloth/Qwen3.5-2B, que a su vez pertenece a la familia Qwen3.5. La arquitectura subyacente es de tipo transformer, aunque la información disponible no detalla la configuración exacta de capas, cabezas de atención ni mecanismos de atención (por ejemplo, si emplea atención lineal o decodificación especulativa). El tamaño de 1,94 mil millones de parámetros sitúa al modelo en la categoría de modelos pequeños, aptos para despliegue en entornos con recursos limitados.
+La arquitectura subyacente es la de Qwen3.5-2B, un transformer de aproximadamente 1,94 mil millones de parametros. El checkpoint ha pasado por un ajuste fino supervisado (instruction tuning) sobre el Trendyol Cybersecurity Instruction Tuning Dataset, un conjunto orientado a instrucciones de ciberseguridad. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron fases de RLHF o DPO posteriores al ajuste supervisado.
 
-El entrenamiento se realizó mediante instruction tuning sobre el Trendyol Cybersecurity Instruction Tuning Dataset, un conjunto de datos orientado a instrucciones de ciberseguridad. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF o DPO. La model card del GGUF tampoco documenta innovaciones técnicas adicionales más allá del proceso de cuantización para llama.cpp.
+La release GGUF no aporta innovaciones tecnicas propias: es una conversion de pesos para inferencia local con llama.cpp. El autor menciona que la configuracion del modelo fuente incluye componentes de vision y que se incluye un proyector BF16-mmproj, pero advierte explicitamente que no hay una prueba documentada de funcionamiento multimodal, por lo que la capacidad de vision no debe darse por confirmada sin verificacion previa.
 
 ## Capacidades
 
-- Generación de texto conversacional orientada a dominios de ciberseguridad.
-- Asistencia en explicación de conceptos de seguridad, análisis de configuraciones y revisión de prácticas.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no disponibles (idiomas no especificados).
-- Capacidades multimodales: el checkpoint fuente incluye componentes de visión y se distribuye un proyector BF16-mmproj, pero el autor advierte que no hay una prueba de humo documentada; no debe asumirse soporte multimodal sin verificación.
-- Modo thinking: no documentado.
+- Generacion de texto conversacional en formato instruccion, orientada a dominios de ciberseguridad.
+- Respuesta a preguntas tecnicas sobre seguridad segun el dataset de ajuste (Trendyol Cybersecurity Instruction Tuning Dataset).
+- Ejecucion local en CPU y GPU de consumo mediante llama.cpp y Ollama.
+- Compatibilidad con el flag `--jinja` de llama.cpp para plantillas de chat.
+- Presunto soporte multimodal por la presencia del proyector BF16-mmproj y los componentes de vision en la configuracion fuente, pero sin verificacion documentada; no debe asumirse operativo.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingues: no disponible (idiomas no declarados).
+- Modo thinking explicito: no disponible (no documentado).
 
 ## Casos de uso
 
-- Evaluación cualitativa local del checkpoint: usar el build Q4_K_M (1,31 GB) para comparar respuestas del modelo con el BF16 (3,90 GB) y detectar degradación por cuantización en tareas de seguridad.
-- Formación y concienciación: generar explicaciones introductorias sobre conceptos como phishing, gestión de parches o segmentación de red, siempre con revisión humana del contenido.
-- Asistencia en triaje de alertas: el modelo puede redactar borradores de resumen de incidentes a partir de descripciones textuales, adecuado por su tamaño reducido para entornos con CPU.
-- Revisión de configuraciones: solicitar al modelo que señale posibles malas prácticas en fragmentos de configuración (por ejemplo, permisos excesivos en servicios), como apoyo a una revisión manual posterior.
-- Prototipado de chatbots de seguridad: integrar el modelo en un asistente interno de consultas frecuentes sobre políticas y procedimientos, con límites claros y sin capacidad de ejecutar acciones.
-- Experimentación en pipelines de CI/CD: usar el modelo para generar borradores de comentarios en revisiones de código relacionadas con seguridad, sujeto a validación humana antes de publicar.
-- Investigación sobre ajuste fino especializado: servir como referencia para estudiar cómo el instruction tuning en un dominio concreto afecta al comportamiento de un modelo base pequeño.
+- Evaluacion cualitativa local del checkpoint: comparar las salidas de BF16, Q8_0 y Q4_K_M sobre el mismo conjunto de prompts de seguridad para estimar la perdida de calidad por cuantizacion, usando llama.cpp en una maquina de sobremesa.
+- Laboratorio de formacion en ciberseguridad: generar explicaciones de conceptos (por ejemplo, vectores de ataque, hardening de sistemas) para que un instructor las revise y adapte, aprovechando que el modelo corre en hardware de bajo coste.
+- Asistente de documentacion interna de seguridad: redactar borradores de politicas, checklists o resumenes de procedimientos que un analista revisa antes de publicar, con el modelo ejecutandose en local para no exponer datos.
+- Prototipado de triaje de alertas: clasificar y resumir descripciones textuales de incidentes en un pipeline de pruebas, siempre con revision humana y sin conceder al modelo autoridad de decision.
+- Analisis de configuraciones y scripts en entorno aislado: pedir al modelo que explique o comente fragmentos de configuracion y que senale posibles riesgos, ejecutando cualquier comando sugerido solo en una sandbox revisada manualmente.
+- Base para experimentos de ajuste fino adicional: partir de este checkpoint cuantizado o de su fuente para tareas mas especificas (por ejemplo, un subdominio concreto de seguridad), dado su tamano reducido y su licencia Apache-2.0.
+- Demo educativa de despliegue local: mostrar en un taller como servir un modelo especializado con Ollama (`ollama run hf.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF:Q4_K_M`) en un portatil sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que la release no incluye informes de benchmark, regresion ni evaluacion de seguridad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,5 GB para Q4_K_M, 2,5 GB para Q8_0 y 4,5 GB para BF16, incluyendo overhead del runtime (estimación orientativa; no confirmada por el autor).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q4_K_M (por ejemplo, GTX 1650, RTX 3050); 6 GB o más para Q8_0; 8 GB o más para BF16.
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas con 4-8 GB de VRAM; también es viable en CPU.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, y otros runtimes compatibles con GGUF.
-- Latencia y throughput estimados: no disponibles.
+- VRAM/RAM estimada para inferencia segun el archivo publicado:
+  - BF16: 3,90 GB de pesos; requiere aproximadamente 4,5-5 GB de memoria considerando overhead de contexto y runtime.
+  - Q8_0: 2,08 GB de pesos; requiere aproximadamente 2,5-3 GB.
+  - Q4_K_M: 1,31 GB de pesos; requiere aproximadamente 1,8-2,5 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q4_K_M (por ejemplo, GTX 1650, RTX 3050); 6-8 GB para Q8_0 (RTX 3060, RTX 4060); 8 GB o mas para BF16 (RTX 3070, RTX 4060 Ti).
+- Cabe en GPU de consumo: si, en todas las cuantizaciones publicadas; Q4_K_M es el punto de partida recomendado por el autor.
+- Despliegue en CPU: viable gracias al tamano reducido; Q4_K_M puede ejecutarse en portatiles sin GPU dedicada.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, y cualquier runtime compatible con GGUF. No se documenta soporte especifico para vLLM o TGI en esta release.
+- Latencia y throughput: no disponibles (no se publican mediciones).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-CyberSec-GGUF | ~1,94 B | no disponible | Apache-2.0 | GGUF (BF16, Q8_0, Q4_K_M) | Ajuste fino en ciberseguridad; sin benchmarks publicados |
-| Qwen3.5-2B (base) | ~1,94 B | no disponible | no disponible | safetensors | Modelo base sin especialización; referencia de comparación |
-| Alternativas de ciberseguridad de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
+| Qwen3.5-2B-CyberSec-GGUF (este) | ~1,94 B | No disponible | Ciberseguridad (instruction tuning) | Apache-2.0 | GGUF |
+| unsloth/Qwen3.5-2B (upstream base) | ~1,94 B (segun modelo fuente) | No disponible | Generalista | No disponible en la informacion | No disponible en la informacion |
+| reaperdoesntknow/Qwen3.5-2B-CyberSec (checkpoint fuente) | ~1,94 B | No disponible | Ciberseguridad | Apache-2.0 | Safetensors (presumible, no confirmado) |
+
+No se dispone de datos de rendimiento comparado con alternativas de la misma categoria, por lo que la comparativa se limita a parametros, licencia y formato. No se han identificado en la informacion proporcionada otros modelos especializados en ciberseguridad de tamano comparable con datos verificables.
 
 ## Limitaciones y advertencias
 
-- No se han publicado benchmarks, informes de regresión ni evaluaciones de seguridad para esta release.
-- La cuantización puede alterar la calidad y el comportamiento respecto al checkpoint fuente; el autor lo advierte explícitamente.
-- Las instrucciones de seguridad generadas pueden ser incorrectas, inseguras o de doble uso; no deben ejecutarse comandos sin revisión y aislamiento.
-- No debe usarse el modelo como control de seguridad autoritativo ni como tomador de decisiones.
-- El soporte multimodal no está verificado: el proyector BF16-mmproj existe, pero no hay prueba documentada; conviene validar formato de prompt, versión del runtime y ruta de imagen antes de afirmar capacidades de visión.
-- Idiomas soportados no especificados; el rendimiento en castellano no está garantizado.
-- Longitud de contexto no documentada; no debe asumirse una ventana amplia.
-- Sesgos conocidos: no documentados, pero al derivar de un modelo base generalista y un dataset específico, pueden persistir sesgos del corpus original.
-- Riesgo de alucinación: presente como en cualquier modelo de este tamaño; especialmente crítico en recomendaciones de seguridad.
-- Licencia Apache-2.0 permite uso comercial, pero la ausencia de garantías y evaluaciones traslada la responsabilidad de validación al usuario.
+- No hay benchmarks, informes de regresion ni evaluaciones de seguridad publicados para esta release; el rendimiento real es desconocido.
+- La cuantizacion puede alterar la calidad y el comportamiento respecto al checkpoint fuente; las diferencias entre BF16, Q8_0 y Q4_K_M no estan medidas.
+- Riesgo de alucinacion en un dominio de alto impacto: las instrucciones de seguridad generadas pueden ser incorrectas, inseguras o de doble uso.
+- No ejecutar comandos generados por el modelo sin revision humana y aislamiento (sandbox, contenedor, entorno sin red).
+- No usar el modelo como control de seguridad autoritativo ni como tomador de decisiones en produccion.
+- La capacidad multimodal no esta verificada: el proyector BF16-mmproj esta presente, pero el autor no documenta prueba de funcionamiento; hay que validar proyector, formato de prompt, version de runtime y ruta de imagen antes de afirmar soporte.
+- Idiomas soportados no declarados; el comportamiento fuera del ingles (idioma presumible del dataset) no esta garantizado.
+- Longitud de contexto no documentada; no debe asumirse una ventana larga.
+- Sesgos conocidos: no documentados; el ajuste sobre un dataset unico de ciberseguridad puede estrechar el dominio y degradar el rendimiento generalista.
+- Licencia Apache-2.0 permite uso comercial, pero la responsabilidad sobre el uso de contenido de seguridad generado recae en el integrador.
+- El modelo tiene solo 1 like y 7.450 descargas; es un artefacto de la comunidad sin validacion externa amplia.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF
+- Repositorio GGUF: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF
 - Checkpoint fuente: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec
 - Modelo base upstream: https://huggingface.co/unsloth/Qwen3.5-2B
-- Dataset de instruction tuning: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset
-- Colección CIx de modelos de ciberseguridad: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models
+- Dataset de ajuste: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset
+- Coleccion CIx de modelos de ciberseguridad: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models

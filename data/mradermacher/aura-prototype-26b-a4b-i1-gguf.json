@@ -72,31 +72,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Ubuntu Yaru For Windows Cursors - RealWorld Graphics",
-      "url": "https://www.rw-designer.com/cursor-set/ubuntu-yaru-for-windows",
-      "snippet": "Published on June 15th 2024 under the Release to Public Domain license. The default set of cursors from the Linux Ubuntu …"
-    },
-    {
-      "title": "Linux Icons and Cursors - RealWorld Graphics",
-      "url": "https://www.rw-designer.com/tag/linux",
-      "snippet": "by nibbler 1110 Another Linux cursor set. A sprite sheet converted into cursors. Enjoy!"
-    },
-    {
-      "title": "Ubuntu Cursor for Windows 7/8/10/11 - DeviantArt",
-      "url": "https://www.deviantart.com/zaidog2302/art/Ubuntu-Cursor-for-Windows-7-8-10-11-896082161",
-      "snippet": "Oct 26, 2021 · Go to settings/personalization/themes/Mouse Cursor and select \"Ubuntu Cursor\". If the file have any problem, just …"
-    },
-    {
-      "title": "Bibata Modern Cursors for Windows - GitHub",
-      "url": "https://github.com/user-anant/Bibata-Modern-Cursors-Windows/",
-      "snippet": "Jan 5, 2025 · ☘️ Bibata is an open source, compact, and material designed cursor set that aims to improve the cursor experience …"
-    },
-    {
-      "title": "GitHub - quantum5/win2xcur: win2xcur is a tool that converts cursors ...",
-      "url": "https://github.com/quantum5/win2xcur",
-      "snippet": "win2xcurtheme converts a packaged Windows cursor theme with an INF installer into a directory of Xcursors, which can be used to …"
-    }
-  ]
+  "sources": []
 }

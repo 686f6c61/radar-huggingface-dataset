@@ -2,109 +2,111 @@
 
 ## Resumen
 
-Granite Vision 4.1 4B es un modelo de lenguaje y visión (VLM) desarrollado por IBM Research, publicado el 29 de abril de 2026 bajo licencia Apache 2.0. Se construye mediante fine-tuning sobre Granite-4.1-3B e incorpora un codificador visual y proyectores que elevan el total a aproximadamente 4.000 millones de parámetros (3,4B para el LLM y 0,6B para el codificador visual y proyectores). Su foco no es la conversación visual genérica, sino la extracción estructurada de información a partir de imágenes de documentos: gráficos, tablas y pares clave-valor semánticos.
+Granite-Vision-4.1-4B es un modelo de visión-lenguaje (VLM) desarrollado por IBM Research, diseñado específicamente para la extracción estructurada de información a partir de imágenes de documentos. Con aproximadamente 4.000 millones de parámetros totales (3,4B correspondientes al modelo de lenguaje y 0,6B al codificador visual más proyectores), se posiciona como una alternativa compacta a modelos frontera mucho más grandes para tareas de extracción de tablas, gráficos y pares clave-valor semánticos.
 
-El modelo resuelve un problema concreto en pipelines de documentación: convertir gráficos en CSV, resúmenes o código Python; tablas de maquetación compleja en JSON, HTML u OTSL; y valores clave a partir de esquemas de descripción sobre diseños heterogéneos. Todo ello con una huella de 4B parámetros, lo que lo posiciona como alternativa ligera a modelos frontera mucho mayores para tareas de extracción documental.
+El modelo se construye mediante fine-tuning sobre Granite-4.1-3B e incorpora un codificador visual y proyectores que lo habilitan para tareas image-to-text. Su enfoque principal son tres tareas de extracción documental: conversión de gráficos a formatos legibles por máquina (Chart2CSV, Chart2Summary, Chart2Code), extracción de tablas con layouts complejos a JSON, HTML u OTSL, y extracción de pares clave-valor basada en esquemas. Estas capacidades se activan mediante etiquetas de tarea simples en el mensaje del usuario, que la plantilla de chat expande automáticamente.
 
-Es relevante ahora porque se integra con Docling, la herramienta de procesamiento de documentos de IBM, y porque el método y los datos de entrenamiento (ChartNet, un dataset multimodal de un millón de ejemplos) están documentados en el paper asociado. La arquitectura sigue el patrón transformer multimodal con codificador visual, y el modelo conserva las capacidades de descripción de imágenes de Granite Vision 4.0 3B.
+La relevancia actual del modelo reside en su capacidad para integrarse en pipelines de procesamiento documental como Docling, ofreciendo comprensión visual profunda con un coste computacional reducido. Su licencia Apache 2.0 y su tamaño compacto lo hacen adecuado para despliegues en producción donde modelos frontera resultarían prohibitivos en términos de latencia o infraestructura. La metodología y el dataset ChartNet empleados se describen en el paper asociado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (LLM Granite-4.1-3B + codificador visual + proyectores), clase `granite4_vision` |
-| Parametros totales | 3.997.203.904 (aprox. 4B: 3,4B LLM + 0,6B vision encoder y proyectores) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se detallan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Ingles (`en`) |
+| Arquitectura | Vision-language model (VLM): LLM de 3,4B + codificador visual y proyectores de 0,6B, fine-tuneado sobre Granite-4.1-3B |
+| Parametros totales | 3.997.203.904 (~4B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria `transformers`, requiere `custom_code`) |
+| Formato de pesos | Safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un VLM compuesto por un LLM base (Granite-4.1-3B, 3,4B parametros) sobre el que se acoplan un codificador visual de 0,6B y proyectores que alinean las representaciones visuales con el espacio del lenguaje. La pipeline declarada es `image-text-to-text` y requiere cargar codigo personalizado (`custom_code`) en `transformers`. El modelo parte de Granite Vision 4.0 3B y extiende sus capacidades, de modo que los usuarios existentes pueden adoptarlo sin cambios en su flujo de trabajo.
+Granite-Vision-4.1-4B es un modelo de visión-lenguaje que combina un modelo de lenguaje de 3,4B parámetros (derivado de Granite-4.1-3B) con un codificador visual y proyectores que suman 0,6B parámetros adicionales. El modelo se obtiene mediante fine-tuning sobre la base Granite-4.1-3B, incorporando la capacidad de procesar imágenes y generar texto estructurado. La arquitectura sigue el paradigma estándar de los VLM, donde el codificador visual transforma la imagen en representaciones que se proyectan al espacio del LLM para su procesamiento conjunto con el texto.
 
-El entrenamiento se centra en tareas de extraccion estructurada y utiliza el dataset ChartNet, descrito en el paper "ChartNet: A Million-Scale, High-Quality Multimodal Dataset for Robust Chart Understanding" (arXiv:2603.27064). No se detallan en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion completa del dataset ni si se aplicaron etapas de RLHF o DPO. La innovacion principal es el uso de etiquetas de tarea en el mensaje de usuario (`<chart2csv>`, `<chart2code>`, `<chart2summary>`, `<tables_json>`, `<tables_html>`, `<tables_otsl>`) que la plantilla de chat expande automaticamente en el prompt completo, evitando instrucciones verbosas y estandarizando la salida.
+El entrenamiento se centra en tareas de extracción documental estructurada y utiliza el dataset ChartNet, un conjunto de datos multimodal a escala de millones de ejemplos de alta calidad para comprensión de gráficos, descrito en el paper asociado (arXiv:2603.27064). El modelo preserva y extiende las capacidades de Granite Vision 4.0 3B, lo que permite a los usuarios existentes adoptarlo sin cambios en su flujo de trabajo. No se dispone de información detallada sobre el número total de tokens de entrenamiento, la composición exacta del dataset ni sobre si se emplearon técnicas de RLHF o DPO.
+
+Una innovación destacable es el sistema de etiquetas de tarea: el modelo reconoce etiquetas como `<chart2csv>`, `<chart2code>`, `<chart2summary>`, `<tables_json>`, `<tables_html>` y `<tables_otsl>`, que la plantilla de chat expande automáticamente en el prompt completo, eliminando la necesidad de escribir instrucciones verbosas. Esto simplifica la integración en pipelines de producción y reduce la variabilidad en las entradas.
 
 ## Capacidades
 
-- Extraccion de graficos a CSV (`<chart2csv>`): genera una tabla CSV con cabeceras y valores numericos.
-- Extraccion de graficos a codigo Python (`<chart2code>`): produce codigo que recrea el grafico.
-- Extraccion de graficos a resumen (`<chart2summary>`): descripcion en lenguaje natural del grafico.
-- Extraccion de tablas a JSON (`<tables_json>`): estructura con dimensiones y celdas.
-- Extraccion de tablas a HTML (`<tables_html>`): marcado `<table>` completo.
-- Extraccion de tablas a OTSL (`<tables_otsl>`): marcado OTSL con etiquetas de celda y fusion.
-- Extraccion de pares clave-valor (KVP) basada en esquema: valores extraidos segun nombres y descripciones de claves, con salida JSON con diccionarios y arrays anidados.
-- Descripcion de imagenes en lenguaje natural (image-to-text).
-- Procesamiento de documentos completos y de tablas recortadas (cropped-table y full-page).
-- Integracion con Docling para enriquecer pipelines de procesamiento documental.
-- Soporte de conversacion multi-turno (tag `conversational`).
+- Extracción de gráficos a CSV: convierte gráficos de imágenes en tablas CSV con encabezados y valores numéricos.
+- Extracción de gráficos a código Python: genera código Python que recrea el gráfico original.
+- Extracción de gráficos a resumen: produce descripciones en lenguaje natural del contenido del gráfico.
+- Extracción de tablas a JSON: extrae tablas con layouts complejos a JSON estructurado con dimensiones y celdas.
+- Extracción de tablas a HTML: genera marcado HTML `<table>` a partir de imágenes de tablas.
+- Extracción de tablas a OTSL: produce marcado OTSL con etiquetas de celda y fusión.
+- Extracción de pares clave-valor (KVP): extrae valores basándose en nombres de claves y descripciones a través de diversos layouts documentales, generando JSON con diccionarios y arrays anidados.
+- Descripción de imágenes (image-to-text): genera descripciones detalladas en lenguaje natural a partir de imágenes.
+- Integración con Docling: se integra en pipelines de procesamiento documental para añadir comprensión visual profunda.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Modo thinking, visión o audio: dispone de visión; no se mencionan modos thinking ni audio.
 
 ## Casos de uso
 
-- Digitalizacion de informes financieros: extraer tablas de balances y cuentas de resultados desde imagenes de PDF a JSON o HTML, usando `<tables_json>` o `<tables_html>`, para alimentar bases de datos o hojas de calculo sin transcripcion manual.
-- Conversion de graficos de articulos cientificos a datos reutilizables: aplicar `<chart2csv>` sobre figuras de papers para recuperar las series numericas y reutilizarlas en analisis estadistico o replicaciones.
-- Generacion de codigo reproducible a partir de figuras: usar `<chart2code>` para obtener scripts Python que reconstruyan graficos de dashboards o informes, utiles en documentacion tecnica y auditoria.
-- Extraccion de formularios y documentos administrativos: emplear la extraccion KVP basada en esquema para recuperar campos como numero de factura, fecha, importe o titular a partir de disenos heterogeneos, con salida JSON anidada lista para validacion.
-- Enriquecimiento de pipelines RAG documentales: integrar el modelo con Docling para convertir tablas y graficos de PDFs en texto estructurado antes de la indexacion, mejorando la recuperacion sobre contenido visual.
-- Automatizacion de informes periodicos: procesar lotes de imagenes de graficos (`<chart2summary>`) para generar resumenes en lenguaje natural que acompanen a los datos en boletines o paneles.
-- Auditoria de documentos regulatorios: extraer tablas completas de paginas enteras (full-page) y comparar estructuras con TEDS frente a versiones previas para detectar cambios en maquetacion o contenido.
-- Descripcion accesible de imagenes: generar descripciones en lenguaje natural de figuras y diagramas para metadatos o textos alternativos.
+- Digitalización de informes financieros: el modelo puede procesar imágenes de páginas de informes anuales y extraer tablas de resultados en formato JSON o HTML, facilitando su integración en bases de datos o sistemas de análisis. Su especialización en layouts complejos lo hace adecuado para tablas con celdas fusionadas y estructuras jerárquicas.
+- Extracción de datos de gráficos en publicaciones científicas: investigadores pueden convertir gráficos de artículos en CSV o código Python reproducible mediante las etiquetas `<chart2csv>` y `<chart2code>`, agilizando la revisión sistemática y la reutilización de datos.
+- Automatización de la extracción de formularios y documentos administrativos: mediante la extracción de pares clave-valor basada en esquemas, el modelo puede identificar campos como nombres, fechas o importes en documentos escaneados con layouts variables, generando JSON estructurado listo para su validación.
+- Enriquecimiento de pipelines de Document AI con Docling: al integrarse con Docling, el modelo añade comprensión visual profunda a flujos existentes de parsing documental, permitiendo extraer tablas y gráficos que los motores tradicionales basados en reglas no capturan correctamente.
+- Generación de resúmenes de gráficos para accesibilidad: la tarea `<chart2summary>` produce descripciones en lenguaje natural de gráficos, útil para generar texto alternativo en documentos accesibles o para alimentar sistemas de lectura de pantalla.
+- Procesamiento de facturas y albaranes en entornos con recursos limitados: con solo 4B parámetros, el modelo puede desplegarse en infraestructura moderada para extraer tablas de líneas de detalle y pares clave-valor (proveedor, importe total, fecha) de documentos comerciales, ofreciendo una alternativa económica a modelos frontera.
+- Extracción de tablas de documentos PDF de múltiples dominios: el modelo ha sido evaluado en benchmarks como OmniDocBench y PubTablesV2 en configuraciones de página completa, lo que respalda su uso en la extracción de tablas de documentos heterogéneos sin necesidad de recortes manuales.
 
 ## Benchmarks y rendimiento
 
-La model card presenta resultados en formato grafico (imagenes), sin tablas numericas completas en el texto proporcionado. Los datos explicitos disponibles son los siguientes:
+La model card incluye gráficos de resultados (imágenes) para las siguientes evaluaciones, pero no se proporcionan los valores numéricos exactos en el texto disponible:
 
-| Benchmark | Tarea | Metrica | Resultado |
-|---|---|---|---|
-| VAREX | Extraccion KVP multimodal | Exact-match (zero-shot) | 94,2 % |
-| ChartNet test set | Chart2CSV y Chart2Summary | LLM-as-a-judge (GPT-4o), escala 0-100 | no disponible en texto (solo figura) |
-| TableVQA-Extract | Extraccion de tablas recortadas | TEDS | no disponible en texto (solo figura) |
-| OmniDocBench-tables | Extraccion de tablas en pagina completa | TEDS | no disponible en texto (solo figura) |
-| PubTablesV2 (cropped) | Extraccion de tablas recortadas | TEDS | no disponible en texto (solo figura) |
-| PubTablesV2 (full-page) | Extraccion de tablas en pagina completa | TEDS | no disponible en texto (solo figura) |
+- Chart extraction: evaluación con LLM-as-a-judge (GPT4o) sobre el test-set verificado de ChartNet, reportando puntuaciones medias (0-100) en Chart2CSV y Chart2Summary.
+- Table extraction: evaluación con TEDS (Tree-Edit-Distance-based Similarity) sobre TableVQA-Extract, OmniDocBench-tables y PubTablesV2, en configuraciones de tabla recortada y página completa.
+- Key-Value Pair extraction: se menciona una sección de benchmarks, pero los resultados no están disponibles en el texto proporcionado.
 
-No se han publicado en la informacion disponible los valores numericos de MMLU, HumanEval, GSM8K ni del resto de benchmarks de extraccion; las cifras solo aparecen en las figuras de la model card.
+No se han publicado resultados numéricos de benchmarks en la información textual disponible; los datos existen únicamente en formato de gráfico dentro de la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 4B parametros, en FP16 se requieren aproximadamente 8 GB solo para pesos, mas memoria para el codificador visual, el contexto y las activaciones; en cuantizacion de 8 bits rondaria los 4-5 GB y en 4 bits los 2,5-3 GB, aunque no se publican variantes cuantizadas oficiales.
-- GPU recomendadas: A100 (40/80 GB) o H100 para despliegues de alto throughput; RTX 4090 (24 GB) para inferencia comoda en FP16.
-- GPU de consumo: cabe en GPUs consumer con 12 GB o mas en FP16; en 8 GB podria requerir cuantizacion, no confirmada oficialmente.
-- Opciones de despliegue: `transformers` con `custom_code` (requisito explicito de la libreria), endpoints compatibles (`endpoints_compatible`) y despliegue en Azure (`deploy:azure`). No se confirma soporte oficial de vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con ~4B parámetros, en FP16 requeriría aproximadamente 8 GB solo para los pesos, más overhead de activaciones y del codificador visual; en cuantizaciones de 8 bits o 4 bits podría reducirse sustancialmente, pero no se confirman formatos de cuantización soportados.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada explícitamente; por tamaño, un modelo de ~4B es candidato a ejecutarse en GPUs de consumo con VRAM suficiente, pero no se aportan datos oficiales.
+- Opciones de despliegue: la librería indicada es transformers; la model card menciona compatibilidad con endpoints y despliegue en Azure (tag `deploy:azure`). No se confirman vLLL, llama.cpp, Ollama ni TGI.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos numericos comparativos con modelos alternativos (por ejemplo, otros VLM de ~4B para extraccion documental). La model card afirma que el modelo ofrece rendimiento comparable a modelos frontera mucho mayores en extraccion estructurada, pero sin cifras explicitas en el texto. Se indica, por tanto, que la comparativa cuantitativa no esta disponible.
+No se dispone de datos numéricos de benchmarks en texto para establecer comparaciones cuantitativas. La model card menciona que el modelo ofrece un rendimiento comparable a modelos frontera en benchmarks de extracción documental estructurada "a una fracción del número de parámetros", pero sin cifras concretas no es posible construir una tabla comparativa fiable.
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Granite Vision 4.1 4B | ~4B (3,4B LLM + 0,6B vision) | no disponible | Extraccion documental estructurada | Apache 2.0 |
-| Granite Vision 4.0 3B | no disponible | no disponible | Vision-lenguaje general | no disponible en esta ficha |
-| Modelos frontera citados en la model card | mucho mayores | no disponible | Proposito general | no disponible |
+| Granite-Vision-4.1-4B | ~4B | No disponible | Apache 2.0 | Hugging Face |
+| Granite Vision 4.0 3B | ~3B | No disponible | No disponible | Hugging Face (referenciado) |
+| Modelos frontera de extracción documental | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Idiomas: el modelo solo declara soporte de ingles (`en`); el rendimiento en castellano u otros idiomas no esta garantizado.
-- Riesgo de alucinacion: en tareas de extraccion de tablas, graficos y KVP, el modelo puede generar valores, filas o celdas inexistentes, especialmente con imagenes de baja calidad o maquetaciones atipicas; se recomienda validacion posterior.
-- Dependencia de codigo personalizado: requiere `custom_code` en `transformers` y no se documentan conversiones a formatos de inferencia habituales (GGUF, vLLM), lo que puede complicar el despliegue en entornos estandarizados.
-- Enfoque especializado: aunque conserva capacidades de descripcion de imagenes, no esta disenado como VLM conversacional general; su rendimiento fuera de las tareas de extraccion puede ser inferior al de modelos generalistas.
-- Contexto: no se publica la longitud de contexto, lo que impide planificar casos de documento muy largo con multiples paginas.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las dependencias del codigo personalizado y del LLM base.
-- Datos de benchmarks incompletos: los resultados de extraccion de tablas y graficos solo aparecen como figuras; no se dispone de cifras verificables en texto.
+- Idiomas: el modelo está entrenado y orientado principalmente al inglés; su rendimiento en otros idiomas no está documentado y podría degradarse significativamente.
+- Especialización: está optimizado para tareas de extracción documental estructurada (gráficos, tablas, KVP); su rendimiento en tareas generales de visión-lenguaje puede ser inferior al de modelos de propósito general.
+- Riesgo de alucinación: como todo modelo generativo, puede producir valores, estructuras o descripciones incorrectas en la extracción, especialmente en imágenes de baja calidad o layouts atípicos; se recomienda validación posterior en producción.
+- Longitud de contexto: no documentada, lo que impide evaluar su comportamiento en documentos de muchas páginas o conversaciones multi-turno largas.
+- Licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar los términos completos y las dependencias del modelo base Granite-4.1-3B.
+- Sesgos: no se documentan sesgos específicos en la información proporcionada; al entrenarse sobre datos documentales, podría heredar sesgos presentes en dichos datos.
+- Formato de salida: las tareas se activan mediante etiquetas específicas; un uso incorrecto de las mismas puede producir salidas no deseadas.
+- Cuantización: no se confirman formatos de cuantización soportados, lo que limita la planificación de despliegues de bajo consumo de memoria.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ibm-granite/granite-vision-4.1-4b
-- LLM base Granite-4.1-3B: https://huggingface.co/ibm-granite/granite-4.1-3b
+- Hugging Face: https://huggingface.co/ibm-granite/granite-vision-4.1-4b
+- Repositorio GitHub de IBM Granite: https://github.com/ibm-granite
 - Paper ChartNet: https://huggingface.co/papers/2603.27064
 - Dataset ChartNet: https://huggingface.co/datasets/ibm-granite/ChartNet
-- Organizacion IBM Granite en GitHub: https://github.com/ibm-granite
+- Modelo base Granite-4.1-3B: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Docling: https://github.com/docling-project/docling
-- Benchmark TableVQA: https://github.com/naver-ai/tablevqabench
-- Benchmark OmniDocBench: https://github.com/opendatalab/OmniDocBench
-- Dataset PubTablesV2: https://huggingface.co/datasets/kensho/PubTables-v2
-- Benchmark VAREX: https://udibarzi.github.io/varex-bench/
+- TableVQA-Extract: https://github.com/naver-ai/tablevqabench
+- OmniDocBench: https://github.com/opendatalab/OmniDocBench
+- PubTablesV2: https://huggingface.co/datasets/kensho/PubTables-v2
 - Paper TEDS: https://arxiv.org/abs/2208.00385
+- Paper referenciado arXiv:2603.11243: https://arxiv.org/abs/2603.11243
+- Paper referenciado arXiv:2502.09927: https://arxiv.org/abs/2502.09927
+- Paper referenciado arXiv:2406.04334: https://arxiv.org/abs/2406.04334
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 613,
+  "downloads_30d": 593,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
@@ -47,6 +47,67 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (656 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.817
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (656 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.243
+    },
+    {
+      "task": "typed decision",
+      "dataset": "decision-v7 development (1,264 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.873
+    },
+    {
+      "task": "typed decision",
+      "dataset": "decision-v7 development (1,264 questions; 8-bit, same Mac as bf16)",
+      "metric": "ECE, as served",
+      "value": 0.01
+    },
+    {
+      "task": "typed decision",
+      "dataset": "hard-v1 development (1,083 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.786
+    },
+    {
+      "task": "typed decision",
+      "dataset": "hard-v1 development (1,083 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.313
+    },
+    {
+      "task": "typed decision",
+      "dataset": "devtools-v1 development (1,074 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.746
+    },
+    {
+      "task": "typed decision",
+      "dataset": "devtools-v1 development (1,074 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.357
+    },
+    {
+      "task": "typed decision",
+      "dataset": "documents-v1 development (920 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.896
+    },
+    {
+      "task": "typed decision",
+      "dataset": "documents-v1 development (920 questions; 8-bit, same Mac as bf16)",
+      "metric": null,
+      "value": 0.173
+    }
+  ],
   "sources": []
 }

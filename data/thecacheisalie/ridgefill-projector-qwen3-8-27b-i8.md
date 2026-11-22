@@ -2,116 +2,109 @@
 
 ## Resumen
 
-RidgeFill-Projector-Qwen3.8-27B-i8 no es un modelo de lenguaje: es un conjunto de mapas lineales por capa (un "proyector") que acelera la fase de prefill de Qwen3.8-27B cuando se ejecuta en el fork de llama.cpp `Approximate-Science/llama.cpp-ridgefill`. Lo publica el repositorio TheCacheIsALie, con autoría de la técnica a cargo de Dylan Johnston y tcclaviger, y se distribuye como un único GGUF de 1.452.188.032 bytes (1,5 GB) en INT8. El archivo contiene 1.287.096.832 parámetros propios, independientes de los del modelo base.
+RidgeFill-Projector-Qwen3.8-27B-i8 no es un modelo de lenguaje, sino un conjunto de mapas de proyección por capa que aceleran la fase de prefill de Qwen3.8-27B en un fork específico de llama.cpp. Lo publica el usuario TheCacheIsALie bajo licencia Apache 2.0 y se apoya en el trabajo *RidgeFill: Training-Free Late-Layer Cache Fill for Faster Prefill* de Dylan Johnston y Robert P Smith (preprint, 2026). El artefacto contiene 48 mapas (capas 16 a 63) que predicen la entrada de cada capa superior a partir del estado que entra en la capa 16, evitando ejecutar esas capas para la mayoría de filas del prompt.
 
-El problema que ataca es el coste de tiempo hasta el primer token (TTFT) en contextos largos, donde el prefill domina la latencia. RidgeFill es un acelerador de prefill sin entrenamiento: las capas 0–15 se ejecutan para todas las filas del prompt, mientras que, para el resto de filas (salvo una cola exacta y un conjunto seleccionado de filas exactas), el proyector predice las entradas de las capas 16–63 a partir del estado oculto de la capa 15. La generación posterior al prompt es exacta.
+El objetivo es reducir el tiempo hasta el primer token (TTFT) en contextos largos sin reentrenar nada: los mapas se ajustan en forma cerrada con una sola pasada sobre texto de calibración. Según la model card, se obtiene una aceleración de 1,25× a 1,31× entre 16K y 120K tokens, con una degradación de 1,2 a 1,4 puntos en RULER y LongBench v2, con intervalos de confianza al 95 % que incluyen el cero.
 
-Su relevancia es doble: por un lado, ofrece ganancias medidas de entre 1,25× y 1,31× en TTFT para contextos de 16K a 120K tokens sobre 4× A100 PCIe 40 GB; por otro, cuantifica el coste en calidad, con degradaciones de 1,2 a 1,4 puntos en RULER y LongBench v2. Es material para quien ya sirve Qwen3.8-27B en llama.cpp y quiere reducir latencia de prefill aceptando una salida no idéntica a la del motor original.
+El paquete se distribuye como GGUF de 1,45 GB (1.287.096.832 parámetros según safetensors) que debe cargarse junto a un GGUF estándar de Qwen3.8-27B mediante el flag `--ridgefill` del fork. La generación posterior al prompt es exacta; solo el prefill se aproxima, y la salida no es idéntica a la de llama.cpp sin el parche.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mapas lineales ridge por capa (proyector de estados ocultos) más correcciones de estado Gated-DeltaNet por capa; no es un modelo de lenguaje, se carga junto a Qwen3.8-27B |
-| Parámetros totales | 1.287.096.832 (proyector); parámetros del modelo base: no disponible en la información proporcionada |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | Depende del modelo base (no disponible); el proyector tiene medidas publicadas hasta 120.000 tokens y no interviene con prompts de menos de 8.192 tokens |
-| Tipos de cuantización | INT8 (i8) para el proyector, con split 16; el modelo base se ejecuta en GGUF (medido con `Qwen3.8-27B-UD-Q4_K_XL.gguf`) |
-| Idiomas soportados | No disponible (los hereda del modelo base) |
-| Licencia | Apache-2.0 (aplicada también a los metadatos GGUF) |
-| Formato de pesos | GGUF (un único archivo: `ridgefill-projector-qwen3.8-27b-i8-S16.gguf`) |
-| Tamaño del archivo | 1.452.188.032 bytes (1,5 GB) |
-| SHA256 | 8646d41a5a28d60ef53cc5e1fee4b2bfb20d0775db88d3f89d0731ad9f6b629d |
-| Modelo base | Qwen/Qwen3.8-27B |
-| Motor compatible | Fork `Approximate-Science/llama.cpp-ridgefill` (flag `--ridgefill`); línea base comparada: llama.cpp upstream 1242be66f |
-| DOI de la técnica | 10.5281/zenodo.23179168 |
-| Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-26 |
+| Arquitectura | Mapas de proyección ridge por capa (no es un transformer; actúa sobre Qwen3.8-27B) |
+| Parametros totales | 1.287.096.832 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Prompts de 8.192 tokens o más para activarse; evaluado hasta 120.000 tokens |
+| Tipos de cuantizacion | int8 con una escala bf16 por cada 128 pesos y sesgo bf16; GGUF en formato Q8_0 |
+| Idiomas soportados | no disponible (heredados del modelo base Qwen3.8-27B) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (`ridgefill-projector-qwen3.8-27b-i8-S16.gguf`) y safetensors int8 (`proj8.L16` a `proj8.L63`, `correction.safetensors`, `rowsel.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-RidgeFill se apoya en un conjunto de transformaciones lineales ajustadas por capa ("ridge maps") más correcciones de estado para las capas Gated-DeltaNet del modelo base. La segmentación es explícita: split 16, es decir, las capas 0–15 se calculan de forma exacta para todas las filas del prompt y el proyector estima las entradas de las capas 16–63 a partir del estado oculto de la capa 15. Para preservar la fidelidad se mantienen exactas una cola final del prompt y un conjunto seleccionado de filas, de modo que la generación posterior al prompt es exacta y solo el procesamiento del contexto largo pasa por la aproximación.
+RidgeFill no entrena pesos: ajusta en forma cerrada un mapa ridge por cada capa superior (16 a 63) a partir de una única pasada sobre texto de calibración. Las capas 0 a 15 se ejecutan exactamente para todas las filas del prompt. Para el resto de filas, salvo una cola exacta y un conjunto seleccionado de filas exactas, los mapas predicen la entrada de las capas 16 a 63 desde el estado que entra en la capa 16; cada capa escribe su caché a partir de la predicción en lugar de ejecutarse completa, manteniendo sin cambios sus propias proyecciones de clave y valor (y, en una capa Gated DeltaNet, su actualización de estado). Los últimos miles de tokens del prompt y todos los pasos de decodificación ejecutan el modelo completo.
 
-La técnica es training-free: no se describe un entrenamiento con descenso de gradiente, ni datos de preentrenamiento, ni fases de RLHF/DPO. El ajuste se realizó específicamente para Qwen3.8-27B y se midió contra la revisión `4ca7207` de `unsloth/Qwen3.8-27B-GGUF` (`Qwen3.8-27B-UD-Q4_K_XL.gguf`), un detalle relevante porque los mapas están calibrados contra una cuantización concreta del modelo base. Mientras RidgeFill está activo, el fork rechaza modelos draft y MTP, por lo que no es combinable con decodificación especulativa en la configuración publicada. No se detalla en la información disponible la composición exacta de capas del modelo base ni el número de tokens usado para el ajuste.
+El GGUF contiene los 48 mapas en formato Q8_0 de llama.cpp, convertidos desde la release int8 con `convert_ridgefill_to_gguf.py`, más correcciones de estado terminal por capa que la configuración medida no utiliza (`--ridgefill-alpha 0`). La inspiración es DeepSeek-V4.1-Flash, donde la proyección se entrena dentro del modelo, y el Q3-8B-KVA-Projector de kishida, que la readaptó a Qwen3-8B con cabezas de clave y valor entrenadas. No se especifica en la información disponible el volumen ni la composición del corpus de calibración.
 
 ## Capacidades
 
-- Aceleración de prefill en contextos largos: reduce el TTFT entre 1,25× y 1,31× en los puntos medidos (16K, 32K, 65K y 120K tokens) sobre 4× A100 PCIe 40 GB.
-- Ejecución exacta para prompts cortos: por debajo de 8.192 tokens no se aplica la aproximación y el resultado coincide con el motor sin RidgeFill.
-- Generación exacta posterior al prompt: la aproximación se limita al procesamiento del contexto; la decodificación token a token no pasa por el proyector.
-- Modo de bajo consumo de VRAM: el proyector puede residir en VRAM o transmitirse desde el host, con 268 MiB a 1.732 MiB de VRAM extra según contexto.
-- Integración con llama.cpp: se carga mediante `--ridgefill` junto a un GGUF de Qwen3.8-27B sin modificar.
-- No incluye generación de texto, razonamiento, código, matemáticas, visión, tool calling, capacidades de agente ni multilingüismo propios: todas esas funciones las aporta el modelo base.
-- No dispone de modo thinking, audio ni procesamiento multimodal propio.
+- Aceleración del prefill de Qwen3.8-27B en llama.cpp: reduce el TTFT de 1,25× a 1,31× en contextos de 16K a 120K tokens.
+- Funciona con los mapas en VRAM o transmitidos desde host, con distinto coste de memoria adicional.
+- Decodificación exacta: todos los pasos de generación ejecutan el modelo completo.
+- Compatibilidad con prompts cortos: por debajo de 8.192 tokens la ejecución es exacta (no se aplica la aproximación).
+- No soporta modelos draft ni MTP mientras RidgeFill está activado (el fork los rechaza).
+- No aporta capacidades nuevas de generación, razonamiento, código, visión ni tool calling por sí mismo: estas dependen íntegramente de Qwen3.8-27B.
+- No es un modelo autónomo: requiere cargarse junto a un GGUF no modificado de Qwen3.8-27B.
 
 ## Casos de uso
 
-- RAG sobre documentación extensa: con prompts de 16K a 120K tokens, el proyector recorta el tiempo hasta el primer token entre un 25 % y un 31 %, lo que se traduce directamente en menor latencia percibida al inyectar muchos fragmentos recuperados en cada consulta.
-- Análisis de contratos o expedientes largos: para documentos que superan los 8.192 tokens, el pipeline mantiene la calidad de generación exacta y solo aproxima la lectura del contexto, aceptando una caída medida de 1,39 puntos en LongBench v2 con CoT.
-- Asistentes con historial de conversación extenso: al reenviar contexto acumulado en cada turno, el coste de prefill crece de forma no lineal; RidgeFill amortigua ese coste en despliegues con `llama-server` del fork.
-- Preguntas sobre bases de código en un servidor on-premise: útil cuando el repositorio se inyecta como contexto largo y el cuello de botella es la latencia de entrada, no la decodificación.
-- Procesamiento por lotes de resúmenes largos: en trabajos donde el TTFT domina el tiempo total por documento, el 1,31× a 65K tokens reduce el tiempo de pared de la flota sin cambiar el modelo.
-- Evaluación de contextos largos con RULER o LongBench: se puede reconstruir el mismo protocolo publicado para comprobar la degradación en el hardware propio antes de adoptar la técnica en producción.
-- Inferencia en servidores con VRAM justa: el modo "streamed from host" añade solo 268 MiB a 16K tokens (frente a 1.592 MiB en VRAM), lo que permite usarlo en despliegues donde no cabe el proyector completo en GPU.
+- Servidores de inferencia con prompts largos: desplegar el fork de llama.cpp con `--ridgefill` para reducir el TTFT en cargas con contextos de 16K a 120K tokens, donde la ganancia de 1,25× a 1,31× es más relevante.
+- Document QA y resumen sobre corpus extensos: al procesar documentos de decenas de miles de tokens, el prefill acelerado abarata la primera respuesta sin tocar la calidad de la generación posterior.
+- RAG con recuperación masiva: cuando se inyectan muchos fragmentos en el prompt, la reducción del coste de prefill mejora la latencia percibida en cada consulta.
+- Evaluación de agentes multi-turno con historial largo: el contexto acumulado se prefija más rápido, manteniendo la decodificación exacta para las respuestas.
+- Ajuste de capacidad en una sola A100 PCIe de 40 GB: elegir entre mapas en VRAM (hasta 3.014 MiB extra a 120K) o transmitidos desde host (hasta 1.732 MiB) según el margen de memoria disponible.
+- Investigación sobre aceleración de inferencia: usar los mapas y el código del repositorio de datos para reproducir los resultados del paper o adaptar la técnica a otros modelos base.
+- Despliegue en entornos con GPUs de menor VRAM: la variante transmitida desde host permite aplicar la aceleración con una huella de VRAM reducida a costa de algo de velocidad (1,19× a 1,30×).
 
 ## Benchmarks y rendimiento
 
-Medidas sobre 4× A100 PCIe 40 GB con CUDA. Línea base: llama.cpp upstream 1242be66f, mismos flags salvo RidgeFill.
+Medido en una A100 PCIe de 40 GB con CUDA. La referencia es llama.cpp upstream en el commit 1242be66f con los mismos flags, sin RidgeFill. El TTFT es el tiempo de prompt del servidor, mediana de tres peticiones en caliente.
 
-| Contexto | Aceleración TTFT (proyector en VRAM) | Aceleración TTFT (proyector desde host) | VRAM extra (VRAM / host) |
+| Contexto | Aceleración, mapas en VRAM | Aceleración, mapas desde host | VRAM extra (VRAM / host) |
 |---|---|---|---|
 | 16.384 | 1,25× | 1,19× | 1.592 / 268 MiB |
 | 32.768 | 1,30× | 1,27× | 1.802 / 478 MiB |
 | 65.536 | 1,31× | 1,30× | 2.270 / 944 MiB |
 | 120.000 | 1,28× | 1,29× | 3.014 / 1.732 MiB |
 
-| Benchmark | Sin RidgeFill | Con RidgeFill | Δ [IC 95 %] |
+| Benchmark | Stock | RidgeFill | Δ [IC 95 %] |
 |---|---|---|---|
-| RULER 16K (13 tareas × 20) | 85,69 | 84,51 | −1,19 [−3,13, +0,79] |
-| RULER 32K (13 tareas × 20) | 87,85 | 86,42 | −1,42 [−3,21, +0,35] |
-| LongBench v2, CoT oficial, longitud completa (503 ítems) | 38,57 | 37,18 | −1,39 [−5,17, +2,19] |
+| RULER 16K, 13 tareas × 20 | 85,69 | 84,51 | −1,19 [−3,13, +0,79] |
+| RULER 32K, 13 tareas × 20 | 87,85 | 86,42 | −1,42 [−3,21, +0,35] |
+| LongBench v2, CoT oficial, longitud completa, 503 ítems | 38,57 | 37,18 | −1,39 [−4,97, +2,19] |
 
-Concordancia posterior al prompt con el motor original, sobre 100 documentos de LongBench por longitud: top-1 del 94,6 % a 16K y del 93,6 % a 32K; KL mediana de 0,0040 y 0,0042 nats por token respectivamente. El autor advierte de que la salida no es idéntica a la de llama.cpp sin RidgeFill.
+Tras el prompt, la coincidencia de siguiente token con stock sobre 100 documentos de LongBench v2 por longitud es del 94,6 % a 16K y del 93,6 % a 32K, con KL mediana de 0,0040 y 0,0042 nats por token.
 
 ## Requisitos de hardware
 
-- VRAM del proyector: 1.592 MiB a 16K, 1.802 MiB a 32K, 2.270 MiB a 65K y 3.014 MiB a 120K si reside en VRAM; 268, 478, 944 y 1.732 MiB respectivamente si se transmite desde el host.
-- Hardware de referencia: 4× A100 PCIe 40 GB fue la configuración usada para todas las medidas publicadas; no hay datos para otras GPU.
-- VRAM del modelo base: no publicada. Como estimación a partir del nivel de cuantización empleado (Q4_K_XL sobre un modelo de 27B), los pesos rondarían los 16–17 GB, a los que habría que sumar caché KV, cuyo tamaño depende de detalles arquitectónicos del modelo base no disponibles.
-- GPU de consumo: una RTX 4090 de 24 GB podría alojar los pesos cuantizados, pero no hay medidas de este escenario ni garantía de que quepa la caché KV a 120K tokens; el proyector añadiría entre 1,5 y 3 GB en modo VRAM.
-- Despliegue: exclusivamente `llama-server` del fork `Approximate-Science/llama.cpp-ridgefill` con el flag `--ridgefill`; en la información disponible no se documenta compatibilidad con vLLM, TGI, Ollama ni llama.cpp upstream.
-- Limitación operativa: los modelos draft y MTP se rechazan mientras RidgeFill está activo, así que no se puede sumar decodificación especulativa.
-- Throughput y latencia de decodificación: no disponibles; las cifras publicadas cubren únicamente TTFT.
+- VRAM extra para los mapas: entre 1.592 y 3.014 MiB si residen en VRAM (16K a 120K de contexto), o entre 268 y 1.732 MiB si se transmiten desde host.
+- La VRAM total debe sumar la del GGUF de Qwen3.8-27B (por ejemplo, `Qwen3.8-27B-UD-Q4_K_XL.gguf` de unsloth) más la de los mapas.
+- GPU de referencia en las mediciones: A100 PCIe de 40 GB. No se han publicado mediciones en otras GPU en la información disponible.
+- Compatibilidad con GPU de consumo: no confirmada; depende del tamaño del GGUF base y del margen de VRAM tras cargarlo.
+- Despliegue: exclusivamente mediante el fork `Approximate-Science/llama.cpp-ridgefill` con `llama-server` y el flag `--ridgefill`; requiere compilar el fork y seguir `RIDGEFILL.md`.
+- No compatible con modelos draft ni MTP mientras RidgeFill está activo.
+- Latencia y throughput: solo se publica el TTFT (aceleración de 1,19× a 1,31×); no hay datos de tokens por segundo en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Alternativa | Mecanismo | Aceleración de prefill | Impacto en calidad | Combinable con RidgeFill |
-|---|---|---|---|---|
-| Este proyector (RidgeFill, split 16, INT8) | Predicción lineal de estados de las capas 16–63 desde la capa 15 | 1,25×–1,31× en TTFT | −1,19 a −1,42 puntos en RULER; −1,39 en LongBench v2 | No aplica |
-| llama.cpp upstream (sin RidgeFill) | Prefill exacto | 1,00× (referencia) | Ninguno | No aplica |
-| Modelos draft / MTP en llama.cpp | Decodificación especulativa | Acelera decodificación, no prefill | Depende del draft | No: el fork los rechaza con RidgeFill activo |
-| Otras variantes de proyector RidgeFill (otro split, otra cuantización) | Igual, con otros parámetros | No disponible | No disponible | No disponible |
+| Artefacto | Tipo | Base | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| RidgeFill-Projector-Qwen3.8-27B-i8 | Mapas de proyección int8/GGUF | Qwen3.8-27B | Mapas ridge en forma cerrada, sin entrenamiento | apache-2.0 | Hugging Face, 735 descargas |
+| Q3-8B-KVA-Projector (kishida) | Proyector retroadaptado | Qwen3-8B | Cabezas de clave y valor entrenadas | no disponible | no disponible |
+| DeepSeek-V4.1-Flash | Modelo con proyección integrada | propio | Proyección entrenada dentro del modelo | no disponible | no disponible |
 
-No se han encontrado en la información proporcionada proyectos equivalentes de aceleración de prefill sin entrenamiento para Qwen3.8-27B con los que comparar parámetros, contexto o licencia.
+La comparación con modelos de lenguaje completos del mismo tamaño no aplica: este artefacto no genera texto por sí mismo y su rendimiento debe evaluarse como complemento de Qwen3.8-27B.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto por sí solo y requiere un GGUF de Qwen3.8-27B y un fork concreto de llama.cpp; sin ambos no es utilizable.
-- La salida no es idéntica a la del motor original: la concordancia top-1 es del 94,6 % a 16K y del 93,6 % a 32K, con KL mediana de 0,0040 y 0,0042 nats por token. Cualquier flujo que dependa de reproducibilidad bit a bit se rompe.
-- Degradación de calidad medible aunque con intervalos de confianza amplios: las caídas de 1,19 a 1,42 puntos quedan cerca del ruido estadístico, pero la de LongBench v2 presenta un IC de [−5,17, +2,19], lo que exige validación propia antes de adoptarlo.
-- Los mapas están ajustados para Qwen3.8-27B y calibrados contra `Qwen3.8-27B-UD-Q4_K_XL.gguf` (revisión 4ca7207); usar otra cuantización del modelo base puede degradar la fidelidad sin que el autor publique medidas.
-- Sin ganancia por debajo de 8.192 tokens: los prompts cortos se ejecutan de forma exacta y no se benefician del proyector.
-- Incompatibilidad con decodificación especulativa y MTP mientras el flag está activo.
-- Dependencia de un fork no upstream de llama.cpp: implica mantenimiento propio, riesgo de divergencia con el proyecto principal y ausencia de soporte en herramientas estándar.
-- Coste en VRAM no despreciable en modo residente (hasta 3.014 MiB a 120K tokens).
-- Sesgos, comportamiento multilingüe y riesgos de alucinación: no documentados en la información disponible; los hereda del modelo base.
-- Licencia Apache-2.0, que permite uso comercial, pero conviene verificar aparte la licencia efectiva del modelo base Qwen3.8-27B.
-- Madurez: 0 descargas y 0 likes, publicación creada y actualizada el mismo día; sin validación de la comunidad ni datos de terceros.
+- La salida no es idéntica a la de llama.cpp estándar: la aproximación del prefill introduce una degradación medible de 1,2 a 1,4 puntos en RULER y LongBench v2, aunque los intervalos al 95 % incluyen el cero.
+- Solo acelera el prefill; la decodificación no gana velocidad y ejecuta el modelo completo.
+- Requiere el fork de llama.cpp: no funciona con llama.cpp upstream, vLLM, TGI, Ollama ni otras herramientas de despliegue.
+- Incompatible con modelos draft y MTP mientras está activado, lo que impide combinarlo con decodificación especulativa.
+- Prompts por debajo de 8.192 tokens no se benefician (ejecución exacta).
+- Los benchmarks se limitan a una A100 PCIe de 40 GB; el comportamiento en otras GPU no está documentado.
+- El repositorio tiene 0 likes y 735 descargas, y la publicación procede de un autor individual: conviene validar en el propio entorno antes de producción.
+- Los idiomas soportados no se declaran; dependen del modelo base Qwen3.8-27B.
+- La licencia Apache 2.0 cubre el artefacto, pero el uso comercial está sujeto también a la licencia del modelo base.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/TheCacheIsALie/RidgeFill-Projector-Qwen3.8-27B-i8
+- Repositorio de datos y código: https://github.com/Approximate-Science/ridgefill-data
 - Fork de llama.cpp: https://github.com/Approximate-Science/llama.cpp-ridgefill
-- Guía de uso (quick start, Qwen3.8-27B): https://github.com/Approximate-Science/llama.cpp-ridgefill/blob/main/RIDGEFILL.md
-- DOI de la técnica: https://doi.org/10.5281/zenodo.23179168
-- GGUF del modelo base usado en las medidas: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Instrucciones del fork: https://github.com/Approximate-Science/llama.cpp-ridgefill/blob/main/RIDGEFILL.md
+- Paper (preprint): https://doi.org/10.5281/zenodo.23890247
+- Nota técnica anterior: https://doi.org/10.5281/zenodo.23179168
+- GGUF base de referencia: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Perfil del autor: https://huggingface.co/TheCacheIsALie

@@ -56,11 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OSYNK — open model intelligence",
-      "url": "https://osynk.com/",
-      "snippet": "1,472 models ; +, LightOnOCR-3-4Blightonai +2, 4.54B/4.54B · dense, hybrid8/32 ; +, Huihui-Kolibri-1-BF16-abliterated-GGUFhuihui-ai, 78.1B/3.79B · 384×6+1s, GQA ..."
-    }
-  ]
+  "sources": []
 }

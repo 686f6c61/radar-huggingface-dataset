@@ -44,21 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LiquidAI/LFM2-2.6B-Exp · Hugging Face",
-      "url": "https://huggingface.co/LiquidAI/LFM2-2.6B-Exp",
-      "snippet": "LFM2-2.6B-Exp is an experimental checkpoint built on LFM2-2.6B using pure reinforcement learning. Specifically trained on instruction following, knowledge, and math, it delivers particularly strong performance compared to other 3B models. In particular, its IFBench score surpasses DeepSeek R1-0528 ..."
-    },
-    {
-      "title": "LFM2-2.6B-Exp - Liquid AI Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm2-2.6b-exp",
-      "snippet": "This model is deprecated. Use LFM2.5-2.6B for improved agentic capabilities and a 131K context window. LFM2-2.6B-Exp is an experimental checkpoint of LFM2-2.6B post-trained with pure reinforcement learning on instruction following, knowledge, and math."
-    },
-    {
-      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
-      "url": "https://huggingface.co/litert-community",
-      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
-    }
-  ]
+  "sources": []
 }

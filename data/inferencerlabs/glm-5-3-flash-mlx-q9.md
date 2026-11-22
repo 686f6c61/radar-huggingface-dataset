@@ -2,92 +2,111 @@
 
 ## Resumen
 
-GLM-5.3-Flash-MLX-Q9 es una cuantización en formato MLX del modelo multimodal GLM-5.3-Flash, desarrollado originalmente por Z.ai y publicado bajo el identificador `zai-org/GLM-5.3-Flash-BF16`. Este modelo pertenece a la familia GLM-5, liberada en agosto de 2026, y destaca por ser el primer modelo nativamente multimodal de dicha familia, con entrada de imagen y vídeo, razonamiento siempre activo, búsqueda web nativa y soporte de tool calling. La versión cuantizada aquí descrita ha sido generada por el usuario `inferencerlabs` mediante una modificación de MLX, y está pensada para ejecutarse en hardware Apple Silicon con memoria unificada.
+GLM-5.3-Flash-MLX-Q9 es una cuantización en formato MLX del modelo multimodal GLM-5.3-Flash-BF16, desarrollado originalmente por zai-org y redistribuido por inferencerlabs para su ejecución en hardware Apple Silicon mediante la librería MLX. El modelo cubre la tarea image-text-to-text, es decir, acepta entradas conjuntas de imagen y texto y genera respuestas conversacionales en inglés. La cuantización Q9 (aproximadamente 9 bits por peso) se presenta como prácticamente sin pérdida de precisión respecto al modelo base, con una perplejidad de 1,20312 frente a la misma cifra del BF16 original.
 
-El modelo base es un mixture-of-experts (MoE) de 320 mil millones de parámetros totales con 18 mil millones activos (320B-A18B), que combina 34 capas de atención lineal tipo Kimi-Delta con 11 capas de atención dispersa tipo DeepSeek, junto con 288 expertos y un mecanismo de hiperconexiones con restricción de manifold. Su longitud de contexto alcanza 1 millón de tokens, lo que lo hace adecuado para tareas que requieren ventanas muy largas. La cuantización Q9, según los datos de la model card, ofrece una pérdida de precisión casi nula respecto al modelo en BF16, con una perplexidad de 1.20312 y una precisión de token del 97.80 %.
+El interés de esta variante reside en que permite ejecutar un modelo multimodal de gran tamaño en un equipo de sobremesa con memoria unificada, sin depender de GPUs de centro de datos. El repositorio ocupa 353,7 GB y, según el autor, requiere aproximadamente 332,8 GiB de memoria para inferencia multimodal, con un rendimiento medido de unos 22,3 tokens por segundo en un Apple M3 Ultra.
+
+La información pública disponible es limitada: la model card no detalla la arquitectura interna, el número de parámetros, la longitud de contexto ni la licencia del modelo original. Esta ficha recoge únicamente los datos verificables a partir del repositorio y de la model card, y marca explícitamente como no disponibles aquellos campos que no se han publicado.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE híbrido: 34 capas de atención lineal (Kimi-Delta) + 11 capas de atención dispersa (DeepSeek, NoPE MLA con indexador lightning), 288 expertos, hiperconexiones con restricción de manifold |
-| Parametros totales | 320 mil millones (320B) |
-| Parametros activos | 18 mil millones (18B) |
-| Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | Q3.5, Q4.5, Q5.5, Q6.5, Q8.5, Q9 (esta ficha se centra en Q9) |
-| Idiomas soportados | Principalmente inglés (según el repositorio HF); el modelo base es multilingüe, aunque no se detallan los idiomas concretos |
-| Licencia | No disponible para este repositorio específico; el modelo base `zai-org/GLM-5.3-Flash-BF16` se distribuye bajo licencia MIT |
-| Formato de pesos | MLX (formato nativo de Apple Silicon, basado en safetensors) |
+| Arquitectura | no disponible (modelo transformer multimodal image-text-to-text; detalles no publicados en la información disponible) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Q9 (esta variante); el autor publica además variantes Q3.5, Q4.5, Q5.5, Q6.5 y Q8.5 |
+| Idiomas soportados | inglés (en) |
+| Licencia | no disponible |
+| Formato de pesos | MLX cuantizado (librería `mlx`); modelo base en BF16 |
+| Tamaño del repositorio | 353,7 GB |
+| Modalidad de entrada | imagen y texto (pipeline `image-text-to-text`) |
+| Modelo base | zai-org/GLM-5.3-Flash-BF16 |
+| Decodificador especulativo | compatible con MTP MLX de inferencerlabs (repositorio separado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3-Flash emplea una arquitectura MoE híbrida innovadora que combina dos mecanismos de atención: 34 capas de atención lineal estilo Kimi-Delta, que reducen el coste computacional en secuencias largas, intercaladas con 11 capas de atención dispersa estilo DeepSeek, que utilizan atención de múltiples cabezas latentes sin codificación posicional (NoPE MLA) tras un indexador ligero. Esta combinación permite manejar contextos de hasta 1 millón de tokens con una eficiencia notable. El modelo cuenta con 288 expertos en su capa MoE, de los cuales solo 18 mil millones de parámetros se activan por token, lo que reduce el coste de inferencia frente a un modelo denso de tamaño equivalente.
+No se han publicado detalles sobre la arquitectura interna del modelo base GLM-5.3-Flash en la información disponible. La model card únicamente indica que se trata de un modelo multimodal capaz de procesar imágenes y texto, y que el pipeline asociado es `image-text-to-text`. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-El entrenamiento se realizó sobre un corpus multimodal que incluye texto, imagen y vídeo, aunque no se han publicado detalles sobre el número total de tokens ni la composición exacta del dataset. Según los resultados web, Z.ai reporta que GLM-5.3-Flash supera a GLM 5.2 en benchmarks de codificación y tareas agénticas, con un coste de inferencia muy inferior al de modelos de frontera de mayor tamaño. La versión cuantizada aquí descrita se generó con una modificación de MLX, y la model card incluye métricas de calidad de cuantización que muestran una degradación mínima en Q9 respecto al modelo base.
+La innovación técnica documentada en esta variante es la cuantización Q9 realizada con una versión modificada de MLX. El autor reporta métricas de fidelidad frente al modelo BF16: perplejidad de 1,20312 (idéntica a la del base), precisión de tokens del 97,80 % y divergencia perdida del 9,60 %. Además, la model card menciona la compatibilidad con un decodificador especulativo MTP (multi-token prediction) en formato MLX, que puede habilitarse para mejorar el rendimiento de generación.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo: el modelo está diseñado para tareas de razonamiento de varios pasos, con un modo de pensamiento siempre activo.
-- Multimodalidad nativa: acepta entradas de imagen y vídeo además de texto, lo que permite tareas de comprensión visual, descripción de imágenes y análisis de vídeo.
-- Tool calling / function calling: soporta invocación de herramientas externas, lo que facilita la integración en agentes y flujos de automatización.
-- Búsqueda web nativa: puede realizar búsquedas en internet durante la generación, ampliando su conocimiento más allá de los datos de entrenamiento.
-- Soporte de agentes y multi-step reasoning: su arquitectura y entrenamiento lo hacen apto para planificación y ejecución de tareas complejas.
-- Capacidades multilingües: aunque el repositorio específico indica inglés, el modelo base es multilingüe, aunque no se especifican los idiomas exactos.
-- Ventana de contexto extremadamente larga (1M tokens): permite procesar documentos extensos, libros completos o conversaciones de larga duración en una sola pasada.
+- Generación de texto conversacional en inglés.
+- Comprensión de imágenes combinada con texto (image-text-to-text), incluyendo preguntas y respuestas sobre el contenido visual.
+- Inferencia multimodal en hardware Apple Silicon mediante MLX.
+- Compatibilidad con decodificación especulativa MTP para acelerar la generación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según los metadatos del repositorio.
+- Modo thinking, audio u otras modalidades: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Análisis de documentos extensos: gracias a su contexto de 1 millón de tokens, puede resumir o extraer información de libros técnicos, informes anuales o expedientes legales completos sin necesidad de dividirlos en fragmentos.
-- Asistente de codificación con tool calling: integrado en un IDE o pipeline de CI/CD, puede generar, revisar y depurar código, además de invocar herramientas como linters o ejecutores de pruebas.
-- Agente de atención al cliente multimodal: puede procesar capturas de pantalla, vídeos de errores o documentos adjuntos del usuario, y mantener conversaciones de larga duración con memoria completa.
-- Búsqueda web asistida: al combinar generación de texto con búsqueda en internet, puede responder preguntas que requieren información actualizada, citando fuentes en tiempo real.
-- Análisis de vídeo: su capacidad de entrada de vídeo permite resumir grabaciones de reuniones, extraer eventos clave o generar subtítulos descriptivos.
-- Automatización de tareas agénticas: con soporte de multi-step reasoning y tool calling, puede planificar y ejecutar flujos complejos como gestión de calendarios, envío de correos o interacción con APIs.
-- Investigación académica: para análisis de literatura científica, comparación de artículos y generación de resúmenes críticos, aprovechando el contexto largo y el razonamiento profundo.
+- Asistente local de análisis de imágenes: el modelo puede recibir una captura, un diagrama o una fotografía junto con una pregunta en texto y devolver una descripción o respuesta razonada, ejecutándose íntegramente en un Mac con memoria unificada suficiente.
+- Documentación técnica asistida: dado que procesa imágenes y texto, resulta adecuado para interpretar capturas de pantalla de interfaces, gráficos de monitorización o diagramas de arquitectura y generar explicaciones en inglés.
+- Prototipado de producto multimodal sin nube: equipos que necesiten validar funcionalidades de visión-lenguaje con requisitos de privacidad pueden desplegar esta variante en local, evitando enviar imágenes a servicios externos.
+- Investigación en cuantización: la tabla de perplejidad y precisión de tokens publicada por el autor permite estudiar el impacto de distintos niveles de bits (Q3.5 a Q9) sobre la calidad, usando esta variante Q9 como referencia casi sin pérdida.
+- Evaluación de decodificación especulativa: combinado con el decodificador MTP de inferencerlabs, sirve para medir ganancias de throughput en MLX con modelos multimodales grandes.
+- Generación de descripciones y alt-text: puede emplearse para producir texto alternativo en inglés a partir de imágenes en flujos editoriales o de accesibilidad, con revisión humana posterior.
+- Banchmarking de hardware Apple: con un rendimiento reportado de 22,3 tokens/s en M3 Ultra, es útil como carga de referencia para comparar configuraciones de memoria unificada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible para esta versión cuantizada. Sin embargo, la model card incluye métricas de calidad de cuantización que comparan diferentes niveles de precisión frente al modelo base BF16. Estos datos no son comparables con benchmarks de tareas, pero sirven para evaluar la degradación introducida por la cuantización:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor sí publica métricas de fidelidad de la cuantización y una medición de velocidad:
 
-| Cuantización (bpw) | Perplexidad | Precisión de token | Divergencia perdida |
-|---|---|---|---|
-| Q3.5 | 168.0 | 43.45 % | 72.57 % |
-| Q4.5 | 1.33593 | 91.65 % | 17.28 % |
-| Q5.5 | 1.23437 | 95.05 % | 17.28 % |
-| Q6.5 | 1.21875 | 96.65 % | 12.03 % |
-| Q8.5 | 1.21875 | 97.65 % | 9.92 % |
-| Q9 | 1.20312 | 97.80 % | 9.60 % |
-| Base (BF16) | 1.20312 | 100 % | 0.000 % |
+| Métrica | Q9 | Base (BF16) |
+|---|---|---|
+| Perplejidad | 1,20312 | 1,20312 |
+| Precisión de tokens | 97,80 % | 100 % |
+| Divergencia perdida | 9,60 % | 0,000 % |
 
-La cuantización Q9 presenta una perplexidad idéntica a la del modelo base y una precisión de token del 97.80 %, lo que indica una degradación mínima. Según la model card, fue probada en un Apple M3 Ultra con la aplicación Inferencer v2.3.5, alcanzando una velocidad de inferencia de aproximadamente 22.3 tokens por segundo con un uso de memoria de 332.8 GiB.
+| Métrica de inferencia | Valor |
+|---|---|
+| Hardware de prueba | Apple M3 Ultra |
+| Software | Inferencer app v2.3.5 |
+| Throughput multimodal | ~22,3 tokens/s |
+| Memoria utilizada | ~332,8 GiB |
 
 ## Requisitos de hardware
 
-- Memoria: la cuantización Q9 requiere aproximadamente 332.8 GiB de memoria unificada, según la prueba realizada en un M3 Ultra. Esto implica que solo es viable en equipos Apple Silicon de gama alta (M2 Ultra, M3 Ultra) o configuraciones con mucha RAM unificada.
-- GPU: no es compatible con GPUs NVIDIA o AMD de consumo estándar; está pensado exclusivamente para Apple Silicon con MLX.
-- Alternativas de cuantización: las versiones Q4.5 o Q5.5 reducen significativamente el uso de memoria (aunque no se proporcionan cifras exactas), a costa de una mayor degradación en precisión. Podrían caber en equipos con 128-192 GiB de RAM unificada.
-- Despliegue: el formato MLX se ejecuta mediante la librería MLX de Apple, o a través de aplicaciones como Inferencer (probada en la model card). También se puede usar con herramientas compatibles con MLX como `mlx-lm`.
-- Latencia y throughput: en M3 Ultra, se observaron ~22.3 tokens/s con la cuantización Q9. Para otras cuantizaciones o hardware, no hay datos disponibles.
+- VRAM/memoria estimada: aproximadamente 332,8 GiB para inferencia multimodal según la medición del autor; el repositorio ocupa 353,7 GB en disco.
+- GPU recomendadas: no aplica en el sentido habitual; MLX está diseñado para Apple Silicon. El único hardware validado en la información disponible es Apple M3 Ultra.
+- ¿Cabe en GPU de consumo? No en tarjetas con 24 GB o 48 GB. Requiere un sistema con memoria unificada de gran capacidad, muy por encima de lo habitual en equipos de consumo.
+- Opciones de despliegue: librería MLX y la aplicación Inferencer (v2.3.5 en las pruebas). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: ~22,3 tokens/s en modo multimodal sobre M3 Ultra; el uso del decodificador especulativo MTP compatible puede mejorar esta cifra, aunque no se publican números concretos.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados en la información proporcionada. El modelo GLM-5.3-Flash se posiciona como un MoE multimodal de 320B-A18B con contexto de 1M tokens, lo que lo sitúa en la categoría de modelos de gran tamaño con eficiencia de parámetros activos. Alternativas teóricas podrían ser DeepSeek-V3 o Qwen2.5-Max, pero no se han encontrado comparaciones directas en las fuentes consultadas. Por tanto, la comparativa se considera no disponible.
+No disponible. La información proporcionada no incluye datos de arquitectura, parámetros ni benchmarks de modelos comparables que permitan una comparación rigurosa. Como referencia interna, el propio autor publica variantes del mismo modelo con distintas cuantizaciones:
+
+| Variante | Perplejidad | Precisión de tokens | Divergencia perdida |
+|---|---|---|---|
+| Q3.5 | 168,0 | 43,45 % | 72,57 % |
+| Q4.5 | 1,33593 | 91,65 % | 17,28 % |
+| Q5.5 | 1,23437 | 95,05 % | 17,28 % |
+| Q6.5 | 1,21875 | 96,65 % | 12,03 % |
+| Q8.5 | 1,21875 | 97,65 % | 9,92 % |
+| Q9 | 1,20312 | 97,80 % | 9,60 % |
+| Base BF16 | 1,20312 | 100 % | 0,000 % |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se han documentado sesgos específicos en la información disponible; sin embargo, al ser un modelo entrenado con datos web, es probable que herede sesgos comunes de los corpus de internet.
-- Riesgo de alucinación: como todo modelo generativo, puede producir contenido falso o inventado, especialmente en tareas de razonamiento o búsqueda web. Se recomienda verificar las salidas críticas.
-- Limitaciones de idioma: aunque el modelo base es multilingüe, este repositorio específico solo declara inglés; el rendimiento en otros idiomas no está garantizado.
-- Restricciones de licencia: la licencia de este repositorio no está especificada. El modelo base se distribuye bajo MIT, lo que permite uso comercial, pero se debe confirmar la licencia exacta del repositorio cuantizado antes de su uso en producción.
-- Requisitos de hardware: la cuantización Q9 necesita más de 300 GiB de memoria, lo que limita su uso a estaciones de trabajo muy específicas. Las cuantizaciones más bajas reducen la memoria pero degradan la precisión.
-- Advertencia de uso: el autor del repositorio declara no ser el creador del modelo original y no se hace responsable de daños o inexactitudes derivadas de su uso.
+- Idiomas: el repositorio declara únicamente inglés; no hay evidencia de soporte multilingüe.
+- Licencia: no disponible. Antes de un uso comercial es imprescindible verificar la licencia del modelo base zai-org/GLM-5.3-Flash-BF16, ya que esta variante es una redistribución cuantizada de un tercero.
+- Autoría: inferencerlabs declara explícitamente no ser el creador ni propietario del modelo; no ofrece garantías sobre exactitud o adecuación contextual.
+- Riesgo de alucinación: inherente a los modelos generativos; el autor recomienda verificar la información antes de tomar decisiones importantes. No se documentan evaluaciones específicas de sesgo o alucinación.
+- Pérdida por cuantización: aunque Q9 se describe como casi sin pérdida, la precisión de tokens es del 97,80 % frente al 100 % del BF16, con una divergencia perdida del 9,60 %; en tareas sensibles conviene validar frente al modelo base.
+- Requisitos de memoria extremos: ~332,8 GiB de memoria unificada limitan el despliegue a configuraciones de gama muy alta (M3 Ultra con memoria ampliada u equivalentes).
+- Ecosistema restringido: formato MLX, sin soporte documentado en vLLM, llama.cpp, Ollama o TGI, lo que complica el despliegue en servidores GPU convencionales.
+- Detalles técnicos ausentes: no se publican parámetros, contexto, datos de entrenamiento ni benchmarks de calidad, lo que impide una evaluación completa previa a producción.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/inferencerlabs/GLM-5.3-Flash-MLX-Q9
-- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
-- Documentación de EmpirioLabs sobre GLM 5.3 Flash: https://docs.empiriolabs.ai/models/glm-5-3-flash
-- Guía de unsloth para ejecutar GLM-5.3-Flash localmente: https://unsloth.ai/docs/models/glm-5.3
-- Repositorio GitHub de runtime MLX para GLM-5.3-Flash: https://github.com/PipeNetwork/glm53-flash-mlx
-- Blog de kingy.ai con especificaciones y benchmarks de GLM-5.3: https://kingy.ai/blog/glm-5-3-specs-benchmarks-api-how-to-use/
-- Blog de EmpirioLabs sobre la API de GLM 5.3 Flash: https://empiriolabs.ai/blog/glm-5-3-flash-api
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
+- Decodificador especulativo MTP MLX (búsqueda): https://huggingface.co/models?search=inferencerlabs/glm-5.3-flash-mtp-mlx
+- Vídeos de demostración: https://youtube.com/xcreate
+- Aplicación Inferencer: https://inferencer.com
+- Librería MLX: https://github.com/ml-explore/mlx

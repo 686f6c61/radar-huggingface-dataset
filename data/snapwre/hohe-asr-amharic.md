@@ -2,115 +2,103 @@
 
 ## Resumen
 
-hohe-asr-amharic es un modelo de reconocimiento automatico del habla (ASR) especializado en amharico, publicado por el usuario snapwre en Hugging Face. Se trata de un ajuste fino con cabeza CTC sobre badrex/Ethio-ASR-multilingual-600M, un encoder wav2vec2-BERT de 606.104.800 parametros. El modelo convierte audio de amharico en texto en una sola pasada sobre la señal, sin generacion autoregresiva palabra a palabra, lo que segun su autor lo hace aproximadamente cinco veces mas rapido que un Whisper de precision similar y elimina las alucinaciones tipicas de los decodificadores generativos cuando no hay voz.
+hohe-asr-amharic es un modelo de reconocimiento automático del habla (ASR) especializado en amárico, desarrollado por el usuario snapwre y publicado en Hugging Face bajo licencia CC BY 4.0. Se trata de un fine-tuning del modelo base badrex/Ethio-ASR-multilingual-600M, con 606 millones de parámetros y arquitectura wav2vec2-bert con cabeza CTC. El modelo convierte audio en amárico a texto en escritura ge'ez en una sola pasada, sin generación autorregresiva token a token, lo que según el autor lo hace aproximadamente cinco veces más rápido que un Whisper de precisión similar y evita la generación de frases alucinadas en silencios.
 
-El entrenamiento se realizo sobre 880 horas de audio en amharico que cubren habla dialectal de cinco regiones, habla leida, broadcast y entrevistas, grabaciones telefonicas y conversacion espontanea. El modelo esta pensado para audio real: se entreno atravesando ruido, reverberacion de sala y conversiones a lineas telefonicas de 8 kHz tipo A-law, con clips de hasta un minuto. El autor declara un 16,11 % de WER y un 5,37 % de CER en su conjunto de test interno (hablantes no vistos en entrenamiento) usando el modelo de lenguaje de 5-gramos incluido en el repositorio.
+El modelo se entrenó con 880 horas de audio en amárico que incluyen habla leída, cinco dialectos regionales, grabaciones de radiodifusión y entrevistas, llamadas telefónicas y conversación extraída de internet. El entrenamiento contempla condiciones reales: ruido, reverberación de salas, líneas telefónicas de 8 kHz y clips de hasta un minuto. El autor declara un 16,1 % de WER y un 5,4 % de CER en su conjunto de test interno con hablantes no vistos en entrenamiento, cifras que incluyen un modelo de lenguaje de 5-gramas que se distribuye junto a los pesos.
 
-Su relevancia actual es doble. Por un lado, es uno de los pocos modelos abiertos especificamente orientados al amharico, un idioma con recursos limitados y habitualmente mal cubierto por los sistemas ASR multilingues. Por otro lado, sus numeros en habla dialectal (16,06 % de WER) y en audio telefonico de 8 kHz (16,87 %) lo situan por delante del modelo abierto de amharico mas fuerte que el autor pudo localizar (27,70 % de WER y 31,00 % en dialecto en el mismo conjunto de evaluacion), con la salvedad de que en conversacion espontanea de podcast el modelo rival es algo mejor.
+La relevancia actual del modelo radica en su especialización: frente a modelos multilingües genéricos, ofrece un rendimiento declarado notablemente superior en amárico (0,1604 WER en FLEURS am_et) con un coste computacional bajo, 606 M de parámetros, y un servidor HTTP abierto (hohe-serve) listo para despliegue en contenedor con cuantización int8 del procesador. Es la primera entrega de la familia Hohe del mismo autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | wav2vec2-BERT (extractor convolucional de audio mas encoder transformer) con cabeza de clasificacion CTC |
-| Parametros totales | 606.104.800 (unos 606 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | clips de audio de hasta 60 segundos; ventana de atencion del encoder no disponible |
-| Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors, sin variantes GGUF, int8 ni int4 |
-| Idiomas soportados | amharico (codigo `am`) unicamente |
+| Arquitectura | wav2vec2-bert con cabeza CTC (AutoModelForCTC) |
+| Parametros totales | 606.104.800 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (clips de audio de hasta un minuto según la model card) |
+| Tipos de cuantizacion | int8 para el procesador en el servidor hohe-serve; no se detallan otras cuantizaciones de pesos |
+| Idiomas soportados | am (amárico) exclusivamente |
 | Licencia | cc-by-4.0 |
-| Formato de pesos | safetensors (libreria `transformers`, clase `AutoModelForCTC`); incluye un modelo de lenguaje de 5-gramos en el directorio `lm/` |
-| Entrada de audio | 16 kHz mono, sin puntuacion ni capitalizacion en la salida |
-| Modelo base | badrex/Ethio-ASR-multilingual-600M |
-| Tamano del repositorio | 3,0 GB |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de `badrex/Ethio-ASR-multilingual-600M`, un encoder wav2vec2-BERT de 600 M de parametros, al que se anade una cabeza lineal CTC. No hay decodificacion autoregresiva ni vocabulario de generacion: la red produce directamente una secuencia de etiquetas por fotograma y el texto se obtiene con decodificacion greedy o con decodificacion por haz apoyada en un modelo de lenguaje. Sobre el checkpoint base se aplico un ajuste fino continuado, es decir, partiendo de un ajuste anterior del mismo autor en lugar de reiniciar desde el modelo original. El entrenamiento consistio en dos epocas sobre un 60 % fresco del conjunto de entrenamiento en cada pasada, repitiendo ademas los datos conversacionales, con tasa de aprendizaje 2e-5 y 300 pasos de calentamiento. La seleccion de checkpoints se hizo sobre datos de desarrollo combinando habla leida y conversacion.
+El modelo emplea una arquitectura wav2vec2-bert, un transformer de audio auto-supervisado, con una cabeza de clasificación CTC (Connectionist Temporal Classification) para la transcripción. La decodificación CTC realiza una única pasada sobre el audio en lugar de generar tokens de forma autorregresiva, lo que explica la ventaja de velocidad frente a modelos encoder-decoder como Whisper y su comportamiento conservador ante silencios. El modelo base es badrex/Ethio-ASR-multilingual-600M, sobre el que se aplicó un fine-tuning específico para amárico.
 
-Los datos suman 880 horas de amharico, filtradas previamente por ancho de banda, sonoridad, recorte (clipping), silencio y acuerdo entre la transcripcion original y la de un modelo independiente. La composicion declarada es: 477 horas de habla dialectal de cinco regiones, 283 horas de habla leida, 34 horas de broadcast y entrevistas, 38 horas grabadas por colaboradores mediante un bot de Telegram, 25 horas de conversacion con transcripciones acordadas por dos modelos independientes y 2 horas de conversacion corregida manualmente. Se mantuvieron deliberadamente ruido de fondo, eco de sala, audio telefonico de 8 kHz, dialectos y clips de hasta un minuto; se descarto audio demasiado limitado en banda, grabaciones recortadas, clips con poca voz y transcripciones claramente incorrectas. Un 30 % de los clips de entrenamiento pasaron por una ida y vuelta de 8 kHz A-law, lo que explica que el resultado en linea telefonica (16,87 % de WER con LM) quede cerca del conjunto limpio (16,11 %).
-
-El repositorio incluye un modelo de lenguaje de 5-gramos entrenado sobre texto amharico que, segun el autor, aporta alrededor del 14 % de la reduccion de errores de palabra. Sus dos pesos de interpolacion (`alpha` y `beta`) se ajustaron solo sobre datos de desarrollo y estan en `lm/decoder.json`. La decodificacion con el LM se realiza con `pyctcdecode` y requiere el binario de KenLM. El modelo emite una etiqueta `[AMH]` al inicio de la salida que debe eliminarse antes de usar el texto.
+El entrenamiento utilizó 880 horas de audio en amárico con diversidad de dominios: habla leída, cinco dialectos regionales, emisiones de radiodifusión, entrevistas, llamadas telefónicas y conversación de internet. Se entrenó de forma explícita con ruido, reverberación, audio telefónico a 8 kHz y clips de hasta un minuto. El autor no detalla en la información disponible el número de tokens, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO (no procede en un modelo CTC). Sí se distribuye un modelo de lenguaje de 5-gramas en `lm/am-5gram.bin` con pesos de decodificación ajustados (alpha 0,3 y beta 0,5) en `lm/decoder.json`, que según el autor aporta alrededor del 14 % de la reducción de errores de palabra. El modelo emite un tag `[AMH]` al inicio de la salida que debe eliminarse.
 
 ## Capacidades
 
-- Reconocimiento de voz en amharico con salida en escritura ge'ez, en una sola pasada sobre el audio completo del clip.
-- Robustez a audio telefónico de 8 kHz (A-law), ruido de fondo y reverberacion de sala, condiciones incluidas explicitamente en el entrenamiento.
-- Cobertura de habla dialectal de cinco regiones de Etiopia; el subconjunto evaluado de Addis Ababa, Gojjam y Wello obtiene 4,16 % de CER y 16,06 % de WER con LM.
-- Procesamiento de clips de hasta un minuto de duracion, lo que permite transcribir fragmentos largos sin segmentacion externa agresiva.
-- Decodificacion greedy sin modelo de lenguaje o decodificacion por haz con el 5-gramos incluido, con reduccion medible del error (por ejemplo, de 18,70 % a 16,11 % de WER en el test interno).
-- Comportamiento conservador ante silencio: al no ser autoregresivo, no genera frases inventadas cuando nadie habla.
-- No dispone de tool calling, function calling, capacidades de agente, vision, audio generation ni modo de razonamiento. Es exclusivamente un modelo de transcripcion.
-- No realiza puntuacion, mayusculas ni conversion de numeros a digitos: los numeros se escriben con letras (por ejemplo, «12» se devuelve como አስራ ሁለት), por lo que requieren postprocesado.
-- No gestiona hablantes solapados: asume una sola voz en cada instante.
+- Transcripción de voz a texto en amárico (escritura ge'ez) mediante CTC en una sola pasada.
+- Robustez ante condiciones reales: ruido, reverberación, líneas telefónicas de 8 kHz (A-law) y clips de hasta un minuto.
+- Cobertura de cinco dialectos regionales, incluyendo Addis Ababa, Gojjam y Wello según los conjuntos de evaluación.
+- Decodificación con modelo de lenguaje de 5-gramas integrable mediante pyctcdecode para reducir el WER.
+- Servicio HTTP listo para producción mediante hohe-serve, con transcripción en streaming y corte de audio largo en los instantes de menor energía.
+- No soporta tool calling, function calling, agentes, visión, audio de entrada multilingüe ni modo de razonamiento; es un modelo puramente ASR.
+- No genera puntuación ni mayúsculas, y escribe los números con letras.
 
 ## Casos de uso
 
-- Atencion al cliente por telefonia (IVR): el modelo esta entrenado con un 30 % de clips pasados por un codec 8 kHz A-law y rinde un 16,87 % de WER en esa condicion, por lo que puede transcribir llamadas entrantes para clasificarlas, enrutarlas o alimentar busquedas internas sin necesidad de un modelo distinto para telefonia.
-- Transcripcion de broadcast y entrevistas: las 34 horas de broadcast y entrevista del entrenamiento y los 4,16 % de CER en habla dialectal lo hacen adecuado para generar subtitulos y archivos indexables de radio y television etiope.
-- Generacion de conjuntos de datos ASR: al ser un modelo abierto con licencia CC-BY-4.0, puede usarse para pseudo-etiquetar horas de audio amharico y alimentar el entrenamiento de otros sistemas, revisando despues las transcripciones con el filtro de calidad correspondiente.
-- Busqueda por voz sobre archivos de audio: con decodificacion greedy y sin LM, la transcripcion es rapida y suficiente para indexar y buscar palabras clave en archivos historicos o periodisticos, donde no se requiere transcripcion literal perfecta.
-- Sistemas de dictado y captura de notas en campo: los clips de hasta un minuto permiten dictar informes breves en entornos con ruido, y el modelo devuelve texto en ge'ez que puede postprocesarse para eliminar la etiqueta `[AMH]` y convertir numeros.
-- Accesibilidad y documentacion de contenido oral: transcripcion de entrevistas, charlas y material educativo en amharico para publicar versiones textuales, con la ventaja de que el modelo no inventa contenido durante los silencios y genera menos texto espurio que un modelo generativo.
-- Borradores de transcripcion de podcast con revision humana: en conversacion espontanea el WER ronda el 47 %, lo que descarta el uso sin supervision, pero sigue siendo util para producir un borrador que una persona corrige, tarea en la que ahorra tiempo frente a la transcripcion manual.
-- Despliegue en el borde o en CPU: con 606 M de parametros y pesos de unos 2,4 GB en fp32, el modelo puede ejecutarse en servidores sin GPU para cargas por lotes de baja concurrencia.
+- Transcripción de llamadas de atención al cliente: el modelo está entrenado con audio telefónico a 8 kHz A-law y declara 0,1687 WER en condiciones de línea telefónica, por lo que puede integrarse en un IVR o en un sistema de analítica de llamadas para generar transcripciones indexables.
+- Subtitulado y archivado de emisiones de radio y televisión en amárico: el entrenamiento incluye grabaciones de radiodifusión y entrevistas, y el servidor hohe-serve trocea audio largo en los silencios para devolver texto de forma progresiva.
+- Búsqueda y recuperación sobre archivos de audio: con un WER declarado de 0,1811 en conversación no vista, las transcripciones son suficientemente precisas para indexar podcasts y permitir búsqueda por palabras clave, aunque el autor advierte que no son aptas para lectura sin revisión.
+- Generación de borradores de actas y transcripciones para revisión humana: el modelo sirve como primera pasada en flujos donde un editor corrige el texto, dado su bajo coste (606 M de parámetros) y su velocidad, aproximadamente cinco veces superior a un Whisper de precisión similar según el autor.
+- Procesamiento por lotes de corpus de habla amárica para investigación lingüística o entrenamiento de otros modelos: la licencia CC BY 4.0 permite el uso y la redistribución con atribución, y el formato safetensors es compatible con transformers.
+- Despliegue en infraestructura modesta: con 606 M de parámetros y cuantización int8 del procesador en hohe-serve, puede ejecutarse en contenedores Docker en instancias spot de AWS, como describe el repositorio del autor, sin necesidad de GPU de gran tamaño.
+- Normalización y conversión de cifras posterior a la transcripción: dado que el modelo escribe los números con letras, puede encadenarse con un postprocesador que convierta las formas verbales a dígitos para informes financieros o estadísticos.
 
 ## Benchmarks y rendimiento
 
-Los datos siguientes proceden de la model card del autor. Las metricas estan calculadas a nivel de corpus, tras la normalizacion habitual del amharico (homonimos ge'ez plegados y puntuacion eliminada). La columna greedy corresponde al modelo sin modelo de lenguaje; la columna +LM, con el 5-gramos incluido. El model-index declara los valores de FLEURS como no verificados.
+Resultados declarados por el autor (no verificados) sobre FLEURS am_et test y conjuntos internos. CER y WER a nivel de corpus tras normalización amárica (homófonos ge'ez plegados, puntuación eliminada).
 
-| Conjunto de test | Descripcion | CER | WER | CER +LM | WER +LM |
-|---|---|---|---|---|---|
-| Test interno del autor | 1.548 clips, 105 hablantes, ninguno en entrenamiento | 0,0589 | 0,1870 | 0,0537 | 0,1611 |
-| El mismo, por linea telefonica | 8 kHz A-law, condicion de IVR | 0,0633 | 0,1987 | 0,0573 | 0,1687 |
+| Conjunto de test | Descripción | CER | WER | CER +LM | WER +LM |
+|---|---|---:|---:|---:|---:|
+| Test interno | 1.548 clips, 105 hablantes no vistos | 0,0589 | 0,1870 | 0,0537 | 0,1611 |
+| Test interno por línea telefónica | 8 kHz A-law | 0,0633 | 0,1987 | 0,0573 | 0,1687 |
 | Dialecto | Addis Ababa, Gojjam, Wello | 0,0433 | 0,1732 | 0,0416 | 0,1606 |
-| FLEURS am_et | benchmark publico, habla leida | 0,0628 | 0,1786 | 0,0599 | 0,1604 |
-| Podcast corregido a mano | conversacion espontanea | 0,2991 | 0,4964 | 0,2979 | 0,4707 |
-| Conversacion reservada | episodios de podcast no vistos en entrenamiento | 0,0659 | 0,1959 | 0,0660 | 0,1811 |
+| FLEURS am_et | benchmark público, habla leída | 0,0628 | 0,1786 | 0,0599 | 0,1604 |
+| Podcast corregido a mano | conversación espontánea | 0,2991 | 0,4964 | 0,2979 | 0,4707 |
+| Conversación no vista | episodios de podcast no usados en entrenamiento | 0,0659 | 0,1959 | 0,0660 | 0,1811 |
 
-Valores de referencia declarados por el autor en el mismo conjunto de test y con el mismo sistema de puntuacion: el modelo abierto de amharico mas fuerte que pudo localizar obtiene 0,1052 de CER y 0,2770 de WER en el test interno, y 0,1327 de CER y 0,3100 de WER en dialecto. En conversacion espontanea de podcast ese modelo rival baja a 0,2865 de CER, ligeramente por delante de este. No se han publicado otros resultados de benchmarks en la informacion disponible.
+El model-index oficial declara para FLEURS am_et test un WER de 0,1604 y un CER de 0,0599 con el 5-grama, marcados como no verificados. El autor compara con el "modelo abierto de amárico más fuerte que pudimos encontrar", que obtiene 0,1052 CER y 0,2770 WER en el test interno y 0,1327 CER y 0,3100 WER en dialecto; ese modelo es mejor en podcast espontáneo (0,2865 CER) según el autor.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: unos 2,5-3 GB en fp32 con un clip corto, alrededor de 1,3-1,8 GB en fp16 y por debajo de 1 GB si se aplica cuantizacion dinamica int8. El repositorio ocupa 3,0 GB en disco.
-- Cabe con holgura en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4080, RTX 4090, asi como en tarjetas de 4-6 GB (GTX 1650, RTX 3050) si se usa fp16 o int8.
-- GPU de centro de datos recomendadas para lotes grandes o alta concurrencia: A100 40/80 GB, H100, L40S, A10G. Para una sola peticion no son necesarias; su ventaja es el throughput agregado.
-- Inferencia en CPU viable para cargas por lotes de baja concurrencia, con latencias mayores pero sin requisitos de VRAM.
-- Opciones de despliegue: `transformers` con `AutoModelForCTC` y `AutoProcessor` (ruta oficial documentada), `pyctcdecode` mas KenLM para decodificacion con el 5-gramos, PyTorch o `torch.inference_mode`, y exportacion a ONNX o TorchScript, que no esta documentada pero es factible en un encoder de este tipo. La model card incluye la etiqueta `endpoints_compatible`, por lo que deberia poder desplegarse en Hugging Face Inference Endpoints. No hay soporte documentado en llama.cpp, Ollama, vLLM ni TGI, formatos y motores orientados a decodificadores generativos.
-- Latencia y throughput: el autor indica que el modelo es aproximadamente cinco veces mas rapido que un Whisper de precision similar por su decodificacion en una sola pasada. No se publican medidas de RTF, latencia por clip ni throughput en clips por segundo.
+- VRAM estimada para inferencia: con 606 M de parámetros en fp32 se requieren aproximadamente 2,4 GB solo para los pesos; en fp16 unos 1,2 GB. La memoria adicional depende de la duración del audio y del tamaño de lote.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para fp16 con lotes pequeños; A100, H100 o RTX 4090 ofrecen margen amplio para lotes grandes y streaming.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 o superiores con 6-8 GB de VRAM; también es viable en CPU para transcripciones no interactivas.
+- Opciones de despliegue: transformers (AutoModelForCTC y AutoProcessor), pyctcdecode con el 5-grama, y el servidor propio hohe-serve en Docker con cuantización int8 del procesador y streaming de transcripción; el autor no menciona soporte nativo en vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: el autor afirma que es aproximadamente cinco veces más rápido que un Whisper de precisión similar, pero no publica cifras concretas de latencia ni de throughput en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Resultados declarados |
+| Modelo | Parámetros | Contexto / audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hohe-asr-amharic | 606 M | clips de hasta 60 s | amharico | CC-BY-4.0 | 16,11 % WER / 5,37 % CER en test interno con 5-gramos |
-| badrex/Ethio-ASR-multilingual-600M (modelo base) | 600 M | no disponible | multilingue etiope | no disponible | no disponible |
-| Whisper large-v3 | 1.550 M | ventanas de 30 s | multilingue, incluye amharico | licencia abierta de OpenAI | no disponible en la informacion proporcionada |
-| Mejor modelo abierto de amharico consultado por el autor (sin nombrar) | no disponible | no disponible | amharico | no disponible | 27,70 % WER / 10,52 % CER en el test interno; 31,00 % WER / 13,27 % CER en dialecto |
+| hohe-asr-amharic | 606 M | clips de hasta 1 min | 0,1604 en FLEURS am_et (con 5-grama) | CC BY 4.0 | Hugging Face, servidor hohe-serve |
+| Modelo abierto de amárico "más fuerte" citado por el autor | no disponible | no disponible | 0,2770 en test interno del autor | no disponible | no disponible (sin identificar en la información) |
+| badrex/Ethio-ASR-multilingual-600M (modelo base) | 600 M aprox. | no disponible | no disponible | no disponible | Hugging Face |
+| Whisper (referencia de precisión similar según el autor) | no disponible | 30 s por ventana | no disponible para amárico | MIT (Whisper original) | Hugging Face, múltiples runtimes |
 
-La comparacion no puede cerrarse con datos homogeneos: el autor no publica los resultados de Whisper ni del modelo base en su propio conjunto de evaluacion, y las cifras del modelo rival solo se citan de forma agregada, sin nombre ni configuracion. Todo lo anterior procede de la model card y no esta verificado de forma independiente.
+La comparación con Whisper se limita a la afirmación cualitativa del autor sobre velocidad y precisión similar; no se aportan cifras de WER de Whisper en amárico en la información disponible. El modelo abierto de referencia citado por el autor no se identifica por nombre en la model card.
 
 ## Limitaciones y advertencias
 
-- Conversacion espontanea: alrededor del 47 % de WER en audio de podcast. Es util para busqueda o para borradores que una persona corrige, no para transcripcion sin supervision.
-- Numeros: se escriben con letras por influencia del texto de entrenamiento. Cualquier sistema que necesite cifras debe convertirlas en un paso posterior.
-- Puntuacion y mayusculas: no las genera. Las frases vuelven como secuencias de palabras sin estructura grafica.
-- Hablantes solapados: el modelo asume una sola voz por instante. Dos personas hablando a la vez producen salidas degradadas.
-- Idioma: solo amharico. Audio en oromo, tigrinya o ingles no produce un error explicito, sino texto con apariencia amharica sin sentido, lo que complica la deteccion automatica de idioma incorrecto.
-- Alucinacion: el riesgo es bajo, ya que el modelo no es autoregresivo y no inventa frases durante el silencio, pero si puede producir salidas incorrectas en audio muy degradado o fuera de dominio.
-- Etiqueta de salida: el modelo escribe `[AMH]` al inicio del texto; hay que eliminarla antes de mostrar o almacenar la transcripcion.
-- Decodificacion con LM: requiere `pyctcdecode` y el binario de KenLM, lo que anade dependencias y complica un despliegue minimo; los pesos `alpha` y `beta` estan en `lm/decoder.json`.
-- Licencia: CC-BY-4.0 permite uso comercial, pero obliga a atribuir la autoria y a indicar la licencia, y no concede garantias.
-- Metricas sin verificar: el model-index marca los resultados de FLEURS como `verified: false` y todos los numeros proceden del propio autor.
-- Madurez del proyecto: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, es el primer modelo de la familia Hohe y no se ha publicado todavia validacion externa.
-- La busqueda web realizada no devolvio ninguna fuente relacionada con este modelo; los resultados obtenidos trataban de psicologia del desarrollo y no aportan informacion tecnica.
+- Conversación espontánea: alrededor del 47 % de WER en podcast, según el autor; útil para búsqueda o borradores, no para lectura sin supervisión.
+- Números: el modelo los escribe con letras (por ejemplo, "12" se devuelve como አስራ ሁለት) porque así aparece en su texto de entrenamiento; requiere postprocesado si se necesitan dígitos.
+- Puntuación y mayúsculas: no genera ninguna de las dos; las frases se devuelven como palabras sueltas.
+- Hablantes solapados: solo maneja una voz a la vez; dos personas hablando simultáneamente producen texto corrupto.
+- Otros idiomas: solo amárico; audio en oromo, tigriña o inglés produce texto con apariencia amárica sin sentido.
+- Tag de salida: el modelo antepone `[AMH]` al texto, que debe eliminarse.
+- Riesgo de alucinación: menor que en modelos generativos por la decodificación CTC, pero el autor advierte que en silencios no inventa frases; aun así, la salida en audio ruidoso puede contener errores.
+- Licencia CC BY 4.0: permite uso comercial con atribución; no se indican restricciones adicionales, pero conviene revisar los términos del modelo base badrex/Ethio-ASR-multilingual-600M.
+- Versiones: si se descargó antes del 5 de octubre de 2026, el tag v1.0 original carecía del fichero `lm/am-5gram.bin` y tenía alpha y beta nulos en `lm/decoder.json`; debe volver a descargarse. Los tags v1.0 y v1.0.1 actuales apuntan al conjunto completo y los pesos no cambiaron.
+- Sesgos: no se documentan sesgos específicos de género, edad o dialecto más allá de la cobertura declarada de cinco dialectos; el rendimiento en dialectos no listados no está cuantificado.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/snapwre/hohe-asr-amharic
+- Modelo en Hugging Face: https://huggingface.co/snapwre/hohe-asr-amharic
 - Modelo base: https://huggingface.co/badrex/Ethio-ASR-multilingual-600M
-- Conjunto de evaluacion publico citado: https://huggingface.co/datasets/google/fleurs (configuracion `am_et`)
-- Herramienta de decodificacion con modelo de lenguaje: pyctcdecode (biblioteca de Python, disponible en PyPI y en GitHub)
-- Resultados de evaluacion reproducibles: archivo `eval/results.json` dentro del repositorio del modelo
-- Configuracion del 5-gramos: archivo `lm/decoder.json` dentro del repositorio del modelo
-- Busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos no guardan relacion con el modelo.
+- Servidor hohe-serve: https://github.com/snapwre/hohe-serve
+- Dataset de evaluación FLEURS: https://huggingface.co/datasets/google/fleurs
+- Resultados de evaluación reproducibles: `eval/results.json` dentro del repositorio del modelo
+- Configuración del decodificador con 5-grama: `lm/decoder.json` dentro del repositorio del modelo

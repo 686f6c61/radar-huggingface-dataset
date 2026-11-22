@@ -2,96 +2,96 @@
 
 ## Resumen
 
-Qwen3.5-9B-USS-Emergent-i1-GGUF es la versión cuantizada con imatrix del modelo nightmedia/Qwen3.5-9B-USS-Emergent, publicada por mradermacher. Se trata de un modelo de 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) derivado de la familia Qwen3.5, afinado mediante SFT y LoRA sobre un modelo base de Qwen, con orientación explícita a razonamiento con cadena de pensamiento larga (long-CoT), código, matemáticas, STEM y escritura creativa de ficción. La licencia declarada es Apache 2.0.
+Qwen3.5-9B-USS-Emergent-i1-GGUF es una cuantizacion en formato GGUF, realizada por mradermacher, del modelo nightmedia/Qwen3.5-9B-USS-Emergent. Se trata de un modelo de lenguaje de 9.197.093.888 parametros (aproximadamente 9,2 mil millones) derivado de la familia Qwen3.5/Qwen3.6, afinado mediante SFT y LoRA y orientado a razonamiento con cadena de pensamiento larga (long-CoT), generacion de codigo, matematicas, STEM y escritura creativa de ficcion. La model card lo etiqueta como experimental y menciona tecnicas de destilacion (claude-distillation), fusion con mergekit y decodificacion especulativa por prediccion multi-token.
 
-El paquete incluye cuantizaciones GGUF en formato i1 (imatrix), pensadas para su uso con llama.cpp y derivados como Ollama o LM Studio. El autor del modelo base etiqueta el resultado como experimental y menciona capacidades de contexto extendido (etiquetas de 256k y 1M de contexto), soporte multilingüe en inglés, chino, japonés y español, y rasgos de destilación de Claude 4.6 según los tags del repositorio.
+El interes practico de esta publicacion es que ofrece el modelo base en una bateria amplia de cuantizaciones GGUF (desde Q2_K hasta Q6_K, incluyendo variantes IQ), lo que permite ejecutarlo en hardware de consumo con llama.cpp u Ollama. La model card declara soporte de contexto de 256k y 1M tokens, capacidades multilingues en ingles, chino, japones y espanol, y licencia Apache 2.0, lo que facilita su uso comercial.
 
-La relevancia de esta ficha reside en que permite ejecutar un modelo de ~9B con razonamiento y escritura creativa en hardware de consumo, a costa de las limitaciones propias de una cuantización agresiva y de un modelo base marcado como experimental. No se dispone de resultados de benchmarks publicados en la información proporcionada.
+Conviene subrayar que la informacion disponible procede casi exclusivamente de la model card del cuantizador y de las etiquetas del repositorio; no se han publicado resultados de benchmarks, detalles de composicion del dataset ni especificaciones cerradas de arquitectura mas alla de las inferidas por el nombre y las etiquetas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5; detalles internos no disponibles) |
-| Parámetros totales | 9.197.093.888 (~9,2B) |
-| Parámetros activos | No aplica (no es MoE según la información disponible) |
-| Longitud de contexto | Etiquetada como 256k y 1M en los tags del modelo base; no verificada en la información disponible |
-| Tipos de cuantización | i1-Q2_K, i1-IQ3_M, i1-Q4_K_S (en este repo); el repo estático incluye además Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ4_XS, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, small-IQ4_NL |
-| Idiomas soportados | Inglés (en), chino (zh), japonés (ja), español (es) |
+| Arquitectura | Transformer decoder-only de la familia Qwen3.5/Qwen3.6 (detalle exacto no disponible) |
+| Parametros totales | 9.197.093.888 (9,2 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 256k y 1M tokens segun etiquetas de la model card (no verificado) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; tambien quants estaticos en el repo hermano |
+| Idiomas soportados | en, zh, ja, es |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors/bf16 |
+| Formato de pesos | GGUF (cuantizado con imatrix); el modelo base en safetensors/bf16 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo base es un transformer de la familia Qwen3.5 con aproximadamente 9,2 mil millones de parámetros. El proceso de ajuste se describe mediante las etiquetas del repositorio como SFT (supervised fine-tuning) y LoRA, con énfasis en razonamiento con cadena de pensamiento larga (long-CoT), destilación de Claude 4.6 (claude-distillation) y datos orientados a código, matemáticas y STEM. Los tags también mencionan mergekit, multi-token-prediction y speculative-decoding, lo que sugiere que el modelo base pudo construirse mediante fusión de modelos y que se contemplan técnicas de decodificación especulativa, aunque no se detalla su implementación.
+La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del repositorio: se identifica como un modelo de la familia Qwen3.5 (con referencias cruzadas a Qwen3.6), decoder-only, con pesos en bf16 en el modelo base y afinado mediante SFT y LoRA. Las etiquetas mencionan tambien mergekit, lo que sugiere que el modelo base pudo construirse por fusion de modelos, y multi-token-prediction junto con speculative-decoding, lo que apunta a soporte o entrenamiento orientado a decodificacion especulativa. Se etiqueta como claude-distillation, indicando un posible proceso de destilacion a partir de trazas de un modelo tipo Claude.
 
-No se dispone de información sobre el número exacto de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO. El autor del modelo base lo etiqueta como experimental. La versión aquí descrita es una cuantización imatrix generada por mradermacher con llama.cpp, que preserva la arquitectura del modelo original pero reduce la precisión de los pesos; el archivo imatrix adjunto (0,1 GB) permite generar cuantizaciones propias.
+No se dispone del numero de tokens de entrenamiento, de la composicion del dataset, ni de si se aplico RLHF o DPO. La model card del cuantizador no aporta estos datos y el repositorio base (nightmedia/Qwen3.5-9B-USS-Emergent) no se ha incluido en la informacion proporcionada mas alla de su identificador. La cuantizacion se ha realizado con fichero imatrix, lo que mejora la calidad de las variantes IQ respecto a cuantizaciones sin matriz de importancia.
 
 ## Capacidades
 
-- Generación de texto conversacional e instruccional en inglés, chino, japonés y español.
-- Razonamiento con cadena de pensamiento larga (long-CoT) y modo de razonamiento explícito.
-- Generación de código y tareas de programación, según los tags de coding.
-- Matemáticas y STEM, según los tags de math y stem.
-- Escritura creativa y de ficción: generación de tramas, subtramas, escenas, continuación de escenas, escritura vívida y roleplaying.
-- Capacidades multilingües limitadas a los cuatro idiomas declarados.
-- Soporte de contexto largo según las etiquetas del modelo base (256k y 1M), no verificado en esta cuantización.
-- Posible soporte de tool calling y function calling: no confirmado en la información disponible.
-- Posible soporte de agentes y razonamiento multi-paso: no confirmado explícitamente.
-- El repositorio base se describe como modelo de visión; los archivos mmproj, si existen, estarían en el repositorio estático, no en este.
+- Generacion de texto conversacional e instruction-tuned.
+- Razonamiento con cadena de pensamiento larga (long-CoT) y modo de razonamiento explicito.
+- Generacion de codigo y tareas de programacion.
+- Matematicas y problemas STEM.
+- Escritura creativa: ficcion, generacion de trama y subtrama, continuacion de escenas, narrativa vivida, todos los generos y ciencia ficcion.
+- Roleplaying.
+- Capacidades multilingues en ingles, chino, japones y espanol.
+- Posible soporte de vision: la model card del cuantizador indica que es un modelo de vision y que los ficheros mmproj, si existen, estarian en el repositorio estatico; no se confirma su disponibilidad en este repositorio.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente, aunque las etiquetas de razonamiento y long-CoT lo hacen plausible.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible).
 
 ## Casos de uso
 
-- Asistente de escritura creativa y ficción: el modelo está afinado para generación de tramas, subtramas y continuación de escenas, por lo que puede usarse como copiloto literario en un editor o interfaz de chat, manteniendo coherencia en textos largos si se confirma el contexto extendido.
-- Razonamiento asistido en entornos de investigación: su orientación a long-CoT permite generar cadenas de razonamiento para problemas de matemáticas y STEM, útil en cuadernos de experimentación o herramientas de análisis.
-- Generación de código en local: con cuantización i1-Q4_K_S (5,6 GB) puede ejecutarse en una GPU de consumo y emplearse para autocompletado, generación de tests o explicación de fragmentos, integrándose en editores mediante llama.cpp.
-- Atención al cliente multilingüe: al cubrir inglés, chino, japonés y español, puede gestionar conversaciones multi-turno en esos idiomas; su tamaño permite desplegarlo en servidores modestos con Ollama o vLLM.
-- Prototipado de agentes conversacionales: aunque el soporte de tool calling no está confirmado, el modelo puede emplearse en bucles de razonamiento controlados por el orquestador para tareas de planificación y resumen.
-- Roleplaying y generación de personajes: los tags de roleplaying y fiction writing lo hacen adecuado para motores de narrativa interactiva y juegos de texto, ejecutándose en local para preservar privacidad.
-- Traducción asistida entre los cuatro idiomas declarados: puede usarse como borrador de traducción en pipelines internos, con revisión humana obligatoria dada la ausencia de benchmarks.
-- Experimentación educativa: su tamaño de ~9B y sus cuantizaciones ligeras (i1-Q2_K de 4,0 GB) permiten desplegarlo en portátiles para estudiar técnicas de razonamiento y cuantización.
+- Generacion de codigo en produccion: el modelo esta etiquetado para coding y puede integrarse en asistentes de programacion o pipelines de revision; su tamano de 9,2 B permite desplegarlo en una sola GPU o en estaciones de trabajo con cuantizacion Q4_K_M (5,9 GB) y latencia razonable.
+- Razonamiento matematico y STEM asistido: el modo long-CoT permite resolver problemas paso a paso en entornos educativos o de analisis tecnico, con la salvedad de que la cadena de pensamiento debe validarse.
+- Escritura creativa y narrativa: la model card destaca generacion de tramas, subtramas, continuacion de escenas y ficcion en todos los generos, lo que lo hace adecuado para herramientas de escritura asistida y generacion de borradores literarios.
+- Roleplaying y personajes conversacionales: la etiqueta roleplaying y el enfoque conversacional permiten construir chatbots de personaje con contexto largo.
+- Atencion al cliente multilingue: con soporte declarado de en, zh, ja y es, puede gestionar conversaciones multi-turno en esos idiomas; el contexto declarado de 256k/1M facilitaria historiales largos, aunque no se ha verificado su comportamiento real a esas longitudes.
+- Procesamiento de documentos largos: si el contexto de 256k se confirma, es viable resumir o extraer informacion de contratos, informes o codigo extenso en una sola pasada.
+- Despliegue local y experimental: al estar disponible en GGUF con cuantizaciones desde 4,0 GB, sirve para prototipado en portatiles con GPU de consumo y para investigacion sobre destilacion y fusion de modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización: i1-Q2_K ~4,0 GB, i1-IQ3_M ~4,6 GB, i1-Q4_K_S ~5,6 GB; a estos valores hay que sumar el overhead de contexto KV, que crece con la ventana utilizada.
-- GPU recomendadas: para i1-Q4_K_S basta una RTX 3060 de 12 GB o superior; para contextos largos se recomienda RTX 4090 (24 GB), A100 o H100 por margen de memoria y ancho de banda.
-- Compatibilidad con GPU de consumo: sí, en tarjetas con 8-12 GB para cuantizaciones Q2/IQ3/Q4; el modelo completo en bf16 (~18,4 GB) requiere al menos 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; vLLM y TGI no son la vía natural para GGUF, aunque pueden usarse con el modelo base en safetensors.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: aproximadamente 4,0 GB para i1-Q2_K, 5,9 GB para i1-Q4_K_M, 6,7 GB para i1-Q5_K_M y 7,7 GB para i1-Q6_K, segun los tamanos de fichero de la model card (sin contar overhead de contexto KV cache).
+- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 3060 de 12 GB, RTX 4070/4080 o RTX 4090 pueden alojar las cuantizaciones Q4-Q6; para bf16 completo (aproximadamente 18,4 GB solo de pesos) se necesitaria una GPU de 24 GB o superior (RTX 4090, A100, H100).
+- Cabe en GPU de consumo: si, en cuantizaciones Q4_K_M o inferiores con GPUs de 8-12 GB; las variantes Q5/Q6 requieren 8-12 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el modelo base es compatible con transformers; no se confirma soporte de vLLM o TGI para esta cuantizacion.
+- Latencia y throughput: no disponibles. El contexto declarado de 256k/1M incrementaria significativamente el consumo de KV cache y reduciria el throughput si se usa a longitudes extremas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-USS-Emergent-i1-GGUF (este) | ~9,2B | 256k/1M (etiquetado) | Apache 2.0 | GGUF | Cuantización imatrix de un modelo experimental |
-| Qwen3.5-9B-USS-Emergent (base) | ~9,2B | 256k/1M (etiquetado) | Apache 2.0 | safetensors/bf16 | Modelo original sin cuantizar |
-| Qwen3.5-9B-USS-Emergent-GGUF (estático) | ~9,2B | 256k/1M (etiquetado) | Apache 2.0 | GGUF | Cuantizaciones estáticas del mismo modelo base |
+| Qwen3.5-9B-USS-Emergent-i1-GGUF (este) | 9,2 B | 256k/1M (declarado) | Apache 2.0 | GGUF | Cuantizacion imatrix de un modelo afinado para razonamiento y ficcion |
+| nightmedia/Qwen3.5-9B-USS-Emergent | 9,2 B | 256k/1M (declarado) | Apache 2.0 | safetensors/bf16 | Modelo base sin cuantizar |
+| Qwen3.5-9B-USS-Emergent-GGUF (quants estaticos) | 9,2 B | 256k/1M (declarado) | Apache 2.0 | GGUF | Misma base, cuantizacion estatica sin imatrix |
 
-No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
+No se dispone de datos de benchmarks ni de modelos comparables de terceros en la informacion proporcionada para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como experimental por el autor del modelo base; no se garantiza estabilidad en producción.
-- La cuantización i1 reduce la precisión de los pesos; las cuantizaciones Q2/IQ3 pueden degradar razonamiento y coherencia en comparación con bf16.
-- No hay benchmarks publicados que permitan validar las capacidades declaradas (matemáticas, código, contexto largo).
-- Riesgo de alucinación inherente a modelos generativos de este tamaño, agravado por la falta de evaluación independiente.
-- El contexto de 256k/1M está etiquetado pero no verificado; el uso de ventanas muy largas incrementa la memoria KV y puede degradar la calidad.
-- Cobertura lingüística limitada a inglés, chino, japonés y español; el rendimiento en español no está medido.
-- El soporte de tool calling, agentes y visión no está confirmado para esta cuantización; los archivos mmproj, si existen, están en el repositorio estático.
-- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base y de los datos de destilación declarados.
-- El repositorio registra 0 descargas en el momento de la consulta, lo que limita la evidencia comunitaria sobre su comportamiento.
+- Modelo etiquetado como experimental: no debe asumirse estabilidad en produccion sin evaluacion propia.
+- No hay benchmarks publicados que respalden las capacidades declaradas (razonamiento, codigo, matematicas).
+- Riesgo de alucinacion inherente a los modelos de 9 B, especialmente en tareas de facto y en cadenas de pensamiento largas.
+- El contexto declarado de 256k/1M no esta verificado; el rendimiento real a longitudes extremas puede degradarse y el coste de KV cache es elevado.
+- Cobertura multilingue limitada a en, zh, ja y es; no se garantiza calidad en otros idiomas.
+- La etiqueta claude-distillation sugiere posible dependencia de datos generados por otro modelo, con implicaciones inciertas sobre sesgos y terminos de uso.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base y de los datos de destilacion.
+- El soporte de vision no esta confirmado en este repositorio; los ficheros mmproj, si existen, estarian en el repositorio estatico.
+- El repositorio ocupa 81,3 GB por incluir todas las cuantizaciones; conviene descargar solo la variante necesaria.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-USS-Emergent-i1-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.5-9B-USS-Emergent
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.5-9B-USS-Emergent-GGUF
-- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.5-9B-USS-Emergent-i1-GGUF
-- README de referencia para GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Quants estaticos: https://huggingface.co/mradermacher/Qwen3.5-9B-USS-Emergent-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.5-9B-USS-Emergent-i1-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

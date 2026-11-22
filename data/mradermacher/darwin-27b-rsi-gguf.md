@@ -2,114 +2,101 @@
 
 ## Resumen
 
-Darwin-27B-RSI-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo FINAL-Bench/Darwin-27B-RSI. El modelo original es, segun su propia model card, el resultado de aplicar Recursive Self-Improvement (RSI) sobre Darwin-27B-Opus: el ajuste se habria realizado utilizando unicamente señal generada por el propio modelo, sin respuestas escritas por humanos. Se trata, por tanto, de un derivado de un derivado: el repositorio que nos ocupa no entrena nada, solo convierte los pesos a formatos cuantizados de llama.cpp para su ejecucion en hardware de consumo.
+Darwin-27B-RSI es un modelo de lenguaje de 27.000 millones de parámetros desarrollado por FINAL-Bench, publicado originalmente en Hugging Face bajo licencia Apache 2.0. La versión aquí descrita es la cuantización estática en formato GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados. El modelo se presenta como un sistema de razonamiento con "recursive self-improvement" (RSI) a nivel de modelo, entrenado sin etiquetas humanas (label-free) y orientado a tareas de razonamiento complejo como GPQA y SuperGPQA.
 
-El interes tecnico esta en dos frentes. Por un lado, el pipeline de RSI como metodo de mejora sin supervision humana es un area de investigacion activa y poco documentada en modelos abiertos de esta escala. Por otro, la disponibilidad de cuantizaciones estaticas que van desde x-f16 hasta Q2_K permite desplegar un modelo de aproximadamente 27.000 millones de parametros en tarjetas graficas de 24 GB o incluso menos, algo relevante para quien quiera evaluar el modelo sin acceso a clústeres.
+La arquitectura subyacente se etiqueta como qwen3.5 en la model card, lo que sugiere una base derivada de la familia Qwen, con capacidades de "thinking" y cadena de pensamiento explícita. El modelo incorpora conceptos propios del autor como "decision-index", "typed-decisions", "jev" y "system-2", que apuntan a un enfoque de razonamiento estructurado y deliberado frente a respuestas impulsivas. Los idiomas declarados son inglés, coreano y multilingüe.
 
-La informacion publica disponible es muy limitada. No se ha publicado en los datos proporcionados ni la arquitectura exacta, ni el numero de tokens de entrenamiento, ni la longitud de contexto, ni los idiomas soportados, ni la licencia. Cualquier dato de ese tipo debe considerarse no disponible y requeriria consultar los repositorios originales de FINAL-Bench o del modelo Darwin-27B-Opus.
+La relevancia actual del modelo radica en su propuesta de auto-mejora recursiva sin supervisión humana y en la disponibilidad de cuantizaciones GGUF que lo hacen desplegable en estaciones de trabajo con GPU de consumo. No obstante, la información pública disponible es limitada: no se han publicado resultados de benchmarks en la información proporcionada, y la model card original del autor no está incluida en los datos de esta ficha.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (heredada de Darwin-27B-Opus; sin confirmar) |
-| Parametros totales | ~27B (segun la denominacion del modelo y el campo model size de repos similares del mismo autor) |
-| Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (base qwen3.5 según etiquetas de la model card) |
+| Parámetros totales | 26.895.998.464 (26,9 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card no la declara para este repositorio) |
-| Formato de pesos | GGUF (los pesos originales del modelo base estan en safetensors) |
-| Tipo de repositorio | cuantizacion estatica derivada, no entrenamiento |
-| Modelo de origen | FINAL-Bench/Darwin-27B-RSI |
-| Fecha de publicacion en Hugging Face | 2026-09-27 (segun metadatos del repositorio) |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, F16 |
+| Idiomas soportados | en, ko, multilingual |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura interna del modelo. El nombre y el tamano sugieren un transformer denso de aproximadamente 27.000 millones de parametros, pero no hay confirmacion de si emplea atencion completa, atencion lineal, mezcla de expertos u otra variante. Tampoco se documentan el numero de capas, dimensiones ocultas, tamano de vocabulario ni el mecanismo de atencion. Todo ello debe consultarse en los repositorios de FINAL-Bench, que no aparecen detallados en la informacion proporcionada.
+La información disponible indica que Darwin-27B-RSI es un transformer de 26,9 mil millones de parámetros con capacidades de razonamiento explícito ("thinking", "chain-of-thought", "system-2"). Las etiquetas de la model card lo vinculan a la arquitectura qwen3.5, aunque no se detalla la configuración exacta de capas, atención ni dimensiones ocultas. Tampoco se especifica si emplea atención lineal, decodificación especulativa u otras optimizaciones de inferencia.
 
-Respecto al entrenamiento, la unica afirmacion recogida es que Darwin-27B-RSI es el resultado de aplicar Recursive Self-Improvement sobre Darwin-27B-Opus, con cero respuestas escritas por humanos. Esto implica que el bucle de mejora (generacion de candidatos, evaluacion, filtrado y reentrenamiento) se habria alimentado exclusivamente de señal autogenerada. No se especifican el volumen de datos, la composicion del corpus, ni si hubo etapas de RLHF, DPO, RLVR u otra forma de optimizacion por preferencias. Este repositorio, en concreto, no realiza ningun tipo de entrenamiento: unicamente aplica cuantizacion estatica (indicada en la model card como quantize_version 2, output_tensor_quantised 1, convert_type hf) sobre los pesos ya existentes.
+El entrenamiento se describe mediante etiquetas como "no-human-labels", "label-free" y "recursive-self-improvement" / "model-level-rsi", lo que sugiere un proceso de auto-mejora recursiva sin supervisión humana directa. Se mencionan además conceptos como "decision-index", "typed-decisions" y "jev", que no se desarrollan en la información proporcionada. No se dispone del número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. Esta ficha no puede confirmar detalles técnicos del proceso de entrenamiento más allá de lo indicado en las etiquetas.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje de ~27B parametros, aunque no hay evaluaciones publicadas que la cuantifiquen.
-- Razonamiento y matematicas: no disponible; el pipeline de RSI sugiere un enfasis en tareas verificables, pero no esta confirmado.
-- Generacion de codigo: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declaran idiomas.
-- Capacidades multimodales (vision, audio): no disponible; no se menciona ninguna y los quants no incluyen proyector mmproj.
-- Modo de pensamiento explicito (thinking mode): no disponible.
-- Ejecucion local mediante llama.cpp y derivados: si, es la funcion principal de este repositorio.
+- Generación de texto conversacional multi-turno.
+- Razonamiento explícito con modo "thinking" y cadena de pensamiento.
+- Razonamiento científico y de dominio experto, orientado a benchmarks tipo GPQA y SuperGPQA.
+- Auto-mejora recursiva a nivel de modelo (RSI) según la propuesta del autor.
+- Razonamiento estructurado mediante "typed-decisions" y "decision-index" (sin documentación pública disponible).
+- Capacidades multilingües declaradas: inglés, coreano y multilingüe.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Evaluacion de tecnicas de Recursive Self-Improvement: el modelo es un caso practico para estudiar si un bucle de auto-mejora sin supervision humana produce ganancias medibles; se compararia Darwin-27B-RSI contra Darwin-27B-Opus en tareas verificables (matematicas, codigo) usando las cuantizaciones Q8_0 o x-f16 para minimizar el ruido de la cuantizacion.
-- Despliegue local en estacion de trabajo con GPU de 24 GB: con Q4_K_M o Q5_K_S, un modelo de ~27B entra en una RTX 3090 o RTX 4090, lo que permite prototipar asistentes de texto sin coste de API.
-- Generacion de texto asistida en entornos aislados (air-gapped): al ser GGUF y ejecutable con llama.cpp sin conexion, encaja en organizaciones que no pueden enviar datos a servicios en la nube.
-- Experimentacion academica con cuantizacion: la disponibilidad de 12 variantes (desde x-f16 hasta Q2_K e IQ4_XS) permite medir la degradacion de calidad por bits por peso en un mismo modelo, algo util para investigacion sobre compresion.
-- Servicio de chat de bajo volumen autoalojado: con Ollama o llama.cpp en modo servidor se puede exponer una API compatible con OpenAI para uso interno, asumiendo que no hay datos publicados de latencia.
-- Base para fine-tuning posterior: los pesos x-f16 o Q8_0 pueden servir como punto de partida para LoRA o ajustes completos antes de volver a cuantizar.
-- Comparacion de pipelines de cuantizacion: al existir tambien un Q4_K_M publicado por la propia organizacion FINAL-Bench, es posible contrastar el resultado de dos pipelines distintos sobre los mismos pesos.
+- Razonamiento científico asistido: el modelo está orientado explícitamente a benchmarks de preguntas científicas de nivel experto (GPQA, SuperGPQA), por lo que puede emplearse como asistente de revisión de hipótesis y resolución de problemas de física, química o biología en entornos de investigación.
+- Análisis deliberado con cadena de pensamiento: su modo "thinking" y enfoque "system-2" lo hacen adecuado para tareas que requieren descomposición explícita de problemas, como auditoría de argumentos o verificación de cálculos paso a paso.
+- Despliegue en estaciones de trabajo con GPU de consumo: las cuantizaciones Q4_K_M (16,6 GB) y Q5_K_M (19,3 GB) permiten ejecutarlo en GPUs de 24 GB de VRAM mediante llama.cpp u Ollama, útil para prototipado local sin depender de la nube.
+- Experimentación en auto-mejora de modelos: investigadores interesados en RSI y entrenamiento label-free pueden usar el modelo como base para reproducir o extender los experimentos del autor.
+- Asistencia multilingüe inglés-coreano: para equipos que trabajan con documentación o conversación en coreano e inglés, el modelo declara soporte para ambos idiomas.
+- Evaluación comparativa de razonamiento: dado su enfoque en benchmarks de razonamiento experto, puede integrarse en pipelines de evaluación interna para comparar estrategias de prompting deliberativo frente a modelos estándar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizacion no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y las busquedas realizadas no aportan cifras. No se debe asumir ningun rendimiento concreto sin consultar la documentacion del modelo base Darwin-27B-RSI o Darwin-27B-Opus.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones derivadas del recuento de parametros (~27B) y de las reglas habituales de tamano de llama.cpp, no datos publicados por el autor:
-
-- VRAM estimada para inferencia (solo pesos, sin cache KV):
-  - x-f16: ~54 GB
-  - Q8_0: ~29 GB
-  - Q6_K: ~22-23 GB
-  - Q5_K_M / Q5_K_S: ~19 GB
-  - Q4_K_M / Q4_K_S: ~16-17 GB
-  - IQ4_XS: ~15-16 GB
-  - Q3_K_L / Q3_K_M / Q3_K_S: ~13-15 GB
-  - Q2_K: ~10-11 GB
-- GPU recomendadas:
-  - FP16 y Q8_0: A100 80 GB, H100 80 GB, o dos GPU de 40-48 GB con reparto por capas.
-  - Q6_K y Q5_K_M: A100 40 GB, L40S 48 GB, RTX 6000 Ada 48 GB.
-  - Q4_K_M: RTX 3090, RTX 4090, RTX 4080 Super, A6000 48 GB con margen amplio.
-  - Q3_K y Q2_K: tarjetas de 12-16 GB (RTX 4070 Ti Super, RTX 4080, Tesla T4 16 GB) con contexto reducido.
-- Cabe en GPU de consumo: si. Q4_K_M en RTX 3090/4090 de 24 GB con contexto moderado; Q3_K_M o Q2_K en GPU de 12-16 GB si se limita la ventana de contexto.
-- Nota sobre cache KV: al desconocerse la longitud de contexto del modelo, no se puede estimar el consumo adicional. En modelos de 27B con contexto largo, la cache KV puede anadir varios GB y obligar a bajar de cuantizacion o a usar cuantizacion de KV.
-- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, LM Studio, koboldcpp, llamafile, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI admiten GGUF de forma experimental, pero el camino habitual para estos pesos es llama.cpp.
-- Latencia y throughput: no disponible. No hay mediciones publicadas en la informacion proporcionada.
+- VRAM estimada para inferencia (según cuantización):
+  - Q2_K: ~10,8 GB
+  - Q3_K_M: ~13,4 GB
+  - IQ4_XS: ~15,3 GB
+  - Q4_K_M: ~16,6 GB
+  - Q5_K_M: ~19,3 GB
+  - Q6_K: ~22,2 GB
+  - Q8_0: ~28,7 GB
+  - F16: ~53,8 GB (estimado a partir de los 26,9 B de parámetros)
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40 GB o H100 para Q8_0 y F16; GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) solo con Q2_K o Q3_K_S.
+- Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_M o inferiores en GPUs de 24 GB; Q6_K y Q8_0 requieren 24 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. También existe una variante con cuantizaciones ponderadas/imatrix en mradermacher/Darwin-27B-RSI-i1-GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formatos | Licencia | Rendimiento publicado |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Darwin-27B-RSI-GGUF | ~27B | no disponible | GGUF (12 quants) | no disponible | no disponible |
-| FINAL-Bench/Darwin-27B-RSI-GGUF | ~27B | no disponible | GGUF (Q4_K_M) | no disponible | no disponible |
-| FINAL-Bench/Darwin-27B-RSI | ~27B | no disponible | safetensors | no disponible | no disponible |
-| mradermacher/Eikos-27B-GGUF | ~27B | no disponible | GGUF | no disponible | no disponible |
-| mradermacher/Mars_27B_V.1-i1-GGUF | ~27B | no disponible | GGUF (imatrix) | no disponible | no disponible |
+| Darwin-27B-RSI (este) | 26,9 B | no disponible | Apache 2.0 | GGUF, safetensors | RSI label-free, razonamiento tipo system-2 |
+| Qwen2.5-32B-Instruct | 32,5 B | 128K (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | Base probable de la familia; contexto largo documentado |
+| Gemma-2-27B-it | 27 B | 8K | Gemma license | safetensors, GGUF | Tamaño comparable; licencia más restrictiva |
+| Mistral-Small-24B-Instruct | 24 B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa europea de tamaño similar |
 
-La comparacion se limita a tamano y disponibilidad de formatos porque no hay datos publicos de contexto, licencia ni evaluaciones para ninguno de los modelos listados. Eikos-27B y Mars_27B_V.1 son alternativas del mismo orden de magnitud distribuidas por el mismo autor, pero no pertenecen a la misma familia Darwin y no se han encontrado metricas comparables.
+La comparación con Qwen2.5-32B-Instruct se ofrece como referencia de la familia declarada en las etiquetas; no se dispone de datos que confirmen la relación exacta con qwen3.5. No hay benchmarks publicados de Darwin-27B-RSI que permitan comparar rendimiento de forma cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: la model card no especifica terminos de uso. Antes de cualquier uso comercial es obligatorio verificar la licencia en FINAL-Bench/Darwin-27B-RSI y, en su caso, en Darwin-27B-Opus. A falta de esa verificacion, debe asumirse que el uso comercial no esta autorizado.
-- Procedencia del ajuste: el modelo se ha mejorado con señal autogenerada y cero respuestas humanas. Esto dificulta predecir su comportamiento en dominios sensibles y aumenta el riesgo de deriva respecto a convenciones humanas de utilidad y seguridad.
-- Riesgo de alucinacion: no hay evaluaciones de fidelidad factual publicadas. En ausencia de datos, debe asumirse un riesgo estandar o superior al de modelos ajustados con supervision humana.
-- Degradacion por cuantizacion: Q2_K, Q3_K_S e IQ4_XS introducen perdidas notables de calidad en modelos de este tamano. Para evaluacion seria, usar x-f16, Q8_0 o, como minimo, Q5_K_M.
-- Idiomas: no se declara soporte de idiomas. El comportamiento en castellano es desconocido y deberia validarse empiricamente antes de usarlo en produccion.
-- Longitud de contexto desconocida: no se puede garantizar el manejo de conversaciones largas ni de documentos extensos, y no se puede dimensionar la cache KV.
-- Sin benchmarks ni evaluaciones de seguridad: no hay datos de sesgos, toxicidad, robustez frente a jailbreak ni comportamiento en tareas de agente.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad y mayor probabilidad de fallos no detectados en la conversion.
-- Fecha de publicacion en metadatos posterior a la fecha actual de redaccion; conviene verificar la integridad y autenticidad del repositorio antes de descargar pesos.
+- No se han publicado resultados de benchmarks en la información disponible, por lo que el rendimiento real no puede verificarse de forma independiente.
+- La model card original del autor no está incluida en los datos proporcionados; detalles clave (contexto, entrenamiento, evaluación) no están documentados aquí.
+- Riesgo de alucinación inherente a los modelos generativos; el modo "thinking" no garantiza corrección factual.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Limitaciones de contexto e idioma: el contexto máximo no está especificado; los idiomas declarados son inglés, coreano y multilingüe, sin detalle de cobertura.
+- Licencia Apache 2.0 permite uso comercial, pero las cuantizaciones GGUF son obra de un tercero (mradermacher); conviene verificar los términos del modelo base en FINAL-Bench/Darwin-27B-RSI.
+- Las etiquetas "recursive-self-improvement" y "model-level-rsi" son afirmaciones del autor sin validación independiente en la información disponible; deben tratarse con cautela en producción.
+- El tamaño del repositorio (186,3 GB) refleja el conjunto completo de cuantizaciones; descargar solo el archivo GGUF necesario.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Darwin-27B-RSI-GGUF
-- Modelo base (RSI, safetensors): https://huggingface.co/FINAL-Bench/Darwin-27B-RSI
-- GGUF Q4_K_M publicado por la organizacion original: https://huggingface.co/FINAL-Bench/Darwin-27B-RSI-GGUF
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Peticiones de cuantizacion y preguntas frecuentes: https://huggingface.co/mradermacher/model_requests
-- Alternativa del mismo autor y tamano (Eikos-27B): https://huggingface.co/mradermacher/Eikos-27B-GGUF
-- Alternativa del mismo autor y tamano (Mars 27B V.1): https://huggingface.co/mradermacher/Mars_27B_V.1-i1-GGUF
+- Cuantización GGUF: https://huggingface.co/mradermacher/Darwin-27B-RSI-GGUF
+- Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Darwin-27B-RSI-i1-GGUF
+- Modelo base: https://huggingface.co/FINAL-Bench/Darwin-27B-RSI
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Darwin-27B-RSI-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre calidad de cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
