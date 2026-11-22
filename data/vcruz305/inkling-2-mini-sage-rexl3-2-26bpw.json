@@ -5,7 +5,7 @@
   "author": "vcruz305",
   "url": "https://huggingface.co/vcruz305/Inkling-2-Mini-SAGE-REXL3-2.26bpw",
   "created_at": "2026-11-21T08:06:53.000Z",
-  "updated_at": "2026-11-21T08:07:36.000Z",
+  "updated_at": "2026-11-21T14:12:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,8 +32,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 4176399744,
   "parameters_human": "4.18B",
@@ -45,7 +45,7 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": true,
+  "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,

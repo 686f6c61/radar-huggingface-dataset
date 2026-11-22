@@ -2,87 +2,99 @@
 
 ## Resumen
 
-Qwen3.8-27B-pi-adapted-MLX-Attention8-BF16-Recurrence es una conversión a formato MLX del modelo Qwen3.8-27B, publicada por el usuario Shiftedx. Se trata de una cuantización mixta que combina módulos afines de 8 bits y 4 bits con módulos de recurrencia en BF16, e incorpora la torre de visión de Qwen junto con un sidecar MTP nativo en BF16. El paquete fusiona previamente el adaptador pi de harness-hub sobre la base BF16 de Qwen antes de cuantizar, y conserva el tokenizer y la plantilla de chat del adaptador.
+Shiftedx/Qwen3.8-27B-pi-adapted-MLX-Attention8-BF16-Recurrence es una adaptacion del modelo Qwen3.8-27B de Qwen (Alibaba) realizada por el usuario Shiftedx, publicada en Hugging Face en noviembre de 2026. Se trata de una fusion (merge) de un LoRA denominado "pi-adapted" (publicado por harness-hub) sobre los pesos BF16 originales de Qwen3.8-27B, posteriormente convertida al formato MLX para su ejecucion en hardware Apple Silicon. El resultado incorpora vision, un sidecar MTP (multi-token prediction) nativo en BF16 y una configuracion de atencion particular ("Attention8") junto con recurrencia en BF16.
 
-El interés de esta publicación es fundamentalmente práctico: ofrece una ruta de ejecución en Apple Silicon mediante MLX-LM y MTPLX para un modelo de 27.356 millones de parámetros, con un esquema de cuantización híbrido que busca preservar precisión en las capas recurrentes mientras reduce el coste de memoria en el resto de la red. No obstante, el propio autor advierte de que se trata de una cuantización sin editar que solo ha superado comprobaciones locales de carga de texto y un smoke test corto, quedando pendientes la inferencia de visión, el rendimiento en contexto largo y la paridad de decodificación especulativa.
+El modelo resuelve el problema de disponer de una variante de Qwen3.8-27B optimizada para inferencia local en Macs con chip M-series, manteniendo el pipeline de decodificacion especulativa mediante el draft model DFlash2. Con aproximadamente 27.360 millones de parametros y un tamano de repositorio de 23,8 GB (unos 22 GiB para el modelo objetivo), esta pensado para despliegues en una sola maquina consumer de gama alta (probado en un M4 Max con 64 GiB).
 
-La relevancia es limitada por su estado de madurez: cero descargas, cero likes y un contrato de runtime marcado como no verificado por MTPLX. Debe tratarse como un artefacto experimental orientado a evaluación interna, no como un modelo listo para producción.
+Es relevante ahora porque demuestra la viabilidad de servir un modelo de 27B con vision, contexto de 133.120 tokens y decodificacion especulativa a velocidades superiores a 80 tokens por segundo en hardware Apple, algo que hasta hace poco requeria GPUs de datacenter. La licencia Apache 2.0 facilita su uso comercial, aunque las capacidades completas de la variante pi-adapted (herramientas, agentes, vision) aun no estan completamente verificadas segun la propia model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con torre de visión y sidecar MTP; cuantización híbrida MLX (afín 8 bits, afín 4 bits y recurrencia BF16) |
-| Parametros totales | 27.356.728.560 (27,36 mil millones) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mixta: 234 módulos afines de 8 bits (group size 64), 168 módulos afines de 4 bits (group size 32), 96 módulos de recurrencia BF16 |
+| Arquitectura | Transformer derivado de Qwen3.8-27B, con configuracion "Attention8" y recurrencia en BF16; incluye sidecar MTP (multi-token prediction) |
+| Parametros totales | 27.356.728.560 (unos 27,36 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 133.120 tokens (configuracion de servicio recomendada); validado con centinelas de 65.536 y 131.072 tokens |
+| Tipos de cuantizacion | 4-bit (segun tags); pesos BF16 para el objetivo y el sidecar MTP |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX) |
+| Formato de pesos | safetensors (formato MLX); repositorio de 23,8 GB |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base Qwen3.8-27B más allá de su naturaleza transformer y de la presencia de una torre de visión y de un sidecar MTP (multi-token prediction) nativo en BF16. La conversión publicada reorganiza los pesos en tres clases de módulos: 234 módulos afines de 8 bits con group size 64, 168 módulos afines de 4 bits con group size 32 y 96 módulos de recurrencia que se mantienen en BF16. Este esquema sugiere que las capas asociadas a la recurrencia o a estados persistentes se preservan en mayor precisión para evitar degradación acumulativa, mientras que las proyecciones lineales se comprimen de forma agresiva.
+El modelo parte de Qwen3.8-27B, un transformer denso de aproximadamente 27.360 millones de parametros. Sobre esa base se aplica un LoRA llamado "pi-adapted" (publicado por harness-hub) que se fusiona con los pesos BF16 originales. La variante publicada por Shiftedx anade dos particularidades tecnicas: una configuracion de atencion designada "Attention8" y una recurrencia implementada en BF16, ademas de conservar el sidecar MTP nativo en BF16 que permite la prediccion multi-token.
 
-No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si el modelo base empleó RLHF, DPO u otras técnicas de alineamiento. El adaptador pi de harness-hub fue fusionado sobre la base BF16 de Qwen antes de la cuantización, y el resultado conserva el tokenizer y la plantilla de chat del adaptador. El autor indica que la cuantización es "sin editar" y que superó la carga estricta en MLX-LM junto con seis comprobaciones locales de utilidad, además de un smoke test de texto corto en MTPLX 2.12.2.
+El entrenamiento especifico del adaptador pi-adapted no esta documentado en la informacion disponible (no se detallan tokens de entrenamiento, composicion del dataset ni si hubo RLHF/DPO). La innovacion destacable es la integracion del pipeline de decodificacion especulativa mediante el draft model DFlash2 (z-lab/Qwen3.8-27B-DFlash2), que acelera la generacion sin degradar la paridad de respuestas en las pruebas realizadas. La model card indica que, con thinking activado, ambos modos (DFlash2 y solo objetivo) superaron los 15 casos de contexto de Shiftedx Bench y coincidieron en 15/15 respuestas capturadas.
 
 ## Capacidades
 
-- Generación de texto: el paquete ha superado un smoke test de texto en MTPLX, por lo que la ruta de inferencia textual básica está verificada de forma mínima.
-- Visión: el paquete incluye la torre de visión de Qwen, pero la inferencia multimodal está pendiente de cualificación según el autor.
-- Decodificación especulativa: incorpora el sidecar MTP nativo en BF16, aunque la paridad de decodificación especulativa está pendiente de validación.
-- Razonamiento y modo thinking: la interfaz de MTPLX expone un flag `--reasoning off`, lo que indica soporte de un modo de razonamiento conmutable, si bien sus prestaciones no están documentadas en esta publicación.
-- Tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generacion de texto y razonamiento con modo "thinking" activable mediante `reasoning_effort` (por ejemplo, "medium").
+- Vision: el modelo incorpora capacidades de vision segun los tags y la model card.
+- Prediccion multi-token (MTP) mediante sidecar nativo en BF16.
+- Decodificacion especulativa compatible con DFlash2 para aceleracion.
+- Tool calling y uso agentico: mencionados en la model card, aunque la paridad con thinking activado queda "sin verificar".
+- Soporte de contexto largo: validado en 65.536 y 131.072 tokens con conteos exactos de prompt.
+- Compatibilidad con API OpenAI a traves del servidor Kapitsa (`/v1`).
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- Evaluación de cuantizaciones híbridas en Apple Silicon: el modelo sirve como banco de pruebas para medir la pérdida de calidad de un esquema que combina módulos afines de 8 y 4 bits con recurrencia en BF16, comparando las salidas contra la base Qwen3.8-27B en BF16.
-- Desarrollo de pipelines MLX-LM: permite validar la integración de un checkpoint de 27,36 mil millones de parámetros en flujos de trabajo MLX-LM, incluyendo la carga estricta de pesos y la verificación de integridad mediante el fichero `SHA256SUMS` incluido.
-- Pruebas de decodificación especulativa con MTPLX: al incluir el sidecar MTP nativo, es útil para experimentar con decodificación especulativa en MTPLX 2.12.2 o superior, siempre teniendo en cuenta que la paridad aún no está cualificada.
-- Experimentación multimodal en local: la presencia de la torre de visión permite plantear pruebas de inferencia imagen-texto en hardware Apple, aunque el autor advierte de que esta ruta no ha sido validada.
-- Ajuste fino sobre el adaptador pi: al conservar el tokenizer y la plantilla de chat del adaptador harness-hub, el paquete puede emplearse como punto de partida para experimentos de ajuste que reutilicen ese formato de conversación.
-- Verificación de contratos de runtime: el flag `--no-mtp` y la advertencia de contrato no verificado permiten usar el modelo para probar mecanismos de degradación controlada y comprobación de contratos en MTPLX.
+- Inferencia local en Apple Silicon: el modelo esta empaquetado en MLX y probado en un M4 Max con 64 GiB, lo que permite ejecutar un 27B con vision y contexto largo en una estacion de trabajo Mac sin GPU dedicada. Es adecuado por su formato nativo MLX y el pipeline Kapitsa + DFlash2.
+- Servicio de API compatible con OpenAI: mediante `kapitsa serve` se expone un endpoint `/v1` que permite integrar el modelo en clientes existentes (SDKs de OpenAI, LangChain, etc.) sin reescribir codigo.
+- Razonamiento con contexto largo: los 133.120 tokens de contexto validados permiten tareas de analisis de documentos extensos, resumen de corpus o QA sobre material de referencia largo; los centinelas de 131K confirman que el modelo maneja prompts de esa magnitud.
+- Aceleracion de decodificacion en produccion: con DFlash2 se alcanzan 86,3 tok/s de mediana frente a 19,1 tok/s en modo solo objetivo, lo que hace viable servir interacciones en tiempo casi real en hardware consumer.
+- Procesamiento de documentos con vision: la capacidad de vision permite extraer informacion de imagenes y PDFs escaneados, util en pipelines de digitalizacion o extraccion de datos.
+- Evaluacion y benchmarking de variantes: el repositorio Shiftedx Bench y los centinelas de contexto permiten reproducir pruebas de paridad y rendimiento para comparar configuraciones de cuantizacion y decodificacion.
+- Prototipado de agentes: aunque la paridad agentica no esta verificada, el soporte de tool calling y la API compatible permiten experimentar con flujos multi-paso en local antes de escalar a infraestructura mayor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Metrica | Resultado |
+|---|---|
+| Tokens por segundo (mediana, decodificacion) con DFlash2 | 86,3 tok/s |
+| Tokens por segundo (mediana, solo objetivo) | 19,1 tok/s |
+| Casos de contexto Shiftedx Bench (15 casos, thinking on) | 15/15 superados en ambos modos |
+| Paridad de respuestas capturadas | 15/15 coincidentes |
+| Centinelas de contexto 65.536 y 131.072 tokens | Superados con conteos exactos de prompt |
+| Solicitudes en frio de 131K | Unos 12 minutos en ambos modos |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio ocupa 23,8 GB en disco, por lo que se requiere al menos esa cantidad de memoria unificada disponible para cargar los pesos en BF16 y cuantización mixta.
-- Hardware objetivo: Apple Silicon con memoria unificada; el formato MLX no está pensado para GPUs NVIDIA o AMD de forma nativa.
-- GPU recomendadas: no disponible; el autor no especifica modelos de chip Apple concretos (M1, M2, M3, M4 o variantes Pro, Max y Ultra).
-- Cabe en GPU de consumo: no disponible; depende del chip Apple y de su memoria unificada, dato que no se detalla.
-- Opciones de despliegue: MLX-LM para carga de texto y MTPLX 2.12.2 o superior para ejecución con el comando `mtplx run --model Shiftedx/Qwen3.8-27B-pi-adapted-MLX-Attention8-BF16-Recurrence --no-mtp --reasoning off --prompt "Reply with OK."`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM/RAM estimada: unos 22 GiB para el modelo objetivo; repositorio de 23,8 GB. En Apple Silicon la memoria es unificada, por lo que se requiere un Mac con al menos 32 GiB (probado con 64 GiB).
+- GPU recomendadas: Apple M4 Max con 64 GiB (configuracion probada). Para otras GPUs no se dispone de datos de compatibilidad, ya que el formato es MLX.
+- Cabe en GPU consumer: si, en Apple Silicon de gama alta; en GPUs NVIDIA consumer no hay soporte MLX nativo documentado en la informacion disponible.
+- Opciones de despliegue: servidor Kapitsa (version 0.2.31 probada) con DFlash2 como draft model; API compatible con OpenAI en `http://127.0.0.1:8000/v1`. Otras opciones (vLLM, llama.cpp, Ollama, TGI) no estan documentadas para este formato.
+- Latencia y throughput: 86,3 tok/s de mediana con DFlash2; 19,1 tok/s en modo solo objetivo; solicitudes en frio de 131K en unos 12 minutos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Estado |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Shiftedx/Qwen3.8-27B-pi-adapted-MLX-Attention8-BF16-Recurrence | 27,36 mil millones | no disponible | safetensors MLX (cuantización mixta) | Apache 2.0 | Experimental, 0 descargas, contrato de runtime no verificado |
-| Qwen/Qwen3.8-27B | 27,36 mil millones (según base) | no disponible | BF16 original | no disponible en la información | Modelo base de referencia |
-| harness-hub/Qwen3.8-27B-pi-adapted | 27,36 mil millones (según base) | no disponible | adaptador fusionable | no disponible en la información | Adaptador pi sobre la base Qwen |
+| Shiftedx/Qwen3.8-27B-pi-adapted-MLX-Attention8-BF16-Recurrence | 27,36 B | 133.120 | safetensors MLX | Apache 2.0 | Vision, MTP, DFlash2; probado en M4 Max |
+| Qwen/Qwen3.8-27B (base) | 27,36 B | no disponible | safetensors BF16 | Apache 2.0 (segun modelo base) | Sin adaptador pi ni configuracion MLX especifica |
+| harness-hub/Qwen3.8-27B-pi-adapted | no disponible | no disponible | no disponible | no disponible | Adaptador LoRA origen del merge |
+| z-lab/Qwen3.8-27B-DFlash2 | no disponible | no disponible | no disponible | no disponible | Draft model para decodificacion especulativa |
 
-No se dispone de datos de rendimiento comparado entre estas variantes, ni de alternativas de otros fabricantes con las que contrastar parámetros, contexto o throughput.
+Los datos de rendimiento de los modelos comparables no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado de validación incompleto: el autor indica explícitamente que la inferencia de visión, el rendimiento en contexto largo y la paridad de decodificación especulativa están pendientes de cualificación.
-- Contrato de runtime no verificado: MTPLX reporta el contrato de ejecución como no verificado, lo que desaconseja su uso en entornos productivos sin una validación adicional.
-- Cuantización sin editar: se trata de una conversión directa sin ajuste posterior, por lo que puede arrastrar degradaciones propias de la compresión a 4 y 8 bits en las capas no recurrentes.
-- Idiomas no declarados: la model card no especifica los idiomas soportados, lo que impide garantizar un comportamiento multilingüe concreto.
-- Contexto no documentado: no se indica la longitud máxima de contexto, un dato crítico para planificar despliegues con conversaciones largas o documentos extensos.
-- Riesgo de alucinación y sesgos: no disponible en la información proporcionada; no se han publicado evaluaciones de sesgo ni de tasas de alucinación para esta conversión.
-- Licencia Apache 2.0: permite uso comercial, pero al derivar de Qwen3.8-27B conviene verificar las condiciones del modelo base y del adaptador harness-hub antes de redistribuir.
-- Adopción nula: cero descargas y cero likes en el momento de la consulta, sin evidencia de uso comunitario que respalde su estabilidad.
-- Dependencia de Apple Silicon: el formato MLX limita su despliegue a hardware Apple, lo que excluye clústeres con GPUs NVIDIA habituales en producción.
+- Sesgos conocidos: no documentados; al derivar de Qwen3.8-27B hereda los sesgos del modelo base, no evaluados en esta ficha.
+- Riesgo de alucinacion: no cuantificado; el modo thinking con `reasoning_effort` puede producir respuestas elaboradas pero no verificadas factualmente.
+- Limitaciones de contexto o idioma: contexto maximo validado de 131.072 tokens; los idiomas soportados no estan documentados.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.8-27B y del adaptador pi-adapted.
+- Paridad sin verificar: la model card indica que la paridad con thinking activado para tool calling, uso agentico y vision "permanece sin verificar"; no asumir comportamiento identico al modelo base en esas areas.
+- Rendimiento en frio: solicitudes de 131K tokens en frio tardan unos 12 minutos, lo que limita su uso en escenarios de baja latencia con prompts muy largos.
+- Dependencia de hardware: el formato MLX limita el despliegue a ecosistema Apple Silicon; no hay soporte documentado para GPUs NVIDIA/AMD.
+- Configuracion de sampling: para los ajustes validados con thinking activado se recomienda sampling greedy (`temperature: 0`, `top_p: 1`, `top_k: 0`); desviarse puede degradar la calidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Shiftedx/Qwen3.8-27B-pi-adapted-MLX-Attention8-BF16-Recurrence
-- Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B/tree/37561816e66b5b9153b1b64c10968c18c1e6f4a0
-- Adaptador pi de harness-hub: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted/tree/e786f8491742268f9b2bc729697b13bfac26d4ad
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Adaptador pi-adapted: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
+- Draft model DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Dataset Shiftedx Bench: https://huggingface.co/datasets/Shiftedx/shiftedx-bench

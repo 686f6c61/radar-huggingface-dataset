@@ -5,7 +5,7 @@
   "author": "Teriks",
   "url": "https://huggingface.co/Teriks/Kandinsky-5.0-T2V-Pro-distilled-5s-quants",
   "created_at": "2026-11-21T06:04:40.000Z",
-  "updated_at": "2026-11-21T06:26:38.000Z",
+  "updated_at": "2026-11-21T06:51:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,6 +15,7 @@
     "gguf",
     "dgenerate",
     "quantization",
+    "comfyui",
     "base_model:kandinskylab/Kandinsky-5.0-T2V-Pro-distilled-5s-Diffusers",
     "base_model:quantized:kandinskylab/Kandinsky-5.0-T2V-Pro-distilled-5s-Diffusers",
     "region:us"
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": 19311325248,
   "parameters_human": "19.31B",
-  "storage_bytes": 147474356864,
-  "storage_human": "147.5 GB",
+  "storage_bytes": 186138777565,
+  "storage_human": "186.1 GB",
   "context_length": null,
   "base_model": "kandinskylab/Kandinsky-5.0-T2V-Pro-distilled-5s-Diffusers",
   "formats": [

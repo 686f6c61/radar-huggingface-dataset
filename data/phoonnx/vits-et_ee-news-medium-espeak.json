@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-et_ee-news-medium-espeak",
+  "slug": "phoonnx-vits-et_ee-news-medium-espeak",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-et_ee-news-medium-espeak",
+  "created_at": "2026-11-22T08:08:15.000Z",
+  "updated_at": "2026-11-22T08:08:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "et"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "et",
+    "base_model:rhasspy/piper-voices",
+    "base_model:quantized:rhasspy/piper-voices",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76757937,
+  "storage_human": "77 MB",
+  "context_length": null,
+  "base_model": "rhasspy/piper-voices",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GCP Google Cloud Developer Certification Sample Questions",
+      "url": "https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GCP-Google-Cloud-Developer-Certification-Sample-Questions",
+      "snippet": "Java, Spring, AI, News & Certifications Practice Questions for the Google Cloud Developer Exam Prepare for the Professional …"
+    }
+  ]
+}

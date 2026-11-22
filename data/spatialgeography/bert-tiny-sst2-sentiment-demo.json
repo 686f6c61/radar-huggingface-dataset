@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "spatialgeography/bert-tiny-sst2-sentiment-demo",
+  "slug": "spatialgeography-bert-tiny-sst2-sentiment-demo",
+  "author": "spatialgeography",
+  "url": "https://huggingface.co/spatialgeography/bert-tiny-sst2-sentiment-demo",
+  "created_at": "2026-11-22T05:32:58.000Z",
+  "updated_at": "2026-11-22T05:34:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "bert-tiny",
+    "demo",
+    "en",
+    "dataset:stanfordnlp/sst2",
+    "base_model:google/bert_uncased_L-2_H-128_A-2",
+    "base_model:finetune:google/bert_uncased_L-2_H-128_A-2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4386178,
+  "parameters_human": "4.4M",
+  "storage_bytes": 17549304,
+  "storage_human": "18 MB",
+  "context_length": null,
+  "base_model": "google/bert_uncased_L-2_H-128_A-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment analysis",
+      "dataset": "SST-2",
+      "metric": null,
+      "value": 0.8234
+    }
+  ],
+  "sources": []
+}

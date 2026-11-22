@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Athena-27B-i1-GGUF",
   "created_at": "2026-11-19T13:49:04.000Z",
-  "updated_at": "2026-11-19T22:26:31.000Z",
+  "updated_at": "2026-11-21T14:18:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -42,7 +42,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 6142,
+  "downloads_30d": 6592,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

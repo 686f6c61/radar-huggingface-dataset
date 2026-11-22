@@ -2,87 +2,89 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-MaxQ-64GB-Abliterated-GGUF es una cuantización GGUF de la familia Qwen3.8-Flash-Next, publicada por el usuario Synchopate. Se trata de una edición "abliterated" (sin los filtros de rechazo del modelo original) del checkpoint base Qwen/Qwen3.8-Flash-Next, combinada con la variante heretic-2 de trohrbaugh. El resultado es un modelo multimodal de tipo image-text-to-text con arquitectura MoE de aproximadamente 176,5 mil millones de parámetros totales y unos 5 mil millones de parámetros activos por token.
+Qwen3.8-Flash-Next-MaxQ-64GB-Abliterated-GGUF es una cuantización GGUF de la arquitectura Qwen3.8-Flash-Next, publicada por el usuario Synchopate. Se distribuye como un checkpoint "abliterated" (sin los filtros de rechazo del modelo original) y está empaquetada en dos shards que suman 53,99 GiB, pensados para caber en máquinas con 64 GB de RAM y ejecutarse en CPU mediante llama.cpp. El modelo base es un transformer MoE con 48 capas troncales (36 de Gated DeltaNet y 12 de atención GQA completa), 512 expertos enrutados por capa con top-10 activos, una capa NextN MTP para decodificación especulativa y una tabla PLE de 320M filas.
 
-El modelo emplea una topología denominada "qwen4exp" con 48 capas de tronco (36 Gated DeltaNet y 12 QSA Full Attention), 512 expertos enrutados sin podar (top-10 activos) más un experto compartido, y una capa NextN MTP para decodificación especulativa. La cuantización está diseñada para caber en un equipo con 64 GB de RAM, con un total de 53,99 GiB distribuidos en dos shards, lo que la hace apta para inferencia en CPU mediante llama.cpp.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: una arquitectura híbrida SSM/atención con MoE de gran anchura, una cuantización agresiva mixta (desde F32 hasta Q1_0) que reduce un modelo de ~176,5B parámetros a menos de 54 GiB, y una modificación quirúrgica de 27 tensores para eliminar los mecanismos de rechazo. El resultado es un checkpoint orientado a investigación de seguridad, red-teaming y análisis de código sin restricciones, no a despliegues de producción generalistas.
 
-Su relevancia actual radica en dos factores: por un lado, permite ejecutar un modelo de escala 176B en hardware de consumo o servidores sin GPU de gama alta; por otro, la edición abliterated elimina los mecanismos de rechazo, lo que la orienta a investigación de seguridad, red-teaming y análisis de código ofensivo, no a despliegues públicos sin moderación externa. La licencia es qwen-community-1.0, con restricciones que deben verificarse antes de un uso comercial.
+El autor advierte explícitamente de que los filtros de seguridad del modelo original han sido eliminados y no deben usarse para moderación de contenido. Para ingeniería de software convencional recomienda la variante alineada del mismo repositorio. La licencia declarada es qwen-community-1.0, heredada del modelo base.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con MoE (topología qwen4exp): 36 capas Gated DeltaNet + 12 capas QSA Full Attention, 48 capas de tronco + 1 capa NextN MTP |
-| Parámetros totales | ~176,5B (~125,3B transformer + MoE de 512 expertos + NextN MTP + 51,2B de tabla PLE de 320M filas) |
-| Parámetros activos | ~5,0B por token (10 de 512 expertos enrutados + 1 experto compartido + tronco denso GDN/QSA) |
+| Arquitectura | Transformer híbrido MoE: 36 capas Gated DeltaNet + 12 capas GQA full attention, con capa NextN MTP (blk.48) |
+| Parámetros totales | ~176,5B (125,3B transformer + MoE 512 expertos + NextN MTP + 51,2B PLE) |
+| Parámetros activos | ~5,0B por token (10 de 512 expertos enrutados + 1 experto compartido + tronco denso GDN/GQA) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF mixto: F32, Q8_0, Q6_K, IQ2_S, BF16, Q2_0, IQ3_XXS, MXFP4, IQ4_NL, Q2_K, Q1_0 (max_type = 42, sin tipos personalizados) |
+| Tipos de cuantización | Mixta: F32 (351), Q8_0 (339), Q6_K (198), IQ2_S (60), BF16 (49), Q2_0 (39), IQ3_XXS (36), MXFP4 (7), IQ4_NL (4), Q2_K (2), Q1_0 (1) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en el Hub) |
-| Formato de pesos | GGUF (2 shards: 43,26 GiB + 10,73 GiB; total 53,99 GiB) |
+| Licencia | qwen-community-1.0 (declarada como "other") |
+| Formato de pesos | GGUF (2 shards + proyector multimodal BF16 opcional) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina capas de atención lineal Gated DeltaNet con capas de atención completa QSA (ratio de compresión 4), organizadas en 48 capas de tronco más una capa NextN MTP para decodificación especulativa. El componente MoE mantiene los 512 expertos enrutados sin podar, con enrutamiento top-10 y un experto compartido, lo que explica la diferencia entre los ~176,5B parámetros totales y los ~5,0B activos por token. La tabla PLE (per-layer token embedding) de 320M filas y 51,2B parámetros se almacena en un shard separado cuantizado a Q1_0.
+El backbone sigue la topología `qwen4exp` del modelo base: 48 capas troncales con una proporción de 36 capas de Gated DeltaNet (atención lineal con estado recurrente) y 12 capas de atención GQA completa con `compress_ratio = 4`, más una capa adicional NextN MTP en `blk.48` que actúa como cabecera de decodificación especulativa. El MoE mantiene los 512 expertos enrutados por capa sin podar (top-10 activos, K = 640 de ancho completo) más un experto compartido, y una tabla PLE (`per_layer_token_embd.weight`) de 320.001.536 filas con dimensión 256. La capa NextN permite que el modelo genere borradores de tokens que luego se validan en paralelo, reduciendo la latencia de decodificación en CPU.
 
-La edición abliterated aplica una sobre-proyección firmada multi-capa optimizada con TPE sobre 27 tensores del tronco (blk.31 a blk.47, con beta entre 1,83 y 2,39) y sobre la proyección NextN MTP de blk.48 (beta = 2,2508). Según la model card, los tensores blk.0 a blk.30 y token_embd permanecen intactos (1.058 de 1.085 tensores bit-idénticos al checkpoint alineado). No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados ni las etapas de alineación (RLHF/DPO) del modelo original en la información proporcionada. La modificación "abliterated" se aplica mediante sobre-proyección firmada multi-capa optimizada con TPE sobre 27 tensores: 16 tensores `ssm_out`/`attn_output` en `blk.32..47` con `beta = 2.15..2.39`, 5 `ffn_down_shexp` en `blk.31..35`, 5 `ffn_down_exps` de 512 expertos en `blk.31..35` y 1 proyección `blk.48.attn_output.weight` con `beta = 2.2508`. Los 1.058 tensores restantes (blk.0..30, `ffn_gate_exps`, `ffn_up_exps`, `token_embd`, `output.weight`, routers y normas) se preservan bit a bit respecto a la variante alineada. La cuantización usa exclusivamente tipos estándar de `ggml` (`max_type = 42`, sin tipos personalizados) y la tabla PLE se comprime con PCA-Wiener D=256 + RaBitQ Q1_0 a 10,73 GiB.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Procesamiento de imagen y texto (pipeline image-text-to-text), con un proyector multimodal BF16 opcional de 907,5 MB.
-- Razonamiento de múltiples pasos y soporte de agentes.
-- Decodificación especulativa mediante la capa NextN MTP integrada.
-- Inferencia en CPU gracias a la cuantización mixta y al formato GGUF.
-- Ejecución sin filtros de rechazo (edición abliterated), orientada a contenido sin moderación.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Tool calling / function calling: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno, con soporte de plantilla de chat (`conversational`).
+- Razonamiento y análisis de código sin restricciones de contenido, orientado a auditoría y análisis de binarios.
+- Capacidades multimodales de imagen a texto mediante el proyector `mmproj-Qwen3.8-Flash-Next-BF16.gguf` (334 tensores, 0,85 GiB).
+- Decodificación especulativa nativa gracias a la capa NextN MTP, que acelera la generación en CPU.
+- Ejecución en CPU pura mediante llama.cpp, sin necesidad de GPU.
+- Modo "uncensored": los filtros de rechazo del modelo original han sido eliminados quirúrgicamente.
+- Soporte de tool calling y function calling: no confirmado en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: no confirmado en la información disponible.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
 
-- Investigación de seguridad y red-teaming: el modelo permite generar y analizar contenido ofensivo sin los filtros de rechazo del checkpoint original, lo que facilita auditorías de robustez y pruebas de alineación en entornos controlados.
-- Análisis de binarios y explotación en CTF: con ~5B parámetros activos por token y contexto conversacional, puede razonar sobre código de bajo nivel y cadenas de explotación en sesiones multi-turno.
-- Auditoría de código y revisión de seguridad: la arquitectura MoE mantiene calidad de razonamiento con un coste de inferencia reducido, adecuado para pipelines de análisis estático asistido.
-- Inferencia en CPU sin GPU: los 53,99 GiB en dos shards caben en un servidor con 64 GB de RAM, lo que permite desplegar un modelo de 176B en hardware sin acelerador mediante llama.cpp.
-- Análisis legal y de políticas sin restricciones de contenido: útil para revisar documentos sensibles o discutir marcos normativos donde los filtros del modelo base introducirían sesgo.
-- Investigación sobre alineación y mecanismos de rechazo: al conservar 1.058 tensores bit-idénticos al checkpoint alineado, sirve como referencia comparativa para estudiar el efecto de la sobre-proyección en las capas tardías.
-- Prototipado de asistentes multimodales en local: el proyector BF16 opcional permite experimentar con entrada de imagen y texto sin depender de servicios en la nube.
+- Investigación de seguridad y red-teaming: el checkpoint permite generar y evaluar respuestas que el modelo alineado rechazaría, útil para construir conjuntos de prueba de robustez y estudiar modos de fallo en modelos abliterated.
+- Análisis de binarios y explotación en CTF: el modelo puede razonar sobre código ensamblador, identificar patrones vulnerables y proponer cadenas de explotación sin bloqueos de contenido, dentro de entornos autorizados.
+- Auditoría de código y revisión de seguridad: con ~5B parámetros activos por token y contexto largo (no especificado), puede procesar fragmentos extensos de código para detectar inyecciones, desbordamientos o malas prácticas.
+- Análisis legal y de políticas sin restricciones: útil para estudiar textos normativos controvertidos o generar contraargumentos en escenarios de debate, donde el modelo alineado tendería a rechazar.
+- Despliegue en CPU para entornos aislados: al caber en 64 GB de RAM y funcionar con llama.cpp, puede ejecutarse en estaciones de trabajo sin GPU o en entornos air-gapped para pruebas internas.
+- Generación de datos sintéticos para entrenamiento: la variante sin filtros permite producir corpus diversos que incluyan contenido que los modelos alineados evitan, útil para aumentar la cobertura de datasets de instrucción.
+- Evaluación comparativa de alineación: sirve como referencia para medir cuánto cambia el comportamiento de un modelo tras la abliteración, comparando contra la variante `MaxQ-64GB` alineada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas internas del proceso de abliteración: `0/100` rechazos con una divergencia KL de `0,0818` respecto al modelo alineado, y `beta = 1,83–2,39` en los tensores modificados.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: 53,99 GiB de pesos en GGUF; se recomienda al menos 64 GB de RAM para la inferencia en CPU (el nombre del modelo indica el tier de 64 GB).
-- GPU recomendadas: no disponible en la información proporcionada; el diseño está orientado a CPU.
-- Cabe en GPU de consumo: no disponible; el tamaño de 54 GiB excede la VRAM de GPUs de consumo típicas, por lo que el uso previsto es CPU o descarga parcial a GPU.
-- Opciones de despliegue: llama.cpp (formato GGUF nativo, con soporte de llama-modchip según los tags); vLLM, TGI y Ollama no están confirmados en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: 53,99 GiB para los dos shards del LLM, más 0,85 GiB adicionales si se carga el proyector multimodal. El autor indica un techo de `< 55,5 GiB`, diseñado para máquinas de 64 GB de RAM.
+- GPU recomendadas: no aplica de forma nativa; el checkpoint está optimizado para CPU. Para inferencia en GPU haría falta offloading parcial o una GPU con al menos 48 GB (A6000, A100 80GB, H100) para cargar los shards completos.
+- ¿Cabe en GPU de consumo? No en su totalidad. Una RTX 4090 (24 GB) solo podría cargar una fracción mediante offloading parcial con llama.cpp.
+- Opciones de despliegue: llama.cpp (soporte nativo, con `llama-modchip` mencionado en los tags), Ollama si se convierte el manifiesto, y servidores compatibles con endpoints (`endpoints_compatible`). vLLM y TGI no soportan GGUF de forma directa sin conversión.
+- Latencia y throughput: no disponibles. La capa NextN MTP está pensada para reducir la latencia de decodificación especulativa en CPU, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-MaxQ-64GB-Abliterated | ~176,5B | ~5,0B | no disponible | qwen-community-1.0 | GGUF |
-| Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-GGUF | ~176,5B | ~5,0B | no disponible | qwen-community-1.0 | GGUF |
-| Qwen/Qwen3.8-Flash-Next (base) | ~176,5B | ~5,0B | no disponible | qwen-community-1.0 | safetensors |
-| trohrbaugh/Qwen3.8-Flash-Next-heretic-2 | ~176,5B | ~5,0B | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-MaxQ-64GB-Abliterated (este) | ~176,5B | ~5,0B | no disponible | qwen-community-1.0 | GGUF mixto | Sin filtros de rechazo, 53,99 GiB, CPU-first |
+| Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-GGUF | ~176,5B | ~5,0B | no disponible | qwen-community-1.0 | GGUF mixto | Variante alineada del mismo autor, sin abliterar |
+| Qwen/Qwen3.8-Flash-Next (base) | ~176,5B | ~5,0B | no disponible | qwen-community-1.0 | safetensors | Modelo original completo, requiere hardware de datacenter |
+| trohrbaugh/Qwen3.8-Flash-Next-heretic-2 | ~176,5B | ~5,0B | no disponible | no disponible | no disponible | Fuente de los 26 tensores TPE sobre-proyectados |
 
 ## Limitaciones y advertencias
 
-- Los filtros de rechazo del modelo base están eliminados y no pueden usarse para moderación de contenido; no debe exponerse como endpoint público sin control de acceso y filtrado externo.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas para esta cuantización.
-- La cuantización mixta incluye tipos de baja precisión (IQ2_S, Q2_0, Q1_0 en la tabla PLE), lo que puede degradar la calidad respecto al checkpoint en BF16.
-- Idiomas soportados no documentados; el rendimiento fuera del inglés y el chino podría ser inferior.
-- La licencia qwen-community-1.0 impone condiciones que deben revisarse antes de cualquier uso comercial.
-- El tamaño de 54 GiB requiere hardware con al menos 64 GB de RAM; no es apto para equipos de consumo convencionales.
-- El uso previsto es investigación de seguridad, auditoría y análisis autorizado; el despliegue en producción sin salvaguardas adicionales es responsabilidad del operador.
+- Los filtros de seguridad del modelo original han sido eliminados; no deben usarse para moderación de contenido ni para exponer endpoints públicos sin control de acceso y filtrado externo.
+- Riesgo elevado de generar contenido dañino, ilegal o sesgado sin las salvaguardas del modelo alineado. El autor restringe el uso a investigación de seguridad autorizada, CTF, auditoría y análisis legal.
+- La cuantización extrema (Q1_0, Q2_0, IQ2_S en partes del modelo) degrada la calidad respecto al modelo en BF16; la tabla PLE en Q1_0 puede introducir pérdida adicional en la representación de tokens.
+- La ficha del Hub muestra una etiqueta `general.size_label = "5.0B"` heredada del proceso de conversión que no refleja el tamaño real (~176,5B totales, ~5,0B activos); puede confundir a herramientas automáticas.
+- No se dispone de información sobre idiomas soportados ni longitud de contexto, lo que dificulta planificar despliegues multilingües o de contexto largo.
+- Licencia qwen-community-1.0: revisar las restricciones de uso comercial del modelo base antes de cualquier explotación, ya que la abliteración no altera los términos legales.
+- El proceso de abliteración modifica 27 tensores del tronco y la capa MTP; aunque se preservan bit a bit los demás, no hay garantía de que el comportamiento en tareas benignas sea idéntico al de la variante alineada.
+- Sin datos de benchmarks públicos, no es posible comparar su rendimiento real frente a alternativas en MMLU, HumanEval o GSM8K.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-Abliterated-GGUF
+- Variante alineada del mismo autor: https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Checkpoint heretic-2: https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2
-- Variante alineada MaxQ-64GB: https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-GGUF
-- Licencia: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Fuente de los tensores abliterated: https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2

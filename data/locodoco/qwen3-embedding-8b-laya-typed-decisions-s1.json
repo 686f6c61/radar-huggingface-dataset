@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "locodoco/qwen3-embedding-8b-laya-typed-decisions-s1",
+  "slug": "locodoco-qwen3-embedding-8b-laya-typed-decisions-s1",
+  "author": "locodoco",
+  "url": "https://huggingface.co/locodoco/qwen3-embedding-8b-laya-typed-decisions-s1",
+  "created_at": "2026-11-22T05:58:03.000Z",
+  "updated_at": "2026-11-22T05:58:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "laya",
+    "typed-decisions",
+    "lora",
+    "calibration",
+    "decision-making",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:Qwen/Qwen3-Embedding-8B",
+    "base_model:adapter:Qwen/Qwen3-Embedding-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 296468575,
+  "storage_human": "296 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-Embedding-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "shaohao011",
   "url": "https://huggingface.co/shaohao011/LynnReal-Hand-Fast-preview",
   "created_at": "2026-11-15T15:18:04.000Z",
-  "updated_at": "2026-11-18T05:51:10.000Z",
+  "updated_at": "2026-11-21T17:28:25.000Z",
   "license": "minimax-h3-community",
   "license_family": "non-commercial",
   "pipeline_tag": "image-to-video",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 182,
+  "downloads_30d": 196,
   "trending_score": 0,
   "parameters": 33138827904,
   "parameters_human": "33.14B",

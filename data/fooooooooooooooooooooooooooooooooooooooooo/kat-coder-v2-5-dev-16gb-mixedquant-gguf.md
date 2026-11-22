@@ -2,104 +2,98 @@
 
 ## Resumen
 
-KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF es una compilacion de cuantizacion mixta en formato GGUF del modelo Kwaipilot/KAT-Coder-V2.5-Dev, publicada por el usuario `fooooooooooooooooooooooooooooooooooooooooo`. No se trata de un modelo nuevo ni de un entrenamiento adicional: es un derivado cuantizado pensado para ejecucion local en llama.cpp, con dos variantes (IQ3_XXS e IQ4_XS) que mezclan distintos niveles de precision por tensor para conservar calidad donde mas importa.
+KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF es una cuantizacion mixta del modelo Kwaipilot/KAT-Coder-V2.5-Dev, publicada por el usuario fooooooooooooooooooooooooooooooooooooooooo. No se trata de un modelo nuevo, sino de una derivacion cuantizada en formato GGUF para su uso con llama.cpp, orientada a ejecutar un modelo de codigo de gran tamano en GPUs de consumo con VRAM limitada (16-24 GB). El modelo base es un Mixture of Experts (MoE) de aproximadamente 34.660 millones de parametros totales, con arquitectura derivada de la familia Qwen 3.5/3.6, segun las etiquetas de la model card.
 
-El modelo subyacente es un MoE de 34.660.610.688 parametros totales (segun los pesos safetensors del repositorio base), con arquitectura hibrida que combina atencion con capas de tipo SSM y expertos compartidos, segun se deduce de los tensores preservados a mayor precision (`ssm_out`, `shared expert`, `ffn_*_exps`). Los tags del repositorio lo asocian a las familias Qwen3.5/Qwen3.6 y a casos de uso de codigo y codificacion agentica.
+La propuesta principal es ofrecer dos variantes de cuantizacion mixta: IQ4_XS (unos 19,5 GB) para tarjetas de 22-24 GB, e IQ3_XXS (unos 15 GB) para tarjetas de 16 GB. La mezcla combina IQ3_XXS, IQ4_XS, Q6_K y Q8_0, manteniendo en mayor precision las capas de atencion, embeddings, salida y expertos compartidos, y reduciendo bits en los expertos de las capas FFN. Se uso una imatrix autocalibrada centrada en desarrollo web, Python y documentacion Markdown.
 
-Su relevancia practica es la eficiencia: la variante IQ3_XXS ocupa unos 15 GB (14.987,3 MB medidos) y cabe en GPU de 16 GB, mientras que IQ4_XS ronda los 19,5 GB (19.450,1 MB) y encaja comodamente en tarjetas de 22-24 GB. El autor reporta mediciones propias de velocidad y de tasa de exito en HumanEval, aunque advierte que el benchmark sigue en curso.
+Es relevante porque demuestra que un modelo MoE de ~34,7B puede ejecutarse en hardware de consumo con velocidades de generacion razonables (hasta 46-74 tokens/s en una RX 7800 XT de 16 GB con la variante IQ3_XXS) y con una calidad de codigo cercana a la del modelo base, a costa de una perdida de precision controlada y de un mayor riesgo de "doubt spirals" en la variante mas agresiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con capas SSM y expertos compartidos, segun los tensores preservados en la cuantizacion (no confirmado en la model card) |
-| Parametros totales | 34.660.610.688 (dato de los safetensors del modelo base) |
+| Arquitectura | Mixture of Experts (MoE) basada en Qwen 3.5/3.6 (transformer con expertos y experto compartido) |
+| Parametros totales | 34.660.610.688 (~34,7B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible en la model card; el autor indica pruebas con 32k de contexto |
-| Tipos de cuantizacion | IQ3_XXS e IQ4_XS mixtas, con tensores en Q6_K y Q8_0; imatrix autocalibrada |
+| Longitud de contexto | no disponible en la model card; el autor reporta pruebas con 32k de contexto |
+| Tipos de cuantizacion | IQ4_XS mixto (19,5 GB) e IQ3_XXS mixto (15 GB); mezcla de IQ3_XXS, IQ4_XS, Q6_K y Q8_0 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion de entrenamiento en la informacion disponible: esta publicacion es exclusivamente un proceso de cuantizacion post-entrenamiento (etiqueta `base_model_relation: quantized`), no un entrenamiento nuevo. Cualquier dato sobre tokens de entrenamiento, composicion del dataset o fases de RLHF/DPO corresponde al modelo original Kwaipilot/KAT-Coder-V2.5-Dev, cuya model card no se ha proporcionado.
+El modelo base KAT-Coder-V2.5-Dev es un Mixture of Experts de ~34,7B parametros totales, con etiquetas que lo vinculan a la familia Qwen 3.5/3.6. La model card de esta cuantizacion describe la presencia de expertos FFN (ffn_gate_exps, ffn_up_exps, ffn_down_exps) en 40 capas, un experto compartido ("shared expert") y una capa denominada ssm_out, lo que sugiere una arquitectura hibrida con componentes de tipo state space ademas de atencion clasica. No se dispone de informacion sobre el numero de parametros activos por token ni sobre la composicion exacta del dataset de entrenamiento del modelo original.
 
-La innovacion tecnica de esta build es la estrategia de cuantizacion por capas. En la variante IQ4_XS, los tensores `ffn_gate_exps` y `ffn_up_exps` de las 40 capas se mantienen en IQ4_XS, al igual que `ffn_down_exps`; embeddings y salida en Q8_0; atencion, `ssm_out` y experto compartido en Q6_K. En IQ3_XXS se baja a IQ3_XXS en `ffn_gate_exps`, `ffn_up_exps` y en `ffn_down_exps` de 32 capas, pero se conservan en IQ4_XS las capas 0-3 y 36-39 (extremos de la red), y se mantienen Q8_0 en embeddings/salida y Q6_K en atencion, `ssm_out` y experto compartido. La imatrix se autocalibro con foco en desarrollo web, Python y documentacion en Markdown.
+El proceso de cuantizacion es el elemento tecnico diferencial de esta publicacion. El autor aplica una mezcla de precisiones por tensor: los expertos ffn_gate_exps y ffn_up_exps de las 40 capas se mantienen en IQ4_XS (variante IQ4_XS) o IQ3_XXS (variante IQ3_XXS); los expertos ffn_down_exps de las capas 0-3 y 36-39 se mantienen en IQ4_XS en ambas variantes, mientras que las 32 capas intermedias bajan a IQ3_XXS en la variante pequena. Embeddings y capa de salida se conservan en Q8_0, y atencion, ssm_out y experto compartido en Q6_K. La imatrix utilizada fue autocalibrada y sesgada hacia desarrollo web, Python y documentacion Markdown. No se menciona RLHF, DPO ni detalles del entrenamiento original.
 
 ## Capacidades
 
-- Generacion de codigo: el modelo base esta orientado a programacion y los tags incluyen `code` y `coding`.
-- Codificacion agentica: etiqueta explicita `agentic-coding`, lo que apunta a flujos multi-paso con edicion de ficheros y ejecucion de herramientas.
-- Razonamiento sobre enunciados de programacion: el autor documenta un comportamiento de "doubt spirals" (bucles de duda) y observa que un system prompt que fuerza la traza del primer ejemplo mejora la tasa de acierto en HumanEval del 92% al 96% en IQ4_XS.
-- Soporte de tool calling / function calling: no disponible (no se menciona en la informacion proporcionada).
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, modo thinking explicito): no disponible.
-- Conversacional: el tag `conversational` aparece en la ficha de Hugging Face, aunque la model card no detalla plantilla de chat ni formato de prompt.
+- Generacion de codigo en multiples lenguajes, con enfasis en Python y desarrollo web segun el sesgo de la imatrix.
+- Razonamiento sobre problemas de programacion y resolucion de tareas tipo HumanEval y MBPP+.
+- Generacion de documentacion tecnica en Markdown.
+- Capacidades conversacionales multi-turno (etiqueta "conversational").
+- Soporte de flujos de codificacion agentica (etiqueta "agentic-coding"), aunque no se detalla el soporte concreto de tool calling en la model card.
+- Ejecucion local mediante llama.cpp con backend compatible con endpoints.
+- Capacidad de trabajar con contexto de 32k tokens segun las pruebas del autor (no confirmado como maximo oficial).
 
 ## Casos de uso
 
-- Asistente de codigo en local para desarrolladores individuales: la variante IQ3_XXS (unos 15 GB) cabe en una GPU de 16 GB y permite autocompletado y generacion de funciones sin enviar codigo a servicios externos, algo critico en entornos con codigo propietario.
-- Revision y correccion de parches en CI: dado su rendimiento reportado en HumanEval (92-96% segun configuracion), se puede integrar como paso de validacion que genera un test o una correccion propuesta antes del merge, siempre con revision humana.
-- Refactorizacion asistida de bases de codigo web: la imatrix se calibro con foco en desarrollo web, Python y Markdown, por lo que el sesgo de calibracion favorece estos dominios.
-- Generacion de documentacion tecnica: el foco de calibracion en Markdown y documentacion lo hace adecuado para producir READMEs, docstrings y guias a partir del codigo fuente.
-- Agentes de codigo multi-paso: el tag `agentic-coding` y la arquitectura MoE con contexto de 32k en las pruebas del autor permiten encadenar lecturas de ficheros, ediciones y verificaciones dentro de una misma sesion.
-- Despliegue en estaciones de trabajo con una sola GPU consumer: con 19,5 GB en IQ4_XS encaja en tarjetas de 24 GB (RTX 3090/4090, RX 7900 XTX) para equipos de desarrollo que necesitan un modelo de codigo siempre disponible sin coste por token.
-- Entornos con requisitos de privacidad (sanidad, banca, sector publico): al ser pesos abiertos bajo Apache-2.0 y ejecutarse integramente en local via llama.cpp, evita la exfiltracion de datos a APIs de terceros.
+- Asistente de codigo local en estaciones de trabajo con GPU de 16 GB: la variante IQ3_XXS permite ejecutar un MoE de ~34,7B en una RX 7800 XT con velocidades de 37-74 tokens/s, adecuado para autocompletado y generacion de funciones en el IDE.
+- Generacion de tests unitarios y correccion de codigo en Python: los resultados de HumanEval (92-96% de pass rate) indican que el modelo puede producir soluciones verificables para problemas algorítmicos, util en pipelines de CI que generan y validan tests.
+- Documentacion tecnica automatizada: la imatrix fue calibrada con documentacion Markdown, por lo que el modelo esta optimizado para redactar READMEs, docstrings y guias de API.
+- Prototipado de desarrollo web: el sesgo de calibracion hacia webdev sugiere buen rendimiento en generacion de HTML, CSS y JavaScript, asi como en frameworks del ecosistema web.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente con llama.cpp y licencia Apache 2.0, permite procesar codigo propietario sin enviarlo a servicios externos.
+- Evaluacion comparativa de cuantizaciones: los datos de benchmarks del autor (pass rate, tokens medios, doubt spirals) permiten a investigadores estudiar el impacto de la cuantizacion mixta en la calidad del razonamiento de codigo.
+- Educacion y experimentacion: permite a estudiantes ejecutar un MoE grande en hardware asequible para estudiar comportamiento de modelos de codigo y tecnicas de cuantizacion.
 
 ## Benchmarks y rendimiento
 
-El autor publica resultados propios de HumanEval (trabajo en curso), medidos con temperatura 0,7 y top-p 0,9:
+Los benchmarks publicados por el autor son preliminares ("WIP") y miden pass rate en HumanEval y MBPP+ con 3 ejecuciones por problema, temperatura 0,7 y top-p 0,9. No se comparan con el modelo base sin cuantizar ni con otros modelos de referencia.
 
-| Modelo | Temp | top-p | Tamano | Pass rate | Tokens medios | Doubt/problem | Spiral rate | Pass calm/doubting | Doubt-free | Hit limit | Tok/s |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| IQ4_XS (con system prompt) | 0,7 | 0,9 | 19.450,1 MB | 96% | 489 | 0,46 | 1% | 96% / 93% | 82% | 1% | 25,9 |
-| IQ4_XS (base) | 0,7 | 0,9 | 19.450,1 MB | 92% | 286 | 0,33 | 1% | 95% / 73% | 90% | 0% | 26,5 |
-| IQ3_XXS (con system prompt) | 0,7 | 0,9 | 14.987,3 MB | 93% | 522 | 0,59 | 1% | 96% / 82% | 82% | 1% | 37,0 |
-| IQ3_XXS (base) | 0,7 | 0,9 | 14.987,3 MB | 92% | 348 | 0,60 | 1% | 96% / 78% | 79% | 1% | 74,0 |
+| Modelo / variante | HumanEval pass rate | MBPP+ pass rate | Tokens medios (HE) | Tokens/s |
+|---|---|---|---|---|
+| IQ4_XS (con system prompt) | 96% | 79% | 489 | 25,9 |
+| IQ4_XS (base) | 92% | 78% | 286 | 26,5 |
+| IQ3_XXS (con system prompt) | 93% | 79% | 522 | 37,0 |
+| IQ3_XXS (base) | 92% | 77% | 348 | 74,0 |
 
-El system prompt usado fue: "After writing the code, trace the first example through it and confirm the output matches." No se han publicado resultados de MMLU, GSM8K, SWE-bench ni otras suites en la informacion disponible.
+El autor reporta ademas metricas de "doubt spirals" (1-3% de los casos) y de problemas que alcanzan el limite de tokens (0-2%). En MBPP+ el pass rate se situa en 77-79% para todas las variantes. No se han publicado resultados de MMLU, GSM8K ni otros benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para IQ3_XXS: unos 15 GB de pesos (14.987,3 MB medidos), mas la cache KV correspondiente al contexto elegido; el autor lo ejecuta con 32k de contexto en una GPU de 16 GB (Radeon RX 7800 XT).
-- VRAM para IQ4_XS: unos 19,5 GB de pesos (19.450,1 MB medidos); el autor indica que encaja comodamente en tarjetas de 22-24 GB.
-- GPU recomendadas para IQ4_XS: RTX 3090, RTX 4090, RTX 5090, RX 7900 XTX o cualquier acelerador con 24 GB o mas (A100 40 GB, H100 para servir en paralelo).
-- GPU recomendadas para IQ3_XXS: RTX 4080/4090, RX 7800 XT, RTX A4000 de 16 GB o superior.
-- Cabe en GPU consumer: si, en ambas variantes; IQ3_XXS en 16 GB e IQ4_XS en 24 GB.
-- Opciones de despliegue: llama.cpp y sus envoltorios (Ollama, LM Studio, llama-cpp-python, koboldcpp). El repositorio declara compatibilidad con `endpoints_compatible`. No se menciona soporte de vLLM, TGI o SGLang para estos ficheros.
-- Throughput medido por el autor: 25,9-26,5 tok/s con IQ4_XS y 37,0-74,0 tok/s con IQ3_XXS en una RX 7800 XT de 16 GB (los 74 tok/s corresponden a la configuracion base sin system prompt, con menos tokens generados de media). El autor indica que IQ4_XS puede reducir a la mitad la velocidad de generacion en una tarjeta de 16 GB.
-- Latencia: no disponible de forma desagregada (solo se publican tokens por segundo).
+- VRAM estimada: ~15 GB para IQ3_XXS y ~19,5 GB para IQ4_XS, segun los tamanos de fichero reportados.
+- GPU de 16 GB: IQ3_XXS es la variante recomendada; el autor la probo en una RX 7800 XT alcanzando 37-74 tokens/s con 32k de contexto.
+- GPU de 22-24 GB: IQ4_XS cabe con holgura; el autor indica que es comoda en tarjetas de 22-24 GB.
+- GPU de 24 GB o mas (RTX 3090, RTX 4090, A100, H100): ambas variantes caben; no se dispone de mediciones de throughput en estas GPU.
+- Despliegue: llama.cpp es el runtime objetivo; la etiqueta "endpoints_compatible" sugiere compatibilidad con APIs tipo OpenAI. No se mencionan vLLM, TGI ni Ollama en la model card, aunque el formato GGUF es compatible con Ollama.
+- Latencia y throughput: medidos unicamente en RX 7800 XT (16 GB); no hay datos para otras GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF (IQ4_XS) | 34,66B totales (MoE) | no disponible (probado a 32k) | HumanEval 92-96% (autor) | apache-2.0 | GGUF en Hugging Face, 34,4 GB de repo |
-| KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF (IQ3_XXS) | 34,66B totales (MoE) | no disponible (probado a 32k) | HumanEval 92-93% (autor) | apache-2.0 | GGUF en Hugging Face |
-| Kwaipilot/KAT-Coder-V2.5-Dev (modelo base) | 34.660.610.688 | no disponible | no disponible | apache-2.0 | pesos originales (formato no especificado en la informacion disponible) |
-| Otros modelos de codigo comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks del modelo base sin cuantizar ni de alternativas comparables en la informacion proporcionada. La comparacion se limita a las dos variantes de cuantizacion de esta misma publicacion y a la referencia cualitativa al modelo original.
 
-No se dispone de datos verificables de alternativas de la misma categoria en la informacion proporcionada, por lo que no se incluyen cifras comparativas que no puedan contrastarse.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| KAT-Coder-V2.5-Dev-16GB-MixedQuant IQ4_XS | ~34,7B (MoE) | no disponible (probado a 32k) | Apache 2.0 | GGUF | 19,5 GB, 25,9 tok/s en RX 7800 XT |
+| KAT-Coder-V2.5-Dev-16GB-MixedQuant IQ3_XXS | ~34,7B (MoE) | no disponible (probado a 32k) | Apache 2.0 | GGUF | 15 GB, hasta 74 tok/s en RX 7800 XT |
+| Kwaipilot/KAT-Coder-V2.5-Dev (original) | ~34,7B (MoE) | no disponible | Apache 2.0 (segun este repo) | safetensors | Modelo base sin cuantizar; sin benchmarks publicados en esta informacion |
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion, no un modelo nuevo: la calidad es necesariamente inferior a la de los pesos originales, con mayor degradacion en IQ3_XXS que en IQ4_XS.
-- El unico benchmark publicado es HumanEval, con metodologia propia del cuantizador y marcado explicitamente como "WIP"; no hay evaluaciones independientes.
-- El autor documenta "doubt spirals" (el modelo se enreda dudando) mas frecuentes en IQ3_XXS, con un p90 de 32 tokens de duda y un maximo de 39, frente a 12/22 en IQ4_XS.
-- El propio autor avisa de que en ocasiones el modelo entiende el problema pero el codigo generado no coincide con lo que parece haber razonado.
-- La imatrix se calibro con foco en desarrollo web, Python y Markdown: el rendimiento fuera de esos dominios puede degradarse de forma no medida.
-- No hay informacion sobre idiomas soportados, sesgos, tasas de alucinacion ni comportamiento fuera del ambito de codigo.
-- No hay datos sobre soporte de tool calling, agentes reales, vision o audio; el tag `agentic-coding` es una etiqueta, no una validacion funcional.
-- Licencia Apache-2.0: permite uso comercial, pero conviene verificar la licencia y los terminos del modelo base Kwaipilot/KAT-Coder-V2.5-Dev, ya que la cuantizacion hereda sus condiciones.
-- La fecha de creacion del repositorio (9 de octubre de 2026) es posterior a la fecha de actualizacion indicada por el autor en sus notas de cuantizacion; conviene comprobar la version exacta de los ficheros antes de desplegar en produccion.
-- El usuario que publica la cuantizacion es anonimo (`fooooooooooooooooooooooooooooooooooooooooo`) y el modelo tiene 660 descargas y 0 likes: trazabilidad y validacion por la comunidad muy limitadas.
-- En produccion, tratar la salida como sugerencia sujeta a revision, nunca como parche aplicable sin tests.
+- La cuantizacion introduce perdida de calidad; el autor reconoce que en benchmarks la variante IQ3_XXS falla mas por "doubt spirals" que la IQ4_XS.
+- El autor advierte que el modelo a veces entiende el problema pero genera codigo que no coincide con la solucion esperada; un system prompt de verificacion lo mitiga parcialmente.
+- Los benchmarks son preliminares, con 3 ejecuciones por problema y sin comparacion contra el modelo base, por lo que no permiten cuantificar la degradacion exacta.
+- La imatrix esta sesgada hacia desarrollo web, Python y Markdown; el rendimiento en otros lenguajes o dominios puede ser inferior.
+- No se dispone de informacion sobre sesgos, idiomas soportados ni evaluaciones de seguridad del modelo base.
+- Riesgo de alucinacion en APIs, librerias o funciones inexistentes, comun en modelos de codigo; requiere verificacion en produccion.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda consultar la licencia del modelo base original para confirmar condiciones.
+- El repositorio tiene 557 descargas y 0 likes, con actualizacion reciente; es una publicacion de un tercero, no del equipo de Kwaipilot.
+- No se especifica el numero de parametros activos ni la longitud de contexto oficial, lo que limita la planificacion de capacidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/fooooooooooooooooooooooooooooooooooooooooo/KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
-- Volcado de tensores IQ4_XS: IQ4_XS_GGUFDUMP.md (fichero dentro del repositorio)
-- Volcado de tensores IQ3_XXS: IQ3_XXS_GGUFDUMP.md (fichero dentro del repositorio)
-- Paper, blog o demo adicionales: no disponible; los resultados de la busqueda web no contenian enlaces relacionados con el modelo.
+- Volcado GGUF IQ4_XS: IQ4_XS_GGUFDUMP.md (en el repositorio)
+- Volcado GGUF IQ3_XXS: IQ3_XXS_GGUFDUMP.md (en el repositorio)

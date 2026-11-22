@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "Xylolabs/InternVL3.5-8B-Text-Tenstorrent-Tensix-BFP4",
+  "slug": "xylolabs-internvl3-5-8b-text-tenstorrent-tensix-bfp4",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/InternVL3.5-8B-Text-Tenstorrent-Tensix-BFP4",
+  "created_at": "2026-11-22T09:22:23.000Z",
+  "updated_at": "2026-11-22T09:24:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "tenstorrent",
+    "tensix",
+    "tt-metal",
+    "ttnn",
+    "block-floating-point",
+    "bfloat4_b",
+    "quantized",
+    "conversational",
+    "multilingual",
+    "arxiv:2508.18265",
+    "base_model:OpenGVLab/InternVL3_5-8B",
+    "base_model:quantized:OpenGVLab/InternVL3_5-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940204,
+  "storage_human": "16.4 GB",
+  "context_length": null,
+  "base_model": "OpenGVLab/InternVL3_5-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InternVL3.5",
+      "url": "http://go/v1/AfK3Xhxoc_yeawK1KAHETzHXVPExNKxUxwsuqFrYgu3rRnLDNFuNOQ2EWXP1SUbfeqocHtE0Wi9T-_cStk-VvDofAWQoXwoejZ_NzZhbHJHMHsMpbvb1ZxrbGq02mJRLrKkuuchRJYuMue-UXHKstocpQUt36FHshajJNFkq04e_tQ1F9ah5fEdfLe09aTcihGITSdK9MBnR8oJMu6f2xBoonEDaWPUkxyYO",
+      "snippet": "2025/08/26 • InternVL Team · We introduce InternVL3.5, a new family of open-source multimodal models that significantly advances versatility, reasoning capability, and inference efficiency along the InternVL series. A key innovation is the Cascade Reinforcement Learning (Cascade RL) framework, ..."
+    }
+  ]
+}

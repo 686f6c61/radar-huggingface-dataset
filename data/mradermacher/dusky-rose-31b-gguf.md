@@ -2,109 +2,96 @@
 
 ## Resumen
 
-Dusky-Rose-31B-GGUF es la version cuantizada en formato GGUF del modelo Cyclone-Labs/Dusky-Rose-31B, publicada por el usuario mradermacher, especializado en la conversion de pesos a GGUF para inferencia local. Se trata de un modelo de ~30,7 mil millones de parametros (30.697.345.596 segun los safetensors del modelo original) orientado a roleplay, narrativa (storytelling) y conversacion, segun las etiquetas declaradas por el autor. El repositorio incluye ademas dos ficheros mmproj (proyector multimodal), lo que apunta a un componente de vision en el modelo de origen, aunque la model card no lo documenta explicitamente.
+Dusky-Rose-31B-GGUF es la distribucion en formato GGUF del modelo Dusky-Rose-31B, desarrollado por Cyclone-Labs y cuantizado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 30.700 millones de parametros, orientado explicitamente a roleplay y narrativa (storytelling), segun las etiquetas de su model card. La relevancia de esta publicacion no reside en el modelo original, sino en la disponibilidad de cuantizaciones estaticas en GGUF que permiten ejecutarlo en hardware de consumo mediante llama.cpp y ecosistemas compatibles.
 
-El modelo original no ha sido entrenado desde cero por mradermacher: segun las etiquetas, procede de una fusion de modelos realizada con mergekit, una tecnica habitual para combinar capacidades de varios modelos sin reentrenamiento. La ficha del repositorio GGUF no aporta informacion sobre arquitectura interna, longitud de contexto, composicion del dataset de entrenamiento ni proceso de alineamiento (RLHF/DPO), por lo que esos datos quedan como no disponibles.
+El modelo base es un merge generado con mergekit, lo que implica que combina pesos de otros modelos en lugar de haber sido entrenado desde cero con un pipeline documentado. Esta circunstancia condiciona buena parte de la informacion disponible: no hay datos publicados sobre composicion del dataset, numero de tokens de entrenamiento ni proceso de alineacion (RLHF/DPO).
 
-La relevancia de esta publicacion es practica: convierte un modelo de 31B en una coleccion de 11 cuantizaciones (de Q2_K a Q8_0) que van de 12,0 GB a 32,7 GB, lo que permite ejecutarlo en GPUs de consumo como la RTX 4090 o en configuraciones de doble GPU. La licencia declarada es Apache 2.0 y el idioma soportado unicamente el ingles. A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 likes, por lo que no existe validacion comunitaria publica.
+La licencia declarada es Apache 2.0 y el unico idioma soportado es el ingles. El repositorio incluye cuantizaciones desde Q2_K hasta Q8_0, ademas de ficheros mmproj que apuntan a un componente multimodal, aunque la model card no detalla las capacidades de vision.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo resultante de una fusion con mergekit; no se especifica la arquitectura de los modelos de origen) |
-| Parametros totales | 30.697.345.596 (~30,7 B) |
-| Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base generado con mergekit; no se detalla la arquitectura subyacente) |
+| Parametros totales | 30.697.345.596 (aprox. 30,7 mil millones) |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K (12,0 GB), Q3_K_S (13,9 GB), Q3_K_M (15,4 GB), Q3_K_L (16,7 GB), IQ4_XS (17,0 GB), Q4_K_S (17,9 GB), Q4_K_M (18,8 GB), Q5_K_S (21,4 GB), Q5_K_M (21,9 GB), Q6_K (25,3 GB), Q8_0 (32,7 GB); mas mmproj-Q8_0 (0,9 GB) y mmproj-f16 (1,3 GB) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en safetensors para transformers |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura del modelo. Lo unico verificable es que el modelo base Cyclone-Labs/Dusky-Rose-31B se genero mediante mergekit, una herramienta de fusion de pesos que combina dos o mas modelos existentes (tipicamente mediante metodos como SLERP, TIES o DARE) sin realizar un entrenamiento adicional. Este enfoque suele emplearse para heredar capacidades complementarias, en este caso orientadas a roleplay y narracion. El numero de parametros (30,7 B) es coherente con un modelo denso de la familia de ~32B, pero no se confirma en la documentacion.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo mas alla de que el modelo base (Cyclone-Labs/Dusky-Rose-31B) fue producido mediante mergekit, una herramienta de fusion de pesos. Las etiquetas del repositorio confirman `mergekit` y `merge`, lo que indica que el modelo resulta de combinar los pesos de otros modelos preentrenados, presumiblemente con el objetivo de especializarlo en roleplay y narrativa.
 
-Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. El autor de la cuantizacion indica que se trata de cuantizaciones estaticas (static quants) y que no tiene previsto publicar variantes weighted/imatrix en el momento de la publicacion, lo que implica que no se ha aplicado una calibracion por importancia de pesos por capa.
+No hay datos publicados sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre procesos de RLHF, DPO o fine-tuning supervisado. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. La cuantizacion la realiza mradermacher con su pipeline habitual (quantize_version 2, conversion a HF), generando variantes estaticas; las cuantizaciones ponderadas con imatrix se publican en un repositorio separado (Dusky-Rose-31B-i1-GGUF).
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con enfasis declarado en roleplay y storytelling (etiquetas `roleplay`, `storytelling` y `conversational`).
-- Mantenimiento de conversaciones multi-turno con personajes y estilos narrativos, segun la orientacion del modelo base.
-- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible` de Hugging Face).
-- Soporte de un componente multimodal: el repositorio incluye ficheros `mmproj` (Q8_0 y f16) descritos como "multi-modal supplement", lo que sugiere capacidad de entrada visual en el modelo de origen; la model card no detalla que modalidad ni como activarla.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponibles en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
-- Modo "thinking" explicito: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional orientada a roleplay y narrativa, segun la model card.
+- Storytelling: continuacion y construccion de relatos, segun las etiquetas del modelo.
+- Conversacion multi-turno (etiqueta `conversational`).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Presencia de ficheros mmproj, lo que sugiere soporte de entrada multimodal en el modelo base, aunque las capacidades concretas de vision no estan documentadas.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles.
 
 ## Casos de uso
 
-- Motores de roleplay conversacional en local: el modelo esta etiquetado explicitamente para roleplay, por lo que puede desplegarse con llama.cpp u Ollama en una estacion de trabajo con GPU de 24 GB usando Q4_K_M (18,8 GB) para mantener personajes con personalidad consistente durante sesiones largas.
-- Ficcion interactiva y novelas visuales: la orientacion a storytelling permite generar continuaciones narrativas ramificadas a partir de elecciones del usuario, integrando el modelo como backend de texto en motores tipo Ren'Py o aplicaciones web.
-- Guionizacion de dialogos para videojuegos: generacion de lineas de dialogo para NPC con tono y registro configurables mediante system prompt, aprovechando las variantes Q4_K_S/Q4_K_M marcadas por el autor como "fast, recommended" para iteracion rapida.
-- Asistencia a escritores y guionistas: borradores de escenas, descripciones y arcos de personaje en ingles, con la ventaja de ejecucion local que evita enviar material creativo no publicado a servicios en la nube.
-- Generacion de datasets sinteticos de dialogo: produccion de conversaciones etiquetadas para fine-tuning posterior de modelos mas pequenos orientados a roleplay, usando Q8_0 (32,7 GB) cuando la calidad de la muestra sea prioritaria sobre el coste de computo.
-- Aplicaciones de compania conversacional y entretenimiento: chatbots de personaje para productos de consumo, desplegables con la variante Q2_K (12,0 GB) en GPUs de 16 GB si se acepta la perdida de calidad que el propio autor senala en sus graficos comparativos.
-- Evaluacion de tecnicas de fusion de modelos: al ser un merge de mergekit con cuantizaciones publicas de referencia, sirve como caso de estudio reproducible para medir el impacto de la cuantizacion estatica sobre un modelo fusionado.
-- Experimentacion en hardware de consumo sin conexion: las variantes IQ4_XS y Q4_K_S permiten ejecutar un modelo de ~31B en una unica RTX 3090 o RTX 4090 con contexto moderado, algo inviable con pesos en f16.
+- Roleplay conversacional: el modelo esta etiquetado explicitamente para roleplay, por lo que puede emplearse en aplicaciones de personajes interactivos donde se mantengan conversaciones prolongadas con consistencia de personaje.
+- Generacion de narrativa y ficcion: adecuado para asistir en la escritura de relatos, continuar tramas o generar variantes de escenas, dado su enfoque en storytelling.
+- Prototipado de chatbots de entretenimiento: las cuantizaciones Q4_K_S y Q4_K_M (17,9 y 18,8 GB) permiten desplegar el modelo en estaciones de trabajo con GPU de consumo para pruebas de concepto.
+- Experimentacion con modelos fusionados: util para investigadores interesados en evaluar el comportamiento de merges de mergekit en tareas creativas frente a modelos entrenados de forma convencional.
+- Despliegue local con llama.cpp: al estar en GGUF, puede integrarse en aplicaciones de escritorio o servidores ligeros mediante llama.cpp u Ollama, sin depender de infraestructura en la nube.
+- Generacion de dialogos para videojuegos o narrativa interactiva: el sesgo hacia roleplay lo hace candidato para motores de dialogo en prototipos de juegos narrativos en ingles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y el autor unicamente remite a graficos genericos de perplejidad por tipo de cuantizacion elaborados por terceros (ikawrakow y Artefact2), que no son especificos de este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones a partir del tamano de fichero declarado en la tabla de cuantizaciones del repositorio, anadiendo un margen aproximado para el contexto y el runtime (los pesos ocupan el tamano indicado, pero la cache KV y el overhead de llama.cpp incrementan el consumo):
-
-- VRAM estimada para inferencia:
-  - Q2_K (12,0 GB): ~13-15 GB de VRAM con contexto corto.
-  - Q3_K_M (15,4 GB) / Q3_K_L (16,7 GB): ~17-19 GB.
-  - IQ4_XS (17,0 GB) / Q4_K_S (17,9 GB) / Q4_K_M (18,8 GB): ~20-23 GB.
-  - Q5_K_S (21,4 GB) / Q5_K_M (21,9 GB): ~24-27 GB.
-  - Q6_K (25,3 GB): ~28-31 GB.
-  - Q8_0 (32,7 GB): ~36-40 GB.
-  - Los ficheros mmproj son complementos del componente multimodal (0,9 GB y 1,3 GB) y se suman al consumo si se activa la vision.
-- GPU recomendadas:
-  - Consumer: RTX 4090 (24 GB) o RTX 3090 (24 GB) para Q4_K_S, Q4_K_M e IQ4_XS; Q5 requiere ajustar contexto o dividir capas con CPU.
-  - Profesional: A100 40 GB o L40S 48 GB para Q5 y Q6_K con contexto amplio; A100 80 GB o H100 80 GB para Q8_0.
-  - Configuraciones multi-GPU: dos GPU de 24 GB permiten Q6_K y Q8_0 repartiendo capas entre dispositivos.
-- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 (16 GB, limitado a Q2_K/Q3_K_S) y tarjetas de 16 GB en general con las cuantizaciones mas agresivas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y text-generation-webui para el formato GGUF; el modelo base en safetensors se usa con transformers (el soporte de GGUF en vLLM es experimental y sujeto a limitaciones). Para servidores compatibles con endpoints, la etiqueta `endpoints_compatible` indica que el repositorio es apto para ese tipo de integracion, aunque no se detalla la configuracion.
-- Latencia y throughput estimados: no disponible. No se han publicado medidas de tokens por segundo ni de latencia en la informacion proporcionada.
+- VRAM estimada para inferencia (aproximada, segun tamano del fichero GGUF mas overhead de contexto):
+  - Q2_K: unos 12 GB.
+  - Q3_K_S / Q3_K_M / Q3_K_L: entre 14 y 17 GB.
+  - IQ4_XS: unos 17 GB.
+  - Q4_K_S / Q4_K_M: entre 18 y 19 GB.
+  - Q5_K_S / Q5_K_M: entre 21 y 22 GB.
+  - Q6_K: unos 25 GB.
+  - Q8_0: unos 33 GB.
+- GPU recomendadas: para Q4_K_M en adelante, GPU con 24 GB o mas (RTX 3090, RTX 4090, A100 40 GB, H100). Para Q2_K y Q3, GPU de 16 GB podrian ser suficientes con contexto reducido.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 o Q5 y contexto moderado; las cuantizaciones Q6 y Q8 requieren 32 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; el repositorio tambien declara compatibilidad con endpoints.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos alternativos identificados en la informacion proporcionada, ni de datos de rendimiento comparables. La model card no cita modelos de referencia, no incluye benchmarks y el propio repositorio base no aparece acompanado de comparativas. Los resultados de busqueda web consultados no contienen informacion relevante sobre este modelo ni sobre modelos comparables (los resultados obtenidos tratan sobre dispositivos sanitarios conectados y no guardan relacion con el objeto de esta ficha).
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Dusky-Rose-31B-GGUF (mradermacher) | ~30,7 B | no disponible | apache-2.0 | GGUF, 11 cuantizaciones | no disponibles |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Dusky-Rose-31B-GGUF | 30,7 B | no disponible | Apache 2.0 | GGUF | Merge orientado a roleplay/storytelling |
+| Modelo base Cyclone-Labs/Dusky-Rose-31B | 30,7 B | no disponible | Apache 2.0 | safetensors | Origen del merge |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay metrica objetiva publicada, por lo que la calidad real del modelo en tareas de razonamiento, codigo o matematicas no puede evaluarse a partir de la informacion disponible. La orientacion declarada es creativa (roleplay y narrativa), no tecnica.
-- Riesgo de alucinacion: al ser un modelo de generacion de texto sin datos de alineamiento documentados, no se puede descartar la invencion de hechos, especialmente si se usa fuera de su dominio previsto.
-- Sesgos conocidos: no disponible. La model card no incluye ninguna seccion de sesgos, consideraciones eticas ni limitaciones declaradas por el autor.
-- Limitacion idiomatica: el campo `language` indica unicamente ingles (`en`). El rendimiento en castellano no esta garantizado ni documentado.
-- Limitacion de contexto: la longitud de contexto no se especifica, lo que impide planificar aplicaciones que dependan de ventanas largas.
-- Degradacion por cuantizacion: el propio autor marca Q3_K_M como "lower quality" y publica grafos que muestran mayor perplejidad en las cuantizaciones bajas (Q2_K, Q3_K_S). Para uso en produccion se recomienda Q4_K_M o superior.
-- Ausencia de cuantizaciones weighted/imatrix: el autor indica que estas variantes no estan disponibles ni planificadas de momento, lo que puede penalizar la calidad respecto a cuantizaciones calibradas.
-- Validacion comunitaria nula: el repositorio registra 0 descargas y 0 likes, sin discusiones publicas que permitan contrastar su comportamiento real.
-- Licencia: el repositorio declara apache-2.0, lo que permite uso comercial. No obstante, al tratarse de una fusion de modelos de terceros, conviene verificar las licencias de los modelos de origen del merge antes de un despliegue comercial, ya que las restricciones de los componentes podrian no quedar cubiertas por la licencia del modelo fusionado.
-- Inconsistencia de metadatos: la fecha de creacion declarada (2026-09-21) resulta anomala y no se corresponde con el estado del repositorio (0 descargas), lo que sugiere un error de metadatos o una publicacion muy reciente sin difusion.
-- Componente multimodal sin documentar: la presencia de ficheros `mmproj` no viene acompanada de instrucciones de uso, ejemplos ni confirmacion de que el modelo base acepte realmente entradas de imagen.
+- Modelo resultante de un merge con mergekit: no hay documentacion sobre el proceso de entrenamiento ni sobre los datos utilizados, lo que dificulta evaluar sesgos y calidad de forma sistematica.
+- Solo soporta ingles; no se debe esperar un rendimiento fiable en castellano u otros idiomas.
+- Riesgo de alucinacion inherente a los modelos generativos de este tamano, sin datos publicados que lo cuantifiquen.
+- No hay benchmarks publicados, por lo que no es posible comparar su rendimiento de forma objetiva con alternativas.
+- La licencia Apache 2.0 permite uso comercial, pero al derivar de un merge cuyos componentes originales no se detallan, conviene verificar las licencias de los modelos fusionados antes de un despliegue en produccion.
+- Las capacidades multimodales sugeridas por los ficheros mmproj no estan documentadas; no deben asumirse en produccion sin validacion.
+- El modelo esta especializado en roleplay y narrativa; su uso para tareas tecnicas (codigo, matematicas, razonamiento formal) no esta respaldado por datos.
+- El repositorio ocupa 213,9 GB, lo que implica descargas considerables si se quieren varias cuantizaciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Dusky-Rose-31B-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Dusky-Rose-31B-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Dusky-Rose-31B
-- Pagina de resumen y lista de descargas del autor: https://hf.tst.eu/model#Dusky-Rose-31B-GGUF
-- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF referenciada por el autor (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa que financia al autor de las cuantizaciones: https://www.nethype.de/
-
-Nota: la busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo, su modelo base, papers asociados ni demos. Todos los enlaces listados proceden de la model card del repositorio.
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Dusky-Rose-31B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Dusky-Rose-31B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico de perplejidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

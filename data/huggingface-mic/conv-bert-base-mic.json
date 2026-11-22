@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2615,
+  "downloads_30d": 2824,
   "trending_score": 0,
   "parameters": 2051556,
   "parameters_human": "2.1M",
@@ -41,5 +41,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "huggingface (Hugging Face)",
+      "url": "https://huggingface.co/huggingface",
+      "snippet": "Papers ... What's new in the hf CLI and huggingface_hub library ... A curriculum for post-training agents ... Tokenmaxxing BERT: 50x …Read more"
+    }
+  ]
 }

@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "kenantabak/yolo26s-knee-xray-acl-detection-tr",
+  "slug": "kenantabak-yolo26s-knee-xray-acl-detection-tr",
+  "author": "kenantabak",
+  "url": "https://huggingface.co/kenantabak/yolo26s-knee-xray-acl-detection-tr",
+  "created_at": "2026-11-22T11:54:34.000Z",
+  "updated_at": "2026-11-22T11:55:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "evren",
+    "ssyz",
+    "yolo26s",
+    "yolo26",
+    "yolo11",
+    "object-detection",
+    "computer-vision",
+    "turkish",
+    "medical-imaging",
+    "tr",
+    "en",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57379976,
+  "storage_human": "57 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Diz Röntgeni Ön Çapraz Bağ (ACL) Bölgesi Tespiti (1 Sınıf)",
+      "metric": "mAP@50 (%)",
+      "value": 99.5
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Diz Röntgeni Ön Çapraz Bağ (ACL) Bölgesi Tespiti (1 Sınıf)",
+      "metric": "mAP@50-95 (%)",
+      "value": 75.06
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Diz Röntgeni Ön Çapraz Bağ (ACL) Bölgesi Tespiti (1 Sınıf)",
+      "metric": "F1 Score (%)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

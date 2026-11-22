@@ -40,12 +40,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 628,
+  "downloads_30d": 629,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
-  "storage_bytes": 10440603616,
-  "storage_human": "10.4 GB",
+  "storage_bytes": 3480200096,
+  "storage_human": "3.5 GB",
   "context_length": 262144,
   "base_model": "Jackrong/Kestrel-4B-Coder",
   "formats": [

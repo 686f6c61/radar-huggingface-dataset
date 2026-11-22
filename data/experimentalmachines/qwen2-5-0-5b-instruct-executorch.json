@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 565,
+  "downloads_30d": 573,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Bridge Base Online - Play Online Bridge",
-      "url": "https://www.bridgebase.com/",
-      "snippet": "Free online bridge. Largest bridge site in the world. Duplicate, tournaments, money games, vugraph, more."
-    },
-    {
-      "title": "BBO - Bridge Base Online – Applications sur Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.bridgebase.BridgeBase&hl=fr",
-      "snippet": "Bienvenue sur Bridge Base Online, la plus grande communauté de bridge au monde ! Que vous soyez un débutant ou un joueur de …"
-    },
-    {
-      "title": "Bridge Base Online (BBO) - Fédération Française de Bridge",
-      "url": "https://www.ffbridge.fr/partners/bridge-base-online-bbo",
-      "snippet": "BBO contient un ensemble complet de produits pour répondre aux besoins des professeurs et des fédérations de bridge. Elle offre …"
-    },
-    {
-      "title": "Bridge Base Online - Bridge.com",
-      "url": "https://bridge.com/jouer/plateformes-jeu/bridge-base-online/",
-      "snippet": "BBO est la plateforme de bridge en ligne la plus populaire et la plus utilisée au monde. Elle offre un accès illimité au jeu social gratuit, …"
-    },
-    {
-      "title": "BBO : Mode d'emploi - Bridge Club du Haut Poitou",
-      "url": "https://scjc-bridge.fr/bbo-mode-demploi",
-      "snippet": "3 days ago · BBO est un logiciel gratuit qui permet de jouer au bridge en ligne seul, avec un ou plusieurs partenaires. On peut y jouer …"
-    }
-  ]
+  "sources": []
 }

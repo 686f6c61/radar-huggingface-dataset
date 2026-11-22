@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "chatpig/starvector-gguf",
+  "slug": "chatpig-starvector-gguf",
+  "author": "chatpig",
+  "url": "https://huggingface.co/chatpig/starvector-gguf",
+  "created_at": "2026-11-22T09:20:57.000Z",
+  "updated_at": "2026-11-22T09:24:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1434095620,
+  "parameters_human": "1.43B",
+  "storage_bytes": 809953312,
+  "storage_human": "810 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatPig — Webcam Chat & Random Video Calls",
+      "url": "https://chatpig.app/",
+      "snippet": "Use ChatPig at chatpig.app for one-on-one browser video chat without logging in. Start with free matches and messages, return for …Read more"
+    },
+    {
+      "title": "ChatPig App — Use on iPhone, Android & Desktop",
+      "url": "https://chatpig.app/app",
+      "snippet": "Use ChatPig in your browser on iPhone, Android, or desktop. Follow real home-screen installation steps where your browser supports …Read more"
+    },
+    {
+      "title": "Chatpig : Chat Cam Aléatoire Gratuit (Appels Vidéo Anonymes)",
+      "url": "https://chatpig.pro/fr/",
+      "snippet": "ChatPig est le seul chat webcam qui propose des salons de discussion séparés pour les femmes, les hommes, les ts, les couples et les …Read more"
+    },
+    {
+      "title": "ChatPig - Cam-to-Cam gratuit",
+      "url": "https://chatpig1.com/fr/",
+      "snippet": "Vous voulez trouver un tchat webcam gratuit, rapide, aléatoire et toujours actif ? ChatPig est la meilleure option : pas d'inscription, …Read more"
+    }
+  ]
+}

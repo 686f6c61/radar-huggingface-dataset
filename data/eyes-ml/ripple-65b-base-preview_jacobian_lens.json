@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "eyes-ml/Ripple-65B-Base-Preview_jacobian_lens",
+  "slug": "eyes-ml-ripple-65b-base-preview_jacobian_lens",
+  "author": "eyes-ml",
+  "url": "https://huggingface.co/eyes-ml/Ripple-65B-Base-Preview_jacobian_lens",
+  "created_at": "2026-11-16T01:53:11.000Z",
+  "updated_at": "2026-11-22T11:23:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "jacobian-lens",
+    "logit-lens",
+    "base_model:ricursiveAI/Ripple-65B-Base-Preview",
+    "base_model:finetune:ricursiveAI/Ripple-65B-Base-Preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8313526174,
+  "storage_human": "8.3 GB",
+  "context_length": null,
+  "base_model": "ricursiveAI/Ripple-65B-Base-Preview",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eye - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eye",
+      "snippet": "The number of lenses in such an eye varied widely; some trilobites had only one while others had thousands of lenses per eye. In …Read more"
+    }
+  ]
+}

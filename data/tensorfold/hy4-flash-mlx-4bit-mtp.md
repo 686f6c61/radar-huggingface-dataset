@@ -2,92 +2,90 @@
 
 ## Resumen
 
-Hy4-flash MLX 4-bit + DFly2 es una conversión comunitaria del modelo multimodal Tencent Hy4-flash al formato MLX con cuantización afín de 4 bits, publicada por TensorFold. El modelo base es un mixture-of-experts (MoE) multimodal de 220.251.201.958 parámetros totales y aproximadamente 12.000 millones de parámetros activos por token, diseñado para tareas de imagen-texto-a-texto y conversación. La conversión empaqueta además el drafter DFly2 de decodificación especulativa junto con los pesos objetivo, con el objetivo de acelerar la generación en Apple Silicon.
+Hy4-flash es un modelo multimodal de tipo mixture-of-experts desarrollado por Tencent, con 220.251.201.958 parámetros totales y aproximadamente 12.000 millones de parámetros activos por token. Acepta entradas de texto e imagen (pipeline `image-text-to-text`) y combina en su pila de lenguaje atención de ventana deslizante, atención dispersa y embeddings Engram. El checkpoint aquí descrito es una conversión no oficial a MLX en 4 bits realizada por TensorFold, que además incluye el drafter DFly2 de decodificación especulativa a precisión de origen.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un checkpoint de 129,9 GB en safetensors MLX que permite ejecutar un MoE multimodal de gran tamaño en hardware de Apple con memoria unificada, algo imposible con los pesos BF16 originales. Por otro, advierte de una limitación crítica: el propio autor indica que la conversión está verificada a nivel de tensores pero el soporte en tiempo de ejecución de TensorFold está pendiente, y la versión 1.2.9 rechaza el checkpoint al no disponer de backend `hy_v4_flash`.
+La relevancia de esta ficha es doble. Por un lado, documenta una de las primeras conversiones cuantizadas de Hy4-flash para Apple Silicon. Por otro, debe subrayarse que se trata de un **checkpoint de vista previa**: la propia model card indica que las comprobaciones de conversión de pesos han pasado, pero que TensorFold 1.2.9 rechaza esta arquitectura al arrancar y que la generación, la paridad de DFly2 y los requisitos de memoria en tiempo de ejecución están pendientes de validación. Es decir, los pesos están publicados y son verificables, pero el motor de inferencia todavía no los soporta.
 
-Se trata, por tanto, de un artefacto útil para investigación y para quienes quieran preparar despliegues futuros, pero no de un modelo listo para producción. La model card se autodenomina "draft model card" y no incluye instrucciones de descarga, uso ni mediciones de rendimiento.
+El modelo base pertenece a la familia Hunyuan de Tencent y se distribuye bajo la Tencent Hy License, una licencia propia con posibles restricciones de uso comercial que conviene revisar antes de cualquier despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts multimodal (vision-language) con atención de ventana deslizante, atención dispersa y Engram embeddings; drafter DFly2 de 5 capas para decodificación especulativa |
+| Arquitectura | Mixture-of-experts multimodal (texto + imagen); pila de lenguaje con atención de ventana deslizante, atención dispersa y embeddings Engram |
 | Parametros totales | 220.251.201.958 |
 | Parametros activos | Aproximadamente 12.000 millones por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MLX afín 4-bit (group size 64 en la mayoría de pesos, 32 en Engram embeddings); torre de visión y gates del router MoE en precisión de origen; pesos del drafter DFly2 en precisión de origen |
-| Idiomas soportados | no disponible |
-| Licencia | tencent-hy-license (Tencent Hy License) |
-| Formato de pesos | Safetensors MLX (148 shards), cuantización afín 4-bit |
-| Tamano del repositorio | 129,9 GB (payload de tensores verificado: 129,86 GB) |
-| Modelo base | tencent/Hy4-flash |
-| Pipeline | image-text-to-text |
-| Libreria | mlx |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | MLX affine 4-bit (grupo de 64 para la mayoría de pesos, 32 para embeddings Engram); existe variante MLX 8-bit; torre de visión y puertas del router MoE a precisión de origen |
+| Idiomas soportados | No disponible |
+| Licencia | Tencent Hy License (`tencent-hy-license`) |
+| Formato de pesos | Safetensors MLX (148 shards); drafter DFly2 en formato upstream a precisión de origen |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Hy4-flash es, según la descripción de Tencent recogida en la model card, un MoE multimodal de 220.000 millones de parámetros totales con unos 12.000 millones activos por token. La pila de lenguaje combina atención de ventana deslizante, atención dispersa y Engram embeddings. El drafter DFly2 consta de cinco capas y reutiliza la caché KV del modelo objetivo y las posiciones de atención dispersa, lo que lo convierte en un mecanismo de decodificación especulativa acoplado al target.
+Hy4-flash es un transformer multimodal con mezcla de expertos. Tencent describe 220.000 millones de parámetros totales con unos 12.000 millones activos por token, lo que sitúa la ratio de activación en torno al 5,5 %. La pila de lenguaje incorpora atención de ventana deslizante, atención dispersa y unos embeddings denominados Engram, una combinación que busca reducir el coste de atención en contextos largos manteniendo capacidad de recuperación de información. El modelo procesa texto e imágenes mediante una torre de visión que, en esta conversión, se mantiene a precisión de origen.
 
-La conversión de TensorFold parte del checkpoint BF16 fijado por Tencent y conserva tokenizer, processor, chat template y configuración de DFly2. La validación reportada incluye la coincidencia de los 148 shards de salida con el índice de tensores, la verificación por muestreo de los pesos empaquetados frente a la cuantización afín de MLX y la coincidencia byte a byte de los 87 tensores de DFly2 con el original. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+El componente DFly2 es un drafter de decodificación especulativa de cinco capas que reutiliza la caché KV y las posiciones de atención dispersa del modelo objetivo; en esta conversión se incluye a precisión de origen y requiere el índice de atención dispersa y la caché KV del modelo principal. La conversión de TensorFold parte del checkpoint BF16 fijado por Tencent y conserva tokenizer, processor, plantilla de chat y configuración de DFly2. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en el pipeline image-text-to-text.
-- Procesamiento de imagen y texto combinados (modelo vision-language con torre de visión en precisión de origen).
-- Razonamiento y generación de código: capacidad inferida del modelo base, sin datos concretos en la información disponible.
-- Decodificación especulativa mediante el drafter DFly2 empaquetado, que reutiliza la caché KV y las posiciones de atención dispersa del modelo objetivo.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno.
+- Comprensión de imágenes y respuesta en modalidad image-text-to-text.
+- Razonamiento y generación de código: no confirmado explícitamente en la información disponible.
+- Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; la model card no declara idiomas.
-- Modo thinking, audio u otras capacidades especiales: no disponible.
+- Capacidades multilingües: no disponibles.
+- Decodificación especulativa mediante el drafter DFly2 incluido en el repositorio.
+- Capacidades especiales (modo thinking, audio): no disponibles.
 
 ## Casos de uso
 
-- Investigación en decodificación especulativa sobre Apple Silicon: el paquete incluye el drafter DFly2 con sus 87 tensores verificados, lo que permite estudiar la paridad entre generación con draft y generación plana una vez exista soporte de runtime.
-- Evaluación de cuantización MLX 4-bit en MoE multimodales: comparar esta conversión con la variante MLX 8-bit del mismo autor (mismo upstream y mismo drafter) para medir el impacto de la cuantización en calidad y memoria.
-- Prototipado de asistentes visuales en estaciones de trabajo Mac: el formato MLX y el tamaño de 129,9 GB apuntan a equipos con memoria unificada amplia, adecuado para pruebas de concepto de image-text-to-text.
-- Desarrollo de infraestructura de inferencia: servir como caso de prueba para implementar el backend `hy_v4_flash` que TensorFold 1.2.9 aún no incluye.
-- Análisis de arquitecturas híbridas de atención: la combinación de ventana deslizante, atención dispersa y Engram embeddings permite estudiar patrones de atención y uso de caché KV en modelos de 220.000 millones de parámetros.
-- Benchmarking de memoria en Apple Silicon: la model card deja pendientes las mediciones de velocidad de decodificación y memoria pico, por lo que el modelo es un candidato directo para generar esos datos.
-- Archivado y reproducibilidad: al conservar tokenizer, processor, chat template y configuración del drafter, el checkpoint sirve como referencia reproducible de la revisión BF16 fijada de Tencent.
+- Asistente conversacional multimodal: el modelo puede mantener diálogos multi-turno combinando texto e imágenes, adecuado para interfaces donde el usuario adjunta capturas o fotografías y espera respuestas razonadas.
+- Análisis de documentos con imágenes: extracción y descripción de contenido visual en flujos de digitalización, aprovechando la torre de visión a precisión completa.
+- Prototipado en Apple Silicon: la variante 4-bit (129,86 GB de pesos) permite experimentar con un MoE de 220.000 millones en hardware de Apple con memoria unificada amplia, aunque sujeta a la validación pendiente del runtime.
+- Investigación en decodificación especulativa: el repositorio incluye el drafter DFly2 y su configuración, lo que lo convierte en material de estudio para reproducir y medir aceleraciones de decodificación especulativa sobre un MoE multimodal.
+- Evaluación comparativa de cuantización: la existencia de variantes 4-bit y 8-bit del mismo modelo permite estudiar la degradación de calidad y el ahorro de memoria entre ambas.
+- Generación de descripciones y etiquetado de imágenes a escala: útil en pipelines de anotación semiautomática donde se requiere un modelo capaz de razonar sobre la imagen y producir texto estructurado.
+- Base para ajuste fino multimodal: al conservar tokenizer, processor y plantilla de chat, sirve como punto de partida para tareas específicas de visión-lenguaje, siempre que la licencia lo permita.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que la velocidad de decodificación y la memoria pico están pendientes de medición en Apple Silicon, y que la paridad entre generación con draft y generación plana está pendiente de soporte de runtime.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas, y advierte de que la paridad entre generación con drafter y generación directa está pendiente de validación en tiempo de ejecución.
 
 ## Requisitos de hardware
 
-- VRAM o memoria unificada estimada: el payload de pesos verificado es de 129,86 GB; la memoria en ejecución depende además de la longitud de contexto, la configuración de caché y las peticiones concurrentes, según advierte el autor.
-- GPU recomendadas: no disponible; el formato MLX está orientado a Apple Silicon, no a GPU NVIDIA.
-- Compatibilidad con GPU de consumo: no confirmada. El tamaño de pesos excede la memoria de cualquier GPU de consumo convencional; en Apple Silicon requiere configuraciones de memoria unificada muy alta, y el autor no ha medido ningún nivel de memoria.
-- Opciones de despliegue: runtime TensorFold (versión 1.2.9 rechaza el checkpoint por falta de backend `hy_v4_flash`); no se documentan otras opciones como vLLM, llama.cpp, Ollama o TGI para este formato.
-- Latencia y throughput: no disponibles; pendientes de medición.
+- Pesos almacenados: 129,86 GB para la variante 4-bit y 239,30 GB para la 8-bit.
+- Memoria en tiempo de ejecución: no disponible; depende del motor, la longitud de contexto, la configuración de caché y las peticiones concurrentes, según la propia model card.
+- Hardware objetivo: Apple Silicon con memoria unificada, dado el formato MLX.
+- GPU NVIDIA (A100, H100, RTX 4090): no soportadas por este checkpoint concreto al estar en formato MLX; requerirían otra conversión.
+- Despliegue: librería MLX; el soporte de runtime depende de las releases de TensorFold y, en la versión 1.2.9, la arquitectura es rechazada al arrancar.
+- Latencia y throughput: no disponibles; pendientes de validación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros totales | Activos | Contexto | Modalidad | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| Hy4-flash MLX 4-bit + DFly2 (esta ficha) | 220.251.201.958 | ~12.000 millones | no disponible | Safetensors MLX 4-bit | tencent-hy-license | Publicado; runtime pendiente |
-| Hy4-flash MLX 8-bit + DFly2 (TensorFold) | no disponible en la información | ~12.000 millones (modelo base) | no disponible | Safetensors MLX 8-bit | tencent-hy-license | Publicado; mismo upstream y drafter |
-| tencent/Hy4-flash (original) | 220.000 millones | ~12.000 millones | no disponible | BF16 | tencent-hy-license | Publicado en Hugging Face |
+| Hy4-flash MLX 4-bit (esta ficha) | 220,25 B | ~12 B | No disponible | Texto + imagen | Tencent Hy License | MLX safetensors 4-bit |
+| Hy4-flash MLX 8-bit (TensorFold) | 220,25 B | ~12 B | No disponible | Texto + imagen | Tencent Hy License | MLX safetensors 8-bit |
+| tencent/Hy4-flash (original) | 220,25 B | ~12 B | No disponible | Texto + imagen | Tencent Hy License | BF16 (upstream) |
 
-No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento frente a otros MoE multimodales de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- El checkpoint no es ejecutable con TensorFold 1.2.9: el runtime lo rechaza al no existir backend `hy_v4_flash`, y DFly2 depende además del índice de atención dispersa y de la caché KV del target.
-- La model card es un borrador: no incluye instrucciones de descarga ni de inicio rápido, y la conversión está verificada pero el soporte de runtime está pendiente.
-- No hay mediciones de rendimiento ni de memoria en Apple Silicon; cualquier estimación de despliegue es especulativa.
-- No se declaran idiomas soportados, lo que impide evaluar cobertura multilingüe.
-- No se documentan sesgos conocidos, tasas de alucinación ni evaluaciones de seguridad del modelo base en la información disponible.
-- La licencia Tencent Hy License es de tipo "other"; debe revisarse el texto completo antes de cualquier uso comercial, ya que las condiciones no se detallan en la model card.
-- El tamaño de 129,9 GB limita el despliegue a entornos con memoria unificada muy amplia; la memoria real en ejecución crece con el contexto y la concurrencia.
-- La torre de visión y los gates del router MoE se mantienen en precisión de origen, por lo que el ahorro de la cuantización 4-bit no es uniforme en todos los componentes.
+- Checkpoint de vista previa: la generación no está validada y TensorFold 1.2.9 rechaza la arquitectura al arrancar.
+- Paridad de DFly2 pendiente: no se ha confirmado que la salida con decodificación especulativa coincida con la generación directa.
+- Requisitos de memoria en runtime desconocidos, lo que impide planificar despliegues con garantías.
+- Conversión no oficial: los pesos han sido transformados por un tercero (TensorFold), no por Tencent.
+- Licencia Tencent Hy License: es una licencia propia, no estándar; deben revisarse las cláusulas de uso comercial antes de producción.
+- Idiomas soportados no documentados; riesgo de comportamiento degradado fuera de los idiomas principales del entrenamiento.
+- Sesgos y alucinaciones: no documentados en la información disponible, pero aplicables por tratarse de un modelo generativo de gran escala.
+- Longitud de contexto no publicada, lo que limita el diseño de aplicaciones que dependan de ventanas largas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/TensorFold/Hy4-flash-MLX-4bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/TensorFold/Hy4-flash-MLX-4bit-MTP
+- Variante MLX 8-bit: https://huggingface.co/TensorFold/Hy4-flash-MLX-8bit-MTP
 - Modelo base: https://huggingface.co/tencent/Hy4-flash/tree/d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959
-- Variante MLX 8-bit del mismo autor: https://huggingface.co/TensorFold/Hy4-flash-MLX-8bit-MTP
 - Licencia Tencent Hy: https://huggingface.co/tencent/Hy4-flash/blob/d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959/LICENSE
+- Releases de TensorFold: https://github.com/ashhart/TensorFold/releases

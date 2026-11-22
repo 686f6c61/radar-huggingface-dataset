@@ -5,7 +5,7 @@
   "author": "WaveCut",
   "url": "https://huggingface.co/WaveCut/Inkling-2-Mini-APEX-I-MiniPlus-V2.1-NInfer-v3",
   "created_at": "2026-11-21T11:29:38.000Z",
-  "updated_at": "2026-11-21T11:30:25.000Z",
+  "updated_at": "2026-11-21T12:14:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

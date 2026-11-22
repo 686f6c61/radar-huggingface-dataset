@@ -2,95 +2,107 @@
 
 ## Resumen
 
-UltraTensor Models es un conjunto de "splices" de expertos derivados del modelo público BatiAI DeepSeek-V4-Pro en formato GGUF Q3_K_M (697,3 GB, 17 shards). El desarrollador, NagusameCS, aplica una técnica de poda selectiva de expertos mediante la herramienta `ultratensor/gguf_keep.py` para conservar únicamente el subconjunto de expertos que un dominio concreto utiliza de forma efectiva, reduciendo drásticamente el tamaño del modelo sin necesidad de reentrenamiento. El resultado son varios archivos GGUF de un solo fichero con 64, 16, 12 u 8 expertos, más versiones requantizadas a IQ2_XS para tarjetas gráficas de 8 GB de VRAM.
+UltraTensor models es una colección de recortes por poda de expertos (*expert splices*) del modelo DeepSeek-V4-Pro, un MoE de 1,6 billones de parámetros desarrollado por DeepSeek. El autor, NagusameCS, publica versiones reducidas en las que cada capa MoE conserva únicamente N de sus 384 expertos enrutados (más el experto compartido, la atención y los embeddings), partiendo del GGUF Q3_K_M publicado por BatiAI. El resultado son ficheros de 28 a 39 GiB que caben en hardware mucho más modesto que el modelo original.
 
-La relevancia de este proyecto reside en su enfoque pragmático: en lugar de distribuir un modelo de 697 GB inmanejable para la mayoría de usuarios, ofrece versiones funcionales de entre 16 y 156 GiB que cargan directamente en llama.cpp con soporte DeepSeek-V4 (línea b10424) o en el fork UltraTensor para los splices con mezcla de densidades. El modelo hereda la licencia MIT del modelo original, lo que permite su redistribución con atribución. Los datos de calidad medidos muestran una perplejidad media de 2,653 en Q3_K_M para el tier keep16u, aunque el tier IQ2_XS de velocidad presenta una calidad sustancialmente inferior (PPL 8,540) con bucles degenerados de tokens en todos los dominios.
+La relevancia de esta release (2026-10-09) es que corrige cuatro defectos de la entrega anterior detectados mediante una auditoría que reconstruyó los ficheros desde su receta y los midió contra el modelo completo: routers cortados en el eje equivocado, selección de expertos basada en una sola capa, capas completamente a cero en `keep12u` y ficheros IQ2_XS que emitían basura. Ahora todos los tiers corregidos cargan en llama.cpp estándar (con soporte de DeepSeek-V4), sin fork propietario.
+
+Conviene subrayar que el propio autor califica estos modelos como «fuertemente degradados»: DeepSeek-V4 reparte el enrutamiento entre muchos expertos, de modo que los 16 expertos más usados de una capa reciben solo alrededor de un quinto del tráfico de enrutamiento. No son versiones pequeñas del modelo original, sino aproximaciones con pérdidas medibles y documentadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) densa-híbrida, derivada de DeepSeek-V4-Pro |
-| Parametros totales | 73.796.795.675 (73,8 B) |
-| Parametros activos | no disponible (modelo MoE con selección de expertos por dominio; keep64 mantiene 64 expertos densos de 384, keep16u/keep12u/keep8u usan 16/12/8 expertos uniformes) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q3_K_M (CPU), IQ2_XS (GPU, 2,36-2,38 BPW) |
-| Idiomas soportados | no disponible (la batería de PPL incluye pruebas multilingües, por lo que se presume cobertura multilingüe) |
-| Licencia | MIT (heredada del modelo original DeepSeek-V4-Pro, verificada el 2026-08-21) |
-| Formato de pesos | GGUF (un solo fichero, split count parcheado) |
+| Arquitectura | Transformer MoE (mixture-of-experts) derivado de DeepSeek-V4-Pro; 384 expertos enrutados por capa más experto compartido; atención de bajo rango en la proyección de salida (`attn_output_a`, `attn_output_b`) |
+| Parametros totales | 73.796.795.675 (dato de safetensors del repo); el modelo base DeepSeek-V4-Pro tiene 1,6 billones |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (los ejemplos de servicio usan `-c 4096`) |
+| Tipos de cuantizacion | Q3_K_M (tiers `keep12u`, `keep16u`); IQ2_XS solo en pesos de expertos enrutados + Q3_K_M en el resto (`keep16u-iq2xs`); IQ2_XS completo en ficheros antiguos (problemáticos) |
+| Idiomas soportados | no disponible (la evaluación incluye texto multilingüe sin especificar idiomas) |
+| Licencia | MIT, heredada de `deepseek-ai/DeepSeek-V4-Pro` a través de la distribución GGUF de BatiAI |
+| Formato de pesos | GGUF (llama.cpp), con ficheros safetensors en el repo (411,7 GB totales) |
 
 ## Arquitectura y entrenamiento
 
-El modelo original DeepSeek-V4-Pro es un MoE híbrido con dos capas de expertos: una capa densa con 384 expertos y una capa hash con 384 expertos, además de un mecanismo de predicción de tokens múltiples (MTP, nextn_predict_layers). Los splices de UltraTensor aplican una poda "keep-N" que conserva únicamente los expertos con mayor masa de routing para un dominio específico (en este caso, código). El tier keep64 mantiene 64 de los 384 expertos densos detrás de una puerta de ancho completo, lo que provoca que llama.cpp estándar rechace el modelo (check_tensor_dims) y requiera el fork UltraTensor (commit b4c34be) que deriva los contadores de expertos por capa de los tensores almacenados y enruta selecciones densas fuera de rango al experto de respaldo 0.
+El modelo base es un transformer con mezcla de expertos: cada capa MoE enruta tokens hacia 384 expertos más un experto compartido, y la proyección de salida de la atención se factoriza en dos matrices de bajo rango. UltraTensor no reentrena nada: parte del GGUF Q3_K_M de BatiAI (17 shards, cada uno verificado contra su sha256 publicado) y aplica una receta de poda que conserva, en cada capa, los N expertos que esa capa concreta utiliza más según una matriz de importancia calculada con `llama-imatrix` sobre el modelo completo (32 × 512 tokens de texto de calibración mixto).
 
-Los splices uniformes (keep16u, keep12u, keep8u) no presentan esta complicación y cargan nativamente en llama.cpp con soporte DeepSeek-V4. El defecto de metadatos MTP se corrige fijando `nextn_predict_layers = 0`. El proceso de construcción no implica entrenamiento adicional: es una poda estructural y posterior requantización de los pesos originales. La calidad se mide con una batería de perplejidad a temperatura 0 que evalúa código, matemáticas, multilingüe, dominios raros y recuperación de "needle".
+La corrección técnica más relevante afecta a los ficheros IQ2_XS: el preset de llama.cpp pone todos los tensores a 2 bits, pero las dos mitades de la proyección de salida de atención de bajo rango no toleran ambas esa precisión, lo que producía salida degenerada (concordancia top-1 del 0 %). En los nuevos ficheros IQ2_XS solo los pesos de los expertos enrutados (la mayor parte de los bytes) están a IQ2_XS, con la imatrix del modelo completo recortada a los expertos conservados; el resto de tensores se copia sin cambios desde el splice Q3_K_M. No se documentan fases de RLHF o DPO propias de esta release; el entrenamiento es el del modelo base.
 
 ## Capacidades
 
-- Generación de texto y código: el modelo está optimizado para tareas de programación, con una PPL en código de 3,000 en el tier keep16u Q3_K_M.
-- Razonamiento matemático: PPL de 2,887 en matemáticas en el mismo tier.
-- Capacidades multilingües: PPL de 2,629 en el test multilingüe.
-- Recuperación de contexto largo: PPL de 2,215 en la prueba de needle de 8 tokens.
-- Mecanismo de predicción de múltiples tokens (MTP) presente en la arquitectura original, desactivado en los splices (`nextn_predict_layers = 0`).
-- Compatibilidad con llama.cpp (línea b10424) y con el fork UltraTensor para cargas mixtas.
-- Requantización a IQ2_XS para GPUs de 8 GB (tier de velocidad, no de calidad).
+- Generación de texto y razonamiento general, con pérdida de fidelidad sustancial respecto al modelo completo.
+- Generación de código: es el dominio donde la degradación es menor (ratio de perplejidad 7,2×–9,1× y concordancia top-1 del 53–55 % en los tiers corregidos).
+- Matemáticas y texto web: degradación severa (ratios de 22×–27× y 18×–20× respectivamente).
+- Texto multilingüe: el dominio más afectado (ratios de 118×–144×, concordancia top-1 del 20–22 %).
+- Carga en llama.cpp estándar con soporte de DeepSeek-V4, verificado tanto en upstream como en la build incluida en Ollama.
+- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repo).
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Desarrollo de código asistido en local: el tier keep16u Q3_K_M en CPU ofrece una PPL de 3,000 en código, adecuado para autocompletado y generación de funciones con llama-server en modo CPU sin necesidad de GPU.
-- Inferencia en GPUs de gama baja: los splices IQ2_XS de 16 a 20,3 GiB caben en tarjetas de 8 GB VRAM con `-ngl 12`, permitiendo desplegar un modelo de código en hardware consumer (RTX 3060/4060) aunque con velocidad limitada (1,2-1,5 tok/s).
-- Evaluación de calidad de cuantización: el proyecto incluye una batería de PPL que permite comparar la degradación entre tiers y cuantizaciones, útil para decidir el punto de equilibrio entre velocidad y calidad.
-- Experimentación con poda de expertos en MoE: el código `ultratensor/gguf_keep.py` y el catálogo `model_catalog.json` permiten reproducir el proceso de splice en otros modelos MoE.
-- Servicio de inferencia en CPU sin aceleración: el tier Q3_K_M con `-ngl 0` es funcional para pruebas locales y entornos sin GPU, con la advertencia de `--no-op-offload` obligatorio.
-- Investigación sobre degradación de calidad en cuantización extrema: los datos de PPL comparativos entre Q3_K_M e IQ2_XS documentan el impacto de la cuantización agresiva en un MoE de código.
+- Experimentación e investigación sobre poda de MoE: los ficheros permiten reproducir la receta (`research/phase1_*.py`, `research/release_hf.py` del proyecto Noble) y estudiar cómo afecta el número de expertos conservados a la perplejidad por dominio, con métricas publicadas de referencia.
+- Evaluación de infraestructura llama.cpp en CPU: con `-ngl 0 --no-repack` se puede medir throughput y latencia de un MoE de ~32–39 GiB sin GPU, útil para dimensionar servidores antes de invertir en aceleradores.
+- Pruebas de despliegue híbrido GPU/CPU: la configuración `--n-cpu-moe 50 --no-op-offload` con 16 GB de VRAM permite validar pipelines de offload de expertos, aunque el autor advierte que esta ruta aún no está verificada.
+- Generación de código en entornos con restricciones de memoria: al ser el dominio menos degradado, `keep16u` puede servir para autocompletado o generación de fragmentos en herramientas internas donde se tolere revisión humana obligatoria.
+- Reproducción de auditorías de cuantización: los fallos documentados (routers cortados en el eje equivocado, IQ2_XS con concordancia 0 %) sirven como casos de prueba para validar nuevas herramientas de cuantización y recortes de imatrix.
+- Docencia sobre arquitecturas MoE: los tiers permiten mostrar en un equipo de sobremesa cómo se comporta un modelo con 384 expertos por capa cuando solo se conservan 12 o 16, sin necesidad de 1,6 billones de parámetros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K) en la informacion disponible. Los unicos datos de calidad son las medidas de perplejidad (PPL) del propio autor, a temperatura 0:
+Evaluación con `llama-perplexity` contra la distribución next-token del modelo completo sobre texto retenido (6 × 512 tokens por dominio). Cada celda indica ratio de perplejidad respecto al modelo completo y concordancia top-1 con él. Perplejidad del modelo completo: 2,48 en código, 4,45 en matemáticas, 5,43 en web y 1,86 en multilingüe.
 
-| Tier | PPL media | Codigo | Matematicas | Multilingue | Raro | Needle |
+| Tier | Quant | GiB | code | math | web | multilingual |
 |---|---|---|---|---|---|---|
-| keep16u Q3_K_M (CPU) | 2,653 | 3,000 | 2,887 | 2,629 | 2,536 | 2,215 (8 tokens) |
-| keep16u IQ2_XS (GPU) | 8,540 | 8,528 | 8,631 | 8,458 | 8,568 | 8,517 (16 tokens) |
+| `keep12u` | Q3_K_M | 32,2 | 7,8× / 53 % | 22,3× / 31 % | 17,8× / 30 % | 118,1× / 22 % |
+| `keep16u` | Q3_K_M | 39,3 | 7,2× / 55 % | 22,9× / 32 % | 18,3× / 31 % | 129,9× / 21 % |
+| `keep16u-iq2xs` | IQ2_XS experts + Q3_K_M | 28,1 | 9,1× / 53 % | 26,9× / 31 % | 20,0× / 31 % | 143,6× / 20 % |
 
-En rendimiento de inferencia, el autor reporta para keep64 en CPU (nodo node2): prefill de 31 tokens en 291 segundos y decodificación de 8 tokens en 42,8 segundos (0,16 tok/s, limitado por NFS). El tier IQ2_XS alcanza 1,2-1,5 tok/s en una GPU de 8 GB VRAM.
+Ficheros anteriores, para comparación (misma prueba):
+
+| Tier | Quant | code | math | web | multilingual |
+|---|---|---|---|---|---|
+| `keep8u` (anterior) | Q3_K_M | 12,3× / 51 % | 27,5× / 31 % | 21,0× / 29 % | 145,0× / 21 % |
+| `keep12u` (anterior) | Q3_K_M | 12,5× / 50 % | 27,2× / 30 % | 21,5× / 30 % | 140,2× / 20 % |
+| `keep16u` (anterior) | Q3_K_M | 12,0× / 50 % | 26,3× / 30 % | 21,3× / 29 % | 130,9× / 21 % |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los tiers IQ2_XS (16,0-24,7 GiB) caben en GPUs de 8 GB VRAM con `-ngl 12`; los tiers Q3_K_M (25,0-156,1 GiB) requieren CPU o GPUs de gran VRAM.
-- GPU recomendadas: para IQ2_XS, cualquier GPU con 8 GB VRAM (RTX 3060/4060, A2000); para Q3_K_M completo, se requiere CPU con suficiente RAM o GPU de 24 GB o superior.
-- Compatibilidad con consumer GPU: sí, los tiers IQ2_XS están diseñados para ello, aunque con calidad degradada y bucles degenerados de tokens en todos los dominios.
-- Opciones de despliegue: llama-server de llama.cpp (b10424 o fork UltraTensor), compatible con `--no-op-offload` obligatorio en todos los tiers Q3_K y IQ2_XS.
-- Latencia y throughput estimados: 0,16 tok/s en CPU para keep64; 1,2-1,5 tok/s en GPU 8 GB para IQ2_XS. El tier Q3_K_M en CPU ofrece una velocidad no especificada pero superior al keep64.
+- VRAM/RAM: los pesos no-expertos de cualquier tier ocupan unos 10,7 GiB. Tamaño total por tier: 28,1 GiB (`keep16u-iq2xs`), 32,2 GiB (`keep12u`), 39,3 GiB (`keep16u`).
+- GPU recomendadas: no especificadas por el autor. La única GPU mencionada en las pruebas es una RTX 5060 Ti (CUDA 12.9) usada con `llama-perplexity`; con `--no-op-offload` obligatorio para evitar un fallo de acceso ilegal a memoria durante el procesamiento de prompt.
+- Configuración híbrida documentada: 16 GB de VRAM más expertos en CPU mediante `--n-cpu-moe 50 --no-op-offload`, marcada como «not yet verified».
+- CPU: todos los ficheros corregidos se verificaron en CPU con `llama-server -m <fichero> -c 4096 -ngl 0 --no-repack`.
+- Despliegue: llama.cpp upstream y la build incluida en Ollama. El fichero antiguo `keep64-iq2xs` requiere el fork de llama.cpp de UltraTensor y no carga en llama.cpp estándar.
+- Latencia y throughput: no disponibles; el autor indica que el servicio en GPU sigue en medición.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria (MoE de codigo como DeepSeek-Coder-V2-Lite o Qwen2.5-Coder-32B) en la informacion proporcionada. Como referencia estructural:
-
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Calidad relativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UltraTensors keep16u | 73,8 B (MoE, 16 expertos) | no disponible | Q3_K_M, IQ2_XS | MIT | GGUF en HF |
-| DeepSeek-V4-Pro (original) | 73,8 B (MoE, 384 expertos) | no disponible | Q3_K_M | MIT | GGUF |
-| DeepSeek-V2-Lite | 16 B (MoE) | 128 K | no disponible | MIT | HF |
+| UltraTensor `keep16u` | 73,8 B (splice de 16 de 384 expertos) | no disponible | 7,2× perplejidad en código, 55 % top-1 vs. DeepSeek-V4-Pro | MIT | GGUF en HF, llama.cpp estándar |
+| UltraTensor `keep16u-iq2xs` | 73,8 B | no disponible | 9,1× en código, 53 % top-1 | MIT | GGUF en HF, llama.cpp estándar |
+| UltraTensor `keep64-iq2xs` | no disponible | no disponible | no disponible | MIT | GGUF en HF, solo fork de UltraTensor |
+| DeepSeek-V4-Pro (modelo completo) | 1,6 T | no disponible | Referencia (perplejidad 2,48 en código) | MIT (según herencia indicada) | Pesos originales y GGUF Q3_K_M de BatiAI |
 
-La comparativa con DeepSeek-V4-Pro original es la más relevante: los splices reducen el tamaño de 697,3 GB a 25-156 GiB a costa de perder masa de routing en dominios no objetivo, pero manteniendo la calidad en el dominio de código.
+No se dispone de datos de benchmarks estándar para comparar con alternativas de otros autores de tamaño similar; la comparación disponible es exclusivamente interna contra el modelo completo y las releases anteriores del mismo repositorio.
 
 ## Limitaciones y advertencias
 
-- El tier IQ2_XS presenta bucles degenerados de tokens en todos los dominios, por lo que no es apto para uso en producción de calidad; es un tier de velocidad para pruebas.
-- El tier keep64 requiere el fork UltraTensor de llama.cpp (commit b4c34be) y no carga con el llama.cpp estándar.
-- La decodificación de secuencias largas (>45 tokens) en GPU requiere otro fork (commit 95fcdad) con correcciones de MMQ y cuBLAS.
-- El flag `--no-op-offload` es obligatorio en todos los tiers Q3_K e IQ2_XS; omitirlo provoca cuelgues a partir de 36 tokens de prompt y corrupción silenciosa en prompts cortos.
-- La velocidad de inferencia en CPU es extremadamente lenta (0,16 tok/s en keep64), limitando su uso interactivo.
-- El modelo es un splice de un modelo base, no un modelo entrenado desde cero; no se han realizado evaluaciones de seguridad, sesgos o alucinaciones.
-- No hay información sobre el comportamiento de tool calling, function calling o capacidades de agentes en este modelo.
-- La licencia MIT permite uso comercial y redistribución, pero con atribución obligatoria al autor original (DeepSeek y BatiAI).
+- Modelos fuertemente degradados por diseño: el autor advierte explícitamente de hechos erróneos y bucles en texto general. La concordancia top-1 con el modelo completo se sitúa entre el 20 % y el 55 % según dominio y tier.
+- Multilingüe prácticamente inservible en estos recortes: ratios de perplejidad de 118× a 144× respecto al modelo completo.
+- `keep8u` está deprecado: tanto el fichero anterior como una reconstrucción corregida degeneran en repetición («a a a a ...»). No debe usarse.
+- `keep12u-iq2xs` sigue marcado como roto (concordancia top-1 del 0 %, salida basura) a la espera de una recuantización corregida.
+- `keep8u-iq2xs` está deprecado por el mismo motivo y no se recuantizará.
+- `keep64-iq2xs` solo carga con el fork de llama.cpp de UltraTensor, no con llama.cpp estándar.
+- El servicio en GPU no está verificado; en la RTX 5060 Ti fue necesario `--no-op-offload` para evitar un fallo de acceso ilegal a memoria.
+- La licencia MIT se hereda del modelo base a través de la distribución GGUF de BatiAI; conviene verificar los términos aplicables al modelo original antes de un uso comercial.
+- No hay información publicada sobre sesgos, idiomas soportados ni longitud de contexto; los ejemplos de servicio usan 4096 tokens.
 
 ## Enlaces
 
-- Hub de modelos: https://huggingface.co/NagusameCS/ultratensor-models
-- Model card sincronizada: https://huggingface.co/NagusameCS/ultratensor-models/blob/main/README.md
-- GitHub de NagusameCS: https://github.com/NagusameCS/
-- Fork "civilized" de HyperTensor: https://github.com/Nagusamenotame
-- Paper técnico: referenciado en `docs/paper/ultratensor.tex` (no accesible públicamente)
-- Preprint: `docs/PREPRINT.md` (no accesible públicamente)
+- Repositorio Hugging Face: https://huggingface.co/NagusameCS/ultratensor-models
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+- GGUF de origen (BatiAI): `batiai/DeepSeek-V4-Pro-GGUF` (referenciado en la model card; sin URL directa en la información disponible)
+- Proyecto Noble (receta, auditoría y mediciones): rutas `research/phase1_*.py` y `research/release_hf.py` citadas en la model card; sin URL directa en la información disponible
+- Catálogo de hashes: `model_catalog.json` en el repositorio
+- llama.cpp: no se proporciona URL en la información disponible

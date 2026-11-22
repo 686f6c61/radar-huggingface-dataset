@@ -2,92 +2,104 @@
 
 ## Resumen
 
-kaggle-llm-124m-chat es un modelo de lenguaje conversacional de 123,6 millones de parametros entrenado desde cero por el desarrollador independiente somdevsheel. Se trata de un proyecto de aprendizaje que reproduce el ciclo completo de entrenamiento de un LLM a pequena escala: preentrenamiento sobre 0,98 mil millones de tokens de FineWeb-Edu y posterior ajuste supervisado (SFT) sobre 226.000 conversaciones del dataset smol-smoltalk. Todo el entrenamiento se realizo en GPUs gratuitas de Kaggle (2x NVIDIA T4) en aproximadamente 12,6 horas en total.
+kaggle-llm-124m-chat es un modelo de lenguaje conversacional de 123,6 millones de parámetros entrenado desde cero por el desarrollador independiente somdevsheel. Se trata de un proyecto formativo cuyo objetivo es demostrar el ciclo completo de entrenamiento de un LLM (preentrenamiento y ajuste supervisado) utilizando exclusivamente GPUs gratuitas de Kaggle (2x NVIDIA T4). El modelo parte de un preentrenamiento sobre 1.920 millones de tokens de FineWeb-Edu y posteriormente se ajusta con 226.000 conversaciones del dataset smol-smoltalk.
 
-El modelo sigue una arquitectura transformer decoder-only de estilo LLaMA (RoPE, RMSNorm pre-norm, SwiGLU, sin sesgos y embeddings atados) con 12 capas, dimension oculta de 768 y una ventana de contexto de 1024 tokens. Utiliza el tokenizador BPE de GPT-2 con el vocabulario ampliado a 50.304 entradas. Los pesos son un `LlamaForCausalLM` estandar, lo que permite cargarlo directamente con `transformers`.
+La arquitectura es un transformer decoder-only de estilo LLaMA con 12 capas, dimensión oculta de 768, 12 cabezas de atención y una ventana de contexto de 1.024 tokens. Utiliza RoPE, RMSNorm con pre-normalización, SwiGLU, ausencia de sesgos y embeddings atados, junto con el tokenizador BPE de GPT-2 (vocabulario ampliado a 50.304 entradas).
 
-Su relevancia es fundamentalmente educativa y de investigacion: demuestra que es posible completar un pipeline de preentrenamiento y alineacion conversacional en hardware de gama baja, y sirve como referencia reproducible para quienes quieran entender el proceso. No esta pensado como asistente de produccion: el propio autor advierte que el modelo afirma hechos incorrectos con seguridad y que su conocimiento es muy limitado (8 tokens por parametro frente a los ~20 optimos segun Chinchilla).
+Su relevancia es principalmente educativa y de referencia: muestra qué se puede conseguir con recursos de cómputo muy limitados y publica todos los detalles del proceso (pasos, tasas de aprendizaje, pérdidas de validación). No está pensado como asistente de producción; el propio autor advierte que tiende a afirmar hechos falsos con seguridad y que solo maneja inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only estilo LLaMA (RoPE, RMSNorm pre-norm, SwiGLU, sin sesgos, embeddings atados) |
-| Parametros totales | 123.587.328 (85,0M no pertenecientes a embeddings) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 1024 tokens |
-| Tipos de cuantizacion | no disponible (se distribuyen pesos safetensors y ONNX; el autor no documenta cuantizaciones GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Ingles (en) |
+| Parametros totales | 123.587.328 (85,0M no correspondientes a embeddings) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 1.024 tokens |
+| Tipos de cuantizacion | No disponible (el repositorio incluye pesos safetensors y ONNX; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, ONNX |
-| Capas / dimension oculta / cabezas | 12 / 768 / 12 |
-| FFN | 2048 |
 | Tokenizador | BPE de GPT-2 (vocabulario ampliado a 50.304) |
-| Tamano del repo | 0,6 GB |
+| Capas / dimension oculta / cabezas | 12 / 768 / 12 |
+| Dimension FFN | 2.048 |
+| Modelo base | somdevsheel/kaggle-llm-124m-base |
+| Dataset de SFT | HuggingFaceTB/smol-smoltalk (226K conversaciones) |
+| Descargas en Hugging Face | 555 |
+| Tamano del repositorio | 1,3 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de 12 capas con atencion multi-cabeza (12 cabezas de 64 dimensiones), normalizacion RMSNorm en configuracion pre-norm, activacion SwiGLU en la FFN de 2048 unidades y embeddings atados entre entrada y salida. Emplea codificacion posicional rotatoria (RoPE) y prescinde de terminos de sesgo en las capas lineales. El tokenizador es el BPE de GPT-2 con el vocabulario rellenado hasta 50.304 entradas.
+El modelo sigue una arquitectura transformer decoder-only estándar de tipo LLaMA: 12 capas con atención multi-cabeza (12 cabezas), dimensión oculta de 768, FFN de 2.048 con activación SwiGLU, normalización RMSNorm con pre-norm, codificación posicional rotatoria (RoPE), sin términos de sesgo y con embeddings de entrada y salida atados. El tokenizador es el BPE de GPT-2, con el vocabulario rellenado hasta 50.304 entradas.
 
-El entrenamiento se dividio en dos fases. El preentrenamiento consumio 0,98 mil millones de tokens de la muestra sample-10BT de FineWeb-Edu durante 1.865 pasos de 524K tokens (10,9 horas en 2x T4), alcanzando una perdida de validacion de 3,43 (perplejidad 31). Se uso entrenamiento distribuido con PyTorch DDP, precision mixta fp16 con escalado de perdida, AdamW (betas 0,9 y 0,95), weight decay 0,1 y un schedule coseno con LR pico de 1,2e-3, ajustado dinamicamente para caber en el limite de 12 horas por sesion de Kaggle. La fase de SFT consumio 226.000 conversaciones de smol-smoltalk empaquetadas en bloques de 1024 tokens (92% de ocupacion, first-fit packing) durante 2.442 pasos de 65K tokens (1,7 horas), con LR de 2e-4 y calculo de perdida unicamente sobre los tokens del asistente; la perdida de validacion en esos tokens bajo de 2,79 a 1,61. No se aplico RLHF ni DPO.
+El entrenamiento se dividió en dos fases. El preentrenamiento consumió 1.920 millones de tokens de FineWeb-Edu (muestra sample-10BT) durante 3.661 pasos de 524K tokens cada uno (dos ejecuciones), aproximadamente 21 horas en 2x T4, alcanzando una pérdida de validación de 3,30 (perplejidad 27). Se usó PyTorch DDP en 2 GPUs, precisión mixta fp16 con escalado de pérdida, AdamW (betas 0,9/0,95), weight decay 0,1 y scheduler coseno; la tasa de aprendizaje inicial fue 1,2e-3 y se continuó el preentrenamiento a 6e-4 sobre datos no vistos. El planificador coseno se ajustó automáticamente al límite de 12 horas por sesión de Kaggle. La fase de SFT empleó 226K conversaciones de smol-smoltalk empaquetadas en bloques de 1.024 tokens (92 % de ocupación), 2.442 pasos de 65K tokens, 1,7 horas en 2x T4 y una tasa de aprendizaje de 2e-4; la pérdida se calculó únicamente sobre los tokens del asistente, bajando de 2,65 a 1,54. No se aplicó RLHF ni DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno siguiendo el formato de chat con etiquetas `<|system|>`, `<|user|>` y `<|assistant|>`, terminando cada turno del asistente con `<|endoftext|>`.
-- Escritura de codigo corto y bien especificado (por ejemplo, inversion de cadenas o comprobacion de primalidad); el propio autor senala que codigo mas largo o con especificaciones vagas suele fallar.
-- Respuestas a preguntas generales y tareas sencillas de razonamiento, aunque con alta propension a errores factuales.
-- Capacidad multilingue: no disponible; el modelo solo maneja ingles.
-- Tool calling / function calling: no disponible; no se documenta soporte.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades especiales (vision, audio, modo thinking): no disponible.
+- Generación de texto conversacional en inglés siguiendo el formato de chat con etiquetas `<|system|>`, `<|user|>` y `<|assistant|>`, terminando cada turno del asistente con `<|endoftext|>`.
+- Escritura de código corto y sencillo (por ejemplo, inversión de cadenas o comprobación de primalidad), con fiabilidad decreciente a medida que aumenta la longitud o la ambigüedad de la especificación.
+- Razonamiento básico de un solo paso; no se documenta modo de pensamiento (thinking) ni razonamiento multi-paso.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes: no disponible.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Multilingüismo: únicamente inglés.
+- Inferencia compatible con `transformers`, text-generation-inference y endpoints; pesos también en ONNX.
 
 ## Casos de uso
 
-- Docencia y aprendizaje de LLMs: sirve como ejemplo reproducible de un pipeline completo de preentrenamiento mas SFT en hardware modesto (2x T4), util para cursos y talleres sobre entrenamiento de modelos desde cero.
-- Experimentacion academica con modelos pequenos: su tamano (123M) y licencia Apache 2.0 permiten usarlo como linea base en estudios sobre alineacion, empaquetado de datos o schedules de learning rate.
-- Pruebas de infraestructura de inferencia: al ser un `LlamaForCausalLM` estandar con tokenizador GPT-2, se puede desplegar en entornos de prueba para validar pipelines de `transformers`, TGI o servidores compatibles con endpoints antes de migrar a modelos mayores.
-- Generacion de codigo trivial en entornos controlados: puede producir funciones cortas y bien especificadas (inversion de cadenas, comprobacion de primos) para demos o tests de integracion de herramientas de generacion de codigo, sin uso en produccion real.
-- Chatbots de demostracion y prototipado de interfaces: su formato de chat explicito permite integrarlo en maquetas de UI conversacional para validar flujos de usuario sin coste de API.
-- Investigacion sobre calibracion y alucinacion: su tendencia documentada a afirmar hechos falsos con seguridad lo convierte en un sujeto de estudio util para tecnicas de deteccion de alucinaciones en modelos de baja capacidad.
-- Fine-tuning posterior: al estar bajo Apache 2.0 y con pesos safetensors, puede servir de punto de partida para experimentos de ajuste en dominios muy acotados donde 124M de parametros y 1024 tokens de contexto sean suficientes.
+- Docencia y formación en LLMs: sirve como ejemplo completo y reproducible de preentrenamiento más SFT con presupuesto mínimo (2x T4, ~23 horas totales), permitiendo a estudiantes inspeccionar cada hiperparámetro y curva de pérdida.
+- Experimentación académica con modelos pequeños: base para estudiar técnicas de empaquetado de secuencias, ajuste del scheduler coseno a límites de sesión o cálculo de pérdida solo en tokens del asistente.
+- Prototipado rápido de interfaces de chat: al ser un `LlamaForCausalLM` estándar con tokenizador GPT-2, se integra sin fricción en pipelines de `transformers` y en entornos de demostración con pocos recursos.
+- Pruebas de infraestructura de despliegue: su tamaño (123,6M parámetros) permite validar configuraciones de vLLM, TGI, ONNX Runtime o endpoints de Hugging Face antes de migrar a modelos mayores.
+- Generación de código trivial en entornos controlados: útil para autocompletar funciones cortas y bien especificadas (inversión de cadenas, comprobación de primos) en ejercicios o tests internos, nunca en producción crítica.
+- Investigación sobre alucinación en modelos pequeños: su relación de ~16 tokens por parámetro (frente a los ~20 óptimos de Chinchilla) lo convierte en un caso de estudio útil para medir cómo la escasez de datos afecta a la fidelidad factual.
+- Generación de datos sintéticos de baja calidad para pruebas de pipelines: útil para comprobar el comportamiento de sistemas de filtrado o evaluación automática frente a salidas imperfectas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica reportada es la perdida de validacion: 3,43 (perplejidad 31) tras el preentrenamiento y 1,61 en tokens del asistente tras el SFT.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas internas de entrenamiento:
+
+| Metrica | Valor |
+|---|---|
+| Perdida de validacion en preentrenamiento | 3,30 (perplejidad 27) |
+| Perdida de validacion en SFT (tokens del asistente) | 2,65 -> 1,54 |
+| Tokens de preentrenamiento | 1.920 millones |
+| Tokens por parametro | ~16 (frente a ~20 optimos de Chinchilla) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,25 GB en fp16 (123,6M parametros x 2 bytes) mas overhead de activaciones; en la practica cabe en cualquier GPU con 2 GB o mas. En cuantizacion de 8 bits rondaria los 0,13 GB y en 4 bits los 0,07 GB, aunque el autor no distribuye pesos cuantizados.
-- GPU recomendadas: cualquier GPU moderna; el modelo fue entrenado en 2x NVIDIA T4 y la inferencia funciona sin problemas en T4, RTX 3060, RTX 4090, A100 o H100.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con al menos 2 GB de VRAM, e incluso en CPU con latencia aceptable dado su tamano.
-- Opciones de despliegue: `transformers` (soporte nativo, incluido `text-generation-inference` segun los tags del repo), ONNX Runtime (hay pesos ONNX en el repositorio) y, en general, cualquier runtime compatible con arquitectura LLaMA. No se documentan recetas especificas para llama.cpp, Ollama o vLLM.
-- Latencia y throughput estimados: no disponible en la informacion proporcionada; por el tamano del modelo se espera una latencia muy baja en GPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia en fp16: aproximadamente 250 MB para los pesos (123,6M parametros x 2 bytes), mas overhead de activaciones y cache KV, en torno a 0,5-1 GB en total con contexto de 1.024 tokens.
+- Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs de 4 GB o en CPU.
+- GPU recomendadas para entrenamiento o ajuste fino: 2x NVIDIA T4 (la configuracion original), o cualquier GPU con al menos 8-16 GB para reentrenar con margen.
+- Opciones de despliegue: `transformers` (soporte nativo), text-generation-inference (tag `text-generation-inference`), endpoints compatibles de Hugging Face, ONNX Runtime (pesos ONNX incluidos). No se documentan pesos GGUF ni integracion con llama.cpp u Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por tamano, se espera decodificacion muy rapida en GPU moderna, pero no hay cifras publicadas.
+- Parametros de muestreo recomendados por el autor: temperature 0,7, top-k 50, repetition penalty 1,15.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| kaggle-llm-124m-chat | 123,6M | 1024 | Apache 2.0 | Ingles | Entrenado desde cero en 2x T4; SFT sobre smol-smoltalk |
-| SmolLM-135M (HuggingFaceTB) | 135M | 2048 | Apache 2.0 | Ingles | Entrenado sobre un corpus mucho mayor; referencia habitual para modelos de este tamano |
-| GPT-2 small (OpenAI) | 124M | 1024 | MIT | Ingles | Modelo historico sin ajuste conversacional nativo |
-| TinyLlama-1.1B (TinyLlama) | 1,1B | 2048 | Apache 2.0 | Ingles | Un orden de magnitud mayor; mayor calidad pero mas requisitos de hardware |
+| kaggle-llm-124m-chat | 123,6M | 1.024 | Ingles | Apache 2.0 | Entrenado desde cero en 2x T4; sin RLHF/DPO; proyecto educativo |
+| SmolLM-135M (HuggingFaceTB) | 135M | 2.048 (segun version) | Ingles y otros | Apache 2.0 | Entrenamiento a mayor escala; usado como referencia de la familia smol |
+| GPT-2 small (OpenAI) | 124M | 1.024 | Ingles | MIT (pesos) | Referencia historica de mismo orden de magnitud; sin ajuste conversacional |
+| TinyLlama-1.1B (TinyLlama) | 1,1B | 2.048 | Ingles | Apache 2.0 | Un orden de magnitud mayor; mayor calidad pero mas recursos |
 
-La comparacion con SmolLM-135M y GPT-2 small es la mas directa por tamano y contexto. No se dispone de datos de benchmarks de kaggle-llm-124m-chat que permitan una comparacion cuantitativa de rendimiento; la diferencia principal con alternativas como SmolLM-135M radica en el volumen de entrenamiento (0,98B tokens frente a volumenes muy superiores) y en la ausencia de alineacion adicional.
+Los datos de SmolLM-135M, GPT-2 small y TinyLlama-1.1B se incluyen como referencia de categoria; no se dispone de comparaciones benchmark publicadas entre kaggle-llm-124m-chat y estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Alucinacion severa: el autor documenta que el modelo afirma hechos incorrectos con seguridad; por ejemplo, inventa una definicion de "DSA" en ciencias de la computacion. El ratio de 8 tokens por parametro (frente a los ~20 optimos de Chinchilla) implica un conocimiento muy limitado.
-- Solo ingles: no soporta castellano ni otros idiomas.
-- Sin ajuste de seguridad ni preferencias: no se aplico RLHF ni DPO, por lo que no hay garantias de comportamiento seguro o alineado.
-- Codigo: funciones cortas y bien especificadas pueden ser correctas, pero codigo mas largo o ambiguo suele fallar; no apto para generacion de codigo en produccion.
-- Contexto muy corto (1024 tokens): limita conversaciones largas y tareas que requieran documentos extensos.
-- No usar para respuestas factuales, medicas, legales o financieras: el propio autor lo desaconseja explicitamente.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero al ser un proyecto de aprendizaje no hay garantias de calidad ni soporte.
-- Sin datos de benchmarks publicados: no es posible evaluar su rendimiento frente a alternativas con metricas objetivas.
+- Alucinacion elevada: con ~16 tokens por parametro (frente a los ~20 de Chinchilla), el conocimiento factual es muy limitado; el autor cita como ejemplo que inventa una definicion de "DSA en ciencias de la computacion".
+- Solo ingles; no hay soporte multilingue.
+- Sin ajuste de seguridad ni entrenamiento de preferencias (sin RLHF ni DPO): puede generar contenido inapropiado o inseguro.
+- Codigo fiable solo en casos cortos y bien especificados; fragmentos largos o ambiguos suelen ser incorrectos.
+- No debe usarse para respuestas factuales, medicas, legales o financieras.
+- Contexto muy corto (1.024 tokens), insuficiente para documentos largos o conversaciones extensas.
+- Licencia Apache 2.0: permite uso comercial, pero el autor desaconseja explicitamente su uso en produccion por su baja calidad y fiabilidad.
+- El modelo se presenta como proyecto de aprendizaje, no como asistente de produccion; no hay garantias de mantenimiento ni actualizaciones.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/somdevsheel/kaggle-llm-124m-chat
-- Modelo base (solo preentrenamiento): https://huggingface.co/somdevsheel/kaggle-llm-124m-base
+- Modelo base (solo preentrenado): https://huggingface.co/somdevsheel/kaggle-llm-124m-base
 - Dataset de preentrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset de SFT smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

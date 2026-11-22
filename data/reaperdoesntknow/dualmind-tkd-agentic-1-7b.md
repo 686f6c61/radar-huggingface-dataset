@@ -2,89 +2,94 @@
 
 ## Resumen
 
-DualMind TKD Agentic 1.7B es un modelo de lenguaje derivado de Qwen/Qwen3-1.7B, desarrollado por reaperdoesntknow (Convergent Intelligence LLC / Reaper). Se construye en dos etapas: primero una destilación de conocimiento matemático guiada por topología desde Qwen/Qwen3-8B, y después una especialización agéntica y de function calling mediante LoRA fusionado. El objetivo es transferir comportamiento de razonamiento matemático a un modelo pequeño y añadir capacidades de llamada a herramientas sin perder el conocimiento previo.
+DualMind TKD Agentic 1.7B es un modelo de lenguaje derivado de Qwen/Qwen3-1.7B, desarrollado por Convergent Intelligence LLC (bajo el alias reaperdoesntknow). Se trata de un fine-tuning en dos etapas que combina destilación de conocimiento matemático guiada por topología con una especialización posterior en function calling y comportamiento agéntico. El modelo resuelve el problema de dotar a un modelo pequeño de 1.700 millones de parámetros de capacidades de razonamiento matemático estructurado y de invocación de herramientas, partiendo de un modelo base ya competente en contexto largo.
 
-El modelo resuelve el problema de combinar razonamiento matemático con uso estructurado de herramientas en un tamaño de 1.720.574.976 parámetros (1,7B), lo que lo hace desplegable en hardware modesto. Su relevancia actual radica en que explora técnicas de destilación con señales estructurales (discrepancia de distribuciones del profesor, topología de transiciones, diagnósticos de energía de gap) sobre un transformer decoder-only de Qwen3, y en que publica el pipeline completo de dos etapas con replay matemático para mitigar el olvido catastrófico.
+La primera etapa realiza un fine-tuning completo del modelo usando Qwen/Qwen3-8B como profesor sobre un dataset de cálculo avanzado con chain-of-thought, aplicando señales estructurales como discrepancia de distribuciones y topología de transiciones. La segunda etapa aplica LoRA sobre el dataset Hermes function-calling v1 y fusiona los pesos, mezclando replay matemático para mitigar el olvido catastrófico. El resultado es un modelo autónomo que no requiere adaptador PEFT separado para inferencia.
 
-La arquitectura es la de Qwen3-1.7B, un transformer decoder-only con atención estándar. El contexto no está especificado en la información disponible. Los idiomas declarados se limitan al inglés. La licencia figura como "other" por incertidumbre sobre los términos del dataset de cálculo avanzado, aunque el modelo base y el dataset de function calling son Apache-2.0.
+Es relevante ahora porque explora técnicas de destilación topology-aware en modelos pequeños, un área activa de investigación para reducir costes de despliegue manteniendo capacidades de razonamiento y uso de herramientas. No obstante, el autor no publica resultados formales de benchmarks y advierte explícitamente que debe evaluarse antes de uso en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3) |
-| Parámetros totales | 1.720.574.976 (1,7B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (solo safetensors publicados) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | other (modelo base Apache-2.0; dataset de cálculo sin licencia clara) |
+| Arquitectura | Transformer decoder-only (base Qwen3-1.7B) |
+| Parametros totales | 1.720.574.976 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Qwen3-1.7B; el autor no la especifica en la model card) |
+| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se documentan GGUF ni cuantizaciones publicadas) |
+| Idiomas soportados | ingles (en) |
+| Licencia | other (base Apache-2.0, dataset de calculo sin licencia clara) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-1.7B, un transformer decoder-only. El entrenamiento se divide en dos etapas. La primera es una destilación de conocimiento guiada por topología: el estudiante es Qwen3-1.7B, el profesor es Qwen/Qwen3-8B y el dataset es 0xZee/dataset-CoT-Advanced-Calculus-268. Se realiza fine-tuning de todo el modelo con un objetivo de entropía cruzada supervisada más destilación del profesor con top-k disperso y cola. Las señales estructurales incluyen discrepancia de distribuciones del profesor, topología de transiciones, diagnósticos de energía de gap y supervisión ponderada por fases Explore/Examine/Response, con presión adicional sobre derivación, verificación y transiciones de razonamiento de alta discrepancia.
+El modelo parte de la arquitectura Qwen3-1.7B, un transformer decoder-only. El entrenamiento se estructura en dos etapas. La etapa 1 realiza un fine-tuning completo del modelo (full-model fine-tuning) usando Qwen/Qwen3-8B como profesor sobre el dataset 0xZee/dataset-CoT-Advanced-Calculus-268. El objetivo combina entropía cruzada supervisada con destilación top-k-and-tail dispersa del profesor. Las señales estructurales incluyen discrepancia de distribución del profesor, topología de transiciones, diagnósticos de gap-energy y supervisión ponderada por fases Explore/Examine/Response, diseñada para presionar el aprendizaje en derivaciones, verificación y transiciones de razonamiento de alta discrepancia.
 
-La segunda etapa es una especialización agéntica sobre NousResearch/hermes-function-calling-v1, mediante LoRA seguido de fusión de pesos. La supervisión se limita a salidas del asistente y llamadas a herramientas; los esquemas de herramientas, mensajes de usuario y resultados de herramientas se ven como contexto pero se excluyen de la pérdida directa. Se mezcla replay matemático para reducir el olvido catastrófico. Los archivos del repositorio contienen el modelo fusionado standalone, sin necesidad de un adaptador PEFT separado para inferencia.
+La etapa 2 aplica especialización LoRA sobre NousResearch/hermes-function-calling-v1, seguida de fusión de pesos. La supervisión se limita a salidas del asistente y de tool-calls; los esquemas de herramientas, mensajes de usuario y resultados de herramientas se incluyen como contexto pero se excluyen de la pérdida directa (assistant-masked). Se mezcla replay matemático para reducir el olvido catastrófico. El repositorio contiene el modelo fusionado standalone, sin necesidad de adaptador PEFT separado.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés.
-- Razonamiento matemático y técnico, con énfasis en cálculo avanzado y cadenas de razonamiento (CoT).
-- Generación de llamadas a herramientas (function calling) en formato estructurado.
-- Selección de herramientas y experimentación con bucles agénticos.
-- Razonamiento multi-paso dentro de un runtime que gestione la ejecución de herramientas.
-- Capacidad de continuar entrenamiento supervisado o con optimización de preferencias.
-- No ejecuta herramientas por sí mismo: requiere un runtime externo que parsee la llamada, ejecute la herramienta, añada el resultado y reinvoque el modelo.
+- Generación de texto y razonamiento matemático y técnico, con énfasis en cálculo avanzado y derivaciones paso a paso.
+- Verificación y transiciones de razonamiento reforzadas mediante supervisión topology-guided.
+- Function calling y tool use estructurado, entrenado sobre Hermes function-calling v1.
+- Generación de tool calls en formato estructurado (el modelo no ejecuta herramientas por sí mismo; requiere un runtime externo).
+- Soporte de bucles agénticos multi-paso mediante invocaciones sucesivas con resultados de herramientas añadidos al contexto.
+- Capacidades conversacionales multi-turno.
+- Capacidad de servir como base para SFT continuado u optimización por preferencias.
+- Idiomas: únicamente inglés según la model card.
 
 ## Casos de uso
 
-- Razonamiento matemático asistido: el modelo puede resolver problemas de cálculo y derivación paso a paso gracias a la destilación desde Qwen3-8B, adecuado para herramientas educativas o de verificación simbólica donde se necesite un modelo pequeño.
-- Agentes de function calling: genera llamadas estructuradas a APIs y herramientas, integrándose en un runtime que ejecute las llamadas y devuelva resultados, útil para prototipos de asistentes con acceso a herramientas.
-- Investigación en destilación topológica: sirve como referencia reproducible del pipeline de dos etapas para estudiar transferencia de razonamiento y olvido catastrófico en modelos pequeños.
-- Experimentación con bucles agénticos: su especialización en tool-use lo hace útil para probar selección de herramientas y razonamiento multi-paso en entornos controlados.
-- Base para fine-tuning posterior: al ser un modelo fusionado de 1,7B, puede servir como punto de partida para SFT o DPO específicos de dominio con requisitos de hardware modestos.
-- Prototipado de asistentes técnicos en inglés: para tareas de explicación de derivaciones y verificación de pasos matemáticos donde no se requiera despliegue multilingüe.
-- Evaluación de retención tras especialización: útil para medir cuánto conocimiento matemático se conserva tras la etapa agéntica con replay.
+- Razonamiento matemático asistido: resolución de problemas de cálculo con cadenas de razonamiento explícitas, aprovechando la destilación desde Qwen3-8B sobre el dataset de cálculo avanzado.
+- Agentes con function calling: integración en un runtime que parsee tool calls, ejecute la herramienta, añada el resultado y reinvoque el modelo para la siguiente acción.
+- Experimentación en investigación sobre destilación topology-aware: el modelo sirve como artefacto reproducible para estudiar el efecto de señales estructurales en modelos pequeños.
+- Selección de herramientas en pipelines de agentes: evaluación de la capacidad del modelo para elegir la herramienta adecuada dentro de un conjunto de esquemas definidos.
+- Base para SFT o DPO: punto de partida para fine-tuning adicional en dominios específicos, dado que se distribuye como modelo fusionado standalone.
+- Prototipado de asistentes técnicos en inglés: despliegue ligero en entornos de desarrollo para tareas de razonamiento y llamadas a API.
+- Educación y tutoría matemática: generación de explicaciones paso a paso de derivadas e integrales, con la advertencia de que las trazas sintéticas pueden contener errores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que no se reclaman resultados formales de benchmark en esta release y que solo se realizaron monitorización de pérdida en held-out y pruebas cualitativas de generación.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no reclama resultados formales de evaluación en esta release y que solo se realizaron monitorización de pérdida en held-out y pruebas cualitativas de generación. Recomienda ejecutar benchmarks externos de matemáticas, function calling, retención y seguridad antes de uso en producción.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; para 1,7B en fp16 se estiman aproximadamente 3,5 GB de pesos, y en cuantizaciones de 8 bits o 4 bits cabría en GPUs consumer de 6-8 GB, aunque no se publican cuantizaciones en el repositorio.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría en RTX 3060/4060 y superiores en fp16; A100/H100 no son necesarias.
-- Cabe en GPU consumer: sí, por el tamaño de 1,7B, aunque las cuantizaciones no están publicadas.
-- Opciones de despliegue: transformers (carga indicada en la model card con `AutoModelForCausalLM` y `device_map="auto"`), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`). No se confirman otras opciones como llama.cpp, Ollama o vLLM.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 3,4 GB solo para pesos (1.720 millones de parámetros), más overhead de activaciones y KV cache.
+- En cuantización de 8 bits: aproximadamente 1,7 GB de pesos; en 4 bits: aproximadamente 0,9 GB (estimaciones teóricas, no publicadas por el autor).
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para fp16 con contexto moderado; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son adecuadas.
+- Cabe en GPU consumer: sí, en la mayoría de tarjetas con 8 GB o más en fp16, y en tarjetas de 4-6 GB con cuantización.
+- Opciones de despliegue: transformers (soporte nativo documentado), text-generation-inference (tag text-generation-inference), endpoints compatibles; vLLM, llama.cpp y Ollama no están documentados explícitamente por el autor y requerirían conversión a GGUF.
+- Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DualMind TKD Agentic 1.7B | 1,7B | No disponible | Matemáticas + function calling (destilación topológica) | other | Hugging Face |
-| Qwen/Qwen3-1.7B | 1,7B | No disponible en la información | Modelo base generalista | Apache-2.0 | Hugging Face |
-| Qwen/Qwen3-8B | 8B | No disponible en la información | Modelo generalista mayor (profesor en la destilación) | Apache-2.0 | Hugging Face |
+| DualMind TKD Agentic 1.7B | 1,72 B | no disponible | Matemáticas + function calling | other | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1,72 B | no disponible en esta ficha | Modelo generalista | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-8B (profesor) | 8 B | no disponible en esta ficha | Modelo generalista | Apache-2.0 | Hugging Face |
+| NousResearch Hermes (familia) | variable | variable | Function calling | Apache-2.0 (dataset) | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+No se dispone de datos de rendimiento comparativo porque el autor no publica benchmarks. La comparación se limita a parámetros, licencia y especialización.
 
 ## Limitaciones y advertencias
 
-- El dataset de matemáticas de origen es pequeño, lo que limita la cobertura del razonamiento transferido.
+- El dataset de matemáticas de origen es pequeño, lo que limita la cobertura del razonamiento aprendido.
 - Las trazas de razonamiento sintéticas o generadas pueden contener derivaciones incorrectas o respuestas finales contradictorias.
-- El formato correcto de llamada a herramienta no garantiza una selección correcta de la herramienta.
-- Las salidas de herramientas externas deben tratarse como entrada no confiable.
-- El replay matemático reduce el olvido pero no demuestra retención.
-- El modelo no está establecido como seguro para acciones autónomas de alto impacto, médicas, financieras o legales.
-- Solo soporta inglés según la información disponible.
-- Licencia "other": el dataset de cálculo avanzado no exponía una declaración clara de licencia; debe confirmarse antes de asignar una licencia más permisiva o de uso comercial.
-- No se han ejecutado benchmarks externos de matemáticas, function calling, retención o seguridad antes de su uso en producción.
+- El formato correcto de un tool call no garantiza la selección correcta de la herramienta.
+- Los resultados de herramientas externas deben tratarse como entrada no confiable.
+- El replay matemático reduce el olvido pero no demuestra retención de capacidades del modelo base.
+- El modelo no ha sido validado como seguro para acciones autónomas de alto impacto, médicas, financieras o legales.
+- Solo soporta inglés según la model card.
+- Licencia marcada como "other": el dataset de cálculo avanzado no exponía una licencia clara al preparar la model card; debe confirmarse antes de uso comercial o de relicenciar el derivado.
+- No se han publicado benchmarks ni evaluaciones de seguridad externas.
+- El modelo no ejecuta herramientas por sí mismo; requiere un runtime externo que gestione el bucle de ejecución.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Profesor de destilación: https://huggingface.co/Qwen/Qwen3-8B
+- Modelo profesor: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de cálculo: https://huggingface.co/datasets/0xZee/dataset-CoT-Advanced-Calculus-268
 - Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
+- Desarrollador: https://huggingface.co/reaperdoesntknow

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "kingkaikai/DSAI4205-Qwen3-0.6B-B-mean",
+  "slug": "kingkaikai-dsai4205-qwen3-0-6b-b-mean",
+  "author": "kingkaikai",
+  "url": "https://huggingface.co/kingkaikai/DSAI4205-Qwen3-0.6B-B-mean",
+  "created_at": "2026-11-22T10:24:58.000Z",
+  "updated_at": "2026-11-22T10:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "joblib",
+    "safetensors",
+    "lora",
+    "sentiment-analysis",
+    "feature-extraction",
+    "scikit-learn",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90146080,
+  "storage_human": "90 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

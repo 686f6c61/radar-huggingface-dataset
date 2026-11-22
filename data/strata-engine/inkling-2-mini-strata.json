@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "strata-engine/Inkling-2-Mini-Strata",
+  "slug": "strata-engine-inkling-2-mini-strata",
+  "author": "strata-engine",
+  "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-Strata",
+  "created_at": "2026-11-21T18:46:06.000Z",
+  "updated_at": "2026-11-22T08:40:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "inkling2_loop",
+    "strata",
+    "inkling-2-mini",
+    "moe",
+    "quantization",
+    "looped-transformer",
+    "dspark",
+    "image-text-to-text",
+    "conversational",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44829234294,
+  "storage_human": "44.8 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strata LLM – Run 125B+ MoE Models on 12GB VRAM Consumer …",
+      "url": "https://stratallm.org/",
+      "snippet": "Strata is an open-source local inference engine by Niko1221 that runs massive Mixture-of-Experts (MoE) models like Qwen3.8-Flash …"
+    },
+    {
+      "title": "Local 125B AI · Strata",
+      "url": "https://www.stratat.com/en",
+      "snippet": "Install Strata, download models, and connect Cursor or Claude Code to http://127.0.0.1:8080/v1."
+    },
+    {
+      "title": "STRATA",
+      "url": "https://strata.fr/",
+      "snippet": "STRATA est une revue non périodique pour les Sciences de la vie et de la Terre consacrée à la géologie sédimentaire, la …"
+    },
+    {
+      "title": "Download Strata engine and desktop app · Strata",
+      "url": "https://www.stratat.com/en/download",
+      "snippet": "1 day ago · Download the Strata inference engine for Windows, Linux, and macOS, plus the Strata Desktop launcher for Windows …"
+    },
+    {
+      "title": "Strata —3D Modeling Software",
+      "url": "https://www.strata.com/",
+      "snippet": "Strata is a 3D/VR/AR Developer and Studio that creates powerful 3D modeling software and solutions. Start a free trial and bring …"
+    }
+  ]
+}

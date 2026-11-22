@@ -5,7 +5,7 @@
   "author": "kenantabak",
   "url": "https://huggingface.co/kenantabak/yolo26s-thermal-human-canine-detection-tr",
   "created_at": "2026-11-21T20:19:08.000Z",
-  "updated_at": "2026-11-21T20:19:09.000Z",
+  "updated_at": "2026-11-21T22:06:17.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "ultralytics",
+    "onnx",
     "evren",
     "ssyz",
     "yolo26s",
@@ -36,11 +37,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 57422522,
+  "storage_human": "57 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

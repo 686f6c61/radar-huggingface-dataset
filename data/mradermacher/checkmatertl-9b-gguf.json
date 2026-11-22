@@ -5,9 +5,9 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/CheckmateRTL-9B-GGUF",
   "created_at": "2026-11-18T06:00:06.000Z",
-  "updated_at": "2026-11-18T06:05:03.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-21T10:59:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "transformers",
   "languages": [
@@ -29,6 +29,7 @@
     "dataset:AI-Institute-BSC/SystemVerilog-RL-12k",
     "base_model:AI-Institute-BSC/CheckmateRTL-9B",
     "base_model:quantized:AI-Institute-BSC/CheckmateRTL-9B",
+    "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"

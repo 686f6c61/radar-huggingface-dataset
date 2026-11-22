@@ -1,0 +1,105 @@
+{
+  "schema": 2,
+  "id": "Rihal-om/rawa-omani-transcribe",
+  "slug": "rihal-om-rawa-omani-transcribe",
+  "author": "Rihal-om",
+  "url": "https://huggingface.co/Rihal-om/rawa-omani-transcribe",
+  "created_at": "2026-09-06T07:15:18.000Z",
+  "updated_at": "2026-11-22T05:20:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "asr",
+    "arabic",
+    "omani-arabic",
+    "gulf-arabic",
+    "lora",
+    "code-switching",
+    "2.1b-params",
+    "automatic-speech-recognition",
+    "ar",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:adapter:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66901745,
+  "storage_human": "67 MB",
+  "context_length": null,
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Casablanca (UAE, test)",
+      "metric": "WER (leaderboard normalizer, markers counted)",
+      "value": 33.08
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Casablanca (UAE, test)",
+      "metric": "CER (leaderboard normalizer, markers counted)",
+      "value": 11.31
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SADA 2022 (leaderboard test list, Khaliji speakers)",
+      "metric": "WER (leaderboard normalizer, markers counted)",
+      "value": 33.5
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SADA 2022 (leaderboard test list, Khaliji speakers)",
+      "metric": "CER (leaderboard normalizer, markers counted)",
+      "value": 14.49
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SADA 2022 (leaderboard test list, all dialects)",
+      "metric": "WER (leaderboard normalizer, markers counted)",
+      "value": 33.15
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SADA 2022 (leaderboard test list, all dialects)",
+      "metric": "CER (leaderboard normalizer, markers counted)",
+      "value": 15.65
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (ar_eg, test)",
+      "metric": "WER (leaderboard normalizer, markers counted)",
+      "value": 7.89
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (ar_eg, test)",
+      "metric": "CER (leaderboard normalizer, markers counted)",
+      "value": 4.87
+    }
+  ],
+  "sources": []
+}

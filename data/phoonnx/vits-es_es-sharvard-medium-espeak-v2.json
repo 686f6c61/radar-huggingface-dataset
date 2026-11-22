@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-es_es-sharvard-medium-espeak-v2",
+  "slug": "phoonnx-vits-es_es-sharvard-medium-espeak-v2",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-es_es-sharvard-medium-espeak-v2",
+  "created_at": "2026-11-22T07:58:42.000Z",
+  "updated_at": "2026-11-22T07:58:48.000Z",
+  "license": "cc-by-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "es",
+    "base_model:rhasspy/piper-voices",
+    "base_model:quantized:rhasspy/piper-voices",
+    "license:cc-by-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98817419,
+  "storage_human": "99 MB",
+  "context_length": null,
+  "base_model": "rhasspy/piper-voices",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

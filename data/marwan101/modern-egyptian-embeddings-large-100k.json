@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "Marwan101/modern-egyptian-embeddings-large-100k",
+  "slug": "marwan101-modern-egyptian-embeddings-large-100k",
+  "author": "Marwan101",
+  "url": "https://huggingface.co/Marwan101/modern-egyptian-embeddings-large-100k",
+  "created_at": "2026-11-22T05:24:09.000Z",
+  "updated_at": "2026-11-22T05:24:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:80000",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "base_model:finetune:CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109081344,
+  "parameters_human": "109.1M",
+  "storage_bytes": 436347736,
+  "storage_human": "436 MB",
+  "context_length": null,
+  "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Triplet",
+      "dataset": "egyptian val evaluator",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Triplet",
+      "dataset": "egyptian test evaluator",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

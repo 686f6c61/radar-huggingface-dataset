@@ -5,7 +5,7 @@
   "author": "openlimi",
   "url": "https://huggingface.co/openlimi/moss-image-realism",
   "created_at": "2026-11-21T11:43:21.000Z",
-  "updated_at": "2026-11-21T11:50:56.000Z",
+  "updated_at": "2026-11-21T11:59:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

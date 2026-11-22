@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "FamilyOrang/Qwen3-Omni-30B-A3B-Instruct",
+  "slug": "familyorang-qwen3-omni-30b-a3b-instruct",
+  "author": "FamilyOrang",
+  "url": "https://huggingface.co/FamilyOrang/Qwen3-Omni-30B-A3B-Instruct",
+  "created_at": "2026-11-22T10:37:07.000Z",
+  "updated_at": "2026-11-22T10:37:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe",
+    "text-to-audio",
+    "multimodal",
+    "any-to-any",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35259818545,
+  "parameters_human": "35.26B",
+  "storage_bytes": 70523299202,
+  "storage_human": "70.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "uhyon",
   "url": "https://huggingface.co/uhyon/mv2npp-gauge-pose",
   "created_at": "2026-11-18T08:54:21.000Z",
-  "updated_at": "2026-11-18T08:54:41.000Z",
+  "updated_at": "2026-11-21T13:06:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "keypoint-detection",
@@ -14,7 +14,7 @@
   "tags": [
     "ultralytics",
     "onnx",
-    "yolo11",
+    "yolo",
     "pose",
     "analog-gauge",
     "gauge-reading",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 53,
+  "downloads_30d": 85,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 58969861,
-  "storage_human": "59 MB",
+  "storage_bytes": 117939664,
+  "storage_human": "118 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

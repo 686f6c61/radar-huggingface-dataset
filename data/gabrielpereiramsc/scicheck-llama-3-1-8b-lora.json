@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "gabrielpereiramsc/scicheck-llama-3.1-8b-lora",
+  "slug": "gabrielpereiramsc-scicheck-llama-3-1-8b-lora",
+  "author": "gabrielpereiramsc",
+  "url": "https://huggingface.co/gabrielpereiramsc/scicheck-llama-3.1-8b-lora",
+  "created_at": "2026-11-22T04:31:23.000Z",
+  "updated_at": "2026-11-22T04:35:54.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "claim-verification",
+    "fact-checking",
+    "biomedical",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 671149168,
+  "storage_human": "671 MB",
+  "context_length": null,
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

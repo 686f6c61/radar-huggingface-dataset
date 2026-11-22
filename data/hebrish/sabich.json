@@ -55,32 +55,49 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "MillyMally & JoySuzanna & AzulaSpirit' - r/MillyMally | ReddNSFW",
-      "url": "https://reddnsfw.com/MillyMally/millymally-joysuzanna-azulaspirit/11439656",
-      "snippet": "View the NSFW image post, related media feed, author details and nearby posts."
+      "task": "Automatic Speech Recognition",
+      "dataset": "English-Hebrew Code-Switching ASR Benchmark (test set v2)",
+      "metric": "Code-switching WER (clean subset, 129 clips)",
+      "value": 4.96
     },
     {
-      "title": "Videos for: Suzanna Joy and Milly Mally spider",
-      "url": "https://m.thothd.com/search/Suzanna-Joy-and-Milly-Mally-spider/",
-      "snippet": "Watch the best Suzanna Joy and Milly Mally spider porn videos & OnlyFans leaks free on ThotHD. New Suzanna Joy and Milly Mally …"
+      "task": "Automatic Speech Recognition",
+      "dataset": "English-Hebrew Code-Switching ASR Benchmark (test set v2)",
+      "metric": "Code-switching CER (clean subset, 129 clips)",
+      "value": 1.51
     },
     {
-      "title": "Milly Mally And Suzanna Joy Azula Spirit Nude Video Onlyfans",
-      "url": "https://pornmaven.com/videos/milly-mally-and-suzanna-joy-azula-spirit-nude-video-onlyfans/",
-      "snippet": "Watch Free Milly Mally And Suzanna Joy Azula Spirit Nude Video Onlyfans Porn Videos on porn maven, most popular Milly Mally …"
+      "task": "Automatic Speech Recognition",
+      "dataset": "English-Hebrew Code-Switching ASR Benchmark (test set v2)",
+      "metric": "Hebrew term recall (clean subset, all 221 occurrences)",
+      "value": 66.97
     },
     {
-      "title": "MillyMally with her hot friend u/JoySuzanna - ReddNSFW",
-      "url": "https://reddnsfw.com/MillyMally/millymally-with-her-hot-friend-ujoysuzanna/10473251",
-      "snippet": "MillyMally with her hot friend u/JoySuzanna from r/MillyMally on ReddNSFW. View the NSFW image post, related media feed, author …"
+      "task": "Automatic Speech Recognition",
+      "dataset": "English-Hebrew Code-Switching ASR Benchmark (test set v2)",
+      "metric": "Unseen-term recall (clean subset, 137 occurrences)",
+      "value": 59.85
     },
     {
-      "title": "Full vid please? And names from left to roght? - Azula Liore - Suzanna ...",
-      "url": "https://namethatporn.com/post/1847626-full-vid-please-and-names-from-left-to-roght.html",
-      "snippet": "May 7, 2026 · This post is about ebony, bigtits, blonde, bigboobs and onlyfans. #1847626."
+      "task": "Automatic Speech Recognition",
+      "dataset": "English-Hebrew Code-Switching ASR Benchmark (test set v2)",
+      "metric": "Seen-term recall (clean subset, 84 occurrences)",
+      "value": 78.57
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "English-Hebrew Code-Switching ASR Benchmark (test set v2)",
+      "metric": "English control WER (english_control subset, 25 clips)",
+      "value": 2.42
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "English-Hebrew Code-Switching ASR Benchmark (test set v2)",
+      "metric": "Tech WER (tech subset, 25 clips)",
+      "value": 3.02
     }
-  ]
+  ],
+  "sources": []
 }

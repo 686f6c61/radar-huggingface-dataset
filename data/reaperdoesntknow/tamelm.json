@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/TameLM",
   "created_at": "2026-10-20T03:56:43.000Z",
-  "updated_at": "2026-11-20T14:16:52.000Z",
+  "updated_at": "2026-11-21T14:16:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2731,
+  "downloads_30d": 2740,
   "trending_score": 0,
   "parameters": 1431506840,
   "parameters_human": "1.43B",

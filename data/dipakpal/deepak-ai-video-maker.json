@@ -5,17 +5,13 @@
   "author": "dipakpal",
   "url": "https://huggingface.co/dipakpal/Deepak-AI-Video-Maker",
   "created_at": "2026-11-21T12:05:38.000Z",
-  "updated_at": "2026-11-21T12:15:24.000Z",
+  "updated_at": "2026-11-21T13:52:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
   "library": null,
   "languages": [],
   "tags": [
-    "text-to-video",
-    "video-generation",
-    "hindi",
-    "english",
     "region:us"
   ],
   "likes": 0,

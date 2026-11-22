@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "somdevsheel/prajna-ai-124m-base",
+  "slug": "somdevsheel-prajna-ai-124m-base",
+  "author": "somdevsheel",
+  "url": "https://huggingface.co/somdevsheel/prajna-ai-124m-base",
+  "created_at": "2026-11-10T09:56:23.000Z",
+  "updated_at": "2026-11-22T05:55:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "from-scratch",
+    "small-language-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 332,
+  "trending_score": 0,
+  "parameters": 123587328,
+  "parameters_human": "123.6M",
+  "storage_bytes": 494373712,
+  "storage_human": "494 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

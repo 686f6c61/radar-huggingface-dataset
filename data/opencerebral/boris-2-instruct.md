@@ -2,56 +2,57 @@
 
 ## Resumen
 
-Boris-2-Instruct es la versión ajustada para chat e instrucciones de Boris-2, un modelo de lenguaje de 144 millones de parámetros desarrollado por OpenCerebral y entrenado desde cero por el propio autor en una única GPU NVIDIA V100. Se trata de un modelo causal de tipo transformer con 31 capas, tamaño oculto de 512 y un vocabulario de 32.768 tokens, entrenado sobre 200.040 millones de tokens en su fase de preentrenamiento. Esta variante Instruct se obtiene mediante un ajuste fino completo de un epoch sobre el conjunto de datos smol-smoltalk, que contiene 460.341 conversaciones.
+Boris-2-Instruct es la variante afinada para chat e instrucciones de Boris-2, un modelo de lenguaje de 144 millones de parámetros desarrollado por OpenCerebral y entrenado desde cero en una única NVIDIA V100. El modelo parte de los pesos preentrenados de Boris-2 y se somete a un ajuste fino completo durante una época sobre el conjunto de datos smol-smoltalk, que contiene aproximadamente 460.000 conversaciones. Su propósito es ofrecer un modelo conversacional pequeño, ligero y desplegable en hardware modesto, manteniendo una licencia permisiva Apache 2.0.
 
-El modelo resulta relevante por su escala reducida y su enfoque de entrenamiento reproducible: toda la fase de instrucción se completó en aproximadamente 2,5 horas sobre una sola V100 de 32 GB, con precisión mixta float16 y flujo residual en float32. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y su tamaño lo hace apto para entornos con recursos limitados, prototipado rápido y experimentación educativa.
+Con 144.192.782 parámetros, Boris-2-Instruct se sitúa en la categoría de los modelos de lenguaje pequeños (SLM), pensados para tareas de generación de texto y diálogo donde el coste de inferencia y el espacio de despliegue son críticos. El modelo emplea una arquitectura transformer causal estándar con implementación personalizada en PyTorch (requiere `trust_remote_code=True`) y está entrenado exclusivamente en inglés, según declara el autor. No se dispone de información sobre la longitud de contexto soportada en la documentación proporcionada.
 
-La arquitectura incorpora innovaciones poco habituales en modelos de este tamaño, como capas Canon y una tabla de n-gramas exacta, según se detalla en la model card del modelo base. No obstante, sus capacidades factuales y aritméticas son limitadas, y el propio autor advierte de que no debe emplearse para respuestas médicas, legales o financieras.
+La relevancia de este modelo radica en su enfoque de entrenamiento reproducible desde cero en hardware de gama relativamente accesible (una V100), con publicación de resultados de benchmarks y una licencia que permite uso comercial sin restricciones adicionales. No obstante, sus resultados en tareas de conocimiento e instrucciones son moderados, lo que lo posiciona como una opción para prototipado, experimentación e integración en entornos con recursos limitados más que como un modelo de propósito general de alto rendimiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con capas Canon y tabla de n-gramas exacta (31 capas, tamaño oculto 512) |
-| Parámetros totales | 144.192.782 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 2.048 tokens (incluye toda la conversación) |
-| Tipos de cuantización | No disponible (pesos publicados en safetensors; el autor no documenta cuantizaciones GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer causal (decoder-only), implementación personalizada en PyTorch con `custom_code` |
+| Parametros totales | 144.192.782 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (pesos en safetensors; el autor no documenta cuantizaciones) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (repo de 0,6 GB) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-Boris-2-Instruct mantiene sin cambios la arquitectura del modelo base Boris-2: un transformer causal de 31 capas con tamaño oculto de 512, vocabulario de 32.768 tokens y contexto de 2.048 tokens. La arquitectura incorpora capas Canon y una tabla de n-gramas exacta, elementos que el autor describe en la model card de Boris-2 y que no se detallan en la ficha de esta variante Instruct. El preentrenamiento del modelo base consumió 200.040 millones de tokens.
+Boris-2-Instruct es un transformer causal de tipo decoder-only con 144 millones de parámetros, implementado mediante código personalizado de PyTorch (el repositorio incluye `custom_code` y requiere `trust_remote_code=True` para su carga). Según la model card, el autor no documenta detalles sobre la composición del corpus de preentrenamiento de Boris-2, el número de tokens utilizados ni innovaciones arquitectónicas específicas como atención lineal, decodificación especulativa o arquitecturas híbridas. La implementación no incluye caché KV, lo que implica que las respuestas largas se generan de forma lenta.
 
-El ajuste fino se realizó sobre el split de entrenamiento de smol-smoltalk: 460.341 conversaciones y 403 millones de tokens, de los cuales se entrenaron 303 millones. La pérdida se calculó únicamente sobre las respuestas del asistente y su token de cierre `<|im_end|>`. Las conversaciones se empaquetaron en filas de 2.048 tokens como documentos separados, reiniciando atención, capas Canon y búsqueda n-grama en cada uno. Se usó AdamW con learning rate 1e-4, betas (0,9, 0,95), sin weight decay, grad clip 1.0, warmup lineal de 140 pasos y decaimiento coseno. El entrenamiento duró 1 epoch y 4.227 pasos, con batch de 64 filas de 2.048 tokens, en float16 mixto con flujo residual en float32, sobre una V100 de 32 GB durante aproximadamente 2,5 horas. La pérdida en 800 conversaciones de test reservadas bajó de 1,426 antes del ajuste a 1,041 después.
+El ajuste fino se realizó durante una época completa sobre el conjunto smol-smoltalk (aproximadamente 460.000 conversaciones), partiendo de los pesos de Boris-2. El formato de chat es de estilo ChatML escrito como texto plano, sin añadir tokens nuevos al vocabulario: los marcadores `<|im_start|>`, `<|im_end|>` y los roles se representan como texto ordinario. Esto implica que `<|im_end|>` no es un token de fin de secuencia, sino una cadena que debe pasarse explícitamente como `stop_strings` en la generación; de lo contrario, el modelo continúa escribiendo turnos adicionales. La plantilla está disponible en `tokenizer_config.json`, por lo que `apply_chat_template` funciona correctamente. No se documenta el uso de RLHF, DPO ni otras técnicas de alineación adicionales más allá del ajuste supervisado sobre smol-smoltalk.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con formato ChatML implementado como texto plano (sin tokens especiales añadidos al vocabulario).
-- Respuesta a instrucciones y preguntas de carácter general, con fluidez superficial alta para su tamaño.
-- Soporte de plantilla de chat mediante `apply_chat_template` en el tokenizador.
-- Capacidad de parada controlada mediante la cadena de parada `<|im_end|>`, que debe pasarse explícitamente porque no es un token de fin de secuencia.
-- No dispone de soporte documentado de tool calling ni function calling.
-- No dispone de soporte documentado de agentes ni razonamiento multi-paso.
-- No dispone de capacidades de visión, audio ni modo thinking.
-- Multilingüismo limitado al inglés según la model card.
-- No hay ajuste de seguridad más allá del contenido presente en smol-smoltalk.
+- Generación de texto conversacional en inglés con formato de chat multi-turno mediante plantilla ChatML.
+- Respuesta a instrucciones y preguntas generales, con calidad limitada por su tamaño (144M parámetros).
+- Razonamiento básico y sentido común elemental, según reflejan los benchmarks de HellaSwag, ARC y PIQA.
+- Aritmética simple, evaluada mediante ArithMark-3.
+- Seguimiento de instrucciones a nivel moderado (IFEval), con margen de mejora.
+- Generación con parámetros de muestreo configurables (temperatura 0.7, top-p 0.9, penalización de repetición 1.1 por defecto).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso explícito.
+- No se documenta capacidad multimodal (visión, audio) ni modo de razonamiento extendido (thinking mode).
+- Capacidad multilingüe limitada al inglés según la model card.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales en inglés: el modelo puede mantener diálogos multi-turno dentro de su ventana de 2.048 tokens, suficiente para interacciones breves de soporte o demostración en entornos de desarrollo.
-- Experimentación educativa y docencia: su tamaño de 144M parámetros y su entrenamiento reproducible en una sola V100 lo hacen idóneo para explicar el ciclo completo de preentrenamiento y ajuste fino por instrucciones.
-- Generación de texto de relleno y borradores: útil para producir texto fluido en tareas de baja exigencia factual, como descripciones genéricas o ejemplos sintéticos para pipelines de datos.
-- Evaluación de infraestructura de inferencia: sirve como modelo de referencia ligero para probar integraciones con transformers, plantillas de chat y cadenas de parada antes de escalar a modelos mayores.
-- Pruebas de conformidad de licencia: al estar bajo Apache 2.0, puede integrarse en productos comerciales internos o demos sin obligaciones de atribución adicionales más allá de las de la licencia.
-- Investigación sobre ajuste fino eficiente: el autor documenta hiperparámetros completos (learning rate, schedule, batch, precisión), lo que permite reproducir o comparar estrategias de instrucción en modelos pequeños.
-- Filtrado y clasificación ligera de texto: puede emplearse como generador de etiquetas o resúmenes muy cortos en inglés cuando la precisión factual no sea crítica.
+- Prototipado rápido de asistentes conversacionales: el modelo puede gestionar diálogos multi-turno en inglés con un coste de inferencia mínimo, lo que permite iterar sobre plantillas de prompt y flujos de conversación antes de migrar a modelos mayores.
+- Despliegue en dispositivos con recursos limitados: con 144M parámetros y pesos en safetensors de aproximadamente 0,6 GB, cabe en GPUs de consumo e incluso en CPU para inferencia de baja concurrencia, adecuado para demos locales o entornos embebidos.
+- Generación de texto para tareas de relleno o completado: útil en pipelines donde se necesita texto breve en inglés (descripciones, resúmenes cortos, respuestas plantilla) sin requisitos de alta precisión.
+- Experimentación académica y educativa: al estar entrenado desde cero en una sola V100 y publicarse con licencia Apache 2.0, sirve como base reproducible para estudiar ajuste fino, tokenización y evaluación de SLM.
+- Evaluación comparativa de técnicas de ajuste: su condición de modelo pequeño permite ejecutar experimentos de fine-tuning completos en hardware modesto y comparar contra la versión base Boris-2.
+- Filtrado y clasificación ligera de texto en inglés: puede emplearse como generador de etiquetas o respuestas cortas en sistemas de moderación o enrutamiento donde la latencia y el coste priman sobre la precisión.
+- Base para investigación en alineación de modelos pequeños: el formato ChatML en texto plano y la ausencia de tokens especiales facilitan la manipulación del prompt y el análisis del comportamiento en experimentos controlados.
 
 ## Benchmarks y rendimiento
 
-Resultados zero-shot con pesos en float32, según la model card del autor. La columna de comparación es el modelo base Boris-2, no un modelo externo.
+Resultados declarados por el autor en la model card (zero-shot, pesos en float32, mismo scorer para ambos modelos; IFEval con plantilla de chat, decodificación greedy, parada en `<|im_end|>` y límite de 256 tokens nuevos; el resto de tareas son elección múltiple por loglikelihood sin plantilla de chat).
 
 | Benchmark | Métrica | Boris-2 | Boris-2-Instruct |
 |---|---|---:|---:|
@@ -62,46 +63,55 @@ Resultados zero-shot con pesos en float32, según la model card del autor. La co
 | ArithMark-3 | acc_norm | 45,10 | 43,70 |
 | Open SLM Index | — | 34,08 | 31,93 |
 
-El autor indica que los benchmarks de instrucciones y conocimiento (IFEval, TruthfulQA, MMLU y otros, con SmolLM2-135M-Instruct como comparación) estaban en ejecución y se añadirían a la model card. No se han publicado esos resultados en la información disponible.
+Comparación en tareas de chat y conocimiento frente a SmolLM2-135M-Instruct (lm-evaluation-harness 0.4.12, float32, zero-shot, mismas condiciones):
+
+| Benchmark | Métrica | Boris-2-Instruct | SmolLM2-135M-Instruct |
+|---|---|---:|---:|
+| IFEval | prompt-level strict | 19,41 | 19,59 |
+| IFEval | prompt-level loose | 22,18 | 20,89 |
+| IFEval | instruction-level strict | 29,86 | 32,73 |
+| IFEval | instruction-level loose | 33,21 | no disponible |
+| MMLU (cloze) | acc | 28,41 | no disponible |
+
+El autor señala que el ajuste fino para chat reduce ligeramente los resultados del modelo base (aproximadamente 2 puntos del Open SLM Index), un comportamiento habitual en este tipo de afinado. Para comparaciones en leaderboards del modelo preentrenado, el autor remite a Boris-2.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en float32: aproximadamente 0,58 GB solo para pesos (144,2M parámetros × 4 bytes), más overhead de activaciones y del código personalizado.
-- VRAM estimada en float16: aproximadamente 0,29 GB para pesos, más overhead.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para float16; el autor entrenó en una NVIDIA V100 de 32 GB, pero la inferencia no requiere esa capacidad.
-- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 o inferiores con suficiente VRAM; también es viable en CPU para pruebas.
-- Opciones de despliegue: transformers con `trust_remote_code=True` es la vía documentada. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y el formato publicado es safetensors sin cuantizaciones GGUF.
-- Latencia y throughput: no disponibles. El autor advierte de que el código es PyTorch puro sin caché KV, por lo que las respuestas largas son lentas.
+- VRAM estimada para inferencia: los pesos en float32 ocupan aproximadamente 0,58 GB (144M parámetros × 4 bytes); en float16 o bfloat16, alrededor de 0,29 GB. A ello hay que sumar la memoria de activaciones, que es reducida dado el tamaño del modelo.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; el modelo fue entrenado en una NVIDIA V100, pero para inferencia funcionan GPUs de gama baja como GTX 1650, RTX 3050 o superiores. También es viable en CPU para baja concurrencia.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090, etc.), con un uso de VRAM muy inferior a 1 GB en precisión reducida.
+- Opciones de despliegue: el modelo requiere `transformers` con `trust_remote_code=True` debido a su código personalizado. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en la información disponible; la ausencia de caché KV en la implementación limita el rendimiento en generación larga.
+- Latencia y throughput: no se proporcionan datos medidos. El autor advierte que la implementación no usa caché KV, por lo que las respuestas largas son lentas en comparación con implementaciones optimizadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
-|---|---:|---:|---|---|---|
-| Boris-2-Instruct | 144,2M | 2.048 | Apache 2.0 | Inglés | Hugging Face (transformers) |
-| SmolLM2-135M-Instruct | 135M | 8.192 (según su model card pública) | Apache 2.0 | Multilingüe | Hugging Face |
-| Qwen2.5-0.5B-Instruct | 500M | 32.768 | Apache 2.0 | Multilingüe | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | IFEval prompt strict | MMLU (cloze) | Disponibilidad |
+|---|---|---:|---|---:|---:|---|
+| Boris-2-Instruct | 144M | no disponible | Apache 2.0 | 19,41 | 28,41 | Hugging Face |
+| SmolLM2-135M-Instruct | 135M | no disponible en la información | Apache 2.0 | 19,59 | no disponible | Hugging Face |
+| Boris-2 (base) | 144M | no disponible | Apache 2.0 | no evaluado (modelo base) | no disponible | Hugging Face |
 
-La comparación con SmolLM2-135M-Instruct es la más directa por tamaño y por ser el modelo de referencia que el propio autor cita para benchmarks pendientes. Qwen2.5-0.5B-Instruct es una alternativa de escala superior con contexto mucho mayor. No se dispone de resultados comparativos directos entre Boris-2-Instruct y estos modelos en la información proporcionada.
+La comparación directa con SmolLM2-135M-Instruct en IFEval muestra resultados cercanos: Boris-2-Instruct obtiene mejor precisión loose a nivel de prompt (22,18 frente a 20,89) pero peor precisión strict a nivel de instrucción (29,86 frente a 32,73). No se dispone de datos de MMLU para SmolLM2-135M-Instruct en la información proporcionada, ni de comparaciones con otros SLM como Qwen2.5-0.5B o TinyLlama, por lo que la comparativa queda limitada a los datos publicados por el autor.
 
 ## Limitaciones y advertencias
 
-- Modelo de 144M parámetros: el autor advierte de que suena fluido pero falla a menudo en hechos y aritmética (por ejemplo, responde 17 + 25 = 22).
-- Puede atribuirse capacidades que no tiene y perder el hilo en conversaciones largas.
-- El contexto de 2.048 tokens incluye toda la conversación, lo que limita los diálogos extensos.
-- No tiene ajuste de seguridad más allá del contenido de smol-smoltalk.
-- No debe usarse para respuestas factuales, médicas, legales o financieras.
-- Solo soporta inglés según la model card.
-- `<|im_end|>` es texto plano, no un token de fin de secuencia: si no se pasa como cadena de parada, el modelo sigue generando turnos nuevos.
-- El código de inferencia es PyTorch puro sin caché KV, lo que penaliza la latencia en respuestas largas.
-- Los benchmarks de instrucciones y conocimiento (IFEval, TruthfulQA, MMLU) no estaban publicados en el momento de la información disponible.
-- Licencia Apache 2.0: permite uso comercial, pero persisten los riesgos de exactitud y alucinación inherentes al tamaño del modelo.
+- Tamaño reducido: con 144M parámetros, la profundidad de conocimiento y la capacidad de razonamiento son limitadas; los resultados en MMLU (28,41) y ARC-Challenge (31,40) reflejan un conocimiento factual y razonamiento moderados.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar información incorrecta o inventada, especialmente en dominios especializados; su tamaño agrava este riesgo en comparación con modelos mayores.
+- Idioma: entrenado y evaluado exclusivamente en inglés; no se garantiza un comportamiento adecuado en castellano u otros idiomas.
+- Formato de chat no estándar: `<|im_end|>` es texto plano y no un token de fin de secuencia; es imprescindible pasarlo como `stop_strings` para evitar que el modelo continúe generando turnos. Esto complica la integración en frameworks que esperan tokens EOS convencionales.
+- Sin caché KV: la implementación personalizada no incluye caché de clave-valor, lo que penaliza la latencia en generaciones largas y limita el throughput en producción.
+- Dependencia de código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor y revisar su contenido antes de desplegarlo en entornos sensibles.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero no se documentan garantías ni soporte por parte del autor.
+- Sesgos: no se documentan evaluaciones de sesgo ni de seguridad; al entrenarse sobre smol-smoltalk, puede heredar sesgos presentes en ese corpus.
+- Contexto: no se especifica la longitud máxima de contexto soportada, lo que dificulta planificar su uso en tareas que requieran ventanas largas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/opencerebral/Boris-2-Instruct
 - Modelo base Boris-2: https://huggingface.co/opencerebral/Boris-2
-- Organización OpenCerebral en Hugging Face: https://huggingface.co/opencerebral
-- Wiki del autor: https://wiki.kunix.org/
-- Sitio del autor: https://oc.kunix.org/
-- Dataset smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
-- Licencia Apache 2.0 del repositorio: https://huggingface.co/opencerebral/Boris-2-Instruct/blob/main/LICENSE
+- Perfil del autor en Hugging Face: https://huggingface.co/opencerebral
+- Wiki del proyecto: https://wiki.kunix.org/
+- Repositorio de código: https://git.kunix.org/boris-2
+- Página del autor: https://oc.kunix.org/
+- Conjunto de datos de ajuste fino: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
+- Licencia Apache 2.0: https://huggingface.co/opencerebral/Boris-2-Instruct/blob/main/LICENSE

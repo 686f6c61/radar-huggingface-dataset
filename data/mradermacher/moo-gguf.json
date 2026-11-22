@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Moo-GGUF",
+  "slug": "mradermacher-moo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Moo-GGUF",
+  "created_at": "2025-03-20T00:32:35.000Z",
+  "updated_at": "2026-11-22T07:07:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Troy-Codes/Moo",
+    "base_model:quantized:Troy-Codes/Moo",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 38672716800,
+  "parameters_human": "38.67B",
+  "storage_bytes": 263731088032,
+  "storage_human": "263.7 GB",
+  "context_length": 1024000,
+  "base_model": "Troy-Codes/Moo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

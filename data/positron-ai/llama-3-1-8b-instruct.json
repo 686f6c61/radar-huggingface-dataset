@@ -5,7 +5,7 @@
   "author": "positron-ai",
   "url": "https://huggingface.co/positron-ai/Llama-3.1-8B-Instruct",
   "created_at": "2026-08-25T21:29:36.000Z",
-  "updated_at": "2026-08-25T21:50:38.000Z",
+  "updated_at": "2026-11-17T22:36:38.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 272,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",

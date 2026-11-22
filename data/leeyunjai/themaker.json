@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "themaker - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/leeyunjai/themaker",
-      "snippet": "🆔 Identity & Source id hf-model--leeyunjai--themaker slug leeyunjai--themaker source huggingface author leeyunjai tags onnx, gguf, endpoints_compatible, region:us, imatrix, conversational"
-    },
-    {
-      "title": "leeyunjai/themaker · Hugging Face",
-      "url": "https://huggingface.co/leeyunjai/themaker",
-      "snippet": "Instructions to use leeyunjai/themaker with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use leeyunjai/themaker with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "The Maker",
-      "url": "https://themakerai.com/",
-      "snippet": "Creative AI Studio"
-    },
-    {
-      "title": "leeyunjai/themaker · Discussions - Hugging Face",
-      "url": "https://huggingface.co/leeyunjai/themaker/discussions",
-      "snippet": "Instructions to use leeyunjai/themaker with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use leeyunjai/themaker with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "leeyunjai82 (Yunjai, Lee) · GitHub",
-      "url": "https://github.com/leeyunjai82",
-      "snippet": "[Circulus inc.] I&#x27;m interested in Educational robot / Raspberrypi / Python / Computer vision / Embedded SW and so on … @leeyunjai @themakerrobot - leeyunjai82"
-    }
-  ]
+  "sources": []
 }

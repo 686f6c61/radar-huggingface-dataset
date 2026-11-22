@@ -2,93 +2,130 @@
 
 ## Resumen
 
-`voice-isolator-cpu` es un modelo de aislamiento de voz (target speaker extraction y mejora del habla) publicado por Scicom-intl en Hugging Face. Se trata de un aislador causal y en streaming del hablante principal, diseñado específicamente para agentes de voz: mantiene la voz del interlocutor (caller) y elimina otras voces y ruido antes de que el audio llegue al VAD, al detector de turnos y al reconocedor de voz del agente. Funciona íntegramente en CPU, con solo `onnxruntime` y `numpy` como dependencias, sin necesidad de PyTorch ni GPU.
+voice-isolator-cpu es un modelo de aislamiento de voz orientado a agentes conversacionales, desarrollado por Scicom-intl. Su funcion es retener la voz del interlocutor principal (el "caller") y eliminar otras voces y ruido antes de que el detector de actividad de voz (VAD) y el sistema de reconocimiento automatico del habla (STT) de un agente de voz procesen la llamada. Resuelve un problema concreto en produccion: en llamadas reales, voces de terceros y ruido disparan falsas detecciones de habla, interrumpen al agente y degradan la transcripcion.
 
-Técnicamente, es una destilación del modelo GPU de la misma organización, [Scicom-intl/voice-isolator](https://huggingface.co/Scicom-intl/voice-isolator) (M + WavLM causal, 555M de parámetros), en un transformer de 22M de parámetros. Procesa audio a 16 kHz de entrada y salida, en tramas de 10 ms con solo 10 ms de latencia añadida, lo que lo hace apto para conversación en tiempo real. Su relevancia es alta en el contexto actual de agentes de voz en producción (LiveKit, pipelines de STT), donde la interferencia de voces ajenas degrada directamente la tasa de error de palabra (WER) del reconocimiento.
+Se trata de un modelo de 22 millones de parametros, disenado para ejecutarse en una sola hebra de CPU mediante onnxruntime y numpy, sin torch ni GPU. Procesa audio a 16 kHz con tramas de 10 ms y una latencia de 10 ms, lo que lo hace apto para streaming en tiempo real dentro de agentes desplegados en infraestructura modesta.
+
+Su relevancia actual radica en que ofrece una alternativa ligera y desplegable en CPU a soluciones de aislamiento de voz basadas en GPU, con resultados de tasa de error de palabra (WER) competitivos frente a sistemas comerciales y de investigacion en varios conjuntos de prueba publicos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con frame LSTM y band LSTMs, destilado de M + WavLM causal |
-| Parametros totales | 22M |
-| Parametros activos | 22M (no es MoE) |
-| Longitud de contexto | Ventana de los últimos 10 s de audio |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Independiente del idioma (evaluado en inglés y mandarín; etiqueta de idioma: en) |
-| Licencia | Other (no especificada en detalle en la model card) |
-| Formato de pesos | ONNX (onnxruntime + numpy, sin torch) |
+| Arquitectura | 8 capas de anchura 384 sobre los ultimos 10 s, LSTM de trama y LSTM de banda |
+| Parametros totales | 22 millones (version principal); variantes de 10M disponibles |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | ventana de audio de 10 s |
+| Tipos de cuantizacion | exportacion de 8 bits (`quantized=True`) |
+| Idiomas soportados | ingles (en) |
+| Licencia | other |
+| Formato de pesos | ONNX |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal de 8 capas y anchura 384, con un frame LSTM y band LSTMs, que ve los últimos 10 segundos de audio. Es el resultado de destilar el modelo de mayor tamaño de la misma organización, [Scicom-intl/voice-isolator](https://huggingface.co/Scicom-intl/voice-isolator), que combina un modelo M con un WavLM causal y tiene 555M de parámetros. La destilación permite mantener el comportamiento del modelo grande reduciendo el coste de inferencia a niveles de CPU.
+El modelo es una destilacion de la version GPU de Scicom-intl (voice-isolator) hacia un diseno compacto de 22M de parametros. La arquitectura combina 8 capas de anchura 384 que operan sobre los ultimos 10 segundos de audio, una LSTM a nivel de trama y LSTM por bandas de frecuencia. El procesamiento se realiza en tramas de 10 ms a 16 kHz, con una latencia de 10 ms, lo que permite su uso en streaming dentro de un agente de voz.
 
-El procesado es estrictamente causal y en streaming: recibe audio a 16 kHz en cantidades arbitrarias (`push(chunk)`) y devuelve el audio aislado de cada salto completo de 10 ms, con un retardo total de 10 ms. Los detalles del conjunto de datos de entrenamiento, el número de tokens o horas de audio, y el procedimiento de optimización no están disponibles en la model card, aunque el paper asociado (*The Voice on the Line*, arXiv:2610.35272) describe la metodología y los benchmarks del sistema.
+No se detalla en la informacion disponible el numero de tokens de audio ni la composicion exacta del dataset de entrenamiento. El modelo se evalua en conjuntos como Krisp VI benchmark, AMI, NOTSOFAR, AliMeeting y llamadas de centro de contacto, y se selecciono unicamente sobre conjuntos de desarrollo. La model card menciona tambien una variante "agent" con una compuerta de presencia destilada, pensada para agentes que hablan primero, y variantes de 10M parametros con aproximadamente un tercio menos de CPU por llamada.
 
 ## Capacidades
 
-- Aislamiento del hablante principal (target speaker extraction): extrae la voz del caller y suprime las demás voces de la llamada.
-- Mejora del habla (speech enhancement): eliminación de ruido antes del VAD y del STT.
-- Procesamiento causal en streaming: entrada de 16 kHz en tramas arbitrarias, salida por saltos de 10 ms, con 10 ms de retardo.
-- Inferencia en CPU: solo requiere onnxruntime y numpy; sin torch ni GPU.
-- Integración nativa con agentes de voz de LiveKit mediante el plugin `voice_isolator` (como `LocalIsolator` con este modelo, o `RemoteIsolator` apuntando al modelo GPU en un servidor), con prewarming incluido.
-- Uso independiente de LiveKit mediante la API `voice_isolator.OnnxStream(model_dir).push(chunk)`.
-- Eficacia demostrada suprimiendo palabras de terceros en reuniones (corpus AMI) y en mandarín (AliMeeting), reduciendo a cero o casi cero las transcripciones fantasma de otros hablantes en el STT.
+- Aislamiento de la voz del interlocutor principal (target-speaker extraction) en audio de llamadas.
+- Eliminacion de ruido y de voces de terceros antes del VAD y del STT.
+- Procesamiento en streaming con tramas de 10 ms y latencia de 10 ms.
+- Ejecucion en una sola hebra de CPU con onnxruntime y numpy, sin torch ni GPU.
+- Entrada y salida a 16 kHz.
+- Integracion como plugin de LiveKit para agentes de voz.
+- Modo `voicebot` para agentes que saludan primero al interlocutor.
+- Exportacion cuantizada a 8 bits para reducir coste computacional.
+- Uso sin LiveKit mediante `voice_isolator.OnnxStream(model_dir).push(chunk)`.
+- Orientado exclusivamente a ingles.
 
 ## Casos de uso
 
-- Agentes de voz en producción con LiveKit: el modelo se inserta como procesador de tramas en la entrada de audio, antes del VAD, el detector de turnos y el STT, evitando que voces de fondo activen respuestas del agente o contaminen la transcripción.
-- Centros de llamadas con ruido de fondo: en llamadas de call-centre con otras personas hablando cerca del caller, el aislador elimina esas voces antes del reconocimiento, reduciendo el WER del STT.
-- Reuniones y conferencias multipersona: en corpus como AMI, cuando el caller calla y otros hablan, el STT deja de transcribir a los terceros (por ejemplo, de 120 palabras fantasma a 0 en el ejemplo ES2004c), evitando que el agente responda a conversaciones ajenas.
-- Detección de turnos fiable: al limpiar el audio de voces interferentes, el detector de turnos (turn detection) no confunde intervenciones de terceros con el fin del turno del caller.
-- Despliegue en servidores sin GPU: al funcionar en CPU con un solo hilo (demostrado en los ejemplos con un agente LiveKit real), es adecuado para despliegues baratos, contenedores ligeros o edge.
-- Complemento del modelo GPU en arquitecturas híbridas: el plugin permite usar este modelo en el cliente o agente local (`LocalIsolator`) y el modelo de 555M en un servidor (`RemoteIsolator`), según el presupuesto de cómputo.
-- Procesamiento por lotes de grabaciones: `example.py` permite aislar un fichero completo fuera de línea para preprocesar datasets de audio.
+- Atencion al cliente automatizada: el modelo se coloca como procesador de tramas en la entrada de audio del agente, antes del VAD y del STT, de modo que las voces de fondo de otras personas no activen el turno del agente ni contaminen la transcripcion.
+- Agentes de voz en produccion con multiples participantes: en llamadas donde hay varias personas hablando, el aislamiento del interlocutor principal reduce las falsas interrupciones (de 2,77 a 1,36 por minuto en la version de 8 bits) y mantiene la coherencia del dialogo.
+- Despliegue en infraestructura sin GPU: al ejecutarse en una sola hebra de CPU, permite incorporar aislamiento de voz en entornos con recursos limitados o en contenedores sin aceleracion hardware.
+- Integracion en pipelines de LiveKit: el plugin `voice_isolator` permite activar el aislamiento mediante `noise_cancellation` en `RoomOptions`, sin reescribir el agente existente.
+- Transcripcion de reuniones y actas: en conjuntos como AMI, el modelo reduce el WER de 42,59 a 10,29 en reuniones de prueba, lo que mejora la calidad de las transcripciones automaticas.
+- Centros de contacto con ruido de fondo: en llamadas de centro de contacto con otra voz presente, el WER baja de 69,79 a 49,90, lo que ayuda a que el STT capture correctamente las palabras del cliente.
+- Agentes que hablan primero: la variante `agent` con modo `voicebot` reduce las falsas interrupciones a 0,26 por minuto, adecuada para asistentes proactivos que inician la conversacion.
+- Procesamiento por lotes de archivos de audio: mediante `example.py` o `OnnxStream`, se puede aislar la voz principal de grabaciones para su posterior analisis o transcripcion.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados se centran en el efecto del aislador sobre el WER del STT posterior (media de 9 conjuntos de test, con sistemas en vivo salvo el protocolo de benchmark VoxLock, que toma la muestra de los primeros 15 s de la llamada). No se proporcionan las cifras numéricas agregadas en la model card, solo la figura. Se indica que Live VoxLock va por delante en dos de los nueve test: el benchmark Krisp VI (265 grabaciones) y las llamadas de call-centre con el caller solo.
+Tasa de error de palabra (%), menor es mejor. Modo live: enrollment a partir de la propia llamada.
 
-Ejemplos concretos documentados (STT parakeet-tdt-0.6b-v3 salvo indicación):
+| Conjunto de prueba | Sin procesar | VoxLock live (CPU) | Este modelo, live (CPU) | Version GPU, live |
+|---|---:|---:|---:|---:|
+| Krisp VI benchmark | 23,19 | 5,63 | 5,66 | 5,74 |
+| AMI headset, ventanas de VoxLock | 33,00 | 11,71 | 11,23 | 10,19 |
+| AMI reuniones de prueba | 42,59 | 12,07 | 10,29 | 10,18 |
+| AMI test, ventanas de 60 s | 121,79 | 23,66 | 15,55 | 16,13 |
+| NOTSOFAR | 34,70 | 8,84 | 7,58 | 7,67 |
+| AliMeeting (CER) | 29,40 | 16,28 | 15,82 | 15,69 |
+| Centro de contacto, solo el caller | 0,04 | 2,92 | 5,32 | 5,58 |
+| Centro de contacto + otra voz | 69,79 | 56,65 | 49,90 | 47,52 |
+| Llamadas de prueba ai-coustics | 66,36 | 24,55 | 18,03 | 14,26 |
 
-| Ejemplo | Palabras de terceros sin aislador | Palabras de terceros con aislador | Caller correcto sin aislador | Caller correcto con aislador |
-|---|---|---|---|---|
-| AMI ES2004c (70 s) | 120 | 0 | 38/38 | 38/38 |
-| AMI EN2002c (60 s, difícil) | 6 | 1 | 36/49 | 36/49 |
-| AMI TS3003b (60 s) | 64 | 0 | 46/48 | 45/48 |
-| AliMeeting R1019_M4035 (mandarín, whisper-large-v3) | 0 caracteres | 0 caracteres | 42/47 | 44/47 |
+Rendimiento del VAD de LiveKit (Silero) con 120 llamadas de prueba con otra voz:
+
+| | Habla oida en las pausas del caller | Falsos inicios / min | Fin de turno p90 (s) | Habla del caller perdida |
+|---|---:|---:|---:|---:|
+| Sin procesar | 47,9% | 3,33 | 2,43 | 0,1% |
+| GTCRN (solo ruido) | 48,3% | 3,58 | 2,40 | 0,3% |
+| VoxLock live | 27,5% | 2,28 | 1,51 | 11,0% |
+| Este modelo, live | 26,2% | 2,27 | 1,34 | 6,7% |
+| Version GPU, live | 22,8% | 1,94 | 1,00 | 8,4% |
+
+Interrupciones falsas por minuto de habla del agente (816 llamadas simuladas):
+
+| | Interrupciones falsas / min | Turnos del caller perdidos |
+|---|---:|---:|
+| Sin filtro | 2,77 | 0,4% |
+| GTCRN (solo ruido) | 5,33 | 0,1% |
+| VoxLock live | 1,18 | 6,8% |
+| NVIDIA Real-time RE-USE (GPU) | 0,95 | 2,6% |
+| Inworld Voice Isolator v1, realtime | 4,52 | 0,0% |
+| Este modelo, 8 bits | 1,36 | 0,3% |
+| Modelo agent, 8 bits | 0,48 | 2,4% |
+| Modelo agent, modo voicebot, 8 bits | 0,26 | 1,7% |
 
 ## Requisitos de hardware
 
-- VRAM: no aplicable; el modelo funciona íntegramente en CPU (no requiere GPU ni torch).
-- CPU: suficiente un solo hilo; la demo con agente LiveKit real se ejecutó con una hebra de CPU.
-- Memoria y disco: el repositorio ocupa 0,2 GB; solo requiere `onnxruntime` y `numpy`.
-- Consumer hardware: al no necesitar GPU, cabe en cualquier equipo moderno; también es viable en instancias cloud baratas sin acelerador.
-- Despliegue: integración como plugin de LiveKit Agents (`LocalIsolator` / `VoiceIsolator` con `LocalIsolator("Scicom-intl/voice-isolator-cpu")`), o uso directo con `voice_isolator.OnnxStream(model_dir).push(chunk)`; soporta prewarming para reducir el arranque en frío.
-- Latencia: retardo algorítmico de 10 ms sobre tramas de 10 ms a 16 kHz, apto para conversación full-duplex en tiempo real. Throughput detallado no disponible.
+- Inferencia en una sola hebra de CPU con onnxruntime y numpy; no requiere GPU ni torch.
+- VRAM estimada: no aplica (ejecucion en CPU).
+- GPU recomendadas: no aplica para esta version; existe una version GPU separada (Scicom-intl/voice-isolator).
+- Cabe en cualquier CPU de consumo; las variantes de 10M reducen el coste de CPU aproximadamente un tercio por llamada.
+- Opciones de despliegue: onnxruntime, plugin de LiveKit (`stt_api.livekit_plugin.voice_isolator`), uso directo con `OnnxStream` y script `example.py`.
+- Latencia: 10 ms por trama de 10 ms de audio.
+- Throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Hardware | Contexto/ventana | Latencia | Licencia |
+| Modelo | Parametros | Contexto / ventana | Enfoque | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| Scicom-intl/voice-isolator-cpu | 22M | CPU (onnxruntime) | últimos 10 s | 10 ms | Other |
-| Scicom-intl/voice-isolator (GPU) | 555M (M + WavLM causal) | GPU | no disponible | no disponible | no disponible |
-| Krisp VI (referencia de benchmark) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| voice-isolator-cpu (este) | 22M (y variantes 10M) | 10 s de audio | Aislamiento del interlocutor principal | other | CPU, ONNX |
+| Scicom-intl/voice-isolator | no disponible | no disponible | Aislamiento del interlocutor principal | no disponible | GPU |
+| VoxLock live (CPU) | no disponible | no disponible | Aislamiento de voz | no disponible | CPU |
+| Inworld Voice Isolator v1 | no disponible | no disponible | Eliminacion de ruido conservando todas las voces | no disponible | no disponible |
+| NVIDIA Real-time RE-USE | no disponible | no disponible | Mejora de voz en tiempo real | licencia de investigacion | GPU |
 
-Comparado con su modelo profesor GPU de 555M, esta versión CPU sacrifica parte de capacidad (visible en casos difíciles como AMI EN2002c) a cambio de poder ejecutarse en cualquier CPU con 10 ms de retardo. Frente a soluciones comerciales como Krisp VI, la model card indica que Live VoxLock va por delante en dos de los nueve test, aunque sin cifras comparativas publicadas en la propia ficha.
+En WER medio sobre los 9 conjuntos de prueba, este modelo obtiene 15,49% frente a 38,81% de Inworld Voice Isolator v1. En falsas interrupciones por minuto, la variante agent en modo voicebot alcanza 0,26 frente a 0,95 de NVIDIA RE-USE y 1,18 de VoxLock live.
 
 ## Limitaciones y advertencias
 
-- En escenarios difíciles donde las voces interferentes son tenues, el aislador puede costar palabras del caller: en el ejemplo AMI EN2002c el caller tenía 49 palabras y el STT acertaba 36 tanto con como sin aislador, mientras que en otros ejemplos pierde 1 de 48 (TS3003b). Conviene evaluar sobre el audio real de cada despliegue.
-- La model card está etiquetada con idioma `en`; aunque se muestra un ejemplo en mandarín (AliMeeting) con buen resultado, no hay garantías documentadas de rendimiento para otros idiomas.
-- La licencia es `other` sin detalles en la model card: revisar los términos exactos antes de cualquier uso comercial.
-- El modelo elimina todo lo que no sea el hablante principal: si la aplicación necesita transcribir a varios participantes, este aislador no es la herramienta adecuada, ya que está diseñado para conservar únicamente al caller.
-- No hay cifras publicadas de métricas estándar de separación (SI-SNR, PESQ, etc.) en la model card; la evaluación se centra en el WER del STT posterior.
-- Descargas todavía bajas (164 en el momento de la ficha) y proyecto reciente: madurez en producción limitada y comunidad reducida.
+- Solo soporta ingles; no se ha validado su comportamiento en otros idiomas.
+- En llamadas de centro de contacto con un unico interlocutor limpio, el WER empeora respecto a no procesar (5,32 frente a 0,04), por lo que puede degradar audio ya limpio.
+- La version principal pierde un 6,7% del habla del caller en el VAD, y la variante agent un 2,4% de turnos, lo que puede afectar a la deteccion de turnos.
+- La licencia es "other"; no se detallan en la informacion disponible las condiciones exactas para uso comercial, por lo que es necesario revisar los terminos del repositorio antes de desplegarlo en produccion.
+- Riesgo de alucinacion no aplica directamente al ser un modelo de audio, pero el aislamiento puede eliminar senal util si el interlocutor principal cambia o si hay solapamiento de voces.
+- El rendimiento depende de la calidad del enrollment en modo live; en escenarios con multiples voces simultaneas el WER sigue siendo elevado (49,90 en centro de contacto con otra voz).
+- La ventana de contexto de audio es de 10 s, lo que limita la informacion disponible para el aislamiento en conversaciones con cambios frecuentes de hablante.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Scicom-intl/voice-isolator-cpu
-- Modelo GPU (profesor): https://huggingface.co/Scicom-intl/voice-isolator
-- Paper: *The Voice on the Line*, arXiv:2610.35272 — https://arxiv.org/abs/2610.35272
-- Plugin de LiveKit (`voice_isolator`, con `LocalIsolator`, `RemoteIsolator` y benchmark en streaming): https://github.com/Scicom-AI-Enterprise-Organization/STT-API/tree/main/stt_api/livekit_plugin/voice_isolator
+- Version GPU: https://huggingface.co/Scicom-intl/voice-isolator
+- Paper: https://arxiv.org/abs/2610.35272
+- Plugin de LiveKit (STT-API): https://github.com/Scicom-AI-Enterprise-Organization/STT-API/tree/main/stt_api/livekit_plugin/voice_isolator
+- Inworld Voice Isolator v1: https://huggingface.co/inworld/voice-isolator

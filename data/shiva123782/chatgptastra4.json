@@ -5,7 +5,7 @@
   "author": "shiva123782",
   "url": "https://huggingface.co/shiva123782/Chatgptastra4",
   "created_at": "2026-11-20T03:15:48.000Z",
-  "updated_at": "2026-11-20T10:52:07.000Z",
+  "updated_at": "2026-11-21T11:53:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "peft",
+    "safetensors",
     "kaveri-ai",
     "lora",
     "fine-tuned",
@@ -32,15 +33,17 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 3702168,
+  "storage_human": "4 MB",
   "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": true,
   "gated": false,
   "disabled": false,

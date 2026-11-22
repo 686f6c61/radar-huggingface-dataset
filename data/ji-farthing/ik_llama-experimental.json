@@ -5,7 +5,7 @@
   "author": "ji-farthing",
   "url": "https://huggingface.co/ji-farthing/ik_llama-experimental",
   "created_at": "2026-11-10T04:37:06.000Z",
-  "updated_at": "2026-11-17T16:53:47.000Z",
+  "updated_at": "2026-11-22T06:18:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,10 +28,10 @@
   "trending_score": 0,
   "parameters": 27320698049,
   "parameters_human": "27.32B",
-  "storage_bytes": 418540742784,
-  "storage_human": "418.5 GB",
+  "storage_bytes": 460465902016,
+  "storage_human": "460.5 GB",
   "context_length": 262144,
-  "base_model": "nvidia/Qwen3.8-27B-NVFP4, nvidia/Qwen3.8-Flash-Next-NVFP4, nvidia/Qwen3-8B-FP8, Qwen/Qwen3-8B-FP8, RedHatAI/Qwen3-30B-A3B-FP8-dynamic, Qwen/Qwen3-30B-A3B-FP8, liodon-ai/LFM2.5-8B-A1B-FP8",
+  "base_model": "nvidia/Qwen3.8-27B-NVFP4, nvidia/Qwen3.8-Flash-Next-NVFP4, nvidia/Qwen3-8B-FP8, Qwen/Qwen3-8B-FP8, RedHatAI/Qwen3-30B-A3B-FP8-dynamic, Qwen/Qwen3-30B-A3B-FP8, liodon-ai/LFM2.5-8B-A1B-FP8, thinkingmachines/Inkling-2-Mini",
   "formats": [
     "gguf"
   ],

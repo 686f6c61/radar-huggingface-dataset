@@ -5,7 +5,7 @@
   "author": "ertghiu256",
   "url": "https://huggingface.co/ertghiu256/qwen3.5-4b-hermes-tool-calling-gguf",
   "created_at": "2026-11-16T10:53:12.000Z",
-  "updated_at": "2026-11-16T15:42:25.000Z",
+  "updated_at": "2026-11-22T02:20:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,6 +18,8 @@
     "llama-cpp",
     "unsloth",
     "vision-language-model",
+    "base_model:ertghiu256/qwen3.5-4b-hermes-tool-calling",
+    "base_model:quantized:ertghiu256/qwen3.5-4b-hermes-tool-calling",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -30,7 +32,7 @@
   "storage_bytes": 16764502816,
   "storage_human": "16.8 GB",
   "context_length": 262144,
-  "base_model": null,
+  "base_model": "ertghiu256/qwen3.5-4b-hermes-tool-calling",
   "formats": [
     "gguf"
   ],

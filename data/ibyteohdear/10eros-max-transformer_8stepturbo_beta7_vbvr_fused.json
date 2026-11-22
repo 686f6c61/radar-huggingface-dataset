@@ -5,7 +5,7 @@
   "author": "ibyteohdear",
   "url": "https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7_VBVR_FUSED",
   "created_at": "2026-10-28T05:47:33.000Z",
-  "updated_at": "2026-11-21T00:07:54.000Z",
+  "updated_at": "2026-11-22T04:58:45.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "non-commercial",
   "pipeline_tag": "image-to-video",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 559,
+  "downloads_30d": 642,
   "trending_score": 0,
   "parameters": 20111462920,
   "parameters_human": "20.11B",

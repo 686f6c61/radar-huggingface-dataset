@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Tess-4.5-594B-A17B-GGUF",
+  "slug": "mradermacher-tess-4-5-594b-a17b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tess-4.5-594B-A17B-GGUF",
+  "created_at": "2026-11-22T10:37:05.000Z",
+  "updated_at": "2026-11-22T11:10:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 327693312,
+  "parameters_human": "327.7M",
+  "storage_bytes": 338601029152,
+  "storage_human": "338.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

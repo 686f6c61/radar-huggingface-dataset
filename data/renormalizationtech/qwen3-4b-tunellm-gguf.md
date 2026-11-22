@@ -2,59 +2,63 @@
 
 ## Resumen
 
-Qwen3-4B tuneLLM GGUF es una release no oficial del modelo Qwen3-4B de Alibaba Qwen, publicada por el usuario RenormalizationTech como parte de un flujo de trabajo educativo de conversion y cuantizacion. No introduce entrenamiento nuevo ni modificaciones en los pesos mas alla de la conversion a formato GGUF y la cuantizacion numerica mediante llama.cpp. El modelo base conserva la arquitectura y capacidades originales de Qwen3-4B, un transformer denso de 4.022.468.096 parametros.
+Qwen3-4B-tuneLLM-GGUF es una release no oficial de Qwen3-4B, el modelo denso de 4.000 millones de parametros desarrollado por el equipo Qwen de Alibaba. La publica RenormalizationTech como parte de su portafolio de investigacion tuneLLM, centrado en cuantizacion, LoRA/QLoRA y tecnicas de steering de comportamiento. No introduce entrenamiento nuevo ni modificaciones de pesos: el contenido del repositorio es la conversion del checkpoint original a formato GGUF y su cuantizacion numerica con llama.cpp.
 
-La relevancia de esta ficha es doble: por un lado, documenta una de las primeras releases publicas del flujo tuneLLM aplicado a un modelo Qwen3, con artefactos reproducibles y mediciones de perplexity y throughput incluidas; por otro, sirve como ejemplo de buenas practicas de trazabilidad en cuantizacion, ya que el autor publica hashes, commits y un archivo de reproduccion. El repositorio ocupa 14,8 GB e incluye tres variantes GGUF (BF16, Q8_0 y Q4_K_M).
+El artefacto incluye tres variantes de precision: BF16 (7,498 GiB), Q8_0 (3,986 GiB) y Q4_K_M (2,326 GiB), todas derivadas del checkpoint Qwen/Qwen3-4B en la revision `1cfa9a7208912126459214e8b04321603b3df60c`. El interes practico esta en que permite ejecutar un modelo de la familia Qwen3 con ventana de contexto larga en hardware de consumo mediante llama.cpp, y en que el autor documenta de forma reproducible el proceso de conversion, los hashes de los ficheros y un conjunto de mediciones de rendimiento y capacidad.
 
-El modelo esta pensado para inferencia local con llama.cpp en entornos con GPU de consumo o profesional, y hereda las capacidades conversacionales, de razonamiento y de generacion de codigo de Qwen3-4B. Al ser una release educativa, el autor advierte explicitamente de que no establece rankings de capacidad ni equivalencias entre formatos.
+La relevancia es doble: por un lado ofrece pesos GGUF listos para usar con llama.cpp, Ollama o servidores compatibles con la API de endpoints; por otro, sirve como ejemplo metodologico de como evaluar el impacto de la cuantizacion con perplexity, paridad de tokens y subconjuntos fijos de benchmarks, en lugar de afirmar equivalencia de capacidades sin evidencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredada de Qwen3-4B) |
+| Arquitectura | Transformer denso (modelo base Qwen3-4B) |
 | Parametros totales | 4.022.468.096 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | BF16, Q8_0, Q4_K_M |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen3-4B) |
+| Tipos de cuantizacion | BF16, Q8_0, Q4_K_M (GGUF) |
 | Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | Apache 2.0 |
+| Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
-| Modelo base | Qwen/Qwen3-4B (revision 1cfa9a7208912126459214e8b04321603b3df60c) |
-| Commit de llama.cpp usado | 8ca5a8008b57aa39f2601546c0d07912045080a5 |
-| Importance matrix | No utilizada |
-| Tamano del repo | 14,8 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3-4B: un transformer denso de aproximadamente 4.000 millones de parametros. Esta release no aplica entrenamiento adicional, RLHF, DPO ni adaptacion de dominio; el autor indica explicitamente que no se realizo adaptacion de dominio ni activation steering. El unico proceso aplicado es la conversion a GGUF en precision BF16 y la cuantizacion posterior a Q8_0 y Q4_K_M mediante llama.cpp en el commit 8ca5a8008b57aa39f2601546c0d07912045080a5, sin importance matrix.
+El modelo subyacente es Qwen3-4B, un transformer denso de 4.000 millones de parametros de la familia Qwen3. Esta release no entrena ni afina el modelo: aplica conversion a GGUF en BF16 y cuantizacion numerica con llama.cpp (commit `8ca5a8008b57aa39f2601546c0d07912045080a5`), sin matriz de importancia (importance matrix). El autor declara explicitamente que los pesos no cambian respecto al checkpoint original y que no se reclama ninguna mejora de capacidad.
 
-La innovacion tecnica de esta release no esta en el modelo sino en el flujo de trabajo: se incluye un archivo `reproduction-dab1dae.zip` con el codigo fuente del workflow local (commit dab1dae), un manifiesto con hashes de los ficheros del modelo, el commit completo de implementacion y los ajustes de evaluacion. Tambien se incluye `evaluation.json` con las mediciones compactas. El chat template guardado proviene del tokenizer upstream. Para comparaciones con las evaluaciones incluidas es necesario forzar el modo no-thinking de forma explicita mediante `--chat-template-kwargs '{"enable_thinking":false}'`.
+El trabajo de ingenieria se concentra en la reproducibilidad: se incluye un archivo fuente `reproduction-dab1dae.zip` con el commit del flujo de trabajo local, un manifiesto con hashes de los ficheros del modelo y de la fuente, y los ajustes de evaluacion. Los datasets de entrenamiento y los checkpoints intermedios no se incluyen. La evaluacion combina tres niveles: una prueba de humo de ocho items con paridad exacta de tokens de entrada frente a Transformers, una medicion de perplexity sobre 32 pares pregunta/respuesta de GSM8K (contexto 512, cuatro chunks, batch 512) y un cribado posterior sobre 384 items por condicion con subconjuntos MMLU general y de fisica, GSM8K e IFEval.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, heredada de Qwen3-4B.
-- Razonamiento y matematicas: el modelo base Qwen3 esta disenado para tareas de razonamiento; el autor usa GSM8K para medir perplexity, lo que sugiere soporte para problemas matematicos.
-- Generacion de codigo: capacidad heredada del modelo base, no verificada de forma independiente en esta release.
-- Modo thinking / no-thinking: el chat template upstream permite alternar entre ambos modos mediante `enable_thinking`.
-- Soporte de tool calling y function calling: no documentado en la informacion proporcionada para esta release concreta; debe consultarse la model card de Qwen3-4B.
-- Capacidades multilingues: no disponibles en la informacion proporcionada; el autor remite a la model card upstream.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere despliegue en infraestructura compatible con la API de Hugging Face.
-- Inferencia local en CPU y GPU mediante llama.cpp.
+- Generacion de texto conversacional y de un solo turno, con el pipeline `text-generation` y compatibilidad declarada con endpoints.
+- Razonamiento y matematicas basicas, ejercitadas mediante GSM8K en el cribado del autor.
+- Conocimiento general y de dominio cientifico, medido con subconjuntos MMLU general y de fisica.
+- Seguimiento de instrucciones, evaluado con IFEval en el cribado publicado.
+- Soporte de tool calling y function calling: no confirmado en la informacion proporcionada para esta release.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion proporcionada.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Capacidades especiales (vision, audio, modo thinking): no disponibles en la informacion proporcionada para esta release.
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo con GPU de consumo: la variante Q4_K_M ocupa 2,326 GiB, lo que permite ejecutarla en GPUs con 4-6 GB de VRAM libre y en CPU con llama.cpp, ideal para prototipado y pruebas offline.
-- Evaluacion de pipelines de cuantizacion: el repositorio incluye mediciones de perplexity y throughput por formato, lo que lo convierte en un banco de pruebas util para comparar BF16, Q8_0 y Q4_K_M en el mismo hardware y con el mismo texto.
-- Reproduccion de flujos de conversion GGUF: el archivo `reproduction-dab1dae.zip` y el manifiesto de hashes permiten reproducir el proceso completo de conversion y cuantizacion, util para equipos que quieran auditar o replicar el workflow.
-- Asistente conversacional de bajo coste en entornos con recursos limitados: con Q4_K_M y 186 tokens/s de generacion en una RTX A6000, es viable para chatbots internos o asistentes de documentacion con latencia aceptable.
-- Generacion de codigo en local para entornos con requisitos de privacidad: al ejecutarse completamente en local, permite autocompletado y generacion de codigo sin enviar datos a servicios externos, sujeto a validar la calidad real frente al modelo base.
-- Educacion y formacion en cuantizacion: sirve como material didactico para explicar diferencias entre precisiones, el efecto de la importance matrix (ausente aqui) y la relacion entre perplexity y capacidad real.
-- Pruebas de compatibilidad de llama.cpp: util para verificar que una build concreta de llama.cpp soporta Qwen3 y los formatos GGUF incluidos, con paridad de tokens de entrada verificada contra Transformers.
+- Despliegue local en estaciones de trabajo con GPU de consumo: la variante Q4_K_M ocupa 2,326 GiB y alcanza 186,0 tokens/s en el microbenchmark del autor sobre una RTX A6000, lo que permite ejecutar el modelo en tarjetas de 8-12 GB de VRAM con offload completo.
+- Prototipado rapido de asistentes conversacionales: al ser compatible con llama.cpp y con endpoints, se puede levantar un servidor local y conectar una interfaz de chat sin infraestructura adicional.
+- Evaluacion comparativa de cuantizaciones: el repositorio incluye tres precisiones del mismo checkpoint con mediciones de perplexity y throughput, lo que lo convierte en un banco de pruebas para decidir que formato usar en produccion segun el compromiso tamano/calidad.
+- Educacion e investigacion en cuantizacion: el archivo de reproduccion, el manifiesto de hashes y los scripts de evaluacion permiten replicar el flujo completo de conversion y medicion con llama.cpp.
+- Tareas de matematicas escolares y razonamiento aritmetico: el cribado GSM8K muestra 119/128 en BF16 y 116/128 en Q4_K_M, adecuado para asistentes educativos con verificacion posterior.
+- Clasificacion y respuesta a preguntas de conocimiento general: los resultados MMLU (92/128 en BF16, 89/128 en Q4_K_M) permiten usar el modelo como motor de QA en dominios acotados, siempre con validacion humana.
+- Integracion en pipelines de CI/CD para pruebas de regresion de modelos: la paridad exacta de tokens de entrada frente a Transformers y el formato GGUF facilitan comparar salidas entre versiones del modelo de forma automatizada.
 
 ## Benchmarks y rendimiento
 
-El autor publica mediciones de throughput y perplexity, no benchmarks de capacidad estandar (MMLU, HumanEval, GSM8K accuracy). Se presentan tal cual, con las advertencias del autor.
+Resultados del cribado publicado por el autor sobre los mismos bytes de pesos, 384 items por condicion. Los subconjuntos MMLU son zero-shot de cuatro opciones por verosimilitud, no puntuaciones de leaderboard estandar; GSM8K usa correccion por ultimo numero; IFEval se evalua sobre 32 items.
+
+| Condicion GGUF | MMLU general /128 | MMLU fisica /96 | GSM8K /128 | IFEval /32 |
+|---|---:|---:|---:|---:|
+| BF16 | 92 | 62 | 119 | 25 |
+| Q8_0 | 89 | 61 | 121 | 25 |
+| Q4_K_M | 89 | 61 | 116 | 24 |
+
+Mediciones iniciales de ficheros y throughput:
 
 | Fichero | Tamano (GiB) | Generacion (tokens/s) | Perplexity (texto corto) |
 |---|---:|---:|---:|
@@ -62,50 +66,50 @@ El autor publica mediciones de throughput y perplexity, no benchmarks de capacid
 | Qwen3-4B-Q8_0.gguf | 3,986 | 130,5 | 2,6282 |
 | Qwen3-4B-Q4_K_M.gguf | 2,326 | 186,0 | 2,6608 |
 
-Notas metodologicas del autor: throughput medido con llama-bench en una NVIDIA RTX A6000, tres repeticiones, 64 tokens generados, offload completo a GPU, flash attention activado y cuatro hilos de CPU. El procesamiento de prompt se midio por separado con 128 tokens de prompt. La perplexity se midio con llama-perplexity sobre los primeros 32 pares pregunta/solucion de test de GSM8K, contexto 512, cuatro chunks, batch/microbatch 512; la incertidumbre reportada por la herramienta fue de aproximadamente 0,175-0,177. El autor advierte que las diferencias de perplexity son menores que la incertidumbre reportada y no establecen un ranking de capacidad.
-
-Prueba de paridad de tokens de entrada contra Transformers sobre un fixture de ocho items: BF16 y Q8_0 produjeron respuestas identicas a Transformers; las puntuaciones en CPU fueron 7/8, 7/8 y 8/8 respectivamente. El autor advierte que una diferencia de un item no es evidencia de mayor capacidad de Q4.
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K accuracy) en la informacion disponible.
+El throughput procede de un test corto de llama-bench en una NVIDIA RTX A6000: tres repeticiones, 64 tokens generados, offload completo en GPU, flash attention activado y cuatro hilos de CPU. La perplexity se calculo con llama-perplexity sobre los primeros 32 pares de GSM8K, contexto 512, cuatro chunks y batch 512; la incertidumbre reportada por la herramienta fue de aproximadamente 0,175-0,177, superior a las diferencias observadas entre precisiones. El autor advierte que estas cifras son microbenchmarks y no latencia de produccion, y que no establecen una jerarquia de capacidades entre formatos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): BF16 ~7,5 GiB; Q8_0 ~4,0 GiB; Q4_K_M ~2,3 GiB. Con overhead de contexto y KV cache, anadir aproximadamente 1-3 GiB segun longitud de contexto.
-- GPU recomendadas: NVIDIA RTX A6000 (hardware usado en las mediciones), A100, H100 para mayor throughput; RTX 4090, RTX 3090, RTX 4080 para uso profesional en local.
-- GPU de consumo: Q4_K_M cabe en GPUs con 6 GB o mas (RTX 3060, RTX 4060, RTX 2060); Q8_0 requiere 8 GB o mas (RTX 3070, RTX 4060 Ti 16 GB); BF16 requiere 12 GB o mas (RTX 3060 12 GB, RTX 4070 Ti).
-- Despliegue: llama.cpp (build que soporte Qwen3 y estos formatos GGUF), llama-cli, llama-server; Ollama y otros runners basados en llama.cpp son opciones viables aunque no se documentan explicitamente en la model card.
-- Throughput medido: 79,1 tokens/s (BF16), 130,5 tokens/s (Q8_0), 186,0 tokens/s (Q4_K_M) en RTX A6000 con offload completo, flash attention y cuatro hilos de CPU. Estas cifras son de un microbenchmark, no de produccion.
-- Procesamiento de prompt: medido por separado con 128 tokens de prompt; el valor concreto no se detalla en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 2,5-3 GB para Q4_K_M, 4,5-5 GB para Q8_0 y 8-9 GB para BF16, incluyendo overhead de contexto y cache KV.
+- GPU recomendadas: RTX A6000 (medida por el autor), A100 y H100 para despliegues de mayor concurrencia; RTX 4090, 4080, 3090 y 4070 Ti para uso individual.
+- Cabe en GPU de consumo: si, Q4_K_M en tarjetas de 8 GB o superiores y Q8_0 en tarjetas de 12 GB o superiores; BF16 requiere 16 GB o mas para contexto amplio.
+- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de endpoints y cualquier runtime que cargue GGUF; el autor no documenta vLLM ni TGI para este artefacto.
+- Latencia y throughput: 79,1 tokens/s en BF16, 130,5 en Q8_0 y 186,0 en Q4_K_M sobre una RTX A6000 con offload completo, en un test de 64 tokens generados. No se publican cifras de latencia conversacional ni de procesamiento de prompt mas alla de la medicion separada con 128 tokens de prompt.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---:|---|---|---|---|
-| Qwen3-4B tuneLLM GGUF (esta release) | 4,02 B | no disponible | Apache 2.0 | GGUF (BF16, Q8_0, Q4_K_M) | Release educativa, sin entrenamiento adicional; mediciones de perplexity y throughput incluidas |
-| Qwen/Qwen3-4B (upstream) | 4,02 B | no disponible | Apache 2.0 | safetensors | Modelo original; referencia para capacidades y contexto |
-| Otras cuantizaciones GGUF de Qwen3-4B (p. ej. Qwen oficial o community) | 4,02 B | no disponible | Apache 2.0 | GGUF | No se dispone de datos comparativos de rendimiento en la informacion proporcionada |
-
-No se dispone de datos de benchmarks comparativos con alternativas en la informacion proporcionada. La comparativa se limita a parametros, licencia y formato.
+| Qwen3-4B-tuneLLM-GGUF (esta release) | 4,02 B | no disponible | GGUF BF16/Q8_0/Q4_K_M | Apache-2.0 | Cuantizacion no oficial con evaluacion reproducible |
+| Qwen/Qwen3-4B (upstream) | 4,02 B | no disponible | safetensors | Apache-2.0 | Checkpoint original en BF16, sin cuantizar |
+| Qwen3-4B-tuneLLM-NF4 (mismo autor) | 4,02 B | no disponible | NF4 | Apache-2.0 | Variante de cuantizacion NF4 del mismo checkpoint |
+| Alternativas de ~4 B en GGUF | no disponible | no disponible | GGUF | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Release no oficial: debe citarse como derivado no oficial del modelo Qwen fijado en la revision 1cfa9a7208912126459214e8b04321603b3df60c, no como checkpoint oficial de Qwen.
-- Sin entrenamiento adicional: no hay adaptacion de dominio, RLHF, DPO ni activation steering; las capacidades son las del modelo base.
-- Sin importance matrix: la cuantizacion Q4_K_M se realizo sin imatrix, lo que puede degradar mas la calidad que cuantizaciones con imatrix en tareas sensibles.
-- Perplexity no concluyente: las diferencias entre formatos son menores que la incertidumbre reportada por la herramienta (~0,175-0,177) y la muestra es de 32 pares de GSM8K; no establece ranking de capacidad ni equivalencia entre formatos.
-- Paridad de tokens no implica paridad de respuestas: el autor advierte que cambios de cuantizacion y runtime pueden alterar respuestas individuales aunque los IDs de tokens de entrada coincidan.
-- Modo thinking: para comparaciones con las evaluaciones incluidas es obligatorio desactivar el modo thinking de forma explicita; el modo por defecto puede diferir.
-- Decodificacion greedy: las evaluaciones usan decodificacion greedy por reproducibilidad; el modelo base recomienda sampling y advierte de repeticiones con greedy.
-- Sesgos y alucinaciones: no evaluados en esta release; se heredan los del modelo base Qwen3-4B, no documentados aqui.
-- Idiomas: no disponibles en la informacion proporcionada; debe consultarse la model card upstream.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no garantiza idoneidad para ninguna aplicacion concreta ni rendimiento de seguridad.
-- Sin benchmarks de capacidad: no hay datos de MMLU, HumanEval, GSM8K accuracy ni evaluaciones de robustez; no debe asumirse rendimiento en produccion sin validacion propia.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: release muy reciente y sin validacion comunitaria.
+- Release no oficial: no esta mantenida por el equipo Qwen; los pesos y la licencia pertenecen a los autores upstream.
+- Sin entrenamiento ni ajuste: no se introduce ninguna mejora de capacidad respecto a Qwen3-4B; cualquier diferencia en benchmarks debe atribuirse a ruido de cuantizacion o al muestreo de la evaluacion.
+- Los subconjuntos de evaluacion son pequenos (128 items MMLU general, 96 de fisica, 128 GSM8K, 32 IFEval) y no equivalen a puntuaciones de leaderboard; las diferencias entre precisiones estan dentro o cerca de la incertidumbre reportada.
+- La perplexity se midio sobre solo 32 pares de GSM8K; el autor advierte que no establece preservacion general de capacidades.
+- El throughput es un microbenchmark en una unica GPU (RTX A6000) con 64 tokens generados; no representa latencia conversacional ni produccion con concurrencia.
+- Riesgo de alucinacion: inherente al modelo base; no se documentan evaluaciones de factualidad ni de calibracion.
+- Sesgos: no se documentan analisis de sesgo ni de toxicidad en la informacion proporcionada.
+- Idiomas: la model card no declara cobertura linguistica; no se puede asumir multilingue sin verificar el modelo base.
+- Contexto: la longitud de contexto no se especifica en esta release; debe consultarse la model card de Qwen/Qwen3-4B.
+- Uso comercial: permitido bajo Apache-2.0, pero sujeto a los terminos del modelo upstream y a la obligacion de conservar el aviso de licencia incluido en el repositorio.
+- No se incluyen datasets de entrenamiento ni checkpoints intermedios; la reproducibilidad se limita al flujo de conversion y evaluacion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/RenormalizationTech/Qwen3-4B-tuneLLM-GGUF
-- Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
+- Repositorio Hugging Face: https://huggingface.co/RenormalizationTech/Qwen3-4B-tuneLLM-GGUF
+- Modelo base upstream: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio del proyecto tuneLLM: https://github.com/RenormalizationTech/tuneLLM
+- Resultados y ejemplos guardados: https://github.com/RenormalizationTech/tuneLLM/blob/main/docs/showcase.md
+- Reproduccion y entorno: https://github.com/RenormalizationTech/tuneLLM/blob/main/docs/reproduce.md
+- Metodos y referencias: https://github.com/RenormalizationTech/tuneLLM/blob/main/docs/references.md
+- Release NF4 del mismo autor: https://huggingface.co/RenormalizationTech/Qwen3-4B-tuneLLM-NF4
+- Release QLoRA de fisica: https://huggingface.co/RenormalizationTech/Qwen3-4B-tuneLLM-PRL-Writing-QLoRA
+- Controles de rasgos (steering): https://huggingface.co/RenormalizationTech/qwen2.5-7b-gcad-steering-controls
+- Experimento de refusal steering: https://huggingface.co/RenormalizationTech/qwen2.5-7b-refusal-steering-experiment
+- Registro del trabajo NF4 sobre 27B: https://github.com/RenormalizationTech/tuneLLM/blob/main/results/qwen38_27b_nf4_execution_01.json
 - Paper de GSM8K (Cobbe et al., 2021): https://arxiv.org/abs/2110.14168
-- llama.cpp (commit usado): https://github.com/ggml-org/llama.cpp/commit/8ca5a8008b57aa39f2601546c0d07912045080a5

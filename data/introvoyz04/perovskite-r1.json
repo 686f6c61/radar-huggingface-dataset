@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "introvoyz04/Perovskite-R1",
+  "slug": "introvoyz04-perovskite-r1",
+  "author": "introvoyz04",
+  "url": "https://huggingface.co/introvoyz04/Perovskite-R1",
+  "created_at": "2026-11-22T09:21:38.000Z",
+  "updated_at": "2026-11-22T09:21:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "chemistry",
+    "dataset:JH976/Perovskite-R1",
+    "arxiv:2507.16307",
+    "base_model:Qwen/QwQ-32B",
+    "base_model:finetune:Qwen/QwQ-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65539264406,
+  "storage_human": "65.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/QwQ-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perovskite-R1: A Domain-Specialized LLM for Intelligent Discovery ...",
+      "url": "https://arxiv.org/html/2507.16307v1",
+      "snippet": "Overall, this result confirms the huge potential of AI-based models in solving complex material screening problems and accelerating the development of perovskite photovoltaic materials, providing a new approach for breaking through the traditional scientific research model."
+    },
+    {
+      "title": "Perovskite‑R1: A Domain‑Specialized LLM for Intelligent Discovery ...",
+      "url": "https://arxiv.org/html/2507.16307",
+      "snippet": "Overall, this result confirms the huge potential of AI-based models in solving complex material screening problems and accelerating the development of perovskite photovoltaic materials, providing a new approach for breaking through the traditional scientific research model."
+    }
+  ]
+}

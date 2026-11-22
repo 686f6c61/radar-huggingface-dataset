@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "Oriac/cnn-image-cats-and-dogs-classifier",
+  "slug": "oriac-cnn-image-cats-and-dogs-classifier",
+  "author": "Oriac",
+  "url": "https://huggingface.co/Oriac/cnn-image-cats-and-dogs-classifier",
+  "created_at": "2026-01-27T18:52:57.000Z",
+  "updated_at": "2026-11-22T11:08:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "image-classification",
+    "binary-classification",
+    "cnn",
+    "tensorflow",
+    "computer-vision",
+    "from-scratch",
+    "cats-vs-dogs",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64173199,
+  "storage_human": "64 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary image classification",
+      "dataset": "Dogs vs. Cats (held-out split, 3,293 images)",
+      "metric": null,
+      "value": 0.9353
+    },
+    {
+      "task": "Binary image classification",
+      "dataset": "Dogs vs. Cats (held-out split, 3,293 images)",
+      "metric": null,
+      "value": 0.9337
+    },
+    {
+      "task": "Binary image classification",
+      "dataset": "Dogs vs. Cats (held-out split, 3,293 images)",
+      "metric": null,
+      "value": 0.9573
+    },
+    {
+      "task": "Binary image classification",
+      "dataset": "Dogs vs. Cats (held-out split, 3,293 images)",
+      "metric": null,
+      "value": 0.9112
+    },
+    {
+      "task": "Binary image classification",
+      "dataset": "Dogs vs. Cats (held-out split, 3,293 images)",
+      "metric": null,
+      "value": 0.9859
+    },
+    {
+      "task": "Binary image classification",
+      "dataset": "Dogs vs. Cats (held-out split, 3,293 images)",
+      "metric": null,
+      "value": 0.1625
+    }
+  ],
+  "sources": []
+}

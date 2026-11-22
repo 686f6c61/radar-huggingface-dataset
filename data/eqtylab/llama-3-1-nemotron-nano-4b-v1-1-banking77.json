@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "知乎 - 有问题，就会有答案",
-      "url": "https://www.zhihu.com/",
-      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
-    },
-    {
-      "title": "话题广场 - 知乎",
-      "url": "https://www.zhihu.com/topics",
-      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
-    },
-    {
-      "title": "IDM 安装激活完整教程（2026年最新） - 知乎",
-      "url": "https://zhuanlan.zhihu.com/p/2006521919839687672",
-      "snippet": "Feb 16, 2026 · Internet Download Manager (IDM) 是一款功能强大的下载加速工具，支持多线程下载、视频嗅探、站点抓取等功能。 …"
-    },
-    {
-      "title": "2026年最新！下载安装Google Play商店保姆级教程（无需 ...",
-      "url": "https://zhuanlan.zhihu.com/p/1991589326627313306",
-      "snippet": "Mar 30, 2026 · 今天我花费一天时间完全弄明白了最新的 Google Play 安装方案，写出此教程分享给知友们。 给在这个问题上踩坑的知 …"
-    },
-    {
-      "title": "知乎日报 - 每天 3 次，每次 7 分钟",
-      "url": "https://daily.zhihu.com/",
-      "snippet": "知乎日报是一款拥有千万用户的资讯类客户端，每日提供来自知乎社区的精选问答，还有国内一流媒体的专栏特稿。 主题日报包括动 …"
-    }
-  ]
+  "sources": []
 }

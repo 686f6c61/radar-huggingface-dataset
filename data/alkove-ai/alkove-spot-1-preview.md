@@ -2,127 +2,118 @@
 
 ## Resumen
 
-alkove-spot-1-preview es un modelo de detección de palabras clave (keyword spotting) de vocabulario abierto publicado por alkove-ai, el equipo detrás del SDK de voz en dispositivo Alkove. Su particularidad es que no requiere entrenamiento por palabra: el desarrollador escribe el término que quiere detectar (una wake word, un comando, un nombre de producto o una palabra suelta dentro de una frase), lo convierte a fonemas con alkove-lex-1-preview y el modelo lo busca en el flujo de audio en tiempo real. El modelo es un ONNX de 2,9 MB con pesos cuantizados a int8 y 4 bits, pensado para ejecutarse en el navegador o en el móvil mediante onnxruntime-web y WebAssembly, sin enviar audio a ningún servidor.
+alkove-spot-1-preview es un modelo de deteccion de palabras clave (keyword spotting) de vocabulario abierto, desarrollado por alkove-ai como parte del SDK de voz on-device Alkove. A diferencia de los wake-word detectors clasicos, que requieren entrenar un modelo especifico por palabra, Spot detecta cualquier palabra escrita por el desarrollador o el usuario (una wake word, un comando, un nombre propio o una palabra en mitad de una frase) sin reentrenamiento, a partir de audio mono a 16 kHz. Forma parte de un ecosistema mas amplio que incluye alkove-lex (fonemizador) y alkove-focus (aislamiento de voz).
 
-Además del reconocimiento de fonemas, el modelo expone una salida de actividad de voz (`speech`), de modo que resuelve en una sola pasada la detección de palabras y la detección de habla. El consumo es muy bajo: en un Galaxy Z Fold8 con Chrome y un solo hilo WebAssembly procesa un segundo de audio en unos 22 ms, alrededor del 2 % de un núcleo. La ventana de audio es de 480 muestras a 16 kHz (30 ms) por llamada, con un estado recursivo de 19.672 valores float32 que se realimenta entre tramas.
+El modelo no transcribe: emite log-probabilidades sobre un inventario de 58 fonemas (mas el blank de CTC) y una probabilidad de actividad de voz, y es el SDK quien busca la secuencia fonetica objetivo en ese flujo. Esa separacion entre el modelo acustico y la logica de busqueda es lo que permite el vocabulario abierto. El modelo es extremadamente compacto (2.8 MB en pesos de 4 bits e int8), pensado para ejecutarse en un solo hilo de CPU, de forma nativa o en WebAssembly, en navegador, movil o escritorio, sin enviar audio a ningun servidor.
 
-La versión publicada es una preview (pesos e interfaz pueden cambiar antes de la versión 1), con licencia Apache-2.0 y soporte para siete idiomas: francés, inglés, español, italiano, portugués, catalán y rumano. Es relevante ahora porque cubre un hueco habitual en despliegues on-device: wake words y comandos personalizables sin recolectar datos de entrenamiento ni pasar por un servicio de terceros.
+Se distribuye como preview bajo licencia Apache-2.0, con soporte declarado para frances, ingles, espanol, italiano, portugues, catalan y rumano. Su relevancia actual radica en que cubre un hueco practico: wake words y comandos de voz personalizables en produccion, con latencia de milisegundos y sin dependencia de la nube, sobre un formato de pesos propio (`.alk`) y un motor Rust abierto.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No detallada por el autor. Modelo de audio en streaming con estado recursivo (19.672 floats) y salida CTC sobre 58 fonemas más el blank; usa el operador `DFT` de ONNX |
-| Parámetros totales | no disponible (pesos en un único ONNX de 2,9 MB, cuantizados a int8 y 4 bits) |
-| Longitud de contexto | No aplica en el sentido de ventana de texto: procesa tramas de 480 muestras (30 ms) con estado persistente entre llamadas |
-| Tipos de cuantización | int8 y 4 bits (incluidos en el ONNX publicado) |
+| Arquitectura | no disponible (modelo acustico con salida CTC sobre 58 fonemas + blank; detalles de capas no publicados) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (streaming por tramas de 30 ms; estado recurrente de 19672 floats) |
+| Tipos de cuantizacion | 4 bits e int8 (incluidos en el fichero `.alk`) |
 | Idiomas soportados | fr, en, es, it, pt, ca, ro |
-| Licencia | Apache-2.0 (copyright 2026 Eddy Bordi) |
-| Formato de pesos | ONNX, opset 17; manifiesto JSON con sha256, tamaños y firmas de entrada/salida |
+| Licencia | Apache-2.0 |
+| Formato de pesos | `.alk` (formato propio del motor Alkove, documentado en el repositorio) |
 
-Entradas y salidas por llamada (una cada 30 ms):
-
-| Nombre | Tipo | Descripción |
-|---|---|---|
-| `audio` (entrada) | float32 `[1, 480]` | Audio mono a 16 kHz, rango -1..1 |
-| `state` (entrada) | float32 `[19672]` | Ceros al inicio; después, el `next_state` anterior |
-| `logp` (salida) | float32 `[1, 1, 59]` | Log-probabilidades del blank y de los 58 fonemas; 3 pasos (90 ms) de retardo |
-| `speech` (salida) | float32 `[1, 1]` | Probabilidad de que haya alguien hablando; 1 paso (30 ms) de retardo |
-| `next_state` (salida) | float32 `[19672]` | Se realimenta en la llamada siguiente |
+Otros datos tecnicos: entrada `audio` float32 `[1, 480]` (30 ms a 16 kHz, mono, rango -1..1); salidas `logp` float32 `[1, 1, 59]` (blank + 58 fonemas, con 3 pasos de retardo, 90 ms) y `speech` float32 `[1, 1]` (probabilidad de voz activa, 1 paso de retardo, 30 ms). Tamano del repositorio: 0.0 GB segun Hugging Face; fichero del modelo: 2.8 MB.
 
 ## Arquitectura y entrenamiento
 
-El autor no publica detalles de la arquitectura interna (capas, tipo de bloque, función de pérdida ni composición del dataset de entrenamiento). Lo que sí se deduce de la interfaz publicada es que se trata de un modelo causal en streaming: consume 30 ms de audio por paso, mantiene un estado recursivo de 19.672 valores float32 que resume el pasado y emite una distribución CTC sobre un inventario de 58 fonemas (el índice 0 es el blank, definido en `phonemes.json`). La salida `logp` llega con 3 pasos de retardo (90 ms) y la de actividad de voz con 1 paso (30 ms). El modelo usa el operador estándar `DFT` de ONNX, lo que obliga a onnxruntime y onnxruntime-web 1.30 o superior.
+La informacion disponible no detalla la arquitectura interna (numero de capas, tipo de bloques, atencion o convoluciones). Lo que si se documenta es la interfaz: el modelo procesa tramas de 480 muestras (30 ms) y mantiene estado entre llamadas (19672 floats, inicializados a cero), lo que implica un modelo de tipo streaming con estado recurrente. La cabeza de salida es compatible con CTC: 59 clases correspondientes al blank (indice 0) y 58 fonemas definidos en `phonemes.json`. Adicionalmente produce una salida auxiliar de deteccion de actividad de voz.
 
-La detección no la hace el modelo por sí solo: el SDK de Alkove convierte la palabra objetivo a fonemas con alkove-lex-1-preview (o se escriben a mano) y busca esa secuencia en el flujo de `logp`, fijando un umbral por palabra para una tasa de falsos positivos objetivo. La opción *only after a pause* usa la salida `speech` para aceptar una detección solo si nadie hablaba en los 300 ms anteriores, lo que elimina buena parte de las falsas alarmas en medio de frases. No hay información disponible sobre RLHF, DPO ni sobre el volumen de datos de entrenamiento.
+No se han publicado datos sobre el volumen de entrenamiento, la composicion del dataset, el uso de RLHF/DPO (no aplica en un modelo acustico de este tipo) ni innovaciones de decodificacion mas alla de la busqueda de secuencias foneticas que realiza el SDK. La evaluacion se hizo sobre MOCKS (fr, en, es, it) y los conjuntos de test de Common Voice (ca, pt), con 40 palabras escritas por idioma fonetizadas por alkove-lex (primera pronunciacion mas variantes con al menos 25 % de probabilidad). El umbral se calibra sobre la mitad de los hablantes y la recall se mide sobre la otra mitad; las falsas alarmas se cuentan sobre todo el habla que no contiene la palabra.
 
 ## Capacidades
 
-- Detección de vocabulario abierto: cualquier palabra o frase escrita por el desarrollador, sin reentrenar el modelo.
-- Reconocimiento de fonemas en streaming: salida CTC con 58 fonemas, pensada para búsqueda de secuencias.
-- Detección de actividad de voz (VAD) integrada en la misma pasada, con resolución de 30 ms.
-- Siete idiomas: francés, inglés, español, italiano, portugués, catalán y rumano.
-- Ejecución en tiempo real sobre CPU: aproximadamente 22-31 ms por segundo de audio en un solo hilo WebAssembly.
-- Despliegue en navegador y en móvil con onnxruntime-web; también en Node u otros entornos onnxruntime.
-- Soporte de la opción *only after a pause* (detección solo tras 300 ms de silencio) para reducir falsos positivos intrafrase.
-- No incluye tool calling, razonamiento multi-paso, visión, audio general ni generación de texto: es un clasificador de audio.
+- Deteccion de palabras clave de vocabulario abierto: cualquier palabra introducida por el desarrollador o el usuario, sin entrenamiento especifico.
+- Wake words personalizables y comandos de voz (nombres de producto, contactos, acciones).
+- Deteccion de palabras en mitad de una frase, no solo al inicio del enunciado.
+- Fonemizacion integrada via alkove-lex para convertir texto a la secuencia fonetica buscada.
+- Deteccion de actividad de voz (VAD) mediante la salida `speech`.
+- Modo "solo tras una pausa": acepta una palabra solo si no habia habla en los 300 ms previos, lo que reduce drasticamente las falsas alarmas en frases continuas.
+- Umbral configurable por palabra para una tasa de falsas alarmas objetivo (0.5 o 1 por hora).
+- Ejecucion en tiempo real en un solo hilo de CPU, nativa o en WebAssembly.
+- Soporte multilingue en 7 idiomas: fr, en, es, it, pt, ca, ro.
+- Integracion con alkove-focus para ignorar otras voces.
+- No realiza transcripcion ni reconocimiento de habla general.
 
 ## Casos de uso
 
-- Wake word personalizada en aplicaciones web y móviles: el desarrollador elige la frase de activación, la fonetiza con alkove-lex-1-preview y el modelo la detecta en local. El tamaño de 2,9 MB y el 2 % de un núcleo hacen viable mantenerlo siempre activo sin degradar la batería.
-- Comandos de voz sin entrenamiento previo en domótica o electrónica de consumo: en lugar de entrenar un clasificador por comando, se declaran las palabras ("luces", "apagar", "subir") y se ajusta el umbral por palabra según la tasa de falsos positivos tolerada.
-- Control por voz en manos libres (conducción, industria, cocina): la ventana de 30 ms y el retardo de 90 ms permiten respuesta prácticamente inmediata, y la detección solo tras pausa evita activaciones por conversación de fondo.
-- Verificación de pronunciación en apps de aprendizaje de idiomas: se fonetiza la palabra objetivo y se comprueba si el alumno la ha emitido; la salida `speech` permite además segmentar el intento y separarlo del silencio.
-- Puerta de activación previa a un sistema ASR: activar la transcripción completa solo cuando se detecta la palabra de activación, lo que reduce cómputo y evita enviar audio continuo a un servidor.
-- Segmentación de turnos y detección de habla en herramientas de reuniones o notas de voz: la salida `speech` a 30 ms sirve para recortar silencios y marcar intervalos de habla sin un VAD adicional.
-- Monitorización de menciones en audio en el propio dispositivo (marcas, nombres de producto o de contacto): el modelo localiza la palabra dentro de una frase, sin transcribir el resto del contenido, lo que simplifica el cumplimiento de privacidad.
-- Accesibilidad: activación de funciones por palabras personalizadas para usuarios con movilidad reducida, con todas las palabras configurables por el propio usuario.
+- Wake word en asistentes on-device: el SDK busca la palabra de activacion elegida en el flujo de `logp` con un umbral calibrado a una tasa de falsas alarmas concreta; al ser un modelo de 2.8 MB y ~7.5-13 ms por segundo de audio, puede permanecer siempre activo en segundo plano sin coste apreciable de bateria.
+- Comandos de voz en aplicaciones moviles: con la SDK de Android o el paquete Swift se pueden definir comandos como "enviar", "borrar" o "siguiente" sin reentrenar; el modo "solo tras una pausa" evita activaciones accidentales durante conversaciones.
+- Navegador sin backend: mediante WebAssembly y el paquete npm `alkove`, una web puede detectar palabras pronunciadas por el usuario sin enviar audio a ningun servidor, util para requisitos de privacidad o RGPD.
+- Deteccion de nombres propios o marcas en audio: al aceptar cualquier palabra fonetizada con alkove-lex, sirve para monitorizar menciones de productos o contactos en grabaciones o flujos en directo, contando falsas alarmas por hora.
+- Control por voz en dispositivos embebidos o de bajo consumo: el modelo corre en un solo hilo de CPU y en formato int8/4 bits, por lo que es viable en telefonos de gama media (referencia medida: Galaxy Z Fold8) y en hardware sin GPU.
+- Segmentacion por VAD en pipelines de audio: la salida `speech` permite trocear audio en tramos de habla antes de pasarlo a un ASR o a un sistema de diarizacion, con solo 30 ms de retardo.
+- Accesibilidad: activacion de funciones de una aplicacion mediante palabras clave personalizadas para usuarios con movilidad reducida, con la ventaja de que la palabra puede definirse en tiempo de ejecucion sin reentrenamiento.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados de forma independiente). Métrica: recall de palabras escritas a una tasa de falsa alarma dada; 40 palabras por idioma, fonetizadas únicamente con alkove-lex (primera pronunciación más las variantes con al menos un 25 % de probabilidad). El umbral se fija sobre la mitad de los hablantes y el recall se mide sobre la otra mitad.
+Resultados declarados por el autor (no verificados) para deteccion de palabras escritas, con 40 palabras por idioma y umbral calibrado sobre la mitad de los hablantes:
 
-| Recall (%) | fr | en | es | it | ca | pt | Media |
+| Recall | fr | en | es | it | ca | pt | media |
 |---|---|---|---|---|---|---|---|
-| A 1 falsa alarma/hora | 89,7 | 66,9 | 69,4 | 78,7 | 91,6 | 84,5 | **80,1** |
-| A 0,5 falsas alarmas/hora | 85,5 | 62,4 | 61,0 | 73,7 | 87,2 | 72,9 | **73,8** |
+| A 1 falsa alarma/hora | 89.9 | 66.9 | 69.9 | 78.8 | 91.3 | 85.3 | **80.4 %** |
+| A 0.5 falsas alarmas/hora | 85.3 | 62.2 | 61.9 | 74.0 | 86.8 | 72.2 | **73.7 %** |
 
-| Métrica agregada | Valor |
+Modo "solo tras una pausa" (palabra dicha tras 300 ms sin habla), a 1 falsa alarma/hora: **85.9 %** de media; a 0.5: 81.3 % (media de fr, en, es, it, ca, pt). Rumano queda fuera de la tabla porque su conjunto de test de Common Voice es demasiado corto para calibrar el umbral a esas tasas.
+
+Rendimiento de inferencia declarado:
+
+| Plataforma | Coste |
 |---|---|
-| Recall a 1 falsa alarma/hora, media (%) | 80,1 |
-| Recall a 0,5 falsas alarmas/hora, media (%) | 73,8 |
-| Recall a 1 falsa alarma/hora, solo tras pausa, media (%) | 85,6 |
-| Recall a 0,5 falsas alarmas/hora, solo tras pausa, media (%) | 81,1 |
-
-Conjuntos de evaluación: MOCKS (CC BY 4.0 / MPL 2.0) para francés, inglés, español e italiano; Common Voice (CC0) para catalán y portugués. El rumano está soportado pero se excluye de la tabla porque su conjunto de test de Common Voice es demasiado corto para fijar umbrales a esas tasas de falsa alarma.
-
-Rendimiento de ejecución declarado:
-
-| Entorno | Throughput |
-|---|---|
-| Galaxy Z Fold8, Chrome, WebAssembly, 1 hilo | ~22 ms por segundo de audio (~2 % de un núcleo) |
-| Apple silicon, Node + onnxruntime-web, WebAssembly, 1 hilo | ~31 ms por segundo de audio (~3 % de un núcleo) |
+| CPU nativa, 1 hilo, Galaxy Z Fold8 (Android 17) | ~7.5 ms por segundo de audio |
+| CPU nativa, 1 hilo, Apple M1 Max (macOS) | ~13 ms por segundo de audio |
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo está pensado para CPU. No se documenta ejecución en GPU.
-- Huella en memoria: pesos de 2,9 MB en disco más el estado float32 de 19.672 valores (unos 77 KB) y el runtime de onnxruntime.
-- GPU recomendadas: ninguna; no hay ejecución GPU documentada.
-- Cabe en cualquier consumer: validado en un smartphone plegable (Galaxy Z Fold8) y en Apple silicon; cualquier CPU x86 o ARM moderna con WebAssembly es suficiente en principio.
-- Opciones de despliegue: onnxruntime y onnxruntime-web 1.30 o superior (requiere el operador `DFT`), en un solo hilo WebAssembly; ejecutable en navegador, en móvil y en Node.
-- Latencia: 90 ms de retardo algorítmico en `logp` (3 pasos) y 30 ms en `speech` (1 paso), más el tiempo de cómputo por trama (aproximadamente 0,66-0,93 ms por trama de 30 ms según el entorno medido).
-- Throughput: aproximadamente 45 veces tiempo real en móvil y 32 veces tiempo real en Node sobre Apple silicon, con un solo hilo.
+- VRAM: no requiere GPU; el modelo esta pensado para CPU. El fichero de pesos ocupa 2.8 MB.
+- GPU recomendadas: no aplica; no se documenta soporte de aceleracion por GPU.
+- Cabe en cualquier dispositivo con CPU moderna: telefonos Android (medido en Galaxy Z Fold8), Apple Silicon (M1 Max), y por extension cualquier portatil o movil actual; tambien en navegador via WebAssembly.
+- Despliegue: motor Alkove en Rust (nativo o WebAssembly), SDK npm `alkove` para navegador, paquete Python `alkove` para uso nativo, SDK de Android y paquete Swift para iOS. No se documenta integracion con vLLM, llama.cpp, Ollama ni TGI (no aplica a este tipo de modelo).
+- Latencia: salida `logp` con 3 pasos de retardo (90 ms) y `speech` con 1 paso (30 ms). Throughput medido de aproximadamente 7.5-13 ms de CPU por segundo de audio en un solo hilo, es decir, dos ordenes de magnitud por debajo del tiempo real.
 
 ## Comparativa con modelos similares
 
-Los datos de los proyectos alternativos no proceden de la información proporcionada y no se han verificado aquí; consúltese su documentación oficial.
+No se dispone de datos de benchmarks comparables de otros modelos de keyword spotting de vocabulario abierto en la informacion proporcionada. A modo de contexto cualitativo:
 
-| Modelo | Enfoque | Vocabulario | Idiomas | Licencia | Notas |
+| Modelo | Tipo | Vocabulario | Idiomas | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| alkove-spot-1-preview | Keyword spotting fonético en streaming + VAD, ONNX 2,9 MB | Abierto: cualquier palabra escrita, fonetizada aparte | 7 (fr, en, es, it, pt, ca, ro) | Apache-2.0 | Sin entrenamiento por palabra; ejecución WASM en un hilo |
-| openWakeWord | Detección de wake words con modelos entrenados | Cerrado al conjunto entrenado; añadir palabras requiere entrenar | Principalmente inglés | Apache-2.0 (según su proyecto) | No es de vocabulario abierto |
-| Picovoice Porcupine | Wake word comercial on-device | Palabras personalizadas creadas en su consola | Varios idiomas | Propietaria (con nivel gratuito) | Requiere servicio externo para generar la wake word |
-| Silero VAD | Detección de actividad de voz | No aplica (no detecta palabras) | Independiente del idioma | MIT (según su proyecto) | Comparable solo con la salida `speech`, no con el spotting |
+| alkove-spot-1-preview | Keyword spotting de vocabulario abierto + VAD | Cualquier palabra fonetizada | 7 | Apache-2.0 | CPU, nativo y WASM |
+| Porcupine (Picovoice) | Wake word por palabra entrenada | Palabras preentrenadas | Multiples | Comercial | On-device |
+| openWakeWord | Wake word con modelos entrenados | Frases entrenadas | Principalmente en | Apache-2.0 | On-device |
+| Whisper (tiny/base) + busqueda de texto | ASR completo con busqueda | Cualquier palabra | Multiples | MIT | CPU/GPU |
+
+La diferencia principal de Spot frente a los detectores de wake word clasicos es que no requiere entrenamiento por palabra; frente a usar un ASR completo, su huella (2.8 MB) y su coste computacional son mucho menores, a cambio de no transcribir.
 
 ## Limitaciones y advertencias
 
-- Solo acepta audio a 16 kHz mono; no hay soporte documentado de otras frecuencias ni de remuestreo interno.
-- Solo siete idiomas; cualquier otro queda fuera del alcance declarado.
-- El recall en inglés es notablemente inferior al del resto: 66,9 % a 1 falsa alarma/hora frente a 89,7 % en francés o 91,6 % en catalán.
-- Las palabras cortas generan más falsas alarmas que las largas, como en cualquier keyword spotter.
-- No transcribe: encuentra las palabras que se le indican, no escribe lo que se ha dicho. No debe usarse como ASR.
-- No debe activar nada crítico para la seguridad ni acciones irreversibles con una sola detección: las falsas alarmas existen a la tasa que se configure.
-- El rumano está soportado pero no se ha podido evaluar a las tasas de falsa alarma de referencia por falta de datos de test suficientes.
-- Es una preview: los pesos y la interfaz pueden cambiar antes de la versión 1, por lo que no es aconsejable fijar una integración de producción sin prever cambios.
-- Requiere onnxruntime/onnxruntime-web 1.30 o superior por el uso del operador `DFT`; versiones anteriores no cargarán el modelo.
-- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false`).
-- Licencia Apache-2.0: permite uso comercial, pero exige conservar el aviso de copyright y el fichero NOTICE, y no concede derechos de marca sobre "Alkove".
-- El repositorio no tiene descargas ni likes registrados en el momento de la consulta, por lo que no hay evidencia de uso en producción por terceros.
+- Es una preview: los pesos y la interfaz pueden cambiar antes de la version 1; no se recomienda congelar una integracion de produccion sobre esta version sin prever migracion.
+- No transcribe: solo detecta las palabras que se le indican; no sirve como ASR.
+- Solo soporta 7 idiomas (fr, en, es, it, pt, ca, ro); fuera de ellos no hay garantia.
+- El rendimiento es desigual por idioma: a 1 falsa alarma/hora, el recall va del 66.9 % en ingles al 91.3 % en catalan, por lo que el ingles y el espanol son los casos mas debiles en la tabla publicada.
+- Las falsas alarmas existen a la tasa elegida; el autor desaconseja explicitamente activar acciones criticas para la seguridad o irreversibles con una sola deteccion.
+- El rumano esta soportado pero no evaluado con umbrales calibrados por falta de datos de test suficientes.
+- Los benchmarks son declarados por el autor y no estan verificados (`verified: false` en el model-index).
+- La licencia Apache-2.0 permite uso comercial, pero conviene revisar el fichero NOTICE por si hay atribuciones adicionales.
+- Depende del ecosistema Alkove (motor `.alk`, SDK y fonemizador alkove-lex) para el flujo completo; el formato de pesos es propio y no es directamente consumible por otros runtimes.
+- No se documentan sesgos especificos; como modelo acustico dependiente de la fonemizacion, puede fallar con acentos, ruido o pronunciaciones alejadas de las variantes cubiertas por alkove-lex.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-spot-1-preview
-- Demo en el navegador: https://huggingface.co/spaces/alkove-ai/alkove-demo
-- Fonetizador complementario alkove-lex-1-preview: https://huggingface.co/alkove-ai/alkove-lex-1-preview
-- Sitio del SDK Alkove: https://alkove.ai
-- Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas sin relación (comercio y parkings en Francia).
+- Demo en el navegador (Space): https://huggingface.co/spaces/alkove-ai/alkove
+- Fonemizador alkove-lex: https://huggingface.co/alkove-ai/alkove-lex-1-preview
+- Web oficial de Alkove: https://alkove.ai
+- Motor Alkove (Rust, Apache-2.0): https://github.com/alkove-ai/alkove/tree/main/crates/engine
+- Documentacion del formato `.alk`: https://github.com/alkove-ai/alkove/blob/main/crates/engine/FORMAT.md
+- SDK npm: https://www.npmjs.com/package/alkove
+- Paquete Python: https://pypi.org/project/alkove/
+- SDK Android: https://github.com/alkove-ai/alkove/tree/main/android
+- Paquete Swift (iOS): https://github.com/alkove-ai/alkove/tree/main/ios

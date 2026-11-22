@@ -5,7 +5,7 @@
   "author": "diakrisis",
   "url": "https://huggingface.co/diakrisis/espresso-380m",
   "created_at": "2026-11-17T15:24:31.000Z",
-  "updated_at": "2026-11-18T13:14:23.000Z",
+  "updated_at": "2026-11-21T15:33:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "onnx",
+    "safetensors",
     "typed-decisions",
     "classification",
     "prompt-injection-detection",
@@ -31,14 +32,15 @@
   "likes": 3,
   "downloads_30d": 47,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 2097980988,
-  "storage_human": "2.1 GB",
+  "parameters": 380436225,
+  "parameters_human": "380.4M",
+  "storage_bytes": 3619941475,
+  "storage_human": "3.6 GB",
   "context_length": null,
   "base_model": "vllm-sr/vela3-fast",
   "formats": [
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

@@ -2,103 +2,100 @@
 
 ## Resumen
 
-Slayer1B 1.07 es un modelo de lenguaje causal decoder-only de 1 073 912 851 parametros, desarrollado por SlayerLab y orientado principalmente al polaco. Se trata de un entrenamiento "from scratch" que continua el preentrenamiento de la version anterior, Slayer1B 1.06, partiendo de su checkpoint final (step 13848) y anadiendo unos 8 891 005 707 tokens de entrenamiento nuevos y replicados. El objetivo del proyecto es construir un modelo fundacional en polaco de tamano contenido, entrenable en hardware de consumo, que sirva como base para ajuste fino y aplicaciones en ese idioma.
+Slayer1B 1.07 es un modelo de lenguaje causal decoder-only de 1.073.912.851 parámetros desarrollado por SlayerLab, entrenado desde cero y con dominancia del polaco. Se trata de la continuación del preentrenamiento de Slayer1B 1.06 desde su checkpoint final (paso 13848), añadiendo 8.891.005.707 tokens de entrenamiento adicionales (aproximadamente 7.000 millones nuevos y 1.900 millones repetidos de los datos de 1.06). El entrenamiento finalizó en el paso 22327 el 6 de noviembre de 2026.
 
-La relevancia del modelo reside en su enfoque de transparencia y eficiencia: el autor publica la curva de entrenamiento, los datasets utilizados, las hashes de los checkpoints y las evaluaciones intermedias durante el propio entrenamiento. El modelo se entrena con 4 GPU NVIDIA RTX 4090, lo que demuestra que es posible entrenar un modelo de ~1B de parametros con un presupuesto de hardware asequible.
+El modelo mantiene la misma arquitectura, tokenizador (v6, 32.768 tokens) y batch global que la versión 1.06, con una longitud de contexto de 4096 tokens y un learning rate constante de 6e-4 sin decaimiento ni extensión de contexto. Está pensado para generación de texto en polaco e inglés, con un sesgo claro hacia el polaco (65,3 % de los tokens de entrenamiento de esta iteración son polacos, frente al 43,7 % de inglés).
 
-En el momento de redactar esta ficha, el entrenamiento esta en curso (estado "training in progress"), con un final planificado en el step 22327 y evaluaciones reportadas hasta el step 18590. No se han publicado aun los pesos finales de la version 1.07 en el repositorio.
+Su relevancia radica en ser un modelo pequeño (1B) entrenado íntegramente desde cero con recursos limitados (4× RTX 4090, ~45.000 tokens/s) y publicado con licencia Apache 2.0, lo que lo hace accesible para experimentación e inferencia en hardware de consumo. La transparencia del autor es notable: se publican los checkpoints nativos de entrenamiento, los datos de entrenamiento y la curva de entrenamiento con evaluaciones intermedias.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (causal LM) |
-| Parametros totales | 1 073 912 851 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 4096 tokens (secuencias de entrenamiento) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | polaco (pl), ingles (en) |
+| Arquitectura | Transformer decoder-only causal (causal-lm) |
+| Parámetros totales | 1.073.912.851 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | 4096 tokens |
+| Tipos de cuantización | No disponible (pesos publicados en safetensors; no se especifican cuantizaciones oficiales) |
+| Idiomas soportados | Polaco (pl), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repo de 0.0 GB, sin pesos publicados para 1.07) |
+| Formato de pesos | safetensors (librería pytorch) |
 
 ## Arquitectura y entrenamiento
 
-Slayer1B 1.07 es un transformer decoder-only de tipo causal LM con 1 073 912 851 parametros. Utiliza el mismo modelo y tokenizer que la version 1.06: tokenizer v6 con un vocabulario de 32 768 tokens. El entrenamiento emplea un batch global de 256 secuencias de 4096 tokens, es decir, 1 048 576 tokens por step, con una tasa de aprendizaje constante de 6e-4 sin decaimiento y sin extension de contexto.
+El modelo es un transformer decoder-only causal estándar, entrenado desde cero (from-scratch) sin extensión de contexto ni decaimiento del learning rate. El entrenamiento de la versión 1.07 continuó desde el checkpoint `ckpt_13848.pt` de la versión 1.06, con un batch global de 256 secuencias × 4096 tokens = 1.048.576 tokens por paso, learning rate constante de 6e-4 y acumulación de gradiente de 32 sobre 4× NVIDIA RTX 4090 (unos 45.000 tokens/s). Se realizaron 8.479 pasos (13848 → 22327), con una pasada única sobre los nuevos datos.
 
-El entrenamiento se realizo sobre 4 GPU NVIDIA RTX 4090 con acumulacion de gradientes de 32, alcanzando unos 45 000 tokens/s. El trainer utilizado es `train_gpt_ref` r24.2, sin cambios desde la version 1.05. La longitud planificada del entrenamiento va del step 13848 al 22327 (8 479 steps, una pasada sobre los nuevos datos). El entrenamiento se interrumpio el 4 de noviembre en el step 17130 por una parada externa del proceso y se reanudo el 5 de noviembre desde el checkpoint guardado en el step 17000; tras la reanudacion, la perdida en el step 17010 fue identica a la primera ejecucion (2.3177), lo que confirma la reproducibilidad del run.
-
-Los datos de entrenamiento de 1.07 suman 8 891 005 707 tokens en 9 ficheros, tras eliminar documentos solapados con los conjuntos de evaluacion (escaneo de 13-gramas) y enmascarar datos personales (correos, telefonos, numeros de identidad) con el mismo procedimiento que en 1.06. La composicion por tokens de entrenamiento es: web polaca 35.0 %, textos nucleares polacos 11.1 %, textos legales polacos 10.3 % e ingles 43.7 %. Las fuentes incluyen HPLT (web polaca), textos nucleares y legales polacos repetidos de 1.06, FineWeb-Edu, FineMath, open-web-math, DCLM-baseline y FineWeb-Edu `sample/10BT`. Aproximadamente el 36 % de los tokens nucleares de 1.06 y el 68 % de los legales se ven por segunda vez; el resto de los datos se ve una sola vez.
+Los datos de entrenamiento de 1.07 suman 8.891.005.707 tokens en 9 archivos, tras eliminar documentos solapados con conjuntos de evaluación (escaneo de 13-gramas) y enmascarar datos personales. La composición por tokens es: web polaca 35,0 %, textos núcleo polacos 11,1 %, textos legales polacos 10,3 % e inglés 43,7 % (FineWeb-Edu, FineMath, open-web-math, DCLM-baseline y FineWeb-Edu sample/10BT). Los textos núcleo y legales polacos son un subconjunto aleatorio de lo ya visto en 1.06 (aproximadamente el 36 % de los tokens núcleo y el 68 % de los legales se ven por segunda vez). El entrenamiento se interrumpió dos veces por paradas externas del proceso y se reanudó desde checkpoints guardados, reproduciendo la pérdida original (2,3177 en el paso 17010 y 2,3105 en el paso 19260).
 
 ## Capacidades
 
-- Generacion de texto en polaco e ingles, con enfasis en polaco como idioma dominante.
-- Modelado de lenguaje causal y continuacion de texto.
-- Razonamiento basico y respuesta a preguntas de conocimiento general (evaluado con ARC-Easy en ambos idiomas).
-- Capacidades matematicas limitadas, reforzadas por la inclusion de FineMath y open-web-math en el entrenamiento.
-- Comprension de textos legales en polaco, gracias a la inclusion de textos legales en el corpus.
-- Capacidad multilingue limitada a polaco e ingles.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo "thinking".
-- No se documenta un modo de razonamiento multi-step explicito.
+- Generación de texto causal en polaco e inglés, con dominancia del polaco.
+- Modelo base de preentrenamiento (no se indica ajuste por instrucciones, RLHF ni DPO en la información disponible).
+- Razonamiento y conocimiento general derivado del preentrenamiento en web, textos educativos, matemáticas y textos legales.
+- Capacidades matemáticas parciales por la inclusión de FineMath y open-web-math en el entrenamiento.
+- Capacidades multilingües limitadas a polaco e inglés (no se documentan otros idiomas).
+- No se documenta soporte de tool calling, function calling, agentes ni modo de razonamiento explícito (thinking mode).
+- No se documenta soporte de visión ni audio.
 
 ## Casos de uso
 
-- Generacion y continuacion de texto en polaco: el modelo puede emplearse para redaccion asistida, resumenes y parafrasis en polaco, aprovechando su ventana de contexto de 4096 tokens y su entrenamiento dominante en ese idioma.
-- Clasificacion y etiquetado de textos polacos: al ser un modelo causal con buen rendimiento en tareas de comprension (MultiBLiMP-PL 98.62 %), puede adaptarse mediante ajuste fino para clasificacion de documentos, analisis de sentimiento o deteccion de temas.
-- Procesamiento de documentos legales en polaco: la inclusion de un 10.3 % de tokens legales en el entrenamiento lo hace adecuado como base para tareas de extraccion de informacion, resumen de contratos o busqueda semantica en corpus juridicos polacos.
-- Prototipado e investigacion en PLN (procesamiento de lenguaje natural) en polaco: su tamano de ~1B de parametros y su licencia Apache 2.0 permiten experimentar con ajuste fino en hardware de consumo, sirviendo como banco de pruebas para tecnicas de entrenamiento y evaluacion.
-- Educacion y tutoria automatizada en polaco: con ajuste fino, puede emplearse para generar explicaciones, preguntas de practica o material didactico en polaco, apoyandose en la componente de textos educativos (FineWeb-Edu) del corpus.
-- Traduccion asistida polaco-ingles: aunque no es un modelo de traduccion dedicado, su entrenamiento bilingue permite tareas basicas de traduccion y reformulacion entre ambos idiomas, util como componente en pipelines de preprocesamiento.
-- Generacion de codigo basica: no es una capacidad destacada ni documentada, por lo que no se recomienda para produccion de codigo sin validacion adicional.
+- Generación de texto en polaco para aplicaciones de contenido: el modelo está entrenado con un 65,3 % de tokens polacos (web, núcleo y legal), lo que lo hace adecuado para redacción y completado de texto en ese idioma con una ventana de 4096 tokens.
+- Procesamiento de textos legales polacos: el 10,3 % de los tokens de entrenamiento son textos legales, por lo que puede emplearse en tareas de resumen o extracción sobre documentación jurídica en polaco, siempre con revisión humana.
+- Prototipado e investigación en PLN (procesamiento de lenguaje natural) para polaco: al ser un modelo from-scratch de 1B con licencia Apache 2.0 y checkpoints intermedios publicados, sirve como base para experimentos de ajuste fino y análisis de curvas de entrenamiento.
+- Inferencia en hardware de consumo: con 1.073 millones de parámetros y pesos safetensors, puede desplegarse en GPUs de consumo (por ejemplo, RTX 4090) para generación de texto local en polaco e inglés.
+- Generación asistida en inglés educativo y matemático: la inclusión de FineWeb-Edu, FineMath y open-web-math permite su uso en tareas de completado y explicación de contenido educativo en inglés, con las cautelas propias de un modelo base.
+- Base para ajuste fino supervisado (SFT): al no documentarse ajuste por instrucciones, el modelo es un punto de partida para entrenar variantes instruct en polaco con datasets propios, aprovechando la licencia permisiva.
+- Evaluación comparativa de modelos pequeños multilingües: sus evaluaciones intermedias publicadas (BLiMP, ARC-Easy, WikiText-2, MultiBLiMP-PL) permiten usarlo como referencia en estudios de escalado y repetición de datos.
 
 ## Benchmarks y rendimiento
 
-Evaluaciones en tiempo de entrenamiento (protocolo zero-shot, evaluador automatico, checkpoints evaluados en CPU). No son el benchmark lm-evaluation-harness usado en las versiones 1.00-1.03.
+Evaluaciones en tiempo de entrenamiento (mismo evaluador automático y protocolo zero-shot que la model card de 1.06; no es el lm-evaluation-harness de las versiones 1.00–1.03):
 
-| Metrica | 1.06 (13848) | 15000 | 17000 | 18000 | 18590 |
-|---|---:|---:|---:|---:|---:|
-| BLiMP (EN), accuracy % | 76.12 | 77.94 | 77.61 | 77.88 | 77.46 |
-| ARC-Easy (EN), accuracy % | 52.99 | 54.59 | 56.48 | 56.52 | 56.52 |
-| WikiText-2, byte perplexity ↓ | 2.2849 | 2.2321 | 2.2138 | 2.2042 | 2.2145 |
-| WikiText-2, token perplexity ↓ | 30.03 | 27.28 | 26.37 | 25.90 | 26.40 |
-| MultiBLiMP (PL), accuracy % | 98.41 | 98.62 | 98.87 | 98.84 | 98.62 |
-| ARC-Easy (PL, eu20), accuracy % | 45.03 | 45.92 | 45.41 | 46.21 | 47.14 |
+| Paso | BLiMP (EN), % | ARC-Easy (EN), % | WikiText-2 byte PPL ↓ | WikiText-2 token PPL ↓ | MultiBLiMP (PL), % | ARC-Easy (PL, eu20), % | Dispositivo |
+|---:|---:|---:|---:|---:|---:|---:|---|
+| 13848 (1.06) | 76,12 | 52,99 | 2,2849 | 30,03 | 98,41 | 45,03 | CPU |
+| 13998 | 76,29 | 54,34 | 2,2618 | 28,80 | 98,66 | 45,37 | CPU |
+| 14000 | 76,33 | 54,21 | 2,2601 | 28,71 | 98,59 | 44,91 | CPU |
+| 15000 | 77,94 | 54,59 | 2,2321 | 27,28 | 98,62 | 45,92 | CPU |
+| 15730 | 77,32 | 55,64 | 2,2237 | 26,85 | 98,62 | 45,7 | CPU |
 
-Nota: ARC-Easy tiene 2 376 preguntas por idioma, por lo que diferencias inferiores a un punto porcentual entre checkpoints consecutivos estan dentro del ruido. La perplejidad de bytes en WikiText-2 en el step 18590 es 0.010 superior a la del step 18000; se reporta tal cual, como punto intermedio de un run con tasa de aprendizaje constante.
+No se han publicado en la información disponible resultados del checkpoint final (22327) ni de los pasos 20000–22000, ni benchmarks estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Para un modelo de ~1.07B de parametros, una estimacion orientativa seria de ~2.1 GB en fp16, ~4.3 GB en fp32 y ~1.1 GB en cuantizacion de 8 bits, aunque el autor no publica cifras oficiales.
-- GPU recomendadas: el entrenamiento se realizo en 4x NVIDIA RTX 4090; para inferencia, una unica RTX 4090 o GPU con al menos 8 GB de VRAM seria suficiente en fp16.
-- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM en fp16, y en configuraciones menores con cuantizacion.
-- Opciones de despliegue: no se documentan opciones oficiales (vLLM, llama.cpp, Ollama, TGI). Al ser un modelo PyTorch con pesos en formato nativo, requeriria conversion a GGUF u otros formatos para su uso en herramientas de inferencia optimizadas.
-- Latencia y throughput estimados: no disponibles. El throughput de entrenamiento reportado es de ~45 000 tokens/s en 4x RTX 4090, pero no se ofrecen cifras de inferencia.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamaño (1.073 millones de parámetros): en fp16/bf16 aproximadamente 2,1 GB de pesos; en cuantización de 8 bits aproximadamente 1,1 GB; en 4 bits aproximadamente 0,6 GB, más overhead de activaciones y KV cache para contexto de 4096 tokens.
+- GPU recomendadas: el autor entrenó con 4× NVIDIA RTX 4090; para inferencia cabe en GPUs de consumo como RTX 4090, RTX 3090 o superiores, así como en A100/H100 para despliegues de mayor throughput.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con al menos 4-6 GB de VRAM en cuantizaciones bajas (no confirmado oficialmente).
+- Opciones de despliegue: no se documentan en la información disponible. Al ser un modelo pytorch con pesos safetensors y arquitectura causal-lm estándar, es compatible en principio con frameworks habituales (transformers, vLLM, llama.cpp/Ollama tras conversión a GGUF, TGI), pero no hay confirmación oficial.
+- Latencia y throughput estimados: no disponible para inferencia. Durante el entrenamiento se reportan aproximadamente 45.000 tokens/s con 4× RTX 4090 en modo entrenamiento.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Slayer1B 1.07 | 1 073 912 851 | 4096 | pl, en | Apache 2.0 | Pesos no publicados aun (training in progress) |
-| Slayer1B 1.06 | no disponible | 4096 | pl, en | Apache 2.0 | Pesos publicados en Hugging Face |
-| Modelos comparables de ~1B en polaco | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Slayer1B 1.07 | 1.073.912.851 | 4096 | pl, en | Apache 2.0 | Hugging Face (pesos safetensors y checkpoints nativos) |
+| Slayer1B 1.06 | 1.073.912.851 (misma arquitectura) | 4096 | pl, en | Apache 2.0 | Hugging Face (versión anterior del mismo autor) |
+| Alternativas de ~1B multilingües | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada.
+No se dispone en la información proporcionada de datos de benchmarks comparativos con otros modelos de la misma categoría, por lo que la comparativa de rendimiento se limita a la evolución interna entre versiones (1.06 → 1.07).
 
 ## Limitaciones y advertencias
 
-- Estado "training in progress": no hay pesos de la version 1.07 publicados en el repositorio; el repo tiene 0.0 GB. Los datos de evaluacion corresponden a checkpoints intermedios, no al modelo final.
-- Riesgo de alucinacion: como todo modelo de lenguaje causal de ~1B de parametros, puede generar contenido factualmente incorrecto, especialmente en tareas de conocimiento general.
-- Sesgos conocidos: no se documentan sesgos especificos, pero el corpus incluye web polaca, textos legales y datos de FineWeb-Edu, lo que puede introducir sesgos de dominio y de representacion.
-- Limitaciones de idioma: el modelo esta disenado para polaco e ingles; su rendimiento en otros idiomas no esta documentado y probablemente sea deficiente.
-- Limitaciones de contexto: la ventana de contexto es de 4096 tokens; no se ha realizado extension de contexto en esta version.
-- Restricciones de licencia: licencia Apache 2.0, que permite uso comercial, modificacion y distribucion, siempre que se conserve el aviso de licencia y se indique si se han realizado cambios. No obstante, los datos de entrenamiento incluyen textos sujetos a la excepcion de mineria de textos y datos (Art. 4, Directiva 2019/790) y otras licencias por fuente, lo que puede requerir revision legal para uso comercial.
-- Caveat para produccion: al ser un modelo de ~1B de parametros, su capacidad de razonamiento y conocimiento factual es limitada en comparacion con modelos de mayor tamano; se recomienda ajuste fino y validacion exhaustiva antes de desplegarlo en produccion.
-- El entrenamiento se interrumpio y reanudo una vez; aunque la reproducibilidad se verifico, es un aspecto a considerar en la trazabilidad del modelo.
+- Es un modelo base de preentrenamiento: no se documenta ajuste por instrucciones, RLHF ni DPO, por lo que puede no seguir instrucciones de forma fiable sin ajuste fino adicional.
+- Riesgo de alucinación inherente a un modelo de 1B entrenado con datos web; no se han publicado evaluaciones de factualidad.
+- Sesgos conocidos: no documentados explícitamente, pero la composición de datos (web polaca, textos legales y web educativa inglesa) puede introducir sesgos de dominio y de idioma.
+- Limitación de idioma: solo polaco e inglés; el rendimiento en otros idiomas no está evaluado y previsiblemente será bajo.
+- Ventana de contexto limitada a 4096 tokens, sin extensión de contexto en esta iteración.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero parte de los datos de entrenamiento (web polaca HPLT) se usan bajo la excepción de minería de textos y datos (Art. 4, Directiva 2019/790), lo que conviene revisar para despliegues comerciales.
+- El entrenamiento sufrió dos interrupciones externas, aunque el autor verifica que la reanudación reproduce la pérdida original.
+- No hay datos publicados de benchmarks estándar (MMLU, HumanEval, GSM8K) ni del checkpoint final, lo que limita la evaluación objetiva de su calidad final.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.07
-- Version anterior: https://huggingface.co/SlayerLab/Slayer1B-1.06
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.07
+- Versión anterior (1.06): https://huggingface.co/SlayerLab/Slayer1B-1.06
+- Checkpoints nativos de entrenamiento: https://huggingface.co/SlayerLab/Slayer1B-1.07-checkpoints
 - Dataset de entrenamiento de 1.07: https://huggingface.co/datasets/SlayerLab/slayer-1.07-pretrain
 - Dataset base de 1.06: https://huggingface.co/datasets/SlayerLab/slayer-pl-8x3b
-- Curva de entrenamiento y evaluacion en tiempo de entrenamiento: https://track.fabryka.ai/run/4973c068-8dd5-59d8-b6c4-671ca3beb925
-- Grafico de perdida y evaluacion (imagen): https://huggingface.co/SlayerLab/Slayer1B-1.07/resolve/main/slayer1b_107_training.png
+- Curva de entrenamiento y evaluación: https://track.fabryka.ai/run/4973c068-8dd5-59d8-b6c4-671ca3beb925
+- Gráfico de entrenamiento: https://huggingface.co/SlayerLab/Slayer1B-1.07/resolve/main/slayer1b_107_training.png

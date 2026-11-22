@@ -5,7 +5,7 @@
   "author": "ai3inc",
   "url": "https://huggingface.co/ai3inc/opentoolsearch-rerank-0.6b",
   "created_at": "2026-11-20T13:32:31.000Z",
-  "updated_at": "2026-11-21T05:35:24.000Z",
+  "updated_at": "2026-11-22T05:20:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",

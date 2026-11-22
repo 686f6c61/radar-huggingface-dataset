@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 565,
+  "downloads_30d": 573,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Chrome – Download the fast, secure browser from Google",
-      "url": "https://www.google.fr/intl/en_uk/chrome/",
-      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
-    },
-    {
-      "title": "Trouvez et réservez des vols pas chers – Google Flights",
-      "url": "https://www.google.fr/travel/",
-      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
-    },
-    {
-      "title": "Google Traduction",
-      "url": "https://translate.google.fr/details",
-      "snippet": "Traduisez des textes instantanément avec Google Translate."
-    },
-    {
-      "title": "Google Maps",
-      "url": "https://maps.google.fr/mapfiles/home3.html",
-      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
-    },
-    {
-      "title": "Tendances actuelles – Google Trends",
-      "url": "https://trends.google.fr/trending",
-      "snippet": "Découvrez les tendances de recherche actuelles et récentes sur Google Trends"
-    }
-  ]
+  "sources": []
 }

@@ -35,11 +35,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 567854592,
   "parameters_human": "567.9M",
-  "storage_bytes": 2272487260,
+  "storage_bytes": 2272256225,
   "storage_human": "2.3 GB",
   "context_length": null,
   "base_model": "iamtatsuki05/Mistral-EN-0.5B-PT-stage2",

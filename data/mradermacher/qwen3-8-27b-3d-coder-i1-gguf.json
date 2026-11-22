@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-3D-Coder-i1-GGUF",
   "created_at": "2026-11-18T10:27:20.000Z",
-  "updated_at": "2026-11-20T10:50:56.000Z",
+  "updated_at": "2026-11-21T10:58:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 5136,
   "trending_score": 0,
   "parameters": 26895998464,

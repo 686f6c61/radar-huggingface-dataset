@@ -5,7 +5,7 @@
   "author": "eduardoworrel",
   "url": "https://huggingface.co/eduardoworrel/EuroLLM-1.7B-GDPR-LGPD-ONNX-genai-int4-S1S2",
   "created_at": "2026-11-17T05:38:37.000Z",
-  "updated_at": "2026-11-18T21:53:34.000Z",
+  "updated_at": "2026-11-21T18:01:45.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

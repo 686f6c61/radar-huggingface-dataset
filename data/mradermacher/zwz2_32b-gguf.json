@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/ZwZ2_32B-GGUF",
+  "slug": "mradermacher-zwz2_32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZwZ2_32B-GGUF",
+  "created_at": "2025-03-05T11:10:40.000Z",
+  "updated_at": "2026-11-22T07:08:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000839712,
+  "storage_human": "224.0 GB",
+  "context_length": 131072,
+  "base_model": "Daemontatox/ZwZ2_32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

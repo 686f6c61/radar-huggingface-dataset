@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "shuheikatoinfo/T5Gemma-TTS-2b-2b-UtterTune-ja-SelfDistill",
+  "slug": "shuheikatoinfo-t5gemma-tts-2b-2b-uttertune-ja-selfdistill",
+  "author": "shuheikatoinfo",
+  "url": "https://huggingface.co/shuheikatoinfo/T5Gemma-TTS-2b-2b-UtterTune-ja-SelfDistill",
+  "created_at": "2026-11-22T09:15:57.000Z",
+  "updated_at": "2026-11-22T09:16:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "pronunciation",
+    "pitch-accent",
+    "text-to-speech",
+    "ja",
+    "arxiv:2609.17234",
+    "base_model:Aratako/T5Gemma-TTS-2b-2b",
+    "base_model:adapter:Aratako/T5Gemma-TTS-2b-2b",
+    "license:gemma",
+    "license:cc-by-nc-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48055328,
+  "storage_human": "48 MB",
+  "context_length": null,
+  "base_model": "Aratako/T5Gemma-TTS-2b-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

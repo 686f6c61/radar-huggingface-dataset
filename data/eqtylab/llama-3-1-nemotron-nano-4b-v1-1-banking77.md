@@ -2,101 +2,93 @@
 
 ## Resumen
 
-Llama-3.1-Nemotron-Nano-4B-v1.1-banking77 es un ajuste fino por LoRA del modelo nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1, publicado por EQTYLab, especializado en clasificacion de intenciones sobre el conjunto de datos banking77 (PolyAI). El adaptador se ha fusionado dentro de los pesos base, por lo que el repositorio se distribuye como un modelo causal autonomo de 4.512.746.496 parametros (4,5B) en bfloat16, sin necesidad de cargar PEFT ni adaptadores adicionales.
+Llama-3.1-Nemotron-Nano-4B-v1.1-banking77 es un ajuste fino supervisado del modelo nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1, publicado por EQTYLab, orientado a la clasificación de intenciones en el dominio bancario. El modelo parte de la familia Llama 3.1 (arquitectura transformer decoder-only) con 4.512.746.496 parámetros totales y se especializa en mapear texto de cliente a una de las 77 etiquetas del dataset PolyAI/banking77. El ajuste se realizó con LoRA y posteriormente se fusionó en pesos independientes, de modo que el artefacto publicado es un modelo autónomo y no un adaptador.
 
-El problema que resuelve es acotado y muy concreto: dado un listado de las 77 intenciones de banking77 incluido en el system prompt, el modelo devuelve una unica etiqueta de intencion como texto generado. Fuera de ese formato de prompt se comporta como el modelo de chat Nemotron Nano subyacente. Esto lo convierte en una pieza util para enrutado de consultas bancarias dentro de pipelines de atencion al cliente, etiquetado de tickets o triaje previo a un sistema RAG.
+Su relevancia no reside tanto en el rendimiento bruto como en el mecanismo de trazabilidad que lo acompaña: el entrenamiento se ejecutó dentro de una máquina virtual confidencial Intel TDX sobre una GPU H100, con cada etapa firmada por un notario dentro del enclave. El repositorio incluye un manifiesto de linaje firmado (`.eqtylab/manifest.json`) que cubre desde los datos y la taxonomía hasta la fusión de pesos y la revisión del repositorio, lo que permite detectar cualquier mutación posterior de los pesos publicados.
 
-Su relevancia actual es la de un artefacto de nicho bien documentado: es pequeno (unos 9 GB en bf16), se integra directamente en transformers, vLLM, TGI o NVIDIA NIM, y su proceso de entrenamiento esta descrito con detalle (rank de LoRA, modulos objetivo, hiperparametros y semilla). Como contrapartida, el propio autor advierte que no se ha medido ninguna exactitud de benchmark sobre este checkpoint, por lo que la validacion contra el split de test de banking77 corre por cuenta de quien lo despliegue.
+El modelo está pensado para despliegues de clasificación de intenciones en producción con requisitos de auditabilidad, no como un asistente conversacional general. Su licencia es la NVIDIA Open Model License, heredada del modelo base, y solo declara soporte para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (familia Llama 3.1, modelo base Nemotron Nano 4B v1.1) |
-| Parametros totales | 4.512.746.496 (4,5B) |
-| Longitud de contexto | No especificada en la ficha del modelo; el ejemplo de despliegue con vLLM del autor fija `--max-model-len 8192` |
-| Tipos de cuantizacion | No disponible. El autor solo publica pesos en bfloat16; no se incluyen variantes GGUF/AWQ/GPTQ |
-| Idiomas soportados | Ingles (en) |
-| Licencia | NVIDIA Open Model License (identificador `other` en Hugging Face) |
-| Formato de pesos | safetensors (291 tensores, 9.025.492.992 bytes), biblioteca transformers |
-| Tarea declarada | text-generation (uso previsto: clasificacion de intenciones banking77) |
-| Conjunto de datos de ajuste | PolyAI/banking77 (9.993 filas de entrenamiento) |
-| Modelo base | nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 |
-| Tamano del repositorio | 9,0 GB |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer decoder-only (familia Llama 3.1), ajuste LoRA fusionado |
+| Parametros totales | 4.512.746.496 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el repo publica pesos safetensors sin cuantizaciones declaradas) |
+| Idiomas soportados | en |
+| Licencia | nvidia-open-model-license |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer causal decoder-only de la familia Llama 3.1, con 4,5B de parametros densos (no es un MoE, por lo que no hay parametros activos que reportar). Sobre ese modelo se aplico un ajuste fino supervisado con LoRA mediante PEFT: rank 16, alpha 32 (escalado 2.0), dropout 0.05 y modulos objetivo `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`. El adaptador resultante consta de 448 tensores y 121,7 MB, y se fusiono en los pesos base con `merge_and_unload()`.
+El modelo es un transformer decoder-only de la familia Llama 3.1, concretamente la variante Nemotron Nano 4B v1.1 de NVIDIA, sobre la que EQTYLab aplicó un ajuste fino con LoRA para clasificación de intenciones y después fusionó el adaptador en los pesos base. El dataset de entrenamiento es PolyAI/banking77, compuesto por consultas de clientes bancarios anotadas con 77 intenciones. El prompt de inferencia documentado usa un mensaje de sistema con `detailed thinking off`, seguido de un mensaje de usuario que incluye la instrucción, las 77 etiquetas y el texto del cliente; el modelo debe responder con una etiqueta desnuda.
 
-Los hiperparametros de entrenamiento documentados son: 2 epocas, batch size 8 con acumulacion de gradiente 2 (batch efectivo 16), learning rate 1e-4, precision bfloat16, semilla 13 y 9.993 filas del dataset banking77. No se menciona ninguna fase de RLHF, DPO ni decodificacion especulativa. La innovacion tecnica destacable es la verificacion del merge: el autor comprobo tensor a tensor que recalcular `W + (alpha/r) · B·A` reproduce los pesos fusionados de forma bit-exacta en bf16, y que el conjunto de tensores y el tamano total se conservan respecto al modelo base. El comportamiento de clasificacion depende criticamente del prompt: el system prompt debe contener la cadena `detailed thinking off` seguida de la lista de etiquetas; sin `detailed thinking off` el modelo puede emitir un bloque `<think>` en lugar de una etiqueta limpia, y sin la lista de etiquetas responde de forma conversacional.
+La innovación técnica destacable no está en el ajuste en sí, sino en el proceso: el entrenamiento se ejecutó dentro de una máquina virtual confidencial Intel TDX con una H100, y cada etapa fue firmada por un notario dentro del enclave. El manifiesto de linaje encadena datos y taxonomía, ajuste LoRA en TEE, adaptador, fusión, pesos y revisión del repositorio. El directorio de pesos se hashea contra el CID de modelo registrado en el manifiesto, de modo que cualquier alteración de los pesos publicados es detectable. La precisión reportada (93,0 %) se midió sobre el adaptador de la ejecución sellada del 2026-09-02 con los mismos datos, configuración y receta; los pesos publicados provienen de una ejecución idéntica posterior que omitió la etapa de evaluación. No se documentan detalles sobre el número de tokens de entrenamiento, composición adicional del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- Clasificacion de intenciones en una sola etiqueta: devuelve exactamente una de las 77 intenciones de banking77 cuando recibe la lista en el system prompt.
-- Generacion de texto conversacional: fuera del formato de clasificacion hereda el comportamiento de chat del modelo Nemotron Nano base.
-- Control de modo de razonamiento mediante prompt: la instruccion `detailed thinking off` desactiva la emision de bloques `<think>`.
-- Ejecucion con decodificacion greedy: la tarea tiene una unica secuencia de tokens correcta, por lo que `do_sample=False` es lo recomendado.
-- Multilingue: limitado a ingles, segun el campo `language` del modelo y el dataset utilizado.
-- Integracion de despliegue: compatible con transformers, vLLM (`/v1/chat/completions` con `temperature=0`, `max_tokens=16`), TGI y NVIDIA NIM.
-- No hay soporte documentado de tool calling, function calling, agentes multi-paso, vision ni audio.
+- Clasificación de intenciones en dominio bancario: mapea texto de cliente a una de las 77 etiquetas de banking77.
+- Generación de texto en formato de respuesta corta (etiqueta desnuda), adecuada para pipelines de clasificación.
+- Modo de razonamiento desactivable mediante el mensaje de sistema `detailed thinking off`, heredado del modelo Nemotron base.
+- Soporte de tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el uso previsto es clasificación de un solo turno.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidad especial: linaje verificable con manifiesto firmado y middleware de integridad por petición (EQTY).
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte bancario: el modelo recibe el texto del ticket y devuelve una etiqueta de banking77 que permite asignarlo automaticamente al equipo o flujo correspondiente, sustituyendo reglas heuristicas por clasificacion semantica.
-- Chatbot de atencion al cliente con enrutado previo: antes de generar una respuesta, se clasifica la consulta del usuario y se selecciona la base de conocimiento o el subagente adecuado segun la intencion detectada.
-- Etiquetado de transcripciones de call center: procesamiento por lotes de conversaciones grabadas para construir series temporales de motivos de contacto, con decodificacion greedy y `max_new_tokens=16` para maximizar el throughput.
-- Triaje previo a un pipeline RAG: la etiqueta de intencion actua como filtro de metadatos para recuperar unicamente los documentos de la categoria relevante, reduciendo el ruido en la recuperacion.
-- Analisis agregado de motivos de contacto: al clasificar grandes volumenes de consultas se pueden cuantificar que intenciones concentran mas incidencias (por ejemplo, comisiones de pago con tarjeta o transferencias fallidas) para priorizar mejoras de producto.
-- Control de calidad de anotaciones: uso del modelo como segundo anotador sobre un subconjunto de datos ya etiquetados para detectar discrepancias en el proceso de etiquetado humano.
-- Deteccion de consultas fuera de catalogo: si la consulta no encaja razonablemente en ninguna etiqueta devuelta, el sistema puede derivarla a un clasificador generico o a un agente humano, dado que el modelo base sigue siendo conversacional fuera del formato estricto.
-- Prototipado rapido en local: al ocupar unos 9 GB en bf16, permite validar el flujo completo de clasificacion en una estacion de trabajo con una sola GPU consumer antes de escalar a produccion.
+- Enrutamiento de tickets en atención al cliente bancaria: el modelo recibe el texto del cliente y devuelve una de las 77 intenciones, que se usa para dirigir el ticket al equipo o flujo correspondiente. Es adecuado porque el ajuste está hecho exactamente sobre esa taxonomía y el formato de salida es una etiqueta directa.
+- Triaje automático en centros de contacto: clasificación previa de consultas entrantes para priorizar y asignar colas, con la ventaja de que el modelo es pequeño (4,5B) y puede servirse con vLLM en una sola GPU.
+- Automatización de respuestas basadas en intención: la etiqueta predicha actúa como clave para recuperar plantillas o artículos de ayuda, sin necesidad de que el modelo genere la respuesta final.
+- Analítica de motivos de contacto: clasificación por lotes de transcripciones o correos para construir métricas agregadas de intenciones y detectar tendencias.
+- Despliegues con requisitos de auditoría regulatoria: el manifiesto de linaje firmado y el middleware de integridad permiten demostrar qué datos, receta y pesos se usaron, lo que encaja en entornos financieros con trazabilidad exigida.
+- Detección de desviaciones en producción: al poder verificar el hash de los pesos contra el CID del manifiesto, se puede comprobar que el modelo servido no ha sido alterado, útil en pipelines de CI/CD de modelos.
+- Clasificación en entornos con datos sensibles: el entrenamiento en TEE (Intel TDX) es un argumento para casos donde el proceso de ajuste debe ejecutarse en un enclave verificable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que no se ha medido ninguna exactitud de benchmark para este checkpoint y que la verificacion se limito a comprobar la correccion del merge, la preservacion del conjunto de tensores y del tamano total, y un punado de generaciones de prueba sobre consultas bancarias. El autor recomienda ejecutar una evaluacion propia contra el split de test de banking77 antes de desplegar el modelo.
-
-| Benchmark | Resultado |
+| Modelo | banking77 test accuracy |
 |---|---|
-| Exactitud en banking77 (test) | No medida por el autor |
-| MMLU, HumanEval, GSM8K u otros | No disponible |
+| Base (nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1) | 30,8 % |
+| Este modelo | 93,0 % |
+
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La precisión de 93,0 % corresponde al adaptador de la ejecución sellada del 2026-09-02 con los mismos datos, configuración y receta; los pesos publicados provienen de una ejecución idéntica posterior que omitió la etapa de evaluación.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: alrededor de 9 GB solo para los pesos, mas el cache KV correspondiente al contexto configurado; con 8192 tokens de contexto conviene reservar entre 11 y 13 GB.
-- VRAM estimada cuantizado: no disponible en la informacion proporcionada, ya que el autor no publica variantes cuantizadas (orientativamente, 8 bits ~5 GB y 4 bits ~3 GB si se generan con herramientas externas).
-- GPU profesionales: A100, H100, L40S y cualquier GPU con 16 GB o mas de memoria permiten servirlo en bf16 sin cuantizar.
-- GPU consumer: cabe en RTX 4090 (24 GB), RTX 3090 (24 GB) y RTX 4080 (16 GB) en bf16. En tarjetas de 8-12 GB seria necesario cuantizar.
-- Opciones de despliegue documentadas: transformers con `device_map="auto"`, vLLM (`vllm serve ... --max-model-len 8192 --dtype bfloat16`), TGI y NVIDIA NIM. No se documenta soporte GGUF ni Ollama en el repositorio.
-- Latencia y throughput: no disponibles. Para la tarea de clasificacion se recomienda `max_new_tokens=16` y decodificacion greedy, lo que mantiene la generacion muy corta.
-- El repositorio ocupa 9,0 GB en disco en bfloat16.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 4,5B parámetros, en fp16 se requieren aproximadamente 9 GB de pesos más overhead de activaciones y KV cache; en cuantizaciones de 8 bits o 4 bits bajaría aproximadamente a 4,5-5 GB y 2,5-3 GB respectivamente, aunque el repo no publica versiones cuantizadas.
+- GPU recomendadas: H100 (usada en el entrenamiento), A100; para inferencia en producción con vLLM se recomienda una GPU con al menos 16-24 GB de VRAM para fp16 con contexto moderado.
+- GPU de consumo: cabe en tarjetas consumer con 12 GB o más en fp16 (por ejemplo RTX 3060 12 GB, RTX 4070, RTX 4090); en cuantización de 4 bits cabría en GPUs de 8 GB, si bien no hay artefactos cuantizados publicados.
+- Opciones de despliegue: vLLM (`vllm serve EQTYLab/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77`), transformers; el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de inferencia. No se documenta soporte explícito de llama.cpp u Ollama.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+| Modelo | Parametros | Contexto | banking77 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EQTYLab/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77 | 4,51B | No especificado (ejemplo vLLM con 8192) | NVIDIA Open Model License | Ingles | LoRA fusionado para banking77; sin benchmark publicado |
-| nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 (base) | 4,51B | No disponible en la informacion proporcionada | NVIDIA Open Model License | No disponible | Modelo de proposito general; no clasifica banking77 sin ajuste |
-| Otros ajustes de banking77 de tamano similar | No disponible | No disponible | No disponible | No disponible | No se han encontrado referencias en la informacion proporcionada |
+| Este modelo (EQTYLab) | 4,51B | no disponible | 93,0 % | nvidia-open-model-license | Hugging Face |
+| nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 (base) | 4,51B | no disponible | 30,8 % | nvidia-open-model-license | Hugging Face |
+| Otros ajustes de banking77 sobre Llama 3.1 / Nemotron | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente paginas generalistas sin relacion con el modelo), por lo que no es posible completar la comparativa con alternativas contrastadas.
+La comparativa se limita al modelo base, ya que la información proporcionada no incluye datos de alternativas comparables de la misma categoría (clasificadores de intenciones ajustados sobre modelos de 4B).
 
 ## Limitaciones y advertencias
 
-- Salida como texto generado, no como decodificador restringido a un conjunto cerrado: el modelo puede devolver cadenas que no coincidan exactamente con una etiqueta valida de banking77.
-- Dependencia estricta del prompt: si falta `detailed thinking off` puede emitir un bloque `<think>`; si falta la lista de etiquetas, responde de forma conversacional en lugar de clasificar.
-- Ausencia total de evaluacion: el autor no ha medido exactitud sobre el split de test, por lo que no hay garantia cuantificada de rendimiento en produccion.
-- Solo ingles: el dataset y el campo `language` del modelo se limitan al ingles, con degradacion esperada en otros idiomas.
-- Riesgo de alucinacion heredado del modelo base: al ser un modelo generativo abierto, fuera del formato de clasificacion puede producir contenido plausible pero incorrecto.
-- Las etiquetas incluidas en el ejemplo de la model card presentan irregularidades de formato heredadas del dataset, como `Refund_not_showing_up` (con mayuscula inicial) o `reverted_card_payment?` (con signo de interrogacion). Conviene normalizarlas o respetarlas de forma consistente al comparar salidas.
-- Licencia: NVIDIA Open Model License, no una licencia de codigo abierto estandar. Es imprescindible revisar sus terminos (incluidas las clausulas de uso aceptable y de atribucion) antes de un despliegue comercial.
-- Trazabilidad limitada: cero descargas y cero likes en el momento de la consulta, y fecha de creacion posterior a la mayoria de los modelos de referencia, lo que reduce la evidencia externa disponible sobre su comportamiento.
-- Sin soporte documentado de tool calling, agentes multi-paso, vision ni audio; no debe asumirse ninguna de estas capacidades.
+- Sesgos conocidos: no documentados en la model card; al entrenarse solo con banking77, el modelo hereda la distribución y posibles sesgos de ese dataset de consultas bancarias en inglés.
+- Riesgo de alucinación: aunque el uso previsto es clasificación con salida de etiqueta, el modelo es generativo y podría producir etiquetas fuera de la lista de 77 o texto adicional si el prompt no se controla; conviene validar la salida contra el conjunto de etiquetas permitido.
+- Limitaciones de idioma: solo se declara inglés; el rendimiento en castellano u otros idiomas no está evaluado y previsiblemente será degradado.
+- Limitaciones de contexto: la longitud de contexto no está documentada en la información disponible.
+- Restricciones de licencia: la NVIDIA Open Model License debe revisarse antes de uso comercial; se hereda del modelo base y no es una licencia permisiva tipo Apache 2.0.
+- Caveat de evaluación: los pesos publicados provienen de una ejecución que omitió la etapa de evaluación, por lo que la precisión de 93,0 % se atribuye a una ejecución idéntica previa, no a los pesos publicados directamente.
+- Especialización estrecha: el modelo está ajustado para una taxonomía fija de 77 intenciones; usarlo fuera de ese conjunto de etiquetas o en otro dominio no está respaldado por la evaluación.
+- Dependencia del formato de prompt: el rendimiento depende de incluir la instrucción, las 77 etiquetas y el mensaje de sistema `detailed thinking off`; desviarse de ese formato puede degradar la precisión.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/EQTYLab/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77
 - Modelo base: https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1
-- Dataset de entrenamiento: https://huggingface.co/datasets/PolyAI/banking77
+- Dataset: https://huggingface.co/datasets/PolyAI/banking77
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
-- La busqueda web no devolvio enlaces tecnicos relevantes (papers, blogs o repos) adicionales sobre este modelo.
+- Explorador de linaje EQTY: https://huggingface.co/spaces/EQTYLab/lineage-explorer?model=EQTYLab/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77

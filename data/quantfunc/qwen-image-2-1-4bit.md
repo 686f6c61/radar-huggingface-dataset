@@ -2,102 +2,101 @@
 
 ## Resumen
 
-QuantFunc/Qwen-Image-2.1-4bit es una version cuantizada a 4 bits (INT4) del modelo de generacion y edicion de imagenes Qwen-Image-2.1, desarrollado originalmente por el equipo Qwen (Alibaba). La cuantizacion la firma QuantFunc, un proyecto independiente que publica pesos derivados junto con su propio motor de inferencia y extension para ComfyUI. El objetivo es reducir la huella de pesos y el coste de ancho de banda de memoria durante la carga e inferencia, permitiendo ejecutar un modelo de difusion de gama alta en GPUs de consumo.
+Qwen-Image-2.1-4bit es una versión cuantizada a 4 bits del modelo de generación de imágenes Qwen-Image-2.1, desarrollado originalmente por el equipo Qwen. La cuantización la ha realizado QuantFunc, un proyecto independiente que aplica una técnica propia de cuantización INT4 basada en SVD (svdquant) para reducir el peso del modelo a aproximadamente una cuarta parte de su tamaño en 16 bits. El resultado son dos ficheros safetensors de entre 4,0 y 4,3 GB que, según el autor, mantienen composición, renderizado de texto, detalle y estilo cercanos al modelo original sin cuantizar.
 
-El modelo base Qwen-Image-2.1 es un modelo unificado de text-to-image y edicion de imagenes con unos 7.000 millones de parametros en su componente de generacion visual, articulado en 32 capas DiT (Diffusion Transformer) de flujo unico, con soporte nativo para generar y editar imagenes con transparencia. QuantFunc aplica compresion 4x (de 16 bits a 4 bits) y publica dos variantes de pesos, r128 y r32, que se diferencian en el rango del componente de baja dimension usado por la tecnica de cuantizacion.
+El modelo resuelve un problema práctico de despliegue: el modelo base Qwen-Image-2.1 requiere una cantidad de VRAM elevada que lo aleja de las GPU de consumo, mientras que esta variante INT4 reduce el coste de ancho de banda de carga de pesos y de inferencia, lo que permite ejecutarlo en tarjetas NVIDIA desde la generación RTX 20 (arquitectura SM75 en adelante) hasta aceleradores de centro de datos como H100, H200, B100, B200 o GB300.
 
-La relevancia de esta ficha radica en que ofrece un punto de entrada practico para probar Qwen-Image-2.1 en hardware modesto, a cambio de asumir que el formato de pesos es propio del autor (no un checkpoint estandar de Diffusers) y que la licencia del modelo base es la Qwen Research License, con las restricciones que ello implica.
+Es relevante ahora porque el ecosistema de generación de imágenes open source está migrando hacia flujos de trabajo en ComfyUI, y esta cuantización se integra en ellos sustituyendo únicamente el nodo de carga del modelo, sin tocar el resto del grafo. No obstante, conviene subrayar que no es un checkpoint compatible con el paquete `diffusers` de forma directa: requiere el plugin ComfyUI-QuantFunc o el motor de inferencia propio de QuantFunc.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) de flujo unico, 32 capas Single-Stream en el componente de generacion visual del modelo base; cuantizacion INT4 con componente de bajo rango (tecnica etiquetada como svdquant) |
-| Parametros totales | 7B en el componente de generacion visual del modelo base; el repositorio cuantizado ocupa 9,0 GB en total (incluye variantes) |
-| Longitud de contexto | no disponible (modelo de difusion; no se documenta ventana de contexto textual) |
-| Tipos de cuantizacion | INT4 (4 bits). Dos variantes de pesos: r128 (~4,3 GB) y r32 (~4,0 GB). Tags del repositorio indican int4 y svdquant |
-| Idiomas soportados | no disponible |
-| Licencia | qwen-research (Qwen Research License, heredada del modelo base). El tooling de cuantizacion de QuantFunc tiene su propia licencia |
-| Formato de pesos | safetensors, en formato propio de QuantFunc (no es un checkpoint cargable directamente con el paquete diffusers, pese a declarar library_name: diffusers) |
+| Arquitectura | Modelo de difusión para texto a imagen (arquitectura base de Qwen-Image-2.1, no detallada en la información disponible) |
+| Parámetros totales | No disponible |
+| Parámetros activos | No aplica (no es un modelo MoE según la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | INT4 (4 bits), con variantes r128 y r32; técnica svdquant |
+| Idiomas soportados | No disponible |
+| Licencia | Qwen Research License (qwen-research) |
+| Formato de pesos | safetensors en formato propio de QuantFunc (no compatible directamente con `diffusers`) |
+
+Detalle de las variantes publicadas:
+
+| Variante | Fichero | Tamaño | Uso recomendado |
+|---|---|---:|---|
+| r128 | `qwen_image_21_base_quantfunc_int4_r128.safetensors` | ~4,3 GB | Prioriza calidad (recomendada) |
+| r32 | `qwen_image_21_base_quantfunc_int4_r32.safetensors` | ~4,0 GB | Prioriza tamaño y VRAM |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo subyacente corresponde a un Diffusion Transformer de flujo unico con 32 capas en su componente de generacion visual y aproximadamente 7.000 millones de parametros. Qwen-Image-2.1 se presenta como un modelo unificado que cubre generacion text-to-image y edicion de imagenes, con soporte nativo para generar y editar contenido con transparencia. Esta version concreta no reentrena el modelo: aplica una cuantizacion post-entrenamiento de los pesos de 16 bits a 4 bits, con un factor de compresion declarado de 4x.
+La información disponible no detalla la arquitectura interna del modelo base Qwen-Image-2.1 más allá de su naturaleza como modelo de difusión para generación de imágenes a partir de texto. Lo que sí se especifica es el proceso de cuantización: QuantFunc aplica una cuantización INT4 con una técnica denominada svdquant, que emplea descomposición en valores singulares para preservar la información más relevante de los pesos durante la reducción de precisión. El resultado se distribuye en dos configuraciones de rango (r128 y r32), donde un rango mayor implica presumiblemente mayor fidelidad respecto al modelo original a cambio de un fichero ligeramente más grande.
 
-Segun la model card, la cuantizacion INT4 de QuantFunc preserva composicion, renderizado de texto y detalle fino "cerca del baseline de 16 bits", aunque no se aportan metricas objetivas que cuantifiquen esa perdida. El autor indica que los pesos se distribuyen en su propio formato safetensors y que deben cargarse con ComfyUI-QuantFunc o con el motor de inferencia de QuantFunc, no como un checkpoint de Diffusers. La etiqueta library_name: diffusers se declara explicitamente para que Hugging Face contabilice descargas de los ficheros planos .safetensors, no porque los pesos sean compatibles con esa libreria. No se documentan en la informacion disponible ni el dataset de entrenamiento, ni el numero de tokens, ni fases de RLHF/DPO, ni innovaciones de decodificacion.
+No se han publicado en la información disponible datos sobre el conjunto de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO), ni innovaciones de arquitectura como atención lineal o decodificación especulativa. Tampoco se detalla el procedimiento exacto de calibración de la cuantización ni el conjunto de datos utilizado para calcular los rangos y valores singulares.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (text-to-image) en el modelo base, capacidad que la version cuantizada pretende preservar.
-- Edicion de imagenes, segun la definicion del modelo base como modelo unificado de generacion y edicion.
-- Renderizado de texto dentro de la imagen, destacado por el autor como una de las areas donde la cuantizacion mantiene calidad cercana al baseline de 16 bits.
-- Generacion y edicion de imagenes con transparencia, capacidad nativa documentada del modelo base.
-- Composición y detalle fino: el autor afirma que se mantienen cerca del modelo de 16 bits.
-- No se documentan capacidades de tool calling ni function calling: es un modelo de difusion, no un modelo de lenguaje conversacional.
-- No se documentan capacidades de agente ni de razonamiento multi-paso.
-- Soporte multilingue de prompts: no disponible en la informacion proporcionada.
-- No se documentan modos especiales (thinking, vision de entrada, audio) mas alla de la generacion y edicion de imagen.
+- Generación de imágenes a partir de descripciones textuales (text-to-image).
+- Renderizado de texto dentro de la imagen: el autor destaca que el renderizado de texto se mantiene cercano al modelo de 16 bits, lo que resulta útil para carteles, anuncios y diseños con tipografía.
+- Composición de escenas complejas: la model card muestra ejemplos de diseño publicitario floral, retrato fotográfico, cartel de comida china y escenas cotidianas de estilo whimsical.
+- Fidelidad de detalle y estilo: según las comparaciones visuales del autor, detalle y estilo se mantienen próximos a la línea base de 16 bits.
+- Integración en flujos de trabajo ComfyUI mediante el nodo de carga QuantFunc, manteniendo el resto de nodos y parámetros de generación.
+- Compatibilidad de hardware amplia: funciona en cualquier GPU NVIDIA SM75 o superior (RTX 20/30/40/50, A100, H100, H200, B100, B200, GB300).
+- No se documentan capacidades de edición de imagen, inpainting, outpainting, control por pose o referencia, tool calling ni razonamiento multi-paso, por lo que no deben asumirse.
 
 ## Casos de uso
 
-- Generacion de imagenes en GPU de consumo: con pesos de ~4,0-4,3 GB y soporte para GPUs NVIDIA SM75+, permite ejecutar Qwen-Image-2.1 en tarjetas como las RTX 20/30/40/50-series, donde el modelo de 16 bits resultaria mas costoso en memoria.
-- Edicion de imagenes con texto integrado: al preservar el renderizado de texto, encaja en flujos donde hay que editar carteles, maquetas o infografias manteniendo la legibilidad de las tipografias.
-- Creacion de recursos con fondo transparente: la capacidad nativa de transparencia del modelo base es util para generar assets de diseño, logotipos o sprites sin postprocesado de recorte.
-- Integracion en ComfyUI: al cargarse mediante el nodo QuantFunc, se puede insertar en grafos existentes de ComfyUI sustituyendo unicamente el loader, sin rehacer el resto del workflow.
-- Prototipado rapido de material grafico: equipos de marketing o producto pueden iterar sobre bocetos visuales en local antes de pasar a produccion con modelos de mayor coste.
-- Procesamiento por lotes en servidores con A100/H100/H200: la reduccion de ancho de banda de pesos por token de inferencia facilita servir volumenes altos de generacion en GPUs de centro de datos.
-- Investigacion en cuantizacion de modelos de difusion: sirve como caso de estudio para comparar tecnicas INT4 (r128 frente a r32) y evaluar la degradacion de calidad respecto al modelo de 16 bits.
-- Despliegue en GPUs de nueva generacion (B100, B200, GB300): el autor declara compatibilidad con toda la familia SM75+, lo que permite usar el mismo build en hardware reciente de centro de datos.
+- Diseño publicitario y cartelería: el modelo puede generar composiciones con texto legible integrado, lo que permite producir borradores de anuncios, carteles de eventos o promociones sin salir del flujo de ComfyUI. La variante r128 es la adecuada cuando la fidelidad tipográfica es prioritaria.
+- Prototipado rápido en GPU de consumo: con ficheros de ~4 GB y cuantización INT4, un estudio pequeño o un desarrollador individual puede iterar sobre conceptos visuales en una RTX 3060 o 4060 sin depender de servicios en la nube.
+- Generación de imágenes para documentación técnica y blogs: escenas cotidianas, ilustraciones de concepto o imágenes de cabecera donde se requiere un estilo coherente y detalle razonable, aprovechando la reducción de coste de inferencia.
+- Retrato y fotografía sintética: la model card incluye ejemplos de retrato; útil para generar avatares o material de marketing con control de composición, siempre con las cautelas legales sobre derechos de imagen.
+- Integración en pipelines de ComfyUI existentes: cualquier estudio que ya tenga un grafo de Qwen-Image-2.1 puede sustituir solo el nodo de carga por el de QuantFunc y reutilizar el resto del flujo, lo que reduce el coste de migración a casi cero.
+- Despliegue en infraestructura de centro de datos heterogénea: al cubrir desde SM75 hasta GB300 con un único build, un equipo puede servir el mismo modelo en estaciones de trabajo con RTX y en nodos con A100/H100 sin mantener artefactos distintos.
+- Evaluación comparativa de cuantizaciones: investigadores que estudien el impacto de INT4 en modelos de difusión pueden usar las variantes r128 y r32 como puntos de comparación frente al modelo de 16 bits.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas objetivas (FID, CLIP score, comparativas cuantitativas frente al baseline de 16 bits) ni resultados de evaluacion de calidad. El autor se limita a afirmar cualitativamente que "composicion, renderizado de texto y detalle fino se mantienen cerca del baseline de 16 bits", sin cifras que lo respalden.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente aporta comparaciones visuales cualitativas frente a la línea base de 16 bits, sin métricas numéricas como FID, CLIP score, SSIM ni evaluaciones de fidelidad de texto.
 
 ## Requisitos de hardware
 
-- Tamano de pesos: ~4,3 GB en la variante r128 y ~4,0 GB en la variante r32.
-- VRAM estimada: no disponible como cifra cerrada. El autor indica que la VRAM real depende de la resolucion, el tamano de lote y el resto del workflow, por lo que los 4,0-4,3 GB de pesos son solo una parte del consumo total.
-- GPUs compatibles declaradas: toda la familia NVIDIA SM75 o superior, incluyendo RTX 20/30/40/50-series, A100, H100, H200, B100, B200 y GB300.
-- GPU de consumo: si, el autor afirma explicitamente que la cuantizacion facilita ejecutar Qwen-Image-2.1 en GPUs de consumo, aunque no garantiza que toda la gama RTX 20-series disponga de VRAM suficiente para resoluciones altas.
-- Opciones de despliegue: ComfyUI-QuantFunc (extension oficial) o el motor de inferencia de QuantFunc. No es un checkpoint cargable de forma nativa con diffusers, pese a la etiqueta library_name.
-- Latencia y throughput estimados: no disponibles.
-- Otros backends (vLLM, llama.cpp, Ollama, TGI): no aplicables ni documentados para este modelo de difusion.
+- VRAM estimada: no disponible de forma numérica. El autor indica que las necesidades reales dependen de la resolución, el tamaño de lote y el resto del flujo de trabajo. Como referencia, los pesos ocupan entre 4,0 y 4,3 GB, a lo que hay que sumar activaciones y el resto de componentes del pipeline.
+- GPU compatibles: cualquier NVIDIA con arquitectura SM75 o superior, es decir, RTX 20/30/40/50, A100, H100, H200, B100, B200 y GB300.
+- GPU de consumo: sí, el modelo está diseñado explícitamente para facilitar su ejecución en GPU de consumo; la reducción de ancho de banda de pesos es el principal beneficio declarado.
+- Opciones de despliegue: ComfyUI con el plugin ComfyUI-QuantFunc, o el motor de inferencia propio de QuantFunc. No es un checkpoint cargable directamente con el paquete `diffusers` pese a la etiqueta `library_name: diffusers` del repositorio.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / arquitectura | Precision | Licencia | Formato / disponibilidad |
-|---|---|---|---|---|---|
-| QuantFunc/Qwen-Image-2.1-4bit | 7B en componente visual (base) | DiT, 32 capas Single-Stream | INT4 (r128/r32) | qwen-research | safetensors propio de QuantFunc; requiere ComfyUI-QuantFunc o motor QuantFunc |
-| Qwen/Qwen-Image-2.1 | 7B en componente visual | DiT, 32 capas Single-Stream | 16 bits | Qwen Research License | Checkpoint original del equipo Qwen |
-| Qwen Image 2.1 INT4 (W4A8) (Civitai) | 7B en componente visual (base) | DiT, 32 capas Single-Stream | INT4 W4A8 con ConvRot | no disponible en la informacion proporcionada | Checkpoint para ComfyUI, distribuido en Civitai |
-| unsloth/Qwen-Image-2.1 | 7B en componente visual | DiT, 32 capas Single-Stream | no disponible | no disponible | espejo del modelo base en Hugging Face |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen-Image-2.1-4bit (QuantFunc) | No disponible | No disponible | INT4 (r128/r32) | Qwen Research License | safetensors propio (ComfyUI-QuantFunc) | Hugging Face, 561 descargas |
+| Qwen-Image-2.1 (base) | No disponible | No disponible | 16 bits | Qwen Research License | pesos originales | Hugging Face (Qwen) |
+| Otras cuantizaciones de Qwen-Image-2.1 | No disponible | No disponible | No disponible | Según autor | No disponible | No disponible |
 
-La comparacion se limita a variantes del propio Qwen-Image-2.1 (16 bits, INT4 W4A8 de terceros y el espejo de unsloth). No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre ellas.
+No se dispone de información sobre modelos alternativos comparables de la misma categoría (otros modelos de difusión texto-imagen cuantizados a 4 bits) en los datos proporcionados, por lo que la comparativa se limita al modelo base y a sus variantes.
 
 ## Limitaciones y advertencias
 
-- Licencia qwen-research: la Qwen Research License impone restricciones de uso, tipicamente orientadas a investigacion. Debe revisarse el texto completo de la licencia del modelo base antes de cualquier uso comercial.
-- Formato propietario: los pesos no son cargables como checkpoint estandar de Diffusers; requieren ComfyUI-QuantFunc o el motor de QuantFunc. La etiqueta library_name: diffusers puede inducir a error.
-- Perdida de calidad por cuantizacion: no cuantificada objetivamente; la afirmacion de calidad cercana al baseline de 16 bits es cualitativa y no verificable con los datos disponibles.
-- Riesgo de artefactos de generacion: al ser un modelo de difusion, puede producir incoherencias estructurales o errores en el renderizado de texto, especialmente en tipografias complejas o idiomas distintos del entrenado.
-- Idiomas de prompt no documentados: no hay informacion sobre que idiomas soporta para las instrucciones de texto.
-- Sesgos: no se documentan evaluaciones de sesgo ni de representacion demografica en la informacion disponible.
-- Modelo reciente y sin traccion: el repositorio registra 0 descargas y 0 likes, por lo que carece de validacion de la comunidad y de informes independientes de calidad.
-- Dependencia del tooling del autor: el soporte y las actualizaciones dependen de QuantFunc (extension de ComfyUI y motor propios), no del equipo Qwen.
-- Coherencia de fechas: la fecha de creacion del repositorio aparece como 2026-09-28, posterior a la fecha de redaccion habitual; conviene verificar la vigencia del repositorio antes de integrarlo.
+- Licencia Qwen Research License: restringe el uso, especialmente el comercial. Es imprescindible leer el texto completo de la licencia del modelo base antes de cualquier despliegue en producción.
+- Compatibilidad limitada: no es un checkpoint drop-in de `diffusers`. La etiqueta `library_name: diffusers` del repositorio responde únicamente al recuento de descargas de Hugging Face, no a compatibilidad real con el paquete.
+- Dependencia de herramientas de terceros: requiere ComfyUI-QuantFunc o el motor de QuantFunc, lo que introduce un punto de mantenimiento adicional y riesgo de rotura en actualizaciones.
+- Degradación por cuantización: aunque el autor afirma que la calidad se mantiene cercana al 16 bits, no se aportan métricas objetivas; es esperable cierta pérdida en texturas finas, texto pequeño y detalles de alta frecuencia.
+- Riesgo de alucinación visual: como todo modelo generativo, puede producir texto ilegible, anatomías incorrectas o elementos incoherentes con el prompt.
+- Sesgos: no se documenta ninguna evaluación de sesgos demográficos, culturales o de representación; el modelo base puede reflejar sesgos de su dataset de entrenamiento.
+- Idiomas: no se especifica qué idiomas maneja bien en los prompts; los ejemplos de la model card incluyen texto en chino, pero no hay confirmación oficial del soporte multilingüe.
+- VRAM real variable: el autor advierte que las necesidades dependen de resolución, batch y flujo; no debe asumirse que quepa en cualquier GPU solo por el tamaño de los pesos.
+- Sin benchmarks: la ausencia de métricas publicadas impide una comparación rigurosa frente al modelo de 16 bits u otras cuantizaciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/QuantFunc/Qwen-Image-2.1-4bit
-- Modelo base Qwen-Image-2.1 en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Repositorio del modelo base en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
-- Blog oficial de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Extension ComfyUI-QuantFunc: https://github.com/QuantFunc/ComfyUI-QuantFunc
+- Modelo en Hugging Face: https://huggingface.co/QuantFunc/Qwen-Image-2.1-4bit
+- Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
+- Repositorio ComfyUI-QuantFunc: https://github.com/QuantFunc/ComfyUI-QuantFunc
 - Sitio web de QuantFunc: https://www.quantfunc.com/
 - Perfil de QuantFunc en Hugging Face: https://huggingface.co/QuantFunc
 - Perfil de QuantFunc en ModelScope: https://www.modelscope.cn/profile/QuantFunc
+- Perfil de QuantFunc en Civitai: https://civitai.com/user/quantfunc
 - Discord de QuantFunc: https://discord.gg/jCp9TpFWcn
-- Texto de la licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
-- Espejo de Qwen-Image-2.1 en unsloth: https://huggingface.co/unsloth/Qwen-Image-2.1
-- Cuantizacion alternativa INT4 (W4A8) en Civitai: https://civitai.com/models/2951557/qwen-image-21-int4w4a8
-- Documentacion de Hugging Face sobre estadisticas de descargas: https://huggingface.co/docs/hub/models-download-stats
+- Documentación de Hugging Face sobre estadísticas de descargas: https://huggingface.co/docs/hub/models-download-stats

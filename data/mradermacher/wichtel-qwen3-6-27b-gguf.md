@@ -2,87 +2,95 @@
 
 ## Resumen
 
-Wichtel-Qwen3.6-27B es un modelo de lenguaje de 27 000 millones de parámetros, resultado de un merge sobre la base Qwen3.6-27B de Alibaba, seguido de un fine-tuning adicional con datasets especializados en agentes, tool-use y código (Hemlock, egirl-delegation, etc.). El modelo está cuantizado en formato GGUF por mradermacher, lo que permite su ejecución en hardware de consumo con distintas precisiones. Es un modelo multimodal (acepta entrada de visión) con modo de razonamiento híbrido, pensado para tareas de agente autónomo, generación de código y conversación compleja.
+Wichtel-Qwen3.6-27B es un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) desarrollado por schneewolflabs y publicado bajo licencia Apache 2.0. Se trata de un merge de modelos afinados sobre una base Qwen3.6, orientado específicamente a agentes, uso de herramientas (tool-use) y generación de código, con un interés particular en el lenguaje Hemlock. La versión aquí descrita es la cuantización GGUF estática realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados.
 
-La relevancia actual radica en que combina las capacidades de Qwen3.6 (contexto de 256K, soporte multilingüe amplio, rendimiento puntero en agentic coding) con un fine-tuning orientado a mejorar la delegación de tareas, el uso de herramientas y la adherencia a instrucciones. Al estar disponible en GGUF, puede desplegarse localmente con llama.cpp, Ollama o vLLM, lo que lo hace atractivo para desarrolladores que necesitan un modelo potente sin depender de APIs externas.
+El modelo surge de la combinación de varios conjuntos de datos de ajuste fino supervisado y DPO, entre ellos egirl-delegation-dpo, egirl-hemlock-dpo, Hemlock-SFT, hemlock-codex3-SFT, hemlock-transmutation y GreatFirewall-DPO. Esta composición sugiere un entrenamiento orientado a la delegación de tareas entre agentes, la generación de código en Hemlock y el alineamiento mediante preferencias. El resultado es un modelo conversacional con etiquetas declaradas de agents, tool-use y code.
+
+La relevancia actual del modelo radica en su tamaño contenido (27B) combinado con licencia permisiva y disponibilidad en múltiples cuantizaciones GGUF, lo que lo sitúa en la franja de modelos desplegables en una sola GPU de 24-48 GB o en configuraciones multi-GPU de consumo. No obstante, la información pública disponible es limitada: no se han publicado especificaciones detalladas de contexto, arquitectura interna ni resultados de benchmarks en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con modo de pensamiento hibrido (hybrid-thinking) |
-| Parametros totales | 27 320 697 856 (~27B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 256K tokens (heredado del modelo base Qwen3.6-27B) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | Ingles (etiqueta "en"; el modelo base soporta 201 idiomas, pero el fine-tuning se centra en ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Arquitectura | no disponible (modelo base Qwen3.6; detalles internos no publicados en la informacion disponible) |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; ademas mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.6-27B, un transformer denso de 27B con capacidades multimodales (vision) y un mecanismo de "hybrid-thinking" que alterna entre razonamiento rapido y modo de pensamiento profundo. Sobre esta base, el autor del merge (schneewolflabs) aplico un proceso de fine-tuning con datasets de SFT y DPO: Hemlock-SFT, hemlock-codex3-SFT, hemlock-transmutation, egirl-delegation-dpo, egirl-hemlock-dpo y GreatFirewall-DPO. Estos datasets estan disenados para mejorar la delegacion de tareas, el uso de herramientas, la generacion de codigo y la adherencia a instrucciones en entornos de agente. No se dispone del numero exacto de tokens de entrenamiento ni de la composicion detallada del dataset.
+La informacion disponible no detalla la arquitectura interna del modelo base Qwen3.6 ni del merge Wichtel. Por el nombre y la familia (Qwen3.6) se infiere una arquitectura transformer decoder-only, pero no se confirma en la documentacion proporcionada. El modelo es un merge de pesos, no un entrenamiento desde cero: combina el modelo base schneewolflabs/Wichtel-Qwen3.6-27B con ajustes derivados de varios datasets.
 
-La cuantizacion GGUF realizada por mradermacher preserva la arquitectura original y anade ficheros de proyeccion multimodal (mmproj) para soportar entrada de imagenes. El modelo mantiene el contexto de 256K tokens del Qwen3.6 original, aunque en la practica la ventana efectiva puede verse limitada por la memoria disponible.
+Los datasets declarados en la model card son schneewolflabs/egirl-delegation-dpo, schneewolflabs/egirl-hemlock-dpo, hemlang/Hemlock-SFT, hemlang/hemlock-codex3-SFT, hemlang/hemlock-transmutation y nbeerbower/GreatFirewall-DPO. La presencia de datasets DPO indica un alineamiento mediante preferencias, y los datasets Hemlock-SFT y hemlock-codex3-SFT apuntan a un ajuste supervisado orientado a código en el lenguaje Hemlock. No se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo RLHF adicional. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno con contexto largo (hasta 256K tokens).
-- Razonamiento hibrido: puede operar en modo rapido o en modo de pensamiento profundo para problemas complejos.
-- Generacion de codigo en multiples lenguajes, con soporte para tool calling y function calling.
-- Capacidades de agente: puede planificar y ejecutar tareas multi-paso, delegar subtareas y usar herramientas externas.
-- Entrada multimodal: acepta imagenes (a traves del mmproj) para tareas de vision-lenguaje.
-- Multilingue limitado: aunque el modelo base soporta 201 idiomas, el fine-tuning se ha centrado en ingles, por lo que el rendimiento en otros idiomas puede degradarse.
-- Soporte para instrucciones complejas y seguimiento de formatos estructurados (JSON, etc.).
+- Generacion de texto conversacional en ingles, con formato de chat multi-turno.
+- Razonamiento y generacion de codigo, con enfasis declarado en el lenguaje Hemlock.
+- Soporte de tool calling / function calling (etiqueta tool-use en el modelo).
+- Orientacion a agentes y delegacion de tareas (etiqueta agents y dataset egirl-delegation-dpo).
+- Capacidades multimodales potenciales: el repositorio incluye ficheros mmproj (Q8_0 y f16), lo que sugiere soporte de entrada de imagen en la version base, aunque no se documenta explicitamente en la model card.
+- Capacidades multilingues limitadas: solo se declara ingles (en).
+- No se documentan modos especiales como thinking mode, audio o vision detallada.
 
 ## Casos de uso
 
-- Agentes autonomos de codigo: el modelo puede integrarse en pipelines de CI/CD para generar, revisar y corregir codigo automaticamente, aprovechando su tool calling para interactuar con repositorios y APIs.
-- Asistente de programacion en local: con una cuantizacion Q4_K_M (16.9 GB) cabe en una GPU de 24 GB, permitiendo a desarrolladores tener un copiloto offline con capacidades de razonamiento profundo.
-- Analisis de documentos con vision: gracias al mmproj, puede procesar capturas de pantalla, diagramas o imagenes de documentacion tecnica y extraer informacion relevante.
-- Automatizacion de atencion al cliente: su contexto de 256K permite mantener conversaciones largas y coherentes, gestionando historiales completos de interacciones y derivando a herramientas externas cuando es necesario.
-- Investigacion y resumen de articulos cientificos: el modo de pensamiento hibrido permite desglosar papers complejos en pasos logicos y generar resumenes precisos.
-- Generacion de datos sinteticos para entrenamiento: puede crear datasets etiquetados, preguntas de opcion multiple o ejemplos de codigo, aprovechando su capacidad de seguir instrucciones detalladas.
+- Generacion de codigo en Hemlock: el modelo ha sido afinado con datasets especificos de Hemlock (Hemlock-SFT, hemlock-codex3-SFT, hemlock-transmutation), por lo que es adecuado para tareas de escritura y transformacion de codigo en ese lenguaje dentro de pipelines de desarrollo.
+- Agentes autonomos con tool calling: las etiquetas agents y tool-use y el dataset de delegacion DPO lo orientan a orquestar llamadas a herramientas y descomponer tareas multi-paso en entornos de agentes.
+- Asistente de desarrollo en local: con cuantizaciones Q4_K_M (16,9 GB) o Q5_K_M (19,6 GB) puede ejecutarse en una GPU de consumo de 24 GB, permitiendo un asistente de codigo privado sin enviar datos a la nube.
+- Prototipado de pipelines de delegacion entre agentes: el ajuste en egirl-delegation-dpo lo hace util para experimentar con arquitecturas de agentes que reparten subtareas.
+- Evaluacion de merges y cuantizaciones: al estar disponible en 11 cuantizaciones distintas (de Q2_K a Q8_0), sirve para estudiar el impacto de la cuantizacion en calidad y latencia sobre un modelo de 27B.
+- Despliegue en entornos con recursos limitados: la cuantizacion Q2_K (11,0 GB) permite ejecucion en GPUs de 12-16 GB o incluso en CPU con llama.cpp, aunque con perdida de calidad.
+- Integracion en herramientas de chat locales: compatible con endpoints y con la libreria transformers, puede integrarse en frontends tipo Ollama o llama.cpp server para uso conversacional en ingles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para el merge Wichtel-Qwen3.6-27B en la informacion disponible. El modelo base Qwen3.6-27B ha demostrado un rendimiento destacado en tareas de agentic coding y razonamiento, pero no se dispone de cifras concretas para esta variante fine-tuneada. Se recomienda evaluar el modelo en el caso de uso concreto antes de desplegarlo en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion:
-  - Q2_K (11.0 GB): cabe en GPUs de 12 GB (RTX 3060, 4070).
-  - Q4_K_M (16.9 GB): recomendado para RTX 4090 (24 GB) o A5000.
-  - Q5_K_M (19.6 GB): requiere 24 GB o mas (RTX 4090, A6000).
-  - Q8_0 (29.1 GB): necesita 32 GB o mas (A100 40 GB, 2x RTX 3090).
-- Tambien puede ejecutarse en CPU con llama.cpp, usando RAM en lugar de VRAM (por ejemplo, Q4_K_M necesita ~17 GB de RAM).
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con adaptador GGUF), text-generation-inference (TGI) con soporte GGUF.
-- Latencia y throughput: no disponible; dependen del hardware y de la cuantizacion. En una RTX 4090 con Q4_K_M se esperan decenas de tokens por segundo, pero no hay datos oficiales.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K ~11,0 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,6 GB; Q3_K_L ~14,7 GB; IQ4_XS ~15,5 GB; Q4_K_S ~15,9 GB; Q4_K_M ~16,9 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB. A estas cifras hay que sumar el espacio para el contexto KV cache y, si se usa multimodal, el mmproj (0,7-1,0 GB).
+- GPU recomendadas: para Q8_0 o Q6_K, una A100 40 GB, H100 o RTX 4090 24 GB (Q6_K justo); para Q4_K_M, una RTX 4090 24 GB o RTX 3090 24 GB; para Q2_K-Q3_K, GPUs de 12-16 GB como RTX 4070 Ti o RTX 4080.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con Q4_K_M o Q5_K_M; en GPUs de 16 GB con Q3_K_M o IQ4_XS; en GPUs de 12 GB con Q2_K.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), Ollama, servidores compatibles con endpoints, y transformers para el modelo base en safetensors. No se documenta soporte explicito de vLLM o TGI en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Especializacion |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Wichtel-Qwen3.6-27B (este) | 27B | 256K | Apache 2.0 | GGUF | Agentes, tool-use, codigo, vision |
-| Qwen3.6-27B (base) | 27B | 256K | Apache 2.0 | Safetensors | General, multimodal, hybrid-thinking |
-| Qwen3.6-35B-A3B (MoE) | 35B total, 3B activos | 256K | Apache 2.0 | Safetensors | Eficiencia, agentic coding |
-| Llama-3.1-8B | 8B | 128K | Llama 3.1 | Safetensors/GGUF | General, menor capacidad |
+| Wichtel-Qwen3.6-27B-GGUF | 27,3B | no disponible | apache-2.0 | GGUF | Merge orientado a agentes, tool-use y Hemlock; solo ingles |
+| Qwen3.6-27B (base, si existe publicamente) | no disponible | no disponible | no disponible | no disponible | Modelo base del que deriva el merge; no se dispone de ficha en la informacion |
+| Alternativas de ~27-32B en GGUF | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-La comparativa se basa en caracteristicas tecnicas, no en rendimiento medido, ya que no se dispone de benchmarks publicados para el merge. El modelo Wichtel se diferencia del Qwen3.6 base por el fine-tuning adicional en agentes y codigo, lo que puede mejorar su comportamiento en tareas especificas a costa de una posible perdida de generalidad.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- El fine-tuning con datasets como "egirl-delegation" o "egirl-hemlock" puede introducir sesgos de estilo o contenido no deseado en entornos profesionales.
-- Al ser un merge, no se ha realizado una evaluacion exhaustiva de seguridad; puede generar contenido inapropiado o alucinaciones en contextos delicados.
-- El soporte multilingue se limita al ingles en la practica, a pesar de que el modelo base soporta 201 idiomas.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base Qwen3.6 por si hubiera restricciones adicionales.
-- El contexto de 256K es teorico; en la practica, la memoria disponible limita la ventana util, especialmente con cuantizaciones altas.
-- No se han publicado benchmarks especificos, por lo que el rendimiento real en tareas concretas debe validarse antes de su uso en produccion.
+- Sesgos conocidos: no documentados en la informacion disponible; al ser un merge de datasets posiblemente sinteticos (egirl-*, GreatFirewall-DPO), pueden heredarse sesgos de esos conjuntos, pero no se detallan.
+- Riesgo de alucinacion: no cuantificado; como todo modelo generativo, puede producir contenido erroneo, especialmente en dominios no cubiertos por sus datasets de ajuste.
+- Limitacion de idioma: solo se declara soporte de ingles (en); el rendimiento en castellano u otros idiomas no esta garantizado.
+- Longitud de contexto: no documentada, lo que impide planificar despliegues con contextos largos sin verificacion empirica.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los datasets de ajuste (egirl-*, Hemlock-*, GreatFirewall-DPO) por si imponen condiciones adicionales.
+- Caveat de produccion: la cuantizacion Q2_K y Q3_K_S degradan la calidad; para produccion se recomienda Q4_K_M o superior. El modelo es un merge, no un entrenamiento validado, por lo que su robustez en dominios fuera de agentes/codigo/Hemlock es incierta.
+- Soporte multimodal: la presencia de mmproj sugiere vision, pero no se documenta su funcionamiento ni calidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Wichtel-Qwen3.6-27B-GGUF
-- Modelo base (safetensors): https://huggingface.co/schneewolflabs/Wichtel-Qwen3.6-27B
-- Pagina de Qwen3.6 en Ollama: https://ollama.com/library/qwen3.6:27b
-- Documentacion de Unsloth sobre Qwen3.6: https://unsloth.ai/docs/models/qwen3.6
-- Cuantizaciones con imatrix (alternativa): https://huggingface.co/mradermacher/Wichtel-Qwen3.6-27B-i1-GGUF
+- Modelo base: https://huggingface.co/schneewolflabs/Wichtel-Qwen3.6-27B
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Wichtel-Qwen3.6-27B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Wichtel-Qwen3.6-27B-GGUF
+- FAQ y peticiones de modelos: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset egirl-delegation-dpo: https://huggingface.co/datasets/schneewolflabs/egirl-delegation-dpo
+- Dataset egirl-hemlock-dpo: https://huggingface.co/datasets/schneewolflabs/egirl-hemlock-dpo
+- Dataset Hemlock-SFT: https://huggingface.co/datasets/hemlang/Hemlock-SFT
+- Dataset hemlock-codex3-SFT: https://huggingface.co/datasets/hemlang/hemlock-codex3-SFT
+- Dataset hemlock-transmutation: https://huggingface.co/datasets/hemlang/hemlock-transmutation
+- Dataset GreatFirewall-DPO: https://huggingface.co/datasets/nbeerbower/GreatFirewall-DPO

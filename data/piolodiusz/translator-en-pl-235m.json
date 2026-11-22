@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "id": "Piolodiusz/translator-en-pl-235m",
+  "slug": "piolodiusz-translator-en-pl-235m",
+  "author": "Piolodiusz",
+  "url": "https://huggingface.co/Piolodiusz/translator-en-pl-235m",
+  "created_at": "2026-11-22T12:05:35.000Z",
+  "updated_at": "2026-11-22T12:09:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "en-pl",
+    "pytorch",
+    "from-scratch",
+    "cpo",
+    "en",
+    "pl",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235097088,
+  "parameters_human": "235.1M",
+  "storage_bytes": 471312796,
+  "storage_human": "471 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation (EN -> PL)",
+      "dataset": "FLORES+ (devtest)",
+      "metric": "BLEU",
+      "value": 21.49
+    },
+    {
+      "task": "Translation (EN -> PL)",
+      "dataset": "FLORES+ (devtest)",
+      "metric": "chrF++",
+      "value": 48.65
+    },
+    {
+      "task": "Translation (EN -> PL)",
+      "dataset": "FLORES+ (devtest)",
+      "metric": "MetricX-24-Ref (lower is better)",
+      "value": 4.729
+    },
+    {
+      "task": "Translation (EN -> PL)",
+      "dataset": "FLORES+ (devtest)",
+      "metric": "MetricX-24-QE (lower is better)",
+      "value": 4.137
+    }
+  ],
+  "sources": []
+}

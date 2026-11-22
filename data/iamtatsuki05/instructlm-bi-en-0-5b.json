@@ -35,11 +35,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 567854592,
   "parameters_human": "567.9M",
-  "storage_bytes": 2272487260,
+  "storage_bytes": 2272256225,
   "storage_human": "2.3 GB",
   "context_length": null,
   "base_model": "instruction-pretrain/InstructLM-500M",

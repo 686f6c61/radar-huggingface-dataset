@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Voyager466920/Raptor",
+  "slug": "voyager466920-raptor",
+  "author": "Voyager466920",
+  "url": "https://huggingface.co/Voyager466920/Raptor",
+  "created_at": "2026-07-14T06:40:41.000Z",
+  "updated_at": "2026-11-22T09:22:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "raptor",
+    "text-generation",
+    "causal-lm",
+    "mixture-of-experts",
+    "custom-code",
+    "base-model",
+    "custom_code",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1026892800,
+  "parameters_human": "1.03B",
+  "storage_bytes": 10270528729,
+  "storage_human": "10.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

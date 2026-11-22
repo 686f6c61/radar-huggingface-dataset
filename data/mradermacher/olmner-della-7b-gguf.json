@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/olmner-della-7b-GGUF",
+  "slug": "mradermacher-olmner-della-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/olmner-della-7b-GGUF",
+  "created_at": "2025-02-27T15:36:46.000Z",
+  "updated_at": "2026-11-22T07:08:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:marcuscedricridia/olmner-della-7b",
+    "base_model:quantized:marcuscedricridia/olmner-della-7b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146899200,
+  "storage_human": "68.1 GB",
+  "context_length": 32768,
+  "base_model": "marcuscedricridia/olmner-della-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,50 +2,51 @@
 
 ## Resumen
 
-vox-mens-qwen3.5-9b-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo vox-mens-qwen3.5-9b, publicado por el usuario brbrainerd y convertido a GGUF por mradermacher. El modelo base parte de la familia Qwen3.5 con aproximadamente 8.950 millones de parametros totales (8.953.803.264, segun los pesos safetensors del repositorio), lo que lo situa en la categoria de modelos densos de tamano medio-alto, adecuados para despliegue en una sola GPU o en configuraciones de inferencia local con cuantizacion.
+vox-mens-qwen3.5-9b-GGUF es la distribucion en formato GGUF del modelo brbrainerd/vox-mens-qwen3.5-9b, un ajuste fino (fine-tuning) del modelo Qwen3.5 de 9 mil millones de parametros. La cuantizacion la realiza mradermacher, un conocido publicador de versiones GGUF de la comunidad, que genera los ficheros estaticos a partir de los pesos originales en formato Hugging Face. El modelo base emplea una arquitectura con Gated Delta Networks, segun las etiquetas de la model card, y fue entrenado mediante QLoRA y RS-LoRA sobre un conjunto de datos propio orientado al dominio "vox-mens".
 
-La relevancia de esta publicacion es practica: ofrece variantes cuantizadas listas para usar con llama.cpp y derivados (Ollama, LM Studio, etc.), desde Q2_K hasta Q8_0 e IQ4_XS, cubriendo el rango habitual de compromiso entre calidad y huella de memoria. El repositorio ocupa 57,8 GB, lo que refleja la suma de todas las variantes incluidas, no el tamano de una sola.
+Este repositorio resuelve un problema practico: permitir la ejecucion del modelo en hardware de consumo mediante cuantizaciones de 2 a 8 bits, con ficheros que van desde 3,9 GB (Q2_K) hasta 18 GB (f16). Al estar empaquetado en GGUF, es compatible con llama.cpp, Ollama y otros runners que consumen este formato, lo que amplia enormemente su accesibilidad frente a los pesos originales en safetensors.
 
-La informacion publica disponible es muy limitada: no se documentan datos de entrenamiento, licencia, idiomas soportados ni resultados de benchmarks en la model card del repositorio de cuantizacion. Esta ficha se limita, por tanto, a lo verificable a partir de los metadatos y del contenido del README.
+El modelo cuenta con 8.953.803.264 parametros totales (segun los safetensors del modelo base) y esta publicado bajo licencia Apache 2.0. La model card declara soporte unicamente para ingles y esta orientada a tareas de generacion de texto, codigo y conversacion, con etiquetas que apuntan a integracion con text-generation-inference y vLLM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (hereda la arquitectura del modelo base Qwen3.5; detalles no disponibles) |
-| Parametros totales | 8.953.803.264 (~8,95 mil millones) |
-| Parametros activos | no disponible (no es un modelo MoE segun los datos disponibles) |
+| Arquitectura | Transformer con Gated Delta Networks (segun etiquetas de la model card) |
+| Parametros totales | 8.953.803.264 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no aporta informacion sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo base. Por el nombre y por el origen (brbrainerd/vox-mens-qwen3.5-9b), se trata de un modelo derivado de la familia Qwen3.5 con aproximadamente 8,95 mil millones de parametros, presumiblemente un transformer denso. No se dispone de datos sobre numero de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones tecnicas especificas.
+El modelo base es un ajuste fino de Qwen3.5 de 9B. Las etiquetas de la model card mencionan "gated-delta-networks", lo que sugiere la incorporacion de mecanismos de atencion lineal con compuertas delta en la arquitectura, si bien no se proporcionan detalles tecnicos sobre la configuracion exacta de capas, dimensiones ocultas o numero de cabezas de atencion.
 
-Lo unico documentado tecnicamente es el proceso de cuantizacion: el autor de las conversiones (mradermacher) emplea un pipeline estandarizado (quantize_version 2) que genera cuantizaciones estaticas en GGUF a partir de los pesos originales en formato Hugging Face (convert_type: hf). Se incluyen tanto cuantizaciones K-quant clasicas como la variante IQ4_XS (importancia-based), orientada a preservar calidad con menor huella de memoria.
+El entrenamiento se realizo mediante QLoRA y RS-LoRA (tecnicas de ajuste fino eficiente en parametros con cuantizacion de bajo rango), sobre los conjuntos de datos brbrainerd/vox-mens-data-vox-lang y evaluado con brbrainerd/vox-mens-eval-vox-lang-bench. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. La model card incluye la etiqueta "gate-passed", que podria indicar que el modelo supero algun criterio de validacion interno del autor, pero no se detalla su significado.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta "conversational" en los metadatos sugiere un ajuste orientado a dialogo, aunque no se detalla el formato de prompt ni la plantilla de chat.
-- Razonamiento y generacion de texto general: capacidades heredadas del modelo base Qwen3.5-9b, no documentadas en este repositorio.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
-- Inferencia local via GGUF: compatible con llama.cpp y herramientas derivadas.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generacion de texto conversacional en ingles.
+- Generacion de codigo (etiqueta "code" en la model card).
+- Capacidades de conversacion multi-turno (etiqueta "conversational").
+- Compatibilidad declarada con text-generation-inference y vLLM.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las variantes Q4_K_M e IQ4_XS permiten ejecutar un modelo de ~9B parametros en GPUs de consumo con 8-12 GB de VRAM, util para prototipado y desarrollo sin dependencia de la nube.
-- Chat conversacional autoalojado: dado el caracter conversacional del modelo base, puede integrarse en interfaces tipo chat (Ollama, LM Studio, Open WebUI) para asistentes personales o internos de equipo.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 variantes, lo que permite medir empiricamente el impacto de la cuantizacion en calidad y velocidad para un mismo modelo, util en tareas de investigacion sobre compresion.
-- Servicio de inferencia en CPU: las variantes Q2_K y Q3_K_S reducen la huella de memoria lo suficiente para despliegues en servidores sin GPU, a costa de perdida de calidad.
-- Integracion en pipelines con llama.cpp: mediante su API compatible con OpenAI, puede conectarse a aplicaciones existentes que esperen ese contrato.
-- Experimentacion con modelos derivados de Qwen3.5: sirve como punto de partida para quienes quieren evaluar el comportamiento del modelo base sin descargar los pesos originales en safetensors.
+- Asistente conversacional en ingles: el modelo puede gestionar dialogos multi-turno gracias a su naturaleza conversacional, adecuado para prototipos de chatbots desplegados localmente con llama.cpp u Ollama en hardware de consumo.
+- Generacion de codigo en entornos con recursos limitados: con cuantizaciones Q4_K_M (5,7 GB) puede ejecutarse en GPUs de consumo de 8 GB de VRAM, sirviendo como asistente de programacion local sin dependencia de la nube.
+- Despliegue en el borde (edge computing): las versiones Q2_K (3,9 GB) y Q3_K_S (4,4 GB) permiten ejecutar el modelo en dispositivos con poca memoria, util para aplicaciones offline o embebidas.
+- Experimentacion e investigacion: al ser un fine-tuning de Qwen3.5 con tecnicas QLoRA/RS-LoRA, sirve como caso de estudio para reproducir pipelines de ajuste eficiente sobre modelos de 9B.
+- Integracion en pipelines de text-generation-inference o vLLM: las etiquetas indican compatibilidad con estos servidores de inferencia, lo que permite desplegarlo como servicio HTTP en produccion.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes de cuantizacion que permiten medir el impacto de la compresion en calidad y velocidad para un mismo modelo base.
+- Fine-tuning adicional sobre dominio especifico: al estar bajo Apache 2.0, puede reutilizarse como punto de partida para nuevos ajustes en otros dominios o idiomas.
 
 ## Benchmarks y rendimiento
 
@@ -53,42 +54,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y longitud de contexto):
-  - Q8_0: ~9,5-10 GB
-  - Q6_K: ~7,5-8 GB
-  - Q5_K_M: ~6,5-7 GB
-  - Q4_K_M: ~5,5-6 GB
-  - IQ4_XS: ~5-5,5 GB
-  - Q3_K_M: ~4,5-5 GB
-  - Q2_K: ~3,5-4 GB
-  - x-f16: ~18 GB
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para cuantizaciones altas con contexto largo; RTX 4070 Ti / 4080 (12-16 GB) para Q4-Q6; GPUs de 8 GB para Q3-Q4 con contexto reducido.
-- Cabe en GPU de consumo: si, en la mayoria de cuantizaciones (Q4_K_M en adelante) con GPUs de 8 GB o mas, dependiendo de la longitud de contexto.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (segun cuantizacion): desde ~4 GB (Q2_K, 3,9 GB de fichero) hasta ~18 GB (f16), pasando por ~5,7 GB (Q4_K_M) y ~9,6 GB (Q8_0). A estas cifras hay que sumar el espacio para el contexto KV cache.
+- GPU recomendadas: para f16 se requiere una GPU de 24 GB o superior (RTX 3090/4090, A100, H100). Para Q8_0 basta con 12-16 GB (RTX 4070 Ti Super, RTX 4080). Para Q4_K_M es suficiente con 8 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 3070).
+- Cabe en GPU de consumo: si, en todas las cuantizaciones de Q2_K a Q6_K en GPUs de 8 GB o mas; Q8_0 requiere 12 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, text-generation-inference, vLLM (segun etiquetas de la model card). El formato GGUF es nativo de llama.cpp y Ollama.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| vox-mens-qwen3.5-9b-GGUF | ~8,95B | no disponible | no disponible | GGUF | Cuantizaciones estaticas de un derivado de Qwen3.5 |
-| Qwen3-8B | ~8B | 32K (ampliable) | Apache 2.0 | safetensors, GGUF | Modelo oficial de Alibaba, benchmarks publicados |
-| Llama 3.1 8B | ~8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Amplia adopcion, ecosistema maduro |
-| Mistral 7B | ~7,3B | 32K | Apache 2.0 | safetensors, GGUF | Referencia en modelos abiertos de tamano similar |
+| vox-mens-qwen3.5-9b-GGUF | 8.953.803.264 | no disponible | apache-2.0 | GGUF | Hugging Face (mradermacher) |
+| Qwen3.5-9B (base) | ~9B | no disponible | no disponible | safetensors | Hugging Face |
+| Otros fine-tunes de Qwen3.5 en GGUF | ~9B | no disponible | variable | GGUF | Hugging Face |
 
-La comparativa es orientativa: no se dispone de datos de rendimiento del modelo evaluado para contrastar con las alternativas.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card detallada: no se documentan sesgos, datos de entrenamiento, idiomas ni comportamiento esperado.
-- Licencia no especificada: no es posible determinar si el uso comercial esta permitido; debe consultarse el repositorio del modelo base (brbrainerd/vox-mens-qwen3.5-9b) antes de cualquier uso en produccion.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluacion publicada no puede cuantificarse.
-- Las cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad de forma notable; se recomienda Q4_K_M o superior para uso real.
-- El nombre "vox-mens" sugiere un ajuste especifico (posiblemente de voz o de un dominio concreto) no documentado; conviene validar el comportamiento antes de asumir capacidades generales.
-- Sin informacion sobre la plantilla de chat ni tokens especiales: riesgo de prompts mal formateados si no se consulta el modelo base.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion por parte de la comunidad.
+- El modelo esta entrenado y declarado unicamente para ingles; su rendimiento en castellano u otros idiomas no esta garantizado.
+- Al ser un fine-tuning de dominio especifico ("vox-mens"), puede presentar sesgos hacia el estilo y vocabulario de los datos de entrenamiento, cuyo contenido no se detalla.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad factual.
+- No se especifica la longitud de contexto soportada, lo que dificulta planificar su uso en tareas de contexto largo.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5 puede tener condiciones adicionales que no se detallan en la informacion disponible; conviene verificar la licencia del modelo original.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente la coherencia y la calidad del codigo generado; se recomienda Q4_K_M o superior para uso en produccion.
+- No hay informacion sobre tool calling, modo thinking ni capacidades de agente, por lo que no debe asumirse su disponibilidad.
+- El repositorio ocupa 81,4 GB en total por incluir todas las variantes; la descarga selectiva de un solo fichero es necesaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/vox-mens-qwen3.5-9b-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/vox-mens-qwen3.5-9b-GGUF
 - Modelo base: https://huggingface.co/brbrainerd/vox-mens-qwen3.5-9b
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#vox-mens-qwen3.5-9b-GGUF
+- Dataset de evaluacion: https://huggingface.co/datasets/brbrainerd/vox-mens-eval-vox-lang-bench
+- Dataset de entrenamiento: https://huggingface.co/datasets/brbrainerd/vox-mens-data-vox-lang
+- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Notas sobre cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

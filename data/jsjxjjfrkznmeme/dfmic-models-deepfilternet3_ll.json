@@ -5,13 +5,14 @@
   "author": "jsjxjjfrkznmeme",
   "url": "https://huggingface.co/jsjxjjfrkznmeme/dfmic-models-DeepFilterNet3_ll",
   "created_at": "2026-11-21T06:11:01.000Z",
-  "updated_at": "2026-11-21T06:11:28.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-21T06:48:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "license:mit",
     "region:us"
   ],
   "likes": 0,

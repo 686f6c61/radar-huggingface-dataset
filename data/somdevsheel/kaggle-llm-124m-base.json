@@ -5,7 +5,7 @@
   "author": "somdevsheel",
   "url": "https://huggingface.co/somdevsheel/kaggle-llm-124m-base",
   "created_at": "2026-11-10T09:56:23.000Z",
-  "updated_at": "2026-11-14T10:50:46.000Z",
+  "updated_at": "2026-11-22T05:55:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 332,
+  "downloads_30d": 333,
   "trending_score": 0,
   "parameters": 123587328,
   "parameters_human": "123.6M",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "somdevsheel/prajna-ai-124m-base",
+  "renamed_at": "2026-11-22T11:21:28.739Z",
   "benchmarks": [],
   "sources": []
 }

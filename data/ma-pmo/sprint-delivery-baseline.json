@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "ma-pmo/sprint-delivery-baseline",
+  "slug": "ma-pmo-sprint-delivery-baseline",
+  "author": "ma-pmo",
+  "url": "https://huggingface.co/ma-pmo/sprint-delivery-baseline",
+  "created_at": "2026-11-22T05:13:43.000Z",
+  "updated_at": "2026-11-22T05:13:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "tabular-classification",
+    "skops",
+    "agile",
+    "sprint",
+    "project-management",
+    "ma-pmo",
+    "dataset:ma-pmo/jira-sprint-delivery",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7763366,
+  "storage_human": "8 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Committed issue done by sprint close",
+      "dataset": "Jira Sprint Delivery",
+      "metric": "PR-AUC (done)",
+      "value": 0.604
+    },
+    {
+      "task": "Committed issue done by sprint close",
+      "dataset": "Jira Sprint Delivery",
+      "metric": "ROC-AUC",
+      "value": 0.73
+    },
+    {
+      "task": "Committed issue done by sprint close",
+      "dataset": "Jira Sprint Delivery",
+      "metric": "Brier score",
+      "value": 0.203
+    }
+  ],
+  "sources": []
+}

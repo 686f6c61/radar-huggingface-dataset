@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "grizzleyyybear/elly-screening-encoders",
+  "slug": "grizzleyyybear-elly-screening-encoders",
+  "author": "grizzleyyybear",
+  "url": "https://huggingface.co/grizzleyyybear/elly-screening-encoders",
+  "created_at": "2026-11-22T09:05:03.000Z",
+  "updated_at": "2026-11-22T09:06:26.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "audio",
+    "speech",
+    "feature-extraction",
+    "whisper",
+    "wav2vec2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176993590,
+  "storage_human": "177 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LINEARLY MAPPING FROM IMAGE TO TEXT SPACE - OpenReview",
+      "url": "https://openreview.net/pdf?id=8tYRqb05pVn",
+      "snippet": "on model architecture and image encoders used. On captioning, we see a ... grizzly+bear grizzly.n.01 killer+whale killer whale.n.01 beaver beaver.n.07."
+    }
+  ]
+}

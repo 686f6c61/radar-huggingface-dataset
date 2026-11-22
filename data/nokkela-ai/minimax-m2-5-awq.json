@@ -5,7 +5,7 @@
   "author": "nokkela-ai",
   "url": "https://huggingface.co/nokkela-ai/MiniMax-M2.5-AWQ",
   "created_at": "2026-11-20T18:28:17.000Z",
-  "updated_at": "2026-11-20T18:39:51.000Z",
+  "updated_at": "2026-11-21T10:09:15.000Z",
   "license": "modified-mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 228689764864,
   "parameters_human": "228.69B",

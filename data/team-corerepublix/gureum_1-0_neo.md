@@ -2,102 +2,91 @@
 
 ## Resumen
 
-Gureum (구름) 1.0 neo es un modelo de lenguaje conversacional desarrollado por el equipo CorerepubliX, publicado en Hugging Face bajo el identificador Team-CorerepubliX/Gureum_1.0_neo. Se trata de un modelo de generación de texto con 2.305.517.312 parámetros (aproximadamente 2,3 mil millones), orientado principalmente al diálogo en coreano, con soporte secundario de inglés. Según las etiquetas del repositorio, su arquitectura se basa en Llama y el formato de pesos es safetensors, compatible con la librería transformers.
+Gureum (구름, "nube" en coreano) 1.0 neo es un modelo de lenguaje conversacional de aproximadamente 2.300 millones de parámetros desarrollado por Team-CorerepubliX. Está especializado en diálogo en coreano, con soporte secundario de inglés, y se distribuye con arquitectura tipo Llama en formato safetensors bajo licencia CC BY-NC-ND 4.0. Su propósito declarado es actuar como asistente generalista en coreano: conversación, matemáticas, código, traducción y redacción, manteniendo registro formal (존댓말) incluso cuando el usuario emplea registro informal.
 
-El modelo está diseñado como asistente generalista: conversación en coreano, mantenimiento del registro formal (존댓말), y tareas de matemáticas, código, traducción y redacción. Un rasgo distintivo declarado por el autor es que mantiene el tratamiento de cortesía incluso cuando el usuario emplea un registro informal, y que estructura las respuestas largas en Markdown (encabezados con `##`, listas, etc.).
+El modelo se presenta como una alternativa ligera que puede ejecutarse en hardware de consumo: el autor indica que la versión cuantizada GGUF Q4_K_M ocupa aproximadamente 1,35 GB y funciona con unos 3 GB de VRAM o RAM, con recomendación de GPU de 6 GB o más (verificado con holgura en 8 GB). La longitud de contexto declarada es de 8192 tokens, aunque el entrenamiento se realizó con 768 tokens, lo que constituye una discrepancia relevante para producción.
 
-Su relevancia actual reside en su licencia MIT, que permite uso comercial, modificación y redistribución sin restricciones, y en su tamaño reducido, que lo hace desplegable en hardware de consumo. No obstante, el repositorio no publica detalles sobre la longitud de contexto, el volumen de datos de entrenamiento ni resultados de benchmarks, por lo que su evaluación rigurosa queda pendiente.
+Su relevancia actual es limitada pero concreta: cubre el nicho de asistentes conversacionales en coreano que caben en equipos modestos, con una model card que documenta explícitamente un problema de repetición en generación larga y prescribe parámetros de muestreo obligatorios (`repeat_penalty >= 1.1`, `repeat_last_n >= 256`). Es un modelo de nicho, con 550 descargas y 2 likes en el momento de la consulta, sin benchmarks publicados.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer basada en Llama (según etiqueta del repositorio) |
-| Parámetros totales | 2.305.517.312 (~2,3 mil millones) |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (no se listan variantes GGUF/AWQ/GPTQ en el repositorio) |
-| Idiomas soportados | coreano (ko) e inglés (en) |
-| Licencia | MIT |
-| Formato de pesos | safetensors |
-| Librería | transformers |
-| Tamaño del repositorio | 4,6 GB |
+| Arquitectura | Transformer tipo Llama (según tag `llama` y librería `transformers`) |
+| Parámetros totales | 2.305.517.312 (~2,3B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens máximo declarado; entrenamiento a 768 tokens |
+| Tipos de cuantización | safetensors bf16 (original, ~4,6 GB); GGUF Q4_K_M (~1,35 GB) |
+| Idiomas soportados | coreano (ko), inglés (en) |
+| Licencia | CC BY-NC-ND 4.0 |
+| Formato de pesos | safetensors (transformers), GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo sigue una arquitectura transformer de tipo Llama, según la etiqueta `llama` del repositorio, con aproximadamente 2,3 mil millones de parámetros. El formato de pesos es safetensors y está pensado para su carga mediante la librería transformers. No se especifican en la model card el número de capas, la dimensión del modelo, el número de cabezas de atención ni la ventana de contexto máxima soportada.
+La información disponible identifica el modelo como un transformer causal de tipo Llama, con 2,3B parámetros y pesos en safetensors/bf16. El repositorio ocupa 9,2 GB, lo que sugiere la presencia de múltiples artefactos además de los pesos principales (posiblemente tokenizer, plantillas de chat y variantes cuantizadas). No se detalla en la información proporcionada el número de capas, dimensiones ocultas, número de cabezas de atención ni el esquema de atención (MHA/GQA), por lo que esos datos deben considerarse no disponibles.
 
-Respecto al entrenamiento, la model card únicamente describe el comportamiento esperado: conversación en coreano con mantenimiento del registro formal, uso de estructura Markdown en textos largos y cobertura de tareas de matemáticas, código, traducción y escritura. No se aportan datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. Tampoco se documenta ninguna innovación técnica específica (atención lineal, decodificación especulativa, arquitecturas híbridas, etc.).
+Respecto al entrenamiento, la model card solo indica que el entrenamiento se realizó con una longitud de 768 tokens y que el modelo fue ajustado para mantener el registro formal coreano, usar estructura Markdown en textos largos y aplicar automáticamente una persona por defecto cuando no se proporciona mensaje de sistema. No se especifica el volumen de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de alineación como RLHF, DPO o SFT. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional en coreano, con mantenimiento del registro formal (존댓말) incluso ante entradas en registro informal.
-- Soporte de inglés como idioma secundario.
-- Asistencia en matemáticas, según declara el autor.
-- Generación y asistencia de código.
-- Traducción entre coreano e inglés.
-- Redacción de textos largos con estructura Markdown (encabezados `##`, listas).
-- Aplicación automática de una persona (persona Gureum) por defecto cuando no se proporciona un mensaje de sistema.
-- Compatibilidad con plantillas de chat mediante `apply_chat_template` de transformers.
-- Etiquetado como compatible con text-generation-inference y endpoints.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito.
+- Generación de texto conversacional multi-turno en coreano, con mantenimiento del registro formal (존댓말) aunque el usuario escriba en 반말.
+- Soporte de inglés como idioma secundario, según los metadatos del modelo.
+- Tareas generalistas de asistente: matemáticas, código, traducción y redacción.
+- Generación de textos largos con estructura Markdown (encabezados `##`, listas).
+- Aplicación automática de una persona por defecto ("Gureum") cuando no se pasa mensaje de sistema.
+- Compatibilidad con plantillas de chat vía `apply_chat_template` de transformers.
+- Compatibilidad declarada con text-generation-inference y endpoints compatibles.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso explícito, visión, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Asistente conversacional en coreano con registro formal: adecuado para aplicaciones donde se requiere un trato de cortesía consistente, ya que el modelo fue entrenado para mantener el 존댓말 incluso si el usuario escribe en informal.
-- Atención al cliente automatizada en coreano: puede gestionar conversaciones multi-turno mediante plantillas de chat, aunque la ausencia de datos públicos sobre la ventana de contexto impide garantizar diálogos de longitud extendida.
-- Generación de documentación técnica en Markdown: el entrenamiento orientado a estructurar textos largos con encabezados y listas lo hace apto para producir README, guías o manuales con formato listo para publicar.
-- Traducción coreano-inglés en pipelines de contenido: útil para localizar material redactado originalmente en coreano hacia inglés, dentro de flujos que requieran un modelo ligero y de licencia permisiva.
-- Asistencia de programación y ejercicios matemáticos: puede emplearse como ayuda para resolver problemas o explicar fragmentos de código, siempre con verificación humana dado que no hay benchmarks publicados.
-- Prototipado local en hardware de consumo: su tamaño de ~2,3 mil millones de parámetros permite desplegarlo en una GPU de gama media para pruebas de concepto sin depender de servicios en la nube.
-- Ajuste fino sobre dominio propio: la licencia MIT permite reentrenar y redistribuir el modelo adaptado a sectores específicos (legal, sanitario, atención al cliente vertical) sin restricciones comerciales.
-- Generación de correos y escritos profesionales en coreano: encaja en herramientas de productividad que requieran un tono formal y estructura clara.
+- Asistente conversacional en coreano para atención al cliente: el modelo mantiene el registro formal de forma consistente, lo que encaja en interacciones con usuarios coreanos donde la cortesía es un requisito; su ventana de 8192 tokens permite hilos multi-turno moderados, aunque el entrenamiento a 768 tokens limita la fiabilidad en contextos muy largos.
+- Despliegue en hardware de consumo o edge: con GGUF Q4_K_M (~1,35 GB) y ~3 GB de memoria, puede ejecutarse en portátiles con GPU de 6-8 GB o incluso en CPU mediante llama.cpp, lo que lo hace viable para prototipos locales y aplicaciones de escritorio.
+- Generación de documentación y textos estructurados en coreano: su entrenamiento para emitir Markdown con encabezados y listas lo hace adecuado para borradores de artículos, README o guías, siempre limitando `max_tokens` a ~600 para mitigar la repetición documentada.
+- Traducción asistida coreano-inglés en entornos no comerciales: el soporte bilingüe permite usarlo como borrador de traducción en proyectos personales o de investigación, con revisión humana obligatoria por el riesgo de alucinación de un modelo de 2,3B.
+- Chatbot educativo o de práctica de idiomas: la persona por defecto y el registro formal lo hacen útil para simular conversaciones en coreano en contextos de aprendizaje, ejecutándose localmente sin depender de APIs.
+- Asistente de código ligero en coreano: puede generar fragmentos de código y explicaciones en coreano para tareas sencillas, integrable en editores o scripts vía transformers o llama.cpp, aunque sin tool calling nativo.
+- Prototipado e investigación en PLN coreano: sirve como base de experimentación para estudiar comportamiento conversacional en modelos pequeños, teniendo en cuenta que la licencia ND prohíbe distribuir modelos derivados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de MMLU, HumanEval, GSM8K, KLUE ni de ninguna otra evaluación estándar, ni comparaciones con modelos de referencia.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las siguientes cifras son estimaciones derivadas del recuento de parámetros (2.305.517.312) y no proceden de datos publicados por el autor:
-
-- VRAM estimada para los pesos en precisión completa (FP32): aproximadamente 9,2 GB.
-- VRAM estimada en FP16/BF16: aproximadamente 4,6 GB para los pesos, más overhead de activaciones y caché KV.
-- VRAM estimada en cuantización INT8: aproximadamente 2,3 GB.
-- VRAM estimada en cuantización INT4: aproximadamente 1,2 GB (requiere conversión propia, ya que no se ofrecen variantes cuantizadas en el repositorio).
-- Cabe en GPU de consumo: sí, en tarjetas con al menos 8-12 GB de VRAM en FP16, como RTX 3060 12 GB, RTX 4070, RTX 4080 o RTX 4090. En cuantización INT4 podría ejecutarse incluso en GPUs de 6-8 GB.
-- GPU de centro de datos recomendadas: A100, H100 o L40S para despliegues con alta concurrencia, aunque son sobredimensionadas para un modelo de este tamaño.
-- Opciones de despliegue: transformers (soporte oficial declarado), text-generation-inference (etiqueta del repositorio) y, previa conversión, vLLM, llama.cpp u Ollama. No se proporcionan pesos GGUF en el repositorio, por lo que Ollama y llama.cpp requerirían una conversión manual.
-- Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM/RAM estimada: ~3 GB mínimo con GGUF Q4_K_M según el autor; ~4,6 GB para safetensors en bf16; ~9,2 GB de espacio en disco para el repositorio completo.
+- GPU recomendadas: el autor indica GPU de 6 GB o más como recomendación y confirma funcionamiento holgado en 8 GB. No se especifican modelos concretos (A100, H100, RTX 4090); para un modelo de 2,3B, cualquier GPU consumer con 6-8 GB (por ejemplo, RTX 3060, RTX 4060) debería ser suficiente en cuantización Q4.
+- Cabe en GPU consumer: sí, en tarjetas de 6-8 GB con cuantización; también es viable la inferencia en CPU.
+- Opciones de despliegue: `transformers` + `torch` (safetensors), `llama.cpp` con build reciente (GGUF), text-generation-inference (declarado compatible) y endpoints compatibles.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Parámetros de muestreo obligatorios: `temperature=0.7`, `top_p=0.9`, `repeat_penalty >= 1.1`, `repeat_last_n >= 256`.
 
 ## Comparativa con modelos similares
 
-La comparación se establece con modelos abiertos de tamaño comparable en la franja de 2-3 mil millones de parámetros. Los datos de las alternativas corresponden a sus especificaciones públicas; los de Gureum 1.0 neo, salvo el recuento de parámetros y la licencia, no están publicados.
-
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Datos de rendimiento |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gureum 1.0 neo | ~2,3 B | no disponible | ko, en | MIT | no publicados |
-| Llama 3.2 3B | ~3 B | 128k (según su model card) | multilingüe | Llama 3.2 Community License | publicados por Meta |
-| Qwen2.5 3B | ~3 B | 32k (según su model card) | multilingüe | Apache 2.0 / Qwen | publicados por Alibaba |
-| Gemma 2 2B | ~2 B | 8k (según su model card) | multilingüe | Gemma Terms of Use | publicados por Google |
+| Gureum 1.0 neo | ~2,3B | 8192 (entrenado a 768) | ko, en | CC BY-NC-ND 4.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | multilingüe (incl. ko) | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B Instruct | ~3,2B | 128.000 | multilingüe (incl. ko) | Llama 3.2 Community License | Hugging Face |
+| Gemma 2 2B IT | ~2,6B | 8192 | multilingüe | Gemma Terms of Use | Hugging Face |
 
-Consideraciones: frente a estas alternativas, Gureum 1.0 neo destaca por su licencia MIT, más permisiva que las licencias comunitarias de Llama y Gemma, y por su especialización en coreano. En cambio, carece de documentación pública sobre contexto y rendimiento, y no ofrece variantes cuantizadas oficiales, lo que dificulta una comparación objetiva.
+La comparativa se ofrece a título orientativo por categoría de tamaño; no se dispone de datos de rendimiento de Gureum que permitan una comparación cuantitativa con estas alternativas. Frente a ellas, Gureum destaca por su especialización en coreano y su licencia restrictiva (no comercial, sin derivados), mientras que las alternativas citadas ofrecen contextos mayores y licencias más permisivas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no es posible verificar su calidad en tareas de razonamiento, código o matemáticas frente a alternativas de tamaño similar.
-- Longitud de contexto desconocida: no se documenta la ventana máxima, lo que impide planificar despliegues con entradas largas o conversaciones multi-turno extensas.
-- Riesgo de alucinación: como cualquier modelo de lenguaje de este tamaño, puede generar información incorrecta o inventada, especialmente en dominios especializados.
-- Sesgos: no se publica información sobre la composición del dataset de entrenamiento ni sobre procesos de mitigación de sesgos, por lo que se desconocen sus sesgos potenciales.
-- Especialización en coreano: aunque soporta inglés, su entrenamiento está claramente orientado al coreano, por lo que su rendimiento en otros idiomas, incluido el español, no está documentado y probablemente sea limitado.
-- Sin soporte documentado de tool calling ni agentes: no se indica compatibilidad con function calling ni razonamiento multi-paso, lo que limita su uso en pipelines agénticos.
-- Sin variantes cuantizadas oficiales: no se ofrecen pesos GGUF, AWQ o GPTQ, lo que obliga a realizar conversiones propias para despliegues ligeros.
-- Licencia: MIT permite uso comercial, modificación y redistribución sin restricciones, pero conviene conservar el aviso de copyright incluido en el archivo `LICENSE` del repositorio.
-- Madurez del proyecto: el repositorio registra 0 descargas y 1 like en el momento de la consulta, con fechas de creación y actualización de octubre de 2026, lo que sugiere un proyecto muy reciente y con poca validación por parte de la comunidad.
+- Licencia CC BY-NC-ND 4.0: prohíbe el uso comercial y la distribución de obras derivadas (incluidos modelos ajustados), y exige atribución. No es apta para productos comerciales sin licencia adicional del autor.
+- Repetición en generación larga: el autor documenta que por encima de ~700 tokens puede repetir frases parafraseadas; recomienda `repeat_penalty` de 1.15-1.2 o limitar `max_tokens` a 600 o menos.
+- Sin `repeat_penalty` adecuado, el modelo puede no detener la generación y emitir tokens repetidos o corruptos; los valores de muestreo indicados son obligatorios en la práctica.
+- Discrepancia contexto entrenamiento/ventana: entrenado a 768 tokens pero declara 8192 de contexto; el rendimiento más allá de ~768-1000 tokens no está garantizado.
+- Cobertura lingüística limitada a coreano e inglés; no se documenta soporte de español ni de otros idiomas.
+- Modelo pequeño (2,3B): riesgo elevado de alucinación y de errores en matemáticas o código complejo; requiere verificación humana en usos sensibles.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas.
+- Sesgos: no se documentan evaluaciones de sesgo; al estar entrenado principalmente en coreano, puede reflejar sesgos culturales y lingüísticos de ese corpus.
+- Adopción muy baja (550 descargas, 2 likes) y autor de perfil poco conocido: menor garantía de mantenimiento y soporte comunitario.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Team-CorerepubliX/Gureum_1.0_neo
-- Perfil del autor en Hugging Face: https://huggingface.co/Team-CorerepubliX
-
-Nota: la búsqueda web realizada no devolvió enlaces relevantes sobre el modelo, el equipo autor ni documentación técnica asociada; los resultados obtenidos correspondían a páginas no relacionadas con este proyecto. No se dispone, por tanto, de enlaces a papers, blogs técnicos, repositorios de código o demos adicionales.
+- Organización en Hugging Face: https://huggingface.co/Team-CorerepubliX
+- Licencia CC BY-NC-ND 4.0: https://creativecommons.org/licenses/by-nc-nd/4.0/
+- No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

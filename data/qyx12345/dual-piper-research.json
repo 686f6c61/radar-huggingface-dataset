@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "qyx12345/Dual-PiPER-Research",
+  "slug": "qyx12345-dual-piper-research",
+  "author": "qyx12345",
+  "url": "https://huggingface.co/qyx12345/Dual-PiPER-Research",
+  "created_at": "2026-10-22T09:21:34.000Z",
+  "updated_at": "2026-11-22T06:13:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204296961,
+  "storage_human": "204 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Are Crypto Whales and How Can You Spot Them? - Binance",
+      "url": "https://www.binance.com/en/academy/articles/what-are-crypto-whales-and-how-can-you-spot-them",
+      "snippet": "Jun 25, 2026 · Crypto whales are individuals or entities that hold large amounts of cryptocurrency. They may have built their …"
+    },
+    {
+      "title": "What are crypto whales and how to track them? | MoonPay",
+      "url": "https://www.moonpay.com/learn/cryptocurrency/crypto-whales",
+      "snippet": "Apr 18, 2025 · A crypto whale is an individual or entity that holds a large enough amount of cryptocurrency to significantly influence …"
+    },
+    {
+      "title": "What Are Crypto Whales and How to Identify Them? | Gate Wiki",
+      "url": "https://www.gate.com/crypto-wiki/article/what-are-crypto-whales-and-how-to-identify-them-20260104",
+      "snippet": "Jan 3, 2026 · A Crypto Whale is an individual or entity holding substantial cryptocurrency amounts, typically 1,000 Bitcoin or more, …"
+    }
+  ]
+}

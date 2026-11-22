@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 555,
+  "downloads_30d": 557,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -45,32 +45,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "vertox-ai (VertoX) - Hugging Face",
-      "url": "https://huggingface.co/vertox-ai",
-      "snippet": "Low-latency real-time speech translation with voice and tone preservation."
+      "task": "Forced alignment",
+      "dataset": "five-row-first-word-manual-gold",
+      "metric": "MFA first-word-end MAE in seconds",
+      "value": 0.0162
     },
     {
-      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
-      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
-      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+      "task": "Forced alignment",
+      "dataset": "five-row-first-word-manual-gold",
+      "metric": "WhisperX first-word-end MAE in seconds",
+      "value": 0.0154
     },
     {
-      "title": "Model Garden on Gemini Enterprise Agent Platform",
-      "url": "https://cloud.google.com/model-garden",
-      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
-    },
-    {
-      "title": "Gemini Enterprise Agent Platform (formerly Vertex AI)",
-      "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform",
-      "snippet": "Gemini Enterprise Agent Platform (formerly Vertex AI) is a comprehensive platform for developers to build, scale, govern and optimize agents."
-    },
-    {
-      "title": "All Vertex AI code samples | Google Cloud Documentation",
-      "url": "https://docs.cloud.google.com/vertex-ai/docs/samples",
-      "snippet": "All Vertex AI code samples This page contains code samples for Vertex AI. To search and filter code samples for other Google Cloud products, see the Google Cloud sample browser."
+      "task": "Forced alignment",
+      "dataset": "five-row-first-word-manual-gold",
+      "metric": "NeMo first-word-end MAE in seconds",
+      "value": 0.221
     }
-  ]
+  ],
+  "sources": []
 }

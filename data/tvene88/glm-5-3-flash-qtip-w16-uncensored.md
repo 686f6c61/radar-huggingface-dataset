@@ -2,103 +2,106 @@
 
 ## Resumen
 
-GLM-5.3-Flash-QTIP-W16-Uncensored es un artefacto de inferencia derivado de GLM-5.3-Flash, un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado originalmente por Zhipu AI (zai-org). El modelo base cuenta con 320 000 millones de parametros, 42 capas MoE enrutadas mas una capa MTP (Multi-Token Prediction) de borrador, y 288 expertos enrutados por capa, de los cuales 8 se activan por token. Esta version concreta, publicada por el usuario Tvene88, no es un checkpoint de transformers ni un GGUF: es un archivo en formato propietario basado en codificacion trellis (QTIP "HYB", regla A) a 2,0112 bits por peso, con poda de expertos y un runtime propio.
+GLM-5.3-Flash-QTIP-W16-Uncensored es un artefacto de inferencia publicado por Tvene88 que empaqueta una variante sin rechazos ("uncensored") del modelo Mixture-of-Experts GLM-5.3-Flash de Zhipu AI (zai-org) en un formato de compresión propietario denominado APEX-FOLD, basado en el códec de trellis QTIP. El modelo subyacente es un MoE de aproximadamente 320.000 millones de parámetros totales, del que se han eliminado 1.922 de los 12.096 expertos enrutados del tronco (un 15,89 %) y cuyos pesos se codifican a 2,0112 bits por peso mediante un trellis de 65.536 estados con rotación de incoherencia y redondeo consciente de Hessiano (LDLQ/GPTQ). El resultado se sirve desde una única GPU de consumo (RTX 5090, 32 GiB) manteniendo la mayor parte de los expertos en RAM del sistema y transmitiéndolos por PCIe.
 
-El objetivo declarado del autor es ejecutar un modelo de 320B en una unica GPU de consumo (RTX 5090 de 32 GiB) con 128 GB de RAM, manteniendo la columna vertebral y un pool de expertos "calientes" en VRAM, paginando los archivos de expertos en RAM del sistema y copiando a la GPU bajo demanda los expertos que cada token necesita. Frente a la cuantizacion GGUF de 2 bits mas descargada del mismo modelo base (`unsloth/GLM-5.3-Flash-GGUF`, variante `UD-IQ2_XXS`, 101,8 GB), el autor reporta entre 1,7 y 1,8 veces mas velocidad de decodificacion y un tamano de expertos de aproximadamente dos tercios, con puntuaciones estadisticamente equivalentes en HumanEval y GSM8K.
+La propuesta técnica no es tanto el modelo como el método de ejecución: los expertos enrutados se almacenan como registros de tamaño fijo (6.326.528 bytes cada uno) en orden de popularidad, con las filas más usadas fijadas en memoria del host (unos 60 GiB) para DMA directo, un pool de VRAM de 14-18 GiB gestionado por streaming bajo demanda y desalojo GDSF, y kernels CUDA que decodifican el trellis dentro del producto matriz-vector sin materializar nunca una copia en 16 bits. El router se reentrena por destilación contra el modelo FP8 original tras el podado.
 
-La relevancia actual del artefacto es doble: por un lado, explora tecnicas agresivas de compresion (codificacion trellis, poda de expertos, destilacion solo del router) para llevar modelos MoE de gran escala a hardware de consumo; por otro, hereda el comportamiento "sin rechazos" de los pesos de `dealignai`, lo que condiciona su uso en produccion. El formato es cerrado y solo lo lee el runtime del autor en Windows, lo que limita seriamente su portabilidad.
+Es relevante ahora porque demuestra que un MoE de 320B puede ejecutarse en hardware de consumo con velocidades de decodificación de 20,90-23,82 tok/s (frente a 12,26-12,94 tok/s de la build GGUF de 2 bits más descargada) y con puntuaciones estadísticamente equivalentes en HumanEval y GSM8K. La contrapartida es que hereda el comportamiento de los pesos "abliterated" de dealignai, lo que elimina las capas de rechazo del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con 42 capas enrutadas mas 1 capa MTP (borrador); 288 expertos enrutados por capa, 8 activos por token |
-| Parametros totales | 320B (modelo base GLM-5.3-Flash) |
-| Parametros activos | 8 de 288 expertos por capa (numero total de parametros activos no disponible) |
+| Arquitectura | Mixture-of-Experts (MoE) transformer, basada en GLM-5.3-Flash; runtime APEX-FOLD con codec trellis QTIP |
+| Parametros totales | ~320.000 millones (320B, segun la model card) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Codificacion trellis QTIP "HYB" regla A a 2,0112 bits por peso (6 326 528 bytes por experto); backbone en FP8 "slim"; router en bf16 |
+| Tipos de cuantizacion | Trellis QTIP HYB a 2,0112 bits por peso (65.536 estados, tiles 16x16); pesos del tronco en FP8 heredados del modelo base; router en 0,1 GB |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | Formato propietario del runtime `glm53-flash-qtip-r39` (no GGUF, no safetensors de transformers); 43 archivos de expertos (66,19 GB), `merged_routers_bf16.pt` (0,1 GB) y directorio backbone FP8 (10,29 GB) |
+| Formato de pesos | safetensors (libreria `trellis`); archivos de expertos 66,2 GB + tronco 10,29 GB + router 0,1 GB = 76,6 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos con 320B parametros: 42 capas MoE enrutadas mas una capa MTP de borrador, 288 expertos enrutados por capa y 8 expertos activados por token. Esta ficha no dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base original uso RLHF, DPO u otras tecnicas de alineamiento; esos datos deben consultarse en la model card de `zai-org/GLM-5.3-Flash`.
+La arquitectura subyacente es un transformer con mezcla de expertos (MoE) de la familia GLM-5.3-Flash, con 12.096 expertos enrutados en el tronco y una capa MTP (multi-token prediction) que, segun la model card, nunca se poda. Sobre ese modelo, el autor aplica un pipeline de compresión en cuatro etapas: (1) rotación aleatoria con semilla por fila de experto (signos Rademacher y transformada de Kronecker-Hadamard) seguida de codificación a 2,0112 bpw con un trellis de 65.536 estados y pares de valores en tiles de 16x16, con la ruta del trellis elegida mediante Hessianos de calibración y descomposición en bloques LDLQ; (2) podado no uniforme por capa con máscara "W16" que elimina 1.922 de los 12.096 expertos del tronco; (3) reparación del router mediante destilación contra el modelo FP8, reentrenando únicamente las matrices de compuerta completas (0,1 GB) en lugar de ajustar los expertos; y (4) un runtime de ejecución en capas de memoria que fija en RAM del host las filas de expertos más usadas para DMA directo y mantiene un pool de VRAM de 14-18 GiB con prefetch y desalojo GDSF.
 
-La innovacion tecnica de este artefacto es la compresion: los expertos enrutados de las 43 capas se codifican con un codec trellis QTIP ("HYB", regla A) a 2,0112 bits por peso, con 1 922 de los 12 096 expertos del tronco eliminados (15,89 %, mascara "W16", entre 27 y 54 por capa; la capa MTP conserva los 288). El router se sometio a 16 pasos de destilacion solo del router. El backbone (atencion, expertos compartidos, routers, embeddings, cabeza de salida y tokenizer) se guarda como directorio FP8 "slim" de 10,29 GB; los tensores de la torre de vision del checkpoint fuente no estan incluidos. El runtime mantiene el backbone y un pool de expertos calientes en VRAM, bloquea en memoria paginada los archivos de expertos en RAM del sistema y copia a la GPU los expertos necesarios por token.
+El entrenamiento original del modelo base (composición del dataset, número de tokens, uso de RLHF/DPO) no se detalla en la información disponible. La innovación técnica destacable es el formato de registro byte-locked de tamaño fijo por experto, que permite fetch, cache y eviction con una única copia contigua, junto con kernels CUDA que decodifican el código trellis dentro del producto matriz-vector leyendo directamente de los slots del pool. El autor documenta que cada cambio de velocidad (port a runtime de producción, kernel v2, cambios de tráfico de copia) se aceptó solo tras reproducir los logits de referencia bit a bit (384 de 384). El proyecto se apoya en QTIP (Tseng et al., 2024) para el trellis y el código HYB, en QuIP# para la rotación de incoherencia, en LDLQ/GPTQ para el redondeo, en la construcción hash de ExLlamaV3 y en GDSF para la política de desalojo.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: el modelo base GLM-5.3-Flash es un modelo de lenguaje de proposito general; el autor evalua con HumanEval (codigo) y GSM8K (matematicas), donde obtiene resultados competitivos.
-- Generacion de codigo: 156 de 164 problemas resueltos en HumanEval con el router incluido (95,1 %).
-- Razonamiento matematico: 240 de 250 en una muestra fija de GSM8K (96,0 %).
-- Modo de pensamiento (thinking): el modelo base dispone de bloque de pensamiento; las evaluaciones del autor se realizaron con "thinking off" y esfuerzo de razonamiento bajo.
-- Capacidades multilingues: no disponible en la informacion proporcionada; el runtime del autor restringe la cabeza de salida a tokens de escritura latina, griego, matematicas, simbolos y emojis (111 189 de 154 880 filas), lo que limita la generacion a esos rangos.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Vision: el checkpoint fuente dispone de torre de vision, pero este artefacto no incluye sus tensores, por lo que la capacidad visual no esta disponible en esta version.
-- Comportamiento "sin rechazos": hereda los pesos de `dealignai/GLM-5.3-Flash-UNCENSORED-FP8`, con los rechazos eliminados respecto al modelo original.
+- Generación de texto y razonamiento de propósito general, heredados de GLM-5.3-Flash.
+- Generación de código: evaluado en HumanEval con 156 aciertos de 164 en la configuración de referencia (thinking off, greedy).
+- Razonamiento matemático: evaluado en GSM8K con 240 aciertos de 250 en la misma configuración.
+- Modo de razonamiento configurable: la model card menciona "thinking off" y "reasoning effort low" como parámetros de decodificación, lo que implica soporte de modo thinking y de esfuerzo de razonamiento ajustable.
+- Capacidad multilingüe: no disponible en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Variante sin rechazos ("uncensored"/"abliterated"): los pesos derivan de dealignai/GLM-5.3-Flash-UNCENSORED-FP8, con las capas de rechazo eliminadas.
+- Inferencia en una sola GPU de consumo mediante streaming de expertos por PCIe.
 
 ## Casos de uso
 
-- Inferencia local de un MoE de 320B en hardware de consumo: el caso de uso central del artefacto es ejecutar GLM-5.3-Flash en una unica RTX 5090 con 128 GB de RAM mediante el runtime del autor, con decodificacion de 20,90 a 23,82 tokens por segundo en las pruebas publicadas. Es adecuado para experimentacion e investigacion en compresion extrema de modelos, no para despliegues estandar.
-- Evaluacion de tecnicas de cuantizacion: sirve como referencia practica para comparar codificacion trellis QTIP a 2,0112 bits por peso frente a cuantizaciones GGUF de 2 bits, con metricas publicadas de calidad y velocidad.
-- Investigacion sobre poda de expertos en MoE: el artefacto documenta la eliminacion del 15,89 % de los expertos del tronco y su impacto medido en HumanEval y GSM8K, util para estudiar la redundancia de expertos en modelos de gran escala.
-- Generacion de codigo en local sin conexion: con 95,1 % en HumanEval y un runtime que no requiere servicios en la nube, puede emplearse en entornos aislados para asistencia de programacion, siempre que se acepten las limitaciones de formato y plataforma.
-- Destilacion y ajuste del router: el archivo `merged_routers_bf16.pt` y el procedimiento de destilacion solo del router documentado por el autor permiten experimentar con el enrutamiento sin tocar los pesos de los expertos.
-- Estudio de modelos sin alineamiento de rechazo: para investigadores que analicen el comportamiento de modelos con los rechazos eliminados, este artefacto ofrece una via de ejecucion local, con las advertencias de seguridad que implica.
-- Reproduccion de benchmarks en hardware de consumo: el autor publica el arnes de evaluacion y los registros en su repositorio de GitHub, lo que permite reproducir las comparaciones frente a `UD-IQ2_XXS` en una sola GPU.
+- Estación de trabajo de un solo GPU para investigación en MoE: permite estudiar y hacer experimentos con un modelo de 320B en una RTX 5090, algo inviable con pesos en 16 bits, manteniendo los expertos comprimidos en VRAM y RAM del host.
+- Evaluación de técnicas de compresión extrema: el artefacto sirve como referencia reproducible para comparar trellis QTIP frente a GGUF de 2 bits en tareas de código y matemáticas, con las mismas condiciones de decodificación (greedy, thinking off, 1.024 tokens nuevos).
+- Generación de código asistida en local: con 156/164 en HumanEval y tool calling no documentado, es adecuado para autocompletado y generación de funciones en un entorno de desarrollo sin dependencia de la nube, a 20,90 tok/s de decodificación.
+- Razonamiento matemático por lotes pequeños: con 240/250 en GSM8K, puede emplearse en pipelines de resolución de problemas aritméticos donde el throughput no sea crítico (una petición simultánea en la configuración medida).
+- Investigación sobre alineación y seguridad: al ser una variante sin rechazos, permite estudiar el comportamiento de un MoE de gran tamaño sin capas de rechazo, con las advertencias éticas y legales correspondientes.
+- Despliegue en hardware con presupuesto de VRAM limitado: el formato de registro fijo y el pool con desalojo GDSF facilitan servir el modelo en configuraciones de 14-18 GiB de VRAM más RAM del sistema, útil para prototipos en estaciones con una sola tarjeta.
+- Benchmarking de infraestructura PCIe: la arquitectura de streaming permite medir el impacto del ancho de banda host-GPU en la decodificación de MoE, con cifras de referencia publicadas (20,90/23,82 tok/s frente a 12,26/12,94 tok/s).
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor, en una RTX 5090 (32 GiB), 128 GB de RAM, Windows 11, una peticion a la vez, decodificacion greedy, thinking off, esfuerzo de razonamiento bajo y como maximo 1 024 tokens nuevos. Intervalos de confianza de Wilson al 95 % entre parentesis.
-
-| Metrica | Este repositorio (archivo + router) | Archivo sin router | Unsloth `UD-IQ2_XXS` |
+| Benchmark | Este modelo | unsloth/GLM-5.3-Flash-GGUF (UD-IQ2_XXS) | Diferencia |
 |---|---|---|---|
-| HumanEval, 164 problemas | 156 = 95,1 % (90,7-97,5) | 154 = 93,9 % (89,1-96,7) | 158 = 96,3 % (92,2-98,3) |
-| GSM8K, muestra fija de 250 | 240 = 96,0 % (92,8-97,8) | 241 = 96,4 % (93,3-98,1) | 239 = 95,6 % (92,3-97,5) |
-| Decodificacion tok/s, HumanEval / GSM8K | 20,90 / 23,82 | 20,97 / 23,81 | 12,26 / 12,94 |
-| Tok/s incluyendo el prompt, HumanEval / GSM8K | 15,72 / 11,23 | 15,81 / 11,13 | 7,84 / 5,92 |
-| Tamano | 76,6 GB (66,2 GB de expertos) | no disponible | 101,8 GB |
+| HumanEval (aciertos) | 156 de 164 | 158 de 164 | -2 (McNemar p = 0,69) |
+| GSM8K muestra (aciertos) | 240 de 250 | 239 de 250 | +1 (p = 1,0) |
+| Decodificación HumanEval (tok/s) | 20,90 | 12,26 | 1,7x |
+| Decodificación GSM8K (tok/s) | 23,82 | 12,94 | 1,8x |
+| Incluyendo prompt, HumanEval (tok/s) | 15,72 | 7,84 | 2,0x |
+| Incluyendo prompt, GSM8K (tok/s) | 11,23 | 5,92 | 1,9x |
+| Tamaño de archivos de expertos | 66,2 GB | 101,8 GB | 65 % |
+| Tamaño total servido | 76,6 GB | no disponible | 75 % del comparado |
 
-Las diferencias pareadas con el router frente a Unsloth no son significativas: en HumanEval, 2 problemas solo acertados por este artefacto frente a 4 solo por Unsloth (p = 0,69); en GSM8K, 7 frente a 6 (p = 1,0). Con router frente a sin router: 3 frente a 1 y 1 frente a 2 (p = 0,63 y p = 1,0). El autor indica que no hubo respuestas truncadas. Con un pool de servido mayor (17 GiB mas tres flags de trafico de copia, sin router), la decodificacion alcanzo 23,19 / 25,74 tok/s en los primeros 40 elementos de cada tarea, aproximadamente 1,9 a 2,0 veces las tasas del conjunto completo de la comparacion, aunque esa ejecucion cubre solo 40 + 40 elementos. El runtime sirvio con un pool de expertos de 14 GiB; el prompt de llama.cpp es un token mas corto en cada elemento (deja abierto el bloque de pensamiento y el modelo lo cierra con su primer token), aceptado como equivalente. El autor anuncia que anadira un benchmark del archivo anteriormente publicado (TCQ33P5).
+Condiciones declaradas: decodificación greedy, thinking off, reasoning effort low, máximo 1.024 tokens nuevos, una petición simultánea. Con un pool de servicio mayor (17 GiB más tres flags de tráfico de copia, sin router) la decodificación alcanzó 23,19/25,74 tok/s, pero solo sobre los primeros 40 elementos de cada tarea (40 + 40), no sobre el conjunto completo. No se han publicado resultados de MMLU ni de otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- RAM del sistema: 128 GB, con aproximadamente 60 GiB bloqueados en memoria paginada (59,95 GiB medidos).
-- GPU: una RTX 5090 o clase equivalente con 32 GiB de VRAM.
-- Sistema operativo: Windows (el runtime es especifico de Windows).
-- VRAM estimada en inferencia: el backbone FP8 ocupa 10,29 GB, el router 0,1 GB y el pool de expertos calientes se configura a 14 GiB (o 17-18 GiB en las pruebas de velocidad); el resto de expertos reside en RAM del sistema y se copia bajo demanda.
-- Cabe en GPU de consumo: si, en una RTX 5090 de 32 GiB, con el resto del modelo paginado en RAM. No cabe integramente en VRAM.
-- Opciones de despliegue: exclusivamente el runtime propio `https://github.com/Tvene88/glm53-flash-qtip-r39`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, porque el formato no es GGUF ni un checkpoint de transformers.
-- Latencia y throughput: decodificacion de 20,90 a 23,82 tok/s en HumanEval y GSM8K con pool de 14 GiB; 23,19 a 25,74 tok/s con pool de 17 GiB en los primeros 40 elementos de cada tarea; incluyendo el prompt, 15,72 / 11,23 tok/s.
+- VRAM estimada: pool de expertos de 14-18 GiB más el tronco (10,29 GB) y el router (0,1 GB); la configuración medida usó 14 GiB de pool y la de mayor rendimiento 17 GiB.
+- RAM del host: unos 60 GiB de filas de expertos fijadas (page-locked) para DMA directo, además del resto de expertos en memoria del sistema.
+- GPU recomendadas: RTX 5090 (32 GiB), que es la tarjeta usada en las mediciones; no se documentan pruebas en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: sí, en RTX 5090; en tarjetas con menos VRAM el pool de 14 GiB sería el límite práctico, no documentado.
+- Opciones de despliegue: runtime propio del proyecto basado en la librería `trellis` con kernels CUDA; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 20,90/23,82 tok/s de decodificación y 15,72/11,23 tok/s incluyendo prompt (HumanEval/GSM8K) en la configuración de referencia; hasta 23,19/25,74 tok/s con pool de 17 GiB en la medición parcial de 40 elementos.
+- Almacenamiento: 76,6 GB para el conjunto servido completo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Tamano | HumanEval | GSM8K | Licencia | Despliegue |
-|---|---|---|---|---|---|---|---|---|
-| Este artefacto (GLM-5.3-Flash QTIP W16) | 320B (MoE, 8 de 288 activos) | no disponible | Propietario QTIP trellis | 76,6 GB | 95,1 % | 96,0 % | MIT | Runtime propio, Windows, RTX 5090 |
-| `unsloth/GLM-5.3-Flash-GGUF` (`UD-IQ2_XXS`) | 320B (MoE, todos los expertos) | no disponible | GGUF | 101,8 GB | 96,3 % | 95,6 % | MIT (segun modelo base) | llama.cpp, 27 GiB en GPU y resto en RAM |
-| `dealignai/GLM-5.3-Flash-UNCENSORED-FP8` | 320B (MoE) | no disponible | FP8 | no disponible | no disponible | no disponible | MIT | Checkpoint FP8, requiere hardware de mayor capacidad |
-| `zai-org/GLM-5.3-Flash` | 320B (MoE) | no disponible | no disponible | no disponible | no disponible | no disponible | MIT | Modelo base original |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Tvene88/GLM-5.3-Flash-QTIP-W16-Uncensored | ~320B (MoE) | no disponible | Trellis QTIP 2,0112 bpw | MIT | Hugging Face, 565 descargas |
+| unsloth/GLM-5.3-Flash-GGUF (UD-IQ2_XXS) | ~320B (MoE) | no disponible | GGUF IQ2_XXS, 101,8 GB | no disponible | Hugging Face |
+| dealignai/GLM-5.3-Flash-UNCENSORED-FP8 | ~320B (MoE) | no disponible | FP8 | MIT | Hugging Face |
+| zai-org/GLM-5.3-Flash | ~320B (MoE) | no disponible | pesos originales | MIT | Hugging Face |
+
+La comparación directa disponible es con la build GGUF de 2 bits de unsloth: este artefacto ocupa un 65 % del tamaño en expertos, decodifica entre 1,7 y 1,8 veces más rápido y obtiene puntuaciones equivalentes en HumanEval y GSM8K. Frente a las variantes FP8 y original, la diferencia principal es el tamaño y el requisito de memoria, no documentados en detalle para esas builds en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Formato cerrado y no portable: los pesos no son GGUF ni un checkpoint de transformers y solo los lee el runtime del autor, disponible unicamente para Windows con una RTX 5090 y 128 GB de RAM. No hay soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Requisitos de hardware estrictos: 128 GB de RAM con unos 60 GiB paginados, una GPU de 32 GiB y Windows 11. El modelo no cabe integramente en VRAM.
-- Perdida de calidad por compresion: se eliminan 1 922 de 12 096 expertos del tronco (15,89 %) y se codifica a 2,0112 bits por peso; aunque las diferencias en HumanEval y GSM8K no son significativas en las pruebas del autor, la evaluacion se limita a dos tareas, con thinking off, esfuerzo de razonamiento bajo y como maximo 1 024 tokens nuevos.
-- Cabeza de salida restringida: el runtime del autor limita la generacion a 111 189 de 154 880 filas (escritura latina, griego, matematicas, simbolos y emojis), lo que excluye idiomas con otros alfabetos y puede degradar tareas multilingues.
-- Sin vision: el checkpoint fuente incluye torre de vision, pero este artefacto no contiene sus tensores.
-- Pesos "sin rechazos": hereda el comportamiento de `dealignai/GLM-5.3-Flash-UNCENSORED-FP8`, con los rechazos eliminados; no es adecuado para aplicaciones orientadas al publico sin filtros adicionales y requiere revision de seguridad antes de cualquier uso en produccion.
-- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad ni de sesgos para este artefacto; se aplican los riesgos habituales de los modelos de lenguaje, agravados por la compresion extrema.
-- Licencia MIT: permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento de los pesos modificados ni sobre el runtime.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el autor anuncia benchmarks pendientes de publicar; la validacion externa es practicamente inexistente.
-- Idiomas soportados: no disponibles en la informacion proporcionada.
+- El modelo hereda el comportamiento de los pesos "abliterated" de dealignai: las capas de rechazo están eliminadas, por lo que puede producir contenido que el modelo original rechazaría. No es apto para despliegues públicos sin filtros adicionales.
+- El podado elimina 1.922 de 12.096 expertos (15,89 %), lo que puede degradar capacidades en dominios poco representados en la calibración; solo se validaron HumanEval y GSM8K.
+- La licencia MIT se aplica al artefacto, pero el uso comercial debe verificar también las condiciones de los modelos base (zai-org y dealignai), ambos declarados MIT en la model card.
+- Riesgo de alucinación: no cuantificado en la información disponible; los benchmarks publicados son de código y matemáticas, no de factualidad.
+- Longitud de contexto e idiomas soportados no documentados: no se puede garantizar un rendimiento adecuado en contextos largos ni en castellano.
+- El runtime es específico del proyecto (librería `trellis`), sin soporte documentado en vLLM, llama.cpp, Ollama o TGI, lo que limita la integración en infraestructura existente.
+- Las mediciones de velocidad se hicieron con una sola petición simultánea; el throughput agregado en producción no está documentado.
+- La cifra de 23,19/25,74 tok/s procede de solo 40 elementos por tarea, no del conjunto completo, y no es directamente comparable con las cifras principales.
+- Requiere unos 60 GiB de RAM del host con paginación fijada, además de la VRAM, lo que exige una estación de trabajo con memoria suficiente.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Tvene88/GLM-5.3-Flash-QTIP-W16-Uncensored
-- Runtime del autor: https://github.com/Tvene88/glm53-flash-qtip-r39
+- Modelo en Hugging Face: https://huggingface.co/Tvene88/GLM-5.3-Flash-QTIP-W16-Uncensored
 - Modelo base sin rechazos: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Comparacion GGUF: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
+- Build GGUF de comparación: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
+- Paper QTIP: https://arxiv.org/abs/2406.11235
+- Repositorio del proyecto (documentación en `docs/WORK_RECORD.md` y whitepaper): no disponible como URL en la información proporcionada.

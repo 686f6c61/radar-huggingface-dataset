@@ -5,7 +5,7 @@
   "author": "altslate",
   "url": "https://huggingface.co/altslate/indic-chat-xlit-small",
   "created_at": "2026-11-20T18:41:41.000Z",
-  "updated_at": "2026-11-21T02:39:14.000Z",
+  "updated_at": "2026-11-21T14:24:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -59,7 +59,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 299637760,
   "parameters_human": "299.6M",

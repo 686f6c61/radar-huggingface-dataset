@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 562,
+  "downloads_30d": 559,
   "trending_score": 0,
   "parameters": 124475904,
   "parameters_human": "124.5M",
@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Facebook - Connexion ou inscription",
-      "url": "https://fr-fr.facebook.com/",
-      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
-    },
-    {
-      "title": "Facebook",
-      "url": "https://www.facebook.com/",
-      "snippet": "Connect and share with friends, family, and the world on Facebook."
-    },
-    {
-      "title": "Facebook",
-      "url": "https://www.facebook.com/r.php/",
-      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
-    },
-    {
-      "title": "Log Into Facebook",
-      "url": "https://secure.facebook.com/login/",
-      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
-    },
-    {
-      "title": "Facebook",
-      "url": "https://l.facebook.com/facebook/",
-      "snippet": "1 day ago · Just hit post on that summer photo dump, friend. It doesn't have to be perfect 😎☀️ There's a new way to enhance your …"
-    }
-  ]
+  "sources": []
 }

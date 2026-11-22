@@ -1,0 +1,106 @@
+{
+  "schema": 2,
+  "id": "volantis-labs/volantis-db-clean71-arctic-m-v2",
+  "slug": "volantis-labs-volantis-db-clean71-arctic-m-v2",
+  "author": "volantis-labs",
+  "url": "https://huggingface.co/volantis-labs/volantis-db-clean71-arctic-m-v2",
+  "created_at": "2026-11-22T12:00:23.000Z",
+  "updated_at": "2026-11-22T12:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "volantis-db",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "zh",
+    "ja",
+    "ko",
+    "hi",
+    "ar",
+    "id",
+    "vi"
+  ],
+  "tags": [
+    "volantis-db",
+    "sentence-similarity",
+    "feature-extraction",
+    "retrieval",
+    "asymmetric",
+    "embeddings",
+    "coreml",
+    "mlx",
+    "apple-silicon",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "zh",
+    "ja",
+    "ko",
+    "hi",
+    "ar",
+    "id",
+    "vi",
+    "base_model:Snowflake/snowflake-arctic-embed-m-v2.0",
+    "base_model:finetune:Snowflake/snowflake-arctic-embed-m-v2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 832670336,
+  "storage_human": "833 MB",
+  "context_length": null,
+  "base_model": "Snowflake/snowflake-arctic-embed-m-v2.0",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Volantis",
+      "url": "https://volantis.co/",
+      "snippet": "Empowering women making them feel effortlessly beautiful, thinking of strength and grace, arcane beauty, archetypes of divine …"
+    },
+    {
+      "title": "Volantis Technologies | AI Recruitment Solutions",
+      "url": "https://www.volantis.com/",
+      "snippet": "Volantis Technologies provides talent acquisition with AI-driven recruitment solutions and services. Explore now."
+    },
+    {
+      "title": "A Sovereign AI Company | Volantis Technology",
+      "url": "https://volantis.io/",
+      "snippet": "Freedom to build, power to govern. Volantis OS gives you full control over your sovereign AI infrastructure, from data to production. …"
+    },
+    {
+      "title": "Volantis — La Garde de Nuit",
+      "url": "https://lagardedenuit.com/wiki/index.php?title=Volantis",
+      "snippet": "Volantis est la plus orientale des cités libres et la seconde plus méridionales après Lys. Située à l'embouchure de la Rhoyne sur la …"
+    },
+    {
+      "title": "Volantis | Photonic AI Infrastructure for 10T+ Model Inference",
+      "url": "https://volantissemi.ai/",
+      "snippet": "Run giant AI models at low latency. Volantis photonic interconnect delivers SRAM-level bandwidth with rack-scale memory—1,000+ …"
+    }
+  ]
+}

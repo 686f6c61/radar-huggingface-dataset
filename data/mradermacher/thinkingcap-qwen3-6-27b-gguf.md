@@ -2,88 +2,104 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.6-27B es un modelo de lenguaje de 27 320 millones de parámetros desarrollado por BottleCap AI como un fine-tuning del modelo Qwen3.6-27B. Su objetivo principal es reducir el uso de tokens de razonamiento en tareas de inferencia compleja, manteniendo al mismo tiempo una calidad de respuesta comparable a la del modelo original. Según la información publicada, consigue recortar el consumo de tokens de razonamiento en aproximadamente un 50 % sin degradar significativamente los resultados en benchmarks clave.
+ThinkingCap-Qwen3.6-27B-GGUF es la versión cuantizada en formato GGUF del modelo ThinkingCap-Qwen3.6-27B, desarrollado por BottleCap AI a partir de la familia Qwen3.6. Esta variante la publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, y está pensada para su uso con llama.cpp y derivados (Ollama, LM Studio, etc.). El modelo cuenta con 27.320.697.856 parámetros totales y se distribuye bajo licencia Apache 2.0.
 
-Este modelo es relevante porque aborda uno de los problemas más acuciantes en la inferencia de LLMs: el coste computacional y económico asociado a los modos de razonamiento extendido. Al optimizar la eficiencia del razonamiento, permite desplegar capacidades de pensamiento profundo en entornos con recursos limitados o con presupuestos de inferencia ajustados. La versión GGUF, cuantizada por mradermacher, facilita su ejecución local en hardware de consumo mediante llama.cpp y otras herramientas compatibles.
+La propuesta del modelo se centra en la eficiencia de tokens durante el razonamiento: las etiquetas "token-efficient" y "efficient-thinking" indican que el modelo base está afinado para producir cadenas de pensamiento más compactas que las de modelos de razonamiento convencionales, reduciendo el coste de inferencia en tareas que requieren deliberación. El repositorio incluye además suplementos multimodales (mmproj), lo que sugiere capacidad de entrada visual.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Está disponible en formato GGUF con múltiples niveles de cuantización, desde Q2_K hasta Q8_0, además de archivos multimodales complementarios (mmproj) para tareas de visión.
+El repositorio GGUF ofrece un abanico amplio de cuantizaciones, desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 12-16 GB de VRAM hasta estaciones de trabajo con GPUs profesionales. La información pública disponible sobre el modelo base es limitada: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Qwen3.6-27B) |
-| Parametros totales | 27 320 697 856 (27,3 B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.6; detalles no disponibles) |
+| Parámetros totales | 27.320.697.856 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (modelo base original en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.6-27B, un transformer autoregresivo de 27 300 millones de parámetros. ThinkingCap-Qwen3.6-27B se obtiene mediante fine-tuning de este modelo con el objetivo específico de reducir la generación de tokens de razonamiento innecesarios. Según el anuncio de BottleCap AI, el proceso de entrenamiento se centró en eliminar pasos de razonamiento redundantes o excesivamente largos, preservando la calidad de las respuestas finales. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens utilizados ni si se emplearon técnicas como RLHF o DPO. La cuantización GGUF fue realizada por mradermacher, quien ofrece tanto cuantizaciones estáticas como versiones con imatrix (en un repositorio separado).
+El modelo base es ThinkingCap-Qwen3.6-27B, un fine-tune de la familia Qwen3.6 de 27B parámetros. No se dispone de información pública detallada sobre la arquitectura interna (número de capas, dimensiones de atención, uso de atención lineal o híbrida) ni sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO). Las etiquetas del repositorio ("token-efficient", "efficient-thinking") apuntan a un ajuste orientado a reducir la longitud de las cadenas de razonamiento sin sacrificar precisión, pero no se documenta la metodología concreta.
+
+La presencia de ficheros mmproj (proyección multimodal) en el repositorio GGUF indica que el modelo base incorpora un codificador visual y puede procesar imágenes además de texto, aunque la model card no detalla la arquitectura de visión ni la resolución soportada. Esta versión GGUF es una conversión estática de los pesos originales en safetensors, realizada por mradermacher con su pipeline de cuantización (quantize_version 2, convert_type hf). Existe además una variante con cuantizaciones ponderadas/imatrix en el repositorio ThinkingCap-Qwen3.6-27B-i1-GGUF.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: el modelo mantiene las capacidades de razonamiento de Qwen3.6-27B, pero con un uso de tokens de razonamiento significativamente reducido.
-- Eficiencia en razonamiento: su principal característica es la reduccion de tokens de razonamiento en aproximadamente un 50 %, lo que se traduce en menor latencia y coste de inferencia.
-- Soporte multimodal: los archivos mmproj incluidos permiten procesar entradas de imagen, aunque no se especifica el detalle de las capacidades de vision.
-- Tool calling y function calling: no se menciona explicitamente, pero al estar basado en Qwen3.6 es probable que herede estas capacidades; sin embargo, no hay confirmacion en la informacion disponible.
-- Multilingue: solo se indica soporte para ingles (en).
+- Generación de texto conversacional multi-turno (pipeline "conversational" declarado en los tags).
+- Razonamiento con cadena de pensamiento optimizada en tokens ("efficient-thinking").
+- Procesamiento multimodal de imágenes gracias a los ficheros mmproj incluidos (Q8_0 y f16).
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que facilita su integración en despliegues tipo API.
+- Capacidades de código, matemáticas y tool calling: no confirmadas explícitamente en la información disponible, aunque plausibles por herencia de Qwen3.6; no disponible como dato verificado.
+- Soporte de agentes y razonamiento multi-paso: no disponible como dato verificado.
+- Idiomas: únicamente inglés declarado.
 
 ## Casos de uso
 
-- Inferencia de razonamiento en produccion: el modelo es adecuado para aplicaciones que requieren razonamiento complejo (matematicas, logica, analisis) pero con presupuestos de tokens limitados. Su reduccion del 50 % en tokens de razonamiento permite servir mas peticiones por unidad de coste.
-- Despliegue en hardware de consumo: gracias a las cuantizaciones GGUF (por ejemplo, Q4_K_M con 16,9 GB), puede ejecutarse en GPUs de consumo como RTX 3090 o RTX 4090, permitiendo razonamiento avanzado en entornos locales.
-- Asistentes de codigo: aunque no se confirma soporte explicito de tool calling, su base Qwen3.6 sugiere capacidad para generacion de codigo y asistencia en programacion, con menor sobrecarga de razonamiento.
-- Analisis de documentos largos: si la longitud de contexto es similar a la de Qwen3.6 (no confirmada), podria procesar documentos extensos con razonamiento eficiente.
-- Chatbots y atencion al cliente: su eficiencia en tokens reduce la latencia en conversaciones multi-turno, mejorando la experiencia de usuario en sistemas interactivos.
-- Investigacion academica: como modelo de razonamiento eficiente, es util para experimentos donde se necesita comparar el rendimiento de razonamiento con distintos presupuestos de tokens.
+- Razonamiento con coste controlado en producción: el ajuste "token-efficient" reduce el número de tokens generados en tareas de deliberación, lo que abarata la inferencia en pipelines de clasificación compleja, extracción estructurada o resolución de problemas con pasos intermedios.
+- Despliegue en GPUs de consumo: con cuantizaciones Q4_K_M (16,9 GB) o Q3_K_M (13,6 GB) el modelo cabe en GPUs de 16-24 GB, permitiendo prototipado local de un modelo de 27B sin infraestructura de datacenter.
+- Asistente conversacional en inglés: el pipeline conversacional y la ventana de contexto (no documentada) lo hacen adecuado para atención al cliente o asistentes internos en inglés, siempre que se valide el contexto real soportado.
+- Análisis de documentos con imágenes: los suplementos mmproj permiten procesar capturas, diagramas o documentos escaneados junto con texto, útil para extracción de información de facturas o informes.
+- Inferencia en CPU o entornos sin GPU: las cuantizaciones Q2_K (11,0 GB) y Q3_K_S (12,4 GB) permiten ejecución en llama.cpp sobre CPU con RAM suficiente, útil para entornos de desarrollo o pruebas offline.
+- Integración en herramientas de escritorio: al ser GGUF, se puede cargar en Ollama, LM Studio o llama.cpp, lo que facilita asistentes locales de código o redacción sin enviar datos a la nube.
+- Fine-tuning posterior sobre la versión safetensors: el modelo base original (bottlecapai/ThinkingCap-Qwen3.6-27B) puede ajustarse con transformers y posteriormente cuantizarse de nuevo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El anuncio de BottleCap AI menciona que "preserva gran parte de la calidad de razonamiento de Qwen" y que reduce el uso de tokens en un 50 %, pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros benchmarks. Se recomienda consultar el blog oficial de BottleCap AI para obtener datos actualizados.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun la cuantizacion elegida, los tamaños de archivo son:
-  - Q2_K: 11,0 GB
-  - Q3_K_M: 13,6 GB
-  - Q4_K_M: 16,9 GB
-  - Q5_K_M: 19,6 GB
-  - Q6_K: 22,5 GB
-  - Q8_0: 29,1 GB
-- GPUs recomendadas: para cuantizaciones Q4_K_M o inferiores, una RTX 3090 (24 GB) o RTX 4090 (24 GB) es suficiente. Para Q5_K_M y superiores, se recomienda una GPU con 24 GB o mas (A100 40 GB, H100).
-- Compatibilidad con consumer GPU: si, las cuantizaciones Q2_K a Q4_K_M caben en GPUs de 16-24 GB, permitiendo ejecucion local en hardware de consumo.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM (con adaptacion a GGUF), TGI (si se convierte a safetensors).
-- Latencia y throughput: no se dispone de datos medidos. La reduccion del 50 % en tokens de razonamiento implica una mejora proporcional en latencia y throughput en comparacion con el modelo base.
+- VRAM estimada para inferencia (según cuantización, sin contar overhead de contexto):
+  - Q2_K: ~11,0 GB
+  - Q3_K_S: ~12,4 GB
+  - Q3_K_M: ~13,6 GB
+  - Q3_K_L: ~14,7 GB
+  - IQ4_XS: ~15,5 GB
+  - Q4_K_S: ~15,9 GB
+  - Q4_K_M: ~16,9 GB
+  - Q5_K_S: ~19,1 GB
+  - Q5_K_M: ~19,6 GB
+  - Q6_K: ~22,5 GB
+  - Q8_0: ~29,1 GB
+  - mmproj: 0,7 GB (Q8_0) o 1,0 GB (f16), adicional si se usa visión
+- GPUs recomendadas: RTX 4090 (24 GB) para Q4_K_M/Q5_K_M con contexto moderado; A100 40 GB o H100 para Q8_0 y contextos largos; RTX 3090 (24 GB) válida para Q4/Q5.
+- ¿Cabe en GPU de consumo? Sí: Q4_K_M (16,9 GB) cabe en RTX 4080/4090 de 16-24 GB; Q3_K_M (13,6 GB) cabe en GPUs de 16 GB como RTX 4060 Ti 16 GB o RTX 4070 Ti Super; Q2_K (11,0 GB) cabe en GPUs de 12 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. Para la versión safetensors: transformers, vLLM o TGI (no verificado para este modelo concreto).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Eficiencia de razonamiento |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| ThinkingCap-Qwen3.6-27B | 27,3 B | no disponible | Apache 2.0 | GGUF, safetensors | Reduccion del 50 % en tokens de razonamiento |
-| Qwen3.6-27B (base) | 27,3 B | no disponible | Apache 2.0 | safetensors | Razonamiento estandar, sin optimizacion de tokens |
-| Qwen3-27B (anterior) | 27 B | 32K (tipico) | Apache 2.0 | safetensors | Razonamiento estandar |
+| ThinkingCap-Qwen3.6-27B (este) | 27,3B | no disponible | Apache 2.0 | GGUF / safetensors | Ajuste "token-efficient", multimodal vía mmproj |
+| Qwen3.6 base (27B) | ~27B | no disponible en esta ficha | no disponible | safetensors | Modelo original sin el ajuste de eficiencia de tokens |
+| Gemma 3 27B | 27B | 128K (según documentación pública de Gemma 3) | Gemma license | safetensors / GGUF | Alternativa de tamaño similar con visión nativa |
+| Mistral Small 3.1 24B | 24B | 128K (según documentación pública) | Apache 2.0 | safetensors / GGUF | Alternativa algo menor, licencia permisiva |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos. La principal diferencia de ThinkingCap es su enfoque en eficiencia de tokens, mientras que el resto no presenta esa optimizacion.
+Nota: los datos de Qwen3.6 base, Gemma 3 y Mistral Small 3.1 provienen de conocimiento general de esos modelos y no de la información proporcionada en esta ficha; verificar antes de usarlos en decisiones de producción.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al ser un fine-tuning de Qwen3.6, puede heredar sesgos del modelo base, aunque no se han documentado especificamente.
-- Riesgo de alucinacion: no se ha evaluado especificamente; se recomienda validar las respuestas en aplicaciones criticas.
-- Limitaciones de contexto: no se ha confirmado la longitud de contexto; si es menor que la de Qwen3.6, podria limitar el procesamiento de documentos largos.
-- Idioma: solo se soporta ingles de forma confirmada; otros idiomas pueden funcionar pero sin garantias.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al modelo base requiere solicitud (gated) en Hugging Face, lo que puede suponer una barrera para algunos usuarios.
-- Caveat de produccion: la reduccion de tokens de razonamiento puede afectar a tareas que requieren razonamiento muy profundo o pasos intermedios extensos; se recomienda probar en el caso de uso concreto.
+- Solo se declara soporte de inglés; el rendimiento en castellano no está verificado y probablemente sea inferior.
+- No se han publicado benchmarks: no hay evidencia pública de calidad en MMLU, HumanEval, GSM8K ni otras tareas estándar.
+- La longitud de contexto no está documentada; asumir contextos largos sin verificación puede provocar degradación o errores.
+- Riesgo de alucinación inherente a los modelos de 27B, especialmente en dominios especializados y con cuantizaciones bajas (Q2_K, Q3_K_S).
+- Las cuantizaciones Q2_K y Q3_K_S degradan la calidad de forma notable; para producción se recomienda Q4_K_M o superior.
+- El modelo base tiene un formulario de acceso restringido ("Agree and request access") en bottlecapai/ThinkingCap-Qwen3.6-27B, aunque esta versión GGUF se distribuye abiertamente bajo Apache 2.0; conviene revisar los términos del modelo base para usos derivados.
+- La licencia Apache 2.0 permite uso comercial, pero el autor del modelo base puede imponer condiciones adicionales en su repositorio original.
+- El repositorio GGUF ocupa 190,8 GB en total; la descarga de todas las cuantizaciones no es necesaria, pero conviene planificar el almacenamiento.
+- El ajuste "token-efficient" puede reducir la profundidad del razonamiento en tareas que requieren cadenas de pensamiento largas; validar en el dominio concreto.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/ThinkingCap-Qwen3.6-27B-GGUF
-- Repositorio con imatrix: https://huggingface.co/mradermacher/ThinkingCap-Qwen3.6-27B-i1-GGUF
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
-- Blog de BottleCap AI: https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/
-- Articulo en HackerNoon: https://hackernoon.com/thinkingcap-qwen36-27b-cuts-reasoning-token-use-by-half
-- Pagina en Ryu: https://ryuhq.com/store/models/bottlecapai/ThinkingCap-Qwen3.6-27B-GGUF
+- Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/ThinkingCap-Qwen3.6-27B-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#ThinkingCap-Qwen3.6-27B-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Guía sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

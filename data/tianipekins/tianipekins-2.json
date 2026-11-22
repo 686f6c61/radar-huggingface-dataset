@@ -5,7 +5,7 @@
   "author": "tianipekins",
   "url": "https://huggingface.co/tianipekins/TianiPekins",
   "created_at": "2026-09-09T15:15:28.000Z",
-  "updated_at": "2026-11-18T11:45:01.000Z",
+  "updated_at": "2026-11-18T11:55:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,7 +15,6 @@
   ],
   "tags": [
     "en",
-    "arxiv:2611.17573",
     "license:apache-2.0",
     "region:us"
   ],

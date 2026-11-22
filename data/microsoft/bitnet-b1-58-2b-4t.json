@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "microsoft/bitnet-b1.58-2B-4T",
+  "slug": "microsoft-bitnet-b1-58-2b-4t",
+  "author": "microsoft",
+  "url": "https://huggingface.co/microsoft/bitnet-b1.58-2B-4T",
+  "created_at": "2025-04-15T04:25:13.000Z",
+  "updated_at": "2025-12-17T18:13:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bitnet",
+    "text-generation",
+    "chat",
+    "large-language-model",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2504.12285",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1526,
+  "downloads_30d": 8694,
+  "trending_score": 0,
+  "parameters": 849786880,
+  "parameters_human": "849.8M",
+  "storage_bytes": 6684507356,
+  "storage_human": "6.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/?msockid=31b9ae5c06dd6a4e2384b64507cf6b6d",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …Read more"
+    },
+    {
+      "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
+      "url": "https://www.microsoft.com/fr-fr?msockid=31b9ae5c06dd6a4e2384b64507cf6b6d",
+      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …Read more"
+    },
+    {
+      "title": "Microsoft account | Connectez-vous ou créez votre compte aujourd’hui ...",
+      "url": "https://account.microsoft.com/account/Account?Platform=Windows8.1&mkt=fr-FR",
+      "snippet": "Simplifiez votre journée Accédez à toutes vos applications, services et jeux Microsoft avec un seul compte. Quel que soit votre …Read more"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …Read more"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

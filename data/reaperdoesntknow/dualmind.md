@@ -2,106 +2,93 @@
 
 ## Resumen
 
-DualMind es un modelo de lenguaje de 2.031.739.904 parámetros (1.7B efectivos) desarrollado por reaperdoesntknow bajo el sello de Convergent Intelligence LLC. Se trata de un ajuste fino por supervisión (SFT) sobre `reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored`, que a su vez deriva de Qwen3-1.7B. Su propuesta central es implementar un razonamiento de "doble modalidad mental" sobre unos pesos compartidos: el modelo alterna entre tres roles delimitados por tokens especiales (`<explore>`, `<examine>`, `<response>`) que estructuran una suerte de diálogo interno entre una fase de derivación libre, una fase de autocrítica adversarial y una fase de síntesis final.
+DualMind es un modelo de lenguaje de aproximadamente 2.030 millones de parámetros (1,7B efectivos) desarrollado por reaperdoesntknow bajo el sello de Convergent Intelligence LLC. Se construye sobre una cadena de ajuste fino supervisado (SFT) que parte de Qwen3-1.7B y pasa por una variante sin censura (DiStil-Qwen3-1.7B-uncensored) y un refinamiento DISC antes de llegar a este modelo final. Su propuesta central es implementar lo que el autor denomina "razonamiento de doble modalidad mental": una única arquitectura con dos voces internas que comparten pesos y se diferencian únicamente por tokens de rol (`<explore>`, `<examine>`, `<response>`).
 
-La arquitectura subyacente es un transformer causal estándar (Qwen3ForCausalLM) con 28 capas, tamaño oculto de 2048, atención con GQA (16 cabezas de consulta y 8 de clave/valor) y una ventana de contexto de 40.960 tokens. El entrenamiento se realizó en BF16 sobre una H100 de Colab durante 512 pasos con una tasa de aprendizaje de 5e-6, usando TRL para el SFT sobre el dataset `KK04/LogicInference_OA`, transformado al formato del bucle cognitivo DualMind mediante detección de disparadores a nivel de frase.
+El problema que aborda es la autoverificación en cadenas de razonamiento: en lugar de una única corriente de CoT, el modelo separa una fase de exploración libre, una fase de crítica adversarial sobre su propia salida y una fase de síntesis limpia. La arquitectura subyacente es Qwen3ForCausalLM, con 28 capas, tamaño oculto 2048, 16 cabezas de atención de consulta y 8 de clave/valor (GQA), y una longitud de contexto de 40.960 tokens. El entrenamiento se realizó en BF16 sobre una H100 de Colab durante 512 pasos con TRL.
 
-Su relevancia actual radica en que propone una alternativa ligera y de pesos abiertos (licencia Apache 2.0) a las técnicas de razonamiento multi-paso basadas en cadenas de pensamiento únicas, apostando por la autoverificación estructurada dentro de un mismo modelo. Está pensado para despliegue en el borde (edge) y entornos con recursos limitados, y el autor anuncia una siguiente iteración entrenada sobre `Crownelius/Opus-4.6-Reasoning-3300x`.
+Es relevante ahora porque propone una alternativa ligera y de pesos compartidos a los ensamblados multi-modelo para obtener diversidad de perspectivas, y porque su licencia Apache 2.0 y su tamaño permiten desplegarlo en hardware de gama consumer. No obstante, la información pública disponible es escasa y proviene casi exclusivamente de la model card del autor, sin resultados de benchmarks independientes.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3ForCausalLM (transformer causal decoder-only) |
-| Parametros totales | 2.031.739.904 (~2.03B; 1.7B efectivos) |
+| Arquitectura | Qwen3ForCausalLM (transformer decoder-only con GQA) |
+| Parametros totales | 2.031.739.904 (~2,03B; 1,7B efectivos según el autor) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 40.960 tokens |
-| Tipos de cuantizacion | no disponible (pesos publicados en BF16/safetensors; el autor no documenta GGUF ni otras cuantizaciones) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16/safetensors; no se documentan GGUF ni otras) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) |
-| Tamano oculto | 2048 |
-| Capas | 28 |
-| Cabezas de atencion | 16 (Q) / 8 (KV), GQA |
-| Precision de entrenamiento | BF16 |
-| Modelo base | reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored |
-| Dataset de entrenamiento | KK04/LogicInference_OA (transformado al formato DualMind) |
-| Tamano del repositorio | 4.1 GB |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-DualMind es un transformer causal decoder-only con la arquitectura Qwen3ForCausalLM: 28 capas, dimensión oculta de 2048, 16 cabezas de atención de consulta y 8 de clave/valor (GQA), y una ventana de contexto de 40.960 tokens. Los pesos se distribuyen en safetensors en BF16 y el repositorio ocupa 4.1 GB. No se trata de un modelo MoE ni híbrido: toda la capacidad del modelo se activa en cada token generado.
+El modelo es un transformer decoder-only de la familia Qwen3, con 28 capas, tamaño oculto de 2048, 16 cabezas de consulta y 8 de clave/valor (GQA), y una ventana de contexto de 40.960 tokens. Se entrenó en precisión BF16 sobre una H100 de Colab mediante SFT con TRL durante 512 pasos y una tasa de aprendizaje de 5e-6. La cadena de destilación documentada es: Qwen3-1.7B → DiStil-Qwen3-1.7B-uncensored (SFT sin censura) → Disctil-Qwen3-1.7B (refinamiento DISC) → DualMind.
 
-El entrenamiento consistió en un SFT con TRL sobre el dataset `KK04/LogicInference_OA`, en el que cada solución de cadena de pensamiento se reestructura en tres bloques: las frases de derivación van a `<explore>`, las frases de verificación y comprobación a `<examine>`, y la respuesta final a `<response>`. La separación se hace a nivel de frase mediante detección de disparadores léxicos ("check", "verify", "however", "but wait", entre otros), con un respaldo posicional 70/30 cuando no se detecta transición. Se realizaron 512 pasos con tasa de aprendizaje 5e-6 en una H100 de Colab en BF16. La cadena de destilación documentada es: Qwen3-1.7B → DiStil-Qwen3-1.7B-uncensored (SFT sin censura) → Disctil-Qwen3-1.7B (refinamiento DISC) → DualMind. El autor menciona una siguiente iteración en entrenamiento sobre `Crownelius/Opus-4.6-Reasoning-3300x` (2.160 muestras de razonamiento de Claude Opus 4.6 con columnas `thinking`/`solution` pre-separadas), pero no se aportan resultados de esa iteración.
-
-La innovación técnica declarada es el condicionamiento por rol sobre pesos compartidos: en lugar de emplear varios modelos con modos de fallo distintos (lo que el autor llama "multi-model collision array"), DualMind recrea la dinámica dialéctica dentro de un único conjunto de pesos mediante los tokens `<explore>`, `<examine>` y `<response>`. El autor vincula conceptualmente este esquema con su marco teórico de "Discrepancy Calculus" (DISC), pero no se aportan validaciones empíricas de esa conexión en la información disponible.
+La innovación principal es el formateo del dato de entrenamiento en un bucle cognitivo de tres fases. Cada solución de CoT se reestructura en bloques `<explore>` (derivación libre), `<examine>` (verificación y crítica adversarial) y `<response>` (síntesis final). La separación se hace a nivel de frase mediante detección de disparadores ("check", "verify", "however", "but wait", etc.) para localizar la transición natural entre razonamiento y verificación, con un respaldo posicional 70/30. El dataset de esta iteración es KK04/LogicInference_OA, con problemas de inferencia lógica transformados a ese formato. El autor indica que una siguiente iteración se entrena sobre Crownelius/Opus-4.6-Reasoning-3300x (2.160 muestras de razonamiento de Claude Opus 4.6 con columnas `thinking`/`solution` pre-separadas). La model card vincula el diseño con un marco teórico propio denominado Discrepancy Calculus (DISC), sin validación externa disponible.
 
 ## Capacidades
 
-- Generación de texto autoregresiva con plantilla de prompt propia basada en `##USER:` y bloques `<explore>`, `<examine>` y `<response>`.
-- Razonamiento estructurado en tres fases: derivación libre, autocrítica adversarial y síntesis final.
-- Razonamiento lógico y matemático básico, orientado por el dataset de inferencia lógica empleado en el entrenamiento.
-- Autoverificación y detección de errores dentro del propio bucle generativo (fase `<examine>`).
-- Generación de cadenas de pensamiento explícitas y separadas de la respuesta final.
-- Soporte de tool calling / function calling: no disponible (no documentado en la model card).
-- Soporte de agentes y razonamiento multi-paso orquestado: no disponible (no documentado).
-- Capacidades multilingües: no disponible (no se especifican idiomas soportados).
-- Capacidades de visión o audio: no disponibles.
-- Compatibilidad declarada con text-generation-inference y endpoints compatibles (según los tags del repositorio).
+- Generación de texto conversacional y de razonamiento en formato multi-fase con tokens de rol `<explore>`, `<examine>` y `<response>`.
+- Razonamiento lógico y matemático estructurado: el entrenamiento se centró en problemas de inferencia lógica y demostraciones.
+- Autocrítica y autocorrección estructural: la fase `<examine>` está diseñada para detectar errores y lagunas en la derivación previa.
+- Cadena de razonamiento explícita (tipo thinking) integrada en la plantilla de generación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; el bucle interno explore-examine-response puede interpretarse como multi-paso, pero no hay evidencia publicada.
+- Capacidades multilingües: no disponibles; no se documentan idiomas soportados.
+- Capacidades especiales: variante sin censura heredada de la cadena base; no se documentan visión ni audio.
 
 ## Casos de uso
 
-- Razonamiento lógico y matemático asistido: el modelo puede recibir un problema y completar el bucle `<explore>` → `<examine>` → `<response>`, de modo que la respuesta final incorpora una fase explícita de comprobación. Es adecuado por su entrenamiento específico sobre inferencia lógica y por la estructura de tres fases que separa derivación y verificación.
-- Generación de explicaciones paso a paso con trazabilidad: en entornos educativos o de documentación técnica, el bloque `<explore>` permite mostrar el desarrollo y el `<examine>` las correcciones, lo que facilita la auditoría del razonamiento por parte del usuario.
-- Despliegue en el borde y entornos con recursos limitados: con 2.03B parámetros y pesos en BF16, el modelo cabe en GPUs de consumo y en dispositivos con memoria moderada, lo que lo hace apto para asistentes locales sin conexión.
-- Prototipado de pipelines de autoverificación: equipos de investigación pueden usar el modelo como componente de bajo coste para experimentar con esquemas de crítica y refinamiento antes de escalar a modelos mayores.
-- Filtrado y revisión de borradores de razonamiento: el patrón `<examine>` puede emplearse para que el modelo revise salidas previas (propias o de otro sistema) en busca de errores lógicos, siempre que se le proporcione el texto a criticar en el formato adecuado.
-- Generación de contenido conversacional con plantilla `##USER:`: el modelo puede integrarse en aplicaciones de chat que respeten su formato de prompt y aprovechen la fase de síntesis para respuestas más concisas.
-- Investigación sobre condicionamiento por rol: sirve como banco de pruebas reproducible (Apache 2.0, pesos abiertos) para estudiar si el cambio de rol mediante tokens especiales mejora la coherencia del razonamiento en modelos pequeños.
+- Tutoría de matemáticas y lógica: el modelo puede generar una derivación en `<explore>`, revisarla en `<examine>` y entregar una solución limpia en `<response>`, lo que resulta útil para explicar paso a paso demostraciones y detectar errores en el razonamiento del estudiante.
+- Generación de soluciones verificadas en pipelines de evaluación: la separación explícita entre exploración y crítica permite filtrar automáticamente respuestas donde la fase de examen detecta inconsistencias antes de exponer el resultado final.
+- Prototipado de agentes de razonamiento en hardware limitado: con ~2B parámetros y pesos safetensors, cabe en GPUs de gama consumer y sirve para experimentar con bucles de autocrítica sin infraestructura de servidor.
+- Investigación sobre autoverificación y CoT: el formato de tres fases facilita analizar por separado la calidad de la derivación y la de la crítica, útil para estudiar alucinación y autocorrección en modelos pequeños.
+- Generación de datos sintéticos de razonamiento: el modelo puede producir trazas explore-examine-response que sirvan como material de entrenamiento o de evaluación para modelos mayores.
+- Asistente de análisis de problemas formales en entornos educativos o de investigación: para descomponer enunciados lógicos, proponer enfoques y contrastarlos antes de dar una respuesta consolidada.
+- Despliegue en local para experimentación con plantillas de prompt personalizadas: la licencia Apache 2.0 y el tamaño permiten integrarlo en herramientas de escritorio o notebooks sin restricciones de uso comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 4,1 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, entre 6 y 8 GB para contextos moderados.
-- VRAM estimada en cuantización de 8 bits: alrededor de 2,1 GB para pesos, más overhead; en cuantización de 4 bits, alrededor de 1,1 GB para pesos. Estas cifras son estimaciones a partir del número de parámetros, ya que el autor no publica cuantizaciones oficiales.
-- GPU recomendadas: H100 (empleada en el entrenamiento), A100, L40S o RTX 4090 para inferencia en BF16 sin problemas; RTX 3090, RTX 4080 o RTX 4070 Ti para contextos largos en BF16.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más en BF16 y en tarjetas con 4-6 GB si se cuantiza.
-- Opciones de despliegue: transformers (soporte nativo documentado), text-generation-inference (declarado en los tags) y endpoints compatibles. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, conversión que el autor no documenta.
-- Latencia y throughput estimados: no disponibles (no se publican mediciones).
+- VRAM estimada para inferencia en BF16: aproximadamente 4,1 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, entre 5 y 7 GB para contextos moderados.
+- VRAM estimada en cuantización de 8 bits: alrededor de 2,5-3 GB de pesos; en 4 bits, alrededor de 1,5-2 GB (no se publican artefactos cuantizados oficiales, pero el modelo es convertible con herramientas estándar).
+- GPU recomendadas: H100 o A100 para entrenamiento y despliegue de referencia; RTX 4090, RTX 3090, RTX 4080 o superiores para inferencia cómoda en BF16.
+- Cabe en GPU consumer: sí; en tarjetas con 8 GB o más en BF16 y en tarjetas con 4-6 GB si se cuantiza.
+- Opciones de despliegue: transformers (soporte nativo documentado), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en el repo), y previsiblemente llama.cpp/Ollama/vLLM tras conversión, aunque no se documentan explícitamente.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---|---|---|---|---|
-| DualMind | ~2.03B | 40.960 | Apache 2.0 | Razonamiento en tres fases por rol sobre pesos compartidos | Hugging Face, transformers |
-| Qwen3-1.7B (base original) | ~1.7B | no disponible en la informacion | Apache 2.0 (heredada de Qwen3) | Transformer causal estándar | Hugging Face |
-| reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored (modelo base directo) | ~1.7B | no disponible en la informacion | Apache 2.0 | SFT sin censura | Hugging Face |
-| Modelos de razonamiento pequeños de la familia Qwen3 (variantes "thinking") | ~1.7B | no disponible en la informacion | Apache 2.0 | Cadena de pensamiento integrada | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| DualMind | ~2,03B | 40.960 | Apache 2.0 | SFT con bucle explore-examine-response sobre Qwen3-1.7B; sin benchmarks publicados |
+| Qwen3-1.7B | ~1,7B | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | Modelo base original; referencia directa de capacidades y contexto |
+| DiStil-Qwen3-1.7B-uncensored | ~1,7B | no disponible en esta ficha | no disponible en esta ficha | Variante sin censura de la que DualMind hereda el ajuste |
+| Disctil-Qwen3-1.7B | ~1,7B | no disponible en esta ficha | no disponible en esta ficha | Refinamiento DISC intermedio de la cadena |
 
-La comparación se limita a la cadena de ascendencia del propio modelo, ya que no se dispone de datos de benchmarks que permitan contrastar su rendimiento con alternativas de la misma categoría. El dato diferencial documentado es la ventana de contexto de 40.960 tokens y la estructura de tres roles, frente al transformer estándar de su modelo base.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks, por lo que no existe evidencia cuantitativa de mejora frente a su modelo base ni frente a Qwen3-1.7B.
-- El modelo base intermedio es una variante "uncensored"; aunque DualMind se distribuye con licencia Apache 2.0, conviene auditar las salidas antes de usarlo en producción orientada al público.
-- Riesgo de alucinación inherente a un modelo de 1.7B efectivos: la fase `<examine>` es una autocrítica generada por el propio modelo y no garantiza la detección de errores; puede validar razonamientos incorrectos.
-- El formato de prompt es rígido: requiere `##USER:` y la apertura explícita de `<explore>`; fuera de esa plantilla el comportamiento puede degradarse.
-- El entrenamiento se realizó en 512 pasos sobre un único dataset de inferencia lógica, lo que limita la generalización a dominios distintos del razonamiento lógico.
-- No se documentan los idiomas soportados; el dataset y la plantilla están en inglés, por lo que el rendimiento en castellano no está garantizado.
-- La conexión teórica con "Discrepancy Calculus" es una elaboración del autor sin validación empírica publicada en la información disponible.
-- No se ofrecen cuantizaciones oficiales (GGUF, AWQ, GPTQ), lo que puede complicar el despliegue en entornos de bajos recursos sin trabajo adicional de conversión.
-- La model card menciona una siguiente iteración en entrenamiento; los resultados de esa iteración no están disponibles y no deben asumirse.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda conservar los avisos de atribución correspondientes.
+- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de MMLU, GSM8K, HumanEval ni de evaluaciones de razonamiento que respalden las afirmaciones de la model card.
+- Riesgo de alucinación: como modelo de ~2B parámetros, la fase `<examine>` puede confirmar derivaciones erróneas en lugar de detectarlas; no hay estudios que midan la tasa de autocorrección real.
+- Idiomas soportados no documentados: no se garantiza un rendimiento adecuado fuera del inglés, y no hay información sobre castellano.
+- La variante base es "uncensored": puede generar contenido sin los filtros habituales, lo que exige moderación adicional en producción.
+- Formato de prompt rígido: el rendimiento depende de respetar los tokens `<explore>`, `<examine>` y `<response>`; usos fuera de esa plantilla pueden degradar la calidad.
+- Entrenamiento breve (512 pasos) sobre un dataset específico de inferencia lógica: la generalización a otras tareas no está validada.
+- El marco teórico DISC citado en la model card carece de revisión por pares o validación externa en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad sobre el contenido generado por una base sin censura.
+- No se documentan cuantizaciones oficiales ni artefactos GGUF; el despliegue en entornos de bajos recursos requiere conversión manual.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind
-- Modelo base directo: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
+- Modelo base: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
 - Modelo intermedio de la cadena: https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B
-- Dataset de entrenamiento: https://huggingface.co/datasets/KK04/LogicInference_OA
+- Dataset de entrenamiento de esta iteración: https://huggingface.co/datasets/KK04/LogicInference_OA
 - Dataset de la siguiente iteración: https://huggingface.co/datasets/Crownelius/Opus-4.6-Reasoning-3300x
 - Repositorio de experimentos del autor: https://huggingface.co/reaperdoesntknow
-- Paper teórico citado (Discrepancy Calculus, CIx, 2026): no disponible como enlace directo en la información proporcionada.

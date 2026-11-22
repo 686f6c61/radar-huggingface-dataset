@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Lythri-Wink-2B-i1-GGUF",
   "created_at": "2026-11-16T17:42:21.000Z",
-  "updated_at": "2026-11-20T19:06:58.000Z",
+  "updated_at": "2026-11-21T19:53:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 4106,
+  "downloads_30d": 7141,
   "trending_score": 0,
   "parameters": 2522816415,
   "parameters_human": "2.52B",

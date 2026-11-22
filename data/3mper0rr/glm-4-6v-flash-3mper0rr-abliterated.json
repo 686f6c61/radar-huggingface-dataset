@@ -40,31 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Opgelost: vtm go versus vtm go+ - De Netweters",
-      "url": "https://www.netweters.be/t5/Andere-apps-platformen/vtm-go-versus-vtm-go/td-p/218527",
-      "snippet": "May 13, 2026 · vtm go versus vtm go+ Via onze nieuwe telenet tv box ip kunnen we nu gratis kijken naar 'vtm go' en betalend naar …"
-    },
-    {
-      "title": "Streaming Video downloaden van VTM.be voor privé gebruik.",
-      "url": "https://www.pctuts.be/threads/streaming-video-downloaden-van-vtm-be-voor-prive-gebruik.234868/",
-      "snippet": "Sep 24, 2018 · Hoe kan ik een video van de site VTM downloaden en later herbekijken. In Chrome heb ik de \"Stream Video …"
-    },
-    {
-      "title": "VTMGo en VRT MAX-apps werken niet meer op TV - De Netweters",
-      "url": "https://www.netweters.be/t5/Andere-apps-platformen/VTMGo-en-VRT-MAX-apps-werken-niet-meer-op-TV/td-p/154590",
-      "snippet": "Nov 2, 2022 · Sinds een tweetal weken werken Vrt Max en Vtm Go niet meer. Spijtig want we waren een aantal series aan het …"
-    },
-    {
-      "title": "Windows 10 - VTM GO | Computerforum PcTuts.be",
-      "url": "https://www.pctuts.be/threads/vtm-go.240022/",
-      "snippet": "Apr 5, 2019 · dag , ik heb VTM.Be op de pc staan en dat gaat perfect nu is er de VTM GO en die geeft storing in het begin van ieder …"
-    },
-    {
-      "title": "afstandsbediening - Proximus Forum",
-      "url": "https://nl.forum.proximus.be/proximus-pickx-7/afstandsbediening-64090",
-      "snippet": "Sep 4, 2026 · ik heb nu een v7c decoder en daar kan je app’s installeren, die van vrt max en vtm go is gelukt omdat je een code …"
-    }
-  ]
+  "sources": []
 }

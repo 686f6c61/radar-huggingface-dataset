@@ -5,7 +5,7 @@
   "author": "ungurenko",
   "url": "https://huggingface.co/ungurenko/Parrot-ASR-0.5B-MLX-6bit",
   "created_at": "2026-11-19T04:57:38.000Z",
-  "updated_at": "2026-11-19T05:00:51.000Z",
+  "updated_at": "2026-11-22T06:35:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 50,
   "trending_score": 0,
   "parameters": 508631552,
   "parameters_human": "508.6M",

@@ -5,7 +5,7 @@
   "author": "nokkela-ai",
   "url": "https://huggingface.co/nokkela-ai/whisper-large-v3",
   "created_at": "2026-11-21T12:14:32.000Z",
-  "updated_at": "2026-11-21T12:18:44.000Z",
+  "updated_at": "2026-11-21T12:30:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -5,7 +5,7 @@
   "author": "yasserrmd",
   "url": "https://huggingface.co/yasserrmd/vega-arabic-qwen3.5-4b",
   "created_at": "2026-11-21T07:05:11.000Z",
-  "updated_at": "2026-11-21T07:05:18.000Z",
+  "updated_at": "2026-11-21T09:24:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "vegaml",
+    "safetensors",
     "decision-model",
     "typed-decisions",
     "arabic",
@@ -34,11 +35,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 81903590,
-  "storage_human": "82 MB",
+  "storage_bytes": 9475676522,
+  "storage_human": "9.5 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ostrich-27B-261118-Qwen3.8-Abliterated-i1-GGUF",
   "created_at": "2026-11-19T13:09:22.000Z",
-  "updated_at": "2026-11-19T23:14:10.000Z",
+  "updated_at": "2026-11-21T13:15:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -40,7 +40,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 1647,
+  "downloads_30d": 2136,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

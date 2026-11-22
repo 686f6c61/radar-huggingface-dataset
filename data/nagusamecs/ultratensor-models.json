@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "README.md · NagusameCS/ultratensor-models at main",
-      "url": "https://huggingface.co/NagusameCS/ultratensor-models/blob/main/README.md",
-      "snippet": "Instructions to use NagusameCS/ultratensor-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use NagusameCS/ultratensor-models with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "NagusameCS/ultratensor-models · Discussions - Hugging Face",
-      "url": "https://huggingface.co/NagusameCS/ultratensor-models/discussions",
-      "snippet": "Instructions to use NagusameCS/ultratensor-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use NagusameCS/ultratensor-models with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "NagusameCS (慰めのため) · GitHub",
-      "url": "https://github.com/NagusameCS/",
-      "snippet": "Great things are not done quickly. Do it for the love of the game. - NagusameCS"
-    },
-    {
-      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
-      "url": "https://agnes-ai.com/",
-      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
-    },
-    {
-      "title": "NagusameCS - GitHub",
-      "url": "https://github.com/Nagusamenotame",
-      "snippet": "civilized-HyperTensor Public Forked from NagusameCS/HyperTensor This repository is the civilized fork of HyperTensor: a fully reorganized, implementation-focused clone that keeps the runnable engineering surface, algorithmic scripts, examples, and build infrastructure from the original research."
-    }
-  ]
+  "sources": []
 }

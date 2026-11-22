@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "InteleionAI/Strat-G4-Single",
+  "slug": "inteleionai-strat-g4-single",
+  "author": "InteleionAI",
+  "url": "https://huggingface.co/InteleionAI/Strat-G4-Single",
+  "created_at": "2026-11-21T19:59:32.000Z",
+  "updated_at": "2026-11-22T07:54:20.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-classification",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:nvidia/llama-nemotron-embed-1b-v2",
+    "base_model:finetune:nvidia/llama-nemotron-embed-1b-v2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2489487111,
+  "storage_human": "2.5 GB",
+  "context_length": null,
+  "base_model": "nvidia/llama-nemotron-embed-1b-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

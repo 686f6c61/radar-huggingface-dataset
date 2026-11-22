@@ -2,97 +2,90 @@
 
 ## Resumen
 
-GLM-4.6V-Flash-3MPER0RR-abliterated es una variante "abliterated" del modelo GLM-4.6V-Flash, publicada por el usuario 3MPER0RR en Hugging Face. El autor solo documenta tres datos: el modelo de partida (GLM-4.6V-Flash), el proceso aplicado (abliteración en múltiples rondas) y el estado del artefacto ("tested and saved"). No se publican hiperparámetros, dataset, metodología ni evaluación alguna.
+GLM-4.6V-Flash-3MPER0RR-abliterated es un modelo derivado del huihui-ai/Huihui-GLM-4.6V-Flash-abliterated, que a su vez parte del GLM-4.6V-Flash del laboratorio Zhipu AI (Z.ai). El autor 3MPER0RR ha aplicado un proceso de abliteración en múltiples rondas, una técnica de edición de pesos que busca eliminar las direcciones de activación responsables de rechazos y respuestas de seguridad, de modo que el modelo deja de declinar peticiones que el modelo original rechazaría. El resultado es un checkpoint de aproximadamente 10.300 millones de parámetros (10.292.777.472 según los tensores safetensors), con un repositorio de 20,6 GB y licencia MIT.
 
-El checkpoint contiene 10.292.777.472 parámetros (unos 10,29 mil millones) en formato safetensors, con un repositorio de 20,6 GB. Ese tamaño es coherente con pesos en BF16 o FP16 (aproximadamente 2 bytes por parámetro). El tag `glm4v` y la nomenclatura "4.6V" del modelo base apuntan a un modelo de lenguaje con capacidad de visión, aunque la model card no detalla arquitectura, longitud de contexto ni idiomas soportados.
+El modelo conserva la arquitectura del GLM-4.6V-Flash original: un transformer multimodal con capacidad de procesar texto e imagen (el tag `glm4v` así lo indica) y orientado a generación de texto conversacional. La relevancia de esta ficha estriba precisamente en su carácter derivado: no aporta innovaciones arquitectónicas propias, sino una variante de pesos modificados para investigación sobre alineación, robustez y comportamiento de modelos abliterados. Se trata de un artefacto de experimentación, no de un modelo con garantías de producción.
 
-La relevancia práctica del artefacto es reducida: acumula 0 descargas y 0 likes, no incluye benchmarks ni documentación técnica, y la abliteración introduce riesgos específicos (supresión de los mecanismos de rechazo) que exigen evaluación propia antes de cualquier uso. Es un objeto de investigación y experimentación, no un modelo validado para producción.
+La información publicada por el autor es extremadamente escasa: la model card se limita a indicar el modelo base, el proceso de abliteración en varias rondas, el estado "tested and saved" y la licencia MIT. No se documentan datos de entrenamiento, composición del corpus, idiomas, benchmarks ni metodología detallada de la abliteración, por lo que muchos campos de esta ficha deben marcarse como no disponibles.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag `glm4v` sugiere un transformer multimodal texto-vision del linaje GLM-4.6V; la model card no la describe) |
-| Parametros totales | 10.292.777.472 (10,29 mil millones) |
-| Parametros activos | no disponible (no se especifica si el modelo base es MoE o denso) |
+| Arquitectura | Transformer multimodal (familia GLM-4.6V, tag `glm4v`); detalles internos no disponibles |
+| Parámetros totales | 10.292.777.472 (~10,3 mil millones) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio solo contiene pesos safetensors, presumiblemente BF16/FP16) |
+| Tipos de cuantización | no disponible (repo en safetensors; cuantizaciones GGUF/AWQ no publicadas por el autor) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (declarada en la model card y en el tag del repositorio) |
+| Licencia | MIT |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 20,6 GB |
-| Pipeline declarado | text-generation |
-| Fecha de creacion (metadatos) | 2026-09-19 |
-| Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La model card no aporta información sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni la existencia de fases de RLHF o DPO. Tampoco se indica si el modelo base es denso o de mezcla de expertos, ni si la modificación afecta a las torres de visión o solo al decodificador de texto. Todo lo relativo a entrenamiento debe considerarse "no disponible" a partir de la información publicada.
+La arquitectura subyacente corresponde al GLM-4.6V-Flash de Zhipu AI, un transformer multimodal de la familia GLM-4V orientado a generación de texto y comprensión de imágenes. El tag `glm4v` del repositorio confirma la modalidad visual, aunque no se dispone de documentación sobre número de capas, dimensiones ocultas, mecanismo de atención, tokenizador ni estrategia de entrenamiento del modelo original en la información proporcionada.
 
-El único proceso documentado es la "abliteración en múltiples rondas". De forma genérica, esta técnica identifica en el espacio de activaciones la dirección asociada al rechazo de peticiones y la proyecta fuera de los pesos (o la resta de las matrices correspondientes), de modo que el modelo deja de activar respuestas de negativa ante ciertas categorías de instrucciones. Al aplicarse en varias rondas, se busca que la supresión sea más estable y no degrade en exceso otras capacidades. El autor no indica qué capas se intervinieron, qué dataset de contraste se usó para calcular la dirección de rechazo, ni qué métricas de degradación se midieron después ("tested and saved" es la única validación declarada).
+El entrenamiento de esta variante no es un entrenamiento desde cero, sino una edición de pesos: el autor describe un proceso de "multi-round abliteration" aplicado sobre huihui-ai/Huihui-GLM-4.6V-Flash-abliterated. La abliteración calcula direcciones de activación asociadas a respuestas de rechazo y las proyecta fuera de los pesos, repitiendo el proceso en varias rondas para reforzar el efecto. No se documentan el dataset usado para calibrar las direcciones, el número exacto de rondas, la tasa de éxito ni las métricas de degradación de capacidades tras la edición.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno: el pipeline declarado es `text-generation` y el tag `conversational` confirma el formato de diálogo.
-- Capacidad multimodal (visión): el tag `glm4v` y el nombre del modelo base sugieren entrada de imágenes, pero la model card no lo confirma ni detalla resolución, número de parches o tareas soportadas.
-- Respuesta a instrucciones previamente rechazadas: consecuencia directa de la abliteración; el alcance real (qué categorías se han desbloqueado) no está documentado.
-- Tool calling / function calling: no disponible.
+- Generación de texto conversacional multi-turno, heredada del modelo base GLM-4.6V-Flash.
+- Procesamiento de entrada visual (imagen) según el tag `glm4v` de la familia base; el grado de conservación de esta capacidad tras la abliteración no está verificado en la información disponible.
+- Razonamiento y respuesta a instrucciones generales, con un comportamiento esperado de menor tasa de rechazos debido a la abliteración.
+- Soporte de tool calling / function calling: no disponible en la documentación del autor; dependería de las capacidades del modelo base, no verificadas aquí.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo "thinking" o razonamiento explícito: no disponible.
-- Procesamiento de audio o vídeo: no disponible.
+- Capacidades multilingües: no disponibles (no se declaran idiomas).
+- Modo "thinking" explícito, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo sirve como caso de estudio para medir qué capacidades y qué salvaguardas se pierden al aplicar abliteración en múltiples rondas, comparando sus respuestas con las del GLM-4.6V-Flash original.
-- Evaluación de robustez de filtros: se puede usar como generador adversario para probar clasificadores de contenido o guardarraíles de terceros, en un entorno aislado y con registro de resultados.
-- Experimentación académica con modelos multimodales: si se confirma la entrada de imágenes, permite estudiar cómo afecta la abliteración a tareas de descripción visual o VQA en un checkpoint de ~10,3 mil millones de parámetros.
-- Prototipado interno de asistentes conversacionales: para iterar sobre prompts y flujos de diálogo en un entorno de desarrollo, sin exponerlo a usuarios finales.
-- Generación de datos sintéticos etiquetados: producción de pares instrucción-respuesta en dominios donde el modelo base rechazaría la petición, útil para construir datasets de contraste.
-- Generación de texto sin restricciones temáticas en investigación creativa: redacción de ficción o escenarios que el modelo original declinaría, con revisión humana posterior.
-- Pruebas de despliegue y cuantificación: al ser un checkpoint de ~10,3 B en safetensors, sirve para validar pipelines de conversión a GGUF/4 bits y medir el impacto de la cuantización en un modelo multimodal.
-
-En todos los casos, el uso comercial o de cara al público requiere una evaluación propia de seguridad, sesgos y licencia del modelo base, que no está disponible.
+- Investigación sobre alineación y robustez: el modelo sirve como objeto de estudio para medir cómo la abliteración altera la tasa de rechazos, la utilidad percibida y la degradación de capacidades frente al GLM-4.6V-Flash original, en entornos controlados de laboratorio.
+- Evaluación comparativa de seguridad: permite contrastar respuestas de un checkpoint abliterado con las del modelo base sobre un conjunto de prompts de riesgo, para calibrar clasificadores y filtros de salida en pipelines de moderación.
+- Pruebas de red teaming internas: útil para entrenar evaluadores humanos y automáticos a reconocer respuestas no filtradas y diseñar contramedidas antes de desplegar modelos con salvaguardas.
+- Generación de texto creativo sin fricción: en entornos donde las políticas del modelo base bloquean contenido legítimo (ficción, narrativa adulta no dañina, escenarios hipotéticos), la variante abliterada reduce los rechazos espurios; requiere revisión humana del contenido generado.
+- Experimentación con modelos multimodales editados: permite estudiar si la abliteración afecta la rama visual del modelo, comparando descripciones de imágenes entre el checkpoint original y el derivado.
+- Base para fine-tuning posterior: al estar en safetensors y licencia MIT, puede servir como punto de partida para ajustes específicos de dominio (por ejemplo, estilo editorial o asistencia técnica) sin las restricciones de rechazo del modelo original, siempre con salvaguardas externas.
+- Docencia y demostraciones sobre edición de pesos: caso práctico para explicar abliteración, direcciones de activación y sus límites en cursos de interpretabilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye MMLU, HumanEval, GSM8K, MMMU ni ninguna otra métrica, y tampoco hay comparación con el modelo original. Cualquier cifra de rendimiento debería obtenerse mediante evaluación propia.
+No se han publicado resultados de benchmarks en la información disponible. La model card del autor no incluye MMLU, HumanEval, GSM8K, MMMU ni ninguna otra métrica, ni comparaciones numéricas con el modelo base. Tampoco se documentan evaluaciones de tasa de rechazo o de degradación tras la abliteración.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16/FP16: unos 20,6 GB solo para pesos, más entre 1 y 4 GB de caché KV y activaciones según longitud de contexto; en la práctica, 24 GB o más.
-- VRAM estimada en cuantización de 8 bits: en torno a 11 GB de pesos, unas 16 GB totales con contexto moderado.
-- VRAM estimada en cuantización de 4 bits: en torno a 6-7 GB de pesos, unas 10-12 GB totales.
-- GPU de centro de datos: A100 40/80 GB, H100, L40S o A6000 para BF16 sin compromisos y para servir varias peticiones concurrentes.
-- GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede alojar los pesos en BF16 de forma ajustada; una RTX 4080, 4070 Ti o 4060 Ti de 16 GB requiere cuantización de 8 o 4 bits.
-- Despliegue: no hay instrucciones de despliegue publicadas. La disponibilidad de vLLM, TGI, llama.cpp u Ollama dependerá del soporte efectivo de la arquitectura `glm4v` en cada runtime; conviene verificar la conversión a GGUF antes de planificar producción.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 20,6 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se recomienda 24 GB o más para contextos moderados.
+- VRAM estimada en cuantización de 8 bits: entorno a 10-11 GB para pesos, con margen adicional para activaciones.
+- VRAM estimada en cuantización de 4 bits: entorno a 5,5-6,5 GB para pesos, viable en GPUs de consumo de gama alta.
+- GPU recomendadas: A100 40/80 GB, H100 para servicio de alta concurrencia; RTX 4090 (24 GB) para FP16 con contexto limitado; RTX 3090/4080 para 8 bits; RTX 4060 Ti 16 GB o superiores para 4 bits.
+- Cabe en GPU de consumo: sí, en cuantizaciones de 8 y 4 bits; en FP16 requiere tarjetas de 24 GB o más.
+- Opciones de despliegue: llama.cpp/Ollama si se generan cuantizaciones GGUF a partir de los safetensors; vLLM y TGI para servicio en FP16/BF16; transformers como vía de referencia. No se publican cuantizaciones oficiales en el repo.
+- Latencia y throughput: no disponibles; no se han publicado mediciones del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Estado |
 |---|---|---|---|---|---|
-| GLM-4.6V-Flash-3MPER0RR-abliterated | 10,29 mil millones | no disponible | probable (tag `glm4v`), no confirmado | MIT (declarada) | Hugging Face, 0 descargas |
-| GLM-4.6V-Flash (modelo original) | no disponible | no disponible | no disponible en la información aportada | no disponible en la información aportada | referenciado como modelo base, sin enlace en la información disponible |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no se aporta informacion sobre otros modelos comparables |
+| GLM-4.6V-Flash-3MPER0RR-abliterated | ~10,3 mil millones | no disponible | sí (tag `glm4v`) | MIT | Disponible en HF, 559 descargas |
+| huihui-ai/Huihui-GLM-4.6V-Flash-abliterated (base directo) | no disponible | no disponible | sí | no disponible en esta ficha | Disponible en HF |
+| GLM-4.6V-Flash (Zhipu AI, original) | no disponible | no disponible | sí | no disponible en esta ficha | Modelo de referencia de la familia |
+| Alternativas abliteradas de la familia Qwen/Llama | variable | variable | depende del base | variable | Disponibles en HF (huihui-ai y otros) |
 
-No se dispone de datos suficientes para establecer una comparación cuantitativa con alternativas de la misma categoría (por ejemplo, otros VLM de ~7-12 mil millones de parámetros). La comparación se limita a la relación entre este checkpoint y su modelo base.
+La comparación cuantitativa con alternativas no puede completarse: no hay datos de contexto, benchmarks ni licencia del modelo base y del original en la información proporcionada. La diferencia principal frente al base directo es la aplicación de una ronda adicional de abliteración por parte de 3MPER0RR.
 
 ## Limitaciones y advertencias
 
-- La abliteración suprime los mecanismos de rechazo del modelo base: es esperable que genere contenido que el original bloquearía. No debe exponerse a usuarios finales sin guardarraíles externos.
-- No existe ninguna evaluación publicada del efecto de la abliteración sobre las capacidades del modelo, ni sobre su tasa de alucinación antes y después.
-- Riesgo de alucinación: no disponible. Sin benchmarks ni documentación, no puede caracterizarse.
-- Sesgos: no disponibles. No se ha publicado ninguna auditoría.
-- Idiomas y contexto: ambos desconocidos, lo que impide planificar aplicaciones multilingües o de contexto largo.
-- Licencia: la model card declara MIT, pero no aclara los términos del modelo base GLM-4.6V-Flash. Antes de un uso comercial conviene verificar la licencia original, porque una licencia derivada no puede ampliar los derechos que ya venían restringidos.
-- Madurez: 0 descargas y 0 likes implican ausencia de validación por parte de la comunidad. No hay issues, informes de errores ni reproducibilidad del proceso de abliteración.
-- Los metadatos indican una fecha de creación de 2026-09-19, posterior a la fecha habitual de referencia de este tipo de publicaciones; conviene tratar la cronología del repositorio con cautela.
-- Al ser un modelo multimodal, cualquier uso con imágenes añade superficie de riesgo (contenido gráfico, datos personales en capturas) que no está cubierta por la documentación.
+- La abliteración elimina salvaguardas de rechazo; el modelo puede producir contenido que el GLM-4.6V-Flash original bloquearía. No debe exponerse directamente a usuarios finales sin filtros externos.
+- Riesgo elevado de alucinación y de respuestas inseguras, agravado por la falta de evaluación publicada tras la edición de pesos.
+- La abliteración puede degradar capacidades (razonamiento, coherencia, seguimiento de instrucciones); no hay métricas que cuantifiquen esta pérdida.
+- Idiomas, contexto y comportamiento multimodal no documentados; no se puede garantizar el rendimiento en castellano ni en otros idiomas.
+- Licencia MIT declarada, pero el modelo base y el original pueden tener términos adicionales que el autor no reproduce; conviene verificar las licencias de huihui-ai y Zhipu AI antes de uso comercial.
+- Modelo de investigación con 559 descargas y cero likes en el momento de la consulta; sin mantenimiento, issues ni soporte documentados.
+- La model card es mínima y no incluye metodología reproducible; los resultados de la abliteración no son auditables a partir de la información pública.
+- Fecha de creación y actualización (2026) y ausencia de datos de validación externa aconsejan tratar el checkpoint como experimental.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated
-- Modelo base (GLM-4.6V-Flash): no se incluye enlace en la información proporcionada.
-- Paper, blog o repositorio del autor: no disponibles.
-- Búsqueda web: no se han encontrado resultados relevantes. Las referencias devueltas corresponden al servicio de streaming VTM Go y a foros de operadores belgas, sin relación alguna con el modelo.
+- Modelo base directo: https://huggingface.co/huihui-ai/Huihui-GLM-4.6V-Flash-abliterated
+- Familia GLM-4.6V de Zhipu AI: https://huggingface.co/zai-org (repositorio de modelos del laboratorio; enlace de referencia, no verificado en la búsqueda)
+- Repositorio de huihui-ai: https://huggingface.co/huihui-ai (enlace de referencia, no verificado en la búsqueda)

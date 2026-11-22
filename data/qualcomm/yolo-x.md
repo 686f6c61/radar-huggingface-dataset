@@ -2,106 +2,133 @@
 
 ## Resumen
 
-Yolo-X es un modelo de detección de objetos en tiempo real, basado en la implementación de YOLOX desarrollada por Megvii-BaseDetection, que Qualcomm ha optimizado y pre-exportado para su ejecución en dispositivos con chipsets Snapdragon y Dragonwing. El modelo predice bounding boxes y clases de objetos en imágenes, y está pensado para despliegue en entornos móviles y de edge computing, donde la latencia y el consumo de recursos son críticos.
+Yolo-X es un modelo de detección de objetos en tiempo real basado en la implementación YOLOX Small del repositorio Megvii-BaseDetection, empaquetado y optimizado por Qualcomm para su despliegue en dispositivos con aceleración NPU de la familia Snapdragon y Dragonwing. El modelo predice cajas delimitadoras y clases de objetos sobre imágenes de entrada de 640x640 píxeles, y se distribuye en formatos precompilados (ONNX, QNN_DLC y TFLITE) con distintas precisiones (float, w8a16, w8a8 y w8a8_mixed_int16) listos para ejecutarse sobre el runtime QAIRT 2.51.
 
-La versión publicada en Hugging Face corresponde al checkpoint YoloX Small, con 8,98 millones de parámetros y una resolución de entrada de 640x640 píxeles. Qualcomm proporciona múltiples formatos de exportación (ONNX, QNN_DLC y TFLITE) con diferentes esquemas de cuantización (float, w8a16, w8a8), lo que permite adaptar el modelo a distintos requisitos de memoria y rendimiento. Su relevancia actual radica en que ofrece detección de objetos de alta velocidad directamente en la NPU de los procesadores Qualcomm, con tiempos de inferencia que van desde 6,27 ms en el Snapdragon 8 Elite Gen 5 hasta 64,8 ms en chipsets más modestos.
+Se trata de un modelo convolucional compacto de 8,98 millones de parámetros y 34,3 MB en precisión float, que se reduce hasta 8,96 MB en cuantización w8a8. No es un modelo generativo ni un LLM: es un detector de objetos de una sola etapa pensado para inferencia de baja latencia en el borde. Su relevancia actual radica en que Qualcomm publica artefactos ya compilados y perfilados para chipsets concretos, con tiempos de inferencia medidos que van desde 5,48 ms en Snapdragon 8 Elite Extreme Gen 6 hasta 21,449 ms en Snapdragon 8 Gen 1, lo que facilita la integración en aplicaciones Android y en plataformas embebidas sin necesidad de recompilar.
+
+El repositorio tiene 565 descargas y 9 likes en Hugging Face, con licencia Apache 2.0, lo que permite uso comercial. La ficha se centra en las capacidades de detección y en los artefactos de despliegue publicados; no se dispone de información sobre el dataset de entrenamiento original ni sobre métricas de precisión (mAP) en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | YoloX Small (basado en YOLOX de Megvii-BaseDetection) |
+| Arquitectura | YOLOX Small (detector de objetos de una etapa, convolucional) |
 | Parametros totales | 8,98 M |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (modelo de vision) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de visión, no de texto) |
 | Tipos de cuantizacion | float, w8a16, w8a8, w8a8_mixed_int16 |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | ONNX, QNN_DLC, TFLITE, PyTorch |
+| Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX, QNN_DLC, TFLITE; checkpoint original YOLOX Small |
+| Resolucion de entrada | 640x640 |
+| Tamano del modelo (float) | 34,3 MB |
+| Tamano del modelo (w8a16) | 9,53 MB |
+| Tamano del modelo (w8a8) | 8,96 MB |
+| Runtime | QAIRT 2.51, ONNX Runtime 1.30.0 |
+| Unidad de computo principal | NPU (Hexagon) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo más allá de indicar que se trata del checkpoint YoloX Small. YOLOX es un detector de objetos de una sola etapa (one-stage) que emplea una red troncal CSPDarknet y una cabeza de detección desacoplada, con diseño anchor-free. Sin embargo, estos detalles no están confirmados en la model card de Qualcomm, por lo que deben tomarse como referencia general de la familia YOLOX.
+Yolo-X se basa en YOLOX Small, un detector de objetos de una sola etapa con arquitectura convolucional (backbone tipo CSPDarknet con cuello PAN y cabecera desacoplada). El modelo original fue desarrollado por Megvii-BaseDetection y esta implementación concreta corresponde al checkpoint YOLOX Small exportado por Qualcomm AI Hub Models. La entrada es una imagen RGB de 640x640 píxeles y la salida son cajas delimitadoras con sus clases y puntuaciones de confianza.
 
-No se han publicado datos sobre el proceso de entrenamiento: ni el número de tokens (al ser un modelo de visión, se hablaría de imágenes), ni la composición del dataset, ni si se aplicaron técnicas de refinamiento como RLHF o DPO. La model card solo indica que el modelo está basado en la implementación pública de YOLOX y que Qualcomm ha realizado la optimización y exportación para sus dispositivos. El repositorio de Qualcomm AI Hub Models permite exportar el modelo con pesos personalizados, lo que sugiere que es posible fine-tuning, pero no se documenta el entrenamiento original.
+No se dispone de información en la documentación proporcionada sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF o DPO (no aplicables a un detector de objetos). La innovación técnica destacable no está en el entrenamiento sino en el proceso de compilación y cuantización de Qualcomm: el modelo se exporta a QNN_DLC y TFLITE con cuantizaciones w8a16, w8a8 y w8a8_mixed_int16, y se perfila en NPU de chipsets Snapdragon y Dragonwing concretos. La librería Qualcomm AI Hub Models permite reexportar con pesos personalizados, formas de entrada personalizadas y configuraciones de dispositivo y runtime a medida.
 
 ## Capacidades
 
-- Detección de objetos: predice bounding boxes y clases de objetos en imágenes, con resolución de entrada de 640x640 píxeles.
-- Inferencia en tiempo real: optimizado para ejecución en NPU de chipsets Qualcomm, con latencias de 6 a 65 ms según el dispositivo.
-- Múltiples formatos de despliegue: ONNX, QNN_DLC y TFLITE, lo que facilita la integración en pipelines de Android, edge y servidores.
-- Cuantización flexible: soporta pesos en float, w8a16 y w8a8, permitiendo reducir el tamaño del modelo de 34,3 MB a 8,96 MB sin necesidad de hardware especializado.
-- Compatibilidad con Qualcomm AI Hub: permite compilar, perfilar y evaluar el modelo en dispositivos reales a través de la plataforma Qualcomm AI Hub Workbench.
+- Detección de objetos en imágenes: predice cajas delimitadoras y clases de objetos sobre entradas de 640x640.
+- Inferencia en tiempo real: latencias medidas entre 5,48 ms y 21,449 ms según chipset, con ejecución en NPU.
+- Despliegue en el borde: artefactos precompilados para Android y plataformas embebidas con Snapdragon y Dragonwing.
+- Cuantización agresiva: versiones w8a16 y w8a8 que reducen el tamaño hasta 8,96 MB manteniendo el formato de salida.
+- Compatibilidad multiplataforma de runtime: ONNX Runtime 1.30.0 y QAIRT 2.51.
+- Exportación personalizada: permite recompilar con pesos fine-tuneados, formas de entrada propias y configuración de dispositivo.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni procesamiento de lenguaje natural.
+- No dispone de modo thinking, visión generativa, audio ni capacidades multimodales más allá de la detección de objetos.
 
 ## Casos de uso
 
-- Vigilancia y seguridad perimetral: el modelo puede detectar personas, vehículos u objetos en tiempo real en cámaras IP conectadas a dispositivos Snapdragon, gracias a su baja latencia (7,6 ms en Snapdragon X2 Elite) y a que se ejecuta en la NPU, liberando la CPU para otras tareas.
-- Conteo de objetos en entornos industriales: en líneas de producción, Yolo-X puede contar piezas o productos que pasan por una cinta, usando un dispositivo Dragonwing QCS8550 con una inferencia de 13,7 ms, suficiente para procesar más de 70 fotogramas por segundo.
-- Detección de peatones para asistencia a la conducción: integrado en un sistema embebido con Snapdragon 8 Gen 3, el modelo puede identificar peatones y ciclistas en tiempo real (9,2 ms por imagen) para alertar al conductor o activar frenadas de emergencia.
-- Aplicaciones Android de realidad aumentada: al estar disponible en formato TFLITE con cuantización w8a8 (8,96 MB), puede integrarse en apps móviles que superpongan información sobre objetos detectados, con un consumo de memoria de 5-190 MB según el chipset.
-- Automatización de inventario en retail: un dron o robot móvil equipado con un módulo Qualcomm puede usar Yolo-X para escanear estanterías y detectar productos, con un tiempo de inferencia de 15 ms en Dragonwing IQ-8275, permitiendo actualizar el stock en tiempo real.
-- Análisis de imágenes médicas para detección de anomalías: aunque no está específicamente entrenado para dominios médicos, el modelo puede adaptarse mediante fine-tuning para localizar estructuras o lesiones en radiografías, aprovechando su tamaño reducido para ejecutarse en equipos portátiles de diagnóstico.
+- Detección de objetos en aplicaciones Android: el modelo se integra mediante los artefactos TFLITE u ONNX y se ejecuta en la NPU del Snapdragon, con latencias de 5,48 a 21,449 ms que permiten procesamiento de vídeo en tiempo real en el propio dispositivo sin enviar imágenes a la nube.
+- Vigilancia y análisis de vídeo en el borde: con 640x640 de entrada y ejecución en NPU, se puede desplegar en cámaras IP o dispositivos Dragonwing para detectar personas, vehículos u objetos en streams de vídeo con baja latencia y sin coste de ancho de banda.
+- Automatización industrial y control de calidad: la versión w8a8 de 8,96 MB cabe en dispositivos embebidos con Snapdragon o Dragonwing IQ-8275 (15,111 ms de inferencia) para inspección visual en líneas de producción.
+- Robótica y drones: el bajo consumo de memoria (rangos de 0 a 207 MB de pico según chipset y precisión) y la latencia inferior a 22 ms permiten integrar el detector en bucles de control de robots o vehículos autónomos no tripulados.
+- Aplicaciones de realidad aumentada: la detección en NPU con latencias de 5 a 13 ms en chipsets de gama alta (Snapdragon 8 Elite, X2 Elite) permite superponer información sobre objetos detectados en tiempo real en la cámara del dispositivo.
+- Procesamiento por lotes en estaciones de trabajo con Snapdragon X Elite: la versión ONNX float se ejecuta en 13,311 ms con 14 MB de pico, adecuada para análisis de imágenes en portátiles con Windows on Snapdragon.
+- Investigación y prototipado: la librería Qualcomm AI Hub Models permite reexportar el modelo con pesos fine-tuneados y formas de entrada personalizadas para experimentar con variantes del detector en hardware Qualcomm.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de precisión (como mAP en COCO o similar) en la información disponible. La model card solo incluye una tabla de rendimiento de inferencia en diferentes chipsets de Qualcomm, que se reproduce a continuación:
+No se han publicado resultados de benchmarks de precisión (mAP, IoU) en la información disponible. La model card únicamente proporciona métricas de latencia y memoria de inferencia por chipset y precisión:
 
-| Modelo | Runtime | Precision | Chipset | Tiempo de inferencia (ms) | Pico de memoria (MB) | Unidad de computo |
-|---|---|---|---|---|---|---|
-| Yolo-X | ONNX | float | Snapdragon X2 Elite | 7,6 | 5 - 5 | NPU |
-| Yolo-X | ONNX | float | Snapdragon X Elite | 13,695 | 14 - 14 | NPU |
-| Yolo-X | ONNX | float | Snapdragon 8 Gen 3 Mobile | 9,243 | 5 - 190 | NPU |
-| Yolo-X | ONNX | float | Snapdragon 8 Gen 1 Mobile | 25,602 | 1 - 208 | NPU |
-| Yolo-X | ONNX | float | Dragonwing IQ-8275 | 15,376 | 5 - 8 | NPU |
-| Yolo-X | ONNX | float | Dragonwing QCS8550 (Proxy) | 13,672 | 0 - 17 | NPU |
-| Yolo-X | ONNX | float | QCS8450 | 25,602 | 1 - 208 | NPU |
-| Yolo-X | ONNX | float | Dragonwing IQ-9075 | 16,605 | 5 - 7 | NPU |
-| Yolo-X | ONNX | float | Dragonwing IQ-X7181 | 13,695 | 14 - 14 | NPU |
-| Yolo-X | ONNX | float | Dragonwing Q-8750 | 7,716 | 0 - 158 | NPU |
-| Yolo-X | ONNX | float | Snapdragon 8 Elite Mobile | 7,716 | 0 - 158 | NPU |
-| Yolo-X | ONNX | float | Snapdragon 8 Elite Gen 5 Mobile | 6,271 | 2 - 165 | NPU |
-| Yolo-X | ONNX | w8a16 | Snapdragon X2 Elite | 11,942 | 2 - 2 | NPU |
-| Yolo-X | ONNX | w8a16 | Snapdragon X Elite | 15,048 | 8 - 8 | NPU |
-| Yolo-X | ONNX | w8a16 | Snapdragon 8 Gen 3 Mobile | 10,187 | 3 - 240 | NPU |
-| Yolo-X | ONNX | w8a16 | Snapdragon 8 Gen 1 Mobile | 16,21 | 3 - 240 | NPU |
-| Yolo-X | ONNX | w8a16 | Dragonwing QCS6490 | 29,457 | 2 - 5 | NPU |
-| Yolo-X | ONNX | w8a16 | Dragonwing IQ-8275 | 13,937 | 2 - 6 | NPU |
-| Yolo-X | ONNX | w8a16 | Dragonwing QCS8550 (Proxy) | 14,209 | 0 - 163 | NPU |
-| Yolo-X | ONNX | w8a16 | QCS8450 | 16,21 | 3 - 240 | NPU |
-| Yolo-X | ONNX | w8a16 | Dragonwing IQ-9075 | 15,275 | 2 - 5 | NPU |
-| Yolo-X | ONNX | w8a16 | Dragonwing IQ-X7181 | 15,048 | 8 - 8 | NPU |
-| Yolo-X | ONNX | w8a16 | Dragonwing Q-6690 | 64,812 | 3 - 208 | NPU |
-| Yolo-X | ONNX | w8a16 | Dragonwing Q-7790 | 10,523 | 3 - 207 | NPU |
-| Yolo-X | ONNX | w8a16 | Dragonwing Q-8750 | 9,147 | 0 - 206 | NPU |
-| Yolo-X | ONNX | w8a16 | Snapdragon 8 Elite Mobile | 9,147 | 0 - 206 | NPU |
+| Chipset | Runtime | Precision | Tiempo de inferencia (ms) | Memoria pico (MB) | Unidad de computo |
+|---|---|---|---|---|---|
+| Snapdragon 8 Elite Extreme Gen 6 Mobile | ONNX | float | 5,48 | 5 - 158 | NPU |
+| Snapdragon 8 Elite Gen 6 Mobile | ONNX | float | 5,672 | 3 - 155 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | ONNX | float | 6,389 | 0 - 160 | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | ONNX | float | 7,649 | 22 - 173 | NPU |
+| Snapdragon X2 Elite | ONNX | float | 7,84 | 5 - 5 | NPU |
+| Snapdragon 8 Gen 3 Mobile | ONNX | float | 9,082 | 2 - 177 | NPU |
+| Snapdragon X Elite | ONNX | float | 13,311 | 14 - 14 | NPU |
+| Dragonwing QCS8550 (Proxy) | ONNX | float | 13,345 | 0 - 17 | NPU |
+| Dragonwing IQ-X7181 | ONNX | float | 13,311 | 14 - 14 | NPU |
+| Dragonwing IQ-8275 | ONNX | float | 15,111 | 5 - 9 | NPU |
+| Dragonwing IQ-9075 | ONNX | float | 16,826 | 5 - 8 | NPU |
+| Snapdragon 8 Gen 1 Mobile | ONNX | float | 21,449 | 1 - 205 | NPU |
+| QCS8450 | ONNX | float | 21,449 | 1 - 205 | NPU |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | ONNX | w8a16 | 10,751 | 2 - 207 | NPU |
+| Snapdragon 8 Elite For Galaxy Mobile | ONNX | w8a16 | 8,536 | 0 - 198 | NPU |
+| Snapdragon X2 Elite | ONNX | w8a16 | 12,215 | 2 - 2 | NPU |
+| Snapdragon X Elite | ONNX | w8a16 | 14,528 | 7 - 7 | NPU |
 
-La tabla continúa en la fuente original con más combinaciones de precisión y chipsets, pero los datos mostrados son representativos. No se dispone de métricas de precisión como mAP, por lo que no es posible comparar el rendimiento de detección con otros modelos.
+No se dispone de datos de throughput (FPS) ni de métricas de precisión de detección en la información proporcionada.
 
 ## Requisitos de hardware
 
-- El modelo está diseñado para ejecutarse en la NPU de chipsets Qualcomm, no en GPUs de propósito general. Los tiempos de inferencia listados se obtuvieron en dispositivos Snapdragon y Dragonwing.
-- Tamaño del modelo: 34,3 MB en float, 9,53 MB en w8a16 y 8,96 MB en w8a8. Esto permite que quepa en la memoria de cualquier dispositivo móvil moderno.
-- Pico de memoria durante inferencia: entre 1 MB y 240 MB según el chipset y la precisión, lo que lo hace viable para dispositivos con restricciones de RAM.
-- No se proporcionan requisitos de VRAM para GPUs de escritorio, pero al ser un modelo de solo 8,98 M de parámetros, cualquier GPU con más de 2 GB de VRAM podría ejecutarlo sin problemas si se convierte a un formato compatible (por ejemplo, ONNX con runtime de CPU o GPU).
-- Opciones de despliegue: los formatos pre-exportados (ONNX, QNN_DLC, TFLITE) se pueden integrar con ONNX Runtime, Qualcomm AI Runtime (QAIRT) o TensorFlow Lite. También se puede usar la librería Qualcomm AI Hub Models para exportar con configuraciones personalizadas.
-- Latencia: entre 6,27 ms (Snapdragon 8 Elite Gen 5, float) y 64,8 ms (Dragonwing Q-6690, w8a16), lo que permite aplicaciones en tiempo real en la mayoría de los chipsets listados.
+- VRAM estimada: no aplica en el sentido tradicional; el modelo se ejecuta en NPU de dispositivos Qualcomm. La memoria pico medida oscila entre 0 y 207 MB según chipset y precisión.
+- GPU recomendadas: no se especifican GPU; el modelo está optimizado para NPU Hexagon de Snapdragon y Dragonwing.
+- Cabe en dispositivos de consumo: sí, en smartphones y portátiles con Snapdragon 8 Gen 1, 8 Gen 3, 8 Elite, X Elite, X2 Elite y plataformas Dragonwing (IQ-8275, IQ-9075, IQ-X7181, QCS8550, QCS8450, Q-8750).
+- Opciones de despliegue: ONNX Runtime 1.30.0, QAIRT 2.51, QNN_DLC, TFLITE; exportación mediante la librería Qualcomm AI Hub Models.
+- Latencia: entre 5,48 ms (Snapdragon 8 Elite Extreme Gen 6, float) y 21,449 ms (Snapdragon 8 Gen 1, float).
+- Throughput: no disponible en la información proporcionada.
+- No se dispone de requisitos para GPU convencionales (A100, H100, RTX 4090) porque el modelo está orientado a NPU Qualcomm.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos de detección de objetos en la documentación proporcionada. La model card no incluye comparaciones con YOLOv8, YOLOv5, EfficientDet u otras alternativas. Por tanto, no es posible ofrecer una tabla comparativa basada en datos verificados. Se recomienda consultar benchmarks externos de precisión (como COCO mAP) y latencia en hardware equivalente para realizar una evaluación justa.
+No se dispone de datos de benchmarks de precisión ni de comparativas directas con otros detectores en la información proporcionada. A continuación se comparan características técnicas con alternativas de la misma categoría (detectores de objetos ligeros), indicando los datos disponibles y marcando como "no disponible" lo que no se conoce:
+
+| Modelo | Parametros | Entrada | Licencia | Formatos | Optimizado para |
+|---|---|---|---|---|---|
+| Yolo-X (Qualcomm) | 8,98 M | 640x640 | Apache 2.0 | ONNX, QNN_DLC, TFLITE | NPU Snapdragon/Dragonwing |
+| YOLOX Small (original) | no disponible | 640x640 | Apache 2.0 | PyTorch | GPU/CPU genéricas |
+| YOLOv8n | no disponible | 640x640 | AGPL-3.0 | PyTorch, ONNX | GPU/CPU genéricas |
+| YOLOv5n | no disponible | 640x640 | GPL-3.0 | PyTorch, ONNX | GPU/CPU genéricas |
+
+No se dispone de datos de mAP ni de latencia de los modelos alternativos en la información proporcionada, por lo que no se puede establecer una comparación de rendimiento cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos en la model card, pero al ser un modelo de detección de objetos genérico, su rendimiento puede degradarse en condiciones de baja iluminación, oclusiones o clases poco representadas en el dataset de entrenamiento original.
-- Riesgo de alucinación: en detección de objetos, el modelo puede producir falsos positivos (bounding boxes incorrectos) o falsos negativos, especialmente en imágenes con objetos pequeños o superpuestos.
-- Limitaciones de contexto: al ser un modelo de visión, no procesa texto ni mantiene estado conversacional. Su entrada es una imagen fija de 640x640 píxeles; no soporta video de forma nativa, aunque se puede aplicar fotograma a fotograma.
-- Restricciones de licencia: la licencia Apache-2.0 permite uso comercial, modificación y redistribución, siempre que se mantenga el aviso de copyright. No hay restricciones conocidas adicionales.
-- Dependencia de hardware Qualcomm: los formatos QNN_DLC y las optimizaciones de rendimiento están pensados para la NPU de Qualcomm. En otras plataformas (GPU NVIDIA, Apple Silicon, etc.), el modelo puede ejecutarse vía ONNX, pero no se garantizan las mismas latencias.
-- La información de entrenamiento (dataset, número de épocas, técnicas de aumento) no está disponible, lo que limita la capacidad de evaluar su robustez en dominios específicos.
+- No se dispone de información sobre sesgos del dataset de entrenamiento ni sobre el rendimiento en dominios específicos (iluminación, oclusión, clases poco frecuentes).
+- Riesgo de alucinación no aplicable en el sentido generativo, pero sí existe riesgo de falsos positivos y falsos negativos en la detección, sin métricas publicadas de precisión o recall.
+- Limitaciones de contexto o idioma: no aplica; el modelo no procesa texto ni lenguaje.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los artefactos de runtime (QAIRT, ONNX Runtime) y de la implementación original YOLOX.
+- El modelo está optimizado exclusivamente para hardware Qualcomm; no se garantiza su funcionamiento en GPU o CPU de otros fabricantes con los artefactos QNN_DLC.
+- Las latencias publicadas corresponden a perfiles concretos de chipset y runtime; el rendimiento real puede variar según condiciones térmicas, carga del sistema y versión de SDK.
+- No se dispone de información sobre el dataset de entrenamiento ni sobre el proceso de fine-tuning, lo que limita la evaluación de su comportamiento en clases no representadas.
+- La cuantización w8a8 puede degradar la precisión de detección respecto a float; no se publican métricas comparativas de mAP entre precisiones.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/qualcomm/Yolo-X
-- Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/yolox
-- Repositorio de Qualcomm AI Hub Models (código de exportación): https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/yolox
-- Implementación original de YOLOX (Megvii-BaseDetection): https://github.com/Megvii-BaseDetection/YOLOX/
+- Hugging Face: https://huggingface.co/qualcomm/Yolo-X
+- Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/yolox
+- Repositorio Qualcomm AI Hub Models (YOLOX): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/yolox
+- Implementación original YOLOX (Megvii): https://github.com/Megvii-BaseDetection/YOLOX/
+- Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
+- Registro en Qualcomm: https://myaccount.qualcomm.com/signup
+- Descarga ONNX float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-onnx-float.zip
+- Descarga ONNX w8a16: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-onnx-w8a16.zip
+- Descarga ONNX w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-onnx-w8a8.zip
+- Descarga ONNX w8a8_mixed_int16: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-onnx-w8a8_mixed_int16.zip
+- Descarga QNN_DLC float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-qnn_dlc-float.zip
+- Descarga QNN_DLC w8a16: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-qnn_dlc-w8a16.zip
+- Descarga QNN_DLC w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-qnn_dlc-w8a8.zip
+- Descarga QNN_DLC w8a8_mixed_int16: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-qnn_dlc-w8a8_mixed_int16.zip
+- Descarga TFLITE float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-tflite-float.zip
+- Descarga TFLITE w8a8: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/yolox/releases/v0.67.0/yolox-tflite-w8a8.zip

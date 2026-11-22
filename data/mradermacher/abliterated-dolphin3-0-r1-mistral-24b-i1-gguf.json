@@ -17,8 +17,6 @@
     "transformers",
     "gguf",
     "en",
-    "base_model:SAIFIINDUSTRIES/Abliterated-Dolphin3.0-R1-Mistral-24B",
-    "base_model:quantized:SAIFIINDUSTRIES/Abliterated-Dolphin3.0-R1-Mistral-24B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -26,7 +24,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 2782,
+  "downloads_30d": 2603,
   "trending_score": 0,
   "parameters": 23572423680,
   "parameters_human": "23.57B",

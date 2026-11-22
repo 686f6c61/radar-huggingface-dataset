@@ -2,90 +2,89 @@
 
 ## Resumen
 
-SmolLM2-135M-Instruct es un modelo de lenguaje de pequeno tamano (135 millones de parametros) desarrollado por Hugging Face dentro de la familia SmolLM2, orientado a generacion de texto conversacional e instrucciones. Esta ficha concreta corresponde a una publicacion derivada del repositorio original bajo el identificador `vedang-1825/smollm2-135m-instruct-test1`, un repositorio de caracter educativo y experimental, con acceso restringido (gated) y sin descargas registradas en el momento de la consulta. El modelo base emplea una arquitectura transformer de tipo decoder-only con tokenizador Llama, disenada para ejecutarse en hardware muy modesto, incluidos dispositivos de borde y CPU.
+Este repositorio contiene una copia educativa de SmolLM2-135M-Instruct, un modelo de lenguaje decoder-only de tipo transformer desarrollado originalmente por Hugging Face Smol Models Research. El modelo tiene 134.515.008 parámetros totales (aproximadamente 135 millones) y está ajustado para seguir instrucciones en inglés. La copia fue subida por el usuario vedang-1825 con fines de aprendizaje sobre el flujo de trabajo de Hugging Face: subida de modelos, documentación, control de versiones y gestión de accesos. Los pesos son idénticos a los del modelo original; no se realizó ningún entrenamiento ni fine-tuning adicional.
 
-El interes de este modelo radica en su reducido coste computacional: con 134.515.008 parametros reales (segun los pesos en safetensors) y un repositorio de aproximadamente 0,3 GB, puede desplegarse en entornos con recursos limitados, lo que lo hace util para prototipado rapido, experimentacion docente y tareas de generacion de texto sencillas. La familia SmolLM2 se entreno con un enfasis explicito en eficiencia y calidad por parametro, y este checkpoint incorpora ajuste por instrucciones y formato conversacional.
+SmolLM2-135M-Instruct pertenece a la familia SmolLM2, una línea de modelos compactos diseñada para ejecutarse en hardware de gama baja, incluyendo dispositivos de borde y CPUs. Su relevancia radica en que permite experimentar con generación de texto e instrucciones sin requerir GPU de altas prestaciones, lo que lo hace útil para prototipado rápido, docencia y pruebas de pipelines de inferencia.
 
-No obstante, conviene subrayar que se trata de un modelo de 135M: su capacidad de razonamiento, su cobertura multilingue (solo ingles declarado) y su fiabilidad factual son limitadas en comparacion con modelos de mayor escala. La licencia Apache 2.0 del modelo base facilita su reutilizacion, si bien el repositorio concreto esta marcado como gated y requiere aceptar condiciones en Hugging Face.
+Este repositorio concreto es un espejo educativo, no una versión oficial. Para uso en producción o investigación seria, debe acudirse al repositorio original de Hugging Face, que incluye la model card completa, los detalles de entrenamiento y los resultados de benchmarks publicados por los desarrolladores.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Llama) |
+| Arquitectura | Transformer decoder-only |
 | Parametros totales | 134.515.008 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base SmolLM2 declara 8.192 tokens; no confirmado para este checkpoint) |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (libreria transformers) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (el repo incluye safetensors y gguf) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, gguf |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura de la familia SmolLM2, un transformer decoder-only con tokenizador de tipo Llama, disenado para generacion autorregresiva de texto. El checkpoint esta marcado como `instruction-tuned` y `conversational`, lo que indica un ajuste posterior al preentrenamiento orientado a seguir instrucciones y mantener dialogos multi-turno. Los detalles exactos del dataset de ajuste, el numero de tokens de entrenamiento y el uso de tecnicas como RLHF o DPO no se especifican en la informacion disponible para este repositorio concreto; la referencia `arxiv:2502.02737` apunta al articulo tecnico de la familia SmolLM2, donde se documentan estos aspectos para el modelo base.
+La arquitectura es un transformer decoder-only, el estándar para modelos de generación de texto autorregresiva. El modelo cuenta con 134.515.008 parámetros, lo que lo sitúa en la categoría de modelos ultracompactos. Está ajustado para instrucciones (instruction-tuned), lo que implica que ha pasado por una fase de alineación posterior al preentrenamiento para seguir comandos en inglés.
 
-No se dispone de informacion sobre innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, mezcla de expertos) en este checkpoint. El repositorio se etiqueta como `educational`, lo que sugiere que su proposito principal es la experimentacion y el aprendizaje mas que el despliegue en produccion critica.
+Los detalles concretos de entrenamiento —número de tokens, composición del dataset, uso de RLHF o DPO, e infraestructura— no están disponibles en la información proporcionada para este repositorio. La model card indica explícitamente que los pesos son los originales sin modificaciones y remite al repositorio original de Hugging Face para consultar la metodología completa. El paper de referencia citado es arXiv:2502.02737, que corresponde a la publicación técnica de la familia SmolLM2.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles.
-- Seguimiento de instrucciones basicas (instruction-tuned).
-- Formato conversacional multi-turno.
-- Generacion de texto creativo y respuestas cortas.
-- Tareas simples de extraccion y reformulacion de informacion.
-- No se documenta soporte de tool calling o function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta capacidad de vision, audio ni modo de razonamiento extendido (thinking mode).
-- Capacidad multilingue limitada al ingles segun la metadata del repositorio.
+- Generación de texto autorregresiva en inglés.
+- Seguimiento de instrucciones básicas (instruction following).
+- Respuesta a preguntas simples (question answering).
+- Resumen de texto (summarization).
+- Conversación multi-turno básica, según los tags del repositorio (conversational).
+- Uso en investigación y experimentación educativa.
+- No se ha documentado soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento (thinking mode) en la información disponible.
+- Capacidad multilingüe limitada al inglés según la model card.
 
 ## Casos de uso
 
-- Prototipado educativo: el modelo permite a estudiantes y docentes experimentar con pipelines de `transformers`, ajuste fino y generacion de texto en hardware modesto (CPU o GPU consumer), gracias a sus 135M de parametros y 0,3 GB de pesos.
-- Generacion de texto en dispositivos de borde: su tamano reducido permite ejecutarlo en entornos con poca memoria, como Raspberry Pi o moviles, para tareas de autocompletado o respuestas cortas.
-- Clasificacion y etiquetado ligero: puede usarse como base para tareas de clasificacion de texto o generacion de etiquetas tras un ajuste fino especifico, dado su bajo coste de inferencia.
-- Chatbot de demostracion: sirve para construir prototipos de asistentes conversacionales en ingles con fines de demostracion, sin garantias de calidad en produccion.
-- Ajuste fino especifico de dominio: al ser un modelo pequeno, es viable reentrenarlo con datasets propios en una sola GPU consumer para tareas acotadas (resumen, extraccion, respuesta a preguntas simples).
-- Pruebas de infraestructura: util para validar pipelines de despliegue (vLLM, TGI, llama.cpp) y medir latencia antes de migrar a modelos mayores.
+- Prototipado rápido de pipelines de generación de texto: al tener solo 135 millones de parámetros, el modelo se puede cargar y ejecutar en cuestión de segundos en una CPU o en una GPU modesta, lo que permite validar integraciones con transformers y TGI antes de escalar a modelos mayores.
+- Docencia y formación en IA: sirve para ilustrar el ciclo completo de subida, documentación y versionado de un modelo en Hugging Face, tal como declara el autor del repositorio.
+- Pruebas de cuantización y despliegue: al incluir pesos en safetensors y GGUF, permite experimentar con llama.cpp u Ollama para medir el impacto de distintas cuantizaciones en un modelo pequeño.
+- Generación de texto de bajo coste en dispositivos de borde: su tamaño reducido permite ejecutarlo en entornos con recursos limitados para tareas de relleno, autocompletado o generación de borradores en inglés.
+- Respuesta a preguntas simples en asistentes embebidos: adecuado para FAQ o respuestas acotadas donde no se requiere razonamiento complejo ni contexto largo.
+- Resumen de textos cortos: puede emplearse para condensar párrafos o notas breves en inglés dentro de flujos automatizados de preprocesamiento.
+- Evaluación comparativa de infraestructura: útil como carga de trabajo ligera para medir latencia y throughput de servidores de inferencia (vLLM, TGI) antes de desplegar modelos de mayor tamaño.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para este checkpoint concreto. El articulo de la familia SmolLM2 (`arxiv:2502.02737`) contiene evaluaciones del modelo base, pero no se dispone de sus cifras en la informacion proporcionada, por lo que no se reproducen aqui.
+No se han publicado resultados de benchmarks en la informacion disponible para este repositorio. La model card indica que no se han realizado evaluaciones independientes sobre esta copia de prueba y remite a los resultados publicados por los desarrolladores originales en la model card del repositorio oficial de Hugging Face.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 0,27 GB solo para pesos (134,5M x 2 bytes), mas overhead de activaciones y cache KV; en la practica, menos de 1 GB.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 0,14 GB para pesos; en 4 bits, alrededor de 0,07 GB (estimaciones teoricas, no confirmadas para este checkpoint).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es sobradamente suficiente; tambien funciona en CPU.
-- Cabe en cualquier GPU consumer e incluso en CPU y dispositivos de borde.
-- Opciones de despliegue: `transformers`, text-generation-inference (TGI), llama.cpp, Ollama y vLLM son compatibles con la arquitectura Llama, si bien no se confirma soporte especifico para este checkpoint.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 0,27 GB solo para pesos (134,5 M de parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, menos de 1 GB.
+- VRAM estimada en cuantización de 8 bits: en torno a 0,14 GB para pesos; en 4 bits, alrededor de 0,07 GB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior ofrece margen de sobra. También funciona en GPUs de gama de entrada y en iGPU.
+- Cabe holgadamente en cualquier GPU consumer, e incluso en CPU con memoria RAM mínima (menos de 1 GB para los pesos en FP16).
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag endpoints_compatible), llama.cpp y Ollama mediante los pesos GGUF incluidos en el repositorio.
+- Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera una latencia muy baja en GPU y aceptable en CPU, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| SmolLM2-135M-Instruct (este checkpoint) | 134,5M | No disponible | Ingles | Apache 2.0 | Gated en Hugging Face |
-| SmolLM2-360M-Instruct (familia) | ~360M | No disponible | Ingles | Apache 2.0 | Publico en Hugging Face |
-| Qwen2.5-0.5B-Instruct | ~500M | No disponible | Multilingue | Apache 2.0 | Publico en Hugging Face |
-| TinyLlama-1.1B-Chat | ~1,1B | No disponible | Ingles | Apache 2.0 | Publico en Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| SmolLM2-135M-Instruct (este repo) | 134,5 M | no disponible | Apache 2.0 | Hugging Face (espejo educativo) |
+| SmolLM2-135M-Instruct (original) | 135 M | no disponible en esta ficha | Apache 2.0 | Hugging Face (repositorio oficial) |
+| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a datos de catalogo; no se dispone de cifras de rendimiento comparadas en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativo en la información proporcionada. Cualquier comparación cuantitativa con otras alternativas de la misma categoría (por ejemplo, otros modelos de menos de 500 M de parámetros) requeriría consultar benchmarks publicados que no se incluyen aquí.
 
 ## Limitaciones y advertencias
 
-- Modelo de 135M de parametros: capacidad de razonamiento, coherencia en contextos largos y fiabilidad factual muy limitadas en comparacion con modelos de mayor escala.
-- Riesgo elevado de alucinacion en preguntas factuales y tareas que requieran conocimiento especifico.
-- Solo soporta ingles segun la metadata; el rendimiento en castellano no esta garantizado.
-- No se documentan mitigaciones de sesgos; es probable que herede sesgos de los datos de entrenamiento del modelo base.
-- Repositorio marcado como `gated`: requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
-- Etiquetado como `educational`: no recomendado para despliegues en produccion critica sin validacion exhaustiva.
-- No se dispone de informacion sobre la longitud de contexto efectiva de este checkpoint; conviene verificar en la configuracion del modelo antes de usarlo con prompts largos.
-- La licencia Apache 2.0 permite uso comercial del modelo base, pero deben revisarse las condiciones adicionales del repositorio gated.
+- El modelo puede generar respuestas inexactas o incoherentes; la propia model card advierte de ello.
+- No debe utilizarse para decisiones de alto impacto sin pruebas y verificación adecuadas.
+- Soporte únicamente de inglés; no se ha documentado capacidad multilingüe.
+- Longitud de contexto no especificada en la información disponible; no asumir ventanas largas.
+- No hay evidencia de soporte de tool calling, agentes ni razonamiento multi-paso.
+- Este repositorio es un espejo educativo no afiliado ni respaldado por los desarrolladores originales; para producción conviene usar el repositorio oficial.
+- Licencia Apache 2.0: permite uso comercial, pero debe mantenerse la atribución correspondiente y revisarse los términos completos de la licencia.
+- Riesgo de sesgos heredados de los datos de entrenamiento originales, no documentados en esta copia.
+- El repositorio tiene 0 likes y 557 descargas en el momento de la consulta, lo que sugiere escasa validación comunitaria.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/vedang-1825/smollm2-135m-instruct-test1
-- Articulo de referencia de la familia SmolLM2: https://arxiv.org/abs/2502.02737
-- Repositorio original de SmolLM2 (Hugging Face): no disponible en la informacion proporcionada
-- Blog o demo oficial: no disponible en la informacion proporcionada
+- Modelo original: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
+- Paper de referencia: https://arxiv.org/abs/2502.02737

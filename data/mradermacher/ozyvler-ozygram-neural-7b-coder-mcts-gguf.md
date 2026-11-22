@@ -2,97 +2,94 @@
 
 ## Resumen
 
-El modelo referenciado es `mradermacher/ozyvler-Ozygram-Neural-7B-Coder-MCTS-GGUF`, una publicacion de cuantizaciones estaticas en formato GGUF generada por el usuario mradermacher a partir del modelo original `Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS`. Se trata, por tanto, de una redistribucion optimizada para inferencia local, no de un entrenamiento propio del autor de la cuantizacion. El nombre del modelo original sugiere un enfoque orientado a generacion de codigo ("Coder") y a tecnicas de busqueda en arbol ("MCTS", Monte Carlo Tree Search), aunque no se ha publicado documentacion tecnica que lo confirme.
+Ozyvler-Ozygram-Neural-7B-Coder-MCTS es un modelo de lenguaje especializado en generacion de codigo, construido sobre la familia Qwen2.5 y publicado por el usuario Xangel0s. La version aqui descrita es una cuantizacion estatica en formato GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp, Ollama y otros motores compatibles. El modelo base cuenta con 7.615.616.512 parametros (aproximadamente 7.600 millones) y se distribuye bajo licencia Apache 2.0.
 
-El recuento real de parametros, extraido de los pesos safetensors, es de 7.615.616.512 (aproximadamente 7,6 mil millones), lo que lo situa en la categoria de modelos de 7B-8B. El repositorio GGUF ocupa 53,1 GB en total, un tamano coherente con la inclusion de multiples niveles de cuantizacion, desde f16 hasta Q2_K.
+La propuesta del modelo combina tecnicas neuro-simbolicas con busqueda en arboles Monte Carlo (MCTS) y mecanismos de auto-reparacion basados en analisis de AST (arbol de sintaxis abstracta), segun las etiquetas declaradas en su model card. Estas etiquetas sugieren un enfoque orientado a la generacion de codigo verificable y a la correccion iterativa de errores sintacticos, aunque la documentacion disponible no detalla como se implementan estos mecanismos ni aporta datos cuantitativos sobre su eficacia.
 
-La relevancia actual de esta ficha es limitada pero util para desarrolladores que quieran evaluar rapidamente si el modelo encaja en sus pipelines locales: se trata de un GGUF compatible con endpoints y con etiqueta "conversational", cuantizado por un autor con amplia trayectoria en este tipo de conversiones. No obstante, la ausencia de model card detallada en el modelo original, de licencia declarada y de benchmarks publicos limita seriamente cualquier evaluacion rigurosa.
+El interes practico de esta ficha reside en la disponibilidad de cuantizaciones GGUF listas para usar, con un rango de tamanos que va desde 3,1 GB (Q2_K) hasta 15,3 GB (f16), lo que facilita el despliegue local en estaciones de trabajo y GPUs de consumo. No obstante, la informacion publicada es escasa: no se documentan resultados de benchmarks, composicion del dataset de entrenamiento ni limites de contexto, por lo que la evaluacion debe hacerse con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 7.615.616.512 (aprox. 7,6 mil millones) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (derivada de Qwen2.5, segun etiquetas del modelo) |
+| Parametros totales | 7.615.616.512 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repositorio); el modelo original se distribuye en safetensors |
-| Tamano del repositorio | 53,1 GB |
-| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | es, en |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo original `Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS`. Por el recuento de parametros y la nomenclatura habitual en modelos de esta categoria, es probable que se trate de un transformer decoder-only, pero esto no puede confirmarse con los datos disponibles.
+La informacion disponible no detalla la arquitectura interna mas alla de la etiqueta `qwen2.5`, que indica que el modelo base deriva de la familia Qwen2.5 de Alibaba. Se trata, por tanto, de un transformer decoder-only de aproximadamente 7.600 millones de parametros. Las etiquetas adicionales (`neuro-symbolic`, `mcts`, `dream-rsi`, `kev-engine`, `self-healing`, `ast`) apuntan a un pipeline de generacion de codigo que incorpora busqueda MCTS, verificacion sintactica mediante AST y estrategias de reparacion automatica, pero no se especifica si estas tecnicas forman parte del entrenamiento, del proceso de inferencia o de un sistema externo que envuelve al modelo.
 
-Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El sufijo "MCTS" en el nombre sugiere algun tipo de integracion con busqueda en arbol de Monte Carlo, posiblemente en la fase de generacion o en la generacion de datos de entrenamiento, pero se trata de una inferencia a partir del nombre y no de un dato confirmado. No se dispone de informacion sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, atencion dispersa, etc.).
+Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni innovaciones tecnicas concretas como decodificacion especulativa o atencion lineal. Cualquier afirmacion al respecto seria especulativa y queda fuera del alcance de esta ficha.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta preparado para dialogos multi-turno.
-- Generacion de codigo: el sufijo "Coder" del nombre apunta a esta capacidad, aunque no hay documentacion que detalle lenguajes, tareas o rendimiento.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de infraestructura de inferencia compatible con la API de endpoints de Hugging Face.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (el sufijo MCTS podria estar relacionado, sin confirmar).
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo pensamiento, vision, audio): no disponible.
+- Generacion de codigo en el contexto de un modelo afinado para tareas de programacion, segun las etiquetas `code` y `qwen2.5`.
+- Conversacion multi-turno: la etiqueta `conversational` indica soporte de dialogos encadenados.
+- Reparacion de codigo asistida por AST: la etiqueta `self-healing` sugiere capacidad de detectar y corregir errores sintacticos, aunque no se documenta el mecanismo exacto.
+- Busqueda guiada por MCTS: la etiqueta `mcts` indica integracion de busqueda en arboles Monte Carlo, presumiblemente en el pipeline de generacion.
+- Soporte bilingue espanol-ingles, segun el campo `language` de la model card.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere despliegue mediante la infraestructura de Hugging Face.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponible.
+- Modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-Dado que la informacion publica es muy escasa, los siguientes casos son escenarios plausibles para un modelo GGUF de 7,6B etiquetado como conversacional y orientado a codigo, no aplicaciones documentadas por el autor.
-
-- Asistente de codigo en local: un desarrollador puede cargar las cuantizaciones Q4_K_M o Q5_K_M en herramientas como llama.cpp u Ollama para autocompletar y explicar fragmentos de codigo sin enviar datos a servicios externos.
-- Chat conversacional embebido: la etiqueta `conversational` permite integrarlo en asistentes de escritorio o aplicaciones moviles que requieran un modelo pequeno ejecutable en hardware de consumo.
-- Generacion de codigo en pipelines de CI/CD: si se confirma soporte de tool calling, podria usarse para tareas automatizadas de refactorizacion o revision de pull requests, aunque esto requeriria validacion previa.
-- Prototipado rapido de agentes: al ser un GGUF ligero, permite experimentar con bucles de razonamiento multi-paso en equipos sin GPU dedicada de gama alta.
-- Educacion y asistencia al aprendizaje de programacion: respuestas conversacionales sobre conceptos de programacion en un entorno controlado y local.
-- Despliegue en entornos con restricciones de privacidad: la ejecucion local con llama.cpp evita el envio de datos a terceros, adecuado para sectores regulados.
-- Evaluacion comparativa interna: equipos de investigacion pueden usar las distintas cuantizaciones para medir degradacion de calidad entre Q2_K, Q4_K_M y f16 antes de decidir el nivel optimo para produccion.
+- Asistente de programacion en local: con cuantizaciones Q4_K_M de 4,8 GB, el modelo puede ejecutarse en una GPU de consumo de 8 GB de VRAM y ofrecer autocompletado y generacion de funciones en un IDE, sin enviar codigo a servicios externos.
+- Correccion automatica de errores sintacticos en CI/CD: las etiquetas `ast` y `self-healing` sugieren un uso orientado a analizar el arbol de sintaxis de un fichero y proponer parches ante fallos de compilacion o linting en pipelines automatizados.
+- Generacion de tests unitarios: el modelo puede producir casos de prueba a partir de firmas de funciones y docstrings, integrable en un flujo de pre-commit que valide la cobertura antes de fusionar cambios.
+- Refactorizacion asistida en entornos con requisitos de privacidad: al poder desplegarse con llama.cpp u Ollama en infraestructura propia, es adecuado para equipos que manejan codigo propietario y no pueden usar APIs en la nube.
+- Traduccion tecnica espanol-ingles de documentacion y comentarios de codigo: el soporte bilingue declarado permite adaptar READMEs y docstrings entre ambos idiomas.
+- Prototipado rapido de scripts y utilidades: con la cuantizacion Q4_K_S (4,6 GB) puede ejecutarse en portatiles con GPU modesta para generar scripts de automatizacion, parsing de ficheros o tareas de administracion de sistemas.
+- Chat de soporte tecnico sobre bases de codigo: la capacidad conversacional permite construir un asistente que responda preguntas sobre un repositorio concreto, siempre que se gestione el contexto manualmente al no documentarse la ventana maxima.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar para este modelo ni para su version original.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las siguientes estimaciones se derivan del recuento de parametros (7,6B) y del formato GGUF, no de mediciones publicadas por el autor.
-
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
-  - f16: aproximadamente 15,2 GB.
-  - Q8_0: aproximadamente 8,1 GB.
-  - Q6_K: aproximadamente 6,2 GB.
-  - Q5_K_M: aproximadamente 5,3 GB.
-  - Q4_K_M: aproximadamente 4,4 GB.
-  - Q3_K_M: aproximadamente 3,6 GB.
-  - Q2_K: aproximadamente 2,7 GB.
-- GPU recomendadas: para f16 o Q8_0, una RTX 4090 (24 GB), A100 (40/80 GB) o H100. Para Q4_K_M o inferiores, una RTX 3060 de 12 GB o incluso GPUs de 8 GB son suficientes.
-- Cabe en GPU de consumo: si, en la mayoria de cuantizaciones. Q4_K_M entra comodamente en una RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070. Las cuantizaciones Q2_K y Q3_K_M pueden ejecutarse incluso en GPUs de 6-8 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere tambien despliegue via Text Generation Inference o infraestructura similar, aunque no esta confirmado.
-- Latencia y throughput estimados: no disponible. Dependera fuertemente de la cuantizacion, la GPU y la longitud de contexto efectiva.
+- VRAM estimada segun cuantizacion: Q2_K ~3,1 GB; Q3_K_S ~3,6 GB; Q4_K_S ~4,6 GB; Q4_K_M ~4,8 GB; Q5_K_M ~5,5 GB; Q6_K ~6,4 GB; Q8_0 ~8,2 GB; f16 ~15,3 GB. A estas cifras hay que sumar el espacio para el contexto KV cache, que depende de la longitud de contexto configurada.
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantizaciones Q4-Q6 con contexto moderado; RTX 4090 24 GB para Q8_0 o f16 con contexto amplio; A100 40/80 GB y H100 para despliegues de mayor concurrencia.
+- Cabe en GPU de consumo: si, en tarjetas de 8 GB o mas con cuantizaciones Q4_K_M o inferiores; las cuantizaciones Q2_K y Q3_K_S permiten incluso GPUs de 4-6 GB, a costa de calidad.
+- Opciones de despliegue: llama.cpp, Ollama (etiqueta `ollama` presente), y cualquier motor compatible con GGUF. El modelo base en safetensors puede servirse con vLLM o TGI, aunque no se documenta soporte verificado.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes (arquitectura, contexto, licencia, benchmarks) para establecer una comparativa fiable con alternativas de la misma categoria. Como referencia de categoria, existirian modelos como Qwen2.5-Coder-7B, DeepSeek-Coder-6.7B o CodeLlama-7B, pero no se ha confirmado que `ozyvler-Ozygram-Neural-7B-Coder-MCTS` sea funcionalmente comparable a ellos, ni se dispone de sus especificaciones tecnicas verificadas. Por tanto:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Ozyvler-Ozygram-Neural-7B-Coder-MCTS (este) | 7.615.616.512 | no disponible | Apache 2.0 | GGUF, safetensors | Etiquetas neuro-simbolicas y MCTS sin benchmarks publicados |
+| Qwen2.5-Coder-7B | ~7.600 M | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo de referencia de la familia base, con benchmarks publicados |
+| DeepSeek-Coder-V2-Lite | ~16.000 M (MoE, ~2.400 M activos) | 128.000 tokens (segun documentacion publica) | Licencia propia de DeepSeek | safetensors, GGUF | Mayor contexto y eficiencia MoE, pero licencia mas restrictiva |
+| CodeLlama-7B | ~6.700 M | 16.000 tokens (segun documentacion publica) | Llama 2 Community License | safetensors, GGUF | Alternativa consolidada, licencia no completamente permisiva |
 
-No disponible.
+La comparacion se limita a parametros, contexto y licencia, ya que no hay datos de rendimiento publicados para el modelo objeto de esta ficha. Las cifras de contexto de los modelos comparados provienen de su documentacion publica y no de la informacion proporcionada en esta busqueda.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card detallada en el modelo original: no se documentan datos de entrenamiento, sesgos, ni limitaciones conocidas.
-- Licencia no declarada: no se puede garantizar el uso comercial ni la redistribucion. Es imprescindible contactar con el autor original antes de cualquier uso en produccion.
-- Idiomas soportados no especificados: se desconoce si el modelo rinde correctamente en castellano o solo en ingles.
-- Longitud de contexto desconocida: imposible planificar conversaciones largas o procesamiento de documentos extensos sin este dato.
-- Riesgo de alucinacion: inherente a cualquier LLM; en ausencia de benchmarks no se puede acotar su magnitud.
-- Riesgo de sesgos: no evaluado por el autor.
-- Estado en el momento de la consulta: el repositorio registra 0 descargas y 0 "likes", lo que indica que no ha sido validado por la comunidad.
-- Las cuantizaciones de baja precision (Q2_K, IQ4_XS) pueden degradar notablemente la calidad del modelo respecto a f16 o Q8_0; se recomienda validar la tarea concreta antes de adoptarlas.
-- Nombre con posibles implicaciones no verificadas (MCTS): no hay evidencia publica de que el modelo implemente busqueda en arbol en inferencia.
+- Ausencia total de benchmarks publicados: no es posible verificar la calidad del modelo frente a alternativas consolidadas como Qwen2.5-Coder-7B.
+- Documentacion muy escasa: no se detalla el dataset de entrenamiento, el proceso de afinado ni como se aplican las tecnicas neuro-simbolicas y MCTS anunciadas en las etiquetas.
+- Longitud de contexto no documentada: limita la planificacion de aplicaciones que requieran ventanas largas, como analisis de repositorios completos.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje de 7.600 M de parametros, especialmente en generacion de APIs o funciones inexistentes; requiere verificacion mediante tests.
+- Sesgos: no documentados por el autor; al derivar de Qwen2.5, hereda los sesgos de su dataset base, no caracterizados en esta ficha.
+- Idiomas: solo se declaran espanol e ingles; el rendimiento en otros idiomas no esta garantizado.
+- Licencia Apache 2.0: permisiva para uso comercial, pero el modelo base y sus dependencias deben verificarse de forma independiente; las etiquetas del autor no constituyen una garantia legal.
+- Procedencia: el autor del modelo base (Xangel0s) no es un laboratorio consolidado y el modelo tiene 476 descargas y 0 likes, lo que indica escasa validacion por parte de la comunidad.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_S degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
 
 ## Enlaces
 
-- Repositorio GGUF cuantizado: https://huggingface.co/mradermacher/ozyvler-Ozygram-Neural-7B-Coder-MCTS-GGUF
-- Modelo original: https://huggingface.co/Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Repositorio GGUF: https://huggingface.co/mradermacher/ozyvler-Ozygram-Neural-7B-Coder-MCTS-GGUF
+- Modelo base: https://huggingface.co/Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/ozyvler-Ozygram-Neural-7B-Coder-MCTS-i1-GGUF
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#ozyvler-Ozygram-Neural-7B-Coder-MCTS-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

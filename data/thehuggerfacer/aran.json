@@ -5,7 +5,7 @@
   "author": "TheHuggerFacer",
   "url": "https://huggingface.co/TheHuggerFacer/Aran",
   "created_at": "2026-11-21T04:06:15.000Z",
-  "updated_at": "2026-11-21T04:10:46.000Z",
+  "updated_at": "2026-11-21T06:18:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 395497964,
   "parameters_human": "395.5M",
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "TheHuggerFacer/Aran-1",
+  "renamed_at": "2026-11-22T05:23:48.431Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen2.5-3B-Model-Stock-v2.1-GGUF",
+  "slug": "mradermacher-qwen2-5-3b-model-stock-v2-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-3B-Model-Stock-v2.1-GGUF",
+  "created_at": "2025-02-26T08:51:09.000Z",
+  "updated_at": "2026-11-22T07:08:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:bunnycore/Qwen2.5-3B-Model-Stock-v2.1",
+    "base_model:quantized:bunnycore/Qwen2.5-3B-Model-Stock-v2.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 3085383680,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27934568640,
+  "storage_human": "27.9 GB",
+  "context_length": 32768,
+  "base_model": "bunnycore/Qwen2.5-3B-Model-Stock-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 565,
+  "downloads_30d": 383,
   "trending_score": 0,
   "parameters": 3397103616,
   "parameters_human": "3.40B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "vinguyen0891/Vivy-Robot-1.5B-Act-GGUF · Hugging Face",
-      "url": "https://huggingface.co/vinguyen0891/Vivy-Robot-1.5B-Act-GGUF",
-      "snippet": "vinguyen0891 / Vivy-Robot-1.5B-Act-GGUF Like 0 Robotics GGUF Safetensors llama llama-cpp mujoco action-chunking video-to-action vivy conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "vinguyen0891 (Nguyễn Văn Vĩ) - Hugging Face",
-      "url": "https://huggingface.co/vinguyen0891/models",
-      "snippet": "User profile of Nguyễn Văn Vĩ on Hugging Face"
-    },
-    {
-      "title": "How to Run GGUF Models Locally",
-      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
-      "snippet": "How to Run GGUF Models Locally The complete 2026 guide — load any GGUF model with GGUF Loader, Ollama, LM Studio, or llama.cpp. Pick your tool below and jump straight to its step-by-step tutorial."
-    },
-    {
-      "title": "Best Open Source AI Models in 2026 (Ranked)",
-      "url": "https://felloai.com/best-open-source-ai-models/",
-      "snippet": "The best open source AI models changed hands again in September. Xiaomi published the weights for MiMo-V2.6-Pro on September 21, 2026 under a plain MIT license, and Artificial Analysis now scores it 46.3 on its Intelligence Index v4.3.2, the highest of any open-weight model and level with Grok 4.7. The top closed model, Claude Opus 5.5, sits at ..."
-    },
-    {
-      "title": "Browse AI Artifacts | Hugging Bay",
-      "url": "https://huggingbay.xyz/browse",
-      "snippet": "Browse the Hugging Bay catalog of open AI models, datasets, apps, tools, evals, hosted downloads, and external metadata records."
-    }
-  ]
+  "sources": []
 }

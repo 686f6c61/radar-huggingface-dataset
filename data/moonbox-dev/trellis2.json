@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "moonbox-dev/TRELLIS.2-4B-MLX-PyTorch",
+  "renamed_at": "2026-11-22T09:29:40.347Z",
   "benchmarks": [],
   "sources": []
 }

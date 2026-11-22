@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 19,
-  "downloads_30d": 560,
+  "downloads_30d": 510,
   "trending_score": 13,
   "parameters": null,
   "parameters_human": null,
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Mud – Minecraft Wiki",
-      "url": "https://minecraft.fandom.com/wiki/Mud",
-      "snippet": "Mud is a block found abundantly in mangrove swamps or created by using a water bottle on a dirt block. It can be used for crafting or …"
-    },
-    {
-      "title": "Mud – Minecraft Wiki",
-      "url": "https://minecraft.wiki/w/Mud",
-      "snippet": "Sep 21, 2026 · Mud generates in the mangrove swamp biome. Mud can also generate in trail ruins and in some entrance rooms of …"
-    },
-    {
-      "title": "How to Make Mud in Minecraft: A Simple, Step-By-Step Guide",
-      "url": "https://www.wikihow.com/Make-Mud-in-Minecraft",
-      "snippet": "Sep 1, 2026 · Mud can be found naturally in mangrove swamp biomes in Minecraft 1.19 and later and can be mined with a shovel. …"
-    },
-    {
-      "title": "How to Get and Mine Mud | Minecraft｜Game8",
-      "url": "https://game8.co/games/Minecraft/archives/378586",
-      "snippet": "Dec 28, 2022 · The Mud block is a kind of Dirt block in Minecraft that are found in Mangrove Swamps and can be turned into clay. …"
-    },
-    {
-      "title": "How To Get MUD In MINECRAFT - YouTube",
-      "url": "https://www.youtube.com/watch?v=qTPxNTUOQp0",
-      "snippet": "May 7, 2022 · Tutorial explaining the new mud block in minecraft 1.19. This video will explain the different locations you can find mud …"
-    }
-  ]
+  "sources": []
 }

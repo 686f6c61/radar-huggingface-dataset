@@ -2,95 +2,92 @@
 
 ## Resumen
 
-FORGE-500M-Chat es un modelo de lenguaje conversacional de escala sub-mil millones desarrollado por Phase-Technologies (autoría de Soham Pal) y publicado bajo licencia Apache 2.0. Su propuesta central es sustituir la autoatención cuadrática por una recurrencia de espacio de estados lineal, combinada con una mezcla de expertos dispersa jerárquica (HSE-MoE), para reducir el coste computacional de la inferencia manteniendo capacidad conversacional. El modelo parte de una base preentrenada desde cero (`forge-500m-base`) y se alinea mediante SFT y DPO sobre datos de diálogo multi-turno.
+FORGE-500M-Chat es un modelo de lenguaje conversacional de escala sub-mil millones desarrollado por Phase-Technologies (autoría declarada de Soham Pal). Su propuesta principal es sustituir la atención cuadrática por una recurrencia de espacio de estados de tiempo lineal combinada con una mezcla de expertos dispersa jerárquica (HSE-MoE), buscando maximizar la eficiencia de parámetros y la escalabilidad en longitud de secuencia. El modelo parte de una base preentrenada desde cero y se alinea mediante SFT y DPO para uso conversacional.
 
-La arquitectura es híbrida: 18 capas totales, de las cuales 15 son capas SSM con *Adaptive Recurrent Gating* (ARG) y solo 3 son capas de atención global multi-cabeza con RoPE y YaRN. De las 18 capas, 9 incorporan FFN densas SwiGLU y 9 incorporan módulos MoE con 32 expertos y activación top-2. El contexto nativo es de 4.096 tokens, ampliable a 16.384 mediante YaRN.
+La arquitectura es híbrida: 18 capas intercaladas, de las cuales 15 son capas SSM con *Adaptive Recurrent Gating* (ARG) y solo 3 son capas de atención global multi-cabeza con RoPE y extensión YaRN. De las 18 capas, 9 usan FFN densa SwiGLU y 9 usan MoE jerárquica con 32 expertos y top-2 activos. El modelo declara 500M parámetros totales y unos 320M activos por token, aunque el recuento real de pesos en safetensors asciende a 711.080.311 parámetros, discrepancia que conviene tener en cuenta al planificar el despliegue.
 
-Es relevante ahora por dos motivos: primero, explora un paradigma híbrido SSM/atención en un rango de tamaño donde predominan los transformers densos convencionales; segundo, documenta públicamente su trayectoria de entrenamiento completa (1,66 mil millones de tokens en 821 pasos sobre 4× NVIDIA B300 SXM6 en modo MIG), lo que lo convierte en un caso de estudio de reproducibilidad más que en un modelo de producción de alto rendimiento.
+Es relevante ahora porque ejemplifica una línea de trabajo de modelos pequeños y eficientes entrenados con recursos limitados (4 slices MIG de NVIDIA B300) y publicados con licencia Apache 2.0, lo que facilita su inspección, reproducción y uso comercial. No obstante, el volumen de preentrenamiento (1,66B tokens) es muy reducido para los estándares actuales, lo que acota seriamente sus capacidades reales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 15 capas SSM con Adaptive Recurrent Gating (ARG) + 3 capas de atención global MHA con RoPE/YaRN; 9 FFN densas SwiGLU + 9 FFN MoE (HSE, 32 expertos, top-2) |
-| Parametros totales | 711.080.311 según safetensors; la model card declara 500.019.616 |
-| Parametros activos | ~320.000.000 (declarado por el autor, vía HSE-MoE disperso) |
-| Longitud de contexto | 4.096 tokens nativo; hasta 16.384 con YaRN |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | Híbrida SSM + MHA + MoE (15 capas ARG SSM, 3 capas MHA global, 9 FFN densas SwiGLU, 9 FFN MoE HSE) |
+| Parametros totales | 500.019.616 declarados por el autor; 711.080.311 según safetensors |
+| Parametros activos | ~320.000.000 (declarados, vía HSE-MoE top-2) |
+| Longitud de contexto | 4.096 tokens nativos; hasta 16.384 con YaRN |
+| Tipos de cuantizacion | no disponible (no se documentan GGUF, AWQ, GPTQ ni similares) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (PyTorch, requiere `trust_remote_code` por `custom_code`) |
-
-Otros datos técnicos declarados: dimensión oculta de 1.024, 8 cabezas de atención (8 Q, 8 KV), vocabulario de 206.464 tokens con tokenizador propietario "CRAYON Turbo" (BPE con fallback de bytes), tamaño de repositorio de 4,3 GB.
+| Formato de pesos | safetensors (PyTorch, requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo combina dos mecanismos de secuencia: recurrencia de espacio de estados lineal (ARG) en 15 de las 18 capas, que procesa la secuencia en tiempo lineal respecto a la longitud, y atención global multi-cabeza en 3 capas, que preserva el acceso de largo alcance. La mitad de las capas usan FFN densas SwiGLU con expansión 8/3 × d_model y la otra mitad usan un módulo MoE jerárquico con 32 expertos y enrutamiento top-2, lo que explica la diferencia entre parámetros totales y activos. La cabeza de proyección LM se aplica de forma troceada (`chunk_size=1024`) sobre el vocabulario de 206.464 tokens para evitar picos de VRAM.
+El modelo emplea una topología híbrida asimétrica. La dimensión oculta es de 1.024, con 8 cabezas de atención (8 query, 8 key/value), vocabulario de 206.464 tokens mediante el tokenizador propietario CRAYON Turbo (BPE con fallback de bytes). La mayoría de capas (15 de 18) son recurrencias SSM lineales con *Adaptive Recurrent Gating*, y solo 3 son atención global, lo que reduce el coste computacional a tiempo lineal en la longitud de secuencia. La MoE jerárquica dispersa activa 2 de 32 expertos por token. La proyección final al vocabulario se hace por trozos (*chunked*, `chunk_size=1024`) para evitar picos de VRAM.
 
-El preentrenamiento se realizó desde cero sobre 1.660.944.384 tokens (1,66 mil millones), con batch global de 1.048.576 tokens por paso (32 micro-batches × 32.768) y un throughput físico declarado de 7.337 tokens/s (~26,4 M tokens/hora) sobre 4× NVIDIA B300 SXM6 MIG (`1g.34gb`, 18 SMs, CUDA 13.2). La pérdida bajó de 12,512 (perplejidad >150.000) en el paso 1 a 4,6473 (perplejidad 104,30) en el paso 821. El ajuste supervisado usó una mezcla de ShareGPT, UltraChat, CodeFeedback, MetaMath y OpenOrca, con enmascaramiento de pérdida en turnos de asistente, DDP sobre las 4 GPUs, decaimiento coseno de 2e-5 a 2e-6 y autocast BF16, alcanzando una pérdida de ~4,0. El DPO se aplicó sobre UltraFeedback, Anthropic HH-RLHF y HelpSteer2 con modelo de referencia congelado en BF16 y β = 0,1.
+El preentrenamiento se realizó desde cero sobre 1.660.944.384 tokens (1,66B) en 4 slices MIG `1g.34gb` de NVIDIA B300 SXM6, con batch global de 1.048.576 tokens y un throughput de 7.337 tokens/s. La pérdida pasó de 12,512 (perplejidad >150.000) en el paso 1 a 4,6473 (perplejidad 104,30) en el paso 821. El SFT usó una mezcla de ShareGPT, UltraChat, CodeFeedback (Python), MetaMath y OpenOrca, con enmascaramiento de pérdida en turnos de asistente y DDP sobre las 4 GPU con decaimiento coseno de LR (2e-5 a 2e-6) en BF16. El DPO se aplicó sobre UltraFeedback, Anthropic HH-RLHF y HelpSteer2 con modelo de referencia congelado y β=0,1. No se documentan innovaciones como decodificación especulativa ni atención lineal alternativa más allá de la propia recurrencia SSM.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés, con formato de plantilla de chat y separación de turnos aprendida vía SFT.
-- Instrucciones generales y respuesta a preguntas, derivadas de la mezcla de UltraChat y OpenOrca.
-- Programación en Python, a partir de los pares de CodeFeedback incluidos en el SFT.
-- Razonamiento matemático básico, por la inclusión de MetaMath en el corpus de ajuste.
-- Alineación de preferencias y rechazo de peticiones peligrosas, entrenado con DPO sobre HH-RLHF y HelpSteer2.
-- Procesamiento de secuencias largas relativas a su tamaño gracias a las capas SSM de coste lineal, hasta 4.096 tokens nativos.
+- Generación de texto conversacional multi-turno en inglés.
+- Razonamiento básico e instrucciones generales, limitado por el escaso volumen de preentrenamiento.
+- Generación de código Python (entrenado con CodeFeedback), sin garantías de corrección en tareas complejas.
+- Razonamiento matemático elemental (MetaMath en SFT).
+- Seguimiento de formato de chat con plantilla y enmascaramiento de turnos.
+- Alineación de preferencias vía DPO, con mejora declarada en rechazo de peticiones peligrosas y reducción de repeticiones.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multimodales (visión, audio): no disponibles.
-- Modo "thinking" explícito: no disponible.
+- Modo *thinking* explícito: no disponible.
 
 ## Casos de uso
 
-- **Asistente conversacional ligero en local**: el modelo cabe en una GPU de consumo con cuantización de 8 bits o inferior (los pesos en BF16 ocupan ~1,4 GB según los 711 M de parámetros reales), lo que permite desplegar un chatbot de inglés en estaciones de trabajo sin conexión.
-- **Prototipado de arquitecturas híbridas SSM/atención**: al publicar el código personalizado y los logs de entrenamiento completos, sirve como base para experimentar con recurrencia lineal y enrutamiento MoE en un rango de tamaño manejable.
-- **Generación de código asistida en entornos con recursos limitados**: los pares de CodeFeedback del SFT permiten autocompletado y explicación de fragmentos Python en plugins de editor que no pueden asumir un modelo de 7B o superior.
-- **Clasificación y reescritura de texto en pipelines por lotes**: su coste lineal en longitud de secuencia lo hace adecuado para procesar grandes volúmenes de documentos cortos en inglés con throughput predecible.
-- **Investigación en alineación y DPO**: la combinación documentada de SFT con enmascaramiento por turno y DPO con β = 0,1 sobre HH-RLHF y HelpSteer2 facilita reproducir experimentos de preferencias a pequeña escala.
-- **Evaluación comparativa de tokenizadores de vocabulario grande**: el tokenizador CRAYON Turbo de 206.464 entradas permite estudiar el equilibrio entre tamaño de vocabulario, parámetros de embedding y calidad en lenguas con morfología rica.
-- **Generación de datos sintéticos de diálogo**: puede producir turnos de conversación en inglés para aumentar corpus de entrenamiento de modelos mayores, siempre con revisión humana por su tasa de alucinación esperable.
+- Prototipado de asistentes conversacionales en inglés: el modelo puede mantener diálogos multi-turno dentro de su ventana de 4.096 tokens, suficiente para conversaciones de soporte acotadas y para validar plantillas de chat antes de migrar a modelos mayores.
+- Investigación en arquitecturas híbridas SSM/MoE: al ser Apache 2.0 y publicar los logs de entrenamiento, sirve como banco de pruebas reproducible para estudiar el equilibrio entre capas recurrentes y de atención en modelos pequeños.
+- Generación de código Python en entornos de baja latencia: con 320M parámetros activos y recurrencia lineal, es adecuado para autocompletado o sugerencias en IDE donde el coste por token importa más que la calidad puntera.
+- Filtrado y clasificación de texto en pipelines de datos: su tamaño reducido permite ejecutarlo en CPU o GPU de gama baja para tareas de etiquetado, resumen corto o reescritura de prompts.
+- Educación y demos de alineación: el historial completo de SFT y DPO facilita usar el modelo como ejemplo didáctico de cómo se aplica DPO con modelo de referencia congelado y β=0,1.
+- Despliegue en hardware de consumo para pruebas de concepto: con ~1 GB en BF16/FP16, cabe en GPU de 8 GB o menos, lo que permite iterar localmente sin infraestructura dedicada.
+- Evaluación comparativa de tokenizadores de vocabulario grande: el tokenizador CRAYON Turbo de 206.464 tokens puede estudiarse frente a tokenizadores estándar en tareas de eficiencia de codificación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas de entrenamiento: pérdida final de preentrenamiento 4,6473 (perplejidad 104,30) en el paso 821, pérdida de SFT en torno a 4,0 y margen de recompensa positivo en DPO, sin valores numéricos de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas de entrenamiento (pérdida y perplejidad): pérdida final de preentrenamiento 4,6473 y perplejidad 104,30 en el paso 821, y pérdida de SFT en torno a 4,0. No hay datos de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- **VRAM en BF16**: ~1,4 GB solo para pesos (711 M de parámetros reales); con caché KV, activaciones y overhead de runtime, estimación práctica de 3-4 GB.
-- **VRAM en cuantización de 8 bits**: ~0,8-1 GB de pesos; en 4 bits, ~0,4-0,5 GB. Los formatos de cuantización concretos no están documentados por el autor.
-- **GPU recomendadas**: cualquier GPU con al menos 8 GB de VRAM para BF16 con contexto completo; RTX 3060/4060, RTX 4090, A100 y H100 son suficientes. El entrenamiento se realizó sobre 4× NVIDIA B300 SXM6 en modo MIG (`1g.34gb`), pero ese hardware no es necesario para inferencia.
-- **Cabe en GPU de consumo**: sí, en la práctica totalidad de GPU dedicadas modernas e incluso en iGPU con memoria unificada suficiente.
-- **Opciones de despliegue**: requiere `trust_remote_code=True` por el código personalizado (`custom_code`), lo que limita la compatibilidad directa con vLLM, TGI o llama.cpp sin portar la arquitectura. La vía documentada es PyTorch con `transformers` y carga remota de código; no hay pesos GGUF publicados.
-- **Latencia y throughput**: no disponible para inferencia. El dato de 7.337 tokens/s corresponde al entrenamiento en 4× B300 MIG, no a decoding.
+- VRAM estimada para inferencia: ~1,0-1,4 GB en BF16/FP16 para los pesos declarados de 500M; ~1,4-1,5 GB si se usa el recuento real de safetensors (711M). En FP32, ~2,0-2,8 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para BF16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son válidas. El modelo se entrenó en slices MIG de NVIDIA B300 SXM6 (`1g.34gb`), pero no requiere ese hardware para inferencia.
+- Cabe en GPU de consumo: sí, en tarjetas de 8 GB o menos (por ejemplo, RTX 3060 Ti, RTX 4060, GTX 1660 con cuantización si se genera).
+- Opciones de despliegue: PyTorch con `transformers` y `trust_remote_code=True` (el repo requiere `custom_code`); no se documentan pesos GGUF, por lo que llama.cpp u Ollama requerirían conversión propia. vLLM y TGI no están validados en la información disponible.
+- Latencia y throughput estimados: no disponibles para inferencia. Solo se conoce el throughput de entrenamiento (7.337 tokens/s en 4 slices MIG), que no es extrapolable a producción.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FORGE-500M-Chat | 711 M totales / ~320 M activos (declarado) | 4.096 (16.384 con YaRN) | Híbrida SSM + MHA + MoE | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 | Transformer denso | Apache 2.0 | Hugging Face, ecosistema estándar (GGUF, vLLM, Ollama) |
-| SmolLM2-360M-Instruct | 362 M | 8.192 | Transformer denso | Apache 2.0 | Hugging Face, ecosistema estándar |
-| Mamba-130M / Mamba-370M | 130 M / 370 M | 2.048 | SSM puro | Apache 2.0 | Hugging Face, sin ajuste conversacional oficial |
+| FORGE-500M-Chat | 500M declarados / 711M reales | 4.096 (16.384 con YaRN) | Híbrida SSM + MHA + MoE | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~494M | 32.768 | Transformer denso | Apache 2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | ~362M | 8.192 | Transformer denso | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat | ~1,1B | 2.048 | Transformer denso | Apache 2.0 | Hugging Face |
 
-La comparación de rendimiento cualitativo no es posible: no hay benchmarks publicados de FORGE-500M-Chat frente a estas alternativas. En la práctica, los modelos densos comparables ofrecen contextos más largos, cuantizaciones listas para usar y soporte nativo en los principales runtimes de inferencia, ventajas operativas que FORGE no cubre todavía.
+La comparación es estructural: FORGE-500M-Chat ofrece una ventana de contexto menor que Qwen2.5-0.5B y SmolLM2, y un preentrenamiento mucho más corto (1,66B tokens frente a billones en los modelos citados). No hay datos de benchmarks que permitan comparar calidad de forma objetiva.
 
 ## Limitaciones y advertencias
 
-- **Volumen de entrenamiento muy reducido**: 1,66 mil millones de tokens es un orden de magnitud inferior a lo habitual en modelos de este tamaño (decenas o cientos de miles de millones). La perplejidad final de 104,30 es alta y anticipa una calidad de generación limitada y una tasa de alucinación elevada.
-- **Solo inglés**: la model card declara únicamente `en`; no hay evidencia de competencia multilingüe y el tokenizador, pese a su vocabulario grande, no está validado en otros idiomas.
-- **Discrepancia en el recuento de parámetros**: la model card declara 500.019.616 parámetros totales, mientras que los safetensors contienen 711.080.311. Esta inconsistencia debe tenerse en cuenta al planificar memoria y al evaluar las afirmaciones sobre parámetros activos.
-- **Compatibilidad limitada**: el uso de `custom_code` impide la carga directa en vLLM, TGI, llama.cpp u Ollama sin trabajo de portabilidad; no hay GGUF ni cuantizaciones publicadas.
-- **Contexto corto**: 4.096 tokens nativos es reducido frente a alternativas contemporáneas de tamaño similar; YaRN a 16.384 no está validado con benchmarks publicados.
-- **Sesgos**: no se documenta ninguna evaluación de sesgos; los corpus de SFT y DPO (ShareGPT, UltraChat, OpenOrca, UltraFeedback, HH-RLHF) arrastran los sesgos habituales de datos web y sintéticos en inglés.
-- **Licencia**: Apache 2.0 permite uso comercial, pero el modelo no incluye garantías y su calidad no está validada para producción; se recomienda evaluación propia antes de cualquier despliegue real.
-- **Reproducibilidad parcial**: se publican logs de entrenamiento, pero no se detalla la composición exacta ni las proporciones del dataset de preentrenamiento.
+- Preentrenamiento muy limitado: 1,66B tokens es un volumen bajo para los estándares actuales, lo que implica capacidades de conocimiento factual y razonamiento acotadas y alta propensión a errores en dominios especializados.
+- Riesgo de alucinación elevado, especialmente en preguntas factuales, matemáticas complejas y código de producción.
+- Solo soporta inglés; no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
+- Ventana de contexto nativa de 4.096 tokens; la extensión a 16.384 con YaRN no está validada con benchmarks.
+- Discrepancia entre los parámetros declarados (500M) y los reales en safetensors (711M), lo que puede afectar a estimaciones de memoria y a la reproducibilidad de las cifras de la model card.
+- Requiere `trust_remote_code=True` y código personalizado; conviene auditar el repositorio antes de ejecutarlo en entornos sensibles.
+- Licencia Apache 2.0 permite uso comercial, pero no hay evaluación de seguridad independiente ni garantías de robustez frente a prompts adversarios.
+- No se documentan formatos cuantizados oficiales (GGUF, AWQ, GPTQ), lo que complica el despliegue en CPU o en GPUs de muy baja VRAM sin trabajo adicional.
+- El modelo no declara soporte de tool calling ni de agentes, por lo que no debe asumirse en pipelines que dependan de function calling.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Phase-Technologies/FORGE-500M-Chat
+- Hugging Face: https://huggingface.co/Phase-Technologies/FORGE-500M-Chat
 - Modelo base: https://huggingface.co/Phase-Technologies/forge-500m-base
 - Log de entrenamiento (referenciado en la model card): `training_journey.log` dentro del repositorio de Hugging Face
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
-- Paper, blog o demo adicionales: no disponible

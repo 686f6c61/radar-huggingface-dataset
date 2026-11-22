@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "pratapO7/TalentTensor-350M",
+  "slug": "pratapo7-talenttensor-350m",
+  "author": "pratapO7",
+  "url": "https://huggingface.co/pratapO7/TalentTensor-350M",
+  "created_at": "2026-11-22T11:09:22.000Z",
+  "updated_at": "2026-11-22T11:09:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/GPT_Neo on Reddit: 350M has been found! Link below! (someone ...",
+      "url": "http://go/v1/AYmltleL_rsmawLNiAFRoGWcvDIy2Br-CMteEImBgPKNxxnjLckwPLbAxQ54N3BvEjG2HSF1Cj4rcvJ_AcgC_7dcGn-1kv5SvxynuMWAkMWwtBeF6gmBT3DE-E8zTdfaa-rPq_qqGZtwxeSJernhpMmMhoNQEQC-M5RSRwkcoQ03Y-gmPS-0_TfrMWAlpdZBNHZIOE6fyqQPsVyd1yiFTP3Td3Op3kO7oUB8YvDlORe9hlpN7050QHb_GwLmULmDhKZIos4ojBaCUxAJoYXfL5MC",
+      "snippet": "As a follow up to my previous post, we have FINALLY found a surviving copy of Neo 350M! https://huggingface.co/xhyi/PT_GPTNEO350_ATG/tree/main"
+    }
+  ]
+}

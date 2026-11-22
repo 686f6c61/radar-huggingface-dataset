@@ -2,50 +2,49 @@
 
 ## Resumen
 
-Zydra es un modelo de lenguaje publicado en Hugging Face por el usuario fareld3v-hub (identificado en la documentación del proyecto como Farel Alfareza). No se trata de un modelo entrenado desde cero, sino de una adaptación de Google Gemma 3 1B empaquetada junto con una infraestructura de servicio: un contenedor Docker que descarga el modelo base a través de Ollama, lo configura con el nombre `zydra` y expone una API HTTP compatible con el formato de OpenAI.
+Zydra es un modelo de generación de texto de pequeno tamano (aproximadamente 630 millones de parametros) publicado por el usuario fareld3v-hub en Hugging Face bajo licencia Apache 2.0. Se distribuye principalmente en formato GGUF y esta pensado para ejecutarse en local mediante llama.cpp dentro de un contenedor Docker, acompanado de un modelo de vision independiente (SmolVLM2-500M) que se sirve en un proceso separado. La model card esta redactada en indonesio y describe sobre todo el despliegue del sistema, no el entrenamiento del modelo.
 
-El problema que resuelve es fundamentalmente de despliegue: ofrece una forma reproducible de levantar un endpoint de chat con autenticación por API key, gestión de claves y documentación interactiva (Swagger en `/docs`) sobre un modelo pequeño y multilingüe. El peso del modelo base ronda los 806 MB, lo que lo sitúa en la categoría de modelos ligeros aptos para ejecución en CPU o GPUs de consumo.
+El modelo se presenta como un ajuste LoRA (la nomenclatura interna es `zydra-loRa`) orientado a conversacion en indonesio (`language: id`). El repositorio incluye pesos en GGUF y un archivo `mmproj`, aunque el servidor de chat de texto se lanza deliberadamente con `--no-mmproj`, de modo que las capacidades de vision recaen en el modelo SmolVLM2 auxiliar y no en Zydra.
 
-La relevancia es limitada en términos de investigación: no hay información sobre fine-tuning, dataset adicional ni evaluación propia. Su interés práctico reside en el patrón de empaquetado (Ollama + Docker + API compatible OpenAI) más que en capacidades nuevas del modelo. La model card está redactada en indonesio y se centra casi por completo en instrucciones de despliegue.
+Su relevancia es limitada pero concreta: ofrece un paquete de despliegue autocontenido (API compatible con OpenAI, dos servidores llama.cpp, pagina de chat y soporte para Railway) que permite montar un asistente conversacional y de vision de bajo coste en CPU. No hay informacion publica sobre datos de entrenamiento, benchmarks ni evaluaciones de calidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Google Gemma 3 1B) |
-| Parametros totales | Aproximadamente 1B (modelo base Gemma 3 1B); no se especifica el recuento exacto |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada; el paquete Ollama descarga aproximadamente 806 MB, lo que sugiere cuantizacion por defecto del registro de Ollama |
-| Idiomas soportados | Mas de 140 segun la model card, heredado de Gemma 3 1B; no se detalla la lista |
-| Licencia | No disponible para los pesos; el codigo del repositorio se declara MIT en el badge, pero la licencia del modelo no se especifica |
-| Formato de pesos | Distribucion via Ollama (modelo `gemma3:1b` + configuracion del proyecto); no se indica safetensors ni GGUF publicado en el Hub |
+| Arquitectura | Transformer (detalles no disponibles); ajuste tipo LoRA segun la model card |
+| Parametros totales | 629.697.920 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2048 tokens por defecto (`CHAT_CONTEXT_SIZE`) |
+| Tipos de cuantizacion | GGUF (el repo incluye `zydra-loRa.gguf`; niveles exactos no disponibles) |
+| Idiomas soportados | indonesio (`id`) declarado en la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (tamano de repo 1.0 GB; descarga indicada ~572 MiB entre modelo y mmproj) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Google Gemma 3 1B, un transformer decoder-only de la familia Gemma 3. La model card no aporta detalles sobre el entrenamiento original ni sobre si Zydra aplica algún ajuste adicional (fine-tuning, system prompt embebido o Modelfile personalizado). El flujo descrito sugiere que el proceso de build descarga `gemma3:1b` mediante Ollama y crea un modelo derivado llamado `zydra` con configuración propia del proyecto; no se documenta ningún entrenamiento posterior.
+No se dispone de informacion sobre la arquitectura base, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card unicamente indica que se trata de un ajuste LoRA (de ahi el nombre `zydra-loRa`) con etiqueta de idioma indonesio, y que el artefacto distribuido es un GGUF destinado a `llama-server`.
 
-No hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF o DPO, ni innovaciones técnicas específicas de esta adaptación. Cualquier dato de arquitectura fina (atención, normalización, tokenizador) debe consultarse en la documentación oficial de Gemma 3 1B, no en esta ficha.
+El sistema de despliegue separa dos procesos: `zydra-vision`, que carga SmolVLM2-500M-Video-Instruct en cuantizacion Q8_0 junto con su `mmproj` y atiende exclusivamente `/v1/chat/vision`, y `zydra-loRa`, que carga `zydra-loRa.gguf` con `--no-mmproj` y atiende `/v1/chat/completions` y `/v1/prompt`. Esta separacion evita que el modelo de texto responda a peticiones con imagen y viceversa. No se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, etc.).
 
 ## Capacidades
 
-- Generación de texto conversacional en más de 140 idiomas, según la model card (heredado de Gemma 3 1B).
-- Respuesta a prompts de un solo turno mediante `POST /v1/prompt`, que devuelve directamente el campo `response`.
-- Conversación multi-turno mediante `POST /v1/chat/completions` con formato compatible con la API de OpenAI (`messages` con roles).
-- Endpoint alternativo `/api/chat` en GET y POST; el POST envía la clave en cabecera y el GET en query string.
-- Gestión de API keys con formato `zdy-...` a través de la interfaz Swagger, protegida por una contraseña maestra (`AUTH`).
-- Endpoints de salud y estado (`/health`, `/status`) sin autenticación, con indicador `model_ready`.
-- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
+- Generacion de texto conversacional en indonesio, con un contexto efectivo de 2048 tokens.
+- API compatible con el esquema de OpenAI (`/v1/chat/completions`, `/v1/prompt`), lo que facilita la integracion con clientes existentes.
+- Endpoint de vision independiente (`/v1/chat/vision`) que acepta imagenes por URL (`image_link`) o en base64 (`image_data`), servido por SmolVLM2-500M y no por Zydra.
+- Rechazo explicito de peticiones mal enrutadas: HTTP 422 si se envia `image_data` a `/v1/chat/completions` y HTTP 400 si se solicita `zydra-loRa` en el endpoint de vision.
+- Endpoints de operacion: `/ready` (HTTP 200 cuando ambos modelos estan cargados) y `/health` con los campos `chat_ready`, `vision_ready` y `models`.
+- Autenticacion mediante token Bearer (`AUTH`) para la API y la pagina de chat.
+- No se documenta soporte de tool calling, function calling, razonamiento multi-paso ni modo thinking.
 
 ## Casos de uso
 
-- Despliegue de un chatbot interno ligero: el contenedor Docker levanta Ollama, descarga el modelo base y expone un endpoint de chat con autenticación Bearer, adecuado para prototipos en una red interna sin depender de APIs externas.
-- Pruebas de integración con SDKs compatibles con OpenAI: al respetar el esquema `/v1/chat/completions`, se puede apuntar un cliente existente al endpoint local cambiando únicamente la `base_url` y la clave.
-- Entornos con recursos limitados: el modelo base de aproximadamente 806 MB permite ejecución en máquinas sin GPU dedicada, útil para demos en portátiles o servidores pequeños.
-- Servicio multilingüe de bajo coste: la cobertura declarada de más de 140 idiomas permite respuestas en lenguas distintas del inglés sin cambiar de modelo, aunque la calidad por idioma no está evaluada.
-- Empaquetado reproducible para equipos: el uso de `docker build`, volumen persistente (`zydra-data`) y `.env` facilita replicar el mismo entorno en distintas máquinas.
-- Backend de pruebas para aplicaciones de chat: el endpoint `/v1/prompt` simplifica la integración en scripts y tests automatizados al devolver la respuesta en un único campo.
-- Gestión de acceso en demos públicas: el sistema de API keys con prefijo `zdy-` y contraseña maestra permite repartir credenciales temporales a evaluadores.
+- Asistente conversacional local en indonesio: el modelo puede atender dialogos multi-turno de hasta 2048 tokens en un equipo sin GPU, ya que corre sobre `llama-server` en CPU con 4 hilos por defecto.
+- Despliegue de bajo coste en PaaS: la model card describe explicitamente el despliegue en Railway con un unico servicio Docker, volumen en `/data` y dominio publico, adecuado para prototipos y demos internas.
+- Clasificacion y descripcion de imagenes en un flujo separado: enviando la imagen a `/v1/chat/vision` se obtiene una respuesta de SmolVLM2-500M, util para etiquetado rapido o accesibilidad sin cargar un modelo multimodal grande.
+- Backend de una interfaz de chat propia: la pagina web incluida en el contenedor usa automaticamente `zydra-vision` cuando hay imagen adjunta y `zydra-loRa` para texto, lo que sirve como base para un portal interno de pruebas.
+- Evaluacion de pipelines compatibles con OpenAI: al exponer `/v1/chat/completions`, el modelo puede conectarse a frameworks que esperan ese contrato para pruebas de integracion sin coste de API externa.
+- Entorno de experimentacion con LoRA y GGUF: el repo y el proyecto `ZydraModel` permiten sustituir `CHAT_MODEL_REPO` y `CHAT_MODEL_FILE` por otros GGUF, lo que facilita comparar variantes sobre la misma infraestructura.
 
 ## Benchmarks y rendimiento
 
@@ -53,39 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; el tamaño del paquete en Ollama es de aproximadamente 806 MB, lo que sugiere que la inferencia puede ejecutarse en CPU con RAM modesta o en GPUs de consumo con pocos GB de VRAM.
-- GPU recomendadas: no especificadas por el autor. Por el tamaño del modelo base, cabría en GPUs de consumo (gama RTX xx60/xx70 y superiores), pero no hay confirmación oficial.
-- Cabe en GPU de consumo: probablemente sí, dado el tamaño del modelo base; sin datos verificados en la información proporcionada.
-- Opciones de despliegue: Docker (obligatorio según la model card), Ollama como motor de inferencia, y API HTTP propia compatible con OpenAI. No se mencionan vLLM, llama.cpp directo ni TGI.
-- Latencia y throughput: no disponibles.
-- Almacenamiento: se recomienda espacio adicional para Ollama y datos de la aplicación, además del volumen `zydra-data`.
+- VRAM estimada: no aplica de forma estricta; el despliegue de referencia es en CPU mediante llama.cpp. Con ~630 M de parametros en GGUF, el peso del modelo ronda los 0,4-0,7 GB segun cuantizacion, y el conjunto descargable (modelo de chat + SmolVLM2 Q8_0 + mmproj) se cifra en ~572 MiB.
+- GPU recomendadas: no disponibles. Cualquier GPU consumer con suficiente memoria libre para el GGUF (por ejemplo, 2-4 GB) podria alojarlo, pero no hay datos publicados de rendimiento en GPU.
+- CPU: configuracion por defecto de 4 hilos (`CHAT_THREADS`, `VISION_THREADS`) y contexto de 2048 tokens para cada modelo.
+- Opciones de despliegue: Docker Compose con dos instancias de `llama-server`, API propia en el puerto 8000 y Railway mediante `Dockerfile`. No se documenta soporte para vLLM ni TGI (el formato GGUF lo orienta a llama.cpp/Ollama).
+- Latencia y throughput: no disponibles. La model card solo indica que hay que esperar a que `/ready` devuelva HTTP 200 tras la descarga inicial de ambos modelos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Despliegue | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Zydra | ~1B (base Gemma 3 1B) | No disponible | No disponible (codigo MIT declarado en badge) | Docker + Ollama + API OpenAI-compatible | Adaptacion con infraestructura de servicio propia |
-| Google Gemma 3 1B | ~1B | No disponible en esta ficha | Terminos de Gemma | Ollama, transformers, llama.cpp | Modelo base original; sin capa de API ni gestion de claves |
-| Qwen2.5 1.5B | ~1.5B | No disponible en esta ficha | Apache 2.0 (segun publicacion original) | Multiples runtimes | Alternativa de tamano similar con licencia permisiva |
-| Llama 3.2 1B | ~1B | No disponible en esta ficha | Licencia comunitaria Llama | Multiples runtimes | Alternativa ligera de Meta |
+| Zydra | 629.697.920 | 2048 (por defecto) | indonesio | Apache 2.0 | GGUF |
+| SmolVLM2-500M-Video-Instruct | ~500 M (no confirmado en la informacion) | 2048 en este despliegue | no disponible | no disponible | GGUF |
+| Alternativas de ~0,5-1 B para texto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación se limita a parámetros y disponibilidad; no hay datos de rendimiento de Zydra que permitan contrastar calidad.
+No se dispone de datos de benchmarks ni de modelos comparables documentados en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento.
 
 ## Limitaciones y advertencias
 
-- No hay información sobre fine-tuning ni evaluación: el modelo parece ser Gemma 3 1B servido con una configuración propia, sin garantías de comportamiento específico.
-- Licencia ambigua: el badge declara MIT para el código, pero la licencia de los pesos no se especifica; para uso comercial debe verificarse la licencia de Gemma 3 1B y los términos del repositorio.
-- Riesgo de alucinación inherente a un modelo de ~1B parámetros, especialmente en tareas de razonamiento, matemáticas o conocimiento factual extenso.
-- Longitud de contexto no documentada en esta ficha; no debe asumirse una ventana amplia para conversaciones largas.
-- La cobertura de más de 140 idiomas es una afirmación heredada del modelo base; no hay evaluación de calidad por idioma en esta adaptación.
-- El sistema de autenticación depende de una contraseña maestra en `.env`; el propio autor advierte de no commitear ese archivo y de usar POST con cabecera en lugar de GET con query string para no filtrar claves en logs.
-- El proyecto está orientado a despliegue y demo; no se documentan garantías de escalado, tolerancia a fallos ni observabilidad en producción.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso comunitario ni validación externa.
+- Ausencia total de evaluaciones publicadas: no hay benchmarks, ni datos de entrenamiento, ni informes de calidad, lo que impide estimar su fiabilidad frente a alternativas conocidas.
+- Ventana de contexto muy reducida (2048 tokens), insuficiente para documentos largos o conversaciones extensas.
+- Idioma limitado al indonesio segun la model card; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- Riesgo de alucinacion no cuantificado; al ser un modelo de ~630 M de parametros, la coherencia en razonamiento y matematicas sera limitada.
+- La model card no documenta sesgos; aun asi, un ajuste LoRA sobre datos no descritos puede heredar sesgos del modelo base y del corpus utilizado.
+- El modelo de vision es un componente distinto (SmolVLM2-500M) con su propia licencia, que no se detalla en la informacion disponible; conviene verificar sus terminos antes de uso comercial.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte, y el repositorio tiene 0 likes y 563 descargas, lo que sugiere poca validacion por parte de la comunidad.
+- El sistema no expone los puertos internos de `llama-server` (8081 y 8082) al host, lo que limita el acceso directo a los modelos fuera de la API.
+- La documentacion esta en indonesio y esta orientada al despliegue, no al uso del modelo como biblioteca.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/fareld3v-hub/zydra
-- Repositorio GitHub del proyecto: https://github.com/fareldev-hub/ZydraModel
-- Modelo base en Ollama: https://ollama.com/library/gemma3:1b
-- Docker: https://www.docker.com/
-- Licencia del código (según badge): https://github.com/fareldev-hub/ZydraModel/blob/main/LICENSE
+- Repositorio de despliegue: https://github.com/fareldev-hub/ZydraModel
+- Modelo de vision por defecto (GGUF): https://huggingface.co/ggml-org/SmolVLM2-500M-Video-Instruct-GGUF
+- No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

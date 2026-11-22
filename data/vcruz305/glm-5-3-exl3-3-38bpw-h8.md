@@ -2,101 +2,117 @@
 
 ## Resumen
 
-GLM-5.3-EXL3-3.38bpw-h8 es una cuantización de 3 bits del modelo zai-org/GLM-5.3, publicada por el usuario vcruz305 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un empaquetado de pesos en formato EXL3 (ExLlamaV3) con un bitrate nominal de 3,38 bits por peso (3,39 bpw incluyendo escalas) y una cabeza de salida en 8 bits. El modelo base, GLM-5.3, es el modelo insignia de Z.ai para codificación y tareas de horizonte largo, con una ventana de contexto de 1M de tokens y licencia MIT.
+GLM-5.3-EXL3-3.38bpw-h8 es una cuantizacion EXL3 del modelo zai-org/GLM-5.3, publicada por el usuario vcruz305. Se trata de un empaquetado de pesos de 159.500 millones de parametros totales (319,1 GB en 58 shards) que conserva integramente los 19.200 expertos enrutados del modelo original (256 por capa, 8 activos) sin poda ni fusion de expertos, con una tasa media de 3,38 bits por peso y una cabeza de salida en 8 bits. El objetivo declarado es que los pesos, junto con una cache KV completa de 1.048.576 tokens a 4 bits, quepan en la memoria de cuatro NVIDIA DGX Spark.
 
-El interés de esta ficha radica en que permite evaluar hasta qué punto un modelo MoE de gran tamano puede comprimirse agresivamente conservando todos los expertos enrutados. La model card indica explícitamente que se mantienen los 256 expertos enrutados, que el modulo MTP (multi-token prediction) no esta incluido y que el pack esta dimensionado para ejecutarse en cuatro NVIDIA DGX Spark con una cache KV en Q4 y contexto de 1M de tokens.
+La relevancia de este pack es fundamentalmente de despliegue: el autor advierte explicitamente de que no debe servirse con ExLlamaV3 estandar, porque este no puede cargar GLM-5.3, y remite a un kit de servido propio (cfontes/glm53-spark-tp4) que incluye un motor tensor-parallel TensorFold parcheado, un drafter DFlash2 y una cache de prefijo KV incremental. Las cifras publicadas (55,7 tok/s en prosa, 69,2 tok/s en codigo, 73,6 tok/s en salida estructurada) corresponden a ese kit sobre cuatro DGX Spark, no a un despliegue generico.
 
-Se trata de un artefacto muy reciente (publicado el 30 de septiembre de 2026), con cero descargas y cero likes en el momento de la consulta, y con la evaluación de calidad todavia pendiente segun su autor. Ademas, requiere un fork especifico de exllamav3 en una revision concreta, por lo que no funciona con la version estandar de la libreria.
+No hay informacion disponible sobre los idiomas soportados ni sobre la model card del modelo base en la informacion proporcionada; los datos de arquitectura y entrenamiento que siguen se limitan a lo que el autor de la cuantizacion documenta sobre GLM-5.3.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE); etiqueta de Hugging Face `glm_moe_dsa` |
-| Parametros totales | 159.499.668.480 (aprox. 159,5 mil millones) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 1M de tokens (según el modelo base y el dimensionamiento del pack) |
-| Tipos de cuantizacion | EXL3 a 3,38 bpw nominal (3,39 bpw con escalas), cabeza en 8 bits, SAGE mixed-K |
+| Arquitectura | Transformer MoE (glm_moe_dsa), 78 capas, 256 expertos enrutados por capa, 8 activos |
+| Parametros totales | 159.499.668.480 (~159,5 B) |
+| Parametros activos | no disponible (8 de 256 expertos por capa, sin cifra oficial de parametros activos) |
+| Longitud de contexto | 1.048.576 tokens (sin cambios respecto al modelo base) |
+| Tipos de cuantizacion | EXL3 MixedK (SAGE), 3,38 bpw nominal (3,39 bpw con escalas), cabeza de salida en 8 bits, cache KV fp8/int4 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en el repositorio de la cuantización; el modelo base GLM-5.3 se distribuye bajo licencia MIT |
-| Formato de pesos | safetensors en formato EXL3 (libreria exllamav3) |
-| Expertos enrutados | 256, todos conservados |
-| Tamano del repositorio | 319,1 GB (319.069.111.923 bytes) |
-| Modulo MTP | no incluido |
-| Evaluacion de calidad | pendiente segun la model card |
+| Licencia | glm-5.3 (license: other, heredada del modelo base) |
+| Formato de pesos | safetensors (EXL3, libreria exllamav3), 58 shards, 319,0 GB (297,1 GiB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe el proceso de entrenamiento del modelo base ni de la cuantización. La etiqueta `glm_moe_dsa` de Hugging Face indica que GLM-5.3 emplea una arquitectura de mezcla de expertos con atencion dispersa (DSA), aunque no se dispone de detalles tecnicos publicados en el material consultado sobre el numero de capas, la dimension oculta, el numero de expertos activados por token ni la composicion del dataset de preentrenamiento o de las fases de alineacion (RLHF, DPO u otras).
+El modelo subyacente es GLM-5.3, un transformer con mezcla de expertos de 78 capas y 256 expertos enrutados por capa de los que 8 se activan por token. Esta publicacion no reentrena el modelo: aplica una cuantizacion post-entrenamiento con el metodo SAGE, que asigna dinamicamente anchos de bits por modulo y produce un esquema MixedK con media de 3,38 bits por peso. Se conservan los 19.200 expertos enrutados completos, sin poda ni merging, y la cabeza de salida se mantiene en 8 bits. El pack no incluye la capa MTP/draft; el kit de servido por defecto incorpora un drafter DFlash2 recalibrado por separado.
 
-Lo que si documenta la model card de esta cuantización es el procedimiento de compresion: se ha aplicado una receta SAGE mixed-K sobre el cuerpo del modelo, manteniendo la totalidad de los 256 expertos enrutados en lugar de podar expertos poco usados, y reservando 8 bits para la cabeza de salida. El resultado es un bitrate efectivo de 3,38 bpw en el cuerpo, con 3,39 bpw si se contabilizan las escalas. El modulo de prediccion multi-token (MTP) del modelo original no se ha incluido en el empaquetado.
-
-El autor indica que el modelo requiere el fork de exllamav3 en la revision `affc194d5476710f167f30729e2508e577759612`; la version estandar de exllamav3 no es compatible con este pack. No se han publicado detalles sobre tecnicas adicionales como decodificacion especulativa, atencion lineal o variantes de atencion dispersa mas alla de lo que sugiere la etiqueta de arquitectura.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF/DPO) del modelo base en la informacion proporcionada. La innovacion tecnica destacable de este pack es el dimensionado para cuatro DGX Spark con cache KV de 1.048.576 tokens a 4 bits, junto con el soporte del kit para decodificacion especulativa DFlash2 (profundidad 13, aceptacion relajada top2 con verificacion por el modelo objetivo), cache de prefijo KV incremental con reutilizacion exacta del prefijo comun mas largo y chunking de posicion fija, y decodificacion con context parallel 4.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de proposito general, segun el pipeline declarado (`text-generation`).
-- Codificacion y tareas de horizonte largo: el modelo base se presenta como insignia para codigo y tareas prolongadas.
-- Procesamiento de contextos muy extensos: hasta 1M de tokens, lo que habilita el analisis de repositorios o corpus completos sin fragmentacion.
-- Razonamiento multi-paso y flujos agenticos heredados del modelo base (no verificados de forma independiente en esta cuantizacion).
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; el autor no declara idiomas en el repositorio.
-- Modo de razonamiento explicito (thinking mode): no disponible en la informacion proporcionada.
-- Decodificacion especulativa mediante MTP: no disponible, el modulo MTP no esta incluido en el pack.
+- Generacion de texto conversacional y continuacion de documentos, con pipeline text-generation y etiqueta conversational.
+- Razonamiento y matematicas: el kit reporta un 96,7% en el conjunto de test completo de GSM8K (1271/1315 comprometidos, T=0).
+- Generacion de codigo: se miden 69,2 tok/s en cargas de codigo y se evalua fidelidad sobre HumanEval.
+- Salida estructurada: 73,6 tok/s en el benchmark de salida estructurada del kit.
+- Contexto largo: ventana de 1.048.576 tokens con cache KV a 4 bits, validada en prompts de 127.544, 163.840 y 262.144 tokens.
+- Sesiones agenticas multi-turno: la cache de prefijo incremental mantiene el prefilling plano en 13-19 s por turno en una conversacion de seis turnos.
+- Servido mediante API compatible con OpenAI a traves del kit cfontes/glm53-spark-tp4.
+- Soporte de tool calling / function calling y de vision: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Analisis de repositorios completos de codigo: con 1M de tokens de contexto, el modelo puede ingerir un arbol de fuentes extenso de una sola vez y responder preguntas de arquitectura, dependencias o impacto de cambios sin necesidad de un pipeline de recuperacion.
-- Agentes de codificacion de larga duracion: tareas de refactorizacion o migracion que requieren decenas de pasos encadenados se benefician del contexto amplio y de las capacidades de horizonte largo del modelo base.
-- Despliegue on-premise para equipos con hardware multi-GPU: el pack esta dimensionado para cuatro NVIDIA DGX Spark, lo que permite servir un modelo de clase frontera en una infraestructura de escritorio o laboratorio sin depender de APIs externas.
-- Investigacion sobre cuantizacion extrema: al conservar los 256 expertos enrutados a 3,38 bpw, este artefacto es un caso de estudio util para medir la perdida de calidad asociada a bitrates muy bajos en modelos MoE.
-- Analisis documental de gran volumen: contratos, expedientes tecnicos o corpus normativos que superan cientos de miles de tokens pueden procesarse en una sola pasada, evitando la perdida de informacion que introducen los sistemas de chunking.
-- Generacion de codigo en pipelines internos: integrable en flujos de revision o generacion de parches siempre que el equipo asuma el coste de mantener el fork de exllamav3 requerido.
-- Evaluacion comparativa de recetas de cuantizacion: util para contrastar la receta SAGE mixed-K de este pack frente a las variantes K2K3 del mismo autor sobre el modelo Flash.
+- Sesiones agenticas multi-turno: la cache de prefijo KV incremental reutiliza el prefijo comun exacto y evita que el prefilling crezca de 15,5 s a 85,3 s en seis turnos, lo que hace viable mantener conversaciones de agente largas con coste por turno estable (13-19 s).
+- Analisis de repositorios y documentos extensos: con 1.048.576 tokens de contexto y prompts medidos de hasta 262.144 tokens, el modelo puede ingerir bases de codigo o expedientes completos en una sola pasada sin troceado.
+- Generacion de codigo en pipelines internos: los 69,2 tok/s en cargas de codigo y la fidelidad medida sobre HumanEval lo hacen adecuado para autocompletado y generacion de parches en entornos con hardware DGX Spark.
+- Razonamiento matematico y verificacion: el 96,7% en GSM8K test completo permite usarlo en tareas de resolucion de problemas paso a paso donde se requiera consistencia aritmetica.
+- Salida estructurada para integracion de sistemas: los 73,6 tok/s en salida estructurada y el servidor compatible con OpenAI facilitan la generacion de JSON y respuestas con formato fijo para backends de automatizacion.
+- Despliegue on-premise con requisitos de privacidad: al ejecutarse en cuatro DGX Spark con pesos locales y sin dependencia de API externa, encaja en escenarios donde los datos no pueden salir de la infraestructura.
+- Evaluacion e investigacion de cuantizacion: el pack incluye metricas de fidelidad frente a BF16 (acuerdo top-1, KL, perplejidad) utiles para estudiar el impacto de esquemas MixedK de 3,38 bpw en modelos MoE grandes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La propia model card indica que la evaluacion de calidad esta pendiente y que las puntuaciones se anadiran cuando finalice. No se dispone de datos de MMLU, HumanEval, GSM8K ni de ninguna otra prueba para esta cuantizacion ni para el modelo base en el material consultado.
+Fidelidad retenida frente al modelo BF16 original (10 secuencias de 1.024 tokens, 10.240 posiciones, vocabulario completo de 154.880 tokens, float64):
+
+| Metrica | Resultado |
+|---|---|
+| Acuerdo top-1 con BF16 | 92,98% (9.521 / 10.240) |
+| Token top-1 de BF16 dentro del top 5 de la cuantizacion | 99,38% |
+| Divergencia KL media (BF16 ‖ quant) | 0,0948 |
+| Divergencia KL mediana | 0,0018 |
+| Divergencia KL percentil 99 | 1,61 |
+| Solapamiento de conjuntos top-5 | 0,827 |
+| NLL media, BF16 → quant | 1,0092 → 1,0300 |
+| Incremento de perplejidad | +2,1% |
+
+Benchmarks de tarea a traves del kit de servido por defecto (una peticion a la vez):
+
+| Benchmark | Resultado | Metodo |
+|---|---|---|
+| GSM8K, test completo | 96,7% (1271 / 1315) | runeval.py, T=0 |
+| GPQA-Diamo | dato truncado en la informacion disponible | no disponible |
+
+Rendimiento de decodificacion en cuatro DGX Spark (320 tokens nuevos, temperatura 0, n=6, p50, DFlash2):
+
+| Carga | tok/s |
+|---|---|
+| Prosa | 55,7 |
+| Codigo | 69,2 |
+| Salida estructurada | 73,6 |
+
+Mediciones anteriores con otro arnes (no comparables con las de arriba): 69 tok/s de pico con DFlash2, 56,5 tok/s en prompt matematico, 41,1 tok/s de media en seis prompts reales con contexto de 163.840 tokens, 40,6 tok/s con contexto de 262.144 tokens y cache KV int4, 26,5 tok/s sin drafting, 33,3 tok/s con prompt de 127.544 tokens en contexto. El mismo hardware con ExLlamaV3 sin drafter rinde 12,2-15,7 tok/s.
 
 ## Requisitos de hardware
 
-- Pesos del modelo: 319.069.111.923 bytes, aproximadamente 297 GiB en disco y en memoria.
-- VRAM estimada: los pesos por si solos requieren unos 297 GiB; a ello hay que sumar la cache KV, que el autor dimensiona en Q4 para un contexto de 1M de tokens. El total no esta cuantificado en la informacion disponible.
-- Hardware de referencia: el autor indica que el pack esta dimensionado para cuatro NVIDIA DGX Spark (plataforma GB10), lo que supone del orden de 512 GB de memoria unificada agregada.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB), ni en tarjetas de 48 GB o 80 GB por si solas.
-- GPU de centro de datos: no hay datos publicados sobre A100, H100 o H200 para este pack concreto.
-- Opciones de despliegue: exllamav3 en el fork de la revision `affc194d5476710f167f30729e2508e577759612`. La version estandar de exllamav3 no es compatible. Para las variantes hermanas del mismo autor existe una receta reproducible de vLLM sobre DGX Spark, pero no se ha publicado una equivalente para este repositorio.
-- Latencia y throughput: no disponible.
+- VRAM/ memoria estimada: el pack completo ocupa 319,0 GB (297,1 GiB) en disco; el autor lo dimensiona para pesos mas cache KV de 1.048.576 tokens a 4 bits en cuatro NVIDIA DGX Spark.
+- GPU recomendadas: cuatro NVIDIA DGX Spark como configuracion de referencia (TensorFold TP=4, context parallel 4). No se documentan otras configuraciones validas.
+- GPU de consumo: no cabe en una GPU consumer individual; el tamano de pesos supera ampliamente la VRAM de una RTX 4090 o similar.
+- Opciones de despliegue: kit cfontes/glm53-spark-tp4 (motor TensorFold GLM-5.3 tensor-parallel parcheado, drafter DFlash2, servidor compatible con OpenAI, cache de prefijo KV incremental). ExLlamaV3 estandar no puede cargar GLM-5.3 y no debe usarse. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 55,7-73,6 tok/s segun carga con DFlash2; prefilling de 13-19 s por turno con cache de prefijo en sesiones agenticas; un prompt de 19.215 tokens extendido en una palabra prellena en 0,41 s frente a 46,4 s en frio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato y bitrate | Licencia | Notas |
+| Modelo | Parametros totales | Contexto | Formato / cuantizacion | Licencia | Rendimiento documentado |
 |---|---|---|---|---|---|
-| vcruz305/GLM-5.3-EXL3-3.38bpw-h8 (este) | 159,5 mil millones | 1M de tokens | EXL3, 3,38 bpw, cabeza 8 bits | no disponible | 256 expertos conservados, MTP excluido, requiere fork de exllamav3 |
-| zai-org/GLM-5.3 (base) | no disponible | 1M de tokens | pesos completos (precision original) | MIT | Modelo insignia de Z.ai para codigo y tareas de horizonte largo |
-| vcruz305/GLM-5.3-Flash-EXL3 | no disponible | no disponible | EXL3 | no disponible | Cuantizacion de la variante Flash por el mismo autor |
-| vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix | no disponible | no disponible | EXL3, 2,14 bpw efectivos en expertos enrutados | no disponible | Receta reproducible de vLLM sobre una sola DGX Spark; seis capas de expertos en K3 |
+| GLM-5.3-EXL3-3.38bpw-h8 (esta ficha) | ~159,5 B (MoE, 256 expertos, 8 activos) | 1.048.576 | EXL3 MixedK 3,38 bpw, safetensors | glm-5.3 | GSM8K 96,7%; 55,7-73,6 tok/s en 4 DGX Spark |
+| zai-org/GLM-5.3 (BF16, modelo base) | no disponible | 1.048.576 | BF16 | glm-5.3 | Referencia de fidelidad; no se publican cifras de rendimiento en la informacion disponible |
+| ExLlamaV3 sin drafter sobre el mismo hardware | no aplica (runtime) | no disponible | EXL3 | no disponible | 12,2-15,7 tok/s (medido por el autor) |
+
+No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Evaluacion de calidad pendiente: el autor no ha publicado ninguna medicion de degradacion respecto al modelo base, por lo que no hay evidencia de como afecta el bitrate de 3,38 bpw a tareas de razonamiento o codigo.
-- Dependencia de un fork no estandar: el pack solo funciona con exllamav3 en la revision `affc194d5476710f167f30729e2508e577759612`, lo que complica el mantenimiento en produccion y la reproducibilidad a largo plazo.
-- Sin modulo MTP: al no incluirse la prediccion multi-token, no es posible aprovechar la decodificacion especulativa asociada en el modelo original.
-- Requisitos de hardware muy elevados: 319 GB de pesos mas cache KV implican un cluster de cuatro DGX Spark o equivalente; no es desplegable en GPU de consumo ni en servidores de una sola tarjeta de 80 GB.
-- Licencia de la cuantizacion no declarada: aunque el modelo base es MIT, el repositorio de esta cuantizacion no especifica licencia, lo que introduce incertidumbre para uso comercial. Conviene verificar la licencia del artefacto antes de integrarlo.
-- Idiomas no declarados: no hay informacion sobre cobertura linguistica ni sobre el comportamiento en castellano.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay datos especificos de esta cuantizacion que permitan acotarlo.
-- Sesgos: no disponibles; no se ha publicado ninguna evaluacion de sesgo para este pack ni para el modelo base en la informacion consultada.
-- Adopcion nula: cero descargas y cero likes en el momento de la consulta, sin validacion independiente por parte de la comunidad.
-- Sin benchmarks comparativos: no es posible situar esta cuantizacion frente a alternativas de otros autores en tareas estandar.
+- La cuantizacion introduce degradacion medible: 92,98% de acuerdo top-1 con BF16, KL media de 0,0948 con cola hasta 1,61 en el percentil 99 y +2,1% de perplejidad. Los casos en la cola de KL pueden producir divergencias notables en generaciones largas.
+- La evaluacion de fidelidad se hizo con pasadas completas de 1.024 tokens; no cubre contexto largo ni generacion con cache, por lo que el comportamiento en ventanas de cientos de miles de tokens no esta validado con esas metricas.
+- No debe servirse con ExLlamaV3 estandar: el runtime no puede cargar GLM-5.3. El uso requiere el kit cfontes/glm53-spark-tp4 y su DEPLOY.md.
+- El pack no incluye la capa MTP/draft; la decodificacion especulativa depende de un drafter DFlash2 separado y recalibrado.
+- Las cifras de rendimiento provienen de dos arneses distintos y el propio autor advierte de que no deben compararse entre si; ademas estan medidas en cuatro DGX Spark, una configuracion de hardware especifica.
+- Licencia glm-5.3 (license: other): las condiciones exactas de uso comercial no se detallan en la informacion proporcionada y deben consultarse en el repositorio del modelo base.
+- No hay informacion disponible sobre sesgos, idiomas soportados ni tasas de alucinacion.
+- El tamano de 319 GB y la necesidad de cuatro aceleradores limitan el despliegue a infraestructura dedicada; no es viable en entornos de una sola GPU.
 
 ## Enlaces
 
-- Repositorio de la cuantización: https://huggingface.co/vcruz305/GLM-5.3-EXL3-3.38bpw-h8
+- Hugging Face (esta cuantizacion): https://huggingface.co/vcruz305/GLM-5.3-EXL3-3.38bpw-h8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
-- Pagina informativa de GLM-5.3: https://openlm.ai/glm-5.3/
-- Variante Flash en EXL3: https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3
-- Arbol de archivos de la variante Flash: https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3/tree/main
-- Receta de vLLM para DGX Spark (variante K2K3): https://github.com/vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix-DGX-Spark-recipe
-- Perfil del autor en GitHub: https://github.com/vcruz305
+- Kit de servido por defecto: https://huggingface.co/cfontes/glm53-spark-tp4
+- Receta original DGX Spark: https://github.com/vcruz305/GLM-5.3-EXL3-DGX-Spark-recipe
+- DEPLOY.md (instrucciones de despliegue, incluido en el repositorio del pack)

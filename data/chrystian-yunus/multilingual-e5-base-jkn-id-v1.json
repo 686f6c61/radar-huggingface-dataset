@@ -5,7 +5,7 @@
   "author": "chrystian-yunus",
   "url": "https://huggingface.co/chrystian-yunus/multilingual-e5-base-jkn-id-v1",
   "created_at": "2026-11-18T13:54:53.000Z",
-  "updated_at": "2026-11-18T13:56:09.000Z",
+  "updated_at": "2026-11-21T10:25:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "sentence-similarity",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 278043648,
   "parameters_human": "278.0M",
@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "chrystian-yunus/multilingual-e5-base-jkn-id",
+  "renamed_at": "2026-11-22T06:53:36.518Z",
   "benchmarks": [
     {
       "task": "Information Retrieval",

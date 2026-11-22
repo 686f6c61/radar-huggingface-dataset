@@ -1,0 +1,108 @@
+{
+  "schema": 2,
+  "id": "Tonic/challenge5-acoustic-best-int8",
+  "slug": "tonic-challenge5-acoustic-best-int8",
+  "author": "Tonic",
+  "url": "https://huggingface.co/Tonic/challenge5-acoustic-best-int8",
+  "created_at": "2026-11-22T05:35:51.000Z",
+  "updated_at": "2026-11-22T05:35:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "tflite",
+    "onnx",
+    "acoustic-wake",
+    "c-uas",
+    "challenge-5",
+    "int8",
+    "quantized",
+    "drone-detection",
+    "paris-hackathon-2026",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3778864,
+  "storage_human": "4 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Acoustic wake + 4-class sound classification",
+      "dataset": "Paris Hackathon 2026 Challenge-5 (62 clips, 48/8/6)",
+      "metric": "wake F1 (fp32 reference, valid)",
+      "value": 0.8
+    },
+    {
+      "task": "Acoustic wake + 4-class sound classification",
+      "dataset": "Paris Hackathon 2026 Challenge-5 (62 clips, 48/8/6)",
+      "metric": "sound-class accuracy (fp32 reference, valid)",
+      "value": 0.875
+    },
+    {
+      "task": "Acoustic wake + 4-class sound classification",
+      "dataset": "Paris Hackathon 2026 Challenge-5 (62 clips, 48/8/6)",
+      "metric": "optical inactivity (fp32 reference, valid)",
+      "value": 62.5
+    },
+    {
+      "task": "Acoustic wake + 4-class sound classification",
+      "dataset": "Paris Hackathon 2026 Challenge-5 (62 clips, 48/8/6)",
+      "metric": "int8 wake logit on drone clip c5_0002 (ORT, must be >= 0.05)",
+      "value": 35.757
+    },
+    {
+      "task": "Acoustic wake + 4-class sound classification",
+      "dataset": "Paris Hackathon 2026 Challenge-5 (62 clips, 48/8/6)",
+      "metric": "int8 class argmax on c5_0002 / c5_0001 / c5_0003 (0/3/1 expected)",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tonic App - France",
+      "url": "https://tonicapp.fr/",
+      "snippet": "Tonic est la plateforme médicale la plus sûre de toute l'Europe. Elle dispose d’un software marqué CE (Classe IIa), qui inclut des …Read more"
+    },
+    {
+      "title": "Page d'accueil - Boutique Tonic",
+      "url": "https://boutiquetonic.com/",
+      "snippet": "Automne/hiver 2026. Encore plus de choix dans nos boutiques ! Découvrez nos nouveautés La signature Tonic Découvrez notre …Read more"
+    },
+    {
+      "title": "Tonic Web",
+      "url": "https://web.tonicapp.com/fr",
+      "snippet": "Tonic Web is the desktop version of Tonic App, offering clinical tools, news, games, and a virtual assistant for healthcare professionals."
+    },
+    {
+      "title": "On a classé (à l’aveugle) 9 tonics parmi les plus consommés",
+      "url": "https://quaff-magazine.com/on-a-classe-a-laveugle-9-tonics-parmi-les-plus-consommes/",
+      "snippet": "Feb 26, 2021 · Le classement ultime pour enfin découvrir quel tonic va vous accompagner toute l’année. En plein boom ces …Read more"
+    },
+    {
+      "title": "Boutique - Boutique Tonic",
+      "url": "https://boutiquetonic.com/shop/",
+      "snippet": "Boutique Encore plus de choix dans nos boutiques! Notre site ne présente qu’une partie de notre sélection. Découvrez encore plus …Read more"
+    }
+  ]
+}

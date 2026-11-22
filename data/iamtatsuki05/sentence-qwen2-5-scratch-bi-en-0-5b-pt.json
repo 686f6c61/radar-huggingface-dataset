@@ -5,7 +5,7 @@
   "author": "iamtatsuki05",
   "url": "https://huggingface.co/iamtatsuki05/Sentence-Qwen2.5-Scratch-Bi-EN-0.5B-PT",
   "created_at": "2026-07-19T05:01:24.000Z",
-  "updated_at": "2026-11-15T11:43:27.000Z",
+  "updated_at": "2026-11-19T09:40:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",

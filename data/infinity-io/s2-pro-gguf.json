@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Infinity-io/s2-pro-gguf",
+  "slug": "infinity-io-s2-pro-gguf",
+  "author": "Infinity-io",
+  "url": "https://huggingface.co/Infinity-io/s2-pro-gguf",
+  "created_at": "2026-11-22T05:11:55.000Z",
+  "updated_at": "2026-11-22T05:11:55.000Z",
+  "license": "fish-audio-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "audio",
+    "fish-speech",
+    "tts",
+    "voice-cloning",
+    "multilingual",
+    "base_model:fishaudio/s2-pro",
+    "base_model:quantized:fishaudio/s2-pro",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4953250801,
+  "parameters_human": "4.95B",
+  "storage_bytes": 33277110864,
+  "storage_human": "33.3 GB",
+  "context_length": 32768,
+  "base_model": "fishaudio/s2-pro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

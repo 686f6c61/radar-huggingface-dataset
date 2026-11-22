@@ -5,7 +5,7 @@
   "author": "nokkela-ai",
   "url": "https://huggingface.co/nokkela-ai/gpt-oss-120b",
   "created_at": "2026-11-20T17:48:31.000Z",
-  "updated_at": "2026-11-20T18:06:15.000Z",
+  "updated_at": "2026-11-21T12:25:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,6 +19,8 @@
     "vllm",
     "conversational",
     "arxiv:2508.10925",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:quantized:openai/gpt-oss-120b",
     "license:apache-2.0",
     "endpoints_compatible",
     "8-bit",
@@ -33,7 +35,7 @@
   "storage_bytes": 195763884726,
   "storage_human": "195.8 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "openai/gpt-oss-120b",
   "formats": [
     "safetensors"
   ],

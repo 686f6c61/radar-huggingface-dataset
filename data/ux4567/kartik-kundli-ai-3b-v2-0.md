@@ -2,78 +2,91 @@
 
 ## Resumen
 
-El modelo UX4567/Kartik-Kundli-AI-3B-v2.0 es un modelo de lenguaje de 3.085.938.688 parámetros (aproximadamente 3B) publicado en Hugging Face por el usuario UX4567. El tag `qwen2` sugiere que está basado en la arquitectura Qwen2, aunque no se confirma oficialmente. Por el nombre y los resultados de búsqueda asociados, parece estar orientado a la generación de cartas astrales védicas (Kundli) y predicciones astrológicas, posiblemente como un asistente conversacional especializado en ese dominio.
+Kartik-Kundli-AI-3B-v2.0 es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct orientado a astrología védica (jyotish), kundli, rashi, nakshatra y dashas. Lo publica el usuario UX4567 (Kartik) en Hugging Face bajo licencia MIT. El modelo resuelve la demanda de asistentes conversacionales especializados en astrología védica en hindi, inglés e hinglish, con un tamaño de 3B parámetros que permite ejecución local en portátil o incluso en dispositivos móviles mediante cuantización GGUF.
 
-El repositorio ocupa 30,9 GB, lo que resulta inusualmente grande para un modelo de 3B de parámetros, lo que podría indicar la presencia de múltiples archivos de pesos, cuantizaciones o versiones adicionales. El modelo fue creado el 27 de agosto de 2026 y actualizado el mismo día. No se dispone de información sobre licencia, idiomas soportados, pipeline de uso ni datos de entrenamiento. A pesar de su reciente publicación, no registra descargas y solo tiene un like, lo que sugiere que es un proyecto muy reciente o de alcance limitado.
+Arquitectura transformer decoder-only heredada de Qwen2.5-3B-Instruct, con 3.085.938.688 parámetros totales según los pesos safetensors. El repositorio incluye tanto pesos en safetensors como versiones GGUF para llama.cpp, lo que facilita el despliegue offline en aplicaciones de astrología sin conexión. La model card declara soporte para hindi, inglés y hinglish.
+
+La relevancia actual radica en su nicho: es un modelo pequeño, libre y ejecutable localmente que cubre un dominio cultural específico (astrología védica) con vocabulario técnico en hindi. No obstante, la documentación técnica publicada es escasa: no hay detalles sobre el dataset de ajuste fino, el número de tokens de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag sugiere Qwen2, sin confirmar) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-3B-Instruct) |
 | Parametros totales | 3.085.938.688 |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo contiene safetensors, posiblemente también GGUF) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (también se menciona uso con llama.cpp, lo que sugiere GGUF) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (el modelo base Qwen2.5-3B-Instruct soporta 32.768 tokens, pero la model card no lo confirma para este ajuste) |
+| Tipos de cuantizacion | GGUF disponible (niveles concretos no especificados en la model card) |
+| Idiomas soportados | Hindi, inglés y hinglish (según la model card) |
+| Licencia | MIT |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.). El tag `qwen2` en Hugging Face apunta a que el modelo podría derivar de la familia Qwen2, pero no hay confirmación en la ficha del repositorio. El tamaño de 3B de parámetros es consistente con modelos de la escala pequeña, adecuados para inferencia en hardware de consumo. El peso del repositorio (30,9 GB) sugiere que se incluyen múltiples archivos, posiblemente diferentes cuantizaciones o versiones del modelo, pero no se detalla su contenido.
+El modelo es un ajuste fino del Qwen2.5-3B-Instruct, un transformer decoder-only denso de 3B parámetros con atención causal estándar. La model card no documenta la arquitectura interna más allá de indicar que es un fine-tuning del modelo base de Qwen, y las etiquetas del repositorio mezclan referencias a `qwen2` y `qwen3`, lo que introduce ambigüedad sobre la generación exacta del backbone (el campo `base_model` confirma Qwen2.5-3B-Instruct).
+
+No se publica información sobre el corpus de ajuste fino: ni número de tokens, ni composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT supervisado. Tampoco se detallan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.). La versión v2.0 se presenta como "más precisa" que la anterior, pero sin métricas que respalden la afirmación.
 
 ## Capacidades
 
-No se han publicado descripciones de capacidades específicas en la información disponible. Por el nombre y el contexto de los resultados de búsqueda, se infiere que el modelo podría estar especializado en:
-
-- Generación de cartas astrales védicas (Kundli) y análisis astrológico
-- Predicciones basadas en Dashas, Ashtakavarga y otros sistemas de la astrología védica
-- Conversación multi-turno sobre temas de astrología, aunque no se confirma
-
-No hay evidencia de soporte para tool calling, agentes, razonamiento multi-paso, visión o audio. Tampoco se especifican capacidades multilingües.
+- Generación de texto conversacional en hindi, inglés y hinglish.
+- Respuesta a preguntas sobre astrología védica: kundli, rashi, nakshatra, dashas, doshas (por ejemplo, Mangal Dosh) y tránsitos planetarios como Sade Sati.
+- Explicación de conceptos astrológicos en hindi sencillo.
+- Predicciones diarias de horóscopo por signo (rashi).
+- Ejecución offline mediante los pesos GGUF incluidos en el repositorio.
+- Soporte de conversación multi-turno heredado del modelo base (no documentado explícitamente para el ajuste).
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-Dado que no se dispone de documentación oficial, los casos de uso son hipotéticos y basados en el nombre del modelo y los resultados de búsqueda:
-
-- Generación de cartas astrales personalizadas: el modelo podría recibir fecha, hora y lugar de nacimiento y devolver un análisis de la carta védica, aunque no se ha verificado su precisión.
-- Asistente de astrología védica: podría responder preguntas sobre planetas, casas, signos y tránsitos, pero no hay datos que confirmen su fiabilidad.
-- Interpretación de Dashas y períodos planetarios: podría explicar las fases de la vida según el sistema védico, sin garantías de exactitud.
-- Análisis de compatibilidad entre personas: podría comparar cartas para evaluar relaciones, aunque no se ha demostrado su capacidad.
-- Generación de informes de remedios astrológicos: podría sugerir gemas, mantras u otras prácticas, con el riesgo de ofrecer consejos no verificados.
-- Integración en aplicaciones de astrología: podría usarse como backend para chatbots o generadores de informes, pero requiere validación previa.
+- Asistente de astrología védica para consultas individuales: el modelo responde preguntas sobre kundli, nakshatra y dashas en hindi o hinglish, adecuado para usuarios que buscan explicaciones en lenguaje sencillo sin depender de servicios en la nube.
+- Aplicación móvil offline de horóscopo diario: gracias a los pesos GGUF y al tamaño de 3B parámetros, puede integrarse en una app Android o iOS con inferencia local mediante llama.cpp, sin enviar datos del usuario a servidores externos.
+- Chatbot de atención en portales de astrología: gestiona conversaciones multi-turno sobre rashi y predicciones, con coste de inferencia bajo al ejecutarse en una sola GPU consumer o incluso en CPU.
+- Generación de contenido editorial astrológico: redacción de textos diarios de horóscopo por signo para blogs o newsletters en hindi, con revisión humana posterior.
+- Herramienta educativa sobre jyotish: explicación de términos sánscritos y conceptos védicos a estudiantes que se inician en la disciplina, en formato de preguntas y respuestas.
+- Prototipado rápido de productos de nicho cultural: sirve como base para experimentar con asistentes especializados en dominios culturales sin requerir infraestructura de gran escala.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente, permite procesar datos personales de nacimiento (fecha, hora, lugar) sin salir del dispositivo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K ni otras pruebas estándar. Tampoco hay comparaciones con modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No se dispone de información específica sobre requisitos de hardware. Sin embargo, para un modelo de 3B de parámetros, se pueden hacer estimaciones generales:
-
-- VRAM estimada para inferencia: en FP16, un modelo de 3B requiere aproximadamente 6 GB de VRAM; en cuantización de 8 bits, unos 3,5 GB; en 4 bits, unos 2 GB.
-- GPU recomendadas: tarjetas con al menos 8 GB de VRAM (RTX 3060, RTX 4060, etc.) para FP16; GPUs con 4-6 GB pueden funcionar con cuantización.
-- En consumer GPU: sí, cabe en GPUs de gama media y baja con cuantización.
-- Opciones de despliegue: llama.cpp (mencionado en los resultados de búsqueda), Ollama, vLLM, TGI, entre otros.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en FP16: aproximadamente 6,2 GB solo para pesos, más overhead de activaciones y caché KV (en torno a 7-8 GB en total).
+- VRAM estimada en cuantización de 8 bits: aproximadamente 3,5-4 GB.
+- VRAM estimada en cuantización de 4 bits (Q4_K_M en GGUF): aproximadamente 2-2,5 GB.
+- GPU recomendadas: NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para despliegues con mayor concurrencia; también funciona en GPUs con 8 GB en FP16 ajustado.
+- Cabe en GPU consumer: sí, en RTX 3060, RTX 4060, RTX 4070 y superiores con cuantización; en CPU también es viable con GGUF Q4.
+- Opciones de despliegue: transformers (según el ejemplo de la model card), llama.cpp con los archivos GGUF, Ollama (previa conversión o importación del GGUF), y TGI (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`).
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (astrología védica). El propio autor ha publicado otros modelos relacionados, como `UX4567/Kartik-AI-3B` y `UX4567/Kartik-Kundli-AI-3B-Instruct`, pero no se ofrecen detalles técnicos ni comparativas. No se puede establecer una comparación rigurosa sin datos adicionales.
+| Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Kartik-Kundli-AI-3B-v2.0 | 3,09B | No disponible | Astrología védica (hi/en) | MIT | Hugging Face, safetensors y GGUF |
+| Qwen2.5-3B-Instruct (base) | 3,09B | 32.768 tokens | Generalista multilingüe | Apache 2.0 (según el modelo base) | Hugging Face |
+| Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Generalista multilingüe | Llama 3.2 Community License | Hugging Face, Ollama |
+| Gemma 2 2B Instruct | 2,6B | 8.192 tokens | Generalista multilingüe | Gemma Terms of Use | Hugging Face, Ollama |
+
+La comparativa con modelos especializados en astrología védica no está disponible: no se han identificado alternativas públicas equivalentes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se ha publicado información sobre sesgos, alucinaciones o limitaciones específicas.
-- Al ser un modelo sin documentación, su fiabilidad en tareas de astrología es desconocida y debe tratarse como experimental.
-- La licencia no está especificada, por lo que no se puede garantizar su uso comercial o su redistribución.
-- El tamaño del repositorio (30,9 GB) sugiere que puede contener múltiples archivos, pero no se detalla su contenido ni su procedencia.
-- No hay evidencia de que el modelo haya sido evaluado en tareas generales de lenguaje; su especialización en astrología podría limitar su rendimiento en otros dominios.
-- La fecha de creación (2026) es futura en relación con el conocimiento actual, lo que podría indicar un error en los metadatos o un proyecto muy reciente.
+- El modelo genera predicciones astrológicas que no tienen base científica; debe presentarse como contenido educativo o de entretenimiento, nunca como consejo médico, legal o financiero (la propia model card lo excluye explícitamente).
+- Riesgo elevado de alucinación en detalles astrológicos concretos (posiciones planetarias, fechas de dashas, cálculos de kundli), ya que un modelo de lenguaje no calcula efemérides reales.
+- La model card no documenta el dataset de entrenamiento, por lo que se desconoce la calidad y cobertura del ajuste fino, así como posibles sesgos culturales o religiosos.
+- Idiomas limitados a hindi, inglés y hinglish; el rendimiento en castellano u otras lenguas no está evaluado y probablemente sea deficiente.
+- Longitud de contexto no confirmada para este ajuste; se desconoce si conserva los 32.768 tokens del modelo base.
+- La licencia MIT permite uso comercial, pero el modelo base Qwen2.5-3B-Instruct tiene su propia licencia (Apache 2.0 según la información habitual del modelo base), que conviene verificar antes de un despliegue comercial.
+- El repositorio mezcla etiquetas de `qwen2` y `qwen3`, lo que genera ambigüedad sobre la procedencia exacta del backbone.
+- El tamaño del repositorio (45,2 GB) es desproporcionado para un modelo de 3B, probablemente por incluir múltiples cuantizaciones GGUF; conviene revisar los archivos antes de descargar.
+- No hay benchmarks publicados que permitan validar la afirmación de "predicciones más precisas" de la v2.0.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-v2.0
-- Modelo relacionado: https://huggingface.co/UX4567/Kartik-AI-3B
-- Modelo instruct relacionado: https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-Instruct
-- Sitio web de Jyotish AI (astrología védica): https://jyotishai.online/
+- Modelo en Hugging Face: https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-v2.0
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+- Enlace de donación indicado en la model card: https://razorpay.me/@guruduttsharma6742
+- Demo: no disponible ("Coming Soon" según la model card)

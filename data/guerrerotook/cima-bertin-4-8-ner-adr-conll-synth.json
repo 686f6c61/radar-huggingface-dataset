@@ -26,6 +26,8 @@
     "iob2",
     "es",
     "dataset:guerrerotook/CIMA-4.8-ADR-NER-EXTENDED",
+    "base_model:guerrerotook/CIMA-BERTIN-4.8",
+    "base_model:finetune:guerrerotook/CIMA-BERTIN-4.8",
     "license:cc-by-4.0",
     "endpoints_compatible",
     "region:us"

@@ -5,7 +5,7 @@
   "author": "arelius",
   "url": "https://huggingface.co/arelius/Inkling-2-Mini-Q6K-3090-GGUF",
   "created_at": "2026-11-21T22:21:45.000Z",
-  "updated_at": "2026-11-21T22:22:15.000Z",
+  "updated_at": "2026-11-22T00:18:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

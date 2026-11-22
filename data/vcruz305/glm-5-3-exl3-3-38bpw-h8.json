@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 563,
+  "downloads_30d": 559,
   "trending_score": 0,
   "parameters": 159499668480,
   "parameters_human": "159.50B",
@@ -54,31 +54,5 @@
   "renamed_to": "vcruz305/GLM-5.3-EXL3-3.38bpw",
   "renamed_at": "2026-11-11T07:59:05.085Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "vcruz305/GLM-5.3-Flash-EXL3 · Hugging Face",
-      "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3",
-      "snippet": "Instructions to use vcruz305/GLM-5.3-Flash-EXL3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use vcruz305/GLM-5.3-Flash-EXL3 with Transformers:"
-    },
-    {
-      "title": "vcruz305/GLM-5.3-Flash-EXL3 at main - Hugging Face",
-      "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3/tree/main",
-      "snippet": "Instructions to use vcruz305/GLM-5.3-Flash-EXL3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use vcruz305/GLM-5.3-Flash-EXL3 with Transformers:"
-    },
-    {
-      "title": "vcruz305 (Victor Cruz) · GitHub",
-      "url": "https://github.com/vcruz305",
-      "snippet": "I quantize frontier models down into EXL3 and GGUF to fit on smaller GPUs, while also creating the most optimal recipes possible for the latest local LLMs! - vcruz305"
-    },
-    {
-      "title": "GitHub - vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix-DGX-Spark-recipe: vLLM ...",
-      "url": "https://github.com/vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix-DGX-Spark-recipe",
-      "snippet": "Reproducible vLLM recipe for vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix on a single NVIDIA DGX Spark / GB10 (SM121): the K2 pack with six routed-expert layers (24, 27, 35, 37, 42, 45) at K3, 2.14 bpw effective on the routed experts. Independent community engineering. Not affiliated with or endorsed by Z.ai, NVIDIA, or vLLM."
-    },
-    {
-      "title": "GLM-5.3 - openlm.ai",
-      "url": "https://openlm.ai/glm-5.3/",
-      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
-    }
-  ]
+  "sources": []
 }

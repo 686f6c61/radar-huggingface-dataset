@@ -2,104 +2,99 @@
 
 ## Resumen
 
-Saina Helm 2 Omni 0.8B es un modelo de decisión multimodal desarrollado por run-saina. No genera texto: recibe un estado (cadena o JSON) acompañado de hasta 8 imágenes y 4 fragmentos de audio, y devuelve una probabilidad para cada opción de una o varias preguntas tipadas (sí/no, elección única, elección múltiple o valoración). Todas las preguntas de una misma petición se responden en una sola pasada sobre el estado y los medios compartidos. Es un fine-tuning de Qwen/Qwen3.5-0.8B con 852.985.920 parámetros totales.
+Saina Helm 2 Omni 0.8B es un modelo de decisión multimodal desarrollado por run-saina, construido como un finetune del modelo base Qwen/Qwen3.5-0.8B. A diferencia de los modelos generativos convencionales, no produce texto: recibe un estado (texto o JSON) junto con hasta 8 imágenes y 4 clips de audio, más un conjunto de preguntas tipadas (sí/no, elección única, elección múltiple o valoración), y devuelve una probabilidad para cada opción de respuesta. Con 852.985.920 parámetros, se posiciona como un modelo pequeño orientado a tareas de clasificación y enrutamiento.
 
-Su interés práctico está en incorporar decisiones multimodales ligeras en pipelines donde un error es recuperable o pasa por revisión humana: enrutado de tickets con captura adjunta, verificación de un recibo contra una reclamación, marcado de llamadas con voz potencialmente sintética o etiquetado de sonidos e instrumentos. El modo `decision` permite abstenerse y escalar cuando la confianza queda por debajo de un umbral configurable, en lugar de forzar una respuesta.
+La arquitectura aprovecha la torre de visión de Qwen3.5 para leer tanto imágenes como audio: cada clip de audio se convierte en un espectrograma log-mel tratado como una imagen, de modo que no existen pesos separados para audio. Todas las preguntas de una petición se responden en una sola pasada sobre el estado y los medios compartidos, lo que lo hace eficiente para escenarios de decisión con múltiples etiquetas.
 
-El modelo se ejecuta mediante el paquete `saina` (>=0.4.0), que construye el prompt exacto de entrenamiento, coloca las imágenes y los espectrogramas donde se colocaron durante el entrenamiento y aplica la cabeza entrenada; las puntuaciones dependen de ello, por lo que la model card desaconseja usar un prompt propio o `generate()`. También se puede servir como servidor HTTP autenticado o consumir a través de la API alojada en saina.run. Licencia Apache 2.0.
+Su relevancia actual radica en el enfoque "any-to-any" aplicado a clasificación multi-etiqueta multimodal: permite enrutar mensajes de soporte con captura de pantalla, verificar recibos contra reclamaciones, detectar voz sintética o etiquetar sonidos y comandos de voz, todo con un modelo que cabe en hardware modesto y con licencia Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal derivado de Qwen3.5-0.8B; la model card incluye las etiquetas `qwen3_5` y `mixture-of-experts`, sin más detalle arquitectónico |
-| Parámetros totales | 852.985.920 (0,85B) |
-| Parámetros activos | no disponible (la etiqueta `mixture-of-experts` no va acompañada del número de parámetros activos) |
-| Longitud de contexto | no disponible (la model card remite a un apartado "context window below" que no aparece en la información proporcionada) |
-| Tipos de cuantización | no disponible; el repositorio solo publica pesos en safetensors |
-| Idiomas soportados | no disponibles; la model card indica que el texto y el habla en idiomas distintos del inglés están en gran medida sin probar |
+| Arquitectura | Transformer multimodal (base Qwen3.5) con torre de visión; audio como espectrograma log-mel tratado como imagen; cabeza de clasificación entrenada |
+| Parametros totales | 852.985.920 |
+| Parametros activos | no disponible (etiqueta mixture-of-experts en metadatos, sin dato de parámetros activos) |
+| Longitud de contexto | no disponible (los medios cuentan como tokens de entrada; un clip de 10 s equivale a 124 tokens) |
+| Tipos de cuantizacion | F16 (GGUF), FP16 con FP32 RMSNorm (MLX); otras no disponibles |
+| Idiomas soportados | no disponible (texto y voz distintos del inglés prácticamente no evaluados) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (tamaño del repositorio: 1,7 GB) |
+| Formato de pesos | safetensors; GGUF (llama.cpp); MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-0.8B mediante fine-tuning y añade una cabeza de clasificación entrenada que produce probabilidades por opción. La entrada multimodal se resuelve sin pesos de audio dedicados: las imágenes las procesa la torre de visión de Qwen3.5 y cada clip de audio se convierte en una imagen de espectrograma log-mel (mono, 16 kHz) que se lee por la misma vía. Las imágenes se redimensionan a un máximo de 1,6 megapíxeles manteniendo la proporción, con un token de entrada por cada bloque de 32 × 32 píxeles; un clip de 10 segundos ocupa 124 tokens de entrada. Las etiquetas del repositorio incluyen `mixture-of-experts`, `multimodal` y `any-to-any`.
+El modelo se construye sobre Qwen/Qwen3.5-0.8B mediante finetune. La entrada de texto se procesa como en el modelo base, mientras que las imágenes se leen a través de la torre de visión de Qwen3.5, redimensionadas a un máximo de 1,6 megapíxeles manteniendo la relación de aspecto, con un token de entrada por cada 32 × 32 píxeles. El audio se transforma en espectrogramas log-mel mono a 16 kHz que se interpretan como imágenes, eliminando la necesidad de pesos de audio dedicados.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF, DPO u otras técnicas de alineación. La model card sí detalla el contrato de inferencia: el paquete `saina` construye el prompt de entrenamiento, coloca los medios en la posición correcta y aplica la cabeza entrenada; no se ejecuta código remoto. Se recomienda fijar `revision` a un commit concreto. Se admiten cuatro tipos de pregunta (sí/no, elección única con 2-255 opciones, elección múltiple con pertenencias independientes por opción y valoración con 2-10 niveles ordenados).
+Sobre esa representación compartida se aplica una cabeza de clasificación entrenada que produce probabilidades por cada opción suministrada. La model card indica que el paquete `saina` construye el prompt exacto de entrenamiento, coloca imágenes y espectrogramas en las posiciones vistas durante el entrenamiento y aplica la cabeza entrenada; los resultados dependen de ese pipeline, por lo que no debe usarse `generate()` ni prompts personalizados. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. Los metadatos incluyen la etiqueta "mixture-of-experts", aunque no se detalla su configuración.
 
 ## Capacidades
 
-- Puntuación de decisiones multimodales: asigna probabilidad a cada opción de una pregunta tipada a partir de texto, imágenes y audio combinados en una sola pasada.
-- Preguntas de sí/no con probabilidades `yes`, `no` y `confidence`, y descripciones opcionales para cada polo.
-- Elección única con 2-255 opciones, devolviendo `probabilities`, `selection` y `confidence`.
-- Elección múltiple con pertenencias independientes por opción (clasificación multi-etiqueta).
-- Valoración sobre 2-10 niveles ordenados, con `probabilities`, `expected_level` y `confidence`.
-- Modo `decision` con `threshold` (por defecto 0,8) y `min_margin` opcional para sí/no y elección única; las respuestas no suficientemente confiables devuelven `None` junto con un motivo (`below_threshold`, `below_margin`, `tie`), lo que permite abstenerse y escalar.
-- Lectura de hasta 8 imágenes por petición (PNG, JPEG, WebP; 10 MB cada una) y hasta 4 clips de audio (WAV, FLAC, MP3, Ogg, WebM; 10 MB y 10 s cada uno).
-- Reconocimiento de palabras cortas en audio y etiquetado de sonidos, comandos hablados o instrumentos a partir del espectrograma.
-- Integración como nodo de decisión dentro de pipelines de agentes (etiqueta `agents`), no como generador de texto.
-- No soporta generación de texto, transcripción de habla larga, vídeo, audio de más de 10 segundos ni function calling en el sentido clásico: no produce llamadas a herramientas ni texto estructurado, solo puntuaciones.
+- Clasificación multi-etiqueta multimodal: devuelve probabilidad para cada respuesta de preguntas de tipo sí/no, elección única, elección múltiple y valoración.
+- Lectura conjunta de texto, imágenes y audio en una sola pasada; cada pregunta ve todos los medios de la petición.
+- Procesamiento de hasta 8 imágenes por petición (PNG, JPEG, WebP; 10 MB cada una) y hasta 4 clips de audio (WAV, FLAC, MP3, Ogg, WebM; 10 MB y 10 s cada uno).
+- Reconocimiento de palabras cortas y comandos de voz a partir de espectrogramas; no es un modelo de transcripción de habla larga.
+- Modo `decision` para escalar preguntas de baja confianza en lugar de adivinar.
+- Soporte de tool calling y agentes: no disponible como capacidad generativa; el modelo solo puntúa opciones suministradas.
+- Capacidades multilingües: no disponibles; el inglés es el único idioma mínimamente probado.
+- Capacidad especial: puntuación de voz sintética o convertida por ordenador como señal para verificación adicional.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte con captura adjunta: el modelo recibe el texto del mensaje y la captura de pantalla en la misma petición y responde una pregunta de elección única con la cola o el equipo adecuado, aprovechando que todos los medios se ven en una sola pasada.
-- Verificación de gastos contra póliza: se envía el importe reclamado como estado JSON, la imagen del recibo y una pregunta de sí/no del tipo "¿el total del recibo coincide con el importe reclamado?", con escalado automático si la confianza cae por debajo del umbral.
-- Señal de voz sintética en atención telefónica: análisis de un clip corto de la llamada con una pregunta de sí/no sobre si el habla ha sido sintetizada o convertida, usada como señal para exigir verificación adicional y nunca como prueba de fraude.
-- Clasificación multi-etiqueta de imágenes en control de calidad: una sola imagen de producto con una pregunta de elección múltiple sobre defectos presentes (arañazo, abolladura, etiqueta torcida), devolviendo pertenencias independientes por defecto.
-- Etiquetado de sonidos e instrumentos en catalogación de archivos de audio: clips de hasta 10 segundos por petición, hasta cuatro por llamada, con preguntas de elección única sobre la categoría sonora.
-- Interpretación de comandos hablados cortos en interfaces de voz: el clip se convierte en espectrograma y el modelo responde una pregunta de elección única entre un conjunto acotado de intenciones.
-- Triaje con abstención en flujos automatizados: con `mode='decision'` y `threshold`, las peticiones dudosas devuelven `reason='below_threshold'` y se desvían a revisión humana, lo que permite automatizar solo la franja de alta confianza.
-- Validación previa de formularios con documentación adjunta: preguntas de valoración sobre la legibilidad o completitud de una imagen antes de aceptarla, útiles como filtro de calidad en una cola de entrada.
+- Enrutamiento de mensajes de soporte con captura de pantalla: el modelo recibe el texto del cliente y la imagen adjunta, y puntúa opciones de departamento o acción; su lectura conjunta de estado y medios en una sola pasada lo hace adecuado para triaje de alto volumen.
+- Verificación de recibos contra reclamaciones: con el importe reclamado y la política como estado JSON y la imagen del recibo, responde sí/no sobre si el total coincide; útil en flujos de gastos con revisión humana posterior.
+- Detección de voz sintética en llamadas: dado un clip corto de audio y el contexto de la llamada, puntúa si la voz parece generada o convertida, como señal para exigir verificación adicional antes de operar.
+- Etiquetado de sonidos, comandos hablados o instrumentos: convierte el audio en espectrograma y clasifica entre opciones predefinidas, por ejemplo para activar comandos de voz o catalogar muestras de audio.
+- Clasificación de imágenes con preguntas múltiples: una misma imagen puede evaluarse contra varias preguntas tipadas en una sola petición, reduciendo coste frente a invocaciones separadas.
+- Moderación asistida de flujos con revisión: en escenarios donde un error es recuperable, el modo `decision` escala los casos de baja confianza a un revisor humano en lugar de forzar una respuesta.
+- Automatización de agentes con decisión acotada: integrado mediante el servidor HTTP autenticado del paquete `saina`, el modelo puede actuar como componente de decisión dentro de pipelines de agentes, limitando la autoridad concedida a su salida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta pruebas de paridad entre formatos: diferencia máxima de probabilidad de 0,000478 en seis casos de paridad en CPU para GGUF (construido desde el commit `aea9ac53`) y de 0,001547 en una suite de cuatro casos en CPU Linux con FP32 para MLX; la ejecución en GPU de Apple no fue revalidada.
 
 ## Requisitos de hardware
 
-- Pesos en precisión de entrenamiento (bf16/fp16): 852.985.920 parámetros × 2 bytes ≈ 1,71 GB, coherente con el tamaño de repositorio de 1,7 GB. En fp32 serían ≈ 3,4 GB.
-- VRAM estimada para inferencia: del orden de 2-4 GB con los pesos en bf16 más el estado de activaciones y la caché de tokens multimodales; la cifra exacta no está publicada.
-- Tokens de medios máximos por petición (cálculo a partir de las tasas indicadas en la model card): una imagen de 1,6 MP ocupa ≈ 1.500 tokens; 8 imágenes ≈ 12.500 tokens; 4 clips de 10 s a 124 tokens cada uno ≈ 496 tokens. En total, hasta ≈ 13.000 tokens de entrada procedentes de medios.
-- Cabe en GPU de consumo: cualquier GPU con 4 GB o más de VRAM (por ejemplo GTX 1650 4 GB, RTX 3050, RTX 3060, RTX 4060) es suficiente para los pesos; las GPU de gama alta (A100, H100) solo tendrían sentido para agregar muchas peticiones en lote. La inferencia en CPU es viable por el tamaño del modelo, aunque el coste de la torre de visión y de los espectrogramas conviene medirlo.
-- Opciones de despliegue: paquete `saina[local,media]>=0.4.0` para uso local, `saina[local,server,media]` para levantar un servidor HTTP autenticado, y la API alojada en saina.run como `saina-helm-2-omni-0.8b`.
-- No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI; la aplicación de la cabeza entrenada y la colocación exacta de los medios dependen del paquete `saina`, por lo que los runners genéricos no son una vía soportada.
-- Latencia y throughput: no disponibles. Como referencia de coste, cada llamada procesa como máximo 8 imágenes y 4 clips de audio en una única pasada compartida.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 852.985.920 parámetros, los pesos en FP16 ocupan aproximadamente 1,7 GB, a los que se suman el proyector de visión y las activaciones.
+- GPU recomendadas: no disponible; el ejemplo de uso apunta a `device='cuda:0'` sin especificar modelo de GPU.
+- Compatibilidad con GPU de consumo: probable por el tamaño de los pesos, aunque no confirmada en la información disponible.
+- Opciones de despliegue: paquete `saina` (extra `local,media`) con `HelmModel.from_pretrained`; servidor HTTP autenticado con `saina[local,server,media]`; GGUF para llama.cpp con runner y `score.py`; build específico de Ollama (pesos y paridad no verificados en la auditoría de Hugging Face); MLX para Apple Silicon con `mlx-vlm`.
+- Latencia y throughput: no disponibles.
+- Nota: se requiere `saina` 0.4 o superior; versiones anteriores rechazan este checkpoint. Fijar `revision` a un commit concreto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidades | Salida | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| saina-helm-2-omni-0.8b | 852.985.920 | no disponible | Texto, imagen, audio | Probabilidades por opción (sin texto) | Apache 2.0 | Hugging Face, paquete `saina`, servidor HTTP propio, API en saina.run |
-| run-saina/saina-helm-2-0.8b | no disponible | no disponible | Solo texto | Probabilidades por opción (sin texto) | no disponible | Hugging Face; hermano textual del modelo descrito |
-| Qwen/Qwen3.5-0.8B | no disponible en la información proporcionada | no disponible | no disponible | Generación de texto | no disponible | Hugging Face; modelo base sobre el que se hace fine-tuning |
-| Otros modelos de decisión o clasificación multimodal de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Modalidad | Tarea | Licencia |
+|---|---|---|---|---|---|
+| Saina Helm 2 Omni 0.8B | 852.985.920 | no disponible | Texto, imagen, audio | Clasificación multi-etiqueta (sin generación) | Apache 2.0 |
+| Saina Helm 2 0.8B | no disponible | no disponible | Texto | Clasificación (modelo hermano solo texto) | no disponible |
+| Qwen/Qwen3.5-0.8B (base) | no disponible | no disponible | Texto | Generación de texto | no disponible |
 
-No se dispone de datos de rendimiento comparado entre estas alternativas; la model card no publica métricas frente a otros modelos.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No genera texto de ningún tipo: solo puntúa las opciones que se le proporcionan. Cualquier expectativa de generación, resumen o respuesta libre queda fuera de su alcance.
-- Uso excluido por el autor para decisiones finales y no revisadas con consecuencias materiales sobre una persona (crédito, empleo, medicina, legal), incluso con alta confianza.
-- Prohibido su uso para identificar o clasificar personas: rostros, voces de individuos concretos, atributos personales, demografía o cualquier perfilado individual.
-- No está entrenado ni evaluado para filtrado de seguridad, detección de daño o moderación de contenido.
-- Lectura de documentos largos a partir de imágenes no fiable: el límite de 1,6 megapíxeles por imagen hace que la letra pequeña no sea legible de forma consistente.
-- No hace transcripción de habla: reconoce palabras cortas a partir de espectrogramas, pero no sigue discurso largo.
-- No admite vídeo ni audio de más de 10 segundos; estos casos se rechazan, no se recortan.
-- Texto y habla en idiomas distintos del inglés están en gran medida sin probar.
-- Riesgo de inyección de instrucciones: el texto, las imágenes y el audio pueden contener indicaciones que redirijan las respuestas, por lo que debe acotarse la autoridad que se concede a la salida, especialmente si el contenido es no confiable.
-- Una puntuación de voz sintética es una señal para verificación adicional, no una prueba de fraude.
-- Riesgo de alucinación no evaluado explícitamente en la información disponible; al tratarse de un modelo de puntuación, el modo de fallo esperable es una probabilidad mal calibrada, no texto inventado. Se recomienda validar sobre datos etiquetados propios y para el espacio de etiquetas propio antes de usar el modelo.
-- Dependencia del paquete `saina` (>=0.4.0): las puntuaciones dependen del prompt y de la colocación de los medios que construye el paquete. Versiones anteriores rechazan este checkpoint y los runners genéricos no están soportados.
-- Licencia Apache 2.0 para el checkpoint, pero se recomienda revisar la licencia del modelo base Qwen/Qwen3.5-0.8B, no disponible en la información proporcionada, antes de un uso comercial.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta y publicado y actualizado el 2026-10-15; no hay historial de uso en producción que respalde su fiabilidad.
+- No genera texto de ningún tipo; solo puntúa las opciones que se le suministran.
+- No debe usarse para decisiones finales sin revisión con consecuencias materiales para personas (crédito, empleo, medicina, legal), ni siquiera con alta confianza.
+- Prohibido para identificación o clasificación de personas: caras, voces de individuos concretos, atributos personales, demografía o perfilado.
+- No entrenado ni evaluado para filtrado de seguridad, detección de daño o moderación de contenido.
+- Lectura de documentos largos desde imágenes poco fiable: el límite de 1,6 megapíxeles hace ilegible la letra pequeña.
+- No es un modelo de transcripción: reconoce palabras cortas, no sigue habla larga.
+- No admite vídeo ni audio de más de 10 segundos; los clips largos se rechazan, nunca se recortan.
+- Texto y voz en idiomas distintos del inglés prácticamente no evaluados.
+- Riesgo de inyección de instrucciones a través de texto, imágenes y audio; debe acotarse la autoridad concedida a la salida.
+- Una puntuación de voz sintética es una señal para verificación adicional, no prueba de fraude.
+- Los resultados dependen del pipeline `saina`; usar prompts personalizados o `generate()` altera las puntuaciones.
+- Es necesario validar con datos etiquetados propios y para el propio espacio de etiquetas antes de su uso en producción.
+- Sesgos conocidos: no disponibles en la información proporcionada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/run-saina/saina-helm-2-omni-0.8b
 - Modelo hermano solo texto: https://huggingface.co/run-saina/saina-helm-2-0.8b
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- GGUF (llama.cpp): https://huggingface.co/run-saina/saina-helm-2-omni-0.8b-GGUF
+- Ollama: https://ollama.com/run-saina/saina-helm-2-omni-0.8b
+- MLX (Apple silicon): https://huggingface.co/run-saina/saina-helm-2-omni-0.8b-MLX
 - Paquete `saina` en PyPI: https://pypi.org/project/saina/
-- Repositorio del paquete y del servidor: https://github.com/run-saina/saina
+- Repositorio GitHub: https://github.com/run-saina/saina
 - API alojada: https://saina.run
-
-Los resultados de la búsqueda web no contienen enlaces relevantes para este modelo: todas las entradas devueltas corresponden a juegos en línea y a tiendas de material deportivo, sin relación con el modelo ni con su autor.
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

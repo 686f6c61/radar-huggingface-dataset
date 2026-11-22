@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "safu58/porabondhu-wav2vec2-bn-onnx-int8",
+  "slug": "safu58-porabondhu-wav2vec2-bn-onnx-int8",
+  "author": "safu58",
+  "url": "https://huggingface.co/safu58/porabondhu-wav2vec2-bn-onnx-int8",
+  "created_at": "2026-11-22T08:52:03.000Z",
+  "updated_at": "2026-11-22T08:53:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "bangla",
+    "bn",
+    "base_model:arijitx/wav2vec2-xls-r-300m-bengali",
+    "base_model:quantized:arijitx/wav2vec2-xls-r-300m-bengali",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355085976,
+  "storage_human": "355 MB",
+  "context_length": null,
+  "base_model": "arijitx/wav2vec2-xls-r-300m-bengali",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

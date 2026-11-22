@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 554,
+  "downloads_30d": 561,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/FableOpus-9B-TIES-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/FableOpus-9B-TIES-GGUF",
-      "snippet": "mradermacher / FableOpus-9B-TIES-GGUF like 4 Transformers GGUF English qwen qwen3.5 fable-5 claude-opus distillation Merge bf16 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "mradermacher/FableOpus-9B-TIES-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/FableOpus-9B-TIES-GGUF/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Mradermacher - Find Top AI Models on Hugging Face",
-      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
-      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
-    },
-    {
-      "title": "FableOpus-9B-TIES.Q5_K_M.gguf · mradermacher/FableOpus-9B-TIES-GGUF at main",
-      "url": "https://huggingface.co/mradermacher/FableOpus-9B-TIES-GGUF/blob/main/FableOpus-9B-TIES.Q5_K_M.gguf",
-      "snippet": "mradermacher / FableOpus-9B-TIES-GGUF like 3 Transformers GGUF English qwen qwen3.5 fable-5 claude-opus distillation Merge bf16 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "interpolators/FableOpus-9B-TIES · Hugging Face",
-      "url": "https://huggingface.co/interpolators/FableOpus-9B-TIES",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

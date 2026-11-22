@@ -14,8 +14,8 @@
   "tags": [
     "mlx",
     "image-text-to-text",
-    "base_model:Vontra/GLM-5.3-Flash-MLX-oQ4-MTP",
-    "base_model:finetune:Vontra/GLM-5.3-Flash-MLX-oQ4-MTP",
+    "base_model:TensorFold/GLM-5.3-Flash-MLX-oQ4-MTP",
+    "base_model:finetune:TensorFold/GLM-5.3-Flash-MLX-oQ4-MTP",
     "license:mit",
     "region:us"
   ],

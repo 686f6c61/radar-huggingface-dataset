@@ -57,31 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "REI Columbia Store - Columbia, MD - Sporting Goods, Camping Gear",
-      "url": "https://www.rei.com/stores/columbia?msockid=15f0f88c701363ea2002ef4671c062dc",
-      "snippet": "Located in the Long Reach Village, REI Columbia provides outdoor enthusiasts in the Columbia, Maryland, area with top-brand gear …"
-    },
-    {
-      "title": "DedeProGames (DedeProGames) - Hugging Face",
-      "url": "https://huggingface.co/DedeProGames",
-      "snippet": "DynamicMind-Mini-Instruct just released! A ~8.9m parameters model instruction-tuned based on DynamicMind-Mini See translation View all Posts"
-    },
-    {
-      "title": "REI in Columbia, MD 21045 - (410) 8... - Chamber of Commerce",
-      "url": "https://www.chamberofcommerce.com/business-directory/maryland/columbia/camping-store/23964948-rei",
-      "snippet": "REI located at 6100 Dobbin Rd, Columbia, MD 21045 - reviews, ratings, hours, phone number, directions, and more."
-    },
-    {
-      "title": "DedeProGames (DedeProGames) - Hugging Face",
-      "url": "https://huggingface.co/DedeProGames/datasets",
-      "snippet": "AI & ML interests ... Recent Activity new activity about 8 hours ago ... updated a model about 10 hours ago"
-    },
-    {
-      "title": "REI locations and opening hours near Columbia",
-      "url": "https://www.storeshours.com/rei/maryland/columbia",
-      "snippet": "REI store hours and locations near Columbia, Maryland. Find address, phone number and driving directions."
-    }
-  ]
+  "sources": []
 }

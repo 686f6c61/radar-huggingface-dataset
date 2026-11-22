@@ -5,7 +5,7 @@
   "author": "openamer-max",
   "url": "https://huggingface.co/openamer-max/openamer-max-watch",
   "created_at": "2026-11-11T14:15:17.000Z",
-  "updated_at": "2026-11-21T00:00:35.000Z",
+  "updated_at": "2026-11-21T11:38:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 1374,
+  "downloads_30d": 1465,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",

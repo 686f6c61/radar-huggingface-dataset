@@ -5,9 +5,9 @@
   "author": "SlayerLab",
   "url": "https://huggingface.co/SlayerLab/Slayer16M-A1M",
   "created_at": "2026-11-21T19:25:23.000Z",
-  "updated_at": "2026-11-21T19:25:24.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-21T23:08:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [
@@ -15,12 +15,14 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "mixture-of-experts",
     "small-language-model",
     "ablation",
     "polish",
     "pl",
     "en",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
@@ -28,11 +30,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 194253224,
+  "storage_human": "194 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

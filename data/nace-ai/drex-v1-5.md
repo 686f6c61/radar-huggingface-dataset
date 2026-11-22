@@ -2,149 +2,122 @@
 
 ## Resumen
 
-Drex v1.5 es un modelo de decisión desarrollado por Nace.AI. A diferencia de un modelo generativo convencional, recibe un estado (texto o JSON) junto con preguntas tipadas (`choice`, `noul` y `score` ordinal) y devuelve, en una única pasada forward por pregunta, una probabilidad para cada opción. No genera texto: puntúa alternativas. Se sirve mediante una API compatible con TypeSafe en el endpoint `/v1/systemone`, con el mismo formato de petición y respuesta que la API alojada de Drex y que el modelo abierto Drex DLM.
+Drex v1.5 es un modelo de decisión desarrollado por Nace.AI que no genera texto: lee un estado (en texto plano o JSON) junto con preguntas tipadas (`choice`, `noul`, `score` ordinal) y devuelve, en un único forward pass por pregunta, una probabilidad calibrada para cada opción. Está construido sobre el backbone `Qwen3_5ForCausalLM` de 32 capas con atención híbrida (tres capas de atención lineal por cada capa de atención completa) y un total de 8.953.803.264 parámetros (unos 9B), con pesos en bf16 que ocupan aproximadamente 18 GB en disco.
 
-El backbone es `Qwen3_5ForCausalLM` de 32 capas con atención híbrida (tres capas de atención lineal por cada capa de atención completa), sobre el modelo base XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B. El checkpoint tiene 8.953.803.264 parámetros (unos 8,95B) en pesos bf16, con un tamaño en disco de aproximadamente 18 GB. Se añade una cabeza de puntero (`head.pt`) que puntúa cada opción a partir de los estados ocultos del backbone.
+El modelo se afina a partir de `XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B` y añade una cabeza de puntero (`head.pt`) que puntúa cada opción a partir de los estados ocultos del backbone. Su contexto por defecto es de 16.384 tokens, ampliable hasta 131.072, y expone la API compatible con TypeSafe `/v1/systemone` mediante el código Kev incluido, con el mismo formato de petición y respuesta que la API alojada de Drex y que Drex DLM.
 
-La longitud de contexto por defecto es de 16.384 tokens, ampliable hasta 131.072, con precisión reportada sobre documentos largos de hasta 128k tokens. El modelo ocupa el primer puesto en el Decision Index 0.2.1 con un índice de 58,28, por delante de Jev 1.13.0 (57,91). Es relevante porque traslada el paradigma "System One" (decisión directa sin generación autoregresiva) a un modelo de ~9B ejecutable en una sola GPU de 24 GB o, en cuantización Q8_0, en hardware de consumo y Apple Silicon.
+Su relevancia actual radica en que ocupa el primer puesto entre los modelos de menos de 10B parámetros en el Decision Index 0.3.1 público, con una puntuación de 58,08, por delante de Jev 1.13.0 (57,96) y Bespoke Nimble 9B v3 (57,19). Frente a los modelos generativos, la propuesta es sustituir la generación de texto por la evaluación directa de decisiones, lo que reduce la latencia y evita la deriva de formato en tareas de clasificación y recomendación.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer `Qwen3_5ForCausalLM`, 32 capas, atención híbrida (3 capas de atención lineal por cada capa de atención completa) más cabeza de puntero (`head.pt`) |
-| Parametros totales | 8.953.803.264 (unos 8,95B) |
-| Longitud de contexto | 16.384 tokens por defecto; hasta 131.072; precisión reportada hasta 128k |
-| Tipos de cuantizacion | bf16 (pesos nativos), GGUF Q8_0 (unos 9,5 GB); conversión vía `convert_hf_to_gguf.py --no-mtp` |
+| Arquitectura | `Qwen3_5ForCausalLM`, 32 capas, atención híbrida (3 capas de atención lineal por cada capa de atención completa) + cabeza de puntero (`head.pt`) |
+| Parametros totales | 8.953.803.264 (unos 9B) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | 16.384 tokens por defecto, hasta 131.072 |
+| Tipos de cuantizacion | bf16 (pesos originales), Q8_0 GGUF (unos 9,5 GB) |
 | Idiomas soportados | no disponible |
-| Licencia | nace-ai-open-rail-m (etiquetada como `other` en Hugging Face; texto en el fichero LICENSE) |
-| Formato de pesos | safetensors (repo de 17,9 GB); GGUF para llama.cpp y Ollama |
-| Modelo base | XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B |
-| Cabeza adicional | `head.pt` (puntuación de opciones) |
-| Tipo de modelo | decision-model, system-one |
-| Pipeline declarado | no disponible |
-| Descargas / likes | 37 / 11 |
-| Fechas | creado el 2026-09-28; actualizado el 2026-10-09 |
+| Licencia | nace-ai-open-rail-m (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors (checkpoint Hugging Face), GGUF (conversión vía llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del backbone `Qwen3_5ForCausalLM`, una arquitectura transformer de 32 capas que combina atención lineal y atención completa en proporción 3:1 (tres capas de atención lineal por cada capa de atención completa). Sobre los estados ocultos de ese backbone se monta una cabeza de puntero (`head.pt`) que asigna una puntuación a cada opción de la pregunta tipada. La inferencia no es autoregresiva en el sentido generativo: se realiza una única pasada forward por pregunta y se devuelven las probabilidades de todas las opciones a la vez.
+El backbone es un transformer causal `Qwen3_5ForCausalLM` de 32 capas que combina atención lineal y atención completa en una proporción de 3:1, lo que reduce el coste computacional en secuencias largas manteniendo la capacidad de atención global. Sobre los estados ocultos del backbone se aplica una cabeza de puntero (`head.pt`) que asigna una puntuación a cada opción de la pregunta tipada, de modo que el modelo no decodifica tokens: produce directamente distribuciones de probabilidad calibradas por opción en un solo forward pass.
 
-El modelo se presenta como un derivado afinado (finetune) de XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, que a su vez es un destilado de la familia Qwen de 9B. No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Tampoco se especifican innovaciones adicionales más allá de la atención híbrida del backbone y la cabeza de decisión. La model card incluye `private: true` en el front matter, en contradicción con su disponibilidad pública en Hugging Face.
+El modelo parte de `XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B` y se especializa mediante ajuste fino en la tarea de decisión (preguntas `choice`, `noul` y `score` ordinal). La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO; esa información no está disponible. La innovación destacable es el paradigma de "system-one": evaluación de decisiones en un único paso, sin generación autoregresiva, con soporte de contexto largo verificado hasta 128k tokens y una API estandarizada (`/v1/systemone`) compartida con el resto del ecosistema Drex.
 
 ## Capacidades
 
-- Decisión con probabilidades: dado un estado (texto o JSON) y preguntas tipadas, devuelve una probabilidad por opción en una sola pasada forward por pregunta.
-- Tipos de pregunta soportados: `choice` (elección entre opciones), `noul` y `score` ordinal.
-- Sin generación de texto: no produce secuencias; únicamente puntúa y clasifica.
-- Procesamiento por lotes: admite el formato `{"requests": [...]}` para puntuar varias decisiones en una misma llamada.
-- API servible: endpoint `POST /v1/systemone` compatible con TypeSafe, sin cabecera `Authorization`; `GET /health` devuelve el estado del modelo.
-- Contexto largo: manejo de documentos de hasta 128k tokens con preguntas tipadas, según la tabla de benchmarks de contexto largo.
-- Selección de herramientas: el modelo puntúa con 75,3 en el área "Tools" del Decision Index 0.2.1, la puntuación más alta de sus áreas evaluadas.
-- Capacidades multilingües: el área "Language" obtiene 62,5 en el Decision Index, pero no se declaran los idiomas concretos soportados.
-- Uso en juegos y entornos de decisión secuencial: evaluado en ocho juegos de OpenSpiel frente a Jev.
-- Modo "thinking": no aplica; no es un modelo generativo con cadena de pensamiento.
-- Visión y audio: no disponibles.
+- Evaluación de decisiones tipadas: responde preguntas `choice` (selección entre opciones), `noul` y `score` ordinal devolviendo una probabilidad calibrada por opción.
+- Procesamiento de estado en texto plano o JSON, apto para estados de agentes, formularios, registros estructurados y documentos.
+- Clasificación de texto zero-shot y recomendación, con pipeline declarado `text-classification`.
+- Contexto largo: manejo de documentos de hasta 128k tokens con precisión reportada.
+- API HTTP compatible con TypeSafe: endpoint `POST /v1/systemone`, soporte de lotes mediante `{"requests": [...]}` y endpoint `GET /health`.
+- Integración con llama.cpp y Ollama para despliegue en CPU y Apple Silicon (Metal).
+- Soporte de preguntas múltiples sobre un mismo estado compartiendo la codificación (flag `-np 2` en llama.cpp).
+- No genera texto libre, no soporta tool calling generativo ni razonamiento multi-paso por decodificación; su función es puntuar opciones.
 
 ## Casos de uso
 
-- Selección de herramientas en agentes: dado un estado de conversación y un catálogo de herramientas, el modelo puntúa cada opción y permite enrutar la llamada correcta sin coste de generación; su área "Tools" (75,3) es la más fuerte del modelo.
-- Clasificación con confianza calibrada: en lugar de una etiqueta única, se obtiene una distribución de probabilidad sobre las clases, útil para umbralizar decisiones o derivar a revisión humana.
-- Anotación y etiquetado de datos a escala: puntuar pares estado-opción para generar etiquetas con nivel de confianza, aprovechando endpoints por lotes (`{"requests": [...]}`).
-- Análisis de documentos largos: con contexto de hasta 128k tokens, permite responder preguntas tipadas sobre contratos, informes o expedientes sin trocear el documento; la precisión reportada es del 93,4% en el rango 32k-128k.
-- Simulación y evaluación de políticas en juegos: integrable en entornos OpenSpiel u otros simuladores donde la decisión debe resolverse en una sola pasada, con latencia mediana de 0,65 s en el rango 8k-32k.
-- Puntuación ordinal y ranking: con preguntas de tipo `score`, ordenar candidatos (respuestas, propuestas, configuraciones) en lugar de elegir uno solo.
-- Modelo juez o función de recompensa en pipelines de RL: al devolver probabilidades en una pasada forward, es más barato que un modelo generativo usado como evaluador.
-- Despliegue como servicio interno de decisión: el servidor `serve.py` y el binario `llama-server` exponen el mismo contrato `/v1/systemone`, por lo que puede sustituirse el backend sin cambiar los clientes.
+- Enrutamiento de peticiones en agentes: dado el estado de la conversación en JSON y una pregunta `choice` con las herramientas o rutas disponibles, el modelo devuelve la probabilidad de cada opción en un forward pass, lo que permite enrutar sin coste de generación y con latencia de milisegundos.
+- Moderación y clasificación de contenido: con preguntas `choice` sobre categorías de política, se obtienen probabilidades calibradas que permiten fijar umbrales y auditar decisiones, algo más robusto que parsear la salida de un modelo generativo.
+- Recomendación de siguiente acción en soporte al cliente: el estado incluye el historial y el contexto del ticket; el modelo puntúa acciones candidatas (escalar, pedir datos, cerrar) con contexto de hasta 128k tokens para casos con historiales largos.
+- Triaje documental: clasificación de documentos legales o técnicos largos (32k–128k tokens) en categorías tipadas, con precisión reportada del 93,4% en el rango 32k–128k y latencia mediana de 2,0 s.
+- Evaluación de políticas y simulaciones: en el arena de juegos OpenSpiel frente a Jev, el modelo obtuvo 122 victorias, 47 tablas y 87 derrotas (56,8%), lo que lo hace útil para agentes que eligen movimientos entre opciones discretas.
+- Decisión en pipelines de datos: puntuar registros JSON contra reglas de negocio tipadas (por ejemplo, aprobar o rechazar una solicitud) desplegando el servidor `serve.py` o `llama-server` con el GGUF Q8_0 en hardware modesto.
+- Sustitución de llamadas a LLM generativo en tareas de clasificación: al no generar texto, elimina fallos de formato y reduce el coste por decisión, manteniendo el mismo contrato de API que la API alojada de Drex.
 
 ## Benchmarks y rendimiento
 
-Decision Index 0.2.1 (kit oficial, suite completa). Las columnas de área son habilidad corregida por azar × 100.
+Decision Index 0.3.1 (solo benchmarks públicos, 37 pruebas en cinco áreas; columnas de área como habilidad corregida por azar × 100):
 
-| Puesto | Modelo | Index | Raw | Knowledge & Reasoning | Language | Retrieval | Tools | Arts |
-|---|---|---|---|---|---|---|---|---|
-| 1 | Drex v1.5 | 58,28 | 67,80 | 44,2 | 62,5 | 62,0 | 75,3 | 45,1 |
-| 2 | Jev 1.13.0 | 57,91 | 68,09 | 51,4 | 62,0 | 55,4 | 75,1 | 37,7 |
-| 3 | Surogate Rune 26B-A4B v3 | 57,44 | 67,30 | 43,4 | 63,1 | 63,5 | 71,2 | 41,9 |
-| 4 | Decider chat · Gemma-4-31B | 57,33 | 67,22 | 44,3 | 60,4 | 63,1 | 75,6 | 38,3 |
-| 5 | AutoJev-27B | 56,40 | 66,89 | 40,9 | 63,5 | 54,9 | 79,3 | 39,4 |
-
-Según la model card, Drex v1.5 supera a Jev en 21 de los 38 benchmarks del índice.
+| Modelo | Índice público | Raw | Conocimiento y razonamiento | Lenguaje | Recuperación | Herramientas | Artes |
+|---|---|---|---|---|---|---|---|
+| Drex v1.5 (9B) | 58,08 | 68,08 | 44,6 | 60,4 | 61,7 | 75,0 | 48,8 |
+| Jev 1.13.0 | 57,96 | 68,55 | 53,9 | 59,2 | 55,4 | 75,1 | 39,1 |
+| Bespoke Nimble 9B v3 | 57,19 | 68,38 | 41,0 | 60,7 | 55,5 | 84,2 | 44,0 |
+| Cloudflare clef-flash | 56,15 | 66,53 | 53,0 | 47,2 | 52,2 | 81,9 | 48,4 |
+| ezjev 4B s2 | 50,82 | 63,16 | 31,0 | 60,5 | 56,3 | 69,9 | 31,1 |
 
 JevBench (231 elementos públicos):
 
-| Modelo | Precisión | Easy | Standard | Hard |
+| Modelo | Precisión | Fácil | Estándar | Difícil |
 |---|---|---|---|---|
 | Jev 1.13.0 | 87,0% | 100,0% | 98,6% | 73,9% |
 | Drex v1.5 | 86,2% | 100,0% | 95,8% | 73,9% |
 | decider-4b v2.1 | 83,1% | 100,0% | 98,6% | 65,8% |
 
-Contexto largo (documentos largos con preguntas tipadas; se respondió a todas las peticiones):
+Contexto largo:
 
 | Longitud de contexto | Precisión | Truncado a 8k | Latencia mediana |
 |---|---|---|---|
 | 8k – 32k tokens | 89,5% | 76,5% | 0,65 s |
 | 32k – 128k tokens | 93,4% | 78% | 2,0 s |
 
-Arena de juego frente a Jev (ocho juegos de OpenSpiel, 32 partidas cada uno: 16 aperturas × ambos colores): 122 victorias, 47 tablas, 87 derrotas (56,8%).
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks generativos estándar en la información disponible, lo cual es coherente con que el modelo no genere texto.
+Arena de juegos frente a Jev (ocho juegos de OpenSpiel, 32 partidas cada uno): 122 victorias, 47 tablas y 87 derrotas (56,8%).
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bf16: aproximadamente 18 GB de pesos; el uso de memoria crece con la longitud del documento.
-- VRAM en Q8_0 GGUF: aproximadamente 9,5 GB de pesos, más el estado compartido y la caché KV.
-- GPU validadas: NVIDIA A10G de 24 GB (instancia AWS g5.2xlarge, 8 vCPU AMD EPYC 7R32, 32 GiB de RAM, Ubuntu 24.04, CUDA 13.2), con respuestas idénticas en bf16 y Q8_0 contra el servidor Python.
-- Apple Silicon: validado en Apple M5 Pro (CPU de 18 núcleos, GPU de 20 núcleos, 48 GB de memoria unificada, macOS 26.5.2) con Q8_0, dando las mismas respuestas en Metal y en CPU.
-- CPU: soportada mediante llama.cpp (sin `-ngl`) y Ollama.
-- GPU de consumo: no se documenta explícitamente. Con unos 9,5 GB de pesos en Q8_0, una GPU con 12-16 GB de VRAM tendría margen limitado una vez añadidos estado y caché KV; se trata de una estimación, no de un dato verificado por el autor.
-- Opciones de despliegue: `inference.py` (CLI), `serve.py` (servidor HTTP Python con `POST /v1/systemone`), llama.cpp en la rama `drex-v1.5` (con `--embedding --pooling none -np 2`, y `-ngl 99` para GPU) y Ollama mediante el fork de Nace con `llama-server` de esa misma rama.
-- Contexto en llama.cpp: con `-np 2 -c 32768` cada slot recibe 16.384 tokens; para llegar a 131.072 hay que usar `SYSTEMONE_CONTEXT=131072` y `-c 262144`.
-- Latencia: mediana de 0,65 s en documentos de 8k-32k tokens y de 2,0 s en 32k-128k, según la model card.
-- Throughput: no disponible.
-- Frameworks no documentados: no se mencionan vLLM ni TGI.
-- Seguridad de despliegue: el servidor escucha en `127.0.0.1` y no requiere autenticación; el autor recomienda mantenerlo así o anteponer autenticación.
+- VRAM estimada: unos 18 GB para los pesos bf16, con consumo creciente según la longitud del documento; el GGUF Q8_0 ocupa unos 9,5 GB.
+- GPU recomendadas: A100, H100 o RTX 4090 para bf16; en consumer GPU, una RTX 4090 (24 GB) cubre los pesos bf16 con margen limitado para contexto largo, y tarjetas de 12–16 GB pueden usar el GGUF Q8_0.
+- Apple Silicon (Metal) y CPU: soportados mediante llama.cpp u Ollama con el GGUF Q8_0.
+- Opciones de despliegue: `inference.py` y `serve.py` (PyTorch + transformers, requieren CUDA), `llama-server` de la rama `drex-v1.5` del repositorio de llama.cpp, y Ollama.
+- Latencia: mediana de 0,65 s para contextos de 8k–32k tokens y de 2,0 s para 32k–128k tokens, según los datos de la model card.
+- Nota de despliegue: `serve.py` escucha en `127.0.0.1` sin autenticación; debe mantenerse en local o protegerse con un proxy de autenticación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Decision Index 0.2.1 | JevBench | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Drex v1.5 | 8,95B | 16.384 por defecto, hasta 131.072 | 58,28 | 86,2% | nace-ai-open-rail-m | Pesos abiertos en Hugging Face |
-| Jev 1.13.0 | no disponible | no disponible | 57,91 | 87,0% | no disponible | No se especifica en la información disponible |
-| Surogate Rune 26B-A4B v3 | 26B totales, 4B activos (según nombre) | no disponible | 57,44 | no disponible | no disponible | No se especifica en la información disponible |
-| Decider chat · Gemma-4-31B | 31B | no disponible | 57,33 | no disponible | no disponible | No se especifica en la información disponible |
-| AutoJev-27B | 27B | no disponible | 56,40 | no disponible | no disponible | No se especifica en la información disponible |
-| decider-4b v2.1 | 4B (según nombre) | no disponible | no disponible | 83,1% | no disponible | No se especifica en la información disponible |
+| Modelo | Parámetros | Contexto | Índice público 0.3.1 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Drex v1.5 | 8,95B | 16k por defecto, hasta 131k | 58,08 | nace-ai-open-rail-m | Pesos en Hugging Face (safetensors + GGUF) |
+| Jev 1.13.0 | no publicado | no disponible | 57,96 | no disponible | Leaderboard de decisión |
+| Bespoke Nimble 9B v3 | 9B | no disponible | 57,19 | no disponible | Leaderboard de decisión |
+| Cloudflare clef-flash | no disponible | no disponible | 56,15 | no disponible | Leaderboard de decisión |
+| ezjev 4B s2 | 4B | no disponible | 50,82 | no disponible | Leaderboard de decisión |
 
-Drex v1.5 es el único de los modelos comparados para el que la información disponible detalla tamaño, contexto, licencia y formato de pesos. Destaca por ser el de menor número de parámetros del grupo con el índice más alto, y por el mejor rendimiento en el área "Arts" (45,1) frente a sus competidores directos.
+Drex v1.5, Jev y Nimble quedan dentro de la banda de empate de 0,9 puntos del leaderboard; Drex v1.5 supera a Jev en 20 de las 37 pruebas. En JevBench, Jev mantiene una ventaja de 0,8 puntos porcentuales en precisión global, mientras que ambos empatan en la categoría difícil (73,9%).
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto ni respuestas en lenguaje natural, solo probabilidades sobre opciones tipadas. No puede usarse para chat, redacción ni generación de código.
-- Riesgo de decisión errónea: aunque no "alucina" texto, sí puede asignar probabilidades altas a opciones incorrectas; conviene calibrar umbrales y no confiar ciegamente en la opción de mayor probabilidad.
-- Idiomas no declarados: la información disponible no especifica qué lenguas soporta, pese a existir una puntuación de área "Language" de 62,5 en el Decision Index.
-- Licencia restrictiva potencial: la licencia es `nace-ai-open-rail-m` (etiquetada como `other`), con el texto en el fichero LICENSE del repositorio. No se detallan en la información disponible las condiciones exactas de uso comercial, por lo que hay que revisar el fichero antes de desplegar en producción.
-- Marca `private: true`: la model card incluye esta etiqueta en el front matter, en contradicción con la disponibilidad pública del repositorio; conviene verificar la situación real antes de depender del modelo.
-- Contexto predeterminado limitado: 16.384 tokens por defecto; alcanzar 131.072 exige configuración explícita y consume mucha más memoria, que crece con la longitud del documento.
-- Rendimiento débil en razonamiento y conocimiento: el área "Knowledge & Reasoning" obtiene 44,2, la más baja del modelo y por debajo de Jev (51,4), Surogate Rune (43,4) y Decider chat (44,3); el modelo es claramente más fuerte en herramientas y recuperación que en razonamiento puro.
-- Requisitos de GPU en la ruta Python: `inference.py` y `serve.py` necesitan una GPU CUDA; en CPU y Apple Silicon hay que pasar por llama.cpp u Ollama con convertidores propios.
-- Dependencia de forks: tanto llama.cpp como Ollama requieren ramas específicas mantenidas por Nace, lo que añade riesgo de mantenimiento y divergencia respecto a los proyectos upstream.
-- Servidor sin autenticación: el endpoint `/v1/systemone` no requiere cabecera `Authorization`; exponerlo fuera de `127.0.0.1` sin un proxy autenticado deja el servicio abierto.
-- Adopción muy baja: 37 descargas y 11 likes, sin validación independiente de terceros más allá de los benchmarks publicados por el propio autor.
-- Evaluación limitada frente a Jev: en la arena de juego el resultado global es del 56,8% de victorias, con 87 derrotas en 256 partidas, lo que indica un margen estrecho y dependiente del juego.
-- Benchmarks generativos ausentes: no hay MMLU, HumanEval ni GSM8K, de modo que no es comparable con modelos generativos de propósito general.
+- No es un modelo generativo: no produce texto libre, código ni razonamiento multi-paso por decodificación; solo puntúa opciones predefinidas.
+- La model card no documenta sesgos conocidos, composición del dataset ni idiomas soportados; la evaluación multilingüe y de equidad queda sin datos.
+- Riesgo de calibración deficiente fuera de la distribución de DecisionBench y JevBench; las probabilidades deben validarse con datos propios antes de fijar umbrales en producción.
+- El contexto por defecto es de 16.384 tokens; usar 128k exige configuración explícita y aumenta la memoria y la latencia (2,0 s de mediana en el rango 32k–128k).
+- La licencia `nace-ai-open-rail-m` está etiquetada como `other`; es imprescindible revisar `LICENSE` antes de uso comercial, ya que las condiciones no están resumidas en la model card.
+- El servidor `serve.py` no incluye autenticación y escucha en `127.0.0.1`; exponerlo requiere añadir una capa de autenticación.
+- El soporte de llama.cpp depende de una rama específica (`drex-v1.5`) del repositorio, no de la versión principal; la conversión a GGUF requiere `--no-mtp`.
+- Los resultados de benchmarks son en gran parte autoinformados por el autor (la suite pública se ejecutó con el kit oficial), y Jev tiene un recuento de parámetros no publicado, lo que dificulta la comparación estricta.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nace-ai/drex-v1.5
-- Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
-- Sitio de Nace.AI: https://www.nace.ai/
+- Paper (Towards Foundation Decision Models: Drex): https://huggingface.co/papers/2611.07854
 - Repositorio Drex: https://github.com/nace-ai/drex-decision-models
 - Drex DLM: https://huggingface.co/nace-ai/drex-dlm
 - Documentación de la API alojada: https://drex.nace.ai/docs
 - Agent skill de Drex: https://github.com/nace-ai/drex-agent-skill
-- Fork de llama.cpp (rama drex-v1.5): https://github.com/nace-ai/llama.cpp
-- Fork de Ollama (rama drex-v1.5): https://github.com/nace-ai/ollama
-- Fichero de licencia: LICENSE dentro del repositorio de Hugging Face
-
-Los resultados de búsqueda web devueltos para esta consulta hacen referencia a la clasificación estadística de actividades económicas NACE (Eurostat, INSEE, Wikipedia) y a la asociación AMPP, y no guardan relación con el modelo nace-ai/drex-v1.5, por lo que no se incluyen como fuentes.
+- Leaderboard del Decision Index: https://huggingface.co/spaces/multimodalart/jev-decision-index
+- Rama de llama.cpp para Drex v1.5: https://github.com/nace-ai/llama.cpp
+- Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
+- Sitio de Nace.AI: https://www.nace.ai/

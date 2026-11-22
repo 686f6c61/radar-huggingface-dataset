@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 561,
+  "downloads_30d": 563,
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
@@ -52,7 +52,7 @@
     {
       "title": "La solution qui accélère la croissance de votre flotte - SCALAR",
       "url": "https://zf-scalar.com/fr/",
-      "snippet": "SCALAR, la nouvelle plateforme de gestion de flotte de ZF, connecte en temps réel vos camions, vos remorques et vos équipes. …"
+      "snippet": "SCALAR, la nouvelle plateforme de gestion de flotte de ZF, connecte en temps réel vos camions, vos remorques et vos équipes. …Read more"
     },
     {
       "title": "SCALAR - ZF Platform",
@@ -62,17 +62,17 @@
     {
       "title": "Scalar — API Documentation, SDKs & Hosted MCP Servers",
       "url": "https://scalar.com/",
-      "snippet": "Infrastructure for APIs in the age of agents. From an agent's first read of your docs to its millionth production call, Scalar is the layer …"
+      "snippet": "Infrastructure for APIs in the age of agents. From an agent's first read of your docs to its millionth production call, Scalar is the layer …Read more"
     },
     {
       "title": "An easier way to manage and grow your fleet business - SCALAR",
       "url": "https://zf-scalar.com/",
-      "snippet": "SCALAR, ZF’s newest fleet management platform, connects all your trucks, trailers, teams, and processes in real time so you can …"
+      "snippet": "SCALAR, ZF’s newest fleet management platform, connects all your trucks, trailers, teams, and processes in real time so you can …Read more"
     },
     {
-      "title": "GitHub - scalar/scalar: Scalar is an open-source API platform: Modern ...",
-      "url": "https://github.com/ScalaR/ScalaR",
-      "snippet": "The following frameworks have chosen Scalar API Reference as their default OpenAPI documentation UI, recognizing its developer …"
+      "title": "Scalar",
+      "url": "https://scalar.io/",
+      "snippet": "Scalar is the leading independent valuation firm for tax, financial reporting, transaction advisory, and litigation purposes. Scalar …Read more"
     }
   ]
 }

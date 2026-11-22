@@ -2,72 +2,99 @@
 
 ## Resumen
 
-AnomalyThink-Qwen2.5-VL-7B-GGUF es una cuantización en formato GGUF del modelo AnomalyThink-Qwen2.5-VL-7B-KCR, desarrollado por aacudad. El modelo original es un fine-tuning de Qwen2.5-VL-7B sobre el dataset aacudad/AnomalyThink, especializado en detección de anomalías industriales y razonamiento visual-lingüístico. La conversión a GGUF ha sido realizada por mradermacher, lo que permite ejecutar el modelo en entornos con recursos limitados mediante herramientas como llama.cpp u Ollama.
+AnomalyThink-Qwen2.5-VL-7B es un modelo de lenguaje y vision (VLM) especializado en deteccion de anomalias industriales, desarrollado por el usuario aacudad y publicado en Hugging Face. Se construye sobre Qwen2.5-VL-7B, el modelo multimodal de Alibaba, y se afina sobre el dataset AnomalyThink para tareas de razonamiento visual orientado a la identificacion de defectos y anomalias en entornos industriales. La version aqui descrita es la cuantizacion GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El modelo combina la arquitectura multimodal de Qwen2.5-VL (visión y lenguaje) con un entrenamiento específico para identificar defectos, irregularidades o condiciones anómalas en imágenes industriales. Con aproximadamente 7.6 mil millones de parámetros, ofrece un equilibrio entre capacidad de razonamiento y coste computacional. La disponibilidad de múltiples niveles de cuantización (desde Q2_K hasta f16) lo hace versátil para diferentes presupuestos de hardware.
+El modelo resuelve un problema concreto: combinar capacidades de vision-lenguaje con razonamiento explicito (thinking) para inspeccion industrial automatizada. A diferencia de un VLM generico, AnomalyThink esta afinado para producir razonamientos sobre lo que observa en una imagen y determinar si existe una anomalia, lo que lo hace util en control de calidad, mantenimiento predictivo y monitorizacion de lineas de produccion.
+
+Con 7.615.616.512 parametros (aproximadamente 7,6 mil millones), licencia Apache 2.0 y pesos disponibles en formato GGUF con 13 niveles de cuantizacion, es una opcion accesible para despliegues en local. La informacion publica sobre contexto, datos de entrenamiento y benchmarks es limitada; esta ficha indica explicitamente cuando un dato no esta disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (vision-lenguaje) basado en Qwen2.5-VL-7B |
-| Parametros totales | 7.615.616.512 |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer multimodal (vision-lenguaje) basada en Qwen2.5-VL; detalles internos no disponibles |
+| Parametros totales | 7.615.616.512 (~7,6 B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con mmproj para el procesador multimodal) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj en f16 y Q8_0 para la torre de vision |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base original esta en safetensors |
+| Tamano del repo | 70,4 GB (incluye todas las cuantizaciones) |
+| Modelo base | aacudad/AnomalyThink-Qwen2.5-VL-7B-KCR |
+| Dataset de entrenamiento | aacudad/AnomalyThink |
+| Libreria | transformers (etiquetado); inferencia via llama.cpp para GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización estática en GGUF del modelo AnomalyThink-Qwen2.5-VL-7B-KCR. El modelo base es un fine-tuning de Qwen2.5-VL-7B sobre el dataset aacudad/AnomalyThink, orientado a la detección de anomalías industriales y al razonamiento sobre imágenes. No se dispone de información detallada sobre el proceso de entrenamiento, como el número de tokens, la composición del dataset o el uso de técnicas de alineación (RLHF, DPO). La cuantización fue realizada por mradermacher y, en el momento de la publicación, no se han incluido pesos con imatrix.
+La arquitectura subyacente es la de Qwen2.5-VL, un transformer multimodal que combina un codificador visual con un modelo de lenguaje para procesar imagenes y texto de forma conjunta. Sobre esta base, el autor (aacudad) realizo un afinado especifico con el dataset AnomalyThink, orientado a deteccion de anomalias industriales y razonamiento visual. El sufijo "Think" en el nombre sugiere un modo de razonamiento explicito, aunque la model card no detalla el mecanismo concreto ni si se empleo RLHF, DPO u otra tecnica de alineamiento.
+
+Los detalles sobre volumen de tokens de entrenamiento, composicion exacta del dataset y proceso de ajuste no estan disponibles en la informacion proporcionada. La cuantizacion GGUF la realiza mradermacher con cuantizaciones estaticas (no se han publicado, segun la model card, cuantizaciones con imatrix o ponderadas en el momento de la ultima revision). El repositorio incluye el proyector multimodal (mmproj) en dos precisiones para preservar la capacidad de vision al usar llama.cpp.
 
 ## Capacidades
 
-- Detección de anomalías industriales a partir de imágenes (industrial anomaly detection).
-- Razonamiento visual-lingüístico: el modelo puede combinar información visual y textual para describir y analizar escenas.
-- Generación de texto en inglés, incluyendo respuestas descriptivas y explicativas.
-- Conversación multimodal: acepta entradas de imagen y texto de forma conjunta.
-- No se especifican capacidades de tool calling, function calling o uso como agente en la información disponible.
+- Generacion de texto y razonamiento multimodal: procesa imagenes junto con instrucciones textuales para describir, analizar y razonar sobre su contenido.
+- Deteccion de anomalias industriales: tarea principal para la que fue afinado, identificando defectos o irregularidades en imagenes de inspeccion.
+- Razonamiento explicito (thinking): el nombre del modelo indica un modo de razonamiento paso a paso, aunque la model card no documenta el formato exacto de activacion.
+- Comprension de imagenes: al conservar la torre visual de Qwen2.5-VL mediante los ficheros mmproj, mantiene capacidades generales de vision-lenguaje.
+- Conversacional: etiquetado como modelo conversacional, admite interacciones multi-turno.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y multi-step reasoning: no documentadas especificamente; el razonamiento visual es la unica capacidad de "thinking" indicada.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
 
 ## Casos de uso
 
-- Inspección de calidad en líneas de producción: el modelo puede analizar imágenes de productos en tiempo real y detectar defectos visuales, lo que permite automatizar el control de calidad sin intervención humana.
-- Mantenimiento predictivo: análisis de imágenes de maquinaria o componentes para identificar signos de desgaste, corrosión o anomalías antes de que se produzcan fallos, reduciendo paradas no planificadas.
-- Control de calidad en manufactura textil: detección de defectos en tejidos, costuras o prendas a partir de fotografías, facilitando la clasificación automática de productos.
-- Análisis de imágenes de seguridad industrial: identificación de condiciones anómalas en entornos de trabajo, como equipos mal posicionados, fugas o acumulación de residuos, para alertar al personal de seguridad.
-- Documentación de incidencias: generación automática de informes descriptivos a partir de imágenes de anomalías, combinando la capacidad de visión con la generación de lenguaje natural.
-- Asistencia a operarios en planta: el modelo puede recibir una fotografía de un equipo y responder preguntas sobre posibles anomalías, actuando como asistente técnico de apoyo en la toma de decisiones.
+- Inspeccion de calidad en linea de produccion: el modelo recibe imagenes de piezas o componentes y razona sobre la presencia de defectos, integrándose en un pipeline de captura de imagen y clasificacion automatica. Su afinado especifico en anomalias industriales lo hace mas adecuado que un VLM generico para esta tarea.
+- Mantenimiento predictivo visual: analisis de fotografias de equipos (corrosion, grietas, desgaste) para generar informes con razonamiento sobre la severidad y posibles causas, usando la salida de texto del modelo como entrada para un sistema de tickets.
+- Monitorizacion de infraestructuras con camaras: procesamiento de capturas periodicas de instalaciones para detectar cambios anomalos y generar alertas textuales que un operador pueda revisar.
+- Asistencia a tecnicos de campo: el modelo puede describir y razonar sobre una imagen enviada por un tecnico y sugerir diagnosticos preliminares, gracias a su naturaleza conversacional y multimodal.
+- Analisis de datasets de inspeccion: uso del modelo para etiquetar o pre-anotar imagenes industriales con razonamiento asociado, acelerando la creacion de datasets de entrenamiento supervisado.
+- Despliegue en edge o en local: con cuantizaciones Q4_K_M (4,8 GB) o Q4_K_S (4,6 GB) puede ejecutarse en estaciones de trabajo con GPU de consumo, lo que permite inspeccion en planta sin enviar imagenes a la nube.
+- Prototipado rapido de soluciones de vision industrial: al estar en GGUF y licencia Apache 2.0, sirve para validar conceptos de deteccion de anomalias antes de invertir en modelos propietarios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (incluyendo mmproj): para Q4_K_M (~4.8 GB) se necesitan aproximadamente 6 GB; para Q5_K_M (~5.5 GB), unos 7 GB; para Q6_K (~6.4 GB), unos 8 GB; para Q8_0 (~8.2 GB), unos 9.5 GB; para f16 (~15.3 GB), unos 17 GB.
-- GPU recomendadas: Q4_K_M y Q5_K_M pueden ejecutarse en RTX 3060 12GB o RTX 4070. Q6_K y Q8_0 son adecuados para RTX 3090 o RTX 4090. La versión f16 requiere una GPU con 24 GB o más, como A100 o H100.
-- Sí cabe en GPUs de consumo: las cuantizaciones Q4_K_M y Q5_K_M caben en tarjetas de 8-12 GB de VRAM.
-- Opciones de despliegue: para el formato GGUF, se recomienda llama.cpp, Ollama o LM Studio. Para el modelo base en safetensors, se puede usar vLLM o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): Q2_K ~3,1 GB; Q3_K_M ~3,9 GB; IQ4_XS ~4,4 GB; Q4_K_S ~4,6 GB; Q4_K_M ~4,8 GB; Q5_K_M ~5,5 GB; Q6_K ~6,4 GB; Q8_0 ~8,2 GB; f16 ~15,3 GB.
+- Sumar el proyector multimodal: mmproj-Q8_0 ~1,0 GB o mmproj-f16 ~1,5 GB.
+- GPU recomendadas: para f16, una A100 40 GB o H100; para Q8_0, una RTX 4090 (24 GB) o A10G; para Q4_K_M y Q5_K_M, una RTX 3090/4090 o RTX 4070 Ti Super con margen para contexto.
+- Cabe en GPU de consumo: si. Q4_K_M (~4,8 GB) mas mmproj-Q8_0 (~1,0 GB) requiere aproximadamente 6 GB de VRAM mas el contexto, por lo que es viable en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores. Las cuantizaciones Q2_K y Q3_K_S podrian caber en GPUs de 6-8 GB con contexto reducido.
+- Opciones de despliegue: llama.cpp (con soporte mmproj para vision), Ollama, LM Studio y servidores compatibles con la API de endpoints (el repo esta etiquetado como endpoints_compatible). Para el modelo original en safetensors, vLLM o TGI si soportan la arquitectura Qwen2.5-VL.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos comparativos con otros modelos de la misma categoría.
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+|---|---|---|---|---|---|
+| AnomalyThink-Qwen2.5-VL-7B (este) | ~7,6 B | no disponible | Deteccion de anomalias industriales con razonamiento | Apache 2.0 | GGUF, safetensors (base) |
+| Qwen2.5-VL-7B (base) | ~7,6 B | no disponible en esta ficha | Vision-lenguaje general | Apache 2.0 | safetensors, GGUF (terceros) |
+| Qwen2.5-VL-3B | ~3 B | no disponible en esta ficha | Vision-lenguaje general, menor coste | Apache 2.0 | safetensors, GGUF (terceros) |
+| LLaVA-OneVision-7B | ~7 B | no disponible en esta ficha | Vision-lenguaje general | Apache 2.0 (segun version) | safetensors, GGUF (terceros) |
+
+La comparativa se limita a modelos de la misma familia y tamano porque no se dispone de benchmarks publicados de AnomalyThink que permitan una comparacion cuantitativa. La ventaja diferencial de este modelo es el afinado especifico en anomalias industriales; su desventaja es la falta de documentacion sobre rendimiento y la limitacion al ingles.
 
 ## Limitaciones y advertencias
 
-- El modelo solo está disponible en inglés, lo que limita su uso en contextos multilingües.
-- La longitud de contexto no está especificada en la información disponible.
-- Al ser un fine-tuning especializado, puede degradar su rendimiento en tareas fuera de la detección de anomalías industriales.
-- Existe riesgo de alucinación inherente a los modelos de lenguaje, especialmente cuando se le presentan imágenes ambiguas o fuera de su dominio de entrenamiento.
-- No se han publicado resultados de benchmarks, por lo que no se puede verificar su rendimiento frente a modelos alternativos.
-- La licencia Apache 2.0 permite uso comercial, pero se debe revisar la licencia del modelo base y de los datos de entrenamiento para asegurar el cumplimiento normativo.
+- Sesgos: no documentados por el autor; al derivar de Qwen2.5-VL hereda los sesgos del modelo base, no evaluados en esta ficha.
+- Riesgo de alucinacion: presente como en cualquier VLM; en deteccion de anomalias, una descripcion incorrecta puede derivar en falsos negativos o positivos, por lo que se recomienda validacion humana en decisiones criticas.
+- Limitacion de idioma: el modelo esta etiquetado unicamente para ingles; el rendimiento en castellano no esta garantizado.
+- Contexto: la longitud de contexto no esta documentada en la informacion disponible, lo que dificulta planificar conversaciones largas o imagenes de alta resolucion.
+- Razonamiento "thinking": el mecanismo no esta documentado; no se especifica como activar o desactivar el modo de razonamiento ni su formato de salida.
+- Licencia: Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base Qwen2.5-VL y el dataset AnomalyThink mantengan condiciones compatibles.
+- Cuantizaciones: las cuantizaciones Q2_K y Q3_K_S degradan la calidad; para produccion se recomienda Q4_K_M o superior. Las cuantizaciones con imatrix no estaban disponibles en el momento de la revision.
+- Madurez: el modelo tiene pocas descargas (559) y un solo "like", lo que indica escasa validacion por parte de la comunidad; conviene evaluarlo con datos propios antes de adoptarlo.
+- Proyector multimodal: es imprescindible descargar el fichero mmproj correspondiente; sin el, el modelo no procesa imagenes.
 
 ## Enlaces
 
-- Página del modelo en Hugging Face: https://huggingface.co/mradermacher/AnomalyThink-Qwen2.5-VL-7B-GGUF
-- Modelo base: https://huggingface.co/aacudad/AnomalyThink-Qwen2.5-VL-7B-KCR
+- Repositorio GGUF: https://huggingface.co/mradermacher/AnomalyThink-Qwen2.5-VL-7B-GGUF
+- Modelo base (KCR): https://huggingface.co/aacudad/AnomalyThink-Qwen2.5-VL-7B-KCR
 - Dataset de entrenamiento: https://huggingface.co/datasets/aacudad/AnomalyThink
-- Cuantización KCR alternativa: https://huggingface.co/mradermacher/AnomalyThink-Qwen2.5-VL-7B-KCR-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#AnomalyThink-Qwen2.5-VL-7B-GGUF
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

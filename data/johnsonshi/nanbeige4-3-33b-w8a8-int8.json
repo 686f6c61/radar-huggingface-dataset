@@ -5,7 +5,7 @@
   "author": "johnsonshi",
   "url": "https://huggingface.co/johnsonshi/Nanbeige4.3-33B-W8A8-INT8",
   "created_at": "2026-11-21T23:04:37.000Z",
-  "updated_at": "2026-11-21T23:05:32.000Z",
+  "updated_at": "2026-11-22T00:54:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

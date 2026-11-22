@@ -61,7 +61,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 564,
+  "downloads_30d": 542,
   "trending_score": 0,
   "parameters": 8791592960,
   "parameters_human": "8.79B",
@@ -81,31 +81,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "richardyoung/granite-4.2-3b-heretic-GGUF · Hugging Face",
-      "url": "https://huggingface.co/richardyoung/granite-4.2-3b-heretic-GGUF",
-      "snippet": "richardyoung / granite-4.2-3b-heretic-GGUF Like 0 GGUF llama.cpp ollama uncensored abliterated conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Granite 4.2 | IBM Granite",
-      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
-      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
-    },
-    {
-      "title": "mradermacher/granite-4.2-8b-heretic-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/granite-4.2-8b-heretic-GGUF",
-      "snippet": "mradermacher / granite-4.2-8b-heretic-GGUF like 0 Transformers GGUF 12 languages granite granite-4.2 reasoning thinking tool-calling ibm heretic uncensored decensored abliterated conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "granite-4.2-8b-heretic API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/Dingdust/granite-4.2-8b-heretic",
-      "snippet": "Run granite-4.2-8b-heretic with FriendliAI inference. Granite is a family of open-source large language models developed by IBM, designed for enterprise and…"
-    },
-    {
-      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
-      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
-      "snippet": "Granite is a family of open-source large language models developed by IBM, designed for enterprise and research use. Granite models are built to be versatile, safe, and efficient — covering a range of sizes and capabilities from compact edge-deployable models to large-scale reasoning systems. The Granite 4.2 generation introduces native reasoning (thinking) capabilities, allowing models to ..."
-    }
-  ]
+  "sources": []
 }

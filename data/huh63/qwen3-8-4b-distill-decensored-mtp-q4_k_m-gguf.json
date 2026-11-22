@@ -53,12 +53,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 314,
+  "downloads_30d": 328,
   "trending_score": 0,
   "parameters": 333514240,
   "parameters_human": "333.5M",
-  "storage_bytes": 9280679776,
-  "storage_human": "9.3 GB",
+  "storage_bytes": 3541841888,
+  "storage_human": "3.5 GB",
   "context_length": null,
   "base_model": "empero-ai/Qwen3.8-4B-Distill, Qwen/Qwen3.5-4B",
   "formats": [

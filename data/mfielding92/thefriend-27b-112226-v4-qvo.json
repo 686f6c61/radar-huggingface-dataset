@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mfielding92/thefriend-27b-112226-v4-qvo",
+  "slug": "mfielding92-thefriend-27b-112226-v4-qvo",
+  "author": "mfielding92",
+  "url": "https://huggingface.co/mfielding92/thefriend-27b-112226-v4-qvo",
+  "created_at": "2026-11-22T09:36:34.000Z",
+  "updated_at": "2026-11-22T09:56:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:mfielding92/thefriend-27b-110626-v3-qvo",
+    "base_model:finetune:mfielding92/thefriend-27b-110626-v3-qvo",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996101,
+  "storage_human": "55.6 GB",
+  "context_length": null,
+  "base_model": "mfielding92/thefriend-27b-110626-v3-qvo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

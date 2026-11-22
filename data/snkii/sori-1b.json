@@ -44,7 +44,7 @@
   "trending_score": 11,
   "parameters": 932510976,
   "parameters_human": "932.5M",
-  "storage_bytes": 3733587457,
+  "storage_bytes": 3731603367,
   "storage_human": "3.7 GB",
   "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M-Base, LiquidAI/LFM2.5-Encoder-350M, nvidia/audio-flamingo-next-hf",

@@ -2,88 +2,93 @@
 
 ## Resumen
 
-ClinicalCamel-70B es un modelo de lenguaje de gran tamano (LLM) especializado en el dominio medico y clinico, desarrollado por el laboratorio wanglab. Se basa en la arquitectura LLaMA-2 de 70B parametros y ha sido ajustado mediante QLoRA (Quantized Low-Rank Adaptation) para tareas de generacion y comprension de texto en el ambito de la investigacion biomedica. El modelo esta disponible en formato GGUF, cuantizado por mradermacher, lo que facilita su despliegue en entornos de produccion con recursos limitados.
+ClinicalCamel-70B-GGUF es la distribucion en formato GGUF del modelo ClinicalCamel-70B, desarrollado originalmente por el grupo wanglab y cuantizado por mradermacher. Se trata de un modelo de lenguaje de gran tamano (68.976.648.192 parametros, aproximadamente 69 mil millones) orientado al dominio clinico y medico, derivado del modelo base ClinicalCamel-70B. La cuantizacion a GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo inviable con los pesos originales en precision completa.
 
-La relevancia de este modelo radica en la necesidad de herramientas de IA especificas para el sector sanitario, donde los modelos generalistas suelen carecer de la precision terminologica y el conocimiento clinico necesarios. Al estar basado en LLaMA-2 70B, hereda una base solida de razonamiento y generacion de texto, mientras que el ajuste fino con datos medicos mejora su capacidad para responder a consultas clinicas, interpretar literatura cientifica y asistir en tareas de documentacion medica.
+El modelo esta disenado para tareas de procesamiento de lenguaje natural en el ambito sanitario: comprension de textos clinicos, respuesta a preguntas medicas y generacion de contenido relacionado con salud. Su relevancia actual radica en que ofrece una alternativa de gran tamano para investigacion clinica en entornos con recursos limitados, aunque su licencia CC BY-NC 4.0 restringe estrictamente el uso comercial y la model card prohibe explicitamente su uso para toma de decisiones sanitarias.
 
-El repositorio GGUF incluye multiples cuantizaciones (Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, IQ4_XS y f16) que permiten adaptar el modelo a diferentes capacidades de hardware, desde GPUs de consumo hasta servidores de alta gama. Aunque el modelo original se distribuye bajo una licencia no especificada, su uso en investigacion esta documentado, y la version cuantizada mantiene la compatibilidad con los principales frameworks de inferencia como llama.cpp y Ollama.
+La ficha se centra en la version cuantizada distribuida por mradermacher, que incluye 11 variantes de cuantizacion estatica (desde Q2_K hasta Q8_0) con tamanos que van de 25,6 GB a 73,4 GB. No se dispone de informacion detallada sobre la arquitectura interna, el contexto maximo ni los datos de entrenamiento en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LLaMA-2 (Transformer decoder-only) |
-| Parametros totales | 70 mil millones (70B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 4096 tokens (herencia de LLaMA-2) |
-| Tipos de cuantizacion | f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | No disponible (presumiblemente ingles, dado el dataset de entrenamiento) |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (safetensors en el repositorio original) |
+| Arquitectura | no disponible (modelo base tipo transformer, no confirmado en la informacion) |
+| Parametros totales | 68.976.648.192 (~69B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | en (ingles) |
+| Licencia | cc-by-nc-4.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-ClinicalCamel-70B se construye sobre la arquitectura LLaMA-2, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU y atencion por ventanas deslizantes. El modelo base de 70B parametros fue preentrenado por Meta con 2 billones de tokens, y posteriormente ajustado por wanglab mediante QLoRA, una tecnica que permite el fine-tuning eficiente de modelos grandes mediante la cuantizacion de los pesos base y la adaptacion de bajo rango. Este enfoque reduce significativamente los requisitos de memoria durante el entrenamiento sin sacrificar el rendimiento.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. El modelo base wanglab/ClinicalCamel-70B es un modelo de 69 mil millones de parametros, lo que sugiere una arquitectura transformer densa de gran escala, pero no se confirma en la informacion disponible. Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset clinico ni si se aplicaron tecnicas de RLHF o DPO.
 
-El ajuste fino se realizo con datos especificos del dominio clinico, incluyendo literatura medica, guias de practica clinica y conversaciones medicas simuladas. Aunque no se han publicado detalles completos sobre la composicion del dataset, el modelo esta disenado para tareas de investigacion medica, lo que sugiere un enfasis en la terminologia especializada y el razonamiento diagnostico. No se ha documentado el uso de RLHF o DPO en el proceso de entrenamiento.
-
-La version GGUF mantiene la arquitectura original pero con los pesos cuantizados para reducir el tamano del modelo y acelerar la inferencia. Las cuantizaciones disponibles cubren un amplio rango de precision/rendimiento, desde Q2_K (mayor compresion, menor calidad) hasta f16 (sin perdida de precision).
+La informacion disponible unicamente confirma que se trata de una cuantizacion estatica del modelo original realizada con herramientas de conversion a GGUF (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1). El autor indica que las cuantizaciones ponderadas con imatrix estan disponibles en un repositorio separado (mradermacher/ClinicalCamel-70B-i1-GGUF). No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto medico: produce respuestas coherentes y contextualmente apropiadas sobre temas clinicos, farmacologicos y de investigacion biomedica.
-- Razonamiento clinico: capaz de seguir cadenas de razonamiento para sugerir diagnosticos diferenciales o interpretar resultados de pruebas.
-- Comprension de literatura cientifica: puede resumir articulos, extraer informacion relevante y explicar conceptos complejos.
-- Soporte multilingue: no confirmado, pero al estar basado en LLaMA-2, es probable que maneje al menos ingles y otros idiomas principales con menor precision.
-- Tool calling: no documentado. El modelo no incluye soporte explicito para function calling en su configuracion actual.
-- Capacidades de agente: no documentado. No hay evidencia de soporte para razonamiento multi-paso autonomo.
-- Formato de conversacion: compatible con el formato de chat de LLaMA-2, lo que permite su uso en sistemas de dialogo.
+- Generacion de texto en ingles orientada al dominio clinico y medico.
+- Respuesta a preguntas sobre contenido sanitario y comprension de textos clinicos.
+- Ejecucion local mediante llama.cpp y herramientas compatibles con GGUF.
+- Soporte de cuantizaciones de distinto tamano para adaptarse a diferentes presupuestos de memoria.
+- Capacidades multilingues: solo ingles segun la model card.
+- Tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Asistencia a profesionales sanitarios: el modelo puede responder preguntas sobre farmacologia, interacciones medicamentosas y protocolos de tratamiento, ayudando a medicos y enfermeros en la toma de decisiones. Su base de 70B parametros proporciona respuestas detalladas y matizadas.
-- Resumen de historiales clinicos: dado su entrenamiento en lenguaje medico, puede condensar largos historiales de pacientes en resumenes estructurados, ahorrando tiempo al personal medico.
-- Educacion medica: estudiantes de medicina pueden utilizarlo como herramienta de estudio para explicar conceptos fisiopatologicos, interpretar casos clinicos y preparar examenes.
-- Investigacion biomedica: investigadores pueden emplearlo para revisar literatura, generar hipotesis o redactar secciones de articulos cientificos, gracias a su familiaridad con la terminologia academica.
-- Soporte en telemedicina: integrado en plataformas de consulta remota, puede proporcionar informacion preliminar a pacientes antes de la consulta con un profesional.
-- Documentacion clinica automatizada: puede transcribir y estructurar notas medicas dictadas, reduciendo la carga administrativa de los facultativos.
+- Investigacion clinica academica: el modelo puede emplearse en proyectos de investigacion sin animo de lucro para analisis de textos medicos, aprovechando su licencia CC BY-NC 4.0 que permite uso no comercial. Es adecuado para prototipos de extraccion de informacion de historiales clinicos anonimizados.
+- Procesamiento de literatura medica: con 69B parametros, el modelo puede resumir y clasificar articulos cientificos del ambito sanitario en ingles, tarea para la que fue entrenado su modelo base.
+- Educacion medica y simulacion de casos: generacion de escenarios clinicos ficticios y preguntas de evaluacion para estudiantes, siempre que no se use para decisiones reales sobre pacientes.
+- Desarrollo de asistentes de documentacion clinica en entornos de investigacion: redaccion asistida de notas y resumenes de informes medicos en ingles, con revision humana obligatoria.
+- Evaluacion comparativa de modelos de dominio: servir como referencia de 69B parametros cuantizado para experimentos academicos que comparen rendimiento de LLM en tareas clinicas frente a modelos mas pequenos.
+- Despliegue en laboratorios con GPU de consumo: las variantes Q4_K_S (39,3 GB) y Q4_K_M (41,5 GB) permiten ejecutar el modelo en estaciones de trabajo con 48 GB de VRAM o configuraciones multi-GPU, facilitando experimentacion sin infraestructura de datacenter.
+- Analisis de texto biomedico en pipelines de investigacion: integracion via llama.cpp en scripts de procesamiento por lotes de corpus clinicos en ingles, con la advertencia de no usar los resultados para decisiones sanitarias.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio original de wanglab no incluye tablas comparativas con otros modelos medicos, y la version GGUF no anade datos adicionales. Se recomienda consultar el articulo academico asociado o contactar con los autores para obtener metricas de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion. Para Q4_K_M (el equilibrio mas comun), se necesitan aproximadamente 40-45 GB de VRAM. Para Q8_0, alrededor de 70 GB. La version f16 requiere unos 140 GB.
-- GPU recomendadas: para cuantizaciones bajas (Q2_Q4), una NVIDIA RTX 4090 (24 GB) no es suficiente; se necesitan GPUs de datacenter como A100 (40/80 GB) o H100 (80 GB). Para cuantizaciones altas, se requieren multiples GPUs o una sola GPU de 80 GB.
-- Compatibilidad con GPU de consumo: no es viable en GPUs de consumo actuales (RTX 3090/4090) debido a los requisitos de memoria, salvo que se use Q2_K y se acepte una calidad reducida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio (para uso local), y vLLM o TGI (para servidores de produccion). El formato GGUF es compatible con todos estos frameworks.
-- Latencia y throughput: no disponibles. En una A100 80GB con Q4_K_M, se puede esperar una velocidad de 20-40 tokens/segundo, pero no hay datos oficiales.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K ~25,6 GB; Q3_K_S ~30,0 GB; Q3_K_M ~33,4 GB; Q3_K_L ~36,2 GB; IQ4_XS ~37,3 GB; Q4_K_S ~39,3 GB; Q4_K_M ~41,5 GB; Q5_K_S ~47,6 GB; Q5_K_M ~48,9 GB; Q6_K ~56,7 GB; Q8_0 ~73,4 GB.
+- GPU recomendadas: para Q8_0 se requiere una A100 80GB o H100; para Q4_K_M y Q5_K_M son viables configuraciones multi-GPU (2x RTX 4090 de 24 GB o 2x A6000 de 48 GB); para Q2_K y Q3_K_S puede bastar una unica GPU de 32 GB como la V100 32GB o A100 40GB.
+- En GPU de consumo: una RTX 4090 (24 GB) no puede alojar ninguna variante completa en VRAM; es posible con descarga parcial a RAM del sistema (offloading) mediante llama.cpp, a costa de una latencia mucho mayor. Configuraciones con 2x RTX 4090 (48 GB) permiten Q4_K_S y Q4_K_M.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y servidores compatibles con la API de endpoints (el tag endpoints_compatible sugiere compatibilidad con endpoints tipo OpenAI). vLLM y TGI no soportan GGUF de forma nativa en el momento de la publicacion, aunque existen variantes.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especialidad | Licencia | Formato |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| ClinicalCamel-70B | 70B | 4096 | Medicina | No disponible | GGUF, safetensors |
-| Med-PaLM 2 (Google) | No publico | No publico | Medicina | Propietaria | API |
-| Llama 2 70B (base) | 70B | 4096 | General | Llama 2 License | Safetensors, GGUF |
-| BioGPT (Microsoft) | 355M | 1024 | Biomedicina | MIT | PyTorch |
+| ClinicalCamel-70B-GGUF (este) | ~69B | no disponible | GGUF | CC BY-NC 4.0 | Cuantizaciones estaticas, solo ingles, dominio clinico |
+| wanglab/ClinicalCamel-70B | ~69B | no disponible | safetensors | CC BY-NC 4.0 | Modelo base original, pesos completos |
+| mradermacher/ClinicalCamel-70B-i1-GGUF | ~69B | no disponible | GGUF (imatrix) | CC BY-NC 4.0 | Variante con cuantizacion ponderada imatrix, mayor calidad por tamano |
 
-ClinicalCamel-70B ofrece la ventaja de ser open-source y desplegable localmente, a diferencia de Med-PaLM 2. Comparado con Llama 2 base, su ajuste medico proporciona mayor precision en tareas clinicas, aunque pierde algo de generalidad. BioGPT es mucho mas ligero pero tambien menos capaz en tareas complejas.
+No se dispone de informacion sobre benchmarks comparativos con otros modelos clinicos de tamano similar en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al entrenarse sobre literatura medica occidental, puede tener sesgos hacia practicas y farmacos aprobados en paises desarrollados, ignorando alternativas de otras regiones.
-- Riesgo de alucinacion: como todo LLM, puede generar informacion medica falsa o desactualizada. Nunca debe utilizarse como unica fuente para decisiones clinicas.
-- Limitaciones de contexto: la ventana de 4096 tokens es limitada para documentos clinicos largos o conversaciones extensas.
-- Restricciones de licencia: la licencia no esta especificada, lo que genera incertidumbre legal para uso comercial. Se recomienda contactar con los autores antes de desplegarlo en produccion.
-- Idioma: no se ha confirmado el soporte para espanol u otros idiomas, lo que limita su uso en entornos hispanohablantes.
-- Requisitos de hardware: el modelo es demasiado grande para la mayoria de entornos de desarrollo locales, lo que puede dificultar la experimentacion rapida.
+- La model card prohibe explicitamente el uso del modelo para toma de decisiones sanitarias (healthcare decision-making).
+- Licencia CC BY-NC 4.0: uso comercial prohibido sin autorizacion; el gate de acceso exige aceptar condiciones de uso no comercial.
+- Solo soporta ingles; no se documenta soporte multilingue.
+- Riesgo de alucinacion inherente a modelos de lenguaje de gran tamano, especialmente critico en dominio clinico.
+- No se han publicado evaluaciones de sesgo ni benchmarks de seguridad en la informacion disponible.
+- Ausencia de datos sobre contexto maximo, lo que impide planificar tareas de contexto largo con garantias.
+- El modelo base no debe usarse como sustituto de juicio clinico profesional bajo ninguna circunstancia.
+- El repositorio ocupa 468,8 GB en total; la descarga de variantes individuales requiere gestion cuidadosa del almacenamiento.
+- No se documentan limitaciones especificas de la cuantizacion mas alla de la perdida de calidad esperada en Q2_K y Q3_K_M (marcada como "lower quality" por el autor).
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/ClinicalCamel-70B-GGUF
-- Repositorio original: https://huggingface.co/wanglab/ClinicalCamel-70B
-- Repositorio GitHub: https://github.com/bowang-lab/clinical-camel
-- Ficha en AIBase: https://model.aibase.com/models/details/1915694017607786497
-- Ficha en AIModels: https://www.aimodels.fyi/models/huggingFace/clinicalcamel-70b-wanglab
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/ClinicalCamel-70B-GGUF
+- Modelo base original: https://huggingface.co/wanglab/ClinicalCamel-70B
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/ClinicalCamel-70B-i1-GGUF
+- Pagina de descarga del autor: https://hf.tst.eu/model#ClinicalCamel-70B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

@@ -5,7 +5,7 @@
   "author": "uctnlp",
   "url": "https://huggingface.co/uctnlp/mzansilm-125m",
   "created_at": "2026-02-17T10:18:13.000Z",
-  "updated_at": "2026-11-21T15:26:54.000Z",
+  "updated_at": "2026-11-21T19:20:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -51,7 +51,7 @@
     "region:us"
   ],
   "likes": 34,
-  "downloads_30d": 1040,
+  "downloads_30d": 1069,
   "trending_score": 0,
   "parameters": 125008384,
   "parameters_human": "125.0M",

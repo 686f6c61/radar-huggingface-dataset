@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 549,
+  "downloads_30d": 554,
   "trending_score": 0,
   "parameters": 149608709,
   "parameters_human": "149.6M",
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Accueil - Mairie de Vinay",
-      "url": "https://www.vinay.fr/",
-      "snippet": "LE RETOUR DU PRINTEMPS À VINAY ! Il règne comme une ambiance de vacances à Vinay avec la saison à la piscine qui bat son …"
-    },
-    {
-      "title": "Vinay (Isère) — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Vinay_(Is%C3%A8re)",
-      "snippet": "Vinay est une commune française située dans le département de l' Isère, en région Auvergne-Rhône-Alpes. La commune se situe …"
-    },
-    {
-      "title": "Plan Vinay : carte de Vinay (38470) et infos pratiques - Mappy",
-      "url": "https://fr.mappy.com/plan/38470-vinay",
-      "snippet": "Vous recherchez la carte ou le plan de Vinay et de ses environs ? Trouvez l’adresse qui vous intéresse sur le plan de Vinay ou …"
-    },
-    {
-      "title": "Découvrir Vinay - Mairie de Vinay",
-      "url": "https://www.vinay.fr/decouvrir-vinay/",
-      "snippet": "Vinay est une ville de 4370 habitants, située dans la basse vallée de l’Isère, le Sud Grésivaudan, à une altitude moyenne de 280 m, …"
-    },
-    {
-      "title": "Site officiel de la commune de Vinay - Accueil",
-      "url": "https://vinay51.fr/",
-      "snippet": "Site officiel de la mairie de Vinay en Champagne. Commune rurale située près d'Epernay dans la Marne."
-    }
-  ]
+  "sources": []
 }

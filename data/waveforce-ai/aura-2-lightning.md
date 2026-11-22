@@ -2,93 +2,87 @@
 
 ## Resumen
 
-Aura-2-Lightning es un modelo de lenguaje causal desarrollado por Waveforce AI, construido como un destilado del backbone compacto `openai-community/gpt2-xl` (1.557.611.200 parametros) que alinea sus estados internos con los de un modelo profesor de mayor tamano basado en mezcla de expertos, `openai/gpt-oss-20b`. El objetivo declarado es ofrecer una ejecucion local de alta velocidad y baja latencia manteniendo una densidad de razonamiento superior a la del GPT-2 XL original, del que hereda la arquitectura transformer decoder.
+Aura-2-Lightning es un modelo de lenguaje causal de tipo decoder-only desarrollado por Waveforce AI. Se trata de un proceso de destilación estructural sobre la arquitectura de `openai-community/gpt2-xl` (1.557 millones de parámetros), que actúa como estudiante, alineado con los estados latentes de un modelo profesor de mayor escala: `openai/gpt-oss-20b`, un Mixture-of-Experts (MoE) de 20.000 millones de parámetros. El objetivo declarado por el autor es ofrecer una alternativa de alto rendimiento y baja latencia para despliegue local.
 
-La innovacion principal descrita en la model card es la tecnica de destilacion denominada Latent Space State Projection Alignment: en lugar de limitarse a minimizar la divergencia sobre los logits de salida, el entrenamiento proyecta la representacion de 1600 dimensiones del estudiante al espacio oculto de 2880 dimensiones del profesor mediante una cabeza de proyeccion lineal intermedia, optimizando una perdida combinada de modelado causal y error cuadratico medio sobre los estados ocultos. Esto permite transferir conocimiento latente de un modelo MoE de 20B a un transformer denso de 1.5B.
+La innovación principal que describe la model card es la "Latent Space State Projection Alignment": en lugar de limitarse a minimizar la divergencia de logits sobre los tokens de salida (destilación token-level estándar), se entrena una cabeza de proyección lineal intermedia que mapea el espacio de representación del estudiante (1600 dimensiones) al espacio de estados ocultos del profesor (2880 dimensiones), minimizando un error cuadrático medio entre ambos. La función de pérdida combina la pérdida de modelado causal con un término MSE ponderado a 0.5.
 
-Es relevante para desarrolladores que necesitan un modelo pequeno, desplegable en hardware de consumo y con licencia permisiva Apache 2.0, aunque la model card no documenta datos de contexto ampliado, idiomas soportados ni resultados de benchmarks publicos.
+El modelo es relevante ahora por su enfoque en eficiencia: parte de una arquitectura GPT-2 XL madura y sin restricciones de licencia, y la combina con técnicas de destilación cross-architecture para intentar transferir capacidades de razonamiento de un modelo MoE de 20B a un modelo denso de 1.5B. La licencia Apache 2.0 y su reducido tamaño lo hacen atractivo para despliegues en hardware modesto, aunque no se han publicado resultados de benchmarks que respalden las capacidades declaradas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder causal (basada en GPT-2 XL) |
-| Parametros totales | 1.557.611.200 |
-| Parametros activos | No aplica (modelo denso; el profesor gpt-oss-20b si es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (la arquitectura base GPT-2 XL emplea ventanas de 1024 tokens) |
-| Tipos de cuantizacion | FP16 (safetensors original); versiones GGUF publicadas por mradermacher |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer decoder-only causal (GPT-2 XL) con destilación de estados latentes desde un MoE |
+| Parametros totales | 1.557.611.200 (1.5B) |
+| Parametros activos | No aplica (modelo denso; el profesor MoE de 20B no forma parte de los pesos publicados) |
+| Longitud de contexto | No disponible (GPT-2 XL base soporta 1024 tokens; no confirmado para este fine-tune) |
+| Tipos de cuantizacion | No especificados por el autor; al ser safetensors FP16 es compatible con cuantizaciones estándar (GGUF, bitsandbytes, GPTQ) mediante herramientas externas |
+| Idiomas soportados | No disponible (heredados de GPT-2 XL, predominantemente inglés; no confirmado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (original); GGUF (repositorio de terceros) |
+| Formato de pesos | safetensors (repo de 3.1 GB) |
 
 ## Arquitectura y entrenamiento
 
-Aura-2-Lightning emplea la arquitectura transformer decoder causal de GPT-2 XL, con 1.5B parametros y representacion oculta de 1600 dimensiones. El entrenamiento es un proceso de destilacion entre arquitecturas heterogeneas: el profesor `openai/gpt-oss-20b` se ejecuto en cuantizacion microscaling FP4 (MXFP4) con kernels Triton dedicados para las capas MoE, mientras que el estudiante se entreno en FP16. La perdida total combina el objetivo de modelado causal con un termino MSE ponderado a 0.5 entre la proyeccion lineal de los estados del estudiante y los estados ocultos del profesor, lo que da lugar a la ecuacion descrita en la model card: L_total = L_CausalLM + 0.5 * MSE(W_proj * h_estudiante, h_profesor).
+La arquitectura del estudiante es un transformer decoder-only causal idéntico a GPT-2 XL: 48 capas, dimensión oculta de 1600 y aproximadamente 1.5B parámetros. El profesor es `openai/gpt-oss-20b`, un MoE de 20B parámetros que, según la model card, se ejecutó en cuantización nativa Microscaling FP4 (MXFP4) con kernels Triton dedicados para reducir el consumo de memoria durante el entrenamiento.
 
-Para estabilizar el entrenamiento se utilizo el optimizador de 8 bits PagedAdamW8bit con recorte estricto de la norma de gradiente (max_norm=1.0) y enmascaramiento de perdida (-100) sobre tokens de padding, con el objetivo declarado de eliminar la deriva en los limites y las paradas prematuras ante el token `<|endoftext|>`. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO. El modelo se distribuye con un `generation_config.json` ajustado con parametros de inferencia por defecto (temperature 0.85, top_p 0.92, top_k 50, repetition_penalty 1.35, no_repeat_ngram_size 3).
+El entrenamiento combina dos objetivos: la pérdida estándar de modelado causal (`CausalLM`) y una pérdida de alineamiento latente definida como `0.5 · MSE(W_proj · h_student, h_teacher)`, donde `W_proj` es una cabeza de proyección lineal que mapea las 1600 dimensiones del estudiante a las 2880 del profesor. Para estabilizar la optimización se usó `PagedAdamW8bit`, clipping de norma de gradiente con `max_norm=1.0` y enmascaramiento de pérdida (-100) sobre tokens de padding. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva de proposito general, heredada del backbone GPT-2 XL.
-- Razonamiento de densidad mejorada respecto al GPT-2 XL original, segun la model card, como resultado de la destilacion de estados latentes del profesor `gpt-oss-20b`.
-- Generacion de codigo y texto tecnico (capacidad no cuantificada en la informacion disponible, limitada por el tamano de 1.5B y por la ausencia de benchmarks).
-- Configuracion de decodificacion preajustada con penalizacion por repeticion y restriccion de n-gramas para reducir repeticiones.
-- Compatibilidad con el pipeline `text-generation` de Hugging Face Transformers y con `device_map="auto"` para reparto automatico de dispositivos.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso explicito: no disponible.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (modo de pensamiento, vision, audio): no disponibles.
+- Generación de texto autoregresiva en inglés (idioma principal heredado de GPT-2 XL; multilingüismo no confirmado).
+- Modelado causal de secuencias con decodificación estándar (temperature, top_p, top_k, repetition penalty y no_repeat_ngram_size preconfigurados).
+- Razonamiento de densidad media según el autor, derivado de la destilación de estados latentes del profesor MoE; sin benchmarks que lo verifiquen.
+- Integración directa con `transformers` mediante `pipeline("text-generation")` y `generation_config.json` preajustado.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode).
+- No se documenta ventana de contexto extendida más allá de la del GPT-2 XL base.
 
 ## Casos de uso
 
-- Prototipado local de generacion de texto: al ser un modelo de 1.5B en FP16 con un peso de repositorio de 3.1 GB, permite iterar rapidamente en una estacion de trabajo o portatil con GPU de gama media sin depender de APIs externas.
-- Despliegue en el borde y entornos con recursos limitados: su tamano reducido y su licencia Apache 2.0 lo hacen adecuado para ejecucion en dispositivos con poca memoria, usando cuantizacion GGUF del repositorio de mradermacher.
-- Generacion de texto aumentada por recuperacion en aplicaciones de baja latencia: se puede integrar como capa de generacion en un pipeline RAG cuando la ventana de contexto de 1024 tokens (arquitectura base GPT-2) sea suficiente para los fragmentos recuperados.
-- Autocompletado y asistencia de escritura: su configuracion preajustada de `repetition_penalty` y `no_repeat_ngram_size` reduce bucles de repeticion, util en tareas de redaccion asistida y borradores.
-- Clasificacion y anotacion de texto por generacion: se puede emplear para tareas de etiquetado, resumen corto o extraccion de informacion en lotes donde el coste por token es un factor critico.
-- Base para experimentos de destilacion e investigacion: sirve como estudiante de referencia para replicar o comparar tecnicas de alineacion de estados latentes entre arquitecturas densas y MoE, dado que documenta explicitamente el procedimiento de proyeccion.
-- Modulo de generacion en entornos de test y CI: su tamano permite instanciarlo en contenedores de integracion para pruebas de pipelines de NLP sin requerir GPUs de datacenter.
+- Generación de texto local en dispositivos con recursos limitados: con 1.5B parámetros en FP16 (~3.1 GB) o en cuantización de 8 bits (~1.6 GB), el modelo puede ejecutarse en GPUs de consumo como una RTX 3060 de 12 GB o incluso en CPU con llama.cpp, lo que lo hace adecuado para prototipos y demos sin infraestructura cloud.
+- Autocompletado y continuación de texto en herramientas de escritura: el `generation_config.json` incluye penalizaciones de repetición y restricciones de n-gramas que reducen bucles y cortes prematuros, útil para asistentes de redacción en local.
+- Generación de texto por lotes de alto throughput: al ser un modelo denso de 1.5B con arquitectura GPT-2, ofrece baja latencia por token y puede servirse con vLLM o TGI para tareas de generación masiva donde la calidad de un modelo de 70B no es requisito.
+- Fine-tuning específico de dominio: la licencia Apache 2.0 y el tamaño reducido permiten reentrenar el modelo sobre corpus propios (por ejemplo, documentación técnica o atención al cliente) en una sola GPU, algo inviable con modelos de mayor escala.
+- Investigación en destilación cross-architecture: el modelo sirve como caso de estudio reproducible de alineamiento de estados latentes entre arquitecturas densas y MoE, útil para grupos que investigan técnicas de compresión de conocimiento.
+- Generación de datos sintéticos a pequeña escala: puede usarse para producir texto de relleno o aumentación de datasets en pipelines de bajo coste, siempre con revisión humana por el riesgo de alucinación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K ni metricas comparativas frente al GPT-2 XL base o al profesor `gpt-oss-20b`.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 3,1 GB solo para los pesos, mas overhead de activaciones y cache KV (entorno a 4-5 GB en la practica para secuencias cortas).
-- VRAM estimada en cuantizacion GGUF de 4 bits: del orden de 1-1,5 GB para los pesos, segun el nivel de cuantizacion elegido en el repositorio de mradermacher.
-- GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM para FP16; tarjetas como RTX 3060, RTX 4060, RTX 2070 o superiores son suficientes. No requiere A100 ni H100.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en tarjetas de gama media y en muchas integradas con memoria unificada suficiente al usar cuantizacion.
-- Opciones de despliegue: Hugging Face Transformers con `pipeline("text-generation")`, llama.cpp/Ollama y otros runners compatibles con GGUF a traves del repositorio de mradermacher. No se documentan integraciones con vLLM ni TGI.
-- Latencia y throughput: no disponibles; la model card solo menciona un perfil de "high-throughput" y "low-latency" sin cifras concretas.
+- VRAM estimada en FP16: ~3.1 GB para los pesos, más overhead de activaciones y KV cache; en la práctica, 4-6 GB según longitud de secuencia y batch.
+- VRAM estimada en cuantización de 8 bits: ~1.6 GB; en 4 bits: ~0.8-1 GB.
+- GPUs recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16 cómodo (RTX 3060 Ti, RTX 4060, RTX 3070, A10). Para cuantización de 4-8 bits cabe en GPUs de 4-6 GB (GTX 1650, RTX 3050) e incluso en CPU.
+- Cabe en GPU de consumo: sí, en la mayoría de GPUs modernas con 6 GB o más; en cuantización 4-bit puede ejecutarse en hardware aún más modesto.
+- Opciones de despliegue: `transformers` (pipeline nativo), vLLM, TGI, llama.cpp/Ollama (requiere conversión a GGUF), y cualquier runtime compatible con safetensors.
+- Latencia y throughput: no disponibles; no se han publicado mediciones por parte del autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Aura-2-Lightning | 1,5B | No disponible (base GPT-2 de 1024) | Apache 2.0 | Destilado de gpt-oss-20b; sin benchmarks publicos |
-| openai-community/gpt2-xl | 1,5B | 1024 tokens | MIT modificada | Modelo base del estudiante; sin destilacion |
-| DistilGPT2 | 82M | 1024 tokens | Apache 2.0 | Destilado de GPT-2; mucho mas pequeno |
-| openai/gpt-oss-20b | 21B totales (3,6B activos) | 128k tokens | Apache 2.0 | Profesor MoE; requiere hardware de datacenter o cuantizacion agresiva |
+| Aura-2-Lightning | 1.5B | No disponible (base GPT-2 XL: 1024) | Apache 2.0 | Destilado de un MoE de 20B; sin benchmarks publicados |
+| GPT-2 XL (base) | 1.5B | 1024 | MIT | Modelo original de 2019; referencia directa del estudiante |
+| Qwen2.5-1.5B | 1.5B | 32.768 | Apache 2.0 | Modelo moderno con contexto largo y multilingüismo documentado; benchmarks públicos |
+| SmolLM2-1.7B | 1.7B | 8.192 | Apache 2.0 | Alternativa reciente de tamaño similar con benchmarks publicados |
 
-La informacion disponible no incluye resultados de rendimiento que permitan comparar la calidad de Aura-2-Lightning frente a estas alternativas.
+La comparación con Qwen2.5-1.5B y SmolLM2-1.7B es relevante por tamaño, pero no se dispone de datos de rendimiento de Aura-2-Lightning que permitan una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks publicados que permitan verificar la mejora de razonamiento declarada frente al GPT-2 XL base; la afirmacion proviene unicamente de la model card del autor.
-- Tamano de 1.5B: capacidad limitada en tareas de razonamiento complejo, matematicas avanzadas y codigo de larga extension en comparacion con modelos actuales de 7B o mas.
-- La ventana de contexto no se especifica; si hereda los 1024 tokens de GPT-2 XL, resulta insuficiente para documentos largos, conversaciones multi-turno extensas o RAG con muchos fragmentos.
-- Idiomas soportados no documentados; GPT-2 XL esta fuertemente sesgado hacia el ingles, por lo que el rendimiento en castellano u otros idiomas es incierto.
-- Riesgo de alucinacion y de generar texto factualmente incorrecto, especialmente en dominios especializados, sin una capa de verificacion.
-- Sesgos heredados del corpus de entrenamiento del modelo base y del profesor; no se documenta ninguna fase de alineacion o mitigacion de sesgos.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento en produccion ni sobre el cumplimiento de requisitos regulatorios.
-- Los datos de entrenamiento (numero de tokens, composicion, posible RLHF/DPO) no estan documentados, lo que dificulta la auditoria.
-- El repositorio presenta 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- No hay benchmarks publicados: las capacidades de razonamiento declaradas ("reasoning density") no están verificadas de forma independiente.
+- La base es GPT-2 XL (2019), con tokenizador y sesgos propios de su corpus de entrenamiento; es probable un sesgo hacia el inglés y hacia contenidos de la web de esa época.
+- Riesgo de alucinación elevado en un modelo de 1.5B, especialmente en tareas factuales o de razonamiento complejo; requiere validación humana en producción.
+- La ventana de contexto probable es de 1024 tokens (heredada de GPT-2 XL); no se documenta extensión, lo que limita conversaciones multi-turno largas y documentos extensos.
+- El multilingüismo no está confirmado; el rendimiento en castellano es incierto y probablemente inferior al de modelos entrenados explícitamente en múltiples idiomas.
+- No se documenta soporte de tool calling ni de agentes, por lo que no es adecuado para pipelines que dependan de function calling.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni documentación sobre el dataset de destilación, lo que puede plantear dudas de compliance en entornos regulados.
+- El proceso de destilación desde `gpt-oss-20b` no está documentado con detalle reproducible (tokens, dataset, hiperparámetros), lo que dificulta auditar el modelo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/waveforce-ai/Aura-2-Lightning
-- Repositorio GGUF de terceros (mradermacher): https://huggingface.co/mradermacher/Aura-2-Lightning-GGUF
-- Perfil de la organizacion Waveforce AI: https://huggingface.co/waveforce-ai/models
-- Modelo base del estudiante: https://huggingface.co/openai-community/gpt2-xl
+- Hugging Face: https://huggingface.co/waveforce-ai/Aura-2-Lightning
+- Modelo base (estudiante): https://huggingface.co/openai-community/gpt2-xl
 - Modelo profesor: https://huggingface.co/openai/gpt-oss-20b
+- Formulario de feedback del autor: https://arthwarrior3201.github.io/Aura-2-Lightning-Feedback/

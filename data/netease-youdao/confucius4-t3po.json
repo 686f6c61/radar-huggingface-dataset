@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 80,
-  "downloads_30d": 564,
+  "downloads_30d": 536,
   "trending_score": 10,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "NetEase Games",
-      "url": "https://www.neteasegames.com/",
-      "snippet": "NetEase Games, the online games division of NetEase, Inc. (NASDAQ: NTES and HKEX: 9999), is a leading global developer and …"
-    },
-    {
-      "title": "NetEase - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/NetEase",
-      "snippet": "NetEase, Inc. (Chinese: 网易) is a Chinese Internet technology company. Its businesses include video games, news aggregation, …"
-    },
-    {
-      "title": "NetEase Games",
-      "url": "https://account.neteasegames.com/",
-      "snippet": "Utilize your NetEase Games account to seamlessly log in across Android, iOS, PC, and consoles. If the game supports cross …"
-    },
-    {
-      "title": "NetEase — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/NetEase",
-      "snippet": "NetEase, Inc. (chinois simplifié : 网易 ; chinois traditionnel : 網易 ; pinyin : Wǎng Yì) est une société internet chinoise qui exploite le …"
-    },
-    {
-      "title": "NetEase Games",
-      "url": "https://account.neteasegames.com/account/login",
-      "snippet": "Your personal information is handled in strict compliance with our Privacy Policy."
-    }
-  ]
+  "sources": []
 }

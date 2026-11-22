@@ -2,101 +2,89 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-MNN es un paquete de inferencia en formato MNN del modelo Qwen3-4B-Instruct-2507, convertido y verificado por el equipo taobao-mnn (Alibaba). No se trata de un modelo nuevo, sino de una exportación cuantizada del modelo base de Qwen con el objetivo de ejecutarlo de forma eficiente mediante el runtime MNN (Mobile Neural Network) de Alibaba, especialmente en CPU. El paquete incluye el grafo MNN, los pesos cuantizados, el tokenizador, la plantilla y la configuración necesarios para su uso directo con `llm_demo` de MNN.
+Qwen3-4B-Instruct-2507-MNN es una version cuantizada y empaquetada para el motor de inferencia MNN (Mobile Neural Network) del modelo Qwen3-4B-Instruct-2507, desarrollado originalmente por Alibaba Qwen. La publica el equipo taobao-mnn, vinculado al repositorio oficial de MNN de Alibaba, y su objetivo es permitir la ejecucion del modelo en CPU, incluyendo dispositivos moviles y entornos de escritorio sin GPU dedicada.
 
-El modelo subyacente es un transformer denso `Qwen3ForCausalLM` de 36 capas, con un campo `max_position_embeddings` de 262144 en la configuración (que no debe interpretarse como contexto máximo verificado). La exportación aplica cuantización HQQ: las matrices lineales del backbone quedan en 4 bits con bloque de 64, y la cabeza de salida LM en 8 bits con bloque de 64, con escalas en FP16. Los pesos de embedding de entrada comparten la matriz cuantizada de la cabeza LM, no son un embedding BF16 independiente.
+El modelo base es un transformer denso de 4.000 millones de parametros con 36 capas y una dimension oculta de 2560. Esta variante 2507 opera en modo no-thinking: genera respuestas directamente sin bloques de razonamiento intermedios, lo que reduce la latencia y el consumo de tokens de salida. El empaquetado MNN aplica cuantizacion HQQ de 4 bits (grupo 64) a las capas lineales del modelo de lenguaje y 8 bits al cabezal de salida, con escalas en FP16 y embeddings compartidos con el cabezal.
 
-La relevancia de este paquete es práctica: permite desplegar un modelo instructivo de 4B parámetros en entornos donde no hay GPU, usando el runtime MNN con soporte de bajo consumo de memoria y fusión de transformadores. La verificación publicada se limita a CPU x64; no se han validado rutas ARM FP16, Metal, OpenCL, Vulkan, CUDA ni dispositivos móviles.
+Su relevancia practica reside en que ofrece un formato listo para desplegar con el runtime MNN en hardware modesto, con un repositorio de 5,2 GB y una configuracion por defecto pensada para CPU con 4 hilos. Esta orientado a escenarios de inferencia local y en el borde, no a servidores de alto rendimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `Qwen3ForCausalLM` (transformer denso, model_type `qwen3`) |
-| Parametros totales | no disponible (la model card no declara el recuento; no se infiere del nombre) |
-| Parametros activos | no aplica (no es MoE; la configuración no declara expertos enrutados) |
-| Longitud de contexto | campo `max_position_embeddings=262144` en configuración; no es contexto máximo verificado. Longitudes de prompt probadas: 15–871 tokens |
-| Tipos de cuantizacion | HQQ 4-bit (backbone, block=64, alpha FP16, sym=false); HQQ 8-bit (cabeza LM, block=64, alpha FP16, sym=false) |
-| Idiomas soportados | zh, en (según metadatos del paquete) |
-| Licencia | apache-2.0 (heredada del modelo base Qwen3-4B-Instruct-2507) |
-| Formato de pesos | MNN (grafo + pesos cuantizados HQQ); no safetensors ni GGUF |
-| Capas | 36 |
-| Entrada / salida | texto / texto (solo se exporta el módulo de lenguaje) |
-| Runtime requerido | MNN 3.6.2, commit `b0239771b07b317a258fbc384683bbd540741406` |
-| Tamano del repo | 5.2 GB |
+| Arquitectura | Transformer denso (modelo base Qwen3-4B-Instruct-2507) |
+| Parametros totales | 4.000 millones (modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | HQQ 4 bits, grupo 64 (capas lineales); HQQ 8 bits, grupo 64 (cabezal de salida); escalas FP16 |
+| Idiomas soportados | chino (zh), ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | MNN (`llm.mnn`, `llm.mnn.weight`), tokenizer `tokenizer.mtok`, configuracion `config.json` / `llm_config.json` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3-4B-Instruct-2507: un transformer decoder-only denso de 36 capas con atención estándar, sin mezcla de expertos. Este paquete no entrena ni afina nada; únicamente exporta el módulo de lenguaje a formato MNN aplicando cuantización HQQ por bloques. Las matrices lineales del backbone se cuantizan a 4 bits (bloque 64, escalas en FP16, simetría desactivada) y la cabeza de salida LM a 8 bits (bloque 64). Los embeddings de entrada reutilizan la matriz cuantizada de la cabeza LM en lugar de mantener una copia BF16 separada, lo que reduce el tamaño del paquete a costa de compartir el esquema de cuantización entre ambas funciones.
+El modelo subyacente es un transformer denso decoder-only de Qwen3 con 36 capas y dimension oculta de 2560, en su version instruct 2507 que funciona en modo no-thinking. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF/DPO) aplicadas por el autor original.
 
-El proceso de conversión se realiza con el exportador estándar de MNN (`llmexport.py`) con las opciones `--export mnn --hqq --quant_bit 4 --quant_block 64 --lm_quant_bit 8 --lm_quant_block 64 --scale_bit 16 --embed_bit 16`. La model card documenta que la alineación FP32 entre la implementación de referencia y el exportador se verificó en prefill/decode, embedding, capas representativas, normalización y logits sobre las 36 capas completas, aunque esto no implica que la salida cuantizada coincida token a token con la del modelo original. No se detallan datos de entrenamiento, composición del dataset ni etapas de RLHF/DPO, ya que corresponden al modelo base y no se reproducen en esta ficha.
+La innovacion de este repositorio es el proceso de cuantizacion y empaquetado para MNN: las capas lineales del modelo de lenguaje se cuantizan con HQQ (Half-Quadratic Quantization) a 4 bits con tamano de grupo 64, el cabezal de salida a 8 bits con grupo 64, y las escalas de cuantizacion se mantienen en FP16. Los embeddings de tokens comparten los pesos de 8 bits con el cabezal de salida. El paquete incluye el grafo del modelo y los pesos por separado, junto con el tokenizador en formato propio de MNN. La exportacion se valido con MNN 3.6.2 en CPU x64, con pruebas de alineacion de mapeo FP32, saludos, aritmetica, traduccion y una prueba de humo con la configuracion por defecto.
 
 ## Capacidades
 
-- Generación de texto conversacional e instructivo en chino e inglés.
-- Razonamiento aritmético básico y traducción (validado en casos de prueba predefinidos: saludo, aritmética, traducción, traducción larga).
-- Generación con presupuesto de tokens configurable; por defecto 512 tokens en el runtime de referencia.
-- Muestreo configurable: `mixed` con penalización de repetición, top-k, top-p, min-p y temperatura.
-- Soporte de plantilla Jinja para control del contexto de conversación; el paquete por defecto trae `context: null` y clasificación de razonamiento `none`.
-- Ejecución en CPU x64 con bajo consumo de memoria (`MNN_LOW_MEMORY=ON`) y fusión de transformadores.
-- No se documentan capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking explícito en este paquete.
+- Generacion de texto conversacional e instructiva en chino e ingles.
+- Generacion de respuestas directas sin modo thinking, lo que reduce la longitud de salida y la latencia.
+- Razonamiento basico, aritmetica y traduccion (verificados en las pruebas de validacion del autor).
+- Ejecucion en CPU con MNN, incluyendo configuracion de bajo consumo de memoria (`memory=low`, `precision=low`).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada para esta variante.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no incluidas (modelo exclusivamente de texto).
 
 ## Casos de uso
 
-- Despliegue en servidores sin GPU: el paquete MNN con cuantización HQQ 4/8 bits permite ejecutar un modelo de 4B parámetros en CPU x64 usando `llm_demo` o la API de MNN-LLM, adecuado para entornos de desarrollo y pruebas donde no hay acelerador disponible.
-- Asistentes conversacionales en chino e inglés: la plantilla Jinja y el muestreo configurable permiten gestionar diálogos multi-turno con contexto moderado (los casos validados llegan a 871 tokens de prompt), suficiente para atención al cliente o asistentes de documentación.
-- Traducción automática zh↔en: los casos de prueba de traducción y traducción larga confirman que el modelo produce salidas coherentes en esta tarea, lo que permite integrarlo en pipelines de localización de contenido.
-- Generación de respuestas a preguntas cerradas: el modelo responde a preguntas aritméticas y de conocimiento general con formato controlado, útil para tareas de extracción y respuesta breve en aplicaciones internas.
-- Prototipado de aplicaciones móviles o embebidas: aunque la model card solo verifica CPU x64, el formato MNN está diseñado para despliegue en dispositivos; sirve como base para experimentar con rutas ARM FP16 o Metal, que quedan pendientes de validación por parte del usuario.
-- Evaluación comparativa de cuantización: al estar el paquete documentado con parámetros de exportación y metadatos de verificación, es útil como referencia para medir el impacto de HQQ 4/8 bits frente al modelo original en tareas controladas.
-- Integración en herramientas de línea de comandos: el binario `llm_demo` y la configuración `config.json` permiten incorporar el modelo a scripts de procesamiento de texto por lotes sin dependencias de Python en tiempo de inferencia.
+- Asistente conversacional local en escritorio: el modelo puede gestionarse con el binario `llm_demo` de MNN sobre CPU x64, sin GPU, adecuado para prototipos y herramientas internas de escritorio.
+- Inferencia en el borde y dispositivos moviles: al estar empaquetado para MNN, encaja en aplicaciones Android/iOS que integren el runtime MNN-LLM y requieran un modelo de 4B en cuantizacion de 4 bits.
+- Traduccion zh-en y en-zh en local: las pruebas del autor incluyen casos de traduccion; el modelo cubre ambos idiomas de forma nativa.
+- Procesamiento por lotes en servidores sin GPU: con 4 hilos de CPU y memoria reducida, sirve para tareas de generacion de texto de baja concurrencia donde no hay aceleradores disponibles.
+- Chatbot de soporte en entornos con requisitos de privacidad: al ejecutarse en local sin llamadas a API externas, permite desplegar asistencia textual sin enviar datos a terceros.
+- Generacion de texto asistida en herramientas de desarrollo: integrable en editores o scripts mediante el runtime MNN para autocompletado o resumen de contenido, siempre que el caso no exija contexto muy largo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se publican mediciones de rendimiento ni cifras de memoria por dispositivo, y que las pruebas realizadas son de verificación estructural (alineación FP32, determinismo con greedy, smoke test con configuración por defecto) y no constituyen una evaluación de precisión.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo documenta pruebas de validacion funcional (alineacion de mapeo FP32, saludos, aritmetica, traduccion y prueba de humo) realizadas el 2026-11-12 en CPU x64 con MNN 3.6.2, sin metricas numericas de calidad o velocidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; la verificación se realizó únicamente en CPU x64.
-- GPU recomendadas: no disponible; no se han validado rutas Metal, OpenCL, Vulkan ni CUDA.
-- Compatibilidad con GPU de consumo: no verificada.
-- Despliegue validado: CPU x64 con MNN 3.6.2 y el commit `b0239771b07b317a258fbc384683bbd540741406`, compilado con `MNN_BUILD_LLM=ON`, `MNN_LOW_MEMORY=ON`, `MNN_BUILD_CONVERTER=ON` y `MNN_SUPPORT_TRANSFORMER_FUSE=ON`.
-- Opciones de despliegue adicionales: vLLM, llama.cpp, Ollama y TGI no son aplicables directamente, ya que el paquete está en formato MNN y no en safetensors ni GGUF.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
-- Memoria: no se publican cifras de consumo de memoria por dispositivo.
+- VRAM: no aplica para la configuracion por defecto, que es de CPU. El repositorio ocupa 5,2 GB, lo que da una idea del peso en disco y de la memoria necesaria para cargar los pesos.
+- GPU recomendadas: no especificadas para esta variante; el empaquetado esta orientado a CPU.
+- Cabe en GPU consumer: no disponible en la informacion proporcionada; el formato MNN esta pensado principalmente para CPU y movil.
+- Opciones de despliegue: runtime MNN (`llm_demo`), compilado con `MNN_BUILD_LLM=ON`, `MNN_LOW_MEMORY=ON` y `MNN_SUPPORT_TRANSFORMER_FUSE=ON`. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Configuracion por defecto: CPU, 4 hilos, `precision=low`, `memory=low`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Verificacion |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato / runtime |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-MNN (este paquete) | no declarado (base 4B) | `max_position_embeddings=262144` (no verificado) | MNN, HQQ 4/8 bits | apache-2.0 | CPU x64 únicamente |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B (según nombre del modelo base) | no disponible en esta ficha | safetensors (formato habitual del modelo base) | apache-2.0 | no disponible en esta ficha |
-| Versiones GGUF de Qwen3-4B-Instruct-2507 | 4B (según nombre) | no disponible en esta ficha | GGUF | apache-2.0 (heredada) | no disponible en esta ficha |
-| Versiones AWQ/GPTQ de Qwen3-4B-Instruct-2507 | 4B (según nombre) | no disponible en esta ficha | safetensors cuantizados | apache-2.0 (heredada) | no disponible en esta ficha |
+| Qwen3-4B-Instruct-2507-MNN | 4.000 M | no disponible | HQQ 4/8 bits | Apache 2.0 | MNN |
+| Qwen/Qwen3-4B-Instruct-2507 (original) | 4.000 M | no disponible | FP16/BF16 | Apache 2.0 | safetensors |
+| Otras variantes cuantizadas de Qwen3-4B (GGUF, AWQ, GPTQ) | 4.000 M | no disponible | 4-8 bits | Apache 2.0 | GGUF, safetensors |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada; la comparativa se limita a formato, licencia y ámbito de verificación.
+La diferencia principal frente al original es el formato MNN y la cuantizacion HQQ, orientados a CPU y movil. Frente a variantes GGUF o AWQ, este paquete solo es util si el stack de despliegue es MNN; en caso contrario, conviene usar el modelo original o formatos mas extendidos. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La verificación publicada cubre únicamente CPU x64; ARM CPU FP16, Metal, OpenCL, Vulkan, CUDA y dispositivos móviles no han sido validados.
-- El campo `max_position_embeddings=262144` es un valor de configuración, no un contexto máximo verificado; las pruebas reales usaron prompts de 15 a 871 tokens.
-- La cuantización HQQ 4/8 bits puede degradar la calidad de salida respecto al modelo original; la model card advierte que la salida cuantizada puede contener errores.
-- No se han publicado benchmarks de precisión ni de rendimiento; las pruebas realizadas son estructurales y de determinismo, no de exactitud.
-- El paquete solo exporta el módulo de lenguaje; no incluye visión, audio ni vídeo.
-- Los idiomas declarados son chino e inglés; no se garantiza un rendimiento equivalente en otros idiomas.
-- La licencia apache-2.0 se hereda del modelo base; la conversión no amplía los derechos de uso, y deben cumplirse las obligaciones de atribución y política de uso del modelo original.
-- El paquete debe actualizarse como un todo (grafo, pesos, tokenizador, plantilla y configuración); mezclar revisiones o sustituir solo el archivo de grafo puede producir inconsistencias.
-- El runtime requiere MNN 3.6.2 o una versión posterior con regresión propia; versiones anteriores no están verificadas.
-- El límite de generación por defecto es de 512 tokens; para respuestas más largas debe configurarse explícitamente.
-- No se documentan capacidades de tool calling ni de agentes; no deben asumirse.
+- Sesgos conocidos: no documentados en la informacion proporcionada; hereda los del modelo base Qwen3-4B-Instruct-2507.
+- Riesgo de alucinacion: presente como en cualquier LLM de 4B; no se han publicado evaluaciones de fidelidad para esta variante.
+- Idiomas: solo chino e ingles declarados; el rendimiento en castellano no esta verificado y previsiblemente sera inferior.
+- Contexto: la longitud de contexto no se especifica en la ficha; conviene consultar la configuracion del modelo base antes de usarlo con entradas largas.
+- Licencia: Apache 2.0, permite uso comercial, pero se remite a la licencia del modelo base de Qwen; conviene revisar sus terminos.
+- Formato propietario del runtime: los pesos solo son utilizables con MNN; no hay safetensors ni GGUF en este repositorio.
+- Modo no-thinking: no genera cadenas de razonamiento, lo que puede limitar tareas que requieran razonamiento complejo.
+- Fecha de validacion: las pruebas documentadas son de 2026-11-12 con una revision concreta de MNN; otras versiones del runtime pueden comportarse de forma distinta.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/taobao-mnn/Qwen3-4B-Instruct-2507-MNN
-- Modelo base (ModelScope): https://modelscope.cn/models/Qwen/Qwen3-4B-Instruct-2507/summary
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
+- Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- ModelScope: https://modelscope.cn/models/MNN/Qwen3-4B-Instruct-2507-MNN
 - Repositorio MNN: https://github.com/alibaba/MNN
-- Exportador MNN (commit fijado): https://github.com/alibaba/MNN/tree/b0239771b07b317a258fbc384683bbd540741406/transformers/llm/export
-- Documentación MNN-LLM: https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html
-- Parámetros de exportación: https://huggingface.co/taobao-mnn/Qwen3-4B-Instruct-2507-MNN/blob/main/export_args.json
-- Metadatos de verificación: https://huggingface.co/taobao-mnn/Qwen3-4B-Instruct-2507-MNN/blob/main/refresh_metadata.json
+- Documentacion MNN-LLM: https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE

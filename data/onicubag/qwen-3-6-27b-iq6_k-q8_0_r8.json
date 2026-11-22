@@ -5,7 +5,7 @@
   "author": "onicubag",
   "url": "https://huggingface.co/onicubag/Qwen-3.6-27B-IQ6_K-Q8_0_R8",
   "created_at": "2026-11-19T15:45:47.000Z",
-  "updated_at": "2026-11-19T15:51:04.000Z",
+  "updated_at": "2026-11-21T16:03:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,13 +13,12 @@
   "languages": [],
   "tags": [
     "gguf",
-    "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 362,
+  "downloads_30d": 373,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

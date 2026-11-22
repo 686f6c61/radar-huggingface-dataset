@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "l1nk-0/Gemwa-4B-GGUF",
+  "slug": "l1nk-0-gemwa-4b-gguf",
+  "author": "l1nk-0",
+  "url": "https://huggingface.co/l1nk-0/Gemwa-4B-GGUF",
+  "created_at": "2026-11-22T00:14:41.000Z",
+  "updated_at": "2026-11-22T07:12:08.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "bho",
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "bhojpuri",
+    "gemma3",
+    "indic",
+    "bho",
+    "hi",
+    "base_model:l1nk-0/Gemwa-4B",
+    "base_model:quantized:l1nk-0/Gemwa-4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 19751239648,
+  "storage_human": "19.8 GB",
+  "context_length": 131072,
+  "base_model": "l1nk-0/Gemwa-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

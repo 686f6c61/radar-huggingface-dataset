@@ -5,7 +5,7 @@
   "author": "xgirls",
   "url": "https://huggingface.co/xgirls/wan2.2-ti2v-5b-openvino-int4-awq",
   "created_at": "2026-10-15T23:55:42.000Z",
-  "updated_at": "2026-10-16T20:29:00.000Z",
+  "updated_at": "2026-11-19T07:39:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-video",

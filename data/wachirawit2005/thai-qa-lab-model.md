@@ -2,80 +2,84 @@
 
 ## Resumen
 
-`thai-qa-lab-model` es un modelo de lenguaje basado en GPT-2, afinado para tareas de preguntas y respuestas en tailandés. Ha sido desarrollado por Wachirawit2005 y publicado en Hugging Face bajo licencia MIT. El modelo parte de la arquitectura GPT-2 con 124.449.024 parámetros y se ha entrenado sobre un conjunto de datos de 3.000 pares de preguntas y respuestas, identificado en los metadatos como `disease_3000`.
+Thai-qa-lab-model es un ajuste fino (fine-tuning) del modelo GPT-2 sobre un corpus de preguntas y respuestas en tailandés, desarrollado por el usuario Wachirawit2005 y publicado en Hugging Face bajo licencia MIT. El modelo parte de la arquitectura GPT-2 original y se ha entrenado específicamente para la tarea de generación de respuestas a preguntas en idioma tailandés, tomando como base el conjunto de datos `disease_3000`, que según la model card contiene 3.000 pares de pregunta-respuesta.
 
-Su relevancia radica en que constituye un ejemplo de fine-tuning de un modelo de lenguaje pequeño para un idioma de bajo recurso como el tailandés, con un tamaño que permite desplegarlo en entornos con recursos limitados. No se dispone de información sobre la longitud de contexto, los datos exactos de entrenamiento ni los resultados de evaluación, lo que limita el alcance de sus aplicaciones a prototipos y casos de uso específicos dentro del dominio de entrenamiento.
+Con 124.449.024 parámetros totales, se trata de un modelo de escala reducida, adecuado para experimentación, prototipado y despliegue en entornos con recursos limitados. Su relevancia radica en ser un ejemplo de ajuste fino de bajo coste para una tarea concreta en un idioma de bajos recursos como el tailandés, si bien la documentación publicada por el autor es muy escasa y deja sin especificar la mayoría de los detalles técnicos del entrenamiento.
+
+La model card está mayoritariamente sin completar (múltiples secciones marcadas como "[More Information Needed]"), por lo que muchos de los datos que se detallan a continuación deben considerarse no disponibles. El repositorio ocupa 2,0 GB y el modelo acumula 546 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only) |
+| Arquitectura | GPT-2 (transformer decoder-only), ajustado para generación de texto |
 | Parametros totales | 124.449.024 |
-| Parametros activos | No aplicable (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Tailandés (th) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (la arquitectura GPT-2 base suele emplear 1.024 tokens, pero el autor no lo especifica) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF ni cuantizaciones publicadas) |
+| Idiomas soportados | tailandés (th) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de GPT-2 small, un transformer decoder-only de 124 millones de parámetros. Según los metadatos de Hugging Face, se entrenó sobre un dataset llamado `disease_3000`, compuesto por 3.000 pares de preguntas y respuestas en tailandés. El autor, Wachirawit2005, no ha publicado detalles sobre el procedimiento de entrenamiento, hiperparámetros, régimen de precisión ni técnicas de alineación. No se documenta el uso de RLHF, DPO ni otros métodos de ajuste por preferencias.
+El modelo se basa en la arquitectura GPT-2, un transformer decoder-only con atención causal, adaptado mediante fine-tuning para la tarea de pregunta-respuesta en tailandés. El número de parámetros (124,4 millones) es coherente con una variante pequeña de la familia GPT-2, aunque el autor no especifica de qué checkpoint exacto parte el ajuste ni confirma la configuración de capas, dimensiones ocultas o cabezas de atención.
 
-La model card no incluye información sobre la composición del dataset, el preprocesamiento ni el número de tokens de entrenamiento. Tampoco se especifica si se partió de un checkpoint de GPT-2 preentrenado en tailandés o del GPT-2 original en inglés, por lo que el rendimiento fuera del dominio de entrenamiento es incierto.
+En cuanto al entrenamiento, la model card únicamente indica que se ha utilizado el conjunto de datos `disease_3000` (3.000 pares de pregunta-respuesta, presumiblemente sobre enfermedades o temática sanitaria) y que la métrica de evaluación empleada es la perplejidad. No se documentan el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF/DPO, los hiperparámetros (tasa de aprendizaje, épocas, precisión mixta) ni la infraestructura de cómputo utilizada. Tampoco se detalla ninguna innovación técnica adicional más allá del propio ajuste fino supervisado.
 
 ## Capacidades
 
-- Generación de texto en tailandés, orientada a tareas de preguntas y respuestas.
-- Afinado en un dominio concreto (enfermedades según los metadatos, aunque el README menciona animales) con un dataset de 3.000 pares.
-- No se documenta soporte para tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio.
-- Capacidades multilingües limitadas al tailandés; no se ha entrenado para otros idiomas.
-- No se dispone de información sobre un modo de razonamiento especial ni sobre técnicas de decodificación avanzada.
+- Generación de texto en tailandés, orientada a la formulación de respuestas a preguntas.
+- Respuesta a preguntas (QA) sobre el dominio cubierto por el conjunto de datos `disease_3000`.
+- Generación autoregresiva de texto condicionada por un contexto de entrada.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidad multilingüe: no disponible; el modelo está etiquetado únicamente para tailandés.
+- No se documentan modos especiales (thinking mode, visión, audio) ni capacidades de código o matemáticas.
 
 ## Casos de uso
 
-- Asistente de preguntas frecuentes en tailandés: el modelo puede responder consultas simples dentro del dominio del dataset (p. ej., enfermedades) cuando se integra en un chatbot. Su tamaño reducido permite desplegarlo en servidores con pocos recursos.
-- Sistema de soporte al cliente en tailandés: puede gestionar preguntas repetitivas y respuestas basadas en el corpus de entrenamiento, siempre que las consultas se mantengan dentro del dominio cubierto por los 3.000 pares.
-- Prototipo de extracción de información: puede utilizarse para extraer respuestas concretas a partir de textos cortos en tailandés, aunque su rendimiento fuera del dominio de entrenamiento será limitado.
-- Herramienta educativa para demostrar fine-tuning: al ser un modelo pequeño con licencia MIT, es útil para enseñar a estudiantes cómo afinar GPT-2 para tareas de QA en un idioma de bajo recurso.
-- Investigación en NLP tailandés: sirve como modelo de referencia para estudiar el comportamiento de modelos de lenguaje pequeños en tareas de preguntas y respuestas en tailandés, aunque carece de evaluaciones publicadas.
-- Chatbot de dominio específico en entornos offline: al ser ligero, puede ejecutarse en CPU o en GPU pequeñas para consultas de información en tailandés sin conexión a internet.
+- Prototipado de asistentes de preguntas y respuestas en tailandés: el modelo puede emplearse para generar respuestas a consultas sencillas sobre el dominio del dataset de entrenamiento, sirviendo como base para validar un producto antes de invertir en modelos mayores.
+- Experimentación académica con modelos de baja escala: su tamaño de 124 millones de parámetros permite entrenar y evaluar variantes de fine-tuning en una sola GPU, lo que lo hace útil para prácticas docentes o investigación sobre idiomas de bajos recursos.
+- Generación de respuestas de dominio sanitario acotado: dado que el dataset se denomina `disease_3000`, puede utilizarse como generador de respuestas preliminares en un chatbot informativo sobre enfermedades, siempre con revisión humana.
+- Despliegue en entornos con recursos limitados: al tratarse de un modelo pequeño, es viable ejecutarlo en CPU o en GPU de gama de entrada para demos y pruebas de integración.
+- Generación de texto tailandés para aumento de datos: puede emplearse para producir variaciones de respuestas que amplíen un corpus de entrenamiento posterior.
+- Base para ajuste fino adicional: al estar publicado con licencia MIT y en formato safetensors, puede reutilizarse como punto de partida para tareas específicas en tailandés sin restricciones de uso comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras métricas de evaluación para este modelo.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente menciona la perplejidad como métrica, sin aportar su valor numérico ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,5-1 GB en FP32, 0,3-0,5 GB en FP16/BF16 y 0,2-0,3 GB en cuantización de 8 bits. Son estimaciones basadas en el tamaño de los pesos (124M parámetros) y no incluyen overhead del framework.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM (p. ej., GTX 1050, RTX 3050, RTX 4090). También puede ejecutarse en CPU.
-- Cabe en GPU de consumo: sí, incluso en GPUs antiguas o integradas con suficiente memoria.
-- Opciones de despliegue: Hugging Face Transformers, llama.cpp, vLLM, TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: en fp32, los 124,4 millones de parámetros ocupan aproximadamente 0,5 GB; en fp16, alrededor de 0,25 GB. Estas cifras son estimaciones a partir del número de parámetros, no datos publicados por el autor.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4090 o incluso una GPU integrada pueden ejecutar el modelo.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo actual e incluso en CPU.
+- Opciones de despliegue: al ser un modelo GPT-2 en safetensors, es compatible con la librería `transformers` de Hugging Face; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, y no se publican pesos GGUF.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wachirawit2005/thai-qa-lab-model | 124 M | no disponible | MIT | Hugging Face |
-| GPT-2 small (base) | 124 M | 1024 | MIT | Hugging Face |
-| B4869/thai-qa-lab-model | 124 M | no disponible | MIT | Hugging Face |
+| Wachirawit2005/thai-qa-lab-model | 124,4 M | no disponible | MIT | Hugging Face |
+| GPT-2 base (OpenAI) | 124 M | 1.024 tokens | MIT | Hugging Face |
+| Modelos QA en tailandés de mayor escala | no disponible | no disponible | no disponible | no disponible |
 
-No se han publicado benchmarks comparativos entre estos modelos. La comparación se limita a características técnicas. El modelo `B4869/thai-qa-lab-model` parece ser una copia o variante del mismo modelo, sin información adicional sobre diferencias de entrenamiento.
+No se dispone de información sobre modelos comparables específicos para QA en tailandés en la documentación proporcionada, por lo que la comparación se limita a la arquitectura base GPT-2.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgos ni análisis de riesgos.
-- El modelo puede sufrir alucinaciones, especialmente cuando se le consulta fuera del dominio de entrenamiento.
-- El dataset de entrenamiento es pequeño (3.000 pares), lo que limita la generalización y la robustez.
-- Solo soporta tailandés; no se recomienda su uso en otros idiomas.
-- La licencia MIT permite uso comercial, pero el modelo se ofrece sin garantías ni soporte.
-- La longitud de contexto y las capacidades de tool calling no están documentadas, por lo que no se debe asumir un comportamiento estándar de GPT-2.
-- No se recomienda su uso en producción sin una evaluación previa en el dominio específico.
+- La model card está incompleta: la mayoría de las secciones técnicas (datos de entrenamiento, hiperparámetros, evaluación, impacto ambiental) no están cumplimentadas, lo que impide verificar la calidad del ajuste.
+- Riesgo elevado de alucinación: al ser un modelo GPT-2 pequeño ajustado sobre un dataset de 3.000 pares, es probable que genere respuestas plausibles pero incorrectas, especialmente fuera del dominio de entrenamiento.
+- Sesgos conocidos: no documentados por el autor; al entrenarse sobre un dataset sanitario concreto, puede reflejar sesgos presentes en esos datos.
+- Limitaciones de idioma: el modelo está etiquetado únicamente para tailandés y no se ha evaluado su comportamiento en otros idiomas.
+- Limitaciones de contexto: no se especifica la longitud máxima de contexto; la arquitectura GPT-2 base suele limitarse a 1.024 tokens, lo que restringe conversaciones multi-turno largas.
+- Uso comercial: la licencia MIT permite uso comercial, pero la ausencia de documentación sobre el origen y los permisos del dataset `disease_3000` introduce incertidumbre legal que conviene verificar antes de un despliegue en producción.
+- No apto para uso clínico: dado el dominio sanitario del dataset, cualquier aplicación médica requeriría validación profesional y no debería basarse en las salidas del modelo sin supervisión.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Wachirawit2005/thai-qa-lab-model
-- Copia en Hugging Face: https://huggingface.co/B4869/thai-qa-lab-model
-- Referencia de evaluación de impacto ambiental citada en la model card: https://arxiv.org/abs/1910.09700
+- Paper de referencia citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto medioambiental: https://mlco2.github.io/impact

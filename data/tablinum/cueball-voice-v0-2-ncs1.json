@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "tablinum/CueBall-Voice-v0.2-NCS1",
+  "slug": "tablinum-cueball-voice-v0-2-ncs1",
+  "author": "tablinum",
+  "url": "https://huggingface.co/tablinum/CueBall-Voice-v0.2-NCS1",
+  "created_at": "2026-11-22T05:29:41.000Z",
+  "updated_at": "2026-11-22T05:37:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "cueball-voice",
+    "rack-lab",
+    "local-inference",
+    "intel-ncs1",
+    "openvino",
+    "myriad-2",
+    "unit-selection",
+    "text-to-speech",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14808750,
+  "storage_human": "15 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
